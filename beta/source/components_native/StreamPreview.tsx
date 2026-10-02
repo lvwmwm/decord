@@ -1,22 +1,22 @@
-// Module ID: 9519
-// Function ID: 9520
+// Module ID: 9515
+// Function ID: 9516
 // Name: StreamPreview
-// Dependencies: [19, 17, 1182, 21, 4836, 576, 4540, 4685, 9520, 9521, 1115, 5435, 9522, 504, 2]
-// Exports: default
+// Dependencies: [19, 17, 1194, 21, 4837, 588, 4544, 4687, 9516, 9517, 1127, 5436, 558, 576, 9518, 504, 2]
 
-// Module 9519 (StreamPreview)
-import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import native from "native" /* 4540 */;
-import shared from "shared" /* 4685 */;
-import Pressables from "Pressables" /* 5435 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9522 */;
+// Module 9515 (StreamPreview)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import native from "native" /* 4544 */;
+import shared from "shared" /* 4687 */;
+import Pressables from "Pressables" /* 5436 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9518 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+import ThemeStore from "ThemeStore" /* 1194 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -27,6 +27,8 @@ let metroRequire;
 let obj2;
 let obj3;
 let size;
+let tmp;
+const get_initialized = tmp(504);
 ({ Image: c3, View: closure_4, StyleSheet } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -50,9 +52,9 @@ class DefaultFallback extends PureComponent {
     const tmp3 = React3;
     tmp4 = _false;
     if (obj3.isThemeDark(theme)) {
-      tmp6Result = tmp6(9520);
+      tmp6Result = tmp6(9516);
     } else {
-      tmp6Result = tmp6(9521);
+      tmp6Result = tmp6(9517);
     }
     return metroRequire(tmp3, obj);
   }
@@ -61,7 +63,7 @@ const prototype = DefaultFallback.prototype;
 DefaultFallback.contextType = native.ThemeContext;
 createStyles = createStyles_mod;
 let obj4 = { touchable: size, imageContainer: { flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.BLACK }, image: { flex: 1 } };
-size = { flex: 1, width: "100%", height: "WireType", aspectRatio: true, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+size = { flex: 1, width: "100%", height: "__initData", aspectRatio: true, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 const createLegacyClassComponentStyles2 = createStyles.createLegacyClassComponentStyles;
 ({ flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.BLACK });
 const authStore = createLegacyClassComponentStyles2(obj4);
@@ -146,10 +148,55 @@ StreamPreview.defaultProps = {
     return tmp(tmp2, obj);
   }
 };
-size = size_mod;
-const result = size.fileFinishedImporting("components_native/StreamPreview.tsx");
-
-export default function ConnectedStreamPreview(stream) {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
+  let channelId;
+  let guildId;
+  let isLoading;
+  let ownerId;
+  let previewUrl;
+  let theme;
+  let tmp5;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(7);
+  ({ guildId, channelId, ownerId } = stream.stream);
+  ({ previewUrl, isLoading } = useFetchStreamPreviewDefault(guildId, channelId, ownerId));
+  useFetchStreamPreviewDefault(guildId, channelId, ownerId);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ThemeStore];
+    const fn = function s() {
+      return theme.theme;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === isLoading) {
+    if (cResult[3] === stream) {
+      if (cResult[4] === stateFromStores) {
+        let tmp9;
+        if (cResult[5] === previewUrl) {
+          tmp9 = cResult[6];
+        }
+        return tmp9;
+      }
+    }
+  }
+  const obj2 = { url: previewUrl, isFetching: isLoading, theme: stateFromStores };
+  const merged = Object.assign(stream);
+  const tmp11 = metroRequire(StreamPreview, obj2);
+  cResult[2] = isLoading;
+  cResult[3] = stream;
+  cResult[4] = stateFromStores;
+  cResult[5] = previewUrl;
+  cResult[6] = tmp11;
+  tmp9 = tmp11;
+}) : ((stream) => {
   let channelId;
   let guildId;
   let isLoading;
@@ -166,4 +213,8 @@ export default function ConnectedStreamPreview(stream) {
   stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const merged = Object.assign(stream);
   return metroRequire(StreamPreview, obj2);
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("components_native/StreamPreview.tsx");
+
+export default tmp8;

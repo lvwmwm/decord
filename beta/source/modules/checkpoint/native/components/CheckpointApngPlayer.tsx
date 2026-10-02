@@ -1,27 +1,86 @@
-// Module ID: 15274
-// Function ID: 15275
+// Module ID: 15262
+// Function ID: 15263
 // Name: CheckpointApngPlayer
-// Dependencies: [17, 4825, 21, 4836, 504, 1365, 5899, 8271, 2]
-// Exports: default
+// Dependencies: [17, 4826, 21, 4837, 558, 576, 504, 1371, 5896, 8268, 2]
 
-// Module 15274 (CheckpointApngPlayer)
+// Module 15262 (CheckpointApngPlayer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import createStyles from "createStyles" /* 4836 */;
+import react from "react" /* 576 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const APNGPlayer = tmp2(8271);
+const APNGPlayer = tmp2(8268);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ container: { alignItems: "center", justifyContent: "center" } });
-const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointApngPlayer.tsx");
-
-export default function CheckpointApngPlayer(arg0) {
+tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let obj4;
+  let style;
+  let tmp10Result;
+  let tmp5;
+  let tmp6;
+  let uri;
+  let useReducedMotion;
+  const obj = react;
+  const cResult = obj.c(9);
+  ({ uri, style } = arg0);
+  const tmp4 = closure_6();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    const fn = function u() {
+      return useReducedMotion.useReducedMotion;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === stateFromStores) {
+    if (cResult[3] === style) {
+      let tmp9;
+      if (cResult[4] === uri) {
+        tmp9 = cResult[5];
+      }
+      if (cResult[6] === tmp4.container) {
+        let tmp13;
+        if (cResult[7] === tmp9) {
+          tmp13 = cResult[8];
+        }
+        return tmp13;
+      }
+      const tmp16 = <View style={tmp4.container}>{tmp9}</View>;
+      cResult[6] = tmp4.container;
+      cResult[7] = tmp9;
+      cResult[8] = tmp16;
+      tmp13 = tmp16;
+    }
+  }
+  const tmpResult2 = utils_PlatformUtils;
+  if (tmpResult2.isIOS()) {
+    const obj3 = { source: obj4, style, resizeMode: "cover", enableAnimation: !stateFromStores };
+    obj4 = { uri };
+    tmp10Result = tmp10(FastImageDefault, obj3);
+  } else {
+    const obj5 = { url: uri, autoplay: !stateFromStores, style };
+    tmp10Result = tmp10(tmp(8268).APNGPlayer, obj5);
+  }
+  cResult[2] = stateFromStores;
+  cResult[3] = style;
+  cResult[4] = uri;
+  cResult[5] = tmp10Result;
+  tmp9 = tmp10Result;
+}) : ((arg0) => {
   let obj5;
   let style;
   let tmp5Result;
@@ -42,4 +101,7 @@ export default function CheckpointApngPlayer(arg0) {
     tmp5Result = tmp5(APNGPlayer.APNGPlayer, obj6);
   }
   return <tmp6 style={tmp.container}>{tmp5Result}</tmp6>;
-};
+});
+const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointApngPlayer.tsx");
+
+export default tmp2;

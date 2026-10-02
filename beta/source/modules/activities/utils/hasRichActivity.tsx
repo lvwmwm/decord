@@ -1,11 +1,11 @@
-// Module ID: 4877
-// Function ID: 4878
+// Module ID: 4878
+// Function ID: 4879
 // Name: hasRichActivity
-// Dependencies: [1074, 2]
+// Dependencies: [1086, 2]
 // Exports: default
 
-// Module 4877 (hasRichActivity)
-import Constants from "Constants" /* 1074 */;
+// Module 4878 (hasRichActivity)
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const ActivityTypes = Constants.ActivityTypes;

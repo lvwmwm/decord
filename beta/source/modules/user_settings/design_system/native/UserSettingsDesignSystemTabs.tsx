@@ -1,61 +1,93 @@
-// Module ID: 15380
-// Function ID: 15381
+// Module ID: 15368
+// Function ID: 15369
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 4836, 576, 4832, 4531, 4683, 9083, 5279, 12111, 12275, 12113, 5281, 6621, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 4833, 4535, 4685, 9060, 12021, 12168, 12023, 5282, 5280, 6621, 2]
 
-// Module 15380 (UserSettingsDesignSystemTabs)
-import nativeDefault from "native" /* 576 */;
+// Module 15368 (UserSettingsDesignSystemTabs)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import useToken from "useToken" /* 4535 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import Stack_Stack from "Stack/Stack" /* 5280 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import TableSwitchRow from "TableSwitchRow" /* 6621 */;
+import SegmentedControlState from "SegmentedControlState" /* 9060 */;
+import Tabs from "Tabs" /* 12021 */;
+import SegmentedControlPages from "SegmentedControlPages" /* 12023 */;
+import TabsGradientDefault from "TabsGradient" /* 12168 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
-let dependencyMap;
 
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
+let tmp;
+const ColorUtils = tmp(4685);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 ({ jsxs: metroImportDefault, jsx: metroImportAll } = Fragment);
 let obj = { container: { margin: 16, flex: 1, alignItems: "center" }, item: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderColor: nativeDefault.colors.BORDER_STRONG, flex: 1, alignItems: "center", justifyContent: "center", height: 400 };
 let closure_9 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTabs.tsx");
-
-export default function UserSettingsDesignSystemTabs() {
-  let Stack;
-  let closure_0;
-  let closure_2;
-  let first;
-  let first1;
-  let first2;
-  let first3;
-  let items3;
-  let items4;
-  let items5;
-  let obj7;
-  let tmp10;
-  let tmp13;
-  let tmp7;
-  let tmp9;
-  [first, _require] = react.useState(0);
-  [first1, dependencyMap] = react.useState(3);
-  [first2, tmp7] = react.useState(true);
-  let tmp8 = _slicedToArray(react.useState(false), 2);
-  [tmp9, tmp10] = tmp8;
-  [first3, tmp13] = react.useState(false);
-  let closure_1 = tmp9;
-  const tmp14 = closure_9();
-  const tmp15 = closure_9();
-  dependencyMap = tmp15;
-  let items = [first1, tmp15.item, tmp9];
-  const memo = react.useMemo(() => {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let items1;
+  let obj3;
+  let obj4;
+  let rounded;
+  let sum;
+  const obj = react2;
+  const cResult = obj.c(4);
+  const tmp2 = closure_9();
+  if (cResult[0] === arg0) {
+    if (cResult[1] === tmp2.item) {
+      let tmp3;
+      if (cResult[2] === arg1) {
+        tmp3 = cResult[3];
+      }
+      return tmp3;
+    }
+  }
+  const items = [];
+  let num = 0;
+  if (0 < arg0) {
+    do {
+      let obj2 = { label: "Item " + sum, count: rounded, id: "item-" + sum, page: metroImportAll(hasOwnProperty, obj3) };
+      sum = num + 1;
+      let _HermesInternal = HermesInternal;
+      let push = items.push;
+      rounded = undefined;
+      if (arg1) {
+        let _Math = Math;
+        let _Math2 = Math;
+        rounded = Math.floor(100 * Math.random());
+      }
+      let _HermesInternal2 = HermesInternal;
+      obj3 = { style: tmp2.item, children: metroImportDefault(Text_Text.Text, obj4) };
+      obj4 = { variant: "heading-xxl/bold", children: items1 };
+      items1 = ["Item ", sum];
+      let arr = push(obj2);
+      num = sum;
+    } while (sum < arg0);
+  }
+  cResult[0] = arg0;
+  cResult[1] = tmp2.item;
+  cResult[2] = arg1;
+  cResult[3] = items;
+  tmp3 = items;
+}) : ((arg0, arg1) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  const tmp = closure_9();
+  const item = tmp;
+  let items = [arg0, tmp.item, arg1];
+  return react.useMemo(() => {
     let items1;
     let obj2;
     let obj3;
@@ -63,9 +95,9 @@ export default function UserSettingsDesignSystemTabs() {
     let sum;
     const items = [];
     let num = 0;
-    if (0 < first1) {
+    if (0 < closure_0) {
       do {
-        let obj = { label: "Item " + sum, count: rounded, id: "item-" + sum, page: closure_2_8(closure_2_5, obj2) };
+        let obj = { label: "Item " + sum, count: rounded, id: "item-" + sum, page: metroImportAll(hasOwnProperty, obj2) };
         sum = num + 1;
         let _HermesInternal = HermesInternal;
         let push = items.push;
@@ -76,43 +108,186 @@ export default function UserSettingsDesignSystemTabs() {
           rounded = Math.floor(100 * Math.random());
         }
         let _HermesInternal2 = HermesInternal;
-        obj2 = { style: item.item, children: closure_2_7(first1(item[6]).Text, obj3) };
+        obj2 = { style: item.item, children: metroImportDefault(Text_Text.Text, obj3) };
         obj3 = { variant: "heading-xxl/bold", children: items1 };
         items1 = ["Item ", sum];
         let arr = push(obj);
         num = sum;
-      } while (sum < first1);
+      } while (sum < closure_0);
     }
     return items;
   }, items);
-  let obj = require("SegmentedControlState");
-  const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: first, defaultIndex: 1 });
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(5);
+  const obj2 = useToken;
+  const token = obj2.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
+  if (cResult[0] !== token) {
+    const tmpResult = ColorUtils;
+    const hexWithOpacityResult = tmpResult.hexWithOpacity(token, 0);
+    cResult[0] = token;
+    cResult[1] = hexWithOpacityResult;
+    tmp5 = hexWithOpacityResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === token) {
+    let tmp7;
+    if (cResult[3] === tmp5) {
+      tmp7 = cResult[4];
+    }
+    return tmp7;
+  }
+  const items = [token, tmp5];
+  cResult[2] = token;
+  cResult[3] = tmp5;
+  cResult[4] = items;
+  tmp7 = items;
+}) : (() => {
+  const obj = useToken;
+  const token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
+  const items = [token, ];
+  const obj2 = ColorUtils;
+  items[1] = obj2.hexWithOpacity(token, 0);
+  return items;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_129_0;
+  let closure_2;
+  let first;
+  let tmp11;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(47);
+  [tmp5, closure_129_0] = react.useState(0);
+  _slicedToArray(react.useState(0), 2);
+  [first, closure_2] = react.useState(3);
+  const first1 = _slicedToArray(react.useState(true), 2)[0];
+  _slicedToArray(react.useState(true), 2);
+  [tmp11, r10034] = react.useState(false);
+  _slicedToArray(react.useState(false), 2);
+  const first2 = _slicedToArray(react.useState(false), 2)[0];
+  _slicedToArray(react.useState(false), 2);
+  closure_9();
+  const tmp15 = closure_10(first, tmp11);
+  if (cResult[0] === tmp15) {
+    let tmp16;
+    if (cResult[1] === tmp5) {
+      tmp16 = cResult[2];
+    }
+    const tmpResult = SegmentedControlState;
+    const segmentedControlState = tmpResult.useSegmentedControlState(tmp16);
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      class D {
+        constructor(arg0) {
+          tmp = closure_0(arg0.nativeEvent.layout.width);
+          return;
+        }
+      }
+      cResult[3] = D;
+    } else {
+      class D {
+        constructor(arg0) {
+          tmp = closure_0(arg0.nativeEvent.layout.width);
+          return;
+        }
+      }
+    }
+    const tmp21 = closure_11();
+    if (cResult[4] === segmentedControlState) {
+      class D {
+        constructor(arg0) {
+          tmp = closure_0(arg0.nativeEvent.layout.width);
+          return;
+        }
+      }
+      if (cResult[7] === tmp21) {
+        class D {
+          constructor(arg0) {
+            tmp = closure_0(arg0.nativeEvent.layout.width);
+            return;
+          }
+        }
+      }
+      let tmp26 = first2;
+      if (tmp26) {
+        class D {
+          constructor(arg0) {
+            tmp = closure_0(arg0.nativeEvent.layout.width);
+            return;
+          }
+        }
+        const obj2 = { state: segmentedControlState, colors: tmp21 };
+        tmp26 = metroImportAll(TabsGradientDefault, obj2);
+      }
+      cResult[7] = tmp21;
+      cResult[8] = segmentedControlState;
+      cResult[9] = first2;
+      cResult[10] = tmp26;
+    }
+    const obj3 = { state: segmentedControlState, grow: first1 };
+    cResult[4] = segmentedControlState;
+    cResult[5] = first1;
+    cResult[6] = metroImportAll(Tabs.Tabs, obj3);
+    const tmp24 = metroImportAll(Tabs.Tabs, obj3);
+  }
+  const obj4 = { items: tmp15, pageWidth: tmp5, defaultIndex: 1 };
+  cResult[0] = tmp15;
+  cResult[1] = tmp5;
+  cResult[2] = obj4;
+  tmp16 = obj4;
+}) : (() => {
+  let Stack;
+  let closure_0;
+  let closure_2;
+  let first;
+  let first1;
+  let first2;
+  let first3;
+  let items1;
+  let items2;
+  let items3;
+  let obj5;
+  let tmp10;
+  let tmp13;
+  let tmp7;
+  let tmp9;
+  [first, closure_0] = react.useState(0);
+  [first1, closure_2] = react.useState(3);
+  [first2, tmp7] = react.useState(true);
+  [tmp9, tmp10] = react.useState(false);
+  _slicedToArray(react.useState(false), 2);
+  [first3, tmp13] = react.useState(false);
+  const tmp14 = closure_9();
+  const tmp15 = closure_10(first1, tmp9);
+  const obj = SegmentedControlState;
+  const segmentedControlState = obj.useSegmentedControlState({ items: tmp15, pageWidth: first, defaultIndex: 1 });
   const callback = react.useCallback((nativeEvent) => {
     closure_0(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let obj2 = require("useToken");
-  const token = obj2.useToken(first1(576).colors.BACKGROUND_BASE_LOW);
-  let items1 = [token, ];
-  let obj3 = require("ColorUtils");
-  items1[1] = obj3.hexWithOpacity(token, 0);
-  const obj4 = { style: tmp14.container, onLayout: callback, children: closure_7(Stack, obj7) };
-  Stack = require("Stack/Stack").Stack;
-  const items2 = [closure_8(require("Tabs").Tabs, { state: segmentedControlState, grow: first2 }), ];
-  let tmp23Result = first3;
-  const tmp21 = first1;
-  const tmp24 = closure_6;
-  if (tmp23Result) {
-    const obj5 = { state: segmentedControlState, colors: items1 };
-    tmp23Result = tmp23(tmp21(12275), obj5);
+  const obj2 = { style: tmp14.container, onLayout: callback, children: metroImportDefault(Stack, obj5) };
+  const tmp20 = closure_11();
+  Stack = Stack_Stack.Stack;
+  const items = [metroImportAll(Tabs.Tabs, { state: segmentedControlState, grow: first2 }), ];
+  let tmp21Result = first3;
+  const tmp22 = metroRequire;
+  if (tmp21Result) {
+    const obj3 = { state: segmentedControlState, colors: tmp20 };
+    tmp21Result = tmp21(TabsGradientDefault, obj3);
   }
-  obj7 = { spacing: 24, children: items3 };
-  items2[1] = tmp23Result;
-  const obj6 = { children: closure_8(closure_5, obj4) };
-  items3 = [closure_7(closure_5, { children: items2 }), closure_8(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState }), , ];
-  const obj8 = { spacing: 8, direction: "horizontal", children: items4 };
-  const Stack2 = tmp17(5279).Stack;
-  items4 = [, ];
-  const obj9 = {
+  obj5 = { spacing: 24, children: items1 };
+  items[1] = tmp21Result;
+  const obj4 = { children: metroImportAll(hasOwnProperty, obj2) };
+  items1 = [metroImportDefault(hasOwnProperty, { children: items }), metroImportAll(SegmentedControlPages.SegmentedControlPages, { state: segmentedControlState }), , ];
+  const obj6 = { spacing: 8, direction: "horizontal", children: items2 };
+  const Stack2 = tmp16(5280).Stack;
+  items2 = [, ];
+  const obj7 = {
     text: "Add Tab",
     variant: "active",
     size: "sm",
@@ -121,8 +296,8 @@ export default function UserSettingsDesignSystemTabs() {
       return closure_2(first1 + 1);
     }
   };
-  items4[0] = closure_8(require("components/Button/Button").Button, obj9);
-  const obj10 = {
+  items2[0] = metroImportAll(components_Button_Button.Button, obj7);
+  const obj8 = {
     text: "Remove Tab",
     variant: "destructive",
     size: "sm",
@@ -131,10 +306,13 @@ export default function UserSettingsDesignSystemTabs() {
       return closure_2(first1 - 1);
     }
   };
-  items4[1] = closure_8(require("components/Button/Button").Button, obj10);
-  items3[2] = closure_7(Stack2, obj8);
-  const obj11 = { children: items5 };
-  items5 = [closure_8(require("TableSwitchRow").TableSwitchRow, { start: true, label: "Enable Grow", value: first2, onValueChange: tmp7 }), closure_8(require("TableSwitchRow").TableSwitchRow, { label: "Enable Counts", value: tmp9, onValueChange: tmp10 }), closure_8(require("TableSwitchRow").TableSwitchRow, { end: true, label: "Enable Overflow Gradient", value: first3, onValueChange: tmp13 })];
-  items3[3] = closure_7(closure_5, obj11);
-  return closure_8(tmp24, obj6);
-};
+  items2[1] = metroImportAll(components_Button_Button.Button, obj8);
+  items1[2] = metroImportDefault(Stack2, obj6);
+  const obj9 = { children: items3 };
+  items3 = [metroImportAll(TableSwitchRow.TableSwitchRow, { start: true, label: "Enable Grow", value: first2, onValueChange: tmp7 }), metroImportAll(TableSwitchRow.TableSwitchRow, { label: "Enable Counts", value: tmp9, onValueChange: tmp10 }), metroImportAll(TableSwitchRow.TableSwitchRow, { end: true, label: "Enable Overflow Gradient", value: first3, onValueChange: tmp13 })];
+  items1[3] = metroImportDefault(hasOwnProperty, obj9);
+  return metroImportAll(tmp22, obj4);
+});
+const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTabs.tsx");
+
+export default tmp4;

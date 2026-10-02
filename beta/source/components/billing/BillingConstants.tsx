@@ -1,9 +1,9 @@
-// Module ID: 4499
-// Function ID: 4500
+// Module ID: 4502
+// Function ID: 4503
 // Name: BillingConstants
 // Dependencies: [2]
 
-// Module 4499 (BillingConstants)
+// Module 4502 (BillingConstants)
 import size from "module_2" /* 2 */;
 
 let items;

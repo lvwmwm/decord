@@ -1,11 +1,11 @@
-// Module ID: 9368
-// Function ID: 9369
+// Module ID: 9346
+// Function ID: 9347
 // Name: StageMusicActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 // Exports: updateStageMusicMuted, updateStageMusicShouldPlay
 
-// Module 9368 (StageMusicActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 9346 (StageMusicActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/stage_channels/StageMusicActionCreators.tsx");

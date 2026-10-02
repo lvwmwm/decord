@@ -1,12 +1,12 @@
-// Module ID: 8392
-// Function ID: 8393
+// Module ID: 8389
+// Function ID: 8390
 // Name: resolvedDisplayField
-// Dependencies: [8393, 8394, 2]
+// Dependencies: [8390, 8391, 2]
 // Exports: decimalToClampedPercentage, resolveProgressPercentage, resolveSingleStringOrSkeleton, resolveStatComponentValues, resolveTextComponentValues
 
-// Module 8392 (resolvedDisplayField)
-import resolvedValues from "resolvedValues" /* 8393 */;
-import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 8394 */;
+// Module 8389 (resolvedDisplayField)
+import resolvedValues from "resolvedValues" /* 8390 */;
+import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 8391 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/resolvedDisplayField.tsx");
@@ -80,7 +80,7 @@ export const resolveTextComponentValues = function resolveTextComponentValues(su
     return obj;
   }
 };
-export const resolveStatComponentValues = function resolveStatComponentValues(fields, fn, format, formatDurationNarrow, arg4) {
+export const resolveStatComponentValues = function resolveStatComponentValues(fields, resolveFieldValue, numberFormat, formatDurationNarrow, arg4) {
   let media;
   let obj4;
   let flag = arg4;
@@ -98,13 +98,13 @@ export const resolveStatComponentValues = function resolveStatComponentValues(fi
     let obj;
     const value = fields.fields.value;
     const items = [resolvedValues.ResolvedValueType.STRING, resolvedValues.ResolvedValueType.NUMBER];
-    const iter = fn(value, items);
+    const iter = resolveFieldValue(value, items);
     const label = fields.fields.label;
     const items1 = [resolvedValues.ResolvedValueType.STRING];
-    const iter2 = fn(label, items1);
+    const iter2 = resolveFieldValue(label, items1);
     const icon = fields.fields.icon;
     const items2 = [resolvedValues.ResolvedValueType.MEDIA];
-    const tmp8 = fn(icon, items2);
+    const tmp8 = resolveFieldValue(icon, items2);
     if (null == iter) {
       obj = { status: "skeleton" };
     } else {
@@ -114,7 +114,7 @@ export const resolveStatComponentValues = function resolveStatComponentValues(fi
       } else if (iter.presentationType === ApplicationWidgetFieldPresentationType.ApplicationWidgetFieldPresentationType.DURATION) {
         formatResult = formatDurationNarrow(iter.value);
       } else {
-        formatResult = format.format(iter.value);
+        formatResult = numberFormat.format(iter.value);
       }
       obj = { status: "value", text: formatResult, icon: media };
       media = undefined;

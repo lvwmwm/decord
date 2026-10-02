@@ -1,39 +1,24 @@
 // Module ID: 6148
 // Function ID: 6149
-// Dependencies: [19, 6147, 6117]
-// Exports: useGestureRelationsUpdater
+// Dependencies: [6134, 6149, 6125]
+// Exports: useTapGesture
 
 // Module 6148
-import traverseAndConfigureRelations from "traverseAndConfigureRelations" /* 6147 */;
-import react from "react" /* 19 */;
+import ComposedGestureName from "ComposedGestureName" /* 6125 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6134 */;
+import _mod6149 from "module_6149" /* 6149 */;
 
-let c2;
-let c3;
-({ useEffect: c2, useMemo: c3 } = react);
+const items = [["maxDistance", "maxDist"], ["maxDuration", "maxDurationMs"], ["maxDelay", "maxDelayMs"]];
+const map = new Map(items);
+let closure_3 = {};
 
-export const useGestureRelationsUpdater = function useGestureRelationsUpdater(gesture) {
-  let closure_0 = gesture;
-  const items = [gesture];
-  const tmp = closure_3(() => {
-    let configureRelationsResult = null;
-    if (gesture) {
-      const obj = traverseAndConfigureRelations;
-      configureRelationsResult = obj.configureRelations(tmp);
-    }
-    return configureRelationsResult;
-  }, items);
-  let closure_1 = tmp;
-  const items1 = [tmp];
-  closure_2(() => {
-    if (closure_1) {
-      const _requestAnimationFrame = requestAnimationFrame;
-      let closure_0 = requestAnimationFrame(() => {
-        const item = closure_1_1.forEach((item, index) => {
-          const NativeProxy = closure_1_0(closure_1_1[2]).NativeProxy;
-          NativeProxy.configureRelations(index, item);
-        });
-      });
-      return () => cancelAnimationFrame(closure_0);
-    }
-  }, items1);
+export const useTapGesture = function useTapGesture(cResult) {
+  let tmp = cResult;
+  if (cResult === undefined) {
+    tmp = closure_3;
+  }
+  const obj = maybeExtractNativeEvent;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map);
+  const obj2 = _mod6149;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Tap, clonedAndRemappedConfig);
 };

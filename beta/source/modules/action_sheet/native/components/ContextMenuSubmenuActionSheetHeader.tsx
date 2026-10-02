@@ -1,24 +1,75 @@
-// Module ID: 11228
-// Function ID: 11229
+// Module ID: 11100
+// Function ID: 11101
 // Name: ContextMenuSubmenuActionSheetHeader
-// Dependencies: [19, 17, 21, 4836, 8996, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 558, 576, 1127, 8973, 2]
 
-// Module 11228 (ContextMenuSubmenuActionSheetHeader)
+// Module 11100 (ContextMenuSubmenuActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1115 */;
-import ActionSheetHeaderPressableText2 from "ActionSheetHeaderPressableText" /* 8996 */;
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import ActionSheetHeaderPressableText2 from "ActionSheetHeaderPressableText" /* 8973 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let onBack;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ headerContainer: { paddingVertical: 12, paddingHorizontal: 16, alignItems: "flex-start" } });
-const result = size.fileFinishedImporting("modules/action_sheet/native/components/ContextMenuSubmenuActionSheetHeader.tsx");
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onBack) => {
+  let first;
+  let tmp7;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(8);
+  onBack = onBack.onBack;
+  const tmp4 = closure_4();
+  const headerContainer = tmp4.headerContainer;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl2.t["13/7kX"]);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== onBack) {
+    let fn = onBack;
+    if (onBack == null) {
+      fn = () => {
 
-export default function ContextMenuSubmenuActionSheetHeader(onBack) {
+      };
+    }
+    cResult[1] = onBack;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] !== tmp7) {
+    const tmp11 = jsx(ActionSheetHeaderPressableText2.ActionSheetHeaderPressableText, { label: first, onPress: tmp7 });
+    cResult[3] = tmp7;
+    cResult[4] = tmp11;
+    tmp9 = tmp11;
+  } else {
+    tmp9 = cResult[4];
+  }
+  if (cResult[5] === tmp4.headerContainer) {
+    let tmp12;
+    if (cResult[6] === tmp9) {
+      tmp12 = cResult[7];
+    }
+    return tmp12;
+  }
+  const tmp13 = <View style={headerContainer}>{tmp9}</View>;
+  cResult[5] = tmp4.headerContainer;
+  cResult[6] = tmp9;
+  cResult[7] = tmp13;
+  tmp12 = tmp13;
+}) : ((onBack) => {
   let intl;
   let fn = onBack.onBack;
   ({ label: intl.string(intl2.t["13/7kX"]), onPress: fn });
@@ -30,4 +81,7 @@ export default function ContextMenuSubmenuActionSheetHeader(onBack) {
     };
   }
   return <tmp2 style={closure_4().headerContainer}>{null}</tmp2>;
-};
+});
+const result = size.fileFinishedImporting("modules/action_sheet/native/components/ContextMenuSubmenuActionSheetHeader.tsx");
+
+export default tmp3;

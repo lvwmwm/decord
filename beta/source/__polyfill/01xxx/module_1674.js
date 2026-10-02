@@ -1,280 +1,410 @@
 // Module ID: 1674
 // Function ID: 1675
-// Dependencies: [1641, 1663, 1675, 1677, 1645]
+// Dependencies: [32, 1647, 1675, 1655, 1669, 1660, 1648]
+// Exports: makeShareableCloneOnUIRecursive
 
 // Module 1674
-import LayoutAnimationType from "LayoutAnimationType" /* 1663 */;
-import _mod1675 from "module_1675" /* 1675 */;
-import _mod1677 from "module_1677" /* 1677 */;
-import module_1641_mod from "module_1641" /* 1641 */;
-import setupMicrotasks from "setupMicrotasks" /* 1645 */;
+import shareableMappingFlag from "shareableMappingFlag" /* 1675 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import module_1647_mod from "module_1647" /* 1647 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, map, map1;
 
-let module_1641 = module_1641_mod;
-module_1641 = module_1641.isAndroid();
-function startObservingProgress(arg0, addListener, arg2) {
-  let closure_2;
-  let closure_0 = arg0;
-  _require = addListener;
-  dependencyMap = arg2 === require("LayoutAnimationType").LayoutAnimationType.SHARED_ELEMENT_TRANSITION;
-  addListener.addListener(arg0 + 1000000000, () => {
-    closure_0._notifyAboutProgress(closure_0, value2.value, closure_2);
-  });
+let fn;
+function freezeObjectInDev(arg0) {
+
 }
-let obj = { LayoutAnimationType: LayoutAnimationType.LayoutAnimationType, TAG_OFFSET: 1000000000 };
-startObservingProgress.__closure = obj;
-startObservingProgress.__workletHash = 15816248532180;
-startObservingProgress.__initData = { code: "function startObservingProgress_Pnpm_animationsManagerTs1(tag,sharedValue,animationType){const{LayoutAnimationType,TAG_OFFSET}=this.__closure;const isSharedTransition=animationType===LayoutAnimationType.SHARED_ELEMENT_TRANSITION;sharedValue.addListener(tag+TAG_OFFSET,function(){global._notifyAboutProgress(tag,sharedValue.value,isSharedTransition);});}" };
-function stopObservingProgress(arg0, removeListener) {
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  removeListener.removeListener(arg0 + 1000000000);
-  global._notifyAboutEnd(arg0, flag);
+let module_1647 = module_1647_mod;
+module_1647 = module_1647.shouldBeUseWeb();
+const REANIMATED_MAGIC_KEY = "REANIMATED_MAGIC_KEY";
+function isHostObject(__remoteFunction) {
+  return REANIMATED_MAGIC_KEY in __remoteFunction;
 }
-stopObservingProgress.__closure = { TAG_OFFSET: 1000000000 };
-stopObservingProgress.__workletHash = 8517596296348;
-stopObservingProgress.__initData = { code: "function stopObservingProgress_Pnpm_animationsManagerTs2(tag,sharedValue,removeView=false){const{TAG_OFFSET}=this.__closure;sharedValue.removeListener(tag+TAG_OFFSET);global._notifyAboutEnd(tag,removeView);}" };
-function createLayoutAnimationManager() {
-  map = new Map();
-  map1 = new Map();
-  function startActually(arg0, arg1, arg2, fn) {
-    let closure_0;
-    let closure_1;
-    map = arg0;
-    map1 = arg1;
-    let tmp = map1;
-    if (arg1 !== map1(startActually[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION_PROGRESS) {
-      const tmp6 = fn(arg2);
-      let closure_2 = tmp6;
-      let animations = tmp6.animations;
-      let obj = map;
-      const value = map.get(arg0);
-      if (value) {
-        const obj2 = {};
-        const merged = Object.assign(value);
-        let tmp11 = obj2;
-        const merged1 = Object.assign(tmp6.animations);
-        animations = obj2;
-      }
-      const result = obj.set(arg0, animations);
-      let value2 = map1.get(arg0);
-      let mutableUI = value2;
-      const obj3 = map1;
-      if (undefined === value2) {
-        const tmpResult = tmp(startActually[2]);
-        mutableUI = tmpResult.makeMutableUI(tmp6.initialValues);
-        const result1 = obj3.set(arg0, mutableUI);
-        value2 = mutableUI;
-      } else {
-        let tmp15 = stopObservingProgress;
-        if (typeof stopObservingProgress === "function") {
-          value2.removeListener(arg0 + 1000000000);
-          map._notifyAboutEnd(arg0, false);
-          value2._value = tmp6.initialValues;
-        } else {
-          throw new TypeError("Trying to call a non-function");
+isHostObject.__closure = { MAGIC_KEY: "REANIMATED_MAGIC_KEY" };
+isHostObject.__workletHash = 10372729533958;
+isHostObject.__initData = { code: "function isHostObject_Pnpm_shareablesTs1(value){const{MAGIC_KEY}=this.__closure;return MAGIC_KEY in value;}" };
+let obj = { __init: fn };
+fn = function u() {
+  obj = {
+    get(arg0, arg1) {
+      if ("_isReanimatedSharedValue" !== arg1) {
+        if ("__remoteFunction" !== arg1) {
+          const _String = String;
+          const _HermesInternal = HermesInternal;
+          const self = this;
+          const self2 = this;
+          const reanimatedError = new require("ReanimatedError").ReanimatedError("Trying to access property `" + String(arg1) + "` of an object which cannot be sent to the UI runtime.");
+          throw reanimatedError;
         }
       }
-      const tmpResult2 = tmp(startActually[3]);
-      const withStyleAnimationResult = tmpResult2.withStyleAnimation(animations);
-      withStyleAnimationResult.callback = (arg0) => {
-        const tmp = arg0;
-        if (tmp) {
-          map.delete(closure_0);
-          map1.delete(closure_0);
-          const obj = mutableUI;
-          const tmp7 = closure_1;
-          if (typeof stopObservingProgress === "function") {
-            const tmp11 = tmp7 === LayoutAnimationType.LayoutAnimationType.EXITING;
-            obj.removeListener(closure_0 + 1000000000);
-            global._notifyAboutEnd(closure_0, tmp11);
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-        const tmp15 = closure_2;
-        if (closure_2.callback) {
-          let tmp16 = undefined !== arg0;
-          const callback = tmp15.callback;
-          if (tmp16) {
-            tmp16 = arg0;
-          }
-          callback(tmp16);
-        }
-      };
-      if (typeof startObservingProgress === "function") {
-        map = arg0;
-        closure_2 = arg1 === tmp(tmp2[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION;
-        value2.addListener(arg0 + 1000000000, () => {
-          closure_0._notifyAboutProgress(closure_0, value2.value, closure_2);
-        });
-        value2.value = withStyleAnimationResult;
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    } else {
-      const ProgressTransitionRegister = map.ProgressTransitionRegister;
-      ProgressTransitionRegister.onTransitionStart(arg0, arg2);
-    }
-  }
-  const tmp3 = module_1641;
-  if (tmp3) {
-    startActually = (arg0, arg1, arg2, arg3) => {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
-      let closure_2 = arg2;
-      let closure_3 = arg3;
-      return requestAnimationFrame(() => {
-        startActually(closure_0, closure_1, closure_2, closure_3);
-      });
-    };
-  }
-  let obj = {
-    start: startActually,
-    stop(arg0) {
-      const value = map1.get(arg0);
-      if (value) {
-        if (typeof stopObservingProgress === "function") {
-          value.removeListener(arg0 + 1000000000);
-          global._notifyAboutEnd(arg0, false);
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      }
+      return false;
+    },
+    set() {
+      const reanimatedError = new require("ReanimatedError").ReanimatedError("Trying to write to an object which cannot be sent to the UI runtime.");
+      throw reanimatedError;
     }
   };
-  return obj;
-}
-let obj2 = { LayoutAnimationType: LayoutAnimationType.LayoutAnimationType, makeMutableUI: _mod1675.makeMutableUI, stopObservingProgress, withStyleAnimation: _mod1677.withStyleAnimation, startObservingProgress, IS_ANDROID: module_1641 };
-createLayoutAnimationManager.__closure = obj2;
-createLayoutAnimationManager.__workletHash = 8526874600063;
-createLayoutAnimationManager.__initData = { code: "function createLayoutAnimationManager_Pnpm_animationsManagerTs3(){const{LayoutAnimationType,makeMutableUI,stopObservingProgress,withStyleAnimation,startObservingProgress,IS_ANDROID}=this.__closure;const currentAnimationForTag=new Map();const mutableValuesForTag=new Map();const startActually=function(tag,type,yogaValues,config){if(type===LayoutAnimationType.SHARED_ELEMENT_TRANSITION_PROGRESS){global.ProgressTransitionRegister.onTransitionStart(tag,yogaValues);return;}const style=config(yogaValues);let currentAnimation=style.animations;const previousAnimation=currentAnimationForTag.get(tag);if(previousAnimation){currentAnimation={...previousAnimation,...style.animations};}currentAnimationForTag.set(tag,currentAnimation);let value=mutableValuesForTag.get(tag);if(value===undefined){value=makeMutableUI(style.initialValues);mutableValuesForTag.set(tag,value);}else{stopObservingProgress(tag,value);value._value=style.initialValues;}const animation=withStyleAnimation(currentAnimation);animation.callback=function(finished){if(finished){currentAnimationForTag.delete(tag);mutableValuesForTag.delete(tag);const shouldRemoveView=type===LayoutAnimationType.EXITING;stopObservingProgress(tag,value,shouldRemoveView);}style.callback&&style.callback(finished===undefined?false:finished);};startObservingProgress(tag,value,type);value.value=animation;};let start;if(IS_ANDROID){start=function(tag,type,yogaValues,config){return requestAnimationFrame(function(){startActually(tag,type,yogaValues,config);});};}else{start=startActually;}return{start:start,stop:function(tag){const value=mutableValuesForTag.get(tag);if(!value){return;}stopObservingProgress(tag,value);}};}" };
-const fn = function t() {
-  if (typeof createLayoutAnimationManager === "function") {
-    const _Map = Map;
-    const self = this;
-    const self2 = this;
-    new Map();
-    const _Map2 = Map;
-    const self3 = this;
-    const self4 = this;
-    new Map();
-    function startActually(arg0, arg1, arg2, fn) {
-      let closure_0;
-      let closure_1;
-      map = arg0;
-      map1 = arg1;
-      let tmp = map1;
-      if (arg1 !== map1(startActually[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION_PROGRESS) {
-        const tmp6 = fn(arg2);
-        let closure_2 = tmp6;
-        let animations = tmp6.animations;
-        let obj = map;
-        const value = map.get(arg0);
-        if (value) {
-          const obj2 = {};
-          const merged = Object.assign(value);
-          let tmp11 = obj2;
-          const merged1 = Object.assign(tmp6.animations);
-          animations = obj2;
-        }
-        const result = obj.set(arg0, animations);
-        let value2 = map1.get(arg0);
-        let mutableUI = value2;
-        const obj3 = map1;
-        if (undefined === value2) {
-          const tmpResult = tmp(startActually[2]);
-          mutableUI = tmpResult.makeMutableUI(tmp6.initialValues);
-          const result1 = obj3.set(arg0, mutableUI);
-          value2 = mutableUI;
+  const proxy = new Proxy({}, obj);
+  return proxy;
+};
+fn.__closure = {};
+fn.__workletHash = 15880119471501;
+fn.__initData = { code: "function pnpm_shareablesTs2(){return new Proxy({},{get:function(_,prop){if(prop==='_isReanimatedSharedValue'||prop==='__remoteFunction'){return false;}throw new ReanimatedError(\"Trying to access property `\"+String(prop)+\"` of an object which cannot be sent to the UI runtime.\");},set:function(){throw new ReanimatedError('Trying to write to an object which cannot be sent to the UI runtime.');}});}" };
+const VALID_ARRAY_VIEWS_NAMES = ["Int8Array", "Uint8Array", "Uint8ClampedArray", "Int16Array", "Uint16Array", "Int32Array", "Uint32Array", "Float32Array", "Float64Array", "BigInt64Array", "BigUint64Array", "DataView"];
+let tmp3 = module_1647 ? (function makeShareableCloneRecursiveWeb(arg0) {
+  return arg0;
+}) : (function makeShareableCloneRecursiveNative(__workletContextObjectFactory, flag) {
+  let c7;
+  let fn;
+  let fn2;
+  let fn3;
+  let fn4;
+  let name;
+  function cloneWorklet(__stackDetails, flag, arg2) {
+    let tmp7;
+    let tmp9;
+    if (__stackDetails.__stackDetails) {
+      delete tmp["__stackDetails"];
+    }
+    obj = { __initData: closure_1_10(__stackDetails.__initData, true, arg2 + 1) };
+    const entries = Object.entries(__stackDetails);
+    const tmp3 = entries[Symbol.iterator]();
+    while (tmp3 !== undefined) {
+      let tmp6 = _slicedToArray(tmp4, 2);
+      [tmp7, tmp9] = tmp6;
+      let tmp10 = "__initData" === tmp7;
+      let tmp8 = tmp7;
+      if (tmp10) {
+        tmp10 = undefined !== obj.__initData;
+      }
+      if (!tmp10) {
+        obj[tmp8] = closure_1_10(tmp9, flag, arg2 + 1);
+      }
+      continue;
+    }
+    const WorkletsModule = name(dependencyMap[5]).WorkletsModule;
+    const shareableClone = WorkletsModule.makeShareableClone(obj, true, __stackDetails);
+    const shareableMappingCache = name(dependencyMap[2]).shareableMappingCache;
+    const result = shareableMappingCache.set(__stackDetails, shareableClone);
+    const shareableMappingCache2 = name(dependencyMap[2]).shareableMappingCache;
+    const result1 = shareableMappingCache2.set(shareableClone);
+    freezeObjectInDev(0);
+    return shareableClone;
+  }
+  function clonePlainJSObject(__workletContextObjectFactory, flag, arg2) {
+    let tmp6;
+    let tmp8;
+    obj = {};
+    const entries = Object.entries(__workletContextObjectFactory);
+    const tmp2 = entries[Symbol.iterator]();
+    while (tmp2 !== undefined) {
+      let tmp5 = _slicedToArray(tmp3, 2);
+      [tmp6, tmp8] = tmp5;
+      let tmp9 = "__initData" === tmp6;
+      let tmp7 = tmp6;
+      if (tmp9) {
+        tmp9 = undefined !== obj.__initData;
+      }
+      if (!tmp9) {
+        obj[tmp7] = closure_1_10(tmp8, flag, arg2 + 1);
+      }
+      continue;
+    }
+    const WorkletsModule = name(dependencyMap[5]).WorkletsModule;
+    const shareableClone = WorkletsModule.makeShareableClone(obj, flag, __workletContextObjectFactory);
+    const shareableMappingCache = name(dependencyMap[2]).shareableMappingCache;
+    const result = shareableMappingCache.set(__workletContextObjectFactory, shareableClone);
+    const shareableMappingCache2 = name(dependencyMap[2]).shareableMappingCache;
+    const result1 = shareableMappingCache2.set(shareableClone);
+    freezeObjectInDev(0);
+    return shareableClone;
+  }
+  if (flag === undefined) {
+    flag = false;
+  }
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 0;
+  }
+  if (num >= 30) {
+    if (30 === num) {
+      c7 = __workletContextObjectFactory;
+    } else {
+      const tmp = c7;
+      if (__workletContextObjectFactory === c7) {
+        let tmp2 = name;
+        let tmp3 = dependencyMap;
+        let self = this;
+        let self2 = this;
+        let reanimatedError = new name(1655).ReanimatedError("Trying to convert a cyclic object to a shareable. This is not supported.");
+        let tmp5 = reanimatedError;
+        throw reanimatedError;
+      }
+    }
+  } else {
+    c7 = undefined;
+  }
+  if (typeof __workletContextObjectFactory === "object") {
+    let tmp6 = null;
+    if (null !== __workletContextObjectFactory) {
+      const shareableMappingCache14 = name(1675).shareableMappingCache;
+      let value = shareableMappingCache14.get(__workletContextObjectFactory);
+      if (value === name(1675).shareableMappingFlag) {
+        value = __workletContextObjectFactory;
+      }
+      if (undefined === value) {
+        let shareableClone1;
+        const _Array = Array;
+        if (Array.isArray(__workletContextObjectFactory)) {
+          const mapped = __workletContextObjectFactory.map((item) => closure_2_10(item, flag, num + 1));
+          const WorkletsModule4 = tmp44(1660).WorkletsModule;
+          let shareableClone = WorkletsModule4.makeShareableClone(mapped, flag, __workletContextObjectFactory);
+          const shareableMappingCache12 = tmp44(1675).shareableMappingCache;
+          let result = shareableMappingCache12.set(__workletContextObjectFactory, shareableClone);
+          const shareableMappingCache13 = tmp44(1675).shareableMappingCache;
+          let result1 = shareableMappingCache13.set(shareableClone);
+          shareableClone1 = shareableClone;
         } else {
-          let tmp15 = stopObservingProgress;
-          if (typeof stopObservingProgress === "function") {
-            value2.removeListener(arg0 + 1000000000);
-            map._notifyAboutEnd(arg0, false);
-            value2._value = tmp6.initialValues;
+          if (typeof __workletContextObjectFactory === "function") {
+            const tmp44Result = name(1669);
+            if (!tmp44Result.isWorkletFunction(__workletContextObjectFactory)) {
+              let WorkletsModule = tmp44(1660).WorkletsModule;
+              shareableClone1 = WorkletsModule.makeShareableClone(__workletContextObjectFactory, flag, __workletContextObjectFactory);
+              let shareableMappingCache = tmp44(1675).shareableMappingCache;
+              const result2 = shareableMappingCache.set(__workletContextObjectFactory, shareableClone1);
+              let shareableMappingCache2 = tmp44(1675).shareableMappingCache;
+              const result3 = shareableMappingCache2.set(shareableClone1);
+            }
+          }
+          let tmp11 = isHostObject;
+          if (typeof isHostObject === "function") {
+            let tmp15;
+            let tmp12 = REANIMATED_MAGIC_KEY;
+            if (REANIMATED_MAGIC_KEY in __workletContextObjectFactory) {
+              const WorkletsModule3 = tmp44(1660).WorkletsModule;
+              const shareableClone2 = WorkletsModule3.makeShareableClone(__workletContextObjectFactory, flag, __workletContextObjectFactory);
+              const shareableMappingCache10 = tmp44(1675).shareableMappingCache;
+              const result4 = shareableMappingCache10.set(__workletContextObjectFactory, shareableClone2);
+              const shareableMappingCache11 = tmp44(1675).shareableMappingCache;
+              const result5 = shareableMappingCache11.set(shareableClone2);
+              tmp15 = shareableClone2;
+            } else {
+              const _Object = Object;
+              const _Object2 = Object;
+              if (Object.getPrototypeOf(__workletContextObjectFactory) === Object.prototype) {
+                if (__workletContextObjectFactory.__workletContextObjectFactory) {
+                  __workletContextObjectFactory = __workletContextObjectFactory.__workletContextObjectFactory;
+                  obj = { __init: fn4 };
+                  fn4 = function c() {
+                    return __workletContextObjectFactory();
+                  };
+                  const obj2 = { workletContextObjectFactory: __workletContextObjectFactory };
+                  fn4.__closure = obj2;
+                  fn4.__workletHash = 16264240301234;
+                  fn4.__initData = __initData;
+                  const tmp35 = closure_10(obj);
+                  const shareableMappingCache9 = tmp44(1675).shareableMappingCache;
+                  const result6 = shareableMappingCache9.set(__workletContextObjectFactory, tmp35);
+                  tmp15 = tmp35;
+                }
+              }
+              const _Object3 = Object;
+              const _Object4 = Object;
+              if (Object.getPrototypeOf(__workletContextObjectFactory) === Object.prototype) {
+                const tmp44Result2 = name(1669);
+                if (tmp44Result2.isWorkletFunction(__workletContextObjectFactory)) {
+                  tmp15 = cloneWorklet(__workletContextObjectFactory, flag, num);
+                }
+              }
+              const _Object5 = Object;
+              const _Object6 = Object;
+              if (Object.getPrototypeOf(__workletContextObjectFactory) !== Object.prototype) {
+                if (typeof __workletContextObjectFactory !== "function") {
+                  const _RegExp = RegExp;
+                  if (__workletContextObjectFactory instanceof RegExp) {
+                    const source = __workletContextObjectFactory.source;
+                    const flags = __workletContextObjectFactory.flags;
+                    const obj3 = { __init: fn3 };
+                    fn3 = function s() {
+                      const regExp = new RegExp(source, flags);
+                      return regExp;
+                    };
+                    const obj4 = { pattern: source, flags };
+                    fn3.__closure = obj4;
+                    fn3.__workletHash = 17343605339188;
+                    fn3.__initData = __initData2;
+                    const tmp31 = closure_10(obj3);
+                    const shareableMappingCache8 = tmp44(1675).shareableMappingCache;
+                    const result7 = shareableMappingCache8.set(__workletContextObjectFactory, tmp31);
+                    tmp15 = tmp31;
+                  } else {
+                    const _Error = Error;
+                    if (__workletContextObjectFactory instanceof Error) {
+                      const name2 = __workletContextObjectFactory.name;
+                      const message = __workletContextObjectFactory.message;
+                      const stack = __workletContextObjectFactory.stack;
+                      const obj5 = { __init: fn2 };
+                      fn2 = function u() {
+                        const error = new Error();
+                        error.name = name2;
+                        error.message = message;
+                        error.stack = stack;
+                        return error;
+                      };
+                      let error = { name: name2, message, stack };
+                      fn2.__closure = error;
+                      fn2.__workletHash = 1273124072033;
+                      fn2.__initData = __initData3;
+                      const tmp27 = closure_10(obj5);
+                      const shareableMappingCache7 = tmp44(1675).shareableMappingCache;
+                      const result8 = shareableMappingCache7.set(__workletContextObjectFactory, tmp27);
+                      tmp15 = tmp27;
+                    } else {
+                      const _ArrayBuffer = ArrayBuffer;
+                      if (__workletContextObjectFactory instanceof ArrayBuffer) {
+                        const WorkletsModule2 = tmp44(1660).WorkletsModule;
+                        const shareableClone3 = WorkletsModule2.makeShareableClone(__workletContextObjectFactory, flag, __workletContextObjectFactory);
+                        const shareableMappingCache5 = tmp44(1675).shareableMappingCache;
+                        const result9 = shareableMappingCache5.set(__workletContextObjectFactory, shareableClone3);
+                        const shareableMappingCache6 = tmp44(1675).shareableMappingCache;
+                        const result10 = shareableMappingCache6.set(shareableClone3);
+                        tmp15 = shareableClone3;
+                      } else {
+                        const _ArrayBuffer2 = ArrayBuffer;
+                        if (ArrayBuffer.isView(__workletContextObjectFactory)) {
+                          const buffer = __workletContextObjectFactory.buffer;
+                          name = __workletContextObjectFactory.constructor.name;
+                          const obj6 = { __init: fn };
+                          fn = function s() {
+                            if (VALID_ARRAY_VIEWS_NAMES.includes(name)) {
+                              if (undefined === global[name]) {
+                                const _HermesInternal2 = HermesInternal;
+                                const self5 = this;
+                                const self6 = this;
+                                const reanimatedError = new require("ReanimatedError").ReanimatedError("[Reanimated] Constructor for `" + tmp + "` not found.");
+                                throw reanimatedError;
+                              } else {
+                                const self3 = this;
+                                const self4 = this;
+                                const tmp82 = new global[name](buffer);
+                                return tmp82;
+                              }
+                            } else {
+                              const _HermesInternal = HermesInternal;
+                              const self = this;
+                              const self2 = this;
+                              const reanimatedError1 = new require("ReanimatedError").ReanimatedError("[Reanimated] Invalid array view name `" + tmp + "`.");
+                              throw reanimatedError1;
+                            }
+                          };
+                          const obj7 = { VALID_ARRAY_VIEWS_NAMES, typeName: name, buffer };
+                          fn.__closure = obj7;
+                          fn.__workletHash = 2440560686150;
+                          fn.__initData = __initData4;
+                          const tmp20 = closure_10(obj6);
+                          const shareableMappingCache4 = tmp44(1675).shareableMappingCache;
+                          const result11 = shareableMappingCache4.set(__workletContextObjectFactory, tmp20);
+                          tmp15 = tmp20;
+                        } else {
+                          let tmp13 = closure_10;
+                          tmp15 = closure_10(obj);
+                          const shareableMappingCache3 = tmp44(1675).shareableMappingCache;
+                          const result12 = shareableMappingCache3.set(__workletContextObjectFactory, tmp15);
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              tmp15 = clonePlainJSObject(__workletContextObjectFactory, flag, num);
+            }
+            shareableClone1 = tmp15;
           } else {
             throw new TypeError("Trying to call a non-function");
           }
         }
-        const tmpResult2 = tmp(startActually[3]);
-        const withStyleAnimationResult = tmpResult2.withStyleAnimation(animations);
-        withStyleAnimationResult.callback = (arg0) => {
-          const tmp = arg0;
-          if (tmp) {
-            map.delete(closure_0);
-            map1.delete(closure_0);
-            const obj = mutableUI;
-            const tmp7 = closure_1;
-            if (typeof stopObservingProgress === "function") {
-              const tmp11 = tmp7 === LayoutAnimationType.LayoutAnimationType.EXITING;
-              obj.removeListener(closure_0 + 1000000000);
-              global._notifyAboutEnd(closure_0, tmp11);
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          }
-          const tmp15 = closure_2;
-          if (closure_2.callback) {
-            let tmp16 = undefined !== arg0;
-            const callback = tmp15.callback;
-            if (tmp16) {
-              tmp16 = arg0;
-            }
-            callback(tmp16);
-          }
-        };
-        if (typeof startObservingProgress === "function") {
-          map = arg0;
-          closure_2 = arg1 === tmp(tmp2[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION;
-          value2.addListener(arg0 + 1000000000, () => {
-            closure_0._notifyAboutProgress(closure_0, value2.value, closure_2);
-          });
-          value2.value = withStyleAnimationResult;
-        } else {
-          throw new TypeError("Trying to call a non-function");
+        value = shareableClone1;
+      }
+      return value;
+    }
+  }
+  const WorkletsModule5 = name(1660).WorkletsModule;
+  return WorkletsModule5.makeShareableClone(__workletContextObjectFactory, flag);
+});
+let closure_10 = tmp3;
+const __initData = { code: "function pnpm_shareablesTs3(){const{workletContextObjectFactory}=this.__closure;return workletContextObjectFactory();}" };
+const __initData2 = { code: "function pnpm_shareablesTs4(){const{pattern,flags}=this.__closure;return new RegExp(pattern,flags);}" };
+const __initData3 = { code: "function pnpm_shareablesTs5(){const{name,message,stack}=this.__closure;const error=new Error();error.name=name;error.message=message;error.stack=stack;return error;}" };
+const __initData4 = { code: "function pnpm_shareablesTs6(){const{VALID_ARRAY_VIEWS_NAMES,typeName,buffer}=this.__closure;if(!VALID_ARRAY_VIEWS_NAMES.includes(typeName)){throw new ReanimatedError(\"[Reanimated] Invalid array view name `\"+typeName+\"`.\");}const constructor=global[typeName];if(constructor===undefined){throw new ReanimatedError(\"[Reanimated] Constructor for `\"+typeName+\"` not found.\");}return new constructor(buffer);}" };
+function isRemoteFunction(__remoteFunction) {
+  return __remoteFunction.__remoteFunction;
+}
+isRemoteFunction.__closure = {};
+isRemoteFunction.__workletHash = 12817663616448;
+isRemoteFunction.__initData = { code: "function isRemoteFunction_Pnpm_shareablesTs7(value){return!!value.__remoteFunction;}" };
+function makeShareableCloneOnUIRecursive(fn) {
+  const tmp = module_1647;
+  if (tmp) {
+    return fn;
+  } else {
+    function cloneRecursive(__remoteFunction) {
+      if (typeof __remoteFunction !== "object") {
+        if (typeof __remoteFunction !== "function") {
+          return global._makeShareableClone(__remoteFunction, undefined);
         }
+      }
+      if (isHostObject(__remoteFunction)) {
+        return global._makeShareableClone(__remoteFunction, undefined);
+      } else if (isRemoteFunction(__remoteFunction)) {
+        return __remoteFunction.__remoteFunction;
       } else {
-        const ProgressTransitionRegister = map.ProgressTransitionRegister;
-        ProgressTransitionRegister.onTransitionStart(arg0, arg2);
+        const _Array = Array;
+        if (Array.isArray(__remoteFunction)) {
+          return global._makeShareableClone(__remoteFunction.map(cloneRecursive), undefined);
+        } else {
+          obj = {};
+          const _Object = Object;
+          const entries = Object.entries(__remoteFunction);
+          const tmp5 = entries[Symbol.iterator]();
+          while (tmp5 !== undefined) {
+            let tmp10 = _slicedToArray(tmp7, 2);
+            obj[tmp10[0]] = cloneRecursive(tmp10[1]);
+            continue;
+          }
+          return global._makeShareableClone(obj, __remoteFunction);
+        }
       }
     }
-    const tmp7 = module_1641;
-    if (tmp7) {
-      startActually = (arg0, arg1, arg2, arg3) => {
-        let closure_0 = arg0;
-        let closure_1 = arg1;
-        let closure_2 = arg2;
-        let closure_3 = arg3;
-        return requestAnimationFrame(() => {
-          startActually(closure_0, closure_1, closure_2, closure_3);
-        });
-      };
-    }
-    const obj = {
-      start: startActually,
-      stop(arg0) {
-          const value = map1.get(arg0);
-          if (value) {
-            if (typeof stopObservingProgress === "function") {
-              value.removeListener(arg0 + 1000000000);
-              global._notifyAboutEnd(arg0, false);
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          }
-        }
-    };
-    tmp.LayoutAnimationsManager = obj;
-  } else {
-    throw new TypeError("Trying to call a non-function");
+    return cloneRecursive(fn);
   }
-};
-fn.__closure = { createLayoutAnimationManager };
-fn.__workletHash = 11408639565737;
-fn.__initData = { code: "function pnpm_animationsManagerTs4(){const{createLayoutAnimationManager}=this.__closure;global.LayoutAnimationsManager=createLayoutAnimationManager();}" };
-const tmp2 = setupMicrotasks.runOnUIImmediately(fn)();
+}
+makeShareableCloneOnUIRecursive.__closure = { SHOULD_BE_USE_WEB: module_1647, isHostObject, isRemoteFunction };
+makeShareableCloneOnUIRecursive.__workletHash = 10912061747670;
+makeShareableCloneOnUIRecursive.__initData = { code: "function makeShareableCloneOnUIRecursive_Pnpm_shareablesTs8(value){const{SHOULD_BE_USE_WEB,isHostObject,isRemoteFunction}=this.__closure;if(SHOULD_BE_USE_WEB){return value;}function cloneRecursive(value){if(typeof value==='object'&&value!==null||typeof value==='function'){if(isHostObject(value)){return global._makeShareableClone(value,undefined);}if(isRemoteFunction(value)){return value.__remoteFunction;}if(Array.isArray(value)){return global._makeShareableClone(value.map(cloneRecursive),undefined);}const toAdapt={};for(const[key,element]of Object.entries(value)){toAdapt[key]=cloneRecursive(element);}return global._makeShareableClone(toAdapt,value);}return global._makeShareableClone(value,undefined);}return cloneRecursive(value);}" };
+const __initData5 = { code: "function pnpm_shareablesTs9(){const{value}=this.__closure;return value;}" };
+
+export const makeShareableCloneRecursive = tmp3;
+export { makeShareableCloneOnUIRecursive };
+export const makeShareable = module_1647 ? (function makeShareableJS(arg0) {
+  return arg0;
+}) : (function makeShareableNative(value) {
+  let fn;
+  let closure_0 = value;
+  const shareableMappingCache = shareableMappingFlag.shareableMappingCache;
+  if (shareableMappingCache.get(value)) {
+    return value;
+  } else {
+    obj = { __init: fn };
+    fn = function n() {
+      return closure_0;
+    };
+    const obj2 = { value };
+    fn.__closure = obj2;
+    fn.__workletHash = 5731865988281;
+    fn.__initData = __initData5;
+    const tmp5 = closure_10(obj);
+    const shareableMappingCache2 = shareableMappingFlag.shareableMappingCache;
+    const result = shareableMappingCache2.set(value, tmp5);
+    return value;
+  }
+});

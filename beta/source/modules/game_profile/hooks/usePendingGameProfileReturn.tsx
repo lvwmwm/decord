@@ -1,26 +1,263 @@
-// Module ID: 11928
-// Function ID: 11929
+// Module ID: 11822
+// Function ID: 11823
 // Name: usePendingGameProfileReturn
-// Dependencies: [19, 2001, 8135, 1074, 504, 8133, 8139, 2]
-// Exports: default
+// Dependencies: [19, 2007, 8133, 1086, 558, 576, 504, 8131, 8125, 2]
 
-// Module 11928 (usePendingGameProfileReturn)
-import Constants from "Constants" /* 1074 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8133 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8139 */;
+// Module 11822 (usePendingGameProfileReturn)
+import Constants from "Constants" /* 1086 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8125 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8131 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2001 */;
-import GameProfileStore from "GameProfileStore" /* 8135 */;
+import GameStore from "GameStore" /* 2007 */;
+import GameProfileStore from "GameProfileStore" /* 8133 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const AVATAR_SIZE = Constants.AVATAR_SIZE;
-const result = size.fileFinishedImporting("modules/game_profile/hooks/usePendingGameProfileReturn.tsx");
+let channelId;
 
-export default function usePendingGameProfileReturn(channelId) {
+const AVATAR_SIZE = Constants.AVATAR_SIZE;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let first;
+  let stateFromStores1;
+  let tmp10;
+  let tmp12;
+  let tmp15;
+  let tmp6;
+  let tmp9;
+  const tmp = channelId;
+  let tmp2 = stateFromStores1;
+  let obj = channelId(stateFromStores1[5]);
+  const cResult = obj.c(19);
+  channelId = channelId.channelId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GameProfileStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channelId) {
+    const fn = function f() {
+      const pendingReturn = GameProfileStore.getPendingReturn();
+      let tmp2 = null;
+      if (null != pendingReturn) {
+        tmp2 = null;
+        if (pendingReturn.channelId === channelId) {
+          tmp2 = pendingReturn;
+        }
+      }
+      return tmp2;
+    };
+    cResult[1] = channelId;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(tmp2[6]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] !== stateFromStores) {
+    class S {
+      constructor() {
+        if (null != stateFromStores) {
+          const obj = { gameId: stateFromStores.gameId, source: GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn, initialScrollOffset: stateFromStores.initialScrollOffset };
+          const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
+          GameProfileActionCreatorsDefault;
+          returnToGameProfile(obj);
+        }
+      }
+    }
+    cResult[3] = stateFromStores;
+    cResult[4] = S;
+  } else {
+    class S {
+      constructor() {
+        if (null != stateFromStores) {
+          const obj = { gameId: stateFromStores.gameId, source: GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn, initialScrollOffset: stateFromStores.initialScrollOffset };
+          const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
+          GameProfileActionCreatorsDefault;
+          returnToGameProfile(obj);
+        }
+      }
+    }
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        if (null != stateFromStores) {
+          const obj = { gameId: stateFromStores.gameId, source: GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn, initialScrollOffset: stateFromStores.initialScrollOffset };
+          const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
+          GameProfileActionCreatorsDefault;
+          returnToGameProfile(obj);
+        }
+      }
+    }
+    const items1 = [GameStore];
+    cResult[5] = items1;
+    tmp9 = items1;
+  } else {
+    class S {
+      constructor() {
+        if (null != stateFromStores) {
+          const obj = { gameId: stateFromStores.gameId, source: GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn, initialScrollOffset: stateFromStores.initialScrollOffset };
+          const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
+          GameProfileActionCreatorsDefault;
+          returnToGameProfile(obj);
+        }
+      }
+    }
+  }
+  if (cResult[6] !== stateFromStores) {
+    class R {
+      constructor() {
+        let gameId;
+        if (stateFromStores != null) {
+          gameId = tmp.gameId;
+        }
+        let game = null;
+        if (null != gameId) {
+          game = GameStore.getGame(tmp.gameId);
+        }
+        return game;
+      }
+    }
+    cResult[6] = stateFromStores;
+    cResult[7] = R;
+    tmp10 = R;
+  } else {
+    class R {
+      constructor() {
+        let gameId;
+        if (stateFromStores != null) {
+          gameId = tmp.gameId;
+        }
+        let game = null;
+        if (null != gameId) {
+          game = GameStore.getGame(tmp.gameId);
+        }
+        return game;
+      }
+    }
+  }
+  const tmpResult2 = tmp(tmp2[6]);
+  stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp10);
+  if (cResult[8] !== stateFromStores1) {
+    class R {
+      constructor() {
+        let gameId;
+        if (stateFromStores != null) {
+          gameId = tmp.gameId;
+        }
+        let game = null;
+        if (null != gameId) {
+          game = GameStore.getGame(tmp.gameId);
+        }
+        return game;
+      }
+    }
+    cResult[8] = stateFromStores1;
+    cResult[9] = tmp13;
+    tmp12 = tmp13;
+  } else {
+    class R {
+      constructor() {
+        let gameId;
+        if (stateFromStores != null) {
+          gameId = tmp.gameId;
+        }
+        let game = null;
+        if (null != gameId) {
+          game = GameStore.getGame(tmp.gameId);
+        }
+        return game;
+      }
+    }
+  }
+  if (stateFromStores1 != null) {
+    class R {
+      constructor() {
+        let gameId;
+        if (stateFromStores != null) {
+          gameId = tmp.gameId;
+        }
+        let game = null;
+        if (null != gameId) {
+          game = GameStore.getGame(tmp.gameId);
+        }
+        return game;
+      }
+    }
+  }
+  if (cResult[10] !== undefined) {
+    class R {
+      constructor() {
+        let gameId;
+        if (stateFromStores != null) {
+          gameId = tmp.gameId;
+        }
+        let game = null;
+        if (null != gameId) {
+          game = GameStore.getGame(tmp.gameId);
+        }
+        return game;
+      }
+    }
+    tmp16[0] = undefined;
+    cResult[10] = undefined;
+    cResult[11] = tmp16;
+    tmp15 = tmp16;
+  } else {
+    class R {
+      constructor() {
+        let gameId;
+        if (stateFromStores != null) {
+          gameId = tmp.gameId;
+        }
+        let game = null;
+        if (null != gameId) {
+          game = GameStore.getGame(tmp.gameId);
+        }
+        return game;
+      }
+    }
+  }
+  const effect = react.useEffect(tmp12, tmp15);
+  if (stateFromStores1 != null) {
+    class R {
+      constructor() {
+        let gameId;
+        if (stateFromStores != null) {
+          gameId = tmp.gameId;
+        }
+        let game = null;
+        if (null != gameId) {
+          game = GameStore.getGame(tmp.gameId);
+        }
+        return game;
+      }
+    }
+  }
+  if (null != stateFromStores1) {
+    class R {
+      constructor() {
+        let gameId;
+        if (stateFromStores != null) {
+          gameId = tmp.gameId;
+        }
+        let game = null;
+        if (null != gameId) {
+          game = GameStore.getGame(tmp.gameId);
+        }
+        return game;
+      }
+    }
+  }
+  return null;
+}) : ((channelId) => {
   let name;
   channelId = channelId.channelId;
   let stateFromStores1;
-  let obj = channelId(stateFromStores1[4]);
+  let obj = channelId(stateFromStores1[6]);
   const items = [GameProfileStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const pendingReturn = GameProfileStore.getPendingReturn();
@@ -44,7 +281,7 @@ export default function usePendingGameProfileReturn(channelId) {
     }
   }, items1);
   const items2 = [GameStore];
-  const obj2 = channelId(stateFromStores1[4]);
+  const obj2 = channelId(stateFromStores1[6]);
   stateFromStores1 = obj2.useStateFromStores(items2, () => {
     let gameId;
     if (stateFromStores != null) {
@@ -68,7 +305,7 @@ export default function usePendingGameProfileReturn(channelId) {
       id = stateFromStores1.id;
     }
     return null != id ? (() => {
-      const obj = stateFromStores(stateFromStores1[5]);
+      const obj = stateFromStores(stateFromStores1[7]);
       return obj.clearGameProfilePendingReturn(id.id);
     }) : undefined;
   }, items3);
@@ -85,4 +322,7 @@ export default function usePendingGameProfileReturn(channelId) {
     }
   }
   return null;
-};
+});
+const result = size.fileFinishedImporting("modules/game_profile/hooks/usePendingGameProfileReturn.tsx");
+
+export default tmp2;

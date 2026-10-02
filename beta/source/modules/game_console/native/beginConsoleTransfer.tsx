@@ -1,13 +1,13 @@
-// Module ID: 9242
-// Function ID: 9243
+// Module ID: 9220
+// Function ID: 9221
 // Name: beginConsoleTransfer
-// Dependencies: [5, 1074, 9243, 9250, 4800, 9251, 1981, 1249, 9255, 2]
+// Dependencies: [5, 1086, 9221, 9228, 4801, 9229, 1987, 1261, 9233, 2]
 // Exports: beginConsoleTransfer
 
-// Module 9242 (beginConsoleTransfer)
-import Constants from "Constants" /* 1074 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 9243 */;
-import transferToXboxDefault from "transferToXbox" /* 9255 */;
+// Module 9220 (beginConsoleTransfer)
+import Constants from "Constants" /* 1086 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 9221 */;
+import transferToXboxDefault from "transferToXbox" /* 9233 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _beginConsoleTransfer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -92,7 +92,7 @@ let obj = function _beginConsoleTransfer() {
             return { value, done: true };
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp35) {
           c5 = 3;
           throw tmp35;

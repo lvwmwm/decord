@@ -1,10 +1,10 @@
-// Module ID: 1967
-// Function ID: 1968
+// Module ID: 1973
+// Function ID: 1974
 // Name: mappers
 // Dependencies: [2]
 // Exports: parseServerUserCollectibles, parseSkuIdFromServerData
 
-// Module 1967 (mappers)
+// Module 1973 (mappers)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/mappers.tsx");

@@ -1,30 +1,23 @@
-// Module ID: 7589
-// Function ID: 7590
+// Module ID: 7593
+// Function ID: 7594
 // Name: useAvatarColor
-// Dependencies: [32, 5, 19, 4825, 560, 1248, 1476, 4683, 504, 6972, 2]
-// Exports: default, maybeFetchColors, useAvatarColors, useHasFetchedColors
+// Dependencies: [32, 5, 19, 4826, 570, 1260, 1482, 4685, 558, 576, 504, 6976, 2]
+// Exports: maybeFetchColors
 
-// Module 7589 (useAvatarColor)
+// Module 7593 (useAvatarColor)
+import react2 from "react" /* 576 */;
+import _modDef6976 from "module_6976" /* 6976 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import module_560 from "module_560" /* 560 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import module_570 from "module_570" /* 570 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c1, c2, c5, c6, dependencyMap;
 
-const f84687 = () => {
-  let tmp2 = null != closure_0;
-  const tmp = closure_0;
-  if (tmp2) {
-    tmp2 = null == closure_2;
-  }
-  if (tmp2) {
-    fetchColors(tmp);
-  }
-};
 function hasFetchedColors(iconURL) {
   return null != obj.getState().palette[iconURL];
 }
@@ -41,7 +34,7 @@ let obj = function _maybeFetchColors() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -72,7 +65,7 @@ let obj = function _maybeFetchColors() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -100,7 +93,7 @@ obj = function _fetchColors() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -180,7 +173,7 @@ obj = function _fetchColors() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp24) {
         let closure_3 = tmp24;
         if (0 === c4) {
@@ -194,18 +187,220 @@ obj = function _fetchColors() {
   });
   return obj(...arguments);
 };
-obj = module_560.create(() => ({ palette: {}, fetching: {} }));
-const result = size.fileFinishedImporting("modules/avatar/useAvatarColor.tsx");
-
-export default function useAvatarColor(arg0, arg1) {
-  let closure_0;
-  let closure_2;
+obj = module_570.create(() => ({ palette: {}, fetching: {} }));
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp2;
+  let closure_0 = arg0;
+  obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] !== arg0) {
+    const fn = function e(arg0) {
+      return null != closure_0 && arg0.fetching[tmp];
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return !obj(tmp2);
+}) : ((arg0) => {
+  let closure_0 = arg0;
+  return !obj((arg0) => null != closure_0 && arg0.fetching[tmp]);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+  let tmp2 = undefined === arg2;
+  const tmp = closure_12;
+  if (!tmp2) {
+    tmp2 = arg2;
+  }
+  return _slicedToArray(tmp(arg0, arg1, tmp2), 1)[0];
+}) : ((arg0, arg1) => {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = true;
   }
+  return _slicedToArray(closure_12(arg0, arg1, flag), 1)[0];
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+  let closure_0;
+  let closure_2;
+  let fn2;
+  let items1;
+  let tmp17;
+  let tmp5;
+  let tmp7;
+  let tmp9;
   _require = arg0;
-  if (flag === undefined) {
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  obj = require("react");
+  const cResult = obj.c(15);
+  const tmp4 = undefined === arg2 || arg2;
+  let closure_1 = tmp4;
+  if (cResult[0] !== arg0) {
+    const fn = function c(arg0) {
+      let tmp2;
+      if (null != closure_0) {
+        tmp2 = arg0.palette[tmp];
+      }
+      return tmp2;
+    };
+    let num = 0;
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const tmp6 = obj(tmp5);
+  dependencyMap = tmp6;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    cResult[2] = items;
+    tmp7 = items;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] !== tmp4) {
+    class C {
+      constructor() {
+        let num = 1;
+        if (closure_1) {
+          num = 1;
+          if (AccessibilityStore.desaturateUserColors) {
+            num = AccessibilityStore.saturation;
+          }
+        }
+        return num;
+      }
+    }
+    cResult[3] = tmp4;
+    cResult[4] = C;
+    tmp9 = C;
+  } else {
+    class C {
+      constructor() {
+        let num = 1;
+        if (closure_1) {
+          num = 1;
+          if (AccessibilityStore.desaturateUserColors) {
+            num = AccessibilityStore.saturation;
+          }
+        }
+        return num;
+      }
+    }
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp9);
+  if (cResult[5] === arg0) {
+    class C {
+      constructor() {
+        let num = 1;
+        if (closure_1) {
+          num = 1;
+          if (AccessibilityStore.desaturateUserColors) {
+            num = AccessibilityStore.saturation;
+          }
+        }
+        return num;
+      }
+    }
+    const effect = react.useEffect(fn2, items1);
+    if (cResult[9] === tmp6) {
+      class C {
+        constructor() {
+          let num = 1;
+          if (closure_1) {
+            num = 1;
+            if (AccessibilityStore.desaturateUserColors) {
+              num = AccessibilityStore.saturation;
+            }
+          }
+          return num;
+        }
+      }
+      if (cResult[12] === tmp13) {
+        class C {
+          constructor() {
+            let num = 1;
+            if (closure_1) {
+              num = 1;
+              if (AccessibilityStore.desaturateUserColors) {
+                num = AccessibilityStore.saturation;
+              }
+            }
+            return num;
+          }
+        }
+        return tmp17;
+      }
+      let tmp19 = tmp13;
+      if (tmp13 == null) {
+        class C {
+          constructor() {
+            let num = 1;
+            if (closure_1) {
+              num = 1;
+              if (AccessibilityStore.desaturateUserColors) {
+                num = AccessibilityStore.saturation;
+              }
+            }
+            return num;
+          }
+        }
+        tmp20[0] = arg1;
+        tmp20[1] = arg1;
+        tmp19 = tmp20;
+      }
+      cResult[12] = tmp13;
+      cResult[13] = arg1;
+      cResult[14] = tmp19;
+      tmp17 = tmp19;
+    }
+    if (tmp6 != null) {
+      class C {
+        constructor() {
+          let num = 1;
+          if (closure_1) {
+            num = 1;
+            if (AccessibilityStore.desaturateUserColors) {
+              num = AccessibilityStore.saturation;
+            }
+          }
+          return num;
+        }
+      }
+    }
+    cResult[9] = tmp6;
+    cResult[10] = stateFromStores;
+    cResult[11] = undefined;
+  }
+  fn2 = function v() {
+    let tmp2 = null != closure_0;
+    const tmp = closure_0;
+    if (tmp2) {
+      tmp2 = null == closure_2;
+    }
+    if (tmp2) {
+      fetchColors(tmp);
+    }
+  };
+  items1 = [arg0, tmp6];
+  cResult[5] = arg0;
+  cResult[6] = tmp6;
+  cResult[7] = fn2;
+  cResult[8] = items1;
+}) : ((arg0, arg1) => {
+  let closure_0;
+  let closure_2;
+  _require = arg0;
+  let flag = arg2;
+  if (arg2 === undefined) {
     flag = true;
   }
   let tmp = obj((arg0) => {
@@ -229,7 +424,16 @@ export default function useAvatarColor(arg0, arg1) {
     return num;
   });
   const items1 = [arg0, tmp];
-  const effect = react.useEffect(f84687, items1);
+  const effect = react.useEffect(() => {
+    let tmp2 = null != closure_0;
+    const tmp = closure_0;
+    if (tmp2) {
+      tmp2 = null == closure_2;
+    }
+    if (tmp2) {
+      fetchColors(tmp);
+    }
+  }, items1);
   const items2 = [tmp, stateFromStores];
   let memo = react.useMemo(() => {
     let mapped;
@@ -243,11 +447,11 @@ export default function useAvatarColor(arg0, arg1) {
         let tmp2;
         let tmp3;
         [tmp, tmp2, tmp3] = item;
-        obj = flag(closure_2[9])({ r: tmp, g: tmp2, b: tmp3 });
+        obj = flag(closure_2[11])({ r: tmp, g: tmp2, b: tmp3 });
         ({ h, s, l } = obj.toHsl());
         const obj2 = { h, s: s * stateFromStores, l };
         obj.toHsl();
-        const obj3 = flag(closure_2[9])(obj2);
+        const obj3 = flag(closure_2[11])(obj2);
         return obj3.toHexString();
       });
     }
@@ -257,69 +461,16 @@ export default function useAvatarColor(arg0, arg1) {
     const items3 = [arg1, arg1];
     memo = items3;
   }
-  return stateFromStores(memo, 1)[0];
-};
+  return memo;
+});
+let closure_12 = tmp5;
+const result = size.fileFinishedImporting("modules/avatar/useAvatarColor.tsx");
+
+export default tmp4;
 export const useColorStore = obj;
 export { hasFetchedColors };
 export const maybeFetchColors = function maybeFetchColors() {
   return obj(...arguments);
 };
-export const useHasFetchedColors = function useHasFetchedColors(arg0) {
-  let closure_0 = arg0;
-  return !obj((arg0) => null != closure_0 && arg0.fetching[tmp]);
-};
-export const useAvatarColors = function useAvatarColors(pendingAvatarSrc, PRIMARY_530) {
-  let closure_2;
-  let flag;
-  _require = pendingAvatarSrc;
-  const tmp = obj((arg0) => {
-    let tmp2;
-    if (null != closure_0) {
-      tmp2 = arg0.palette[tmp];
-    }
-    return tmp2;
-  });
-  dependencyMap = tmp;
-  obj = require("get initialized");
-  const items = [AccessibilityStore];
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    let num = 1;
-    if (flag) {
-      num = 1;
-      if (AccessibilityStore.desaturateUserColors) {
-        num = AccessibilityStore.saturation;
-      }
-    }
-    return num;
-  });
-  const items1 = [pendingAvatarSrc, tmp];
-  const effect = react.useEffect(f84687, items1);
-  const items2 = [tmp, stateFromStores];
-  let memo = react.useMemo(() => {
-    let mapped;
-    const arr = closure_2;
-    if (closure_2 != null) {
-      mapped = arr.map((item) => {
-        let h;
-        let l;
-        let s;
-        let tmp;
-        let tmp2;
-        let tmp3;
-        [tmp, tmp2, tmp3] = item;
-        obj = flag(closure_2[9])({ r: tmp, g: tmp2, b: tmp3 });
-        ({ h, s, l } = obj.toHsl());
-        const obj2 = { h, s: s * stateFromStores, l };
-        obj.toHsl();
-        const obj3 = flag(closure_2[9])(obj2);
-        return obj3.toHexString();
-      });
-    }
-    return mapped;
-  }, items2);
-  if (memo == null) {
-    const items3 = [PRIMARY_530, PRIMARY_530];
-    memo = items3;
-  }
-  return memo;
-};
+export const useHasFetchedColors = tmp3;
+export const useAvatarColors = tmp5;

@@ -1,16 +1,16 @@
-// Module ID: 12297
-// Function ID: 12298
+// Module ID: 12295
+// Function ID: 12296
 // Name: PanGestureAnimations
-// Dependencies: [1177, 5280, 4837, 4566, 6073, 2]
-// Exports: default
+// Dependencies: [1189, 5281, 4838, 558, 576, 4570, 6066, 2]
 
-// Module 12297 (PanGestureAnimations)
-import native from "native" /* 1177 */;
-import timing from "timing" /* 4837 */;
-import spring from "spring" /* 5280 */;
+// Module 12295 (PanGestureAnimations)
+import native from "native" /* 1189 */;
+import timing from "timing" /* 4838 */;
+import spring from "spring" /* 5281 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _Math, obj1, obj7, obj8, result1, result2, set, str, str2, sum, tmp10Result, tmp11, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp21Result, tmp22, tmp23, tmp25, tmp26, tmp4, tmp4Result, tmp5, tmp5Result, tmp6, tmp7, tmp8, tmp9, translationX, velocityX;
+let set;
 
 const SPRING_CONFIG = { damping: 30, mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 let obj2 = { duration: 500, easing: native.STANDARD_EASING };
@@ -96,7 +96,7 @@ function getNearestValue(value, arg1, arg2) {
 getNearestValue.__closure = {};
 getNearestValue.__workletHash = 4186929947751;
 getNearestValue.__initData = { code: "function getNearestValue_PanGestureAnimationsTsx1(array,measure,velocity=0){const unitVector=velocity<0?-1:velocity>0?1:0;function getSortedByMeasure(array,measure){'worklet';const sorted=new Array(...array).sort(function(left,right){const al=Math.abs(left-measure);const ar=Math.abs(right-measure);return al<ar?-1:al>ar?1:0;});return sorted;}if(array.length===0){return measure;}const sorted=getSortedByMeasure(array,measure);if(unitVector!==0){var _sorted$find;return(_sorted$find=sorted.find(function(value){const result=unitVector<0?measure>value:measure<value;return result;}))!==null&&_sorted$find!==void 0?_sorted$find:sorted[0];}return sorted[0];}" };
-function withPanGestureSpring(targetHeight, velocity, arg2) {
+function withPanGestureSpring(value, velocity, arg2) {
   let obj;
   let tmp = arg2;
   const withSpring = spring.withSpring;
@@ -106,7 +106,7 @@ function withPanGestureSpring(targetHeight, velocity, arg2) {
   }
   obj = { velocity };
   const merged = Object.assign(tmp);
-  return withSpring(targetHeight, obj);
+  return withSpring(value, obj);
 }
 let obj3 = { SPRING_CONFIG, withSpring: spring.withSpring };
 withPanGestureSpring.__closure = obj3;
@@ -126,12 +126,168 @@ withPanGestureTiming.__closure = obj4;
 withPanGestureTiming.__workletHash = 7636074551896;
 withPanGestureTiming.__initData = { code: "function withPanGestureTiming_PanGestureAnimationsTsx4(destination,config){const{TIMING_CONFIG,withTiming}=this.__closure;const timingConfig=config!==null&&config!==void 0?config:TIMING_CONFIG;return withTiming(destination,timingConfig);}" };
 let closure_8 = { code: "function PanGestureAnimationsTsx5(){const{isGestureInProgress}=this.__closure;if(isGestureInProgress!=null){isGestureInProgress.set(false);}}" };
-let closure_9 = { code: "function PanGestureAnimationsTsx6(event,success){const{start,translate,snapPositions,velocity,swipeVelocityThreshold,getNearestValue,withPanGestureSpring,withPanGestureTiming,onEnd}=this.__closure;start.set(translate.get());if(snapPositions!=null){var _onEnd;const swipeVelocity=Math.abs(velocity.get())>swipeVelocityThreshold?velocity.get():0;const snapPoint=getNearestValue(snapPositions.get(),translate.get(),swipeVelocity);if(swipeVelocity!==0){translate.set(withPanGestureSpring(snapPoint,velocity.get()));}else{translate.set(withPanGestureTiming(snapPoint));}(_onEnd=onEnd)===null||_onEnd===void 0||_onEnd(event,{success:success,destination:snapPoint,startPosition:start.get()});}}" };
-let closure_10 = { code: "function PanGestureAnimationsTsx7(event){const{start,vertical,lowerBounds,upperBounds,velocity,translate,onChange}=this.__closure;var _onChange;const{velocityY:velocityY,translationY:translationY,velocityX:velocityX,translationX:translationX}=event;let next=start.get()+(vertical?translationY:translationX);if(lowerBounds!=null&&next<lowerBounds){next=lowerBounds;}else if(upperBounds!=null&&next>upperBounds){next=upperBounds;}velocity.set(vertical?velocityY:velocityX);translate.set(next);(_onChange=onChange)===null||_onChange===void 0||_onChange(event,{destination:translate.get(),startPosition:start.get()});}" };
+let __initData2 = { code: "function PanGestureAnimationsTsx6(event_1,success){const{start,translate,snapPositions,velocity,swipeVelocityThreshold,getNearestValue,withPanGestureSpring,withPanGestureTiming,onEnd}=this.__closure;start.set(translate.get());if(snapPositions!=null){var _onEnd;const swipeVelocity=Math.abs(velocity.get())>swipeVelocityThreshold?velocity.get():0;const snapPoint=getNearestValue(snapPositions.get(),translate.get(),swipeVelocity);if(swipeVelocity!==0){translate.set(withPanGestureSpring(snapPoint,velocity.get()));}else{translate.set(withPanGestureTiming(snapPoint));}(_onEnd=onEnd)===null||_onEnd===void 0||_onEnd(event_1,{success:success,destination:snapPoint,startPosition:start.get()});}}" };
+let closure_10 = { code: "function PanGestureAnimationsTsx7(event_0){const{start,vertical,lowerBounds,upperBounds,velocity,translate,onChange}=this.__closure;var _onChange;const{velocityY:velocityY,translationY:translationY,velocityX:velocityX,translationX:translationX}=event_0;let next=start.get()+(vertical?translationY:translationX);if(lowerBounds!=null&&next<lowerBounds){next=lowerBounds;}else{if(upperBounds!=null&&next>upperBounds){next=upperBounds;}}velocity.set(vertical?velocityY:velocityX);translate.set(next);(_onChange=onChange)===null||_onChange===void 0||_onChange(event_0,{destination:translate.get(),startPosition:start.get()});}" };
 let closure_11 = { code: "function PanGestureAnimationsTsx8(event){const{start,translate,velocity,isGestureInProgress,onStart}=this.__closure;var _onStart;start.set(translate.get());velocity.set(0);if(isGestureInProgress!=null){isGestureInProgress.set(true);}(_onStart=onStart)===null||_onStart===void 0||_onStart(event,{destination:start.get(),startPosition:start.get()});}" };
-let result = size.fileFinishedImporting("modules/action_sheet/native/PanGestureAnimations.tsx");
-
-export default function usePanGesture(lowerBounds) {
+const __initData3 = { code: "function PanGestureAnimationsTsx9(){const{isGestureInProgress}=this.__closure;if(isGestureInProgress!=null){isGestureInProgress.set(false);}}" };
+const __initData4 = { code: "function PanGestureAnimationsTsx10(event_1,success){const{start,translate,snapPositions,velocity,swipeVelocityThreshold,getNearestValue,withPanGestureSpring,withPanGestureTiming,onEnd}=this.__closure;start.set(translate.get());if(snapPositions!=null){var _onEnd;const swipeVelocity=Math.abs(velocity.get())>swipeVelocityThreshold?velocity.get():0;const snapPoint=getNearestValue(snapPositions.get(),translate.get(),swipeVelocity);if(swipeVelocity!==0){translate.set(withPanGestureSpring(snapPoint,velocity.get()));}else{translate.set(withPanGestureTiming(snapPoint));}(_onEnd=onEnd)===null||_onEnd===void 0||_onEnd(event_1,{success:success,destination:snapPoint,startPosition:start.get()});}}" };
+const __initData5 = { code: "function PanGestureAnimationsTsx11(event_0){const{start,vertical,lowerBounds,upperBounds,velocity,translate,onChange}=this.__closure;var _onChange;const{velocityY:velocityY,translationY:translationY,velocityX:velocityX,translationX:translationX}=event_0;let next=start.get()+(vertical?translationY:translationX);if(lowerBounds!=null&&next<lowerBounds){next=lowerBounds;}else if(upperBounds!=null&&next>upperBounds){next=upperBounds;}velocity.set(vertical?velocityY:velocityX);translate.set(next);(_onChange=onChange)===null||_onChange===void 0||_onChange(event_0,{destination:translate.get(),startPosition:start.get()});}" };
+const __initData6 = { code: "function PanGestureAnimationsTsx12(event){const{start,translate,velocity,isGestureInProgress,onStart}=this.__closure;var _onStart;start.set(translate.get());velocity.set(0);if(isGestureInProgress!=null){isGestureInProgress.set(true);}(_onStart=onStart)===null||_onStart===void 0||_onStart(event,{destination:start.get(),startPosition:start.get()});}" };
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((lowerBounds) => {
+  let closure_9;
+  let isGestureInProgress;
+  let swipeVelocityThreshold;
+  let tmp7;
+  let translate;
+  let upperBounds;
+  let vertical;
+  let obj = lowerBounds(upperBounds[4]);
+  const cResult = obj.c(2);
+  lowerBounds = lowerBounds.lowerBounds;
+  upperBounds = lowerBounds.upperBounds;
+  const snapPositions = lowerBounds.snapPositions;
+  ({ swipeVelocityThreshold, translate } = lowerBounds);
+  const onStart = lowerBounds.onStart;
+  const onChange = lowerBounds.onChange;
+  const onEnd = lowerBounds.onEnd;
+  ({ vertical, isGestureInProgress } = lowerBounds);
+  let num = 300;
+  if (undefined !== swipeVelocityThreshold) {
+    num = swipeVelocityThreshold;
+  }
+  let tmp4 = undefined === vertical || vertical;
+  __initData2 = tmp4;
+  const tmpResult = lowerBounds(upperBounds[5]);
+  const sharedValue = tmpResult.useSharedValue(0);
+  const tmpResult2 = lowerBounds(upperBounds[5]);
+  const sharedValue1 = tmpResult2.useSharedValue(0);
+  if (cResult[0] !== isGestureInProgress) {
+    class PanGestureAnimationsTsx5 {
+      constructor() {
+        obj = isGestureInProgress;
+        if (null != isGestureInProgress) {
+          flag = false;
+          result = obj.set(false);
+        }
+        return;
+      }
+    }
+    obj2 = { isGestureInProgress };
+    PanGestureAnimationsTsx5.__closure = obj2;
+    PanGestureAnimationsTsx5.__workletHash = 11128244755178;
+    PanGestureAnimationsTsx5.__initData = num;
+    cResult[0] = isGestureInProgress;
+    cResult[1] = PanGestureAnimationsTsx5;
+    tmp7 = PanGestureAnimationsTsx5;
+  } else {
+    class PanGestureAnimationsTsx5 {
+      constructor() {
+        obj = isGestureInProgress;
+        if (null != isGestureInProgress) {
+          flag = false;
+          result = obj.set(false);
+        }
+        return;
+      }
+    }
+  }
+  const Gesture = tmp(tmp2[6]).Gesture;
+  const fn = function u(arg0) {
+    const result = sharedValue.set(translate.get());
+    const result1 = sharedValue1.set(0);
+    obj2 = isGestureInProgress;
+    if (null != isGestureInProgress) {
+      const result2 = obj2.set(true);
+    }
+    if (onStart != null) {
+      const obj3 = { destination: sharedValue.get(), startPosition: sharedValue.get() };
+      tmp4(arg0, obj3);
+    }
+  };
+  fn.__closure = { start: sharedValue, translate, velocity: sharedValue1, isGestureInProgress, onStart };
+  fn.__workletHash = 7008504704609;
+  fn.__initData = sharedValue1;
+  const fn2 = function o(arg0) {
+    let translationX;
+    let translationY;
+    let velocityX;
+    let velocityY;
+    ({ velocityX, translationX } = arg0);
+    ({ velocityY, translationY } = arg0);
+    const value = sharedValue.get();
+    const obj = sharedValue;
+    if (closure_9) {
+      translationX = translationY;
+    }
+    const sum = value + translationX;
+    let tmp4 = lowerBounds;
+    if (null == lowerBounds) {
+      tmp4 = sum;
+      const tmp6 = null != upperBounds && sum > upperBounds;
+      if (tmp6) {
+        tmp4 = tmp5;
+      }
+    }
+    set = sharedValue1.set;
+    if (closure_9) {
+      velocityX = velocityY;
+    }
+    const result = set(velocityX);
+    const result1 = translate.set(tmp4);
+    obj2 = translate;
+    if (onChange != null) {
+      const obj3 = { destination: obj2.get(), startPosition: obj.get() };
+      tmp10(arg0, obj3);
+    }
+  };
+  fn2.__closure = { start: sharedValue, vertical: tmp4, lowerBounds, upperBounds, velocity: sharedValue1, translate, onChange };
+  fn2.__workletHash = 11932761286978;
+  fn2.__initData = sharedValue;
+  const PanResult = Gesture.Pan();
+  const fn3 = function s(arg0, success) {
+    const result = sharedValue.set(translate.get());
+    const obj3 = snapPositions;
+    if (null != snapPositions) {
+      const _Math = Math;
+      num = 0;
+      const obj7 = sharedValue1;
+      if (Math.abs(sharedValue1.get()) > num) {
+        num = obj7.get();
+      }
+      const value = obj3.get();
+      const tmp4 = getNearestValue(value, translate.get(), num);
+      if (0 !== num) {
+        set = translate.set;
+        if (typeof withPanGestureSpring === "function") {
+          const obj5 = { velocity: tmp12 };
+          const withSpring = spring.withSpring;
+          spring;
+          const merged = Object.assign(obj);
+          const result1 = set(withSpring(tmp4, obj5));
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      } else if (typeof withPanGestureTiming === "function") {
+        const obj4 = timing;
+        tmp5(obj4.withTiming(tmp4, translate));
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+      if (onEnd != null) {
+        const obj6 = { success, destination: tmp4, startPosition: sharedValue.get() };
+        tmp21(arg0, obj6);
+      }
+    }
+  };
+  let obj3 = { start: sharedValue, translate, snapPositions, velocity: sharedValue1, swipeVelocityThreshold: num, getNearestValue: onChange, withPanGestureSpring: onEnd, withPanGestureTiming: isGestureInProgress, onEnd };
+  fn3.__closure = obj3;
+  fn3.__workletHash = 14179326673233;
+  fn3.__initData = __initData2;
+  const onStartResult = PanResult.onStart(fn);
+  const onChangeResult = onStartResult.onChange(fn2);
+  const onEndResult = onChangeResult.onEnd(fn3);
+  return onEndResult.onFinalize(tmp7);
+}) : ((lowerBounds) => {
   lowerBounds = lowerBounds.lowerBounds;
   const upperBounds = lowerBounds.upperBounds;
   const snapPositions = lowerBounds.snapPositions;
@@ -148,161 +304,125 @@ export default function usePanGesture(lowerBounds) {
     flag = true;
   }
   const isGestureInProgress = lowerBounds.isGestureInProgress;
-  let obj = lowerBounds(upperBounds[3]);
+  let obj = lowerBounds(upperBounds[5]);
   const sharedValue = obj.useSharedValue(0);
-  obj2 = lowerBounds(upperBounds[3]);
+  obj2 = lowerBounds(upperBounds[5]);
   const sharedValue1 = obj2.useSharedValue(0);
-  const Gesture = lowerBounds(upperBounds[4]).Gesture;
-  const PanResult = Gesture.Pan();
-  class N {
-    constructor(arg0) {
-      obj = closure_10;
-      result = closure_10.set(translate.get());
-      result1 = closure_11.set(0);
-      obj2 = isGestureInProgress;
-      if (null != isGestureInProgress) {
-        flag = true;
-        result2 = obj2.set(true);
-      }
-      if (onStart != null) {
-        tmp5 = lowerBounds;
-        obj1 = { destination: null, startPosition: null };
-        obj1.destination = obj.get();
-        obj1.startPosition = obj.get();
-        tmp4Result = tmp4(lowerBounds, obj1);
-      }
-      return;
+  const Gesture = lowerBounds(upperBounds[6]).Gesture;
+  const fn = function x(arg0) {
+    const result = sharedValue.set(translate.get());
+    const result1 = sharedValue1.set(0);
+    obj2 = isGestureInProgress;
+    if (null != isGestureInProgress) {
+      const result2 = obj2.set(true);
     }
-  }
-  N.__closure = { start: sharedValue, translate, velocity: sharedValue1, isGestureInProgress, onStart };
-  N.__workletHash = 7008504704609;
-  N.__initData = sharedValue1;
-  const onStartResult = PanResult.onStart(N);
+    if (onStart != null) {
+      const obj3 = { destination: sharedValue.get(), startPosition: sharedValue.get() };
+      tmp4(arg0, obj3);
+    }
+  };
+  fn.__closure = { start: sharedValue, translate, velocity: sharedValue1, isGestureInProgress, onStart };
+  fn.__workletHash = 3799174323258;
+  fn.__initData = __initData6;
+  const PanResult = Gesture.Pan();
+  const onStartResult = PanResult.onStart(fn);
   class C {
     constructor(arg0) {
-      ({ velocityX, translationX } = lowerBounds);
-      obj = closure_10;
-      ({ velocityY, translationY } = lowerBounds);
-      value = closure_10.get();
-      tmp2 = c8;
-      if (tmp2) {
+      let translationX;
+      let translationY;
+      let velocityX;
+      let velocityY;
+      ({ velocityX, translationX } = arg0);
+      ({ velocityY, translationY } = arg0);
+      const value = sharedValue.get();
+      const obj = sharedValue;
+      if (flag) {
         translationX = translationY;
       }
-      sum = value + translationX;
-      tmp4 = lowerBounds;
+      const sum = value + translationX;
+      let tmp4 = lowerBounds;
       if (null == lowerBounds) {
-        tmp5 = upperBounds;
-        tmp6 = null != upperBounds && sum > tmp5;
         tmp4 = sum;
+        const tmp6 = null != upperBounds && sum > upperBounds;
         if (tmp6) {
           tmp4 = tmp5;
         }
       }
-      tmp7 = closure_11;
-      set = closure_11.set;
-      if (tmp2) {
+      set = sharedValue1.set;
+      if (flag) {
         velocityX = velocityY;
       }
-      result = set(velocityX);
+      const result = set(velocityX);
+      const result1 = translate.set(tmp4);
       obj2 = translate;
-      result1 = translate.set(tmp4);
       if (onChange != null) {
-        obj1 = { destination: null, startPosition: null };
-        obj1.destination = obj2.get();
-        obj1.startPosition = obj.get();
-        tmp10Result = tmp10(lowerBounds, obj1);
+        const obj3 = { destination: obj2.get(), startPosition: obj.get() };
+        tmp10(arg0, obj3);
       }
-      return;
     }
   }
   C.__closure = { start: sharedValue, vertical: flag, lowerBounds, upperBounds, velocity: sharedValue1, translate, onChange };
-  C.__workletHash = 15962975179371;
-  C.__initData = sharedValue;
+  C.__workletHash = 12458639225587;
+  C.__initData = __initData5;
   const onChangeResult = onStartResult.onChange(C);
   class T {
-    constructor(arg0, arg1) {
-      obj = closure_10;
-      obj2 = translate;
-      result = closure_10.set(translate.get());
-      obj3 = snapPositions;
+    constructor(arg0, success) {
+      const result = sharedValue.set(translate.get());
+      const obj3 = snapPositions;
       if (null != snapPositions) {
-        tmp25 = globalThis;
-        _Math = Math;
-        obj7 = closure_11;
-        tmp26 = c3;
-        num2 = 0;
+        const _Math = Math;
         num = 0;
-        if (Math.abs(closure_11.get()) > c3) {
+        const obj7 = sharedValue1;
+        if (Math.abs(sharedValue1.get()) > num) {
           num = obj7.get();
         }
-        tmp2 = getNearestValue;
-        value = obj3.get();
-        tmp4 = getNearestValue(value, obj2.get(), num);
+        const value = obj3.get();
+        const tmp4 = getNearestValue(value, translate.get(), num);
         if (0 !== num) {
-          tmp11 = withPanGestureSpring;
-          set = obj2.set;
+          set = translate.set;
           if (typeof withPanGestureSpring === "function") {
-            tmp13 = closure_0;
-            tmp14 = closure_1;
-            tmp15 = closure_0(closure_1[1]);
-            tmp16 = closure_2;
-            obj1 = {};
-            tmp17 = obj1;
-            tmp18 = closure_2;
-            withSpring = tmp15.withSpring;
-            merged = Object.assign(closure_2);
-            obj1.velocity = tmp12;
-            result1 = set(withSpring(tmp4, obj1));
+            const obj5 = { velocity: tmp12 };
+            const withSpring = spring.withSpring;
+            spring;
+            const merged = Object.assign(obj);
+            const result1 = set(withSpring(tmp4, obj5));
           } else {
-            str2 = "Trying to call a non-function";
             throw new TypeError("Trying to call a non-function");
           }
+        } else if (typeof withPanGestureTiming === "function") {
+          const obj4 = timing;
+          tmp5(obj4.withTiming(tmp4, translate));
         } else {
-          tmp6 = withPanGestureTiming;
-          if (typeof withPanGestureTiming === "function") {
-            tmp7 = closure_0;
-            tmp8 = closure_1;
-            obj4 = closure_0(closure_1[2]);
-            tmp9 = closure_3;
-            tmp5Result = tmp5(obj4.withTiming(tmp4, closure_3));
-          } else {
-            str = "Trying to call a non-function";
-            throw new TypeError("Trying to call a non-function");
-          }
+          throw new TypeError("Trying to call a non-function");
         }
         if (onEnd != null) {
-          tmp22 = lowerBounds;
-          tmp23 = arg1;
-          obj8 = { success: null, destination: null, startPosition: null };
-          obj8.success = arg1;
-          obj8.destination = tmp4;
-          obj8.startPosition = obj.get();
-          tmp21Result = tmp21(lowerBounds, obj8);
+          const obj6 = { success, destination: tmp4, startPosition: sharedValue.get() };
+          tmp21(arg0, obj6);
         }
       }
-      return;
     }
   }
   let obj3 = { start: sharedValue, translate, snapPositions, velocity: sharedValue1, swipeVelocityThreshold: num, getNearestValue: onStart, withPanGestureSpring: onChange, withPanGestureTiming: onEnd, onEnd };
   T.__closure = obj3;
-  T.__workletHash = 15665959414289;
-  T.__initData = isGestureInProgress;
+  T.__workletHash = 8222459765830;
+  T.__initData = __initData4;
   const onEndResult = onChangeResult.onEnd(T);
-  class S {
+  class I {
     constructor() {
-      obj = isGestureInProgress;
+      const obj = isGestureInProgress;
       if (null != isGestureInProgress) {
-        flag = false;
-        result = obj.set(false);
+        const result = obj.set(false);
       }
-      return;
     }
   }
-  S.__closure = { isGestureInProgress };
-  S.__workletHash = 11128244755178;
-  S.__initData = flag;
-  return onEndResult.onFinalize(S);
-};
+  I.__closure = { isGestureInProgress };
+  I.__workletHash = 3340144820710;
+  I.__initData = __initData3;
+  return onEndResult.onFinalize(I);
+});
+let result = size.fileFinishedImporting("modules/action_sheet/native/PanGestureAnimations.tsx");
+
+export default tmp2;
 export { SPRING_CONFIG };
 export const TIMING_CONFIG = obj2;
 export { withPanGestureSpring };

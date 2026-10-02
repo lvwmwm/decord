@@ -1,39 +1,261 @@
-// Module ID: 10819
-// Function ID: 10820
+// Module ID: 10816
+// Function ID: 10817
 // Name: AvailableForumTag
-// Dependencies: [19, 5771, 1375, 21, 4836, 576, 504, 10091, 8370, 6551, 1397, 4832, 2]
-// Exports: default
+// Dependencies: [109, 19, 5772, 1381, 21, 4837, 588, 558, 576, 504, 8367, 6552, 1403, 4833, 10128, 2]
 
-// Module 10819 (AvailableForumTag)
-import nativeDefault from "native" /* 576 */;
-import EmojiConstants from "EmojiConstants" /* 1375 */;
-import EmojiDefault from "Emoji" /* 6551 */;
-import native from "native" /* 8370 */;
-import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5771 */;
+// Module 10816 (AvailableForumTag)
+import nativeDefault from "native" /* 588 */;
+import EmojiConstants from "EmojiConstants" /* 1381 */;
+import EmojiDefault from "Emoji" /* 6552 */;
+import native from "native" /* 8367 */;
+import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
+import react_mod from "react" /* 19 */;
+import EmojiStore from "EmojiStore" /* 5772 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let onPress, tag;
 
-let metroImportDefault;
-let metroRequire;
+let c9;
+let metroImportAll;
 let obj2;
 let obj3;
 let tmp3;
-const Text_Text = tmp3(4832);
+const Text_Text = tmp3(4833);
+let closure_3 = ["ref"];
+let _objectWithoutProperties = _objectWithoutProperties_mod;
+let react = react_mod;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { pill: obj2, pillSelected: obj3, pillDisabled: { opacity: 0.6 }, emoji: { height: 18, width: 18, marginRight: 4, display: "flex", alignItems: "center", justifyContent: "center" }, imageEmoji: { height: 16, width: 16 }, textEmoji: { fontSize: 14, lineHeight: 20 } };
 obj2 = { display: "flex", flexDirection: "row", alignItems: "center", paddingHorizontal: 12, borderRadius: 20, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, margin: 6, borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, overflow: "hidden", height: 32 };
 createStyles = createStyles.createStyles;
 obj3 = { borderColor: nativeDefault.colors.BACKGROUND_BRAND, borderWidth: 1 };
-let closure_8 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/forums/native/AvailableForumTag.tsx");
-
-export default function AvailableForumTag(tag) {
+let style = createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((tag) => {
+  let closure_4;
+  let disabled;
+  let first;
+  let tmp7;
+  let tmp2 = disabled;
+  let tmp = tag;
+  let obj = tag(disabled[8]);
+  const cResult = obj.c(27);
+  tag = tag.tag;
+  onPress = tag.onPress;
+  disabled = tag.disabled;
+  const selected = tag.selected;
+  const tmp4 = style();
+  _objectWithoutProperties = tmp4;
+  const name = tag.name;
+  const emojiId = tag.emojiId;
+  const emojiName = tag.emojiName;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [emojiId];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== emojiId) {
+    const fn = function p() {
+      let usableCustomEmojiById = null;
+      if (null != emojiId) {
+        usableCustomEmojiById = EmojiStore.getUsableCustomEmojiById(tmp);
+      }
+      return usableCustomEmojiById;
+    };
+    cResult[1] = emojiId;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(tmp2[9]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  if (cResult[3] === disabled) {
+    if (cResult[4] === onPress) {
+      let tmp9;
+      if (cResult[5] === tag) {
+        tmp9 = cResult[6];
+      }
+      onPress = tmp9;
+      if (cResult[7] === disabled) {
+        if (cResult[8] === selected) {
+          if (cResult[9] === tmp4.pill) {
+            if (cResult[10] === tmp4.pillDisabled) {
+              let tmp10;
+              if (cResult[11] === tmp4.pillSelected) {
+                tmp10 = cResult[12];
+              }
+              style = tmp10;
+              if (cResult[13] === stateFromStores) {
+                if (cResult[14] === disabled) {
+                  if (cResult[15] === emojiName) {
+                    if (cResult[16] === tmp9) {
+                      if (cResult[17] === name) {
+                        if (cResult[18] === tmp10) {
+                          if (cResult[19] === selected) {
+                            if (cResult[20] === tmp4.emoji) {
+                              if (cResult[21] === tmp4.imageEmoji) {
+                                let tmp14;
+                                if (cResult[22] === tmp4.textEmoji) {
+                                  tmp14 = cResult[23];
+                                }
+                                if (cResult[24] === tmp14) {
+                                  let tmp15;
+                                  if (cResult[25] === tag.id) {
+                                    tmp15 = cResult[26];
+                                  }
+                                  return tmp15;
+                                }
+                                class P {
+                                  constructor(ref) {
+                                    let emojiURL;
+                                    let items;
+                                    let obj2;
+                                    let str;
+                                    const obj = { style, accessibilityRole: "button", accessibilityState: obj2, disabled, ref: ref.ref, onPress, children: items };
+                                    obj2 = { selected };
+                                    const tmp = _objectWithoutProperties(ref, closure_3);
+                                    const PressableScale = native.PressableScale;
+                                    const merged = Object.assign(tmp);
+                                    let tmp9Result = null != stateFromStores;
+                                    const tmp2 = c9;
+                                    if (!tmp9Result) {
+                                      tmp9Result = null != emojiName;
+                                    }
+                                    if (tmp9Result) {
+                                      const obj4 = { style: null, textEmojiStyle: null, fastImageStyle: null, src: emojiURL, name: str };
+                                      ({ emoji: obj3.style, textEmoji: obj3.textEmojiStyle, imageEmoji: obj3.fastImageStyle } = closure_4);
+                                      emojiURL = undefined;
+                                      const tmp10 = importDefault;
+                                      const tmp11 = EmojiDefault;
+                                      const tmp9 = metroImportAll;
+                                      if (null != stateFromStores) {
+                                        const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
+                                        ({ id: obj5.id, animated: obj5.animated } = stateFromStores);
+                                        const tmp10Result = tmp10(1403);
+                                        emojiURL = tmp10Result.getEmojiURL(obj6);
+                                      }
+                                      str = emojiName;
+                                      if (emojiName == null) {
+                                        str = "";
+                                      }
+                                      tmp9Result = tmp9(tmp11, obj4);
+                                    }
+                                    items = [tmp9Result, ];
+                                    const obj10 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: name };
+                                    items[1] = metroImportAll(Text_Text.Text, obj10);
+                                    return tmp2(PressableScale, obj);
+                                  }
+                                }
+                                let obj2 = { tagId: tag.id, children: tmp14 };
+                                const tmp17 = stateFromStores(onPress(tmp2[14]), obj2);
+                                cResult[24] = tmp14;
+                                cResult[25] = tag.id;
+                                cResult[26] = tmp17;
+                                tmp15 = tmp17;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              class P {
+                constructor(ref) {
+                  let emojiURL;
+                  let items;
+                  let obj2;
+                  let str;
+                  const obj = { style, accessibilityRole: "button", accessibilityState: obj2, disabled, ref: ref.ref, onPress, children: items };
+                  obj2 = { selected };
+                  const tmp = _objectWithoutProperties(ref, closure_3);
+                  const PressableScale = native.PressableScale;
+                  const merged = Object.assign(tmp);
+                  let tmp9Result = null != stateFromStores;
+                  const tmp2 = c9;
+                  if (!tmp9Result) {
+                    tmp9Result = null != emojiName;
+                  }
+                  if (tmp9Result) {
+                    const obj4 = { style: null, textEmojiStyle: null, fastImageStyle: null, src: emojiURL, name: str };
+                    ({ emoji: obj3.style, textEmoji: obj3.textEmojiStyle, imageEmoji: obj3.fastImageStyle } = closure_4);
+                    emojiURL = undefined;
+                    const tmp10 = importDefault;
+                    const tmp11 = EmojiDefault;
+                    const tmp9 = metroImportAll;
+                    if (null != stateFromStores) {
+                      const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
+                      ({ id: obj5.id, animated: obj5.animated } = stateFromStores);
+                      const tmp10Result = tmp10(1403);
+                      emojiURL = tmp10Result.getEmojiURL(obj6);
+                    }
+                    str = emojiName;
+                    if (emojiName == null) {
+                      str = "";
+                    }
+                    tmp9Result = tmp9(tmp11, obj4);
+                  }
+                  items = [tmp9Result, ];
+                  const obj10 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: name };
+                  items[1] = metroImportAll(Text_Text.Text, obj10);
+                  return tmp2(PressableScale, obj);
+                }
+              }
+              cResult[13] = stateFromStores;
+              cResult[14] = disabled;
+              cResult[15] = emojiName;
+              cResult[16] = tmp9;
+              cResult[17] = name;
+              cResult[18] = tmp10;
+              cResult[19] = selected;
+              cResult[20] = tmp4.emoji;
+              cResult[21] = tmp4.imageEmoji;
+              cResult[22] = tmp4.textEmoji;
+              cResult[23] = P;
+              tmp14 = P;
+            }
+          }
+        }
+      }
+      arr2.push(tmp4.pill);
+      if (selected) {
+        arr2.push(tmp4.pillSelected);
+      }
+      if (disabled) {
+        arr2.push(tmp4.pillDisabled);
+      }
+      cResult[7] = disabled;
+      cResult[8] = selected;
+      cResult[9] = tmp4.pill;
+      cResult[10] = tmp4.pillDisabled;
+      cResult[11] = tmp4.pillSelected;
+      cResult[12] = arr2;
+      tmp10 = arr2;
+    }
+  }
+  class R {
+    constructor() {
+      const tmp = disabled;
+      if (!tmp) {
+        onPress(tag);
+      }
+    }
+  }
+  cResult[3] = disabled;
+  cResult[4] = onPress;
+  cResult[5] = tag;
+  cResult[6] = R;
+  tmp9 = R;
+}) : ((tag) => {
   let c5;
   let c6;
   let c7;
@@ -42,22 +264,22 @@ export default function AvailableForumTag(tag) {
   tag = tag.tag;
   ({ onPress: importDefault, disabled } = tag);
   const selected = tag.selected;
-  c5 = undefined;
+  react = undefined;
   c6 = undefined;
   c7 = undefined;
-  closure_8 = undefined;
+  style = undefined;
   function handlePress() {
     const tmp = disabled;
     if (!tmp) {
       importDefault(tag);
     }
   }
-  let tmp = closure_8();
+  let tmp = style();
   const pill = tmp;
   ({ name: c5, emojiId: c6, emojiName: c7 } = tag);
-  let obj = tag(disabled[6]);
-  let items = [pill];
-  closure_8 = obj.useStateFromStores(items, () => {
+  let obj = tag(disabled[9]);
+  let items = [c6];
+  let closure_8 = obj.useStateFromStores(items, () => {
     let usableCustomEmojiById = null;
     if (null != c6) {
       usableCustomEmojiById = EmojiStore.getUsableCustomEmojiById(tmp);
@@ -65,7 +287,7 @@ export default function AvailableForumTag(tag) {
     return usableCustomEmojiById;
   });
   const items1 = [disabled, selected, tmp];
-  const style = selected.useMemo(() => {
+  style = react.useMemo(() => {
     const items = [];
     items.push(pill.pill);
     const tmp3 = selected;
@@ -91,8 +313,8 @@ export default function AvailableForumTag(tag) {
       obj2 = { selected };
       const PressableScale = native.PressableScale;
       const merged1 = Object.assign(merged);
-      let tmp9Result = null != closure_8;
-      const tmp2 = metroImportDefault;
+      let tmp9Result = null != metroImportAll;
+      const tmp2 = c9;
       if (!tmp9Result) {
         tmp9Result = null != c7;
       }
@@ -102,11 +324,11 @@ export default function AvailableForumTag(tag) {
         emojiURL = undefined;
         const tmp10 = importDefault;
         const tmp11 = EmojiDefault;
-        const tmp9 = metroRequire;
-        if (null != closure_8) {
+        const tmp9 = metroImportAll;
+        if (null != metroImportAll) {
           const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
-          ({ id: obj5.id, animated: obj5.animated } = closure_8);
-          const tmp10Result = tmp10(1397);
+          ({ id: obj5.id, animated: obj5.animated } = metroImportAll);
+          const tmp10Result = tmp10(1403);
           emojiURL = tmp10Result.getEmojiURL(obj6);
         }
         str = c7;
@@ -117,9 +339,12 @@ export default function AvailableForumTag(tag) {
       }
       items = [tmp9Result, ];
       const obj10 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
-      items[1] = metroRequire(Text_Text.Text, obj10);
+      items[1] = metroImportAll(Text_Text.Text, obj10);
       return tmp2(PressableScale, obj);
     }
   };
-  return c6(require("ForumTagContextMenu"), obj2);
-};
+  return closure_8(require("ForumTagContextMenu"), obj2);
+});
+const result = size.fileFinishedImporting("modules/forums/native/AvailableForumTag.tsx");
+
+export default tmp4;

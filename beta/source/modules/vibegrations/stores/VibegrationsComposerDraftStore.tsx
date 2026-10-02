@@ -1,12 +1,12 @@
-// Module ID: 16404
-// Function ID: 16405
+// Module ID: 16406
+// Function ID: 16407
 // Name: VibegrationsComposerDraftStore
-// Dependencies: [32, 510, 12, 504, 573, 2]
+// Dependencies: [32, 510, 12, 504, 585, 2]
 
-// Module 16404 (VibegrationsComposerDraftStore)
+// Module 16406 (VibegrationsComposerDraftStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;

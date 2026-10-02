@@ -1,16 +1,16 @@
-// Module ID: 14052
-// Function ID: 14053
+// Module ID: 14054
+// Function ID: 14055
 // Name: providers
-// Dependencies: [5, 5593, 4739, 1074, 2005, 1085, 8773, 8775, 5595, 8770, 573, 1110, 8528, 5718, 2]
+// Dependencies: [5, 5594, 4741, 1086, 2011, 1097, 8768, 8770, 5596, 8765, 585, 1122, 8525, 5719, 2]
 
-// Module 14052 (providers)
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8773 */;
+// Module 14054 (providers)
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8768 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
-import Constants_mod from "Constants" /* 4739 */;
-import Constants_mod2 from "Constants" /* 1074 */;
-import Constants_mod3 from "Constants" /* 2005 */;
-import Constants_mod4 from "Constants" /* 1085 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
+import Constants_mod from "Constants" /* 4741 */;
+import Constants_mod2 from "Constants" /* 1086 */;
+import Constants_mod3 from "Constants" /* 2011 */;
+import Constants_mod4 from "Constants" /* 1097 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -80,7 +80,6 @@ obj2 = {
       const self5 = this;
       let str2 = "Command not available for this application";
       const self6 = this;
-      let tmp15 = obj5;
       const tmp16 = new tmp4(tmp[9])(obj5, "Command not available for this application");
       throw tmp16;
     } else if (set.has(validateApplicationResult)) {
@@ -101,7 +100,7 @@ obj2 = {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c5;
@@ -167,7 +166,7 @@ obj2 = {
                   if (self) {
                     const result = handleSocketDisconnected();
                     c7 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   } else {
                     const obj7 = provider(connection_redirect[10]);
                     const subscription = obj7.subscribe("USER_CONNECTIONS_UPDATE", handleConnectionsUpdate);
@@ -205,22 +204,22 @@ obj2 = {
                 self = this;
                 const self2 = this;
                 const str = "Refreshing access token did not return a new access token";
-                const tmp15 = new provider(connection_redirect[9])(obj10, "Refreshing access token did not return a new access token");
-                throw tmp15;
+                const tmp13 = new provider(connection_redirect[9])(obj10, "Refreshing access token did not return a new access token");
+                throw tmp13;
               } else {
                 self = closure_0;
                 let obj = { access_token };
-                const tmp9 = closure_0(obj);
+                closure_0(obj);
                 c5 = 0;
               }
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
-          } catch (tmp38) {
-            closure_4 = tmp38;
+            return { value: "IconComponent", done: null };
+          } catch (tmp36) {
+            closure_4 = tmp36;
             if (0 === c5) {
               c7 = 3;
-              throw tmp38;
+              throw tmp36;
             } else {
               c6 = 1;
             }
@@ -278,7 +277,7 @@ let closure_3 = _asyncToGenerator(async function(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -307,7 +306,7 @@ let closure_3 = _asyncToGenerator(async function(arg0, value) {
           access_token = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "flex", done: true };
+          return { value: "Reflect", done: true };
         }
       } else if (1 === c3) {
         if (arg0 === 1) {

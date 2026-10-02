@@ -1,11 +1,11 @@
-// Module ID: 9732
-// Function ID: 9733
+// Module ID: 9849
+// Function ID: 9850
 // Name: ForumGuidelinesManager
-// Dependencies: [6539, 510, 2]
+// Dependencies: [6540, 510, 2]
 
-// Module 9732 (ForumGuidelinesManager)
+// Module 9849 (ForumGuidelinesManager)
 import Storage2 from "Storage" /* 510 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let set;

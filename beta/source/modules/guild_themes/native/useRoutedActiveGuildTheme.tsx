@@ -1,22 +1,23 @@
-// Module ID: 4691
-// Function ID: 4692
+// Module ID: 4693
+// Function ID: 4694
 // Name: useRoutedActiveGuildTheme
-// Dependencies: [32, 19, 1074, 4692, 4693, 4718, 4719, 2]
-// Exports: default
+// Dependencies: [32, 19, 1086, 4694, 4695, 558, 576, 4720, 4721, 2]
 
-// Module 4691 (useRoutedActiveGuildTheme)
-import Constants from "Constants" /* 1074 */;
-import RootNavigationRef from "RootNavigationRef" /* 4693 */;
-import reactDefault from "react" /* 4718 */;
-import GuildThemeResolver from "GuildThemeResolver" /* 4719 */;
+// Module 4693 (useRoutedActiveGuildTheme)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import RootNavigationRef from "RootNavigationRef" /* 4695 */;
+import reactDefault from "react" /* 4720 */;
+import GuildThemeResolver from "GuildThemeResolver" /* 4721 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const NavigationRouteUtils = tmp(4692);
+const NavigationRouteUtils = tmp(4694);
 function getGuildIdFromNavigationState(routes) {
   if (null != routes) {
     routes = routes.routes;
@@ -160,13 +161,50 @@ function getActiveGuildThemeGuildIdSnapshot() {
   return null;
 }
 const ME = Constants.ME;
-const result = size.fileFinishedImporting("modules/guild_themes/native/useRoutedActiveGuildTheme.tsx");
-
-export default function useRoutedActiveGuildTheme() {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp4;
+  let tmp5;
+  let tmp6;
+  let obj = react2;
+  const cResult = obj.c(2);
   const context = react.useContext(reactDefault);
   [tmp4, require] = _slicedToArray(react.useState(getActiveGuildThemeGuildIdSnapshot), 2);
+  const obj2 = react;
   const tmp3 = _slicedToArray(react.useState(getActiveGuildThemeGuildIdSnapshot), 2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function l() {
+      const obj = RootNavigationRef;
+      const rootNavigationRef = obj.getRootNavigationRef();
+      if (null != rootNavigationRef) {
+        require(getActiveGuildThemeGuildIdSnapshot());
+        return rootNavigationRef.addListener("state", function handleStateChange() {
+          closure_1_0(getActiveGuildThemeGuildIdSnapshot());
+        });
+      }
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp5 = fn;
+    tmp6 = items;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const effect = obj2.useEffect(tmp5, tmp6);
+  if (undefined !== context) {
+    let tmp9 = null;
+    if (context !== ME) {
+      tmp9 = context;
+    }
+    tmp4 = tmp9;
+  }
+  return tmp4;
+}) : (() => {
+  let tmp3;
+  const context = react.useContext(reactDefault);
+  [tmp3, require] = _slicedToArray(react.useState(getActiveGuildThemeGuildIdSnapshot), 2);
+  const tmp2 = _slicedToArray(react.useState(getActiveGuildThemeGuildIdSnapshot), 2);
   const effect = react.useEffect(() => {
     const obj = RootNavigationRef;
     const rootNavigationRef = obj.getRootNavigationRef();
@@ -179,12 +217,24 @@ export default function useRoutedActiveGuildTheme() {
     }
   }, []);
   if (undefined !== context) {
-    let tmp7 = null;
+    let tmp6 = null;
     if (context !== ME) {
-      tmp7 = context;
+      tmp6 = context;
     }
-    tmp4 = tmp7;
+    tmp3 = tmp6;
   }
-  let obj = GuildThemeResolver;
-  return obj.useActiveGuildThemeForGuildId(tmp4);
-};
+  return tmp3;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const tmp = closure_8();
+  const obj = GuildThemeResolver;
+  return obj.useActiveGuildThemeForGuildId(tmp);
+}) : (() => {
+  const tmp = closure_8();
+  const obj = GuildThemeResolver;
+  return obj.useActiveGuildThemeForGuildId(tmp);
+});
+const result = size.fileFinishedImporting("modules/guild_themes/native/useRoutedActiveGuildTheme.tsx");
+
+export default tmp2;

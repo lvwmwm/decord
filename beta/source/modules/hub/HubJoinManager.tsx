@@ -1,14 +1,14 @@
-// Module ID: 12255
-// Function ID: 12256
+// Module ID: 12150
+// Function ID: 12151
 // Name: HubJoinManager
-// Dependencies: [2067, 1074, 1983, 573, 6760, 2]
+// Dependencies: [2073, 1086, 1989, 585, 6761, 2]
 
-// Module 12255 (HubJoinManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import transitionToGuild from "transitionToGuild" /* 6760 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import LifecycleManager from "LifecycleManager" /* 1983 */;
+// Module 12150 (HubJoinManager)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import transitionToGuild from "transitionToGuild" /* 6761 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import LifecycleManager from "LifecycleManager" /* 1989 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;

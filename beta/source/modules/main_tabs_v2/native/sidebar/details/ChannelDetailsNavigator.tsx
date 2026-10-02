@@ -1,62 +1,330 @@
-// Module ID: 16629
-// Function ID: 16630
+// Module ID: 16631
+// Function ID: 16632
 // Name: ChannelDetailsNavigator
-// Dependencies: [19, 17, 2045, 10377, 1074, 16459, 21, 7339, 563, 6687, 10792, 7288, 1115, 12289, 1241, 8085, 16630, 6421, 5942, 4693, 1613, 16681, 1364, 16682, 16683, 7351, 7352, 16684, 16685, 16686, 16535, 2]
+// Dependencies: [32, 19, 17, 2051, 10419, 1086, 16461, 21, 7343, 558, 576, 573, 6688, 10774, 1127, 7292, 12186, 1253, 9833, 16632, 6421, 4695, 5939, 1619, 16683, 1370, 16684, 16685, 7355, 7356, 16686, 16687, 16688, 16537, 2]
 
-// Module 16629 (ChannelDetailsNavigator)
+// Module 16631 (ChannelDetailsNavigator)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HeaderShared from "HeaderShared" /* 7288 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10377 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 10792 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12289 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 16459 */;
-import ChannelSettingsModal from "ChannelSettingsModal" /* 16630 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import HeaderShared from "HeaderShared" /* 7292 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10419 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 10774 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12186 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 16461 */;
+import ChannelSettingsModal from "ChannelSettingsModal" /* 16632 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 7339 */;
+import NativeStackView from "NativeStackView" /* 7343 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let obj1, tmp3, tmp4, trackResult;
+
 let c10;
-let c9;
-function ConnectedCreateThreadHeaderButton(channelId) {
-  channelId = channelId.channelId;
-  const items = [ChannelStore];
-  const obj = channelId(563);
-  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
-  let tmp2 = null;
-  if (null != stateFromStores) {
-    const obj2 = { channel: stateFromStores };
-    tmp2 = closure_9(CreateThreadHeaderButton, obj2);
-  }
-  return tmp2;
-}
-function CreateThreadHeaderButton(channel) {
-  let intl;
-  channel = channel.channel;
-  let obj = channel(6687);
-  [][0] = channel;
-  const canStartThread = obj.useCanStartThread(channel);
-  let tmp5 = null;
-  if (canStartThread) {
-    const obj2 = { accessibilityLabel: intl.string(channel(1115).t.rBIGBL), onPress: tmp4, source: AssetRegistryDefault };
-    const HeaderIconButton = tmp(7288).HeaderIconButton;
-    intl = tmp(1115).intl;
-    tmp5 = closure_9(HeaderIconButton, obj2);
-  }
-  return tmp5;
-}
+let unpackModuleId;
 const View = react_native.View;
 const constants = ChannelDetailsConstants.ChannelDetailsNavigatorScreens;
 const AnalyticEvents = Constants.AnalyticEvents;
 const SearchNavigatorScreens = SearchNavigatorConstants.SearchNavigatorScreens;
-({ jsx: c9, jsxs: c10 } = Fragment);
-let closure_11 = Object.freeze({});
-let closure_12 = NativeStackView.createNativeStackNavigator();
-const memoResult = react.memo((navigation) => {
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+let closure_12 = Object.freeze({});
+let closure_13 = NativeStackView.createNativeStackNavigator();
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let first;
+  let tmp6;
+  const obj = channelId(576);
+  const cResult = obj.c(5);
+  const tmp = channelId;
+  channelId = channelId.channelId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channelId) {
+    const fn = function o() {
+      return ChannelStore.getChannel(channelId);
+    };
+    cResult[1] = channelId;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(573);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  let tmp8 = null;
+  if (null != stateFromStores) {
+    let tmp9;
+    if (cResult[3] !== stateFromStores) {
+      const obj2 = { channel: stateFromStores };
+      const tmp12 = closure_10(closure_15, obj2);
+      cResult[3] = stateFromStores;
+      cResult[4] = tmp12;
+      tmp9 = tmp12;
+    } else {
+      tmp9 = cResult[4];
+    }
+    tmp8 = tmp9;
+  }
+  return tmp8;
+}) : ((channelId) => {
+  channelId = channelId.channelId;
+  const items = [ChannelStore];
+  const obj = channelId(573);
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
+  let tmp2 = null;
+  if (null != stateFromStores) {
+    const obj2 = { channel: stateFromStores };
+    tmp2 = closure_10(closure_15, obj2);
+  }
+  return tmp2;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let tmp5;
+  let obj = channel(576);
+  const cResult = obj.c(5);
+  channel = channel.channel;
+  const obj2 = channel(6688);
+  const canStartThread = obj2.useCanStartThread(channel);
+  if (cResult[0] !== channel) {
+    const fn = function t() {
+      const obj = navigateToThreadCreation;
+      const result = obj.navigateToThreadCreation(channel, "Thread Browser Toolbar");
+    };
+    cResult[0] = channel;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  let tmp6 = null;
+  if (canStartThread) {
+    let tmp8;
+    let tmp10;
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(channel(1127).t.rBIGBL);
+      cResult[2] = stringResult;
+      tmp8 = stringResult;
+    } else {
+      tmp8 = cResult[2];
+    }
+    if (cResult[3] !== tmp5) {
+      const obj3 = { accessibilityLabel: tmp8, onPress: tmp5, source: AssetRegistryDefault };
+      const HeaderIconButton = tmp(7292).HeaderIconButton;
+      const tmp13 = closure_10(HeaderIconButton, obj3);
+      cResult[3] = tmp5;
+      cResult[4] = tmp13;
+      tmp10 = tmp13;
+    } else {
+      tmp10 = cResult[4];
+    }
+    tmp6 = tmp10;
+  }
+  return tmp6;
+}) : ((channel) => {
+  let intl;
+  channel = channel.channel;
+  let obj = channel(6688);
+  [][0] = channel;
+  const canStartThread = obj.useCanStartThread(channel);
+  let tmp5 = null;
+  if (canStartThread) {
+    const obj2 = { accessibilityLabel: intl.string(channel(1127).t.rBIGBL), onPress: tmp4, source: AssetRegistryDefault };
+    const HeaderIconButton = tmp(7292).HeaderIconButton;
+    intl = tmp(1127).intl;
+    tmp5 = closure_10(HeaderIconButton, obj2);
+  }
+  return tmp5;
+});
+let memo = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
+  let Screen;
+  let applicationId;
+  let expandTopic;
+  let search;
+  let source;
+  let tmp = navigation;
+  let tmp2 = source;
+  let obj = navigation(source[10]);
+  const cResult = obj.c(74);
+  navigation = navigation.navigation;
+  let params = navigation.route.params;
+  const channelId = params.channelId;
+  ({ applicationId, search, expandTopic, source } = params);
+  let DETAILS = params.initialRouteName;
+  if (undefined === DETAILS) {
+    DETAILS = constants.DETAILS;
+  }
+  if (cResult[0] === channelId) {
+    if (cResult[1] === DETAILS) {
+      let tmp5;
+      let tmp6;
+      let tmp9;
+      let tmp8;
+      if (cResult[2] === source) {
+        tmp5 = cResult[3];
+        tmp6 = cResult[4];
+      }
+      let obj2 = react;
+      const effect = react.useEffect(tmp5, tmp6);
+      if (cResult[5] !== navigation) {
+        class C {
+          constructor() {
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F146031 */ });
+          }
+        }
+        const items = [navigation];
+        cResult[5] = navigation;
+        cResult[6] = C;
+        cResult[7] = items;
+        tmp9 = items;
+        tmp8 = C;
+      } else {
+        class C {
+          constructor() {
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F146031 */ });
+          }
+        }
+        tmp9 = cResult[7];
+      }
+      const effect1 = obj2.useEffect(tmp8, tmp9);
+      let tmpResult = tmp(tmp2[19]);
+      const channelSettingsScreensStyles = tmpResult.useChannelSettingsScreensStyles();
+      if (cResult[8] !== channelId) {
+        class C {
+          constructor() {
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F146031 */ });
+          }
+        }
+        let obj3 = { channelId };
+        tmp13[0] = obj3;
+        cResult[8] = channelId;
+        cResult[9] = tmp13;
+      } else {
+        class C {
+          constructor() {
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F146031 */ });
+          }
+        }
+      }
+      let tmpResult2 = tmp(tmp2[20]);
+      const accessibilityNativeStackOptions = tmpResult2.useAccessibilityNativeStackOptions();
+      if (cResult[10] !== channelId) {
+        class C {
+          constructor() {
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F146031 */ });
+          }
+        }
+        let channel = ChannelStore.getChannel(channelId);
+        if (channel != null) {
+          class C {
+            constructor() {
+              return navigation.addListener("beforeRemove", () => { /* body not rendered: F146031 */ });
+            }
+          }
+        }
+        cResult[10] = channelId;
+        cResult[11] = undefined;
+      } else {
+        class C {
+          constructor() {
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F146031 */ });
+          }
+        }
+      }
+      if (cResult[12] === channelId) {
+        class C {
+          constructor() {
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F146031 */ });
+          }
+        }
+      }
+      if (null != tmp15) {
+        class C {
+          constructor() {
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F146031 */ });
+          }
+        }
+        const channelSettingsScreens = obj6.getChannelSettingsScreens(channelId, tmp15, channelSettingsScreensStyles);
+      } else {
+        class C {
+          constructor() {
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F146031 */ });
+          }
+        }
+      }
+      cResult[12] = channelId;
+      cResult[13] = tmp15;
+      cResult[14] = channelSettingsScreensStyles;
+      class N {
+        constructor() {
+          channel = closure_6.getChannel(channelId);
+          if (null != channel) {
+            tmp = closure_1;
+            tmp2 = closure_2;
+            tmp3 = closure_1(closure_2[17]);
+            tmp4 = AnalyticEvents;
+            obj1 = { channel_id: null, guild_id: null, channel_type: null, initial_route_name: null, source: null };
+            obj1.channel_id = channel.id;
+            track = tmp3.track;
+            CHANNEL_SIDEBAR_VIEWED = AnalyticEvents.CHANNEL_SIDEBAR_VIEWED;
+            obj1.guild_id = channel.getGuildId();
+            obj1.channel_type = channel.type;
+            tmp5 = DETAILS;
+            obj1.initial_route_name = DETAILS;
+            tmp6 = source;
+            obj1.source = source;
+            trackResult = track(CHANNEL_SIDEBAR_VIEWED, obj1);
+          }
+          return;
+        }
+      }
+    }
+  }
+  class N {
+    constructor() {
+      channel = closure_6.getChannel(channelId);
+      if (null != channel) {
+        tmp = closure_1;
+        tmp2 = closure_2;
+        tmp3 = closure_1(closure_2[17]);
+        tmp4 = AnalyticEvents;
+        obj1 = { channel_id: null, guild_id: null, channel_type: null, initial_route_name: null, source: null };
+        obj1.channel_id = channel.id;
+        track = tmp3.track;
+        CHANNEL_SIDEBAR_VIEWED = AnalyticEvents.CHANNEL_SIDEBAR_VIEWED;
+        obj1.guild_id = channel.getGuildId();
+        obj1.channel_type = channel.type;
+        tmp5 = DETAILS;
+        obj1.initial_route_name = DETAILS;
+        tmp6 = source;
+        obj1.source = source;
+        trackResult = track(CHANNEL_SIDEBAR_VIEWED, obj1);
+      }
+      return;
+    }
+  }
+  const items1 = [channelId, DETAILS, source];
+  cResult[0] = channelId;
+  cResult[1] = DETAILS;
+  cResult[2] = source;
+  cResult[3] = N;
+  cResult[4] = items1;
+  tmp6 = items1;
+  tmp5 = N;
+}) : ((navigation) => {
   let Navigator;
   let Screen;
   let applicationId;
@@ -76,10 +344,10 @@ const memoResult = react.memo((navigation) => {
     const tmp = constants;
     DETAILS = constants.DETAILS;
   }
-  let guildId;
-  let obj = DETAILS;
+  let channelSettingsScreensStyles;
+  let obj = channelSettingsScreensStyles;
   const items = [channelId, DETAILS, source];
-  const effect = DETAILS.useEffect(() => {
+  const effect = channelSettingsScreensStyles.useEffect(() => {
     const channel = ChannelStore.getChannel(channelId);
     if (null != channel) {
       const obj = { channel_id: channel.id, guild_id: channel.getGuildId(), channel_type: channel.type, initial_route_name: DETAILS, source };
@@ -90,21 +358,21 @@ const memoResult = react.memo((navigation) => {
     }
   }, items);
   const items1 = [navigation];
-  const effect1 = DETAILS.useEffect(() => navigation.addListener("beforeRemove", () => {
-    const obj = channelId(source[15]);
+  const effect1 = channelSettingsScreensStyles.useEffect(() => navigation.addListener("beforeRemove", () => {
+    const obj = channelId(source[18]);
     return obj.close();
   }), items1);
-  let obj2 = navigation(source[16]);
-  const channelSettingsScreensStyles = obj2.useChannelSettingsScreensStyles();
+  let obj2 = navigation(source[19]);
+  channelSettingsScreensStyles = obj2.useChannelSettingsScreensStyles();
   const items2 = [channelId];
-  const memo = DETAILS.useMemo(() => {
+  const memo = channelSettingsScreensStyles.useMemo(() => {
     const obj = { initialParams: obj2 };
     return obj;
   }, items2);
-  let obj3 = navigation(source[17]);
+  let obj3 = navigation(source[20]);
   const accessibilityNativeStackOptions = obj3.useAccessibilityNativeStackOptions();
-  let channel = guildId.getChannel(channelId);
-  guildId = undefined;
+  let channel = ChannelStore.getChannel(channelId);
+  let guildId;
   if (channel != null) {
     guildId = channel.getGuildId();
   }
@@ -119,9 +387,9 @@ const memoResult = react.memo((navigation) => {
     }
     return channelSettingsScreens;
   }, items3);
-  const tmp4Result = navigation(source[18]);
+  const tmp4Result = navigation(source[22]);
   tmp4Result.useNavigatorBackPressHandler(() => {
-    const obj = navigation(source[19]);
+    const obj = navigation(source[21]);
     const rootNavigationRef = obj.getRootNavigationRef();
     let tmp2 = !(null == rootNavigationRef || !rootNavigationRef.isReady());
     null == rootNavigationRef || !rootNavigationRef.isReady();
@@ -135,12 +403,12 @@ const memoResult = react.memo((navigation) => {
     }
     return tmp2;
   });
-  const rect = channelId(tmp5[20])();
-  const obj4 = { style: items4, children: closure_10(Navigator, obj5) };
+  const rect = channelId(tmp5[23])();
+  const obj4 = { style: items4, children: closure_11(Navigator, obj5) };
   items4 = [channelSettingsScreensStyles.container, { paddingLeft: rect.left, paddingRight: rect.right }];
   Navigator = Screen.Navigator;
   obj5 = { id: "channel-details-navigator", screenOptions: obj6, initialRouteName: DETAILS, children: items5 };
-  obj6 = { headerTitle: navigation(source[11]).renderGenericTitle, headerTitleAlign: "center" };
+  obj6 = { headerTitle: navigation(source[15]).renderGenericTitle, headerTitleAlign: "center" };
   let merged = Object.assign(accessibilityNativeStackOptions);
   items5 = [, , , , , , ];
   const obj7 = {
@@ -148,10 +416,10 @@ const memoResult = react.memo((navigation) => {
     name: constants.DETAILS,
     options: { headerShown: false },
     getComponent() {
-      return navigation(source[21]).default;
+      return navigation(source[24]).default;
     }
   };
-  items5[0] = closure_9(Screen.Screen, obj7);
+  items5[0] = closure_10(Screen.Screen, obj7);
   const obj8 = {
     name: SearchNavigatorScreens.SEARCH_CHAT_PREVIEW,
     options(route) {
@@ -161,40 +429,40 @@ const memoResult = react.memo((navigation) => {
         header(arg0) {
           let obj2;
           const obj = { shouldHandleSafeArea: obj2.isAndroid() };
-          const renderHeader = route(source[11]).renderHeader;
-          route(source[11]);
+          const renderHeader = route(source[15]).renderHeader;
+          route(source[15]);
           const merged = Object.assign(arg0);
-          obj2 = route(source[22]);
+          obj2 = route(source[25]);
           return renderHeader(obj);
         },
         headerTitle() {
           const obj = { channelId: route.params.channelId };
-          return closure_2_9(channelId(source[23]), obj);
+          return closure_2_10(channelId(source[26]), obj);
         },
         headerLeft: obj2.getRenderBackImage(navigation)
       };
       navigation = route.navigation;
-      obj2 = route(source[11]);
+      obj2 = route(source[15]);
       return obj;
-    },
-    getComponent() {
-      return navigation(source[24]).default;
-    }
-  };
-  items5[1] = closure_9(Screen.Screen, obj8);
-  const obj9 = {
-    name: navigation(source[25]).ConversationNavigatorScreens.FOCUS,
-    options(arg0) {
-      let route;
-      ({ route, navigation } = arg0);
-      const obj = navigation(source[26]);
-      return obj.conversationNavigatorFocusHeaderOptions(route, navigation);
     },
     getComponent() {
       return navigation(source[27]).default;
     }
   };
-  items5[2] = closure_9(Screen.Screen, obj9);
+  items5[1] = closure_10(Screen.Screen, obj8);
+  const obj9 = {
+    name: navigation(source[28]).ConversationNavigatorScreens.FOCUS,
+    options(arg0) {
+      let route;
+      ({ route, navigation } = arg0);
+      const obj = navigation(source[29]);
+      return obj.conversationNavigatorFocusHeaderOptions(route, navigation);
+    },
+    getComponent() {
+      return navigation(source[30]).default;
+    }
+  };
+  items5[2] = closure_10(Screen.Screen, obj9);
   const obj10 = {
     name: constants.PINNED_MESSAGES,
     initialParams: { channelId },
@@ -215,10 +483,10 @@ const memoResult = react.memo((navigation) => {
       return obj;
     },
     getComponent() {
-      return navigation(source[28]).default;
+      return navigation(source[31]).default;
     }
   };
-  items5[3] = closure_9(Screen.Screen, obj10);
+  items5[3] = closure_10(Screen.Screen, obj10);
   const obj11 = {
     initialParams: { channelId, applicationId },
     name: constants.MUTE,
@@ -239,10 +507,10 @@ const memoResult = react.memo((navigation) => {
       return obj;
     },
     getComponent() {
-      return navigation(source[29]).default;
+      return navigation(source[32]).default;
     }
   };
-  items5[4] = closure_9(Screen.Screen, obj11);
+  items5[4] = closure_10(Screen.Screen, obj11);
   Screen = Screen.Screen;
   const obj12 = {
     name: constants.THREADS,
@@ -256,7 +524,7 @@ const memoResult = react.memo((navigation) => {
         headerLeft: renderModalCloseImage,
         headerRight() {
           const obj = { channelId: route.params.channelId };
-          return closure_2_9(closure_2_13, obj);
+          return closure_2_10(closure_2_14, obj);
         }
       };
       intl = intl2.intl;
@@ -270,11 +538,11 @@ const memoResult = react.memo((navigation) => {
       return obj;
     },
     getComponent() {
-      return navigation(source[30]).default;
+      return navigation(source[33]).default;
     }
   };
   const merged1 = Object.assign(memo);
-  items5[5] = closure_9(Screen, obj12);
+  items5[5] = closure_10(Screen, obj12);
   const entries = Object.entries(memo1);
   items5[6] = entries.map((item) => {
     let tmp;
@@ -298,15 +566,15 @@ const memoResult = react.memo((navigation) => {
         let params = route.route.params;
         navigation = route.navigation;
         if (params == null) {
-          params = closure_11;
+          params = closure_12;
         }
         return channelId.render(params, navigation);
       }
     };
-    return closure_1_9(Screen.Screen, obj, tmp);
+    return closure_1_10(Screen.Screen, obj, tmp);
   });
-  return closure_9(channelSettingsScreensStyles, obj4);
-});
+  return closure_10(guildId, obj4);
+}));
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsNavigator.tsx");
 
 export default memoResult;

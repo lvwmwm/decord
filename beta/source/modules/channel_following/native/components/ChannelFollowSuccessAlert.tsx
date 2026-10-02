@@ -1,24 +1,23 @@
-// Module ID: 10875
-// Function ID: 10876
+// Module ID: 11850
+// Function ID: 11851
 // Name: ChannelFollowSuccessAlert
-// Dependencies: [19, 17, 21, 10876, 10877, 10878, 10879, 10880, 10881, 1115, 4836, 4767, 4685, 6860, 12, 5300, 4832, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 11851, 11852, 11853, 11854, 11855, 11856, 1127, 4837, 558, 576, 4769, 4687, 12, 6864, 4833, 5301, 2]
 
-// Module 10875 (ChannelFollowSuccessAlert)
+// Module 11850 (ChannelFollowSuccessAlert)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
-import intl3 from "intl" /* 1115 */;
-import useThemeDefault from "useTheme" /* 4767 */;
-import AlertDefault from "Alert" /* 5300 */;
-import AssetRegistry from "AssetRegistry" /* 10876 */;
-import AssetRegistry2 from "AssetRegistry" /* 10877 */;
-import AssetRegistry3 from "AssetRegistry" /* 10878 */;
-import AssetRegistry4 from "AssetRegistry" /* 10879 */;
-import AssetRegistry5 from "AssetRegistry" /* 10880 */;
-import AssetRegistry6 from "AssetRegistry" /* 10881 */;
+import intl3 from "intl" /* 1127 */;
+import useThemeDefault from "useTheme" /* 4769 */;
+import AssetRegistry from "AssetRegistry" /* 11851 */;
+import AssetRegistry2 from "AssetRegistry" /* 11852 */;
+import AssetRegistry3 from "AssetRegistry" /* 11853 */;
+import AssetRegistry4 from "AssetRegistry" /* 11854 */;
+import AssetRegistry5 from "AssetRegistry" /* 11855 */;
+import AssetRegistry6 from "AssetRegistry" /* 11856 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,11 +25,13 @@ let _require;
 
 let closure_4;
 let hasOwnProperty;
+let tmp5;
+const AlertDefault = tmp5(5301);
 const Image = react_native.Image;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let items = [AssetRegistry, AssetRegistry2, AssetRegistry3];
 let items1 = [AssetRegistry4, AssetRegistry5, AssetRegistry6];
-const items2 = [
+let items2 = [
   () => {
     const intl = intl3.intl;
     return intl.string(intl3.t["w2o/60"]);
@@ -73,9 +74,181 @@ const items2 = [
   }
 ];
 let closure_9 = createStyles.createStyles({ text: { marginTop: 16, lineHeight: 20, textAlign: "center" }, header: { textAlign: "center" }, image: { alignSelf: "center", marginTop: -72, marginBottom: 16, width: "100%", resizeMode: "contain" } });
-const result = size.fileFinishedImporting("modules/channel_following/native/components/ChannelFollowSuccessAlert.tsx");
-
-export default function ChannelFollowSuccessAlert(arg0) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let tmp11;
+  let tmp12;
+  let tmp14;
+  let tmp8;
+  let tmp9;
+  let obj = require("react");
+  const cResult = obj.c(22);
+  const tmp4 = closure_9();
+  const tmp6 = useThemeDefault();
+  const obj2 = require("shared");
+  const tmp7 = obj2.isThemeDark(tmp6) ? items1 : items;
+  _require = tmp7;
+  if (cResult[0] !== tmp7) {
+    const fn = function u() {
+      const obj = _modDef12;
+      return obj.sample(closure_0);
+    };
+    items = [tmp7];
+    cResult[0] = tmp7;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp9 = items;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[1];
+    tmp9 = cResult[2];
+  }
+  const tmpResult = require("module_6864");
+  const stableMemo = tmpResult.useStableMemo(tmp8, tmp9);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        const obj = _modDef12;
+        return obj.sample(items2);
+      }
+    }
+    items1 = [];
+    cResult[3] = S;
+    cResult[4] = items1;
+    tmp12 = items1;
+    tmp11 = S;
+  } else {
+    class S {
+      constructor() {
+        const obj = _modDef12;
+        return obj.sample(items2);
+      }
+    }
+    tmp12 = cResult[4];
+  }
+  const tmpResult2 = require("module_6864");
+  const stableMemo1 = tmpResult2.useStableMemo(tmp11, tmp12);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        const obj = _modDef12;
+        return obj.sample(items2);
+      }
+    }
+    const stringResult = obj5.string(require("intl").t["+IrDzN"]);
+    cResult[5] = stringResult;
+    tmp14 = stringResult;
+  } else {
+    class S {
+      constructor() {
+        const obj = _modDef12;
+        return obj.sample(items2);
+      }
+    }
+  }
+  if (cResult[6] === tmp4.image) {
+    class S {
+      constructor() {
+        const obj = _modDef12;
+        return obj.sample(items2);
+      }
+    }
+    const header = tmp4.header;
+    if (cResult[9] !== stableMemo1) {
+      class S {
+        constructor() {
+          const obj = _modDef12;
+          return obj.sample(items2);
+        }
+      }
+      cResult[9] = stableMemo1;
+      cResult[10] = tmp19;
+    } else {
+      class S {
+        constructor() {
+          const obj = _modDef12;
+          return obj.sample(items2);
+        }
+      }
+    }
+    if (cResult[11] === tmp4.header) {
+      let tmp23;
+      class S {
+        constructor() {
+          const obj = _modDef12;
+          return obj.sample(items2);
+        }
+      }
+      const _Symbol = Symbol;
+      const text = tmp4.text;
+      if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+        class S {
+          constructor() {
+            const obj = _modDef12;
+            return obj.sample(items2);
+          }
+        }
+        const stringResult1 = obj8.string(require("intl").t["2QbSea"]);
+        cResult[14] = stringResult1;
+        tmp23 = stringResult1;
+      } else {
+        class S {
+          constructor() {
+            const obj = _modDef12;
+            return obj.sample(items2);
+          }
+        }
+      }
+      if (cResult[15] !== tmp4.text) {
+        class S {
+          constructor() {
+            const obj = _modDef12;
+            return obj.sample(items2);
+          }
+        }
+        const obj3 = { style: text, variant: "text-md/medium", color: "text-muted", children: tmp23 };
+        cResult[15] = tmp4.text;
+        cResult[16] = closure_4(require("Text/Text").Text, obj3);
+        const tmp26 = closure_4(require("Text/Text").Text, obj3);
+      } else {
+        class S {
+          constructor() {
+            const obj = _modDef12;
+            return obj.sample(items2);
+          }
+        }
+      }
+      if (cResult[17] === arg0) {
+        class S {
+          constructor() {
+            const obj = _modDef12;
+            return obj.sample(items2);
+          }
+        }
+      }
+      const obj4 = { confirmText: tmp14, children: items2 };
+      const tmp5Result = AlertDefault;
+      const merged = Object.assign(arg0);
+      items2 = [tmp16, tmp20, tmp25];
+      cResult[17] = arg0;
+      cResult[18] = tmp25;
+      cResult[19] = tmp16;
+      cResult[20] = tmp20;
+      cResult[21] = closure_5(tmp5Result, obj4);
+      const tmp34 = closure_5(tmp5Result, obj4);
+    }
+    const obj6 = { style: header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp18 };
+    cResult[11] = tmp4.header;
+    cResult[12] = tmp18;
+    cResult[13] = closure_4(require("Text/Text").Text, obj6);
+    const tmp22 = closure_4(require("Text/Text").Text, obj6);
+  }
+  const obj7 = { source: stableMemo, style: tmp4.image };
+  cResult[6] = tmp4.image;
+  cResult[7] = stableMemo;
+  cResult[8] = closure_4(Image, obj7);
+  const tmp17 = closure_4(Image, obj7);
+}) : ((arg0) => {
   let closure_0;
   let intl;
   let intl2;
@@ -85,12 +258,12 @@ export default function ChannelFollowSuccessAlert(arg0) {
   const tmp6 = obj.isThemeDark(tmp4) ? items1 : items;
   _require = tmp6;
   items = [tmp6];
-  const tmp5Result = require("module_6860");
+  const tmp5Result = require("module_6864");
   const stableMemo = tmp5Result.useStableMemo(() => {
     const obj = _modDef12;
     return obj.sample(closure_0);
   }, items);
-  const tmp5Result2 = require("module_6860");
+  const tmp5Result2 = require("module_6864");
   const stableMemo1 = tmp5Result2.useStableMemo(() => {
     const obj = _modDef12;
     return obj.sample(items2);
@@ -98,16 +271,19 @@ export default function ChannelFollowSuccessAlert(arg0) {
   const obj2 = { confirmText: intl.string(require("intl").t["+IrDzN"]), children: items1 };
   const tmp2Result = AlertDefault;
   const merged = Object.assign(arg0);
-  intl = tmp5(1115).intl;
+  intl = tmp5(1127).intl;
   items1 = [, , ];
   const obj3 = { source: stableMemo, style: tmp.image };
   items1[0] = closure_4(Image, obj3);
   const obj4 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stableMemo1() };
-  const Text = tmp5(4832).Text;
+  const Text = tmp5(4833).Text;
   items1[1] = closure_4(Text, obj4);
   const obj5 = { style: tmp.text, variant: "text-md/medium", color: "text-muted", children: intl2.string(require("intl").t["2QbSea"]) };
-  const Text2 = tmp5(4832).Text;
-  intl2 = tmp5(1115).intl;
+  const Text2 = tmp5(4833).Text;
+  intl2 = tmp5(1127).intl;
   items1[2] = closure_4(Text2, obj5);
   return closure_5(tmp2Result, obj2);
-};
+});
+const result = size.fileFinishedImporting("modules/channel_following/native/components/ChannelFollowSuccessAlert.tsx");
+
+export default tmp4;

@@ -1,23 +1,59 @@
-// Module ID: 14277
-// Function ID: 14278
+// Module ID: 14265
+// Function ID: 14266
 // Name: useShowTinyBroncoPromoSheet
-// Dependencies: [19, 14276, 2029, 14278, 2]
-// Exports: useIsTinyBroncoEligible, useShowTinyBroncoPromoSheet
+// Dependencies: [19, 558, 14264, 576, 2035, 14266, 2]
+// Exports: useIsTinyBroncoEligible
 
-// Module 14277 (useShowTinyBroncoPromoSheet)
-import dismissible_content from "dismissible_content" /* 2029 */;
-import TinyBroncoNoticeVisibility from "TinyBroncoNoticeVisibility" /* 14276 */;
-import openTinyBroncoPromoSheetDefault from "openTinyBroncoPromoSheet" /* 14278 */;
+// Module 14265 (useShowTinyBroncoPromoSheet)
+import dismissible_content from "dismissible_content" /* 2035 */;
+import TinyBroncoNoticeVisibility from "TinyBroncoNoticeVisibility" /* 14264 */;
+import openTinyBroncoPromoSheetDefault from "openTinyBroncoPromoSheet" /* 14266 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/tiny_bronco/native/useShowTinyBroncoPromoSheet.tsx");
+let dependencyMap, visibleContent;
 
-export const useIsTinyBroncoEligible = function useIsTinyBroncoEligible() {
-  const obj = TinyBroncoNoticeVisibility;
-  return obj.useShouldShowAgeNoticePromo();
-};
-export const useShowTinyBroncoPromoSheet = function useShowTinyBroncoPromoSheet(visibleContent) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visibleContent) => {
+  let ref;
+  let obj = visibleContent(576);
+  const cResult = obj.c(4);
+  visibleContent = visibleContent.visibleContent;
+  const markAsDismissed = visibleContent.markAsDismissed;
+  dependencyMap = react.useRef(false);
+  const obj2 = react;
+  if (cResult[0] === markAsDismissed) {
+    let tmp2;
+    let tmp3;
+    if (cResult[1] === visibleContent) {
+      tmp2 = cResult[2];
+      tmp3 = cResult[3];
+    }
+    const effect = obj2.useEffect(tmp2, tmp3);
+  }
+  const fn = function o() {
+    let current = ref.current;
+    const tmp = ref;
+    if (!current) {
+      current = visibleContent !== dismissible_content.DismissibleContent.TINY_BRONCO;
+    }
+    if (!current) {
+      tmp.current = true;
+      const obj = { markAsDismissed };
+      openTinyBroncoPromoSheetDefault(obj);
+    }
+  };
+  const items = [markAsDismissed, visibleContent];
+  cResult[0] = markAsDismissed;
+  cResult[1] = visibleContent;
+  cResult[2] = fn;
+  cResult[3] = items;
+  tmp3 = items;
+  tmp2 = fn;
+}) : ((visibleContent) => {
   visibleContent = visibleContent.visibleContent;
   const markAsDismissed = visibleContent.markAsDismissed;
   const ref = react.useRef(false);
@@ -34,4 +70,12 @@ export const useShowTinyBroncoPromoSheet = function useShowTinyBroncoPromoSheet(
       openTinyBroncoPromoSheetDefault(obj);
     }
   }, items);
+});
+let fn = () => {
+  const obj = TinyBroncoNoticeVisibility;
+  return obj.useShouldShowAgeNoticePromo();
 };
+const result1 = size.fileFinishedImporting("modules/tiny_bronco/native/useShowTinyBroncoPromoSheet.tsx");
+
+export const useIsTinyBroncoEligible = fn;
+export const useShowTinyBroncoPromoSheet = tmp3;

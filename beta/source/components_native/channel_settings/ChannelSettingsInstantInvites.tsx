@@ -1,29 +1,29 @@
-// Module ID: 16641
-// Function ID: 16642
+// Module ID: 16643
+// Function ID: 16644
 // Name: ChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 8086, 2045, 1074, 21, 4836, 576, 1613, 504, 8085, 10393, 1177, 10411, 10412, 1115, 6460, 16642, 6476, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 9834, 2051, 1086, 21, 4837, 588, 558, 576, 1619, 504, 9833, 10435, 1189, 10453, 10454, 1127, 6460, 16644, 6477, 2]
 
-// Module 16641 (ChannelSettingsInstantInvites)
+// Module 16643 (ChannelSettingsInstantInvites)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import FastestListDefault from "FastestList" /* 6476 */;
-import InstantInvite from "InstantInvite" /* 10393 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10411 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10412 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import FastestListDefault from "FastestList" /* 6477 */;
+import InstantInvite from "InstantInvite" /* 10435 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10453 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10454 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 8086 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 9834 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const InstantInviteDefault = InstantInvite;
-let _require, dependencyMap, inviter, invites;
+let _require, dependencyMap, invites, tmp2;
 
 let c10;
 let c9;
@@ -38,9 +38,562 @@ obj2 = { paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDe
 createStyles = createStyles.createStyles;
 obj3 = { height: nativeDefault.space.PX_16 };
 let closure_11 = createStyles(obj);
-const result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsInstantInvites.tsx");
-
-export default function ConnectedChannelSettingsInstantInvites() {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let arr3;
+  let arr6;
+  let gap;
+  let intl;
+  let intl2;
+  let loading;
+  let stateFromStores;
+  let tmp10;
+  let tmp13;
+  let tmp14;
+  let tmp19;
+  let tmp21;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(41);
+  const tmp4 = closure_11();
+  _require = tmp4;
+  let tmp5 = importDefault;
+  const bottom = require("useSafeAreaInsets")().bottom;
+  let obj2 = react;
+  [tmp7, importDefault] = arr6(react.useState(undefined), 2);
+  const tmp6 = arr6(react.useState(undefined), 2);
+  if (cResult[0] !== tmp4.gap.height) {
+    const fn = function c(arg0) {
+      importDefault(arg0 + gap.gap.height);
+    };
+    cResult[0] = tmp4.gap.height;
+    cResult[1] = fn;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelSettingsStore];
+    class L {
+      constructor() {
+        return ChannelSettingsStore.getChannel();
+      }
+    }
+    cResult[2] = items;
+    cResult[3] = L;
+    tmp10 = L;
+    tmp9 = items;
+  } else {
+    tmp9 = cResult[2];
+    tmp10 = cResult[3];
+  }
+  const tmpResult = tmp(stateFromStores[12]);
+  stateFromStores = tmpResult.useStateFromStores(tmp9, tmp10);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [ChannelSettingsStore];
+    class F {
+      constructor() {
+        return ChannelSettingsStore.getInvites();
+      }
+    }
+    cResult[4] = items1;
+    cResult[5] = F;
+    tmp14 = F;
+    tmp13 = items1;
+  } else {
+    tmp13 = cResult[4];
+    tmp14 = cResult[5];
+  }
+  const tmpResult3 = tmp(stateFromStores[12]);
+  const stateFromStoresObject = tmpResult3.useStateFromStoresObject(tmp13, tmp14);
+  ({ invites, loading } = stateFromStoresObject);
+  if (cResult[6] !== invites) {
+    let tmp17;
+    const _Symbol = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn2 = function j(inviter, inviter2) {
+        inviter = inviter.inviter;
+        let str;
+        if (inviter != null) {
+          str = inviter.username;
+        }
+        if (str == null) {
+          str = "";
+        }
+        const formatted = str.toLowerCase();
+        inviter2 = inviter2.inviter;
+        let str2;
+        if (inviter2 != null) {
+          str2 = inviter2.username;
+        }
+        if (str2 == null) {
+          str2 = "";
+        }
+        return formatted.localeCompare(str2.toLowerCase());
+      };
+      cResult[8] = fn2;
+      class F {
+        constructor() {
+          return ChannelSettingsStore.getInvites();
+        }
+      }
+    } else {
+      tmp17 = cResult[8];
+    }
+    class F {
+      constructor() {
+        return ChannelSettingsStore.getInvites();
+      }
+    }
+    const values = Object.values(invites);
+    const sorted = values.sort(tmp17);
+    cResult[6] = invites;
+    cResult[7] = sorted;
+    arr3 = sorted;
+  } else {
+    arr3 = cResult[7];
+  }
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [ChannelStore];
+    class F {
+      constructor() {
+        return ChannelSettingsStore.getInvites();
+      }
+    }
+    cResult[9] = items2;
+    tmp19 = items2;
+  } else {
+    tmp19 = cResult[9];
+  }
+  if (cResult[10] !== stateFromStores) {
+    class M {
+      constructor() {
+        if (null != closure_2) {
+          tmp2 = closure_7;
+          sortedLinkedChannelsForGuild = closure_7.getSortedLinkedChannelsForGuild(tmp.guild_id);
+          found = sortedLinkedChannelsForGuild.filter((id) => id.id === id.id);
+        } else {
+          found = [];
+        }
+        return found;
+      }
+    }
+    cResult[10] = stateFromStores;
+    class F {
+      constructor() {
+        return ChannelSettingsStore.getInvites();
+      }
+    }
+    cResult[11] = M;
+    tmp21 = M;
+  } else {
+    class M {
+      constructor() {
+        if (null != closure_2) {
+          tmp2 = closure_7;
+          sortedLinkedChannelsForGuild = closure_7.getSortedLinkedChannelsForGuild(tmp.guild_id);
+          found = sortedLinkedChannelsForGuild.filter((id) => id.id === id.id);
+        } else {
+          found = [];
+        }
+        return found;
+      }
+    }
+  }
+  const tmpResult4 = tmp(stateFromStores[12]);
+  const stateFromStoresArray = tmpResult4.useStateFromStoresArray(tmp19, tmp21);
+  if (cResult[12] === stateFromStoresArray) {
+    let tmp24;
+    let tmp27;
+    let tmp26;
+    let tmp30;
+    class M {
+      constructor() {
+        if (null != closure_2) {
+          tmp2 = closure_7;
+          sortedLinkedChannelsForGuild = closure_7.getSortedLinkedChannelsForGuild(tmp.guild_id);
+          found = sortedLinkedChannelsForGuild.filter((id) => id.id === id.id);
+        } else {
+          found = [];
+        }
+        return found;
+      }
+    }
+    if (cResult[17] !== arr6.length) {
+      class M {
+        constructor() {
+          if (null != closure_2) {
+            tmp2 = closure_7;
+            sortedLinkedChannelsForGuild = closure_7.getSortedLinkedChannelsForGuild(tmp.guild_id);
+            found = sortedLinkedChannelsForGuild.filter((id) => id.id === id.id);
+          } else {
+            found = [];
+          }
+          return found;
+        }
+      }
+      tmp25[0] = arr6.length;
+      class F {
+        constructor() {
+          return ChannelSettingsStore.getInvites();
+        }
+      }
+      cResult[18] = tmp25;
+      tmp24 = tmp25;
+    } else {
+      class M {
+        constructor() {
+          if (null != closure_2) {
+            tmp2 = closure_7;
+            sortedLinkedChannelsForGuild = closure_7.getSortedLinkedChannelsForGuild(tmp.guild_id);
+            found = sortedLinkedChannelsForGuild.filter((id) => id.id === id.id);
+          } else {
+            found = [];
+          }
+          return found;
+        }
+      }
+    }
+    class F {
+      constructor() {
+        return ChannelSettingsStore.getInvites();
+      }
+    }
+    if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
+      class X {
+        constructor() {
+          const obj = require("ChannelSettingsActionCreators");
+          obj.setSection(constants.INSTANT_INVITES);
+        }
+      }
+      const items3 = [];
+      class F {
+        constructor() {
+          return ChannelSettingsStore.getInvites();
+        }
+      }
+      cResult[20] = items3;
+      tmp27 = items3;
+      tmp26 = X;
+    } else {
+      class X {
+        constructor() {
+          const obj = require("ChannelSettingsActionCreators");
+          obj.setSection(constants.INSTANT_INVITES);
+        }
+      }
+      tmp27 = cResult[20];
+    }
+    const effect = obj2.useEffect(tmp26, tmp27);
+    if (cResult[21] !== arr6) {
+      class D {
+        constructor(arg0, arg1) {
+          let tmp5;
+          if ("invite" === arr6[arg1].type) {
+            const obj2 = { invite: arr6[arg1].data };
+            tmp5 = React4(InstantInviteDefault, obj2);
+          } else {
+            const obj = { channel: arr6[arg1].data };
+            tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+          }
+          return tmp5;
+        }
+      }
+      cResult[21] = arr6;
+      class F {
+        constructor() {
+          return ChannelSettingsStore.getInvites();
+        }
+      }
+      cResult[22] = D;
+    } else {
+      class D {
+        constructor(arg0, arg1) {
+          let tmp5;
+          if ("invite" === arr6[arg1].type) {
+            const obj2 = { invite: arr6[arg1].data };
+            tmp5 = React4(InstantInviteDefault, obj2);
+          } else {
+            const obj = { channel: arr6[arg1].data };
+            tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+          }
+          return tmp5;
+        }
+      }
+    }
+    if (!loading) {
+      class D {
+        constructor(arg0, arg1) {
+          let tmp5;
+          if ("invite" === arr6[arg1].type) {
+            const obj2 = { invite: arr6[arg1].data };
+            tmp5 = React4(InstantInviteDefault, obj2);
+          } else {
+            const obj = { channel: arr6[arg1].data };
+            tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+          }
+          return tmp5;
+        }
+      }
+      if (0 === arr6.length) {
+        class D {
+          constructor(arg0, arg1) {
+            let tmp5;
+            if ("invite" === arr6[arg1].type) {
+              const obj2 = { invite: arr6[arg1].data };
+              tmp5 = React4(InstantInviteDefault, obj2);
+            } else {
+              const obj = { channel: arr6[arg1].data };
+              tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+            }
+            return tmp5;
+          }
+        }
+        if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
+          class D {
+            constructor(arg0, arg1) {
+              let tmp5;
+              if ("invite" === arr6[arg1].type) {
+                const obj2 = { invite: arr6[arg1].data };
+                tmp5 = React4(InstantInviteDefault, obj2);
+              } else {
+                const obj = { channel: arr6[arg1].data };
+                tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+              }
+              return tmp5;
+            }
+          }
+          const obj3 = { lightSource: null, darkSource: tmp5(stateFromStores[17]), title: intl.string(tmp(stateFromStores[18]).t["+nLJkZ"]), body: intl2.string(tmp(stateFromStores[18]).t.F53CAc) };
+          const EmptyState = tmp(tmp2[15]).EmptyState;
+          class F {
+            constructor() {
+              return ChannelSettingsStore.getInvites();
+            }
+          }
+          intl = tmp(tmp2[18]).intl;
+          intl2 = tmp(tmp2[18]).intl;
+          const tmp31 = closure_9(EmptyState, obj3);
+          cResult[23] = tmp31;
+          tmp30 = tmp31;
+        } else {
+          class D {
+            constructor(arg0, arg1) {
+              let tmp5;
+              if ("invite" === arr6[arg1].type) {
+                const obj2 = { invite: arr6[arg1].data };
+                tmp5 = React4(InstantInviteDefault, obj2);
+              } else {
+                const obj = { channel: arr6[arg1].data };
+                tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+              }
+              return tmp5;
+            }
+          }
+        }
+      }
+      return tmp30;
+    }
+    if (!loading) {
+      class D {
+        constructor(arg0, arg1) {
+          let tmp5;
+          if ("invite" === arr6[arg1].type) {
+            const obj2 = { invite: arr6[arg1].data };
+            tmp5 = React4(InstantInviteDefault, obj2);
+          } else {
+            const obj = { channel: arr6[arg1].data };
+            tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+          }
+          return tmp5;
+        }
+      }
+      if (null != tmp7) {
+        class D {
+          constructor(arg0, arg1) {
+            let tmp5;
+            if ("invite" === arr6[arg1].type) {
+              const obj2 = { invite: arr6[arg1].data };
+              tmp5 = React4(InstantInviteDefault, obj2);
+            } else {
+              const obj = { channel: arr6[arg1].data };
+              tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+            }
+            return tmp5;
+          }
+        }
+        const obj4 = { sections: null, estimatedListSize: "windowSize", itemSize: tmp7, renderItem: tmp29, insetStart: tmp4.gap.height, insetEnd: bottom };
+        class F {
+          constructor() {
+            return ChannelSettingsStore.getInvites();
+          }
+        }
+        cResult[32] = tmp7;
+        cResult[33] = tmp29;
+        cResult[34] = bottom;
+        cResult[35] = tmp24;
+        cResult[36] = tmp4.gap.height;
+        cResult[37] = closure_9(tmp5(stateFromStores[21]), obj4);
+        const tmp34 = closure_9(tmp5(stateFromStores[21]), obj4);
+      }
+      tmp30 = tmp35;
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
+      class D {
+        constructor(arg0, arg1) {
+          let tmp5;
+          if ("invite" === arr6[arg1].type) {
+            const obj2 = { invite: arr6[arg1].data };
+            tmp5 = React4(InstantInviteDefault, obj2);
+          } else {
+            const obj = { channel: arr6[arg1].data };
+            tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+          }
+          return tmp5;
+        }
+      }
+      closure_9(tmp(stateFromStores[19]).SceneLoadingIndicator, {});
+      class F {
+        constructor() {
+          return ChannelSettingsStore.getInvites();
+        }
+      }
+    } else {
+      class D {
+        constructor(arg0, arg1) {
+          let tmp5;
+          if ("invite" === arr6[arg1].type) {
+            const obj2 = { invite: arr6[arg1].data };
+            tmp5 = React4(InstantInviteDefault, obj2);
+          } else {
+            const obj = { channel: arr6[arg1].data };
+            tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+          }
+          return tmp5;
+        }
+      }
+    }
+    if (cResult[25] === tmp8) {
+      class D {
+        constructor(arg0, arg1) {
+          let tmp5;
+          if ("invite" === arr6[arg1].type) {
+            const obj2 = { invite: arr6[arg1].data };
+            tmp5 = React4(InstantInviteDefault, obj2);
+          } else {
+            const obj = { channel: arr6[arg1].data };
+            tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+          }
+          return tmp5;
+        }
+      }
+    }
+    let tmp39 = null;
+    if (arr6.length > 0) {
+      class D {
+        constructor(arg0, arg1) {
+          let tmp5;
+          if ("invite" === arr6[arg1].type) {
+            const obj2 = { invite: arr6[arg1].data };
+            tmp5 = React4(InstantInviteDefault, obj2);
+          } else {
+            const obj = { channel: arr6[arg1].data };
+            tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+          }
+          return tmp5;
+        }
+      }
+      const obj5 = { item: arr6[0], onMeasured: null };
+      class F {
+        constructor() {
+          return ChannelSettingsStore.getInvites();
+        }
+      }
+      tmp39 = closure_9(tmp5(tmp2[20]), obj5);
+    }
+    cResult[25] = tmp8;
+    cResult[26] = arr6[0];
+    cResult[27] = arr6.length;
+    cResult[28] = tmp39;
+  }
+  if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor(arg0, arg1) {
+        let tmp5;
+        if ("invite" === arr6[arg1].type) {
+          const obj2 = { invite: arr6[arg1].data };
+          tmp5 = React4(InstantInviteDefault, obj2);
+        } else {
+          const obj = { channel: arr6[arg1].data };
+          tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+        }
+        return tmp5;
+      }
+    }
+    cResult[15] = P;
+    class F {
+      constructor() {
+        return ChannelSettingsStore.getInvites();
+      }
+    }
+  } else {
+    class D {
+      constructor(arg0, arg1) {
+        let tmp5;
+        if ("invite" === arr6[arg1].type) {
+          const obj2 = { invite: arr6[arg1].data };
+          tmp5 = React4(InstantInviteDefault, obj2);
+        } else {
+          const obj = { channel: arr6[arg1].data };
+          tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+        }
+        return tmp5;
+      }
+    }
+  }
+  if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor(arg0, arg1) {
+        let tmp5;
+        if ("invite" === arr6[arg1].type) {
+          const obj2 = { invite: arr6[arg1].data };
+          tmp5 = React4(InstantInviteDefault, obj2);
+        } else {
+          const obj = { channel: arr6[arg1].data };
+          tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+        }
+        return tmp5;
+      }
+    }
+    cResult[16] = R;
+    class F {
+      constructor() {
+        return ChannelSettingsStore.getInvites();
+      }
+    }
+  } else {
+    class D {
+      constructor(arg0, arg1) {
+        let tmp5;
+        if ("invite" === arr6[arg1].type) {
+          const obj2 = { invite: arr6[arg1].data };
+          tmp5 = React4(InstantInviteDefault, obj2);
+        } else {
+          const obj = { channel: arr6[arg1].data };
+          tmp5 = React4(InstantInvite.LinkedChannelInvite, obj);
+        }
+        return tmp5;
+      }
+    }
+  }
+  const items4 = [...arr3.map(tmp22), ...stateFromStoresArray.map(tmp23)];
+  cResult[12] = stateFromStoresArray;
+  cResult[13] = arr3;
+  cResult[14] = items4;
+  arr6 = items4;
+}) : (() => {
   let closure_2;
   let gap;
   let intl;
@@ -129,9 +682,9 @@ export default function ConnectedChannelSettingsInstantInvites() {
   if (!loading) {
     if (0 === memo1.length) {
       const obj4 = { lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault2, title: intl.string(require("intl").t["+nLJkZ"]), body: intl2.string(require("intl").t.F53CAc) };
-      const EmptyState = tmp7(1177).EmptyState;
-      intl = tmp7(1115).intl;
-      intl2 = tmp7(1115).intl;
+      const EmptyState = tmp7(1189).EmptyState;
+      intl = tmp7(1127).intl;
+      intl2 = tmp7(1127).intl;
       tmp21 = closure_9(EmptyState, obj4);
     }
     return tmp21;
@@ -153,8 +706,11 @@ export default function ConnectedChannelSettingsInstantInvites() {
   const tmp19 = closure_9;
   if (memo1.length > 0) {
     const obj8 = { item: memo1[0], onMeasured: callback };
-    tmp19Result = tmp19(tmp2(16642), obj8);
+    tmp19Result = tmp19(tmp2(16644), obj8);
   }
   items8[1] = tmp19Result;
   tmp17Result = tmp17(tmp18, obj7);
-};
+});
+const result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsInstantInvites.tsx");
+
+export default tmp4;

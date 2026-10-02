@@ -1,24 +1,24 @@
-// Module ID: 9206
-// Function ID: 9207
+// Module ID: 9172
+// Function ID: 9173
 // Name: GuildProfileActionSheet
-// Dependencies: [19, 17, 9028, 9207, 1074, 21, 4836, 576, 4767, 9029, 504, 4531, 7615, 6583, 6603, 9030, 9208, 5281, 1115, 9222, 9209, 9223, 672, 6571, 5293, 6045, 6575, 2]
-// Exports: default
+// Dependencies: [19, 17, 9005, 9173, 1086, 21, 4837, 588, 558, 576, 4769, 9006, 504, 4535, 7619, 6584, 6604, 9007, 9174, 1127, 5282, 9188, 9175, 9189, 684, 5292, 6038, 6576, 6572, 2]
 
-// Module 9206 (GuildProfileActionSheet)
-import nativeDefault from "native" /* 576 */;
-import _modDef672 from "module_672" /* 672 */;
-import Constants from "Constants" /* 1074 */;
-import GuildProfileStore2 from "GuildProfileStore" /* 9028 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9030 */;
-import GuildProfileConstants from "GuildProfileConstants" /* 9207 */;
+// Module 9172 (GuildProfileActionSheet)
+import nativeDefault from "native" /* 588 */;
+import _modDef684 from "module_684" /* 684 */;
+import Constants from "Constants" /* 1086 */;
+import GuildProfileStore2 from "GuildProfileStore" /* 9005 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9007 */;
+import GuildProfileConstants from "GuildProfileConstants" /* 9173 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const GuildProfileStore = GuildProfileStore2;
-let BottomSheet;
+let BottomSheet, guildId;
 
 let c10;
 let closure_4;
@@ -33,9 +33,234 @@ const VerticalGradient = Constants.VerticalGradient;
 let obj = { loadingContainer: { paddingTop: 40 }, footerContainer: { paddingHorizontal: 16, paddingVertical: 40 }, scrollView: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_12 = createStyles.createStyles(obj);
-let result = size.fileFinishedImporting("modules/guild_profile/native/components/GuildProfileActionSheet.tsx");
-
-export default function GuildProfileActionSheet(guildId) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let analyticsLocations;
+  let bottomSheetClose;
+  let bottomSheetRef;
+  let context;
+  let fetchGuildProfile;
+  let first;
+  let guildProfile;
+  let inviteKey;
+  let items3;
+  let tmp10;
+  let obj = guildId(analyticsLocations[9]);
+  const cResult = obj.c(53);
+  guildId = guildId.guildId;
+  ({ context, inviteKey } = guildId);
+  const tmp4 = closure_12();
+  const tmp6 = fetchGuildProfile(analyticsLocations[10])();
+  const obj2 = guildId(analyticsLocations[11]);
+  const guildProfile1 = obj2.useGuildProfile(guildId);
+  ({ guildProfile, fetchGuildProfile } = guildProfile1);
+  const fetchStatus = guildProfile1.fetchStatus;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildProfileStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    class E {
+      constructor() {
+        return closure_6.getErrorCode(guildId);
+      }
+    }
+    cResult[1] = guildId;
+    cResult[2] = E;
+    tmp10 = E;
+  } else {
+    class E {
+      constructor() {
+        return closure_6.getErrorCode(guildId);
+      }
+    }
+  }
+  const tmpResult = guildId(analyticsLocations[12]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp10);
+  const tmpResult4 = guildId(analyticsLocations[13]);
+  const token = tmpResult4.useToken(tmp5(tmp2[7]).colors.INTERACTIVE_TEXT_HOVER, tmp6);
+  const tmpResult5 = guildId(analyticsLocations[14]);
+  const bottomSheetRef1 = tmpResult5.useBottomSheetRef();
+  ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
+  const tmp5Result = fetchGuildProfile(analyticsLocations[15]);
+  analyticsLocations = tmp5Result(tmp5(tmp2[16]).GUILD_PROFILE).analyticsLocations;
+  const tmpResult6 = guildId(analyticsLocations[13]);
+  const token1 = tmpResult6.useToken(tmp5(tmp2[7]).colors.BACKGROUND_BASE_LOW);
+  if (cResult[3] === analyticsLocations) {
+    let tmp20;
+    let tmp19;
+    let tmp24;
+    class E {
+      constructor() {
+        return closure_6.getErrorCode(guildId);
+      }
+    }
+    const effect = react.useEffect(G, items3);
+    const obj7 = react;
+    if (cResult[7] !== fetchGuildProfile) {
+      class E {
+        constructor() {
+          return closure_6.getErrorCode(guildId);
+        }
+      }
+      cResult[7] = fetchGuildProfile;
+      cResult[8] = tmp18;
+    } else {
+      class E {
+        constructor() {
+          return closure_6.getErrorCode(guildId);
+        }
+      }
+    }
+    if (cResult[9] !== fetchGuildProfile) {
+      class H {
+        constructor() {
+          tmp = fetchGuildProfile();
+          return;
+        }
+      }
+      const items1 = [fetchGuildProfile];
+      cResult[9] = fetchGuildProfile;
+      cResult[10] = H;
+      cResult[11] = items1;
+      tmp20 = items1;
+      tmp19 = H;
+    } else {
+      class H {
+        constructor() {
+          tmp = fetchGuildProfile();
+          return;
+        }
+      }
+      tmp20 = cResult[11];
+    }
+    const effect1 = obj7.useEffect(tmp19, tmp20);
+    if (fetchStatus !== GuildProfileFetchStatus.NOT_FETCHED) {
+      class H {
+        constructor() {
+          tmp = fetchGuildProfile();
+          return;
+        }
+      }
+      if (cResult[30] !== token1) {
+        class H {
+          constructor() {
+            tmp = fetchGuildProfile();
+            return;
+          }
+        }
+        const alphaResult = obj9.alpha(0);
+        cResult[30] = token1;
+        cResult[31] = alphaResult.hex();
+        const hexResult = alphaResult.hex();
+      } else {
+        class H {
+          constructor() {
+            tmp = fetchGuildProfile();
+            return;
+          }
+        }
+      }
+      if (cResult[32] === token1) {
+        let tmp33;
+        class H {
+          constructor() {
+            tmp = fetchGuildProfile();
+            return;
+          }
+        }
+        const _Symbol2 = Symbol;
+        if (cResult[35] === Symbol.for("react.memo_cache_sentinel")) {
+          class H {
+            constructor() {
+              tmp = fetchGuildProfile();
+              return;
+            }
+          }
+          cResult[35] = tmp34;
+          tmp33 = tmp34;
+        } else {
+          class H {
+            constructor() {
+              tmp = fetchGuildProfile();
+              return;
+            }
+          }
+        }
+        if (cResult[36] === tmp32) {
+          class H {
+            constructor() {
+              tmp = fetchGuildProfile();
+              return;
+            }
+          }
+        }
+        const obj3 = { start: VerticalGradient.START, end: tmp33, style: tmp4.footerContainer, colors: tmp32, children: tmp23 };
+        cResult[36] = tmp32;
+        cResult[37] = tmp23;
+        cResult[38] = tmp4.footerContainer;
+        cResult[39] = closure_10(fetchGuildProfile(analyticsLocations[25]), obj3);
+        const tmp38 = closure_10(fetchGuildProfile(analyticsLocations[25]), obj3);
+      }
+      const items2 = [tmp30, token1];
+      cResult[32] = token1;
+      cResult[33] = tmp30;
+      cResult[34] = items2;
+    }
+    const _Symbol = Symbol;
+    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+      class H {
+        constructor() {
+          tmp = fetchGuildProfile();
+          return;
+        }
+      }
+      const tmp26 = closure_10(closure_5, { animating: true, size: "large" });
+      cResult[12] = tmp26;
+      tmp24 = tmp26;
+    } else {
+      class H {
+        constructor() {
+          tmp = fetchGuildProfile();
+          return;
+        }
+      }
+    }
+    if (cResult[13] !== tmp4.loadingContainer) {
+      class H {
+        constructor() {
+          tmp = fetchGuildProfile();
+          return;
+        }
+      }
+      const obj4 = { style: tmp4.loadingContainer, children: tmp24 };
+      const tmp29 = closure_10(closure_4, obj4);
+      cResult[13] = tmp4.loadingContainer;
+      cResult[14] = tmp29;
+    } else {
+      class H {
+        constructor() {
+          tmp = fetchGuildProfile();
+          return;
+        }
+      }
+    }
+  }
+  class G {
+    constructor() {
+      obj = closure_0(closure_2[17]);
+      result = obj.trackGuildProfileViewed(guildId, analyticsLocations);
+      return;
+    }
+  }
+  items3 = [guildId, analyticsLocations];
+  cResult[3] = analyticsLocations;
+  cResult[4] = guildId;
+  cResult[5] = G;
+  cResult[6] = items3;
+}) : ((guildId) => {
   let bottomSheetClose;
   let bottomSheetRef;
   let context;
@@ -52,22 +277,22 @@ export default function GuildProfileActionSheet(guildId) {
   let analyticsLocations;
   ({ context, inviteKey } = guildId);
   const tmp = closure_12();
-  const tmp4 = fetchGuildProfile(analyticsLocations[8])();
-  let obj = guildId(analyticsLocations[9]);
+  const tmp4 = fetchGuildProfile(analyticsLocations[10])();
+  let obj = guildId(analyticsLocations[11]);
   const guildProfile1 = obj.useGuildProfile(guildId);
   ({ guildProfile, fetchGuildProfile } = guildProfile1);
   const fetchStatus = guildProfile1.fetchStatus;
   let items = [GuildProfileStore];
-  const obj2 = guildId(analyticsLocations[10]);
+  const obj2 = guildId(analyticsLocations[12]);
   const stateFromStores = obj2.useStateFromStores(items, () => GuildProfileStore.getErrorCode(guildId));
-  const obj3 = guildId(analyticsLocations[11]);
+  const obj3 = guildId(analyticsLocations[13]);
   const token = obj3.useToken(fetchGuildProfile(analyticsLocations[7]).colors.INTERACTIVE_TEXT_HOVER, tmp4);
-  const obj4 = guildId(analyticsLocations[12]);
+  const obj4 = guildId(analyticsLocations[14]);
   const bottomSheetRef1 = obj4.useBottomSheetRef();
   ({ bottomSheetClose, bottomSheetRef } = bottomSheetRef1);
-  const tmp10 = fetchGuildProfile(analyticsLocations[13]);
-  analyticsLocations = tmp10(fetchGuildProfile(analyticsLocations[14]).GUILD_PROFILE).analyticsLocations;
-  const obj5 = guildId(analyticsLocations[11]);
+  const tmp10 = fetchGuildProfile(analyticsLocations[15]);
+  analyticsLocations = tmp10(fetchGuildProfile(analyticsLocations[16]).GUILD_PROFILE).analyticsLocations;
+  const obj5 = guildId(analyticsLocations[13]);
   const token1 = obj5.useToken(fetchGuildProfile(analyticsLocations[7]).colors.BACKGROUND_BASE_LOW);
   const items1 = [guildId, analyticsLocations];
   const effect = token1.useEffect(() => {
@@ -90,27 +315,27 @@ export default function GuildProfileActionSheet(guildId) {
     if (fetchStatus !== GuildProfileFetchStatus.FETCHING) {
       if (null == guildProfile) {
         if (stateFromStores === INVALID_ACCESS_ERROR_CODE) {
-          tmp19 = closure_10(tmp2(tmp3[16]), {});
-          const obj7 = { size: "lg", text: intl2.string(guildId(analyticsLocations[18]).t.cpT0Cq), onPress: bottomSheetClose };
-          const Button2 = tmp5(tmp3[17]).Button;
-          intl2 = tmp5(tmp3[18]).intl;
+          tmp19 = closure_10(tmp2(tmp3[18]), {});
+          const obj7 = { size: "lg", text: intl2.string(guildId(analyticsLocations[19]).t.cpT0Cq), onPress: bottomSheetClose };
+          const Button2 = tmp5(tmp3[20]).Button;
+          intl2 = tmp5(tmp3[19]).intl;
           tmp18 = closure_10(Button2, obj7);
           tmp20 = closure_10;
         }
       }
       if (null == guildProfile) {
         const obj8 = { onRetry: callback };
-        tmp19 = closure_10(tmp2(tmp3[19]), obj8);
-        const obj9 = { size: "lg", text: intl.string(guildId(analyticsLocations[18]).t.cpT0Cq), onPress: bottomSheetClose };
-        const Button = tmp5(tmp3[17]).Button;
-        intl = tmp5(tmp3[18]).intl;
+        tmp19 = closure_10(tmp2(tmp3[21]), obj8);
+        const obj9 = { size: "lg", text: intl.string(guildId(analyticsLocations[19]).t.cpT0Cq), onPress: bottomSheetClose };
+        const Button = tmp5(tmp3[20]).Button;
+        intl = tmp5(tmp3[19]).intl;
         tmp18 = closure_10(Button, obj9);
         tmp20 = closure_10;
       } else {
         const obj10 = { guildProfile };
         const obj11 = { profile: guildProfile, context, inviteKey };
-        const tmp17 = closure_10(fetchGuildProfile(analyticsLocations[20]), obj10);
-        tmp18 = closure_10(tmp2(tmp3[21]), obj11);
+        const tmp17 = closure_10(fetchGuildProfile(analyticsLocations[22]), obj10);
+        tmp18 = closure_10(tmp2(tmp3[23]), obj11);
         tmp19 = tmp17;
         tmp20 = closure_10;
       }
@@ -118,24 +343,27 @@ export default function GuildProfileActionSheet(guildId) {
     const items4 = [token1];
     const memo = obj6.useMemo(() => {
       const items = [, ];
-      const obj = _modDef672(token1);
+      const obj = _modDef684(token1);
       const alphaResult = obj.alpha(0);
       items[0] = alphaResult.hex();
       items[1] = token1;
       return items;
     }, items4);
-    const obj12 = { ref: bottomSheetRef, scrollable: true, handleDisabled: true, footer: tmp20(fetchGuildProfile(analyticsLocations[24]), obj13), children: items5 };
-    BottomSheet = tmp5(tmp3[23]).BottomSheet;
+    const obj12 = { ref: bottomSheetRef, scrollable: true, handleDisabled: true, footer: tmp20(fetchGuildProfile(analyticsLocations[25]), obj13), children: items5 };
+    BottomSheet = tmp5(tmp3[28]).BottomSheet;
     obj13 = { start: VerticalGradient.START, end: { x: 0, y: 0.5 }, style: tmp.footerContainer, colors: memo, children: tmp18 };
     const obj14 = { enableFooterMarginAdjustment: true, style: tmp.scrollView, children: tmp19 };
-    items5 = [tmp20(guildId(analyticsLocations[25]).BottomSheetScrollView, obj14), ];
+    items5 = [tmp20(guildId(analyticsLocations[26]).BottomSheetScrollView, obj14), ];
     const obj15 = { variant: "floating", tabStyle: obj16, onPress: bottomSheetClose };
     obj16 = { backgroundColor: token };
-    items5[1] = tmp20(guildId(analyticsLocations[26]).ActionSheetHeaderBar, obj15);
+    items5[1] = tmp20(guildId(analyticsLocations[27]).ActionSheetHeaderBar, obj15);
     return closure_11(BottomSheet, obj12);
   }
   const obj17 = { style: tmp.loadingContainer, children: closure_10(closure_5, { animating: true, size: "large" }) };
   tmp19 = closure_10(closure_4, obj17);
   tmp18 = null;
   tmp20 = closure_10;
-};
+});
+let result = size.fileFinishedImporting("modules/guild_profile/native/components/GuildProfileActionSheet.tsx");
+
+export default tmp4;

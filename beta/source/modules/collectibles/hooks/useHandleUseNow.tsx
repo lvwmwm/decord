@@ -1,11 +1,11 @@
-// Module ID: 10550
-// Function ID: 10551
+// Module ID: 10582
+// Function ID: 10583
 // Name: hooks/useHandleUseNow
-// Dependencies: [5, 32, 19, 1076, 1974, 1115, 7616, 10551, 7612, 6405, 2]
+// Dependencies: [5, 32, 19, 1088, 1980, 1127, 7620, 10583, 7616, 6405, 2]
 // Exports: useHandleUseNow
 
-// Module 10550 (hooks/useHandleUseNow)
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1076 */;
+// Module 10582 (hooks/useHandleUseNow)
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1088 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -17,15 +17,15 @@ let _slicedToArray = _slicedToArray_mod;
 const isExternalProduct = CollectiblesShopConstants.isExternalProduct;
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useHandleUseNow.tsx");
 
-export const useHandleUseNow = function useHandleUseNow(product) {
+export const useHandleUseNow = function useHandleUseNow(cResult) {
   let closure_3;
   let first;
   let items1;
   let stringResult;
-  product = product.product;
+  const product = cResult.product;
   require = product;
-  const onSuccess = product.onSuccess;
-  const onError = product.onError;
+  const onSuccess = cResult.onSuccess;
+  const onError = cResult.onError;
   _slicedToArray = undefined;
   let firstAvatarDecoration;
   let memo;
@@ -102,7 +102,7 @@ export const useHandleUseNow = function useHandleUseNow(product) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -166,7 +166,7 @@ export const useHandleUseNow = function useHandleUseNow(product) {
                 return obj9;
               }
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === c6) {
             c5 = 0;

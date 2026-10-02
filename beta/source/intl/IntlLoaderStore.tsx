@@ -1,18 +1,20 @@
-// Module ID: 2113
-// Function ID: 2114
+// Module ID: 2116
+// Function ID: 2117
 // Name: IntlLoaderStore
-// Dependencies: [5, 1883, 1243, 2114, 1115, 2124, 1154, 3913, 4388, 4419, 4421, 1231, 2]
-// Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
+// Dependencies: [5, 1889, 1255, 2117, 1127, 2127, 1166, 3916, 4391, 4422, 4424, 1243, 558, 576, 2]
+// Exports: setAppLocale, subscribeToIntlLoadingSuccess
 
-// Module 2113 (IntlLoaderStore)
-import intl2 from "intl" /* 1115 */;
-import _modDef2114 from "module_2114" /* 2114 */;
-import dateFnsLocales from "dateFnsLocales" /* 3913 */;
-import formatjs from "formatjs" /* 4388 */;
-import moment from "moment" /* 4419 */;
+// Module 2116 (IntlLoaderStore)
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import _modDef2117 from "module_2117" /* 2117 */;
+import dateFnsLocales from "dateFnsLocales" /* 3916 */;
+import formatjs from "formatjs" /* 4391 */;
+import moment from "moment" /* 4422 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_1883 from "module_1883" /* 1883 */;
-import module_1243 from "module_1243" /* 1243 */;
+import module_1889 from "module_1889" /* 1889 */;
+import module_1255 from "module_1255" /* 1255 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -50,7 +52,7 @@ let obj = function _setAppLocale() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -83,7 +85,7 @@ let obj = function _setAppLocale() {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -128,7 +130,7 @@ let obj = function _setAppLocale() {
                       return obj;
                     } else {
                       c2 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp10) {
                     c2 = 3;
@@ -158,7 +160,7 @@ let obj = function _setAppLocale() {
           } else {
             state.setLoadingSucceeded(closure_0);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp9) {
           c3 = 3;
@@ -182,7 +184,7 @@ obj = function _loadDateFnsLocale() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -208,7 +210,7 @@ obj = function _loadDateFnsLocale() {
               const obj4 = { value: tmp18(), done: false };
               return obj4;
             } else {
-              state.setLocaleData(require("module_2114"));
+              state.setLocaleData(require("module_2117"));
             }
           }
         } else if (arg0 === 1) {
@@ -223,7 +225,7 @@ obj = function _loadDateFnsLocale() {
           state.setLocaleData(closure_1);
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp10) {
         c3 = 3;
         throw tmp10;
@@ -245,7 +247,7 @@ obj = function _loadFormatJsLocale() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -276,7 +278,7 @@ obj = function _loadFormatJsLocale() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp9) {
         c1 = 3;
         throw tmp9;
@@ -299,7 +301,7 @@ obj = function _setMomentLocale() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -350,7 +352,7 @@ obj = function _setMomentLocale() {
         const obj2 = closure_130_0(closure_130_2[10]);
         obj2.locale(closure_1);
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp25) {
         c4 = 3;
         throw tmp25;
@@ -359,21 +361,21 @@ obj = function _setMomentLocale() {
   });
   return obj(...arguments);
 };
-const withEqualityFn = module_1243.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = module_1255.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   obj = {
     isLoading: false,
     inProgressLocale: "Boolean",
-    error: "paddingHorizontal",
-    localeData: _modDef2114,
+    error: "applicationId",
+    localeData: _modDef2117,
     setLoadingStarted(inProgressLocale) {
       obj = { isLoading: true, inProgressLocale };
       return closure_0(obj);
     },
     setLoadingSucceeded(arg0) {
       if (closure_1().inProgressLocale === arg0) {
-        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "paddingHorizontal" });
+        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "applicationId" });
       }
     },
     setLoadingFailed(error, arg1) {
@@ -388,6 +390,31 @@ const withEqualityFn = module_1243.createWithEqualityFn((arg0, arg1) => {
     }
   };
   return obj;
+});
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function o(localeData) {
+      return localeData.localeData;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  let tmp4 = withEqualityFn(first);
+  if (tmp4 == null) {
+    tmp4 = _modDef2117;
+  }
+  return tmp4;
+}) : (() => {
+  let tmp = withEqualityFn((localeData) => localeData.localeData);
+  if (tmp == null) {
+    tmp = _modDef2117;
+  }
+  return tmp;
 });
 const result = size.fileFinishedImporting("intl/IntlLoaderStore.tsx");
 
@@ -404,10 +431,4 @@ export const subscribeToIntlLoadingSuccess = function subscribeToIntlLoadingSucc
 export const setAppLocale = function setAppLocale() {
   return obj(...arguments);
 };
-export const useLocaleData = function useLocaleData() {
-  let tmp = withEqualityFn((localeData) => localeData.localeData);
-  if (tmp == null) {
-    tmp = _modDef2114;
-  }
-  return tmp;
-};
+export const useLocaleData = tmp3;

@@ -1,30 +1,30 @@
-// Module ID: 4843
-// Function ID: 4844
+// Module ID: 4844
+// Function ID: 4845
 // Name: typographyVariantRemap
-// Dependencies: [32, 4844, 2]
+// Dependencies: [32, 4845, 2]
 // Exports: remapTypographyVariant
 
-// Module 4843 (typographyVariantRemap)
-import TypographyVariantRemap from "TypographyVariantRemap" /* 4844 */;
+// Module 4844 (typographyVariantRemap)
+import TypographyVariantRemap from "TypographyVariantRemap" /* 4845 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Text/typographyVariantRemap.tsx");
 
-export const remapTypographyVariant = function remapTypographyVariant(enabledExperiments, variant, arg2) {
+export const remapTypographyVariant = function remapTypographyVariant(cResult, arg1, arg2) {
   const obj = TypographyVariantRemap.TYPOGRAPHY_EXPERIMENT_REMAPS[Symbol.iterator]();
   while (obj !== undefined) {
     let tmp3 = _slicedToArray(tmp, 2);
     let tmp4 = tmp3[1];
-    if (enabledExperiments.includes(tmp3[0])) {
+    if (cResult.includes(tmp3[0])) {
       let value;
       if (arg2) {
         let heading = tmp4.heading;
-        value = heading.get(variant);
+        value = heading.get(arg1);
       }
       if (value == null) {
         let text = tmp4.text;
-        value = text.get(variant);
+        value = text.get(arg1);
       }
       if (null != value) {
         obj.return();
@@ -33,5 +33,5 @@ export const remapTypographyVariant = function remapTypographyVariant(enabledExp
     }
     continue;
   }
-  return variant;
+  return arg1;
 };

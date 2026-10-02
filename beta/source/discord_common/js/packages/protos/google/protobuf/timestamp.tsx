@@ -1,15 +1,15 @@
-// Module ID: 1216
-// Function ID: 1217
+// Module ID: 1228
+// Function ID: 1229
 // Name: timestamp
-// Dependencies: [32, 1187, 2]
+// Dependencies: [32, 1199, 2]
 
-// Module 1216 (timestamp)
-import _mod1187 from "module_1187" /* 1187 */;
+// Module 1228 (timestamp)
+import _mod1199 from "module_1199" /* 1199 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const MessageType = _mod1187.MessageType;
+const MessageType = _mod1199.MessageType;
 class Timestamp$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "seconds", kind: "scalar", T: 3 }, { no: 2, name: "nanos", kind: "scalar", T: 5 }];
@@ -19,14 +19,14 @@ class Timestamp$Type extends MessageType {
   now() {
     const obj = this.create();
     const timestamp = Date.now();
-    const PbLong = _mod1187.PbLong;
+    const PbLong = _mod1199.PbLong;
     const str = PbLong.from(Math.floor(timestamp / 1000));
     obj.seconds = str.toString();
     obj.nanos = timestamp % 1000 * 1000000;
     return obj;
   }
   toDate(seconds) {
-    const PbLong = _mod1187.PbLong;
+    const PbLong = _mod1199.PbLong;
     const fromResult = PbLong.from(seconds.seconds);
     const result = 1000 * fromResult.toNumber();
     const date = new Date(result + Math.ceil(seconds.nanos / 1000000));
@@ -35,14 +35,14 @@ class Timestamp$Type extends MessageType {
   fromDate(getTime) {
     const obj = this.create();
     const time = getTime.getTime();
-    const PbLong = _mod1187.PbLong;
+    const PbLong = _mod1199.PbLong;
     const str = PbLong.from(Math.floor(time / 1000));
     obj.seconds = str.toString();
     obj.nanos = time % 1000 * 1000000;
     return obj;
   }
   internalJsonWrite(seconds) {
-    const PbLong = _mod1187.PbLong;
+    const PbLong = _mod1199.PbLong;
     const fromResult = PbLong.from(seconds.seconds);
     const result = 1000 * fromResult.toNumber();
     if (result >= Date.parse("0001-01-01T00:00:00Z")) {
@@ -87,7 +87,7 @@ class Timestamp$Type extends MessageType {
       const _Error3 = Error;
       const self8 = this;
       const self9 = this;
-      const obj = _mod1187;
+      const obj = _mod1199;
       const error = new Error("Unable to parse Timestamp from JSON " + obj.typeofJsonValue(str) + ".");
       throw error;
     } else {
@@ -117,7 +117,7 @@ class Timestamp$Type extends MessageType {
                 const self3 = this;
                 obj2 = this.create();
               }
-              const PbLong = _mod1187.PbLong;
+              const PbLong = _mod1199.PbLong;
               const str7 = PbLong.from(parsed / 1000);
               obj2.seconds = str7.toString();
               obj2.nanos = 0;
@@ -149,9 +149,9 @@ class Timestamp$Type extends MessageType {
     const obj = { seconds: "0", nanos: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -191,7 +191,7 @@ class Timestamp$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -203,17 +203,17 @@ class Timestamp$Type extends MessageType {
   }
   internalBinaryWrite(seconds, tag, writeUnknownFields) {
     if ("0" !== seconds.seconds) {
-      const tagResult = tag.tag(1, _mod1187.WireType.Varint);
+      const tagResult = tag.tag(1, _mod1199.WireType.Varint);
       tagResult.int64(seconds.seconds);
     }
     if (0 !== seconds.nanos) {
-      const tagResult1 = tag.tag(2, _mod1187.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1199.WireType.Varint);
       tagResult1.int32(seconds.nanos);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, seconds, tag);

@@ -1,30 +1,121 @@
-// Module ID: 14703
-// Function ID: 14704
+// Module ID: 14691
+// Function ID: 14692
 // Name: QuestEmbedPreview
-// Dependencies: [19, 4480, 1372, 1074, 21, 7374, 504, 4821, 10699, 14702, 1115, 8112, 2]
-// Exports: QuestEmbedPreview
+// Dependencies: [19, 4483, 1378, 1086, 21, 558, 576, 7378, 504, 4822, 9781, 1127, 14690, 8109, 2]
 
-// Module 14703 (QuestEmbedPreview)
+// Module 14691 (QuestEmbedPreview)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1074 */;
-import CodedLink from "CodedLink" /* 4821 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 10699 */;
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import CodedLink from "CodedLink" /* 4822 */;
+import RowGeneratorDefault from "RowGenerator" /* 7378 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9781 */;
+import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 14690 */;
 import react from "react" /* 19 */;
-import MessageRecord from "MessageRecord" /* 4480 */;
-import UserStore from "UserStore" /* 1372 */;
+import MessageRecord from "MessageRecord" /* 4483 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const MessageTypes = Constants.MessageTypes;
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/user_settings/quests/native/QuestEmbedPreview.tsx");
-
-export const QuestEmbedPreview = function QuestEmbedPreview(questId) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(questId) {
+  let currentUser;
+  let date;
+  let items1;
+  let tmp8;
+  let tmp9;
+  let tmpResult2;
+  const obj = react2;
+  const cResult = obj.c(9);
+  questId = questId.questId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const self = this;
+    const self2 = this;
+    const obj2 = new RowGeneratorDefault();
+    obj2.setOptions({ renderCodedLinks: true, renderEmbeds: true, renderComponents: true, shouldDisableInteractiveComponents: true });
+    cResult[0] = obj2;
+    let first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function h() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[1] = items;
+    cResult[2] = fn;
+    tmp9 = fn;
+    tmp8 = items;
+  } else {
+    tmp8 = cResult[1];
+    tmp9 = cResult[2];
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
+  let tmp12 = null;
+  if (null != questId) {
+    tmp12 = null;
+    if (null != stateFromStores) {
+      if (cResult[3] === stateFromStores) {
+        let tmp13;
+        if (cResult[4] === questId) {
+          tmp13 = cResult[5];
+        }
+        tmp12 = tmp13;
+      }
+      const _Date = Date;
+      const self3 = this;
+      const self4 = this;
+      const obj3 = { id: "1000000000000000000", type: MessageTypes.DEFAULT, channel_id: "1000000000000000001", author: stateFromStores, content: "", timestamp: date, edited_timestamp: null, tts: false, mention_everyone: false, mentions: [], mention_roles: [], attachments: [], embeds: [], reactions: [], pinned: false, webhook_id: null, codedLinks: items1 };
+      date = new Date();
+      const obj4 = { type: CodedLink.CodedLinkType.QUESTS_EMBED, code: questId, url: tmpResult2.getQuestUrl(questId) };
+      items1 = [obj4];
+      const self5 = this;
+      const self6 = this;
+      tmpResult2 = QuestCopyUtils;
+      const tmp19 = new MessageRecord(obj3);
+      cResult[3] = stateFromStores;
+      cResult[4] = questId;
+      cResult[5] = tmp19;
+      tmp13 = tmp19;
+    }
+  }
+  let tmp21 = null;
+  if (null != tmp12) {
+    let tmp22;
+    let tmp24;
+    const _Symbol = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(intl2.t["habP/M"]);
+      cResult[6] = stringResult;
+      tmp22 = stringResult;
+    } else {
+      tmp22 = cResult[6];
+    }
+    if (cResult[7] !== tmp12) {
+      MobileQuestPreviewContainerDefault;
+      const tmp28 = <tmp27 title={tmp22}>{null}</tmp27>;
+      cResult[7] = tmp12;
+      cResult[8] = tmp28;
+      tmp24 = tmp28;
+    } else {
+      tmp24 = cResult[8];
+    }
+    tmp21 = tmp24;
+  }
+  return tmp21;
+}) : ((questId) => {
   let currentUser;
   questId = questId.questId;
   let tmp2 = questId;
   const tmp3 = dependencyMap;
   const memo = react.useMemo(() => {
-    const obj = new stateFromStores(dependencyMap[5])();
+    const obj = new stateFromStores(dependencyMap[7])();
     obj.setOptions({ renderCodedLinks: true, renderEmbeds: true, renderComponents: true, shouldDisableInteractiveComponents: true });
     return obj;
   }, []);
@@ -57,10 +148,13 @@ export const QuestEmbedPreview = function QuestEmbedPreview(questId) {
   }, items1);
   let tmp6 = null;
   if (null != memo1) {
-    stateFromStores(14702);
-    const intl = tmp2(1115).intl;
+    stateFromStores(14690);
+    const intl = tmp2(1127).intl;
     let obj3 = { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" };
-    tmp6 = <tmp9 title={intl.string(tmp2(1115).t["habP/M"])}>{null}</tmp9>;
+    tmp6 = <tmp9 title={intl.string(tmp2(1127).t["habP/M"])}>{null}</tmp9>;
   }
   return tmp6;
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/quests/native/QuestEmbedPreview.tsx");
+
+export const QuestEmbedPreview = tmp2;

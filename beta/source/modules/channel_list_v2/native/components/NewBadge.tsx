@@ -1,24 +1,25 @@
-// Module ID: 11779
-// Function ID: 11780
+// Module ID: 11672
+// Function ID: 11673
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 4836, 1364, 576, 4685, 7298, 4767, 4832, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 1370, 588, 4687, 558, 576, 7302, 4769, 1127, 4833, 2]
 
-// Module 11779 (NewBadge)
+// Module 11672 (NewBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import useThemeDefault from "useTheme" /* 4767 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7298 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import useThemeDefault from "useTheme" /* 4769 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7302 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const shared = tmp(4685);
+const shared = tmp(4687);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0, arg1) => {
@@ -34,17 +35,63 @@ let closure_5 = createStyles.createStyles((arg0, arg1) => {
     let MOBILE_TOAST_BACKGROUND_DEFAULT;
     const tmp4 = arg0;
     if (!tmp4) {
-      MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(576).colors.BACKGROUND_BRAND;
+      MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(588).colors.BACKGROUND_BRAND;
     }
     obj3.backgroundColor = MOBILE_TOAST_BACKGROUND_DEFAULT;
     obj2.base = obj3;
     return obj2;
   }
-  MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(576).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
+  MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(588).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
 });
-const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
-
-export default function NewBadge() {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let base;
+  let first;
+  let str;
+  let text;
+  const obj = react2;
+  const cResult = obj.c(7);
+  const tmp4 = useIsUsingClientThemeDefault();
+  const tmp5 = useThemeDefault();
+  const tmp6 = closure_5(tmp4, tmp5);
+  ({ base, text } = tmp6);
+  const obj2 = shared;
+  if (obj2.isThemeLight(tmp5)) {
+    str = "text-overlay-light";
+  } else {
+    str = "text-brand";
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl2.t.y2b7CA);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === tmp6.text) {
+    let tmp9;
+    if (cResult[2] === str) {
+      tmp9 = cResult[3];
+    }
+    if (cResult[4] === tmp6.base) {
+      let tmp11;
+      if (cResult[5] === tmp9) {
+        tmp11 = cResult[6];
+      }
+      return tmp11;
+    }
+    const tmp14 = <View style={base}>{tmp9}</View>;
+    cResult[4] = tmp6.base;
+    cResult[5] = tmp9;
+    cResult[6] = tmp14;
+    tmp11 = tmp14;
+  }
+  const tmp10 = jsx(Text_Text.Text, { variant: "text-xxs/bold", style: text, color: str, children: first });
+  cResult[1] = tmp6.text;
+  cResult[2] = str;
+  cResult[3] = tmp10;
+  tmp9 = tmp10;
+}) : (() => {
   let intl;
   let str;
   const tmp2 = useIsUsingClientThemeDefault();
@@ -58,6 +105,9 @@ export default function NewBadge() {
   } else {
     str = "text-brand";
   }
-  intl = tmp7(1115).intl;
+  intl = tmp7(1127).intl;
   return <tmp6 style={tmp4.base}>{null}</tmp6>;
-};
+});
+const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
+
+export default tmp3;

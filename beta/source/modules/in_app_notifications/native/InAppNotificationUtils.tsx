@@ -1,19 +1,21 @@
-// Module ID: 9554
-// Function ID: 9555
+// Module ID: 12221
+// Function ID: 12222
 // Name: InAppNotificationUtils
-// Dependencies: [19, 9555, 1074, 12, 1255, 1365, 1091, 6720, 5016, 2]
-// Exports: extractMetadataFromNotification, generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed, useHasPreviewableMedia
+// Dependencies: [19, 12222, 1086, 12, 1267, 1371, 1103, 558, 576, 6721, 5017, 2]
+// Exports: extractMetadataFromNotification, generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed
 
-// Module 9554 (InAppNotificationUtils)
+// Module 12221 (InAppNotificationUtils)
 import _mod12 from "module_12" /* 12 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import v1 from "v1" /* 1255 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6720 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 9555 */;
+import react2 from "react" /* 576 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import v1 from "v1" /* 1267 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5017 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6721 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 12222 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let count_details;
@@ -23,8 +25,104 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
+const f110819 = (type) => type.type === constants.GIFV;
 const REACTION_MILESTONE_COUNTS = InAppNotificationConstants.REACTION_MILESTONE_COUNTS;
 ({ AnalyticEvents: hasOwnProperty, ChannelTypes: metroRequire, InAppNotificationTypes: metroImportDefault, MessageEmbedTypes: metroImportAll, MessageFlags: c9 } = Constants);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag) => {
+  let tmp3;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] !== hasFlag) {
+    let hasFlagResult = hasFlag.hasFlag(constants4.IS_VOICE_MESSAGE);
+    if (!hasFlagResult) {
+      hasFlagResult = hasFlag.attachments.length > 0;
+    }
+    if (!hasFlagResult) {
+      let everyResult = hasFlag.embeds.length > 0;
+      if (everyResult) {
+        let embeds = hasFlag.embeds;
+        everyResult = embeds.every(f110819);
+      }
+      hasFlagResult = everyResult;
+    }
+    if (!hasFlagResult) {
+      hasFlagResult = hasFlag.stickerItems.length > 0;
+    }
+    if (!hasFlagResult) {
+      let someResult = isForwardMessageDefault(hasFlag);
+      if (someResult) {
+        const messageSnapshots = hasFlag.messageSnapshots;
+        someResult = messageSnapshots.some((message) => {
+          message = message.message;
+          let hasFlagResult = message.hasFlag(constants.IS_VOICE_MESSAGE) || message.attachments.length > 0;
+          if (!hasFlagResult) {
+            let everyResult = message.embeds.length > 0;
+            if (everyResult) {
+              const embeds = message.embeds;
+              everyResult = embeds.every(f110819);
+            }
+            hasFlagResult = everyResult;
+          }
+          if (!hasFlagResult) {
+            hasFlagResult = message.stickerItems.length > 0;
+          }
+          return hasFlagResult;
+        });
+      }
+      hasFlagResult = someResult;
+    }
+    cResult[0] = hasFlag;
+    cResult[1] = hasFlagResult;
+    tmp3 = hasFlagResult;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return tmp3;
+}) : ((arg0) => {
+  let closure_0 = arg0;
+  const items = [arg0];
+  return react.useMemo(() => {
+    let hasFlagResult = closure_0.hasFlag(constants.IS_VOICE_MESSAGE);
+    if (!hasFlagResult) {
+      hasFlagResult = tmp.attachments.length > 0;
+    }
+    if (!hasFlagResult) {
+      let everyResult = tmp.embeds.length > 0;
+      if (everyResult) {
+        let embeds = tmp.embeds;
+        everyResult = embeds.every(f110819);
+      }
+      hasFlagResult = everyResult;
+    }
+    if (!hasFlagResult) {
+      hasFlagResult = tmp.stickerItems.length > 0;
+    }
+    if (!hasFlagResult) {
+      let someResult = isForwardMessageDefault(tmp);
+      if (someResult) {
+        const messageSnapshots = tmp.messageSnapshots;
+        someResult = messageSnapshots.some((message) => {
+          message = message.message;
+          let hasFlagResult = message.hasFlag(constants.IS_VOICE_MESSAGE) || message.attachments.length > 0;
+          if (!hasFlagResult) {
+            let everyResult = message.embeds.length > 0;
+            if (everyResult) {
+              const embeds = message.embeds;
+              everyResult = embeds.every(f110819);
+            }
+            hasFlagResult = everyResult;
+          }
+          if (!hasFlagResult) {
+            hasFlagResult = message.stickerItems.length > 0;
+          }
+          return hasFlagResult;
+        });
+      }
+      hasFlagResult = someResult;
+    }
+    return hasFlagResult;
+  }, items);
+});
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationUtils.tsx");
 
 export const isReactionMilestoneNotification = function isReactionMilestoneNotification(reactions, type) {
@@ -92,51 +190,7 @@ export const getNotificationDuration = function getNotificationDuration(ALERT) {
   }
   return 5 * DurationsDefault.Millis.SECOND;
 };
-export const useHasPreviewableMedia = function useHasPreviewableMedia(message) {
-  const items = [message];
-  return react.useMemo(() => {
-    const f88974 = (type) => type.type === constants.GIFV;
-    let hasFlagResult = message.hasFlag(constants.IS_VOICE_MESSAGE);
-    if (!hasFlagResult) {
-      hasFlagResult = tmp.attachments.length > 0;
-    }
-    if (!hasFlagResult) {
-      let everyResult = tmp.embeds.length > 0;
-      if (everyResult) {
-        let embeds = tmp.embeds;
-        everyResult = embeds.every(f88974);
-      }
-      hasFlagResult = everyResult;
-    }
-    if (!hasFlagResult) {
-      hasFlagResult = tmp.stickerItems.length > 0;
-    }
-    if (!hasFlagResult) {
-      let someResult = isForwardMessageDefault(tmp);
-      if (someResult) {
-        const messageSnapshots = tmp.messageSnapshots;
-        someResult = messageSnapshots.some((message) => {
-          message = message.message;
-          let hasFlagResult = message.hasFlag(constants.IS_VOICE_MESSAGE) || message.attachments.length > 0;
-          if (!hasFlagResult) {
-            let everyResult = message.embeds.length > 0;
-            if (everyResult) {
-              const embeds = message.embeds;
-              everyResult = embeds.every(f88974);
-            }
-            hasFlagResult = everyResult;
-          }
-          if (!hasFlagResult) {
-            hasFlagResult = message.stickerItems.length > 0;
-          }
-          return hasFlagResult;
-        });
-      }
-      hasFlagResult = someResult;
-    }
-    return hasFlagResult;
-  }, items);
-};
+export const useHasPreviewableMedia = tmp3;
 export const extractMetadataFromNotification = function extractMetadataFromNotification(notification) {
   let id6;
   const type = notification.type;

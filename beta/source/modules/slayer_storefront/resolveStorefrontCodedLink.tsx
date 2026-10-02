@@ -1,13 +1,13 @@
-// Module ID: 17190
-// Function ID: 17191
+// Module ID: 17192
+// Function ID: 17193
 // Name: resolveStorefrontCodedLink
-// Dependencies: [32, 5, 5822, 17183, 11026, 4821, 573, 17191, 10263, 2]
+// Dependencies: [32, 5, 5823, 17185, 10894, 4822, 585, 17193, 10301, 2]
 // Exports: default
 
-// Module 17190 (resolveStorefrontCodedLink)
+// Module 17192 (resolveStorefrontCodedLink)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SKUStore from "SKUStore" /* 5822 */;
+import SKUStore from "SKUStore" /* 5823 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, closure_2;
@@ -19,10 +19,10 @@ export default function resolveStorefrontCodedLink(arg0, code) {
   let obj3;
   const tmp = obj3;
   const tmp2 = dependencyMap;
-  let obj = obj3(11026);
+  let obj = obj3(10894);
   const result = obj.parseStorefrontCodedLink(code);
   if (null != result) {
-    if (arg0 === tmp(4821).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+    if (arg0 === tmp(4822).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
       let obj2 = { type: "application", applicationId: result.scopeId };
       obj3 = obj2;
     } else {
@@ -32,11 +32,11 @@ export default function resolveStorefrontCodedLink(arg0, code) {
       let skuId = _slicedToArray(result.skuIds, 1)[0];
       const tmp4 = null != SKUStore.get(skuId) || obj9.isFetching(skuId) || obj9.didFetchingSkuFail(skuId);
       if (!tmp4) {
-        let obj4 = skuId(573);
+        let obj4 = skuId(585);
         let obj5 = { type: "STORE_LISTINGS_FETCH_START", skuId };
         obj4.dispatch(obj5);
         const items = [skuId];
-        const tmpResult = tmp(11026);
+        const tmpResult = tmp(10894);
         const storefrontCodedLink = tmpResult.makeStorefrontCodedLink(items, result.scopeId);
         const tmp8 = _asyncToGenerator;
         skuId = _asyncToGenerator(async (arg0, value) => {
@@ -52,7 +52,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -100,7 +100,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                   return obj;
                 }
                 obj3 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp8) {
               obj3 = 3;
@@ -111,7 +111,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         let obj7 = set;
         if (!set.has(storefrontCodedLink)) {
           obj7.add(storefrontCodedLink);
-          const tmpResult2 = tmp(17183);
+          const tmpResult2 = tmp(17185);
           const result1 = tmpResult2.queueMessageLinkFetch(tmp8(function*(arg0, value) {
             if (c4 === 2) {
               c4 = 3;
@@ -123,7 +123,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               }
             } else {
               let c3;
@@ -162,7 +162,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                   c3 = 0;
                   set.delete(closure_128_0);
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp20) {
                 closure_2 = tmp20;

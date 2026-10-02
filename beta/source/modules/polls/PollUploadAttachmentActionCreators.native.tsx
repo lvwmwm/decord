@@ -1,15 +1,15 @@
-// Module ID: 11686
-// Function ID: 11687
+// Module ID: 11578
+// Function ID: 11579
 // Name: PollUploadAttachmentActionCreators
-// Dependencies: [5, 5200, 7248, 11687, 7650, 5450, 5440, 8608, 2]
+// Dependencies: [5, 5201, 7252, 11579, 7654, 5451, 5441, 8605, 2]
 // Exports: handlePollGifAttachmentAdd, handlePollMediaAttachmentAdd, removeAllPollUploadAttachments, removePollUploadAttachment
 
-// Module 11686 (PollUploadAttachmentActionCreators)
-import DraftStore from "DraftStore" /* 5200 */;
-import PollsConstants from "PollsConstants" /* 7248 */;
-import FileManagerUtils from "FileManagerUtils" /* 7650 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8608 */;
-import PollAttachmentUtils from "PollAttachmentUtils" /* 11687 */;
+// Module 11578 (PollUploadAttachmentActionCreators)
+import DraftStore from "DraftStore" /* 5201 */;
+import PollsConstants from "PollsConstants" /* 7252 */;
+import FileManagerUtils from "FileManagerUtils" /* 7654 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8605 */;
+import PollAttachmentUtils from "PollAttachmentUtils" /* 11579 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj = function _handlePollGifAttachmentAdd() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp36;
@@ -69,7 +69,7 @@ let obj = function _handlePollGifAttachmentAdd() {
           } else if (1 === file) {
             c6 = 0;
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } else if (2 === file) {
             if (arg0 === 1) {
               c8 = 3;
@@ -83,7 +83,7 @@ let obj = function _handlePollGifAttachmentAdd() {
               if (null == closure_3) {
                 c6 = 0;
                 c8 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               } else {
                 const obj9 = closure_132_0(closure_132_2[3]);
                 filePathForGif = obj9.getFilePathForGif(filename);
@@ -107,7 +107,7 @@ let obj = function _handlePollGifAttachmentAdd() {
               if (null == tmp36) {
                 c6 = 0;
                 c8 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               } else {
                 const obj6 = closure_132_0(closure_132_2[5]);
                 writeFileResult = obj6.getImageDimensionsIfMissing(tmp36);
@@ -173,7 +173,7 @@ obj = function _removePollUploadAttachment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -213,7 +213,7 @@ obj = function _removePollUploadAttachment() {
             c6 = 0;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp5) {
         let closure_5 = tmp5;
@@ -243,7 +243,7 @@ obj = function _removeAllPollUploadAttachments() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -282,7 +282,7 @@ obj = function _removeAllPollUploadAttachments() {
             c4 = 0;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp12) {
         let closure_3 = tmp12;

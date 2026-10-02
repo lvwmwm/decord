@@ -1,17 +1,52 @@
-// Module ID: 15701
-// Function ID: 15702
+// Module ID: 15698
+// Function ID: 15699
 // Name: useHappeningNowScrollBehavior
-// Dependencies: [32, 19, 2]
-// Exports: default, useHappeningNowScrollSnapping
+// Dependencies: [32, 19, 558, 576, 2]
+// Exports: useHappeningNowScrollSnapping
 
-// Module 15701 (useHappeningNowScrollBehavior)
+// Module 15698 (useHappeningNowScrollBehavior)
+import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useHappeningNowScrollBehavior.tsx");
-
-export default function useHappeningNowScrollBehavior(arg0, arg1) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_129_2;
+  let tmp3;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  const obj = react2;
+  const cResult = obj.c(6);
+  [tmp3, closure_129_2] = _slicedToArray(react.useState(false), 2);
+  const tmp2 = _slicedToArray(react.useState(false), 2);
+  if (cResult[0] === arg0) {
+    let tmp4;
+    if (cResult[1] === arg1) {
+      tmp4 = cResult[2];
+    }
+    if (cResult[3] === tmp3) {
+      let tmp5;
+      if (cResult[4] === tmp4) {
+        tmp5 = cResult[5];
+      }
+      return tmp5;
+    }
+    const items = [tmp4, tmp3];
+    cResult[3] = tmp3;
+    cResult[4] = tmp4;
+    cResult[5] = items;
+    tmp5 = items;
+  }
+  const fn = function s(nativeEvent) {
+    closure_1_2(nativeEvent.nativeEvent.contentOffset.x < closure_0);
+    closure_1(nativeEvent.nativeEvent.contentOffset.x, nativeEvent.nativeEvent.layoutMeasurement.width);
+  };
+  cResult[0] = arg0;
+  cResult[1] = arg1;
+  cResult[2] = fn;
+  tmp4 = fn;
+}) : ((arg0, arg1) => {
   let closure_2;
   let first;
   let closure_0 = arg0;
@@ -26,7 +61,10 @@ export default function useHappeningNowScrollBehavior(arg0, arg1) {
     first
   ];
   return items1;
-};
+});
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useHappeningNowScrollBehavior.tsx");
+
+export default tmp2;
 export const useHappeningNowScrollSnapping = function useHappeningNowScrollSnapping(listRef) {
   const current = listRef.current;
   let num;

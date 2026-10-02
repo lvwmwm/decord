@@ -1,17 +1,17 @@
-// Module ID: 6873
-// Function ID: 6874
+// Module ID: 6877
+// Function ID: 6878
 // Name: ReferralTrialActionCreators
-// Dependencies: [5, 6874, 1386, 2099, 1074, 1271, 573, 1231, 6876, 2]
+// Dependencies: [5, 6878, 1392, 2102, 1086, 1283, 585, 1243, 6880, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, resolveReferralTrialOffer
 
-// Module 6873 (ReferralTrialActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 6877 (ReferralTrialActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 6874 */;
-import UserRecord from "UserRecord" /* 1386 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import Constants from "Constants" /* 1074 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 6878 */;
+import UserRecord from "UserRecord" /* 1392 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let limit, userTrialOffer, userTrialOffers;
@@ -76,7 +76,7 @@ obj = function _createReferralTrials() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {
@@ -187,7 +187,7 @@ obj = function _createReferralTrial() {
         obj7.sendClydeError(currentlySelectedChannelId, tmp40.body.code);
       }
     }
-    closure_0 = await "HermesInternal";
+    closure_0 = await "IconComponent";
     let fromServer = null;
     if (null != closure_0.body) {
       fromServer = closure_130_4.createFromServer(closure_0.body);
@@ -218,7 +218,7 @@ obj = function _resolveReferralTrialOffer() {
       const obj7 = { type: "BILLING_REFERRAL_RESOLVE_FAIL", userTrialOfferId };
       const obj5 = closure_131_1(closure_131_2[6]);
       obj5.dispatch(obj7);
-      userTrialOffer = await "HermesInternal";
+      userTrialOffer = await "IconComponent";
       let fromServer = null;
       if (null != userTrialOffer.body) {
         fromServer = closure_131_4.createFromServer(userTrialOffer.body);

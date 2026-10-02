@@ -1,17 +1,17 @@
-// Module ID: 7595
-// Function ID: 7596
+// Module ID: 7599
+// Function ID: 7600
 // Name: ApplicationAssetUtils
-// Dependencies: [32, 5, 7596, 1074, 38, 3, 1271, 573, 1432, 2]
+// Dependencies: [32, 5, 7600, 1086, 38, 3, 1283, 585, 1438, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 7595 (ApplicationAssetUtils)
+// Module 7599 (ApplicationAssetUtils)
 import _modDef38 from "module_38" /* 38 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1432 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1438 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 7596 */;
-import Constants from "Constants" /* 1074 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 7600 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c9, hasOwnProperty, length;
@@ -20,7 +20,7 @@ let PlatformTypes;
 let metroRequire;
 let tmp;
 const LoggerDefault = tmp(3);
-const f84697 = (item) => {
+const f94513 = (item) => {
   let startsWithResult;
   if (item != null) {
     startsWithResult = item.startsWith("http:");
@@ -104,7 +104,7 @@ obj = function _resolveExternalAssets() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -175,7 +175,7 @@ obj = function _resolveExternalAssets() {
           }
         }
         c9 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     }
   });
@@ -183,7 +183,7 @@ obj = function _resolveExternalAssets() {
 };
 function updateUrlAssetIds(arr, arg1) {
   let num = 0;
-  if (arr.filter(f84697).length > 0) {
+  if (arr.filter(f94513).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
@@ -339,7 +339,7 @@ obj = function _fetchAssetIds() {
       if (closure_2 === undefined) {
         num13 = 1;
       }
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -442,18 +442,18 @@ export const getAssetFromImageURL = function getAssetFromImageURL(SPOTIFY, url) 
   }
   return combined;
 };
-export const getAssetImage = function getAssetImage(application_id, media_assets_large_image, items, png) {
+export const getAssetImage = function getAssetImage(application_id, large_image, items, format) {
   let tmp22;
   let tmp23;
-  let str = png;
-  if (png === undefined) {
+  let str = format;
+  if (format === undefined) {
     str = "png";
   }
-  if (null != media_assets_large_image) {
-    if (media_assets_large_image.includes(":")) {
+  if (null != large_image) {
+    if (large_image.includes(":")) {
       let deserializeResult1;
-      [tmp22, tmp23] = media_assets_large_image.split(":");
-      _slicedToArray(media_assets_large_image.split(":"), 2);
+      [tmp22, tmp23] = large_image.split(":");
+      _slicedToArray(large_image.split(":"), 2);
       if (tmp22 === PlatformTypes.TWITCH) {
         if (null != items) {
           let deserializeResult;
@@ -479,7 +479,7 @@ export const getAssetImage = function getAssetImage(application_id, media_assets
     }
   }
   if (null != application_id) {
-    if (null != media_assets_large_image) {
+    if (null != large_image) {
       let combined;
       const _Array = Array;
       let applyResult = items;
@@ -501,11 +501,11 @@ export const getAssetImage = function getAssetImage(application_id, media_assets
         const _location = location;
         const _window2 = window;
         const _HermesInternal2 = HermesInternal;
-        combined = "" + location.protocol + "//" + window.GLOBAL_ENV.CDN_HOST + "/app-assets/" + application_id + "/" + media_assets_large_image + "." + str + str4;
+        combined = "" + location.protocol + "//" + window.GLOBAL_ENV.CDN_HOST + "/app-assets/" + application_id + "/" + large_image + "." + str + str4;
       } else {
         const _HermesInternal = HermesInternal;
         obj = HTTPUtils;
-        combined = "" + obj.getAPIBaseURL() + "/applications/" + application_id + "/app-assets/" + media_assets_large_image + "." + str + str4;
+        combined = "" + obj.getAPIBaseURL() + "/applications/" + application_id + "/app-assets/" + large_image + "." + str + str4;
       }
       return combined;
     }
@@ -516,7 +516,7 @@ export { fetchAssetIds };
 export const getAssetIds = function getAssetIds(id, arr) {
   const items = [];
   let num = 0;
-  if (arr.filter(f84697).length > 0) {
+  if (arr.filter(f94513).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;

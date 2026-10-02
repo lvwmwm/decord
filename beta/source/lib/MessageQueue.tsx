@@ -1,22 +1,22 @@
-// Module ID: 7253
-// Function ID: 7254
+// Module ID: 7257
+// Function ID: 7258
 // Name: MessageQueue
-// Dependencies: [109, 4835, 502, 4885, 1074, 4829, 1091, 7254, 3, 5016, 7255, 6879, 1271, 1979, 38, 5439, 5441, 5474, 5446, 2]
+// Dependencies: [109, 4836, 502, 4886, 1086, 4830, 1103, 7258, 3, 5017, 7259, 6883, 1283, 1985, 38, 5440, 5442, 5475, 5447, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
-// Module 7253 (MessageQueue)
+// Module 7257 (MessageQueue)
 import LoggerDefault from "Logger" /* 3 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import MessageConstants from "MessageConstants" /* 4829 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import NetStats from "NetStats" /* 6879 */;
-import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 7255 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import MessageConstants from "MessageConstants" /* 4830 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+import NetStats from "NetStats" /* 6883 */;
+import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 7259 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import DevSettingsStore from "DevSettingsStore" /* 4835 */;
+import DevSettingsStore from "DevSettingsStore" /* 4836 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NetworkStore from "NetworkStore" /* 4885 */;
-import Constants from "Constants" /* 1074 */;
-import Queue from "Queue" /* 7254 */;
+import NetworkStore from "NetworkStore" /* 4886 */;
+import Constants from "Constants" /* 1086 */;
+import Queue from "Queue" /* 7258 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ let tmp;
 let tmp2;
 let tmp5;
 let unpackModuleId;
-const HTTPUtils = tmp5(1271);
+const HTTPUtils = tmp5(1283);
 function handleEdit(messageId, fn) {
   let channelId;
   let isCrossposted;

@@ -1,15 +1,15 @@
-// Module ID: 1101
-// Function ID: 1102
+// Module ID: 1113
+// Function ID: 1114
 // Name: router_utils
-// Dependencies: [1074, 3, 1102, 1110, 1113, 2]
+// Dependencies: [1086, 3, 1114, 1122, 1125, 2]
 // Exports: back, currentRouteHasBackNavigation, forward, getFingerprintLocation, getHistory, getLastRouteChangeSource, getLastRouteChangeSourceLocationStack, hasNavigated, isValidFingerprintRoute, replaceWith, shouldNavigate, transitionToGuild
 
-// Module 1101 (router_utils)
+// Module 1113 (router_utils)
 import LoggerDefault from "Logger" /* 3 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import RoutingSources from "RoutingSources" /* 1113 */;
-import Constants from "Constants" /* 1074 */;
-import module_1102_mod from "module_1102" /* 1102 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
+import RoutingSources from "RoutingSources" /* 1125 */;
+import Constants from "Constants" /* 1086 */;
+import module_1114_mod from "module_1114" /* 1114 */;
 import size from "module_2" /* 2 */;
 
 let c3, sourceLocationStack;
@@ -17,13 +17,13 @@ let c3, sourceLocationStack;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-function transitionTo(CHANNELResult, source) {
-  let closure_0 = CHANNELResult;
-  let flag = !(typeof CHANNELResult !== "string" || !items.some((item) => closure_0.startsWith(item)));
-  const tmp = typeof CHANNELResult !== "string" || !items.some((item) => closure_0.startsWith(item));
+function transitionTo(Routes, source) {
+  let closure_0 = Routes;
+  let flag = !(typeof Routes !== "string" || !items.some((item) => closure_0.startsWith(item)));
+  const tmp = typeof Routes !== "string" || !items.some((item) => closure_0.startsWith(item));
   if (flag) {
     const _HermesInternal = HermesInternal;
-    logger.log("" + "assign" + " - route to external path " + CHANNELResult);
+    logger.log("" + "assign" + " - route to external path " + Routes);
     const _window = window;
     const _Event = Event;
     const self = this;
@@ -32,7 +32,7 @@ function transitionTo(CHANNELResult, source) {
     dispatchEvent(event);
     const _window2 = window;
     const _location = window.location;
-    _location.assign(CHANNELResult);
+    _location.assign(Routes);
     flag = true;
   }
   if (!flag) {
@@ -41,12 +41,12 @@ function transitionTo(CHANNELResult, source) {
     const _HermesInternal2 = HermesInternal;
     const self3 = this;
     const self4 = this;
-    const uRL = new URL(CHANNELResult, "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT);
+    const uRL = new URL(Routes, "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT);
     const obj = { pathname: null, search: null, hash: null };
     ({ pathname: obj.pathname, search: obj.search, hash: obj.hash } = uRL);
     const merged = Object.assign(source);
     const _HermesInternal3 = HermesInternal;
-    logger.log("transitionTo - Transitioning to " + CHANNELResult);
+    logger.log("transitionTo - Transitioning to " + Routes);
     source = undefined;
     if (source != null) {
       source = source.source;
@@ -55,7 +55,7 @@ function transitionTo(CHANNELResult, source) {
     if (source != null) {
       sourceLocationStack = source.sourceLocationStack;
     }
-    const _location2 = module_1102.location;
+    const _location2 = module_1114.location;
     let tmp22 = _location2.pathname === obj.pathname;
     if (tmp22) {
       const search2 = obj.search;
@@ -98,9 +98,9 @@ function transitionTo(CHANNELResult, source) {
     if (tmp22) {
       const replaced = str7.replace(obj);
     } else if (null == source) {
-      module_1102.push(CHANNELResult);
+      module_1114.push(Routes);
     } else {
-      module_1102.push(obj);
+      module_1114.push(obj);
     }
     c3 = source;
   }
@@ -110,9 +110,9 @@ const RelativeMarketingURLs = Constants.RelativeMarketingURLs;
 const logger = new LoggerDefault("Routing/Utils");
 const items = [RelativeMarketingURLs.DEVELOPER_PORTAL];
 const tmp3 = new LoggerDefault("Routing/Utils");
-let module_1102 = module_1102_mod;
-module_1102 = module_1102.createMemoryHistory();
-let closure_10 = module_1102.listen((arg0, arg1) => {
+let module_1114 = module_1114_mod;
+module_1114 = module_1114.createMemoryHistory();
+let closure_10 = module_1114.listen((arg0, arg1) => {
   if ("REPLACE" !== arg1) {
     closure_10();
   }
@@ -159,15 +159,15 @@ export const replaceWith = function replaceWith(ME, state, arg2) {
     const _HermesInternal2 = HermesInternal;
     logger.log("Replacing route with " + ME);
     if (typeof ME === "string") {
-      const replaced1 = module_1102.replace(ME, state);
+      const replaced1 = module_1114.replace(ME, state);
     } else {
-      const replaced2 = module_1102.replace(ME);
+      const replaced2 = module_1114.replace(ME);
     }
     c3 = arg2;
   }
 };
 export function getHistory() {
-  return module_1102;
+  return module_1114;
 }
 export function getLastRouteChangeSource() {
   return c3;
@@ -181,7 +181,7 @@ export const isValidFingerprintRoute = function isValidFingerprintRoute(arg0) {
 export const getFingerprintLocation = function getFingerprintLocation(arg0) {
   let ACCOUNT_REVERT = arg0;
   if (null == arg0) {
-    let str = module_1102.location.pathname;
+    let str = module_1114.location.pathname;
     if (str == null) {
       str = "";
     }
@@ -226,7 +226,7 @@ export const back = function back() {
   const tmp2 = !ComponentDispatch.hasSubscribers(metroImportDefault.MODAL_CLOSE);
   if (tmp2) {
     c3 = null;
-    module_1102.goBack();
+    module_1114.goBack();
   }
 };
 export const forward = function forward() {
@@ -234,6 +234,6 @@ export const forward = function forward() {
   const tmp2 = !ComponentDispatch.hasSubscribers(metroImportDefault.MODAL_CLOSE);
   if (tmp2) {
     c3 = null;
-    module_1102.goForward();
+    module_1114.goForward();
   }
 };

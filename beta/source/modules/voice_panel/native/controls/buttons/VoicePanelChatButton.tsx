@@ -1,18 +1,18 @@
-// Module ID: 17016
-// Function ID: 17017
+// Module ID: 16975
+// Function ID: 16976
 // Name: VoicePanelChatButton
-// Dependencies: [19, 21, 4836, 576, 11754, 17008, 16954, 16995, 17009, 1115, 17017, 5901, 5385, 2]
-// Exports: default
+// Dependencies: [19, 21, 4837, 588, 558, 576, 11647, 16967, 16909, 16954, 1127, 16976, 5386, 5898, 16968, 2]
 
-// Module 17016 (VoicePanelChatButton)
-import nativeDefault from "native" /* 576 */;
-import ChatIcon from "ChatIcon" /* 5385 */;
-import NativeViewDefault from "NativeView" /* 5901 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 16995 */;
-import CircleWithCutoutDefault from "CircleWithCutout" /* 17017 */;
+// Module 16975 (VoicePanelChatButton)
+import nativeDefault from "native" /* 588 */;
+import ChatIcon from "ChatIcon" /* 5386 */;
+import NativeViewDefault from "NativeView" /* 5898 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 16954 */;
+import CircleWithCutoutDefault from "CircleWithCutout" /* 16976 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -28,10 +28,141 @@ size = { position: "absolute", zIndex: 1, width: 10, height: 10, borderRadius: n
 createStyles = createStyles.createStyles;
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION };
 let closure_7 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelChatButton.tsx");
-
-export default function ChatButton(props) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((wrapperSpecs) => {
+  let connected;
+  let items;
+  let items1;
+  let openTab;
+  let props;
+  let obj = openTab(576);
+  const cResult = obj.c(25);
+  ({ props, openTab } = wrapperSpecs);
+  wrapperSpecs = wrapperSpecs.wrapperSpecs;
+  const context = react.useContext(connected(11647));
+  connected = context.connected;
+  const channelId = context.channelId;
+  const tmp6 = closure_7();
+  const obj2 = openTab(16967);
+  const voicePanelButtonStyles = obj2.useVoicePanelButtonStyles(wrapperSpecs);
+  const tmp8 = connected(16909)(channelId);
+  const backgroundColor = voicePanelButtonStyles.iconBg.backgroundColor;
+  if (cResult[0] === connected) {
+    let tmp9;
+    let tmp11;
+    if (cResult[1] === openTab) {
+      tmp9 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(openTab(1127).t["5KxXrK"]);
+      cResult[3] = stringResult;
+      tmp11 = stringResult;
+    } else {
+      tmp11 = cResult[3];
+    }
+    const result = props.width / 2;
+    if (cResult[4] === backgroundColor) {
+      if (cResult[5] === result) {
+        let tmp16;
+        let tmp19;
+        if (cResult[6] === null != tmp8) {
+          tmp16 = cResult[7];
+        }
+        if (cResult[8] !== voicePanelButtonStyles.iconFill.color) {
+          const obj3 = { color: voicePanelButtonStyles.iconFill.color };
+          const tmp21 = closure_4(openTab(5386).ChatIcon, obj3);
+          cResult[8] = voicePanelButtonStyles.iconFill.color;
+          cResult[9] = tmp21;
+          tmp19 = tmp21;
+        } else {
+          tmp19 = cResult[9];
+        }
+        if (cResult[10] === tmp6.iconContainer) {
+          let tmp22;
+          if (cResult[11] === tmp19) {
+            tmp22 = cResult[12];
+          }
+          if (cResult[13] === tmp8) {
+            if (cResult[14] === tmp6.badge) {
+              let tmp25;
+              if (cResult[15] === tmp6.notificationBadge) {
+                tmp25 = cResult[16];
+              }
+              if (cResult[17] === tmp16) {
+                if (cResult[18] === tmp22) {
+                  let tmp28;
+                  if (cResult[19] === tmp25) {
+                    tmp28 = cResult[20];
+                  }
+                  if (cResult[21] === tmp9) {
+                    if (cResult[22] === props) {
+                      let tmp32;
+                      if (cResult[23] === tmp28) {
+                        tmp32 = cResult[24];
+                      }
+                      return tmp32;
+                    }
+                  }
+                  const element = { onPress: tmp9, props, accessibilityLabel: tmp11, children: tmp28 };
+                  const tmp34 = closure_4(connected(16968), element);
+                  cResult[21] = tmp9;
+                  cResult[22] = props;
+                  cResult[23] = tmp28;
+                  cResult[24] = tmp34;
+                  tmp32 = tmp34;
+                }
+              }
+              const obj4 = { children: items };
+              items = [tmp16, tmp22, tmp25];
+              const tmp31 = closure_6(closure_5, obj4);
+              cResult[17] = tmp16;
+              cResult[18] = tmp22;
+              cResult[19] = tmp25;
+              cResult[20] = tmp31;
+              tmp28 = tmp31;
+            }
+          }
+          let tmp26 = null != tmp8;
+          if (tmp26) {
+            const obj5 = { style: items1 };
+            items1 = [, ];
+            ({ badge: arr[0], notificationBadge: arr[1] } = tmp6);
+            tmp26 = closure_4(tmp4(5898), obj5);
+          }
+          cResult[13] = tmp8;
+          cResult[14] = tmp6.badge;
+          cResult[15] = tmp6.notificationBadge;
+          cResult[16] = tmp26;
+          tmp25 = tmp26;
+        }
+        const obj6 = { style: tmp6.iconContainer, children: tmp19 };
+        const tmp24 = closure_4(connected(5898), obj6);
+        cResult[10] = tmp6.iconContainer;
+        cResult[11] = tmp19;
+        cResult[12] = tmp24;
+        tmp22 = tmp24;
+      }
+    }
+    const obj7 = { fill: backgroundColor, circleRadius: result, cutoutRadius: 8, enableCutout: null != tmp8, cutoutPositionInDegrees: 45, alignBadgeEdgeWithCircleEdge: true, badgeRadius: 5, scaleToPixelDensity: true };
+    const tmp18 = closure_4(connected(16976), obj7);
+    cResult[4] = backgroundColor;
+    cResult[5] = result;
+    cResult[6] = null != tmp8;
+    cResult[7] = tmp18;
+    tmp16 = tmp18;
+  }
+  const fn = function u() {
+    const value = connected.get();
+    const VoicePanelTabAnalyticsSources = trackVoicePanelTabOpened.VoicePanelTabAnalyticsSources;
+    const obj = { tab: "chat", source: value ? VoicePanelTabAnalyticsSources.CONNECTED_BUTTON : VoicePanelTabAnalyticsSources.PREJOIN_BUTTON };
+    openTab(obj);
+  };
+  cResult[0] = connected;
+  cResult[1] = openTab;
+  cResult[2] = fn;
+  tmp9 = fn;
+}) : ((props) => {
   let iconContainer;
   let intl;
   let items1;
@@ -40,14 +171,14 @@ export default function ChatButton(props) {
   let connected;
   react = undefined;
   const wrapperSpecs = props.wrapperSpecs;
-  const context = react.useContext(openTab(connected[4]));
+  const context = react.useContext(openTab(connected[6]));
   connected = context.connected;
   const channelId = context.channelId;
   let tmp2 = closure_7();
   react = tmp2;
-  let obj = props(connected[5]);
+  let obj = props(connected[7]);
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
-  let tmp4 = openTab(connected[6])(channelId);
+  let tmp4 = openTab(connected[8])(channelId);
   let closure_5 = tmp4;
   const backgroundColor = voicePanelButtonStyles.iconBg.backgroundColor;
   const items = [openTab, connected];
@@ -60,7 +191,7 @@ export default function ChatButton(props) {
   const element = {
     onPress: callback,
     props,
-    accessibilityLabel: intl.string(props(connected[9]).t["5KxXrK"]),
+    accessibilityLabel: intl.string(props(connected[10]).t["5KxXrK"]),
     children: react.useMemo(() => {
       let items1;
       let obj3;
@@ -86,10 +217,14 @@ export default function ChatButton(props) {
       return tmp(tmp2, { children });
     }, items1)
   };
-  let tmp6 = openTab(connected[8]);
-  intl = props(connected[9]).intl;
+  let tmp6 = openTab(connected[14]);
+  intl = props(connected[10]).intl;
   items1 = [backgroundColor, props.width, tmp4, , , , ];
   ({ iconContainer: arr2[3], badge: arr2[4], notificationBadge: arr2[5] } = tmp2);
   items1[6] = voicePanelButtonStyles.iconFill.color;
   return voicePanelButtonStyles(tmp6, element);
-};
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelChatButton.tsx");
+
+export default tmp4;

@@ -1,12 +1,12 @@
-// Module ID: 7256
-// Function ID: 7257
+// Module ID: 7260
+// Function ID: 7261
 // Name: uploadMessageAttachments
-// Dependencies: [5, 7257, 7258, 5058, 573, 2]
+// Dependencies: [5, 7261, 7262, 5059, 585, 2]
 // Exports: uploadMessageAttachments
 
-// Module 7256 (uploadMessageAttachments)
+// Module 7260 (uploadMessageAttachments)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UploadStore from "UploadStore" /* 7257 */;
+import UploadStore from "UploadStore" /* 7261 */;
 import size from "module_2" /* 2 */;
 
 let c5, id;
@@ -29,7 +29,7 @@ let obj = function _uploadMessageAttachments() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -58,7 +58,7 @@ let obj = function _uploadMessageAttachments() {
             let message;
             c4 = 1;
             c5 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -70,7 +70,7 @@ let obj = function _uploadMessageAttachments() {
             return obj4;
           } else if (closure_131_5.has(c2)) {
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } else {
             const self = this;
             const self2 = this;

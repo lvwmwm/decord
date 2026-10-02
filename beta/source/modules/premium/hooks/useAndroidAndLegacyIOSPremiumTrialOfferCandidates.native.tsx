@@ -1,15 +1,15 @@
-// Module ID: 6868
-// Function ID: 6869
+// Module ID: 6872
+// Function ID: 6873
 // Name: useAndroidAndLegacyIOSPremiumTrialOfferCandidates
-// Dependencies: [6658, 1374, 6869, 6661, 563, 2]
-// Exports: useAndroidAndLegacyIOSPremiumTrialOfferCandidates
+// Dependencies: [6659, 1380, 558, 6873, 6662, 576, 573, 2]
 
-// Module 6868 (useAndroidAndLegacyIOSPremiumTrialOfferCandidates)
-import useStateFromStores from "useStateFromStores" /* 563 */;
-import ProductIds from "ProductIds" /* 6661 */;
-import useTrialOffer from "useTrialOffer" /* 6869 */;
-import IAPStore from "IAPStore" /* 6658 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+// Module 6872 (useAndroidAndLegacyIOSPremiumTrialOfferCandidates)
+import react from "react" /* 576 */;
+import ProductIds from "ProductIds" /* 6662 */;
+import useTrialOffer from "useTrialOffer" /* 6873 */;
+import IAPStore from "IAPStore" /* 6659 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -18,61 +18,105 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
+let tmp;
+const useStateFromStores = tmp(573);
 ({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: c3, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: closure_4, PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID: hasOwnProperty, PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID: metroRequire, PREMIUM_TIER_2_REFERRAL_TRIAL_ID: metroImportDefault, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID: metroImportAll } = PremiumConstants);
-const result = size.fileFinishedImporting("modules/premium/hooks/useAndroidAndLegacyIOSPremiumTrialOfferCandidates.native.tsx");
-
-export const useAndroidAndLegacyIOSPremiumTrialOfferCandidates = function useAndroidAndLegacyIOSPremiumTrialOfferCandidates() {
-  const f83231 = (item) => offerIds.has(item);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0 = arg1;
+  const obj = useTrialOffer;
+  const trialOffer = obj.useTrialOffer(arg0);
+  const values = Object.values(ProductIds.TrialIdToProductOfferId[arg0]);
+  let tmp2 = null;
+  if (values.every((item) => set.has(item))) {
+    tmp2 = trialOffer;
+  }
+  return tmp2;
+}) : ((arg0, arg1) => {
+  let closure_0 = arg1;
+  const obj = useTrialOffer;
+  const trialOffer = obj.useTrialOffer(arg0);
+  const values = Object.values(ProductIds.TrialIdToProductOfferId[arg0]);
+  let tmp2 = null;
+  if (values.every((item) => set.has(item))) {
+    tmp2 = trialOffer;
+  }
+  return tmp2;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  let obj = react;
+  const cResult = obj.c(9);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [IAPStore];
+    class R {
+      constructor() {
+        const obj = { isFetchingProducts: IAPStore.isFetchingProducts(), offerIds: IAPStore.getOfferIds() };
+        return obj;
+      }
+    }
+    cResult[0] = items;
+    cResult[1] = R;
+    tmp4 = items;
+    tmp5 = R;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = useStateFromStores;
+  const offerIds = tmpResult.useStateFromStoresObject(tmp4, tmp5).offerIds;
+  const tmp7 = closure_9(metroRequire, offerIds);
+  const tmp8 = closure_9(_false, offerIds);
+  const tmp9 = closure_9(React3, offerIds);
+  const tmp10 = closure_9(hasOwnProperty, offerIds);
+  const tmp11 = closure_9(metroImportDefault, offerIds);
+  const tmp12 = closure_9(metroImportAll, offerIds);
+  if (cResult[2] === tmp9) {
+    if (cResult[3] === tmp10) {
+      if (cResult[4] === tmp12) {
+        if (cResult[5] === tmp8) {
+          if (cResult[6] === tmp11) {
+            let tmp13;
+            if (cResult[7] === tmp7) {
+              tmp13 = cResult[8];
+            }
+            return tmp13;
+          }
+        }
+      }
+    }
+  }
+  const items1 = [tmp11, tmp7, tmp8, tmp9, tmp12, tmp10];
+  const found = items1.find((item) => null != item);
+  cResult[2] = tmp9;
+  cResult[3] = tmp10;
+  cResult[4] = tmp12;
+  cResult[5] = tmp8;
+  cResult[6] = tmp11;
+  cResult[7] = tmp7;
+  cResult[8] = found;
+  tmp13 = found;
+}) : (() => {
   let obj = useStateFromStores;
   const items = [IAPStore];
   const offerIds = obj.useStateFromStoresObject(items, () => {
     const obj = { isFetchingProducts: IAPStore.isFetchingProducts(), offerIds: IAPStore.getOfferIds() };
     return obj;
   }).offerIds;
-  const obj2 = useTrialOffer;
-  const trialOffer = obj2.useTrialOffer(metroRequire);
-  const values = Object.values(ProductIds.TrialIdToProductOfferId[metroRequire]);
-  let tmp4 = null;
-  if (values.every(f83231)) {
-    tmp4 = trialOffer;
-  }
-  const tmpResult = useTrialOffer;
-  const trialOffer1 = tmpResult.useTrialOffer(_false);
-  const values6 = Object.values(tmp(6661).TrialIdToProductOfferId[_false]);
-  let tmp6 = null;
-  if (values6.every(f83231)) {
-    tmp6 = trialOffer1;
-  }
-  const tmpResult5 = useTrialOffer;
-  const trialOffer2 = tmpResult5.useTrialOffer(React3);
-  const values7 = Object.values(tmp(6661).TrialIdToProductOfferId[React3]);
-  let tmp8 = null;
-  if (values7.every(f83231)) {
-    tmp8 = trialOffer2;
-  }
-  const tmpResult6 = useTrialOffer;
-  const trialOffer3 = tmpResult6.useTrialOffer(hasOwnProperty);
-  const values8 = Object.values(tmp(6661).TrialIdToProductOfferId[hasOwnProperty]);
-  let tmp10 = null;
-  if (values8.every(f83231)) {
-    tmp10 = trialOffer3;
-  }
-  const tmpResult7 = useTrialOffer;
-  const trialOffer4 = tmpResult7.useTrialOffer(metroImportDefault);
-  const values9 = Object.values(tmp(6661).TrialIdToProductOfferId[metroImportDefault]);
-  let tmp12 = null;
-  if (values9.every(f83231)) {
-    tmp12 = trialOffer4;
-  }
-  const items1 = [tmp12, tmp4, tmp6, tmp8, , ];
-  const tmpResult8 = useTrialOffer;
-  const trialOffer5 = tmpResult8.useTrialOffer(metroImportAll);
-  const values10 = Object.values(tmp(6661).TrialIdToProductOfferId[metroImportAll]);
-  let tmp14 = null;
-  if (values10.every(f83231)) {
-    tmp14 = trialOffer5;
-  }
-  items1[4] = tmp14;
-  items1[5] = tmp10;
+  const tmp = closure_9(metroRequire, offerIds);
+  const tmp2 = closure_9(_false, offerIds);
+  const items1 = [, , , , , ];
+  const tmp3 = closure_9(React3, offerIds);
+  const tmp4 = closure_9(hasOwnProperty, offerIds);
+  items1[0] = closure_9(metroImportDefault, offerIds);
+  items1[1] = tmp;
+  items1[2] = tmp2;
+  items1[3] = tmp3;
+  items1[4] = closure_9(metroImportAll, offerIds);
+  items1[5] = tmp4;
   return items1.find((item) => null != item);
-};
+});
+const result = size.fileFinishedImporting("modules/premium/hooks/useAndroidAndLegacyIOSPremiumTrialOfferCandidates.native.tsx");
+
+export const useAndroidAndLegacyIOSPremiumTrialOfferCandidates = tmp3;

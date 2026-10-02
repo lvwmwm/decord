@@ -1,10 +1,10 @@
 // Module ID: 8549
 // Function ID: 8550
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 8549 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/user_settings/connections/native/two_way_link/images", width: 59, height: 85.5, scales: [2, 3], hash: "07edfc27bc58db41fd8c1993a9ed69f0", name: "xbox_app_phone", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 16, height: 16, scales: [2, 3], hash: "d082de3975b39d41cd3c34c609bd917a", name: "ic_launch", type: "png" });

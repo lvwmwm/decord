@@ -1,65 +1,295 @@
-// Module ID: 9044
-// Function ID: 9045
+// Module ID: 9021
+// Function ID: 9022
 // Name: AddModerators
-// Dependencies: [32, 19, 17, 2067, 7849, 21, 4836, 576, 1485, 38, 9013, 5727, 1979, 1115, 5936, 6795, 4832, 1177, 9045, 2053, 2]
-// Exports: default
+// Dependencies: [32, 109, 19, 17, 2073, 7853, 21, 4837, 588, 558, 576, 1491, 38, 8990, 5728, 1985, 1127, 5933, 6796, 4833, 1189, 9022, 2059, 2]
 
-// Module 9044 (AddModerators)
+// Module 9021 (AddModerators)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import HeaderActionButton from "HeaderActionButton" /* 6795 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7849 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import nativeDefault from "native" /* 588 */;
+import HeaderActionButton from "HeaderActionButton" /* 6796 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7853 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildStore from "GuildStore" /* 2073 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation, row;
+const require = globalThis.__r;
+let guildId, importDefault, navigation, row;
 
-let c9;
-let metroImportAll;
+let c10;
 let obj2;
+let unpackModuleId;
+let closure_3 = ["guildId", "onChannelCreated"];
+let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
 const RowType = ChannelPermissionsConstants.RowType;
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let obj = { addMembersContainer: obj2, moderatorDescriptionContainer: { margin: 16 }, errorMessage: { margin: 16, marginBottom: 0 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
-let closure_10 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/stage_channels/native/create_channel/AddModerators.tsx");
-
-export default function AddModerators(guildId) {
+let closure_12 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let HelpMessage;
+  let _require;
+  let closure_4;
+  let closure_6;
+  let first;
+  let first1;
+  let intl;
+  let items;
+  let obj9;
+  let tmp12;
+  let tmp22;
+  let tmp5;
+  let obj = require("react");
+  const cResult = obj.c(33);
+  if (cResult[0] !== guildId) {
+    guildId = guildId.guildId;
+    _require = guildId;
+    const onChannelCreated = guildId.onChannelCreated;
+    const tmp9 = first1(guildId, first);
+    importDefault = tmp9;
+    cResult[0] = guildId;
+    cResult[1] = guildId;
+    cResult[2] = onChannelCreated;
+    cResult[3] = tmp9;
+    tmp5 = onChannelCreated;
+  } else {
+    _require = cResult[1];
+    tmp5 = cResult[2];
+    importDefault = cResult[3];
+  }
+  const tmp10 = closure_12();
+  const tmpResult = require("useNavigation");
+  navigation = tmpResult.useNavigation();
+  if (cResult[4] !== tmp4) {
+    const guild = GuildStore.getGuild(tmp4);
+    cResult[4] = tmp4;
+    cResult[5] = guild;
+    tmp12 = guild;
+  } else {
+    tmp12 = cResult[5];
+  }
+  require("module_38")(null != tmp12, "Guild must not be null");
+  const tmp18 = _slicedToArray(require("useCreateChannelSubmit")(tmp5), 3);
+  first = tmp18[0];
+  _slicedToArray = tmp21;
+  const tmp15 = importDefault;
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = {};
+    cResult[6] = obj2;
+    tmp22 = obj2;
+  } else {
+    tmp22 = cResult[6];
+  }
+  first1 = tmp17(react.useState(tmp22), 2)[0];
+  _slicedToArray(react.useState(tmp22), 2);
+  const obj4 = react;
+  if (cResult[7] === tmp4) {
+    if (cResult[8] === tmp18[2]) {
+      if (cResult[9] === first1) {
+        let tmp26;
+        if (cResult[10] === tmp6) {
+          tmp26 = cResult[11];
+        }
+        react = tmp26;
+        if (cResult[12] === tmp26) {
+          if (cResult[13] === navigation) {
+            if (cResult[14] === first1) {
+              let tmp27;
+              let tmp28;
+              let tmp30;
+              let tmp33;
+              if (cResult[15] === first) {
+                tmp27 = cResult[16];
+                tmp28 = cResult[17];
+              }
+              const layoutEffect = obj4.useLayoutEffect(tmp27, tmp28);
+              const _Symbol = Symbol;
+              const addMembersContainer = tmp10.addMembersContainer;
+              if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+                const obj3 = { variant: "text-sm/medium", color: "text-default", children: intl.string(require("intl").t.f7VbhF) };
+                const Text = tmp(tmp2[19]).Text;
+                intl = tmp(tmp2[16]).intl;
+                const tmp32 = closure_10(Text, obj3);
+                cResult[18] = tmp32;
+                tmp30 = tmp32;
+              } else {
+                tmp30 = cResult[18];
+              }
+              if (cResult[19] !== tmp10.moderatorDescriptionContainer) {
+                const obj5 = { style: tmp10.moderatorDescriptionContainer, children: tmp30 };
+                const tmp36 = closure_10(View, obj5);
+                cResult[19] = tmp10.moderatorDescriptionContainer;
+                cResult[20] = tmp36;
+                tmp33 = tmp36;
+              } else {
+                tmp33 = cResult[20];
+              }
+              if (cResult[21] === tmp18[1].message) {
+                let tmp37;
+                let tmp41;
+                if (cResult[22] === tmp10.errorMessage) {
+                  tmp37 = cResult[23];
+                }
+                const _Symbol2 = Symbol;
+                if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
+                  let intl2 = tmp(tmp2[16]).intl;
+                  let stringResult = intl2.string(tmp(tmp2[16]).t["Ch6+n4"]);
+                  cResult[24] = stringResult;
+                  tmp41 = stringResult;
+                } else {
+                  tmp41 = cResult[24];
+                }
+                if (cResult[25] === tmp12) {
+                  let tmp43;
+                  if (cResult[26] === first1) {
+                    tmp43 = cResult[27];
+                  }
+                  if (cResult[28] === tmp10.addMembersContainer) {
+                    if (cResult[29] === tmp43) {
+                      if (cResult[30] === tmp33) {
+                        let tmp47;
+                        if (cResult[31] === tmp37) {
+                          tmp47 = cResult[32];
+                        }
+                        return tmp47;
+                      }
+                    }
+                  }
+                  const obj6 = { style: addMembersContainer, children: items };
+                  items = [tmp33, tmp37, tmp43];
+                  const tmp50 = closure_11(View, obj6);
+                  cResult[28] = tmp10.addMembersContainer;
+                  cResult[29] = tmp43;
+                  cResult[30] = tmp33;
+                  cResult[31] = tmp37;
+                  cResult[32] = tmp50;
+                  tmp47 = tmp50;
+                }
+                const obj7 = { channel: null, guild: tmp12, permission: require("StageChannelPermissions").MODERATE_STAGE_CHANNEL_PERMISSIONS, inputDesc: tmp41, pendingAdditions: first1, setPendingAdditions: tmp25 };
+                const tmp15Result = tmp15(navigation[21]);
+                const tmp46 = closure_10(tmp15Result, obj7);
+                cResult[25] = tmp12;
+                cResult[26] = first1;
+                cResult[27] = tmp46;
+                tmp43 = tmp46;
+              }
+              let tmp38 = null;
+              if (null != tmp18[1].message) {
+                const obj8 = { style: tmp10.errorMessage, children: closure_10(HelpMessage, obj9) };
+                obj9 = { messageType: require("native").HelpMessageTypes.ERROR, children: tmp18[1].message };
+                HelpMessage = tmp(tmp2[20]).HelpMessage;
+                tmp38 = closure_10(View, obj8);
+              }
+              cResult[21] = tmp18[1].message;
+              cResult[22] = tmp10.errorMessage;
+              cResult[23] = tmp38;
+              tmp37 = tmp38;
+            }
+          }
+        }
+        const fn = function j() {
+          let onPress;
+          let stringResult;
+          if (Object.keys(first1).length > 0) {
+            const intl2 = guildId(navigation[16]).intl;
+            stringResult = intl2.string(guildId(navigation[16]).t.CumH4u);
+          } else {
+            const intl = guildId(navigation[16]).intl;
+            stringResult = intl.string(guildId(navigation[16]).t["5Wxrcd"]);
+          }
+          guildId = stringResult;
+          let obj = {
+            headerRight: first ? (() => closure_1_10(stringResult(navigation[17]).HeaderSubmittingIndicator, {})) : (() => {
+              const obj = { text: stringResult, onPress };
+              return authStore(HeaderActionButton.HeaderActionButton, obj);
+            })
+          };
+          navigation.setOptions(obj);
+        };
+        const items1 = [tmp26, navigation, first1, first];
+        cResult[12] = tmp26;
+        cResult[13] = navigation;
+        cResult[14] = first1;
+        cResult[15] = first;
+        cResult[16] = fn;
+        cResult[17] = items1;
+        tmp28 = items1;
+        tmp27 = fn;
+      }
+    }
+  }
+  class I {
+    constructor() {
+      let items;
+      const values = Object.values(first1);
+      const found = values.filter((row) => null != row.row.id);
+      const mapped = found.map((row) => {
+        let moderatorOverwrite;
+        row = row.row;
+        if (row.rowType === constants.ROLE) {
+          const obj2 = guildId(navigation[14]);
+          moderatorOverwrite = obj2.createModeratorOverwrite(row.id, guildId(navigation[15]).PermissionOverwriteType.ROLE);
+        } else {
+          const obj = guildId(navigation[14]);
+          moderatorOverwrite = obj.createModeratorOverwrite(row.id, guildId(navigation[15]).PermissionOverwriteType.MEMBER);
+        }
+        return moderatorOverwrite;
+      });
+      let obj = { guildId, overwrites: items };
+      const merged = Object.assign(overwrites);
+      items = [...mapped];
+      overwrites = overwrites.overwrites;
+      const tmp3 = closure_4;
+      if (overwrites == null) {
+        overwrites = [];
+      }
+      HermesBuiltin.arraySpread(items, overwrites, tmp5);
+      return tmp3(obj);
+    }
+  }
+  cResult[7] = tmp4;
+  cResult[8] = tmp18[2];
+  cResult[9] = first1;
+  cResult[10] = tmp6;
+  cResult[11] = I;
+  tmp26 = I;
+}) : ((guildId) => {
   let HelpMessage;
   let Text;
   let closure_4;
+  let first1;
   let intl;
   let intl2;
   let items2;
   let obj4;
   let obj6;
+  let tmp16;
   guildId = guildId.guildId;
   let tmp = null;
   const onChannelCreated = guildId.onChannelCreated;
   let merged = Object.assign(guildId, Object.assign({ guildId: 0, onChannelCreated: 0 }));
   navigation = undefined;
-  let first;
+  _slicedToArray = undefined;
+  first1 = undefined;
   let onPress;
-  let tmp3 = closure_10();
+  let tmp3 = closure_12();
   const tmp5 = navigation;
-  let obj = guildId(navigation[8]);
+  let obj = guildId(navigation[11]);
   navigation = obj.useNavigation();
-  const guild = onPress.getGuild(guildId);
-  merged(navigation[9])(null != guild, "Guild must not be null");
-  const tmp10 = first(merged(navigation[10])(onChannelCreated), 3);
-  first = tmp10[0];
-  react = tmp13;
-  const tmp14 = first(react.useState({}), 2);
-  const first1 = tmp14[0];
+  const guild = GuildStore.getGuild(guildId);
+  merged(navigation[12])(null != guild, "Guild must not be null");
+  const tmp10 = _slicedToArray(merged(navigation[13])(onChannelCreated), 3);
+  const first = tmp10[0];
+  _slicedToArray = tmp13;
+  [first1, tmp16] = onPress.useState({});
   let items = [tmp10[2], first1, merged, guildId];
-  const tmp16 = tmp14[1];
-  onPress = react.useCallback(() => {
+  onPress = onPress.useCallback(() => {
     let items;
     const values = Object.values(first1);
     const found = values.filter((row) => null != row.row.id);
@@ -67,11 +297,11 @@ export default function AddModerators(guildId) {
       let moderatorOverwrite;
       row = row.row;
       if (row.rowType === constants.ROLE) {
-        const obj2 = guildId(navigation[11]);
-        moderatorOverwrite = obj2.createModeratorOverwrite(row.id, guildId(navigation[12]).PermissionOverwriteType.ROLE);
+        const obj2 = guildId(navigation[14]);
+        moderatorOverwrite = obj2.createModeratorOverwrite(row.id, guildId(navigation[15]).PermissionOverwriteType.ROLE);
       } else {
-        const obj = guildId(navigation[11]);
-        moderatorOverwrite = obj.createModeratorOverwrite(row.id, guildId(navigation[12]).PermissionOverwriteType.MEMBER);
+        const obj = guildId(navigation[14]);
+        moderatorOverwrite = obj.createModeratorOverwrite(row.id, guildId(navigation[15]).PermissionOverwriteType.MEMBER);
       }
       return moderatorOverwrite;
     });
@@ -87,42 +317,45 @@ export default function AddModerators(guildId) {
     return tmp3(obj);
   }, items);
   const items1 = [onPress, navigation, first1, first];
-  const layoutEffect = react.useLayoutEffect(() => {
+  const layoutEffect = onPress.useLayoutEffect(() => {
     let stringResult;
     if (Object.keys(first1).length > 0) {
-      const intl2 = guildId(navigation[13]).intl;
-      stringResult = intl2.string(guildId(navigation[13]).t.CumH4u);
+      const intl2 = guildId(navigation[16]).intl;
+      stringResult = intl2.string(guildId(navigation[16]).t.CumH4u);
     } else {
-      const intl = guildId(navigation[13]).intl;
-      stringResult = intl.string(guildId(navigation[13]).t["5Wxrcd"]);
+      const intl = guildId(navigation[16]).intl;
+      stringResult = intl.string(guildId(navigation[16]).t["5Wxrcd"]);
     }
     guildId = stringResult;
     let obj = {
-      headerRight: first ? (() => closure_1_8(stringResult(navigation[14]).HeaderSubmittingIndicator, {})) : (() => {
+      headerRight: first ? (() => closure_1_10(stringResult(navigation[17]).HeaderSubmittingIndicator, {})) : (() => {
         const obj = { text: stringResult, onPress };
-        return metroImportAll(HeaderActionButton.HeaderActionButton, obj);
+        return authStore(HeaderActionButton.HeaderActionButton, obj);
       })
     };
     navigation.setOptions(obj);
   }, items1);
   let obj2 = { style: tmp3.addMembersContainer, children: items2 };
-  const obj3 = { style: tmp3.moderatorDescriptionContainer, children: closure_8(Text, obj4) };
-  obj4 = { variant: "text-sm/medium", color: "text-default", children: intl.string(guildId(navigation[13]).t.f7VbhF) };
-  Text = guildId(navigation[16]).Text;
-  intl = guildId(navigation[13]).intl;
-  items2 = [closure_8(first1, obj3), , ];
-  const tmp19 = closure_9;
+  const obj3 = { style: tmp3.moderatorDescriptionContainer, children: closure_10(Text, obj4) };
+  obj4 = { variant: "text-sm/medium", color: "text-default", children: intl.string(guildId(navigation[16]).t.f7VbhF) };
+  Text = guildId(navigation[19]).Text;
+  intl = guildId(navigation[16]).intl;
+  items2 = [closure_10(View, obj3), , ];
+  const tmp19 = closure_11;
   const tmp8 = merged;
   if (null != tmp10[1].message) {
-    const obj5 = { style: tmp3.errorMessage, children: closure_8(HelpMessage, obj6) };
-    obj6 = { messageType: guildId(tmp5[17]).HelpMessageTypes.ERROR, children: tmp10[1].message };
-    HelpMessage = tmp4(tmp5[17]).HelpMessage;
+    const obj5 = { style: tmp3.errorMessage, children: closure_10(HelpMessage, obj6) };
+    obj6 = { messageType: guildId(tmp5[20]).HelpMessageTypes.ERROR, children: tmp10[1].message };
+    HelpMessage = tmp4(tmp5[20]).HelpMessage;
     tmp = tmp21(tmp20, obj5);
   }
   items2[1] = tmp;
-  const obj7 = { channel: null, guild, permission: guildId(tmp5[19]).MODERATE_STAGE_CHANNEL_PERMISSIONS, inputDesc: intl2.string(guildId(tmp5[13]).t["Ch6+n4"]), pendingAdditions: first1, setPendingAdditions: tmp16 };
-  const tmp8Result = tmp8(tmp5[18]);
-  intl2 = tmp4(tmp5[13]).intl;
-  items2[2] = closure_8(tmp8Result, obj7);
-  return tmp19(first1, obj2);
-};
+  const obj7 = { channel: null, guild, permission: guildId(tmp5[22]).MODERATE_STAGE_CHANNEL_PERMISSIONS, inputDesc: intl2.string(guildId(tmp5[16]).t["Ch6+n4"]), pendingAdditions: first1, setPendingAdditions: tmp16 };
+  const tmp8Result = tmp8(tmp5[21]);
+  intl2 = tmp4(tmp5[16]).intl;
+  items2[2] = closure_10(tmp8Result, obj7);
+  return tmp19(View, obj2);
+});
+const result = size.fileFinishedImporting("modules/stage_channels/native/create_channel/AddModerators.tsx");
+
+export default tmp3;

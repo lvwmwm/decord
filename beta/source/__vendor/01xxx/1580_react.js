@@ -1,23 +1,32 @@
 // Module ID: 1580
 // Function ID: 1581
 // Name: react
-// Dependencies: [19, 1555]
-// Exports: usePreventRemoveContext
+// Dependencies: [19]
 
 // Module 1580 (react)
-import react2 from "react" /* 1555 */;
 import react from "react" /* 19 */;
 
 
-export const usePreventRemoveContext = function usePreventRemoveContext() {
-  const context = react.useContext(react2.PreventRemoveContext);
-  if (null == context) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("Couldn't find the prevent remove context. Is your component inside NavigationContent?");
-    throw error;
+export const StaticContainer = react.memo(function StaticContainer(children) {
+  return children.children;
+}, (arg0, arg1) => {
+  const keys = Object.keys(arg0);
+  if (keys.length !== Object.keys(arg1).length) {
+    return false;
   } else {
-    return context;
+    const iter = keys[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp5 = nextResult;
+      if ("children" !== nextResult) {
+        if (arg0[tmp5] !== arg1[tmp5]) {
+          iter.return();
+          let flag = false;
+          return false;
+        }
+      }
+      continue;
+    }
+    return true;
   }
-};
+});

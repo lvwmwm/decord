@@ -1,23 +1,106 @@
-// Module ID: 14164
-// Function ID: 14165
+// Module ID: 14152
+// Function ID: 14153
 // Name: useScrollToUserProfileEditFormSection
-// Dependencies: [19, 17, 4825, 9227, 504, 2]
-// Exports: default
+// Dependencies: [19, 17, 4826, 9193, 558, 576, 504, 2]
 
-// Module 14164 (useScrollToUserProfileEditFormSection)
+// Module 14152 (useScrollToUserProfileEditFormSection)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9227 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9193 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
 const findNodeHandle = react_native.findNodeHandle;
-const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useScrollToUserProfileEditFormSection.tsx");
-
-export default function useScrollToUserProfileEditFormSection(arg0, arg1) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let first;
+  let ref;
+  let state;
+  let tmp6;
+  let tmp7;
+  let useReducedMotion;
+  _require = arg0;
+  dependencyMap = arg1;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  const obj = require("react");
+  const cResult = obj.c(7);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = {};
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const obj3 = ref;
+  ref = ref.useRef(first);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    const fn = function v() {
+      return useReducedMotion.useReducedMotion;
+    };
+    cResult[1] = items;
+    cResult[2] = fn;
+    tmp7 = fn;
+    tmp6 = items;
+  } else {
+    tmp6 = cResult[1];
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
+  if (cResult[3] === arg1) {
+    if (cResult[4] === arg0) {
+      let tmp10;
+      if (cResult[5] === stateFromStores) {
+        tmp10 = cResult[6];
+      }
+      const effect = obj3.useEffect(tmp10);
+      return ref;
+    }
+  }
+  const fn2 = function y() {
+    let ref2;
+    let tmp;
+    let tmp2 = null != closure_1;
+    if (tmp2) {
+      let current = ref.current;
+      let tmp4;
+      if (current != null) {
+        tmp4 = current[tmp];
+      }
+      tmp2 = null != tmp4;
+    }
+    if (tmp2) {
+      const _setTimeout = setTimeout;
+      const timerId = setTimeout(() => {
+        const tmp = stateFromStores(ref.current);
+        if (null != tmp) {
+          if (ref2.current[closure_1_1] != null) {
+            ref2.current[closure_1_1].measureLayout(tmp, (x, y) => {
+              const current = ref.current;
+              if (current != null) {
+                const point = { x, y, animated: !closure_1_3 };
+                current.scrollTo(point);
+              }
+            });
+          }
+          state.setState({ scrollPosition: null });
+        }
+      }, 0);
+    }
+  };
+  cResult[3] = arg1;
+  cResult[4] = arg0;
+  cResult[5] = stateFromStores;
+  cResult[6] = fn2;
+  tmp10 = fn2;
+}) : ((arg0, arg1) => {
   let closure_0;
   let closure_1;
   let ref;
@@ -61,4 +144,7 @@ export default function useScrollToUserProfileEditFormSection(arg0, arg1) {
     }
   });
   return ref;
-};
+});
+const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useScrollToUserProfileEditFormSection.tsx");
+
+export default tmp2;

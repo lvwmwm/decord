@@ -1,11 +1,11 @@
-// Module ID: 13617
-// Function ID: 13618
+// Module ID: 13619
+// Function ID: 13620
 // Name: InputWatcher
-// Dependencies: [32, 5, 4878, 4, 2040, 4891, 1365, 13557, 4450, 5877, 573, 2]
+// Dependencies: [32, 5, 4879, 4, 2046, 4892, 1371, 13559, 4453, 5878, 585, 2]
 
-// Module 13617 (InputWatcher)
+// Module 13619 (InputWatcher)
 import logger_Logger from "logger/Logger" /* 4 */;
-import Constants from "Constants" /* 4878 */;
+import Constants from "Constants" /* 4879 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/media_engine/InputWatcher.tsx
 class InputWatcher {
   constructor(mediaEngine, mediaEngineStore) {
     let obj = Object.create(new.target.prototype);
-    const timeout = new obj(2040).Timeout();
+    const timeout = new obj(2046).Timeout();
     obj.stateChangeTimeout = timeout;
     obj.inputDetected = undefined;
     obj.lastUpdateTime = performance.now();
@@ -36,7 +36,7 @@ class InputWatcher {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let closure_2;
@@ -136,7 +136,7 @@ class InputWatcher {
             _Promise.dispatch(obj);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp42) {
           closure_2 = tmp42;
           if (0 === osVolume) {
@@ -170,7 +170,7 @@ class InputWatcher {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -208,7 +208,7 @@ class InputWatcher {
             const obj2 = c1(inputDetected[10]);
             obj2.dispatch(obj6);
             inputDetected = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } catch (tmp11) {
             inputDetected = 3;
             throw tmp11;
@@ -219,7 +219,7 @@ class InputWatcher {
     obj.mediaEngine = mediaEngine;
     obj.mediaEngineStore = mediaEngineStore;
     mediaEngine = obj.mediaEngine;
-    mediaEngine.on(obj(4891).MediaEngineEvent.Silence, obj.handleSilence);
+    mediaEngine.on(obj(4892).MediaEngineEvent.Silence, obj.handleSilence);
     return obj;
   }
   reset() {

@@ -1,24 +1,24 @@
-// Module ID: 14678
-// Function ID: 14679
+// Module ID: 14666
+// Function ID: 14667
 // Name: VideoQuestCaptionsUtils
 // Dependencies: [2]
 // Exports: findActiveCaption
 
-// Module 14678 (VideoQuestCaptionsUtils)
+// Module 14666 (VideoQuestCaptionsUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/captions/VideoQuestCaptionsUtils.tsx");
 
-export const findActiveCaption = function findActiveCaption(arg0, currentTime) {
+export const findActiveCaption = function findActiveCaption(captions, currentTime) {
   let tmp3;
-  let diff = arg0.length - 1;
+  let diff = captions.length - 1;
   let num = 0;
   if (0 <= diff) {
     while (true) {
       let sum;
       let _Math = Math;
       let rounded = Math.floor((num + diff) / 2);
-      tmp3 = arg0[rounded];
+      tmp3 = captions[rounded];
       let diff1 = diff;
       if (currentTime >= tmp3.start) {
         if (currentTime <= tmp3.end) {

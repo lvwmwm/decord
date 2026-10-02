@@ -1,19 +1,21 @@
-// Module ID: 15727
-// Function ID: 15728
+// Module ID: 15724
+// Function ID: 15725
 // Name: MessagesItemEmptyState
-// Dependencies: [19, 17, 21, 4836, 576, 4693, 15687, 4832, 1115, 5281, 2]
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4695, 15684, 1127, 4833, 5282, 2]
 
-// Module 15727 (MessagesItemEmptyState)
-import nativeDefault from "native" /* 576 */;
-import intl4 from "intl" /* 1115 */;
-import RootNavigationRef from "RootNavigationRef" /* 4693 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15687 */;
+// Module 15724 (MessagesItemEmptyState)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import RootNavigationRef from "RootNavigationRef" /* 4695 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15684 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -32,7 +34,128 @@ createStyles = createStyles.createStyles;
 obj3 = { marginBottom: nativeDefault.space.PX_16, flexShrink: 1, flexGrow: 1 };
 obj4 = { marginBottom: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_8, textAlign: "center" };
 let closure_8 = createStyles(obj);
-const memoResult = react.memo(function MessagesItemEmptyState() {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl3;
+  let items;
+  let tmp6;
+  let obj = react2;
+  const cResult = obj.c(18);
+  const tmp4 = closure_8();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
+      const obj = RootNavigationRef;
+      const rootNavigationRef = obj.getRootNavigationRef();
+      if (rootNavigationRef != null) {
+        const current = rootNavigationRef.current;
+        if (current != null) {
+          const obj2 = { screen: "add-friends", params: { sourcePage: "Messages Empty State", presentation: "card" } };
+          current.navigate("friends", obj2);
+        }
+      }
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const container = tmp4.container;
+  if (cResult[1] !== tmp4.image) {
+    let obj2 = { resizeMode: "contain", source: AssetRegistryDefault, style: tmp4.image };
+    const tmp10 = metroRequire(React3, obj2);
+    cResult[1] = tmp4.image;
+    cResult[2] = tmp10;
+    tmp6 = tmp10;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] === tmp4.containerImage) {
+    let tmp11;
+    let tmp13;
+    let tmp15;
+    let tmp18;
+    let tmp20;
+    let tmp23;
+    if (cResult[4] === tmp6) {
+      tmp11 = cResult[5];
+    }
+    const _Symbol = Symbol;
+    const title = tmp4.title;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(intl4.t["8JZof8"]);
+      cResult[6] = stringResult;
+      tmp13 = stringResult;
+    } else {
+      tmp13 = cResult[6];
+    }
+    if (cResult[7] !== tmp4.title) {
+      const obj3 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: title, maxFontSizeMultiplier: 2, children: tmp13 };
+      const tmp17 = metroRequire(Text_Text.Heading, obj3);
+      cResult[7] = tmp4.title;
+      cResult[8] = tmp17;
+      tmp15 = tmp17;
+    } else {
+      tmp15 = cResult[8];
+    }
+    const _Symbol2 = Symbol;
+    const body = tmp4.body;
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl2 = tmp(1127).intl;
+      const stringResult1 = intl2.string(intl4.t["qm+H7x"]);
+      cResult[9] = stringResult1;
+      tmp18 = stringResult1;
+    } else {
+      tmp18 = cResult[9];
+    }
+    if (cResult[10] !== tmp4.body) {
+      const obj4 = { color: "text-default", variant: "text-md/medium", style: body, maxFontSizeMultiplier: 2, children: tmp18 };
+      const tmp22 = metroRequire(Text_Text.Text, obj4);
+      cResult[10] = tmp4.body;
+      cResult[11] = tmp22;
+      tmp20 = tmp22;
+    } else {
+      tmp20 = cResult[11];
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj5 = { text: intl3.string(intl4.t.zIJnA6), onPress: first, size: "lg" };
+      const Button = tmp(5282).Button;
+      intl3 = tmp(1127).intl;
+      const tmp25 = metroRequire(Button, obj5);
+      cResult[12] = tmp25;
+      tmp23 = tmp25;
+    } else {
+      tmp23 = cResult[12];
+    }
+    if (cResult[13] === tmp4.container) {
+      if (cResult[14] === tmp11) {
+        if (cResult[15] === tmp15) {
+          let tmp26;
+          if (cResult[16] === tmp20) {
+            tmp26 = cResult[17];
+          }
+          return tmp26;
+        }
+      }
+    }
+    const obj6 = { style: container, collapsable: false, children: items };
+    items = [tmp11, tmp15, tmp20, tmp23];
+    const tmp29 = metroImportDefault(hasOwnProperty, obj6);
+    cResult[13] = tmp4.container;
+    cResult[14] = tmp11;
+    cResult[15] = tmp15;
+    cResult[16] = tmp20;
+    cResult[17] = tmp29;
+    tmp26 = tmp29;
+  }
+  const obj7 = { style: tmp4.containerImage, children: tmp6 };
+  const tmp12 = metroRequire(hasOwnProperty, obj7);
+  cResult[3] = tmp4.containerImage;
+  cResult[4] = tmp6;
+  cResult[5] = tmp12;
+  tmp11 = tmp12;
+}) : (() => {
   let intl;
   let intl2;
   let intl3;
@@ -67,7 +190,7 @@ const memoResult = react.memo(function MessagesItemEmptyState() {
   intl3 = intl4.intl;
   items[3] = metroRequire(Button, obj6);
   return metroImportDefault(hasOwnProperty, obj);
-});
+}));
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemEmptyState.tsx");
 
 export default memoResult;

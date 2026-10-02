@@ -1,11 +1,11 @@
-// Module ID: 5871
-// Function ID: 5872
+// Module ID: 5872
+// Function ID: 5873
 // Name: NewUserStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 5871 (NewUserStore)
+// Module 5872 (NewUserStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let type = null;

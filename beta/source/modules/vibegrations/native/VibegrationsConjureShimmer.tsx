@@ -1,37 +1,346 @@
-// Module ID: 16336
-// Function ID: 16337
+// Module ID: 16338
+// Function ID: 16339
 // Name: VibegrationsConjureShimmer
-// Dependencies: [32, 19, 17, 4825, 21, 4836, 504, 4566, 4837, 672, 5976, 5293, 2]
-// Exports: default, shouldSweep
+// Dependencies: [32, 19, 17, 4826, 21, 4837, 558, 576, 504, 4570, 4838, 684, 5975, 5292, 2]
+// Exports: shouldSweep
 
-// Module 16336 (VibegrationsConjureShimmer)
-import _modDef672 from "module_672" /* 672 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import timing from "timing" /* 4837 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+// Module 16338 (VibegrationsConjureShimmer)
+import _modDef684 from "module_684" /* 684 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import timing from "timing" /* 4838 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, set;
+const require = globalThis.__r;
+let cancelAnimationResult, dependencyMap, flag, num2, num3, num4, obj1, set, tmp10, tmp11, tmp13, tmp16, tmp3, tmp7, tmp9;
 
 let c9;
 let hasOwnProperty;
 let metroImportAll;
 let metroRequire;
+let _slicedToArray = _slicedToArray_mod;
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 const locations = [0, 0.4, 0.5, 0.6, 1];
 const start = { x: 0, y: 0.5 };
 const end = { x: 1, y: 0.5 };
 let closure_13 = createStyles.createStyles({ root: { position: "relative" }, band: { position: "absolute", top: 0, bottom: 0 }, fill: { flex: 1 } });
-const __initData = { code: "function VibegrationsConjureShimmerTsx1(){const{bandWidth,progress,width}=this.__closure;return{transform:[{translateX:-bandWidth+progress.get()*(bandWidth+width)}]};}" };
-let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsConjureShimmer.tsx");
-
-export default function VibegrationsConjureShimmer(epoch) {
+let closure_14 = { code: "function VibegrationsConjureShimmerTsx1(){const{bandWidth,progress,width}=this.__closure;return{transform:[{translateX:-bandWidth+progress.get()*(bandWidth+width)}]};}" };
+const __initData = { code: "function VibegrationsConjureShimmerTsx2(){const{bandWidth,progress,width}=this.__closure;return{transform:[{translateX:-bandWidth+progress.get()*(bandWidth+width)}]};}" };
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_1;
+  let closure_3;
+  let epoch;
+  let first;
+  let live;
+  let renderFace;
+  let sharedValue;
+  let tint;
+  let tmp5;
+  let tmp6;
+  let useReducedMotion;
+  let tmp = first;
+  let obj = first(sharedValue[7]);
+  const cResult = obj.c(38);
+  ({ renderFace, live, tint, epoch } = arg0);
+  let num = 0;
+  if (undefined !== epoch) {
+    num = epoch;
+  }
+  closure_13();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [AccessibilityStore];
+    let fn = function _() {
+      return useReducedMotion.useReducedMotion;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(sharedValue[8]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  [first, importDefault] = react.useState(0);
+  const tmpResult2 = tmp(sharedValue[9]);
+  sharedValue = tmpResult2.useSharedValue(0);
+  const obj3 = react;
+  if (cResult[2] === live) {
+    if (cResult[3] === stateFromStores) {
+      let tmp12;
+      if (cResult[4] === first) {
+        tmp12 = cResult[5];
+      }
+      _slicedToArray = tmp12;
+      if (cResult[6] === tmp12) {
+        let tmp14;
+        if (cResult[7] === sharedValue) {
+          tmp14 = cResult[8];
+        }
+        if (cResult[9] === tmp12) {
+          if (cResult[10] === num) {
+            let tmp15;
+            let tmp19;
+            let tmp18;
+            let tmp17;
+            if (cResult[11] === sharedValue) {
+              tmp15 = cResult[12];
+            }
+            const effect = obj3.useEffect(tmp14, tmp15);
+            if (cResult[13] !== tint) {
+              const obj5 = require("module_684")(tint);
+              obj5.alpha(0);
+              class X {
+                constructor() {
+                  tmp = closure_3;
+                  if (tmp) {
+                    tmp7 = closure_2;
+                    num2 = 0;
+                    result = closure_2.set(0);
+                    tmp9 = closure_0;
+                    tmp10 = closure_2;
+                    set = closure_2.set;
+                    tmp11 = closure_0(closure_2[9]);
+                    tmp12 = closure_0;
+                    tmp13 = closure_2;
+                    withRepeat = tmp11.withRepeat;
+                    tmp14 = closure_0(closure_2[10]);
+                    obj1 = { duration: 2000, easing: null };
+                    tmp15 = closure_0;
+                    tmp16 = closure_2;
+                    withTiming = tmp14.withTiming;
+                    obj1.easing = closure_0(closure_2[9]).Easing.linear;
+                    num3 = 1;
+                    flag = false;
+                    num4 = -1;
+                    result1 = set(withRepeat(withTiming(1, obj1), -1, false));
+                    fn = () => {
+                      const obj = first(sharedValue[9]);
+                      return obj.cancelAnimation(closure_1_2);
+                    };
+                  } else {
+                    tmp2 = closure_0;
+                    tmp3 = closure_2;
+                    obj = closure_0(closure_2[9]);
+                    tmp4 = closure_2;
+                    cancelAnimationResult = obj.cancelAnimation(closure_2);
+                    num = 0;
+                    result2 = closure_2.set(0);
+                  }
+                  return fn;
+                }
+              }
+              const alphaResult1 = obj5.alpha(1);
+              cResult[13] = tint;
+              cResult[14] = tmp23;
+              cResult[15] = tmp23;
+              cResult[16] = tmp23;
+              cResult[17] = alphaResult1.css();
+              tmp19 = tmp23;
+              tmp18 = tmp23;
+              tmp17 = tmp23;
+              const cssResult = alphaResult1.css();
+            } else {
+              tmp17 = cResult[14];
+              tmp18 = cResult[15];
+              tmp19 = cResult[16];
+              class X {
+                constructor() {
+                  tmp = closure_3;
+                  if (tmp) {
+                    tmp7 = closure_2;
+                    num2 = 0;
+                    result = closure_2.set(0);
+                    tmp9 = closure_0;
+                    tmp10 = closure_2;
+                    set = closure_2.set;
+                    tmp11 = closure_0(closure_2[9]);
+                    tmp12 = closure_0;
+                    tmp13 = closure_2;
+                    withRepeat = tmp11.withRepeat;
+                    tmp14 = closure_0(closure_2[10]);
+                    obj1 = { duration: 2000, easing: null };
+                    tmp15 = closure_0;
+                    tmp16 = closure_2;
+                    withTiming = tmp14.withTiming;
+                    obj1.easing = closure_0(closure_2[9]).Easing.linear;
+                    num3 = 1;
+                    flag = false;
+                    num4 = -1;
+                    result1 = set(withRepeat(withTiming(1, obj1), -1, false));
+                    fn = () => {
+                      const obj = first(sharedValue[9]);
+                      return obj.cancelAnimation(closure_1_2);
+                    };
+                  } else {
+                    tmp2 = closure_0;
+                    tmp3 = closure_2;
+                    obj = closure_0(closure_2[9]);
+                    tmp4 = closure_2;
+                    cancelAnimationResult = obj.cancelAnimation(closure_2);
+                    num = 0;
+                    result2 = closure_2.set(0);
+                  }
+                  return fn;
+                }
+              }
+            }
+            class X {
+              constructor() {
+                tmp = closure_3;
+                if (tmp) {
+                  tmp7 = closure_2;
+                  num2 = 0;
+                  result = closure_2.set(0);
+                  tmp9 = closure_0;
+                  tmp10 = closure_2;
+                  set = closure_2.set;
+                  tmp11 = closure_0(closure_2[9]);
+                  tmp12 = closure_0;
+                  tmp13 = closure_2;
+                  withRepeat = tmp11.withRepeat;
+                  tmp14 = closure_0(closure_2[10]);
+                  obj1 = { duration: 2000, easing: null };
+                  tmp15 = closure_0;
+                  tmp16 = closure_2;
+                  withTiming = tmp14.withTiming;
+                  obj1.easing = closure_0(closure_2[9]).Easing.linear;
+                  num3 = 1;
+                  flag = false;
+                  num4 = -1;
+                  result1 = set(withRepeat(withTiming(1, obj1), -1, false));
+                  fn = () => {
+                    const obj = first(sharedValue[9]);
+                    return obj.cancelAnimation(closure_1_2);
+                  };
+                } else {
+                  tmp2 = closure_0;
+                  tmp3 = closure_2;
+                  obj = closure_0(closure_2[9]);
+                  tmp4 = closure_2;
+                  cancelAnimationResult = obj.cancelAnimation(closure_2);
+                  num = 0;
+                  result2 = closure_2.set(0);
+                }
+                return fn;
+              }
+            }
+            const items1 = [tmp18, tmp19, tmp20, tmp17, tmp17];
+            cResult[18] = tmp17;
+            cResult[19] = tmp18;
+            cResult[20] = tmp19;
+            cResult[21] = tmp20;
+            cResult[22] = items1;
+          }
+        }
+        const items2 = [, , ];
+        class X {
+          constructor() {
+            tmp = closure_3;
+            if (tmp) {
+              tmp7 = closure_2;
+              num2 = 0;
+              result = closure_2.set(0);
+              tmp9 = closure_0;
+              tmp10 = closure_2;
+              set = closure_2.set;
+              tmp11 = closure_0(closure_2[9]);
+              tmp12 = closure_0;
+              tmp13 = closure_2;
+              withRepeat = tmp11.withRepeat;
+              tmp14 = closure_0(closure_2[10]);
+              obj1 = { duration: 2000, easing: null };
+              tmp15 = closure_0;
+              tmp16 = closure_2;
+              withTiming = tmp14.withTiming;
+              obj1.easing = closure_0(closure_2[9]).Easing.linear;
+              num3 = 1;
+              flag = false;
+              num4 = -1;
+              result1 = set(withRepeat(withTiming(1, obj1), -1, false));
+              fn = () => {
+                const obj = first(sharedValue[9]);
+                return obj.cancelAnimation(closure_1_2);
+              };
+            } else {
+              tmp2 = closure_0;
+              tmp3 = closure_2;
+              obj = closure_0(closure_2[9]);
+              tmp4 = closure_2;
+              cancelAnimationResult = obj.cancelAnimation(closure_2);
+              num = 0;
+              result2 = closure_2.set(0);
+            }
+            return fn;
+          }
+        }
+        items2[1] = num;
+        items2[2] = sharedValue;
+        cResult[9] = tmp12;
+        cResult[10] = num;
+        cResult[11] = sharedValue;
+        cResult[12] = items2;
+        tmp15 = items2;
+      }
+      class X {
+        constructor() {
+          tmp = closure_3;
+          if (tmp) {
+            tmp7 = closure_2;
+            num2 = 0;
+            result = closure_2.set(0);
+            tmp9 = closure_0;
+            tmp10 = closure_2;
+            set = closure_2.set;
+            tmp11 = closure_0(closure_2[9]);
+            tmp12 = closure_0;
+            tmp13 = closure_2;
+            withRepeat = tmp11.withRepeat;
+            tmp14 = closure_0(closure_2[10]);
+            obj1 = { duration: 2000, easing: null };
+            tmp15 = closure_0;
+            tmp16 = closure_2;
+            withTiming = tmp14.withTiming;
+            obj1.easing = closure_0(closure_2[9]).Easing.linear;
+            num3 = 1;
+            flag = false;
+            num4 = -1;
+            result1 = set(withRepeat(withTiming(1, obj1), -1, false));
+            fn = () => {
+              const obj = first(sharedValue[9]);
+              return obj.cancelAnimation(closure_1_2);
+            };
+          } else {
+            tmp2 = closure_0;
+            tmp3 = closure_2;
+            obj = closure_0(closure_2[9]);
+            tmp4 = closure_2;
+            cancelAnimationResult = obj.cancelAnimation(closure_2);
+            num = 0;
+            result2 = closure_2.set(0);
+          }
+          return fn;
+        }
+      }
+      cResult[6] = tmp12;
+      cResult[7] = sharedValue;
+      cResult[8] = X;
+      tmp14 = X;
+    }
+  }
+  cResult[2] = live;
+  cResult[3] = stateFromStores;
+  cResult[4] = first;
+  cResult[5] = live && !stateFromStores && first > 0;
+  tmp12 = tmp13;
+}) : ((epoch) => {
   let View;
   let closure_2;
   let items3;
@@ -61,7 +370,7 @@ export default function VibegrationsConjureShimmer(epoch) {
   const tmp5 = sharedValue(live.useState(0), 2);
   const width = tmp5[0];
   dependencyMap = tmp5[1];
-  const obj3 = tint(4566);
+  const obj3 = tint(4570);
   sharedValue = obj3.useSharedValue(0);
   const tmp2 = tint;
   if (live) {
@@ -84,7 +393,7 @@ export default function VibegrationsConjureShimmer(epoch) {
       timing;
       const result1 = set(withRepeat(withTiming(1, obj2), -1, false));
       fn = () => {
-        const obj = tint(closure_2[7]);
+        const obj = tint(closure_2[9]);
         return obj.cancelAnimation(sharedValue);
       };
     } else {
@@ -98,7 +407,7 @@ export default function VibegrationsConjureShimmer(epoch) {
   let result = 4 * width;
   c5 = result;
   const memo = obj2.useMemo(() => {
-    const obj = _modDef672(tint);
+    const obj = _modDef684(tint);
     const alphaResult = obj.alpha(0);
     const cssResult = alphaResult.css();
     const items = [cssResult, cssResult, , , ];
@@ -108,20 +417,18 @@ export default function VibegrationsConjureShimmer(epoch) {
     items[4] = cssResult;
     return items;
   }, items2);
-  const tmp2Result = tmp2(4566);
-  class W {
-    constructor() {
-      let items;
-      const obj = { transform: items };
-      items = [{ translateX: -c5 + sharedValue.get() * (c5 + first) }];
-      ({ translateX: -c5 + sharedValue.get() * (c5 + first) });
-      return obj;
-    }
-  }
-  W.__closure = { bandWidth: result, progress: sharedValue, width };
-  W.__workletHash = 16230447544169;
-  W.__initData = __initData;
-  const animatedStyle = tmp2Result.useAnimatedStyle(W);
+  let fn = function j() {
+    let items;
+    const obj = { transform: items };
+    items = [{ translateX: -c5 + sharedValue.get() * (c5 + first) }];
+    ({ translateX: -c5 + sharedValue.get() * (c5 + first) });
+    return obj;
+  };
+  fn.__closure = { bandWidth: result, progress: sharedValue, width };
+  fn.__workletHash = 12946755285226;
+  fn.__initData = __initData;
+  const tmp2Result = tmp2(4570);
+  const animatedStyle = tmp2Result.useAnimatedStyle(fn);
   const obj4 = {
     style: tmp.root,
     onLayout: obj2.useCallback((nativeEvent) => {
@@ -143,20 +450,20 @@ export default function VibegrationsConjureShimmer(epoch) {
     const obj5 = { style: c5.absoluteFill, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_8(tmp18, obj6) };
     obj6 = { style: c5.absoluteFill, androidRenderingMode: "software", maskElement: closure_8(closure_6, obj7), children: closure_8(View, obj8) };
     obj7 = { children: renderFace() };
-    tmp18 = width(5976);
-    obj8 = { style: items4, children: closure_8(width(5293), obj10) };
+    tmp18 = width(5975);
+    obj8 = { style: items4, children: closure_8(width(5292), obj10) };
     items4 = [tmp.band, , ];
     const obj9 = { width: result };
     items4[1] = obj9;
     items4[2] = animatedStyle;
-    View = width(4566).View;
+    View = width(4570).View;
     obj10 = { style: tmp.fill, start, end, colors: memo, locations };
     tmp14 = closure_8(tmp13, obj5);
   }
   items3[1] = tmp14;
   return tmp12(closure_6, obj4);
-};
-export const shouldSweep = function shouldSweep(reducedMotion) {
+});
+function shouldSweep(reducedMotion) {
   let live;
   let width;
   ({ live, width } = reducedMotion);
@@ -167,4 +474,8 @@ export const shouldSweep = function shouldSweep(reducedMotion) {
     live = width > 0;
   }
   return live;
-};
+}
+let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsConjureShimmer.tsx");
+
+export default tmp4;
+export { shouldSweep };

@@ -1,16 +1,19 @@
 // Module ID: 10012
 // Function ID: 10013
-// Dependencies: [41, 42, 93, 95, 98, 10010, 9902]
+// Dependencies: [41, 42, 93, 95, 98, 9932, 10013, 9959, 9939]
 
 // Module 10012
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
-import _mod10010 from "module_10010" /* 10010 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9932 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9939 */;
+import _mod10013 from "module_10013" /* 10013 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+let tmp2;
+const _mod9959 = tmp2(9959);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -26,14 +29,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const keys = Object.keys(_mod10010.WEEKDAY_OFFSET);
-const regExp = new RegExp("(?<prefix>\u4E0A|\u4ECA|\u4E0B|\u9019|\u5462)(?:\u500B)?(?:\u661F\u671F|\u79AE\u62DC|\u9031)(?<weekday>" + keys.join("|") + ")");
-class ZHHantRelationWeekdayParser {
+const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:(este|esta|passado|pr[o\u00F3]ximo)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod10013.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(este|esta|passado|pr[\u00F3o]ximo)\\s*semana)?(?=\\W|\\d|$)", "i");
+class PTWeekdayParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHantRelationWeekdayParser);
-    const obj = _getPrototypeOf(ZHHantRelationWeekdayParser);
+    _classCallCheck(this, PTWeekdayParser);
+    const obj = _getPrototypeOf(PTWeekdayParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,7 +47,7 @@ class ZHHantRelationWeekdayParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHantRelationWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(PTWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
@@ -56,82 +58,32 @@ const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp2 = _mod10010.WEEKDAY_OFFSET[index.groups.weekday];
-      if (undefined === tmp2) {
+    value: function innerExtract(reference, arg1) {
+      const str = arg1[2];
+      const formatted = str.toLowerCase();
+      const tmp4 = _mod10013.WEEKDAY_DICTIONARY[formatted];
+      if (undefined === tmp4) {
         return null;
       } else {
-        const prefix = index.groups.prefix;
-        let str2 = "last";
-        if ("\u4E0A" != prefix) {
-          str2 = "next";
-          if ("\u4E0B" != prefix) {
-            str2 = null;
-            const tmp3 = "\u4ECA" != prefix && "\u9019" != prefix && "\u5462" != prefix;
-            if (!tmp3) {
-              str2 = "this";
+        const str2 = arg1[1] || arg1[3] || "";
+        const formatted1 = str2.toLowerCase();
+        let str5 = "this";
+        if ("passado" != formatted1) {
+          str5 = "next";
+          if ("pr\u00F3ximo" != formatted1) {
+            str5 = "next";
+            if ("proximo" != formatted1) {
+              str5 = null;
+              if ("este" == formatted1) {
+                str5 = "this";
+              }
             }
           }
         }
-        const _Date = Date;
-        const refDate = createParsingResult.refDate;
-        const self = this;
-        const self2 = this;
-        const date = new Date(refDate.getTime());
-        const day = date.getDay();
-        if ("last" != str2) {
-          let flag;
-          if ("past" != str2) {
-            if ("next" == str2) {
-              date.setDate(date.getDate() + (tmp2 + 7 - day));
-              flag = true;
-            } else if ("this" == str2) {
-              date.setDate(date.getDate() + (tmp2 - day));
-              flag = false;
-            } else {
-              const diff = tmp2 - day;
-              const _Math3 = Math;
-              const _Math4 = Math;
-              const absolute = Math.abs(diff - 7);
-              let diff1 = diff;
-              if (absolute < Math.abs(diff)) {
-                diff1 = diff - 7;
-              }
-              const _Math = Math;
-              const _Math2 = Math;
-              const absolute1 = Math.abs(diff1 + 7);
-              let sum = diff1;
-              if (absolute1 < Math.abs(diff1)) {
-                sum = diff1 + 7;
-              }
-              date.setDate(date.getDate() + sum);
-              flag = false;
-            }
-          }
-          const start = parsingResult.start;
-          start.assign("weekday", tmp2);
-          const start2 = parsingResult.start;
-          if (flag) {
-            start2.assign("day", date.getDate());
-            const start5 = parsingResult.start;
-            start5.assign("month", date.getMonth() + 1);
-            const start6 = parsingResult.start;
-            start6.assign("year", date.getFullYear());
-          } else {
-            start2.imply("day", date.getDate());
-            const start3 = parsingResult.start;
-            start3.imply("month", date.getMonth() + 1);
-            const start4 = parsingResult.start;
-            start4.imply("year", date.getFullYear());
-          }
-          return parsingResult;
-        }
-        date.setDate(date.getDate() + (tmp2 - 7 - day));
-        flag = true;
+        return _mod9959.createParsingComponentsAtWeekday(reference.reference, tmp4, str5);
       }
     }
   }
 ];
 
-export default _createClass(ZHHantRelationWeekdayParser, items);
+export default _createClass(PTWeekdayParser, items);

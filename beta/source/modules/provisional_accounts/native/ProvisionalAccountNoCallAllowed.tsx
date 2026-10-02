@@ -1,25 +1,81 @@
-// Module ID: 13344
-// Function ID: 13345
+// Module ID: 13346
+// Function ID: 13347
 // Name: ProvisionalAccountNoCallAllowed
-// Dependencies: [19, 1074, 21, 4836, 5209, 6028, 1115, 2111, 5209, 2]
-// Exports: default
+// Dependencies: [19, 1086, 21, 4837, 558, 576, 6351, 1127, 2114, 5210, 5210, 2]
 
-// Module 13344 (ProvisionalAccountNoCallAllowed)
+// Module 13346 (ProvisionalAccountNoCallAllowed)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1074 */;
-import intl4 from "intl" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import AlertModal2 from "AlertModal" /* 5209 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl4 from "intl" /* 1127 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import AlertModal2 from "AlertModal" /* 5210 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6351 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ header: { alignSelf: "center" } });
-const result = size.fileFinishedImporting("modules/provisional_accounts/native/ProvisionalAccountNoCallAllowed.tsx");
-
-export default function ProvisionalAccountNoCallAllowed() {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let intl3;
+  let obj4;
+  let tmp15;
+  let tmp18;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(7);
+  const tmp4 = closure_5();
+  if (cResult[0] !== tmp4.header) {
+    const tmp7 = jsx(CircleErrorIcon.CircleErrorIcon, { size: "lg", style: tmp4.header });
+    cResult[0] = tmp4.header;
+    cResult[1] = tmp7;
+    tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl4.t["vh+Zpq"]);
+    const intl2 = tmp(1127).intl;
+    const format = intl2.format;
+    const obj3 = { helpdeskArticle: obj4.getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS) };
+    const prop = tmp(1127).t["tx08s+"];
+    obj4 = HelpdeskUtilsDefault;
+    const formatResult = format(prop, obj3);
+    cResult[2] = stringResult;
+    cResult[3] = formatResult;
+    tmp9 = formatResult;
+    tmp8 = stringResult;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const AlertActions = tmp(5210).AlertActions;
+    ({ variant: "secondary", text: intl3.string(intl4.t["NX+WJN"]) });
+    const AlertActionButton = tmp(5210).AlertActionButton;
+    intl3 = tmp(1127).intl;
+    const tmp17 = <AlertActions>{null}</AlertActions>;
+    cResult[4] = tmp17;
+    tmp15 = tmp17;
+  } else {
+    tmp15 = cResult[4];
+  }
+  if (cResult[5] !== tmp5) {
+    const tmp20 = jsx(AlertModal2.AlertModal, { header: tmp5, title: tmp8, content: tmp9, actions: tmp15 });
+    cResult[5] = tmp5;
+    cResult[6] = tmp20;
+    tmp18 = tmp20;
+  } else {
+    tmp18 = cResult[6];
+  }
+  return tmp18;
+}) : (() => {
   let intl3;
   let obj4;
   const tmp = closure_5();
@@ -35,4 +91,7 @@ export default function ProvisionalAccountNoCallAllowed() {
   const AlertActionButton = AlertModal2.AlertActionButton;
   intl3 = intl4.intl;
   return <AlertModal header={null} title={intl.string(intl4.t["vh+Zpq"])} content={format(prop, obj3)} actions={null} />;
-};
+});
+const result = size.fileFinishedImporting("modules/provisional_accounts/native/ProvisionalAccountNoCallAllowed.tsx");
+
+export default tmp3;

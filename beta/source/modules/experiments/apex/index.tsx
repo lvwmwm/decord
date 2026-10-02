@@ -1,12 +1,12 @@
-// Module ID: 1435
-// Function ID: 1436
+// Module ID: 1441
+// Function ID: 1442
 // Name: ApexExperiment
-// Dependencies: [1235, 2, 1436, 1438]
+// Dependencies: [1247, 2, 1442, 1444]
 
-// Module 1435 (ApexExperiment)
-import apex_ApexExperiment from "apex/ApexExperiment" /* 1436 */;
-import apex_ApexTypes from "apex/ApexTypes" /* 1438 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
+// Module 1441 (ApexExperiment)
+import apex_ApexExperiment from "apex/ApexExperiment" /* 1442 */;
+import apex_ApexTypes from "apex/ApexTypes" /* 1444 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1247 */;
 import size from "module_2" /* 2 */;
 
 const apex_ApexExperimentDefault = apex_ApexExperiment;

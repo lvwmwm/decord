@@ -1,16 +1,16 @@
-// Module ID: 6550
-// Function ID: 6551
+// Module ID: 6551
+// Function ID: 6552
 // Name: GuildRoleMemberActionCreators
-// Dependencies: [5, 6549, 1074, 573, 1271, 1439, 5832, 2]
+// Dependencies: [5, 6550, 1086, 585, 1283, 1445, 5833, 2]
 // Exports: fetchMemberCounts, requestMembersForRole
 
-// Module 6550 (GuildRoleMemberActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import LRUCacheDefault from "LRUCache" /* 1439 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
+// Module 6551 (GuildRoleMemberActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import LRUCacheDefault from "LRUCache" /* 1445 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5833 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6549 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6550 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let obj = function _fetchMemberCountsFromBackend() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ let obj = function _fetchMemberCountsFromBackend() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -113,7 +113,7 @@ obj = function _fetchMemberCounts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -144,7 +144,7 @@ obj = function _fetchMemberCounts() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp6) {
         c1 = 3;
         throw tmp6;

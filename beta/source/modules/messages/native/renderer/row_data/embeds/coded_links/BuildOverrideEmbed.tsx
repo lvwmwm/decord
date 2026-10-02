@@ -1,22 +1,22 @@
-// Module ID: 12793
-// Function ID: 12794
+// Module ID: 12795
+// Function ID: 12796
 // Name: BuildOverrideEmbed
-// Dependencies: [17, 10969, 7155, 7387, 11267, 12794, 1363, 1115, 7378, 576, 4685, 11286, 11287, 12792, 2]
+// Dependencies: [17, 10837, 7159, 7391, 11141, 12796, 1369, 1127, 7382, 588, 4687, 11160, 11161, 12794, 2]
 // Exports: createBuildOverrideEmbed
 
-// Module 12793 (BuildOverrideEmbed)
+// Module 12795 (BuildOverrideEmbed)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl6 from "intl" /* 1115 */;
-import react_nativeAll from "react-native" /* 1363 */;
-import shared from "shared" /* 4685 */;
-import Constants from "Constants" /* 7155 */;
-import react_native2 from "react-native" /* 7378 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7387 */;
-import BuildOverrideStore2 from "BuildOverrideStore" /* 10969 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11267 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12792 */;
-import validateBuildOverrideDefault from "validateBuildOverride" /* 12794 */;
+import nativeDefault from "native" /* 588 */;
+import intl6 from "intl" /* 1127 */;
+import react_nativeAll from "react-native" /* 1369 */;
+import shared from "shared" /* 4687 */;
+import Constants from "Constants" /* 7159 */;
+import react_native2 from "react-native" /* 7382 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7391 */;
+import BuildOverrideStore2 from "BuildOverrideStore" /* 10837 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11141 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12794 */;
+import validateBuildOverrideDefault from "validateBuildOverride" /* 12796 */;
 import size from "module_2" /* 2 */;
 
 const BuildOverrideStore = BuildOverrideStore2;
@@ -101,17 +101,17 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
                 }
               }
               if ("branch" === type) {
-                RCYGot = tmp28(1115).t.p9TwTG;
+                RCYGot = tmp28(1127).t.p9TwTG;
               } else {
-                RCYGot = tmp28(1115).t.RCYGot;
+                RCYGot = tmp28(1127).t.RCYGot;
               }
               str2 = "primary";
               if (tmp10) {
                 str2 = "destructive";
               }
-              const intl5 = tmp28(1115).intl;
+              const intl5 = tmp28(1127).intl;
               const string2 = intl5.string;
-              const t = tmp28(1115).t;
+              const t = tmp28(1127).t;
               if (tmp10) {
                 string2Result = string2(t.tX4xrt);
               } else {
@@ -130,8 +130,8 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
     stringResult1 = intl.string(intl6.t.d34xi4);
     obj4 = react_native2;
     if (tmpResultResult.valid) {
-      const intl2 = tmp20(1115).intl;
-      reason = intl2.string(tmp20(1115).t.ODXApH);
+      const intl2 = tmp20(1127).intl;
+      reason = intl2.string(tmp20(1127).t.ODXApH);
     } else {
       reason = tmpResultResult.reason;
     }
@@ -142,9 +142,9 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
     resolveAssetSource = Image.resolveAssetSource;
     const tmp20Result = shared;
     if (tmp20Result.isThemeDark(arg1)) {
-      tmpResult2 = tmp(11286);
+      tmpResult2 = tmp(11160);
     } else {
-      tmpResult2 = tmp(11287);
+      tmpResult2 = tmp(11161);
     }
   }
 };

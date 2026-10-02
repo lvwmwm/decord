@@ -1,16 +1,16 @@
-// Module ID: 15787
-// Function ID: 15788
+// Module ID: 15786
+// Function ID: 15787
 // Name: LurkerServerPreviewJoinButton
-// Dependencies: [5, 32, 19, 2045, 4470, 1074, 21, 9285, 1186, 5832, 5281, 1115, 2]
+// Dependencies: [5, 32, 19, 2051, 4473, 1086, 21, 9263, 1198, 5833, 5282, 1127, 2]
 
-// Module 15787 (LurkerServerPreviewJoinButton)
+// Module 15786 (LurkerServerPreviewJoinButton)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import LurkingStore from "LurkingStore" /* 4470 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import LurkingStore from "LurkingStore" /* 4473 */;
 import size from "module_2" /* 2 */;
 
 let c4;
@@ -43,7 +43,7 @@ const memoResult = react.memo(function LurkerServerPreviewJoinButton(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -119,7 +119,7 @@ const memoResult = react.memo(function LurkerServerPreviewJoinButton(guildId) {
           closure_128_3(false);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp41) {
         loading = tmp41;
         if (0 === c3) {

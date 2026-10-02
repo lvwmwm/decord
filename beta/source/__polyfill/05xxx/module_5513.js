@@ -1,9 +1,10 @@
 // Module ID: 5513
 // Function ID: 5514
-// Dependencies: [5514]
+// Dependencies: [5514, 5516]
 
 // Module 5513
 import _mod5514 from "module_5514" /* 5514 */;
+import _mod5516 from "module_5516" /* 5516 */;
 
 let hasOwnProperty;
 
@@ -65,3 +66,4 @@ let tmp3 = self && self.__exportStar || ((obj, arg1) => {
   }
 });
 tmp3(_mod5514, exports);
+tmp3(_mod5516, exports);

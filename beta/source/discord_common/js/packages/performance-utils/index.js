@@ -1,10 +1,10 @@
-// Module ID: 569
-// Function ID: 570
+// Module ID: 581
+// Function ID: 582
 // Name: navigationStart
-// Dependencies: [570, 2]
+// Dependencies: [582, 2]
 
-// Module 569 (navigationStart)
-import module_570 from "module_570" /* 570 */;
+// Module 581 (navigationStart)
+import module_582 from "module_582" /* 582 */;
 import size from "module_2" /* 2 */;
 
 try {

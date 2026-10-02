@@ -1,15 +1,15 @@
-// Module ID: 15557
-// Function ID: 15558
+// Module ID: 15545
+// Function ID: 15546
 // Name: ScreenRecordingUtils
-// Dependencies: [5, 17, 15556, 5203, 15558, 15559, 4800, 15560, 1981, 9647, 5440, 7650, 9646, 1479, 2]
+// Dependencies: [5, 17, 15544, 5204, 15546, 15547, 4801, 15548, 1987, 12273, 5441, 7654, 12272, 1485, 2]
 // Exports: handleRecordingPhase, handleStopAndSend
 
-// Module 15557 (ScreenRecordingUtils)
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import bug_reporter_BugReportUtils from "bug_reporter/BugReportUtils" /* 9647 */;
-import ScreenRecordingStore from "ScreenRecordingStore" /* 15556 */;
-import react_nativeDefault from "react-native" /* 15558 */;
-import StudyConfig from "StudyConfig" /* 15559 */;
+// Module 15545 (ScreenRecordingUtils)
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
+import bug_reporter_BugReportUtils from "bug_reporter/BugReportUtils" /* 12273 */;
+import ScreenRecordingStore from "ScreenRecordingStore" /* 15544 */;
+import react_nativeDefault from "react-native" /* 15546 */;
+import StudyConfig from "StudyConfig" /* 15547 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 import size_mod from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let obj = function _getLatestVideo() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -118,7 +118,7 @@ obj = function _checkAndRequestPermissions() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -210,7 +210,7 @@ obj = function _startRecordingProcess() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -311,7 +311,7 @@ obj = function _stopRecordingProcess() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -591,7 +591,7 @@ obj = function _submitBugReportWithScreenRecording() {
           return { value: bugReportConfig, done: false };
         }
       }
-      await "HermesInternal";
+      await "IconComponent";
       closure_6 = tmp;
       const currentSurveyId = state.getState().currentSurveyId;
       if (null != currentSurveyId) {
@@ -638,7 +638,7 @@ obj = function _handleStopAndSend() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -674,7 +674,7 @@ obj = function _handleStopAndSend() {
                       obj = { value, done: true };
                       return obj;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     try {
@@ -709,7 +709,7 @@ obj = function _handleStopAndSend() {
                         const state1 = closure_2_4.getState();
                         state1.stopRecording();
                         c2 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "IconComponent", done: null };
                       }
                     } catch (tmp12) {
                       c2 = 3;
@@ -747,7 +747,7 @@ obj = function _handleStopAndSend() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -777,7 +777,7 @@ obj = function _handleRecordingPhase() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -857,7 +857,7 @@ obj = function _handleRecordingPhase() {
             success = success.success;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp18) {
         c4 = 3;

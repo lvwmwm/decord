@@ -1,77 +1,66 @@
 // Module ID: 1564
 // Function ID: 1565
 // Name: react
-// Dependencies: [19, 1529]
-// Exports: useFocusEvents
+// Dependencies: [19, 1534]
+// Exports: useFocusEffect
 
 // Module 1564 (react)
-import react2 from "react" /* 1529 */;
+import _mod1534 from "module_1534" /* 1534 */;
 import react from "react" /* 19 */;
 
+let _undefined, c0, c1, navigation;
 
-export const useFocusEvents = function useFocusEvents(arg0) {
-  let emitter;
-  let state;
-  ({ state, emitter } = arg0);
-  const context = react.useContext(react2.NavigationContext);
-  let closure_2 = react.useRef(undefined);
-  const key = state.routes[state.index].key;
-  const items = [key, emitter, context];
+
+export const useFocusEffect = function useFocusEffect(cResult) {
+  let closure_0 = cResult;
+  const obj = _mod1534;
+  navigation = obj.useNavigation();
+  if (undefined !== arguments[1]) {
+    let tmp2 = globalThis;
+    const _console = console;
+    console.error("You passed a second argument to 'useFocusEffect', but it only accepts one argument. If you want to pass a dependency array, you can use 'React.useCallback':\n\nuseFocusEffect(\n  React.useCallback(() => {\n    // Your code here\n  }, [depA, depB])\n);\n\nSee usage guide: https://reactnavigation.org/docs/use-focus-effect");
+  }
+  const items = [cResult, navigation];
   const effect = react.useEffect(() => {
-    let obj = context;
-    let addListenerResult;
-    if (context != null) {
-      addListenerResult = obj.addListener("focus", () => {
-        ref.current = target;
-        const obj = { type: "focus", target };
-        emitter.emit(obj);
-      });
+    navigation = false;
+    if (navigation.isFocused()) {
+      let tmp3;
+      let tmp = c0;
+      const tmp2 = c0();
+      if (undefined === tmp2) {
+        tmp3 = tmp2;
+      }
+      c0 = tmp3;
+      navigation = true;
     }
-    return addListenerResult;
+    let closure_2 = obj.addListener("focus", () => {
+      const tmp = c1;
+      if (!tmp) {
+        let tmp5;
+        if (undefined !== _undefined) {
+          _undefined();
+        }
+        const tmp4 = _undefined();
+        if (undefined === tmp4) {
+          tmp5 = tmp4;
+        }
+        _undefined = tmp5;
+        c1 = true;
+      }
+    });
+    let closure_3 = obj.addListener("blur", () => {
+      if (undefined !== _undefined) {
+        _undefined();
+      }
+      _undefined = undefined;
+      c1 = false;
+    });
+    return () => {
+      if (undefined !== _undefined) {
+        _undefined();
+      }
+      closure_2();
+      closure_3();
+    };
   }, items);
-  const items1 = [key, emitter, context];
-  const effect1 = react.useEffect(() => {
-    let target;
-    let obj = context;
-    let addListenerResult;
-    if (context != null) {
-      addListenerResult = obj.addListener("blur", () => {
-        ref.current = undefined;
-        const obj = { type: "blur", target };
-        emitter.emit(obj);
-      });
-    }
-    return addListenerResult;
-  }, items1);
-  const items2 = [key, emitter, context];
-  const effect2 = react.useEffect(() => {
-    const current = ref.current;
-    let isFocusedResult = !context;
-    const tmp = ref;
-    if (context) {
-      isFocusedResult = obj.isFocused();
-    }
-    if (isFocusedResult) {
-      tmp.current = key;
-    }
-    const tmp5 = undefined !== current || context;
-    if (!tmp5) {
-      const obj2 = { type: "focus", target: key };
-      emitter.emit(obj2);
-    }
-    let tmp10 = current !== key;
-    const tmp9 = key;
-    if (tmp10) {
-      tmp10 = isFocusedResult;
-    }
-    if (tmp10) {
-      tmp10 = tmp4;
-    }
-    if (tmp10) {
-      const obj3 = { type: "blur", target: current };
-      emitter.emit(obj3);
-      const obj4 = { type: "focus", target: tmp9 };
-      emitter.emit(obj4);
-    }
-  }, items2);
 };

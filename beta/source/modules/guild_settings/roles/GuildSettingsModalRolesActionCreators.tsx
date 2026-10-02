@@ -1,11 +1,11 @@
-// Module ID: 17417
-// Function ID: 17418
+// Module ID: 17419
+// Function ID: 17420
 // Name: GuildSettingsModalRolesActionCreators
-// Dependencies: [5, 1074, 1271, 6741, 573, 2]
+// Dependencies: [5, 1086, 1283, 6742, 585, 2]
 
-// Module 17417 (GuildSettingsModalRolesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
+// Module 17419 (GuildSettingsModalRolesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj = function _updateGuildRole() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -64,7 +64,7 @@ let obj = function _updateGuildRole() {
             value = undefined;
             c4 = 1;
             hoist = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

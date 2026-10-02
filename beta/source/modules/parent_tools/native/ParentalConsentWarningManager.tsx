@@ -1,26 +1,26 @@
-// Module ID: 17230
-// Function ID: 17231
+// Module ID: 17232
+// Function ID: 17233
 // Name: ParentalConsentWarningManager
-// Dependencies: [4521, 6957, 14403, 6958, 1074, 14404, 4800, 17231, 1981, 6539, 17235, 2]
+// Dependencies: [4524, 6961, 14391, 6962, 1086, 14392, 4801, 17233, 1987, 6540, 17237, 2]
 
-// Module 17230 (ParentalConsentWarningManager)
-import Constants from "Constants" /* 1074 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import ParentalConsentWarningTypes from "ParentalConsentWarningTypes" /* 14404 */;
-import ParentalConsentWarningActionCreators from "ParentalConsentWarningActionCreators" /* 17235 */;
-import ActionSheetStore from "ActionSheetStore" /* 4521 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
-import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 14403 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 6958 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+// Module 17232 (ParentalConsentWarningManager)
+import Constants from "Constants" /* 1086 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import ParentalConsentWarningTypes from "ParentalConsentWarningTypes" /* 14392 */;
+import ParentalConsentWarningActionCreators from "ParentalConsentWarningActionCreators" /* 17237 */;
+import ActionSheetStore from "ActionSheetStore" /* 4524 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 14391 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 6962 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 
 let metroImportAll;
 let metroImportDefault;
-const f107460 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
+const f129616 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
 function maybePresentModal(daysRemaining) {
   daysRemaining = undefined;
   if (daysRemaining != null) {
@@ -37,7 +37,7 @@ function maybePresentModal(daysRemaining) {
   if (tmp5) {
     const _Object = Object;
     const values = Object.values(FamilyCenterStore.getLinkedUsers());
-    tmp5 = !values.some(f107460);
+    tmp5 = !values.some(f129616);
   }
   if (tmp5) {
     tmp5 = !ActionSheetStore.isOpen();
@@ -45,7 +45,7 @@ function maybePresentModal(daysRemaining) {
   if (tmp5) {
     const obj = { daysRemaining };
     const obj2 = ActionSheetActionCreatorsDefault;
-    obj2.openLazy(asyncRequire(17231, dependencyMap.paths), "ParentalConsentWarningModal", obj);
+    obj2.openLazy(asyncRequire(17233, dependencyMap.paths), "ParentalConsentWarningModal", obj);
   }
 }
 ({ UserLinkStatus: metroImportDefault, UserLinkType: metroImportAll } = FamilyCenterConstants);
@@ -60,7 +60,7 @@ class ParentalConsentWarningManager extends AutomaticLifecycleManager {
       },
       POST_CONNECTION_OPEN() {
         const values = Object.values(linkedUsers.getLinkedUsers());
-        c3 = values.some(f107460);
+        c3 = values.some(f129616);
         const obj2 = ParentalConsentWarningActionCreators;
         obj2.maybeFetchWarning();
         const obj3 = ParentalConsentWarningStore;
@@ -83,7 +83,7 @@ class ParentalConsentWarningManager extends AutomaticLifecycleManager {
         user = user.user;
         if (undefined !== user.linked_users) {
           const linked_users = user.linked_users;
-          const someResult = linked_users.some(f107460);
+          const someResult = linked_users.some(f129616);
           c3 = someResult;
           const tmp = undefined !== c3 && c3 !== someResult;
           if (tmp) {

@@ -1,23 +1,25 @@
-// Module ID: 13518
-// Function ID: 13519
+// Module ID: 13520
+// Function ID: 13521
 // Name: GuildActionSheetTabItems
-// Dependencies: [19, 2045, 4467, 2099, 1074, 21, 13506, 4743, 504, 9278, 9275, 5745, 7363, 1115, 8678, 576, 5016, 4800, 5746, 9491, 7391, 6540, 6799, 9048, 2]
-// Exports: default
+// Dependencies: [19, 2051, 4470, 2102, 1086, 21, 558, 576, 13508, 4745, 504, 9256, 9253, 1127, 8675, 588, 5017, 4801, 5747, 7362, 9487, 7395, 6541, 6800, 9025, 5746, 2]
 
-// Module 13518 (GuildActionSheetTabItems)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import actions_BoostingActionCreatorsAll from "actions/BoostingActionCreators" /* 5746 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9048 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9278 */;
+// Module 13520 (GuildActionSheetTabItems)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5017 */;
+import actions_BoostingActionCreatorsAll from "actions/BoostingActionCreators" /* 5747 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6541 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9025 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9256 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildChannelStore from "GuildChannelStore" /* 4467 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildChannelStore from "GuildChannelStore" /* 4470 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let guild, importAll;
 
 let c10;
 let c9;
@@ -26,12 +28,366 @@ let map1;
 let metroImportAll;
 let tmp3;
 let unpackModuleId;
-const instant_invite_InstantInviteUtils = tmp3(9275);
+const instant_invite_InstantInviteUtils = tmp3(9253);
 ({ AnalyticEvents: metroImportAll, AnalyticsObjects: c9, AnalyticsSections: c10, InstantInviteSources: unpackModuleId } = Constants);
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
-let result = size.fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetTabItems.tsx");
-
-export default function GuildActionSheetTabItems(guild) {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+  let closure_2;
+  let first;
+  let intl3;
+  let intl4;
+  let items1;
+  let stateFromStores;
+  let tmp7;
+  const tmp = guild;
+  let obj = guild(576);
+  const cResult = obj.c(32);
+  guild = guild.guild;
+  let obj2 = guild(13508);
+  const canAccessSettings = obj2.useGuildActionSheetPermissions(guild).canAccessSettings;
+  const total = stateFromStores(4745)(guild.id).total;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guild.id) {
+    const fn = function _() {
+      return GuildChannelStore.getChannels(guild.id);
+    };
+    cResult[1] = guild.id;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  if (cResult[3] === stateFromStores) {
+    let tmp9;
+    if (cResult[4] === guild) {
+      tmp9 = cResult[5];
+    }
+    if (cResult[6] === stateFromStores) {
+      let tmp11;
+      let tmp12;
+      let tmp13;
+      let tmp15;
+      if (cResult[7] === guild) {
+        tmp11 = cResult[8];
+      }
+      importAll = tmp11;
+      const _Symbol = Symbol;
+      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+        let obj3 = { flexWrap: "wrap" };
+        cResult[9] = obj3;
+        tmp12 = obj3;
+      } else {
+        tmp12 = cResult[9];
+      }
+      if (cResult[10] !== total) {
+        let formatToPlainStringResult;
+        if (total > 0) {
+          const intl2 = tmp(1127).intl;
+          let obj4 = { subscriptions: total };
+          formatToPlainStringResult = intl2.formatToPlainString(tmp(1127).t["pob/cL"], obj4);
+        } else {
+          const intl = tmp(1127).intl;
+          formatToPlainStringResult = intl.string(tmp(1127).t.Uj0md3);
+        }
+        cResult[10] = total;
+        cResult[11] = formatToPlainStringResult;
+        tmp13 = formatToPlainStringResult;
+      } else {
+        tmp13 = cResult[11];
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+        let obj5 = { color: tmp4(588).unsafe_rawColors.GUILD_BOOSTING_PINK };
+        const BoostGemIcon = tmp(8675).BoostGemIcon;
+        const tmp17 = closure_12(BoostGemIcon, obj5);
+        cResult[12] = tmp17;
+        tmp15 = tmp17;
+      } else {
+        tmp15 = cResult[12];
+      }
+      if (cResult[13] !== guild.id) {
+        class R {
+          constructor() {
+            let obj3;
+            const obj2 = { location: obj3 };
+            obj3 = { section: constants2.GUILD_POPOUT, object: constants.BOOST_GEM_ICON };
+            const obj = AppAnalyticsUtilsDefault;
+            obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
+            const obj4 = ActionSheetActionCreatorsDefault;
+            obj4.hideActionSheet();
+            const obj5 = actions_BoostingActionCreatorsAll;
+            obj5.openApplyBoostModal(guild.id);
+          }
+        }
+        cResult[13] = guild.id;
+        cResult[14] = R;
+      } else {
+        class R {
+          constructor() {
+            let obj3;
+            const obj2 = { location: obj3 };
+            obj3 = { section: constants2.GUILD_POPOUT, object: constants.BOOST_GEM_ICON };
+            const obj = AppAnalyticsUtilsDefault;
+            obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
+            const obj4 = ActionSheetActionCreatorsDefault;
+            obj4.hideActionSheet();
+            const obj5 = actions_BoostingActionCreatorsAll;
+            obj5.openApplyBoostModal(guild.id);
+          }
+        }
+      }
+      if (cResult[15] === tmp13) {
+        class R {
+          constructor() {
+            let obj3;
+            const obj2 = { location: obj3 };
+            obj3 = { section: constants2.GUILD_POPOUT, object: constants.BOOST_GEM_ICON };
+            const obj = AppAnalyticsUtilsDefault;
+            obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
+            const obj4 = ActionSheetActionCreatorsDefault;
+            obj4.hideActionSheet();
+            const obj5 = actions_BoostingActionCreatorsAll;
+            obj5.openApplyBoostModal(guild.id);
+          }
+        }
+        if (cResult[18] === tmp9) {
+          let tmp24;
+          class R {
+            constructor() {
+              let obj3;
+              const obj2 = { location: obj3 };
+              obj3 = { section: constants2.GUILD_POPOUT, object: constants.BOOST_GEM_ICON };
+              const obj = AppAnalyticsUtilsDefault;
+              obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
+              const obj4 = ActionSheetActionCreatorsDefault;
+              obj4.hideActionSheet();
+              const obj5 = actions_BoostingActionCreatorsAll;
+              obj5.openApplyBoostModal(guild.id);
+            }
+          }
+          const _Symbol3 = Symbol;
+          if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
+            class R {
+              constructor() {
+                let obj3;
+                const obj2 = { location: obj3 };
+                obj3 = { section: constants2.GUILD_POPOUT, object: constants.BOOST_GEM_ICON };
+                const obj = AppAnalyticsUtilsDefault;
+                obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
+                const obj4 = ActionSheetActionCreatorsDefault;
+                obj4.hideActionSheet();
+                const obj5 = actions_BoostingActionCreatorsAll;
+                obj5.openApplyBoostModal(guild.id);
+              }
+            }
+            const stringResult = obj10.string(tmp(1127).t.HcoRu0);
+            cResult[21] = stringResult;
+            tmp24 = stringResult;
+          } else {
+            class R {
+              constructor() {
+                let obj3;
+                const obj2 = { location: obj3 };
+                obj3 = { section: constants2.GUILD_POPOUT, object: constants.BOOST_GEM_ICON };
+                const obj = AppAnalyticsUtilsDefault;
+                obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
+                const obj4 = ActionSheetActionCreatorsDefault;
+                obj4.hideActionSheet();
+                const obj5 = actions_BoostingActionCreatorsAll;
+                obj5.openApplyBoostModal(guild.id);
+              }
+            }
+          }
+          if (cResult[22] !== guild.id) {
+            class R {
+              constructor() {
+                let obj3;
+                const obj2 = { location: obj3 };
+                obj3 = { section: constants2.GUILD_POPOUT, object: constants.BOOST_GEM_ICON };
+                const obj = AppAnalyticsUtilsDefault;
+                obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
+                const obj4 = ActionSheetActionCreatorsDefault;
+                obj4.hideActionSheet();
+                const obj5 = actions_BoostingActionCreatorsAll;
+                obj5.openApplyBoostModal(guild.id);
+              }
+            }
+            const obj6 = {
+              variant: "secondary",
+              label: tmp24,
+              icon: stateFromStores(7395),
+              grow: true,
+              onPress() {
+                          const obj = ActionSheetActionCreatorsDefault;
+                          obj.hideActionSheet();
+                          const obj2 = NotificationSettingsModalActionCreatorsDefault;
+                          obj2.open(guild.id);
+                        }
+            };
+            const IconButton2 = tmp(7362).IconButton;
+            cResult[22] = guild.id;
+            cResult[23] = closure_12(IconButton2, obj6);
+            const tmp27 = closure_12(IconButton2, obj6);
+          } else {
+            class R {
+              constructor() {
+                let obj3;
+                const obj2 = { location: obj3 };
+                obj3 = { section: constants2.GUILD_POPOUT, object: constants.BOOST_GEM_ICON };
+                const obj = AppAnalyticsUtilsDefault;
+                obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
+                const obj4 = ActionSheetActionCreatorsDefault;
+                obj4.hideActionSheet();
+                const obj5 = actions_BoostingActionCreatorsAll;
+                obj5.openApplyBoostModal(guild.id);
+              }
+            }
+          }
+          if (cResult[24] === canAccessSettings) {
+            class R {
+              constructor() {
+                let obj3;
+                const obj2 = { location: obj3 };
+                obj3 = { section: constants2.GUILD_POPOUT, object: constants.BOOST_GEM_ICON };
+                const obj = AppAnalyticsUtilsDefault;
+                obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
+                const obj4 = ActionSheetActionCreatorsDefault;
+                obj4.hideActionSheet();
+                const obj5 = actions_BoostingActionCreatorsAll;
+                obj5.openApplyBoostModal(guild.id);
+              }
+            }
+            if (cResult[27] === tmp22) {
+              class R {
+                constructor() {
+                  let obj3;
+                  const obj2 = { location: obj3 };
+                  obj3 = { section: constants2.GUILD_POPOUT, object: constants.BOOST_GEM_ICON };
+                  const obj = AppAnalyticsUtilsDefault;
+                  obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
+                  const obj4 = ActionSheetActionCreatorsDefault;
+                  obj4.hideActionSheet();
+                  const obj5 = actions_BoostingActionCreatorsAll;
+                  obj5.openApplyBoostModal(guild.id);
+                }
+              }
+            }
+            const obj7 = { direction: "horizontal", style: tmp12, children: items1 };
+            items1 = [tmp19, tmp22, tmp26, tmp28];
+            cResult[27] = tmp22;
+            cResult[28] = tmp26;
+            cResult[29] = tmp28;
+            cResult[30] = tmp19;
+            cResult[31] = closure_13(tmp(5746).ButtonGroup, obj7);
+            const tmp32 = closure_13(tmp(5746).ButtonGroup, obj7);
+          }
+          let tmp29 = canAccessSettings;
+          if (tmp29) {
+            class R {
+              constructor() {
+                let obj3;
+                const obj2 = { location: obj3 };
+                obj3 = { section: constants2.GUILD_POPOUT, object: constants.BOOST_GEM_ICON };
+                const obj = AppAnalyticsUtilsDefault;
+                obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
+                const obj4 = ActionSheetActionCreatorsDefault;
+                obj4.hideActionSheet();
+                const obj5 = actions_BoostingActionCreatorsAll;
+                obj5.openApplyBoostModal(guild.id);
+              }
+            }
+            const obj8 = {
+              variant: "secondary",
+              label: intl4.string(tmp(1127).t["3D5yo/"]),
+              icon: stateFromStores(6800),
+              grow: true,
+              onPress() {
+                          const obj = ActionSheetActionCreatorsDefault;
+                          obj.hideActionSheet();
+                          const obj2 = GuildSettingsActionCreatorsDefault;
+                          obj2.open(guild.id);
+                        }
+            };
+            const IconButton3 = tmp(7362).IconButton;
+            intl4 = tmp(1127).intl;
+            tmp29 = closure_12(IconButton3, obj8);
+          }
+          cResult[24] = canAccessSettings;
+          cResult[25] = guild.id;
+          cResult[26] = tmp29;
+        }
+        let tmp23 = tmp9;
+        if (tmp23) {
+          class R {
+            constructor() {
+              let obj3;
+              const obj2 = { location: obj3 };
+              obj3 = { section: constants2.GUILD_POPOUT, object: constants.BOOST_GEM_ICON };
+              const obj = AppAnalyticsUtilsDefault;
+              obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
+              const obj4 = ActionSheetActionCreatorsDefault;
+              obj4.hideActionSheet();
+              const obj5 = actions_BoostingActionCreatorsAll;
+              obj5.openApplyBoostModal(guild.id);
+            }
+          }
+          const obj9 = {
+            variant: "secondary",
+            label: intl3.string(tmp(1127).t.VINpSK),
+            icon: stateFromStores(9487),
+            grow: true,
+            onPress() {
+                      const obj = ActionSheetActionCreatorsDefault;
+                      obj.hideActionSheet();
+                      closure_2();
+                    }
+          };
+          const IconButton = tmp(7362).IconButton;
+          intl3 = tmp(1127).intl;
+          tmp23 = closure_12(IconButton, obj9);
+        }
+        cResult[18] = tmp9;
+        cResult[19] = tmp11;
+        cResult[20] = tmp23;
+      }
+      const obj11 = { variant: "secondary", label: tmp13, icon: tmp15, grow: true, onPress: tmp18 };
+      cResult[15] = tmp13;
+      cResult[16] = tmp18;
+      cResult[17] = closure_12(tmp(7362).IconButton, obj11);
+      const tmp21 = closure_12(tmp(7362).IconButton, obj11);
+    }
+    const fn2 = function f() {
+      const channelId = SelectedChannelStore.getChannelId(guild.id);
+      const obj = utils_InstantInviteUtils;
+      let channel = ChannelStore.getChannel(obj.getInviteChannelId(channelId, stateFromStores));
+      if (null == channel) {
+        channel = GuildChannelStore.getDefaultChannel(tmp.id);
+      }
+      if (null != channel) {
+        const tmp3Result = instant_invite_InstantInviteUtils;
+        const result = tmp3Result.handleOpenInviteActionsheet(tmp, channel.id, tmp5, unpackModuleId.SERVER_PROFILE);
+      }
+    };
+    cResult[6] = stateFromStores;
+    cResult[7] = guild;
+    cResult[8] = fn2;
+    tmp11 = fn2;
+  }
+  const tmpResult2 = tmp(9256);
+  const shouldRenderInviteResult = tmpResult2.shouldRenderInvite(stateFromStores, guild);
+  cResult[3] = stateFromStores;
+  cResult[4] = guild;
+  cResult[5] = shouldRenderInviteResult;
+  tmp9 = shouldRenderInviteResult;
+}) : ((guild) => {
   let BoostGemIcon;
   let formatToPlainStringResult;
   let intl3;
@@ -42,14 +398,14 @@ export default function GuildActionSheetTabItems(guild) {
   guild = guild.guild;
   let stateFromStores;
   const tmp = guild;
-  let obj = guild(13506);
+  let obj = guild(13508);
   let canAccessSettings = obj.useGuildActionSheetPermissions(guild).canAccessSettings;
   let tmp3 = stateFromStores;
-  const total = stateFromStores(4743)(guild.id).total;
+  const total = stateFromStores(4745)(guild.id).total;
   let obj2 = guild(504);
   const items = [GuildChannelStore];
   stateFromStores = obj2.useStateFromStores(items, () => GuildChannelStore.getChannels(guild.id));
-  let obj3 = guild(9278);
+  let obj3 = guild(9256);
   let shouldRenderInviteResult = obj3.shouldRenderInvite(stateFromStores, guild);
   const items1 = [stateFromStores, guild];
   let closure_2 = react.useCallback(() => {
@@ -65,16 +421,16 @@ export default function GuildActionSheetTabItems(guild) {
     }
   }, items1);
   let obj4 = { direction: "horizontal", style: { flexWrap: "wrap" }, children: items2 };
-  const ButtonGroup = guild(5745).ButtonGroup;
-  const IconButton = guild(7363).IconButton;
+  const ButtonGroup = guild(5746).ButtonGroup;
+  const IconButton = guild(7362).IconButton;
   const tmp6 = closure_13;
   if (total > 0) {
-    const intl2 = tmp(1115).intl;
+    const intl2 = tmp(1127).intl;
     let obj5 = { subscriptions: total };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp(1115).t["pob/cL"], obj5);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp(1127).t["pob/cL"], obj5);
   } else {
-    const intl = tmp(1115).intl;
-    formatToPlainStringResult = intl.string(tmp(1115).t.Uj0md3);
+    const intl = tmp(1127).intl;
+    formatToPlainStringResult = intl.string(tmp(1127).t.Uj0md3);
   }
   const obj6 = {
     variant: "secondary",
@@ -93,14 +449,14 @@ export default function GuildActionSheetTabItems(guild) {
       obj5.openApplyBoostModal(guild.id);
     }
   };
-  obj7 = { color: tmp3(576).unsafe_rawColors.GUILD_BOOSTING_PINK };
-  BoostGemIcon = tmp(8678).BoostGemIcon;
+  obj7 = { color: tmp3(588).unsafe_rawColors.GUILD_BOOSTING_PINK };
+  BoostGemIcon = tmp(8675).BoostGemIcon;
   items2 = [tmp7(IconButton, obj6), , , ];
   if (shouldRenderInviteResult) {
     const obj8 = {
       variant: "secondary",
-      label: intl3.string(tmp(1115).t.VINpSK),
-      icon: tmp3(9491),
+      label: intl3.string(tmp(1127).t.VINpSK),
+      icon: tmp3(9487),
       grow: true,
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
@@ -108,15 +464,15 @@ export default function GuildActionSheetTabItems(guild) {
           closure_2();
         }
     };
-    const IconButton2 = tmp(7363).IconButton;
-    intl3 = tmp(1115).intl;
+    const IconButton2 = tmp(7362).IconButton;
+    intl3 = tmp(1127).intl;
     shouldRenderInviteResult = tmp7(IconButton2, obj8);
   }
   items2[1] = shouldRenderInviteResult;
   const obj9 = {
     variant: "secondary",
-    label: intl4.string(tmp(1115).t.HcoRu0),
-    icon: tmp3(7391),
+    label: intl4.string(tmp(1127).t.HcoRu0),
+    icon: tmp3(7395),
     grow: true,
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
@@ -125,14 +481,14 @@ export default function GuildActionSheetTabItems(guild) {
       obj2.open(guild.id);
     }
   };
-  const IconButton3 = tmp(7363).IconButton;
-  intl4 = tmp(1115).intl;
+  const IconButton3 = tmp(7362).IconButton;
+  intl4 = tmp(1127).intl;
   items2[2] = closure_12(IconButton3, obj9);
   if (canAccessSettings) {
     const obj10 = {
       variant: "secondary",
-      label: intl5.string(tmp(1115).t["3D5yo/"]),
-      icon: tmp3(6799),
+      label: intl5.string(tmp(1127).t["3D5yo/"]),
+      icon: tmp3(6800),
       grow: true,
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
@@ -141,10 +497,13 @@ export default function GuildActionSheetTabItems(guild) {
           obj2.open(guild.id);
         }
     };
-    const IconButton4 = tmp(7363).IconButton;
-    intl5 = tmp(1115).intl;
+    const IconButton4 = tmp(7362).IconButton;
+    intl5 = tmp(1127).intl;
     canAccessSettings = tmp7(IconButton4, obj10);
   }
   items2[3] = canAccessSettings;
   return tmp6(ButtonGroup, obj4);
-};
+});
+let result = size.fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetTabItems.tsx");
+
+export default tmp4;

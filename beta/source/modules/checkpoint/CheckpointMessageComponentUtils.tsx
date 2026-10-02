@@ -1,15 +1,15 @@
-// Module ID: 5081
-// Function ID: 5082
+// Module ID: 5082
+// Function ID: 5083
 // Name: checkpoint/CheckpointMessageComponentUtils
-// Dependencies: [5061, 5082, 1979, 1115, 3005, 2]
+// Dependencies: [5062, 5083, 1985, 1127, 3008, 2]
 // Exports: getCheckpointDataFromMessage, getCheckpointLabel, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
 
-// Module 5081 (checkpoint/CheckpointMessageComponentUtils)
-import intl2 from "intl" /* 1115 */;
-import Server from "Server" /* 1979 */;
-import _modDef3005 from "module_3005" /* 3005 */;
-import CheckpointConstants from "CheckpointConstants" /* 5061 */;
-import CheckpointExperiment from "CheckpointExperiment" /* 5082 */;
+// Module 5082 (checkpoint/CheckpointMessageComponentUtils)
+import intl2 from "intl" /* 1127 */;
+import Server from "Server" /* 1985 */;
+import _modDef3008 from "module_3008" /* 3008 */;
+import CheckpointConstants from "CheckpointConstants" /* 5062 */;
+import CheckpointExperiment from "CheckpointExperiment" /* 5083 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointVersions = CheckpointConstants.CheckpointVersions;
@@ -56,7 +56,7 @@ export const getCheckpointDataFromMessage = function getCheckpointDataFromMessag
 export const getCheckpointLabel = function getCheckpointLabel(checkpointDataFromMessage) {
   if (CheckpointVersions.V2025 === checkpointDataFromMessage.version) {
     const intl = intl2.intl;
-    return intl.string(_modDef3005.goiR2u);
+    return intl.string(_modDef3008.goiR2u);
   } else {
     const V2026 = tmp.V2026;
     return null;

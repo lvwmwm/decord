@@ -1,15 +1,40 @@
-// Module ID: 5288
-// Function ID: 5289
+// Module ID: 5289
+// Function ID: 5290
 // Name: useFontScale
-// Dependencies: [19, 1480, 1482, 2]
-// Exports: getFontScale, useFontScale
+// Dependencies: [19, 1486, 558, 576, 1488, 2]
+// Exports: getFontScale
 
-// Module 5288 (useFontScale)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1482 */;
+// Module 5289 (useFontScale)
+import react2 from "react" /* 576 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1488 */;
 import react from "react" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1480 */;
+import DimensionsStore from "DimensionsStore" /* 1486 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp3;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const obj2 = AppEntryKeyContext;
+  const appEntryKey = obj2.useAppEntryKey();
+  if (cResult[0] !== appEntryKey) {
+    const fn = function t(arg0) {
+      return arg0.byAppEntry[appEntryKey].fontScale;
+    };
+    cResult[0] = appEntryKey;
+    cResult[1] = fn;
+    tmp3 = fn;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return DimensionsStore(tmp3);
+}) : (() => {
+  const obj = AppEntryKeyContext;
+  const appEntryKey = obj.useAppEntryKey();
+  const items = [appEntryKey];
+  return DimensionsStore(react.useCallback((arg0) => arg0.byAppEntry[appEntryKey].fontScale, items));
+});
 const result = size.fileFinishedImporting("modules/screen/native/useFontScale.tsx");
 
 export const getFontScale = function getFontScale() {
@@ -19,9 +44,4 @@ export const getFontScale = function getFontScale() {
   }
   return DimensionsStore.getState().byAppEntry[str].fontScale;
 };
-export const useFontScale = function useFontScale() {
-  const obj = AppEntryKeyContext;
-  const appEntryKey = obj.useAppEntryKey();
-  const items = [appEntryKey];
-  return DimensionsStore(react.useCallback((arg0) => arg0.byAppEntry[appEntryKey].fontScale, items));
-};
+export const useFontScale = tmp2;

@@ -1,14 +1,14 @@
-// Module ID: 15656
-// Function ID: 15657
+// Module ID: 15655
+// Function ID: 15656
 // Name: HomeDrawerSubtitleStore
-// Dependencies: [560, 2]
+// Dependencies: [570, 2]
 
-// Module 15656 (HomeDrawerSubtitleStore)
-import module_560 from "module_560" /* 560 */;
+// Module 15655 (HomeDrawerSubtitleStore)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 let c0 = null;
-const obj = module_560.create((arg0, arg1) => {
+const obj = module_570.create((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   return {

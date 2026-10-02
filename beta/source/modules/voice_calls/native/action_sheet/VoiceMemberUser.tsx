@@ -1,33 +1,49 @@
-// Module ID: 13330
-// Function ID: 13331
+// Module ID: 13332
+// Function ID: 13333
 // Name: VoiceMemberUser
-// Dependencies: [19, 17, 1182, 502, 5590, 2045, 2108, 1993, 4876, 1074, 21, 4836, 576, 8807, 8902, 504, 4685, 13331, 13332, 1177, 13333, 13334, 13335, 13336, 8905, 4832, 1115, 8053, 7157, 9518, 4692, 5043, 4800, 5435, 9194, 4988, 9187, 4678, 2]
+// Dependencies: [109, 19, 17, 1194, 502, 5591, 2051, 2111, 1999, 4877, 1086, 21, 4837, 588, 558, 576, 8802, 8896, 504, 4687, 13333, 13334, 1189, 13335, 13336, 13337, 13338, 8899, 4833, 1127, 8057, 7161, 9514, 4694, 5044, 4801, 9206, 5436, 4989, 9164, 4680, 2]
 
-// Module 13330 (VoiceMemberUser)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import UserUtilsDefault from "UserUtils" /* 4678 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5043 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7157 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 9194 */;
+// Module 13332 (VoiceMemberUser)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl4 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import UserUtilsDefault from "UserUtils" /* 4680 */;
+import shared from "shared" /* 4687 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4694 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5044 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7161 */;
+import useIsSpeakingDefault from "useIsSpeaking" /* 8802 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8899 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 9206 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13335 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13336 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13337 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13338 */;
+import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+import ThemeStore from "ThemeStore" /* 1194 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5590 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import PresenceStore from "PresenceStore" /* 4876 */;
+import CallStore from "CallStore" /* 5591 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildMemberStore_mod from "GuildMemberStore" /* 2111 */;
+import MediaEngineStore_mod from "MediaEngineStore" /* 1999 */;
+import PresenceStore from "PresenceStore" /* 4877 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
+let _require, closure_12, dependencyMap, importDefault;
+
 let Platform;
-let c3;
-let closure_12;
+let closure_14;
+let closure_15;
+let hasOwnProperty;
 let map1;
 let obj2;
 let obj3;
@@ -36,162 +52,20 @@ let obj6;
 let obj7;
 let obj8;
 let obj9;
-let unpackModuleId;
-function StreamingUserRow(user) {
-  let FormSubLabel;
-  let formatResult;
-  let labelCallScreen;
-  let obj4;
-  let obj6;
-  let tmp17;
-  const tmp = closure_14();
-  user = user.user;
-  const channel = user.channel;
-  const isActionSheet = user.isActionSheet;
-  const tmp2 = closure_15();
-  let obj = user(504);
-  const items = [PresenceStore];
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    const obj = StreamerApplicationSelectors;
-    return obj.getStreamerActivityByUserId(user.id, PresenceStore);
-  });
-  if (null != stateFromStores) {
-    const intl2 = tmp3(1115).intl;
-    const format = intl2.format;
-    if (null != stateFromStores.details) {
-      let name;
-      if ("" !== stateFromStores.details) {
-        name = stateFromStores.details;
-      }
-      let obj2 = { name };
-      formatResult = format(tmp7, obj2);
-    }
-    name = stateFromStores.name;
-  } else {
-    const intl = tmp3(1115).intl;
-    formatResult = intl.string(tmp3(1115).t.eXan7B);
-  }
-  const tmp10 = closure_11;
-  const obj3 = { subLabel: tmp10(FormSubLabel, obj4) };
-  const merged = Object.assign(user);
-  obj4 = { text: formatResult, style: labelCallScreen };
-  labelCallScreen = null;
-  FormSubLabel = tmp3(8053).FormSubLabel;
-  const tmp11 = closure_16;
-  const tmp8 = closure_12;
-  const tmp9 = closure_13;
-  if (isActionSheet) {
-    labelCallScreen = tmp2.labelCallScreen;
-  }
-  const children = [tmp10(tmp11, obj3), ];
-  let tmp10Result = user.id !== AuthenticationStore.getId();
-  if (tmp10Result) {
-    let guildId;
-    const obj5 = { style: tmp.streamPreview, children: tmp10(tmp17, obj6) };
-    const tmp15 = closure_3;
-    tmp17 = channel(9518);
-    if (channel != null) {
-      guildId = channel.getGuildId();
-    }
-    obj6 = {
-      guildId,
-      userId: user.id,
-      disableTransition: true,
-      onPress() {
-          let isModalOpenResult = null != channel;
-          if (isModalOpenResult) {
-            const isModalOpen = NavigationRouteUtils.isModalOpen;
-            NavigationRouteUtils;
-            const obj = PrivateChannelCallUtils;
-            isModalOpenResult = isModalOpen(obj.getVoiceChannelKey(tmp.id));
-          }
-          if (isModalOpenResult) {
-            const hideActionSheet = ActionSheetActionCreatorsDefault.hideActionSheet;
-            ActionSheetActionCreatorsDefault;
-            const obj2 = PrivateChannelCallUtils;
-            hideActionSheet(obj2.getVoiceChannelKey(channel.id));
-          }
-        }
-    };
-    tmp10Result = tmp10(tmp15, obj5);
-  }
-  children[1] = tmp10Result;
-  return tmp8(tmp9, { children });
-}
-function RingButton(channelId) {
-  let LegacyText;
-  let intl;
-  let obj2;
-  channelId = channelId.channelId;
-  const userId = channelId.userId;
-  const isActionSheet = channelId.isActionSheet;
-  const tmp = closure_14();
-  const tmp2 = closure_15();
-  let tmp4Result = null;
-  if (null != userId) {
-    tmp4Result = null;
-    if (null != channelId) {
-      let obj = {
-        onPress() {
-              const items = [userId];
-              const obj = CallActionCreatorsDefault;
-              obj.ring(channelId, items, "voice_user_action_sheet");
-            },
-        accessibilityRole: "button",
-        style: isActionSheet ? tmp2.ringingButton : tmp.ringingButton,
-        children: closure_11(LegacyText, obj2)
-      };
-      const PressableOpacity = channelId(5435).PressableOpacity;
-      obj2 = { style: isActionSheet ? tmp2.ringingButtonLabel : tmp.ringingButtonLabel, children: intl.string(channelId(1115).t.bHa9kN) };
-      LegacyText = tmp5(1177).LegacyText;
-      intl = tmp5(1115).intl;
-      tmp4Result = tmp4(PressableOpacity, obj);
-    }
-  }
-  return tmp4Result;
-}
-function StopRingButton(channelId) {
-  let LegacyText;
-  let intl;
-  let obj2;
-  channelId = channelId.channelId;
-  const userId = channelId.userId;
-  const isActionSheet = channelId.isActionSheet;
-  const tmp = closure_14();
-  const tmp2 = closure_15();
-  let tmp4Result = null;
-  if (null != userId) {
-    tmp4Result = null;
-    if (null != channelId) {
-      let obj = {
-        onPress() {
-              const items = [userId];
-              const obj = CallActionCreatorsDefault;
-              obj.stopRinging(channelId, items);
-            },
-        accessibilityRole: "button",
-        style: isActionSheet ? tmp2.ringingButton : tmp.ringingButton,
-        children: closure_11(LegacyText, obj2)
-      };
-      const PressableOpacity = channelId(5435).PressableOpacity;
-      obj2 = { style: isActionSheet ? tmp2.ringingButtonLabel : tmp.ringingButtonLabel, children: intl.string(channelId(1115).t.ygslb0) };
-      LegacyText = tmp5(1177).LegacyText;
-      intl = tmp5(1115).intl;
-      tmp4Result = tmp4(PressableOpacity, obj);
-    }
-  }
-  return tmp4Result;
-}
-({ View: c3, Platform } = react_native);
+let user = ["user", "name", "channel", "voiceState", "withStream", "isSpectating", "isActionSheet", "onPress"];
+let _objectWithoutProperties = _objectWithoutProperties_mod;
+({ View: hasOwnProperty, Platform } = react_native);
+let GuildMemberStore = GuildMemberStore_mod;
+let MediaEngineStore = MediaEngineStore_mod;
 const Fonts = Constants.Fonts;
-({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
+({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { row: { flexDirection: "row" }, voiceStatusIcon: obj2, voiceStatusIconMargin: { marginLeft: 8 }, streamPreview: { marginHorizontal: 16, marginBottom: 16, alignItems: "center", flex: 1 }, ringingButton: obj3, ringingButtonLabel: obj4, autoDisabledVideo: { flexDirection: "row", alignItems: "center" }, autoDisabledVideoLabel: { marginLeft: 4 } };
 obj2 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 8 };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.xs, height: 32, alignItems: "center", justifyContent: "center" };
 obj4 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, lineHeight: 18, marginHorizontal: 16, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
-let closure_14 = createStyles(obj);
+let closure_16 = createStyles(obj);
 createStyles = createStyles_mod;
 let obj5 = { labelCallScreen: obj6, voiceStatusIcon: obj7, ringingButton: obj8, ringingButtonLabel: obj9 };
 obj6 = { fontFamily: Fonts.PRIMARY_MEDIUM, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
@@ -199,8 +73,493 @@ const createStyles2 = createStyles.createStyles;
 obj7 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 8 };
 obj8 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.xs, height: 32, alignItems: "center", justifyContent: "center" };
 obj9 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, lineHeight: 18, marginHorizontal: 16, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
-let closure_15 = createStyles2(obj5);
-let closure_16 = react.memo((user) => {
+let closure_17 = createStyles2(obj5);
+const memo = react.memo;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+  let channel;
+  let closure_1;
+  let closure_10;
+  let closure_11;
+  let closure_2;
+  let closure_4;
+  let isActionSheet;
+  let isSelfMute;
+  let isSpectating;
+  let localDeaf;
+  let localMute;
+  let localVideo;
+  let localVideoDisabled;
+  let name;
+  let obj2;
+  let onPress;
+  let stateFromStores;
+  let tmp10;
+  let tmp18;
+  let tmp21;
+  let tmp37;
+  let voiceState;
+  let withStream;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(101);
+  if (cResult[0] !== user) {
+    user = user.user;
+    ({ name, channel } = user);
+    _require = channel;
+    ({ voiceState, withStream, isSpectating } = user);
+    importDefault = isSpectating;
+    ({ isActionSheet, onPress } = user);
+    dependencyMap = onPress;
+    const tmp14 = _objectWithoutProperties(user, user);
+    cResult[0] = user;
+    cResult[1] = channel;
+    cResult[2] = isActionSheet;
+    cResult[3] = isSpectating;
+    cResult[4] = name;
+    cResult[5] = onPress;
+    cResult[6] = tmp14;
+    cResult[7] = withStream;
+    cResult[8] = user;
+    cResult[9] = voiceState;
+    obj2 = voiceState;
+    tmp10 = withStream;
+    const tmp6 = isSpectating;
+  } else {
+    _require = cResult[1];
+    importDefault = cResult[3];
+    dependencyMap = cResult[5];
+    tmp10 = cResult[7];
+    user = cResult[8];
+    obj2 = cResult[9];
+  }
+  _objectWithoutProperties = style();
+  const tmp16 = style();
+  closure_17();
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    const id = localMute.getId();
+    cResult[10] = id;
+    tmp18 = id;
+  } else {
+    tmp18 = cResult[10];
+  }
+  let closure_5 = tmp18;
+  if (cResult[11] !== tmp11.id) {
+    let obj3 = { userId: tmp11.id };
+    cResult[11] = tmp11.id;
+    cResult[12] = obj3;
+    tmp21 = obj3;
+  } else {
+    tmp21 = cResult[12];
+  }
+  useIsSpeakingDefault(tmp21);
+  let guild_id;
+  if (tmp4 != null) {
+    guild_id = tmp4.guild_id;
+  }
+  if (cResult[13] === guild_id) {
+    let tmp24;
+    let tmp27;
+    let tmp26;
+    let tmp30;
+    let tmp32;
+    let tmp34;
+    if (cResult[14] === tmp11.id) {
+      tmp24 = cResult[15];
+    }
+    const tmpResult = tmp(8896);
+    const avatarSpeakingColor = tmpResult.useAvatarSpeakingColor(tmp24);
+    const _Symbol = Symbol;
+    if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+      let items = [stateFromStores];
+      class O {
+        constructor() {
+          return closure_6.theme;
+        }
+      }
+      cResult[16] = items;
+      cResult[17] = O;
+      tmp27 = O;
+      tmp26 = items;
+    } else {
+      tmp26 = cResult[16];
+      tmp27 = cResult[17];
+    }
+    const tmpResult4 = tmp(504);
+    stateFromStores = tmpResult4.useStateFromStores(tmp26, tmp27);
+    const _Symbol2 = Symbol;
+    if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+      const items1 = [MediaEngineStore];
+      class O {
+        constructor() {
+          return closure_6.theme;
+        }
+      }
+      cResult[18] = items1;
+      tmp30 = items1;
+    } else {
+      tmp30 = cResult[18];
+    }
+    if (cResult[19] !== tmp11.id) {
+      class X {
+        constructor() {
+          tmp = closure_3;
+          isVideoEnabledResult = closure_5 === closure_3.id;
+          isSelfMuteResult = isVideoEnabledResult;
+          if (isSelfMuteResult) {
+            tmp4 = closure_11;
+            isSelfMuteResult = closure_11.isSelfMute();
+          }
+          obj = { isSelfMute: isSelfMuteResult, localMute: closure_11.isLocalMute(tmp.id), localDeaf: null, localVideo: null, localVideoDisabled: null, localVideoAutoDisabled: null };
+          isSelfDeafResult = isVideoEnabledResult;
+          if (isSelfDeafResult) {
+            tmp6 = closure_11;
+            isSelfDeafResult = closure_11.isSelfDeaf();
+          }
+          obj.localDeaf = isSelfDeafResult;
+          if (isVideoEnabledResult) {
+            tmp7 = closure_11;
+            isVideoEnabledResult = closure_11.isVideoEnabled();
+          }
+          obj.localVideo = isVideoEnabledResult;
+          obj.localVideoDisabled = closure_11.isLocalVideoDisabled(tmp.id);
+          obj.localVideoAutoDisabled = closure_11.isLocalVideoAutoDisabled(tmp.id);
+          return obj;
+        }
+      }
+      cResult[19] = tmp11.id;
+      class O {
+        constructor() {
+          return closure_6.theme;
+        }
+      }
+      cResult[20] = X;
+      tmp32 = X;
+    } else {
+      class X {
+        constructor() {
+          tmp = closure_3;
+          isVideoEnabledResult = closure_5 === closure_3.id;
+          isSelfMuteResult = isVideoEnabledResult;
+          if (isSelfMuteResult) {
+            tmp4 = closure_11;
+            isSelfMuteResult = closure_11.isSelfMute();
+          }
+          obj = { isSelfMute: isSelfMuteResult, localMute: closure_11.isLocalMute(tmp.id), localDeaf: null, localVideo: null, localVideoDisabled: null, localVideoAutoDisabled: null };
+          isSelfDeafResult = isVideoEnabledResult;
+          if (isSelfDeafResult) {
+            tmp6 = closure_11;
+            isSelfDeafResult = closure_11.isSelfDeaf();
+          }
+          obj.localDeaf = isSelfDeafResult;
+          if (isVideoEnabledResult) {
+            tmp7 = closure_11;
+            isVideoEnabledResult = closure_11.isVideoEnabled();
+          }
+          obj.localVideo = isVideoEnabledResult;
+          obj.localVideoDisabled = closure_11.isLocalVideoDisabled(tmp.id);
+          obj.localVideoAutoDisabled = closure_11.isLocalVideoAutoDisabled(tmp.id);
+          return obj;
+        }
+      }
+    }
+    const tmpResult5 = tmp(504);
+    const stateFromStoresObject = tmpResult5.useStateFromStoresObject(tmp30, tmp32);
+    localMute = stateFromStoresObject.localMute;
+    ({ localDeaf, localVideo, isSelfMute, localVideoDisabled } = stateFromStoresObject);
+    const localVideoAutoDisabled = stateFromStoresObject.localVideoAutoDisabled;
+    const _Symbol3 = Symbol;
+    if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
+      class X {
+        constructor() {
+          tmp = closure_3;
+          isVideoEnabledResult = closure_5 === closure_3.id;
+          isSelfMuteResult = isVideoEnabledResult;
+          if (isSelfMuteResult) {
+            tmp4 = closure_11;
+            isSelfMuteResult = closure_11.isSelfMute();
+          }
+          obj = { isSelfMute: isSelfMuteResult, localMute: closure_11.isLocalMute(tmp.id), localDeaf: null, localVideo: null, localVideoDisabled: null, localVideoAutoDisabled: null };
+          isSelfDeafResult = isVideoEnabledResult;
+          if (isSelfDeafResult) {
+            tmp6 = closure_11;
+            isSelfDeafResult = closure_11.isSelfDeaf();
+          }
+          obj.localDeaf = isSelfDeafResult;
+          if (isVideoEnabledResult) {
+            tmp7 = closure_11;
+            isVideoEnabledResult = closure_11.isVideoEnabled();
+          }
+          obj.localVideo = isVideoEnabledResult;
+          obj.localVideoDisabled = closure_11.isLocalVideoDisabled(tmp.id);
+          obj.localVideoAutoDisabled = closure_11.isLocalVideoAutoDisabled(tmp.id);
+          return obj;
+        }
+      }
+      const items2 = [GuildMemberStore];
+      class O {
+        constructor() {
+          return closure_6.theme;
+        }
+      }
+      cResult[21] = items2;
+      tmp34 = items2;
+    } else {
+      class X {
+        constructor() {
+          tmp = closure_3;
+          isVideoEnabledResult = closure_5 === closure_3.id;
+          isSelfMuteResult = isVideoEnabledResult;
+          if (isSelfMuteResult) {
+            tmp4 = closure_11;
+            isSelfMuteResult = closure_11.isSelfMute();
+          }
+          obj = { isSelfMute: isSelfMuteResult, localMute: closure_11.isLocalMute(tmp.id), localDeaf: null, localVideo: null, localVideoDisabled: null, localVideoAutoDisabled: null };
+          isSelfDeafResult = isVideoEnabledResult;
+          if (isSelfDeafResult) {
+            tmp6 = closure_11;
+            isSelfDeafResult = closure_11.isSelfDeaf();
+          }
+          obj.localDeaf = isSelfDeafResult;
+          if (isVideoEnabledResult) {
+            tmp7 = closure_11;
+            isVideoEnabledResult = closure_11.isVideoEnabled();
+          }
+          obj.localVideo = isVideoEnabledResult;
+          obj.localVideoDisabled = closure_11.isLocalVideoDisabled(tmp.id);
+          obj.localVideoAutoDisabled = closure_11.isLocalVideoAutoDisabled(tmp.id);
+          return obj;
+        }
+      }
+    }
+    const tmp35 = cResult[22];
+    if (tmp4 != null) {
+      class X {
+        constructor() {
+          tmp = closure_3;
+          isVideoEnabledResult = closure_5 === closure_3.id;
+          isSelfMuteResult = isVideoEnabledResult;
+          if (isSelfMuteResult) {
+            tmp4 = closure_11;
+            isSelfMuteResult = closure_11.isSelfMute();
+          }
+          obj = { isSelfMute: isSelfMuteResult, localMute: closure_11.isLocalMute(tmp.id), localDeaf: null, localVideo: null, localVideoDisabled: null, localVideoAutoDisabled: null };
+          isSelfDeafResult = isVideoEnabledResult;
+          if (isSelfDeafResult) {
+            tmp6 = closure_11;
+            isSelfDeafResult = closure_11.isSelfDeaf();
+          }
+          obj.localDeaf = isSelfDeafResult;
+          if (isVideoEnabledResult) {
+            tmp7 = closure_11;
+            isVideoEnabledResult = closure_11.isVideoEnabled();
+          }
+          obj.localVideo = isVideoEnabledResult;
+          obj.localVideoDisabled = closure_11.isLocalVideoDisabled(tmp.id);
+          obj.localVideoAutoDisabled = closure_11.isLocalVideoAutoDisabled(tmp.id);
+          return obj;
+        }
+      }
+    }
+    if (tmp35 === undefined) {
+      class X {
+        constructor() {
+          tmp = closure_3;
+          isVideoEnabledResult = closure_5 === closure_3.id;
+          isSelfMuteResult = isVideoEnabledResult;
+          if (isSelfMuteResult) {
+            tmp4 = closure_11;
+            isSelfMuteResult = closure_11.isSelfMute();
+          }
+          obj = { isSelfMute: isSelfMuteResult, localMute: closure_11.isLocalMute(tmp.id), localDeaf: null, localVideo: null, localVideoDisabled: null, localVideoAutoDisabled: null };
+          isSelfDeafResult = isVideoEnabledResult;
+          if (isSelfDeafResult) {
+            tmp6 = closure_11;
+            isSelfDeafResult = closure_11.isSelfDeaf();
+          }
+          obj.localDeaf = isSelfDeafResult;
+          if (isVideoEnabledResult) {
+            tmp7 = closure_11;
+            isVideoEnabledResult = closure_11.isVideoEnabled();
+          }
+          obj.localVideo = isVideoEnabledResult;
+          obj.localVideoDisabled = closure_11.isLocalVideoDisabled(tmp.id);
+          obj.localVideoAutoDisabled = closure_11.isLocalVideoAutoDisabled(tmp.id);
+          return obj;
+        }
+      }
+      const tmpResult6 = tmp(504);
+      const stateFromStores1 = tmpResult6.useStateFromStores(tmp34, tmp37);
+      class O {
+        constructor() {
+          return closure_6.theme;
+        }
+      }
+      let c15 = false;
+      let c13 = false;
+      closure_12 = tmp46;
+      GuildMemberStore = localDeaf;
+      let closure_14 = tmp47;
+      MediaEngineStore = false;
+      let flag2 = false;
+      let tmp48 = tmp47;
+      let flag3 = false;
+      let tmp49 = tmp46;
+      let flag4 = false;
+      let tmp50 = localDeaf;
+      if (null != obj2) {
+        class X {
+          constructor() {
+            tmp = closure_3;
+            isVideoEnabledResult = closure_5 === closure_3.id;
+            isSelfMuteResult = isVideoEnabledResult;
+            if (isSelfMuteResult) {
+              tmp4 = closure_11;
+              isSelfMuteResult = closure_11.isSelfMute();
+            }
+            obj = { isSelfMute: isSelfMuteResult, localMute: closure_11.isLocalMute(tmp.id), localDeaf: null, localVideo: null, localVideoDisabled: null, localVideoAutoDisabled: null };
+            isSelfDeafResult = isVideoEnabledResult;
+            if (isSelfDeafResult) {
+              tmp6 = closure_11;
+              isSelfDeafResult = closure_11.isSelfDeaf();
+            }
+            obj.localDeaf = isSelfDeafResult;
+            if (isVideoEnabledResult) {
+              tmp7 = closure_11;
+              isVideoEnabledResult = closure_11.isVideoEnabled();
+            }
+            obj.localVideo = isVideoEnabledResult;
+            obj.localVideoDisabled = closure_11.isLocalVideoDisabled(tmp.id);
+            obj.localVideoAutoDisabled = closure_11.isLocalVideoAutoDisabled(tmp.id);
+            return obj;
+          }
+        }
+        c15 = true;
+        const tmp51 = (undefined === tmp10 || tmp10) && obj2.selfStream;
+        class O {
+          constructor() {
+            return closure_6.theme;
+          }
+        }
+        const tmp52 = localMute || isSelfMute || obj2.isVoiceMuted();
+        closure_12 = tmp52;
+        const tmp53 = localDeaf || obj2.isVoiceDeafened();
+        GuildMemberStore = tmp53;
+        closure_14 = tmp54;
+        const sessionId = obj2.sessionId;
+        let tmp55 = null != sessionId && tmp18 === tmp11.id;
+        if (tmp55) {
+          class X {
+            constructor() {
+              tmp = closure_3;
+              isVideoEnabledResult = closure_5 === closure_3.id;
+              isSelfMuteResult = isVideoEnabledResult;
+              if (isSelfMuteResult) {
+                tmp4 = closure_11;
+                isSelfMuteResult = closure_11.isSelfMute();
+              }
+              obj = { isSelfMute: isSelfMuteResult, localMute: closure_11.isLocalMute(tmp.id), localDeaf: null, localVideo: null, localVideoDisabled: null, localVideoAutoDisabled: null };
+              isSelfDeafResult = isVideoEnabledResult;
+              if (isSelfDeafResult) {
+                tmp6 = closure_11;
+                isSelfDeafResult = closure_11.isSelfDeaf();
+              }
+              obj.localDeaf = isSelfDeafResult;
+              if (isVideoEnabledResult) {
+                tmp7 = closure_11;
+                isVideoEnabledResult = closure_11.isVideoEnabled();
+              }
+              obj.localVideo = isVideoEnabledResult;
+              obj.localVideoDisabled = closure_11.isLocalVideoDisabled(tmp.id);
+              obj.localVideoAutoDisabled = closure_11.isLocalVideoAutoDisabled(tmp.id);
+              return obj;
+            }
+          }
+          tmp55 = sessionId !== localMute.getSessionId();
+        }
+        MediaEngineStore = tmp55;
+        flag4 = tmp55;
+        flag2 = true;
+        tmp48 = tmp54;
+        flag3 = tmp51;
+        tmp49 = tmp52;
+        tmp50 = tmp53;
+      }
+      cResult[25] = isSelfMute;
+      cResult[26] = localDeaf;
+      cResult[27] = localMute;
+      cResult[28] = localVideo;
+      cResult[29] = localVideoDisabled;
+      cResult[30] = tmp11.id;
+      class Y {
+        constructor() {
+          guild_id = undefined;
+          tmp = closure_10;
+          isGuestOrLurker = closure_10.isGuestOrLurker;
+          if (closure_0 != null) {
+            guild_id = closure_0.guild_id;
+          }
+          return isGuestOrLurker(guild_id, closure_3.id);
+        }
+      }
+      cResult[32] = undefined === tmp10 || tmp10;
+      cResult[33] = tmp50;
+      cResult[34] = flag4;
+      cResult[35] = tmp49;
+      cResult[36] = flag3;
+      cResult[37] = tmp48;
+      cResult[38] = flag2;
+    }
+    if (tmp4 != null) {
+      class X {
+        constructor() {
+          tmp = closure_3;
+          isVideoEnabledResult = closure_5 === closure_3.id;
+          isSelfMuteResult = isVideoEnabledResult;
+          if (isSelfMuteResult) {
+            tmp4 = closure_11;
+            isSelfMuteResult = closure_11.isSelfMute();
+          }
+          obj = { isSelfMute: isSelfMuteResult, localMute: closure_11.isLocalMute(tmp.id), localDeaf: null, localVideo: null, localVideoDisabled: null, localVideoAutoDisabled: null };
+          isSelfDeafResult = isVideoEnabledResult;
+          if (isSelfDeafResult) {
+            tmp6 = closure_11;
+            isSelfDeafResult = closure_11.isSelfDeaf();
+          }
+          obj.localDeaf = isSelfDeafResult;
+          if (isVideoEnabledResult) {
+            tmp7 = closure_11;
+            isVideoEnabledResult = closure_11.isVideoEnabled();
+          }
+          obj.localVideo = isVideoEnabledResult;
+          obj.localVideoDisabled = closure_11.isLocalVideoDisabled(tmp.id);
+          obj.localVideoAutoDisabled = closure_11.isLocalVideoAutoDisabled(tmp.id);
+          return obj;
+        }
+      }
+    }
+    class Y {
+      constructor() {
+        guild_id = undefined;
+        tmp = closure_10;
+        isGuestOrLurker = closure_10.isGuestOrLurker;
+        if (closure_0 != null) {
+          guild_id = closure_0.guild_id;
+        }
+        return isGuestOrLurker(guild_id, closure_3.id);
+      }
+    }
+    cResult[22] = undefined;
+    cResult[23] = tmp11.id;
+    cResult[24] = Y;
+    tmp37 = Y;
+  }
+  const obj4 = { userId: tmp11.id, guildId: guild_id };
+  cResult[13] = guild_id;
+  cResult[15] = obj4;
+  tmp24 = obj4;
+}) : ((user) => {
   let Avatar;
   let Label;
   let channel;
@@ -236,16 +595,16 @@ let closure_16 = react.memo((user) => {
   ({ isActionSheet, onPress: dependencyMap } = user);
   const isSpectating = user.isSpectating;
   const merged = Object.assign(user, Object.assign({ user: 0, name: 0, channel: 0, voiceState: 0, withStream: 0, isSpectating: 0, isActionSheet: 0, onPress: 0 }));
-  const tmp2 = closure_14();
-  const tmp3 = closure_15();
+  const tmp2 = closure_16();
+  const tmp3 = closure_17();
   let obj = AuthenticationStore;
   const id = AuthenticationStore.getId();
   const obj2 = { userId: user.id };
   const obj3 = { userId: user.id, guildId: guild_id };
   guild_id = undefined;
-  const tmp7 = channel(8807)(obj2);
-  const useAvatarSpeakingColor = user(8902).useAvatarSpeakingColor;
-  user(8902);
+  const tmp7 = channel(8802)(obj2);
+  const useAvatarSpeakingColor = user(8896).useAvatarSpeakingColor;
+  user(8896);
   if (channel != null) {
     guild_id = channel.guild_id;
   }
@@ -314,12 +673,12 @@ let closure_16 = react.memo((user) => {
       return dependencyMap(user);
     },
     label: name,
-    leading: closure_11(Avatar, obj5),
+    leading: closure_13(Avatar, obj5),
     trailing: tmp27Result
   };
-  obj5 = { user, guildId: guild_id1, size: user(1177).AvatarSizes.REFRESH_MEDIUM_32, speaking: tmp7, speakingColor: avatarSpeakingColor };
+  obj5 = { user, guildId: guild_id1, size: user(1189).AvatarSizes.REFRESH_MEDIUM_32, speaking: tmp7, speakingColor: avatarSpeakingColor };
   guild_id1 = undefined;
-  Avatar = tmp8(1177).Avatar;
+  Avatar = tmp8(1189).Avatar;
   if (channel != null) {
     guild_id1 = channel.guild_id;
   }
@@ -329,44 +688,44 @@ let closure_16 = react.memo((user) => {
     if (!flag) {
       let tmp24Result = null;
       const obj6 = { style: tmp2.row, children: items3 };
-      const tmp27 = closure_12;
-      const tmp28 = id;
+      const tmp27 = closure_14;
+      const tmp28 = closure_5;
       if (isSpectating) {
-        const obj7 = { size: user(1177).Icon.Sizes.REFRESH_SMALL_16, source: channel(13336), style: tmp23 };
-        const Icon = tmp8(1177).Icon;
+        const obj7 = { size: user(1189).Icon.Sizes.REFRESH_SMALL_16, source: channel(13338), style: tmp23 };
+        const Icon = tmp8(1189).Icon;
         tmp24Result = tmp24(Icon, obj7);
       }
       items3 = [tmp24Result, , , , ];
       let tmp24Result5 = null;
       if (tmp18) {
         let tmp5Result;
-        const tmp8Result6 = user(4685);
+        const tmp8Result6 = user(4687);
         if (tmp8Result6.isThemeDark(stateFromStores)) {
-          tmp5Result = tmp5(13331);
+          tmp5Result = tmp5(13333);
         } else {
-          tmp5Result = tmp5(13332);
+          tmp5Result = tmp5(13334);
         }
-        const obj8 = { size: user(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5Result, style: tmp2.voiceStatusIconMargin, color: tmp23.tintColor, disableColor: localMute };
-        const Icon2 = tmp8(1177).Icon;
+        const obj8 = { size: user(1189).Icon.Sizes.REFRESH_SMALL_16, source: tmp5Result, style: tmp2.voiceStatusIconMargin, color: tmp23.tintColor, disableColor: localMute };
+        const Icon2 = tmp8(1189).Icon;
         tmp24Result5 = tmp24(Icon2, obj8);
       }
       items3[1] = tmp24Result5;
       let tmp24Result6 = null;
       if (tmp17) {
-        const obj9 = { size: user(1177).Icon.Sizes.REFRESH_SMALL_16, source: channel(13333), style: tmp23 };
-        const Icon3 = tmp8(1177).Icon;
+        const obj9 = { size: user(1189).Icon.Sizes.REFRESH_SMALL_16, source: channel(13335), style: tmp23 };
+        const Icon3 = tmp8(1189).Icon;
         tmp24Result6 = tmp24(Icon3, obj9);
       }
       items3[2] = tmp24Result6;
       let tmp24Result7 = null;
       if (tmp16) {
         let obj11;
-        const Icon4 = tmp8(1177).Icon;
+        const Icon4 = tmp8(1189).Icon;
         if (localVideoDisabled) {
-          obj11 = { size: user(1177).Icon.Sizes.REFRESH_SMALL_16, source: channel(13334), style: tmp2.voiceStatusIconMargin, disableColor: true };
-          const obj10 = { size: user(1177).Icon.Sizes.REFRESH_SMALL_16, source: channel(13334), style: tmp2.voiceStatusIconMargin, disableColor: true };
+          obj11 = { size: user(1189).Icon.Sizes.REFRESH_SMALL_16, source: channel(13336), style: tmp2.voiceStatusIconMargin, disableColor: true };
+          const obj10 = { size: user(1189).Icon.Sizes.REFRESH_SMALL_16, source: channel(13336), style: tmp2.voiceStatusIconMargin, disableColor: true };
         } else {
-          obj11 = { size: user(1177).Icon.Sizes.REFRESH_SMALL_16, source: channel(13335), style: tmp23 };
+          obj11 = { size: user(1189).Icon.Sizes.REFRESH_SMALL_16, source: channel(13337), style: tmp23 };
         }
         tmp24Result7 = tmp24(Icon4, obj11);
       }
@@ -374,27 +733,27 @@ let closure_16 = react.memo((user) => {
       let tmp24Result8 = null;
       if (flag2) {
         const obj12 = { style: tmp23 };
-        tmp24Result8 = tmp24(tmp8(1177).LiveTag, obj12);
+        tmp24Result8 = tmp24(tmp8(1189).LiveTag, obj12);
       }
       items3[4] = tmp24Result8;
       tmp27Result = tmp27(tmp28, obj6);
     }
   }
-  const obj13 = { disabled: flag4, label: closure_11(Label, obj16), subLabel: stringResult };
-  const FormRow = tmp8(8053).FormRow;
+  const obj13 = { disabled: flag4, label: closure_13(Label, obj16), subLabel: stringResult };
+  const FormRow = tmp8(8057).FormRow;
   const merged1 = Object.assign(merged);
   const merged2 = Object.assign(obj4);
   let tmp37 = name;
-  Label = tmp8(8053).FormRow.Label;
+  Label = tmp8(8057).FormRow.Label;
   if (stateFromStores1) {
     const obj14 = { children: items4 };
     items4 = [name, ];
     const obj15 = { variant: "text-md/semibold", lineClamp: 1, color: "status-positive", children: items5 };
-    const Text = tmp8(4832).Text;
-    const intl = tmp8(1115).intl;
-    items5 = ["\u00A0", intl.string(user(1115).t["pFO/Ph"])];
-    items4[1] = closure_12(Text, obj15);
-    tmp37 = closure_12(closure_13, obj14);
+    const Text = tmp8(4833).Text;
+    const intl = tmp8(1127).intl;
+    items5 = ["\u00A0", intl.string(user(1127).t["pFO/Ph"])];
+    items4[1] = closure_14(Text, obj15);
+    tmp37 = closure_14(closure_15, obj14);
   }
   obj16 = { text: tmp37, style: labelCallScreen };
   labelCallScreen = null;
@@ -403,24 +762,618 @@ let closure_16 = react.memo((user) => {
   }
   if (localVideoAutoDisabled) {
     const obj17 = { style: tmp2.autoDisabledVideo, children: items6 };
-    const obj18 = { source: channel(8905), size: user(1177).Icon.Sizes.EXTRA_SMALL, disableColor: true };
-    const Icon5 = tmp8(1177).Icon;
-    items6 = [closure_11(Icon5, obj18), ];
-    const obj19 = { variant: "text-xs/medium", color: "text-default", style: tmp2.autoDisabledVideoLabel, children: intl3.string(user(1115).t.m2Hyj0) };
-    const Text2 = tmp8(4832).Text;
-    intl3 = tmp8(1115).intl;
-    items6[1] = closure_11(Text2, obj19);
-    stringResult = closure_12(id, obj17);
+    const obj18 = { source: channel(8899), size: user(1189).Icon.Sizes.EXTRA_SMALL, disableColor: true };
+    const Icon5 = tmp8(1189).Icon;
+    items6 = [closure_13(Icon5, obj18), ];
+    const obj19 = { variant: "text-xs/medium", color: "text-default", style: tmp2.autoDisabledVideoLabel, children: intl3.string(user(1127).t.m2Hyj0) };
+    const Text2 = tmp8(4833).Text;
+    intl3 = tmp8(1127).intl;
+    items6[1] = closure_13(Text2, obj19);
+    stringResult = closure_14(closure_5, obj17);
   } else {
     stringResult = null;
     if (flag) {
-      const intl2 = tmp8(1115).intl;
-      stringResult = intl2.string(tmp8(1115).t.IyYqqY);
+      const intl2 = tmp8(1127).intl;
+      stringResult = intl2.string(tmp8(1127).t.IyYqqY);
     }
   }
-  return closure_11(FormRow, obj13);
+  return closure_13(FormRow, obj13);
+}));
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamingUserRow(user) {
+  let first;
+  let items1;
+  let obj5;
+  let tmp10;
+  let tmp30;
+  let tmp8;
+  const tmp = user;
+  let obj = user(576);
+  const cResult = obj.c(18);
+  const tmp4 = closure_16();
+  user = user.user;
+  const channel = user.channel;
+  const tmp5 = closure_17();
+  const isActionSheet = user.isActionSheet;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PresenceStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== user.id) {
+    const fn = function l() {
+      const obj = StreamerApplicationSelectors;
+      return obj.getStreamerActivityByUserId(user.id, PresenceStore);
+    };
+    cResult[1] = user.id;
+    cResult[2] = fn;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
+  if (cResult[3] !== stateFromStores) {
+    let formatResult;
+    if (null != stateFromStores) {
+      const intl2 = tmp(1127).intl;
+      const format = intl2.format;
+      if (null != stateFromStores.details) {
+        let name;
+        if ("" !== stateFromStores.details) {
+          name = stateFromStores.details;
+        }
+        let obj2 = { name };
+        formatResult = format(tmp13, obj2);
+      }
+      name = stateFromStores.name;
+    } else {
+      const intl = tmp(1127).intl;
+      formatResult = intl.string(tmp(1127).t.eXan7B);
+    }
+    cResult[3] = stateFromStores;
+    cResult[4] = formatResult;
+    tmp10 = formatResult;
+  } else {
+    tmp10 = cResult[4];
+  }
+  let labelCallScreen = null;
+  if (isActionSheet) {
+    labelCallScreen = tmp5.labelCallScreen;
+  }
+  if (cResult[5] === tmp10) {
+    let tmp15;
+    if (cResult[6] === labelCallScreen) {
+      tmp15 = cResult[7];
+    }
+    if (cResult[8] === user) {
+      let tmp17;
+      if (cResult[9] === tmp15) {
+        tmp17 = cResult[10];
+      }
+      if (cResult[11] === channel) {
+        if (cResult[12] === tmp4) {
+          let tmp24;
+          if (cResult[13] === user.id) {
+            tmp24 = cResult[14];
+          }
+          if (cResult[15] === tmp17) {
+            let tmp32;
+            if (cResult[16] === tmp24) {
+              tmp32 = cResult[17];
+            }
+            return tmp32;
+          }
+          const obj3 = { children: items1 };
+          items1 = [tmp17, tmp24];
+          const tmp35 = closure_14(closure_15, obj3);
+          cResult[15] = tmp17;
+          cResult[16] = tmp24;
+          cResult[17] = tmp35;
+          tmp32 = tmp35;
+        }
+      }
+      let tmp27Result = user.id !== AuthenticationStore.getId();
+      if (tmp27Result) {
+        let guildId;
+        const obj4 = { style: tmp4.streamPreview, children: closure_13(tmp30, obj5) };
+        const tmp28 = closure_5;
+        tmp30 = channel(9514);
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        obj5 = {
+          guildId,
+          userId: user.id,
+          disableTransition: true,
+          onPress() {
+                  let isModalOpenResult = null != channel;
+                  if (isModalOpenResult) {
+                    const isModalOpen = NavigationRouteUtils.isModalOpen;
+                    NavigationRouteUtils;
+                    const obj = PrivateChannelCallUtils;
+                    isModalOpenResult = isModalOpen(obj.getVoiceChannelKey(tmp.id));
+                  }
+                  if (isModalOpenResult) {
+                    const hideActionSheet = ActionSheetActionCreatorsDefault.hideActionSheet;
+                    ActionSheetActionCreatorsDefault;
+                    const obj2 = PrivateChannelCallUtils;
+                    hideActionSheet(obj2.getVoiceChannelKey(channel.id));
+                  }
+                }
+        };
+        tmp27Result = tmp27(tmp28, obj4);
+      }
+      cResult[11] = channel;
+      cResult[12] = tmp4;
+      cResult[13] = user.id;
+      cResult[14] = tmp27Result;
+      tmp24 = tmp27Result;
+    }
+    const obj6 = { subLabel: tmp15 };
+    const merged = Object.assign(user);
+    const tmp23 = closure_13(closure_18, obj6);
+    cResult[8] = user;
+    cResult[9] = tmp15;
+    cResult[10] = tmp23;
+    tmp17 = tmp23;
+  }
+  const tmp16 = closure_13(tmp(8057).FormSubLabel, { text: tmp10, style: labelCallScreen });
+  cResult[5] = tmp10;
+  cResult[6] = labelCallScreen;
+  cResult[7] = tmp16;
+  tmp15 = tmp16;
+}) : (function StreamingUserRow(user) {
+  let FormSubLabel;
+  let formatResult;
+  let labelCallScreen;
+  let obj4;
+  let obj6;
+  let tmp17;
+  const tmp = closure_16();
+  user = user.user;
+  const channel = user.channel;
+  const isActionSheet = user.isActionSheet;
+  const tmp2 = closure_17();
+  let obj = user(504);
+  const items = [PresenceStore];
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const obj = StreamerApplicationSelectors;
+    return obj.getStreamerActivityByUserId(user.id, PresenceStore);
+  });
+  if (null != stateFromStores) {
+    const intl2 = tmp3(1127).intl;
+    const format = intl2.format;
+    if (null != stateFromStores.details) {
+      let name;
+      if ("" !== stateFromStores.details) {
+        name = stateFromStores.details;
+      }
+      let obj2 = { name };
+      formatResult = format(tmp7, obj2);
+    }
+    name = stateFromStores.name;
+  } else {
+    const intl = tmp3(1127).intl;
+    formatResult = intl.string(tmp3(1127).t.eXan7B);
+  }
+  const tmp10 = closure_13;
+  const obj3 = { subLabel: tmp10(FormSubLabel, obj4) };
+  const merged = Object.assign(user);
+  obj4 = { text: formatResult, style: labelCallScreen };
+  labelCallScreen = null;
+  FormSubLabel = tmp3(8057).FormSubLabel;
+  const tmp11 = closure_18;
+  const tmp8 = closure_14;
+  const tmp9 = closure_15;
+  if (isActionSheet) {
+    labelCallScreen = tmp2.labelCallScreen;
+  }
+  const children = [tmp10(tmp11, obj3), ];
+  let tmp10Result = user.id !== AuthenticationStore.getId();
+  if (tmp10Result) {
+    let guildId;
+    const obj5 = { style: tmp.streamPreview, children: tmp10(tmp17, obj6) };
+    const tmp15 = closure_5;
+    tmp17 = channel(9514);
+    if (channel != null) {
+      guildId = channel.getGuildId();
+    }
+    obj6 = {
+      guildId,
+      userId: user.id,
+      disableTransition: true,
+      onPress() {
+          let isModalOpenResult = null != channel;
+          if (isModalOpenResult) {
+            const isModalOpen = NavigationRouteUtils.isModalOpen;
+            NavigationRouteUtils;
+            const obj = PrivateChannelCallUtils;
+            isModalOpenResult = isModalOpen(obj.getVoiceChannelKey(tmp.id));
+          }
+          if (isModalOpenResult) {
+            const hideActionSheet = ActionSheetActionCreatorsDefault.hideActionSheet;
+            ActionSheetActionCreatorsDefault;
+            const obj2 = PrivateChannelCallUtils;
+            hideActionSheet(obj2.getVoiceChannelKey(channel.id));
+          }
+        }
+    };
+    tmp10Result = tmp10(tmp15, obj5);
+  }
+  children[1] = tmp10Result;
+  return tmp8(tmp9, { children });
 });
-const memoResult = react.memo(function DisconnectedUserRow(user) {
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function RingButton(channelId) {
+  let obj = channelId(576);
+  const cResult = obj.c(10);
+  channelId = channelId.channelId;
+  const userId = channelId.userId;
+  const isActionSheet = channelId.isActionSheet;
+  const tmp4 = closure_16();
+  const tmp5 = closure_17();
+  if (null != userId) {
+    if (null != channelId) {
+      if (cResult[0] === channelId) {
+        let tmp6;
+        let tmp10;
+        let tmp12;
+        if (cResult[1] === userId) {
+          tmp6 = cResult[2];
+        }
+        const tmp7 = isActionSheet ? tmp5.ringingButton : tmp4.ringingButton;
+        const tmp8 = isActionSheet ? tmp5.ringingButtonLabel : tmp4.ringingButtonLabel;
+        const _Symbol = Symbol;
+        if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl = tmp(1127).intl;
+          const stringResult = intl.string(channelId(1127).t.bHa9kN);
+          cResult[3] = stringResult;
+          tmp10 = stringResult;
+        } else {
+          tmp10 = cResult[3];
+        }
+        if (cResult[4] !== tmp8) {
+          const obj2 = { style: tmp8, children: tmp10 };
+          const tmp14 = closure_13(channelId(1189).LegacyText, obj2);
+          cResult[4] = tmp8;
+          cResult[5] = tmp14;
+          tmp12 = tmp14;
+        } else {
+          tmp12 = cResult[5];
+        }
+        if (cResult[6] === tmp6) {
+          if (cResult[7] === tmp7) {
+            let tmp15;
+            if (cResult[8] === tmp12) {
+              tmp15 = cResult[9];
+            }
+            return tmp15;
+          }
+        }
+        const obj3 = { onPress: tmp6, accessibilityRole: "button", style: tmp7, children: tmp12 };
+        const tmp17 = closure_13(channelId(5436).PressableOpacity, obj3);
+        cResult[6] = tmp6;
+        cResult[7] = tmp7;
+        cResult[8] = tmp12;
+        cResult[9] = tmp17;
+        tmp15 = tmp17;
+      }
+      const fn = function n() {
+        const items = [userId];
+        const obj = CallActionCreatorsDefault;
+        obj.ring(channelId, items, "voice_user_action_sheet");
+      };
+      cResult[0] = channelId;
+      cResult[1] = userId;
+      cResult[2] = fn;
+      tmp6 = fn;
+    }
+  }
+  return null;
+}) : (function RingButton(channelId) {
+  let LegacyText;
+  let intl;
+  let obj2;
+  channelId = channelId.channelId;
+  const userId = channelId.userId;
+  const isActionSheet = channelId.isActionSheet;
+  const tmp = closure_16();
+  const tmp2 = closure_17();
+  let tmp4Result = null;
+  if (null != userId) {
+    tmp4Result = null;
+    if (null != channelId) {
+      let obj = {
+        onPress() {
+              const items = [userId];
+              const obj = CallActionCreatorsDefault;
+              obj.ring(channelId, items, "voice_user_action_sheet");
+            },
+        accessibilityRole: "button",
+        style: isActionSheet ? tmp2.ringingButton : tmp.ringingButton,
+        children: closure_13(LegacyText, obj2)
+      };
+      const PressableOpacity = channelId(5436).PressableOpacity;
+      obj2 = { style: isActionSheet ? tmp2.ringingButtonLabel : tmp.ringingButtonLabel, children: intl.string(channelId(1127).t.bHa9kN) };
+      LegacyText = tmp5(1189).LegacyText;
+      intl = tmp5(1127).intl;
+      tmp4Result = tmp4(PressableOpacity, obj);
+    }
+  }
+  return tmp4Result;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function StopRingButton(channelId) {
+  let obj = channelId(576);
+  const cResult = obj.c(10);
+  channelId = channelId.channelId;
+  const userId = channelId.userId;
+  const isActionSheet = channelId.isActionSheet;
+  const tmp4 = closure_16();
+  const tmp5 = closure_17();
+  if (null != userId) {
+    if (null != channelId) {
+      if (cResult[0] === channelId) {
+        let tmp6;
+        let tmp10;
+        let tmp12;
+        if (cResult[1] === userId) {
+          tmp6 = cResult[2];
+        }
+        const tmp7 = isActionSheet ? tmp5.ringingButton : tmp4.ringingButton;
+        const tmp8 = isActionSheet ? tmp5.ringingButtonLabel : tmp4.ringingButtonLabel;
+        const _Symbol = Symbol;
+        if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl = tmp(1127).intl;
+          const stringResult = intl.string(channelId(1127).t.ygslb0);
+          cResult[3] = stringResult;
+          tmp10 = stringResult;
+        } else {
+          tmp10 = cResult[3];
+        }
+        if (cResult[4] !== tmp8) {
+          const obj2 = { style: tmp8, children: tmp10 };
+          const tmp14 = closure_13(channelId(1189).LegacyText, obj2);
+          cResult[4] = tmp8;
+          cResult[5] = tmp14;
+          tmp12 = tmp14;
+        } else {
+          tmp12 = cResult[5];
+        }
+        if (cResult[6] === tmp6) {
+          if (cResult[7] === tmp7) {
+            let tmp15;
+            if (cResult[8] === tmp12) {
+              tmp15 = cResult[9];
+            }
+            return tmp15;
+          }
+        }
+        const obj3 = { onPress: tmp6, accessibilityRole: "button", style: tmp7, children: tmp12 };
+        const tmp17 = closure_13(channelId(5436).PressableOpacity, obj3);
+        cResult[6] = tmp6;
+        cResult[7] = tmp7;
+        cResult[8] = tmp12;
+        cResult[9] = tmp17;
+        tmp15 = tmp17;
+      }
+      const fn = function n() {
+        const items = [userId];
+        const obj = CallActionCreatorsDefault;
+        obj.stopRinging(channelId, items);
+      };
+      cResult[0] = channelId;
+      cResult[1] = userId;
+      cResult[2] = fn;
+      tmp6 = fn;
+    }
+  }
+  return null;
+}) : (function StopRingButton(channelId) {
+  let LegacyText;
+  let intl;
+  let obj2;
+  channelId = channelId.channelId;
+  const userId = channelId.userId;
+  const isActionSheet = channelId.isActionSheet;
+  const tmp = closure_16();
+  const tmp2 = closure_17();
+  let tmp4Result = null;
+  if (null != userId) {
+    tmp4Result = null;
+    if (null != channelId) {
+      let obj = {
+        onPress() {
+              const items = [userId];
+              const obj = CallActionCreatorsDefault;
+              obj.stopRinging(channelId, items);
+            },
+        accessibilityRole: "button",
+        style: isActionSheet ? tmp2.ringingButton : tmp.ringingButton,
+        children: closure_13(LegacyText, obj2)
+      };
+      const PressableOpacity = channelId(5436).PressableOpacity;
+      obj2 = { style: isActionSheet ? tmp2.ringingButtonLabel : tmp.ringingButtonLabel, children: intl.string(channelId(1127).t.ygslb0) };
+      LegacyText = tmp5(1189).LegacyText;
+      intl = tmp5(1127).intl;
+      tmp4Result = tmp4(PressableOpacity, obj);
+    }
+  }
+  return tmp4Result;
+});
+const memo2 = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+const memo3 = react.memo;
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function DisconnectedUserRow(user) {
+  let first;
+  let isActionSheet;
+  let tmp = user;
+  let obj = user(isActionSheet[15]);
+  const cResult = obj.c(31);
+  user = user.user;
+  const channel = user.channel;
+  isActionSheet = user.isActionSheet;
+  const onPress = user.onPress;
+  closure_17();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [CallStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === channel.id) {
+    let tmp7;
+    let tmp8;
+    if (cResult[2] === user.id) {
+      tmp7 = cResult[3];
+      tmp8 = cResult[4];
+    }
+    const tmpResult = tmp(isActionSheet[18]);
+    const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
+    if (cResult[5] === channel.guild_id) {
+      if (cResult[6] === channel.id) {
+        let tmp10;
+        if (cResult[7] === user) {
+          tmp10 = cResult[8];
+        }
+        const tmpResult2 = tmp(isActionSheet[39]);
+        const canRing = tmpResult2.useCanRing(user);
+        if (cResult[9] === canRing) {
+          if (cResult[10] === channel.id) {
+            if (cResult[11] === isActionSheet) {
+              if (cResult[12] === stateFromStores) {
+                let tmp14;
+                if (cResult[13] === user.id) {
+                  tmp14 = cResult[14];
+                }
+                if (cResult[15] === onPress) {
+                  let tmp15;
+                  if (cResult[16] === user) {
+                    tmp15 = cResult[17];
+                  }
+                  class E {
+                    constructor() {
+                      return onPress(user);
+                    }
+                  }
+                  if (cResult[18] === tmp10) {
+                    let tmp17;
+                    if (cResult[19] === null) {
+                      tmp17 = cResult[20];
+                    }
+                    if (cResult[21] === channel.guild_id) {
+                      let tmp20;
+                      let tmp22;
+                      if (cResult[22] === user) {
+                        tmp20 = cResult[23];
+                      }
+                      if (cResult[24] !== tmp14) {
+                        const tmp14Result = tmp14();
+                        class E {
+                          constructor() {
+                            return onPress(user);
+                          }
+                        }
+                        cResult[25] = tmp14Result;
+                        tmp22 = tmp14Result;
+                      } else {
+                        tmp22 = cResult[25];
+                      }
+                      class E {
+                        constructor() {
+                          return onPress(user);
+                        }
+                      }
+                      const obj2 = { onPress: tmp15, label: tmp17, leading: tmp20, trailing: tmp22 };
+                      const obj4 = {};
+                      const FormRow = tmp(tmp2[30]).FormRow;
+                      const merged = Object.assign(obj2);
+                      cResult[26] = tmp22;
+                      cResult[27] = tmp15;
+                      cResult[28] = tmp17;
+                      cResult[29] = tmp20;
+                      cResult[30] = closure_13(FormRow, obj4);
+                      const tmp29 = closure_13(FormRow, obj4);
+                    }
+                    class E {
+                      constructor() {
+                        return onPress(user);
+                      }
+                    }
+                    const obj5 = { user, guildId: channel.guild_id, size: tmp(isActionSheet[22]).AvatarSizes.REFRESH_MEDIUM_32 };
+                    const Avatar = tmp(tmp2[22]).Avatar;
+                    const tmp21 = closure_13(Avatar, obj5);
+                    cResult[21] = channel.guild_id;
+                    cResult[22] = user;
+                    cResult[23] = tmp21;
+                    tmp20 = tmp21;
+                  }
+                  const obj6 = { text: tmp10, style: null };
+                  const tmp19 = closure_13(tmp(isActionSheet[30]).FormRow.Label, obj6);
+                  cResult[18] = tmp10;
+                  cResult[19] = null;
+                  cResult[20] = tmp19;
+                  tmp17 = tmp19;
+                }
+                class E {
+                  constructor() {
+                    return onPress(user);
+                  }
+                }
+                cResult[15] = onPress;
+                cResult[16] = user;
+                cResult[17] = E;
+                tmp15 = E;
+              }
+            }
+          }
+        }
+        function renderVoiceState() {
+          let tmp = null;
+          if (canRing) {
+            const obj = { channelId: channel.id, userId: user.id, isActionSheet };
+            tmp = map1(stateFromStores ? closure_21 : closure_20, obj);
+          }
+          return tmp;
+        }
+        cResult[9] = canRing;
+        cResult[10] = channel.id;
+        cResult[11] = isActionSheet;
+        cResult[12] = stateFromStores;
+        cResult[13] = user.id;
+        cResult[14] = renderVoiceState;
+        tmp14 = renderVoiceState;
+      }
+    }
+    const obj3 = channel(isActionSheet[38]);
+    const name = obj3.getName(channel.guild_id, channel.id, user);
+    cResult[5] = channel.guild_id;
+    cResult[6] = channel.id;
+    cResult[7] = user;
+    cResult[8] = name;
+    tmp10 = name;
+  }
+  const fn = function l() {
+    const call = CallStore.getCall(channel.id);
+    let hasItem = null != call;
+    if (hasItem) {
+      const ringing = call.ringing;
+      hasItem = ringing.includes(user.id);
+    }
+    return hasItem;
+  };
+  const items1 = [channel.id, user.id];
+  cResult[1] = channel.id;
+  cResult[2] = user.id;
+  cResult[3] = fn;
+  cResult[4] = items1;
+  tmp8 = items1;
+  tmp7 = fn;
+}) : (function DisconnectedUserRow(user) {
   let Avatar;
   let Label;
   let isActionSheet;
@@ -433,7 +1386,7 @@ const memoResult = react.memo(function DisconnectedUserRow(user) {
   ({ isActionSheet, onPress: dependencyMap } = user);
   const items = [CallStore];
   const items1 = [channel.id, user.id];
-  const tmp = closure_15();
+  const tmp = closure_17();
   const obj = user(504);
   const stateFromStores = obj.useStateFromStores(items, () => {
     const call = CallStore.getCall(channel.id);
@@ -444,41 +1397,131 @@ const memoResult = react.memo(function DisconnectedUserRow(user) {
     }
     return hasItem;
   }, items1);
-  const obj2 = channel(4988);
+  const obj2 = channel(4989);
   const name = obj2.getName(channel.guild_id, channel.id, user);
   const obj4 = {
     onPress() {
       return dependencyMap(user);
     },
-    label: closure_11(Label, obj5),
-    leading: closure_11(Avatar, obj6),
+    label: closure_13(Label, obj5),
+    leading: closure_13(Avatar, obj6),
     trailing: tmp7Result
   };
-  const obj3 = user(9187);
+  const obj3 = user(9164);
   const canRing = obj3.useCanRing(user);
   obj5 = { text: name, style: labelCallScreen };
   labelCallScreen = null;
-  Label = user(8053).FormRow.Label;
+  Label = user(8057).FormRow.Label;
   if (isActionSheet) {
     labelCallScreen = tmp.labelCallScreen;
   }
-  obj6 = { user, guildId: channel.guild_id, size: user(1177).AvatarSizes.REFRESH_MEDIUM_32 };
-  Avatar = tmp2(1177).Avatar;
+  obj6 = { user, guildId: channel.guild_id, size: user(1189).AvatarSizes.REFRESH_MEDIUM_32 };
+  Avatar = tmp2(1189).Avatar;
   tmp7Result = null;
   if (canRing) {
     const obj7 = { channelId: channel.id, userId: user.id, isActionSheet };
-    tmp7Result = tmp7(stateFromStores ? StopRingButton : RingButton, obj7);
+    tmp7Result = tmp7(stateFromStores ? closure_21 : closure_20, obj7);
   }
   const obj8 = {};
-  const FormRow = tmp2(8053).FormRow;
+  const FormRow = tmp2(8057).FormRow;
   const merged = Object.assign(obj4);
-  return closure_11(FormRow, obj8);
-});
-const memoResult1 = react.memo(function VoiceMemberUser(voiceState) {
+  return closure_13(FormRow, obj8);
+}));
+ReactCompilerGating = ReactCompilerGating_mod;
+const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberUser(voiceState) {
+  let first;
+  let tmp8;
+  const obj = voiceState(576);
+  const cResult = obj.c(11);
+  const tmp = voiceState;
+  voiceState = voiceState.voiceState;
+  let nick = voiceState.nick;
+  user = voiceState.user;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  let channelId;
+  const tmp6 = cResult[1];
+  if (voiceState != null) {
+    channelId = voiceState.channelId;
+  }
+  if (tmp6 !== channelId) {
+    let channelId1;
+    if (voiceState != null) {
+      channelId1 = voiceState.channelId;
+    }
+    const fn = function l() {
+      let channelId;
+      const getChannel = ChannelStore.getChannel;
+      if (voiceState != null) {
+        channelId = voiceState.channelId;
+      }
+      return getChannel(channelId);
+    };
+    cResult[1] = channelId1;
+    cResult[2] = fn;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
+  const obj3 = UserUtilsDefault;
+  const name = obj3.useName(user);
+  if (null != voiceState) {
+    if (voiceState.selfStream) {
+      let tmp12 = nick;
+      if (nick == null) {
+        tmp12 = name;
+      }
+      if (cResult[7] === stateFromStores) {
+        if (cResult[8] === voiceState) {
+          let tmp13;
+          if (cResult[9] === tmp12) {
+            tmp13 = cResult[10];
+          }
+          return tmp13;
+        }
+      }
+      const obj2 = { name: tmp12, channel: stateFromStores };
+      const merged = Object.assign(voiceState);
+      const tmp19 = closure_13(closure_19, obj2);
+      cResult[7] = stateFromStores;
+      cResult[8] = voiceState;
+      cResult[9] = tmp12;
+      cResult[10] = tmp19;
+      tmp13 = tmp19;
+    }
+  }
+  if (nick == null) {
+    nick = name;
+  }
+  if (cResult[3] === stateFromStores) {
+    if (cResult[4] === voiceState) {
+      let tmp20;
+      if (cResult[5] === nick) {
+        tmp20 = cResult[6];
+      }
+      return tmp20;
+    }
+  }
+  const obj4 = { name: nick, channel: stateFromStores, withStream: false };
+  const merged1 = Object.assign(voiceState);
+  const tmp22 = closure_13(closure_18, obj4);
+  cResult[3] = stateFromStores;
+  cResult[4] = voiceState;
+  cResult[5] = nick;
+  cResult[6] = tmp22;
+  tmp20 = tmp22;
+}) : (function VoiceMemberUser(voiceState) {
   let tmp6;
   voiceState = voiceState.voiceState;
   let nick = voiceState.nick;
-  const user = voiceState.user;
+  user = voiceState.user;
   const items = [ChannelStore];
   const obj = voiceState(504);
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -496,8 +1539,8 @@ const memoResult1 = react.memo(function VoiceMemberUser(voiceState) {
     if (voiceState.selfStream) {
       const obj3 = { name: nick, channel: stateFromStores };
       const merged = Object.assign(voiceState);
-      const tmp8 = closure_11;
-      const tmp9 = StreamingUserRow;
+      const tmp8 = closure_13;
+      const tmp9 = closure_19;
       if (nick == null) {
         nick = name;
       }
@@ -508,15 +1551,15 @@ const memoResult1 = react.memo(function VoiceMemberUser(voiceState) {
   const obj4 = { name: tmp6, channel: stateFromStores, withStream: false };
   const merged1 = Object.assign(voiceState);
   tmp6 = nick;
-  const tmp3 = closure_11;
-  const tmp4 = closure_16;
+  const tmp3 = closure_13;
+  const tmp4 = closure_18;
   if (nick == null) {
     tmp6 = name;
   }
   tmp3Result = tmp3(tmp4, obj4);
-});
+}));
 const result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceMemberUser.tsx");
 
-export default memoResult1;
+export default memo3Result;
 export const STREAM_PREVIEW_MARGIN = 16;
-export const DisconnectedUserRow = memoResult;
+export const DisconnectedUserRow = memo2Result;

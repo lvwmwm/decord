@@ -1,34 +1,177 @@
-// Module ID: 14342
-// Function ID: 14343
+// Module ID: 14330
+// Function ID: 14331
 // Name: IgnoredUsersList
-// Dependencies: [19, 17, 4479, 21, 4836, 576, 6583, 6603, 1177, 14336, 1115, 6544, 4832, 5999, 14343, 504, 2]
-// Exports: default
+// Dependencies: [19, 17, 4482, 21, 4837, 588, 558, 576, 6584, 6604, 1189, 14324, 1127, 4833, 14331, 5997, 6546, 504, 2]
 
-// Module 14342 (IgnoredUsersList)
+// Module 14330 (IgnoredUsersList)
 import react_native from "react-native" /* 17 */;
-import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import intl4 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import TableRowGroup2 from "TableRowGroup" /* 5999 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6583 */;
-import Blocked from "Blocked" /* 14336 */;
-import IgnoredUserRowDefault from "IgnoredUserRow" /* 14343 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import TableRowGroup2 from "TableRowGroup" /* 5997 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6546 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6584 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
+import Blocked from "Blocked" /* 14324 */;
+import IgnoredUserRowDefault from "IgnoredUserRow" /* 14331 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
+let userIds;
 
 let hasOwnProperty;
 let metroRequire;
 let obj2;
 let obj3;
-function IgnoredUsersList(userIds) {
+let tmp;
+const get_initialized = tmp(504);
+const ScrollView = react_native.ScrollView;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { list: obj2, sectionLabelStyle: obj3 };
+obj2 = { marginTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_8 };
+let closure_7 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
+  let intl3;
+  let items;
+  let list;
+  let sectionLabelStyle;
+  let obj = react2;
+  const cResult = obj.c(21);
+  userIds = userIds.userIds;
+  const tmp4 = closure_7();
+  const tmp5 = useAnalyticsLocationsDefault;
+  const analyticsLocations = tmp5(AnalyticsLocationDefault.IGNORED_USERS).analyticsLocations;
+  if (0 === userIds.length) {
+    let first;
+    const _Symbol3 = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { Illustration: Blocked.Blocked, body: intl3.string(intl4.t.PYrWFW) };
+      const EmptyState = tmp(1189).EmptyState;
+      intl3 = tmp(1127).intl;
+      const tmp33 = hasOwnProperty(EmptyState, obj2);
+      cResult[0] = tmp33;
+      first = tmp33;
+    } else {
+      first = cResult[0];
+    }
+    return first;
+  } else {
+    let tmp6;
+    ({ list, sectionLabelStyle } = tmp4);
+    if (cResult[1] !== userIds.length) {
+      const intl = tmp(1127).intl;
+      const obj3 = { numberOfIgnoredUsers: userIds.length };
+      const formatToPlainStringResult = intl.formatToPlainString(intl4.t.iNKUhU, obj3);
+      cResult[1] = userIds.length;
+      cResult[2] = formatToPlainStringResult;
+      tmp6 = formatToPlainStringResult;
+    } else {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] === tmp4.sectionLabelStyle) {
+      let tmp8;
+      let tmp12;
+      let tmp14;
+      let tmp17;
+      if (cResult[4] === tmp6) {
+        tmp8 = cResult[5];
+      }
+      const _Symbol = Symbol;
+      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl2 = tmp(1127).intl;
+        const stringResult = intl2.string(intl4.t["93ZDWE"]);
+        cResult[6] = stringResult;
+        tmp12 = stringResult;
+      } else {
+        tmp12 = cResult[6];
+      }
+      if (cResult[7] !== userIds) {
+        let tmp15;
+        const _Symbol2 = Symbol;
+        if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+          const fn = function p(userId) {
+            const obj = { userId };
+            return closure_1_5(IgnoredUserRowDefault, obj, userId);
+          };
+          cResult[9] = fn;
+          tmp15 = fn;
+        } else {
+          tmp15 = cResult[9];
+        }
+        const mapped = userIds.map(tmp15);
+        cResult[7] = userIds;
+        cResult[8] = mapped;
+        tmp14 = mapped;
+      } else {
+        tmp14 = cResult[8];
+      }
+      if (cResult[10] !== tmp14) {
+        const obj4 = { hasIcons: true, children: tmp14 };
+        const tmp19 = hasOwnProperty(TableRowGroup2.TableRowGroup, obj4, tmp12);
+        cResult[10] = tmp14;
+        cResult[11] = tmp19;
+        tmp17 = tmp19;
+      } else {
+        tmp17 = cResult[11];
+      }
+      if (cResult[12] === tmp8) {
+        let tmp20;
+        if (cResult[13] === tmp17) {
+          tmp20 = cResult[14];
+        }
+        if (cResult[15] === tmp4.list) {
+          let tmp24;
+          if (cResult[16] === tmp20) {
+            tmp24 = cResult[17];
+          }
+          if (cResult[18] === analyticsLocations) {
+            let tmp27;
+            if (cResult[19] === tmp24) {
+              tmp27 = cResult[20];
+            }
+            return tmp27;
+          }
+          const obj5 = { value: analyticsLocations, children: tmp24 };
+          const tmp29 = hasOwnProperty(useAnalyticsLocations.AnalyticsLocationProvider, obj5);
+          cResult[18] = analyticsLocations;
+          cResult[19] = tmp24;
+          cResult[20] = tmp29;
+          tmp27 = tmp29;
+        }
+        const obj6 = { bottom: true, style: list, children: tmp20 };
+        const tmp26 = hasOwnProperty(common_SafeAreaView.SafeAreaPaddingView, obj6);
+        cResult[15] = tmp4.list;
+        cResult[16] = tmp20;
+        cResult[17] = tmp26;
+        tmp24 = tmp26;
+      }
+      const obj7 = { children: items };
+      items = [tmp8, tmp17];
+      const tmp23 = metroRequire(ScrollView, obj7);
+      cResult[12] = tmp8;
+      cResult[13] = tmp17;
+      cResult[14] = tmp23;
+      tmp20 = tmp23;
+    }
+    const obj8 = { style: sectionLabelStyle, variant: "text-sm/semibold", color: "text-default", children: tmp6 };
+    const tmp10 = hasOwnProperty(Text_Text.Text, obj8);
+    cResult[3] = tmp4.sectionLabelStyle;
+    cResult[4] = tmp6;
+    cResult[5] = tmp10;
+    tmp8 = tmp10;
+  }
+}) : ((userIds) => {
   let SafeAreaPaddingView;
   let intl;
   let intl2;
@@ -69,21 +212,46 @@ function IgnoredUsersList(userIds) {
     tmp7 = hasOwnProperty(AnalyticsLocationProvider, obj2);
   }
   return tmp7;
-}
-const ScrollView = react_native.ScrollView;
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { list: obj2, sectionLabelStyle: obj3 };
-obj2 = { marginTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16 };
-createStyles = createStyles.createStyles;
-obj3 = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_8 };
-let closure_7 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/IgnoredUsersList.tsx");
-
-export default function ConnectedIgnoredUsersList() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let ignoredIDs;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [RelationshipStore];
+    const fn = function l() {
+      return ignoredIDs.getIgnoredIDs();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp4, tmp5);
+  if (cResult[2] !== stateFromStoresArray) {
+    const obj2 = { userIds: stateFromStoresArray };
+    const tmp11 = hasOwnProperty(closure_8, obj2);
+    cResult[2] = stateFromStoresArray;
+    cResult[3] = tmp11;
+    tmp8 = tmp11;
+  } else {
+    tmp8 = cResult[3];
+  }
+  return tmp8;
+}) : (() => {
   let ignoredIDs;
   const items = [RelationshipStore];
   const obj = get_initialized;
   const obj2 = { userIds: obj.useStateFromStoresArray(items, () => ignoredIDs.getIgnoredIDs()) };
-  return hasOwnProperty(IgnoredUsersList, obj2);
-};
+  return hasOwnProperty(closure_8, obj2);
+});
+const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/IgnoredUsersList.tsx");
+
+export default tmp5;

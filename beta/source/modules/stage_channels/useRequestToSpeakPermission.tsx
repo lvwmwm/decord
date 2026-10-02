@@ -1,33 +1,158 @@
-// Module ID: 9373
-// Function ID: 9374
+// Module ID: 9351
+// Function ID: 9352
 // Name: useRequestToSpeakPermission
-// Dependencies: [32, 19, 2045, 1074, 504, 4474, 7846, 2]
-// Exports: useRequestToSpeakPermission
+// Dependencies: [32, 19, 2051, 1086, 558, 576, 504, 4477, 7850, 2]
 
-// Module 9373 (useRequestToSpeakPermission)
-import Constants from "Constants" /* 1074 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7846 */;
+// Module 9351 (useRequestToSpeakPermission)
+import Constants from "Constants" /* 1086 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7850 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
 const Permissions = Constants.Permissions;
-let result = size.fileFinishedImporting("modules/stage_channels/useRequestToSpeakPermission.tsx");
-
-export const useRequestToSpeakPermission = function useRequestToSpeakPermission(id) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let closure_2;
+  let first;
+  let items2;
+  let tmp13;
+  let tmp14;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(11);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    class E {
+      constructor() {
+        return closure_5.getChannel(closure_0);
+      }
+    }
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = E;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = E;
+  } else {
+    class E {
+      constructor() {
+        return closure_5.getChannel(closure_0);
+      }
+    }
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
+  if (cResult[4] !== stateFromStores) {
+    class E {
+      constructor() {
+        return closure_5.getChannel(closure_0);
+      }
+    }
+    const obj3 = stateFromStores(4477);
+    cResult[4] = stateFromStores;
+    cResult[5] = obj3.canEveryoneRole(Permissions.REQUEST_TO_SPEAK, stateFromStores);
+    const canEveryoneRoleResult = obj3.canEveryoneRole(Permissions.REQUEST_TO_SPEAK, stateFromStores);
+  } else {
+    class E {
+      constructor() {
+        return closure_5.getChannel(closure_0);
+      }
+    }
+  }
+  [tmp13, tmp14] = react.useState(tmp9);
+  dependencyMap = tmp14;
+  _slicedToArray(react.useState(tmp9), 2);
+  if (tmp9 !== tmp13) {
+    class E {
+      constructor() {
+        return closure_5.getChannel(closure_0);
+      }
+    }
+  }
+  if (cResult[6] !== stateFromStores) {
+    class R {
+      constructor(arg0) {
+        if (null != closure_1) {
+          tmp2 = arg0;
+          tmp3 = closure_2;
+          tmp4 = closure_2(arg0);
+          tmp5 = closure_0;
+          tmp6 = closure_2;
+          obj = closure_0(closure_2[8]);
+          tmp7 = Permissions;
+          result = obj.setEveryoneRolePermissionAllowed(tmp, Permissions.REQUEST_TO_SPEAK, arg0);
+        }
+        return;
+      }
+    }
+    cResult[6] = stateFromStores;
+    cResult[7] = R;
+  } else {
+    class R {
+      constructor(arg0) {
+        if (null != closure_1) {
+          tmp2 = arg0;
+          tmp3 = closure_2;
+          tmp4 = closure_2(arg0);
+          tmp5 = closure_0;
+          tmp6 = closure_2;
+          obj = closure_0(closure_2[8]);
+          tmp7 = Permissions;
+          result = obj.setEveryoneRolePermissionAllowed(tmp, Permissions.REQUEST_TO_SPEAK, arg0);
+        }
+        return;
+      }
+    }
+  }
+  if (cResult[8] === tmp13) {
+    class R {
+      constructor(arg0) {
+        if (null != closure_1) {
+          tmp2 = arg0;
+          tmp3 = closure_2;
+          tmp4 = closure_2(arg0);
+          tmp5 = closure_0;
+          tmp6 = closure_2;
+          obj = closure_0(closure_2[8]);
+          tmp7 = Permissions;
+          result = obj.setEveryoneRolePermissionAllowed(tmp, Permissions.REQUEST_TO_SPEAK, arg0);
+        }
+        return;
+      }
+    }
+    return items2;
+  }
+  items2 = [tmp13, tmp15];
+  cResult[8] = tmp13;
+  cResult[9] = tmp15;
+  cResult[10] = items2;
+}) : ((arg0) => {
+  let closure_0;
   let closure_2;
   let tmp4;
   let tmp5;
-  _require = id;
+  _require = arg0;
   let obj = require("get initialized");
   const items = [ChannelStore];
-  const items1 = [id];
-  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(id), items1);
-  const obj2 = stateFromStores(4474);
+  const items1 = [arg0];
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(closure_0), items1);
+  const obj2 = stateFromStores(4477);
   const canEveryoneRoleResult = obj2.canEveryoneRole(Permissions.REQUEST_TO_SPEAK, stateFromStores);
   [tmp4, tmp5] = _slicedToArray(react.useState(canEveryoneRoleResult), 2);
   dependencyMap = tmp5;
@@ -46,4 +171,7 @@ export const useRequestToSpeakPermission = function useRequestToSpeakPermission(
     }
   ];
   return items2;
-};
+});
+let result = size.fileFinishedImporting("modules/stage_channels/useRequestToSpeakPermission.tsx");
+
+export const useRequestToSpeakPermission = tmp2;

@@ -1,21 +1,21 @@
-// Module ID: 12264
-// Function ID: 12265
+// Module ID: 12159
+// Function ID: 12160
 // Name: DiscoverabilityLanding
-// Dependencies: [19, 17, 12174, 1074, 21, 4836, 576, 5836, 1613, 4800, 12265, 1981, 5994, 5899, 12266, 4832, 1115, 8053, 12201, 5281, 2]
+// Dependencies: [19, 17, 12067, 1086, 21, 4837, 588, 5837, 1619, 4801, 12160, 1987, 5991, 5896, 12161, 4833, 1127, 8057, 12094, 5282, 2]
 // Exports: default
 
-// Module 12264 (DiscoverabilityLanding)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12174 */;
+// Module 12159 (DiscoverabilityLanding)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12067 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
-import TextStyles from "TextStyles" /* 5836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import TextStyles from "TextStyles" /* 5837 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -66,7 +66,7 @@ export default function DiscoverabilityLanding(onNext) {
   react = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { allowPhone, allowEmail };
-    obj.openLazy(asyncRequire(12265, dependencyMap.paths), "Discoverability Landing", obj2);
+    obj.openLazy(asyncRequire(12160, dependencyMap.paths), "Discoverability Landing", obj2);
   }, items);
   let obj = { style: tmp.container, contentContainerStyle: obj2, children: items2 };
   obj2 = { paddingTop: onNext(allowPhone[12]).NAV_BAR_HEIGHT + 32, paddingBottom: bottom + 16 };

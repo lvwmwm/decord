@@ -1,18 +1,19 @@
-// Module ID: 6025
-// Function ID: 6026
+// Module ID: 6349
+// Function ID: 6350
 // Name: Input
-// Dependencies: [19, 17, 21, 4836, 576, 6026, 4533, 4832, 6027, 2]
-// Exports: Input
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 6022, 4537, 4833, 6350, 2]
 
-// Module 6025 (Input)
+// Module 6349 (Input)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4533 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import getRequiredFieldA11yName2 from "getRequiredFieldA11yName" /* 6026 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 4537 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import getRequiredFieldA11yName2 from "getRequiredFieldA11yName" /* 6022 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -33,9 +34,149 @@ obj4 = { marginBottom: nativeDefault.space.PX_4 };
 obj5 = { marginTop: nativeDefault.space.PX_4 };
 obj6 = { marginTop: nativeDefault.space.PX_4, width: "auto" };
 let closure_5 = createStyles(obj);
-const result = size.fileFinishedImporting("design/components/Input/native/Input.native.tsx");
-
-export const Input = function Input(arg0) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let containerStyle;
+  let description;
+  let errorMessage;
+  let items;
+  let items1;
+  let items2;
+  let label;
+  let labelId;
+  let labelTrailing;
+  let required;
+  const obj = react2;
+  const cResult = obj.c(26);
+  const tmp4 = closure_5();
+  ({ label, labelTrailing, labelId, description, errorMessage, children, containerStyle, required } = arg0);
+  if (cResult[0] === label) {
+    let tmp5;
+    if (cResult[1] === required) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] === label) {
+      if (cResult[4] === labelId) {
+        if (cResult[5] === labelTrailing) {
+          if (cResult[6] === required) {
+            if (cResult[7] === tmp5) {
+              if (cResult[8] === tmp4.label) {
+                let tmp8;
+                if (cResult[9] === tmp4.labelWrapper) {
+                  tmp8 = cResult[10];
+                }
+                if (cResult[11] === children) {
+                  let tmp17;
+                  if (cResult[12] === tmp4.inputRow) {
+                    tmp17 = cResult[13];
+                  }
+                  if (cResult[14] === description) {
+                    let tmp21;
+                    if (cResult[15] === tmp4.description) {
+                      tmp21 = cResult[16];
+                    }
+                    if (cResult[17] === errorMessage) {
+                      let tmp24;
+                      if (cResult[18] === tmp4.error) {
+                        tmp24 = cResult[19];
+                      }
+                      if (cResult[20] === containerStyle) {
+                        if (cResult[21] === tmp8) {
+                          if (cResult[22] === tmp17) {
+                            if (cResult[23] === tmp21) {
+                              let tmp27;
+                              if (cResult[24] === tmp24) {
+                                tmp27 = cResult[25];
+                              }
+                              return tmp27;
+                            }
+                          }
+                        }
+                      }
+                      const obj2 = { style: containerStyle, children: items };
+                      items = [tmp8, tmp17, tmp21, tmp24];
+                      const tmp30 = React3(View, obj2);
+                      cResult[20] = containerStyle;
+                      cResult[21] = tmp8;
+                      cResult[22] = tmp17;
+                      cResult[23] = tmp21;
+                      cResult[24] = tmp24;
+                      cResult[25] = tmp30;
+                      tmp27 = tmp30;
+                    }
+                    let tmp25 = null;
+                    if (null != errorMessage) {
+                      const obj3 = { style: tmp4.error, children: errorMessage };
+                      tmp25 = _false(tmp(6350).ErrorText, obj3);
+                    }
+                    cResult[17] = errorMessage;
+                    cResult[18] = tmp4.error;
+                    cResult[19] = tmp25;
+                    tmp24 = tmp25;
+                  }
+                  let tmp22 = null;
+                  if (null != description) {
+                    const obj4 = { variant: "text-xs/medium", color: "text-muted", style: tmp4.description, children: description };
+                    tmp22 = _false(tmp(4833).Text, obj4);
+                  }
+                  cResult[14] = description;
+                  cResult[15] = tmp4.description;
+                  cResult[16] = tmp22;
+                  tmp21 = tmp22;
+                }
+                const obj5 = { style: tmp4.inputRow, children };
+                const tmp20 = _false(View, obj5);
+                cResult[11] = children;
+                cResult[12] = tmp4.inputRow;
+                cResult[13] = tmp20;
+                tmp17 = tmp20;
+              }
+            }
+          }
+        }
+      }
+    }
+    let tmp10 = null;
+    if (null != label) {
+      let tmp11Result2;
+      if (null != labelTrailing) {
+        const obj6 = { style: tmp4.labelWrapper, children: items1 };
+        const obj7 = { variant: "text-sm/semibold", color: "text-subtle", nativeID: labelId, accessibilityLabel: tmp5, children: label };
+        items1 = [_false(Text_Text.Text, obj7), labelTrailing];
+        tmp11Result2 = React3(View, obj6);
+      } else {
+        const obj8 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp4.label, nativeID: labelId, accessibilityLabel: tmp5, children: items2 };
+        items2 = [label, ];
+        let tmp11Result = null;
+        const Text = tmp(4833).Text;
+        if (required) {
+          const obj9 = { variant: "text-sm/bold", color: "text-feedback-critical", "aria-hidden": true, children: [" ", "*"] };
+          tmp11Result = tmp11(tmp(4833).Text, obj9);
+        }
+        items2[1] = tmp11Result;
+        tmp11Result2 = tmp11(Text, obj8);
+      }
+      tmp10 = tmp11Result2;
+    }
+    cResult[3] = label;
+    cResult[4] = labelId;
+    cResult[5] = labelTrailing;
+    cResult[6] = required;
+    cResult[7] = tmp5;
+    cResult[8] = tmp4.label;
+    cResult[9] = tmp4.labelWrapper;
+    cResult[10] = tmp10;
+    tmp8 = tmp10;
+  }
+  const getRequiredFieldA11yName = getRequiredFieldA11yName2.getRequiredFieldA11yName;
+  getRequiredFieldA11yName2;
+  const tmpResult2 = native;
+  const requiredFieldA11yName = getRequiredFieldA11yName(tmpResult2.getNodeText(label), required);
+  cResult[0] = label;
+  cResult[1] = required;
+  cResult[2] = requiredFieldA11yName;
+  tmp5 = requiredFieldA11yName;
+}) : ((arg0) => {
   let children;
   let containerStyle;
   let description;
@@ -67,10 +208,10 @@ export const Input = function Input(arg0) {
       const obj5 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.label, nativeID: labelId, accessibilityLabel: requiredFieldA11yName, children: items1 };
       items1 = [label, ];
       let tmp6Result2 = null;
-      const Text = tmp2(4832).Text;
+      const Text = tmp2(4833).Text;
       if (required) {
         const obj6 = { variant: "text-sm/bold", color: "text-feedback-critical", "aria-hidden": true, children: [" ", "*"] };
-        tmp6Result2 = tmp6(tmp2(4832).Text, obj6);
+        tmp6Result2 = tmp6(tmp2(4833).Text, obj6);
       }
       items1[1] = tmp6Result2;
       tmp6Result = tmp6(Text, obj5);
@@ -83,14 +224,17 @@ export const Input = function Input(arg0) {
   let tmp12Result = null;
   if (null != description) {
     const obj8 = { variant: "text-xs/medium", color: "text-muted", style: tmp.description, children: description };
-    tmp12Result = tmp12(tmp2(4832).Text, obj8);
+    tmp12Result = tmp12(tmp2(4833).Text, obj8);
   }
   items2[2] = tmp12Result;
   let tmp12Result2 = null;
   if (null != errorMessage) {
     const obj9 = { style: tmp.error, children: errorMessage };
-    tmp12Result2 = tmp12(tmp2(6027).ErrorText, obj9);
+    tmp12Result2 = tmp12(tmp2(6350).ErrorText, obj9);
   }
   items2[3] = tmp12Result2;
   return React3(View, obj2);
-};
+});
+const result = size.fileFinishedImporting("design/components/Input/native/Input.native.tsx");
+
+export const Input = tmp5;

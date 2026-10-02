@@ -1,23 +1,23 @@
-// Module ID: 12855
-// Function ID: 12856
+// Module ID: 12857
+// Function ID: 12858
 // Name: AppDMOptionsBottomSheet
-// Dependencies: [19, 17, 6528, 1074, 21, 4836, 576, 504, 7624, 4800, 6800, 6591, 6571, 5999, 5917, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 6529, 1086, 21, 4837, 588, 558, 576, 504, 7628, 4801, 6801, 6592, 1127, 5916, 5997, 6572, 2]
 
-// Module 12855 (AppDMOptionsBottomSheet)
+// Module 12857 (AppDMOptionsBottomSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import openUserSettings from "openUserSettings" /* 6800 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import openUserSettings from "openUserSettings" /* 6801 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
 import react from "react" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6528 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6529 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet;
+let BottomSheet, userId;
 
 let metroImportAll;
 let metroImportDefault;
@@ -28,9 +28,270 @@ const UserSettingsSections = Constants.UserSettingsSections;
 let obj = { sheet: obj2, content: { paddingLeft: 16, paddingRight: 16, paddingBottom: 24 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_9 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/app_dms/native/AppDMOptionsBottomSheet.tsx");
-
-export default function AppDMOptionsBottomSheet(userId) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  let application;
+  let content;
+  let first;
+  let items2;
+  let sheet;
+  let tmp9;
+  let tmp = userId;
+  let obj = userId(application[8]);
+  const cResult = obj.c(27);
+  userId = userId.userId;
+  const channel = userId.channel;
+  application = userId.application;
+  const tmp4 = closure_9();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthorizedAppsStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  let id;
+  const tmp7 = cResult[1];
+  if (application != null) {
+    id = application.id;
+  }
+  if (tmp7 !== id) {
+    let id1;
+    if (application != null) {
+      id1 = application.id;
+    }
+    class S {
+      constructor() {
+        let id;
+        const getNewestTokenForApplication = AuthorizedAppsStore.getNewestTokenForApplication;
+        if (application != null) {
+          id = application.id;
+        }
+        return getNewestTokenForApplication(id);
+      }
+    }
+    cResult[1] = id1;
+    cResult[2] = S;
+    tmp9 = S;
+  } else {
+    tmp9 = cResult[2];
+  }
+  const tmpResult = tmp(application[9]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
+  if (cResult[3] === channel.id) {
+    let tmp12;
+    if (cResult[4] === userId) {
+      tmp12 = cResult[5];
+    }
+    if (cResult[6] === application) {
+      let tmp13;
+      let tmp17;
+      let tmp16;
+      let tmp22;
+      let tmp25;
+      if (cResult[7] === stateFromStores) {
+        tmp13 = cResult[8];
+      }
+      const _Symbol = Symbol;
+      class S {
+        constructor() {
+          let id;
+          const getNewestTokenForApplication = AuthorizedAppsStore.getNewestTokenForApplication;
+          if (application != null) {
+            id = application.id;
+          }
+          return getNewestTokenForApplication(id);
+        }
+      }
+      if (tmp15 === Symbol.for("react.memo_cache_sentinel")) {
+        const fn = function k() {
+          const obj = channel(application[13]);
+          const response = obj.fetch();
+        };
+        const items1 = [];
+        class S {
+          constructor() {
+            let id;
+            const getNewestTokenForApplication = AuthorizedAppsStore.getNewestTokenForApplication;
+            if (application != null) {
+              id = application.id;
+            }
+            return getNewestTokenForApplication(id);
+          }
+        }
+        cResult[9] = fn;
+        cResult[10] = items1;
+        tmp17 = items1;
+        tmp16 = fn;
+      } else {
+        tmp16 = cResult[9];
+        tmp17 = cResult[10];
+      }
+      const effect = stateFromStores.useEffect(tmp16, tmp17);
+      const _Symbol2 = Symbol;
+      ({ sheet, content } = tmp4);
+      if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+        const string = tmp(tmp2[14]).intl.string;
+        class S {
+          constructor() {
+            let id;
+            const getNewestTokenForApplication = AuthorizedAppsStore.getNewestTokenForApplication;
+            if (application != null) {
+              id = application.id;
+            }
+            return getNewestTokenForApplication(id);
+          }
+        }
+        cResult[11] = tmp21;
+      }
+      if (cResult[12] !== tmp12) {
+        let obj2 = { label: null, onPress: tmp12 };
+        class S {
+          constructor() {
+            let id;
+            const getNewestTokenForApplication = AuthorizedAppsStore.getNewestTokenForApplication;
+            if (application != null) {
+              id = application.id;
+            }
+            return getNewestTokenForApplication(id);
+          }
+        }
+        const tmp24 = closure_7(tmp(application[15]).TableRow, obj2);
+        cResult[12] = tmp12;
+        cResult[13] = tmp24;
+        tmp22 = tmp24;
+      } else {
+        tmp22 = cResult[13];
+      }
+      const _Symbol3 = Symbol;
+      if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+        const string2 = tmp(tmp2[14]).intl.string;
+        class S {
+          constructor() {
+            let id;
+            const getNewestTokenForApplication = AuthorizedAppsStore.getNewestTokenForApplication;
+            if (application != null) {
+              id = application.id;
+            }
+            return getNewestTokenForApplication(id);
+          }
+        }
+        cResult[14] = tmp26;
+        tmp25 = tmp26;
+      } else {
+        tmp25 = cResult[14];
+      }
+      if (cResult[15] === tmp13) {
+        if (cResult[18] === tmp22) {
+          let tmp31;
+          if (cResult[19] === tmp28) {
+            tmp31 = cResult[20];
+          }
+          if (cResult[21] === tmp4.content) {
+            let tmp33;
+            if (cResult[22] === tmp31) {
+              tmp33 = cResult[23];
+            }
+            if (cResult[24] === tmp4.sheet) {
+              let tmp36;
+              if (cResult[25] === tmp33) {
+                tmp36 = cResult[26];
+              }
+              return tmp36;
+            }
+            class S {
+              constructor() {
+                let id;
+                const getNewestTokenForApplication = AuthorizedAppsStore.getNewestTokenForApplication;
+                if (application != null) {
+                  id = application.id;
+                }
+                return getNewestTokenForApplication(id);
+              }
+            }
+            let obj3 = { startExpanded: true, backgroundStyles: sheet, children: tmp33 };
+            const tmp37 = closure_7(tmp(application[17]).BottomSheet, obj3);
+            cResult[24] = tmp4.sheet;
+            cResult[25] = tmp33;
+            cResult[26] = tmp37;
+            tmp36 = tmp37;
+          }
+          class S {
+            constructor() {
+              let id;
+              const getNewestTokenForApplication = AuthorizedAppsStore.getNewestTokenForApplication;
+              if (application != null) {
+                id = application.id;
+              }
+              return getNewestTokenForApplication(id);
+            }
+          }
+          let obj4 = { style: content, children: tmp31 };
+          const tmp35 = closure_7(View, obj4);
+          cResult[21] = tmp4.content;
+          cResult[22] = tmp31;
+          cResult[23] = tmp35;
+          tmp33 = tmp35;
+        }
+        class S {
+          constructor() {
+            let id;
+            const getNewestTokenForApplication = AuthorizedAppsStore.getNewestTokenForApplication;
+            if (application != null) {
+              id = application.id;
+            }
+            return getNewestTokenForApplication(id);
+          }
+        }
+        const obj5 = { hasIcons: false, children: items2 };
+        items2 = [tmp22, tmp28];
+        const tmp32 = closure_8(tmp(application[16]).TableRowGroup, obj5);
+        cResult[18] = tmp22;
+        cResult[19] = tmp28;
+        cResult[20] = tmp32;
+        tmp31 = tmp32;
+      }
+      const obj6 = { label: tmp25, onPress: tmp13, disabled: null == stateFromStores };
+      cResult[15] = tmp13;
+      cResult[16] = null == stateFromStores;
+      cResult[17] = closure_7(tmp(application[15]).TableRow, obj6);
+      closure_7(tmp(application[15]).TableRow, obj6);
+      class T {
+        constructor() {
+          const obj = { userId, channelId: channel.id };
+          showUserProfileActionSheetDefault(obj);
+          const obj2 = ActionSheetActionCreatorsDefault;
+          obj2.hideActionSheet();
+        }
+      }
+    }
+    class S {
+      constructor() {
+        let id;
+        const getNewestTokenForApplication = AuthorizedAppsStore.getNewestTokenForApplication;
+        if (application != null) {
+          id = application.id;
+        }
+        return getNewestTokenForApplication(id);
+      }
+    }
+    cResult[6] = application;
+    cResult[7] = stateFromStores;
+    cResult[8] = tmp14;
+    tmp13 = tmp14;
+  }
+  class T {
+    constructor() {
+      const obj = { userId, channelId: channel.id };
+      showUserProfileActionSheetDefault(obj);
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet();
+    }
+  }
+  cResult[3] = channel.id;
+  cResult[4] = userId;
+  cResult[5] = T;
+  tmp12 = T;
+}) : ((userId) => {
   let TableRowGroup;
   let intl;
   let intl2;
@@ -41,7 +302,7 @@ export default function AppDMOptionsBottomSheet(userId) {
   const channel = userId.channel;
   const application = userId.application;
   let tmp = closure_9();
-  let obj = userId(application[7]);
+  let obj = userId(application[9]);
   const items = [AuthorizedAppsStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let id;
@@ -72,21 +333,24 @@ export default function AppDMOptionsBottomSheet(userId) {
     }
   }, items2);
   const effect = stateFromStores.useEffect(() => {
-    const obj = channel(application[11]);
+    const obj = channel(application[13]);
     const response = obj.fetch();
   }, []);
   let obj2 = { startExpanded: true, backgroundStyles: tmp.sheet, children: closure_7(View, obj3) };
   obj3 = { style: tmp.content, children: closure_8(TableRowGroup, obj4) };
-  BottomSheet = userId(application[12]).BottomSheet;
+  BottomSheet = userId(application[17]).BottomSheet;
   obj4 = { hasIcons: false, children: items3 };
-  TableRowGroup = userId(application[13]).TableRowGroup;
-  const obj5 = { label: intl.string(userId(application[15]).t.iXAna6), onPress: callback };
-  const TableRow = userId(application[14]).TableRow;
-  intl = userId(application[15]).intl;
+  TableRowGroup = userId(application[16]).TableRowGroup;
+  const obj5 = { label: intl.string(userId(application[14]).t.iXAna6), onPress: callback };
+  const TableRow = userId(application[15]).TableRow;
+  intl = userId(application[14]).intl;
   items3 = [closure_7(TableRow, obj5), ];
-  const obj6 = { label: intl2.string(userId(application[15]).t.KUsDNI), onPress: callback1, disabled: null == stateFromStores };
-  const TableRow2 = userId(application[14]).TableRow;
-  intl2 = userId(application[15]).intl;
+  const obj6 = { label: intl2.string(userId(application[14]).t.KUsDNI), onPress: callback1, disabled: null == stateFromStores };
+  const TableRow2 = userId(application[15]).TableRow;
+  intl2 = userId(application[14]).intl;
   items3[1] = closure_7(TableRow2, obj6);
   return closure_7(BottomSheet, obj2);
-};
+});
+const result = size.fileFinishedImporting("modules/app_dms/native/AppDMOptionsBottomSheet.tsx");
+
+export default tmp3;

@@ -1,13 +1,13 @@
-// Module ID: 7056
-// Function ID: 7057
+// Module ID: 7060
+// Function ID: 7061
 // Name: NUFStore
-// Dependencies: [2067, 4479, 504, 573, 2]
+// Dependencies: [2073, 4482, 504, 585, 2]
 
-// Module 7056 (NUFStore)
+// Module 7060 (NUFStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
 import size from "module_2" /* 2 */;
 
 function handleCacheOrSocketLoaded() {

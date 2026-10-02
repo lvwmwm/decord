@@ -1,25 +1,25 @@
-// Module ID: 4467
-// Function ID: 4468
+// Module ID: 4470
+// Function ID: 4471
 // Name: GuildChannelStore
-// Dependencies: [2100, 2048, 4468, 2049, 502, 2045, 2108, 2067, 4469, 4479, 1372, 1074, 2070, 12, 4989, 1086, 4474, 504, 573, 2]
+// Dependencies: [2103, 2054, 4471, 2055, 502, 2051, 2111, 2073, 4472, 4482, 1378, 1086, 2076, 12, 4990, 1098, 4477, 504, 585, 2]
 
-// Module 4467 (GuildChannelStore)
+// Module 4470 (GuildChannelStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4468 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
-import GatedChannelStore from "GatedChannelStore" /* 2100 */;
-import FavoriteStore from "FavoriteStore" /* 2048 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4471 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4477 */;
+import GatedChannelStore from "GatedChannelStore" /* 2103 */;
+import FavoriteStore from "FavoriteStore" /* 2054 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let closure_26, closure_28, hasOwnProperty;
@@ -85,7 +85,7 @@ function rebuildGuildChannels(guildId) {
   closure_28[guildId] = [];
   const id = obj.id;
   const tmp2 = guildId;
-  const obj2 = obj(2070);
+  const obj2 = obj(2076);
   obj3 = {};
   if (obj2.isFavoritesGuildId(id)) {
     let tmp9 = FavoriteStore;
@@ -233,7 +233,6 @@ let closure_24 = {};
 let closure_25 = {};
 const prioritySpeakerDucking = {};
 let channelId = null;
-const __initData = {};
 let obj = { comparator: -1, channel: createChannelRecord(obj2) };
 obj2 = { id: Constants.NULL_STRING_CHANNEL_ID, type: ChannelTypes.GUILD_CATEGORY, name: "Uncategorized" };
 const NULL_STRING_GUILD_ID = Constants.NULL_STRING_GUILD_ID;
@@ -265,9 +264,9 @@ class GuildChannelStore extends Store {
     }
     return tmp;
   }
-  getFirstChannelOfType(arg0, _messages, arg2) {
+  getFirstChannelOfType(arg0, cResult, arg2) {
     const arr = this.getChannels(arg0)[arg2];
-    const found = arr.find(_messages);
+    const found = arr.find(cResult);
     let channel = null;
     if (null != found) {
       channel = found.channel;
@@ -313,8 +312,8 @@ class GuildChannelStore extends Store {
       return tmp;
     }, flag);
   }
-  getSelectableChannelIds(guildId) {
-    const arr = this.getChannels(guildId)[SELECTABLE];
+  getSelectableChannelIds(id) {
+    const arr = this.getChannels(id)[SELECTABLE];
     return arr.map((channel) => channel.channel.id);
   }
   getSelectableChannels(id) {
@@ -334,8 +333,8 @@ class GuildChannelStore extends Store {
     }
     return mapped;
   }
-  hasSelectableChannel(guildId, arg1) {
-    const selectableChannelIds = this.getSelectableChannelIds(guildId);
+  hasSelectableChannel(id, arg1) {
+    const selectableChannelIds = this.getSelectableChannelIds(id);
     return selectableChannelIds.includes(arg1);
   }
   hasElevatedPermissions(arg0) {

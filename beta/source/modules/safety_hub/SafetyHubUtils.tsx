@@ -1,18 +1,19 @@
-// Module ID: 7867
-// Function ID: 7868
+// Module ID: 7871
+// Function ID: 7872
 // Name: SafetyHubUtils
-// Dependencies: [502, 7868, 1074, 4421, 4986, 1115, 7869, 504, 2]
-// Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
+// Dependencies: [502, 7872, 1086, 4424, 4987, 1127, 7873, 558, 576, 504, 2]
+// Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps
 
-// Module 7867 (SafetyHubUtils)
-import get_initialized from "get initialized" /* 504 */;
-import intl5 from "intl" /* 1115 */;
-import _modDef4421 from "module_4421" /* 4421 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4986 */;
-import SafetyHubModels from "SafetyHubModels" /* 7869 */;
+// Module 7871 (SafetyHubUtils)
+import react from "react" /* 576 */;
+import intl5 from "intl" /* 1127 */;
+import _modDef4424 from "module_4424" /* 4424 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4987 */;
+import SafetyHubModels from "SafetyHubModels" /* 7873 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7868 */;
-import Constants from "Constants" /* 1074 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7872 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -20,6 +21,8 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
+let tmp;
+const get_initialized = tmp(504);
 function parseMessageEmbedForProps(fields) {
   let _parseFloat;
   let num;
@@ -55,11 +58,37 @@ function parseMessageEmbedForProps(fields) {
 }
 ({ AppealIngestionSignal: closure_4, SafetySystemNotificationCtaType: hasOwnProperty, SafetySystemNotificationEmbedKeys: metroRequire } = SafetyHubConstants);
 ({ AbortCodes: metroImportDefault, MessageAttachmentFlags: metroImportAll } = Constants);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let suspendedUserToken;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthenticationStore];
+    const fn = function s() {
+      return suspendedUserToken.getSuspendedUserToken();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return null != tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let suspendedUserToken;
+  const items = [AuthenticationStore];
+  const obj = get_initialized;
+  return null != obj.useStateFromStores(items, () => suspendedUserToken.getSuspendedUserToken());
+});
 const result = size.fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export const getClassificationRelativeIncidentTime = function getClassificationRelativeIncidentTime(timestamp) {
-  const obj = _modDef4421();
-  return obj.to(_modDef4421(timestamp));
+  const obj = _modDef4424();
+  return obj.to(_modDef4424(timestamp));
 };
 export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachment(filename) {
   let num;
@@ -170,12 +199,7 @@ export const getClassificationExpiration = function getClassificationExpiration(
     }
   }
 };
-export const useIsSuspendedUser = function useIsSuspendedUser() {
-  let suspendedUserToken;
-  const items = [AuthenticationStore];
-  const obj = get_initialized;
-  return null != obj.useStateFromStores(items, () => suspendedUserToken.getSuspendedUserToken());
-};
+export const useIsSuspendedUser = tmp4;
 export const isCurrentUserSuspended = function isCurrentUserSuspended() {
   return null != AuthenticationStore.getSuspendedUserToken();
 };

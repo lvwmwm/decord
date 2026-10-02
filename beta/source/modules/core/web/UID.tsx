@@ -1,27 +1,63 @@
-// Module ID: 7361
-// Function ID: 7362
+// Module ID: 7369
+// Function ID: 7370
 // Name: UID
-// Dependencies: [5040, 5910, 2]
-// Exports: UID, uid, useUID
+// Dependencies: [5041, 558, 576, 5907, 2]
+// Exports: uid
 
-// Module 7361 (UID)
-import uniqueIdDefault from "uniqueId" /* 5040 */;
-import reactDefault from "react" /* 5910 */;
+// Module 7369 (UID)
+import react from "react" /* 576 */;
+import uniqueIdDefault from "uniqueId" /* 5041 */;
+import useInitialValueDefault from "useInitialValue" /* 5907 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const f84509 = () => uniqueIdDefault("uid_");
-const result = size.fileFinishedImporting("modules/core/web/UID.tsx");
+let children;
 
-export const uid = function uid() {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n() {
+      return uniqueIdDefault("uid_");
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return useInitialValueDefault(first);
+}) : (() => useInitialValueDefault(() => uniqueIdDefault("uid_")));
+let closure_3 = tmp2;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+  const obj = react;
+  const cResult = obj.c(3);
+  children = children.children;
+  const tmp2 = closure_3();
+  if (cResult[0] === children) {
+    let tmp3;
+    if (cResult[1] === tmp2) {
+      tmp3 = cResult[2];
+    }
+    return tmp3;
+  }
+  const childrenResult = children(tmp2);
+  cResult[0] = children;
+  cResult[1] = tmp2;
+  cResult[2] = childrenResult;
+  tmp3 = childrenResult;
+}) : ((children) => children.children(closure_3()));
+function uid() {
   let str = arg0;
   if (arg0 === undefined) {
     str = "uid_";
   }
   return uniqueIdDefault(str);
-};
-export const useUID = function useUID() {
-  return reactDefault(f84509);
-};
-export const UID = function UID(children) {
-  return children.children(reactDefault(f84509));
-};
+}
+const result = size.fileFinishedImporting("modules/core/web/UID.tsx");
+
+export { uid };
+export const useUID = tmp2;
+export const UID = tmp3;

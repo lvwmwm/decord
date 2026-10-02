@@ -1,12 +1,12 @@
 // Module ID: 6412
 // Function ID: 6413
 // Name: showInvalidUsernameToastNative
-// Dependencies: [4528, 1115, 6413, 2]
+// Dependencies: [4531, 1127, 6413, 2]
 // Exports: showInvalidUsernameToast
 
 // Module 6412 (showInvalidUsernameToastNative)
-import intl2 from "intl" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
+import intl2 from "intl" /* 1127 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
 import AssetRegistryDefault from "AssetRegistry" /* 6413 */;
 import size from "module_2" /* 2 */;
 

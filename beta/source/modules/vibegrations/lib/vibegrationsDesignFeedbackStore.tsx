@@ -1,13 +1,17 @@
-// Module ID: 16237
-// Function ID: 16238
+// Module ID: 16239
+// Function ID: 16240
 // Name: vibegrationsDesignFeedbackStore
-// Dependencies: [19, 16238, 2]
-// Exports: addVibegrationsDesignAnnotation, canEditVibegrationsDesignAnnotation, enterVibegrationsDesignFeedback, exitVibegrationsDesignFeedback, getVibegrationsDesignFeedback, relocateVibegrationsDesignAnnotations, removeVibegrationsDesignAnnotation, setVibegrationsDesignFeedbackContext, updateVibegrationsDesignAnnotation, useVibegrationsDesignFeedback
+// Dependencies: [19, 16240, 558, 576, 2]
+// Exports: addVibegrationsDesignAnnotation, canEditVibegrationsDesignAnnotation, enterVibegrationsDesignFeedback, exitVibegrationsDesignFeedback, getVibegrationsDesignFeedback, relocateVibegrationsDesignAnnotations, removeVibegrationsDesignAnnotation, setVibegrationsDesignFeedbackContext, updateVibegrationsDesignAnnotation
 
-// Module 16237 (vibegrationsDesignFeedbackStore)
-import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16238 */;
+// Module 16239 (vibegrationsDesignFeedbackStore)
+import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16240 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+let _require;
 
 function subscribeVibegrationsDesignFeedback(arg0) {
   let closure_0 = arg0;
@@ -21,15 +25,62 @@ let active = Object.freeze(obj);
 const map = new Map();
 const set = new Set();
 let metroRequire = 0;
-let result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsDesignFeedbackStore.tsx");
-
-export const getVibegrationsDesignFeedback = function getVibegrationsDesignFeedback(arg0) {
+function getVibegrationsDesignFeedback(arg0) {
   let value = map.get(arg0);
   if (value == null) {
     value = active;
   }
   return value;
-};
+}
+function canEditVibegrationsDesignAnnotation(authorId, arg1) {
+  return null != arg1 && authorId.authorId === arg1;
+}
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let tmp2;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(2);
+  if (cResult[0] !== arg0) {
+    const fn = function s() {
+      let value;
+      if (null == closure_0) {
+        value = active;
+      } else {
+        value = map.get(tmp);
+        if (value == null) {
+          value = active;
+        }
+      }
+      return value;
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return react.useSyncExternalStore(subscribeVibegrationsDesignFeedback, tmp2, tmp2);
+}) : ((arg0) => {
+  let closure_0 = arg0;
+  const items = [arg0];
+  const callback = react.useCallback(() => {
+    let value;
+    if (null == closure_0) {
+      value = active;
+    } else {
+      value = map.get(tmp);
+      if (value == null) {
+        value = active;
+      }
+    }
+    return value;
+  }, items);
+  return react.useSyncExternalStore(subscribeVibegrationsDesignFeedback, callback, callback);
+});
+let result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsDesignFeedbackStore.tsx");
+
+export { getVibegrationsDesignFeedback };
 export const enterVibegrationsDesignFeedback = function enterVibegrationsDesignFeedback(arg0) {
   let value = map.get(arg0);
   if (value == null) {
@@ -184,9 +235,7 @@ export const relocateVibegrationsDesignAnnotations = function relocateVibegratio
     const result = obj.set(arg0, obj2);
   }
 };
-export const canEditVibegrationsDesignAnnotation = function canEditVibegrationsDesignAnnotation(authorId, arg1) {
-  return null != arg1 && authorId.authorId === arg1;
-};
+export { canEditVibegrationsDesignAnnotation };
 export const updateVibegrationsDesignAnnotation = function updateVibegrationsDesignAnnotation(arg0, arg1, arg2, arg3) {
   let annotations1;
   let closure_0 = arg2;
@@ -274,20 +323,4 @@ export const removeVibegrationsDesignAnnotation = function removeVibegrationsDes
   }
 };
 export { subscribeVibegrationsDesignFeedback };
-export const useVibegrationsDesignFeedback = function useVibegrationsDesignFeedback(arg0) {
-  let closure_0 = arg0;
-  const items = [arg0];
-  const callback = react.useCallback(() => {
-    let value;
-    if (null == closure_0) {
-      value = active;
-    } else {
-      value = map.get(tmp);
-      if (value == null) {
-        value = active;
-      }
-    }
-    return value;
-  }, items);
-  return react.useSyncExternalStore(subscribeVibegrationsDesignFeedback, callback, callback);
-};
+export const useVibegrationsDesignFeedback = tmp4;

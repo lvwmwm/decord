@@ -1,28 +1,28 @@
-// Module ID: 17041
-// Function ID: 17042
+// Module ID: 17000
+// Function ID: 17001
 // Name: StreamReportProblemActionSheet
-// Dependencies: [19, 4876, 1074, 21, 4836, 576, 5298, 7157, 1241, 16321, 4800, 4527, 17042, 6620, 6618, 6570, 1115, 6045, 2]
-// Exports: default
+// Dependencies: [19, 4877, 1086, 21, 4837, 588, 558, 576, 7161, 1253, 5297, 16323, 4801, 4530, 17001, 6620, 6571, 1127, 6624, 6038, 2]
 
-// Module 17041 (StreamReportProblemActionSheet)
+// Module 17000 (StreamReportProblemActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import useMountEffectDefault from "useMountEffect" /* 5298 */;
-import BottomSheetModal from "BottomSheetModal" /* 6045 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6570 */;
-import ActionSheet2 from "ActionSheet" /* 6618 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ToastUtils from "ToastUtils" /* 4530 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import useMountEffectDefault from "useMountEffect" /* 5297 */;
+import BottomSheetModal from "BottomSheetModal" /* 6038 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6571 */;
 import ActionSheetRow from "ActionSheetRow" /* 6620 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7157 */;
-import trackStreamProblemDefault from "trackStreamProblem" /* 16321 */;
-import getStreamIssueReportOptionsDefault from "getStreamIssueReportOptions" /* 17042 */;
+import ActionSheet2 from "ActionSheet" /* 6624 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7161 */;
+import trackStreamProblemDefault from "trackStreamProblem" /* 16323 */;
+import getStreamIssueReportOptionsDefault from "getStreamIssueReportOptions" /* 17001 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4876 */;
-import createStyles from "createStyles" /* 4836 */;
+import PresenceStore from "PresenceStore" /* 4877 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -31,9 +31,111 @@ const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_6 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("components_native/calls/stream/StreamReportProblemActionSheet.tsx");
-
-export default function ReportProblem(arg0) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
+  let tmp5;
+  let tmp = stream;
+  let obj = stream(576);
+  const cResult = obj.c(11);
+  stream = stream.stream;
+  const analyticsData = stream.analyticsData;
+  const tmp4 = closure_6();
+  if (cResult[0] !== stream) {
+    const fn = function c() {
+      let id;
+      let id1;
+      let name;
+      const obj = StreamerApplicationSelectors;
+      const streamerApplication = obj.getStreamerApplication(stream, PresenceStore);
+      const obj2 = { type: "Stream Issue Sheet", other_user_id: stream.ownerId, application_id: id, application_name: name, game_id: id1 };
+      id = null;
+      const track = AnalyticsUtilsDefault.track;
+      const OPEN_POPOUT = AnalyticEvents.OPEN_POPOUT;
+      AnalyticsUtilsDefault;
+      if (null != streamerApplication) {
+        id = streamerApplication.id;
+      }
+      name = null;
+      if (null != streamerApplication) {
+        name = streamerApplication.name;
+      }
+      id1 = null;
+      if (null != streamerApplication) {
+        id1 = streamerApplication.id;
+      }
+      track(OPEN_POPOUT, obj2);
+    };
+    cResult[0] = stream;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  analyticsData(5297)(tmp5);
+  const tmp6 = analyticsData;
+  if (cResult[2] === analyticsData) {
+    let tmp8;
+    let tmp11;
+    let tmp14;
+    if (cResult[3] === stream) {
+      tmp8 = cResult[4];
+    }
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const BottomSheetTitleHeader = tmp(6571).BottomSheetTitleHeader;
+      const intl = tmp(1127).intl;
+      const tmp13 = <BottomSheetTitleHeader title={intl.string(tmp(1127).t.XuqqwI)} />;
+      cResult[5] = tmp13;
+      tmp11 = tmp13;
+    } else {
+      tmp11 = cResult[5];
+    }
+    if (cResult[6] !== tmp8) {
+      const tmp16 = jsx(tmp(6620).ActionSheetRow.Group, { hasIcons: false, children: tmp8 });
+      cResult[6] = tmp8;
+      cResult[7] = tmp16;
+      tmp14 = tmp16;
+    } else {
+      tmp14 = cResult[7];
+    }
+    if (cResult[8] === tmp4.container) {
+      let tmp17;
+      if (cResult[9] === tmp14) {
+        tmp17 = cResult[10];
+      }
+      return tmp17;
+    }
+    const ActionSheet = tmp(6624).ActionSheet;
+    const tmp19 = <ActionSheet scrollable header={tmp11}>{null}</ActionSheet>;
+    cResult[8] = tmp4.container;
+    cResult[9] = tmp14;
+    cResult[10] = tmp19;
+    tmp17 = tmp19;
+  }
+  const arr = tmp6(17001)({ isStreamer: false, isEndStream: false });
+  const mapped = arr.map((label, index) => {
+    let value;
+    stream = label.value;
+    return jsx(stream(dependencyMap[15]).ActionSheetRow, {
+      label: label.label,
+      arrow: true,
+      onPress() {
+        let obj2;
+        const obj = { problem: stream, stream, feedback: "", streamApplication: obj2.getStreamerApplication(stream, PresenceStore), analyticsData, location: "Stream" };
+        const tmp = trackStreamProblemDefault;
+        obj2 = StreamerApplicationSelectors;
+        tmp(obj);
+        const obj3 = ActionSheetActionCreatorsDefault;
+        obj3.hideActionSheet();
+        const obj4 = ToastUtils;
+        obj4.presentFeedbackSent();
+      }
+    }, index);
+  });
+  cResult[2] = analyticsData;
+  cResult[3] = stream;
+  cResult[4] = mapped;
+  tmp8 = mapped;
+}) : ((arg0) => {
   let analyticsData;
   let intl;
   let stream;
@@ -89,4 +191,7 @@ export default function ReportProblem(arg0) {
   let obj3 = { style: tmp.container, children: null };
   const BottomSheetScrollView = BottomSheetModal.BottomSheetScrollView;
   return <ActionSheet scrollable header={null}>{null}</ActionSheet>;
-};
+});
+const result = size.fileFinishedImporting("components_native/calls/stream/StreamReportProblemActionSheet.tsx");
+
+export default tmp3;

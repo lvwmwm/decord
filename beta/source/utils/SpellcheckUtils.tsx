@@ -1,14 +1,14 @@
-// Module ID: 5869
-// Function ID: 5870
+// Module ID: 5870
+// Function ID: 5871
 // Name: SpellcheckUtils
-// Dependencies: [5, 5870, 4450, 1364, 5872, 2]
+// Dependencies: [5, 5871, 4453, 1370, 5873, 2]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 5869 (SpellcheckUtils)
-import DiscordNativeDefault from "DiscordNative" /* 4450 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5870 */;
+// Module 5870 (SpellcheckUtils)
+import DiscordNativeDefault from "DiscordNative" /* 4453 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5871 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -28,7 +28,7 @@ let obj = function _setEnabled() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -58,7 +58,7 @@ let obj = function _setEnabled() {
               closure_1.enabled = enabled;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp12) {
           c3 = 3;
@@ -83,7 +83,7 @@ obj = function _setLearnedWords() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -117,7 +117,7 @@ obj = function _setLearnedWords() {
             learnedWords.setLearnedWords(closure_0);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp13) {
         c3 = 3;
@@ -141,7 +141,7 @@ obj = function _isMisspelled() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -166,7 +166,7 @@ obj = function _isMisspelled() {
             misspelled = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -219,7 +219,7 @@ obj = function _getCorrections() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -250,7 +250,7 @@ obj = function _getCorrections() {
             correctionsForMisspelling = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -309,7 +309,7 @@ obj = function _getCachedMisspelling() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -336,7 +336,7 @@ obj = function _getCachedMisspelling() {
             cachedMisspelling2 = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -398,7 +398,7 @@ obj = function _replaceWithCorrection() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -432,7 +432,7 @@ obj = function _replaceWithCorrection() {
             tmp.replaceMisspelling(closure_0);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp13) {
         c3 = 3;

@@ -1,11 +1,11 @@
 // Module ID: 6427
 // Function ID: 6428
-// Dependencies: [19, 21, 6428, 6073]
+// Dependencies: [19, 21, 6428, 6066]
 // Exports: PanGestureHandler
 
 // Module 6427
 import Fragment from "Fragment" /* 21 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
 import react2 from "react" /* 6428 */;
 import react from "react" /* 19 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 7000
-// Function ID: 7001
+// Module ID: 7004
+// Function ID: 7005
 // Name: RewardHeroBlockRecord
-// Dependencies: [6992, 6974, 2]
+// Dependencies: [6996, 6978, 2]
 
-// Module 7000 (RewardHeroBlockRecord)
-import CollectiblesUtils from "CollectiblesUtils" /* 6974 */;
-import ShopBlockType from "ShopBlockType" /* 6992 */;
+// Module 7004 (RewardHeroBlockRecord)
+import CollectiblesUtils from "CollectiblesUtils" /* 6978 */;
+import ShopBlockType from "ShopBlockType" /* 6996 */;
 import size from "module_2" /* 2 */;
 
 class RewardHeroBlockRecord {

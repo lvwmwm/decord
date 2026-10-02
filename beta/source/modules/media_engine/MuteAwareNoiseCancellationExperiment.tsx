@@ -1,11 +1,11 @@
-// Module ID: 13548
-// Function ID: 13549
+// Module ID: 13550
+// Function ID: 13551
 // Name: MuteAwareNoiseCancellationExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1441, 2]
 // Exports: getMuteAwareNoiseCancellationConfig
 
-// Module 13548 (MuteAwareNoiseCancellationExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 13550 (MuteAwareNoiseCancellationExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-08-mute-aware-noise-cancellation", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

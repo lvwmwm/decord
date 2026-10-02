@@ -1,13 +1,13 @@
-// Module ID: 2005
-// Function ID: 2006
+// Module ID: 2011
+// Function ID: 2012
 // Name: Constants
-// Dependencies: [1074, 1979, 2, 2006]
+// Dependencies: [1086, 1985, 2, 2012]
 // Exports: getAppIntentScheme
 
-// Module 2005 (Constants)
-import Constants from "Constants" /* 1074 */;
-import Server from "Server" /* 1979 */;
-import ActivityApplications from "ActivityApplications" /* 2006 */;
+// Module 2011 (Constants)
+import Constants from "Constants" /* 1086 */;
+import Server from "Server" /* 1985 */;
+import ActivityApplications from "ActivityApplications" /* 2012 */;
 import size from "module_2" /* 2 */;
 
 let items3;

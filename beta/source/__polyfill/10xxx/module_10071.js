@@ -1,18 +1,19 @@
 // Module ID: 10071
 // Function ID: 10072
-// Dependencies: [41, 42, 93, 95, 98, 10064, 9897, 9898, 9902]
+// Dependencies: [41, 42, 93, 95, 98, 9932, 10061, 9959, 10063]
 
 // Module 10071
-import EmptyDuration from "EmptyDuration" /* 9897 */;
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9898 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
-import _mod10064 from "module_10064" /* 10064 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9932 */;
+import REGEX_PARTS from "REGEX_PARTS" /* 10061 */;
+import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 10063 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+let tmp2;
+const _mod9959 = tmp2(9959);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -28,32 +29,28 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(" + _mod10064.TIME_UNITS_PATTERN + ")\\s{0,5}(?:fa|prima|precedente)(?=(?:\\W|$))", "i");
-const regExp1 = new RegExp("(" + _mod10064.TIME_UNITS_PATTERN + ")\\s{0,5}fa(?=(?:\\W|$))", "i");
-class ENTimeUnitAgoFormatParser {
-  constructor(strictMode) {
+class RUWeekdayParser {
+  constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENTimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(ENTimeUnitAgoFormatParser);
+    _classCallCheck(this, RUWeekdayParser);
+    const obj = _getPrototypeOf(RUWeekdayParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      constructResult = obj(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = strictMode;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(ENTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(RUWeekdayParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftRightBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return this.strictMode ? regExp1 : regExp;
+  key: "innerPatternString",
+  value: function innerPatternString(arg0) {
+    return "(?:(?:,|\\(|\uFF08)\\s*)?(?:\u0432\\s*?)?(?:(\u044D\u0442\u0443|\u044D\u0442\u043E\u0442|\u043F\u0440\u043E\u0448\u043B\u044B\u0439|\u043F\u0440\u043E\u0448\u043B\u0443\u044E|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0443\u044E|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0433\u043E)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(REGEX_PARTS.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:,|\\)|\uFF09))?(?:\\s*\u043D\u0430\\s*(\u044D\u0442\u043E\u0439|\u043F\u0440\u043E\u0448\u043B\u043E\u0439|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439)\\s*\u043D\u0435\u0434\u0435\u043B\u0435)?";
   }
 };
 const items = [
@@ -61,12 +58,46 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod10064.parseDuration(arg1[1]);
-      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+      const str = arg1[2];
+      const formatted = str.toLowerCase();
+      let str2 = arg1[1];
+      const tmp4 = REGEX_PARTS.WEEKDAY_DICTIONARY[formatted];
+      if (!str2) {
+        str2 = arg1[3];
+      }
+      if (!str2) {
+        str2 = "";
+      }
+      const formatted1 = str2.toLowerCase();
+      let str3 = "last";
+      if ("\u043F\u0440\u043E\u0448\u043B\u044B\u0439" != formatted1) {
+        str3 = "last";
+        if ("\u043F\u0440\u043E\u0448\u043B\u0443\u044E" != formatted1) {
+          str3 = "last";
+          if ("\u043F\u0440\u043E\u0448\u043B\u043E\u0439" != formatted1) {
+            str3 = "next";
+            if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439" != formatted1) {
+              str3 = "next";
+              if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0443\u044E" != formatted1) {
+                str3 = "next";
+                if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439" != formatted1) {
+                  str3 = "next";
+                  if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0433\u043E" != formatted1) {
+                    str3 = null;
+                    const tmp6 = "\u044D\u0442\u043E\u0442" != formatted1 && "\u044D\u0442\u0443" != formatted1 && "\u044D\u0442\u043E\u0439" != formatted1;
+                    if (!tmp6) {
+                      str3 = "this";
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      return _mod9959.createParsingComponentsAtWeekday(reference.reference, tmp4, str3);
     }
   }
 ];
 
-export default _createClass(ENTimeUnitAgoFormatParser, items);
+export default _createClass(RUWeekdayParser, items);

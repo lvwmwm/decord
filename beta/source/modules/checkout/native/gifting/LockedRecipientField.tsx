@@ -1,19 +1,22 @@
-// Module ID: 10316
-// Function ID: 10317
+// Module ID: 10357
+// Function ID: 10358
 // Name: LockedRecipientField
-// Dependencies: [19, 17, 21, 4836, 576, 1177, 4832, 4678, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1189, 4680, 4833, 2]
 
-// Module 10316 (LockedRecipientField)
+// Module 10357 (LockedRecipientField)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import UserUtilsDefault from "UserUtils" /* 4678 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import UserUtilsDefault from "UserUtils" /* 4680 */;
+import Text_Text from "Text/Text" /* 4833 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let user;
 
 let closure_4;
 let hasOwnProperty;
@@ -27,9 +30,63 @@ obj2 = { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.s
 createStyles = createStyles.createStyles;
 obj3 = { marginEnd: nativeDefault.space.PX_8 };
 let closure_6 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/checkout/native/gifting/LockedRecipientField.tsx");
-
-export default function LockedRecipientField(user) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+  let items;
+  const obj = react2;
+  const cResult = obj.c(11);
+  user = user.user;
+  const tmp4 = closure_6();
+  if (cResult[0] === tmp4.avatar) {
+    let tmp6;
+    let tmp8;
+    let tmp11;
+    if (cResult[1] === user) {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] !== user) {
+      const obj3 = UserUtilsDefault;
+      const name = obj3.getName(user);
+      cResult[3] = user;
+      cResult[4] = name;
+      tmp8 = name;
+    } else {
+      tmp8 = cResult[4];
+    }
+    if (cResult[5] !== tmp8) {
+      const obj2 = { variant: "text-md/semibold", children: tmp8 };
+      const tmp13 = React3(Text_Text.Text, obj2);
+      cResult[5] = tmp8;
+      cResult[6] = tmp13;
+      tmp11 = tmp13;
+    } else {
+      tmp11 = cResult[6];
+    }
+    if (cResult[7] === tmp4.container) {
+      if (cResult[8] === tmp6) {
+        let tmp14;
+        if (cResult[9] === tmp11) {
+          tmp14 = cResult[10];
+        }
+        return tmp14;
+      }
+    }
+    const obj4 = { style: tmp5, children: items };
+    items = [tmp6, tmp11];
+    const tmp17 = hasOwnProperty(View, obj4);
+    cResult[7] = tmp4.container;
+    cResult[8] = tmp6;
+    cResult[9] = tmp11;
+    cResult[10] = tmp17;
+    tmp14 = tmp17;
+  }
+  const obj5 = { style: tmp4.avatar, user, guildId: "Array", size: native.AvatarSizes.NORMAL };
+  const Avatar = tmp(1189).Avatar;
+  const tmp7 = React3(Avatar, obj5);
+  cResult[0] = tmp4.avatar;
+  cResult[1] = user;
+  cResult[2] = tmp7;
+  tmp6 = tmp7;
+}) : ((user) => {
   let items;
   let obj4;
   user = user.user;
@@ -43,4 +100,7 @@ export default function LockedRecipientField(user) {
   obj4 = UserUtilsDefault;
   items[1] = React3(Text, obj3);
   return hasOwnProperty(View, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/checkout/native/gifting/LockedRecipientField.tsx");
+
+export default tmp5;

@@ -1,22 +1,95 @@
-// Module ID: 16642
-// Function ID: 16643
+// Module ID: 16644
+// Function ID: 16645
 // Name: InstantInviteSelfMeasurer
-// Dependencies: [19, 17, 21, 4836, 10393, 2]
+// Dependencies: [19, 17, 21, 4837, 558, 576, 10435, 2]
 
-// Module 16642 (InstantInviteSelfMeasurer)
+// Module 16644 (InstantInviteSelfMeasurer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import InstantInvite from "InstantInvite" /* 10393 */;
+import react2 from "react" /* 576 */;
+import InstantInviteDefault from "InstantInvite" /* 10435 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const InstantInviteDefault = InstantInvite;
+let type;
 
+let tmp;
+const InstantInvite = tmp(10435);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ container: { position: "absolute", opacity: 0 } });
-const memoResult = react.memo(function InstantInviteSelfMeasurer(type) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+  let containerStyle;
+  let item;
+  let onMeasured;
+  const obj = react2;
+  const cResult = obj.c(13);
+  ({ containerStyle, item, onMeasured } = type);
+  type = type.type;
+  let str = "height";
+  if (undefined !== type) {
+    str = type;
+  }
+  const tmp4 = closure_6();
+  if (cResult[0] === onMeasured) {
+    let tmp5;
+    if (cResult[1] === str) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] === containerStyle) {
+      let tmp6;
+      let tmp9;
+      if (cResult[4] === tmp4.container) {
+        tmp6 = cResult[5];
+      }
+      if (cResult[6] === item.data) {
+        let tmp7;
+        if (cResult[7] === item.type) {
+          tmp7 = cResult[8];
+        }
+        if (cResult[9] === tmp5) {
+          if (cResult[10] === tmp6) {
+            let tmp12;
+            if (cResult[11] === tmp7) {
+              tmp12 = cResult[12];
+            }
+            return tmp12;
+          }
+        }
+        const tmp15 = <View style={tmp6} onLayout={tmp5} pointerEvents="none" importantForAccessibility="no-hide-descendants" accessibilityElementsHidden accessible={false}>{tmp7}</View>;
+        cResult[9] = tmp5;
+        cResult[10] = tmp6;
+        cResult[11] = tmp7;
+        cResult[12] = tmp15;
+        tmp12 = tmp15;
+      }
+      if ("invite" === item.type) {
+        tmp9 = jsx(InstantInviteDefault, { invite: item.data });
+      } else {
+        tmp9 = jsx(InstantInvite.LinkedChannelInvite, { channel: item.data });
+      }
+      cResult[6] = item.data;
+      cResult[7] = item.type;
+      cResult[8] = tmp9;
+      tmp7 = tmp9;
+    }
+    const items = [containerStyle, tmp4.container];
+    cResult[3] = containerStyle;
+    cResult[4] = tmp4.container;
+    cResult[5] = items;
+    tmp6 = items;
+  }
+  const fn = function c(nativeEvent) {
+    const layout = nativeEvent.nativeEvent.layout;
+    onMeasured("height" === str ? layout.height : layout.width);
+  };
+  cResult[0] = onMeasured;
+  cResult[1] = str;
+  cResult[2] = fn;
+  tmp5 = fn;
+}) : ((type) => {
   let item;
   let onMeasured;
   let tmp2Result;
@@ -40,7 +113,7 @@ const memoResult = react.memo(function InstantInviteSelfMeasurer(type) {
     const layout = nativeEvent.nativeEvent.layout;
     onMeasured("height" === str ? layout.height : layout.width);
   }, items)} pointerEvents="none" importantForAccessibility="no-hide-descendants" accessibilityElementsHidden accessible={false}>{tmp2Result}</tmp3>;
-});
+}));
 const result = size.fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteSelfMeasurer.tsx");
 
 export default memoResult;

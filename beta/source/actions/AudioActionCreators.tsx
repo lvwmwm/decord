@@ -1,27 +1,27 @@
-// Module ID: 9104
-// Function ID: 9105
+// Module ID: 9081
+// Function ID: 9082
 // Name: AudioActionCreators
-// Dependencies: [5, 9105, 2045, 1993, 4859, 2099, 1372, 1074, 9106, 4861, 3, 1241, 551, 573, 9107, 9109, 9110, 8896, 2]
+// Dependencies: [5, 9082, 2051, 1999, 4860, 2102, 1378, 1086, 9083, 4862, 3, 1253, 551, 585, 9084, 9086, 9087, 8876, 2]
 
-// Module 9104 (AudioActionCreators)
+// Module 9081 (AudioActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import Constants2 from "Constants" /* 4861 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 8896 */;
-import Constants3 from "Constants" /* 9106 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 9107 */;
-import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 9109 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 9110 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import Constants2 from "Constants" /* 4862 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 8876 */;
+import Constants3 from "Constants" /* 9083 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 9084 */;
+import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 9086 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 9087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CertifiedDeviceStore from "CertifiedDeviceStore" /* 9105 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import CertifiedDeviceStore from "CertifiedDeviceStore" /* 9082 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -395,7 +395,7 @@ let obj2 = {
       }
       const obj4 = { volume, location_stack: tmp, voice_channel_type: type };
       type = undefined;
-      const track = tmp3(1241).track;
+      const track = tmp3(1253).track;
       const MEDIA_INPUT_VOLUME_CHANGED = unpackModuleId.MEDIA_INPUT_VOLUME_CHANGED;
       AnalyticsUtilsDefault;
       if (channel != null) {
@@ -419,7 +419,7 @@ let obj2 = {
       }
       const obj4 = { volume, location_stack: tmp, voice_channel_type: type };
       type = undefined;
-      const track = tmp3(1241).track;
+      const track = tmp3(1253).track;
       const MEDIA_OUTPUT_VOLUME_CHANGED = unpackModuleId.MEDIA_OUTPUT_VOLUME_CHANGED;
       AnalyticsUtilsDefault;
       if (channel != null) {
@@ -656,7 +656,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -690,7 +690,7 @@ let obj2 = {
             obj = c1(c2[13]);
             obj.dispatch(obj6);
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp17) {
           c2 = 3;
@@ -746,7 +746,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -780,7 +780,7 @@ let obj2 = {
             obj = c1(c2[13]);
             obj.dispatch(obj6);
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp17) {
           c2 = 3;

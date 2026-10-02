@@ -1,11 +1,11 @@
-// Module ID: 1347
-// Function ID: 1348
+// Module ID: 1359
+// Function ID: 1360
 // Name: DeveloperOptionsActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 // Exports: setDeveloperOptionSettings, setRoutingKeyTags
 
-// Module 1347 (DeveloperOptionsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 1359 (DeveloperOptionsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/DeveloperOptionsActionCreators.tsx");

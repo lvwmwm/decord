@@ -1,18 +1,18 @@
-// Module ID: 14099
-// Function ID: 14100
+// Module ID: 14101
+// Function ID: 14102
 // Name: SoundboardManager
-// Dependencies: [5, 1993, 2099, 5319, 3, 14100, 14101, 14102, 9357, 6756, 2]
+// Dependencies: [5, 1999, 2102, 5320, 3, 14102, 14103, 14104, 9335, 6757, 2]
 
-// Module 14099 (SoundboardManager)
+// Module 14101 (SoundboardManager)
 import LoggerDefault from "Logger" /* 3 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 6756 */;
-import SoundUtils from "SoundUtils" /* 9357 */;
-import getVolumeForSoundDefault from "getVolumeForSound" /* 14101 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 6757 */;
+import SoundUtils from "SoundUtils" /* 9335 */;
+import getVolumeForSoundDefault from "getVolumeForSound" /* 14103 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SoundboardStore from "SoundboardStore" /* 5319 */;
-import BaseSoundboardManager from "BaseSoundboardManager" /* 14100 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import SoundboardStore from "SoundboardStore" /* 5320 */;
+import BaseSoundboardManager from "BaseSoundboardManager" /* 14102 */;
 import size from "module_2" /* 2 */;
 
 let closure_2;
@@ -46,7 +46,7 @@ class SoundboardManager extends BaseSoundboardManager {
             if (null != value) {
               value.stop();
             }
-            const tmp14 = tmp6(14102)(soundId);
+            const tmp14 = tmp6(14104)(soundId);
             const obj2 = SoundUtils;
             const sound = obj2.createSound(tmp14, "soundboard_sound", tmp8);
             sound.volume = tmp8;
@@ -92,10 +92,10 @@ class SoundboardManager extends BaseSoundboardManager {
         const obj3 = closure_0(closure_2[9]);
         const result = obj3.reportSoundFinishedPlaying(c2, c3);
       }
-      await "HermesInternal";
+      await "IconComponent";
       closure_2 = tmp;
       ({ sound: c0, soundKey: c1, soundId: c2, userId: c3 } = closure_0);
-      return "flex";
+      return "Reflect";
     });
     applyArgumentsResult._playSoundWithListener = function() {
       return closure_0(...arguments);

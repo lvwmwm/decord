@@ -1,21 +1,15 @@
-// Module ID: 1885
-// Function ID: 1886
+// Module ID: 1891
+// Function ID: 1892
 // Name: i18n
-// Dependencies: [1886, 1895, 1896, 1897, 1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 568, 1927, 1928, 1337, 2]
+// Dependencies: [1892, 1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 580, 1933, 1934, 1349, 2]
 
-// Module 1885 (i18n)
-import _mod568 from "module_568" /* 568 */;
-import react_native from "react-native" /* 1337 */;
-import _modDef1886 from "module_1886" /* 1886 */;
-import _default2 from "_default2" /* 1923 */;
-import _mod1927 from "module_1927" /* 1927 */;
-import parse from "parse" /* 1928 */;
-import module_1895 from "module_1895" /* 1895 */;
-import module_1896 from "module_1896" /* 1896 */;
-import module_1897 from "module_1897" /* 1897 */;
-import module_1898 from "module_1898" /* 1898 */;
-import module_1899 from "module_1899" /* 1899 */;
-import module_1900 from "module_1900" /* 1900 */;
+// Module 1891 (i18n)
+import _mod580 from "module_580" /* 580 */;
+import react_native from "react-native" /* 1349 */;
+import _modDef1892 from "module_1892" /* 1892 */;
+import _default2 from "_default2" /* 1929 */;
+import _mod1933 from "module_1933" /* 1933 */;
+import parse from "parse" /* 1934 */;
 import module_1901 from "module_1901" /* 1901 */;
 import module_1902 from "module_1902" /* 1902 */;
 import module_1903 from "module_1903" /* 1903 */;
@@ -38,11 +32,17 @@ import module_1919 from "module_1919" /* 1919 */;
 import module_1920 from "module_1920" /* 1920 */;
 import module_1921 from "module_1921" /* 1921 */;
 import module_1922 from "module_1922" /* 1922 */;
+import module_1923 from "module_1923" /* 1923 */;
+import module_1924 from "module_1924" /* 1924 */;
+import module_1925 from "module_1925" /* 1925 */;
+import module_1926 from "module_1926" /* 1926 */;
+import module_1927 from "module_1927" /* 1927 */;
+import module_1928 from "module_1928" /* 1928 */;
 import size from "module_2" /* 2 */;
 
 let _instance_members_initializer_I18N_;
 
-global.IntlMessageFormat = _modDef1886;
+global.IntlMessageFormat = _modDef1892;
 delete global["IntlMessageFormat"];
 if (typeof Intl === "undefined") {
   const _module28 = _default2;
@@ -132,7 +132,7 @@ class ProxyProvider extends Provider {
   }
 }
 const prototype3 = ProxyProvider.prototype;
-const EventEmitter = _mod568.EventEmitter;
+const EventEmitter = _mod580.EventEmitter;
 _instance_members_initializer_I18N_ = function() {
   const self = this;
   this.loadPromise = Promise.resolve();
@@ -172,18 +172,18 @@ class I18N extends EventEmitter {
     let getLanguages;
     let getMessages;
     let tmp12;
-    const f75320 = (resolveLanguageLoaded) => {
+    const f84196 = (resolveLanguageLoaded) => {
       obj.resolveLanguageLoaded = resolveLanguageLoaded;
     };
     initialLocale = initialLocale.initialLocale;
     ({ getMessages, getLanguages } = initialLocale);
     const obj = new I18N(tmp5, tmp4, tmp3, tmp2, new.target, this, tmp);
     _instance_members_initializer_I18N_();
-    obj.initialLanguageLoad = new Promise(f75320);
-    new Promise(f75320);
+    obj.initialLanguageLoad = new Promise(f84196);
+    new Promise(f84196);
     if (Intl.__addLocaleData) {
       const _Intl = Intl;
-      Intl.__addLocaleData(_mod1927);
+      Intl.__addLocaleData(_mod1933);
     }
     obj._languages = getLanguages();
     if (null != window.Proxy) {

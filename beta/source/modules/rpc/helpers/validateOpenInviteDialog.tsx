@@ -1,21 +1,21 @@
-// Module ID: 14042
-// Function ID: 14043
+// Module ID: 14044
+// Function ID: 14045
 // Name: validateOpenInviteDialog
-// Dependencies: [8499, 2045, 2067, 4469, 4739, 1074, 8500, 8770, 8501, 14029, 9064, 2]
+// Dependencies: [8496, 2051, 2073, 4472, 4741, 1086, 8497, 8765, 8498, 14031, 9041, 2]
 // Exports: validateOpenInviteDialog
 
-// Module 14042 (validateOpenInviteDialog)
-import Constants from "Constants" /* 1074 */;
-import Constants2 from "Constants" /* 4739 */;
-import FramesConstants from "FramesConstants" /* 8500 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8501 */;
-import RPCErrorDefault from "RPCError" /* 8770 */;
-import canViewInviteModal from "canViewInviteModal" /* 9064 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14029 */;
-import FramesStore from "FramesStore" /* 8499 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
+// Module 14044 (validateOpenInviteDialog)
+import Constants from "Constants" /* 1086 */;
+import Constants2 from "Constants" /* 4741 */;
+import FramesConstants from "FramesConstants" /* 8497 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8498 */;
+import RPCErrorDefault from "RPCError" /* 8765 */;
+import canViewInviteModal from "canViewInviteModal" /* 9041 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14031 */;
+import FramesStore from "FramesStore" /* 8496 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
 import size from "module_2" /* 2 */;
 
 const TransportTypes = Constants2.TransportTypes;
@@ -38,7 +38,7 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog(socket
       const surface = tmp36.surface;
       const type = surface.type;
       if (EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN === type) {
-        return { frame: tmp36, channel: "Array", guild: "paddingHorizontal" };
+        return { frame: tmp36, channel: "Array", guild: "applicationId" };
       } else {
         if (EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL !== type) {
           if (EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL !== type) {

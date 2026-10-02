@@ -1,20 +1,46 @@
-// Module ID: 7244
-// Function ID: 7245
+// Module ID: 7248
+// Function ID: 7249
 // Name: BurstReactionAnimationPreview
-// Dependencies: [19, 21, 7182, 7245, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 7186, 7249, 2]
 
-// Module 7244 (BurstReactionAnimationPreview)
+// Module 7248 (BurstReactionAnimationPreview)
 import Fragment from "Fragment" /* 21 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7182 */;
-import BurstReactionAnimationDefault from "BurstReactionAnimation" /* 7245 */;
+import react2 from "react" /* 576 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7186 */;
+import BurstReactionAnimationDefault from "BurstReactionAnimation" /* 7249 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionAnimationPreview.tsx");
-
-export default function BurstReactionAnimationPreview(arg0) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let channelId;
+  let emoji;
+  let messageId;
+  let reactionType;
+  const obj = react2;
+  const cResult = obj.c(4);
+  ({ channelId, emoji, messageId, reactionType } = arg0);
+  let tmp3 = null;
+  if (reactionType === MessageReactionsTypes.ReactionTypes.BURST) {
+    if (cResult[0] === channelId) {
+      if (cResult[1] === emoji) {
+        let tmp4;
+        if (cResult[2] === messageId) {
+          tmp4 = cResult[3];
+        }
+        tmp3 = tmp4;
+      }
+    }
+    const tmp7 = jsx(BurstReactionAnimationDefault, { isFullscreen: true, channelId, messageId, emoji });
+    cResult[0] = channelId;
+    cResult[1] = emoji;
+    cResult[2] = messageId;
+    cResult[3] = tmp7;
+    tmp4 = tmp7;
+  }
+  return tmp3;
+}) : ((arg0) => {
   let channelId;
   let emoji;
   let messageId;
@@ -25,4 +51,7 @@ export default function BurstReactionAnimationPreview(arg0) {
     tmp2 = jsx(BurstReactionAnimationDefault, { isFullscreen: true, channelId, messageId, emoji });
   }
   return tmp2;
-};
+});
+const result = size.fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionAnimationPreview.tsx");
+
+export default tmp3;

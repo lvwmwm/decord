@@ -1,40 +1,402 @@
-// Module ID: 16220
-// Function ID: 16221
+// Module ID: 16222
+// Function ID: 16223
 // Name: GuildSettingsModalMembersWithTabs
-// Dependencies: [32, 19, 17, 2067, 4469, 1372, 21, 4836, 576, 15847, 504, 6683, 1115, 16221, 16222, 16228, 4658, 1485, 7358, 16223, 6795, 9091, 9083, 12111, 12113, 2]
+// Dependencies: [109, 32, 19, 17, 2073, 4472, 1378, 21, 4837, 588, 558, 576, 15846, 504, 6684, 1127, 16223, 16224, 16230, 4660, 1491, 7366, 16225, 6796, 9068, 9060, 12021, 12023, 2]
 
-// Module 16220 (GuildSettingsModalMembersWithTabs)
+// Module 16222 (GuildSettingsModalMembersWithTabs)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl5 from "intl" /* 1115 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 6683 */;
-import ContextMenu2 from "ContextMenu" /* 7358 */;
-import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 16221 */;
-import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 16222 */;
-import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 16228 */;
+import nativeDefault from "native" /* 588 */;
+import intl5 from "intl" /* 1127 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4660 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 6684 */;
+import ContextMenu2 from "ContextMenu" /* 7366 */;
+import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 16223 */;
+import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 16224 */;
+import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 16230 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import UserStore from "UserStore" /* 1372 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
 let guildId, navigation;
 
-let c10;
-let c9;
+let closure_12;
 let obj2;
 let tmp2;
-const showMembersManagementActionSheet = tmp2(16223);
+let unpackModuleId;
+const showMembersManagementActionSheet = tmp2(16225);
+let closure_3 = ["ref"];
 const View = react_native.View;
-({ jsx: c9, jsxs: c10 } = Fragment);
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let obj = { container: obj2, content: { flex: 1 }, tabContainer: { marginTop: 12, minHeight: 32 } };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
-let closure_11 = createStyles.createStyles(obj);
-const memoResult = react.memo((guildId) => {
+let closure_13 = createStyles.createStyles(obj);
+let memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let first;
+  let options;
+  let stateFromStores;
+  let tmp11;
+  let tmp14;
+  let tmp15;
+  let tmp17;
+  let tmp23;
+  let tmp8;
+  let tmp9;
+  let tmp = guildId;
+  let tmp2 = stateFromStores;
+  let obj = guildId(stateFromStores[11]);
+  const cResult = obj.c(59);
+  guildId = guildId.guildId;
+  const tmp4 = _slicedToArray(react.useState(0), 2);
+  [r10017, importDefault] = tmp4;
+  let obj2 = guildId(stateFromStores[12]);
+  let num = obj2.useSubmittedGuildJoinRequestTotal({ guildId });
+  if (num == null) {
+    num = 0;
+  }
+  closure_13();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function y() {
+      return GuildStore.getGuild(guildId);
+    };
+    const items1 = [guildId];
+    cResult[1] = guildId;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp9 = items1;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult = tmp(tmp2[13]);
+  stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [PermissionStore, UserStore];
+    cResult[4] = items2;
+    tmp11 = items2;
+  } else {
+    tmp11 = cResult[4];
+  }
+  if (cResult[5] !== stateFromStores) {
+    class G {
+      constructor() {
+        let canPruneGuildMembersResult = null != stateFromStores;
+        if (canPruneGuildMembersResult) {
+          const obj = MemberSafetyPermissionsUtils;
+          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+        }
+        return canPruneGuildMembersResult;
+      }
+    }
+    const items3 = [stateFromStores];
+    cResult[5] = stateFromStores;
+    cResult[6] = G;
+    cResult[7] = items3;
+    tmp15 = items3;
+    tmp14 = G;
+  } else {
+    class G {
+      constructor() {
+        let canPruneGuildMembersResult = null != stateFromStores;
+        if (canPruneGuildMembersResult) {
+          const obj = MemberSafetyPermissionsUtils;
+          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+        }
+        return canPruneGuildMembersResult;
+      }
+    }
+    tmp15 = cResult[7];
+  }
+  const tmpResult2 = tmp(tmp2[13]);
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp11, tmp14, tmp15);
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class G {
+      constructor() {
+        let canPruneGuildMembersResult = null != stateFromStores;
+        if (canPruneGuildMembersResult) {
+          const obj = MemberSafetyPermissionsUtils;
+          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+        }
+        return canPruneGuildMembersResult;
+      }
+    }
+    const stringResult = obj5.string(tmp(tmp2[15]).t.NOOm1Z);
+    cResult[8] = stringResult;
+    tmp17 = stringResult;
+  } else {
+    class G {
+      constructor() {
+        let canPruneGuildMembersResult = null != stateFromStores;
+        if (canPruneGuildMembersResult) {
+          const obj = MemberSafetyPermissionsUtils;
+          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+        }
+        return canPruneGuildMembersResult;
+      }
+    }
+  }
+  if (cResult[9] !== guildId) {
+    class G {
+      constructor() {
+        let canPruneGuildMembersResult = null != stateFromStores;
+        if (canPruneGuildMembersResult) {
+          const obj = MemberSafetyPermissionsUtils;
+          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+        }
+        return canPruneGuildMembersResult;
+      }
+    }
+    tmp20[0] = tmp17;
+    tmp20[1] = tmp(tmp2[16]).MemberSafetyPageTab.ALL_MEMBERS;
+    const obj3 = { guildId };
+    tmp20[2] = closure_11(require("GuildSettingsModalMembers"), obj3);
+    cResult[9] = guildId;
+    cResult[10] = tmp20;
+  } else {
+    class G {
+      constructor() {
+        let canPruneGuildMembersResult = null != stateFromStores;
+        if (canPruneGuildMembersResult) {
+          const obj = MemberSafetyPermissionsUtils;
+          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+        }
+        return canPruneGuildMembersResult;
+      }
+    }
+  }
+  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+    class G {
+      constructor() {
+        let canPruneGuildMembersResult = null != stateFromStores;
+        if (canPruneGuildMembersResult) {
+          const obj = MemberSafetyPermissionsUtils;
+          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+        }
+        return canPruneGuildMembersResult;
+      }
+    }
+    const stringResult1 = obj7.string(tmp(tmp2[15]).t["4eQVBO"]);
+    cResult[11] = stringResult1;
+    tmp23 = stringResult1;
+  } else {
+    class G {
+      constructor() {
+        let canPruneGuildMembersResult = null != stateFromStores;
+        if (canPruneGuildMembersResult) {
+          const obj = MemberSafetyPermissionsUtils;
+          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+        }
+        return canPruneGuildMembersResult;
+      }
+    }
+  }
+  if (num > 0) {
+    class G {
+      constructor() {
+        let canPruneGuildMembersResult = null != stateFromStores;
+        if (canPruneGuildMembersResult) {
+          const obj = MemberSafetyPermissionsUtils;
+          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+        }
+        return canPruneGuildMembersResult;
+      }
+    }
+  }
+  if (cResult[12] !== guildId) {
+    class G {
+      constructor() {
+        let canPruneGuildMembersResult = null != stateFromStores;
+        if (canPruneGuildMembersResult) {
+          const obj = MemberSafetyPermissionsUtils;
+          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+        }
+        return canPruneGuildMembersResult;
+      }
+    }
+    const obj4 = { guildId, applicationStatus: tmp(tmp2[19]).GuildJoinRequestApplicationStatuses.SUBMITTED };
+    const tmp28 = require("GuildSettingsModalMemberApplications");
+    cResult[12] = guildId;
+    cResult[13] = closure_11(tmp28, obj4);
+    const tmp29 = closure_11(tmp28, obj4);
+  } else {
+    class G {
+      constructor() {
+        let canPruneGuildMembersResult = null != stateFromStores;
+        if (canPruneGuildMembersResult) {
+          const obj = MemberSafetyPermissionsUtils;
+          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+        }
+        return canPruneGuildMembersResult;
+      }
+    }
+  }
+  if (cResult[14] === undefined) {
+    let tmp31;
+    let tmp38;
+    class G {
+      constructor() {
+        let canPruneGuildMembersResult = null != stateFromStores;
+        if (canPruneGuildMembersResult) {
+          const obj = MemberSafetyPermissionsUtils;
+          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+        }
+        return canPruneGuildMembersResult;
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+      class G {
+        constructor() {
+          let canPruneGuildMembersResult = null != stateFromStores;
+          if (canPruneGuildMembersResult) {
+            const obj = MemberSafetyPermissionsUtils;
+            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+          }
+          return canPruneGuildMembersResult;
+        }
+      }
+      const stringResult2 = obj10.string(tmp(tmp2[15]).t.bSZkla);
+      cResult[17] = stringResult2;
+      tmp31 = stringResult2;
+    } else {
+      class G {
+        constructor() {
+          let canPruneGuildMembersResult = null != stateFromStores;
+          if (canPruneGuildMembersResult) {
+            const obj = MemberSafetyPermissionsUtils;
+            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+          }
+          return canPruneGuildMembersResult;
+        }
+      }
+    }
+    if (cResult[18] !== guildId) {
+      class G {
+        constructor() {
+          let canPruneGuildMembersResult = null != stateFromStores;
+          if (canPruneGuildMembersResult) {
+            const obj = MemberSafetyPermissionsUtils;
+            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+          }
+          return canPruneGuildMembersResult;
+        }
+      }
+      tmp34[0] = tmp31;
+      tmp34[1] = tmp(tmp2[16]).MemberSafetyPageTab.REJECTED;
+      const obj6 = { guildId, applicationStatus: tmp(tmp2[19]).GuildJoinRequestApplicationStatuses.REJECTED };
+      const tmp37 = require("GuildSettingsModalMemberApplications");
+      tmp34[2] = closure_11(tmp37, obj6);
+      cResult[18] = guildId;
+      cResult[19] = tmp34;
+    } else {
+      class G {
+        constructor() {
+          let canPruneGuildMembersResult = null != stateFromStores;
+          if (canPruneGuildMembersResult) {
+            const obj = MemberSafetyPermissionsUtils;
+            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+          }
+          return canPruneGuildMembersResult;
+        }
+      }
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
+      class G {
+        constructor() {
+          let canPruneGuildMembersResult = null != stateFromStores;
+          if (canPruneGuildMembersResult) {
+            const obj = MemberSafetyPermissionsUtils;
+            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+          }
+          return canPruneGuildMembersResult;
+        }
+      }
+      const stringResult3 = obj12.string(tmp(tmp2[15]).t.aURgY2);
+      cResult[20] = stringResult3;
+      tmp38 = stringResult3;
+    } else {
+      class G {
+        constructor() {
+          let canPruneGuildMembersResult = null != stateFromStores;
+          if (canPruneGuildMembersResult) {
+            const obj = MemberSafetyPermissionsUtils;
+            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+          }
+          return canPruneGuildMembersResult;
+        }
+      }
+    }
+    if (cResult[21] !== guildId) {
+      class G {
+        constructor() {
+          let canPruneGuildMembersResult = null != stateFromStores;
+          if (canPruneGuildMembersResult) {
+            const obj = MemberSafetyPermissionsUtils;
+            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+          }
+          return canPruneGuildMembersResult;
+        }
+      }
+      tmp41[0] = tmp38;
+      tmp41[1] = tmp(tmp2[16]).MemberSafetyPageTab.APPROVED;
+      const obj8 = { guildId, applicationStatus: tmp(tmp2[19]).GuildJoinRequestApplicationStatuses.APPROVED };
+      const tmp44 = require("GuildSettingsModalMemberApplications");
+      tmp41[2] = closure_11(tmp44, obj8);
+      cResult[21] = guildId;
+      cResult[22] = tmp41;
+    } else {
+      class G {
+        constructor() {
+          let canPruneGuildMembersResult = null != stateFromStores;
+          if (canPruneGuildMembersResult) {
+            const obj = MemberSafetyPermissionsUtils;
+            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+          }
+          return canPruneGuildMembersResult;
+        }
+      }
+    }
+    if (cResult[23] === tmp30) {
+      class G {
+        constructor() {
+          let canPruneGuildMembersResult = null != stateFromStores;
+          if (canPruneGuildMembersResult) {
+            const obj = MemberSafetyPermissionsUtils;
+            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+          }
+          return canPruneGuildMembersResult;
+        }
+      }
+    }
+    const items4 = [tmp19, tmp30, tmp33, tmp40];
+    cResult[23] = tmp30;
+    cResult[24] = tmp33;
+    cResult[25] = tmp40;
+    cResult[26] = tmp19;
+    cResult[27] = items4;
+  }
+  cResult[14] = undefined;
+  cResult[15] = tmp26;
+  cResult[16] = { label: tmp23, id: tmp(tmp2[16]).MemberSafetyPageTab.PENDING, count: undefined, page: tmp26 };
+  const obj9 = { label: tmp23, id: tmp(tmp2[16]).MemberSafetyPageTab.PENDING, count: undefined, page: tmp26 };
+}) : ((guildId) => {
   let callback3;
   let items8;
   let num2;
@@ -46,24 +408,24 @@ const memoResult = react.memo((guildId) => {
   let callback;
   let callback1;
   let segmentedControlState;
-  let obj = stateFromStores1;
-  let tmp = stateFromStores(stateFromStores1.useState(0), 2);
+  let obj = callback;
+  let tmp = navigation(callback.useState(0), 2);
   let closure_1 = tmp[1];
   const tmp4 = num;
   const first = tmp[0];
-  let obj2 = guildId(num[9]);
+  let obj2 = guildId(num[12]);
   num = obj2.useSubmittedGuildJoinRequestTotal({ guildId });
   if (num == null) {
     num = 0;
   }
-  const tmp5 = closure_11();
-  let items = [callback];
+  const tmp5 = closure_13();
+  let items = [segmentedControlState];
   const items1 = [guildId];
-  const tmp3Result = guildId(tmp4[10]);
+  const tmp3Result = guildId(tmp4[13]);
   stateFromStores = tmp3Result.useStateFromStores(items, () => GuildStore.getGuild(guildId), items1);
-  const items2 = [callback1, segmentedControlState];
+  const items2 = [PermissionStore, UserStore];
   const items3 = [stateFromStores];
-  const tmp3Result4 = guildId(tmp4[10]);
+  const tmp3Result4 = guildId(tmp4[13]);
   stateFromStores1 = tmp3Result4.useStateFromStores(items2, () => {
     let canPruneGuildMembersResult = null != stateFromStores;
     if (canPruneGuildMembersResult) {
@@ -86,11 +448,11 @@ const memoResult = react.memo((guildId) => {
     let tmp4Result3;
     let tmp4Result4;
     let tmp6;
-    const obj = { label: intl.string(intl5.t.NOOm1Z), id: MemberSafetyPageTypes.MemberSafetyPageTab.ALL_MEMBERS, page: React4(GuildSettingsModalMembersDefault, obj2) };
+    const obj = { label: intl.string(intl5.t.NOOm1Z), id: MemberSafetyPageTypes.MemberSafetyPageTab.ALL_MEMBERS, page: unpackModuleId(GuildSettingsModalMembersDefault, obj2) };
     intl = intl5.intl;
     const items = [obj, , , ];
     obj2 = { guildId };
-    const obj3 = { label: intl2.string(intl5.t["4eQVBO"]), id: MemberSafetyPageTypes.MemberSafetyPageTab.PENDING, count: tmp6, page: React4(tmp4Result, obj4) };
+    const obj3 = { label: intl2.string(intl5.t["4eQVBO"]), id: MemberSafetyPageTypes.MemberSafetyPageTab.PENDING, count: tmp6, page: unpackModuleId(tmp4Result, obj4) };
     intl2 = intl5.intl;
     tmp6 = undefined;
     if (num > 0) {
@@ -99,25 +461,25 @@ const memoResult = react.memo((guildId) => {
     obj4 = { guildId, applicationStatus: MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED };
     items[1] = obj3;
     tmp4Result = GuildSettingsModalMemberApplicationsDefault;
-    const obj5 = { label: intl3.string(intl5.t.bSZkla), id: MemberSafetyPageTypes.MemberSafetyPageTab.REJECTED, page: React4(tmp4Result3, obj6) };
-    intl3 = tmp(1115).intl;
+    const obj5 = { label: intl3.string(intl5.t.bSZkla), id: MemberSafetyPageTypes.MemberSafetyPageTab.REJECTED, page: unpackModuleId(tmp4Result3, obj6) };
+    intl3 = tmp(1127).intl;
     obj6 = { guildId, applicationStatus: MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED };
     items[2] = obj5;
     tmp4Result3 = GuildSettingsModalMemberApplicationsDefault;
-    const obj7 = { label: intl4.string(intl5.t.aURgY2), id: MemberSafetyPageTypes.MemberSafetyPageTab.APPROVED, page: React4(tmp4Result4, obj8) };
-    intl4 = tmp(1115).intl;
+    const obj7 = { label: intl4.string(intl5.t.aURgY2), id: MemberSafetyPageTypes.MemberSafetyPageTab.APPROVED, page: unpackModuleId(tmp4Result4, obj8) };
+    intl4 = tmp(1127).intl;
     obj8 = { guildId, applicationStatus: MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED };
     items[3] = obj7;
     tmp4Result4 = GuildSettingsModalMemberApplicationsDefault;
     return items;
   }, items4);
-  const tmp3Result5 = guildId(tmp4[17]);
+  const tmp3Result5 = guildId(tmp4[20]);
   navigation = tmp3Result5.useNavigation();
   const items5 = [stateFromStores1, stateFromStores];
   callback = obj.useCallback(() => {
     let membersManagementActions;
     const ContextMenu = ContextMenu2.ContextMenu;
-    const tmp = React4;
+    const tmp = unpackModuleId;
     if (null != stateFromStores) {
       let obj = { guild: tmp4, canPrune: stateFromStores1 };
       const tmp2Result = showMembersManagementActionSheet;
@@ -131,11 +493,11 @@ const memoResult = react.memo((guildId) => {
         let intl;
         ref = ref.ref;
         const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-        const obj = { source: closure_1_1(num[21]), accessibilityLabel: intl.string(guildId(num[12]).t.ogxXGq), ref };
-        const HeaderActionButton = guildId(num[20]).HeaderActionButton;
-        intl = guildId(num[12]).intl;
+        const obj = { source: closure_1_1(num[24]), accessibilityLabel: intl.string(guildId(num[15]).t.ogxXGq), ref };
+        const HeaderActionButton = guildId(num[23]).HeaderActionButton;
+        intl = guildId(num[15]).intl;
         const merged1 = Object.assign(merged);
-        return closure_1_9(HeaderActionButton, obj);
+        return closure_1_11(HeaderActionButton, obj);
       }
     };
     return tmp(ContextMenu, obj2);
@@ -159,8 +521,8 @@ const memoResult = react.memo((guildId) => {
   }, []);
   let obj3 = { pageWidth: first, items: memo, defaultIndex: num2, onSetActiveIndex: callback1 };
   num2 = 0;
-  const useSegmentedControlState = tmp3(tmp4[22]).useSegmentedControlState;
-  guildId(tmp4[22]);
+  const useSegmentedControlState = tmp3(tmp4[25]).useSegmentedControlState;
+  guildId(tmp4[25]);
   if (num > 0) {
     num2 = 1;
   }
@@ -171,16 +533,16 @@ const memoResult = react.memo((guildId) => {
     callback1(activeIndex.get());
   }, items7);
   let obj4 = { style: tmp5.container, children: items8 };
-  let obj5 = { style: tmp5.tabContainer, children: closure_9(tmp3(tmp4[23]).Tabs, { state: segmentedControlState, grow: true, formatCount: callback3 }) };
+  let obj5 = { style: tmp5.tabContainer, children: closure_11(tmp3(tmp4[26]).Tabs, { state: segmentedControlState, grow: true, formatCount: callback3 }) };
   callback3 = obj.useCallback((toLocaleString) => {
-    const obj = guildId(num[23]);
+    const obj = guildId(num[26]);
     return "(" + obj.defaultCountFormatter(toLocaleString) + ")";
   }, []);
-  items8 = [closure_9(navigation, obj5), ];
-  let obj6 = { style: tmp5.content, onLayout: callback2, children: closure_9(tmp3(tmp4[24]).SegmentedControlPages, { state: segmentedControlState }) };
-  items8[1] = closure_9(navigation, obj6);
-  return closure_10(navigation, obj4);
-});
+  items8 = [closure_11(callback1, obj5), ];
+  let obj6 = { style: tmp5.content, onLayout: callback2, children: closure_11(tmp3(tmp4[27]).SegmentedControlPages, { state: segmentedControlState }) };
+  items8[1] = closure_11(callback1, obj6);
+  return closure_12(callback1, obj4);
+}));
 const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalMembersWithTabs.tsx");
 
 export default memoResult;

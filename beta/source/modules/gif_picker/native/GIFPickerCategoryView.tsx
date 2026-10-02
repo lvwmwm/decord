@@ -1,21 +1,24 @@
-// Module ID: 9844
-// Function ID: 9845
+// Module ID: 9878
+// Function ID: 9879
 // Name: GIFPickerCategoryView
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 1115, 9040, 5899, 9845, 9698, 4832, 2]
-// Exports: default
+// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 1127, 9017, 5896, 9879, 9716, 4833, 2]
 
-// Module 9844 (GIFPickerCategoryView)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import reactDefault from "react" /* 9040 */;
+// Module 9878 (GIFPickerCategoryView)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import useAccessibilityPressDefault from "useAccessibilityPress" /* 9017 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let onSelectCategory;
 
 let StyleSheet;
 let closure_4;
@@ -41,9 +44,153 @@ obj5 = { margin: nativeDefault.space.PX_8, justifyContent: "center", flexDirecti
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 obj6 = { marginRight: nativeDefault.space.PX_4 };
 let closure_9 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/gif_picker/native/GIFPickerCategoryView.tsx");
-
-export default function GIFPickerCategoryView(onSelectCategory) {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectCategory) => {
+  let items;
+  let items1;
+  const obj = react2;
+  const cResult = obj.c(30);
+  onSelectCategory = onSelectCategory.onSelectCategory;
+  const item = onSelectCategory.item;
+  const tmp4 = closure_9();
+  if (cResult[0] === item.name) {
+    if (cResult[1] === item.type) {
+      let tmp5;
+      let tmp6;
+      let tmp10;
+      if (cResult[2] === onSelectCategory) {
+        tmp5 = cResult[3];
+      }
+      if (cResult[4] !== item.name) {
+        const intl = tmp(1127).intl;
+        const obj2 = { categoryName: item.name };
+        const formatToPlainStringResult = intl.formatToPlainString(intl2.t["j+63pw"], obj2);
+        cResult[4] = item.name;
+        cResult[5] = formatToPlainStringResult;
+        tmp6 = formatToPlainStringResult;
+      } else {
+        tmp6 = cResult[5];
+      }
+      const tmp9 = useAccessibilityPressDefault(tmp5, tmp6);
+      if (cResult[6] !== item.src) {
+        const obj3 = { uri: item.src };
+        cResult[6] = item.src;
+        cResult[7] = obj3;
+        tmp10 = obj3;
+      } else {
+        tmp10 = cResult[7];
+      }
+      if (cResult[8] === tmp4.gifImage) {
+        let tmp11;
+        let tmp14;
+        let tmp20;
+        if (cResult[9] === tmp10) {
+          tmp11 = cResult[10];
+        }
+        if (cResult[11] !== tmp4.gifOverlay) {
+          const obj4 = { style: tmp4.gifOverlay };
+          const tmp17 = metroImportDefault(React3, obj4);
+          cResult[11] = tmp4.gifOverlay;
+          cResult[12] = tmp17;
+          tmp14 = tmp17;
+        } else {
+          tmp14 = cResult[12];
+        }
+        if (cResult[13] === item.type) {
+          let tmp18;
+          let tmp23;
+          if (cResult[14] === tmp4.categoryNameIcon) {
+            tmp18 = cResult[15];
+          }
+          if (cResult[16] !== item.name) {
+            const obj5 = { variant: "text-sm/semibold", color: "text-overlay-light", maxFontSizeMultiplier: 2, accessible: false, children: item.name };
+            const tmp25 = metroImportDefault(Text_Text.Text, obj5);
+            cResult[16] = item.name;
+            cResult[17] = tmp25;
+            tmp23 = tmp25;
+          } else {
+            tmp23 = cResult[17];
+          }
+          if (cResult[18] === tmp4.categoryName) {
+            if (cResult[19] === tmp18) {
+              let tmp26;
+              if (cResult[20] === tmp23) {
+                tmp26 = cResult[21];
+              }
+              if (cResult[22] === tmp6) {
+                if (cResult[23] === tmp9) {
+                  if (cResult[24] === tmp5) {
+                    if (cResult[25] === tmp4.container) {
+                      if (cResult[26] === tmp11) {
+                        if (cResult[27] === tmp14) {
+                          let tmp30;
+                          if (cResult[28] === tmp26) {
+                            tmp30 = cResult[29];
+                          }
+                          return tmp30;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              const obj6 = { style: tmp4.container, onPress: tmp5, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp6, children: items };
+              const merged = Object.assign(tmp9);
+              items = [tmp11, tmp14, tmp26];
+              const tmp36 = metroImportAll(hasOwnProperty, obj6);
+              cResult[22] = tmp6;
+              cResult[23] = tmp9;
+              cResult[24] = tmp5;
+              cResult[25] = tmp4.container;
+              cResult[26] = tmp11;
+              cResult[27] = tmp14;
+              cResult[28] = tmp26;
+              cResult[29] = tmp36;
+              tmp30 = tmp36;
+            }
+          }
+          const obj7 = { style: tmp4.categoryName, accessible: false, children: items1 };
+          items1 = [tmp18, tmp23];
+          const tmp29 = metroImportAll(React3, obj7);
+          cResult[18] = tmp4.categoryName;
+          cResult[19] = tmp18;
+          cResult[20] = tmp23;
+          cResult[21] = tmp29;
+          tmp26 = tmp29;
+        }
+        if (item.type === GIFPickerResultTypes.TRENDING_GIFS) {
+          const obj8 = { size: "sm", style: tmp4.categoryNameIcon, color: nativeDefault.colors.WHITE };
+          const AnalyticsIcon = tmp(9879).AnalyticsIcon;
+          tmp20 = metroImportDefault(AnalyticsIcon, obj8);
+        } else {
+          tmp20 = null;
+          if (item.type === tmp19.FAVORITES) {
+            const obj9 = { size: "sm", style: tmp4.categoryNameIcon, color: nativeDefault.colors.WHITE };
+            const StarIcon = tmp(9716).StarIcon;
+            tmp20 = metroImportDefault(StarIcon, obj9);
+          }
+        }
+        cResult[13] = item.type;
+        cResult[14] = tmp4.categoryNameIcon;
+        cResult[15] = tmp20;
+        tmp18 = tmp20;
+      }
+      const obj10 = { style: tmp4.gifImage, source: tmp10 };
+      const tmp13 = metroImportDefault(FastImageDefault, obj10);
+      cResult[8] = tmp4.gifImage;
+      cResult[9] = tmp10;
+      cResult[10] = tmp13;
+      tmp11 = tmp13;
+    }
+  }
+  const fn = function c() {
+    onSelectCategory(item.type, item.name);
+  };
+  cResult[0] = item.name;
+  cResult[1] = item.type;
+  cResult[2] = onSelectCategory;
+  cResult[3] = fn;
+  tmp5 = fn;
+}) : ((onSelectCategory) => {
   let items1;
   let items2;
   let tmp10Result;
@@ -58,7 +205,7 @@ export default function GIFPickerCategoryView(onSelectCategory) {
   const obj = { categoryName: item.name };
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t["j+63pw"], obj);
   const obj2 = { style: tmp.container, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, children: items1 };
-  const merged = Object.assign(reactDefault(callback, formatToPlainStringResult));
+  const merged = Object.assign(useAccessibilityPressDefault(callback, formatToPlainStringResult));
   items1 = [, , ];
   const obj3 = { style: tmp.gifImage, source: { uri: item.src } };
   items1[0] = metroImportDefault(FastImageDefault, obj3);
@@ -69,13 +216,13 @@ export default function GIFPickerCategoryView(onSelectCategory) {
   const tmp8 = hasOwnProperty;
   if (item.type === GIFPickerResultTypes.TRENDING_GIFS) {
     const obj6 = { size: "sm", style: tmp.categoryNameIcon, color: nativeDefault.colors.WHITE };
-    const AnalyticsIcon = tmp3(9845).AnalyticsIcon;
+    const AnalyticsIcon = tmp3(9879).AnalyticsIcon;
     tmp10Result = tmp10(AnalyticsIcon, obj6);
   } else {
     tmp10Result = null;
     if (item.type === tmp12.FAVORITES) {
       const obj7 = { size: "sm", style: tmp.categoryNameIcon, color: nativeDefault.colors.WHITE };
-      const StarIcon = tmp3(9698).StarIcon;
+      const StarIcon = tmp3(9716).StarIcon;
       tmp10Result = tmp10(StarIcon, obj7);
     }
   }
@@ -84,4 +231,7 @@ export default function GIFPickerCategoryView(onSelectCategory) {
   items2[1] = metroImportDefault(Text_Text.Text, obj8);
   items1[2] = metroImportAll(tmp11, obj5);
   return metroImportAll(tmp8, obj2);
-};
+});
+const result = size.fileFinishedImporting("modules/gif_picker/native/GIFPickerCategoryView.tsx");
+
+export default tmp7;

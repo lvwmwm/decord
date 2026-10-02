@@ -1,18 +1,103 @@
-// Module ID: 7147
-// Function ID: 7148
+// Module ID: 7151
+// Function ID: 7152
 // Name: AdDataUtils
-// Dependencies: [32, 19, 7148, 7149, 7150, 2]
-// Exports: getAdUser, useAdUser
+// Dependencies: [32, 19, 7152, 7153, 7154, 558, 576, 2]
+// Exports: getAdUser
 
-// Module 7147 (AdDataUtils)
-import AdDataUtilsConstants from "AdDataUtilsConstants" /* 7149 */;
-import AdUserActionCreators from "AdUserActionCreators" /* 7150 */;
+// Module 7151 (AdDataUtils)
+import AdDataUtilsConstants from "AdDataUtilsConstants" /* 7153 */;
+import AdUserActionCreators from "AdUserActionCreators" /* 7154 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AdUserStore from "AdUserStore" /* 7148 */;
+import AdUserStore from "AdUserStore" /* 7152 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
+let _require;
+
 const DEFAULT_TIMEOUT_MS = AdDataUtilsConstants.DEFAULT_TIMEOUT_MS;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  _require = arg0;
+  let obj = require("react");
+  const cResult = obj.c(3);
+  let obj2 = react;
+  let tmp2 = _slicedToArray(react.useState(AdUserStore.adUser), 2);
+  [tmp3, dependencyMap] = tmp2;
+  if (cResult[0] !== arg0) {
+    const fn = function h() {
+      let handleStoreChange;
+      let isFetching = null != AdUserStore.adUser;
+      const hasFetchFailed = AdUserStore.hasFetchFailed;
+      const obj = AdUserStore;
+      if (!isFetching) {
+        isFetching = AdUserStore.isFetching;
+      }
+      if (!isFetching) {
+        isFetching = hasFetchFailed;
+      }
+      if (!isFetching) {
+        let tmp2 = dependencyMap;
+        const obj2 = closure_0(dependencyMap[4]);
+        const adUser = obj2.fetchAdUser(handleStoreChange);
+      }
+      handleStoreChange = function handleStoreChange() {
+        const tmp2 = null != AdUserStore.adUser || AdUserStore.hasFetchFailed;
+        if (tmp2) {
+          closure_1_1(AdUserStore.adUser);
+        }
+      };
+      obj.addChangeListener(handleStoreChange);
+      return () => AdUserStore.removeChangeListener(handleStoreChange);
+    };
+    const items = [arg0];
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp5 = items;
+    tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+  }
+  const effect = obj2.useEffect(tmp4, tmp5);
+  return tmp3;
+}) : ((arg0) => {
+  let closure_1;
+  let first;
+  let closure_0 = arg0;
+  [first, closure_1] = react.useState(AdUserStore.adUser);
+  const items = [arg0];
+  const effect = react.useEffect(() => {
+    function handleStoreChange() {
+      const tmp2 = null != AdUserStore.adUser || AdUserStore.hasFetchFailed;
+      if (tmp2) {
+        closure_1_1(AdUserStore.adUser);
+      }
+    }
+    let isFetching = null != AdUserStore.adUser;
+    const hasFetchFailed = AdUserStore.hasFetchFailed;
+    const obj = AdUserStore;
+    if (!isFetching) {
+      isFetching = AdUserStore.isFetching;
+    }
+    if (!isFetching) {
+      isFetching = hasFetchFailed;
+    }
+    if (!isFetching) {
+      let tmp2 = closure_1;
+      const obj2 = closure_0(closure_1[4]);
+      const adUser = obj2.fetchAdUser(handleStoreChange);
+    }
+    obj.addChangeListener(handleStoreChange);
+    return () => AdUserStore.removeChangeListener(handleStoreChange);
+  }, items);
+  return first;
+});
 const result = size.fileFinishedImporting("modules/ads/utils/AdDataUtils.android.tsx");
 
 export const getAdUser = function getAdUser(questContentName) {
@@ -63,34 +148,4 @@ export const getAdUser = function getAdUser(questContentName) {
   }
   resolved = Promise.resolve(adUser);
 };
-export const useAdUser = function useAdUser(profile_badge) {
-  let closure_1;
-  let first;
-  [first, closure_1] = react.useState(AdUserStore.adUser);
-  const items = [profile_badge];
-  const effect = react.useEffect(() => {
-    function handleStoreChange() {
-      const tmp2 = null != AdUserStore.adUser || AdUserStore.hasFetchFailed;
-      if (tmp2) {
-        closure_1_1(AdUserStore.adUser);
-      }
-    }
-    let isFetching = null != AdUserStore.adUser;
-    const hasFetchFailed = AdUserStore.hasFetchFailed;
-    const obj = AdUserStore;
-    if (!isFetching) {
-      isFetching = AdUserStore.isFetching;
-    }
-    if (!isFetching) {
-      isFetching = hasFetchFailed;
-    }
-    if (!isFetching) {
-      let tmp2 = closure_1;
-      const obj2 = profile_badge(closure_1[4]);
-      const adUser = obj2.fetchAdUser(handleStoreChange);
-    }
-    obj.addChangeListener(handleStoreChange);
-    return () => AdUserStore.removeChangeListener(handleStoreChange);
-  }, items);
-  return first;
-};
+export const useAdUser = tmp2;

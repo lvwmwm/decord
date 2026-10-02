@@ -1,17 +1,17 @@
-// Module ID: 14075
-// Function ID: 14076
+// Module ID: 14077
+// Function ID: 14078
 // Name: commands/activities
-// Dependencies: [5, 4739, 1074, 5045, 7787, 14042, 8770, 9275, 14033, 5451, 5462, 8782, 4736, 2]
+// Dependencies: [5, 4741, 1086, 5046, 7791, 14044, 8765, 9253, 14035, 5452, 5463, 8777, 4738, 2]
 
-// Module 14075 (commands/activities)
-import NativePermissionConstants from "NativePermissionConstants" /* 5045 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7787 */;
-import RPCErrorDefault from "RPCError" /* 8770 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9275 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 14042 */;
+// Module 14077 (commands/activities)
+import NativePermissionConstants from "NativePermissionConstants" /* 5046 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 7791 */;
+import RPCErrorDefault from "RPCError" /* 8765 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9253 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 14044 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 4739 */;
-import Constants_mod2 from "Constants" /* 1074 */;
+import Constants_mod from "Constants" /* 4741 */;
+import Constants_mod2 from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -46,7 +46,7 @@ let obj2 = {
     } else {
       const obj3 = { source: constants.ACTIVITY_INVITE, targetApplicationId: id };
       id = socket.application.id;
-      const showInstantInviteActionSheet = tmp(9275).showInstantInviteActionSheet;
+      const showInstantInviteActionSheet = tmp(9253).showInstantInviteActionSheet;
       instant_invite_InstantInviteUtils;
       const result1 = showInstantInviteActionSheet(tmp4, obj3);
     }
@@ -76,7 +76,7 @@ let obj4 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

@@ -1,21 +1,21 @@
-// Module ID: 16745
-// Function ID: 16746
+// Module ID: 16747
+// Function ID: 16748
 // Name: MobileSurvey
-// Dependencies: [5, 19, 5027, 1074, 21, 4836, 504, 1241, 5028, 5300, 1115, 4525, 1177, 576, 8552, 2]
-// Exports: default
+// Dependencies: [5, 19, 5028, 1086, 21, 4837, 558, 576, 504, 1253, 5029, 1127, 4528, 1189, 588, 8549, 5301, 2]
 
-// Module 16745 (MobileSurvey)
+// Module 16747 (MobileSurvey)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import native from "native" /* 1177 */;
-import LinkingDefault from "Linking" /* 4525 */;
-import SurveyActionCreators from "SurveyActionCreators" /* 5028 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8552 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import native from "native" /* 1189 */;
+import LinkingDefault from "Linking" /* 4528 */;
+import SurveyActionCreators from "SurveyActionCreators" /* 5029 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8549 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SurveyStore from "SurveyStore" /* 5027 */;
-import createStyles from "createStyles" /* 4836 */;
+import SurveyStore from "SurveyStore" /* 5028 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,25 +24,47 @@ let _require, c0, c1;
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ confirmIcon: { marginLeft: 4 } });
-const result = size.fileFinishedImporting("components_native/MobileSurvey.tsx");
-
-export default function MobileSurvey() {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let _prompt;
   let confirmIcon;
+  let cta;
   let currentSurvey;
-  _require = closure_8();
+  let tmp10;
+  let tmp5;
+  let tmp6;
+  let tmp9;
   const tmp = _require;
   let tmp2 = dependencyMap;
-  let obj = require("get initialized");
-  const items = [SurveyStore];
-  const stateFromStores = obj.useStateFromStores(items, () => currentSurvey.getCurrentSurvey());
-  const items1 = [stateFromStores];
-  const effect = react.useEffect(() => {
-    function setSurveySeen() {
-      return obj(...arguments);
-    }
-    if (null != stateFromStores) {
-      let obj = function _setSurveySeen() {
-        obj = _asyncToGenerator(async (arg0, value) => {
+  let obj = require("react");
+  const cResult = obj.c(19);
+  let tmp4 = closure_8();
+  _require = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SurveyStore];
+    const fn = function y() {
+      return currentSurvey.getCurrentSurvey();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = fn;
+    tmp5 = items;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] !== stateFromStores) {
+    const fn2 = function v() {
+      function setSurveySeen() {
+        return closure_0(...arguments);
+      }
+      if (null != stateFromStores) {
+        const tmp2 = stateFromStores;
+        let obj = stateFromStores(dependencyMap[9]);
+        const tmp4 = constants;
+        let obj2 = { type: "survey", promotion_id: tmp.id };
+        obj.track(constants.OPEN_MODAL, obj2);
+        let closure_0 = _asyncToGenerator(async (arg0, value) => {
           let obj2;
           if (c0 === 2) {
             c0 = 3;
@@ -54,7 +76,7 @@ export default function MobileSurvey() {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -71,7 +93,170 @@ export default function MobileSurvey() {
                   c1 = 1;
                   c0 = 1;
                   const obj5 = { value: obj2.surveySeen(tmp4.key), done: false };
-                  obj2 = closure_2_0(closure_2_2[8]);
+                  obj2 = v3(dependencyMap[10]);
+                  return obj5;
+                }
+              } else if (arg0 === 1) {
+                c0 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c0 = 3;
+                const obj = { value, done: true };
+                return obj;
+              }
+              c0 = 3;
+              return { value: "IconComponent", done: null };
+            } catch (tmp8) {
+              c0 = 3;
+              throw tmp8;
+            }
+          }
+        });
+        setSurveySeen();
+      }
+    };
+    const items1 = [stateFromStores];
+    cResult[2] = stateFromStores;
+    cResult[3] = fn2;
+    cResult[4] = items1;
+    tmp10 = items1;
+    tmp9 = fn2;
+  } else {
+    tmp9 = cResult[3];
+    tmp10 = cResult[4];
+  }
+  const effect = react.useEffect(tmp9, tmp10);
+  if (null != stateFromStores) {
+    let tmp12;
+    const _Symbol = Symbol;
+    ({ prompt: _prompt, cta } = stateFromStores);
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(tmp(1127).t.f3Pet9);
+      cResult[5] = stringResult;
+      tmp12 = stringResult;
+    } else {
+      tmp12 = cResult[5];
+    }
+    if (cResult[6] === stateFromStores.key) {
+      let tmp14;
+      if (cResult[7] === stateFromStores.url) {
+        tmp14 = cResult[8];
+      }
+      if (cResult[9] !== stateFromStores.key) {
+        class C {
+          constructor() {
+            const obj = SurveyActionCreators;
+            return obj.surveyHide(stateFromStores.key, true);
+          }
+        }
+        cResult[9] = stateFromStores.key;
+        cResult[10] = C;
+      } else {
+        class C {
+          constructor() {
+            const obj = SurveyActionCreators;
+            return obj.surveyHide(stateFromStores.key, true);
+          }
+        }
+      }
+      if (cResult[11] !== tmp4.confirmIcon) {
+        class L {
+          constructor() {
+            const Icon = native.Icon;
+            return <Icon style={confirmIcon.confirmIcon} color={nativeDefault.unsafe_rawColors.WHITE} size={native.Icon.Sizes.SMALL} source={AssetRegistryDefault} />;
+          }
+        }
+        cResult[11] = tmp4.confirmIcon;
+        cResult[12] = L;
+      } else {
+        class L {
+          constructor() {
+            const Icon = native.Icon;
+            return <Icon style={confirmIcon.confirmIcon} color={nativeDefault.unsafe_rawColors.WHITE} size={native.Icon.Sizes.SMALL} source={AssetRegistryDefault} />;
+          }
+        }
+      }
+      if (cResult[13] === stateFromStores.cta) {
+        class L {
+          constructor() {
+            const Icon = native.Icon;
+            return <Icon style={confirmIcon.confirmIcon} color={nativeDefault.unsafe_rawColors.WHITE} size={native.Icon.Sizes.SMALL} source={AssetRegistryDefault} />;
+          }
+        }
+      }
+      cResult[13] = stateFromStores.cta;
+      cResult[14] = stateFromStores.prompt;
+      cResult[15] = tmp14;
+      cResult[16] = tmp15;
+      cResult[17] = tmp16;
+      cResult[18] = jsx(stateFromStores(5301), { body: _prompt, confirmText: cta, cancelText: tmp12, onConfirm: tmp14, onCancel: tmp15, renderConfirmRightIcon: tmp16 });
+      const tmp20 = jsx(stateFromStores(5301), { body: _prompt, confirmText: cta, cancelText: tmp12, onConfirm: tmp14, onCancel: tmp15, renderConfirmRightIcon: tmp16 });
+    }
+    const fn3 = function k() {
+      const obj = LinkingDefault;
+      obj.openURL(stateFromStores.url);
+      const obj2 = SurveyActionCreators;
+      obj2.surveyHide(stateFromStores.key, false);
+    };
+    cResult[6] = stateFromStores.key;
+    cResult[7] = stateFromStores.url;
+    cResult[8] = fn3;
+    tmp14 = fn3;
+  } else {
+    class L {
+      constructor() {
+        const Icon = native.Icon;
+        return <Icon style={confirmIcon.confirmIcon} color={nativeDefault.unsafe_rawColors.WHITE} size={native.Icon.Sizes.SMALL} source={AssetRegistryDefault} />;
+      }
+    }
+  }
+}) : (() => {
+  let confirmIcon;
+  let currentSurvey;
+  _require = closure_8();
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("get initialized");
+  const items = [SurveyStore];
+  const stateFromStores = obj.useStateFromStores(items, () => currentSurvey.getCurrentSurvey());
+  const items1 = [stateFromStores];
+  const effect = react.useEffect(() => {
+    function setSurveySeen() {
+      return obj(...arguments);
+    }
+    if (null != stateFromStores) {
+      let obj = function _setSurveySeen2() {
+        obj = _asyncToGenerator(async (arg0, value) => {
+          let obj2;
+          if (c0 === 2) {
+            c0 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp2 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              return { value: "IconComponent", done: null };
+            }
+          } else {
+            try {
+              c0 = 2;
+              if (0 === c1) {
+                if (arg0 === 1) {
+                  c0 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c0 = 3;
+                  const obj4 = { value, done: true };
+                  return obj4;
+                } else if (null != c1) {
+                  c1 = 1;
+                  c0 = 1;
+                  const obj5 = { value: obj2.surveySeen(tmp4.key), done: false };
+                  obj2 = closure_2_0(closure_2_2[10]);
                   return obj5;
                 }
               } else if (arg0 === 1) {
@@ -83,7 +268,7 @@ export default function MobileSurvey() {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } catch (tmp8) {
               c0 = 3;
               throw tmp8;
@@ -93,7 +278,7 @@ export default function MobileSurvey() {
         return obj(...arguments);
       };
       const tmp2 = stateFromStores;
-      obj = stateFromStores(dependencyMap[7]);
+      obj = stateFromStores(dependencyMap[9]);
       const tmp4 = constants;
       let obj2 = { type: "survey", promotion_id: tmp.id };
       obj.track(constants.OPEN_MODAL, obj2);
@@ -103,9 +288,9 @@ export default function MobileSurvey() {
   let tmp5 = null;
   if (null != stateFromStores) {
     ({ prompt: obj2.body, cta: obj2.confirmText } = stateFromStores);
-    const tmp8 = stateFromStores(5300);
-    const intl = tmp(1115).intl;
-    tmp5 = <tmp8 body={null} confirmText={null} cancelText={intl.string(tmp(1115).t.f3Pet9)} onConfirm={function onConfirm() {
+    const tmp8 = stateFromStores(5301);
+    const intl = tmp(1127).intl;
+    tmp5 = <tmp8 body={null} confirmText={null} cancelText={intl.string(tmp(1127).t.f3Pet9)} onConfirm={function onConfirm() {
       const obj = LinkingDefault;
       obj.openURL(stateFromStores.url);
       const obj2 = SurveyActionCreators;
@@ -119,4 +304,7 @@ export default function MobileSurvey() {
     }} />;
   }
   return tmp5;
-};
+});
+const result = size.fileFinishedImporting("components_native/MobileSurvey.tsx");
+
+export default tmp2;

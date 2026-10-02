@@ -1,14 +1,14 @@
-// Module ID: 12653
-// Function ID: 12654
+// Module ID: 12655
+// Function ID: 12656
 // Name: ContentInventoryHttpApi
-// Dependencies: [5, 7806, 1074, 1271, 4735, 573, 1115, 2]
+// Dependencies: [5, 7810, 1086, 1283, 4737, 585, 1127, 2]
 // Exports: deleteContentInventoryEntryHistory, getContentInventoryOutbox, getMyContentInventory, postTrackToContentInventory
 
-// Module 12653 (ContentInventoryHttpApi)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 7806 */;
+// Module 12655 (ContentInventoryHttpApi)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 7810 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _getMyContentInventory() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -62,7 +62,7 @@ let obj = function _getMyContentInventory() {
             date = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -144,7 +144,7 @@ obj = function _getContentInventoryOutbox() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -231,7 +231,7 @@ obj = function _deleteContentInventoryEntryHistory() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -294,7 +294,7 @@ obj = function _deleteContentInventoryEntryHistory() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp27) {
           body = tmp27;
@@ -329,7 +329,7 @@ obj = function _postTrackToContentInventory() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -373,7 +373,7 @@ obj = function _postTrackToContentInventory() {
           } else {
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           closure_4 = tmp14;

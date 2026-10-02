@@ -1,10 +1,10 @@
-// Module ID: 5523
-// Function ID: 5524
+// Module ID: 5524
+// Function ID: 5525
 // Name: DiscordImagePng
-// Dependencies: [5, 1977, 5524, 2]
+// Dependencies: [5, 1983, 5525, 2]
 
-// Module 5523 (DiscordImagePng)
-import _modDef1977 from "module_1977" /* 1977 */;
+// Module 5524 (DiscordImagePng)
+import _modDef1983 from "module_1983" /* 1983 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ class DiscordImagePng {
   static create(originalBuffer) {
     let tmp = null;
     try {
-      const decoder = _modDef1977;
+      const decoder = _modDef1983;
       const self = this;
       tmp = new DiscordImagePng(decoder.decode(originalBuffer), originalBuffer);
     } catch (err) {
@@ -34,7 +34,7 @@ class DiscordImagePng {
         return false;
       }
     }
-    const obj = _modDef1977;
+    const obj = _modDef1983;
     const uint8Array = new Uint8Array(obj.toRGBA8(self.img)[0]);
     let num2 = 3;
     if (3 < uint8Array.length) {
@@ -65,7 +65,7 @@ class DiscordImagePng {
           const obj = { value, done: true };
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {

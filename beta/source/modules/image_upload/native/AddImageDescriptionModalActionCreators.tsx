@@ -1,12 +1,12 @@
-// Module ID: 10809
-// Function ID: 10810
+// Module ID: 10791
+// Function ID: 10792
 // Name: AddImageDescriptionModalActionCreators
-// Dependencies: [4800, 5039, 10810, 1981, 2]
+// Dependencies: [4801, 5040, 10792, 1987, 2]
 
-// Module 10809 (AddImageDescriptionModalActionCreators)
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+// Module 10791 (AddImageDescriptionModalActionCreators)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
 import size from "module_2" /* 2 */;
 
 const ADD_IMAGE_DESCRIPTION_MODAL_KEY = "ADD_IMAGE_DESCRIPTION_MODAL_KEY";
@@ -15,7 +15,7 @@ let obj = {
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet();
     const obj2 = ModalActionCreatorsDefault;
-    obj2.pushLazy(asyncRequire(10810, dependencyMap.paths), merged, ADD_IMAGE_DESCRIPTION_MODAL_KEY);
+    obj2.pushLazy(asyncRequire(10792, dependencyMap.paths), merged, ADD_IMAGE_DESCRIPTION_MODAL_KEY);
   },
   close() {
     const obj = ModalActionCreatorsDefault;

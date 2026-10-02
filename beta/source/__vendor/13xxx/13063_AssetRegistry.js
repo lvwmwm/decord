@@ -1,10 +1,10 @@
 // Module ID: 13063
 // Function ID: 13064
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 13063 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/perks", width: 20, height: 20, scales: [2, 3], hash: "6d92319c85fd42e305e389df8a64c64a", name: "badge", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/backgrounds", width: 375, height: 301, scales: [2, 3], hash: "66755272db25a38d2c195d1bf5a25e70", name: "img_top_pattern_light", type: "png" });

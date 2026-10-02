@@ -1,17 +1,102 @@
-// Module ID: 15336
-// Function ID: 15337
+// Module ID: 15324
+// Function ID: 15325
 // Name: useBenchmarkResults
-// Dependencies: [32, 19, 2]
-// Exports: default
+// Dependencies: [32, 19, 558, 576, 2]
 
-// Module 15336 (useBenchmarkResults)
+// Module 15324 (useBenchmarkResults)
+import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/devtools/native/components/screens/performance/useBenchmarkResults.tsx");
-
-export default function useBenchmarkResults() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_129_0;
+  let first;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let obj = react2;
+  const cResult = obj.c(6);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  [tmp4, closure_129_0] = react.useState(first);
+  _slicedToArray(react.useState(first), 2);
+  let closure_1 = react.useRef(0);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s(label, elapsedMs) {
+      label((arg0) => {
+        elapsedMs.current = elapsedMs.current + 1;
+        const items = [{ kind: "mount", id: elapsedMs.current, label, elapsedMs }, ...arg0];
+        return items;
+      });
+    };
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function v(arg0) {
+      let ref;
+      let closure_0 = arg0;
+      closure_0((arg0) => {
+        ref.current = ref.current + 1;
+        const obj = { kind: "scroll", id: ref.current };
+        const merged = Object.assign(closure_0);
+        const items = [obj, ...arg0];
+        return items;
+      });
+    };
+    cResult[2] = fn2;
+    tmp6 = fn2;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return closure_1_0([]);
+      }
+    }
+    cResult[3] = S;
+    tmp7 = S;
+  } else {
+    class S {
+      constructor() {
+        return closure_1_0([]);
+      }
+    }
+  }
+  if (cResult[4] !== tmp4) {
+    class S {
+      constructor() {
+        return closure_1_0([]);
+      }
+    }
+    tmp9[0] = tmp4;
+    tmp9[1] = tmp5;
+    tmp9[2] = tmp6;
+    tmp9[3] = tmp7;
+    cResult[4] = tmp4;
+    cResult[5] = tmp9;
+    tmp8 = tmp9;
+  } else {
+    class S {
+      constructor() {
+        return closure_1_0([]);
+      }
+    }
+  }
+  return tmp8;
+}) : (() => {
   let closure_0;
   let first;
   [first, closure_0] = react.useState([]);
@@ -40,4 +125,7 @@ export default function useBenchmarkResults() {
     clear: react.useCallback(() => closure_0([]), [])
   };
   return obj;
-};
+});
+const result = size.fileFinishedImporting("modules/devtools/native/components/screens/performance/useBenchmarkResults.tsx");
+
+export default tmp2;

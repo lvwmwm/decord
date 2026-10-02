@@ -1,26 +1,34 @@
-// Module ID: 15747
-// Function ID: 15748
+// Module ID: 15746
+// Function ID: 15747
 // Name: ThreadLongPressActionSheet
-// Dependencies: [19, 2045, 2067, 4851, 4855, 4471, 1074, 21, 9706, 1115, 9707, 9709, 6389, 6531, 9683, 4773, 7184, 9492, 7305, 4795, 4785, 9711, 5409, 9713, 8085, 4775, 10418, 9613, 4800, 9600, 1981, 9067, 10424, 10854, 504, 6687, 12, 7329, 4989, 2021, 10437, 5896, 1177, 6618, 10464, 6620, 10092, 6610, 4527, 2]
-// Exports: default
+// Dependencies: [19, 2051, 2073, 4852, 4856, 4474, 1086, 21, 9822, 1127, 9823, 9825, 6386, 6532, 9805, 4774, 7188, 9488, 7309, 4796, 4786, 9827, 5410, 9829, 9833, 4776, 10460, 9586, 4801, 10819, 1987, 9044, 10463, 10822, 558, 576, 504, 6688, 12, 7333, 4990, 2027, 10470, 5893, 1189, 6624, 10499, 6620, 10129, 6611, 4530, 2]
 
-// Module 15747 (ThreadLongPressActionSheet)
+// Module 15746 (ThreadLongPressActionSheet)
 import _modDef12 from "module_12" /* 12 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import ClipboardUtils from "ClipboardUtils" /* 6610 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ToastUtils from "ToastUtils" /* 4530 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6532 */;
+import ClipboardUtils from "ClipboardUtils" /* 6611 */;
 import ActionSheetRow2 from "ActionSheetRow" /* 6620 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7188 */;
+import markChannelUnreadDefault from "markChannelUnread" /* 9825 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9833 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10460 */;
+import threadActionSheets from "threadActionSheets" /* 10822 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import ReadStateStore from "ReadStateStore" /* 4851 */;
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import ReadStateStore from "ReadStateStore" /* 4852 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4474 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap;
+let channelId, dependencyMap;
 
 let c10;
 let c9;
@@ -28,33 +36,736 @@ let closure_12;
 let closure_14;
 let map1;
 let unpackModuleId;
-function ThreadLongPressActionSheetConnected(channel) {
-  let ActionSheetRow;
-  let Icon;
-  let closure_2;
-  let constants2;
-  let constants3;
-  let constants4;
+function getActionSheetButtons(channel) {
+  let canManageThread;
+  let canMarkUnread;
+  let canModerateThread;
+  let canUnarchiveThread;
+  let favorites;
+  let handleJoinThreadVoice;
+  let hasActiveThreadVoice;
   let hasJoined;
+  let hasUnread;
   let intl;
   let intl10;
   let intl12;
-  let intl13;
   let intl2;
+  let isForumPost;
   let isMuted;
-  let items6;
-  let items8;
-  let obj29;
-  let obj31;
-  let obj32;
-  let tmp18;
-  let tmp19;
+  let items1;
+  channel = channel.channel;
+  ({ canModerateThread, isMuted } = channel);
+  ({ isForumPost, handleJoinThreadVoice } = channel);
+  let obj = { sectionKey: "mark-as-read", buttons: [] };
+  const tmp = channel;
+  let tmp2 = dependencyMap;
+  ({ canManageThread, canUnarchiveThread, hasUnread, canMarkUnread, hasJoined, hasActiveThreadVoice, favorites } = channel);
+  const MarkChannelUnreadExperiment = channel(9822).MarkChannelUnreadExperiment;
+  if (MarkChannelUnreadExperiment.getConfig({ location: "thread_action_sheet" }).enabled) {
+    if (!hasUnread) {
+      if (canMarkUnread) {
+        const buttons = obj.buttons;
+        let obj2 = {
+          label: intl.string(tmp(1127).t.RpE9k7),
+          IconComponent: tmp(9823).ChatMarkUnreadIcon,
+          onPress() {
+                  markChannelUnreadDefault(channel.id);
+                }
+        };
+        const push = buttons.push;
+        intl = tmp(1127).intl;
+        push(obj2);
+      }
+      const items = [];
+      items.push(obj);
+      const tmp7 = isMuted(9805)(favorites);
+      if (null != tmp7) {
+        const obj3 = { sectionKey: "favorites", buttons: items1 };
+        items1 = [tmp7];
+        items.push(obj3);
+      }
+      const obj4 = { sectionKey: "channel-actions", buttons: [] };
+      const buttons1 = obj4.buttons;
+      const push3 = buttons1.push;
+      if (hasJoined) {
+        let string2Result;
+        const intl4 = tmp(1127).intl;
+        const string2 = intl4.string;
+        const t2 = tmp(1127).t;
+        if (isForumPost) {
+          string2Result = string2(t2["2LsZdT"]);
+        } else {
+          string2Result = string2(t2["fa/84m"]);
+        }
+        const obj5 = {
+          label: string2Result,
+          IconComponent: tmp(4774).UserMinusIcon,
+          isDestructive: true,
+          onPress() {
+                  const obj = ThreadActionCreatorsDefault;
+                  obj.leaveThread(channel, "Context Menu");
+                }
+        };
+        push3(obj5);
+      } else {
+        let stringResult;
+        const intl3 = tmp(1127).intl;
+        const string = intl3.string;
+        const t = tmp(1127).t;
+        if (isForumPost) {
+          stringResult = string(t.ihLPiO);
+        } else {
+          stringResult = string(t["10kukS"]);
+        }
+        const obj6 = {
+          label: stringResult,
+          IconComponent: tmp(9488).GroupPlusIcon,
+          onPress() {
+                  const obj = ThreadActionCreatorsDefault;
+                  obj.joinThread(channel, "Context Menu");
+                }
+        };
+        push3(obj6);
+      }
+      if (null != handleJoinThreadVoice) {
+        let string3Result;
+        const buttons2 = obj4.buttons;
+        const push4 = buttons2.push;
+        const intl5 = tmp(1127).intl;
+        const string3 = intl5.string;
+        const t3 = tmp(1127).t;
+        if (hasActiveThreadVoice) {
+          string3Result = string3(t3["0D/6Rz"]);
+        } else {
+          string3Result = string3(t3.My50nf);
+        }
+        const obj7 = { label: string3Result, IconComponent: tmp(7309).PhoneCallIcon, onPress: handleJoinThreadVoice };
+        push4(obj7);
+      }
+      const threadMetadata = channel.threadMetadata;
+      let archived;
+      if (threadMetadata != null) {
+        archived = threadMetadata.archived;
+      }
+      if (archived) {
+        if (canUnarchiveThread) {
+          let string5Result;
+          const buttons3 = obj4.buttons;
+          const push6 = buttons3.push;
+          const intl7 = tmp(1127).intl;
+          const string5 = intl7.string;
+          const t5 = tmp(1127).t;
+          if (isForumPost) {
+            string5Result = string5(t5.cnRubV);
+          } else {
+            string5Result = string5(t5.S9E4G7);
+          }
+          const obj8 = {
+            label: string5Result,
+            IconComponent: tmp(4796).ClockIcon,
+            onPress() {
+                      const obj = ThreadActionCreatorsDefault;
+                      obj.unarchiveThread(channel, false);
+                    }
+          };
+          push6(obj8);
+        }
+      } else if (canManageThread) {
+        let string4Result;
+        const buttons4 = obj4.buttons;
+        const push5 = buttons4.push;
+        const intl6 = tmp(1127).intl;
+        const string4 = intl6.string;
+        const t4 = tmp(1127).t;
+        if (isForumPost) {
+          string4Result = string4(t4.BTs4Kb);
+        } else {
+          string4Result = string4(t4.wiIevd);
+        }
+        const obj9 = {
+          label: string4Result,
+          IconComponent: tmp(4786).XLargeIcon,
+          onPress() {
+                  const obj = ThreadActionCreatorsDefault;
+                  obj.archiveThread(channel, false);
+                }
+        };
+        push5(obj9);
+      }
+      if (canModerateThread) {
+        const buttons5 = obj4.buttons;
+        const push7 = buttons5.push;
+        const obj10 = { label: null, IconComponent: null, onPress: null };
+        const isLockedThreadResult = channel.isLockedThread();
+        const intl8 = tmp(1127).intl;
+        const string6 = intl8.string;
+        const t6 = tmp(1127).t;
+        if (isLockedThreadResult) {
+          let string6Result;
+          if (isForumPost) {
+            string6Result = string6(t6["/OKSxp"]);
+          } else {
+            string6Result = string6(t6["jeyb/W"]);
+          }
+          obj10.label = string6Result;
+          obj10.IconComponent = tmp(9827).LockUnlockedIcon;
+          obj10.onPress = function onPress() {
+            const obj = ThreadActionCreatorsDefault;
+            obj.unlockThread(channel);
+          };
+          push7(obj10);
+        } else {
+          let string6Result1;
+          if (isForumPost) {
+            string6Result1 = string6(t6["Ur/0Na"]);
+          } else {
+            string6Result1 = string6(t6.HoCqm8);
+          }
+          obj10.label = string6Result1;
+          obj10.IconComponent = tmp(5410).LockIcon;
+          obj10.onPress = function onPress() {
+            const obj = ThreadActionCreatorsDefault;
+            obj.lockThread(channel);
+          };
+          push7(obj10);
+        }
+      }
+      if (canModerateThread) {
+        let string7Result;
+        const buttons6 = obj4.buttons;
+        const push8 = buttons6.push;
+        const intl9 = tmp(1127).intl;
+        const string7 = intl9.string;
+        const t7 = tmp(1127).t;
+        if (isForumPost) {
+          string7Result = string7(t7.NP1yHG);
+        } else {
+          string7Result = string7(t7["2Mk1TP"]);
+        }
+        const obj11 = {
+          label: string7Result,
+          IconComponent: tmp(9829).PencilIcon,
+          onPress() {
+                  const obj = ChannelSettingsActionCreatorsDefault;
+                  obj.setSection(constants3.OVERVIEW);
+                  const obj2 = ChannelSettingsActionCreatorsDefault;
+                  obj2.open(channel.id);
+                }
+        };
+        push8(obj11);
+      }
+      const buttons7 = obj4.buttons;
+      const push9 = buttons7.push;
+      const obj12 = {
+        label: intl10.string(tmp(1127).t.WqhZss),
+        IconComponent: tmp(4776).LinkIcon,
+        isDestructive: false,
+        onPress() {
+              const obj = ChannelActionSheetUtils;
+              const result = obj.copyGuildChannelOrThreadLink(channel.guild_id, channel.id);
+            }
+      };
+      intl10 = tmp(1127).intl;
+      push9(obj12);
+      items.push(obj4);
+      const obj13 = { sectionKey: "notifications", buttons: [] };
+      const buttons8 = obj13.buttons;
+      const push10 = buttons8.push;
+      const obj14 = { label: null, IconComponent: null, onPress: null };
+      const intl11 = tmp(1127).intl;
+      const string8 = intl11.string;
+      const t8 = tmp(1127).t;
+      if (isMuted) {
+        let string8Result;
+        if (isForumPost) {
+          string8Result = string8(t8["0JQfsP"]);
+        } else {
+          string8Result = string8(t8["Cq/TzF"]);
+        }
+        obj14.label = string8Result;
+        obj14.IconComponent = tmp(9044).BellIcon;
+        obj14.onPress = function onPress() {
+          const obj = ThreadActionCreatorsDefault;
+          const obj2 = { muted: !isMuted };
+          const result = obj.setNotificationSettings(channel, obj2);
+        };
+        push10(obj14);
+      } else {
+        let string8Result1;
+        if (isForumPost) {
+          string8Result1 = string8(t8["nP+Ykd"]);
+        } else {
+          string8Result1 = string8(t8.bUUd8q);
+        }
+        obj14.label = string8Result1;
+        obj14.IconComponent = tmp(9586).BellSlashIcon;
+        obj14.onPress = function onPress() {
+          const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+          ActionSheetActionCreatorsDefault;
+          const obj = { guildId: channel.getGuildId(), channelId: channel.id };
+          const tmp2 = asyncRequire(10819, dependencyMap.paths);
+          const combined = "muteSettings" + channel.id;
+          openLazy(tmp2, combined, obj);
+        };
+        push10(obj14);
+      }
+      const buttons9 = obj13.buttons;
+      const push11 = buttons9.push;
+      const obj15 = {
+        label: intl12.string(tmp(1127).t.h850Ss),
+        IconComponent: tmp(10463).ChannelNotificationIcon,
+        onPress() {
+              const obj = threadActionSheets;
+              const result = obj.showThreadNotificationsBottomSheet(channel);
+            },
+        disableColor: true
+      };
+      intl12 = tmp(1127).intl;
+      push11(obj15);
+      items.push(obj13);
+      return items;
+    }
+  }
+  const buttons10 = obj.buttons;
+  const push2 = buttons10.push;
+  const obj16 = {
+    label: intl2.string(tmp(1127).t.e6RscS),
+    IconComponent: tmp(6386).EyeIcon,
+    onPress() {
+      const obj = ReadStateActionCreators;
+      const obj2 = { section: unpackModuleId.THREAD_ACTION_SHEET, object: constants2.MARK_THREAD_AS_READ_BUTTON, objectType: constants.ACK_MANUAL };
+      obj.ack(channel.id, obj2, true, true);
+    }
+  };
+  intl2 = tmp(1127).intl;
+  push2(obj16);
+}
+({ AnalyticsObjectTypes: c9, AnalyticsObjects: c10, AnalyticsSections: unpackModuleId, ChannelSettingsSections: closure_12 } = Constants);
+({ jsx: map1, jsxs: closure_14 } = Fragment);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let ActionSheetRow;
+  let Icon;
+  let closure_2;
+  let hasJoined;
+  let intl;
+  let isMuted;
+  let obj4;
+  let obj5;
+  let tmp10;
+  let tmp12;
+  let tmp14;
+  let tmp15;
+  let tmp23;
+  let tmp24;
+  let tmp26;
+  let tmp27;
+  let tmp4;
+  let tmp6;
+  let tmp8;
+  let tmp = channel;
+  let obj = channel(576);
+  const cResult = obj.c(35);
   channel = channel.channel;
   const onClose = channel.onClose;
-  let items5;
+  if (cResult[0] !== channel) {
+    const guildId = channel.getGuildId();
+    cResult[0] = channel;
+    cResult[1] = guildId;
+    tmp4 = guildId;
+  } else {
+    tmp4 = cResult[1];
+  }
+  dependencyMap = tmp4;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[2] = items;
+    tmp6 = items;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] !== tmp4) {
+    const fn = function b() {
+      return GuildStore.getGuild(closure_2);
+    };
+    cResult[3] = tmp4;
+    cResult[4] = fn;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[4];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp8);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [JoinedThreadsStore];
+    cResult[5] = items1;
+    tmp10 = items1;
+  } else {
+    tmp10 = cResult[5];
+  }
+  if (cResult[6] !== channel.id) {
+    class M {
+      constructor() {
+        const obj = { isMuted: JoinedThreadsStore.isMuted(channel.id), hasJoined: JoinedThreadsStore.hasJoined(channel.id) };
+        return obj;
+      }
+    }
+    cResult[6] = channel.id;
+    cResult[7] = M;
+    tmp12 = M;
+  } else {
+    class M {
+      constructor() {
+        const obj = { isMuted: JoinedThreadsStore.isMuted(channel.id), hasJoined: JoinedThreadsStore.hasJoined(channel.id) };
+        return obj;
+      }
+    }
+  }
+  const tmpResult10 = tmp(504);
+  const stateFromStoresObject = tmpResult10.useStateFromStoresObject(tmp10, tmp12);
+  ({ isMuted, hasJoined } = stateFromStoresObject);
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class M {
+      constructor() {
+        const obj = { isMuted: JoinedThreadsStore.isMuted(channel.id), hasJoined: JoinedThreadsStore.hasJoined(channel.id) };
+        return obj;
+      }
+    }
+    const items2 = [ReadStateStore];
+    cResult[8] = items2;
+    tmp14 = items2;
+  } else {
+    class M {
+      constructor() {
+        const obj = { isMuted: JoinedThreadsStore.isMuted(channel.id), hasJoined: JoinedThreadsStore.hasJoined(channel.id) };
+        return obj;
+      }
+    }
+  }
+  if (cResult[9] !== channel.id) {
+    class M {
+      constructor() {
+        const obj = { isMuted: JoinedThreadsStore.isMuted(channel.id), hasJoined: JoinedThreadsStore.hasJoined(channel.id) };
+        return obj;
+      }
+    }
+    cResult[9] = channel.id;
+    cResult[10] = tmp16;
+    tmp15 = tmp16;
+  } else {
+    class M {
+      constructor() {
+        const obj = { isMuted: JoinedThreadsStore.isMuted(channel.id), hasJoined: JoinedThreadsStore.hasJoined(channel.id) };
+        return obj;
+      }
+    }
+  }
+  const tmpResult11 = tmp(504);
+  const stateFromStores1 = tmpResult11.useStateFromStores(tmp14, tmp15);
+  const tmpResult12 = tmp(9825);
+  const canMarkChannelUnread = tmpResult12.useCanMarkChannelUnread(channel);
+  const tmpResult13 = tmp(6688);
+  const canManageThread = tmpResult13.useCanManageThread(channel);
+  const tmpResult14 = tmp(6688);
+  const isThreadModerator = tmpResult14.useIsThreadModerator(channel);
+  const tmpResult15 = tmp(6688);
+  const canUnarchiveThread = tmpResult15.useCanUnarchiveThread(channel);
+  const tmpResult16 = tmp(6688);
+  const canJoinThreadVoice = tmpResult16.useCanJoinThreadVoice(channel);
+  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+    class M {
+      constructor() {
+        const obj = { isMuted: JoinedThreadsStore.isMuted(channel.id), hasJoined: JoinedThreadsStore.hasJoined(channel.id) };
+        return obj;
+      }
+    }
+    const items3 = [VoiceStateStore];
+    cResult[11] = items3;
+    tmp23 = items3;
+  } else {
+    class M {
+      constructor() {
+        const obj = { isMuted: JoinedThreadsStore.isMuted(channel.id), hasJoined: JoinedThreadsStore.hasJoined(channel.id) };
+        return obj;
+      }
+    }
+  }
+  if (cResult[12] !== channel.id) {
+    class E {
+      constructor() {
+        return VoiceStateStore.isInChannel(channel.id);
+      }
+    }
+    cResult[12] = channel.id;
+    cResult[13] = E;
+    tmp24 = E;
+  } else {
+    class E {
+      constructor() {
+        return VoiceStateStore.isInChannel(channel.id);
+      }
+    }
+  }
+  const tmpResult17 = tmp(504);
+  const stateFromStores2 = tmpResult17.useStateFromStores(tmp23, tmp24);
+  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        return VoiceStateStore.isInChannel(channel.id);
+      }
+    }
+    const items4 = [VoiceStateStore];
+    cResult[14] = items4;
+    tmp26 = items4;
+  } else {
+    class E {
+      constructor() {
+        return VoiceStateStore.isInChannel(channel.id);
+      }
+    }
+  }
+  if (cResult[15] !== channel.id) {
+    class D {
+      constructor() {
+        const obj = _modDef12;
+        return !obj.isEmpty(VoiceStateStore.getVoiceStatesForChannel(channel.id));
+      }
+    }
+    cResult[15] = channel.id;
+    cResult[16] = D;
+    tmp27 = D;
+  } else {
+    class D {
+      constructor() {
+        const obj = _modDef12;
+        return !obj.isEmpty(VoiceStateStore.getVoiceStatesForChannel(channel.id));
+      }
+    }
+  }
+  const tmpResult18 = tmp(504);
+  const stateFromStores3 = tmpResult18.useStateFromStores(tmp26, tmp27);
+  onClose(7333)(channel);
+  const tmp30 = onClose(4990)(channel);
+  const DeveloperMode = tmp(2027).DeveloperMode;
+  const setting = DeveloperMode.useSetting();
+  const tmp32 = onClose(10470)(channel, "ThreadLongPressActionSheet");
+  if (null != stateFromStores) {
+    class D {
+      constructor() {
+        const obj = _modDef12;
+        return !obj.isEmpty(VoiceStateStore.getVoiceStatesForChannel(channel.id));
+      }
+    }
+  } else {
+    class D {
+      constructor() {
+        const obj = _modDef12;
+        return !obj.isEmpty(VoiceStateStore.getVoiceStatesForChannel(channel.id));
+      }
+    }
+  }
+  let obj2 = { channel, guild: stateFromStores, canManageThread, canModerateThread: isThreadModerator, canUnarchiveThread, isMuted, hasUnread: stateFromStores1, canMarkUnread: canMarkChannelUnread, hasJoined, isForumPost: channel.isForumPost(), handleJoinThreadVoice: null, hasActiveThreadVoice: stateFromStores3, favorites: tmp32 };
+  const tmp35 = getActionSheetButtons;
+  if (canJoinThreadVoice) {
+    class D {
+      constructor() {
+        const obj = _modDef12;
+        return !obj.isEmpty(VoiceStateStore.getVoiceStatesForChannel(channel.id));
+      }
+    }
+    if (!stateFromStores2) {
+      class D {
+        constructor() {
+          const obj = _modDef12;
+          return !obj.isEmpty(VoiceStateStore.getVoiceStatesForChannel(channel.id));
+        }
+      }
+    }
+  }
+  const tmp35Result = tmp35(obj2);
+  const length = tmp35Result;
+  const items5 = [tmp35Result.length, setting, onClose];
+  const effect = setting.useEffect(() => {
+    const tmp = 0 !== length.length || setting;
+    if (!tmp) {
+      onClose();
+    }
+  }, items5);
+  const ActionSheet = tmp(6624).ActionSheet;
+  if (cResult[21] === tmp30) {
+    let tmp38;
+    class D {
+      constructor() {
+        const obj = _modDef12;
+        return !obj.isEmpty(VoiceStateStore.getVoiceStatesForChannel(channel.id));
+      }
+    }
+    if (cResult[24] !== onClose) {
+      class X {
+        constructor(arg0) {
+          obj = { hasIcons: true, children: null };
+          buttons = channel.buttons;
+          Group = closure_0(closure_2[47]).ActionSheetRow.Group;
+          obj.children = buttons.map((onPress, index) => {
+            let IconComponent;
+            let disableColor;
+            let isDestructive;
+            let label;
+            let str;
+            let tmp3;
+            let trailing;
+            onPress = onPress.onPress;
+            ({ label, IconComponent, trailing, isDestructive, disableColor } = onPress);
+            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F151537 */ } };
+            str = "default";
+            const ActionSheetRow = channel(closure_1_2[47]).ActionSheetRow;
+            tmp3 = closure_1_2;
+            if (isDestructive) {
+              str = "danger";
+            }
+            return closure_1_13(ActionSheetRow, obj, index);
+          });
+          return jsx(Group, obj, channel.sectionKey);
+        }
+      }
+      cResult[24] = onClose;
+      cResult[25] = X;
+      tmp38 = X;
+    } else {
+      class X {
+        constructor(arg0) {
+          obj = { hasIcons: true, children: null };
+          buttons = channel.buttons;
+          Group = closure_0(closure_2[47]).ActionSheetRow.Group;
+          obj.children = buttons.map((onPress, index) => {
+            let IconComponent;
+            let disableColor;
+            let isDestructive;
+            let label;
+            let str;
+            let tmp3;
+            let trailing;
+            onPress = onPress.onPress;
+            ({ label, IconComponent, trailing, isDestructive, disableColor } = onPress);
+            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F151537 */ } };
+            str = "default";
+            const ActionSheetRow = channel(closure_1_2[47]).ActionSheetRow;
+            tmp3 = closure_1_2;
+            if (isDestructive) {
+              str = "danger";
+            }
+            return closure_1_13(ActionSheetRow, obj, index);
+          });
+          return jsx(Group, obj, channel.sectionKey);
+        }
+      }
+    }
+    const mapped = tmp35Result.map(tmp38);
+    if (cResult[26] === channel.id) {
+      class X {
+        constructor(arg0) {
+          obj = { hasIcons: true, children: null };
+          buttons = channel.buttons;
+          Group = closure_0(closure_2[47]).ActionSheetRow.Group;
+          obj.children = buttons.map((onPress, index) => {
+            let IconComponent;
+            let disableColor;
+            let isDestructive;
+            let label;
+            let str;
+            let tmp3;
+            let trailing;
+            onPress = onPress.onPress;
+            ({ label, IconComponent, trailing, isDestructive, disableColor } = onPress);
+            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F151537 */ } };
+            str = "default";
+            const ActionSheetRow = channel(closure_1_2[47]).ActionSheetRow;
+            tmp3 = closure_1_2;
+            if (isDestructive) {
+              str = "danger";
+            }
+            return closure_1_13(ActionSheetRow, obj, index);
+          });
+          return jsx(Group, obj, channel.sectionKey);
+        }
+      }
+    }
+    let tmp41 = setting;
+    if (tmp41) {
+      class X {
+        constructor(arg0) {
+          obj = { hasIcons: true, children: null };
+          buttons = channel.buttons;
+          Group = closure_0(closure_2[47]).ActionSheetRow.Group;
+          obj.children = buttons.map((onPress, index) => {
+            let IconComponent;
+            let disableColor;
+            let isDestructive;
+            let label;
+            let str;
+            let tmp3;
+            let trailing;
+            onPress = onPress.onPress;
+            ({ label, IconComponent, trailing, isDestructive, disableColor } = onPress);
+            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F151537 */ } };
+            str = "default";
+            const ActionSheetRow = channel(closure_1_2[47]).ActionSheetRow;
+            tmp3 = closure_1_2;
+            if (isDestructive) {
+              str = "danger";
+            }
+            return closure_1_13(ActionSheetRow, obj, index);
+          });
+          return jsx(Group, obj, channel.sectionKey);
+        }
+      }
+      const obj3 = { hasIcons: true, children: closure_13(ActionSheetRow, obj4) };
+      let Group = tmp(6620).ActionSheetRow.Group;
+      obj4 = {
+        icon: closure_13(Icon, obj5),
+        label: intl.string(tmp(1127).t.DQ797g),
+        onPress() {
+              onClose();
+              const obj = ClipboardUtils;
+              obj.copy(channel.id);
+              const obj2 = ToastUtils;
+              obj2.presentIdCopied();
+            }
+      };
+      ActionSheetRow = tmp(6620).ActionSheetRow;
+      obj5 = { IconComponent: tmp(10129).IdIcon };
+      Icon = tmp(6620).ActionSheetRow.Icon;
+      intl = tmp(1127).intl;
+      let str = "developer-actions";
+      tmp41 = closure_13(Group, obj3, "developer-actions");
+    }
+    cResult[26] = channel.id;
+    cResult[27] = setting;
+    cResult[28] = onClose;
+    cResult[29] = tmp41;
+  }
+  cResult[21] = tmp30;
+  cResult[22] = tmp33;
+  cResult[23] = closure_13(tmp(10499).ActionSheetIconHeader, { title: tmp30, icon: tmp33 });
+  closure_13(tmp(10499).ActionSheetIconHeader, { title: tmp30, icon: tmp33 });
+}) : ((channel) => {
+  let ActionSheetRow;
+  let Icon;
+  let closure_2;
+  let hasJoined;
+  let intl;
+  let isMuted;
+  let items6;
+  let obj16;
+  let obj17;
+  let tmp19;
+  let tmp20;
+  let tmp24;
+  channel = channel.channel;
+  const onClose = channel.onClose;
+  let length;
   dependencyMap = channel.getGuildId();
   let tmp = channel;
-  let tmp2 = dependencyMap;
   let obj = channel(504);
   const items = [GuildStore];
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(closure_2));
@@ -68,15 +779,15 @@ function ThreadLongPressActionSheetConnected(channel) {
   const items2 = [ReadStateStore];
   const obj3 = channel(504);
   const stateFromStores1 = obj3.useStateFromStores(items2, () => ReadStateStore.hasUnreadOrMentions(channel.id));
-  const obj4 = channel(9709);
+  const obj4 = channel(9825);
   const canMarkChannelUnread = obj4.useCanMarkChannelUnread(channel);
-  const obj5 = channel(6687);
+  const obj5 = channel(6688);
   const canManageThread = obj5.useCanManageThread(channel);
-  const obj6 = channel(6687);
+  const obj6 = channel(6688);
   const isThreadModerator = obj6.useIsThreadModerator(channel);
-  const obj7 = channel(6687);
+  const obj7 = channel(6688);
   const canUnarchiveThread = obj7.useCanUnarchiveThread(channel);
-  const obj8 = channel(6687);
+  const obj8 = channel(6688);
   const canJoinThreadVoice = obj8.useCanJoinThreadVoice(channel);
   const items3 = [VoiceStateStore];
   const obj9 = channel(504);
@@ -87,394 +798,184 @@ function ThreadLongPressActionSheetConnected(channel) {
     const obj = _modDef12;
     return !obj.isEmpty(VoiceStateStore.getVoiceStatesForChannel(channel.id));
   });
-  const tmp14 = onClose(7329)(channel);
-  const tmp15 = onClose(4989)(channel);
-  const DeveloperMode = channel(2021).DeveloperMode;
+  const tmp14 = onClose(7333)(channel);
+  const tmp15 = onClose(4990)(channel);
+  const DeveloperMode = channel(2027).DeveloperMode;
   let setting = DeveloperMode.useSetting();
-  const tmp17 = onClose(10437)(channel, "ThreadLongPressActionSheet");
+  const tmp13 = onClose;
+  const tmp17 = onClose(10470)(channel, "ThreadLongPressActionSheet");
   if (null != stateFromStores) {
-    const obj11 = { guild: stateFromStores, size: tmp(5896).GuildIconSizes.LARGE };
-    const tmp13Result = onClose(5896);
+    const obj11 = { guild: stateFromStores, size: tmp(5893).GuildIconSizes.LARGE };
+    const tmp13Result = tmp13(5893);
     tmp19 = closure_13(tmp13Result, obj11);
-    tmp18 = closure_13;
+    tmp20 = closure_13;
   } else {
-    tmp18 = closure_13;
-    const obj12 = { size: tmp(1177).AvatarSizes.LARGE, channel };
-    const Avatar = tmp(1177).Avatar;
+    const obj12 = { size: tmp(1189).AvatarSizes.LARGE, channel };
+    const Avatar = tmp(1189).Avatar;
     tmp19 = closure_13(Avatar, obj12);
+    tmp20 = closure_13;
   }
-  const isForumPostResult = channel.isForumPost();
-  let tmp23 = null;
+  const obj13 = { channel, guild: stateFromStores, canManageThread, canModerateThread: isThreadModerator, canUnarchiveThread, isMuted, hasUnread: stateFromStores1, canMarkUnread: canMarkChannelUnread, hasJoined, isForumPost: channel.isForumPost(), handleJoinThreadVoice: tmp24, hasActiveThreadVoice: stateFromStores3, favorites: tmp17 };
+  tmp24 = null;
+  const tmp23 = getActionSheetButtons;
   if (canJoinThreadVoice) {
-    tmp23 = null;
+    tmp24 = null;
     if (!stateFromStores2) {
-      tmp23 = tmp14;
+      tmp24 = tmp14;
     }
   }
-  const obj13 = { sectionKey: "mark-as-read", buttons: [] };
-  const MarkChannelUnreadExperiment = tmp(9706).MarkChannelUnreadExperiment;
-  if (MarkChannelUnreadExperiment.getConfig({ location: "thread_action_sheet" }).enabled) {
-    if (!stateFromStores1) {
-      if (canMarkChannelUnread) {
-        let buttons = obj13.buttons;
-        const push = buttons.push;
-        const obj14 = {
-          label: intl.string(tmp(1115).t.RpE9k7),
-          IconComponent: tmp(9707).ChatMarkUnreadIcon,
-          onPress() {
-                  onClose(paths[11])(channel.id);
-                }
-        };
-        intl = tmp(1115).intl;
-        push(obj14);
-      }
-      items5 = [];
-      items5.push(obj13);
-      const tmp27 = onClose(9683)(tmp17);
-      if (null != tmp27) {
-        const obj15 = { sectionKey: "favorites", buttons: items6 };
-        items6 = [tmp27];
-        items5.push(obj15);
-      }
-      const obj16 = { sectionKey: "channel-actions", buttons: [] };
-      const buttons1 = obj16.buttons;
-      const push3 = buttons1.push;
-      if (hasJoined) {
-        let string2Result;
-        const intl4 = tmp(1115).intl;
-        const string2 = intl4.string;
-        const t2 = tmp(1115).t;
-        if (isForumPostResult) {
-          string2Result = string2(t2["2LsZdT"]);
-        } else {
-          string2Result = string2(t2["fa/84m"]);
-        }
-        const obj17 = {
-          label: string2Result,
-          IconComponent: tmp(4773).UserMinusIcon,
-          isDestructive: true,
-          onPress() {
-                  const obj = onClose(paths[16]);
-                  obj.leaveThread(channel, "Context Menu");
-                }
-        };
-        push3(obj17);
-      } else {
-        let stringResult;
-        const intl3 = tmp(1115).intl;
-        const string = intl3.string;
-        const t = tmp(1115).t;
-        if (isForumPostResult) {
-          stringResult = string(t.ihLPiO);
-        } else {
-          stringResult = string(t["10kukS"]);
-        }
-        const obj18 = {
-          label: stringResult,
-          IconComponent: tmp(9492).GroupPlusIcon,
-          onPress() {
-                  const obj = onClose(paths[16]);
-                  obj.joinThread(channel, "Context Menu");
-                }
-        };
-        push3(obj18);
-      }
-      if (null != tmp23) {
-        let string3Result;
-        const buttons2 = obj16.buttons;
-        const push4 = buttons2.push;
-        const intl5 = tmp(1115).intl;
-        const string3 = intl5.string;
-        const t3 = tmp(1115).t;
-        if (stateFromStores3) {
-          string3Result = string3(t3["0D/6Rz"]);
-        } else {
-          string3Result = string3(t3.My50nf);
-        }
-        const obj19 = { label: string3Result, IconComponent: tmp(7305).PhoneCallIcon, onPress: tmp23 };
-        push4(obj19);
-      }
-      const threadMetadata = channel.threadMetadata;
-      let archived;
-      if (threadMetadata != null) {
-        archived = threadMetadata.archived;
-      }
-      if (archived) {
-        if (canUnarchiveThread) {
-          let string5Result;
-          const buttons3 = obj16.buttons;
-          const push6 = buttons3.push;
-          const intl7 = tmp(1115).intl;
-          const string5 = intl7.string;
-          const t5 = tmp(1115).t;
-          if (isForumPostResult) {
-            string5Result = string5(t5.cnRubV);
-          } else {
-            string5Result = string5(t5.S9E4G7);
-          }
-          const obj20 = {
-            label: string5Result,
-            IconComponent: tmp(4795).ClockIcon,
+  const tmp23Result = tmp23(obj13);
+  length = tmp23Result;
+  const items5 = [tmp23Result.length, setting, onClose];
+  const effect = setting.useEffect(() => {
+    const tmp = 0 !== length.length || setting;
+    if (!tmp) {
+      onClose();
+    }
+  }, items5);
+  const obj14 = { header: tmp20(tmp(10499).ActionSheetIconHeader, { title: tmp15, icon: tmp19 }), children: items6 };
+  const ActionSheet = tmp(6624).ActionSheet;
+  items6 = [
+    tmp23Result.map((buttons) => {
+      let obj = {
+        hasIcons: true,
+        children: buttons.map((onPress, index) => {
+          let IconComponent;
+          let disableColor;
+          let isDestructive;
+          let label;
+          let str;
+          let tmp3;
+          let trailing;
+          onPress = onPress.onPress;
+          ({ label, IconComponent, trailing, isDestructive, disableColor } = onPress);
+          const obj = {
+            label,
+            variant: str,
+            icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }),
+            trailing,
             onPress() {
-                      const obj = onClose(paths[16]);
-                      obj.unarchiveThread(channel, false);
-                    }
-          };
-          push6(obj20);
-        }
-      } else if (canManageThread) {
-        let string4Result;
-        const buttons4 = obj16.buttons;
-        const push5 = buttons4.push;
-        const intl6 = tmp(1115).intl;
-        const string4 = intl6.string;
-        const t4 = tmp(1115).t;
-        if (isForumPostResult) {
-          string4Result = string4(t4.BTs4Kb);
-        } else {
-          string4Result = string4(t4.wiIevd);
-        }
-        const obj21 = {
-          label: string4Result,
-          IconComponent: tmp(4785).XLargeIcon,
-          onPress() {
-                  const obj = onClose(paths[16]);
-                  obj.archiveThread(channel, false);
-                }
-        };
-        push5(obj21);
-      }
-      if (isThreadModerator) {
-        const buttons5 = obj16.buttons;
-        const push7 = buttons5.push;
-        const obj22 = { label: null, IconComponent: null, onPress: null };
-        const isLockedThreadResult = channel.isLockedThread();
-        const intl8 = tmp(1115).intl;
-        const string6 = intl8.string;
-        const t6 = tmp(1115).t;
-        if (isLockedThreadResult) {
-          let string6Result;
-          if (isForumPostResult) {
-            string6Result = string6(t6["/OKSxp"]);
-          } else {
-            string6Result = string6(t6["jeyb/W"]);
-          }
-          obj22.label = string6Result;
-          obj22.IconComponent = tmp(9711).LockUnlockedIcon;
-          obj22.onPress = function onPress() {
-            const obj = onClose(paths[16]);
-            obj.unlockThread(channel);
-          };
-          push7(obj22);
-        } else {
-          let string6Result1;
-          if (isForumPostResult) {
-            string6Result1 = string6(t6["Ur/0Na"]);
-          } else {
-            string6Result1 = string6(t6.HoCqm8);
-          }
-          obj22.label = string6Result1;
-          obj22.IconComponent = tmp(5409).LockIcon;
-          obj22.onPress = function onPress() {
-            const obj = onClose(paths[16]);
-            obj.lockThread(channel);
-          };
-          push7(obj22);
-        }
-      }
-      if (isThreadModerator) {
-        let string7Result;
-        const buttons6 = obj16.buttons;
-        const push8 = buttons6.push;
-        const intl9 = tmp(1115).intl;
-        const string7 = intl9.string;
-        const t7 = tmp(1115).t;
-        if (isForumPostResult) {
-          string7Result = string7(t7.NP1yHG);
-        } else {
-          string7Result = string7(t7["2Mk1TP"]);
-        }
-        const obj23 = {
-          label: string7Result,
-          IconComponent: tmp(9713).PencilIcon,
-          onPress() {
-                  const obj = onClose(paths[24]);
-                  obj.setSection(constants4.OVERVIEW);
-                  const obj2 = onClose(paths[24]);
-                  obj2.open(channel.id);
-                }
-        };
-        push8(obj23);
-      }
-      const buttons7 = obj16.buttons;
-      const push9 = buttons7.push;
-      const obj24 = {
-        label: intl10.string(tmp(1115).t.WqhZss),
-        IconComponent: tmp(4775).LinkIcon,
-        isDestructive: false,
-        onPress() {
-              const obj = channel(paths[26]);
-              const result = obj.copyGuildChannelOrThreadLink(channel.guild_id, channel.id);
+              onClose();
+              onPress();
             }
+          };
+          str = "default";
+          const ActionSheetRow = channel(closure_1_2[47]).ActionSheetRow;
+          tmp3 = closure_1_2;
+          if (isDestructive) {
+            str = "danger";
+          }
+          return closure_1_13(ActionSheetRow, obj, index);
+        })
       };
-      intl10 = tmp(1115).intl;
-      push9(obj24);
-      items5.push(obj16);
-      const obj25 = { sectionKey: "notifications", buttons: [] };
-      const buttons8 = obj25.buttons;
-      const push10 = buttons8.push;
-      const obj26 = { label: null, IconComponent: null, onPress: null };
-      const intl11 = tmp(1115).intl;
-      const string8 = intl11.string;
-      const t8 = tmp(1115).t;
-      if (isMuted) {
-        let string8Result;
-        if (isForumPostResult) {
-          string8Result = string8(t8["0JQfsP"]);
-        } else {
-          string8Result = string8(t8["Cq/TzF"]);
-        }
-        obj26.label = string8Result;
-        obj26.IconComponent = tmp(9067).BellIcon;
-        obj26.onPress = function onPress() {
-          const obj = onClose(paths[16]);
-          const obj2 = { muted: !isMuted };
-          const result = obj.setNotificationSettings(channel, obj2);
-        };
-        push10(obj26);
-      } else {
-        let string8Result1;
-        if (isForumPostResult) {
-          string8Result1 = string8(t8["nP+Ykd"]);
-        } else {
-          string8Result1 = string8(t8.bUUd8q);
-        }
-        obj26.label = string8Result1;
-        obj26.IconComponent = tmp(9613).BellSlashIcon;
-        obj26.onPress = function onPress() {
-          const openLazy = onClose(paths[28]).openLazy;
-          onClose(paths[28]);
-          const obj = { guildId: channel.getGuildId(), channelId: channel.id };
-          const tmp2 = channel(paths[30])(paths[29], paths.paths);
-          const combined = "muteSettings" + channel.id;
-          openLazy(tmp2, combined, obj);
-        };
-        push10(obj26);
-      }
-      const buttons9 = obj25.buttons;
-      const push11 = buttons9.push;
-      const obj27 = {
-        label: intl12.string(tmp(1115).t.h850Ss),
-        IconComponent: tmp(10424).ChannelNotificationIcon,
-        onPress() {
-              const obj = channel(paths[33]);
-              const result = obj.showThreadNotificationsBottomSheet(channel);
-            },
-        disableColor: true
-      };
-      intl12 = tmp(1115).intl;
-      push11(obj27);
-      items5.push(obj25);
-      const items7 = [items5.length, setting, onClose];
-      const effect = setting.useEffect(() => {
-        const tmp = 0 !== items5.length || setting;
-        if (!tmp) {
-          onClose();
-        }
-      }, items7);
-      const obj28 = { header: tmp18(tmp(10464).ActionSheetIconHeader, obj29), children: items8 };
-      const ActionSheet = tmp(6618).ActionSheet;
-      obj29 = { title: tmp15, icon: tmp19 };
-      items8 = [
-        items5.map((buttons) => {
-              let obj = {
-                hasIcons: true,
-                children: buttons.map((onPress, index) => {
-                  let IconComponent;
-                  let disableColor;
-                  let isDestructive;
-                  let label;
-                  let str;
-                  let tmp3;
-                  let trailing;
-                  onPress = onPress.onPress;
-                  ({ label, IconComponent, trailing, isDestructive, disableColor } = onPress);
-                  const obj = {
-                    label,
-                    variant: str,
-                    icon: closure_1_13(channel(tmp3[45]).ActionSheetRow.Icon, { IconComponent, disableColor }),
-                    trailing,
-                    onPress() {
-                      onClose();
-                      onPress();
-                    }
-                  };
-                  str = "default";
-                  const ActionSheetRow = channel(closure_1_2[45]).ActionSheetRow;
-                  tmp3 = closure_1_2;
-                  if (isDestructive) {
-                    str = "danger";
-                  }
-                  return closure_1_13(ActionSheetRow, obj, index);
-                })
-              };
-              buttons = buttons.buttons;
-              const Group = ActionSheetRow2.ActionSheetRow.Group;
-              return map1(Group, obj, buttons.sectionKey);
-            }),
+      buttons = buttons.buttons;
+      const Group = ActionSheetRow2.ActionSheetRow.Group;
+      return map1(Group, obj, buttons.sectionKey);
+    }),
 
-      ];
-      const tmp57 = closure_14;
-      if (setting) {
-        const obj30 = { hasIcons: true, children: tmp18(ActionSheetRow, obj31) };
-        let Group = tmp(6620).ActionSheetRow.Group;
-        obj31 = {
-          icon: tmp18(Icon, obj32),
-          label: intl13.string(tmp(1115).t.DQ797g),
-          onPress() {
-                  onClose();
-                  const obj = ClipboardUtils;
-                  obj.copy(channel.id);
-                  const obj2 = ToastUtils;
-                  obj2.presentIdCopied();
-                }
-        };
-        ActionSheetRow = tmp(6620).ActionSheetRow;
-        obj32 = { IconComponent: tmp(10092).IdIcon };
-        Icon = tmp(6620).ActionSheetRow.Icon;
-        intl13 = tmp(1115).intl;
-        let str = "developer-actions";
-        setting = tmp18(Group, obj30, "developer-actions");
+  ];
+  const tmp26 = closure_14;
+  if (setting) {
+    const obj15 = { hasIcons: true, children: tmp20(ActionSheetRow, obj16) };
+    let Group = tmp(6620).ActionSheetRow.Group;
+    obj16 = {
+      icon: tmp20(Icon, obj17),
+      label: intl.string(tmp(1127).t.DQ797g),
+      onPress() {
+          onClose();
+          const obj = ClipboardUtils;
+          obj.copy(channel.id);
+          const obj2 = ToastUtils;
+          obj2.presentIdCopied();
+        }
+    };
+    ActionSheetRow = tmp(6620).ActionSheetRow;
+    obj17 = { IconComponent: tmp(10129).IdIcon };
+    Icon = tmp(6620).ActionSheetRow.Icon;
+    intl = tmp(1127).intl;
+    let str = "developer-actions";
+    setting = tmp20(Group, obj15, "developer-actions");
+  }
+  items6[1] = setting;
+  return tmp26(ActionSheet, obj14);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let first;
+  let stateFromStores;
+  let tmp6;
+  const obj = channelId(stateFromStores[35]);
+  const cResult = obj.c(10);
+  const tmp = channelId;
+  channelId = channelId.channelId;
+  const onClose = channelId.onClose;
+  const tmp2 = stateFromStores;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channelId) {
+    const fn = function l() {
+      return ChannelStore.getChannel(channelId);
+    };
+    cResult[1] = channelId;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(tmp2[36]);
+  stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] === onClose) {
+    let tmp8;
+    let tmp9;
+    if (cResult[4] === stateFromStores) {
+      tmp8 = cResult[5];
+      tmp9 = cResult[6];
+    }
+    const effect = react.useEffect(tmp8, tmp9);
+    if (cResult[7] === onClose) {
+      let tmp12;
+      if (cResult[8] === stateFromStores) {
+        tmp12 = cResult[9];
       }
-      items8[1] = setting;
-      return tmp57(ActionSheet, obj28);
+      return tmp12;
+    }
+    let tmp13 = null;
+    if (null != stateFromStores) {
+      const obj2 = { channel: stateFromStores, onClose };
+      tmp13 = closure_13(closure_16, obj2);
+    }
+    cResult[7] = onClose;
+    cResult[8] = stateFromStores;
+    cResult[9] = tmp13;
+    tmp12 = tmp13;
+  }
+  class S {
+    constructor() {
+      if (null == stateFromStores) {
+        onClose();
+      }
     }
   }
-  const buttons10 = obj13.buttons;
-  const push2 = buttons10.push;
-  const obj33 = {
-    label: intl2.string(tmp(1115).t.e6RscS),
-    IconComponent: tmp(6389).EyeIcon,
-    onPress() {
-      const obj = channel(paths[13]);
-      const obj2 = { section: constants3.THREAD_ACTION_SHEET, object: constants2.MARK_THREAD_AS_READ_BUTTON, objectType: constants.ACK_MANUAL };
-      obj.ack(channel.id, obj2, true, true);
-    }
-  };
-  intl2 = tmp(1115).intl;
-  push2(obj33);
-}
-({ AnalyticsObjectTypes: c9, AnalyticsObjects: c10, AnalyticsSections: unpackModuleId, ChannelSettingsSections: closure_12 } = Constants);
-({ jsx: map1, jsxs: closure_14 } = Fragment);
-let result = size.fileFinishedImporting("modules/threads/native/components/ThreadLongPressActionSheet.tsx");
-
-export default function ThreadLongPressActionSheet(arg0) {
+  const items1 = [stateFromStores, onClose];
+  cResult[3] = onClose;
+  cResult[4] = stateFromStores;
+  cResult[5] = S;
+  cResult[6] = items1;
+  tmp9 = items1;
+  tmp8 = S;
+}) : ((arg0) => {
   let onClose;
+  let require;
   ({ channelId: require, onClose } = arg0);
   let stateFromStores;
   const items = [ChannelStore];
   const obj = require("get initialized");
-  stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(require));
+  stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(_require));
   const items1 = [stateFromStores, onClose];
   const effect = react.useEffect(() => {
     if (null == stateFromStores) {
@@ -484,7 +985,10 @@ export default function ThreadLongPressActionSheet(arg0) {
   let tmp3 = null;
   if (null != stateFromStores) {
     const obj2 = { channel: stateFromStores, onClose };
-    tmp3 = closure_13(ThreadLongPressActionSheetConnected, obj2);
+    tmp3 = closure_13(closure_16, obj2);
   }
   return tmp3;
-};
+});
+let result = size.fileFinishedImporting("modules/threads/native/components/ThreadLongPressActionSheet.tsx");
+
+export default tmp4;

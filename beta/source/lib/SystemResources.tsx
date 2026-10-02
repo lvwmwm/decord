@@ -1,12 +1,12 @@
-// Module ID: 7167
-// Function ID: 7168
+// Module ID: 7171
+// Function ID: 7172
 // Name: SystemResources
-// Dependencies: [5, 7161, 1358, 7168, 2]
+// Dependencies: [5, 7165, 1364, 7172, 2]
 
-// Module 7167 (SystemResources)
-import ProcessUtilsDefault from "ProcessUtils" /* 1358 */;
-import Histogram from "Histogram" /* 7161 */;
-import DeviceState from "DeviceState" /* 7168 */;
+// Module 7171 (SystemResources)
+import ProcessUtilsDefault from "ProcessUtils" /* 1364 */;
+import Histogram from "Histogram" /* 7165 */;
+import DeviceState from "DeviceState" /* 7172 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ class SystemResources {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -158,7 +158,7 @@ class SystemResources {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -189,7 +189,7 @@ class SystemResources {
           } else {
             closure_0.lastBattery = value;
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp6) {
           c2 = 3;
@@ -211,7 +211,7 @@ class SystemResources {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

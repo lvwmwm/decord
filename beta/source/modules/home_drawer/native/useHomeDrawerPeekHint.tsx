@@ -1,46 +1,226 @@
-// Module ID: 15657
-// Function ID: 15658
+// Module ID: 15656
+// Function ID: 15657
 // Name: useHomeDrawerPeekHint
-// Dependencies: [32, 19, 4825, 15649, 1074, 2042, 4566, 2029, 1486, 15658, 504, 15651, 4654, 6806, 4837, 5280, 15655, 2]
-// Exports: useHomeDrawerPeekHint
+// Dependencies: [32, 19, 4826, 15649, 1086, 2048, 4570, 2035, 558, 576, 1492, 15657, 504, 15651, 4656, 6807, 4838, 5281, 15654, 2]
 
-// Module 15657 (useHomeDrawerPeekHint)
-import Constants from "Constants" /* 1074 */;
-import dismissible_content from "dismissible_content" /* 2029 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import timing from "timing" /* 4837 */;
-import spring from "spring" /* 5280 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15655 */;
+// Module 15656 (useHomeDrawerPeekHint)
+import Constants from "Constants" /* 1086 */;
+import dismissible_content from "dismissible_content" /* 2035 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import timing from "timing" /* 4838 */;
+import spring from "spring" /* 5281 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15654 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
 import HomeDrawerStore from "HomeDrawerStore" /* 15649 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, set;
+let _require, clearTimeoutResult, current, obj1, ref2, set, tmp3, tmp5;
 
 const ME = Constants.ME;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let c8 = 2000;
 const Easing = ReanimatedRexport.Easing;
-let closure_9 = Easing.inOut(ReanimatedRexport.Easing.cubic);
+const easing = Easing.inOut(ReanimatedRexport.Easing.cubic);
 let closure_10 = [];
 let items = [dismissible_content.DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX];
-let __initData = { code: "function useHomeDrawerPeekHintTsx1(){const{gestureState,panelX,PEEK_HINT_DRAWER_DRAG_THRESHOLD}=this.__closure;return gestureState.get().active&&panelX.get()>PEEK_HINT_DRAWER_DRAG_THRESHOLD;}" };
-let __initData2 = { code: "function useHomeDrawerPeekHintTsx2(isDragged,wasDragged){const{isPeekGranted,runOnJS,handleDrawerDragged}=this.__closure;if(!isPeekGranted||wasDragged==null)return;if(isDragged&&!wasDragged){runOnJS(handleDrawerDragged)();}}" };
-let result = size.fileFinishedImporting("modules/home_drawer/native/useHomeDrawerPeekHint.tsx");
-
-export const PEEK_HINT_DISTANCE = 40;
-export const useHomeDrawerPeekHint = function useHomeDrawerPeekHint(enablePeekHint, sharedValue8) {
-  let current;
-  let easing;
+let ref = { code: "function useHomeDrawerPeekHintTsx1(){const{gestureState,panelX,PEEK_HINT_DRAWER_DRAG_THRESHOLD}=this.__closure;return gestureState.get().active&&panelX.get()>PEEK_HINT_DRAWER_DRAG_THRESHOLD;}" };
+let closure_13 = { code: "function useHomeDrawerPeekHintTsx2(isDragged,wasDragged){const{isPeekGranted,runOnJS,handleDrawerDragged}=this.__closure;if(!isPeekGranted||wasDragged==null){return;}if(isDragged&&!wasDragged){runOnJS(handleDrawerDragged)();}}" };
+let __initData = { code: "function useHomeDrawerPeekHintTsx3(){const{gestureState,panelX,PEEK_HINT_DRAWER_DRAG_THRESHOLD}=this.__closure;return gestureState.get().active&&panelX.get()>PEEK_HINT_DRAWER_DRAG_THRESHOLD;}" };
+let __initData2 = { code: "function useHomeDrawerPeekHintTsx4(isDragged,wasDragged){const{isPeekGranted,runOnJS,handleDrawerDragged}=this.__closure;if(!isPeekGranted||wasDragged==null)return;if(isDragged&&!wasDragged){runOnJS(handleDrawerDragged)();}}" };
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let items;
   let noteInteraction;
-  let ref2;
-  let ref3;
-  let tmp = enablePeekHint;
-  _require = sharedValue8;
+  let panelX;
+  let ref4;
+  let tmp7;
+  let tmp8;
+  _require = arg1;
+  let tmp = _require;
+  let tmp2 = panelX;
+  let obj = require("react");
+  const cResult = obj.c(26);
+  const tmp4 = noteInteraction();
+  panelX = tmp4.panelX;
+  const gestureState = tmp4.gestureState;
+  const lastInteractionAt = tmp4.lastInteractionAt;
+  const isPanelTouchActive = tmp4.isPanelTouchActive;
+  noteInteraction = tmp4.noteInteraction;
+  let obj2 = require("Link");
+  const isFocused = obj2.useIsFocused();
+  const obj3 = require("useDrawerState");
+  const drawerOpen = obj3.useDrawerOpen(arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    items = [isPanelTouchActive];
+    class T {
+      constructor() {
+        return isPanelTouchActive.useReducedMotion;
+      }
+    }
+    cResult[0] = items;
+    cResult[1] = T;
+    tmp7 = items;
+    tmp8 = T;
+  } else {
+    [tmp7, tmp8] = cResult;
+  }
+  const tmpResult = tmp(tmp2[12]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
+  const tmpResult4 = tmp(tmp2[13]);
+  const first = gestureState(tmpResult4.useGuildsRouteGuildAndChannelId(), 1)[0];
+  let tmp14 = arg0;
+  const tmpResult5 = tmp(tmp2[14]);
+  const tmp13 = !tmpResult5.useIsDismissibleContentDismissed_UNSAFE(tmp(tmp2[7]).DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX);
+  if (arg0) {
+    tmp14 = isFocused;
+  }
+  if (tmp14) {
+    tmp14 = null != first;
+  }
+  if (tmp14) {
+    tmp14 = first !== drawerOpen;
+  }
+  if (tmp14) {
+    tmp14 = !drawerOpen;
+  }
+  if (tmp14) {
+    tmp14 = !stateFromStores;
+  }
+  if (tmp14) {
+    tmp14 = tmp13;
+  }
+  let closure_7 = tmp14;
+  ref = lastInteractionAt.useRef(false);
+  const tmp11Result = gestureState(lastInteractionAt.useState(false), 2);
+  const first1 = tmp11Result[0];
+  closure_10 = tmp19;
+  const tmp20 = first1 && !tmp14;
+  if (tmp20) {
+    tmp11Result[1](false);
+  }
+  tmp(tmp2[15]);
+  if (first1) {
+    let tmp24;
+    if (tmp14) {
+      tmp24 = items;
+    }
+    const tmp11Result2 = gestureState(tmp23(tmp24, undefined, true), 2);
+    class T {
+      constructor() {
+        return isPanelTouchActive.useReducedMotion;
+      }
+    }
+    items = tmp27;
+    const first2 = tmp11Result2[0];
+    ref = obj7.useRef(null);
+    const ref3 = obj7.useRef(null);
+    __initData = obj7.useRef(false);
+    const ref5 = obj7.useRef(null);
+    if (cResult[2] !== arg1) {
+      class L {
+        constructor() {
+          tmp = closure_12;
+          if (null != closure_12.current) {
+            tmp2 = globalThis;
+            _clearTimeout = clearTimeout;
+            clearTimeoutResult = clearTimeout(tmp.current);
+            tmp.current = null;
+          }
+          closure_14.current = true;
+          set = closure_0.set;
+          obj = closure_0(closure_1[16]);
+          obj1 = { duration: 1500, easing: closure_9 };
+          result = set(obj.withTiming(40, obj1));
+          closure_13.current = setTimeout(() => { /* body not rendered: F143617 */ }, 2500);
+          return;
+        }
+      }
+      cResult[2] = arg1;
+      class T {
+        constructor() {
+          return isPanelTouchActive.useReducedMotion;
+        }
+      }
+    } else {
+      class L {
+        constructor() {
+          tmp = closure_12;
+          if (null != closure_12.current) {
+            tmp2 = globalThis;
+            _clearTimeout = clearTimeout;
+            clearTimeoutResult = clearTimeout(tmp.current);
+            tmp.current = null;
+          }
+          closure_14.current = true;
+          set = closure_0.set;
+          obj = closure_0(closure_1[16]);
+          obj1 = { duration: 1500, easing: closure_9 };
+          result = set(obj.withTiming(40, obj1));
+          closure_13.current = setTimeout(() => { /* body not rendered: F143617 */ }, 2500);
+          return;
+        }
+      }
+    }
+    const L = tmp29;
+    const tmp30 = first2 === tmp(tmp2[7]).DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX;
+    let closure_17 = tmp30;
+    if (cResult[4] === tmp30) {
+      class L {
+        constructor() {
+          tmp = closure_12;
+          if (null != closure_12.current) {
+            tmp2 = globalThis;
+            _clearTimeout = clearTimeout;
+            clearTimeoutResult = clearTimeout(tmp.current);
+            tmp.current = null;
+          }
+          closure_14.current = true;
+          set = closure_0.set;
+          obj = closure_0(closure_1[16]);
+          obj1 = { duration: 1500, easing: closure_9 };
+          result = set(obj.withTiming(40, obj1));
+          closure_13.current = setTimeout(() => { /* body not rendered: F143617 */ }, 2500);
+          return;
+        }
+      }
+    }
+    class V {
+      constructor() {
+        tmp = closure_17;
+        if (tmp) {
+          tmp2 = closure_14;
+          tmp = !closure_14.current;
+        }
+        if (tmp) {
+          tmp3 = closure_15;
+          tmp4 = closure_11;
+          closure_15.current = closure_11;
+          tmp5 = closure_16;
+          tmp6 = closure_16();
+        }
+        return;
+      }
+    }
+    const items1 = [tmp30, tmp29, tmp27];
+    cResult[4] = tmp30;
+    cResult[5] = tmp27;
+    cResult[6] = tmp29;
+    cResult[7] = V;
+    cResult[8] = items1;
+  }
+  tmp24 = closure_10;
+}) : ((arg0, arg1) => {
+  let closure_0;
+  let noteInteraction;
+  let ref4;
+  let ref5;
+  let tmp = arg0;
+  _require = arg1;
   let tmp2 = noteInteraction();
   const panelX = tmp2.panelX;
   const gestureState = tmp2.gestureState;
@@ -51,15 +231,15 @@ export const useHomeDrawerPeekHint = function useHomeDrawerPeekHint(enablePeekHi
   let obj = require("Link");
   const isFocused = obj.useIsFocused();
   let obj2 = require("useDrawerState");
-  const drawerOpen = obj2.useDrawerOpen(enablePeekHint);
-  items = [isPanelTouchActive];
+  const drawerOpen = obj2.useDrawerOpen(arg0);
+  const items = [isPanelTouchActive];
   const obj3 = require("get initialized");
   const stateFromStores = obj3.useStateFromStores(items, () => isPanelTouchActive.useReducedMotion);
   const obj4 = require("useGuildsRouteGuildId");
   const first = gestureState(obj4.useGuildsRouteGuildAndChannelId(), 1)[0];
   const obj5 = require("DismissibleContentUnsafeUtils");
   const tmp10 = !obj5.useIsDismissibleContentDismissed_UNSAFE(require("dismissible_content").DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX);
-  if (enablePeekHint) {
+  if (arg0) {
     tmp = isFocused;
   }
   if (tmp) {
@@ -78,7 +258,7 @@ export const useHomeDrawerPeekHint = function useHomeDrawerPeekHint(enablePeekHi
     tmp = tmp10;
   }
   let closure_7 = tmp;
-  const ref = lastInteractionAt.useRef(false);
+  ref = lastInteractionAt.useRef(false);
   const tmp8Result = gestureState(lastInteractionAt.useState(false), 2);
   const first1 = tmp8Result[0];
   closure_10 = tmp15;
@@ -95,11 +275,11 @@ export const useHomeDrawerPeekHint = function useHomeDrawerPeekHint(enablePeekHi
     const tmp8Result2 = gestureState(tmp19(tmp20, undefined, true), 2);
     current = tmp23;
     const first2 = tmp8Result2[0];
-    __initData = obj6.useRef(null);
+    ref2 = obj6.useRef(null);
+    const ref3 = obj6.useRef(null);
+    __initData = obj6.useRef(false);
     __initData2 = obj6.useRef(null);
-    const ref4 = obj6.useRef(false);
-    const ref5 = obj6.useRef(null);
-    const items1 = [sharedValue8];
+    const items1 = [arg1];
     const callback = obj6.useCallback(() => {
       if (null != ref2.current) {
         const _clearTimeout = clearTimeout;
@@ -107,7 +287,7 @@ export const useHomeDrawerPeekHint = function useHomeDrawerPeekHint(enablePeekHi
         ref2.current = null;
       }
       ref4.current = true;
-      set = sharedValue8.set;
+      set = closure_0.set;
       let obj = timing;
       const obj2 = { duration: 1500, easing };
       let result = set(obj.withTiming(40, obj2));
@@ -115,8 +295,8 @@ export const useHomeDrawerPeekHint = function useHomeDrawerPeekHint(enablePeekHi
         ref3.current = null;
         ref4.current = false;
         set = closure_1_0.set;
-        const obj = closure_0(panelX[15]);
-        const result = set(obj.withSpring(0, closure_0(panelX[16]).HOME_DRAWER_FLING_PHYSICS));
+        const obj = closure_0(panelX[17]);
+        const result = set(obj.withSpring(0, closure_0(panelX[18]).HOME_DRAWER_FLING_PHYSICS));
         current = ref.current;
         if (current != null) {
           current(constants.AUTO_DISMISS);
@@ -134,7 +314,7 @@ export const useHomeDrawerPeekHint = function useHomeDrawerPeekHint(enablePeekHi
         callback();
       }
     }, items2);
-    const items3 = [sharedValue8];
+    const items3 = [arg1];
     const callback1 = obj6.useCallback(() => {
       if (null != ref2.current) {
         const _clearTimeout = clearTimeout;
@@ -148,7 +328,7 @@ export const useHomeDrawerPeekHint = function useHomeDrawerPeekHint(enablePeekHi
       }
       if (ref4.current) {
         tmp7.current = false;
-        set = sharedValue8.set;
+        set = closure_0.set;
         const obj = spring;
         const result = set(obj.withSpring(0, useHomeDrawerGesture.HOME_DRAWER_FLING_PHYSICS));
       }
@@ -229,7 +409,7 @@ export const useHomeDrawerPeekHint = function useHomeDrawerPeekHint(enablePeekHi
     }
     const obj7 = { gestureState, panelX, PEEK_HINT_DRAWER_DRAG_THRESHOLD: 8 };
     V.__closure = obj7;
-    V.__workletHash = 15765003051494;
+    V.__workletHash = 13898630050852;
     V.__initData = __initData;
     class Q {
       constructor(arg0, arg1) {
@@ -242,9 +422,13 @@ export const useHomeDrawerPeekHint = function useHomeDrawerPeekHint(enablePeekHi
     }
     const useAnimatedReaction = tmp3Result2.useAnimatedReaction;
     Q.__closure = { isPeekGranted: tmp26, runOnJS: require("ReanimatedRexport").runOnJS, handleDrawerDragged: callback2 };
-    Q.__workletHash = 10054961085184;
+    Q.__workletHash = 10590232595782;
     Q.__initData = __initData2;
     const obj8 = { isPeekGranted: tmp26, runOnJS: require("ReanimatedRexport").runOnJS, handleDrawerDragged: callback2 };
     const animatedReaction = useAnimatedReaction(V, Q);
   }
-};
+});
+let result = size.fileFinishedImporting("modules/home_drawer/native/useHomeDrawerPeekHint.tsx");
+
+export const PEEK_HINT_DISTANCE = 40;
+export const useHomeDrawerPeekHint = tmp2;

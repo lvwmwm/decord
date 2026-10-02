@@ -1,10 +1,10 @@
-// Module ID: 5486
-// Function ID: 5487
+// Module ID: 5487
+// Function ID: 5488
 // Name: JxrUploadConversionExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1441, 2]
 
-// Module 5486 (JxrUploadConversionExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 5487 (JxrUploadConversionExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-09-jxr-upload-conversion", kind: "user", defaultConfig: { enabled: false, quality: 85 }, variations: { 0: { enabled: false, quality: 85 }, 1: { enabled: true, quality: 85, maxFileSizeBytes: 52428800 } } };

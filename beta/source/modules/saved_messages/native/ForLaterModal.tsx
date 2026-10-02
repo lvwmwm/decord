@@ -1,23 +1,23 @@
-// Module ID: 7287
-// Function ID: 7288
+// Module ID: 7291
+// Function ID: 7292
 // Name: ForLaterModal
-// Dependencies: [19, 17, 21, 4836, 576, 1613, 1115, 7285, 5943, 7288, 1364, 5936, 5039, 12859, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1619, 1127, 7289, 7292, 1370, 5933, 5040, 5942, 12861, 2]
 
-// Module 7287 (ForLaterModal)
+// Module 7291 (ForLaterModal)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import HeaderShared from "HeaderShared" /* 7288 */;
-import ForLaterScreenDefault from "ForLaterScreen" /* 12859 */;
+import nativeDefault from "native" /* 588 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import HeaderShared from "HeaderShared" /* 7292 */;
+import ForLaterScreenDefault from "ForLaterScreen" /* 12861 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, type;
 
 let closure_4;
 let hasOwnProperty;
@@ -33,9 +33,118 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingLeft: nativeDefault.space.PX_16 };
 obj4 = { paddingRight: nativeDefault.space.PX_16 };
 let closure_6 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/saved_messages/native/ForLaterModal.tsx");
-
-export default function ForLaterModal(type) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+  let items;
+  let title;
+  let tmp10;
+  let tmp12;
+  let tmp6;
+  let tmp9;
+  let obj = require("react");
+  const cResult = obj.c(19);
+  type = type.type;
+  const tmp4 = closure_6();
+  const top = useSafeAreaInsetsDefault().top;
+  if (cResult[0] !== type) {
+    let aUXxzT;
+    const intl = tmp(1127).intl;
+    const string = intl.string;
+    if (type === require("SavedMessagesTypes").SavedMessageSortTypes.REMINDER) {
+      aUXxzT = tmp(1127).t.aUXxzT;
+    } else {
+      aUXxzT = tmp(1127).t["2pAkDA"];
+    }
+    const stringResult = string(aUXxzT);
+    cResult[0] = type;
+    cResult[1] = stringResult;
+    tmp6 = stringResult;
+  } else {
+    tmp6 = cResult[1];
+  }
+  _require = tmp6;
+  const modal = tmp4.modal;
+  if (cResult[2] !== tmp6) {
+    const fn = function u() {
+      const obj = { title };
+      return React3(HeaderShared.GenericHeaderTitle, obj);
+    };
+    cResult[2] = tmp6;
+    cResult[3] = fn;
+    tmp9 = fn;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] !== top) {
+    let num5 = 0;
+    const tmpResult = require("PlatformUtils");
+    if (!tmpResult.isIOS()) {
+      num5 = top;
+    }
+    cResult[4] = top;
+    cResult[5] = num5;
+    tmp10 = num5;
+  } else {
+    tmp10 = cResult[5];
+  }
+  const sum = tmp10 + tmp5(588).space.PX_8;
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult2 = require("NavigatorHeader");
+    const headerCloseButton = tmpResult2.getHeaderCloseButton(tmp5(5040).pop);
+    cResult[6] = headerCloseButton;
+    tmp12 = headerCloseButton;
+  } else {
+    tmp12 = cResult[6];
+  }
+  if (cResult[7] === tmp4.headerLeftContainer) {
+    if (cResult[8] === tmp4.headerRightContainer) {
+      if (cResult[9] === tmp9) {
+        if (cResult[10] === sum) {
+          let tmp14;
+          let tmp16;
+          if (cResult[11] === tmp6) {
+            tmp14 = cResult[12];
+          }
+          if (cResult[13] !== type) {
+            const obj2 = { type, onClose: ModalActionCreatorsDefault.pop };
+            const tmp5Result = ForLaterScreenDefault;
+            const tmp19 = closure_4(tmp5Result, obj2, type);
+            cResult[13] = type;
+            cResult[14] = tmp19;
+            tmp16 = tmp19;
+          } else {
+            tmp16 = cResult[14];
+          }
+          if (cResult[15] === tmp4.modal) {
+            if (cResult[16] === tmp14) {
+              let tmp20;
+              if (cResult[17] === tmp16) {
+                tmp20 = cResult[18];
+              }
+              return tmp20;
+            }
+          }
+          const obj3 = { style: modal, children: items };
+          items = [tmp14, tmp16];
+          const tmp23 = closure_5(View, obj3);
+          cResult[15] = tmp4.modal;
+          cResult[16] = tmp14;
+          cResult[17] = tmp16;
+          cResult[18] = tmp23;
+          tmp20 = tmp23;
+        }
+      }
+    }
+  }
+  const obj4 = { title: tmp6, headerTitle: tmp9, headerTitleAlign: "center", headerStatusBarHeight: sum, headerLeft: tmp12, headerLeftContainerStyle: tmp4.headerLeftContainer, headerRightContainerStyle: tmp4.headerRightContainer };
+  const tmp15 = closure_4(require("module_5942").Header, obj4);
+  cResult[7] = tmp4.headerLeftContainer;
+  cResult[8] = tmp4.headerRightContainer;
+  cResult[9] = tmp9;
+  cResult[10] = sum;
+  cResult[11] = tmp6;
+  cResult[12] = tmp15;
+  tmp14 = tmp15;
+}) : ((type) => {
   let aUXxzT;
   let items;
   let num;
@@ -48,9 +157,9 @@ export default function ForLaterModal(type) {
   const intl = require("intl").intl;
   const string = intl.string;
   if (type === require("SavedMessagesTypes").SavedMessageSortTypes.REMINDER) {
-    aUXxzT = tmp4(1115).t.aUXxzT;
+    aUXxzT = tmp4(1127).t.aUXxzT;
   } else {
-    aUXxzT = tmp4(1115).t["2pAkDA"];
+    aUXxzT = tmp4(1127).t["2pAkDA"];
   }
   const stringResult = string(aUXxzT);
   _require = stringResult;
@@ -67,7 +176,7 @@ export default function ForLaterModal(type) {
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null
   };
-  const Header = tmp4(5943).Header;
+  const Header = tmp4(5942).Header;
   num = 0;
   const tmp4Result = require("PlatformUtils");
   const tmp7 = closure_5;
@@ -82,4 +191,7 @@ export default function ForLaterModal(type) {
   const tmp2Result = ForLaterScreenDefault;
   items[1] = closure_4(tmp2Result, obj4, type);
   return tmp7(tmp8, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/saved_messages/native/ForLaterModal.tsx");
+
+export default tmp5;

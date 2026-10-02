@@ -1,22 +1,53 @@
-// Module ID: 17454
-// Function ID: 17455
+// Module ID: 17456
+// Function ID: 17457
 // Name: GuildSettingsModalMembersWrapper
-// Dependencies: [19, 21, 6682, 16220, 16222, 2]
+// Dependencies: [19, 21, 558, 576, 6683, 16222, 16224, 2]
 
-// Module 17454 (GuildSettingsModalMembersWrapper)
+// Module 17456 (GuildSettingsModalMembersWrapper)
 import Fragment from "Fragment" /* 21 */;
-import canReviewGuildMemberApplications from "canReviewGuildMemberApplications" /* 6682 */;
+import react2 from "react" /* 576 */;
+import canReviewGuildMemberApplications from "canReviewGuildMemberApplications" /* 6683 */;
+import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 16222 */;
+import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 16224 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let guildId;
 
 const jsx = Fragment.jsx;
-const memoResult = react.memo((guildId) => {
+const memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let tmp3;
+  const obj = react2;
+  const cResult = obj.c(4);
+  guildId = guildId.guildId;
+  const obj2 = canReviewGuildMemberApplications;
+  if (obj2.useCanReviewGuildMemberApplications(guildId)) {
+    let tmp7;
+    if (cResult[0] !== guildId) {
+      const tmp10 = jsx(GuildSettingsModalMembersWithTabsDefault, { guildId });
+      cResult[0] = guildId;
+      cResult[1] = tmp10;
+      tmp7 = tmp10;
+    } else {
+      tmp7 = cResult[1];
+    }
+    tmp3 = tmp7;
+  } else if (cResult[2] !== guildId) {
+    const tmp6 = jsx(GuildSettingsModalMembersDefault, { guildId });
+    cResult[2] = guildId;
+    cResult[3] = tmp6;
+    tmp3 = tmp6;
+  } else {
+    tmp3 = cResult[3];
+  }
+  return tmp3;
+}) : ((guildId) => {
   guildId = guildId.guildId;
   const obj = canReviewGuildMemberApplications;
-  return jsx(importDefault(obj.useCanReviewGuildMemberApplications(guildId) ? 16220 : 16222), { guildId });
-});
+  return jsx(importDefault(obj.useCanReviewGuildMemberApplications(guildId) ? 16222 : 16224), { guildId });
+}));
 const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalMembersWrapper.tsx");
 
 export default memoResult;

@@ -1,11 +1,11 @@
-// Module ID: 7677
-// Function ID: 7678
+// Module ID: 7681
+// Function ID: 7682
 // Name: ApplicationPresenceUtils
-// Dependencies: [2045, 2]
+// Dependencies: [2051, 2]
 // Exports: shouldDisableUserPresenceInChannel
 
-// Module 7677 (ApplicationPresenceUtils)
-import ChannelStore from "ChannelStore" /* 2045 */;
+// Module 7681 (ApplicationPresenceUtils)
+import ChannelStore from "ChannelStore" /* 2051 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/applications/ApplicationPresenceUtils.tsx");

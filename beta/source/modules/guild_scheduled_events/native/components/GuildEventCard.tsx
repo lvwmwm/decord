@@ -1,27 +1,108 @@
-// Module ID: 9263
-// Function ID: 9264
+// Module ID: 9241
+// Function ID: 9242
 // Name: GuildEventCard
-// Dependencies: [19, 17, 4859, 6946, 2051, 21, 4836, 576, 9062, 5745, 504, 8982, 5919, 7858, 9087, 2]
+// Dependencies: [19, 17, 4860, 6950, 2057, 21, 4837, 588, 558, 576, 9039, 5746, 504, 8957, 7862, 9064, 5918, 2]
 
-// Module 9263 (GuildEventCard)
+// Module 9241 (GuildEventCard)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;
-import ButtonGroup2 from "ButtonGroup" /* 5745 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6946 */;
-import GuildEventCardComponents from "GuildEventCardComponents" /* 9062 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
+import ButtonGroup2 from "ButtonGroup" /* 5746 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6950 */;
+import GuildEventCardComponents from "GuildEventCardComponents" /* 9039 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let tmp2;
 
 let metroImportAll;
 let metroImportDefault;
 let obj2;
-function GuildEventCardControls(onCloseAction) {
+const View = react_native.View;
+let closure_5 = GuildScheduledEventStore.isGuildScheduledEventActive;
+const set = GuildScheduledEventsConstants.AGE_VERIFICATION_STAGE_CHANNEL_TYPES;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { actionContainer: obj2 };
+obj2 = { paddingTop: nativeDefault.space.PX_16, paddingBottom: 0 };
+const styles = createStyles.createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let event;
+  let isConnected;
+  let items;
+  let onCloseAction;
+  const obj = react2;
+  const cResult = obj.c(14);
+  ({ event, isConnected, onCloseAction } = arg0);
+  const tmp4 = styles();
+  const obj2 = GuildEventCardComponents;
+  const primaryActionButtonType = obj2.usePrimaryActionButtonType(event, isConnected);
+  if (cResult[0] === event) {
+    if (cResult[1] === isConnected) {
+      let tmp6;
+      if (cResult[2] === onCloseAction) {
+        tmp6 = cResult[3];
+      }
+      if (cResult[4] === event) {
+        let tmp8;
+        let tmp11;
+        if (cResult[5] === primaryActionButtonType) {
+          tmp8 = cResult[6];
+        }
+        if (cResult[7] !== event) {
+          const obj3 = { event };
+          const tmp13 = metroImportDefault(GuildEventCardComponents.GuildEventShareAction, obj3);
+          cResult[7] = event;
+          cResult[8] = tmp13;
+          tmp11 = tmp13;
+        } else {
+          tmp11 = cResult[8];
+        }
+        if (cResult[9] === tmp4.actionContainer) {
+          if (cResult[10] === tmp6) {
+            if (cResult[11] === tmp8) {
+              let tmp14;
+              if (cResult[12] === tmp11) {
+                tmp14 = cResult[13];
+              }
+              return tmp14;
+            }
+          }
+        }
+        const obj4 = { direction: "horizontal", style: tmp4.actionContainer, children: items };
+        items = [tmp6, tmp8, tmp11];
+        const tmp16 = metroImportAll(ButtonGroup2.ButtonGroup, obj4);
+        cResult[9] = tmp4.actionContainer;
+        cResult[10] = tmp6;
+        cResult[11] = tmp8;
+        cResult[12] = tmp11;
+        cResult[13] = tmp16;
+        tmp14 = tmp16;
+      }
+      let tmp9 = primaryActionButtonType === tmp(9039).PrimaryActionType.START;
+      if (tmp9) {
+        const obj5 = { event };
+        tmp9 = metroImportDefault(tmp(9039).GuildEventCardRSVPAction, obj5);
+      }
+      cResult[4] = event;
+      cResult[5] = primaryActionButtonType;
+      cResult[6] = tmp9;
+      tmp8 = tmp9;
+    }
+  }
+  const tmp7 = metroImportDefault(GuildEventCardComponents.GuildEventCardPrimaryAction, { event, onCloseAction, isConnected });
+  cResult[0] = event;
+  cResult[1] = isConnected;
+  cResult[2] = onCloseAction;
+  cResult[3] = tmp7;
+  tmp6 = tmp7;
+}) : ((onCloseAction) => {
   let event;
   let isConnected;
   let items;
@@ -37,20 +118,272 @@ function GuildEventCardControls(onCloseAction) {
   const tmp5 = metroImportAll;
   if (tmp6Result) {
     const obj3 = { event };
-    tmp6Result = tmp6(tmp2(9062).GuildEventCardRSVPAction, obj3);
+    tmp6Result = tmp6(tmp2(9039).GuildEventCardRSVPAction, obj3);
   }
   items[1] = tmp6Result;
   items[2] = metroImportDefault(GuildEventCardComponents.GuildEventShareAction, { event });
   return tmp5(ButtonGroup, obj2);
-}
-const View = react_native.View;
-let closure_5 = GuildScheduledEventStore.isGuildScheduledEventActive;
-const set = GuildScheduledEventsConstants.AGE_VERIFICATION_STAGE_CHANNEL_TYPES;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let obj = { actionContainer: obj2 };
-obj2 = { paddingTop: nativeDefault.space.PX_16, paddingBottom: 0 };
-const styles = createStyles.createStyles(obj);
-const memoResult = react.memo((event) => {
+});
+const memo = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
+  let channel_id;
+  let first;
+  let hideAgeVerificationNotice;
+  let hideControls;
+  let isNew;
+  let onCloseAction;
+  let tmp8;
+  let tmp9;
+  const tmp = event;
+  let obj = event(channel_id[9]);
+  const cResult = obj.c(44);
+  event = event.event;
+  const onPress = event.onPress;
+  ({ onCloseAction, hideControls, hideAgeVerificationNotice, isNew } = event);
+  channel_id = event.channel_id;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [RTCConnectionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channel_id) {
+    class C {
+      constructor() {
+        obj = closure_4;
+        isConnectedResult = closure_4.isConnected();
+        if (isConnectedResult) {
+          tmp2 = channel_id;
+          isConnectedResult = obj.getChannelId() === channel_id;
+        }
+        return isConnectedResult;
+      }
+    }
+    const items1 = [channel_id];
+    cResult[1] = channel_id;
+    cResult[2] = C;
+    cResult[3] = items1;
+    tmp9 = items1;
+    tmp8 = C;
+  } else {
+    class C {
+      constructor() {
+        obj = closure_4;
+        isConnectedResult = closure_4.isConnected();
+        if (isConnectedResult) {
+          tmp2 = channel_id;
+          isConnectedResult = obj.getChannelId() === channel_id;
+        }
+        return isConnectedResult;
+      }
+    }
+    tmp9 = cResult[3];
+  }
+  let tmpResult = tmp(tmp2[12]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
+  if (cResult[4] === event) {
+    class C {
+      constructor() {
+        obj = closure_4;
+        isConnectedResult = closure_4.isConnected();
+        if (isConnectedResult) {
+          tmp2 = channel_id;
+          isConnectedResult = obj.getChannelId() === channel_id;
+        }
+        return isConnectedResult;
+      }
+    }
+    if (cResult[7] !== event.recurrence_rule) {
+      class C {
+        constructor() {
+          obj = closure_4;
+          isConnectedResult = closure_4.isConnected();
+          if (isConnectedResult) {
+            tmp2 = channel_id;
+            isConnectedResult = obj.getChannelId() === channel_id;
+          }
+          return isConnectedResult;
+        }
+      }
+      const result = obj3.recurrenceRuleFromServer(event.recurrence_rule);
+      class V {
+        constructor() {
+          if (onPress != null) {
+            tmp2 = event;
+            tmpResult = tmp(event);
+          }
+          return;
+        }
+      }
+      cResult[8] = result;
+    } else {
+      class C {
+        constructor() {
+          obj = closure_4;
+          isConnectedResult = closure_4.isConnected();
+          if (isConnectedResult) {
+            tmp2 = channel_id;
+            isConnectedResult = obj.getChannelId() === channel_id;
+          }
+          return isConnectedResult;
+        }
+      }
+    }
+    if (cResult[9] === event) {
+      class C {
+        constructor() {
+          obj = closure_4;
+          isConnectedResult = closure_4.isConnected();
+          if (isConnectedResult) {
+            tmp2 = channel_id;
+            isConnectedResult = obj.getChannelId() === channel_id;
+          }
+          return isConnectedResult;
+        }
+      }
+      if (cResult[12] === event) {
+        class C {
+          constructor() {
+            obj = closure_4;
+            isConnectedResult = closure_4.isConnected();
+            if (isConnectedResult) {
+              tmp2 = channel_id;
+              isConnectedResult = obj.getChannelId() === channel_id;
+            }
+            return isConnectedResult;
+          }
+        }
+        if (cResult[15] === event) {
+          class C {
+            constructor() {
+              obj = closure_4;
+              isConnectedResult = closure_4.isConnected();
+              if (isConnectedResult) {
+                tmp2 = channel_id;
+                isConnectedResult = obj.getChannelId() === channel_id;
+              }
+              return isConnectedResult;
+            }
+          }
+          if (cResult[18] === channel_id) {
+            class C {
+              constructor() {
+                obj = closure_4;
+                isConnectedResult = closure_4.isConnected();
+                if (isConnectedResult) {
+                  tmp2 = channel_id;
+                  isConnectedResult = obj.getChannelId() === channel_id;
+                }
+                return isConnectedResult;
+              }
+            }
+          }
+          let tmp24 = !tmp4;
+          class V {
+            constructor() {
+              if (onPress != null) {
+                tmp2 = event;
+                tmpResult = tmp(event);
+              }
+              return;
+            }
+          }
+          if (tmp24) {
+            class C {
+              constructor() {
+                obj = closure_4;
+                isConnectedResult = closure_4.isConnected();
+                if (isConnectedResult) {
+                  tmp2 = channel_id;
+                  isConnectedResult = obj.getChannelId() === channel_id;
+                }
+                return isConnectedResult;
+              }
+            }
+            const obj2 = { noBackground: true, onConfirmPress: null, channelId: channel_id };
+            class V {
+              constructor() {
+                if (onPress != null) {
+                  tmp2 = event;
+                  tmpResult = tmp(event);
+                }
+                return;
+              }
+            }
+            tmp24 = closure_7(onPress(tmp2[14]), obj2);
+          }
+          cResult[18] = channel_id;
+          cResult[19] = event.entity_type;
+          cResult[20] = undefined !== hideAgeVerificationNotice && hideAgeVerificationNotice;
+          cResult[21] = onCloseAction;
+          cResult[22] = tmp24;
+        }
+        class V {
+          constructor() {
+            if (onPress != null) {
+              tmp2 = event;
+              tmpResult = tmp(event);
+            }
+            return;
+          }
+        }
+        tmp21[0] = event;
+        tmp21[1] = tmp14;
+        cResult[15] = event;
+        cResult[16] = tmp14;
+        cResult[17] = closure_7(tmp(channel_id[10]).GuildEventCardMetaInfo, tmp21);
+        const tmp22 = closure_7(tmp(channel_id[10]).GuildEventCardMetaInfo, tmp21);
+      }
+      class V {
+        constructor() {
+          if (onPress != null) {
+            tmp2 = event;
+            tmpResult = tmp(event);
+          }
+          return;
+        }
+      }
+      tmp17[0] = event;
+      tmp17[1] = undefined !== isNew && isNew;
+      cResult[12] = event;
+      cResult[13] = undefined !== isNew && isNew;
+      cResult[14] = closure_7(tmp(channel_id[10]).GuildEventCardHeader, tmp17);
+      const tmp18 = closure_7(tmp(channel_id[10]).GuildEventCardHeader, tmp17);
+    }
+    class V {
+      constructor() {
+        if (onPress != null) {
+          tmp2 = event;
+          tmpResult = tmp(event);
+        }
+        return;
+      }
+    }
+    cResult[9] = event;
+    cResult[10] = onPress;
+    cResult[11] = V;
+  }
+  let tmp11 = stateFromStores;
+  if (tmp11) {
+    class C {
+      constructor() {
+        obj = closure_4;
+        isConnectedResult = closure_4.isConnected();
+        if (isConnectedResult) {
+          tmp2 = channel_id;
+          isConnectedResult = obj.getChannelId() === channel_id;
+        }
+        return isConnectedResult;
+      }
+    }
+    tmp11 = closure_5(event);
+  }
+  cResult[4] = event;
+  cResult[5] = stateFromStores;
+  cResult[6] = tmp11;
+}) : ((event) => {
   let hideControls;
   let items2;
   let onCloseAction;
@@ -71,7 +404,7 @@ const memoResult = react.memo((event) => {
   }
   const channel_id = event.channel_id;
   const tmp = event;
-  let obj = event(channel_id[10]);
+  let obj = event(channel_id[12]);
   const items = [RTCConnectionStore];
   const items1 = [channel_id];
   let stateFromStores = obj.useStateFromStores(items, () => {
@@ -90,11 +423,11 @@ const memoResult = react.memo((event) => {
       tmp(event);
     }
   }
-  let tmpResult = tmp(tmp2[11]);
+  let tmpResult = tmp(tmp2[13]);
   const result = tmpResult.recurrenceRuleFromServer(event.recurrence_rule);
   const obj2 = { accessible: false, onPress: handlePress, children: tmp7(tmp8, { children: items2 }) };
-  const Card = tmp(tmp2[12]).Card;
-  items2 = [closure_7(tmp(tmp2[8]).GuildEventCardHeader, { event, isNew: flag2 }), closure_7(tmp(tmp2[8]).GuildEventCardMetaInfo, { event, onTitlePress: handlePress }), , , , ];
+  const Card = tmp(tmp2[16]).Card;
+  items2 = [closure_7(tmp(tmp2[10]).GuildEventCardHeader, { event, isNew: flag2 }), closure_7(tmp(tmp2[10]).GuildEventCardMetaInfo, { event, onTitlePress: handlePress }), , , , ];
   let hasItem = !flag;
   tmp7 = closure_8;
   tmp8 = View;
@@ -106,11 +439,11 @@ const memoResult = react.memo((event) => {
     hasItem = tmp6(require("StageChannelAgeVerificationNotice"), obj3);
   }
   items2[2] = hasItem;
-  items2[3] = closure_7(tmp(channel_id[8]).GuildEventSimpleLocation, { event });
+  items2[3] = closure_7(tmp(channel_id[10]).GuildEventSimpleLocation, { event });
   let tmp6Result = null;
   if (!hideControls) {
     const obj4 = { event, onCloseAction, isConnected: stateFromStores };
-    tmp6Result = tmp6(GuildEventCardControls, obj4);
+    tmp6Result = tmp6(closure_10, obj4);
   }
   items2[4] = tmp6Result;
   let tmp6Result2 = null != result;
@@ -131,7 +464,7 @@ const memoResult = react.memo((event) => {
   }
   items2[5] = tmp6Result2;
   return closure_7(Card, obj2);
-});
+}));
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventCard.tsx");
 
 export default memoResult;

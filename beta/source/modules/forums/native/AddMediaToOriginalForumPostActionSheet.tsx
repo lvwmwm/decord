@@ -1,29 +1,29 @@
-// Module ID: 11480
-// Function ID: 11481
+// Module ID: 11356
+// Function ID: 11357
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 2045, 5200, 2067, 5056, 1074, 21, 4836, 576, 7258, 5446, 5474, 4800, 8611, 8608, 11, 5441, 8610, 7184, 1271, 11481, 6876, 7020, 5204, 1115, 504, 6583, 7186, 5450, 6571, 11482, 4832, 5282, 2]
-// Exports: default
+// Dependencies: [32, 5, 19, 17, 2051, 5201, 2073, 5057, 1086, 21, 4837, 588, 7262, 5447, 5475, 4801, 8608, 8605, 11, 5442, 8607, 7188, 1283, 11357, 6880, 7024, 5205, 1127, 558, 576, 504, 6584, 7190, 5451, 11358, 4833, 5283, 6572, 2]
 
-// Module 11480 (AddMediaToOriginalForumPostActionSheet)
+// Module 11356 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import DraftStore from "DraftStore" /* 5200 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 5450 */;
-import tracking_Tracking from "tracking/Tracking" /* 7186 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import nativeDefault from "native" /* 588 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import DraftStore from "DraftStore" /* 5201 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 5451 */;
+import tracking_Tracking from "tracking/Tracking" /* 7190 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import MessageStore from "MessageStore" /* 5056 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import MessageStore from "MessageStore" /* 5057 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, c9, closure_6;
+let BottomSheet, c9, closure_6, setIsUploading, threadId;
 
 let closure_12;
 let closure_14;
@@ -31,6 +31,9 @@ let map1;
 let obj2;
 let obj3;
 let unpackModuleId;
+function _upload() {
+  return obj(...arguments);
+}
 let obj = function _upload2() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let MESSAGE;
@@ -57,7 +60,7 @@ let obj = function _upload2() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c7;
@@ -92,7 +95,7 @@ let obj = function _upload2() {
               anyErrorMessage = undefined;
               c8 = 1;
               c9 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {
@@ -261,7 +264,7 @@ let obj = function _upload2() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp72) {
           closure_6 = tmp72;
@@ -281,7 +284,6 @@ let obj = function _upload2() {
   });
   return obj(...arguments);
 };
-let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
 const DraftType = DraftStore.DraftType;
 ({ AbortCodes: unpackModuleId, Endpoints: closure_12 } = Constants);
@@ -292,10 +294,182 @@ obj2 = { borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, border
 createStyles = createStyles.createStyles;
 obj3 = { borderRadius: nativeDefault.radii.sm };
 let closure_15 = createStyles(obj);
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/forums/native/AddMediaToOriginalForumPostActionSheet.tsx");
-
-export default function AddMediaToOriginalForumPostActionSheet(threadId) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
+  let _slicedToArray;
+  let analyticsLocations;
+  let first;
+  let sendMessage;
+  let stateFromStores1;
+  let tmp11;
+  let tmp13;
+  let tmp14;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp8;
+  let tmp9;
+  const tmp = threadId;
+  const tmp2 = sendMessage;
+  obj = threadId(sendMessage[29]);
+  const cResult = obj.c(71);
+  threadId = threadId.threadId;
+  const attachments = threadId.attachments;
+  sendMessage = threadId.sendMessage;
+  closure_15();
+  const tmp5 = _slicedToArray(stateFromStores1.useState(false), 2);
+  [r10021, _slicedToArray] = tmp5;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [analyticsLocations];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== threadId) {
+    const fn = function u() {
+      return ChannelStore.getChannel(threadId);
+    };
+    const items1 = [threadId];
+    cResult[1] = threadId;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp9 = items1;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult = tmp(tmp2[30]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [GuildStore];
+    cResult[4] = items2;
+    tmp11 = items2;
+  } else {
+    tmp11 = cResult[4];
+  }
+  if (cResult[5] !== stateFromStores) {
+    class B {
+      constructor() {
+        let guildId;
+        const getGuild = GuildStore.getGuild;
+        obj = stateFromStores;
+        if (stateFromStores != null) {
+          guildId = obj.getGuildId();
+        }
+        return getGuild(guildId);
+      }
+    }
+    const items3 = [stateFromStores];
+    cResult[5] = stateFromStores;
+    cResult[6] = B;
+    cResult[7] = items3;
+    tmp14 = items3;
+    tmp13 = B;
+  } else {
+    class B {
+      constructor() {
+        let guildId;
+        const getGuild = GuildStore.getGuild;
+        obj = stateFromStores;
+        if (stateFromStores != null) {
+          guildId = obj.getGuildId();
+        }
+        return getGuild(guildId);
+      }
+    }
+    tmp14 = cResult[7];
+  }
+  const tmpResult3 = tmp(tmp2[30]);
+  stateFromStores1 = tmpResult3.useStateFromStores(tmp11, tmp13, tmp14);
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class B {
+      constructor() {
+        let guildId;
+        const getGuild = GuildStore.getGuild;
+        obj = stateFromStores;
+        if (stateFromStores != null) {
+          guildId = obj.getGuildId();
+        }
+        return getGuild(guildId);
+      }
+    }
+    const items4 = [MessageStore];
+    cResult[8] = items4;
+    tmp16 = items4;
+  } else {
+    class B {
+      constructor() {
+        let guildId;
+        const getGuild = GuildStore.getGuild;
+        obj = stateFromStores;
+        if (stateFromStores != null) {
+          guildId = obj.getGuildId();
+        }
+        return getGuild(guildId);
+      }
+    }
+  }
+  if (cResult[9] !== threadId) {
+    class L {
+      constructor() {
+        const getMessage = MessageStore.getMessage;
+        obj = SnowflakeUtilsDefault;
+        return getMessage(threadId, obj.castChannelIdAsMessageId(threadId));
+      }
+    }
+    const items5 = [threadId];
+    cResult[9] = threadId;
+    cResult[10] = L;
+    cResult[11] = items5;
+    tmp18 = items5;
+    tmp17 = L;
+  } else {
+    class L {
+      constructor() {
+        const getMessage = MessageStore.getMessage;
+        obj = SnowflakeUtilsDefault;
+        return getMessage(threadId, obj.castChannelIdAsMessageId(threadId));
+      }
+    }
+    tmp18 = cResult[11];
+  }
+  const tmpResult4 = tmp(tmp2[30]);
+  const stateFromStores2 = tmpResult4.useStateFromStores(tmp16, tmp17, tmp18);
+  analyticsLocations = attachments(tmp2[31])().analyticsLocations;
+  if (cResult[12] === analyticsLocations) {
+    class L {
+      constructor() {
+        const getMessage = MessageStore.getMessage;
+        obj = SnowflakeUtilsDefault;
+        return getMessage(threadId, obj.castChannelIdAsMessageId(threadId));
+      }
+    }
+  }
+  class D {
+    constructor() {
+      if (null != stateFromStores) {
+        if (null != stateFromStores2) {
+          if (null != stateFromStores1) {
+            const obj2 = tracking_Tracking;
+            const result = obj2.trackForumAddMediaToOriginalPostClicked({ added: true });
+            const obj3 = { threadId, attachments, setIsUploading: _slicedToArray, guild: tmp2, analyticsLocations };
+            _upload(obj3);
+          }
+        }
+      }
+      obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
+    }
+  }
+  cResult[12] = analyticsLocations;
+  cResult[13] = attachments;
+  cResult[14] = stateFromStores2;
+  cResult[15] = stateFromStores1;
+  cResult[16] = stateFromStores;
+  cResult[17] = threadId;
+  cResult[18] = D;
+}) : ((threadId) => {
   let BaseTextButton;
   let BaseTextButton2;
   let c3;
@@ -310,24 +484,23 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
   let obj14;
   let obj6;
   let obj8;
-  let setIsUploading;
   let tmp12;
   let tmp3;
   threadId = threadId.threadId;
   const attachments = threadId.attachments;
   const sendMessage = threadId.sendMessage;
-  _slicedToArray = undefined;
+  setIsUploading = undefined;
   let stateFromStores1;
   let analyticsLocations;
   c8 = undefined;
   const tmp = closure_15();
-  const tmp2 = _slicedToArray(stateFromStores1.useState(false), 2);
+  const tmp2 = setIsUploading(stateFromStores1.useState(false), 2);
   [tmp3, c3] = tmp2;
-  obj = threadId(sendMessage[28]);
+  obj = threadId(sendMessage[30]);
   const items = [analyticsLocations];
   const items1 = [threadId];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(threadId), items1);
-  let obj2 = threadId(sendMessage[28]);
+  let obj2 = threadId(sendMessage[30]);
   const items2 = [GuildStore];
   const items3 = [stateFromStores];
   stateFromStores1 = obj2.useStateFromStores(items2, () => {
@@ -339,7 +512,7 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
     }
     return getGuild(guildId);
   }, items3);
-  let obj3 = threadId(sendMessage[28]);
+  let obj3 = threadId(sendMessage[30]);
   const items4 = [MessageStore];
   const items5 = [threadId];
   const stateFromStores2 = obj3.useStateFromStores(items4, () => {
@@ -347,13 +520,10 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
     obj = SnowflakeUtilsDefault;
     return getMessage(threadId, obj.castChannelIdAsMessageId(threadId));
   }, items5);
-  analyticsLocations = attachments(sendMessage[29])().analyticsLocations;
+  analyticsLocations = attachments(sendMessage[31])().analyticsLocations;
   const items6 = [stateFromStores, stateFromStores1, stateFromStores2, threadId, attachments, analyticsLocations];
   const items7 = [sendMessage];
   const callback = stateFromStores1.useCallback(() => {
-    function _upload() {
-      return closure_1_16(...arguments);
-    }
     if (null != stateFromStores) {
       if (null != stateFromStores2) {
         if (null != stateFromStores1) {
@@ -374,9 +544,9 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
     obj2.hideActionSheet();
     sendMessage();
   }, items7);
-  [tmp12, c8] = _slicedToArray(stateFromStores1.useState(null), 2);
+  [tmp12, c8] = setIsUploading(stateFromStores1.useState(null), 2);
   const items8 = [attachments];
-  const tmp11 = _slicedToArray(stateFromStores1.useState(null), 2);
+  const tmp11 = setIsUploading(stateFromStores1.useState(null), 2);
   const effect = stateFromStores1.useEffect(() => {
     if (null != attachments[0]) {
       obj = utils_UploadUtils;
@@ -399,26 +569,26 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
   }
   const obj5 = { startExpanded: true, children: closure_14(stateFromStores2, obj6) };
   obj6 = { style: tmp.container, children: items9 };
-  const obj7 = { pointerEvents: "none", style: tmp.post, children: closure_13(threadId(sendMessage[33]).ForumPostListDisabled, obj8) };
-  BottomSheet = tmp4(tmp5[32]).BottomSheet;
+  const obj7 = { pointerEvents: "none", style: tmp.post, children: closure_13(threadId(sendMessage[34]).ForumPostListDisabled, obj8) };
+  BottomSheet = tmp4(tmp5[37]).BottomSheet;
   obj8 = { threadId, localDeviceMedia: tmp16, style: tmp.postContent };
   items9 = [closure_13(stateFromStores2, obj7), , , , , ];
   const obj9 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(threadId(sendMessage[27]).t["+SZF6S"]) };
-  const Text = tmp4(tmp5[34]).Text;
+  const Text = tmp4(tmp5[35]).Text;
   intl = tmp4(tmp5[27]).intl;
   items9[1] = closure_13(Text, obj9);
   const obj10 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: intl2.string(threadId(sendMessage[27]).t["0Ycgw5"]) };
-  const Text2 = tmp4(tmp5[34]).Text;
+  const Text2 = tmp4(tmp5[35]).Text;
   intl2 = tmp4(tmp5[27]).intl;
   items9[2] = closure_13(Text2, obj10);
   const obj11 = { style: tmp.buttonMargin, children: closure_13(BaseTextButton, obj12) };
   obj12 = { grow: true, variant: "primary", text: intl3.string(threadId(sendMessage[27]).t.d611xH), pillStyle: tmp.button, onPress: callback, loading: tmp3, disabled: tmp3 };
-  BaseTextButton = tmp4(tmp5[35]).BaseTextButton;
+  BaseTextButton = tmp4(tmp5[36]).BaseTextButton;
   intl3 = tmp4(tmp5[27]).intl;
   items9[3] = closure_13(stateFromStores2, obj11);
   const obj13 = { style: tmp.buttonMargin, children: closure_13(BaseTextButton2, obj14) };
   obj14 = { grow: true, variant: "secondary", text: intl4.string(threadId(sendMessage[27]).t["8rKVHL"]), pillStyle: tmp.button, onPress: callback1, disabled: tmp3 };
-  BaseTextButton2 = tmp4(tmp5[35]).BaseTextButton;
+  BaseTextButton2 = tmp4(tmp5[36]).BaseTextButton;
   intl4 = tmp4(tmp5[27]).intl;
   items9[4] = closure_13(stateFromStores2, obj13);
   const obj15 = {
@@ -432,8 +602,12 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
     },
     disabled: tmp3
   };
-  const BaseTextButton3 = tmp4(tmp5[35]).BaseTextButton;
+  const BaseTextButton3 = tmp4(tmp5[36]).BaseTextButton;
   intl5 = tmp4(tmp5[27]).intl;
   items9[5] = closure_13(BaseTextButton3, obj15);
   return closure_13(BottomSheet, obj5);
-};
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/forums/native/AddMediaToOriginalForumPostActionSheet.tsx");
+
+export default tmp5;

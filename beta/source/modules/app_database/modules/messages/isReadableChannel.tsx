@@ -1,14 +1,14 @@
-// Module ID: 6904
-// Function ID: 6905
+// Module ID: 6908
+// Function ID: 6909
 // Name: isReadableChannel
-// Dependencies: [2049, 2045, 4469, 1074, 2]
+// Dependencies: [2055, 2051, 4472, 1086, 2]
 // Exports: isReadableChannel, isReadableChannelId
 
-// Module 6904 (isReadableChannel)
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import Constants from "Constants" /* 1074 */;
+// Module 6908 (isReadableChannel)
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let BasicPermissions;

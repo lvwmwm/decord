@@ -1,14 +1,14 @@
-// Module ID: 12982
-// Function ID: 12983
+// Module ID: 12984
+// Function ID: 12985
 // Name: useReferralProgramEligibleUsers
-// Dependencies: [5, 32, 19, 6872, 504, 38, 6873, 7626, 2]
+// Dependencies: [5, 32, 19, 6876, 504, 38, 6877, 7630, 2]
 // Exports: useReferralProgramEligibleUsers
 
-// Module 12982 (useReferralProgramEligibleUsers)
+// Module 12984 (useReferralProgramEligibleUsers)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 6872 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 6876 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
           obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {
@@ -69,7 +69,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
                 let _Array = Array;
                 let tmp34 = closure_131_7(Array.from(map.values()));
                 c7 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               } else {
                 c5 = 1;
                 c1 = tmp17;
@@ -126,7 +126,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {
@@ -265,7 +265,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
             let tmp36 = closure_134_9(false);
           }
           c10 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       }
     });

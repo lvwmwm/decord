@@ -1,17 +1,17 @@
-// Module ID: 8695
-// Function ID: 8696
+// Module ID: 8690
+// Function ID: 8691
 // Name: openPremiumModal
-// Dependencies: [5039, 6832, 1981, 2]
+// Dependencies: [5040, 6833, 1987, 2]
 // Exports: default
 
-// Module 8695 (openPremiumModal)
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+// Module 8690 (openPremiumModal)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("components_native/premium/openPremiumModal.tsx");
 
 export default function openPremiumModal(merged) {
   const obj = ModalActionCreatorsDefault;
-  return obj.pushLazy(asyncRequire(6832, dependencyMap.paths), merged, "PREMIUM_KEY", { presentation: "modal" });
+  return obj.pushLazy(asyncRequire(6833, dependencyMap.paths), merged, "PREMIUM_KEY", { presentation: "modal" });
 };

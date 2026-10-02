@@ -1,10 +1,10 @@
-// Module ID: 8750
-// Function ID: 8751
+// Module ID: 8745
+// Function ID: 8746
 // Name: vibegrationsPreviewCall
 // Dependencies: [2]
 // Exports: controlAnswerTimeoutMs, isResultEnvelope, previewCallTypes
 
-// Module 8750 (vibegrationsPreviewCall)
+// Module 8745 (vibegrationsPreviewCall)
 import size from "module_2" /* 2 */;
 
 class PreviewFrameCallTimeout extends Error {

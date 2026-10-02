@@ -1,28 +1,28 @@
-// Module ID: 8751
-// Function ID: 8752
+// Module ID: 8746
+// Function ID: 8747
 // Name: FramesNativeManager
-// Dependencies: [5, 17, 8499, 8500, 1074, 2005, 4739, 7746, 1365, 8752, 8753, 1231, 8754, 8766, 5204, 1115, 1370, 573, 1110, 1255, 2]
+// Dependencies: [5, 17, 8496, 8497, 1086, 2011, 4741, 7750, 1371, 8747, 8748, 1243, 8749, 8761, 5205, 1127, 1376, 585, 1122, 1267, 2]
 
-// Module 8751 (FramesNativeManager)
+// Module 8746 (FramesNativeManager)
 import react_native from "react-native" /* 17 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import intl3 from "intl" /* 1115 */;
-import v1 from "v1" /* 1255 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import Constants2 from "Constants" /* 2005 */;
-import Constants3 from "Constants" /* 4739 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
-import FramesConstants from "FramesConstants" /* 8500 */;
-import react_nativeDefault from "react-native" /* 8752 */;
-import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 8753 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 8766 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
+import intl3 from "intl" /* 1127 */;
+import v1 from "v1" /* 1267 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import Constants2 from "Constants" /* 2011 */;
+import Constants3 from "Constants" /* 4741 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
+import FramesConstants from "FramesConstants" /* 8497 */;
+import react_nativeDefault from "react-native" /* 8747 */;
+import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 8748 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 8761 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 8499 */;
-import WebView from "WebView" /* 7746 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import FramesManager from "FramesManager" /* 8754 */;
+import FramesStore from "FramesStore" /* 8496 */;
+import WebView from "WebView" /* 7750 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1371 */;
+import FramesManager from "FramesManager" /* 8749 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3;
@@ -43,7 +43,7 @@ let obj = function _postMessageToWebView() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -84,7 +84,7 @@ let obj = function _postMessageToWebView() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp17) {
         closure_3 = tmp17;

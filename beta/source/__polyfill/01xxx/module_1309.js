@@ -4,4 +4,4 @@
 
 // Module 1309
 
-export default Math.min;
+export default Function.prototype.call;

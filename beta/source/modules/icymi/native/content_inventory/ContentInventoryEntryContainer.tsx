@@ -1,20 +1,22 @@
-// Module ID: 16147
-// Function ID: 16148
+// Module ID: 16149
+// Function ID: 16150
 // Name: ContentInventoryEntryContainer
-// Dependencies: [19, 17, 1372, 21, 16091, 576, 1364, 7799, 7624, 504, 5435, 16130, 1177, 2]
-// Exports: default
+// Dependencies: [19, 17, 1378, 21, 16093, 588, 1370, 558, 576, 7803, 7628, 504, 1189, 16132, 5436, 2]
 
-// Module 16147 (ContentInventoryEntryContainer)
+// Module 16149 (ContentInventoryEntryContainer)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7799 */;
+import nativeDefault from "native" /* 588 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7803 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16091 */;
+import createICYMIStyles from "createICYMIStyles" /* 16093 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let contentId;
 
 let metroImportDefault;
 let metroRequire;
@@ -29,7 +31,7 @@ const iCYMIStyles = createICYMIStyles.createICYMIStyles((marginBottom, arg1) => 
   if (!arg1) {
     num = marginBottom.margin;
   }
-  const obj = { pressable: { marginTop: num }, container: obj2, screenshotContainer: { marginBottom: marginBottom.margin }, header: { display: "flex", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, marginBottom: marginBottom.margin }, headerInfo: { flex: 1 }, title: { display: "flex", flexDirection: "row", alignItems: "center", gap: 6, marginBottom: num4, marginTop: 2 }, subTitleContainer: { flexDirection: "row", alignItems: "center", gap: tmp(576).space.PX_8 } };
+  const obj = { pressable: { marginTop: num }, container: obj2, screenshotContainer: { marginBottom: marginBottom.margin }, header: { display: "flex", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, marginBottom: marginBottom.margin }, headerInfo: { flex: 1 }, title: { display: "flex", flexDirection: "row", alignItems: "center", gap: 6, marginBottom: num4, marginTop: 2 }, subTitleContainer: { flexDirection: "row", alignItems: "center", gap: tmp(588).space.PX_8 } };
   obj2 = { marginHorizontal: marginBottom.margin, paddingBottom: num2, paddingTop: num3 };
   num2 = 0;
   if (!arg1) {
@@ -48,9 +50,211 @@ const iCYMIStyles = createICYMIStyles.createICYMIStyles((marginBottom, arg1) => 
   ({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 });
   return obj;
 });
-const result = size.fileFinishedImporting("modules/icymi/native/content_inventory/ContentInventoryEntryContainer.tsx");
-
-export default function ContentInventoryEntryContainer(contentId) {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentId) => {
+  let children;
+  let highlight;
+  let items1;
+  let items2;
+  let items3;
+  let onPress;
+  let renderForScreenshot;
+  let subtitle;
+  let title;
+  let type;
+  const tmp = contentId;
+  let obj = contentId(type[8]);
+  const cResult = obj.c(39);
+  contentId = contentId.contentId;
+  const userId = contentId.userId;
+  ({ children, renderForScreenshot, title, subtitle, type } = contentId);
+  ({ highlight, onPress } = contentId);
+  const tmp6 = iCYMIStyles(undefined !== renderForScreenshot && renderForScreenshot);
+  if (cResult[0] === contentId) {
+    if (cResult[1] === onPress) {
+      if (cResult[2] === type) {
+        let tmp7;
+        let tmp9;
+        let tmp11;
+        if (cResult[3] === userId) {
+          tmp7 = cResult[4];
+        }
+        const _Symbol = Symbol;
+        if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+          const items = [UserStore];
+          cResult[5] = items;
+          tmp9 = items;
+        } else {
+          tmp9 = cResult[5];
+        }
+        if (cResult[6] !== userId) {
+          const fn2 = function x() {
+            return UserStore.getUser(userId);
+          };
+          cResult[6] = userId;
+          cResult[7] = fn2;
+          tmp11 = fn2;
+        } else {
+          tmp11 = cResult[7];
+        }
+        const tmpResult = tmp(type[11]);
+        const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp11);
+        if (null == stateFromStores) {
+          return null;
+        } else {
+          if (cResult[8] === tmp6.container) {
+            let tmp15;
+            let tmp16;
+            if (cResult[9] === (undefined !== renderForScreenshot && renderForScreenshot && tmp6.screenshotContainer)) {
+              tmp15 = cResult[10];
+            }
+            if (cResult[11] !== stateFromStores) {
+              let obj2 = { animate: true, size: tmp(tmp2[12]).AvatarSizes.NORMAL, user: stateFromStores, guildId: "Array" };
+              const Avatar = tmp(tmp2[12]).Avatar;
+              const tmp18 = closure_6(Avatar, obj2, stateFromStores.id);
+              cResult[11] = stateFromStores;
+              cResult[12] = tmp18;
+              tmp16 = tmp18;
+            } else {
+              tmp16 = cResult[12];
+            }
+            if (cResult[13] === tmp6.title) {
+              let tmp19;
+              if (cResult[14] === title) {
+                tmp19 = cResult[15];
+              }
+              if (cResult[16] === tmp6.subTitleContainer) {
+                let tmp23;
+                if (cResult[17] === subtitle) {
+                  tmp23 = cResult[18];
+                }
+                if (cResult[19] === tmp6.headerInfo) {
+                  if (cResult[20] === tmp23) {
+                    let tmp27;
+                    if (cResult[21] === tmp19) {
+                      tmp27 = cResult[22];
+                    }
+                    if (cResult[23] === tmp6.header) {
+                      if (cResult[24] === tmp27) {
+                        let tmp31;
+                        if (cResult[25] === tmp16) {
+                          tmp31 = cResult[26];
+                        }
+                        if (cResult[27] === children) {
+                          if (cResult[28] === tmp31) {
+                            let tmp35;
+                            if (cResult[29] === tmp15) {
+                              tmp35 = cResult[30];
+                            }
+                            if (cResult[31] === (undefined !== highlight && highlight)) {
+                              if (cResult[32] === (undefined !== renderForScreenshot && renderForScreenshot)) {
+                                let tmp39;
+                                if (cResult[33] === tmp35) {
+                                  tmp39 = cResult[34];
+                                }
+                                if (cResult[35] === tmp7) {
+                                  if (cResult[36] === tmp6.pressable) {
+                                    let tmp42;
+                                    if (cResult[37] === tmp39) {
+                                      tmp42 = cResult[38];
+                                    }
+                                    return tmp42;
+                                  }
+                                }
+                                let obj3 = { unstable_pressDelay: 130, onPress: tmp7, accessibilityRole: "button", style: tmp6.pressable, children: tmp39 };
+                                const tmp44 = closure_6(tmp(type[14]).PressableHighlight, obj3);
+                                cResult[35] = tmp7;
+                                cResult[36] = tmp6.pressable;
+                                cResult[37] = tmp39;
+                                cResult[38] = tmp44;
+                                tmp42 = tmp44;
+                              }
+                            }
+                            let obj4 = { hideDivider: tmp4, highlight: tmp5, children: tmp35 };
+                            const tmp41 = closure_6(tmp(type[13]).SimplePost, obj4);
+                            cResult[31] = undefined !== highlight && highlight;
+                            cResult[32] = undefined !== renderForScreenshot && renderForScreenshot;
+                            cResult[33] = tmp35;
+                            cResult[34] = tmp41;
+                            tmp39 = tmp41;
+                          }
+                        }
+                        let obj5 = { style: tmp15, children: items1 };
+                        items1 = [tmp31, children];
+                        const tmp38 = closure_7(View, obj5);
+                        cResult[27] = children;
+                        cResult[28] = tmp31;
+                        cResult[29] = tmp15;
+                        cResult[30] = tmp38;
+                        tmp35 = tmp38;
+                      }
+                    }
+                    let obj6 = { style: tmp6.header, children: items2 };
+                    items2 = [tmp16, tmp27];
+                    const tmp34 = closure_7(View, obj6);
+                    cResult[23] = tmp6.header;
+                    cResult[24] = tmp27;
+                    cResult[25] = tmp16;
+                    cResult[26] = tmp34;
+                    tmp31 = tmp34;
+                  }
+                }
+                let obj7 = { style: tmp6.headerInfo, children: items3 };
+                items3 = [tmp19, tmp23];
+                const tmp30 = closure_7(View, obj7);
+                cResult[19] = tmp6.headerInfo;
+                cResult[20] = tmp23;
+                cResult[21] = tmp19;
+                cResult[22] = tmp30;
+                tmp27 = tmp30;
+              }
+              const obj8 = { style: tmp6.subTitleContainer, children: subtitle };
+              const tmp26 = closure_6(View, obj8);
+              cResult[16] = tmp6.subTitleContainer;
+              cResult[17] = subtitle;
+              cResult[18] = tmp26;
+              tmp23 = tmp26;
+            }
+            const obj9 = { style: tmp6.title, children: title };
+            const tmp22 = closure_6(View, obj9);
+            cResult[13] = tmp6.title;
+            cResult[14] = title;
+            cResult[15] = tmp22;
+            tmp19 = tmp22;
+          }
+          const items4 = [tmp6.container, tmp14];
+          cResult[8] = tmp6.container;
+          cResult[9] = undefined !== renderForScreenshot && renderForScreenshot && tmp6.screenshotContainer;
+          cResult[10] = items4;
+          tmp15 = items4;
+        }
+      }
+    }
+  }
+  const fn = function o() {
+    if (null != onPress) {
+      const obj = ICYMIActionCreatorsDefault;
+      obj.itemInteracted(contentId, type, "press");
+      const obj3 = { itemId: contentId, itemType: type, actionParameters: { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "open", actionDestinationType: null } };
+      const obj2 = ICYMIActionCreatorsDefault;
+      obj2.feedItemActioned(obj3);
+      tmp();
+    } else {
+      const obj4 = ICYMIActionCreatorsDefault;
+      obj4.itemInteracted(contentId, type, "open_profile");
+      const obj6 = { itemId: contentId, itemType: type, actionParameters: { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "open", actionDestinationType: "user" } };
+      const obj5 = ICYMIActionCreatorsDefault;
+      obj5.feedItemActioned(obj6);
+      const obj7 = { userId };
+      showUserProfileActionSheetDefault(obj7);
+    }
+  };
+  cResult[0] = contentId;
+  cResult[1] = onPress;
+  cResult[2] = type;
+  cResult[3] = userId;
+  cResult[4] = fn;
+  tmp7 = fn;
+}) : ((contentId) => {
   let SimplePost;
   let highlight;
   let items3;
@@ -93,17 +297,17 @@ export default function ContentInventoryEntryContainer(contentId) {
       showUserProfileActionSheetDefault(obj7);
     }
   }, items);
-  let obj = contentId(type[9]);
+  let obj = contentId(type[11]);
   const items1 = [UserStore];
   const stateFromStores = obj.useStateFromStores(items1, () => UserStore.getUser(userId));
   let tmp7Result = null;
   if (null != stateFromStores) {
     let obj2 = { unstable_pressDelay: 130, onPress: callback, accessibilityRole: "button", style: tmp.pressable, children: tmp7(SimplePost, obj3) };
-    const PressableHighlight = tmp3(tmp4[10]).PressableHighlight;
+    const PressableHighlight = tmp3(tmp4[14]).PressableHighlight;
     obj3 = { hideDivider: flag, highlight, children: tmp8(View, obj4) };
     const items2 = [tmp.container, ];
     let screenshotContainer = flag;
-    SimplePost = tmp3(tmp4[11]).SimplePost;
+    SimplePost = tmp3(tmp4[13]).SimplePost;
     if (flag) {
       screenshotContainer = tmp.screenshotContainer;
     }
@@ -123,5 +327,8 @@ export default function ContentInventoryEntryContainer(contentId) {
     tmp7Result = tmp7(PressableHighlight, obj2);
   }
   return tmp7Result;
-};
+});
+const result = size.fileFinishedImporting("modules/icymi/native/content_inventory/ContentInventoryEntryContainer.tsx");
+
+export default tmp4;
 export const useStyles = iCYMIStyles;

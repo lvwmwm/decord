@@ -1,19 +1,19 @@
-// Module ID: 13526
-// Function ID: 13527
+// Module ID: 13528
+// Function ID: 13529
 // Name: ProductCatalog
-// Dependencies: [1374, 3, 13527, 7273, 8660, 13528, 1380, 13529, 1378, 2]
+// Dependencies: [1380, 3, 13529, 7277, 8657, 13530, 1386, 13531, 1384, 2]
 // Exports: canUserUse
 
-// Module 13526 (ProductCatalog)
+// Module 13528 (ProductCatalog)
 import LoggerDefault from "Logger" /* 3 */;
-import PerksStateUtils from "PerksStateUtils" /* 1378 */;
-import user from "user" /* 1380 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7273 */;
-import PremiumFeatureUtils from "PremiumFeatureUtils" /* 8660 */;
-import SKUListingDefault from "SKUListing" /* 13528 */;
-import DenormalizedPerksReadExperiment from "DenormalizedPerksReadExperiment" /* 13529 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import PremiumSKUFeature_mod from "PremiumSKUFeature" /* 13527 */;
+import PerksStateUtils from "PerksStateUtils" /* 1384 */;
+import user from "user" /* 1386 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7277 */;
+import PremiumFeatureUtils from "PremiumFeatureUtils" /* 8657 */;
+import SKUListingDefault from "SKUListing" /* 13530 */;
+import DenormalizedPerksReadExperiment from "DenormalizedPerksReadExperiment" /* 13531 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import PremiumSKUFeature_mod from "PremiumSKUFeature" /* 13529 */;
 import size from "module_2" /* 2 */;
 
 const DenormalizedPerksReadExperimentDefault = DenormalizedPerksReadExperiment;

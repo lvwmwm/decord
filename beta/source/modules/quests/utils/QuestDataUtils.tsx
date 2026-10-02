@@ -1,19 +1,19 @@
-// Module ID: 7112
-// Function ID: 7113
+// Module ID: 7116
+// Function ID: 7117
 // Name: QuestDataUtils
-// Dependencies: [7113, 2112, 7115, 7116, 5756, 5759, 1385, 7114, 1231, 2]
+// Dependencies: [7117, 2115, 7119, 7120, 5757, 5760, 1391, 7118, 1243, 2]
 // Exports: captureQuestsException, earnedDecisionIsValid, findNextUpcomingExpirationEpochMs, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdProvenanceMetadataSealed, getAdTrafficMetadataSealed, getBountyByPlacementAndId, getIsQuestExpiredButWithinThirtyDayLookback, getQuestFormattedDate, getQuestPlacementFromQuestContent, hasUnclaimedReward, isBillableQuestContent, isBountyQuestHomePlacement, isDismissed, isDismissible, isQuestConfigExpired, isQuestExpired
 
-// Module 7112 (QuestDataUtils)
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import QuestTypes from "QuestTypes" /* 5759 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7114 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7113 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import BountyStore from "BountyStore" /* 7115 */;
-import QuestStore from "QuestStore" /* 7116 */;
-import QuestConstants from "QuestConstants" /* 5756 */;
+// Module 7116 (QuestDataUtils)
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import FlagUtils from "FlagUtils" /* 1391 */;
+import QuestTypes from "QuestTypes" /* 5760 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7118 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7117 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import BountyStore from "BountyStore" /* 7119 */;
+import QuestStore from "QuestStore" /* 7120 */;
+import QuestConstants from "QuestConstants" /* 5757 */;
 import size from "module_2" /* 2 */;
 
 let map, map1;
@@ -94,7 +94,7 @@ export const earnedDecisionIsValid = function earnedDecisionIsValid(value) {
   }
   return tmp;
 };
-export const findQuestOrReplacement = function findQuestOrReplacement(questId, quests, excludedQuests) {
+export const findQuestOrReplacement = function findQuestOrReplacement(scrollToQuestId, quests, excludedQuests) {
   map = quests;
   if (Array.isArray(quests)) {
     const _Map = Map;
@@ -115,11 +115,11 @@ export const findQuestOrReplacement = function findQuestOrReplacement(questId, q
       return items;
     }));
   }
-  const value = map.get(questId);
+  const value = map.get(scrollToQuestId);
   if (null != value) {
     return value;
   } else {
-    const value3 = map1.get(questId);
+    const value3 = map1.get(scrollToQuestId);
     let replacementId;
     if (value3 != null) {
       replacementId = value3.replacementId;

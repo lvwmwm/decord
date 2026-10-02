@@ -1,17 +1,18 @@
-// Module ID: 12596
-// Function ID: 12597
+// Module ID: 12598
+// Function ID: 12599
 // Name: UserProfileActivityTimebar
-// Dependencies: [19, 17, 21, 4836, 576, 12597, 4832, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 12599, 4833, 2]
 
-// Module 12596 (UserProfileActivityTimebar)
+// Module 12598 (UserProfileActivityTimebar)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import useActivityTimer from "useActivityTimer" /* 12597 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import useActivityTimer from "useActivityTimer" /* 12599 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useActivityTimerDefault = useActivityTimer;
@@ -28,9 +29,142 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadiu
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND, borderRadius: nativeDefault.radii.xs, height: "100%", minWidth: 4 };
 let closure_6 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileActivityTimebar.tsx");
-
-export default function UserProfileActivityTimebar(arg0) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let duration;
+  let elapsed;
+  let end;
+  let items;
+  let items1;
+  let items2;
+  let start;
+  let style;
+  const obj = react2;
+  const cResult = obj.c(27);
+  ({ start, end, style } = arg0);
+  const tmp4 = closure_6();
+  if (cResult[0] === end) {
+    let tmp5;
+    let tmp9;
+    if (cResult[1] === start) {
+      tmp5 = cResult[2];
+    }
+    const tmp7 = useActivityTimerDefault(tmp5);
+    ({ elapsed, duration } = tmp7);
+    const text = `${100 * tmp7.percentage}%`;
+    if (cResult[3] !== `${100 * tmp7.percentage}%`) {
+      const obj2 = { width: text };
+      cResult[3] = text;
+      cResult[4] = obj2;
+      tmp9 = obj2;
+    } else {
+      tmp9 = cResult[4];
+    }
+    if (cResult[5] === tmp4.progress) {
+      let tmp10;
+      if (cResult[6] === tmp9) {
+        tmp10 = cResult[7];
+      }
+      if (cResult[8] === tmp4.bar) {
+        let tmp14;
+        let tmp18;
+        let tmp20;
+        let tmp23;
+        let tmp25;
+        if (cResult[9] === tmp10) {
+          tmp14 = cResult[10];
+        }
+        const textRow = tmp4.textRow;
+        if (cResult[11] !== elapsed) {
+          const tmpResult = useActivityTimer;
+          const formatTimeResult = tmpResult.formatTime(elapsed);
+          cResult[11] = elapsed;
+          cResult[12] = formatTimeResult;
+          tmp18 = formatTimeResult;
+        } else {
+          tmp18 = cResult[12];
+        }
+        if (cResult[13] !== tmp18) {
+          const obj3 = { variant: "text-xs/normal", tabularNumbers: true, color: "text-subtle", children: tmp18 };
+          const tmp22 = React3(Text_Text.Text, obj3);
+          cResult[13] = tmp18;
+          cResult[14] = tmp22;
+          tmp20 = tmp22;
+        } else {
+          tmp20 = cResult[14];
+        }
+        if (cResult[15] !== duration) {
+          const tmpResult2 = useActivityTimer;
+          const formatTimeResult1 = tmpResult2.formatTime(duration);
+          cResult[15] = duration;
+          cResult[16] = formatTimeResult1;
+          tmp23 = formatTimeResult1;
+        } else {
+          tmp23 = cResult[16];
+        }
+        if (cResult[17] !== tmp23) {
+          const obj4 = { variant: "text-xs/normal", tabularNumbers: true, color: "text-subtle", children: tmp23 };
+          const tmp27 = React3(Text_Text.Text, obj4);
+          cResult[17] = tmp23;
+          cResult[18] = tmp27;
+          tmp25 = tmp27;
+        } else {
+          tmp25 = cResult[18];
+        }
+        if (cResult[19] === tmp4.textRow) {
+          if (cResult[20] === tmp25) {
+            let tmp28;
+            if (cResult[21] === tmp20) {
+              tmp28 = cResult[22];
+            }
+            if (cResult[23] === style) {
+              if (cResult[24] === tmp28) {
+                let tmp32;
+                if (cResult[25] === tmp14) {
+                  tmp32 = cResult[26];
+                }
+                return tmp32;
+              }
+            }
+            const obj5 = { style, children: items };
+            items = [tmp14, tmp28];
+            const tmp35 = hasOwnProperty(View, obj5);
+            cResult[23] = style;
+            cResult[24] = tmp28;
+            cResult[25] = tmp14;
+            cResult[26] = tmp35;
+            tmp32 = tmp35;
+          }
+        }
+        const obj6 = { style: textRow, children: items1 };
+        items1 = [tmp20, tmp25];
+        const tmp31 = hasOwnProperty(View, obj6);
+        cResult[19] = tmp4.textRow;
+        cResult[20] = tmp25;
+        cResult[21] = tmp20;
+        cResult[22] = tmp31;
+        tmp28 = tmp31;
+      }
+      const obj7 = { style: tmp4.bar, children: tmp10 };
+      const tmp17 = React3(View, obj7);
+      cResult[8] = tmp4.bar;
+      cResult[9] = tmp10;
+      cResult[10] = tmp17;
+      tmp14 = tmp17;
+    }
+    const obj8 = { style: items2 };
+    items2 = [tmp4.progress, tmp9];
+    const tmp13 = React3(View, obj8);
+    cResult[5] = tmp4.progress;
+    cResult[6] = tmp9;
+    cResult[7] = tmp13;
+    tmp10 = tmp13;
+  }
+  const obj9 = { start, end };
+  cResult[0] = end;
+  cResult[1] = start;
+  cResult[2] = obj9;
+  tmp5 = obj9;
+}) : ((arg0) => {
   let duration;
   let elapsed;
   let end;
@@ -64,4 +198,7 @@ export default function UserProfileActivityTimebar(arg0) {
   items2[1] = React3(Text2, obj8);
   items1[1] = hasOwnProperty(View, obj5);
   return hasOwnProperty(View, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileActivityTimebar.tsx");
+
+export default tmp5;

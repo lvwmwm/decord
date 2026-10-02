@@ -1,19 +1,42 @@
-// Module ID: 11389
-// Function ID: 11390
+// Module ID: 11264
+// Function ID: 11265
 // Name: useSafetyHubInitialized
-// Dependencies: [7881, 504, 2]
-// Exports: useSafetyHubInitialized
+// Dependencies: [7885, 558, 576, 504, 2]
 
-// Module 11389 (useSafetyHubInitialized)
-import get_initialized from "get initialized" /* 504 */;
-import SafetyHubStore from "SafetyHubStore" /* 7881 */;
+// Module 11264 (useSafetyHubInitialized)
+import react from "react" /* 576 */;
+import SafetyHubStore from "SafetyHubStore" /* 7885 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubInitialized.tsx");
-
-export const useSafetyHubInitialized = function useSafetyHubInitialized() {
+let tmp;
+const get_initialized = tmp(504);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let initialized;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SafetyHubStore];
+    const fn = function s() {
+      return initialized.isInitialized();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
   let initialized;
   const items = [SafetyHubStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => initialized.isInitialized());
-};
+});
+const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubInitialized.tsx");
+
+export const useSafetyHubInitialized = tmp2;

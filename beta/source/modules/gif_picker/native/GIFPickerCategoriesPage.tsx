@@ -1,20 +1,23 @@
-// Module ID: 9843
-// Function ID: 9844
+// Module ID: 9877
+// Function ID: 9878
 // Name: GIFPickerCategoriesPage
-// Dependencies: [19, 17, 9826, 21, 4836, 9830, 576, 9746, 504, 9827, 9844, 9783, 6483, 6476, 5891, 1115, 2]
+// Dependencies: [19, 17, 9860, 21, 4837, 9864, 588, 558, 576, 9857, 504, 9861, 9878, 9699, 6484, 6402, 1127, 6477, 2]
 
-// Module 9843 (GIFPickerCategoriesPage)
+// Module 9877 (GIFPickerCategoriesPage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6483 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 9827 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9830 */;
-import GIFPickerCategoryViewDefault from "GIFPickerCategoryView" /* 9844 */;
+import nativeDefault from "native" /* 588 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6484 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 9861 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9864 */;
+import GIFPickerCategoryViewDefault from "GIFPickerCategoryView" /* 9878 */;
 import react from "react" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 9826 */;
-import createStyles from "createStyles" /* 4836 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 9860 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let columns, dependencyMap;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
@@ -24,7 +27,358 @@ let closure_7 = createStyles.createStyles((height) => {
   ({ backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: height - gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING, borderRadius: nativeDefault.radii.xs, flex: 1 });
   return obj;
 });
-const memoResult = react.memo(function GIFPickerCategoriesPage(columns) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((columns) => {
+  let GIF_PICKER_ITEM_ESIMTATED_HEIGHT;
+  let bound;
+  let favoritesCategory;
+  let first;
+  let inActionSheet;
+  let item;
+  let obj5;
+  let onSelectCategory;
+  let tmp6;
+  let tmp7;
+  let tmp = columns;
+  let tmp2 = dependencyMap;
+  let obj = columns(576);
+  const cResult = obj.c(38);
+  columns = columns.columns;
+  ({ favoritesCategory, inActionSheet, onSelectCategory } = columns);
+  if (columns > 2) {
+    GIF_PICKER_ITEM_ESIMTATED_HEIGHT = tmp(9864).GIF_PICKER_ITEM_ESIMTATED_HEIGHT;
+  } else {
+    GIF_PICKER_ITEM_ESIMTATED_HEIGHT = tmp(9864).GIF_PICKER_ITEM_ESIMTATED_HEIGHT / 2;
+  }
+  let tmp4 = closure_7(GIF_PICKER_ITEM_ESIMTATED_HEIGHT);
+  dependencyMap = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { hasCategories: false };
+    let num = 0;
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const safeAreaBottomKeyboardAware = onSelectCategory(9857)(first).safeAreaBottomKeyboardAware;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp8 = GIFPickerViewStore;
+    let items = [GIFPickerViewStore];
+    class S {
+      constructor() {
+        const obj = { trendingCategories: trendingCategories.getTrendingCategories() };
+        return obj;
+      }
+    }
+    cResult[1] = items;
+    cResult[2] = S;
+    tmp7 = S;
+    tmp6 = items;
+  } else {
+    tmp6 = cResult[1];
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const trendingCategories = tmpResult.useStateFromStoresObject(tmp6, tmp7).trendingCategories;
+  if (cResult[3] === favoritesCategory) {
+    let arr2;
+    if (cResult[4] === trendingCategories) {
+      arr2 = cResult[5];
+    }
+    if (cResult[6] === arr2) {
+      let arr4;
+      let tmp10;
+      let tmp16;
+      if (cResult[7] === columns) {
+        arr4 = cResult[8];
+        tmp10 = tmp;
+        let tmp11 = tmp2;
+      }
+      if (cResult[9] !== arr4.length) {
+        let items1 = [arr4.length];
+        class S {
+          constructor() {
+            const obj = { trendingCategories: trendingCategories.getTrendingCategories() };
+            return obj;
+          }
+        }
+        cResult[10] = items1;
+        tmp16 = items1;
+      } else {
+        tmp16 = cResult[10];
+      }
+      if (cResult[11] === arr4) {
+        let tmp17;
+        let tmp21;
+        let tmp20;
+        if (cResult[12] === tmp16) {
+          tmp17 = cResult[13];
+        }
+        const data = tmp17.data;
+        class S {
+          constructor() {
+            const obj = { trendingCategories: trendingCategories.getTrendingCategories() };
+            return obj;
+          }
+        }
+        if (cResult[14] !== trendingCategories) {
+          const fn = function v() {
+            if (0 === trendingCategories.length) {
+              const obj = GIFPickerActionCreators;
+              const trending = obj.fetchTrending();
+            }
+          };
+          const items2 = [trendingCategories];
+          class S {
+            constructor() {
+              const obj = { trendingCategories: trendingCategories.getTrendingCategories() };
+              return obj;
+            }
+          }
+          cResult[14] = trendingCategories;
+          cResult[15] = fn;
+          class K {
+            constructor(arg0, arg1) {
+              const items = [];
+              let num = 0;
+              if (0 < columns) {
+                do {
+                  let tmp7;
+                  let tmp2 = tmp[num];
+                  let push = items.push;
+                  if (null != tmp2) {
+                    tmp7 = jsx(GIFPickerCategoryViewDefault, { item: tmp2, onSelectCategory }, num);
+                  } else {
+                    let items1 = [, ];
+                    ({ item: arr2[0], placeholder: arr2[1] } = item);
+                    tmp7 = <View key={num} style={items1} />;
+                  }
+                  let arr = push(tmp7);
+                  num = num + 1;
+                } while (num < columns);
+              }
+              return <View style={item.item} collapsable={false}>{items}</View>;
+            }
+          }
+          tmp21 = items2;
+          tmp20 = fn;
+        } else {
+          tmp20 = cResult[15];
+          tmp21 = cResult[16];
+        }
+        const effect = trendingCategories.useEffect(tmp20, tmp21);
+        if (cResult[17] === columns) {
+          if (cResult[18] === data) {
+            if (cResult[19] === onSelectCategory) {
+              if (cResult[20] === tmp4.item) {
+                let tmp24;
+                if (cResult[21] === tmp4.placeholder) {
+                  tmp24 = cResult[22];
+                }
+                const tmp10Result = tmp10(9699);
+                const isPortalKeyboardInModal = tmp10Result.useIsPortalKeyboardInModal();
+                class S {
+                  constructor() {
+                    const obj = { trendingCategories: trendingCategories.getTrendingCategories() };
+                    return obj;
+                  }
+                }
+                if (cResult[23] === columns) {
+                  if (cResult[24] === tmp4.placeholder.backgroundColor) {
+                    if (cResult[25] === tmp4.placeholder.borderRadius) {
+                      let tmp27;
+                      let tmp30;
+                      if (cResult[26] === tmp26) {
+                        tmp27 = cResult[27];
+                      }
+                      const _Symbol = Symbol;
+                      class S {
+                        constructor() {
+                          const obj = { trendingCategories: trendingCategories.getTrendingCategories() };
+                          return obj;
+                        }
+                      }
+                      const _Symbol2 = Symbol;
+                      if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
+                        const intl = tmp10(1127).intl;
+                        const stringResult = intl.string(tmp10(1127).t.ffgJrs);
+                        class S {
+                          constructor() {
+                            const obj = { trendingCategories: trendingCategories.getTrendingCategories() };
+                            return obj;
+                          }
+                        }
+                        cResult[29] = stringResult;
+                        tmp30 = stringResult;
+                      } else {
+                        tmp30 = cResult[29];
+                      }
+                      if (cResult[30] === GIF_PICKER_ITEM_ESIMTATED_HEIGHT) {
+                        if (cResult[31] === inActionSheet) {
+                          if (cResult[32] === isPortalKeyboardInModal) {
+                            if (cResult[33] === tmp27) {
+                              if (cResult[34] === tmp24) {
+                                if (cResult[35] === safeAreaBottomKeyboardAware) {
+                                  let tmp32;
+                                  if (cResult[36] === tmp19) {
+                                    tmp32 = cResult[37];
+                                  }
+                                  return tmp32;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      class K {
+                        constructor(arg0, arg1) {
+                          const items = [];
+                          let num = 0;
+                          if (0 < columns) {
+                            do {
+                              let tmp7;
+                              let tmp2 = tmp[num];
+                              let push = items.push;
+                              if (null != tmp2) {
+                                tmp7 = jsx(GIFPickerCategoryViewDefault, { item: tmp2, onSelectCategory }, num);
+                              } else {
+                                let items1 = [, ];
+                                ({ item: arr2[0], placeholder: arr2[1] } = item);
+                                tmp7 = <View key={num} style={items1} />;
+                              }
+                              let arr = push(tmp7);
+                              num = num + 1;
+                            } while (num < columns);
+                          }
+                          return <View style={item.item} collapsable={false}>{items}</View>;
+                        }
+                      }
+                      const tmp34 = jsx(onSelectCategory(6477), { estimatedListSize: tmp29, inActionSheet, preventNativeModalDismiss: isPortalKeyboardInModal, insetEnd: safeAreaBottomKeyboardAware, itemSize: GIF_PICKER_ITEM_ESIMTATED_HEIGHT, sections: tmp19, placeholderConfig: tmp27, renderItem: tmp24, accessibilityLabel: tmp30 });
+                      cResult[30] = GIF_PICKER_ITEM_ESIMTATED_HEIGHT;
+                      cResult[31] = inActionSheet;
+                      cResult[32] = isPortalKeyboardInModal;
+                      cResult[33] = tmp27;
+                      cResult[34] = tmp24;
+                      cResult[35] = safeAreaBottomKeyboardAware;
+                      cResult[36] = tmp19;
+                      cResult[37] = tmp34;
+                      tmp32 = tmp34;
+                    }
+                  }
+                }
+                const obj4 = { sectionItem: obj5 };
+                obj5 = { type: tmp10(6484).FastestListPropsPlaceholderType.SHAPE, shape: "rect", shapeCount: null, spaceGap: tmp10(9864).GIF_PICKER_GUTTER_SPACING, borderRadius: tmp4.placeholder.borderRadius, colorHex: tmp4.placeholder.backgroundColor, height: tmp26, verticalAlignment: "top" };
+                class K {
+                  constructor(arg0, arg1) {
+                    const items = [];
+                    let num = 0;
+                    if (0 < columns) {
+                      do {
+                        let tmp7;
+                        let tmp2 = tmp[num];
+                        let push = items.push;
+                        if (null != tmp2) {
+                          tmp7 = jsx(GIFPickerCategoryViewDefault, { item: tmp2, onSelectCategory }, num);
+                        } else {
+                          let items1 = [, ];
+                          ({ item: arr2[0], placeholder: arr2[1] } = item);
+                          tmp7 = <View key={num} style={items1} />;
+                        }
+                        let arr = push(tmp7);
+                        num = num + 1;
+                      } while (num < columns);
+                    }
+                    return <View style={item.item} collapsable={false}>{items}</View>;
+                  }
+                }
+                cResult[23] = columns;
+                cResult[24] = tmp4.placeholder.backgroundColor;
+                cResult[25] = tmp4.placeholder.borderRadius;
+                cResult[26] = tmp26;
+                cResult[27] = obj4;
+                tmp27 = obj4;
+              }
+            }
+          }
+        }
+        class K {
+          constructor(arg0, arg1) {
+            const items = [];
+            let num = 0;
+            if (0 < columns) {
+              do {
+                let tmp7;
+                let tmp2 = tmp[num];
+                let push = items.push;
+                if (null != tmp2) {
+                  tmp7 = jsx(GIFPickerCategoryViewDefault, { item: tmp2, onSelectCategory }, num);
+                } else {
+                  let items1 = [, ];
+                  ({ item: arr2[0], placeholder: arr2[1] } = item);
+                  tmp7 = <View key={num} style={items1} />;
+                }
+                let arr = push(tmp7);
+                num = num + 1;
+              } while (num < columns);
+            }
+            return <View style={item.item} collapsable={false}>{items}</View>;
+          }
+        }
+        cResult[17] = columns;
+        cResult[18] = data;
+        cResult[19] = onSelectCategory;
+        cResult[20] = tmp4.item;
+        cResult[21] = tmp4.placeholder;
+        cResult[22] = K;
+        tmp24 = K;
+      }
+      class S {
+        constructor() {
+          const obj = { trendingCategories: trendingCategories.getTrendingCategories() };
+          return obj;
+        }
+      }
+      tmp18[0] = arr4;
+      tmp18[1] = tmp16;
+      cResult[11] = arr4;
+      cResult[12] = tmp16;
+      cResult[13] = tmp18;
+      tmp17 = tmp18;
+    }
+    const items3 = [];
+    class S {
+      constructor() {
+        const obj = { trendingCategories: trendingCategories.getTrendingCategories() };
+        return obj;
+      }
+    }
+    let num3 = 0;
+    if (0 < Math.max(arr2.length, tmp(9864).DEFAULT_CATEGORY_ROWS)) {
+      do {
+        let arr = items3.push(arr2.slice(num3, num3 + columns));
+        num3 = num3 + columns;
+        let _Math = Math;
+        let tmp13 = columns;
+        tmp = columns;
+        tmp2 = dependencyMap;
+        bound = Math.max(arr2.length, columns(9864).DEFAULT_CATEGORY_ROWS);
+      } while (num3 < bound);
+    }
+    cResult[6] = arr2;
+    cResult[7] = columns;
+    cResult[8] = items3;
+    tmp10 = tmp;
+    tmp11 = tmp2;
+    arr4 = items3;
+  }
+  const items4 = [...trendingCategories];
+  if (null != favoritesCategory) {
+    items4.unshift(favoritesCategory);
+  }
+  cResult[3] = favoritesCategory;
+  cResult[4] = trendingCategories;
+  cResult[5] = items4;
+  arr2 = items4;
+}) : ((columns) => {
   let intl;
   let tmp2;
   let tmp3;
@@ -51,9 +405,9 @@ const memoResult = react.memo(function GIFPickerCategoriesPage(columns) {
   }
   let tmp6 = closure_7(GIF_PICKER_ITEM_ESIMTATED_HEIGHT);
   closure_4 = tmp6;
-  const safeAreaBottomKeyboardAware = favoritesCategory(tmp2[7])({ hasCategories: false }).safeAreaBottomKeyboardAware;
+  const safeAreaBottomKeyboardAware = favoritesCategory(tmp2[9])({ hasCategories: false }).safeAreaBottomKeyboardAware;
   let items = [trendingCategories];
-  const tmp3Result = tmp3(tmp2[8]);
+  const tmp3Result = tmp3(tmp2[10]);
   trendingCategories = tmp3Result.useStateFromStoresObject(items, () => {
     const obj = { trendingCategories: trendingCategories.getTrendingCategories() };
     return obj;
@@ -112,19 +466,19 @@ const memoResult = react.memo(function GIFPickerCategoriesPage(columns) {
     return <View style={closure_4.item} collapsable={false}>{items}</View>;
   }, items3);
   const items4 = [GIF_PICKER_ITEM_ESIMTATED_HEIGHT, columns, tmp6];
-  const tmp3Result3 = tmp3(tmp2[11]);
+  const tmp3Result3 = tmp3(tmp2[13]);
   const isPortalKeyboardInModal = tmp3Result3.useIsPortalKeyboardInModal();
   const memo1 = GIF_PICKER_ITEM_ESIMTATED_HEIGHT.useMemo(() => {
     const obj = { sectionItem: { type: FastestListPropsPlaceholder.FastestListPropsPlaceholderType.SHAPE, shape: "rect", shapeCount: columns, spaceGap: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING, borderRadius: closure_4.placeholder.borderRadius, colorHex: closure_4.placeholder.backgroundColor, height: GIF_PICKER_ITEM_ESIMTATED_HEIGHT - gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING, verticalAlignment: "top" } };
     ({ type: FastestListPropsPlaceholder.FastestListPropsPlaceholderType.SHAPE, shape: "rect", shapeCount: columns, spaceGap: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING, borderRadius: closure_4.placeholder.borderRadius, colorHex: closure_4.placeholder.backgroundColor, height: GIF_PICKER_ITEM_ESIMTATED_HEIGHT - gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING, verticalAlignment: "top" });
     return obj;
   }, items4);
-  let obj = { estimatedListSize: tmp3Result4.getCustomKeyboardHeight(), inActionSheet, preventNativeModalDismiss: isPortalKeyboardInModal, insetEnd: safeAreaBottomKeyboardAware, itemSize: GIF_PICKER_ITEM_ESIMTATED_HEIGHT, sections, placeholderConfig: memo1, renderItem: callback, accessibilityLabel: intl.string(tmp3(tmp2[15]).t.ffgJrs) };
-  const tmp12 = favoritesCategory(tmp2[13]);
-  tmp3Result4 = tmp3(tmp2[14]);
-  intl = tmp3(tmp2[15]).intl;
+  let obj = { estimatedListSize: tmp3Result4.getCustomKeyboardHeight(), inActionSheet, preventNativeModalDismiss: isPortalKeyboardInModal, insetEnd: safeAreaBottomKeyboardAware, itemSize: GIF_PICKER_ITEM_ESIMTATED_HEIGHT, sections, placeholderConfig: memo1, renderItem: callback, accessibilityLabel: intl.string(tmp3(tmp2[16]).t.ffgJrs) };
+  const tmp12 = favoritesCategory(tmp2[17]);
+  tmp3Result4 = tmp3(tmp2[15]);
+  intl = tmp3(tmp2[16]).intl;
   return data(tmp12, obj);
-});
+}));
 const result = size.fileFinishedImporting("modules/gif_picker/native/GIFPickerCategoriesPage.tsx");
 
 export default memoResult;

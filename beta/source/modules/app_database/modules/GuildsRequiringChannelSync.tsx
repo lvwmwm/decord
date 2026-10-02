@@ -1,26 +1,26 @@
-// Module ID: 7065
-// Function ID: 7066
+// Module ID: 7069
+// Function ID: 7070
 // Name: GuildsRequiringChannelSync
-// Dependencies: [2049, 502, 2045, 2108, 2102, 2067, 4469, 1074, 2052, 1085, 1086, 3, 2074, 4459, 1255, 1241, 1385, 2]
+// Dependencies: [2055, 502, 2051, 2111, 2105, 2073, 4472, 1086, 2058, 1097, 1098, 3, 2077, 4462, 1267, 1253, 1391, 2]
 
-// Module 7065 (GuildsRequiringChannelSync)
+// Module 7069 (GuildsRequiringChannelSync)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants2 from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import v1 from "v1" /* 1255 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import ChannelConstants from "ChannelConstants" /* 2052 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
-import PremiumRoleUtils from "PremiumRoleUtils" /* 4459 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
+import Constants2 from "Constants" /* 1097 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import v1 from "v1" /* 1267 */;
+import FlagUtils from "FlagUtils" /* 1391 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2077 */;
+import PremiumRoleUtils from "PremiumRoleUtils" /* 4462 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import Constants from "Constants" /* 1074 */;
-import BigFlagUtils from "BigFlagUtils" /* 1086 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildRoleStore from "GuildRoleStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
+import BigFlagUtils from "BigFlagUtils" /* 1098 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -120,7 +120,7 @@ class GuildsRequiringChannelSync {
       let obj3 = PremiumRoleUtils;
       let isSubscriptionRoleResult1 = obj3.isSubscriptionRole(tmp17);
       if (isSubscriptionRoleResult1) {
-        let tmp6Result = tmp6(4459);
+        let tmp6Result = tmp6(4462);
         isSubscriptionRoleResult1 = tmp6Result.isSubscriptionRoleAvailableForPurchase(tmp17);
       }
       if (!isSubscriptionRoleResult) {

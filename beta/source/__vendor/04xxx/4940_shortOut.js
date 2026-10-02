@@ -1,26 +1,11 @@
 // Module ID: 4940
 // Function ID: 4941
 // Name: shortOut
-// Dependencies: []
+// Dependencies: [4941, 4942]
 
 // Module 4940 (shortOut)
+import _mod4942 from "module_4942" /* 4942 */;
+import shortOut from "shortOut" /* 4941 */;
 
-export default function shortOut(arg0) {
-  let closure_0 = arg0;
-  let c1 = 0;
-  let closure_2 = 0;
-  return function() {
-    const tmp = now();
-    closure_2 = tmp;
-    if (0 < 16 - (tmp - closure_2)) {
-      const sum = c1 + 1;
-      c1 = sum;
-      if (800 <= sum) {
-        return arguments[0];
-      }
-    } else {
-      c1 = 0;
-    }
-    return closure_0(...arguments);
-  };
-};
+
+export default shortOut(_mod4942);

@@ -1,24 +1,26 @@
-// Module ID: 12843
-// Function ID: 12844
+// Module ID: 12845
+// Function ID: 12846
 // Name: PrivateChannelHeader
-// Dependencies: [19, 17, 2045, 4876, 4479, 1372, 1074, 21, 1177, 4836, 576, 504, 12840, 4989, 1115, 10335, 12844, 12845, 12847, 4678, 12850, 2]
+// Dependencies: [19, 17, 2051, 4877, 4482, 1378, 1086, 21, 1189, 4837, 588, 558, 576, 504, 12842, 4990, 1127, 10378, 12846, 12847, 12849, 4680, 12852, 2]
 
-// Module 12843 (PrivateChannelHeader)
+// Module 12845 (PrivateChannelHeader)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import ChannelHeader from "ChannelHeader" /* 12840 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import ChannelHeader from "ChannelHeader" /* 12842 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PresenceStore from "PresenceStore" /* 4876 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import PresenceStore from "PresenceStore" /* 4877 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let currentUser;
+const require = globalThis.__r;
+let _require, channelId, isMobileOnlineResult, tmp3, tmp5, tmp6;
 
 let c10;
 let c9;
@@ -34,7 +36,446 @@ let closure_15 = Object.freeze({ onlineCount: null, memberCount: null });
 let obj = { activityStatusText: obj2, groupDMIconAnchor: { marginRight: 12, flexShrink: 0 } };
 obj2 = { color: nativeDefault.colors.TEXT_MUTED };
 let closure_16 = createStyles.createStyles(obj);
-const memoResult = react.memo(function PrivateChannelHeader(channelId) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let first;
+  let isMobileOnline;
+  let isVROnline;
+  let stateFromStores;
+  let status;
+  let tmp10;
+  let tmp12;
+  let tmp13;
+  let tmp7;
+  let tmp9;
+  const tmp = channelId;
+  let obj = channelId(stateFromStores[12]);
+  const cResult = obj.c(39);
+  channelId = channelId.channelId;
+  const screenIndex = channelId.screenIndex;
+  const tmp4 = closure_16();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channelId) {
+    class C {
+      constructor() {
+        return closure_5.getChannel(channelId);
+      }
+    }
+    cResult[1] = channelId;
+    cResult[2] = C;
+    tmp7 = C;
+  } else {
+    class C {
+      constructor() {
+        return closure_5.getChannel(channelId);
+      }
+    }
+  }
+  const tmpResult = tmp(stateFromStores[13]);
+  stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor() {
+        return closure_5.getChannel(channelId);
+      }
+    }
+    const items1 = [UserStore];
+    cResult[3] = items1;
+    tmp9 = items1;
+  } else {
+    class C {
+      constructor() {
+        return closure_5.getChannel(channelId);
+      }
+    }
+  }
+  if (cResult[4] !== stateFromStores) {
+    class U {
+      constructor() {
+        obj = closure_2;
+        type = undefined;
+        if (closure_2 != null) {
+          type = obj.type;
+        }
+        user = undefined;
+        if (type === ChannelTypes.DM) {
+          tmp3 = closure_8;
+          user = closure_8.getUser(obj.getRecipientId());
+        }
+        return user;
+      }
+    }
+    cResult[4] = stateFromStores;
+    cResult[5] = U;
+    tmp10 = U;
+  } else {
+    class U {
+      constructor() {
+        obj = closure_2;
+        type = undefined;
+        if (closure_2 != null) {
+          type = obj.type;
+        }
+        user = undefined;
+        if (type === ChannelTypes.DM) {
+          tmp3 = closure_8;
+          user = closure_8.getUser(obj.getRecipientId());
+        }
+        return user;
+      }
+    }
+  }
+  const tmpResult3 = tmp(stateFromStores[13]);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp10);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class U {
+      constructor() {
+        obj = closure_2;
+        type = undefined;
+        if (closure_2 != null) {
+          type = obj.type;
+        }
+        user = undefined;
+        if (type === ChannelTypes.DM) {
+          tmp3 = closure_8;
+          user = closure_8.getUser(obj.getRecipientId());
+        }
+        return user;
+      }
+    }
+    const items2 = [PresenceStore];
+    cResult[6] = items2;
+    tmp12 = items2;
+  } else {
+    class U {
+      constructor() {
+        obj = closure_2;
+        type = undefined;
+        if (closure_2 != null) {
+          type = obj.type;
+        }
+        user = undefined;
+        if (type === ChannelTypes.DM) {
+          tmp3 = closure_8;
+          user = closure_8.getUser(obj.getRecipientId());
+        }
+        return user;
+      }
+    }
+  }
+  if (cResult[7] !== stateFromStores1) {
+    class F {
+      constructor() {
+        tmp = closure_3;
+        isMobileOnlineResult = null != closure_3;
+        if (isMobileOnlineResult) {
+          tmp3 = closure_6;
+          isMobileOnlineResult = closure_6.isMobileOnline(tmp.id);
+        }
+        obj = { isMobileOnline: isMobileOnlineResult, isVROnline: null, status: null };
+        isVROnlineResult = null != tmp;
+        if (isVROnlineResult) {
+          tmp5 = closure_6;
+          isVROnlineResult = closure_6.isVROnline(tmp.id);
+        }
+        obj.isVROnline = isVROnlineResult;
+        if (null != tmp) {
+          tmp7 = closure_6;
+          UNKNOWN = closure_6.getStatus(tmp.id);
+        } else {
+          tmp6 = StatusTypes;
+          UNKNOWN = StatusTypes.UNKNOWN;
+        }
+        obj.status = UNKNOWN;
+        return obj;
+      }
+    }
+    cResult[7] = stateFromStores1;
+    cResult[8] = F;
+    tmp13 = F;
+  } else {
+    class F {
+      constructor() {
+        tmp = closure_3;
+        isMobileOnlineResult = null != closure_3;
+        if (isMobileOnlineResult) {
+          tmp3 = closure_6;
+          isMobileOnlineResult = closure_6.isMobileOnline(tmp.id);
+        }
+        obj = { isMobileOnline: isMobileOnlineResult, isVROnline: null, status: null };
+        isVROnlineResult = null != tmp;
+        if (isVROnlineResult) {
+          tmp5 = closure_6;
+          isVROnlineResult = closure_6.isVROnline(tmp.id);
+        }
+        obj.isVROnline = isVROnlineResult;
+        if (null != tmp) {
+          tmp7 = closure_6;
+          UNKNOWN = closure_6.getStatus(tmp.id);
+        } else {
+          tmp6 = StatusTypes;
+          UNKNOWN = StatusTypes.UNKNOWN;
+        }
+        obj.status = UNKNOWN;
+        return obj;
+      }
+    }
+  }
+  const tmpResult4 = tmp(stateFromStores[13]);
+  const stateFromStoresObject = tmpResult4.useStateFromStoresObject(tmp12, tmp13);
+  ({ isMobileOnline, isVROnline, status } = stateFromStoresObject);
+  if (cResult[9] === channelId) {
+    class F {
+      constructor() {
+        tmp = closure_3;
+        isMobileOnlineResult = null != closure_3;
+        if (isMobileOnlineResult) {
+          tmp3 = closure_6;
+          isMobileOnlineResult = closure_6.isMobileOnline(tmp.id);
+        }
+        obj = { isMobileOnline: isMobileOnlineResult, isVROnline: null, status: null };
+        isVROnlineResult = null != tmp;
+        if (isVROnlineResult) {
+          tmp5 = closure_6;
+          isVROnlineResult = closure_6.isVROnline(tmp.id);
+        }
+        obj.isVROnline = isVROnlineResult;
+        if (null != tmp) {
+          tmp7 = closure_6;
+          UNKNOWN = closure_6.getStatus(tmp.id);
+        } else {
+          tmp6 = StatusTypes;
+          UNKNOWN = StatusTypes.UNKNOWN;
+        }
+        obj.status = UNKNOWN;
+        return obj;
+      }
+    }
+    if (null != stateFromStores) {
+      class F {
+        constructor() {
+          tmp = closure_3;
+          isMobileOnlineResult = null != closure_3;
+          if (isMobileOnlineResult) {
+            tmp3 = closure_6;
+            isMobileOnlineResult = closure_6.isMobileOnline(tmp.id);
+          }
+          obj = { isMobileOnline: isMobileOnlineResult, isVROnline: null, status: null };
+          isVROnlineResult = null != tmp;
+          if (isVROnlineResult) {
+            tmp5 = closure_6;
+            isVROnlineResult = closure_6.isVROnline(tmp.id);
+          }
+          obj.isVROnline = isVROnlineResult;
+          if (null != tmp) {
+            tmp7 = closure_6;
+            UNKNOWN = closure_6.getStatus(tmp.id);
+          } else {
+            tmp6 = StatusTypes;
+            UNKNOWN = StatusTypes.UNKNOWN;
+          }
+          obj.status = UNKNOWN;
+          return obj;
+        }
+      }
+      let channelName = obj6.computeChannelName(stateFromStores, UserStore, RelationshipStore);
+    } else {
+      class F {
+        constructor() {
+          tmp = closure_3;
+          isMobileOnlineResult = null != closure_3;
+          if (isMobileOnlineResult) {
+            tmp3 = closure_6;
+            isMobileOnlineResult = closure_6.isMobileOnline(tmp.id);
+          }
+          obj = { isMobileOnline: isMobileOnlineResult, isVROnline: null, status: null };
+          isVROnlineResult = null != tmp;
+          if (isVROnlineResult) {
+            tmp5 = closure_6;
+            isVROnlineResult = closure_6.isVROnline(tmp.id);
+          }
+          obj.isVROnline = isVROnlineResult;
+          if (null != tmp) {
+            tmp7 = closure_6;
+            UNKNOWN = closure_6.getStatus(tmp.id);
+          } else {
+            tmp6 = StatusTypes;
+            UNKNOWN = StatusTypes.UNKNOWN;
+          }
+          obj.status = UNKNOWN;
+          return obj;
+        }
+      }
+      channelName = obj5.string(tmp(tmp2[16]).t.ai6Lbr);
+    }
+    const tmp19 = cResult[12];
+    if (stateFromStores != null) {
+      class F {
+        constructor() {
+          tmp = closure_3;
+          isMobileOnlineResult = null != closure_3;
+          if (isMobileOnlineResult) {
+            tmp3 = closure_6;
+            isMobileOnlineResult = closure_6.isMobileOnline(tmp.id);
+          }
+          obj = { isMobileOnline: isMobileOnlineResult, isVROnline: null, status: null };
+          isVROnlineResult = null != tmp;
+          if (isVROnlineResult) {
+            tmp5 = closure_6;
+            isVROnlineResult = closure_6.isVROnline(tmp.id);
+          }
+          obj.isVROnline = isVROnlineResult;
+          if (null != tmp) {
+            tmp7 = closure_6;
+            UNKNOWN = closure_6.getStatus(tmp.id);
+          } else {
+            tmp6 = StatusTypes;
+            UNKNOWN = StatusTypes.UNKNOWN;
+          }
+          obj.status = UNKNOWN;
+          return obj;
+        }
+      }
+    }
+    if (tmp19 === undefined) {
+      class F {
+        constructor() {
+          tmp = closure_3;
+          isMobileOnlineResult = null != closure_3;
+          if (isMobileOnlineResult) {
+            tmp3 = closure_6;
+            isMobileOnlineResult = closure_6.isMobileOnline(tmp.id);
+          }
+          obj = { isMobileOnline: isMobileOnlineResult, isVROnline: null, status: null };
+          isVROnlineResult = null != tmp;
+          if (isVROnlineResult) {
+            tmp5 = closure_6;
+            isVROnlineResult = closure_6.isVROnline(tmp.id);
+          }
+          obj.isVROnline = isVROnlineResult;
+          if (null != tmp) {
+            tmp7 = closure_6;
+            UNKNOWN = closure_6.getStatus(tmp.id);
+          } else {
+            tmp6 = StatusTypes;
+            UNKNOWN = StatusTypes.UNKNOWN;
+          }
+          obj.status = UNKNOWN;
+          return obj;
+        }
+      }
+    }
+    let tmp23Result = null;
+    if (null != stateFromStores1) {
+      class F {
+        constructor() {
+          tmp = closure_3;
+          isMobileOnlineResult = null != closure_3;
+          if (isMobileOnlineResult) {
+            tmp3 = closure_6;
+            isMobileOnlineResult = closure_6.isMobileOnline(tmp.id);
+          }
+          obj = { isMobileOnline: isMobileOnlineResult, isVROnline: null, status: null };
+          isVROnlineResult = null != tmp;
+          if (isVROnlineResult) {
+            tmp5 = closure_6;
+            isVROnlineResult = closure_6.isVROnline(tmp.id);
+          }
+          obj.isVROnline = isVROnlineResult;
+          if (null != tmp) {
+            tmp7 = closure_6;
+            UNKNOWN = closure_6.getStatus(tmp.id);
+          } else {
+            tmp6 = StatusTypes;
+            UNKNOWN = StatusTypes.UNKNOWN;
+          }
+          obj.status = UNKNOWN;
+          return obj;
+        }
+      }
+      const obj2 = { userId: stateFromStores1.id, guildId: undefined, textStyle: tmp4.activityStatusText };
+      const tmp23 = closure_11;
+      const tmp24 = screenIndex(stateFromStores[17]);
+      if (stateFromStores != null) {
+        class F {
+          constructor() {
+            tmp = closure_3;
+            isMobileOnlineResult = null != closure_3;
+            if (isMobileOnlineResult) {
+              tmp3 = closure_6;
+              isMobileOnlineResult = closure_6.isMobileOnline(tmp.id);
+            }
+            obj = { isMobileOnline: isMobileOnlineResult, isVROnline: null, status: null };
+            isVROnlineResult = null != tmp;
+            if (isVROnlineResult) {
+              tmp5 = closure_6;
+              isVROnlineResult = closure_6.isVROnline(tmp.id);
+            }
+            obj.isVROnline = isVROnlineResult;
+            if (null != tmp) {
+              tmp7 = closure_6;
+              UNKNOWN = closure_6.getStatus(tmp.id);
+            } else {
+              tmp6 = StatusTypes;
+              UNKNOWN = StatusTypes.UNKNOWN;
+            }
+            obj.status = UNKNOWN;
+            return obj;
+          }
+        }
+      }
+      tmp23Result = tmp23(tmp24, obj2);
+    }
+    if (stateFromStores != null) {
+      class F {
+        constructor() {
+          tmp = closure_3;
+          isMobileOnlineResult = null != closure_3;
+          if (isMobileOnlineResult) {
+            tmp3 = closure_6;
+            isMobileOnlineResult = closure_6.isMobileOnline(tmp.id);
+          }
+          obj = { isMobileOnline: isMobileOnlineResult, isVROnline: null, status: null };
+          isVROnlineResult = null != tmp;
+          if (isVROnlineResult) {
+            tmp5 = closure_6;
+            isVROnlineResult = closure_6.isVROnline(tmp.id);
+          }
+          obj.isVROnline = isVROnlineResult;
+          if (null != tmp) {
+            tmp7 = closure_6;
+            UNKNOWN = closure_6.getStatus(tmp.id);
+          } else {
+            tmp6 = StatusTypes;
+            UNKNOWN = StatusTypes.UNKNOWN;
+          }
+          obj.status = UNKNOWN;
+          return obj;
+        }
+      }
+    }
+    cResult[12] = undefined;
+    cResult[13] = tmp4;
+    cResult[14] = stateFromStores1;
+    cResult[15] = tmp23Result;
+  }
+  class L {
+    constructor() {
+      obj = closure_0(closure_2[14]);
+      result = obj.navigateToChannelDetails(channelId, screenIndex, "private-channel-header-title");
+      return;
+    }
+  }
+  cResult[9] = channelId;
+  cResult[10] = screenIndex;
+  cResult[11] = L;
+}) : ((channelId) => {
   let channelName;
   let guild_id;
   let guild_id1;
@@ -47,19 +488,19 @@ const memoResult = react.memo(function PrivateChannelHeader(channelId) {
   let onlineCount;
   let renderUserAvatarResult;
   let status;
-  let tmp15Result;
-  let tmp2Result15;
-  let tmp2Result18;
+  let tmp14Result;
+  let tmp2Result13;
+  let tmp2Result16;
   channelId = channelId.channelId;
   const screenIndex = channelId.screenIndex;
   const pressable = channelId.pressable;
   let stateFromStores;
   const tmp = closure_16();
-  let obj = channelId(stateFromStores[11]);
-  let items = [ChannelStore];
+  let obj = channelId(stateFromStores[13]);
+  const items = [ChannelStore];
   stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
   const items1 = [UserStore];
-  const obj3 = channelId(stateFromStores[11]);
+  const obj3 = channelId(stateFromStores[13]);
   const stateFromStores1 = obj3.useStateFromStores(items1, () => {
     let type;
     if (stateFromStores != null) {
@@ -72,7 +513,7 @@ const memoResult = react.memo(function PrivateChannelHeader(channelId) {
     return user;
   });
   const items2 = [PresenceStore];
-  const obj5 = channelId(stateFromStores[11]);
+  const obj5 = channelId(stateFromStores[13]);
   const stateFromStoresObject = obj5.useStateFromStoresObject(items2, () => {
     let UNKNOWN;
     let isVROnlineResult;
@@ -91,28 +532,28 @@ const memoResult = react.memo(function PrivateChannelHeader(channelId) {
     const obj = ChannelHeader;
     const result = obj.navigateToChannelDetails(channelId, screenIndex, "private-channel-header-title");
   }, items3);
-  const tmp5 = PresenceStore;
+  const tmp4 = UserStore;
   if (null != stateFromStores) {
-    const tmp2Result = channelId(stateFromStores[13]);
+    const tmp2Result = channelId(stateFromStores[15]);
     channelName = tmp2Result.computeChannelName(stateFromStores, tmp4, RelationshipStore);
   } else {
-    const intl = tmp2(tmp3[14]).intl;
-    channelName = intl.string(tmp2(tmp3[14]).t.ai6Lbr);
+    const intl = tmp2(tmp3[16]).intl;
+    channelName = intl.string(tmp2(tmp3[16]).t.ai6Lbr);
   }
   let result = null;
   if (null != stateFromStores1) {
     const obj2 = { userId: stateFromStores1.id, guildId: guild_id, textStyle: tmp.activityStatusText };
     guild_id = undefined;
-    const tmp11 = closure_11;
-    const tmp13 = screenIndex(stateFromStores[15]);
+    const tmp10 = closure_11;
+    const tmp12 = screenIndex(stateFromStores[17]);
     if (stateFromStores != null) {
       guild_id = stateFromStores.guild_id;
     }
-    result = tmp11(tmp13, obj2);
+    result = tmp10(tmp12, obj2);
   }
   let id;
-  const tmp15 = screenIndex;
-  const tmp16 = screenIndex(stateFromStores[16]);
+  const tmp14 = screenIndex;
+  const tmp15 = screenIndex(stateFromStores[18]);
   if (stateFromStores1 != null) {
     id = stateFromStores1.id;
   }
@@ -122,7 +563,8 @@ const memoResult = react.memo(function PrivateChannelHeader(channelId) {
     guild_id1 = stateFromStores.guild_id;
   }
   let isMultiUserDMResult;
-  const tmp16Result = tmp16(obj4);
+  const tmp15Result = tmp15(obj4);
+  const tmp19 = closure_17;
   if (stateFromStores != null) {
     isMultiUserDMResult = stateFromStores.isMultiUserDM();
   }
@@ -130,22 +572,187 @@ const memoResult = react.memo(function PrivateChannelHeader(channelId) {
   if (true === isMultiUserDMResult) {
     tmp21 = stateFromStores;
   }
-  stateFromStores = tmp21;
-  const items4 = [tmp4, tmp5];
-  const items5 = [tmp21];
-  const tmp2Result10 = channelId(stateFromStores[11]);
-  const stateFromStoresObject1 = tmp2Result10.useStateFromStoresObject(items4, () => {
+  const tmp19Result = tmp19(tmp21);
+  const tmp2Result9 = channelId(stateFromStores[19]);
+  const shouldChannelShowLoadingIndicator = tmp2Result9.useShouldChannelShowLoadingIndicator(channelId);
+  const tmp24 = null != tmp19Result.onlineCount && null != tmp19Result.memberCount;
+  if (shouldChannelShowLoadingIndicator) {
+    result = closure_11(tmp2(tmp3[19]).ChannelHeaderLoadingIndicator, {});
+  } else if (tmp24) {
+    const tmp2Result10 = channelId(stateFromStores[20]);
+    result = tmp2Result10.renderMemberCountText(tmp19Result.onlineCount, tmp19Result.memberCount);
+  }
+  const intl2 = tmp2(tmp3[16]).intl;
+  const formatToPlainStringResult = intl2.formatToPlainString(channelId(stateFromStores[16]).t.UbNmGc, { channelName });
+  const items4 = [formatToPlainStringResult, , , , ];
+  let humanizeStatusResult = null;
+  if (null != stateFromStores1) {
+    humanizeStatusResult = null;
+    if (!stateFromStores1.isSystemUser()) {
+      const obj6 = { isMobile: isMobileOnline, isVR: isVROnline };
+      const tmp2Result11 = channelId(stateFromStores[21]);
+      humanizeStatusResult = tmp2Result11.humanizeStatus(status, obj6);
+    }
+  }
+  items4[1] = humanizeStatusResult;
+  items4[2] = tmp15Result;
+  let formatToPlainStringResult1 = null;
+  if (!shouldChannelShowLoadingIndicator) {
+    formatToPlainStringResult1 = null;
+    if (null != tmp19Result.onlineCount) {
+      formatToPlainStringResult1 = null;
+      if (null != tmp19Result.memberCount) {
+        ({ onlineCount, memberCount } = tmp19Result);
+        let str2 = "online";
+        if (0 === onlineCount) {
+          str2 = "total";
+        }
+        if ("online" === str2) {
+          memberCount = onlineCount;
+        }
+        const intl3 = tmp2(tmp3[16]).intl;
+        const formatToPlainString = intl3.formatToPlainString;
+        const t = tmp2(tmp3[16]).t;
+        const obj7 = { count: memberCount };
+        formatToPlainStringResult1 = formatToPlainString(tmp29 ? t.PIikks : t.etqpUG, obj7);
+      }
+    }
+  }
+  items4[3] = formatToPlainStringResult1;
+  const intl4 = tmp2(tmp3[16]).intl;
+  items4[4] = intl4.string(channelId(stateFromStores[16]).t.x87QCk);
+  const found = items4.filter((item) => null != item);
+  const joined = found.join(", ");
+  const tmp31 = closure_13;
+  if (null != stateFromStores1) {
+    const tmp2Result12 = channelId(stateFromStores[20]);
+    renderUserAvatarResult = tmp2Result12.renderUserAvatar(stateFromStores1, status, isMobileOnline, isVROnline);
+  } else {
+    let isGroupDMResult;
+    if (stateFromStores != null) {
+      isGroupDMResult = stateFromStores.isGroupDM();
+    }
+    if (isGroupDMResult) {
+      const obj8 = { style: tmp.groupDMIconAnchor, children: closure_11(tmp14Result, obj9, channelId) };
+      obj9 = { channelId, location: "GroupDMChannelHeader", children: tmp2Result13.renderGroupDMIcon(stateFromStores) };
+      tmp14Result = tmp14(stateFromStores[22]);
+      tmp2Result13 = channelId(stateFromStores[20]);
+      renderUserAvatarResult = closure_11(View, obj8);
+    } else {
+      const tmp2Result14 = channelId(stateFromStores[20]);
+      renderUserAvatarResult = tmp2Result14.renderEmptyIcon();
+    }
+  }
+  const items5 = [renderUserAvatarResult, ];
+  const obj10 = { accessibleTitle: formatToPlainStringResult, subtitle: result, disableArrow: !pressable, userId: id1, guildId: guild_id2 };
+  id1 = undefined;
+  const renderChannelTitle = channelId(tmp3[20]).renderChannelTitle;
+  channelId(stateFromStores[20]);
+  if (stateFromStores1 != null) {
+    id1 = stateFromStores1.id;
+  }
+  guild_id2 = undefined;
+  if (stateFromStores != null) {
+    guild_id2 = stateFromStores.guild_id;
+  }
+  const obj11 = { children: items5 };
+  items5[1] = renderChannelTitle(channelName, obj10);
+  const tmp31Result = tmp31(closure_12, obj11);
+  if (pressable) {
+    let num2 = 44;
+    if (null == result) {
+      num2 = closure_14;
+    }
+    const obj12 = { children: tmp2Result16.renderTitleWrapper(tmp31Result, callback, joined, num2) };
+    tmp2Result16 = channelId(stateFromStores[20]);
+    return closure_11(closure_12, obj12);
+  } else {
+    return tmp31Result;
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp7;
+  let tmp8;
+  _require = arg0;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [UserStore, PresenceStore];
+    let num = 0;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function l() {
+      let id;
+      let items;
+      const currentUser = UserStore.getCurrentUser();
+      if (currentUser != null) {
+        id = currentUser.id;
+      }
+      if (null != closure_0) {
+        let obj;
+        if (null != id) {
+          obj = {
+            onlineCount: items.reduce((acc, item) => {
+                  status = status.getStatus(item);
+                  let num = 0;
+                  if (status !== constants.INVISIBLE) {
+                    num = 0;
+                    if (status !== constants.OFFLINE) {
+                      num = 0;
+                      if (status !== constants.UNKNOWN) {
+                        num = 1;
+                      }
+                    }
+                  }
+                  return acc + num;
+                }, 0),
+            memberCount: closure_0.recipients.length
+          };
+          items = [];
+          let num = 0;
+          items[HermesBuiltin.arraySpread(items, closure_0.recipients, 0)] = id;
+        }
+        return obj;
+      }
+      obj = closure_15;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp8 = items1;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStoresObject(first, tmp7, tmp8);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  let obj = require("get initialized");
+  let items = [UserStore, PresenceStore];
+  const items1 = [arg0];
+  return obj.useStateFromStoresObject(items, () => {
     let id;
-    currentUser = currentUser.getCurrentUser();
+    let items;
+    const currentUser = UserStore.getCurrentUser();
     if (currentUser != null) {
       id = currentUser.id;
     }
-    if (null != stateFromStores) {
+    if (null != closure_0) {
+      let obj;
       if (null != id) {
-        const items = [];
-        let num = 0;
-        items[HermesBuiltin.arraySpread(items, stateFromStores.recipients, 0)] = id;
-        const obj = {
+        obj = {
           onlineCount: items.reduce((acc, item) => {
                 status = status.getStatus(item);
                 let num = 0;
@@ -160,111 +767,18 @@ const memoResult = react.memo(function PrivateChannelHeader(channelId) {
                 }
                 return acc + num;
               }, 0),
-          memberCount: stateFromStores.recipients.length
+          memberCount: closure_0.recipients.length
         };
-        return obj;
-      }
-    }
-    return closure_2_15;
-  }, items5);
-  const tmp2Result11 = channelId(stateFromStores[17]);
-  const shouldChannelShowLoadingIndicator = tmp2Result11.useShouldChannelShowLoadingIndicator(channelId);
-  const tmp24 = null != stateFromStoresObject1.onlineCount && null != stateFromStoresObject1.memberCount;
-  if (shouldChannelShowLoadingIndicator) {
-    result = closure_11(tmp2(tmp3[17]).ChannelHeaderLoadingIndicator, {});
-  } else if (tmp24) {
-    const tmp2Result12 = channelId(stateFromStores[18]);
-    result = tmp2Result12.renderMemberCountText(stateFromStoresObject1.onlineCount, stateFromStoresObject1.memberCount);
-  }
-  const intl2 = tmp2(tmp3[14]).intl;
-  const formatToPlainStringResult = intl2.formatToPlainString(channelId(stateFromStores[14]).t.UbNmGc, { channelName });
-  const items6 = [formatToPlainStringResult, , , , ];
-  let humanizeStatusResult = null;
-  if (null != stateFromStores1) {
-    humanizeStatusResult = null;
-    if (!stateFromStores1.isSystemUser()) {
-      const obj6 = { isMobile: isMobileOnline, isVR: isVROnline };
-      const tmp2Result13 = channelId(stateFromStores[19]);
-      humanizeStatusResult = tmp2Result13.humanizeStatus(status, obj6);
-    }
-  }
-  items6[1] = humanizeStatusResult;
-  items6[2] = tmp16Result;
-  let formatToPlainStringResult1 = null;
-  if (!shouldChannelShowLoadingIndicator) {
-    formatToPlainStringResult1 = null;
-    if (null != stateFromStoresObject1.onlineCount) {
-      formatToPlainStringResult1 = null;
-      if (null != stateFromStoresObject1.memberCount) {
-        ({ onlineCount, memberCount } = stateFromStoresObject1);
+        items = [];
         let num = 0;
-        let str2 = "online";
-        if (0 === onlineCount) {
-          str2 = "total";
-        }
-        if ("online" === str2) {
-          memberCount = onlineCount;
-        }
-        const intl3 = tmp2(tmp3[14]).intl;
-        const formatToPlainString = intl3.formatToPlainString;
-        const t = tmp2(tmp3[14]).t;
-        const obj7 = { count: memberCount };
-        formatToPlainStringResult1 = formatToPlainString(tmp29 ? t.PIikks : t.etqpUG, obj7);
+        items[HermesBuiltin.arraySpread(items, closure_0.recipients, 0)] = id;
       }
+      return obj;
     }
-  }
-  items6[3] = formatToPlainStringResult1;
-  const intl4 = tmp2(tmp3[14]).intl;
-  items6[4] = intl4.string(channelId(stateFromStores[14]).t.x87QCk);
-  const found = items6.filter((item) => null != item);
-  const joined = found.join(", ");
-  const tmp31 = closure_13;
-  if (null != stateFromStores1) {
-    const tmp2Result14 = channelId(stateFromStores[18]);
-    renderUserAvatarResult = tmp2Result14.renderUserAvatar(stateFromStores1, status, isMobileOnline, isVROnline);
-  } else {
-    let isGroupDMResult;
-    if (stateFromStores != null) {
-      isGroupDMResult = stateFromStores.isGroupDM();
-    }
-    if (isGroupDMResult) {
-      const obj8 = { style: tmp.groupDMIconAnchor, children: closure_11(tmp15Result, obj9, channelId) };
-      obj9 = { channelId, location: "GroupDMChannelHeader", children: tmp2Result15.renderGroupDMIcon(stateFromStores) };
-      tmp15Result = tmp15(stateFromStores[20]);
-      tmp2Result15 = channelId(stateFromStores[18]);
-      renderUserAvatarResult = closure_11(View, obj8);
-    } else {
-      const tmp2Result16 = channelId(stateFromStores[18]);
-      renderUserAvatarResult = tmp2Result16.renderEmptyIcon();
-    }
-  }
-  const items7 = [renderUserAvatarResult, ];
-  const obj10 = { accessibleTitle: formatToPlainStringResult, subtitle: result, disableArrow: !pressable, userId: id1, guildId: guild_id2 };
-  id1 = undefined;
-  const renderChannelTitle = tmp2(tmp3[18]).renderChannelTitle;
-  channelId(stateFromStores[18]);
-  if (stateFromStores1 != null) {
-    id1 = stateFromStores1.id;
-  }
-  guild_id2 = undefined;
-  if (stateFromStores != null) {
-    guild_id2 = stateFromStores.guild_id;
-  }
-  const obj11 = { children: items7 };
-  items7[1] = renderChannelTitle(channelName, obj10);
-  const tmp31Result = tmp31(closure_12, obj11);
-  if (pressable) {
-    let num2 = 44;
-    if (null == result) {
-      num2 = closure_14;
-    }
-    const obj12 = { children: tmp2Result18.renderTitleWrapper(tmp31Result, callback, joined, num2) };
-    tmp2Result18 = channelId(stateFromStores[18]);
-    return closure_11(closure_12, obj12);
-  } else {
-    return tmp31Result;
-  }
+    obj = closure_15;
+  }, items1);
 });
+const memoResult = react.memo(tmp4);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/channel/header/PrivateChannelHeader.tsx");
 
 export default memoResult;

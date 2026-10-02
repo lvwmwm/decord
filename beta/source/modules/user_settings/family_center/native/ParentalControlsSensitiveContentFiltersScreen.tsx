@@ -1,47 +1,78 @@
-// Module ID: 15510
-// Function ID: 15511
+// Module ID: 15498
+// Function ID: 15499
 // Name: ParentalControlsSensitiveContentFiltersScreen
-// Dependencies: [19, 7417, 21, 1115, 11006, 14247, 2]
-// Exports: default
+// Dependencies: [19, 7421, 21, 1127, 558, 576, 10874, 14235, 2]
 
-// Module 15510 (ParentalControlsSensitiveContentFiltersScreen)
+// Module 15498 (ParentalControlsSensitiveContentFiltersScreen)
 import Fragment from "Fragment" /* 21 */;
-import intl5 from "intl" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
-import SettingLayoutDefault from "SettingLayout" /* 14247 */;
+import react2 from "react" /* 576 */;
+import intl5 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingLayoutDefault from "SettingLayout" /* 14235 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+function getContentCategory() {
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items;
+  let items2;
+  const obj = { label: intl.string(intl5.t.GYpoAq), settings: items, subLabel: intl2.string(intl5.t.Wnojv1) };
+  intl = intl5.intl;
+  items = [, ];
+  ({ PARENTAL_CONTROLS_EXPLICIT_MEDIA_FILTERS_FRIENDS_DMS: arr[0], PARENTAL_CONTROLS_EXPLICIT_MEDIA_FILTERS_NON_FRIENDS_DMS: arr[1] } = MobileUserSettings);
+  intl2 = intl5.intl;
+  const items1 = [obj, ];
+  const obj2 = { label: intl3.string(intl5.t["16/3Bi"]), settings: items2, subLabel: intl4.string(intl5.t.XgH9eh) };
+  intl3 = intl5.intl;
+  items2 = [, ];
+  ({ PARENTAL_CONTROLS_GORE_MEDIA_FILTERS_FRIENDS_DMS: arr3[0], PARENTAL_CONTROLS_GORE_MEDIA_FILTERS_NON_FRIENDS_DMS: arr3[1] } = MobileUserSettings);
+  intl4 = intl5.intl;
+  items1[1] = obj2;
+  return items1;
+}
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/user_settings/family_center/native/ParentalControlsSensitiveContentFiltersScreen.tsx");
-
-export default function UserSettingsSensitiveContentFilters() {
-  const node = react.useMemo(() => {
-    let intl;
-    let intl2;
-    let intl3;
-    let intl4;
-    let items;
-    let items1;
-    let items2;
-    const obj = { sections: items1 };
-    const obj2 = { label: intl.string(intl5.t.GYpoAq), settings: items, subLabel: intl2.string(intl5.t.Wnojv1) };
-    const createList = SettingBuilders.createList;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let items;
+  let tmp11;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { sections: items };
+    const createList = tmp2(10874).createList;
+    items = [];
     SettingBuilders;
-    intl = intl5.intl;
-    items = [, ];
-    ({ PARENTAL_CONTROLS_EXPLICIT_MEDIA_FILTERS_FRIENDS_DMS: arr[0], PARENTAL_CONTROLS_EXPLICIT_MEDIA_FILTERS_NON_FRIENDS_DMS: arr[1] } = MobileUserSettings);
-    intl2 = intl5.intl;
-    items1 = [obj2, ];
-    const obj3 = { label: intl3.string(intl5.t["16/3Bi"]), settings: items2, subLabel: intl4.string(intl5.t.XgH9eh) };
-    intl3 = intl5.intl;
-    items2 = [, ];
-    ({ PARENTAL_CONTROLS_GORE_MEDIA_FILTERS_FRIENDS_DMS: arr3[0], PARENTAL_CONTROLS_GORE_MEDIA_FILTERS_NON_FRIENDS_DMS: arr3[1] } = MobileUserSettings);
-    intl4 = intl5.intl;
-    items1[1] = obj3;
-    return createList(obj);
+    HermesBuiltin.arraySpread(items, getContentCategory(), 0);
+    const list = createList(obj2);
+    cResult[0] = list;
+    first = list;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp14 = jsx(SettingLayoutDefault, { node: first });
+    cResult[1] = tmp14;
+    tmp11 = tmp14;
+  } else {
+    tmp11 = cResult[1];
+  }
+  return tmp11;
+}) : (() => {
+  const node = react.useMemo(() => {
+    let items;
+    const obj2 = { sections: items };
+    items = [...closure_1_6()];
+    const obj = SettingBuilders;
+    return obj.createList(obj2);
   }, []);
   return jsx(SettingLayoutDefault, { node });
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/family_center/native/ParentalControlsSensitiveContentFiltersScreen.tsx");
+
+export default tmp2;

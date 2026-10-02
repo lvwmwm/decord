@@ -1,24 +1,24 @@
-// Module ID: 17686
-// Function ID: 17687
+// Module ID: 17688
+// Function ID: 17689
 // Name: NativeIntentsManager
-// Dependencies: [32, 2045, 2067, 4469, 4479, 2099, 1372, 1074, 17687, 17688, 4989, 12604, 1397, 1370, 4678, 6539, 2]
+// Dependencies: [32, 2051, 2073, 4472, 4482, 2102, 1378, 1086, 17689, 17690, 4990, 12606, 1403, 1376, 4680, 6540, 2]
 
-// Module 17686 (NativeIntentsManager)
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import UserUtilsDefault from "UserUtils" /* 4678 */;
-import useChannelName from "useChannelName" /* 4989 */;
-import getChannelIcon from "getChannelIcon" /* 12604 */;
-import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 17687 */;
-import IntentsBindingsDefault from "IntentsBindings" /* 17688 */;
+// Module 17688 (NativeIntentsManager)
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import UserUtilsDefault from "UserUtils" /* 4680 */;
+import useChannelName from "useChannelName" /* 4990 */;
+import getChannelIcon from "getChannelIcon" /* 12606 */;
+import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 17689 */;
+import IntentsBindingsDefault from "IntentsBindings" /* 17690 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let id;
@@ -201,7 +201,7 @@ function setChannelActivity(channelId) {
       if (channel.type === unpackModuleId.DM) {
         const recipients = channel.recipients;
         const mapped = recipients.map(tmp12.getUser);
-        const first = _slicedToArray(mapped.filter(tmp11(1370).isNotNullish), 1)[0];
+        const first = _slicedToArray(mapped.filter(tmp11(1376).isNotNullish), 1)[0];
         if (null != first) {
           const tmpResult = UserUtilsDefault;
           const globalName = tmpResult.getGlobalName(first);

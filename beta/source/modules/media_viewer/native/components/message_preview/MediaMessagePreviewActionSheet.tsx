@@ -1,21 +1,99 @@
-// Module ID: 12531
-// Function ID: 12532
+// Module ID: 12533
+// Function ID: 12534
 // Name: MediaMessagePreviewActionSheet
-// Dependencies: [19, 21, 2021, 6707, 4800, 1101, 6610, 4527, 8089, 6618, 6620, 11236, 1115, 10092, 8124, 2]
+// Dependencies: [19, 21, 558, 576, 2027, 6708, 4801, 1113, 6611, 4530, 8086, 6620, 11110, 1127, 10129, 8121, 6624, 2]
 
-// Module 12531 (MediaMessagePreviewActionSheet)
-import router_utils from "router_utils" /* 1101 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import ReportModals from "ReportModals" /* 8089 */;
+// Module 12533 (MediaMessagePreviewActionSheet)
+import router_utils from "router_utils" /* 1113 */;
+import ToastUtils from "ToastUtils" /* 4530 */;
+import ClipboardUtils from "ClipboardUtils" /* 6611 */;
+import ReportModals from "ReportModals" /* 8086 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let channel;
 
 let closure_4;
 let hasOwnProperty;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-const memoResult = react.memo(function MediaMessagePreviewActionSheet(channel) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let closeMediaModal;
+  let obj2;
+  let user;
+  let obj = channel(closeMediaModal[3]);
+  const cResult = obj.c(27);
+  channel = channel.channel;
+  const message = channel.message;
+  ({ user, closeMediaModal } = channel);
+  const DeveloperMode = channel(closeMediaModal[4]).DeveloperMode;
+  const setting = DeveloperMode.useSetting();
+  if (cResult[0] === message) {
+    let tmp7;
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      class R {
+        constructor() {
+          const obj = message(closeMediaModal[6]);
+          obj.hideActionSheet();
+        }
+      }
+      cResult[3] = R;
+      tmp7 = R;
+    } else {
+      class R {
+        constructor() {
+          const obj = message(closeMediaModal[6]);
+          obj.hideActionSheet();
+        }
+      }
+    }
+    R = tmp7;
+    if (cResult[4] === channel.guild_id) {
+      class R {
+        constructor() {
+          const obj = message(closeMediaModal[6]);
+          obj.hideActionSheet();
+        }
+      }
+    }
+    const fn = function _() {
+      R();
+      closeMediaModal();
+      const obj = router_utils;
+      obj.transitionToGuild(channel.guild_id, channel.id, message.id);
+    };
+    cResult[4] = channel.guild_id;
+    cResult[5] = channel.id;
+    cResult[6] = closeMediaModal;
+    cResult[7] = message.id;
+    cResult[8] = fn;
+  }
+  let canReportUserResult = !user.isNonUserBot();
+  user.isNonUserBot();
+  if (canReportUserResult) {
+    class R {
+      constructor() {
+        const obj = message(closeMediaModal[6]);
+        obj.hideActionSheet();
+      }
+    }
+    canReportUserResult = obj2.canReportUser(user);
+  }
+  if (canReportUserResult) {
+    class R {
+      constructor() {
+        const obj = message(closeMediaModal[6]);
+        obj.hideActionSheet();
+      }
+    }
+    canReportUserResult = obj3.canReportMessage(message);
+  }
+  cResult[0] = message;
+  cResult[1] = user;
+  cResult[2] = canReportUserResult;
+}) : ((channel) => {
   let Icon;
   let Icon2;
   let Icon3;
@@ -31,20 +109,20 @@ const memoResult = react.memo(function MediaMessagePreviewActionSheet(channel) {
   const message = channel.message;
   ({ user, closeMediaModal } = channel);
   let callback;
-  const DeveloperMode = channel(closeMediaModal[2]).DeveloperMode;
+  const DeveloperMode = channel(closeMediaModal[4]).DeveloperMode;
   let setting = DeveloperMode.useSetting();
   let canReportUserResult = !user.isNonUserBot();
   user.isNonUserBot();
   if (canReportUserResult) {
-    const tmpResult = channel(closeMediaModal[3]);
+    const tmpResult = channel(closeMediaModal[5]);
     canReportUserResult = tmpResult.canReportUser(user);
   }
   if (canReportUserResult) {
-    const tmpResult2 = channel(closeMediaModal[3]);
+    const tmpResult2 = channel(closeMediaModal[5]);
     canReportUserResult = tmpResult2.canReportMessage(message);
   }
   callback = callback.useCallback(() => {
-    const obj = message(closeMediaModal[4]);
+    const obj = message(closeMediaModal[6]);
     obj.hideActionSheet();
   }, []);
   const items = [callback, closeMediaModal, , , ];
@@ -70,36 +148,36 @@ const memoResult = react.memo(function MediaMessagePreviewActionSheet(channel) {
     const obj = ReportModals;
     const result = obj.showReportModalForMessage(message, "mobile_media_message_preview_action_sheet");
   }, items2);
-  const ActionSheet = tmp(tmp2[9]).ActionSheet;
-  const Group = tmp(tmp2[10]).ActionSheetRow.Group;
-  let obj = { icon: closure_4(Icon, obj2), label: intl.string(tmp(tmp2[12]).t["+TSRGD"]), onPress: callback1 };
-  const ActionSheetRow = tmp(tmp2[10]).ActionSheetRow;
-  obj2 = { IconComponent: tmp(tmp2[11]).ChatArrowRightIcon };
-  Icon = tmp(tmp2[10]).ActionSheetRow.Icon;
-  intl = tmp(tmp2[12]).intl;
+  const ActionSheet = tmp(tmp2[16]).ActionSheet;
+  const Group = tmp(tmp2[11]).ActionSheetRow.Group;
+  let obj = { icon: closure_4(Icon, obj2), label: intl.string(tmp(tmp2[13]).t["+TSRGD"]), onPress: callback1 };
+  const ActionSheetRow = tmp(tmp2[11]).ActionSheetRow;
+  obj2 = { IconComponent: tmp(tmp2[12]).ChatArrowRightIcon };
+  Icon = tmp(tmp2[11]).ActionSheetRow.Icon;
+  intl = tmp(tmp2[13]).intl;
   const items3 = [closure_4(ActionSheetRow, obj), , ];
   const tmp11 = closure_5;
   if (setting) {
-    const obj3 = { icon: closure_4(Icon2, obj4), label: intl2.string(channel(closeMediaModal[12]).t.zBoHlf), onPress: callback2 };
-    const ActionSheetRow2 = tmp(tmp2[10]).ActionSheetRow;
-    obj4 = { IconComponent: channel(closeMediaModal[13]).IdIcon };
-    Icon2 = tmp(tmp2[10]).ActionSheetRow.Icon;
-    intl2 = tmp(tmp2[12]).intl;
+    const obj3 = { icon: closure_4(Icon2, obj4), label: intl2.string(channel(closeMediaModal[13]).t.zBoHlf), onPress: callback2 };
+    const ActionSheetRow2 = tmp(tmp2[11]).ActionSheetRow;
+    obj4 = { IconComponent: channel(closeMediaModal[14]).IdIcon };
+    Icon2 = tmp(tmp2[11]).ActionSheetRow.Icon;
+    intl2 = tmp(tmp2[13]).intl;
     setting = tmp10(ActionSheetRow2, obj3);
   }
   items3[1] = setting;
   if (canReportUserResult) {
-    const obj5 = { icon: closure_4(Icon3, obj6), label: intl3.string(channel(closeMediaModal[12]).t["+78Pfm"]), onPress: callback3, variant: "danger" };
-    const ActionSheetRow3 = tmp(tmp2[10]).ActionSheetRow;
-    obj6 = { IconComponent: channel(closeMediaModal[14]).FlagIcon };
-    Icon3 = tmp(tmp2[10]).ActionSheetRow.Icon;
-    intl3 = tmp(tmp2[12]).intl;
+    const obj5 = { icon: closure_4(Icon3, obj6), label: intl3.string(channel(closeMediaModal[13]).t["+78Pfm"]), onPress: callback3, variant: "danger" };
+    const ActionSheetRow3 = tmp(tmp2[11]).ActionSheetRow;
+    obj6 = { IconComponent: channel(closeMediaModal[15]).FlagIcon };
+    Icon3 = tmp(tmp2[11]).ActionSheetRow.Icon;
+    intl3 = tmp(tmp2[13]).intl;
     canReportUserResult = tmp10(ActionSheetRow3, obj5);
   }
   items3[2] = canReportUserResult;
   const obj7 = { children: tmp11(Group, { hasIcons: true, children: items3 }) };
   return closure_4(ActionSheet, obj7);
-});
+}));
 let result = size.fileFinishedImporting("modules/media_viewer/native/components/message_preview/MediaMessagePreviewActionSheet.tsx");
 
 export default memoResult;

@@ -1,18 +1,18 @@
-// Module ID: 4876
-// Function ID: 4877
+// Module ID: 4877
+// Function ID: 4878
 // Name: PresenceStore
-// Dependencies: [502, 1372, 1074, 4877, 12, 1331, 11, 504, 573, 2]
+// Dependencies: [502, 1378, 1086, 4878, 12, 1343, 11, 504, 585, 2]
 
-// Module 4876 (PresenceStore)
+// Module 4877 (PresenceStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import _modDef1331 from "module_1331" /* 1331 */;
-import hasRichActivityDefault from "hasRichActivity" /* 4877 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import _modDef1343 from "module_1343" /* 1343 */;
+import hasRichActivityDefault from "hasRichActivity" /* 4878 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -22,7 +22,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f79679 = (party) => {
+const f88660 = (party) => {
   party = party.party;
   let id;
   const application_id = party.application_id;
@@ -69,7 +69,7 @@ function sortActivity(type, type2) {
       num3 = 1;
     }
     let num4 = 0;
-    if (tmp3(4877)(type)) {
+    if (tmp3(4878)(type)) {
       num4 = 1;
     }
     diff = num3 - num4;
@@ -174,7 +174,7 @@ function flattenPresence(id) {
           const self = this;
           const self2 = this;
           const items1 = [];
-          map = new Map(reversed.map(f79679));
+          map = new Map(reversed.map(f88660));
           HermesBuiltin.arraySpread(items1, map.values(), 0);
           tmp7 = items1;
         }
@@ -203,7 +203,7 @@ function flattenPresence(id) {
       const self3 = this;
       const self4 = this;
       const items3 = [];
-      map1 = new Map(reversed1.map(f79679));
+      map1 = new Map(reversed1.map(f88660));
       HermesBuiltin.arraySpread(items3, map1.values(), 0);
       tmp19 = items3;
     }
@@ -285,14 +285,14 @@ function updatePresence(arg0) {
         const self = this;
         const self2 = this;
         const items2 = [];
-        map = new Map(reversed.map(f79679));
+        map = new Map(reversed.map(f88660));
         HermesBuiltin.arraySpread(items2, map.values(), 0);
         tmp14 = items2;
       }
       let activities2 = sorted;
       if (null != tmp6[guildId]) {
         activities2 = sorted;
-        if (_modDef1331(tmp6[guildId].activities, sorted)) {
+        if (_modDef1343(tmp6[guildId].activities, sorted)) {
           activities2 = tmp22.activities;
         }
       }
@@ -346,7 +346,7 @@ function updatePresenceInConnectionOpen(arg0) {
         const self = this;
         const self2 = this;
         const items2 = [];
-        map = new Map(reversed.map(f79679));
+        map = new Map(reversed.map(f88660));
         HermesBuiltin.arraySpread(items2, map.values(), 0);
         tmp14 = items2;
       }
@@ -549,7 +549,7 @@ class PresenceStore extends Store {
     }
     return this.findActivity(arg0, (application_id) => application_id.application_id === closure_0, tmp, true);
   }
-  findActivity(arg0, _messages) {
+  findActivity(arg0, cResult) {
     let tmp = arg2;
     if (arg2 === undefined) {
       tmp = null;
@@ -567,7 +567,7 @@ class PresenceStore extends Store {
     if (flag) {
       combined = activities.concat(self.getHiddenActivities(arg0, tmp));
     }
-    return combined.find(_messages);
+    return combined.find(cResult);
   }
   getActivityMetadata(arg0) {
     return activityMetadata[arg0];

@@ -1,19 +1,19 @@
-// Module ID: 10205
-// Function ID: 10206
+// Module ID: 10243
+// Function ID: 10244
 // Name: PremiumGiftingIntentActionCreators
-// Dependencies: [7072, 502, 5056, 1374, 1074, 1271, 573, 1231, 1241, 2]
+// Dependencies: [7076, 502, 5057, 1380, 1086, 1283, 585, 1243, 1253, 2]
 // Exports: fetchAndReconcileGiftIntentDismissals, logFriendsListGiftIntentsShown, logGiftIntentFlowPurchasedGift, logGiftIntentMessageDismissed, logMessageGiftIntentShown
 
-// Module 10205 (PremiumGiftingIntentActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7072 */;
+// Module 10243 (PremiumGiftingIntentActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7076 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MessageStore from "MessageStore" /* 5056 */;
-import Constants from "Constants" /* 1074 */;
+import MessageStore from "MessageStore" /* 5057 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let _require;
 
 let metroImportAll;
 let metroImportDefault;
-const f90804 = (error) => {
+const f103166 = (error) => {
   const obj = SentryUtilsDefault;
   obj.captureException(error, { tags: { feature: "gift_intent" } });
 };
@@ -94,7 +94,7 @@ export const logMessageGiftIntentShown = function logMessageGiftIntentShown(reci
     const request = { url: metroImportAll.GIFT_INTENTS_DISMISS, body: obj4, oldFormErrors: true, rejectWithError: true };
     obj4 = { intent_type: FRIEND_ANNIVERSARY, target_id: recipientUserId };
     const postResult = HTTP.post(request);
-    postResult.catch(f90804);
+    postResult.catch(f103166);
   }
 };
 export const logGiftIntentMessageDismissed = function logGiftIntentMessageDismissed(channel_id, id) {
@@ -124,7 +124,7 @@ export const logGiftIntentMessageDismissed = function logGiftIntentMessageDismis
       const request = { url: metroImportAll.GIFT_INTENTS_DISMISS, body: obj2, oldFormErrors: true, rejectWithError: true };
       obj2 = { intent_type: giftIntentType, target_id: recipientUserId };
       const postResult = HTTP.post(request);
-      postResult.catch(f90804);
+      postResult.catch(f103166);
     }
   }
 };
@@ -153,6 +153,6 @@ export const logGiftIntentFlowPurchasedGift = function logGiftIntentFlowPurchase
     const request = { url: metroImportAll.GIFT_INTENTS_DISMISS, body: obj4, oldFormErrors: true, rejectWithError: true };
     obj4 = { intent_type: FRIEND_ANNIVERSARY, target_id: recipientUserId };
     const postResult = HTTP.post(request);
-    postResult.catch(f90804);
+    postResult.catch(f103166);
   }
 };

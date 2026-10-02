@@ -1,19 +1,65 @@
-// Module ID: 6834
-// Function ID: 6835
+// Module ID: 6835
+// Function ID: 6836
 // Name: useStoreConnectionErrorAlert
-// Dependencies: [19, 6658, 504, 5203, 1115, 2]
-// Exports: default
+// Dependencies: [19, 6659, 558, 576, 504, 5204, 1127, 2]
 
-// Module 6834 (useStoreConnectionErrorAlert)
-import intl3 from "intl" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+// Module 6835 (useStoreConnectionErrorAlert)
+import intl3 from "intl" /* 1127 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 6658 */;
+import IAPStore from "IAPStore" /* 6659 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/premium/native/useStoreConnectionErrorAlert.tsx");
-
-export default function useStoreConnectionErrorAlert() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let stateFromStores;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  let tmp = stateFromStores;
+  let obj = stateFromStores(576);
+  const cResult = obj.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [IAPStore];
+    const fn = function s() {
+      return IAPStore.hasConnectionError();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = tmp(504);
+  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] !== stateFromStores) {
+    const fn2 = function c() {
+      let intl;
+      let intl2;
+      const tmp = stateFromStores;
+      if (tmp) {
+        const obj = { title: intl.string(intl3.t["U+H+kd"]), body: intl2.string(intl3.t.Q9OYlM) };
+        const show = AlertActionCreatorsDefault.show;
+        AlertActionCreatorsDefault;
+        intl = intl3.intl;
+        intl2 = intl3.intl;
+        show(obj);
+      }
+    };
+    const items1 = [stateFromStores];
+    cResult[2] = stateFromStores;
+    cResult[3] = fn2;
+    cResult[4] = items1;
+    tmp9 = items1;
+    tmp8 = fn2;
+  } else {
+    tmp8 = cResult[3];
+    tmp9 = cResult[4];
+  }
+  const effect = react.useEffect(tmp8, tmp9);
+}) : (() => {
   let stateFromStores;
   let obj = stateFromStores(504);
   const items = [IAPStore];
@@ -32,4 +78,7 @@ export default function useStoreConnectionErrorAlert() {
       show(obj);
     }
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/premium/native/useStoreConnectionErrorAlert.tsx");
+
+export default tmp2;

@@ -1,16 +1,19 @@
-// Module ID: 11656
-// Function ID: 11657
+// Module ID: 11542
+// Function ID: 11543
 // Name: ChatInputExpressionButton
-// Dependencies: [19, 21, 4836, 576, 4531, 5435, 1115, 1177, 10817, 8220, 2]
+// Dependencies: [19, 21, 4837, 588, 558, 576, 4535, 1127, 10814, 8217, 1189, 5436, 2]
 
-// Module 11656 (ChatInputExpressionButton)
+// Module 11542 (ChatInputExpressionButton)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import useToken from "useToken" /* 4531 */;
-import Pressables from "Pressables" /* 5435 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import useToken from "useToken" /* 4535 */;
+import Pressables from "Pressables" /* 5436 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -20,7 +23,104 @@ let closure_5 = createStyles.createStyles((height) => {
   ({ tintColor: nativeDefault.colors.CHAT_INPUT_ICON_DEFAULT_TINT });
   return obj;
 });
-const memoResult = react.memo((active) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let active;
+  let onPress;
+  let showKeyboardIcon;
+  let style;
+  let tmp11;
+  const obj = react2;
+  const cResult = obj.c(18);
+  ({ style, active, showKeyboardIcon, onPress } = arg0);
+  if (undefined === showKeyboardIcon) {
+    showKeyboardIcon = tmp4;
+  }
+  const tmpResult = useToken;
+  const token = tmpResult.useToken(nativeDefault.modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const tmpResult3 = useToken;
+  const token1 = tmpResult3.useToken(nativeDefault.modules.mobile.CHAT_INPUT_ICON_SIZE);
+  const tmpResult4 = useToken;
+  const token2 = tmpResult4.useToken(nativeDefault.modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const tmp9 = closure_5(token);
+  const bound = Math.max(0, (token2 - token) / 2);
+  const tmp5 = importDefault;
+  if (cResult[0] !== onPress) {
+    const fn = function l() {
+      onPress(undefined);
+    };
+    cResult[0] = onPress;
+    cResult[1] = fn;
+    tmp11 = fn;
+  } else {
+    tmp11 = cResult[1];
+  }
+  if (cResult[2] === style) {
+    let tmp13;
+    let tmp15;
+    let tmp17;
+    if (cResult[3] === tmp9.expressionButton) {
+      tmp13 = cResult[4];
+    }
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(intl2.t.iZ7Mz9);
+      cResult[5] = stringResult;
+      tmp15 = stringResult;
+    } else {
+      tmp15 = cResult[5];
+    }
+    if (cResult[6] !== (undefined !== active && active)) {
+      const obj2 = { expanded: undefined !== active && active };
+      cResult[6] = undefined !== active && active;
+      cResult[7] = obj2;
+      tmp17 = obj2;
+    } else {
+      tmp17 = cResult[7];
+    }
+    const tmp5Result = tmp5(showKeyboardIcon ? 10814 : 8217);
+    if (cResult[8] === tmp9.expressionButtonIconTint) {
+      if (cResult[9] === token1) {
+        let tmp19;
+        if (cResult[10] === tmp5Result) {
+          tmp19 = cResult[11];
+        }
+        if (cResult[12] === tmp11) {
+          if (cResult[13] === tmp19) {
+            if (cResult[14] === tmp13) {
+              if (cResult[15] === tmp14) {
+                let tmp22;
+                if (cResult[16] === tmp17) {
+                  tmp22 = cResult[17];
+                }
+                return tmp22;
+              }
+            }
+          }
+        }
+        const tmp24 = jsx(Pressables.PressableOpacity, { ref: tmp12, style: tmp13, hitSlop: tmp14, accessibilityRole: "button", accessibilityLabel: tmp15, accessibilityState: tmp17, onPress: tmp11, children: tmp19 });
+        cResult[12] = tmp11;
+        cResult[13] = tmp19;
+        cResult[14] = tmp13;
+        cResult[15] = tmp14;
+        cResult[16] = tmp17;
+        cResult[17] = tmp24;
+        tmp22 = tmp24;
+      }
+    }
+    const tmp21 = jsx(native.Icon, { size: token1, style: tmp9.expressionButtonIconTint, source: tmp5Result });
+    cResult[8] = tmp9.expressionButtonIconTint;
+    cResult[9] = token1;
+    cResult[10] = tmp5Result;
+    cResult[11] = tmp21;
+    tmp19 = tmp21;
+  }
+  const items = [tmp9.expressionButton, style];
+  cResult[2] = style;
+  cResult[3] = tmp9.expressionButton;
+  cResult[4] = items;
+  tmp13 = items;
+}) : ((active) => {
   let flag = active.active;
   const style = active.style;
   if (flag === undefined) {
@@ -50,11 +150,11 @@ const memoResult = react.memo((active) => {
   if (bound > 0) {
     tmp12 = bound;
   }
-  const intl = tmp(1115).intl;
-  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 10817 : 8220) });
-  const Icon = tmp(1177).Icon;
+  const intl = tmp(1127).intl;
+  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 10814 : 8217) });
+  const Icon = tmp(1189).Icon;
   return <PressableOpacity ref={react.useRef(null)} style={items1} hitSlop={tmp12} accessibilityRole="button" accessibilityLabel={intl.string(intl2.t.iZ7Mz9)} accessibilityState={{ expanded: flag }} onPress={callback}>{null}</PressableOpacity>;
-});
+}));
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/chat_input/native/accessories/ChatInputExpressionButton.tsx");
 

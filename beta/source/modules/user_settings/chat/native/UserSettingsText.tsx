@@ -1,29 +1,38 @@
-// Module ID: 15012
-// Function ID: 15013
+// Module ID: 15000
+// Function ID: 15001
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1372, 4494, 1183, 1184, 1074, 21, 4836, 576, 1241, 2021, 8659, 4531, 504, 4488, 1485, 6411, 1177, 9860, 4832, 1115, 8053, 5279, 5999, 6621, 5997, 6000, 2]
-// Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
+// Dependencies: [19, 17, 1378, 4497, 1195, 1196, 1086, 21, 4837, 588, 1253, 2027, 8656, 558, 576, 4535, 504, 4491, 1491, 6411, 5997, 1127, 6621, 1189, 9895, 4833, 5995, 5994, 8057, 5280, 2]
+// Exports: setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 15012 (UserSettingsText)
+// Module 15000 (UserSettingsText)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1184 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2021 */;
+import nativeDefault from "native" /* 588 */;
+import intl23 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1196 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import TableRadioRow4 from "TableRadioRow" /* 5994 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 5995 */;
+import TableRowGroup7 from "TableRowGroup" /* 5997 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8659 */;
+import TableSwitchRow8 from "TableSwitchRow" /* 6621 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8656 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9895 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
-import SubscriptionStore from "SubscriptionStore" /* 4494 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
-import Constants from "Constants" /* 1074 */;
+import UserStore from "UserStore" /* 1378 */;
+import SubscriptionStore from "SubscriptionStore" /* 4497 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1195 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const UnsyncedUserSettingsStore = UnsyncedUserSettingsStore2;
-let closure_4;
+let _require, closure_4;
 
 let c10;
 let c9;
@@ -39,10 +48,173 @@ const VideoQualitySettings = UnsyncedUserSettingsStore2.VideoQualitySettings;
 let obj = { flex: { flex: 1 }, nitroUpsell: { flexDirection: "row", alignItems: "center" }, nitroIcon: size };
 size = { width: 16, height: 16, tintColor: nativeDefault.unsafe_rawColors.PRIMARY_400 };
 let closure_15 = createStyles.createStyles(obj);
-size = size_mod;
-let result = size.fileFinishedImporting("modules/user_settings/chat/native/UserSettingsText.tsx");
-
-export default function UserSettingsText() {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_0;
+  let dataSavingMode;
+  let onChange;
+  let onValueChange2;
+  let onValueChange3;
+  let setting;
+  let setting1;
+  let tmp10;
+  let tmp11;
+  let tmp14;
+  let tmp15;
+  let tmp18;
+  let tmp19;
+  let tmp = _require;
+  let tmp2 = setting1;
+  let obj = require("react");
+  const cResult = obj.c(74);
+  let obj2 = require("useToken");
+  const token = obj2.useToken(setting(setting1[9]).modules.mobile.TABLE_ROW_PADDING);
+  _require = closure_15();
+  closure_15();
+  const InlineAttachmentMedia = require("UserSettings").InlineAttachmentMedia;
+  setting = InlineAttachmentMedia.useSetting();
+  const InlineEmbedMedia = require("UserSettings").InlineEmbedMedia;
+  setting1 = InlineEmbedMedia.useSetting();
+  const RenderEmbeds = require("UserSettings").RenderEmbeds;
+  const setting2 = RenderEmbeds.useSetting();
+  const RenderReactions = require("UserSettings").RenderReactions;
+  const setting3 = RenderReactions.useSetting();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [dataSavingMode];
+    const fn = function p() {
+      return { lowQualityImageMode: dataSavingMode.dataSavingMode, videoUploadQuality: dataSavingMode.videoUploadQuality, dataSavingMode: dataSavingMode.dataSavingMode };
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp10 = items;
+    tmp11 = fn;
+  } else {
+    [tmp10, tmp11] = cResult;
+  }
+  const tmpResult = tmp(tmp2[16]);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp10, tmp11);
+  const lowQualityImageMode = stateFromStoresObject.lowQualityImageMode;
+  const videoUploadQuality = stateFromStoresObject.videoUploadQuality;
+  dataSavingMode = stateFromStoresObject.dataSavingMode;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let items1 = [lowQualityImageMode];
+    class D {
+      constructor() {
+        return lowQualityImageMode.getPremiumTypeSubscription();
+      }
+    }
+    cResult[2] = items1;
+    cResult[3] = D;
+    tmp15 = D;
+    tmp14 = items1;
+  } else {
+    tmp14 = cResult[2];
+    tmp15 = cResult[3];
+  }
+  const tmpResult5 = tmp(tmp2[16]);
+  const stateFromStores = tmpResult5.useStateFromStores(tmp14, tmp15);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [setting3];
+    class D {
+      constructor() {
+        return lowQualityImageMode.getPremiumTypeSubscription();
+      }
+    }
+    cResult[4] = items2;
+    cResult[5] = tmp21;
+    tmp19 = tmp21;
+    tmp18 = items2;
+  } else {
+    tmp18 = cResult[4];
+    tmp19 = cResult[5];
+  }
+  const tmpResult6 = tmp(tmp2[16]);
+  const stateFromStores1 = tmpResult6.useStateFromStores(tmp18, tmp19);
+  if (cResult[6] === stateFromStores) {
+    let tmp23;
+    let tmp27;
+    let tmp26;
+    if (cResult[7] === stateFromStores1) {
+      tmp23 = cResult[8];
+    }
+    let closure_8 = tmp23;
+    const _Symbol = Symbol;
+    class D {
+      constructor() {
+        return lowQualityImageMode.getPremiumTypeSubscription();
+      }
+    }
+    if (tmp25 === Symbol.for("react.memo_cache_sentinel")) {
+      const items3 = [videoUploadQuality];
+      class N {
+        constructor() {
+          return videoUploadQuality.shouldSync("text");
+        }
+      }
+      cResult[9] = items3;
+      cResult[10] = N;
+      tmp27 = N;
+      tmp26 = items3;
+    } else {
+      tmp26 = cResult[9];
+      tmp27 = cResult[10];
+    }
+    const tmpResult7 = tmp(tmp2[16]);
+    const stateFromStores2 = tmpResult7.useStateFromStores(tmp26, tmp27);
+    let ViewImageDescriptions = tmp(tmp2[11]).ViewImageDescriptions;
+    const setting4 = ViewImageDescriptions.useSetting();
+    const _Symbol2 = Symbol;
+    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+      class L {
+        constructor(shouldSync) {
+          const obj = setting(setting1[12]);
+          const result = obj.setShouldSyncTextSettings(shouldSync);
+        }
+      }
+      cResult[11] = L;
+      class N {
+        constructor() {
+          return videoUploadQuality.shouldSync("text");
+        }
+      }
+    } else {
+      class L {
+        constructor(shouldSync) {
+          const obj = setting(setting1[12]);
+          const result = obj.setShouldSyncTextSettings(shouldSync);
+        }
+      }
+    }
+    const onValueChange = tmp31;
+    if (cResult[12] === lowQualityImageMode) {
+      class L {
+        constructor(shouldSync) {
+          const obj = setting(setting1[12]);
+          const result = obj.setShouldSyncTextSettings(shouldSync);
+        }
+      }
+    }
+    class W {
+      constructor(data_saving_mode) {
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { video_upload_quality: videoUploadQuality, image_descriptions: setting4, low_quality_image_mode: lowQualityImageMode, data_saving_mode, updated_setting: "data_saving_mode" };
+        obj.track(stateFromStores2.IMAGE_VIDEO_DATA_SETTINGS_UPDATED, obj2);
+        const obj3 = UserSettingsActionCreatorsDefault;
+        const obj4 = { dataSavingMode: data_saving_mode };
+        const result = obj3.updatedUnsyncedSettings(obj4);
+      }
+    }
+    cResult[12] = lowQualityImageMode;
+    cResult[13] = videoUploadQuality;
+    cResult[14] = setting4;
+    cResult[15] = W;
+  }
+  const tmpResult8 = tmp(tmp2[17]);
+  let result = tmpResult8.hasPremiumSubscriptionToDisplay(stateFromStores1, stateFromStores);
+  cResult[6] = stateFromStores;
+  cResult[7] = stateFromStores1;
+  cResult[8] = result;
+  tmp23 = result;
+}) : (() => {
   let Form;
   let TableSwitchRow3;
   let TableSwitchRow4;
@@ -85,6 +257,7 @@ export default function UserSettingsText() {
   let obj30;
   let obj32;
   let premiumTypeSubscription;
+  let require;
   let str;
   let videoUploadQuality;
   let obj = require("useToken");
@@ -190,11 +363,11 @@ export default function UserSettingsText() {
   let tmp18Result = !result;
   if (tmp18Result) {
     const obj20 = { style: tmp5.nitroUpsell, children: items9 };
-    const obj21 = { source: tmp3(dataSavingMode[19]), size: require("native").Icon.Sizes.SMALL, style: tmp5.nitroIcon };
-    const Icon = tmp(tmp2[18]).Icon;
+    const obj21 = { source: tmp3(dataSavingMode[24]), size: require("native").Icon.Sizes.SMALL, style: tmp5.nitroIcon };
+    const Icon = tmp(tmp2[23]).Icon;
     items9 = [closure_12(Icon, obj21), ];
     const obj22 = { variant: "text-sm/medium", color: "text-muted", style: { marginLeft: 4 }, children: intl12.format(require("intl").t.uW1zul, obj23) };
-    const Text = tmp(tmp2[20]).Text;
+    const Text = tmp(tmp2[25]).Text;
     intl12 = tmp(tmp2[21]).intl;
     obj23 = {
       onClick() {
@@ -222,41 +395,78 @@ export default function UserSettingsText() {
   obj24 = { children: closure_13(Stack, obj9) };
   items6[1] = closure_13(setting4, { children: items8 });
   const obj25 = { title: intl13.string(require("intl").t.fyG8t2), description: intl14.string(require("intl").t["wC0+Ph"]), hasIcons: false, children: closure_12(TableSwitchRow4, obj26) };
-  const TableRowGroup3 = tmp(tmp2[24]).TableRowGroup;
+  const TableRowGroup3 = tmp(tmp2[20]).TableRowGroup;
   intl13 = tmp(tmp2[21]).intl;
   intl14 = tmp(tmp2[21]).intl;
   obj26 = { label: intl15.string(require("intl").t.ix8XIj), value: dataSavingMode, onValueChange: toggleDataSavingMode };
-  TableSwitchRow4 = tmp(tmp2[25]).TableSwitchRow;
+  TableSwitchRow4 = tmp(tmp2[22]).TableSwitchRow;
   intl15 = tmp(tmp2[21]).intl;
   items6[2] = closure_12(TableRowGroup3, obj25);
   const obj27 = { title: intl16.string(require("intl").t.PWZOn4), hasIcons: false, children: closure_12(TableSwitchRow5, obj28) };
-  const TableRowGroup4 = tmp(tmp2[24]).TableRowGroup;
+  const TableRowGroup4 = tmp(tmp2[20]).TableRowGroup;
   intl16 = tmp(tmp2[21]).intl;
   obj28 = { label: intl17.string(require("intl").t["5bK9vw"]), value: setting2, onValueChange: require("UserSettings").RenderEmbeds.updateSetting };
-  TableSwitchRow5 = tmp(tmp2[25]).TableSwitchRow;
+  TableSwitchRow5 = tmp(tmp2[22]).TableSwitchRow;
   intl17 = tmp(tmp2[21]).intl;
   items6[3] = closure_12(TableRowGroup4, obj27);
   const obj29 = { title: intl18.string(require("intl").t.sMOuuS), hasIcons: false, children: closure_12(TableSwitchRow6, obj30) };
-  const TableRowGroup5 = tmp(tmp2[24]).TableRowGroup;
+  const TableRowGroup5 = tmp(tmp2[20]).TableRowGroup;
   intl18 = tmp(tmp2[21]).intl;
   obj30 = { label: intl19.string(require("intl").t["zge/fP"]), value: setting3, onValueChange: require("UserSettings").RenderReactions.updateSetting };
-  TableSwitchRow6 = tmp(tmp2[25]).TableSwitchRow;
+  TableSwitchRow6 = tmp(tmp2[22]).TableSwitchRow;
   intl19 = tmp(tmp2[21]).intl;
   items6[4] = closure_12(TableRowGroup5, obj29);
   const obj31 = { title: intl20.string(require("intl").t.BkuOO6), description: intl21.string(require("intl").t.p4IKE9), hasIcons: false, children: closure_12(TableSwitchRow7, obj32) };
-  const TableRowGroup6 = tmp(tmp2[24]).TableRowGroup;
+  const TableRowGroup6 = tmp(tmp2[20]).TableRowGroup;
   intl20 = tmp(tmp2[21]).intl;
   intl21 = tmp(tmp2[21]).intl;
   obj32 = { label: intl22.string(require("intl").t["3340dY"]), value: false !== stateFromStores2, onValueChange: handleSync };
-  TableSwitchRow7 = tmp(tmp2[25]).TableSwitchRow;
+  TableSwitchRow7 = tmp(tmp2[22]).TableSwitchRow;
   intl22 = tmp(tmp2[21]).intl;
   items6[5] = closure_12(TableRowGroup6, obj31);
   return closure_12(setting4, obj8);
-};
+});
+function setDataSavingMode(dataSavingMode) {
+  let lowQualityImageMode;
+  let videoUploadQuality;
+  let viewImageDescriptions;
+  dataSavingMode = dataSavingMode.dataSavingMode;
+  ({ videoUploadQuality, viewImageDescriptions, lowQualityImageMode } = dataSavingMode);
+  const obj = AnalyticsUtilsDefault;
+  obj.track(constants.IMAGE_VIDEO_DATA_SETTINGS_UPDATED, { video_upload_quality: videoUploadQuality, image_descriptions: viewImageDescriptions, low_quality_image_mode: lowQualityImageMode, data_saving_mode: dataSavingMode, updated_setting: "data_saving_mode" });
+  const obj2 = UserSettingsActionCreatorsDefault;
+  const result = obj2.updatedUnsyncedSettings({ dataSavingMode });
+}
+function setVideoUploadQuality(videoUploadQuality) {
+  let dataSavingMode;
+  let lowQualityImageMode;
+  let viewImageDescriptions;
+  videoUploadQuality = videoUploadQuality.videoUploadQuality;
+  ({ viewImageDescriptions, lowQualityImageMode, dataSavingMode } = videoUploadQuality);
+  const obj = AnalyticsUtilsDefault;
+  obj.track(constants.IMAGE_VIDEO_DATA_SETTINGS_UPDATED, { video_upload_quality: videoUploadQuality, image_descriptions: viewImageDescriptions, low_quality_image_mode: lowQualityImageMode, data_saving_mode: dataSavingMode, updated_setting: "video_upload_quality" });
+  const obj2 = UserSettingsActionCreatorsDefault;
+  const result = obj2.updatedUnsyncedSettings({ videoUploadQuality });
+}
+function setImageDescriptions(viewImageDescriptions) {
+  let dataSavingMode;
+  let lowQualityImageMode;
+  let videoUploadQuality;
+  viewImageDescriptions = viewImageDescriptions.viewImageDescriptions;
+  ({ videoUploadQuality, lowQualityImageMode, dataSavingMode } = viewImageDescriptions);
+  const obj = AnalyticsUtilsDefault;
+  obj.track(constants.IMAGE_VIDEO_DATA_SETTINGS_UPDATED, { video_upload_quality: videoUploadQuality, image_descriptions: viewImageDescriptions, low_quality_image_mode: lowQualityImageMode, data_saving_mode: dataSavingMode, updated_setting: "image_descriptions" });
+  const ViewImageDescriptions = UserSettings.ViewImageDescriptions;
+  ViewImageDescriptions.updateSetting(viewImageDescriptions);
+}
+size = size_mod;
+let result = size.fileFinishedImporting("modules/user_settings/chat/native/UserSettingsText.tsx");
+
+export default tmp5;
 export const setStickerAutocomplete = function setStickerAutocomplete(enabled) {
   let obj3;
   const obj2 = { enabled, location: obj3 };
-  obj3 = { section: constants2.SETTINGS_TEXT_AND_IMAGES };
+  obj3 = { section: image_descriptions.SETTINGS_TEXT_AND_IMAGES };
   const obj = AnalyticsUtilsDefault;
   obj.track(constants.STICKERS_IN_AUTOCOMPLETE_TOGGLED, obj2);
   const IncludeStickersInAutocomplete = UserSettings.IncludeStickersInAutocomplete;
@@ -273,36 +483,6 @@ export const setLowQualityImageMode = function setLowQualityImageMode(lowQuality
   const obj2 = UserSettingsActionCreatorsDefault;
   const result = obj2.updatedUnsyncedSettings({ lowQualityImageMode });
 };
-export const setDataSavingMode = function setDataSavingMode(dataSavingMode) {
-  let lowQualityImageMode;
-  let videoUploadQuality;
-  let viewImageDescriptions;
-  dataSavingMode = dataSavingMode.dataSavingMode;
-  ({ videoUploadQuality, viewImageDescriptions, lowQualityImageMode } = dataSavingMode);
-  const obj = AnalyticsUtilsDefault;
-  obj.track(constants.IMAGE_VIDEO_DATA_SETTINGS_UPDATED, { video_upload_quality: videoUploadQuality, image_descriptions: viewImageDescriptions, low_quality_image_mode: lowQualityImageMode, data_saving_mode: dataSavingMode, updated_setting: "data_saving_mode" });
-  const obj2 = UserSettingsActionCreatorsDefault;
-  const result = obj2.updatedUnsyncedSettings({ dataSavingMode });
-};
-export const setVideoUploadQuality = function setVideoUploadQuality(videoUploadQuality) {
-  let dataSavingMode;
-  let lowQualityImageMode;
-  let viewImageDescriptions;
-  videoUploadQuality = videoUploadQuality.videoUploadQuality;
-  ({ viewImageDescriptions, lowQualityImageMode, dataSavingMode } = videoUploadQuality);
-  const obj = AnalyticsUtilsDefault;
-  obj.track(constants.IMAGE_VIDEO_DATA_SETTINGS_UPDATED, { video_upload_quality: videoUploadQuality, image_descriptions: viewImageDescriptions, low_quality_image_mode: lowQualityImageMode, data_saving_mode: dataSavingMode, updated_setting: "video_upload_quality" });
-  const obj2 = UserSettingsActionCreatorsDefault;
-  const result = obj2.updatedUnsyncedSettings({ videoUploadQuality });
-};
-export const setImageDescriptions = function setImageDescriptions(viewImageDescriptions) {
-  let dataSavingMode;
-  let lowQualityImageMode;
-  let videoUploadQuality;
-  viewImageDescriptions = viewImageDescriptions.viewImageDescriptions;
-  ({ videoUploadQuality, lowQualityImageMode, dataSavingMode } = viewImageDescriptions);
-  const obj = AnalyticsUtilsDefault;
-  obj.track(constants.IMAGE_VIDEO_DATA_SETTINGS_UPDATED, { video_upload_quality: videoUploadQuality, image_descriptions: viewImageDescriptions, low_quality_image_mode: lowQualityImageMode, data_saving_mode: dataSavingMode, updated_setting: "image_descriptions" });
-  const ViewImageDescriptions = UserSettings.ViewImageDescriptions;
-  ViewImageDescriptions.updateSetting(viewImageDescriptions);
-};
+export { setDataSavingMode };
+export { setVideoUploadQuality };
+export { setImageDescriptions };

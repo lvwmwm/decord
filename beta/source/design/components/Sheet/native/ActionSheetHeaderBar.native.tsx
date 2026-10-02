@@ -1,19 +1,20 @@
-// Module ID: 6575
-// Function ID: 6576
+// Module ID: 6576
+// Function ID: 6577
 // Name: ActionSheetHeaderBar
-// Dependencies: [19, 17, 21, 4836, 576, 1115, 1479, 4531, 5266, 2]
-// Exports: ActionSheetHeaderBar
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1127, 1485, 4535, 5267, 2]
 
-// Module 6575 (ActionSheetHeaderBar)
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
-import useToken from "useToken" /* 4531 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5266 */;
+// Module 6576 (ActionSheetHeaderBar)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1485 */;
+import useToken from "useToken" /* 4535 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5267 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -44,7 +45,7 @@ let closure_10 = createStyles.createStyles((arg0, height, marginBottom) => {
     const obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
   } else if ("overlay" === arg0) {
     const obj5 = { backgroundColor: nativeDefault.unsafe_rawColors.WHITE };
-    const merged1 = Object.assign(tmp2(576).shadows.SHADOW_LOW);
+    const merged1 = Object.assign(tmp2(588).shadows.SHADOW_LOW);
     tmp4 = obj5;
   }
   const merged2 = Object.assign(tmp4);
@@ -52,10 +53,120 @@ let closure_10 = createStyles.createStyles((arg0, height, marginBottom) => {
   const merged3 = Object.assign(absoluteFillObject.absoluteFillObject);
   return obj2;
 });
-let size = size_mod;
-const result = size.fileFinishedImporting("design/components/Sheet/native/ActionSheetHeaderBar.native.tsx");
-
-export const ActionSheetHeaderBar = function ActionSheetHeaderBar(accessibilityLabel) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let accessibilityLabel;
+  let items;
+  let items1;
+  let onPress;
+  let style;
+  let tabStyle;
+  let tmp4;
+  let variant;
+  const obj = react2;
+  const cResult = obj.c(21);
+  ({ accessibilityLabel, style, tabStyle, onPress, variant } = arg0);
+  if (cResult[0] !== accessibilityLabel) {
+    let stringResult = accessibilityLabel;
+    if (undefined === accessibilityLabel) {
+      const intl = tmp(1127).intl;
+      stringResult = intl.string(tmp(1127).t.WAI6xu);
+    }
+    cResult[0] = accessibilityLabel;
+    cResult[1] = stringResult;
+    tmp4 = stringResult;
+  } else {
+    tmp4 = cResult[1];
+  }
+  let str = "default";
+  if (undefined !== variant) {
+    str = variant;
+  }
+  const height = useWindowDimensionsDefault().height;
+  const tmpResult = useToken;
+  const tmp6 = closure_10(str, height, tmpResult.useToken(nativeDefault.modules.mobile.SHEET_HANDLE_MARGIN_BOTTOM));
+  useIsScreenReaderEnabled;
+  if (cResult[2] === style) {
+    let tmp9;
+    if (cResult[3] === tmp6.header) {
+      tmp9 = cResult[4];
+    }
+    if (cResult[5] === tmp6.indicator) {
+      let tmp10;
+      if (cResult[6] === tabStyle) {
+        tmp10 = cResult[7];
+      }
+      if (cResult[8] === tmp9) {
+        let tmp14;
+        if (cResult[9] === tmp10) {
+          tmp14 = cResult[10];
+        }
+        if (cResult[11] === onPress) {
+          let tmp18;
+          if (cResult[12] === tmp14) {
+            tmp18 = cResult[13];
+          }
+          let tmp22 = tmp18;
+          if (tmp8) {
+            if (cResult[14] === tmp4) {
+              if (cResult[15] === onPress) {
+                let tmp23;
+                if (cResult[16] === tmp6.accessibleDismiss) {
+                  tmp23 = cResult[17];
+                }
+                if (cResult[18] === tmp18) {
+                  let tmp27;
+                  if (cResult[19] === tmp23) {
+                    tmp27 = cResult[20];
+                  }
+                  tmp22 = tmp27;
+                }
+                const obj2 = { children: items };
+                items = [tmp23, tmp18];
+                const tmp30 = React4(metroImportAll, obj2);
+                cResult[18] = tmp18;
+                cResult[19] = tmp23;
+                cResult[20] = tmp30;
+                tmp27 = tmp30;
+              }
+            }
+            const obj3 = { style: tmp6.accessibleDismiss, accessible: true, accessibilityLabel: tmp4, accessibilityRole: "button", onPress };
+            const tmp26 = metroImportDefault(_false, obj3);
+            cResult[14] = tmp4;
+            cResult[15] = onPress;
+            cResult[16] = tmp6.accessibleDismiss;
+            cResult[17] = tmp26;
+            tmp23 = tmp26;
+          }
+          return tmp22;
+        }
+        const obj4 = { onPress, onAccessibilityEscape: onPress, "aria-hidden": true, children: tmp14 };
+        const tmp21 = metroImportDefault(hasOwnProperty, obj4);
+        cResult[11] = onPress;
+        cResult[12] = tmp14;
+        cResult[13] = tmp21;
+        tmp18 = tmp21;
+      }
+      const obj5 = { style: tmp9, children: tmp10 };
+      const tmp17 = metroImportDefault(metroRequire, obj5);
+      cResult[8] = tmp9;
+      cResult[9] = tmp10;
+      cResult[10] = tmp17;
+      tmp14 = tmp17;
+    }
+    const obj6 = { style: items1 };
+    items1 = [tmp6.indicator, tabStyle];
+    const tmp13 = metroImportDefault(metroRequire, obj6);
+    cResult[5] = tmp6.indicator;
+    cResult[6] = tabStyle;
+    cResult[7] = tmp13;
+    tmp10 = tmp13;
+  }
+  const items2 = [tmp6.header, style];
+  cResult[2] = style;
+  cResult[3] = tmp6.header;
+  cResult[4] = items2;
+  tmp9 = items2;
+}) : ((accessibilityLabel) => {
   let items;
   let items1;
   let items2;
@@ -94,4 +205,8 @@ export const ActionSheetHeaderBar = function ActionSheetHeaderBar(accessibilityL
     tmp7 = React4(metroImportAll, obj6);
   }
   return tmp7;
-};
+});
+let size = size_mod;
+const result = size.fileFinishedImporting("design/components/Sheet/native/ActionSheetHeaderBar.native.tsx");
+
+export const ActionSheetHeaderBar = tmp5;

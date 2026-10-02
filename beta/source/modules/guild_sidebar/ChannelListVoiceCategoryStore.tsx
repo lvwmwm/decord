@@ -1,11 +1,11 @@
-// Module ID: 6953
-// Function ID: 6954
+// Module ID: 6957
+// Function ID: 6958
 // Name: ChannelListVoiceCategoryStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 6953 (ChannelListVoiceCategoryStore)
+// Module 6957 (ChannelListVoiceCategoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 function handleChange(guildId) {

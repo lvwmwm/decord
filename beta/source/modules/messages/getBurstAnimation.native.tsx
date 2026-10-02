@@ -1,10 +1,10 @@
-// Module ID: 7204
-// Function ID: 7205
+// Module ID: 7208
+// Function ID: 7209
 // Name: getBurstAnimation
-// Dependencies: [5, 7205, 7206, 7207, 7208, 7209, 7210, 7211, 7212, 7213, 7214, 7215, 7216, 7217, 7218, 7219, 7220, 7221, 7222, 7223, 7224, 7225, 7226, 7227, 7228, 7229, 7230, 7231, 7232, 7233, 7234, 7235, 7236, 7237, 7238, 7239, 7240, 7241, 2]
+// Dependencies: [5, 7209, 7210, 7211, 7212, 7213, 7214, 7215, 7216, 7217, 7218, 7219, 7220, 7221, 7222, 7223, 7224, 7225, 7226, 7227, 7228, 7229, 7230, 7231, 7232, 7233, 7234, 7235, 7236, 7237, 7238, 7239, 7240, 7241, 7242, 7243, 7244, 7245, 2]
 // Exports: getBurstAnimation
 
-// Module 7204 (getBurstAnimation)
+// Module 7208 (getBurstAnimation)
 import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -13,31 +13,11 @@ let closure_5;
 
 const obj = {
   load() {
-    return require("module_7205");
+    return require("module_7209");
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return require("module_7206");
-    }
-  },
-  {
-    load() {
-      return require("module_7207");
-    }
-  },
-  {
-    load() {
-      return require("module_7208");
-    }
-  },
-  {
-    load() {
-      return require("module_7209");
-    }
-  },
   {
     load() {
       return require("module_7210");
@@ -102,15 +82,12 @@ const items = [
     load() {
       return require("module_7222");
     }
-  }
-];
-const obj2 = {
-  load() {
-    return require("module_7223");
-  }
-};
-const items1 = [
-  obj2,
+  },
+  {
+    load() {
+      return require("module_7223");
+    }
+  },
   {
     load() {
       return require("module_7224");
@@ -125,12 +102,15 @@ const items1 = [
     load() {
       return require("module_7226");
     }
-  },
-  {
-    load() {
-      return require("module_7227");
-    }
-  },
+  }
+];
+const obj2 = {
+  load() {
+    return require("module_7227");
+  }
+};
+const items1 = [
+  obj2,
   {
     load() {
       return require("module_7228");
@@ -195,6 +175,26 @@ const items1 = [
     load() {
       return require("module_7240");
     }
+  },
+  {
+    load() {
+      return require("module_7241");
+    }
+  },
+  {
+    load() {
+      return require("module_7242");
+    }
+  },
+  {
+    load() {
+      return require("module_7243");
+    }
+  },
+  {
+    load() {
+      return require("module_7244");
+    }
   }
 ];
 let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
@@ -215,7 +215,7 @@ let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -238,7 +238,7 @@ let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
             burstAnimationHash = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (arg0 === 1) {
           c7 = 3;

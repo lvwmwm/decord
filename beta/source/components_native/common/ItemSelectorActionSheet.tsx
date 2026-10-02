@@ -1,24 +1,144 @@
-// Module ID: 8729
-// Function ID: 8730
+// Module ID: 8724
+// Function ID: 8725
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 4531, 576, 1613, 6571, 6570, 6619, 6045, 5997, 6000, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 4535, 588, 1619, 6619, 6571, 5994, 5995, 6038, 6572, 2]
 
-// Module 8729 (ItemSelectorActionSheet)
-import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+// Module 8724 (ItemSelectorActionSheet)
+import nativeDefault from "native" /* 588 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet;
+let BottomSheet, selectedItem;
 
 let c3;
 let closure_4;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const result = size.fileFinishedImporting("components_native/common/ItemSelectorActionSheet.tsx");
-
-export default function ItemSelectorActionSheet(arg0) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedItem) => {
+  let body;
+  let hasIcons;
+  let items;
+  let onClose;
+  let onItemSelect;
+  let title;
+  let tmp6;
+  let obj = items(onItemSelect[3]);
+  const cResult = obj.c(29);
+  ({ title, body, items } = selectedItem);
+  selectedItem = selectedItem.selectedItem;
+  onItemSelect = selectedItem.onItemSelect;
+  ({ onClose, hasIcons } = selectedItem);
+  const obj2 = items(onItemSelect[4]);
+  const token = obj2.useToken(selectedItem(onItemSelect[5]).modules.mobile.TABLE_ROW_PADDING);
+  const bottom = selectedItem(onItemSelect[6])().bottom;
+  const tmp4 = selectedItem;
+  if (cResult[0] !== selectedItem) {
+    const fn = function n(value) {
+      return value.value === selectedItem;
+    };
+    cResult[0] = selectedItem;
+    cResult[1] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[1];
+  }
+  const findIndexResult = items.findIndex(tmp6);
+  if (cResult[2] === items) {
+    let tmp8;
+    let tmp9;
+    if (cResult[3] === onItemSelect) {
+      tmp8 = cResult[4];
+    }
+    if (cResult[5] !== onClose) {
+      let tmp10 = null;
+      if (null != onClose) {
+        const obj3 = { onPress: onClose };
+        tmp10 = closure_3(tmp(tmp2[7]).ActionSheetCloseButton, obj3);
+      }
+      cResult[5] = onClose;
+      cResult[6] = tmp10;
+      tmp9 = tmp10;
+    } else {
+      tmp9 = cResult[6];
+    }
+    if (cResult[7] === tmp9) {
+      const sum = bottom + tmp4(tmp2[5]).space.PX_16;
+      if (cResult[10] === sum) {
+        let num12 = -1;
+        if (findIndexResult >= 0) {
+          num12 = findIndexResult;
+        }
+        if (cResult[13] !== items) {
+          let tmp19;
+          const _Symbol = Symbol;
+          if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+            class P {
+              constructor(label, value) {
+                const obj = { label: label.label, value };
+                return closure_1_3(items(onItemSelect[9]).TableRadioRow, obj, value);
+              }
+            }
+            cResult[15] = P;
+            tmp19 = P;
+          } else {
+            class P {
+              constructor(label, value) {
+                const obj = { label: label.label, value };
+                return closure_1_3(items(onItemSelect[9]).TableRadioRow, obj, value);
+              }
+            }
+          }
+          const mapped = items.map(tmp19);
+          cResult[13] = items;
+          cResult[14] = mapped;
+        } else {
+          class P {
+            constructor(label, value) {
+              const obj = { label: label.label, value };
+              return closure_1_3(items(onItemSelect[9]).TableRadioRow, obj, value);
+            }
+          }
+        }
+        if (cResult[16] === tmp8) {
+          class P {
+            constructor(label, value) {
+              const obj = { label: label.label, value };
+              return closure_1_3(items(onItemSelect[9]).TableRadioRow, obj, value);
+            }
+          }
+        }
+        const obj4 = { value: num12, accessibilityLabel: title, hasIcons, onChange: tmp8, children: tmp17 };
+        cResult[16] = tmp8;
+        cResult[17] = hasIcons;
+        cResult[18] = num12;
+        cResult[19] = tmp17;
+        cResult[20] = title;
+        cResult[21] = closure_3(items(onItemSelect[10]).TableRadioGroup, obj4);
+        const tmp23 = closure_3(items(onItemSelect[10]).TableRadioGroup, obj4);
+      }
+      const obj5 = { paddingHorizontal: token, paddingBottom: sum };
+      cResult[10] = sum;
+      cResult[11] = token;
+      cResult[12] = obj5;
+    }
+    const obj6 = { title, trailing: tmp9 };
+    cResult[7] = tmp9;
+    cResult[8] = title;
+    cResult[9] = closure_3(items(onItemSelect[8]).BottomSheetTitleHeader, obj6);
+    const tmp14 = closure_3(items(onItemSelect[8]).BottomSheetTitleHeader, obj6);
+  }
+  const fn2 = function _(arg0) {
+    if (null != items[arg0]) {
+      onItemSelect(items[arg0].value);
+    }
+  };
+  cResult[2] = items;
+  cResult[3] = onItemSelect;
+  cResult[4] = fn2;
+  tmp8 = fn2;
+}) : ((arg0) => {
   let BottomSheetScrollView;
   let body;
   let hasIcons;
@@ -33,14 +153,14 @@ export default function ItemSelectorActionSheet(arg0) {
   ({ title, items } = arg0);
   ({ selectedItem: importDefault, onItemSelect: dependencyMap, onClose } = arg0);
   ({ body, hasIcons } = arg0);
-  let obj = items(4531);
+  let obj = items(4535);
   const token = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
   const bottom = useSafeAreaInsetsDefault().bottom;
   const findIndexResult = items.findIndex((value) => value.value === importDefault);
-  BottomSheet = items(6571).BottomSheet;
+  BottomSheet = items(6572).BottomSheet;
   const obj2 = { title, trailing: tmp6Result };
   tmp6Result = null;
-  const BottomSheetTitleHeader = items(6570).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = items(6571).BottomSheetTitleHeader;
   if (null != onClose) {
     const obj3 = { onPress: onClose };
     tmp6Result = tmp6(tmp(6619).ActionSheetCloseButton, obj3);
@@ -48,10 +168,10 @@ export default function ItemSelectorActionSheet(arg0) {
   const obj4 = { scrollable: true, header: closure_3(BottomSheetTitleHeader, obj2), children: tmp8(BottomSheetScrollView, obj5) };
   obj5 = { contentContainerStyle: obj6, children: items1 };
   obj6 = { paddingHorizontal: token, paddingBottom: bottom + nativeDefault.space.PX_16 };
-  BottomSheetScrollView = tmp(6045).BottomSheetScrollView;
+  BottomSheetScrollView = tmp(6038).BottomSheetScrollView;
   items1 = [body, ];
   let num = -1;
-  const TableRadioGroup = tmp(5997).TableRadioGroup;
+  const TableRadioGroup = tmp(5995).TableRadioGroup;
   tmp8 = closure_4;
   if (findIndexResult >= 0) {
     num = findIndexResult;
@@ -67,9 +187,12 @@ export default function ItemSelectorActionSheet(arg0) {
     },
     children: items.map((label, value) => {
       const obj = { label: label.label, value };
-      return closure_1_3(items(dependencyMap[10]).TableRadioRow, obj, value);
+      return closure_1_3(items(dependencyMap[9]).TableRadioRow, obj, value);
     })
   };
   items1[1] = closure_3(TableRadioGroup, obj7);
   return closure_3(BottomSheet, obj4);
-};
+});
+const result = size.fileFinishedImporting("components_native/common/ItemSelectorActionSheet.tsx");
+
+export default tmp4;

@@ -1,12 +1,12 @@
-// Module ID: 17384
-// Function ID: 17385
+// Module ID: 17386
+// Function ID: 17387
 // Name: showGuildSettingsModalStickerInfoActionSheet
-// Dependencies: [4800, 17385, 1981, 2]
+// Dependencies: [4801, 17387, 1987, 2]
 // Exports: showGuildSettingsModalStickerInfoActionSheet
 
-// Module 17384 (showGuildSettingsModalStickerInfoActionSheet)
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+// Module 17386 (showGuildSettingsModalStickerInfoActionSheet)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
 import size from "module_2" /* 2 */;
 
 const GuildSettingsModalStickerInfoActionSheet = "GuildSettingsModalStickerInfoActionSheet";
@@ -25,5 +25,5 @@ export const showGuildSettingsModalStickerInfoActionSheet = function showGuildSe
       obj.hideActionSheet(GuildSettingsModalStickerInfoActionSheet);
     }
   };
-  obj.openLazy(asyncRequire(17385, dependencyMap.paths), GuildSettingsModalStickerInfoActionSheet, obj2);
+  obj.openLazy(asyncRequire(17387, dependencyMap.paths), GuildSettingsModalStickerInfoActionSheet, obj2);
 };

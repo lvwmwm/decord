@@ -1,33 +1,34 @@
-// Module ID: 14881
-// Function ID: 14882
+// Module ID: 14869
+// Function ID: 14870
 // Name: DisplayNameStylesEditScreen
-// Dependencies: [32, 19, 17, 4825, 1372, 1074, 1609, 21, 1391, 4836, 576, 1486, 504, 14882, 7611, 5084, 4767, 1392, 1389, 9189, 10360, 10361, 558, 14883, 14884, 14885, 14886, 1241, 4801, 7612, 7609, 4800, 14889, 1981, 14891, 14892, 14897, 14901, 1115, 14172, 4540, 5086, 14902, 2877, 4832, 1177, 6630, 1092, 14173, 5281, 8295, 7371, 1613, 4566, 5280, 2]
+// Dependencies: [32, 19, 17, 4826, 1378, 1086, 1615, 21, 1397, 4837, 588, 1492, 504, 14870, 7615, 5085, 4769, 1398, 1395, 9166, 10403, 10404, 568, 14871, 14872, 14873, 14874, 1253, 4802, 7616, 7613, 4801, 14877, 1987, 14879, 14880, 14885, 14889, 1127, 14160, 4544, 5087, 14890, 2880, 4833, 1189, 6631, 1104, 14161, 5282, 8292, 7375, 558, 576, 1619, 4570, 5281, 2]
 // Exports: default
 
-// Module 14881 (DisplayNameStylesEditScreen)
-import shallowEqual from "shallowEqual" /* 558 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1389 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1391 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1609 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import HapticUtils from "HapticUtils" /* 4801 */;
-import spring from "spring" /* 5280 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7609 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 7612 */;
+// Module 14869 (DisplayNameStylesEditScreen)
+import shallowEqual from "shallowEqual" /* 568 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1395 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1397 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1615 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import HapticUtils from "HapticUtils" /* 4802 */;
+import spring from "spring" /* 5281 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7613 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 7616 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import UserStore from "UserStore" /* 1372 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation;
+let navigation, onPress;
 
 let closure_12;
 let hasOwnProperty;
@@ -43,7 +44,176 @@ let obj6;
 let obj7;
 let obj8;
 let obj9;
-function ApplyButton(onPress) {
+({ View: hasOwnProperty, ScrollView: metroRequire, Pressable: metroImportDefault } = react_native);
+const AnalyticEvents = Constants.AnalyticEvents;
+const MEDIA_PICKER_SEND_BUTTON_SPRING = MediaKeyboardConstants.MEDIA_PICKER_SEND_BUTTON_SPRING;
+({ jsx: closure_12, jsxs: map1 } = Fragment);
+let items = [DisplayNameEffect.DisplayNameEffect.GRADIENT, DisplayNameEffect.DisplayNameEffect.GUMMY, DisplayNameEffect.DisplayNameEffect.PRISM];
+let createStyles = createStyles_mod;
+let obj = { container: obj2, contentContainer: obj3, fieldButtonGroup: obj4, fieldButton: obj5, fieldButtonBorder: obj6, fieldButtonLabel: obj7, fieldButtonChevron: obj8, fieldButtonTrailing: obj9, buttonContainer: obj10 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_16 };
+obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md };
+obj5 = { padding: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+obj6 = { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
+obj7 = { flex: 1, marginRight: nativeDefault.space.PX_12 };
+obj8 = { flexDirection: "row", gap: nativeDefault.space.PX_8, flexShrink: 0 };
+obj9 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+obj10 = { marginVertical: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_MUTED, gap: nativeDefault.space.PX_16 };
+let closure_15 = createStyles(obj);
+const __initData = { code: "function DisplayNameStylesEditScreenTsx1(){const{visible}=this.__closure;return{pointerEvents:visible?\"box-none\":\"none\"};}" };
+const __initData2 = { code: "function DisplayNameStylesEditScreenTsx2(){const{visible,tokens,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=visible?1:0;const targetTranslateY=visible?0:60;const targetScale=visible?1:0.9;return{position:\"absolute\",bottom:0,left:0,right:0,marginHorizontal:tokens.space.PX_16,flexDirection:\"column\",justifyContent:\"flex-end\",transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}],opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,MEDIA_PICKER_SEND_BUTTON_SPRING)};}" };
+const __initData3 = { code: "function DisplayNameStylesEditScreenTsx3(){const{visible}=this.__closure;return{pointerEvents:visible?'box-none':'none'};}" };
+const __initData4 = { code: "function DisplayNameStylesEditScreenTsx4(){const{visible,tokens,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=visible?1:0;const targetTranslateY=visible?0:60;const targetScale=visible?1:0.9;return{position:'absolute',bottom:0,left:0,right:0,marginHorizontal:tokens.space.PX_16,flexDirection:'column',justifyContent:'flex-end',transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}],opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,MEDIA_PICKER_SEND_BUTTON_SPRING)};}" };
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+  let stateFromStores;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp15;
+  let tmp4;
+  let tmp5;
+  let useReducedMotion;
+  let obj = onPress(stateFromStores[53]);
+  const cResult = obj.c(16);
+  onPress = onPress.onPress;
+  const visible = onPress.visible;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    items = [AccessibilityStore];
+    const fn = function l() {
+      return useReducedMotion.useReducedMotion;
+    };
+    let num = 0;
+    cResult[0] = items;
+    let num2 = 1;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = onPress(stateFromStores[12]);
+  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  const bottom = visible(tmp2[54])().bottom;
+  const fn2 = function p() {
+    let pointerEvents = "none";
+    if (visible) {
+      pointerEvents = "box-none";
+    }
+    return { pointerEvents };
+  };
+  fn2.__closure = { visible };
+  fn2.__workletHash = 16971768742893;
+  fn2.__initData = __initData;
+  const tmpResult3 = onPress(stateFromStores[55]);
+  const animatedProps = tmpResult3.useAnimatedProps(fn2);
+  const fn3 = function y() {
+    let withSpringResult2;
+    let num = 0;
+    if (visible) {
+      num = 1;
+    }
+    let num2 = 60;
+    if (visible) {
+      num2 = 0;
+    }
+    let num3 = 0.9;
+    if (visible) {
+      num3 = 1;
+    }
+    const rect = { position: "absolute", bottom: 0, left: 0, right: 0, marginHorizontal: nativeDefault.space.PX_16, flexDirection: "column", justifyContent: "flex-end", transform: items, opacity: withSpringResult2 };
+    let withSpringResult = num2;
+    if (!stateFromStores) {
+      const obj2 = spring;
+      withSpringResult = obj2.withSpring(num2, MEDIA_PICKER_SEND_BUTTON_SPRING);
+    }
+    items = [{ translateY: withSpringResult }, ];
+    let withSpringResult1 = num3;
+    if (!stateFromStores) {
+      const obj3 = spring;
+      withSpringResult1 = obj3.withSpring(num3, MEDIA_PICKER_SEND_BUTTON_SPRING);
+    }
+    items[1] = { scale: withSpringResult1 };
+    withSpringResult2 = num;
+    if (!stateFromStores) {
+      const obj4 = spring;
+      withSpringResult2 = obj4.withSpring(num, MEDIA_PICKER_SEND_BUTTON_SPRING);
+    }
+    return rect;
+  };
+  const tmpResult4 = onPress(stateFromStores[55]);
+  let obj2 = { visible, tokens: visible(tmp2[10]), reducedMotion: stateFromStores, withSpring: tmp(tmp2[56]).withSpring, MEDIA_PICKER_SEND_BUTTON_SPRING };
+  fn3.__closure = obj2;
+  fn3.__workletHash = 16394479325031;
+  fn3.__initData = __initData2;
+  const animatedStyle = tmpResult4.useAnimatedStyle(fn3);
+  if (cResult[2] !== onPress) {
+    const fn4 = function f() {
+      const obj = HapticUtils;
+      const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
+      onPress();
+    };
+    let num3 = 2;
+    cResult[2] = onPress;
+    cResult[3] = fn4;
+    tmp11 = fn4;
+  } else {
+    tmp11 = cResult[3];
+  }
+  if (cResult[4] !== bottom) {
+    let obj3 = { marginBottom: bottom };
+    cResult[4] = bottom;
+    cResult[5] = obj3;
+    tmp12 = obj3;
+  } else {
+    tmp12 = cResult[5];
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(tmp2[38]).intl;
+    const stringResult = intl.string(onPress(stateFromStores[38]).t["1Qm822"]);
+    cResult[6] = stringResult;
+    tmp13 = stringResult;
+  } else {
+    tmp13 = cResult[6];
+  }
+  if (cResult[7] !== tmp11) {
+    let obj4 = { variant: "primary", onPress: tmp11, size: "lg", text: tmp13 };
+    const tmp17 = closure_12(onPress(stateFromStores[49]).Button, obj4);
+    cResult[7] = tmp11;
+    cResult[8] = tmp17;
+    tmp15 = tmp17;
+  } else {
+    tmp15 = cResult[8];
+  }
+  if (cResult[9] === animatedProps) {
+    if (cResult[10] === tmp12) {
+      let tmp18;
+      if (cResult[11] === tmp15) {
+        tmp18 = cResult[12];
+      }
+      if (cResult[13] === animatedStyle) {
+        let tmp20;
+        if (cResult[14] === tmp18) {
+          tmp20 = cResult[15];
+        }
+        return tmp20;
+      }
+      const obj5 = { style: animatedStyle, children: tmp18 };
+      const tmp22 = closure_12(visible(stateFromStores[55]).View, obj5);
+      cResult[13] = animatedStyle;
+      cResult[14] = tmp18;
+      cResult[15] = tmp22;
+      tmp20 = tmp22;
+    }
+  }
+  const tmp19 = closure_12(visible(stateFromStores[55]).View, { style: tmp12, animatedProps, children: tmp15 });
+  cResult[9] = animatedProps;
+  cResult[10] = tmp12;
+  cResult[11] = tmp15;
+  cResult[12] = tmp19;
+  tmp18 = tmp19;
+}) : ((onPress) => {
   let Button;
   let View2;
   let intl;
@@ -56,8 +226,8 @@ function ApplyButton(onPress) {
   let obj = onPress(stateFromStores[12]);
   items = [AccessibilityStore];
   stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const bottom = visible(stateFromStores[52])().bottom;
-  let obj2 = onPress(stateFromStores[53]);
+  const bottom = visible(stateFromStores[54])().bottom;
+  let obj2 = onPress(stateFromStores[55]);
   const fn = function o() {
     let pointerEvents = "none";
     if (visible) {
@@ -66,10 +236,10 @@ function ApplyButton(onPress) {
     return { pointerEvents };
   };
   fn.__closure = { visible };
-  fn.__workletHash = 2349569076845;
-  fn.__initData = __initData;
+  fn.__workletHash = 12831101080623;
+  fn.__initData = __initData3;
   const animatedProps = obj2.useAnimatedProps(fn);
-  let obj3 = onPress(stateFromStores[53]);
+  let obj3 = onPress(stateFromStores[55]);
   const fn2 = function s() {
     let withSpringResult2;
     let num = 0;
@@ -104,10 +274,10 @@ function ApplyButton(onPress) {
     }
     return rect;
   };
-  let obj4 = { visible, tokens: visible(stateFromStores[10]), reducedMotion: stateFromStores, withSpring: onPress(stateFromStores[54]).withSpring, MEDIA_PICKER_SEND_BUTTON_SPRING };
+  let obj4 = { visible, tokens: visible(stateFromStores[10]), reducedMotion: stateFromStores, withSpring: onPress(stateFromStores[56]).withSpring, MEDIA_PICKER_SEND_BUTTON_SPRING };
   fn2.__closure = obj4;
-  fn2.__workletHash = 16786362025671;
-  fn2.__initData = __initData2;
+  fn2.__workletHash = 4139107659649;
+  fn2.__initData = __initData4;
   const items1 = [onPress];
   const animatedStyle = obj3.useAnimatedStyle(fn2);
   const callback = react.useCallback(() => {
@@ -116,34 +286,14 @@ function ApplyButton(onPress) {
     onPress();
   }, items1);
   const obj5 = { style: animatedStyle, children: closure_12(View2, obj6) };
-  const View = visible(stateFromStores[53]).View;
+  const View = visible(stateFromStores[55]).View;
   obj6 = { style: { marginBottom: bottom }, animatedProps, children: closure_12(Button, obj7) };
-  View2 = visible(stateFromStores[53]).View;
+  View2 = visible(stateFromStores[55]).View;
   obj7 = { variant: "primary", onPress: callback, size: "lg", text: intl.string(onPress(stateFromStores[38]).t["1Qm822"]) };
   Button = onPress(stateFromStores[49]).Button;
   intl = onPress(stateFromStores[38]).intl;
   return closure_12(View, obj5);
-}
-({ View: hasOwnProperty, ScrollView: metroRequire, Pressable: metroImportDefault } = react_native);
-const AnalyticEvents = Constants.AnalyticEvents;
-const MEDIA_PICKER_SEND_BUTTON_SPRING = MediaKeyboardConstants.MEDIA_PICKER_SEND_BUTTON_SPRING;
-({ jsx: closure_12, jsxs: map1 } = Fragment);
-let items = [DisplayNameEffect.DisplayNameEffect.GRADIENT, DisplayNameEffect.DisplayNameEffect.GUMMY, DisplayNameEffect.DisplayNameEffect.PRISM];
-let createStyles = createStyles_mod;
-let obj = { container: obj2, contentContainer: obj3, fieldButtonGroup: obj4, fieldButton: obj5, fieldButtonBorder: obj6, fieldButtonLabel: obj7, fieldButtonChevron: obj8, fieldButtonTrailing: obj9, buttonContainer: obj10 };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-createStyles = createStyles.createStyles;
-obj3 = { padding: nativeDefault.space.PX_16 };
-obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md };
-obj5 = { padding: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-obj6 = { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
-obj7 = { flex: 1, marginRight: nativeDefault.space.PX_12 };
-obj8 = { flexDirection: "row", gap: nativeDefault.space.PX_8, flexShrink: 0 };
-obj9 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj10 = { marginVertical: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_MUTED, gap: nativeDefault.space.PX_16 };
-let closure_15 = createStyles(obj);
-const __initData = { code: "function DisplayNameStylesEditScreenTsx1(){const{visible}=this.__closure;return{pointerEvents:visible?'box-none':'none'};}" };
-const __initData2 = { code: "function DisplayNameStylesEditScreenTsx2(){const{visible,tokens,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=visible?1:0;const targetTranslateY=visible?0:60;const targetScale=visible?1:0.9;return{position:'absolute',bottom:0,left:0,right:0,marginHorizontal:tokens.space.PX_16,flexDirection:'column',justifyContent:'flex-end',transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}],opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,MEDIA_PICKER_SEND_BUTTON_SPRING)};}" };
+});
 let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesEditScreen.tsx");
 
 export default function DisplayNameStylesEditScreen() {
@@ -410,7 +560,7 @@ export default function DisplayNameStylesEditScreen() {
       }
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { selectedFontId, onSelectFont, displayName: displayNameStylesPendingName };
-      obj.openLazy(asyncRequire(14889, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
+      obj.openLazy(asyncRequire(14877, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
     }, items6);
     const useCallback = displayNameStylesPendingName.useCallback;
     if (stateFromStores != null) {
@@ -428,7 +578,7 @@ export default function DisplayNameStylesEditScreen() {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       let id;
       ActionSheetActionCreatorsDefault;
-      const tmp5 = asyncRequire(14891, dependencyMap.paths);
+      const tmp5 = asyncRequire(14879, dependencyMap.paths);
       if (stateFromStores != null) {
         id = stateFromStores.id;
       }
@@ -444,7 +594,7 @@ export default function DisplayNameStylesEditScreen() {
             }
         };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(14892, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
+        obj3.openLazy(asyncRequire(14880, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
       } else {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         ActionSheetActionCreatorsDefault;
@@ -457,10 +607,10 @@ export default function DisplayNameStylesEditScreen() {
                   return callback(first1, arg0);
                 }
           };
-          openLazy(tmp2Result(14897, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
+          openLazy(tmp2Result(14885, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
         } else {
           const obj = { selectedColor: first3, selectedEffectId: first1, onSelectColor };
-          openLazy(tmp2Result(14901, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
+          openLazy(tmp2Result(14889, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
         }
       }
     }, items8);
@@ -599,7 +749,7 @@ export default function DisplayNameStylesEditScreen() {
       items9[2] = colors(closure_5, obj29);
       items23 = [colors(tmp50, obj10), ];
       const obj33 = { onPress: displayNameStylesHandleApply, visible: memo1 };
-      items23[1] = closure_12(callback, obj33);
+      items23[1] = closure_12(visibleFontOrder, obj33);
       tmp47Result5 = tmp47(ThemeContextProvider, obj5);
     }
     return tmp47Result5;

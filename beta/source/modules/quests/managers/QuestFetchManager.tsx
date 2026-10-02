@@ -1,17 +1,17 @@
-// Module ID: 17641
-// Function ID: 17642
+// Module ID: 17643
+// Function ID: 17644
 // Name: QuestFetchManager
-// Dependencies: [7116, 1091, 6539, 10682, 1231, 10683, 1364, 10704, 17642, 2]
+// Dependencies: [7120, 1103, 6540, 10671, 1243, 9765, 1370, 9786, 17644, 2]
 
-// Module 17641 (QuestFetchManager)
-import DurationsDefault from "Durations" /* 1091 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import QuestsEligibility from "QuestsEligibility" /* 10682 */;
-import QuestActionCreators from "QuestActionCreators" /* 10683 */;
-import QuestFetchReconnectJitterExperiment from "QuestFetchReconnectJitterExperiment" /* 17642 */;
-import QuestStore from "QuestStore" /* 7116 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+// Module 17643 (QuestFetchManager)
+import DurationsDefault from "Durations" /* 1103 */;
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import QuestActionCreators from "QuestActionCreators" /* 9765 */;
+import QuestsEligibility from "QuestsEligibility" /* 10671 */;
+import QuestFetchReconnectJitterExperiment from "QuestFetchReconnectJitterExperiment" /* 17644 */;
+import QuestStore from "QuestStore" /* 7120 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 const DAY = DurationsDefault.Millis.DAY;
@@ -77,7 +77,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
           }, rounded + Math.floor(Math.random() * questHomeHeroJitterMs));
         }
       }
-      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(17642).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
+      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(17644).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
     };
     applyArgumentsResult.handleRunningGamesChange = function handleRunningGamesChange() {
 
@@ -115,14 +115,14 @@ class QuestFetchManager extends AutomaticLifecycleManager {
     applyArgumentsResult.actions = { QUESTS_FETCH_CURRENT_QUESTS_BEGIN: applyArgumentsResult.handleQuestsFetchCurrentQuestsBegin, POST_CONNECTION_OPEN: applyArgumentsResult.handlePostConnectionOpen, RUNNING_GAMES_CHANGE: applyArgumentsResult.handleRunningGamesChange, RUNNING_NON_GAMES_CHANGE: applyArgumentsResult.handleRunningGamesChange, USER_SETTINGS_PROTO_UPDATE: applyArgumentsResult.handleUserSettingsProtoUpdate, START_SESSION: applyArgumentsResult.handleStartSession, LOGOUT: applyArgumentsResult.handleLogout };
     return applyArgumentsResult;
   }
-  _fetch(callerSource) {
+  _fetch(combined) {
     let obj3;
     const obj = QuestsEligibility;
     const isEligibleForQuests = obj.getIsEligibleForQuests() && !QuestStore.isFetchingCurrentQuests;
     if (isEligibleForQuests) {
       const obj2 = { category: "quests.fetch", message: "QuestFetchManager._fetch triggered", data: obj3 };
       const _Date = Date;
-      obj3 = { callerSource, storeSize: QuestStore.quests.size, lastFetchedCurrentQuests: QuestStore.lastFetchedCurrentQuests, msSinceLastFetch: Date.now() - QuestStore.lastFetchedCurrentQuests, isFetchingCurrentQuests: QuestStore.isFetchingCurrentQuests };
+      obj3 = { callerSource: combined, storeSize: QuestStore.quests.size, lastFetchedCurrentQuests: QuestStore.lastFetchedCurrentQuests, msSinceLastFetch: Date.now() - QuestStore.lastFetchedCurrentQuests, isFetchingCurrentQuests: QuestStore.isFetchingCurrentQuests };
       const addBreadcrumb = SentryUtilsDefault.addBreadcrumb;
       SentryUtilsDefault;
       addBreadcrumb(obj2);
@@ -131,7 +131,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
       const tmp6 = importDefault;
       const tmpResult2 = PlatformUtils;
       if (tmpResult2.isMac()) {
-        const tmp6Result = tmp6(10704);
+        const tmp6Result = tmp6(9786);
         const state = tmp6Result.getState();
       }
     }

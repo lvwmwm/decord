@@ -1,18 +1,18 @@
 // Module ID: 15902
 // Function ID: 15903
 // Name: MobileGameCommunitiesActionCreators
-// Dependencies: [5, 13256, 15176, 1074, 13257, 15177, 1271, 1473, 573, 504, 1091, 2]
+// Dependencies: [5, 13258, 15164, 1086, 13259, 15165, 1283, 1479, 585, 504, 1103, 2]
 // Exports: dismissGuild
 
 // Module 15902 (MobileGameCommunitiesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import _modDef1473 from "module_1473" /* 1473 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import _modDef1479 from "module_1479" /* 1479 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13256 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15176 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13258 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15164 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let obj = function _fetchDetectedGameCommunities() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -68,7 +68,7 @@ let obj = function _fetchDetectedGameCommunities() {
             const get = HTTP.get;
             obj4 = { game_ids: tmp17, limit: 20, ignored_guild_ids: Array.from(dismissedGuildIds.getDismissedGuildIds()) };
             const _Array = Array;
-            stringify = _modDef1473.stringify;
+            stringify = _modDef1479.stringify;
             c2 = 1;
             c3 = 1;
             const obj5 = { value: get(request), done: false };
@@ -87,7 +87,7 @@ let obj = function _fetchDetectedGameCommunities() {
           const obj7 = { type: "MOBILE_GAME_COMMUNITIES_FETCH_SUCCESS", guilds, gameIds };
           obj.dispatch(obj7);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp13) {
         c3 = 3;
@@ -130,7 +130,7 @@ let closure_8 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -162,7 +162,7 @@ let closure_8 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c0 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     } catch (tmp7) {
       c0 = 3;
       throw tmp7;

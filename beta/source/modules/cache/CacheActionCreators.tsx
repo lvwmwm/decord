@@ -1,14 +1,14 @@
-// Module ID: 15126
-// Function ID: 15127
+// Module ID: 15114
+// Function ID: 15115
 // Name: CacheActionCreators
-// Dependencies: [5, 2045, 6896, 573, 2]
+// Dependencies: [5, 2051, 6900, 585, 2]
 // Exports: clearCaches, writeCaches
 
-// Module 15126 (CacheActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+// Module 15114 (CacheActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CacheStore from "CacheStore" /* 6896 */;
+import CacheStore from "CacheStore" /* 6900 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -58,13 +58,13 @@ let obj = function _writeCaches() {
       obj = { value, done: true };
       return obj;
     }
-    await "HermesInternal";
+    await "IconComponent";
     promisesToWaitOn = tmp;
     flag = closure_0;
     if (closure_0 === undefined) {
       flag = false;
     }
-    return "flex";
+    return "Reflect";
   });
   return obj(...arguments);
 };

@@ -1,23 +1,23 @@
-// Module ID: 16241
-// Function ID: 16242
+// Module ID: 16243
+// Function ID: 16244
 // Name: VibegrationsCreateSheet
-// Dependencies: [5, 32, 19, 17, 12642, 21, 4836, 576, 5371, 8496, 4800, 12451, 16242, 1115, 3715, 6616, 16243, 16244, 16247, 16248, 6618, 6570, 6506, 5999, 5917, 4832, 16245, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 12644, 21, 4837, 588, 5372, 8493, 4801, 12449, 16244, 1127, 3718, 6617, 16245, 16246, 16249, 16250, 6624, 6571, 6507, 5997, 5916, 4833, 16247, 5282, 2]
 // Exports: default
 
-// Module 16241 (VibegrationsCreateSheet)
+// Module 16243 (VibegrationsCreateSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5371 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6616 */;
-import VibegrationsEffortPicker from "VibegrationsEffortPicker" /* 16244 */;
-import VibegrationsTemplateWizardSheet from "VibegrationsTemplateWizardSheet" /* 16248 */;
+import nativeDefault from "native" /* 588 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4801 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5372 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6617 */;
+import VibegrationsEffortPicker from "VibegrationsEffortPicker" /* 16246 */;
+import VibegrationsTemplateWizardSheet from "VibegrationsTemplateWizardSheet" /* 16250 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12642 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12644 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
@@ -145,7 +145,7 @@ export default function VibegrationsCreateSheet(guildId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -201,7 +201,7 @@ export default function VibegrationsCreateSheet(guildId) {
             c4 = 0;
             closure_1_8(false);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           install_scope = tmp25;
@@ -234,7 +234,7 @@ export default function VibegrationsCreateSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -270,7 +270,7 @@ export default function VibegrationsCreateSheet(guildId) {
           return obj;
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp9) {
         c2 = 3;
         throw tmp9;
@@ -298,7 +298,7 @@ export default function VibegrationsCreateSheet(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -445,7 +445,7 @@ export default function VibegrationsCreateSheet(guildId) {
           closure_129_8(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp81) {
         closure_2 = tmp81;
         if (0 === c3) {

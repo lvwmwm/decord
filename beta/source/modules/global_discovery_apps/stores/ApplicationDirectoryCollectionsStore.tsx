@@ -1,12 +1,12 @@
-// Module ID: 11555
-// Function ID: 11556
+// Module ID: 11431
+// Function ID: 11432
 // Name: ApplicationDirectoryCollectionsStore
-// Dependencies: [12, 504, 573, 2]
+// Dependencies: [12, 504, 585, 2]
 
-// Module 11555 (ApplicationDirectoryCollectionsStore)
+// Module 11431 (ApplicationDirectoryCollectionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let application_directory_collection_items;

@@ -1,12 +1,12 @@
-// Module ID: 13226
-// Function ID: 13227
+// Module ID: 13228
+// Function ID: 13229
 // Name: mute
-// Dependencies: [32, 1187, 1216, 1217, 2]
+// Dependencies: [32, 1199, 1228, 1229, 2]
 
-// Module 13226 (mute)
-import _mod1187 from "module_1187" /* 1187 */;
-import timestamp from "timestamp" /* 1216 */;
-import wrappers from "wrappers" /* 1217 */;
+// Module 13228 (mute)
+import _mod1199 from "module_1199" /* 1199 */;
+import timestamp from "timestamp" /* 1228 */;
+import wrappers from "wrappers" /* 1229 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ function T() {
 const T2 = function T() {
   return wrappers.Int32Value;
 };
-const MessageType = _mod1187.MessageType;
+const MessageType = _mod1199.MessageType;
 class MuteNotificationSettings$Type extends MessageType {
   constructor() {
     const items = [, ];
@@ -33,9 +33,9 @@ class MuteNotificationSettings$Type extends MessageType {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -76,7 +76,7 @@ class MuteNotificationSettings$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -91,7 +91,7 @@ class MuteNotificationSettings$Type extends MessageType {
       const Timestamp = timestamp.Timestamp;
       internalBinaryWrite = Timestamp.internalBinaryWrite;
       endTime = endTime.endTime;
-      const tagResult = tag.tag(1, _mod1187.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1199.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(endTime, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -99,14 +99,14 @@ class MuteNotificationSettings$Type extends MessageType {
       const Int32Value = wrappers.Int32Value;
       internalBinaryWrite2 = Int32Value.internalBinaryWrite;
       const selectedTimeWindow = endTime.selectedTimeWindow;
-      const tagResult1 = tag.tag(2, _mod1187.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1199.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(selectedTimeWindow, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, endTime, tag);

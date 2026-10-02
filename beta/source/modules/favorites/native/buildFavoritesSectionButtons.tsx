@@ -1,20 +1,20 @@
-// Module ID: 9683
-// Function ID: 9684
+// Module ID: 9805
+// Function ID: 9806
 // Name: buildFavoritesSectionButtons
-// Dependencies: [5, 21, 9684, 1981, 4800, 9689, 9688, 1115, 3361, 8122, 9698, 9704, 1177, 2]
+// Dependencies: [5, 21, 9806, 1987, 4801, 9811, 9810, 1127, 3364, 8119, 9716, 9718, 1189, 2]
 // Exports: default
 
-// Module 9683 (buildFavoritesSectionButtons)
+// Module 9805 (buildFavoritesSectionButtons)
 import Fragment from "Fragment" /* 21 */;
-import intl4 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import _modDef3361 from "module_3361" /* 3361 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8122 */;
-import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 9688 */;
-import StarIcon from "StarIcon" /* 9698 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 9704 */;
+import intl4 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import _modDef3364 from "module_3364" /* 3364 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8119 */;
+import StarIcon from "StarIcon" /* 9716 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 9718 */;
+import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 9810 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj = function _addChannelToFavorites() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -68,7 +68,7 @@ let obj = function _addChannelToFavorites() {
           items = [closure_0];
           value.addFavoriteChannels(obj);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -92,7 +92,7 @@ obj = function _removeChannelFromFavorites() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -122,7 +122,7 @@ obj = function _removeChannelFromFavorites() {
         } else {
           const result = value.removeFavoriteChannel(closure_0);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -135,7 +135,7 @@ obj = function _removeChannelFromFavorites() {
 function openNoAccessUpsell() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(9689, dependencyMap.paths);
+  const tmp2 = asyncRequire(9811, dependencyMap.paths);
   openLazy(tmp2, openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "channel_context_menu" });
 }
 const jsx = Fragment.jsx;
@@ -155,7 +155,7 @@ export default function buildFavoritesSectionButtons(isExperimentEnabled) {
         let tmp11;
         if (tmp3) {
           const obj2 = {
-            label: intl3.string(_modDef3361.TN4nAX),
+            label: intl3.string(_modDef3364.TN4nAX),
             IconComponent: StarIcon.StarIcon,
             isDestructive: true,
             onPress() {
@@ -171,7 +171,7 @@ export default function buildFavoritesSectionButtons(isExperimentEnabled) {
           tmp11 = null;
           if (!tmp4) {
             const obj3 = {
-              label: intl2.string(_modDef3361.G9fGlP),
+              label: intl2.string(_modDef3364.G9fGlP),
               IconComponent: StarOutlineIcon.StarOutlineIcon,
               trailing: tmp15,
               onPress() {
@@ -185,7 +185,7 @@ export default function buildFavoritesSectionButtons(isExperimentEnabled) {
             intl2 = intl4.intl;
             tmp15 = undefined;
             if (tmp5) {
-              const BetaTag = tmp12(1177).BetaTag;
+              const BetaTag = tmp12(1189).BetaTag;
               tmp15 = <BetaTag size={native.BetaSizes.SMALL} />;
             }
             tmp11 = obj3;
@@ -193,7 +193,7 @@ export default function buildFavoritesSectionButtons(isExperimentEnabled) {
         }
         obj = tmp11;
       } else {
-        obj = { label: intl.string(_modDef3361.G9fGlP), IconComponent: NitroWheelIcon.NitroWheelIcon, onPress: openNoAccessUpsell };
+        obj = { label: intl.string(_modDef3364.G9fGlP), IconComponent: NitroWheelIcon.NitroWheelIcon, onPress: openNoAccessUpsell };
         intl = intl4.intl;
       }
       tmp6 = obj;

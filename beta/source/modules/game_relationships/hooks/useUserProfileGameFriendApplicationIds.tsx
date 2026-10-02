@@ -1,23 +1,94 @@
-// Module ID: 12657
-// Function ID: 12658
+// Module ID: 12659
+// Function ID: 12660
 // Name: useUserProfileGameFriendApplicationIds
-// Dependencies: [19, 4479, 1372, 504, 12637, 2]
-// Exports: useUserProfileGameFriendApplicationIds
+// Dependencies: [19, 4482, 1378, 558, 576, 504, 12639, 2]
 
-// Module 12657 (useUserProfileGameFriendApplicationIds)
+// Module 12659 (useUserProfileGameFriendApplicationIds)
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_5 = [];
-const result = size.fileFinishedImporting("modules/game_relationships/hooks/useUserProfileGameFriendApplicationIds.tsx");
+let userId;
 
-export const useUserProfileGameFriendApplicationIds = function useUserProfileGameFriendApplicationIds(userId) {
+let closure_5 = [];
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  let first;
+  let tmp7;
+  let tmp9;
+  let tmp = userId;
+  const obj = userId(576);
+  const cResult = obj.c(6);
+  userId = userId.userId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [RelationshipStore, UserStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== userId) {
+    const fn = function u() {
+      let isFriendResult = RelationshipStore.isFriend(userId);
+      const tmp = userId;
+      if (!isFriendResult) {
+        const user = UserStore.getUser(tmp);
+        let isProvisional;
+        if (user != null) {
+          isProvisional = user.isProvisional;
+        }
+        isFriendResult = isProvisional;
+      }
+      return isFriendResult;
+    };
+    cResult[1] = userId;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  const tmpResult2 = tmp(12639);
+  const gameFriendsForUser = tmpResult2.useGameFriendsForUser(userId);
+  if (stateFromStores) {
+    tmp9 = closure_5;
+  } else if (cResult[3] !== gameFriendsForUser) {
+    let tmp10;
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      class I {
+        constructor(applicationId) {
+          return applicationId.applicationId;
+        }
+      }
+      cResult[5] = I;
+      tmp10 = I;
+    } else {
+      class I {
+        constructor(applicationId) {
+          return applicationId.applicationId;
+        }
+      }
+    }
+    const mapped = gameFriendsForUser.map(tmp10);
+    cResult[3] = gameFriendsForUser;
+    cResult[4] = mapped;
+    tmp9 = mapped;
+  } else {
+    class I {
+      constructor(applicationId) {
+        return applicationId.applicationId;
+      }
+    }
+  }
+  return tmp9;
+}) : ((userId) => {
   userId = userId.userId;
   let stateFromStores;
   const items = [RelationshipStore, UserStore];
-  const obj = userId(stateFromStores[3]);
+  const obj = userId(stateFromStores[5]);
   stateFromStores = obj.useStateFromStores(items, () => {
     let isFriendResult = RelationshipStore.isFriend(userId);
     const tmp = userId;
@@ -31,7 +102,7 @@ export const useUserProfileGameFriendApplicationIds = function useUserProfileGam
     }
     return isFriendResult;
   });
-  const obj2 = userId(stateFromStores[4]);
+  const obj2 = userId(stateFromStores[6]);
   const gameFriendsForUser = obj2.useGameFriendsForUser(userId);
   const items1 = [gameFriendsForUser, stateFromStores];
   return gameFriendsForUser.useMemo(() => {
@@ -44,4 +115,7 @@ export const useUserProfileGameFriendApplicationIds = function useUserProfileGam
     }
     return mapped;
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/game_relationships/hooks/useUserProfileGameFriendApplicationIds.tsx");
+
+export const useUserProfileGameFriendApplicationIds = tmp2;

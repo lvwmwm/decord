@@ -1,10 +1,10 @@
 // Module ID: 10812
 // Function ID: 10813
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 10812 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "8d2a9da7873a6a1912be7bfb3d52eaf6", name: "SpoilerIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [2, 3], hash: "e71bfb9b43d4bbd3706e078113315f40", name: "ic_image", type: "png" });

@@ -1,20 +1,90 @@
-// Module ID: 12699
-// Function ID: 12700
+// Module ID: 12700
+// Function ID: 12701
 // Name: ConfirmStartCall
-// Dependencies: [19, 21, 5209, 1115, 5209, 5205, 2]
+// Dependencies: [19, 21, 558, 576, 1127, 5210, 5210, 5206, 2]
 // Exports: confirmStartCall
 
-// Module 12699 (ConfirmStartCall)
-import intl5 from "intl" /* 1115 */;
-import useAlertStore from "useAlertStore" /* 5205 */;
-import AlertModal2 from "AlertModal" /* 5209 */;
+// Module 12700 (ConfirmStartCall)
+import react2 from "react" /* 576 */;
+import intl5 from "intl" /* 1127 */;
+import useAlertStore from "useAlertStore" /* 5206 */;
+import AlertModal2 from "AlertModal" /* 5210 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let onConfirm;
 
 let c2;
 let c3;
-function ConfirmStartCall(onConfirm) {
+({ jsx: c2, jsxs: c3 } = Fragment);
+let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
+  let intl4;
+  let items;
+  let obj5;
+  let tmp10;
+  let tmp13;
+  let tmp16;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(8);
+  onConfirm = onConfirm.onConfirm;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl5.t.HlAPoq);
+    const intl2 = tmp(1127).intl;
+    const stringResult1 = intl2.string(intl5.t["cRW4D/"]);
+    cResult[0] = stringResult;
+    cResult[1] = stringResult1;
+    tmp4 = stringResult;
+    tmp5 = stringResult1;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl3 = tmp(1127).intl;
+    const stringResult2 = intl3.string(intl5.t.rimG2R);
+    cResult[2] = stringResult2;
+    tmp8 = stringResult2;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] !== onConfirm) {
+    const obj2 = { variant: "active", text: tmp8, onPress: onConfirm };
+    const tmp12 = React2(AlertModal2.AlertActionButton, obj2, "confirm");
+    cResult[3] = onConfirm;
+    cResult[4] = tmp12;
+    tmp10 = tmp12;
+  } else {
+    tmp10 = cResult[4];
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { variant: "secondary", text: intl4.string(intl5.t["ETE/oC"]) };
+    const AlertActionButton = tmp(5210).AlertActionButton;
+    intl4 = tmp(1127).intl;
+    const tmp15 = React2(AlertActionButton, obj3, "cancel");
+    cResult[5] = tmp15;
+    tmp13 = tmp15;
+  } else {
+    tmp13 = cResult[5];
+  }
+  if (cResult[6] !== tmp10) {
+    const obj4 = { title: tmp4, content: tmp5, actions: _false(AlertModal2.AlertActions, obj5) };
+    const AlertModal = tmp(5210).AlertModal;
+    obj5 = { children: items };
+    items = [tmp10, tmp13];
+    const tmp19 = React2(AlertModal, obj4);
+    cResult[6] = tmp10;
+    cResult[7] = tmp19;
+    tmp16 = tmp19;
+  } else {
+    tmp16 = cResult[7];
+  }
+  return tmp16;
+}) : ((onConfirm) => {
   let AlertActions;
   let intl;
   let intl2;
@@ -38,12 +108,11 @@ function ConfirmStartCall(onConfirm) {
   intl4 = intl5.intl;
   items[1] = React2(AlertActionButton2, obj4, "cancel");
   return React2(AlertModal, obj);
-}
-({ jsx: c2, jsxs: c3 } = Fragment);
+});
 const result = size.fileFinishedImporting("modules/voice_calls/native/ConfirmStartCall.tsx");
 
 export const confirmStartCall = function confirmStartCall(fn) {
   const obj = useAlertStore;
   const obj2 = { onConfirm: fn };
-  obj.openAlert("start-voice-call", React2(ConfirmStartCall, obj2));
+  obj.openAlert("start-voice-call", React2(closure_4, obj2));
 };

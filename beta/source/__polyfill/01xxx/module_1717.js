@@ -1,90 +1,124 @@
 // Module ID: 1717
 // Function ID: 1718
-// Dependencies: [1678]
-// Exports: withDelay
+// Dependencies: [1684, 1648]
+// Exports: withClamp
 
 // Module 1717
+import react_native from "react-native" /* 1648 */;
+import _mod1684 from "module_1684" /* 1684 */;
+
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-let __initData = { code: "function pnpm_delayTs2(){const{_nextAnimation,delayMs,getReduceMotionForAnimation,reduceMotion}=this.__closure;const nextAnimation=typeof _nextAnimation==='function'?_nextAnimation():_nextAnimation;function delay(animation,now){const{startTime:startTime,started:started,previousAnimation:previousAnimation}=animation;const current=animation.current;if(now-startTime>=delayMs||animation.reduceMotion){if(!started){nextAnimation.onStart(nextAnimation,current,now,previousAnimation);animation.previousAnimation=null;animation.started=true;}const finished=nextAnimation.onFrame(nextAnimation,now);animation.current=nextAnimation.current;return finished;}else if(previousAnimation){const finished=previousAnimation.finished||previousAnimation.onFrame(previousAnimation,now);animation.current=previousAnimation.current;if(finished){animation.previousAnimation=null;}}return false;}function onStart(animation,value,now,previousAnimation){animation.startTime=now;animation.started=false;animation.current=value;if(previousAnimation===animation){animation.previousAnimation=previousAnimation.previousAnimation;}else{animation.previousAnimation=previousAnimation;}if(nextAnimation.reduceMotion===undefined){nextAnimation.reduceMotion=animation.reduceMotion;}}const callback=function(finished){if(nextAnimation.callback){nextAnimation.callback(finished);}};return{isHigherOrder:true,onFrame:delay,onStart:onStart,current:nextAnimation.current,callback:callback,previousAnimation:null,startTime:0,started:false,reduceMotion:getReduceMotionForAnimation(reduceMotion)};}" };
-let fn = function n(delayMs, _nextAnimation, reduceMotion) {
-  _require = delayMs;
-  dependencyMap = _nextAnimation;
-  __initData = reduceMotion;
-  let obj = require("module_1678");
-  const fn = function s() {
-    let closure_0;
-    let obj2;
-    let tmp;
-    let tmpResult = closure_1;
-    if (typeof closure_1 === "function") {
+const __initData = { code: "function pnpm_clampTs2(){const{_animationToClamp,config,recognizePrefixSuffix,logger,getReduceMotionForAnimation}=this.__closure;const animationToClamp=typeof _animationToClamp==='function'?_animationToClamp():_animationToClamp;const strippedMin=config.min===undefined?undefined:recognizePrefixSuffix(config.min).strippedValue;const strippedMax=config.max===undefined?undefined:recognizePrefixSuffix(config.max).strippedValue;function clampOnFrame(animation,now){const finished=animationToClamp.onFrame(animationToClamp,now);if(animationToClamp.current===undefined){logger.warn(\"Error inside 'withClamp' animation, the inner animation has invalid current value\");return true;}else{const{prefix:prefix,strippedValue:strippedValue,suffix:suffix}=recognizePrefixSuffix(animationToClamp.current);let newValue;if(strippedMax!==undefined&&strippedMax<strippedValue){newValue=strippedMax;}else if(strippedMin!==undefined&&strippedMin>strippedValue){newValue=strippedMin;}else{newValue=strippedValue;}animation.current=typeof animationToClamp.current==='number'?newValue:\"\"+(prefix===undefined?'':prefix)+newValue+(suffix===undefined?'':suffix);}return finished;}function onStart(animation,value,now,previousAnimation){animation.current=value;animation.previousAnimation=animationToClamp;const animationBeforeClamped=previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.previousAnimation;if(config.max!==undefined&&config.min!==undefined&&config.max<config.min){logger.warn('Wrong config was provided to withClamp. Min value is bigger than max');}animationToClamp.onStart(animationToClamp,(animationBeforeClamped===null||animationBeforeClamped===void 0?void 0:animationBeforeClamped.current)||value,now,animationBeforeClamped);}const callback=function(finished){if(animationToClamp.callback){animationToClamp.callback(finished);}};return{isHigherOrder:true,onFrame:clampOnFrame,onStart:onStart,current:animationToClamp.current,callback:callback,previousAnimation:null,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};}" };
+let fn = function n(config, _animationToClamp) {
+  _require = config;
+  dependencyMap = _animationToClamp;
+  let obj = require("module_1684");
+  const fn = function u() {
+    let obj4;
+    let strippedValue;
+    let tmpResult = strippedValue;
+    if (typeof strippedValue === "function") {
       tmpResult = tmp();
     }
-    delayMs = tmpResult;
-    let obj = {
+    config = tmpResult;
+    let range = config;
+    strippedValue = undefined;
+    if (undefined !== config.min) {
+      let tmp4 = config;
+      let tmp5 = _animationToClamp;
+      let obj = config(_animationToClamp[0]);
+      strippedValue = obj.recognizePrefixSuffix(range.min).strippedValue;
+    }
+    let strippedValue1;
+    if (undefined !== range.max) {
+      const obj2 = config(_animationToClamp[0]);
+      strippedValue1 = obj2.recognizePrefixSuffix(range.max).strippedValue;
+    }
+    const obj3 = {
       isHigherOrder: true,
-      onFrame: function delay(started, arg1) {
-        let current;
-        let previousAnimation;
-        ({ previousAnimation, current } = started);
-        started = started.started;
-        if (arg1 - started.startTime < delayMs) {
-          if (!started.reduceMotion) {
-            if (previousAnimation) {
-              started.current = previousAnimation.current;
-              const tmp = previousAnimation.finished || previousAnimation.onFrame(previousAnimation, arg1);
-              if (tmp) {
-                started.previousAnimation = null;
+      onFrame: function clampOnFrame(arg0, arg1) {
+        let prefix;
+        let suffix;
+        if (undefined === previousAnimation.current) {
+          const logger = react_native.logger;
+          logger.warn("Error inside 'withClamp' animation, the inner animation has invalid current value");
+          return true;
+        } else {
+          const obj = _mod1684;
+          const result = obj.recognizePrefixSuffix(tmp.current);
+          ({ prefix, strippedValue, suffix } = result);
+          let tmp5 = strippedValue1;
+          if (undefined === strippedValue1) {
+            let tmp4 = strippedValue;
+            if (undefined !== strippedValue) {
+              tmp4 = strippedValue;
+              if (strippedValue > strippedValue) {
+                tmp4 = tmp3;
               }
             }
-            return false;
+            tmp5 = tmp4;
           }
+          let combined = tmp5;
+          if (typeof previousAnimation.current !== "number") {
+            let str = "";
+            if (undefined !== prefix) {
+              str = prefix;
+            }
+            let str2 = "";
+            if (undefined !== suffix) {
+              str2 = suffix;
+            }
+            const _HermesInternal = HermesInternal;
+            combined = "" + str + tmp5 + str2;
+          }
+          arg0.current = combined;
+          return tmp2;
         }
-        if (!started) {
-          delayMs.onStart(delayMs, current, arg1, previousAnimation);
-          started.previousAnimation = null;
-          started.started = true;
-        }
-        started.current = delayMs.current;
-        return delayMs.onFrame(delayMs, arg1);
       },
-      onStart(reduceMotion, current, startTime, previousAnimation) {
-        reduceMotion.startTime = startTime;
-        reduceMotion.started = false;
-        reduceMotion.current = current;
-        if (previousAnimation === reduceMotion) {
+      onStart(arg0, current, arg2, previousAnimation) {
+        arg0.current = current;
+        arg0.previousAnimation = previousAnimation;
+        previousAnimation = undefined;
+        if (previousAnimation != null) {
           previousAnimation = previousAnimation.previousAnimation;
         }
-        reduceMotion.previousAnimation = previousAnimation;
-        if (undefined === closure_0.reduceMotion) {
-          tmp.reduceMotion = reduceMotion.reduceMotion;
+        const range = previousAnimation;
+        const tmp3 = undefined !== previousAnimation.max && undefined !== range.min && range.max < range.min;
+        if (tmp3) {
+          const logger = react_native.logger;
+          logger.warn("Wrong config was provided to withClamp. Min value is bigger than max");
         }
+        current = undefined;
+        const onStart = tmp.onStart;
+        if (previousAnimation != null) {
+          current = previousAnimation.current;
+        }
+        onStart(previousAnimation, current, arg2, previousAnimation);
       },
       current: tmpResult.current,
       callback(arg0) {
-        const obj = closure_0;
-        if (closure_0.callback) {
+        const obj = previousAnimation;
+        if (previousAnimation.callback) {
           obj.callback(arg0);
         }
       },
       previousAnimation: null,
-      startTime: 0,
-      started: false,
-      reduceMotion: obj2.getReduceMotionForAnimation(closure_2)
+      reduceMotion: obj4.getReduceMotionForAnimation(range.reduceMotion)
     };
-    obj2 = delayMs(closure_1[0]);
-    return obj;
+    obj4 = config(_animationToClamp[0]);
+    return obj3;
   };
-  let obj2 = { _nextAnimation, delayMs, getReduceMotionForAnimation: require("module_1678").getReduceMotionForAnimation, reduceMotion };
+  let obj2 = { _animationToClamp, config, recognizePrefixSuffix: require("module_1684").recognizePrefixSuffix, logger: require("react-native").logger, getReduceMotionForAnimation: require("module_1684").getReduceMotionForAnimation };
   fn.__closure = obj2;
-  fn.__workletHash = 7904568249320;
+  fn.__workletHash = 9293031098818;
   fn.__initData = __initData;
-  return obj.defineAnimation(_nextAnimation, fn);
+  return obj.defineAnimation(_animationToClamp, fn);
 };
-let obj = { defineAnimation: require("module_1678").defineAnimation, getReduceMotionForAnimation: require("module_1678").getReduceMotionForAnimation };
+let obj = { defineAnimation: require("module_1684").defineAnimation, recognizePrefixSuffix: require("module_1684").recognizePrefixSuffix, logger: require("react-native").logger, getReduceMotionForAnimation: require("module_1684").getReduceMotionForAnimation };
 fn.__closure = obj;
-fn.__workletHash = 10965419997083;
-fn.__initData = { code: "function pnpm_delayTs1(delayMs,_nextAnimation,reduceMotion){const{defineAnimation,getReduceMotionForAnimation}=this.__closure;return defineAnimation(_nextAnimation,function(){'worklet';const nextAnimation=typeof _nextAnimation==='function'?_nextAnimation():_nextAnimation;function delay(animation,now){const{startTime:startTime,started:started,previousAnimation:previousAnimation}=animation;const current=animation.current;if(now-startTime>=delayMs||animation.reduceMotion){if(!started){nextAnimation.onStart(nextAnimation,current,now,previousAnimation);animation.previousAnimation=null;animation.started=true;}const finished=nextAnimation.onFrame(nextAnimation,now);animation.current=nextAnimation.current;return finished;}else if(previousAnimation){const finished=previousAnimation.finished||previousAnimation.onFrame(previousAnimation,now);animation.current=previousAnimation.current;if(finished){animation.previousAnimation=null;}}return false;}function onStart(animation,value,now,previousAnimation){animation.startTime=now;animation.started=false;animation.current=value;if(previousAnimation===animation){animation.previousAnimation=previousAnimation.previousAnimation;}else{animation.previousAnimation=previousAnimation;}if(nextAnimation.reduceMotion===undefined){nextAnimation.reduceMotion=animation.reduceMotion;}}const callback=function(finished){if(nextAnimation.callback){nextAnimation.callback(finished);}};return{isHigherOrder:true,onFrame:delay,onStart:onStart,current:nextAnimation.current,callback:callback,previousAnimation:null,startTime:0,started:false,reduceMotion:getReduceMotionForAnimation(reduceMotion)};});}" };
+fn.__workletHash = 2452826107198;
+fn.__initData = { code: "function pnpm_clampTs1(config,_animationToClamp){const{defineAnimation,recognizePrefixSuffix,logger,getReduceMotionForAnimation}=this.__closure;return defineAnimation(_animationToClamp,function(){'worklet';const animationToClamp=typeof _animationToClamp==='function'?_animationToClamp():_animationToClamp;const strippedMin=config.min===undefined?undefined:recognizePrefixSuffix(config.min).strippedValue;const strippedMax=config.max===undefined?undefined:recognizePrefixSuffix(config.max).strippedValue;function clampOnFrame(animation,now){const finished=animationToClamp.onFrame(animationToClamp,now);if(animationToClamp.current===undefined){logger.warn(\"Error inside 'withClamp' animation, the inner animation has invalid current value\");return true;}else{const{prefix:prefix,strippedValue:strippedValue,suffix:suffix}=recognizePrefixSuffix(animationToClamp.current);let newValue;if(strippedMax!==undefined&&strippedMax<strippedValue){newValue=strippedMax;}else if(strippedMin!==undefined&&strippedMin>strippedValue){newValue=strippedMin;}else{newValue=strippedValue;}animation.current=typeof animationToClamp.current==='number'?newValue:\"\"+(prefix===undefined?'':prefix)+newValue+(suffix===undefined?'':suffix);}return finished;}function onStart(animation,value,now,previousAnimation){animation.current=value;animation.previousAnimation=animationToClamp;const animationBeforeClamped=previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.previousAnimation;if(config.max!==undefined&&config.min!==undefined&&config.max<config.min){logger.warn('Wrong config was provided to withClamp. Min value is bigger than max');}animationToClamp.onStart(animationToClamp,(animationBeforeClamped===null||animationBeforeClamped===void 0?void 0:animationBeforeClamped.current)||value,now,animationBeforeClamped);}const callback=function(finished){if(animationToClamp.callback){animationToClamp.callback(finished);}};return{isHigherOrder:true,onFrame:clampOnFrame,onStart:onStart,current:animationToClamp.current,callback:callback,previousAnimation:null,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};});}" };
 
-export const withDelay = fn;
+export const withClamp = fn;

@@ -1,22 +1,22 @@
-// Module ID: 8824
-// Function ID: 8825
+// Module ID: 8819
+// Function ID: 8820
 // Name: handlePressJoinActivity
-// Dependencies: [5, 2003, 2045, 2067, 4469, 1372, 4855, 2044, 8825, 8802, 5203, 1115, 6584, 8801, 8826, 2]
+// Dependencies: [5, 2009, 2051, 2073, 4472, 1378, 4856, 2050, 8820, 8797, 5204, 1127, 6585, 8796, 8821, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 8824 (handlePressJoinActivity)
-import intl9 from "intl" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 8802 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 8825 */;
+// Module 8819 (handlePressJoinActivity)
+import intl9 from "intl" /* 1127 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
+import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 8797 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 8820 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2003 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import ApplicationRecord from "ApplicationRecord" /* 2009 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import UserStore from "UserStore" /* 1378 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
 import size from "module_2" /* 2 */;
 
 let application, currentUser;
@@ -44,29 +44,29 @@ function handlePressJoinActivity(arg0) {
     const obj2 = { title: intl7.string(intl9.t.PtobXW), body: intl8.string(intl9.t.UXoQTp), hideActionSheet: false };
     const show4 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl7 = tmp(1115).intl;
-    intl8 = tmp(1115).intl;
+    intl7 = tmp(1127).intl;
+    intl8 = tmp(1127).intl;
     show4(obj2);
   } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === embeddedActivityJoinability) {
     const obj3 = { title: intl5.string(intl9.t.PtobXW), body: intl6.string(intl9.t.uGDCcw), hideActionSheet: false };
     const show3 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl5 = tmp(1115).intl;
-    intl6 = tmp(1115).intl;
+    intl5 = tmp(1127).intl;
+    intl6 = tmp(1127).intl;
     show3(obj3);
   } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === embeddedActivityJoinability) {
     const obj4 = { title: intl3.string(intl9.t.PtobXW), body: intl4.string(intl9.t["4WuFRE"]), hideActionSheet: false };
     const show2 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl3 = tmp(1115).intl;
-    intl4 = tmp(1115).intl;
+    intl3 = tmp(1127).intl;
+    intl4 = tmp(1127).intl;
     show2(obj4);
   } else {
     obj = { title: intl.string(intl9.t.PtobXW), body: intl2.string(intl9.t.FUCQco), hideActionSheet: false };
     const show = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl = tmp(1115).intl;
-    intl2 = tmp(1115).intl;
+    intl = tmp(1127).intl;
+    intl2 = tmp(1127).intl;
     show(obj);
   }
 }
@@ -142,7 +142,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
           tmp46(obj8);
         }
       }
-      await "HermesInternal";
+      await "IconComponent";
       if (arg0 === 1) {
         throw value;
       }
@@ -169,7 +169,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -198,7 +198,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } catch (tmp12) {
               c0 = 3;
               throw tmp12;
@@ -207,7 +207,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
         });
         return obj(...arguments);
       };
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;

@@ -1,13 +1,13 @@
-// Module ID: 15360
-// Function ID: 15361
+// Module ID: 15348
+// Function ID: 15349
 // Name: useDesignSystemSettingsState
-// Dependencies: [560, 2]
+// Dependencies: [570, 2]
 
-// Module 15360 (useDesignSystemSettingsState)
-import module_560 from "module_560" /* 560 */;
+// Module 15348 (useDesignSystemSettingsState)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
-const obj = module_560.create(() => ({ buttonSize: "md", buttonScale: 8, enableLoadingState: false, iconPosition: "start", showIcon: false, showDisabled: false }));
+const obj = module_570.create(() => ({ buttonSize: "md", buttonScale: 8, enableLoadingState: false, iconPosition: "start", showIcon: false, showDisabled: false }));
 const result = size.fileFinishedImporting("modules/user_settings/design_system/native/useDesignSystemSettingsState.tsx");
 
 export default obj;

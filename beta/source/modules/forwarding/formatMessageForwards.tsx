@@ -1,21 +1,21 @@
-// Module ID: 7396
-// Function ID: 7397
+// Module ID: 7400
+// Function ID: 7401
 // Name: formatMessageForwards
-// Dependencies: [7397, 2045, 2067, 4469, 4479, 1372, 1397, 1115, 4512, 4989, 6720, 2]
+// Dependencies: [7401, 2051, 2073, 4472, 4482, 1378, 1403, 1127, 4515, 4990, 6721, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 7396 (formatMessageForwards)
-import intl4 from "intl" /* 1115 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import DateUtils from "DateUtils" /* 4512 */;
-import useChannelName from "useChannelName" /* 4989 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6720 */;
-import BasicGuildStore from "BasicGuildStore" /* 7397 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 7400 (formatMessageForwards)
+import intl4 from "intl" /* 1127 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import DateUtils from "DateUtils" /* 4515 */;
+import useChannelName from "useChannelName" /* 4990 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6721 */;
+import BasicGuildStore from "BasicGuildStore" /* 7401 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 class MessageForward {
@@ -98,7 +98,7 @@ class MessageForward {
             obj9 = { id: null, size: 16, icon: null, canAnimate: false };
             ({ id: obj22.id, icon: obj22.icon } = guild);
             obj21 = AvatarUtilsDefault;
-            intl3 = tmp3(1115).intl;
+            intl3 = tmp3(1127).intl;
             obj10 = { origin: guild.name, timestamp: result };
           }
           return obj7;
@@ -109,7 +109,7 @@ class MessageForward {
             const tmp3Result = useChannelName;
             const channelName = tmp3Result.computeChannelName(channel1, tmp, tmp2, true);
             obj12 = { originLabel: channelName, timestampLabel: result, accessibilityLabel: intl.formatToPlainString(intl4.t["+l04BN"], obj13) };
-            intl = tmp3(1115).intl;
+            intl = tmp3(1127).intl;
             obj14 = obj11;
             obj13 = { origin: channelName, timestamp: result };
           } else {
@@ -141,7 +141,7 @@ class MessageForward {
         obj23 = { id: null, size: 16, icon: null, canAnimate: false };
         ({ id: obj18.id, icon: obj18.icon } = guild1);
         obj17 = AvatarUtilsDefault;
-        intl2 = tmp3(1115).intl;
+        intl2 = tmp3(1127).intl;
         obj38 = { origin: guild1.name, timestamp: result };
       }
       return obj19;

@@ -1,10 +1,10 @@
-// Module ID: 13179
-// Function ID: 13180
+// Module ID: 13181
+// Function ID: 13182
 // Name: AltGatewayTracker
-// Dependencies: [13180, 2]
+// Dependencies: [13182, 2]
 
-// Module 13179 (AltGatewayTracker)
-import react_nativeDefault from "react-native" /* 13180 */;
+// Module 13181 (AltGatewayTracker)
+import react_nativeDefault from "react-native" /* 13182 */;
 import size from "module_2" /* 2 */;
 
 let closure_1 = react_nativeDefault();

@@ -1,19 +1,49 @@
-// Module ID: 11931
-// Function ID: 11932
+// Module ID: 11825
+// Function ID: 11826
 // Name: useChangelogIdFromChannel
-// Dependencies: [5056, 504, 2]
-// Exports: default
+// Dependencies: [5057, 558, 576, 504, 2]
 
-// Module 11931 (useChangelogIdFromChannel)
-import MessageStore from "MessageStore" /* 5056 */;
+// Module 11825 (useChangelogIdFromChannel)
+import MessageStore from "MessageStore" /* 5057 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const result = size.fileFinishedImporting("modules/changelog/useChangelogIdFromChannel.tsx");
-
-export default function useChangelogIdFromChannel(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MessageStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function s() {
+      return MessageStore.getLastMessage(closure_0);
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  let changelogId;
+  if (stateFromStores != null) {
+    changelogId = stateFromStores.changelogId;
+  }
+  return changelogId;
+}) : ((arg0) => {
   let closure_0;
   _require = arg0;
   const items = [MessageStore];
@@ -24,4 +54,7 @@ export default function useChangelogIdFromChannel(arg0) {
     changelogId = stateFromStores.changelogId;
   }
   return changelogId;
-};
+});
+const result = size.fileFinishedImporting("modules/changelog/useChangelogIdFromChannel.tsx");
+
+export default tmp2;

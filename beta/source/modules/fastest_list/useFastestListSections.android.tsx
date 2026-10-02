@@ -1,11 +1,11 @@
-// Module ID: 6484
-// Function ID: 6485
+// Module ID: 6485
+// Function ID: 6486
 // Name: useFastestListSections
-// Dependencies: [19, 5910, 6485, 6486, 2]
+// Dependencies: [19, 5907, 6486, 6487, 2]
 // Exports: default
 
-// Module 6484 (useFastestListSections)
-import FastestListItemTypeDefault from "FastestListItemType" /* 6485 */;
+// Module 6485 (useFastestListSections)
+import FastestListItemTypeDefault from "FastestListItemType" /* 6486 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

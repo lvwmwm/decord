@@ -1,17 +1,17 @@
-// Module ID: 12588
-// Function ID: 12589
+// Module ID: 12590
+// Function ID: 12591
 // Name: getActivityHeader
-// Dependencies: [1074, 12589, 12590, 1115, 12592, 12593, 8817, 2]
+// Dependencies: [1086, 12591, 12592, 1127, 12594, 12595, 8812, 2]
 // Exports: default
 
-// Module 12588 (getActivityHeader)
-import intl23 from "intl" /* 1115 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 8817 */;
-import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 12589 */;
-import getActivityPlatformDefault from "getActivityPlatform" /* 12590 */;
-import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 12592 */;
-import getActivityPlatformDisplayNameDefault from "getActivityPlatformDisplayName" /* 12593 */;
-import Constants from "Constants" /* 1074 */;
+// Module 12590 (getActivityHeader)
+import intl23 from "intl" /* 1127 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 8812 */;
+import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 12591 */;
+import getActivityPlatformDefault from "getActivityPlatform" /* 12592 */;
+import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 12594 */;
+import getActivityPlatformDisplayNameDefault from "getActivityPlatformDisplayName" /* 12595 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -201,47 +201,47 @@ export default function getActivityHeader(session_id) {
     const obj29 = StageChannelRichPresenceUtils;
     if (obj29.isStageActivity(session_id)) {
       const obj18 = { text: intl7.formatToPlainString(intl23.t.pW3Ip3, obj19) };
-      intl7 = tmp39(1115).intl;
+      intl7 = tmp39(1127).intl;
       obj = obj18;
       obj19 = { name: session_id.name };
     } else {
       if (session_id.type === constants.LISTENING) {
         if (null != session_id.details) {
           const obj20 = { text: intl6.formatToPlainString(intl23.t["b+lA5+"], obj21), platformIcon: icon, platformLabel: str };
-          intl6 = tmp39(1115).intl;
+          intl6 = tmp39(1127).intl;
           obj = obj20;
           obj21 = { name: session_id.name };
         }
       }
       if (session_id.type === constants.LISTENING) {
         const obj22 = { text: intl5.string(intl23.t.dBISa6), platformIcon: icon, platformLabel: str };
-        intl5 = tmp39(1115).intl;
+        intl5 = tmp39(1127).intl;
         obj = obj22;
       } else {
         if (session_id.type === constants.WATCHING) {
           if (null != session_id.details) {
             const obj23 = { text: intl4.formatToPlainString(intl23.t.mqdfDc, obj24), platformIcon: icon, platformLabel: str };
-            intl4 = tmp39(1115).intl;
+            intl4 = tmp39(1127).intl;
             obj = obj23;
             obj24 = { name: session_id.name };
           }
         }
         if (session_id.type === constants.WATCHING) {
           const obj25 = { text: intl3.string(intl23.t.GpNXjC), platformIcon: icon, platformLabel: str };
-          intl3 = tmp39(1115).intl;
+          intl3 = tmp39(1127).intl;
           obj = obj25;
         } else {
           if (session_id.type === constants.COMPETING) {
             if (null != session_id.details) {
               const obj26 = { text: intl2.formatToPlainString(intl23.t.oHF7Ch, obj27), platformIcon: icon, platformLabel: str };
-              intl2 = tmp39(1115).intl;
+              intl2 = tmp39(1127).intl;
               obj = obj26;
               obj27 = { name: session_id.name };
             }
           }
           if (session_id.type === constants.COMPETING) {
             const obj28 = { text: intl.string(intl23.t.OzCsIA), platformIcon: icon, platformLabel: str };
-            intl = tmp39(1115).intl;
+            intl = tmp39(1127).intl;
             obj = obj28;
           } else {
             obj = { text: "r", platformIcon: icon, platformLabel: str };

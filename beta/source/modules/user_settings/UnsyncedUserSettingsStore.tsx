@@ -1,18 +1,18 @@
-// Module ID: 1184
-// Function ID: 1185
+// Module ID: 1196
+// Function ID: 1197
 // Name: UnsyncedUserSettingsStore
-// Dependencies: [1185, 1084, 1074, 1218, 1219, 504, 510, 12, 573, 2]
+// Dependencies: [1197, 1096, 1086, 1230, 1231, 504, 510, 12, 585, 2]
 
-// Module 1184 (UnsyncedUserSettingsStore)
+// Module 1196 (UnsyncedUserSettingsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
-import ThemeConstants from "ThemeConstants" /* 1185 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1218 */;
-import getSystemThemeDefault from "getSystemTheme" /* 1219 */;
-import Constants from "Constants" /* 1074 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
+import ThemeConstants from "ThemeConstants" /* 1197 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1230 */;
+import getSystemThemeDefault from "getSystemTheme" /* 1231 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let CHANNEL_SIDEBAR_WIDTH;

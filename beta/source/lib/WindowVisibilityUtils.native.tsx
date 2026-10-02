@@ -1,13 +1,13 @@
-// Module ID: 8887
-// Function ID: 8888
+// Module ID: 8885
+// Function ID: 8886
 // Name: WindowVisibilityUtils
-// Dependencies: [1980, 1074, 8886, 2]
+// Dependencies: [1986, 1086, 8884, 2]
 // Exports: default
 
-// Module 8887 (WindowVisibilityUtils)
-import Constants from "Constants" /* 1074 */;
-import ExternalPipDefault from "ExternalPip" /* 8886 */;
-import AppStateStore from "AppStateStore" /* 1980 */;
+// Module 8885 (WindowVisibilityUtils)
+import Constants from "Constants" /* 1086 */;
+import ExternalPipDefault from "ExternalPip" /* 8884 */;
+import AppStateStore from "AppStateStore" /* 1986 */;
 import size from "module_2" /* 2 */;
 
 const AppStates = Constants.AppStates;

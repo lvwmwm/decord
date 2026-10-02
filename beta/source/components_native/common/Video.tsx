@@ -1,119 +1,271 @@
-// Module ID: 7755
-// Function ID: 7756
+// Module ID: 7759
+// Function ID: 7760
 // Name: common/Video
-// Dependencies: [32, 19, 17, 21, 4836, 576, 7756, 4540, 7707, 6459, 1115, 2]
+// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 7760, 4544, 7711, 6459, 1127, 2]
 // Exports: createVideoControls
 
-// Module 7755 (common/Video)
+// Module 7759 (common/Video)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import native from "native" /* 4540 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import native from "native" /* 4544 */;
 import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6459 */;
-import openMediaModal2 from "openMediaModal" /* 7707 */;
+import openMediaModal2 from "openMediaModal" /* 7711 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let closure_0, dependencyMap;
+let _require, closure_0, dependencyMap, tmp2;
 
 let closure_4;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let obj2;
-class VideoComponent {
-  constructor(paused) {
-    let ariaHidden;
-    let closure_1;
-    let controls;
-    let disableFocus;
-    let first;
-    let importantForAccessibility;
-    let mixWithOthers;
-    let onEnd;
-    let onError;
-    let onLoad;
-    let onLoadStart;
-    let pauseWhileAppInactive;
-    let poster;
-    let source;
-    let style;
-    let flag = paused.paused;
-    ({ style, source, poster, onLoadStart, onLoad, onError, onEnd } = paused);
-    if (flag === undefined) {
-      flag = false;
-    }
-    let flag2 = paused.muted;
-    if (flag2 === undefined) {
-      flag2 = true;
-    }
-    let str = paused.posterResizeMode;
-    if (str === undefined) {
-      str = "contain";
-    }
-    let str2 = paused.resizeMode;
-    if (str2 === undefined) {
-      str2 = "contain";
-    }
-    ({ controls, pauseWhileAppInactive, disableFocus, ariaHidden, mixWithOthers, importantForAccessibility } = paused);
-    if (pauseWhileAppInactive === undefined) {
-      pauseWhileAppInactive = true;
-    }
-    let flag3 = paused.playInBackground;
-    if (flag3 === undefined) {
-      flag3 = false;
-    }
-    let flag4 = paused.preventsDisplaySleepDuringVideoPlayback;
-    if (flag4 === undefined) {
-      flag4 = true;
-    }
-    dependencyMap = undefined;
-    const httpEngine = paused.httpEngine;
-    const _default = pauseWhileAppInactive(7756).default;
-    [first, dependencyMap] = react.useState("active" === currentState.currentState);
-    const items = [pauseWhileAppInactive];
-    const effect = react.useEffect(() => {
-      const tmp = closure_0;
-      if (tmp) {
-        closure_0 = currentState.addEventListener("change", (event) => {
-          closure_1_1("active" === event);
-        });
-        return () => {
-          closure_0.remove();
-        };
-      }
-    }, items);
-    const obj = { style, source, importantForAccessibility, poster, muted: flag2, paused: flag, posterResizeMode: str, resizeMode: str2, repeat: true, playInBackground: flag3, pictureInPicture: false, playWhenInactive: false, onLoadStart, onLoad, onError, onEnd, disableFocus, "aria-hidden": ariaHidden, mixWithOthers, preventsDisplaySleepDuringVideoPlayback: flag4, httpEngine };
-    const tmp4 = jsx;
-    if (!flag) {
-      if (pauseWhileAppInactive) {
-        pauseWhileAppInactive = !first;
-      }
-      flag = pauseWhileAppInactive;
-    }
-    let props;
-    if (controls != null) {
-      props = controls.props;
-    }
-    const merged = Object.assign(props);
-    return tmp4(_default, obj);
-  }
-}
+let obj3;
 ({ TouchableWithoutFeedback: closure_4, View: hasOwnProperty, Image: metroRequire, AppState: metroImportDefault } = react_native);
 const jsx = Fragment.jsx;
-let obj = { container: obj2, video: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND } };
+let obj = { container: obj2, video: obj3 };
 obj2 = { flex: 1, shadowColor: nativeDefault.unsafe_rawColors.BLACK, shadowOpacity: 0.5, shadowOffset: { height: 1, width: 0 }, shadowRadius: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
-({ flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND });
+obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 const React4 = createLegacyClassComponentStyles(obj);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let ariaHidden;
+  let controls;
+  let disableFocus;
+  let httpEngine;
+  let importantForAccessibility;
+  let mixWithOthers;
+  let muted;
+  let onEnd;
+  let onError;
+  let onLoad;
+  let onLoadStart;
+  let pauseWhileAppInactive;
+  let paused;
+  let playInBackground;
+  let poster;
+  let posterResizeMode;
+  let preventsDisplaySleepDuringVideoPlayback;
+  let resizeMode;
+  let source;
+  let style;
+  let tmp12;
+  let tmp13;
+  let tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(24);
+  ({ style, source, poster, onLoadStart, onLoad, onError, onEnd, paused, muted, posterResizeMode, resizeMode, disableFocus, controls, ariaHidden, mixWithOthers, importantForAccessibility, pauseWhileAppInactive, playInBackground, preventsDisplaySleepDuringVideoPlayback, httpEngine } = arg0);
+  let tmp4 = undefined !== paused && paused;
+  let str = "contain";
+  let str2 = "contain";
+  if (undefined !== posterResizeMode) {
+    str2 = posterResizeMode;
+  }
+  if (undefined !== resizeMode) {
+    str = resizeMode;
+  }
+  _require = tmp6;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = tmp(7760);
+    cResult[0] = tmpResult;
+    let first = tmpResult;
+  } else {
+    first = cResult[0];
+  }
+  [r10057, dependencyMap] = react.useState("active" === closure_7.currentState);
+  _slicedToArray(react.useState("active" === closure_7.currentState), 2);
+  const obj2 = react;
+  if (cResult[1] !== (undefined === pauseWhileAppInactive || pauseWhileAppInactive)) {
+    class H {
+      constructor() {
+        tmp = closure_0;
+        if (tmp) {
+          tmp2 = closure_1_7;
+          str = "change";
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F136892 */ });
+          return () => { /* body not rendered: F136893 */ };
+        } else {
+          return;
+        }
+      }
+    }
+    const items = [undefined === pauseWhileAppInactive || pauseWhileAppInactive];
+    cResult[1] = undefined === pauseWhileAppInactive || pauseWhileAppInactive;
+    cResult[2] = items;
+    cResult[3] = H;
+    tmp13 = H;
+    tmp12 = items;
+  } else {
+    class H {
+      constructor() {
+        tmp = closure_0;
+        if (tmp) {
+          tmp2 = closure_1_7;
+          str = "change";
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F136892 */ });
+          return () => { /* body not rendered: F136893 */ };
+        } else {
+          return;
+        }
+      }
+    }
+    tmp13 = cResult[3];
+  }
+  const effect = obj2.useEffect(tmp13, tmp12);
+  if (!tmp4) {
+    class H {
+      constructor() {
+        tmp = closure_0;
+        if (tmp) {
+          tmp2 = closure_1_7;
+          str = "change";
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F136892 */ });
+          return () => { /* body not rendered: F136893 */ };
+        } else {
+          return;
+        }
+      }
+    }
+    tmp4 = tmp6;
+  }
+  if (controls != null) {
+    class H {
+      constructor() {
+        tmp = closure_0;
+        if (tmp) {
+          tmp2 = closure_1_7;
+          str = "change";
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F136892 */ });
+          return () => { /* body not rendered: F136893 */ };
+        } else {
+          return;
+        }
+      }
+    }
+  }
+  if (cResult[4] === ariaHidden) {
+    class H {
+      constructor() {
+        tmp = closure_0;
+        if (tmp) {
+          tmp2 = closure_1_7;
+          str = "change";
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F136892 */ });
+          return () => { /* body not rendered: F136893 */ };
+        } else {
+          return;
+        }
+      }
+    }
+  }
+  const merged = Object.assign(tmp15);
+  cResult[4] = ariaHidden;
+  cResult[5] = disableFocus;
+  cResult[6] = httpEngine;
+  cResult[7] = importantForAccessibility;
+  cResult[8] = mixWithOthers;
+  cResult[9] = undefined === muted || muted;
+  cResult[10] = onEnd;
+  cResult[11] = onError;
+  cResult[12] = onLoad;
+  cResult[13] = onLoadStart;
+  cResult[14] = undefined !== playInBackground && playInBackground;
+  cResult[15] = poster;
+  cResult[16] = str2;
+  cResult[17] = undefined === preventsDisplaySleepDuringVideoPlayback || preventsDisplaySleepDuringVideoPlayback;
+  cResult[18] = str;
+  cResult[19] = source;
+  cResult[20] = style;
+  cResult[21] = tmp4;
+  cResult[22] = undefined;
+  cResult[23] = <_default style={style} source={source} importantForAccessibility={importantForAccessibility} poster={poster} muted={undefined === muted || muted} paused={tmp4} posterResizeMode={str2} resizeMode={str} repeat playInBackground={undefined !== playInBackground && playInBackground} pictureInPicture={false} playWhenInactive={false} onLoadStart={onLoadStart} onLoad={onLoad} onError={onError} onEnd={onEnd} disableFocus={disableFocus} aria-hidden={ariaHidden} mixWithOthers={mixWithOthers} preventsDisplaySleepDuringVideoPlayback={undefined === preventsDisplaySleepDuringVideoPlayback || preventsDisplaySleepDuringVideoPlayback} httpEngine={httpEngine} />;
+}) : ((paused) => {
+  let ariaHidden;
+  let closure_1;
+  let controls;
+  let disableFocus;
+  let first;
+  let importantForAccessibility;
+  let mixWithOthers;
+  let onEnd;
+  let onError;
+  let onLoad;
+  let onLoadStart;
+  let pauseWhileAppInactive;
+  let poster;
+  let source;
+  let style;
+  let flag = paused.paused;
+  ({ style, source, poster, onLoadStart, onLoad, onError, onEnd } = paused);
+  if (flag === undefined) {
+    flag = false;
+  }
+  let flag2 = paused.muted;
+  if (flag2 === undefined) {
+    flag2 = true;
+  }
+  let str = paused.posterResizeMode;
+  if (str === undefined) {
+    str = "contain";
+  }
+  let str2 = paused.resizeMode;
+  if (str2 === undefined) {
+    str2 = "contain";
+  }
+  ({ controls, pauseWhileAppInactive, disableFocus, ariaHidden, mixWithOthers, importantForAccessibility } = paused);
+  if (pauseWhileAppInactive === undefined) {
+    pauseWhileAppInactive = true;
+  }
+  let flag3 = paused.playInBackground;
+  if (flag3 === undefined) {
+    flag3 = false;
+  }
+  let flag4 = paused.preventsDisplaySleepDuringVideoPlayback;
+  if (flag4 === undefined) {
+    flag4 = true;
+  }
+  dependencyMap = undefined;
+  const httpEngine = paused.httpEngine;
+  const _default = pauseWhileAppInactive(7760).default;
+  [first, dependencyMap] = react.useState("active" === closure_7.currentState);
+  const items = [pauseWhileAppInactive];
+  const effect = react.useEffect(() => {
+    const tmp = closure_0;
+    if (tmp) {
+      closure_0 = closure_1_7.addEventListener("change", (event) => {
+        closure_1_1("active" === event);
+      });
+      return () => {
+        closure_0.remove();
+      };
+    }
+  }, items);
+  const obj = { style, source, importantForAccessibility, poster, muted: flag2, paused: flag, posterResizeMode: str, resizeMode: str2, repeat: true, playInBackground: flag3, pictureInPicture: false, playWhenInactive: false, onLoadStart, onLoad, onError, onEnd, disableFocus, "aria-hidden": ariaHidden, mixWithOthers, preventsDisplaySleepDuringVideoPlayback: flag4, httpEngine };
+  const tmp4 = jsx;
+  if (!flag) {
+    if (pauseWhileAppInactive) {
+      pauseWhileAppInactive = !first;
+    }
+    flag = pauseWhileAppInactive;
+  }
+  let props;
+  if (controls != null) {
+    props = controls.props;
+  }
+  const merged = Object.assign(props);
+  return tmp4(_default, obj);
+});
+let closure_10 = tmp5;
 const PureComponent = react.PureComponent;
 class Video extends PureComponent {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
-    require = applyArgumentsResult;
+    const require = applyArgumentsResult;
     applyArgumentsResult.state = { postponeRender: true };
     applyArgumentsResult.ref = react.createRef();
     applyArgumentsResult.isVideo = function isVideo() {
@@ -172,7 +324,7 @@ class Video extends PureComponent {
           size = { width: tmp3, height: tmp4 };
           items[1] = size;
           items[2] = tmp7;
-          tmp13 = <VideoComponent style={items} source={{ uri: videoURI }} poster={tmp2} muted={tmp5} paused={tmp6} resizeMode={resizeMode} posterResizeMode={resizeMode} ariaHidden={tmp8} disableFocus={tmp9} httpEngine={tmp10} />;
+          tmp13 = <closure_10 style={items} source={{ uri: videoURI }} poster={tmp2} muted={tmp5} paused={tmp6} resizeMode={resizeMode} posterResizeMode={resizeMode} ariaHidden={tmp8} disableFocus={tmp9} httpEngine={tmp10} />;
           const obj2 = { uri: videoURI };
         }
         return tmp13;
@@ -293,4 +445,4 @@ export const createVideoControls = function createVideoControls(NOOP) {
     }
   };
 };
-export { VideoComponent };
+export const VideoComponent = tmp5;

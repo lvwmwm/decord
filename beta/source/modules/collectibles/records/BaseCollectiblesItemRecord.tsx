@@ -1,10 +1,10 @@
-// Module ID: 1973
-// Function ID: 1974
+// Module ID: 1979
+// Function ID: 1980
 // Name: BaseCollectiblesItemRecord
-// Dependencies: [1387, 2]
+// Dependencies: [1393, 2]
 
-// Module 1973 (BaseCollectiblesItemRecord)
-import Record from "Record" /* 1387 */;
+// Module 1979 (BaseCollectiblesItemRecord)
+import Record from "Record" /* 1393 */;
 import size from "module_2" /* 2 */;
 
 let sku_id;

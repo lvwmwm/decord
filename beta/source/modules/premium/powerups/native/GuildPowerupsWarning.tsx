@@ -1,20 +1,20 @@
-// Module ID: 12056
-// Function ID: 12057
+// Module ID: 11966
+// Function ID: 11967
 // Name: GuildPowerupsWarning
-// Dependencies: [19, 17, 21, 4836, 576, 6401, 12057, 6028, 4832, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 6398, 11967, 6351, 4833, 2]
 
-// Module 12056 (GuildPowerupsWarning)
+// Module 11966 (GuildPowerupsWarning)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import nativeDefault from "native" /* 588 */;
+import Text_Text from "Text/Text" /* 4833 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, warnings;
 
 let closure_4;
 let hasOwnProperty;
@@ -30,9 +30,137 @@ createStyles = createStyles.createStyles;
 obj3 = { flex: 1, gap: nativeDefault.space.PX_4, alignItems: "center" };
 obj4 = { marginTop: nativeDefault.space.PX_4 };
 let closure_6 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsWarning.tsx");
-
-export default function GuildPowerupsWarning(warnings) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((warnings) => {
+  let closure_0;
+  let description;
+  let guildId;
+  let items;
+  let powerupNames;
+  let title;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(21);
+  warnings = warnings.warnings;
+  ({ guildId, powerupNames } = warnings);
+  const tmp4 = closure_6();
+  _require = tmp4;
+  const obj2 = require("ManaTypeConsolidationExperiment");
+  const manaTypeConsolidationExperiment = obj2.useManaTypeConsolidationExperiment("GuildPowerupsWarning");
+  const tmp7 = manaTypeConsolidationExperiment(11967)(guildId, powerupNames);
+  ({ title, description } = tmp7);
+  const tmp6 = manaTypeConsolidationExperiment;
+  if (tmp7.shouldShow) {
+    let first;
+    const _Symbol = Symbol;
+    let str = "react.memo_cache_sentinel";
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = { color: tmp6(588).colors.TEXT_FEEDBACK_WARNING, size: "md" };
+      const CircleErrorIcon = tmp(6351).CircleErrorIcon;
+      const tmp12 = closure_4(CircleErrorIcon, obj3);
+      cResult[0] = tmp12;
+      first = tmp12;
+    } else {
+      first = cResult[0];
+    }
+    if (cResult[1] === tmp4.text) {
+      let tmp13;
+      if (cResult[2] === title) {
+        tmp13 = cResult[3];
+      }
+      let str2 = "text-sm/medium";
+      if (manaTypeConsolidationExperiment) {
+        str2 = "experimental/body-sm/normal";
+      }
+      if (cResult[4] === description) {
+        if (cResult[5] === tmp4.text) {
+          let tmp16;
+          if (cResult[6] === str2) {
+            tmp16 = cResult[7];
+          }
+          if (cResult[8] === manaTypeConsolidationExperiment) {
+            if (cResult[9] === tmp4.text) {
+              if (cResult[10] === tmp4.warningText) {
+                let tmp19;
+                if (cResult[11] === warnings) {
+                  tmp19 = cResult[12];
+                }
+                if (cResult[13] === tmp4.contentContainer) {
+                  if (cResult[14] === tmp13) {
+                    if (cResult[15] === tmp16) {
+                      let tmp22;
+                      if (cResult[16] === tmp19) {
+                        tmp22 = cResult[17];
+                      }
+                      if (cResult[18] === tmp4.container) {
+                        let tmp26;
+                        if (cResult[19] === tmp22) {
+                          tmp26 = cResult[20];
+                        }
+                        return tmp26;
+                      }
+                      const obj4 = { style: tmp4.container, children: tmp22 };
+                      const tmp29 = closure_4(View, obj4);
+                      cResult[18] = tmp4.container;
+                      cResult[19] = tmp22;
+                      cResult[20] = tmp29;
+                      tmp26 = tmp29;
+                    }
+                  }
+                }
+                const obj5 = { style: tmp4.contentContainer, children: items };
+                items = [first, tmp13, tmp16, tmp19];
+                const tmp25 = closure_5(View, obj5);
+                cResult[13] = tmp4.contentContainer;
+                cResult[14] = tmp13;
+                cResult[15] = tmp16;
+                cResult[16] = tmp19;
+                cResult[17] = tmp25;
+                tmp22 = tmp25;
+              }
+            }
+          }
+          let mapped;
+          if (warnings != null) {
+            mapped = warnings.map((children, index) => {
+              let items;
+              let str = "text-sm/medium";
+              const Text = Text_Text.Text;
+              const tmp = React3;
+              if (manaTypeConsolidationExperiment) {
+                str = "experimental/body-sm/normal";
+              }
+              const obj = { variant: str, color: "text-feedback-warning", style: items, children };
+              items = [, ];
+              ({ warningText: arr[0], text: arr[1] } = closure_0);
+              return tmp(Text, obj, "warning-" + index);
+            });
+          }
+          cResult[8] = manaTypeConsolidationExperiment;
+          cResult[9] = tmp4.text;
+          cResult[10] = tmp4.warningText;
+          cResult[11] = warnings;
+          cResult[12] = mapped;
+          tmp19 = mapped;
+        }
+      }
+      const obj6 = { variant: str2, style: tmp4.text, children: description };
+      const tmp18 = closure_4(tmp(4833).Text, obj6);
+      cResult[4] = description;
+      cResult[5] = tmp4.text;
+      cResult[6] = str2;
+      cResult[7] = tmp18;
+      tmp16 = tmp18;
+    }
+    const obj7 = { variant: "text-md/semibold", color: "text-feedback-warning", style: tmp4.text, children: title };
+    const tmp15 = closure_4(tmp(4833).Text, obj7);
+    cResult[1] = tmp4.text;
+    cResult[2] = title;
+    cResult[3] = tmp15;
+    tmp13 = tmp15;
+  } else {
+    return null;
+  }
+}) : ((warnings) => {
   let closure_0;
   let guildId;
   let items;
@@ -47,17 +175,17 @@ export default function GuildPowerupsWarning(warnings) {
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsWarning");
   let tmp10Result = null;
   const tmp5 = manaTypeConsolidationExperiment;
-  const tmp6 = manaTypeConsolidationExperiment(12057)(guildId, powerupNames);
+  const tmp6 = manaTypeConsolidationExperiment(11967)(guildId, powerupNames);
   if (tmp6.shouldShow) {
     const obj2 = { style: tmp.container, children: tmp12(View, obj3) };
     obj3 = { style: tmp.contentContainer, children: items };
-    const obj4 = { color: tmp5(576).colors.TEXT_FEEDBACK_WARNING, size: "md" };
-    const CircleErrorIcon = tmp2(6028).CircleErrorIcon;
+    const obj4 = { color: tmp5(588).colors.TEXT_FEEDBACK_WARNING, size: "md" };
+    const CircleErrorIcon = tmp2(6351).CircleErrorIcon;
     items = [closure_4(CircleErrorIcon, obj4), , , ];
     const obj5 = { variant: "text-md/semibold", color: "text-feedback-warning", style: tmp.text, children: tmp7 };
     items[1] = closure_4(require("Text/Text").Text, obj5);
     let str = "text-sm/medium";
-    let Text = tmp2(4832).Text;
+    let Text = tmp2(4833).Text;
     tmp12 = closure_5;
     if (manaTypeConsolidationExperiment) {
       str = "experimental/body-sm/normal";
@@ -84,4 +212,7 @@ export default function GuildPowerupsWarning(warnings) {
     tmp10Result = tmp10(tmp11, obj2);
   }
   return tmp10Result;
-};
+});
+const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsWarning.tsx");
+
+export default tmp5;

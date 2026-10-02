@@ -4,18 +4,31 @@
 
 // Module 1902
 const obj = {
-  locale: "fi",
+  locale: "cs",
   pluralRuleFunction(arg0, arg1) {
-    let str2 = "other";
+    let tmp2;
+    let tmp3;
     const str = String(arg0);
-    const tmp = str.split(".")[1];
+    const parts = str.split(".");
+    [tmp2, tmp3] = parts;
+    let str2 = "other";
     if (!arg1) {
-      let str3 = "other";
-      if (1 == arg0) {
-        str3 = "other";
-        if (!tmp) {
-          str3 = "one";
+      let str3;
+      if (1 != arg0) {
+        if (tmp2 >= 2) {
+          let str4;
+          if (tmp2 <= 4) {
+            str4 = "few";
+          }
+          str3 = str4;
         }
+        let str5 = "many";
+        if (!tmp3) {
+          str5 = "other";
+        }
+        str4 = str5;
+      } else {
+        str3 = "one";
       }
       str2 = str3;
     }

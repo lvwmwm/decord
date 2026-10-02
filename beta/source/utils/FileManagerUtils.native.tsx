@@ -1,13 +1,13 @@
-// Module ID: 7650
-// Function ID: 7651
+// Module ID: 7654
+// Function ID: 7655
 // Name: FileManagerUtils
-// Dependencies: [5, 3, 1151, 1364, 2]
+// Dependencies: [5, 3, 1163, 1370, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 7650 (FileManagerUtils)
+// Module 7654 (FileManagerUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import react_nativeDefault from "react-native" /* 1151 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+import react_nativeDefault from "react-native" /* 1163 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let obj = function _readFile() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;

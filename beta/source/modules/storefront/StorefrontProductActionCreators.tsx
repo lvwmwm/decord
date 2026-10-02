@@ -1,16 +1,16 @@
-// Module ID: 7663
-// Function ID: 7664
+// Module ID: 7667
+// Function ID: 7668
 // Name: StorefrontProductActionCreators
-// Dependencies: [5, 2112, 7664, 6982, 1074, 7665, 573, 5092, 4736, 2]
+// Dependencies: [5, 2115, 7668, 6986, 1086, 7669, 585, 5093, 4738, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus
 
-// Module 7663 (StorefrontProductActionCreators)
-import Constants from "Constants" /* 1074 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 7665 */;
+// Module 7667 (StorefrontProductActionCreators)
+import Constants from "Constants" /* 1086 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 7669 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 7664 */;
-import StorefrontProductRecord from "StorefrontProductRecord" /* 6982 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 7668 */;
+import StorefrontProductRecord from "StorefrontProductRecord" /* 6986 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _maybeFetchProductsWithSkus() {
@@ -85,13 +85,13 @@ let obj = function _maybeFetchProductsWithSkus() {
       dispatch(obj);
       c4 = 0;
     }
-    await "HermesInternal";
+    await "IconComponent";
     length = tmp;
     ({ productIds: c0, ignoreCache } = closure_0);
     if (ignoreCache === undefined) {
       ignoreCache = false;
     }
-    return "flex";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -183,13 +183,13 @@ obj = function _maybeFetchProductsBySkuIds() {
       dispatch(obj);
       c4 = 0;
     }
-    await "HermesInternal";
+    await "IconComponent";
     length = tmp;
     ({ skuIds: c0, ignoreCache } = closure_0);
     if (ignoreCache === undefined) {
       ignoreCache = false;
     }
-    return "flex";
+    return "Reflect";
   });
   return obj(...arguments);
 };

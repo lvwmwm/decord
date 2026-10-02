@@ -1,313 +1,51 @@
 // Module ID: 1664
 // Function ID: 1665
-// Dependencies: [41, 42, 90, 91, 1654, 1665, 1660, 1649, 1641, 1666]
-// Exports: createNativeReanimatedModule
+// Dependencies: [41, 42, 90, 91, 1665, 1666, 1655]
+// Exports: createNativeWorkletsModule
 
 // Module 1664
-import _mod1641 from "module_1641" /* 1641 */;
-import WorkletsModule from "WorkletsModule" /* 1654 */;
-import react_native from "react-native" /* 1660 */;
-import jsVersion from "jsVersion" /* 1665 */;
+import _classPrivateFieldKeyDefault from "_classPrivateFieldKey" /* 91 */;
+import ReanimatedError from "ReanimatedError" /* 1655 */;
+import _mod1665 from "module_1665" /* 1665 */;
+import react_native from "react-native" /* 1666 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import _classPrivateFieldBase from "_classPrivateFieldBase" /* 90 */;
-import _classPrivateFieldKey from "_classPrivateFieldKey" /* 91 */;
 
-let tmp;
-const findHostInstance = tmp(1666);
-let closure_5 = _classPrivateFieldKey("workletsModule");
-let closure_6 = _classPrivateFieldKey("reanimatedModuleProxy");
-class NativeReanimatedModule {
+let closure_5 = _classPrivateFieldKeyDefault("workletsModuleProxy");
+class NativeWorklets {
   constructor() {
-    const self = this;
-    _classCallCheck(this, NativeReanimatedModule);
+    _classCallCheck(this, NativeWorklets);
     Object.defineProperty(this, closure_5, { writable: true, value: "a" });
-    Object.defineProperty(this, closure_6, { writable: true, value: "a" });
-    const tmp6 = _classPrivateFieldBase(this, closure_5);
-    tmp6[closure_5] = WorkletsModule.WorkletsModule;
-    global._REANIMATED_VERSION_JS = jsVersion.jsVersion;
-    if (undefined === global.__reanimatedModuleProxy) {
-      if (react_native.ReanimatedTurboModule) {
-        const ReanimatedTurboModule = tmp7(1660).ReanimatedTurboModule;
-        if (!ReanimatedTurboModule.installTurboModule()) {
-          const self2 = this;
-          const self3 = this;
-          const tmp5Result = _classPrivateFieldBase(self, closure_6);
-          tmp5Result[closure_6] = new closure_8();
-          const tmp12 = new closure_8();
-        }
+    if (undefined === global.__workletsModuleProxy) {
+      const obj = _mod1665;
+      const valueUnpackerCode = obj.getValueUnpackerCode();
+      const WorkletsTurboModule = react_native.WorkletsTurboModule;
+      if (WorkletsTurboModule != null) {
+        WorkletsTurboModule.installTurboModule(valueUnpackerCode);
       }
     }
-    if (undefined === global.__reanimatedModuleProxy) {
-      const self4 = this;
-      const self5 = this;
-      const reanimatedError = new tmp7(1649).ReanimatedError("Native part of Reanimated doesn't seem to be initialized.\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#native-part-of-reanimated-doesnt-seem-to-be-initialized for more details.");
+    if (undefined === global.__workletsModuleProxy) {
+      const self = this;
+      const self2 = this;
+      const reanimatedError = new ReanimatedError.ReanimatedError("Native part of Reanimated doesn't seem to be initialized (Worklets).\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#native-part-of-reanimated-doesnt-seem-to-be-initialized for more details.");
       throw reanimatedError;
     } else {
-      _classPrivateFieldBase(self, closure_6)[closure_6] = global.__reanimatedModuleProxy;
+      _classPrivateFieldBase(this, closure_5)[closure_5] = global.__workletsModuleProxy;
     }
   }
 }
 const entry = {
-  key: "scheduleOnUI",
-  value: function scheduleOnUI(arg0) {
-    const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-    return obj.scheduleOnUI(arg0);
+  key: "makeShareableClone",
+  value: function makeShareableClone(arg0, arg1, arg2) {
+    const obj = _classPrivateFieldBase(this, closure_5)[closure_5];
+    return obj.makeShareableClone(arg0, arg1, arg2);
   }
 };
-const items = [
-  entry,
-  {
-    key: "executeOnUIRuntimeSync",
-    value: function executeOnUIRuntimeSync(arg0) {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      return obj.executeOnUIRuntimeSync(arg0);
-    }
-  },
-  {
-    key: "createWorkletRuntime",
-    value: function createWorkletRuntime(arg0, arg1) {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      return obj.createWorkletRuntime(arg0, arg1);
-    }
-  },
-  {
-    key: "scheduleOnRuntime",
-    value: function scheduleOnRuntime(arg0, arg1) {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      return obj.scheduleOnRuntime(arg0, arg1);
-    }
-  },
-  {
-    key: "registerSensor",
-    value: function registerSensor(arg0, arg1, arg2, arg3) {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      return obj.registerSensor(arg0, arg1, arg2, arg3);
-    }
-  },
-  {
-    key: "unregisterSensor",
-    value: function unregisterSensor(arg0) {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      return obj.unregisterSensor(arg0);
-    }
-  },
-  {
-    key: "registerEventHandler",
-    value: function registerEventHandler(arg0, arg1, arg2) {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      return obj.registerEventHandler(arg0, arg1, arg2);
-    }
-  },
-  {
-    key: "unregisterEventHandler",
-    value: function unregisterEventHandler(arg0) {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      return obj.unregisterEventHandler(arg0);
-    }
-  },
-  {
-    key: "getViewProp",
-    value: function getViewProp(arg0, arg1, self, arg3) {
-      let viewProp;
-      self = this;
-      const obj = _mod1641;
-      if (obj.isFabric()) {
-        const tmpResult = findHostInstance;
-        const shadowNodeWrapperFromRef = tmpResult.getShadowNodeWrapperFromRef(self);
-        const obj4 = _classPrivateFieldBase(self, closure_6)[closure_6];
-        viewProp = obj4.getViewProp(shadowNodeWrapperFromRef, arg1, arg3);
-      } else {
-        const obj2 = _classPrivateFieldBase(self, closure_6)[closure_6];
-        viewProp = obj2.getViewProp(arg0, arg1, arg3);
-      }
-      return viewProp;
-    }
-  },
-  {
-    key: "configureLayoutAnimationBatch",
-    value: function configureLayoutAnimationBatch(arg0) {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      const result = obj.configureLayoutAnimationBatch(arg0);
-    }
-  },
-  {
-    key: "setShouldAnimateExitingForTag",
-    value: function setShouldAnimateExitingForTag(arg0, arg1) {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      const result = obj.setShouldAnimateExitingForTag(arg0, arg1);
-    }
-  },
-  {
-    key: "enableLayoutAnimations",
-    value: function enableLayoutAnimations(arg0) {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      const result = obj.enableLayoutAnimations(arg0);
-    }
-  },
-  {
-    key: "configureProps",
-    value: function configureProps(arg0, arg1) {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      obj.configureProps(arg0, arg1);
-    }
-  },
-  {
-    key: "subscribeForKeyboardEvents",
-    value: function subscribeForKeyboardEvents(arg0, arg1, arg2) {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      return obj.subscribeForKeyboardEvents(arg0, arg1, arg2);
-    }
-  },
-  {
-    key: "unsubscribeFromKeyboardEvents",
-    value: function unsubscribeFromKeyboardEvents(arg0) {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      const result = obj.unsubscribeFromKeyboardEvents(arg0);
-    }
-  },
-  {
-    key: "markNodeAsRemovable",
-    value: function markNodeAsRemovable(arg0) {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      obj.markNodeAsRemovable(arg0);
-    }
-  },
-  {
-    key: "unmarkNodeAsRemovable",
-    value: function unmarkNodeAsRemovable(arg0) {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      const result = obj.unmarkNodeAsRemovable(arg0);
-    }
-  },
-  {
-    key: "getSettledUpdates",
-    value: function getSettledUpdates() {
-      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
-      return obj.getSettledUpdates();
-    }
-  }
-];
-let closure_7 = _createClass(NativeReanimatedModule, items);
-class DummyReanimatedModuleProxy {
-  constructor() {
-    _classCallCheck(this, DummyReanimatedModuleProxy);
-  }
-}
-const entry1 = {
-  key: "scheduleOnUI",
-  value: function scheduleOnUI() {
+const items = [entry];
+let closure_6 = _createClass(NativeWorklets, items);
 
-  }
-};
-const items1 = [
-  entry1,
-  {
-    key: "executeOnUIRuntimeSync",
-    value: function executeOnUIRuntimeSync() {
-      return null;
-    }
-  },
-  {
-    key: "createWorkletRuntime",
-    value: function createWorkletRuntime() {
-      return null;
-    }
-  },
-  {
-    key: "scheduleOnRuntime",
-    value: function scheduleOnRuntime() {
-
-    }
-  },
-  {
-    key: "configureLayoutAnimationBatch",
-    value: function configureLayoutAnimationBatch() {
-
-    }
-  },
-  {
-    key: "setShouldAnimateExitingForTag",
-    value: function setShouldAnimateExitingForTag() {
-
-    }
-  },
-  {
-    key: "enableLayoutAnimations",
-    value: function enableLayoutAnimations() {
-
-    }
-  },
-  {
-    key: "configureProps",
-    value: function configureProps() {
-
-    }
-  },
-  {
-    key: "subscribeForKeyboardEvents",
-    value: function subscribeForKeyboardEvents() {
-      return -1;
-    }
-  },
-  {
-    key: "unsubscribeFromKeyboardEvents",
-    value: function unsubscribeFromKeyboardEvents() {
-
-    }
-  },
-  {
-    key: "markNodeAsRemovable",
-    value: function markNodeAsRemovable() {
-
-    }
-  },
-  {
-    key: "unmarkNodeAsRemovable",
-    value: function unmarkNodeAsRemovable() {
-
-    }
-  },
-  {
-    key: "registerSensor",
-    value: function registerSensor() {
-      return -1;
-    }
-  },
-  {
-    key: "unregisterSensor",
-    value: function unregisterSensor() {
-
-    }
-  },
-  {
-    key: "registerEventHandler",
-    value: function registerEventHandler() {
-      return -1;
-    }
-  },
-  {
-    key: "unregisterEventHandler",
-    value: function unregisterEventHandler() {
-
-    }
-  },
-  {
-    key: "getViewProp",
-    value: function getViewProp() {
-      return null;
-    }
-  },
-  {
-    key: "getSettledUpdates",
-    value: function getSettledUpdates() {
-      return [];
-    }
-  }
-];
-let closure_8 = _createClass(DummyReanimatedModuleProxy, items1);
-
-export const createNativeReanimatedModule = function createNativeReanimatedModule() {
-  const tmp = new closure_7();
+export const createNativeWorkletsModule = function createNativeWorkletsModule() {
+  const tmp = new closure_6();
   return tmp;
 };

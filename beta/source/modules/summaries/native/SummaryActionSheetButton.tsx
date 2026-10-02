@@ -1,18 +1,19 @@
-// Module ID: 11150
-// Function ID: 11151
+// Module ID: 11020
+// Function ID: 11021
 // Name: SummaryActionSheetButton
-// Dependencies: [19, 17, 21, 4836, 576, 5435, 1177, 4832, 2]
-// Exports: SummaryActionSheetButton
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1189, 4833, 5436, 2]
 
-// Module 11150 (SummaryActionSheetButton)
+// Module 11020 (SummaryActionSheetButton)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import Pressables from "Pressables" /* 5435 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import Pressables from "Pressables" /* 5436 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -28,9 +29,84 @@ createStyles = createStyles.createStyles;
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj3 = { margin: 12, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_5 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/summaries/native/SummaryActionSheetButton.tsx");
-
-export const SummaryActionSheetButton = function SummaryActionSheetButton(label) {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let iconSource;
+  let items1;
+  let label;
+  let onPress;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(17);
+  ({ label, iconSource, onPress } = arg0);
+  const tmp4 = closure_5();
+  if (cResult[0] !== tmp4.iconBox) {
+    const items = [tmp4.iconBox];
+    cResult[0] = tmp4.iconBox;
+    cResult[1] = items;
+    tmp5 = items;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === iconSource) {
+    let tmp6;
+    if (cResult[3] === tmp4.icon) {
+      tmp6 = cResult[4];
+    }
+    if (cResult[5] === tmp5) {
+      let tmp8;
+      if (cResult[6] === tmp6) {
+        tmp8 = cResult[7];
+      }
+      if (cResult[8] === label) {
+        let tmp12;
+        if (cResult[9] === tmp4.name) {
+          tmp12 = cResult[10];
+        }
+        if (cResult[11] === label) {
+          if (cResult[12] === onPress) {
+            if (cResult[13] === tmp4.container) {
+              if (cResult[14] === tmp8) {
+                let tmp15;
+                if (cResult[15] === tmp12) {
+                  tmp15 = cResult[16];
+                }
+                return tmp15;
+              }
+            }
+          }
+        }
+        const obj2 = { style: tmp4.container, onPress, accessibilityRole: "button", accessibilityLabel: label, children: items1 };
+        items1 = [tmp8, tmp12];
+        const tmp17 = React3(Pressables.PressableOpacity, obj2);
+        cResult[11] = label;
+        cResult[12] = onPress;
+        cResult[13] = tmp4.container;
+        cResult[14] = tmp8;
+        cResult[15] = tmp12;
+        cResult[16] = tmp17;
+        tmp15 = tmp17;
+      }
+      const obj3 = { style: tmp4.name, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: label };
+      const tmp14 = _false(Text_Text.Text, obj3);
+      cResult[8] = label;
+      cResult[9] = tmp4.name;
+      cResult[10] = tmp14;
+      tmp12 = tmp14;
+    }
+    const obj4 = { style: tmp5, children: tmp6 };
+    const tmp11 = _false(View, obj4);
+    cResult[5] = tmp5;
+    cResult[6] = tmp6;
+    cResult[7] = tmp11;
+    tmp8 = tmp11;
+  }
+  const obj5 = { style: tmp4.icon, source: iconSource };
+  const tmp7 = _false(native.Icon, obj5);
+  cResult[2] = iconSource;
+  cResult[3] = tmp4.icon;
+  cResult[4] = tmp7;
+  tmp6 = tmp7;
+}) : ((label) => {
   let iconSource;
   let items;
   let items1;
@@ -48,4 +124,7 @@ export const SummaryActionSheetButton = function SummaryActionSheetButton(label)
   const obj4 = { style: tmp.name, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: label };
   items1[1] = _false(Text_Text.Text, obj4);
   return React3(PressableOpacity, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/summaries/native/SummaryActionSheetButton.tsx");
+
+export const SummaryActionSheetButton = tmp6;

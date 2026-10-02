@@ -1,20 +1,20 @@
-// Module ID: 14206
-// Function ID: 14207
+// Module ID: 14194
+// Function ID: 14195
 // Name: GuildProfileEmptyState
-// Dependencies: [5, 19, 17, 21, 4836, 14207, 4832, 1115, 5281, 12205, 1981, 2]
+// Dependencies: [5, 19, 17, 21, 4837, 14195, 4833, 1127, 5282, 12098, 1987, 2]
 // Exports: default
 
-// Module 14206 (GuildProfileEmptyState)
-import intl5 from "intl" /* 1115 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import GuildProfileEmptyStateSvgDefault from "GuildProfileEmptyStateSvg" /* 14207 */;
+// Module 14194 (GuildProfileEmptyState)
+import intl5 from "intl" /* 1127 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import GuildProfileEmptyStateSvgDefault from "GuildProfileEmptyStateSvg" /* 14195 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -64,7 +64,7 @@ export default function GuildProfileEmptyState() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ export default function GuildProfileEmptyState() {
             const _default = value.default;
             _default.openCreateGuildModal();
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp7) {
           c0 = 3;
@@ -120,7 +120,7 @@ export default function GuildProfileEmptyState() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -150,7 +150,7 @@ export default function GuildProfileEmptyState() {
             const _default = value.default;
             const result = _default.openGuildJoinServerScreen();
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp7) {
           c0 = 3;

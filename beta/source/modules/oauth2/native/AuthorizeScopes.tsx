@@ -1,21 +1,157 @@
-// Module ID: 8727
-// Function ID: 8728
+// Module ID: 8722
+// Function ID: 8723
 // Name: AuthorizeScopes
-// Dependencies: [19, 17, 21, 4836, 1115, 6034, 576, 4792, 4832, 5910, 8517, 8505, 7787, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 558, 576, 1127, 6026, 588, 4793, 4833, 8514, 5907, 8502, 7791, 2]
 
-// Module 8727 (AuthorizeScopes)
+// Module 8722 (AuthorizeScopes)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl3 from "intl" /* 1115 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl3 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
-function Scope(arg0) {
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let closure_6 = createStyles.createStyles({ scopesContainer: { flexDirection: "column", gap: 16 }, scopes: { flexDirection: "column", gap: 16 }, scopeContainer: { flexDirection: "row" }, scope: { flex: 1, flexDirection: "column", justifyContent: "center" }, iconWrapper: { marginRight: 12, width: 20, height: 20 }, fakeScopeIcon: { opacity: 0.6 } });
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let error;
+  let isFake;
+  let items;
+  let items1;
+  let text;
+  let tmp10Result;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(22);
+  ({ text, error, isFake } = arg0);
+  const tmp4 = closure_6();
+  if (cResult[0] !== isFake) {
+    let stringResult;
+    const intl = tmp(1127).intl;
+    const string = intl.string;
+    const t = tmp(1127).t;
+    if (isFake) {
+      stringResult = string(t.OX8EMU);
+    } else {
+      stringResult = string(t["0lpCFG"]);
+    }
+    cResult[0] = isFake;
+    cResult[1] = stringResult;
+    tmp5 = stringResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  let str = "";
+  if (null != error) {
+    const _HermesInternal = HermesInternal;
+    str = ". " + error;
+  }
+  const combined = "" + tmp5 + ": " + text + str;
+  if (cResult[2] === isFake) {
+    let tmp9;
+    if (cResult[3] === tmp4.fakeScopeIcon) {
+      tmp9 = cResult[4];
+    }
+    if (cResult[5] === tmp4.iconWrapper) {
+      let tmp14;
+      if (cResult[6] === tmp9) {
+        tmp14 = cResult[7];
+      }
+      let str3;
+      if (isFake) {
+        str3 = "text-muted";
+      }
+      if (cResult[8] === str3) {
+        let tmp18;
+        let tmp21;
+        if (cResult[9] === text) {
+          tmp18 = cResult[10];
+        }
+        if (cResult[11] !== error) {
+          let tmp22 = null;
+          if (null != error) {
+            const obj2 = { variant: "text-xs/normal", children: error };
+            tmp22 = React3(tmp(4833).Text, obj2);
+          }
+          cResult[11] = error;
+          cResult[12] = tmp22;
+          tmp21 = tmp22;
+        } else {
+          tmp21 = cResult[12];
+        }
+        if (cResult[13] === tmp4.scope) {
+          if (cResult[14] === tmp18) {
+            let tmp24;
+            if (cResult[15] === tmp21) {
+              tmp24 = cResult[16];
+            }
+            if (cResult[17] === tmp4.scopeContainer) {
+              if (cResult[18] === combined) {
+                if (cResult[19] === tmp14) {
+                  let tmp28;
+                  if (cResult[20] === tmp24) {
+                    tmp28 = cResult[21];
+                  }
+                  return tmp28;
+                }
+              }
+            }
+            const obj3 = { style: tmp4.scopeContainer, accessible: true, accessibilityLabel: combined, children: items };
+            items = [tmp14, tmp24];
+            const tmp31 = hasOwnProperty(View, obj3);
+            cResult[17] = tmp4.scopeContainer;
+            cResult[18] = combined;
+            cResult[19] = tmp14;
+            cResult[20] = tmp24;
+            cResult[21] = tmp31;
+            tmp28 = tmp31;
+          }
+        }
+        const obj4 = { style: tmp4.scope, children: items1 };
+        items1 = [tmp18, tmp21];
+        const tmp27 = hasOwnProperty(View, obj4);
+        cResult[13] = tmp4.scope;
+        cResult[14] = tmp18;
+        cResult[15] = tmp21;
+        cResult[16] = tmp27;
+        tmp24 = tmp27;
+      }
+      const obj5 = { variant: "text-md/normal", color: str3, children: text };
+      const tmp20 = React3(Text_Text.Text, obj5);
+      cResult[8] = str3;
+      cResult[9] = text;
+      cResult[10] = tmp20;
+      tmp18 = tmp20;
+    }
+    const obj6 = { style: tmp4.iconWrapper, accessible: false, importantForAccessibility: "no-hide-descendants", children: tmp9 };
+    const tmp17 = React3(View, obj6);
+    cResult[5] = tmp4.iconWrapper;
+    cResult[6] = tmp9;
+    cResult[7] = tmp17;
+    tmp14 = tmp17;
+  }
+  if (isFake) {
+    const obj7 = { style: tmp4.fakeScopeIcon, color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
+    const CircleXIcon = tmp(6026).CircleXIcon;
+    tmp10Result = tmp10(CircleXIcon, obj7);
+  } else {
+    const obj8 = { color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
+    const CircleCheckIcon = tmp(4793).CircleCheckIcon;
+    tmp10Result = tmp10(CircleCheckIcon, obj8);
+  }
+  cResult[2] = isFake;
+  cResult[3] = tmp4.fakeScopeIcon;
+  cResult[4] = tmp10Result;
+  tmp9 = tmp10Result;
+}) : ((arg0) => {
   let error;
   let isFake;
   let items;
@@ -46,17 +182,17 @@ function Scope(arg0) {
   const obj2 = { style: tmp.iconWrapper, accessible: false, importantForAccessibility: "no-hide-descendants", children: tmp10Result };
   if (isFake) {
     const obj3 = { style: tmp.fakeScopeIcon, color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
-    const CircleXIcon = tmp6(6034).CircleXIcon;
+    const CircleXIcon = tmp6(6026).CircleXIcon;
     tmp10Result = tmp10(CircleXIcon, obj3);
   } else {
     const obj4 = { color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
-    const CircleCheckIcon = tmp6(4792).CircleCheckIcon;
+    const CircleCheckIcon = tmp6(4793).CircleCheckIcon;
     tmp10Result = tmp10(CircleCheckIcon, obj4);
   }
   items = [React3(View, obj2), ];
   let str3;
   const obj5 = { style: tmp.scope, children: items1 };
-  const Text = tmp6(4832).Text;
+  const Text = tmp6(4833).Text;
   if (isFake) {
     str3 = "text-muted";
   }
@@ -64,18 +200,187 @@ function Scope(arg0) {
   let tmp10Result2 = null;
   if (null != error) {
     const obj6 = { variant: "text-xs/normal", children: error };
-    tmp10Result2 = tmp10(tmp6(4832).Text, obj6);
+    tmp10Result2 = tmp10(tmp6(4833).Text, obj6);
   }
   items1[1] = tmp10Result2;
   items[1] = hasOwnProperty(View, obj5);
   return hasOwnProperty(View, obj);
-}
-const View = react_native.View;
-({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let closure_6 = createStyles.createStyles({ scopesContainer: { flexDirection: "column", gap: 16 }, scopes: { flexDirection: "column", gap: 16 }, scopeContainer: { flexDirection: "row" }, scope: { flex: 1, flexDirection: "column", justifyContent: "center" }, iconWrapper: { marginRight: 12, width: 20, height: 20 }, fakeScopeIcon: { opacity: 0.6 } });
-const result = size.fileFinishedImporting("modules/oauth2/native/AuthorizeScopes.tsx");
-
-export default function AuthorizeScopes(accountScopes) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isTrustedName) => {
+  let accountScopes;
+  let application;
+  let errors;
+  let first;
+  let integrationType;
+  let intl2;
+  let items;
+  let items1;
+  let requestedScopes;
+  let tmp = accountScopes;
+  let tmp2 = dependencyMap;
+  let obj = accountScopes(576);
+  const cResult = obj.c(27);
+  ({ application, accountScopes } = isTrustedName);
+  ({ requestedScopes, integrationType, errors } = isTrustedName);
+  isTrustedName = isTrustedName.isTrustedName;
+  const tmp4 = undefined !== isTrustedName && isTrustedName;
+  const tmp5 = closure_6();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function p() {
+      const FAKE_SCOPES = accountScopes(dependencyMap[11]).FAKE_SCOPES;
+      const random = Math.random();
+      return FAKE_SCOPES[floor(Math, random * accountScopes(undefined, dependencyMap[11]).FAKE_SCOPES.length)];
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const tmp7 = errors(5907)(first);
+  if (0 === accountScopes.length) {
+    return null;
+  } else {
+    let tmp8;
+    if (cResult[1] !== tmp7) {
+      const tmp7Result = tmp7();
+      cResult[1] = tmp7;
+      cResult[2] = tmp7Result;
+      tmp8 = tmp7Result;
+    } else {
+      tmp8 = cResult[2];
+    }
+    const t = tmp(1127).t;
+    const tmp10 = tmp4 ? t.PZpY9c : t["1Hz+Sl"];
+    if (cResult[3] === integrationType) {
+      let tmp11;
+      if (cResult[4] === requestedScopes) {
+        tmp11 = cResult[5];
+      }
+      if (cResult[6] === application.name) {
+        let tmp14;
+        let tmp16;
+        if (cResult[7] === tmp10) {
+          tmp14 = cResult[8];
+        }
+        if (cResult[9] !== tmp14) {
+          const obj2 = { variant: "heading-sm/normal", color: "text-default", children: tmp14 };
+          const tmp18 = closure_4(tmp(4833).Text, obj2);
+          cResult[9] = tmp14;
+          cResult[10] = tmp18;
+          tmp16 = tmp18;
+        } else {
+          tmp16 = cResult[10];
+        }
+        if (cResult[11] === accountScopes) {
+          let tmp20;
+          let tmp22;
+          let tmp26;
+          if (cResult[12] === errors) {
+            tmp20 = cResult[13];
+          }
+          if (cResult[14] !== tmp11) {
+            let tmp23 = tmp11;
+            if (tmp23) {
+              const obj3 = { text: intl2.string(tmp(1127).t.Ls2XRq) };
+              intl2 = tmp(1127).intl;
+              tmp23 = closure_4(closure_7, obj3);
+            }
+            cResult[14] = tmp11;
+            cResult[15] = tmp23;
+            tmp22 = tmp23;
+          } else {
+            tmp22 = cResult[15];
+          }
+          if (cResult[16] !== tmp8) {
+            const obj4 = { text: tmp8, isFake: true };
+            const tmp29 = closure_4(closure_7, obj4);
+            cResult[16] = tmp8;
+            cResult[17] = tmp29;
+            tmp26 = tmp29;
+          } else {
+            tmp26 = cResult[17];
+          }
+          if (cResult[18] === tmp5.scopes) {
+            if (cResult[19] === tmp22) {
+              if (cResult[20] === tmp26) {
+                let tmp30;
+                if (cResult[21] === tmp20) {
+                  tmp30 = cResult[22];
+                }
+                if (cResult[23] === tmp5.scopesContainer) {
+                  if (cResult[24] === tmp30) {
+                    let tmp34;
+                    if (cResult[25] === tmp16) {
+                      tmp34 = cResult[26];
+                    }
+                    return tmp34;
+                  }
+                }
+                const obj5 = { style: tmp13, children: items };
+                items = [tmp16, tmp30];
+                const tmp37 = closure_5(View, obj5);
+                cResult[23] = tmp5.scopesContainer;
+                cResult[24] = tmp30;
+                cResult[25] = tmp16;
+                cResult[26] = tmp37;
+                tmp34 = tmp37;
+              }
+            }
+          }
+          const obj6 = { style: tmp19, children: items1 };
+          items1 = [tmp20, tmp22, tmp26];
+          const tmp33 = closure_5(View, obj6);
+          cResult[18] = tmp5.scopes;
+          cResult[19] = tmp22;
+          cResult[20] = tmp26;
+          cResult[21] = tmp20;
+          cResult[22] = tmp33;
+          tmp30 = tmp33;
+        }
+        const mapped = accountScopes.map((item) => {
+          let closure_0 = item;
+          let obj = accountScopes(dependencyMap[11]);
+          const scopeNames = obj.getScopeNames(item, closure_0);
+          return scopeNames.map((text, index) => {
+            let tmp3;
+            const obj = { text, error: tmp3 };
+            tmp3 = undefined;
+            const tmp = React3;
+            const tmp2 = closure_7;
+            if (0 === index) {
+              let first;
+              if (errors != null) {
+                if (tmp4[item] != null) {
+                  first = tmp8[0];
+                }
+              }
+              tmp3 = first;
+            }
+            return tmp(tmp2, obj, "" + item + "-" + index);
+          });
+        });
+        const flatResult = mapped.flat();
+        cResult[11] = accountScopes;
+        cResult[12] = errors;
+        cResult[13] = flatResult;
+        tmp20 = flatResult;
+      }
+      const intl = tmp(1127).intl;
+      const obj7 = { application: application.name };
+      const formatResult = intl.format(tmp10, obj7);
+      cResult[6] = application.name;
+      cResult[7] = tmp10;
+      cResult[8] = formatResult;
+      tmp14 = formatResult;
+    }
+    const hasItem = integrationType === tmp(8502).ApplicationIntegrationType.USER_INSTALL && requestedScopes.includes(tmp(7791).OAuth2Scopes.APPLICATIONS_COMMANDS);
+    cResult[3] = integrationType;
+    cResult[4] = requestedScopes;
+    cResult[5] = hasItem;
+    tmp11 = hasItem;
+  }
+}) : ((accountScopes) => {
   let application;
   let integrationType;
   let intl;
@@ -100,7 +405,7 @@ export default function AuthorizeScopes(accountScopes) {
     let PZpY9c;
     let tmp5;
     const tmp3Result = tmp3();
-    const t = accountScopes(1115).t;
+    const t = accountScopes(1127).t;
     if (isTrustedName) {
       PZpY9c = t.PZpY9c;
       tmp5 = tmp15;
@@ -108,28 +413,28 @@ export default function AuthorizeScopes(accountScopes) {
       PZpY9c = t["1Hz+Sl"];
       tmp5 = tmp15;
     }
-    let hasItem = integrationType === tmp5(8505).ApplicationIntegrationType.USER_INSTALL;
+    let hasItem = integrationType === tmp5(8502).ApplicationIntegrationType.USER_INSTALL;
     if (hasItem) {
-      hasItem = requestedScopes.includes(tmp5(7787).OAuth2Scopes.APPLICATIONS_COMMANDS);
+      hasItem = requestedScopes.includes(tmp5(7791).OAuth2Scopes.APPLICATIONS_COMMANDS);
     }
     const tmp8 = closure_5;
     let obj = { style: tmp.scopesContainer, children: items };
     const obj2 = { variant: "heading-sm/normal", color: "text-default", children: intl.format(PZpY9c, obj3) };
-    const Text = tmp5(4832).Text;
-    intl = tmp5(1115).intl;
+    const Text = tmp5(4833).Text;
+    intl = tmp5(1127).intl;
     obj3 = { application: application.name };
     items = [closure_4(Text, obj2), ];
     const obj4 = { style: tmp.scopes, children: items1 };
     const mapped = accountScopes.map((item) => {
       let closure_0 = item;
-      let obj = accountScopes(dependencyMap[10]);
+      let obj = accountScopes(dependencyMap[11]);
       const scopeNames = obj.getScopeNames(item, closure_0);
       return scopeNames.map((text, index) => {
         let tmp3;
         const obj = { text, error: tmp3 };
         tmp3 = undefined;
         const tmp = React3;
-        const tmp2 = Scope;
+        const tmp2 = closure_7;
         if (0 === index) {
           let first;
           if (importDefault != null) {
@@ -144,14 +449,17 @@ export default function AuthorizeScopes(accountScopes) {
     });
     items1 = [mapped.flat(), , ];
     if (hasItem) {
-      const obj5 = { text: intl2.string(tmp5(1115).t.Ls2XRq) };
-      intl2 = tmp5(1115).intl;
-      hasItem = tmp10(Scope, obj5);
+      const obj5 = { text: intl2.string(tmp5(1127).t.Ls2XRq) };
+      intl2 = tmp5(1127).intl;
+      hasItem = tmp10(closure_7, obj5);
     }
     items1[1] = hasItem;
     const obj6 = { text: tmp3Result, isFake: true };
-    items1[2] = closure_4(Scope, obj6);
+    items1[2] = closure_4(closure_7, obj6);
     items[1] = tmp8(View, obj4);
     return tmp8(View, obj);
   }
-};
+});
+const result = size.fileFinishedImporting("modules/oauth2/native/AuthorizeScopes.tsx");
+
+export default tmp4;

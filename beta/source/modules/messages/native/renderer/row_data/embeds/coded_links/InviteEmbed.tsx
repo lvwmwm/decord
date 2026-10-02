@@ -1,23 +1,23 @@
-// Module ID: 12781
-// Function ID: 12782
+// Module ID: 12783
+// Function ID: 12784
 // Name: InviteEmbed
-// Dependencies: [4817, 1372, 1074, 7155, 12782, 7154, 12784, 12785, 12786, 12788, 12790, 10848, 10849, 2]
+// Dependencies: [4818, 1378, 1086, 7159, 12784, 7158, 12786, 12787, 12788, 12790, 12792, 9792, 9793, 2]
 // Exports: createInviteEmbed
 
-// Module 12781 (InviteEmbed)
-import InviteTypeUtils from "InviteTypeUtils" /* 7154 */;
-import Constants2 from "Constants" /* 7155 */;
-import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10848 */;
-import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10849 */;
-import GuildInvite from "GuildInvite" /* 12782 */;
-import GroupDMInvite from "GroupDMInvite" /* 12784 */;
-import FriendInvite from "FriendInvite" /* 12785 */;
-import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 12786 */;
-import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 12788 */;
-import GuildProfileInvite from "GuildProfileInvite" /* 12790 */;
-import InviteStore from "InviteStore" /* 4817 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+// Module 12783 (InviteEmbed)
+import InviteTypeUtils from "InviteTypeUtils" /* 7158 */;
+import Constants2 from "Constants" /* 7159 */;
+import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 9792 */;
+import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 9793 */;
+import invite_GuildInvite from "invite/GuildInvite" /* 12784 */;
+import GroupDMInvite from "GroupDMInvite" /* 12786 */;
+import FriendInvite from "FriendInvite" /* 12787 */;
+import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 12788 */;
+import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 12790 */;
+import GuildProfileInvite from "GuildProfileInvite" /* 12792 */;
+import InviteStore from "InviteStore" /* 4818 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -38,7 +38,7 @@ export const createInviteEmbed = function createInviteEmbed(author, code, theme)
       id = currentUser.id;
     }
     if (invite.state === constants.RESOLVING) {
-      const obj17 = GuildInvite;
+      const obj17 = invite_GuildInvite;
       return obj17.createResolvingGuildInvite(theme);
     } else {
       if (invite.state !== constants.EXPIRED) {
@@ -47,13 +47,13 @@ export const createInviteEmbed = function createInviteEmbed(author, code, theme)
             let erroredGuildInvite;
             const inviteError = obj.getInviteError(code);
             if (null == inviteError) {
-              const obj15 = GuildInvite;
+              const obj15 = invite_GuildInvite;
               erroredGuildInvite = obj15.createErroredGuildInvite(code, tmp28, theme);
             } else if (inviteError.code === hasOwnProperty.INVITES_DISABLED) {
-              const obj14 = GuildInvite;
+              const obj14 = invite_GuildInvite;
               erroredGuildInvite = obj14.createDisabledGuildInvite(invite, theme);
             } else {
-              const obj13 = GuildInvite;
+              const obj13 = invite_GuildInvite;
               erroredGuildInvite = obj13.createErroredGuildInvite(code, tmp28, theme);
             }
             return erroredGuildInvite;
@@ -96,17 +96,17 @@ export const createInviteEmbed = function createInviteEmbed(author, code, theme)
                     }
                   }
                 }
-                const tmp29Result17 = GuildInvite;
+                const tmp29Result17 = invite_GuildInvite;
                 return tmp29Result17.createGuildInvite(invite, id === tmp4, theme);
               } else {
-                const tmp29Result18 = GuildInvite;
+                const tmp29Result18 = invite_GuildInvite;
                 return tmp29Result18.createGuildInvite(invite, id === tmp4, theme);
               }
             }
           }
         }
       }
-      const obj16 = GuildInvite;
+      const obj16 = invite_GuildInvite;
       return obj16.createExpiredGuildInvite(author, id === tmp4, theme);
     }
   }

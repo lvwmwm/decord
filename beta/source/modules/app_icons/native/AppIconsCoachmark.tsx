@@ -1,25 +1,25 @@
-// Module ID: 16748
-// Function ID: 16749
+// Module ID: 16750
+// Function ID: 16751
 // Name: AppIconsCoachmark
-// Dependencies: [19, 17, 1372, 2042, 21, 4836, 576, 504, 4488, 4800, 6571, 16749, 1177, 9419, 4832, 1115, 5281, 12995, 2]
-// Exports: default
+// Dependencies: [19, 17, 1378, 2048, 21, 4837, 588, 558, 576, 504, 4491, 4801, 12997, 16751, 1189, 9415, 4833, 1127, 5282, 6572, 2]
 
-// Module 16748 (AppIconsCoachmark)
-import nativeDefault from "native" /* 576 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9419 */;
-import AppIconUtils from "AppIconUtils" /* 12995 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16749 */;
+// Module 16750 (AppIconsCoachmark)
+import nativeDefault from "native" /* 588 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9415 */;
+import AppIconUtils from "AppIconUtils" /* 12997 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16751 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet;
+let BottomSheet, markAsDismissed;
 
 let c9;
 let closure_4;
@@ -36,9 +36,219 @@ obj2 = { padding: nativeDefault.space.PX_16, paddingBottom: 0 };
 createStyles = createStyles.createStyles;
 obj3 = { marginTop: 20, gap: nativeDefault.space.PX_8 };
 let closure_10 = createStyles(obj);
-let result = size.fileFinishedImporting("modules/app_icons/native/AppIconsCoachmark.tsx");
-
-export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+  let currentUser;
+  let intl;
+  let items1;
+  let items2;
+  let tmp22;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  const tmp2 = dependencyMap;
+  let obj = markAsDismissed(576);
+  const cResult = obj.c(43);
+  markAsDismissed = markAsDismissed.markAsDismissed;
+  const tmp4 = closure_10();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function h() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = markAsDismissed(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] !== stateFromStores) {
+    const obj3 = PremiumUtilsDefault;
+    const isPremiumResult = obj3.isPremium(stateFromStores);
+    cResult[2] = stateFromStores;
+    cResult[3] = isPremiumResult;
+    tmp9 = isPremiumResult;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] !== markAsDismissed) {
+    const fn2 = function b() {
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
+      if (markAsDismissed != null) {
+        tmp3(ContentDismissActionType.PRIMARY);
+      }
+      const obj2 = AppIconUtils;
+      const result = obj2.navigateToAppIconSettings();
+    };
+    cResult[4] = markAsDismissed;
+    cResult[5] = fn2;
+  }
+  if (cResult[6] !== markAsDismissed) {
+    class A {
+      constructor() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        if (markAsDismissed != null) {
+          tmp2(ContentDismissActionType.DISMISS);
+        }
+      }
+    }
+    cResult[6] = markAsDismissed;
+    cResult[7] = A;
+  } else {
+    class A {
+      constructor() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        if (markAsDismissed != null) {
+          tmp2(ContentDismissActionType.DISMISS);
+        }
+      }
+    }
+  }
+  if (cResult[8] !== markAsDismissed) {
+    class D {
+      constructor() {
+        return markAsDismissed(ContentDismissActionType.DISMISS);
+      }
+    }
+    cResult[8] = markAsDismissed;
+    cResult[9] = D;
+  } else {
+    class D {
+      constructor() {
+        return markAsDismissed(ContentDismissActionType.DISMISS);
+      }
+    }
+  }
+  if (cResult[10] !== tmp4.image) {
+    class D {
+      constructor() {
+        return markAsDismissed(ContentDismissActionType.DISMISS);
+      }
+    }
+    let obj2 = { source: AssetRegistryDefault2, style: tmp4.image };
+    cResult[10] = tmp4.image;
+    cResult[11] = closure_8(closure_4, obj2);
+    const tmp18 = closure_8(closure_4, obj2);
+  } else {
+    class D {
+      constructor() {
+        return markAsDismissed(ContentDismissActionType.DISMISS);
+      }
+    }
+  }
+  if (cResult[12] !== tmp4.nitroWheel) {
+    class D {
+      constructor() {
+        return markAsDismissed(ContentDismissActionType.DISMISS);
+      }
+    }
+    const obj4 = { source: AssetRegistryDefault, size: markAsDismissed(1189).IconSizes.MEDIUM, style: tmp4.nitroWheel, disableColor: true };
+    const Icon = tmp(1189).Icon;
+    cResult[12] = tmp4.nitroWheel;
+    cResult[13] = closure_8(Icon, obj4);
+    const tmp21 = closure_8(Icon, obj4);
+  } else {
+    class D {
+      constructor() {
+        return markAsDismissed(ContentDismissActionType.DISMISS);
+      }
+    }
+  }
+  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor() {
+        return markAsDismissed(ContentDismissActionType.DISMISS);
+      }
+    }
+    const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1127).t.EfA4Cq) };
+    const Text = tmp(4833).Text;
+    intl = tmp(1127).intl;
+    const tmp23 = closure_8(Text, obj5);
+    cResult[14] = tmp23;
+    tmp22 = tmp23;
+  } else {
+    class D {
+      constructor() {
+        return markAsDismissed(ContentDismissActionType.DISMISS);
+      }
+    }
+  }
+  if (cResult[15] === tmp4.titleContainer) {
+    class D {
+      constructor() {
+        return markAsDismissed(ContentDismissActionType.DISMISS);
+      }
+    }
+    if (cResult[18] !== tmp9) {
+      class D {
+        constructor() {
+          return markAsDismissed(ContentDismissActionType.DISMISS);
+        }
+      }
+      const string = tmp27.string;
+      const t = tmp(1127).t;
+      if (tmp9) {
+        class D {
+          constructor() {
+            return markAsDismissed(ContentDismissActionType.DISMISS);
+          }
+        }
+      } else {
+        class D {
+          constructor() {
+            return markAsDismissed(ContentDismissActionType.DISMISS);
+          }
+        }
+      }
+      cResult[18] = tmp9;
+      cResult[19] = tmp28;
+    } else {
+      class D {
+        constructor() {
+          return markAsDismissed(ContentDismissActionType.DISMISS);
+        }
+      }
+    }
+    if (cResult[20] === tmp4.subtitle) {
+      class D {
+        constructor() {
+          return markAsDismissed(ContentDismissActionType.DISMISS);
+        }
+      }
+      if (cResult[23] === tmp4.info) {
+        class D {
+          constructor() {
+            return markAsDismissed(ContentDismissActionType.DISMISS);
+          }
+        }
+      }
+      const obj6 = { style: tmp4.info, children: items1 };
+      items1 = [tmp15, tmp24, tmp29];
+      cResult[23] = tmp4.info;
+      cResult[24] = tmp24;
+      cResult[25] = tmp29;
+      cResult[26] = tmp15;
+      cResult[27] = closure_9(closure_5, obj6);
+      const tmp35 = closure_9(closure_5, obj6);
+    }
+    const obj7 = { variant: "text-md/normal", color: "text-default", style: tmp4.subtitle, children: tmp26 };
+    cResult[20] = tmp4.subtitle;
+    cResult[21] = tmp26;
+    cResult[22] = closure_8(markAsDismissed(4833).Text, obj7);
+    const tmp31 = closure_8(markAsDismissed(4833).Text, obj7);
+  }
+  const obj8 = { style: tmp4.titleContainer, children: items2 };
+  items2 = [tmp19, tmp22];
+  cResult[15] = tmp4.titleContainer;
+  cResult[16] = tmp19;
+  cResult[17] = closure_9(closure_5, obj8);
+  const tmp25 = closure_9(closure_5, obj8);
+}) : ((markAsDismissed) => {
   let currentUser;
   let intl;
   let intl3;
@@ -74,22 +284,22 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   };
   const obj4 = { style: tmp.info, children: items2 };
   const obj5 = { source: AssetRegistryDefault2, style: tmp.image };
-  BottomSheet = markAsDismissed(6571).BottomSheet;
+  BottomSheet = markAsDismissed(6572).BottomSheet;
   items2 = [closure_8(closure_4, obj5), , ];
   const obj6 = { style: tmp.titleContainer, children: items3 };
-  const obj7 = { source: AssetRegistryDefault, size: markAsDismissed(1177).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true };
-  const Icon = markAsDismissed(1177).Icon;
+  const obj7 = { source: AssetRegistryDefault, size: markAsDismissed(1189).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true };
+  const Icon = markAsDismissed(1189).Icon;
   items3 = [closure_8(Icon, obj7), ];
-  const obj8 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1115).t.EfA4Cq) };
-  const Text = markAsDismissed(4832).Text;
-  intl = markAsDismissed(1115).intl;
+  const obj8 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1127).t.EfA4Cq) };
+  const Text = markAsDismissed(4833).Text;
+  intl = markAsDismissed(1127).intl;
   items3[1] = closure_8(Text, obj8);
   items2[1] = closure_9(closure_5, obj6);
   const obj9 = { variant: "text-md/normal", color: "text-default", style: tmp.subtitle, children: stringResult };
-  const Text2 = markAsDismissed(4832).Text;
-  const intl2 = markAsDismissed(1115).intl;
+  const Text2 = markAsDismissed(4833).Text;
+  const intl2 = markAsDismissed(1127).intl;
   const string = intl2.string;
-  const t = markAsDismissed(1115).t;
+  const t = markAsDismissed(1127).t;
   if (isPremiumResult) {
     stringResult = string(t.IgchKK);
   } else {
@@ -99,7 +309,7 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   items4 = [closure_9(closure_5, obj4), ];
   const obj10 = { style: tmp.footer, children: items5 };
   const obj11 = {
-    text: intl3.string(tmp2(1115).t.Pt547C),
+    text: intl3.string(tmp2(1127).t.Pt547C),
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
@@ -110,13 +320,16 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
       const result = obj2.navigateToAppIconSettings();
     }
   };
-  const Button = tmp2(5281).Button;
-  intl3 = tmp2(1115).intl;
+  const Button = tmp2(5282).Button;
+  intl3 = tmp2(1127).intl;
   items5 = [closure_8(Button, obj11), ];
-  const obj12 = { variant: "secondary", text: intl4.string(tmp2(1115).t.iSrIIZ), onPress: callback };
-  const Button2 = tmp2(5281).Button;
-  intl4 = tmp2(1115).intl;
+  const obj12 = { variant: "secondary", text: intl4.string(tmp2(1127).t.iSrIIZ), onPress: callback };
+  const Button2 = tmp2(5282).Button;
+  intl4 = tmp2(1127).intl;
   items5[1] = closure_8(Button2, obj12);
   items4[1] = closure_9(closure_5, obj10);
   return closure_9(BottomSheet, obj3);
-};
+});
+let result = size.fileFinishedImporting("modules/app_icons/native/AppIconsCoachmark.tsx");
+
+export default tmp5;

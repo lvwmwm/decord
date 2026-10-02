@@ -1,7 +1,7 @@
 // Module ID: 6446
 // Function ID: 6447
 // Name: Card
-// Dependencies: [32, 19, 17, 21, 6440, 6441, 1507, 6447, 6426, 5952, 6448, 6449, 6450, 6451]
+// Dependencies: [32, 19, 17, 21, 6440, 6441, 1513, 6447, 6426, 5951, 6448, 6449, 6450, 6451]
 // Exports: Card
 
 // Module 6446 (Card)
@@ -136,7 +136,7 @@ export const Card = function Card(shadowEnabled) {
     return value;
   }), 1)[0];
   const tmp5 = num;
-  let closure_32 = num(1507)(() => {
+  let closure_32 = num(1513)(() => {
     if (null == ref3.current) {
       const InteractionManager = react_native.InteractionManager;
       let interactionHandle;
@@ -146,7 +146,7 @@ export const Card = function Card(shadowEnabled) {
       tmp.current = interactionHandle;
     }
   });
-  let closure_33 = num(1507)(() => {
+  let closure_33 = num(1513)(() => {
     if (null != ref3.current) {
       const InteractionManager = react_native.InteractionManager;
       if (InteractionManager != null) {
@@ -155,8 +155,8 @@ export const Card = function Card(shadowEnabled) {
       ref3.current = undefined;
     }
   });
-  let tmp7 = num(1507)((closing) => {
-    const f123897 = () => {
+  let tmp7 = num(1513)((closing) => {
+    const f149303 = () => {
       closure_1_37();
     };
     closing = closing.closing;
@@ -215,7 +215,7 @@ export const Card = function Card(shadowEnabled) {
                 defaultOverlay();
               }
               const _requestAnimationFrame = requestAnimationFrame;
-              ref4.current = requestAnimationFrame(f123897);
+              ref4.current = requestAnimationFrame(f149303);
             } else {
               throw new TypeError("Trying to call a non-function");
             }
@@ -228,7 +228,7 @@ export const Card = function Card(shadowEnabled) {
           closure_13();
         }
         let _requestAnimationFrame = requestAnimationFrame;
-        ref4.current = requestAnimationFrame(f123897);
+        ref4.current = requestAnimationFrame(f149303);
       }
     } else {
       throw new TypeError("Trying to call a non-function");
@@ -238,7 +238,7 @@ export const Card = function Card(shadowEnabled) {
   let items = [gestureDirection, direction, first1, , , , ];
   ({ width: arr[3], height: arr[4] } = first2);
   ({ width: arr[5], height: arr[6] } = layout);
-  let tmp8 = num(1507)((nativeEvent) => {
+  let tmp8 = num(1513)((nativeEvent) => {
     let translationY;
     let velocityY;
     nativeEvent = nativeEvent.nativeEvent;
@@ -328,7 +328,7 @@ export const Card = function Card(shadowEnabled) {
     clearTimeout(ref3.current);
   }, []);
   const ref8 = opening.useRef(undefined);
-  let tmp11 = num(1507)(() => {
+  let tmp11 = num(1513)(() => {
     clearTimeout(ref5.current);
     clearTimeout(ref6.current);
     if (ref.current) {
@@ -452,7 +452,7 @@ export const Card = function Card(shadowEnabled) {
   let tmp16 = typeof backgroundColor === "string";
   if (typeof backgroundColor === "string") {
     let num2 = 0;
-    const obj14 = tmp5(5952)(backgroundColor);
+    const obj14 = tmp5(5951)(backgroundColor);
     tmp16 = 0 === obj14.alpha();
   }
   const tmp17 = layout;

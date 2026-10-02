@@ -1,21 +1,21 @@
-// Module ID: 10716
-// Function ID: 10717
+// Module ID: 10680
+// Function ID: 10681
 // Name: IosAttributionImpressionRegistry
-// Dependencies: [5, 10717, 3, 10714, 10715, 10718, 2]
+// Dependencies: [5, 10681, 3, 10678, 10679, 10682, 2]
 // Exports: endImpression, getStoreKitCredential, registerViewThroughImpression
 
-// Module 10716 (IosAttributionImpressionRegistry)
+// Module 10680 (IosAttributionImpressionRegistry)
 import LoggerDefault from "Logger" /* 3 */;
-import IosAttributionNativeModule from "IosAttributionNativeModule" /* 10714 */;
-import IosAttributionMetrics from "IosAttributionMetrics" /* 10715 */;
-import IosAttributionFramework from "IosAttributionFramework" /* 10717 */;
+import IosAttributionNativeModule from "IosAttributionNativeModule" /* 10678 */;
+import IosAttributionMetrics from "IosAttributionMetrics" /* 10679 */;
+import IosAttributionFramework from "IosAttributionFramework" /* 10681 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let impressionToken;
 
 let obj3;
-const f91817 = () => {
+const f104611 = () => {
 
 };
 function isCurrentImpression(arg0, arg1) {
@@ -31,7 +31,7 @@ function endImpressionToken(arg0) {
   if (null != arg0) {
     obj = IosAttributionNativeModule;
     const endImpressionResult = obj.endImpression(arg0);
-    endImpressionResult.catch(f91817);
+    endImpressionResult.catch(f104611);
   }
 }
 let obj = function _startNativeImpression() {
@@ -66,7 +66,7 @@ let obj = function _startNativeImpression() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ let obj = function _startNativeImpression() {
               token = undefined;
               signAbort = 1;
               c4 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === signAbort) {
             if (arg0 === 1) {
@@ -115,7 +115,7 @@ let obj = function _startNativeImpression() {
                 const result = obj11.trackIosAttributionImpression(closure_130_0(closure_130_1[4]).IosAttributionImpressionResult.NO_FRAMEWORK, c2);
                 closure_130_7(impressionId, signAbort);
                 c4 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               } else {
                 const obj8 = { metadataSealed, impressionId, specs: items, signal: signAbort.signAbort.signal };
                 items = [viewThroughSpec];
@@ -183,7 +183,7 @@ let obj = function _startNativeImpression() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp83) {
           c4 = 3;
@@ -210,7 +210,7 @@ obj = function _getImpressionToken() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -295,7 +295,7 @@ obj = function _getStoreKitCredential() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -315,7 +315,7 @@ obj = function _getStoreKitCredential() {
               impressionToken = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -336,7 +336,7 @@ obj = function _getStoreKitCredential() {
                 }
               }
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -413,7 +413,7 @@ export const endImpression = function endImpression(arg0) {
     if (null != token) {
       const obj2 = IosAttributionNativeModule;
       const endImpressionResult = obj2.endImpression(token);
-      endImpressionResult.catch(f91817);
+      endImpressionResult.catch(f104611);
     }
   }
 };

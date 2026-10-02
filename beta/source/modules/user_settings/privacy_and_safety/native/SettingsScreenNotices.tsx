@@ -1,30 +1,32 @@
-// Module ID: 14349
-// Function ID: 14350
+// Module ID: 14337
+// Function ID: 14338
 // Name: SettingsScreenNotices
-// Dependencies: [19, 17, 1372, 21, 4836, 576, 7012, 14350, 14351, 5735, 5736, 5048, 14358, 14359, 2]
-// Exports: default
+// Dependencies: [19, 17, 1378, 21, 4837, 588, 7016, 14338, 14339, 5736, 5737, 5049, 14346, 14347, 558, 576, 2]
 
-// Module 14349 (SettingsScreenNotices)
+// Module 14337 (SettingsScreenNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5735 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5736 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7012 */;
-import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 14350 */;
-import TinyBroncoSettingsNoticesLazy from "TinyBroncoSettingsNoticesLazy" /* 14351 */;
-import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 14358 */;
-import SensitiveContentFiltersNotices from "SensitiveContentFiltersNotices" /* 14359 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5736 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5737 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7016 */;
+import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 14338 */;
+import TinyBroncoSettingsNoticesLazy from "TinyBroncoSettingsNoticesLazy" /* 14339 */;
+import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 14346 */;
+import SensitiveContentFiltersNotices from "SensitiveContentFiltersNotices" /* 14347 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import UserStore from "UserStore" /* 1378 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let items;
 let items1;
 let items2;
+let obj2;
 let tmp;
-const AgeVerificationUtils = tmp(5048);
+const AgeVerificationUtils = tmp(5049);
 function predicate() {
   const obj = RegionalFeatureConfigUtils;
   let isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK);
@@ -54,9 +56,9 @@ const predicate3 = function predicate() {
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
-let obj = { noticeContainer: { marginHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_16 }, listHeaderNoticeContainer: { marginTop: nativeDefault.space.PX_16 } };
+let obj = { noticeContainer: obj2, listHeaderNoticeContainer: { marginTop: nativeDefault.space.PX_16 } };
 createStyles = createStyles.createStyles;
-({ marginHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_16 });
+obj2 = { marginHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_16 };
 ({ marginTop: nativeDefault.space.PX_16 });
 let closure_6 = createStyles(obj);
 const obj4 = { SENSITIVE_CONTENT_FILTERS: items, CONTENT_AND_SOCIAL: items1, DATA_AND_PRIVACY: items2 };
@@ -74,9 +76,126 @@ items1[1] = { order: 200, predicate: predicate3, Component: AgeConfirmationNotic
 ({ order: 200, predicate: predicate3, Component: AgeConfirmationNoticeDefault });
 items2 = [{ order: 100, predicate: FamilyCenterUtils.isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }];
 ({ order: 100, predicate: FamilyCenterUtils.isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault });
-const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsScreenNotices.tsx");
-
-export default function SettingsScreenNotices(screen) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let arr;
+  let isListHeader;
+  let screen;
+  let tmp16;
+  const obj = react2;
+  const cResult = obj.c(11);
+  ({ screen, isListHeader } = arg0);
+  closure_6();
+  if (cResult[0] !== screen) {
+    let tmp4;
+    let tmp5;
+    let tmp7;
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor(arg0) {
+          return arg0.predicate();
+        }
+      }
+      cResult[2] = C;
+      tmp4 = C;
+    } else {
+      class C {
+        constructor(arg0) {
+          return arg0.predicate();
+        }
+      }
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor(arg0) {
+          return arg0.predicate();
+        }
+      }
+      cResult[3] = tmp6;
+      tmp5 = tmp6;
+    } else {
+      class C {
+        constructor(arg0) {
+          return arg0.predicate();
+        }
+      }
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor(arg0) {
+          return arg0.predicate();
+        }
+      }
+      cResult[4] = tmp8;
+      tmp7 = tmp8;
+    } else {
+      class C {
+        constructor(arg0) {
+          return arg0.predicate();
+        }
+      }
+    }
+    const arr2 = obj4[screen];
+    const found = arr2.filter(tmp4);
+    const sorted = found.sort(tmp5);
+    const mapped = sorted.map(tmp7);
+    cResult[0] = screen;
+    cResult[1] = mapped;
+    arr = mapped;
+  } else {
+    class C {
+      constructor(arg0) {
+        return arg0.predicate();
+      }
+    }
+  }
+  if (0 !== arr.length) {
+    class C {
+      constructor(arg0) {
+        return arg0.predicate();
+      }
+    }
+  }
+  if (null == null) {
+    class C {
+      constructor(arg0) {
+        return arg0.predicate();
+      }
+    }
+  } else {
+    class C {
+      constructor(arg0) {
+        return arg0.predicate();
+      }
+    }
+    if (cResult[5] === null) {
+      class C {
+        constructor(arg0) {
+          return arg0.predicate();
+        }
+      }
+      if (cResult[8] === tmp12) {
+        class C {
+          constructor(arg0) {
+            return arg0.predicate();
+          }
+        }
+        return tmp16;
+      }
+      const tmp19 = <View style={tmp12}>{tmp13}</View>;
+      cResult[8] = tmp12;
+      cResult[9] = tmp13;
+      cResult[10] = tmp19;
+      tmp16 = tmp19;
+    }
+    cResult[5] = null;
+    cResult[6] = screen;
+    cResult[7] = jsx(null, {}, screen);
+    const tmp15 = jsx(null, {}, screen);
+  }
+}) : ((screen) => {
   screen = screen.screen;
   let flag = screen.isListHeader;
   if (flag === undefined) {
@@ -101,5 +220,8 @@ export default function SettingsScreenNotices(screen) {
     tmp4Result = tmp4(View, obj);
   }
   return tmp4Result;
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsScreenNotices.tsx");
+
+export default tmp3;
 export const SettingsScreen = { SENSITIVE_CONTENT_FILTERS: "SENSITIVE_CONTENT_FILTERS", CONTENT_AND_SOCIAL: "CONTENT_AND_SOCIAL", DATA_AND_PRIVACY: "DATA_AND_PRIVACY" };

@@ -1,19 +1,19 @@
-// Module ID: 17309
-// Function ID: 17310
+// Module ID: 17311
+// Function ID: 17312
 // Name: AutomodRuleUtils
-// Dependencies: [502, 17306, 11341, 1370, 17310, 17311, 1115, 7381, 6941, 2]
+// Dependencies: [502, 17308, 11216, 1376, 17312, 17313, 1127, 7385, 6945, 2]
 // Exports: actionTypeToName, createDefaultRule, eventTypeToName, getNewAutomodRuleMockId, getRulesFromTriggerTypeMap, isBackendPersistedRule, isRegexSupported, isRuleApplicationFilter, isRuleDefaultKeywordListFilter, isRuleKeywordFilter, isRuleMLSpamFilter, isRuleMentionSpamFilter, isRuleServerPolicyFilter, isRuleUserProfileFilter, isValidMentionSpamLimit, triggerTypeToName, validateKeywordsOrThrow, validateRegexPatternsOrThrow, validateRuleBeforeSaveOrThrow
 
-// Module 17309 (AutomodRuleUtils)
-import intl8 from "intl" /* 1115 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6941 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 7381 */;
-import AutomodStore from "AutomodStore" /* 17306 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17310 */;
-import AutomodActionUtils from "AutomodActionUtils" /* 17311 */;
+// Module 17311 (AutomodRuleUtils)
+import intl8 from "intl" /* 1127 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6945 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 7385 */;
+import AutomodStore from "AutomodStore" /* 17308 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17312 */;
+import AutomodActionUtils from "AutomodActionUtils" /* 17313 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 11341 */;
+import Constants from "Constants" /* 11216 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -27,14 +27,14 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f107696 = (keyword) => {
+const f129972 = (keyword) => {
   const InvalidKeywordError = AutomodErrorUtils.InvalidKeywordError;
   const intl = intl8.intl;
   const range = { keyword, max, min };
   const invalidKeywordError = new InvalidKeywordError(intl.formatToPlainString(intl8.t.rbRvGe, range));
   throw invalidKeywordError;
 };
-const f107697 = (regex) => {
+const f129973 = (regex) => {
   const InvalidRegexPatternError = AutomodErrorUtils.InvalidRegexPatternError;
   const intl = intl8.intl;
   const range = { regex, max: max2, min: min2 };
@@ -108,10 +108,10 @@ export const isRuleUserProfileFilter = function isRuleUserProfileFilter(rule) {
   }
   return triggerType === constants.USER_PROFILE;
 };
-export const isRuleApplicationFilter = function isRuleApplicationFilter(editingRule) {
+export const isRuleApplicationFilter = function isRuleApplicationFilter(rule) {
   let triggerType;
-  if (editingRule != null) {
-    triggerType = editingRule.triggerType;
+  if (rule != null) {
+    triggerType = rule.triggerType;
   }
   return triggerType === constants.APPLICATION;
 };
@@ -133,10 +133,10 @@ export const createDefaultRule = function createDefaultRule(guildId, triggerType
   }
   if (isSnowflake(str)) {
     const _Error = Error;
-    const intl = tmp(1115).intl;
+    const intl = tmp(1127).intl;
     const self = this;
     const self2 = this;
-    const error = new Error(intl.string(tmp(1115).t["A/nX8D"]));
+    const error = new Error(intl.string(tmp(1127).t["A/nX8D"]));
     throw error;
   } else {
     const tmp8 = getRuleCountByTriggerType(guildId, triggerType);
@@ -147,17 +147,17 @@ export const createDefaultRule = function createDefaultRule(guildId, triggerType
     return obj3;
   }
 };
-export const validateKeywordsOrThrow = function validateKeywordsOrThrow(arr, limit) {
-  if (arr.length > limit) {
+export const validateKeywordsOrThrow = function validateKeywordsOrThrow(arr, maxWordCount) {
+  if (arr.length > maxWordCount) {
     const _Error = Error;
     const intl = intl8.intl;
     const self = this;
     const self2 = this;
-    const obj = { limit };
+    const obj = { limit: maxWordCount };
     const error = new Error(intl.formatToPlainString(intl8.t.mee4qd, obj));
     throw error;
   } else {
-    const item = arr.forEach(f107696);
+    const item = arr.forEach(f129972);
   }
 };
 export const validateRegexPatternsOrThrow = function validateRegexPatternsOrThrow(arr) {
@@ -170,7 +170,7 @@ export const validateRegexPatternsOrThrow = function validateRegexPatternsOrThro
     const error = new Error(intl.formatToPlainString(intl8.t.tDjhF1, obj));
     throw error;
   } else {
-    const item = arr.forEach(f107697);
+    const item = arr.forEach(f129973);
   }
 };
 export const isValidMentionSpamLimit = function isValidMentionSpamLimit(NumberResult) {
@@ -232,7 +232,7 @@ export const validateRuleBeforeSaveOrThrow = function validateRuleBeforeSaveOrTh
       const error2 = new Error(intl5.formatToPlainString(intl8.t.mee4qd, obj2));
       throw error2;
     } else {
-      const item = keywordFilter.forEach(f107696);
+      const item = keywordFilter.forEach(f129972);
       if (regexPatterns.length > metroRequire) {
         const _Error4 = Error;
         const intl4 = intl8.intl;
@@ -242,7 +242,7 @@ export const validateRuleBeforeSaveOrThrow = function validateRuleBeforeSaveOrTh
         const error3 = new Error(intl4.formatToPlainString(intl8.t.tDjhF1, obj3));
         throw error3;
       } else {
-        const item1 = regexPatterns.forEach(f107697);
+        const item1 = regexPatterns.forEach(f129973);
       }
     }
   }

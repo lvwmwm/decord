@@ -1,130 +1,69 @@
 // Module ID: 1868
 // Function ID: 1869
-// Dependencies: [1638]
-// Exports: clampedScrollTarget, computeIOSContentOffset, getEffectiveHeight, getMinimumPaddingAbsorbed, getScrollEffective, getVisibleMinimumPaddingFraction, isScrollAtEnd, shouldShiftContent
+// Dependencies: [19, 17, 21, 1863, 1838, 1869, 1836, 1862]
+// Exports: default
 
 // Module 1868
-import _mod1638 from "module_1638" /* 1638 */;
+import Fragment from "Fragment" /* 21 */;
+import KeyboardController2 from "KeyboardController" /* 1836 */;
+import "react";
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-const require = globalThis.__r;
+let StyleSheet;
+let c3;
+let closure_4;
+let hasOwnProperty;
+({ useCallback: c3, useMemo: closure_4 } = react);
+({ StyleSheet, Text: hasOwnProperty } = react_native);
+const jsx = Fragment.jsx;
+const doneButtonContainer = StyleSheet.create({ doneButton: { fontWeight: "600", fontSize: 15 }, doneButtonContainer: { marginRight: 16, marginLeft: 8 } });
 
-const fn = function t(arg0, arg1, arg2) {
-  let interpolateResult = arg0;
-  if (0 !== arg2) {
-    interpolateResult = arg0;
-    if (0 !== arg1) {
-      const items = [0, arg1];
-      const _Math = Math;
-      const interpolate = _mod1638.interpolate;
-      const items1 = [0];
-      _mod1638;
-      items1[1] = Math.max(arg1 - arg2, 0);
-      interpolateResult = interpolate(arg0, items, items1);
+export default function _default(rippleRadius) {
+  let button;
+  let children;
+  let doneButton;
+  let keyboardState;
+  let onPress;
+  let text;
+  let theme;
+  ({ children, onPress } = rippleRadius);
+  let num = rippleRadius.rippleRadius;
+  if (num === undefined) {
+    num = 28;
+  }
+  ({ button, text } = rippleRadius);
+  if (button === undefined) {
+    const tmp = keyboardState;
+    button = keyboardState(theme[3]);
+  }
+  theme = undefined;
+  let obj = onPress(theme[4]);
+  keyboardState = obj.useKeyboardState((appearance) => appearance.appearance);
+  const obj2 = onPress(theme[5]);
+  theme = obj2.useToolbarContext().theme;
+  let items = [keyboardState, theme];
+  const items1 = [onPress];
+  const tmp4 = closure_4(() => {
+    const items = [doneButton.doneButton, ];
+    const obj = { color: theme[keyboardState].primary };
+    items[1] = obj;
+    return items;
+  }, items);
+  const tmp5 = closure_3((isDefaultPrevented) => {
+    if (onPress != null) {
+      tmp(isDefaultPrevented);
     }
-  }
-  return interpolateResult;
-};
-fn.__closure = { interpolate: require("module_1638").interpolate };
-fn.__workletHash = 1787304919616;
-fn.__initData = { code: "function pnpm_helpersTs1(height,targetKeyboardHeight,offset){const{interpolate}=this.__closure;if(offset===0||targetKeyboardHeight===0){return height;}return interpolate(height,[0,targetKeyboardHeight],[0,Math.max(targetKeyboardHeight-offset,0)]);}" };
-const fn2 = function n(arg0, arg1, arg2) {
-  let tmp3;
-  let flag = arg3;
-  if (arg3 === undefined) {
-    flag = false;
-  }
-  if (flag) {
-    tmp3 = arg0 <= 20;
-  } else {
-    tmp3 = arg0 + arg1 >= arg2 - 20;
-  }
-  return tmp3;
-};
-fn2.__closure = { AT_END_THRESHOLD: 20 };
-fn2.__workletHash = 3738364082991;
-fn2.__initData = { code: "function pnpm_helpersTs2(scrollOffset,layoutHeight,contentHeight,inverted=false){const{AT_END_THRESHOLD}=this.__closure;if(inverted){return scrollOffset<=AT_END_THRESHOLD;}return scrollOffset+layoutHeight>=contentHeight-AT_END_THRESHOLD;}" };
-const fn3 = function o(arg0, arg1) {
-  if ("always" !== arg0) {
-    if ("persistent" !== arg0) {
-      if ("never" === arg0) {
-        return false;
-      } else if ("whenAtEnd" === arg0) {
-        return arg1;
-      }
+    if (!isDefaultPrevented.isDefaultPrevented()) {
+      const KeyboardController = KeyboardController2.KeyboardController;
+      KeyboardController.dismiss();
     }
+  }, items1);
+  if (children == null) {
+    children = text;
   }
-  return true;
-};
-fn3.__closure = {};
-fn3.__workletHash = 14230532945867;
-fn3.__initData = { code: "function pnpm_helpersTs3(behavior,isAtEnd){switch(behavior){case\"always\":return true;case\"never\":return false;case\"whenAtEnd\":return isAtEnd;case\"persistent\":return true;}}" };
-const fn4 = function l(arg0, arg1, arg2, arg3, arg4) {
-  if (arg3 <= 0) {
-    return 0;
-  } else if (arg4) {
-    const _Math3 = Math;
-    const _Math4 = Math;
-    return Math.max(0, Math.min(1, -arg0 / arg3));
-  } else {
-    const _Math = Math;
-    const _Math2 = Math;
-    return Math.max(0, Math.min(1, (arg0 + arg1 - arg2) / arg3));
+  if (children == null) {
+    children = "Done";
   }
+  return <button accessibilityHint="Closes the keyboard" accessibilityLabel="Done" rippleRadius={num} style={doneButtonContainer.doneButtonContainer} testID={onPress(theme[7]).TEST_ID_KEYBOARD_TOOLBAR_DONE} theme={theme} onPress={tmp5}>{null}</button>;
 };
-fn4.__closure = {};
-fn4.__workletHash = 10144434118496;
-fn4.__initData = { code: "function pnpm_helpersTs4(scrollOffset,layoutHeight,contentHeight,blankSpace,inverted){if(blankSpace<=0){return 0;}if(inverted){return Math.max(0,Math.min(1,-scrollOffset/blankSpace));}const pastContentEnd=scrollOffset+layoutHeight-contentHeight;return Math.max(0,Math.min(1,pastContentEnd/blankSpace));}" };
-const fn5 = function c(arg0, arg1) {
-  return Math.max(0, arg0 - arg1);
-};
-fn5.__closure = {};
-fn5.__workletHash = 7722221146206;
-fn5.__initData = { code: "function pnpm_helpersTs5(blankSpace,extraContentPadding){return Math.max(0,blankSpace-extraContentPadding);}" };
-const fn6 = function h(arg0, arg1) {
-  return Math.max(0, arg0 - arg1);
-};
-fn6.__closure = {};
-fn6.__workletHash = 8723258054557;
-fn6.__initData = { code: "function pnpm_helpersTs6(rawEffective,minimumPaddingAbsorbed){return Math.max(0,rawEffective-minimumPaddingAbsorbed);}" };
-const fn7 = function s(arg0, arg1, arg2, arg3, arg4) {
-  let tmp = arg1;
-  if (undefined !== arg4) {
-    tmp = arg4;
-  }
-  const bound = Math.max(arg2 - arg3 + tmp, 0);
-  return Math.min(Math.max(arg0 + arg1, 0), bound);
-};
-fn7.__closure = {};
-fn7.__workletHash = 16148763282691;
-fn7.__initData = { code: "function pnpm_helpersTs7(offsetBeforeScroll,keyboardHeight,contentHeight,layoutHeight,totalPaddingForMaxScroll){const paddingForMax=totalPaddingForMaxScroll!==undefined?totalPaddingForMaxScroll:keyboardHeight;const maxScroll=Math.max(contentHeight-layoutHeight+paddingForMax,0);return Math.min(Math.max(offsetBeforeScroll+keyboardHeight,0),maxScroll);}" };
-const fn8 = function u(arg0, arg1, arg2, arg3, arg4, arg5) {
-  let tmp = arg1;
-  if (undefined !== arg5) {
-    tmp = arg5;
-  }
-  const _Math = Math;
-  const diff = arg2 - arg3;
-  if (arg4) {
-    const _Math4 = Math;
-    const _Math5 = Math;
-    return Math.max(Math.min(arg0 - arg1, max(diff, 0)), -tmp);
-  } else {
-    const _Math2 = Math;
-    const _Math3 = Math;
-    const maxResult = max(diff + tmp, 0);
-    return Math.min(Math.max(arg1 + arg0, 0), maxResult);
-  }
-};
-fn8.__closure = {};
-fn8.__workletHash = 11573218187512;
-fn8.__initData = { code: "function pnpm_helpersTs8(relativeScroll,keyboardHeight,contentHeight,layoutHeight,inverted,totalPaddingForMaxScroll){const paddingForMax=totalPaddingForMaxScroll!==undefined?totalPaddingForMaxScroll:keyboardHeight;if(inverted){const maxScroll=Math.max(contentHeight-layoutHeight,0);return Math.max(Math.min(relativeScroll-keyboardHeight,maxScroll),-paddingForMax);}const maxScroll=Math.max(contentHeight-layoutHeight+paddingForMax,0);return Math.min(Math.max(keyboardHeight+relativeScroll,0),maxScroll);}" };
-({ interpolate: require("module_1638").interpolate });
-
-export const getEffectiveHeight = fn;
-export const isScrollAtEnd = fn2;
-export const shouldShiftContent = fn3;
-export const getVisibleMinimumPaddingFraction = fn4;
-export const getMinimumPaddingAbsorbed = fn5;
-export const getScrollEffective = fn6;
-export const clampedScrollTarget = fn7;
-export const computeIOSContentOffset = fn8;

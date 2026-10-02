@@ -1,17 +1,20 @@
-// Module ID: 17580
-// Function ID: 17581
+// Module ID: 17582
+// Function ID: 17583
 // Name: GuildRoleSubscriptionBenefitEditorModalStateStore
-// Dependencies: [1243, 1248, 4452, 2]
-// Exports: initializeImperatively, resetImperatively, useDescriptionState, useEmojiIdState, useEmojiNameState, useNameState, useRefIdState
+// Dependencies: [1255, 1260, 558, 576, 4455, 2]
+// Exports: initializeImperatively, resetImperatively
 
-// Module 17580 (GuildRoleSubscriptionBenefitEditorModalStateStore)
-import react_native from "react-native" /* 1248 */;
-import _slicedToArray from "_slicedToArray" /* 4452 */;
-import module_1243 from "module_1243" /* 1243 */;
+// Module 17582 (GuildRoleSubscriptionBenefitEditorModalStateStore)
+import react from "react" /* 576 */;
+import react_native from "react-native" /* 1260 */;
+import module_1255 from "module_1255" /* 1255 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_2 = Object.freeze({ name: "", emojiId: "alignItems", emojiName: "sk", description: "HermesInternal", refId: "Array" });
-let closure_3 = module_1243.createWithEqualityFn((arg0) => {
+let tmp;
+const _slicedToArray = tmp(4455);
+let closure_2 = Object.freeze({ name: "", emojiId: "backgroundColor", emojiName: "lineClamp", description: "TableRow", refId: "Array" });
+let closure_3 = module_1255.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   let obj = {
     setEmojiId(emoji_id) {
@@ -60,6 +63,116 @@ let closure_3 = module_1243.createWithEqualityFn((arg0) => {
   const merged = Object.assign(closure_2);
   return obj;
 });
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(arg0) {
+      const items = [, ];
+      ({ description: arr[0], setDescription: arr[1] } = arg0);
+      return items;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_3(first, _slicedToArray.shallow);
+}) : (() => closure_3((arg0) => {
+  const items = [, ];
+  ({ description: arr[0], setDescription: arr[1] } = arg0);
+  return items;
+}, _slicedToArray.shallow));
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(arg0) {
+      const items = [, ];
+      ({ emojiId: arr[0], setEmojiId: arr[1] } = arg0);
+      return items;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_3(first, _slicedToArray.shallow);
+}) : (() => closure_3((arg0) => {
+  const items = [, ];
+  ({ emojiId: arr[0], setEmojiId: arr[1] } = arg0);
+  return items;
+}, _slicedToArray.shallow));
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(arg0) {
+      const items = [, ];
+      ({ emojiName: arr[0], setEmojiName: arr[1] } = arg0);
+      return items;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_3(first, _slicedToArray.shallow);
+}) : (() => closure_3((arg0) => {
+  const items = [, ];
+  ({ emojiName: arr[0], setEmojiName: arr[1] } = arg0);
+  return items;
+}, _slicedToArray.shallow));
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(arg0) {
+      const items = [, ];
+      ({ name: arr[0], setName: arr[1] } = arg0);
+      return items;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_3(first, _slicedToArray.shallow);
+}) : (() => closure_3((arg0) => {
+  const items = [, ];
+  ({ name: arr[0], setName: arr[1] } = arg0);
+  return items;
+}, _slicedToArray.shallow));
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(arg0) {
+      const items = [, ];
+      ({ refId: arr[0], setRefId: arr[1] } = arg0);
+      return items;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_3(first, _slicedToArray.shallow);
+}) : (() => closure_3((arg0) => {
+  const items = [, ];
+  ({ refId: arr[0], setRefId: arr[1] } = arg0);
+  return items;
+}, _slicedToArray.shallow));
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitEditorModalStateStore.tsx");
 
 export const resetImperatively = function resetImperatively() {
@@ -85,38 +198,8 @@ export const initializeImperatively = function initializeImperatively(benefit) {
     setRefId(benefit.ref_id);
   }
 };
-export const useDescriptionState = function useDescriptionState() {
-  return closure_3((arg0) => {
-    const items = [, ];
-    ({ description: arr[0], setDescription: arr[1] } = arg0);
-    return items;
-  }, _slicedToArray.shallow);
-};
-export const useEmojiIdState = function useEmojiIdState() {
-  return closure_3((arg0) => {
-    const items = [, ];
-    ({ emojiId: arr[0], setEmojiId: arr[1] } = arg0);
-    return items;
-  }, _slicedToArray.shallow);
-};
-export const useEmojiNameState = function useEmojiNameState() {
-  return closure_3((arg0) => {
-    const items = [, ];
-    ({ emojiName: arr[0], setEmojiName: arr[1] } = arg0);
-    return items;
-  }, _slicedToArray.shallow);
-};
-export const useNameState = function useNameState() {
-  return closure_3((arg0) => {
-    const items = [, ];
-    ({ name: arr[0], setName: arr[1] } = arg0);
-    return items;
-  }, _slicedToArray.shallow);
-};
-export const useRefIdState = function useRefIdState() {
-  return closure_3((arg0) => {
-    const items = [, ];
-    ({ refId: arr[0], setRefId: arr[1] } = arg0);
-    return items;
-  }, _slicedToArray.shallow);
-};
+export const useDescriptionState = tmp2;
+export const useEmojiIdState = tmp3;
+export const useEmojiNameState = tmp4;
+export const useNameState = tmp5;
+export const useRefIdState = tmp6;

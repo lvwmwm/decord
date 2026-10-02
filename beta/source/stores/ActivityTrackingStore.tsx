@@ -1,23 +1,23 @@
-// Module ID: 13287
-// Function ID: 13288
+// Module ID: 13289
+// Function ID: 13290
 // Name: ActivityTrackingStore
-// Dependencies: [2000, 1220, 502, 2017, 6817, 4859, 2099, 1074, 1091, 510, 6819, 11010, 2040, 4965, 504, 573, 2]
+// Dependencies: [2006, 1232, 502, 2023, 6818, 4860, 2102, 1086, 1103, 510, 6820, 10878, 2046, 4966, 504, 585, 2]
 
-// Module 13287 (ActivityTrackingStore)
+// Module 13289 (ActivityTrackingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import GameAnalyticsUtils from "GameAnalyticsUtils" /* 4965 */;
-import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11010 */;
-import RunningGameStore from "RunningGameStore" /* 2000 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import GameAnalyticsUtils from "GameAnalyticsUtils" /* 4966 */;
+import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 10878 */;
+import RunningGameStore from "RunningGameStore" /* 2006 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DetectableGameStore from "DetectableGameStore" /* 2017 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 6817 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import DetectableGameStore from "DetectableGameStore" /* 2023 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 6818 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,7 +73,7 @@ function updateActivity(applicationId) {
     applicationId = applicationId.applicationId;
     const self = this;
     const self2 = this;
-    const interval = new tmp3(2040).Interval();
+    const interval = new tmp3(2046).Interval();
     tmp12[applicationId] = interval;
     interval.start(tmp2, () => {
       updateActivity(applicationId);

@@ -1,23 +1,23 @@
-// Module ID: 17455
-// Function ID: 17456
+// Module ID: 17457
+// Function ID: 17458
 // Name: GuildSettingsModalBans
-// Dependencies: [32, 19, 17, 2067, 1372, 9049, 21, 4836, 576, 504, 6470, 2021, 5829, 5832, 9048, 5917, 1177, 5924, 1115, 6610, 4527, 6615, 6460, 17456, 6471, 7678, 6476, 6461, 2]
+// Dependencies: [32, 19, 17, 2073, 1378, 9026, 21, 4837, 588, 504, 6471, 2027, 5830, 5833, 9025, 5916, 1189, 5923, 1127, 6611, 4530, 6616, 6460, 17458, 6472, 7682, 6477, 6461, 2]
 // Exports: default
 
-// Module 17455 (GuildSettingsModalBans)
-import nativeDefault from "native" /* 576 */;
-import intl5 from "intl" /* 1115 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5829 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6615 */;
+// Module 17457 (GuildSettingsModalBans)
+import nativeDefault from "native" /* 588 */;
+import intl5 from "intl" /* 1127 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5830 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5833 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6616 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import UserStore from "UserStore" /* 1372 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9049 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import UserStore from "UserStore" /* 1378 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9026 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let bans, bansVersion, props;
@@ -198,15 +198,15 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
                       }
                 };
                 const push = items.push;
-                intl = tmp8(1115).intl;
+                intl = tmp8(1127).intl;
                 push(obj);
               }
               const obj3 = { title: intl2.formatToPlainString(intl5.t.XvAG5t, obj4), subtitle: null };
               const showSimpleActionSheet = showSimpleActionSheet2.showSimpleActionSheet;
               showSimpleActionSheet2;
-              intl2 = tmp8(1115).intl;
+              intl2 = tmp8(1127).intl;
               obj4 = { user: user.username };
-              const string = tmp8(1115).intl.string;
+              const string = tmp8(1127).intl.string;
               if (null != stateFromStores.reason) {
                 let reason;
                 if ("" !== stateFromStores.reason) {
@@ -217,8 +217,8 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
                 obj3.subtitle = "" + tmp4 + ": " + reason;
                 const result = showSimpleActionSheet(obj5);
               }
-              const intl3 = tmp8(1115).intl;
-              reason = intl3.string(tmp8(1115).t["t+2Zci"]);
+              const intl3 = tmp8(1127).intl;
+              reason = intl3.string(tmp8(1127).t["t+2Zci"]);
             }
           }
       };

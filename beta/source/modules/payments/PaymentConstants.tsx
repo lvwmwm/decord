@@ -1,9 +1,9 @@
-// Module ID: 4815
-// Function ID: 4816
+// Module ID: 4816
+// Function ID: 4817
 // Name: PaymentConstants
 // Dependencies: [2]
 
-// Module 4815 (PaymentConstants)
+// Module 4816 (PaymentConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/payments/PaymentConstants.tsx");

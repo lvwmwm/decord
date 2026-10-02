@@ -1,14 +1,15 @@
-// Module ID: 8899
-// Function ID: 8900
+// Module ID: 8893
+// Function ID: 8894
 // Name: participantHasVideo
-// Dependencies: [502, 1993, 4857, 4861, 504, 2]
-// Exports: default, useCanRenderParticipantVideo
+// Dependencies: [502, 1999, 4858, 4862, 558, 576, 504, 2]
+// Exports: default
 
-// Module 8899 (participantHasVideo)
-import Constants from "Constants" /* 4861 */;
+// Module 8893 (participantHasVideo)
+import Constants from "Constants" /* 4862 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import CallConstants from "CallConstants" /* 4857 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import CallConstants from "CallConstants" /* 4858 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -68,9 +69,41 @@ function canRenderParticipantVideo(participant, MediaEngineStore) {
 }
 ({ ParticipantTypes: closure_4, isStreamParticipant: hasOwnProperty, isUserParticipant: metroRequire } = CallConstants);
 const Features = Constants.Features;
-const result = size.fileFinishedImporting("modules/video_calls/participantHasVideo.tsx");
-
-export default function participantHasVideo(type) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MediaEngineStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function o() {
+      return canRenderParticipantVideo(closure_0, MediaEngineStore);
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  const items = [MediaEngineStore];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => canRenderParticipantVideo(closure_0, MediaEngineStore));
+});
+function participantHasVideo(type) {
   let tmp = type.type !== constants.ACTIVITY;
   if (tmp) {
     let supportsResult = MediaEngineStore.supports(Features.VIDEO);
@@ -93,11 +126,9 @@ export default function participantHasVideo(type) {
     tmp = supportsResult;
   }
   return tmp;
-};
+}
+const result = size.fileFinishedImporting("modules/video_calls/participantHasVideo.tsx");
+
+export default participantHasVideo;
 export { canRenderParticipantVideo };
-export const useCanRenderParticipantVideo = function useCanRenderParticipantVideo(stateFromStores) {
-  _require = stateFromStores;
-  const items = [MediaEngineStore];
-  const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => canRenderParticipantVideo(stateFromStores, MediaEngineStore));
-};
+export const useCanRenderParticipantVideo = tmp3;

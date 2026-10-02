@@ -1,9 +1,9 @@
-// Module ID: 13659
-// Function ID: 13660
+// Module ID: 13661
+// Function ID: 13662
 // Name: AccessibilityFocusNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 13659 (AccessibilityFocusNativeComponent)
+// Module 13661 (AccessibilityFocusNativeComponent)
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

@@ -1,22 +1,192 @@
-// Module ID: 16432
-// Function ID: 16433
+// Module ID: 16434
+// Function ID: 16435
 // Name: ThreadCreationTitleInput
-// Dependencies: [19, 2045, 1074, 21, 16433, 7196, 6692, 1483, 1611, 504, 8606, 1115, 6024, 5898, 2]
+// Dependencies: [19, 2051, 1086, 21, 558, 576, 16435, 7200, 6693, 1489, 1617, 504, 8603, 1127, 5895, 6021, 2]
 
-// Module 16432 (ThreadCreationTitleInput)
+// Module 16434 (ThreadCreationTitleInput)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1074 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 6692 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 7196 */;
+import Constants from "Constants" /* 1086 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 6693 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 7200 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let chatInputRef, dependencyMap;
 
 const MAX_CHANNEL_NAME_LENGTH = Constants.MAX_CHANNEL_NAME_LENGTH;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(react.forwardRef((chatInputRef, ref) => {
+const forwardRef = react.forwardRef;
+const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputRef, arg1) => {
+  let optional;
+  let ref;
+  let threadNameError;
+  const tmp = chatInputRef;
+  let tmp2 = dependencyMap;
+  let obj = chatInputRef(576);
+  const cResult = obj.c(38);
+  chatInputRef = chatInputRef.chatInputRef;
+  const threadSettingsDraft = chatInputRef.threadSettingsDraft;
+  ({ threadNameError, optional } = chatInputRef);
+  dependencyMap = arg1;
+  if (cResult[0] === threadNameError) {
+    if (cResult[1] === threadSettingsDraft.name) {
+      let tmp4 = cResult[2];
+    }
+    const obj4 = ref;
+    ref = ref.useRef(threadSettingsDraft.name);
+    if (cResult[3] !== threadSettingsDraft.parentChannelId) {
+      const fn = function y(current) {
+        if (null != threadSettingsDraft.parentChannelId) {
+          const obj = { name: sanitizeThreadNameDefault(current, false) };
+          const changeThreadSettings = DraftActionCreatorsDefault.changeThreadSettings;
+          const parentChannelId = tmp.parentChannelId;
+          DraftActionCreatorsDefault;
+          changeThreadSettings(parentChannelId, obj);
+          ref.current = current;
+        }
+      };
+      cResult[3] = threadSettingsDraft.parentChannelId;
+      cResult[4] = fn;
+    }
+    if (cResult[5] === threadSettingsDraft.name) {
+      const _Symbol = Symbol;
+      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+        const fn2 = function x() {
+          const obj = chatInputRef(ref[9]);
+          const obj2 = { type: chatInputRef(ref[10]).KeyboardTypes.SYSTEM, context: { keyboardWillOpen: true } };
+          obj.setKeyboardType(obj2);
+        };
+        cResult[8] = fn2;
+      }
+      class E {
+        constructor() {
+          if (null != threadSettingsDraft.name) {
+            if (null != threadSettingsDraft.parentChannelId) {
+              const tmp4 = sanitizeThreadNameDefault(threadSettingsDraft.name, true);
+              const tmp2 = importDefault;
+              if (tmp4 !== threadSettingsDraft.name) {
+                const obj = { name: tmp4 };
+                const tmp2Result = tmp2(7200);
+                tmp2Result.changeThreadSettings(threadSettingsDraft.parentChannelId, obj);
+              }
+            }
+          }
+        }
+      }
+      if (cResult[11] === threadSettingsDraft.name) {
+        let tmp11;
+        let tmp12;
+        let tmp14;
+        let tmp16;
+        if (cResult[12] === arg1) {
+          tmp11 = cResult[13];
+          tmp12 = cResult[14];
+        }
+        const effect = obj4.useEffect(tmp11, tmp12);
+        const _Symbol2 = Symbol;
+        if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+          const items = [ChannelStore];
+          cResult[15] = items;
+          tmp14 = items;
+        } else {
+          tmp14 = cResult[15];
+        }
+        if (cResult[16] !== threadSettingsDraft.parentChannelId) {
+          const fn3 = function k() {
+            return ChannelStore.getChannel(threadSettingsDraft.parentChannelId);
+          };
+          cResult[16] = threadSettingsDraft.parentChannelId;
+          cResult[17] = fn3;
+          tmp16 = fn3;
+        } else {
+          tmp16 = cResult[17];
+        }
+        class E {
+          constructor() {
+            if (null != threadSettingsDraft.name) {
+              if (null != threadSettingsDraft.parentChannelId) {
+                const tmp4 = sanitizeThreadNameDefault(threadSettingsDraft.name, true);
+                const tmp2 = importDefault;
+                if (tmp4 !== threadSettingsDraft.name) {
+                  const obj = { name: tmp4 };
+                  const tmp2Result = tmp2(7200);
+                  tmp2Result.changeThreadSettings(threadSettingsDraft.parentChannelId, obj);
+                }
+              }
+            }
+          }
+        }
+        const stateFromStores = obj5.useStateFromStores(tmp14, tmp16);
+        class R {
+          constructor() {
+            const tmp2 = ref.current !== threadSettingsDraft.name && null != tmp.name;
+            if (tmp2) {
+              if (ref != null) {
+                const current = ref.current;
+                if (current != null) {
+                  current.setText(threadSettingsDraft.name);
+                }
+              }
+            }
+          }
+        }
+        let str2 = "";
+        if (null != stateFromStores) {
+          const tmpResult = tmp(8603);
+          str2 = tmpResult.getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
+        }
+        cResult[18] = stateFromStores;
+        cResult[19] = threadSettingsDraft.parentMessageId;
+        cResult[20] = str2;
+      }
+      class R {
+        constructor() {
+          const tmp2 = ref.current !== threadSettingsDraft.name && null != tmp.name;
+          if (tmp2) {
+            if (ref != null) {
+              const current = ref.current;
+              if (current != null) {
+                current.setText(threadSettingsDraft.name);
+              }
+            }
+          }
+        }
+      }
+      const items1 = [threadSettingsDraft.name, arg1];
+      cResult[11] = threadSettingsDraft.name;
+      cResult[12] = arg1;
+      cResult[13] = R;
+      cResult[14] = items1;
+      tmp12 = items1;
+      tmp11 = R;
+    }
+    class E {
+      constructor() {
+        if (null != threadSettingsDraft.name) {
+          if (null != threadSettingsDraft.parentChannelId) {
+            const tmp4 = sanitizeThreadNameDefault(threadSettingsDraft.name, true);
+            const tmp2 = importDefault;
+            if (tmp4 !== threadSettingsDraft.name) {
+              const obj = { name: tmp4 };
+              const tmp2Result = tmp2(7200);
+              tmp2Result.changeThreadSettings(threadSettingsDraft.parentChannelId, obj);
+            }
+          }
+        }
+      }
+    }
+    cResult[6] = threadSettingsDraft.parentChannelId;
+    cResult[7] = E;
+  }
+  let obj2 = { content: threadSettingsDraft.name };
+  const tmpResult2 = tmp(16435);
+  cResult[0] = threadNameError;
+  cResult[1] = threadSettingsDraft.name;
+  cResult[2] = tmpResult2.renderError(threadNameError, obj2);
+  tmpResult2.renderError(threadNameError, obj2);
+}) : ((chatInputRef, ref) => {
   let stringResult;
   let stringResult1;
   chatInputRef = chatInputRef.chatInputRef;
@@ -27,7 +197,7 @@ const memoResult = react.memo(react.forwardRef((chatInputRef, ref) => {
   const tmp = chatInputRef;
   let tmp2 = dependencyMap;
   const threadNameError = chatInputRef.threadNameError;
-  let obj = chatInputRef(16433);
+  let obj = chatInputRef(16435);
   let obj2 = { content: threadSettingsDraft.name };
   const renderErrorResult = obj.renderError(threadNameError, obj2);
   ref = ref.useRef(threadSettingsDraft.name);
@@ -50,7 +220,7 @@ const memoResult = react.memo(react.forwardRef((chatInputRef, ref) => {
         const tmp2 = importDefault;
         if (tmp4 !== threadSettingsDraft.name) {
           const obj = { name: tmp4 };
-          const tmp2Result = tmp2(7196);
+          const tmp2Result = tmp2(7200);
           tmp2Result.changeThreadSettings(threadSettingsDraft.parentChannelId, obj);
         }
       }
@@ -58,8 +228,8 @@ const memoResult = react.memo(react.forwardRef((chatInputRef, ref) => {
   }, items1);
   const items2 = [chatInputRef];
   const callback2 = ref.useCallback(() => {
-    const obj = chatInputRef(ref[7]);
-    const obj2 = { type: chatInputRef(ref[8]).KeyboardTypes.SYSTEM, context: { keyboardWillOpen: true } };
+    const obj = chatInputRef(ref[9]);
+    const obj2 = { type: chatInputRef(ref[10]).KeyboardTypes.SYSTEM, context: { keyboardWillOpen: true } };
     obj.setKeyboardType(obj2);
   }, []);
   const items3 = [threadSettingsDraft.name, ref];
@@ -85,31 +255,31 @@ const memoResult = react.memo(react.forwardRef((chatInputRef, ref) => {
   const stateFromStores = obj3.useStateFromStores(items4, () => ChannelStore.getChannel(threadSettingsDraft.parentChannelId));
   let str = "";
   if (null != stateFromStores) {
-    const tmpResult = tmp(8606);
+    const tmpResult = tmp(8603);
     str = tmpResult.getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
   }
-  const intl = tmp(1115).intl;
+  const intl = tmp(1127).intl;
   const string = intl.string;
-  const t = tmp(1115).t;
+  const t = tmp(1127).t;
   if (optional) {
     stringResult = string(t.JPvIiL);
   } else {
     stringResult = string(t.j3XWjD);
   }
-  const obj4 = { defaultValue: threadSettingsDraft(5898)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityHint: stringResult1, required: !optional, clearable: true, autoFocus: true, maxLength: MAX_CHANNEL_NAME_LENGTH, onSubmitEditing: callback3, onFocus: callback2, onBlur: callback1, onChange: callback, placeholder: str, ref, returnKeyType: "next", textContentType: "none" };
-  const TextInput = tmp(6024).TextInput;
+  const obj4 = { defaultValue: threadSettingsDraft(5895)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityHint: stringResult1, required: !optional, clearable: true, autoFocus: true, maxLength: MAX_CHANNEL_NAME_LENGTH, onSubmitEditing: callback3, onFocus: callback2, onBlur: callback1, onChange: callback, placeholder: str, ref, returnKeyType: "next", textContentType: "none" };
+  const TextInput = tmp(6021).TextInput;
   stringResult1 = undefined;
   const tmp12 = jsx;
   if (!optional) {
-    const intl2 = tmp(1115).intl;
-    stringResult1 = intl2.string(tmp(1115).t["/+VEZN"]);
+    const intl2 = tmp(1127).intl;
+    stringResult1 = intl2.string(tmp(1127).t["/+VEZN"]);
   }
   if ("" === str) {
-    const intl3 = tmp(1115).intl;
-    str = intl3.string(tmp(1115).t["Nb2/RE"]);
+    const intl3 = tmp(1127).intl;
+    str = intl3.string(tmp(1127).t["Nb2/RE"]);
   }
   return tmp12(TextInput, obj4);
-}));
+})));
 const result = size.fileFinishedImporting("modules/threads/native/components/thread_creation/ThreadCreationTitleInput.tsx");
 
 export default memoResult;

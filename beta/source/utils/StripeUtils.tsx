@@ -1,30 +1,33 @@
-// Module ID: 5189
-// Function ID: 5190
+// Module ID: 5190
+// Function ID: 5191
 // Name: StripeUtils
-// Dependencies: [5, 32, 2112, 1074, 3, 5190, 1271, 504, 2]
-// Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
+// Dependencies: [5, 32, 2115, 1086, 3, 5191, 1283, 558, 576, 504, 2]
+// Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, validateExpiry
 
-// Module 5189 (StripeUtils)
+// Module 5190 (StripeUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import get_initialized from "get initialized" /* 504 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import _mod5190 from "module_5190" /* 5190 */;
+import react from "react" /* 576 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import _mod5191 from "module_5191" /* 5191 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import Constants from "Constants" /* 1074 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, locale;
 
 let metroImportDefault;
 let metroRequire;
+let tmp;
+const get_initialized = tmp(504);
 function getStripe() {
   let resolved;
   if (null != React2) {
     resolved = Promise.resolve(React2);
   } else {
-    obj = _mod5190;
+    obj = _mod5191;
     const stripe = obj.loadStripe(metroImportDefault.STRIPE.KEY);
     resolved = stripe.then((result) => {
       let closure_1_2 = result;
@@ -48,7 +51,7 @@ let obj = function _authenticatePaymentIntentForPaymentId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -225,6 +228,50 @@ let tmp3 = new LoggerDefault("StripeUtils");
 const logger = tmp3;
 let closure_9 = { REQUIRES_PAYMENT_METHOD: "requires_payment_method", REQUIRES_CONFIRMATION: "requires_confirmation", REQUIRES_ACTION: "requires_action", PROCESSING: "processing", CANCELED: "canceled", SUCCEEDED: "succeeded" };
 let closure_12 = { "en-US": "en", "zh-CN": "zh", "sv-SE": "sv" };
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  let tmp = require;
+  obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [LocaleStore];
+    const fn = function t() {
+      locale = locale.locale;
+      let tmp = closure_1_12[locale];
+      if (tmp == null) {
+        tmp = locale;
+      }
+      return tmp;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  const items = [LocaleStore];
+  obj = get_initialized;
+  return obj.useStateFromStores(items, () => {
+    locale = locale.locale;
+    let tmp = closure_1_12[locale];
+    if (tmp == null) {
+      tmp = locale;
+    }
+    return tmp;
+  });
+});
+function getStripeElementLocale(arg0) {
+  let tmp = closure_12[arg0];
+  if (tmp == null) {
+    tmp = arg0;
+  }
+  return tmp;
+}
 const result = size.fileFinishedImporting("utils/StripeUtils.tsx");
 
 export const validateExpiry = function validateExpiry(arg0) {
@@ -384,22 +431,5 @@ export const parseBillingAddressInfoToStripeBillingDetails = function parseBilli
 export const authenticatePaymentIntentForPaymentId = function authenticatePaymentIntentForPaymentId() {
   return obj(...arguments);
 };
-export const getStripeElementLocale = function getStripeElementLocale(arg0) {
-  let tmp = closure_12[arg0];
-  if (tmp == null) {
-    tmp = arg0;
-  }
-  return tmp;
-};
-export const useStripeLocale = function useStripeLocale() {
-  const items = [LocaleStore];
-  obj = get_initialized;
-  return obj.useStateFromStores(items, () => {
-    locale = locale.locale;
-    let tmp = closure_1_12[locale];
-    if (tmp == null) {
-      tmp = locale;
-    }
-    return tmp;
-  });
-};
+export { getStripeElementLocale };
+export const useStripeLocale = tmp4;

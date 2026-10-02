@@ -1,13 +1,13 @@
-// Module ID: 16251
-// Function ID: 16252
+// Module ID: 16253
+// Function ID: 16254
 // Name: VibegrationsTemplateWizard
-// Dependencies: [1115, 3715, 5370, 2]
+// Dependencies: [1127, 3718, 5371, 2]
 // Exports: canLeaveVibegrationsWizardQuestion, formatVibegrationsWizardAnswers, isVibegrationsWizardComplete, latestVibegrationsIntake, vibegrationsTemplateStartMessage, vibegrationsTemplateWizardGuilds, vibegrationsTemplateWizardSteps, vibegrationsWizardIntro, vibegrationsWizardNeedsServerStep, vibegrationsWizardQuestions, vibegrationsWizardServerCopy
 
-// Module 16251 (VibegrationsTemplateWizard)
-import intl3 from "intl" /* 1115 */;
-import _modDef3715 from "module_3715" /* 3715 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5370 */;
+// Module 16253 (VibegrationsTemplateWizard)
+import intl3 from "intl" /* 1127 */;
+import _modDef3718 from "module_3718" /* 3718 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 5371 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTemplateWizard.tsx");
@@ -50,7 +50,7 @@ export const vibegrationsTemplateStartMessage = function vibegrationsTemplateSta
   const intl = intl3.intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { templateName: name, locale: intl3.intl.currentLocale };
-  const v4lZNuo = _modDef3715["4lZNuo"];
+  const v4lZNuo = _modDef3718["4lZNuo"];
   return formatToPlainString(v4lZNuo, obj);
 };
 export const vibegrationsTemplateWizardGuilds = function vibegrationsTemplateWizardGuilds(guildsArray, VibegrationsTemplateWizardSheet) {
@@ -118,7 +118,7 @@ export const vibegrationsWizardServerCopy = function vibegrationsWizardServerCop
     server = stateFromStores1.server;
   }
   if (server == null) {
-    const obj = { title: intl.string(_modDef3715.WQCnSf), hint: intl2.string(_modDef3715.KLTQfQ) };
+    const obj = { title: intl.string(_modDef3718.WQCnSf), hint: intl2.string(_modDef3718.KLTQfQ) };
     intl = intl3.intl;
     intl2 = intl3.intl;
     server = obj;

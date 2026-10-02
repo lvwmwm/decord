@@ -1,26 +1,76 @@
-// Module ID: 8796
-// Function ID: 8797
+// Module ID: 8791
+// Function ID: 8792
 // Name: confirmActivityAgeGateAlert
-// Dependencies: [19, 17, 21, 4836, 576, 8797, 4832, 1115, 5203, 1177, 2]
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 8792, 4833, 1127, 5204, 1189, 2]
 // Exports: confirmActivityAgeGateAlert
 
-// Module 8796 (confirmActivityAgeGateAlert)
+// Module 8791 (confirmActivityAgeGateAlert)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl5 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 8797 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl5 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
+import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 8792 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let description;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
-function ConfirmActivityGateContent(description) {
+let tmp;
+const Text_Text = tmp(4833);
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let obj = { alertContainer: { display: "flex", alignItems: "center", padding: 8 }, alertBodyText: obj2 };
+obj2 = { fontSize: 16, lineHeight: 24, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, textAlign: "center" };
+let closure_6 = createStyles.createStyles(obj);
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((description) => {
+  let first;
+  let items;
+  const obj = react2;
+  const cResult = obj.c(7);
+  description = description.description;
+  const tmp4 = closure_6();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp8 = React3(ActivityAnnouncementDefault, {});
+    cResult[0] = tmp8;
+    first = tmp8;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === description) {
+    let tmp9;
+    if (cResult[2] === tmp4.alertBodyText) {
+      tmp9 = cResult[3];
+    }
+    if (cResult[4] === tmp4.alertContainer) {
+      let tmp11;
+      if (cResult[5] === tmp9) {
+        tmp11 = cResult[6];
+      }
+      return tmp11;
+    }
+    const obj2 = { style: tmp4.alertContainer, children: items };
+    items = [first, tmp9];
+    const tmp14 = hasOwnProperty(View, obj2);
+    cResult[4] = tmp4.alertContainer;
+    cResult[5] = tmp9;
+    cResult[6] = tmp14;
+    tmp11 = tmp14;
+  }
+  const obj3 = { style: tmp4.alertBodyText, variant: "text-md/normal", children: description };
+  const tmp10 = React3(Text_Text.Text, obj3);
+  cResult[1] = description;
+  cResult[2] = tmp4.alertBodyText;
+  cResult[3] = tmp10;
+  tmp9 = tmp10;
+}) : ((description) => {
   let items;
   description = description.description;
   const tmp = closure_6();
@@ -29,12 +79,7 @@ function ConfirmActivityGateContent(description) {
   const obj2 = { style: tmp.alertBodyText, variant: "text-md/normal", children: description };
   items[1] = React3(Text_Text.Text, obj2);
   return hasOwnProperty(View, obj);
-}
-const View = react_native.View;
-({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let obj = { alertContainer: { display: "flex", alignItems: "center", padding: 8 }, alertBodyText: obj2 };
-obj2 = { fontSize: 16, lineHeight: 24, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, textAlign: "center" };
-let closure_6 = createStyles.createStyles(obj);
+});
 const result = size.fileFinishedImporting("modules/activities/confirmActivityAgeGateAlert.native.tsx");
 
 export const confirmActivityAgeGateAlert = function confirmActivityAgeGateAlert(arg0) {
@@ -48,7 +93,7 @@ export const confirmActivityAgeGateAlert = function confirmActivityAgeGateAlert(
   const intl = intl5.intl;
   const obj = { applicationName: application.name };
   const formatToPlainStringResult = intl.formatToPlainString(intl5.t.OgmIqy, obj);
-  const obj2 = { title: intl2.string(intl5.t.SSDPOF), children: React3(ConfirmActivityGateContent, { description: formatToPlainStringResult }), cancelText: intl3.string(intl5.t.hg1uxn), confirmText: intl4.string(intl5.t.wVq7uo), onConfirm: onAgree, onCancel: onDisagree, confirmColor: native.ButtonColors.RED, isDismissable: false };
+  const obj2 = { title: intl2.string(intl5.t.SSDPOF), children: React3(closure_7, { description: formatToPlainStringResult }), cancelText: intl3.string(intl5.t.hg1uxn), confirmText: intl4.string(intl5.t.wVq7uo), onConfirm: onAgree, onCancel: onDisagree, confirmColor: native.ButtonColors.RED, isDismissable: false };
   const show = AlertActionCreatorsDefault.show;
   AlertActionCreatorsDefault;
   intl2 = intl5.intl;

@@ -1,13 +1,13 @@
-// Module ID: 4826
-// Function ID: 4827
+// Module ID: 4827
+// Function ID: 4828
 // Name: GameModeStore
-// Dependencies: [2000, 4827, 504, 4828, 573, 2]
+// Dependencies: [2006, 4828, 504, 4829, 585, 2]
 
-// Module 4826 (GameModeStore)
+// Module 4827 (GameModeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GameModeConstants from "GameModeConstants" /* 4827 */;
-import RunningGameStore from "RunningGameStore" /* 2000 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import GameModeConstants from "GameModeConstants" /* 4828 */;
+import RunningGameStore from "RunningGameStore" /* 2006 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

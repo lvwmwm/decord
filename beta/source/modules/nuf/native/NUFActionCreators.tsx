@@ -1,23 +1,23 @@
-// Module ID: 12201
-// Function ID: 12202
+// Module ID: 12094
+// Function ID: 12095
 // Name: NUFActionCreators
-// Dependencies: [5, 12174, 5593, 1372, 12202, 1074, 6399, 573, 5039, 12203, 1981, 12259, 12262, 12263, 1094, 12177, 12181, 2]
+// Dependencies: [5, 12067, 5594, 1378, 12095, 1086, 6396, 585, 5040, 12096, 1987, 12154, 12157, 12158, 1106, 12070, 12074, 2]
 // Exports: closeDiscoverabilityModal, nextOnboardingStep, openDiscoverabilityModal, previousOnboardingStep, startContactSyncForDiscoverability, startOnboarding, toggleDiscoverabilityForUser, transitionToHubEmailConnectionModal, transitionToNUFGuildTemplatesModal
 
-// Module 12201 (NUFActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6399 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12177 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12181 */;
-import NUFConstants from "NUFConstants" /* 12202 */;
-import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 12259 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12262 */;
+// Module 12094 (NUFActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 6396 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12070 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12074 */;
+import NUFConstants from "NUFConstants" /* 12095 */;
+import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 12154 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12157 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12174 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
-import UserStore from "UserStore" /* 1372 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12067 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ let modalConfig = function _startContactSyncForDiscoverability() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -105,7 +105,7 @@ let modalConfig = function _startContactSyncForDiscoverability() {
           return obj;
         } else {
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp22) {
         c3 = 3;
@@ -163,8 +163,8 @@ export const transitionToHubEmailConnectionModal = function transitionToHubEmail
   }
   let obj = HubEmailConnectionModalActionCreatorsDefault;
   let obj2 = {
-    onCloseExtra(arg0) {
-      const tmp = arg0;
+    onCloseExtra(invite) {
+      const tmp = invite;
       if (tmp) {
         const obj2 = nuf_NUFActionCreators;
         const result = obj2.setNewUserFlowCompleted();

@@ -1,43 +1,94 @@
-// Module ID: 16731
-// Function ID: 16732
+// Module ID: 16733
+// Function ID: 16734
 // Name: MainShared
-// Dependencies: [19, 2045, 4859, 21, 504, 8848, 4692, 8963, 16732, 1364, 5277, 1115, 16734, 13926, 2, 16735, 16736, 16737, 16738, 16746, 16747, 16784]
-// Exports: PictureInPictureGlobalContainer, useAppKeyCommands, useScreenReaderEnabled
+// Dependencies: [19, 2051, 4860, 21, 558, 576, 504, 8843, 4694, 9381, 16734, 1370, 5278, 1127, 16736, 13928, 2, 16737, 16738, 16739, 16740, 16748, 16749, 16786]
 
-// Module 16731 (MainShared)
+// Module 16733 (MainShared)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import intl2 from "intl" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
-import KeyCommands from "KeyCommands" /* 5277 */;
-import usePipVideoOrStream from "usePipVideoOrStream" /* 8848 */;
-import VoicePanelUtils from "VoicePanelUtils" /* 8963 */;
-import AccessibilityManagerDefault from "AccessibilityManager" /* 13926 */;
-import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 16732 */;
-import BurstReactionAnimationContainerDefault from "BurstReactionAnimationContainer" /* 16735 */;
-import NativeMenuPresenterDefault from "NativeMenuPresenter" /* 16736 */;
-import components_ActionSheetPresenterDefault from "components/ActionSheetPresenter" /* 16737 */;
-import AlertsDefault from "Alerts" /* 16738 */;
-import SoundPlayerDefault from "SoundPlayer" /* 16746 */;
-import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 16747 */;
-import ToastContainerDefault from "ToastContainer" /* 16784 */;
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4694 */;
+import KeyCommands from "KeyCommands" /* 5278 */;
+import usePipVideoOrStream from "usePipVideoOrStream" /* 8843 */;
+import VoicePanelUtils from "VoicePanelUtils" /* 9381 */;
+import AccessibilityManagerDefault from "AccessibilityManager" /* 13928 */;
+import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 16734 */;
+import showLaunchPadDefault from "showLaunchPad" /* 16736 */;
+import BurstReactionAnimationContainerDefault from "BurstReactionAnimationContainer" /* 16737 */;
+import NativeMenuPresenterDefault from "NativeMenuPresenter" /* 16738 */;
+import components_ActionSheetPresenterDefault from "components/ActionSheetPresenter" /* 16739 */;
+import AlertsDefault from "Alerts" /* 16740 */;
+import SoundPlayerDefault from "SoundPlayer" /* 16748 */;
+import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 16749 */;
+import ToastContainerDefault from "ToastContainer" /* 16786 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-let result = size.fileFinishedImporting("components_native/MainShared.tsx");
-
-export const BurstReactionAnimationContainer = BurstReactionAnimationContainerDefault;
-export const MenuContainer = NativeMenuPresenterDefault;
-export const ActionSheetContainer = components_ActionSheetPresenterDefault;
-export const Alerts = AlertsDefault;
-export const SoundPlayer = SoundPlayerDefault;
-export const MainViewTooltipActionSheetsV2 = MainViewTooltipActionSheetsV2Default;
-export const ToastContainer = ToastContainerDefault;
-export const PictureInPictureGlobalContainer = function PictureInPictureGlobalContainer() {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let channel;
+  let channelId;
+  let tmp4;
+  let tmp5;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore, RTCConnectionStore];
+    const fn = function l() {
+      return channel.getChannel(channelId.getChannelId());
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { isActivityViewFocused: false };
+    cResult[2] = obj2;
+    tmp9 = obj2;
+  } else {
+    tmp9 = cResult[2];
+  }
+  const tmpResult4 = usePipVideoOrStream;
+  const hasPipParticipant = tmpResult4.useHasPipParticipant(tmp9);
+  const tmpResult5 = NavigationRouteUtils;
+  const isModalOpen = tmpResult5.useIsModalOpen();
+  VoicePanelUtils;
+  let tmp14 = null;
+  if (null != stateFromStores) {
+    tmp14 = null;
+    if (hasPipParticipant) {
+      tmp14 = null;
+      if (!isModalOpen) {
+        tmp14 = null;
+        if (!tmp13) {
+          let tmp15;
+          if (cResult[3] !== stateFromStores) {
+            const tmp18 = jsx(PictureInPictureGlobalDefault, { channel: stateFromStores });
+            cResult[3] = stateFromStores;
+            cResult[4] = tmp18;
+            tmp15 = tmp18;
+          } else {
+            tmp15 = cResult[4];
+          }
+          tmp14 = tmp15;
+        }
+      }
+    }
+  }
+  return tmp14;
+}) : (() => {
   let channel;
   let channelId;
   const items = [ChannelStore, RTCConnectionStore];
@@ -62,8 +113,37 @@ export const PictureInPictureGlobalContainer = function PictureInPictureGlobalCo
     }
   }
   return tmp7;
-};
-export const useAppKeyCommands = function useAppKeyCommands() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = PlatformUtils;
+    const isAndroidResult = tmpResult.isAndroid();
+    const KeyModifierFlags = tmp(5278).KeyModifierFlags;
+    const obj2 = {
+      input: "k",
+      modifierFlags: isAndroidResult ? KeyModifierFlags.keyModifierControl : KeyModifierFlags.keyModifierCommand,
+      eventName: "keyCommandShowQuickSwitcher",
+      discoverabilityTitle: intl.string(intl2.t.yYsRlD),
+      onKeyCommand() {
+          showLaunchPadDefault();
+          return true;
+        }
+    };
+    intl = tmp(1127).intl;
+    const items = [obj2];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  const tmpResult2 = KeyCommands;
+  const keyCommands = tmpResult2.useKeyCommands(first);
+}) : (() => {
   const memo = react.useMemo(() => {
     let intl;
     const obj = PlatformUtils;
@@ -75,20 +155,52 @@ export const useAppKeyCommands = function useAppKeyCommands() {
       eventName: "keyCommandShowQuickSwitcher",
       discoverabilityTitle: intl.string(intl2.t.yYsRlD),
       onKeyCommand() {
-        closure_1_1(closure_1_2[12])();
+        closure_1_1(closure_1_2[14])();
         return true;
       }
     };
-    intl = tmp(tmp2[11]).intl;
+    intl = tmp(tmp2[13]).intl;
     const items = [obj2];
     return items;
   }, []);
   let obj = KeyCommands;
   const keyCommands = obj.useKeyCommands(memo);
-};
-export const useScreenReaderEnabled = function useScreenReaderEnabled() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp2;
+  let tmp3;
+  let obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function o() {
+      const obj = AccessibilityManagerDefault;
+      const result = obj.checkScreenreaderEnabled();
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp2 = fn;
+    tmp3 = items;
+  } else {
+    [tmp2, tmp3] = cResult;
+  }
+  const effect = react.useEffect(tmp2, tmp3);
+}) : (() => {
   const effect = react.useEffect(() => {
     const obj = AccessibilityManagerDefault;
     const result = obj.checkScreenreaderEnabled();
   }, []);
-};
+});
+let result = size.fileFinishedImporting("components_native/MainShared.tsx");
+
+export const BurstReactionAnimationContainer = BurstReactionAnimationContainerDefault;
+export const MenuContainer = NativeMenuPresenterDefault;
+export const ActionSheetContainer = components_ActionSheetPresenterDefault;
+export const Alerts = AlertsDefault;
+export const SoundPlayer = SoundPlayerDefault;
+export const MainViewTooltipActionSheetsV2 = MainViewTooltipActionSheetsV2Default;
+export const ToastContainer = ToastContainerDefault;
+export const PictureInPictureGlobalContainer = tmp2;
+export const useAppKeyCommands = tmp3;
+export const useScreenReaderEnabled = tmp4;

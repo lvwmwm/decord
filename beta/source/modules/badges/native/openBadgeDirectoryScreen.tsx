@@ -1,12 +1,12 @@
-// Module ID: 10655
-// Function ID: 10656
+// Module ID: 10644
+// Function ID: 10645
 // Name: openBadgeDirectoryScreen
-// Dependencies: [5039, 10656, 1981, 2]
+// Dependencies: [5040, 10645, 1987, 2]
 // Exports: closeBadgeDirectoryScreen, openBadgeDirectoryScreen
 
-// Module 10655 (openBadgeDirectoryScreen)
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+// Module 10644 (openBadgeDirectoryScreen)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "badge-directory";
@@ -20,7 +20,7 @@ export const openBadgeDirectoryScreen = function openBadgeDirectoryScreen(arg0) 
   }
   const targetUserId = obj.targetUserId;
   const obj2 = ModalActionCreatorsDefault;
-  obj2.pushLazy(asyncRequire(10656, dependencyMap.paths), { targetUserId }, c3);
+  obj2.pushLazy(asyncRequire(10645, dependencyMap.paths), { targetUserId }, c3);
 };
 export const closeBadgeDirectoryScreen = function closeBadgeDirectoryScreen() {
   const obj = ModalActionCreatorsDefault;

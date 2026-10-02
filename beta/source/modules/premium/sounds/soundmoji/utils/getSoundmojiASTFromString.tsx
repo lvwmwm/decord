@@ -1,17 +1,17 @@
-// Module ID: 5318
-// Function ID: 5319
+// Module ID: 5319
+// Function ID: 5320
 // Name: getSoundmojiASTFromString
-// Dependencies: [5319, 5056, 1074, 5325, 5326, 5327, 5329, 1397, 2]
+// Dependencies: [5320, 5057, 1086, 5326, 5327, 5328, 5330, 1403, 2]
 // Exports: default, getSoundmojiFromMessage
 
-// Module 5318 (getSoundmojiASTFromString)
-import Constants from "Constants" /* 1074 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 5325 */;
-import isSoundValidDefault from "isSoundValid" /* 5326 */;
-import getSoundStringDefault from "getSoundString" /* 5329 */;
-import SoundboardStore from "SoundboardStore" /* 5319 */;
-import MessageStore from "MessageStore" /* 5056 */;
+// Module 5319 (getSoundmojiASTFromString)
+import Constants from "Constants" /* 1086 */;
+import AvatarUtils from "AvatarUtils" /* 1403 */;
+import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 5326 */;
+import isSoundValidDefault from "isSoundValid" /* 5327 */;
+import getSoundStringDefault from "getSoundString" /* 5330 */;
+import SoundboardStore from "SoundboardStore" /* 5320 */;
+import MessageStore from "MessageStore" /* 5057 */;
 import size from "module_2" /* 2 */;
 
 const MessageStates = Constants.MessageStates;
@@ -34,7 +34,7 @@ export default function getSoundmojiASTFromString(soundId, guildId) {
     const tmp8 = importDefault;
     if (null != messageId) {
       if (null != channelId) {
-        const tmp16 = tmp8(5327)(channelId, messageId, soundId[2], soundboardSounds);
+        const tmp16 = tmp8(5328)(channelId, messageId, soundId[2], soundboardSounds);
         tmp5 = tmp16;
         if (tmp9) {
           tmp5 = tmp16;
@@ -88,7 +88,7 @@ export default function getSoundmojiASTFromString(soundId, guildId) {
     emojiURL = undefined;
     if (null != emojiId1) {
       let emojiId2;
-      const getEmojiURL = tmp3(1397).getEmojiURL;
+      const getEmojiURL = tmp3(1403).getEmojiURL;
       AvatarUtils;
       if (tmp5 != null) {
         emojiId2 = tmp5.emojiId;
@@ -108,7 +108,7 @@ export const getSoundmojiFromMessage = function getSoundmojiFromMessage(guildId,
     const tmp8 = importDefault;
     if (null != messageId) {
       if (null != channelId) {
-        const tmp16 = tmp8(5327)(channelId, messageId, soundId, arg4);
+        const tmp16 = tmp8(5328)(channelId, messageId, soundId, arg4);
         if (tmp9) {
           if (null == tmp16) {
             const message = MessageStore.getMessage(channelId, messageId);

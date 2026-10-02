@@ -1,21 +1,21 @@
-// Module ID: 1432
-// Function ID: 1433
+// Module ID: 1438
+// Function ID: 1439
 // Name: ImageLoaderUtils
-// Dependencies: [32, 5, 1074, 1433, 1439, 559, 1463, 1473, 1366, 1476, 1434, 1880, 12, 2]
+// Dependencies: [32, 5, 1086, 1439, 1445, 569, 1469, 1479, 1372, 1482, 1440, 1886, 12, 2]
 // Exports: getBestMediaProxySize, getImageSrc, isImageLoaded, loadImage
 
-// Module 1432 (ImageLoaderUtils)
+// Module 1438 (ImageLoaderUtils)
 import _modDef12 from "module_12" /* 12 */;
-import URLUtilsDefault from "URLUtils" /* 1366 */;
-import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1433 */;
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1434 */;
-import LRUCacheDefault from "LRUCache" /* 1439 */;
-import _modDef1473 from "module_1473" /* 1473 */;
-import ImageUtils from "ImageUtils" /* 1476 */;
-import react_nativeDefault from "react-native" /* 1880 */;
+import URLUtilsDefault from "URLUtils" /* 1372 */;
+import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1439 */;
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1440 */;
+import LRUCacheDefault from "LRUCache" /* 1445 */;
+import _modDef1479 from "module_1479" /* 1479 */;
+import ImageUtils from "ImageUtils" /* 1482 */;
+import react_nativeDefault from "react-native" /* 1886 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3, set;
@@ -80,7 +80,7 @@ function getSrcWithWidthAndHeight(quality) {
       let tmp5 = _slicedToArray(src.split("?"), 2);
       const items = [, ];
       [arr[0], tmp6] = tmp5;
-      const tmp2Result = _modDef1473;
+      const tmp2Result = _modDef1479;
       items[1] = tmp2Result.parse(tmp6);
       [tmp8, tmp9] = items;
       _slicedToArray(items, 2);
@@ -126,7 +126,7 @@ function getSrcWithWidthAndHeight(quality) {
       let text = tmp8;
       const tmp2Result3 = _modDef12;
       if (!tmp2Result3.isEmpty(tmp9)) {
-        _modDef1473;
+        _modDef1479;
         text = `${tmp8}?${obj8.stringify(tmp9)}`;
       }
       return text;
@@ -150,7 +150,7 @@ export const isImageLoaded = function isImageLoaded(arg0) {
 };
 export const loadImage = function loadImage(url, bind) {
   let image;
-  const f110500 = async (arg0, value) => {
+  const f133280 = async (arg0, value) => {
     let c2;
     let closure_1;
     let tmp;
@@ -174,7 +174,7 @@ export const loadImage = function loadImage(url, bind) {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -223,7 +223,7 @@ export const loadImage = function loadImage(url, bind) {
                 let tmp12 = backoff;
                 let tmp13 = tmp;
                 let tmp14 = closure_129_2;
-                let failResult = closure_129_2.fail(f126998);
+                let failResult = closure_129_2.fail(f152346);
               } else {
                 let tmp7 = tmp;
                 let tmp8 = closure_1_11;
@@ -234,7 +234,7 @@ export const loadImage = function loadImage(url, bind) {
               }
               let num4 = 3;
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           }
         } catch (tmp18) {
@@ -253,7 +253,7 @@ export const loadImage = function loadImage(url, bind) {
     let fn;
     if (value.loaded) {
       if (null != bind) {
-        const obj2 = image(1463);
+        const obj2 = image(1469);
         const awaitOnlineResult = obj2.awaitOnline();
         awaitOnlineResult.then(() => {
           let url;
@@ -287,11 +287,11 @@ export const loadImage = function loadImage(url, bind) {
       let tmp2 = image;
       const self = this;
       const self2 = this;
-      const tmp4 = new image(559)();
+      const tmp4 = new image(569)();
       obj3.backoff = tmp4;
     }
     backoff = obj3.backoff;
-    image.onerror = _asyncToGenerator(f110500);
+    image.onerror = _asyncToGenerator(f133280);
     image.onload = () => {
       let callbacks;
       let url;

@@ -1,17 +1,71 @@
-// Module ID: 8319
-// Function ID: 8320
+// Module ID: 8316
+// Function ID: 8317
 // Name: TestModeUtils
-// Dependencies: [8320, 8322, 504, 2]
-// Exports: isAnyApplicationInTestMode, isTestModeForApplication, useIsTestModeForApplication
+// Dependencies: [8317, 8319, 558, 576, 504, 2]
+// Exports: isAnyApplicationInTestMode, isTestModeForApplication
 
-// Module 8319 (TestModeUtils)
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8320 */;
-import TestModeStore from "TestModeStore" /* 8322 */;
+// Module 8316 (TestModeUtils)
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8317 */;
+import TestModeStore from "TestModeStore" /* 8319 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp7;
+  let tmp8;
+  _require = arg0;
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [TestModeStore, DeveloperActivityShelfStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function l() {
+      let tmp2 = null != closure_0;
+      if (tmp2) {
+        const result = TestModeStore.inTestModeForApplication(tmp) || DeveloperActivityShelfStore.inDevModeForApplication(tmp);
+        tmp2 = result;
+      }
+      return tmp2;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp8 = items1;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp7, tmp8);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  const items = [TestModeStore, DeveloperActivityShelfStore];
+  const items1 = [arg0];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    let tmp2 = null != closure_0;
+    if (tmp2) {
+      const result = TestModeStore.inTestModeForApplication(tmp) || DeveloperActivityShelfStore.inDevModeForApplication(tmp);
+      tmp2 = result;
+    }
+    return tmp2;
+  }, items1);
+});
 let result = size.fileFinishedImporting("modules/game_store/TestModeUtils.tsx");
 
 export const isTestModeForApplication = function isTestModeForApplication(applicationId) {
@@ -22,17 +76,4 @@ export const isAnyApplicationInTestMode = function isAnyApplicationInTestMode() 
   const isEnabled = null != TestModeStore.getTestModeApplicationId() || DeveloperActivityShelfStore.getIsEnabled();
   return isEnabled;
 };
-export const useIsTestModeForApplication = function useIsTestModeForApplication(id) {
-  _require = id;
-  const items = [TestModeStore, DeveloperActivityShelfStore];
-  const items1 = [id];
-  const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => {
-    let tmp2 = null != id;
-    if (tmp2) {
-      const result = TestModeStore.inTestModeForApplication(tmp) || DeveloperActivityShelfStore.inDevModeForApplication(tmp);
-      tmp2 = result;
-    }
-    return tmp2;
-  }, items1);
-};
+export const useIsTestModeForApplication = tmp2;

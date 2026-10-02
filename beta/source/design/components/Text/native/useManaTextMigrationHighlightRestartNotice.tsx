@@ -1,21 +1,67 @@
-// Module ID: 13986
-// Function ID: 13987
+// Module ID: 13988
+// Function ID: 13989
 // Name: useManaTextMigrationHighlightRestartNotice
-// Dependencies: [19, 4835, 504, 5204, 2]
-// Exports: useManaTextMigrationHighlightRestartNotice
+// Dependencies: [19, 4836, 558, 576, 504, 5205, 2]
 
-// Module 13986 (useManaTextMigrationHighlightRestartNotice)
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
+// Module 13988 (useManaTextMigrationHighlightRestartNotice)
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4835 */;
+import DevSettingsStore from "DevSettingsStore" /* 4836 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const result = size.fileFinishedImporting("design/components/Text/native/useManaTextMigrationHighlightRestartNotice.tsx");
-
-export const useManaTextMigrationHighlightRestartNotice = function useManaTextMigrationHighlightRestartNotice() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let ref;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [DevSettingsStore];
+    const fn = function s() {
+      return DevSettingsStore.get("highlight_mana_text");
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  _require = react.useRef(true);
+  const obj3 = react;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function h() {
+      if (ref.current) {
+        tmp.current = false;
+      } else {
+        const obj = actions_AlertActionCreatorsDefault;
+        obj.show({ title: "Mana Text Migration Highlighter", body: "Restart the app (force quit and reopen) to see the change." });
+      }
+    };
+    cResult[2] = fn2;
+    tmp8 = fn2;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] !== stateFromStores) {
+    const items1 = [stateFromStores];
+    cResult[3] = stateFromStores;
+    cResult[4] = items1;
+    tmp9 = items1;
+  } else {
+    tmp9 = cResult[4];
+  }
+  const effect = obj3.useEffect(tmp8, tmp9);
+}) : (() => {
   let ref;
   let obj = require("get initialized");
   const items = [DevSettingsStore];
@@ -30,4 +76,7 @@ export const useManaTextMigrationHighlightRestartNotice = function useManaTextMi
       obj.show({ title: "Mana Text Migration Highlighter", body: "Restart the app (force quit and reopen) to see the change." });
     }
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("design/components/Text/native/useManaTextMigrationHighlightRestartNotice.tsx");
+
+export const useManaTextMigrationHighlightRestartNotice = tmp2;

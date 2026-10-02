@@ -1,25 +1,25 @@
-// Module ID: 2021
-// Function ID: 2022
+// Module ID: 2027
+// Function ID: 2028
 // Name: UserSettings
-// Dependencies: [2022, 1084, 2023, 1074, 2024, 2025, 1217, 1186, 558, 7304, 12, 504, 5735, 6717, 1225, 2]
+// Dependencies: [2028, 1096, 2029, 1086, 2030, 2031, 1229, 1198, 568, 7308, 12, 504, 5736, 6718, 1237, 2]
 // Exports: explicitContentFromProto, explicitContentToProto, goreContentFromProto, goreContentToProto
 
-// Module 2021 (UserSettings)
+// Module 2027 (UserSettings)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
-import shallowEqualDefault from "shallowEqual" /* 558 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import wrappers from "wrappers" /* 1217 */;
-import GuildThemeSourcePreferenceUtils from "GuildThemeSourcePreferenceUtils" /* 1225 */;
-import StickersConstants from "StickersConstants" /* 2024 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5735 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6717 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7304 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2022 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 2023 */;
-import Constants from "Constants" /* 1074 */;
-import UserSettingDefinitions_mod from "UserSettingDefinitions" /* 2025 */;
+import shallowEqualDefault from "shallowEqual" /* 568 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
+import wrappers from "wrappers" /* 1229 */;
+import GuildThemeSourcePreferenceUtils from "GuildThemeSourcePreferenceUtils" /* 1237 */;
+import StickersConstants from "StickersConstants" /* 2030 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5736 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6718 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7308 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2028 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 2029 */;
+import Constants from "Constants" /* 1086 */;
+import UserSettingDefinitions_mod from "UserSettingDefinitions" /* 2031 */;
 import "UserSettingDefinitions";
 import size from "module_2" /* 2 */;
 
@@ -1632,9 +1632,9 @@ UserSettingDefinitions = UserSettingDefinitions_mod;
 const defineProtoSettingResult96 = UserSettingDefinitions.defineProtoSetting("appearance", "uiDensity", (arg0) => {
   let DEFAULT = arg0;
   if (arg0 === preloaded_user_settings.UIDensity.UNSET_UI_DENSITY) {
-    DEFAULT = tmp(1186).UIDensity.DEFAULT;
+    DEFAULT = tmp(1198).UIDensity.DEFAULT;
   } else if (DEFAULT == null) {
-    DEFAULT = tmp(1186).UIDensity.DEFAULT;
+    DEFAULT = tmp(1198).UIDensity.DEFAULT;
   }
   return DEFAULT;
 }, (arg0) => arg0);

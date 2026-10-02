@@ -1,14 +1,14 @@
-// Module ID: 15643
-// Function ID: 15644
+// Module ID: 15644
+// Function ID: 15645
 // Name: getJankSurfaceName
-// Dependencies: [15639, 15638, 4695, 15642, 2]
+// Dependencies: [15640, 15639, 4697, 15643, 2]
 // Exports: composeJankSurfaceName, getJankSurfaceName, recordJankChannelDetailsOpen, setJankChannelDetailsOpen
 
-// Module 15643 (getJankSurfaceName)
-import useChatLayout from "useChatLayout" /* 4695 */;
-import getJankScreenName from "getJankScreenName" /* 15638 */;
-import react_nativeDefault from "react-native" /* 15642 */;
-import JankScreenConstants from "JankScreenConstants" /* 15639 */;
+// Module 15644 (getJankSurfaceName)
+import useChatLayout from "useChatLayout" /* 4697 */;
+import getJankScreenName from "getJankScreenName" /* 15639 */;
+import react_nativeDefault from "react-native" /* 15643 */;
+import JankScreenConstants from "JankScreenConstants" /* 15640 */;
 import size from "module_2" /* 2 */;
 
 let c3;

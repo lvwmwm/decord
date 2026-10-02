@@ -1,11 +1,11 @@
-// Module ID: 6529
-// Function ID: 6530
+// Module ID: 6530
+// Function ID: 6531
 // Name: ConnectedAppsStore
-// Dependencies: [504, 12, 573, 2]
+// Dependencies: [504, 12, 585, 2]
 
-// Module 6529 (ConnectedAppsStore)
+// Module 6530 (ConnectedAppsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

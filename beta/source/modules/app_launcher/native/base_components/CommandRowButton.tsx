@@ -1,35 +1,69 @@
-// Module ID: 11587
-// Function ID: 11588
+// Module ID: 11473
+// Function ID: 11474
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 11510, 8590, 11475, 6943, 5924, 5281, 1115, 4777, 2]
-// Exports: default, useCommandRowSend
+// Dependencies: [5, 32, 19, 21, 11386, 8587, 11351, 6947, 558, 576, 5923, 5282, 1127, 4778, 2]
+// Exports: useCommandRowSend
 
-// Module 11587 (CommandRowButton)
+// Module 11473 (CommandRowButton)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1115 */;
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c4, closure_2;
 
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/CommandRowButton.tsx");
-
-export default function CommandRowIcon(hasOptions) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let hasOptions;
+  let intl;
+  let onPressSend;
+  let sending;
+  let tmp5Result;
+  const obj = react2;
+  const cResult = obj.c(4);
+  ({ hasOptions, sending, onPressSend } = arg0);
+  if (cResult[0] === hasOptions) {
+    if (cResult[1] === onPressSend) {
+      let tmp4;
+      if (cResult[2] === sending) {
+        tmp4 = cResult[3];
+      }
+      return tmp4;
+    }
+  }
+  if (hasOptions) {
+    tmp5Result = tmp5(tmp(5923).TableRowArrow, {});
+  } else {
+    const obj2 = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: onPressSend, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: sending };
+    const Button = tmp(5282).Button;
+    intl = tmp(1127).intl;
+    tmp5Result = tmp5(Button, obj2);
+  }
+  cResult[0] = hasOptions;
+  cResult[1] = onPressSend;
+  cResult[2] = sending;
+  cResult[3] = tmp5Result;
+  tmp4 = tmp5Result;
+}) : ((hasOptions) => {
   let intl;
   let tmp3Result;
   if (hasOptions.hasOptions) {
-    tmp3Result = tmp3(tmp4(5924).TableRowArrow, {});
+    tmp3Result = tmp3(tmp4(5923).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: tmp2, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: tmp };
-    const Button = tmp4(5281).Button;
-    intl = tmp4(1115).intl;
+    const Button = tmp4(5282).Button;
+    intl = tmp4(1127).intl;
     tmp3Result = tmp3(Button, obj);
   }
   return tmp3Result;
-};
+});
+const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/CommandRowButton.tsx");
+
+export default tmp2;
 export const useCommandRowSend = function useCommandRowSend(command) {
   let items1;
   command = command.command;
@@ -66,7 +100,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -115,7 +149,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
           c3 = 0;
           closure_128_5(false);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp25) {
         closure_2 = tmp25;

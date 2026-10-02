@@ -1,14 +1,14 @@
-// Module ID: 15617
-// Function ID: 15618
+// Module ID: 15619
+// Function ID: 15620
 // Name: RemoteAuthUtils
-// Dependencies: [32, 5, 1386, 15615, 2]
+// Dependencies: [32, 5, 1392, 15617, 2]
 // Exports: base64Decode, base64Encode, decodeEncodedUserRecord
 
-// Module 15617 (RemoteAuthUtils)
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 15615 */;
+// Module 15619 (RemoteAuthUtils)
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 15617 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRecord from "UserRecord" /* 1386 */;
+import UserRecord from "UserRecord" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -29,7 +29,7 @@ let obj = function _decodeEncodedUserRecord() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -118,6 +118,6 @@ export const base64Encode = function base64Encode(arg0) {
   const str3 = str2.replace(/\+/g, "-");
   return str3.replace(/={1,2}$/, "");
 };
-export const base64Decode = function base64Decode(match) {
-  return Uint8Array.from(atob(match), (str) => str.charCodeAt(0));
+export const base64Decode = function base64Decode(placeholder) {
+  return Uint8Array.from(atob(placeholder), (str) => str.charCodeAt(0));
 };

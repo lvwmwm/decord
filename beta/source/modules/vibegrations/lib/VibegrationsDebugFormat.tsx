@@ -1,10 +1,10 @@
-// Module ID: 16411
-// Function ID: 16412
+// Module ID: 16413
+// Function ID: 16414
 // Name: VibegrationsDebugFormat
 // Dependencies: [2]
 // Exports: debugLogEnv, formatBytes, formatClockTime, formatCount, formatMs, formatObservedAt, shortBuildLabel
 
-// Module 16411 (VibegrationsDebugFormat)
+// Module 16413 (VibegrationsDebugFormat)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsDebugFormat.tsx");
@@ -134,10 +134,10 @@ export const formatClockTime = function formatClockTime(arg0) {
   }
   return combined;
 };
-export const formatObservedAt = function formatObservedAt(observedAt) {
-  const date = new Date(observedAt);
+export const formatObservedAt = function formatObservedAt(since) {
+  const date = new Date(since);
   if (Number.isNaN(date.getTime())) {
-    return observedAt;
+    return since;
   } else {
     const _Date = Date;
     const self = this;

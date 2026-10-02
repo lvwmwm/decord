@@ -1,36 +1,292 @@
-// Module ID: 17622
-// Function ID: 17623
+// Module ID: 17624
+// Function ID: 17625
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 2045, 9276, 2067, 4469, 1074, 21, 4836, 576, 1485, 504, 38, 12, 17623, 9281, 5203, 1115, 5298, 573, 6795, 8053, 17624, 9277, 1249, 5936, 6421, 2]
-// Exports: default
+// Dependencies: [32, 19, 2051, 9254, 2073, 4472, 1086, 21, 4837, 588, 558, 576, 1491, 38, 504, 12, 17625, 9259, 5204, 1127, 585, 5297, 6796, 17626, 9255, 8057, 1261, 5933, 6421, 2]
 
-// Module 17622 (InviteSettingsModal)
+// Module 17624 (InviteSettingsModal)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import intl3 from "intl" /* 1115 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import NavigatorHeader from "NavigatorHeader" /* 5936 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl3 from "intl" /* 1127 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
+import NavigatorHeader from "NavigatorHeader" /* 5933 */;
 import Navigator from "Navigator" /* 6421 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 9281 */;
-import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 17623 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 9259 */;
+import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 17625 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9276 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import Constants from "Constants" /* 1074 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9254 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, getGuild, navigation;
+const require = globalThis.__r;
+let dependencyMap, getGuild, navigation, setOptionsResult;
 
 let c10;
 let c9;
 let obj2;
 let obj3;
-function AdvancedInstantInviteScreen() {
+function render() {
+  return closure_1_11(closure_1_13, {});
+}
+({ InviteModalScenes: c9, Permissions: c10 } = Constants);
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { formContainer: obj2, formContent: obj3 };
+obj2 = { paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 };
+createStyles = createStyles.createStyles;
+obj3 = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
+let closure_12 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let channel;
+  let closure_2;
+  let inviteSettings;
+  let settings;
+  let tmp6;
+  let tmp7;
+  let tmp = navigation;
+  let obj = navigation(576);
+  const cResult = obj.c(33);
+  const tmp4 = closure_12();
+  let obj2 = navigation(1491);
+  navigation = obj2.useNavigation();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore, , ];
+    items[1] = CreateInviteModalStore;
+    items[2] = GuildStore;
+    const fn = function f() {
+      const pendingSettings = CreateInviteModalStore.getPendingSettings();
+      channel(closure_2[13])(null != pendingSettings, "Received null pending invite settings");
+      const inviteSettings = CreateInviteModalStore.getInviteSettings();
+      channel(closure_2[13])(null != inviteSettings, "Received null invite settings");
+      channel = channel.getChannel(pendingSettings.channelId);
+      let guildId;
+      getGuild = getGuild.getGuild;
+      if (channel != null) {
+        guildId = channel.getGuildId();
+      }
+      const obj = { settings: pendingSettings, inviteSettings, channel, guild: getGuild(guildId) };
+      return obj;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp6, tmp7);
+  ({ settings, inviteSettings, channel } = stateFromStoresObject);
+  let obj4 = react;
+  const tmp12 = G(react.useState(channel), 2);
+  const first = tmp12[0];
+  let tmp15 = null != channel;
+  const tmp14 = tmp12[1];
+  if (tmp15) {
+    tmp15 = channel !== first;
+  }
+  if (tmp15) {
+    tmp14(channel);
+  }
+  if (cResult[2] === inviteSettings) {
+    let tmp17;
+    let tmp21;
+    let tmp20;
+    let tmp23;
+    if (cResult[3] === settings) {
+      tmp17 = cResult[4];
+    }
+    dependencyMap = tmp19;
+    if (cResult[5] !== channel) {
+      class D {
+        constructor() {
+          let intl;
+          let intl2;
+          if (null == channel) {
+            const guildId = CreateInviteModalStore.getGuildId();
+            let invitableChannelForGuild = null;
+            if (null != guildId) {
+              const obj = CreateInstantInviteUtils;
+              invitableChannelForGuild = obj.getInvitableChannelForGuild(guildId);
+            }
+            if (null != invitableChannelForGuild) {
+              const obj3 = { channelId: invitableChannelForGuild.channel.id };
+              const obj2 = CreateInviteModalActionCreatorsDefault;
+              obj2.updateSettings(obj3);
+            } else {
+              const obj4 = { title: intl.string(intl3.t.VINpSK), body: intl2.string(intl3.t.kQ6fit), onConfirm: CreateInviteModalActionCreatorsDefault.close, isDismissable: false };
+              const show = AlertActionCreatorsDefault.show;
+              AlertActionCreatorsDefault;
+              intl = intl3.intl;
+              intl2 = intl3.intl;
+              show(obj4);
+            }
+          }
+        }
+      }
+      const items1 = [channel];
+      cResult[5] = channel;
+      cResult[6] = D;
+      cResult[7] = items1;
+      tmp21 = items1;
+      tmp20 = D;
+    } else {
+      class D {
+        constructor() {
+          let intl;
+          let intl2;
+          if (null == channel) {
+            const guildId = CreateInviteModalStore.getGuildId();
+            let invitableChannelForGuild = null;
+            if (null != guildId) {
+              const obj = CreateInstantInviteUtils;
+              invitableChannelForGuild = obj.getInvitableChannelForGuild(guildId);
+            }
+            if (null != invitableChannelForGuild) {
+              const obj3 = { channelId: invitableChannelForGuild.channel.id };
+              const obj2 = CreateInviteModalActionCreatorsDefault;
+              obj2.updateSettings(obj3);
+            } else {
+              const obj4 = { title: intl.string(intl3.t.VINpSK), body: intl2.string(intl3.t.kQ6fit), onConfirm: CreateInviteModalActionCreatorsDefault.close, isDismissable: false };
+              const show = AlertActionCreatorsDefault.show;
+              AlertActionCreatorsDefault;
+              intl = intl3.intl;
+              intl2 = intl3.intl;
+              show(obj4);
+            }
+          }
+        }
+      }
+      tmp21 = cResult[7];
+    }
+    const effect = obj4.useEffect(tmp20, tmp21);
+    const _Symbol = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      class V {
+        constructor() {
+          const obj = channel(closure_2[20]);
+          obj.wait(channel(closure_2[17]).resetSettings);
+        }
+      }
+      cResult[8] = V;
+      tmp23 = V;
+    } else {
+      class V {
+        constructor() {
+          const obj = channel(closure_2[20]);
+          obj.wait(channel(closure_2[17]).resetSettings);
+        }
+      }
+    }
+    const tmpResult3 = tmp(5297);
+    const unmountEffect = tmpResult3.useUnmountEffect(tmp23);
+    if (cResult[9] !== channel) {
+      class G {
+        constructor() {
+          let intl;
+          let intl2;
+          if (null != channel) {
+            if (PermissionStore.can(constants.CREATE_INSTANT_INVITE, tmp)) {
+              const obj2 = CreateInviteModalActionCreatorsDefault;
+              const invite = obj2.createInvite("IOS Regenerate");
+              const obj3 = CreateInviteModalActionCreatorsDefault;
+              obj3.close();
+            }
+          }
+          const obj = { title: intl.string(intl3.t.VINpSK), body: intl2.string(intl3.t.RiiKV0), onConfirm: CreateInviteModalActionCreatorsDefault.close, isDismissable: false };
+          const show = AlertActionCreatorsDefault.show;
+          AlertActionCreatorsDefault;
+          intl = intl3.intl;
+          intl2 = intl3.intl;
+          show(obj);
+        }
+      }
+      cResult[9] = channel;
+      cResult[10] = G;
+    } else {
+      class G {
+        constructor() {
+          let intl;
+          let intl2;
+          if (null != channel) {
+            if (PermissionStore.can(constants.CREATE_INSTANT_INVITE, tmp)) {
+              const obj2 = CreateInviteModalActionCreatorsDefault;
+              const invite = obj2.createInvite("IOS Regenerate");
+              const obj3 = CreateInviteModalActionCreatorsDefault;
+              obj3.close();
+            }
+          }
+          const obj = { title: intl.string(intl3.t.VINpSK), body: intl2.string(intl3.t.RiiKV0), onConfirm: CreateInviteModalActionCreatorsDefault.close, isDismissable: false };
+          const show = AlertActionCreatorsDefault.show;
+          AlertActionCreatorsDefault;
+          intl = intl3.intl;
+          intl2 = intl3.intl;
+          show(obj);
+        }
+      }
+    }
+    G = tmp25;
+    if (cResult[11] === !tmp17) {
+      class G {
+        constructor() {
+          let intl;
+          let intl2;
+          if (null != channel) {
+            if (PermissionStore.can(constants.CREATE_INSTANT_INVITE, tmp)) {
+              const obj2 = CreateInviteModalActionCreatorsDefault;
+              const invite = obj2.createInvite("IOS Regenerate");
+              const obj3 = CreateInviteModalActionCreatorsDefault;
+              obj3.close();
+            }
+          }
+          const obj = { title: intl.string(intl3.t.VINpSK), body: intl2.string(intl3.t.RiiKV0), onConfirm: CreateInviteModalActionCreatorsDefault.close, isDismissable: false };
+          const show = AlertActionCreatorsDefault.show;
+          AlertActionCreatorsDefault;
+          intl = intl3.intl;
+          intl2 = intl3.intl;
+          show(obj);
+        }
+      }
+    }
+    class M {
+      constructor() {
+        obj = {
+          headerRight() {
+                  let tmp;
+                  if (closure_1_2) {
+                    const HeaderActionButton = navigation(closure_2[22]).HeaderActionButton;
+                    const intl = navigation(closure_2[19]).intl;
+                    tmp = <HeaderActionButton onPress={onPress} text={intl.string(navigation(closure_2[19]).t["R3BPH+"])} />;
+                  }
+                  return tmp;
+                }
+        };
+        setOptionsResult = closure_0.setOptions(obj);
+        return;
+      }
+    }
+    const items2 = [navigation, !tmp17, tmp25];
+    cResult[11] = !tmp17;
+    cResult[12] = tmp25;
+    cResult[13] = navigation;
+    cResult[14] = M;
+    cResult[15] = items2;
+  }
+  const tmpResult4 = tmp(12);
+  const isEqualResult = tmpResult4.isEqual(settings, inviteSettings);
+  cResult[2] = inviteSettings;
+  cResult[3] = settings;
+  cResult[4] = isEqualResult;
+  tmp17 = isEqualResult;
+}) : (() => {
   let callback;
   let channel;
   let closure_2;
@@ -38,15 +294,15 @@ function AdvancedInstantInviteScreen() {
   let inviteSettings;
   let settings;
   let tmp = closure_12();
-  let obj = navigation(1485);
+  let obj = navigation(1491);
   navigation = obj.useNavigation();
   let obj2 = navigation(504);
   const items = [ChannelStore, CreateInviteModalStore, GuildStore];
   const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
     const pendingSettings = CreateInviteModalStore.getPendingSettings();
-    channel(closure_2[12])(null != pendingSettings, "Received null pending invite settings");
+    channel(closure_2[13])(null != pendingSettings, "Received null pending invite settings");
     const inviteSettings = CreateInviteModalStore.getInviteSettings();
-    channel(closure_2[12])(null != inviteSettings, "Received null invite settings");
+    channel(closure_2[13])(null != inviteSettings, "Received null invite settings");
     channel = channel.getChannel(pendingSettings.channelId);
     let guildId;
     getGuild = getGuild.getGuild;
@@ -97,10 +353,10 @@ function AdvancedInstantInviteScreen() {
       }
     }
   }, items1);
-  const tmp2Result2 = navigation(5298);
+  const tmp2Result2 = navigation(5297);
   const unmountEffect = tmp2Result2.useUnmountEffect(() => {
-    const obj = channel(closure_2[19]);
-    obj.wait(channel(closure_2[15]).resetSettings);
+    const obj = channel(closure_2[20]);
+    obj.wait(channel(closure_2[17]).resetSettings);
   });
   const items2 = [channel];
   callback = obj3.useCallback(() => {
@@ -128,9 +384,9 @@ function AdvancedInstantInviteScreen() {
       headerRight() {
         let tmp;
         if (closure_1_2) {
-          const HeaderActionButton = navigation(closure_2[20]).HeaderActionButton;
-          const intl = navigation(closure_2[17]).intl;
-          tmp = <HeaderActionButton onPress={onPress} text={intl.string(navigation(closure_2[17]).t["R3BPH+"])} />;
+          const HeaderActionButton = navigation(closure_2[22]).HeaderActionButton;
+          const intl = navigation(closure_2[19]).intl;
+          tmp = <HeaderActionButton onPress={onPress} text={intl.string(navigation(closure_2[19]).t["R3BPH+"])} />;
         }
         return tmp;
       }
@@ -138,64 +394,78 @@ function AdvancedInstantInviteScreen() {
     navigation.setOptions(obj);
   }, items3);
   const callback1 = obj3.useCallback((maxUses) => {
-    const obj = channel(closure_2[15]);
+    const obj = channel(closure_2[17]);
     const obj2 = { maxUses };
     obj.updateSettings(obj2);
   }, []);
   const callback2 = obj3.useCallback((maxAge) => {
-    const obj = channel(closure_2[15]);
+    const obj = channel(closure_2[17]);
     const obj2 = { maxAge };
     obj.updateSettings(obj2);
   }, []);
   const callback3 = obj3.useCallback((temporary) => {
-    const obj = channel(closure_2[15]);
+    const obj = channel(closure_2[17]);
     const obj2 = { temporary };
     obj.updateSettings(obj2);
   }, []);
   const callback4 = obj3.useCallback((flags) => {
-    const obj = channel(closure_2[15]);
+    const obj = channel(closure_2[17]);
     const obj2 = { flags };
     obj.updateSettings(obj2);
   }, []);
   const callback5 = obj3.useCallback((roleIds) => {
-    const obj = channel(closure_2[15]);
+    const obj = channel(closure_2[17]);
     const obj2 = { roleIds };
     obj.updateSettings(obj2);
   }, []);
-  const Form = tmp2(8053).Form;
-  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(9277).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
-  channel(17624);
+  const Form = tmp2(8057).Form;
+  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(9255).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
+  channel(17626);
   ({ temporary: obj7.temporary, flags: obj7.flags, roleIds: obj7.roleIds } = settings);
   return <Form contentContainerStyle={tmp.formContainer}>{null}</Form>;
-}
-({ InviteModalScenes: c9, Permissions: c10 } = Constants);
-const jsx = Fragment.jsx;
-let createStyles = createStyles_mod;
-let obj = { formContainer: obj2, formContent: obj3 };
-obj2 = { paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 };
-createStyles = createStyles.createStyles;
-obj3 = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
-let closure_12 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/guild_invite/native/InviteSettingsModal.tsx");
-
-export default function InviteSettingsModal() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  let tmp7;
+  let tmpResult;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = {};
+    const ADVANCED = constants.ADVANCED;
+    const obj3 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_INVITE_LINK_SETTINGS, title: intl.string(intl3.t.Yx4IiC), headerLeft: tmpResult.getHeaderCloseButton(CreateInviteModalActionCreatorsDefault.close), render };
+    intl = tmp(1127).intl;
+    obj2[ADVANCED] = obj3;
+    cResult[0] = obj2;
+    first = obj2;
+    tmpResult = NavigatorHeader;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp10 = jsx(Navigator.Navigator, { screens: first, initialRouteName: constants.ADVANCED });
+    cResult[1] = tmp10;
+    tmp7 = tmp10;
+  } else {
+    tmp7 = cResult[1];
+  }
+  return tmp7;
+}) : (() => {
   const memo = react.useMemo(() => {
     let intl;
     let obj3;
     const obj = {};
     const ADVANCED = constants.ADVANCED;
-    const obj2 = {
-      impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_INVITE_LINK_SETTINGS,
-      title: intl.string(intl3.t.Yx4IiC),
-      headerLeft: obj3.getHeaderCloseButton(CreateInviteModalActionCreatorsDefault.close),
-      render() {
-        return closure_1_11(closure_1_13, {});
-      }
-    };
-    intl = intl3.intl;
+    const obj2 = { impressionName: require("discord_common/AnalyticsUtils").ImpressionNames.GUILD_INVITE_LINK_SETTINGS, title: intl.string(require("intl").t.Yx4IiC), headerLeft: obj3.getHeaderCloseButton(CreateInviteModalActionCreatorsDefault.close), render };
+    intl = require("intl").intl;
     obj[ADVANCED] = obj2;
-    obj3 = NavigatorHeader;
+    obj3 = require("NavigatorHeader");
     return obj;
   }, []);
   return jsx(Navigator.Navigator, { screens: memo, initialRouteName: constants.ADVANCED });
-};
+});
+const result = size.fileFinishedImporting("modules/guild_invite/native/InviteSettingsModal.tsx");
+
+export default tmp4;

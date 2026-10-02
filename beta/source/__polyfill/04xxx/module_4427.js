@@ -1,106 +1,49 @@
 // Module ID: 4427
 // Function ID: 4428
-// Dependencies: [4421]
+// Dependencies: [4424]
 
 // Module 4427
-import _mod4421 from "module_4421" /* 4421 */;
+import _mod4424 from "module_4424" /* 4424 */;
 
-const fn = function n(moment) {
-  let obj2;
-  let closure_0 = "ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.".split("_");
-  let closure_1 = "ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic".split("_");
-  const items = [/^ene/i, /^feb/i, /^mar/i, /^abr/i, /^may/i, /^jun/i, /^jul/i, /^ago/i, /^sep/i, /^oct/i, /^nov/i, /^dic/i];
-  let tmp = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
-  let obj = {
-    months: "enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre".split("_"),
-    monthsShort(arg0, arg1) {
-      let tmp2;
-      const tmp = arg0;
-      if (tmp) {
-        let tmp5;
-        const obj = /-MMM-/;
-        if (obj.test(arg1)) {
-          tmp5 = closure_1[arg0.month(arg0)];
-        } else {
-          tmp5 = closure_0[arg0.month(arg0)];
-        }
-        tmp2 = tmp5;
-      } else {
-        tmp2 = closure_0;
-      }
-      return tmp2;
-    },
-    monthsRegex: tmp,
-    monthsShortRegex: tmp,
-    monthsStrictRegex: /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)/i,
-    monthsShortStrictRegex: /^(ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i,
-    monthsParse: items,
-    longMonthsParse: items,
-    shortMonthsParse: items,
-    weekdays: "domingo_lunes_martes_mi\u00E9rcoles_jueves_viernes_s\u00E1bado".split("_"),
-    weekdaysShort: "dom._lun._mar._mi\u00E9._jue._vie._s\u00E1b.".split("_"),
-    weekdaysMin: "do_lu_ma_mi_ju_vi_s\u00E1".split("_"),
-    weekdaysParseExact: true,
-    longDateFormat: { LT: "H:mm", LTS: "H:mm:ss", L: "DD/MM/YYYY", LL: "D [de] MMMM [de] YYYY", LLL: "D [de] MMMM [de] YYYY H:mm", LLLL: "dddd, D [de] MMMM [de] YYYY H:mm" },
-    calendar: obj2,
-    relativeTime: { future: "en %s", past: "hace %s", s: "unos segundos", ss: "%d segundos", m: "un minuto", mm: "%d minutos", h: "una hora", hh: "%d horas", d: "un d\u00EDa", dd: "%d d\u00EDas", w: "una semana", ww: "%d semanas", M: "un mes", MM: "%d meses", y: "un a\u00F1o", yy: "%d a\u00F1os" },
-    dayOfMonthOrdinalParse: /\d{1,2}º/,
-    ordinal: "%d\u00BA",
-    week: { dow: 1, doy: 4 },
-    invalidDate: "Fecha inv\u00E1lida"
-  };
-  obj2 = {
-    sameDay() {
-      let str = "";
-      if (1 !== this.hours()) {
-        str = "s";
-      }
-      return "[hoy a la" + str + "] LT";
-    },
-    nextDay() {
-      let str = "";
-      if (1 !== this.hours()) {
-        str = "s";
-      }
-      return "[ma\u00F1ana a la" + str + "] LT";
-    },
-    nextWeek() {
-      let str = "";
-      if (1 !== this.hours()) {
-        str = "s";
-      }
-      return "dddd [a la" + str + "] LT";
-    },
-    lastDay() {
-      let str = "";
-      if (1 !== this.hours()) {
-        str = "s";
-      }
-      return "[ayer a la" + str + "] LT";
-    },
-    lastWeek() {
-      let str = "";
-      if (1 !== this.hours()) {
-        str = "s";
-      }
-      return "[el] dddd [pasado a la" + str + "] LT";
-    },
-    sameElse: "L"
-  };
-  return moment.defineLocale("es", obj);
+let obj3;
+const processRelativeTime3 = function processRelativeTime(arg0, arg1, arg2, arg3) {
+  let items;
+  let items1;
+  let items2;
+  const obj = { m: ["eine Minute", "einer Minute"], h: ["eine Stunde", "einer Stunde"], d: ["ein Tag", "einem Tag"], dd: items, w: ["eine Woche", "einer Woche"], M: ["ein Monat", "einem Monat"], MM: items1, y: ["ein Jahr", "einem Jahr"], yy: items2 };
+  items = [`${arg0} Tage`, `${arg0} Tagen`];
+  items1 = [`${arg0} Monate`, `${arg0} Monaten`];
+  items2 = [`${arg0} Jahre`, `${arg0} Jahren`];
+  return arg1 ? obj[arg2][0] : obj[arg2][1];
 };
 if (typeof exports === "object") {
   if (undefined !== module) {
-    let tmp = require;
     if (typeof require === "function") {
-      fn(_mod4421);
+      const _module = _mod4424;
+      const processRelativeTime2 = processRelativeTime3;
+      const split = "Januar_Februar_M\u00E4rz_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split;
+      const defineLocale = _module.defineLocale;
+      const split2 = "Jan._Feb._M\u00E4rz_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split;
+      const split3 = "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split;
+      const split4 = "So._Mo._Di._Mi._Do._Fr._Sa.".split;
+      const split5 = "So_Mo_Di_Mi_Do_Fr_Sa".split;
+      const obj2 = { months: "Januar_Februar_M\u00E4rz_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split("_"), monthsShort: "Jan._Feb._M\u00E4rz_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split("_"), monthsParseExact: true, weekdays: "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split("_"), weekdaysShort: "So._Mo._Di._Mi._Do._Fr._Sa.".split("_"), weekdaysMin: "So_Mo_Di_Mi_Do_Fr_Sa".split("_"), weekdaysParseExact: true, longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD.MM.YYYY", LL: "D. MMMM YYYY", LLL: "D. MMMM YYYY HH:mm", LLLL: "dddd, D. MMMM YYYY HH:mm" }, calendar: { sameDay: "[heute um] LT [Uhr]", sameElse: "L", nextDay: "[morgen um] LT [Uhr]", nextWeek: "dddd [um] LT [Uhr]", lastDay: "[gestern um] LT [Uhr]", lastWeek: "[letzten] dddd [um] LT [Uhr]" }, relativeTime: obj3, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { dow: 1, doy: 4 } };
+      obj3 = { future: "in %s", past: "vor %s", s: "ein paar Sekunden", ss: "%d Sekunden", m: processRelativeTime2, mm: "%d Minuten", h: processRelativeTime2, hh: "%d Stunden", d: processRelativeTime2, dd: processRelativeTime2, w: processRelativeTime2, ww: "%d Wochen", M: processRelativeTime2, MM: processRelativeTime2, y: processRelativeTime2, yy: processRelativeTime2 };
+      defineLocale("de", obj2);
     }
   }
 }
 if (typeof globalThis.define === "function") {
   const define2 = globalThis.define;
   if (globalThis.define.amd) {
-    globalThis.define(["../moment"], fn);
+    globalThis.define(["../moment"], function t(defineLocale) {
+      const processRelativeTime = processRelativeTime3;
+      let obj = { months: "Januar_Februar_M\u00E4rz_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split("_"), monthsShort: "Jan._Feb._M\u00E4rz_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split("_"), monthsParseExact: true, weekdays: "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split("_"), weekdaysShort: "So._Mo._Di._Mi._Do._Fr._Sa.".split("_"), weekdaysMin: "So_Mo_Di_Mi_Do_Fr_Sa".split("_"), weekdaysParseExact: true, longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD.MM.YYYY", LL: "D. MMMM YYYY", LLL: "D. MMMM YYYY HH:mm", LLLL: "dddd, D. MMMM YYYY HH:mm" }, calendar: { sameDay: "[heute um] LT [Uhr]", sameElse: "L", nextDay: "[morgen um] LT [Uhr]", nextWeek: "dddd [um] LT [Uhr]", lastDay: "[gestern um] LT [Uhr]", lastWeek: "[letzten] dddd [um] LT [Uhr]" }, relativeTime: { future: "in %s", past: "vor %s", s: "ein paar Sekunden", ss: "%d Sekunden", m: processRelativeTime, mm: "%d Minuten", h: processRelativeTime, hh: "%d Stunden", d: processRelativeTime, dd: processRelativeTime, w: processRelativeTime, ww: "%d Wochen", M: processRelativeTime, MM: processRelativeTime, y: processRelativeTime, yy: processRelativeTime }, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { dow: 1, doy: 4 } };
+      return defineLocale.defineLocale("de", obj);
+    });
   }
 }
-fn(this.moment);
+const moment = this.moment;
+let processRelativeTime = processRelativeTime3;
+let obj = { months: "Januar_Februar_M\u00E4rz_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split("_"), monthsShort: "Jan._Feb._M\u00E4rz_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split("_"), monthsParseExact: true, weekdays: "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split("_"), weekdaysShort: "So._Mo._Di._Mi._Do._Fr._Sa.".split("_"), weekdaysMin: "So_Mo_Di_Mi_Do_Fr_Sa".split("_"), weekdaysParseExact: true, longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD.MM.YYYY", LL: "D. MMMM YYYY", LLL: "D. MMMM YYYY HH:mm", LLLL: "dddd, D. MMMM YYYY HH:mm" }, calendar: { sameDay: "[heute um] LT [Uhr]", sameElse: "L", nextDay: "[morgen um] LT [Uhr]", nextWeek: "dddd [um] LT [Uhr]", lastDay: "[gestern um] LT [Uhr]", lastWeek: "[letzten] dddd [um] LT [Uhr]" }, relativeTime: { future: "in %s", past: "vor %s", s: "ein paar Sekunden", ss: "%d Sekunden", m: processRelativeTime, mm: "%d Minuten", h: processRelativeTime, hh: "%d Stunden", d: processRelativeTime, dd: processRelativeTime, w: processRelativeTime, ww: "%d Wochen", M: processRelativeTime, MM: processRelativeTime, y: processRelativeTime, yy: processRelativeTime }, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { dow: 1, doy: 4 } };
+moment.defineLocale("de", obj);

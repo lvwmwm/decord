@@ -1,20 +1,21 @@
-// Module ID: 13422
-// Function ID: 13423
+// Module ID: 13424
+// Function ID: 13425
 // Name: useDeviceCodeAuthorizeCallback
-// Dependencies: [5, 19, 13421, 5718, 8543, 38, 5719, 8523, 2]
-// Exports: useDeviceCodeAuthorizeCallback
+// Dependencies: [5, 19, 13423, 5719, 8540, 38, 5720, 8520, 558, 576, 2]
 
-// Module 13422 (useDeviceCodeAuthorizeCallback)
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5718 */;
-import oauth2_actions from "oauth2/actions" /* 8523 */;
-import TwoWayLinkType from "TwoWayLinkType" /* 8543 */;
-import ActivateDeviceUtils from "ActivateDeviceUtils" /* 13421 */;
+// Module 13424 (useDeviceCodeAuthorizeCallback)
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5719 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3, c7, closure_6, code, state;
+const require = globalThis.__r;
+let _require, c3, c7, closure_6, code, dependencyMap, state;
 
+function createTwoWayLink() {
+  return obj(...arguments);
+}
 let obj = function _createTwoWayLink() {
   obj = _asyncToGenerator(async (code, arg1, userCode) => {
     let closure_7;
@@ -33,7 +34,7 @@ let obj = function _createTwoWayLink() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -54,7 +55,7 @@ let obj = function _createTwoWayLink() {
               closure_1 = userCode;
               url = undefined;
               state = undefined;
-              const obj19 = ActivateDeviceUtils;
+              const obj19 = require("ActivateDeviceUtils");
               const result = obj19.clientIdToActivateDevicePlatform(code);
               c2 = result;
               if (null == result) {
@@ -65,7 +66,7 @@ let obj = function _createTwoWayLink() {
               } else {
                 url = null;
                 c8 = 1;
-                const obj5 = { twoWayLinkType: TwoWayLinkType.TwoWayLinkType.DEVICE_CODE, userCode };
+                const obj5 = { twoWayLinkType: require("TwoWayLinkType").TwoWayLinkType.DEVICE_CODE, userCode };
                 const authorize = ConnectedAccountsActionCreatorsDefault.authorize;
                 ConnectedAccountsActionCreatorsDefault;
                 c9 = 4;
@@ -91,7 +92,7 @@ let obj = function _createTwoWayLink() {
           } else if (2 === c9) {
             c8 = 0;
             code = undefined;
-            const tmp26 = closure_134_6;
+            const tmp26 = closure_134_7;
             const tmp27 = closure_1;
             if (tmp38 != null) {
               const body2 = tmp38.body;
@@ -111,7 +112,7 @@ let obj = function _createTwoWayLink() {
             c8 = 0;
             c9 = 6;
             c10 = 1;
-            const obj9 = { value: closure_134_6(closure_1, 2, "authorize"), done: false };
+            const obj9 = { value: closure_134_7(closure_1, 2, "authorize"), done: false };
             return obj9;
           } else if (4 === c9) {
             if (arg0 === 1) {
@@ -166,7 +167,7 @@ let obj = function _createTwoWayLink() {
           } else if (7 === c9) {
             c8 = 0;
             let code1;
-            const tmp10 = closure_134_6;
+            const tmp10 = closure_134_7;
             const tmp11 = closure_1;
             if (tmp38 != null) {
               const body = tmp38.body;
@@ -193,7 +194,7 @@ let obj = function _createTwoWayLink() {
             } else {
               c8 = 0;
               c10 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else if (arg0 === 1) {
             c10 = 3;
@@ -244,7 +245,7 @@ obj = function _silentlyFinishTwoWayLinkError() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -263,7 +264,7 @@ obj = function _silentlyFinishTwoWayLinkError() {
             c4 = 2;
             c3 = 1;
             const obj5 = { value: obj2.finishUserCodeTwoWayLinkError(closure_0, closure_1, closure_2), done: false };
-            obj2 = oauth2_actions;
+            obj2 = require("oauth2/actions");
             return obj5;
           }
         } else {
@@ -281,7 +282,7 @@ obj = function _silentlyFinishTwoWayLinkError() {
             c6 = 0;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp10) {
         let closure_5 = tmp10;
@@ -296,16 +297,26 @@ obj = function _silentlyFinishTwoWayLinkError() {
   });
   return obj(...arguments);
 };
-let result = size.fileFinishedImporting("modules/activate_device/useDeviceCodeAuthorizeCallback.tsx");
-
-export const useDeviceCodeAuthorizeCallback = function useDeviceCodeAuthorizeCallback(callback, callback2, callback1) {
-  let closure_1 = callback2;
-  let closure_2 = callback1;
-  const useCallback = react.useCallback;
-  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+  let closure_2;
+  _require = arg0;
+  let closure_1 = arg1;
+  dependencyMap = arg2;
+  obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === arg0) {
+    if (cResult[1] === arg1) {
+      let tmp2;
+      if (cResult[2] === arg2) {
+        tmp2 = cResult[3];
+      }
+      return tmp2;
+    }
+  }
+  _require = _asyncToGenerator(async (arg0, value) => {
     let obj4;
     closure_0 = arg0;
-    let closure_1 = value;
+    closure_1 = value;
     if (c7 === 2) {
       c7 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -316,12 +327,12 @@ export const useDeviceCodeAuthorizeCallback = function useDeviceCodeAuthorizeCal
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
       try {
-        let createTwoWayLink;
+        let twoWayLinkCode;
         c7 = 2;
         if (0 === c6) {
           if (arg0 === 1) {
@@ -333,22 +344,19 @@ export const useDeviceCodeAuthorizeCallback = function useDeviceCodeAuthorizeCal
             return obj3;
           } else {
             let closure_3 = tmp;
-            createTwoWayLink = closure_1;
-            if (createTwoWayLink) {
-              createTwoWayLink = tmp38.twoWayLinkCode;
-              if (null == createTwoWayLink) {
+            twoWayLinkCode = closure_1;
+            if (twoWayLinkCode) {
+              twoWayLinkCode = tmp39.twoWayLinkCode;
+              if (null == twoWayLinkCode) {
                 c5 = 2;
-                const obj7 = closure_0(callback1[7]);
-                createTwoWayLink = obj7.finishUserCode(tmp38.userCode, "granted");
+                const obj7 = closure_0(closure_2_2[7]);
+                twoWayLinkCode = obj7.finishUserCode(tmp39.userCode, "granted");
                 c6 = 4;
                 c7 = 1;
-                const obj5 = { value: createTwoWayLink, done: false };
+                const obj5 = { value: twoWayLinkCode, done: false };
                 return obj5;
               } else {
                 c5 = 3;
-                createTwoWayLink = function createTwoWayLink() {
-                  return closure_1_5(...arguments);
-                };
                 c6 = 5;
                 c7 = 1;
                 const obj6 = { value: createTwoWayLink(closure_0.clientId, closure_0.twoWayLinkCode, closure_0.userCode), done: false };
@@ -359,7 +367,7 @@ export const useDeviceCodeAuthorizeCallback = function useDeviceCodeAuthorizeCal
               c6 = 6;
               c7 = 1;
               const obj8 = { value: obj4.finishUserCode(closure_0.userCode, "denied"), done: false };
-              obj4 = closure_0(callback1[7]);
+              obj4 = closure_0(closure_2_2[7]);
               return obj8;
             }
           }
@@ -369,11 +377,11 @@ export const useDeviceCodeAuthorizeCallback = function useDeviceCodeAuthorizeCal
             closure_0();
           } else if (2 === c6) {
             c5 = 0;
-            createTwoWayLink = closure_1;
+            twoWayLinkCode = closure_1;
             closure_1(closure_0);
           } else if (3 === c6) {
             c5 = 0;
-            createTwoWayLink = closure_1;
+            twoWayLinkCode = closure_1;
             closure_1(closure_0);
           } else if (4 === c6) {
             if (arg0 === 1) {
@@ -385,7 +393,7 @@ export const useDeviceCodeAuthorizeCallback = function useDeviceCodeAuthorizeCal
               const obj9 = { value, done: true };
               return obj9;
             } else {
-              createTwoWayLink(closure_0);
+              twoWayLinkCode(closure_0);
               c5 = 0;
             }
           } else if (5 === c6) {
@@ -398,7 +406,7 @@ export const useDeviceCodeAuthorizeCallback = function useDeviceCodeAuthorizeCal
               const obj10 = { value, done: true };
               return obj10;
             } else {
-              createTwoWayLink(closure_0);
+              twoWayLinkCode(closure_0);
               c5 = 0;
             }
           } else if (arg0 === 1) {
@@ -413,13 +421,13 @@ export const useDeviceCodeAuthorizeCallback = function useDeviceCodeAuthorizeCal
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
-      } catch (tmp31) {
-        let closure_4 = tmp31;
+      } catch (tmp32) {
+        let closure_4 = tmp32;
         if (0 === c5) {
           c7 = 3;
-          throw tmp31;
+          throw tmp32;
         } else if (1 === c5) {
           c6 = 1;
         } else if (2 === c5) {
@@ -430,8 +438,148 @@ export const useDeviceCodeAuthorizeCallback = function useDeviceCodeAuthorizeCal
       }
     }
   });
-  const items = [callback, callback2, callback1];
+  const fn = function() {
+    return closure_0(...arguments);
+  };
+  cResult[0] = arg0;
+  cResult[1] = arg1;
+  cResult[2] = arg2;
+  cResult[3] = fn;
+  tmp2 = fn;
+}) : ((arg0, arg1, arg2) => {
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  const useCallback = react.useCallback;
+  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+    let obj4;
+    closure_0 = arg0;
+    closure_1 = value;
+    if (c7 === 2) {
+      c7 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c5;
+      try {
+        let twoWayLinkCode;
+        c7 = 2;
+        if (0 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_3 = tmp;
+            twoWayLinkCode = closure_1;
+            if (twoWayLinkCode) {
+              twoWayLinkCode = tmp39.twoWayLinkCode;
+              if (null == twoWayLinkCode) {
+                c5 = 2;
+                const obj7 = closure_0(closure_2_2[7]);
+                twoWayLinkCode = obj7.finishUserCode(tmp39.userCode, "granted");
+                c6 = 4;
+                c7 = 1;
+                const obj5 = { value: twoWayLinkCode, done: false };
+                return obj5;
+              } else {
+                c5 = 3;
+                c6 = 5;
+                c7 = 1;
+                const obj6 = { value: createTwoWayLink(closure_0.clientId, closure_0.twoWayLinkCode, closure_0.userCode), done: false };
+                return obj6;
+              }
+            } else {
+              c5 = 1;
+              c6 = 6;
+              c7 = 1;
+              const obj8 = { value: obj4.finishUserCode(closure_0.userCode, "denied"), done: false };
+              obj4 = closure_0(closure_2_2[7]);
+              return obj8;
+            }
+          }
+        } else {
+          if (1 === c6) {
+            c5 = 0;
+            closure_0();
+          } else if (2 === c6) {
+            c5 = 0;
+            twoWayLinkCode = closure_1;
+            closure_1(closure_0);
+          } else if (3 === c6) {
+            c5 = 0;
+            twoWayLinkCode = closure_1;
+            closure_1(closure_0);
+          } else if (4 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 0;
+              c7 = 3;
+              const obj9 = { value, done: true };
+              return obj9;
+            } else {
+              twoWayLinkCode(closure_0);
+              c5 = 0;
+            }
+          } else if (5 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 0;
+              c7 = 3;
+              const obj10 = { value, done: true };
+              return obj10;
+            } else {
+              twoWayLinkCode(closure_0);
+              c5 = 0;
+            }
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 0;
+            c7 = 3;
+            obj = { value, done: true };
+            return obj;
+          } else {
+            c5 = 0;
+          }
+          c7 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp32) {
+        let closure_4 = tmp32;
+        if (0 === c5) {
+          c7 = 3;
+          throw tmp32;
+        } else if (1 === c5) {
+          c6 = 1;
+        } else if (2 === c5) {
+          c6 = 2;
+        } else {
+          c6 = 3;
+        }
+      }
+    }
+  });
+  const items = [arg0, arg1, arg2];
   return useCallback(function() {
     return closure_0(...arguments);
   }, items);
-};
+});
+let result = size.fileFinishedImporting("modules/activate_device/useDeviceCodeAuthorizeCallback.tsx");
+
+export const useDeviceCodeAuthorizeCallback = tmp2;

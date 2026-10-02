@@ -1,10 +1,10 @@
 // Module ID: 12237
 // Function ID: 12238
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 12237 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 121, height: 80, scales: [1, 2, 3], hash: "dc39c8debe144867da8663a97ac0ae70", name: "link_expired_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "07392a850e043822a5c8062588fbfbb4", name: "WaveformIcon", type: "png" });

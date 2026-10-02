@@ -1,14 +1,14 @@
-// Module ID: 7042
-// Function ID: 7043
+// Module ID: 7046
+// Function ID: 7047
 // Name: WidgetActionCreators
-// Dependencies: [5, 1372, 1074, 573, 1271, 7043, 1231, 2]
+// Dependencies: [5, 1378, 1086, 585, 1283, 7047, 1243, 2]
 
-// Module 7042 (WidgetActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 7046 (WidgetActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 let c2, c6, c7, closure_4, constants, currentUser;
@@ -36,7 +36,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -74,7 +74,7 @@ let obj = {
                 return obj7;
               } else {
                 constants = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               }
             }
           } else if (1 === tmp4) {
@@ -131,7 +131,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -271,7 +271,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -362,7 +362,7 @@ let obj = {
               dispatch(obj10);
               c5 = 0;
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           }
         } catch (tmp39) {

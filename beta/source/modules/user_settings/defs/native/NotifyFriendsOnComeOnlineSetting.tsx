@@ -1,26 +1,26 @@
-// Module ID: 15529
-// Function ID: 15530
+// Module ID: 15517
+// Function ID: 15518
 // Name: NotifyFriendsOnComeOnlineSetting
-// Dependencies: [7417, 11006, 1115, 2653, 2021, 15055, 2]
+// Dependencies: [7421, 10874, 1127, 2656, 2027, 15043, 2]
 
-// Module 15529 (NotifyFriendsOnComeOnlineSetting)
-import intl2 from "intl" /* 1115 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import _modDef2653 from "module_2653" /* 2653 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import FriendOnlineNotificationUtils from "FriendOnlineNotificationUtils" /* 15055 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 15517 (NotifyFriendsOnComeOnlineSetting)
+import intl2 from "intl" /* 1127 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import _modDef2656 from "module_2656" /* 2656 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import FriendOnlineNotificationUtils from "FriendOnlineNotificationUtils" /* 15043 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2653.A0FVCV);
+    return intl.string(_modDef2656.A0FVCV);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef2653.vHX6RG);
+    return intl.string(_modDef2656.vHX6RG);
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: UserSettings.NotifyFriendsOnComeOnline.useSetting,

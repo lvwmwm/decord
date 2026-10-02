@@ -1,19 +1,21 @@
-// Module ID: 11895
-// Function ID: 11896
+// Module ID: 11789
+// Function ID: 11790
 // Name: GameMentionSearchBar
-// Dependencies: [19, 17, 21, 4836, 576, 11881, 8535, 4832, 1115, 8053, 2]
+// Dependencies: [19, 17, 21, 4837, 588, 11775, 558, 576, 8532, 4833, 1127, 8057, 2]
 
-// Module 11895 (GameMentionSearchBar)
+// Module 11789 (GameMentionSearchBar)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import Form from "Form" /* 8053 */;
-import GameControllerIcon from "GameControllerIcon" /* 8535 */;
-import useGameMentionSearchBarHeight from "useGameMentionSearchBarHeight" /* 11881 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import Form from "Form" /* 8057 */;
+import GameControllerIcon from "GameControllerIcon" /* 8532 */;
+import useGameMentionSearchBarHeight from "useGameMentionSearchBarHeight" /* 11775 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -32,7 +34,110 @@ obj3 = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, padd
 obj4 = { paddingHorizontal: 16, paddingBottom: useGameMentionSearchBarHeight.GAME_MENTION_SEARCH_BAR_DESCRIPTION_PADDING_BOTTOM };
 obj5 = { marginLeft: 0, backgroundColor: nativeDefault.colors.MOBILE_COMMAND_BAR_DIVIDER };
 let closure_5 = createStyles(obj);
-const memoResult = react.memo(function GameMentionSearchBar() {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let items;
+  let items1;
+  let items2;
+  let tmp5;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(18);
+  const tmp4 = closure_5();
+  const container = tmp4.container;
+  if (cResult[0] !== tmp4.icon) {
+    const obj2 = { size: "sm", style: tmp4.icon };
+    const tmp7 = _false(GameControllerIcon.GameControllerIcon, obj2);
+    cResult[0] = tmp4.icon;
+    cResult[1] = tmp7;
+    tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { variant: useGameMentionSearchBarHeight.GAME_MENTION_SEARCH_BAR_TITLE_VARIANT, color: "mobile-text-heading-primary", children: "@game" };
+    const Text = tmp(4833).Text;
+    const tmp10 = _false(Text, obj3);
+    cResult[2] = tmp10;
+    tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === tmp4.headerRow) {
+    let tmp11;
+    let tmp13;
+    let tmp15;
+    if (cResult[4] === tmp5) {
+      tmp11 = cResult[5];
+    }
+    const _Symbol = Symbol;
+    const description = tmp4.description;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(intl2.t["1kR88y"]);
+      cResult[6] = stringResult;
+      tmp13 = stringResult;
+    } else {
+      tmp13 = cResult[6];
+    }
+    if (cResult[7] !== tmp4.description) {
+      const obj4 = { style: description, variant: useGameMentionSearchBarHeight.GAME_MENTION_SEARCH_BAR_DESCRIPTION_VARIANT, color: "text-muted", children: tmp13 };
+      const Text2 = tmp(4833).Text;
+      const tmp17 = _false(Text2, obj4);
+      cResult[7] = tmp4.description;
+      cResult[8] = tmp17;
+      tmp15 = tmp17;
+    } else {
+      tmp15 = cResult[8];
+    }
+    if (cResult[9] === tmp11) {
+      let tmp18;
+      let tmp22;
+      if (cResult[10] === tmp15) {
+        tmp18 = cResult[11];
+      }
+      if (cResult[12] !== tmp4.divider) {
+        const obj5 = { style: tmp4.divider };
+        const tmp24 = _false(Form.FormDivider, obj5);
+        cResult[12] = tmp4.divider;
+        cResult[13] = tmp24;
+        tmp22 = tmp24;
+      } else {
+        tmp22 = cResult[13];
+      }
+      if (cResult[14] === tmp4.container) {
+        if (cResult[15] === tmp18) {
+          let tmp25;
+          if (cResult[16] === tmp22) {
+            tmp25 = cResult[17];
+          }
+          return tmp25;
+        }
+      }
+      const obj6 = { style: container, children: items };
+      items = [tmp18, tmp22];
+      const tmp28 = React3(View, obj6);
+      cResult[14] = tmp4.container;
+      cResult[15] = tmp18;
+      cResult[16] = tmp22;
+      cResult[17] = tmp28;
+      tmp25 = tmp28;
+    }
+    const obj7 = { accessible: true, accessibilityRole: "header", children: items1 };
+    items1 = [tmp11, tmp15];
+    const tmp21 = React3(View, obj7);
+    cResult[9] = tmp11;
+    cResult[10] = tmp15;
+    cResult[11] = tmp21;
+    tmp18 = tmp21;
+  }
+  const obj8 = { style: tmp4.headerRow, children: items2 };
+  items2 = [tmp5, tmp8];
+  const tmp12 = React3(View, obj8);
+  cResult[3] = tmp4.headerRow;
+  cResult[4] = tmp5;
+  cResult[5] = tmp12;
+  tmp11 = tmp12;
+}) : (() => {
   let intl;
   let items;
   let items1;
@@ -56,7 +161,7 @@ const memoResult = react.memo(function GameMentionSearchBar() {
   const obj7 = { style: tmp.divider };
   items2[1] = _false(Form.FormDivider, obj7);
   return React3(View, obj);
-});
+}));
 const result = size.fileFinishedImporting("modules/game_mentions/native/GameMentionSearchBar.tsx");
 
 export default memoResult;

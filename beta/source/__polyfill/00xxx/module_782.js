@@ -1,49 +1,27 @@
 // Module ID: 782
 // Function ID: 783
-// Dependencies: []
-// Exports: parseCookie
+// Dependencies: [781]
+// Exports: getTraceMetaTags
 
 // Module 782
+import _mod781 from "module_781" /* 781 */;
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const parseCookie = function parseCookie(arr) {
-  const obj = {};
-  let num = 0;
-  if (0 < arr.length) {
-    const index = arr.indexOf("=", num);
-    if (-1 !== index) {
-      let length = arr.indexOf(";", num);
-      if (-1 === length) {
-        length = arr.length;
-      } else {
-        let sum;
-        if (length < index) {
-          sum = arr.lastIndexOf(";", index - 1) + 1;
-        }
-        num = sum;
-      }
-      const str = arr.slice(num, index);
-      const trimmed = str.trim();
-      if (undefined === obj[trimmed]) {
-        const str2 = arr.slice(index + 1, length);
-        const trimmed1 = str2.trim();
-        let substr = trimmed1;
-        if (34 === trimmed1.charCodeAt(0)) {
-          substr = trimmed1.slice(1, -1);
-        }
-        try {
-          let decodeURIComponentResult = substr;
-          if (-1 !== substr.indexOf("%")) {
-            const _decodeURIComponent = decodeURIComponent;
-            decodeURIComponentResult = decodeURIComponent(substr);
-          }
-          obj[trimmed] = decodeURIComponentResult;
-        } catch (err) {
-          obj[trimmed] = substr;
-        }
-      }
-      sum = length + 1;
-    }
+export const getTraceMetaTags = function getTraceMetaTags(arg0) {
+  let traceData = arg0;
+  const _Object = Object;
+  if (!arg0) {
+    const tmp2 = require;
+    const obj = _mod781;
+    traceData = obj.getTraceData();
   }
-  return obj;
+  const entries1 = entries(traceData);
+  const mapped = entries1.map((item) => {
+    let tmp;
+    let tmp2;
+    [tmp, tmp2] = item;
+    return "<meta name=\"" + tmp + "\" content=\"" + tmp2 + "\"/>";
+  });
+  return mapped.join("\n");
 };

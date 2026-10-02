@@ -1,18 +1,21 @@
-// Module ID: 5902
-// Function ID: 5903
+// Module ID: 5899
+// Function ID: 5900
 // Name: GuildBadge
-// Dependencies: [19, 1074, 21, 5903, 5904, 5905, 5906, 2059, 1177, 2]
+// Dependencies: [109, 19, 1086, 21, 5900, 5901, 5902, 5903, 2065, 558, 576, 1189, 2]
 
-// Module 5902 (GuildBadge)
+// Module 5899 (GuildBadge)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1074 */;
-import native from "native" /* 1177 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5903 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 5904 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 5905 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 5906 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import native from "native" /* 1189 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2065 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5900 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 5901 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 5902 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 5903 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let PARTNERED;
@@ -81,33 +84,102 @@ function getGuildBadgeSource(guild, flag) {
   }
   return obj2[NONE];
 }
-class GuildBadge {
-  constructor(monocolored) {
-    let flag = monocolored.monocolored;
-    const guild = monocolored.guild;
-    if (flag === undefined) {
-      flag = false;
-    }
-    let MEDIUM = monocolored.size;
-    if (MEDIUM === undefined) {
-      MEDIUM = GuildBadge.Sizes.MEDIUM;
-    }
-    let tmp2 = null;
-    const merged = Object.assign(monocolored, Object.assign({ guild: 0, monocolored: 0, size: 0 }));
-    const tmp4 = getGuildBadgeSource(guild, flag);
-    if (null != tmp4) {
-      const Icon = native.Icon;
-      const merged1 = Object.assign(merged);
-      tmp2 = <Icon size={MEDIUM} source={tmp4} />;
-    }
-    return tmp2;
-  }
-}
+let closure_2 = ["guild", "monocolored", "size"];
 const GuildFeatures = Constants.GuildFeatures;
 const jsx = Fragment.jsx;
 let obj = { PARTNERED: 0, [0]: "PARTNERED", VERIFIED: 1, [1]: "VERIFIED", PARTNERED_BLACK: 2, [2]: "PARTNERED_BLACK", VERIFIED_BLACK: 3, [3]: "VERIFIED_BLACK", NONE: 4, [4]: "NONE" };
 let obj2 = { [VERIFIED]: AssetRegistryDefault, [PARTNERED]: AssetRegistryDefault2, [VERIFIED_BLACK]: AssetRegistryDefault3, [PARTNERED_BLACK]: AssetRegistryDefault4, [obj.NONE]: null };
 ({ VERIFIED, PARTNERED, VERIFIED_BLACK, PARTNERED_BLACK } = obj);
+if (ReactCompilerGating.isReactCompilerEnabled()) {
+  class GuildBadge {
+    constructor(arg0) {
+      let MEDIUM;
+      let guild;
+      let monocolored;
+      let tmp4;
+      let tmp5;
+      let tmp6;
+      obj = react2;
+      const cResult = obj.c(12);
+      if (cResult[0] !== arg0) {
+        ({ guild, monocolored, size } = arg0);
+        const tmp9 = _objectWithoutProperties(arg0, closure_2);
+        cResult[0] = arg0;
+        cResult[1] = guild;
+        cResult[2] = tmp9;
+        cResult[3] = monocolored;
+        cResult[4] = size;
+        MEDIUM = size;
+        tmp6 = monocolored;
+        tmp5 = tmp9;
+        tmp4 = guild;
+      } else {
+        tmp4 = cResult[1];
+        tmp5 = cResult[2];
+        tmp6 = cResult[3];
+        MEDIUM = cResult[4];
+      }
+      if (undefined === MEDIUM) {
+        MEDIUM = GuildBadge.Sizes.MEDIUM;
+      }
+      if (cResult[5] === tmp4) {
+        let tmp12;
+        if (cResult[6] === (undefined !== tmp6 && tmp6)) {
+          tmp12 = cResult[7];
+        }
+        let tmp14 = null;
+        if (null != tmp12) {
+          if (cResult[8] === tmp5) {
+            if (cResult[9] === MEDIUM) {
+              let tmp15;
+              if (cResult[10] === tmp12) {
+                tmp15 = cResult[11];
+              }
+              tmp14 = tmp15;
+            }
+          }
+          const Icon = native.Icon;
+          const merged = Object.assign(tmp5);
+          const tmp20 = <Icon size={MEDIUM} source={tmp12} />;
+          cResult[8] = tmp5;
+          cResult[9] = MEDIUM;
+          cResult[10] = tmp12;
+          cResult[11] = tmp20;
+          tmp15 = tmp20;
+        }
+        return tmp14;
+      }
+      const tmp13 = getGuildBadgeSource(tmp4, undefined !== tmp6 && tmp6);
+      cResult[5] = tmp4;
+      cResult[6] = undefined !== tmp6 && tmp6;
+      cResult[7] = tmp13;
+      tmp12 = tmp13;
+    }
+  }
+} else {
+  class GuildBadge {
+    constructor(monocolored) {
+      let flag = monocolored.monocolored;
+      const guild = monocolored.guild;
+      if (flag === undefined) {
+        flag = false;
+      }
+      let MEDIUM = monocolored.size;
+      if (MEDIUM === undefined) {
+        MEDIUM = GuildBadge.Sizes.MEDIUM;
+      }
+      let tmp2 = null;
+      const merged = Object.assign(monocolored, Object.assign({ guild: 0, monocolored: 0, size: 0 }));
+      const tmp4 = getGuildBadgeSource(guild, flag);
+      if (null != tmp4) {
+        const Icon = native.Icon;
+        const merged1 = Object.assign(merged);
+        tmp2 = <Icon size={MEDIUM} source={tmp4} />;
+      }
+      return tmp2;
+    }
+  }
+}
 GuildBadge.Sizes = native.Icon.Sizes;
 const result = size.fileFinishedImporting("modules/guild/native/GuildBadge.tsx");
 

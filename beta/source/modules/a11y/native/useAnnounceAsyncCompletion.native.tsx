@@ -1,18 +1,107 @@
-// Module ID: 10388
-// Function ID: 10389
+// Module ID: 10430
+// Function ID: 10431
 // Name: useAnnounceAsyncCompletion
-// Dependencies: [19, 17, 4685, 1364, 5266, 2]
-// Exports: default
+// Dependencies: [19, 17, 558, 576, 4687, 1370, 5267, 2]
 
-// Module 10388 (useAnnounceAsyncCompletion)
+// Module 10430 (useAnnounceAsyncCompletion)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const AccessibilityInfo = react_native.AccessibilityInfo;
-const result = size.fileFinishedImporting("modules/a11y/native/useAnnounceAsyncCompletion.native.tsx");
+const require = globalThis.__r;
+let _require;
 
-export default function useAnnounceAsyncCompletion() {
+const AccessibilityInfo = react_native.AccessibilityInfo;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp2;
+  let tmp3;
+  let tmp5;
+  let obj = require("react");
+  const cResult = obj.c(3);
+  _require = react.useRef(null);
+  const obj2 = react;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function c() {
+      return () => {
+        const current = ref.current;
+        const tmp = ref;
+        if (current != null) {
+          current();
+        }
+        tmp.current = null;
+      };
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp2 = fn;
+    tmp3 = items;
+  } else {
+    [tmp2, tmp3] = cResult;
+  }
+  const effect = obj2.useEffect(tmp2, tmp3);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function s(intl, polite) {
+      ref = intl;
+      let str = "assertive";
+      if (undefined !== polite) {
+        str = polite;
+      }
+      let tmp = ref;
+      const AccessibilityAnnouncer = ref(dependencyMap[4]).AccessibilityAnnouncer;
+      AccessibilityAnnouncer.announce(intl, str);
+      const obj = ref(dependencyMap[5]);
+      const tmp2 = dependencyMap;
+      if (obj.isIOS()) {
+        let resolved;
+        const tmpResult = tmp(tmp2[6]);
+        if (tmpResult.getIsScreenReaderEnabled()) {
+          let current = ref.current;
+          if (current != null) {
+            let currentResult = current();
+          }
+          const self = this;
+          const self2 = this;
+          resolved = new Promise((arg0) => {
+            let closure_1;
+            ref = arg0;
+            const timeout = setTimeout(() => {
+              const current = ref.current;
+              let currentResult;
+              if (current != null) {
+                currentResult = current();
+              }
+              return currentResult;
+            }, 1800);
+            let closure_2 = AccessibilityInfo.addEventListener("announcementFinished", (event) => {
+              const tmp = event.announcement === ref && event.success;
+              if (tmp) {
+                const current = ref.current;
+                if (current != null) {
+                  current();
+                }
+              }
+            });
+            ref.current = () => {
+              clearTimeout(closure_1);
+              closure_2.remove();
+              ref.current = null;
+              ref();
+            };
+          });
+        }
+        return resolved;
+      }
+      resolved = Promise.resolve();
+    };
+    cResult[2] = fn2;
+    tmp5 = fn2;
+  } else {
+    tmp5 = cResult[2];
+  }
+  return tmp5;
+}) : (() => {
   let ref = react.useRef(null);
   const effect = react.useEffect(() => () => {
     const current = ref.current;
@@ -29,13 +118,13 @@ export default function useAnnounceAsyncCompletion() {
       str = "assertive";
     }
     let tmp = ref;
-    const AccessibilityAnnouncer = ref(dependencyMap[2]).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = ref(dependencyMap[4]).AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(intl, str);
-    const obj = ref(dependencyMap[3]);
+    const obj = ref(dependencyMap[5]);
     const tmp2 = dependencyMap;
     if (obj.isIOS()) {
       let resolved;
-      const tmpResult = tmp(tmp2[4]);
+      const tmpResult = tmp(tmp2[6]);
       if (tmpResult.getIsScreenReaderEnabled()) {
         let current = ref.current;
         if (current != null) {
@@ -75,4 +164,7 @@ export default function useAnnounceAsyncCompletion() {
     }
     resolved = Promise.resolve();
   }, []);
-};
+});
+const result = size.fileFinishedImporting("modules/a11y/native/useAnnounceAsyncCompletion.native.tsx");
+
+export default tmp2;

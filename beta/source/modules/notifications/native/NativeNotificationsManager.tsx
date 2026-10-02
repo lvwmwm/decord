@@ -1,18 +1,18 @@
-// Module ID: 17634
-// Function ID: 17635
+// Module ID: 17636
+// Function ID: 17637
 // Name: NativeNotificationsManager
-// Dependencies: [5, 17, 7050, 4851, 1074, 3, 17635, 8746, 11, 6539, 1364, 7650, 1241, 2]
+// Dependencies: [5, 17, 7054, 4852, 1086, 3, 17637, 8741, 11, 6540, 1370, 7654, 1253, 2]
 
-// Module 17634 (NativeNotificationsManager)
+// Module 17636 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1074 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ClearChannelNotificationsOnAppForegroundExperiment from "ClearChannelNotificationsOnAppForegroundExperiment" /* 17635 */;
+import Constants from "Constants" /* 1086 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import ClearChannelNotificationsOnAppForegroundExperiment from "ClearChannelNotificationsOnAppForegroundExperiment" /* 17637 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7050 */;
-import ReadStateStore from "ReadStateStore" /* 4851 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7054 */;
+import ReadStateStore from "ReadStateStore" /* 4852 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c4, c5, closure_12, closure_3, constants, logger, map;
@@ -33,7 +33,7 @@ let obj = function _getDeliveredNotifications() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -69,7 +69,7 @@ let obj = function _getDeliveredNotifications() {
           closure_9 = value;
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp9) {
         c2 = 3;
         throw tmp9;
@@ -144,7 +144,7 @@ obj = function _updateAndClearStaleNotifications() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -175,7 +175,7 @@ obj = function _updateAndClearStaleNotifications() {
         } else {
           const tmp5 = clearStaleNotifications();
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp7) {
         c2 = 3;
@@ -224,7 +224,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp75;
@@ -284,7 +284,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     try {
@@ -411,7 +411,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                   if (null == PUSH_NOTIFICATION_RECEIVED) {
                     c6 = 0;
                     logger = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   } else {
                     const _Map = Map;
                     const self = this;
@@ -531,7 +531,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
               return obj14;
             }
             logger = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp75) {
           if (0 === c6) {

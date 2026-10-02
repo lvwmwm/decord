@@ -1,12 +1,12 @@
-// Module ID: 7187
-// Function ID: 7188
+// Module ID: 7191
+// Function ID: 7192
 // Name: ForumSearchStore
-// Dependencies: [2045, 504, 573, 2]
+// Dependencies: [2051, 504, 585, 2]
 
-// Module 7187 (ForumSearchStore)
+// Module 7191 (ForumSearchStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
 import size from "module_2" /* 2 */;
 
 let closure_1;
@@ -16,16 +16,16 @@ class ForumSearchStore extends Store {
   initialize() {
     this.waitFor(ChannelStore);
   }
-  getSearchQuery(id) {
+  getSearchQuery(channelId) {
     let query;
-    if (closure_1[id] != null) {
+    if (closure_1[channelId] != null) {
       query = tmp.query;
     }
     return query;
   }
-  getSearchLoading(id) {
+  getSearchLoading(channelId) {
     let flag;
-    if (closure_1[id] != null) {
+    if (closure_1[channelId] != null) {
       flag = tmp.loading;
     }
     if (flag == null) {

@@ -1,26 +1,26 @@
-// Module ID: 8498
-// Function ID: 8499
+// Module ID: 8495
+// Function ID: 8496
 // Name: VibegrationsPlatformUtils
-// Dependencies: [5, 8499, 1980, 8495, 8500, 8504, 7787, 8505, 8506, 1086, 8746, 8750, 7746, 8751, 8753, 12445, 12446, 12447, 12449, 12450, 2]
+// Dependencies: [5, 8496, 1986, 8492, 8497, 8501, 7791, 8502, 8503, 1098, 8741, 8745, 7750, 8746, 8748, 12443, 12444, 12445, 12447, 12448, 2]
 // Exports: inspectVibegrationsPreviewPoint
 
-// Module 8498 (VibegrationsPlatformUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7787 */;
-import Constants from "Constants" /* 8504 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8505 */;
-import ApplicationUtils from "ApplicationUtils" /* 8506 */;
-import PushNotificationDefault from "PushNotification" /* 8746 */;
-import vibegrationsPreviewCall from "vibegrationsPreviewCall" /* 8750 */;
-import vibegrationsPreviewNativeSurfaces from "vibegrationsPreviewNativeSurfaces" /* 12447 */;
-import restartVibegrationsAppFramesDefault from "restartVibegrationsAppFrames" /* 12450 */;
+// Module 8495 (VibegrationsPlatformUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 7791 */;
+import Constants from "Constants" /* 8501 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8502 */;
+import ApplicationUtils from "ApplicationUtils" /* 8503 */;
+import PushNotificationDefault from "PushNotification" /* 8741 */;
+import vibegrationsPreviewCall from "vibegrationsPreviewCall" /* 8745 */;
+import vibegrationsPreviewNativeSurfaces from "vibegrationsPreviewNativeSurfaces" /* 12445 */;
+import restartVibegrationsAppFramesDefault from "restartVibegrationsAppFrames" /* 12448 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 8499 */;
-import AppStateStore from "AppStateStore" /* 1980 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8495 */;
-import FramesConstants from "FramesConstants" /* 8500 */;
-import vibegrationsPreviewControlLease from "vibegrationsPreviewControlLease" /* 12446 */;
-import vibegrationsPreviewOperationSurfaces from "vibegrationsPreviewOperationSurfaces" /* 12449 */;
+import FramesStore from "FramesStore" /* 8496 */;
+import AppStateStore from "AppStateStore" /* 1986 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8492 */;
+import FramesConstants from "FramesConstants" /* 8497 */;
+import vibegrationsPreviewControlLease from "vibegrationsPreviewControlLease" /* 12444 */;
+import vibegrationsPreviewOperationSurfaces from "vibegrationsPreviewOperationSurfaces" /* 12447 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -180,7 +180,7 @@ function callNativePreviewFrame(arg0, arg1, id) {
   const promise = new Promise((arg0, arg1) => {
     let closure_1;
     let closure_3;
-    const f124281 = () => {
+    const f149683 = () => {
 
     };
     let closure_0 = arg0;
@@ -218,7 +218,7 @@ function callNativePreviewFrame(arg0, arg1, id) {
           }
           _null = null;
         } else {
-          const tmp4Result = tmp4(8750);
+          const tmp4Result = tmp4(8745);
           if (tmp4Result.isResultEnvelope(parsed, tmp7.result, tmp8.id)) {
             cleanup();
             closure_0(parsed);
@@ -228,10 +228,10 @@ function callNativePreviewFrame(arg0, arg1, id) {
       }
     });
     let injectJavaScriptResult = closure_4.injectJavaScript(obj3(obj5[14])(timeout));
-    injectJavaScriptResult.catch(f124281);
+    injectJavaScriptResult.catch(f149683);
     const interval = setInterval(function post() {
       const injectJavaScriptResult = closure_4.injectJavaScript(obj3(obj5[14])(closure_3));
-      injectJavaScriptResult.catch(f124281);
+      injectJavaScriptResult.catch(f149683);
     }, obj3.retryMs);
   });
   return promise;
@@ -257,7 +257,7 @@ let obj = function _relayPreviewCapture() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -308,7 +308,7 @@ let obj = function _relayPreviewCapture() {
                 c9 = 3;
                 return { value: { status: "unavailable" }, done: true };
               } else if (null == c2) {
-                obj9 = { uploadToken: "Path" };
+                obj9 = { uploadToken: "call" };
               } else {
                 c8 = 2;
                 c9 = 1;
@@ -409,7 +409,7 @@ obj = function _inspectVibegrationsPreviewPoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -496,7 +496,7 @@ obj = function _relayPreviewControl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp73;
@@ -723,7 +723,7 @@ let result = vibegrationsPreviewControlLease.subscribeVibegrationsControlRelease
     const promise = new Promise((arg0, arg1) => {
       let closure_1;
       let closure_3;
-      const f124281 = () => {
+      const f149683 = () => {
 
       };
       let closure_0 = arg0;
@@ -761,7 +761,7 @@ let result = vibegrationsPreviewControlLease.subscribeVibegrationsControlRelease
             }
             _null = null;
           } else {
-            const tmp4Result = tmp4(8750);
+            const tmp4Result = tmp4(8745);
             if (tmp4Result.isResultEnvelope(parsed, tmp7.result, tmp8.id)) {
               cleanup();
               closure_0(parsed);
@@ -771,10 +771,10 @@ let result = vibegrationsPreviewControlLease.subscribeVibegrationsControlRelease
         }
       });
       let injectJavaScriptResult = closure_4.injectJavaScript(obj3(obj5[14])(timeout));
-      injectJavaScriptResult.catch(f124281);
+      injectJavaScriptResult.catch(f149683);
       const interval = setInterval(function post() {
         const injectJavaScriptResult = closure_4.injectJavaScript(obj3(obj5[14])(closure_3));
-        injectJavaScriptResult.catch(f124281);
+        injectJavaScriptResult.catch(f149683);
       }, obj3.retryMs);
     });
     const catchPromise = promise.catch(() => {

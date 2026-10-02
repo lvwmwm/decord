@@ -1,42 +1,26 @@
 // Module ID: 12387
 // Function ID: 12388
-// Dependencies: [12319, 12340, 12369]
+// Dependencies: [12388, 12371, 12367]
 
 // Module 12387
-import module_12369 from "module_12369" /* 12369 */;
+import eventFromMessage from "eventFromMessage" /* 12371 */;
+import _mod12388 from "module_12388" /* 12388 */;
+import module_12367 from "module_12367" /* 12367 */;
 
-let has, toString;
 
-const weakMap = new WeakMap();
-
-export const functionToStringIntegration = module_12369.defineIntegration(() => {
-  let obj = {
-    name: "FunctionToString",
-    setupOnce() {
-      toString = Function.prototype.toString;
-      try {
-        const _Function = Function;
-        Function.prototype.toString = function() {
-          const items = [...arguments];
-          const obj = closure_1_0(closure_1_1[0]);
-          const originalFunction = obj.getOriginalFunction(this);
-          has = has.has;
-          let self = this;
-          const obj2 = closure_1_0(closure_1_1[1]);
-          if (has(obj2.getClient())) {
-            self = this;
-            if (undefined !== originalFunction) {
-              self = originalFunction;
-            }
-          }
-          return toString.apply(self, items);
-        };
-      } catch (err) {
-      }
-    },
-    setup(arg0) {
-      const result = weakMap.set(arg0, true);
+export const linkedErrorsIntegration = module_12367.defineIntegration(() => {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  let closure_0 = obj.limit || 5;
+  let closure_1 = obj.key || "cause";
+  return {
+    name: "LinkedErrors",
+    preprocessEvent(arg0, arg1, getOptions) {
+      const options = getOptions.getOptions();
+      const obj = _mod12388;
+      const result = obj.applyAggregateErrorsToEvent(eventFromMessage.exceptionFromError, options.stackParser, options.maxValueLength, closure_1, closure_0, arg0, arg1);
     }
   };
-  return obj;
 });

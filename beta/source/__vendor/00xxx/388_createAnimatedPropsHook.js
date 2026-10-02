@@ -62,24 +62,24 @@ export default function createAnimatedPropsHook(arg0) {
   let closure_1 = obj.createAnimatedPropsMemoHook(arg0);
   let obj2 = javaScriptFlagGetterAll;
   importAll = obj2.shouldUseSetNativePropsInFabric();
-  return function useAnimatedProps(fn) {
-    closure_0 = fn;
+  return function useAnimatedProps(fn2) {
+    closure_0 = fn2;
     closure_1 = _slicedToArray(closure_1_9((arg0) => arg0 + 1, 0), 2)[1];
     closure_2 = closure_1_10(null);
     let closure_3 = closure_1_10(null);
     let closure_4 = closure_1_6(closure_0(dependencyMap[4]).RootTagContext);
     let obj = closure_1(() => {
       let ref;
-      const tmp = new _modDef380(fn, () => {
+      const tmp = new _modDef380(fn2, () => {
         const current = ref.current;
         let currentResult;
         if (current != null) {
           currentResult = current();
         }
         return currentResult;
-      }, fn, closure_4);
+      }, fn2, closure_4);
       return tmp;
-    }, fn);
+    }, fn2);
     let tmp = closure_1_7(() => {
       if (!closure_1(dependencyMap[6]).shouldSignalBatch) {
         const API = tmp(tmp2[6]).API;
@@ -238,7 +238,7 @@ export default function createAnimatedPropsHook(arg0) {
     }, items1);
     let obj2 = { collapsable: false };
     let tmp4 = closure_1(dependencyMap[7])(tmp3);
-    const merged = Object.assign(obj.__getValueWithStaticProps(fn));
+    const merged = Object.assign(obj.__getValueWithStaticProps(fn2));
     const items2 = [obj2, tmp4];
     return items2;
   };

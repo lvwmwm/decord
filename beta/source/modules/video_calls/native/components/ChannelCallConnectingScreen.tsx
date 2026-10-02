@@ -1,47 +1,87 @@
-// Module ID: 9433
-// Function ID: 9434
+// Module ID: 9429
+// Function ID: 9430
 // Name: ChannelCallConnectingScreen
-// Dependencies: [19, 17, 4853, 1993, 4469, 4854, 8829, 1074, 1085, 21, 4836, 8854, 4800, 6571, 1610, 6045, 9434, 4989, 9394, 9275, 9460, 9461, 1115, 9104, 5723, 4767, 9462, 8962, 504, 9240, 6763, 9469, 9242, 9470, 576, 8907, 9471, 2]
-// Exports: CallConnectingActionBar, ChannelCallConnectingHeader, showVoiceSettingsActionSheet
+// Dependencies: [19, 17, 4854, 1999, 4472, 4855, 8824, 1086, 1097, 21, 4837, 8849, 4801, 558, 576, 1616, 6572, 6038, 9430, 4990, 9372, 9253, 9456, 9457, 1127, 9081, 5724, 4769, 9458, 9218, 504, 9217, 6764, 9465, 9220, 588, 8901, 9466, 9467, 2]
+// Exports: showVoiceSettingsActionSheet
 
-// Module 9433 (ChannelCallConnectingScreen)
+// Module 9429 (ChannelCallConnectingScreen)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1074 */;
-import Constants2 from "Constants" /* 1085 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1610 */;
-import useThemeDefault from "useTheme" /* 4767 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import useChannelNameDefault from "useChannelName" /* 4989 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
-import BottomSheetModal from "BottomSheetModal" /* 6045 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
-import ChannelCallStore from "ChannelCallStore" /* 8829 */;
-import useActionBarHeight from "useActionBarHeight" /* 8854 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
-import beginConsoleTransfer from "beginConsoleTransfer" /* 9242 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9275 */;
-import UserSettingsVoiceDefault from "UserSettingsVoice" /* 9434 */;
-import VoiceChatHeaderIconDefault from "VoiceChatHeaderIcon" /* 9460 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9461 */;
-import ChannelCallMicButton from "ChannelCallMicButton" /* 9462 */;
-import coercePlatformTypeToConsoleType from "coercePlatformTypeToConsoleType" /* 9469 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import Constants2 from "Constants" /* 1097 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1616 */;
+import useThemeDefault from "useTheme" /* 4769 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import useChannelNameDefault from "useChannelName" /* 4990 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5724 */;
+import BottomSheetModal from "BottomSheetModal" /* 6038 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import ChannelCallStore from "ChannelCallStore" /* 8824 */;
+import useActionBarHeight from "useActionBarHeight" /* 8849 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9081 */;
+import beginConsoleTransfer from "beginConsoleTransfer" /* 9220 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9253 */;
+import UserSettingsVoiceDefault from "UserSettingsVoice" /* 9430 */;
+import VoiceChatHeaderIconDefault from "VoiceChatHeaderIcon" /* 9456 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9457 */;
+import coercePlatformTypeToConsoleType from "coercePlatformTypeToConsoleType" /* 9465 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 4853 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import SessionsStore from "SessionsStore" /* 4854 */;
+import GameConsoleStore from "GameConsoleStore" /* 4854 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import SessionsStore from "SessionsStore" /* 4855 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, importDefault;
+let BottomSheet, channel, importDefault;
 
 let closure_12;
 let closure_14;
 let map1;
 let obj2;
-function VoiceSettingsActionSheet() {
+let tmp;
+const ChannelCallMicButton = tmp(9458);
+let react = react_mod;
+const View = react_native.View;
+const resetFocus = ChannelCallStore.resetFocus;
+const InstantInviteSources = Constants.InstantInviteSources;
+const Permissions = Constants2.Permissions;
+({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = Fragment);
+let obj = { spacer: { width: 8 }, actionBarContainer: obj2 };
+obj2 = { paddingHorizontal: 12, paddingTop: 16, justifyContent: "center", alignItems: "flex-start", flexDirection: "row", height: useActionBarHeight.CALL_ACTION_BAR_HEIGHT };
+let closure_15 = createStyles.createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let BottomSheetScrollView;
+  let first;
+  let obj3;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = MetaQuestUtils;
+    const isMetaQuestResult = tmpResult.isMetaQuest();
+    cResult[0] = isMetaQuestResult;
+    first = isMetaQuestResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { scrollable: true, startExpanded: first, children: closure_12(BottomSheetScrollView, obj3) };
+    BottomSheet = tmp(6572).BottomSheet;
+    obj3 = { children: closure_12(UserSettingsVoiceDefault, {}) };
+    BottomSheetScrollView = tmp(6038).BottomSheetScrollView;
+    const tmp9 = closure_12(BottomSheet, obj2);
+    cResult[1] = tmp9;
+    tmp6 = tmp9;
+  } else {
+    tmp6 = cResult[1];
+  }
+  return tmp6;
+}) : (() => {
   let BottomSheetScrollView;
   let obj2;
   let obj3;
@@ -51,13 +91,353 @@ function VoiceSettingsActionSheet() {
   obj3 = { children: closure_12(UserSettingsVoiceDefault, {}) };
   BottomSheetScrollView = BottomSheetModal.BottomSheetScrollView;
   return closure_12(BottomSheet, obj);
-}
-function JoinMutedButton(channel) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let intl;
+  let items;
+  let obj8;
+  let obj = channel(576);
+  const cResult = obj.c(13);
+  channel = channel.channel;
+  const tmp4 = closure_15();
+  const tmp6 = useChannelNameDefault(channel);
+  let obj2 = channel(9372);
+  const isVoiceChannelLocked = obj2.useIsVoiceChannelLocked(channel);
+  if (cResult[0] === channel) {
+    let tmp8;
+    let tmp10;
+    if (cResult[1] === isVoiceChannelLocked) {
+      tmp8 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = { style: { width: 4 } };
+      const tmp13 = closure_12(View, obj3);
+      cResult[3] = tmp13;
+      tmp10 = tmp13;
+    } else {
+      tmp10 = cResult[3];
+    }
+    if (cResult[4] === tmp6) {
+      let tmp14;
+      let tmp18;
+      let tmp22;
+      if (cResult[5] === tmp8) {
+        tmp14 = cResult[6];
+      }
+      if (cResult[7] !== tmp4.spacer) {
+        const obj4 = { style: tmp4.spacer };
+        const tmp21 = closure_12(View, obj4);
+        cResult[7] = tmp4.spacer;
+        cResult[8] = tmp21;
+        tmp18 = tmp21;
+      } else {
+        tmp18 = cResult[8];
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj5 = { style: { width: 4 } };
+        const tmp25 = closure_12(View, obj5);
+        cResult[9] = tmp25;
+        tmp22 = tmp25;
+      } else {
+        tmp22 = cResult[9];
+      }
+      if (cResult[10] === tmp14) {
+        let tmp26;
+        if (cResult[11] === tmp18) {
+          tmp26 = cResult[12];
+        }
+        return tmp26;
+      }
+      const obj6 = { children: items };
+      items = [tmp10, tmp14, tmp18, tmp22];
+      const tmp29 = closure_14(closure_13, obj6);
+      cResult[10] = tmp14;
+      cResult[11] = tmp18;
+      cResult[12] = tmp29;
+      tmp26 = tmp29;
+    }
+    let tmp15 = null;
+    if (null != tmp8) {
+      const obj7 = { source: AssetRegistryDefault, onPress: tmp8, accessibilityLabel: intl.formatToPlainString(channel(1127).t["dHHb/2"], obj8) };
+      const tmp5Result = VoiceChatHeaderIconDefault;
+      intl = tmp(1127).intl;
+      obj8 = { channelName: tmp6 };
+      tmp15 = closure_12(tmp5Result, obj7);
+    }
+    cResult[4] = tmp6;
+    cResult[5] = tmp8;
+    cResult[6] = tmp15;
+    tmp14 = tmp15;
+  }
+  let fn = null;
+  if (PermissionStore.can(Permissions.CREATE_INSTANT_INVITE, channel)) {
+    fn = null;
+    if (!isVoiceChannelLocked) {
+      fn = () => {
+        const obj = instant_invite_InstantInviteUtils;
+        const obj2 = { source: InstantInviteSources.VOICE_CHANNEL };
+        return obj.showInstantInviteActionSheet(channel, obj2);
+      };
+    }
+  }
+  cResult[0] = channel;
+  cResult[1] = isVoiceChannelLocked;
+  cResult[2] = fn;
+  tmp8 = fn;
+}) : ((channel) => {
+  let intl;
+  let obj3;
+  channel = channel.channel;
+  const tmp = closure_15();
+  const tmp4 = useChannelNameDefault(channel);
+  let obj = channel(9372);
+  const isVoiceChannelLocked = obj.useIsVoiceChannelLocked(channel);
+  let fn = null;
+  if (PermissionStore.can(Permissions.CREATE_INSTANT_INVITE, channel)) {
+    fn = null;
+    if (!isVoiceChannelLocked) {
+      fn = () => {
+        const obj = instant_invite_InstantInviteUtils;
+        const obj2 = { source: InstantInviteSources.VOICE_CHANNEL };
+        return obj.showInstantInviteActionSheet(channel, obj2);
+      };
+    }
+  }
+  const items = [closure_12(View, { style: { width: 4 } }), , , ];
+  let tmp9Result = null;
+  const tmp7 = closure_14;
+  const tmp8 = closure_13;
+  if (null != fn) {
+    let obj2 = { source: AssetRegistryDefault, onPress: fn, accessibilityLabel: intl.formatToPlainString(channel(1127).t["dHHb/2"], obj3) };
+    const tmp2Result = VoiceChatHeaderIconDefault;
+    intl = tmp5(1127).intl;
+    obj3 = { channelName: tmp4 };
+    tmp9Result = tmp9(tmp2Result, obj2);
+  }
+  const obj4 = { children: items };
+  items[1] = tmp9Result;
+  const obj5 = { style: tmp.spacer };
+  items[2] = closure_12(View, obj5);
+  items[3] = closure_12(View, { style: { width: 4 } });
+  return tmp7(tmp8, obj4);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  const obj = react2;
+  const cResult = obj.c(3);
+  channel = channel.channel;
+  const tmp4 = "light" === useThemeDefault();
+  if (cResult[0] === channel) {
+    let tmp5;
+    if (cResult[1] === tmp4) {
+      tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  const tmp6 = closure_12(ChannelCallMicButton.ChannelCallMicButton, { channel, disableTint: tmp4, isSmallSize: false });
+  cResult[0] = channel;
+  cResult[1] = tmp4;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((channel) => {
   channel = channel.channel;
   const obj = { channel, disableTint: "light" === useThemeDefault(), isSmallSize: false };
   return closure_12(ChannelCallMicButton.ChannelCallMicButton, obj);
-}
-function JoinVoiceButton(channel) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let awaitingRemoteSessionInfo;
+  let stateFromStores1;
+  let tmp10;
+  let tmp14;
+  let tmp6;
+  let tmp7;
+  const tmp = channel;
+  let obj = channel(stateFromStores1[14]);
+  const cResult = obj.c(21);
+  channel = channel.channel;
+  const tmp5 = require("useVoiceStateForRemoteSession")();
+  importDefault = tmp5;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GameConsoleStore];
+    const fn = function l() {
+      return null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const tmpResult = tmp(stateFromStores1[30]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [SessionsStore];
+    cResult[2] = items1;
+    tmp10 = items1;
+  } else {
+    tmp10 = cResult[2];
+  }
+  let sessionId;
+  const tmp12 = cResult[3];
+  if (tmp5 != null) {
+    sessionId = tmp5.sessionId;
+  }
+  if (tmp12 !== sessionId) {
+    let sessionId1;
+    if (tmp5 != null) {
+      sessionId1 = tmp5.sessionId;
+    }
+    const fn2 = function f() {
+      let str;
+      const getSessionById = SessionsStore.getSessionById;
+      if (sessionId != null) {
+        str = sessionId.sessionId;
+      }
+      if (str == null) {
+        str = "";
+      }
+      const sessionById = getSessionById(str);
+      let os;
+      if (sessionById != null) {
+        os = sessionById.clientInfo.os;
+      }
+      return os;
+    };
+    cResult[3] = sessionId1;
+    cResult[4] = fn2;
+    tmp14 = fn2;
+  } else {
+    tmp14 = cResult[4];
+  }
+  const tmpResult3 = tmp(stateFromStores1[30]);
+  stateFromStores1 = tmpResult3.useStateFromStores(tmp10, tmp14);
+  const tmp17 = require("useGameConsoleAccounts")();
+  let closure_3 = tmp17;
+  const tmp18 = require("useMuteStates")(channel);
+  let closure_4 = tmp19;
+  if (cResult[5] === channel) {
+    if (cResult[6] === tmp17) {
+      if (cResult[7] === (tmp18.selfMute || tmp18.mute || tmp18.suppress)) {
+        let tmp20;
+        let tmp25;
+        let tmp24;
+        let stringResult1;
+        if (cResult[8] === stateFromStores1) {
+          tmp20 = cResult[9];
+        }
+        const tmp21 = require("useIsVoiceChannelFull")(channel);
+        const tmpResult4 = tmp(stateFromStores1[20]);
+        const isVoiceChannelLocked = tmpResult4.useIsVoiceChannelLocked(channel);
+        const _Symbol = Symbol;
+        if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+          let obj2 = { tintColor: tmp4(tmp2[35]).unsafe_rawColors.WHITE };
+          const intl = tmp(tmp2[24]).intl;
+          const stringResult = intl.string(tmp(stateFromStores1[24]).t["96ANUN"]);
+          cResult[10] = obj2;
+          cResult[11] = stringResult;
+          tmp25 = stringResult;
+          tmp24 = obj2;
+        } else {
+          tmp24 = cResult[10];
+          tmp25 = cResult[11];
+        }
+        const tmp4Result = importDefault(tmp18.selfMute || tmp18.mute || tmp18.suppress ? stateFromStores1[36] : stateFromStores1[37]);
+        if (cResult[12] === tmp21) {
+          if (cResult[13] === isVoiceChannelLocked) {
+            let tmp28;
+            if (cResult[14] === (tmp18.selfMute || tmp18.mute || tmp18.suppress)) {
+              tmp28 = cResult[15];
+            }
+            if (cResult[16] === (tmp21 || isVoiceChannelLocked || stateFromStores)) {
+              if (cResult[17] === tmp20) {
+                if (cResult[18] === tmp4Result) {
+                  let tmp30;
+                  if (cResult[19] === tmp28) {
+                    tmp30 = cResult[20];
+                  }
+                  return tmp30;
+                }
+              }
+            }
+            let obj3 = { disabled: tmp21 || isVoiceChannelLocked || stateFromStores, backgroundColor: tmp4(tmp2[35]).unsafe_rawColors.GREEN_360, imageStyle: tmp24, accessibilityLabel: tmp25, source: tmp4Result, onPress: tmp20, label: tmp28, iconPosition: tmp(tmp2[38]).IconPosition.RIGHT };
+            const LabeledActionButton = tmp(tmp2[38]).LabeledActionButton;
+            const tmp32 = closure_12(LabeledActionButton, obj3);
+            cResult[16] = tmp21 || isVoiceChannelLocked || stateFromStores;
+            cResult[17] = tmp20;
+            cResult[18] = tmp4Result;
+            cResult[19] = tmp28;
+            cResult[20] = tmp32;
+            tmp30 = tmp32;
+          }
+        }
+        const intl2 = tmp(tmp2[24]).intl;
+        const string = intl2.string;
+        const t = tmp(tmp2[24]).t;
+        if (isVoiceChannelLocked) {
+          stringResult1 = string(t.TVBCKZ);
+        } else if (tmp21) {
+          stringResult1 = string(t.rZfiNq);
+        } else if (tmp18.selfMute || tmp18.mute || tmp18.suppress) {
+          stringResult1 = string(t["Bd/Liz"]);
+        } else {
+          stringResult1 = string(t["96ANUN"]);
+        }
+        cResult[12] = tmp21;
+        cResult[13] = isVoiceChannelLocked;
+        cResult[14] = tmp18.selfMute || tmp18.mute || tmp18.suppress;
+        cResult[15] = stringResult1;
+        tmp28 = stringResult1;
+      }
+    }
+  }
+  class I {
+    constructor() {
+      if (null != stateFromStores1) {
+        const obj = coercePlatformTypeToConsoleType;
+        const result = obj.coerceConsoleTypeToPlatformType(tmp, closure_3);
+        if (null != result) {
+          const obj4 = beginConsoleTransfer;
+          return obj4.beginConsoleTransfer(channel, result);
+        }
+      }
+      const id = channel.id;
+      resetFocus();
+      const tmp9 = react_native;
+      const tmp6 = closure_4;
+      if (tmp9 != null) {
+        const NativeModules = tmp9.NativeModules;
+        if (NativeModules != null) {
+          const KeyboardManager = NativeModules.KeyboardManager;
+          if (KeyboardManager != null) {
+            const dismissGlobalKeyboard = KeyboardManager.dismissGlobalKeyboard;
+            if (dismissGlobalKeyboard != null) {
+              const result1 = dismissGlobalKeyboard();
+            }
+          }
+        }
+      }
+      if (tmp6) {
+        if (!MediaEngineStore.getSettings().mute) {
+          const obj2 = AudioActionCreatorsDefault;
+          obj2.toggleSelfMute();
+        }
+      }
+      const obj3 = SelectedChannelActionCreatorsDefault;
+      const voiceChannel = obj3.selectVoiceChannel(id, false, false);
+    }
+  }
+  cResult[5] = channel;
+  cResult[6] = tmp17;
+  cResult[7] = tmp18.selfMute || tmp18.mute || tmp18.suppress;
+  cResult[8] = stateFromStores1;
+  cResult[9] = I;
+  tmp20 = I;
+}) : ((channel) => {
   let awaitingRemoteSessionInfo;
   let closure_3;
   let intl;
@@ -69,10 +449,10 @@ function JoinVoiceButton(channel) {
   let stateFromStores1;
   const tmp = importDefault;
   importDefault = require("useVoiceStateForRemoteSession")();
-  let obj = channel(stateFromStores1[28]);
+  let obj = channel(stateFromStores1[30]);
   const items = [GameConsoleStore];
   const stateFromStores = obj.useStateFromStores(items, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
-  let obj2 = channel(stateFromStores1[28]);
+  let obj2 = channel(stateFromStores1[30]);
   const items1 = [SessionsStore];
   stateFromStores1 = obj2.useStateFromStores(items1, () => {
     let str;
@@ -93,7 +473,6 @@ function JoinVoiceButton(channel) {
   let tmp6 = require("useGameConsoleAccounts")();
   react = tmp6;
   const tmp7 = require("useMuteStates")(channel);
-  let tmp8 = tmp7.selfMute || tmp7.mute || tmp7.suppress;
   let closure_4 = tmp8;
   const items2 = [channel, stateFromStores1, tmp6, tmp8];
   const callback = react.useCallback(() => {
@@ -107,10 +486,10 @@ function JoinVoiceButton(channel) {
     }
     const id = channel.id;
     resetFocus();
-    const tmp8 = react_native;
+    const tmp9 = react_native;
     const tmp6 = closure_4;
-    if (tmp8 != null) {
-      const NativeModules = tmp8.NativeModules;
+    if (tmp9 != null) {
+      const NativeModules = tmp9.NativeModules;
       if (NativeModules != null) {
         const KeyboardManager = NativeModules.KeyboardManager;
         if (KeyboardManager != null) {
@@ -130,11 +509,11 @@ function JoinVoiceButton(channel) {
     const obj3 = SelectedChannelActionCreatorsDefault;
     const voiceChannel = obj3.selectVoiceChannel(id, false, false);
   }, items2);
-  const tmp10 = tmp(stateFromStores1[18])(channel);
-  const tmp3Result = channel(stateFromStores1[18]);
+  const tmp10 = tmp(stateFromStores1[20])(channel);
+  const tmp3Result = channel(stateFromStores1[20]);
   const isVoiceChannelLocked = tmp3Result.useIsVoiceChannelLocked(channel);
   let tmp13 = tmp10;
-  const LabeledActionButton = tmp3(tmp2[33]).LabeledActionButton;
+  const LabeledActionButton = tmp3(tmp2[38]).LabeledActionButton;
   const tmp12 = closure_12;
   if (!tmp10) {
     tmp13 = isVoiceChannelLocked;
@@ -142,80 +521,76 @@ function JoinVoiceButton(channel) {
   if (!tmp13) {
     tmp13 = stateFromStores;
   }
-  let obj3 = { disabled: tmp13, backgroundColor: tmp(tmp2[34]).unsafe_rawColors.GREEN_360, imageStyle: obj4, accessibilityLabel: intl.string(tmp3(tmp2[22]).t["96ANUN"]), source: tmp(tmp8 ? tmp2[35] : tmp2[36]), onPress: callback, label: stringResult, iconPosition: tmp3(tmp2[33]).IconPosition.RIGHT };
-  obj4 = { tintColor: tmp(tmp2[34]).unsafe_rawColors.WHITE };
-  intl = tmp3(tmp2[22]).intl;
-  const intl2 = tmp3(tmp2[22]).intl;
+  let obj3 = { disabled: tmp13, backgroundColor: tmp(tmp2[35]).unsafe_rawColors.GREEN_360, imageStyle: obj4, accessibilityLabel: intl.string(tmp3(tmp2[24]).t["96ANUN"]), source: tmp(tmp8 ? tmp2[36] : tmp2[37]), onPress: callback, label: stringResult, iconPosition: tmp3(tmp2[38]).IconPosition.RIGHT };
+  obj4 = { tintColor: tmp(tmp2[35]).unsafe_rawColors.WHITE };
+  intl = tmp3(tmp2[24]).intl;
+  const intl2 = tmp3(tmp2[24]).intl;
   const string = intl2.string;
-  const t = tmp3(tmp2[22]).t;
+  const t = tmp3(tmp2[24]).t;
   if (isVoiceChannelLocked) {
     stringResult = string(t.TVBCKZ);
   } else if (tmp10) {
     stringResult = string(t.rZfiNq);
-  } else if (tmp8) {
+  } else if (tmp7.selfMute || tmp7.mute || tmp7.suppress) {
     stringResult = string(t["Bd/Liz"]);
   } else {
     stringResult = string(t["96ANUN"]);
   }
   return tmp12(LabeledActionButton, obj3);
-}
-let react = react_mod;
-const View = react_native.View;
-const resetFocus = ChannelCallStore.resetFocus;
-const InstantInviteSources = Constants.InstantInviteSources;
-const Permissions = Constants2.Permissions;
-({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = Fragment);
-let obj = { spacer: { width: 8 }, actionBarContainer: obj2 };
-obj2 = { paddingHorizontal: 12, paddingTop: 16, justifyContent: "center", alignItems: "flex-start", flexDirection: "row", height: useActionBarHeight.CALL_ACTION_BAR_HEIGHT };
-let closure_15 = createStyles.createStyles(obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let items;
+  let tmp3;
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(7);
+  channel = channel.channel;
+  const tmp2 = closure_15();
+  if (cResult[0] !== channel) {
+    const obj2 = { channel };
+    const tmp7 = closure_12(closure_17, obj2);
+    const obj3 = { channel };
+    const tmp9 = closure_12(closure_18, obj3);
+    cResult[0] = channel;
+    cResult[1] = tmp7;
+    cResult[2] = tmp9;
+    tmp4 = tmp9;
+    tmp3 = tmp7;
+  } else {
+    tmp3 = cResult[1];
+    tmp4 = cResult[2];
+  }
+  if (cResult[3] === tmp2.actionBarContainer) {
+    if (cResult[4] === tmp3) {
+      let tmp10;
+      if (cResult[5] === tmp4) {
+        tmp10 = cResult[6];
+      }
+      return tmp10;
+    }
+  }
+  const obj4 = { style: tmp2.actionBarContainer, children: items };
+  items = [tmp3, tmp4];
+  const tmp11 = authStore2(View, obj4);
+  cResult[3] = tmp2.actionBarContainer;
+  cResult[4] = tmp3;
+  cResult[5] = tmp4;
+  cResult[6] = tmp11;
+  tmp10 = tmp11;
+}) : ((channel) => {
+  let items;
+  channel = channel.channel;
+  const obj = { style: closure_15().actionBarContainer, children: items };
+  items = [closure_12(closure_17, { channel }), closure_12(closure_18, { channel })];
+  return authStore2(View, obj);
+});
 let result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelCallConnectingScreen.tsx");
 
 export const showVoiceSettingsActionSheet = function showVoiceSettingsActionSheet(guildId) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { guildId };
-  obj.openLazy(() => Promise.resolve(VoiceSettingsActionSheet), "voice settings", obj2);
+  obj.openLazy(() => Promise.resolve(closure_1_16), "voice settings", obj2);
 };
-export const ChannelCallConnectingHeader = function ChannelCallConnectingHeader(channel) {
-  let intl;
-  let obj3;
-  channel = channel.channel;
-  const tmp = closure_15();
-  const tmp4 = useChannelNameDefault(channel);
-  let obj = channel(9394);
-  const isVoiceChannelLocked = obj.useIsVoiceChannelLocked(channel);
-  let fn = null;
-  if (PermissionStore.can(Permissions.CREATE_INSTANT_INVITE, channel)) {
-    fn = null;
-    if (!isVoiceChannelLocked) {
-      fn = () => {
-        const obj = instant_invite_InstantInviteUtils;
-        const obj2 = { source: InstantInviteSources.VOICE_CHANNEL };
-        return obj.showInstantInviteActionSheet(channel, obj2);
-      };
-    }
-  }
-  const items = [closure_12(View, { style: { width: 4 } }), , , ];
-  let tmp9Result = null;
-  const tmp7 = closure_14;
-  const tmp8 = closure_13;
-  if (null != fn) {
-    let obj2 = { source: AssetRegistryDefault, onPress: fn, accessibilityLabel: intl.formatToPlainString(channel(1115).t["dHHb/2"], obj3) };
-    const tmp2Result = VoiceChatHeaderIconDefault;
-    intl = tmp5(1115).intl;
-    obj3 = { channelName: tmp4 };
-    tmp9Result = tmp9(tmp2Result, obj2);
-  }
-  const obj4 = { children: items };
-  items[1] = tmp9Result;
-  const obj5 = { style: tmp.spacer };
-  items[2] = closure_12(View, obj5);
-  items[3] = closure_12(View, { style: { width: 4 } });
-  return tmp7(tmp8, obj4);
-};
-export const CallConnectingActionBar = function CallConnectingActionBar(channel) {
-  let items;
-  channel = channel.channel;
-  const obj = { style: closure_15().actionBarContainer, children: items };
-  items = [closure_12(JoinMutedButton, { channel }), closure_12(JoinVoiceButton, { channel })];
-  return authStore2(View, obj);
-};
+export const ChannelCallConnectingHeader = tmp3;
+export const CallConnectingActionBar = tmp4;

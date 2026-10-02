@@ -1,50 +1,40 @@
 // Module ID: 10010
 // Function ID: 10011
-// Dependencies: []
-// Exports: zhStringToNumber, zhStringToYear
+// Dependencies: [41, 42, 10002, 9959]
 
 // Module 10010
+import NUMBER from "NUMBER" /* 10002 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-export const zhStringToNumber = function zhStringToNumber(arg0) {
-  let num = 0;
-  let num2 = 0;
-  let num3 = 0;
-  if (0 < arg0.length) {
-    do {
-      let sum;
-      let tmp = arg0[num];
-      if ("\u5341" === tmp) {
-        let result;
-        if (0 === num2) {
-          result = exports.NUMBER[tmp];
-        } else {
-          result = num2 * exports.NUMBER[tmp];
-        }
-        sum = result;
-      } else {
-        sum = num2 + exports.NUMBER[tmp];
+let tmp;
+const _mod9959 = tmp(9959);
+const keys = Object.keys(NUMBER.WEEKDAY_OFFSET);
+const regExp = new RegExp("(?:\\(|\\\uFF08)(?<weekday>" + keys.join("|") + ")(?:\\)|\\\uFF09)", "i");
+class JPWeekdayWithParenthesesParser {
+  constructor() {
+    _classCallCheck(this, JPWeekdayWithParenthesesParser);
+  }
+}
+const entry = {
+  key: "pattern",
+  value: function pattern() {
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "extract",
+    value: function extract(reference, arg1) {
+      const tmp3 = NUMBER.WEEKDAY_OFFSET[arg1.groups.weekday];
+      let parsingComponentsAtWeekday = null;
+      if (undefined !== tmp3) {
+        parsingComponentsAtWeekday = _mod9959.createParsingComponentsAtWeekday(reference.reference, tmp3);
       }
-      num = num + 1;
-      num2 = sum;
-      num3 = sum;
-    } while (num < arg0.length);
+      return parsingComponentsAtWeekday;
+    }
   }
-  return num3;
-};
-export const zhStringToYear = function zhStringToYear(arg0) {
-  let length;
-  let num = 0;
-  let str = "";
-  let str2 = "";
-  if (0 < arg0.length) {
-    do {
-      str = `${exports.NUMBER[arg0[num]]}`;
-      num = num + 1;
-      str2 = str;
-      length = arg0.length;
-    } while (num < length);
-  }
-  return parseInt(str2);
-};
-export const NUMBER = { "\u96f6": 0, "\u4e00": 1, "\u4e8c": 2, "\u5169": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6, "\u4e03": 7, "\u516b": 8, "\u4e5d": 9, "\u5341": 10, "\u5eff": 20, "\u5345": 30 };
-export const WEEKDAY_OFFSET = { "\u5929": 0, "\u65e5": 0, "\u4e00": 1, "\u4e8c": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6 };
+];
+
+export default _createClass(JPWeekdayWithParenthesesParser, items);

@@ -1,20 +1,20 @@
-// Module ID: 13505
-// Function ID: 13506
+// Module ID: 13507
+// Function ID: 13508
 // Name: markGuildsAsRead
-// Dependencies: [6521, 5818, 2045, 4467, 4851, 1074, 5018, 12, 11, 1241, 6531, 2]
+// Dependencies: [6522, 5819, 2051, 4470, 4852, 1086, 5019, 12, 11, 1253, 6532, 2]
 // Exports: default
 
-// Module 13505 (markGuildsAsRead)
+// Module 13507 (markGuildsAsRead)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ReadStateConstants from "ReadStateConstants" /* 5018 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6521 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5818 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildChannelStore from "GuildChannelStore" /* 4467 */;
-import ReadStateStore from "ReadStateStore" /* 4851 */;
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ReadStateConstants from "ReadStateConstants" /* 5019 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6522 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5819 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildChannelStore from "GuildChannelStore" /* 4470 */;
+import ReadStateStore from "ReadStateStore" /* 4852 */;
 import size from "module_2" /* 2 */;
 
 let activeJoinedThreadsForGuild, channel;
@@ -25,11 +25,11 @@ const result = size.fileFinishedImporting("modules/guild/markGuildsAsRead.tsx");
 
 export default function markGuildsAsRead(arr, source, onFinished) {
   let obj = _modDef12;
-  const flatMapResult = obj.flatMap(arr, (guildId) => {
-    const selectableChannelIds = GuildChannelStore.getSelectableChannelIds(guildId);
-    const vocalChannelIds = GuildChannelStore.getVocalChannelIds(guildId);
+  const flatMapResult = obj.flatMap(arr, (id) => {
+    const selectableChannelIds = GuildChannelStore.getSelectableChannelIds(id);
+    const vocalChannelIds = GuildChannelStore.getVocalChannelIds(id);
     const items = [...vocalChannelIds];
-    activeJoinedThreadsForGuild = activeJoinedThreadsForGuild.getActiveJoinedThreadsForGuild(guildId);
+    activeJoinedThreadsForGuild = activeJoinedThreadsForGuild.getActiveJoinedThreadsForGuild(id);
     const iter = selectableChannelIds[Symbol.iterator]();
     while (iter !== undefined) {
       let obj = activeJoinedThreadsForGuild[iter.next()];
@@ -76,6 +76,6 @@ export default function markGuildsAsRead(arr, source, onFinished) {
   let obj2 = AnalyticsUtilsDefault;
   let obj3 = { source, type: "guild" };
   obj2.track(AnalyticEvents.MARK_AS_READ, obj3);
-  let obj4 = mapped(6531);
+  let obj4 = mapped(6532);
   return obj4.bulkAck(mapped, onFinished);
 };

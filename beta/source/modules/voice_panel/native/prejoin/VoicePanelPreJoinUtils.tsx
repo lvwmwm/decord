@@ -1,11 +1,11 @@
-// Module ID: 16987
-// Function ID: 16988
+// Module ID: 16945
+// Function ID: 16946
 // Name: VoicePanelPreJoinUtils
-// Dependencies: [558, 2]
+// Dependencies: [568, 2]
 // Exports: areVoicePanelPreJoinContentPropsEqual
 
-// Module 16987 (VoicePanelPreJoinUtils)
-import shallowEqualDefault from "shallowEqual" /* 558 */;
+// Module 16945 (VoicePanelPreJoinUtils)
+import shallowEqualDefault from "shallowEqual" /* 568 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_panel/native/prejoin/VoicePanelPreJoinUtils.tsx");

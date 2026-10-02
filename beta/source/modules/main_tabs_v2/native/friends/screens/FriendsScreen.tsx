@@ -1,26 +1,26 @@
-// Module ID: 16574
-// Function ID: 16575
+// Module ID: 16576
+// Function ID: 16577
 // Name: FriendsScreen
-// Dependencies: [19, 17, 7071, 4479, 21, 4836, 576, 1485, 6583, 6603, 1613, 504, 16575, 1876, 7624, 16576, 16579, 16081, 4777, 1115, 5917, 10457, 14645, 5281, 10321, 11375, 2]
-// Exports: default
+// Dependencies: [19, 17, 7075, 4482, 21, 4837, 588, 558, 576, 1491, 6584, 6604, 1619, 16577, 504, 1882, 7628, 16578, 16581, 1127, 16083, 4778, 5916, 5282, 10492, 14633, 10362, 11249, 2]
 
-// Module 16574 (FriendsScreen)
+// Module 16576 (FriendsScreen)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl6 from "intl" /* 1115 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
-import SendMessageIcon from "SendMessageIcon" /* 4777 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import TableRow2 from "TableRow" /* 5917 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import NoResultsDefault from "NoResults" /* 10457 */;
-import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 14645 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16081 */;
+import nativeDefault from "native" /* 588 */;
+import intl6 from "intl" /* 1127 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1882 */;
+import SendMessageIcon from "SendMessageIcon" /* 4778 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import TableRow2 from "TableRow" /* 5916 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
+import NoResultsDefault from "NoResults" /* 10492 */;
+import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 14633 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16083 */;
 import react from "react" /* 19 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7071 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7075 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,22 +40,246 @@ createStyles = createStyles.createStyles;
 obj3 = { marginHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
 obj4 = { flexDirection: "row", marginBottom: nativeDefault.space.PX_16, width: "100%" };
 let closure_9 = createStyles(obj);
-let result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/FriendsScreen.tsx");
-
-export default function FriendsScreen() {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let analyticsLocations;
+  let incoming;
+  let pendingIgnored;
+  let spam;
+  let tmp15;
+  let tmp16;
+  let tmp26;
+  let tmp8;
+  let tmp9;
+  let obj = navigation(incoming[8]);
+  const cResult = obj.c(57);
+  let obj2 = navigation(incoming[9]);
+  navigation = obj2.useNavigation();
+  closure_9();
+  const tmp6 = analyticsLocations;
+  const tmp7 = analyticsLocations(incoming[10]);
+  analyticsLocations = tmp7(analyticsLocations(incoming[11]).FRIENDS_LIST).analyticsLocations;
+  const bottom = analyticsLocations(incoming[12])().bottom;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [RelationshipStore, GameRelationshipStore];
+    const fn = function b() {
+      let items;
+      let items1;
+      let obj2;
+      let obj3;
+      const obj = { incoming: obj2.getIncomingFriendRequestCount(items), outgoing: obj3.getOutgoingFriendRequestCount(items1), spam: RelationshipStore.getSpamCount(), pendingIgnored: RelationshipStore.getPendingIgnoredCount() };
+      items = [RelationshipStore, GameRelationshipStore];
+      items1 = [RelationshipStore, GameRelationshipStore];
+      obj2 = navigation(incoming[13]);
+      obj3 = navigation(incoming[13]);
+      return obj;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp8 = items;
+    tmp9 = fn;
+  } else {
+    [tmp8, tmp9] = cResult;
+  }
+  const tmpResult = navigation(incoming[14]);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp8, tmp9);
+  incoming = stateFromStoresObject.incoming;
+  const outgoing = stateFromStoresObject.outgoing;
+  ({ spam, pendingIgnored } = stateFromStoresObject);
+  if (cResult[2] !== analyticsLocations) {
+    class I {
+      constructor(id) {
+        const obj = KeyboardManagerUtils;
+        const result = obj.dismissGlobalKeyboard();
+        const obj2 = { userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations };
+        showUserProfileActionSheetDefault(obj2);
+      }
+    }
+    cResult[2] = analyticsLocations;
+    cResult[3] = I;
+  } else {
+    class I {
+      constructor(id) {
+        const obj = KeyboardManagerUtils;
+        const result = obj.dismissGlobalKeyboard();
+        const obj2 = { userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations };
+        showUserProfileActionSheetDefault(obj2);
+      }
+    }
+  }
+  if (cResult[4] !== navigation) {
+    class F {
+      constructor(defaultSelectedUserId) {
+        let obj2;
+        const obj = { screen: "new-message", params: obj2 };
+        obj2 = { defaultSelectedUserId: defaultSelectedUserId.id, sourcePage: "Friends Screen" };
+        navigation.navigate("friends", obj);
+      }
+    }
+    cResult[4] = navigation;
+    cResult[5] = F;
+  } else {
+    class F {
+      constructor(defaultSelectedUserId) {
+        let obj2;
+        const obj = { screen: "new-message", params: obj2 };
+        obj2 = { defaultSelectedUserId: defaultSelectedUserId.id, sourcePage: "Friends Screen" };
+        navigation.navigate("friends", obj);
+      }
+    }
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class F {
+      constructor(defaultSelectedUserId) {
+        let obj2;
+        const obj = { screen: "new-message", params: obj2 };
+        obj2 = { defaultSelectedUserId: defaultSelectedUserId.id, sourcePage: "Friends Screen" };
+        navigation.navigate("friends", obj);
+      }
+    }
+    let items1 = [];
+    cResult[6] = tmp17;
+    cResult[7] = items1;
+    tmp16 = items1;
+    tmp15 = tmp17;
+  } else {
+    class F {
+      constructor(defaultSelectedUserId) {
+        let obj2;
+        const obj = { screen: "new-message", params: obj2 };
+        obj2 = { defaultSelectedUserId: defaultSelectedUserId.id, sourcePage: "Friends Screen" };
+        navigation.navigate("friends", obj);
+      }
+    }
+    tmp16 = cResult[7];
+  }
+  const effect = outgoing.useEffect(tmp15, tmp16);
+  if (cResult[8] === incoming) {
+    class F {
+      constructor(defaultSelectedUserId) {
+        let obj2;
+        const obj = { screen: "new-message", params: obj2 };
+        obj2 = { defaultSelectedUserId: defaultSelectedUserId.id, sourcePage: "Friends Screen" };
+        navigation.navigate("friends", obj);
+      }
+    }
+  }
+  const items2 = [];
+  const sum = incoming + spam + pendingIgnored;
+  if (sum > 0) {
+    let tmp20;
+    class F {
+      constructor(defaultSelectedUserId) {
+        let obj2;
+        const obj = { screen: "new-message", params: obj2 };
+        obj2 = { defaultSelectedUserId: defaultSelectedUserId.id, sourcePage: "Friends Screen" };
+        navigation.navigate("friends", obj);
+      }
+    }
+    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+      class F {
+        constructor(defaultSelectedUserId) {
+          let obj2;
+          const obj = { screen: "new-message", params: obj2 };
+          obj2 = { defaultSelectedUserId: defaultSelectedUserId.id, sourcePage: "Friends Screen" };
+          navigation.navigate("friends", obj);
+        }
+      }
+      const stringResult = obj4.string(navigation(incoming[19]).t.fyA115);
+      cResult[14] = stringResult;
+      tmp20 = stringResult;
+    } else {
+      class F {
+        constructor(defaultSelectedUserId) {
+          let obj2;
+          const obj = { screen: "new-message", params: obj2 };
+          obj2 = { defaultSelectedUserId: defaultSelectedUserId.id, sourcePage: "Friends Screen" };
+          navigation.navigate("friends", obj);
+        }
+      }
+    }
+    if (cResult[15] === outgoing) {
+      class F {
+        constructor(defaultSelectedUserId) {
+          let obj2;
+          const obj = { screen: "new-message", params: obj2 };
+          obj2 = { defaultSelectedUserId: defaultSelectedUserId.id, sourcePage: "Friends Screen" };
+          navigation.navigate("friends", obj);
+        }
+      }
+      if (cResult[18] !== navigation) {
+        class F {
+          constructor(defaultSelectedUserId) {
+            let obj2;
+            const obj = { screen: "new-message", params: obj2 };
+            obj2 = { defaultSelectedUserId: defaultSelectedUserId.id, sourcePage: "Friends Screen" };
+            navigation.navigate("friends", obj);
+          }
+        }
+        cResult[18] = navigation;
+        cResult[19] = tmp25;
+      } else {
+        class F {
+          constructor(defaultSelectedUserId) {
+            let obj2;
+            const obj = { screen: "new-message", params: obj2 };
+            obj2 = { defaultSelectedUserId: defaultSelectedUserId.id, sourcePage: "Friends Screen" };
+            navigation.navigate("friends", obj);
+          }
+        }
+      }
+      if (cResult[20] === tmp22) {
+        class F {
+          constructor(defaultSelectedUserId) {
+            let obj2;
+            const obj = { screen: "new-message", params: obj2 };
+            obj2 = { defaultSelectedUserId: defaultSelectedUserId.id, sourcePage: "Friends Screen" };
+            navigation.navigate("friends", obj);
+          }
+        }
+        items2.push(tmp26);
+      }
+      let obj3 = { icon: tmp6(tmp2[20]), IconComponent: tmp(tmp2[21]).SendMessageIcon, iconVariant: "default", label: tmp20, subLabel: tmp22, onPress: tmp24 };
+      cResult[20] = tmp22;
+      cResult[21] = tmp24;
+      cResult[22] = obj3;
+      tmp26 = obj3;
+    }
+    const intl = tmp(tmp2[19]).intl;
+    const obj5 = { incoming: sum, outgoing };
+    cResult[15] = outgoing;
+    cResult[16] = sum;
+    cResult[17] = intl.formatToPlainString(navigation(incoming[19]).t["1IEawz"], obj5);
+    const formatToPlainStringResult = intl.formatToPlainString(navigation(incoming[19]).t["1IEawz"], obj5);
+  } else {
+    class F {
+      constructor(defaultSelectedUserId) {
+        let obj2;
+        const obj = { screen: "new-message", params: obj2 };
+        obj2 = { defaultSelectedUserId: defaultSelectedUserId.id, sourcePage: "Friends Screen" };
+        navigation.navigate("friends", obj);
+      }
+    }
+  }
+  cResult[8] = incoming;
+  cResult[9] = navigation;
+  cResult[10] = outgoing;
+  cResult[11] = pendingIgnored;
+  cResult[12] = spam;
+  cResult[13] = items2;
+}) : (() => {
   let analyticsLocations;
   let closure_1;
   let items5;
   let outgoing;
   let spam;
-  let obj = navigation(analyticsLocations[7]);
+  let obj = navigation(analyticsLocations[9]);
   navigation = obj.useNavigation();
   let tmp2 = closure_9();
   importDefault = tmp2;
   const tmp3 = require("useAnalyticsLocations");
   analyticsLocations = tmp3(require("AnalyticsLocation").FRIENDS_LIST).analyticsLocations;
   const bottom = require("useSafeAreaInsets")().bottom;
-  let obj2 = navigation(analyticsLocations[11]);
+  let obj2 = navigation(analyticsLocations[14]);
   let items = [spam, outgoing];
   const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
     let items;
@@ -65,8 +289,8 @@ export default function FriendsScreen() {
     const obj = { incoming: obj2.getIncomingFriendRequestCount(items), outgoing: obj3.getOutgoingFriendRequestCount(items1), spam: spam.getSpamCount(), pendingIgnored: spam.getPendingIgnoredCount() };
     items = [spam, outgoing];
     items1 = [spam, outgoing];
-    obj2 = navigation(analyticsLocations[12]);
-    obj3 = navigation(analyticsLocations[12]);
+    obj2 = navigation(analyticsLocations[13]);
+    obj3 = navigation(analyticsLocations[13]);
     return obj;
   });
   const incoming = stateFromStoresObject.incoming;
@@ -88,8 +312,8 @@ export default function FriendsScreen() {
     navigation.navigate("friends", obj);
   }, items2);
   const effect = bottom.useEffect(() => {
-    closure_1(analyticsLocations[15])({ tab_opened: null });
-    closure_1(analyticsLocations[16])({ tab_opened: null });
+    closure_1(analyticsLocations[17])({ tab_opened: null });
+    closure_1(analyticsLocations[18])({ tab_opened: null });
   }, []);
   const items3 = [incoming, navigation, outgoing, spam, pendingIgnored];
   const items4 = [bottom, incoming, navigation, outgoing, tmp2, spam];
@@ -158,13 +382,13 @@ export default function FriendsScreen() {
       Icon = TableRow2.TableRow.Icon;
       intl5 = intl6.intl;
       if (incoming + outgoing > 0) {
-        const intl2 = tmp11(1115).intl;
+        const intl2 = tmp11(1127).intl;
         const obj5 = { incoming, outgoing };
-        formatToPlainStringResult = intl2.formatToPlainString(tmp11(1115).t["1IEawz"], obj5);
+        formatToPlainStringResult = intl2.formatToPlainString(tmp11(1127).t["1IEawz"], obj5);
       } else {
-        const intl = tmp11(1115).intl;
+        const intl = tmp11(1127).intl;
         const obj6 = { spam: tmp6 };
-        formatToPlainStringResult = intl.formatToPlainString(tmp11(1115).t.e6BtLq, obj6);
+        formatToPlainStringResult = intl.formatToPlainString(tmp11(1127).t.e6BtLq, obj6);
       }
       tmp10Result = tmp10(tmp2, obj2);
     }
@@ -190,7 +414,10 @@ export default function FriendsScreen() {
     return tmp(View, obj);
   }, items4);
   let obj3 = { value: analyticsLocations, children: items5 };
-  const AnalyticsLocationProvider = navigation(analyticsLocations[8]).AnalyticsLocationProvider;
-  items5 = [pendingIgnored(require("SearchableUserList"), { onSelectUser: callback, handleMessage: callback1, actions: memo, withAffinitySuggestions: false, withGameFriends: true, defaultNoResultsFound: memo1, hideSearchOnDefaultNoResults: true, disableThemedGradient: true }), pendingIgnored(navigation(analyticsLocations[25]).TTIFirstContentfulPaint, { label: "friends" })];
+  const AnalyticsLocationProvider = navigation(analyticsLocations[10]).AnalyticsLocationProvider;
+  items5 = [pendingIgnored(require("SearchableUserList"), { onSelectUser: callback, handleMessage: callback1, actions: memo, withAffinitySuggestions: false, withGameFriends: true, defaultNoResultsFound: memo1, hideSearchOnDefaultNoResults: true, disableThemedGradient: true }), pendingIgnored(navigation(analyticsLocations[27]).TTIFirstContentfulPaint, { label: "friends" })];
   return closure_8(AnalyticsLocationProvider, obj3);
-};
+});
+let result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/FriendsScreen.tsx");
+
+export default tmp4;

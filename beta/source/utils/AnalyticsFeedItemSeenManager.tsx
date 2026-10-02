@@ -1,11 +1,11 @@
-// Module ID: 7327
-// Function ID: 7328
+// Module ID: 7331
+// Function ID: 7332
 // Name: AnalyticsFeedItemSeenManager
-// Dependencies: [5, 38, 573, 2]
+// Dependencies: [5, 38, 585, 2]
 
-// Module 7327 (AnalyticsFeedItemSeenManager)
+// Module 7331 (AnalyticsFeedItemSeenManager)
 import _modDef38 from "module_38" /* 38 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -295,7 +295,7 @@ class AnalyticsFeedItemSeenManager {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {
@@ -324,7 +324,7 @@ class AnalyticsFeedItemSeenManager {
                   } else {
                     closure_128_0();
                     c2 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp8) {
                   c2 = 3;
@@ -347,7 +347,7 @@ class AnalyticsFeedItemSeenManager {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -377,7 +377,7 @@ class AnalyticsFeedItemSeenManager {
             } else {
               closure_0();
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp10) {
             c3 = 3;

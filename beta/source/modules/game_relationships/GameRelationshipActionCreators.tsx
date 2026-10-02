@@ -1,15 +1,15 @@
-// Module ID: 10331
-// Function ID: 10332
+// Module ID: 10374
+// Function ID: 10375
 // Name: GameRelationshipActionCreators
-// Dependencies: [5, 1074, 4735, 5203, 1115, 1271, 4685, 2]
+// Dependencies: [5, 1086, 4737, 5204, 1127, 1283, 4687, 2]
 
-// Module 10331 (GameRelationshipActionCreators)
-import intl3 from "intl" /* 1115 */;
-import shared from "shared" /* 4685 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4735 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+// Module 10374 (GameRelationshipActionCreators)
+import intl3 from "intl" /* 1127 */;
+import shared from "shared" /* 4687 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4737 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -23,8 +23,8 @@ function showRequestFailedAlert(arg0) {
   AlertActionCreatorsDefault;
   intl = intl3.intl;
   if (null == anyErrorMessage) {
-    const intl2 = tmp(1115).intl;
-    anyErrorMessage = intl2.string(tmp(1115).t.fEptJP);
+    const intl2 = tmp(1127).intl;
+    anyErrorMessage = intl2.string(tmp(1127).t.fEptJP);
   }
   show(obj);
 }
@@ -58,10 +58,10 @@ let obj = function _deleteGameRelationship() {
       tmp();
       c4 = 0;
     }
-    await "HermesInternal";
+    await "IconComponent";
     let closure_2 = tmp;
     ({ userId: c0, applicationId: c1, onSuccess: c2 } = closure_0);
-    return "flex";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -85,9 +85,9 @@ obj = function _removeGameFriend() {
         }
       };
       await closure_130_7(obj5);
-      await "HermesInternal";
+      await "IconComponent";
       ({ userId: c0, applicationId: c1 } = closure_0);
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -114,9 +114,9 @@ obj = function _cancelGameFriendRequest() {
         }
       };
       await closure_130_7(obj5);
-      await "HermesInternal";
+      await "IconComponent";
       ({ userId: c0, applicationId: c1 } = closure_0);
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -136,7 +136,7 @@ obj = {
     }
     ({ userId, applicationId } = arg0);
     const FRIEND = constants.FRIEND;
-    const HTTP = onSuccess(1271).HTTP;
+    const HTTP = onSuccess(1283).HTTP;
     const request = { url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type: FRIEND }, oldFormErrors: true, rejectWithError: false };
     const putResult = HTTP.put(request);
     const nextPromise = putResult.then(() => {

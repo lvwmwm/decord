@@ -1,12 +1,12 @@
-// Module ID: 15413
-// Function ID: 15414
+// Module ID: 15401
+// Function ID: 15402
 // Name: DesignSystemAIShimmerSetting
-// Dependencies: [7417, 1074, 11006, 15414, 2]
+// Dependencies: [7421, 1086, 10874, 15402, 2]
 
-// Module 15413 (DesignSystemAIShimmerSetting)
-import Constants from "Constants" /* 1074 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 15401 (DesignSystemAIShimmerSetting)
+import Constants from "Constants" /* 1086 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

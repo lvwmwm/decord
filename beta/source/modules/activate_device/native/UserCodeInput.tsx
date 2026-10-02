@@ -1,22 +1,23 @@
-// Module ID: 13425
-// Function ID: 13426
+// Module ID: 13427
+// Function ID: 13428
 // Name: UserCodeInput
-// Dependencies: [32, 19, 17, 13426, 21, 4836, 13427, 13428, 4832, 1115, 6024, 5281, 2]
-// Exports: UserCodeInput
+// Dependencies: [32, 19, 17, 13428, 21, 4837, 558, 576, 13429, 1127, 4833, 13430, 6021, 5282, 2]
 
-// Module 13425 (UserCodeInput)
+// Module 13427 (UserCodeInput)
 import react_native from "react-native" /* 17 */;
-import intl5 from "intl" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 6024 */;
-import OAuthConstants2 from "OAuthConstants" /* 13426 */;
-import useUserCodeSubmit from "useUserCodeSubmit" /* 13427 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 13428 */;
+import react2 from "react" /* 576 */;
+import intl5 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6021 */;
+import OAuthConstants2 from "OAuthConstants" /* 13428 */;
+import useUserCodeSubmit from "useUserCodeSubmit" /* 13429 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 13430 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -26,9 +27,157 @@ const View = react_native.View;
 const OAuthConstants = OAuthConstants2.OAuthConstants;
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ text: { textAlign: "center" } });
-const result = size.fileFinishedImporting("modules/activate_device/native/UserCodeInput.tsx");
-
-export const UserCodeInput = function UserCodeInput(prefilledUserCode) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((prefilledUserCode) => {
+  let arr;
+  let closure_129_0;
+  let error;
+  let first;
+  let items;
+  let manualSubmit;
+  let onClose;
+  let onUserCodeAccepted;
+  let submitting;
+  let tmp10;
+  let tmp13;
+  let tmp15;
+  const obj = react2;
+  const cResult = obj.c(23);
+  let str = prefilledUserCode.prefilledUserCode;
+  ({ onClose, onUserCodeAccepted } = prefilledUserCode);
+  const tmp4 = closure_10();
+  const useState = react.useState;
+  if (str == null) {
+    str = "";
+  }
+  [arr, closure_129_0] = useState(str);
+  _slicedToArray(useState(str), 2);
+  const tmpResult = useUserCodeSubmit;
+  const userCodeSubmit = tmpResult.useUserCodeSubmit(arr, onUserCodeAccepted, onClose);
+  ({ manualSubmit, error, submitting } = userCodeSubmit);
+  const text = tmp4.text;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl5.t.KYPNUv);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.text) {
+    const obj2 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: text, children: first };
+    const tmp12 = metroImportDefault(Text_Text.Text, obj2);
+    cResult[1] = tmp4.text;
+    cResult[2] = tmp12;
+    tmp10 = tmp12;
+  } else {
+    tmp10 = cResult[2];
+  }
+  const text2 = tmp4.text;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl2 = tmp(1127).intl;
+    const stringResult1 = intl2.string(intl5.t.xRHk7f);
+    cResult[3] = stringResult1;
+    tmp13 = stringResult1;
+  } else {
+    tmp13 = cResult[3];
+  }
+  if (cResult[4] !== tmp4.text) {
+    const obj3 = { variant: "text-md/medium", color: "text-default", style: text2, children: tmp13 };
+    const tmp17 = metroImportDefault(Text_Text.Text, obj3);
+    cResult[4] = tmp4.text;
+    cResult[5] = tmp17;
+    tmp15 = tmp17;
+  } else {
+    tmp15 = cResult[5];
+  }
+  if (cResult[6] === tmp10) {
+    let tmp20;
+    let tmp21;
+    const _Symbol = Symbol;
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      class G {
+        constructor(arg0) {
+          return closure_0(prefilledUserCode);
+        }
+      }
+      cResult[9] = G;
+      tmp20 = G;
+    } else {
+      class G {
+        constructor(arg0) {
+          return closure_0(prefilledUserCode);
+        }
+      }
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+      class G {
+        constructor(arg0) {
+          return closure_0(prefilledUserCode);
+        }
+      }
+      const obj4 = { number: OAuthConstants.USER_CODE_LENGTH };
+      const formatToPlainStringResult = obj6.formatToPlainString(intl5.t["0tbz6x"], obj4);
+      cResult[10] = formatToPlainStringResult;
+      tmp21 = formatToPlainStringResult;
+    } else {
+      class G {
+        constructor(arg0) {
+          return closure_0(prefilledUserCode);
+        }
+      }
+    }
+    if (cResult[11] === error) {
+      let tmp28;
+      class G {
+        constructor(arg0) {
+          return closure_0(prefilledUserCode);
+        }
+      }
+      const _Symbol3 = Symbol;
+      if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+        class G {
+          constructor(arg0) {
+            return closure_0(prefilledUserCode);
+          }
+        }
+        const stringResult2 = obj9.string(intl5.t["3PatSz"]);
+        cResult[14] = stringResult2;
+        tmp28 = stringResult2;
+      } else {
+        class G {
+          constructor(arg0) {
+            return closure_0(prefilledUserCode);
+          }
+        }
+      }
+      if (cResult[15] === manualSubmit) {
+        class G {
+          constructor(arg0) {
+            return closure_0(prefilledUserCode);
+          }
+        }
+      }
+      const obj5 = { size: "lg", text: tmp28, onPress: manualSubmit, loading: submitting, disabled: arr.length !== OAuthConstants.USER_CODE_LENGTH, grow: true };
+      cResult[15] = manualSubmit;
+      cResult[16] = submitting;
+      cResult[17] = arr.length !== OAuthConstants.USER_CODE_LENGTH;
+      cResult[18] = metroImportDefault(components_Button_Button.Button, obj5);
+      const tmp34 = metroImportDefault(components_Button_Button.Button, obj5);
+    }
+    const obj7 = { onChange: tmp20, maxLength: OAuthConstants.USER_CODE_LENGTH, value: arr, autoFocus: true, autoComplete: "off", placeholder: tmp21, errorMessage: error };
+    cResult[11] = error;
+    cResult[12] = arr;
+    cResult[13] = metroImportDefault(TextInput_TextInput.TextInput, obj7);
+    const tmp27 = metroImportDefault(TextInput_TextInput.TextInput, obj7);
+  }
+  const obj8 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: items };
+  items = [tmp10, tmp15];
+  cResult[6] = tmp10;
+  cResult[7] = tmp15;
+  cResult[8] = metroImportAll(View, obj8);
+  metroImportAll(View, obj8);
+}) : ((prefilledUserCode) => {
   let arr;
   let c0;
   let error;
@@ -87,4 +236,7 @@ export const UserCodeInput = function UserCodeInput(prefilledUserCode) {
   intl4 = intl5.intl;
   items1[2] = metroImportDefault(Button, obj8);
   return metroImportAll(React4, obj2);
-};
+});
+const result = size.fileFinishedImporting("modules/activate_device/native/UserCodeInput.tsx");
+
+export const UserCodeInput = tmp3;

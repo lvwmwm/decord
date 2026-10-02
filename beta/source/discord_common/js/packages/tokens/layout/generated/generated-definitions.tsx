@@ -1,9 +1,9 @@
-// Module ID: 671
-// Function ID: 672
+// Module ID: 683
+// Function ID: 684
 // Name: Layout
 // Dependencies: [2]
 
-// Module 671 (Layout)
+// Module 683 (Layout)
 import size from "module_2" /* 2 */;
 
 let obj3;

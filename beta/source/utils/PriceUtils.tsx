@@ -1,20 +1,20 @@
-// Module ID: 6655
-// Function ID: 6656
+// Module ID: 6656
+// Function ID: 6657
 // Name: PriceUtils
-// Dependencies: [2112, 4490, 1374, 1085, 1364, 6656, 6658, 6660, 1115, 4488, 2]
+// Dependencies: [2115, 4493, 1380, 1097, 1370, 6657, 6659, 6661, 1127, 4491, 2]
 // Exports: formatDualPriceForBG, formatPercent, formatSubscriptionPlanRate, maybeShortenPrice, shortenAndFormatPrice
 
-// Module 6655 (PriceUtils)
-import Constants from "Constants" /* 1085 */;
-import intl4 from "intl" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import PremiumUtils from "PremiumUtils" /* 4488 */;
-import utils_PriceUtils from "utils/PriceUtils" /* 6656 */;
-import IAPStore from "IAPStore" /* 6658 */;
-import GenericIAPStore from "GenericIAPStore" /* 6660 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import BillingInfoStore from "BillingInfoStore" /* 4490 */;
+// Module 6656 (PriceUtils)
+import Constants from "Constants" /* 1097 */;
+import intl4 from "intl" /* 1127 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import PremiumUtils from "PremiumUtils" /* 4491 */;
+import utils_PriceUtils from "utils/PriceUtils" /* 6657 */;
+import IAPStore from "IAPStore" /* 6659 */;
+import GenericIAPStore from "GenericIAPStore" /* 6661 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import BillingInfoStore from "BillingInfoStore" /* 4493 */;
 import size from "module_2" /* 2 */;
 
 function formatSingleCurrencyPrice(result, BGN, localeOverride) {

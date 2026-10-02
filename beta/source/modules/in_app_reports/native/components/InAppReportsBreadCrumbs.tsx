@@ -1,37 +1,171 @@
-// Module ID: 12465
-// Function ID: 12466
+// Module ID: 12463
+// Function ID: 12464
 // Name: InAppReportsBreadCrumbs
-// Dependencies: [19, 17, 21, 4836, 576, 12, 4832, 8092, 1115, 2619, 2]
-// Exports: default
+// Dependencies: [32, 109, 19, 17, 21, 4837, 588, 558, 576, 12, 8089, 1127, 2622, 4833, 2]
 
-// Module 12465 (InAppReportsBreadCrumbs)
+// Module 12463 (InAppReportsBreadCrumbs)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import nativeDefault from "native" /* 588 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let closure_4;
-let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
 let rect;
 let size;
+let closure_3 = ["element", "menuName"];
 const View = react_native.View;
-({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: { flex: 0, alignSelf: "stretch", marginBottom: 16, paddingHorizontal: 16 }, title: { lineHeight: 16, marginBottom: 8 }, breadCrumbItemContainer: { flexDirection: "row", justifyContent: "flex-start", marginBottom: 8, marginEnd: 32, overflow: "visible" }, breadCrumbDot: size, breadCrumbBar: rect, breadCrumbText: { marginStart: 8, lineHeight: 20 } };
 size = { marginStart: 2, marginTop: 8, width: 4, height: 4, borderRadius: 2, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 createStyles = createStyles.createStyles;
 rect = { position: "absolute", width: 2, top: 10, bottom: -12, left: 3, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-let closure_6 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsBreadCrumbs.tsx");
-
-export default function Breadcrumbs(element) {
+let closure_9 = createStyles(obj);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let element;
+  let found;
+  let items;
+  let menuName;
+  let tmp = _require;
+  const tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(12);
+  ({ element, menuName } = arg0);
+  let tmp4 = _objectWithoutProperties(arg0, closure_3);
+  const tmp5 = closure_9();
+  _require = tmp5;
+  if (null != element) {
+    if ("breadcrumbs" === element.type) {
+      let first;
+      let tmp7;
+      const _Symbol2 = Symbol;
+      if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+        const fn = function h(multiSelect) {
+          multiSelect = multiSelect.multiSelect;
+          const first = _slicedToArray(multiSelect.destination, 1)[0];
+          let state;
+          const _Object = Object;
+          if (multiSelect != null) {
+            state = multiSelect.state;
+          }
+          if (state == null) {
+            state = {};
+          }
+          const items = [null, null];
+          const values2 = values(state);
+          if (values2.length > 0) {
+            items[0] = values2.join(", ");
+          }
+          if ("" !== first) {
+            items[1] = first;
+          }
+          return items;
+        };
+        cResult[0] = fn;
+        first = fn;
+      } else {
+        first = cResult[0];
+      }
+      const _Symbol = Symbol;
+      if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+        const fn2 = function p(arg0) {
+          return null != arg0;
+        };
+        cResult[1] = fn2;
+        tmp7 = fn2;
+      } else {
+        tmp7 = cResult[1];
+      }
+      let obj2 = found(12);
+      const flatMapResult = obj2.flatMap(tmp4.history, first);
+      const tmp8 = found;
+      found = flatMapResult.filter(tmp7);
+      if (0 === found.length) {
+        return null;
+      } else {
+        let tmp9;
+        const container = tmp5.container;
+        if (cResult[2] !== menuName) {
+          let stringResult;
+          const REPORT_TO_MOD = tmp(8089).ReportMenuTypeSets.REPORT_TO_MOD;
+          const hasItem = REPORT_TO_MOD.has(menuName);
+          const intl = tmp(1127).intl;
+          const string = intl.string;
+          if (hasItem) {
+            stringResult = string(tmp8(2622)["6mx/DP"]);
+          } else {
+            stringResult = string(tmp(1127).t["+3V9Tp"]);
+          }
+          cResult[2] = menuName;
+          cResult[3] = stringResult;
+          tmp9 = stringResult;
+        } else {
+          tmp9 = cResult[3];
+        }
+        if (cResult[4] === tmp5.title) {
+          let tmp12;
+          if (cResult[5] === tmp9) {
+            tmp12 = cResult[6];
+          }
+          const mapped = found.map((children, index) => {
+            let items;
+            let tmp4 = null;
+            const obj = { style: closure_0.breadCrumbItemContainer, children: items };
+            const tmp = metroImportAll;
+            if (index !== found.length - 1) {
+              const obj2 = { style: closure_0.breadCrumbBar };
+              tmp4 = metroImportDefault(tmp2, obj2);
+            }
+            items = [tmp4, , ];
+            const obj3 = { style: closure_0.breadCrumbDot };
+            items[1] = metroImportDefault(View, obj3);
+            const obj4 = { lineClamp: 2, ellipsizeMode: "tail", style: closure_0.breadCrumbText, variant: "text-md/medium", children };
+            items[2] = metroImportDefault(Text_Text.Text, obj4);
+            return tmp(View, obj, "" + children + "+" + index);
+          });
+          if (cResult[7] === View) {
+            if (cResult[8] === tmp5.container) {
+              if (cResult[9] === tmp12) {
+                let tmp16;
+                if (cResult[10] === mapped) {
+                  tmp16 = cResult[11];
+                }
+                return tmp16;
+              }
+            }
+          }
+          let obj3 = { style: container, children: items };
+          items = [tmp12, mapped];
+          const tmp18 = closure_8(View, obj3);
+          cResult[7] = View;
+          cResult[8] = tmp5.container;
+          cResult[9] = tmp12;
+          cResult[10] = mapped;
+          cResult[11] = tmp18;
+          tmp16 = tmp18;
+        }
+        let obj4 = { style: tmp5.title, accessibilityRole: "header", variant: "text-xs/bold", children: tmp9 };
+        const tmp14 = closure_7(tmp(4833).Text, obj4);
+        cResult[4] = tmp5.title;
+        cResult[5] = tmp9;
+        cResult[6] = tmp14;
+        tmp12 = tmp14;
+      }
+    }
+  }
+  return null;
+}) : ((element) => {
   let closure_0;
   let items;
   let stringResult;
@@ -39,7 +173,7 @@ export default function Breadcrumbs(element) {
   const menuName = element.menuName;
   let found;
   const merged = Object.assign(element, Object.assign({ element: 0, menuName: 0 }));
-  const tmp2 = closure_6();
+  const tmp2 = closure_9();
   _require = tmp2;
   if (null != element) {
     if ("breadcrumbs" === element.type) {
@@ -78,13 +212,13 @@ export default function Breadcrumbs(element) {
         const intl = require("intl").intl;
         const string = intl.string;
         const tmp10 = _require;
-        const tmp7 = closure_5;
+        const tmp7 = closure_8;
         const tmp8 = View;
-        const tmp9 = closure_4;
+        const tmp9 = closure_7;
         if (hasItem) {
-          stringResult = string(tmp5(2619)["6mx/DP"]);
+          stringResult = string(tmp5(2622)["6mx/DP"]);
         } else {
-          stringResult = string(tmp10(1115).t["+3V9Tp"]);
+          stringResult = string(tmp10(1127).t["+3V9Tp"]);
         }
         items = [
           tmp9(Text, obj3),
@@ -92,16 +226,16 @@ export default function Breadcrumbs(element) {
                   let items;
                   let tmp4 = null;
                   const obj = { style: closure_0.breadCrumbItemContainer, children: items };
-                  const tmp = hasOwnProperty;
+                  const tmp = metroImportAll;
                   if (index !== found.length - 1) {
                     const obj2 = { style: closure_0.breadCrumbBar };
-                    tmp4 = React3(tmp2, obj2);
+                    tmp4 = metroImportDefault(tmp2, obj2);
                   }
                   items = [tmp4, , ];
                   const obj3 = { style: closure_0.breadCrumbDot };
-                  items[1] = React3(View, obj3);
+                  items[1] = metroImportDefault(View, obj3);
                   const obj4 = { lineClamp: 2, ellipsizeMode: "tail", style: closure_0.breadCrumbText, variant: "text-md/medium", children };
-                  items[2] = React3(Text_Text.Text, obj4);
+                  items[2] = metroImportDefault(Text_Text.Text, obj4);
                   return tmp(View, obj, "" + children + "+" + index);
                 })
         ];
@@ -111,4 +245,8 @@ export default function Breadcrumbs(element) {
     }
   }
   return null;
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsBreadCrumbs.tsx");
+
+export default tmp5;

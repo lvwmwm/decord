@@ -1,21 +1,21 @@
-// Module ID: 17722
-// Function ID: 17723
+// Module ID: 17724
+// Function ID: 17725
 // Name: handleIncomingURL
-// Dependencies: [5, 2045, 4859, 1980, 1074, 3, 6895, 17721, 5043, 1241, 13395, 4813, 4818, 1254, 7826, 15568, 17723, 2]
+// Dependencies: [5, 2051, 4860, 1986, 1086, 3, 6899, 17723, 5044, 1253, 13397, 4814, 4819, 1266, 7830, 15570, 17725, 2]
 // Exports: default
 
-// Module 17722 (handleIncomingURL)
+// Module 17724 (handleIncomingURL)
 import LoggerDefault from "Logger" /* 3 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5043 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 6895 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 13395 */;
-import DeepLinkTypes from "DeepLinkTypes" /* 17721 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5044 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 6899 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 13397 */;
+import DeepLinkTypes from "DeepLinkTypes" /* 17723 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import AppStateStore from "AppStateStore" /* 1980 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import AppStateStore from "AppStateStore" /* 1986 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let channel, channelId, closure_2, closure_3, closure_4, closure_5, message;
@@ -52,7 +52,7 @@ let obj = function _handleIncomingURL() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -174,18 +174,18 @@ let obj = function _handleIncomingURL() {
                       }
                     }
                     c8 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   } else {
                     const parts = url.split("voice/");
                     if (2 !== parts.length) {
                       c8 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "IconComponent", done: null };
                     } else {
                       const str36 = parts[1];
                       const parts1 = str36.split("/");
                       if (0 === parts1.length) {
                         c8 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "IconComponent", done: null };
                       } else if ("user" !== parts1[0]) {
                         if ("invite" === parts1[0]) {
                           const obj12 = { payload: obj13 };
@@ -225,7 +225,7 @@ let obj = function _handleIncomingURL() {
                 }
               }
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === tmp4) {
             c6 = 0;

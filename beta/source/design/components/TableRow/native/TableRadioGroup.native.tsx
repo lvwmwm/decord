@@ -1,14 +1,14 @@
-// Module ID: 5997
-// Function ID: 5998
+// Module ID: 5995
+// Function ID: 5996
 // Name: TableRadioGroup
-// Dependencies: [32, 19, 1074, 21, 5998, 5999, 6000, 2]
-// Exports: TableRadioGroup
+// Dependencies: [32, 19, 1086, 21, 558, 576, 5996, 5994, 5997, 2]
 
-// Module 5997 (TableRadioGroup)
+// Module 5995 (TableRadioGroup)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -17,11 +17,186 @@ let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const NOOP = Constants.NOOP;
 let jsx = Fragment.jsx;
-const context = react.createContext({ selectedValue: null, onSelect: NOOP });
-const result = size.fileFinishedImporting("design/components/TableRow/native/TableRadioGroup.native.tsx");
-
-export const TableRadioGroupContext = context;
-export const TableRadioGroup = function TableRadioGroup(arg0) {
+let context = react.createContext({ selectedValue: null, onSelect: NOOP });
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupRef) => {
+  let accessibilityLabel;
+  let c3;
+  let children;
+  let closure_1;
+  let defaultValue;
+  let description;
+  let hasIcons;
+  let helperText;
+  let onChange;
+  let title;
+  let tmp7;
+  let value;
+  let tmp = onChange;
+  const obj = onChange(576);
+  const cResult = obj.c(26);
+  ({ children, value, defaultValue, onChange } = groupRef);
+  ({ title, description, helperText, hasIcons, accessibilityLabel } = groupRef);
+  let tmp4 = undefined !== value;
+  dependencyMap = tmp4;
+  let tmp5 = null;
+  groupRef = groupRef.groupRef;
+  const useState = react.useState;
+  if (!tmp4) {
+    if (defaultValue == null) {
+      defaultValue = null;
+    }
+    tmp5 = defaultValue;
+  }
+  const tmp6 = _slicedToArray(useState(tmp5), 2);
+  [tmp7, _slicedToArray] = tmp6;
+  if (tmp4) {
+    tmp7 = value;
+  }
+  if (tmp7 == null) {
+    tmp7 = null;
+  }
+  react = tmp7;
+  if (cResult[0] === tmp4) {
+    if (cResult[1] === onChange) {
+      let tmp8;
+      let tmp9;
+      if (cResult[2] === tmp7) {
+        tmp8 = cResult[3];
+        tmp9 = cResult[4];
+      }
+      const imperativeHandle = obj2.useImperativeHandle(groupRef, tmp8, tmp9);
+      context = obj2.useContext(tmp(5996).RedesignCompatContext);
+      if (cResult[5] === tmp4) {
+        let tmp12;
+        if (cResult[6] === onChange) {
+          tmp12 = cResult[7];
+        }
+        if (cResult[8] === tmp12) {
+          let tmp13;
+          let tmp15;
+          if (cResult[9] === tmp7) {
+            tmp13 = cResult[10];
+          }
+          if (cResult[11] === children) {
+            let tmp14;
+            if (cResult[12] === context) {
+              tmp14 = cResult[13];
+            }
+            if (cResult[16] === accessibilityLabel) {
+              if (cResult[17] === description) {
+                if (cResult[18] === hasIcons) {
+                  if (cResult[19] === helperText) {
+                    if (cResult[20] === tmp14) {
+                      let tmp17;
+                      if (cResult[21] === title) {
+                        tmp17 = cResult[22];
+                      }
+                      if (cResult[23] === tmp13) {
+                        let tmp20;
+                        if (cResult[24] === tmp17) {
+                          tmp20 = cResult[25];
+                        }
+                        return tmp20;
+                      }
+                      const obj3 = { value: tmp13, children: tmp17 };
+                      const tmp23 = context(context.Provider, obj3);
+                      cResult[23] = tmp13;
+                      cResult[24] = tmp17;
+                      cResult[25] = tmp23;
+                      tmp20 = tmp23;
+                    }
+                  }
+                }
+              }
+            }
+            const obj4 = { accessibilityRole: "radiogroup", accessibilityLabel, title, description, helperText, hasIcons, children: tmp14 };
+            const tmp19 = context(tmp(5997).TableRowGroup, obj4);
+            cResult[16] = accessibilityLabel;
+            cResult[17] = description;
+            cResult[18] = hasIcons;
+            cResult[19] = helperText;
+            cResult[20] = tmp14;
+            cResult[21] = title;
+            cResult[22] = tmp19;
+            tmp17 = tmp19;
+          }
+          if (cResult[14] !== context) {
+            class M {
+              constructor(type) {
+                if (!react.isValidElement(type)) {
+                  let tmp4 = null;
+                  return tmp4;
+                }
+                tmp4 = type;
+              }
+            }
+            cResult[14] = context;
+            cResult[15] = M;
+            tmp15 = M;
+          } else {
+            class M {
+              constructor(type) {
+                if (!react.isValidElement(type)) {
+                  let tmp4 = null;
+                  return tmp4;
+                }
+                tmp4 = type;
+              }
+            }
+          }
+          const Children = obj2.Children;
+          const mapped = Children.map(children, tmp15);
+          cResult[11] = children;
+          cResult[12] = context;
+          cResult[13] = mapped;
+          tmp14 = mapped;
+        }
+        const obj5 = { selectedValue: tmp7, onSelect: tmp12 };
+        cResult[8] = tmp12;
+        cResult[9] = tmp7;
+        cResult[10] = obj5;
+        tmp13 = obj5;
+      }
+      const fn2 = function _(arg0) {
+        const tmp = closure_1;
+        if (!tmp) {
+          _slicedToArray(arg0);
+        }
+        if (onChange != null) {
+          tmp4(arg0);
+        }
+      };
+      cResult[5] = tmp4;
+      cResult[6] = onChange;
+      cResult[7] = fn2;
+      tmp12 = fn2;
+    }
+  }
+  const fn = function u() {
+    return {
+      setValue(arg0) {
+        const tmp = closure_1_1;
+        if (!tmp) {
+          closure_1_2(arg0);
+        }
+        if (onChange != null) {
+          tmp4(arg0);
+        }
+      },
+      getValue() {
+        return closure_1_3;
+      }
+    };
+  };
+  const items = [tmp4, onChange, tmp7];
+  cResult[0] = tmp4;
+  cResult[1] = onChange;
+  cResult[2] = tmp7;
+  cResult[3] = fn;
+  cResult[4] = items;
+  tmp9 = items;
+  tmp8 = fn;
+}) : ((arg0) => {
   let Children;
   let _undefined;
   let accessibilityLabel;
@@ -79,7 +254,7 @@ export const TableRadioGroup = function TableRadioGroup(arg0) {
       return selectedValue;
     }
   }), items);
-  jsx = obj.useContext(onChange(5998).RedesignCompatContext);
+  jsx = obj.useContext(onChange(5996).RedesignCompatContext);
   const items1 = [tmp, onChange];
   onSelect = obj.useCallback((arg0) => {
     const tmp = closure_1;
@@ -108,6 +283,10 @@ export const TableRadioGroup = function TableRadioGroup(arg0) {
     })
   });
   Children = obj.Children;
-  const TableRowGroup = onChange(5999).TableRowGroup;
+  const TableRowGroup = onChange(5997).TableRowGroup;
   return <Provider value={react.useMemo(() => ({ selectedValue, onSelect }), items2)}>{null}</Provider>;
-};
+});
+const result = size.fileFinishedImporting("design/components/TableRow/native/TableRadioGroup.native.tsx");
+
+export const TableRadioGroupContext = context;
+export const TableRadioGroup = tmp3;

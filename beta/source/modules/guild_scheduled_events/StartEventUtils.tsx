@@ -1,16 +1,16 @@
-// Module ID: 9266
-// Function ID: 9267
+// Module ID: 9244
+// Function ID: 9245
 // Name: StartEventUtils
-// Dependencies: [5, 2049, 2045, 2067, 2051, 1074, 9014, 38, 7854, 8981, 2]
+// Dependencies: [5, 2055, 2051, 2073, 2057, 1086, 8991, 38, 7858, 8956, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 9266 (StartEventUtils)
-import Constants from "Constants" /* 1074 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
+// Module 9244 (StartEventUtils)
+import Constants from "Constants" /* 1086 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
 import size from "module_2" /* 2 */;
 
 let permissionOverwrites;
@@ -37,7 +37,7 @@ let obj = function _createStageChannelForEvent() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -61,7 +61,7 @@ let obj = function _createStageChannelForEvent() {
               closure_4 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -148,7 +148,7 @@ obj = function _preStartEventActions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -182,7 +182,7 @@ obj = function _preStartEventActions() {
             closure_131_1(closure_131_2[7])(null != entity_type, "could not find or create channel");
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp16) {
           c5 = 3;
           throw tmp16;
@@ -262,12 +262,12 @@ obj = function _setEventAsActive() {
         c5 = 3;
         return { value, done: true };
       }
-      await "HermesInternal";
+      await "IconComponent";
       flag = closure_1;
       if (closure_1 === undefined) {
         flag = false;
       }
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;

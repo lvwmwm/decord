@@ -1,11 +1,11 @@
-// Module ID: 4897
-// Function ID: 4898
+// Module ID: 4898
+// Function ID: 4899
 // Name: DirectVideoStream
-// Dependencies: [1995, 2]
+// Dependencies: [2001, 2]
 // Exports: acquireDirectVideoStream, getDirectVideoStreamConsumerCount, supportsDirectVideoStreams
 
-// Module 4897 (DirectVideoStream)
-import inject from "inject" /* 1995 */;
+// Module 4898 (DirectVideoStream)
+import inject from "inject" /* 2001 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

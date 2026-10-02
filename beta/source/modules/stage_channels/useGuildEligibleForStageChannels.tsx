@@ -1,21 +1,20 @@
-// Module ID: 16653
-// Function ID: 16654
+// Module ID: 16655
+// Function ID: 16656
 // Name: useGuildEligibleForStageChannels
-// Dependencies: [2067, 1074, 504, 2]
-// Exports: isGuildEligibleForStageChannels, useGuildEligibleForStageChannels
+// Dependencies: [2073, 1086, 558, 576, 504, 2]
+// Exports: isGuildEligibleForStageChannels
 
-// Module 16653 (useGuildEligibleForStageChannels)
-import Constants from "Constants" /* 1074 */;
-import GuildStore from "GuildStore" /* 2067 */;
+// Module 16655 (useGuildEligibleForStageChannels)
+import Constants from "Constants" /* 1086 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const GuildFeatures = Constants.GuildFeatures;
-const result = size.fileFinishedImporting("modules/stage_channels/useGuildEligibleForStageChannels.tsx");
-
-export const isGuildEligibleForStageChannels = function isGuildEligibleForStageChannels(id) {
+function isGuildEligibleForStageChannels(id) {
   let obj;
   let tmp = arg1;
   if (arg1 === undefined) {
@@ -31,8 +30,50 @@ export const isGuildEligibleForStageChannels = function isGuildEligibleForStageC
     hasItem = features.has(GuildFeatures.COMMUNITY);
   }
   return _Boolean(hasItem);
-};
-export const useGuildEligibleForStageChannels = function useGuildEligibleForStageChannels(arg0) {
+}
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function s() {
+      let obj;
+      const items = [GuildStore];
+      [obj] = items;
+      const _Boolean = Boolean;
+      const guild = obj.getGuild(closure_0);
+      let hasItem;
+      if (guild != null) {
+        const features = guild.features;
+        hasItem = features.has(GuildFeatures.COMMUNITY);
+      }
+      return _Boolean(hasItem);
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6, tmp7);
+}) : ((arg0) => {
   let closure_0;
   _require = arg0;
   const obj = require("get initialized");
@@ -51,4 +92,8 @@ export const useGuildEligibleForStageChannels = function useGuildEligibleForStag
     }
     return _Boolean(hasItem);
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/stage_channels/useGuildEligibleForStageChannels.tsx");
+
+export { isGuildEligibleForStageChannels };
+export const useGuildEligibleForStageChannels = tmp2;

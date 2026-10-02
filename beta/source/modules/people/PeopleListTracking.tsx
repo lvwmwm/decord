@@ -1,12 +1,12 @@
-// Module ID: 12693
-// Function ID: 12694
+// Module ID: 12694
+// Function ID: 12695
 // Name: PeopleListTracking
-// Dependencies: [1074, 1241, 2]
+// Dependencies: [1086, 1253, 2]
 // Exports: trackFriendsListItemClicked, trackFriendsListItemContextMenuInteracted, trackFriendsListItemMessageClicked, trackFriendsListItemRemoveFriendClicked, trackFriendsListItemVideoCallClicked, trackFriendsListItemVoiceCallClicked, trackViewFriendRequestNote
 
-// Module 12693 (PeopleListTracking)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+// Module 12694 (PeopleListTracking)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

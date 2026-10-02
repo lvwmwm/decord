@@ -1,22 +1,23 @@
-// Module ID: 14441
-// Function ID: 14442
+// Module ID: 14429
+// Function ID: 14430
 // Name: FamilyCenterActivityGiftRow
-// Dependencies: [19, 17, 21, 4836, 576, 7618, 14429, 14438, 14440, 4678, 14439, 4832, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 7622, 14417, 14426, 14428, 4680, 14427, 4833, 2]
 
-// Module 14441 (FamilyCenterActivityGiftRow)
+// Module 14429 (FamilyCenterActivityGiftRow)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import UserUtilsDefault from "UserUtils" /* 4678 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 7618 */;
-import useSelectedTeenUser from "useSelectedTeenUser" /* 14429 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 14438 */;
-import FamilyCenterActivityItemPreviewDefault from "FamilyCenterActivityItemPreview" /* 14439 */;
-import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 14440 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import UserUtilsDefault from "UserUtils" /* 4680 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 7622 */;
+import useSelectedTeenUser from "useSelectedTeenUser" /* 14417 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 14426 */;
+import FamilyCenterActivityItemPreviewDefault from "FamilyCenterActivityItemPreview" /* 14427 */;
+import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 14428 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -27,9 +28,157 @@ const View = react_native.View;
 let obj = { container: obj2, textContainer: { display: "flex", flexDirection: "column", flexShrink: 1 } };
 obj2 = { display: "flex", flexDirection: "row", alignItems: "center", borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1, paddingVertical: 12 };
 let closure_6 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityGiftRow.tsx");
-
-export default function FamilyCenterActivityGiftRow(arg0) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((gifterUserId) => {
+  let claimed;
+  let claimedAt;
+  let displayName;
+  let isSubscription;
+  let items;
+  let items1;
+  let name;
+  let offeredAt;
+  let price;
+  let skuId;
+  let subscriptionPlanId;
+  const obj = react2;
+  const cResult = obj.c(26);
+  ({ skuId, subscriptionPlanId, price, claimed, offeredAt, claimedAt } = gifterUserId);
+  gifterUserId = gifterUserId.gifterUserId;
+  const tmp4 = closure_6();
+  let product = useCollectiblesDataDefault(skuId).product;
+  const obj2 = useSelectedTeenUser;
+  const teenUserForId = obj2.useTeenUserForId(gifterUserId);
+  let tmp8 = product;
+  if (product == null) {
+    tmp8 = null;
+  }
+  if (cResult[0] === subscriptionPlanId) {
+    let tmp9;
+    if (cResult[1] === tmp8) {
+      tmp9 = cResult[2];
+    }
+    ({ displayName, isSubscription } = tmp9);
+    if (null != skuId) {
+      if (!isSubscription) {
+        if (null == product) {
+          return null;
+        }
+      }
+    }
+    if (null == displayName) {
+      return null;
+    } else {
+      if (cResult[3] === claimed) {
+        if (cResult[4] === claimedAt) {
+          if (cResult[5] === teenUserForId) {
+            if (cResult[6] === offeredAt) {
+              let tmp11;
+              if (cResult[7] === price) {
+                tmp11 = cResult[8];
+              }
+              if (product == null) {
+                product = null;
+              }
+              if (cResult[9] === displayName) {
+                if (cResult[10] === isSubscription) {
+                  if (cResult[11] === subscriptionPlanId) {
+                    let tmp15;
+                    let tmp18;
+                    let tmp21;
+                    if (cResult[12] === product) {
+                      tmp15 = cResult[13];
+                    }
+                    if (cResult[14] !== displayName) {
+                      const obj3 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: displayName };
+                      const tmp20 = React3(Text_Text.Text, obj3);
+                      cResult[14] = displayName;
+                      cResult[15] = tmp20;
+                      tmp18 = tmp20;
+                    } else {
+                      tmp18 = cResult[15];
+                    }
+                    if (cResult[16] !== tmp11) {
+                      const obj4 = { variant: "text-xs/medium", color: "text-muted", children: tmp11 };
+                      const tmp23 = React3(Text_Text.Text, obj4);
+                      cResult[16] = tmp11;
+                      cResult[17] = tmp23;
+                      tmp21 = tmp23;
+                    } else {
+                      tmp21 = cResult[17];
+                    }
+                    if (cResult[18] === tmp4.textContainer) {
+                      if (cResult[19] === tmp18) {
+                        let tmp24;
+                        if (cResult[20] === tmp21) {
+                          tmp24 = cResult[21];
+                        }
+                        if (cResult[22] === tmp4.container) {
+                          if (cResult[23] === tmp15) {
+                            let tmp28;
+                            if (cResult[24] === tmp24) {
+                              tmp28 = cResult[25];
+                            }
+                            return tmp28;
+                          }
+                        }
+                        const obj5 = { style: tmp4.container, children: items };
+                        items = [tmp15, tmp24];
+                        const tmp31 = hasOwnProperty(View, obj5);
+                        cResult[22] = tmp4.container;
+                        cResult[23] = tmp15;
+                        cResult[24] = tmp24;
+                        cResult[25] = tmp31;
+                        tmp28 = tmp31;
+                      }
+                    }
+                    const obj6 = { style: tmp4.textContainer, children: items1 };
+                    items1 = [tmp18, tmp21];
+                    const tmp27 = hasOwnProperty(View, obj6);
+                    cResult[18] = tmp4.textContainer;
+                    cResult[19] = tmp18;
+                    cResult[20] = tmp21;
+                    cResult[21] = tmp27;
+                    tmp24 = tmp27;
+                  }
+                }
+              }
+              const obj7 = { displayName, product, isSubscription, subscriptionPlanId };
+              const tmp17 = React3(FamilyCenterActivityItemPreviewDefault, obj7);
+              cResult[9] = displayName;
+              cResult[10] = isSubscription;
+              cResult[11] = subscriptionPlanId;
+              cResult[12] = product;
+              cResult[13] = tmp17;
+              tmp15 = tmp17;
+            }
+          }
+        }
+      }
+      const obj8 = { claimed, price, gifterName: name, offeredAt, claimedAt };
+      name = null;
+      const getGiftSubtext = FamilyCenterActivityGiftRowUtils.getGiftSubtext;
+      FamilyCenterActivityGiftRowUtils;
+      if (null != teenUserForId) {
+        const tmp5Result = UserUtilsDefault;
+        name = tmp5Result.getName(teenUserForId);
+      }
+      const giftSubtext = getGiftSubtext(obj8);
+      cResult[3] = claimed;
+      cResult[4] = claimedAt;
+      cResult[5] = teenUserForId;
+      cResult[6] = offeredAt;
+      cResult[7] = price;
+      cResult[8] = giftSubtext;
+      tmp11 = giftSubtext;
+    }
+  }
+  const tmpResult2 = FamilyCenterActivityPurchaseRowUtils;
+  const purchaseDisplayInfo = tmpResult2.getPurchaseDisplayInfo(tmp8, subscriptionPlanId);
+  cResult[0] = subscriptionPlanId;
+  cResult[1] = tmp8;
+  cResult[2] = purchaseDisplayInfo;
+  tmp9 = purchaseDisplayInfo;
+}) : ((arg0) => {
   let claimed;
   let claimedAt;
   let displayName;
@@ -90,4 +239,7 @@ export default function FamilyCenterActivityGiftRow(arg0) {
     items[1] = hasOwnProperty(View, obj5);
     return hasOwnProperty(View, obj3);
   }
-};
+});
+const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityGiftRow.tsx");
+
+export default tmp4;

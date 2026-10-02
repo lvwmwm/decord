@@ -1,23 +1,24 @@
-// Module ID: 11180
-// Function ID: 11181
+// Module ID: 11052
+// Function ID: 11053
 // Name: ForwardDestinationUtils
-// Dependencies: [19, 5814, 2049, 2045, 4469, 4479, 1372, 1074, 10444, 1370, 504, 1095, 5198, 1979, 5046, 5048, 5735, 5736, 11181, 1115, 5196, 7101, 4678, 4989, 2]
-// Exports: getDestinationIsUnavailable, isRatelimitedInChannel, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
+// Dependencies: [19, 5815, 2055, 2051, 4472, 4482, 1378, 1086, 558, 576, 10477, 1376, 504, 1107, 5199, 1985, 5047, 5049, 5736, 5737, 11053, 1127, 5197, 7105, 4680, 4990, 2]
+// Exports: getDestinationIsUnavailable, isRatelimitedInChannel
 
-// Module 11180 (ForwardDestinationUtils)
-import ChannelTypes from "ChannelTypes" /* 1095 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import StickersUtils from "StickersUtils" /* 5198 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7101 */;
-import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 11181 */;
+// Module 11052 (ForwardDestinationUtils)
+import ChannelTypes from "ChannelTypes" /* 1107 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import StickersUtils from "StickersUtils" /* 5199 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 7105 */;
+import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 11053 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 5814 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import StickersStore from "StickersStore" /* 5815 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,12 +31,66 @@ let metroImportDefault;
 let metroRequire;
 ({ ChannelRecordBase: hasOwnProperty, isGuildChannelType: metroRequire, createChannelRecord: metroImportDefault } = ChannelRecord);
 ({ MessageFlags: closure_12, Permissions: map1 } = Constants);
-let result = size.fileFinishedImporting("modules/forwarding/ForwardDestinationUtils.tsx");
-
-export const useSelectedDestinationChannel = function useSelectedDestinationChannel(selectedDestinations) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+  let closure_0;
+  let tmp11;
+  let tmp4;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  const obj = require("react");
+  const cResult = obj.c(8);
+  if (cResult[0] !== arr) {
+    const mapped = arr.map(tmp(10477).getChannelIdFromDestinationId);
+    const found = mapped.find(tmp(1376).isNotNullish);
+    cResult[0] = arr;
+    cResult[1] = found;
+    tmp4 = found;
+  } else {
+    tmp4 = cResult[1];
+  }
+  _require = tmp4;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[2] = items;
+    tmp6 = items;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] !== tmp4) {
+    const fn = function o() {
+      return ChannelStore.getChannel(closure_0);
+    };
+    const items1 = [tmp4];
+    cResult[3] = tmp4;
+    cResult[4] = fn;
+    cResult[5] = items1;
+    tmp9 = items1;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[4];
+    tmp9 = cResult[5];
+  }
+  const tmpResult = require("get initialized");
+  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp8, tmp9);
+  if (cResult[6] !== stateFromStores) {
+    let tmp13 = stateFromStores;
+    if (stateFromStores == null) {
+      const obj2 = { id: "1", type: require("ChannelTypes").ChannelTypes.DM };
+      tmp13 = closure_7(obj2);
+    }
+    cResult[6] = stateFromStores;
+    cResult[7] = tmp13;
+    tmp11 = tmp13;
+  } else {
+    tmp11 = cResult[7];
+  }
+  return tmp11;
+}) : ((arr) => {
   let found;
-  const mapped = selectedDestinations.map(found(10444).getChannelIdFromDestinationId);
-  found = mapped.find(found(1370).isNotNullish);
+  const mapped = arr.map(found(10477).getChannelIdFromDestinationId);
+  found = mapped.find(found(1376).isNotNullish);
   let obj = found(504);
   const items = [ChannelStore];
   const items1 = [found];
@@ -49,7 +104,229 @@ export const useSelectedDestinationChannel = function useSelectedDestinationChan
     }
     return tmp;
   }, items2);
-};
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp8;
+  let tmp9;
+  _require = arg0;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore, , ];
+    items[1] = ChannelStore;
+    items[2] = RelationshipStore;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function s() {
+      const mapped = closure_0.map((id) => {
+        id = id.id;
+        if ("user" === id.type) {
+          user = user.getUser(id);
+          let tmp13 = null;
+          if (null != user) {
+            nickname = nickname.getNickname(user.id);
+            if (nickname == null) {
+              const obj2 = closure_1_1(closure_1_2[24]);
+              nickname = obj2.getName(user);
+            }
+            tmp13 = nickname;
+          }
+          return tmp13;
+        } else {
+          channel = channel.getChannel(id);
+          let channelName = null;
+          if (null != channel) {
+            const obj = closure_1_0(closure_1_2[25]);
+            channelName = obj.computeChannelName(channel, user, nickname, true);
+          }
+          return channelName;
+        }
+      });
+      return mapped.filter(GlobalUtils.isNotNullish);
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp9 = items1;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStoresArray(first, tmp8, tmp9);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  let obj = require("get initialized");
+  const items = [UserStore, ChannelStore, RelationshipStore];
+  const items1 = [arg0];
+  return obj.useStateFromStoresArray(items, () => {
+    const mapped = closure_0.map((id) => {
+      id = id.id;
+      if ("user" === id.type) {
+        user = user.getUser(id);
+        let tmp13 = null;
+        if (null != user) {
+          nickname = nickname.getNickname(user.id);
+          if (nickname == null) {
+            const obj2 = closure_1_1(closure_1_2[24]);
+            nickname = obj2.getName(user);
+          }
+          tmp13 = nickname;
+        }
+        return tmp13;
+      } else {
+        channel = channel.getChannel(id);
+        let channelName = null;
+        if (null != channel) {
+          const obj = closure_1_0(closure_1_2[25]);
+          channelName = obj.computeChannelName(channel, user, nickname, true);
+        }
+        return channelName;
+      }
+    });
+    return mapped.filter(GlobalUtils.isNotNullish);
+  }, items1);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp10;
+  let tmp13;
+  let tmp14;
+  let tmp7;
+  let tmp8;
+  _require = arg0;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(8);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore, PermissionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function s() {
+      const mapped = closure_0.map((type) => {
+        channel = null;
+        if ("channel" === type.type) {
+          channel = channel.getChannel(tmp);
+        }
+        return channel;
+      });
+      const found = mapped.filter(GlobalUtils.isNotNullish);
+      return found.filter((rateLimitPerUser) => {
+        let tmp2 = null != rateLimitPerUser.rateLimitPerUser;
+        const tmp = closure_1_9;
+        if (tmp2) {
+          tmp2 = rateLimitPerUser.rateLimitPerUser > 0;
+        }
+        if (tmp2) {
+          const obj = closure_1_0(closure_1_2[23]);
+          tmp2 = !obj.canBypassSlowmodeHelper(rateLimitPerUser, tmp);
+        }
+        return tmp2;
+      });
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp8 = items1;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStoresArray = tmpResult.useStateFromStoresArray(first, tmp7, tmp8);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [UserStore, RelationshipStore];
+    cResult[4] = items2;
+    tmp10 = items2;
+  } else {
+    tmp10 = cResult[4];
+  }
+  if (cResult[5] !== stateFromStoresArray) {
+    const fn2 = function p() {
+      return stateFromStoresArray.map((item) => {
+        const obj = closure_1_0(closure_1_2[25]);
+        return obj.computeChannelName(item, closure_1_11, closure_1_10, true);
+      });
+    };
+    const items3 = [stateFromStoresArray];
+    cResult[5] = stateFromStoresArray;
+    cResult[6] = fn2;
+    cResult[7] = items3;
+    tmp14 = items3;
+    tmp13 = fn2;
+  } else {
+    tmp13 = cResult[6];
+    tmp14 = cResult[7];
+  }
+  const tmpResult2 = tmp(504);
+  return tmpResult2.useStateFromStoresArray(tmp10, tmp13, tmp14);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  let obj = require("get initialized");
+  const items = [ChannelStore, PermissionStore];
+  const items1 = [arg0];
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
+    const mapped = closure_0.map((type) => {
+      channel = null;
+      if ("channel" === type.type) {
+        channel = channel.getChannel(tmp);
+      }
+      return channel;
+    });
+    const found = mapped.filter(GlobalUtils.isNotNullish);
+    return found.filter((rateLimitPerUser) => {
+      let tmp2 = null != rateLimitPerUser.rateLimitPerUser;
+      const tmp = closure_1_9;
+      if (tmp2) {
+        tmp2 = rateLimitPerUser.rateLimitPerUser > 0;
+      }
+      if (tmp2) {
+        const obj = closure_1_0(closure_1_2[23]);
+        tmp2 = !obj.canBypassSlowmodeHelper(rateLimitPerUser, tmp);
+      }
+      return tmp2;
+    });
+  }, items1);
+  const items2 = [UserStore, RelationshipStore];
+  const items3 = [stateFromStoresArray];
+  const obj2 = require("get initialized");
+  return obj2.useStateFromStoresArray(items2, () => stateFromStoresArray.map((item) => {
+    const obj = closure_1_0(closure_1_2[25]);
+    return obj.computeChannelName(item, closure_1_11, closure_1_10, true);
+  }), items3);
+});
+function isRatelimitedInChannel(channel, can) {
+  let tmp = null != channel.rateLimitPerUser && channel.rateLimitPerUser > 0;
+  if (tmp) {
+    const obj = SlowmodeUtils;
+    tmp = !obj.canBypassSlowmodeHelper(channel, can);
+  }
+  return tmp;
+}
+let result = size.fileFinishedImporting("modules/forwarding/ForwardDestinationUtils.tsx");
+
+export const useSelectedDestinationChannel = tmp4;
 export const getDestinationIsUnavailable = function getDestinationIsUnavailable(components, channel, type, fn) {
   let intl;
   let intl2;
@@ -84,7 +361,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           require("AgeGateUtils");
         }
         const obj2 = { label: intl.string(require("intl").t.KgPx1D), lineClamp: 2 };
-        intl = tmp13(1115).intl;
+        intl = tmp13(1127).intl;
         return obj2;
       }
       let flag2 = false;
@@ -101,7 +378,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           let result = tmp13Result9.shouldShowTiggerPawtect();
           if (result) {
             const tmp13Result10 = require("RegionalFeatureConfigUtils");
-            result = tmp13Result10.isFeatureAgeGated(tmp13(5736).AgeGatedFeature.AGE_GATED_SPACES);
+            result = tmp13Result10.isFeatureAgeGated(tmp13(5737).AgeGatedFeature.AGE_GATED_SPACES);
           }
           let disableAgeRestrictedDestinations = !(false !== nsfwAllowed && !result);
           if (disableAgeRestrictedDestinations) {
@@ -113,14 +390,14 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
       }
       if (flag2) {
         const obj3 = { label: intl7.string(require("intl").t.QHrFo6), lineClamp: 2 };
-        intl7 = tmp13(1115).intl;
+        intl7 = tmp13(1127).intl;
         return obj3;
       } else if (type instanceof closure_5) {
         if (closure_6(type.type)) {
           if (components.attachments.length > 0) {
             if (!PermissionStore.can(constants2.ATTACH_FILES, type)) {
               const obj4 = { label: intl2.string(require("intl").t.P7yvbm) };
-              intl2 = tmp13(1115).intl;
+              intl2 = tmp13(1127).intl;
               return obj4;
             }
           } else {
@@ -132,7 +409,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
               const tmp13Result12 = require("EmbedUtils");
               if (!tmp13Result12.shouldStripEmbeds(components)) {
                 const obj5 = { label: intl3.string(require("intl").t.Wr4RIX) };
-                intl3 = tmp13(1115).intl;
+                intl3 = tmp13(1127).intl;
                 return obj5;
               }
             }
@@ -143,7 +420,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
             const tmp13Result13 = require("EmbedUtils");
             if (!tmp13Result13.canEmbedLinks(type, PermissionStore)) {
               const obj6 = { label: intl4.string(require("intl").t.Wr4RIX) };
-              intl4 = tmp13(1115).intl;
+              intl4 = tmp13(1127).intl;
               return obj6;
             }
           }
@@ -153,7 +430,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           const arraySpreadResult = HermesBuiltin.arraySpread(items, tmp13Result14.getMessageStickers(components), 0);
           HermesBuiltin.arraySpread(items, messageSnapshots3.flatMap((message) => {
             message = message.message;
-            const obj = type(dependencyMap[12]);
+            const obj = type(dependencyMap[14]);
             return obj.getMessageStickers(message);
           }), arraySpreadResult);
           if (items.length > 0) {
@@ -171,7 +448,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
                 return isGuildStickerResult;
               })) {
                 const obj8 = { label: intl5.string(require("intl").t["0Yyrua"]) };
-                intl5 = tmp13(1115).intl;
+                intl5 = tmp13(1127).intl;
                 return obj8;
               }
             }
@@ -179,7 +456,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           if (components.hasFlag(constants.IS_VOICE_MESSAGE)) {
             if (!PermissionStore.can(constants2.SEND_VOICE_MESSAGES, type)) {
               const obj9 = { label: intl6.string(require("intl").t.quj4DY) };
-              intl6 = tmp13(1115).intl;
+              intl6 = tmp13(1127).intl;
               return obj9;
             }
           } else {
@@ -190,80 +467,6 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
     }
   }
 };
-export const isRatelimitedInChannel = function isRatelimitedInChannel(channel, can) {
-  let tmp = null != channel.rateLimitPerUser && channel.rateLimitPerUser > 0;
-  if (tmp) {
-    const obj = SlowmodeUtils;
-    tmp = !obj.canBypassSlowmodeHelper(channel, can);
-  }
-  return tmp;
-};
-export const useSelectedDestinationNames = function useSelectedDestinationNames(arg0) {
-  let closure_0;
-  _require = arg0;
-  let obj = require("get initialized");
-  const items = [UserStore, ChannelStore, RelationshipStore];
-  const items1 = [arg0];
-  return obj.useStateFromStoresArray(items, () => {
-    const mapped = closure_0.map((id) => {
-      id = id.id;
-      if ("user" === id.type) {
-        user = user.getUser(id);
-        let tmp13 = null;
-        if (null != user) {
-          nickname = nickname.getNickname(user.id);
-          if (nickname == null) {
-            const obj2 = closure_1_1(closure_1_2[22]);
-            nickname = obj2.getName(user);
-          }
-          tmp13 = nickname;
-        }
-        return tmp13;
-      } else {
-        channel = channel.getChannel(id);
-        let channelName = null;
-        if (null != channel) {
-          const obj = closure_1_0(closure_1_2[23]);
-          channelName = obj.computeChannelName(channel, user, nickname, true);
-        }
-        return channelName;
-      }
-    });
-    return mapped.filter(GlobalUtils.isNotNullish);
-  }, items1);
-};
-export const useDestinationNamesWithSlowmode = function useDestinationNamesWithSlowmode(selectedDestinations) {
-  _require = selectedDestinations;
-  let obj = require("get initialized");
-  const items = [ChannelStore, PermissionStore];
-  const items1 = [selectedDestinations];
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
-    const mapped = selectedDestinations.map((type) => {
-      channel = null;
-      if ("channel" === type.type) {
-        channel = channel.getChannel(tmp);
-      }
-      return channel;
-    });
-    const found = mapped.filter(GlobalUtils.isNotNullish);
-    return found.filter((rateLimitPerUser) => {
-      let tmp2 = null != rateLimitPerUser.rateLimitPerUser;
-      const tmp = closure_1_9;
-      if (tmp2) {
-        tmp2 = rateLimitPerUser.rateLimitPerUser > 0;
-      }
-      if (tmp2) {
-        const obj = selectedDestinations(closure_1_2[21]);
-        tmp2 = !obj.canBypassSlowmodeHelper(rateLimitPerUser, tmp);
-      }
-      return tmp2;
-    });
-  }, items1);
-  const items2 = [UserStore, RelationshipStore];
-  const items3 = [stateFromStoresArray];
-  const obj2 = require("get initialized");
-  return obj2.useStateFromStoresArray(items2, () => stateFromStoresArray.map((item) => {
-    const obj = selectedDestinations(closure_1_2[23]);
-    return obj.computeChannelName(item, closure_1_11, closure_1_10, true);
-  }), items3);
-};
+export { isRatelimitedInChannel };
+export const useSelectedDestinationNames = tmp5;
+export const useDestinationNamesWithSlowmode = tmp6;

@@ -1,19 +1,19 @@
-// Module ID: 16314
-// Function ID: 16315
+// Module ID: 16316
+// Function ID: 16317
 // Name: vibegrationsFeedback
-// Dependencies: [12643, 8495, 1074, 11121, 510, 1115, 3715, 1241, 11124, 2]
+// Dependencies: [12645, 8492, 1086, 10991, 510, 1127, 3718, 1253, 10994, 2]
 // Exports: countSettledTurns, hasShownFeedbackForProject, markFeedbackShownForProject, submitVibegrationsFeedback, trackVibegrationsFeedbackOpened, vibegrationsFeedbackSection
 
-// Module 16314 (vibegrationsFeedback)
+// Module 16316 (vibegrationsFeedback)
 import Storage3 from "Storage" /* 510 */;
-import Constants2 from "Constants" /* 1074 */;
-import intl7 from "intl" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import _modDef3715 from "module_3715" /* 3715 */;
-import FeedbackUtils from "FeedbackUtils" /* 11124 */;
-import VibegrationsChatStore2 from "VibegrationsChatStore" /* 12643 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8495 */;
-import Constants from "Constants" /* 11121 */;
+import Constants2 from "Constants" /* 1086 */;
+import intl7 from "intl" /* 1127 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import _modDef3718 from "module_3718" /* 3718 */;
+import FeedbackUtils from "FeedbackUtils" /* 10994 */;
+import VibegrationsChatStore2 from "VibegrationsChatStore" /* 12645 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8492 */;
+import Constants from "Constants" /* 10991 */;
 import size from "module_2" /* 2 */;
 
 const VibegrationsChatStore = VibegrationsChatStore2;
@@ -67,21 +67,21 @@ export const vibegrationsFeedbackSection = function vibegrationsFeedbackSection(
   let intl6;
   let items;
   let obj6;
-  const obj = { value: metroImportDefault.VIBEGRATIONS, label: "", problemsHeader: intl.string(_modDef3715.kLHFxL), problemOptions: items, freeformConfig: obj6 };
+  const obj = { value: metroImportDefault.VIBEGRATIONS, label: "", problemsHeader: intl.string(_modDef3718.kLHFxL), problemOptions: items, freeformConfig: obj6 };
   intl = intl7.intl;
-  const obj2 = { value: constants4.NOT_WHAT_I_WANTED, variant: metroImportAll.UNSPECIFIED, label: intl2.string(_modDef3715.UJLIUY) };
+  const obj2 = { value: constants4.NOT_WHAT_I_WANTED, variant: metroImportAll.UNSPECIFIED, label: intl2.string(_modDef3718.UJLIUY) };
   intl2 = intl7.intl;
   items = [obj2, , , ];
-  const obj3 = { value: constants4.TOO_SLOW, variant: metroImportAll.UNSPECIFIED, label: intl3.string(_modDef3715.FVQz1w) };
+  const obj3 = { value: constants4.TOO_SLOW, variant: metroImportAll.UNSPECIFIED, label: intl3.string(_modDef3718.FVQz1w) };
   intl3 = intl7.intl;
   items[1] = obj3;
-  const obj4 = { value: constants4.APP_DIDNT_WORK, variant: metroImportAll.UNSPECIFIED, label: intl4.string(_modDef3715["4AdY23"]) };
+  const obj4 = { value: constants4.APP_DIDNT_WORK, variant: metroImportAll.UNSPECIFIED, label: intl4.string(_modDef3718["4AdY23"]) };
   intl4 = intl7.intl;
   items[2] = obj4;
-  const obj5 = { value: constants4.DIDNT_KNOW_WHAT_TO_ASK_FOR, variant: metroImportAll.UNSPECIFIED, label: intl5.string(_modDef3715["u/juX1"]) };
+  const obj5 = { value: constants4.DIDNT_KNOW_WHAT_TO_ASK_FOR, variant: metroImportAll.UNSPECIFIED, label: intl5.string(_modDef3718["u/juX1"]) };
   intl5 = intl7.intl;
   items[3] = obj5;
-  obj6 = { value: constants4.FREEFORM, label: intl6.string(_modDef3715["8Ee6yW"]) };
+  obj6 = { value: constants4.FREEFORM, label: intl6.string(_modDef3718["8Ee6yW"]) };
   intl6 = intl7.intl;
   return obj;
 };

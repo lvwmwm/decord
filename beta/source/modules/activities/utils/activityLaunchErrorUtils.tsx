@@ -1,18 +1,18 @@
-// Module ID: 8811
-// Function ID: 8812
+// Module ID: 8806
+// Function ID: 8807
 // Name: activityLaunchErrorUtils
-// Dependencies: [5, 8320, 1074, 1115, 8788, 2021, 8782, 5064, 7573, 2]
+// Dependencies: [5, 8317, 1086, 1127, 8783, 2027, 8777, 5065, 7577, 2]
 // Exports: getActivityLaunchErrorInfo
 
-// Module 8811 (activityLaunchErrorUtils)
-import Constants from "Constants" /* 1074 */;
-import intl11 from "intl" /* 1115 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 5064 */;
-import InteractionUtils from "InteractionUtils" /* 7573 */;
-import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 8320 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8782 */;
-import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 8788 */;
+// Module 8806 (activityLaunchErrorUtils)
+import Constants from "Constants" /* 1086 */;
+import intl11 from "intl" /* 1127 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 5065 */;
+import InteractionUtils from "InteractionUtils" /* 7577 */;
+import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 8317 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8777 */;
+import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 8783 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = function _getActivityLaunchErrorInfo() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

@@ -1,24 +1,20 @@
-// Module ID: 16016
-// Function ID: 16017
+// Module ID: 16017
+// Function ID: 16018
 // Name: FocusModeOptionsActionSheet
-// Dependencies: [19, 21, 1091, 1115, 9550, 6618, 5999, 5917, 2]
-// Exports: default
+// Dependencies: [19, 21, 1103, 1127, 558, 576, 12217, 5916, 6624, 5997, 2]
 
-// Module 16016 (FocusModeOptionsActionSheet)
-import DurationsDefault from "Durations" /* 1091 */;
-import intl5 from "intl" /* 1115 */;
+// Module 16017 (FocusModeOptionsActionSheet)
+import DurationsDefault from "Durations" /* 1103 */;
+import intl5 from "intl" /* 1127 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let duration;
+let duration, onSelect;
 
 let c2;
 let c3;
-function label() {
-  const intl = intl5.intl;
-  return intl.string(intl5.t["755t4q"]);
-}
 ({ jsx: c2, jsxs: c3 } = Fragment);
 let obj = {
   duration: 30 * DurationsDefault.Millis.MINUTE,
@@ -52,7 +48,14 @@ let obj4 = {
   }
 };
 items[3] = obj4;
-items[4] = { duration: DurationsDefault.Millis.DAY, label };
+let obj5 = {
+  duration: DurationsDefault.Millis.DAY,
+  label() {
+    const intl = intl5.intl;
+    return intl.string(intl5.t["755t4q"]);
+  }
+};
+items[4] = obj5;
 const obj6 = {
   duration: "Array",
   label() {
@@ -61,37 +64,119 @@ const obj6 = {
   }
 };
 items[5] = obj6;
-({ duration: DurationsDefault.Millis.DAY, label });
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/FocusModeOptionsActionSheet.tsx");
-
-export default function FocusModeOptionsActionSheet(onSelect) {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
+  let first;
+  let intl2;
+  let intl3;
+  let intl4;
+  let obj4;
+  let obj = onSelect(576);
+  const cResult = obj.c(9);
+  onSelect = onSelect.onSelect;
+  const obj2 = onSelect(12217);
+  const focusModeEnabled = obj2.useFocusModeEnabled();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(onSelect(1127).t["sNX1E+"]);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === focusModeEnabled) {
+    let tmp7;
+    let tmp10;
+    if (cResult[2] === onSelect) {
+      tmp7 = cResult[3];
+    }
+    if (cResult[4] !== onSelect) {
+      const mapped = items.map((duration) => {
+        duration = duration.duration;
+        const label = duration.label;
+        const obj = {
+          accessibilityLabel: label(),
+          accessibilityHint: label(),
+          onPress() {
+            onSelect(true, duration);
+          },
+          trailing: null,
+          label: label()
+        };
+        const TableRow = onSelect(dependencyMap[7]).TableRow;
+        return closure_1_2(TableRow, obj, "" + duration);
+      });
+      cResult[4] = onSelect;
+      cResult[5] = mapped;
+      tmp10 = mapped;
+    } else {
+      tmp10 = cResult[5];
+    }
+    if (cResult[6] === tmp7) {
+      let tmp13;
+      if (cResult[7] === tmp10) {
+        tmp13 = cResult[8];
+      }
+      return tmp13;
+    }
+    const obj3 = { children: closure_3(onSelect(5997).TableRowGroup, obj4) };
+    const ActionSheet = tmp(6624).ActionSheet;
+    obj4 = { title: first, hasIcons: false, children: items };
+    items = [tmp7, tmp10];
+    const tmp16 = closure_2(ActionSheet, obj3);
+    cResult[6] = tmp7;
+    cResult[7] = tmp10;
+    cResult[8] = tmp16;
+    tmp13 = tmp16;
+  }
+  let tmp8 = null;
+  if (focusModeEnabled) {
+    const obj5 = {
+      accessibilityLabel: intl2.string(onSelect(1127).t.rk35Gm),
+      accessibilityHint: intl3.string(onSelect(1127).t.rk35Gm),
+      onPress() {
+          onSelect(false, undefined);
+        },
+      trailing: null,
+      label: intl4.string(onSelect(1127).t.rk35Gm)
+    };
+    let TableRow = tmp(5916).TableRow;
+    intl2 = tmp(1127).intl;
+    intl3 = tmp(1127).intl;
+    intl4 = tmp(1127).intl;
+    tmp8 = closure_2(TableRow, obj5);
+  }
+  cResult[1] = focusModeEnabled;
+  cResult[2] = onSelect;
+  cResult[3] = tmp8;
+  tmp7 = tmp8;
+}) : ((onSelect) => {
   let intl;
   let intl2;
   let intl3;
   let intl4;
   onSelect = onSelect.onSelect;
-  let obj = onSelect(9550);
+  let obj = onSelect(12217);
   const focusModeEnabled = obj.useFocusModeEnabled();
-  const ActionSheet = onSelect(6618).ActionSheet;
-  const obj2 = { title: intl.string(onSelect(1115).t["sNX1E+"]), hasIcons: false, children: items };
-  const TableRowGroup = onSelect(5999).TableRowGroup;
-  intl = onSelect(1115).intl;
+  const ActionSheet = onSelect(6624).ActionSheet;
+  const obj2 = { title: intl.string(onSelect(1127).t["sNX1E+"]), hasIcons: false, children: items };
+  const TableRowGroup = onSelect(5997).TableRowGroup;
+  intl = onSelect(1127).intl;
   let tmp4Result = null;
   const tmp5 = closure_3;
   if (focusModeEnabled) {
     const obj3 = {
-      accessibilityLabel: intl2.string(onSelect(1115).t.rk35Gm),
-      accessibilityHint: intl3.string(onSelect(1115).t.rk35Gm),
+      accessibilityLabel: intl2.string(onSelect(1127).t.rk35Gm),
+      accessibilityHint: intl3.string(onSelect(1127).t.rk35Gm),
       onPress() {
           onSelect(false, undefined);
         },
       trailing: null,
-      label: intl4.string(onSelect(1115).t.rk35Gm)
+      label: intl4.string(onSelect(1127).t.rk35Gm)
     };
-    let TableRow = tmp(5917).TableRow;
-    intl2 = tmp(1115).intl;
-    intl3 = tmp(1115).intl;
-    intl4 = tmp(1115).intl;
+    let TableRow = tmp(5916).TableRow;
+    intl2 = tmp(1127).intl;
+    intl3 = tmp(1127).intl;
+    intl4 = tmp(1127).intl;
     tmp4Result = tmp4(TableRow, obj3);
   }
   items = [tmp4Result, ];
@@ -112,4 +197,7 @@ export default function FocusModeOptionsActionSheet(onSelect) {
     return closure_1_2(TableRow, obj, "" + duration);
   });
   return closure_2(ActionSheet, obj4);
-};
+});
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/FocusModeOptionsActionSheet.tsx");
+
+export default tmp4;

@@ -1,12 +1,12 @@
-// Module ID: 13362
-// Function ID: 13363
+// Module ID: 13364
+// Function ID: 13365
 // Name: NetworkQuality
-// Dependencies: [4885, 1074, 4865, 2]
+// Dependencies: [4886, 1086, 4866, 2]
 
-// Module 13362 (NetworkQuality)
-import TimeUtils from "TimeUtils" /* 4865 */;
-import NetworkStore from "NetworkStore" /* 4885 */;
-import Constants from "Constants" /* 1074 */;
+// Module 13364 (NetworkQuality)
+import TimeUtils from "TimeUtils" /* 4866 */;
+import NetworkStore from "NetworkStore" /* 4886 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c3;

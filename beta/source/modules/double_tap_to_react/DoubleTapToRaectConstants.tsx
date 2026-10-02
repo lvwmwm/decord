@@ -1,9 +1,9 @@
-// Module ID: 7411
-// Function ID: 7412
+// Module ID: 7415
+// Function ID: 7416
 // Name: DoubleTapToRaectConstants
 // Dependencies: [2]
 
-// Module 7411 (DoubleTapToRaectConstants)
+// Module 7415 (DoubleTapToRaectConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/double_tap_to_react/DoubleTapToRaectConstants.tsx");

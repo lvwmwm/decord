@@ -1,11 +1,11 @@
-// Module ID: 8317
-// Function ID: 8318
+// Module ID: 8314
+// Function ID: 8315
 // Name: VirtualCurrencyStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 8317 (VirtualCurrencyStore)
+// Module 8314 (VirtualCurrencyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 const Store = get_initializedDefault.Store;

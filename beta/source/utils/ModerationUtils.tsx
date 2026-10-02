@@ -1,16 +1,16 @@
-// Module ID: 14373
-// Function ID: 14374
+// Module ID: 14361
+// Function ID: 14362
 // Name: ModerationUtils
-// Dependencies: [1074, 2023, 575, 14374, 1115, 1186, 2]
+// Dependencies: [1086, 2029, 587, 14362, 1127, 1198, 2]
 // Exports: generateContentFilterHighlightedOptions, generateContentFilterOptions, generateDmSpamOptions, generateExplicitImageOptions, generateVerificationLevelOptions, mapOptionToHighlightedRowOptions
 
-// Module 14373 (ModerationUtils)
-import shims from "shims" /* 575 */;
-import intl11 from "intl" /* 1115 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 2023 */;
-import HighlightedSettingsTypes from "HighlightedSettingsTypes" /* 14374 */;
-import Constants from "Constants" /* 1074 */;
+// Module 14361 (ModerationUtils)
+import shims from "shims" /* 587 */;
+import intl11 from "intl" /* 1127 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 2029 */;
+import HighlightedSettingsTypes from "HighlightedSettingsTypes" /* 14362 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -92,8 +92,8 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   }
   const items = [obj, , , , ];
   const obj2 = { name: intl3.string(intl11.t.SsCK8I), desc: intl4.string(intl11.t["8GCOX6"]), value: constants.LOW, color: unsafe_getRawColorResult };
-  intl3 = tmp(1115).intl;
-  intl4 = tmp(1115).intl;
+  intl3 = tmp(1127).intl;
+  intl4 = tmp(1127).intl;
   unsafe_getRawColorResult = undefined;
   if (!flag2) {
     const tmpResult = shims;
@@ -101,8 +101,8 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   }
   items[1] = obj2;
   const obj3 = { name: intl5.string(intl11.t.WwNoR4), desc: intl6.formatToPlainString(intl11.t.VS14ga, obj4), value: constants.MEDIUM, color: unsafe_getRawColorResult1 };
-  intl5 = tmp(1115).intl;
-  intl6 = tmp(1115).intl;
+  intl5 = tmp(1127).intl;
+  intl6 = tmp(1127).intl;
   unsafe_getRawColorResult1 = undefined;
   obj4 = { min: constants2.ACCOUNT_AGE };
   const tmp6 = constants2;
@@ -112,8 +112,8 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   }
   items[2] = obj3;
   const obj5 = { name: intl7.string(intl11.t.I2jMUF), desc: intl8.formatToPlainString(intl11.t["r+b3I4"], obj6), value: constants.HIGH, color: unsafe_getRawColorResult2 };
-  intl7 = tmp(1115).intl;
-  intl8 = tmp(1115).intl;
+  intl7 = tmp(1127).intl;
+  intl8 = tmp(1127).intl;
   unsafe_getRawColorResult2 = undefined;
   obj6 = { min: tmp6.MEMBER_AGE };
   if (!flag2) {
@@ -122,8 +122,8 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   }
   items[3] = obj5;
   const obj7 = { name: intl9.string(intl11.t.cJY8w9), desc: intl10.string(intl11.t.PWaKme), value: constants.VERY_HIGH, color: unsafe_getRawColorResult3 };
-  intl9 = tmp(1115).intl;
-  intl10 = tmp(1115).intl;
+  intl9 = tmp(1127).intl;
+  intl10 = tmp(1127).intl;
   unsafe_getRawColorResult3 = undefined;
   if (!flag2) {
     const tmpResult6 = shims;
@@ -164,10 +164,10 @@ export const generateContentFilterHighlightedOptions = function generateContentF
   items[1] = obj3;
   tmpResult = shims;
   const obj4 = { name: intl5.string(intl11.t.VbSyAx), desc: string2Result, value: constants3.DISABLED, disabled: flag, color: tmpResult2.unsafe_getRawColor("PRIMARY_400") };
-  intl5 = tmp(1115).intl;
-  const intl6 = tmp(1115).intl;
+  intl5 = tmp(1127).intl;
+  const intl6 = tmp(1127).intl;
   const string2 = intl6.string;
-  const t2 = tmp(1115).t;
+  const t2 = tmp(1127).t;
   if (flag) {
     string2Result = string2(t2.j9WtHx);
   } else {
@@ -204,10 +204,10 @@ export const generateContentFilterOptions = function generateContentFilterOption
   }
   items[1] = obj2;
   const obj3 = { name: intl5.string(intl11.t.VbSyAx), desc: string2Result, value: constants3.DISABLED, disabled: flag };
-  intl5 = tmp(1115).intl;
-  const intl6 = tmp(1115).intl;
+  intl5 = tmp(1127).intl;
+  const intl6 = tmp(1127).intl;
   const string2 = intl6.string;
-  const t2 = tmp(1115).t;
+  const t2 = tmp(1127).t;
   if (flag) {
     string2Result = string2(t2.j9WtHx);
   } else {

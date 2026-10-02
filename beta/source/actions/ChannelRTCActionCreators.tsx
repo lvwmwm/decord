@@ -1,14 +1,14 @@
-// Module ID: 5037
-// Function ID: 5038
+// Module ID: 5038
+// Function ID: 5039
 // Name: ChannelRTCActionCreators
-// Dependencies: [1074, 573, 1241, 5016, 1110, 2]
+// Dependencies: [1086, 585, 1253, 5017, 1122, 2]
 
-// Module 5037 (ChannelRTCActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import Constants from "Constants" /* 1074 */;
+// Module 5038 (ChannelRTCActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,23 +1,26 @@
-// Module ID: 10173
-// Function ID: 10174
+// Module ID: 10212
+// Function ID: 10213
 // Name: PremiumActivatedAlert
-// Dependencies: [19, 17, 1074, 21, 4836, 5753, 4488, 10174, 10175, 10176, 10177, 10178, 8688, 10179, 10180, 10181, 10182, 10183, 10184, 7511, 10185, 4685, 10186, 10187, 10188, 10189, 10190, 10191, 10192, 10193, 10194, 1115, 4767, 5300, 10195, 10196, 1177, 2]
-// Exports: default
+// Dependencies: [19, 17, 1086, 21, 4837, 5754, 4491, 10213, 10214, 10215, 10216, 10217, 6857, 6858, 10218, 10219, 10220, 10221, 10222, 7515, 10223, 4687, 10224, 10225, 10226, 10227, 10228, 10229, 10230, 10231, 10232, 1127, 558, 576, 4769, 10233, 10234, 1189, 5301, 2]
 
-// Module 10173 (PremiumActivatedAlert)
-import Constants from "Constants" /* 1074 */;
-import intl5 from "intl" /* 1115 */;
-import PremiumUtils from "PremiumUtils" /* 4488 */;
-import shared from "shared" /* 4685 */;
-import useThemeDefault from "useTheme" /* 4767 */;
-import AlertDefault from "Alert" /* 5300 */;
-import LegacyTokens from "LegacyTokens" /* 5753 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10195 */;
-import ShineAnimationDefault from "ShineAnimation" /* 10196 */;
+// Module 10212 (PremiumActivatedAlert)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl4 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import PremiumUtils from "PremiumUtils" /* 4491 */;
+import shared from "shared" /* 4687 */;
+import useThemeDefault from "useTheme" /* 4769 */;
+import AlertDefault from "Alert" /* 5301 */;
+import LegacyTokens from "LegacyTokens" /* 5754 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10232 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10233 */;
+import ShineAnimationDefault from "ShineAnimation" /* 10234 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -26,6 +29,70 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let obj2;
+function getActivatedImage(cResult, arg1) {
+  if (PremiumUtils.Branding.TIER_0 === cResult) {
+    let tmp10Result;
+    const tmpResult = shared;
+    if (tmpResult.isThemeDark(arg1)) {
+      tmp10Result = tmp10(10224);
+    } else {
+      tmp10Result = tmp10(10225);
+    }
+    return tmp10Result;
+  } else if (PremiumUtils.Branding.TIER_1 === cResult) {
+    let tmp8Result;
+    const tmpResult4 = shared;
+    if (tmpResult4.isThemeDark(arg1)) {
+      tmp8Result = tmp8(10226);
+    } else {
+      tmp8Result = tmp8(10227);
+    }
+    return tmp8Result;
+  } else if (PremiumUtils.Branding.TIER_2 === cResult) {
+    let tmp6Result;
+    const tmpResult5 = shared;
+    if (tmpResult5.isThemeDark(arg1)) {
+      tmp6Result = tmp6(10228);
+    } else {
+      tmp6Result = tmp6(10229);
+    }
+    return tmp6Result;
+  } else if (PremiumUtils.Branding.BUNDLE === cResult) {
+    let tmp4Result;
+    const tmpResult6 = shared;
+    if (tmpResult6.isThemeDark(arg1)) {
+      tmp4Result = tmp4(10230);
+    } else {
+      tmp4Result = tmp4(10231);
+    }
+    return tmp4Result;
+  } else if (PremiumUtils.Branding.PREMIUM_GUILD === cResult) {
+    return AssetRegistryDefault;
+  }
+}
+function getDescription(arg0, arg1) {
+  let obj2;
+  let tmpResult;
+  if (PremiumUtils.Branding.TIER_0 !== arg0) {
+    if (PremiumUtils.Branding.TIER_1 !== arg0) {
+      if (PremiumUtils.Branding.TIER_2 === arg0) {
+        const intl2 = tmp(1127).intl;
+        return intl2.string(intl4.t.aTUr3Z);
+      } else {
+        const intl = tmp(1127).intl;
+        const format = intl.format;
+        const obj = { planName: tmpResult.getExternalPlanDisplayName(obj2) };
+        const YJUUH3 = tmp(1127).t.YJUUH3;
+        obj2 = { planId: null, additionalPlans: null };
+        ({ planId: obj3.planId, additionalPlans: obj3.additionalPlans } = arg1);
+        tmpResult = PremiumUtils;
+        return format(YJUUH3, obj);
+      }
+    }
+  }
+  const intl3 = tmp(1127).intl;
+  return intl3.string(intl4.t.knvOVz);
+}
 ({ Image: c3, ImageBackground: closure_4, View: hasOwnProperty } = react_native);
 const SubscriptionStatusTypes = Constants.SubscriptionStatusTypes;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -64,18 +131,300 @@ let closure_11 = createStyles.createStyles((arg0) => {
     return { animation: { borderRadius: 5 } };
   }
 });
-const result = size.fileFinishedImporting("components_native/premium/PremiumActivatedAlert.tsx");
-
-export default function PremiumActivatedAlert(subscription) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let _alert;
+  let header;
+  let items;
+  let items1;
+  let items2;
+  let onClose;
+  let subscription;
+  let tmp11;
+  let tmp14;
+  let tmp16;
+  let tmp18;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(48);
+  ({ subscription, onClose } = arg0);
+  const tmp4 = closure_9();
+  let renewalMutations = subscription;
+  if (null != subscription.renewalMutations) {
+    const _Object = Object;
+    renewalMutations = subscription;
+    if (0 !== Object.keys(subscription.renewalMutations).length) {
+      renewalMutations = subscription;
+      if (subscription.renewalMutations.paymentGatewayPlanId !== subscription.paymentGatewayPlanId) {
+        renewalMutations = subscription;
+        if (subscription.status !== SubscriptionStatusTypes.CANCELED) {
+          renewalMutations = subscription.renewalMutations;
+        }
+      }
+    }
+  }
+  const tmp8 = useThemeDefault();
+  if (cResult[0] !== renewalMutations) {
+    const tmpResult = PremiumUtils;
+    const premiumBranding = tmpResult.getPremiumBranding(renewalMutations);
+    cResult[0] = renewalMutations;
+    cResult[1] = premiumBranding;
+    tmp9 = premiumBranding;
+  } else {
+    tmp9 = cResult[1];
+  }
+  if (PremiumUtils.Branding.TIER_0 === tmp9) {
+    tmp11 = { logo: { width: 82, height: 44 } };
+    const obj2 = { logo: { width: 82, height: 44 } };
+  } else if (PremiumUtils.Branding.TIER_1 === tmp9) {
+    tmp11 = { logo: { width: 82, height: 32 } };
+    const obj3 = { logo: { width: 82, height: 32 } };
+  } else {
+    if (PremiumUtils.Branding.BUNDLE !== tmp9) {
+      if (PremiumUtils.Branding.TIER_2 !== tmp9) {
+        if (PremiumUtils.Branding.PREMIUM_GUILD === tmp9) {
+          tmp11 = { logo: { width: 82, height: 18 } };
+          const obj4 = { logo: { width: 82, height: 18 } };
+        }
+      }
+    }
+    tmp11 = { logo: { width: 79, height: 32 } };
+    const obj5 = { logo: { width: 79, height: 32 } };
+  }
+  const tmp12 = closure_10(tmp9);
+  const tmp13 = closure_11(tmp9);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl4.t.TkTvBz);
+    cResult[2] = stringResult;
+    tmp14 = stringResult;
+  } else {
+    tmp14 = cResult[2];
+  }
+  ({ alert: _alert, header } = tmp4);
+  if (cResult[3] !== tmp9) {
+    let tmp7Result;
+    if (PremiumUtils.Branding.TIER_0 === tmp9) {
+      tmp7Result = tmp7(10213);
+    } else if (PremiumUtils.Branding.TIER_1 === tmp9) {
+      tmp7Result = tmp7(10214);
+    } else if (PremiumUtils.Branding.TIER_2 === tmp9) {
+      tmp7Result = tmp7(10215);
+    } else if (PremiumUtils.Branding.BUNDLE === tmp9) {
+      tmp7Result = tmp7(10216);
+    } else if (PremiumUtils.Branding.PREMIUM_GUILD === tmp9) {
+      tmp7Result = tmp7(10217);
+    }
+    cResult[3] = tmp9;
+    cResult[4] = tmp7Result;
+    tmp16 = tmp7Result;
+  } else {
+    tmp16 = cResult[4];
+  }
+  if (cResult[5] !== tmp9) {
+    let tmp7Result3;
+    if (PremiumUtils.Branding.TIER_0 === tmp9) {
+      tmp7Result3 = tmp7(10221);
+    } else if (PremiumUtils.Branding.TIER_1 === tmp9) {
+      tmp7Result3 = tmp7(10222);
+    } else {
+      if (PremiumUtils.Branding.BUNDLE !== tmp9) {
+        if (PremiumUtils.Branding.TIER_2 !== tmp9) {
+          if (PremiumUtils.Branding.PREMIUM_GUILD === tmp9) {
+            tmp7Result3 = tmp7(10223);
+          }
+        }
+      }
+      tmp7Result3 = tmp7(7515);
+    }
+    cResult[5] = tmp9;
+    cResult[6] = tmp7Result3;
+    tmp18 = tmp7Result3;
+  } else {
+    tmp18 = cResult[6];
+  }
+  if (cResult[7] === tmp11.logo) {
+    let tmp20;
+    if (cResult[8] === tmp18) {
+      tmp20 = cResult[9];
+    }
+    if (cResult[10] === tmp9) {
+      let tmp22;
+      let tmp26;
+      if (cResult[11] === tmp4.logoPlusPremiumGuild) {
+        tmp22 = cResult[12];
+      }
+      if (cResult[13] !== tmp9) {
+        let tmp7Result4;
+        if (PremiumUtils.Branding.TIER_0 === tmp9) {
+          tmp7Result4 = tmp7(6857);
+        } else if (PremiumUtils.Branding.TIER_1 === tmp9) {
+          tmp7Result4 = tmp7(6858);
+        } else if (PremiumUtils.Branding.TIER_2 === tmp9) {
+          tmp7Result4 = tmp7(10218);
+        } else if (PremiumUtils.Branding.BUNDLE === tmp9) {
+          tmp7Result4 = tmp7(10219);
+        } else if (PremiumUtils.Branding.PREMIUM_GUILD === tmp9) {
+          tmp7Result4 = tmp7(10220);
+        }
+        cResult[13] = tmp9;
+        cResult[14] = tmp7Result4;
+        tmp26 = tmp7Result4;
+      } else {
+        tmp26 = cResult[14];
+      }
+      if (cResult[15] === tmp12.headerImage) {
+        let tmp28;
+        if (cResult[16] === tmp4.headerImage) {
+          tmp28 = cResult[17];
+        }
+        if (cResult[18] === tmp28) {
+          let tmp29;
+          if (cResult[19] === tmp26) {
+            tmp29 = cResult[20];
+          }
+          if (cResult[21] === tmp4.header) {
+            if (cResult[22] === tmp29) {
+              if (cResult[23] === tmp16) {
+                if (cResult[24] === tmp20) {
+                  let tmp33;
+                  if (cResult[25] === tmp22) {
+                    tmp33 = cResult[26];
+                  }
+                  if (cResult[27] === tmp9) {
+                    let tmp38;
+                    if (cResult[28] === tmp8) {
+                      tmp38 = cResult[29];
+                    }
+                    if (cResult[30] === tmp13.animation) {
+                      let tmp41;
+                      if (cResult[31] === tmp38) {
+                        tmp41 = cResult[32];
+                      }
+                      if (cResult[33] === tmp9) {
+                        let tmp45;
+                        if (cResult[34] === renewalMutations) {
+                          tmp45 = cResult[35];
+                        }
+                        if (cResult[36] === tmp4.description) {
+                          let tmp48;
+                          if (cResult[37] === tmp45) {
+                            tmp48 = cResult[38];
+                          }
+                          if (cResult[39] === tmp4.body) {
+                            if (cResult[40] === tmp41) {
+                              let tmp51;
+                              if (cResult[41] === tmp48) {
+                                tmp51 = cResult[42];
+                              }
+                              if (cResult[43] === onClose) {
+                                if (cResult[44] === tmp4.alert) {
+                                  if (cResult[45] === tmp33) {
+                                    let tmp55;
+                                    if (cResult[46] === tmp51) {
+                                      tmp55 = cResult[47];
+                                    }
+                                    return tmp55;
+                                  }
+                                }
+                              }
+                              const obj6 = { onClose, confirmText: tmp14, style: _alert, children: items };
+                              items = [tmp33, tmp51];
+                              const tmp57 = metroImportAll(AlertDefault, obj6);
+                              cResult[43] = onClose;
+                              cResult[44] = tmp4.alert;
+                              cResult[45] = tmp33;
+                              cResult[46] = tmp51;
+                              cResult[47] = tmp57;
+                              tmp55 = tmp57;
+                            }
+                          }
+                          const obj7 = { style: tmp37, children: items1 };
+                          items1 = [tmp41, tmp48];
+                          const tmp54 = metroImportAll(hasOwnProperty, obj7);
+                          cResult[39] = tmp4.body;
+                          cResult[40] = tmp41;
+                          cResult[41] = tmp48;
+                          cResult[42] = tmp54;
+                          tmp51 = tmp54;
+                        }
+                        const obj8 = { style: tmp44, children: tmp45 };
+                        const tmp50 = metroImportDefault(native.LegacyText, obj8);
+                        cResult[36] = tmp4.description;
+                        cResult[37] = tmp45;
+                        cResult[38] = tmp50;
+                        tmp48 = tmp50;
+                      }
+                      const tmp47 = getDescription(tmp9, renewalMutations);
+                      cResult[33] = tmp9;
+                      cResult[34] = renewalMutations;
+                      cResult[35] = tmp47;
+                      tmp45 = tmp47;
+                    }
+                    const obj9 = { source: tmp38, style: tmp13.animation };
+                    const tmp43 = metroImportDefault(ShineAnimationDefault, obj9);
+                    cResult[30] = tmp13.animation;
+                    cResult[31] = tmp38;
+                    cResult[32] = tmp43;
+                    tmp41 = tmp43;
+                  }
+                  const tmp40 = getActivatedImage(tmp9, tmp8);
+                  cResult[27] = tmp9;
+                  cResult[28] = tmp8;
+                  cResult[29] = tmp40;
+                  tmp38 = tmp40;
+                }
+              }
+            }
+          }
+          const obj10 = { style: header, source: tmp16, children: items2 };
+          items2 = [tmp20, tmp22, tmp29];
+          const tmp36 = metroImportAll(React3, obj10);
+          cResult[21] = tmp4.header;
+          cResult[22] = tmp29;
+          cResult[23] = tmp16;
+          cResult[24] = tmp20;
+          cResult[25] = tmp22;
+          cResult[26] = tmp36;
+          tmp33 = tmp36;
+        }
+        const obj11 = { source: tmp26, style: tmp28 };
+        const tmp32 = metroImportDefault(_false, obj11);
+        cResult[18] = tmp28;
+        cResult[19] = tmp26;
+        cResult[20] = tmp32;
+        tmp29 = tmp32;
+      }
+      const items3 = [tmp12.headerImage, tmp4.headerImage];
+      cResult[15] = tmp12.headerImage;
+      cResult[16] = tmp4.headerImage;
+      cResult[17] = items3;
+      tmp28 = items3;
+    }
+    let tmp23 = null;
+    if (tmp9 === PremiumUtils.Branding.BUNDLE) {
+      const obj12 = { source: AssetRegistryDefault2, style: tmp4.logoPlusPremiumGuild };
+      tmp23 = metroImportDefault(_false, obj12);
+    }
+    cResult[10] = tmp9;
+    cResult[11] = tmp4.logoPlusPremiumGuild;
+    cResult[12] = tmp23;
+    tmp22 = tmp23;
+  }
+  const obj13 = { source: tmp18, style: tmp11.logo };
+  const tmp21 = metroImportDefault(_false, obj13);
+  cResult[7] = tmp11.logo;
+  cResult[8] = tmp18;
+  cResult[9] = tmp21;
+  tmp20 = tmp21;
+}) : ((subscription) => {
   let intl;
   let items;
   let items1;
-  let obj15;
-  let tmp4Result10;
-  let tmp4Result11;
-  let tmp4Result12;
-  let tmp4Result18;
-  let tmp7Result8;
+  let items2;
+  let items3;
+  let tmp4Result5;
+  let tmp4Result6;
+  let tmp4Result7;
   let tmp9;
   subscription = subscription.subscription;
   const onClose = subscription.onClose;
@@ -116,132 +465,71 @@ export default function PremiumActivatedAlert(subscription) {
     const obj5 = { logo: { width: 79, height: 32 } };
   }
   const tmp10 = closure_10(premiumBranding);
-  const obj6 = { onClose, confirmText: intl.string(intl5.t.TkTvBz), style: tmp.alert, children: null };
+  const obj6 = { onClose, confirmText: intl.string(intl4.t.TkTvBz), style: tmp.alert, children: items2 };
   const tmp11 = closure_11(premiumBranding);
   const tmp4Result = AlertDefault;
-  intl = tmp7(1115).intl;
-  const obj7 = { style: tmp.header, source: tmp4Result10, children: items };
+  intl = tmp7(1127).intl;
+  const obj7 = { style: tmp.header, source: tmp4Result5, children: items };
   const tmp14 = React3;
   if (PremiumUtils.Branding.TIER_0 === premiumBranding) {
-    tmp4Result10 = tmp4(10174);
+    tmp4Result5 = tmp4(10213);
   } else if (PremiumUtils.Branding.TIER_1 === premiumBranding) {
-    tmp4Result10 = tmp4(10175);
+    tmp4Result5 = tmp4(10214);
   } else if (PremiumUtils.Branding.TIER_2 === premiumBranding) {
-    tmp4Result10 = tmp4(10176);
+    tmp4Result5 = tmp4(10215);
   } else if (PremiumUtils.Branding.BUNDLE === premiumBranding) {
-    tmp4Result10 = tmp4(10177);
+    tmp4Result5 = tmp4(10216);
   } else if (PremiumUtils.Branding.PREMIUM_GUILD === premiumBranding) {
-    tmp4Result10 = tmp4(10178);
+    tmp4Result5 = tmp4(10217);
   }
   if (PremiumUtils.Branding.TIER_0 === premiumBranding) {
-    tmp4Result11 = tmp4(10183);
+    tmp4Result6 = tmp4(10221);
   } else if (PremiumUtils.Branding.TIER_1 === premiumBranding) {
-    tmp4Result11 = tmp4(10184);
+    tmp4Result6 = tmp4(10222);
   } else {
     if (PremiumUtils.Branding.BUNDLE !== premiumBranding) {
       if (PremiumUtils.Branding.TIER_2 !== premiumBranding) {
         if (PremiumUtils.Branding.PREMIUM_GUILD === premiumBranding) {
-          tmp4Result11 = tmp4(10185);
+          tmp4Result6 = tmp4(10223);
         }
       }
     }
-    tmp4Result11 = tmp4(7511);
+    tmp4Result6 = tmp4(7515);
   }
   items = [, , ];
-  const obj8 = { source: tmp4Result11, style: tmp9.logo };
+  const obj8 = { source: tmp4Result6, style: tmp9.logo };
   items[0] = metroImportDefault(_false, obj8);
   let tmp16Result = null;
   if (premiumBranding === PremiumUtils.Branding.BUNDLE) {
-    const obj9 = { source: AssetRegistryDefault, style: tmp.logoPlusPremiumGuild };
+    const obj9 = { source: AssetRegistryDefault2, style: tmp.logoPlusPremiumGuild };
     tmp16Result = tmp16(tmp17, obj9);
   }
   items[1] = tmp16Result;
   if (PremiumUtils.Branding.TIER_0 === premiumBranding) {
-    tmp4Result12 = tmp4(8688);
+    tmp4Result7 = tmp4(6857);
   } else if (PremiumUtils.Branding.TIER_1 === premiumBranding) {
-    tmp4Result12 = tmp4(10179);
+    tmp4Result7 = tmp4(6858);
   } else if (PremiumUtils.Branding.TIER_2 === premiumBranding) {
-    tmp4Result12 = tmp4(10180);
+    tmp4Result7 = tmp4(10218);
   } else if (PremiumUtils.Branding.BUNDLE === premiumBranding) {
-    tmp4Result12 = tmp4(10181);
+    tmp4Result7 = tmp4(10219);
   } else if (PremiumUtils.Branding.PREMIUM_GUILD === premiumBranding) {
-    tmp4Result12 = tmp4(10182);
+    tmp4Result7 = tmp4(10220);
   }
-  const obj10 = { source: tmp4Result12, style: items1 };
+  const obj10 = { source: tmp4Result7, style: items1 };
   items1 = [tmp10.headerImage, tmp.headerImage];
   items[2] = metroImportDefault(_false, obj10);
-  const items2 = [metroImportAll(tmp14, obj7), ];
-  const obj11 = { style: tmp.body, children: null };
-  const tmp21 = hasOwnProperty;
-  const tmp4Result13 = ShineAnimationDefault;
-  if (PremiumUtils.Branding.TIER_0 === premiumBranding) {
-    let tmp4Result14;
-    const tmp7Result = shared;
-    if (tmp7Result.isThemeDark(tmp6)) {
-      tmp4Result14 = tmp4(10186);
-    } else {
-      tmp4Result14 = tmp4(10187);
-    }
-    tmp4Result18 = tmp4Result14;
-  } else if (PremiumUtils.Branding.TIER_1 === premiumBranding) {
-    let tmp4Result15;
-    const tmp7Result5 = shared;
-    if (tmp7Result5.isThemeDark(tmp6)) {
-      tmp4Result15 = tmp4(10188);
-    } else {
-      tmp4Result15 = tmp4(10189);
-    }
-    tmp4Result18 = tmp4Result15;
-  } else if (PremiumUtils.Branding.TIER_2 === premiumBranding) {
-    let tmp4Result16;
-    const tmp7Result6 = shared;
-    if (tmp7Result6.isThemeDark(tmp6)) {
-      tmp4Result16 = tmp4(10190);
-    } else {
-      tmp4Result16 = tmp4(10191);
-    }
-    tmp4Result18 = tmp4Result16;
-  } else if (PremiumUtils.Branding.BUNDLE === premiumBranding) {
-    let tmp4Result17;
-    const tmp7Result7 = shared;
-    if (tmp7Result7.isThemeDark(tmp6)) {
-      tmp4Result17 = tmp4(10192);
-    } else {
-      tmp4Result17 = tmp4(10193);
-    }
-    tmp4Result18 = tmp4Result17;
-  } else if (PremiumUtils.Branding.PREMIUM_GUILD === premiumBranding) {
-    tmp4Result18 = tmp4(10194);
-  }
-  const items3 = [, ];
-  const obj12 = { source: tmp4Result18, style: tmp11.animation };
-  items3[0] = metroImportDefault(tmp4Result13, obj12);
-  const obj13 = { style: tmp.description, children: null };
-  const LegacyText = tmp7(1177).LegacyText;
-  if (PremiumUtils.Branding.TIER_0 !== premiumBranding) {
-    let stringResult;
-    if (PremiumUtils.Branding.TIER_1 !== premiumBranding) {
-      if (PremiumUtils.Branding.TIER_2 === premiumBranding) {
-        const intl3 = tmp7(1115).intl;
-        stringResult = intl3.string(tmp7(1115).t.aTUr3Z);
-      } else if (PremiumUtils.Branding.BUNDLE === premiumBranding) {
-        const intl2 = tmp7(1115).intl;
-        const format = intl2.format;
-        const obj14 = { planName: tmp7Result8.getExternalPlanDisplayName(obj15) };
-        const YJUUH3 = tmp7(1115).t.YJUUH3;
-        obj15 = { planId: null, additionalPlans: null };
-        ({ planId: obj20.planId, additionalPlans: obj20.additionalPlans } = renewalMutations);
-        tmp7Result8 = PremiumUtils;
-        stringResult = format(YJUUH3, obj14);
-      }
-    }
-    obj13.children = stringResult;
-    items3[1] = metroImportDefault(LegacyText, obj13);
-    obj11.children = items3;
-    items2[1] = metroImportAll(tmp21, obj11);
-    obj6.children = items2;
-    return metroImportAll(tmp4Result, obj6);
-  }
-  const intl4 = tmp7(1115).intl;
-  stringResult = intl4.string(tmp7(1115).t.knvOVz);
-};
+  items2 = [metroImportAll(tmp14, obj7), ];
+  const obj11 = { style: tmp.body, children: items3 };
+  const obj12 = { source: getActivatedImage(premiumBranding, tmp6), style: tmp11.animation };
+  const tmp4Result8 = ShineAnimationDefault;
+  items3 = [metroImportDefault(tmp4Result8, obj12), ];
+  const obj13 = { style: tmp.description, children: getDescription(premiumBranding, renewalMutations) };
+  const LegacyText = tmp7(1189).LegacyText;
+  items3[1] = metroImportDefault(LegacyText, obj13);
+  items2[1] = metroImportAll(hasOwnProperty, obj11);
+  return metroImportAll(tmp4Result, obj6);
+});
+const result = size.fileFinishedImporting("components_native/premium/PremiumActivatedAlert.tsx");
+
+export default tmp5;

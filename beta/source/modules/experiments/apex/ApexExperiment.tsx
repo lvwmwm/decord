@@ -1,17 +1,19 @@
-// Module ID: 1436
-// Function ID: 1437
+// Module ID: 1442
+// Function ID: 1443
 // Name: apex/ApexExperiment
-// Dependencies: [32, 502, 1235, 1437, 1254, 1370, 504, 2]
+// Dependencies: [32, 502, 1247, 1443, 1266, 1376, 558, 576, 504, 2]
 // Exports: default
 
-// Module 1436 (apex/ApexExperiment)
+// Module 1442 (apex/ApexExperiment)
 import get_initialized from "get initialized" /* 504 */;
-import FingerprintUtils from "FingerprintUtils" /* 1254 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import discord_common_apex_ApexExperiment from "discord_common/apex/ApexExperiment" /* 1437 */;
+import react from "react" /* 576 */;
+import FingerprintUtils from "FingerprintUtils" /* 1266 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import discord_common_apex_ApexExperiment from "discord_common/apex/ApexExperiment" /* 1443 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1247 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const discord_common_apex_ApexExperimentDefault = discord_common_apex_ApexExperiment;
@@ -33,7 +35,50 @@ function getUnitId(arg0, guildId) {
     obj.assertNever(arg0);
   }
 }
-function useUnitId(arg0, guildId) {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, guildId) => {
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [AuthenticationStore];
+    const fn = function l() {
+      const items = [AuthenticationStore.getId(), AuthenticationStore.getInstallationForTracking()];
+      return items;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const tmp9 = _slicedToArray(tmpResult.useStateFromStoresArray(tmp4, tmp5), 2)[1];
+  if ("guild" === arg0) {
+    return guildId.guildId;
+  } else if ("user" === arg0) {
+    return tmp8;
+  } else if ("installation" === arg0) {
+    let tmp11;
+    if (cResult[2] !== tmp9) {
+      const tmpResult3 = FingerprintUtils;
+      let str3 = tmpResult3.maybeExtractId(tmp9);
+      if (str3 == null) {
+        str3 = "";
+      }
+      cResult[2] = tmp9;
+      cResult[3] = str3;
+      tmp11 = str3;
+    } else {
+      tmp11 = cResult[3];
+    }
+    return tmp11;
+  } else {
+    const tmpResult4 = GlobalUtils;
+    tmpResult4.assertNever(arg0);
+  }
+}) : ((arg0, guildId) => {
   let items = [AuthenticationStore];
   const obj = get_initialized;
   _slicedToArray(obj.useStateFromStoresArray(items, () => {
@@ -55,11 +100,11 @@ function useUnitId(arg0, guildId) {
     const tmpResult2 = GlobalUtils;
     tmpResult2.assertNever(arg0);
   }
-}
+});
 const result = size.fileFinishedImporting("modules/experiments/apex/ApexExperiment.tsx");
 
 export default function createApexExperiment(arg0) {
-  return discord_common_apex_ApexExperimentDefault(arg0, ApexExperimentStore, getUnitId, useUnitId);
+  return discord_common_apex_ApexExperimentDefault(arg0, ApexExperimentStore, getUnitId, closure_7);
 };
 export const ApexExperiment = discord_common_apex_ApexExperiment.ApexExperiment;
 export { getUnitId };

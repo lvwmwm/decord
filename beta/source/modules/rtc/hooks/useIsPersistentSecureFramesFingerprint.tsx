@@ -1,11 +1,11 @@
-// Module ID: 9172
-// Function ID: 9173
+// Module ID: 9149
+// Function ID: 9150
 // Name: useIsPersistentSecureFramesFingerprint
-// Dependencies: [5, 32, 19, 9165, 9163, 2]
+// Dependencies: [5, 32, 19, 9142, 9140, 2]
 // Exports: useIsPersistentSecureFramesFingerprint
 
-// Module 9172 (useIsPersistentSecureFramesFingerprint)
-import SecureFramesConstants from "SecureFramesConstants" /* 9165 */;
+// Module 9149 (useIsPersistentSecureFramesFingerprint)
+import SecureFramesConstants from "SecureFramesConstants" /* 9142 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -52,7 +52,7 @@ export const useIsPersistentSecureFramesFingerprint = function useIsPersistentSe
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let tmp47;
@@ -126,7 +126,7 @@ export const useIsPersistentSecureFramesFingerprint = function useIsPersistentSe
           c5 = 0;
           closure_2(false);
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp47) {
         if (0 === c5) {

@@ -1,10 +1,11 @@
 // Module ID: 10085
 // Function ID: 10086
-// Dependencies: [41, 42, 93, 95, 98, 10083, 9897, 9898, 9902]
+// Dependencies: [41, 42, 93, 95, 98, 10086, 9935, 9939]
 
 // Module 10085
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
-import _mod10083 from "module_10083" /* 10083 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9935 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9939 */;
+import _mod10086 from "module_10086" /* 10086 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -26,61 +27,60 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(denna|den h\u00E4r|f\u00F6rra|passerade|n\u00E4sta|kommande|efter|\\+|-)\\s*(" + _mod10083.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-const regExp1 = new RegExp("(denna|den h\u00E4r|f\u00F6rra|passerade|n\u00E4sta|kommande|efter|\\+|-)\\s*(" + _mod10083.TIME_UNITS_NO_ABBR_PATTERN + ")(?=\\W|$)", "i");
-class SVTimeUnitCasualRelativeFormatParser {
+let closure_6 = "(?:(?:\u043F\u0440\u0438\u0431\u043B\u0438\u0437\u043D\u043E|\u043E\u0440\u0456\u0454\u043D\u0442\u043E\u0432\u043D\u043E)\\s*(?:~\\s*)?)?(" + _mod10086.TIME_UNITS_PATTERN + ")" + _mod10086.REGEX_PARTS.rightBoundary;
+class UKTimeUnitWithinFormatParser {
   constructor() {
     let constructResult;
-    let flag = arg0;
-    if (arg0 === undefined) {
-      flag = true;
-    }
     const self = this;
-    _classCallCheck(this, SVTimeUnitCasualRelativeFormatParser);
-    const obj = _getPrototypeOf(SVTimeUnitCasualRelativeFormatParser);
+    _classCallCheck(this, UKTimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(UKTimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      constructResult = obj(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.allowAbbreviations = flag;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(SVTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(UKTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return this.allowAbbreviations ? regExp : regExp1;
+  key: "patternLeftBoundary",
+  value: function patternLeftBoundary() {
+    return _mod10086.REGEX_PARTS.leftBoundary;
   }
 };
 const items = [
   entry,
   {
+    key: "innerPattern",
+    value: function innerPattern(option) {
+      let _RegExp1;
+      const _RegExp = RegExp;
+      if (option.option.forwardDate) {
+        const self3 = this;
+        const self4 = this;
+        _RegExp1 = new _RegExp(tmp, "i");
+      } else {
+        const _HermesInternal = HermesInternal;
+        const combined = "(?:\u043F\u0440\u043E\u0442\u044F\u0433\u043E\u043C|\u043D\u0430 \u043F\u0440\u043E\u0442\u044F\u0437\u0456|\u043F\u0440\u043E\u0442\u044F\u0433\u043E\u043C|\u0443\u043F\u0440\u043E\u0434\u043E\u0432\u0436|\u0432\u043F\u0440\u043E\u0434\u043E\u0432\u0436)\\s*" + tmp;
+        const self = this;
+        const self2 = this;
+        _RegExp1 = new _RegExp(combined, _mod10086.REGEX_PARTS.flags);
+      }
+      return _RegExp1;
+    }
+  },
+  {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      const parseDurationResult = _mod10083.parseDuration(arg1[2]);
-      if (parseDurationResult) {
-        if ("f\u00F6rra" !== formatted) {
-          let reverseDurationResult;
-          if ("passerade" !== formatted) {
-            reverseDurationResult = parseDurationResult;
-          }
-          const ParsingComponents = tmp2(9898).ParsingComponents;
-          return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
-        }
-        reverseDurationResult = tmp2(9897).reverseDuration(parseDurationResult);
-      } else {
-        return null;
-      }
+      const parseDurationResult = _mod10086.parseDuration(arg1[1]);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
     }
   }
 ];
 
-export default _createClass(SVTimeUnitCasualRelativeFormatParser, items);
+export default _createClass(UKTimeUnitWithinFormatParser, items);

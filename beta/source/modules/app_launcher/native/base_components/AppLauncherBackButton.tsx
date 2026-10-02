@@ -1,30 +1,75 @@
-// Module ID: 11613
-// Function ID: 11614
+// Module ID: 11499
+// Function ID: 11500
 // Name: AppLauncherBackButton
-// Dependencies: [19, 21, 1486, 7363, 5941, 5993, 1115, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 1492, 5938, 5941, 1127, 7362, 2]
 
-// Module 11613 (AppLauncherBackButton)
+// Module 11499 (AppLauncherBackButton)
 import Fragment from "Fragment" /* 21 */;
-import Link from "Link" /* 1486 */;
-import IconButton2 from "IconButton" /* 7363 */;
+import react2 from "react" /* 576 */;
+import Link from "Link" /* 1492 */;
+import IconButton2 from "IconButton" /* 7362 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation;
+let navigation, onPress;
 
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherBackButton.tsx");
-
-export default function AppLauncherBackButton(onPress) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+  let tmp4;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(8);
+  onPress = onPress.onPress;
+  const obj2 = Link;
+  navigation = obj2.useNavigation();
+  if (cResult[0] !== navigation) {
+    const canGoBackResult = navigation.canGoBack();
+    cResult[0] = navigation;
+    cResult[1] = canGoBackResult;
+    tmp4 = canGoBackResult;
+  } else {
+    tmp4 = cResult[1];
+  }
+  const tmp6 = importDefault(tmp4 ? 5938 : 5941);
+  if (cResult[2] !== tmp4) {
+    const intl = tmp(1127).intl;
+    const string = intl.string;
+    const t = tmp(1127).t;
+    const stringResult = string(tmp4 ? t["13/7kX"] : t.cpT0Cq);
+    cResult[2] = tmp4;
+    cResult[3] = stringResult;
+    tmp7 = stringResult;
+  } else {
+    tmp7 = cResult[3];
+  }
+  if (cResult[4] === onPress) {
+    if (cResult[5] === tmp6) {
+      let tmp9;
+      if (cResult[6] === tmp7) {
+        tmp9 = cResult[7];
+      }
+      return tmp9;
+    }
+  }
+  const tmp10 = jsx(IconButton2.IconButton, { size: "sm", variant: "secondary-overlay", icon: tmp6, onPress, accessibilityLabel: tmp7, maxFontSizeMultiplier: 1.5 });
+  cResult[4] = onPress;
+  cResult[5] = tmp6;
+  cResult[6] = tmp7;
+  cResult[7] = tmp10;
+  tmp9 = tmp10;
+}) : ((onPress) => {
   onPress = onPress.onPress;
   const obj = Link;
   navigation = obj.useNavigation();
   const canGoBackResult = navigation.canGoBack();
   const IconButton = IconButton2.IconButton;
-  const intl = tmp(1115).intl;
+  const intl = tmp(1127).intl;
   const string = intl.string;
-  const t = tmp(1115).t;
-  return <IconButton size="sm" variant="secondary-overlay" icon={importDefault(canGoBackResult ? 5941 : 5993)} onPress={onPress} accessibilityLabel={string(canGoBackResult ? t["13/7kX"] : t.cpT0Cq)} maxFontSizeMultiplier={1.5} />;
-};
+  const t = tmp(1127).t;
+  return <IconButton size="sm" variant="secondary-overlay" icon={importDefault(canGoBackResult ? 5938 : 5941)} onPress={onPress} accessibilityLabel={string(canGoBackResult ? t["13/7kX"] : t.cpT0Cq)} maxFontSizeMultiplier={1.5} />;
+});
+const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherBackButton.tsx");
+
+export default tmp3;
 export const BACK_BUTTON_SIZE = 32;

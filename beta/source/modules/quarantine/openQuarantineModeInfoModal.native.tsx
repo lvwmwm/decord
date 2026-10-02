@@ -1,14 +1,14 @@
-// Module ID: 5834
-// Function ID: 5835
+// Module ID: 5835
+// Function ID: 5836
 // Name: openQuarantineModeInfoModal
-// Dependencies: [19, 17, 21, 4701, 5204, 5835, 1981, 2]
+// Dependencies: [19, 17, 21, 4703, 5205, 5836, 1987, 2]
 // Exports: default
 
-// Module 5834 (openQuarantineModeInfoModal)
+// Module 5835 (openQuarantineModeInfoModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ChatInputUtils from "ChatInputUtils" /* 4701 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
+import ChatInputUtils from "ChatInputUtils" /* 4703 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

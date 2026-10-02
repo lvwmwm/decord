@@ -1,20 +1,20 @@
-// Module ID: 16644
-// Function ID: 16645
+// Module ID: 16646
+// Function ID: 16647
 // Name: ChannelSettingsPermissionsStore
-// Dependencies: [5063, 8086, 2045, 1074, 7849, 510, 4474, 11105, 12, 504, 573, 2]
+// Dependencies: [5064, 9834, 2051, 1086, 7853, 510, 4477, 10973, 12, 504, 585, 2]
 
-// Module 16644 (ChannelSettingsPermissionsStore)
+// Module 16646 (ChannelSettingsPermissionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7849 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11105 */;
-import ApplicationStore from "ApplicationStore" /* 5063 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 8086 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import Constants from "Constants" /* 1074 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4477 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7853 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 10973 */;
+import ApplicationStore from "ApplicationStore" /* 5064 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 9834 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let areChannelsLockedResult, closure_20, closure_5;
@@ -100,7 +100,7 @@ function syncChannelUpdates(id) {
           }
           const areChannelsLocked = PermissionUtilsAll.areChannelsLocked;
           PermissionUtilsAll;
-          const obj5 = obj4(11105);
+          const obj5 = obj4(10973);
           let closure_4 = areChannelsLocked(channel, category, obj5.getAppChannelBotUserId(channel));
           return true;
         }

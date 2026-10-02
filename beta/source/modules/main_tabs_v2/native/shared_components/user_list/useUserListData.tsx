@@ -1,27 +1,27 @@
-// Module ID: 10322
-// Function ID: 10323
+// Module ID: 10363
+// Function ID: 10364
 // Name: useUserListData
-// Dependencies: [109, 32, 19, 7075, 7071, 7072, 1386, 4479, 1372, 1074, 4464, 7070, 9294, 573, 7074, 5831, 12, 1115, 9303, 2]
-// Exports: default
+// Dependencies: [109, 32, 19, 7079, 7075, 7076, 1392, 4482, 1378, 1086, 4467, 7074, 9272, 585, 7078, 5832, 12, 1127, 558, 576, 9281, 2]
 
-// Module 10322 (useUserListData)
+// Module 10363 (useUserListData)
 import _modDef12 from "module_12" /* 12 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import intl6 from "intl" /* 1115 */;
-import GuildUtilsDefault from "GuildUtils" /* 5831 */;
-import UserSearchItemsDefault from "UserSearchItems" /* 7070 */;
-import UserSearchUtils from "UserSearchUtils" /* 7074 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9294 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import intl6 from "intl" /* 1127 */;
+import GuildUtilsDefault from "GuildUtils" /* 5832 */;
+import UserSearchItemsDefault from "UserSearchItems" /* 7074 */;
+import UserSearchUtils from "UserSearchUtils" /* 7078 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 9272 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7075 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7071 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7072 */;
-import UserRecord from "UserRecord" /* 1386 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7079 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7075 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7076 */;
+import UserRecord from "UserRecord" /* 1392 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -131,7 +131,7 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   let withFriendSuggestions;
   let withFriends;
   let withGuildMembers;
-  const f91042 = (items) => items.items;
+  const f103546 = (items) => items.items;
   ({ data, withFriends, excludeCurrentUser } = affinitySuggestionsLimit);
   ({ withGuildMembers, withAffinitySuggestions, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam } = affinitySuggestionsLimit);
   if (excludeCurrentUser === undefined) {
@@ -198,8 +198,8 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   } else {
     items11 = [];
   }
-  let items9 = [{ title: null, items: items11.flatMap(f91042) }];
-  const obj = { title: null, items: items11.flatMap(f91042) };
+  let items9 = [{ title: null, items: items11.flatMap(f103546) }];
+  const obj = { title: null, items: items11.flatMap(f103546) };
   const obj2 = { title: intl.string(intl6.t.HbJ7eD), items: valueResult2 };
   intl = intl6.intl;
   if (withAffinitySuggestions) {
@@ -212,7 +212,7 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   }
   const items10 = [obj2, , , , , , , ];
   const obj3 = { title: intl2.formatToPlainString(intl6.t.zsVtft, obj5), items: items1 };
-  intl2 = tmp7(1115).intl;
+  intl2 = tmp7(1127).intl;
   obj5 = { pendingRequestNumber: items1.length };
   if (!withFriendRequests) {
     items1 = [];
@@ -231,20 +231,20 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   }
   items10[4] = { title: null, items: items4 };
   const obj6 = { title: intl3.formatToPlainString(intl6.t["DYMZ/p"], obj7), items: items5 };
-  intl3 = tmp7(1115).intl;
+  intl3 = tmp7(1127).intl;
   obj7 = { count: items5.length };
   if (!withFriendSuggestions) {
     items5 = [];
   }
   items10[5] = obj6;
   const obj8 = { title: intl4.string(intl6.t.TdEu5X), items: items6 };
-  intl4 = tmp7(1115).intl;
+  intl4 = tmp7(1127).intl;
   if (!withFriends) {
     items6 = [];
   }
   items10[6] = obj8;
   const obj9 = { title: intl5.string(intl6.t.y29JXs), items: found };
-  intl5 = tmp7(1115).intl;
+  intl5 = tmp7(1127).intl;
   if (!withGuildMembers) {
     found = [];
   }
@@ -272,7 +272,7 @@ class UserSearch {
     obj.currentQuery = "";
     obj.affinities = {};
     obj.userSearchContext = null;
-    const secondaryIndexMap = new obj(4464).SecondaryIndexMap((arg0) => {
+    const secondaryIndexMap = new obj(4467).SecondaryIndexMap((arg0) => {
       let names;
       let type;
       ({ names, type } = arg0);
@@ -712,7 +712,7 @@ class UserSearch {
       if ("" !== self.currentQuery) {
         nick = isMatch(names, self.currentQuery, { contains: true });
       }
-      const tmp12Result = tmp12(7074);
+      const tmp12Result = tmp12(7078);
       const relationshipType = tmp12Result.getRelationshipType(user.id);
       if (relationshipType !== RelationshipTypes.FRIEND) {
         const gameFriendsForUser = GameRelationshipStore.getGameFriendsForUser(id);
@@ -767,9 +767,200 @@ class UserSearch {
   }
 }
 const prototype = UserSearch.prototype;
-let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useUserListData.tsx");
-
-export default function useUserListData(query) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserListData(query) {
+  let affinitySuggestionsLimit;
+  let arr;
+  let excludeCurrentUser;
+  let first;
+  let tmp6;
+  let withAffinitySuggestions;
+  let withAlphabeticalSections;
+  let withFriendRequests;
+  let withFriendRequestsIncoming;
+  let withFriendRequestsOutgoing;
+  let withFriendRequestsSpam;
+  let withFriendSuggestions;
+  let withFriends;
+  let withGameFriends;
+  let obj = query(576);
+  const cResult = obj.c(34);
+  query = query.query;
+  const withGuildMembers = query.withGuildMembers;
+  ({ withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, excludeCurrentUser, affinitySuggestionsLimit, withAlphabeticalSections } = query);
+  let num = 5;
+  if (undefined !== affinitySuggestionsLimit) {
+    num = affinitySuggestionsLimit;
+  }
+  [tmp6, dependencyMap] = react.useState(0);
+  _slicedToArray(react.useState(0), 2);
+  const tmp4 = _slicedToArray;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s() {
+      return dependencyMap(Date.now());
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== withGameFriends) {
+    const self = this;
+    const tmp11 = new UserSearch(first, withGameFriends);
+    cResult[1] = withGameFriends;
+    cResult[2] = tmp11;
+    arr = tmp11;
+  } else {
+    arr = cResult[2];
+  }
+  if (cResult[3] === query) {
+    let tmp12;
+    if (cResult[4] === arr) {
+      tmp12 = cResult[5];
+    }
+    if (cResult[6] === tmp12) {
+      let tmp14;
+      if (cResult[7] === tmp6) {
+        tmp14 = cResult[8];
+      }
+      const first1 = tmp4(tmp14, 1)[0];
+      if (cResult[9] === arr) {
+        let tmp16;
+        let tmp17;
+        if (cResult[10] === withGuildMembers) {
+          tmp16 = cResult[11];
+          tmp17 = cResult[12];
+        }
+        const effect = obj2.useEffect(tmp16, tmp17);
+        if (cResult[13] === query) {
+          if (cResult[14] === arr) {
+            let tmp19;
+            let tmp20;
+            if (cResult[15] === withGuildMembers) {
+              tmp19 = cResult[16];
+              tmp20 = cResult[17];
+            }
+            const effect1 = obj2.useEffect(tmp19, tmp20);
+            const _Symbol = Symbol;
+            class T {
+              constructor() {
+                const response = arr.fetch(query, withGuildMembers);
+              }
+            }
+            class O {
+              constructor() {
+                obj = withGuildMembers(closure_2[16]);
+                closure_0 = obj.debounce(() => closure_1_2(Date.now()), 0);
+                subscription = closure_3.subscribe(() => {
+                  closure_0();
+                }, withGuildMembers);
+                return () => arr.unsubscribe();
+              }
+            }
+            const effect2 = obj2.useEffect(tmp23, tmp24);
+            if (cResult[20] === num) {
+              if (cResult[21] === first1) {
+                if (cResult[22] === (undefined !== excludeCurrentUser && excludeCurrentUser)) {
+                  if (cResult[23] === withAffinitySuggestions) {
+                    if (cResult[24] === (undefined === withAlphabeticalSections || withAlphabeticalSections)) {
+                      if (cResult[25] === withFriendRequests) {
+                        if (cResult[26] === withFriendRequestsIncoming) {
+                          if (cResult[27] === withFriendRequestsOutgoing) {
+                            if (cResult[28] === withFriendRequestsSpam) {
+                              if (cResult[29] === withFriendSuggestions) {
+                                if (cResult[30] === withFriends) {
+                                  if (cResult[31] === withGameFriends) {
+                                    let tmp26;
+                                    if (cResult[32] === withGuildMembers) {
+                                      tmp26 = cResult[33];
+                                    }
+                                    return tmp26;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            const obj3 = { data: first1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, excludeCurrentUser: undefined !== excludeCurrentUser && excludeCurrentUser, affinitySuggestionsLimit: num, withAlphabeticalSections: undefined === withAlphabeticalSections || withAlphabeticalSections };
+            const tmp28 = parseUserSearchResults(obj3);
+            cResult[20] = num;
+            cResult[21] = first1;
+            cResult[22] = undefined !== excludeCurrentUser && excludeCurrentUser;
+            cResult[23] = withAffinitySuggestions;
+            cResult[24] = undefined === withAlphabeticalSections || withAlphabeticalSections;
+            cResult[25] = withFriendRequests;
+            cResult[26] = withFriendRequestsIncoming;
+            cResult[27] = withFriendRequestsOutgoing;
+            cResult[28] = withFriendRequestsSpam;
+            cResult[29] = withFriendSuggestions;
+            cResult[30] = withFriends;
+            cResult[31] = withGameFriends;
+            cResult[32] = withGuildMembers;
+            cResult[33] = tmp28;
+            tmp26 = tmp28;
+          }
+        }
+        class T {
+          constructor() {
+            const response = arr.fetch(query, withGuildMembers);
+          }
+        }
+        class O {
+          constructor() {
+            obj = withGuildMembers(closure_2[16]);
+            closure_0 = obj.debounce(() => closure_1_2(Date.now()), 0);
+            subscription = closure_3.subscribe(() => {
+              closure_0();
+            }, withGuildMembers);
+            return () => arr.unsubscribe();
+          }
+        }
+        tmp21[0] = arr;
+        tmp21[1] = query;
+        tmp21[2] = withGuildMembers;
+        cResult[13] = query;
+        cResult[14] = arr;
+        cResult[15] = withGuildMembers;
+        cResult[16] = T;
+        cResult[17] = tmp21;
+        tmp20 = tmp21;
+        tmp19 = T;
+      }
+      class O {
+        constructor() {
+          obj = withGuildMembers(closure_2[16]);
+          closure_0 = obj.debounce(() => closure_1_2(Date.now()), 0);
+          subscription = closure_3.subscribe(() => {
+            closure_0();
+          }, withGuildMembers);
+          return () => arr.unsubscribe();
+        }
+      }
+      const items = [arr, withGuildMembers];
+      cResult[9] = arr;
+      cResult[10] = withGuildMembers;
+      cResult[11] = O;
+      cResult[12] = items;
+      tmp17 = items;
+      tmp16 = O;
+    }
+    const items1 = [, ];
+    cResult[6] = tmp12;
+    cResult[7] = tmp6;
+    cResult[8] = items1;
+    tmp14 = items1;
+  }
+  const found = arr.filter(query);
+  cResult[3] = query;
+  cResult[4] = arr;
+  cResult[5] = found;
+  tmp12 = found;
+}) : (function useUserListData(query) {
   query = query.query;
   const withGuildMembers = query.withGuildMembers;
   const withAffinitySuggestions = query.withAffinitySuggestions;
@@ -816,7 +1007,7 @@ export default function useUserListData(query) {
     const response = memo.fetch(query, withGuildMembers);
   }, items3);
   const effect2 = withFriendSuggestions.useEffect(() => {
-    const obj = query(withAffinitySuggestions[18]);
+    const obj = query(withAffinitySuggestions[20]);
     const userAffinitiesV2 = obj.fetchUserAffinitiesV2();
   }, []);
   const items4 = [first1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, flag, num, flag2];
@@ -824,6 +1015,9 @@ export default function useUserListData(query) {
     const obj = { data: first1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, excludeCurrentUser: flag, affinitySuggestionsLimit: num, withAlphabeticalSections: flag2 };
     return parseUserSearchResults(obj);
   }, items4);
-};
+});
+let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useUserListData.tsx");
+
+export default tmp3;
 export { UserSearch };
 export { parseUserSearchResults };

@@ -1,9 +1,9 @@
-// Module ID: 6975
-// Function ID: 6976
+// Module ID: 6979
+// Function ID: 6980
 // Name: ShopAssetConfigRecord
 // Dependencies: [2]
 
-// Module 6975 (ShopAssetConfigRecord)
+// Module 6979 (ShopAssetConfigRecord)
 import size from "module_2" /* 2 */;
 
 class AssetDisplayConfigRecord {

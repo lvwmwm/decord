@@ -1,52 +1,91 @@
-// Module ID: 6588
-// Function ID: 6589
+// Module ID: 6589
+// Function ID: 6590
 // Name: useAuthorizationApp
-// Dependencies: [19, 5063, 2003, 1349, 1979, 6589, 2]
-// Exports: getAuthorizationApp, useAuthorizationApp
+// Dependencies: [19, 5064, 2009, 1361, 1985, 558, 576, 6590, 2]
+// Exports: getAuthorizationApp
 
-// Module 6588 (useAuthorizationApp)
-import ApplicationConstants from "ApplicationConstants" /* 1349 */;
+// Module 6589 (useAuthorizationApp)
+import react2 from "react" /* 576 */;
+import ApplicationConstants from "ApplicationConstants" /* 1361 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5063 */;
-import ApplicationRecord from "ApplicationRecord" /* 2003 */;
+import ApplicationStore from "ApplicationStore" /* 5064 */;
+import ApplicationRecord from "ApplicationRecord" /* 2009 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
+let tmp;
+const useGetOrFetchApplications = tmp(6590);
 const ApplicationTypes = ApplicationConstants.ApplicationTypes;
-const result = size.fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizationApp.tsx");
-
-export const getAuthorizationApp = function getAuthorizationApp(type) {
-  if (null == type) {
-    return null;
-  } else if (type.type !== ApplicationTypes.GAME) {
-    return type;
-  } else {
-    const linkedGames = type.linkedGames;
-    let found;
-    if (linkedGames != null) {
-      found = linkedGames.find((type) => type.type === getOfficialApplicationId(getOrFetchApplication[4]).GameLinkTypes.OFFICIAL);
-    }
-    let application;
-    if (found != null) {
-      application = found.application;
-    }
-    if (application == null) {
-      let id;
-      const getApplication = ApplicationStore.getApplication;
-      if (found != null) {
-        id = found.id;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getOfficialApplicationId) => {
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(4);
+  if (cResult[0] !== getOfficialApplicationId) {
+    let officialApplicationId;
+    if (null != getOfficialApplicationId) {
+      if (!(getOfficialApplicationId instanceof ApplicationRecord)) {
+        officialApplicationId = getOfficialApplicationId.getOfficialApplicationId();
       }
-      application = getApplication(id);
     }
-    if (application == null) {
-      application = null;
-    }
-    return application;
+    cResult[0] = getOfficialApplicationId;
+    cResult[1] = officialApplicationId;
+    tmp4 = officialApplicationId;
+  } else {
+    tmp4 = cResult[1];
   }
-};
-export const useAuthorizationApp = function useAuthorizationApp(getOfficialApplicationId) {
+  const tmpResult = useGetOrFetchApplications;
+  let getOrFetchApplication = tmpResult.useGetOrFetchApplication(tmp4);
+  let tmp9 = null;
+  if (null != getOfficialApplicationId) {
+    if (getOfficialApplicationId instanceof ApplicationRecord) {
+      let tmp11;
+      if (cResult[2] !== getOfficialApplicationId) {
+        let tmp12 = null;
+        if (null != getOfficialApplicationId) {
+          tmp12 = getOfficialApplicationId;
+          if (getOfficialApplicationId.type === ApplicationTypes.GAME) {
+            const linkedGames = getOfficialApplicationId.linkedGames;
+            let found;
+            if (linkedGames != null) {
+              found = linkedGames.find((type) => type.type === getOfficialApplicationId(getOrFetchApplication[4]).GameLinkTypes.OFFICIAL);
+            }
+            let application;
+            if (found != null) {
+              application = found.application;
+            }
+            if (application == null) {
+              let id;
+              const getApplication = ApplicationStore.getApplication;
+              if (found != null) {
+                id = found.id;
+              }
+              application = getApplication(id);
+            }
+            if (application == null) {
+              application = null;
+            }
+            tmp12 = application;
+          }
+        }
+        cResult[2] = getOfficialApplicationId;
+        cResult[3] = tmp12;
+        tmp11 = tmp12;
+      } else {
+        tmp11 = cResult[3];
+      }
+      tmp9 = tmp11;
+    } else {
+      if (getOrFetchApplication == null) {
+        getOrFetchApplication = null;
+      }
+      tmp9 = getOrFetchApplication;
+    }
+  }
+  return tmp9;
+}) : ((getOfficialApplicationId) => {
   let getOrFetchApplication;
   _require = getOfficialApplicationId;
   let officialApplicationId;
@@ -102,4 +141,37 @@ export const useAuthorizationApp = function useAuthorizationApp(getOfficialAppli
     }
     return tmp2;
   }, items);
-};
+});
+function getAuthorizationApp(type) {
+  if (null == type) {
+    return null;
+  } else if (type.type !== ApplicationTypes.GAME) {
+    return type;
+  } else {
+    const linkedGames = type.linkedGames;
+    let found;
+    if (linkedGames != null) {
+      found = linkedGames.find((type) => type.type === getOfficialApplicationId(getOrFetchApplication[4]).GameLinkTypes.OFFICIAL);
+    }
+    let application;
+    if (found != null) {
+      application = found.application;
+    }
+    if (application == null) {
+      let id;
+      const getApplication = ApplicationStore.getApplication;
+      if (found != null) {
+        id = found.id;
+      }
+      application = getApplication(id);
+    }
+    if (application == null) {
+      application = null;
+    }
+    return application;
+  }
+}
+const result = size.fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizationApp.tsx");
+
+export { getAuthorizationApp };
+export const useAuthorizationApp = tmp2;

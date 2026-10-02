@@ -1,15 +1,15 @@
-// Module ID: 17685
-// Function ID: 17686
+// Module ID: 17687
+// Function ID: 17688
 // Name: LibdiscoreExperimentManager
-// Dependencies: [1235, 1350, 2071, 558, 1435, 6539, 2]
+// Dependencies: [1247, 562, 559, 568, 1441, 6540, 2]
 
-// Module 17685 (LibdiscoreExperimentManager)
-import shallowEqualDefault from "shallowEqual" /* 558 */;
-import shim from "shim" /* 1350 */;
-import ApexExperiment from "ApexExperiment" /* 1435 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 2071 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+// Module 17687 (LibdiscoreExperimentManager)
+import libdiscoreExperiments from "libdiscoreExperiments" /* 559 */;
+import shim from "shim" /* 562 */;
+import shallowEqualDefault from "shallowEqual" /* 568 */;
+import ApexExperiment from "ApexExperiment" /* 1441 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1247 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let map, treatmentId;
@@ -20,13 +20,15 @@ function experimentStoreUpdateHandler() {
     const tmpResult = libdiscoreExperiments;
     if (!tmpResult.isExperimentSyncDisabled()) {
       obj2 = {};
-      const ALL_LIBDISCORE_EXPERIMENTS = tmp(2071).ALL_LIBDISCORE_EXPERIMENTS;
+      const ALL_LIBDISCORE_EXPERIMENTS = tmp(559).ALL_LIBDISCORE_EXPERIMENTS;
       for (const item10018 of ALL_LIBDISCORE_EXPERIMENTS) {
-        obj2[item10018.id] = item10018.getCurrentConfig();
+        let currentConfig = item10018.getCurrentConfig({ autoTrackExposure: false });
+        obj2[item10018.id] = currentConfig;
+        let result = item10018.trackExposureIfCachedConfigMatches(currentConfig);
         continue;
       }
-      const tmp7 = null != obj2 && shallowEqualDefault(obj2, obj2);
-      if (!tmp7) {
+      const tmp9 = null != obj2 && shallowEqualDefault(obj2, obj2);
+      if (!tmp9) {
         const obj4 = shim;
         const experimentCacher = obj4.getExperimentCacher();
         const _JSON = JSON;
@@ -73,6 +75,6 @@ class LibdiscoreExperimentManager extends AutomaticLifecycleManager {
 }
 const prototype = LibdiscoreExperimentManager.prototype;
 const libdiscoreExperimentManager = new LibdiscoreExperimentManager();
-const result = size.fileFinishedImporting("modules/libdiscore/LibdiscoreExperimentManager.tsx");
+let result = size.fileFinishedImporting("modules/libdiscore/LibdiscoreExperimentManager.tsx");
 
 export default libdiscoreExperimentManager;

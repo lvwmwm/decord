@@ -1,130 +1,180 @@
 // Module ID: 10004
 // Function ID: 10005
-// Dependencies: [41, 42, 93, 95, 98, 10003, 9897, 9902]
+// Dependencies: [41, 42, 9956, 9937]
 
 // Module 10004
-import EmptyDuration from "EmptyDuration" /* 9897 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
-import _mod10003 from "module_10003" /* 10003 */;
+import Meridiem from "Meridiem" /* 9937 */;
+import now2 from "now" /* 9956 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+let hasOwnProperty;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
+const self = this;
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
 }
-const keys = Object.keys(_mod10003.NUMBER);
-const regExp = new RegExp("(\\d+|[" + keys.join("") + "]+|\u534A|\u51E0)(?:\\s*)(?:\u4E2A)?(\u79D2(?:\u949F)?|\u5206\u949F|\u5C0F\u65F6|\u949F|\u65E5|\u5929|\u661F\u671F|\u793C\u62DC|\u6708|\u5E74)(?:(?:\u4E4B|\u8FC7)?\u540E|(?:\u4E4B)?\u5185)", "i");
-class ZHHansDeadlineFormatParser {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, ZHHansDeadlineFormatParser);
-    const obj = _getPrototypeOf(ZHHansDeadlineFormatParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
+if (!self2) {
+  let _Object = Object;
+  self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
     }
-    return tmp3(self, constructResult);
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let tmp3 = self && self.__setModuleDefault;
+if (!tmp3) {
+  let tmp4 = globalThis;
+  const _Object2 = Object;
+  tmp3 = Object.create ? ((arg0, value) => {
+    const obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let closure_5 = tmp3;
+let fn = self && self.__importStar;
+if (!fn) {
+  fn = function t(arg0) {
+    fn = Object.getOwnPropertyNames || ((obj) => {
+      const items = [];
+      for (const key10005 in obj) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        if (!hasOwnProperty.call(obj, key10005)) {
+          continue;
+        } else {
+          items[items.length] = key10005;
+          continue;
+        }
+        continue;
+      }
+      return items;
+    });
+    return fn(arg0);
+  };
+  fn = (__esModule) => {
+    const tmp = __esModule;
+    if (tmp) {
+      if (__esModule.__esModule) {
+        return __esModule;
+      }
+    }
+    const obj = {};
+    if (null != __esModule) {
+      let num;
+      const arr = fn(__esModule);
+      for (let num = 0; num < arr.length; num = num + 1) {
+        if ("default" !== arr[num]) {
+          let tmp5 = self2(obj, __esModule, arr[num]);
+        }
+      }
+    }
+    closure_5(obj, __esModule);
+    return obj;
+  };
+}
+const now = fn(now2);
+const re7 = /今日|きょう|本日|ほんじつ|昨日|きのう|明日|あした|今夜|こんや|今夕|こんゆう|今晩|こんばん|今朝|けさ/i;
+class JPCasualDateParser {
+  constructor() {
+    _classCallCheck(this, JPCasualDateParser);
   }
 }
-_inherits(ZHHansDeadlineFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "pattern",
+  value: function pattern() {
+    return re7;
   }
 };
-const items = [
+let items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      let num = parseInt(index[1]);
-      if (isNaN(num)) {
-        num = _mod10003.zhStringToNumber(index[1]);
-      }
-      if (isNaN(num)) {
-        num = 3;
-        if ("\u51E0" !== index[1]) {
-          num = 0.5;
-          if ("\u534A" !== index[1]) {
-            return null;
-          }
+    key: "extract",
+    value: function extract(createParsingComponents, arg1) {
+      let str6;
+      const first = arg1[0];
+      if ("\u304D\u3087\u3046" === first) {
+        str6 = "\u4ECA\u65E5";
+      } else if ("\u307B\u3093\u3058\u3064" === first) {
+        str6 = "\u672C\u65E5";
+      } else if ("\u304D\u306E\u3046" === first) {
+        str6 = "\u6628\u65E5";
+      } else if ("\u3042\u3057\u305F" === first) {
+        str6 = "\u660E\u65E5";
+      } else if ("\u3053\u3093\u3084" === first) {
+        str6 = "\u4ECA\u591C";
+      } else if ("\u3053\u3093\u3086\u3046" === first) {
+        str6 = "\u4ECA\u5915";
+      } else if ("\u3053\u3093\u3070\u3093" === first) {
+        str6 = "\u4ECA\u6669";
+      } else {
+        str6 = "\u4ECA\u671D";
+        if ("\u3051\u3055" !== first) {
+          str6 = first;
         }
       }
-      const obj = {};
-      if (index[2][0].match(/[日天星礼月年]/)) {
-        if ("\u65E5" != index[2][0]) {
-          if ("\u5929" != index[2][0]) {
-            if ("\u661F" != index[2][0]) {
-              if ("\u793C" != index[2][0]) {
-                if ("\u6708" == index[2][0]) {
-                  obj.month = num;
-                } else if ("\u5E74" == index[2][0]) {
-                  obj.year = num;
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      if ("\u6628\u65E5" === str6) {
+        return now.yesterday(createParsingComponents.reference);
+      } else if ("\u660E\u65E5" === str6) {
+        return now.tomorrow(createParsingComponents.reference);
+      } else {
+        if ("\u672C\u65E5" !== str6) {
+          if ("\u4ECA\u65E5" !== str6) {
+            if ("\u4ECA\u591C" != str6) {
+              if ("\u4ECA\u5915" != str6) {
+                if ("\u4ECA\u6669" != str6) {
+                  if (str6.match("\u4ECA\u671D")) {
+                    parsingComponents.imply("hour", 6);
+                    parsingComponents.assign("meridiem", Meridiem.Meridiem.AM);
+                  }
                 }
+                const refDate = createParsingComponents.refDate;
+                parsingComponents.assign("day", refDate.getDate());
+                parsingComponents.assign("month", refDate.getMonth() + 1);
+                parsingComponents.assign("year", refDate.getFullYear());
+                return parsingComponents;
               }
             }
-            obj.week = num;
-          }
-          const addDurationResult = EmptyDuration.addDuration(createParsingResult.refDate, obj);
-          const start7 = parsingResult.start;
-          start7.assign("year", addDurationResult.getFullYear());
-          const start8 = parsingResult.start;
-          start8.assign("month", addDurationResult.getMonth() + 1);
-          const start9 = parsingResult.start;
-          start9.assign("day", addDurationResult.getDate());
-          return parsingResult;
-        }
-        obj.day = num;
-      } else {
-        if ("\u79D2" == index[2][0]) {
-          obj.second = num;
-        } else if ("\u5206" == index[2][0]) {
-          obj.minute = num;
-        } else {
-          const tmp6 = "\u5C0F" != str3 && "\u949F" != str3;
-          if (!tmp6) {
-            obj.hour = num;
+            parsingComponents.imply("hour", 22);
+            parsingComponents.assign("meridiem", Meridiem.Meridiem.PM);
           }
         }
-        const addDurationResult1 = EmptyDuration.addDuration(createParsingResult.refDate, obj);
-        const start = parsingResult.start;
-        start.imply("year", addDurationResult1.getFullYear());
-        const start2 = parsingResult.start;
-        start2.imply("month", addDurationResult1.getMonth() + 1);
-        const start3 = parsingResult.start;
-        start3.imply("day", addDurationResult1.getDate());
-        const start4 = parsingResult.start;
-        start4.assign("hour", addDurationResult1.getHours());
-        const start5 = parsingResult.start;
-        start5.assign("minute", addDurationResult1.getMinutes());
-        const start6 = parsingResult.start;
-        start6.assign("second", addDurationResult1.getSeconds());
-        return parsingResult;
+        return now.today(createParsingComponents.reference);
       }
     }
   }
 ];
 
-export default _createClass(ZHHansDeadlineFormatParser, items);
+export default _createClass(JPCasualDateParser, items);

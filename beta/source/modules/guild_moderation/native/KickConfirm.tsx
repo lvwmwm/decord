@@ -1,21 +1,23 @@
-// Module ID: 11328
-// Function ID: 11329
+// Module ID: 11203
+// Function ID: 11204
 // Name: KickConfirm
-// Dependencies: [32, 19, 17, 2067, 1372, 21, 4836, 576, 6402, 10608, 504, 5832, 11329, 4832, 1115, 4678, 6506, 5281, 2]
+// Dependencies: [32, 19, 17, 2073, 1378, 21, 4837, 588, 558, 576, 6399, 10596, 504, 5833, 11204, 4833, 1127, 4680, 6507, 5282, 2]
 
-// Module 11328 (KickConfirm)
-import nativeDefault from "native" /* 576 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
+// Module 11203 (KickConfirm)
+import nativeDefault from "native" /* 588 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5833 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import UserStore from "UserStore" /* 1372 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let catchPromise, guildId, id, id1, kickUser, kickUserResult, nextPromise, ref, tmp3, tmp4, tmp5, tmp6, tmp7;
 
 let c10;
 let closure_12;
@@ -41,7 +43,173 @@ obj5 = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space
 obj6 = { marginVertical: nativeDefault.space.PX_16 };
 obj7 = { marginBottom: nativeDefault.space.PX_16 };
 let closure_13 = createStyles(obj);
-const memoResult = react.memo(function KickConfirm(arg0) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let closure_6;
+  let first;
+  let onKick;
+  let stateFromStores1;
+  let tmp10;
+  let tmp12;
+  let tmp14;
+  let tmp16;
+  let tmp17;
+  let tmp9;
+  const tmp = guildId;
+  let tmp2 = onKick;
+  const obj = guildId(onKick[9]);
+  const cResult = obj.c(22);
+  guildId = guildId.guildId;
+  const userId = guildId.userId;
+  onKick = guildId.onKick;
+  closure_13();
+  ref = stateFromStores1.useRef(null);
+  const ref1 = stateFromStores1.useRef(null);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { includeKeyboardHeight: true };
+    cResult[0] = obj3;
+    first = obj3;
+  } else {
+    first = cResult[0];
+  }
+  const tmp8 = userId;
+  const insets = userId(tmp2[10])(first).insets;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [{ ref: ref1, offset: { type: "toBottom" } }];
+    const obj4 = { ref: ref1, offset: { type: "toBottom" } };
+    cResult[1] = items;
+    tmp9 = items;
+  } else {
+    tmp9 = cResult[1];
+  }
+  if (cResult[2] !== insets) {
+    const obj5 = { insets, inputs: tmp9, scrollViewRef: ref };
+    cResult[2] = insets;
+    cResult[3] = obj5;
+    tmp10 = obj5;
+  } else {
+    tmp10 = cResult[3];
+  }
+  tmp8(tmp2[11])(tmp10);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [GuildStore];
+    cResult[4] = items1;
+    tmp12 = items1;
+  } else {
+    tmp12 = cResult[4];
+  }
+  if (cResult[5] !== guildId) {
+    class R {
+      constructor() {
+        return closure_8.getGuild(guildId);
+      }
+    }
+    cResult[5] = guildId;
+    cResult[6] = R;
+    tmp14 = R;
+  } else {
+    class R {
+      constructor() {
+        return closure_8.getGuild(guildId);
+      }
+    }
+  }
+  const tmpResult = tmp(tmp2[12]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp12, tmp14);
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor() {
+        return closure_8.getGuild(guildId);
+      }
+    }
+    const items2 = [UserStore];
+    cResult[7] = items2;
+    tmp16 = items2;
+  } else {
+    class R {
+      constructor() {
+        return closure_8.getGuild(guildId);
+      }
+    }
+  }
+  if (cResult[8] !== userId) {
+    class R {
+      constructor() {
+        return closure_8.getGuild(guildId);
+      }
+    }
+    cResult[8] = userId;
+    cResult[9] = tmp18;
+    tmp17 = tmp18;
+  } else {
+    class R {
+      constructor() {
+        return closure_8.getGuild(guildId);
+      }
+    }
+  }
+  const tmpResult2 = tmp(tmp2[12]);
+  stateFromStores1 = tmpResult2.useStateFromStores(tmp16, tmp17);
+  ref = obj2.useRef("");
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    class F {
+      constructor() {
+        return { kicking: false, kickError: false };
+      }
+    }
+    cResult[10] = F;
+  } else {
+    class F {
+      constructor() {
+        return { kicking: false, kickError: false };
+      }
+    }
+  }
+  [r10100, closure_6] = stateFromStores(stateFromStores1.useState(tmp20), 2);
+  stateFromStores(stateFromStores1.useState(tmp20), 2);
+  if (cResult[11] === stateFromStores) {
+    class F {
+      constructor() {
+        return { kicking: false, kickError: false };
+      }
+    }
+  }
+  class N {
+    constructor() {
+      tmp = closure_3;
+      tmp2 = null != closure_3;
+      if (tmp2) {
+        tmp3 = closure_4;
+        tmp2 = null != closure_4;
+      }
+      if (tmp2) {
+        tmp4 = closure_6;
+        tmp5 = closure_6({ kicking: true, kickError: false });
+        tmp6 = closure_1;
+        tmp7 = closure_2;
+        tmp8 = closure_1(closure_2[13]);
+        id = undefined;
+        kickUser = tmp8.kickUser;
+        if (tmp != null) {
+          id = tmp.id;
+        }
+        id1 = undefined;
+        if (closure_4 != null) {
+          id1 = closure_4.id;
+        }
+        tmp11 = closure_5;
+        kickUserResult = kickUser(id, id1, closure_5.current);
+        tmp12 = onKick;
+        nextPromise = kickUserResult.then(onKick);
+        catchPromise = nextPromise.catch(() => { /* body not rendered: F139769 */ });
+      }
+      return;
+    }
+  }
+  cResult[11] = stateFromStores;
+  cResult[12] = onKick;
+  cResult[13] = stateFromStores1;
+  cResult[14] = N;
+}) : ((arg0) => {
   let Button;
   let UktD5J;
   let _undefined;
@@ -70,12 +238,12 @@ const memoResult = react.memo(function KickConfirm(arg0) {
   let tmp4Result3;
   let tmp4Result4;
   let v1Ie87p;
-  const f93422 = () => ({ kicking: false, kickError: false });
+  const f106636 = () => ({ kicking: false, kickError: false });
   ({ guildId: require, userId: importDefault, onKick } = arg0);
   let stateFromStores1;
   c6 = undefined;
   const tmp = closure_13();
-  let ref = stateFromStores1.useRef(null);
+  ref = stateFromStores1.useRef(null);
   const ref1 = stateFromStores1.useRef(null);
   const insets = require("useSafeAreaInsetsKeyboardAware")({ includeKeyboardHeight: true }).insets;
   const obj = { insets, inputs: items, scrollViewRef: ref };
@@ -88,10 +256,10 @@ const memoResult = react.memo(function KickConfirm(arg0) {
   const obj3 = require("get initialized");
   stateFromStores1 = obj3.useStateFromStores(items2, () => UserStore.getUser(importDefault));
   ref = stateFromStores1.useRef("");
-  [tmp11, c6] = stateFromStores(stateFromStores1.useState(f93422), 2);
+  [tmp11, c6] = stateFromStores(stateFromStores1.useState(f106636), 2);
   const items3 = [stateFromStores, onKick, stateFromStores1];
   let tmp14Result2 = null;
-  stateFromStores(stateFromStores1.useState(f93422), 2);
+  stateFromStores(stateFromStores1.useState(f106636), 2);
   if (null != stateFromStores1) {
     tmp14Result2 = null;
     if (null != stateFromStores) {
@@ -101,22 +269,22 @@ const memoResult = react.memo(function KickConfirm(arg0) {
       const obj7 = { style: tmp.iconStyles, source: require("AssetRegistry"), resizeMode: "contain" };
       items4 = [closure_10(ref, obj7), , ];
       const obj8 = { style: tmp.redText, variant: "text-md/semibold", children: formatToPlainString(v1Ie87p, obj9) };
-      const Text = tmp7(tmp5[13]).Text;
-      const intl = tmp7(tmp5[14]).intl;
+      const Text = tmp7(tmp5[15]).Text;
+      const intl = tmp7(tmp5[16]).intl;
       formatToPlainString = intl.formatToPlainString;
       obj9 = { user: tmp4Result.getName(stateFromStores1) };
-      v1Ie87p = tmp7(tmp5[14]).t["1Ie87p"];
+      v1Ie87p = tmp7(tmp5[16]).t["1Ie87p"];
       tmp4Result = require("UserUtils");
       items4[1] = closure_10(Text, obj8);
       const obj10 = { variant: "text-lg/bold", color: "text-feedback-warning", children: stateFromStores.name };
       items4[2] = closure_10(require("Text/Text").Text, obj10);
       const items5 = [closure_11(c6, obj6), , , , ];
       const obj11 = { style: tmp.blurb, variant: "heading-md/normal", color: "text-feedback-warning", children: format(prop, obj12) };
-      const Text2 = tmp7(tmp5[13]).Text;
-      const intl2 = tmp7(tmp5[14]).intl;
+      const Text2 = tmp7(tmp5[15]).Text;
+      const intl2 = tmp7(tmp5[16]).intl;
       format = intl2.format;
       obj12 = { user: tmp4Result3.getName(stateFromStores1) };
-      prop = tmp7(tmp5[14]).t["/yH0UT"];
+      prop = tmp7(tmp5[16]).t["/yH0UT"];
       tmp4Result3 = require("UserUtils");
       items5[1] = closure_10(Text2, obj11);
       const obj13 = {
@@ -129,14 +297,14 @@ const memoResult = react.memo(function KickConfirm(arg0) {
             }
       };
       obj14 = { marginBottom: require("native").space.PX_16 };
-      const TextArea = tmp7(tmp5[16]).TextArea;
-      intl3 = tmp7(tmp5[14]).intl;
+      const TextArea = tmp7(tmp5[18]).TextArea;
+      intl3 = tmp7(tmp5[16]).intl;
       items5[2] = closure_10(TextArea, obj13);
       const obj15 = { style: obj16, children: closure_10(Button, obj17) };
       obj16 = { marginBottom: require("native").space.PX_16 };
       obj17 = { variant: "destructive", text: intl4.string(require("intl").t["3glT6Z"]), onPress: tmp12, disabled: tmp11.kicking };
-      Button = tmp7(tmp5[17]).Button;
-      intl4 = tmp7(tmp5[14]).intl;
+      Button = tmp7(tmp5[19]).Button;
+      intl4 = tmp7(tmp5[16]).intl;
       items5[3] = closure_10(c6, obj15);
       let tmp14Result = null;
       const tmp15 = closure_7;
@@ -144,11 +312,11 @@ const memoResult = react.memo(function KickConfirm(arg0) {
       tmp17 = closure_12;
       if (tmp11.kickError) {
         const obj18 = { style: tmp.errorText, variant: "text-md/semibold", color: "input-text-error-default", children: format2(UktD5J, obj19) };
-        const Text3 = tmp7(tmp5[13]).Text;
-        const intl5 = tmp7(tmp5[14]).intl;
+        const Text3 = tmp7(tmp5[15]).Text;
+        const intl5 = tmp7(tmp5[16]).intl;
         format2 = intl5.format;
         obj19 = { user: tmp4Result4.getName(stateFromStores1) };
-        UktD5J = tmp7(tmp5[14]).t.UktD5J;
+        UktD5J = tmp7(tmp5[16]).t.UktD5J;
         tmp4Result4 = require("UserUtils");
         tmp14Result = tmp14(Text3, obj18);
       }
@@ -158,7 +326,7 @@ const memoResult = react.memo(function KickConfirm(arg0) {
     }
   }
   return tmp14Result2;
-});
+}));
 const result = size.fileFinishedImporting("modules/guild_moderation/native/KickConfirm.tsx");
 
 export default memoResult;

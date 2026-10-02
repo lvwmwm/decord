@@ -1,21 +1,21 @@
-// Module ID: 16719
-// Function ID: 16720
+// Module ID: 16721
+// Function ID: 16722
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 11936, 21, 4836, 576, 6583, 4678, 7624, 6610, 4527, 4800, 12098, 1981, 7636, 6760, 5039, 5435, 1115, 1177, 4832, 16702, 5896, 16720, 2]
+// Dependencies: [19, 17, 11830, 21, 4837, 588, 6584, 4680, 7628, 6611, 4530, 4801, 12008, 1987, 7640, 6761, 5040, 5436, 1127, 1189, 4833, 16704, 5893, 16722, 2]
 // Exports: default
 
-// Module 16719 (RestrictedMessagePreviewHeader)
+// Module 16721 (RestrictedMessagePreviewHeader)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 11936 */;
+import nativeDefault from "native" /* 588 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ToastUtils from "ToastUtils" /* 4530 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import ClipboardUtils from "ClipboardUtils" /* 6611 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 11830 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -80,7 +80,7 @@ export default function RestrictedMessagePreviewHeader(channel) {
         obj4.popWithKey(closure_1_5);
       }
     };
-    obj.openLazy(asyncRequire(12098, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
+    obj.openLazy(asyncRequire(12008, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
   }, items2);
   let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(channel(analyticsLocations[18]).t.iXAna6), onPress: callback, children: closure_6(Avatar, obj5) };
   const PressableOpacity = channel(analyticsLocations[17]).PressableOpacity;

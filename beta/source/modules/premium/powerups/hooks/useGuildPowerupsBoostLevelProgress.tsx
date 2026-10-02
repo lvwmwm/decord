@@ -1,13 +1,14 @@
-// Module ID: 4759
-// Function ID: 4760
+// Module ID: 4761
+// Function ID: 4762
 // Name: useGuildPowerupsBoostLevelProgress
-// Dependencies: [2067, 1074, 4743, 504, 2]
-// Exports: default, getGuildPowerupBoostLevelProgress
+// Dependencies: [2073, 1086, 4745, 558, 576, 504, 2]
+// Exports: getGuildPowerupBoostLevelProgress
 
-// Module 4759 (useGuildPowerupsBoostLevelProgress)
-import useGuildPowerupsBoostCount from "useGuildPowerupsBoostCount" /* 4743 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import Constants from "Constants" /* 1074 */;
+// Module 4761 (useGuildPowerupsBoostLevelProgress)
+import useGuildPowerupsBoostCount from "useGuildPowerupsBoostCount" /* 4745 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,9 +19,96 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: closure_4, BoostedGuildTiers: hasOwnProperty, GuildFeatures: metroRequire } = Constants);
-const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsBoostLevelProgress.tsx");
-
-export default function useGuildPowerupBoostLevelProgress(arg0) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp11;
+  let tmp7;
+  let tmp9;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(6);
+  const tmp4 = useGuildPowerupsBoostCountDefault(arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function p() {
+      const guild = GuildStore.getGuild(closure_0);
+      let premiumTier;
+      if (guild != null) {
+        premiumTier = guild.premiumTier;
+      }
+      if (premiumTier == null) {
+        premiumTier = hasOwnProperty.NONE;
+      }
+      return premiumTier;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = require("get initialized");
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [GuildStore];
+    cResult[3] = items1;
+    tmp9 = items1;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] !== arg0) {
+    class G {
+      constructor() {
+        const guild = GuildStore.getGuild(closure_0);
+        let hasItem;
+        if (guild != null) {
+          const features = guild.features;
+          hasItem = features.has(metroRequire.PREMIUM_TIER_3_OVERRIDE);
+        }
+        return true === hasItem;
+      }
+    }
+    cResult[4] = arg0;
+    cResult[5] = G;
+    tmp11 = G;
+  } else {
+    class G {
+      constructor() {
+        const guild = GuildStore.getGuild(closure_0);
+        let hasItem;
+        if (guild != null) {
+          const features = guild.features;
+          hasItem = features.has(metroRequire.PREMIUM_TIER_3_OVERRIDE);
+        }
+        return true === hasItem;
+      }
+    }
+  }
+  let num7 = 0;
+  const tmpResult2 = require("get initialized");
+  if (!tmpResult2.useStateFromStores(tmp9, tmp11)) {
+    class G {
+      constructor() {
+        const guild = GuildStore.getGuild(closure_0);
+        let hasItem;
+        if (guild != null) {
+          const features = guild.features;
+          hasItem = features.has(metroRequire.PREMIUM_TIER_3_OVERRIDE);
+        }
+        return true === hasItem;
+      }
+    }
+    num7 = closure_4[stateFromStores];
+  }
+  return num7 + tmp4.available;
+}) : ((arg0) => {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];
@@ -52,7 +140,10 @@ export default function useGuildPowerupBoostLevelProgress(arg0) {
     num = closure_4[stateFromStores];
   }
   return num + tmp.available;
-};
+});
+const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsBoostLevelProgress.tsx");
+
+export default tmp3;
 export const getGuildPowerupBoostLevelProgress = function getGuildPowerupBoostLevelProgress(id) {
   const obj = useGuildPowerupsBoostCount;
   const guildPowerupsBoostCount = obj.getGuildPowerupsBoostCount(id);

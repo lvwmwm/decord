@@ -1,48 +1,13 @@
 // Module ID: 6163
 // Function ID: 6164
-// Dependencies: [6141, 6156, 6132]
-// Exports: usePinchGesture
+// Dependencies: [26, 65]
 
 // Module 6163
-import ComposedGestureName from "ComposedGestureName" /* 6132 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6141 */;
-import _mod6156 from "module_6156" /* 6156 */;
+import _mod26 from "module_26" /* 26 */;
+import module_65 from "module_65" /* 65 */;
 
-function transformPinchProps(arg0) {
-  const obj = maybeExtractNativeEvent;
-  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
-  arg0.fillInDefaultValues = fillInDefaultValues;
-  return arg0;
-}
-function diffCalculator(scale, scale2) {
-  let scaleChange;
-  scale = scale.scale;
-  if (scale2) {
-    scaleChange = scale / scale2.scale;
-  } else {
-    scaleChange = scale;
-  }
-  return { scaleChange };
-}
-diffCalculator.__closure = {};
-diffCalculator.__workletHash = 7517335332069;
-diffCalculator.__initData = { code: "function diffCalculator_Pnpm_usePinchGestureTs1(current,previous){return{scaleChange:previous?current.scale/previous.scale:current.scale};}" };
-function fillInDefaultValues(arg0) {
-  arg0.scaleChange = 1;
-}
-fillInDefaultValues.__closure = {};
-fillInDefaultValues.__workletHash = 10393435493424;
-fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_usePinchGestureTs2(event){event.scaleChange=1;}" };
-const map = new Map();
-let closure_6 = {};
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNGestureHandlerButton", validAttributes: { exclusive: true, foreground: true, borderless: true, enabled: true, rippleColor: _mod26.colorAttribute, rippleRadius: true, touchSoundDisabled: true, pointerEvents: true, tapAnimationInDuration: true, tapAnimationOutDuration: true, longPressDuration: true, longPressAnimationOutDuration: true, needsOffscreenAlphaCompositing: true, activeOpacity: true, activeScale: true, activeUnderlayOpacity: true, hoverOpacity: true, hoverScale: true, hoverUnderlayOpacity: true, hoverAnimationInDuration: true, hoverAnimationOutDuration: true, defaultOpacity: true, defaultScale: true, defaultUnderlayOpacity: true, underlayColor: _mod26.colorAttribute, borderWidth: true, borderColor: _mod26.colorAttribute, borderStyle: true, overflow: true, borderLeftWidth: true, borderRightWidth: true, borderTopWidth: true, borderBottomWidth: true, borderStartWidth: true, borderEndWidth: true, borderLeftColor: _mod26.colorAttribute, borderRightColor: _mod26.colorAttribute, borderTopColor: _mod26.colorAttribute, borderBottomColor: _mod26.colorAttribute, borderStartColor: _mod26.colorAttribute, borderEndColor: _mod26.colorAttribute, borderBlockColor: _mod26.colorAttribute, borderBlockEndColor: _mod26.colorAttribute, borderBlockStartColor: _mod26.colorAttribute, borderRadius: true, borderTopLeftRadius: true, borderTopRightRadius: true, borderBottomLeftRadius: true, borderBottomRightRadius: true, borderTopStartRadius: true, borderTopEndRadius: true, borderBottomStartRadius: true, borderBottomEndRadius: true, borderEndEndRadius: true, borderEndStartRadius: true, borderStartEndRadius: true, borderStartStartRadius: true } };
+({ exclusive: true, foreground: true, borderless: true, enabled: true, rippleColor: _mod26.colorAttribute, rippleRadius: true, touchSoundDisabled: true, pointerEvents: true, tapAnimationInDuration: true, tapAnimationOutDuration: true, longPressDuration: true, longPressAnimationOutDuration: true, needsOffscreenAlphaCompositing: true, activeOpacity: true, activeScale: true, activeUnderlayOpacity: true, hoverOpacity: true, hoverScale: true, hoverUnderlayOpacity: true, hoverAnimationInDuration: true, hoverAnimationOutDuration: true, defaultOpacity: true, defaultScale: true, defaultUnderlayOpacity: true, underlayColor: _mod26.colorAttribute, borderWidth: true, borderColor: _mod26.colorAttribute, borderStyle: true, overflow: true, borderLeftWidth: true, borderRightWidth: true, borderTopWidth: true, borderBottomWidth: true, borderStartWidth: true, borderEndWidth: true, borderLeftColor: _mod26.colorAttribute, borderRightColor: _mod26.colorAttribute, borderTopColor: _mod26.colorAttribute, borderBottomColor: _mod26.colorAttribute, borderStartColor: _mod26.colorAttribute, borderEndColor: _mod26.colorAttribute, borderBlockColor: _mod26.colorAttribute, borderBlockEndColor: _mod26.colorAttribute, borderBlockStartColor: _mod26.colorAttribute, borderRadius: true, borderTopLeftRadius: true, borderTopRightRadius: true, borderBottomLeftRadius: true, borderBottomRightRadius: true, borderTopStartRadius: true, borderTopEndRadius: true, borderBottomStartRadius: true, borderBottomEndRadius: true, borderEndEndRadius: true, borderEndStartRadius: true, borderStartEndRadius: true, borderStartStartRadius: true });
 
-export const usePinchGesture = function usePinchGesture(gestureHandlerProps) {
-  let tmp = gestureHandlerProps;
-  if (gestureHandlerProps === undefined) {
-    tmp = closure_6;
-  }
-  const obj = maybeExtractNativeEvent;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPinchProps);
-  const obj2 = _mod6156;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pinch, clonedAndRemappedConfig);
-};
+export default module_65.get("RNGestureHandlerButton", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

@@ -1,19 +1,47 @@
-// Module ID: 7691
-// Function ID: 7692
+// Module ID: 7695
+// Function ID: 7696
 // Name: VisualEffectViewThemed
-// Dependencies: [19, 21, 4767, 4685, 5269, 2]
+// Dependencies: [19, 21, 558, 576, 4769, 4687, 5270, 2]
 
-// Module 7691 (VisualEffectViewThemed)
+// Module 7695 (VisualEffectViewThemed)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 4685 */;
-import useThemeDefault from "useTheme" /* 4767 */;
+import react2 from "react" /* 576 */;
+import shared from "shared" /* 4687 */;
+import useThemeDefault from "useTheme" /* 4769 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const VisualEffectViewDefault = tmp(5269);
+let tmp3;
+const VisualEffectViewDefault = tmp3(5270);
 const jsx = Fragment.jsx;
-const forwardRefResult = react.forwardRef(function VisualEffectViewThemed(arg0, ref) {
+const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+  const obj = react2;
+  const cResult = obj.c(4);
+  let str = "dark";
+  const tmp4 = useThemeDefault();
+  const obj2 = shared;
+  if (obj2.isThemeLight(tmp4)) {
+    str = "light";
+  }
+  if (cResult[0] === str) {
+    if (cResult[1] === arg0) {
+      let tmp5;
+      if (cResult[2] === ref) {
+        tmp5 = cResult[3];
+      }
+      return tmp5;
+    }
+  }
+  VisualEffectViewDefault;
+  const merged = Object.assign(arg0);
+  const tmp8 = <tmp3Result ref={arg1} blurTheme={str} />;
+  cResult[0] = str;
+  cResult[1] = arg0;
+  cResult[2] = ref;
+  cResult[3] = tmp8;
+  tmp5 = tmp8;
+}) : ((arg0, ref) => {
   let str = "dark";
   const tmp3 = useThemeDefault();
   const obj = shared;
@@ -23,7 +51,7 @@ const forwardRefResult = react.forwardRef(function VisualEffectViewThemed(arg0, 
   VisualEffectViewDefault;
   const merged = Object.assign(arg0);
   return <tmpResult ref={arg1} blurTheme={str} />;
-});
+}));
 const result = size.fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewThemed.tsx");
 
 export default forwardRefResult;

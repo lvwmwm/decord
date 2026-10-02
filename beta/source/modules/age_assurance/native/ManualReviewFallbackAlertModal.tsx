@@ -1,24 +1,81 @@
-// Module ID: 8046
-// Function ID: 8047
+// Module ID: 8050
+// Function ID: 8051
 // Name: ManualReviewFallbackAlertModal
-// Dependencies: [19, 21, 5209, 1115, 3103, 5209, 8047, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 1127, 3106, 5210, 5210, 8051, 2]
 
-// Module 8046 (ManualReviewFallbackAlertModal)
-import intl5 from "intl" /* 1115 */;
-import _modDef3103 from "module_3103" /* 3103 */;
-import AlertModal2 from "AlertModal" /* 5209 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8047 */;
+// Module 8050 (ManualReviewFallbackAlertModal)
+import react2 from "react" /* 576 */;
+import intl5 from "intl" /* 1127 */;
+import _modDef3106 from "module_3106" /* 3106 */;
+import AlertModal2 from "AlertModal" /* 5210 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8051 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const result = size.fileFinishedImporting("modules/age_assurance/native/ManualReviewFallbackAlertModal.tsx");
-
-export default function ManualReviewFallbackAlertModal() {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let AlertActions;
+  let intl3;
+  let intl4;
+  let items;
+  let obj4;
+  let tmp12;
+  let tmp4;
+  let tmp5;
+  let tmp9;
+  let obj = react2;
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(_modDef3106["+c5sxg"]);
+    const intl2 = tmp(1127).intl;
+    const stringResult1 = intl2.string(_modDef3106["RFLH++"]);
+    cResult[0] = stringResult;
+    cResult[1] = stringResult1;
+    tmp4 = stringResult;
+    tmp5 = stringResult1;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { text: intl3.string(intl5.t["NX+WJN"]) };
+    const AlertActionButton = tmp(5210).AlertActionButton;
+    intl3 = tmp(1127).intl;
+    const tmp11 = _false(AlertActionButton, obj2, "got-it");
+    cResult[2] = tmp11;
+    tmp9 = tmp11;
+  } else {
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { title: tmp4, content: tmp5, actions: React3(AlertActions, obj4) };
+    const AlertModal = tmp(5210).AlertModal;
+    obj4 = { children: items };
+    items = [tmp9, ];
+    AlertActions = tmp(5210).AlertActions;
+    const obj5 = {
+      variant: "secondary",
+      text: intl4.string(_modDef3106.Z61nkt),
+      onPress() {
+          const obj = ManualReviewActionCreators;
+          return obj.handleManualReviewCta();
+        }
+    };
+    const AlertActionButton2 = tmp(5210).AlertActionButton;
+    intl4 = tmp(1127).intl;
+    items[1] = _false(AlertActionButton2, obj5, "request-manual-review");
+    const tmp16 = _false(AlertModal, obj3);
+    cResult[3] = tmp16;
+    tmp12 = tmp16;
+  } else {
+    tmp12 = cResult[3];
+  }
+  return tmp12;
+}) : (() => {
   let AlertActions;
   let intl;
   let intl2;
@@ -26,7 +83,7 @@ export default function ManualReviewFallbackAlertModal() {
   let intl4;
   let items;
   let obj2;
-  let obj = { title: intl.string(_modDef3103["+c5sxg"]), content: intl2.string(_modDef3103["RFLH++"]), actions: React3(AlertActions, obj2) };
+  let obj = { title: intl.string(_modDef3106["+c5sxg"]), content: intl2.string(_modDef3106["RFLH++"]), actions: React3(AlertActions, obj2) };
   const AlertModal = AlertModal2.AlertModal;
   intl = intl5.intl;
   intl2 = intl5.intl;
@@ -38,7 +95,7 @@ export default function ManualReviewFallbackAlertModal() {
   items = [_false(AlertActionButton, obj3, "got-it"), ];
   const obj4 = {
     variant: "secondary",
-    text: intl4.string(_modDef3103.Z61nkt),
+    text: intl4.string(_modDef3106.Z61nkt),
     onPress() {
       const obj = ManualReviewActionCreators;
       return obj.handleManualReviewCta();
@@ -48,4 +105,7 @@ export default function ManualReviewFallbackAlertModal() {
   intl4 = intl5.intl;
   items[1] = _false(AlertActionButton2, obj4, "request-manual-review");
   return _false(AlertModal, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/age_assurance/native/ManualReviewFallbackAlertModal.tsx");
+
+export default tmp4;

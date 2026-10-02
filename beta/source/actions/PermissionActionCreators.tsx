@@ -1,10 +1,10 @@
-// Module ID: 16741
-// Function ID: 16742
+// Module ID: 16743
+// Function ID: 16744
 // Name: PermissionActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 
-// Module 16741 (PermissionActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 16743 (PermissionActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

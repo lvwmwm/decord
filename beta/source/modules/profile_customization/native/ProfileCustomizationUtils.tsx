@@ -1,18 +1,93 @@
-// Module ID: 7693
-// Function ID: 7694
+// Module ID: 7697
+// Function ID: 7698
 // Name: profile_customization/ProfileCustomizationUtils
-// Dependencies: [1397, 7694, 1092, 2]
-// Exports: getAvatarSource, useUserProfileBannerBackgroundColor
+// Dependencies: [558, 576, 1403, 7698, 1104, 2]
+// Exports: getAvatarSource
 
-// Module 7693 (profile_customization/ProfileCustomizationUtils)
-import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import VideoBackground from "VideoBackground" /* 7694 */;
+// Module 7697 (profile_customization/ProfileCustomizationUtils)
+import react from "react" /* 576 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
+import AvatarUtils from "AvatarUtils" /* 1403 */;
+import VideoBackground from "VideoBackground" /* 7698 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/profile_customization/native/ProfileCustomizationUtils.tsx");
-
-export const useUserProfileBannerBackgroundColor = function useUserProfileBannerBackgroundColor(arg0) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let displayProfile;
+  let guildId;
+  let pendingAvatarSrc;
+  let tmp13;
+  let tmp16;
+  let user;
+  const obj = react;
+  const cResult = obj.c(10);
+  ({ user, guildId, pendingAvatarSrc, displayProfile } = arg0);
+  let tmp4 = null;
+  if (null != user) {
+    if (null == pendingAvatarSrc) {
+      if (cResult[0] === guildId) {
+        let tmp11;
+        if (cResult[1] === user) {
+          tmp11 = cResult[2];
+        }
+        tmp4 = tmp11;
+      }
+      const avatarURL = user.getAvatarURL(guildId, 80);
+      cResult[0] = guildId;
+      cResult[1] = user;
+      cResult[2] = avatarURL;
+      tmp11 = avatarURL;
+    } else {
+      if (cResult[3] === pendingAvatarSrc) {
+        let tmp5;
+        if (cResult[4] === user) {
+          tmp5 = cResult[5];
+        }
+        tmp4 = tmp5;
+      }
+      let userAvatarURL = pendingAvatarSrc;
+      if (pendingAvatarSrc == null) {
+        const obj2 = { avatar: null };
+        const getUserAvatarURL = AvatarUtils.getUserAvatarURL;
+        AvatarUtils;
+        const merged = Object.assign(user);
+        userAvatarURL = getUserAvatarURL(obj2);
+      }
+      cResult[3] = pendingAvatarSrc;
+      cResult[4] = user;
+      cResult[5] = userAvatarURL;
+      tmp5 = userAvatarURL;
+    }
+  }
+  if (cResult[6] !== tmp4) {
+    const tmpResult4 = VideoBackground;
+    const memoizedImageSourceResult = tmpResult4.memoizedImageSource(tmp4);
+    cResult[6] = tmp4;
+    cResult[7] = memoizedImageSourceResult;
+    tmp13 = memoizedImageSourceResult;
+  } else {
+    tmp13 = cResult[7];
+  }
+  const tmpResult5 = VideoBackground;
+  const dominantColorFromImage = tmpResult5.useDominantColorFromImage(tmp4, tmp13);
+  if (cResult[8] !== dominantColorFromImage) {
+    const tmpResult6 = utils_ColorUtils;
+    const rgb2intResult = tmpResult6.rgb2int(dominantColorFromImage);
+    cResult[8] = dominantColorFromImage;
+    cResult[9] = rgb2intResult;
+    tmp16 = rgb2intResult;
+  } else {
+    tmp16 = cResult[9];
+  }
+  let primaryColor;
+  if (displayProfile != null) {
+    primaryColor = displayProfile.primaryColor;
+  }
+  if (primaryColor == null) {
+    primaryColor = tmp16;
+  }
+  return primaryColor;
+}) : ((arg0) => {
   let displayProfile;
   let pendingAvatarSrc;
   let user;
@@ -44,7 +119,10 @@ export const useUserProfileBannerBackgroundColor = function useUserProfileBanner
     primaryColor = rgb2intResult;
   }
   return primaryColor;
-};
+});
+const result = size.fileFinishedImporting("modules/profile_customization/native/ProfileCustomizationUtils.tsx");
+
+export const useUserProfileBannerBackgroundColor = tmp2;
 export const getAvatarSource = function getAvatarSource(getAvatarURL, arg1, arg2, arg3) {
   let tmp = null;
   if (null != getAvatarURL) {
@@ -58,7 +136,7 @@ export const getAvatarSource = function getAvatarSource(getAvatarURL, arg1, arg2
       VideoBackground;
       if (userAvatarURL == null) {
         const obj = { avatar: null };
-        const getUserAvatarURL = tmp3(1397).getUserAvatarURL;
+        const getUserAvatarURL = tmp3(1403).getUserAvatarURL;
         AvatarUtils;
         const merged = Object.assign(getAvatarURL);
         userAvatarURL = getUserAvatarURL(obj);

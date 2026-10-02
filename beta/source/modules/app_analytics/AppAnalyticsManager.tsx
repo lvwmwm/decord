@@ -1,22 +1,22 @@
-// Module ID: 17093
-// Function ID: 17094
+// Module ID: 17095
+// Function ID: 17096
 // Name: AppAnalyticsManager
-// Dependencies: [2000, 1993, 4859, 5591, 5731, 4860, 1074, 1091, 6539, 2040, 5016, 16569, 4966, 2]
+// Dependencies: [2006, 1999, 4860, 5592, 5732, 4861, 1086, 1103, 6540, 2046, 5017, 16571, 4967, 2]
 
-// Module 17093 (AppAnalyticsManager)
-import DurationsDefault from "Durations" /* 1091 */;
-import Timers from "Timers" /* 2040 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 4966 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import getGamePlatformDefault from "getGamePlatform" /* 16569 */;
-import RunningGameStore from "RunningGameStore" /* 2000 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
-import SpeakingStore from "SpeakingStore" /* 5731 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4860 */;
-import Constants from "Constants" /* 1074 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+// Module 17095 (AppAnalyticsManager)
+import DurationsDefault from "Durations" /* 1103 */;
+import Timers from "Timers" /* 2046 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 4967 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+import getGamePlatformDefault from "getGamePlatform" /* 16571 */;
+import RunningGameStore from "RunningGameStore" /* 2006 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5592 */;
+import SpeakingStore from "SpeakingStore" /* 5732 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4861 */;
+import Constants from "Constants" /* 1086 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let map;

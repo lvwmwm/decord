@@ -1,13 +1,13 @@
-// Module ID: 8815
-// Function ID: 8816
+// Module ID: 8810
+// Function ID: 8811
 // Name: FirstPartyRichPresenceStore
-// Dependencies: [8816, 1331, 504, 573, 2]
+// Dependencies: [8811, 1343, 504, 585, 2]
 
-// Module 8815 (FirstPartyRichPresenceStore)
+// Module 8810 (FirstPartyRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import _modDef1331 from "module_1331" /* 1331 */;
-import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 8816 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import _modDef1343 from "module_1343" /* 1343 */;
+import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 8811 */;
 import size from "module_2" /* 2 */;
 
 function updateActivities() {
@@ -21,8 +21,8 @@ function updateActivities() {
     }
     continue;
   }
-  let flag = !_modDef1331(items, items);
-  _modDef1331(items, items);
+  let flag = !_modDef1343(items, items);
+  _modDef1343(items, items);
   if (flag) {
     flag = true;
   }

@@ -1,14 +1,14 @@
-// Module ID: 11833
-// Function ID: 11834
+// Module ID: 11726
+// Function ID: 11727
 // Name: SearchFetcher
-// Dependencies: [5, 2045, 1074, 1091, 3, 1271, 1473, 2]
+// Dependencies: [5, 2051, 1086, 1103, 3, 1283, 1479, 2]
 
-// Module 11833 (SearchFetcher)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import _modDef1473 from "module_1473" /* 1473 */;
+// Module 11726 (SearchFetcher)
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import _modDef1479 from "module_1479" /* 1479 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3;
@@ -40,7 +40,7 @@ class SearchFetcher {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -88,11 +88,11 @@ class SearchFetcher {
             if (null == config) {
               c4 = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else if (closure_130_3.isCanceled) {
               c4 = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else {
               if (200 === config.status) {
                 closure_130_0(config);
@@ -107,7 +107,7 @@ class SearchFetcher {
                 if (closure_130_3.query.attempts > 5) {
                   c4 = 0;
                   c6 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 } else {
                   const _parseInt = parseInt;
                   closure_1 = parseInt(config.headers["retry-after"]);
@@ -129,7 +129,7 @@ class SearchFetcher {
             }
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp44) {
           closure_3 = tmp44;
           if (0 === c4) {
@@ -208,7 +208,7 @@ class SearchFetcherImpl extends SearchFetcher {
       const HTTP = HTTPUtils.HTTP;
       const request = { url: endpoint, query: obj2.stringify(this.query), oldFormErrors: true, rejectWithError };
       const get = HTTP.get;
-      obj2 = _modDef1473;
+      obj2 = _modDef1479;
       value = get(request);
     }
     return value;

@@ -1,19 +1,19 @@
-// Module ID: 5719
-// Function ID: 5720
+// Module ID: 5720
+// Function ID: 5721
 // Name: ConnectionsUtils
-// Dependencies: [2102, 2067, 5720, 1074, 1366, 38, 1115, 12, 5721, 2]
+// Dependencies: [2105, 2073, 5721, 1086, 1372, 38, 1127, 12, 5722, 2]
 // Exports: getCallbackParamsFromURL, getConnectionsCheckText, getCreatedAtDate, getVisibleConnectionsRole, isVerifiedRolesChannelVisible
 
-// Module 5719 (ConnectionsUtils)
+// Module 5720 (ConnectionsUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
-import Constants2 from "Constants" /* 1074 */;
-import intl27 from "intl" /* 1115 */;
-import URLUtilsDefault from "URLUtils" /* 1366 */;
-import getConnectionsRolesDefault from "getConnectionsRoles" /* 5721 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import Constants from "Constants" /* 5720 */;
+import Constants2 from "Constants" /* 1086 */;
+import intl27 from "intl" /* 1127 */;
+import URLUtilsDefault from "URLUtils" /* 1372 */;
+import getConnectionsRolesDefault from "getConnectionsRoles" /* 5722 */;
+import GuildRoleStore from "GuildRoleStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import Constants from "Constants" /* 5721 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -74,7 +74,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
     }
     prop = H97H4S;
     if (tmp14) {
-      prop = tmp11(1115).t["N95b+f"];
+      prop = tmp11(1127).t["N95b+f"];
     }
   } else if (constants2.NOT_EQUAL === operator) {
     prop = require("intl").t["D9B/q2"];

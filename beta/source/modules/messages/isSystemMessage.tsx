@@ -1,11 +1,11 @@
-// Module ID: 6688
-// Function ID: 6689
+// Module ID: 6689
+// Function ID: 6690
 // Name: isSystemMessage
-// Dependencies: [1090, 2]
+// Dependencies: [1102, 2]
 // Exports: default
 
-// Module 6688 (isSystemMessage)
-import MessageTypes from "MessageTypes" /* 1090 */;
+// Module 6689 (isSystemMessage)
+import MessageTypes from "MessageTypes" /* 1102 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/isSystemMessage.tsx");

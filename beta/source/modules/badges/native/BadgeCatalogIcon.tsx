@@ -1,21 +1,176 @@
-// Module ID: 10652
-// Function ID: 10653
+// Module ID: 10641
+// Function ID: 10642
 // Name: BadgeCatalogIcon
-// Dependencies: [32, 19, 17, 21, 5899, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 21, 558, 576, 5896, 2]
 
-// Module 10652 (BadgeCatalogIcon)
+// Module 10641 (BadgeCatalogIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import FastImageDefault from "FastImage" /* 5896 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let _require, tmp;
+
+const f104352 = (item) => null != item;
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/badges/native/BadgeCatalogIcon.tsx");
-
-export default function BadgeCatalogIcon(style) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let badge;
+  let style;
+  let tmp12;
+  let tmp3;
+  let tmp4;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  let obj = react2;
+  const cResult = obj.c(23);
+  ({ badge, size, style } = arg0);
+  if (cResult[0] !== badge) {
+    const items = [, , ];
+    ({ simple_icon_raster_url: arr[0], complex_icon_static_url: arr[1], complex_icon_animated_url: arr[2] } = badge);
+    const found = items.filter(f104352);
+    const joined = found.join("|");
+    cResult[0] = badge;
+    cResult[1] = joined;
+    cResult[2] = found;
+    tmp4 = found;
+    tmp3 = joined;
+  } else {
+    tmp3 = cResult[1];
+    tmp4 = cResult[2];
+  }
+  if (cResult[3] !== tmp3) {
+    const obj2 = { urlsKey: tmp3, candidateIndex: 0 };
+    cResult[3] = tmp3;
+    cResult[4] = obj2;
+    tmp6 = obj2;
+  } else {
+    tmp6 = cResult[4];
+  }
+  [tmp8, tmp9] = react.useState(tmp6);
+  _require = tmp9;
+  _slicedToArray(react.useState(tmp6), 2);
+  if (tmp8.urlsKey !== tmp3) {
+    const obj3 = { urlsKey: tmp3, candidateIndex: 0 };
+    tmp9(obj3);
+  }
+  const tmp11 = tmp4[tmp8.candidateIndex];
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class K {
+      constructor() {
+        tmp = closure_0(() => { /* body not rendered: F139162 */ });
+        return;
+      }
+    }
+    cResult[5] = K;
+    tmp12 = K;
+  } else {
+    class K {
+      constructor() {
+        tmp = closure_0(() => { /* body not rendered: F139162 */ });
+        return;
+      }
+    }
+  }
+  if (cResult[6] !== size) {
+    class K {
+      constructor() {
+        tmp = closure_0(() => { /* body not rendered: F139162 */ });
+        return;
+      }
+    }
+    tmp14[0] = size;
+    tmp14[1] = size;
+    cResult[6] = size;
+    cResult[7] = tmp14;
+  } else {
+    class K {
+      constructor() {
+        tmp = closure_0(() => { /* body not rendered: F139162 */ });
+        return;
+      }
+    }
+  }
+  if (cResult[8] === style) {
+    let tmp24;
+    class K {
+      constructor() {
+        tmp = closure_0(() => { /* body not rendered: F139162 */ });
+        return;
+      }
+    }
+    if (null == tmp11) {
+      class K {
+        constructor() {
+          tmp = closure_0(() => { /* body not rendered: F139162 */ });
+          return;
+        }
+      }
+      tmp24 = tmp28;
+    } else {
+      class K {
+        constructor() {
+          tmp = closure_0(() => { /* body not rendered: F139162 */ });
+          return;
+        }
+      }
+      if (cResult[15] !== size) {
+        class K {
+          constructor() {
+            tmp = closure_0(() => { /* body not rendered: F139162 */ });
+            return;
+          }
+        }
+        tmp19[0] = size;
+        tmp19[1] = size;
+        cResult[15] = size;
+        cResult[16] = tmp19;
+      } else {
+        class K {
+          constructor() {
+            tmp = closure_0(() => { /* body not rendered: F139162 */ });
+            return;
+          }
+        }
+      }
+      if (cResult[17] === tmp17) {
+        class K {
+          constructor() {
+            tmp = closure_0(() => { /* body not rendered: F139162 */ });
+            return;
+          }
+        }
+        if (cResult[20] === tmp15) {
+          class K {
+            constructor() {
+              tmp = closure_0(() => { /* body not rendered: F139162 */ });
+              return;
+            }
+          }
+        }
+        const tmp27 = <View style={tmp15} aria-hidden>{tmp20}</View>;
+        cResult[20] = tmp15;
+        cResult[21] = tmp20;
+        cResult[22] = tmp27;
+        tmp24 = tmp27;
+      }
+      cResult[17] = tmp17;
+      cResult[18] = tmp18;
+      cResult[19] = jsx(FastImageDefault, { source: tmp17, style: tmp18, onError: tmp12 });
+      const tmp23 = jsx(FastImageDefault, { source: tmp17, style: tmp18, onError: tmp12 });
+    }
+    return tmp24;
+  }
+  const items1 = [tmp13, style];
+  cResult[8] = style;
+  cResult[9] = tmp13;
+  cResult[10] = items1;
+}) : ((style) => {
   let badge;
   let obj3;
   let tmp3;
@@ -24,7 +179,7 @@ export default function BadgeCatalogIcon(style) {
   const items = [, , ];
   ({ simple_icon_raster_url: arr[0], complex_icon_static_url: arr[1], complex_icon_animated_url: arr[2] } = badge);
   style = style.style;
-  const found = items.filter((item) => null != item);
+  const found = items.filter(f104352);
   const joined = found.join("|");
   [tmp3, tmp4] = react.useState({ urlsKey: joined, candidateIndex: 0 });
   let c0 = tmp4;
@@ -44,4 +199,7 @@ export default function BadgeCatalogIcon(style) {
     const obj5 = { uri: found[tmp3.candidateIndex] };
   }
   return <tmp9 {...obj3} />;
-};
+});
+const result = size.fileFinishedImporting("modules/badges/native/BadgeCatalogIcon.tsx");
+
+export default tmp2;

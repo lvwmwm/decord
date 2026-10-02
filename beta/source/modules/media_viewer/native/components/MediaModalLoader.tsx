@@ -1,44 +1,199 @@
-// Module ID: 12534
-// Function ID: 12535
+// Module ID: 12536
+// Function ID: 12537
 // Name: MediaModalLoader
-// Dependencies: [32, 19, 17, 21, 4836, 576, 4832, 1115, 12535, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4837, 588, 558, 576, 4833, 1127, 12537, 2]
 
-// Module 12534 (MediaModalLoader)
-import nativeDefault from "native" /* 576 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+// Module 12536 (MediaModalLoader)
+import nativeDefault from "native" /* 588 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let nativeEvent;
+const require = globalThis.__r;
+let _require, dependencyMap, nativeEvent, onLoad, tmp, tmp10, tmp3Result, tmp6Result, tmp9Result;
 
 let StyleSheet;
-let hasOwnProperty;
+let c10;
+let c9;
 let metroImportAll;
 let metroImportDefault;
-let metroRequire;
 let obj2;
 let obj3;
+let closure_3 = ["Component", "style", "onLoadStart", "onLoad", "onError", "index", "source"];
+let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-({ View: hasOwnProperty, ActivityIndicator: metroRequire, StyleSheet } = react_native);
+({ View: metroImportDefault, ActivityIndicator: metroImportAll, StyleSheet } = react_native);
 let Fragment = Fragment_mod;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+({ jsx: c9, jsxs: c10 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { loader: obj2, loaderIndicator: obj3, loaderText: { textAlign: "center" } };
 obj2 = { flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0, 0, 0, 0.7)" };
 createStyles = createStyles.createStyles;
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = { marginTop: nativeDefault.space.PX_12 };
-let closure_9 = createStyles(obj);
-let closure_10 = { None: 0, [0]: "None", Loading: 1, [1]: "Loading", Loaded: 2, [2]: "Loaded", Error: 3, [3]: "Error" };
-const memoResult = react.memo(function MediaModalLoader(onLoad) {
+let closure_11 = createStyles(obj);
+let closure_12 = { None: 0, [0]: "None", Loading: 1, [1]: "Loading", Loaded: 2, [2]: "Loaded", Error: 3, [3]: "Error" };
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onLoad) => {
+  let Component;
+  let closure_0;
+  let closure_2;
+  let closure_4;
+  let closure_6;
+  let first;
+  let index;
+  let onLoadStart;
+  let source;
+  let style;
+  let tmp3;
+  const obj = require("react");
+  const cResult = obj.c(29);
+  if (cResult[0] !== onLoad) {
+    ({ Component, style, onLoadStart } = onLoad);
+    dependencyMap = onLoadStart;
+    onLoad = onLoad.onLoad;
+    let closure_1 = onLoad;
+    const onError = onLoad.onError;
+    _require = onError;
+    ({ index, source } = onLoad);
+    const tmp12 = _objectWithoutProperties(onLoad, first);
+    cResult[0] = onLoad;
+    cResult[1] = Component;
+    cResult[2] = onError;
+    cResult[3] = onLoad;
+    cResult[4] = onLoadStart;
+    cResult[5] = tmp12;
+    cResult[6] = source;
+    cResult[7] = style;
+    cResult[8] = index;
+    let tmp9 = index;
+    let tmp6 = tmp12;
+    tmp3 = onError;
+  } else {
+    _require = cResult[2];
+    closure_1 = cResult[3];
+    dependencyMap = cResult[4];
+    tmp6 = cResult[5];
+    tmp9 = cResult[8];
+  }
+  closure_11();
+  [first, _slicedToArray] = react.useState(closure_12.None);
+  [r10054, _objectWithoutProperties] = react.useState(0);
+  _slicedToArray(react.useState(0), 2);
+  react = react.useRef(null);
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class I {
+      constructor() {
+        timerId = setTimeout(() => { /* body not rendered: F141194 */ }, 1000);
+        closure_6.current = timerId;
+        return timerId;
+      }
+    }
+    cResult[9] = I;
+  } else {
+    class I {
+      constructor() {
+        timerId = setTimeout(() => { /* body not rendered: F141194 */ }, 1000);
+        closure_6.current = timerId;
+        return timerId;
+      }
+    }
+  }
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    class O {
+      constructor(arg0) {
+        nativeEvent = onLoad.nativeEvent;
+        tmp = closure_5(100 * nativeEvent.loaded / nativeEvent.total);
+        return;
+      }
+    }
+    cResult[10] = O;
+  } else {
+    class O {
+      constructor(arg0) {
+        nativeEvent = onLoad.nativeEvent;
+        tmp = closure_5(100 * nativeEvent.loaded / nativeEvent.total);
+        return;
+      }
+    }
+  }
+  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+    class Y {
+      constructor() {
+        return closure_4(closure_12.Loaded);
+      }
+    }
+    cResult[11] = Y;
+  } else {
+    class Y {
+      constructor() {
+        return closure_4(closure_12.Loaded);
+      }
+    }
+  }
+  if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+    class Y {
+      constructor() {
+        return closure_4(closure_12.Loaded);
+      }
+    }
+    cResult[12] = tmp22;
+  } else {
+    class Y {
+      constructor() {
+        return closure_4(closure_12.Loaded);
+      }
+    }
+  }
+  if (cResult[13] === tmp3) {
+    class Y {
+      constructor() {
+        return closure_4(closure_12.Loaded);
+      }
+    }
+  }
+  class D {
+    constructor() {
+      tmp = closure_3;
+      tmp2 = closure_12;
+      if (closure_12.Loading === closure_3) {
+        tmp10 = null;
+        if (closure_2 != null) {
+          tmp9Result = tmp9();
+        }
+      } else if (tmp2.Error === tmp) {
+        tmp7 = null;
+        if (closure_0 != null) {
+          tmp6Result = tmp6();
+        }
+      } else if (tmp2.Loaded === tmp) {
+        tmp4 = null;
+        if (closure_1 != null) {
+          tmp3Result = tmp3();
+        }
+      }
+      return;
+    }
+  }
+  const items = [first, tmp5, tmp3, tmp4];
+  cResult[13] = tmp3;
+  cResult[14] = tmp4;
+  cResult[15] = tmp5;
+  cResult[16] = first;
+  cResult[17] = D;
+  cResult[18] = items;
+}) : ((onLoad) => {
   let Text2;
   let _undefined;
   let c5;
   let closure_4;
+  let closure_6;
   let description;
+  let first;
   let intl;
   let items1;
   let items3;
@@ -59,17 +214,16 @@ const memoResult = react.memo(function MediaModalLoader(onLoad) {
   }
   const source = onLoad.source;
   const merged = Object.assign(onLoad, Object.assign({ Component: 0, style: 0, onLoadStart: 0, onLoad: 0, onError: 0, index: 0, source: 0 }));
-  let first;
-  react = undefined;
+  first = undefined;
+  _slicedToArray = undefined;
   c5 = undefined;
-  const tmp2 = closure_9();
+  react = undefined;
+  const tmp2 = closure_11();
   const tmp3 = react;
-  const tmp5 = first(react.useState(closure_10.None), 2);
-  first = tmp5[0];
-  react = tmp5[1];
-  [tmp8, c5] = first(react.useState(0), 2);
-  const tmp7 = first(react.useState(0), 2);
-  let closure_6 = react.useRef(null);
+  [first, _slicedToArray] = react.useState(closure_12.None);
+  [tmp8, c5] = _slicedToArray(react.useState(0), 2);
+  const tmp7 = _slicedToArray(react.useState(0), 2);
+  react = react.useRef(null);
   const callback = react.useCallback(() => {
     const timerId = setTimeout(() => {
       let None;
@@ -82,19 +236,19 @@ const memoResult = react.memo(function MediaModalLoader(onLoad) {
     nativeEvent = nativeEvent.nativeEvent;
     _undefined(100 * nativeEvent.loaded / nativeEvent.total);
   }, []);
-  const callback2 = react.useCallback(() => closure_4(closure_10.Loaded), []);
+  const callback2 = react.useCallback(() => closure_4(closure_12.Loaded), []);
   const items = [first, onLoadStart, onError, onLoad];
-  const callback3 = react.useCallback(() => closure_4(closure_10.Error), []);
+  const callback3 = react.useCallback(() => closure_4(closure_12.Error), []);
   const effect = react.useEffect(() => {
-    if (closure_10.Loading === first) {
+    if (closure_12.Loading === first) {
       if (onLoadStart != null) {
         tmp9();
       }
-    } else if (closure_10.Error === first) {
+    } else if (closure_12.Error === first) {
       if (onError != null) {
         tmp6();
       }
-    } else if (closure_10.Loaded === first) {
+    } else if (closure_12.Loaded === first) {
       if (onLoad != null) {
         tmp3();
       }
@@ -104,46 +258,46 @@ const memoResult = react.memo(function MediaModalLoader(onLoad) {
     let ref;
     return () => clearTimeout(ref.current);
   });
-  const tmp4 = closure_10;
-  if (first === closure_10.Error) {
-    const obj2 = { style: items1, children: closure_7(Text2, obj3) };
+  const tmp4 = closure_12;
+  if (first === closure_12.Error) {
+    const obj2 = { style: items1, children: closure_9(Text2, obj3) };
     items1 = [tmp2.loader, style];
-    obj3 = { style: tmp2.loaderText, variant: "heading-md/semibold", color: "text-overlay-light", children: intl.string(onLoadStart(onError[7]).t["+ITMYX"]) };
-    Text2 = onLoadStart(onError[6]).Text;
-    intl = onLoadStart(onError[7]).intl;
-    tmp28Result4 = closure_7(c5, obj2);
+    obj3 = { style: tmp2.loaderText, variant: "heading-md/semibold", color: "text-overlay-light", children: intl.string(onLoadStart(onError[10]).t["+ITMYX"]) };
+    Text2 = onLoadStart(onError[9]).Text;
+    intl = onLoadStart(onError[10]).intl;
+    tmp28Result4 = closure_9(closure_7, obj2);
   } else {
     const Fragment = tmp3.Fragment;
     const obj4 = { style, source, onLoadStart: callback, onProgress: callback1, onLoad: callback2, onError: callback3, accessibilityRole: "image", accessibilityLabel: description, loop: true };
     const merged1 = Object.assign(merged);
     description = source.description;
-    const items2 = [closure_7(Component, obj4), , ];
+    const items2 = [closure_9(Component, obj4), , ];
     let tmp28Result3 = null;
     if (first === tmp4.Loading) {
       const obj5 = { style: items3, children: items5 };
       items3 = [tmp2.loader, style];
       let tmp28Result = null;
-      const tmp33 = c5;
+      const tmp33 = closure_7;
       if (null == source.videoURI) {
         const _Math = Math;
         const obj = { style: tmp2.loaderText, variant: "heading-md/semibold", color: "text-overlay-light", children: items4 };
-        const Text = onLoadStart(onError[6]).Text;
+        const Text = onLoadStart(onError[9]).Text;
         items4 = [Math.round(tmp8), "%"];
         tmp28Result = tmp28(Text, obj);
       }
       items5 = [tmp28Result, ];
       const obj6 = { color: "white", style: tmp2.loaderIndicator, size: "large" };
-      items5[1] = closure_7(closure_6, obj6);
+      items5[1] = closure_9(closure_8, obj6);
       tmp28Result3 = tmp28(tmp33, obj5);
     }
     const obj7 = { children: items2 };
     items2[1] = tmp28Result3;
     const obj8 = { style, index: num, source };
-    items2[2] = closure_7(onLoad(onError[8]), obj8);
+    items2[2] = closure_9(onLoad(onError[11]), obj8);
     tmp28Result4 = tmp28(Fragment, obj7);
   }
   return tmp28Result4;
-});
+}));
 const result = size.fileFinishedImporting("modules/media_viewer/native/components/MediaModalLoader.tsx");
 
 export default memoResult;

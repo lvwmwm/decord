@@ -1,11 +1,11 @@
-// Module ID: 14673
-// Function ID: 14674
+// Module ID: 14661
+// Function ID: 14662
 // Name: MobileCustomMuxIntegration
-// Dependencies: [4, 14669, 14671, 2]
+// Dependencies: [4, 14657, 14659, 2]
 
-// Module 14673 (MobileCustomMuxIntegration)
+// Module 14661 (MobileCustomMuxIntegration)
 import logger_Logger from "logger/Logger" /* 4 */;
-import _modDef14671 from "module_14671" /* 14671 */;
+import _modDef14659 from "module_14659" /* 14659 */;
 import size_mod from "module_2" /* 2 */;
 
 const logger = new logger_Logger.Logger("MobileCustomMuxIntegration");
@@ -32,7 +32,7 @@ class MobileCustomMuxIntegration {
       return obj2.videoState;
     };
     obj2.config = config;
-    const SessionManager = obj2(14669).SessionManager;
+    const SessionManager = obj2(14657).SessionManager;
     obj2.sessionId = SessionManager.generateSessionId();
     obj2.playerId = "discord-mobile-" + obj2.sessionId;
     const obj = { player_is_paused: true, player_width: 0, player_height: 0, player_autoplay_on: false, player_preload_on: true, video_cdn: Cloudflare, video_series: config.contentMetadata.questId, video_producer: config.contentMetadata.gameId, video_brand: config.contentMetadata.gameName, video_title: config.contentMetadata.title, video_stream_type: config.contentMetadata.videoStreamType, video_source_url: config.contentMetadata.contentId, video_source_mime_type: str, video_source_duration: config.contentMetadata.durationMs };
@@ -50,9 +50,9 @@ class MobileCustomMuxIntegration {
       if (0 !== muxEnvKey.length) {
         try {
           let flag = self.config.debug;
-          const init = _modDef14671.init;
+          const init = _modDef14659.init;
           const playerId = self.playerId;
-          _modDef14671;
+          _modDef14659;
           if (flag == null) {
             flag = false;
           }
@@ -102,7 +102,7 @@ class MobileCustomMuxIntegration {
     if (this.isInitialized) {
       if (!self.playerReadyEmitted) {
         try {
-          const obj = _modDef14671;
+          const obj = _modDef14659;
           obj.emit(self.playerId, "playerready");
           self.playerReadyEmitted = true;
         } catch (tmp4) {
@@ -116,7 +116,7 @@ class MobileCustomMuxIntegration {
     if (this.isInitialized) {
       if (!self.viewInitEmitted) {
         try {
-          const obj = _modDef14671;
+          const obj = _modDef14659;
           obj.emit(self.playerId, "viewinit");
           self.viewInitEmitted = true;
         } catch (tmp4) {
@@ -153,7 +153,7 @@ class MobileCustomMuxIntegration {
           self.emitViewInit();
         }
         self.updatePlayerState(false);
-        const obj = _modDef14671;
+        const obj = _modDef14659;
         obj.emit(self.playerId, "play");
         self.playStarted = true;
         self.playingEmitted = false;
@@ -167,7 +167,7 @@ class MobileCustomMuxIntegration {
     if (this.isInitialized) {
       try {
         self.updatePlayerState(true);
-        const obj = _modDef14671;
+        const obj = _modDef14659;
         obj.emit(self.playerId, "pause");
       } catch (tmp5) {
         logger.error("Error emitting pause event", tmp5);
@@ -183,11 +183,11 @@ class MobileCustomMuxIntegration {
             self.emitViewInit();
           }
           if (!self.playStarted) {
-            const obj = _modDef14671;
+            const obj = _modDef14659;
             obj.emit(self.playerId, "play");
             self.playStarted = true;
           }
-          const obj2 = _modDef14671;
+          const obj2 = _modDef14659;
           obj2.emit(self.playerId, "playing");
           self.playingEmitted = true;
         } catch (tmp8) {
@@ -199,7 +199,7 @@ class MobileCustomMuxIntegration {
   emitWaiting() {
     if (this.isInitialized) {
       try {
-        const obj = _modDef14671;
+        const obj = _modDef14659;
         obj.emit(tmp.playerId, "waiting");
       } catch (tmp5) {
         logger.error("Error emitting waiting event", tmp5);
@@ -212,7 +212,7 @@ class MobileCustomMuxIntegration {
   emitSeeking() {
     if (this.isInitialized) {
       try {
-        const obj = _modDef14671;
+        const obj = _modDef14659;
         obj.emit(tmp.playerId, "seeking");
       } catch (tmp5) {
         logger.error("Error emitting seeking event", tmp5);
@@ -222,7 +222,7 @@ class MobileCustomMuxIntegration {
   emitSeeked() {
     if (this.isInitialized) {
       try {
-        const obj = _modDef14671;
+        const obj = _modDef14659;
         obj.emit(tmp.playerId, "seeked");
       } catch (tmp5) {
         logger.error("Error emitting seeked event", tmp5);
@@ -233,7 +233,7 @@ class MobileCustomMuxIntegration {
     const self = this;
     if (this.isInitialized) {
       try {
-        const obj = _modDef14671;
+        const obj = _modDef14659;
         obj.emit(self.playerId, "ended");
         self.emitViewEnd();
       } catch (tmp5) {
@@ -244,7 +244,7 @@ class MobileCustomMuxIntegration {
   emitError(arg0) {
     if (this.isInitialized) {
       try {
-        const obj = _modDef14671;
+        const obj = _modDef14659;
         obj.emit(tmp.playerId, "error", arg0);
       } catch (tmp6) {
         logger.error("Error emitting error event", tmp6);
@@ -260,7 +260,7 @@ class MobileCustomMuxIntegration {
           self.emitPlaying();
         }
         const obj2 = { player_playhead_time: self.currentPlayheadTime * c6 };
-        const obj = _modDef14671;
+        const obj = _modDef14659;
         obj.emit(self.playerId, "timeupdate", obj2);
       } catch (tmp6) {
         logger.error("Error emitting timeupdate event", tmp6);
@@ -275,7 +275,7 @@ class MobileCustomMuxIntegration {
         self.currentRendition = size;
         const result = self.updateVideoSourceDimensions(width, height);
         const obj = { video_source_width: width, video_source_height: height, video_source_bitrate: bitrate };
-        const obj2 = _modDef14671;
+        const obj2 = _modDef14659;
         obj2.emit(self.playerId, "renditionchange", obj);
       } catch (tmp9) {
         logger.error("Error emitting renditionchange event", tmp9);
@@ -287,7 +287,7 @@ class MobileCustomMuxIntegration {
     if (this.isInitialized) {
       try {
         self.emitViewEnd();
-        const obj = _modDef14671;
+        const obj = _modDef14659;
         obj.emit(self.playerId, "destroy");
         self.isInitialized = false;
         const obj2 = { playerId: self.playerId };
@@ -300,7 +300,7 @@ class MobileCustomMuxIntegration {
   emitViewEnd() {
     if (this.isInitialized) {
       try {
-        const obj = _modDef14671;
+        const obj = _modDef14659;
         obj.emit(tmp.playerId, "viewend");
       } catch (tmp5) {
         logger.error("Error emitting viewend event", tmp5);

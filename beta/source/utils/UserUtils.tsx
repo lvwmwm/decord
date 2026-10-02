@@ -1,15 +1,17 @@
-// Module ID: 4678
-// Function ID: 4679
+// Module ID: 4680
+// Function ID: 4681
 // Name: UserUtils
-// Dependencies: [4679, 1372, 1074, 504, 1115, 2]
-// Exports: accountAgeInRange, ageEligibleForPremiumUpsell, getFormattedName, getGlobalName, getName, getUserIsStaff, getUserTag, humanizeStatus, isNewUser, useDirectMessageRecipient, useName, useUserTag
+// Dependencies: [4681, 1378, 1086, 558, 576, 504, 1127, 2]
+// Exports: accountAgeInRange, ageEligibleForPremiumUpsell, getFormattedName, getGlobalName, getName, getUserIsStaff, getUserTag, humanizeStatus, isNewUser, useName
 
-// Module 4678 (UserUtils)
+// Module 4680 (UserUtils)
 import get_initialized from "get initialized" /* 504 */;
-import intl7 from "intl" /* 1115 */;
-import StreamerModeStore from "StreamerModeStore" /* 4679 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import react from "react" /* 576 */;
+import intl7 from "intl" /* 1127 */;
+import StreamerModeStore from "StreamerModeStore" /* 4681 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,6 +38,145 @@ function nameFromUser(primary1) {
   }
   return globalName;
 }
+function presentUserTag(username, identifiable, tmpResult) {
+  if (null == username) {
+    const intl = intl7.intl;
+    return intl.string(intl7.t.sKdZ6U);
+  } else {
+    const username1 = username.username;
+    const tmp = null != username1 && username1.length > 0;
+    if (tmp) {
+      let combined;
+      let flag = false;
+      if ("always" !== identifiable.identifiable) {
+        flag = tmpResult;
+        if ("never" === identifiable.identifiable) {
+          flag = true;
+        }
+      }
+      if ("0" !== username.discriminator) {
+        if (username.discriminator !== React3) {
+          if ("username" !== identifiable.mode) {
+            let username2;
+            if (!flag) {
+              const _HermesInternal3 = HermesInternal;
+              username2 = "" + username.username + "#" + username.discriminator;
+            }
+            return username2;
+          }
+          username2 = username.username;
+        }
+      }
+      username = username.username;
+      if (flag) {
+        const _HermesInternal = HermesInternal;
+        combined = "" + username[0] + "\u2026";
+      } else {
+        combined = username;
+      }
+      let combined1 = combined;
+      if ("never" !== identifiable.decoration) {
+        const _HermesInternal2 = HermesInternal;
+        combined1 = "@" + combined;
+      }
+      return combined1;
+    } else {
+      return c7;
+    }
+  }
+}
+({ NON_USER_BOT_DISCRIMINATOR: closure_4, StatusTypes: hasOwnProperty } = Constants);
+let c6 = 86400000;
+let c7 = "???";
+let closure_8 = { mode: "full", decoration: "never", identifiable: "auto" };
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((username, arg1) => {
+  let tmp6;
+  let tmp7;
+  const obj = react;
+  const cResult = obj.c(2);
+  const obj2 = {};
+  const merged = Object.assign(closure_8);
+  const merged1 = Object.assign(arg1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [StreamerModeStore];
+    const fn = function u() {
+      return StreamerModeStore.hidePersonalInformation;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return presentUserTag(username, obj2, tmpResult.useStateFromStores(tmp6, tmp7));
+}) : ((username, arg1) => {
+  const obj = {};
+  const merged = Object.assign(closure_8);
+  const merged1 = Object.assign(arg1);
+  const items = [StreamerModeStore];
+  const obj2 = get_initialized;
+  return presentUserTag(username, obj, obj2.useStateFromStores(items, () => StreamerModeStore.hidePersonalInformation));
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function o() {
+      if (null != closure_0) {
+        let user = null;
+        if (closure_0.isPrivate()) {
+          user = null;
+          if (closure_0.isDM()) {
+            user = UserStore.getUser(obj.getRecipientId());
+          }
+        }
+        return user;
+      }
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  const obj = require("get initialized");
+  const items = [UserStore];
+  return obj.useStateFromStores(items, () => {
+    if (null != closure_0) {
+      let user = null;
+      if (closure_0.isPrivate()) {
+        user = null;
+        if (closure_0.isDM()) {
+          user = UserStore.getUser(obj.getRecipientId());
+        }
+      }
+      return user;
+    }
+  });
+});
 function getName(username) {
   if (null != username) {
     let hidePersonalInformation = StreamerModeStore.hidePersonalInformation;
@@ -60,31 +201,90 @@ function getName(username) {
     return combined;
   }
 }
-function useName(username) {
-  const items = [StreamerModeStore];
-  const obj = get_initialized;
-  let stateFromStores = obj.useStateFromStores(items, () => StreamerModeStore.hidePersonalInformation);
-  if (null != username) {
-    const obj2 = nameFromUser(username);
-    if (stateFromStores) {
-      username = username.username;
-      let toLocaleLowerCaseResult1;
-      const toLocaleLowerCaseResult = obj2.toLocaleLowerCase();
-      if (username != null) {
-        toLocaleLowerCaseResult1 = username.toLocaleLowerCase();
+function useName(guildId) {
+  let tmp15;
+  let tmp16;
+  let tmp6;
+  if (closure_10) {
+    const tmpResult = react;
+    const cResult = tmpResult.c(5);
+    const _Symbol = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [StreamerModeStore];
+      const fn = function o() {
+        return StreamerModeStore.hidePersonalInformation;
+      };
+      cResult[0] = items;
+      cResult[1] = fn;
+      tmp15 = items;
+      tmp16 = fn;
+    } else {
+      [tmp15, tmp16] = cResult;
+    }
+    const tmpResult3 = get_initialized;
+    const stateFromStores = tmpResult3.useStateFromStores(tmp15, tmp16);
+    let tmp20;
+    if (null != guildId) {
+      if (cResult[2] === stateFromStores) {
+        let tmp21;
+        if (cResult[3] === guildId) {
+          tmp21 = cResult[4];
+        }
+        tmp20 = tmp21;
       }
-      stateFromStores = toLocaleLowerCaseResult === toLocaleLowerCaseResult1;
+      const obj5 = nameFromUser(guildId);
+      let tmp23 = stateFromStores;
+      if (tmp23) {
+        const username2 = guildId.username;
+        let toLocaleLowerCaseResult1;
+        const toLocaleLowerCaseResult = obj5.toLocaleLowerCase();
+        if (username2 != null) {
+          toLocaleLowerCaseResult1 = username2.toLocaleLowerCase();
+        }
+        tmp23 = toLocaleLowerCaseResult === toLocaleLowerCaseResult1;
+      }
+      if (tmp23) {
+        tmp23 = "0" === guildId.discriminator;
+      }
+      let combined = obj5;
+      if (tmp23) {
+        const _HermesInternal2 = HermesInternal;
+        combined = "" + obj5[0] + "\u2026";
+      }
+      cResult[2] = stateFromStores;
+      cResult[3] = guildId;
+      cResult[4] = combined;
+      tmp21 = combined;
     }
-    if (stateFromStores) {
-      stateFromStores = "0" === username.discriminator;
+    tmp6 = tmp20;
+  } else {
+    const items1 = [StreamerModeStore];
+    const tmpResult4 = get_initialized;
+    const stateFromStores1 = tmpResult4.useStateFromStores(items1, () => StreamerModeStore.hidePersonalInformation);
+    if (null != guildId) {
+      const obj2 = nameFromUser(guildId);
+      let tmp8 = stateFromStores1;
+      if (tmp8) {
+        const username = guildId.username;
+        let toLocaleLowerCaseResult3;
+        const toLocaleLowerCaseResult2 = obj2.toLocaleLowerCase();
+        if (username != null) {
+          toLocaleLowerCaseResult3 = username.toLocaleLowerCase();
+        }
+        tmp8 = toLocaleLowerCaseResult2 === toLocaleLowerCaseResult3;
+      }
+      if (tmp8) {
+        tmp8 = "0" === guildId.discriminator;
+      }
+      let combined1 = obj2;
+      if (tmp8) {
+        const _HermesInternal = HermesInternal;
+        combined1 = "" + obj2[0] + "\u2026";
+      }
+      tmp6 = combined1;
     }
-    let combined = obj2;
-    if (stateFromStores) {
-      const _HermesInternal = HermesInternal;
-      combined = "" + obj2[0] + "\u2026";
-    }
-    return combined;
   }
+  return tmp6;
 }
 function getGlobalName(user) {
   if (null != user) {
@@ -156,7 +356,7 @@ function getFormattedName(inviter, arg1) {
     return tmp11;
   }
 }
-function humanizeStatus(DND, arg1) {
+function humanizeStatus(status, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -165,7 +365,7 @@ function humanizeStatus(DND, arg1) {
   const isVR = obj.isVR;
   const tmp = undefined !== isMobile && isMobile;
   const tmp2 = undefined !== isVR && isVR;
-  if (hasOwnProperty.ONLINE === DND) {
+  if (hasOwnProperty.ONLINE === status) {
     let stringResult;
     const intl6 = intl7.intl;
     const string = intl6.string;
@@ -178,71 +378,24 @@ function humanizeStatus(DND, arg1) {
       stringResult = string(t.WbGtnH);
     }
     return stringResult;
-  } else if (hasOwnProperty.OFFLINE === DND) {
+  } else if (hasOwnProperty.OFFLINE === status) {
     const intl5 = intl7.intl;
     return intl5.string(intl7.t.Vv0abJ);
-  } else if (hasOwnProperty.IDLE === DND) {
+  } else if (hasOwnProperty.IDLE === status) {
     const intl4 = intl7.intl;
     return intl4.string(intl7.t.qWbtVU);
-  } else if (hasOwnProperty.DND === DND) {
+  } else if (hasOwnProperty.DND === status) {
     const intl3 = intl7.intl;
     return intl3.string(intl7.t.jaNpQH);
-  } else if (hasOwnProperty.INVISIBLE === DND) {
+  } else if (hasOwnProperty.INVISIBLE === status) {
     const intl2 = intl7.intl;
     return intl2.string(intl7.t.bg24HO);
-  } else if (hasOwnProperty.STREAMING === DND) {
+  } else if (hasOwnProperty.STREAMING === status) {
     const intl = intl7.intl;
     return intl.string(intl7.t.XKYej5);
   } else {
     const UNKNOWN = tmp3.UNKNOWN;
     return null;
-  }
-}
-function presentUserTag(username, identifiable, arg2) {
-  if (null == username) {
-    const intl = intl7.intl;
-    return intl.string(intl7.t.sKdZ6U);
-  } else {
-    const username1 = username.username;
-    const tmp = null != username1 && username1.length > 0;
-    if (tmp) {
-      let combined;
-      let flag = false;
-      if ("always" !== identifiable.identifiable) {
-        flag = arg2;
-        if ("never" === identifiable.identifiable) {
-          flag = true;
-        }
-      }
-      if ("0" !== username.discriminator) {
-        if (username.discriminator !== React3) {
-          if ("username" !== identifiable.mode) {
-            let username2;
-            if (!flag) {
-              const _HermesInternal3 = HermesInternal;
-              username2 = "" + username.username + "#" + username.discriminator;
-            }
-            return username2;
-          }
-          username2 = username.username;
-        }
-      }
-      username = username.username;
-      if (flag) {
-        const _HermesInternal = HermesInternal;
-        combined = "" + username[0] + "\u2026";
-      } else {
-        combined = username;
-      }
-      let combined1 = combined;
-      if ("never" !== identifiable.decoration) {
-        const _HermesInternal2 = HermesInternal;
-        combined1 = "@" + combined;
-      }
-      return combined1;
-    } else {
-      return c7;
-    }
   }
 }
 function getUserTag(user, arg1) {
@@ -256,41 +409,11 @@ function getUserTag(user, arg1) {
   }
   return tmp3(user, obj, hidePersonalInformation);
 }
-function useUserTag(user, arg1) {
-  const obj = {};
-  const merged = Object.assign(closure_8);
-  const merged1 = Object.assign(arg1);
-  const items = [StreamerModeStore];
-  const obj2 = get_initialized;
-  return presentUserTag(user, obj, obj2.useStateFromStores(items, () => StreamerModeStore.hidePersonalInformation));
-}
-function useDirectMessageRecipient(arg0) {
-  let closure_0;
-  _require = arg0;
-  const obj = require("get initialized");
-  const items = [UserStore];
-  return obj.useStateFromStores(items, () => {
-    if (null != closure_0) {
-      let user = null;
-      if (closure_0.isPrivate()) {
-        user = null;
-        if (closure_0.isDM()) {
-          user = UserStore.getUser(obj.getRecipientId());
-        }
-      }
-      return user;
-    }
-  });
-}
 function getUserIsStaff() {
   const currentUser = UserStore.getCurrentUser();
   const tmp = null != currentUser && currentUser.isStaff();
   return tmp;
 }
-({ NON_USER_BOT_DISCRIMINATOR: closure_4, StatusTypes: hasOwnProperty } = Constants);
-let c6 = 86400000;
-let c7 = "???";
-let closure_8 = { mode: "full", decoration: "never", identifiable: "auto" };
 let obj = {
   getName,
   useName,
@@ -299,23 +422,14 @@ let obj = {
     return endsWithResult;
   },
   getUserTag,
-  useUserTag,
+  useUserTag: tmp3,
   getUserIsStaff,
   getFormattedName,
   getGlobalName,
   humanizeStatus,
-  useDirectMessageRecipient
+  useDirectMessageRecipient: tmp4
 };
-const result = size.fileFinishedImporting("utils/UserUtils.tsx");
-
-export default obj;
-export { nameFromUser };
-export { getName };
-export { useName };
-export { getGlobalName };
-export { getFormattedName };
-export { humanizeStatus };
-export const accountAgeInRange = function accountAgeInRange(createdAt, arg1) {
+function accountAgeInRange(createdAt, arg1) {
   let maxDaysOld;
   let minDaysOld;
   ({ maxDaysOld, minDaysOld } = arg1);
@@ -331,7 +445,17 @@ export const accountAgeInRange = function accountAgeInRange(createdAt, arg1) {
     const diff = timestamp - createdAt.getTime();
     return (null == maxDaysOld || diff <= c6 * maxDaysOld) && diff >= c6 * minDaysOld;
   }
-};
+}
+const result = size.fileFinishedImporting("utils/UserUtils.tsx");
+
+export default obj;
+export { nameFromUser };
+export { getName };
+export { useName };
+export { getGlobalName };
+export { getFormattedName };
+export { humanizeStatus };
+export { accountAgeInRange };
 export const ageEligibleForPremiumUpsell = function ageEligibleForPremiumUpsell(stateFromStores) {
   let flag = false;
   if (null != stateFromStores) {
@@ -357,6 +481,6 @@ export const isNewUser = function isNewUser(createdAt) {
   return flag;
 };
 export { getUserTag };
-export { useUserTag };
-export { useDirectMessageRecipient };
+export const useUserTag = tmp3;
+export const useDirectMessageRecipient = tmp4;
 export { getUserIsStaff };

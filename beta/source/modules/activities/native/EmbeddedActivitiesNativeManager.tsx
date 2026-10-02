@@ -1,34 +1,34 @@
-// Module ID: 8765
-// Function ID: 8766
+// Module ID: 8760
+// Function ID: 8761
 // Name: EmbeddedActivitiesNativeManager
-// Dependencies: [5, 17, 2045, 4859, 2044, 2005, 1074, 4739, 7746, 1364, 8752, 8753, 1231, 8755, 8766, 5204, 1115, 8758, 4458, 1241, 573, 8781, 8782, 4528, 8810, 1110, 1370, 1255, 2]
+// Dependencies: [5, 17, 2051, 4860, 2050, 2011, 1086, 4741, 7750, 1370, 8747, 8748, 1243, 8750, 8761, 5205, 1127, 8753, 4461, 1253, 585, 8776, 8777, 4531, 8805, 1122, 1376, 1267, 2]
 
-// Module 8765 (EmbeddedActivitiesNativeManager)
+// Module 8760 (EmbeddedActivitiesNativeManager)
 import react_native from "react-native" /* 17 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import intl3 from "intl" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import v1 from "v1" /* 1255 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import Constants2 from "Constants" /* 2005 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
-import Constants3 from "Constants" /* 4739 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
-import react_nativeDefault from "react-native" /* 8752 */;
-import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 8753 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 8758 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 8766 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8782 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8810 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
+import intl3 from "intl" /* 1127 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import v1 from "v1" /* 1267 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import Constants2 from "Constants" /* 2011 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
+import Constants3 from "Constants" /* 4741 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
+import react_nativeDefault from "react-native" /* 8747 */;
+import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 8748 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 8753 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 8761 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8777 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8805 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import Constants from "Constants" /* 1074 */;
-import WebView from "WebView" /* 7746 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 8755 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import Constants from "Constants" /* 1086 */;
+import WebView from "WebView" /* 7750 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 8750 */;
 import size from "module_2" /* 2 */;
 
 let basicChannel, c5, c6, closure_3, rawThermalState;
@@ -51,7 +51,7 @@ let obj = function _postMessageToWebView() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -92,7 +92,7 @@ let obj = function _postMessageToWebView() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp17) {
         closure_3 = tmp17;

@@ -1,10 +1,10 @@
-// Module ID: 16387
-// Function ID: 16388
+// Module ID: 16389
+// Function ID: 16390
 // Name: VibegrationsChatEmptyState
 // Dependencies: [2]
 // Exports: chatEmptyState
 
-// Module 16387 (VibegrationsChatEmptyState)
+// Module 16389 (VibegrationsChatEmptyState)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsChatEmptyState.tsx");

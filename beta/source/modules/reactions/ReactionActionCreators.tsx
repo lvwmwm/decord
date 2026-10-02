@@ -1,23 +1,23 @@
-// Module ID: 7183
-// Function ID: 7184
+// Module ID: 7187
+// Function ID: 7188
 // Name: ReactionActionCreators
-// Dependencies: [5, 502, 2045, 5056, 1074, 1091, 5203, 1115, 1110, 573, 7182, 1271, 7184, 1241, 5016, 4685, 7202, 4487, 2]
+// Dependencies: [5, 502, 2051, 5057, 1086, 1103, 5204, 1127, 1122, 585, 7186, 1283, 7188, 1253, 5017, 4687, 7206, 4490, 2]
 // Exports: getReactors, playBurstReaction
 
-// Module 7183 (ReactionActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import intl4 from "intl" /* 1115 */;
-import EmojiUtils from "EmojiUtils" /* 4487 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7182 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7184 */;
+// Module 7187 (ReactionActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
+import intl4 from "intl" /* 1127 */;
+import EmojiUtils from "EmojiUtils" /* 4490 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7186 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7188 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 5056 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import MessageStore from "MessageStore" /* 5057 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let after, limit, me, url;
@@ -146,7 +146,7 @@ let obj = function _getReactors() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -174,7 +174,7 @@ let obj = function _getReactors() {
               body = undefined;
               limit = 1;
               after = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === limit) {
             if (arg0 === 1) {
@@ -262,7 +262,7 @@ obj = function _addReaction() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -293,7 +293,7 @@ obj = function _addReaction() {
               colors = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -325,7 +325,7 @@ obj = function _addReaction() {
                   intl3 = closure_134_0(closure_134_2[7]).intl;
                   show(obj5);
                   c8 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 }
               }
               c7 = 2;
@@ -503,7 +503,7 @@ obj = function _removeAllReactions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -548,7 +548,7 @@ obj = function _removeAllReactions() {
               closure_2_12(error, () => closure_2_18(closure_1_0, closure_1_1, { isRetry: true }), obj);
             });
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c6 = 3;
@@ -582,7 +582,7 @@ obj = function _removeEmojiReactions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -634,7 +634,7 @@ obj = function _removeEmojiReactions() {
               closure_2_12(error, () => closure_2_20(closure_1_0, closure_1_1, closure_1_2, { isRetry: true }), obj);
             });
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp24) {
           c7 = 3;
@@ -723,7 +723,7 @@ obj = function _removeReaction() {
                 let obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -781,7 +781,7 @@ obj = function _removeReaction() {
                   }
                 }
                 userId = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               } catch (tmp21) {
                 userId = 3;
                 throw tmp21;
@@ -793,7 +793,7 @@ obj = function _removeReaction() {
           return closure_0(...arguments);
         };
       })());
-      await "HermesInternal";
+      await "IconComponent";
       if (arg0 === 1) {
         throw value;
       }
@@ -806,7 +806,7 @@ obj = function _removeReaction() {
         _location = constants.MESSAGE;
       }
       ({ userId: c4, options: c5 } = tmp58);
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -833,7 +833,7 @@ obj = function _getOptimisticEmojiColors() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

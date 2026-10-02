@@ -1,14 +1,14 @@
-// Module ID: 8784
-// Function ID: 8785
+// Module ID: 8779
+// Function ID: 8780
 // Name: tryLaunchAsFrame
-// Dependencies: [5063, 8500, 8783, 8760, 2]
+// Dependencies: [5064, 8497, 8778, 8755, 2]
 // Exports: tryLaunchAsFrame
 
-// Module 8784 (tryLaunchAsFrame)
-import FramesConstants from "FramesConstants" /* 8500 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 8760 */;
-import canLaunchFrame from "canLaunchFrame" /* 8783 */;
-import ApplicationStore from "ApplicationStore" /* 5063 */;
+// Module 8779 (tryLaunchAsFrame)
+import FramesConstants from "FramesConstants" /* 8497 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 8755 */;
+import canLaunchFrame from "canLaunchFrame" /* 8778 */;
+import ApplicationStore from "ApplicationStore" /* 5064 */;
 import size from "module_2" /* 2 */;
 
 const MAIN_SURFACE = FramesConstants.MAIN_SURFACE;

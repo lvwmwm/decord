@@ -1,22 +1,22 @@
 // Module ID: 15649
 // Function ID: 15650
 // Name: HomeDrawerStore
-// Dependencies: [1074, 1243, 4566, 4837, 15650, 4452, 2]
+// Dependencies: [1086, 1255, 4570, 4838, 15650, 4455, 2]
 // Exports: computeMaxX
 
 // Module 15649 (HomeDrawerStore)
-import Constants from "Constants" /* 1074 */;
-import _slicedToArray from "_slicedToArray" /* 4452 */;
-import timing from "timing" /* 4837 */;
+import Constants from "Constants" /* 1086 */;
+import _slicedToArray from "_slicedToArray" /* 4455 */;
+import timing from "timing" /* 4838 */;
 import HomeDrawerAnimations from "HomeDrawerAnimations" /* 15650 */;
-import module_1243 from "module_1243" /* 1243 */;
+import module_1255 from "module_1255" /* 1255 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap, set, set2, set3;
 
 const DM_WIDTH = Constants.DM_WIDTH;
-const withEqualityFn = module_1243.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = module_1255.createWithEqualityFn((arg0, arg1) => {
   let closure_0;
   let closure_1;
   let obj2;

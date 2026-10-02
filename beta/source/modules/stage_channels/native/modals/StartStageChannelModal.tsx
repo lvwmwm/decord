@@ -1,36 +1,37 @@
-// Module ID: 9268
-// Function ID: 9269
+// Module ID: 9246
+// Function ID: 9247
 // Name: StartStageChannelModal
-// Dependencies: [5, 32, 19, 17, 2050, 5726, 1074, 2051, 21, 4836, 576, 5039, 5435, 1115, 1177, 6510, 7855, 5896, 504, 6634, 8053, 4832, 9203, 9269, 9270, 5298, 1241, 1876, 7846, 6637, 4735, 9271, 9272, 7858, 5281, 6544, 5890, 2]
+// Dependencies: [5, 32, 19, 17, 2056, 5727, 1086, 2057, 21, 4837, 588, 5040, 558, 576, 1127, 5436, 1189, 6511, 7859, 5893, 6635, 504, 8057, 4833, 9215, 9247, 9248, 5297, 1253, 1882, 7850, 6638, 4737, 9249, 9250, 7862, 5282, 6546, 6462, 2]
 
-// Module 9268 (StartStageChannelModal)
+// Module 9246 (StartStageChannelModal)
 import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import intl9 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1876 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import Pressables from "Pressables" /* 5435 */;
-import GuildIcon from "GuildIcon" /* 5896 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6510 */;
-import HotspotStore2 from "HotspotStore" /* 6634 */;
-import StageSparkleDefault from "StageSparkle" /* 7855 */;
-import Form from "Form" /* 8053 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl9 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1882 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import Pressables from "Pressables" /* 5436 */;
+import GuildIconDefault from "GuildIcon" /* 5893 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6511 */;
+import HotspotStore2 from "HotspotStore" /* 6635 */;
+import StageSparkleDefault from "StageSparkle" /* 7859 */;
+import Form from "Form" /* 8057 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StageInstanceStore from "StageInstanceStore" /* 2050 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5726 */;
+import StageInstanceStore from "StageInstanceStore" /* 2056 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5727 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-const GuildIconDefault = GuildIcon;
 let c3, c4, c5, channel, closure_12;
 
 let c10;
@@ -44,12 +45,88 @@ let obj4;
 let obj5;
 let obj6;
 let obj7;
+let tmp;
 let unpackModuleId;
+const GuildIcon = tmp(5893);
 function closeModal() {
   const obj = ModalActionCreatorsDefault;
   obj.popWithKey(unpackModuleId);
 }
-function NavigationBar(guild) {
+let _slicedToArray = _slicedToArray_mod;
+({ View: metroImportDefault, ScrollView: metroImportAll } = react_native);
+({ MAX_STAGE_TOPIC_LENGTH: c10, START_STAGE_CHANNEL_EVENT_MODAL_KEY: unpackModuleId } = StageChannelsConstants);
+const AnalyticEvents = Constants.AnalyticEvents;
+let constants = GuildScheduledEventsConstants.GuildScheduledEventPrivacyLevel;
+({ jsx: closure_14, jsxs: closure_15 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { keyboardAwareView: { flex: 1 }, closeButtonContainer: { right: 10 }, container: obj2, contentContainer: { paddingHorizontal: 16 }, contentTopSpacing: { paddingTop: 16 }, header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginTop: 16, marginBottom: 8 }, headerSubtitle: { textAlign: "center" }, textInput: obj3, startButton: { marginTop: 16 }, error: { paddingTop: 8 }, optionExplanation: { lineHeight: 16, paddingTop: 8 }, guildIcon: obj4, label: { display: "flex", alignItems: "center", flexDirection: "row" }, pill: obj5, pillLabel: { textTransform: "uppercase" }, notificationToggle: obj6, ageVerificationNotice: obj7 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+obj3 = { padding: 12, width: "100%", borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginBottom: 16 };
+obj4 = { borderRadius: nativeDefault.radii.md };
+obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, paddingHorizontal: 4, paddingVertical: 2, marginStart: 8, borderRadius: nativeDefault.radii.xs };
+obj6 = { marginTop: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm };
+obj7 = { marginBottom: nativeDefault.space.PX_16 };
+let closure_16 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+  let Icon;
+  let obj3;
+  const obj = react2;
+  const cResult = obj.c(7);
+  guild = guild.guild;
+  const tmp4 = closure_16();
+  let tmp5 = null;
+  if (null == guild) {
+    if (cResult[0] === tmp4.contentContainer) {
+      let tmp6;
+      let tmp8;
+      let tmp10;
+      let tmp15;
+      if (cResult[1] === tmp4.contentTopSpacing) {
+        tmp6 = cResult[2];
+      }
+      const _Symbol = Symbol;
+      if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl = tmp(1127).intl;
+        const stringResult = intl.string(intl9.t.cpT0Cq);
+        cResult[3] = stringResult;
+        tmp8 = stringResult;
+      } else {
+        tmp8 = cResult[3];
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj2 = { accessibilityRole: "button", accessibilityLabel: tmp8, onPress: closeModal, children: authStore2(Icon, obj3) };
+        const PressableOpacity = tmp(5436).PressableOpacity;
+        obj3 = { source: AssetRegistryDefault };
+        Icon = tmp(1189).Icon;
+        const tmp14 = authStore2(PressableOpacity, obj2);
+        cResult[4] = tmp14;
+        tmp10 = tmp14;
+      } else {
+        tmp10 = cResult[4];
+      }
+      if (cResult[5] !== tmp6) {
+        const obj4 = { style: tmp6, children: tmp10 };
+        const tmp18 = authStore2(metroImportDefault, obj4);
+        cResult[5] = tmp6;
+        cResult[6] = tmp18;
+        tmp15 = tmp18;
+      } else {
+        tmp15 = cResult[6];
+      }
+      tmp5 = tmp15;
+    }
+    const items = [, ];
+    ({ contentContainer: arr[0], contentTopSpacing: arr[1] } = tmp4);
+    cResult[0] = tmp4.contentContainer;
+    cResult[1] = tmp4.contentTopSpacing;
+    cResult[2] = items;
+    tmp6 = items;
+  }
+  return tmp5;
+}) : ((guild) => {
   let Icon;
   let PressableOpacity;
   let intl;
@@ -71,8 +148,41 @@ function NavigationBar(guild) {
     tmp2 = authStore2(metroImportDefault, obj);
   }
   return tmp2;
-}
-function HeaderIcon(guild) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(4);
+  guild = guild.guild;
+  const tmp4 = closure_16();
+  if (null == guild) {
+    let first;
+    const _Symbol = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp14 = authStore2(StageSparkleDefault, {});
+      cResult[0] = tmp14;
+      first = tmp14;
+    } else {
+      first = cResult[0];
+    }
+    tmp5 = first;
+  } else {
+    if (cResult[1] === guild) {
+      if (cResult[2] === tmp4.guildIcon) {
+        tmp5 = cResult[3];
+      }
+    }
+    const obj2 = { style: tmp4.guildIcon, size: GuildIcon.GuildIconSizes.LARGE, guild };
+    const tmp8 = GuildIconDefault;
+    const tmp9 = authStore2(tmp8, obj2);
+    cResult[1] = guild;
+    cResult[2] = tmp4.guildIcon;
+    cResult[3] = tmp9;
+    tmp5 = tmp9;
+  }
+  return tmp5;
+}) : ((guild) => {
   let tmp7;
   guild = guild.guild;
   if (null == guild) {
@@ -83,64 +193,151 @@ function HeaderIcon(guild) {
     tmp7 = authStore2(tmp5, obj);
   }
   return tmp7;
-}
-class NotificationToggle {
-  constructor(arg0) {
-    let Text;
-    let intl;
-    let intl2;
-    let items1;
-    let obj2;
-    let obj5;
-    let onToggle;
-    let sendStartNotification;
-    let tmp7;
-    ({ sendStartNotification, onToggle } = arg0);
-    const tmp = closure_16();
-    const useStateFromStores = get_initialized.useStateFromStores;
-    const items = [];
-    get_initialized;
-    items[0] = HotspotStore2.HotspotStore;
-    const stateFromStores = useStateFromStores(items, () => {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let Text;
+  let intl;
+  let intl2;
+  let items1;
+  let obj7;
+  let onToggle;
+  let sendStartNotification;
+  let tmp5;
+  let tmp6;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(17);
+  ({ sendStartNotification, onToggle } = arg0);
+  const tmp4 = closure_16();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [HotspotStore2.HotspotStore];
+    const fn = function n() {
       const HotspotStore = HotspotStore2.HotspotStore;
       return HotspotStore.hasHotspot(HotspotStore2.HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
-    });
-    const obj = { DEPRECATED_style: tmp.notificationToggle, label: tmp7(metroImportDefault, obj2), onPress: onToggle, trailing: authStore2(native.Checkbox, { selected: sendStartNotification }) };
-    obj2 = { style: tmp.label, children: items1 };
-    const FormRow = Form.FormRow;
-    const obj3 = { text: intl.string(intl9.t.BYJgew) };
-    const FormLabel = Form.FormLabel;
-    intl = intl9.intl;
-    items1 = [authStore2(FormLabel, obj3), ];
-    let tmp6Result = null;
-    tmp7 = closure_15;
-    if (stateFromStores) {
-      const obj4 = { style: tmp.pill, children: authStore2(Text, obj5) };
-      obj5 = { style: tmp.pillLabel, variant: "text-xxs/bold", color: "text-overlay-light", children: intl2.string(intl9.t.y2b7CA) };
-      Text = tmp2(4832).Text;
-      intl2 = tmp2(1115).intl;
-      tmp6Result = tmp6(tmp8, obj4);
-    }
-    items1[1] = tmp6Result;
-    return authStore2(FormRow, obj);
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
   }
-}
-let _slicedToArray = _slicedToArray_mod;
-({ View: metroImportDefault, ScrollView: metroImportAll } = react_native);
-({ MAX_STAGE_TOPIC_LENGTH: c10, START_STAGE_CHANNEL_EVENT_MODAL_KEY: unpackModuleId } = StageChannelsConstants);
-const AnalyticEvents = Constants.AnalyticEvents;
-let constants = GuildScheduledEventsConstants.GuildScheduledEventPrivacyLevel;
-({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { keyboardAwareView: { flex: 1 }, closeButtonContainer: { right: 10 }, container: obj2, contentContainer: { paddingHorizontal: 16 }, contentTopSpacing: { paddingTop: 16 }, header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginTop: 16, marginBottom: 8 }, headerSubtitle: { textAlign: "center" }, textInput: obj3, startButton: { marginTop: 16 }, error: { paddingTop: 8 }, optionExplanation: { lineHeight: 16, paddingTop: 8 }, guildIcon: obj4, label: { display: "flex", alignItems: "center", flexDirection: "row" }, pill: obj5, pillLabel: { textTransform: "uppercase" }, notificationToggle: obj6, ageVerificationNotice: obj7 };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-createStyles = createStyles.createStyles;
-obj3 = { padding: 12, width: "100%", borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginBottom: 16 };
-obj4 = { borderRadius: nativeDefault.radii.md };
-obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, paddingHorizontal: 4, paddingVertical: 2, marginStart: 8, borderRadius: nativeDefault.radii.xs };
-obj6 = { marginTop: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm };
-obj7 = { marginBottom: nativeDefault.space.PX_16 };
-const authStore3 = createStyles(obj);
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { text: intl.string(intl9.t.BYJgew) };
+    const FormLabel = tmp(8057).FormLabel;
+    intl = tmp(1127).intl;
+    const tmp10 = authStore2(FormLabel, obj2);
+    cResult[2] = tmp10;
+    tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === stateFromStores) {
+    if (cResult[4] === tmp4.pill) {
+      let tmp11;
+      if (cResult[5] === tmp4.pillLabel) {
+        tmp11 = cResult[6];
+      }
+      if (cResult[7] === tmp4.label) {
+        let tmp15;
+        let tmp19;
+        if (cResult[8] === tmp11) {
+          tmp15 = cResult[9];
+        }
+        if (cResult[10] !== sendStartNotification) {
+          const obj3 = { selected: sendStartNotification };
+          const tmp21 = authStore2(native.Checkbox, obj3);
+          cResult[10] = sendStartNotification;
+          cResult[11] = tmp21;
+          tmp19 = tmp21;
+        } else {
+          tmp19 = cResult[11];
+        }
+        if (cResult[12] === onToggle) {
+          if (cResult[13] === tmp4.notificationToggle) {
+            if (cResult[14] === tmp15) {
+              let tmp22;
+              if (cResult[15] === tmp19) {
+                tmp22 = cResult[16];
+              }
+              return tmp22;
+            }
+          }
+        }
+        const obj4 = { DEPRECATED_style: tmp4.notificationToggle, label: tmp15, onPress: onToggle, trailing: tmp19 };
+        const tmp24 = authStore2(Form.FormRow, obj4);
+        cResult[12] = onToggle;
+        cResult[13] = tmp4.notificationToggle;
+        cResult[14] = tmp15;
+        cResult[15] = tmp19;
+        cResult[16] = tmp24;
+        tmp22 = tmp24;
+      }
+      const obj5 = { style: tmp4.label, children: items1 };
+      items1 = [tmp8, tmp11];
+      const tmp18 = closure_15(metroImportDefault, obj5);
+      cResult[7] = tmp4.label;
+      cResult[8] = tmp11;
+      cResult[9] = tmp18;
+      tmp15 = tmp18;
+    }
+  }
+  let tmp12 = null;
+  if (stateFromStores) {
+    const obj6 = { style: tmp4.pill, children: authStore2(Text, obj7) };
+    obj7 = { style: tmp4.pillLabel, variant: "text-xxs/bold", color: "text-overlay-light", children: intl2.string(intl9.t.y2b7CA) };
+    Text = tmp(4833).Text;
+    intl2 = tmp(1127).intl;
+    tmp12 = authStore2(metroImportDefault, obj6);
+  }
+  cResult[3] = stateFromStores;
+  cResult[4] = tmp4.pill;
+  cResult[5] = tmp4.pillLabel;
+  cResult[6] = tmp12;
+  tmp11 = tmp12;
+}) : ((arg0) => {
+  let Text;
+  let intl;
+  let intl2;
+  let items1;
+  let obj2;
+  let obj5;
+  let onToggle;
+  let sendStartNotification;
+  let tmp7;
+  ({ sendStartNotification, onToggle } = arg0);
+  const tmp = closure_16();
+  const useStateFromStores = get_initialized.useStateFromStores;
+  const items = [];
+  get_initialized;
+  items[0] = HotspotStore2.HotspotStore;
+  const stateFromStores = useStateFromStores(items, () => {
+    const HotspotStore = HotspotStore2.HotspotStore;
+    return HotspotStore.hasHotspot(HotspotStore2.HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
+  });
+  const obj = { DEPRECATED_style: tmp.notificationToggle, label: tmp7(metroImportDefault, obj2), onPress: onToggle, trailing: authStore2(native.Checkbox, { selected: sendStartNotification }) };
+  obj2 = { style: tmp.label, children: items1 };
+  const FormRow = Form.FormRow;
+  const obj3 = { text: intl.string(intl9.t.BYJgew) };
+  const FormLabel = Form.FormLabel;
+  intl = intl9.intl;
+  items1 = [authStore2(FormLabel, obj3), ];
+  let tmp6Result = null;
+  tmp7 = closure_15;
+  if (stateFromStores) {
+    const obj4 = { style: tmp.pill, children: authStore2(Text, obj5) };
+    obj5 = { style: tmp.pillLabel, variant: "text-xxs/bold", color: "text-overlay-light", children: intl2.string(intl9.t.y2b7CA) };
+    Text = tmp2(4833).Text;
+    intl2 = tmp2(1127).intl;
+    tmp6Result = tmp6(tmp8, obj4);
+  }
+  items1[1] = tmp6Result;
+  return authStore2(FormRow, obj);
+});
+let closure_20 = tmp6;
 const forwardRefResult = react.forwardRef((channel, ref) => {
   let Button;
   let _undefined;
@@ -196,7 +393,7 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -220,17 +417,17 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
                 if (null != first2) {
                   _undefined(true);
                   _undefined2(null);
-                  const obj4 = tmp61(c3[27]);
+                  const obj4 = tmp61(c3[29]);
                   const result = obj4.dismissGlobalKeyboard();
                   c3 = 1;
                   if (null != memo) {
                     c4 = 3;
                     c5 = 1;
                     const obj8 = { value: obj7.editStage(channel, first1, first2), done: false };
-                    obj7 = tmp61(c3[28]);
+                    obj7 = tmp61(c3[30]);
                     return obj8;
                   } else {
-                    obj5 = tmp61(c3[28]);
+                    obj5 = tmp61(c3[30]);
                     c4 = 2;
                     c5 = 1;
                     const obj9 = { value: obj5.startStage(channel, first1, first2, first3), done: false };
@@ -244,7 +441,7 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
             closure_1 = tmp61;
             const self = this;
             const self2 = this;
-            aPIError = new closure_0(c3[30]).APIError(closure_1);
+            aPIError = new closure_0(c3[32]).APIError(closure_1);
             closure_129_9(aPIError);
             closure_129_8(false);
           } else {
@@ -260,8 +457,8 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
               } else {
                 const tmp5 = closure_129_10 && closure_129_13;
                 if (tmp5) {
-                  const obj2 = tmp61(c3[29]);
-                  obj2.hideHotspot(closure_0(c3[19]).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
+                  const obj2 = tmp61(c3[31]);
+                  obj2.hideHotspot(closure_0(c3[20]).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
                 }
               }
             } else if (arg0 === 1) {
@@ -286,7 +483,7 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp61) {
           if (0 === c3) {
             c5 = 3;
@@ -363,7 +560,7 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
   const tmp3Result8 = tmp3(useState3(tmp22), 2);
   first3 = tmp3Result8[0];
   closure_12 = tmp3Result8[1];
-  const useStateFromStores = tmp17(tmp18[18]).useStateFromStores;
+  const useStateFromStores = tmp17(tmp18[21]).useStateFromStores;
   const items1 = [];
   require("get initialized");
   items1[0] = require("HotspotStore").HotspotStore;
@@ -408,25 +605,25 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
     track(START_STAGE_OPENED, obj);
   });
   let obj6 = { style: tmp.header, children: items3 };
-  items3 = [obj5(HeaderIcon, { guild }), , ];
+  items3 = [obj5(closure_19, { guild }), , ];
   let obj7 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: stringResult };
-  const Text = tmp17(tmp18[21]).Text;
+  const Text = tmp17(tmp18[23]).Text;
   if (null == memo) {
-    const intl2 = tmp17(tmp18[13]).intl;
-    stringResult = intl2.string(tmp17(tmp18[13]).t.DDF0cJ);
+    const intl2 = tmp17(tmp18[14]).intl;
+    stringResult = intl2.string(tmp17(tmp18[14]).t.DDF0cJ);
   } else {
-    let intl = tmp17(tmp18[13]).intl;
-    stringResult = intl.string(tmp17(tmp18[13]).t["5BKP4y"]);
+    let intl = tmp17(tmp18[14]).intl;
+    stringResult = intl.string(tmp17(tmp18[14]).t["5BKP4y"]);
   }
   items3[1] = obj5(Text, obj7);
   let obj8 = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: stringResult1 };
-  const Text2 = tmp17(tmp18[21]).Text;
+  const Text2 = tmp17(tmp18[23]).Text;
   if (null == memo) {
-    const intl4 = tmp17(tmp18[13]).intl;
-    stringResult1 = intl4.string(tmp17(tmp18[13]).t.bqQIwa);
+    const intl4 = tmp17(tmp18[14]).intl;
+    stringResult1 = intl4.string(tmp17(tmp18[14]).t.bqQIwa);
   } else {
-    const intl3 = tmp17(tmp18[13]).intl;
-    stringResult1 = intl3.string(tmp17(tmp18[13]).t["I+9bLx"]);
+    const intl3 = tmp17(tmp18[14]).intl;
+    stringResult1 = intl3.string(tmp17(tmp18[14]).t["I+9bLx"]);
   }
   items3[2] = obj5(Text2, obj8);
   let obj9 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, style: tmp.container, contentContainerStyle: items4, children: items5 };
@@ -439,24 +636,24 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
   }
   items4[1] = contentTopSpacing;
   items5 = [tmp31Result, , , , , , , , ];
-  let obj10 = { children: intl5.string(tmp17(tmp18[13]).t["5FPBOB"]) };
+  let obj10 = { children: intl5.string(tmp17(tmp18[14]).t["5FPBOB"]) };
   const tmp28Result = require("FormHeader");
-  intl5 = tmp17(tmp18[13]).intl;
+  intl5 = tmp17(tmp18[14]).intl;
   items5[1] = obj5(tmp28Result, obj10);
   const obj11 = { style: tmp.textInput, showBorder: false, showTopContainer: false, multiline: false, maxLength: canSendStageStartNotification, value: first1, placeholder: intl6.string(require("intl").t.ZwWruY), onChange: tmp3Result[1], autoFocus: true, clearButtonVisibility: require("native").ClearButtonVisibility.WITH_CONTENT };
-  const FormInput = tmp17(tmp18[20]).FormInput;
-  intl6 = tmp17(tmp18[13]).intl;
+  const FormInput = tmp17(tmp18[22]).FormInput;
+  intl6 = tmp17(tmp18[14]).intl;
   items5[2] = obj5(FormInput, obj11);
   let tmp33Result = null != helpText;
   if (tmp33Result) {
     const obj12 = { style: tmp.optionExplanation, variant: "text-xs/medium", color: "text-default", children: helpText };
-    tmp33Result = tmp33(tmp17(tmp18[21]).Text, obj12);
+    tmp33Result = tmp33(tmp17(tmp18[23]).Text, obj12);
   }
   items5[3] = tmp33Result;
   let tmp33Result5 = null != guild;
   if (tmp33Result5) {
     const obj13 = { guild, channel, onChangeChannel: tmp6 };
-    tmp33Result5 = tmp33(tmp28(tmp18[32]), obj13);
+    tmp33Result5 = tmp33(tmp28(tmp18[34]), obj13);
   }
   items5[4] = tmp33Result5;
   let tmp33Result6 = null;
@@ -469,7 +666,7 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
           closure_12(!first3);
         }
     };
-    tmp33Result6 = tmp33(NotificationToggle, obj14);
+    tmp33Result6 = tmp33(closure_20, obj14);
   }
   items5[5] = tmp33Result6;
   const obj15 = { onConfirmPress, style: tmp.ageVerificationNotice, channelId: channel.id };
@@ -477,18 +674,18 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
   let tmp33Result7 = null;
   if (null != obj2) {
     const obj16 = { style: tmp.error, variant: "text-xs/medium", color: "text-feedback-critical", children: obj2.getAnyErrorMessage() };
-    const Text3 = tmp17(tmp18[21]).Text;
+    const Text3 = tmp17(tmp18[23]).Text;
     tmp33Result7 = tmp33(Text3, obj16);
   }
   items5[7] = tmp33Result7;
   const obj17 = { style: tmp.startButton, children: obj5(Button, obj18) };
-  Button = tmp17(tmp18[34]).Button;
+  Button = tmp17(tmp18[36]).Button;
   if (null == memo) {
-    const intl8 = tmp17(tmp18[13]).intl;
-    stringResult2 = intl8.string(tmp17(tmp18[13]).t.s8mM8A);
+    const intl8 = tmp17(tmp18[14]).intl;
+    stringResult2 = intl8.string(tmp17(tmp18[14]).t.s8mM8A);
   } else {
-    const intl7 = tmp17(tmp18[13]).intl;
-    stringResult2 = intl7.string(tmp17(tmp18[13]).t.K344S7);
+    const intl7 = tmp17(tmp18[14]).intl;
+    stringResult2 = intl7.string(tmp17(tmp18[14]).t.K344S7);
   }
   obj18 = {
     text: stringResult2,
@@ -503,12 +700,12 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
   let tmp33Result8 = tmp31Result2;
   if (null == guild) {
     const rect = { top: true, bottom: true, style: tmp.container, children: tmp31(tmp28Result2, obj19) };
-    const SafeAreaPaddingView = tmp17(tmp18[35]).SafeAreaPaddingView;
+    const SafeAreaPaddingView = tmp17(tmp18[37]).SafeAreaPaddingView;
     obj19 = { style: tmp.keyboardAwareView, children: items6 };
     items6 = [, ];
     const obj20 = { guild };
     tmp28Result2 = require("KeyboardAwareView");
-    items6[0] = obj5(NavigationBar, obj20);
+    items6[0] = obj5(closure_18, obj20);
     items6[1] = tmp31Result2;
     tmp33Result8 = tmp33(SafeAreaPaddingView, rect);
   }
@@ -517,4 +714,4 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
 let result = size.fileFinishedImporting("modules/stage_channels/native/modals/StartStageChannelModal.tsx");
 
 export default forwardRefResult;
-export { NotificationToggle };
+export const NotificationToggle = tmp6;

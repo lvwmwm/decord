@@ -1,22 +1,22 @@
-// Module ID: 17753
-// Function ID: 17754
+// Module ID: 17755
+// Function ID: 17756
 // Name: executeHeadlessTask
-// Dependencies: [5, 17, 502, 17054, 1074, 3, 1231, 7176, 15, 9, 13210, 1241, 1249, 17132, 2040, 2]
+// Dependencies: [5, 17, 502, 17056, 1086, 3, 1243, 7180, 15, 9, 13212, 1253, 1261, 17134, 2046, 2]
 // Exports: default
 
-// Module 17753 (executeHeadlessTask)
+// Module 17755 (executeHeadlessTask)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import fast_connect from "fast_connect" /* 15 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1074 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7176 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13210 */;
+import Constants from "Constants" /* 1086 */;
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7180 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13212 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NativeAppStartup from "NativeAppStartup" /* 17054 */;
+import NativeAppStartup from "NativeAppStartup" /* 17056 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_7, closure_8, duration_ms, value2;
@@ -47,7 +47,7 @@ let obj = function _executeHeadlessTask() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -359,7 +359,7 @@ let obj = function _executeHeadlessTask() {
               closure_8 = closure_10;
               value.warn("Failed to submit analytics", closure_8);
               c12 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
             case 13:
             {

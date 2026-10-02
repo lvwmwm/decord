@@ -1,19 +1,19 @@
-// Module ID: 11935
-// Function ID: 11936
+// Module ID: 11829
+// Function ID: 11830
 // Name: useMessageRequestActions
-// Dependencies: [5, 32, 19, 7035, 11936, 1074, 11937, 10422, 4735, 9805, 7632, 1241, 11939, 2021, 8089, 2]
+// Dependencies: [5, 32, 19, 7039, 11830, 1086, 11831, 9601, 4737, 9724, 7636, 1253, 11833, 2027, 8086, 2]
 // Exports: useMessageRequestActions
 
-// Module 11935 (useMessageRequestActions)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import ReportModals from "ReportModals" /* 8089 */;
+// Module 11829 (useMessageRequestActions)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import ReportModals from "ReportModals" /* 8086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7035 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 11936 */;
+import UserProfileStore from "UserProfileStore" /* 7039 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 11830 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c8;
@@ -75,7 +75,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -139,7 +139,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
           c4(false);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp39) {
         closure_3 = tmp39;
         if (0 === c4) {
@@ -173,7 +173,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -236,7 +236,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
           c5(false);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp39) {
         closure_3 = tmp39;
         if (0 === c4) {
@@ -268,7 +268,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -315,7 +315,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
               }
             }
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else if (1 === tmp4) {
           c6 = 0;
@@ -374,7 +374,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -406,7 +406,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     try {
@@ -459,7 +459,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
                         return obj;
                       } else {
                         c1 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "IconComponent", done: null };
                       }
                     } catch (tmp16) {
                       c1 = 3;
@@ -487,7 +487,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
                 }
               }
               v3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === tmp4) {
             c4 = 0;
@@ -569,7 +569,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
   const markAsNotSpam = obj.useCallback((channel, arg1, arg2) => {
     let closure_1 = arg1;
     let closure_2 = arg2;
-    function onConfirm(setting, is_dont_show_again_checked) {
+    function onConfirm_0(setting, is_dont_show_again_checked) {
       const tmp = is_dont_show_again_checked;
       if (tmp) {
         const NonSpamRetrainingOptIn = UserSettings.NonSpamRetrainingOptIn;
@@ -595,8 +595,8 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
     if (null == setting) {
       let obj = {
         channel,
-        onConfirm,
-        onCancel() {
+        onConfirm: onConfirm_0,
+        onCancel: function onCancel_0() {
             const obj = AnalyticsUtilsDefault;
             const obj2 = { action: metroImportDefault.DISMISS_HAM_CONFIRMATION_PROMPT, channel_id: channel.id };
             obj.track(AnalyticEvents.MESSAGE_REQUEST_ACTION, obj2);
@@ -605,7 +605,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
       const tmpResult = tmp(tmp2[12]);
       let result = tmpResult.onMarkAsNotSpamConfirmationModal(obj);
     } else {
-      onConfirm(setting);
+      onConfirm_0(setting);
     }
   }, items4);
   if (tmp) {

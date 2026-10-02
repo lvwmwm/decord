@@ -1,23 +1,23 @@
-// Module ID: 4487
-// Function ID: 4488
+// Module ID: 4490
+// Function ID: 4491
 // Name: EmojiUtils
-// Dependencies: [5, 2049, 4469, 1372, 1074, 1375, 4486, 4488, 5776, 4461, 7202, 1476, 1397, 2]
+// Dependencies: [5, 2055, 4472, 1378, 1086, 1381, 4489, 4491, 5777, 4464, 7206, 1482, 1403, 2]
 // Exports: countEmoji, getAllEmojiNamesString, getEmojiColors, getEmojiUrl
 
-// Module 4487 (EmojiUtils)
-import Constants from "Constants" /* 1074 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import ImageUtils from "ImageUtils" /* 1476 */;
-import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4461 */;
-import EmojiTypes from "EmojiTypes" /* 4486 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
-import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5776 */;
-import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 7202 */;
+// Module 4490 (EmojiUtils)
+import Constants from "Constants" /* 1086 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import ImageUtils from "ImageUtils" /* 1482 */;
+import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4464 */;
+import EmojiTypes from "EmojiTypes" /* 4489 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
+import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5777 */;
+import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 7206 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import UserStore from "UserStore" /* 1372 */;
-import EmojiConstants from "EmojiConstants" /* 1375 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import UserStore from "UserStore" /* 1378 */;
+import EmojiConstants from "EmojiConstants" /* 1381 */;
 import size from "module_2" /* 2 */;
 
 let animated, c1, c2, closure_1, closure_2, closure_3, closure_5, closure_6, customExternal, dependencyMap, importDefault, managed, managedExternal;
@@ -158,7 +158,7 @@ let obj = function _getEmojiColors() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

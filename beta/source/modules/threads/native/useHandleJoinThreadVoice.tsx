@@ -1,12 +1,12 @@
-// Module ID: 7329
-// Function ID: 7330
+// Module ID: 7333
+// Function ID: 7334
 // Name: useHandleJoinThreadVoice
-// Dependencies: [5, 4471, 5364, 5881, 1981, 7184, 5043, 2]
+// Dependencies: [5, 4474, 5365, 5882, 1987, 7188, 5044, 2]
 // Exports: default
 
-// Module 7329 (useHandleJoinThreadVoice)
+// Module 7333 (useHandleJoinThreadVoice)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4474 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -64,7 +64,7 @@ export default function useHandleJoinThreadVoice(arg0) {
     } else {
       value.openGuildVoiceModal(closure_129_0, "Thread Header");
       c3 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
     await guildId(c2[4])(c2[6], c2.paths);
     return value.openMemberVerificationModal(guildId);

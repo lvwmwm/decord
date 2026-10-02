@@ -1,12 +1,12 @@
-// Module ID: 17763
-// Function ID: 17764
+// Module ID: 17765
+// Function ID: 17766
 // Name: DirectReply
-// Dependencies: [5, 17, 4829, 3, 17757, 6876, 2]
+// Dependencies: [5, 17, 4830, 3, 17759, 6880, 2]
 
-// Module 17763 (DirectReply)
+// Module 17765 (DirectReply)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import MessageConstants from "MessageConstants" /* 4829 */;
+import MessageConstants from "MessageConstants" /* 4830 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ export default (arg0) => {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -91,7 +91,7 @@ export default (arg0) => {
                 }
                 closure_0(true);
                 c4 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp19) {
               c4 = 3;

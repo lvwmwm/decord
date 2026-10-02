@@ -1,18 +1,18 @@
-// Module ID: 15560
-// Function ID: 15561
+// Module ID: 15548
+// Function ID: 15549
 // Name: ScreenRecordingActionSheet
-// Dependencies: [19, 17, 15556, 21, 4836, 576, 4832, 5281, 4800, 5435, 5992, 4823, 6618, 2]
+// Dependencies: [19, 17, 15544, 21, 4837, 588, 4833, 5282, 4801, 5436, 5940, 4824, 6624, 2]
 // Exports: default
 
-// Module 15560 (ScreenRecordingActionSheet)
+// Module 15548 (ScreenRecordingActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4823 */;
-import ScreenRecordingStore from "ScreenRecordingStore" /* 15556 */;
+import nativeDefault from "native" /* 588 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4824 */;
+import ScreenRecordingStore from "ScreenRecordingStore" /* 15544 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -140,5 +140,5 @@ export default function ScreenRecordingActionSheet() {
   if (tmp3) {
     children = tmp11;
   }
-  return closure_5(tmp9(6618).ActionSheet, { children });
+  return closure_5(tmp9(6624).ActionSheet, { children });
 };

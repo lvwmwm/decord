@@ -1,17 +1,17 @@
-// Module ID: 8170
-// Function ID: 8171
+// Module ID: 8167
+// Function ID: 8168
 // Name: SKUUtils
-// Dependencies: [32, 1074, 4660, 1115, 5092, 1364, 4421, 2]
+// Dependencies: [32, 1086, 4662, 1127, 5093, 1370, 4424, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 8170 (SKUUtils)
-import intl71 from "intl" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import _modDef4421 from "module_4421" /* 4421 */;
-import matchPathCompat from "matchPathCompat" /* 4660 */;
-import StoreUtils from "StoreUtils" /* 5092 */;
+// Module 8167 (SKUUtils)
+import intl71 from "intl" /* 1127 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import _modDef4424 from "module_4424" /* 4424 */;
+import matchPathCompat from "matchPathCompat" /* 4662 */;
+import StoreUtils from "StoreUtils" /* 5093 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -292,7 +292,7 @@ export const getReadablePreorderReleaseDate = function getReadablePreorderReleas
     if (0 < items.length) {
       [tmp3, tmp4] = items[num];
       _slicedToArray(items[num], 2);
-      const obj = _modDef4421(preorderApproximateReleaseDate, tmp3, true);
+      const obj = _modDef4424(preorderApproximateReleaseDate, tmp3, true);
       while (!obj.isValid()) {
         num = num + 1;
       }

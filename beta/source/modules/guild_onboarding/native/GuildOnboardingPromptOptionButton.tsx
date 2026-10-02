@@ -1,27 +1,27 @@
-// Module ID: 6547
-// Function ID: 6548
+// Module ID: 6548
+// Function ID: 6549
 // Name: GuildOnboardingPromptOptionButton
-// Dependencies: [32, 19, 17, 4825, 5771, 1375, 21, 4566, 4836, 576, 504, 4837, 5280, 6548, 4541, 1115, 4531, 4548, 5435, 6551, 1397, 4832, 6554, 1177, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 4826, 5772, 1381, 21, 4570, 4837, 588, 558, 576, 504, 4838, 5281, 6549, 4545, 1127, 4535, 4552, 6552, 1403, 4833, 5436, 6555, 1189, 2]
 
-// Module 6547 (GuildOnboardingPromptOptionButton)
+// Module 6548 (GuildOnboardingPromptOptionButton)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl4 from "intl" /* 1115 */;
-import EmojiConstants from "EmojiConstants" /* 1375 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import timing from "timing" /* 4837 */;
-import spring from "spring" /* 5280 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import EmojiConstants from "EmojiConstants" /* 1381 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4545 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import timing from "timing" /* 4838 */;
+import spring from "spring" /* 5281 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import EmojiStore from "EmojiStore" /* 5771 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 4826 */;
+import EmojiStore from "EmojiStore" /* 5772 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let set;
+let option, set;
 
 let Easing;
 let c10;
@@ -30,6 +30,7 @@ let obj3;
 let rect;
 let size;
 let View = react_native.View;
+let AccessibilityStore = AccessibilityStore_mod;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 ({ jsx: c9, jsxs: c10 } = Fragment);
 let obj = { duration: 200, easing: Easing.out(ReanimatedRexport.Easing.ease) };
@@ -41,22 +42,1000 @@ createStyles = createStyles.createStyles;
 size = { position: "absolute", top: -6, right: -6, width: 20, height: 20, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center" };
 rect = { position: "absolute", top: -6, right: 24, paddingVertical: 2, paddingHorizontal: 6, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center" };
 let closure_12 = createStyles(obj2);
-let __initData = { code: "function GuildOnboardingPromptOptionButtonTsx1(){const{selected,withTiming,Easing,useReducedMotion,withSequence,withSpring}=this.__closure;const rawOpacity=selected?1:0;const opacity=withTiming(rawOpacity,{duration:150,easing:Easing.out(Easing.ease)});const rawScale=selected?1:0.7;const scale=useReducedMotion?rawScale:withSequence(withSpring(rawScale*1.2,{stiffness:80,damping:6,mass:0.3}),withSpring(rawScale,{stiffness:80,damping:6,mass:0.3}));return{opacity:opacity,transform:[{scale:scale}]};}" };
-let closure_14 = { code: "function GuildOnboardingPromptOptionButtonTsx2(){const{showMemberCount,withDelay,withTiming,Easing,useReducedMotion}=this.__closure;const rawOpacity=showMemberCount?1:0;const opacity=withDelay(showMemberCount?400:0,withTiming(rawOpacity,{duration:150,easing:Easing.out(Easing.ease)}));const rawTranslate=showMemberCount?0:16;const translateX=useReducedMotion?rawTranslate:withDelay(showMemberCount?400:0,withTiming(rawTranslate,{duration:200,easing:Easing.out(Easing.ease)}));return{opacity:opacity,transform:[{translateX:translateX}]};}" };
+const __initData = { code: "function GuildOnboardingPromptOptionButtonTsx1(){const{selected,withTiming,Easing,useReducedMotion,withSequence,withSpring}=this.__closure;const rawOpacity=selected?1:0;const opacity=withTiming(rawOpacity,{duration:150,easing:Easing.out(Easing.ease)});const rawScale=selected?1:0.7;const scale=useReducedMotion?rawScale:withSequence(withSpring(rawScale*1.2,{stiffness:80,damping:6,mass:0.3}),withSpring(rawScale,{stiffness:80,damping:6,mass:0.3}));return{opacity:opacity,transform:[{scale:scale}]};}" };
+const __initData2 = { code: "function GuildOnboardingPromptOptionButtonTsx2(){const{showMemberCount,withDelay,withTiming,Easing,useReducedMotion}=this.__closure;const rawOpacity_0=showMemberCount?1:0;const opacity_0=withDelay(showMemberCount?400:0,withTiming(rawOpacity_0,{duration:150,easing:Easing.out(Easing.ease)}));const rawTranslate=showMemberCount?0:16;const translateX=useReducedMotion?rawTranslate:withDelay(showMemberCount?400:0,withTiming(rawTranslate,{duration:200,easing:Easing.out(Easing.ease)}));return{opacity:opacity_0,transform:[{translateX:translateX}]};}" };
 let closure_15 = { code: "function GuildOnboardingPromptOptionButtonTsx3(){const{withTiming,selected,SELECTION_TIMING}=this.__closure;return withTiming(selected?1:0,SELECTION_TIMING);}" };
 let closure_16 = { code: "function GuildOnboardingPromptOptionButtonTsx4(){const{withTiming,isNew,SELECTION_TIMING}=this.__closure;return withTiming(isNew?1:0,SELECTION_TIMING);}" };
-let closure_17 = { code: "function GuildOnboardingPromptOptionButtonTsx5(){const{interpolateColor,newProgress,unselectedBorderColor,newBorderColor,selectedProgress,selectedBorderColor,selectedBackgroundColor}=this.__closure;const currentUnselectedBorderColor=interpolateColor(newProgress.get(),[0,1],[unselectedBorderColor,newBorderColor]);return{borderColor:interpolateColor(selectedProgress.get(),[0,1],[currentUnselectedBorderColor,selectedBorderColor]),backgroundColor:interpolateColor(selectedProgress.get(),[0,1],['transparent',selectedBackgroundColor])};}" };
-let closure_18 = { code: "function GuildOnboardingPromptOptionButtonTsx6(){const{useReducedMotion,scale}=this.__closure;return useReducedMotion?{}:{transform:[{scale:scale.get()}]};}" };
-size = size_mod;
-let result = size.fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingPromptOptionButton.tsx");
-
-export default function PromptOptionButton(option) {
+let closure_17 = { code: "function GuildOnboardingPromptOptionButtonTsx5(){const{interpolateColor,newProgress,unselectedBorderColor,newBorderColor,selectedProgress,selectedBorderColor,selectedBackgroundColor}=this.__closure;const currentUnselectedBorderColor=interpolateColor(newProgress.get(),[0,1],[unselectedBorderColor,newBorderColor]);return{borderColor:interpolateColor(selectedProgress.get(),[0,1],[currentUnselectedBorderColor,selectedBorderColor]),backgroundColor:interpolateColor(selectedProgress.get(),[0,1],[\"transparent\",selectedBackgroundColor])};}" };
+let closure_18 = { code: "function GuildOnboardingPromptOptionButtonTsx6(){const{useReducedMotion,scale_0}=this.__closure;return useReducedMotion?{}:{transform:[{scale:scale_0.get()}]};}" };
+let closure_19 = { code: "function GuildOnboardingPromptOptionButtonTsx7(){const{selected,withTiming,Easing,useReducedMotion,withSequence,withSpring}=this.__closure;const rawOpacity=selected?1:0;const opacity=withTiming(rawOpacity,{duration:150,easing:Easing.out(Easing.ease)});const rawScale=selected?1:0.7;const scale=useReducedMotion?rawScale:withSequence(withSpring(rawScale*1.2,{stiffness:80,damping:6,mass:0.3}),withSpring(rawScale,{stiffness:80,damping:6,mass:0.3}));return{opacity:opacity,transform:[{scale:scale}]};}" };
+const __initData3 = { code: "function GuildOnboardingPromptOptionButtonTsx8(){const{showMemberCount,withDelay,withTiming,Easing,useReducedMotion}=this.__closure;const rawOpacity_0=showMemberCount?1:0;const opacity_0=withDelay(showMemberCount?400:0,withTiming(rawOpacity_0,{duration:150,easing:Easing.out(Easing.ease)}));const rawTranslate=showMemberCount?0:16;const translateX=useReducedMotion?rawTranslate:withDelay(showMemberCount?400:0,withTiming(rawTranslate,{duration:200,easing:Easing.out(Easing.ease)}));return{opacity:opacity_0,transform:[{translateX:translateX}]};}" };
+const __initData4 = { code: "function GuildOnboardingPromptOptionButtonTsx9(){const{withTiming,selected,SELECTION_TIMING}=this.__closure;return withTiming(selected?1:0,SELECTION_TIMING);}" };
+const __initData5 = { code: "function GuildOnboardingPromptOptionButtonTsx10(){const{withTiming,isNew,SELECTION_TIMING}=this.__closure;return withTiming(isNew?1:0,SELECTION_TIMING);}" };
+const __initData6 = { code: "function GuildOnboardingPromptOptionButtonTsx11(){const{interpolateColor,newProgress,unselectedBorderColor,newBorderColor,selectedProgress,selectedBorderColor,selectedBackgroundColor}=this.__closure;const currentUnselectedBorderColor=interpolateColor(newProgress.get(),[0,1],[unselectedBorderColor,newBorderColor]);return{borderColor:interpolateColor(selectedProgress.get(),[0,1],[currentUnselectedBorderColor,selectedBorderColor]),backgroundColor:interpolateColor(selectedProgress.get(),[0,1],['transparent',selectedBackgroundColor])};}" };
+const __initData7 = { code: "function GuildOnboardingPromptOptionButtonTsx12(){const{useReducedMotion,scale_0}=this.__closure;return useReducedMotion?{}:{transform:[{scale:scale_0.get()}]};}" };
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
+  let closure_8;
+  let emoji4;
+  let first;
+  let first1;
+  let onSelect;
+  let ref;
+  let tmp10;
+  let tmp13;
+  let tmp14;
+  let tmp32;
+  let tmp33;
+  let useReducedMotion;
+  const tmp2 = option;
+  let tmp3 = onSelect;
+  obj = option(onSelect[11]);
+  const cResult = obj.c(85);
+  option = option.option;
+  const selected = option.selected;
+  onSelect = option.onSelect;
+  const suppressMemberCount = option.suppressMemberCount;
+  const canBeNew = option.canBeNew;
+  const guildId = option.guildId;
+  closure_12();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [first1];
+    let num = 0;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  let emoji = option.emoji;
+  let id;
+  const tmp8 = cResult[1];
+  if (emoji != null) {
+    id = emoji.id;
+  }
+  if (tmp8 !== id) {
+    let emoji2 = option.emoji;
+    let id1;
+    if (emoji2 != null) {
+      id1 = emoji2.id;
+    }
+    class B {
+      constructor() {
+        let id;
+        if (option != null) {
+          const emoji = tmp.emoji;
+          if (emoji != null) {
+            id = emoji.id;
+          }
+        }
+        let usableCustomEmojiById = null;
+        if (null != id) {
+          let id1;
+          const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
+          if (option != null) {
+            const emoji2 = tmp.emoji;
+            if (emoji2 != null) {
+              id1 = emoji2.id;
+            }
+          }
+          usableCustomEmojiById = getUsableCustomEmojiById(id1);
+        }
+        return usableCustomEmojiById;
+      }
+    }
+    let num2 = 1;
+    cResult[1] = id1;
+    let num3 = 2;
+    cResult[2] = B;
+    tmp10 = B;
+  } else {
+    tmp10 = cResult[2];
+  }
+  const tmp2Result = tmp2(tmp3[12]);
+  const stateFromStores = tmp2Result.useStateFromStores(first, tmp10);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    let items1 = [AccessibilityStore];
+    class P {
+      constructor() {
+        return useReducedMotion.useReducedMotion;
+      }
+    }
+    let num4 = 3;
+    cResult[3] = items1;
+    cResult[4] = P;
+    tmp14 = P;
+    tmp13 = items1;
+  } else {
+    tmp13 = cResult[3];
+    tmp14 = cResult[4];
+  }
+  const tmp2Result5 = tmp2(tmp3[12]);
+  const stateFromStores1 = tmp2Result5.useStateFromStores(tmp13, tmp14);
+  const tmp2Result6 = tmp2(tmp3[7]);
+  class A {
+    constructor() {
+      let Easing;
+      let items;
+      let num = 0;
+      if (selected) {
+        num = 1;
+      }
+      obj = { duration: 150, easing: Easing.out(ReanimatedRexport.Easing.ease) };
+      const withTiming = timing.withTiming;
+      timing;
+      Easing = ReanimatedRexport.Easing;
+      let num2 = 0.7;
+      const withTimingResult = withTiming(num, obj);
+      if (selected) {
+        num2 = 1;
+      }
+      let withSequenceResult = num2;
+      const obj2 = { opacity: withTimingResult, transform: items };
+      if (!stateFromStores1) {
+        const withSequence = ReanimatedRexport.withSequence;
+        ReanimatedRexport;
+        const tmp2Result3 = spring;
+        const withSpringResult = tmp2Result3.withSpring(1.2 * num2, { stiffness: 80, damping: 6, mass: 0.3 });
+        const tmp2Result4 = spring;
+        withSequenceResult = withSequence(withSpringResult, tmp2Result4.withSpring(num2, { stiffness: 80, damping: 6, mass: 0.3 }));
+      }
+      items = [{ scale: withSequenceResult }];
+      return obj2;
+    }
+  }
+  let obj2 = { selected, withTiming: tmp2(tmp3[13]).withTiming, Easing: tmp2(tmp3[7]).Easing, useReducedMotion: stateFromStores1, withSequence: tmp2(tmp3[7]).withSequence, withSpring: tmp2(tmp3[14]).withSpring };
+  A.__closure = obj2;
+  A.__workletHash = 8281627194581;
+  A.__initData = __initData;
+  const animatedStyle = tmp2Result6.useAnimatedStyle(A);
+  const tmp18 = selected(tmp3[15])(guildId);
+  let closure_5 = tmp18;
+  if (cResult[5] === tmp18) {
+    let tmp19;
+    if (cResult[6] === option.roleIds) {
+      tmp19 = cResult[7];
+    }
+    AccessibilityStore = tmp19;
+    class P {
+      constructor() {
+        return useReducedMotion.useReducedMotion;
+      }
+    }
+    const tmp26 = suppressMemberCount(stateFromStores1.useState(false), 2);
+    first1 = tmp26[0];
+    size = tmp26[1];
+    let closure_9 = stateFromStores1.useRef(null);
+    if (cResult[8] === onSelect) {
+      if (cResult[9] === selected) {
+        let tmp30;
+        let tmp29;
+        if (cResult[12] !== first1) {
+          class Z {
+            constructor() {
+              if (closure_7) {
+                tmp = closure_9;
+                tmp2 = globalThis;
+                _setTimeout = setTimeout;
+                num = 3000;
+                closure_9.current = setTimeout(() => {
+                  closure_1_8(false);
+                  ref.current = null;
+                }, 3000);
+                return () => {
+                  if (null != ref.current) {
+                    const _clearTimeout = clearTimeout;
+                    clearTimeout(tmp.current);
+                  }
+                };
+              } else {
+                return;
+              }
+            }
+          }
+          let items2 = [first1];
+          class P {
+            constructor() {
+              return useReducedMotion.useReducedMotion;
+            }
+          }
+          cResult[12] = first1;
+          class Y {
+            constructor() {
+              if (first1) {
+                if (!ref.current) {
+                  if (useReducedMotion > 0) {
+                    const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                    const announce = AccessibilityAnnouncer.announce;
+                    const intl = intl4.intl;
+                    obj = { memberCount: tmp3 };
+                    announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
+                    tmp2.current = true;
+                  }
+                }
+              }
+              if (!first1) {
+                ref.current = false;
+              }
+            }
+          }
+          cResult[13] = Z;
+          cResult[14] = items2;
+          tmp30 = items2;
+          tmp29 = Z;
+        } else {
+          class Z {
+            constructor() {
+              if (closure_7) {
+                tmp = closure_9;
+                tmp2 = globalThis;
+                _setTimeout = setTimeout;
+                num = 3000;
+                closure_9.current = setTimeout(() => {
+                  closure_1_8(false);
+                  ref.current = null;
+                }, 3000);
+                return () => {
+                  if (null != ref.current) {
+                    const _clearTimeout = clearTimeout;
+                    clearTimeout(tmp.current);
+                  }
+                };
+              } else {
+                return;
+              }
+            }
+          }
+          tmp30 = cResult[14];
+        }
+        const effect = obj6.useEffect(tmp29, tmp30);
+        class P {
+          constructor() {
+            return useReducedMotion.useReducedMotion;
+          }
+        }
+        if (cResult[15] === tmp19) {
+          let title;
+          class Z {
+            constructor() {
+              if (closure_7) {
+                tmp = closure_9;
+                tmp2 = globalThis;
+                _setTimeout = setTimeout;
+                num = 3000;
+                closure_9.current = setTimeout(() => {
+                  closure_1_8(false);
+                  ref.current = null;
+                }, 3000);
+                return () => {
+                  if (null != ref.current) {
+                    const _clearTimeout = clearTimeout;
+                    clearTimeout(tmp.current);
+                  }
+                };
+              } else {
+                return;
+              }
+            }
+          }
+          const effect1 = obj6.useEffect(tmp33, tmp32);
+          const tmp2Result7 = tmp2(tmp3[7]);
+          class P {
+            constructor() {
+              return useReducedMotion.useReducedMotion;
+            }
+          }
+          let obj3 = { showMemberCount: null, withDelay: tmp2(tmp3[7]).withDelay, withTiming: tmp2(tmp3[13]).withTiming, Easing: tmp2(tmp3[7]).Easing, useReducedMotion: stateFromStores1 };
+          class Y {
+            constructor() {
+              if (first1) {
+                if (!ref.current) {
+                  if (useReducedMotion > 0) {
+                    const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                    const announce = AccessibilityAnnouncer.announce;
+                    const intl = intl4.intl;
+                    obj = { memberCount: tmp3 };
+                    announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
+                    tmp2.current = true;
+                  }
+                }
+              }
+              if (!first1) {
+                ref.current = false;
+              }
+            }
+          }
+          const useAnimatedStyle = tmp2Result7.useAnimatedStyle;
+          tmp36.__closure = obj3;
+          class V {
+            constructor() {
+              onSelect(!selected);
+              const tmp = selected;
+              const tmp3 = suppressMemberCount;
+              if (!tmp3) {
+                closure_8(!tmp);
+              }
+            }
+          }
+          tmp36.__workletHash = 6536351943221;
+          tmp36.__initData = __initData2;
+          const animatedStyle1 = useAnimatedStyle(tmp36);
+          const tmp2Result8 = tmp2(tmp3[7]);
+          const sharedValue = tmp2Result8.useSharedValue(1);
+          if (cResult[19] !== sharedValue) {
+            class Z {
+              constructor() {
+                if (closure_7) {
+                  tmp = closure_9;
+                  tmp2 = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 3000;
+                  closure_9.current = setTimeout(() => {
+                    closure_1_8(false);
+                    ref.current = null;
+                  }, 3000);
+                  return () => {
+                    if (null != ref.current) {
+                      const _clearTimeout = clearTimeout;
+                      clearTimeout(tmp.current);
+                    }
+                  };
+                } else {
+                  return;
+                }
+              }
+            }
+            cResult[19] = sharedValue;
+            class P {
+              constructor() {
+                return useReducedMotion.useReducedMotion;
+              }
+            }
+            cResult[20] = tmp40;
+            class Y {
+              constructor() {
+                if (first1) {
+                  if (!ref.current) {
+                    if (useReducedMotion > 0) {
+                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                      const announce = AccessibilityAnnouncer.announce;
+                      const intl = intl4.intl;
+                      obj = { memberCount: tmp3 };
+                      announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
+                      tmp2.current = true;
+                    }
+                  }
+                }
+                if (!first1) {
+                  ref.current = false;
+                }
+              }
+            }
+          } else {
+            class Z {
+              constructor() {
+                if (closure_7) {
+                  tmp = closure_9;
+                  tmp2 = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 3000;
+                  closure_9.current = setTimeout(() => {
+                    closure_1_8(false);
+                    ref.current = null;
+                  }, 3000);
+                  return () => {
+                    if (null != ref.current) {
+                      const _clearTimeout = clearTimeout;
+                      clearTimeout(tmp.current);
+                    }
+                  };
+                } else {
+                  return;
+                }
+              }
+            }
+          }
+          if (cResult[21] !== sharedValue) {
+            class Z {
+              constructor() {
+                if (closure_7) {
+                  tmp = closure_9;
+                  tmp2 = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 3000;
+                  closure_9.current = setTimeout(() => {
+                    closure_1_8(false);
+                    ref.current = null;
+                  }, 3000);
+                  return () => {
+                    if (null != ref.current) {
+                      const _clearTimeout = clearTimeout;
+                      clearTimeout(tmp.current);
+                    }
+                  };
+                } else {
+                  return;
+                }
+              }
+            }
+            cResult[21] = sharedValue;
+            class P {
+              constructor() {
+                return useReducedMotion.useReducedMotion;
+              }
+            }
+            cResult[22] = tmp41;
+            class Y {
+              constructor() {
+                if (first1) {
+                  if (!ref.current) {
+                    if (useReducedMotion > 0) {
+                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                      const announce = AccessibilityAnnouncer.announce;
+                      const intl = intl4.intl;
+                      obj = { memberCount: tmp3 };
+                      announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
+                      tmp2.current = true;
+                    }
+                  }
+                }
+                if (!first1) {
+                  ref.current = false;
+                }
+              }
+            }
+          } else {
+            class Z {
+              constructor() {
+                if (closure_7) {
+                  tmp = closure_9;
+                  tmp2 = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 3000;
+                  closure_9.current = setTimeout(() => {
+                    closure_1_8(false);
+                    ref.current = null;
+                  }, 3000);
+                  return () => {
+                    if (null != ref.current) {
+                      const _clearTimeout = clearTimeout;
+                      clearTimeout(tmp.current);
+                    }
+                  };
+                } else {
+                  return;
+                }
+              }
+            }
+          }
+          closure_12 = canBeNew && option.isUnseen;
+          if (option != null) {
+            class Z {
+              constructor() {
+                if (closure_7) {
+                  tmp = closure_9;
+                  tmp2 = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 3000;
+                  closure_9.current = setTimeout(() => {
+                    closure_1_8(false);
+                    ref.current = null;
+                  }, 3000);
+                  return () => {
+                    if (null != ref.current) {
+                      const _clearTimeout = clearTimeout;
+                      clearTimeout(tmp.current);
+                    }
+                  };
+                } else {
+                  return;
+                }
+              }
+            }
+            if (tmp43 != null) {
+              class Z {
+                constructor() {
+                  if (closure_7) {
+                    tmp = closure_9;
+                    tmp2 = globalThis;
+                    _setTimeout = setTimeout;
+                    num = 3000;
+                    closure_9.current = setTimeout(() => {
+                      closure_1_8(false);
+                      ref.current = null;
+                    }, 3000);
+                    return () => {
+                      if (null != ref.current) {
+                        const _clearTimeout = clearTimeout;
+                        clearTimeout(tmp.current);
+                      }
+                    };
+                  } else {
+                    return;
+                  }
+                }
+              }
+            }
+          }
+          let tmp44 = null != tmp42;
+          if (!tmp44) {
+            class Z {
+              constructor() {
+                if (closure_7) {
+                  tmp = closure_9;
+                  tmp2 = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 3000;
+                  closure_9.current = setTimeout(() => {
+                    closure_1_8(false);
+                    ref.current = null;
+                  }, 3000);
+                  return () => {
+                    if (null != ref.current) {
+                      const _clearTimeout = clearTimeout;
+                      clearTimeout(tmp.current);
+                    }
+                  };
+                } else {
+                  return;
+                }
+              }
+            }
+            if (option != null) {
+              class Z {
+                constructor() {
+                  if (closure_7) {
+                    tmp = closure_9;
+                    tmp2 = globalThis;
+                    _setTimeout = setTimeout;
+                    num = 3000;
+                    closure_9.current = setTimeout(() => {
+                      closure_1_8(false);
+                      ref.current = null;
+                    }, 3000);
+                    return () => {
+                      if (null != ref.current) {
+                        const _clearTimeout = clearTimeout;
+                        clearTimeout(tmp.current);
+                      }
+                    };
+                  } else {
+                    return;
+                  }
+                }
+              }
+              if (tmp46 != null) {
+                class Z {
+                  constructor() {
+                    if (closure_7) {
+                      tmp = closure_9;
+                      tmp2 = globalThis;
+                      _setTimeout = setTimeout;
+                      num = 3000;
+                      closure_9.current = setTimeout(() => {
+                        closure_1_8(false);
+                        ref.current = null;
+                      }, 3000);
+                      return () => {
+                        if (null != ref.current) {
+                          const _clearTimeout = clearTimeout;
+                          clearTimeout(tmp.current);
+                        }
+                      };
+                    } else {
+                      return;
+                    }
+                  }
+                }
+              }
+            }
+            tmp44 = null != tmp45;
+          }
+          const emoji3 = option.emoji;
+          if (cResult[23] === tmp44) {
+            class Z {
+              constructor() {
+                if (closure_7) {
+                  tmp = closure_9;
+                  tmp2 = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 3000;
+                  closure_9.current = setTimeout(() => {
+                    closure_1_8(false);
+                    ref.current = null;
+                  }, 3000);
+                  return () => {
+                    if (null != ref.current) {
+                      const _clearTimeout = clearTimeout;
+                      clearTimeout(tmp.current);
+                    }
+                  };
+                } else {
+                  return;
+                }
+              }
+            }
+          }
+          if (tmp44) {
+            class Z {
+              constructor() {
+                if (closure_7) {
+                  tmp = closure_9;
+                  tmp2 = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 3000;
+                  closure_9.current = setTimeout(() => {
+                    closure_1_8(false);
+                    ref.current = null;
+                  }, 3000);
+                  return () => {
+                    if (null != ref.current) {
+                      const _clearTimeout = clearTimeout;
+                      clearTimeout(tmp.current);
+                    }
+                  };
+                } else {
+                  return;
+                }
+              }
+            }
+            if (tmp48 != null) {
+              class Z {
+                constructor() {
+                  if (closure_7) {
+                    tmp = closure_9;
+                    tmp2 = globalThis;
+                    _setTimeout = setTimeout;
+                    num = 3000;
+                    closure_9.current = setTimeout(() => {
+                      closure_1_8(false);
+                      ref.current = null;
+                    }, 3000);
+                    return () => {
+                      if (null != ref.current) {
+                        const _clearTimeout = clearTimeout;
+                        clearTimeout(tmp.current);
+                      }
+                    };
+                  } else {
+                    return;
+                  }
+                }
+              }
+            }
+            class P {
+              constructor() {
+                return useReducedMotion.useReducedMotion;
+              }
+            }
+            class Y {
+              constructor() {
+                if (first1) {
+                  if (!ref.current) {
+                    if (useReducedMotion > 0) {
+                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                      const announce = AccessibilityAnnouncer.announce;
+                      const intl = intl4.intl;
+                      obj = { memberCount: tmp3 };
+                      announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
+                      tmp2.current = true;
+                    }
+                  }
+                }
+                if (!first1) {
+                  ref.current = false;
+                }
+              }
+            }
+            if (null != option.description) {
+              class Z {
+                constructor() {
+                  if (closure_7) {
+                    tmp = closure_9;
+                    tmp2 = globalThis;
+                    _setTimeout = setTimeout;
+                    num = 3000;
+                    closure_9.current = setTimeout(() => {
+                      closure_1_8(false);
+                      ref.current = null;
+                    }, 3000);
+                    return () => {
+                      if (null != ref.current) {
+                        const _clearTimeout = clearTimeout;
+                        clearTimeout(tmp.current);
+                      }
+                    };
+                  } else {
+                    return;
+                  }
+                }
+              }
+              if (option.description.length > 0) {
+                class Z {
+                  constructor() {
+                    if (closure_7) {
+                      tmp = closure_9;
+                      tmp2 = globalThis;
+                      _setTimeout = setTimeout;
+                      num = 3000;
+                      closure_9.current = setTimeout(() => {
+                        closure_1_8(false);
+                        ref.current = null;
+                      }, 3000);
+                      return () => {
+                        if (null != ref.current) {
+                          const _clearTimeout = clearTimeout;
+                          clearTimeout(tmp.current);
+                        }
+                      };
+                    } else {
+                      return;
+                    }
+                  }
+                }
+                const formatToPlainString2 = tmp50.formatToPlainString;
+                let obj4 = { emojiName: null, title: option.title, description: null };
+                class P {
+                  constructor() {
+                    return useReducedMotion.useReducedMotion;
+                  }
+                }
+                class Y {
+                  constructor() {
+                    if (first1) {
+                      if (!ref.current) {
+                        if (useReducedMotion > 0) {
+                          const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                          const announce = AccessibilityAnnouncer.announce;
+                          const intl = intl4.intl;
+                          obj = { memberCount: tmp3 };
+                          announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
+                          tmp2.current = true;
+                        }
+                      }
+                    }
+                    if (!first1) {
+                      ref.current = false;
+                    }
+                  }
+                }
+                title = formatToPlainString2(tmp2(tmp3[17]).t.nSzqkg, obj4);
+              }
+            }
+            const formatToPlainString = tmp2(tmp3[17]).intl.formatToPlainString;
+            class V {
+              constructor() {
+                onSelect(!selected);
+                const tmp = selected;
+                const tmp3 = suppressMemberCount;
+                if (!tmp3) {
+                  closure_8(!tmp);
+                }
+              }
+            }
+          } else {
+            class Z {
+              constructor() {
+                if (closure_7) {
+                  tmp = closure_9;
+                  tmp2 = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 3000;
+                  closure_9.current = setTimeout(() => {
+                    closure_1_8(false);
+                    ref.current = null;
+                  }, 3000);
+                  return () => {
+                    if (null != ref.current) {
+                      const _clearTimeout = clearTimeout;
+                      clearTimeout(tmp.current);
+                    }
+                  };
+                } else {
+                  return;
+                }
+              }
+            }
+            title = option.title;
+          }
+          cResult[23] = tmp44;
+          ({ description: tmp4[24], emoji: emoji4 } = option);
+          if (emoji4 != null) {
+            class Z {
+              constructor() {
+                if (closure_7) {
+                  tmp = closure_9;
+                  tmp2 = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 3000;
+                  closure_9.current = setTimeout(() => {
+                    closure_1_8(false);
+                    ref.current = null;
+                  }, 3000);
+                  return () => {
+                    if (null != ref.current) {
+                      const _clearTimeout = clearTimeout;
+                      clearTimeout(tmp.current);
+                    }
+                  };
+                } else {
+                  return;
+                }
+              }
+            }
+          }
+          class A {
+            constructor() {
+              let Easing;
+              let items;
+              let num = 0;
+              if (selected) {
+                num = 1;
+              }
+              obj = { duration: 150, easing: Easing.out(ReanimatedRexport.Easing.ease) };
+              const withTiming = timing.withTiming;
+              timing;
+              Easing = ReanimatedRexport.Easing;
+              let num2 = 0.7;
+              const withTimingResult = withTiming(num, obj);
+              if (selected) {
+                num2 = 1;
+              }
+              let withSequenceResult = num2;
+              const obj2 = { opacity: withTimingResult, transform: items };
+              if (!stateFromStores1) {
+                const withSequence = ReanimatedRexport.withSequence;
+                ReanimatedRexport;
+                const tmp2Result3 = spring;
+                const withSpringResult = tmp2Result3.withSpring(1.2 * num2, { stiffness: 80, damping: 6, mass: 0.3 });
+                const tmp2Result4 = spring;
+                withSequenceResult = withSequence(withSpringResult, tmp2Result4.withSpring(num2, { stiffness: 80, damping: 6, mass: 0.3 }));
+              }
+              items = [{ scale: withSequenceResult }];
+              return obj2;
+            }
+          }
+          cResult[25] = undefined;
+          cResult[26] = option.title;
+          cResult[27] = title;
+        }
+        class Y {
+          constructor() {
+            if (first1) {
+              if (!ref.current) {
+                if (useReducedMotion > 0) {
+                  const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                  const announce = AccessibilityAnnouncer.announce;
+                  const intl = intl4.intl;
+                  obj = { memberCount: tmp3 };
+                  announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
+                  tmp2.current = true;
+                }
+              }
+            }
+            if (!first1) {
+              ref.current = false;
+            }
+          }
+        }
+        const items3 = [first1, tmp19];
+        cResult[15] = tmp19;
+        class V {
+          constructor() {
+            onSelect(!selected);
+            const tmp = selected;
+            const tmp3 = suppressMemberCount;
+            if (!tmp3) {
+              closure_8(!tmp);
+            }
+          }
+        }
+        cResult[17] = items3;
+        cResult[18] = Y;
+        tmp32 = items3;
+        tmp33 = Y;
+      }
+    }
+    class V {
+      constructor() {
+        onSelect(!selected);
+        const tmp = selected;
+        const tmp3 = suppressMemberCount;
+        if (!tmp3) {
+          closure_8(!tmp);
+        }
+      }
+    }
+    cResult[8] = onSelect;
+    cResult[9] = selected;
+    cResult[10] = suppressMemberCount;
+    cResult[11] = V;
+  }
+  let num6 = 0;
+  if (null != tmp18) {
+    class Z {
+      constructor() {
+        if (closure_7) {
+          tmp = closure_9;
+          tmp2 = globalThis;
+          _setTimeout = setTimeout;
+          num = 3000;
+          closure_9.current = setTimeout(() => {
+            closure_1_8(false);
+            ref.current = null;
+          }, 3000);
+          return () => {
+            if (null != ref.current) {
+              const _clearTimeout = clearTimeout;
+              clearTimeout(tmp.current);
+            }
+          };
+        } else {
+          return;
+        }
+      }
+    }
+    if (null != option.roleIds) {
+      class Z {
+        constructor() {
+          if (closure_7) {
+            tmp = closure_9;
+            tmp2 = globalThis;
+            _setTimeout = setTimeout;
+            num = 3000;
+            closure_9.current = setTimeout(() => {
+              closure_1_8(false);
+              ref.current = null;
+            }, 3000);
+            return () => {
+              if (null != ref.current) {
+                const _clearTimeout = clearTimeout;
+                clearTimeout(tmp.current);
+              }
+            };
+          } else {
+            return;
+          }
+        }
+      }
+      const roleIds = option.roleIds;
+      class P {
+        constructor() {
+          return useReducedMotion.useReducedMotion;
+        }
+      }
+      class Y {
+        constructor() {
+          if (first1) {
+            if (!ref.current) {
+              if (useReducedMotion > 0) {
+                const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                const announce = AccessibilityAnnouncer.announce;
+                const intl = intl4.intl;
+                obj = { memberCount: tmp3 };
+                announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
+                tmp2.current = true;
+              }
+            }
+          }
+          if (!first1) {
+            ref.current = false;
+          }
+        }
+      }
+      HermesBuiltin.arraySpread(tmp20, roleIds.map((item) => closure_5[item]), 0);
+      const _Math = Math;
+      num6 = HermesBuiltin.apply(max, tmp20, Math);
+    }
+  }
+  cResult[5] = tmp18;
+  cResult[6] = option.roleIds;
+  cResult[7] = num6;
+  tmp19 = num6;
+}) : ((option) => {
   let CheckmarkSmallIcon;
   let Text;
   let accessibilityRole;
   let accessibilityState;
   let canBeNew;
-  let closure_13;
   let closure_8;
   let emojiURL;
   let intl;
@@ -86,7 +1065,7 @@ export default function PromptOptionButton(option) {
   let ref;
   let sharedValue;
   closure_12 = undefined;
-  __initData = undefined;
+  let closure_13;
   let token;
   let token1;
   let token2;
@@ -123,8 +1102,8 @@ export default function PromptOptionButton(option) {
   let obj2 = option(504);
   let items1 = [num];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => num.useReducedMotion);
-  let obj3 = option(4566);
-  class R {
+  let obj3 = option(4570);
+  class S {
     constructor() {
       let Easing;
       let items;
@@ -155,12 +1134,12 @@ export default function PromptOptionButton(option) {
       return obj2;
     }
   }
-  let obj4 = { selected, withTiming: option(4837).withTiming, Easing: option(4566).Easing, useReducedMotion: stateFromStores1, withSequence: option(4566).withSequence, withSpring: option(5280).withSpring };
-  R.__closure = obj4;
-  R.__workletHash = 8281627194581;
-  R.__initData = __initData;
-  const animatedStyle = obj3.useAnimatedStyle(R);
-  const tmp9 = selected(6548)(guildId);
+  let obj4 = { selected, withTiming: option(4838).withTiming, Easing: option(4570).Easing, useReducedMotion: stateFromStores1, withSequence: option(4570).withSequence, withSpring: option(5281).withSpring };
+  S.__closure = obj4;
+  S.__workletHash = 8205438722579;
+  S.__initData = derivedValue1;
+  const animatedStyle = obj3.useAnimatedStyle(S);
+  const tmp9 = selected(6549)(guildId);
   closure_5 = tmp9;
   num = 0;
   if (null != tmp9) {
@@ -214,7 +1193,7 @@ export default function PromptOptionButton(option) {
     }
   }, items4);
   const tmp15 = stateFromStores1;
-  const tmp3Result = tmp3(4566);
+  const tmp3Result = tmp3(4570);
   class V {
     constructor() {
       let Easing;
@@ -233,7 +1212,7 @@ export default function PromptOptionButton(option) {
       obj = { duration: 150, easing: Easing.out(ReanimatedRexport.Easing.ease) };
       const withTiming = timing.withTiming;
       timing;
-      Easing = tmp2(4566).Easing;
+      Easing = tmp2(4570).Easing;
       let num3 = 16;
       const withDelayResult = withDelay(num2, withTiming(num, obj));
       if (first) {
@@ -251,19 +1230,19 @@ export default function PromptOptionButton(option) {
         const obj3 = { duration: 200, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
         const withTiming2 = timing.withTiming;
         timing;
-        Easing2 = tmp2(4566).Easing;
+        Easing2 = tmp2(4570).Easing;
         withDelay2Result = withDelay2(num4, withTiming2(num3, obj3));
       }
       items = [{ translateX: withDelay2Result }];
       return obj2;
     }
   }
-  let obj5 = { showMemberCount, withDelay: tmp3(4566).withDelay, withTiming: tmp3(4837).withTiming, Easing: tmp3(4566).Easing, useReducedMotion: stateFromStores1 };
+  let obj5 = { showMemberCount, withDelay: tmp3(4570).withDelay, withTiming: tmp3(4838).withTiming, Easing: tmp3(4570).Easing, useReducedMotion: stateFromStores1 };
   V.__closure = obj5;
-  V.__workletHash = 9518487706997;
-  V.__initData = token;
+  V.__workletHash = 10755800239871;
+  V.__initData = __initData3;
   const animatedStyle1 = tmp3Result.useAnimatedStyle(V);
-  const tmp3Result11 = tmp3(4566);
+  const tmp3Result11 = tmp3(4570);
   sharedValue = tmp3Result11.useSharedValue(1);
   closure_12 = tmp22;
   let id;
@@ -284,7 +1263,7 @@ export default function PromptOptionButton(option) {
     }
     tmp24 = null != name;
   }
-  __initData = tmp24;
+  closure_13 = tmp24;
   const items5 = [tmp24, , , ];
   const emoji3 = option.emoji;
   let name1;
@@ -332,14 +1311,14 @@ export default function PromptOptionButton(option) {
       title = tmp.title;
     }
   }, items5);
-  const tmp3Result12 = tmp3(4531);
-  token = tmp3Result12.useToken(tmp8(576).colors.BORDER_SUBTLE);
-  const tmp3Result13 = tmp3(4531);
-  token1 = tmp3Result13.useToken(tmp8(576).colors.BACKGROUND_BRAND);
-  const tmp3Result14 = tmp3(4531);
-  token2 = tmp3Result14.useToken(tmp8(576).colors.BORDER_STRONG);
-  const tmp3Result15 = tmp3(4531);
-  token3 = tmp3Result15.useToken(tmp8(576).colors.BACKGROUND_BASE_LOWEST);
+  const tmp3Result12 = tmp3(4535);
+  token = tmp3Result12.useToken(tmp8(588).colors.BORDER_SUBTLE);
+  const tmp3Result13 = tmp3(4535);
+  token1 = tmp3Result13.useToken(tmp8(588).colors.BACKGROUND_BRAND);
+  const tmp3Result14 = tmp3(4535);
+  token2 = tmp3Result14.useToken(tmp8(588).colors.BORDER_STRONG);
+  const tmp3Result15 = tmp3(4535);
+  token3 = tmp3Result15.useToken(tmp8(588).colors.BACKGROUND_BASE_LOWEST);
   const fn = function q() {
     num = 0;
     const withTiming = timing.withTiming;
@@ -349,29 +1328,31 @@ export default function PromptOptionButton(option) {
     }
     return withTiming(num, obj);
   };
-  const tmp3Result16 = tmp3(4566);
-  fn.__closure = { withTiming: tmp3(4837).withTiming, selected, SELECTION_TIMING: sharedValue };
-  fn.__workletHash = 11553377214675;
-  fn.__initData = token1;
-  ({ withTiming: tmp3(4837).withTiming, selected, SELECTION_TIMING: sharedValue });
+  const tmp3Result16 = tmp3(4570);
+  fn.__closure = { withTiming: tmp3(4838).withTiming, selected, SELECTION_TIMING: sharedValue };
+  fn.__workletHash = 12520862943769;
+  fn.__initData = __initData4;
+  ({ withTiming: tmp3(4838).withTiming, selected, SELECTION_TIMING: sharedValue });
   derivedValue = tmp3Result16.useDerivedValue(fn);
-  const fn2 = function z() {
-    num = 0;
-    const withTiming = timing.withTiming;
-    timing;
-    if (closure_12) {
-      num = 1;
-    }
-    return withTiming(num, obj);
-  };
-  const tmp3Result17 = tmp3(4566);
-  fn2.__closure = { withTiming: tmp3(4837).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue };
-  fn2.__workletHash = 9359578148244;
-  fn2.__initData = token2;
-  ({ withTiming: tmp3(4837).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue });
-  derivedValue1 = tmp3Result17.useDerivedValue(fn2);
-  const tmp3Result18 = tmp3(4566);
+  const tmp3Result17 = tmp3(4570);
   class W {
+    constructor() {
+      num = 0;
+      const withTiming = timing.withTiming;
+      timing;
+      if (closure_12) {
+        num = 1;
+      }
+      return withTiming(num, obj);
+    }
+  }
+  W.__closure = { withTiming: tmp3(4838).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue };
+  W.__workletHash = 6695066984001;
+  W.__initData = __initData5;
+  ({ withTiming: tmp3(4838).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue });
+  derivedValue1 = tmp3Result17.useDerivedValue(W);
+  const tmp3Result18 = tmp3(4570);
+  class X {
     constructor() {
       let items1;
       let items2;
@@ -388,36 +1369,34 @@ export default function PromptOptionButton(option) {
       return obj2;
     }
   }
-  W.__closure = { interpolateColor: tmp3(4566).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 };
-  W.__workletHash = 1340353593596;
-  W.__initData = token3;
-  ({ interpolateColor: tmp3(4566).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 });
-  const animatedStyle2 = tmp3Result18.useAnimatedStyle(W);
-  const tmp3Result19 = tmp3(4566);
-  class K {
-    constructor() {
-      let items;
-      const tmp = stateFromStores1;
-      if (tmp) {
-        obj = {};
-      } else {
-        obj = { transform: items };
-        items = [{ scale: sharedValue.get() }];
-        const obj2 = { scale: sharedValue.get() };
-      }
-      return obj;
+  X.__closure = { interpolateColor: tmp3(4570).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 };
+  X.__workletHash = 11103701630825;
+  X.__initData = __initData6;
+  ({ interpolateColor: tmp3(4570).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 });
+  const animatedStyle2 = tmp3Result18.useAnimatedStyle(X);
+  const fn2 = function z() {
+    let items;
+    const tmp = stateFromStores1;
+    if (tmp) {
+      obj = {};
+    } else {
+      obj = { transform: items };
+      items = [{ scale: sharedValue.get() }];
+      const obj2 = { scale: sharedValue.get() };
     }
-  }
-  K.__closure = { useReducedMotion: stateFromStores1, scale: sharedValue };
-  K.__workletHash = 11083046243451;
-  K.__initData = derivedValue;
-  const animatedStyle3 = tmp3Result19.useAnimatedStyle(K);
-  const tmp3Result20 = tmp3(4548);
+    return obj;
+  };
+  fn2.__closure = { useReducedMotion: stateFromStores1, scale_0: sharedValue };
+  fn2.__workletHash = 15537308682382;
+  fn2.__initData = __initData7;
+  const tmp3Result19 = tmp3(4570);
+  const animatedStyle3 = tmp3Result19.useAnimatedStyle(fn2);
+  const tmp3Result20 = tmp3(4552);
   const checkboxA11yNative = tmp3Result20.useCheckboxA11yNative({ checked: selected });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   const obj9 = { style: items6, children: items10 };
   items6 = [tmp2.container, animatedStyle3, animatedStyle2];
-  View = tmp8(4566).View;
+  View = tmp8(4570).View;
   const obj10 = {
     activeOpacity: 0.6,
     style: items7,
@@ -458,7 +1437,7 @@ export default function PromptOptionButton(option) {
   };
   items7 = [tmp2.optionButton];
   let id1;
-  const PressableOpacity = tmp3(5435).PressableOpacity;
+  const PressableOpacity = tmp3(5436).PressableOpacity;
   if (option != null) {
     const emoji4 = option.emoji;
     if (emoji4 != null) {
@@ -482,11 +1461,11 @@ export default function PromptOptionButton(option) {
     ({ optionTextEmoji: obj23.textEmojiStyle, optionImageEmoji: obj23.fastImageStyle } = tmp2);
     emojiURL = undefined;
     const tmp42 = closure_5;
-    tmp8Result = selected(6551);
+    tmp8Result = selected(6552);
     if (null != stateFromStores) {
       const obj13 = { id: null, animated: null, size };
       ({ id: obj25.id, animated: obj25.animated } = stateFromStores);
-      const tmp8Result2 = selected(1397);
+      const tmp8Result2 = selected(1403);
       emojiURL = tmp8Result2.getEmojiURL(obj13);
     }
     str = undefined;
@@ -505,12 +1484,12 @@ export default function PromptOptionButton(option) {
   const obj14 = { style: tmp2.optionText, children: items9 };
   items9 = [, ];
   const obj15 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: option.title };
-  items9[0] = closure_9(tmp3(4832).Text, obj15);
+  items9[0] = closure_9(tmp3(4833).Text, obj15);
   let tmp47Result = null != option.description && option.description.length > 0;
   const tmp46 = closure_5;
   if (tmp47Result) {
     const obj16 = { variant: "text-xs/medium", color: "text-default", children: option.description };
-    tmp47Result = tmp47(tmp3(4832).Text, obj16);
+    tmp47Result = tmp47(tmp3(4833).Text, obj16);
   }
   items9[1] = tmp47Result;
   items8[1] = ref(tmp46, obj14);
@@ -519,19 +1498,19 @@ export default function PromptOptionButton(option) {
   if (num > 0) {
     const obj17 = { accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, style: items11, children: closure_9(Text, obj18) };
     items11 = [tmp2.roleCount, animatedStyle1];
-    const View2 = tmp8(4566).View;
-    obj18 = { variant: "text-xs/semibold", color: "text-overlay-light", children: intl.format(tmp3(1115).t.EgKsZA, obj19) };
-    Text = tmp3(4832).Text;
-    intl = tmp3(1115).intl;
+    const View2 = tmp8(4570).View;
+    obj18 = { variant: "text-xs/semibold", color: "text-overlay-light", children: intl.format(tmp3(1127).t.EgKsZA, obj19) };
+    Text = tmp3(4833).Text;
+    intl = tmp3(1127).intl;
     obj19 = { memberCount: num };
     tmp47Result2 = tmp47(View2, obj17);
   }
   items10[1] = tmp47Result2;
   const obj20 = { style: items12, children: closure_9(CheckmarkSmallIcon, obj21) };
   items12 = [tmp2.checkIcon, animatedStyle];
-  const View3 = tmp8(4566).View;
-  obj21 = { size: "xs", color: selected(576).colors.WHITE };
-  CheckmarkSmallIcon = tmp3(6554).CheckmarkSmallIcon;
+  const View3 = tmp8(4570).View;
+  obj21 = { size: "xs", color: selected(588).colors.WHITE };
+  CheckmarkSmallIcon = tmp3(6555).CheckmarkSmallIcon;
   items10[2] = closure_9(View3, obj20);
   if (canBeNew) {
     canBeNew = !selected;
@@ -540,12 +1519,16 @@ export default function PromptOptionButton(option) {
     canBeNew = option.isUnseen;
   }
   if (canBeNew) {
-    const obj22 = { color: tmp3(1177).BadgeColors.BRAND, text: intl2.string(tmp3(1115).t.y2b7CA), style: null, textStyle: null };
-    const TextBadge = tmp3(1177).TextBadge;
-    intl2 = tmp3(1115).intl;
+    const obj22 = { color: tmp3(1189).BadgeColors.BRAND, text: intl2.string(tmp3(1127).t.y2b7CA), style: null, textStyle: null };
+    const TextBadge = tmp3(1189).TextBadge;
+    intl2 = tmp3(1127).intl;
     ({ newBadgeWrapper: obj34.style, newBadge: obj34.textStyle } = tmp2);
     canBeNew = tmp47(TextBadge, obj22);
   }
   items10[3] = canBeNew;
   return ref(View, obj9);
-};
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingPromptOptionButton.tsx");
+
+export default tmp4;

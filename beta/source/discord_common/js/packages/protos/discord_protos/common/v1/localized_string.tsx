@@ -1,16 +1,16 @@
-// Module ID: 10133
-// Function ID: 10134
+// Module ID: 10172
+// Function ID: 10173
 // Name: localized_string
-// Dependencies: [32, 1187, 2]
+// Dependencies: [32, 1199, 2]
 
-// Module 10133 (localized_string)
-import _mod1187 from "module_1187" /* 1187 */;
+// Module 10172 (localized_string)
+import _mod1199 from "module_1199" /* 1199 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp2;
-const MessageType = _mod1187.MessageType;
+const MessageType = _mod1199.MessageType;
 class LocalizedString$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "default", kind: "scalar", T: 9 }, { no: 2, name: "localizations", kind: "map", K: 9, V: { kind: "scalar", T: 9 } }];
@@ -21,9 +21,9 @@ class LocalizedString$Type extends MessageType {
     const obj = { default: "", localizations: {} };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -62,7 +62,7 @@ class LocalizedString$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -114,18 +114,18 @@ class LocalizedString$Type extends MessageType {
   }
   internalBinaryWrite(localizations, tag, writeUnknownFields) {
     if ("" !== localizations.default) {
-      const tagResult = tag.tag(1, _mod1187.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1199.WireType.LengthDelimited);
       tagResult.string(localizations.default);
     }
     const keys = Object.keys(localizations.localizations);
     const iter = keys[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      let tagResult1 = tag.tag(2, _mod1187.WireType.LengthDelimited);
+      let tagResult1 = tag.tag(2, _mod1199.WireType.LengthDelimited);
       let forkResult = tagResult1.fork();
-      let tagResult2 = forkResult.tag(1, _mod1187.WireType.LengthDelimited);
+      let tagResult2 = forkResult.tag(1, _mod1199.WireType.LengthDelimited);
       let stringResult1 = tagResult2.string(nextResult);
-      let tagResult3 = stringResult1.tag(2, _mod1187.WireType.LengthDelimited);
+      let tagResult3 = stringResult1.tag(2, _mod1199.WireType.LengthDelimited);
       let stringResult2 = tagResult3.string(localizations.localizations[nextResult]);
       let joined = stringResult2.join();
       continue;
@@ -133,7 +133,7 @@ class LocalizedString$Type extends MessageType {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, localizations, tag);
@@ -144,7 +144,7 @@ class LocalizedString$Type extends MessageType {
 const prototype = LocalizedString$Type.prototype;
 let items = [{ no: 1, name: "default", kind: "scalar", T: 9 }, { no: 2, name: "localizations", kind: "map", K: 9, V: { kind: "scalar", T: 9 } }];
 const object = new Object("discord_protos.common.v1.LocalizedString", items, tmp2, "create", "internalBinaryRead", "binaryReadMap2", tmp, "internalBinaryWrite");
-const MessageType2 = _mod1187.MessageType;
+const MessageType2 = _mod1199.MessageType;
 class LocalizedSnowflake$Type extends MessageType2 {
   constructor() {
     const items = [{ no: 1, name: "default", kind: "scalar", T: 6 }, { no: 2, name: "localizations", kind: "map", K: 9, V: { kind: "scalar", T: 6 } }];
@@ -155,9 +155,9 @@ class LocalizedSnowflake$Type extends MessageType2 {
     const obj = { default: "0", localizations: {} };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -197,7 +197,7 @@ class LocalizedSnowflake$Type extends MessageType2 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -250,18 +250,18 @@ class LocalizedSnowflake$Type extends MessageType2 {
   }
   internalBinaryWrite(localizations, tag, writeUnknownFields) {
     if ("0" !== localizations.default) {
-      const tagResult = tag.tag(1, _mod1187.WireType.Bit64);
+      const tagResult = tag.tag(1, _mod1199.WireType.Bit64);
       tagResult.fixed64(localizations.default);
     }
     const keys = Object.keys(localizations.localizations);
     const iter = keys[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      let tagResult1 = tag.tag(2, _mod1187.WireType.LengthDelimited);
+      let tagResult1 = tag.tag(2, _mod1199.WireType.LengthDelimited);
       let forkResult = tagResult1.fork();
-      let tagResult2 = forkResult.tag(1, _mod1187.WireType.LengthDelimited);
+      let tagResult2 = forkResult.tag(1, _mod1199.WireType.LengthDelimited);
       let stringResult = tagResult2.string(nextResult);
-      let tagResult3 = stringResult.tag(2, _mod1187.WireType.Bit64);
+      let tagResult3 = stringResult.tag(2, _mod1199.WireType.Bit64);
       let fixed64Result1 = tagResult3.fixed64(localizations.localizations[nextResult]);
       let joined = fixed64Result1.join();
       continue;
@@ -269,7 +269,7 @@ class LocalizedSnowflake$Type extends MessageType2 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, localizations, tag);

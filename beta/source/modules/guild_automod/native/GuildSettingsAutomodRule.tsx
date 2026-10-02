@@ -1,26 +1,26 @@
-// Module ID: 17322
-// Function ID: 17323
+// Module ID: 17324
+// Function ID: 17325
 // Name: GuildSettingsAutomodRule
-// Dependencies: [5, 32, 19, 17306, 17308, 11341, 21, 4836, 576, 1485, 16655, 2021, 17309, 5209, 1115, 5936, 6795, 8053, 5279, 4832, 6024, 6621, 17323, 17334, 17337, 5999, 5917, 11346, 4527, 4735, 6610, 6461, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17308, 17310, 11216, 21, 4837, 588, 558, 576, 1491, 16657, 2027, 17311, 5210, 1127, 5933, 6796, 11221, 4530, 4737, 6611, 4833, 6021, 6621, 17325, 17336, 17339, 5997, 5916, 5280, 8057, 6461, 2]
 
-// Module 17322 (GuildSettingsAutomodRule)
-import nativeDefault from "native" /* 576 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 5936 */;
-import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import Constants from "Constants" /* 11341 */;
-import AutomodStore from "AutomodStore" /* 17306 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17309 */;
+// Module 17324 (GuildSettingsAutomodRule)
+import nativeDefault from "native" /* 588 */;
+import ToastUtils from "ToastUtils" /* 4530 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 5933 */;
+import ClipboardUtils from "ClipboardUtils" /* 6611 */;
+import Constants from "Constants" /* 11216 */;
+import AutomodStore from "AutomodStore" /* 17308 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 17311 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 17308 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 17310 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3, c5, c6, closure_3, navigation;
+let c2, c3, c5, c6, closure_3, navigation, ref;
 
 let c10;
 let closure_12;
@@ -33,12 +33,217 @@ const useAutomodRulesList = AutomodStore.useAutomodRulesList;
 const MAX_RULE_NAME_LENGTH = Constants.MAX_RULE_NAME_LENGTH;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
 let c13 = "automod-delete-rule";
+let c14 = "automod-unsaved-changes";
 let obj = { stack: obj2 };
 obj2 = { marginTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
-let closure_14 = createStyles.createStyles(obj);
-let result = size.fileFinishedImporting("modules/guild_automod/native/GuildSettingsAutomodRule.tsx");
-
-export default function GuildSettingsAutomodRule(guildId) {
+let closure_15 = createStyles.createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let contentContainerStyle;
+  let errorMessage;
+  let isLoading;
+  let key;
+  let rulesByTriggerType;
+  let setEditingRule;
+  let tmp11;
+  let tmp14;
+  let tmp15;
+  let tmp17;
+  let tmp18;
+  let tmp21;
+  let tmp22;
+  let tmp23;
+  let triggerType;
+  let updateRule;
+  let tmp = guildId;
+  let tmp2 = updateRule;
+  let obj = guildId(updateRule[10]);
+  const cResult = obj.c(76);
+  guildId = guildId.guildId;
+  ({ triggerType, contentContainerStyle } = guildId);
+  let tmp4 = closure_15();
+  let obj2 = guildId(updateRule[11]);
+  navigation = obj2.useNavigation();
+  const tmp6 = setEditingRule(guildId);
+  ({ rulesByTriggerType, updateRule } = tmp6);
+  const removeRule = tmp6.removeRule;
+  const tmp7 = errorMessage();
+  const editingRule = tmp7.editingRule;
+  const hasChanges = tmp7.hasChanges;
+  setEditingRule = tmp7.setEditingRule;
+  const tmp8 = isLoading();
+  isLoading = tmp8.isLoading;
+  errorMessage = tmp8.errorMessage;
+  const saveEditingRule = tmp8.saveEditingRule;
+  const cancelEditingRule = tmp8.cancelEditingRule;
+  let obj3 = guildId(updateRule[12]);
+  const isUndeletableMentionSpamRule = obj3.useIsUndeletableMentionSpamRule(guildId, triggerType);
+  const DeveloperMode = guildId(updateRule[13]).DeveloperMode;
+  const setting = DeveloperMode.useSetting();
+  if (cResult[0] !== rulesByTriggerType) {
+    const tmpResult = tmp(tmp2[14]);
+    const rulesFromTriggerTypeMap = tmpResult.getRulesFromTriggerTypeMap(rulesByTriggerType);
+    cResult[0] = rulesByTriggerType;
+    cResult[1] = rulesFromTriggerTypeMap;
+    tmp11 = rulesFromTriggerTypeMap;
+  } else {
+    tmp11 = cResult[1];
+  }
+  closure_12 = tmp11;
+  let obj5 = hasChanges;
+  ref = hasChanges.useRef(null);
+  if (cResult[2] !== errorMessage) {
+    class Y {
+      constructor() {
+        if (null != errorMessage) {
+          const current = ref.current;
+          if (current != null) {
+            current.scrollTo({ y: 0, animated: true });
+          }
+        }
+      }
+    }
+    const items = [errorMessage];
+    cResult[2] = errorMessage;
+    cResult[3] = Y;
+    cResult[4] = items;
+    tmp15 = items;
+    tmp14 = Y;
+  } else {
+    class Y {
+      constructor() {
+        if (null != errorMessage) {
+          const current = ref.current;
+          if (current != null) {
+            current.scrollTo({ y: 0, animated: true });
+          }
+        }
+      }
+    }
+    tmp15 = cResult[4];
+  }
+  const effect = obj5.useEffect(tmp14, tmp15);
+  if (cResult[5] !== cancelEditingRule) {
+    class G {
+      constructor() {
+        return cancelEditingRule;
+      }
+    }
+    const items1 = [cancelEditingRule];
+    cResult[5] = cancelEditingRule;
+    cResult[6] = G;
+    cResult[7] = items1;
+    tmp18 = items1;
+    tmp17 = G;
+  } else {
+    class G {
+      constructor() {
+        return cancelEditingRule;
+      }
+    }
+    tmp18 = cResult[7];
+  }
+  const effect1 = obj5.useEffect(tmp17, tmp18);
+  [tmp21, c14] = editingRule(obj5.useState(false), 2);
+  const tmp20 = editingRule(obj5.useState(false), 2);
+  if (cResult[8] !== editingRule) {
+    class G {
+      constructor() {
+        return cancelEditingRule;
+      }
+    }
+    if (tmp23) {
+      class G {
+        constructor() {
+          return cancelEditingRule;
+        }
+      }
+      tmp23 = !obj6.isBackendPersistedRule(editingRule);
+    }
+    cResult[8] = editingRule;
+    cResult[9] = tmp23;
+    tmp22 = tmp23;
+  } else {
+    class G {
+      constructor() {
+        return cancelEditingRule;
+      }
+    }
+  }
+  closure_15 = (hasChanges || tmp22) && !tmp21;
+  if (cResult[10] === tmp11) {
+    class G {
+      constructor() {
+        return cancelEditingRule;
+      }
+    }
+  }
+  let closure_0 = removeRule(function*(arg0, value) {
+    let v1;
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        let closure_1;
+        c3 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_1 = tmp4;
+            closure_0 = undefined;
+            c2 = 1;
+            c3 = 1;
+            const obj4 = { value: saveEditingRule(closure_1_12), done: false };
+            return obj4;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          const obj = { value, done: true };
+          return obj;
+        } else {
+          closure_0 = value;
+          if (null != closure_0) {
+            c2(closure_0);
+            if (closure_1.isFocused()) {
+              closure_1.pop();
+            }
+          }
+          c3 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp19) {
+        c3 = 3;
+        throw tmp19;
+      }
+    }
+  });
+  let fn = function() {
+    return closure_0(...arguments);
+  };
+  cResult[10] = tmp11;
+  cResult[11] = navigation;
+  cResult[12] = saveEditingRule;
+  cResult[13] = updateRule;
+  cResult[14] = fn;
+}) : ((guildId) => {
   let Stack;
   let intl;
   let intl2;
@@ -53,7 +258,7 @@ export default function GuildSettingsAutomodRule(guildId) {
   let rulesByTriggerType;
   let hasChanges;
   let isLoading;
-  let ref;
+  closure_15 = undefined;
   let closure_16;
   let callback;
   let name;
@@ -61,8 +266,8 @@ export default function GuildSettingsAutomodRule(guildId) {
   const contentContainerStyle = guildId.contentContainerStyle;
   let tmp2 = guildId;
   let tmp3 = rulesByTriggerType;
-  let tmp = ref();
-  let obj = guildId(rulesByTriggerType[9]);
+  let tmp = closure_15();
+  let obj = guildId(rulesByTriggerType[11]);
   navigation = obj.useNavigation();
   const tmp5 = hasChanges(guildId);
   rulesByTriggerType = tmp5.rulesByTriggerType;
@@ -77,9 +282,9 @@ export default function GuildSettingsAutomodRule(guildId) {
   const errorMessage = tmp7.errorMessage;
   const saveEditingRule = tmp7.saveEditingRule;
   const cancelEditingRule = tmp7.cancelEditingRule;
-  let obj2 = guildId(rulesByTriggerType[10]);
+  let obj2 = guildId(rulesByTriggerType[12]);
   closure_12 = obj2.useIsUndeletableMentionSpamRule(guildId, triggerType);
-  const DeveloperMode = guildId(rulesByTriggerType[11]).DeveloperMode;
+  const DeveloperMode = guildId(rulesByTriggerType[13]).DeveloperMode;
   const setting = DeveloperMode.useSetting();
   let obj3 = editingRule;
   const items = [rulesByTriggerType];
@@ -100,11 +305,11 @@ export default function GuildSettingsAutomodRule(guildId) {
   const items2 = [cancelEditingRule];
   const effect1 = editingRule.useEffect(() => cancelEditingRule, items2);
   const tmp13 = removeRule(editingRule.useState(false), 2);
-  let closure_15 = tmp13[1];
+  closure_15 = tmp13[1];
   let tmp15 = null != editingRule;
   const first = tmp13[0];
   if (tmp15) {
-    const tmp2Result = tmp2(tmp3[12]);
+    const tmp2Result = tmp2(tmp3[14]);
     tmp15 = !tmp2Result.isBackendPersistedRule(editingRule);
   }
   const tmp16 = (hasChanges || tmp15) && !first;
@@ -121,7 +326,7 @@ export default function GuildSettingsAutomodRule(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -159,7 +364,7 @@ export default function GuildSettingsAutomodRule(guildId) {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp19) {
         c3 = 3;
@@ -185,10 +390,10 @@ export default function GuildSettingsAutomodRule(guildId) {
         let obj2;
         let closure_0 = arg0;
         const obj = {
-          key: "automod-unsaved-changes",
-          title: intl.string(guildId(rulesByTriggerType[14]).t.kknTmH),
-          content: intl2.format(guildId(rulesByTriggerType[14]).t["ff/gx7"], obj2),
-          confirmText: intl3.string(guildId(rulesByTriggerType[14]).t["cY+Oob"]),
+          key: ref,
+          title: intl.string(guildId(rulesByTriggerType[16]).t.kknTmH),
+          content: intl2.format(guildId(rulesByTriggerType[16]).t["ff/gx7"], obj2),
+          confirmText: intl3.string(guildId(rulesByTriggerType[16]).t["cY+Oob"]),
           onConfirm() {
             return closure_0(true);
           },
@@ -196,12 +401,12 @@ export default function GuildSettingsAutomodRule(guildId) {
             return closure_0(false);
           }
         };
-        const showConfirmModal = guildId(rulesByTriggerType[13]).showConfirmModal;
-        guildId(rulesByTriggerType[13]);
-        intl = guildId(rulesByTriggerType[14]).intl;
-        intl2 = guildId(rulesByTriggerType[14]).intl;
+        const showConfirmModal = guildId(rulesByTriggerType[15]).showConfirmModal;
+        guildId(rulesByTriggerType[15]);
+        intl = guildId(rulesByTriggerType[16]).intl;
+        intl2 = guildId(rulesByTriggerType[16]).intl;
         obj2 = { ruleName };
-        intl3 = guildId(rulesByTriggerType[14]).intl;
+        intl3 = guildId(rulesByTriggerType[16]).intl;
         showConfirmModal(obj);
       });
     } else {
@@ -230,24 +435,24 @@ export default function GuildSettingsAutomodRule(guildId) {
       headerTitle() {
         let intl;
         let str = name;
-        const NavigatorHeader = guildId(rulesByTriggerType[15]).NavigatorHeader;
+        const NavigatorHeader = guildId(rulesByTriggerType[17]).NavigatorHeader;
         const tmp = saveEditingRule;
         if (name == null) {
           str = "";
         }
-        const obj = { title: str, subtitle: intl.string(guildId(rulesByTriggerType[14]).t.uRelgx) };
-        intl = tmp2(tmp3[14]).intl;
+        const obj = { title: str, subtitle: intl.string(guildId(rulesByTriggerType[16]).t.uRelgx) };
+        intl = tmp2(tmp3[16]).intl;
         return tmp(NavigatorHeader, obj);
       }
     };
     if (tmp2) {
-      fn2 = () => saveEditingRule(guildId(rulesByTriggerType[15]).HeaderSubmittingIndicator, {});
+      fn2 = () => saveEditingRule(guildId(rulesByTriggerType[17]).HeaderSubmittingIndicator, {});
     } else if (closure_16) {
       fn2 = () => {
         let intl;
-        const obj = { onPress, text: intl.string(guildId(rulesByTriggerType[14]).t["R3BPH+"]) };
-        const HeaderActionButton = guildId(rulesByTriggerType[16]).HeaderActionButton;
-        intl = guildId(rulesByTriggerType[14]).intl;
+        const obj = { onPress, text: intl.string(guildId(rulesByTriggerType[16]).t["R3BPH+"]) };
+        const HeaderActionButton = guildId(rulesByTriggerType[18]).HeaderActionButton;
+        intl = guildId(rulesByTriggerType[16]).intl;
         return saveEditingRule(HeaderActionButton, obj);
       };
     }
@@ -260,22 +465,22 @@ export default function GuildSettingsAutomodRule(guildId) {
       const tmp28 = cancelEditingRule;
       const tmp29 = closure_12;
       let obj4 = { ref, contentContainerStyle, children: tmp28(Stack, obj5) };
-      const Form = tmp2(tmp3[17]).Form;
+      const Form = tmp2(tmp3[32]).Form;
       obj5 = { style: tmp.stack, spacing: navigation(tmp3[8]).space.PX_24, children: items6 };
-      Stack = tmp2(tmp3[18]).Stack;
+      Stack = tmp2(tmp3[31]).Stack;
       let tmp30Result = null != errorMessage;
       if (tmp30Result) {
         const obj6 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityLiveRegion: "polite", children: errorMessage };
-        tmp30Result = tmp30(tmp2(tmp3[19]).Text, obj6);
+        tmp30Result = tmp30(tmp2(tmp3[23]).Text, obj6);
       }
       items6 = [tmp30Result, , , , , , ];
-      const tmp2Result2 = tmp2(tmp3[12]);
+      const tmp2Result2 = tmp2(tmp3[14]);
       const result = tmp2Result2.isRuleApplicationFilter(editingRule);
       let tmp30Result3 = !result;
       if (tmp30Result3) {
         const obj7 = {
-          label: intl.string(tmp2(tmp3[14]).t.WVAHxF),
-          placeholder: intl2.string(tmp2(tmp3[14]).t["5AO43K"]),
+          label: intl.string(tmp2(tmp3[16]).t.WVAHxF),
+          placeholder: intl2.string(tmp2(tmp3[16]).t["5AO43K"]),
           maxLength: errorMessage,
           value: editingRule.name,
           onChange(name) {
@@ -287,20 +492,20 @@ export default function GuildSettingsAutomodRule(guildId) {
                   }
                 }
         };
-        const TextInput = tmp2(tmp3[20]).TextInput;
-        intl = tmp2(tmp3[14]).intl;
-        intl2 = tmp2(tmp3[14]).intl;
+        const TextInput = tmp2(tmp3[24]).TextInput;
+        intl = tmp2(tmp3[16]).intl;
+        intl2 = tmp2(tmp3[16]).intl;
         tmp30Result3 = tmp30(TextInput, obj7);
       }
-      function handleChangeRule(id) {
+      function handleChangeRule(guildId) {
         const tmp = isLoading;
         if (!tmp) {
-          setEditingRule(id, true);
+          setEditingRule(guildId, true);
         }
       }
       items6[1] = tmp30Result3;
       const obj8 = {
-        label: intl3.string(tmp2(tmp3[14]).t.WrleYK),
+        label: intl3.string(tmp2(tmp3[16]).t.WrleYK),
         value: editingRule.enabled,
         onValueChange(enabled) {
               const obj = { enabled };
@@ -313,45 +518,45 @@ export default function GuildSettingsAutomodRule(guildId) {
         start: true,
         end: true
       };
-      const TableSwitchRow = tmp2(tmp3[21]).TableSwitchRow;
-      intl3 = tmp2(tmp3[14]).intl;
+      const TableSwitchRow = tmp2(tmp3[25]).TableSwitchRow;
+      intl3 = tmp2(tmp3[16]).intl;
       items6[2] = saveEditingRule(TableSwitchRow, obj8);
       const obj9 = {
         rule: editingRule,
         onChangeRule: handleChangeRule,
-        onValidityChange(arg0) {
-              return closure_15(!arg0);
+        onValidityChange(react) {
+              return closure_15(!react);
             }
       };
-      items6[3] = saveEditingRule(navigation(tmp3[22]), obj9);
+      items6[3] = saveEditingRule(navigation(tmp3[26]), obj9);
       const obj10 = { rule: editingRule, onChangeRule: handleChangeRule };
-      items6[4] = saveEditingRule(navigation(tmp3[23]), obj10);
+      items6[4] = saveEditingRule(navigation(tmp3[27]), obj10);
       const obj11 = { rule: editingRule, onChangeRule: handleChangeRule };
-      items6[5] = saveEditingRule(navigation(tmp3[24]), obj11);
+      items6[5] = saveEditingRule(navigation(tmp3[28]), obj11);
       let tmp28Result = !tmp15;
       if (tmp28Result) {
-        const TableRowGroup = tmp2(tmp3[25]).TableRowGroup;
+        const TableRowGroup = tmp2(tmp3[29]).TableRowGroup;
         const obj12 = {
           variant: "danger",
-          label: intl4.string(tmp2(tmp3[14]).t["92m/01"]),
+          label: intl4.string(tmp2(tmp3[16]).t["92m/01"]),
           onPress() {
                   const tmp = editingRule;
                   if (null != editingRule) {
                     const id = tmp.id;
                     name = tmp.name;
-                    const showConfirmModal = guildId(rulesByTriggerType[13]).showConfirmModal;
+                    const showConfirmModal = guildId(rulesByTriggerType[15]).showConfirmModal;
                     let obj2 = { key: memo, title: null, content: null, confirmText: null, onConfirm: null };
-                    const tmp24 = guildId(rulesByTriggerType[13]);
-                    const intl5 = guildId(rulesByTriggerType[14]).intl;
+                    const tmp24 = guildId(rulesByTriggerType[15]);
+                    const intl5 = guildId(rulesByTriggerType[16]).intl;
                     const string = intl5.string;
-                    const t = guildId(rulesByTriggerType[14]).t;
+                    const t = guildId(rulesByTriggerType[16]).t;
                     if (closure_12) {
                       obj2.title = string(t.MmpqMC);
-                      const intl3 = guildId(rulesByTriggerType[14]).intl;
-                      obj2.content = intl3.string(guildId(rulesByTriggerType[14]).t.XMdBLw);
-                      const intl4 = guildId(rulesByTriggerType[14]).intl;
+                      const intl3 = guildId(rulesByTriggerType[16]).intl;
+                      obj2.content = intl3.string(guildId(rulesByTriggerType[16]).t.XMdBLw);
+                      const intl4 = guildId(rulesByTriggerType[16]).intl;
                       let tmp18 = guildId;
-                      obj2.confirmText = intl4.string(guildId(rulesByTriggerType[14]).t.BddRzS);
+                      obj2.confirmText = intl4.string(guildId(rulesByTriggerType[16]).t.BddRzS);
                       obj2.onConfirm = function onConfirm() {
 
                       };
@@ -359,12 +564,12 @@ export default function GuildSettingsAutomodRule(guildId) {
                     } else {
                       obj2.title = string(t.Hy8XgL);
                       const tmp3 = rulesByTriggerType;
-                      let intl = guildId(rulesByTriggerType[14]).intl;
+                      let intl = guildId(rulesByTriggerType[16]).intl;
                       const tmp4 = guildId;
                       let obj = { ruleName: name };
-                      obj2.content = intl.format(guildId(rulesByTriggerType[14]).t.hO7PgW, obj);
-                      const intl2 = guildId(rulesByTriggerType[14]).intl;
-                      obj2.confirmText = intl2.string(guildId(rulesByTriggerType[14]).t["cY+Oob"]);
+                      obj2.content = intl.format(guildId(rulesByTriggerType[16]).t.hO7PgW, obj);
+                      const intl2 = guildId(rulesByTriggerType[16]).intl;
+                      obj2.confirmText = intl2.string(guildId(rulesByTriggerType[16]).t["cY+Oob"]);
                       let closure_0 = updateRule(function*(arg0, value) {
                         let obj3;
                         let v0;
@@ -378,7 +583,7 @@ export default function GuildSettingsAutomodRule(guildId) {
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "HermesInternal", done: null };
+                            return { value: "IconComponent", done: null };
                           }
                         } else {
                           let c4;
@@ -400,22 +605,22 @@ export default function GuildSettingsAutomodRule(guildId) {
                                 c5 = 2;
                                 c6 = 1;
                                 const obj5 = { value: obj3.deleteAutomodRule(id, closure_0), done: false };
-                                obj3 = closure_0(rulesByTriggerType[27]);
+                                obj3 = closure_0(rulesByTriggerType[19]);
                                 return obj5;
                               }
                             } else if (1 === c5) {
                               c4 = 0;
                               closure_0 = closure_3;
-                              const presentError = closure_0(rulesByTriggerType[28]).presentError;
+                              const presentError = closure_0(rulesByTriggerType[20]).presentError;
                               const self = this;
                               const self2 = this;
-                              const tmp18 = closure_0(rulesByTriggerType[28]);
-                              const aPIError = new closure_0(rulesByTriggerType[29]).APIError(closure_0);
+                              const tmp18 = closure_0(rulesByTriggerType[20]);
+                              const aPIError = new closure_0(rulesByTriggerType[21]).APIError(closure_0);
                               const anyErrorMessage = aPIError.getAnyErrorMessage();
                               closure_0 = anyErrorMessage;
                               if (anyErrorMessage == null) {
-                                const intl = closure_0(rulesByTriggerType[14]).intl;
-                                closure_0 = intl.string(closure_0(rulesByTriggerType[14]).t.fEptJP);
+                                const intl = closure_0(rulesByTriggerType[16]).intl;
+                                closure_0 = intl.string(closure_0(rulesByTriggerType[16]).t.fEptJP);
                               }
                               presentError(closure_0);
                               throw closure_0;
@@ -432,7 +637,7 @@ export default function GuildSettingsAutomodRule(guildId) {
                               c4(closure_130_1, closure_0);
                               closure_1.pop();
                               c6 = 3;
-                              return { value: "HermesInternal", done: null };
+                              return { value: "IconComponent", done: null };
                             }
                           } catch (tmp37) {
                             closure_3 = tmp37;
@@ -454,13 +659,13 @@ export default function GuildSettingsAutomodRule(guildId) {
                 },
           disabled: isLoading
         };
-        const TableRow = tmp2(tmp3[26]).TableRow;
-        intl4 = tmp2(tmp3[14]).intl;
+        const TableRow = tmp2(tmp3[30]).TableRow;
+        intl4 = tmp2(tmp3[16]).intl;
         const items7 = [tmp30(TableRow, obj12), ];
         let tmp30Result4 = setting;
         if (tmp30Result4) {
           const obj13 = {
-            label: intl5.string(tmp2(tmp3[14]).t.F64hjn),
+            label: intl5.string(tmp2(tmp3[16]).t.F64hjn),
             onPress() {
                       if (null != editingRule) {
                         const obj = ClipboardUtils;
@@ -470,8 +675,8 @@ export default function GuildSettingsAutomodRule(guildId) {
                       }
                     }
           };
-          const TableRow2 = tmp2(tmp3[26]).TableRow;
-          intl5 = tmp2(tmp3[14]).intl;
+          const TableRow2 = tmp2(tmp3[30]).TableRow;
+          intl5 = tmp2(tmp3[16]).intl;
           tmp30Result4 = tmp30(TableRow2, obj13);
         }
         const obj14 = { hasIcons: false, children: items7 };
@@ -480,9 +685,12 @@ export default function GuildSettingsAutomodRule(guildId) {
       }
       const obj15 = { children: items8 };
       items6[6] = tmp28Result;
-      items8 = [tmp30(Form, obj4), tmp30(tmp2(tmp3[31]).NavScrim, {})];
+      items8 = [tmp30(Form, obj4), tmp30(tmp2(tmp3[33]).NavScrim, {})];
       tmp28Result2 = tmp28(tmp29, obj15);
     }
   }
   return tmp28Result2;
-};
+});
+let result = size.fileFinishedImporting("modules/guild_automod/native/GuildSettingsAutomodRule.tsx");
+
+export default tmp4;

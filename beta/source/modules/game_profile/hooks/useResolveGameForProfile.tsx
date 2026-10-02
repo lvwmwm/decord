@@ -1,20 +1,86 @@
-// Module ID: 8131
-// Function ID: 8132
+// Module ID: 8129
+// Function ID: 8130
 // Name: useResolveGameForProfile
-// Dependencies: [6589, 4966, 8132, 4967, 6727, 2]
-// Exports: default
+// Dependencies: [558, 576, 6590, 4967, 4968, 8130, 6728, 2]
 
-// Module 8131 (useResolveGameForProfile)
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 4966 */;
-import RobloxSubgameTypes from "RobloxSubgameTypes" /* 4967 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6589 */;
-import useGame2 from "useGame" /* 6727 */;
-import useResolveGameDefault from "useResolveGame" /* 8132 */;
+// Module 8129 (useResolveGameForProfile)
+import react from "react" /* 576 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 4967 */;
+import RobloxSubgameTypes from "RobloxSubgameTypes" /* 4968 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6590 */;
+import useGame2 from "useGame" /* 6728 */;
+import useResolveGameDefault from "useResolveGame" /* 8130 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let result = size.fileFinishedImporting("modules/game_profile/hooks/useResolveGameForProfile.tsx");
-
-export default function useResolveGameForProfile(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let applicationId;
+  let data;
+  let gameId;
+  let isLoading;
+  const obj = react;
+  const cResult = obj.c(6);
+  ({ applicationId, gameId } = arg0);
+  let tmp5;
+  const useGetOrFetchApplication = useGetOrFetchApplications.useGetOrFetchApplication;
+  useGetOrFetchApplications;
+  if (null == gameId) {
+    tmp5 = applicationId;
+  }
+  const getOrFetchApplication = useGetOrFetchApplication(tmp5);
+  let ROBLOX_GAME_ID = gameId;
+  if (null != getOrFetchApplication) {
+    ROBLOX_GAME_ID = gameId;
+    const tmpResult = RobloxSubgameUtils;
+    if (tmpResult.isRobloxSubgameApplication(getOrFetchApplication)) {
+      ROBLOX_GAME_ID = tmp(4968).ROBLOX_GAME_ID;
+    }
+  }
+  if (cResult[0] === applicationId) {
+    let tmp7;
+    if (cResult[1] === ROBLOX_GAME_ID) {
+      tmp7 = cResult[2];
+    }
+    const tmp9 = useResolveGameDefault(tmp7);
+    let isRobloxSubgameGameResult = null != tmp9.gameRecord;
+    if (isRobloxSubgameGameResult) {
+      const tmpResult3 = RobloxSubgameUtils;
+      isRobloxSubgameGameResult = tmpResult3.isRobloxSubgameGame(tmp9.gameRecord);
+    }
+    let ROBLOX_GAME_ID1;
+    const useGame = useGame2.useGame;
+    useGame2;
+    if (isRobloxSubgameGameResult) {
+      ROBLOX_GAME_ID1 = tmp(4968).ROBLOX_GAME_ID;
+    }
+    const game = useGame(ROBLOX_GAME_ID1);
+    ({ data, isLoading } = game);
+    if (isRobloxSubgameGameResult) {
+      if (data == null) {
+        data = null;
+      }
+      if (cResult[3] === isLoading) {
+        let tmp14;
+        if (cResult[4] === data) {
+          tmp14 = cResult[5];
+        }
+        return tmp14;
+      }
+      const obj2 = { gameId: RobloxSubgameTypes.ROBLOX_GAME_ID, gameRecord: data, isLoading };
+      cResult[3] = isLoading;
+      cResult[4] = data;
+      cResult[5] = obj2;
+      tmp14 = obj2;
+    } else {
+      return tmp9;
+    }
+  }
+  const obj3 = { applicationId, gameId: ROBLOX_GAME_ID };
+  cResult[0] = applicationId;
+  cResult[1] = ROBLOX_GAME_ID;
+  cResult[2] = obj3;
+  tmp7 = obj3;
+}) : ((arg0) => {
   let applicationId;
   let gameId;
   ({ applicationId, gameId } = arg0);
@@ -33,7 +99,7 @@ export default function useResolveGameForProfile(arg0) {
   const obj = { applicationId, gameId };
   const tmp7 = useResolveGameDefault;
   if (result) {
-    gameId = tmp(4967).ROBLOX_GAME_ID;
+    gameId = tmp(4968).ROBLOX_GAME_ID;
   }
   let tmp7Result = tmp7(obj);
   let isRobloxSubgameGameResult = null != tmp7Result.gameRecord;
@@ -45,7 +111,7 @@ export default function useResolveGameForProfile(arg0) {
   const useGame = useGame2.useGame;
   useGame2;
   if (isRobloxSubgameGameResult) {
-    ROBLOX_GAME_ID = tmp(4967).ROBLOX_GAME_ID;
+    ROBLOX_GAME_ID = tmp(4968).ROBLOX_GAME_ID;
   }
   const game = useGame(ROBLOX_GAME_ID);
   let data = game.data;
@@ -57,4 +123,7 @@ export default function useResolveGameForProfile(arg0) {
     tmp7Result = obj2;
   }
   return tmp7Result;
-};
+});
+let result = size.fileFinishedImporting("modules/game_profile/hooks/useResolveGameForProfile.tsx");
+
+export default tmp2;

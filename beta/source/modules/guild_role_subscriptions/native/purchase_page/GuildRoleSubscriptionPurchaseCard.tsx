@@ -1,27 +1,27 @@
-// Module ID: 16197
-// Function ID: 16198
+// Module ID: 16199
+// Function ID: 16200
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 4836, 576, 6400, 1613, 14772, 16192, 6571, 4832, 1177, 16198, 6045, 1115, 14782, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 6397, 1619, 14760, 16194, 4833, 1189, 16200, 1127, 14770, 6038, 6572, 2]
 
-// Module 16197 (GuildRoleSubscriptionPurchaseCard)
+// Module 16199 (GuildRoleSubscriptionPurchaseCard)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import BottomSheetModal from "BottomSheetModal" /* 6045 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6400 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14772 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 14782 */;
-import Elements from "Elements" /* 16192 */;
-import SubscribeButtonDefault from "SubscribeButton" /* 16198 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import BottomSheetModal from "BottomSheetModal" /* 6038 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6397 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14760 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 14770 */;
+import Elements from "Elements" /* 16194 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -32,6 +32,8 @@ let obj2;
 let obj3;
 let obj4;
 let size;
+let tmp6;
+const SubscribeButtonDefault = tmp6(16200);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -42,10 +44,256 @@ obj3 = { padding: 16, paddingTop: 24, backgroundColor: nativeDefault.colors.BACK
 size = { width: 3, height: 3, borderRadius: 1.5, backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, marginHorizontal: 8 };
 obj4 = { borderBottomWidth: 1, marginLeft: -16, marginRight: -16, borderColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER };
 let closure_8 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/GuildRoleSubscriptionPurchaseCard.tsx");
-
-export default function GuildRoleSubscriptionPurchaseCard(listingId) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let guildId;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let listingId;
+  let obj16;
+  let tmp10;
+  let tmp13;
+  let tmp17;
+  const obj = react2;
+  const cResult = obj.c(46);
+  ({ listingId, guildId } = arg0);
+  const obj2 = useTypeConsolidationTextTransform;
+  const typeConsolidationTextTransform = obj2.useTypeConsolidationTextTransform("PurchaseCard");
+  const tmp5 = closure_8();
+  const bottom = useSafeAreaInsetsDefault().bottom;
+  const obj3 = GuildRoleSubscriptionListingEditStateUtilsAll;
+  const first = _slicedToArray(obj3.useDescription(listingId), 1)[0];
+  const obj4 = GuildRoleSubscriptionListingEditStateUtilsAll;
+  const first1 = _slicedToArray(obj4.useName(listingId), 1)[0];
+  const obj5 = Elements;
+  const formattedSubscriptionPlan = obj5.useFormattedSubscriptionPlan(listingId);
+  const container = tmp5.container;
+  if (cResult[0] !== first1) {
+    const obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first1 };
+    const tmp12 = metroRequire(Text_Text.Text, obj6);
+    cResult[0] = first1;
+    cResult[1] = tmp12;
+    tmp10 = tmp12;
+  } else {
+    tmp10 = cResult[1];
+  }
+  if (cResult[2] !== tmp5.headerDot) {
+    const obj7 = { style: tmp5.headerDot };
+    const tmp16 = metroRequire(View, obj7);
+    cResult[2] = tmp5.headerDot;
+    cResult[3] = tmp16;
+    tmp13 = tmp16;
+  } else {
+    tmp13 = cResult[3];
+  }
+  if (cResult[4] !== formattedSubscriptionPlan) {
+    const obj8 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: formattedSubscriptionPlan };
+    const tmp19 = metroRequire(Text_Text.Text, obj8);
+    cResult[4] = formattedSubscriptionPlan;
+    cResult[5] = tmp19;
+    tmp17 = tmp19;
+  } else {
+    tmp17 = cResult[5];
+  }
+  if (cResult[6] === tmp5.headerText) {
+    if (cResult[7] === tmp10) {
+      if (cResult[8] === tmp13) {
+        let tmp20;
+        let tmp23;
+        let tmp26;
+        let tmp29;
+        let tmp32;
+        if (cResult[9] === tmp17) {
+          tmp20 = cResult[10];
+        }
+        const _Symbol = Symbol;
+        if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+          const tmp25 = metroRequire(native.Spacer, { size: 16 });
+          cResult[11] = tmp25;
+          tmp23 = tmp25;
+        } else {
+          tmp23 = cResult[11];
+        }
+        if (cResult[12] !== first) {
+          const obj9 = { variant: "text-sm/normal", color: "text-default", lineClamp: 2, children: first };
+          const tmp28 = metroRequire(Elements.TruncatedText, obj9);
+          cResult[12] = first;
+          cResult[13] = tmp28;
+          tmp26 = tmp28;
+        } else {
+          tmp26 = cResult[13];
+        }
+        const _Symbol2 = Symbol;
+        if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+          const tmp31 = metroRequire(native.Spacer, { size: 24 });
+          cResult[14] = tmp31;
+          tmp29 = tmp31;
+        } else {
+          tmp29 = cResult[14];
+        }
+        if (cResult[15] !== listingId) {
+          const obj10 = { listingId };
+          const tmp34 = metroRequire(SubscribeButtonDefault, obj10);
+          cResult[15] = listingId;
+          cResult[16] = tmp34;
+          tmp32 = tmp34;
+        } else {
+          tmp32 = cResult[16];
+        }
+        if (cResult[17] === tmp5.header) {
+          if (cResult[18] === tmp20) {
+            if (cResult[19] === tmp26) {
+              let tmp35;
+              let tmp39;
+              let tmp44;
+              let tmp45;
+              let tmp46;
+              let tmp47;
+              let tmp49;
+              let tmp52;
+              if (cResult[20] === tmp32) {
+                tmp35 = cResult[21];
+              }
+              if (cResult[22] !== tmp5.seperator) {
+                const obj11 = { style: tmp5.seperator };
+                const tmp42 = metroRequire(View, obj11);
+                cResult[22] = tmp5.seperator;
+                cResult[23] = tmp42;
+                tmp39 = tmp42;
+              } else {
+                tmp39 = cResult[23];
+              }
+              const sum = 16 + bottom;
+              const content = tmp5.content;
+              if (cResult[24] !== sum) {
+                const obj12 = { paddingBottom: sum };
+                cResult[24] = sum;
+                cResult[25] = obj12;
+                tmp44 = obj12;
+              } else {
+                tmp44 = cResult[25];
+              }
+              const _Symbol3 = Symbol;
+              if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
+                const obj13 = { textTransform: "uppercase" };
+                cResult[26] = obj13;
+                tmp45 = obj13;
+              } else {
+                tmp45 = cResult[26];
+              }
+              if (cResult[27] !== typeConsolidationTextTransform) {
+                const items = [tmp45, typeConsolidationTextTransform];
+                cResult[27] = typeConsolidationTextTransform;
+                cResult[28] = items;
+                tmp46 = items;
+              } else {
+                tmp46 = cResult[28];
+              }
+              const _Symbol4 = Symbol;
+              if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
+                const intl = tmp(1127).intl;
+                const stringResult = intl.string(intl2.t.UdEvUi);
+                cResult[29] = stringResult;
+                tmp47 = stringResult;
+              } else {
+                tmp47 = cResult[29];
+              }
+              if (cResult[30] !== tmp46) {
+                const obj14 = { variant: "text-sm/bold", color: "text-default", style: tmp46, children: tmp47 };
+                const tmp51 = metroRequire(Text_Text.Text, obj14);
+                cResult[30] = tmp46;
+                cResult[31] = tmp51;
+                tmp49 = tmp51;
+              } else {
+                tmp49 = cResult[31];
+              }
+              const _Symbol5 = Symbol;
+              if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
+                const tmp54 = metroRequire(native.Spacer, { size: 24 });
+                cResult[32] = tmp54;
+                tmp52 = tmp54;
+              } else {
+                tmp52 = cResult[32];
+              }
+              if (cResult[33] === guildId) {
+                let tmp55;
+                if (cResult[34] === listingId) {
+                  tmp55 = cResult[35];
+                }
+                if (cResult[36] === tmp5.content) {
+                  if (cResult[37] === tmp44) {
+                    if (cResult[38] === tmp49) {
+                      let tmp58;
+                      if (cResult[39] === tmp55) {
+                        tmp58 = cResult[40];
+                      }
+                      if (cResult[41] === tmp5.container) {
+                        if (cResult[42] === tmp35) {
+                          if (cResult[43] === tmp39) {
+                            let tmp61;
+                            if (cResult[44] === tmp58) {
+                              tmp61 = cResult[45];
+                            }
+                            return tmp61;
+                          }
+                        }
+                      }
+                      const obj15 = { scrollable: true, startExpanded: true, children: metroImportDefault(View, obj16) };
+                      obj16 = { style: container, children: items1 };
+                      items1 = [tmp35, tmp39, tmp58];
+                      BottomSheet = tmp(6572).BottomSheet;
+                      const tmp65 = metroRequire(BottomSheet, obj15);
+                      cResult[41] = tmp5.container;
+                      cResult[42] = tmp35;
+                      cResult[43] = tmp39;
+                      cResult[44] = tmp58;
+                      cResult[45] = tmp65;
+                      tmp61 = tmp65;
+                    }
+                  }
+                }
+                const obj17 = { scrollsToTop: false, style: content, contentContainerStyle: tmp44, children: items2 };
+                items2 = [tmp49, tmp52, tmp55];
+                const tmp60 = metroImportDefault(BottomSheetModal.BottomSheetScrollView, obj17);
+                cResult[36] = tmp5.content;
+                cResult[37] = tmp44;
+                cResult[38] = tmp49;
+                cResult[39] = tmp55;
+                cResult[40] = tmp60;
+                tmp58 = tmp60;
+              }
+              const obj18 = { listingId, guildId };
+              const tmp57 = metroRequire(GuildRoleSubscriptionCard.Content, obj18);
+              cResult[33] = guildId;
+              cResult[34] = listingId;
+              cResult[35] = tmp57;
+              tmp55 = tmp57;
+            }
+          }
+        }
+        const obj19 = { style: tmp5.header, children: items3 };
+        items3 = [tmp20, tmp23, tmp26, tmp29, tmp32];
+        const tmp38 = metroImportDefault(View, obj19);
+        cResult[17] = tmp5.header;
+        cResult[18] = tmp20;
+        cResult[19] = tmp26;
+        cResult[20] = tmp32;
+        cResult[21] = tmp38;
+        tmp35 = tmp38;
+      }
+    }
+  }
+  const obj20 = { style: tmp5.headerText, children: items4 };
+  items4 = [tmp10, tmp13, tmp17];
+  const tmp21 = metroImportDefault(View, obj20);
+  cResult[6] = tmp5.headerText;
+  cResult[7] = tmp10;
+  cResult[8] = tmp13;
+  cResult[9] = tmp17;
+  cResult[10] = tmp21;
+  tmp20 = tmp21;
+}) : ((listingId) => {
   let intl;
   let items;
   let items1;
@@ -89,4 +337,8 @@ export default function GuildRoleSubscriptionPurchaseCard(listingId) {
   items4 = [metroRequire(Text, obj13), metroRequire(native.Spacer, { size: 24 }), metroRequire(GuildRoleSubscriptionCard.Content, { listingId, guildId })];
   items2[2] = metroImportDefault(BottomSheetScrollView, obj11);
   return metroRequire(BottomSheet, obj5);
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/GuildRoleSubscriptionPurchaseCard.tsx");
+
+export default tmp5;

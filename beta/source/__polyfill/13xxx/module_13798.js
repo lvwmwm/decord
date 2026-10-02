@@ -1,18 +1,16 @@
 // Module ID: 13798
 // Function ID: 13799
-// Dependencies: [13799]
+// Dependencies: [13794]
 
 // Module 13798
-import _mod13799 from "module_13799" /* 13799 */;
+import _mod13794 from "module_13794" /* 13794 */;
 
 
-export default function(arg0) {
-  if (_mod13799(arg0)) {
-    const self = this;
-    const self2 = this;
-    const tmp2 = new TypeError("Can't call method on " + arg0);
-    throw tmp2;
-  } else {
-    return arg0;
-  }
-};
+export default !_mod13794(() => {
+  const fn = () => {
+
+  };
+  const bindResult = fn.bind();
+  const hasOwnPropertyResult = typeof bindResult !== "function" || bindResult.hasOwnProperty("prototype");
+  return hasOwnPropertyResult;
+});

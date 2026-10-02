@@ -1,23 +1,23 @@
-// Module ID: 16352
-// Function ID: 16353
+// Module ID: 16354
+// Function ID: 16355
 // Name: VibegrationsSubagentMark
-// Dependencies: [32, 16353, 576, 16355, 16357, 16359, 16361, 16363, 16365, 16367, 16369, 16371, 16373, 16375, 2]
+// Dependencies: [32, 16355, 588, 16357, 16359, 16361, 16363, 16365, 16367, 16369, 16371, 16373, 16375, 16377, 2]
 // Exports: familiarMark, subagentIllocons
 
-// Module 16352 (VibegrationsSubagentMark)
-import nativeDefault from "native" /* 576 */;
-import SnailIllocon from "SnailIllocon" /* 16353 */;
-import GoatIllocon from "GoatIllocon" /* 16355 */;
-import FrogIllocon from "FrogIllocon" /* 16357 */;
-import BunnyIllocon from "BunnyIllocon" /* 16359 */;
-import CatIllocon from "CatIllocon" /* 16361 */;
-import CaterpillarIllocon from "CaterpillarIllocon" /* 16363 */;
-import ButterflyIllocon from "ButterflyIllocon" /* 16365 */;
-import DogIllocon from "DogIllocon" /* 16367 */;
-import SpiderIllocon from "SpiderIllocon" /* 16369 */;
-import BeeIllocon from "BeeIllocon" /* 16371 */;
-import BotIllocon from "BotIllocon" /* 16373 */;
-import VibegrationsSubagentMarks from "VibegrationsSubagentMarks" /* 16375 */;
+// Module 16354 (VibegrationsSubagentMark)
+import nativeDefault from "native" /* 588 */;
+import SnailIllocon from "SnailIllocon" /* 16355 */;
+import GoatIllocon from "GoatIllocon" /* 16357 */;
+import FrogIllocon from "FrogIllocon" /* 16359 */;
+import BunnyIllocon from "BunnyIllocon" /* 16361 */;
+import CatIllocon from "CatIllocon" /* 16363 */;
+import CaterpillarIllocon from "CaterpillarIllocon" /* 16365 */;
+import ButterflyIllocon from "ButterflyIllocon" /* 16367 */;
+import DogIllocon from "DogIllocon" /* 16369 */;
+import SpiderIllocon from "SpiderIllocon" /* 16371 */;
+import BeeIllocon from "BeeIllocon" /* 16373 */;
+import BotIllocon from "BotIllocon" /* 16375 */;
+import VibegrationsSubagentMarks from "VibegrationsSubagentMarks" /* 16377 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

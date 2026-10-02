@@ -1,26 +1,28 @@
-// Module ID: 9212
-// Function ID: 9213
+// Module ID: 9178
+// Function ID: 9179
 // Name: GuildProfileHeader
-// Dependencies: [19, 17, 2112, 502, 2108, 9213, 21, 4836, 576, 504, 7156, 11, 2059, 8205, 8204, 4528, 4800, 6760, 5896, 4832, 5435, 8202, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 2115, 502, 2111, 9179, 21, 4837, 588, 558, 576, 504, 7160, 11, 2065, 8202, 8201, 4531, 4801, 6761, 5893, 4833, 8199, 5436, 1127, 2]
 
-// Module 9212 (GuildProfileHeader)
+// Module 9178 (GuildProfileHeader)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import transitionToGuild from "transitionToGuild" /* 6760 */;
-import BadgeCategory from "BadgeCategory" /* 8204 */;
-import GuildTraits from "GuildTraits" /* 8205 */;
-import GuildBadgeConstants from "GuildBadgeConstants" /* 9213 */;
+import nativeDefault from "native" /* 588 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2065 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import transitionToGuild from "transitionToGuild" /* 6761 */;
+import BadgeCategory from "BadgeCategory" /* 8201 */;
+import GuildTraits from "GuildTraits" /* 8202 */;
+import GuildBadgeConstants from "GuildBadgeConstants" /* 9179 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
+
+let profile;
 
 let c10;
 let c9;
@@ -37,10 +39,367 @@ createStyles = createStyles.createStyles;
 size1 = { width: 8, height: 8, borderRadius: 4, backgroundColor: nativeDefault.colors.TEXT_STATUS_OFFLINE };
 size2 = { width: 8, height: 8, borderRadius: 4, backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
 const styles = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/guild_profile/native/components/GuildProfileHeader.tsx");
-
-export default function GuildProfileHeader(profile) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
+  let id;
+  let locale;
+  let stateFromStores1;
+  let tmp15;
+  let tmp17;
+  let tmp18;
+  let tmp5;
+  let tmp6;
+  let tmp = profile;
+  let obj = profile(stateFromStores1[10]);
+  const cResult = obj.c(71);
+  profile = profile.profile;
+  const guildIconSource = profile.guildIconSource;
+  const tmp4 = styles();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [LocaleStore];
+    const fn = function y() {
+      return locale.locale;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(stateFromStores1[11]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  const getEstablishedDate = tmp(tmp2[12]).getEstablishedDate;
+  tmp(stateFromStores1[12]);
+  let obj3 = id(tmp2[13]);
+  const establishedDate = getEstablishedDate(obj3.extractTimestamp(profile.id), stateFromStores);
+  const tmp10 = id;
+  if (cResult[2] !== profile) {
+    const tmpResult5 = tmp(stateFromStores1[14]);
+    let fromGuildProfileResult = tmpResult5.fromGuildProfile(profile);
+    cResult[2] = profile;
+    cResult[3] = fromGuildProfileResult;
+  }
+  if (cResult[4] !== profile) {
+    class I {
+      constructor() {
+        let tooltipSubtitle;
+        let tooltipTitle;
+        const obj = GuildRecordUtils;
+        const fromGuildProfileResult = obj.fromGuildProfile(profile);
+        const obj2 = GuildTraits;
+        const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
+        const obj3 = BadgeCategory;
+        ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
+        getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
+        const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
+        if (!tmp5) {
+          const open = ToastActionCreatorsDefault.open;
+          ToastActionCreatorsDefault;
+          if (tooltipSubtitle == null) {
+            tooltipSubtitle = tooltipTitle;
+          }
+          const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
+          open(obj4);
+        }
+      }
+    }
+    cResult[4] = profile;
+    cResult[5] = I;
+  } else {
+    class I {
+      constructor() {
+        let tooltipSubtitle;
+        let tooltipTitle;
+        const obj = GuildRecordUtils;
+        const fromGuildProfileResult = obj.fromGuildProfile(profile);
+        const obj2 = GuildTraits;
+        const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
+        const obj3 = BadgeCategory;
+        ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
+        getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
+        const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
+        if (!tmp5) {
+          const open = ToastActionCreatorsDefault.open;
+          ToastActionCreatorsDefault;
+          if (tooltipSubtitle == null) {
+            tooltipSubtitle = tooltipTitle;
+          }
+          const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
+          open(obj4);
+        }
+      }
+    }
+  }
+  id = profile.id;
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class I {
+      constructor() {
+        let tooltipSubtitle;
+        let tooltipTitle;
+        const obj = GuildRecordUtils;
+        const fromGuildProfileResult = obj.fromGuildProfile(profile);
+        const obj2 = GuildTraits;
+        const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
+        const obj3 = BadgeCategory;
+        ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
+        getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
+        const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
+        if (!tmp5) {
+          const open = ToastActionCreatorsDefault.open;
+          ToastActionCreatorsDefault;
+          if (tooltipSubtitle == null) {
+            tooltipSubtitle = tooltipTitle;
+          }
+          const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
+          open(obj4);
+        }
+      }
+    }
+    const items1 = [GuildMemberStore, AuthenticationStore];
+    cResult[6] = items1;
+    tmp15 = items1;
+  } else {
+    class I {
+      constructor() {
+        let tooltipSubtitle;
+        let tooltipTitle;
+        const obj = GuildRecordUtils;
+        const fromGuildProfileResult = obj.fromGuildProfile(profile);
+        const obj2 = GuildTraits;
+        const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
+        const obj3 = BadgeCategory;
+        ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
+        getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
+        const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
+        if (!tmp5) {
+          const open = ToastActionCreatorsDefault.open;
+          ToastActionCreatorsDefault;
+          if (tooltipSubtitle == null) {
+            tooltipSubtitle = tooltipTitle;
+          }
+          const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
+          open(obj4);
+        }
+      }
+    }
+  }
+  if (cResult[7] !== id) {
+    class I {
+      constructor() {
+        let tooltipSubtitle;
+        let tooltipTitle;
+        const obj = GuildRecordUtils;
+        const fromGuildProfileResult = obj.fromGuildProfile(profile);
+        const obj2 = GuildTraits;
+        const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
+        const obj3 = BadgeCategory;
+        ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
+        getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
+        const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
+        if (!tmp5) {
+          const open = ToastActionCreatorsDefault.open;
+          ToastActionCreatorsDefault;
+          if (tooltipSubtitle == null) {
+            tooltipSubtitle = tooltipTitle;
+          }
+          const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
+          open(obj4);
+        }
+      }
+    }
+    const items2 = [id];
+    cResult[7] = id;
+    cResult[8] = tmp19;
+    cResult[9] = items2;
+    tmp18 = items2;
+    tmp17 = tmp19;
+  } else {
+    class I {
+      constructor() {
+        let tooltipSubtitle;
+        let tooltipTitle;
+        const obj = GuildRecordUtils;
+        const fromGuildProfileResult = obj.fromGuildProfile(profile);
+        const obj2 = GuildTraits;
+        const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
+        const obj3 = BadgeCategory;
+        ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
+        getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
+        const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
+        if (!tmp5) {
+          const open = ToastActionCreatorsDefault.open;
+          ToastActionCreatorsDefault;
+          if (tooltipSubtitle == null) {
+            tooltipSubtitle = tooltipTitle;
+          }
+          const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
+          open(obj4);
+        }
+      }
+    }
+    tmp18 = cResult[9];
+  }
+  const tmpResult6 = tmp(stateFromStores1[11]);
+  stateFromStores1 = tmpResult6.useStateFromStores(tmp15, tmp17, tmp18);
+  if (cResult[10] === id) {
+    class I {
+      constructor() {
+        let tooltipSubtitle;
+        let tooltipTitle;
+        const obj = GuildRecordUtils;
+        const fromGuildProfileResult = obj.fromGuildProfile(profile);
+        const obj2 = GuildTraits;
+        const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
+        const obj3 = BadgeCategory;
+        ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
+        getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
+        const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
+        if (!tmp5) {
+          const open = ToastActionCreatorsDefault.open;
+          ToastActionCreatorsDefault;
+          if (tooltipSubtitle == null) {
+            tooltipSubtitle = tooltipTitle;
+          }
+          const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
+          open(obj4);
+        }
+      }
+    }
+    const tmp21 = View;
+    if (cResult[13] === guildIconSource) {
+      class I {
+        constructor() {
+          let tooltipSubtitle;
+          let tooltipTitle;
+          const obj = GuildRecordUtils;
+          const fromGuildProfileResult = obj.fromGuildProfile(profile);
+          const obj2 = GuildTraits;
+          const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
+          const obj3 = BadgeCategory;
+          ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
+          getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
+          const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
+          if (!tmp5) {
+            const open = ToastActionCreatorsDefault.open;
+            ToastActionCreatorsDefault;
+            if (tooltipSubtitle == null) {
+              tooltipSubtitle = tooltipTitle;
+            }
+            const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
+            open(obj4);
+          }
+        }
+      }
+      if (cResult[16] === tmp4.avatarBackground) {
+        class I {
+          constructor() {
+            let tooltipSubtitle;
+            let tooltipTitle;
+            const obj = GuildRecordUtils;
+            const fromGuildProfileResult = obj.fromGuildProfile(profile);
+            const obj2 = GuildTraits;
+            const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
+            const obj3 = BadgeCategory;
+            ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
+            getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
+            const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
+            if (!tmp5) {
+              const open = ToastActionCreatorsDefault.open;
+              ToastActionCreatorsDefault;
+              if (tooltipSubtitle == null) {
+                tooltipSubtitle = tooltipTitle;
+              }
+              const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
+              open(obj4);
+            }
+          }
+        }
+        if (stateFromStores1) {
+          class I {
+            constructor() {
+              let tooltipSubtitle;
+              let tooltipTitle;
+              const obj = GuildRecordUtils;
+              const fromGuildProfileResult = obj.fromGuildProfile(profile);
+              const obj2 = GuildTraits;
+              const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
+              const obj3 = BadgeCategory;
+              ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
+              getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
+              const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
+              if (!tmp5) {
+                const open = ToastActionCreatorsDefault.open;
+                ToastActionCreatorsDefault;
+                if (tooltipSubtitle == null) {
+                  tooltipSubtitle = tooltipTitle;
+                }
+                const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
+                open(obj4);
+              }
+            }
+          }
+        }
+        if (cResult[19] === profile.name) {
+          class I {
+            constructor() {
+              let tooltipSubtitle;
+              let tooltipTitle;
+              const obj = GuildRecordUtils;
+              const fromGuildProfileResult = obj.fromGuildProfile(profile);
+              const obj2 = GuildTraits;
+              const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
+              const obj3 = BadgeCategory;
+              ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
+              getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
+              const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
+              if (!tmp5) {
+                const open = ToastActionCreatorsDefault.open;
+                ToastActionCreatorsDefault;
+                if (tooltipSubtitle == null) {
+                  tooltipSubtitle = tooltipTitle;
+                }
+                const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
+                open(obj4);
+              }
+            }
+          }
+        }
+        let obj2 = { onPress: undefined, style: tmp4.guildName, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: profile.name };
+        cResult[19] = profile.name;
+        cResult[20] = tmp4.guildName;
+        cResult[21] = undefined;
+        cResult[22] = closure_9(tmp(stateFromStores1[21]).Text, obj2);
+        const tmp32 = closure_9(tmp(stateFromStores1[21]).Text, obj2);
+      }
+      let obj4 = { style: tmp4.avatarBackground, children: tmp22 };
+      cResult[16] = tmp4.avatarBackground;
+      cResult[17] = tmp22;
+      cResult[18] = closure_9(tmp21, obj4);
+      const tmp28 = closure_9(tmp21, obj4);
+    }
+    const obj5 = { icon: guildIconSource, size: tmp(stateFromStores1[20]).GuildIconSizes.XXLARGE, animate: true, value: profile.name, selected: false };
+    const tmp10Result = tmp10(stateFromStores1[20]);
+    cResult[13] = guildIconSource;
+    cResult[14] = profile.name;
+    cResult[15] = closure_9(tmp10Result, obj5);
+    const tmp25 = closure_9(tmp10Result, obj5);
+  }
+  class O {
+    constructor() {
+      const tmp = stateFromStores1;
+      if (tmp) {
+        const _HermesInternal = HermesInternal;
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet("GuildProfileActionSheet:" + id);
+        const obj2 = transitionToGuild;
+        obj2.transitionToGuild(id);
+      }
+    }
+  }
+  cResult[10] = id;
+  cResult[11] = stateFromStores1;
+  cResult[12] = O;
+}) : ((profile) => {
   let Text4;
   let intl;
   let intl2;
@@ -62,14 +421,14 @@ export default function GuildProfileHeader(profile) {
   let stateFromStores1;
   const guildIconSource = profile.guildIconSource;
   let tmp = styles();
-  let obj = profile(stateFromStores1[9]);
+  let obj = profile(stateFromStores1[11]);
   const items = [LocaleStore];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  let tmp5 = profile(stateFromStores1[10]);
+  let tmp5 = profile(stateFromStores1[12]);
   const getEstablishedDate = tmp5.getEstablishedDate;
-  let obj2 = id(stateFromStores1[11]);
+  let obj2 = id(stateFromStores1[13]);
   const establishedDate = getEstablishedDate(obj2.extractTimestamp(profile.id), stateFromStores);
-  let obj3 = profile(stateFromStores1[12]);
+  let obj3 = profile(stateFromStores1[14]);
   const items1 = [profile];
   let fromGuildProfileResult = obj3.fromGuildProfile(profile);
   const tmp6 = id;
@@ -95,7 +454,7 @@ export default function GuildProfileHeader(profile) {
       open(obj4);
     }
   }, items1);
-  let obj4 = profile(stateFromStores1[9]);
+  let obj4 = profile(stateFromStores1[11]);
   const items2 = [GuildMemberStore, AuthenticationStore];
   const items3 = [id];
   stateFromStores1 = obj4.useStateFromStores(items2, () => {
@@ -119,20 +478,20 @@ export default function GuildProfileHeader(profile) {
       obj2.transitionToGuild(id);
     }
   }, items4);
-  obj7 = { icon: guildIconSource, size: profile(stateFromStores1[18]).GuildIconSizes.XXLARGE, animate: true, value: profile.name, selected: false };
-  tmp15 = id(stateFromStores1[18]);
+  obj7 = { icon: guildIconSource, size: profile(stateFromStores1[20]).GuildIconSizes.XXLARGE, animate: true, value: profile.name, selected: false };
+  tmp15 = id(stateFromStores1[20]);
   items5 = [closure_9(View, obj6), , , ];
   let tmp16;
   const obj8 = { style: tmp.nameRow, children: items6 };
-  const Text = profile(stateFromStores1[19]).Text;
+  const Text = profile(stateFromStores1[21]).Text;
   if (stateFromStores1) {
     tmp16 = callback1;
   }
   items6 = [, ];
   const obj9 = { onPress: tmp16, style: tmp.guildName, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: profile.name };
   items6[0] = closure_9(Text, obj9);
-  const obj10 = { onPress: callback, children: closure_9(tmp6(stateFromStores1[21]), obj11) };
-  const PressableHighlight = tmp2(tmp3[20]).PressableHighlight;
+  const obj10 = { onPress: callback, children: closure_9(tmp6(stateFromStores1[22]), obj11) };
+  const PressableHighlight = tmp2(tmp3[23]).PressableHighlight;
   obj11 = { guild: fromGuildProfileResult, style: tmp.guildIcon };
   items6[1] = closure_9(PressableHighlight, obj10);
   items5[1] = closure_10(View, obj8);
@@ -141,9 +500,9 @@ export default function GuildProfileHeader(profile) {
   const obj12 = { style: tmp.members, children: items8 };
   const obj14 = { style: tmp.dotOnline };
   items7[0] = closure_9(View, obj14);
-  const obj15 = { variant: "text-md/medium", color: "text-default", children: intl.format(profile(stateFromStores1[22]).t["LC+S+m"], obj16) };
-  const Text2 = tmp2(tmp3[19]).Text;
-  intl = tmp2(tmp3[22]).intl;
+  const obj15 = { variant: "text-md/medium", color: "text-default", children: intl.format(profile(stateFromStores1[24]).t["LC+S+m"], obj16) };
+  const Text2 = tmp2(tmp3[21]).Text;
+  intl = tmp2(tmp3[24]).intl;
   obj16 = { membersOnline: profile.onlineCount };
   items7[1] = closure_9(Text2, obj15);
   items8 = [closure_10(View, obj13), ];
@@ -151,18 +510,22 @@ export default function GuildProfileHeader(profile) {
   items9 = [, ];
   const obj18 = { style: tmp.dot };
   items9[0] = closure_9(View, obj18);
-  const obj19 = { variant: "text-md/medium", color: "text-default", children: intl2.format(profile(stateFromStores1[22]).t.zRl6XR, obj20) };
-  const Text3 = tmp2(tmp3[19]).Text;
-  intl2 = tmp2(tmp3[22]).intl;
+  const obj19 = { variant: "text-md/medium", color: "text-default", children: intl2.format(profile(stateFromStores1[24]).t.zRl6XR, obj20) };
+  const Text3 = tmp2(tmp3[21]).Text;
+  intl2 = tmp2(tmp3[24]).intl;
   obj20 = { count: profile.memberCount };
   items9[1] = closure_9(Text3, obj19);
   items8[1] = closure_10(View, obj17);
   items5[2] = closure_10(View, obj12);
   const obj21 = { style: tmp.established, children: closure_9(Text4, obj22) };
-  obj22 = { variant: "text-md/medium", color: "text-muted", children: intl3.format(profile(stateFromStores1[22]).t.zb2Q56, { createdAtDate: establishedDate }) };
-  Text4 = tmp2(tmp3[19]).Text;
-  intl3 = tmp2(tmp3[22]).intl;
+  obj22 = { variant: "text-md/medium", color: "text-muted", children: intl3.format(profile(stateFromStores1[24]).t.zb2Q56, { createdAtDate: establishedDate }) };
+  Text4 = tmp2(tmp3[21]).Text;
+  intl3 = tmp2(tmp3[24]).intl;
   items5[3] = closure_9(View, obj21);
   return closure_10(View, obj5);
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/guild_profile/native/components/GuildProfileHeader.tsx");
+
+export default tmp5;
 export const useStyles = styles;

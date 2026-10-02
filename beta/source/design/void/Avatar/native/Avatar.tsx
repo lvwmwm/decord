@@ -1,22 +1,31 @@
-// Module ID: 13656
-// Function ID: 13657
+// Module ID: 13658
+// Function ID: 13659
 // Name: Avatar
-// Dependencies: [19, 17, 1074, 1178, 21, 4836, 576, 12602, 13645, 13646, 8276, 7602, 13657, 8275, 13647, 5283, 8906, 8907, 2]
+// Dependencies: [19, 17, 1086, 1190, 21, 4837, 588, 12604, 13647, 13648, 8273, 7606, 558, 576, 8272, 13649, 5284, 8900, 8901, 13659, 2]
 
-// Module 13656 (Avatar)
+// Module 13658 (Avatar)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 7602 */;
-import ClipView from "ClipView" /* 8276 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12602 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 13645 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13646 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import IconDefault from "Icon" /* 5284 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 7606 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 8272 */;
+import ClipView from "ClipView" /* 8273 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8900 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8901 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12604 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 13647 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13648 */;
+import Status from "Status" /* 13649 */;
+import SpeakerPulseDefault from "SpeakerPulse" /* 13659 */;
 import react from "react" /* 19 */;
-import StatusConstants from "StatusConstants" /* 1178 */;
+import StatusConstants from "StatusConstants" /* 1190 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
+
+const CutoutableAvatarImageDefault = CutoutableAvatarImage;
 
 let c9;
 let metroImportAll;
@@ -58,6 +67,86 @@ function getStatusSize(arg0) {
   }
   return metroImportDefault.SMALL;
 }
+function getAvatarStatusCutout(arg0) {
+  let avatarSize;
+  let cornerRadius;
+  let cornerRadius2;
+  let diff;
+  let height;
+  let height2;
+  let height3;
+  let isMobileOnline;
+  let isVROnline;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let statusSizeOverride;
+  let tmp15Result;
+  let tmp4Result4;
+  let userStatus;
+  let width;
+  let width2;
+  let width3;
+  ({ avatarSize, userStatus, isMobileOnline, isVROnline, statusSizeOverride } = arg0);
+  if (null != userStatus) {
+    if (userStatus !== StatusTypes.UNKNOWN) {
+      const tmp6 = CutoutableAvatarImage.AVATAR_SIZE_MAP[avatarSize];
+      if (statusSizeOverride == null) {
+        statusSizeOverride = getStatusSize(avatarSize);
+      }
+      if (statusSizeOverride == null) {
+        statusSizeOverride = 0;
+      }
+      const result = statusSizeOverride / 4;
+      if (tmp2) {
+        const tmp4Result = Status_StatusUtils;
+        const statusTypingDimensions = tmp4Result.getStatusTypingDimensions(statusSizeOverride);
+        ({ width: width3, height: height3 } = statusTypingDimensions);
+        const tmp15 = getStatusContainerStyleDefault;
+        if (isMobileOnline == null) {
+          isMobileOnline = false;
+        }
+        if (isVROnline == null) {
+          isVROnline = false;
+        }
+        const sum = height3 + 2 * metroRequire;
+        const obj2 = { nativeCutouts: items };
+        size = { shape: ClipView.CutoutShape.RoundedRect, x: diff + tmp4Result4.getAnimatedTypingTranslateX(tmp15Result.width), y: tmp6 - height3 - metroRequire, width: width3 + 2 * metroRequire, height: sum, cornerRadius: sum / 2 };
+        diff = tmp6 - width3 - metroRequire;
+        tmp15Result = tmp15(statusSizeOverride, isMobileOnline, isVROnline);
+        items = [size];
+        tmp4Result4 = Status_StatusUtils;
+        return obj2;
+      } else if (isVROnline) {
+        const tmp4Result5 = Status_StatusUtils;
+        const vRStatusContainerRect = tmp4Result5.getVRStatusContainerRect(statusSizeOverride);
+        ({ width: width2, height: height2 } = vRStatusContainerRect);
+        const obj3 = { nativeCutouts: items1 };
+        const size1 = { shape: ClipView.CutoutShape.RoundedRect, x: tmp6 - width2 + result, y: tmp6 - height2 + result, width: width2, height: height2, cornerRadius: cornerRadius2 };
+        cornerRadius2 = vRStatusContainerRect.cornerRadius;
+        items1 = [size1];
+        return obj3;
+      } else if (isMobileOnline) {
+        const tmp4Result6 = Status_StatusUtils;
+        const mobileStatusContainerRect = tmp4Result6.getMobileStatusContainerRect(statusSizeOverride);
+        ({ width, height } = mobileStatusContainerRect);
+        const obj4 = { nativeCutouts: items2 };
+        const size2 = { shape: ClipView.CutoutShape.RoundedRect, x: tmp6 - width + result, y: tmp6 - height + result, width, height, cornerRadius };
+        cornerRadius = mobileStatusContainerRect.cornerRadius;
+        items2 = [size2];
+        return obj4;
+      } else {
+        const sum1 = statusSizeOverride / 2 + tmp;
+        const diff1 = tmp6 - sum1 - 2 * result;
+        const obj = { nativeCutouts: items3 };
+        const point = { shape: ClipView.CutoutShape.Circle, x: diff1, y: diff1, size: 2 * sum1 };
+        items3 = [point];
+        return obj;
+      }
+    }
+  }
+}
 const View = react_native.View;
 const StatusTypes = Constants.StatusTypes;
 ({ STATUS_PADDING: metroRequire, StatusSizes: metroImportDefault } = StatusConstants);
@@ -77,7 +166,369 @@ let closure_10 = createStyles.createStyles((NORMAL) => {
   decorationSizeForAvatarSize1 = obj6.getDecorationSizeForAvatarSize(NORMAL);
   return obj;
 });
-const memoResult = react.memo((isMobileOnline) => {
+let memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let accessibilityLabel;
+  let accessible;
+  let animate;
+  let autoStatusCutout;
+  let cutout;
+  let isMobileOnline;
+  let isStageCall;
+  let isVROnline;
+  let needsOffscreenAlphaCompositing;
+  let source;
+  let speaking;
+  let speakingColor;
+  let status;
+  let statusSizeOverride;
+  let streaming;
+  let style;
+  let tmp21;
+  let tmp23;
+  let typing;
+  let tmp = channel;
+  let tmp2 = speakingColor;
+  let obj = channel(speakingColor[13]);
+  const cResult = obj.c(78);
+  channel = channel.channel;
+  ({ streaming, isMobileOnline, isVROnline, status } = channel);
+  ({ size, animate, speaking, speakingColor } = channel);
+  const avatarDecoration = channel.avatarDecoration;
+  const mute = channel.mute;
+  const deaf = channel.deaf;
+  const statusStyle = channel.statusStyle;
+  const avatarStyle = channel.avatarStyle;
+  ({ style, cutout, autoStatusCutout, isStageCall, source } = channel);
+  const user = channel.user;
+  const guildId = channel.guildId;
+  const disablePlaceholder = channel.disablePlaceholder;
+  ({ needsOffscreenAlphaCompositing, accessible, accessibilityLabel, typing, statusSizeOverride } = channel);
+  let tmp4 = undefined !== streaming && streaming;
+  streaming = tmp4;
+  let tmp5 = undefined !== isMobileOnline && isMobileOnline;
+  isMobileOnline = tmp5;
+  let tmp6 = undefined !== isVROnline && isVROnline;
+  isVROnline = tmp6;
+  if (undefined === size) {
+    size = tmp(tmp2[7]).AvatarSizes.NORMAL;
+  }
+  animate = tmp7;
+  const tmp8 = undefined !== speaking && speaking;
+  let closure_18 = tmp8;
+  let tmp9 = undefined !== isStageCall && isStageCall;
+  let closure_19 = tmp9;
+  let tmp10 = undefined !== typing && typing;
+  let closure_20 = tmp10;
+  let tmp11 = guildId(size);
+  let closure_21 = tmp11;
+  if (cResult[0] === cutout) {
+    if (cResult[1] === autoStatusCutout) {
+      if (cResult[2] === tmp5) {
+        if (cResult[3] === tmp6) {
+          if (cResult[4] === size) {
+            if (cResult[5] === status) {
+              if (cResult[6] === statusSizeOverride) {
+                let tmp12;
+                if (cResult[7] === tmp10) {
+                  tmp12 = cResult[8];
+                }
+                if (cResult[9] === tmp12) {
+                  let tmp15;
+                  if (cResult[10] === -tmp11.decoration.top) {
+                    tmp15 = cResult[11];
+                  }
+                  if (cResult[12] === tmp15) {
+                    let tmp17;
+                    if (cResult[13] === tmp12) {
+                      tmp17 = cResult[14];
+                    }
+                    const cutout2 = tmp17.cutout;
+                    const decorationCutout = tmp17.decorationCutout;
+                    if (cResult[15] === (undefined !== animate && animate)) {
+                      if (cResult[16] === avatarStyle) {
+                        if (cResult[17] === channel) {
+                          if (cResult[18] === cutout2) {
+                            if (cResult[19] === disablePlaceholder) {
+                              if (cResult[20] === guildId) {
+                                if (cResult[21] === size) {
+                                  if (cResult[22] === source) {
+                                    if (cResult[23] === user) {
+                                      let tmp19 = cResult[24];
+                                    }
+                                    if (cResult[25] === (undefined !== animate && animate)) {
+                                      if (cResult[26] === avatarDecoration) {
+                                        if (cResult[27] === decorationCutout) {
+                                          if (cResult[28] === size) {
+                                            if (cResult[31] === tmp5) {
+                                              if (cResult[32] === tmp6) {
+                                                if (cResult[33] === size) {
+                                                  if (cResult[34] === status) {
+                                                    if (cResult[35] === statusSizeOverride) {
+                                                      if (cResult[36] === statusStyle) {
+                                                        if (cResult[37] === tmp4) {
+                                                          if (cResult[38] === tmp11.status) {
+                                                            if (cResult[39] === tmp10) {
+                                                              if (cResult[42] === deaf) {
+                                                                if (cResult[43] === mute) {
+                                                                  if (cResult[44] === tmp11.status) {
+                                                                    if (cResult[47] === tmp9) {
+                                                                      if (cResult[48] === size) {
+                                                                        if (cResult[49] === tmp8) {
+                                                                          if (cResult[50] === speakingColor) {
+                                                                            if (cResult[51] === tmp11.speaking) {
+                                                                              const tmp27 = tmp(tmp2[7]).styles[size];
+                                                                              class St {
+                                                                                constructor() {
+                                                                                  let items;
+                                                                                  let items1;
+                                                                                  let obj3;
+                                                                                  let obj4;
+                                                                                  let tmp10;
+                                                                                  let tmp23;
+                                                                                  let tmp3;
+                                                                                  const tmp = deaf;
+                                                                                  if (tmp) {
+                                                                                    const obj2 = { style: items, children: metroImportAll(tmp23, obj3) };
+                                                                                    items = [, ];
+                                                                                    ({ status: arr2[0], voiceStatus: arr2[1] } = closure_21);
+                                                                                    obj3 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.WHITE };
+                                                                                    tmp23 = IconDefault;
+                                                                                    tmp3 = metroImportAll(View, obj2);
+                                                                                  } else if (mute) {
+                                                                                    const obj = { style: items1, children: metroImportAll(tmp10, obj4) };
+                                                                                    items1 = [, ];
+                                                                                    ({ status: arr[0], voiceStatus: arr[1] } = closure_21);
+                                                                                    obj4 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, color: nativeDefault.unsafe_rawColors.WHITE };
+                                                                                    tmp10 = IconDefault;
+                                                                                    tmp3 = metroImportAll(View, obj);
+                                                                                  }
+                                                                                  return tmp3;
+                                                                                }
+                                                                              }
+                                                                              let items = [tmp27, tmp11.container, style];
+                                                                              cResult[54] = style;
+                                                                              cResult[55] = tmp11.container;
+                                                                              cResult[56] = tmp27;
+                                                                              cResult[57] = items;
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    class St {
+                                                                      constructor() {
+                                                                        let items;
+                                                                        let items1;
+                                                                        let obj3;
+                                                                        let obj4;
+                                                                        let tmp10;
+                                                                        let tmp23;
+                                                                        let tmp3;
+                                                                        const tmp = deaf;
+                                                                        if (tmp) {
+                                                                          const obj2 = { style: items, children: metroImportAll(tmp23, obj3) };
+                                                                          items = [, ];
+                                                                          ({ status: arr2[0], voiceStatus: arr2[1] } = closure_21);
+                                                                          obj3 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.WHITE };
+                                                                          tmp23 = IconDefault;
+                                                                          tmp3 = metroImportAll(View, obj2);
+                                                                        } else if (mute) {
+                                                                          const obj = { style: items1, children: metroImportAll(tmp10, obj4) };
+                                                                          items1 = [, ];
+                                                                          ({ status: arr[0], voiceStatus: arr[1] } = closure_21);
+                                                                          obj4 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, color: nativeDefault.unsafe_rawColors.WHITE };
+                                                                          tmp10 = IconDefault;
+                                                                          tmp3 = metroImportAll(View, obj);
+                                                                        }
+                                                                        return tmp3;
+                                                                      }
+                                                                    }
+                                                                    cResult[47] = tmp9;
+                                                                    cResult[48] = size;
+                                                                    cResult[49] = tmp8;
+                                                                    cResult[50] = speakingColor;
+                                                                    cResult[51] = tmp11.speaking;
+                                                                    cResult[52] = tmp11.stageSpeaking;
+                                                                    cResult[53] = tmp26;
+                                                                  }
+                                                                }
+                                                              }
+                                                              class St {
+                                                                constructor() {
+                                                                  let items;
+                                                                  let items1;
+                                                                  let obj3;
+                                                                  let obj4;
+                                                                  let tmp10;
+                                                                  let tmp23;
+                                                                  let tmp3;
+                                                                  const tmp = deaf;
+                                                                  if (tmp) {
+                                                                    const obj2 = { style: items, children: metroImportAll(tmp23, obj3) };
+                                                                    items = [, ];
+                                                                    ({ status: arr2[0], voiceStatus: arr2[1] } = closure_21);
+                                                                    obj3 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.WHITE };
+                                                                    tmp23 = IconDefault;
+                                                                    tmp3 = metroImportAll(View, obj2);
+                                                                  } else if (mute) {
+                                                                    const obj = { style: items1, children: metroImportAll(tmp10, obj4) };
+                                                                    items1 = [, ];
+                                                                    ({ status: arr[0], voiceStatus: arr[1] } = closure_21);
+                                                                    obj4 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, color: nativeDefault.unsafe_rawColors.WHITE };
+                                                                    tmp10 = IconDefault;
+                                                                    tmp3 = metroImportAll(View, obj);
+                                                                  }
+                                                                  return tmp3;
+                                                                }
+                                                              }
+                                                              cResult[42] = deaf;
+                                                              cResult[43] = mute;
+                                                              cResult[44] = tmp11.status;
+                                                              cResult[45] = tmp11.voiceStatus;
+                                                              cResult[46] = St;
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            cResult[31] = tmp5;
+                                            cResult[32] = tmp6;
+                                            cResult[33] = size;
+                                            cResult[34] = status;
+                                            cResult[35] = statusSizeOverride;
+                                            cResult[36] = statusStyle;
+                                            cResult[37] = tmp4;
+                                            cResult[38] = tmp11.status;
+                                            cResult[39] = tmp10;
+                                            cResult[40] = user;
+                                            cResult[41] = tmp23;
+                                          }
+                                        }
+                                      }
+                                    }
+                                    cResult[25] = undefined !== animate && animate;
+                                    cResult[26] = avatarDecoration;
+                                    cResult[27] = decorationCutout;
+                                    cResult[28] = size;
+                                    cResult[29] = tmp11.decoration;
+                                    cResult[30] = tmp21;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    function st() {
+                      let tmp6;
+                      const obj = { disablePlaceholder, style: avatarStyle, cutout: cutout2 };
+                      if (null == source) {
+                        let tmp4;
+                        if (null == user) {
+                          tmp4 = null;
+                        }
+                        return tmp4;
+                      }
+                      if (null != source) {
+                        const obj2 = { source, size, animate };
+                        const tmp29 = CutoutableAvatarImageDefault;
+                        const merged = Object.assign(obj);
+                        tmp6 = metroImportAll(tmp29, obj2);
+                      } else if (null != user) {
+                        const obj3 = { user: tmp35, guildId, size, animate };
+                        const tmp19 = CutoutableAvatarImageDefault;
+                        const merged1 = Object.assign(obj);
+                        tmp6 = metroImportAll(tmp19, obj3);
+                      } else if (null != channel) {
+                        const obj4 = { channel: tmp5, size, animate };
+                        const tmp10 = CutoutableAvatarImageDefault;
+                        const merged2 = Object.assign(obj);
+                        tmp6 = metroImportAll(tmp10, obj4);
+                      }
+                      tmp4 = tmp6;
+                    }
+                    cResult[15] = undefined !== animate && animate;
+                    cResult[16] = avatarStyle;
+                    cResult[17] = channel;
+                    cResult[18] = cutout2;
+                    cResult[19] = disablePlaceholder;
+                    cResult[20] = guildId;
+                    cResult[21] = size;
+                    cResult[22] = source;
+                    cResult[23] = user;
+                    cResult[24] = st;
+                    tmp19 = st;
+                  }
+                  tmp18[0] = tmp12;
+                  tmp18[1] = tmp15;
+                  cResult[12] = tmp15;
+                  cResult[13] = tmp12;
+                  cResult[14] = tmp18;
+                  tmp17 = tmp18;
+                }
+                const tmpResult = tmp(tmp2[11]);
+                const decorationCutoutForAvatarCutout = tmpResult.getDecorationCutoutForAvatarCutout(tmp12, tmp14);
+                cResult[9] = tmp12;
+                cResult[10] = -tmp11.decoration.top;
+                cResult[11] = decorationCutoutForAvatarCutout;
+                tmp15 = decorationCutoutForAvatarCutout;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  let tmp13 = cutout;
+  if (null != autoStatusCutout) {
+    let obj2 = { avatarSize: size, userStatus: null, isMobileOnline: tmp5, isVROnline: tmp6, padding: true === autoStatusCutout ? statusStyle : autoStatusCutout.padding, typing: tmp10, statusSizeOverride };
+    class St {
+      constructor() {
+        let items;
+        let items1;
+        let obj3;
+        let obj4;
+        let tmp10;
+        let tmp23;
+        let tmp3;
+        const tmp = deaf;
+        if (tmp) {
+          const obj2 = { style: items, children: metroImportAll(tmp23, obj3) };
+          items = [, ];
+          ({ status: arr2[0], voiceStatus: arr2[1] } = closure_21);
+          obj3 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.WHITE };
+          tmp23 = IconDefault;
+          tmp3 = metroImportAll(View, obj2);
+        } else if (mute) {
+          const obj = { style: items1, children: metroImportAll(tmp10, obj4) };
+          items1 = [, ];
+          ({ status: arr[0], voiceStatus: arr[1] } = closure_21);
+          obj4 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, color: nativeDefault.unsafe_rawColors.WHITE };
+          tmp10 = IconDefault;
+          tmp3 = metroImportAll(View, obj);
+        }
+        return tmp3;
+      }
+    }
+    tmp13 = statusSizeOverride(obj2);
+  }
+  cResult[0] = cutout;
+  cResult[1] = autoStatusCutout;
+  cResult[2] = tmp5;
+  cResult[3] = tmp6;
+  cResult[4] = size;
+  cResult[5] = status;
+  cResult[6] = statusSizeOverride;
+  cResult[7] = tmp10;
+  cResult[8] = tmp13;
+  tmp12 = tmp13;
+}) : ((isMobileOnline) => {
   let accessibilityLabel;
   let accessible;
   let avatarDecoration;
@@ -125,8 +576,7 @@ const memoResult = react.memo((isMobileOnline) => {
   const status = isMobileOnline.status;
   let NORMAL = isMobileOnline.size;
   if (NORMAL === undefined) {
-    let tmp = flag;
-    const tmp2 = status;
+    let tmp2 = status;
     NORMAL = flag(status[7]).AvatarSizes.NORMAL;
   }
   let flag3 = isMobileOnline.animate;
@@ -154,120 +604,51 @@ const memoResult = react.memo((isMobileOnline) => {
   let statusSizeOverride = isMobileOnline.statusSizeOverride;
   const tmp3 = closure_10(NORMAL);
   const decoration = tmp3;
-  let items = [cutout, autoStatusCutout, flag, flag2, NORMAL, status, typing, statusSizeOverride, tmp3];
+  const items = [cutout, autoStatusCutout, flag, flag2, NORMAL, status, typing, statusSizeOverride, tmp3];
   const memo = NORMAL.useMemo(() => {
-    let cornerRadius;
-    let cornerRadius2;
-    let diff;
-    let height;
-    let height2;
-    let height3;
-    let items;
-    let items1;
-    let items2;
-    let items3;
-    let obj12;
-    let obj14;
-    let tmp;
-    let tmp29Result;
-    let width;
-    let width2;
-    let width3;
+    let obj3;
+    let tmp2;
     if (null != autoStatusCutout) {
-      let num = statusSizeOverride;
-      let tmp6;
-      if (null != status) {
-        if (status !== StatusTypes.UNKNOWN) {
-          const tmp43 = CutoutableAvatarImage.AVATAR_SIZE_MAP[NORMAL];
-          if (num == null) {
-            num = getStatusSize(tmp2);
-          }
-          if (num == null) {
-            num = 0;
-          }
-          const result = num / 4;
-          if (tmp5) {
-            const obj9 = Status_StatusUtils;
-            const statusTypingDimensions = obj9.getStatusTypingDimensions(num);
-            ({ width: width3, height: height3 } = statusTypingDimensions);
-            const tmp29 = getStatusContainerStyleDefault;
-            const sum = height3 + 2 * metroRequire;
-            const obj2 = { nativeCutouts: items };
-            size = { shape: ClipView.CutoutShape.RoundedRect, x: diff + obj12.getAnimatedTypingTranslateX(tmp29Result.width), y: tmp43 - height3 - metroRequire, width: width3 + 2 * metroRequire, height: sum, cornerRadius: sum / 2 };
-            diff = tmp43 - width3 - metroRequire;
-            tmp29Result = tmp29(num, flag, flag2);
-            items = [size];
-            tmp6 = obj2;
-            obj12 = Status_StatusUtils;
-          } else if (flag2) {
-            const obj6 = Status_StatusUtils;
-            const vRStatusContainerRect = obj6.getVRStatusContainerRect(num);
-            ({ width: width2, height: height2 } = vRStatusContainerRect);
-            const obj4 = { nativeCutouts: items1 };
-            const size1 = { shape: ClipView.CutoutShape.RoundedRect, x: tmp43 - width2 + result, y: tmp43 - height2 + result, width: width2, height: height2, cornerRadius: cornerRadius2 };
-            cornerRadius2 = vRStatusContainerRect.cornerRadius;
-            items1 = [size1];
-            tmp6 = obj4;
-          } else if (flag) {
-            const obj3 = Status_StatusUtils;
-            const mobileStatusContainerRect = obj3.getMobileStatusContainerRect(num);
-            ({ width, height } = mobileStatusContainerRect);
-            const obj5 = { nativeCutouts: items2 };
-            const size2 = { shape: ClipView.CutoutShape.RoundedRect, x: tmp43 - width + result, y: tmp43 - height + result, width, height, cornerRadius };
-            cornerRadius = mobileStatusContainerRect.cornerRadius;
-            items2 = [size2];
-            tmp6 = obj5;
-          } else {
-            const sum1 = num / 2 + tmp4;
-            const diff1 = tmp43 - sum1 - 2 * result;
-            const obj = { nativeCutouts: items3 };
-            const point = { shape: ClipView.CutoutShape.Circle, x: diff1, y: diff1, size: 2 * sum1 };
-            items3 = [point];
-            tmp6 = obj;
-          }
-        }
-      }
-      tmp = tmp6;
+      const obj = { avatarSize: NORMAL, userStatus: status, isMobileOnline: flag, isVROnline: flag2, padding: true === autoStatusCutout ? metroRequire : autoStatusCutout.padding, typing, statusSizeOverride };
+      tmp2 = getAvatarStatusCutout(obj);
     } else {
-      tmp = cutout;
+      tmp2 = cutout;
     }
-    const obj7 = { cutout: tmp, decorationCutout: obj14.getDecorationCutoutForAvatarCutout(tmp, -decoration.decoration.top) };
-    obj14 = avatar_decorations_AvatarDecorationUtils;
-    return obj7;
+    const obj2 = { cutout: tmp2, decorationCutout: obj3.getDecorationCutoutForAvatarCutout(tmp2, -decoration.decoration.top) };
+    obj3 = avatar_decorations_AvatarDecorationUtils;
+    return obj2;
   }, items);
-  let tmp6 = cutout;
   let obj = { style: items1, needsOffscreenAlphaCompositing, accessible, accessibilityLabel, children: null };
   ({ cutout: cutout2, decorationCutout } = memo);
-  const tmp5 = closure_9;
   items1 = [flag(status[7]).styles[NORMAL], tmp3.container, style];
   let tmp9 = null;
+  const tmp5 = closure_9;
   if (flag4) {
     let tmp11Result;
-    let num = 4;
-    let sum = tmp7(tmp8[7]).AVATAR_SIZE_MAP[NORMAL] + 4;
+    const sum = tmp7(tmp8[7]).AVATAR_SIZE_MAP[NORMAL] + 4;
     if (isStageCall) {
       let obj2 = { color: speakingColor, style: items2 };
       items2 = [tmp3.stageSpeaking, ];
       size = { width: sum, height: sum, borderRadius: sum / 2 };
       items2[1] = size;
-      tmp11Result = tmp11(flag2(tmp8[12]), obj2);
+      tmp11Result = tmp11(flag2(tmp8[19]), obj2);
     } else {
-      let items3 = [tmp3.speaking, , ];
-      let size1 = { width: sum, height: sum, borderRadius: sum / 2 };
+      const items3 = [tmp3.speaking, , ];
+      const size1 = { width: sum, height: sum, borderRadius: sum / 2 };
       items3[1] = size1;
       let tmp12 = null;
       if (null != speakingColor) {
         let obj3 = { borderColor: speakingColor };
         tmp12 = obj3;
       }
-      let obj4 = { style: items3 };
+      const obj4 = { style: items3 };
       items3[2] = tmp12;
       tmp11Result = tmp11(tmp6, obj4);
     }
     tmp9 = tmp11Result;
   }
   const items4 = [tmp9, , , , ];
-  let obj5 = { disablePlaceholder, style: avatarStyle, cutout: cutout2 };
+  const obj5 = { disablePlaceholder, style: avatarStyle, cutout: cutout2 };
   if (null == source) {
     let tmp15;
     let tmp55;
@@ -277,8 +658,8 @@ const memoResult = react.memo((isMobileOnline) => {
     items4[1] = tmp15;
     let tmp35 = null;
     if (null != avatarDecoration) {
-      let obj6 = { size: tmp7Result.getDecorationSizeForAvatarSize(NORMAL), avatarDecoration, decorationStyle: tmp3.decoration, animate: flag3, cutout: decorationCutout };
-      const tmp38 = flag2(status[13]);
+      const obj6 = { size: tmp7Result.getDecorationSizeForAvatarSize(NORMAL), avatarDecoration, decorationStyle: tmp3.decoration, animate: flag3, cutout: decorationCutout };
+      const tmp38 = flag2(status[14]);
       tmp7Result = flag(status[11]);
       tmp35 = decoration(tmp38, obj6, avatarDecoration.asset);
     }
@@ -292,7 +673,7 @@ const memoResult = react.memo((isMobileOnline) => {
         }
         let tmp42 = null;
         if (null != statusSizeOverride) {
-          let obj7 = { size: statusSizeOverride, isMobileOnline: flag, isVROnline: flag2, status, streaming, style: items5 };
+          const obj7 = { size: statusSizeOverride, isMobileOnline: flag, isVROnline: flag2, status, streaming, style: items5 };
           items5 = [tmp3.status, statusStyle];
           tmp42 = obj7;
         }
@@ -302,14 +683,14 @@ const memoResult = react.memo((isMobileOnline) => {
             let tmp50;
             if (null != user) {
               const obj8 = { typing, userId: user.id };
-              const StatusWithTyping = tmp7(tmp8[14]).StatusWithTyping;
+              const StatusWithTyping = tmp7(tmp8[15]).StatusWithTyping;
               const merged = Object.assign(tmp42);
               tmp50 = decoration(StatusWithTyping, obj8);
             }
             tmp43 = tmp50;
           }
-          let obj9 = {};
-          const tmp46 = flag2(status[14]);
+          const obj9 = {};
+          const tmp46 = flag2(status[15]);
           const merged1 = Object.assign(tmp42);
           tmp50 = decoration(tmp46, obj9);
         }
@@ -321,24 +702,23 @@ const memoResult = react.memo((isMobileOnline) => {
       const obj10 = { style: items6, children: decoration(tmp61, obj11) };
       items6 = [, ];
       ({ status: arr8[0], voiceStatus: arr8[1] } = tmp3);
-      obj11 = { size: flag2(status[15]).Sizes.REFRESH_SMALL_16, source: flag2(status[16]), color: flag2(status[6]).unsafe_rawColors.WHITE };
-      tmp61 = flag2(status[15]);
+      obj11 = { size: flag2(status[16]).Sizes.REFRESH_SMALL_16, source: flag2(status[17]), color: flag2(status[6]).unsafe_rawColors.WHITE };
+      tmp61 = flag2(status[16]);
       tmp55 = decoration(tmp6, obj10);
     } else if (mute) {
-      let obj12 = { style: items7, children: decoration(tmp58, obj13) };
+      const obj12 = { style: items7, children: decoration(tmp58, obj13) };
       items7 = [, ];
       ({ status: arr7[0], voiceStatus: arr7[1] } = tmp3);
-      obj13 = { size: flag2(status[15]).Sizes.REFRESH_SMALL_16, source: flag2(status[17]), color: flag2(status[6]).unsafe_rawColors.WHITE };
-      tmp58 = flag2(status[15]);
+      obj13 = { size: flag2(status[16]).Sizes.REFRESH_SMALL_16, source: flag2(status[18]), color: flag2(status[6]).unsafe_rawColors.WHITE };
+      tmp58 = flag2(status[16]);
       tmp55 = decoration(tmp6, obj12);
     }
     items4[4] = tmp55;
     obj.children = items4;
-    return tmp5(tmp6, obj);
+    return tmp5(cutout, obj);
   }
   if (null != source) {
-    let tmp29 = decoration;
-    let obj14 = { source, size: NORMAL, animate: flag3 };
+    const obj14 = { source, size: NORMAL, animate: flag3 };
     const tmp31 = flag2(status[7]);
     const merged2 = Object.assign(obj5);
     tmp16 = decoration(tmp31, obj14);
@@ -354,7 +734,7 @@ const memoResult = react.memo((isMobileOnline) => {
     tmp16 = decoration(tmp19, obj16);
   }
   tmp15 = tmp16;
-});
+}));
 let size = size_mod;
 let result = size.fileFinishedImporting("design/void/Avatar/native/Avatar.tsx");
 

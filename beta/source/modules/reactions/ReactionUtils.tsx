@@ -1,18 +1,18 @@
-// Module ID: 4481
-// Function ID: 4482
+// Module ID: 4484
+// Function ID: 4485
 // Name: ReactionUtils
-// Dependencies: [502, 1074, 4482, 4483, 1115, 7182, 2021, 1241, 2]
+// Dependencies: [502, 1086, 4485, 4486, 1127, 7186, 2027, 1253, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, isMeReaction, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
-// Module 4481 (ReactionUtils)
-import intl2 from "intl" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import NotificationConstants from "NotificationConstants" /* 4482 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7182 */;
+// Module 4484 (ReactionUtils)
+import intl2 from "intl" /* 1127 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import NotificationConstants from "NotificationConstants" /* 4485 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4486 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7186 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -33,7 +33,7 @@ export const getReactionEmojiName = function getReactionEmojiName(emoji) {
   }
   return result;
 };
-export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayName(me, count, emoji, arg3) {
+export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayName(selected, count, emoji, arg3) {
   let PirBBE;
   let str2;
   let str3;
@@ -43,7 +43,7 @@ export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayN
   if (tmp3) {
     let i9DXqM;
     let tmp10;
-    if (me) {
+    if (selected) {
       i9DXqM = t.i9DXqM;
       tmp10 = tmp;
     } else {
@@ -52,14 +52,14 @@ export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayN
     }
     tmp6 = tmp10;
     PirBBE = i9DXqM;
-  } else if (me) {
+  } else if (selected) {
     PirBBE = t.CLuzw5;
     tmp6 = tmp;
   } else {
     PirBBE = t.PirBBE;
     tmp6 = tmp;
   }
-  const intl = tmp6(1115).intl;
+  const intl = tmp6(1127).intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { reactions: count, emojiName: str3 };
   if (null == emoji.id) {

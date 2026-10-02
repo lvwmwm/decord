@@ -1,28 +1,19 @@
 // Module ID: 1544
 // Function ID: 1545
 // Dependencies: []
+// Exports: isRecordEqual
 
 // Module 1544
 
-export default (str, str2) => {
-  if (typeof str === "string") {
-    if (typeof str2 === "string") {
-      if ("" === str2) {
-        const items = [str];
-        return items;
-      } else {
-        let items2;
-        const index = str.indexOf(str2);
-        if (-1 === index) {
-          const items1 = [str];
-          items2 = items1;
-        } else {
-          items2 = [str.slice(0, index), str.slice(index + str2.length)];
-        }
-        return items2;
-      }
-    }
+export const isRecordEqual = function isRecordEqual(value, arg1) {
+  let closure_1 = arg1;
+  if (value === arg1) {
+    return true;
+  } else {
+    const _Object = Object;
+    const keys = Object.keys(value);
+    const _Object2 = Object;
+    const tmp2 = keys.length === Object.keys(arg1).length && keys.every((item) => Object.is(value[item], closure_1[item]));
+    return tmp2;
   }
-  const typeError = new TypeError("Expected the arguments to be of type `string`");
-  throw typeError;
 };

@@ -1,11 +1,11 @@
-// Module ID: 11526
-// Function ID: 11527
+// Module ID: 11402
+// Function ID: 11403
 // Name: AppLauncherOnboardingPersistedStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 11526 (AppLauncherOnboardingPersistedStore)
+// Module 11402 (AppLauncherOnboardingPersistedStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let triggeredOnboardingContentMetadata = { canShowBotsBanner: false, canShowAppsOrActivitiesBanner: false, willShowGlobalSearchOnboarding: false, timeMs: 0, channelId: "0" };

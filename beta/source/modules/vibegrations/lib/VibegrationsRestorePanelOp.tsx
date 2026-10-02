@@ -1,12 +1,12 @@
-// Module ID: 16308
-// Function ID: 16309
+// Module ID: 16310
+// Function ID: 16311
 // Name: VibegrationsRestorePanelOp
-// Dependencies: [1115, 3715, 2]
+// Dependencies: [1127, 3718, 2]
 // Exports: restoreEnvironmentLabel, restorePanelEnvironments, restorePanelStatusForEnvironment, restorePointOriginLabel
 
-// Module 16308 (VibegrationsRestorePanelOp)
-import intl4 from "intl" /* 1115 */;
-import _modDef3715 from "module_3715" /* 3715 */;
+// Module 16310 (VibegrationsRestorePanelOp)
+import intl4 from "intl" /* 1127 */;
+import _modDef3718 from "module_3718" /* 3718 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsRestorePanelOp.tsx");
@@ -15,13 +15,13 @@ export const RESTORE_WINDOW_DAYS = 30;
 export const restorePointOriginLabel = function restorePointOriginLabel(origin) {
   if ("auto_deploy" === origin) {
     const intl3 = intl4.intl;
-    return intl3.string(_modDef3715.h4zhWL);
+    return intl3.string(_modDef3718.h4zhWL);
   } else if ("undo" === origin) {
     const intl2 = intl4.intl;
-    return intl2.string(_modDef3715["c/tNny"]);
+    return intl2.string(_modDef3718["c/tNny"]);
   } else {
     const intl = intl4.intl;
-    return intl.string(_modDef3715["jViU+0"]);
+    return intl.string(_modDef3718["jViU+0"]);
   }
 };
 export const restoreEnvironmentLabel = function restoreEnvironmentLabel(id) {
@@ -29,9 +29,9 @@ export const restoreEnvironmentLabel = function restoreEnvironmentLabel(id) {
   const intl = intl4.intl;
   const string = intl.string;
   if ("preview" === id) {
-    prop = _modDef3715["/kYdZe"];
+    prop = _modDef3718["/kYdZe"];
   } else {
-    prop = _modDef3715["1/CVzo"];
+    prop = _modDef3718["1/CVzo"];
   }
   return string(prop);
 };

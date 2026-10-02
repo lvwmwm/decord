@@ -1,10 +1,10 @@
-// Module ID: 9414
-// Function ID: 9415
+// Module ID: 9410
+// Function ID: 9411
 // Name: MobileGoLiveUpsellExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1441, 2]
 
-// Module 9414 (MobileGoLiveUpsellExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 9410 (MobileGoLiveUpsellExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

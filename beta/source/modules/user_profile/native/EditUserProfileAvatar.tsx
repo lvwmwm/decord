@@ -1,19 +1,19 @@
-// Module ID: 14165
-// Function ID: 14166
+// Module ID: 14153
+// Function ID: 14154
 // Name: EditUserProfileAvatar
-// Dependencies: [19, 4825, 21, 4836, 6583, 6603, 4488, 7604, 7614, 14166, 4800, 14167, 1981, 14168, 14168, 7602, 7611, 504, 4566, 4837, 7703, 5435, 1115, 14169, 1177, 2]
+// Dependencies: [19, 4826, 21, 4837, 6584, 6604, 4491, 7608, 7618, 14154, 4801, 14155, 1987, 14156, 14156, 7606, 7615, 504, 4570, 4838, 7707, 5436, 1127, 14157, 1189, 2]
 // Exports: default
 
-// Module 14165 (EditUserProfileAvatar)
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import timing from "timing" /* 4837 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 7611 */;
+// Module 14153 (EditUserProfileAvatar)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import timing from "timing" /* 4838 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 7615 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -112,7 +112,7 @@ export default function EditUserProfileAvatar(user) {
       showRemoveAvatar: obj2.showRemoveAvatar(pendingAvatar, user.avatar)
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(14167, dependencyMap.paths);
+    const tmp2 = asyncRequire(14155, dependencyMap.paths);
     obj2 = ProfileCustomizationUtils;
     openLazy(tmp2, "Change Avatar", obj);
   }, items);

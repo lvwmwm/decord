@@ -1,14 +1,14 @@
-// Module ID: 15556
-// Function ID: 15557
+// Module ID: 15544
+// Function ID: 15545
 // Name: ScreenRecordingStore
-// Dependencies: [560, 15557, 2]
+// Dependencies: [570, 15545, 2]
 
-// Module 15556 (ScreenRecordingStore)
-import ScreenRecordingUtils from "ScreenRecordingUtils" /* 15557 */;
-import module_560 from "module_560" /* 560 */;
+// Module 15544 (ScreenRecordingStore)
+import ScreenRecordingUtils from "ScreenRecordingUtils" /* 15545 */;
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
-let obj = module_560.create((arg0, arg1) => {
+let obj = module_570.create((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let obj = {

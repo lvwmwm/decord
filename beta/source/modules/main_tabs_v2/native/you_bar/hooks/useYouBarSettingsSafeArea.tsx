@@ -1,31 +1,57 @@
-// Module ID: 12999
-// Function ID: 13000
+// Module ID: 13001
+// Function ID: 13002
 // Name: useYouBarSettingsSafeArea
-// Dependencies: [1613, 6364, 1365, 2]
-// Exports: useYouBarSettingsCustomHeaderPaddingTop, useYouBarSettingsOutsideSafeAreaTop
+// Dependencies: [558, 1619, 576, 6361, 1371, 2]
 
-// Module 12999 (useYouBarSettingsSafeArea)
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6364 */;
+// Module 13001 (useYouBarSettingsSafeArea)
+import react from "react" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6361 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarSettingsSafeArea.tsx");
-
-export const useYouBarSettingsCustomHeaderPaddingTop = function useYouBarSettingsCustomHeaderPaddingTop() {
+let tmp;
+const utils_PlatformUtils = tmp(1371);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const top = useSafeAreaInsetsDefault().top;
-  const tmp = useIsWindowLargeDefault();
   let num = 16;
-  const obj = utils_PlatformUtils;
-  const tmp2 = obj.isIOS() || tmp;
-  if (!tmp2) {
+  if (!closure_3()) {
     num = top;
   }
   return num;
-};
-export const useYouBarSettingsOutsideSafeAreaTop = function useYouBarSettingsOutsideSafeAreaTop() {
+}) : (() => {
+  const top = useSafeAreaInsetsDefault().top;
+  let num = 16;
+  if (!closure_3()) {
+    num = top;
+  }
+  return num;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  const tmp4 = useIsWindowLargeDefault();
+  if (cResult[0] !== tmp4) {
+    const tmpResult = utils_PlatformUtils;
+    const tmp6 = tmpResult.isIOS() || tmp4;
+    cResult[0] = tmp4;
+    cResult[1] = tmp6;
+    tmp5 = tmp6;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5;
+}) : (() => {
   const tmp = useIsWindowLargeDefault();
   const obj = utils_PlatformUtils;
   const tmp2 = obj.isIOS() || tmp;
   return tmp2;
-};
+});
+let closure_3 = tmp3;
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarSettingsSafeArea.tsx");
+
+export const useYouBarSettingsCustomHeaderPaddingTop = tmp2;
+export const useYouBarSettingsOutsideSafeAreaTop = tmp3;

@@ -1,17 +1,18 @@
-// Module ID: 14410
-// Function ID: 14411
+// Module ID: 14398
+// Function ID: 14399
 // Name: FamilyCenterInlineWarningNotice
-// Dependencies: [19, 17, 21, 4836, 576, 8048, 4832, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 8052, 4833, 2]
 
-// Module 14410 (FamilyCenterInlineWarningNotice)
+// Module 14398 (FamilyCenterInlineWarningNotice)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import WarningIcon2 from "WarningIcon" /* 8048 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import WarningIcon2 from "WarningIcon" /* 8052 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -26,9 +27,63 @@ obj2 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.spac
 createStyles = createStyles.createStyles;
 obj3 = { flex: 1, paddingRight: nativeDefault.space.PX_8 };
 let closure_6 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterInlineWarningNotice.tsx");
-
-export default function FamilyCenterInlineWarningNotice(arg0) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let items;
+  let style;
+  let text;
+  const obj = react2;
+  const cResult = obj.c(10);
+  ({ text, style } = arg0);
+  const tmp4 = closure_6();
+  if (cResult[0] === style) {
+    let tmp5;
+    let tmp7;
+    if (cResult[1] === tmp4.container) {
+      tmp5 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
+      const WarningIcon = tmp(8052).WarningIcon;
+      const tmp10 = React3(WarningIcon, obj2);
+      cResult[3] = tmp10;
+      tmp7 = tmp10;
+    } else {
+      tmp7 = cResult[3];
+    }
+    if (cResult[4] === tmp4.text) {
+      let tmp11;
+      if (cResult[5] === text) {
+        tmp11 = cResult[6];
+      }
+      if (cResult[7] === tmp5) {
+        let tmp14;
+        if (cResult[8] === tmp11) {
+          tmp14 = cResult[9];
+        }
+        return tmp14;
+      }
+      const obj3 = { style: tmp5, children: items };
+      items = [tmp7, tmp11];
+      const tmp17 = hasOwnProperty(View, obj3);
+      cResult[7] = tmp5;
+      cResult[8] = tmp11;
+      cResult[9] = tmp17;
+      tmp14 = tmp17;
+    }
+    const obj4 = { variant: "text-sm/medium", color: "text-strong", style: tmp4.text, children: text };
+    const tmp13 = React3(Text_Text.Text, obj4);
+    cResult[4] = tmp4.text;
+    cResult[5] = text;
+    cResult[6] = tmp13;
+    tmp11 = tmp13;
+  }
+  const items1 = [tmp4.container, style];
+  cResult[0] = style;
+  cResult[1] = tmp4.container;
+  cResult[2] = items1;
+  tmp5 = items1;
+}) : ((arg0) => {
   let items;
   let items1;
   let style;
@@ -43,4 +98,7 @@ export default function FamilyCenterInlineWarningNotice(arg0) {
   const obj3 = { variant: "text-sm/medium", color: "text-strong", style: tmp.text, children: text };
   items1[1] = React3(Text_Text.Text, obj3);
   return hasOwnProperty(View, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterInlineWarningNotice.tsx");
+
+export default tmp5;

@@ -1,17 +1,18 @@
-// Module ID: 8819
-// Function ID: 8820
+// Module ID: 8814
+// Function ID: 8815
 // Name: userSettingToActivity
-// Dependencies: [19, 5771, 1074, 4483, 2021, 504, 2]
-// Exports: getActivityFromCustomStatus, useCustomStatusActivity
+// Dependencies: [19, 5772, 1086, 4486, 558, 576, 2027, 504, 2]
+// Exports: getActivityFromCustomStatus
 
-// Module 8819 (userSettingToActivity)
+// Module 8814 (userSettingToActivity)
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1074 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
-import EmojiStore from "EmojiStore" /* 5771 */;
+import Constants from "Constants" /* 1086 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4486 */;
+import EmojiStore from "EmojiStore" /* 5772 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-function _activityFromSetting(emojiName, stateFromStores) {
+function _activityFromSetting(setting, stateFromStores) {
   let text;
   let tmp;
   let tmp6;
@@ -21,13 +22,13 @@ function _activityFromSetting(emojiName, stateFromStores) {
     tmp = obj3;
   } else {
     tmp = null;
-    if (null != emojiName.emojiName) {
+    if (null != setting.emojiName) {
       tmp = null;
-      if ("" !== emojiName.emojiName) {
+      if ("" !== setting.emojiName) {
         const getByName = UnicodeEmojisDefault.getByName;
         UnicodeEmojisDefault;
         const obj5 = UnicodeEmojisDefault;
-        const byName = getByName(obj5.convertSurrogateToName(emojiName.emojiName, false));
+        const byName = getByName(obj5.convertSurrogateToName(setting.emojiName, false));
         let tmp2 = null;
         if (null != byName) {
           tmp2 = { id: null, name: byName.surrogates, animated: false };
@@ -37,15 +38,15 @@ function _activityFromSetting(emojiName, stateFromStores) {
       }
     }
   }
-  const NumberResult = Number(emojiName.expiresAtMs);
+  const NumberResult = Number(setting.expiresAtMs);
   let value;
-  if (emojiName.label != null) {
+  if (setting.label != null) {
     value = iter.value;
   }
   const obj4 = { name: "Custom Status", type: ActivityTypes.CUSTOM_STATUS, state: text, timestamps: tmp6, emoji: tmp, details: value, metadata: { label: value } };
   text = undefined;
-  if (emojiName.text.length > 0) {
-    text = emojiName.text;
+  if (setting.text.length > 0) {
+    text = setting.text;
   }
   tmp6 = undefined;
   if (NumberResult > 0) {
@@ -56,26 +57,71 @@ function _activityFromSetting(emojiName, stateFromStores) {
 }
 const useMemo = react.useMemo;
 const ActivityTypes = Constants.ActivityTypes;
-const result = size.fileFinishedImporting("modules/custom_status/utils/userSettingToActivity.tsx");
-
-export const getActivityFromCustomStatus = function getActivityFromCustomStatus(setting) {
-  const emojiId = setting.emojiId;
-  let usableCustomEmojiById = null;
-  const tmp = _activityFromSetting;
-  if (null != emojiId) {
-    usableCustomEmojiById = null;
-    if ("0" !== emojiId) {
-      usableCustomEmojiById = EmojiStore.getUsableCustomEmojiById(emojiId);
-    }
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let emojiId;
+  let first;
+  let tmp8;
+  let tmp9;
+  const tmp = emojiId;
+  const obj = emojiId(576);
+  const cResult = obj.c(7);
+  const CustomStatusSetting = emojiId(2027).CustomStatusSetting;
+  const setting = CustomStatusSetting.useSetting();
+  emojiId = undefined;
+  if (setting != null) {
+    emojiId = setting.emojiId;
   }
-  return tmp(setting, usableCustomEmojiById);
-};
-export const useCustomStatusActivity = function useCustomStatusActivity() {
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [EmojiStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== emojiId) {
+    const fn = function n() {
+      let usableCustomEmojiById = null;
+      if (null != emojiId) {
+        usableCustomEmojiById = null;
+        if ("0" !== emojiId) {
+          usableCustomEmojiById = EmojiStore.getUsableCustomEmojiById(tmp);
+        }
+      }
+      return usableCustomEmojiById;
+    };
+    const items1 = [emojiId];
+    cResult[1] = emojiId;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp9 = items1;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
+  if (cResult[4] === stateFromStores) {
+    let tmp11;
+    if (cResult[5] === setting) {
+      tmp11 = cResult[6];
+    }
+    return tmp11;
+  }
+  let tmp12 = null;
+  if (null != setting) {
+    tmp12 = _activityFromSetting(setting, stateFromStores);
+  }
+  cResult[4] = stateFromStores;
+  cResult[5] = setting;
+  cResult[6] = tmp12;
+  tmp11 = tmp12;
+}) : (() => {
   let setting;
   let stateFromStores;
   const tmp = setting;
   let tmp2 = stateFromStores;
-  const CustomStatusSetting = setting(stateFromStores[4]).CustomStatusSetting;
+  const CustomStatusSetting = setting(stateFromStores[6]).CustomStatusSetting;
   setting = CustomStatusSetting.useSetting();
   let emojiId;
   if (setting != null) {
@@ -83,7 +129,7 @@ export const useCustomStatusActivity = function useCustomStatusActivity() {
   }
   const items = [EmojiStore];
   const items1 = [emojiId];
-  const tmpResult = tmp(tmp2[5]);
+  const tmpResult = tmp(tmp2[7]);
   stateFromStores = tmpResult.useStateFromStores(items, () => {
     let usableCustomEmojiById = null;
     if (null != emojiId) {
@@ -102,4 +148,19 @@ export const useCustomStatusActivity = function useCustomStatusActivity() {
     }
     return tmp2;
   }, items2);
+});
+const result = size.fileFinishedImporting("modules/custom_status/utils/userSettingToActivity.tsx");
+
+export const getActivityFromCustomStatus = function getActivityFromCustomStatus(setting) {
+  const emojiId = setting.emojiId;
+  let usableCustomEmojiById = null;
+  const tmp = _activityFromSetting;
+  if (null != emojiId) {
+    usableCustomEmojiById = null;
+    if ("0" !== emojiId) {
+      usableCustomEmojiById = EmojiStore.getUsableCustomEmojiById(emojiId);
+    }
+  }
+  return tmp(setting, usableCustomEmojiById);
 };
+export const useCustomStatusActivity = tmp2;

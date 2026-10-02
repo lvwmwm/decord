@@ -1,25 +1,25 @@
-// Module ID: 11283
-// Function ID: 11284
+// Module ID: 11147
+// Function ID: 11148
 // Name: AcceptGuildTemplateActionCreators
-// Dependencies: [5589, 2067, 1074, 573, 1271, 6760, 2]
+// Dependencies: [5590, 2073, 1086, 585, 1283, 6761, 2]
 
-// Module 11283 (AcceptGuildTemplateActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import transitionToGuild from "transitionToGuild" /* 6760 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
-import GuildStore from "GuildStore" /* 2067 */;
+// Module 11147 (AcceptGuildTemplateActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import transitionToGuild from "transitionToGuild" /* 6761 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import GuildStore from "GuildStore" /* 2073 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, importDefault;
+let dependencyMap, importDefault, name;
 
 const Endpoints = Constants.Endpoints;
 let obj = {
-  acceptGuildTemplate(code, name, first1) {
+  acceptGuildTemplate(code, first1, first12) {
     let connected;
     let icon;
-    importDefault = name;
-    dependencyMap = first1;
+    importDefault = first1;
+    dependencyMap = first12;
     let obj = DispatcherDefault;
     let obj2 = { type: "GUILD_TEMPLATE_ACCEPT", code };
     obj.dispatch(obj2);

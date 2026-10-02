@@ -1,17 +1,17 @@
-// Module ID: 7879
-// Function ID: 7880
+// Module ID: 7883
+// Function ID: 7884
 // Name: AgeVerificationModal
-// Dependencies: [19, 7860, 21, 4692, 5048, 4525, 7746, 4836, 576, 5039, 6795, 1115, 6421, 2]
-// Exports: default
+// Dependencies: [19, 7864, 21, 4694, 5049, 4528, 7750, 4837, 588, 5040, 6796, 1127, 558, 576, 6421, 2]
 
-// Module 7879 (AgeVerificationModal)
+// Module 7883 (AgeVerificationModal)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import LinkingDefault from "Linking" /* 4525 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 7860 */;
+import nativeDefault from "native" /* 588 */;
+import LinkingDefault from "Linking" /* 4528 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4694 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 7864 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -124,9 +124,101 @@ const constants = { VERIFY_AGE: "VERIFY_AGE" };
 let obj = { headerStyle: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let closure_9 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationModal.tsx");
-
-export default function AgeVerificationModal(webviewUrl) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let first;
+  let handleCloseAfterCompletion;
+  let isExpressiveModalV2;
+  let obj4;
+  let onClose;
+  let onComplete;
+  let webviewUrl;
+  const obj = webviewUrl(onClose[13]);
+  const cResult = obj.c(10);
+  ({ webviewUrl, onComplete, onClose, isExpressiveModalV2 } = arg0);
+  const tmp5 = closure_9();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(tmp2[11]).intl;
+    const stringResult = intl.string(webviewUrl(onClose[11]).t.wJVyYR);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === (undefined !== isExpressiveModalV2 && isExpressiveModalV2)) {
+    if (cResult[2] === onClose) {
+      if (cResult[3] === onComplete) {
+        if (cResult[4] === tmp5) {
+          let tmp8;
+          let tmp9;
+          let tmp11;
+          if (cResult[5] === webviewUrl) {
+            tmp8 = cResult[6];
+          }
+          const _Symbol = Symbol;
+          if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+            const intl2 = tmp(tmp2[11]).intl;
+            const stringResult1 = intl2.string(webviewUrl(onClose[11]).t["13/7kX"]);
+            cResult[7] = stringResult1;
+            tmp9 = stringResult1;
+          } else {
+            tmp9 = cResult[7];
+          }
+          if (cResult[8] !== tmp8) {
+            const obj2 = { screens: tmp8, initialRouteName: constants.VERIFY_AGE, headerBackTitle: tmp9 };
+            const tmp14 = handleCloseAfterCompletion(webviewUrl(onClose[14]).Navigator, obj2);
+            cResult[8] = tmp8;
+            cResult[9] = tmp14;
+            tmp11 = tmp14;
+          } else {
+            tmp11 = cResult[9];
+          }
+          return tmp11;
+        }
+      }
+    }
+  }
+  let closure_3 = tmp4;
+  function handleClose() {
+    closure_2();
+    const arr = onComplete(onClose[9]);
+    arr.pop();
+  }
+  handleCloseAfterCompletion = function handleCloseAfterCompletion() {
+    closure_2();
+    const arr = onComplete(onClose[9]);
+    arr.pop();
+    const tmp2 = onComplete;
+    const tmp3 = onClose;
+    const tmp5 = isExpressiveModalV2;
+    if (tmp5) {
+      const tmp2Result = tmp2(tmp3[9]);
+      tmp2Result.pop();
+    }
+  };
+  const obj3 = { [closure_7.VERIFY_AGE]: obj4 };
+  obj4 = {
+    headerStyle: tmp5.headerStyle,
+    headerTitle: first,
+    headerLeft() {
+      let intl;
+      const obj = { onPress: handleClose, text: intl.string(webviewUrl(onClose[11]).t.cpT0Cq) };
+      const HeaderActionButton = webviewUrl(onClose[10]).HeaderActionButton;
+      intl = webviewUrl(onClose[11]).intl;
+      return headerTitle(HeaderActionButton, obj);
+    },
+    render() {
+      const obj = { webviewUrl, onComplete, onClose: handleCloseAfterCompletion, isExpressiveModalV2 };
+      return headerTitle(closure_2_8, obj);
+    }
+  };
+  cResult[1] = undefined !== isExpressiveModalV2 && isExpressiveModalV2;
+  cResult[2] = onClose;
+  cResult[3] = onComplete;
+  cResult[4] = tmp5;
+  cResult[5] = webviewUrl;
+  cResult[6] = obj3;
+  tmp8 = obj3;
+}) : ((webviewUrl) => {
   let headerTitle;
   webviewUrl = webviewUrl.webviewUrl;
   let onComplete = webviewUrl.onComplete;
@@ -177,7 +269,10 @@ export default function AgeVerificationModal(webviewUrl) {
     };
     return { [closure_2_7.VERIFY_AGE]: obj };
   }, items);
-  const Navigator = webviewUrl(onClose[12]).Navigator;
+  const Navigator = webviewUrl(onClose[14]).Navigator;
   const intl2 = webviewUrl(onClose[11]).intl;
   return <Navigator screens={memo} initialRouteName={constants.VERIFY_AGE} headerBackTitle={intl2.string(webviewUrl(onClose[11]).t["13/7kX"])} />;
-};
+});
+const result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationModal.tsx");
+
+export default tmp2;

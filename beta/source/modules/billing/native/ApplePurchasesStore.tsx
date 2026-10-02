@@ -1,11 +1,11 @@
-// Module ID: 12926
-// Function ID: 12927
+// Module ID: 12928
+// Function ID: 12929
 // Name: ApplePurchasesStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 12926 (ApplePurchasesStore)
+// Module 12928 (ApplePurchasesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 const React = null;

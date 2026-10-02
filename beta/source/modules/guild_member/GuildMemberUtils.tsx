@@ -1,18 +1,19 @@
-// Module ID: 11313
-// Function ID: 11314
+// Module ID: 11188
+// Function ID: 11189
 // Name: GuildMemberUtils
-// Dependencies: [2108, 2067, 4469, 1372, 4455, 1074, 504, 11, 1385, 2]
-// Exports: canManageMessages, hasBanMemberPerms, hasKickMemberPerms, useCanBanMember, useCanKickMember, useCanManageMessages, useGuildMemberAgeInRange, useNewMemberBadge
+// Dependencies: [2111, 2073, 4472, 1378, 4458, 1086, 558, 576, 504, 11, 1391, 2]
+// Exports: canManageMessages, hasBanMemberPerms, hasKickMemberPerms
 
-// Module 11313 (GuildMemberUtils)
+// Module 11188 (GuildMemberUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import Constants from "Constants" /* 1074 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4455 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 1086 */;
+import FlagUtils from "FlagUtils" /* 1391 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4458 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -99,10 +100,48 @@ function canBanMember(user, guild) {
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
 const Permissions = Constants.Permissions;
 let c9 = 86400000;
-const result = size.fileFinishedImporting("modules/guild_member/GuildMemberUtils.tsx");
-
-export { getGuildMemberAgeInRange };
-export const useGuildMemberAgeInRange = function useGuildMemberAgeInRange(arg0, arg1, arg2) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+  let closure_0;
+  let closure_2;
+  let first;
+  _require = arg0;
+  let closure_1 = arg1;
+  dependencyMap = arg2;
+  const obj = require("react");
+  const cResult = obj.c(6);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg1) {
+    if (cResult[2] === arg0) {
+      let tmp5;
+      let tmp6;
+      if (cResult[3] === arg2) {
+        tmp5 = cResult[4];
+        tmp6 = cResult[5];
+      }
+      const tmpResult = tmp(504);
+      return tmpResult.useStateFromStores(first, tmp5, tmp6);
+    }
+  }
+  const fn = function u() {
+    return getGuildMemberAgeInRange(closure_0, closure_1, closure_2);
+  };
+  const items1 = [arg1, arg0, arg2];
+  cResult[1] = arg1;
+  cResult[2] = arg0;
+  cResult[3] = arg2;
+  cResult[4] = fn;
+  cResult[5] = items1;
+  tmp6 = items1;
+  tmp5 = fn;
+}) : ((arg0, arg1, arg2) => {
   let closure_0;
   let closure_2;
   _require = arg0;
@@ -110,9 +149,123 @@ export const useGuildMemberAgeInRange = function useGuildMemberAgeInRange(arg0, 
   dependencyMap = arg2;
   const items = [arg1, arg0, arg2];
   const obj = require("get initialized");
-  return obj.useStateFromStores([], () => getGuildMemberAgeInRange(closure_0, obj4, closure_2), items);
-};
-export const useNewMemberBadge = function useNewMemberBadge(arg0, arg1) {
+  return obj.useStateFromStores([], () => getGuildMemberAgeInRange(closure_0, closure_1, closure_2), items);
+});
+let closure_11 = tmp2;
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let first;
+  _require = arg0;
+  let closure_1 = arg1;
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(10);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildMemberStore];
+    let num = 0;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    let tmp6;
+    let tmp8;
+    let tmp10;
+    let tmp12;
+    let tmp14;
+    if (cResult[2] === arg1) {
+      tmp6 = cResult[3];
+    }
+    const _Symbol = Symbol;
+    const tmpResult = tmp(504);
+    const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const items1 = [GuildStore];
+      cResult[4] = items1;
+      tmp8 = items1;
+    } else {
+      tmp8 = cResult[4];
+    }
+    if (cResult[5] !== arg0) {
+      const fn2 = function _() {
+        const guild = GuildStore.getGuild(closure_0);
+        let tmp2 = null != guild;
+        if (tmp2) {
+          const _Date = Date;
+          const obj = SnowflakeUtilsDefault;
+          const extractTimestampResult = obj.extractTimestamp(guild.id);
+          tmp2 = Date.now() - extractTimestampResult < 604800000;
+        }
+        return tmp2;
+      };
+      cResult[5] = arg0;
+      cResult[6] = fn2;
+      tmp10 = fn2;
+    } else {
+      tmp10 = cResult[6];
+    }
+    const _Symbol2 = Symbol;
+    const tmpResult3 = tmp(504);
+    const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp10);
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      const items2 = [UserStore];
+      cResult[7] = items2;
+      tmp12 = items2;
+    } else {
+      tmp12 = cResult[7];
+    }
+    if (cResult[8] !== arg1) {
+      class F {
+        constructor() {
+          const user = UserStore.getUser(closure_1);
+          let bot;
+          if (user != null) {
+            bot = user.bot;
+          }
+          return bot;
+        }
+      }
+      cResult[8] = arg1;
+      cResult[9] = F;
+      tmp14 = F;
+    } else {
+      class F {
+        constructor() {
+          const user = UserStore.getUser(closure_1);
+          let bot;
+          if (user != null) {
+            bot = user.bot;
+          }
+          return bot;
+        }
+      }
+    }
+    const tmpResult4 = tmp(504);
+    const stateFromStores2 = tmpResult4.useStateFromStores(tmp12, tmp14);
+    const tmp17 = closure_11(arg0, { maxDaysOld: 7 }, arg1) && !stateFromStores1 && !stateFromStores2 && !stateFromStores;
+    return tmp17;
+  }
+  const fn = function b() {
+    const hasFlag = FlagUtils.hasFlag;
+    FlagUtils;
+    const member = GuildMemberStore.getMember(closure_0, closure_1);
+    let num;
+    if (member != null) {
+      num = member.flags;
+    }
+    if (num == null) {
+      num = 0;
+    }
+    return hasFlag(num, GuildMemberFlags.DID_REJOIN);
+  };
+  cResult[1] = arg0;
+  cResult[2] = arg1;
+  cResult[3] = fn;
+  tmp6 = fn;
+}) : ((arg0, arg1) => {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -145,10 +298,7 @@ export const useNewMemberBadge = function useNewMemberBadge(arg0, arg1) {
     return tmp2;
   });
   const items2 = [UserStore];
-  const obj4 = { maxDaysOld: 7 };
   const obj3 = require("get initialized");
-  _require = arg0;
-  let closure_2 = arg1;
   const stateFromStores2 = obj3.useStateFromStores(items2, () => {
     const user = UserStore.getUser(closure_1);
     let bot;
@@ -157,12 +307,42 @@ export const useNewMemberBadge = function useNewMemberBadge(arg0, arg1) {
     }
     return bot;
   });
-  const items3 = [obj4, arg0, arg1];
-  const obj5 = require("get initialized");
-  const tmp4 = obj5.useStateFromStores([], () => getGuildMemberAgeInRange(closure_0, obj4, closure_2), items3) && !stateFromStores1 && !stateFromStores2 && !stateFromStores;
+  const tmp4 = closure_11(arg0, { maxDaysOld: 7 }, arg1) && !stateFromStores1 && !stateFromStores2 && !stateFromStores;
   return tmp4;
-};
-export const useCanKickMember = function useCanKickMember(arg0, arg1) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let first;
+  _require = arg0;
+  let closure_1 = arg1;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [PermissionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg1) {
+    let tmp6;
+    if (cResult[2] === arg0) {
+      tmp6 = cResult[3];
+    }
+    const tmpResult = tmp(504);
+    return tmpResult.useStateFromStores(first, tmp6);
+  }
+  const fn = function u() {
+    const items = [PermissionStore];
+    return canKickMember(closure_0, closure_1, items);
+  };
+  cResult[1] = arg1;
+  cResult[2] = arg0;
+  cResult[3] = fn;
+  tmp6 = fn;
+}) : ((arg0, arg1) => {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -172,39 +352,81 @@ export const useCanKickMember = function useCanKickMember(arg0, arg1) {
     const items = [PermissionStore];
     return canKickMember(closure_0, closure_1, items);
   });
-};
-export { canKickMember };
-export const hasKickMemberPerms = function hasKickMemberPerms(isNonUserBot, stateFromStores) {
-  let obj;
-  let tmp = arg2;
-  if (arg2 === undefined) {
-    const items = [PermissionStore];
-    tmp = items;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let first;
+  _require = arg0;
+  let closure_1 = arg1;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
   }
-  [obj] = tmp;
-  const canManageUserResult = null != stateFromStores && obj.canManageUser(Permissions.KICK_MEMBERS, isNonUserBot, stateFromStores) && !isNonUserBot.isNonUserBot();
-  return canManageUserResult;
-};
-export const useCanBanMember = function useCanBanMember(arg0, arg1) {
+  if (cResult[1] === arg1) {
+    let tmp5;
+    if (cResult[2] === arg0) {
+      tmp5 = cResult[3];
+    }
+    const tmpResult = tmp(504);
+    return tmpResult.useStateFromStores(first, tmp5);
+  }
+  const fn = function o() {
+    return canBanMember(closure_0, closure_1);
+  };
+  cResult[1] = arg1;
+  cResult[2] = arg0;
+  cResult[3] = fn;
+  tmp5 = fn;
+}) : ((arg0, arg1) => {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
   const obj = require("get initialized");
   return obj.useStateFromStores([], () => canBanMember(closure_0, closure_1));
-};
-export { canBanMember };
-export const hasBanMemberPerms = function hasBanMemberPerms(isNonUserBot, stateFromStores) {
-  let obj;
-  let tmp = arg2;
-  if (arg2 === undefined) {
-    const items = [PermissionStore];
-    tmp = items;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let first;
+  _require = arg0;
+  let closure_1 = arg1;
+  const tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [PermissionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
   }
-  [obj] = tmp;
-  const canManageUserResult = null != stateFromStores && obj.canManageUser(Permissions.BAN_MEMBERS, isNonUserBot, stateFromStores) && !isNonUserBot.isNonUserBot() && !isNonUserBot.bot;
-  return canManageUserResult;
-};
-export const useCanManageMessages = function useCanManageMessages(arg0, arg1) {
+  if (cResult[1] === arg1) {
+    let tmp6;
+    if (cResult[2] === arg0) {
+      tmp6 = cResult[3];
+    }
+    const tmpResult = tmp(504);
+    return tmpResult.useStateFromStores(first, tmp6);
+  }
+  const fn = function u() {
+    let obj2;
+    const items = [PermissionStore];
+    [obj2] = items;
+    const canManageUserResult = null != obj && null != tmp && obj2.canManageUser(Permissions.MANAGE_MESSAGES, obj, tmp) && !obj.isNonUserBot();
+    return canManageUserResult;
+  };
+  cResult[1] = arg1;
+  cResult[2] = arg0;
+  cResult[3] = fn;
+  tmp6 = fn;
+}) : ((arg0, arg1) => {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -217,8 +439,30 @@ export const useCanManageMessages = function useCanManageMessages(arg0, arg1) {
     const canManageUserResult = null != obj && null != tmp && obj2.canManageUser(Permissions.MANAGE_MESSAGES, obj, tmp) && !obj.isNonUserBot();
     return canManageUserResult;
   });
-};
-export const canManageMessages = function canManageMessages(isNonUserBot, stateFromStores) {
+});
+function hasKickMemberPerms(isNonUserBot, stateFromStores) {
+  let obj;
+  let tmp = arg2;
+  if (arg2 === undefined) {
+    const items = [PermissionStore];
+    tmp = items;
+  }
+  [obj] = tmp;
+  const canManageUserResult = null != stateFromStores && obj.canManageUser(Permissions.KICK_MEMBERS, isNonUserBot, stateFromStores) && !isNonUserBot.isNonUserBot();
+  return canManageUserResult;
+}
+function hasBanMemberPerms(isNonUserBot, stateFromStores) {
+  let obj;
+  let tmp = arg2;
+  if (arg2 === undefined) {
+    const items = [PermissionStore];
+    tmp = items;
+  }
+  [obj] = tmp;
+  const canManageUserResult = null != stateFromStores && obj.canManageUser(Permissions.BAN_MEMBERS, isNonUserBot, stateFromStores) && !isNonUserBot.isNonUserBot() && !isNonUserBot.bot;
+  return canManageUserResult;
+}
+function canManageMessages(isNonUserBot, stateFromStores) {
   let obj;
   let tmp = arg2;
   if (arg2 === undefined) {
@@ -228,4 +472,17 @@ export const canManageMessages = function canManageMessages(isNonUserBot, stateF
   [obj] = tmp;
   const canManageUserResult = null != isNonUserBot && null != stateFromStores && obj.canManageUser(Permissions.MANAGE_MESSAGES, isNonUserBot, stateFromStores) && !isNonUserBot.isNonUserBot();
   return canManageUserResult;
-};
+}
+const result = size.fileFinishedImporting("modules/guild_member/GuildMemberUtils.tsx");
+
+export { getGuildMemberAgeInRange };
+export const useGuildMemberAgeInRange = tmp2;
+export const useNewMemberBadge = tmp3;
+export const useCanKickMember = tmp4;
+export { canKickMember };
+export { hasKickMemberPerms };
+export const useCanBanMember = tmp5;
+export { canBanMember };
+export { hasBanMemberPerms };
+export const useCanManageMessages = tmp6;
+export { canManageMessages };

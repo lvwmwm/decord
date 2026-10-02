@@ -1,18 +1,18 @@
-// Module ID: 17131
-// Function ID: 17132
+// Module ID: 17133
+// Function ID: 17134
 // Name: KvBackgroundManager
-// Dependencies: [32, 5, 11906, 6898, 6899, 1091, 3, 6539, 17132, 7174, 1364, 2074, 2075, 2091, 2]
+// Dependencies: [32, 5, 11800, 6902, 6903, 1103, 3, 6540, 17134, 7178, 1370, 2077, 2078, 2094, 2]
 
-// Module 17131 (KvBackgroundManager)
+// Module 17133 (KvBackgroundManager)
 import LoggerDefault from "Logger" /* 3 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import reportMalformedStorageValuesDefault from "reportMalformedStorageValues" /* 17132 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import reportMalformedStorageValuesDefault from "reportMalformedStorageValues" /* 17134 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 11906 */;
-import SaveableChannelsStore_mod from "SaveableChannelsStore" /* 6898 */;
-import FileSystemStore from "FileSystemStore" /* 6899 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import MultiAccountStore from "MultiAccountStore" /* 11800 */;
+import SaveableChannelsStore_mod from "SaveableChannelsStore" /* 6902 */;
+import FileSystemStore from "FileSystemStore" /* 6903 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let _self, c0, c2, c4, c5, c6, c7, saveableChannels, set;
@@ -59,7 +59,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -113,7 +113,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } catch (tmp4) {
               c0 = 3;
               throw tmp4;
@@ -139,7 +139,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -188,7 +188,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
                   return obj;
                 } else {
                   c0 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp5) {
                 c0 = 3;
@@ -212,7 +212,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -241,7 +241,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } catch (tmp6) {
               c0 = 3;
               throw tmp6;
@@ -262,7 +262,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             while (true) {
@@ -320,7 +320,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
                     continue;
                   }
                   c7 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 c5 = 0;
@@ -344,7 +344,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -373,7 +373,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
                 return obj;
               } else {
                 c0 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp6) {
               c0 = 3;
@@ -420,7 +420,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -469,7 +469,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
                 lastDeepClean = tmp;
                 if (closure_2 === tmp(closure_2[9]).backgroundTaskIdentifierInvalid) {
                   c5 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 }
               }
               c3 = 1;
@@ -531,7 +531,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
             lastDeepClean.endBackgroundTask(closure_2);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp62) {
           closure_2 = tmp62;
           if (0 === c3) {
@@ -559,7 +559,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -619,7 +619,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
           const steps2 = closure_128_1.steps;
           _self = 2;
@@ -648,7 +648,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -726,7 +726,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp21) {
           closure_2 = tmp21;

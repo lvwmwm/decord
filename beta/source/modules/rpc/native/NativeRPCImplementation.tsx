@@ -1,22 +1,22 @@
-// Module ID: 14026
-// Function ID: 14027
+// Module ID: 14028
+// Function ID: 14029
 // Name: NativeRPCImplementation
-// Dependencies: [4825, 1182, 1220, 14027, 14075, 14076, 14078, 14079, 14081, 14084, 14085, 14087, 8766, 2]
+// Dependencies: [4826, 1194, 1232, 14029, 14077, 14078, 14080, 14081, 14083, 14086, 14087, 14089, 8761, 2]
 
-// Module 14026 (NativeRPCImplementation)
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 8766 */;
-import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 14027 */;
-import commands_activitiesDefault from "commands/activities" /* 14075 */;
-import authDefault from "auth" /* 14076 */;
-import voiceSettingsDefault from "voiceSettings" /* 14078 */;
-import unsupportedDefault from "unsupported" /* 14079 */;
-import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 14081 */;
-import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 14085 */;
-import NativeRPCServerDefault from "NativeRPCServer" /* 14087 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import discordEnvironmentEvents from "discordEnvironmentEvents" /* 14084 */;
+// Module 14028 (NativeRPCImplementation)
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 8761 */;
+import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 14029 */;
+import commands_activitiesDefault from "commands/activities" /* 14077 */;
+import authDefault from "auth" /* 14078 */;
+import voiceSettingsDefault from "voiceSettings" /* 14080 */;
+import unsupportedDefault from "unsupported" /* 14081 */;
+import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 14083 */;
+import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 14087 */;
+import NativeRPCServerDefault from "NativeRPCServer" /* 14089 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import ThemeStore from "ThemeStore" /* 1194 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import discordEnvironmentEvents from "discordEnvironmentEvents" /* 14086 */;
 import size from "module_2" /* 2 */;
 
 let items;

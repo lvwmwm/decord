@@ -1,13 +1,13 @@
-// Module ID: 8595
-// Function ID: 8596
+// Module ID: 8592
+// Function ID: 8593
 // Name: ApplicationCommandIndexActionCreators
-// Dependencies: [5, 1074, 573, 1271, 1091, 1241, 1370, 2]
+// Dependencies: [5, 1086, 585, 1283, 1103, 1253, 1376, 2]
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex
 
-// Module 8595 (ApplicationCommandIndexActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 8592 (ApplicationCommandIndexActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -30,7 +30,7 @@ let obj = function _fetchApplicationCommandIndex() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -62,7 +62,7 @@ let obj = function _fetchApplicationCommandIndex() {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     try {
@@ -217,7 +217,7 @@ let obj = function _fetchApplicationCommandIndex() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c2 = 3;

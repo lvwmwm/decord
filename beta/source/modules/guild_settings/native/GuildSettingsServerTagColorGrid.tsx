@@ -1,17 +1,19 @@
-// Module ID: 17394
-// Function ID: 17395
+// Module ID: 17396
+// Function ID: 17397
 // Name: GuildSettingsServerTagColorGrid
-// Dependencies: [19, 17, 7386, 21, 576, 4836, 1115, 5279, 4832, 17392, 17395, 13460, 14506, 14899, 2]
-// Exports: default
+// Dependencies: [19, 17, 7390, 21, 588, 4837, 558, 576, 1127, 4833, 17394, 17397, 13462, 14494, 14887, 5280, 2]
 
-// Module 17394 (GuildSettingsServerTagColorGrid)
+// Module 17396 (GuildSettingsServerTagColorGrid)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
+import nativeDefault from "native" /* 588 */;
 import react from "react" /* 19 */;
-import GuildTagConstants from "GuildTagConstants" /* 7386 */;
+import GuildTagConstants from "GuildTagConstants" /* 7390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
+
+let badge;
 
 let closure_4;
 let hasOwnProperty;
@@ -26,10 +28,267 @@ const PX_8 = nativeDefault.space.PX_8;
 let obj = { grid: { flexDirection: "row", flexWrap: "wrap", gap: PX_8 }, defaultIcon: rect };
 rect = { position: "absolute", right: nativeDefault.space.PX_4, bottom: nativeDefault.space.PX_4 };
 let closure_9 = createStyles.createStyles(obj);
-let size = size_mod;
-const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagColorGrid.tsx");
-
-export default function GuildSettingsServerTagColorGrid(badge) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
+  let cellSize;
+  let intl2;
+  let items;
+  let onPressEyedropper;
+  let secondary;
+  let secondaryColor;
+  let tmp = badge;
+  let tmp2 = secondaryColor;
+  let obj = badge(secondaryColor[7]);
+  const cResult = obj.c(41);
+  badge = badge.badge;
+  const primaryColor = badge.primaryColor;
+  secondaryColor = badge.secondaryColor;
+  const onSelectColor = badge.onSelectColor;
+  ({ onPressEyedropper, cellSize } = badge);
+  let tmp4 = closure_9();
+  let tmp5 = closure_5[badge] >= 2;
+  closure_5 = tmp5;
+  let tmp6 = null == primaryColor;
+  if (tmp6) {
+    let tmp7 = !tmp5;
+    if (tmp5) {
+      tmp7 = null == secondaryColor;
+    }
+    tmp6 = tmp7;
+  }
+  if (cResult[0] === tmp5) {
+    if (cResult[1] === tmp6) {
+      if (cResult[2] === primaryColor) {
+        let formatToPlainStringResult;
+        if (cResult[5] === tmp5) {
+          if (cResult[6] === primaryColor) {
+            const _Symbol = Symbol;
+            if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+              let obj2 = { variant: "text-md/medium", color: "text-subtle", accessibilityRole: "header", children: intl2.string(tmp(tmp2[8]).t["Fg/TNW"]) };
+              const Text = tmp(tmp2[9]).Text;
+              intl2 = tmp(tmp2[8]).intl;
+              cResult[9] = closure_7(Text, obj2);
+              const tmp16 = closure_7(Text, obj2);
+            }
+            if (cResult[10] === badge) {
+              if (cResult[11] === cellSize) {
+                if (cResult[12] === tmp5) {
+                  if (cResult[13] === onSelectColor) {
+                    if (cResult[14] === primaryColor) {
+                      let tmp20;
+                      const _Symbol2 = Symbol;
+                      if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+                        const intl3 = tmp(tmp2[8]).intl;
+                        const stringResult = intl3.string(tmp(tmp2[8]).t.S6N0gC);
+                        cResult[17] = stringResult;
+                        tmp20 = stringResult;
+                      } else {
+                        tmp20 = cResult[17];
+                      }
+                      if (cResult[18] !== onSelectColor) {
+                        class D {
+                          constructor() {
+                            return onSelectColor(null, null);
+                          }
+                        }
+                        cResult[18] = onSelectColor;
+                        cResult[19] = D;
+                      } else {
+                        class D {
+                          constructor() {
+                            return onSelectColor(null, null);
+                          }
+                        }
+                      }
+                      if (cResult[20] !== badge) {
+                        class D {
+                          constructor() {
+                            return onSelectColor(null, null);
+                          }
+                        }
+                        size = { badge, width: null, height: null };
+                        ({ SIZE_32: obj5.width, SIZE_32: obj5.height } = closure_6);
+                        cResult[20] = badge;
+                        cResult[21] = closure_7(tmp(tmp2[12]).GuildBadge, size);
+                        const tmp25 = closure_7(tmp(tmp2[12]).GuildBadge, size);
+                      } else {
+                        class D {
+                          constructor() {
+                            return onSelectColor(null, null);
+                          }
+                        }
+                      }
+                      if (cResult[22] !== tmp4.defaultIcon) {
+                        class D {
+                          constructor() {
+                            return onSelectColor(null, null);
+                          }
+                        }
+                        const obj3 = { size: "xs", color: primaryColor(tmp2[4]).colors.ICON_DEFAULT, style: tmp4.defaultIcon };
+                        const RefreshIcon = tmp(tmp2[13]).RefreshIcon;
+                        cResult[22] = tmp4.defaultIcon;
+                        cResult[23] = closure_7(RefreshIcon, obj3);
+                        const tmp28 = closure_7(RefreshIcon, obj3);
+                      } else {
+                        class D {
+                          constructor() {
+                            return onSelectColor(null, null);
+                          }
+                        }
+                      }
+                      if (cResult[24] === cellSize) {
+                        class D {
+                          constructor() {
+                            return onSelectColor(null, null);
+                          }
+                        }
+                      }
+                      const obj4 = { size: cellSize, selected: tmp6, accessibilityLabel: tmp20, onPress: tmp22, children: items };
+                      items = [tmp23, tmp26];
+                      cResult[24] = cellSize;
+                      cResult[25] = tmp6;
+                      cResult[26] = tmp22;
+                      cResult[27] = tmp23;
+                      cResult[28] = tmp26;
+                      cResult[29] = closure_8(primaryColor(tmp2[10]), obj4);
+                      const tmp32 = closure_8(primaryColor(tmp2[10]), obj4);
+                    }
+                  }
+                }
+              }
+            }
+            const mapped = cellSize.map((primary) => {
+              let GuildBadge;
+              let guildTagPalettePresetColorLabel;
+              let secondary;
+              let tmp5;
+              badge = primary;
+              let tmp = closure_1_7;
+              const obj = {
+                size: cellSize,
+                selected: tmp5,
+                accessibilityLabel: guildTagPalettePresetColorLabel,
+                onPress() {
+                  let secondary = null;
+                  primary = primary.primary;
+                  const tmp = onSelectColor;
+                  if (closure_5) {
+                    secondary = primary.secondary;
+                  }
+                  return tmp(primary, secondary);
+                },
+                children: tmp(GuildBadge, size)
+              };
+              tmp5 = primary.primary === primaryColor;
+              const tmp2 = primaryColor;
+              const tmp4 = primaryColor(secondaryColor[10]);
+              if (tmp5) {
+                let tmp7 = !closure_5;
+                if (closure_5) {
+                  tmp7 = primary.secondary === secondaryColor;
+                }
+                tmp5 = tmp7;
+              }
+              if (closure_5) {
+                guildTagPalettePresetColorLabel = tmp2(tmp3[11])(primary.primary, primary.secondary);
+              } else {
+                const obj2 = badge(secondaryColor[11]);
+                guildTagPalettePresetColorLabel = obj2.getGuildTagPalettePresetColorLabel(primary.primary);
+              }
+              size = { badge, width: closure_1_6.SIZE_32, height: closure_1_6.SIZE_32, primaryTintColor: primary.primary, secondaryTintColor: secondary };
+              secondary = undefined;
+              GuildBadge = badge(tmp3[12]).GuildBadge;
+              if (closure_5) {
+                secondary = primary.secondary;
+              }
+              return tmp(tmp4, obj, "" + primary.primary + primary.secondary);
+            });
+            cResult[10] = badge;
+            cResult[11] = cellSize;
+            cResult[12] = tmp5;
+            cResult[13] = onSelectColor;
+            cResult[14] = primaryColor;
+            cResult[15] = secondaryColor;
+            cResult[16] = mapped;
+          }
+        }
+        const intl = tmp(tmp2[8]).intl;
+        const formatToPlainString = intl.formatToPlainString;
+        const t = tmp(tmp2[8]).t;
+        if (tmp5) {
+          let primary2;
+          class D {
+            constructor() {
+              return onSelectColor(null, null);
+            }
+          }
+          const hr4D2X = t.hr4D2X;
+          if (primaryColor == null) {
+            class D {
+              constructor() {
+                return onSelectColor(null, null);
+              }
+            }
+            primary2 = cellSize[0].primary;
+          }
+          const obj6 = { primaryColor: primary2, secondaryColor: secondary };
+          secondary = secondaryColor;
+          if (secondaryColor == null) {
+            class D {
+              constructor() {
+                return onSelectColor(null, null);
+              }
+            }
+            secondary = cellSize[0].secondary;
+          }
+          formatToPlainStringResult = formatToPlainString(hr4D2X, obj6);
+        } else {
+          let primary;
+          class D {
+            constructor() {
+              return onSelectColor(null, null);
+            }
+          }
+          const v7BFCRR = t["7BFCRR"];
+          if (primaryColor == null) {
+            class D {
+              constructor() {
+                return onSelectColor(null, null);
+              }
+            }
+            primary = cellSize[0].primary;
+          }
+          const obj7 = { color: primary };
+          formatToPlainStringResult = formatToPlainString(v7BFCRR, obj7);
+        }
+        cResult[5] = tmp5;
+        cResult[6] = primaryColor;
+        cResult[7] = secondaryColor;
+        cResult[8] = formatToPlainStringResult;
+      }
+    }
+  }
+  let everyResult = !tmp6;
+  if (everyResult) {
+    class D {
+      constructor() {
+        return onSelectColor(null, null);
+      }
+    }
+    everyResult = cellSize.every((primary) => {
+      let tmp = primary.primary !== primaryColor;
+      if (!tmp) {
+        tmp = closure_5 && primary.secondary !== secondaryColor;
+        const tmp2 = closure_5 && primary.secondary !== secondaryColor;
+      }
+      return tmp;
+    });
+  }
+  cResult[0] = tmp5;
+  cResult[1] = tmp6;
+  cResult[2] = primaryColor;
+  cResult[3] = secondaryColor;
+  cResult[4] = everyResult;
+}) : ((badge) => {
   let EyeDropperIcon;
   let cellSize;
   let formatToPlainStringResult;
@@ -70,9 +329,9 @@ export default function GuildSettingsServerTagColorGrid(badge) {
     });
   }
   let tmp7 = badge;
-  const intl = badge(secondary[6]).intl;
+  const intl = badge(secondary[8]).intl;
   const formatToPlainString = intl.formatToPlainString;
-  const t = badge(secondary[6]).t;
+  const t = badge(secondary[8]).t;
   if (tmp2) {
     const hr4D2X = t.hr4D2X;
     if (primary == null) {
@@ -97,10 +356,10 @@ export default function GuildSettingsServerTagColorGrid(badge) {
     tmp13 = tmp7;
   }
   const obj3 = { spacing: primary(tmp12[4]).space.PX_8, children: items };
-  const Stack = tmp13(tmp12[7]).Stack;
-  const obj4 = { variant: "text-md/medium", color: "text-subtle", accessibilityRole: "header", children: intl2.string(tmp13(tmp12[6]).t["Fg/TNW"]) };
-  const Text = tmp13(tmp12[8]).Text;
-  intl2 = tmp13(tmp12[6]).intl;
+  const Stack = tmp13(tmp12[15]).Stack;
+  const obj4 = { variant: "text-md/medium", color: "text-subtle", accessibilityRole: "header", children: intl2.string(tmp13(tmp12[8]).t["Fg/TNW"]) };
+  const Text = tmp13(tmp12[9]).Text;
+  intl2 = tmp13(tmp12[8]).intl;
   items = [closure_7(Text, obj4), ];
   const obj5 = { accessibilityRole: "radiogroup", style: tmp.grid, children: items1 };
   items1 = [
@@ -127,7 +386,7 @@ export default function GuildSettingsServerTagColorGrid(badge) {
       };
       tmp5 = primary.primary === primary;
       const tmp2 = primary;
-      const tmp4 = primary(secondary[9]);
+      const tmp4 = primary(secondary[10]);
       if (tmp5) {
         let tmp7 = !closure_5;
         if (closure_5) {
@@ -136,14 +395,14 @@ export default function GuildSettingsServerTagColorGrid(badge) {
         tmp5 = tmp7;
       }
       if (closure_5) {
-        guildTagPalettePresetColorLabel = tmp2(tmp3[10])(primary.primary, primary.secondary);
+        guildTagPalettePresetColorLabel = tmp2(tmp3[11])(primary.primary, primary.secondary);
       } else {
-        const obj2 = badge(secondary[10]);
+        const obj2 = badge(secondary[11]);
         guildTagPalettePresetColorLabel = obj2.getGuildTagPalettePresetColorLabel(primary.primary);
       }
       size = { badge, width: closure_1_6.SIZE_32, height: closure_1_6.SIZE_32, primaryTintColor: primary.primary, secondaryTintColor: secondary };
       secondary = undefined;
-      GuildBadge = badge(tmp3[11]).GuildBadge;
+      GuildBadge = badge(tmp3[12]).GuildBadge;
       if (closure_5) {
         secondary = primary.secondary;
       }
@@ -155,25 +414,29 @@ export default function GuildSettingsServerTagColorGrid(badge) {
   const obj6 = {
     size: cellSize,
     selected: tmp3,
-    accessibilityLabel: intl3.string(tmp13(tmp12[6]).t.S6N0gC),
+    accessibilityLabel: intl3.string(tmp13(tmp12[8]).t.S6N0gC),
     onPress() {
       return View(null, null);
     },
     children: items2
   };
-  const tmp16 = primary(tmp12[9]);
-  intl3 = tmp13(tmp12[6]).intl;
+  const tmp16 = primary(tmp12[10]);
+  intl3 = tmp13(tmp12[8]).intl;
   size = { badge, width: closure_6.SIZE_32, height: closure_6.SIZE_32 };
-  items2 = [closure_7(tmp13(tmp12[11]).GuildBadge, size), ];
+  items2 = [closure_7(tmp13(tmp12[12]).GuildBadge, size), ];
   const obj7 = { size: "xs", color: primary(tmp12[4]).colors.ICON_DEFAULT, style: tmp.defaultIcon };
-  const RefreshIcon = tmp13(tmp12[12]).RefreshIcon;
+  const RefreshIcon = tmp13(tmp12[13]).RefreshIcon;
   items2[1] = closure_7(RefreshIcon, obj7);
   items1[1] = closure_8(tmp16, obj6);
   const obj8 = { size: cellSize, selected: everyResult, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, onPress: onPressEyedropper, children: closure_7(EyeDropperIcon, obj9) };
   obj9 = { size: "sm", color: primary(tmp12[4]).colors.ICON_DEFAULT };
-  const tmp17 = primary(tmp12[9]);
-  EyeDropperIcon = tmp13(tmp12[13]).EyeDropperIcon;
+  const tmp17 = primary(tmp12[10]);
+  EyeDropperIcon = tmp13(tmp12[14]).EyeDropperIcon;
   items1[2] = closure_7(tmp17, obj8);
   items[1] = closure_8(View, obj5);
   return closure_8(Stack, obj3);
-};
+});
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagColorGrid.tsx");
+
+export default tmp5;

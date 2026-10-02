@@ -1,12 +1,12 @@
-// Module ID: 15389
-// Function ID: 15390
+// Module ID: 15377
+// Function ID: 15378
 // Name: DesignSystemsTooltipSetting
-// Dependencies: [7417, 1074, 11006, 15390, 2]
+// Dependencies: [7421, 1086, 10874, 15378, 2]
 
-// Module 15389 (DesignSystemsTooltipSetting)
-import Constants from "Constants" /* 1074 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 15377 (DesignSystemsTooltipSetting)
+import Constants from "Constants" /* 1086 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

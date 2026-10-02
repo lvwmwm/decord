@@ -1,28 +1,30 @@
-// Module ID: 13098
-// Function ID: 13099
+// Module ID: 13100
+// Function ID: 13101
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 5753, 6571, 6570, 1115, 4832, 4823, 4767, 12962, 13099, 5204, 13100, 1981, 12960, 5281, 4800, 2]
+// Dependencies: [32, 19, 17, 1086, 21, 4837, 588, 5754, 558, 576, 6571, 1127, 4824, 6572, 4833, 4769, 12964, 13101, 5205, 13102, 1987, 12962, 5282, 4801, 2]
 // Exports: default
 
-// Module 13098 (OutboundPromotionCard)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import intl4 from "intl" /* 1115 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4823 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
-import LegacyTokens from "LegacyTokens" /* 5753 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6570 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
+// Module 13100 (OutboundPromotionCard)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl4 from "intl" /* 1127 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4824 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
+import LegacyTokens from "LegacyTokens" /* 5754 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6571 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet;
+let BottomSheet, termsAndConditions;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -30,7 +32,59 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let size;
-function TermsAndConditionsActionSheet(termsAndConditions) {
+let _slicedToArray = _slicedToArray_mod;
+({ View: hasOwnProperty, Image: metroRequire } = react_native);
+const USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING = Constants.USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { card: obj2, mainContainer: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, textContainer: { flexDirection: "row", flexShrink: 1, alignItems: "center" }, imageContainer: size, image: { width: 28, height: 28, resizeMode: "contain" }, title: { lineHeight: 20 }, subText: { lineHeight: 18 }, claimButton: { paddingHorizontal: 12 }, moreDetails: { marginLeft: 40 }, termsAndConditionsText: { paddingHorizontal: 16, paddingTop: 16 }, buttonContainer: { flexGrow: 1, flexDirection: "row", marginLeft: 4, justifyContent: "flex-end" } };
+obj2 = { flex: 1, flexDirection: "column", paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, paddingVertical: 12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 8 };
+createStyles = createStyles.createStyles;
+size = { width: 32, height: 32, marginRight: 8, borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: LegacyTokens.DARK_BLACK_500_LIGHT_PRIMARY_100 };
+let closure_9 = createStyles(obj);
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((termsAndConditions) => {
+  let first;
+  let intl;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(6);
+  termsAndConditions = termsAndConditions.termsAndConditions;
+  const tmp4 = closure_9();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { title: intl.string(intl4.t.PdKWVT) };
+    const BottomSheetTitleHeader = tmp(6571).BottomSheetTitleHeader;
+    intl = tmp(1127).intl;
+    const tmp7 = metroImportDefault(BottomSheetTitleHeader, obj2);
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  const termsAndConditionsText = tmp4.termsAndConditionsText;
+  if (cResult[1] !== termsAndConditions) {
+    const obj3 = MarkupUtilsDefault;
+    const parsed = obj3.parse(termsAndConditions, false, { allowLinks: true });
+    cResult[1] = termsAndConditions;
+    cResult[2] = parsed;
+    tmp8 = parsed;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === tmp4.termsAndConditionsText) {
+    let tmp11;
+    if (cResult[4] === tmp8) {
+      tmp11 = cResult[5];
+    }
+    return tmp11;
+  }
+  const obj4 = { header: first, children: metroImportDefault(Text_Text.Text, { style: termsAndConditionsText, variant: "text-sm/medium", children: tmp8 }) };
+  BottomSheet = tmp(6572).BottomSheet;
+  const tmp12 = metroImportDefault(BottomSheet, obj4);
+  cResult[3] = tmp4.termsAndConditionsText;
+  cResult[4] = tmp8;
+  cResult[5] = tmp12;
+  tmp11 = tmp12;
+}) : ((termsAndConditions) => {
   let BottomSheetTitleHeader;
   let Text;
   let intl;
@@ -48,17 +102,7 @@ function TermsAndConditionsActionSheet(termsAndConditions) {
   Text = Text_Text.Text;
   obj4 = MarkupUtilsDefault;
   return metroImportDefault(BottomSheet, obj);
-}
-let _slicedToArray = _slicedToArray_mod;
-({ View: hasOwnProperty, Image: metroRequire } = react_native);
-const USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING = Constants.USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { card: obj2, mainContainer: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, textContainer: { flexDirection: "row", flexShrink: 1, alignItems: "center" }, imageContainer: size, image: { width: 28, height: 28, resizeMode: "contain" }, title: { lineHeight: 20 }, subText: { lineHeight: 18 }, claimButton: { paddingHorizontal: 12 }, moreDetails: { marginLeft: 40 }, termsAndConditionsText: { paddingHorizontal: 16, paddingTop: 16 }, buttonContainer: { flexGrow: 1, flexDirection: "row", marginLeft: 4, justifyContent: "flex-end" } };
-obj2 = { flex: 1, flexDirection: "column", paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, paddingVertical: 12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 8 };
-createStyles = createStyles.createStyles;
-size = { width: 32, height: 32, marginRight: 8, borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: LegacyTokens.DARK_BLACK_500_LIGHT_PRIMARY_100 };
-let closure_9 = createStyles(obj);
+});
 size = size_mod;
 const result = size.fileFinishedImporting("components_native/premium/OutboundPromotionCard.tsx");
 
@@ -84,13 +128,13 @@ export default function OutboundPromotionCard(outboundPromotion) {
   _slicedToArray = undefined;
   let tmp = closure_9();
   const tmp2 = first;
-  const tmp3 = code(first[13])();
-  let obj = outboundPromotion(first[14]);
+  const tmp3 = code(first[15])();
+  let obj = outboundPromotion(first[16]);
   const promotionImageURL = obj.getPromotionImageURL(outboundPromotion.id, tmp3);
-  const tmp7 = code(first[15])(outboundPromotion, null != code);
-  const intl = outboundPromotion(first[10]).intl;
+  const tmp7 = code(first[17])(outboundPromotion, null != code);
+  const intl = outboundPromotion(first[11]).intl;
   const formatToPlainString = intl.formatToPlainString;
-  const t = outboundPromotion(first[10]).t;
+  const t = outboundPromotion(first[11]).t;
   if (null != code) {
     let obj2 = { endDate: tmp7 };
     formatToPlainStringResult = formatToPlainString(t.VaD05h, obj2);
@@ -98,9 +142,9 @@ export default function OutboundPromotionCard(outboundPromotion) {
     let obj3 = { endDate: tmp7 };
     formatToPlainStringResult = formatToPlainString(t["/XWgfG"], obj3);
   }
-  const intl2 = tmp4(tmp2[10]).intl;
+  const intl2 = tmp4(tmp2[11]).intl;
   const string = intl2.string;
-  const t2 = tmp4(tmp2[10]).t;
+  const t2 = tmp4(tmp2[11]).t;
   if (null != code) {
     stringResult = string(t2["2cHUti"]);
   } else {
@@ -114,17 +158,17 @@ export default function OutboundPromotionCard(outboundPromotion) {
       let obj = actions_AlertActionCreatorsDefault;
       const obj2 = {
         importer() {
-            const promise = outboundPromotion(first[18])(first[17], first.paths);
+            const promise = outboundPromotion(first[20])(first[19], first.paths);
             return promise.then((result) => {
               let closure_0 = result.default;
               return (arg0) => {
                 let obj = {
                   onCancel() {
-                    const obj = code(closure_2_2[16]);
+                    const obj = code(closure_2_2[18]);
                     obj.close();
                     closure_1_3(false);
                   },
-                  onClaim: closure_3_1(first[19]).addClaimedOutboundPromotionCode,
+                  onClaim: closure_3_1(first[21]).addClaimedOutboundPromotionCode,
                   code,
                   outboundPromotion
                 };
@@ -147,12 +191,12 @@ export default function OutboundPromotionCard(outboundPromotion) {
   obj9 = { children: items2 };
   items2 = [, ];
   const obj10 = { style: tmp.title, accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: outboundPromotion.outboundTitle };
-  items2[0] = closure_7(outboundPromotion(tmp2[11]).Text, obj10);
+  items2[0] = closure_7(outboundPromotion(tmp2[14]).Text, obj10);
   const obj11 = { style: tmp.subText, variant: "text-sm/medium", color: "text-default", children: formatToPlainStringResult };
-  items2[1] = closure_7(outboundPromotion(tmp2[11]).Text, obj11);
+  items2[1] = closure_7(outboundPromotion(tmp2[14]).Text, obj11);
   items1[1] = closure_7(closure_5, obj8);
   const obj12 = { style: tmp.buttonContainer, children: closure_7(closure_5, obj13) };
-  obj13 = { style: tmp.claimButton, children: closure_7(outboundPromotion(tmp2[20]).Button, obj14) };
+  obj13 = { style: tmp.claimButton, children: closure_7(outboundPromotion(tmp2[22]).Button, obj14) };
   obj14 = {
     size: "sm",
     shrink: true,
@@ -164,9 +208,9 @@ export default function OutboundPromotionCard(outboundPromotion) {
   items1[2] = closure_7(closure_5, obj12);
   items3 = [closure_8(closure_5, obj5), ];
   const obj15 = { children: closure_7(Text, obj16) };
-  obj16 = { style: tmp.moreDetails, variant: "text-sm/medium", children: intl3.format(outboundPromotion(tmp2[10]).t.sCm3Zb, obj17) };
-  Text = tmp4(tmp2[11]).Text;
-  intl3 = tmp4(tmp2[10]).intl;
+  obj16 = { style: tmp.moreDetails, variant: "text-sm/medium", children: intl3.format(outboundPromotion(tmp2[11]).t.sCm3Zb, obj17) };
+  Text = tmp4(tmp2[14]).Text;
+  intl3 = tmp4(tmp2[11]).intl;
   obj17 = {
     onClick() {
       const obj = ActionSheetActionCreatorsDefault;

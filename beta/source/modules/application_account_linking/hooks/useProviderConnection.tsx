@@ -1,14 +1,14 @@
-// Module ID: 6602
-// Function ID: 6603
+// Module ID: 6603
+// Function ID: 6604
 // Name: useProviderConnection
-// Dependencies: [5, 19, 5593, 504, 5718, 2]
+// Dependencies: [5, 19, 5594, 504, 5719, 2]
 // Exports: useProviderConnection
 
-// Module 6602 (useProviderConnection)
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5718 */;
+// Module 6603 (useProviderConnection)
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5719 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,14 +16,14 @@ let _require, c3, c6, closure_0;
 
 const result = size.fileFinishedImporting("modules/application_account_linking/hooks/useProviderConnection.tsx");
 
-export const useProviderConnection = function useProviderConnection(provider_id) {
+export const useProviderConnection = function useProviderConnection(arg0) {
   let fetching;
-  _require = provider_id;
+  _require = arg0;
   let obj = require("get initialized");
   const items = [ConnectedAccountsStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let account = null;
-    if (null != provider_id) {
+    if (null != closure_0) {
       account = ConnectedAccountsStore.getAccount(null, tmp);
     }
     return account;
@@ -48,7 +48,7 @@ export const useProviderConnection = function useProviderConnection(provider_id)
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -126,11 +126,11 @@ export const useProviderConnection = function useProviderConnection(provider_id)
       }
     }
   });
-  const items2 = [provider_id];
+  const items2 = [arg0];
   let obj3 = {
     loading: stateFromStores1,
     hasConnection: tmp3,
-    canConnect: null != provider_id,
+    canConnect: null != arg0,
     startConnection: useCallback(function() {
       return closure_0(...arguments);
     }, items2),

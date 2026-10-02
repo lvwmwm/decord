@@ -1,15 +1,15 @@
-// Module ID: 12482
-// Function ID: 12483
+// Module ID: 12484
+// Function ID: 12485
 // Name: StageLurkingManager
-// Dependencies: [2045, 4655, 1983, 573, 6740, 1370, 2]
+// Dependencies: [2051, 4657, 1989, 585, 6741, 1376, 2]
 
-// Module 12482 (StageLurkingManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import LurkerActionCreators from "LurkerActionCreators" /* 6740 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
-import LifecycleManager from "LifecycleManager" /* 1983 */;
+// Module 12484 (StageLurkingManager)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 6741 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import LifecycleManager from "LifecycleManager" /* 1989 */;
 import size from "module_2" /* 2 */;
 
 class StageLurkingManager extends LifecycleManager {

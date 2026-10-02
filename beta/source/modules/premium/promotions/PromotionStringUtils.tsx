@@ -1,33 +1,74 @@
-// Module ID: 12969
-// Function ID: 12970
+// Module ID: 12971
+// Function ID: 12972
 // Name: PromotionStringUtils
-// Dependencies: [4493, 1374, 504, 4488, 6655, 1115, 2111, 2]
-// Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
+// Dependencies: [4496, 1380, 558, 576, 504, 4491, 6656, 1127, 2114, 2]
+// Exports: getHelpArticleLinkProps
 
-// Module 12969 (PromotionStringUtils)
+// Module 12971 (PromotionStringUtils)
 import get_initialized from "get initialized" /* 504 */;
-import intl2 from "intl" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4493 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
+import PriceUtils from "PriceUtils" /* 6656 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4496 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
-let tmp;
-const PriceUtils = tmp(6655);
 ({ PremiumSubscriptionSKUs: closure_4, SubscriptionPlans: hasOwnProperty } = PremiumConstants);
-const result = size.fileFinishedImporting("modules/premium/promotions/PromotionStringUtils.tsx");
-
-export const useFormatStringWithCommonPremiumParams = function useFormatStringWithCommonPremiumParams(body) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+  let TIER_2;
+  let loadedForSKU;
+  let tmp11;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(3);
+  let str = "...";
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SubscriptionPlanStore];
+    const fn = function u() {
+      return loadedForSKU.isLoadedForSKU(TIER_2.TIER_2);
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (-1 !== arr.indexOf("{price}")) {
+    if (stateFromStores) {
+      try {
+        const obj3 = PremiumUtilsDefault;
+        const defaultPrice = obj3.getDefaultPrice(hasOwnProperty.PREMIUM_MONTH_TIER_2);
+        const tmpResult2 = PriceUtils;
+        str = tmpResult2.formatPrice(defaultPrice.amount, defaultPrice.currency);
+      } catch (err) {
+      }
+    }
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp12 = /\{price\}/g;
+    cResult[2] = tmp12;
+    tmp11 = tmp12;
+  } else {
+    tmp11 = cResult[2];
+  }
+  return arr.replace(tmp11, str);
+}) : ((arr) => {
   let TIER_2;
   let loadedForSKU;
   let str = "...";
   const items = [SubscriptionPlanStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => loadedForSKU.isLoadedForSKU(TIER_2.TIER_2));
-  if (-1 !== body.indexOf("{price}")) {
+  if (-1 !== arr.indexOf("{price}")) {
     if (stateFromStores) {
       try {
         const obj2 = PremiumUtilsDefault;
@@ -38,8 +79,11 @@ export const useFormatStringWithCommonPremiumParams = function useFormatStringWi
       }
     }
   }
-  return body.replace(/\{price\}/g, str);
-};
+  return arr.replace(/\{price\}/g, str);
+});
+const result = size.fileFinishedImporting("modules/premium/promotions/PromotionStringUtils.tsx");
+
+export const useFormatStringWithCommonPremiumParams = tmp3;
 export const getHelpArticleLinkProps = function getHelpArticleLinkProps(helpArticle, helpArticleId) {
   let obj2;
   let id1;

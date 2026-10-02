@@ -1,13 +1,13 @@
-// Module ID: 8256
-// Function ID: 8257
+// Module ID: 8253
+// Function ID: 8254
 // Name: useSlayerStorefrontDevOverrideStore
-// Dependencies: [560, 2]
+// Dependencies: [570, 2]
 
-// Module 8256 (useSlayerStorefrontDevOverrideStore)
-import module_560 from "module_560" /* 560 */;
+// Module 8253 (useSlayerStorefrontDevOverrideStore)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = module_560.create()((arg0) => {
+const tmp2 = module_570.create()((arg0) => {
   let closure_0 = arg0;
   let obj = {
     overrideApplicationId: null,

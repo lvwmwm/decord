@@ -1,23 +1,53 @@
-// Module ID: 11368
-// Function ID: 11369
+// Module ID: 11243
+// Function ID: 11244
 // Name: AppealIngestionActivitySummary
-// Dependencies: [19, 17, 21, 4836, 11369, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 558, 576, 11244, 2]
 
-// Module 11368 (AppealIngestionActivitySummary)
+// Module 11243 (AppealIngestionActivitySummary)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ClassificationEvidenceDefault from "ClassificationEvidence" /* 11369 */;
+import react2 from "react" /* 576 */;
+import ClassificationEvidenceDefault from "ClassificationEvidence" /* 11244 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let flaggedContent;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
-let closure_4 = createStyles.createStyles({ activity: { marginBottom: 16 } });
+let closure_5 = createStyles.createStyles({ activity: { marginBottom: 16 } });
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((flaggedContent) => {
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(5);
+  flaggedContent = flaggedContent.flaggedContent;
+  const tmp3 = closure_5();
+  if (cResult[0] !== flaggedContent) {
+    const tmp7 = jsx(ClassificationEvidenceDefault, { flaggedContent });
+    cResult[0] = flaggedContent;
+    cResult[1] = tmp7;
+    tmp4 = tmp7;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] === tmp3.activity) {
+    let tmp8;
+    if (cResult[3] === tmp4) {
+      tmp8 = cResult[4];
+    }
+    return tmp8;
+  }
+  const tmp9 = <View style={tmp3.activity}>{tmp4}</View>;
+  cResult[2] = tmp3.activity;
+  cResult[3] = tmp4;
+  cResult[4] = tmp9;
+  tmp8 = tmp9;
+}) : ((flaggedContent) => {
+  flaggedContent = flaggedContent.flaggedContent;
+  return <View style={closure_5().activity}>{jsx(ClassificationEvidenceDefault, { flaggedContent })}</View>;
+});
 const result = size.fileFinishedImporting("modules/safety_hub/native/AppealIngestionActivitySummary.tsx");
 
-export default function AppealIngestionActivitySummary(flaggedContent) {
-  flaggedContent = flaggedContent.flaggedContent;
-  return <View style={closure_4().activity}>{jsx(ClassificationEvidenceDefault, { flaggedContent })}</View>;
-};
+export default tmp3;

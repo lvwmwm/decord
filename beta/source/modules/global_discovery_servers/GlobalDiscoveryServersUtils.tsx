@@ -1,19 +1,19 @@
-// Module ID: 17656
-// Function ID: 17657
+// Module ID: 17658
+// Function ID: 17659
 // Name: GlobalDiscoveryServersUtils
-// Dependencies: [5, 2112, 13249, 9050, 1074, 1115, 1370, 6759, 1241, 17655, 1255, 2]
+// Dependencies: [5, 2115, 13251, 9027, 1086, 1127, 1376, 6760, 1253, 17657, 1267, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, handleTabPressPrefetch, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 17656 (GlobalDiscoveryServersUtils)
-import Constants from "Constants" /* 1074 */;
-import intl8 from "intl" /* 1115 */;
-import v1 from "v1" /* 1255 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import GlobalDiscoveryServersFeaturedSearchManagerDefault from "GlobalDiscoveryServersFeaturedSearchManager" /* 17655 */;
+// Module 17658 (GlobalDiscoveryServersUtils)
+import Constants from "Constants" /* 1086 */;
+import intl8 from "intl" /* 1127 */;
+import v1 from "v1" /* 1267 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import GlobalDiscoveryServersFeaturedSearchManagerDefault from "GlobalDiscoveryServersFeaturedSearchManager" /* 17657 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import GlobalDiscoveryServersSearchResultsStore from "GlobalDiscoveryServersSearchResultsStore" /* 13249 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9050 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import GlobalDiscoveryServersSearchResultsStore from "GlobalDiscoveryServersSearchResultsStore" /* 13251 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9027 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -45,7 +45,7 @@ let obj = function _navigateToGuild() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -73,7 +73,7 @@ let obj = function _navigateToGuild() {
             obj6 = undefined;
             category_id = 1;
             _location = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === category_id) {
           if (arg0 === 1) {
@@ -104,7 +104,7 @@ let obj = function _navigateToGuild() {
           obj = closure_130_1(closure_130_3[8]);
           obj.track(closure_130_14.GUILD_DISCOVERY_GUILD_SELECTED, obj9);
           _location = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp27) {
         _location = 3;
@@ -262,7 +262,7 @@ export const fromDiscoverableGuildServer = function fromDiscoverableGuildServer(
   return obj;
 };
 export const fromDiscoverableGuildSearchResult = function fromDiscoverableGuildSearchResult(id) {
-  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "sa", discoverySplash: null, emojis: [] };
+  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "duration", discoverySplash: "center", emojis: [] };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, discovery_splash: obj.discoverySplash } = id);
   new Set(id.features);
   return obj;

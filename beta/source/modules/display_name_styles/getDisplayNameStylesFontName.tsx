@@ -1,33 +1,33 @@
-// Module ID: 14172
-// Function ID: 14173
+// Module ID: 14160
+// Function ID: 14161
 // Name: getDisplayNameStylesFontName
-// Dependencies: [1392, 2877, 2]
+// Dependencies: [1398, 2880, 2]
 // Exports: default
 
-// Module 14172 (getDisplayNameStylesFontName)
-import DisplayNameFont from "DisplayNameFont" /* 1392 */;
-import _modDef2877 from "module_2877" /* 2877 */;
+// Module 14160 (getDisplayNameStylesFontName)
+import DisplayNameFont from "DisplayNameFont" /* 1398 */;
+import _modDef2880 from "module_2880" /* 2880 */;
 import size from "module_2" /* 2 */;
 
 const DISPLAY_NAME_STYLES_FONT_NAMES = {};
-DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.DEFAULT] = _modDef2877.ZEL6mz;
-DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.CHERRY_BOMB] = _modDef2877.rN7cuX;
-DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.CHICLE] = _modDef2877.CbHHnL;
-DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.MUSEO_MODERNO] = _modDef2877.iEcEKO;
-DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.NEO_CASTEL] = _modDef2877.DL7jLZ;
-DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.PIXELIFY] = _modDef2877.jq4aRp;
-DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.SINISTRE] = _modDef2877.jV9DN4;
-DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.ZILLA_SLAB] = _modDef2877.KMR8rT;
-DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.PLAYPEN_SANS] = _modDef2877.RP8HFf;
-DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.ORBITRON] = _modDef2877.pwbAIk;
-DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.NEW_ROCKER] = _modDef2877["Llo/Ia"];
-DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.KALAM] = _modDef2877.t9Les4;
+DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.DEFAULT] = _modDef2880.ZEL6mz;
+DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.CHERRY_BOMB] = _modDef2880.rN7cuX;
+DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.CHICLE] = _modDef2880.CbHHnL;
+DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.MUSEO_MODERNO] = _modDef2880.iEcEKO;
+DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.NEO_CASTEL] = _modDef2880.DL7jLZ;
+DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.PIXELIFY] = _modDef2880.jq4aRp;
+DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.SINISTRE] = _modDef2880.jV9DN4;
+DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.ZILLA_SLAB] = _modDef2880.KMR8rT;
+DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.PLAYPEN_SANS] = _modDef2880.RP8HFf;
+DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.ORBITRON] = _modDef2880.pwbAIk;
+DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.NEW_ROCKER] = _modDef2880["Llo/Ia"];
+DISPLAY_NAME_STYLES_FONT_NAMES[DisplayNameFont.DisplayNameFont.KALAM] = _modDef2880.t9Les4;
 const result = size.fileFinishedImporting("modules/display_name_styles/getDisplayNameStylesFontName.tsx");
 
 export default function getDisplayNameStylesFontName(arg0) {
   let ZEL6mz = obj[arg0];
   if (ZEL6mz == null) {
-    ZEL6mz = _modDef2877.ZEL6mz;
+    ZEL6mz = _modDef2880.ZEL6mz;
   }
   return ZEL6mz;
 };

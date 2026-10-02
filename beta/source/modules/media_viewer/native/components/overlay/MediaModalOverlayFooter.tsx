@@ -1,31 +1,31 @@
-// Module ID: 12527
-// Function ID: 12528
+// Module ID: 12529
+// Function ID: 12530
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 4836, 576, 4566, 11031, 4837, 1177, 12528, 6073, 4567, 6544, 6575, 12529, 12519, 2]
+// Dependencies: [32, 19, 17, 21, 4837, 588, 4570, 10898, 4838, 1189, 12530, 6066, 4571, 6546, 6576, 12531, 12521, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 12527 (MediaModalOverlayFooter)
+// Module 12529 (MediaModalOverlayFooter)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import timing from "timing" /* 4837 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11031 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import timing from "timing" /* 4838 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 10898 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
-let __initData4, __initData5, __initData6, set, set2, set3;
+let __initData4, __initData5, set, set2, set3;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "WireType" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "Path" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
+let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "code" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "call" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
 obj2 = { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
 let closure_8 = createStyles.createStyles(obj);
 let c9 = -1;
@@ -233,7 +233,7 @@ export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelI
   const b = mediaModalFooterBackgroundColorRgba.b;
   __initData5 = b;
   const a = mediaModalFooterBackgroundColorRgba.a;
-  __initData6 = a;
+  const __initData6 = a;
   const MediaModalFooterUnderlay = tmp30.MediaModalFooterUnderlay;
   function ie() {
     let items;

@@ -1,13 +1,13 @@
-// Module ID: 10867
-// Function ID: 10868
+// Module ID: 11843
+// Function ID: 11844
 // Name: showChannelFollowingActionSheet
-// Dependencies: [19, 21, 4800, 10868, 1981, 5204, 10875, 2]
+// Dependencies: [19, 21, 4801, 11844, 1987, 5205, 11850, 2]
 // Exports: showChannelFollowingActionSheet
 
-// Module 10867 (showChannelFollowingActionSheet)
+// Module 11843 (showChannelFollowingActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ export const showChannelFollowingActionSheet = function showChannelFollowingActi
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     let obj = { sourceChannelId, sourceGuildId, targetChannelId, targetGuildId, reopenActionSheetWithTarget, onSuccess, onCancel };
-    const tmp2 = asyncRequire(10868, dependencyMap.paths);
+    const tmp2 = asyncRequire(11844, dependencyMap.paths);
     openLazy(tmp2, "NewChannelFollower." + sourceChannelId, obj);
   }
   function onSuccess() {
@@ -55,7 +55,7 @@ export const showChannelFollowingActionSheet = function showChannelFollowingActi
   importDefault = guildId;
   const tmp = ActionSheetActionCreatorsDefault;
   let openLazy = tmp.openLazy;
-  let tmp2 = require("asyncRequire")(10868, dependencyMap.paths);
+  let tmp2 = require("asyncRequire")(11844, dependencyMap.paths);
   let obj = { sourceChannelId: id, sourceGuildId: guildId, targetChannelId, targetGuildId, reopenActionSheetWithTarget, onSuccess, onCancel };
   const openLazyResult = openLazy(tmp2, "NewChannelFollower." + id, obj);
 };

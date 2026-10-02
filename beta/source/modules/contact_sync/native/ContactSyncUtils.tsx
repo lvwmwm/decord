@@ -1,27 +1,28 @@
-// Module ID: 12177
-// Function ID: 12178
+// Module ID: 12070
+// Function ID: 12071
 // Name: ContactSyncUtils
-// Dependencies: [5, 17, 5593, 12176, 12175, 1074, 1365, 5029, 1249, 573, 12178, 2021, 1231, 504, 1385, 2111, 4525, 5039, 2]
-// Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
+// Dependencies: [5, 17, 5594, 12069, 12068, 1086, 1371, 5030, 1261, 585, 12071, 2027, 1243, 558, 576, 504, 1391, 2114, 4528, 5040, 2]
+// Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts
 
-// Module 12177 (ContactSyncUtils)
+// Module 12070 (ContactSyncUtils)
 import react_native from "react-native" /* 17 */;
-import get_initialized from "get initialized" /* 504 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import LinkingDefault from "Linking" /* 4525 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5029 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import ContactSyncManager from "ContactSyncManager" /* 12178 */;
+import react from "react" /* 576 */;
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
+import FlagUtils from "FlagUtils" /* 1391 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import LinkingDefault from "Linking" /* 4528 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5030 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import ContactSyncManager from "ContactSyncManager" /* 12071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12176 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12175 */;
-import Constants from "Constants" /* 1074 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12069 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12068 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -35,7 +36,9 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
+let tmp;
 let unpackModuleId;
+const get_initialized = tmp(504);
 let obj = function _uploadContacts() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let closure_3;
@@ -53,7 +56,7 @@ let obj = function _uploadContacts() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -80,7 +83,7 @@ let obj = function _uploadContacts() {
             body = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -137,12 +140,117 @@ const NativeModules = react_native.NativeModules;
 const error = new Error("No contact permissions");
 const error1 = new Error("No phone number");
 const error2 = new Error("Failed to fetch contact image");
-let result = size.fileFinishedImporting("modules/contact_sync/native/ContactSyncUtils.tsx");
-
-export const ContactSyncPermissionDenied = error;
-export const ContactSyncFailedUserHasNoPhone = error1;
-export const ContactImageFetchFailed = error2;
-export const isContactSyncAvailable = function isContactSyncAvailable() {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let localAccount;
+  let tmp4;
+  let tmp5;
+  obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ConnectedAccountsStore];
+    const fn = function e() {
+      return localAccount.getLocalAccount(constants.CONTACTS);
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let localAccount;
+  const items = [ConnectedAccountsStore];
+  obj = get_initialized;
+  return obj.useStateFromStores(items, () => localAccount.getLocalAccount(constants.CONTACTS));
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ConnectedAccountsStore];
+    const fn = function e() {
+      localAccount = localAccount.getLocalAccount(constants.CONTACTS);
+      return null != localAccount && localAccount.friendSync && localAccount.type === constants.CONTACTS;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  const items = [ConnectedAccountsStore];
+  obj = get_initialized;
+  return obj.useStateFromStores(items, () => {
+    localAccount = localAccount.getLocalAccount(constants.CONTACTS);
+    return null != localAccount && localAccount.friendSync && localAccount.type === constants.CONTACTS;
+  });
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp5;
+  let tmp8;
+  obj = react;
+  const cResult = obj.c(8);
+  const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
+  const setting = FriendDiscoverySettings.useSetting();
+  if (cResult[0] !== setting) {
+    const tmpResult = FlagUtils;
+    const hasFlagResult = tmpResult.hasFlag(setting, constants3.FIND_BY_PHONE);
+    cResult[0] = setting;
+    cResult[1] = hasFlagResult;
+    tmp5 = hasFlagResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] !== setting) {
+    const tmpResult2 = FlagUtils;
+    const hasFlagResult1 = tmpResult2.hasFlag(setting, constants3.FIND_BY_EMAIL);
+    cResult[2] = setting;
+    cResult[3] = hasFlagResult1;
+    tmp8 = hasFlagResult1;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] === tmp8) {
+    if (cResult[5] === tmp5) {
+      let tmp12;
+      if (cResult[6] === (tmp5 || tmp8)) {
+        tmp12 = cResult[7];
+      }
+      return tmp12;
+    }
+  }
+  const obj2 = { phone: tmp5, email: tmp8, any: tmp5 || tmp8 };
+  cResult[4] = tmp8;
+  cResult[5] = tmp5;
+  cResult[6] = tmp5 || tmp8;
+  cResult[7] = obj2;
+  tmp12 = obj2;
+}) : (() => {
+  const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
+  const setting = FriendDiscoverySettings.useSetting();
+  obj = FlagUtils;
+  let hasFlagResult = obj.hasFlag(setting, constants3.FIND_BY_PHONE);
+  const obj2 = FlagUtils;
+  const hasFlagResult1 = obj2.hasFlag(setting, constants3.FIND_BY_EMAIL);
+  const obj3 = { phone: hasFlagResult, email: hasFlagResult1, any: hasFlagResult };
+  if (!hasFlagResult) {
+    hasFlagResult = hasFlagResult1;
+  }
+  return obj3;
+});
+function isContactSyncAvailable() {
   obj = utils_PlatformUtils;
   let isIOSResult = obj.isIOS();
   if (!isIOSResult) {
@@ -157,7 +265,20 @@ export const isContactSyncAvailable = function isContactSyncAvailable() {
     isIOSResult = flag;
   }
   return isIOSResult;
-};
+}
+function isContactSyncEnabled(contactSyncAccount) {
+  return null != contactSyncAccount && contactSyncAccount.friendSync && contactSyncAccount.type === map1.CONTACTS;
+}
+function getOpenLearnMoreUrl() {
+  obj = HelpdeskUtilsDefault;
+  return obj.getArticleURL(constants4.CONTACT_SYNC);
+}
+let result = size.fileFinishedImporting("modules/contact_sync/native/ContactSyncUtils.tsx");
+
+export const ContactSyncPermissionDenied = error;
+export const ContactSyncFailedUserHasNoPhone = error1;
+export const ContactImageFetchFailed = error2;
+export { isContactSyncAvailable };
 export const checkContactPermissions = function checkContactPermissions() {
   let result;
   obj = utils_PlatformUtils;
@@ -270,40 +391,11 @@ export const getStoredContacts = function getStoredContacts() {
   }
   return {};
 };
-export const useContactSyncAccount = function useContactSyncAccount() {
-  let localAccount;
-  const items = [ConnectedAccountsStore];
-  obj = get_initialized;
-  return obj.useStateFromStores(items, () => localAccount.getLocalAccount(constants.CONTACTS));
-};
-export const useContactSyncEnabled = function useContactSyncEnabled() {
-  const items = [ConnectedAccountsStore];
-  obj = get_initialized;
-  return obj.useStateFromStores(items, () => {
-    localAccount = localAccount.getLocalAccount(constants.CONTACTS);
-    return null != localAccount && localAccount.friendSync && localAccount.type === constants.CONTACTS;
-  });
-};
-export const useContactSyncUserIsDiscoverable = function useContactSyncUserIsDiscoverable() {
-  const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
-  const setting = FriendDiscoverySettings.useSetting();
-  obj = FlagUtils;
-  let hasFlagResult = obj.hasFlag(setting, constants3.FIND_BY_PHONE);
-  const obj2 = FlagUtils;
-  const hasFlagResult1 = obj2.hasFlag(setting, constants3.FIND_BY_EMAIL);
-  const obj3 = { phone: hasFlagResult, email: hasFlagResult1, any: hasFlagResult };
-  if (!hasFlagResult) {
-    hasFlagResult = hasFlagResult1;
-  }
-  return obj3;
-};
-export const isContactSyncEnabled = function isContactSyncEnabled(contactSyncAccount) {
-  return null != contactSyncAccount && contactSyncAccount.friendSync && contactSyncAccount.type === map1.CONTACTS;
-};
-export const getOpenLearnMoreUrl = function getOpenLearnMoreUrl() {
-  obj = HelpdeskUtilsDefault;
-  return obj.getArticleURL(constants4.CONTACT_SYNC);
-};
+export const useContactSyncAccount = tmp8;
+export const useContactSyncEnabled = tmp9;
+export const useContactSyncUserIsDiscoverable = tmp10;
+export { isContactSyncEnabled };
+export { getOpenLearnMoreUrl };
 export const handleOpenLearnMoreLink = function handleOpenLearnMoreLink() {
   const openURL = LinkingDefault.openURL;
   LinkingDefault;

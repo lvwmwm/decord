@@ -1,25 +1,25 @@
-// Module ID: 7038
-// Function ID: 7039
+// Module ID: 7042
+// Function ID: 7043
 // Name: WidgetUtils
-// Dependencies: [32, 1372, 7035, 7039, 7040, 2042, 7041, 5422, 1115, 7037, 7036, 4654, 2029, 7042, 7043, 7044, 7046, 6727, 5424, 2]
+// Dependencies: [32, 1378, 7039, 7043, 7044, 2048, 7045, 5423, 1127, 7041, 7040, 4656, 2035, 7046, 7047, 7048, 7050, 6728, 5425, 2]
 // Exports: addPendingGameToWidget, addUploadingClipToClipsGalleryWidget, addWidgetToPending, areWidgetGamesEqual, commitUploadedClipInClipsGalleryWidget, getGameWidgetSubtitle, getRandomElement, getRandomElements, getSavedWidgets, getWidgetTitle, hasUploadingClipInClipsGalleryWidget, isGameAllowedInGameWidgets, isGameLimitReached, removeClipFromClipsGalleryWidget, removePendingGameFromWidget, removeTagFromClip, removeTagFromGame, removeWidgetFromPending, reorderClipsInClipsGalleryWidget, reorderGamesInWidget, reorderWidgets, updateClipTagsInClipsGalleryWidget, updateClipTitleInClipsGalleryWidget, updatePendingGameComment, updatePendingGameTags, updatePersonalWidget, updateUnsavedClipThumbnailInClipsGalleryWidget, widgetMaxGames, widgetSupportsComment, widgetSupportsTags
 
-// Module 7038 (WidgetUtils)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4654 */;
-import GameWidgetLimits from "GameWidgetLimits" /* 5422 */;
-import utils from "utils" /* 5424 */;
-import WidgetType from "WidgetType" /* 7036 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7037 */;
-import shared_ClipsConstants from "shared/ClipsConstants" /* 7041 */;
-import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 7042 */;
-import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7044 */;
-import WidgetGameTag from "WidgetGameTag" /* 7046 */;
+// Module 7042 (WidgetUtils)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4656 */;
+import GameWidgetLimits from "GameWidgetLimits" /* 5423 */;
+import utils from "utils" /* 5425 */;
+import WidgetType from "WidgetType" /* 7040 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7041 */;
+import shared_ClipsConstants from "shared/ClipsConstants" /* 7045 */;
+import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 7046 */;
+import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7048 */;
+import WidgetGameTag from "WidgetGameTag" /* 7050 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1372 */;
-import UserProfileStore from "UserProfileStore" /* 7035 */;
-import WidgetStore from "WidgetStore" /* 7039 */;
-import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7040 */;
+import UserStore from "UserStore" /* 1378 */;
+import UserProfileStore from "UserProfileStore" /* 7039 */;
+import WidgetStore from "WidgetStore" /* 7043 */;
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7044 */;
 import size from "module_2" /* 2 */;
 
 let uniqueKey;
@@ -28,8 +28,8 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const UserProfileClipsGalleryWidgetTypes = tmp(7043);
-const f83746 = (item) => item instanceof UserProfileClipsGalleryWidgetTypes.ClipsGalleryWidget;
+const UserProfileClipsGalleryWidgetTypes = tmp(7047);
+const f93384 = (item) => item instanceof UserProfileClipsGalleryWidgetTypes.ClipsGalleryWidget;
 function findGameWidget(widgetType) {
   let widgets;
   let closure_0 = widgetType;
@@ -113,13 +113,13 @@ export const getGameWidgetSubtitle = function getGameWidgetSubtitle(games, showE
     if (games.games.length > 0) {
       let stringResult;
       if (1 === GameWidgetLimits.GAME_WIDGET_LIMITS_BY_TYPE[games.type]) {
-        const intl2 = tmp(1115).intl;
-        stringResult = intl2.string(tmp(1115).t.wiXdEa);
+        const intl2 = tmp(1127).intl;
+        stringResult = intl2.string(tmp(1127).t.wiXdEa);
       } else {
-        const intl = tmp(1115).intl;
+        const intl = tmp(1127).intl;
         const format = intl.format;
         const obj = { numGames: GameWidgetLimits.GAME_WIDGET_LIMITS_BY_TYPE[games.type] };
-        const prop = tmp(1115).t["zR1+0/"];
+        const prop = tmp(1127).t["zR1+0/"];
         stringResult = format(prop, obj);
       }
       return stringResult;
@@ -193,11 +193,11 @@ export const addWidgetToPending = function addWidgetToPending(type) {
   })) {
     if (type.type === WidgetType.WidgetType.PERSONAL) {
       const obj2 = { dismissAction: ContentDismissActionType.INDIRECT_ACTION };
-      const tmp18Result = DismissibleContentUnsafeUtils;
-      const result = tmp18Result.UNSAFE_markDismissibleContentAsDismissed(tmp18(2029).DismissibleContent.USER_PROFILE_PERSONAL_WIDGET_COACHMARK, obj2);
+      const tmp15Result = DismissibleContentUnsafeUtils;
+      const result = tmp15Result.UNSAFE_markDismissibleContentAsDismissed(tmp15(2035).DismissibleContent.USER_PROFILE_PERSONAL_WIDGET_COACHMARK, obj2);
       const obj3 = { dismissAction: ContentDismissActionType.INDIRECT_ACTION };
-      const tmp18Result2 = DismissibleContentUnsafeUtils;
-      const result1 = tmp18Result2.UNSAFE_markDismissibleContentAsDismissed(tmp18(2029).DismissibleContent.USER_PROFILE_PERSONAL_WIDGET_NEW_BADGE, obj3);
+      const tmp15Result2 = DismissibleContentUnsafeUtils;
+      const result1 = tmp15Result2.UNSAFE_markDismissibleContentAsDismissed(tmp15(2035).DismissibleContent.USER_PROFILE_PERSONAL_WIDGET_NEW_BADGE, obj3);
     }
     const items = [type];
     const setPendingWidgets = WidgetActionCreatorsDefault.setPendingWidgets;
@@ -262,7 +262,7 @@ export const addUploadingClipToClipsGalleryWidget = function addUploadingClipToC
       widgets = [];
     }
   }
-  let found = widgets.find(f83746);
+  let found = widgets.find(f93384);
   if (found == null) {
     found = null;
   }
@@ -318,7 +318,7 @@ export const hasUploadingClipInClipsGalleryWidget = function hasUploadingClipInC
       widgets = [];
     }
   }
-  let found = widgets.find(f83746);
+  let found = widgets.find(f93384);
   if (found == null) {
     found = null;
   }
@@ -359,7 +359,7 @@ export const updateUnsavedClipThumbnailInClipsGalleryWidget = function updateUns
       widgets = [];
     }
   }
-  let found = widgets.find(f83746);
+  let found = widgets.find(f93384);
   if (found == null) {
     found = null;
   }
@@ -421,7 +421,7 @@ export const commitUploadedClipInClipsGalleryWidget = function commitUploadedCli
       widgets = [];
     }
   }
-  let found = widgets.find(f83746);
+  let found = widgets.find(f93384);
   if (found == null) {
     found = null;
   }
@@ -487,7 +487,7 @@ export const updateClipTitleInClipsGalleryWidget = function updateClipTitleInCli
       widgets = [];
     }
   }
-  let found = widgets.find(f83746);
+  let found = widgets.find(f93384);
   if (found == null) {
     found = null;
   }
@@ -542,7 +542,7 @@ export const reorderClipsInClipsGalleryWidget = function reorderClipsInClipsGall
       widgets = [];
     }
   }
-  let found = widgets.find(f83746);
+  let found = widgets.find(f93384);
   if (found == null) {
     found = null;
   }
@@ -595,7 +595,7 @@ export const updateClipTagsInClipsGalleryWidget = function updateClipTagsInClips
         widgets = [];
       }
     }
-    let found = widgets.find(f83746);
+    let found = widgets.find(f93384);
     if (found == null) {
       found = null;
     }
@@ -655,7 +655,7 @@ export const removeTagFromClip = function removeTagFromClip(arg0, arg1) {
       widgets = [];
     }
   }
-  let found = widgets.find(f83746);
+  let found = widgets.find(f93384);
   if (found == null) {
     found = null;
   }
@@ -697,7 +697,7 @@ export const removeTagFromClip = function removeTagFromClip(arg0, arg1) {
             widgets1 = [];
           }
         }
-        let found3 = widgets1.find(f83746);
+        let found3 = widgets1.find(f93384);
         if (found3 == null) {
           found3 = null;
         }
@@ -720,7 +720,7 @@ export const removeTagFromClip = function removeTagFromClip(arg0, arg1) {
                     })
           };
           ({ id: obj2.id, clips } = found3);
-          const ClipsGalleryWidget = tmp10(7043).ClipsGalleryWidget;
+          const ClipsGalleryWidget = tmp10(7047).ClipsGalleryWidget;
           const self = this;
           const self2 = this;
           const clipsGalleryWidget = new ClipsGalleryWidget(obj4);
@@ -756,7 +756,7 @@ export const removeClipFromClipsGalleryWidget = function removeClipFromClipsGall
       widgets = [];
     }
   }
-  let found = widgets.find(f83746);
+  let found = widgets.find(f93384);
   if (found == null) {
     found = null;
   }
@@ -877,7 +877,7 @@ export const removeTagFromGame = function removeTagFromGame(widgetType, arg1, ar
                   return tmp;
                 });
                 const obj2 = { games: mapped };
-                const BaseGameWidget = tmp4(7037).BaseGameWidget;
+                const BaseGameWidget = tmp4(7041).BaseGameWidget;
                 const merged1 = Object.assign(tmpResult);
                 const self = this;
                 const self2 = this;
@@ -935,7 +935,7 @@ export const addPendingGameToWidget = function addPendingGameToWidget(ignoreMaxG
   }
   const tmp2 = findGameWidget(widgetType);
   if (widgetType in GameWidgetLimits.GAME_WIDGET_LIMITS_BY_TYPE) {
-    tmp3(5422).GAME_WIDGET_LIMITS_BY_TYPE[widgetType];
+    tmp3(5423).GAME_WIDGET_LIMITS_BY_TYPE[widgetType];
   }
   if (null != tmp2) {
     const games = tmp2.games;
@@ -964,7 +964,7 @@ export const addPendingGameToWidget = function addPendingGameToWidget(ignoreMaxG
     items1 = [obj];
   }
   let tmp9 = tmp2;
-  const BaseGameWidget = tmp3(7037).BaseGameWidget;
+  const BaseGameWidget = tmp3(7041).BaseGameWidget;
   const tmp8 = replaceWidgetInList;
   if (tmp2 == null) {
     tmp9 = { type: widgetType };
@@ -976,7 +976,7 @@ export const addPendingGameToWidget = function addPendingGameToWidget(ignoreMaxG
   const tmp8Result = tmp8(baseGameWidget);
   const obj4 = WidgetActionCreatorsDefault;
   obj4.setPendingWidgets(tmp8Result);
-  const useGame = tmp3(6727).useGame;
+  const useGame = tmp3(6728).useGame;
   const items2 = [game.gameId];
   const many = useGame.fetchMany(items2);
 };

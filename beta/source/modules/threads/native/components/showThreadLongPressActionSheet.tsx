@@ -1,12 +1,12 @@
-// Module ID: 15746
-// Function ID: 15747
+// Module ID: 15745
+// Function ID: 15746
 // Name: showThreadLongPressActionSheet
-// Dependencies: [4800, 15747, 1981, 2]
+// Dependencies: [4801, 15746, 1987, 2]
 // Exports: default
 
-// Module 15746 (showThreadLongPressActionSheet)
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+// Module 15745 (showThreadLongPressActionSheet)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/threads/native/components/showThreadLongPressActionSheet.tsx");
@@ -20,5 +20,5 @@ export default function showThreadLongPressActionSheet(channelId) {
       obj.hideActionSheet("ThreadLongPressActionSheet");
     }
   };
-  obj.openLazy(asyncRequire(15747, dependencyMap.paths), "ThreadLongPressActionSheet", obj2);
+  obj.openLazy(asyncRequire(15746, dependencyMap.paths), "ThreadLongPressActionSheet", obj2);
 };

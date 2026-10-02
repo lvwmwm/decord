@@ -1,14 +1,14 @@
-// Module ID: 9281
-// Function ID: 9282
+// Module ID: 9259
+// Function ID: 9260
 // Name: CreateInviteModalActionCreators
-// Dependencies: [9276, 1074, 573, 1241, 7826, 1115, 2]
+// Dependencies: [9254, 1086, 585, 1253, 7830, 1127, 2]
 
-// Module 9281 (CreateInviteModalActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7826 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9276 */;
+// Module 9259 (CreateInviteModalActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7830 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9254 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -79,7 +79,7 @@ let obj = {
       }
       let obj2 = { temporary, validate: code, max_age: parseInt(maxAge, 10), max_uses: parseInt(maxUses, 10), target_type: targetType, target_user_id: targetUserId, target_application_id: targetApplicationId, flags, role_ids: roleIds };
       const _parseInt = parseInt;
-      const createInvite = tmp8(7826).createInvite;
+      const createInvite = tmp8(7830).createInvite;
       InstantInviteActionCreatorsDefault;
       const _parseInt2 = parseInt;
       const invite1 = createInvite(channelId, obj2, arg0);

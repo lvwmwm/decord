@@ -1,8 +1,8 @@
-// Module ID: 14735
-// Function ID: 14736
+// Module ID: 14723
+// Function ID: 14724
 // Dependencies: [2]
 
-// Module 14735
+// Module 14723
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/quests/bounties/BG_Smoke_Full_FigmaMatched_Frame0.png.js");

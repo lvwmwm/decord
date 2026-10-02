@@ -1,15 +1,18 @@
-// Module ID: 16640
-// Function ID: 16641
+// Module ID: 16642
+// Function ID: 16643
 // Name: MessagePreview
-// Dependencies: [19, 7808, 1074, 21, 504, 1115, 16460, 12825, 2]
-// Exports: default
+// Dependencies: [19, 7812, 1086, 21, 558, 576, 504, 1127, 16462, 12827, 2]
 
-// Module 16640 (MessagePreview)
+// Module 16642 (MessagePreview)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1115 */;
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import ChatPreview from "ChatPreview" /* 12827 */;
 import react from "react" /* 19 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 7808 */;
-import Constants from "Constants" /* 1074 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 7812 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let AnalyticsObjects;
@@ -17,9 +20,96 @@ let AnalyticsSections;
 ({ AnalyticsSections, AnalyticsObjects } = Constants);
 const jsx = Fragment.jsx;
 const analyticsLocation = { section: AnalyticsSections.CHANNEL_SEARCH, object: AnalyticsObjects.CHANNEL_SEARCH };
-const result = size.fileFinishedImporting("components_native/common/MessagePreview.tsx");
-
-export default function MessagePreview(onBeforeJumpToMessage) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let channelId;
+  let jumpTargetId;
+  let messages;
+  let onBeforeJumpToMessage;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let obj = react2;
+  const cResult = obj.c(12);
+  ({ channelId, onBeforeJumpToMessage } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MessagePreviewStore];
+    const fn = function c() {
+      return { messages: MessagePreviewStore.messages, jumpTargetId: MessagePreviewStore.jumpTargetId };
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp4, tmp5);
+  ({ messages, jumpTargetId } = stateFromStoresObject);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl2.t["+TSRGD"]);
+    cResult[2] = stringResult;
+    tmp8 = stringResult;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === jumpTargetId) {
+    let tmp10;
+    let tmp12;
+    let tmp11;
+    if (cResult[4] === onBeforeJumpToMessage) {
+      tmp10 = cResult[5];
+    }
+    const _Symbol = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor() {
+          return () => {
+            const obj = closure_1_1(closure_1_2[8]);
+            obj.clearMessages();
+          };
+        }
+      }
+      const items1 = [];
+      cResult[6] = C;
+      cResult[7] = items1;
+      tmp12 = items1;
+      tmp11 = C;
+    } else {
+      class C {
+        constructor() {
+          return () => {
+            const obj = closure_1_1(closure_1_2[8]);
+            obj.clearMessages();
+          };
+        }
+      }
+      tmp12 = cResult[7];
+    }
+    const effect = react.useEffect(tmp11, tmp12);
+    if (cResult[8] === channelId) {
+      class C {
+        constructor() {
+          return () => {
+            const obj = closure_1_1(closure_1_2[8]);
+            obj.clearMessages();
+          };
+        }
+      }
+    }
+    cResult[8] = channelId;
+    cResult[9] = tmp10;
+    cResult[10] = messages;
+    cResult[11] = jsx(ChatPreview.ChatPreview, { channelId, messages, jumpToChatProps: tmp10, analyticsLocation });
+    const tmp18 = jsx(ChatPreview.ChatPreview, { channelId, messages, jumpToChatProps: tmp10, analyticsLocation });
+  }
+  const obj3 = { jumpToChatText: tmp8, jumpTargetId, onBeforeJumpToMessage };
+  cResult[3] = jumpTargetId;
+  cResult[4] = onBeforeJumpToMessage;
+  cResult[5] = obj3;
+  tmp10 = obj3;
+}) : ((onBeforeJumpToMessage) => {
   onBeforeJumpToMessage = onBeforeJumpToMessage.onBeforeJumpToMessage;
   const channelId = onBeforeJumpToMessage.channelId;
   let obj = onBeforeJumpToMessage(504);
@@ -35,8 +125,11 @@ export default function MessagePreview(onBeforeJumpToMessage) {
     return obj;
   }, items1);
   const effect = react.useEffect(() => () => {
-    const obj = jumpTargetId(closure_1_2[6]);
+    const obj = jumpTargetId(closure_1_2[8]);
     obj.clearMessages();
   }, []);
-  return jsx(onBeforeJumpToMessage(12825).ChatPreview, { channelId, messages, jumpToChatProps: memo, analyticsLocation });
-};
+  return jsx(onBeforeJumpToMessage(12827).ChatPreview, { channelId, messages, jumpToChatProps: memo, analyticsLocation });
+});
+const result = size.fileFinishedImporting("components_native/common/MessagePreview.tsx");
+
+export default tmp3;

@@ -1,10 +1,10 @@
 // Module ID: 7465
 // Function ID: 7466
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 7465 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/auto_moderation", width: 16, height: 16, scales: [2, 3], hash: "9fc7a06bd709251a424bf9095d4f7ecf", name: "ic_auto_moderation_shield", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "421762234dc1c14955fde3d3dd6a6217", name: "ChatWarningIcon", type: "png" });

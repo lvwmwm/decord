@@ -1,11 +1,11 @@
-// Module ID: 16843
-// Function ID: 16844
+// Module ID: 16812
+// Function ID: 16813
 // Name: MorphablePanelUtils
-// Dependencies: [11756, 2]
+// Dependencies: [11649, 2]
 // Exports: calculatePIPPositionFromVelocity, calculateXYDiff, getClampedPIPPosition
 
-// Module 16843 (MorphablePanelUtils)
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11756 */;
+// Module 16812 (MorphablePanelUtils)
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11649 */;
 import size from "module_2" /* 2 */;
 
 const MIN_PIP_TOSS_VELOCITY = MorphablePanelConstants.MIN_PIP_TOSS_VELOCITY;
@@ -16,14 +16,14 @@ function clamp(arg0, arg1, arg2) {
 clamp.__closure = {};
 clamp.__workletHash = 1391695493868;
 clamp.__initData = { code: "function clamp_MorphablePanelUtilsTsx1(value,min,max){return Math.min(Math.max(value,min),max);}" };
-function calculateXYDiff(state, get) {
+function calculateXYDiff(state, sharedValue) {
   let absoluteX;
   let absoluteY;
   let maxResult;
   let tmp6;
   ({ absoluteY, absoluteX } = state.changedTouches[0]);
-  const diff = get.get().absoluteYStart - absoluteY;
-  const diff1 = get.get().absoluteXStart - absoluteX;
+  const diff = sharedValue.get().absoluteYStart - absoluteY;
+  const diff1 = sharedValue.get().absoluteXStart - absoluteX;
   const absolute = Math.abs(diff);
   const obj = { absoluteX, absoluteY, xDiff: diff1, yDiff: diff, isNotPullDownGesture: tmp6, absoluteMovement: maxResult };
   maxResult = max(absolute, Math.abs(diff1));

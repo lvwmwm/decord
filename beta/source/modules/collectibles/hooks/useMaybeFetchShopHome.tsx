@@ -1,18 +1,18 @@
-// Module ID: 15422
-// Function ID: 15423
+// Module ID: 15410
+// Function ID: 15411
 // Name: useMaybeFetchShopHome
-// Dependencies: [32, 19, 4750, 6962, 7005, 1076, 504, 7008, 6961, 15423, 2]
-// Exports: useMaybeFetchCollectiblesShopHome
+// Dependencies: [32, 19, 4752, 6966, 7009, 1088, 558, 576, 504, 7012, 6965, 15411, 2]
 
-// Module 15422 (useMaybeFetchShopHome)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6961 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7008 */;
+// Module 15410 (useMaybeFetchShopHome)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6965 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7012 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore from "ExperimentStore" /* 4750 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7005 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1076 */;
+import ExperimentStore_mod from "ExperimentStore" /* 4752 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6966 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7009 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1088 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,16 +25,178 @@ let closure_4;
 let hasOwnProperty;
 let _slicedToArray = _slicedToArray_mod;
 ({ useEffect: c3, useCallback: closure_4, useMemo: hasOwnProperty } = react);
+let ExperimentStore = ExperimentStore_mod;
 ({ COLLECTIBLES_SHOP_CACHE_DURATION_MS: c9, COLLECTIBLES_SHOP_FETCH_ERROR_RETRY_THRESHOLD_MS: c10 } = CollectiblesShopConstants);
-const result = size.fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchShopHome.tsx");
-
-export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectiblesShopHome(HOME, arg1, memo) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+  let closure_0;
   let closure_1;
+  let hasLoadedExperiments;
+  let skipNumCategories;
+  let tmp13;
+  let tmp15;
   let tmp4;
   let tmp5;
-  _require = HOME;
+  let tmp8;
+  let tmp9;
+  _require = arg0;
+  dependencyMap = arg2;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(35);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [ExperimentStore];
+    class E {
+      constructor() {
+        return closure_6.hasLoadedExperiments;
+      }
+    }
+    let num = 0;
+    cResult[0] = items;
+    let num2 = 1;
+    cResult[1] = E;
+    tmp4 = items;
+    tmp5 = E;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [CollectiblesCategoryStore];
+    class E {
+      constructor() {
+        return closure_6.hasLoadedExperiments;
+      }
+    }
+    cResult[2] = items1;
+    cResult[3] = tmp11;
+    tmp9 = tmp11;
+    tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult3 = tmp(504);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp9);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [CollectiblesShopHomeStore];
+    class E {
+      constructor() {
+        return closure_6.hasLoadedExperiments;
+      }
+    }
+    cResult[4] = items2;
+    tmp13 = items2;
+  } else {
+    tmp13 = cResult[4];
+  }
+  if (cResult[5] !== arg0) {
+    class L {
+      constructor() {
+        obj = closure_8;
+        tmp = closure_0;
+        items = [, , , , , , , ];
+        items[0] = closure_8.getShopBlocks(closure_0);
+        num = closure_8.getLastSuccessfulFetch(closure_0);
+        if (num == null) {
+          num = 0;
+        }
+        items[1] = num;
+        num2 = obj.getLastErrorTimestamp(tmp);
+        if (num2 == null) {
+          num2 = 0;
+        }
+        items[2] = num2;
+        items[3] = obj.getLastFetchOptions(tmp);
+        items[4] = obj.getFetchShopHomeError(tmp);
+        items[5] = obj.getIsFetchingShopHome(tmp);
+        items[6] = obj.getHasKnownStaleData(tmp);
+        items[7] = obj.getShopHomeConfigOverride();
+        return items;
+      }
+    }
+    cResult[5] = arg0;
+    class E {
+      constructor() {
+        return closure_6.hasLoadedExperiments;
+      }
+    }
+    cResult[6] = L;
+    tmp15 = L;
+  } else {
+    class L {
+      constructor() {
+        obj = closure_8;
+        tmp = closure_0;
+        items = [, , , , , , , ];
+        items[0] = closure_8.getShopBlocks(closure_0);
+        num = closure_8.getLastSuccessfulFetch(closure_0);
+        if (num == null) {
+          num = 0;
+        }
+        items[1] = num;
+        num2 = obj.getLastErrorTimestamp(tmp);
+        if (num2 == null) {
+          num2 = 0;
+        }
+        items[2] = num2;
+        items[3] = obj.getLastFetchOptions(tmp);
+        items[4] = obj.getFetchShopHomeError(tmp);
+        items[5] = obj.getIsFetchingShopHome(tmp);
+        items[6] = obj.getHasKnownStaleData(tmp);
+        items[7] = obj.getShopHomeConfigOverride();
+        return items;
+      }
+    }
+  }
+  const tmpResult4 = tmp(504);
+  const tmp16 = stateFromStores(tmpResult4.useStateFromStoresArray(tmp13, tmp15), 8);
+  let closure_3 = tmp16[2];
+  let closure_4 = tmp16[4];
+  let closure_5 = tmp16[5];
+  ExperimentStore = tmp16[6];
+  if (cResult[7] === arg1) {
+    class L {
+      constructor() {
+        obj = closure_8;
+        tmp = closure_0;
+        items = [, , , , , , , ];
+        items[0] = closure_8.getShopBlocks(closure_0);
+        num = closure_8.getLastSuccessfulFetch(closure_0);
+        if (num == null) {
+          num = 0;
+        }
+        items[1] = num;
+        num2 = obj.getLastErrorTimestamp(tmp);
+        if (num2 == null) {
+          num2 = 0;
+        }
+        items[2] = num2;
+        items[3] = obj.getLastFetchOptions(tmp);
+        items[4] = obj.getFetchShopHomeError(tmp);
+        items[5] = obj.getIsFetchingShopHome(tmp);
+        items[6] = obj.getHasKnownStaleData(tmp);
+        items[7] = obj.getShopHomeConfigOverride();
+        return items;
+      }
+    }
+  }
+  const obj2 = { variantsReturnStyle: tmp(7012).ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, includeDynamicBlocks: true, shopHomeConfig: tmp16[7], skipNumCategories: stateFromStores1 };
+  const merged = Object.assign(arg1);
+  cResult[7] = arg1;
+  cResult[8] = tmp16[7];
+  cResult[9] = stateFromStores1;
+  cResult[10] = obj2;
+}) : ((arg0, arg1, arg2) => {
+  let closure_0;
+  let closure_1;
+  let closure_2;
+  let tmp4;
+  let tmp5;
+  _require = arg0;
   dependencyMap = arg1;
-  _slicedToArray = memo;
+  _slicedToArray = arg2;
   let flag = arg3;
   if (arg3 === undefined) {
     flag = false;
@@ -53,8 +215,8 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
   const items2 = [closure_8];
   const obj3 = require("get initialized");
   const tmp3 = _slicedToArray(obj3.useStateFromStoresArray(items2, () => {
-    const items = [CollectiblesShopHomeStore.getShopBlocks(HOME), , , , , , , ];
-    let num = CollectiblesShopHomeStore.getLastSuccessfulFetch(HOME);
+    const items = [CollectiblesShopHomeStore.getShopBlocks(closure_0), , , , , , , ];
+    let num = CollectiblesShopHomeStore.getLastSuccessfulFetch(closure_0);
     if (num == null) {
       num = 0;
     }
@@ -64,10 +226,10 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
       num2 = 0;
     }
     items[2] = num2;
-    items[3] = CollectiblesShopHomeStore.getLastFetchOptions(HOME);
-    items[4] = CollectiblesShopHomeStore.getFetchShopHomeError(HOME);
-    items[5] = CollectiblesShopHomeStore.getIsFetchingShopHome(HOME);
-    items[6] = CollectiblesShopHomeStore.getHasKnownStaleData(HOME);
+    items[3] = CollectiblesShopHomeStore.getLastFetchOptions(closure_0);
+    items[4] = CollectiblesShopHomeStore.getFetchShopHomeError(closure_0);
+    items[5] = CollectiblesShopHomeStore.getIsFetchingShopHome(closure_0);
+    items[6] = CollectiblesShopHomeStore.getHasKnownStaleData(closure_0);
     items[7] = CollectiblesShopHomeStore.getShopHomeConfigOverride();
     return items;
   }), 8);
@@ -112,7 +274,7 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
     return tmp;
   }, items5);
   closure_15 = tmp12Result;
-  const items6 = [stateFromStores, tmp9, tmp8, tmp6, tmp12Result, tmp10, tmp14, tmp13, HOME, memo];
+  const items6 = [stateFromStores, tmp9, tmp8, tmp6, tmp12Result, tmp10, tmp14, tmp13, arg0, arg2];
   stateFromStores(() => {
     const tmp = stateFromStores;
     if (tmp) {
@@ -124,21 +286,24 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
           const tmp9 = closure_13 || !closure_15 || c10;
           if (tmp9) {
             const obj = CollectiblesActionCreators;
-            const collectiblesShopHome = obj.fetchCollectiblesShopHome(HOME, closure_12, memo);
+            const collectiblesShopHome = obj.fetchCollectiblesShopHome(closure_0, closure_12, closure_2);
           }
         }
       }
     }
   }, items6);
-  const items7 = [HOME, tmp13, memo];
+  const items7 = [arg0, tmp13, arg2];
   const obj4 = {
     isFetchingShopHome: tmp9,
     fetchShopHomeError: tmp8,
     shopBlocks: tmp4,
     refreshShopHome: stateFromStores1(() => {
       const obj = CollectiblesActionCreators;
-      const collectiblesShopHome = obj.fetchCollectiblesShopHome(HOME, closure_12, memo);
+      const collectiblesShopHome = obj.fetchCollectiblesShopHome(closure_0, closure_12, closure_2);
     }, items7)
   };
   return obj4;
-};
+});
+const result = size.fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchShopHome.tsx");
+
+export const useMaybeFetchCollectiblesShopHome = tmp4;

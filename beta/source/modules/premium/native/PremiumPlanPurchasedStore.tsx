@@ -1,16 +1,16 @@
-// Module ID: 6841
-// Function ID: 6842
+// Module ID: 6842
+// Function ID: 6843
 // Name: PremiumPlanPurchasedStore
-// Dependencies: [4521, 1374, 560, 1248, 6842, 6603, 2]
+// Dependencies: [4524, 1380, 570, 1260, 6843, 6604, 2]
 // Exports: handleMobileWebCheckoutStatus, reset, setInitiatedPurchaseFromNewFlow, setMobileWebRedirectCheckoutStatus, setPaymentSuccess, showOldPaymentFlowSuccess
 
-// Module 6841 (PremiumPlanPurchasedStore)
-import react_native from "react-native" /* 1248 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 6842 */;
-import ActionSheetStore from "ActionSheetStore" /* 4521 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import module_560 from "module_560" /* 560 */;
+// Module 6842 (PremiumPlanPurchasedStore)
+import react_native from "react-native" /* 1260 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 6843 */;
+import ActionSheetStore from "ActionSheetStore" /* 4524 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ let _require;
 let closure_4;
 let hasOwnProperty;
 ({ PREMIUM_PLAN_SELECTION_ACTION_SHEET_KEY: closure_4, PremiumTypes: hasOwnProperty } = PremiumConstants);
-const usePremiumPlanPurchasedStore = module_560.create(() => ({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: null }));
+const usePremiumPlanPurchasedStore = module_570.create(() => ({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: null }));
 const result = size.fileFinishedImporting("modules/premium/native/PremiumPlanPurchasedStore.tsx");
 
 export { usePremiumPlanPurchasedStore };
@@ -29,7 +29,7 @@ export const setInitiatedPurchaseFromNewFlow = function setInitiatedPurchaseFrom
   let onPaymentSuccess;
   productId = productId.productId;
   ({ onPaymentStart, onPaymentSuccess: importDefault, onPaymentDismiss: dependencyMap } = productId);
-  let obj = productId(1248);
+  let obj = productId(1260);
   obj.batchUpdates(() => {
     const obj = { productId, initiatedPurchaseFromNewFlow: true, onPaymentSuccess: importDefault, onPaymentDismiss: dependencyMap };
     obj.setState(obj);
@@ -114,6 +114,6 @@ export const reset = function reset() {
         str = "dismissed";
       }
     }
-    setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "r", onPaymentDismiss: "paddingHorizontal" });
+    setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "r", onPaymentDismiss: "unicodeVersion" });
   });
 };

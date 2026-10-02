@@ -1,40 +1,197 @@
-// Module ID: 14381
-// Function ID: 14382
+// Module ID: 14369
+// Function ID: 14370
 // Name: ContactSyncNameUpdateModal
-// Dependencies: [5, 32, 19, 17, 12175, 21, 5039, 4836, 576, 5994, 12177, 12181, 4528, 1115, 5909, 12194, 5936, 6421, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17, 12068, 21, 5040, 4837, 588, 5991, 558, 576, 12070, 12074, 4531, 1127, 5906, 12087, 5933, 6421, 2]
 
-// Module 14381 (ContactSyncNameUpdateModal)
+// Module 14369 (ContactSyncNameUpdateModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import NavigatorConstants from "NavigatorConstants" /* 5994 */;
-import Navigator from "Navigator" /* 6421 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12175 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import NavigatorConstants from "NavigatorConstants" /* 5991 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12068 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12070 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
-import NavigatorHeader_mod from "NavigatorHeader" /* 5936 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import NavigatorHeader_mod from "NavigatorHeader" /* 5933 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c2, c4, closure_0;
+let _require, c2, c4;
 
 let NavigatorHeader;
 let obj2;
+let tmp;
+const Navigator = tmp(6421);
 function onClose() {
   const arr = ModalActionCreatorsDefault;
   arr.pop();
 }
-function ContactSyncNameInputScreen() {
+const View = react_native.View;
+const ContactSyncScenes = ContactSyncConstants.ContactSyncScenes;
+const jsx = Fragment.jsx;
+let obj = { container: obj2 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: NavigatorConstants.NAV_BAR_HEIGHT + 32 };
+let closure_10 = createStyles.createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let onNext;
+  let require;
+  let tmp13;
+  let tmp6;
+  let tmp9;
+  const tmp = dependencyMap;
+  let obj = react2;
+  const cResult = obj.c(8);
+  const tmp3 = closure_10();
+  let obj2 = ContactSyncUtils;
+  const contactSyncAccount = obj2.useContactSyncAccount();
+  [tmp6, require] = _slicedToArray(react.useState(false), 2);
+  const tmp5 = _slicedToArray(react.useState(false), 2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let closure_0 = _asyncToGenerator(async (arg0, value) => {
+      let intl;
+      closure_0 = arg0;
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        let c3;
+        try {
+          c4 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              let closure_1 = tmp;
+              closure_0(true);
+              c3 = 1;
+              c2 = 2;
+              c4 = 1;
+              const obj5 = { value: obj3.updateName(closure_0), done: false };
+              obj3 = onNext(dependencyMap[13]);
+              return obj5;
+            }
+          } else {
+            if (1 === tmp4) {
+              c3 = 0;
+              const obj6 = { key: "ERROR_GENERIC_TITLE", content: intl.string(closure_0(dependencyMap[15]).t.R0RpRX), icon: onNext(dependencyMap[16]) };
+              const open = onNext(dependencyMap[14]).open;
+              const tmp13 = onNext(dependencyMap[14]);
+              intl = closure_0(dependencyMap[15]).intl;
+              open(obj6);
+              closure_0(false);
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c4 = 3;
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              closure_0(false);
+              onClose();
+              c3 = 0;
+            }
+            c4 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp27) {
+          if (0 === c3) {
+            c4 = 3;
+            throw tmp27;
+          } else {
+            c2 = 1;
+          }
+        }
+      }
+    });
+    onNext = function onNext() {
+      return closure_0(...arguments);
+    };
+    cResult[0] = onNext;
+  } else {
+    onNext = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        return first(null);
+      }
+    }
+    cResult[1] = E;
+    tmp9 = E;
+  } else {
+    class E {
+      constructor() {
+        return first(null);
+      }
+    }
+  }
+  if (contactSyncAccount != null) {
+    class E {
+      constructor() {
+        return first(null);
+      }
+    }
+  }
+  if (undefined == null) {
+    class E {
+      constructor() {
+        return first(null);
+      }
+    }
+  }
+  if (cResult[2] === tmp6) {
+    class E {
+      constructor() {
+        return first(null);
+      }
+    }
+    if (cResult[5] === tmp3.container) {
+      class E {
+        constructor() {
+          return first(null);
+        }
+      }
+      return tmp13;
+    }
+    const tmp16 = <View style={tmp3.container}>{tmp11}</View>;
+    cResult[5] = tmp3.container;
+    cResult[6] = tmp11;
+    cResult[7] = tmp16;
+    tmp13 = tmp16;
+  }
+  const tmp12 = jsx(onNext(12087), { onNext, onRemoveName: tmp9, loading: tmp6, initialName: undefined });
+  cResult[2] = tmp6;
+  cResult[3] = undefined;
+  cResult[4] = tmp12;
+}) : (() => {
   let str;
   let tmp6;
   function onNext() {
     return obj(...arguments);
   }
-  let obj = function _onNext() {
+  let obj = function _onNext2() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let closure_1;
       let intl;
@@ -49,7 +206,7 @@ function ContactSyncNameInputScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -66,7 +223,7 @@ function ContactSyncNameInputScreen() {
             } else {
               closure_2_0(true);
               c3 = 1;
-              obj3 = tmp(c2[11]);
+              obj3 = tmp(c2[13]);
               c2 = 2;
               c4 = 1;
               const obj5 = { value: obj3.updateName(closure_0), done: false };
@@ -75,10 +232,10 @@ function ContactSyncNameInputScreen() {
           } else {
             if (1 === tmp4) {
               c3 = 0;
-              const obj6 = { key: "ERROR_GENERIC_TITLE", content: intl.string(closure_0(c2[13]).t.R0RpRX), icon: tmp(c2[14]) };
-              const open = tmp(c2[12]).open;
-              const tmp13 = tmp(c2[12]);
-              intl = closure_0(c2[13]).intl;
+              const obj6 = { key: "ERROR_GENERIC_TITLE", content: intl.string(closure_0(c2[15]).t.R0RpRX), icon: tmp(c2[16]) };
+              const open = tmp(c2[14]).open;
+              const tmp13 = tmp(c2[14]);
+              intl = closure_0(c2[15]).intl;
               open(obj6);
               closure_129_0(false);
             } else if (arg0 === 1) {
@@ -95,7 +252,7 @@ function ContactSyncNameInputScreen() {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp27) {
           if (0 === c3) {
@@ -126,7 +283,7 @@ function ContactSyncNameInputScreen() {
   };
   str = undefined;
   const tmp5 = View;
-  tmp6 = onNext(obj[15]);
+  tmp6 = onNext(obj[17]);
   if (contactSyncAccount != null) {
     str = contactSyncAccount.name;
   }
@@ -134,17 +291,11 @@ function ContactSyncNameInputScreen() {
     str = "";
   }
   return tmp4(tmp5, obj2);
-}
-const View = react_native.View;
-const ContactSyncScenes = ContactSyncConstants.ContactSyncScenes;
-const jsx = Fragment.jsx;
-let obj = { container: obj2 };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: NavigatorConstants.NAV_BAR_HEIGHT + 32 };
-let closure_10 = createStyles.createStyles(obj);
+});
 let obj3 = {};
 let obj4 = {
   render() {
-    return <ContactSyncNameInputScreen />;
+    return <closure_11 />;
   },
   ignoreKeyboard: true,
   fullscreen: true,
@@ -154,8 +305,20 @@ let obj4 = {
 const NAME_INPUT = ContactSyncScenes.NAME_INPUT;
 NavigatorHeader = NavigatorHeader_mod;
 obj3[NAME_INPUT] = obj4;
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp8 = jsx(Navigator.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj3 });
+    cResult[0] = tmp8;
+    first = tmp8;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => jsx(Navigator.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj3 }));
 const result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncNameUpdateModal.tsx");
 
-export default function ContactSyncNameUpdateModal() {
-  return jsx(Navigator.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj3 });
-};
+export default tmp2;

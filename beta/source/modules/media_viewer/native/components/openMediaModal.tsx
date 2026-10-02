@@ -1,14 +1,14 @@
-// Module ID: 7707
-// Function ID: 7708
+// Module ID: 7711
+// Function ID: 7712
 // Name: openMediaModal
-// Dependencies: [32, 5, 4521, 1074, 1479, 7708, 1981, 7709, 7710, 38, 4800, 7736, 5039, 7737, 2]
+// Dependencies: [32, 5, 4524, 1086, 1485, 7712, 1987, 7713, 7714, 38, 4801, 7740, 5040, 7741, 2]
 // Exports: openMediaModal
 
-// Module 7707 (openMediaModal)
-import Constants from "Constants" /* 1074 */;
+// Module 7711 (openMediaModal)
+import Constants from "Constants" /* 1086 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 4521 */;
+import ActionSheetStore from "ActionSheetStore" /* 4524 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj = function _openMediaModal() {
@@ -85,7 +85,7 @@ let obj = function _openMediaModal() {
       closure_1_11.markSessionStarted(obj4);
       closure_1_12();
     });
-    await "HermesInternal";
+    await "IconComponent";
     initialIndex = tmp;
     ({ originViewOrOriginLayout: c0, initialIndex } = closure_0);
     if (initialIndex === undefined) {
@@ -97,7 +97,7 @@ let obj = function _openMediaModal() {
     }
     let obj4 = {};
     let closure_7 = Object.assign(tmp24, Object.assign({ originViewOrOriginLayout: 0, initialIndex: 0, initialSources: 0, analyticsSource: 0, channelId: 0, onClose: 0, openAs: 0 }));
-    return "flex";
+    return "Reflect";
   });
   return obj(...arguments);
 };

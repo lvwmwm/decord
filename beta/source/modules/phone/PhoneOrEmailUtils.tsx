@@ -1,10 +1,10 @@
-// Module ID: 6382
-// Function ID: 6383
+// Module ID: 6379
+// Function ID: 6380
 // Name: PhoneOrEmailUtils
 // Dependencies: [2]
 // Exports: getPhoneOrEmail, shouldShowCountryCodeSelector
 
-// Module 6382 (PhoneOrEmailUtils)
+// Module 6379 (PhoneOrEmailUtils)
 import size from "module_2" /* 2 */;
 
 const PhoneOrEmailSelectorForceMode = { PHONE: "phone", EMAIL: "email" };
@@ -12,14 +12,14 @@ const re1 = /^[-() \d]+$/;
 const result = size.fileFinishedImporting("modules/phone/PhoneOrEmailUtils.tsx");
 
 export { PhoneOrEmailSelectorForceMode };
-export const shouldShowCountryCodeSelector = function shouldShowCountryCodeSelector(forceMode, value) {
+export const shouldShowCountryCodeSelector = function shouldShowCountryCodeSelector(forceMode, cResult) {
   let tmp2;
   if (forceMode === obj.PHONE) {
-    tmp2 = !value.startsWith("+");
+    tmp2 = !cResult.startsWith("+");
   } else {
     tmp2 = forceMode !== tmp.EMAIL;
     if (tmp2) {
-      const isMatch = value.length >= 3 && re1.test(value);
+      const isMatch = cResult.length >= 3 && re1.test(cResult);
       tmp2 = isMatch;
     }
   }

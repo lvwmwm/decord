@@ -1,26 +1,26 @@
-// Module ID: 16677
-// Function ID: 16678
+// Module ID: 16679
+// Function ID: 16680
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [32, 19, 17, 5771, 2045, 1375, 21, 4836, 576, 1485, 504, 4832, 1115, 7324, 6795, 5279, 5999, 5917, 5435, 10583, 6551, 1397, 8219, 1177, 6034, 6621, 5204, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 5772, 2051, 1381, 21, 4837, 588, 558, 576, 1491, 504, 4833, 1127, 7328, 6796, 9640, 5205, 6552, 1403, 8216, 5436, 1189, 6026, 5997, 5916, 6621, 5280, 2]
 
-// Module 16677 (ChannelSettingsEditForumTag)
+// Module 16679 (ChannelSettingsEditForumTag)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl5 from "intl" /* 1115 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 7324 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10583 */;
+import nativeDefault from "native" /* 588 */;
+import intl5 from "intl" /* 1127 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 7328 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9640 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5771 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import EmojiConstants from "EmojiConstants" /* 1375 */;
+import EmojiStore from "EmojiStore" /* 5772 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import EmojiConstants from "EmojiConstants" /* 1381 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, navigation;
+let channelId, dependencyMap, navigation;
 
 let c10;
 let c9;
@@ -38,10 +38,164 @@ obj2 = { display: "flex", flex: 1, backgroundColor: nativeDefault.colors.BACKGRO
 createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: 12, paddingTop: nativeDefault.space.PX_16 };
 let closure_12 = createStyles(obj);
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/forums/native/ChannelSettingsEditForumTag.tsx");
-
-export default function ChannelSettingsEditForumTag(channelId) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let closure_10;
+  let closure_2;
+  let closure_3;
+  let closure_6;
+  let closure_8;
+  let emoji;
+  let first1;
+  let first2;
+  let onPressEmoji;
+  let tmp17;
+  let tmp19;
+  let tmp21;
+  let tmp22;
+  let tmp6;
+  let tmp = channelId;
+  let tmp2 = dependencyMap;
+  let obj = channelId(576);
+  const cResult = obj.c(86);
+  channelId = channelId.channelId;
+  const tag = channelId.tag;
+  dependencyMap = ref();
+  _slicedToArray = null == tag;
+  const tmp4 = ref();
+  let obj2 = channelId(1491);
+  navigation = obj2.useNavigation();
+  if (cResult[0] !== tag) {
+    let tmp7 = null;
+    if (null != tag) {
+      const obj4 = { id: null, name: null };
+      ({ emojiId: obj3.id, emojiName: obj3.name } = tag);
+      tmp7 = obj4;
+    }
+    cResult[0] = tag;
+    cResult[1] = tmp7;
+    tmp6 = tmp7;
+  } else {
+    tmp6 = cResult[1];
+  }
+  [emoji, EmojiStore] = navigation.useState(tmp6);
+  let str;
+  const useState = navigation.useState;
+  const tmp8 = navigation;
+  if (tag != null) {
+    str = tag.name;
+  }
+  if (str == null) {
+    str = "";
+  }
+  [first1, closure_8] = useState(str);
+  let moderated;
+  const useState2 = tmp8.useState;
+  if (tag != null) {
+    moderated = tag.moderated;
+  }
+  [first2, closure_10] = useState2(moderated);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [first1];
+    cResult[2] = items;
+    tmp17 = items;
+  } else {
+    tmp17 = cResult[2];
+  }
+  if (cResult[3] !== channelId) {
+    class R {
+      constructor() {
+        return closure_7.getChannel(channelId);
+      }
+    }
+    cResult[3] = channelId;
+    cResult[4] = R;
+    tmp19 = R;
+  } else {
+    class R {
+      constructor() {
+        return closure_7.getChannel(channelId);
+      }
+    }
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp17, tmp19);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor() {
+        return closure_7.getChannel(channelId);
+      }
+    }
+    const items1 = [EmojiStore];
+    cResult[5] = items1;
+    tmp21 = items1;
+  } else {
+    class R {
+      constructor() {
+        return closure_7.getChannel(channelId);
+      }
+    }
+  }
+  if (cResult[6] !== emoji) {
+    class G {
+      constructor() {
+        tmp = closure_5;
+        id = undefined;
+        if (closure_5 != null) {
+          id = tmp.id;
+        }
+        usableCustomEmojiById = null;
+        if (null != id) {
+          tmp4 = closure_6;
+          usableCustomEmojiById = closure_6.getUsableCustomEmojiById(tmp.id);
+        }
+        return usableCustomEmojiById;
+      }
+    }
+    cResult[6] = emoji;
+    cResult[7] = G;
+    tmp22 = G;
+  } else {
+    class G {
+      constructor() {
+        tmp = closure_5;
+        id = undefined;
+        if (closure_5 != null) {
+          id = tmp.id;
+        }
+        usableCustomEmojiById = null;
+        if (null != id) {
+          tmp4 = closure_6;
+          usableCustomEmojiById = closure_6.getUsableCustomEmojiById(tmp.id);
+        }
+        return usableCustomEmojiById;
+      }
+    }
+  }
+  const tmpResult2 = tmp(504);
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp21, tmp22);
+  if (cResult[8] === emoji) {
+    class G {
+      constructor() {
+        tmp = closure_5;
+        id = undefined;
+        if (closure_5 != null) {
+          id = tmp.id;
+        }
+        usableCustomEmojiById = null;
+        if (null != id) {
+          tmp4 = closure_6;
+          usableCustomEmojiById = closure_6.getUsableCustomEmojiById(tmp.id);
+        }
+        return usableCustomEmojiById;
+      }
+    }
+  }
+  const obj5 = { emoji, tagName: first1, moderated: first2 };
+  cResult[8] = emoji;
+  cResult[9] = first2;
+  cResult[10] = first1;
+  cResult[11] = obj5;
+}) : ((channelId) => {
   let TableRow2;
   let Text;
   let TextInput;
@@ -98,7 +252,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
   dependencyMap = tmp;
   let tmp2 = null == tag;
   _slicedToArray = tmp2;
-  let obj = channelId(1485);
+  let obj = channelId(1491);
   navigation = obj.useNavigation();
   let obj2 = navigation;
   let tmp6 = null;
@@ -188,10 +342,10 @@ export default function ChannelSettingsEditForumTag(channelId) {
     const obj = {
       headerTitle() {
         let children;
-        const Text = channelId(closure_2[11]).Text;
-        const intl = channelId(closure_2[12]).intl;
+        const Text = channelId(closure_2[13]).Text;
+        const intl = channelId(closure_2[14]).intl;
         const string = intl.string;
-        const t = channelId(closure_2[12]).t;
+        const t = channelId(closure_2[14]).t;
         const tmp = closure_10;
         if (closure_1_3) {
           children = string(t["/jubeD"]);
@@ -261,22 +415,22 @@ export default function ChannelSettingsEditForumTag(channelId) {
       let obj = {
         headerRight() {
             let intl;
-            const obj = { style: saveButton.saveButton, onPress, text: intl.string(channelId(saveButton[12]).t["R3BPH+"]) };
-            const HeaderActionButton = channelId(saveButton[14]).HeaderActionButton;
-            intl = channelId(saveButton[12]).intl;
+            const obj = { style: saveButton.saveButton, onPress, text: intl.string(channelId(saveButton[14]).t["R3BPH+"]) };
+            const HeaderActionButton = channelId(saveButton[16]).HeaderActionButton;
+            intl = channelId(saveButton[14]).intl;
             return closure_10(HeaderActionButton, obj);
           }
       };
       setOptions(obj);
     } else {
-      setOptions({ headerRight: "Path" });
+      setOptions({ headerRight: "call" });
     }
   }, items5);
   const obj5 = { style: tmp.container, children: null };
   const obj6 = { spacing: 24, style: tmp.sections, children: null };
-  const Stack = tmp3(5279).Stack;
-  const TableRowGroup = tmp3(5999).TableRowGroup;
-  const TableRow = tmp3(5917).TableRow;
+  const Stack = tmp3(5280).Stack;
+  const TableRowGroup = tmp3(5997).TableRowGroup;
+  const TableRow = tmp3(5916).TableRow;
   const obj7 = {
     style: tmp.emojiIconWrapper,
     accessibilityRole: "button",
@@ -301,10 +455,10 @@ export default function ChannelSettingsEditForumTag(channelId) {
         onChangeText(arg0) {
               closure_8(arg0);
             },
-        placeholder: intl.string(channelId(1115).t.aMSq0a)
+        placeholder: intl.string(channelId(1127).t.aMSq0a)
       };
-      TextInput = tmp3(1177).TextInput;
-      intl = tmp3(1115).intl;
+      TextInput = tmp3(1189).TextInput;
+      intl = tmp3(1127).intl;
       if (null != emoji) {
         const obj12 = {
           accessibilityRole: "button",
@@ -312,9 +466,9 @@ export default function ChannelSettingsEditForumTag(channelId) {
                   closure_6(null);
                   closure_8("");
                 },
-          children: closure_10(channelId(6034).CircleXIcon, { size: "xs" })
+          children: closure_10(channelId(6026).CircleXIcon, { size: "xs" })
         };
-        const PressableOpacity = tmp3(5435).PressableOpacity;
+        const PressableOpacity = tmp3(5436).PressableOpacity;
         tmp27Result = tmp27(PressableOpacity, obj12);
       } else {
         tmp27Result = null;
@@ -323,14 +477,14 @@ export default function ChannelSettingsEditForumTag(channelId) {
       const obj14 = { hasIcons: true, children: closure_10(TableRow, obj8) };
       items6 = [closure_10(TableRowGroup, obj14), ];
       const obj15 = { style: tmp.hint, children: closure_10(Text, obj16) };
-      obj16 = { variant: "text-sm/medium", color: "text-muted", children: intl2.string(channelId(1115).t["3v8kZH"]) };
-      Text = tmp3(4832).Text;
-      intl2 = tmp3(1115).intl;
+      obj16 = { variant: "text-sm/medium", color: "text-muted", children: intl2.string(channelId(1127).t["3v8kZH"]) };
+      Text = tmp3(4833).Text;
+      intl2 = tmp3(1127).intl;
       items6[1] = closure_10(emoji, obj15);
       const items7 = [channel(emoji, obj13), , ];
-      const TableRowGroup2 = tmp3(5999).TableRowGroup;
+      const TableRowGroup2 = tmp3(5997).TableRowGroup;
       const obj17 = {
-        label: intl3.string(channelId(1115).t["rMH+rt"]),
+        label: intl3.string(channelId(1127).t["rMH+rt"]),
         value: flag,
         onValueChange() {
               let tmp2 = !flag;
@@ -346,7 +500,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
             }
       };
       const TableSwitchRow = tmp3(6621).TableSwitchRow;
-      intl3 = tmp3(1115).intl;
+      intl3 = tmp3(1127).intl;
       if (flag == null) {
         flag = false;
       }
@@ -355,10 +509,10 @@ export default function ChannelSettingsEditForumTag(channelId) {
       let tmp27Result3 = null;
       if (!tmp2) {
         const obj19 = { hasIcons: false, children: closure_10(TableRow2, obj20) };
-        const TableRowGroup3 = tmp3(5999).TableRowGroup;
+        const TableRowGroup3 = tmp3(5997).TableRowGroup;
         obj20 = {
           variant: "danger",
-          label: intl4.string(channelId(1115).t.huYSMr),
+          label: intl4.string(channelId(1127).t.huYSMr),
           onPress() {
                   let id;
                   let intl;
@@ -374,7 +528,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
                     onConfirm() {
                       const tmp = closure_1_3;
                       if (!tmp) {
-                        const obj = tag(closure_2[13]);
+                        const obj = tag(closure_2[15]);
                         obj.deleteForumTag(channelId, id.id);
                         navigation.pop();
                       }
@@ -388,8 +542,8 @@ export default function ChannelSettingsEditForumTag(channelId) {
                   show(obj);
                 }
         };
-        TableRow2 = tmp3(5917).TableRow;
-        intl4 = tmp3(1115).intl;
+        TableRow2 = tmp3(5916).TableRow;
+        intl4 = tmp3(1127).intl;
         tmp27Result3 = tmp27(TableRowGroup3, obj19);
       }
       items7[2] = tmp27Result3;
@@ -401,11 +555,11 @@ export default function ChannelSettingsEditForumTag(channelId) {
     ({ textEmoji: obj9.textEmojiStyle, imageEmoji: obj9.fastImageStyle } = tmp);
     emojiURL = undefined;
     const tmp31 = tag;
-    const tmp32 = tag(6551);
+    const tmp32 = tag(6552);
     if (null != stateFromStores) {
       const obj22 = { id: null, animated: null, size };
       ({ id: obj11.id, animated: obj11.animated } = stateFromStores);
-      const tmp31Result = tmp31(1397);
+      const tmp31Result = tmp31(1403);
       emojiURL = tmp31Result.getEmojiURL(obj22);
     }
     str2 = undefined;
@@ -417,5 +571,9 @@ export default function ChannelSettingsEditForumTag(channelId) {
     }
     tmp27Result4 = tmp27(tmp32, obj21);
   }
-  tmp27Result4 = tmp27(tmp3(8219).ReactionIcon, {});
-};
+  tmp27Result4 = tmp27(tmp3(8216).ReactionIcon, {});
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/forums/native/ChannelSettingsEditForumTag.tsx");
+
+export default tmp5;

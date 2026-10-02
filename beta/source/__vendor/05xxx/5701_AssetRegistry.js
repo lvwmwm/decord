@@ -1,10 +1,10 @@
 // Module ID: 5701
 // Function ID: 5702
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 5701 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "97cdba3c0b32d79e6f8d3cdafd7b4530", name: "img_account_sync_mastodon_white", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "c7326c633c855d160a4c15850754cc11", name: "img_account_sync_mastodon_light_and_dark", type: "png" });

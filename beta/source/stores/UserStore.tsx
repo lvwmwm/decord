@@ -1,27 +1,27 @@
-// Module ID: 1372
-// Function ID: 1373
+// Module ID: 1378
+// Function ID: 1379
 // Name: UserStore
-// Dependencies: [1373, 1386, 502, 1073, 1074, 1374, 1388, 1383, 1966, 1967, 1389, 1393, 1394, 1395, 1385, 12, 1978, 1979, 1370, 2]
+// Dependencies: [1379, 1392, 502, 1085, 1086, 1380, 1394, 1389, 1972, 1973, 1395, 1399, 1400, 1401, 1391, 12, 1984, 1985, 1376, 2]
 
-// Module 1372 (UserStore)
+// Module 1378 (UserStore)
 import _mod12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import UserStoreUtils from "UserStoreUtils" /* 1383 */;
-import FlagUtilsAll from "FlagUtils" /* 1385 */;
-import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1388 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1389 */;
-import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1393 */;
-import PremiumStateUtils from "PremiumStateUtils" /* 1394 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1966 */;
-import mappers from "mappers" /* 1967 */;
-import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 1978 */;
-import Server from "Server" /* 1979 */;
-import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1373 */;
-import UserRecord from "UserRecord" /* 1386 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import UserStoreUtils from "UserStoreUtils" /* 1389 */;
+import FlagUtilsAll from "FlagUtils" /* 1391 */;
+import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1394 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1395 */;
+import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1399 */;
+import PremiumStateUtils from "PremiumStateUtils" /* 1400 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1972 */;
+import mappers from "mappers" /* 1973 */;
+import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 1984 */;
+import Server from "Server" /* 1985 */;
+import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1379 */;
+import UserRecord from "UserRecord" /* 1392 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1073 */;
-import Constants from "Constants" /* 1074 */;
+import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1085 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let clip_participants, message_preview, moderator_report, set;
@@ -56,7 +56,7 @@ function mergeUserPrimaryGuild(id, primary_guild) {
     if (tmp8) {
       let flag = null == tmp2.primaryGuild || null != primary_guild.primary_guild;
       if (flag) {
-        const tmp5Result = tmp5(1388);
+        const tmp5Result = tmp5(1394);
         obj[id].primaryGuild = tmp5Result.ensureUserPrimaryGuild(primary_guild.primary_guild);
         tmp[obj[id].id] = obj[id];
         closure_12 = closure_12 + 1;
@@ -155,7 +155,7 @@ function transformUser(mfa_enabled) {
   }
   const restricted_schedule = mfa_enabled.restricted_schedule;
   if (undefined !== restricted_schedule) {
-    const RestrictedScheduleRecord = tmp2(1395).RestrictedScheduleRecord;
+    const RestrictedScheduleRecord = tmp2(1401).RestrictedScheduleRecord;
     let fromServerResult = RestrictedScheduleRecord.fromServer(restricted_schedule);
     if (fromServerResult == null) {
       fromServerResult = null;
@@ -265,7 +265,7 @@ function mergeUser(user, arg1) {
           const obj5 = PrimaryGuildUtils;
           const tmp18 = require;
           if (obj5.isUserPrimaryGuildEqual(obj[user.id].primaryGuild, user.primary_guild) !== true) {
-            const tmp18Result = tmp18(1388);
+            const tmp18Result = tmp18(1394);
             user.primary_guild = tmp18Result.ensureUserPrimaryGuild(user.primary_guild);
           }
         }
@@ -755,7 +755,7 @@ function handleIncomingMessage(message) {
       if (flag) {
         id = obj2.getId();
         set = tmp6.set;
-        const tmp2Result = tmp2(1385);
+        const tmp2Result = tmp2(1391);
         tmp5[id] = set("flags", tmp2Result.setFlag(tmp6.flags, metroImportDefault.HAS_UNREAD_URGENT_MESSAGES, true));
         flag = true;
       }

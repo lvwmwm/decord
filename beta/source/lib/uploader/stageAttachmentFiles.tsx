@@ -1,11 +1,11 @@
-// Module ID: 7262
-// Function ID: 7263
+// Module ID: 7266
+// Function ID: 7267
 // Name: stageAttachmentFiles
-// Dependencies: [5, 1074, 5439, 2]
+// Dependencies: [5, 1086, 5440, 2]
 // Exports: default
 
-// Module 7262 (stageAttachmentFiles)
-import Constants from "Constants" /* 1074 */;
+// Module 7266 (stageAttachmentFiles)
+import Constants from "Constants" /* 1086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -72,13 +72,13 @@ let obj = function _stageAttachmentFiles() {
     });
     let tmp7 = globalThis;
     await Promise.all(constants);
-    await "HermesInternal";
+    await "IconComponent";
     constants = tmp;
     let flag = closure_1;
     if (closure_1 === undefined) {
       flag = false;
     }
-    return "flex";
+    return "Reflect";
   });
   return obj(...arguments);
 };

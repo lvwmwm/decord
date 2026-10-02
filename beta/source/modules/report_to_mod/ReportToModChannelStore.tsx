@@ -1,17 +1,18 @@
-// Module ID: 12278
-// Function ID: 12279
+// Module ID: 12175
+// Function ID: 12176
 // Name: ReportToModChannelStore
-// Dependencies: [560, 4706, 1248, 7120, 2]
-// Exports: useShouldShowResolvedFlagsForChannel
+// Dependencies: [570, 4708, 1260, 7124, 558, 576, 2]
 
-// Module 12278 (ReportToModChannelStore)
-import module_560 from "module_560" /* 560 */;
-import combine_mod from "combine" /* 4706 */;
+// Module 12175 (ReportToModChannelStore)
+import react from "react" /* 576 */;
+import module_570 from "module_570" /* 570 */;
+import combine_mod from "combine" /* 4708 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const create = module_560.create;
+const create = module_570.create;
 let combine = combine_mod;
 let obj = { name: "report-to-mod-channel-storage", storage: combine.createJSONStorage(() => require("LocalStorageWrapper")) };
 const persist = combine.persist;
@@ -45,10 +46,69 @@ let obj2 = create(persist((arg0, arg1) => {
   };
   return obj;
 }, obj));
-const result = size.fileFinishedImporting("modules/report_to_mod/ReportToModChannelStore.tsx");
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp4;
+  let closure_0 = arg0;
+  const obj = react;
+  const cResult = obj.c(10);
+  obj2 = obj2();
+  if (null == arg0) {
+    let first;
+    const _Symbol = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = {
+        showResolvedFlags: true,
+        setShowResolvedFlags() {
 
-export const useReportToModChannelFiltersStore = obj2;
-export const useShouldShowResolvedFlagsForChannel = function useShouldShowResolvedFlagsForChannel(arg0) {
+            }
+      };
+      cResult[0] = obj3;
+      first = obj3;
+    } else {
+      first = cResult[0];
+    }
+    tmp4 = first;
+  } else {
+    if (cResult[1] === arg0) {
+      let tmp2;
+      if (cResult[2] === obj2) {
+        tmp2 = cResult[3];
+      }
+      if (cResult[4] === arg0) {
+        let tmp3;
+        if (cResult[5] === obj2) {
+          tmp3 = cResult[6];
+        }
+        if (cResult[7] === tmp2) {
+          if (cResult[8] === tmp3) {
+            tmp4 = cResult[9];
+          }
+        }
+        const obj4 = { showResolvedFlags: tmp2, setShowResolvedFlags: tmp3 };
+        cResult[7] = tmp2;
+        cResult[8] = tmp3;
+        cResult[9] = obj4;
+        tmp4 = obj4;
+      }
+      const fn = function n(arg0) {
+        return obj2.setShowResolvedFlags(closure_0, arg0);
+      };
+      cResult[4] = arg0;
+      cResult[5] = obj2;
+      cResult[6] = fn;
+      tmp3 = fn;
+    }
+    let flag = obj2.getShowResolvedFlags(arg0);
+    if (flag == null) {
+      flag = true;
+    }
+    cResult[1] = arg0;
+    cResult[2] = obj2;
+    cResult[3] = flag;
+    tmp2 = flag;
+  }
+  return tmp4;
+}) : ((arg0) => {
   let obj3;
   let closure_0 = arg0;
   const obj = obj2();
@@ -73,4 +133,8 @@ export const useShouldShowResolvedFlagsForChannel = function useShouldShowResolv
     };
   }
   return obj3;
-};
+});
+const result = size.fileFinishedImporting("modules/report_to_mod/ReportToModChannelStore.tsx");
+
+export const useReportToModChannelFiltersStore = obj2;
+export const useShouldShowResolvedFlagsForChannel = tmp5;

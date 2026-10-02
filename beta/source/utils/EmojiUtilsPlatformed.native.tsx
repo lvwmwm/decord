@@ -1,20 +1,20 @@
-// Module ID: 7202
-// Function ID: 7203
+// Module ID: 7206
+// Function ID: 7207
 // Name: EmojiUtilsPlatformed
-// Dependencies: [32, 5, 17, 4484, 4812, 1364, 12, 1397, 7203, 1476, 4683, 7242, 7247, 2]
+// Dependencies: [32, 5, 17, 4487, 4813, 1370, 12, 1403, 7207, 1482, 4685, 7246, 7251, 2]
 
-// Module 7202 (EmojiUtilsPlatformed)
+// Module 7206 (EmojiUtilsPlatformed)
 import _modDef12 from "module_12" /* 12 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import DeviceUtils from "DeviceUtils" /* 4812 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7203 */;
-import BurstReactionFirstSendActionSheet from "BurstReactionFirstSendActionSheet" /* 7242 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import DeviceUtils from "DeviceUtils" /* 4813 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7207 */;
+import BurstReactionFirstSendActionSheet from "BurstReactionFirstSendActionSheet" /* 7246 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
-import module_4484 from "module_4484" /* 4484 */;
-import MemoizerUtils_mod from "MemoizerUtils" /* 7247 */;
+import module_4487 from "module_4487" /* 4487 */;
+import MemoizerUtils_mod from "MemoizerUtils" /* 7251 */;
 import size from "module_2" /* 2 */;
 
 let ImageManager, closure_1, closure_2, unicodeVersion;
@@ -25,7 +25,7 @@ let metroRequire;
 function getURL(name) {
   let str;
   if (null == name) {
-    const convert = module_4484.convert;
+    const convert = module_4487.convert;
     const _HermesInternal = HermesInternal;
     str = "asset:/emoji-" + convert.toCodePoint(name) + ".png";
   } else {
@@ -50,7 +50,7 @@ let LIGHT = function _getEmojiColors() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

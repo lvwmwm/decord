@@ -1,9 +1,9 @@
-// Module ID: 1095
-// Function ID: 1096
+// Module ID: 1107
+// Function ID: 1108
 // Name: ChannelTypes
 // Dependencies: [2]
 
-// Module 1095 (ChannelTypes)
+// Module 1107 (ChannelTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { CALLABLE: new Set([1, 3]), TEXTUAL: new Set([0, 1, 2, 3, 5, 10, 11, 12, 13, 17, 18, 19, 21]), GUILD_THREADS_ONLY: new Set([15, 16]), STICKERS: new Set([0, 1, 2, 3, 5, 10, 11, 12, 13, 15, 16, 17, 18, 19, 21]), READABLE: new Set([0, 1, 2, 3, 5, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21]), GUILD: new Set([0, 2, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21]), GUILD_CHANNEL: new Set([0, 2, 4, 5, 6, 13, 14, 15, 16, 20, 21]), THREADS: new Set([10, 11, 12, 19]), PRIVATE_CHANNEL: new Set([1, 3]), PUBLIC_THREADS: new Set([10, 11]), GUILD_THREADED: new Set([0, 5, 15, 16, 21]), GUILD_STORED: new Set([0, 2, 4, 5, 6, 13, 14, 15, 16, 20, 21]), GUILD_TEXTUAL: new Set([0, 2, 5, 10, 11, 12, 13, 19, 21]), GUILD_VOCAL: new Set([2, 11, 12, 13]), GUILD_VOCAL_PRIMARY: new Set([2, 13]), GUILD_TEXT_PRIMARY: new Set([0, 5, 10, 11, 12, 19, 21]), VOCAL_THREAD: new Set([11, 12]), VOCAL: new Set([1, 2, 3, 11, 12, 13]), VOICE_EFFECTS: new Set([1, 2, 3, 11, 12]), GUILD_TEXT_ONLY: new Set([0, 5, 10, 19, 21]), LIMITED_CHANNEL_NAME: new Set([0, 5, 10, 15, 16, 19, 21]), SEARCHABLE: new Set([0, 1, 2, 3, 5, 10, 11, 12, 13, 15, 16, 17, 18, 19, 21]), GUILD_USER_CONTENT: new Set([0, 2, 5, 10, 11, 12, 13, 15, 16, 19, 21]), GUILD_TOPICAL: new Set([0, 5, 13, 14, 15, 16, 21]), GUILD_WEBHOOKS: new Set([0, 2, 5, 15, 16, 21]), GUILD_SYSTEM_CHANNEL: new Set([0, 5]), GUILD_PARENTABLE: new Set([0, 2, 5, 10, 11, 12, 13, 14, 15, 16, 21]), GUILD_AUTO_MODERATED: new Set([0, 2, 5, 10, 11, 12, 13, 15, 16, 19, 21]), GUILD_BASIC: new Set([0, 2, 4, 15]), CREATEABLE_GUILD_CHANNELS: new Set([0, 2, 4, 5, 6, 13, 14, 15, 16, 21]), TYPE_CHANGEABLE_GUILD_CHANNELS: new Set([0, 5]), MULTI_USER_DMS: new Set([3]), ALL_DMS: new Set([1, 3]), INVITABLE: new Set([0, 2, 3, 5, 6, 13, 14, 15, 16, 21]), GUILD_FEED_FEATURABLE_MESSAGES: new Set([0, 5, 11]), ROLE_SUBSCRIPTIONS: new Set([0, 2, 5, 13, 15, 16]), ICON_EMOJIS: new Set([0, 2, 5, 13, 15]), SUMMARIZEABLE: new Set([0]), CONTENT_ENTRY_EMBEDS: new Set([0, 1, 5]), POLLS: new Set([0, 1, 2, 3, 5, 10, 11, 12, 13, 17, 18, 19, 21]), ACTIVITY_LAUNCHABLE: new Set([0, 1, 2, 3, 20, 21]), APPLICATION_MANAGEABLE: new Set([3, 18]), APPLICATION_BINDABLE: new Set([2, 21]), ALL: new Set([0, 1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]) };

@@ -1,20 +1,46 @@
-// Module ID: 10903
-// Function ID: 10904
+// Module ID: 9555
+// Function ID: 9556
 // Name: ChatViewWrapperBase
-// Dependencies: [19, 21, 10901, 6577, 10902, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 9553, 6578, 9554, 2]
 
-// Module 10903 (ChatViewWrapperBase)
+// Module 9555 (ChatViewWrapperBase)
 import Fragment from "Fragment" /* 21 */;
-import LayerScope2 from "LayerScope" /* 6577 */;
-import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 10901 */;
+import react2 from "react" /* 576 */;
+import LayerScope2 from "LayerScope" /* 6578 */;
+import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 9553 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/chat/native/ChatViewWrapperBase.tsx");
-
-export default function ChatViewWrapperBase(arg0) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let children;
+  let stickyHeader;
+  let style;
+  const obj = react2;
+  const cResult = obj.c(5);
+  ({ children, stickyHeader, style } = channelId);
+  const tmp4 = useChatViewPointerEventsDefault(channelId.channelId);
+  if (cResult[0] === children) {
+    if (cResult[1] === tmp4) {
+      if (cResult[2] === stickyHeader) {
+        let tmp5;
+        if (cResult[3] === style) {
+          tmp5 = cResult[4];
+        }
+        return tmp5;
+      }
+    }
+  }
+  const LayerScope = tmp(6578).LayerScope;
+  const tmp6 = <LayerScope>{null}</LayerScope>;
+  cResult[0] = children;
+  cResult[1] = tmp4;
+  cResult[2] = stickyHeader;
+  cResult[3] = style;
+  cResult[4] = tmp6;
+  tmp5 = tmp6;
+}) : ((arg0) => {
   let channelId;
   let children;
   let stickyHeader;
@@ -23,4 +49,7 @@ export default function ChatViewWrapperBase(arg0) {
   useChatViewPointerEventsDefault(channelId);
   const LayerScope = LayerScope2.LayerScope;
   return <LayerScope>{null}</LayerScope>;
-};
+});
+const result = size.fileFinishedImporting("modules/chat/native/ChatViewWrapperBase.tsx");
+
+export default tmp3;

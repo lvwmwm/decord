@@ -1,21 +1,50 @@
-// Module ID: 15070
-// Function ID: 15071
+// Module ID: 15058
+// Function ID: 15059
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [9540, 7417, 1074, 504, 1115, 11006, 15071, 2]
+// Dependencies: [10906, 7421, 1086, 558, 576, 504, 1127, 10874, 15059, 2]
 
-// Module 15070 (CommunityActivityAlertsSetting)
-import get_initialized from "get initialized" /* 504 */;
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 9540 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 15058 (CommunityActivityAlertsSetting)
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10906 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
+let tmp;
+const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let guildAlertSettings;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildIncidentsStore];
+    const fn = function s() {
+      return Object.keys(guildAlertSettings.getGuildAlertSettings()).length > 0;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let guildAlertSettings;
+  const items = [GuildIncidentsStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => Object.keys(guildAlertSettings.getGuildAlertSettings()).length > 0);
+});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -26,12 +55,7 @@ let obj = {
     const intl = intl2.intl;
     return intl.string(intl2.t["0PhAOH"]);
   },
-  usePredicate: function useHasCommunityActivityAlertsSetting() {
-    let guildAlertSettings;
-    const items = [GuildIncidentsStore];
-    const obj = get_initialized;
-    return obj.useStateFromStores(items, () => Object.keys(guildAlertSettings.getGuildAlertSettings()).length > 0);
-  },
+  usePredicate: tmp2,
   screen: {
     route: UserSettingsSections.COMMUNITY_ALERTS,
     getComponent() {

@@ -1,15 +1,15 @@
-// Module ID: 14221
-// Function ID: 14222
+// Module ID: 14209
+// Function ID: 14210
 // Name: PasskeyUpsellActionCreators
-// Dependencies: [4654, 2029, 2031, 5039, 14222, 1981, 4800, 14223, 14225, 2]
+// Dependencies: [4656, 2035, 2037, 5040, 14210, 1987, 4801, 14211, 14213, 2]
 
-// Module 14221 (PasskeyUpsellActionCreators)
-import asyncRequire from "asyncRequire" /* 1981 */;
-import dismissible_content from "dismissible_content" /* 2029 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2031 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4654 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+// Module 14209 (PasskeyUpsellActionCreators)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import dismissible_content from "dismissible_content" /* 2035 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2037 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4656 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
 import size from "module_2" /* 2 */;
 
 const PASSKEY_UPSELL_KEY = "PASSKEY_UPSELL_KEY";
@@ -19,13 +19,13 @@ let obj = {
     if (!obj.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.PASSWORDLESS_UPSELL)) {
       const self = this;
       const tmpResult = DismissibleContentUtils;
-      const markDismissibleContentAsShown = tmpResult.requestMarkDismissibleContentAsShown(tmp(2029).DismissibleContent.PASSWORDLESS_UPSELL);
+      const markDismissibleContentAsShown = tmpResult.requestMarkDismissibleContentAsShown(tmp(2035).DismissibleContent.PASSWORDLESS_UPSELL);
       const result = this.openPasskeyUpsellPromoSheet();
     }
   },
   openPasskeyUpsellModal() {
     const obj = ModalActionCreatorsDefault;
-    obj.pushLazy(asyncRequire(14222, dependencyMap.paths), undefined, PASSKEY_UPSELL_KEY);
+    obj.pushLazy(asyncRequire(14210, dependencyMap.paths), undefined, PASSKEY_UPSELL_KEY);
   },
   closePasskeyUpsellModal() {
     const obj = ModalActionCreatorsDefault;
@@ -33,7 +33,7 @@ let obj = {
   },
   openPasskeyUpsellPromoSheet() {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(14223, dependencyMap.paths), PASSKEY_UPSELL_KEY);
+    obj.openLazy(asyncRequire(14211, dependencyMap.paths), PASSKEY_UPSELL_KEY);
   },
   closePasskeyUpsellPromoSheet() {
     const obj = ActionSheetActionCreatorsDefault;
@@ -41,7 +41,7 @@ let obj = {
   },
   openPasskeyUpsellPromoModal(merged) {
     const obj = ModalActionCreatorsDefault;
-    obj.pushLazy(asyncRequire(14225, dependencyMap.paths), merged, PASSKEY_UPSELL_KEY);
+    obj.pushLazy(asyncRequire(14213, dependencyMap.paths), merged, PASSKEY_UPSELL_KEY);
   }
 };
 let result = size.fileFinishedImporting("modules/webauthn/native/PasskeyUpsellActionCreators.tsx");

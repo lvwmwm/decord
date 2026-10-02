@@ -1,53 +1,190 @@
-// Module ID: 7538
-// Function ID: 7539
+// Module ID: 7542
+// Function ID: 7543
 // Name: useCurrentChangelog
-// Dependencies: [19, 2112, 4850, 2098, 563, 7539, 2]
-// Exports: useCurrentChangelog
+// Dependencies: [19, 2115, 4851, 2101, 558, 576, 573, 7543, 2]
 
-// Module 7538 (useCurrentChangelog)
-import useStateFromStores from "useStateFromStores" /* 563 */;
-import ChangelogConstants from "ChangelogConstants" /* 2098 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 7539 */;
+// Module 7542 (useCurrentChangelog)
+import useStateFromStores from "useStateFromStores" /* 573 */;
+import react2 from "react" /* 576 */;
+import ChangelogConstants from "ChangelogConstants" /* 2101 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 7543 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import ChangelogStore from "ChangelogStore" /* 4850 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import ChangelogStore from "ChangelogStore" /* 4851 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-function useChangelog(changelogId, stateFromStores) {
+const ChangelogLoadState = ChangelogConstants.ChangelogLoadState;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   let changelog;
-  let defaultChangelog;
-  let defaultLoadState;
-  let obj4;
-  _require = changelogId;
-  let closure_1 = stateFromStores;
-  let obj = require("useStateFromStores");
-  const items = [ChangelogStore];
-  const items1 = [changelogId, stateFromStores];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+  let first;
+  _require = id;
+  let closure_1 = arg1;
+  let tmp = _require;
+  let tmp2 = changelog;
+  let obj = require("react");
+  const cResult = obj.c(21);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChangelogStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === id) {
+    let tmp6;
+    let tmp7;
+    if (cResult[2] === arg1) {
+      tmp6 = cResult[3];
+      tmp7 = cResult[4];
+    }
+    const tmpResult = tmp(tmp2[6]);
+    const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
+    changelog = stateFromStoresObject.changelog;
+    const loadState = stateFromStoresObject.loadState;
+    const defaultChangelog = stateFromStoresObject.defaultChangelog;
+    if (cResult[5] === changelog) {
+      if (cResult[6] === id) {
+        if (cResult[7] === loadState) {
+          let tmp10;
+          let tmp11;
+          if (cResult[8] === arg1) {
+            tmp10 = cResult[9];
+            tmp11 = cResult[10];
+          }
+          const effect = loadState.useEffect(tmp10, tmp11);
+          if (null == id) {
+            let tmp20;
+            if (cResult[11] !== id) {
+              const obj2 = { id, changelog: null, loaded: false };
+              cResult[11] = id;
+              cResult[12] = obj2;
+              tmp20 = obj2;
+            } else {
+              tmp20 = cResult[12];
+            }
+            return tmp20;
+          } else {
+            if (null == changelog) {
+              if (loadState === ChangelogLoadState.LOADED_FAILURE) {
+                if (cResult[13] === defaultChangelog) {
+                  if (cResult[14] === id) {
+                    let tmp19;
+                    if (cResult[15] === tmp9 !== ChangelogLoadState.NOT_LOADED) {
+                      tmp19 = cResult[16];
+                    }
+                    return tmp19;
+                  }
+                }
+                const obj3 = { id, changelog: defaultChangelog, loaded: tmp9 !== ChangelogLoadState.NOT_LOADED };
+                cResult[13] = defaultChangelog;
+                cResult[14] = id;
+                cResult[15] = tmp9 !== ChangelogLoadState.NOT_LOADED;
+                cResult[16] = obj3;
+                tmp19 = obj3;
+              }
+            }
+            if (cResult[17] === changelog) {
+              if (cResult[18] === id) {
+                let tmp17;
+                if (cResult[19] === loadState !== ChangelogLoadState.NOT_LOADED) {
+                  tmp17 = cResult[20];
+                }
+                return tmp17;
+              }
+            }
+            const obj4 = { id, changelog, loaded: loadState !== ChangelogLoadState.NOT_LOADED };
+            cResult[17] = changelog;
+            cResult[18] = id;
+            cResult[19] = loadState !== ChangelogLoadState.NOT_LOADED;
+            cResult[20] = obj4;
+            tmp17 = obj4;
+          }
+        }
+      }
+    }
+    const fn2 = function f() {
+      let tmp2 = null != id;
+      const tmp = id;
+      if (tmp2) {
+        tmp2 = null == changelog;
+      }
+      if (tmp2) {
+        tmp2 = loadState === ChangelogLoadState.NOT_LOADED;
+      }
+      if (tmp2) {
+        const obj = ChangeLogActionCreatorsDefault;
+        changelog = obj.fetchChangelog(tmp, closure_1);
+      }
+    };
+    const items1 = [id, changelog, loadState, arg1];
+    cResult[5] = changelog;
+    cResult[6] = id;
+    cResult[7] = loadState;
+    cResult[8] = arg1;
+    cResult[9] = fn2;
+    cResult[10] = items1;
+    tmp11 = items1;
+    tmp10 = fn2;
+  }
+  const fn = function h() {
     let changelogLoadStatus1;
     changelog = null;
-    if (null != changelogId) {
-      changelog = ChangelogStore.getChangelog(tmp, stateFromStores);
+    if (null != id) {
+      changelog = ChangelogStore.getChangelog(tmp, closure_1);
     }
     let changelog1 = null;
-    if (null != changelogId) {
+    if (null != id) {
       changelog1 = ChangelogStore.getChangelog(tmp, "en-US");
     }
     const changelogLoadStatus = null != tmp && ChangelogStore.getChangelogLoadStatus(tmp, "en-US");
     const obj = { changelog, loadState: changelogLoadStatus1, defaultChangelog: changelog1, defaultLoadState: changelogLoadStatus };
-    changelogLoadStatus1 = null != tmp && ChangelogStore.getChangelogLoadStatus(tmp, stateFromStores);
+    changelogLoadStatus1 = null != tmp && ChangelogStore.getChangelogLoadStatus(tmp, closure_1);
+    return obj;
+  };
+  const items2 = [id, arg1];
+  cResult[1] = id;
+  cResult[2] = arg1;
+  cResult[3] = fn;
+  cResult[4] = items2;
+  tmp7 = items2;
+  tmp6 = fn;
+}) : ((id, arg1) => {
+  let changelog;
+  let defaultChangelog;
+  let defaultLoadState;
+  let obj4;
+  _require = id;
+  let closure_1 = arg1;
+  let obj = require("useStateFromStores");
+  const items = [ChangelogStore];
+  const items1 = [id, arg1];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    let changelogLoadStatus1;
+    changelog = null;
+    if (null != id) {
+      changelog = ChangelogStore.getChangelog(tmp, closure_1);
+    }
+    let changelog1 = null;
+    if (null != id) {
+      changelog1 = ChangelogStore.getChangelog(tmp, "en-US");
+    }
+    const changelogLoadStatus = null != tmp && ChangelogStore.getChangelogLoadStatus(tmp, "en-US");
+    const obj = { changelog, loadState: changelogLoadStatus1, defaultChangelog: changelog1, defaultLoadState: changelogLoadStatus };
+    changelogLoadStatus1 = null != tmp && ChangelogStore.getChangelogLoadStatus(tmp, closure_1);
     return obj;
   }, items1);
   changelog = stateFromStoresObject.changelog;
   const loadState = stateFromStoresObject.loadState;
-  const items2 = [changelogId, changelog, loadState, stateFromStores];
+  const items2 = [id, changelog, loadState, arg1];
   ({ defaultChangelog, defaultLoadState } = stateFromStoresObject);
   const effect = loadState.useEffect(() => {
-    let tmp2 = null != changelogId;
-    const tmp = changelogId;
+    let tmp2 = null != id;
+    const tmp = id;
     if (tmp2) {
       tmp2 = null == changelog;
     }
@@ -56,28 +193,161 @@ function useChangelog(changelogId, stateFromStores) {
     }
     if (tmp2) {
       const obj = ChangeLogActionCreatorsDefault;
-      changelog = obj.fetchChangelog(tmp, stateFromStores);
+      changelog = obj.fetchChangelog(tmp, closure_1);
     }
   }, items2);
-  if (null == changelogId) {
-    obj4 = { id: changelogId, changelog: null, loaded: false };
-    const obj2 = { id: changelogId, changelog: null, loaded: false };
+  if (null == id) {
+    obj4 = { id, changelog: null, loaded: false };
+    const obj2 = { id, changelog: null, loaded: false };
   } else {
     if (null == changelog) {
       if (loadState === ChangelogLoadState.LOADED_FAILURE) {
-        obj4 = { id: changelogId, changelog: defaultChangelog, loaded: defaultLoadState !== tmp3.NOT_LOADED };
-        const obj3 = { id: changelogId, changelog: defaultChangelog, loaded: defaultLoadState !== tmp3.NOT_LOADED };
+        obj4 = { id, changelog: defaultChangelog, loaded: defaultLoadState !== tmp3.NOT_LOADED };
+        const obj3 = { id, changelog: defaultChangelog, loaded: defaultLoadState !== tmp3.NOT_LOADED };
       }
     }
-    obj4 = { id: changelogId, changelog, loaded: loadState !== ChangelogLoadState.NOT_LOADED };
+    obj4 = { id, changelog, loaded: loadState !== ChangelogLoadState.NOT_LOADED };
   }
   return obj4;
-}
-const ChangelogLoadState = ChangelogConstants.ChangelogLoadState;
-const result = size.fileFinishedImporting("modules/changelog/useCurrentChangelog.tsx");
-
-export { useChangelog };
-export const useCurrentChangelog = function useCurrentChangelog() {
+});
+let closure_7 = tmp2;
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let changelog;
+  let changelog2;
+  let loaded;
+  let loaded2;
+  let locale;
+  let tmp12;
+  let tmp13;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(20);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [LocaleStore];
+    const fn = function n() {
+      return locale.locale;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = useStateFromStores;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [ChangelogStore];
+    const fn2 = function s() {
+      return ChangelogStore.latestChangelogId();
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    tmp9 = fn2;
+    tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult4 = useStateFromStores;
+  const stateFromStores1 = tmpResult4.useStateFromStores(tmp8, tmp9);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [ChangelogStore];
+    class C {
+      constructor() {
+        return ChangelogStore.getConfig();
+      }
+    }
+    cResult[4] = items2;
+    cResult[5] = C;
+    tmp13 = C;
+    tmp12 = items2;
+  } else {
+    tmp12 = cResult[4];
+    tmp13 = cResult[5];
+  }
+  const tmpResult5 = useStateFromStores;
+  const stateFromStores2 = tmpResult5.useStateFromStores(tmp12, tmp13);
+  let tmp16 = null != stateFromStores2;
+  if (tmp16) {
+    const _Object = Object;
+    tmp16 = 0 === Object.keys(stateFromStores2).length;
+  }
+  if (cResult[6] === stateFromStores2) {
+    let tmp17;
+    if (cResult[7] === stateFromStores1) {
+      tmp17 = cResult[8];
+    }
+    const _Symbol = Symbol;
+    class C {
+      constructor() {
+        return ChangelogStore.getConfig();
+      }
+    }
+    const tmpResult6 = useStateFromStores;
+    const stateFromStores3 = tmpResult6.useStateFromStores(tmp20, tmp21);
+    ({ changelog, loaded } = closure_7(stateFromStores1, stateFromStores));
+    closure_7(stateFromStores1, stateFromStores);
+    ({ changelog: changelog2, loaded: loaded2 } = closure_7(stateFromStores3, stateFromStores));
+    closure_7(stateFromStores3, stateFromStores);
+    if (null != stateFromStores3) {
+      if (cResult[11] === changelog2) {
+        if (cResult[12] === stateFromStores3) {
+          let tmp28;
+          if (cResult[13] === loaded2) {
+            tmp28 = cResult[14];
+          }
+          return tmp28;
+        }
+      }
+      const obj2 = { id: null, changelog: changelog2, loaded: loaded2, clientTooOld: false };
+      class C {
+        constructor() {
+          return ChangelogStore.getConfig();
+        }
+      }
+      cResult[11] = changelog2;
+      cResult[12] = stateFromStores3;
+      cResult[13] = loaded2;
+      cResult[14] = obj2;
+      tmp28 = obj2;
+    }
+    if (cResult[15] === tmp17) {
+      if (cResult[16] === changelog) {
+        if (cResult[17] === stateFromStores1) {
+          let tmp27;
+          if (cResult[18] === (tmp16 || loaded)) {
+            tmp27 = cResult[19];
+          }
+          return tmp27;
+        }
+      }
+    }
+    const obj3 = { id: stateFromStores1, changelog, loaded: tmp16 || loaded, clientTooOld: tmp17 };
+    cResult[15] = tmp17;
+    cResult[16] = changelog;
+    cResult[17] = stateFromStores1;
+    cResult[18] = tmp16 || loaded;
+    cResult[19] = obj3;
+    tmp27 = obj3;
+  }
+  let tmp18 = null != stateFromStores2;
+  if (tmp18) {
+    const _Object2 = Object;
+    tmp18 = Object.keys(stateFromStores2).length > 0;
+  }
+  if (tmp18) {
+    tmp18 = null == stateFromStores1;
+  }
+  cResult[6] = stateFromStores2;
+  cResult[7] = stateFromStores1;
+  cResult[8] = tmp18;
+  tmp17 = tmp18;
+}) : (() => {
   let changelog;
   let changelog2;
   let loaded;
@@ -110,10 +380,10 @@ export const useCurrentChangelog = function useCurrentChangelog() {
   const items3 = [tmp4];
   const tmpResult = useStateFromStores;
   const stateFromStores3 = tmpResult.useStateFromStores(items3, () => ChangelogStore.overrideId());
-  ({ changelog, loaded } = useChangelog(stateFromStores1, stateFromStores));
-  useChangelog(stateFromStores1, stateFromStores);
-  ({ changelog: changelog2, loaded: loaded2 } = useChangelog(stateFromStores3, stateFromStores));
-  useChangelog(stateFromStores3, stateFromStores);
+  ({ changelog, loaded } = closure_7(stateFromStores1, stateFromStores));
+  closure_7(stateFromStores1, stateFromStores);
+  ({ changelog: changelog2, loaded: loaded2 } = closure_7(stateFromStores3, stateFromStores));
+  closure_7(stateFromStores3, stateFromStores);
   if (null == stateFromStores3) {
     obj5 = { id: stateFromStores1, changelog, loaded: tmp7 || loaded, clientTooOld: tmp9 };
     const obj4 = { id: stateFromStores1, changelog, loaded: tmp7 || loaded, clientTooOld: tmp9 };
@@ -121,4 +391,8 @@ export const useCurrentChangelog = function useCurrentChangelog() {
     obj5 = { id: stateFromStores3, changelog: changelog2, loaded: loaded2, clientTooOld: false };
   }
   return obj5;
-};
+});
+const result = size.fileFinishedImporting("modules/changelog/useCurrentChangelog.tsx");
+
+export const useChangelog = tmp2;
+export const useCurrentChangelog = tmp3;

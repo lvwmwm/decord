@@ -1,30 +1,32 @@
-// Module ID: 13078
-// Function ID: 13079
+// Module ID: 13080
+// Function ID: 13081
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 2112, 1372, 1074, 6852, 1374, 21, 4836, 576, 4783, 1115, 1882, 504, 4488, 5293, 1094, 4832, 13079, 13080, 8694, 5281, 2]
-// Exports: default
+// Dependencies: [19, 17, 2115, 1378, 1086, 6853, 1380, 21, 4837, 588, 4784, 1127, 1888, 558, 576, 504, 4491, 4833, 13081, 13082, 8689, 5282, 5292, 1106, 2]
 
-// Module 13078 (PremiumSubscriptionUpsell)
+// Module 13080 (PremiumSubscriptionUpsell)
 import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import intl7 from "intl" /* 1115 */;
-import NumberUtils from "NumberUtils" /* 1882 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4783 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import ColorConstants from "ColorConstants" /* 6852 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 8694 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13079 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13080 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import intl5 from "intl" /* 1127 */;
+import NumberUtils from "NumberUtils" /* 1888 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4784 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import LinearGradientDefault from "LinearGradient" /* 5292 */;
+import ColorConstants from "ColorConstants" /* 6853 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 8689 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13081 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13082 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import UserStore from "UserStore" /* 1372 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import UserStore from "UserStore" /* 1378 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -54,31 +56,254 @@ obj4 = { borderRadius: nativeDefault.radii.sm, padding: 16, marginTop: 12, align
 obj5 = { color: nativeDefault.unsafe_rawColors.WHITE, fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20 };
 obj6 = { paddingVertical: 0, marginTop: 8, color: nativeDefault.unsafe_rawColors.WHITE };
 let closure_13 = createStyles(obj);
-const result = size.fileFinishedImporting("components_native/premium/PremiumSubscriptionUpsell.tsx");
-
-export default function PremiumSubscriptionUpsell(arg0) {
-  let Button;
+function FEATURES_UPSELL_PREMIUM_TIER_2() {
   let P3aEj6;
-  let currentUser;
   let formatToPlainString;
+  let intl2;
+  let obj2;
+  let obj3;
+  let obj5;
+  const obj = { IconComponent: CheckmarkLargeIcon.CheckmarkLargeIcon, label: formatToPlainString(P3aEj6, obj2), color: nativeDefault.unsafe_rawColors.WHITE };
+  const intl = intl5.intl;
+  formatToPlainString = intl.formatToPlainString;
+  obj2 = { discountPercentage: obj3.formatPercent(LocaleStore.locale, React4 / 100) };
+  P3aEj6 = intl5.t.P3aEj6;
+  const items = [obj, ];
+  obj3 = NumberUtils;
+  const obj4 = { IconComponent: CheckmarkLargeIcon.CheckmarkLargeIcon, label: intl2.formatToPlainString(intl5.t.Ntlzbd, obj5), color: nativeDefault.unsafe_rawColors.WHITE };
+  intl2 = intl5.intl;
+  obj5 = { numFreeGuildSubscriptions: metroImportAll };
+  items[1] = obj4;
+  return items;
+}
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let currentUser;
   let intl;
   let intl2;
   let intl3;
-  let intl5;
-  let intl6;
+  let items1;
+  let items2;
+  let items3;
+  let obj15;
+  let onLearnMorePremium;
+  let style;
+  let tmp5;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(37);
+  ({ onLearnMorePremium, style } = arg0);
+  const tmp4 = closure_13();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function n() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  const obj3 = PremiumUtilsDefault;
+  if (obj3.canUsePremiumGuildMemberProfile(stateFromStores)) {
+    return null;
+  } else {
+    if (cResult[2] === style) {
+      let tmp10;
+      let tmp14;
+      if (cResult[3] === tmp4.upsell) {
+        tmp10 = cResult[4];
+      }
+      if (cResult[5] === stateFromStores) {
+        if (cResult[6] === tmp4.subtitle) {
+          let tmp12;
+          let tmp19;
+          let tmp23;
+          let tmp27;
+          if (cResult[7] === tmp4.title) {
+            tmp12 = cResult[8];
+          }
+          const upsellFeatures = tmp4.upsellFeatures;
+          if (cResult[9] !== tmp4.upsellFeatureSubLogo) {
+            const obj2 = { style: tmp4.upsellFeatureSubLogo, source: AssetRegistryDefault };
+            const tmp22 = authStore(React3, obj2);
+            cResult[9] = tmp4.upsellFeatureSubLogo;
+            cResult[10] = tmp22;
+            tmp19 = tmp22;
+          } else {
+            tmp19 = cResult[10];
+          }
+          if (cResult[11] !== tmp4.upsellFeatureLogoTier2) {
+            const obj4 = { style: tmp4.upsellFeatureLogoTier2, source: AssetRegistryDefault2 };
+            const tmp26 = authStore(React3, obj4);
+            cResult[11] = tmp4.upsellFeatureLogoTier2;
+            cResult[12] = tmp26;
+            tmp23 = tmp26;
+          } else {
+            tmp23 = cResult[12];
+          }
+          const _Symbol = Symbol;
+          const upsellFeatureList = tmp4.upsellFeatureList;
+          if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+            const tmp29 = FEATURES_UPSELL_PREMIUM_TIER_2();
+            cResult[13] = tmp29;
+            tmp27 = tmp29;
+          } else {
+            tmp27 = cResult[13];
+          }
+          if (cResult[14] === tmp4.upsellFeatureList) {
+            if (cResult[15] === tmp4.upsellLabel) {
+              let tmp30;
+              if (cResult[16] === tmp4.upsellRow) {
+                tmp30 = cResult[17];
+              }
+              if (cResult[18] === tmp4.upsellFeatures) {
+                if (cResult[19] === tmp30) {
+                  if (cResult[20] === tmp19) {
+                    let tmp33;
+                    let tmp37;
+                    let tmp39;
+                    if (cResult[21] === tmp23) {
+                      tmp33 = cResult[22];
+                    }
+                    const _Symbol2 = Symbol;
+                    const upsellButton = tmp4.upsellButton;
+                    if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
+                      const intl4 = tmp(1127).intl;
+                      const stringResult = intl4.string(intl5.t.fJOECn);
+                      cResult[23] = stringResult;
+                      tmp37 = stringResult;
+                    } else {
+                      tmp37 = cResult[23];
+                    }
+                    if (cResult[24] !== onLearnMorePremium) {
+                      const obj5 = { variant: "experimental_premium-secondary", text: tmp37, onPress: onLearnMorePremium };
+                      const tmp41 = authStore(components_Button_Button.Button, obj5);
+                      cResult[24] = onLearnMorePremium;
+                      cResult[25] = tmp41;
+                      tmp39 = tmp41;
+                    } else {
+                      tmp39 = cResult[25];
+                    }
+                    if (cResult[26] === tmp4.upsellButton) {
+                      let tmp42;
+                      if (cResult[27] === tmp39) {
+                        tmp42 = cResult[28];
+                      }
+                      if (cResult[29] === tmp4.upsellCard) {
+                        if (cResult[30] === tmp33) {
+                          if (cResult[31] === tmp42) {
+                            let tmp46;
+                            if (cResult[32] === tmp12) {
+                              tmp46 = cResult[33];
+                            }
+                            if (cResult[34] === tmp46) {
+                              let tmp51;
+                              if (cResult[35] === tmp10) {
+                                tmp51 = cResult[36];
+                              }
+                              return tmp51;
+                            }
+                            const obj6 = { style: tmp10, children: tmp46 };
+                            const tmp54 = authStore(_false, obj6);
+                            cResult[34] = tmp46;
+                            cResult[35] = tmp10;
+                            cResult[36] = tmp54;
+                            tmp51 = tmp54;
+                          }
+                        }
+                      }
+                      const obj7 = { style: tmp11, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: Gradients.PREMIUM_GUILD, children: items1 };
+                      items1 = [tmp12, tmp33, tmp42];
+                      const tmp9Result = LinearGradientDefault;
+                      const tmp50 = closure_12(tmp9Result, obj7);
+                      cResult[29] = tmp4.upsellCard;
+                      cResult[30] = tmp33;
+                      cResult[31] = tmp42;
+                      cResult[32] = tmp12;
+                      cResult[33] = tmp50;
+                      tmp46 = tmp50;
+                    }
+                    const obj8 = { style: upsellButton, children: tmp39 };
+                    const tmp45 = authStore(_false, obj8);
+                    cResult[26] = tmp4.upsellButton;
+                    cResult[27] = tmp39;
+                    cResult[28] = tmp45;
+                    tmp42 = tmp45;
+                  }
+                }
+              }
+              const obj9 = { style: upsellFeatures, children: items2 };
+              items2 = [tmp19, tmp23, tmp30];
+              const tmp36 = closure_12(_false, obj9);
+              cResult[18] = tmp4.upsellFeatures;
+              cResult[19] = tmp30;
+              cResult[20] = tmp19;
+              cResult[21] = tmp23;
+              cResult[22] = tmp36;
+              tmp33 = tmp36;
+            }
+          }
+          const obj10 = { style: upsellFeatureList, features: tmp27, labelStyle: null, rowStyle: null };
+          ({ upsellLabel: obj12.labelStyle, upsellRow: obj12.rowStyle } = tmp4);
+          const tmp32 = authStore(PremiumFeatureListDefault, obj10);
+          cResult[14] = tmp4.upsellFeatureList;
+          cResult[15] = tmp4.upsellLabel;
+          cResult[16] = tmp4.upsellRow;
+          cResult[17] = tmp32;
+          tmp30 = tmp32;
+        }
+      }
+      const tmp9Result2 = PremiumUtilsDefault;
+      if (tmp9Result2.isPremium(stateFromStores)) {
+        const obj11 = { children: items3 };
+        const obj13 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl2.string(intl5.t.YYfHlx) };
+        const Text2 = tmp(4833).Text;
+        intl2 = tmp(1127).intl;
+        items3 = [authStore(Text2, obj13), ];
+        const obj14 = { style: tmp4.subtitle, variant: "text-md/semibold", color: "text-overlay-light", children: intl3.format(intl5.t.Af0zEZ, obj15) };
+        const Text3 = tmp(4833).Text;
+        intl3 = tmp(1127).intl;
+        obj15 = { numFreeGuildSubscriptions: metroImportAll };
+        items3[1] = authStore(Text3, obj14);
+        tmp14 = closure_12(unpackModuleId, obj11);
+      } else {
+        const obj16 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl.string(intl5.t["qUl+K4"]) };
+        const Text = tmp(4833).Text;
+        intl = tmp(1127).intl;
+        tmp14 = authStore(Text, obj16);
+      }
+      cResult[5] = stateFromStores;
+      cResult[6] = tmp4.subtitle;
+      cResult[7] = tmp4.title;
+      cResult[8] = tmp14;
+      tmp12 = tmp14;
+    }
+    const items4 = [tmp4.upsell, style];
+    cResult[2] = style;
+    cResult[3] = tmp4.upsell;
+    cResult[4] = items4;
+    tmp10 = items4;
+  }
+}) : ((arg0) => {
+  let Button;
+  let currentUser;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
   let items1;
   let items2;
   let items3;
   let items4;
-  let items5;
   let obj16;
-  let obj18;
-  let obj20;
   let obj4;
   let obj8;
   let onLearnMorePremium;
   let style;
-  let tmp2Result;
   let tmp5Result;
   ({ onLearnMorePremium, style } = arg0);
   const tmp = closure_13();
@@ -96,20 +321,20 @@ export default function PremiumSubscriptionUpsell(arg0) {
     const tmp5Result3 = PremiumUtilsDefault;
     if (tmp5Result3.isPremium(stateFromStores)) {
       const obj5 = { children: items2 };
-      const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl2.string(intl7.t.YYfHlx) };
-      const Text2 = tmp2(4832).Text;
-      intl2 = tmp2(1115).intl;
+      const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl2.string(intl5.t.YYfHlx) };
+      const Text2 = tmp2(4833).Text;
+      intl2 = tmp2(1127).intl;
       items2 = [authStore(Text2, obj6), ];
-      const obj7 = { style: tmp.subtitle, variant: "text-md/semibold", color: "text-overlay-light", children: intl3.format(intl7.t.Af0zEZ, obj8) };
-      const Text3 = tmp2(4832).Text;
-      intl3 = tmp2(1115).intl;
+      const obj7 = { style: tmp.subtitle, variant: "text-md/semibold", color: "text-overlay-light", children: intl3.format(intl5.t.Af0zEZ, obj8) };
+      const Text3 = tmp2(4833).Text;
+      intl3 = tmp2(1127).intl;
       obj8 = { numFreeGuildSubscriptions: metroImportAll };
       items2[1] = authStore(Text3, obj7);
       tmp7Result1 = tmp9(unpackModuleId, obj5);
     } else {
-      const obj9 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl.string(intl7.t["qUl+K4"]) };
-      const Text = tmp2(4832).Text;
-      intl = tmp2(1115).intl;
+      const obj9 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl.string(intl5.t["qUl+K4"]) };
+      const Text = tmp2(4833).Text;
+      intl = tmp2(1127).intl;
       tmp7Result1 = tmp7(Text, obj9);
     }
     items3 = [tmp7Result1, , ];
@@ -118,28 +343,20 @@ export default function PremiumSubscriptionUpsell(arg0) {
     items4 = [authStore(React3, obj11), , ];
     const obj12 = { style: tmp.upsellFeatureLogoTier2, source: AssetRegistryDefault2 };
     items4[1] = authStore(React3, obj12);
-    const obj13 = { style: tmp.upsellFeatureList, features: items5, labelStyle: null, rowStyle: null };
-    const obj15 = { IconComponent: CheckmarkLargeIcon.CheckmarkLargeIcon, label: formatToPlainString(P3aEj6, obj16), color: nativeDefault.unsafe_rawColors.WHITE };
-    const tmp5Result4 = PremiumFeatureListDefault;
-    const intl4 = tmp2(1115).intl;
-    formatToPlainString = intl4.formatToPlainString;
-    obj16 = { discountPercentage: tmp2Result.formatPercent(LocaleStore.locale, React4 / 100) };
-    P3aEj6 = tmp2(1115).t.P3aEj6;
-    items5 = [obj15, ];
-    tmp2Result = NumberUtils;
-    const obj17 = { IconComponent: CheckmarkLargeIcon.CheckmarkLargeIcon, label: intl5.formatToPlainString(intl7.t.Ntlzbd, obj18), color: nativeDefault.unsafe_rawColors.WHITE };
-    intl5 = tmp2(1115).intl;
-    obj18 = { numFreeGuildSubscriptions: metroImportAll };
-    items5[1] = obj17;
+    const obj13 = { style: tmp.upsellFeatureList, features: FEATURES_UPSELL_PREMIUM_TIER_2(), labelStyle: null, rowStyle: null };
     ({ upsellLabel: obj14.labelStyle, upsellRow: obj14.rowStyle } = tmp);
+    const tmp5Result4 = PremiumFeatureListDefault;
     items4[2] = authStore(tmp5Result4, obj13);
     items3[1] = closure_12(_false, obj10);
-    const obj19 = { style: tmp.upsellButton, children: authStore(Button, obj20) };
-    obj20 = { variant: "experimental_premium-secondary", text: intl6.string(intl7.t.fJOECn), onPress: onLearnMorePremium };
-    Button = tmp2(5281).Button;
-    intl6 = tmp2(1115).intl;
-    items3[2] = authStore(_false, obj19);
+    const obj15 = { style: tmp.upsellButton, children: authStore(Button, obj16) };
+    obj16 = { variant: "experimental_premium-secondary", text: intl4.string(intl5.t.fJOECn), onPress: onLearnMorePremium };
+    Button = tmp2(5282).Button;
+    intl4 = tmp2(1127).intl;
+    items3[2] = authStore(_false, obj15);
     tmp7Result = tmp7(tmp8, obj3);
   }
   return tmp7Result;
-};
+});
+const result = size.fileFinishedImporting("components_native/premium/PremiumSubscriptionUpsell.tsx");
+
+export default tmp7;

@@ -1,26 +1,26 @@
-// Module ID: 16821
-// Function ID: 16822
+// Module ID: 17053
+// Function ID: 17054
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 6958, 1074, 21, 576, 4836, 1613, 14402, 14401, 16822, 8960, 4531, 6972, 1241, 6959, 6800, 4832, 5293, 1115, 2487, 2]
-// Exports: default
+// Dependencies: [19, 17, 6962, 1086, 21, 588, 4837, 558, 576, 1619, 14390, 14389, 17054, 9379, 4535, 6976, 1253, 6963, 6801, 4833, 5292, 1127, 2490, 2]
 
-// Module 16821 (ParentalConsentWarningBanner)
-import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import openUserSettings from "openUserSettings" /* 6800 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 6958 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 6959 */;
-import _modDef6972 from "module_6972" /* 6972 */;
+// Module 17053 (ParentalConsentWarningBanner)
+import nativeDefault from "native" /* 588 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import openUserSettings from "openUserSettings" /* 6801 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 6962 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 6963 */;
+import _modDef6976 from "module_6976" /* 6976 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, children, obj1, openUserSettingsResult, trackResult;
 
 let StyleSheet;
 let c10;
@@ -48,9 +48,225 @@ obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "center", p
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = { paddingRight: nativeDefault.space.PX_8 };
 let closure_16 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/parent_tools/native/ParentalConsentWarningBanner.tsx");
-
-export default function ParentalConsentWarningBanner(children) {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+  let Text;
+  let daysRemaining;
+  let formatResult;
+  let intl;
+  let items3;
+  let link;
+  let obj14;
+  let tmp11;
+  let obj = require("react");
+  const cResult = obj.c(28);
+  children = children.children;
+  const tmp4 = closure_16();
+  _require = tmp4;
+  const tmp6 = daysRemaining(1619)();
+  let obj2 = require("useParentalConsentWarning");
+  const parentalConsentWarning = obj2.useParentalConsentWarning();
+  let obj3 = require("useIsParentalConsentBannerActive");
+  const isParentalConsentBannerActive = obj3.useIsParentalConsentBannerActive();
+  let obj4 = require("useIsOnMainSurface");
+  const isOnMainSurface = obj4.useIsOnMainSurface();
+  let obj5 = require("useGlobalStatusIndicatorState");
+  const isVisible = obj5.useGlobalStatusIndicatorState().isVisible;
+  const obj6 = require("useToken");
+  const token = obj6.useToken(daysRemaining(588).colors.BACKGROUND_FEEDBACK_WARNING);
+  if (cResult[0] !== token) {
+    const obj7 = daysRemaining(6976)(token);
+    const setAlphaResult = obj7.setAlpha(0);
+    const toRgbStringResult = setAlphaResult.toRgbString();
+    cResult[0] = token;
+    cResult[1] = toRgbStringResult;
+    tmp11 = toRgbStringResult;
+  } else {
+    tmp11 = cResult[1];
+  }
+  if (cResult[2] === tmp11) {
+    let tmp13;
+    if (cResult[3] === token) {
+      tmp13 = cResult[4];
+    }
+    daysRemaining = undefined;
+    if (parentalConsentWarning != null) {
+      daysRemaining = parentalConsentWarning.daysRemaining;
+    }
+    if (daysRemaining == null) {
+      daysRemaining = null;
+    }
+    const sum = tmp6.top + closure_14;
+    if (cResult[5] !== daysRemaining) {
+      class I {
+        constructor() {
+          obj = closure_1(closure_2[16]);
+          obj1 = { days_remaining: c1 };
+          trackResult = obj.track(AnalyticEvents.PARENTAL_CONSENT_WARNING_BANNER_TAPPED, obj1);
+          obj3 = closure_1(closure_2[17]);
+          tab = obj3.selectTab(FamilyCenterSubPages.REQUESTS);
+          obj4 = closure_0(closure_2[18]);
+          obj6 = { screen: UserSettingsSections.FAMILY_CENTER };
+          openUserSettingsResult = obj4.openUserSettings(obj6);
+          return;
+        }
+      }
+      cResult[5] = daysRemaining;
+      cResult[6] = I;
+    } else {
+      class I {
+        constructor() {
+          obj = closure_1(closure_2[16]);
+          obj1 = { days_remaining: c1 };
+          trackResult = obj.track(AnalyticEvents.PARENTAL_CONSENT_WARNING_BANNER_TAPPED, obj1);
+          obj3 = closure_1(closure_2[17]);
+          tab = obj3.selectTab(FamilyCenterSubPages.REQUESTS);
+          obj4 = closure_0(closure_2[18]);
+          obj6 = { screen: UserSettingsSections.FAMILY_CENTER };
+          openUserSettingsResult = obj4.openUserSettings(obj6);
+          return;
+        }
+      }
+    }
+    if (cResult[7] !== tmp4.link) {
+      class H {
+        constructor(arg0, arg1) {
+          obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
+          return jsx(closure_0(closure_2[19]).Text, obj, arg1);
+        }
+      }
+      cResult[7] = tmp4.link;
+      cResult[8] = H;
+    } else {
+      class H {
+        constructor(arg0, arg1) {
+          obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
+          return jsx(closure_0(closure_2[19]).Text, obj, arg1);
+        }
+      }
+    }
+    if (isOnMainSurface && isParentalConsentBannerActive && !isVisible && null != daysRemaining && daysRemaining >= 0) {
+      class H {
+        constructor(arg0, arg1) {
+          obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
+          return jsx(closure_0(closure_2[19]).Text, obj, arg1);
+        }
+      }
+    }
+    if (cResult[9] !== 0) {
+      class H {
+        constructor(arg0, arg1) {
+          obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
+          return jsx(closure_0(closure_2[19]).Text, obj, arg1);
+        }
+      }
+      const items = [StyleSheet.absoluteFill, ];
+      const obj8 = { marginTop: 0 };
+      items[1] = obj8;
+      cResult[9] = 0;
+      cResult[10] = items;
+    } else {
+      class H {
+        constructor(arg0, arg1) {
+          obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
+          return jsx(closure_0(closure_2[19]).Text, obj, arg1);
+        }
+      }
+    }
+    if (cResult[11] === children) {
+      class H {
+        constructor(arg0, arg1) {
+          obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
+          return jsx(closure_0(closure_2[19]).Text, obj, arg1);
+        }
+      }
+      if (cResult[14] === tmp20) {
+        class H {
+          constructor(arg0, arg1) {
+            obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
+            return jsx(closure_0(closure_2[19]).Text, obj, arg1);
+          }
+        }
+      }
+      let tmp28Result = null;
+      if (isOnMainSurface && isParentalConsentBannerActive && !isVisible && null != daysRemaining && daysRemaining >= 0) {
+        class H {
+          constructor(arg0, arg1) {
+            obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
+            return jsx(closure_0(closure_2[19]).Text, obj, arg1);
+          }
+        }
+        if (null != daysRemaining) {
+          class H {
+            constructor(arg0, arg1) {
+              obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
+              return jsx(closure_0(closure_2[19]).Text, obj, arg1);
+            }
+          }
+          const items1 = [tmp4.strip, ];
+          const obj9 = { height: sum };
+          items1[1] = obj9;
+          tmp30[0] = items1;
+          const obj10 = { pointerEvents: "none", style: StyleSheet.absoluteFill, colors: tmp13, locations, start: null, end: null };
+          ({ START: obj12.start, END: obj12.end } = closure_10);
+          const items2 = [closure_11(daysRemaining(5292), obj10), ];
+          const obj11 = { accessibilityRole: "button", accessibilityHint: intl.string(daysRemaining(2490).O2HKdA), onPress: tmp19, style: items3, children: closure_11(Text, obj14) };
+          intl = tmp(1127).intl;
+          items3 = [tmp4.pressable, ];
+          const obj13 = { paddingTop: tmp6.top + 8 };
+          items3[1] = obj13;
+          obj14 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, style: tmp4.label, children: formatResult };
+          Text = tmp(4833).Text;
+          const tmp28 = closure_12;
+          const tmp29 = View;
+          const tmp35 = closure_4;
+          if (0 === daysRemaining) {
+            class H {
+              constructor(arg0, arg1) {
+                obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
+                return jsx(closure_0(closure_2[19]).Text, obj, arg1);
+              }
+            }
+            const obj15 = { connectHook: tmp20 };
+            formatResult = obj18.format(tmp5(2490).Gfqlpa, obj15);
+          } else {
+            class H {
+              constructor(arg0, arg1) {
+                obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
+                return jsx(closure_0(closure_2[19]).Text, obj, arg1);
+              }
+            }
+            const obj17 = { count: daysRemaining, connectHook: tmp20 };
+            formatResult = obj16.format(tmp5(2490).ZBK5mM, obj17);
+          }
+          items2[1] = closure_11(tmp35, obj11);
+          tmp30[2] = items2;
+          tmp28Result = tmp28(tmp29, tmp30);
+        }
+      }
+      cResult[14] = tmp20;
+      cResult[15] = daysRemaining;
+      cResult[16] = tmp13;
+      cResult[17] = tmp19;
+      cResult[18] = tmp6.top;
+      cResult[19] = isOnMainSurface && isParentalConsentBannerActive && !isVisible && null != daysRemaining && daysRemaining >= 0;
+      cResult[20] = sum;
+      cResult[21] = tmp4.label;
+      cResult[22] = tmp4.pressable;
+      cResult[23] = tmp4.strip;
+      cResult[24] = tmp28Result;
+    }
+    const obj19 = { style: tmp21, children };
+    cResult[11] = children;
+    cResult[12] = tmp21;
+    cResult[13] = closure_11(View, obj19);
+    const tmp25 = closure_11(View, obj19);
+  }
+  const items4 = [token, tmp11];
+  cResult[2] = tmp11;
+  cResult[3] = token;
+  cResult[4] = items4;
+  tmp13 = items4;
+}) : ((children) => {
   let Text;
   let formatResult;
   let intl;
@@ -64,7 +280,7 @@ export default function ParentalConsentWarningBanner(children) {
   children = children.children;
   const tmp = closure_16();
   _require = tmp;
-  const tmp4 = token(daysRemaining[7])();
+  const tmp4 = token(daysRemaining[9])();
   let obj = require("useParentalConsentWarning");
   const parentalConsentWarning = obj.useParentalConsentWarning();
   let obj2 = require("useIsParentalConsentBannerActive");
@@ -79,7 +295,7 @@ export default function ParentalConsentWarningBanner(children) {
   daysRemaining = undefined;
   const memo = react.useMemo(() => {
     const items = [token, ];
-    const obj = _modDef6972(token);
+    const obj = _modDef6976(token);
     const setAlphaResult = obj.setAlpha(0);
     items[1] = setAlphaResult.toRgbString();
     return items;
@@ -139,23 +355,23 @@ export default function ParentalConsentWarningBanner(children) {
       items5[1] = obj8;
       const obj10 = { pointerEvents: "none", style: tmp20.absoluteFill, colors: memo, locations, start: null, end: null };
       ({ START: obj9.start, END: obj9.end } = closure_10);
-      items6 = [closure_11(token(daysRemaining[18]), obj10), ];
-      const obj11 = { accessibilityRole: "button", accessibilityHint: intl.string(token(daysRemaining[20]).O2HKdA), onPress: callback, style: items7, children: closure_11(Text, obj13) };
-      intl = tmp5(tmp3[19]).intl;
+      items6 = [closure_11(token(daysRemaining[20]), obj10), ];
+      const obj11 = { accessibilityRole: "button", accessibilityHint: intl.string(token(daysRemaining[22]).O2HKdA), onPress: callback, style: items7, children: closure_11(Text, obj13) };
+      intl = tmp5(tmp3[21]).intl;
       items7 = [tmp.pressable, ];
       const obj12 = { paddingTop: tmp4.top + 8 };
       items7[1] = obj12;
       obj13 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, style: tmp.label, children: formatResult };
-      Text = tmp5(tmp3[17]).Text;
+      Text = tmp5(tmp3[19]).Text;
       const tmp24 = closure_4;
       if (0 === daysRemaining) {
-        const intl3 = tmp5(tmp3[19]).intl;
+        const intl3 = tmp5(tmp3[21]).intl;
         const obj14 = { connectHook: callback1 };
-        formatResult = intl3.format(tmp2(tmp3[20]).Gfqlpa, obj14);
+        formatResult = intl3.format(tmp2(tmp3[22]).Gfqlpa, obj14);
       } else {
-        const intl2 = tmp5(tmp3[19]).intl;
+        const intl2 = tmp5(tmp3[21]).intl;
         const obj22 = { count: daysRemaining, connectHook: callback1 };
-        formatResult = intl2.format(tmp2(tmp3[20]).ZBK5mM, obj22);
+        formatResult = intl2.format(tmp2(tmp3[22]).ZBK5mM, obj22);
       }
       items6[1] = closure_11(tmp24, obj11);
       tmp16Result = tmp16(tmp19, obj7);
@@ -163,4 +379,7 @@ export default function ParentalConsentWarningBanner(children) {
   }
   children1[1] = tmp16Result;
   return closure_12(tmp17, { children: children1 });
-};
+});
+const result = size.fileFinishedImporting("modules/parent_tools/native/ParentalConsentWarningBanner.tsx");
+
+export default tmp7;

@@ -1,13 +1,13 @@
-// Module ID: 14063
-// Function ID: 14064
+// Module ID: 14065
+// Function ID: 14066
 // Name: subscriptions
-// Dependencies: [5, 1074, 12, 8770, 14064, 1241, 14065, 2]
+// Dependencies: [5, 1086, 12, 8765, 14066, 1253, 14067, 2]
 
-// Module 14063 (subscriptions)
+// Module 14065 (subscriptions)
 import _modDef12 from "module_12" /* 12 */;
-import RPCErrorDefault from "RPCError" /* 8770 */;
+import RPCErrorDefault from "RPCError" /* 8765 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let constants, constants2;
@@ -63,7 +63,7 @@ let obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp45;

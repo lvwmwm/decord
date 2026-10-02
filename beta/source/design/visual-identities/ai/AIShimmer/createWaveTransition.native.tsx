@@ -1,12 +1,12 @@
-// Module ID: 13943
-// Function ID: 13944
+// Module ID: 13944
+// Function ID: 13945
 // Name: createWaveTransition
-// Dependencies: [13941, 4837, 4566, 2]
+// Dependencies: [13943, 4838, 4570, 2]
 // Exports: createWaveTransition
 
-// Module 13943 (createWaveTransition)
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import waveTransition from "waveTransition" /* 13941 */;
+// Module 13944 (createWaveTransition)
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import waveTransition from "waveTransition" /* 13943 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, dependencyMap, set, set2;
@@ -42,7 +42,7 @@ export const createWaveTransition = function createWaveTransition(duration) {
   let DEFAULT_PASS_DURATION = duration.duration;
   if (DEFAULT_PASS_DURATION == null) {
     let tmp = obj;
-    DEFAULT_PASS_DURATION = obj(13941).DEFAULT_PASS_DURATION;
+    DEFAULT_PASS_DURATION = obj(13943).DEFAULT_PASS_DURATION;
   }
   obj = { duration: DEFAULT_PASS_DURATION, random, reducedMotion: null, respectReducedMotion, animationProgress: null, crossFadeOpacity: null, glyphCount: null, onPass: null, onStart: null, onComplete: null };
   random = duration.rng;
@@ -75,7 +75,7 @@ export const createWaveTransition = function createWaveTransition(duration) {
   if (0 < glyphCountResult) {
     do {
       let tmp6 = obj;
-      let str3 = obj(13941).GLYPH_PEAK;
+      let str3 = obj(13943).GLYPH_PEAK;
       let charAt = str3.charAt;
       let tmp5Result = tmp5();
       str = `${charAt(tmp8 * obj(c1[0]).GLYPH_PEAK.length | 0)}`;
@@ -120,7 +120,7 @@ export const createWaveTransition = function createWaveTransition(duration) {
       c6 = id;
     },
     stop,
-    setTransition(current, current2) {
+    setTransition(current2, current) {
       let str6;
       if (null != c7) {
         const _clearTimeout = clearTimeout;
@@ -144,16 +144,16 @@ export const createWaveTransition = function createWaveTransition(duration) {
         if (result2 === 0) {
           str2 = "B";
         }
-        if (current !== ("A" === str2 ? to2 : to)) {
+        if (current2 !== ("A" === str2 ? to2 : to)) {
           if (typeof incomingSlotForPass === "function") {
             let str3 = "A";
             if (result2 === 0) {
               str3 = "B";
             }
             if ("A" === str3) {
-              to2 = current;
+              to2 = current2;
             } else {
-              to = current;
+              to = current2;
             }
           } else {
             throw new TypeError("Trying to call a non-function");
@@ -165,9 +165,9 @@ export const createWaveTransition = function createWaveTransition(duration) {
             str4 = "B";
           }
           if ("A" === str4) {
-            to = current2;
+            to = current;
           } else {
-            to2 = current2;
+            to2 = current;
           }
           id = id + 1;
           const onPass = obj2.onPass;

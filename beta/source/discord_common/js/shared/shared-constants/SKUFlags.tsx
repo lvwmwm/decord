@@ -1,9 +1,9 @@
-// Module ID: 1098
-// Function ID: 1099
+// Module ID: 1110
+// Function ID: 1111
 // Name: SKUFlags
 // Dependencies: [2]
 
-// Module 1098 (SKUFlags)
+// Module 1110 (SKUFlags)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/SKUFlags.tsx");

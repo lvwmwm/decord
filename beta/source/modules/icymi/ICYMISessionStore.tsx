@@ -1,19 +1,19 @@
-// Module ID: 13891
-// Function ID: 13892
+// Module ID: 13893
+// Function ID: 13894
 // Name: ICYMISessionStore
-// Dependencies: [4750, 1235, 7801, 502, 7783, 1255, 7807, 504, 573, 2]
+// Dependencies: [4752, 1247, 7805, 502, 7787, 1267, 7811, 504, 585, 2]
 // Exports: resetGlobalState
 
-// Module 13891 (ICYMISessionStore)
+// Module 13893 (ICYMISessionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import v1 from "v1" /* 1255 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 7807 */;
-import ExperimentStore from "ExperimentStore" /* 4750 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
-import LabFeatureStore from "LabFeatureStore" /* 7801 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import v1 from "v1" /* 1267 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 7811 */;
+import ExperimentStore from "ExperimentStore" /* 4752 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1247 */;
+import LabFeatureStore from "LabFeatureStore" /* 7805 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ICYMIStore from "ICYMIStore" /* 7783 */;
+import ICYMIStore from "ICYMIStore" /* 7787 */;
 import size from "module_2" /* 2 */;
 
 let _null, c10, set;
@@ -148,7 +148,7 @@ class ICYMISession {
       }
       ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, uxVariation } = tmp7);
       if (uxVariation == null) {
-        uxVariation = tmp11(7807).DEFAULT_UX_VARIATION;
+        uxVariation = tmp11(7811).DEFAULT_UX_VARIATION;
       }
       let trackFeedItemDwell1sResult = trackFeedItemDwell1s(obj);
       continue;
@@ -344,7 +344,7 @@ class ICYMISession {
       }
       DEFAULT_UX_VARIATION = tmp2.uxVariation;
       if (DEFAULT_UX_VARIATION == null) {
-        DEFAULT_UX_VARIATION = tmp5(7807).DEFAULT_UX_VARIATION;
+        DEFAULT_UX_VARIATION = tmp5(7811).DEFAULT_UX_VARIATION;
       }
       ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, sessionImpressionIndex: obj.sessionImpressionIndex } = this._activeItems[findIndexResult]);
       trackFeedItemDwelled(obj);

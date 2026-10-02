@@ -1,26 +1,7 @@
 // Module ID: 5530
 // Function ID: 5531
-// Dependencies: [5531, 5529]
+// Dependencies: []
 
 // Module 5530
-import _modDef5529 from "module_5529" /* 5529 */;
-import _modDef5531 from "module_5531" /* 5531 */;
 
-
-export default {
-  isTiffFile(byteLength) {
-    let tmp = byteLength && byteLength.byteLength >= 4;
-    if (tmp) {
-      const uint16 = byteLength.getUint16(0);
-      tmp = byteLength.getUint16(2, uint16 === _modDef5531.LITTLE_ENDIAN) === 42;
-    }
-    return tmp;
-  },
-  findTiffOffsets() {
-    if (_modDef5529.USE_EXIF) {
-      return { hasAppMarkers: true, tiffHeaderOffset: 0 };
-    } else {
-      return {};
-    }
-  }
-};
+export default { USE_FILE: true, USE_JFIF: true, USE_PNG_FILE: true, USE_EXIF: true, USE_IPTC: true, USE_XMP: true, USE_ICC: true, USE_MPF: true, USE_PHOTOSHOP: true, USE_THUMBNAIL: true, USE_TIFF: true, USE_JPEG: true, USE_PNG: true, USE_HEIC: true, USE_AVIF: true, USE_WEBP: true, USE_GIF: true, USE_MAKER_NOTES: true };

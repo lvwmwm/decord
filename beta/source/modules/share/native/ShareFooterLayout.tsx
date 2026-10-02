@@ -1,22 +1,22 @@
-// Module ID: 11190
-// Function ID: 11191
+// Module ID: 11073
+// Function ID: 11074
 // Name: ShareFooterLayout
-// Dependencies: [19, 17, 21, 4836, 576, 6402, 4566, 5280, 5284, 4832, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 6399, 4570, 5281, 5285, 4833, 2]
 
-// Module 11190 (ShareFooterLayout)
+// Module 11073 (ShareFooterLayout)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5280 */;
-import springPresets from "springPresets" /* 5284 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import spring from "spring" /* 5281 */;
+import springPresets from "springPresets" /* 5285 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6399 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
 let _require;
 
 let closure_4;
@@ -25,6 +25,8 @@ let metroRequire;
 let obj2;
 let obj3;
 let obj4;
+let tmp6;
+const ReanimatedRexportDefault = tmp6(4570);
 let View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -34,10 +36,137 @@ createStyles = createStyles.createStyles;
 obj3 = { marginHorizontal: -nativeDefault.space.PX_16, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
 obj4 = { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "flex-end" };
 let closure_7 = createStyles(obj);
-const __initData = { code: "function ShareFooterLayoutTsx1(){const{withSpring,footerPaddingBottom,ON_PRESS_SPRING}=this.__closure;return{paddingBottom:withSpring(footerPaddingBottom,ON_PRESS_SPRING,'respect-motion-settings')};}" };
-const result = size.fileFinishedImporting("modules/share/native/ShareFooterLayout.tsx");
-
-export default function ShareFooterLayout(arg0) {
+const __initData = { code: "function ShareFooterLayoutTsx1(){const{withSpring,footerPaddingBottom,ON_PRESS_SPRING}=this.__closure;return{paddingBottom:withSpring(footerPaddingBottom,ON_PRESS_SPRING,\"respect-motion-settings\")};}" };
+const __initData2 = { code: "function ShareFooterLayoutTsx2(){const{withSpring,footerPaddingBottom,ON_PRESS_SPRING}=this.__closure;return{paddingBottom:withSpring(footerPaddingBottom,ON_PRESS_SPRING,'respect-motion-settings')};}" };
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let avoidKeyboard;
+  let chatInput;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let preview;
+  let sendButton;
+  let tmp5;
+  let warningText;
+  let obj = react2;
+  const cResult = obj.c(22);
+  ({ preview, chatInput, sendButton, warningText, avoidKeyboard } = arg0);
+  const tmp4 = closure_7();
+  if (cResult[0] !== avoidKeyboard) {
+    let obj2 = { includeKeyboardHeight: avoidKeyboard, includeCustomKeyboardHeight: false };
+    cResult[0] = avoidKeyboard;
+    cResult[1] = obj2;
+    tmp5 = obj2;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const sum = tmp4.footer.paddingVertical + useSafeAreaInsetsKeyboardAwareDefault(tmp5).insets.bottom;
+  const require = sum;
+  const fn = function y() {
+    let obj2;
+    const obj = { paddingBottom: obj2.withSpring(require, springPresets.ON_PRESS_SPRING, "respect-motion-settings") };
+    obj2 = spring;
+    return obj;
+  };
+  const tmpResult = ReanimatedRexport;
+  fn.__closure = { withSpring: spring.withSpring, footerPaddingBottom: sum, ON_PRESS_SPRING: springPresets.ON_PRESS_SPRING };
+  fn.__workletHash = 13733030539245;
+  fn.__initData = __initData;
+  ({ withSpring: spring.withSpring, footerPaddingBottom: sum, ON_PRESS_SPRING: springPresets.ON_PRESS_SPRING });
+  const animatedStyle = tmpResult.useAnimatedStyle(fn);
+  if (cResult[2] === animatedStyle) {
+    let tmp9;
+    if (cResult[3] === tmp4.footer) {
+      tmp9 = cResult[4];
+    }
+    if (cResult[5] === preview) {
+      let tmp10;
+      if (cResult[6] === tmp4.footerSeparator) {
+        tmp10 = cResult[7];
+      }
+      if (cResult[8] === chatInput) {
+        if (cResult[9] === sendButton) {
+          let tmp16;
+          let tmp20;
+          if (cResult[10] === tmp4.chatRow) {
+            tmp16 = cResult[11];
+          }
+          if (cResult[12] !== warningText) {
+            let tmp22 = null != warningText;
+            if (tmp22) {
+              const obj4 = { variant: "text-sm/normal", color: "text-feedback-warning", children: warningText };
+              tmp22 = closure_4(tmp(4833).Text, obj4);
+            }
+            cResult[12] = warningText;
+            cResult[13] = tmp22;
+            tmp20 = tmp22;
+          } else {
+            tmp20 = cResult[13];
+          }
+          if (cResult[14] === tmp4.warningWrapper) {
+            if (cResult[15] === tmp16) {
+              let tmp24;
+              if (cResult[16] === tmp20) {
+                tmp24 = cResult[17];
+              }
+              if (cResult[18] === tmp9) {
+                if (cResult[19] === tmp10) {
+                  let tmp28;
+                  if (cResult[20] === tmp24) {
+                    tmp28 = cResult[21];
+                  }
+                  return tmp28;
+                }
+              }
+              const obj5 = { style: tmp9, children: items };
+              items = [tmp10, tmp24];
+              const tmp30 = closure_6(ReanimatedRexportDefault.View, obj5);
+              cResult[18] = tmp9;
+              cResult[19] = tmp10;
+              cResult[20] = tmp24;
+              cResult[21] = tmp30;
+              tmp28 = tmp30;
+            }
+          }
+          const obj6 = { style: tmp4.warningWrapper, children: items1 };
+          items1 = [tmp16, tmp20];
+          const tmp27 = closure_6(View, obj6);
+          cResult[14] = tmp4.warningWrapper;
+          cResult[15] = tmp16;
+          cResult[16] = tmp20;
+          cResult[17] = tmp27;
+          tmp24 = tmp27;
+        }
+      }
+      const obj7 = { style: tmp4.chatRow, children: items2 };
+      items2 = [chatInput, sendButton];
+      const tmp19 = closure_6(View, obj7);
+      cResult[8] = chatInput;
+      cResult[9] = sendButton;
+      cResult[10] = tmp4.chatRow;
+      cResult[11] = tmp19;
+      tmp16 = tmp19;
+    }
+    let tmp11 = null;
+    if (null != preview) {
+      const obj8 = { children: items3 };
+      items3 = [preview, ];
+      const obj9 = { style: tmp4.footerSeparator };
+      items3[1] = closure_4(View, obj9);
+      tmp11 = closure_6(closure_5, obj8);
+    }
+    cResult[5] = preview;
+    cResult[6] = tmp4.footerSeparator;
+    cResult[7] = tmp11;
+    tmp10 = tmp11;
+  }
+  const items4 = [tmp4.footer, animatedStyle];
+  cResult[2] = animatedStyle;
+  cResult[3] = tmp4.footer;
+  cResult[4] = items4;
+  tmp9 = items4;
+}) : ((arg0) => {
   let avoidKeyboard;
   let c0;
   let chatInput;
@@ -63,8 +192,8 @@ export default function ShareFooterLayout(arg0) {
   };
   let obj2 = { withSpring: require("spring").withSpring, footerPaddingBottom: sum, ON_PRESS_SPRING: require("springPresets").ON_PRESS_SPRING };
   fn.__closure = obj2;
-  fn.__workletHash = 2871405301293;
-  fn.__initData = __initData;
+  fn.__workletHash = 13722943567118;
+  fn.__initData = __initData2;
   const animatedStyle = obj.useAnimatedStyle(fn);
   const obj3 = { style: items, children: items2 };
   items = [tmp.footer, animatedStyle];
@@ -87,9 +216,12 @@ export default function ShareFooterLayout(arg0) {
   const tmp11 = View;
   if (tmp12) {
     const obj8 = { variant: "text-sm/normal", color: "text-feedback-warning", children: warningText };
-    tmp12 = closure_4(tmp4(4832).Text, obj8);
+    tmp12 = closure_4(tmp4(4833).Text, obj8);
   }
   items4[1] = tmp12;
   items2[1] = closure_6(tmp11, obj6);
   return closure_6(View, obj3);
-};
+});
+const result = size.fileFinishedImporting("modules/share/native/ShareFooterLayout.tsx");
+
+export default tmp5;

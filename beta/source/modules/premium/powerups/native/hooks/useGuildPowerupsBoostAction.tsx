@@ -1,20 +1,21 @@
-// Module ID: 15805
-// Function ID: 15806
+// Module ID: 15804
+// Function ID: 15805
 // Name: useGuildPowerupsBoostAction
-// Dependencies: [5, 19, 4729, 4724, 1074, 12034, 6583, 6839, 4732, 4728, 5746, 6823, 2]
-// Exports: default
+// Dependencies: [5, 19, 4731, 4726, 1086, 558, 576, 11944, 6584, 6840, 4734, 4730, 5747, 6824, 2]
 
-// Module 15805 (useGuildPowerupsBoostAction)
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
-import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 12034 */;
+// Module 15804 (useGuildPowerupsBoostAction)
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6584 */;
+import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 11944 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4729 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4724 */;
-import Constants from "Constants" /* 1074 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4731 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4726 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3, dependencyMap, importDefault;
+const require = globalThis.__r;
+let _require, c2, c3, dependencyMap, importDefault;
 
 let c9;
 let metroImportAll;
@@ -23,9 +24,153 @@ let metroRequire;
 let _asyncToGenerator = _asyncToGenerator_mod;
 ({ BoostPurchaseIntent: metroRequire, GuildPowerupType: metroImportDefault } = GuildPowerupsConstants);
 ({ AnalyticsObjects: metroImportAll, AnalyticsObjectTypes: c9 } = Constants);
-let result = size.fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupsBoostAction.tsx");
-
-export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4) {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3, arg4) => {
+  let closure_0;
+  let closure_1;
+  let closure_2;
+  let closure_3;
+  _require = arg0;
+  importDefault = arg1;
+  dependencyMap = arg2;
+  _asyncToGenerator = arg4;
+  let obj = require("react");
+  const cResult = obj.c(8);
+  const tmp2 = useGuildBoostPurchaseHandlerDefault(arg3);
+  const shouldUseMobileWebRedirectCheckout = tmp2.shouldUseMobileWebRedirectCheckout;
+  const handleMobileWebRedirectCheckout = tmp2.handleMobileWebRedirectCheckout;
+  const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
+  if (cResult[0] === arg4) {
+    if (cResult[1] === analyticsLocations) {
+      if (cResult[2] === arg2) {
+        if (cResult[3] === arg0) {
+          if (cResult[4] === handleMobileWebRedirectCheckout) {
+            if (cResult[5] === arg1) {
+              let tmp3;
+              if (cResult[6] === shouldUseMobileWebRedirectCheckout) {
+                tmp3 = cResult[7];
+              }
+              return tmp3;
+            }
+          }
+        }
+      }
+    }
+  }
+  _require = _asyncToGenerator(async (arg0, value) => {
+    let obj10;
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj4 = { value, done: true };
+        return obj4;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        let guildId;
+        let PERK;
+        let availableGuildBoostSlots;
+        c3 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj6 = { value, done: true };
+            return obj6;
+          } else {
+            guildId = tmp2;
+            PERK = undefined;
+            availableGuildBoostSlots = undefined;
+            if (null != availableGuildBoostSlots) {
+              if (c2 > 0) {
+                if (!handleMobileWebRedirectCheckout.hasFetched) {
+                  const tmp6 = globalThis;
+                  let obj2 = closure_2_1(closure_2_2[9]);
+                  const items = [obj2.init(), ];
+                  const obj3 = guildId(closure_2_2[10]);
+                  items[1] = obj3.fetchGuildBoostSlots();
+                  c2 = 1;
+                  c3 = 1;
+                  const obj7 = { value: all(items), done: false };
+                  return obj7;
+                }
+              }
+            }
+            c3 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          let obj = { value, done: true };
+          return obj;
+        }
+        PERK = undefined;
+        if (availableGuildBoostSlots.type === constants2.PERK) {
+          PERK = constants.PERK;
+        }
+        const obj5 = guildId(closure_2_2[11]);
+        availableGuildBoostSlots = obj5.getAvailableGuildBoostSlots(handleMobileWebRedirectCheckout.boostSlots);
+        if (availableGuildBoostSlots.length >= c2) {
+          const obj8 = { guildBoostSlots: availableGuildBoostSlots.slice(0, c2), guildId, intent: PERK };
+          let openTransferModal = guildId(closure_2_2[12]).openTransferModal;
+          const tmp44 = guildId(closure_2_2[12]);
+          const openTransferModalResult = openTransferModal(obj8);
+        } else {
+          const tmp59 = shouldUseMobileWebRedirectCheckout;
+          if (tmp59) {
+            closure_1_5(analyticsLocations, guildId);
+          } else {
+            const obj9 = {
+              source: obj10,
+              analyticsLocations,
+              guildId,
+              onPaymentSuccess() {
+                        const obj = guildId(closure_3_2[11]);
+                        const availableGuildBoostSlots = obj.getAvailableGuildBoostSlots(handleMobileWebRedirectCheckout.boostSlots);
+                        if (availableGuildBoostSlots.length >= c2) {
+                          const obj2 = { guildBoostSlots: availableGuildBoostSlots.slice(0, tmp3), guildId, intent };
+                          const openTransferModal = tmp(tmp2[12]).openTransferModal;
+                          guildId(closure_3_2[12]);
+                          openTransferModal(obj2);
+                        }
+                      }
+            };
+            obj10 = { object: constants3.BUTTON_CTA, objectType: constants4.BUY };
+            const launchGuildBoostFlowOrAlert = guildId(closure_2_2[13]).launchGuildBoostFlowOrAlert;
+            const tmp27 = guildId(closure_2_2[13]);
+            const merged = Object.assign(c3);
+            const result = launchGuildBoostFlowOrAlert(obj9);
+          }
+        }
+      } catch (tmp50) {
+        c3 = 3;
+        throw tmp50;
+      }
+    }
+  });
+  const fn = function() {
+    return closure_0(...arguments);
+  };
+  cResult[0] = arg4;
+  cResult[1] = analyticsLocations;
+  cResult[2] = arg2;
+  cResult[3] = arg0;
+  cResult[4] = handleMobileWebRedirectCheckout;
+  cResult[5] = arg1;
+  cResult[6] = shouldUseMobileWebRedirectCheckout;
+  cResult[7] = fn;
+  tmp3 = fn;
+}) : ((arg0, arg1, arg2, arg3, arg4) => {
   let closure_1;
   let closure_2;
   let closure_3;
@@ -50,7 +195,7 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -72,9 +217,9 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
               if (closure_2 > 0) {
                 if (!handleMobileWebRedirectCheckout.hasFetched) {
                   const tmp6 = globalThis;
-                  let obj2 = availableGuildBoostSlots(c2[7]);
+                  let obj2 = availableGuildBoostSlots(c2[9]);
                   const items = [obj2.init(), ];
-                  const obj3 = tmp2(c2[8]);
+                  const obj3 = tmp2(c2[10]);
                   items[1] = obj3.fetchGuildBoostSlots();
                   c2 = 1;
                   c3 = 1;
@@ -84,7 +229,7 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -98,12 +243,12 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
         if (closure_129_1.type === constants2.PERK) {
           PERK = constants.PERK;
         }
-        const obj5 = tmp2(c2[9]);
+        const obj5 = tmp2(c2[11]);
         availableGuildBoostSlots = obj5.getAvailableGuildBoostSlots(handleMobileWebRedirectCheckout.boostSlots);
         if (availableGuildBoostSlots.length >= closure_129_2) {
           const obj8 = { guildBoostSlots: availableGuildBoostSlots.slice(0, closure_129_2), guildId: closure_129_0, intent: PERK };
-          let openTransferModal = tmp2(c2[10]).openTransferModal;
-          const tmp44 = tmp2(c2[10]);
+          let openTransferModal = tmp2(c2[12]).openTransferModal;
+          const tmp44 = tmp2(c2[12]);
           const openTransferModalResult = openTransferModal(obj8);
         } else {
           const tmp59 = closure_129_4;
@@ -115,19 +260,19 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
               analyticsLocations: closure_129_6,
               guildId: closure_129_0,
               onPaymentSuccess() {
-                        const obj = guildId(closure_2[9]);
+                        const obj = guildId(closure_2[11]);
                         const availableGuildBoostSlots = obj.getAvailableGuildBoostSlots(handleMobileWebRedirectCheckout.boostSlots);
                         if (availableGuildBoostSlots.length >= c2) {
                           const obj2 = { guildBoostSlots: availableGuildBoostSlots.slice(0, tmp3), guildId, intent };
-                          const openTransferModal = tmp(tmp2[10]).openTransferModal;
-                          guildId(closure_2[10]);
+                          const openTransferModal = tmp(tmp2[12]).openTransferModal;
+                          guildId(closure_2[12]);
                           openTransferModal(obj2);
                         }
                       }
             };
             obj10 = { object: constants3.BUTTON_CTA, objectType: constants4.BUY };
-            const launchGuildBoostFlowOrAlert = tmp2(c2[11]).launchGuildBoostFlowOrAlert;
-            const tmp27 = tmp2(c2[11]);
+            const launchGuildBoostFlowOrAlert = tmp2(c2[13]).launchGuildBoostFlowOrAlert;
+            const tmp27 = tmp2(c2[13]);
             const merged = Object.assign(closure_129_3);
             const result = launchGuildBoostFlowOrAlert(obj9);
           }
@@ -138,4 +283,7 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
       }
     }
   }), items);
-};
+});
+let result = size.fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupsBoostAction.tsx");
+
+export default tmp4;

@@ -1,10 +1,10 @@
-// Module ID: 9674
-// Function ID: 9675
+// Module ID: 10368
+// Function ID: 10369
 // Name: UsersFastListConstants
-// Dependencies: [576, 2]
+// Dependencies: [588, 2]
 
-// Module 9674 (UsersFastListConstants)
-import nativeDefault from "native" /* 576 */;
+// Module 10368 (UsersFastListConstants)
+import nativeDefault from "native" /* 588 */;
 import size from "module_2" /* 2 */;
 
 const PX_24 = nativeDefault.space.PX_24;

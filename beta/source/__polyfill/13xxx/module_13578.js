@@ -1,12 +1,14 @@
 // Module ID: 13578
 // Function ID: 13579
-// Dependencies: [13576]
+// Dependencies: [13561]
 
 // Module 13578
-import _mod13576 from "module_13576" /* 13576 */;
+import _mod13561 from "module_13561" /* 13561 */;
 
 
-export default (arr, arg1) => {
-  let closure_0 = arg1;
-  return arr.sort((arg0, arg1) => _mod13576(arg1, arg0, closure_0));
+export default (arg0, arg1, arg2) => {
+  const obj = new _mod13561(arg0, arg2);
+  const tmp = new _mod13561(arg1, arg2);
+  const tmp2 = obj.compare(tmp) || obj.compareBuild(tmp);
+  return tmp2;
 };

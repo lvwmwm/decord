@@ -1,13 +1,13 @@
-// Module ID: 17729
-// Function ID: 17730
+// Module ID: 17731
+// Function ID: 17732
 // Name: i18nMessagesProvider
-// Dependencies: [17, 1364, 17730, 1154, 1115, 2]
+// Dependencies: [17, 1370, 17732, 1166, 1127, 2]
 // Exports: default
 
-// Module 17729 (i18nMessagesProvider)
+// Module 17731 (i18nMessagesProvider)
 import react_native from "react-native" /* 17 */;
-import react_nativeDefault from "react-native" /* 17730 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+import react_nativeDefault from "react-native" /* 17732 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = react_native.NativeModules;

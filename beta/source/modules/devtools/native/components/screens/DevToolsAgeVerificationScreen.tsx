@@ -1,24 +1,25 @@
-// Module ID: 15310
-// Function ID: 15311
+// Module ID: 15298
+// Function ID: 15299
 // Name: DevToolsAgeVerificationScreen
-// Dependencies: [5, 19, 17, 21, 4836, 576, 7866, 7859, 4528, 7861, 1613, 5999, 5917, 6377, 5924, 2]
-// Exports: default
+// Dependencies: [5, 19, 17, 21, 4837, 588, 7870, 7863, 4531, 7865, 558, 576, 1619, 5916, 6374, 5923, 5997, 2]
 
-// Module 15310 (DevToolsAgeVerificationScreen)
+// Module 15298 (DevToolsAgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import TableRow3 from "TableRow" /* 5917 */;
-import TableRowArrow from "TableRowArrow" /* 5924 */;
-import TableRowGroup2 from "TableRowGroup" /* 5999 */;
-import KeyIcon from "KeyIcon" /* 6377 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7861 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7866 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import TableRow3 from "TableRow" /* 5916 */;
+import TableRowArrow from "TableRowArrow" /* 5923 */;
+import TableRowGroup2 from "TableRowGroup" /* 5997 */;
+import KeyIcon from "KeyIcon" /* 6374 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7863 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7865 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7870 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -43,7 +44,7 @@ let obj = function _showAgeVerificationTestModal() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -100,7 +101,7 @@ let obj = function _showAgeVerificationTestModal() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp12) {
         let closure_2 = tmp12;
@@ -123,9 +124,81 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_16 };
 let closure_7 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsAgeVerificationScreen.tsx");
-
-export default function DevToolsAgeVerificationScreen() {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let items;
+  let tmp6;
+  obj = react2;
+  const cResult = obj.c(10);
+  const tmp4 = closure_7();
+  const sum = tmp4.content.padding + useSafeAreaInsetsDefault().bottom;
+  if (cResult[0] !== sum) {
+    let obj2 = { paddingBottom: sum };
+    cResult[0] = sum;
+    cResult[1] = obj2;
+    tmp6 = obj2;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === tmp4.content) {
+    let tmp7;
+    let tmp9;
+    let tmp13;
+    if (cResult[3] === tmp6) {
+      tmp7 = cResult[4];
+    }
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = { label: "Launch Age Verification Test Tool", onPress: showAgeVerificationTestModal, icon: hasOwnProperty(KeyIcon.KeyIcon, {}), trailing: hasOwnProperty(TableRowArrow.TableRowArrow, {}) };
+      const TableRow = tmp(5916).TableRow;
+      const tmp12 = hasOwnProperty(TableRow, obj3);
+      cResult[5] = tmp12;
+      tmp9 = tmp12;
+    } else {
+      tmp9 = cResult[5];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj4 = { title: "Quick Actions", hasIcons: true, children: items };
+      items = [tmp9, ];
+      const TableRowGroup = tmp(5997).TableRowGroup;
+      const obj5 = {
+        label: "Launch Age Verification Modal",
+        onPress() {
+              obj = AgeVerificationActionCreatorsDefault;
+              const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS };
+              return obj.showAgeVerificationGetStartedModal(obj2);
+            },
+        icon: hasOwnProperty(KeyIcon.KeyIcon, {}),
+        trailing: hasOwnProperty(TableRowArrow.TableRowArrow, {})
+      };
+      const TableRow2 = tmp(5916).TableRow;
+      items[1] = hasOwnProperty(TableRow2, obj5);
+      const tmp16 = metroRequire(TableRowGroup, obj4);
+      cResult[6] = tmp16;
+      tmp13 = tmp16;
+    } else {
+      tmp13 = cResult[6];
+    }
+    if (cResult[7] === tmp4.container) {
+      let tmp17;
+      if (cResult[8] === tmp7) {
+        tmp17 = cResult[9];
+      }
+      return tmp17;
+    }
+    const obj6 = { style: tmp4.container, contentContainerStyle: tmp7, children: tmp13 };
+    const tmp20 = hasOwnProperty(ScrollView, obj6);
+    cResult[7] = tmp4.container;
+    cResult[8] = tmp7;
+    cResult[9] = tmp20;
+    tmp17 = tmp20;
+  }
+  const items1 = [tmp4.content, tmp6];
+  cResult[2] = tmp4.content;
+  cResult[3] = tmp6;
+  cResult[4] = items1;
+  tmp7 = items1;
+}) : (() => {
   let TableRowGroup;
   let items;
   let items1;
@@ -153,4 +226,7 @@ export default function DevToolsAgeVerificationScreen() {
   const TableRow2 = TableRow3.TableRow;
   items1[1] = hasOwnProperty(TableRow2, obj5);
   return hasOwnProperty(ScrollView, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsAgeVerificationScreen.tsx");
+
+export default tmp5;

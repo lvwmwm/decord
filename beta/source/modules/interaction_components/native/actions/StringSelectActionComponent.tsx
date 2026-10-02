@@ -1,14 +1,14 @@
-// Module ID: 15312
-// Function ID: 15313
+// Module ID: 15300
+// Function ID: 15301
 // Name: StringSelectActionComponent
-// Dependencies: [19, 21, 5060, 7569, 38, 1979, 15313, 4800, 11299, 1981, 2]
+// Dependencies: [19, 21, 5061, 7573, 38, 1985, 15301, 4801, 11173, 1987, 2]
 // Exports: default
 
-// Module 15312 (StringSelectActionComponent)
+// Module 15300 (StringSelectActionComponent)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 5060 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 5061 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ export default function StringSelectActionComponent(type) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { selectionActionComponent, labelComponent, channelId: componentStateContext.channelId, containerId: customId, onSubmit: executeStateUpdate, allowEmpty: obj2.canSelectBeEmpty(selectionActionComponent, "modal") };
-      const tmp2 = asyncRequire(11299, dependencyMap.paths);
+      const tmp2 = asyncRequire(11173, dependencyMap.paths);
       const combined = "StringSelectComponentActionSheet:" + customId;
       obj2 = InteractionComponentUtils;
       openLazy(tmp2, combined, obj);

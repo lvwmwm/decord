@@ -1,8 +1,8 @@
-// Module ID: 16761
-// Function ID: 16762
+// Module ID: 16763
+// Function ID: 16764
 // Dependencies: [2]
 
-// Module 16761
+// Module 16763
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/display_name_styles/dns_flywheel_halfsheet_animated_2x.png.js");

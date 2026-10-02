@@ -1,33 +1,52 @@
-// Module ID: 14379
-// Function ID: 14380
+// Module ID: 14367
+// Function ID: 14368
 // Name: SyncContactsSetting
-// Dependencies: [5593, 1372, 7417, 1074, 12177, 14380, 11006, 1115, 2]
+// Dependencies: [5594, 1378, 7421, 1086, 558, 576, 12070, 14368, 10874, 1127, 2]
 
-// Module 14379 (SyncContactsSetting)
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12177 */;
-import ContactSyncSettings from "ContactSyncSettings" /* 14380 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
-import UserStore from "UserStore" /* 1372 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 14367 (SyncContactsSetting)
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12070 */;
+import ContactSyncSettings from "ContactSyncSettings" /* 14368 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const PlatformTypes = Constants.PlatformTypes;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  const obj2 = ContactSyncUtils;
+  const contactSyncAccount = obj2.useContactSyncAccount();
+  if (cResult[0] !== contactSyncAccount) {
+    const tmpResult = ContactSyncUtils;
+    const isContactSyncEnabledResult = tmpResult.isContactSyncEnabled(contactSyncAccount);
+    cResult[0] = contactSyncAccount;
+    cResult[1] = isContactSyncEnabledResult;
+    tmp5 = isContactSyncEnabledResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5;
+}) : (() => {
+  const obj = ContactSyncUtils;
+  const contactSyncAccount = obj.useContactSyncAccount();
+  const obj2 = ContactSyncUtils;
+  return obj2.isContactSyncEnabled(contactSyncAccount);
+});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.uSvEy7);
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: function useContactSyncSettingValue() {
-    const obj = ContactSyncUtils;
-    const contactSyncAccount = obj.useContactSyncAccount();
-    const obj2 = ContactSyncUtils;
-    return obj2.isContactSyncEnabled(contactSyncAccount);
-  },
+  useValue: tmp2,
   onValueChange: function onContactSyncSettingValueChange(arg0) {
     const localAccount = ConnectedAccountsStore.getLocalAccount(PlatformTypes.CONTACTS);
     const currentUser = UserStore.getCurrentUser();

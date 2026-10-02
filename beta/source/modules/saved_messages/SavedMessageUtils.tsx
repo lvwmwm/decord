@@ -1,18 +1,19 @@
-// Module ID: 11211
-// Function ID: 11212
+// Module ID: 11083
+// Function ID: 11084
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 2049, 2045, 1074, 1115, 4421, 504, 4849, 6665, 2]
-// Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
+// Dependencies: [5, 19, 2055, 2051, 1086, 1127, 4424, 558, 576, 504, 4850, 6666, 2]
+// Exports: savedMessageJumpToMessage, useDueInString
 
-// Module 11211 (SavedMessageUtils)
-import intl2 from "intl" /* 1115 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import _modDef4421 from "module_4421" /* 4421 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
+// Module 11083 (SavedMessageUtils)
+import intl2 from "intl" /* 1127 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import _modDef4424 from "module_4424" /* 4424 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4850 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +38,7 @@ let obj = function _savedMessageJumpToMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -82,13 +83,13 @@ let obj = function _savedMessageJumpToMessage() {
               if (null == type2.recipients) {
                 c5 = 0;
                 c7 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               } else if (type2.recipients.length > 1) {
                 c5 = 0;
                 c7 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               } else {
-                type = closure_131_1(closure_131_2[8]);
+                type = closure_131_1(closure_131_2[10]);
                 const recipients = type2.recipients;
                 c6 = 3;
                 c7 = 1;
@@ -108,14 +109,14 @@ let obj = function _savedMessageJumpToMessage() {
           }
           let guildId;
           const CHANNEL = closure_131_8.CHANNEL;
-          const tmp17 = closure_131_1(closure_131_2[9]);
+          const tmp17 = closure_131_1(closure_131_2[11]);
           if (type != null) {
             guildId = type.getGuildId();
           }
           type = CHANNEL(guildId, closure_0.saveData.channelId, closure_0.saveData.messageId);
           tmp17(type, { openChannel: true });
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp26) {
           closure_4 = tmp26;
           if (0 === c5) {
@@ -133,6 +134,78 @@ let obj = function _savedMessageJumpToMessage() {
 const UnknownChannelRecord = ChannelRecord.UnknownChannelRecord;
 ({ ChannelTypes: metroImportDefault, Routes: metroImportAll } = Constants);
 obj = { LONG: 0, [0]: "LONG", SHORT: 1, [1]: "SHORT" };
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(saveData) {
+  let first;
+  let intl;
+  let tmp6;
+  _require = saveData;
+  obj = require("react");
+  const cResult = obj.c(6);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== saveData.saveData.channelId) {
+    const fn = function l() {
+      return ChannelStore.getChannel(saveData.saveData.channelId);
+    };
+    cResult[1] = saveData.saveData.channelId;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = require("get initialized");
+  let stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (null == stateFromStores) {
+    if (null != saveData.message) {
+      const guildId = saveData.saveData.guildId;
+      if (cResult[3] === saveData.saveData.channelId) {
+        let tmp8;
+        if (cResult[4] === guildId) {
+          tmp8 = cResult[5];
+        }
+        stateFromStores = tmp8;
+      }
+      const obj2 = { id: saveData.saveData.channelId, guild_id: guildId, type: constants.UNKNOWN, name: intl.string(require("intl").t.J90oLW) };
+      intl = tmp(1127).intl;
+      const self = this;
+      const self2 = this;
+      const tmp12 = new UnknownChannelRecord(obj2);
+      cResult[3] = saveData.saveData.channelId;
+      cResult[4] = guildId;
+      cResult[5] = tmp12;
+      tmp8 = tmp12;
+    }
+  }
+  return stateFromStores;
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  obj = require("get initialized");
+  const items = [ChannelStore];
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(closure_0.saveData.channelId));
+  const items1 = [stateFromStores, arg0];
+  return react.useMemo(function() {
+    let intl;
+    let tmp = stateFromStores;
+    if (null == stateFromStores) {
+      let tmp7;
+      if (null != closure_0.message) {
+        obj = { id: closure_0.saveData.channelId, guild_id: closure_0.saveData.guildId, type: metroImportDefault.UNKNOWN, name: intl.string(intl2.t.J90oLW) };
+        intl = intl2.intl;
+        const self = this;
+        const self2 = this;
+        tmp7 = new UnknownChannelRecord(obj);
+      }
+      tmp = tmp7;
+    }
+    return tmp;
+  }, items1);
+});
 const result = size.fileFinishedImporting("modules/saved_messages/SavedMessageUtils.tsx");
 
 export const DueInStringTypes = obj;
@@ -159,47 +232,25 @@ export const useDueInString = function useDueInString(arg0) {
       H4gnX9 = intl2.t.H4gnX9;
     }
     if (type === tmp10.LONG) {
-      haia16 = tmp(1115).t.haia16;
+      haia16 = tmp(1127).t.haia16;
     } else {
-      haia16 = tmp(1115).t["Uq7Y+7"];
+      haia16 = tmp(1127).t["Uq7Y+7"];
     }
     if (now > dueAt) {
       H4gnX9 = haia16;
     }
     obj = { dueInText: formatToPlainString(H4gnX9, obj2), isOverdue: now > dueAt };
-    const intl = tmp(1115).intl;
+    const intl = tmp(1127).intl;
     formatToPlainString = intl.formatToPlainString;
     obj2 = { duration: durationResult.humanize() };
-    const duration = _modDef4421.duration;
-    _modDef4421;
+    const duration = _modDef4424.duration;
+    _modDef4424;
     const time = dueAt.getTime();
     durationResult = duration(time - now.getTime(), "millisecond");
     return obj;
   }
 };
-export const useSavedMessageChannel = function useSavedMessageChannel(savedMessage) {
-  _require = savedMessage;
-  obj = require("get initialized");
-  const items = [ChannelStore];
-  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(savedMessage.saveData.channelId));
-  const items1 = [stateFromStores, savedMessage];
-  return react.useMemo(function() {
-    let intl;
-    let tmp = stateFromStores;
-    if (null == stateFromStores) {
-      let tmp7;
-      if (null != savedMessage.message) {
-        obj = { id: savedMessage.saveData.channelId, guild_id: savedMessage.saveData.guildId, type: metroImportDefault.UNKNOWN, name: intl.string(intl2.t.J90oLW) };
-        intl = intl2.intl;
-        const self = this;
-        const self2 = this;
-        tmp7 = new UnknownChannelRecord(obj);
-      }
-      tmp = tmp7;
-    }
-    return tmp;
-  }, items1);
-};
+export const useSavedMessageChannel = tmp3;
 export const savedMessageJumpToMessage = function savedMessageJumpToMessage() {
   return obj(...arguments);
 };

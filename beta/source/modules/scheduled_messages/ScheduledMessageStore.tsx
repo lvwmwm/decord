@@ -1,11 +1,11 @@
-// Module ID: 11695
-// Function ID: 11696
+// Module ID: 11587
+// Function ID: 11588
 // Name: ScheduledMessageStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 11695 (ScheduledMessageStore)
+// Module 11587 (ScheduledMessageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 function handleScheduledMessageRemovalStart(scheduledMessageId) {

@@ -1,29 +1,41 @@
 // Module ID: 1526
 // Function ID: 1527
-// Dependencies: [19, 21, 1527, 1529]
-// Exports: NavigationProvider
+// Dependencies: [19, 21]
+// Exports: EnsureSingleNavigator
 
 // Module 1526
 import Fragment from "Fragment" /* 21 */;
-import _mod1527 from "module_1527" /* 1527 */;
 import react from "react" /* 19 */;
 
 const jsx = Fragment.jsx;
-let context = react.createContext(undefined);
+const context = react.createContext(undefined);
 
-export const NavigationRouteContext = context;
-export const NamedRouteContextListContext = react.createContext(undefined);
-export const NavigationProvider = function NavigationProvider(route) {
-  let children;
-  route = route.route;
-  ({ navigation, children } = route);
-  context = react.useContext(_mod1527.IsFocusedContext);
-  let tmp5 = null != context;
-  const context1 = react.useContext(_mod1527.FocusedRouteKeyContext);
-  if (tmp5) {
-    tmp5 = !context;
-  }
-  const Provider = context.Provider;
-  const Provider2 = tmp(1529).NavigationContext.Provider;
-  return <Provider value={route}>{null}</Provider>;
+export const SingleNavigatorContext = context;
+export const EnsureSingleNavigator = function EnsureSingleNavigator(children) {
+  children = children.children;
+  let closure_0 = react.useRef(undefined);
+  return <context.Provider value={react.useMemo(() => {
+    let ref;
+    return {
+      register(current) {
+        current = ref.current;
+        const tmp = ref;
+        if (undefined !== current) {
+          if (current !== current) {
+            const _Error = Error;
+            const self = this;
+            const self2 = this;
+            const error = new Error("Another navigator is already registered for this container. You likely have multiple navigators under a single \"NavigationContainer\" or \"Screen\". Make sure each navigator is under a separate \"Screen\" container. See https://reactnavigation.org/docs/nesting-navigators for a guide on nesting.");
+            throw error;
+          }
+        }
+        tmp.current = current;
+      },
+      unregister(arg0) {
+        if (arg0 === ref.current) {
+          tmp.current = undefined;
+        }
+      }
+    };
+  }, [])}>{children}</context.Provider>;
 };

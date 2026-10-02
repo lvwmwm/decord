@@ -1,29 +1,29 @@
-// Module ID: 9031
-// Function ID: 9032
+// Module ID: 9008
+// Function ID: 9009
 // Name: AddMembersActionSheet
-// Dependencies: [5, 109, 32, 19, 17, 2108, 2102, 2067, 1372, 7849, 1085, 21, 4836, 576, 4474, 6402, 4820, 504, 9016, 4541, 1115, 1177, 4832, 9032, 6045, 8179, 9036, 5831, 9041, 4989, 4981, 9017, 4527, 4800, 6571, 6570, 5281, 2]
+// Dependencies: [5, 109, 32, 19, 17, 2111, 2105, 2073, 1378, 7853, 1097, 21, 4837, 588, 4477, 6399, 4821, 504, 8993, 4545, 1127, 1189, 4833, 9009, 6038, 8176, 9013, 5832, 9018, 4990, 4982, 8994, 4530, 4801, 6572, 6571, 5282, 2]
 // Exports: default
 
-// Module 9031 (AddMembersActionSheet)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl9 from "intl" /* 1115 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
-import RegexUtilsDefault from "RegexUtils" /* 4820 */;
-import GuildUtilsDefault from "GuildUtils" /* 5831 */;
+// Module 9008 (AddMembersActionSheet)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1097 */;
+import intl9 from "intl" /* 1127 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4477 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4545 */;
+import RegexUtilsDefault from "RegexUtils" /* 4821 */;
+import GuildUtilsDefault from "GuildUtils" /* 5832 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import UserStore from "UserStore" /* 1372 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7849 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildRoleStore from "GuildRoleStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import UserStore from "UserStore" /* 1378 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7853 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet, c4, c5, closure_1, closure_12, dependencyMap, row, user;
@@ -41,7 +41,7 @@ let obj4;
 let obj5;
 let size;
 let tmp10;
-const ChannelPermissionsUtilsAll = tmp10(9016);
+const ChannelPermissionsUtilsAll = tmp10(8993);
 function _toPropertyKey(obj) {
   let StringResult = obj;
   if (typeof obj === "object") {
@@ -133,7 +133,7 @@ class AddMembersBody {
     const tmp8 = pendingAdditions;
     let obj2 = { isKeyboardAwareOnAndroid: !inActionSheet };
     let tmp10 = importAll;
-    const insets = pendingAdditions(6402)(obj2).insets;
+    const insets = pendingAdditions(6399)(obj2).insets;
     let obj3 = PermissionUtilsAll;
     let canEveryoneRoleResult = obj3.canEveryoneRole(Permissions.ADMINISTRATOR, guild);
     const tmp12 = guild;
@@ -172,16 +172,16 @@ class AddMembersBody {
       }
     }, items3);
     if (items2.length > 0) {
-      let intl = tmp12(1115).intl;
-      const items4 = [intl.string(tmp12(1115).t["LPJmL/"])];
+      let intl = tmp12(1127).intl;
+      const items4 = [intl.string(tmp12(1127).t["LPJmL/"])];
       let items5 = items4;
     } else {
       items5 = [];
     }
     const items6 = [...items2];
     if (membersRows.length > 0) {
-      const intl2 = tmp12(1115).intl;
-      const items7 = [intl2.string(tmp12(1115).t["9Oq93m"])];
+      const intl2 = tmp12(1127).intl;
+      const items7 = [intl2.string(tmp12(1127).t["9Oq93m"])];
       items8 = items7;
     } else {
       items8 = [];
@@ -199,13 +199,13 @@ class AddMembersBody {
     }
     const items9 = [];
     closure_12 = sum1 + membersRows.length - 1;
-    let obj7 = { title: intl3.string(tmp12(1115).t["LPJmL/"]), data: items2 };
+    let obj7 = { title: intl3.string(tmp12(1127).t["LPJmL/"]), data: items2 };
     const push = items9.push;
-    intl3 = tmp12(1115).intl;
+    intl3 = tmp12(1127).intl;
     push(obj7);
     const push2 = items9.push;
-    const obj8 = { title: intl4.string(tmp12(1115).t["9Oq93m"]), data: membersRows };
-    intl4 = tmp12(1115).intl;
+    const obj8 = { title: intl4.string(tmp12(1127).t["9Oq93m"]), data: membersRows };
+    intl4 = tmp12(1127).intl;
     push2(obj8);
     const values = Object.values(pendingAdditions);
     const mapped = values.map((row) => {
@@ -215,15 +215,15 @@ class AddMembersBody {
       return obj;
     });
     if (inActionSheet) {
-      BottomSheetScrollView = tmp12(6045).BottomSheetScrollView;
+      BottomSheetScrollView = tmp12(6038).BottomSheetScrollView;
     } else {
       BottomSheetScrollView = num3;
     }
-    const tmp12Result = tmp12(8179);
+    const tmp12Result = tmp12(8176);
     const obj9 = { style: tmp4.inputContainer, children: closure_17(tmp8Result, obj10) };
     obj10 = {
-      accessibilityLabel: intl5.string(tmp12(1115).t["5h0QOP"]),
-      placeholder: intl6.string(tmp12(1115).t.TVZdKh),
+      accessibilityLabel: intl5.string(tmp12(1127).t["5h0QOP"]),
+      placeholder: intl6.string(tmp12(1127).t.TVZdKh),
       tags: mapped,
       onChangeText(str) {
         str = str.trim();
@@ -248,18 +248,18 @@ class AddMembersBody {
       }
     };
     const tmp31 = inActionSheet ? tmp12Result.BottomSheetFlashList : tmp12Result.FlashList;
-    tmp8Result = tmp8(9036);
-    intl5 = tmp12(1115).intl;
-    intl6 = tmp12(1115).intl;
+    tmp8Result = tmp8(9013);
+    intl5 = tmp12(1127).intl;
+    intl6 = tmp12(1127).intl;
     const items10 = [closure_17(c8, obj9), , ];
     const tmp32 = closure_19;
     const tmp33 = closure_18;
     const tmp35 = c8;
     if (canEveryoneRoleResult) {
       const obj11 = { style: tmp4.adminWarning, children: closure_17(HelpMessage, obj12) };
-      obj12 = { messageType: tmp12(1177).HelpMessageTypes.WARNING, children: intl7.string(tmp12(1115).t["5f3HIC"]) };
-      HelpMessage = tmp12(1177).HelpMessage;
-      intl7 = tmp12(1115).intl;
+      obj12 = { messageType: tmp12(1189).HelpMessageTypes.WARNING, children: intl7.string(tmp12(1127).t["5f3HIC"]) };
+      HelpMessage = tmp12(1189).HelpMessage;
+      intl7 = tmp12(1127).intl;
       canEveryoneRoleResult = tmp34(tmp35, obj11);
     }
     items10[1] = canEveryoneRoleResult;
@@ -269,10 +269,10 @@ class AddMembersBody {
         if (0 === membersRows.length) {
           const obj13 = { children: closure_17(EmptyState, obj14) };
           const merged1 = Object.assign(merged);
-          obj14 = { Illustration: tmp12(9041).NoResultsAlt, style: null, bodyStyle: null, body: intl8.format(tmp12(1115).t.ErpIY3, obj15) };
-          EmptyState = tmp12(1177).EmptyState;
+          obj14 = { Illustration: tmp12(9018).NoResultsAlt, style: null, bodyStyle: null, body: intl8.format(tmp12(1127).t.ErpIY3, obj15) };
+          EmptyState = tmp12(1189).EmptyState;
           ({ emptyState: obj19.style, emptyStateText: obj19.bodyStyle } = tmp4);
-          intl8 = tmp12(1115).intl;
+          intl8 = tmp12(1127).intl;
           obj15 = { query: str };
           tmp34Result = tmp34(BottomSheetScrollView, obj13);
         }
@@ -284,7 +284,7 @@ class AddMembersBody {
     const obj17 = {
       extraData: pendingAdditions,
       data: items6,
-      contentContainerStyle: { paddingHorizontal: tmp8(576).space.PX_16, paddingBottom: tmp8(576).space.PX_16 + insets.bottom },
+      contentContainerStyle: { paddingHorizontal: tmp8(588).space.PX_16, paddingBottom: tmp8(588).space.PX_16 + insets.bottom },
       renderItem: function renderRow(item) {
         let tmp14Result;
         let tmp4;
@@ -363,7 +363,7 @@ class AddMembersBody {
       keyboardShouldPersistTaps: "handled"
     };
     const merged2 = Object.assign(merged);
-    ({ paddingHorizontal: tmp8(576).space.PX_16, paddingBottom: tmp8(576).space.PX_16 + insets.bottom });
+    ({ paddingHorizontal: tmp8(588).space.PX_16, paddingBottom: tmp8(588).space.PX_16 + insets.bottom });
     tmp34Result = tmp34(tmp31, obj17);
   }
 }
@@ -412,7 +412,7 @@ export default function AddMembersActionSheet(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -479,7 +479,7 @@ export default function AddMembersActionSheet(channel) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           let closure_2 = tmp16;
@@ -510,7 +510,7 @@ export default function AddMembersActionSheet(channel) {
     }
     return getGuild(guildId);
   });
-  let str = pendingAdditions(4989)(channel, true);
+  let str = pendingAdditions(4990)(channel, true);
   if (str == null) {
     str = "";
   }
@@ -522,23 +522,23 @@ export default function AddMembersActionSheet(channel) {
     let num = 0;
     const tmp11 = 0 === Object.keys(pendingAdditions).length;
     let tmp12 = closure_17;
-    BottomSheet = tmp5(6571).BottomSheet;
-    let obj2 = { title: intl3.string(tmp5(1115).t.dMJ3Y6), subtitle: str, trailing: null };
-    const BottomSheetTitleHeader = tmp5(6570).BottomSheetTitleHeader;
-    intl3 = tmp5(1115).intl;
+    BottomSheet = tmp5(6572).BottomSheet;
+    let obj2 = { title: intl3.string(tmp5(1127).t.dMJ3Y6), subtitle: str, trailing: null };
+    const BottomSheetTitleHeader = tmp5(6571).BottomSheetTitleHeader;
+    intl3 = tmp5(1127).intl;
     if (canSkip) {
       let obj7;
       if (tmp11) {
         let obj3 = {
           size: "sm",
-          text: intl2.string(tmp5(1115).t["5Wxrcd"]),
+          text: intl2.string(tmp5(1127).t["5Wxrcd"]),
           onPress() {
                   obj = first(dependencyMap[33]);
                   obj.hideActionSheet();
                 },
           variant: "secondary"
         };
-        intl2 = tmp5(1115).intl;
+        intl2 = tmp5(1127).intl;
         obj7 = obj3;
       }
       let obj4 = { scrollable: true, header: tmp12(BottomSheetTitleHeader, obj2), startExpanded: true, children: tmp12(closure_8, obj5) };
@@ -550,14 +550,14 @@ export default function AddMembersActionSheet(channel) {
     }
     obj7 = {
       size: "sm",
-      text: intl.string(tmp5(1115).t.OYkgVk),
+      text: intl.string(tmp5(1127).t.OYkgVk),
       onPress: function handleAddPressed() {
           return obj(...arguments);
         },
       variant: str2,
       disabled: tmp11
     };
-    intl = tmp5(1115).intl;
+    intl = tmp5(1127).intl;
     str2 = "primary";
     if (tmp11) {
       str2 = "secondary";

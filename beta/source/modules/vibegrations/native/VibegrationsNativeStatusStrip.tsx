@@ -1,25 +1,26 @@
-// Module ID: 16399
-// Function ID: 16400
+// Module ID: 16401
+// Function ID: 16402
 // Name: VibegrationsNativeStatusStrip
-// Dependencies: [32, 19, 17, 13936, 21, 4836, 576, 16393, 13935, 13939, 1115, 4800, 16400, 5435, 3715, 16401, 4832, 4787, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 13938, 21, 4837, 588, 558, 576, 16395, 13937, 13941, 1127, 4801, 16402, 5436, 3718, 16403, 4833, 4788, 2]
 
-// Module 16399 (VibegrationsNativeStatusStrip)
+// Module 16401 (VibegrationsNativeStatusStrip)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import _modDef3715 from "module_3715" /* 3715 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
-import AILoaderConstants from "AILoaderConstants" /* 13936 */;
-import VibegrationsStatusLabels from "VibegrationsStatusLabels" /* 16393 */;
-import VibegrationsUsageSheet from "VibegrationsUsageSheet" /* 16400 */;
-import VibegrationsNativeTurnTimerDefault from "VibegrationsNativeTurnTimer" /* 16401 */;
+import nativeDefault from "native" /* 588 */;
+import _modDef3718 from "module_3718" /* 3718 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4801 */;
+import AILoaderConstants from "AILoaderConstants" /* 13938 */;
+import VibegrationsStatusLabels from "VibegrationsStatusLabels" /* 16395 */;
+import VibegrationsUsageSheet from "VibegrationsUsageSheet" /* 16402 */;
+import VibegrationsNativeTurnTimerDefault from "VibegrationsNativeTurnTimer" /* 16403 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const VibegrationsUsageSheetDefault = VibegrationsUsageSheet;
+let line, obj1, projectId, showActionSheetResult;
 
 let metroImportAll;
 let metroImportDefault;
@@ -27,7 +28,429 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-function ThinkingIndicator(line) {
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+const View = react_native.View;
+const AI_LOADER_CYCLE_MS = AILoaderConstants.AI_LOADER_CYCLE_MS;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { row: obj2, activity: obj3, live: { flexShrink: 1 }, indicator: obj4, label: { flexShrink: 1 }, runes: obj5 };
+obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_4, minHeight: nativeDefault.space.PX_4 + nativeDefault.space.PX_24 };
+createStyles = createStyles.createStyles;
+obj3 = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, minHeight: nativeDefault.space.PX_16 };
+obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, alignSelf: "flex-start" };
+obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+let closure_9 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((line) => {
+  let closure_3;
+  let first;
+  let text;
+  let tmp11;
+  let tmp12;
+  let tmp14;
+  let tmp15;
+  let tmp17;
+  let tmp18;
+  let tmp8;
+  let tmp9;
+  const tmp = line;
+  let obj = line(text[8]);
+  const cResult = obj.c(22);
+  line = line.line;
+  const rotating = line.rotating;
+  const tmp4 = closure_9();
+  [text, _slicedToArray] = react.useState(line);
+  react = react.useRef(line);
+  const ref2 = react.useRef(text);
+  const ref = react.useRef(null);
+  if (cResult[0] !== line) {
+    const fn = function y() {
+      ref.current = line;
+    };
+    const items = [line];
+    let num = 0;
+    cResult[0] = line;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp9 = items;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[1];
+    tmp9 = cResult[2];
+  }
+  const effect = obj2.useEffect(tmp8, tmp9);
+  if (cResult[3] !== text) {
+    const fn2 = function f() {
+      ref2.current = current;
+    };
+    const items1 = [text];
+    cResult[3] = text;
+    cResult[4] = fn2;
+    cResult[5] = items1;
+    tmp12 = items1;
+    tmp11 = fn2;
+  } else {
+    tmp11 = cResult[4];
+    tmp12 = cResult[5];
+  }
+  const effect1 = obj2.useEffect(tmp11, tmp12);
+  let closure_7 = obj2.useRef(rotating);
+  let closure_8 = obj2.useRef(0);
+  if (cResult[6] !== rotating) {
+    const fn3 = function k() {
+      closure_7.current = rotating;
+      let isRecallingLineResult = !rotating;
+      if (isRecallingLineResult) {
+        const obj = VibegrationsStatusLabels;
+        isRecallingLineResult = obj.isRecallingLine(ref2.current);
+      }
+      if (isRecallingLineResult) {
+        closure_3(ref.current);
+      }
+    };
+    const items2 = [rotating];
+    cResult[6] = rotating;
+    cResult[7] = fn3;
+    cResult[8] = items2;
+    tmp15 = items2;
+    tmp14 = fn3;
+  } else {
+    tmp14 = cResult[7];
+    tmp15 = cResult[8];
+  }
+  const effect2 = obj2.useEffect(tmp14, tmp15);
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class O {
+      constructor() {
+        closure_0 = null;
+        beat = function beat() {
+          if (ref4.current) {
+            let num = 0;
+            const obj = line(first[9]);
+            const tmp8 = line;
+            const tmp9 = first;
+            if (obj.isRecallingLine(ref2.current)) {
+              num = tmp7.current + 1;
+            }
+            ref.current = num;
+            const tmp8Result = tmp8(tmp9[9]);
+            closure_1_3(tmp8Result.recallingLine(ref.current));
+          } else if (ref.current !== ref2.current) {
+            closure_1_3(tmp.current);
+          } else {
+            const current = ref3.current;
+            if (current != null) {
+              current.play();
+            }
+          }
+        };
+        closure_2 = setTimeout(() => {
+          beat();
+          const interval = setInterval(beat, AI_LOADER_CYCLE_MS);
+        }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => {
+          clearTimeout(closure_2);
+          if (null != closure_0) {
+            const _clearInterval = clearInterval;
+            clearInterval(closure_0);
+          }
+        };
+      }
+    }
+    const items3 = [];
+    cResult[9] = O;
+    cResult[10] = items3;
+    tmp18 = items3;
+    tmp17 = O;
+  } else {
+    class O {
+      constructor() {
+        closure_0 = null;
+        beat = function beat() {
+          if (ref4.current) {
+            let num = 0;
+            const obj = line(first[9]);
+            const tmp8 = line;
+            const tmp9 = first;
+            if (obj.isRecallingLine(ref2.current)) {
+              num = tmp7.current + 1;
+            }
+            ref.current = num;
+            const tmp8Result = tmp8(tmp9[9]);
+            closure_1_3(tmp8Result.recallingLine(ref.current));
+          } else if (ref.current !== ref2.current) {
+            closure_1_3(tmp.current);
+          } else {
+            const current = ref3.current;
+            if (current != null) {
+              current.play();
+            }
+          }
+        };
+        closure_2 = setTimeout(() => {
+          beat();
+          const interval = setInterval(beat, AI_LOADER_CYCLE_MS);
+        }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => {
+          clearTimeout(closure_2);
+          if (null != closure_0) {
+            const _clearInterval = clearInterval;
+            clearInterval(closure_0);
+          }
+        };
+      }
+    }
+    tmp18 = cResult[10];
+  }
+  const effect3 = obj2.useEffect(tmp17, tmp18);
+  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+    class O {
+      constructor() {
+        closure_0 = null;
+        beat = function beat() {
+          if (ref4.current) {
+            let num = 0;
+            const obj = line(first[9]);
+            const tmp8 = line;
+            const tmp9 = first;
+            if (obj.isRecallingLine(ref2.current)) {
+              num = tmp7.current + 1;
+            }
+            ref.current = num;
+            const tmp8Result = tmp8(tmp9[9]);
+            closure_1_3(tmp8Result.recallingLine(ref.current));
+          } else if (ref.current !== ref2.current) {
+            closure_1_3(tmp.current);
+          } else {
+            const current = ref3.current;
+            if (current != null) {
+              current.play();
+            }
+          }
+        };
+        closure_2 = setTimeout(() => {
+          beat();
+          const interval = setInterval(beat, AI_LOADER_CYCLE_MS);
+        }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => {
+          clearTimeout(closure_2);
+          if (null != closure_0) {
+            const _clearInterval = clearInterval;
+            clearInterval(closure_0);
+          }
+        };
+      }
+    }
+    cResult[11] = closure_7(tmp(text[10]).AILoader, { size: 10, color: "text-subtle" });
+    const tmp21 = closure_7(tmp(text[10]).AILoader, { size: 10, color: "text-subtle" });
+  } else {
+    class O {
+      constructor() {
+        closure_0 = null;
+        beat = function beat() {
+          if (ref4.current) {
+            let num = 0;
+            const obj = line(first[9]);
+            const tmp8 = line;
+            const tmp9 = first;
+            if (obj.isRecallingLine(ref2.current)) {
+              num = tmp7.current + 1;
+            }
+            ref.current = num;
+            const tmp8Result = tmp8(tmp9[9]);
+            closure_1_3(tmp8Result.recallingLine(ref.current));
+          } else if (ref.current !== ref2.current) {
+            closure_1_3(tmp.current);
+          } else {
+            const current = ref3.current;
+            if (current != null) {
+              current.play();
+            }
+          }
+        };
+        closure_2 = setTimeout(() => {
+          beat();
+          const interval = setInterval(beat, AI_LOADER_CYCLE_MS);
+        }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => {
+          clearTimeout(closure_2);
+          if (null != closure_0) {
+            const _clearInterval = clearInterval;
+            clearInterval(closure_0);
+          }
+        };
+      }
+    }
+  }
+  if (rotating) {
+    class O {
+      constructor() {
+        closure_0 = null;
+        beat = function beat() {
+          if (ref4.current) {
+            let num = 0;
+            const obj = line(first[9]);
+            const tmp8 = line;
+            const tmp9 = first;
+            if (obj.isRecallingLine(ref2.current)) {
+              num = tmp7.current + 1;
+            }
+            ref.current = num;
+            const tmp8Result = tmp8(tmp9[9]);
+            closure_1_3(tmp8Result.recallingLine(ref.current));
+          } else if (ref.current !== ref2.current) {
+            closure_1_3(tmp.current);
+          } else {
+            const current = ref3.current;
+            if (current != null) {
+              current.play();
+            }
+          }
+        };
+        closure_2 = setTimeout(() => {
+          beat();
+          const interval = setInterval(beat, AI_LOADER_CYCLE_MS);
+        }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => {
+          clearTimeout(closure_2);
+          if (null != closure_0) {
+            const _clearInterval = clearInterval;
+            clearInterval(closure_0);
+          }
+        };
+      }
+    }
+  }
+  if (cResult[12] !== text) {
+    class O {
+      constructor() {
+        closure_0 = null;
+        beat = function beat() {
+          if (ref4.current) {
+            let num = 0;
+            const obj = line(first[9]);
+            const tmp8 = line;
+            const tmp9 = first;
+            if (obj.isRecallingLine(ref2.current)) {
+              num = tmp7.current + 1;
+            }
+            ref.current = num;
+            const tmp8Result = tmp8(tmp9[9]);
+            closure_1_3(tmp8Result.recallingLine(ref.current));
+          } else if (ref.current !== ref2.current) {
+            closure_1_3(tmp.current);
+          } else {
+            const current = ref3.current;
+            if (current != null) {
+              current.play();
+            }
+          }
+        };
+        closure_2 = setTimeout(() => {
+          beat();
+          const interval = setInterval(beat, AI_LOADER_CYCLE_MS);
+        }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => {
+          clearTimeout(closure_2);
+          if (null != closure_0) {
+            const _clearInterval = clearInterval;
+            clearInterval(closure_0);
+          }
+        };
+      }
+    }
+    const obj3 = { ref, text, variant: "text-xs/medium", color: "text-subtle", duration: tmp(text[9]).INDICATOR_PASS_MS, delay: null };
+    const AIShimmer = tmp(tmp2[11]).AIShimmer;
+    cResult[12] = text;
+    cResult[13] = closure_7(AIShimmer, obj3);
+    const tmp23 = closure_7(AIShimmer, obj3);
+  } else {
+    class O {
+      constructor() {
+        closure_0 = null;
+        beat = function beat() {
+          if (ref4.current) {
+            let num = 0;
+            const obj = line(first[9]);
+            const tmp8 = line;
+            const tmp9 = first;
+            if (obj.isRecallingLine(ref2.current)) {
+              num = tmp7.current + 1;
+            }
+            ref.current = num;
+            const tmp8Result = tmp8(tmp9[9]);
+            closure_1_3(tmp8Result.recallingLine(ref.current));
+          } else if (ref.current !== ref2.current) {
+            closure_1_3(tmp.current);
+          } else {
+            const current = ref3.current;
+            if (current != null) {
+              current.play();
+            }
+          }
+        };
+        closure_2 = setTimeout(() => {
+          beat();
+          const interval = setInterval(beat, AI_LOADER_CYCLE_MS);
+        }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => {
+          clearTimeout(closure_2);
+          if (null != closure_0) {
+            const _clearInterval = clearInterval;
+            clearInterval(closure_0);
+          }
+        };
+      }
+    }
+  }
+  if (cResult[14] === rotating) {
+    class O {
+      constructor() {
+        closure_0 = null;
+        beat = function beat() {
+          if (ref4.current) {
+            let num = 0;
+            const obj = line(first[9]);
+            const tmp8 = line;
+            const tmp9 = first;
+            if (obj.isRecallingLine(ref2.current)) {
+              num = tmp7.current + 1;
+            }
+            ref.current = num;
+            const tmp8Result = tmp8(tmp9[9]);
+            closure_1_3(tmp8Result.recallingLine(ref.current));
+          } else if (ref.current !== ref2.current) {
+            closure_1_3(tmp.current);
+          } else {
+            const current = ref3.current;
+            if (current != null) {
+              current.play();
+            }
+          }
+        };
+        closure_2 = setTimeout(() => {
+          beat();
+          const interval = setInterval(beat, AI_LOADER_CYCLE_MS);
+        }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => {
+          clearTimeout(closure_2);
+          if (null != closure_0) {
+            const _clearInterval = clearInterval;
+            clearInterval(closure_0);
+          }
+        };
+      }
+    }
+  }
+  const obj4 = { style: tmp4.label, accessibilityElementsHidden: rotating, importantForAccessibility: "auto", children: tmp22 };
+  cResult[14] = rotating;
+  cResult[15] = tmp4.label;
+  cResult[16] = "auto";
+  cResult[17] = tmp22;
+  cResult[18] = closure_7(ref2, obj4);
+  closure_7(ref2, obj4);
+}) : ((line) => {
   let AIShimmer;
   let closure_3;
   let first;
@@ -74,14 +497,14 @@ function ThinkingIndicator(line) {
     function beat() {
       if (ref4.current) {
         let num = 0;
-        const obj = line(first[7]);
+        const obj = line(first[9]);
         const tmp8 = line;
         const tmp9 = first;
         if (obj.isRecallingLine(ref2.current)) {
           num = tmp7.current + 1;
         }
         ref.current = num;
-        const tmp8Result = tmp8(tmp9[7]);
+        const tmp8Result = tmp8(tmp9[9]);
         closure_1_3(tmp8Result.recallingLine(ref.current));
       } else if (ref.current !== ref2.current) {
         closure_1_3(tmp.current);
@@ -96,7 +519,7 @@ function ThinkingIndicator(line) {
     const timeout = setTimeout(() => {
       beat();
       const interval = setInterval(beat, AI_LOADER_CYCLE_MS);
-    }, line(first[7]).INDICATOR_PASS_STAGGER_MS);
+    }, line(first[9]).INDICATOR_PASS_STAGGER_MS);
     return () => {
       clearTimeout(closure_2);
       if (null != closure_0) {
@@ -107,33 +530,242 @@ function ThinkingIndicator(line) {
   }, []);
   let obj = { style: tmp.indicator, children: items3 };
   let tmp9 = closure_8;
-  items3 = [closure_7(line(text[8]).AILoader, { size: 10, color: "text-subtle" }), ];
+  items3 = [closure_7(line(text[10]).AILoader, { size: 10, color: "text-subtle" }), ];
   const obj2 = { style: tmp.label, accessibilityElementsHidden: rotating, importantForAccessibility: str, children: closure_7(AIShimmer, obj3) };
   str = "auto";
   if (rotating) {
     str = "no-hide-descendants";
   }
-  obj3 = { ref, text, variant: "text-xs/medium", color: "text-subtle", duration: line(text[7]).INDICATOR_PASS_MS, delay: null };
-  AIShimmer = tmp12(tmp13[9]).AIShimmer;
+  obj3 = { ref, text, variant: "text-xs/medium", color: "text-subtle", duration: line(text[9]).INDICATOR_PASS_MS, delay: null };
+  AIShimmer = tmp12(tmp13[11]).AIShimmer;
   items3[1] = closure_7(ref2, obj2);
   return tmp9(ref2, obj);
-}
-let _slicedToArray = _slicedToArray_mod;
-let react = react_mod;
-const View = react_native.View;
-const AI_LOADER_CYCLE_MS = AILoaderConstants.AI_LOADER_CYCLE_MS;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { row: obj2, activity: obj3, live: { flexShrink: 1 }, indicator: obj4, label: { flexShrink: 1 }, runes: obj5 };
-obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_4, minHeight: nativeDefault.space.PX_4 + nativeDefault.space.PX_24 };
-createStyles = createStyles.createStyles;
-obj3 = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, minHeight: nativeDefault.space.PX_16 };
-obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, alignSelf: "flex-start" };
-obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-let closure_9 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsNativeStatusStrip.tsx");
-
-export default function VibegrationsNativeStatusStrip(projectId) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+  let activity;
+  let compacting;
+  let connFailed;
+  let connLabel;
+  let controlling;
+  let obj3;
+  let onToggleThinking;
+  let projectUsage;
+  let recalling;
+  let stringResult;
+  let thinking;
+  let thinkingOpen;
+  let tmp23;
+  let turnStartedAt;
+  let tmp = projectId;
+  let obj = projectId(576);
+  const cResult = obj.c(40);
+  projectId = projectId.projectId;
+  ({ thinking, turnStartedAt, compacting, recalling, activity, projectUsage, connLabel, connFailed, controlling, thinkingOpen, onToggleThinking } = projectId);
+  closure_9();
+  if (cResult[0] === activity) {
+    if (cResult[1] === compacting) {
+      if (cResult[2] === controlling) {
+        let tmp6;
+        let tmp7;
+        let tmp20Result;
+        if (cResult[3] === (undefined !== recalling && recalling)) {
+          tmp6 = cResult[4];
+          tmp7 = cResult[5];
+        }
+        const first = tmp(16395).RECALLING_LINES[0];
+        if (cResult[6] !== projectUsage) {
+          let runesUsedLabelsResult = null;
+          if (null != projectUsage) {
+            const tmpResult = tmp(16395);
+            runesUsedLabelsResult = tmpResult.runesUsedLabels(projectUsage);
+          }
+          cResult[6] = projectUsage;
+          cResult[7] = runesUsedLabelsResult;
+        }
+        let tmp14 = null != activity && "" !== activity.text;
+        let tmp15 = thinking;
+        if (tmp15) {
+          if (!tmp14) {
+            tmp14 = thinkingOpen;
+          }
+          tmp15 = tmp14;
+        }
+        if (cResult[8] !== projectId) {
+          class G {
+            constructor() {
+              tmp = closure_0(closure_2[13]);
+              obj = { content: null, key: closure_0(closure_2[14]).VIBEGRATIONS_USAGE_SHEET_KEY };
+              showActionSheet = tmp.showActionSheet;
+              obj1 = { projectId };
+              obj.content = jsx(closure_1(closure_2[14]), obj1);
+              showActionSheetResult = showActionSheet(obj);
+              return;
+            }
+          }
+          cResult[8] = projectId;
+          cResult[9] = G;
+        } else {
+          class G {
+            constructor() {
+              tmp = closure_0(closure_2[13]);
+              obj = { content: null, key: closure_0(closure_2[14]).VIBEGRATIONS_USAGE_SHEET_KEY };
+              showActionSheet = tmp.showActionSheet;
+              obj1 = { projectId };
+              obj.content = jsx(closure_1(closure_2[14]), obj1);
+              showActionSheetResult = showActionSheet(obj);
+              return;
+            }
+          }
+        }
+        if (cResult[10] === tmp15) {
+          class G {
+            constructor() {
+              tmp = closure_0(closure_2[13]);
+              obj = { content: null, key: closure_0(closure_2[14]).VIBEGRATIONS_USAGE_SHEET_KEY };
+              showActionSheet = tmp.showActionSheet;
+              obj1 = { projectId };
+              obj.content = jsx(closure_1(closure_2[14]), obj1);
+              showActionSheetResult = showActionSheet(obj);
+              return;
+            }
+          }
+        }
+        if (thinking) {
+          class G {
+            constructor() {
+              tmp = closure_0(closure_2[13]);
+              obj = { content: null, key: closure_0(closure_2[14]).VIBEGRATIONS_USAGE_SHEET_KEY };
+              showActionSheet = tmp.showActionSheet;
+              obj1 = { projectId };
+              obj.content = jsx(closure_1(closure_2[14]), obj1);
+              showActionSheetResult = showActionSheet(obj);
+              return;
+            }
+          }
+          const PressableOpacity = tmp(5436).PressableOpacity;
+          if (!tmp15) {
+            class G {
+              constructor() {
+                tmp = closure_0(closure_2[13]);
+                obj = { content: null, key: closure_0(closure_2[14]).VIBEGRATIONS_USAGE_SHEET_KEY };
+                showActionSheet = tmp.showActionSheet;
+                obj1 = { projectId };
+                obj.content = jsx(closure_1(closure_2[14]), obj1);
+                showActionSheetResult = showActionSheet(obj);
+                return;
+              }
+            }
+          }
+          let obj2 = { accessible: tmp21, accessibilityRole: undefined, accessibilityState: tmp23, accessibilityLabel: tmp25, accessibilityHint: stringResult, hitSlop: 8, disabled: !tmp15, onPress: onToggleThinking, children: tmp20(closure_10, obj3) };
+          if (tmp15) {
+            class G {
+              constructor() {
+                tmp = closure_0(closure_2[13]);
+                obj = { content: null, key: closure_0(closure_2[14]).VIBEGRATIONS_USAGE_SHEET_KEY };
+                showActionSheet = tmp.showActionSheet;
+                obj1 = { projectId };
+                obj.content = jsx(closure_1(closure_2[14]), obj1);
+                showActionSheetResult = showActionSheet(obj);
+                return;
+              }
+            }
+          }
+          tmp23 = undefined;
+          if (tmp15) {
+            class G {
+              constructor() {
+                tmp = closure_0(closure_2[13]);
+                obj = { content: null, key: closure_0(closure_2[14]).VIBEGRATIONS_USAGE_SHEET_KEY };
+                showActionSheet = tmp.showActionSheet;
+                obj1 = { projectId };
+                obj.content = jsx(closure_1(closure_2[14]), obj1);
+                showActionSheetResult = showActionSheet(obj);
+                return;
+              }
+            }
+            tmp24[0] = thinkingOpen;
+            tmp23 = tmp24;
+          }
+          if (tmp15) {
+            class G {
+              constructor() {
+                tmp = closure_0(closure_2[13]);
+                obj = { content: null, key: closure_0(closure_2[14]).VIBEGRATIONS_USAGE_SHEET_KEY };
+                showActionSheet = tmp.showActionSheet;
+                obj1 = { projectId };
+                obj.content = jsx(closure_1(closure_2[14]), obj1);
+                showActionSheetResult = showActionSheet(obj);
+                return;
+              }
+            }
+          } else {
+            class G {
+              constructor() {
+                tmp = closure_0(closure_2[13]);
+                obj = { content: null, key: closure_0(closure_2[14]).VIBEGRATIONS_USAGE_SHEET_KEY };
+                showActionSheet = tmp.showActionSheet;
+                obj1 = { projectId };
+                obj.content = jsx(closure_1(closure_2[14]), obj1);
+                showActionSheetResult = showActionSheet(obj);
+                return;
+              }
+            }
+          }
+          stringResult = undefined;
+          if (tmp15) {
+            class G {
+              constructor() {
+                tmp = closure_0(closure_2[13]);
+                obj = { content: null, key: closure_0(closure_2[14]).VIBEGRATIONS_USAGE_SHEET_KEY };
+                showActionSheet = tmp.showActionSheet;
+                obj1 = { projectId };
+                obj.content = jsx(closure_1(closure_2[14]), obj1);
+                showActionSheetResult = showActionSheet(obj);
+                return;
+              }
+            }
+            stringResult = obj5.string(_modDef3718["0PGVTy"]);
+          }
+          obj3 = { line: tmp7, rotating: tmp6 === first };
+          tmp20Result = tmp20(PressableOpacity, obj2);
+        } else {
+          class G {
+            constructor() {
+              tmp = closure_0(closure_2[13]);
+              obj = { content: null, key: closure_0(closure_2[14]).VIBEGRATIONS_USAGE_SHEET_KEY };
+              showActionSheet = tmp.showActionSheet;
+              obj1 = { projectId };
+              obj.content = jsx(closure_1(closure_2[14]), obj1);
+              showActionSheetResult = showActionSheet(obj);
+              return;
+            }
+          }
+        }
+        cResult[10] = tmp15;
+        cResult[11] = tmp7;
+        cResult[12] = onToggleThinking;
+        cResult[13] = undefined !== recalling && recalling;
+        cResult[14] = tmp6 === first;
+        cResult[15] = thinking;
+        cResult[16] = thinkingOpen;
+        cResult[17] = tmp20Result;
+      }
+    }
+  }
+  const tmpResult2 = tmp(16395);
+  const thinkingLabelResult = tmpResult2.thinkingLabel({ activity, compacting, recalling: undefined !== recalling && recalling, controlling });
+  const intl = tmp(1127).intl;
+  const stringResult1 = intl.string(thinkingLabelResult);
+  cResult[0] = activity;
+  cResult[1] = compacting;
+  cResult[2] = controlling;
+  cResult[3] = undefined !== recalling && recalling;
+  cResult[4] = thinkingLabelResult;
+  cResult[5] = stringResult1;
+  tmp7 = stringResult1;
+  tmp6 = thinkingLabelResult;
+}) : ((projectId) => {
   let activity;
   let connFailed;
   let connLabel;
@@ -162,14 +794,14 @@ export default function VibegrationsNativeStatusStrip(projectId) {
   ({ activity, projectUsage, connLabel, thinkingOpen } = projectId);
   ({ connFailed, controlling, onToggleThinking } = projectId);
   let tmp = closure_9();
-  let obj = projectId(16393);
+  let obj = projectId(16395);
   const thinkingLabelResult = obj.thinkingLabel({ activity, compacting, recalling, controlling });
-  const intl = projectId(1115).intl;
+  const intl = projectId(1127).intl;
   const stringResult = intl.string(thinkingLabelResult);
   let runesUsedLabelsResult = null;
-  const first = projectId(16393).RECALLING_LINES[0];
+  const first = projectId(16395).RECALLING_LINES[0];
   if (null != projectUsage) {
-    const tmp2Result = projectId(16393);
+    const tmp2Result = projectId(16395);
     runesUsedLabelsResult = tmp2Result.runesUsedLabels(projectUsage);
   }
   let tmp8 = null != activity && "" !== activity.text;
@@ -194,11 +826,11 @@ export default function VibegrationsNativeStatusStrip(projectId) {
   }, items);
   if (thinking) {
     let tmp16 = tmp9;
-    const PressableOpacity = tmp2(5435).PressableOpacity;
+    const PressableOpacity = tmp2(5436).PressableOpacity;
     if (!tmp9) {
       tmp16 = tmp15;
     }
-    const obj5 = { accessible: tmp16, accessibilityRole: str2, accessibilityState: tmp17, accessibilityLabel: tmp18, accessibilityHint: stringResult1, hitSlop: 8, disabled: !tmp9, onPress: onToggleThinking, children: closure_7(ThinkingIndicator, obj7) };
+    const obj5 = { accessible: tmp16, accessibilityRole: str2, accessibilityState: tmp17, accessibilityLabel: tmp18, accessibilityHint: stringResult1, hitSlop: 8, disabled: !tmp9, onPress: onToggleThinking, children: closure_7(closure_10, obj7) };
     str2 = undefined;
     if (tmp9) {
       str2 = "button";
@@ -213,8 +845,8 @@ export default function VibegrationsNativeStatusStrip(projectId) {
     }
     stringResult1 = undefined;
     if (tmp9) {
-      const intl2 = tmp2(1115).intl;
-      stringResult1 = intl2.string(_modDef3715["0PGVTy"]);
+      const intl2 = tmp2(1127).intl;
+      stringResult1 = intl2.string(_modDef3718["0PGVTy"]);
     }
     obj7 = { line: stringResult, rotating: thinkingLabelResult === first };
     tmp13Result = tmp13(PressableOpacity, obj5);
@@ -235,7 +867,7 @@ export default function VibegrationsNativeStatusStrip(projectId) {
   let tmp13Result4 = null;
   if (null != connLabel) {
     let str3 = "text-muted";
-    const Text = tmp2(4832).Text;
+    const Text = tmp2(4833).Text;
     if (connFailed) {
       str3 = "text-feedback-critical";
     }
@@ -246,14 +878,17 @@ export default function VibegrationsNativeStatusStrip(projectId) {
   let tmp11Result = null;
   if (null != runesUsedLabelsResult) {
     const obj10 = { accessibilityRole: "button", accessibilityLabel: runesUsedLabelsResult.aria, hitSlop: 8, style: tmp.runes, onPress: callback, children: items3 };
-    const PressableOpacity2 = tmp2(5435).PressableOpacity;
+    const PressableOpacity2 = tmp2(5436).PressableOpacity;
     const obj11 = { variant: "text-xs/medium", color: "text-muted", children: runesUsedLabelsResult.text };
-    items3 = [closure_7(projectId(4832).Text, obj11), ];
+    items3 = [closure_7(projectId(4833).Text, obj11), ];
     const obj12 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    const CircleInformationIcon = tmp2(4787).CircleInformationIcon;
+    const CircleInformationIcon = tmp2(4788).CircleInformationIcon;
     items3[1] = closure_7(CircleInformationIcon, obj12);
     tmp11Result = tmp11(PressableOpacity2, obj10);
   }
   items2[2] = tmp11Result;
   return closure_8(View, obj2);
-};
+});
+const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsNativeStatusStrip.tsx");
+
+export default tmp4;

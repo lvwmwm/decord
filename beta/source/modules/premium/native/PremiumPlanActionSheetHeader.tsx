@@ -1,23 +1,32 @@
-// Module ID: 6851
-// Function ID: 6852
+// Module ID: 6852
+// Function ID: 6853
 // Name: PremiumPlanActionSheetHeader
-// Dependencies: [19, 17, 1374, 6852, 21, 4836, 6853, 6854, 4488, 5293, 1094, 5899, 6855, 6856, 6857, 6858, 8688, 10179, 8693, 2]
-// Exports: default
+// Dependencies: [19, 17, 1380, 6853, 21, 4837, 558, 576, 6854, 6855, 6856, 6857, 6858, 6859, 6860, 6861, 4491, 5896, 6862, 5292, 1106, 2]
 
-// Module 6851 (PremiumPlanActionSheetHeader)
+// Module 6852 (PremiumPlanActionSheetHeader)
 import react_native from "react-native" /* 17 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import PremiumUtils from "PremiumUtils" /* 4488 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import ColorConstants from "ColorConstants" /* 6852 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import PremiumUtils from "PremiumUtils" /* 4491 */;
+import LinearGradientDefault from "LinearGradient" /* 5292 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import ColorConstants from "ColorConstants" /* 6853 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6854 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6855 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 6856 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 6857 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 6858 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 6859 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 6860 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 6861 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const PremiumUtilsDefault = PremiumUtils;
+let importDefault;
 
 let closure_4;
 let hasOwnProperty;
@@ -33,9 +42,86 @@ let obj = { header: { height: 112, justifyContent: "center", alignItems: "center
 obj2 = { transform: items };
 items = [{ scaleX: -1 }];
 let closure_9 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/premium/native/PremiumPlanActionSheetHeader.tsx");
-
-export default function PremiumPlanActionSheetHeader(arg0) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
+  let closure_1;
+  let discountOffer;
+  let trialOffer;
+  const obj = premiumType(576);
+  const cResult = obj.c(58);
+  premiumType = premiumType.premiumType;
+  ({ trialOffer, discountOffer } = premiumType);
+  const tmp2 = closure_9();
+  importDefault = tmp2;
+  if (cResult[0] !== premiumType) {
+    const fn = function o() {
+      if (React3.TIER_0 === premiumType) {
+        return AssetRegistryDefault;
+      } else if (React3.TIER_1 === premiumType) {
+        return AssetRegistryDefault2;
+      } else if (React3.TIER_2 === premiumType) {
+        return AssetRegistryDefault3;
+      }
+    };
+    cResult[0] = premiumType;
+    cResult[1] = fn;
+  }
+  if (cResult[2] !== premiumType) {
+    class P {
+      constructor() {
+        if (React3.TIER_0 === premiumType) {
+          return AssetRegistryDefault4;
+        } else if (React3.TIER_1 === premiumType) {
+          return AssetRegistryDefault5;
+        } else if (React3.TIER_2 === premiumType) {
+          return AssetRegistryDefault6;
+        }
+      }
+    }
+    cResult[2] = premiumType;
+    cResult[3] = P;
+  } else {
+    class P {
+      constructor() {
+        if (React3.TIER_0 === premiumType) {
+          return AssetRegistryDefault4;
+        } else if (React3.TIER_1 === premiumType) {
+          return AssetRegistryDefault5;
+        } else if (React3.TIER_2 === premiumType) {
+          return AssetRegistryDefault6;
+        }
+      }
+    }
+  }
+  if (cResult[4] === premiumType) {
+    class P {
+      constructor() {
+        if (React3.TIER_0 === premiumType) {
+          return AssetRegistryDefault4;
+        } else if (React3.TIER_1 === premiumType) {
+          return AssetRegistryDefault5;
+        } else if (React3.TIER_2 === premiumType) {
+          return AssetRegistryDefault6;
+        }
+      }
+    }
+  }
+  class E {
+    constructor() {
+      if (React3.TIER_0 !== premiumType) {
+        if (React3.TIER_1 !== premiumType) {
+          if (React3.TIER_2 === premiumType) {
+            return closure_1.imgWumpusRight;
+          }
+        }
+      }
+      return closure_1.imgWumpusBottom;
+    }
+  }
+  cResult[4] = premiumType;
+  cResult[5] = tmp2.imgWumpusBottom;
+  cResult[6] = tmp2.imgWumpusRight;
+  cResult[7] = E;
+}) : ((arg0) => {
   let discountOffer;
   let items1;
   let premiumType;
@@ -70,13 +156,13 @@ export default function PremiumPlanActionSheetHeader(arg0) {
   const obj2 = { style: tmp.header, colors: getPremiumGradientColor(premiumType), start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, accessible: true, accessibilityRole: "header", accessibilityLabel: tmp6Result.getPremiumTypeDisplayName(premiumType), children: null };
   const tmp14 = LinearGradientDefault;
   tmp6Result = PremiumUtils;
-  if (TIER_0.TIER_0 === premiumType) {
-    tmp17Result = tmp13(6853);
+  if (React3.TIER_0 === premiumType) {
+    tmp17Result = tmp13(6860);
   } else {
     tmp17Result = null;
-    if (TIER_0.TIER_1 !== premiumType) {
-      if (TIER_0.TIER_2 === premiumType) {
-        tmp17Result = tmp13(6854);
+    if (React3.TIER_1 !== premiumType) {
+      if (React3.TIER_2 === premiumType) {
+        tmp17Result = tmp13(6861);
       }
     }
   }
@@ -84,13 +170,13 @@ export default function PremiumPlanActionSheetHeader(arg0) {
     let tmp13Result8;
     const tmp13Result7 = FastImageDefault;
     const tmp17 = metroImportDefault;
-    if (TIER_0.TIER_0 === premiumType) {
-      tmp13Result8 = tmp13(6853);
+    if (React3.TIER_0 === premiumType) {
+      tmp13Result8 = tmp13(6860);
     } else {
       tmp13Result8 = null;
-      if (TIER_0.TIER_1 !== premiumType) {
-        if (TIER_0.TIER_2 === premiumType) {
-          tmp13Result8 = tmp13(6854);
+      if (React3.TIER_1 !== premiumType) {
+        if (React3.TIER_2 === premiumType) {
+          tmp13Result8 = tmp13(6861);
         }
       }
     }
@@ -101,41 +187,41 @@ export default function PremiumPlanActionSheetHeader(arg0) {
   const obj4 = { style: tmp.logoContainer, children: items1 };
   const tmp13Result9 = FastImageDefault;
   const tmp20 = View;
-  if (TIER_0.TIER_0 === premiumType) {
+  if (React3.TIER_0 === premiumType) {
+    tmp13Result10 = tmp13(6854);
+  } else if (React3.TIER_1 === premiumType) {
     tmp13Result10 = tmp13(6855);
-  } else if (TIER_0.TIER_1 === premiumType) {
+  } else if (React3.TIER_2 === premiumType) {
     tmp13Result10 = tmp13(6856);
-  } else if (TIER_0.TIER_2 === premiumType) {
-    tmp13Result10 = tmp13(6857);
   }
   items1 = [metroImportDefault(tmp13Result9, { source: tmp13Result10, resizeMode: "contain" }), , ];
   let tmp21Result = null;
   if (tmp2) {
     const obj5 = { style: tmp.discountPill, trialOffer, premiumType, useWhiteBackground: true, hideTrialCountdown: true };
-    tmp21Result = tmp21(tmp6(6858).PremiumPill, obj5);
+    tmp21Result = tmp21(tmp6(6862).PremiumPill, obj5);
   }
   items1[1] = tmp21Result;
   let tmp21Result2 = null;
   if (tmp10) {
     const obj6 = { style: tmp.discountPill, discountOffer, premiumType, shouldShowDiscountUpsell: true, useWhiteBackground: true };
-    tmp21Result2 = tmp21(tmp6(6858).PremiumPill, obj6);
+    tmp21Result2 = tmp21(tmp6(6862).PremiumPill, obj6);
   }
   items1[2] = tmp21Result2;
   items[1] = metroImportAll(tmp20, obj4);
   const tmp13Result11 = FastImageDefault;
-  if (TIER_0.TIER_0 === premiumType) {
-    tmp13Result12 = tmp13(8688);
-  } else if (TIER_0.TIER_1 === premiumType) {
-    tmp13Result12 = tmp13(10179);
-  } else if (TIER_0.TIER_2 === premiumType) {
-    tmp13Result12 = tmp13(8693);
+  if (React3.TIER_0 === premiumType) {
+    tmp13Result12 = tmp13(6857);
+  } else if (React3.TIER_1 === premiumType) {
+    tmp13Result12 = tmp13(6858);
+  } else if (React3.TIER_2 === premiumType) {
+    tmp13Result12 = tmp13(6859);
   }
   const obj7 = { source: tmp13Result12, style: null, resizeMode: "contain" };
   const items2 = [tmp.imgWumpus, ];
-  if (TIER_0.TIER_0 !== premiumType) {
+  if (React3.TIER_0 !== premiumType) {
     let imgWumpusBottom;
-    if (TIER_0.TIER_1 !== premiumType) {
-      if (TIER_0.TIER_2 === premiumType) {
+    if (React3.TIER_1 !== premiumType) {
+      if (React3.TIER_2 === premiumType) {
         imgWumpusBottom = tmp.imgWumpusRight;
       }
     }
@@ -146,4 +232,7 @@ export default function PremiumPlanActionSheetHeader(arg0) {
     return metroImportAll(tmp14, obj2);
   }
   imgWumpusBottom = tmp.imgWumpusBottom;
-};
+});
+const result = size.fileFinishedImporting("modules/premium/native/PremiumPlanActionSheetHeader.tsx");
+
+export default tmp5;

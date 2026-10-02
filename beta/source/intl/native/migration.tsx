@@ -1,17 +1,19 @@
-// Module ID: 13675
-// Function ID: 13676
+// Module ID: 13677
+// Function ID: 13678
 // Name: migration
-// Dependencies: [19, 21, 4836, 576, 4550, 4525, 1930, 1177, 2]
-// Exports: IntlLink
+// Dependencies: [19, 21, 4837, 588, 558, 576, 4554, 4528, 1936, 1189, 2]
 
-// Module 13675 (migration)
+// Module 13677 (migration)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import _modDef1930 from "module_1930" /* 1930 */;
-import LinkingDefault from "Linking" /* 4525 */;
+import nativeDefault from "native" /* 588 */;
+import _modDef1936 from "module_1936" /* 1936 */;
+import LinkingDefault from "Linking" /* 4528 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let target;
 
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0) => {
@@ -24,9 +26,69 @@ let closure_5 = createStyles.createStyles((arg0) => {
   }
   return { link };
 });
-const result = size.fileFinishedImporting("intl/native/migration.tsx");
-
-export const IntlLink = function IntlLink(target) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target) => {
+  let accessibilityRole;
+  let onClick;
+  let str;
+  let tmp5;
+  const tmp = target;
+  let obj = target(576);
+  const cResult = obj.c(7);
+  target = target.target;
+  const children = target.children;
+  const tmp4 = closure_5(react.useContext(target(4554).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  if (typeof target === "string") {
+    let tmp6;
+    if (cResult[0] !== target) {
+      const fn = function s() {
+        const openURL = LinkingDefault.openURL;
+        LinkingDefault;
+        const obj = _modDef1936;
+        return openURL(obj.sanitizeUrl(target));
+      };
+      cResult[0] = target;
+      cResult[1] = fn;
+      tmp6 = fn;
+    } else {
+      tmp6 = cResult[1];
+    }
+    str = "link";
+    tmp5 = tmp6;
+  } else {
+    str = "link";
+    tmp5 = target;
+    if (typeof target === "object") {
+      str = "link";
+      tmp5 = target;
+      if (null != target.onClick) {
+        ({ accessibilityRole, onClick } = target);
+        if (accessibilityRole == null) {
+          accessibilityRole = "link";
+        }
+        str = accessibilityRole;
+        tmp5 = onClick;
+      }
+    }
+  }
+  if (cResult[2] === str) {
+    if (cResult[3] === children) {
+      if (cResult[4] === tmp5) {
+        let tmp7;
+        if (cResult[5] === tmp4.link) {
+          tmp7 = cResult[6];
+        }
+        return tmp7;
+      }
+    }
+  }
+  const tmp8 = jsx(tmp(1189).LegacyText, { accessible: true, accessibilityRole: str, onPress: tmp5, style: tmp4.link, children });
+  cResult[2] = str;
+  cResult[3] = children;
+  cResult[4] = tmp5;
+  cResult[5] = tmp4.link;
+  cResult[6] = tmp8;
+  tmp7 = tmp8;
+}) : ((target) => {
   let accessibilityRole;
   let fn;
   let onClick;
@@ -34,12 +96,12 @@ export const IntlLink = function IntlLink(target) {
   target = target.target;
   const children = target.children;
   const tmp = target;
-  const tmp3 = closure_5(react.useContext(target(4550).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp3 = closure_5(react.useContext(target(4554).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
     fn = function k() {
       const openURL = LinkingDefault.openURL;
       LinkingDefault;
-      const obj = _modDef1930;
+      const obj = _modDef1936;
       return openURL(obj.sanitizeUrl(target));
     };
     str = "link";
@@ -59,5 +121,8 @@ export const IntlLink = function IntlLink(target) {
       }
     }
   }
-  return jsx(tmp(1177).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: tmp3.link, children });
-};
+  return jsx(tmp(1189).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: tmp3.link, children });
+});
+const result = size.fileFinishedImporting("intl/native/migration.tsx");
+
+export const IntlLink = tmp2;

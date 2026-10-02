@@ -1,20 +1,20 @@
-// Module ID: 576
-// Function ID: 577
+// Module ID: 588
+// Function ID: 589
 // Name: native
-// Dependencies: [577, 578, 579, 580, 581, 582, 583, 670, 671, 672, 673, 2]
+// Dependencies: [589, 590, 591, 592, 593, 594, 595, 682, 683, 684, 685, 2]
 
-// Module 576 (native)
-import ThemeTypes from "ThemeTypes" /* 577 */;
-import _mod578 from "module_578" /* 578 */;
-import _mod579 from "module_579" /* 579 */;
-import _mod580 from "module_580" /* 580 */;
-import _mod581 from "module_581" /* 581 */;
-import _mod582 from "module_582" /* 582 */;
-import mapValuesDefault from "mapValues" /* 583 */;
-import Radius from "Radius" /* 670 */;
-import Layout from "Layout" /* 671 */;
-import _modDef672 from "module_672" /* 672 */;
-import transforms from "transforms" /* 673 */;
+// Module 588 (native)
+import ThemeTypes from "ThemeTypes" /* 589 */;
+import _mod590 from "module_590" /* 590 */;
+import _mod591 from "module_591" /* 591 */;
+import _mod592 from "module_592" /* 592 */;
+import _mod593 from "module_593" /* 593 */;
+import _mod594 from "module_594" /* 594 */;
+import mapValuesDefault from "mapValues" /* 595 */;
+import Radius from "Radius" /* 682 */;
+import Layout from "Layout" /* 683 */;
+import _modDef684 from "module_684" /* 684 */;
+import transforms from "transforms" /* 685 */;
 import size from "module_2" /* 2 */;
 
 function sanitizeTheme(theme) {
@@ -30,11 +30,11 @@ function sanitizeTheme(theme) {
   }
 }
 const Themes = ThemeTypes._private.Themes;
-const SemanticColors = _mod578._private.SemanticColors;
-const SemanticColorExperiments = _mod579._private.SemanticColorExperiments;
-const RawColors = _mod580._private.RawColors;
-const Modules = _mod581._private.Modules;
-const Shadows = _mod582._private.Shadows;
+const SemanticColors = _mod590._private.SemanticColors;
+const SemanticColorExperiments = _mod591._private.SemanticColorExperiments;
+const RawColors = _mod592._private.RawColors;
+const Modules = _mod593._private.Modules;
+const Shadows = _mod594._private.Shadows;
 let closure_6 = Symbol("semanticColor");
 const set = new Set(Object.values(Themes));
 let obj = {
@@ -43,20 +43,20 @@ let obj = {
   unsafe_rawColors: RawColors,
   shadows: mapValuesDefault(Shadows, (arg0) => {
     function resolve(isAndroid) {
-      return f71598(closure_0[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
+      return f80466(closure_0[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
     }
     let closure_0 = arg0;
-    const f71594 = (shadowOffset, arg1) => {
+    const f80462 = (shadowOffset, arg1) => {
       shadowOffset = undefined;
       if (!arg1) {
         shadowOffset = shadowOffset.shadowOffset;
       }
       return shadowOffset;
     };
-    const f71595 = (shadowColorAndroid, arg1) => arg1 ? shadowColorAndroid.shadowColorAndroid : shadowColorAndroid.shadowColor;
-    const f71596 = (shadowOpacity) => shadowOpacity.shadowOpacity;
-    const f71597 = (shadowRadius) => shadowRadius.shadowRadius;
-    const f71598 = (elevation) => elevation.elevation;
+    const f80463 = (shadowColorAndroid, arg1) => arg1 ? shadowColorAndroid.shadowColorAndroid : shadowColorAndroid.shadowColor;
+    const f80464 = (shadowOpacity) => shadowOpacity.shadowOpacity;
+    const f80465 = (shadowRadius) => shadowRadius.shadowRadius;
+    const f80466 = (elevation) => elevation.elevation;
     return { shadowOffset: { resolve }, shadowColor: { resolve }, shadowOpacity: { resolve }, shadowRadius: { resolve }, elevation: { resolve } };
   }),
   radii: Radius.Radius,
@@ -82,13 +82,13 @@ let obj = {
   })),
   space: Layout.SpacePx,
   internal: {
-    isSemanticColor(backgroundColor) {
-      let tmp = typeof backgroundColor === "object";
-      if (typeof backgroundColor === "object") {
-        tmp = null !== backgroundColor;
+    isSemanticColor(BACKGROUND_BASE_LOW) {
+      let tmp = typeof BACKGROUND_BASE_LOW === "object";
+      if (typeof BACKGROUND_BASE_LOW === "object") {
+        tmp = null !== BACKGROUND_BASE_LOW;
       }
       if (tmp) {
-        tmp = closure_6 in backgroundColor;
+        tmp = closure_6 in BACKGROUND_BASE_LOW;
       }
       return tmp;
     },
@@ -177,7 +177,7 @@ let obj = {
         if (1 === opacity) {
           hexResult = result;
         } else {
-          const obj8 = _modDef672(result);
+          const obj8 = _modDef684(result);
           const alphaResult = obj8.alpha(opacity);
           hexResult = alphaResult.hex();
         }
@@ -229,7 +229,7 @@ let obj = {
         }
         if (null != tmp36) {
           let tmp38;
-          const tmp61 = _modDef672;
+          const tmp61 = _modDef684;
           if (tmp36.color in RawColors) {
             tmp38 = tmp62[tmp36.color];
           } else if (semanticColorContextFromThemeContext != null) {

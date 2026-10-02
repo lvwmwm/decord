@@ -1,19 +1,19 @@
-// Module ID: 8245
-// Function ID: 8246
+// Module ID: 8242
+// Function ID: 8243
 // Name: WishlistActionCreators
-// Dependencies: [5, 7035, 1372, 4490, 6648, 8240, 1074, 1365, 1370, 573, 6652, 1271, 8238, 1231, 4735, 1241, 7626, 2]
+// Dependencies: [5, 7039, 1378, 4493, 6649, 8237, 1086, 1371, 1376, 585, 6653, 1283, 8235, 1243, 4737, 1253, 7630, 2]
 
-// Module 8245 (WishlistActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import WishlistRecord2 from "WishlistRecord" /* 8240 */;
+// Module 8242 (WishlistActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import WishlistRecord2 from "WishlistRecord" /* 8237 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import UserProfileStore from "UserProfileStore" /* 7035 */;
-import UserStore from "UserStore" /* 1372 */;
-import BillingInfoStore from "BillingInfoStore" /* 4490 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6648 */;
-import Constants from "Constants" /* 1074 */;
+import UserProfileStore from "UserProfileStore" /* 7039 */;
+import UserStore from "UserStore" /* 1378 */;
+import BillingInfoStore from "BillingInfoStore" /* 4493 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6649 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const WishlistRecord = WishlistRecord2;
@@ -23,8 +23,8 @@ let c10;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const StorefrontUtils = tmp(6652);
-const f85987 = (id) => id.id;
+const StorefrontUtils = tmp(6653);
+const f96273 = (id) => id.id;
 function extraWishlistParams() {
   const obj = {};
   if (null != BillingInfoStore.ipCountryCode) {
@@ -52,8 +52,8 @@ function maybeDispatchAdditionalActions(wishlist_items) {
   const storefront_pricing = wishlist_items.storefront_pricing;
   if (null != storefront_pricing) {
     const obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj3, data: tmpResult.transformStorefrontPricesServer(storefront_pricing) };
-    obj3 = { type: "skus", skuIds: found.map(f85987) };
-    const dispatch = tmp3(573).dispatch;
+    obj3 = { type: "skus", skuIds: found.map(f96273) };
+    const dispatch = tmp3(585).dispatch;
     DispatcherDefault;
     tmpResult = StorefrontUtils;
     dispatch(obj2);
@@ -80,7 +80,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -159,7 +159,7 @@ let obj = {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp48) {
           closure_3 = tmp48;
@@ -191,7 +191,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -279,7 +279,7 @@ let obj = {
                 c3 = 0;
               }
               currentUser = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
             c3 = 0;
             if (null != sku_id) {
@@ -330,7 +330,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -407,7 +407,7 @@ let obj = {
             }
             c3 = 0;
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp22) {
           sku_ids = tmp22;
@@ -441,7 +441,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -525,7 +525,7 @@ let obj = {
             c3 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp29) {
           closure_4 = tmp29;
           if (0 === c3) {
@@ -558,7 +558,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -639,7 +639,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp37) {
           sku_ids = tmp37;
@@ -655,10 +655,10 @@ let obj = {
       }
     })();
   },
-  fetchWishlistRecommendations(applicationIds, memo, numItems) {
+  fetchWishlistRecommendations(applicationIds, userIds, numItems) {
     let num;
     let closure_0 = applicationIds;
-    let closure_1 = memo;
+    let closure_1 = userIds;
     let flag = arg3;
     if (arg3 === undefined) {
       flag = true;
@@ -678,7 +678,7 @@ let obj = {
         ({ storefront_pricing, skus: skus2 } = body);
         if (null != storefront_pricing) {
           const obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj3, data: obj4.transformStorefrontPricesServer(storefront_pricing) };
-          obj3 = { type: "skus", skuIds: skus2.map(f85987) };
+          obj3 = { type: "skus", skuIds: skus2.map(f96273) };
           const dispatch = tmp(closure_1_2[9]).dispatch;
           closure_1_1(closure_1_2[9]);
           obj4 = closure_1_0(closure_1_2[10]);
@@ -695,7 +695,7 @@ let obj = {
           let obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -755,7 +755,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp18) {
           closure_2 = tmp18;

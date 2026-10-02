@@ -1,28 +1,28 @@
-// Module ID: 8590
-// Function ID: 8591
+// Module ID: 8587
+// Function ID: 8588
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 8591, 2003, 8711, 1074, 5305, 4829, 1115, 8321, 8713, 1364, 1979, 6943, 8714, 7095, 6876, 5203, 1397, 8712, 8720, 6941, 8721, 2]
+// Dependencies: [109, 5, 8588, 2009, 8706, 1086, 5306, 4830, 1127, 8318, 8708, 1370, 1985, 6947, 8709, 7099, 6880, 5204, 1403, 8707, 8715, 6945, 8716, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isEmbeddedApp, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 8590 (AppLauncherUtils)
-import Constants from "Constants" /* 1074 */;
-import intl4 from "intl" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import Server from "Server" /* 1979 */;
-import MessageConstants from "MessageConstants" /* 4829 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5305 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6941 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8321 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8712 */;
-import getPlatformDefault from "getPlatform" /* 8713 */;
-import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 8720 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 8721 */;
+// Module 8587 (AppLauncherUtils)
+import Constants from "Constants" /* 1086 */;
+import intl4 from "intl" /* 1127 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import Server from "Server" /* 1985 */;
+import MessageConstants from "MessageConstants" /* 4830 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6945 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8318 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8707 */;
+import getPlatformDefault from "getPlatform" /* 8708 */;
+import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 8715 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 8716 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8591 */;
-import ApplicationRecord from "ApplicationRecord" /* 2003 */;
-import AppLauncherStore from "AppLauncherStore" /* 8711 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8588 */;
+import ApplicationRecord from "ApplicationRecord" /* 2009 */;
+import AppLauncherStore from "AppLauncherStore" /* 8706 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -100,10 +100,10 @@ export const getSectionName = function getSectionName(FAKE_BUILT_IN_APP) {
   }
   return name;
 };
-export const getSectionDescription = function getSectionDescription(FAKE_BUILT_IN_APP) {
+export const getSectionDescription = function getSectionDescription(application) {
   let description;
-  if (FAKE_BUILT_IN_APP.id !== BuiltInSectionId.BUILT_IN) {
-    description = FAKE_BUILT_IN_APP.description;
+  if (application.id !== BuiltInSectionId.BUILT_IN) {
+    description = application.description;
   } else {
     const intl = intl4.intl;
     description = intl.string(intl4.t.X9fusn);
@@ -185,7 +185,7 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -261,7 +261,7 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
           }
           maxSizeCallback = 0;
           commandOrigin = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp37) {
         commandTargetId = tmp37;
@@ -341,11 +341,11 @@ export const formatPrimaryEntryPointCommandName = function formatPrimaryEntryPoi
   }
   return str;
 };
-export const ensureRecommendationSectionsOnlyContainActivities = function ensureRecommendationSectionsOnlyContainActivities(stateFromStores1) {
+export const ensureRecommendationSectionsOnlyContainActivities = function ensureRecommendationSectionsOnlyContainActivities(stateFromStores) {
   let constants2;
   let tmp3;
   const items = [];
-  const iter = stateFromStores1[Symbol.iterator]();
+  const iter = stateFromStores[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let prop = nextResult.application_directory_collection_items;

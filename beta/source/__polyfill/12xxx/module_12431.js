@@ -1,68 +1,25 @@
 // Module ID: 12431
 // Function ID: 12432
-// Dependencies: [12319, 12316, 12429]
-// Exports: callFrameToStackFrame, watchdogTimer
+// Dependencies: [12312]
+// Exports: vercelWaitUntil
 
 // Module 12431
-import _mod12316 from "module_12316" /* 12316 */;
-import _mod12319 from "module_12319" /* 12319 */;
-import _mod12429 from "module_12429" /* 12429 */;
-
-let navigation;
+import _mod12312 from "module_12312" /* 12312 */;
 
 
-export const callFrameToStackFrame = function callFrameToStackFrame(location, str, fn) {
-  let filenameIsInAppResult;
-  let replaced;
-  if (str) {
-    replaced = str.replace(/^file:\/\//, "");
-  }
-  let sum;
-  if (location.location.columnNumber) {
-    sum = location.location.columnNumber + 1;
-  }
-  let sum1;
-  if (location.location.lineNumber) {
-    sum1 = location.location.lineNumber + 1;
-  }
-  const tmp6 = _mod12319;
-  const dropUndefinedKeys = tmp6.dropUndefinedKeys;
-  const obj = { filename: replaced, module: fn(replaced), function: location.functionName || _mod12316.UNKNOWN_FUNCTION, colno: sum, lineno: sum1, in_app: filenameIsInAppResult };
-  filenameIsInAppResult = undefined;
-  location.functionName || _mod12316.UNKNOWN_FUNCTION;
-  if (replaced) {
-    const tmp4Result = _mod12429;
-    filenameIsInAppResult = tmp4Result.filenameIsInApp(replaced);
-  }
-  return dropUndefinedKeys(obj);
-};
-export const watchdogTimer = function watchdogTimer(fn, arg1, arg2, arg3) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
-  let closure_2 = arg3;
-  navigation = fn();
-  let c4 = false;
-  let c5 = true;
-  const timerId = setInterval(() => {
-    const timeMs = navigation.getTimeMs();
-    const tmp2 = false === c4 && timeMs > closure_0 + closure_1;
-    if (tmp2) {
-      c4 = true;
-      const tmp5 = c5;
-      if (tmp5) {
-        closure_2();
+export const vercelWaitUntil = function vercelWaitUntil(arg0) {
+  const obj = _mod12312.GLOBAL_OBJ[Symbol.for(Symbol, "@vercel/request-context")];
+  if (obj) {
+    if (obj.get) {
+      let obj1;
+      if (obj.get()) {
+        obj1 = obj.get();
+      }
+      const tmp = obj1 && obj1.waitUntil;
+      if (tmp) {
+        obj1.waitUntil(arg0);
       }
     }
-    if (timeMs < closure_0 + closure_1) {
-      c4 = false;
-    }
-  }, 20);
-  return {
-    poll() {
-      navigation.reset();
-    },
-    enabled(arg0) {
-      c5 = arg0;
-    }
-  };
+  }
+  obj1 = {};
 };

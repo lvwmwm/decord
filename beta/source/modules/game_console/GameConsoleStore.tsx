@@ -1,13 +1,13 @@
-// Module ID: 4853
-// Function ID: 4854
+// Module ID: 4854
+// Function ID: 4855
 // Name: GameConsoleStore
-// Dependencies: [4854, 4855, 504, 573, 2]
+// Dependencies: [4855, 4856, 504, 585, 2]
 
-// Module 4853 (GameConsoleStore)
+// Module 4854 (GameConsoleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import SessionsStore from "SessionsStore" /* 4854 */;
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import SessionsStore from "SessionsStore" /* 4855 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
 import size from "module_2" /* 2 */;
 
 let c2 = null;
@@ -25,15 +25,15 @@ class GameConsoleStore extends DeviceSettingsStore {
   getUserAgnosticState() {
     return { lastSelectedDeviceByPlatform: obj2 };
   }
-  getDevicesForPlatform(arg0) {
-    let tmp = closure_5[arg0];
+  getDevicesForPlatform(platform) {
+    let tmp = closure_5[platform];
     if (tmp == null) {
       tmp = closure_8;
     }
     return tmp;
   }
-  getLastSelectedDeviceByPlatform(arg0) {
-    return obj2[arg0];
+  getLastSelectedDeviceByPlatform(platform) {
+    return obj2[platform];
   }
   getDevice(arg0, arg1) {
     let tmp2;
@@ -42,8 +42,8 @@ class GameConsoleStore extends DeviceSettingsStore {
     }
     return tmp2;
   }
-  getFetchingDevices(arg0) {
-    return set1.has(arg0);
+  getFetchingDevices(platform) {
+    return set1.has(platform);
   }
   getPendingDeviceCommands() {
     return set;

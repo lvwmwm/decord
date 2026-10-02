@@ -1,17 +1,20 @@
-// Module ID: 12041
-// Function ID: 12042
+// Module ID: 11951
+// Function ID: 11952
 // Name: GuildPowerupsDisabledWarning
-// Dependencies: [17, 21, 4836, 576, 8048, 4832, 2]
-// Exports: default
+// Dependencies: [17, 21, 4837, 588, 558, 576, 8052, 4833, 2]
 
-// Module 12041 (GuildPowerupsDisabledWarning)
+// Module 11951 (GuildPowerupsDisabledWarning)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import WarningIcon2 from "WarningIcon" /* 8048 */;
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import WarningIcon2 from "WarningIcon" /* 8052 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let text;
 
 let closure_4;
 let hasOwnProperty;
@@ -21,9 +24,49 @@ const View = react_native.View;
 let obj = { container: obj2, text: { flex: 1 } };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, borderColor: nativeDefault.colors.STATUS_WARNING_BACKGROUND, borderWidth: 1, borderRadius: nativeDefault.radii.lg, padding: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING };
 let closure_6 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsDisabledWarning.tsx");
-
-export default function GuildPowerupsDisabledWarning(text) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
+  let first;
+  let items;
+  const obj = react;
+  const cResult = obj.c(7);
+  text = text.text;
+  const tmp4 = closure_6();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING, size: "md" };
+    const WarningIcon = tmp(8052).WarningIcon;
+    const tmp8 = React3(WarningIcon, obj2);
+    cResult[0] = tmp8;
+    first = tmp8;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === tmp4.text) {
+    let tmp9;
+    if (cResult[2] === text) {
+      tmp9 = cResult[3];
+    }
+    if (cResult[4] === tmp4.container) {
+      let tmp11;
+      if (cResult[5] === tmp9) {
+        tmp11 = cResult[6];
+      }
+      return tmp11;
+    }
+    const obj3 = { style: tmp4.container, children: items };
+    items = [first, tmp9];
+    const tmp14 = hasOwnProperty(View, obj3);
+    cResult[4] = tmp4.container;
+    cResult[5] = tmp9;
+    cResult[6] = tmp14;
+    tmp11 = tmp14;
+  }
+  const obj4 = { style: tmp4.text, variant: "text-md/semibold", color: "text-feedback-warning", children: text };
+  const tmp10 = React3(Text_Text.Text, obj4);
+  cResult[1] = tmp4.text;
+  cResult[2] = text;
+  cResult[3] = tmp10;
+  tmp9 = tmp10;
+}) : ((text) => {
   let items;
   text = text.text;
   const tmp = closure_6();
@@ -34,4 +77,7 @@ export default function GuildPowerupsDisabledWarning(text) {
   const obj3 = { style: tmp.text, variant: "text-md/semibold", color: "text-feedback-warning", children: text };
   items[1] = React3(Text_Text.Text, obj3);
   return hasOwnProperty(View, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsDisabledWarning.tsx");
+
+export default tmp3;

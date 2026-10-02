@@ -1,12 +1,12 @@
 // Module ID: 10029
 // Function ID: 10030
-// Dependencies: [41, 42, 93, 95, 98, 10024, 9897, 9898, 10026]
+// Dependencies: [41, 42, 93, 95, 98, 9932, 10026, 9933, 9939]
 
 // Module 10029
-import EmptyDuration from "EmptyDuration" /* 9897 */;
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9898 */;
-import REGEX_PARTS from "REGEX_PARTS" /* 10024 */;
-import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 10026 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9932 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 9933 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9939 */;
+import _mod10026 from "module_10026" /* 10026 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -28,12 +28,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class RUTimeUnitAgoFormatParser {
+const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod10026.MONTH_DICTIONARY);
+const regExp = new RegExp("(" + matchAnyPatternResult + ")\\s*(?:[,-]?\\s*(" + _mod10026.YEAR_PATTERN + ")?)?(?=[^\\s\\w]|\\s+[^0-9]|\\s+$|$)", "i");
+class NLMonthNameParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, RUTimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(RUTimeUnitAgoFormatParser);
+    _classCallCheck(this, NLMonthNameParser);
+    const obj = _getPrototypeOf(NLMonthNameParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,24 +47,30 @@ class RUTimeUnitAgoFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(RUTimeUnitAgoFormatParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftBoundaryChecking);
+_inherits(NLMonthNameParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(" + REGEX_PARTS.TIME_UNITS_PATTERN + ")\\s{0,5}\u043D\u0430\u0437\u0430\u0434(?=(?:\\W|$))";
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = REGEX_PARTS.parseDuration(arg1[1]);
-      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+    value: function innerExtract(createParsingComponents, arg1) {
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      parsingComponents.imply("day", 1);
+      const tmp4 = _mod10026.MONTH_DICTIONARY[arg1[1].toLowerCase(arg1[1])];
+      parsingComponents.assign("month", tmp4);
+      if (arg1[2]) {
+        parsingComponents.assign("year", _mod10026.parseYear(arg1[2]));
+      } else {
+        parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, 1, tmp4));
+      }
+      return parsingComponents;
     }
   }
 ];
 
-export default _createClass(RUTimeUnitAgoFormatParser, items);
+export default _createClass(NLMonthNameParser, items);

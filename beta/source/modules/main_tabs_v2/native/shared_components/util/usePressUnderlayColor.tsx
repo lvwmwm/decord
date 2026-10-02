@@ -1,22 +1,59 @@
-// Module ID: 16811
-// Function ID: 16812
+// Module ID: 17043
+// Function ID: 17044
 // Name: usePressUnderlayColor
-// Dependencies: [16812, 4767, 4531, 576, 4683, 4685, 2]
-// Exports: default
+// Dependencies: [17044, 558, 576, 4769, 4535, 588, 4685, 4687, 2]
 
-// Module 16811 (usePressUnderlayColor)
-import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4531 */;
-import ColorUtils from "ColorUtils" /* 4683 */;
-import shared from "shared" /* 4685 */;
-import useThemeDefault from "useTheme" /* 4767 */;
-import ChannelEmojiConstants from "ChannelEmojiConstants" /* 16812 */;
+// Module 17043 (usePressUnderlayColor)
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import useToken from "useToken" /* 4535 */;
+import ColorUtils from "ColorUtils" /* 4685 */;
+import shared from "shared" /* 4687 */;
+import useThemeDefault from "useTheme" /* 4769 */;
+import ChannelEmojiConstants from "ChannelEmojiConstants" /* 17044 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = ChannelEmojiConstants.DEFAULT_CHANNEL_EMOJI_BACKGROUND_COLOR;
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/util/usePressUnderlayColor.tsx");
-
-export default function usePressUnderlayColor(arr) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+  const obj = react;
+  const cResult = obj.c(4);
+  const tmp4 = useThemeDefault();
+  const obj2 = useToken;
+  const token = obj2.useToken(nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE);
+  if (cResult[0] === arr) {
+    if (cResult[1] === token) {
+      let tmp6;
+      if (cResult[2] === tmp4) {
+        tmp6 = cResult[3];
+      }
+      return tmp6;
+    }
+  }
+  let substr;
+  if (arr != null) {
+    substr = arr.slice(0, arr.length - 2);
+  }
+  let hexWithOpacityResult = token;
+  if (null != substr) {
+    hexWithOpacityResult = token;
+    if (arr !== closure_3) {
+      const hexWithOpacity = ColorUtils.hexWithOpacity;
+      ColorUtils;
+      let num3 = 0.08;
+      const tmpResult2 = shared;
+      if (tmpResult2.isThemeDark(tmp4)) {
+        num3 = 0.12;
+      }
+      hexWithOpacityResult = hexWithOpacity(substr, num3);
+    }
+  }
+  cResult[0] = arr;
+  cResult[1] = token;
+  cResult[2] = tmp4;
+  cResult[3] = hexWithOpacityResult;
+  tmp6 = hexWithOpacityResult;
+}) : ((arr) => {
   const tmp2 = useThemeDefault();
   const obj = useToken;
   const token = obj.useToken(nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE);
@@ -39,4 +76,7 @@ export default function usePressUnderlayColor(arr) {
     }
   }
   return hexWithOpacityResult;
-};
+});
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/util/usePressUnderlayColor.tsx");
+
+export default tmp2;

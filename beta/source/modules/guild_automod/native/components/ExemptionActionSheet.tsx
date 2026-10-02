@@ -1,18 +1,18 @@
-// Module ID: 17339
-// Function ID: 17340
+// Module ID: 17341
+// Function ID: 17342
 // Name: ExemptionActionSheet
-// Dependencies: [32, 19, 17, 21, 4836, 576, 6470, 5829, 5916, 6571, 6570, 8996, 1115, 4800, 6471, 6476, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 6471, 5830, 4801, 5913, 1127, 8973, 6571, 6472, 6477, 6572, 2]
 
-// Module 17339 (ExemptionActionSheet)
+// Module 17341 (ExemptionActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5829 */;
+import nativeDefault from "native" /* 588 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5830 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,9 +30,169 @@ obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefa
 createStyles = createStyles.createStyles;
 obj3 = { flex: 1, paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_8 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/guild_automod/native/components/ExemptionActionSheet.tsx");
-
-export default function ExemptionActionSheet(getSearchText) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((getId) => {
+  let getSearchText;
+  let initialSelected;
+  let items;
+  let listId;
+  let searchPlaceholder;
+  let title;
+  let tmp11;
+  let tmp4;
+  let obj = initialSelected(getSearchText[7]);
+  const cResult = obj.c(39);
+  ({ title, searchPlaceholder, listId, items, initialSelected } = getId);
+  getId = getId.getId;
+  getSearchText = getId.getSearchText;
+  const renderLabel = getId.renderLabel;
+  const renderIcon = getId.renderIcon;
+  const onSave = getId.onSave;
+  let tmp2 = closure_8();
+  let tmp3 = getId(getSearchText[8])();
+  if (cResult[0] !== initialSelected) {
+    class S {
+      constructor() {
+        set = new Set(initialSelected);
+        return set;
+      }
+    }
+    cResult[0] = initialSelected;
+    cResult[1] = S;
+    tmp4 = S;
+  } else {
+    class S {
+      constructor() {
+        set = new Set(initialSelected);
+        return set;
+      }
+    }
+  }
+  const tmp5 = renderLabel(renderIcon.useState(tmp4), 2);
+  const first = tmp5[0];
+  let closure_7 = tmp5[1];
+  let str = renderLabel(renderIcon.useState(""), 2)[0];
+  renderLabel(renderIcon.useState(""), 2);
+  if ("" !== str) {
+    class S {
+      constructor() {
+        set = new Set(initialSelected);
+        return set;
+      }
+    }
+    closure_8 = str.toLowerCase();
+    const found = items.filter((item) => {
+      const tmp = fuzzysearchDefault;
+      const str = getSearchText(item);
+      return tmp(closure_8, str.toLowerCase());
+    });
+    cResult[2] = getSearchText;
+    cResult[3] = items;
+    cResult[4] = str;
+    cResult[5] = found;
+  }
+  items = tmp8;
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class M {
+      constructor(arg0) {
+        let closure_0 = arg0;
+        let tmp = closure_7((items) => {
+          set = new Set(items);
+          const tmp = closure_0;
+          if (!set.delete(closure_0)) {
+            set.add(tmp);
+          }
+          return set;
+        });
+      }
+    }
+    cResult[6] = M;
+    tmp11 = M;
+  } else {
+    class M {
+      constructor(arg0) {
+        let closure_0 = arg0;
+        let tmp = closure_7((items) => {
+          set = new Set(items);
+          const tmp = closure_0;
+          if (!set.delete(closure_0)) {
+            set.add(tmp);
+          }
+          return set;
+        });
+      }
+    }
+  }
+  M = tmp11;
+  if (cResult[7] === onSave) {
+    class M {
+      constructor(arg0) {
+        let closure_0 = arg0;
+        let tmp = closure_7((items) => {
+          set = new Set(items);
+          const tmp = closure_0;
+          if (!set.delete(closure_0)) {
+            set.add(tmp);
+          }
+          return set;
+        });
+      }
+    }
+    if (cResult[10] === getId) {
+      class M {
+        constructor(arg0) {
+          let closure_0 = arg0;
+          let tmp = closure_7((items) => {
+            set = new Set(items);
+            const tmp = closure_0;
+            if (!set.delete(closure_0)) {
+              set.add(tmp);
+            }
+            return set;
+          });
+        }
+      }
+    }
+    const fn = function q(arg0, arg1) {
+      let tmp4;
+      const tmp2 = getId(items[arg1]);
+      let closure_0 = tmp2;
+      const obj = {
+        start: 0 === arg1,
+        end: arg1 === items.length - 1,
+        icon: tmp4,
+        label: renderLabel(items[arg1]),
+        labelLineClamp: 1,
+        checked: first.has(tmp2),
+        onPress() {
+          return M(closure_0);
+        }
+      };
+      tmp4 = undefined;
+      const TableCheckboxRow = initialSelected(getSearchText[11]).TableCheckboxRow;
+      const tmp3 = first;
+      if (renderIcon != null) {
+        tmp4 = renderIcon(tmp);
+      }
+      return tmp3(TableCheckboxRow, obj, tmp2);
+    };
+    cResult[10] = getId;
+    cResult[11] = renderIcon;
+    cResult[12] = renderLabel;
+    cResult[13] = first;
+    cResult[14] = items;
+    cResult[15] = fn;
+  }
+  class O {
+    constructor() {
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
+      onSave(first);
+    }
+  }
+  cResult[7] = onSave;
+  cResult[8] = first;
+  cResult[9] = O;
+}) : ((getSearchText) => {
   let ActionSheetHeaderPressableText;
   let BottomSheetTitleHeader;
   let getId;
@@ -107,7 +267,7 @@ export default function ExemptionActionSheet(getSearchText) {
       }
     };
     tmp4 = undefined;
-    const TableCheckboxRow = items(getId[8]).TableCheckboxRow;
+    const TableCheckboxRow = items(getId[11]).TableCheckboxRow;
     const tmp3 = onSave;
     if (renderIcon != null) {
       tmp4 = renderIcon(tmp);
@@ -115,9 +275,9 @@ export default function ExemptionActionSheet(getSearchText) {
     return tmp3(TableCheckboxRow, obj, tmp2);
   }, items2);
   let obj = { scrollable: true, startExpanded: true, header: onSave(BottomSheetTitleHeader, obj2), children: items3 };
-  BottomSheet = items(getId[9]).BottomSheet;
+  BottomSheet = items(getId[17]).BottomSheet;
   obj2 = { title, trailing: onSave(ActionSheetHeaderPressableText, obj3) };
-  BottomSheetTitleHeader = items(getId[10]).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = items(getId[14]).BottomSheetTitleHeader;
   obj3 = {
     label: intl.string(items(getId[12]).t.i4jeWR),
     onPress() {
@@ -126,13 +286,16 @@ export default function ExemptionActionSheet(getSearchText) {
       onSave(first);
     }
   };
-  ActionSheetHeaderPressableText = items(getId[11]).ActionSheetHeaderPressableText;
+  ActionSheetHeaderPressableText = items(getId[13]).ActionSheetHeaderPressableText;
   intl = items(getId[12]).intl;
   items3 = [, ];
-  const obj4 = { style: tmp.search, children: onSave(items(getId[14]).SearchField, { size: "md", onChange: tmp7, placeholder: searchPlaceholder }) };
+  const obj4 = { style: tmp.search, children: onSave(items(getId[15]).SearchField, { size: "md", onChange: tmp7, placeholder: searchPlaceholder }) };
   items3[0] = onSave(renderIcon, obj4);
   const obj5 = { inActionSheet: true, keyboardShouldPersistTaps: "handled", style: tmp.list, listId, estimatedListSize: "windowSize", itemSize: tmp2, sections: items4, renderItem: callback1 };
   items4 = [memo.length];
   items3[1] = onSave(require("FastestList"), obj5);
   return first(BottomSheet, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/guild_automod/native/components/ExemptionActionSheet.tsx");
+
+export default tmp4;

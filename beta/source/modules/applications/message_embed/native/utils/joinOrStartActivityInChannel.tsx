@@ -1,14 +1,14 @@
-// Module ID: 11425
-// Function ID: 11426
+// Module ID: 11300
+// Function ID: 11301
 // Name: joinOrStartActivityInChannel
-// Dependencies: [5, 2044, 2045, 2099, 8828, 8782, 8764, 2]
+// Dependencies: [5, 2050, 2051, 2102, 8823, 8777, 8759, 2]
 // Exports: joinOrStartActivityInChannel
 
-// Module 11425 (joinOrStartActivityInChannel)
+// Module 11300 (joinOrStartActivityInChannel)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
 import size from "module_2" /* 2 */;
 
 let analyticsLocations, applicationId, channelId, customId, guild_id, length, referrerId;
@@ -32,7 +32,7 @@ let obj = function _joinOrStartActivityInChannel() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -64,7 +64,7 @@ let obj = function _joinOrStartActivityInChannel() {
               compositeInstanceId = undefined;
               referrerId = 1;
               c5 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

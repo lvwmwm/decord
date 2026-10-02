@@ -1,19 +1,19 @@
 // Module ID: 6405
 // Function ID: 6406
 // Name: UserSettingsAccountActionCreators
-// Dependencies: [5, 1074, 6013, 573, 1271, 6010, 1101, 1393, 510, 5482, 6406, 6409, 6411, 2]
+// Dependencies: [5, 1086, 6008, 585, 1283, 6005, 1113, 1399, 510, 5483, 6406, 6409, 6411, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
 // Module 6405 (UserSettingsAccountActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import router_utils from "router_utils" /* 1101 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6010 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import router_utils from "router_utils" /* 1113 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
 import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 6409 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1074 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6013 */;
+import Constants from "Constants" /* 1086 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6008 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;
@@ -43,7 +43,7 @@ let body = function _saveProfileAndAccountRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -69,7 +69,7 @@ let body = function _saveProfileAndAccountRequest() {
               token = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c4) {
             if (arg0 === 1) {
@@ -188,7 +188,7 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
   ({ avatarDecoration, nameplate, primaryGuildId, displayNameStyles, vadColors, typingIndicatorStyle } = accountUpdateForUpdateRequest);
   ({ username, discriminator, email, emailToken, password, avatarDescription, newPassword, globalName, legacyUsername, avatarOriginalMd5 } = accountUpdateForUpdateRequest);
   let tmp = avatarId;
-  let obj = avatarId(573);
+  let obj = avatarId(585);
   obj.dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
   const user = { username, email, email_token: emailToken, password, avatar, avatar_description: avatarDescription, avatar_id: avatarId, discriminator, global_name: globalName, legacy_username: legacyUsername, new_password: newPassword };
   if (undefined !== avatarDecoration) {
@@ -228,7 +228,7 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
   if (undefined !== typingIndicatorStyle) {
     let result = null;
     if (null != typingIndicatorStyle) {
-      const obj3 = avatar(1393);
+      const obj3 = avatar(1399);
       result = obj3.serializeTypingIndicatorStyle(typingIndicatorStyle);
     }
     user.typing_indicator_style = result;
@@ -253,7 +253,7 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     user.push_voip_token = value2;
   }
   const obj4 = { headers: tmpResult.buildHeadersForMd5({ [avatar(6406).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
-  tmpResult = tmp(5482);
+  tmpResult = tmp(5483);
   const promise = saveProfileAndAccountRequest(user, obj4);
   return promise.then((result) => {
     const obj = DispatcherDefault;

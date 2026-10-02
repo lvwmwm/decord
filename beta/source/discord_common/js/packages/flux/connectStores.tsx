@@ -1,17 +1,17 @@
-// Module ID: 565
-// Function ID: 566
+// Module ID: 575
+// Function ID: 576
 // Name: connectStores
-// Dependencies: [109, 19, 21, 564, 558, 2]
+// Dependencies: [109, 19, 21, 574, 568, 558, 576, 2]
 // Exports: default
 
-// Module 565 (connectStores)
+// Module 575 (connectStores)
 import Fragment from "Fragment" /* 21 */;
-import BatchedStoreListener from "BatchedStoreListener" /* 564 */;
+import BatchedStoreListener from "BatchedStoreListener" /* 574 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let Component, applyArgumentsResult, attachResult, batchedStoreListener, c1, c2, clearResult, detachResult, obj;
+let Component, applyArgumentsResult, attachResult, batchedStoreListener, c1, c2, clearResult, detachResult;
 
 const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("../discord_common/js/packages/flux/connectStores.tsx");
@@ -135,8 +135,26 @@ export default function connectStores(items, arg1, arg2) {
           }
         }
         const prototype = FluxContainer.prototype;
+        let tmp2 = React;
         FluxContainer.displayName = combined;
-        const forwardRefResult = React.forwardRef((childProps, forwardedConnectStoresRef) => <FluxContainer childProps={arg0} forwardedConnectStoresRef={arg1} />);
+        const forwardRef = React.forwardRef;
+        let obj = displayName(closure_1_2[5]);
+        const forwardRefResult = forwardRef(obj.isReactCompilerEnabled() ? ((childProps, forwardedConnectStoresRef) => {
+          const obj = displayName(dependencyMap[6]);
+          const cResult = obj.c(3);
+          if (cResult[0] === childProps) {
+            let tmp2;
+            if (cResult[1] === forwardedConnectStoresRef) {
+              tmp2 = cResult[2];
+            }
+            return tmp2;
+          }
+          const tmp3 = <FluxContainer childProps={arg0} forwardedConnectStoresRef={arg1} />;
+          cResult[0] = childProps;
+          cResult[1] = forwardedConnectStoresRef;
+          cResult[2] = tmp3;
+          tmp2 = tmp3;
+        }) : ((childProps, forwardedConnectStoresRef) => <FluxContainer childProps={arg0} forwardedConnectStoresRef={arg1} />));
         forwardRefResult.displayName = "ForwardRef(" + combined + ")";
         return forwardRefResult;
       };
@@ -160,13 +178,13 @@ export default function connectStores(items, arg1, arg2) {
         applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
         closure_0 = applyArgumentsResult;
         closure_0 = closure_1;
-        memoizedFunction = function memoizedFunction() { /* body not rendered: F71570 */ };
+        memoizedFunction = function memoizedFunction() { /* body not rendered: F80438 */ };
         c1 = null;
         c2 = null;
-        memoizedFunction.getCachedResult = function getCachedResult() { /* body not rendered: F71569 */ };
-        memoizedFunction.clear = function clear() { /* body not rendered: F71571 */ };
+        memoizedFunction.getCachedResult = function getCachedResult() { /* body not rendered: F80437 */ };
+        memoizedFunction.clear = function clear() { /* body not rendered: F80439 */ };
         applyArgumentsResult.memoizedGetStateFromStores = memoizedFunction;
-        batchedStoreListener = new closure_0(closure_2[3]).BatchedStoreListener(closure_0, () => { /* body not rendered: F126862 */ });
+        batchedStoreListener = new closure_0(closure_2[3]).BatchedStoreListener(closure_0, () => { /* body not rendered: F152210 */ });
         applyArgumentsResult.listener = batchedStoreListener;
         return applyArgumentsResult;
       }

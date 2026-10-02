@@ -1,24 +1,26 @@
-// Module ID: 15730
-// Function ID: 15731
+// Module ID: 15727
+// Function ID: 15728
 // Name: MessagesItemAddFriendsWidget
-// Dependencies: [5, 19, 17, 1074, 21, 12830, 576, 4836, 7826, 4527, 1115, 9275, 7178, 4693, 5435, 4832, 13399, 15731, 2]
+// Dependencies: [5, 19, 17, 1086, 21, 12832, 588, 4837, 7830, 4530, 1127, 9253, 7182, 558, 576, 4695, 4833, 5436, 13401, 15728, 2]
 
-// Module 15730 (MessagesItemAddFriendsWidget)
+// Module 15727 (MessagesItemAddFriendsWidget)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import intl5 from "intl" /* 1115 */;
-import RootNavigationRef from "RootNavigationRef" /* 4693 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import Pressables from "Pressables" /* 5435 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7826 */;
-import IconActionButton from "IconActionButton" /* 12830 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13399 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15731 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl5 from "intl" /* 1127 */;
+import RootNavigationRef from "RootNavigationRef" /* 4695 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import Pressables from "Pressables" /* 5436 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7830 */;
+import IconActionButton from "IconActionButton" /* 12832 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13401 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15728 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const IconActionButtonDefault = IconActionButton;
@@ -46,7 +48,7 @@ let obj = function _getFriendInviteCode() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -124,7 +126,7 @@ obj = function _handleShare() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -163,7 +165,7 @@ obj = function _handleShare() {
           const PJf9P9 = closure_129_0(closure_129_2[10]).t.PJf9P9;
           handleOpenShareSheet(closure_0, null, formatToPlainString(PJf9P9, obj5), closure_129_6.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp6) {
         c3 = 3;
@@ -188,7 +190,7 @@ obj = function _handleLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -222,7 +224,7 @@ obj = function _handleLink() {
           obj = closure_129_0(closure_129_2[11]);
           obj.handleCopy(closure_0, null, closure_129_6.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp14) {
         c3 = 3;
@@ -244,7 +246,140 @@ obj3 = { flexDirection: "row", alignItems: "center", borderRadius: nativeDefault
 obj4 = { paddingHorizontal: nativeDefault.space.PX_8, flexDirection: "row", justifyContent: "flex-end" };
 obj5 = { marginEnd: 0, marginStart: nativeDefault.space.PX_8 };
 let closure_9 = createStyles(obj);
-const memoResult = react.memo(function MessagesItemAddFriendsWidget() {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let actionIcon;
+  let actions;
+  let first;
+  let intl2;
+  let items;
+  let items1;
+  let tmp11;
+  let tmp14;
+  let tmp16;
+  let tmp22;
+  let tmp24;
+  let tmp6;
+  let tmp8;
+  obj = react2;
+  const cResult = obj.c(19);
+  const tmp4 = closure_9();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
+      obj = RootNavigationRef;
+      const rootNavigationRef = obj.getRootNavigationRef();
+      if (rootNavigationRef != null) {
+        const current = rootNavigationRef.current;
+        if (current != null) {
+          const obj2 = { screen: "add-friends", params: { sourcePage: "Add Friends Widget", presentation: "card" } };
+          current.navigate("friends", obj2);
+        }
+      }
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const container = tmp4.container;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl5.t.afcl67);
+    cResult[1] = stringResult;
+    tmp6 = stringResult;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2, children: intl2.string(intl5.t.afcl67) };
+    const Text = tmp(4833).Text;
+    intl2 = tmp(1127).intl;
+    const tmp10 = metroImportDefault(Text, obj2);
+    cResult[2] = tmp10;
+    tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] !== tmp4.title) {
+    const obj3 = { accessibilityLabel: tmp6, accessibilityRole: "button", onPress: first, style: tmp4.title, children: tmp8 };
+    const tmp13 = metroImportDefault(Pressables.PressableHighlight, obj3);
+    cResult[3] = tmp4.title;
+    cResult[4] = tmp13;
+    tmp11 = tmp13;
+  } else {
+    tmp11 = cResult[4];
+  }
+  ({ actions, actionIcon } = tmp4);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl3 = tmp(1127).intl;
+    const stringResult1 = intl3.string(intl5.t.Ej3B3Y);
+    cResult[5] = stringResult1;
+    tmp14 = stringResult1;
+  } else {
+    tmp14 = cResult[5];
+  }
+  if (cResult[6] !== tmp4.actionIcon) {
+    const obj4 = { style: actionIcon, variant: "filled", source: AssetRegistryDefault, onPress: handleShare, accessibilityLabel: tmp14 };
+    const tmp19 = IconActionButtonDefault;
+    const tmp21 = metroImportDefault(tmp19, obj4);
+    cResult[6] = tmp4.actionIcon;
+    cResult[7] = tmp21;
+    tmp16 = tmp21;
+  } else {
+    tmp16 = cResult[7];
+  }
+  const actionIcon2 = tmp4.actionIcon;
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl4 = tmp(1127).intl;
+    const stringResult2 = intl4.string(intl5.t.WqhZss);
+    cResult[8] = stringResult2;
+    tmp22 = stringResult2;
+  } else {
+    tmp22 = cResult[8];
+  }
+  if (cResult[9] !== tmp4.actionIcon) {
+    const obj5 = { style: actionIcon2, variant: "filled", source: AssetRegistryDefault2, onPress: handleLink, accessibilityLabel: tmp22 };
+    const tmp27 = IconActionButtonDefault;
+    const tmp29 = metroImportDefault(tmp27, obj5);
+    cResult[9] = tmp4.actionIcon;
+    cResult[10] = tmp29;
+    tmp24 = tmp29;
+  } else {
+    tmp24 = cResult[10];
+  }
+  if (cResult[11] === tmp4.actions) {
+    if (cResult[12] === tmp24) {
+      let tmp30;
+      if (cResult[13] === tmp16) {
+        tmp30 = cResult[14];
+      }
+      if (cResult[15] === tmp4.container) {
+        if (cResult[16] === tmp30) {
+          let tmp32;
+          if (cResult[17] === tmp11) {
+            tmp32 = cResult[18];
+          }
+          return tmp32;
+        }
+      }
+      const obj6 = { style: container, collapsable: false, children: items };
+      items = [tmp11, tmp30];
+      const tmp35 = metroImportAll(View, obj6);
+      cResult[15] = tmp4.container;
+      cResult[16] = tmp30;
+      cResult[17] = tmp11;
+      cResult[18] = tmp35;
+      tmp32 = tmp35;
+    }
+  }
+  const obj7 = { style: actions, children: items1 };
+  items1 = [tmp16, tmp24];
+  const tmp31 = metroImportAll(View, obj7);
+  cResult[11] = tmp4.actions;
+  cResult[12] = tmp24;
+  cResult[13] = tmp16;
+  cResult[14] = tmp31;
+  tmp30 = tmp31;
+}) : (() => {
   let Text;
   let intl;
   let intl2;
@@ -284,7 +419,7 @@ const memoResult = react.memo(function MessagesItemAddFriendsWidget() {
   items1[1] = metroImportDefault(tmp4, obj6);
   items[1] = metroImportAll(View, obj4);
   return metroImportAll(View, obj);
-});
+}));
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemAddFriendsWidget.tsx");
 
 export default memoResult;

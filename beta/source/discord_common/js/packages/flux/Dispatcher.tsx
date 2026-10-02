@@ -1,16 +1,16 @@
-// Module ID: 566
-// Function ID: 567
+// Module ID: 578
+// Function ID: 579
 // Name: flux/Dispatcher
-// Dependencies: [4, 567, 10, 38, 508, 509, 571, 572, 2]
+// Dependencies: [4, 579, 10, 38, 508, 509, 583, 584, 2]
 
-// Module 566 (flux/Dispatcher)
+// Module 578 (flux/Dispatcher)
 import logger_Logger from "logger/Logger" /* 4 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import _modDef38 from "module_38" /* 38 */;
 import EmitterDefault from "Emitter" /* 508 */;
 import LastFewActionsAll from "LastFewActions" /* 509 */;
-import profiling from "profiling" /* 571 */;
-import DepGraph from "DepGraph" /* 572 */;
+import profiling from "profiling" /* 583 */;
+import DepGraph from "DepGraph" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let _self;
@@ -174,7 +174,7 @@ class Dispatcher {
     if (Default === undefined) {
       num = 0;
     }
-    const merged = Object.assign({ _interceptors: null, _subscriptions: null, _waitQueue: null, _processingWaitQueue: false, _currentDispatchActionType: null, _actionHandlers: null, _sentryUtils: "Array", functionCache: false });
+    const merged = Object.assign({ _interceptors: null, _subscriptions: null, _waitQueue: null, _processingWaitQueue: false, _currentDispatchActionType: null, _actionHandlers: null, _sentryUtils: "Array", functionCache: "\u{1F469}\u{1F3FE}\u200D\u2764\uFE0F\u200D\u{1F48B}\u200D\u{1F468}\u{1F3FF}" });
     merged[0] = [];
     merged[1] = {};
     merged[2] = [];
@@ -194,7 +194,7 @@ class Dispatcher {
       if (null == actionLogger) {
         const self3 = this;
         const self4 = this;
-        actionLogger1 = new tmp6(567).ActionLogger();
+        actionLogger1 = new tmp6(579).ActionLogger();
       }
       merged.actionLogger = actionLogger1;
       actionLogger = merged.actionLogger;

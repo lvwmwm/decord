@@ -1,34 +1,34 @@
-// Module ID: 16651
-// Function ID: 16652
+// Module ID: 16653
+// Function ID: 16654
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 2063, 2045, 2102, 2067, 4469, 4479, 1372, 1074, 21, 4836, 576, 1485, 1613, 504, 11106, 11105, 4474, 1086, 9018, 4849, 1979, 4678, 5203, 1115, 4525, 2111, 2053, 16652, 7288, 4832, 4989, 10404, 5917, 1177, 5999, 16656, 1364, 16657, 2]
+// Dependencies: [32, 5, 19, 17, 2069, 2051, 2105, 2073, 4472, 4482, 1378, 1086, 21, 4837, 588, 1491, 1619, 504, 10974, 10973, 4477, 1098, 8995, 4850, 1985, 4680, 5204, 1127, 4528, 2114, 2059, 16654, 7292, 4833, 4990, 10446, 5916, 1189, 5997, 16658, 1370, 16659, 2]
 // Exports: default
 
-// Module 16651 (ChannelSettingsPermissionsOverrides)
+// Module 16653 (ChannelSettingsPermissionsOverrides)
 import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import useNavigation from "useNavigation" /* 1485 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 2053 */;
-import GuildRecord from "GuildRecord" /* 2063 */;
-import PermissionUtils from "PermissionUtils" /* 4474 */;
-import TableRowGroup2 from "TableRowGroup" /* 5999 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11105 */;
-import useAppChannelApplication from "useAppChannelApplication" /* 11106 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 16652 */;
+import nativeDefault from "native" /* 588 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import useNavigation from "useNavigation" /* 1491 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 2059 */;
+import GuildRecord from "GuildRecord" /* 2069 */;
+import PermissionUtils from "PermissionUtils" /* 4477 */;
+import TableRowGroup2 from "TableRowGroup" /* 5997 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 10973 */;
+import useAppChannelApplication from "useAppChannelApplication" /* 10974 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 16654 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildRoleStore from "GuildRoleStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,11 +46,11 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const intl5 = tmp2(1115);
-const native = tmp2(1177);
-const Text_Text = tmp2(4832);
-const useChannelName = tmp2(4989);
-const TableRow2 = tmp2(5917);
+const intl5 = tmp2(1127);
+const native = tmp2(1189);
+const Text_Text = tmp2(4833);
+const useChannelName = tmp2(4990);
+const TableRow2 = tmp2(5916);
 ({ View: metroImportDefault, ScrollView: metroImportAll } = react_native);
 const isGuildOwner = GuildRecord.isGuildOwner;
 ({ PermissionOverrideType: closure_16, HelpdeskArticles: closure_17, Permissions: closure_18 } = Constants);
@@ -89,7 +89,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
   let obj = useNavigation;
   navigation = obj.useNavigation();
   let tmp5 = id;
-  const bottom = id(1613)().bottom;
+  const bottom = id(1619)().bottom;
   let obj2 = get_initialized;
   let items = [first];
   const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(require));
@@ -123,7 +123,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -234,7 +234,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
               show(obj17);
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else if (arg0 === 1) {
           c5 = 3;
@@ -245,7 +245,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
           return obj;
         } else if (!value) {
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
         const obj6 = fromCreate(section[21]);
         obj10.deny = obj6.add(obj10.deny, closure_0);
@@ -270,15 +270,15 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
         if (stateFromStores.isGuildStageVoice()) {
           const STAGE_CHANNEL_DISABLED_PERMISSIONS = StageChannelPermissions.STAGE_CHANNEL_DISABLED_PERMISSIONS;
           if (STAGE_CHANNEL_DISABLED_PERMISSIONS.has(arg0)) {
-            const intl3 = tmp11(1115).intl;
-            stringResult = intl3.string(tmp11(1115).t.bTS5lf);
+            const intl3 = tmp11(1127).intl;
+            stringResult = intl3.string(tmp11(1127).t.bTS5lf);
           }
           return stringResult;
         }
         const obj2 = AppChannelPermissionUtils;
         if (obj2.isAppChannelFloorPermission(appChannelBotUserId, id, arg0)) {
-          const intl2 = tmp13(1115).intl;
-          stringResult = intl2.string(tmp13(1115).t.yXmgpP);
+          const intl2 = tmp13(1127).intl;
+          stringResult = intl2.string(tmp13(1127).t.yXmgpP);
         } else {
           stringResult = arg0 === constants.MANAGE_ROLES && !canResult;
           if (!stringResult) {
@@ -286,8 +286,8 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
             const tmp19 = null != arg0 && !PermissionStore.can(arg0, guild) && !canResult;
           }
           if (stringResult) {
-            const intl = tmp13(1115).intl;
-            stringResult = intl.string(tmp13(1115).t.nOtPMM);
+            const intl = tmp13(1127).intl;
+            stringResult = intl.string(tmp13(1127).t.nOtPMM);
           }
         }
       }
@@ -307,7 +307,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
       ALLOW = PermissionUtils.ALLOW;
     } else {
       let deny;
-      const has2 = tmp2(1086).has;
+      const has2 = tmp2(1098).has;
       BigFlagUtilsAll;
       if (stateFromStores.permissionOverwrites[id] != null) {
         deny = tmp.deny;
@@ -351,7 +351,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
   const tmp13 = closure_19(Text, obj5);
   if (type === constants.MEMBER) {
     let obj6 = { userId: id, guildId: stateFromStores.guild_id, start: true, end: true, trailing: tmp13 };
-    tmp12Result = tmp12(tmp5(10404), obj6);
+    tmp12Result = tmp12(tmp5(10446), obj6);
   } else {
     let TableRow = TableRow2.TableRow;
     const role = GuildRoleStore.getRole(stateFromStores.guild_id, id);

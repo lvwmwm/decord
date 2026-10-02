@@ -1,34 +1,20 @@
 // Module ID: 12383
 // Function ID: 12384
-// Dependencies: [12315]
-// Exports: applySdkMetadata
+// Dependencies: [12382]
+// Exports: getTraceMetaTags
 
 // Module 12383
-import _mod12315 from "module_12315" /* 12315 */;
+import _mod12382 from "module_12382" /* 12382 */;
 
 
-export const applySdkMetadata = function applySdkMetadata(_metadata, arg1) {
-  let arr = arg2;
-  if (arg2 === undefined) {
-    const items = [arg1];
-    arr = items;
-  }
-  let str = arg3;
-  if (arg3 === undefined) {
-    str = "npm";
-  }
-  const tmp = _metadata._metadata || {};
-  if (!tmp.sdk) {
-    let obj = {
-      name: "sentry.javascript." + arg1,
-      packages: arr.map((item) => {
-          const obj = { name: "" + str + ":@sentry/" + item, version: _mod12315.SDK_VERSION };
-          return obj;
-        }),
-      version: str(12315).SDK_VERSION
-    };
-    const _HermesInternal = HermesInternal;
-    tmp.sdk = obj;
-  }
-  _metadata._metadata = tmp;
+export const getTraceMetaTags = function getTraceMetaTags() {
+  const obj = _mod12382;
+  const entries1 = entries(obj.getTraceData());
+  const mapped = entries1.map((item) => {
+    let tmp;
+    let tmp2;
+    [tmp, tmp2] = item;
+    return "<meta name=\"" + tmp + "\" content=\"" + tmp2 + "\"/>";
+  });
+  return mapped.join("\n");
 };

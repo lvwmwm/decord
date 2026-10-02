@@ -1,11 +1,11 @@
-// Module ID: 12449
-// Function ID: 12450
+// Module ID: 12447
+// Function ID: 12448
 // Name: vibegrationsPreviewOperationSurfaces
-// Dependencies: [12446, 2]
+// Dependencies: [12444, 2]
 // Exports: createPreviewOperationSurfaces
 
-// Module 12449 (vibegrationsPreviewOperationSurfaces)
-import vibegrationsPreviewControlLease from "vibegrationsPreviewControlLease" /* 12446 */;
+// Module 12447 (vibegrationsPreviewOperationSurfaces)
+import vibegrationsPreviewControlLease from "vibegrationsPreviewControlLease" /* 12444 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, map;

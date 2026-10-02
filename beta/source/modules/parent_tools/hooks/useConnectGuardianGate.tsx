@@ -1,28 +1,281 @@
-// Module ID: 17224
-// Function ID: 17225
+// Module ID: 17226
+// Function ID: 17227
 // Name: useConnectGuardianGate
-// Dependencies: [32, 19, 6957, 504, 6959, 5298, 2]
-// Exports: useConnectGuardianGate
+// Dependencies: [32, 19, 6961, 558, 576, 504, 6963, 5297, 2]
 
-// Module 17224 (useConnectGuardianGate)
+// Module 17226 (useConnectGuardianGate)
 import get_initialized from "get initialized" /* 504 */;
-import useMountEffectDefault from "useMountEffect" /* 5298 */;
+import useMountEffectDefault from "useMountEffect" /* 5297 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
+let catchPromise, dependencyMap, importDefault;
 
-const result = size.fileFinishedImporting("modules/parent_tools/hooks/useConnectGuardianGate.tsx");
-
-export const useConnectGuardianGate = function useConnectGuardianGate() {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_0;
+  let closure_1;
+  let expiresAt;
+  let first;
+  let linkCode;
+  let ref;
+  let tmp11;
+  let tmp13;
+  let tmp15;
+  let tmp4;
+  let tmp5;
+  let tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(10);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [FamilyCenterStore];
+    const fn = function s() {
+      const obj = { linkCode: FamilyCenterStore.getLinkCode(), expiresAt: FamilyCenterStore.getLinkCodeExpiresAt() };
+      return obj;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp4, tmp5);
+  ({ linkCode, expiresAt } = stateFromStoresObject);
+  [first, _require] = react.useState(false);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function c() {
+      const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
+      let tmp2 = null != FamilyCenterStore.getLinkCode() && null != linkCodeExpiresAt;
+      if (tmp2) {
+        const _Date = Date;
+        tmp2 = linkCodeExpiresAt > Date.now();
+      }
+      return tmp2;
+    };
+    cResult[2] = fn2;
+    tmp11 = fn2;
+  } else {
+    tmp11 = cResult[2];
+  }
+  importDefault = tmp8(react.useState(tmp11), 2)[1];
+  _slicedToArray(react.useState(tmp11), 2);
+  dependencyMap = obj3.useRef(0);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        sum = closure_2.current + 1;
+        closure_2.current = sum;
+        closure_0 = sum;
+        tmp2 = closure_0(false);
+        obj = closure_0(closure_2[6]);
+        linkCodeForCurrentUser = obj.getLinkCodeForCurrentUser();
+        nextPromise = linkCodeForCurrentUser.then(() => {
+          if (sum === ref.current) {
+            sum(false);
+            closure_1(true);
+          }
+        });
+        catchPromise = nextPromise.catch(() => {
+          if (sum === ref.current) {
+            const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
+            if (null != FamilyCenterStore.getLinkCode()) {
+              if (null != linkCodeExpiresAt) {
+                const _Date = Date;
+                if (linkCodeExpiresAt > Date.now()) {
+                  closure_1(true);
+                }
+              }
+            }
+            sum(true);
+          }
+        });
+        return;
+      }
+    }
+    cResult[3] = S;
+    tmp13 = S;
+  } else {
+    class S {
+      constructor() {
+        sum = closure_2.current + 1;
+        closure_2.current = sum;
+        closure_0 = sum;
+        tmp2 = closure_0(false);
+        obj = closure_0(closure_2[6]);
+        linkCodeForCurrentUser = obj.getLinkCodeForCurrentUser();
+        nextPromise = linkCodeForCurrentUser.then(() => {
+          if (sum === ref.current) {
+            sum(false);
+            closure_1(true);
+          }
+        });
+        catchPromise = nextPromise.catch(() => {
+          if (sum === ref.current) {
+            const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
+            if (null != FamilyCenterStore.getLinkCode()) {
+              if (null != linkCodeExpiresAt) {
+                const _Date = Date;
+                if (linkCodeExpiresAt > Date.now()) {
+                  closure_1(true);
+                }
+              }
+            }
+            sum(true);
+          }
+        });
+        return;
+      }
+    }
+  }
+  useMountEffectDefault(tmp13);
+  if (first) {
+    let tmp16;
+    class S {
+      constructor() {
+        sum = closure_2.current + 1;
+        closure_2.current = sum;
+        closure_0 = sum;
+        tmp2 = closure_0(false);
+        obj = closure_0(closure_2[6]);
+        linkCodeForCurrentUser = obj.getLinkCodeForCurrentUser();
+        nextPromise = linkCodeForCurrentUser.then(() => {
+          if (sum === ref.current) {
+            sum(false);
+            closure_1(true);
+          }
+        });
+        catchPromise = nextPromise.catch(() => {
+          if (sum === ref.current) {
+            const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
+            if (null != FamilyCenterStore.getLinkCode()) {
+              if (null != linkCodeExpiresAt) {
+                const _Date = Date;
+                if (linkCodeExpiresAt > Date.now()) {
+                  closure_1(true);
+                }
+              }
+            }
+            sum(true);
+          }
+        });
+        return;
+      }
+    }
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      class S {
+        constructor() {
+          sum = closure_2.current + 1;
+          closure_2.current = sum;
+          closure_0 = sum;
+          tmp2 = closure_0(false);
+          obj = closure_0(closure_2[6]);
+          linkCodeForCurrentUser = obj.getLinkCodeForCurrentUser();
+          nextPromise = linkCodeForCurrentUser.then(() => {
+            if (sum === ref.current) {
+              sum(false);
+              closure_1(true);
+            }
+          });
+          catchPromise = nextPromise.catch(() => {
+            if (sum === ref.current) {
+              const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
+              if (null != FamilyCenterStore.getLinkCode()) {
+                if (null != linkCodeExpiresAt) {
+                  const _Date = Date;
+                  if (linkCodeExpiresAt > Date.now()) {
+                    closure_1(true);
+                  }
+                }
+              }
+              sum(true);
+            }
+          });
+          return;
+        }
+      }
+      cResult[4] = tmp17;
+      tmp16 = tmp17;
+    } else {
+      class S {
+        constructor() {
+          sum = closure_2.current + 1;
+          closure_2.current = sum;
+          closure_0 = sum;
+          tmp2 = closure_0(false);
+          obj = closure_0(closure_2[6]);
+          linkCodeForCurrentUser = obj.getLinkCodeForCurrentUser();
+          nextPromise = linkCodeForCurrentUser.then(() => {
+            if (sum === ref.current) {
+              sum(false);
+              closure_1(true);
+            }
+          });
+          catchPromise = nextPromise.catch(() => {
+            if (sum === ref.current) {
+              const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
+              if (null != FamilyCenterStore.getLinkCode()) {
+                if (null != linkCodeExpiresAt) {
+                  const _Date = Date;
+                  if (linkCodeExpiresAt > Date.now()) {
+                    closure_1(true);
+                  }
+                }
+              }
+              sum(true);
+            }
+          });
+          return;
+        }
+      }
+    }
+    tmp15 = tmp16;
+  } else {
+    class S {
+      constructor() {
+        sum = closure_2.current + 1;
+        closure_2.current = sum;
+        closure_0 = sum;
+        tmp2 = closure_0(false);
+        obj = closure_0(closure_2[6]);
+        linkCodeForCurrentUser = obj.getLinkCodeForCurrentUser();
+        nextPromise = linkCodeForCurrentUser.then(() => {
+          if (sum === ref.current) {
+            sum(false);
+            closure_1(true);
+          }
+        });
+        catchPromise = nextPromise.catch(() => {
+          if (sum === ref.current) {
+            const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
+            if (null != FamilyCenterStore.getLinkCode()) {
+              if (null != linkCodeExpiresAt) {
+                const _Date = Date;
+                if (linkCodeExpiresAt > Date.now()) {
+                  closure_1(true);
+                }
+              }
+            }
+            sum(true);
+          }
+        });
+        return;
+      }
+    }
+  }
+  return tmp15;
+}) : (() => {
   let closure_1;
   let expiresAt;
   let first;
   let linkCode;
   let obj2;
   let ref;
+  let require;
   let tmp3;
   let obj = get_initialized;
   const items = [FamilyCenterStore];
@@ -46,13 +299,13 @@ export const useConnectGuardianGate = function useConnectGuardianGate() {
   const callback = react.useCallback(() => {
     const sum = ref.current + 1;
     ref.current = sum;
-    require = sum;
+    const require = sum;
     require(false);
     const obj = require("FamilyCenterActionCreators");
     const linkCodeForCurrentUser = obj.getLinkCodeForCurrentUser();
     const nextPromise = linkCodeForCurrentUser.then(() => {
       if (closure_0 === ref.current) {
-        require(false);
+        _require(false);
         closure_1(true);
       }
     });
@@ -67,7 +320,7 @@ export const useConnectGuardianGate = function useConnectGuardianGate() {
             }
           }
         }
-        require(true);
+        _require(true);
       }
     });
   }, []);
@@ -88,4 +341,7 @@ export const useConnectGuardianGate = function useConnectGuardianGate() {
     obj2 = { state: "loading" };
   }
   return obj2;
-};
+});
+const result = size.fileFinishedImporting("modules/parent_tools/hooks/useConnectGuardianGate.tsx");
+
+export const useConnectGuardianGate = tmp2;

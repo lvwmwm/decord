@@ -1,14 +1,14 @@
-// Module ID: 10741
-// Function ID: 10742
+// Module ID: 10705
+// Function ID: 10706
 // Name: handleUsePrimaryEntryPointAppCommand
-// Dependencies: [5, 2045, 1372, 8793, 8827, 8764, 10742, 8782, 2]
+// Dependencies: [5, 2051, 1378, 8788, 8822, 8759, 10706, 8777, 2]
 // Exports: default
 
-// Module 10741 (handleUsePrimaryEntryPointAppCommand)
-import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 8793 */;
+// Module 10705 (handleUsePrimaryEntryPointAppCommand)
+import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 8788 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import UserStore from "UserStore" /* 1372 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 let analyticsLocations, channelId, commandOrigin, componentId, customId, embeddedActivitiesManager, inviterUserId, locationObject, onConfirmActivityLaunchChecksAlertOpen, referrerId, sectionName, source;
@@ -31,7 +31,7 @@ let obj = function _handleUsePrimaryEntryPointAppCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -132,7 +132,7 @@ obj = function _handleUsePrimaryEntryPointAppCommandInternal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -163,7 +163,7 @@ obj = function _handleUsePrimaryEntryPointAppCommandInternal() {
               currentUser = undefined;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else {
             let tmp5;

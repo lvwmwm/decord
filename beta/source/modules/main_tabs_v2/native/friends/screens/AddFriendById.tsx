@@ -1,27 +1,28 @@
-// Module ID: 13400
-// Function ID: 13401
+// Module ID: 13402
+// Function ID: 13403
 // Name: AddFriendById
-// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 1115, 4832, 6031, 13401, 9199, 9195, 4527, 1241, 4541, 6506, 5281, 2]
+// Dependencies: [32, 19, 17, 1086, 21, 4837, 588, 1127, 558, 576, 4833, 6023, 13403, 9211, 9207, 4530, 1253, 4545, 6507, 5282, 2]
 
-// Module 13400 (AddFriendById)
-import nativeDefault from "native" /* 576 */;
-import intl4 from "intl" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import TextField2 from "TextField" /* 6031 */;
-import FriendsUtils from "FriendsUtils" /* 9199 */;
-import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 13401 */;
+// Module 13402 (AddFriendById)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ToastUtils from "ToastUtils" /* 4530 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4545 */;
+import TextField2 from "TextField" /* 6023 */;
+import FriendsUtils from "FriendsUtils" /* 9211 */;
+import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 13403 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, importDefault;
+let dependencyMap, errorMessage, importDefault;
 
 let c10;
 let c9;
@@ -38,16 +39,9 @@ let obj6;
 let obj7;
 let obj8;
 let obj9;
+let tmp;
 let unpackModuleId;
-function ErrorMessage(errorMessage) {
-  let items;
-  errorMessage = errorMessage.errorMessage;
-  const obj = { variant: "text-xs/medium", color: "text-feedback-critical", style: items, children: errorMessage };
-  items = [, ];
-  ({ inputAccessoryText: arr[0], errorStateText: arr[1] } = closure_12());
-  closure_12();
-  return React4(Text_Text.Text, obj);
-}
+const Text_Text = tmp(4833);
 let react = react_mod;
 ({ View: hasOwnProperty, Keyboard: metroRequire } = react_native);
 ({ PLACEHOLDER_TAG: metroImportDefault, AnalyticEvents: metroImportAll } = Constants);
@@ -65,8 +59,48 @@ obj8 = { alignSelf: "stretch", marginTop: nativeDefault.space.PX_16 };
 obj9 = { marginBottom: nativeDefault.space.PX_4 };
 obj10 = { marginTop: nativeDefault.space.PX_4 };
 let closure_12 = createStyles(obj);
-const constants2 = { SUCCESS: 0, [0]: "SUCCESS", ERROR: 1, [1]: "ERROR", LOADING: 2, [2]: "LOADING", NONE: 3, [3]: "NONE" };
-const constants3 = { DISCORD_TAG: "DISCORD_TAG", MESSAGE: "MESSAGE" };
+const constants = { SUCCESS: 0, [0]: "SUCCESS", ERROR: 1, [1]: "ERROR", LOADING: 2, [2]: "LOADING", NONE: 3, [3]: "NONE" };
+const constants2 = { DISCORD_TAG: "DISCORD_TAG", MESSAGE: "MESSAGE" };
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((errorMessage) => {
+  const obj = react2;
+  const cResult = obj.c(6);
+  errorMessage = errorMessage.errorMessage;
+  const tmp4 = closure_12();
+  if (cResult[0] === tmp4.errorStateText) {
+    let tmp5;
+    if (cResult[1] === tmp4.inputAccessoryText) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] === errorMessage) {
+      let tmp6;
+      if (cResult[4] === tmp5) {
+        tmp6 = cResult[5];
+      }
+      return tmp6;
+    }
+    const obj2 = { variant: "text-xs/medium", color: "text-feedback-critical", style: tmp5, children: errorMessage };
+    const tmp8 = React4(Text_Text.Text, obj2);
+    cResult[3] = errorMessage;
+    cResult[4] = tmp5;
+    cResult[5] = tmp8;
+    tmp6 = tmp8;
+  }
+  const items = [, ];
+  ({ inputAccessoryText: arr[0], errorStateText: arr[1] } = tmp4);
+  cResult[0] = tmp4.errorStateText;
+  cResult[1] = tmp4.inputAccessoryText;
+  cResult[2] = items;
+  tmp5 = items;
+}) : ((errorMessage) => {
+  let items;
+  errorMessage = errorMessage.errorMessage;
+  const obj = { variant: "text-xs/medium", color: "text-feedback-critical", style: items, children: errorMessage };
+  items = [, ];
+  ({ inputAccessoryText: arr[0], errorStateText: arr[1] } = closure_12());
+  closure_12();
+  return React4(Text_Text.Text, obj);
+});
 let closure_16 = react.forwardRef((headerTextStyle, ref) => {
   let a11yMessage;
   let autoFocus;
@@ -93,9 +127,9 @@ let closure_16 = react.forwardRef((headerTextStyle, ref) => {
   headerTextStyle = headerTextStyle.headerTextStyle;
   const tmp3 = closure_12();
   let message;
-  const tmp4 = constants2;
-  if (validationState.status === constants2.ERROR) {
-    if (validationState.field === constants3.DISCORD_TAG) {
+  const tmp4 = constants;
+  if (validationState.status === constants.ERROR) {
+    if (validationState.field === constants2.DISCORD_TAG) {
       message = validationState.message;
     }
   }
@@ -114,7 +148,7 @@ let closure_16 = react.forwardRef((headerTextStyle, ref) => {
   if (validationState.status === tmp4.ERROR) {
     a11yMessage = validationState.a11yMessage;
   }
-  intl3 = tmp10(1115).intl;
+  intl3 = tmp10(1127).intl;
   str2 = undefined;
   if (null != message) {
     str2 = "error";
@@ -123,12 +157,497 @@ let closure_16 = react.forwardRef((headerTextStyle, ref) => {
   let tmp9Result = null;
   if (null != message) {
     const obj4 = { errorMessage: message };
-    tmp9Result = tmp9(ErrorMessage, obj4);
+    tmp9Result = tmp9(closure_15, obj4);
   }
   items1[2] = tmp9Result;
   return tmp7(tmp8, obj);
 });
-const forwardRefResult = react.forwardRef((arg0, ref) => {
+const forwardRef = react.forwardRef;
+ReactCompilerGating = ReactCompilerGating_mod;
+const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+  let autoFocusInput;
+  let closure_2;
+  let closure_4;
+  let first;
+  let first1;
+  let headerText;
+  let headerTextStyle;
+  let onFocus;
+  let sourcePage;
+  let str;
+  let style;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp21;
+  let tmp8;
+  let tmp = dependencyMap;
+  let obj = sourcePage(576);
+  const cResult = obj.c(65);
+  ({ style, onFocus, autoFocusInput, headerText, headerTextStyle, sourcePage } = arg0);
+  let tmp3 = closure_12();
+  let obj2 = react;
+  importDefault = react.useRef(0);
+  dependencyMap = react.useRef("");
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function c() {
+      let intl;
+      const obj = { validatedText: "", hint: intl.string(sourcePage(closure_2[7]).t["6p7Mhh"]) };
+      intl = sourcePage(closure_2[7]).intl;
+      return obj;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const tmp5 = first1;
+  const tmp6 = first1(obj2.useState(first), 2);
+  first1 = tmp6[0];
+  react = tmp6[1];
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj3 = { status: constants.NONE };
+    let tmp9 = constants;
+    let num = 1;
+    cResult[1] = obj3;
+    tmp8 = obj3;
+  } else {
+    tmp8 = cResult[1];
+  }
+  const tmp5Result = tmp5(obj2.useState(tmp8), 2);
+  const first2 = tmp5Result[0];
+  let closure_6 = tmp5Result[1];
+  const tmp5Result2 = tmp5(obj2.useState(""), 2);
+  const first3 = tmp5Result2[0];
+  let closure_8 = tmp5Result2[1];
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj4 = { location: "AddFriendbyId" };
+    cResult[2] = obj4;
+    tmp14 = obj4;
+  } else {
+    tmp14 = cResult[2];
+  }
+  let obj5 = FriendRequestMessageExperimentDefault;
+  const enabled = obj5.useConfig(tmp14).enabled;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class V {
+      constructor(nativeEvent) {
+        closure_2.current = nativeEvent.nativeEvent.key;
+      }
+    }
+    let num2 = 3;
+    cResult[3] = V;
+    tmp15 = V;
+  } else {
+    class V {
+      constructor(nativeEvent) {
+        closure_2.current = nativeEvent.nativeEvent.key;
+      }
+    }
+  }
+  if (cResult[4] === first2.field) {
+    class V {
+      constructor(nativeEvent) {
+        closure_2.current = nativeEvent.nativeEvent.key;
+      }
+    }
+    if (cResult[7] === first2.field) {
+      let tmp19;
+      class V {
+        constructor(nativeEvent) {
+          closure_2.current = nativeEvent.nativeEvent.key;
+        }
+      }
+      const _Symbol = Symbol;
+      class J {
+        constructor(str) {
+          closure_8(str.replace(/\n/g, ""));
+          let tmp3 = first2.status === constants.ERROR;
+          const tmp2 = constants;
+          if (tmp3) {
+            tmp3 = first2.field === constants2.MESSAGE;
+          }
+          if (tmp3) {
+            const obj = { status: tmp2.NONE };
+            closure_6(obj);
+          }
+        }
+      }
+      if (tmp18 === Symbol.for("react.memo_cache_sentinel")) {
+        class V {
+          constructor(nativeEvent) {
+            closure_2.current = nativeEvent.nativeEvent.key;
+          }
+        }
+        class J {
+          constructor(str) {
+            closure_8(str.replace(/\n/g, ""));
+            let tmp3 = first2.status === constants.ERROR;
+            const tmp2 = constants;
+            if (tmp3) {
+              tmp3 = first2.field === constants2.MESSAGE;
+            }
+            if (tmp3) {
+              const obj = { status: tmp2.NONE };
+              closure_6(obj);
+            }
+          }
+        }
+        tmp19 = tmp20;
+      } else {
+        class V {
+          constructor(nativeEvent) {
+            closure_2.current = nativeEvent.nativeEvent.key;
+          }
+        }
+      }
+      if (cResult[11] === first3) {
+        class V {
+          constructor(nativeEvent) {
+            closure_2.current = nativeEvent.nativeEvent.key;
+          }
+        }
+        if (cResult[14] !== sourcePage) {
+          class V {
+            constructor(nativeEvent) {
+              closure_2.current = nativeEvent.nativeEvent.key;
+            }
+          }
+          const items = [];
+          class J {
+            constructor(str) {
+              closure_8(str.replace(/\n/g, ""));
+              let tmp3 = first2.status === constants.ERROR;
+              const tmp2 = constants;
+              if (tmp3) {
+                tmp3 = first2.field === constants2.MESSAGE;
+              }
+              if (tmp3) {
+                const obj = { status: tmp2.NONE };
+                closure_6(obj);
+              }
+            }
+          }
+          cResult[14] = sourcePage;
+          cResult[15] = items;
+          cResult[16] = tmp24;
+          let tmp22 = items;
+        } else {
+          class V {
+            constructor(nativeEvent) {
+              closure_2.current = nativeEvent.nativeEvent.key;
+            }
+          }
+        }
+        class J {
+          constructor(str) {
+            closure_8(str.replace(/\n/g, ""));
+            let tmp3 = first2.status === constants.ERROR;
+            const tmp2 = constants;
+            if (tmp3) {
+              tmp3 = first2.field === constants2.MESSAGE;
+            }
+            if (tmp3) {
+              const obj = { status: tmp2.NONE };
+              closure_6(obj);
+            }
+          }
+        }
+        if (cResult[17] === first2.a11yMessage) {
+          class V {
+            constructor(nativeEvent) {
+              closure_2.current = nativeEvent.nativeEvent.key;
+            }
+          }
+          if (cResult[20] !== first2) {
+            class V {
+              constructor(nativeEvent) {
+                closure_2.current = nativeEvent.nativeEvent.key;
+              }
+            }
+            tmp27[0] = first2;
+            class J {
+              constructor(str) {
+                closure_8(str.replace(/\n/g, ""));
+                let tmp3 = first2.status === constants.ERROR;
+                const tmp2 = constants;
+                if (tmp3) {
+                  tmp3 = first2.field === constants2.MESSAGE;
+                }
+                if (tmp3) {
+                  const obj = { status: tmp2.NONE };
+                  closure_6(obj);
+                }
+              }
+            }
+            cResult[20] = first2;
+            cResult[21] = tmp27;
+          } else {
+            class V {
+              constructor(nativeEvent) {
+                closure_2.current = nativeEvent.nativeEvent.key;
+              }
+            }
+          }
+          class J {
+            constructor(str) {
+              closure_8(str.replace(/\n/g, ""));
+              let tmp3 = first2.status === constants.ERROR;
+              const tmp2 = constants;
+              if (tmp3) {
+                tmp3 = first2.field === constants2.MESSAGE;
+              }
+              if (tmp3) {
+                const obj = { status: tmp2.NONE };
+                closure_6(obj);
+              }
+            }
+          }
+          if (cResult[22] !== first1.validatedText) {
+            class V {
+              constructor(nativeEvent) {
+                closure_2.current = nativeEvent.nativeEvent.key;
+              }
+            }
+            let trimmed = str.trim();
+            class J {
+              constructor(str) {
+                closure_8(str.replace(/\n/g, ""));
+                let tmp3 = first2.status === constants.ERROR;
+                const tmp2 = constants;
+                if (tmp3) {
+                  tmp3 = first2.field === constants2.MESSAGE;
+                }
+                if (tmp3) {
+                  const obj = { status: tmp2.NONE };
+                  closure_6(obj);
+                }
+              }
+            }
+            cResult[22] = first1.validatedText;
+            cResult[23] = trimmed;
+          } else {
+            class V {
+              constructor(nativeEvent) {
+                closure_2.current = nativeEvent.nativeEvent.key;
+              }
+            }
+          }
+          if (cResult[24] === style) {
+            class V {
+              constructor(nativeEvent) {
+                closure_2.current = nativeEvent.nativeEvent.key;
+              }
+            }
+            class J {
+              constructor(str) {
+                closure_8(str.replace(/\n/g, ""));
+                let tmp3 = first2.status === constants.ERROR;
+                const tmp2 = constants;
+                if (tmp3) {
+                  tmp3 = first2.field === constants2.MESSAGE;
+                }
+                if (tmp3) {
+                  const obj = { status: tmp2.NONE };
+                  closure_6(obj);
+                }
+              }
+            }
+            const obj6 = { textState: first1, onChangeText: tmp16, onSelectionChange: tmp19, onKeyPress: tmp15, onSubmitEditing: tmp21, onFocus, validationState: first2, autoFocus: autoFocusInput, headerText, headerTextStyle, ref };
+            cResult[27] = autoFocusInput;
+            cResult[28] = tmp16;
+            cResult[29] = tmp21;
+            cResult[30] = headerText;
+            cResult[31] = headerTextStyle;
+            cResult[32] = onFocus;
+            cResult[33] = ref;
+            cResult[34] = first1;
+            cResult[35] = first2;
+            cResult[36] = closure_9(closure_16, obj6);
+            const tmp35 = closure_9(closure_16, obj6);
+          }
+          const items1 = [tmp3.container, style];
+          cResult[24] = style;
+          cResult[25] = tmp3.container;
+          cResult[26] = items1;
+        }
+        function re() {
+          const tmp2 = first2.status === constants.ERROR && null != tmp.a11yMessage;
+          if (tmp2) {
+            const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+            AccessibilityAnnouncer.announce(first2.a11yMessage);
+          }
+        }
+        cResult[17] = first2.a11yMessage;
+        cResult[18] = first2.status;
+        cResult[19] = re;
+      }
+      function te() {
+        let intl;
+        let tmp9;
+        const str = first1.validatedText;
+        let trimmed = str.trim();
+        const trimmed1 = first3.trim();
+        if (trimmed.length <= 0) {
+          let obj2 = { status: constants.ERROR, field: constants2.DISCORD_TAG, message: intl.string(sourcePage(closure_2[7]).t.mxnceg) };
+          intl = sourcePage(closure_2[7]).intl;
+          const tmp22 = closure_6(obj2);
+        } else {
+          const hasItem = trimmed.includes("#");
+          let tmp2 = trimmed;
+          const startsWithResult = !hasItem && trimmed.startsWith("@");
+          if (startsWithResult) {
+            let num = 1;
+            const substr = trimmed.substring(1);
+            trimmed = substr;
+            tmp2 = substr;
+          }
+          let obj = sourcePage(closure_2[13]);
+          const validateDiscordTagResult = obj.validateDiscordTag(tmp2);
+          if (null != validateDiscordTagResult) {
+            let obj3 = { status: constants.ERROR, field: constants2.DISCORD_TAG, message: validateDiscordTagResult };
+            closure_6(obj3);
+          } else {
+            let obj4 = { status: constants.LOADING };
+            closure_6(obj4);
+            const obj5 = { discordTag: tmp2, context: { location: "Search - Add Friend Search" }, errorUxConfig: sourcePage(closure_2[14]).RelationshipErrorUXConfig.SHOW_ONLY_IF_ACTION_NEEDED, note: tmp9 };
+            const sendRequest = ref(closure_2[14]).sendRequest;
+            ref(closure_2[14]);
+            tmp9 = undefined;
+            if (trimmed1.length > 0) {
+              tmp9 = trimmed1;
+            }
+            const sendRequestResult = sendRequest(obj5);
+            sendRequestResult.then(() => {
+              let intl;
+              let intl2;
+              let obj3;
+              const obj = { validatedText: "", hint: intl.string(intl4.t["6p7Mhh"]) };
+              intl = intl4.intl;
+              closure_4(obj);
+              closure_8("");
+              const obj2 = { status: constants.SUCCESS, message: intl2.format(intl4.t.Rtl1Ep, obj3) };
+              intl2 = intl4.intl;
+              obj3 = { discordTag: trimmed };
+              metroRequire(obj2);
+              const obj4 = ToastUtils;
+              const result = obj4.presentAddedFriendToast();
+              metroRequire.dismiss();
+            }, (body) => {
+              let humanizeAbortCode;
+              let humanizeAbortCodeForA11y;
+              let intl;
+              let intl2;
+              let num;
+              let num2;
+              let obj2;
+              let tmp3;
+              let note;
+              const tmp = closure_6;
+              if (body != null) {
+                body = body.body;
+                if (body != null) {
+                  note = body.note;
+                }
+              }
+              if (null != note) {
+                const obj = { status: constants.ERROR, field: constants2.MESSAGE, message: intl.string(intl4.t.ckHwck), a11yMessage: intl2.string(intl4.t.ckHwck) };
+                intl = intl4.intl;
+                intl2 = intl4.intl;
+                obj2 = obj;
+              } else {
+                obj2 = { status: constants.ERROR, field: constants2.DISCORD_TAG, message: humanizeAbortCode(num, trimmed), a11yMessage: humanizeAbortCodeForA11y(num2, tmp3) };
+                num = undefined;
+                humanizeAbortCode = FriendsUtils.humanizeAbortCode;
+                FriendsUtils;
+                if (body != null) {
+                  const body2 = body.body;
+                  if (body2 != null) {
+                    num = body2.code;
+                  }
+                }
+                if (num == null) {
+                  num = -1;
+                }
+                num2 = undefined;
+                humanizeAbortCodeForA11y = FriendsUtils.humanizeAbortCodeForA11y;
+                FriendsUtils;
+                tmp3 = trimmed;
+                if (body != null) {
+                  const body3 = body.body;
+                  if (body3 != null) {
+                    num2 = body3.code;
+                  }
+                }
+                if (num2 == null) {
+                  num2 = -1;
+                }
+              }
+              tmp(obj2);
+            });
+          }
+        }
+      }
+      cResult[11] = first3;
+      cResult[12] = first1.validatedText;
+      cResult[13] = te;
+      tmp21 = te;
+    }
+    class J {
+      constructor(str) {
+        closure_8(str.replace(/\n/g, ""));
+        let tmp3 = first2.status === constants.ERROR;
+        const tmp2 = constants;
+        if (tmp3) {
+          tmp3 = first2.field === constants2.MESSAGE;
+        }
+        if (tmp3) {
+          const obj = { status: tmp2.NONE };
+          closure_6(obj);
+        }
+      }
+    }
+    cResult[7] = first2.field;
+    cResult[8] = first2.status;
+    cResult[9] = J;
+  }
+  const fn2 = function j(validatedText) {
+    let intl;
+    let obj;
+    const tmp = closure_4;
+    if (validatedText.length <= 0) {
+      const obj2 = { validatedText: "", hint: intl.string(intl4.t["6p7Mhh"]) };
+      intl = intl4.intl;
+      obj = obj2;
+    } else {
+      const arr = _slicedToArray(validatedText.split("#"), 2)[1];
+      let str2 = "";
+      if (null != arr) {
+        let num2 = 0;
+        const slice = metroImportDefault.slice;
+        if (null != arr) {
+          num2 = arr.length + 1;
+        }
+        str2 = validatedText + slice(num2);
+      }
+      obj = { validatedText, hint: str2 };
+    }
+    tmp(obj);
+    let tmp9 = first2.status === constants.ERROR;
+    const tmp8 = constants;
+    if (tmp9) {
+      tmp9 = first2.field === constants2.DISCORD_TAG;
+    }
+    if (tmp9) {
+      const obj3 = { status: tmp8.NONE };
+      closure_6(obj3);
+    }
+  };
+  cResult[4] = first2.field;
+  cResult[5] = first2.status;
+  cResult[6] = fn2;
+  tmp16 = fn2;
+}) : ((arg0, ref) => {
   let autoFocusInput;
   let closure_2;
   let closure_4;
@@ -168,7 +687,7 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
         trimmed = substr;
         tmp2 = substr;
       }
-      let obj = sourcePage(closure_2[11]);
+      let obj = sourcePage(closure_2[13]);
       const validateDiscordTagResult = obj.validateDiscordTag(tmp2);
       if (null != validateDiscordTagResult) {
         let obj3 = { status: constants.ERROR, field: constants2.DISCORD_TAG, message: validateDiscordTagResult };
@@ -176,9 +695,9 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
       } else {
         let obj4 = { status: constants.LOADING };
         closure_6(obj4);
-        const obj5 = { discordTag: tmp2, context: { location: "Search - Add Friend Search" }, errorUxConfig: sourcePage(closure_2[12]).RelationshipErrorUXConfig.SHOW_ONLY_IF_ACTION_NEEDED, note: tmp9 };
-        const sendRequest = ref(closure_2[12]).sendRequest;
-        ref(closure_2[12]);
+        const obj5 = { discordTag: tmp2, context: { location: "Search - Add Friend Search" }, errorUxConfig: sourcePage(closure_2[14]).RelationshipErrorUXConfig.SHOW_ONLY_IF_ACTION_NEEDED, note: tmp9 };
+        const sendRequest = ref(closure_2[14]).sendRequest;
+        ref(closure_2[14]);
         tmp9 = undefined;
         if (trimmed1.length > 0) {
           tmp9 = trimmed1;
@@ -266,8 +785,8 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
   }), 2);
   textState = tmp2[0];
   react = tmp2[1];
-  let obj = { status: constants2.NONE };
-  const tmp4 = constants2;
+  let obj = { status: constants.NONE };
+  const tmp4 = constants;
   const tmp5 = textState(react.useState(obj), 2);
   const first1 = tmp5[0];
   let closure_6 = tmp5[1];
@@ -292,11 +811,11 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
       let str2 = "";
       if (null != arr) {
         let num2 = 0;
-        metroImportDefault = metroImportDefault.slice;
+        const slice = metroImportDefault.slice;
         if (null != arr) {
           num2 = arr.length + 1;
         }
-        str2 = validatedText + metroImportDefault(num2);
+        str2 = validatedText + slice(num2);
       }
       obj = { validatedText, hint: str2 };
     }
@@ -369,18 +888,18 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
   if (enabled) {
     let obj5 = { style: tmp.friendMessageContainer, children: null };
     const tmp18 = sourcePage;
-    const obj6 = { style: items6, variant: "text-sm/semibold", color: "text-muted", children: intl.string(sourcePage(1115).t.Yi6Mpu) };
+    const obj6 = { style: items6, variant: "text-sm/semibold", color: "text-muted", children: intl.string(sourcePage(1127).t.Yi6Mpu) };
     items6 = [, , ];
     ({ messageLabel: arr7[0], inputHeaderText: arr7[1] } = tmp);
     items6[2] = headerTextStyle;
-    const Text = sourcePage(4832).Text;
-    intl = sourcePage(1115).intl;
+    const Text = sourcePage(4833).Text;
+    intl = sourcePage(1127).intl;
     const items7 = [tmp17(Text, obj6), , ];
     const obj7 = { returnKeyType: "done", submitBehavior: "submit", value: first2, maxLength: 120, onSubmitEditing: handleSubmitEditing, onChange: callback1, status: str2 };
     str2 = undefined;
-    const TextArea = sourcePage(6506).TextArea;
-    const tmp19 = constants3;
-    if (first1.field === constants3.MESSAGE) {
+    const TextArea = sourcePage(6507).TextArea;
+    const tmp19 = constants2;
+    if (first1.field === constants2.MESSAGE) {
       if (first1.status === tmp4.ERROR) {
         str2 = "error";
       }
@@ -390,15 +909,15 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
       let tmp17Result;
       if (first1.field === tmp19.MESSAGE) {
         const obj8 = { errorMessage: first1.message };
-        tmp17Result = tmp17(ErrorMessage, obj8);
+        tmp17Result = tmp17(closure_15, obj8);
       }
       items7[2] = tmp17Result;
       obj5.children = items7;
       enabled = tmp14(tmp16, obj5);
     }
-    const obj9 = { style: tmp.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: intl2.string(tmp18(1115).t.UtfQNw) };
-    const Text2 = tmp18(4832).Text;
-    intl2 = tmp18(1115).intl;
+    const obj9 = { style: tmp.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: intl2.string(tmp18(1127).t.UtfQNw) };
+    const Text2 = tmp18(4833).Text;
+    intl2 = tmp18(1127).intl;
     tmp17Result = tmp17(Text2, obj9);
   }
   const obj10 = { children: items8 };
@@ -406,12 +925,12 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
   items8 = [tmp14(tmp16, obj3), , ];
   const obj11 = { style: tmp.redesignGrow };
   items8[1] = closure_9(tmp16, obj11);
-  const obj12 = { size: "lg", text: intl3.string(sourcePage(1115).t["PMsq/b"]), disabled: length <= 0, onPress: handleSubmitEditing, loading: first1.status === tmp4.LOADING, grow: false };
-  const Button = sourcePage(5281).Button;
-  intl3 = sourcePage(1115).intl;
+  const obj12 = { size: "lg", text: intl3.string(sourcePage(1127).t["PMsq/b"]), disabled: length <= 0, onPress: handleSubmitEditing, loading: first1.status === tmp4.LOADING, grow: false };
+  const Button = sourcePage(5282).Button;
+  intl3 = sourcePage(1127).intl;
   items8[2] = closure_9(Button, obj12);
   return tmp14(tmp15, obj10);
-});
+}));
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/AddFriendById.tsx");
 
 export default forwardRefResult;

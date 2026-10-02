@@ -1,19 +1,40 @@
-// Module ID: 12861
-// Function ID: 12862
+// Module ID: 12863
+// Function ID: 12864
 // Name: useRefreshSavedMessages
-// Dependencies: [19, 11205, 2]
-// Exports: default
+// Dependencies: [19, 558, 576, 11077, 2]
 
-// Module 12861 (useRefreshSavedMessages)
-import SavedMessagesActions from "SavedMessagesActions" /* 11205 */;
+// Module 12863 (useRefreshSavedMessages)
+import react2 from "react" /* 576 */;
+import SavedMessagesActions from "SavedMessagesActions" /* 11077 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/saved_messages/useRefreshSavedMessages.tsx");
-
-export default function useRefreshSavedMessages() {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp2;
+  let tmp3;
+  let obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
+      const obj = SavedMessagesActions;
+      const andUpdateSavedMessages = obj.fetchAndUpdateSavedMessages();
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp2 = fn;
+    tmp3 = items;
+  } else {
+    [tmp2, tmp3] = cResult;
+  }
+  const effect = react.useEffect(tmp2, tmp3);
+}) : (() => {
   const effect = react.useEffect(() => {
     const obj = SavedMessagesActions;
     const andUpdateSavedMessages = obj.fetchAndUpdateSavedMessages();
   }, []);
-};
+});
+const result = size.fileFinishedImporting("modules/saved_messages/useRefreshSavedMessages.tsx");
+
+export default tmp2;

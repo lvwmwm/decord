@@ -1,11 +1,11 @@
-// Module ID: 5023
-// Function ID: 5024
+// Module ID: 5024
+// Function ID: 5025
 // Name: GuildOnboardingHomeSettingsStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 5023 (GuildOnboardingHomeSettingsStore)
+// Module 5024 (GuildOnboardingHomeSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 function handleSettingsLoadSuccess(arg0) {
@@ -45,11 +45,11 @@ class GuildOnboardingHomeSettingsStore extends Store {
     }
     return tmp;
   }
-  getNewMemberActions(guildId) {
+  getNewMemberActions(id) {
     let tmp = null;
-    if (null != guildId) {
+    if (null != id) {
       const self = this;
-      const settings = this.getSettings(guildId);
+      const settings = this.getSettings(id);
       let newMemberActions;
       if (settings != null) {
         newMemberActions = settings.newMemberActions;
@@ -57,19 +57,19 @@ class GuildOnboardingHomeSettingsStore extends Store {
       tmp = null;
       if (null != newMemberActions) {
         let tmp5;
-        if (null == closure_4[guildId]) {
+        if (null == closure_4[id]) {
           let newMemberActions1;
-          if (closure_2[guildId] != null) {
+          if (closure_2[id] != null) {
             newMemberActions1 = tmp7.newMemberActions;
           }
           let tmp9 = null;
           if (null != newMemberActions1) {
-            closure_4[guildId] = newMemberActions1;
-            tmp9 = tmp4[guildId];
+            closure_4[id] = newMemberActions1;
+            tmp9 = tmp4[id];
           }
           tmp5 = tmp9;
         } else {
-          tmp5 = tmp4[guildId];
+          tmp5 = tmp4[id];
         }
         tmp = tmp5;
       }
@@ -92,9 +92,9 @@ class GuildOnboardingHomeSettingsStore extends Store {
   hasMemberAction(id, id2) {
     return null != this.getActionForChannel(id, id2);
   }
-  getResourceChannels(guildId) {
+  getResourceChannels(guild_id) {
     let resourceChannels;
-    if (closure_2[guildId] != null) {
+    if (closure_2[guild_id] != null) {
       resourceChannels = tmp.resourceChannels;
     }
     if (resourceChannels == null) {
@@ -102,13 +102,13 @@ class GuildOnboardingHomeSettingsStore extends Store {
     }
     return resourceChannels;
   }
-  getResourceForChannel(guildId, channelId) {
+  getResourceForChannel(guild_id, channelId) {
     let closure_0 = channelId;
-    if (null == guildId) {
+    if (null == guild_id) {
       return null;
     } else {
       const self = this;
-      const resourceChannels = this.getResourceChannels(guildId);
+      const resourceChannels = this.getResourceChannels(guild_id);
       let found = null;
       if (resourceChannels !== closure_1) {
         found = resourceChannels.find((channelId) => channelId.channelId === closure_0);

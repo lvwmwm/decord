@@ -1,13 +1,14 @@
-// Module ID: 17165
-// Function ID: 17166
+// Module ID: 17167
+// Function ID: 17168
 // Name: RadioGroupActionComponent
-// Dependencies: [19, 21, 7569, 4566, 5280, 5284, 5997, 6000, 5917, 5992, 1115, 2]
+// Dependencies: [19, 21, 558, 576, 7573, 4570, 5281, 5285, 5994, 5995, 5916, 5940, 1127, 2]
 
-// Module 17165 (RadioGroupActionComponent)
-import spring from "spring" /* 5280 */;
-import springPresets from "springPresets" /* 5284 */;
+// Module 17167 (RadioGroupActionComponent)
+import spring from "spring" /* 5281 */;
+import springPresets from "springPresets" /* 5285 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let type;
@@ -16,11 +17,216 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let __initData = { code: "function RadioGroupActionComponentTsx1(){const{withSpring,hasValue,SUBTLE_SPRING}=this.__closure;return{maxHeight:withSpring(hasValue?60:0,SUBTLE_SPRING),marginTop:withSpring(hasValue?8:0,SUBTLE_SPRING),opacity:withSpring(hasValue?1:0,SUBTLE_SPRING)};}" };
-const memoResult = react.memo((type) => {
+const __initData = { code: "function RadioGroupActionComponentTsx1(){const{withSpring,hasValue,SUBTLE_SPRING}=this.__closure;return{maxHeight:withSpring(hasValue?60:0,SUBTLE_SPRING),marginTop:withSpring(hasValue?8:0,SUBTLE_SPRING),opacity:withSpring(hasValue?1:0,SUBTLE_SPRING)};}" };
+const __initData2 = { code: "function RadioGroupActionComponentTsx2(){const{withSpring,hasValue,SUBTLE_SPRING}=this.__closure;return{maxHeight:withSpring(hasValue?60:0,SUBTLE_SPRING),marginTop:withSpring(hasValue?8:0,SUBTLE_SPRING),opacity:withSpring(hasValue?1:0,SUBTLE_SPRING)};}" };
+let memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+  let executeStateUpdate;
+  let options;
+  let ref;
+  let required;
+  let state;
+  let tmp5;
+  let obj = type(ref[3]);
+  const cResult = obj.c(25);
+  type = type.type;
+  ({ options, required } = type);
+  ref = executeStateUpdate.useRef(null);
+  if (cResult[0] !== options) {
+    const iter = options.find((item) => item.default);
+    let value;
+    if (iter != null) {
+      value = iter.value;
+    }
+    let num = 0;
+    cResult[0] = options;
+    let num2 = 1;
+    cResult[1] = value;
+    tmp5 = value;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === tmp5) {
+    let tmp7;
+    if (cResult[3] === type) {
+      tmp7 = cResult[4];
+    }
+    const tmpResult = tmp(tmp2[4]);
+    const componentState = tmpResult.useComponentState(type, tmp7);
+    ({ state, executeStateUpdate } = componentState);
+    let type1;
+    if (state != null) {
+      type1 = state.type;
+    }
+    let str = null;
+    if (type1 === type) {
+      str = state.value;
+    }
+    let closure_5 = tmp12;
+    const tmpResult2 = tmp(tmp2[5]);
+    class I {
+      constructor() {
+        let num2;
+        let num3;
+        let withSpring2;
+        let withSpring3;
+        let num = 0;
+        const withSpring = spring.withSpring;
+        spring;
+        if (closure_5) {
+          num = 60;
+        }
+        const obj = { maxHeight: withSpring(num, springPresets.SUBTLE_SPRING), marginTop: withSpring2(num2, springPresets.SUBTLE_SPRING), opacity: withSpring3(num3, springPresets.SUBTLE_SPRING) };
+        num2 = 0;
+        withSpring2 = spring.withSpring;
+        spring;
+        if (closure_5) {
+          num2 = 8;
+        }
+        num3 = 0;
+        withSpring3 = spring.withSpring;
+        spring;
+        if (closure_5) {
+          num3 = 1;
+        }
+        return obj;
+      }
+    }
+    let obj2 = { withSpring: tmp(tmp2[6]).withSpring, hasValue: null != str, SUBTLE_SPRING: tmp(tmp2[7]).SUBTLE_SPRING };
+    const useAnimatedStyle = tmpResult2.useAnimatedStyle;
+    I.__closure = obj2;
+    let num3 = 1287549755250;
+    I.__workletHash = 1287549755250;
+    I.__initData = __initData;
+    const animatedStyle = useAnimatedStyle(I);
+    if (cResult[5] === executeStateUpdate) {
+      if (cResult[6] === required) {
+        if (cResult[7] === type) {
+          let tmp16;
+          if (cResult[8] === str) {
+            tmp16 = cResult[9];
+          }
+          let closure_6 = tmp16;
+          if (str == null) {
+            str = "";
+          }
+          if (cResult[10] !== options) {
+            let tmp19;
+            const _Symbol = Symbol;
+            if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+              class N {
+                constructor(label) {
+                  const obj = { label: label.label, subLabel: label.description, value: label.value };
+                  return str(type(ref[8]).TableRadioRow, obj, label.value);
+                }
+              }
+              cResult[12] = N;
+              tmp19 = N;
+            } else {
+              class N {
+                constructor(label) {
+                  const obj = { label: label.label, subLabel: label.description, value: label.value };
+                  return str(type(ref[8]).TableRadioRow, obj, label.value);
+                }
+              }
+            }
+            const mapped = options.map(tmp19);
+            cResult[10] = options;
+            cResult[11] = mapped;
+          } else {
+            class N {
+              constructor(label) {
+                const obj = { label: label.label, subLabel: label.description, value: label.value };
+                return str(type(ref[8]).TableRadioRow, obj, label.value);
+              }
+            }
+          }
+          if (cResult[13] === tmp16) {
+            class N {
+              constructor(label) {
+                const obj = { label: label.label, subLabel: label.description, value: label.value };
+                return str(type(ref[8]).TableRadioRow, obj, label.value);
+              }
+            }
+          }
+          const obj3 = { hasIcons: false, defaultValue: str, onChange: tmp16, groupRef: ref, children: tmp17 };
+          cResult[13] = tmp16;
+          const tmp23 = str(type(ref[9]).TableRadioGroup, obj3);
+          class I {
+            constructor() {
+              let num2;
+              let num3;
+              let withSpring2;
+              let withSpring3;
+              let num = 0;
+              const withSpring = spring.withSpring;
+              spring;
+              if (closure_5) {
+                num = 60;
+              }
+              const obj = { maxHeight: withSpring(num, springPresets.SUBTLE_SPRING), marginTop: withSpring2(num2, springPresets.SUBTLE_SPRING), opacity: withSpring3(num3, springPresets.SUBTLE_SPRING) };
+              num2 = 0;
+              withSpring2 = spring.withSpring;
+              spring;
+              if (closure_5) {
+                num2 = 8;
+              }
+              num3 = 0;
+              withSpring3 = spring.withSpring;
+              spring;
+              if (closure_5) {
+                num3 = 1;
+              }
+              return obj;
+            }
+          }
+          cResult[14] = str;
+          cResult[15] = tmp17;
+          cResult[16] = tmp23;
+        }
+      }
+    }
+    const fn = function v(value) {
+      if ("" !== value) {
+        if (null == value) {
+          const obj2 = { type, value: null };
+          executeStateUpdate(obj2);
+          const current = ref.current;
+          if (current != null) {
+            current.setValue("");
+          }
+        } else {
+          const obj = { type, value };
+          executeStateUpdate(obj);
+        }
+      }
+    };
+    cResult[5] = executeStateUpdate;
+    cResult[6] = required;
+    cResult[7] = type;
+    cResult[8] = str;
+    cResult[9] = fn;
+    tmp16 = fn;
+  }
+  let tmp8;
+  if (null != tmp5) {
+    class N {
+      constructor(label) {
+        const obj = { label: label.label, subLabel: label.description, value: label.value };
+        return str(type(ref[8]).TableRadioRow, obj, label.value);
+      }
+    }
+    tmp9[0] = type;
+    tmp9[1] = tmp5;
+    tmp8 = tmp9;
+  }
+  cResult[2] = tmp5;
+  cResult[3] = type;
+  cResult[4] = tmp8;
+  tmp7 = tmp8;
+}) : ((type) => {
   let Icon;
   let TableRow;
-  let closure_7;
   let intl;
   let obj6;
   let obj7;
@@ -42,8 +248,8 @@ const memoResult = react.memo((type) => {
   }, items);
   const tmp3 = type;
   let tmp6;
-  const useComponentState = type(required[2]).useComponentState;
-  const tmp5 = type(required[2]);
+  const useComponentState = type(required[4]).useComponentState;
+  const tmp5 = type(required[4]);
   if (null != memo) {
     let obj2 = { type, value: memo };
     tmp6 = obj2;
@@ -63,8 +269,8 @@ const memoResult = react.memo((type) => {
     }
     return value;
   }, items1);
-  __initData = tmp9;
-  const fn = function p() {
+  let closure_7 = tmp9;
+  const fn = function s() {
     let num2;
     let num3;
     let withSpring2;
@@ -90,14 +296,14 @@ const memoResult = react.memo((type) => {
     }
     return obj;
   };
-  const tmp3Result = tmp3(required[3]);
-  fn.__closure = { withSpring: tmp3(required[4]).withSpring, hasValue: null != memo1, SUBTLE_SPRING: tmp3(required[5]).SUBTLE_SPRING };
-  fn.__workletHash = 1287549755250;
-  fn.__initData = __initData;
-  ({ withSpring: tmp3(required[4]).withSpring, hasValue: null != memo1, SUBTLE_SPRING: tmp3(required[5]).SUBTLE_SPRING });
+  const tmp3Result = tmp3(required[5]);
+  fn.__closure = { withSpring: tmp3(required[6]).withSpring, hasValue: null != memo1, SUBTLE_SPRING: tmp3(required[7]).SUBTLE_SPRING };
+  fn.__workletHash = 9690732954129;
+  fn.__initData = __initData2;
+  ({ withSpring: tmp3(required[6]).withSpring, hasValue: null != memo1, SUBTLE_SPRING: tmp3(required[7]).SUBTLE_SPRING });
   const animatedStyle = tmp3Result.useAnimatedStyle(fn);
   let str = memo1;
-  const TableRadioGroup = tmp3(tmp4[6]).TableRadioGroup;
+  const TableRadioGroup = tmp3(tmp4[9]).TableRadioGroup;
   const tmp11 = memo1;
   const tmp12 = executeStateUpdate;
   if (memo1 == null) {
@@ -125,7 +331,7 @@ const memoResult = react.memo((type) => {
     groupRef: ref,
     children: options.map((label) => {
       const obj = { label: label.label, subLabel: label.description, value: label.value };
-      return state(type(required[7]).TableRadioRow, obj, label.value);
+      return state(type(required[8]).TableRadioRow, obj, label.value);
     })
   };
   children[0] = state(TableRadioGroup, obj4);
@@ -133,13 +339,13 @@ const memoResult = react.memo((type) => {
   if (tmp13Result) {
     const obj5 = { style: animatedStyle, accessibilityElementsHidden: null == memo1, importantForAccessibility: str2, children: state(TableRow, obj6) };
     str2 = "no-hide-descendants";
-    const View = options(tmp4[3]).View;
+    const View = options(tmp4[5]).View;
     if (null != memo1) {
       str2 = "auto";
     }
     obj6 = {
       icon: state(Icon, obj7),
-      label: intl.string(tmp3(required[10]).t["5uAtZN"]),
+      label: intl.string(tmp3(required[12]).t["5uAtZN"]),
       onPress() {
           const obj = { type, value: null };
           executeStateUpdate(obj);
@@ -151,15 +357,15 @@ const memoResult = react.memo((type) => {
       start: true,
       end: true
     };
-    TableRow = tmp3(tmp4[8]).TableRow;
-    obj7 = { IconComponent: tmp3(required[9]).XSmallIcon };
-    Icon = tmp3(tmp4[8]).TableRow.Icon;
-    intl = tmp3(tmp4[10]).intl;
+    TableRow = tmp3(tmp4[10]).TableRow;
+    obj7 = { IconComponent: tmp3(required[11]).XSmallIcon };
+    Icon = tmp3(tmp4[10]).TableRow.Icon;
+    intl = tmp3(tmp4[12]).intl;
     tmp13Result = tmp13(View, obj5);
   }
   children[1] = tmp13Result;
   return tmp11(tmp12, { children });
-});
+}));
 const result = size.fileFinishedImporting("modules/interaction_components/native/actions/RadioGroupActionComponent.tsx");
 
 export default memoResult;

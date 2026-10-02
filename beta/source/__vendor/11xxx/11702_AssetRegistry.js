@@ -1,10 +1,10 @@
 // Module ID: 11702
 // Function ID: 11703
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 11702 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/scheduled_messages", width: 297, height: 238, scales: [1], hash: "0ad2bf31ea242663dc2fd22966e4c43e", name: "wumpus-calendar-plus", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/create_guild/native/images", width: 48, height: 48, scales: [2, 3], hash: "85eeca45f06e729242432730811186c4", name: "img_local_community", type: "png" });

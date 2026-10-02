@@ -1,49 +1,30 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 11817
+// Function ID: 11818
 // Name: ChatInputRightActions
-// Dependencies: [32, 19, 17, 11444, 21, 4836, 576, 4531, 4540, 11656, 1611, 11729, 4566, 11728, 11727, 2]
+// Dependencies: [32, 19, 17, 11320, 21, 4837, 588, 558, 576, 4535, 4544, 1617, 11542, 11622, 11621, 11620, 4570, 2]
 
-// Module 11923 (ChatInputRightActions)
+// Module 11817 (ChatInputRightActions)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4540 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
-import ChatInputConstants from "ChatInputConstants" /* 11444 */;
-import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 11727 */;
-import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 11728 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 11729 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 4544 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4570 */;
+import ChatInputConstants from "ChatInputConstants" /* 11320 */;
+import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 11620 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 11622 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
 let metroImportAll;
 let metroImportDefault;
-function LeftSlot(state) {
-  let animatedStyle;
-  let channel;
-  let cleanup;
-  let isInteractive;
-  let items;
-  let onPress;
-  let slotWidth;
-  let wrapperStyle;
-  state = state.state;
-  ({ cleanup, channel, onPress, slotWidth, wrapperStyle } = state);
-  const YEETED = native.TransitionStates.YEETED;
-  const obj = { visible: state !== YEETED, initiallyVisible: state !== native.TransitionStates.ENTERED, enterDelayMs, onExitComplete: cleanup };
-  ({ animatedStyle, isInteractive } = useChatInputFloatingBounceDefault(obj));
-  const obj2 = { style: items, children: metroImportDefault(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "flex", shouldShowThread: "couple_with_heart_woman_woman_tone1_tone5" }) };
-  items = [wrapperStyle, { width: slotWidth }, animatedStyle];
-  useChatInputFloatingBounceDefault(obj);
-  View = ReanimatedRexportDefault.View;
-  const obj3 = ChatInputActionButtonTransitionItem;
-  const merged = Object.assign(obj3.interactivityProps(isInteractive));
-  return metroImportDefault(View, obj2);
-}
+let tmp;
+const ChatInputActionButtonTransitionItem = tmp(11621);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 let View = react_native.View;
@@ -54,12 +35,146 @@ let closure_9 = createStyles.createStyles(() => {
   ({ flexDirection: "row", alignItems: "center", gap: nativeDefault.modules.mobile.CHAT_INPUT_ACTION_BUTTON_GAP });
   return obj;
 });
-const forwardRefResult = react.forwardRef((channel, ref) => {
+const forwardRef = react.forwardRef;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((channel, ref) => {
+  let items1;
+  let keyboardType;
+  let onPressAction;
+  let onPressExpression;
+  let shouldShowGiftButton;
+  let showKeyboardIcon;
+  let tmp10;
+  let tmp11;
+  let tmp13;
+  let tmp9;
+  let obj = channel(576);
+  const cResult = obj.c(20);
+  channel = channel.channel;
+  ({ showKeyboardIcon, shouldShowGiftButton, onPressAction } = channel);
+  ({ onPressExpression, keyboardType } = channel);
+  const obj2 = channel(4535);
+  const token = obj2.useToken(onPressAction(588).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const obj3 = channel(4535);
+  const sum = token + 2 * obj3.useToken(onPressAction(588).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  dependencyMap = sum;
+  const tmp7 = closure_9();
+  const _slicedToArray = tmp7;
+  const obj4 = react;
+  const tmp8 = _slicedToArray(react.useState(true), 2);
+  [tmp9, react] = tmp8;
+  const tmp4 = onPressAction;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function h() {
+      return {
+        onDismissActions() {
+          return closure_1_4(false);
+        },
+        onShowActions() {
+          return closure_1_4(true);
+        }
+      };
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp10 = fn;
+    tmp11 = items;
+  } else {
+    [tmp10, tmp11] = cResult;
+  }
+  const imperativeHandle = obj4.useImperativeHandle(ref, tmp10, tmp11);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj5 = {};
+    cResult[2] = obj5;
+    tmp13 = obj5;
+  } else {
+    tmp13 = cResult[2];
+  }
+  if (cResult[3] === sum) {
+    if (cResult[4] === channel) {
+      if (cResult[5] === onPressAction) {
+        let tmp14;
+        if (cResult[6] === tmp7.leftSlot) {
+          tmp14 = cResult[7];
+        }
+        if (cResult[8] === tmp14) {
+          if (cResult[9] === shouldShowGiftButton) {
+            let tmp15;
+            if (cResult[10] === tmp9) {
+              tmp15 = cResult[11];
+            }
+            const tmp19 = keyboardType === channel(1617).KeyboardTypes.EXPRESSION;
+            if (cResult[12] === onPressExpression) {
+              if (cResult[13] === showKeyboardIcon) {
+                let tmp20;
+                if (cResult[14] === tmp19) {
+                  tmp20 = cResult[15];
+                }
+                if (cResult[16] === tmp7.container) {
+                  if (cResult[17] === tmp15) {
+                    let tmp23;
+                    if (cResult[18] === tmp20) {
+                      tmp23 = cResult[19];
+                    }
+                    return tmp23;
+                  }
+                }
+                const obj6 = { style: tmp7.container, children: items1 };
+                items1 = [tmp15, tmp20];
+                const tmp26 = closure_8(View, obj6);
+                cResult[16] = tmp7.container;
+                cResult[17] = tmp15;
+                cResult[18] = tmp20;
+                cResult[19] = tmp26;
+                tmp23 = tmp26;
+              }
+            }
+            const obj7 = { active: tmp19, showKeyboardIcon, onPress: onPressExpression };
+            const tmp22 = closure_7(tmp4(11542), obj7);
+            cResult[12] = onPressExpression;
+            cResult[13] = showKeyboardIcon;
+            cResult[14] = tmp19;
+            cResult[15] = tmp22;
+            tmp20 = tmp22;
+          }
+        }
+        let tmp17Result = null;
+        if (shouldShowGiftButton) {
+          let tmp18;
+          const TransitionItem = tmp(4544).TransitionItem;
+          const tmp17 = closure_7;
+          if (tmp9) {
+            tmp18 = tmp13;
+          }
+          const obj8 = { item: tmp18, renderItem: tmp14 };
+          tmp17Result = tmp17(TransitionItem, obj8);
+        }
+        cResult[8] = tmp14;
+        cResult[9] = shouldShowGiftButton;
+        cResult[10] = tmp9;
+        cResult[11] = tmp17Result;
+        tmp15 = tmp17Result;
+      }
+    }
+  }
+  class U {
+    constructor(arg0, arg1, state, cleanup) {
+      const obj = { state, cleanup, channel, onPress: onPressAction, wrapperStyle: leftSlot.leftSlot, slotWidth: dependencyMap };
+      return metroImportDefault(closure_10, obj, arg0);
+    }
+  }
+  cResult[3] = sum;
+  cResult[4] = channel;
+  cResult[5] = onPressAction;
+  cResult[6] = tmp7.leftSlot;
+  cResult[7] = U;
+  tmp14 = U;
+}) : ((channel, ref) => {
   let closure_4;
   let first;
   let items1;
   let keyboardType;
-  let leftSlot;
   let onPressExpression;
   let shouldShowGiftButton;
   let showKeyboardIcon;
@@ -68,13 +183,13 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
   const onPressAction = channel.onPressAction;
   react = undefined;
   ({ keyboardType, showKeyboardIcon, shouldShowGiftButton, onPressExpression } = channel);
-  let obj = channel(4531);
-  const token = obj.useToken(onPressAction(576).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  const obj2 = channel(4531);
-  const sum = token + 2 * obj2.useToken(onPressAction(576).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  let obj = channel(4535);
+  const token = obj.useToken(onPressAction(588).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const obj2 = channel(4535);
+  const sum = token + 2 * obj2.useToken(onPressAction(588).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
   dependencyMap = sum;
   const tmp6 = closure_9();
-  _slicedToArray = tmp6;
+  const _slicedToArray = tmp6;
   [first, react] = react.useState(true);
   const imperativeHandle = react.useImperativeHandle(ref, () => ({
     onDismissActions() {
@@ -93,7 +208,7 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
   const tmp3 = onPressAction;
   if (shouldShowGiftButton) {
     let tmp16;
-    const TransitionItem = tmp(4540).TransitionItem;
+    const TransitionItem = tmp(4544).TransitionItem;
     const tmp15 = closure_7;
     if (first) {
       tmp16 = memo;
@@ -102,12 +217,128 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
     tmp15Result = tmp15(TransitionItem, obj4);
   }
   items1 = [tmp15Result, ];
-  const obj5 = { active: keyboardType === channel(1611).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression };
-  const tmp3Result = tmp3(11656);
+  const obj5 = { active: keyboardType === channel(1617).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression };
+  const tmp3Result = tmp3(11542);
   items1[1] = closure_7(tmp3Result, obj5);
   return tmp12(tmp13, obj3);
-});
+}));
 forwardRefResult.displayName = "ChatInputRightActions";
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let animatedStyle;
+  let channel;
+  let cleanup;
+  let isInteractive;
+  let onPress;
+  let slotWidth;
+  let state;
+  let wrapperStyle;
+  const obj = react2;
+  const cResult = obj.c(19);
+  ({ state, cleanup, channel, onPress, slotWidth, wrapperStyle } = arg0);
+  const tmp4 = state !== native.TransitionStates.YEETED;
+  const tmp5 = state !== native.TransitionStates.ENTERED;
+  if (cResult[0] === cleanup) {
+    if (cResult[1] === tmp4) {
+      let tmp6;
+      let tmp9;
+      if (cResult[2] === tmp5) {
+        tmp6 = cResult[3];
+      }
+      ({ animatedStyle, isInteractive } = useChatInputFloatingBounceDefault(tmp6));
+      useChatInputFloatingBounceDefault(tmp6);
+      if (cResult[4] !== slotWidth) {
+        const obj2 = { width: slotWidth };
+        cResult[4] = slotWidth;
+        cResult[5] = obj2;
+        tmp9 = obj2;
+      } else {
+        tmp9 = cResult[5];
+      }
+      if (cResult[6] === animatedStyle) {
+        if (cResult[7] === tmp9) {
+          let tmp10;
+          let tmp11;
+          if (cResult[8] === wrapperStyle) {
+            tmp10 = cResult[9];
+          }
+          if (cResult[10] !== isInteractive) {
+            const tmpResult = ChatInputActionButtonTransitionItem;
+            const interactivityPropsResult = tmpResult.interactivityProps(isInteractive);
+            cResult[10] = isInteractive;
+            cResult[11] = interactivityPropsResult;
+            tmp11 = interactivityPropsResult;
+          } else {
+            tmp11 = cResult[11];
+          }
+          if (cResult[12] === channel) {
+            let tmp13;
+            if (cResult[13] === onPress) {
+              tmp13 = cResult[14];
+            }
+            if (cResult[15] === tmp10) {
+              if (cResult[16] === tmp11) {
+                let tmp16;
+                if (cResult[17] === tmp13) {
+                  tmp16 = cResult[18];
+                }
+                return tmp16;
+              }
+            }
+            const obj3 = { style: tmp10, children: tmp13 };
+            View = tmp7(4570).View;
+            const merged = Object.assign(tmp11);
+            const tmp21 = metroImportDefault(View, obj3);
+            cResult[15] = tmp10;
+            cResult[16] = tmp11;
+            cResult[17] = tmp13;
+            cResult[18] = tmp21;
+            tmp16 = tmp21;
+          }
+          const obj4 = { canStartThreads: false, channel, onPress, styleButton: "Reflect", shouldShowThread: "getLastScrollOffset" };
+          const tmp15 = metroImportDefault(ChatInputActionButtonGiftOrThreadDefault, obj4);
+          cResult[12] = channel;
+          cResult[13] = onPress;
+          cResult[14] = tmp15;
+          tmp13 = tmp15;
+        }
+      }
+      const items = [wrapperStyle, tmp9, animatedStyle];
+      cResult[6] = animatedStyle;
+      cResult[7] = tmp9;
+      cResult[8] = wrapperStyle;
+      cResult[9] = items;
+      tmp10 = items;
+    }
+  }
+  const obj5 = { visible: tmp4, initiallyVisible: tmp5, enterDelayMs, onExitComplete: cleanup };
+  cResult[0] = cleanup;
+  cResult[1] = tmp4;
+  cResult[2] = tmp5;
+  cResult[3] = obj5;
+  tmp6 = obj5;
+}) : ((state) => {
+  let animatedStyle;
+  let channel;
+  let cleanup;
+  let isInteractive;
+  let items;
+  let onPress;
+  let slotWidth;
+  let wrapperStyle;
+  state = state.state;
+  ({ cleanup, channel, onPress, slotWidth, wrapperStyle } = state);
+  const YEETED = native.TransitionStates.YEETED;
+  const obj = { visible: state !== YEETED, initiallyVisible: state !== native.TransitionStates.ENTERED, enterDelayMs, onExitComplete: cleanup };
+  ({ animatedStyle, isInteractive } = useChatInputFloatingBounceDefault(obj));
+  const obj2 = { style: items, children: metroImportDefault(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "Reflect", shouldShowThread: "getLastScrollOffset" }) };
+  items = [wrapperStyle, { width: slotWidth }, animatedStyle];
+  useChatInputFloatingBounceDefault(obj);
+  View = ReanimatedRexportDefault.View;
+  const obj3 = ChatInputActionButtonTransitionItem;
+  const merged = Object.assign(obj3.interactivityProps(isInteractive));
+  return metroImportDefault(View, obj2);
+});
 const memoResult = react.memo(forwardRefResult);
 const result = size.fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputRightActions.tsx");
 

@@ -1,10 +1,10 @@
 // Module ID: 9316
 // Function ID: 9317
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 9316 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/settings", width: 24, height: 24, scales: [2, 3], hash: "4a465b7b889dd2efb6716569375c3825", name: "ic_qr_code_24px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "31fe21f79423d8afd3dcadd61d04938b", name: "ic_mail", type: "png" });

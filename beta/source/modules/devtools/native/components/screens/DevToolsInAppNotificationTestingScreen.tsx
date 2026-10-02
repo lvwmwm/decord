@@ -1,35 +1,35 @@
-// Module ID: 15329
-// Function ID: 15330
+// Module ID: 15317
+// Function ID: 15318
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 5814, 2049, 4480, 2045, 2067, 2099, 1372, 1074, 21, 4836, 576, 4528, 8048, 9554, 9556, 5581, 11, 1613, 1177, 5999, 5917, 15139, 5924, 2]
-// Exports: default
+// Dependencies: [19, 17, 5815, 2055, 4483, 2051, 2073, 2102, 1378, 1086, 21, 4837, 588, 4531, 8052, 12221, 12223, 5582, 11, 558, 576, 1619, 1189, 5997, 5916, 15127, 5923, 2]
 
-// Module 15329 (DevToolsInAppNotificationTestingScreen)
+// Module 15317 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
-import StickersTypes from "StickersTypes" /* 5581 */;
-import TableRowGroup2 from "TableRowGroup" /* 5999 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 9554 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 9556 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
+import StickersTypes from "StickersTypes" /* 5582 */;
+import TableRowGroup2 from "TableRowGroup" /* 5997 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 12221 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12223 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 5814 */;
-import MessageRecord from "MessageRecord" /* 4480 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import StickersStore from "StickersStore" /* 5815 */;
+import MessageRecord from "MessageRecord" /* 4483 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_0;
+let _require;
 
 let InAppNotificationTypes;
 let closure_12;
@@ -515,10 +515,136 @@ const items3 = [
     }
   }
 ];
-let size = size_mod;
-const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsInAppNotificationTestingScreen.tsx");
-
-export default function DevToolsInAppNotificationTestingScreen() {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let tmp9;
+  let obj = first(576);
+  const cResult = obj.c(12);
+  const tmp4 = closure_16();
+  const tmp6 = useSafeAreaInsetsDefault();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function l(build) {
+      const buildResult = build.build();
+      if (null != buildResult) {
+        const obj = InAppNotificationActionCreatorsDefault;
+        obj.enqueueNotification(buildResult);
+      }
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const sum = tmp4.content.padding + tmp6.bottom;
+  const container = tmp4.container;
+  if (cResult[1] !== sum) {
+    let obj2 = { paddingBottom: sum };
+    cResult[1] = sum;
+    cResult[2] = obj2;
+    tmp9 = obj2;
+  } else {
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] === tmp4.content) {
+    let tmp10;
+    let tmp12;
+    let tmp11;
+    let tmp17;
+    if (cResult[4] === tmp9) {
+      tmp10 = cResult[5];
+    }
+    const _Symbol = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      let obj3 = { size: nativeDefault.space.PX_16 };
+      let Spacer = tmp(1189).Spacer;
+      const tmp14 = closure_14(Spacer, obj3);
+      const mapped = closure_25.map((title) => {
+        let options;
+        let obj = { children: items };
+        const Fragment = react.Fragment;
+        const obj2 = {
+          title: title.title,
+          description: "Enqueues notification using the currently selected channel.",
+          hasIcons: true,
+          children: options.map((label) => {
+            let closure_0 = label;
+            const obj = {
+              label: label.label,
+              subLabel: label.subLabel,
+              icon: closure_1_14(first(closure_1_2[25]).BeakerIcon, {}),
+              onPress() {
+                return first(label);
+              },
+              trailing: closure_1_14(first(closure_1_2[26]).TableRowArrow, {})
+            };
+            const TableRow = first(closure_1_2[24]).TableRow;
+            return closure_1_14(TableRow, obj, label.label);
+          })
+        };
+        options = title.options;
+        const TableRowGroup = TableRowGroup2.TableRowGroup;
+        items = [authStore2(TableRowGroup, obj2), ];
+        const obj3 = { size: nativeDefault.space.PX_16 };
+        const Spacer = native.Spacer;
+        items[1] = authStore2(Spacer, obj3);
+        return closure_15(Fragment, obj, title.title);
+      });
+      cResult[6] = tmp14;
+      cResult[7] = mapped;
+      tmp12 = mapped;
+      tmp11 = tmp14;
+    } else {
+      tmp11 = cResult[6];
+      tmp12 = cResult[7];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj4 = {
+        title: "Other Notification Types",
+        hasIcons: true,
+        children: items3.map((label) => {
+              let closure_0 = label;
+              const obj = {
+                label: label.label,
+                subLabel: label.subLabel,
+                icon: closure_1_14(first(dependencyMap[25]).BeakerIcon, {}),
+                onPress() {
+                  return first(label);
+                },
+                trailing: closure_1_14(first(dependencyMap[26]).TableRowArrow, {})
+              };
+              const TableRow = first(dependencyMap[24]).TableRow;
+              return closure_1_14(TableRow, obj, label.label);
+            })
+      };
+      let TableRowGroup = tmp(5997).TableRowGroup;
+      const tmp20 = closure_14(TableRowGroup, obj4);
+      cResult[8] = tmp20;
+      tmp17 = tmp20;
+    } else {
+      tmp17 = cResult[8];
+    }
+    if (cResult[9] === tmp4.container) {
+      let tmp21;
+      if (cResult[10] === tmp10) {
+        tmp21 = cResult[11];
+      }
+      return tmp21;
+    }
+    const obj5 = { style: container, contentContainerStyle: tmp10, children: items };
+    items = [tmp11, tmp12, tmp17];
+    const tmp24 = closure_15(ScrollView, obj5);
+    cResult[9] = tmp4.container;
+    cResult[10] = tmp10;
+    cResult[11] = tmp24;
+    tmp21 = tmp24;
+  }
+  items1 = [tmp4.content, tmp9];
+  cResult[3] = tmp4.content;
+  cResult[4] = tmp9;
+  cResult[5] = items1;
+  tmp10 = items1;
+}) : (() => {
   const tmp = closure_16();
   const tmp2 = useSafeAreaInsetsDefault();
   _require = react.useCallback((build) => {
@@ -547,13 +673,13 @@ export default function DevToolsInAppNotificationTestingScreen() {
           const obj = {
             label: label.label,
             subLabel: label.subLabel,
-            icon: closure_1_14(closure_1_0(closure_1_2[23]).BeakerIcon, {}),
+            icon: closure_1_14(closure_1_0(closure_1_2[25]).BeakerIcon, {}),
             onPress() {
               return closure_2_0(label);
             },
-            trailing: closure_1_14(closure_1_0(closure_1_2[24]).TableRowArrow, {})
+            trailing: closure_1_14(closure_1_0(closure_1_2[26]).TableRowArrow, {})
           };
-          const TableRow = closure_1_0(closure_1_2[22]).TableRow;
+          const TableRow = closure_1_0(closure_1_2[24]).TableRow;
           return closure_1_14(TableRow, obj, label.label);
         })
       };
@@ -574,17 +700,21 @@ export default function DevToolsInAppNotificationTestingScreen() {
       const obj = {
         label: label.label,
         subLabel: label.subLabel,
-        icon: closure_1_14(label(dependencyMap[23]).BeakerIcon, {}),
+        icon: closure_1_14(label(dependencyMap[25]).BeakerIcon, {}),
         onPress() {
           return label(label);
         },
-        trailing: closure_1_14(label(dependencyMap[24]).TableRowArrow, {})
+        trailing: closure_1_14(label(dependencyMap[26]).TableRowArrow, {})
       };
-      const TableRow = label(dependencyMap[22]).TableRow;
+      const TableRow = label(dependencyMap[24]).TableRow;
       return closure_1_14(TableRow, obj, label.label);
     })
   };
   let TableRowGroup = require("TableRowGroup").TableRowGroup;
   items1[2] = closure_14(TableRowGroup, obj3);
   return closure_15(ScrollView, obj);
-};
+});
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsInAppNotificationTestingScreen.tsx");
+
+export default tmp5;

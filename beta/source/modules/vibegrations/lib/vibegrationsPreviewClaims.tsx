@@ -1,10 +1,10 @@
-// Module ID: 12646
-// Function ID: 12647
+// Module ID: 12648
+// Function ID: 12649
 // Name: vibegrationsPreviewClaims
 // Dependencies: [32, 2]
 // Exports: awaitVibegrationsPreviewClaim, clearVibegrationsPreviewClaims, resolveVibegrationsPreviewClaim
 
-// Module 12646 (vibegrationsPreviewClaims)
+// Module 12648 (vibegrationsPreviewClaims)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

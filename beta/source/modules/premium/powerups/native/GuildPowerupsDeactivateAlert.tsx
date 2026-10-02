@@ -1,22 +1,22 @@
-// Module ID: 12036
-// Function ID: 12037
+// Module ID: 11946
+// Function ID: 11947
 // Name: GuildPowerupsDeactivateAlert
-// Dependencies: [17, 21, 4836, 576, 12037, 12038, 12039, 5209, 6028, 1115, 2519, 5209, 4832, 2]
-// Exports: default
+// Dependencies: [17, 21, 4837, 588, 558, 576, 11947, 11948, 11949, 6351, 1127, 2522, 4833, 5210, 5210, 2]
 
-// Module 12036 (GuildPowerupsDeactivateAlert)
+// Module 11946 (GuildPowerupsDeactivateAlert)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import _modDef2519 from "module_2519" /* 2519 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 12037 */;
-import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 12038 */;
+import nativeDefault from "native" /* 588 */;
+import _modDef2522 from "module_2522" /* 2522 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 11947 */;
+import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 11948 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault;
+let _require, importDefault, stopPropagationResult;
 
 let closure_4;
 let hasOwnProperty;
@@ -30,10 +30,302 @@ size = { width: 64, height: 64, alignItems: "center", justifyContent: "center", 
 createStyles = createStyles.createStyles;
 obj2 = { paddingHorizontal: nativeDefault.space.PX_12 };
 let closure_6 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsDeactivateAlert.tsx");
-
-export default function GuildPowerupsDeactivateAlert(arg0) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let first;
+  let guildId;
+  let intl3;
+  let items;
+  let onDeactivate;
+  let powerup;
+  let tmp11;
+  let tmp15;
+  let tmp17;
+  let warningText;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(34);
+  ({ guildId, powerup } = arg0);
+  const tmp4 = closure_6();
+  _require = tmp4;
+  const tmp6 = onDeactivate(11947)(guildId, powerup);
+  onDeactivate = tmp6.onDeactivate;
+  const error = tmp6.error;
+  const arr = onDeactivate(11948)(guildId, powerup);
+  const obj2 = require("GuildPowerupAnalytics");
+  const logPowerupModalOpened = obj2.useLogPowerupModalOpened(guildId, powerup, require("GuildPowerupAnalytics").ModalType.DEACTIVATE);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { color: onDeactivate(588).colors.INTERACTIVE_ICON_DEFAULT, size: "custom", style: { width: 40, height: 40 } };
+    const CircleErrorIcon = tmp(6351).CircleErrorIcon;
+    const tmp10 = closure_4(CircleErrorIcon, obj3);
+    cResult[0] = tmp10;
+    first = tmp10;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.headerContainer) {
+    const obj4 = { style: tmp4.headerContainer, children: first };
+    const tmp14 = closure_4(View, obj4);
+    cResult[1] = tmp4.headerContainer;
+    cResult[2] = tmp14;
+    tmp11 = tmp14;
+  } else {
+    tmp11 = cResult[2];
+  }
+  if (cResult[3] !== powerup.title) {
+    const intl = tmp(1127).intl;
+    const obj5 = { perk: powerup.title };
+    const formatToPlainStringResult = intl.formatToPlainString(onDeactivate(2522).iEBw1M, obj5);
+    cResult[3] = powerup.title;
+    cResult[4] = formatToPlainStringResult;
+    tmp15 = formatToPlainStringResult;
+  } else {
+    tmp15 = cResult[4];
+  }
+  if (cResult[5] !== powerup.title) {
+    const intl2 = tmp(1127).intl;
+    const obj6 = { perk: powerup.title };
+    const formatToPlainStringResult1 = intl2.formatToPlainString(onDeactivate(2522)["7o0K+2"], obj6);
+    cResult[5] = powerup.title;
+    cResult[6] = formatToPlainStringResult1;
+    tmp17 = formatToPlainStringResult1;
+  } else {
+    tmp17 = cResult[6];
+  }
+  if (cResult[7] === error) {
+    let tmp19;
+    let tmp22;
+    let tmp26;
+    let tmp28;
+    if (cResult[8] === tmp4.warningText) {
+      tmp19 = cResult[9];
+    }
+    if (cResult[10] !== onDeactivate) {
+      class C {
+        constructor(arg0) {
+          stopPropagationResult = arg0.stopPropagation();
+          return onDeactivate();
+        }
+      }
+      cResult[10] = onDeactivate;
+      cResult[11] = C;
+    } else {
+      class C {
+        constructor(arg0) {
+          stopPropagationResult = arg0.stopPropagation();
+          return onDeactivate();
+        }
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor(arg0) {
+          stopPropagationResult = arg0.stopPropagation();
+          return onDeactivate();
+        }
+      }
+      const stringResult = obj8.string(onDeactivate(2522).PYPdl4);
+      cResult[12] = stringResult;
+      tmp22 = stringResult;
+    } else {
+      class C {
+        constructor(arg0) {
+          stopPropagationResult = arg0.stopPropagation();
+          return onDeactivate();
+        }
+      }
+    }
+    if (cResult[13] !== tmp21) {
+      class C {
+        constructor(arg0) {
+          stopPropagationResult = arg0.stopPropagation();
+          return onDeactivate();
+        }
+      }
+      let str = "deactivate";
+      const obj7 = { variant: "destructive", onPress: tmp21, text: tmp22 };
+      cResult[13] = tmp21;
+      cResult[14] = closure_4(tmp(5210).AlertActionButton, obj7, "deactivate");
+      const tmp25 = closure_4(tmp(5210).AlertActionButton, obj7, "deactivate");
+    } else {
+      class C {
+        constructor(arg0) {
+          stopPropagationResult = arg0.stopPropagation();
+          return onDeactivate();
+        }
+      }
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor(arg0) {
+          stopPropagationResult = arg0.stopPropagation();
+          return onDeactivate();
+        }
+      }
+      cResult[15] = tmp27;
+      tmp26 = tmp27;
+    } else {
+      class C {
+        constructor(arg0) {
+          stopPropagationResult = arg0.stopPropagation();
+          return onDeactivate();
+        }
+      }
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor(arg0) {
+          stopPropagationResult = arg0.stopPropagation();
+          return onDeactivate();
+        }
+      }
+      const obj9 = { onPress: tmp26, variant: "secondary", text: intl3.string(tmp(1127).t["ETE/oC"]) };
+      const AlertActionButton = tmp(5210).AlertActionButton;
+      intl3 = tmp(1127).intl;
+      let str2 = "cancel";
+      const tmp29 = closure_4(AlertActionButton, obj9, "cancel");
+      cResult[16] = tmp29;
+      tmp28 = tmp29;
+    } else {
+      class C {
+        constructor(arg0) {
+          stopPropagationResult = arg0.stopPropagation();
+          return onDeactivate();
+        }
+      }
+    }
+    if (cResult[17] === tmp19) {
+      let tmp35;
+      class C {
+        constructor(arg0) {
+          stopPropagationResult = arg0.stopPropagation();
+          return onDeactivate();
+        }
+      }
+      if (cResult[20] === tmp4.warningText) {
+        class C {
+          constructor(arg0) {
+            stopPropagationResult = arg0.stopPropagation();
+            return onDeactivate();
+          }
+        }
+        if (cResult[25] === tmp4.extraContentContainer) {
+          class C {
+            constructor(arg0) {
+              stopPropagationResult = arg0.stopPropagation();
+              return onDeactivate();
+            }
+          }
+          if (cResult[28] === tmp30) {
+            class C {
+              constructor(arg0) {
+                stopPropagationResult = arg0.stopPropagation();
+                return onDeactivate();
+              }
+            }
+          }
+          const obj10 = { header: tmp11, title: tmp15, content: tmp17, actions: tmp30, extraContent: tmp37 };
+          cResult[28] = tmp30;
+          cResult[29] = tmp37;
+          cResult[30] = tmp11;
+          cResult[31] = tmp15;
+          cResult[32] = tmp17;
+          cResult[33] = closure_4(tmp(5210).AlertModal, obj10);
+          const tmp43 = closure_4(tmp(5210).AlertModal, obj10);
+        }
+        const obj11 = { style: tmp33, children: tmp34 };
+        cResult[25] = tmp4.extraContentContainer;
+        cResult[26] = tmp34;
+        cResult[27] = closure_4(View, obj11);
+        const tmp40 = closure_4(View, obj11);
+      }
+      if (cResult[23] !== tmp4.warningText) {
+        class D {
+          constructor(arg0, arg1) {
+            tmp = jsx;
+            obj = { style: closure_0.warningText, variant: null, color: null, children: null };
+            str = "text-sm/medium";
+            Text = closure_0(closure_2[12]).Text;
+            if (arg0.critical) {
+              str = "text-sm/semibold";
+            }
+            obj.variant = str;
+            str2 = undefined;
+            if (arg0.critical) {
+              str2 = "text-feedback-critical";
+            }
+            obj.color = str2;
+            obj.children = arg0.text;
+            return tmp(Text, obj, arg1);
+          }
+        }
+        cResult[23] = tmp4.warningText;
+        cResult[24] = D;
+        tmp35 = D;
+      } else {
+        class D {
+          constructor(arg0, arg1) {
+            tmp = jsx;
+            obj = { style: closure_0.warningText, variant: null, color: null, children: null };
+            str = "text-sm/medium";
+            Text = closure_0(closure_2[12]).Text;
+            if (arg0.critical) {
+              str = "text-sm/semibold";
+            }
+            obj.variant = str;
+            str2 = undefined;
+            if (arg0.critical) {
+              str2 = "text-feedback-critical";
+            }
+            obj.color = str2;
+            obj.children = arg0.text;
+            return tmp(Text, obj, arg1);
+          }
+        }
+      }
+      const mapped = arr.map(tmp35);
+      cResult[20] = tmp4.warningText;
+      cResult[21] = arr;
+      cResult[22] = mapped;
+    }
+    const obj12 = { children: items };
+    items = [tmp19, tmp24, tmp28];
+    cResult[17] = tmp19;
+    cResult[18] = tmp24;
+    cResult[19] = closure_5(tmp(5210).AlertActions, obj12);
+    const tmp32 = closure_5(tmp(5210).AlertActions, obj12);
+  }
+  let tmp20 = null != error;
+  if (tmp20) {
+    class D {
+      constructor(arg0, arg1) {
+        tmp = jsx;
+        obj = { style: closure_0.warningText, variant: null, color: null, children: null };
+        str = "text-sm/medium";
+        Text = closure_0(closure_2[12]).Text;
+        if (arg0.critical) {
+          str = "text-sm/semibold";
+        }
+        obj.variant = str;
+        str2 = undefined;
+        if (arg0.critical) {
+          str2 = "text-feedback-critical";
+        }
+        obj.color = str2;
+        obj.children = arg0.text;
+        return tmp(Text, obj, arg1);
+      }
+    }
+    const obj13 = { style: tmp4.warningText, variant: "text-xs/semibold", color: "text-feedback-critical", children: error };
+    tmp20 = closure_4(tmp(4833).Text, obj13);
+  }
+  cResult[7] = error;
+  cResult[8] = tmp4.warningText;
+  cResult[9] = tmp20;
+  tmp19 = tmp20;
+}) : ((arg0) => {
   let AlertActions;
   let CircleErrorIcon;
   let _undefined;
@@ -64,7 +356,7 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   const arr = useDeactivateWarningTextDefault(guildId, powerup);
   let obj = require("GuildPowerupAnalytics");
   const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, require("GuildPowerupAnalytics").ModalType.DEACTIVATE);
-  const obj2 = { header: closure_4(View, obj3), title: intl.formatToPlainString(_modDef2519.iEBw1M, obj5), content: intl2.formatToPlainString(_modDef2519["7o0K+2"], obj6), actions: tmp9(AlertActions, obj8), extraContent: closure_4(tmp8, obj11) };
+  const obj2 = { header: closure_4(View, obj3), title: intl.formatToPlainString(_modDef2522.iEBw1M, obj5), content: intl2.formatToPlainString(_modDef2522["7o0K+2"], obj6), actions: tmp9(AlertActions, obj8), extraContent: closure_4(tmp8, obj11) };
   obj3 = { style: tmp.headerContainer, children: closure_4(CircleErrorIcon, obj4) };
   const AlertModal = require("AlertModal").AlertModal;
   obj4 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "custom", style: { width: 40, height: 40 } };
@@ -79,7 +371,7 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   tmp9 = closure_5;
   if (tmp7Result) {
     const obj7 = { style: tmp.warningText, variant: "text-xs/semibold", color: "text-feedback-critical", children: error };
-    tmp7Result = tmp7(tmp5(4832).Text, obj7);
+    tmp7Result = tmp7(tmp5(4833).Text, obj7);
   }
   obj8 = { children: items };
   items = [tmp7Result, , ];
@@ -89,10 +381,10 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
       stopPropagation.stopPropagation();
       return _undefined();
     },
-    text: intl3.string(_modDef2519.PYPdl4)
+    text: intl3.string(_modDef2522.PYPdl4)
   };
-  const AlertActionButton = tmp5(5209).AlertActionButton;
-  intl3 = tmp5(1115).intl;
+  const AlertActionButton = tmp5(5210).AlertActionButton;
+  intl3 = tmp5(1127).intl;
   items[1] = closure_4(AlertActionButton, obj9, "deactivate");
   const obj10 = {
     onPress() {
@@ -101,8 +393,8 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
     variant: "secondary",
     text: intl4.string(require("intl").t["ETE/oC"])
   };
-  const AlertActionButton2 = tmp5(5209).AlertActionButton;
-  intl4 = tmp5(1115).intl;
+  const AlertActionButton2 = tmp5(5210).AlertActionButton;
+  intl4 = tmp5(1127).intl;
   items[2] = closure_4(AlertActionButton2, obj10, "cancel");
   obj11 = {
     style: tmp.extraContentContainer,
@@ -124,4 +416,8 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
     })
   };
   return closure_4(AlertModal, obj2);
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsDeactivateAlert.tsx");
+
+export default tmp4;

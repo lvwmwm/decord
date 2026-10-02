@@ -1,13 +1,13 @@
-// Module ID: 17542
-// Function ID: 17543
+// Module ID: 17544
+// Function ID: 17545
 // Name: CreatorMonetizationAcceptTermCheckboxText
-// Dependencies: [1074, 1115, 2111, 2]
+// Dependencies: [1086, 1127, 2114, 2]
 // Exports: getCreatorMonetizationAcceptTermsCheckboxText
 
-// Module 17542 (CreatorMonetizationAcceptTermCheckboxText)
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
+// Module 17544 (CreatorMonetizationAcceptTermCheckboxText)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;

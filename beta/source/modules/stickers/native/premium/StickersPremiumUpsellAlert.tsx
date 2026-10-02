@@ -1,27 +1,30 @@
-// Module ID: 9870
-// Function ID: 9871
+// Module ID: 9907
+// Function ID: 9908
 // Name: StickersPremiumUpsellAlert
-// Dependencies: [19, 17, 6658, 1074, 1374, 21, 9871, 1115, 576, 9872, 9873, 4836, 1177, 4832, 573, 6839, 8665, 1479, 6583, 5300, 1241, 8695, 5435, 6413, 9874, 2]
-// Exports: default
+// Dependencies: [19, 17, 6659, 1086, 1380, 21, 9908, 1127, 588, 9909, 9910, 4837, 558, 576, 1189, 4833, 585, 6840, 8662, 1485, 6584, 1253, 8690, 6413, 5436, 9911, 5301, 2]
 
-// Module 9870 (StickersPremiumUpsellAlert)
-import nativeDefault from "native" /* 576 */;
-import intl4 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8695 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9871 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9872 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9873 */;
+// Module 9907 (StickersPremiumUpsellAlert)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8690 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9908 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9909 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9910 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import IAPStore from "IAPStore" /* 6658 */;
-import Constants from "Constants" /* 1074 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+import IAPStore from "IAPStore" /* 6659 */;
+import Constants from "Constants" /* 1086 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let perk;
 
 let c10;
 let c9;
@@ -36,28 +39,6 @@ let metroRequire;
 let obj5;
 let obj6;
 let unpackModuleId;
-function PerkRow(perk) {
-  let items1;
-  perk = perk.perk;
-  const isLastPerk = perk.isLastPerk;
-  const tmp = closure_17();
-  items = [tmp.perkRow, ];
-  let lastPerkRow;
-  const tmp2 = closure_15;
-  const tmp3 = React3;
-  if (isLastPerk) {
-    lastPerkRow = tmp.lastPerkRow;
-  }
-  const obj = { style: items, children: items1 };
-  items[1] = lastPerkRow;
-  items1 = [, ];
-  const obj2 = { style: tmp.perkIcon, source: perk.icon, disableColor: null == perk.color, color: perk.color };
-  items1[0] = authStore2(native.Icon, obj2);
-  const obj3 = { style: tmp.perkText, variant: "text-md/medium", color: "interactive-text-active", children: perk.description() };
-  const Text = Text_Text.Text;
-  items1[1] = authStore2(Text, obj3);
-  return tmp2(tmp3, obj);
-}
 ({ View: closure_4, Image: hasOwnProperty, ScrollView: metroRequire } = react_native);
 ({ AnalyticEvents: metroImportAll, AnalyticsSections: c9, AnalyticsObjects: c10 } = Constants);
 ({ SubscriptionPlans: unpackModuleId, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_12, PRICE_PLACEHOLDER: map1 } = PremiumConstants);
@@ -95,9 +76,364 @@ obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRa
 createStyles = createStyles.createStyles;
 obj6 = { paddingVertical: 10, borderBottomColor: nativeDefault.unsafe_rawColors.PRIMARY_560, borderBottomWidth: 1, flexDirection: "row", alignItems: "center" };
 let closure_17 = createStyles(obj4);
-const result = size.fileFinishedImporting("modules/stickers/native/premium/StickersPremiumUpsellAlert.tsx");
-
-export default function StickersPremiumUpsellAlert(arg0) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((perk) => {
+  const obj = react2;
+  const cResult = obj.c(17);
+  perk = perk.perk;
+  const isLastPerk = perk.isLastPerk;
+  const tmp4 = closure_17();
+  let lastPerkRow;
+  if (isLastPerk) {
+    lastPerkRow = tmp4.lastPerkRow;
+  }
+  if (cResult[0] === tmp4.perkRow) {
+    let tmp6;
+    if (cResult[1] === lastPerkRow) {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] === perk.color) {
+      if (cResult[4] === perk.icon) {
+        if (cResult[5] === tmp4.perkIcon) {
+          let tmp9;
+          let tmp12;
+          if (cResult[6] === null == perk.color) {
+            tmp9 = cResult[7];
+          }
+          const perkText = tmp4.perkText;
+          if (cResult[8] !== perk) {
+            const descriptionResult = perk.description();
+            cResult[8] = perk;
+            cResult[9] = descriptionResult;
+            tmp12 = descriptionResult;
+          } else {
+            tmp12 = cResult[9];
+          }
+          if (cResult[10] === tmp4.perkText) {
+            let tmp14;
+            if (cResult[11] === tmp12) {
+              tmp14 = cResult[12];
+            }
+            if (cResult[13] === tmp6) {
+              if (cResult[14] === tmp9) {
+                let tmp17;
+                if (cResult[15] === tmp14) {
+                  tmp17 = cResult[16];
+                }
+                return tmp17;
+              }
+            }
+            const obj2 = { style: tmp6, children: items };
+            items = [tmp9, tmp14];
+            const tmp20 = closure_15(React3, obj2);
+            cResult[13] = tmp6;
+            cResult[14] = tmp9;
+            cResult[15] = tmp14;
+            cResult[16] = tmp20;
+            tmp17 = tmp20;
+          }
+          const obj3 = { style: perkText, variant: "text-md/medium", color: "interactive-text-active", children: tmp12 };
+          const tmp16 = authStore2(Text_Text.Text, obj3);
+          cResult[10] = tmp4.perkText;
+          cResult[11] = tmp12;
+          cResult[12] = tmp16;
+          tmp14 = tmp16;
+        }
+      }
+    }
+    const obj4 = { style: tmp4.perkIcon, source: perk.icon, disableColor: null == perk.color, color: perk.color };
+    const tmp11 = authStore2(native.Icon, obj4);
+    cResult[3] = perk.color;
+    cResult[4] = perk.icon;
+    cResult[5] = tmp4.perkIcon;
+    cResult[6] = null == perk.color;
+    cResult[7] = tmp11;
+    tmp9 = tmp11;
+  }
+  const items1 = [tmp4.perkRow, lastPerkRow];
+  cResult[0] = tmp4.perkRow;
+  cResult[1] = lastPerkRow;
+  cResult[2] = items1;
+  tmp6 = items1;
+}) : ((perk) => {
+  let items1;
+  perk = perk.perk;
+  const isLastPerk = perk.isLastPerk;
+  const tmp = closure_17();
+  items = [tmp.perkRow, ];
+  let lastPerkRow;
+  const tmp2 = closure_15;
+  const tmp3 = React3;
+  if (isLastPerk) {
+    lastPerkRow = tmp.lastPerkRow;
+  }
+  const obj = { style: items, children: items1 };
+  items[1] = lastPerkRow;
+  items1 = [, ];
+  const obj2 = { style: tmp.perkIcon, source: perk.icon, disableColor: null == perk.color, color: perk.color };
+  items1[0] = authStore2(native.Icon, obj2);
+  const obj3 = { style: tmp.perkText, variant: "text-md/medium", color: "interactive-text-active", children: perk.description() };
+  const Text = Text_Text.Text;
+  items1[1] = authStore2(Text, obj3);
+  return tmp2(tmp3, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let analyticsLocation;
+  let analyticsLocations;
+  let items1;
+  let length;
+  let obj8;
+  let onClose;
+  let priceString;
+  let ready;
+  let tmp5;
+  let tmp6;
+  const tmp = analyticsLocation;
+  let obj = analyticsLocation(576);
+  const cResult = obj.c(38);
+  ({ onClose, analyticsLocation } = arg0);
+  const tmp4 = closure_17();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function p() {
+      if (!ready.isReady()) {
+        let obj = analyticsLocations(dependencyMap[16]);
+        obj.wait(() => {
+          const obj = analyticsLocations(closure_1_2[17]);
+          return obj.loadProducts();
+        });
+      }
+    };
+    items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp5 = fn;
+    tmp6 = items;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const effect = react.useEffect(tmp5, tmp6);
+  const tmp9 = analyticsLocations(8662)(closure_11.PREMIUM_MONTH_TIER_2);
+  if (tmp9 != null) {
+    priceString = tmp9.priceString;
+  }
+  const height = tmp8(1485)().height;
+  analyticsLocations = tmp8(6584)().analyticsLocations;
+  if (cResult[2] === analyticsLocation) {
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      cResult[5] = intl.string(tmp(1127).t.f3Pet9);
+      const stringResult = intl.string(tmp(1127).t.f3Pet9);
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl2 = tmp(1127).intl;
+      cResult[6] = intl2.string(tmp(1127).t.o3Tnif);
+      const stringResult1 = intl2.string(tmp(1127).t.o3Tnif);
+    }
+    let shortHeightAlert = null;
+    if (height <= 580) {
+      shortHeightAlert = tmp4.shortHeightAlert;
+    }
+    if (cResult[7] === tmp4.alert) {
+      let tmp17;
+      let tmp20;
+      const _Symbol3 = Symbol;
+      if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+        let obj2 = { source: analyticsLocations(6413) };
+        const Icon = tmp(1189).Icon;
+        const tmp19 = closure_14(Icon, obj2);
+        cResult[10] = tmp19;
+        tmp17 = tmp19;
+      } else {
+        tmp17 = cResult[10];
+      }
+      if (cResult[11] !== onClose) {
+        let obj3 = { accessibilityRole: "button", accessibilityLabel: "close", onPress: onClose, children: tmp17 };
+        const tmp22 = closure_14(tmp(5436).PressableOpacity, obj3);
+        cResult[11] = onClose;
+        cResult[12] = tmp22;
+        tmp20 = tmp22;
+      } else {
+        tmp20 = cResult[12];
+      }
+      if (cResult[13] === tmp4.closeContainer) {
+        let tmp27;
+        const _Symbol4 = Symbol;
+        const content = tmp4.content;
+        if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+          class K {
+            constructor() {
+              return true;
+            }
+          }
+          cResult[16] = K;
+          tmp27 = K;
+        } else {
+          class K {
+            constructor() {
+              return true;
+            }
+          }
+        }
+        if (cResult[17] !== tmp4.imageHeader) {
+          class K {
+            constructor() {
+              return true;
+            }
+          }
+          const obj4 = { source: analyticsLocations(9911), style: tmp4.imageHeader };
+          cResult[17] = tmp4.imageHeader;
+          cResult[18] = closure_14(closure_5, obj4);
+          const tmp30 = closure_14(closure_5, obj4);
+        } else {
+          class K {
+            constructor() {
+              return true;
+            }
+          }
+        }
+        const description = tmp4.description;
+        if (cResult[19] !== priceString) {
+          class K {
+            constructor() {
+              return true;
+            }
+          }
+          const format = tmp32.format;
+          const TBsJfQ = tmp(1127).t.TBsJfQ;
+          const tmp33 = priceString;
+          if (priceString == null) {
+            class K {
+              constructor() {
+                return true;
+              }
+            }
+          }
+          const obj5 = { monthlyPrice: tmp33 };
+          cResult[19] = priceString;
+          cResult[20] = format(TBsJfQ, obj5);
+          const formatResult = format(TBsJfQ, obj5);
+        } else {
+          class K {
+            constructor() {
+              return true;
+            }
+          }
+        }
+        if (cResult[21] === tmp4.description) {
+          let tmp38;
+          let tmp40;
+          class K {
+            constructor() {
+              return true;
+            }
+          }
+          const _Symbol5 = Symbol;
+          const perks = tmp4.perks;
+          if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
+            class K {
+              constructor() {
+                return true;
+              }
+            }
+            const mapped = items.map((perk, index) => {
+              const obj = { perk, isLastPerk: index === items.length - 1 };
+              return closure_1_14(closure_1_18, obj, index);
+            });
+            cResult[24] = mapped;
+            tmp38 = mapped;
+          } else {
+            class K {
+              constructor() {
+                return true;
+              }
+            }
+          }
+          if (cResult[25] !== tmp4.perks) {
+            class K {
+              constructor() {
+                return true;
+              }
+            }
+            const obj6 = { style: perks, children: tmp38 };
+            const tmp42 = closure_14(closure_4, obj6);
+            cResult[25] = tmp4.perks;
+            cResult[26] = tmp42;
+            tmp40 = tmp42;
+          } else {
+            class K {
+              constructor() {
+                return true;
+              }
+            }
+          }
+          if (cResult[27] === tmp4.content) {
+            class K {
+              constructor() {
+                return true;
+              }
+            }
+          }
+          const obj7 = { children: closure_15(closure_4, obj8) };
+          obj8 = { style: content, onStartShouldSetResponder: tmp27, children: items1 };
+          items1 = [tmp28, tmp35, tmp40];
+          cResult[27] = tmp4.content;
+          cResult[28] = tmp28;
+          cResult[29] = tmp35;
+          const tmp48 = closure_14(closure_6, obj7);
+          class M {
+            constructor() {
+              let obj2;
+              const obj = { location: obj2 };
+              obj2 = { section: React4.STICKER_PREMIUM_TIER_2_UPSELL_MODAL, object: constants.BUTTON_CTA };
+              const track = AnalyticsUtilsDefault.track;
+              const PREMIUM_PROMOTION_OPENED = metroImportAll.PREMIUM_PROMOTION_OPENED;
+              AnalyticsUtilsDefault;
+              const merged = Object.assign(analyticsLocation);
+              track(PREMIUM_PROMOTION_OPENED, obj);
+              const obj3 = { analyticsLocations };
+              openPremiumModalDefault(obj3);
+            }
+          }
+          cResult[31] = tmp48;
+        }
+        const obj9 = { style: description, variant: "text-md/medium", children: tmp31 };
+        cResult[21] = tmp4.description;
+        cResult[22] = tmp31;
+        cResult[23] = closure_14(tmp(4833).Text, obj9);
+        const tmp37 = closure_14(tmp(4833).Text, obj9);
+      }
+      const obj10 = { style: tmp4.closeContainer, children: tmp20 };
+      cResult[13] = tmp4.closeContainer;
+      cResult[14] = tmp20;
+      cResult[15] = closure_14(closure_4, obj10);
+      const tmp26 = closure_14(closure_4, obj10);
+    }
+    const items2 = [tmp4.alert, shortHeightAlert];
+    cResult[7] = tmp4.alert;
+    cResult[8] = shortHeightAlert;
+    cResult[9] = items2;
+  }
+  class M {
+    constructor() {
+      let obj2;
+      const obj = { location: obj2 };
+      obj2 = { section: React4.STICKER_PREMIUM_TIER_2_UPSELL_MODAL, object: constants.BUTTON_CTA };
+      const track = AnalyticsUtilsDefault.track;
+      const PREMIUM_PROMOTION_OPENED = metroImportAll.PREMIUM_PROMOTION_OPENED;
+      AnalyticsUtilsDefault;
+      const merged = Object.assign(analyticsLocation);
+      track(PREMIUM_PROMOTION_OPENED, obj);
+      const obj3 = { analyticsLocations };
+      openPremiumModalDefault(obj3);
+    }
+  }
+  cResult[2] = analyticsLocation;
+  cResult[3] = analyticsLocations;
+  cResult[4] = M;
+}) : ((arg0) => {
   let Icon;
   let PressableOpacity;
   let TBsJfQ;
@@ -116,20 +452,20 @@ export default function StickersPremiumUpsellAlert(arg0) {
   const tmp = closure_17();
   const effect = react.useEffect(() => {
     if (!ready.isReady()) {
-      let obj = analyticsLocations(dependencyMap[14]);
+      let obj = analyticsLocations(dependencyMap[16]);
       obj.wait(() => {
-        const obj = analyticsLocations(closure_1_2[15]);
+        const obj = analyticsLocations(closure_1_2[17]);
         return obj.loadProducts();
       });
     }
   }, []);
-  const tmp5 = analyticsLocations(8665)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
+  const tmp5 = analyticsLocations(8662)(closure_11.PREMIUM_MONTH_TIER_2);
   let priceString;
   if (tmp5 != null) {
     priceString = tmp5.priceString;
   }
-  const height = tmp3(1479)().height;
-  analyticsLocations = tmp3(6583)().analyticsLocations;
+  const height = tmp3(1485)().height;
+  analyticsLocations = tmp3(6584)().analyticsLocations;
   let obj = {
     cancelText: intl.string(intl4.t.f3Pet9),
     confirmColor: native.ButtonColors.GREEN,
@@ -151,7 +487,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
     style: items,
     children: items1
   };
-  const tmp3Result = analyticsLocations(5300);
+  const tmp3Result = analyticsLocations(5301);
   intl = intl4.intl;
   intl2 = intl4.intl;
   items = [tmp.alert, ];
@@ -162,9 +498,9 @@ export default function StickersPremiumUpsellAlert(arg0) {
   items[1] = shortHeightAlert;
   let obj2 = { style: tmp.closeContainer, children: closure_14(PressableOpacity, obj3) };
   obj3 = { accessibilityRole: "button", accessibilityLabel: "close", onPress: onClose, children: closure_14(Icon, obj4) };
-  PressableOpacity = tmp9(5435).PressableOpacity;
+  PressableOpacity = tmp9(5436).PressableOpacity;
   obj4 = { source: analyticsLocations(6413) };
-  Icon = tmp9(1177).Icon;
+  Icon = tmp9(1189).Icon;
   items1 = [closure_14(closure_4, obj2), ];
   const obj5 = {
     style: tmp.content,
@@ -174,13 +510,13 @@ export default function StickersPremiumUpsellAlert(arg0) {
     children: items2
   };
   items2 = [, , ];
-  const obj6 = { source: analyticsLocations(9874), style: tmp.imageHeader };
+  const obj6 = { source: analyticsLocations(9911), style: tmp.imageHeader };
   items2[0] = closure_14(closure_5, obj6);
   const obj7 = { style: tmp.description, variant: "text-md/medium", children: format(TBsJfQ, { monthlyPrice: priceString }) };
-  const Text = tmp9(4832).Text;
-  const intl3 = tmp9(1115).intl;
+  const Text = tmp9(4833).Text;
+  const intl3 = tmp9(1127).intl;
   format = intl3.format;
-  TBsJfQ = tmp9(1115).t.TBsJfQ;
+  TBsJfQ = tmp9(1127).t.TBsJfQ;
   const tmp13 = closure_6;
   if (priceString == null) {
     priceString = closure_13;
@@ -191,10 +527,13 @@ export default function StickersPremiumUpsellAlert(arg0) {
     style: tmp.perks,
     children: items.map((perk, index) => {
       const obj = { perk, isLastPerk: index === items.length - 1 };
-      return closure_1_14(PerkRow, obj, index);
+      return closure_1_14(closure_1_18, obj, index);
     })
   };
   items2[2] = closure_14(closure_4, obj9);
   items1[1] = closure_14(tmp13, obj8);
   return closure_15(tmp3Result, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/stickers/native/premium/StickersPremiumUpsellAlert.tsx");
+
+export default tmp7;

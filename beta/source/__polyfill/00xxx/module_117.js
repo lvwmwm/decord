@@ -8,7 +8,7 @@ import get_BatchedBridge from "get BatchedBridge" /* 272 */;
 import _mod287 from "module_287" /* 287 */;
 import setUpDefaltReactNativeEnvironment from "setUpDefaltReactNativeEnvironment" /* 118 */;
 
-let _null, _null2, _null3, _null5, _require, closure_139, closure_304, context, context2, dependencyMap, isArray, items11, map1, set2, set3, str5;
+let _null, _null2, _null3, _null5, _require, closure_139, closure_304, context, context2, dependencyMap, isArray, items11, map1, set, set2, set3, str5;
 
 let tmp;
 let tmp12;
@@ -3723,7 +3723,7 @@ function updateActionStateImpl(queue, c166, memoizedState) {
       const dispatch = queue.dispatch;
       if (memoizedState !== tmp6.memoizedState) {
         _null.flags = _null.flags | 2048;
-        pushSimpleEffect(9, { destroy: "Path" }, actionStateActionEffect.bind(null, queue, memoizedState), null);
+        pushSimpleEffect(9, { destroy: "call" }, actionStateActionEffect.bind(null, queue, memoizedState), null);
       }
       items = [tmp2, dispatch, tmp];
       return items;
@@ -5985,7 +5985,7 @@ function updateSuspenseListComponent(child, pendingProps, current2) {
           if ("together" === revealOrder) {
             memoizedState = pendingProps.memoizedState;
             if (null === memoizedState) {
-              pendingProps.memoizedState = { isBackwards: false, rendering: null, renderingStartTime: 0, last: null, tail: null, tailMode: "disabled", treeForkCount: false };
+              pendingProps.memoizedState = { isBackwards: false, rendering: null, renderingStartTime: 0, last: null, tail: null, tailMode: "done", treeForkCount: false };
             } else {
               memoizedState.isBackwards = false;
               memoizedState.rendering = null;
@@ -17837,7 +17837,7 @@ function updateSyncExternalStore(serializer, getSnapshot) {
     return tmp3;
   }
   _null.flags = _null.flags | 2048;
-  const lastEffect = { tag: 9, create: updateStoreInstance.bind(null, tmp, queue, tmp3, getSnapshot), deps: null, inst: { destroy: "Path" }, next: null };
+  const lastEffect = { tag: 9, create: updateStoreInstance.bind(null, tmp, queue, tmp3, getSnapshot), deps: null, inst: { destroy: "call" }, next: null };
   let updateQueue = _null.updateQueue;
   if (null === updateQueue) {
     obj2 = { lastEffect: null, events: null, stores: null, memoCache: null };
@@ -18166,7 +18166,7 @@ function mountEffect(create, arg1) {
   if (undefined !== arg1) {
     tmp4 = arg1;
   }
-  obj2 = { tag: 9, create, deps: tmp4, inst: { destroy: "Path" }, next: null };
+  obj2 = { tag: 9, create, deps: tmp4, inst: { destroy: "call" }, next: null };
   let updateQueue = _null.updateQueue;
   if (null === updateQueue) {
     const obj3 = { lastEffect: null, events: null, stores: null, memoCache: null };
@@ -18240,14 +18240,14 @@ let closure_210 = {
   },
   useContext: readContext,
   useEffect: mountEffect,
-  useImperativeHandle(ref, chatInputRefObjectCallback, items) {
+  useImperativeHandle(ref, cResult, cResult2) {
     let combined = null;
-    if (null != items) {
+    if (null != cResult2) {
       items = [ref];
-      combined = items.concat(items);
+      combined = cResult2.concat(items);
     }
     const next = { memoizedState: null, baseState: null, baseQueue: null, queue: null, next: null };
-    const bindResult = imperativeHandleEffect.bind(null, chatInputRefObjectCallback, ref);
+    const bindResult = imperativeHandleEffect.bind(null, cResult, ref);
     if (null === next) {
       _null.memoizedState = next;
     } else {
@@ -18259,7 +18259,7 @@ let closure_210 = {
     if (undefined !== combined) {
       tmp6 = combined;
     }
-    obj2 = { tag: 5, create: bindResult, deps: tmp6, inst: { destroy: "Path" }, next: null };
+    obj2 = { tag: 5, create: bindResult, deps: tmp6, inst: { destroy: "call" }, next: null };
     let updateQueue = _null.updateQueue;
     if (null === updateQueue) {
       const obj3 = { lastEffect: null, events: null, stores: null, memoCache: null };
@@ -18276,7 +18276,7 @@ let closure_210 = {
     }
     tmp5.memoizedState = obj2;
   },
-  useLayoutEffect(create, items) {
+  useLayoutEffect(fn, items) {
     const next = { memoizedState: null, baseState: null, baseQueue: null, queue: null, next: null };
     if (null === next) {
       _null.memoizedState = next;
@@ -18289,7 +18289,7 @@ let closure_210 = {
     if (undefined !== items) {
       tmp4 = items;
     }
-    obj2 = { tag: 5, create, deps: tmp4, inst: { destroy: "Path" }, next: null };
+    obj2 = { tag: 5, create: fn, deps: tmp4, inst: { destroy: "call" }, next: null };
     let updateQueue = _null.updateQueue;
     if (null === updateQueue) {
       const obj3 = { lastEffect: null, events: null, stores: null, memoCache: null };
@@ -18306,7 +18306,7 @@ let closure_210 = {
     }
     tmp3.memoizedState = obj2;
   },
-  useInsertionEffect(create, items) {
+  useInsertionEffect(cResult, items) {
     const next = { memoizedState: null, baseState: null, baseQueue: null, queue: null, next: null };
     if (null === next) {
       _null.memoizedState = next;
@@ -18319,7 +18319,7 @@ let closure_210 = {
     if (undefined !== items) {
       tmp4 = items;
     }
-    obj2 = { tag: 3, create, deps: tmp4, inst: { destroy: "Path" }, next: null };
+    obj2 = { tag: 3, create: cResult, deps: tmp4, inst: { destroy: "call" }, next: null };
     let updateQueue = _null.updateQueue;
     if (null === updateQueue) {
       const obj3 = { lastEffect: null, events: null, stores: null, memoCache: null };
@@ -18358,7 +18358,7 @@ let closure_210 = {
     tmp.memoizedState = items;
     return tmp3;
   },
-  useReducer(lastRenderedReducer, arg1, fn) {
+  useReducer(P, arg1, fn) {
     let bindResult;
     const tmp = mountWorkInProgressHook();
     let tmp2 = arg1;
@@ -18379,14 +18379,14 @@ let closure_210 = {
     }
     tmp.baseState = tmp2;
     tmp.memoizedState = tmp2;
-    const queue = { pending: null, lanes: 0, dispatch: bindResult, lastRenderedReducer, lastRenderedState: tmp2 };
+    const queue = { pending: null, lanes: 0, dispatch: bindResult, lastRenderedReducer: P, lastRenderedState: tmp2 };
     tmp.queue = queue;
     bindResult = dispatchReducerAction.bind(null, c165, queue);
     items = [tmp.memoizedState, bindResult];
     return items;
   },
-  useRef(set) {
-    memoizedState = { current: set, memoizedState };
+  useRef(cResult) {
+    memoizedState = { current: cResult, memoizedState };
     obj2 = { memoizedState: null, baseState: null, baseQueue: null, queue: null, next: null };
     if (null === memoizedState) {
       memoizedState = obj2;
@@ -18495,7 +18495,7 @@ let closure_210 = {
         next = obj5;
       }
       _null.flags = _null.flags | 8390656;
-      obj6 = { tag: 9, create: bindResult, deps: items2, inst: { destroy: "Path" }, next: null };
+      obj6 = { tag: 9, create: bindResult, deps: items2, inst: { destroy: "call" }, next: null };
       let updateQueue2 = _null.updateQueue;
       const tmp18 = next;
       if (null === updateQueue2) {
@@ -18513,7 +18513,7 @@ let closure_210 = {
       }
       tmp18.memoizedState = obj6;
       _null.flags = _null.flags | 2048;
-      const obj8 = { tag: 9, create: updateStoreInstance.bind(null, _null, obj4, tmp4, get), deps: null, inst: { destroy: "Path" }, next: null };
+      const obj8 = { tag: 9, create: updateStoreInstance.bind(null, _null, obj4, tmp4, get), deps: null, inst: { destroy: "call" }, next: null };
       let updateQueue3 = _null.updateQueue;
       if (null === updateQueue3) {
         obj9 = { lastEffect: null, events: null, stores: null, memoCache: null };
@@ -18571,14 +18571,14 @@ let closure_210 = {
     bindResult = refreshCache.bind(null, c165);
     return bindResult;
   },
-  useEffectEvent(impl) {
+  useEffectEvent(cResult) {
     const next = { memoizedState: obj2, baseState: null, baseQueue: null, queue: null, next: null };
     if (null === next) {
       c165.memoizedState = next;
     } else {
       tmp.next = next;
     }
-    obj2 = { impl };
+    obj2 = { impl: cResult };
     return function() {
       if (2 & closure_277) {
         const _Error = Error;

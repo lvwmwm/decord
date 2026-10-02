@@ -1,27 +1,32 @@
-// Module ID: 17461
-// Function ID: 17462
+// Module ID: 17463
+// Function ID: 17464
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 2067, 4469, 9049, 1074, 21, 4836, 576, 9845, 1115, 4832, 16057, 4787, 1485, 504, 573, 9048, 17462, 2111, 5281, 17466, 4527, 6461, 2]
-// Exports: default
+// Dependencies: [19, 17, 2073, 4472, 9026, 1086, 21, 4837, 588, 9879, 1127, 4833, 16059, 4788, 558, 576, 1491, 504, 585, 9025, 17464, 17468, 4530, 2114, 5282, 6461, 2]
 
-// Module 17461 (GuildSettingsModalCommunityIntro)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import nativeDefault from "native" /* 576 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 17466 */;
+// Module 17463 (GuildSettingsModalCommunityIntro)
+import react2 from "react" /* 576 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import nativeDefault from "native" /* 588 */;
+import intl7 from "intl" /* 1127 */;
+import ToastUtils from "ToastUtils" /* 4530 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 4788 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import AnalyticsIcon2 from "AnalyticsIcon" /* 9879 */;
+import LightbulbIcon2 from "LightbulbIcon" /* 16059 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 17468 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9049 */;
-import Constants from "Constants" /* 1074 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9026 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let navigation;
+let contentContainerStyle, guildId, navigation, obj1, tmp2, tmp3, waitResult;
 
 let c10;
 let closure_12;
@@ -35,7 +40,165 @@ let metroRequire;
 let obj2;
 let obj3;
 let unpackModuleId;
-function FeatureCard(arg0) {
+function communityFeatures() {
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let obj2;
+  let obj4;
+  let obj = {
+    icon() {
+      const obj = { color: nativeDefault.unsafe_rawColors.GREEN_360 };
+      const AnalyticsIcon = AnalyticsIcon2.AnalyticsIcon;
+      return closure_1_14(AnalyticsIcon, obj);
+    },
+    header: intl.string(intl7.t.oVQF2y),
+    body: intl2.format(intl7.t.A6G7ak, obj2)
+  };
+  intl = intl7.intl;
+  intl2 = intl7.intl;
+  const items = [obj, , ];
+  obj2 = {
+    featureHook(children, arg1) {
+      const obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
+      return closure_1_14(Text_Text.Text, obj, arg1);
+    }
+  };
+  const obj3 = {
+    icon() {
+      const obj = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
+      const LightbulbIcon = LightbulbIcon2.LightbulbIcon;
+      return closure_1_14(LightbulbIcon, obj);
+    },
+    header: intl3.string(intl7.t["0rJl9y"]),
+    body: intl4.format(intl7.t.XsCNky, obj4)
+  };
+  intl3 = intl7.intl;
+  intl4 = intl7.intl;
+  obj4 = {
+    infoHook() {
+      return null;
+    },
+    featureHook(children, arg1) {
+      const obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
+      return closure_1_14(Text_Text.Text, obj, arg1);
+    }
+  };
+  items[1] = obj3;
+  const obj5 = {
+    icon() {
+      const obj = { color: nativeDefault.unsafe_rawColors.PLATFORM_PARTNER };
+      const CircleInformationIcon = CircleInformationIcon2.CircleInformationIcon;
+      return closure_1_14(CircleInformationIcon, obj);
+    },
+    header: intl5.string(intl7.t.W2kLJC),
+    body: intl6.string(intl7.t.hyNkHz)
+  };
+  intl5 = intl7.intl;
+  intl6 = intl7.intl;
+  items[2] = obj5;
+  return items;
+}
+({ View: closure_4, Image: hasOwnProperty, ScrollView: metroRequire } = react_native);
+({ HelpdeskArticles: c10, GuildFeatures: unpackModuleId, GuildSettingsSections: closure_12, Permissions: map1 } = Constants);
+({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: { height: "100%" }, contentPadding: { padding: 16 }, header: { textAlign: "center", marginBottom: 8 }, body: { textAlign: "center", marginBottom: 24 }, details: { textAlign: "center", marginTop: 24 }, headerImage: { width: "100%" }, features: { marginTop: 32, marginBottom: 32 }, featureCard: obj2, featureIcon: obj3, featureDescription: { overflow: "hidden", flex: 1 } };
+obj2 = { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, flex: 1, flexDirection: "row", padding: 16, borderRadius: nativeDefault.radii.sm, marginTop: 8, alignItems: "flex-start" };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: 40, marginRight: 16, padding: 8 };
+let closure_17 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let body;
+  let featureCard;
+  let featureIcon;
+  let header;
+  let icon;
+  let items;
+  let items1;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(17);
+  ({ icon, header, body } = arg0);
+  const tmp4 = closure_17();
+  ({ featureCard, featureIcon } = tmp4);
+  if (cResult[0] !== icon) {
+    const iconResult = icon();
+    cResult[0] = icon;
+    cResult[1] = iconResult;
+    tmp5 = iconResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === tmp4.featureIcon) {
+    let tmp7;
+    let tmp9;
+    let tmp12;
+    if (cResult[3] === tmp5) {
+      tmp7 = cResult[4];
+    }
+    if (cResult[5] !== header) {
+      const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: header };
+      const tmp11 = authStore2(Text_Text.Heading, obj2);
+      cResult[5] = header;
+      cResult[6] = tmp11;
+      tmp9 = tmp11;
+    } else {
+      tmp9 = cResult[6];
+    }
+    if (cResult[7] !== body) {
+      const obj3 = { variant: "text-sm/medium", color: "text-default", children: body };
+      const tmp14 = authStore2(Text_Text.Text, obj3);
+      cResult[7] = body;
+      cResult[8] = tmp14;
+      tmp12 = tmp14;
+    } else {
+      tmp12 = cResult[8];
+    }
+    if (cResult[9] === tmp4.featureDescription) {
+      if (cResult[10] === tmp9) {
+        let tmp15;
+        if (cResult[11] === tmp12) {
+          tmp15 = cResult[12];
+        }
+        if (cResult[13] === tmp4.featureCard) {
+          if (cResult[14] === tmp7) {
+            let tmp19;
+            if (cResult[15] === tmp15) {
+              tmp19 = cResult[16];
+            }
+            return tmp19;
+          }
+        }
+        const obj4 = { style: featureCard, children: items };
+        items = [tmp7, tmp15];
+        const tmp22 = closure_15(React3, obj4);
+        cResult[13] = tmp4.featureCard;
+        cResult[14] = tmp7;
+        cResult[15] = tmp15;
+        cResult[16] = tmp22;
+        tmp19 = tmp22;
+      }
+    }
+    const obj5 = { style: tmp4.featureDescription, children: items1 };
+    items1 = [tmp9, tmp12];
+    const tmp18 = closure_15(React3, obj5);
+    cResult[9] = tmp4.featureDescription;
+    cResult[10] = tmp9;
+    cResult[11] = tmp12;
+    cResult[12] = tmp18;
+    tmp15 = tmp18;
+  }
+  const tmp8 = authStore2(React3, { style: featureIcon, children: tmp5 });
+  cResult[2] = tmp4.featureIcon;
+  cResult[3] = tmp5;
+  cResult[4] = tmp8;
+  tmp7 = tmp8;
+}) : ((arg0) => {
   let body;
   let header;
   let icon;
@@ -51,37 +214,217 @@ function FeatureCard(arg0) {
   items1 = [authStore2(Text_Text.Heading, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: header }), authStore2(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: body })];
   items[1] = closure_15(React3, obj3);
   return closure_15(React3, obj);
-}
-({ View: closure_4, Image: hasOwnProperty, ScrollView: metroRequire } = react_native);
-({ HelpdeskArticles: c10, GuildFeatures: unpackModuleId, GuildSettingsSections: closure_12, Permissions: map1 } = Constants);
-({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { container: { height: "100%" }, contentPadding: { padding: 16 }, header: { textAlign: "center", marginBottom: 8 }, body: { textAlign: "center", marginBottom: 24 }, details: { textAlign: "center", marginTop: 24 }, headerImage: { width: "100%" }, features: { marginTop: 32, marginBottom: 32 }, featureCard: obj2, featureIcon: obj3, featureDescription: { overflow: "hidden", flex: 1 } };
-obj2 = { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, flex: 1, flexDirection: "row", padding: 16, borderRadius: nativeDefault.radii.sm, marginTop: 8, alignItems: "flex-start" };
-createStyles = createStyles.createStyles;
-obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: 40, marginRight: 16, padding: 8 };
-let closure_17 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/guild_settings/community/native/GuildSettingsModalCommunityIntro.tsx");
-
-export default function GuildSettingsModalCommunityIntro(contentContainerStyle) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let first;
+  let submitting;
+  let tmp10;
+  let tmp11;
+  let tmp13;
+  let tmp14;
+  let tmp8;
+  let tmp = guildId;
+  let obj = guildId(navigation[15]);
+  const cResult = obj.c(54);
+  guildId = guildId.guildId;
+  const onClose = guildId.onClose;
+  closure_17();
+  let obj2 = guildId(navigation[16]);
+  navigation = obj2.useNavigation();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    class I {
+      constructor() {
+        return closure_7.getGuild(guildId);
+      }
+    }
+    cResult[1] = guildId;
+    cResult[2] = I;
+    tmp8 = I;
+  } else {
+    class I {
+      constructor() {
+        return closure_7.getGuild(guildId);
+      }
+    }
+  }
+  const tmpResult = tmp(navigation[17]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class I {
+      constructor() {
+        return closure_7.getGuild(guildId);
+      }
+    }
+    const items1 = [PermissionStore];
+    cResult[3] = items1;
+    tmp10 = items1;
+  } else {
+    class I {
+      constructor() {
+        return closure_7.getGuild(guildId);
+      }
+    }
+  }
+  if (cResult[4] !== stateFromStores) {
+    class F {
+      constructor() {
+        canResult = null != closure_3;
+        if (canResult) {
+          tmp3 = closure_8;
+          tmp4 = Permissions;
+          canResult = closure_8.can(Permissions.ADMINISTRATOR, tmp);
+        }
+        return canResult;
+      }
+    }
+    cResult[4] = stateFromStores;
+    cResult[5] = F;
+    tmp11 = F;
+  } else {
+    class F {
+      constructor() {
+        canResult = null != closure_3;
+        if (canResult) {
+          tmp3 = closure_8;
+          tmp4 = Permissions;
+          canResult = closure_8.can(Permissions.ADMINISTRATOR, tmp);
+        }
+        return canResult;
+      }
+    }
+  }
+  const tmpResult3 = tmp(navigation[17]);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp10, tmp11);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class F {
+      constructor() {
+        canResult = null != closure_3;
+        if (canResult) {
+          tmp3 = closure_8;
+          tmp4 = Permissions;
+          canResult = closure_8.can(Permissions.ADMINISTRATOR, tmp);
+        }
+        return canResult;
+      }
+    }
+    const items2 = [GuildSettingsStore];
+    class H {
+      constructor() {
+        return closure_1_9.isSubmitting();
+      }
+    }
+    cResult[6] = items2;
+    cResult[7] = H;
+    tmp14 = H;
+    tmp13 = items2;
+  } else {
+    class F {
+      constructor() {
+        canResult = null != closure_3;
+        if (canResult) {
+          tmp3 = closure_8;
+          tmp4 = Permissions;
+          canResult = closure_8.can(Permissions.ADMINISTRATOR, tmp);
+        }
+        return canResult;
+      }
+    }
+    tmp14 = cResult[7];
+  }
+  const tmpResult4 = tmp(navigation[17]);
+  const stateFromStores2 = tmpResult4.useStateFromStores(tmp13, tmp14);
+  const tmp16 = cResult[8];
+  if (stateFromStores != null) {
+    class F {
+      constructor() {
+        canResult = null != closure_3;
+        if (canResult) {
+          tmp3 = closure_8;
+          tmp4 = Permissions;
+          canResult = closure_8.can(Permissions.ADMINISTRATOR, tmp);
+        }
+        return canResult;
+      }
+    }
+  }
+  if (tmp16 === undefined) {
+    class F {
+      constructor() {
+        canResult = null != closure_3;
+        if (canResult) {
+          tmp3 = closure_8;
+          tmp4 = Permissions;
+          canResult = closure_8.can(Permissions.ADMINISTRATOR, tmp);
+        }
+        return canResult;
+      }
+    }
+  }
+  if (stateFromStores != null) {
+    class F {
+      constructor() {
+        canResult = null != closure_3;
+        if (canResult) {
+          tmp3 = closure_8;
+          tmp4 = Permissions;
+          canResult = closure_8.can(Permissions.ADMINISTRATOR, tmp);
+        }
+        return canResult;
+      }
+    }
+  }
+  class Y {
+    constructor() {
+      tmp = !closure_5;
+      if (tmp) {
+        tmp2 = null;
+        hasItem = undefined;
+        if (closure_3 != null) {
+          features = closure_3.features;
+          tmp4 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.COMMUNITY);
+        }
+        tmp = hasItem;
+      }
+      if (tmp) {
+        tmp5 = closure_1;
+        tmp6 = closure_2;
+        obj = closure_1(closure_2[18]);
+        waitResult = obj.wait(() => { /* body not rendered: F147434 */ });
+        tmp8 = closure_2;
+        tmp9 = GuildSettingsSections;
+        obj1 = { onClose: null };
+        tmp10 = onClose;
+        obj1.onClose = onClose;
+        replaced = closure_2.replace(GuildSettingsSections.COMMUNITY, obj1);
+      }
+      return;
+    }
+  }
+  cResult[8] = undefined;
+  cResult[9] = stateFromStores2;
+  cResult[10] = navigation;
+  cResult[11] = onClose;
+  cResult[12] = Y;
+}) : ((contentContainerStyle) => {
+  let arr7;
   let format;
   let intl;
-  let intl10;
   let intl3;
   let intl4;
-  let intl5;
-  let intl6;
-  let intl7;
-  let intl8;
-  let intl9;
   let items4;
   let items5;
   let items6;
-  let items7;
   let obj11;
   let obj12;
-  let obj17;
-  let obj19;
   let onClose;
   let submitting;
   let v52EgsM;
@@ -117,7 +460,7 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
     if (tmp) {
       let obj = DispatcherDefault;
       obj.wait(() => {
-        const obj = onClose(navigation[17]);
+        const obj = onClose(navigation[19]);
         return obj.setSection(constants.COMMUNITY);
       });
       const obj2 = { onClose };
@@ -126,7 +469,7 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
   }, items3);
   const obj7 = { style: tmp.container, contentContainerStyle: items4, children: items5 };
   items4 = [tmp.contentPadding, contentContainerStyle];
-  const obj6 = { children: items7 };
+  const obj6 = { children: items6 };
   items5 = [, , , , , ];
   const obj5 = require("IntroHeader");
   const obj8 = { resizeMode: "contain", source: obj5.useIntroHeaderSource(), style: tmp.headerImage };
@@ -141,7 +484,7 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
   format = intl2.format;
   obj11 = { helpdeskArticle: obj12.getArticleURL(constants.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES) };
   v52EgsM = require("intl").t["52EgsM"];
-  obj12 = onClose(navigation[19]);
+  obj12 = onClose(navigation[23]);
   items5[2] = closure_14(Text, obj10);
   const obj13 = {
     text: intl3.string(require("intl").t.LhlgY9),
@@ -166,64 +509,17 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
   items5[4] = closure_14(Text2, obj14);
   const obj15 = {
     style: tmp.features,
-    children: items6.map((item, index) => {
+    children: arr7.map((item, index) => {
       const obj = {};
       const merged = Object.assign(item);
-      return closure_1_14(FeatureCard, obj, index);
+      return closure_1_14(closure_1_19, obj, index);
     })
   };
-  const obj16 = {
-    icon() {
-      const obj = { color: onClose(navigation[8]).unsafe_rawColors.GREEN_360 };
-      const AnalyticsIcon = require("AnalyticsIcon").AnalyticsIcon;
-      return closure_1_14(AnalyticsIcon, obj);
-    },
-    header: intl5.string(require("intl").t.oVQF2y),
-    body: intl6.format(require("intl").t.A6G7ak, obj17)
-  };
-  intl5 = require("intl").intl;
-  intl6 = require("intl").intl;
-  items6 = [obj16, , ];
-  obj17 = {
-    featureHook(children, arg1) {
-      const obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
-      return closure_1_14(require("Text/Text").Text, obj, arg1);
-    }
-  };
-  const obj18 = {
-    icon() {
-      const obj = { color: onClose(navigation[8]).unsafe_rawColors.YELLOW_300 };
-      const LightbulbIcon = require("LightbulbIcon").LightbulbIcon;
-      return closure_1_14(LightbulbIcon, obj);
-    },
-    header: intl7.string(require("intl").t["0rJl9y"]),
-    body: intl8.format(require("intl").t.XsCNky, obj19)
-  };
-  intl7 = require("intl").intl;
-  intl8 = require("intl").intl;
-  obj19 = {
-    infoHook() {
-      return null;
-    },
-    featureHook(children, arg1) {
-      const obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
-      return closure_1_14(require("Text/Text").Text, obj, arg1);
-    }
-  };
-  items6[1] = obj18;
-  const obj20 = {
-    icon() {
-      const obj = { color: onClose(navigation[8]).unsafe_rawColors.PLATFORM_PARTNER };
-      const CircleInformationIcon = require("CircleInformationIcon").CircleInformationIcon;
-      return closure_1_14(CircleInformationIcon, obj);
-    },
-    header: intl9.string(require("intl").t.W2kLJC),
-    body: intl10.string(require("intl").t.hyNkHz)
-  };
-  intl9 = require("intl").intl;
-  intl10 = require("intl").intl;
-  items6[2] = obj20;
+  arr7 = communityFeatures();
   items5[5] = closure_14(stateFromStores1, obj15);
-  items7 = [closure_15(closure_6, obj7), closure_14(require("NavScrim").NavScrim, {})];
+  items6 = [closure_15(closure_6, obj7), closure_14(require("NavScrim").NavScrim, {})];
   return closure_15(closure_16, obj6);
-};
+});
+const result = size.fileFinishedImporting("modules/guild_settings/community/native/GuildSettingsModalCommunityIntro.tsx");
+
+export default tmp6;

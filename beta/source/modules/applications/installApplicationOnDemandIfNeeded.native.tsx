@@ -1,14 +1,14 @@
-// Module ID: 8791
-// Function ID: 8792
+// Module ID: 8786
+// Function ID: 8787
 // Name: installApplicationOnDemandIfNeeded
-// Dependencies: [5, 2003, 5063, 1074, 8721, 6584, 8505, 5016, 4701, 8506, 2]
+// Dependencies: [5, 2009, 5064, 1086, 8716, 6585, 8502, 5017, 4703, 8503, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 8791 (installApplicationOnDemandIfNeeded)
-import Constants from "Constants" /* 1074 */;
+// Module 8786 (installApplicationOnDemandIfNeeded)
+import Constants from "Constants" /* 1086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2003 */;
-import ApplicationStore from "ApplicationStore" /* 5063 */;
+import ApplicationRecord from "ApplicationRecord" /* 2009 */;
+import ApplicationStore from "ApplicationStore" /* 5064 */;
 import size from "module_2" /* 2 */;
 
 let c4;
@@ -32,7 +32,7 @@ let obj = function _installApplicationOnDemandIfNeeded() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ let obj = function _installApplicationOnDemandIfNeeded() {
             let scopes;
             c3 = 1;
             c4 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else {
           if (1 === tmp4) {

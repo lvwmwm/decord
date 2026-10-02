@@ -9,8 +9,8 @@ const obj = {
   registerAsset(arg0) {
     return closure_0.push(arg0);
   },
-  getAssetByID(channelIcon) {
-    return closure_0[channelIcon - 1];
+  getAssetByID(value2) {
+    return closure_0[value2 - 1];
   }
 };
 

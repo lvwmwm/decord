@@ -1,19 +1,20 @@
-// Module ID: 10277
-// Function ID: 10278
+// Module ID: 10315
+// Function ID: 10316
 // Name: SocialLayerStorefrontBadges
-// Dependencies: [19, 17, 21, 4836, 576, 1364, 10278, 4832, 1115, 2]
-// Exports: ExclusiveBadge
+// Dependencies: [19, 17, 21, 4837, 588, 1370, 558, 576, 10316, 1127, 4833, 2]
 
-// Module 10277 (SocialLayerStorefrontBadges)
+// Module 10315 (SocialLayerStorefrontBadges)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import ClydeIcon2 from "ClydeIcon" /* 10278 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import ClydeIcon2 from "ClydeIcon" /* 10316 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let PlatformUtils;
@@ -33,9 +34,57 @@ PlatformUtils = PlatformUtils_mod;
 PlatformUtils = PlatformUtils.isAndroid();
 space = nativeDefault.space;
 let closure_6 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontBadges.tsx");
-
-export const ExclusiveBadge = function ExclusiveBadge() {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let items;
+  let tmp11;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(7);
+  const tmp4 = closure_6();
+  const exclusiveBadge = tmp4.exclusiveBadge;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { size: "xs", color: nativeDefault.colors.WHITE };
+    const ClydeIcon = tmp(10316).ClydeIcon;
+    const tmp8 = React3(ClydeIcon, obj2);
+    cResult[0] = tmp8;
+    first = tmp8;
+  } else {
+    first = cResult[0];
+  }
+  const exclusiveBadgeText = tmp4.exclusiveBadgeText;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl2.t.RiDMFz);
+    cResult[1] = stringResult;
+    tmp9 = stringResult;
+  } else {
+    tmp9 = cResult[1];
+  }
+  if (cResult[2] !== tmp4.exclusiveBadgeText) {
+    const obj3 = { variant: "text-xs/bold", color: "text-overlay-light", style: exclusiveBadgeText, children: tmp9 };
+    const tmp13 = React3(Text_Text.Text, obj3);
+    cResult[2] = tmp4.exclusiveBadgeText;
+    cResult[3] = tmp13;
+    tmp11 = tmp13;
+  } else {
+    tmp11 = cResult[3];
+  }
+  if (cResult[4] === tmp4.exclusiveBadge) {
+    let tmp14;
+    if (cResult[5] === tmp11) {
+      tmp14 = cResult[6];
+    }
+    return tmp14;
+  }
+  const obj4 = { style: exclusiveBadge, children: items };
+  items = [first, tmp11];
+  const tmp15 = hasOwnProperty(View, obj4);
+  cResult[4] = tmp4.exclusiveBadge;
+  cResult[5] = tmp11;
+  cResult[6] = tmp15;
+  tmp14 = tmp15;
+}) : (() => {
   let intl;
   let items;
   const tmp = closure_6();
@@ -48,4 +97,7 @@ export const ExclusiveBadge = function ExclusiveBadge() {
   intl = intl2.intl;
   items[1] = React3(Text, obj3);
   return hasOwnProperty(View, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontBadges.tsx");
+
+export const ExclusiveBadge = tmp6;

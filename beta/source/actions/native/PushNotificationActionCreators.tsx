@@ -1,24 +1,24 @@
-// Module ID: 11905
-// Function ID: 11906
+// Module ID: 11799
+// Function ID: 11800
 // Name: PushNotificationActionCreators
-// Dependencies: [5, 11906, 502, 1074, 11907, 6013, 3, 1100, 1271, 1231, 11910, 510, 5029, 1364, 1249, 1370, 573, 2]
+// Dependencies: [5, 11800, 502, 1086, 11801, 6008, 3, 1112, 1283, 1243, 11804, 510, 5030, 1370, 1261, 1376, 585, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 11905 (PushNotificationActionCreators)
+// Module 11799 (PushNotificationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import TokenManagerAll from "TokenManager" /* 1100 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5029 */;
-import Constants2 from "Constants" /* 11907 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import TokenManagerAll from "TokenManager" /* 1112 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5030 */;
+import Constants2 from "Constants" /* 11801 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 11906 */;
+import MultiAccountStore from "MultiAccountStore" /* 11800 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 1074 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6013 */;
+import Constants from "Constants" /* 1086 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6008 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;
@@ -47,7 +47,7 @@ let body = function _getOrRefreshPushSyncToken() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -188,7 +188,7 @@ body = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ body = {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp22) {
           c3 = 3;

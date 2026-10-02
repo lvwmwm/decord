@@ -1,18 +1,20 @@
-// Module ID: 11498
-// Function ID: 11499
+// Module ID: 11374
+// Function ID: 11375
 // Name: ForumPostTitle
-// Dependencies: [19, 21, 4836, 1365, 4832, 2]
-// Exports: default
+// Dependencies: [19, 21, 4837, 1371, 558, 576, 4833, 2]
 
-// Module 11498 (ForumPostTitle)
+// Module 11374 (ForumPostTitle)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1365 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1371 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj3;
+let tmp;
+const Text_Text = tmp(4833);
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 createStyles = createStyles.createStyles;
@@ -24,9 +26,45 @@ const obj2 = { title: obj3 };
 obj3 = { marginBottom: 6 };
 const merged = Object.assign(obj);
 let closure_3 = createStyles(obj2);
-const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostTitle.tsx");
-
-export default function ForumPostTitle(arg0) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
+  let ellipsizeMode;
+  let lineClamp;
+  let onTextLayout;
+  let title;
+  const obj = react2;
+  const cResult = obj.c(7);
+  ({ title, lineClamp, ellipsizeMode, onTextLayout } = hasUnreads);
+  hasUnreads = hasUnreads.hasUnreads;
+  const tmp4 = closure_3();
+  let str = "text-muted";
+  if (hasUnreads) {
+    str = "mobile-text-heading-primary";
+  }
+  if (cResult[0] === str) {
+    if (cResult[1] === ellipsizeMode) {
+      if (cResult[2] === lineClamp) {
+        if (cResult[3] === onTextLayout) {
+          if (cResult[4] === tmp4.title) {
+            let tmp5;
+            if (cResult[5] === title) {
+              tmp5 = cResult[6];
+            }
+            return tmp5;
+          }
+        }
+      }
+    }
+  }
+  const tmp6 = jsx(Text_Text.Text, { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: tmp4.title, onTextLayout, children: title });
+  cResult[0] = str;
+  cResult[1] = ellipsizeMode;
+  cResult[2] = lineClamp;
+  cResult[3] = onTextLayout;
+  cResult[4] = tmp4.title;
+  cResult[5] = title;
+  cResult[6] = tmp6;
+  tmp5 = tmp6;
+}) : ((arg0) => {
   let ellipsizeMode;
   let hasUnreads;
   let lineClamp;
@@ -39,4 +77,7 @@ export default function ForumPostTitle(arg0) {
     str = "mobile-text-heading-primary";
   }
   return jsx(Text_Text.Text, { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: tmp.title, onTextLayout, children: title });
-};
+});
+const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostTitle.tsx");
+
+export default tmp5;

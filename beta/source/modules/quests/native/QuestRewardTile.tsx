@@ -1,22 +1,118 @@
-// Module ID: 10745
-// Function ID: 10746
+// Module ID: 10709
+// Function ID: 10710
 // Name: QuestRewardTile
-// Dependencies: [19, 21, 10694, 10689, 10746, 2]
-// Exports: default
+// Dependencies: [109, 19, 21, 558, 576, 9776, 9771, 10710, 2]
 
-// Module 10745 (QuestRewardTile)
+// Module 10709 (QuestRewardTile)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import AssetUtils from "AssetUtils" /* 10689 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 10694 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 10746 */;
+import react3 from "react" /* 576 */;
+import AssetUtils from "AssetUtils" /* 9771 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9776 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 10710 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let closure_3 = ["quest", "accessibilityLabelPrefix"];
 const useMemo = react2.useMemo;
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/quests/native/QuestRewardTile.tsx");
-
-export default function QuestRewardTile(quest) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let accessibilityLabelPrefix;
+  let quest;
+  let tmp10;
+  let tmp12;
+  let tmp14;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  const obj = react3;
+  const cResult = obj.c(18);
+  if (cResult[0] !== arg0) {
+    ({ quest, accessibilityLabelPrefix } = arg0);
+    const tmp9 = _objectWithoutProperties(arg0, closure_3);
+    cResult[0] = arg0;
+    cResult[1] = accessibilityLabelPrefix;
+    cResult[2] = quest;
+    cResult[3] = tmp9;
+    tmp6 = tmp9;
+    tmp5 = quest;
+    tmp4 = accessibilityLabelPrefix;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    tmp6 = cResult[3];
+  }
+  if (cResult[4] !== tmp5) {
+    const tmpResult = QuestRewardUtils;
+    const questPrimaryReward = tmpResult.getQuestPrimaryReward(tmp5);
+    cResult[4] = tmp5;
+    cResult[5] = questPrimaryReward;
+    tmp10 = questPrimaryReward;
+  } else {
+    tmp10 = cResult[5];
+  }
+  if (cResult[6] !== tmp10) {
+    let name;
+    if (null != tmp10.name) {
+      name = tmp10.name;
+    } else {
+      name = tmp10.messages.name;
+    }
+    cResult[6] = tmp10;
+    cResult[7] = name;
+    tmp12 = name;
+  } else {
+    tmp12 = cResult[7];
+  }
+  if (cResult[8] !== tmp5) {
+    const tmpResult2 = AssetUtils;
+    const questAsset = tmpResult2.getQuestAsset(tmp5, tmp(9771).QuestAssetType.REWARD, undefined, true);
+    cResult[8] = tmp5;
+    cResult[9] = questAsset;
+    tmp14 = questAsset;
+  } else {
+    tmp14 = cResult[9];
+  }
+  if (cResult[10] === tmp4) {
+    let obj4;
+    if (cResult[11] === tmp12) {
+      obj4 = cResult[12];
+    }
+    const joined = obj4.join(", ");
+    let tmp20;
+    if ("" !== joined) {
+      tmp20 = joined;
+    }
+    if (cResult[13] === tmp6) {
+      if (cResult[14] === tmp14.isAnimated) {
+        if (cResult[15] === tmp14.url) {
+          let tmp21;
+          if (cResult[16] === tmp20) {
+            tmp21 = cResult[17];
+          }
+          return tmp21;
+        }
+      }
+    }
+    ({ url: obj5.assetUrl, isAnimated: obj5.isAnimatedAsset } = tmp14);
+    QuestDockRewardTileDefault;
+    const merged = Object.assign(tmp6);
+    const tmp28 = <tmp24 assetUrl={null} isAnimatedAsset={null} accessibilityLabel={tmp20} />;
+    cResult[13] = tmp6;
+    cResult[14] = tmp14.isAnimated;
+    cResult[15] = tmp14.url;
+    cResult[16] = tmp20;
+    cResult[17] = tmp28;
+    tmp21 = tmp28;
+  }
+  const items = [tmp4, tmp12];
+  const found = items.filter(Boolean);
+  cResult[10] = tmp4;
+  cResult[11] = tmp12;
+  cResult[12] = found;
+  obj4 = found;
+}) : ((quest) => {
   let name;
   let tmp8;
   quest = quest.quest;
@@ -50,4 +146,7 @@ export default function QuestRewardTile(quest) {
   }
   const merged1 = Object.assign(merged);
   return tmp6(tmp7, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/quests/native/QuestRewardTile.tsx");
+
+export default tmp3;

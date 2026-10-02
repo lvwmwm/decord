@@ -1,17 +1,17 @@
-// Module ID: 12483
-// Function ID: 12484
+// Module ID: 12485
+// Function ID: 12486
 // Name: StageChannelNewUserManager
-// Dependencies: [502, 2099, 5733, 5726, 1983, 573, 510, 12484, 2]
+// Dependencies: [502, 2102, 5734, 5727, 1989, 585, 510, 12486, 2]
 
-// Module 12483 (StageChannelNewUserManager)
+// Module 12485 (StageChannelNewUserManager)
 import Storage3 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5726 */;
-import StageChannelAlertActionCreatorsAll from "StageChannelAlertActionCreators" /* 12484 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5727 */;
+import StageChannelAlertActionCreatorsAll from "StageChannelAlertActionCreators" /* 12486 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5733 */;
-import LifecycleManager from "LifecycleManager" /* 1983 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5734 */;
+import LifecycleManager from "LifecycleManager" /* 1989 */;
 import size from "module_2" /* 2 */;
 
 let voiceChannelId;

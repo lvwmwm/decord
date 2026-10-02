@@ -1,18 +1,18 @@
-// Module ID: 5853
-// Function ID: 5854
+// Module ID: 5854
+// Function ID: 5855
 // Name: GuildJoinRequestActionCreators
-// Dependencies: [5, 2049, 5854, 4656, 1074, 4658, 573, 1271, 5855, 5203, 1115, 5723, 2]
+// Dependencies: [5, 2055, 5855, 4658, 1086, 4660, 585, 1283, 5856, 5204, 1127, 5724, 2]
 
-// Module 5853 (GuildJoinRequestActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4656 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
-import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 5855 */;
+// Module 5854 (GuildJoinRequestActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4658 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4660 */;
+import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 5856 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5854 */;
-import Constants from "Constants" /* 1074 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5855 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let after, before, joinRequest, requests;
@@ -41,7 +41,7 @@ let obj = function _fetchGuildJoinRequests() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -80,7 +80,7 @@ let obj = function _fetchGuildJoinRequests() {
               requests = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -110,7 +110,7 @@ let obj = function _fetchGuildJoinRequests() {
                 }
               }
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else if (2 === c6) {
             c5 = 0;
@@ -198,7 +198,7 @@ obj = function _removeGuildJoinRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -271,7 +271,7 @@ obj = function _ackUserGuildJoinRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -308,7 +308,7 @@ obj = function _ackUserGuildJoinRequest() {
             const obj7 = closure_131_1(closure_131_2[6]);
             obj7.dispatch(obj10);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -363,7 +363,7 @@ obj = function _updateGuildJoinRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -387,7 +387,7 @@ obj = function _updateGuildJoinRequest() {
               tmp = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -439,7 +439,7 @@ obj = function _updateGuildJoinRequest() {
             const obj10 = { type: "GUILD_JOIN_REQUEST_UPDATE", guildId, status: tmp.body.application_status, request: tmp.body };
             obj.dispatch(obj10);
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp17) {
           c8 = 3;
@@ -468,7 +468,7 @@ obj = function _resetGuildJoinRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -541,7 +541,7 @@ obj = function _fetchRequestToJoinGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -580,7 +580,7 @@ obj = function _fetchRequestToJoinGuilds() {
           obj = closure_129_1(closure_129_2[6]);
           obj.dispatch(obj7);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -626,7 +626,7 @@ obj = function _createOrEnterJoinRequestInterview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -653,7 +653,7 @@ obj = function _createOrEnterJoinRequestInterview() {
             channel = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

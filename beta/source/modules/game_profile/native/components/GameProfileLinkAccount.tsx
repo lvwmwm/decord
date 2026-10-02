@@ -1,24 +1,26 @@
-// Module ID: 8193
-// Function ID: 8194
+// Module ID: 8190
+// Function ID: 8191
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 5063, 1372, 21, 4836, 576, 6364, 8194, 8195, 6586, 504, 8139, 1115, 5899, 1177, 4832, 5281, 8197, 2]
-// Exports: default
+// Dependencies: [19, 17, 5064, 1378, 21, 4837, 588, 558, 576, 6361, 8191, 8193, 6587, 504, 8125, 1127, 5896, 1189, 4833, 8194, 5282, 2]
 
-// Module 8193 (GameProfileLinkAccount)
+// Module 8190 (GameProfileLinkAccount)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6364 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8139 */;
-import GameProfileSection from "GameProfileSection" /* 8194 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 8195 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6361 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8125 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 8191 */;
+import GameProfileSection from "GameProfileSection" /* 8193 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5063 */;
-import UserStore from "UserStore" /* 1372 */;
+import ApplicationStore from "ApplicationStore" /* 5064 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
+let analyticsLocations;
 
 let metroImportAll;
 let metroImportDefault;
@@ -61,7 +63,204 @@ size5 = { width: "92%", height: nativeDefault.space.PX_20, borderRadius: nativeD
 size6 = { width: "83%", height: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.xs };
 size7 = { width: "55%", height: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.xs, marginBottom: nativeDefault.space.PX_4 };
 let closure_10 = createStyles(obj);
-let closure_11 = react.memo(() => {
+const memo = react.memo;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let obj10;
+  const obj = react2;
+  const cResult = obj.c(41);
+  const tmp4 = closure_10();
+  const tmp6 = useIsWindowLargeDefault();
+  if (cResult[0] === tmp4.cardImagesContainer) {
+    let tmp8;
+    let tmp9;
+    let tmp14;
+    let tmp13;
+    let tmp12;
+    if (cResult[1] === (!tmp6 && tmp4.skeletonCardImagesContainerSmall)) {
+      tmp8 = cResult[2];
+    }
+    if (cResult[3] !== tmp4.skeletonCardImage) {
+      const obj2 = { style: tmp4.skeletonCardImage };
+      const tmp11 = metroImportDefault(GameProfileSkeletonDefault, obj2);
+      cResult[3] = tmp4.skeletonCardImage;
+      cResult[4] = tmp11;
+      tmp9 = tmp11;
+    } else {
+      tmp9 = cResult[4];
+    }
+    if (cResult[5] !== tmp4.skeletonEllipse) {
+      const obj3 = { style: tmp4.skeletonEllipse };
+      const tmp16 = metroImportDefault(GameProfileSkeletonDefault, obj3);
+      const obj4 = { style: tmp4.skeletonEllipse };
+      const tmp17 = metroImportDefault(GameProfileSkeletonDefault, obj4);
+      const obj5 = { style: tmp4.skeletonEllipse };
+      const tmp18 = metroImportDefault(GameProfileSkeletonDefault, obj5);
+      cResult[5] = tmp4.skeletonEllipse;
+      cResult[6] = tmp16;
+      cResult[7] = tmp17;
+      cResult[8] = tmp18;
+      tmp14 = tmp18;
+      tmp13 = tmp17;
+      tmp12 = tmp16;
+    } else {
+      tmp12 = cResult[6];
+      tmp13 = cResult[7];
+      tmp14 = cResult[8];
+    }
+    if (cResult[9] === tmp4.ellipseGroup) {
+      if (cResult[10] === tmp12) {
+        if (cResult[11] === tmp13) {
+          let tmp19;
+          let tmp23;
+          if (cResult[12] === tmp14) {
+            tmp19 = cResult[13];
+          }
+          if (cResult[14] !== tmp4.skeletonUserAvatar) {
+            const obj6 = { style: tmp4.skeletonUserAvatar };
+            const tmp25 = metroImportDefault(GameProfileSkeletonDefault, obj6);
+            cResult[14] = tmp4.skeletonUserAvatar;
+            cResult[15] = tmp25;
+            tmp23 = tmp25;
+          } else {
+            tmp23 = cResult[15];
+          }
+          if (cResult[16] === tmp8) {
+            if (cResult[17] === tmp9) {
+              if (cResult[18] === tmp19) {
+                let tmp26;
+                let tmp30;
+                let tmp33;
+                if (cResult[19] === tmp23) {
+                  tmp26 = cResult[20];
+                }
+                if (cResult[21] !== tmp4.skeletonCardContentHeading) {
+                  const obj7 = { style: tmp4.skeletonCardContentHeading };
+                  const tmp32 = metroImportDefault(GameProfileSkeletonDefault, obj7);
+                  cResult[21] = tmp4.skeletonCardContentHeading;
+                  cResult[22] = tmp32;
+                  tmp30 = tmp32;
+                } else {
+                  tmp30 = cResult[22];
+                }
+                if (cResult[23] !== tmp4.skeletonCardContentBody) {
+                  const obj8 = { style: tmp4.skeletonCardContentBody };
+                  const tmp35 = metroImportDefault(GameProfileSkeletonDefault, obj8);
+                  cResult[23] = tmp4.skeletonCardContentBody;
+                  cResult[24] = tmp35;
+                  tmp33 = tmp35;
+                } else {
+                  tmp33 = cResult[24];
+                }
+                if (cResult[25] === tmp6) {
+                  let tmp36;
+                  if (cResult[26] === tmp4.skeletonCardContentBodySecondary) {
+                    tmp36 = cResult[27];
+                  }
+                  if (cResult[28] === tmp4.skeletonCardContent) {
+                    if (cResult[29] === tmp33) {
+                      if (cResult[30] === tmp36) {
+                        let tmp39;
+                        let tmp44;
+                        if (cResult[31] === tmp30) {
+                          tmp39 = cResult[32];
+                        }
+                        const _Symbol = Symbol;
+                        if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
+                          const tmp46 = metroImportDefault(GameProfileSkeleton.GameProfileSkeletonButton, {});
+                          cResult[33] = tmp46;
+                          tmp44 = tmp46;
+                        } else {
+                          tmp44 = cResult[33];
+                        }
+                        if (cResult[34] === tmp4.skeletonAnimationRoot) {
+                          if (cResult[35] === tmp39) {
+                            let tmp47;
+                            if (cResult[36] === tmp26) {
+                              tmp47 = cResult[37];
+                            }
+                            if (cResult[38] === tmp4.card) {
+                              let tmp50;
+                              if (cResult[39] === tmp47) {
+                                tmp50 = cResult[40];
+                              }
+                              return tmp50;
+                            }
+                            const obj9 = { showViewAllSkeleton: false, skeletonTitleWidth: 90, children: metroImportDefault(View, obj10) };
+                            obj10 = { style: tmp4.card, children: tmp47 };
+                            const GameProfileSectionSkeleton = tmp(8193).GameProfileSectionSkeleton;
+                            const tmp53 = metroImportDefault(GameProfileSectionSkeleton, obj9);
+                            cResult[38] = tmp4.card;
+                            cResult[39] = tmp47;
+                            cResult[40] = tmp53;
+                            tmp50 = tmp53;
+                          }
+                        }
+                        const obj11 = { style: tmp4.skeletonAnimationRoot, children: items };
+                        items = [tmp26, tmp39, tmp44];
+                        const tmp49 = metroImportAll(GameProfileSkeleton.GameProfileSkeletonContainer, obj11);
+                        cResult[34] = tmp4.skeletonAnimationRoot;
+                        cResult[35] = tmp39;
+                        cResult[36] = tmp26;
+                        cResult[37] = tmp49;
+                        tmp47 = tmp49;
+                      }
+                    }
+                  }
+                  const obj12 = { style: tmp4.skeletonCardContent, children: items1 };
+                  items1 = [tmp30, tmp33, tmp36];
+                  const tmp42 = metroImportAll(View, obj12);
+                  cResult[28] = tmp4.skeletonCardContent;
+                  cResult[29] = tmp33;
+                  cResult[30] = tmp36;
+                  cResult[31] = tmp30;
+                  cResult[32] = tmp42;
+                  tmp39 = tmp42;
+                }
+                let tmp37 = !tmp6;
+                if (tmp37) {
+                  const obj13 = { style: tmp4.skeletonCardContentBodySecondary };
+                  tmp37 = metroImportDefault(tmp5(8191), obj13);
+                }
+                cResult[25] = tmp6;
+                cResult[26] = tmp4.skeletonCardContentBodySecondary;
+                cResult[27] = tmp37;
+                tmp36 = tmp37;
+              }
+            }
+          }
+          const obj14 = { style: tmp8, children: items2 };
+          items2 = [tmp9, tmp19, tmp23];
+          const tmp29 = metroImportAll(View, obj14);
+          cResult[16] = tmp8;
+          cResult[17] = tmp9;
+          cResult[18] = tmp19;
+          cResult[19] = tmp23;
+          cResult[20] = tmp29;
+          tmp26 = tmp29;
+        }
+      }
+    }
+    const obj15 = { style: tmp4.ellipseGroup, children: items3 };
+    items3 = [tmp12, tmp13, tmp14];
+    const tmp22 = metroImportAll(View, obj15);
+    cResult[9] = tmp4.ellipseGroup;
+    cResult[10] = tmp12;
+    cResult[11] = tmp13;
+    cResult[12] = tmp14;
+    cResult[13] = tmp22;
+    tmp19 = tmp22;
+  }
+  const items4 = [tmp4.cardImagesContainer, !tmp6 && tmp4.skeletonCardImagesContainerSmall];
+  cResult[0] = tmp4.cardImagesContainer;
+  cResult[1] = !tmp6 && tmp4.skeletonCardImagesContainerSmall;
+  cResult[2] = items4;
+  tmp8 = items4;
+}) : (() => {
   let GameProfileSkeletonContainer;
   let items1;
   let items2;
@@ -105,18 +304,102 @@ let closure_11 = react.memo(() => {
   let tmp5Result = !tmp4;
   if (tmp5Result) {
     const obj13 = { style: tmp.skeletonCardContentBodySecondary };
-    tmp5Result = tmp5(tmp2(8195), obj13);
+    tmp5Result = tmp5(tmp2(8191), obj13);
   }
   items4[2] = tmp5Result;
   const obj14 = { showViewAllSkeleton: false, skeletonTitleWidth: 90, children: metroImportDefault(View, obj) };
   items3[1] = metroImportAll(View, obj10);
   items3[2] = metroImportDefault(GameProfileSkeleton.GameProfileSkeletonButton, {});
   return metroImportDefault(GameProfileSectionSkeleton, obj14);
-});
-size = size_mod;
-let result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileLinkAccount.tsx");
-
-export default function GameProfileLinkAccount(analyticsLocations) {
+}));
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocations) => {
+  let canStartAuthorization;
+  let currentUser;
+  let fetched;
+  let game;
+  let hasAlreadyLinked;
+  let startAuthorization;
+  let tmp10;
+  let tmp6;
+  let tmp7;
+  let trackAction;
+  const tmp = trackAction;
+  let obj = trackAction(startAuthorization[8]);
+  const cResult = obj.c(46);
+  ({ game, trackAction } = analyticsLocations);
+  analyticsLocations = analyticsLocations.analyticsLocations;
+  closure_10();
+  const tmp5 = analyticsLocations(startAuthorization[12])(game);
+  startAuthorization = tmp5.startAuthorization;
+  ({ fetched, hasAlreadyLinked, canStartAuthorization } = tmp5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function h() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const tmpResult = tmp(startAuthorization[13]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
+  if (cResult[2] !== game) {
+    const officialApplicationId = game.getOfficialApplicationId();
+    cResult[2] = game;
+    cResult[3] = officialApplicationId;
+    tmp10 = officialApplicationId;
+  } else {
+    tmp10 = cResult[3];
+  }
+  let closure_3 = tmp10;
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [ApplicationStore];
+    cResult[4] = items1;
+  }
+  if (cResult[5] !== tmp10) {
+    class E {
+      constructor() {
+        const result = null != closure_3 && ApplicationStore.didFetchingApplicationFail(tmp);
+        return result;
+      }
+    }
+    const items2 = [tmp10];
+    cResult[5] = tmp10;
+    cResult[6] = E;
+    cResult[7] = items2;
+  } else {
+    class E {
+      constructor() {
+        const result = null != closure_3 && ApplicationStore.didFetchingApplicationFail(tmp);
+        return result;
+      }
+    }
+  }
+  tmp(startAuthorization[13]);
+  if (cResult[8] === analyticsLocations) {
+    class E {
+      constructor() {
+        const result = null != closure_3 && ApplicationStore.didFetchingApplicationFail(tmp);
+        return result;
+      }
+    }
+  }
+  class L {
+    constructor() {
+      trackAction(GameProfileAnalyticUtils.GameProfileTrackActionActions.LinkAccount);
+      const obj = { analyticsLocations };
+      startAuthorization(obj);
+    }
+  }
+  cResult[8] = analyticsLocations;
+  cResult[9] = startAuthorization;
+  cResult[10] = trackAction;
+  cResult[11] = L;
+}) : ((analyticsLocations) => {
   let canStartAuthorization;
   let currentUser;
   let fetched;
@@ -137,18 +420,18 @@ export default function GameProfileLinkAccount(analyticsLocations) {
   analyticsLocations = analyticsLocations.analyticsLocations;
   let startAuthorization;
   const tmp = closure_10();
-  const tmp4 = analyticsLocations(startAuthorization[10])(game);
+  const tmp4 = analyticsLocations(startAuthorization[12])(game);
   startAuthorization = tmp4.startAuthorization;
   const connectionApp = tmp4.connectionApp;
   ({ fetched, hasAlreadyLinked, canStartAuthorization } = tmp4);
-  let obj = trackAction(startAuthorization[11]);
+  let obj = trackAction(startAuthorization[13]);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const officialApplicationId = game.getOfficialApplicationId();
   const items1 = [ApplicationStore];
   const items2 = [officialApplicationId];
   const items3 = [trackAction, startAuthorization, analyticsLocations];
-  const obj2 = trackAction(startAuthorization[11]);
+  const obj2 = trackAction(startAuthorization[13]);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => {
     const result = null != officialApplicationId && ApplicationStore.didFetchingApplicationFail(tmp);
     return result;
@@ -163,15 +446,15 @@ export default function GameProfileLinkAccount(analyticsLocations) {
             if (!hasAlreadyLinked) {
               if (fetched) {
                 const iconSource = connectionApp.getIconSource(c9);
-                const obj3 = { title: intl.string(trackAction(startAuthorization[13]).t["VDAhr+"]), children: closure_8(View, obj4) };
-                const tmp2Result = analyticsLocations(startAuthorization[8]);
-                intl = tmp5(tmp3[13]).intl;
+                const obj3 = { title: intl.string(trackAction(startAuthorization[15]).t["VDAhr+"]), children: closure_8(View, obj4) };
+                const tmp2Result = analyticsLocations(startAuthorization[11]);
+                intl = tmp5(tmp3[15]).intl;
                 let tmp16Result = null;
                 obj4 = { style: tmp.card, children: items6 };
                 if (null != iconSource) {
                   const obj5 = { style: tmp.cardImagesContainer, children: items4 };
                   const obj6 = { source: iconSource, style: tmp.cardImageApplication };
-                  items4 = [closure_7(tmp2(tmp3[14]), obj6), , ];
+                  items4 = [closure_7(tmp2(tmp3[16]), obj6), , ];
                   const obj7 = { style: tmp.ellipseGroup, children: items5 };
                   const obj8 = { style: tmp.ellipse };
                   items5 = [closure_7(View, obj8), , ];
@@ -180,26 +463,26 @@ export default function GameProfileLinkAccount(analyticsLocations) {
                   const obj10 = { style: tmp.ellipse };
                   items5[2] = closure_7(View, obj10);
                   items4[1] = closure_8(View, obj7);
-                  const obj11 = { size: trackAction(startAuthorization[15]).AvatarSizes.LARGE_48, user: stateFromStores, guildId: "Array", style: tmp.userAvatar };
-                  const Avatar = tmp5(tmp3[15]).Avatar;
+                  const obj11 = { size: trackAction(startAuthorization[17]).AvatarSizes.LARGE_48, user: stateFromStores, guildId: "Array", style: tmp.userAvatar };
+                  const Avatar = tmp5(tmp3[17]).Avatar;
                   items4[2] = closure_7(Avatar, obj11);
                   tmp16Result = tmp16(tmp17, obj5);
                 }
                 items6 = [tmp16Result, , ];
                 const obj12 = { style: tmp.cardContent, children: items7 };
-                const obj13 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: tmp.cardText, children: intl2.formatToPlainString(trackAction(startAuthorization[13]).t.hUbQT2, obj14) };
-                const Text = tmp5(tmp3[16]).Text;
-                intl2 = tmp5(tmp3[13]).intl;
+                const obj13 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: tmp.cardText, children: intl2.formatToPlainString(trackAction(startAuthorization[15]).t.hUbQT2, obj14) };
+                const Text = tmp5(tmp3[18]).Text;
+                intl2 = tmp5(tmp3[15]).intl;
                 obj14 = { gameName: connectionApp.name };
                 items7 = [closure_7(Text, obj13), ];
-                const obj15 = { variant: "text-sm/medium", color: "text-default", style: tmp.cardText, children: intl3.string(trackAction(startAuthorization[13]).t["JKqu+4"]) };
-                const Text2 = tmp5(tmp3[16]).Text;
-                intl3 = tmp5(tmp3[13]).intl;
+                const obj15 = { variant: "text-sm/medium", color: "text-default", style: tmp.cardText, children: intl3.string(trackAction(startAuthorization[15]).t["JKqu+4"]) };
+                const Text2 = tmp5(tmp3[18]).Text;
+                intl3 = tmp5(tmp3[15]).intl;
                 items7[1] = closure_7(Text2, obj15);
                 items6[1] = closure_8(View, obj12);
-                const obj16 = { variant: "secondary", size: "md", text: intl4.string(trackAction(startAuthorization[13]).t.jynBQ5), onPress: tmp9, icon: closure_7(trackAction(startAuthorization[18]).ExperimentalGameControllerLinkIcon, { size: "sm" }) };
-                const Button = tmp5(tmp3[17]).Button;
-                intl4 = tmp5(tmp3[13]).intl;
+                const obj16 = { variant: "secondary", size: "md", text: intl4.string(trackAction(startAuthorization[15]).t.jynBQ5), onPress: tmp9, icon: closure_7(trackAction(startAuthorization[19]).ExperimentalGameControllerLinkIcon, { size: "sm" }) };
+                const Button = tmp5(tmp3[20]).Button;
+                intl4 = tmp5(tmp3[15]).intl;
                 items6[2] = closure_7(Button, obj16);
                 return closure_7(tmp2Result, obj3);
               } else {
@@ -213,4 +496,8 @@ export default function GameProfileLinkAccount(analyticsLocations) {
     }
   }
   return null;
-};
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileLinkAccount.tsx");
+
+export default tmp5;

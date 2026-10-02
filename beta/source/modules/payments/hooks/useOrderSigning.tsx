@@ -1,13 +1,13 @@
-// Module ID: 8325
-// Function ID: 8326
+// Module ID: 8322
+// Function ID: 8323
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 4815, 4510, 4503, 6664, 2]
+// Dependencies: [5, 32, 19, 4816, 4513, 4506, 6665, 2]
 // Exports: useOrderSigning
 
-// Module 8325 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 4503 */;
-import BillingErrorDefault from "BillingError" /* 4510 */;
-import PaymentConstants from "PaymentConstants" /* 4815 */;
+// Module 8322 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 4506 */;
+import BillingErrorDefault from "BillingError" /* 4513 */;
+import PaymentConstants from "PaymentConstants" /* 4816 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -55,7 +55,7 @@ export const useOrderSigning = function useOrderSigning(order) {
     if (!obj.isExpectedHttpClientError(error)) {
       const _Error = Error;
       let tmp8 = tmp3;
-      const captureBillingException = tmp5(4503).captureBillingException;
+      const captureBillingException = tmp5(4506).captureBillingException;
       BillingUtils;
       if (error instanceof Error) {
         tmp8 = error;
@@ -87,7 +87,7 @@ export const useOrderSigning = function useOrderSigning(order) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -112,7 +112,7 @@ export const useOrderSigning = function useOrderSigning(order) {
                 order = undefined;
                 c5 = 1;
                 c6 = 1;
-                return { value: "flex", done: true };
+                return { value: "Reflect", done: true };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {

@@ -1,116 +1,287 @@
 // Module ID: 5574
 // Function ID: 5575
-// Dependencies: [5543, 5533, 5526]
+// Dependencies: [5530, 5546, 5558, 5527, 5534, 5560]
 
 // Module 5574
-import _mod5526 from "module_5526" /* 5526 */;
-import PNG_CHUNK_TYPE_SIZE from "PNG_CHUNK_TYPE_SIZE" /* 5533 */;
-import _modDef5543 from "module_5543" /* 5543 */;
+import _mod5527 from "module_5527" /* 5527 */;
+import _modDef5530 from "module_5530" /* 5530 */;
+import PNG_CHUNK_TYPE_SIZE from "PNG_CHUNK_TYPE_SIZE" /* 5534 */;
+import _modDef5546 from "module_5546" /* 5546 */;
+import _modDef5558 from "module_5558" /* 5558 */;
+import _modDef5560 from "module_5560" /* 5560 */;
 
+const require = globalThis.__r;
+let _require;
 
-export default {
-  read(byteLength, arg1) {
-    let combined;
-    let combined1;
-    let combined2;
-    let combined3;
-    let combined4;
-    let items;
-    let num;
-    let str7;
-    const obj = {};
-    for (let num = 0; num < arg1.length; num = num + 1) {
-      let tmp = importDefault;
-      let obj2 = _modDef5543;
-      let tmp3 = require;
-      let longAt = obj2.getLongAt(byteLength, arg1[num] + PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_LENGTH_OFFSET);
-      let tmp5 = _mod5526;
-      let getStringFromDataView = tmp5.getStringFromDataView;
-      let sum = arg1[num] + PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_TYPE_OFFSET;
-      let stringFromDataView = getStringFromDataView(byteLength, sum, PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_TYPE_SIZE);
-      if (stringFromDataView === PNG_CHUNK_TYPE_SIZE.TYPE_PHYS) {
-        let tmp23 = arg1[num];
-        let tmp24 = 4 <= longAt && tmp23 + tmp3(5533).PNG_CHUNK_DATA_OFFSET + 4 <= byteLength.byteLength;
-        let tmp25;
-        if (tmp24) {
-          let tmpResult = tmp(5543);
-          let longAt1 = tmpResult.getLongAt(byteLength, tmp23 + tmp3(5533).PNG_CHUNK_DATA_OFFSET);
-          let obj3 = { value: longAt1, description: "" + longAt1 };
-          tmp25 = obj3;
-        }
-        obj["Pixels Per Unit X"] = tmp25;
-        let tmp27 = arg1[num];
-        let tmp28 = 8 <= longAt && tmp27 + tmp3(5533).PNG_CHUNK_DATA_OFFSET + 4 + 4 <= byteLength.byteLength;
-        let tmp29;
-        if (tmp28) {
-          let tmpResult9 = tmp(5543);
-          let longAt2 = tmpResult9.getLongAt(byteLength, tmp27 + tmp3(5533).PNG_CHUNK_DATA_OFFSET + 4);
-          let obj4 = { value: longAt2, description: "" + longAt2 };
-          tmp29 = obj4;
-        }
-        obj["Pixels Per Unit Y"] = tmp29;
-        let tmp31 = arg1[num];
-        let tmp32 = 9 <= longAt && tmp31 + tmp3(5533).PNG_CHUNK_DATA_OFFSET + 8 + 1 <= byteLength.byteLength;
-        let tmp33;
-        if (tmp32) {
-          let tmpResult10 = tmp(5543);
-          let byteAt = tmpResult10.getByteAt(byteLength, tmp31 + tmp3(5533).PNG_CHUNK_DATA_OFFSET + 8);
-          let obj5 = { value: byteAt, description: str7 };
-          str7 = "Unknown";
-          if (1 === byteAt) {
-            str7 = "meters";
+function constructTag(decompressResult, type, items2, items1) {
+  let stringFromDataView = decompressResult;
+  if (decompressResult instanceof DataView) {
+    const obj = _mod5527;
+    stringFromDataView = obj.getStringFromDataView(decompressResult, 0, decompressResult.byteLength);
+  }
+  const obj2 = _mod5527;
+  const stringValueFromArray = obj2.getStringValueFromArray(items1);
+  let combined = stringValueFromArray;
+  if (type !== PNG_CHUNK_TYPE_SIZE.TYPE_TEXT) {
+    combined = stringValueFromArray;
+    if (0 !== items2.length) {
+      const _HermesInternal = HermesInternal;
+      const tmp4Result = _mod5527;
+      combined = "" + stringValueFromArray + " (" + tmp4Result.getStringValueFromArray(items2) + ")";
+    }
+  }
+  const obj3 = { name: combined, value: stringFromDataView, description: stringFromDataView };
+  if (type === PNG_CHUNK_TYPE_SIZE.TYPE_ITXT) {
+    const decoder = _modDef5560;
+    stringFromDataView = decoder.decode("UTF-8", decompressResult);
+  }
+  return obj3;
+}
+function isExifGroupTag(name, value) {
+  const tmp = "raw profile type exif" === name.toLowerCase() && "exif" === value.substring(1, 5);
+  return tmp;
+}
+function isIptcGroupTag(name, value) {
+  const tmp = "raw profile type iptc" === name.toLowerCase() && "iptc" === value.substring(1, 5);
+  return tmp;
+}
+function decodeRawData(value) {
+  let length;
+  let sum;
+  const str = value.match(/\n(exif|iptc)\n\s*\d+\n([\s\S]*)$/)[2];
+  const replaced = str.replace(/\n/g, "");
+  const arrayBuffer = new ArrayBuffer(replaced.length / 2);
+  const dataView = new DataView(arrayBuffer);
+  let num = 0;
+  if (0 < replaced.length) {
+    do {
+      let _parseInt = parseInt;
+      sum = num + 2;
+      let setUint8Result = dataView.setUint8(num / 2, parseInt(replaced.substring(num, sum), 16));
+      num = sum;
+      length = replaced.length;
+    } while (sum < length);
+  }
+  return dataView;
+}
+let obj = {
+  read(byteLength, arg1, arg2, arg3) {
+    let allPromises;
+    let closure_0;
+    let length;
+    let offset;
+    let type;
+    _require = arg3;
+    let obj = {};
+    const items = [];
+    let num = 0;
+    if (0 < arg1.length) {
+      while (true) {
+        let str;
+        let catchPromise;
+        ({ offset, length, type } = arg1[num]);
+        let items1 = [];
+        let items2 = [];
+        let items3 = [];
+        let tmp = STATE_KEYWORD;
+        let COMPRESSION_METHOD_NONE = require("module_5527").COMPRESSION_METHOD_NONE;
+        let tmp5 = COMPRESSION_METHOD_NONE;
+        let dataView;
+        if (0 < length) {
+          let num2 = 0;
+          let tmp7 = COMPRESSION_METHOD_NONE;
+          tmp5 = COMPRESSION_METHOD_NONE;
+          if (offset < byteLength.byteLength) {
+            while (true) {
+              let tmp16;
+              let sum1;
+              let COMPRESSION_METHOD_NONE2;
+              let tmp8 = STATE_COMPRESSION;
+              if (tmp !== STATE_COMPRESSION) {
+                let tmp19 = STATE_TEXT;
+                if (tmp === STATE_TEXT) {
+                  break;
+                } else {
+                  let uint8 = byteLength.getUint8(offset + num2);
+                  if (0 === uint8) {
+                    let tmp28;
+                    if (tmp !== STATE_KEYWORD) {
+                      let tmp30;
+                      if (tmp === tmp8) {
+                        if (type === require("PNG_CHUNK_TYPE_SIZE").TYPE_ITXT) {
+                          tmp19 = STATE_LANG;
+                        }
+                        tmp30 = tmp19;
+                      } else {
+                        tmp30 = tmp19;
+                        if (tmp === STATE_LANG) {
+                          tmp30 = STATE_TRANSLATED_KEYWORD;
+                        }
+                      }
+                      tmp28 = tmp30;
+                    } else {
+                      let items4 = [require("PNG_CHUNK_TYPE_SIZE").TYPE_ITXT, require("PNG_CHUNK_TYPE_SIZE").TYPE_ZTXT];
+                      tmp28 = tmp8;
+                    }
+                    tmp16 = tmp28;
+                    sum1 = num2;
+                    COMPRESSION_METHOD_NONE2 = tmp7;
+                  } else if (tmp === STATE_KEYWORD) {
+                    let arr = items1.push(uint8);
+                    sum1 = num2;
+                    COMPRESSION_METHOD_NONE2 = tmp7;
+                    tmp16 = tmp;
+                  } else if (tmp === STATE_LANG) {
+                    let arr2 = items2.push(uint8);
+                    sum1 = num2;
+                    COMPRESSION_METHOD_NONE2 = tmp7;
+                    tmp16 = tmp;
+                  } else {
+                    sum1 = num2;
+                    COMPRESSION_METHOD_NONE2 = tmp7;
+                    tmp16 = tmp;
+                    if (tmp === STATE_TRANSLATED_KEYWORD) {
+                      let arr3 = items3.push(uint8);
+                      sum1 = num2;
+                      COMPRESSION_METHOD_NONE2 = tmp7;
+                      tmp16 = tmp;
+                    }
+                  }
+                }
+              } else {
+                let sum = offset + num2;
+                let tmp48 = _require;
+                if (type === require("PNG_CHUNK_TYPE_SIZE").TYPE_ITXT) {
+                  if (byteLength.getUint8(sum) === c9) {
+                    COMPRESSION_METHOD_NONE2 = byteLength.getUint8(sum + 1);
+                    sum1 = num2;
+                    if (type === tmp48(5534).TYPE_ITXT) {
+                      sum1 = num2 + c8;
+                    }
+                    if (tmp !== STATE_KEYWORD) {
+                      let tmp18;
+                      if (tmp === tmp8) {
+                        tmp18 = type === tmp48(5534).TYPE_ITXT ? STATE_LANG : STATE_TEXT;
+                      } else {
+                        tmp18 = tmp === STATE_LANG ? STATE_TRANSLATED_KEYWORD : STATE_TEXT;
+                      }
+                      tmp16 = tmp18;
+                    } else {
+                      let items5 = [tmp48(5534).TYPE_ITXT, tmp48(5534).TYPE_ZTXT];
+                      tmp16 = tmp8;
+                    }
+                  }
+                } else if (type === tmp48(5534).TYPE_ZTXT) {
+                  COMPRESSION_METHOD_NONE2 = byteLength.getUint8(sum);
+                }
+                COMPRESSION_METHOD_NONE2 = tmp48(5527).COMPRESSION_METHOD_NONE;
+              }
+              let sum2 = sum1 + 1;
+              tmp5 = COMPRESSION_METHOD_NONE2;
+              if (sum2 < length) {
+                num2 = sum2;
+                tmp7 = COMPRESSION_METHOD_NONE2;
+                tmp = tmp16;
+                tmp5 = COMPRESSION_METHOD_NONE2;
+              }
+              continue;
+            }
+            let _DataView = DataView;
+            let buffer = byteLength.buffer;
+            let self = this;
+            let self2 = this;
+            dataView = new DataView(buffer.slice(offset + num2, offset + length));
+            tmp5 = tmp7;
           }
-          tmp33 = obj5;
         }
-        obj["Pixel Units"] = tmp33;
-      } else if (stringFromDataView === tmp3(5533).TYPE_TIME) {
-        let tmp35 = arg1[num];
-        let tmp9 = 7 <= longAt && tmp35 + tmp3(5533).PNG_CHUNK_DATA_OFFSET + 7 <= byteLength.byteLength;
-        let tmp10;
-        if (tmp9) {
-          let tmpResult11 = tmp(5543);
-          let shortAt = tmpResult11.getShortAt(byteLength, tmp35 + tmp3(5533).PNG_CHUNK_DATA_OFFSET);
-          let tmpResult12 = tmp(5543);
-          let byteAt1 = tmpResult12.getByteAt(byteLength, tmp35 + tmp3(5533).PNG_CHUNK_DATA_OFFSET + 2);
-          let tmpResult13 = tmp(5543);
-          let byteAt2 = tmpResult13.getByteAt(byteLength, tmp35 + tmp3(5533).PNG_CHUNK_DATA_OFFSET + 3);
-          let tmpResult14 = tmp(5543);
-          let byteAt3 = tmpResult14.getByteAt(byteLength, tmp35 + tmp3(5533).PNG_CHUNK_DATA_OFFSET + 4);
-          let tmpResult15 = tmp(5543);
-          let byteAt4 = tmpResult15.getByteAt(byteLength, tmp35 + tmp3(5533).PNG_CHUNK_DATA_OFFSET + 5);
-          let tmpResult16 = tmp(5543);
-          let byteAt5 = tmpResult16.getByteAt(byteLength, tmp35 + tmp3(5533).PNG_CHUNK_DATA_OFFSET + 6);
-          let obj6 = { value: items, description: "" + combined + "-" + combined1 + "-" + combined2 + " " + combined3 + ":" + combined4 + ":" + "" + "0".repeat(2 - ("" + byteAt5).length) + byteAt5 };
-          items = [shortAt, byteAt1, byteAt2, byteAt3, byteAt4, byteAt5];
-          let repeat = "0".repeat;
-          let _HermesInternal = HermesInternal;
-          combined = "" + "0".repeat(4 - ("" + shortAt).length) + shortAt;
-          let repeat2 = "0".repeat;
-          let _HermesInternal2 = HermesInternal;
-          let repeat3 = "0".repeat;
-          combined1 = "" + "0".repeat(2 - ("" + byteAt1).length) + byteAt1;
-          let _HermesInternal3 = HermesInternal;
-          let repeat4 = "0".repeat;
-          combined2 = "" + "0".repeat(2 - ("" + byteAt2).length) + byteAt2;
-          let _HermesInternal4 = HermesInternal;
-          let repeat5 = "0".repeat;
-          combined3 = "" + "0".repeat(2 - ("" + byteAt3).length) + byteAt3;
-          let _HermesInternal5 = HermesInternal;
-          let repeat6 = "0".repeat;
-          combined4 = "" + "0".repeat(2 - ("" + byteAt4).length) + byteAt4;
-          let _HermesInternal6 = HermesInternal;
-          let _HermesInternal7 = HermesInternal;
-          let str = "";
-          let str2 = "-";
-          let str3 = "-";
-          let str4 = " ";
-          let str5 = ":";
-          let str6 = ":";
-          tmp10 = obj6;
+        let tmp34 = _require;
+        if (tmp5 !== require("module_5527").COMPRESSION_METHOD_NONE) {
+          let obj2;
+          if (!arg2) {
+            obj2 = {};
+          }
+          let _Promise2 = Promise;
+          if (obj2 instanceof Promise) {
+            let arr4 = items.push(obj2.then((result) => {
+              let name;
+              let tmp2Result;
+              let tmp2Result2;
+              let value;
+              ({ name, value } = result);
+              try {
+                if (_modDef5530.USE_EXIF) {
+                  if (isExifGroupTag(name, value)) {
+                    const obj2 = { __exif: tmp2Result.read(decodeRawData(value), c10, closure_0).tags };
+                    tmp2Result = _modDef5546;
+                    return obj2;
+                  }
+                }
+                if (_modDef5530.USE_IPTC) {
+                  if (isIptcGroupTag(name, value)) {
+                    const obj3 = { __iptc: tmp2Result2.read(decodeRawData(value), 0, closure_0) };
+                    tmp2Result2 = _modDef5558;
+                    return obj3;
+                  }
+                }
+                if (name) {
+                  if (!isExifGroupTag(name, value)) {
+                    if (!isIptcGroupTag(name, value)) {
+                      const obj = {};
+                      const obj4 = { value, description: tmp };
+                      obj[name] = obj4;
+                      return obj;
+                    }
+                  }
+                }
+                return {};
+              } catch (err) {
+              }
+            }));
+          } else {
+            let name = obj2.name;
+            if (name) {
+              let obj3 = { value: tmp43, description: tmp44 };
+              obj[name] = obj3;
+            }
+          }
+          num = num + 1;
+          if (num >= arg1.length) {
+            break;
+          }
         }
-        obj["Modify Date"] = tmp10;
+        let tmp34Result = tmp34(5527);
+        let decompress = tmp34Result.decompress;
+        if (type === tmp34(5534).TYPE_TEXT) {
+          str = "latin1";
+        } else {
+          str = "utf-8";
+        }
+        let decompressResult = decompress(dataView, tmp5, str);
+        let _Promise = Promise;
+        if (decompressResult instanceof Promise) {
+          let nextPromise = decompressResult.then((result) => constructTag(result, type, items2, items1));
+          catchPromise = nextPromise.catch(() => constructTag("<text using unknown compression>".split(""), type, items2, items1));
+        } else {
+          catchPromise = constructTag(decompressResult, type, items2, items1);
+        }
+        obj2 = catchPromise;
       }
     }
-    return obj;
+    let obj4 = { readTags: obj, readTagsPromise: allPromises };
+    allPromises = undefined;
+    if (items.length > 0) {
+      allPromises = Promise.all(items);
+    }
+    return obj4;
   }
 };
+const STATE_KEYWORD = "STATE_KEYWORD";
+const STATE_COMPRESSION = "STATE_COMPRESSION";
+const STATE_LANG = "STATE_LANG";
+const STATE_TRANSLATED_KEYWORD = "STATE_TRANSLATED_KEYWORD";
+const STATE_TEXT = "STATE_TEXT";
+let c8 = 1;
+let c9 = 1;
+let c10 = 6;
+
+export default obj;

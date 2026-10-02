@@ -1,16 +1,16 @@
-// Module ID: 8192
-// Function ID: 8193
+// Module ID: 8189
+// Function ID: 8190
 // Name: GameProfileSummary
-// Dependencies: [32, 19, 17, 21, 4836, 8139, 1115, 4832, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 21, 4837, 558, 576, 8125, 1127, 4833, 2]
 
-// Module 8192 (GameProfileSummary)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8139 */;
+// Module 8189 (GameProfileSummary)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8125 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -21,9 +21,130 @@ let _slicedToArray = _slicedToArray_mod;
 ({ View: closure_4, Pressable: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ container: { flexDirection: "column" } });
-const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileSummary.tsx");
-
-export default function GameProfileSummary(arg0) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_2;
+  let closure_4;
+  let first;
+  let first1;
+  let game;
+  let items;
+  let obj4;
+  let tmp9;
+  let trackAction;
+  let tmp = trackAction;
+  const obj = trackAction(first[6]);
+  const cResult = obj.c(19);
+  ({ game, trackAction } = arg0);
+  const tmp4 = closure_8();
+  [first, _slicedToArray] = first1.useState(false);
+  [first1, closure_4] = first1.useState(null);
+  if (cResult[0] !== first1) {
+    const fn = function c(nativeEvent) {
+      if (null == first1) {
+        closure_4(nativeEvent.nativeEvent.lines.length > 3);
+      }
+    };
+    cResult[0] = first1;
+    cResult[1] = fn;
+    tmp9 = fn;
+  } else {
+    tmp9 = cResult[1];
+  }
+  if (cResult[2] === first) {
+    let tmp10;
+    if (cResult[3] === trackAction) {
+      tmp10 = cResult[4];
+    }
+    let summaryLocalized;
+    if (game != null) {
+      summaryLocalized = game.summaryLocalized;
+    }
+    if (summaryLocalized == null) {
+      let description;
+      if (game != null) {
+        description = game.description;
+      }
+      summaryLocalized = description;
+    }
+    if (null == summaryLocalized) {
+      return null;
+    } else {
+      let tmp13;
+      if (cResult[5] !== first) {
+        const intl = tmp(tmp2[8]).intl;
+        const string = intl.string;
+        const t = tmp(tmp2[8]).t;
+        const stringResult = string(first ? t["6MwJo/"] : t.lBeKY2);
+        cResult[5] = first;
+        cResult[6] = stringResult;
+        tmp13 = stringResult;
+      } else {
+        tmp13 = cResult[6];
+      }
+      if (cResult[7] === summaryLocalized) {
+        if (cResult[8] === tmp9) {
+          let tmp15;
+          if (cResult[9] === num5) {
+            tmp15 = cResult[10];
+          }
+          if (cResult[11] === tmp13) {
+            if (cResult[12] === tmp10) {
+              let tmp18;
+              if (cResult[13] === first1) {
+                tmp18 = cResult[14];
+              }
+              if (cResult[15] === tmp4.container) {
+                if (cResult[16] === tmp15) {
+                  let tmp22;
+                  if (cResult[17] === tmp18) {
+                    tmp22 = cResult[18];
+                  }
+                  return tmp22;
+                }
+              }
+              const obj2 = { style: tmp4.container, children: items };
+              items = [tmp15, tmp18];
+              const tmp25 = closure_7(closure_4, obj2);
+              cResult[15] = tmp4.container;
+              cResult[16] = tmp15;
+              cResult[17] = tmp18;
+              cResult[18] = tmp25;
+              tmp22 = tmp25;
+            }
+          }
+          let tmp19 = null;
+          if (first1) {
+            const obj3 = { onPress: tmp10, accessibilityRole: "button", accessibilityLabel: tmp13, children: closure_6(tmp(first[9]).Text, obj4) };
+            obj4 = { variant: "text-md/medium", color: "text-brand", children: tmp13 };
+            tmp19 = closure_6(closure_5, obj3);
+          }
+          cResult[11] = tmp13;
+          cResult[12] = tmp10;
+          cResult[13] = first1;
+          cResult[14] = tmp19;
+          tmp18 = tmp19;
+        }
+      }
+      const obj5 = { variant: "text-md/normal", color: "interactive-text-active", lineClamp: num5, onTextLayout: tmp9, children: summaryLocalized };
+      const tmp17 = closure_6(tmp(first[9]).Text, obj5);
+      cResult[7] = summaryLocalized;
+      cResult[8] = tmp9;
+      cResult[9] = num5;
+      cResult[10] = tmp17;
+      tmp15 = tmp17;
+    }
+  }
+  const fn2 = function w() {
+    const tmp = !first;
+    const GameProfileTrackActionActions = GameProfileAnalyticUtils.GameProfileTrackActionActions;
+    trackAction(first ? GameProfileTrackActionActions.ShowLess : GameProfileTrackActionActions.ShowMore);
+    closure_2(tmp);
+  };
+  cResult[2] = first;
+  cResult[3] = trackAction;
+  cResult[4] = fn2;
+  tmp10 = fn2;
+}) : ((arg0) => {
   let closure_2;
   let closure_4;
   let first;
@@ -67,23 +188,26 @@ export default function GameProfileSummary(arg0) {
   if (null == summaryLocalized) {
     return null;
   } else {
-    const intl = trackAction(first[6]).intl;
+    const intl = trackAction(first[8]).intl;
     const string = intl.string;
-    const t = trackAction(first[6]).t;
+    const t = trackAction(first[8]).t;
     const stringResult = string(first ? t["6MwJo/"] : t.lBeKY2);
     const obj = { style: tmp.container, children: items2 };
-    const Text = tmp16(tmp17[7]).Text;
+    const Text = tmp16(tmp17[9]).Text;
     const tmp11 = closure_7;
     const tmp12 = closure_4;
     const obj2 = { variant: "text-md/normal", color: "interactive-text-active", lineClamp: num, onTextLayout: callback, children: summaryLocalized };
     items2 = [closure_6(Text, obj2), ];
     let tmp13Result = null;
     if (first1) {
-      const obj3 = { onPress: callback1, accessibilityRole: "button", accessibilityLabel: stringResult, children: closure_6(trackAction(first[7]).Text, obj4) };
+      const obj3 = { onPress: callback1, accessibilityRole: "button", accessibilityLabel: stringResult, children: closure_6(trackAction(first[9]).Text, obj4) };
       obj4 = { variant: "text-md/medium", color: "text-brand", children: stringResult };
       tmp13Result = tmp13(closure_5, obj3);
     }
     items2[1] = tmp13Result;
     return tmp11(tmp12, obj);
   }
-};
+});
+const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileSummary.tsx");
+
+export default tmp4;

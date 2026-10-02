@@ -1,19 +1,51 @@
-// Module ID: 14857
-// Function ID: 14858
+// Module ID: 14845
+// Function ID: 14846
 // Name: DefaultGuildThemePreferenceSetting
-// Dependencies: [19, 7417, 2021, 1115, 1186, 11006, 4760, 2]
+// Dependencies: [19, 7421, 2027, 558, 576, 1127, 1198, 10874, 4762, 2]
 
-// Module 14857 (DefaultGuildThemePreferenceSetting)
-import intl3 from "intl" /* 1115 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4760 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
+// Module 14845 (DefaultGuildThemePreferenceSetting)
+import react2 from "react" /* 576 */;
+import intl3 from "intl" /* 1127 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4762 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  let intl2;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { label: intl.string(intl3.t.aN3RNQ), value: preloaded_user_settings.GuildThemeSourcePreference.GUILD };
+    intl = tmp(1127).intl;
+    const items = [obj2, ];
+    const obj3 = { label: intl2.string(intl3.t.js8y7t), value: preloaded_user_settings.GuildThemeSourcePreference.PERSONAL };
+    intl2 = tmp(1127).intl;
+    items[1] = obj3;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => react.useMemo(() => {
+  let intl;
+  let intl2;
+  const obj = { label: intl.string(intl3.t.aN3RNQ), value: preloaded_user_settings.GuildThemeSourcePreference.GUILD };
+  intl = intl3.intl;
+  const items = [obj, ];
+  const obj2 = { label: intl2.string(intl3.t.js8y7t), value: preloaded_user_settings.GuildThemeSourcePreference.PERSONAL };
+  intl2 = intl3.intl;
+  items[1] = obj2;
+  return items;
+}, []));
 let obj = {
   useTitle() {
     const intl = intl3.intl;
@@ -25,19 +57,7 @@ let obj = {
     const DefaultGuildThemePreference = UserSettings.DefaultGuildThemePreference;
     DefaultGuildThemePreference.updateSetting(Number(arg0));
   },
-  useOptions: function useDefaultGuildThemePreferenceOptions() {
-    return react.useMemo(() => {
-      let intl;
-      let intl2;
-      const obj = { label: intl.string(intl3.t.aN3RNQ), value: preloaded_user_settings.GuildThemeSourcePreference.GUILD };
-      intl = intl3.intl;
-      const items = [obj, ];
-      const obj2 = { label: intl2.string(intl3.t.js8y7t), value: preloaded_user_settings.GuildThemeSourcePreference.PERSONAL };
-      intl2 = intl3.intl;
-      items[1] = obj2;
-      return items;
-    }, []);
-  },
+  useOptions: tmp2,
   usePredicate() {
     const obj = ServerThemeUserExperiment;
     return obj.useServerThemeUserEnabled("DefaultGuildThemePreferenceSetting");

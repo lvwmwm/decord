@@ -1,20 +1,20 @@
-// Module ID: 14579
-// Function ID: 14580
+// Module ID: 14571
+// Function ID: 14572
 // Name: BountiesModalTimer
-// Dependencies: [19, 17, 21, 5286, 4566, 7909, 4836, 576, 1364, 4837, 4832, 8742, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 5287, 4570, 7913, 4837, 588, 1370, 558, 576, 4838, 4833, 8737, 2]
 
-// Module 14579 (BountiesModalTimer)
+// Module 14571 (BountiesModalTimer)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
-import timing from "timing" /* 4837 */;
-import ButtonConstants from "ButtonConstants" /* 5286 */;
-import inlineStyles from "inlineStyles" /* 7909 */;
+import nativeDefault from "native" /* 588 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4570 */;
+import timing from "timing" /* 4838 */;
+import ButtonConstants from "ButtonConstants" /* 5287 */;
+import inlineStyles from "inlineStyles" /* 7913 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,11 +37,11 @@ let result = (ButtonConstants.SMALL_BUTTON_HEIGHT - 4) / 2;
 const metroImportAll = result;
 let closure_9 = 2 * Math.PI * result;
 const Easing = ReanimatedRexport2.Easing;
-let closure_10 = Easing.bezier(0.15, 0.21, 0.58, 1);
+const easing = Easing.bezier(0.15, 0.21, 0.58, 1);
 const Easing2 = ReanimatedRexport2.Easing;
-let closure_11 = Easing2.bezier(0.61, 0, 0.58, 1);
+const easing2 = Easing2.bezier(0.61, 0, 0.58, 1);
 const Easing3 = ReanimatedRexport2.Easing;
-let closure_12 = Easing3.bezier(0.42, 0, 0.58, 1);
+const easing3 = Easing3.bezier(0.42, 0, 0.58, 1);
 let closure_13 = ReanimatedRexport.createAnimatedComponent(inlineStyles.Circle);
 let createStyles = createStyles_mod;
 let obj = { progress: size, ring: obj2, trackPath: obj3, countdownText: obj4, checkmarkLayer: { position: "absolute", inset: 6, alignItems: "center", justifyContent: "center" }, checkmarkBackground: size1, checkmarkIcon: { width: 20, height: 20 } };
@@ -60,16 +60,804 @@ let closure_14 = createStyles(obj);
 const __initData = { code: "function BountiesModalTimerTsx1(){const{PROGRESS_CIRCUMFERENCE,animatedProgress}=this.__closure;return{strokeDashoffset:PROGRESS_CIRCUMFERENCE-PROGRESS_CIRCUMFERENCE*animatedProgress.get()};}" };
 const __initData2 = { code: "function BountiesModalTimerTsx2(){const{checkmarkBackgroundScale}=this.__closure;return{transform:[{scale:checkmarkBackgroundScale.get()}]};}" };
 const __initData3 = { code: "function BountiesModalTimerTsx3(){const{checkmarkScale}=this.__closure;return{transform:[{scale:checkmarkScale.get()}]};}" };
-size = size_mod;
-let result1 = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalTimer.tsx");
-
-export default function BountiesModalTimer(arg0) {
+const __initData4 = { code: "function BountiesModalTimerTsx4(){const{PROGRESS_CIRCUMFERENCE,animatedProgress}=this.__closure;return{strokeDashoffset:PROGRESS_CIRCUMFERENCE-PROGRESS_CIRCUMFERENCE*animatedProgress.get()};}" };
+const __initData5 = { code: "function BountiesModalTimerTsx5(){const{checkmarkBackgroundScale}=this.__closure;return{transform:[{scale:checkmarkBackgroundScale.get()}]};}" };
+const __initData6 = { code: "function BountiesModalTimerTsx6(){const{checkmarkScale}=this.__closure;return{transform:[{scale:checkmarkScale.get()}]};}" };
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let c0;
+  let closure_1;
+  let isCompleted;
+  let items2;
+  let num2;
+  let remainingSeconds;
+  let sharedValue;
+  let totalSeconds;
+  let obj = require("react");
+  const cResult = obj.c(49);
+  ({ isCompleted, totalSeconds, remainingSeconds } = arg0);
+  const tmp4 = closure_14();
+  let tmp5 = isCompleted;
+  if (!tmp5) {
+    tmp5 = remainingSeconds <= 0;
+  }
+  importDefault = tmp5;
+  const bound = Math.max(1, Math.ceil(remainingSeconds));
+  if (cResult[0] === isCompleted) {
+    if (cResult[1] === remainingSeconds) {
+      if (cResult[2] === totalSeconds) {
+        _require = cResult[3];
+      }
+      const tmpResult = require("ReanimatedRexport");
+      sharedValue = tmpResult.useSharedValue(tmp7);
+      const tmpResult6 = require("ReanimatedRexport");
+      const sharedValue1 = tmpResult6.useSharedValue(0);
+      const tmpResult7 = require("ReanimatedRexport");
+      const sharedValue2 = tmpResult7.useSharedValue(0);
+      if (cResult[4] === sharedValue) {
+        let tmp13;
+        if (cResult[5] === tmp7) {
+          tmp13 = cResult[6];
+        }
+        if (cResult[7] === sharedValue) {
+          let tmp14;
+          if (cResult[8] === tmp7) {
+            tmp14 = cResult[9];
+          }
+          let obj5 = sharedValue1;
+          const effect = sharedValue1.useEffect(tmp13, tmp14);
+          const ref = sharedValue1.useRef(false);
+          if (cResult[10] === sharedValue1) {
+            if (cResult[11] === sharedValue2) {
+              let tmp16;
+              let tmp17;
+              let tmp27;
+              let tmp30;
+              if (cResult[12] === tmp5) {
+                tmp16 = cResult[13];
+                tmp17 = cResult[14];
+              }
+              const effect1 = obj5.useEffect(tmp16, tmp17);
+              require("ReanimatedRexport");
+              const fn = function p() {
+                const obj = { strokeDashoffset: closure_9 - closure_9 * sharedValue.get() };
+                return obj;
+              };
+              let obj2 = { PROGRESS_CIRCUMFERENCE, animatedProgress: null };
+              class G {
+                constructor() {
+                  let tmp5;
+                  const current = ref.current;
+                  ref.current = true;
+                  if (closure_1) {
+                    if (current) {
+                      const withSequence = ReanimatedRexport2.withSequence;
+                      ReanimatedRexport2;
+                      const obj2 = { duration: 267, easing };
+                      const obj = timing;
+                      const obj4 = { duration: 233, easing: easing2 };
+                      const withTimingResult = obj.withTiming(1.65, obj2);
+                      const obj3 = timing;
+                      const result = set(withSequence(withTimingResult, obj3.withTiming(1, obj4)));
+                      set2 = sharedValue2.set;
+                      const withDelay = ReanimatedRexport2.withDelay;
+                      ReanimatedRexport2;
+                      const withSequence2 = ReanimatedRexport2.withSequence;
+                      ReanimatedRexport2;
+                      const obj6 = { duration: 167, easing: easing3 };
+                      const obj5 = timing;
+                      const obj8 = { duration: 333, easing: easing3 };
+                      const withTimingResult1 = obj5.withTiming(1.25, obj6);
+                      const obj7 = timing;
+                      set2(withDelay(167, withSequence2(withTimingResult1, obj7.withTiming(1, obj8))));
+                    } else {
+                      const result1 = set(1);
+                      const result2 = sharedValue2.set(1);
+                    }
+                    tmp5 = tmp9;
+                  } else {
+                    const result3 = set(0);
+                    const result4 = sharedValue2.set(0);
+                  }
+                  return tmp5;
+                }
+              }
+              fn.__closure = obj2;
+              fn.__workletHash = 12964700773124;
+              fn.__initData = __initData;
+              const tmp20 = PROGRESS_CIRCUMFERENCE;
+              class I {
+                constructor() {
+                  set = sharedValue.set;
+                  const obj = timing;
+                  const result = set(obj.withTiming(c0, { duration: 500 }, "animate-always"));
+                }
+              }
+              const fn2 = function b() {
+                let items;
+                const obj = { transform: items };
+                items = [{ scale: sharedValue1.get() }];
+                ({ scale: sharedValue1.get() });
+                return obj;
+              };
+              let obj3 = { checkmarkBackgroundScale: sharedValue1 };
+              fn2.__closure = obj3;
+              fn2.__workletHash = 10834015407160;
+              fn2.__initData = __initData2;
+              const tmpResult9 = require("ReanimatedRexport");
+              const animatedStyle = tmpResult9.useAnimatedStyle(fn2);
+              const tmpResult10 = require("ReanimatedRexport");
+              class F {
+                constructor() {
+                  let items;
+                  const obj = { transform: items };
+                  items = [{ scale: sharedValue2.get() }];
+                  ({ scale: sharedValue2.get() });
+                  return obj;
+                }
+              }
+              let obj4 = { checkmarkScale: sharedValue2 };
+              F.__closure = obj4;
+              F.__workletHash = 7510845920441;
+              F.__initData = __initData3;
+              const animatedStyle1 = tmpResult10.useAnimatedStyle(F);
+              if (cResult[15] !== tmp4.trackPath.color) {
+                let obj6 = { cx: tmp(sharedValue[3]).SMALL_BUTTON_HEIGHT / 2, cy: tmp(sharedValue[3]).SMALL_BUTTON_HEIGHT / 2, r, fill: "none", stroke: tmp4.trackPath.color, strokeWidth: 4 };
+                const Circle = tmp(tmp2[5]).Circle;
+                class G {
+                  constructor() {
+                    let tmp5;
+                    const current = ref.current;
+                    ref.current = true;
+                    if (closure_1) {
+                      if (current) {
+                        const withSequence = ReanimatedRexport2.withSequence;
+                        ReanimatedRexport2;
+                        const obj2 = { duration: 267, easing };
+                        const obj = timing;
+                        const obj4 = { duration: 233, easing: easing2 };
+                        const withTimingResult = obj.withTiming(1.65, obj2);
+                        const obj3 = timing;
+                        const result = set(withSequence(withTimingResult, obj3.withTiming(1, obj4)));
+                        set2 = sharedValue2.set;
+                        const withDelay = ReanimatedRexport2.withDelay;
+                        ReanimatedRexport2;
+                        const withSequence2 = ReanimatedRexport2.withSequence;
+                        ReanimatedRexport2;
+                        const obj6 = { duration: 167, easing: easing3 };
+                        const obj5 = timing;
+                        const obj8 = { duration: 333, easing: easing3 };
+                        const withTimingResult1 = obj5.withTiming(1.25, obj6);
+                        const obj7 = timing;
+                        set2(withDelay(167, withSequence2(withTimingResult1, obj7.withTiming(1, obj8))));
+                      } else {
+                        const result1 = set(1);
+                        const result2 = sharedValue2.set(1);
+                      }
+                      tmp5 = tmp9;
+                    } else {
+                      const result3 = set(0);
+                      const result4 = sharedValue2.set(0);
+                    }
+                    return tmp5;
+                  }
+                }
+                cResult[15] = tmp4.trackPath.color;
+                const tmp29 = ref(Circle, obj6);
+                class I {
+                  constructor() {
+                    set = sharedValue.set;
+                    const obj = timing;
+                    const result = set(obj.withTiming(c0, { duration: 500 }, "animate-always"));
+                  }
+                }
+                tmp27 = tmp29;
+              } else {
+                tmp27 = cResult[16];
+              }
+              if (cResult[17] !== tmp22) {
+                let obj7 = { cx: tmp(sharedValue[3]).SMALL_BUTTON_HEIGHT / 2, cy: tmp(sharedValue[3]).SMALL_BUTTON_HEIGHT / 2, r, fill: "none", stroke, strokeWidth: 4, strokeDasharray: tmp20, strokeLinecap: "round", animatedProps: tmp22 };
+                class G {
+                  constructor() {
+                    let tmp5;
+                    const current = ref.current;
+                    ref.current = true;
+                    if (closure_1) {
+                      if (current) {
+                        const withSequence = ReanimatedRexport2.withSequence;
+                        ReanimatedRexport2;
+                        const obj2 = { duration: 267, easing };
+                        const obj = timing;
+                        const obj4 = { duration: 233, easing: easing2 };
+                        const withTimingResult = obj.withTiming(1.65, obj2);
+                        const obj3 = timing;
+                        const result = set(withSequence(withTimingResult, obj3.withTiming(1, obj4)));
+                        set2 = sharedValue2.set;
+                        const withDelay = ReanimatedRexport2.withDelay;
+                        ReanimatedRexport2;
+                        const withSequence2 = ReanimatedRexport2.withSequence;
+                        ReanimatedRexport2;
+                        const obj6 = { duration: 167, easing: easing3 };
+                        const obj5 = timing;
+                        const obj8 = { duration: 333, easing: easing3 };
+                        const withTimingResult1 = obj5.withTiming(1.25, obj6);
+                        const obj7 = timing;
+                        set2(withDelay(167, withSequence2(withTimingResult1, obj7.withTiming(1, obj8))));
+                      } else {
+                        const result1 = set(1);
+                        const result2 = sharedValue2.set(1);
+                      }
+                      tmp5 = tmp9;
+                    } else {
+                      const result3 = set(0);
+                      const result4 = sharedValue2.set(0);
+                    }
+                    return tmp5;
+                  }
+                }
+                const tmp34 = ref(closure_13, obj7);
+                class I {
+                  constructor() {
+                    set = sharedValue.set;
+                    const obj = timing;
+                    const result = set(obj.withTiming(c0, { duration: 500 }, "animate-always"));
+                  }
+                }
+                cResult[17] = tmp22;
+                cResult[18] = tmp34;
+                tmp30 = tmp34;
+              } else {
+                tmp30 = cResult[18];
+              }
+              if (cResult[19] === tmp4.ring) {
+                if (cResult[20] === tmp27) {
+                  let tmp35;
+                  if (cResult[21] === tmp30) {
+                    tmp35 = cResult[22];
+                  }
+                  if (cResult[23] === tmp5) {
+                    if (cResult[24] === bound) {
+                      let tmp40;
+                      if (cResult[25] === tmp4.countdownText) {
+                        tmp40 = cResult[26];
+                      }
+                      if (cResult[27] === animatedStyle) {
+                        let tmp43;
+                        let tmp44;
+                        if (cResult[28] === tmp4.checkmarkLayer) {
+                          tmp43 = cResult[29];
+                        }
+                        if (cResult[30] !== tmp4.checkmarkBackground) {
+                          let obj8 = { style: tmp4.checkmarkBackground };
+                          const tmp47 = ref(sharedValue2, obj8);
+                          class G {
+                            constructor() {
+                              let tmp5;
+                              const current = ref.current;
+                              ref.current = true;
+                              if (closure_1) {
+                                if (current) {
+                                  const withSequence = ReanimatedRexport2.withSequence;
+                                  ReanimatedRexport2;
+                                  const obj2 = { duration: 267, easing };
+                                  const obj = timing;
+                                  const obj4 = { duration: 233, easing: easing2 };
+                                  const withTimingResult = obj.withTiming(1.65, obj2);
+                                  const obj3 = timing;
+                                  const result = set(withSequence(withTimingResult, obj3.withTiming(1, obj4)));
+                                  set2 = sharedValue2.set;
+                                  const withDelay = ReanimatedRexport2.withDelay;
+                                  ReanimatedRexport2;
+                                  const withSequence2 = ReanimatedRexport2.withSequence;
+                                  ReanimatedRexport2;
+                                  const obj6 = { duration: 167, easing: easing3 };
+                                  const obj5 = timing;
+                                  const obj8 = { duration: 333, easing: easing3 };
+                                  const withTimingResult1 = obj5.withTiming(1.25, obj6);
+                                  const obj7 = timing;
+                                  set2(withDelay(167, withSequence2(withTimingResult1, obj7.withTiming(1, obj8))));
+                                } else {
+                                  const result1 = set(1);
+                                  const result2 = sharedValue2.set(1);
+                                }
+                                tmp5 = tmp9;
+                              } else {
+                                const result3 = set(0);
+                                const result4 = sharedValue2.set(0);
+                              }
+                              return tmp5;
+                            }
+                          }
+                          cResult[31] = tmp47;
+                          tmp44 = tmp47;
+                        } else {
+                          tmp44 = cResult[31];
+                        }
+                        if (cResult[32] === tmp44) {
+                          let tmp48;
+                          if (cResult[33] === tmp43) {
+                            tmp48 = cResult[34];
+                          }
+                          if (cResult[35] === animatedStyle1) {
+                            let tmp52;
+                            let tmp53;
+                            if (cResult[36] === tmp4.checkmarkLayer) {
+                              tmp52 = cResult[37];
+                            }
+                            if (cResult[38] !== tmp4.checkmarkIcon) {
+                              ({ size: "custom", color: require("native").colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT, style: tmp4.checkmarkIcon });
+                              const CheckmarkSmallBoldIcon = tmp(tmp2[13]).CheckmarkSmallBoldIcon;
+                              class G {
+                                constructor() {
+                                  let tmp5;
+                                  const current = ref.current;
+                                  ref.current = true;
+                                  if (closure_1) {
+                                    if (current) {
+                                      const withSequence = ReanimatedRexport2.withSequence;
+                                      ReanimatedRexport2;
+                                      const obj2 = { duration: 267, easing };
+                                      const obj = timing;
+                                      const obj4 = { duration: 233, easing: easing2 };
+                                      const withTimingResult = obj.withTiming(1.65, obj2);
+                                      const obj3 = timing;
+                                      const result = set(withSequence(withTimingResult, obj3.withTiming(1, obj4)));
+                                      set2 = sharedValue2.set;
+                                      const withDelay = ReanimatedRexport2.withDelay;
+                                      ReanimatedRexport2;
+                                      const withSequence2 = ReanimatedRexport2.withSequence;
+                                      ReanimatedRexport2;
+                                      const obj6 = { duration: 167, easing: easing3 };
+                                      const obj5 = timing;
+                                      const obj8 = { duration: 333, easing: easing3 };
+                                      const withTimingResult1 = obj5.withTiming(1.25, obj6);
+                                      const obj7 = timing;
+                                      set2(withDelay(167, withSequence2(withTimingResult1, obj7.withTiming(1, obj8))));
+                                    } else {
+                                      const result1 = set(1);
+                                      const result2 = sharedValue2.set(1);
+                                    }
+                                    tmp5 = tmp9;
+                                  } else {
+                                    const result3 = set(0);
+                                    const result4 = sharedValue2.set(0);
+                                  }
+                                  return tmp5;
+                                }
+                              }
+                              cResult[38] = tmp4.checkmarkIcon;
+                              cResult[39] = tmp56;
+                              tmp53 = tmp56;
+                            } else {
+                              tmp53 = cResult[39];
+                            }
+                            if (cResult[40] === tmp52) {
+                              let tmp57;
+                              if (cResult[41] === tmp53) {
+                                tmp57 = cResult[42];
+                              }
+                              if (cResult[43] === tmp4.progress) {
+                                if (cResult[44] === tmp48) {
+                                  if (cResult[45] === tmp57) {
+                                    if (cResult[46] === tmp35) {
+                                      let tmp61;
+                                      if (cResult[47] === tmp40) {
+                                        tmp61 = cResult[48];
+                                      }
+                                      return tmp61;
+                                    }
+                                  }
+                                }
+                              }
+                              const obj10 = { style: tmp4.progress, children: tmp64 };
+                              class G {
+                                constructor() {
+                                  let tmp5;
+                                  const current = ref.current;
+                                  ref.current = true;
+                                  if (closure_1) {
+                                    if (current) {
+                                      const withSequence = ReanimatedRexport2.withSequence;
+                                      ReanimatedRexport2;
+                                      const obj2 = { duration: 267, easing };
+                                      const obj = timing;
+                                      const obj4 = { duration: 233, easing: easing2 };
+                                      const withTimingResult = obj.withTiming(1.65, obj2);
+                                      const obj3 = timing;
+                                      const result = set(withSequence(withTimingResult, obj3.withTiming(1, obj4)));
+                                      set2 = sharedValue2.set;
+                                      const withDelay = ReanimatedRexport2.withDelay;
+                                      ReanimatedRexport2;
+                                      const withSequence2 = ReanimatedRexport2.withSequence;
+                                      ReanimatedRexport2;
+                                      const obj6 = { duration: 167, easing: easing3 };
+                                      const obj5 = timing;
+                                      const obj8 = { duration: 333, easing: easing3 };
+                                      const withTimingResult1 = obj5.withTiming(1.25, obj6);
+                                      const obj7 = timing;
+                                      set2(withDelay(167, withSequence2(withTimingResult1, obj7.withTiming(1, obj8))));
+                                    } else {
+                                      const result1 = set(1);
+                                      const result2 = sharedValue2.set(1);
+                                    }
+                                    tmp5 = tmp9;
+                                  } else {
+                                    const result3 = set(0);
+                                    const result4 = sharedValue2.set(0);
+                                  }
+                                  return tmp5;
+                                }
+                              }
+                              tmp64[0] = tmp35;
+                              tmp64[1] = tmp40;
+                              tmp64[2] = tmp48;
+                              tmp64[3] = tmp57;
+                              const tmp65 = closure_6(sharedValue2, obj10);
+                              class I {
+                                constructor() {
+                                  set = sharedValue.set;
+                                  const obj = timing;
+                                  const result = set(obj.withTiming(c0, { duration: 500 }, "animate-always"));
+                                }
+                              }
+                              cResult[43] = tmp4.progress;
+                              cResult[44] = tmp48;
+                              cResult[45] = tmp57;
+                              cResult[46] = tmp35;
+                              cResult[47] = tmp40;
+                              cResult[48] = tmp65;
+                              class F {
+                                constructor() {
+                                  let items;
+                                  const obj = { transform: items };
+                                  items = [{ scale: sharedValue2.get() }];
+                                  ({ scale: sharedValue2.get() });
+                                  return obj;
+                                }
+                              }
+                            }
+                            const obj11 = { style: null, children: tmp53 };
+                            class G {
+                              constructor() {
+                                let tmp5;
+                                const current = ref.current;
+                                ref.current = true;
+                                if (closure_1) {
+                                  if (current) {
+                                    const withSequence = ReanimatedRexport2.withSequence;
+                                    ReanimatedRexport2;
+                                    const obj2 = { duration: 267, easing };
+                                    const obj = timing;
+                                    const obj4 = { duration: 233, easing: easing2 };
+                                    const withTimingResult = obj.withTiming(1.65, obj2);
+                                    const obj3 = timing;
+                                    const result = set(withSequence(withTimingResult, obj3.withTiming(1, obj4)));
+                                    set2 = sharedValue2.set;
+                                    const withDelay = ReanimatedRexport2.withDelay;
+                                    ReanimatedRexport2;
+                                    const withSequence2 = ReanimatedRexport2.withSequence;
+                                    ReanimatedRexport2;
+                                    const obj6 = { duration: 167, easing: easing3 };
+                                    const obj5 = timing;
+                                    const obj8 = { duration: 333, easing: easing3 };
+                                    const withTimingResult1 = obj5.withTiming(1.25, obj6);
+                                    const obj7 = timing;
+                                    set2(withDelay(167, withSequence2(withTimingResult1, obj7.withTiming(1, obj8))));
+                                  } else {
+                                    const result1 = set(1);
+                                    const result2 = sharedValue2.set(1);
+                                  }
+                                  tmp5 = tmp9;
+                                } else {
+                                  const result3 = set(0);
+                                  const result4 = sharedValue2.set(0);
+                                }
+                                return tmp5;
+                              }
+                            }
+                            const tmp60 = ref(require("ReanimatedRexport").View, obj11);
+                            cResult[40] = tmp52;
+                            cResult[41] = tmp53;
+                            class I {
+                              constructor() {
+                                set = sharedValue.set;
+                                const obj = timing;
+                                const result = set(obj.withTiming(c0, { duration: 500 }, "animate-always"));
+                              }
+                            }
+                            cResult[42] = tmp60;
+                            tmp57 = tmp60;
+                          }
+                          let items = [tmp4.checkmarkLayer, animatedStyle1];
+                          class G {
+                            constructor() {
+                              let tmp5;
+                              const current = ref.current;
+                              ref.current = true;
+                              if (closure_1) {
+                                if (current) {
+                                  const withSequence = ReanimatedRexport2.withSequence;
+                                  ReanimatedRexport2;
+                                  const obj2 = { duration: 267, easing };
+                                  const obj = timing;
+                                  const obj4 = { duration: 233, easing: easing2 };
+                                  const withTimingResult = obj.withTiming(1.65, obj2);
+                                  const obj3 = timing;
+                                  const result = set(withSequence(withTimingResult, obj3.withTiming(1, obj4)));
+                                  set2 = sharedValue2.set;
+                                  const withDelay = ReanimatedRexport2.withDelay;
+                                  ReanimatedRexport2;
+                                  const withSequence2 = ReanimatedRexport2.withSequence;
+                                  ReanimatedRexport2;
+                                  const obj6 = { duration: 167, easing: easing3 };
+                                  const obj5 = timing;
+                                  const obj8 = { duration: 333, easing: easing3 };
+                                  const withTimingResult1 = obj5.withTiming(1.25, obj6);
+                                  const obj7 = timing;
+                                  set2(withDelay(167, withSequence2(withTimingResult1, obj7.withTiming(1, obj8))));
+                                } else {
+                                  const result1 = set(1);
+                                  const result2 = sharedValue2.set(1);
+                                }
+                                tmp5 = tmp9;
+                              } else {
+                                const result3 = set(0);
+                                const result4 = sharedValue2.set(0);
+                              }
+                              return tmp5;
+                            }
+                          }
+                          cResult[36] = tmp4.checkmarkLayer;
+                          cResult[37] = items;
+                          tmp52 = items;
+                        }
+                        const obj12 = { style: null, children: tmp44 };
+                        class G {
+                          constructor() {
+                            let tmp5;
+                            const current = ref.current;
+                            ref.current = true;
+                            if (closure_1) {
+                              if (current) {
+                                const withSequence = ReanimatedRexport2.withSequence;
+                                ReanimatedRexport2;
+                                const obj2 = { duration: 267, easing };
+                                const obj = timing;
+                                const obj4 = { duration: 233, easing: easing2 };
+                                const withTimingResult = obj.withTiming(1.65, obj2);
+                                const obj3 = timing;
+                                const result = set(withSequence(withTimingResult, obj3.withTiming(1, obj4)));
+                                set2 = sharedValue2.set;
+                                const withDelay = ReanimatedRexport2.withDelay;
+                                ReanimatedRexport2;
+                                const withSequence2 = ReanimatedRexport2.withSequence;
+                                ReanimatedRexport2;
+                                const obj6 = { duration: 167, easing: easing3 };
+                                const obj5 = timing;
+                                const obj8 = { duration: 333, easing: easing3 };
+                                const withTimingResult1 = obj5.withTiming(1.25, obj6);
+                                const obj7 = timing;
+                                set2(withDelay(167, withSequence2(withTimingResult1, obj7.withTiming(1, obj8))));
+                              } else {
+                                const result1 = set(1);
+                                const result2 = sharedValue2.set(1);
+                              }
+                              tmp5 = tmp9;
+                            } else {
+                              const result3 = set(0);
+                              const result4 = sharedValue2.set(0);
+                            }
+                            return tmp5;
+                          }
+                        }
+                        const tmp51 = ref(require("ReanimatedRexport").View, obj12);
+                        cResult[32] = tmp44;
+                        cResult[33] = tmp43;
+                        class I {
+                          constructor() {
+                            set = sharedValue.set;
+                            const obj = timing;
+                            const result = set(obj.withTiming(c0, { duration: 500 }, "animate-always"));
+                          }
+                        }
+                        cResult[34] = tmp51;
+                        tmp48 = tmp51;
+                      }
+                      const items1 = [tmp4.checkmarkLayer, animatedStyle];
+                      class G {
+                        constructor() {
+                          let tmp5;
+                          const current = ref.current;
+                          ref.current = true;
+                          if (closure_1) {
+                            if (current) {
+                              const withSequence = ReanimatedRexport2.withSequence;
+                              ReanimatedRexport2;
+                              const obj2 = { duration: 267, easing };
+                              const obj = timing;
+                              const obj4 = { duration: 233, easing: easing2 };
+                              const withTimingResult = obj.withTiming(1.65, obj2);
+                              const obj3 = timing;
+                              const result = set(withSequence(withTimingResult, obj3.withTiming(1, obj4)));
+                              set2 = sharedValue2.set;
+                              const withDelay = ReanimatedRexport2.withDelay;
+                              ReanimatedRexport2;
+                              const withSequence2 = ReanimatedRexport2.withSequence;
+                              ReanimatedRexport2;
+                              const obj6 = { duration: 167, easing: easing3 };
+                              const obj5 = timing;
+                              const obj8 = { duration: 333, easing: easing3 };
+                              const withTimingResult1 = obj5.withTiming(1.25, obj6);
+                              const obj7 = timing;
+                              set2(withDelay(167, withSequence2(withTimingResult1, obj7.withTiming(1, obj8))));
+                            } else {
+                              const result1 = set(1);
+                              const result2 = sharedValue2.set(1);
+                            }
+                            tmp5 = tmp9;
+                          } else {
+                            const result3 = set(0);
+                            const result4 = sharedValue2.set(0);
+                          }
+                          return tmp5;
+                        }
+                      }
+                      cResult[28] = tmp4.checkmarkLayer;
+                      cResult[29] = items1;
+                      tmp43 = items1;
+                    }
+                  }
+                  let tmp41 = !tmp5;
+                  if (tmp41) {
+                    const obj13 = { variant: "text-sm/semibold", style: tmp4.countdownText, maxFontSizeMultiplier: 1, children: bound };
+                    tmp41 = ref(tmp(tmp2[12]).Text, obj13);
+                  }
+                  cResult[23] = tmp5;
+                  class G {
+                    constructor() {
+                      let tmp5;
+                      const current = ref.current;
+                      ref.current = true;
+                      if (closure_1) {
+                        if (current) {
+                          const withSequence = ReanimatedRexport2.withSequence;
+                          ReanimatedRexport2;
+                          const obj2 = { duration: 267, easing };
+                          const obj = timing;
+                          const obj4 = { duration: 233, easing: easing2 };
+                          const withTimingResult = obj.withTiming(1.65, obj2);
+                          const obj3 = timing;
+                          const result = set(withSequence(withTimingResult, obj3.withTiming(1, obj4)));
+                          set2 = sharedValue2.set;
+                          const withDelay = ReanimatedRexport2.withDelay;
+                          ReanimatedRexport2;
+                          const withSequence2 = ReanimatedRexport2.withSequence;
+                          ReanimatedRexport2;
+                          const obj6 = { duration: 167, easing: easing3 };
+                          const obj5 = timing;
+                          const obj8 = { duration: 333, easing: easing3 };
+                          const withTimingResult1 = obj5.withTiming(1.25, obj6);
+                          const obj7 = timing;
+                          set2(withDelay(167, withSequence2(withTimingResult1, obj7.withTiming(1, obj8))));
+                        } else {
+                          const result1 = set(1);
+                          const result2 = sharedValue2.set(1);
+                        }
+                        tmp5 = tmp9;
+                      } else {
+                        const result3 = set(0);
+                        const result4 = sharedValue2.set(0);
+                      }
+                      return tmp5;
+                    }
+                  }
+                  cResult[24] = bound;
+                  cResult[25] = tmp4.countdownText;
+                  cResult[26] = tmp41;
+                  tmp40 = tmp41;
+                }
+              }
+              size = { height: tmp(sharedValue[3]).SMALL_BUTTON_HEIGHT, width: tmp(sharedValue[3]).SMALL_BUTTON_HEIGHT, style: tmp4.ring, children: items2 };
+              items2 = [tmp27, tmp30];
+              const tmp38 = require("inlineStyles");
+              const tmp39 = closure_6(tmp38, size);
+              cResult[19] = tmp4.ring;
+              cResult[20] = tmp27;
+              cResult[21] = tmp30;
+              cResult[22] = tmp39;
+              tmp35 = tmp39;
+            }
+          }
+          class G {
+            constructor() {
+              let tmp5;
+              const current = ref.current;
+              ref.current = true;
+              if (closure_1) {
+                if (current) {
+                  const withSequence = ReanimatedRexport2.withSequence;
+                  ReanimatedRexport2;
+                  const obj2 = { duration: 267, easing };
+                  const obj = timing;
+                  const obj4 = { duration: 233, easing: easing2 };
+                  const withTimingResult = obj.withTiming(1.65, obj2);
+                  const obj3 = timing;
+                  const result = set(withSequence(withTimingResult, obj3.withTiming(1, obj4)));
+                  set2 = sharedValue2.set;
+                  const withDelay = ReanimatedRexport2.withDelay;
+                  ReanimatedRexport2;
+                  const withSequence2 = ReanimatedRexport2.withSequence;
+                  ReanimatedRexport2;
+                  const obj6 = { duration: 167, easing: easing3 };
+                  const obj5 = timing;
+                  const obj8 = { duration: 333, easing: easing3 };
+                  const withTimingResult1 = obj5.withTiming(1.25, obj6);
+                  const obj7 = timing;
+                  set2(withDelay(167, withSequence2(withTimingResult1, obj7.withTiming(1, obj8))));
+                } else {
+                  const result1 = set(1);
+                  const result2 = sharedValue2.set(1);
+                }
+                tmp5 = tmp9;
+              } else {
+                const result3 = set(0);
+                const result4 = sharedValue2.set(0);
+              }
+              return tmp5;
+            }
+          }
+          const items3 = [tmp5, sharedValue1, sharedValue2];
+          cResult[10] = sharedValue1;
+          class I {
+            constructor() {
+              set = sharedValue.set;
+              const obj = timing;
+              const result = set(obj.withTiming(c0, { duration: 500 }, "animate-always"));
+            }
+          }
+          cResult[11] = sharedValue2;
+          cResult[12] = tmp5;
+          cResult[13] = G;
+          cResult[14] = items3;
+          tmp17 = items3;
+          tmp16 = G;
+        }
+        const items4 = [sharedValue, tmp7];
+        cResult[8] = tmp7;
+        cResult[9] = items4;
+        tmp14 = items4;
+      }
+      class I {
+        constructor() {
+          set = sharedValue.set;
+          const obj = timing;
+          const result = set(obj.withTiming(c0, { duration: 500 }, "animate-always"));
+        }
+      }
+      cResult[4] = sharedValue;
+      cResult[5] = tmp7;
+      cResult[6] = I;
+      tmp13 = I;
+    }
+  }
+  _require = 0;
+  if (isCompleted) {
+    _require = 1;
+    num2 = 1;
+  } else {
+    num2 = 0;
+    if (totalSeconds > 0) {
+      const diff = 1 - remainingSeconds / totalSeconds;
+      _require = diff;
+      num2 = diff;
+    }
+  }
+  cResult[1] = remainingSeconds;
+  cResult[2] = totalSeconds;
+  cResult[3] = num2;
+}) : ((arg0) => {
   let CheckmarkSmallBoldIcon;
   let c1;
   let closure_0;
-  let easing;
-  let easing2;
-  let easing3;
   let isCompleted;
   let items2;
   let items3;
@@ -158,31 +946,31 @@ export default function BountiesModalTimer(arg0) {
     return tmp5;
   }, items1);
   let obj4 = require("ReanimatedRexport");
+  const fn = function x() {
+    const obj = { strokeDashoffset: closure_9 - closure_9 * sharedValue.get() };
+    return obj;
+  };
+  let obj5 = { PROGRESS_CIRCUMFERENCE: strokeDasharray, animatedProgress: sharedValue };
+  fn.__closure = obj5;
+  fn.__workletHash = 6710265460161;
+  fn.__initData = __initData4;
+  const animatedProps = obj4.useAnimatedProps(fn);
+  let obj6 = require("ReanimatedRexport");
   class U {
     constructor() {
-      const obj = { strokeDashoffset: closure_9 - closure_9 * sharedValue.get() };
+      let items;
+      const obj = { transform: items };
+      items = [{ scale: sharedValue1.get() }];
+      ({ scale: sharedValue1.get() });
       return obj;
     }
   }
-  let obj5 = { PROGRESS_CIRCUMFERENCE: strokeDasharray, animatedProgress: sharedValue };
-  U.__closure = obj5;
-  U.__workletHash = 12964700773124;
-  U.__initData = __initData;
-  const animatedProps = obj4.useAnimatedProps(U);
-  let obj6 = require("ReanimatedRexport");
-  const fn = function x() {
-    let items;
-    const obj = { transform: items };
-    items = [{ scale: sharedValue1.get() }];
-    ({ scale: sharedValue1.get() });
-    return obj;
-  };
-  fn.__closure = { checkmarkBackgroundScale: sharedValue1 };
-  fn.__workletHash = 10834015407160;
-  fn.__initData = __initData2;
-  const animatedStyle = obj6.useAnimatedStyle(fn);
+  U.__closure = { checkmarkBackgroundScale: sharedValue1 };
+  U.__workletHash = 11453823104255;
+  U.__initData = __initData5;
+  const animatedStyle = obj6.useAnimatedStyle(U);
   let obj7 = require("ReanimatedRexport");
-  class G {
+  class P {
     constructor() {
       let items;
       const obj = { transform: items };
@@ -191,11 +979,11 @@ export default function BountiesModalTimer(arg0) {
       return obj;
     }
   }
-  G.__closure = { checkmarkScale: sharedValue2 };
-  G.__workletHash = 7510845920441;
-  G.__initData = __initData3;
+  P.__closure = { checkmarkScale: sharedValue2 };
+  P.__workletHash = 14689280780412;
+  P.__initData = __initData6;
   let obj8 = { style: tmp.progress, children: items3 };
-  const animatedStyle1 = obj7.useAnimatedStyle(G);
+  const animatedStyle1 = obj7.useAnimatedStyle(P);
   size = { height: require("ButtonConstants").SMALL_BUTTON_HEIGHT, width: require("ButtonConstants").SMALL_BUTTON_HEIGHT, style: tmp.ring, children: items2 };
   const tmp18 = require("inlineStyles");
   const tmp19 = ref;
@@ -209,7 +997,7 @@ export default function BountiesModalTimer(arg0) {
   const tmp15 = closure_6;
   if (tmp19Result) {
     const obj11 = { variant: "text-sm/semibold", style: tmp.countdownText, maxFontSizeMultiplier: 1, children: bound };
-    tmp19Result = tmp19(tmp5(tmp6[10]).Text, obj11);
+    tmp19Result = tmp19(tmp5(tmp6[12]).Text, obj11);
   }
   items3[1] = tmp19Result;
   const obj12 = { style: items4, children: tmp19(sharedValue2, obj13) };
@@ -221,7 +1009,11 @@ export default function BountiesModalTimer(arg0) {
   items5 = [tmp.checkmarkLayer, animatedStyle1];
   const View2 = tmp17(tmp6[4]).View;
   obj15 = { size: "custom", color: require("native").colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT, style: tmp.checkmarkIcon };
-  CheckmarkSmallBoldIcon = tmp5(tmp6[11]).CheckmarkSmallBoldIcon;
+  CheckmarkSmallBoldIcon = tmp5(tmp6[13]).CheckmarkSmallBoldIcon;
   items3[3] = tmp19(View2, obj14);
   return tmp15(sharedValue2, obj8);
-};
+});
+size = size_mod;
+let result1 = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalTimer.tsx");
+
+export default tmp5;

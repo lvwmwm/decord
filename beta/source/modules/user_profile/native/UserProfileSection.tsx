@@ -1,32 +1,199 @@
-// Module ID: 11077
-// Function ID: 11078
+// Module ID: 10945
+// Function ID: 10946
 // Name: UserProfileSection
-// Dependencies: [19, 17, 21, 4836, 576, 4540, 6605, 4683, 8059, 4832, 2]
-// Exports: default
+// Dependencies: [109, 19, 17, 21, 4837, 588, 558, 576, 4544, 6606, 4685, 8063, 4833, 2]
 
-// Module 11077 (UserProfileSection)
+// Module 10945 (UserProfileSection)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4540 */;
-import ColorUtils from "ColorUtils" /* 4683 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 6605 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 4544 */;
+import ColorUtils from "ColorUtils" /* 4685 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 6606 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
-let closure_4;
+let hasOwnProperty;
+let metroRequire;
 let obj2;
+let closure_2 = ["title", "headerIcon", "trailingIcon", "showContainer", "children", "style"];
 const View = react_native.View;
-({ jsx: c3, jsxs: closure_4 } = Fragment);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { titleContainer: { flexDirection: "row", marginBottom: 12, justifyContent: "space-between" }, title: { flexDirection: "row" }, section: { marginHorizontal: 12, marginTop: 12, marginBottom: 8 }, contentContainer: obj2 };
 obj2 = { borderWidth: 1, borderRadius: nativeDefault.radii.sm, borderColor: nativeDefault.colors.BORDER_SUBTLE };
-let closure_5 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileSection.tsx");
-
-export default function UserProfileSection(title) {
+let closure_7 = createStyles.createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let headerIcon;
+  let items;
+  let items1;
+  let items2;
+  let primaryColor;
+  let showContainer;
+  let style;
+  let theme;
+  let title;
+  let tmp10;
+  let tmp17;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  let trailingIcon;
+  const obj = react2;
+  const cResult = obj.c(33);
+  if (cResult[0] !== arg0) {
+    ({ title, headerIcon, trailingIcon, showContainer, children, style } = arg0);
+    const tmp13 = _objectWithoutProperties(arg0, closure_2);
+    cResult[0] = arg0;
+    cResult[1] = children;
+    cResult[2] = headerIcon;
+    cResult[3] = tmp13;
+    cResult[4] = showContainer;
+    cResult[5] = style;
+    cResult[6] = title;
+    cResult[7] = trailingIcon;
+    tmp10 = trailingIcon;
+    tmp9 = title;
+    tmp8 = style;
+    tmp7 = showContainer;
+    tmp6 = tmp13;
+    tmp5 = headerIcon;
+    tmp4 = children;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    tmp6 = cResult[3];
+    tmp7 = cResult[4];
+    tmp8 = cResult[5];
+    tmp9 = cResult[6];
+    tmp10 = cResult[7];
+  }
+  const tmp14 = closure_7();
+  const tmpResult = native;
+  const themeContext = tmpResult.useThemeContext();
+  ({ theme, primaryColor } = themeContext);
+  const tmpResult3 = useProfileThemeValues;
+  const profileThemeValues = tmpResult3.useProfileThemeValues(theme);
+  if (cResult[8] === primaryColor) {
+    if (cResult[9] === profileThemeValues) {
+      if (cResult[10] === tmp14.contentContainer) {
+        if (cResult[11] === theme) {
+          tmp17 = cResult[12];
+        }
+        if (cResult[13] === tmp14.contentContainer) {
+          let tmp18;
+          if (cResult[14] === tmp17) {
+            tmp18 = cResult[15];
+          }
+          if (cResult[16] === tmp8) {
+            let tmp21;
+            if (cResult[17] === tmp14.section) {
+              tmp21 = cResult[18];
+            }
+            if (cResult[19] === tmp5) {
+              if (cResult[20] === tmp14.title) {
+                if (cResult[21] === tmp14.titleContainer) {
+                  if (cResult[22] === tmp9) {
+                    let tmp22;
+                    if (cResult[23] === tmp10) {
+                      tmp22 = cResult[24];
+                    }
+                    let tmp27 = null;
+                    if (tmp7) {
+                      tmp27 = tmp18;
+                    }
+                    if (cResult[25] === tmp4) {
+                      let tmp28;
+                      if (cResult[26] === tmp27) {
+                        tmp28 = cResult[27];
+                      }
+                      if (cResult[28] === tmp6) {
+                        if (cResult[29] === tmp21) {
+                          if (cResult[30] === tmp22) {
+                            let tmp32;
+                            if (cResult[31] === tmp28) {
+                              tmp32 = cResult[32];
+                            }
+                            return tmp32;
+                          }
+                        }
+                      }
+                      const obj2 = { style: tmp21, children: items };
+                      const merged = Object.assign(tmp6);
+                      items = [tmp22, tmp28];
+                      const tmp38 = metroRequire(View, obj2);
+                      cResult[28] = tmp6;
+                      cResult[29] = tmp21;
+                      cResult[30] = tmp22;
+                      cResult[31] = tmp28;
+                      cResult[32] = tmp38;
+                      tmp32 = tmp38;
+                    }
+                    const obj3 = { style: tmp27, children: tmp4 };
+                    const tmp31 = hasOwnProperty(View, obj3);
+                    cResult[25] = tmp4;
+                    cResult[26] = tmp27;
+                    cResult[27] = tmp31;
+                    tmp28 = tmp31;
+                  }
+                }
+              }
+            }
+            let tmp23 = null;
+            if (null != tmp9) {
+              const obj4 = { style: tmp14.titleContainer, children: items2 };
+              const obj5 = { style: tmp14.title, children: items1 };
+              const obj6 = { variant: "eyebrow", accessibilityRole: "header", children: tmp9 };
+              items1 = [hasOwnProperty(Text_Text.Text, obj6), tmp5];
+              items2 = [metroRequire(View, obj5), tmp10];
+              tmp23 = metroRequire(View, obj4);
+            }
+            cResult[19] = tmp5;
+            cResult[20] = tmp14.title;
+            cResult[21] = tmp14.titleContainer;
+            cResult[22] = tmp9;
+            cResult[23] = tmp10;
+            cResult[24] = tmp23;
+            tmp22 = tmp23;
+          }
+          const items3 = [tmp14.section, tmp8];
+          cResult[16] = tmp8;
+          cResult[17] = tmp14.section;
+          cResult[18] = items3;
+          tmp21 = items3;
+        }
+        const obj7 = { borderColor: tmp17 };
+        const merged1 = Object.assign(tmp14.contentContainer);
+        cResult[13] = tmp14.contentContainer;
+        cResult[14] = tmp17;
+        cResult[15] = obj7;
+        tmp18 = obj7;
+      }
+    }
+  }
+  if (null != primaryColor) {
+    let borderColor;
+    if (null != profileThemeValues) {
+      const tmpResult4 = ColorUtils;
+      borderColor = tmpResult4.hexOpacityToRgba(tmp(8063).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+    }
+    cResult[8] = primaryColor;
+    cResult[9] = profileThemeValues;
+    cResult[10] = tmp14.contentContainer;
+    cResult[11] = theme;
+    cResult[12] = borderColor;
+    tmp17 = borderColor;
+  }
+  borderColor = tmp14.contentContainer.borderColor;
+}) : ((title) => {
   let children;
   let headerIcon;
   let items;
@@ -41,7 +208,7 @@ export default function UserProfileSection(title) {
   title = title.title;
   ({ headerIcon, trailingIcon, showContainer, children, style } = title);
   const merged = Object.assign(title, Object.assign({ title: 0, headerIcon: 0, trailingIcon: 0, showContainer: 0, children: 0, style: 0 }));
-  const tmp2 = closure_5();
+  const tmp2 = closure_7();
   const obj = native;
   const themeContext = obj.useThemeContext();
   ({ theme, primaryColor } = themeContext);
@@ -53,7 +220,7 @@ export default function UserProfileSection(title) {
     let borderColor;
     if (null != profileThemeValues) {
       const tmp3Result = ColorUtils;
-      borderColor = tmp3Result.hexOpacityToRgba(tmp3(8059).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      borderColor = tmp3Result.hexOpacityToRgba(tmp3(8063).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
     }
     obj3.borderColor = borderColor;
     const obj4 = { style: items, children: items3 };
@@ -64,19 +231,22 @@ export default function UserProfileSection(title) {
       const obj5 = { style: tmp2.titleContainer, children: items2 };
       const obj6 = { style: tmp2.title, children: items1 };
       const obj7 = { variant: "eyebrow", accessibilityRole: "header", children: title };
-      items1 = [_false(Text_Text.Text, obj7), headerIcon];
-      items2 = [React3(View, obj6), trailingIcon];
+      items1 = [hasOwnProperty(Text_Text.Text, obj7), headerIcon];
+      items2 = [metroRequire(View, obj6), trailingIcon];
       tmp8Result = tmp8(tmp9, obj5);
     }
     items3 = [tmp8Result, ];
     let tmp16 = null;
-    const tmp15 = _false;
+    const tmp15 = hasOwnProperty;
     if (showContainer) {
       tmp16 = obj3;
     }
     const obj8 = { style: tmp16, children };
     items3[1] = tmp15(View, obj8);
-    return React3(View, obj4);
+    return metroRequire(View, obj4);
   }
   borderColor = tmp2.contentContainer.borderColor;
-};
+});
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileSection.tsx");
+
+export default tmp4;

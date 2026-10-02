@@ -1,23 +1,28 @@
-// Module ID: 6358
-// Function ID: 6359
+// Module ID: 6355
+// Function ID: 6356
 // Name: FreeFormTextInput
-// Dependencies: [19, 17, 21, 4836, 576, 5435, 1115, 1177, 6359, 38, 2]
+// Dependencies: [109, 19, 17, 21, 4837, 588, 558, 576, 1127, 1189, 6356, 5436, 38, 2]
 
-// Module 6358 (FreeFormTextInput)
+// Module 6355 (FreeFormTextInput)
 import _modDef38 from "module_38" /* 38 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import Pressables from "Pressables" /* 5435 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6359 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import Pressables from "Pressables" /* 5436 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6356 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_4;
-let hasOwnProperty;
+let onFocus;
+
+let c10;
+let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
@@ -25,21 +30,9 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-function ClearButton(onPress) {
-  let Icon;
-  let intl;
-  let obj2;
-  onPress = onPress.onPress;
-  const obj = { style: { borderRadius: 20, padding: 8 }, accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t.VkKicb), onPress, hitSlop: { top: 8, bottom: 8, right: 8 }, children: metroImportDefault(Icon, obj2) };
-  const tmp = closure_9();
-  const PressableOpacity = Pressables.PressableOpacity;
-  intl = intl2.intl;
-  obj2 = { source: AssetRegistryDefault, style: tmp.closeIcon, size: native.Icon.Sizes.MEDIUM };
-  Icon = native.Icon;
-  return metroImportDefault(PressableOpacity, obj);
-}
-({ TouchableWithoutFeedback: closure_4, View: hasOwnProperty, TouchableOpacity: metroRequire } = react_native);
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let closure_3 = ["style", "error", "renderLeadingComponent", "renderTrailingComponent", "onChangeText", "onFocus", "accessibilityRole", "onBlur", "value", "onPress", "editable", "accessibilityLabel", "accessibilityHint", "forceAccessibleContainer", "clearButtonVisibility"];
+({ TouchableWithoutFeedback: metroRequire, View: metroImportDefault, TouchableOpacity: metroImportAll } = react_native);
+({ jsx: c9, jsxs: c10 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, onPress: { flexDirection: "row" }, input: obj3, error: obj4, closeIcon: obj5, placeholder: { color: nativeDefault.colors.TEXT_MUTED } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, height: 48, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, paddingRight: 6, paddingLeft: 12, flexDirection: "row", alignItems: "center" };
@@ -48,8 +41,237 @@ obj3 = { flex: 1, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj4 = { borderColor: nativeDefault.unsafe_rawColors.RED_400 };
 obj5 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 8, flexShrink: 0 };
 ({ color: nativeDefault.colors.TEXT_MUTED });
-let closure_9 = createStyles(obj);
-const forwardRefResult = react.forwardRef((editable, ref) => {
+let closure_11 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+  let first;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(8);
+  onPress = onPress.onPress;
+  const tmp4 = closure_11();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { borderRadius: 20, padding: 8 };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl2.t.VkKicb);
+    cResult[1] = stringResult;
+    tmp6 = stringResult;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const rect = { top: 8, bottom: 8, right: 8 };
+    cResult[2] = rect;
+    tmp8 = rect;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] !== tmp4.closeIcon) {
+    const obj3 = { source: AssetRegistryDefault, style: tmp4.closeIcon, size: native.Icon.Sizes.MEDIUM };
+    const Icon = tmp(1189).Icon;
+    const tmp12 = React4(Icon, obj3);
+    cResult[3] = tmp4.closeIcon;
+    cResult[4] = tmp12;
+    tmp9 = tmp12;
+  } else {
+    tmp9 = cResult[4];
+  }
+  if (cResult[5] === onPress) {
+    let tmp13;
+    if (cResult[6] === tmp9) {
+      tmp13 = cResult[7];
+    }
+    return tmp13;
+  }
+  const tmp14 = React4(Pressables.PressableOpacity, { style: first, accessibilityRole: "button", accessibilityLabel: tmp6, onPress, hitSlop: tmp8, children: tmp9 });
+  cResult[5] = onPress;
+  cResult[6] = tmp9;
+  cResult[7] = tmp14;
+  tmp13 = tmp14;
+}) : ((onPress) => {
+  let Icon;
+  let intl;
+  let obj2;
+  onPress = onPress.onPress;
+  const obj = { style: { borderRadius: 20, padding: 8 }, accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t.VkKicb), onPress, hitSlop: { top: 8, bottom: 8, right: 8 }, children: React4(Icon, obj2) };
+  const tmp = closure_11();
+  const PressableOpacity = Pressables.PressableOpacity;
+  intl = intl2.intl;
+  obj2 = { source: AssetRegistryDefault, style: tmp.closeIcon, size: native.Icon.Sizes.MEDIUM };
+  Icon = native.Icon;
+  return React4(PressableOpacity, obj);
+});
+const forwardRef = react.forwardRef;
+ReactCompilerGating = ReactCompilerGating_mod;
+const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((onFocus, ref) => {
+  let WITH_CONTENT;
+  let accessibilityHint;
+  let accessibilityLabel;
+  let accessibilityRole;
+  let clearButtonVisibility;
+  let editable;
+  let error;
+  let forceAccessibleContainer;
+  let onBlur;
+  let onChangeText;
+  let onPress;
+  let renderLeadingComponent;
+  let renderTrailingComponent;
+  let style;
+  let tmp15;
+  let tmp16;
+  let tmp18;
+  let tmp25;
+  let tmp7;
+  let value;
+  let tmp = require;
+  const obj = react2;
+  const cResult = obj.c(72);
+  if (cResult[0] !== onFocus) {
+    ({ style, error, renderLeadingComponent, renderTrailingComponent, onChangeText } = onFocus);
+    let closure_1 = onChangeText;
+    onFocus = onFocus.onFocus;
+    let closure_2 = onFocus;
+    ({ accessibilityRole, onBlur } = onFocus);
+    let closure_0 = onBlur;
+    ({ value, onPress } = onFocus);
+    closure_3 = onPress;
+    ({ editable, accessibilityLabel, accessibilityHint, forceAccessibleContainer, clearButtonVisibility } = onFocus);
+    cResult[0] = onFocus;
+    cResult[1] = accessibilityHint;
+    cResult[2] = accessibilityLabel;
+    cResult[3] = accessibilityRole;
+    cResult[4] = error;
+    cResult[5] = onBlur;
+    cResult[6] = onChangeText;
+    cResult[7] = onFocus;
+    cResult[8] = onPress;
+    cResult[9] = renderLeadingComponent;
+    cResult[10] = renderTrailingComponent;
+    cResult[11] = _objectWithoutProperties(onFocus, closure_3);
+    cResult[12] = style;
+    cResult[13] = editable;
+    cResult[14] = forceAccessibleContainer;
+    cResult[15] = clearButtonVisibility;
+    cResult[16] = value;
+    tmp18 = value;
+    WITH_CONTENT = clearButtonVisibility;
+    tmp16 = editable;
+    tmp15 = style;
+    tmp7 = error;
+    let tmp5 = accessibilityLabel;
+    const tmp21 = _objectWithoutProperties(onFocus, closure_3);
+  } else {
+    tmp5 = cResult[2];
+    tmp7 = cResult[4];
+    closure_0 = cResult[5];
+    closure_1 = cResult[6];
+    closure_2 = cResult[7];
+    closure_3 = cResult[8];
+    tmp15 = cResult[12];
+    tmp16 = cResult[13];
+    WITH_CONTENT = cResult[15];
+    tmp18 = cResult[16];
+  }
+  let closure_4 = tmp22;
+  if (undefined === WITH_CONTENT) {
+    WITH_CONTENT = native.ClearButtonVisibility.WITH_CONTENT;
+  }
+  const tmp23 = closure_11();
+  ref = react.useRef(null);
+  const obj2 = react;
+  if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+    class H {
+      constructor() {
+        return ref.current;
+      }
+    }
+    cResult[17] = H;
+    tmp25 = H;
+  } else {
+    class H {
+      constructor() {
+        return ref.current;
+      }
+    }
+  }
+  const imperativeHandle = obj2.useImperativeHandle(ref, tmp25);
+  if (cResult[18] === WITH_CONTENT) {
+    class H {
+      constructor() {
+        return ref.current;
+      }
+    }
+    if (cResult[21] === (undefined === tmp16 || tmp16)) {
+      class H {
+        constructor() {
+          return ref.current;
+        }
+      }
+      const tmp29 = _modDef38;
+      if (null != tmp11) {
+        class H {
+          constructor() {
+            return ref.current;
+          }
+        }
+      }
+      tmp29(null == tmp11, "Cannot have an editable input w/ onPress handler");
+      if (tmp7) {
+        class H {
+          constructor() {
+            return ref.current;
+          }
+        }
+      }
+      if (cResult[24] === tmp15) {
+        class H {
+          constructor() {
+            return ref.current;
+          }
+        }
+      }
+      const items = [tmp23.container, null, tmp15];
+      cResult[24] = tmp15;
+      cResult[25] = tmp23.container;
+      cResult[26] = null;
+      cResult[27] = items;
+    }
+    const fn = function k() {
+      const tmp = closure_4;
+      if (tmp) {
+        const current = ref.current;
+        if (current != null) {
+          current.focus();
+        }
+      }
+      if (closure_3 != null) {
+        tmp5();
+      }
+    };
+    cResult[21] = undefined === tmp16 || tmp16;
+    cResult[22] = tmp11;
+    cResult[23] = fn;
+  }
+  if (native.ClearButtonVisibility.ALWAYS !== WITH_CONTENT) {
+    class H {
+      constructor() {
+        return ref.current;
+      }
+    }
+  }
+  cResult[18] = WITH_CONTENT;
+  cResult[19] = tmp18;
+  cResult[20] = true;
+}) : ((editable, ref) => {
   let accessibilityHint;
   let accessibilityLabel;
   let accessibilityRole;
@@ -90,7 +312,7 @@ const forwardRefResult = react.forwardRef((editable, ref) => {
     WITH_CONTENT = native.ClearButtonVisibility.WITH_CONTENT;
   }
   const merged = Object.assign(editable, Object.assign({ style: 0, error: 0, renderLeadingComponent: 0, renderTrailingComponent: 0, onChangeText: 0, onFocus: 0, accessibilityRole: 0, onBlur: 0, value: 0, onPress: 0, editable: 0, accessibilityLabel: 0, accessibilityHint: 0, forceAccessibleContainer: 0, clearButtonVisibility: 0 }));
-  const tmp4 = closure_9();
+  const tmp4 = closure_11();
   ref = react.useRef(null);
   const imperativeHandle = react.useImperativeHandle(ref, () => ref.current);
   let flag2 = true;
@@ -140,7 +362,7 @@ const forwardRefResult = react.forwardRef((editable, ref) => {
     children: tmp21(tmp22, obj3)
   };
   tmp17 = null;
-  const tmp16 = null != onPress ? metroRequire : React3;
+  const tmp16 = null != onPress ? metroImportAll : metroRequire;
   if (null != onPress) {
     tmp17 = items;
   }
@@ -161,8 +383,8 @@ const forwardRefResult = react.forwardRef((editable, ref) => {
   if (forceAccessibleContainer) {
     tmp20 = accessibilityHint;
   }
-  tmp21 = metroImportAll;
-  tmp22 = hasOwnProperty;
+  tmp21 = authStore;
+  tmp22 = metroImportDefault;
   if (null != onPress) {
     items = tmp4.onPress;
   }
@@ -173,7 +395,7 @@ const forwardRefResult = react.forwardRef((editable, ref) => {
   }
   items1 = [result, , , ];
   let str3 = "auto";
-  const TextInput = tmp7(1177).TextInput;
+  const TextInput = tmp7(1189).TextInput;
   if (null != onPress) {
     str3 = "none";
   }
@@ -208,7 +430,7 @@ const forwardRefResult = react.forwardRef((editable, ref) => {
   if (flag) {
     str4 = "yes";
   }
-  items1[1] = metroImportDefault(TextInput, obj4);
+  items1[1] = React4(TextInput, obj4);
   let result1;
   if (renderTrailingComponent != null) {
     result1 = renderTrailingComponent();
@@ -225,11 +447,11 @@ const forwardRefResult = react.forwardRef((editable, ref) => {
           return tmpResult;
         }
     };
-    tmp15Result = tmp15(ClearButton, obj5);
+    tmp15Result = tmp15(closure_12, obj5);
   }
   items1[3] = tmp15Result;
-  return metroImportDefault(tmp16, obj);
-});
+  return React4(tmp16, obj);
+}));
 let result = size.fileFinishedImporting("design/void/Form/native/FreeFormTextInput.tsx");
 
 export default forwardRefResult;

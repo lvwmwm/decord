@@ -1,16 +1,16 @@
-// Module ID: 13029
-// Function ID: 13030
+// Module ID: 13031
+// Function ID: 13032
 // Name: PremiumGroupActionCreators
-// Dependencies: [5, 1386, 13030, 1074, 573, 1271, 38, 2]
+// Dependencies: [5, 1392, 13032, 1086, 585, 1283, 38, 2]
 // Exports: acceptSubscriptionGroupInvite, fetchEligibleUsers, fetchPremiumGroupInvite, fetchPremiumGroupInvites, fetchPremiumGroupMembership, fetchSubscriptionGroupMembers, inviteUsersToSubscriptionGroup, removeSubscriptionGroupInvite, removeUserFromSubscriptionGroup
 
-// Module 13029 (PremiumGroupActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 13031 (PremiumGroupActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRecord from "UserRecord" /* 1386 */;
-import SubscriptionGroupMemberRecord from "SubscriptionGroupMemberRecord" /* 13030 */;
+import UserRecord from "UserRecord" /* 1392 */;
+import SubscriptionGroupMemberRecord from "SubscriptionGroupMemberRecord" /* 13032 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5, closure_6, limit, status, status2, user, value2;
@@ -29,7 +29,7 @@ let obj = function _fetchPremiumGroupMembership() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -167,7 +167,7 @@ obj = function _inviteUsersToSubscriptionGroup() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -246,7 +246,7 @@ obj = function _removeUserFromSubscriptionGroup() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -327,7 +327,7 @@ obj = function _fetchSubscriptionGroupMembers() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -413,7 +413,7 @@ obj = function _acceptSubscriptionGroupInvite() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -496,7 +496,7 @@ obj = function _removeSubscriptionGroupInvite() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -580,7 +580,7 @@ obj = function _fetchPremiumGroupInvites() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -630,7 +630,7 @@ obj = function _fetchPremiumGroupInvites() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp16) {
         let closure_2 = tmp16;
@@ -660,7 +660,7 @@ obj = function _fetchPremiumGroupInvite() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -719,7 +719,7 @@ obj = function _fetchPremiumGroupInvite() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp23) {
           closure_4 = tmp23;

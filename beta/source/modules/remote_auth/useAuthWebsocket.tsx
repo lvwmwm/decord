@@ -1,33 +1,225 @@
-// Module ID: 15614
-// Function ID: 15615
+// Module ID: 15616
+// Function ID: 15617
 // Name: useAuthWebsocket
-// Dependencies: [5, 32, 19, 1074, 3, 15613, 559, 6383, 13177, 15615, 1110, 1271, 6010, 15617, 2]
-// Exports: useAuthWebsocket
+// Dependencies: [5, 32, 19, 1086, 3, 558, 576, 15615, 569, 6380, 13179, 15617, 1122, 1283, 6005, 15619, 2]
 
-// Module 15614 (useAuthWebsocket)
+// Module 15616 (useAuthWebsocket)
 import LoggerDefault from "Logger" /* 3 */;
-import typing from "typing" /* 15613 */;
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 15615 */;
+import BackoffDefault from "Backoff" /* 569 */;
+import useStableCallbackDefault from "useStableCallback" /* 6380 */;
+import typing from "typing" /* 15615 */;
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 15617 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c2, closure_1, closure_2, fingerprint, importDefault, nonce, user;
+let _require, c2, closure_0, closure_1, closure_2, dependencyMap, fingerprint, importDefault, infoResult, nonce, tmp10, tmp7, tmp9, user;
 
 let metroImportDefault;
 let metroRequire;
 let react = react_mod;
 ({ ComponentActions: metroRequire, Endpoints: metroImportDefault } = Constants);
 let tmp3 = new LoggerDefault("useAuthWebsocket");
-let closure_8 = tmp3;
-const result = size.fileFinishedImporting("modules/remote_auth/useAuthWebsocket.tsx");
-
-export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
+let logger = tmp3;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, arg2) {
   let closure_5;
-  _require = callback;
+  let first;
+  let first1;
+  let tmp12;
+  let tmp16;
+  let tmp18;
+  let tmp19;
+  _require = arg0;
+  importDefault = arg1;
+  let tmp2 = dependencyMap;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(25);
+  dependencyMap = undefined !== arg2 && arg2;
+  let obj2 = react;
+  const tmp4 = first;
+  let tmp5 = first(react.useState(0), 2);
+  [r10019, _asyncToGenerator] = tmp5;
+  let tmp6 = first(react.useState(false), 2);
+  first = tmp6[0];
+  let tmp8 = tmp6[1];
+  react = tmp8;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj3 = { step: tmp(15615).RemoteAuthStep.INITIALIZING };
+    cResult[0] = obj3;
+    first1 = obj3;
+  } else {
+    first1 = cResult[0];
+  }
+  const tmp4Result = tmp4(obj2.useState(first1), 2);
+  const first2 = tmp4Result[0];
+  let closure_7 = tmp4Result[1];
+  logger = obj2.useRef(null);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp13 = importDefault;
+    let self = this;
+    let num = 30000;
+    let num2 = 1500;
+    let self2 = this;
+    let tmp14 = new BackoffDefault(1500, 30000);
+    let tmp15 = tmp14;
+    let num3 = 1;
+    cResult[1] = tmp14;
+    tmp12 = tmp14;
+  } else {
+    tmp12 = cResult[1];
+  }
+  const pending = tmp12;
+  if (cResult[2] !== arg1) {
+    class R {
+      constructor() {
+        obj = { step: closure_0(closure_2[7]).RemoteAuthStep.INITIALIZING };
+        tmp = closure_7(obj);
+        tmp2 = closure_1;
+        if (tmp2) {
+          tmp7 = closure_3;
+          tmp8 = closure_3(() => { /* body not rendered: F143531 */ });
+        } else {
+          tmp3 = closure_8;
+          str = "document is not visible, will defer reconnection when document becomes visible.";
+          infoResult = closure_8.info("document is not visible, will defer reconnection when document becomes visible.");
+          tmp5 = closure_5;
+          flag = true;
+          tmp6 = closure_5(true);
+        }
+        return;
+      }
+    }
+    cResult[2] = arg1;
+    let num4 = 3;
+    cResult[3] = R;
+    tmp16 = R;
+  } else {
+    class R {
+      constructor() {
+        obj = { step: closure_0(closure_2[7]).RemoteAuthStep.INITIALIZING };
+        tmp = closure_7(obj);
+        tmp2 = closure_1;
+        if (tmp2) {
+          tmp7 = closure_3;
+          tmp8 = closure_3(() => { /* body not rendered: F143531 */ });
+        } else {
+          tmp3 = closure_8;
+          str = "document is not visible, will defer reconnection when document becomes visible.";
+          infoResult = closure_8.info("document is not visible, will defer reconnection when document becomes visible.");
+          tmp5 = closure_5;
+          flag = true;
+          tmp6 = closure_5(true);
+        }
+        return;
+      }
+    }
+  }
+  const tmp17 = useStableCallbackDefault(tmp16);
+  let closure_10 = tmp17;
+  if (cResult[4] !== tmp17) {
+    class R {
+      constructor() {
+        obj = { step: closure_0(closure_2[7]).RemoteAuthStep.INITIALIZING };
+        tmp = closure_7(obj);
+        tmp2 = closure_1;
+        if (tmp2) {
+          tmp7 = closure_3;
+          tmp8 = closure_3(() => { /* body not rendered: F143531 */ });
+        } else {
+          tmp3 = closure_8;
+          str = "document is not visible, will defer reconnection when document becomes visible.";
+          infoResult = closure_8.info("document is not visible, will defer reconnection when document becomes visible.");
+          tmp5 = closure_5;
+          flag = true;
+          tmp6 = closure_5(true);
+        }
+        return;
+      }
+    }
+    let num5 = 4;
+    cResult[4] = tmp17;
+    let num6 = 5;
+    cResult[5] = tmp19;
+    tmp18 = tmp19;
+  } else {
+    class R {
+      constructor() {
+        obj = { step: closure_0(closure_2[7]).RemoteAuthStep.INITIALIZING };
+        tmp = closure_7(obj);
+        tmp2 = closure_1;
+        if (tmp2) {
+          tmp7 = closure_3;
+          tmp8 = closure_3(() => { /* body not rendered: F143531 */ });
+        } else {
+          tmp3 = closure_8;
+          str = "document is not visible, will defer reconnection when document becomes visible.";
+          infoResult = closure_8.info("document is not visible, will defer reconnection when document becomes visible.");
+          tmp5 = closure_5;
+          flag = true;
+          tmp6 = closure_5(true);
+        }
+        return;
+      }
+    }
+  }
+  let closure_11 = tmp18;
+  if (cResult[6] === arg1) {
+    class R {
+      constructor() {
+        obj = { step: closure_0(closure_2[7]).RemoteAuthStep.INITIALIZING };
+        tmp = closure_7(obj);
+        tmp2 = closure_1;
+        if (tmp2) {
+          tmp7 = closure_3;
+          tmp8 = closure_3(() => { /* body not rendered: F143531 */ });
+        } else {
+          tmp3 = closure_8;
+          str = "document is not visible, will defer reconnection when document becomes visible.";
+          infoResult = closure_8.info("document is not visible, will defer reconnection when document becomes visible.");
+          tmp5 = closure_5;
+          flag = true;
+          tmp6 = closure_5(true);
+        }
+        return;
+      }
+    }
+  }
+  class G {
+    constructor() {
+      tmp = closure_1 && closure_4;
+      if (tmp) {
+        tmp2 = closure_6;
+        tmp3 = closure_0;
+        tmp4 = closure_2;
+        tmp = closure_6.step === closure_0(closure_2[7]).RemoteAuthStep.INITIALIZING;
+      }
+      if (tmp) {
+        tmp5 = closure_8;
+        str = "reconnecting, now that document is visible";
+        infoResult = closure_8.info("reconnecting, now that document is visible");
+        tmp7 = closure_5;
+        flag = false;
+        tmp8 = closure_5(false);
+        tmp9 = closure_3;
+        tmp10 = closure_3(() => { /* body not rendered: F143532 */ });
+      }
+      return;
+    }
+  }
+  const items = [first2, arg1, first, tmp8];
+  cResult[6] = arg1;
+  cResult[7] = first;
+  cResult[8] = first2;
+  cResult[9] = G;
+  cResult[10] = items;
+}) : ((arg0, arg1) => {
+  let closure_5;
+  _require = arg0;
   importDefault = arg1;
   let flag = arg2;
   if (arg2 === undefined) {
@@ -46,9 +238,9 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
   const tmp6 = first1(react.useState(obj), 2);
   const state = tmp6[0];
   let closure_7 = tmp6[1];
-  const logger = react.useRef(null);
+  logger = react.useRef(null);
   const memo = react.useMemo(() => {
-    const tmp = new closure_1(flag[6])(1500, 30000);
+    const tmp = new closure_1(flag[8])(1500, 30000);
     return tmp;
   }, []);
   const cancel = require("useStableCallback")(() => {
@@ -63,7 +255,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
     }
   });
   const items = [cancel, memo];
-  callback = react.useCallback(() => {
+  const callback = react.useCallback(() => {
     logger.error("Could not complete Remote Auth login, trying to restart with a new Remote Auth session.");
     const obj = { step: typing.RemoteAuthStep.INITIALIZING };
     closure_7(obj);
@@ -81,7 +273,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
       closure_3((arg0) => arg0 + 1);
     }
   }, items1);
-  const items2 = [cancel, callback, first, memo, callback, flag];
+  const items2 = [cancel, arg0, first, memo, callback, flag];
   const effect1 = react.useEffect(() => {
     function info(arg0) {
       return getKeyPair.info("[" + Date.now() - closure_0 + "ms" + "] " + arg0);
@@ -114,7 +306,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
     function onmessage() {
       return obj(...arguments);
     }
-    let obj = function _onmessage() {
+    let obj = function _onmessage2() {
       let constants2;
       obj = _asyncToGenerator(async (arg0) => {
         let data = arg0;
@@ -137,7 +329,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
               obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -170,7 +362,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                   heartbeat_interval = undefined;
                   c3 = 1;
                   c4 = 1;
-                  return { value: "flex", done: true };
+                  return { value: "Reflect", done: true };
                 }
               } else if (1 === tmp4) {
                 if (arg0 === 1) {
@@ -189,25 +381,25 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                     c3 = 2;
                     c4 = 1;
                     let obj5 = { value: obj17.decryptNonce(closure_130_8(), encrypted_nonce), done: false };
-                    obj17 = info(closure_2_2[9]);
+                    obj17 = info(closure_2_2[11]);
                     return obj5;
                   } else if ("pending_remote_init" === op) {
                     closure_1_9.succeed();
-                    const ComponentDispatch2 = closure_2_0(closure_2_2[10]).ComponentDispatch;
+                    const ComponentDispatch2 = closure_2_0(closure_2_2[12]).ComponentDispatch;
                     ComponentDispatch2.dispatch(constants.WAVE_EMPHASIZE);
                     c3 = 3;
                     c4 = 1;
                     let obj6 = { value: obj15.publicKeyFingerprint(closure_130_8()), done: false };
-                    obj15 = info(closure_2_2[9]);
+                    obj15 = info(closure_2_2[11]);
                     return obj6;
                   } else if ("pending_login" === op) {
                     ticket = tmp.ticket;
                     if (null == ticket) {
                       closure_1_11();
                     } else {
-                      let obj7 = { step: closure_2_0(closure_2_2[5]).RemoteAuthStep.PENDING_LOGIN, ticket };
+                      let obj7 = { step: closure_2_0(closure_2_2[7]).RemoteAuthStep.PENDING_LOGIN, ticket };
                       user(obj7);
-                      const HTTP = closure_2_0(closure_2_2[11]).HTTP;
+                      const HTTP = closure_2_0(closure_2_2[13]).HTTP;
                       const request = { url: constants2.REMOTE_AUTH_LOGIN, body: obj8, oldFormErrors: true, rejectWithError: true };
                       obj8 = { ticket };
                       const postResult = HTTP.post(request);
@@ -226,7 +418,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                               obj2 = { value, done: true };
                               return obj2;
                             } else {
-                              return { value: "HermesInternal", done: null };
+                              return { value: "IconComponent", done: null };
                             }
                           } else {
                             try {
@@ -247,7 +439,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                                     c3 = 1;
                                     c4 = 1;
                                     const obj4 = { value: obj9.decryptEncodedCiphertext(ref.current, tmp32.body.encrypted_token), done: false };
-                                    obj9 = closure_2_1(closure_2_2[9]);
+                                    obj9 = closure_2_1(closure_2_2[11]);
                                     return obj4;
                                   } else {
                                     closure_1_11();
@@ -266,7 +458,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                                   c3 = 2;
                                   c4 = 1;
                                   const obj7 = { value: obj6.publicKeyFingerprint(ref.current), done: false };
-                                  obj6 = closure_2_1(closure_2_2[9]);
+                                  obj6 = closure_2_1(closure_2_2[11]);
                                   return obj7;
                                 }
                               } else if (2 === c3) {
@@ -279,7 +471,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                                   return obj8;
                                 } else {
                                   closure_1 = value;
-                                  const obj13 = closure_2_1(closure_2_2[12]);
+                                  const obj13 = closure_2_1(closure_2_2[14]);
                                   if (closure_2) {
                                     c3 = 4;
                                     c4 = 1;
@@ -313,7 +505,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                                 closure_0(closure_1);
                               }
                               c4 = 3;
-                              return { value: "HermesInternal", done: null };
+                              return { value: "IconComponent", done: null };
                             } catch (tmp23) {
                               c4 = 3;
                               throw tmp23;
@@ -330,11 +522,11 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                     let obj9 = { value: tmp70, done: true };
                     return obj9;
                   } else if ("pending_ticket" === op) {
-                    const ComponentDispatch = closure_2_0(closure_2_2[10]).ComponentDispatch;
+                    const ComponentDispatch = closure_2_0(closure_2_2[12]).ComponentDispatch;
                     ComponentDispatch.dispatch(constants.WAVE_EMPHASIZE);
                     closure_130_1("remote auth handshake started, awaiting ticket/cancel.");
                     encrypted_user_payload = tmp.encrypted_user_payload;
-                    let obj12 = closure_2_0(closure_2_2[13]);
+                    let obj12 = closure_2_0(closure_2_2[15]);
                     c3 = 4;
                     c4 = 1;
                     let obj10 = { value: obj12.decodeEncodedUserRecord(closure_130_8(), encrypted_user_payload), done: false };
@@ -374,11 +566,11 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                   } else if ("heartbeat_ack" === op) {
                     user = true;
                     c4 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   } else {
                     !warn("received unsupported message");
                     c4 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   }
                 }
               } else if (2 === tmp4) {
@@ -417,7 +609,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                     throw error;
                   } else {
                     closure_130_1("handshake complete awaiting remote auth.");
-                    const obj20 = { step: closure_2_0(closure_2_2[5]).RemoteAuthStep.PENDING_REMOTE_INIT, fingerprint };
+                    const obj20 = { step: closure_2_0(closure_2_2[7]).RemoteAuthStep.PENDING_REMOTE_INIT, fingerprint };
                     user(obj20);
                     c4 = 3;
                     return { value: undefined, done: true };
@@ -431,7 +623,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                 return { value, done: true };
               } else {
                 user = value;
-                obj = { step: closure_2_0(closure_2_2[5]).RemoteAuthStep.PENDING_TICKET, user };
+                obj = { step: closure_2_0(closure_2_2[7]).RemoteAuthStep.PENDING_TICKET, user };
                 user(obj);
                 c4 = 3;
                 return { value: undefined, done: true };
@@ -450,7 +642,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
     function onopen() {
       return obj(...arguments);
     }
-    obj = function _onopen() {
+    obj = function _onopen2() {
       obj = _asyncToGenerator(async (arg0, value) => {
         let obj5;
         let obj8;
@@ -464,7 +656,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -482,7 +674,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                 c2 = 1;
                 c3 = 1;
                 const obj6 = { value: obj8.generateRsaKeyPair(), done: false };
-                obj8 = info(closure_2_2[9]);
+                obj8 = info(closure_2_2[11]);
                 return obj6;
               }
             } else {
@@ -500,7 +692,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                   c2 = 2;
                   c3 = 1;
                   const obj9 = { value: obj5.serializePublicKey(current), done: false };
-                  obj5 = info(closure_2_2[9]);
+                  obj5 = info(closure_2_2[11]);
                   return obj9;
                 }
               } else {
@@ -519,7 +711,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                     c2 = 3;
                     c3 = 1;
                     const obj11 = { value: obj2.publicKeyFingerprint(current), done: false };
-                    obj2 = info(closure_2_2[9]);
+                    obj2 = info(closure_2_2[11]);
                     return obj11;
                   }
                 } else if (arg0 === 1) {
@@ -537,7 +729,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                   closure_129_2.send(JSON.stringify(obj12));
                   getKeyPair.current = current;
                   c3 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 }
               }
             }
@@ -559,7 +751,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
       getKeyPair.info("[" + `${Date.now() - closure_0}ms` + "] " + combined);
       callback();
     }
-    let closure_0 = Date.now();
+    closure_0 = Date.now();
     let combined = "" + window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT + "/?v=2";
     let combined1 = combined;
     if (combined.startsWith("//")) {
@@ -567,7 +759,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
       const str = "wss:";
       combined1 = "wss:" + combined;
     }
-    let obj2 = closure_1(flag[8])(combined1);
+    let obj2 = closure_1(flag[10])(combined1);
     logger.info("[0ms] connecting to " + combined1);
     let c3 = null;
     let c4 = null;
@@ -599,4 +791,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
     };
   }, items2);
   return { state, cancel };
-};
+});
+const result = size.fileFinishedImporting("modules/remote_auth/useAuthWebsocket.tsx");
+
+export const useAuthWebsocket = tmp4;

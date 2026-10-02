@@ -1,22 +1,25 @@
-// Module ID: 9169
-// Function ID: 9170
+// Module ID: 9146
+// Function ID: 9147
 // Name: useSecureFramesPairwiseFingerprint
-// Dependencies: [32, 5, 19, 502, 1993, 4859, 9165, 4861, 206, 504, 38, 9170, 2]
-// Exports: useSecureFramesPairwiseFingerprint
+// Dependencies: [32, 5, 19, 502, 1999, 4860, 9142, 4862, 206, 558, 576, 504, 38, 9147, 2]
 
-// Module 9169 (useSecureFramesPairwiseFingerprint)
-import Constants from "Constants" /* 4861 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9165 */;
+// Module 9146 (useSecureFramesPairwiseFingerprint)
+import Constants from "Constants" /* 4862 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9142 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import RTCConnectionStore_mod from "RTCConnectionStore" /* 4860 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3, c4, constants, obj;
+let c0, c3, c4, constants, flag, num, num2, obj, tmp8, userId;
 
+function computeNativeDisplayPair() {
+  return obj(...arguments);
+}
 let SecureFramesPairwiseFingerprintMode = function _computeNativeDisplayPair() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let obj2;
@@ -31,7 +34,7 @@ let SecureFramesPairwiseFingerprintMode = function _computeNativeDisplayPair() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -96,13 +99,271 @@ let SecureFramesPairwiseFingerprintMode = function _computeNativeDisplayPair() {
   return obj(...arguments);
 };
 let _asyncToGenerator = _asyncToGenerator_mod;
+let RTCConnectionStore = RTCConnectionStore_mod;
 let closure_9 = SecureFramesConstants.SECURE_FRAMES_GENERATE_FINGERPRINT_VERSION;
-const Features = Constants.Features;
+let Features = Constants.Features;
 SecureFramesPairwiseFingerprintMode = { FROZEN: "frozen", LIVE: "live" };
-const result = size.fileFinishedImporting("modules/rtc/hooks/useSecureFramesPairwiseFingerprint.tsx");
-
-export { SecureFramesPairwiseFingerprintMode };
-export const useSecureFramesPairwiseFingerprint = function useSecureFramesPairwiseFingerprint(userId) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  let ref;
+  let ref2;
+  let stateFromStores;
+  let stateFromStores1;
+  let stateFromStores2;
+  let tmp12;
+  let tmp14;
+  let tmp16;
+  let tmp17;
+  let tmp5;
+  let tmp6;
+  let tmp = userId;
+  const tmp2 = stateFromStores;
+  obj = userId(stateFromStores[10]);
+  const cResult = obj.c(22);
+  userId = userId.userId;
+  let FROZEN = userId.mode;
+  if (undefined === FROZEN) {
+    FROZEN = obj.FROZEN;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [stateFromStores2];
+    class F {
+      constructor() {
+        return stateFromStores2.getId();
+      }
+    }
+    cResult[0] = items;
+    cResult[1] = F;
+    tmp6 = F;
+    tmp5 = items;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(tmp2[11]);
+  stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  const tmp9 = FROZEN(tmp2[12])(stateFromStores !== userId, "[useSecureFramesPairwiseFingerprint] Should not pass current user id.");
+  let obj3 = stateFromStores1;
+  const tmp10 = _slicedToArray(stateFromStores1.useState(null), 2);
+  [r10042, _slicedToArray] = tmp10;
+  [r10048, _asyncToGenerator] = _slicedToArray(stateFromStores1.useState(false), 2);
+  const tmp11 = _slicedToArray(stateFromStores1.useState(false), 2);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [RTCConnectionStore];
+    class F {
+      constructor() {
+        return stateFromStores2.getId();
+      }
+    }
+    tmp12 = items1;
+  } else {
+    tmp12 = cResult[2];
+  }
+  if (cResult[3] !== userId) {
+    class N {
+      constructor() {
+        return RTCConnectionStore.getSecureFramesRosterMapEntry(userId);
+      }
+    }
+    cResult[3] = userId;
+    class F {
+      constructor() {
+        return stateFromStores2.getId();
+      }
+    }
+    cResult[4] = N;
+    tmp14 = N;
+  } else {
+    class N {
+      constructor() {
+        return RTCConnectionStore.getSecureFramesRosterMapEntry(userId);
+      }
+    }
+  }
+  const tmpResult3 = tmp(tmp2[11]);
+  stateFromStores1 = tmpResult3.useStateFromStores(tmp12, tmp14);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class N {
+      constructor() {
+        return RTCConnectionStore.getSecureFramesRosterMapEntry(userId);
+      }
+    }
+    const items2 = [RTCConnectionStore];
+    class F {
+      constructor() {
+        return stateFromStores2.getId();
+      }
+    }
+    cResult[5] = items2;
+    tmp16 = items2;
+  } else {
+    class N {
+      constructor() {
+        return RTCConnectionStore.getSecureFramesRosterMapEntry(userId);
+      }
+    }
+  }
+  if (cResult[6] !== stateFromStores) {
+    class D {
+      constructor() {
+        return RTCConnectionStore.getSecureFramesRosterMapEntry(stateFromStores);
+      }
+    }
+    cResult[6] = stateFromStores;
+    class F {
+      constructor() {
+        return stateFromStores2.getId();
+      }
+    }
+    cResult[7] = D;
+    tmp17 = D;
+  } else {
+    class D {
+      constructor() {
+        return RTCConnectionStore.getSecureFramesRosterMapEntry(stateFromStores);
+      }
+    }
+  }
+  const tmpResult4 = tmp(tmp2[11]);
+  stateFromStores2 = tmpResult4.useStateFromStores(tmp16, tmp17);
+  if (cResult[8] !== userId) {
+    class D {
+      constructor() {
+        return RTCConnectionStore.getSecureFramesRosterMapEntry(stateFromStores);
+      }
+    }
+    let closure_0 = _asyncToGenerator(async (arg0, value) => {
+      let obj4;
+      if (c0 === 2) {
+        c0 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c0 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c0 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c0 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else if (fn.supports(constants.MLS_PAIRWISE_FINGERPRINTS)) {
+              c1 = 2;
+              c0 = 1;
+              const obj5 = { value: computeNativeDisplayPair(c0), done: false };
+              return obj5;
+            } else {
+              c1 = 1;
+              c0 = 1;
+              const obj6 = { value: obj4.computeBoundPairwiseFingerprint(c0), done: false };
+              obj4 = v3(stateFromStores[13]);
+              return obj6;
+            }
+          } else {
+            if (1 === tmp3) {
+              if (arg0 === 1) {
+                c0 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c0 = 3;
+                const obj7 = { value, done: true };
+                return obj7;
+              }
+            } else if (arg0 === 1) {
+              c0 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c0 = 3;
+              obj = { value, done: true };
+              return obj;
+            }
+            c0 = 3;
+            const obj8 = { value, done: true };
+            return obj8;
+          }
+        } catch (tmp9) {
+          c0 = 3;
+          throw tmp9;
+        }
+      }
+    });
+    let fn = function() {
+      return closure_0(...arguments);
+    };
+    class F {
+      constructor() {
+        return stateFromStores2.getId();
+      }
+    }
+    cResult[8] = userId;
+    cResult[9] = fn;
+  } else {
+    class D {
+      constructor() {
+        return RTCConnectionStore.getSecureFramesRosterMapEntry(stateFromStores);
+      }
+    }
+  }
+  fn = tmp19;
+  RTCConnectionStore = obj3.useRef(0);
+  closure_9 = obj3.useRef(null);
+  Features = obj3.useRef(false);
+  if (cResult[10] === tmp19) {
+    class D {
+      constructor() {
+        return RTCConnectionStore.getSecureFramesRosterMapEntry(stateFromStores);
+      }
+    }
+  }
+  class L {
+    constructor() {
+      if (null != closure_5) {
+        tmp = closure_6;
+        if (null != closure_6) {
+          tmp2 = FROZEN;
+          tmp3 = closure_1_11;
+          if (FROZEN !== closure_1_11.FROZEN) {
+            tmp5 = closure_10;
+            flag = true;
+            closure_10.current = true;
+            tmp6 = closure_8;
+            num = 1;
+            sum = closure_8.current + 1;
+            closure_8.current = sum;
+            closure_0 = sum;
+            tmp8 = closure_9;
+            tmp9 = globalThis;
+            _setTimeout = setTimeout;
+            num2 = 0;
+            closure_9.current = setTimeout(() => {
+              _asyncToGenerator(true);
+              const promise = fn();
+              promise.then(() => { /* body not rendered: F150274 */ });
+            }, 0);
+          } else {
+            tmp4 = closure_10;
+          }
+        }
+      }
+      return;
+    }
+  }
+  const items3 = [FROZEN, tmp19, stateFromStores1, stateFromStores2];
+  cResult[10] = tmp19;
+  cResult[11] = stateFromStores2;
+  cResult[12] = FROZEN;
+  cResult[13] = stateFromStores1;
+  cResult[14] = items3;
+  cResult[15] = L;
+}) : ((userId) => {
   let closure_4;
   userId = userId.userId;
   let FROZEN = userId.mode;
@@ -115,28 +376,25 @@ export const useSecureFramesPairwiseFingerprint = function useSecureFramesPairwi
   let first1;
   let id;
   let stateFromStores2;
-  obj = userId(stateFromStores[9]);
+  obj = userId(stateFromStores[11]);
   const items = [id];
   stateFromStores = obj.useStateFromStores(items, () => id.getId());
-  const tmp3 = FROZEN(stateFromStores[10])(stateFromStores !== userId, "[useSecureFramesPairwiseFingerprint] Should not pass current user id.");
+  const tmp3 = FROZEN(stateFromStores[12])(stateFromStores !== userId, "[useSecureFramesPairwiseFingerprint] Should not pass current user id.");
   const tmp4 = first(first1.useState(null), 2);
   first = tmp4[0];
   _asyncToGenerator = tmp4[1];
   const tmp6 = first(first1.useState(false), 2);
   first1 = tmp6[0];
   id = tmp6[1];
-  let obj2 = userId(stateFromStores[9]);
+  let obj2 = userId(stateFromStores[11]);
   const items1 = [stateFromStores2];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => RTCConnectionStore.getSecureFramesRosterMapEntry(userId));
-  let obj3 = userId(stateFromStores[9]);
+  let obj3 = userId(stateFromStores[11]);
   const items2 = [stateFromStores2];
   stateFromStores2 = obj3.useStateFromStores(items2, () => RTCConnectionStore.getSecureFramesRosterMapEntry(stateFromStores));
   const items3 = [userId];
   const callback = first1.useCallback(_asyncToGenerator(async (arg0, value) => {
     let v3;
-    function computeNativeDisplayPair() {
-      return closure_1_12(...arguments);
-    }
     if (userId === 2) {
       userId = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -147,7 +405,7 @@ export const useSecureFramesPairwiseFingerprint = function useSecureFramesPairwi
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -163,11 +421,11 @@ export const useSecureFramesPairwiseFingerprint = function useSecureFramesPairwi
           } else if (stateFromStores1.supports(constants.MLS_PAIRWISE_FINGERPRINTS)) {
             c1 = 2;
             userId = 1;
-            const obj5 = { value: computeNativeDisplayPair(userId), done: false };
+            const obj5 = { value: ref2(userId), done: false };
             return obj5;
           } else {
             c1 = 1;
-            const obj4 = userId(stateFromStores[11]);
+            const obj4 = userId(stateFromStores[13]);
             userId = 1;
             const obj6 = { value: obj4.computeBoundPairwiseFingerprint(userId), done: false };
             return obj6;
@@ -194,9 +452,9 @@ export const useSecureFramesPairwiseFingerprint = function useSecureFramesPairwi
           const obj8 = { value, done: true };
           return obj8;
         }
-      } catch (tmp8) {
+      } catch (tmp9) {
         userId = 3;
-        throw tmp8;
+        throw tmp9;
       }
     }
   }), items3);
@@ -255,4 +513,8 @@ export const useSecureFramesPairwiseFingerprint = function useSecureFramesPairwi
     }
     return obj;
   }, items5);
-};
+});
+const result = size.fileFinishedImporting("modules/rtc/hooks/useSecureFramesPairwiseFingerprint.tsx");
+
+export { SecureFramesPairwiseFingerprintMode };
+export const useSecureFramesPairwiseFingerprint = tmp2;

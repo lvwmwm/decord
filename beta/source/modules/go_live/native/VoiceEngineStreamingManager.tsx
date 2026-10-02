@@ -1,29 +1,29 @@
-// Module ID: 4977
-// Function ID: 4978
+// Module ID: 4978
+// Function ID: 4979
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 4858, 2045, 2099, 1074, 2005, 3, 2040, 2021, 573, 1271, 1983, 1995, 38, 4978, 5037, 4888, 1479, 9408, 8746, 1115, 2]
+// Dependencies: [5, 17, 4859, 2051, 2102, 1086, 2011, 3, 2046, 2027, 585, 1283, 1989, 2001, 38, 4979, 5038, 4889, 1485, 9404, 8741, 1127, 2]
 
-// Module 4977 (VoiceEngineStreamingManager)
+// Module 4978 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import intl2 from "intl" /* 1115 */;
-import useWindowDimensions from "useWindowDimensions" /* 1479 */;
-import inject from "inject" /* 1995 */;
-import Constants2 from "Constants" /* 2005 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import Timers from "Timers" /* 2040 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4888 */;
-import StreamActionCreators from "StreamActionCreators" /* 4978 */;
-import PushNotificationDefault from "PushNotification" /* 8746 */;
-import useScreenshareUtils from "useScreenshareUtils" /* 9408 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import intl2 from "intl" /* 1127 */;
+import useWindowDimensions from "useWindowDimensions" /* 1485 */;
+import inject from "inject" /* 2001 */;
+import Constants2 from "Constants" /* 2011 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import Timers from "Timers" /* 2046 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4889 */;
+import StreamActionCreators from "StreamActionCreators" /* 4979 */;
+import PushNotificationDefault from "PushNotification" /* 8741 */;
+import useScreenshareUtils from "useScreenshareUtils" /* 9404 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import Constants from "Constants" /* 1074 */;
-import LifecycleManager from "LifecycleManager" /* 1983 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import Constants from "Constants" /* 1086 */;
+import LifecycleManager from "LifecycleManager" /* 1989 */;
 import size_mod from "module_2" /* 2 */;
 
 let allActiveStreams, c6, c7, channel, closure_4, currentAppIntent, streamKey, voiceEngine;
@@ -51,7 +51,7 @@ let obj = function _handleThumbnailUpload() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -107,7 +107,7 @@ let obj = function _handleThumbnailUpload() {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp21) {
         closure_4 = tmp21;
         if (0 === c5) {

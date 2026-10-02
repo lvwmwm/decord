@@ -1,18 +1,18 @@
-// Module ID: 8485
-// Function ID: 8486
+// Module ID: 8482
+// Function ID: 8483
 // Name: useApplicationWidgetLayoutRendererProps
-// Dependencies: [32, 19, 8486, 8487, 2112, 8488, 504, 8489, 8390, 1370, 8493, 2]
-// Exports: default
+// Dependencies: [32, 19, 8483, 8484, 2115, 558, 576, 8485, 504, 8486, 8387, 1376, 8490, 2]
 
-// Module 8485 (useApplicationWidgetLayoutRendererProps)
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import _mod8390 from "module_8390" /* 8390 */;
-import UserApplicationIdentityStore2 from "UserApplicationIdentityStore" /* 8487 */;
-import ApplicationAssetV2Utils from "ApplicationAssetV2Utils" /* 8493 */;
+// Module 8482 (useApplicationWidgetLayoutRendererProps)
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import _mod8387 from "module_8387" /* 8387 */;
+import UserApplicationIdentityStore2 from "UserApplicationIdentityStore" /* 8484 */;
+import ApplicationAssetV2Utils from "ApplicationAssetV2Utils" /* 8490 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationAssetsV2Store from "ApplicationAssetsV2Store" /* 8486 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
+import ApplicationAssetsV2Store from "ApplicationAssetsV2Store" /* 8483 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,9 +21,289 @@ let _require, importDefault;
 
 const FetchState = UserApplicationIdentityStore2.FetchState;
 const localizedStrings = [];
-const result = size.fileFinishedImporting("modules/application_widget/hooks/useApplicationWidgetLayoutRendererProps.tsx");
-
-export default function useApplicationWidgetLayoutRendererProps(arg0, arg1) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let first;
+  let locale;
+  let stateFromStores;
+  _require = arg0;
+  importDefault = arg1;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(34);
+  const obj2 = require("UserApplicationIdentityActionCreators");
+  const userApplicationIdentities = obj2.useUserApplicationIdentities(arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserApplicationIdentityStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg1) {
+    let tmp7;
+    let tmp10;
+    let tmp9;
+    let tmp13;
+    let tmp20;
+    let tmp22;
+    let tmp24;
+    let tmp26;
+    let tmp27;
+    if (cResult[2] === arg0) {
+      tmp7 = cResult[3];
+    }
+    const tmpResult = tmp(stateFromStores[8]);
+    stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+    const _Symbol = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const items1 = [LocaleStore];
+      class F {
+        constructor() {
+          return closure_1_8.locale;
+        }
+      }
+      cResult[4] = items1;
+      cResult[5] = F;
+      tmp10 = F;
+      tmp9 = items1;
+    } else {
+      tmp9 = cResult[4];
+      tmp10 = cResult[5];
+    }
+    const tmpResult4 = tmp(stateFromStores[8]);
+    const stateFromStores1 = tmpResult4.useStateFromStores(tmp9, tmp10);
+    if (cResult[6] !== arg1) {
+      const items2 = [arg1];
+      class F {
+        constructor() {
+          return closure_1_8.locale;
+        }
+      }
+      cResult[7] = items2;
+      tmp13 = items2;
+    } else {
+      tmp13 = cResult[7];
+    }
+    const first1 = _slicedToArray(require("useApplicationWidgetConfigs")(tmp13), 1)[0];
+    if (stateFromStores != null) {
+      let profile = stateFromStores.profile;
+    }
+    class S {
+      constructor() {
+        return closure_6.getUserIdentityByApplication(closure_0, closure_1);
+      }
+    }
+    if (cResult[10] !== tmp19) {
+      const tmp19Result = tmp19();
+      cResult[10] = tmp19;
+      class F {
+        constructor() {
+          return closure_1_8.locale;
+        }
+      }
+      cResult[11] = tmp19Result;
+      tmp20 = tmp19Result;
+    } else {
+      tmp20 = cResult[11];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+      const items3 = [UserApplicationIdentityStore];
+      class F {
+        constructor() {
+          return closure_1_8.locale;
+        }
+      }
+      cResult[12] = items3;
+      tmp22 = items3;
+    } else {
+      tmp22 = cResult[12];
+    }
+    if (cResult[13] !== arg0) {
+      class N {
+        constructor() {
+          return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+        }
+      }
+      cResult[13] = arg0;
+      class F {
+        constructor() {
+          return closure_1_8.locale;
+        }
+      }
+      cResult[14] = N;
+      tmp24 = N;
+    } else {
+      class N {
+        constructor() {
+          return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+        }
+      }
+    }
+    const tmpResult5 = tmp(stateFromStores[8]);
+    const stateFromStores2 = tmpResult5.useStateFromStores(tmp22, tmp24);
+    const _Symbol3 = Symbol;
+    if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+      class N {
+        constructor() {
+          return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+        }
+      }
+      const items4 = [ApplicationAssetsV2Store];
+      class F {
+        constructor() {
+          return closure_1_8.locale;
+        }
+      }
+      cResult[15] = items4;
+      tmp26 = items4;
+    } else {
+      class N {
+        constructor() {
+          return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+        }
+      }
+    }
+    if (cResult[16] !== arg1) {
+      class N {
+        constructor() {
+          return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+        }
+      }
+      cResult[16] = arg1;
+      class F {
+        constructor() {
+          return closure_1_8.locale;
+        }
+      }
+      cResult[17] = tmp28;
+      tmp27 = tmp28;
+    } else {
+      class N {
+        constructor() {
+          return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+        }
+      }
+    }
+    const tmpResult6 = tmp(stateFromStores[8]);
+    const stateFromStores3 = tmpResult6.useStateFromStores(tmp26, tmp27);
+    if (cResult[18] !== stateFromStores3) {
+      class N {
+        constructor() {
+          return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+        }
+      }
+      const _Object = Object;
+      class F {
+        constructor() {
+          return closure_1_8.locale;
+        }
+      }
+      const values2 = values(tmp31);
+      const found = values2.filter(tmp(tmp2[11]).isNotNullish);
+      cResult[18] = stateFromStores3;
+      cResult[19] = found;
+    } else {
+      class N {
+        constructor() {
+          return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+        }
+      }
+    }
+    if (cResult[20] !== arg1) {
+      class N {
+        constructor() {
+          return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+        }
+      }
+      cResult[20] = arg1;
+      class F {
+        constructor() {
+          return closure_1_8.locale;
+        }
+      }
+      cResult[21] = tmp34;
+    } else {
+      class N {
+        constructor() {
+          return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+        }
+      }
+    }
+    const tmp35 = cResult[22];
+    if (first1 != null) {
+      class N {
+        constructor() {
+          return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+        }
+      }
+    }
+    if (tmp35 !== undefined) {
+      class N {
+        constructor() {
+          return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+        }
+      }
+      if (first1 != null) {
+        class N {
+          constructor() {
+            return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+          }
+        }
+      }
+      if (tmp38 == null) {
+        class N {
+          constructor() {
+            return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+          }
+        }
+      }
+      class F {
+        constructor() {
+          return closure_1_8.locale;
+        }
+      }
+      if (first1 != null) {
+        class N {
+          constructor() {
+            return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+          }
+        }
+      }
+      cResult[22] = tmp39;
+      cResult[23] = tmp38;
+    } else {
+      class N {
+        constructor() {
+          return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+        }
+      }
+    }
+    if (cResult[24] === tmp30) {
+      class N {
+        constructor() {
+          return closure_6.getFetchState(closure_0) !== FetchState.FETCHED;
+        }
+      }
+    }
+    const obj3 = { data: tmp20, applicationAssets: tmp30, getApplicationAssetUrl: tmp33, localizedStrings };
+    cResult[24] = tmp30;
+    cResult[25] = tmp33;
+    cResult[26] = tmp20;
+    cResult[27] = obj3;
+  }
+  class S {
+    constructor() {
+      return closure_6.getUserIdentityByApplication(closure_0, closure_1);
+    }
+  }
+  cResult[1] = arg1;
+  cResult[2] = arg0;
+  cResult[3] = S;
+  tmp7 = S;
+}) : ((arg0, arg1) => {
   let closure_0;
   let closure_1;
   let locale;
@@ -56,18 +336,18 @@ export default function useApplicationWidgetLayoutRendererProps(arg0, arg1) {
   const items3 = [profile];
   const memo1 = useMemo(() => {
     let profile;
-    const resolvedValuesFromUserApplicationIdentityProfile = _mod8390.resolvedValuesFromUserApplicationIdentityProfile;
-    _mod8390;
+    const resolvedValuesFromUserApplicationIdentityProfile = _mod8387.resolvedValuesFromUserApplicationIdentityProfile;
+    _mod8387;
     if (stateFromStores != null) {
       profile = stateFromStores.profile;
     }
     return resolvedValuesFromUserApplicationIdentityProfile(profile);
   }, items3);
   const items4 = [tmp4];
-  const tmpResult = tmp(stateFromStores[6]);
+  const tmpResult = tmp(stateFromStores[8]);
   const stateFromStores2 = tmpResult.useStateFromStores(items4, () => UserApplicationIdentityStore.getFetchState(closure_0) !== FetchState.FETCHED);
   const items5 = [ApplicationAssetsV2Store];
-  const tmpResult2 = tmp(stateFromStores[6]);
+  const tmpResult2 = tmp(stateFromStores[8]);
   stateFromStores3 = tmpResult2.useStateFromStores(items5, () => ApplicationAssetsV2Store.getAssets(closure_1));
   const items6 = [stateFromStores3];
   const items7 = [arg1];
@@ -93,4 +373,7 @@ export default function useApplicationWidgetLayoutRendererProps(arg0, arg1) {
     surfaces = {};
   }
   return obj5;
-};
+});
+const result = size.fileFinishedImporting("modules/application_widget/hooks/useApplicationWidgetLayoutRendererProps.tsx");
+
+export default tmp2;

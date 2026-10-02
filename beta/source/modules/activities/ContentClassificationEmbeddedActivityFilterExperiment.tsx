@@ -1,10 +1,10 @@
-// Module ID: 8808
-// Function ID: 8809
+// Module ID: 8803
+// Function ID: 8804
 // Name: ContentClassificationEmbeddedActivityFilterExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1441, 2]
 
-// Module 8808 (ContentClassificationEmbeddedActivityFilterExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 8803 (ContentClassificationEmbeddedActivityFilterExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-06-content-classification-embedded-activity-filter", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

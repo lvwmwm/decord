@@ -1,13 +1,13 @@
-// Module ID: 4818
-// Function ID: 4819
+// Module ID: 4819
+// Function ID: 4820
 // Name: InviteCodeUtils
-// Dependencies: [32, 11, 1473, 4819, 2]
+// Dependencies: [32, 11, 1479, 4820, 2]
 // Exports: generateInviteKeyFromUrlParams, getInviteInstanceId, getInviteKeySearchSuffix, parseExtraDataFromInviteKey, parseInviteCodeFromInviteKey
 
-// Module 4818 (InviteCodeUtils)
+// Module 4819 (InviteCodeUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import _modDef1473 from "module_1473" /* 1473 */;
-import QueryStringUtils from "QueryStringUtils" /* 4819 */;
+import _modDef1479 from "module_1479" /* 1479 */;
+import QueryStringUtils from "QueryStringUtils" /* 4820 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ function generateInviteKeyFromExtraData(arg0) {
       obj[message] = targetMessageId;
     }
   }
-  const obj2 = _modDef1473;
+  const obj2 = _modDef1479;
   const json = obj2.stringify(obj);
   let combined = baseCode;
   if ("" !== json) {
@@ -62,7 +62,7 @@ export const generateInviteKeyFromUrlParams = function generateInviteKeyFromUrlP
       substr = search.substring(1);
     }
     try {
-      const obj = _modDef1473;
+      const obj = _modDef1479;
       const parsed = obj.parse(substr);
       const obj2 = QueryStringUtils;
       const firstQueryStringValue = obj2.getFirstQueryStringValue(parsed[event]);
@@ -74,7 +74,7 @@ export const generateInviteKeyFromUrlParams = function generateInviteKeyFromUrlP
       const tmp5 = require;
       const tmp9 = readSnowflake;
       if (null != tmp11) {
-        const tmp5Result = tmp5(4819);
+        const tmp5Result = tmp5(4820);
         tmp9Result = tmp9(tmp5Result.getFirstQueryStringValue(parsed[message]));
       }
       return tmp12(obj4);
@@ -93,7 +93,7 @@ export const parseExtraDataFromInviteKey = function parseExtraDataFromInviteKey(
   if (null == tmp3) {
     return { baseCode: tmp2 };
   } else {
-    const obj4 = _modDef1473;
+    const obj4 = _modDef1479;
     const parsed = obj4.parse(tmp3);
     const obj5 = QueryStringUtils;
     const firstQueryStringValue = obj5.getFirstQueryStringValue(parsed[event]);
@@ -110,7 +110,7 @@ export const parseExtraDataFromInviteKey = function parseExtraDataFromInviteKey(
     const obj = { baseCode: tmp2, guildScheduledEventId: firstQueryStringValue, targetChannelId: tmp4, targetMessageId: tmp5 };
     tmp5 = undefined;
     if (null != tmp4) {
-      const tmp12Result = tmp12(4819);
+      const tmp12Result = tmp12(4820);
       const firstQueryStringValue2 = tmp12Result.getFirstQueryStringValue(parsed[message]);
       let tmp8;
       if (typeof firstQueryStringValue2 === "string") {

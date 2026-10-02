@@ -1,54 +1,163 @@
-// Module ID: 15798
-// Function ID: 15799
+// Module ID: 15797
+// Function ID: 15798
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [32, 19, 2042, 4719, 6806, 2029, 2]
-// Exports: default
+// Dependencies: [32, 19, 2048, 558, 576, 4721, 2035, 6807, 2]
 
-// Module 15798 (useGuildThemeNuxTrigger)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import GuildThemeResolver from "GuildThemeResolver" /* 4719 */;
-import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 6806 */;
+// Module 15797 (useGuildThemeNuxTrigger)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import react_mod from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c0;
+const require = globalThis.__r;
+let _require, c0, ref, tmp3;
 
-let tmp;
-const dismissible_content = tmp(2029);
+let react = react_mod;
 let constants = DismissibleContentConstants.DismissibleContentGroupName;
-const result = size.fileFinishedImporting("modules/guild_themes/useGuildThemeNuxTrigger.tsx");
-
-export default function useGuildThemeNuxTrigger(guildId, isNuxOpen) {
-  let items1;
-  let closure_0 = guildId;
+let c5 = 2000;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isNuxOpen) => {
+  let closure_0;
+  let closure_3;
+  let closure_4;
+  let tmp10;
+  let tmp5;
+  let tmp9;
+  _require = arg0;
+  let tmp = _require;
+  let tmp2 = isNuxOpen;
+  let obj = require("react");
+  const cResult = obj.c(12);
   isNuxOpen = isNuxOpen.isNuxOpen;
   const openNux = isNuxOpen.openNux;
+  const obj2 = require("GuildThemeResolver");
+  const tmp4 = null != obj2.useEnabledGuildThemeForGuildId(arg0, "GuildThemeNuxTrigger");
+  if (cResult[0] !== tmp4) {
+    let items1;
+    if (tmp4) {
+      const items = [tmp(tmp2[6]).DismissibleContent.GUILD_THEME_NUX];
+      items1 = items;
+    } else {
+      items1 = [];
+    }
+    cResult[0] = tmp4;
+    cResult[1] = items1;
+    tmp5 = items1;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const tmpResult = tmp(tmp2[7]);
+  const tmp6 = openNux(tmpResult.useSelectedDismissibleContent(tmp5, constants.GUILD_THEME_NUX), 2);
+  react = tmp7;
+  const tmp8 = tmp6[0] === tmp(tmp2[6]).DismissibleContent.GUILD_THEME_NUX;
+  constants = tmp8;
+  ref = react.useRef(false);
+  const obj4 = react;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor() {
+        closure_5.current = false;
+        return;
+      }
+    }
+    cResult[2] = D;
+    tmp9 = D;
+  } else {
+    class D {
+      constructor() {
+        closure_5.current = false;
+        return;
+      }
+    }
+  }
+  if (cResult[3] !== arg0) {
+    class D {
+      constructor() {
+        closure_5.current = false;
+        return;
+      }
+    }
+    tmp11[0] = arg0;
+    cResult[3] = arg0;
+    cResult[4] = tmp11;
+    tmp10 = tmp11;
+  } else {
+    class D {
+      constructor() {
+        closure_5.current = false;
+        return;
+      }
+    }
+  }
+  const effect = obj4.useEffect(tmp9, tmp10);
+  if (cResult[5] === arg0) {
+    class D {
+      constructor() {
+        closure_5.current = false;
+        return;
+      }
+    }
+  }
+  class N {
+    constructor() {
+      tmp = closure_4;
+      if (tmp) {
+        tmp2 = isNuxOpen;
+        if (!tmp2) {
+          tmp3 = closure_5;
+          if (!closure_5.current) {
+            tmp4 = globalThis;
+            _setTimeout = setTimeout;
+            tmp5 = closure_5;
+            closure_0 = setTimeout(() => { /* body not rendered: F143846 */ }, closure_5);
+            return () => { /* body not rendered: F143847 */ };
+          }
+        }
+      }
+      return;
+    }
+  }
+  const items2 = [tmp8, isNuxOpen, arg0, tmp6[1], openNux];
+  cResult[5] = arg0;
+  cResult[6] = isNuxOpen;
+  cResult[7] = tmp6[1];
+  cResult[8] = openNux;
+  cResult[9] = tmp8;
+  cResult[10] = N;
+  cResult[11] = items2;
+}) : ((arg0, isNuxOpen) => {
+  let closure_0;
   let closure_3;
+  let closure_4;
+  let items1;
+  _require = arg0;
+  isNuxOpen = isNuxOpen.isNuxOpen;
+  const openNux = isNuxOpen.openNux;
+  react = undefined;
   constants = undefined;
-  let closure_5;
-  let tmp = require;
-  let tmp2 = dependencyMap;
-  let obj = GuildThemeResolver;
-  const enabledGuildThemeForGuildId = obj.useEnabledGuildThemeForGuildId(guildId, "GuildThemeNuxTrigger");
-  const tmp4 = useSelectedDismissibleContent2;
+  ref = undefined;
+  let tmp = _require;
+  let tmp2 = isNuxOpen;
+  let obj = require("GuildThemeResolver");
+  const enabledGuildThemeForGuildId = obj.useEnabledGuildThemeForGuildId(arg0, "GuildThemeNuxTrigger");
+  const tmp4 = require("useSelectedDismissibleContent");
   const useSelectedDismissibleContent = tmp4.useSelectedDismissibleContent;
   if (null != enabledGuildThemeForGuildId) {
-    const items = [dismissible_content.DismissibleContent.GUILD_THEME_NUX];
+    const items = [tmp(tmp2[6]).DismissibleContent.GUILD_THEME_NUX];
     items1 = items;
   } else {
     items1 = [];
   }
-  const tmp5 = _slicedToArray(useSelectedDismissibleContent(items1, constants.GUILD_THEME_NUX), 2);
-  closure_3 = tmp6;
-  const tmp7 = tmp5[0] === dismissible_content.DismissibleContent.GUILD_THEME_NUX;
+  const tmp5 = openNux(useSelectedDismissibleContent(items1, constants.GUILD_THEME_NUX), 2);
+  react = tmp6;
+  const tmp7 = tmp5[0] === tmp(tmp2[6]).DismissibleContent.GUILD_THEME_NUX;
   constants = tmp7;
-  closure_5 = react.useRef(false);
-  const items2 = [guildId];
+  ref = react.useRef(false);
+  const items2 = [arg0];
   const effect = react.useEffect(() => {
     ref.current = false;
   }, items2);
-  const items3 = [tmp7, isNuxOpen, guildId, tmp5[1], openNux];
+  const items3 = [tmp7, isNuxOpen, arg0, tmp5[1], openNux];
   const effect1 = react.useEffect(() => {
     let tmp = closure_4;
     if (tmp) {
@@ -73,11 +182,14 @@ export default function useGuildThemeNuxTrigger(guildId, isNuxOpen) {
             resolved.catch(() => {
               closure_1_5.current = false;
             });
-          }, 2000);
+          }, ref);
           return () => clearTimeout(guildId);
         }
       }
     }
   }, items3);
-};
+});
+const result = size.fileFinishedImporting("modules/guild_themes/useGuildThemeNuxTrigger.tsx");
+
+export default tmp2;
 export const GUILD_THEME_NUX_DELAY_MS = 2000;

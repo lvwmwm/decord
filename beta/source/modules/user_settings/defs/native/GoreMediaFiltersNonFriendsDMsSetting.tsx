@@ -1,26 +1,46 @@
-// Module ID: 14368
-// Function ID: 14369
+// Module ID: 14356
+// Function ID: 14357
 // Name: GoreMediaFiltersNonFriendsDMsSetting
-// Dependencies: [7417, 14361, 7020, 6719, 14362, 1115, 11006, 14364, 2]
-// Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
+// Dependencies: [7421, 558, 576, 14349, 7024, 6720, 14350, 1127, 10874, 14352, 2]
+// Exports: onGoreContentNonFriendsDmOnPress
 
-// Module 14368 (GoreMediaFiltersNonFriendsDMsSetting)
-import intl4 from "intl" /* 1115 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 6719 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7020 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 14361 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14362 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 14364 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 14356 (GoreMediaFiltersNonFriendsDMsSetting)
+import react from "react" /* 576 */;
+import intl4 from "intl" /* 1127 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 6720 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 14349 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14350 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 14352 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
-function useGoreContentNonFriendsDmSettingValue() {
+let tmp;
+const ExplicitMediaRedactionUtils = tmp(7024);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  const obj = react;
+  const cResult = obj.c(2);
+  const obj2 = useExplicitContentSettingsOrDefault;
+  const goreContentNonFriendDm = obj2.useGoreContentSettingOrDefault().goreContentNonFriendDm;
+  if (cResult[0] !== goreContentNonFriendDm) {
+    const tmpResult = ExplicitMediaRedactionUtils;
+    const tmp5 = tmpResult.redactionSettingToRenderedString(goreContentNonFriendDm)();
+    cResult[0] = goreContentNonFriendDm;
+    cResult[1] = tmp5;
+    tmp4 = tmp5;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (() => {
   const obj = useExplicitContentSettingsOrDefault;
   const goreContentNonFriendDm = obj.useGoreContentSettingOrDefault().goreContentNonFriendDm;
   const obj2 = ExplicitMediaRedactionUtils;
   return obj2.redactionSettingToRenderedString(goreContentNonFriendDm)();
-}
+});
 function onGoreContentNonFriendsDmOnPress() {
   let intl;
   let intl2;
@@ -42,14 +62,14 @@ function onGoreContentNonFriendsDmOnPress() {
   intl2 = intl4.intl;
   const result = handleSensitiveMediaFilterPress(obj2);
 }
-const MobileUserSettings = SettingsConstants.MobileUserSettings;
+function getTitle() {
+  const intl = intl4.intl;
+  return intl.string(intl4.t["Yh+HX1"]);
+}
 let obj = {
-  useTitle: function getTitle() {
-    const intl = intl4.intl;
-    return intl.string(intl4.t["Yh+HX1"]);
-  },
+  useTitle: getTitle,
   parent: MobileUserSettings.SENSITIVE_CONTENT_FILTERS,
-  useTrailing: useGoreContentNonFriendsDmSettingValue,
+  useTrailing: tmp2,
   onPress: onGoreContentNonFriendsDmOnPress,
   useSearchTerms() {
     const intl = intl4.intl;
@@ -66,5 +86,5 @@ const pressable = SettingBuilders.createPressable(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/GoreMediaFiltersNonFriendsDMsSetting.tsx");
 
 export default pressable;
-export { useGoreContentNonFriendsDmSettingValue };
+export const useGoreContentNonFriendsDmSettingValue = tmp2;
 export { onGoreContentNonFriendsDmOnPress };

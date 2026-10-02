@@ -1,18 +1,19 @@
-// Module ID: 16185
-// Function ID: 16186
+// Module ID: 16187
+// Function ID: 16188
 // Name: UnavailableNotice
-// Dependencies: [19, 17, 21, 4836, 576, 5899, 15875, 4832, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 5896, 15875, 4833, 2]
 
-// Module 16185 (UnavailableNotice)
+// Module 16187 (UnavailableNotice)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import FastImageDefault from "FastImage" /* 5899 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import FastImageDefault from "FastImage" /* 5896 */;
 import AssetRegistryDefault from "AssetRegistry" /* 15875 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -27,9 +28,106 @@ obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 let closure_6 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/UnavailableNotice.tsx");
-
-export default function UnavailableNotice(brightTitle) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let brightTitle;
+  let description;
+  let items;
+  let title;
+  const obj = react2;
+  const cResult = obj.c(20);
+  ({ title, description, brightTitle } = arg0);
+  const tmp4 = closure_6();
+  if (cResult[0] === tmp4.container) {
+    let tmp5;
+    let tmp7;
+    if (cResult[1] === tmp4.unavailableContainer) {
+      tmp5 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { source: AssetRegistryDefault };
+      const tmp10 = FastImageDefault;
+      const tmp11 = React3(tmp10, obj2);
+      cResult[3] = tmp11;
+      tmp7 = tmp11;
+    } else {
+      tmp7 = cResult[3];
+    }
+    if (brightTitle) {
+      brightTitle = tmp4.brightTitle;
+    }
+    if (cResult[4] === tmp4.joinCtaTitle) {
+      let tmp12;
+      if (cResult[5] === brightTitle) {
+        tmp12 = cResult[6];
+      }
+      if (cResult[7] === tmp12) {
+        let tmp13;
+        if (cResult[8] === title) {
+          tmp13 = cResult[9];
+        }
+        if (cResult[10] === description) {
+          let tmp16;
+          if (cResult[11] === tmp4.unavailableDescription) {
+            tmp16 = cResult[12];
+          }
+          if (cResult[13] === tmp4.unavailableInfo) {
+            if (cResult[14] === tmp13) {
+              let tmp19;
+              if (cResult[15] === tmp16) {
+                tmp19 = cResult[16];
+              }
+              if (cResult[17] === tmp5) {
+                let tmp23;
+                if (cResult[18] === tmp19) {
+                  tmp23 = cResult[19];
+                }
+                return tmp23;
+              }
+              const obj3 = { style: tmp5, children: tmp19 };
+              const tmp26 = React3(View, obj3);
+              cResult[17] = tmp5;
+              cResult[18] = tmp19;
+              cResult[19] = tmp26;
+              tmp23 = tmp26;
+            }
+          }
+          const obj4 = { style: tmp4.unavailableInfo, children: items };
+          items = [tmp7, tmp13, tmp16];
+          const tmp22 = hasOwnProperty(View, obj4);
+          cResult[13] = tmp4.unavailableInfo;
+          cResult[14] = tmp13;
+          cResult[15] = tmp16;
+          cResult[16] = tmp22;
+          tmp19 = tmp22;
+        }
+        const obj5 = { style: tmp4.unavailableDescription, variant: "text-sm/medium", color: "text-default", children: description };
+        const tmp18 = React3(Text_Text.Text, obj5);
+        cResult[10] = description;
+        cResult[11] = tmp4.unavailableDescription;
+        cResult[12] = tmp18;
+        tmp16 = tmp18;
+      }
+      const obj6 = { variant: "heading-lg/extrabold", color: "text-default", style: tmp12, children: title };
+      const tmp15 = React3(Text_Text.Text, obj6);
+      cResult[7] = tmp12;
+      cResult[8] = title;
+      cResult[9] = tmp15;
+      tmp13 = tmp15;
+    }
+    const items1 = [tmp4.joinCtaTitle, brightTitle];
+    cResult[4] = tmp4.joinCtaTitle;
+    cResult[5] = brightTitle;
+    cResult[6] = items1;
+    tmp12 = items1;
+  }
+  const items2 = [, ];
+  ({ container: arr[0], unavailableContainer: arr[1] } = tmp4);
+  cResult[0] = tmp4.container;
+  cResult[1] = tmp4.unavailableContainer;
+  cResult[2] = items2;
+  tmp5 = items2;
+}) : ((brightTitle) => {
   let description;
   let items;
   let items1;
@@ -57,4 +155,7 @@ export default function UnavailableNotice(brightTitle) {
   const obj4 = { style: tmp.unavailableDescription, variant: "text-sm/medium", color: "text-default", children: description };
   items1[2] = React3(Text_Text.Text, obj4);
   return React3(View, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/UnavailableNotice.tsx");
+
+export default tmp5;

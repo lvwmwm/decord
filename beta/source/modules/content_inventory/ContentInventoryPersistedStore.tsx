@@ -1,12 +1,12 @@
-// Module ID: 11417
-// Function ID: 11418
+// Module ID: 11292
+// Function ID: 11293
 // Name: ContentInventoryPersistedStore
-// Dependencies: [32, 1091, 504, 573, 2]
+// Dependencies: [32, 1103, 504, 585, 2]
 
-// Module 11417 (ContentInventoryPersistedStore)
+// Module 11292 (ContentInventoryPersistedStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import DurationsDefault from "Durations" /* 1103 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

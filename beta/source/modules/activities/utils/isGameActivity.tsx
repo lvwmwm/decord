@@ -1,11 +1,11 @@
-// Module ID: 10345
-// Function ID: 10346
+// Module ID: 10388
+// Function ID: 10389
 // Name: isGameActivity
-// Dependencies: [1074, 2]
+// Dependencies: [1086, 2]
 // Exports: default
 
-// Module 10345 (isGameActivity)
-import Constants from "Constants" /* 1074 */;
+// Module 10388 (isGameActivity)
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const ActivityTypes = Constants.ActivityTypes;

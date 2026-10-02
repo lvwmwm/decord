@@ -1,30 +1,95 @@
-// Module ID: 13370
-// Function ID: 13371
+// Module ID: 13372
+// Function ID: 13373
 // Name: useSpatialAudioControlState
-// Dependencies: [19, 1993, 4861, 13371, 504, 2]
-// Exports: default, isSpatialAudioBlocked, isSpatialAudioEligible
+// Dependencies: [19, 1999, 4862, 13373, 558, 576, 504, 2]
+// Exports: isSpatialAudioBlocked, isSpatialAudioEligible
 
-// Module 13370 (useSpatialAudioControlState)
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13371 */;
+// Module 13372 (useSpatialAudioControlState)
+import react2 from "react" /* 576 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13373 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import Constants from "Constants" /* 4861 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import Constants from "Constants" /* 4862 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
+let tmp;
+const get_initialized = tmp(504);
 ({ Features: hasOwnProperty, SpatialAudioStatus: metroRequire } = Constants);
 const SpatialAudioControlState = { HIDDEN: "HIDDEN", AVAILABLE: "AVAILABLE", BLOCKED_MONO_OUTPUT: "BLOCKED_MONO_OUTPUT", BLOCKED_INIT_FAILED: "BLOCKED_INIT_FAILED", BLOCKED_HRTF_FAILED: "BLOCKED_HRTF_FAILED" };
-const result = size.fileFinishedImporting("modules/spatial_audio/useSpatialAudioControlState.tsx");
-
-export default function useSpatialAudioControlState(location) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  let HIDDEN;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let obj = react2;
+  const cResult = obj.c(7);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  const obj3 = SpatialAudioForVoiceExperimentDefault;
+  let supported = obj3.useConfig(tmp4).enabled;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MediaEngineStore];
+    class A {
+      constructor() {
+        obj = { supported: closure_1_4.supports(closure_1_5.SPATIAL_AUDIO), status: closure_1_4.getSpatialAudioStatus() };
+        return obj;
+      }
+    }
+    cResult[2] = items;
+    cResult[3] = A;
+    tmp6 = A;
+    tmp5 = items;
+  } else {
+    tmp5 = cResult[2];
+    tmp6 = cResult[3];
+  }
+  const tmpResult = get_initialized;
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp5, tmp6);
+  const status = stateFromStoresObject.status;
+  if (supported) {
+    supported = stateFromStoresObject.supported;
+  }
+  if (cResult[4] === status) {
+    let tmp9;
+    if (cResult[5] === supported) {
+      tmp9 = cResult[6];
+    }
+    return tmp9;
+  }
+  if (supported) {
+    if (metroRequire.MONO_OUTPUT === status) {
+      HIDDEN = obj.BLOCKED_MONO_OUTPUT;
+    } else if (metroRequire.INIT_FAILED === status) {
+      HIDDEN = obj.BLOCKED_INIT_FAILED;
+    } else if (metroRequire.HRTF_FAILED === status) {
+      HIDDEN = obj.BLOCKED_HRTF_FAILED;
+    } else {
+      HIDDEN = obj.AVAILABLE;
+    }
+  } else {
+    HIDDEN = obj.HIDDEN;
+  }
+  cResult[4] = status;
+  cResult[5] = supported;
+  cResult[6] = HIDDEN;
+  tmp9 = HIDDEN;
+}) : ((location) => {
   let status;
   let supported;
   let obj = supported(status[3]);
   const obj2 = { location };
   const enabled = obj.useConfig(obj2).enabled;
   const items = [MediaEngineStore];
-  const obj3 = enabled(status[4]);
+  const obj3 = enabled(status[6]);
   const stateFromStoresObject = obj3.useStateFromStoresObject(items, () => {
     const obj = { supported: MediaEngineStore.supports(constants.SPATIAL_AUDIO), status: MediaEngineStore.getSpatialAudioStatus() };
     return obj;
@@ -50,7 +115,10 @@ export default function useSpatialAudioControlState(location) {
     }
     return HIDDEN;
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/spatial_audio/useSpatialAudioControlState.tsx");
+
+export default tmp3;
 export { SpatialAudioControlState };
 export const isSpatialAudioBlocked = function isSpatialAudioBlocked(arg0) {
   const items = [, ];

@@ -1,22 +1,23 @@
-// Module ID: 12691
-// Function ID: 12692
+// Module ID: 12692
+// Function ID: 12693
 // Name: FriendRequestNote
-// Dependencies: [32, 19, 17, 4479, 1074, 21, 4836, 576, 12692, 504, 12693, 4832, 5281, 6389, 1115, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 4482, 1086, 21, 4837, 588, 558, 576, 12693, 504, 12694, 4833, 5282, 6386, 1127, 2]
 
-// Module 12691 (FriendRequestNote)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import PeopleListTracking from "PeopleListTracking" /* 12693 */;
+// Module 12692 (FriendRequestNote)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import PeopleListTracking from "PeopleListTracking" /* 12694 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let userId;
 
 let c9;
 let closure_4;
@@ -34,9 +35,188 @@ obj2 = { width: "100%", position: "relative", padding: nativeDefault.space.PX_12
 createStyles = createStyles.createStyles;
 rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.md };
 let closure_10 = createStyles(obj);
-let result = size.fileFinishedImporting("modules/people/native/FriendRequestNote.tsx");
-
-export default function FriendRequestNote(styles) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  let Button;
+  let analyticsLocation;
+  let backgroundColor;
+  let first;
+  let intl;
+  let items1;
+  let obj6;
+  let styles;
+  let tmp11;
+  let tmp8;
+  const tmp2 = analyticsLocation;
+  let obj = userId(analyticsLocation[9]);
+  const cResult = obj.c(27);
+  userId = userId.userId;
+  ({ styles, backgroundColor, analyticsLocation } = userId);
+  const tmp4 = closure_10();
+  const obj2 = userId(analyticsLocation[10]);
+  const hideFriendRequestNotes = obj2.useHideFriendRequestNotes();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [RelationshipStore];
+    let num = 0;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== userId) {
+    const fn = function v() {
+      const obj = { note: RelationshipStore.getNote(userId), type: RelationshipStore.getRelationshipType(userId) };
+      return obj;
+    };
+    cResult[1] = userId;
+    cResult[2] = fn;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+  }
+  const tmpResult = userId(tmp2[11]);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp8);
+  const note = stateFromStoresObject.note;
+  const tmp10 = note(react.useState(stateFromStoresObject.type === RelationshipTypes.PENDING_OUTGOING), 2);
+  [tmp11, react] = tmp10;
+  if (cResult[3] === analyticsLocation) {
+    let tmp15;
+    let length;
+    const tmp12 = cResult[4];
+    if (note != null) {
+      length = note.length;
+    }
+    if (tmp12 === length) {
+      tmp15 = cResult[5];
+    }
+    if (!hideFriendRequestNotes) {
+      if (null != note) {
+        if ("" !== note) {
+          if (cResult[6] === tmp4.container) {
+            let tmp18;
+            let hidden;
+            if (cResult[7] === styles) {
+              tmp18 = cResult[8];
+            }
+            if (!tmp11) {
+              hidden = tmp4.hidden;
+            }
+            if (cResult[9] === note) {
+              if (cResult[10] === tmp11) {
+                if (cResult[11] === !tmp11) {
+                  let tmp20;
+                  if (cResult[12] === "") {
+                    tmp20 = cResult[13];
+                  }
+                  if (cResult[14] === hidden) {
+                    let tmp23;
+                    if (cResult[15] === tmp20) {
+                      tmp23 = cResult[16];
+                    }
+                    if (cResult[17] === backgroundColor) {
+                      if (cResult[18] === tmp15) {
+                        if (cResult[19] === tmp4.spoiler) {
+                          let tmp27;
+                          if (cResult[20] === tmp11) {
+                            tmp27 = cResult[21];
+                          }
+                          if (cResult[22] === tmp15) {
+                            if (cResult[23] === tmp27) {
+                              if (cResult[24] === tmp18) {
+                                let tmp32;
+                                if (cResult[25] === tmp23) {
+                                  tmp32 = cResult[26];
+                                }
+                                return tmp32;
+                              }
+                            }
+                          }
+                          const obj3 = { style: tmp18, onPress: tmp15, children: items1 };
+                          items1 = [tmp23, tmp27];
+                          const tmp35 = closure_9(closure_4, obj3);
+                          cResult[22] = tmp15;
+                          cResult[23] = tmp27;
+                          cResult[24] = tmp18;
+                          cResult[25] = tmp23;
+                          cResult[26] = tmp35;
+                          tmp32 = tmp35;
+                        }
+                      }
+                    }
+                    let tmp29Result = null;
+                    if (!tmp11) {
+                      const items2 = [tmp4.spoiler, ];
+                      let tmp31;
+                      const tmp30 = closure_5;
+                      if (null != backgroundColor) {
+                        tmp31 = { backgroundColor };
+                        const obj4 = { backgroundColor };
+                      }
+                      items2[1] = tmp31;
+                      const obj5 = { style: items2, children: closure_8(Button, obj6) };
+                      obj6 = { icon: closure_8(userId(tmp2[15]).EyeIcon, { size: "sm" }), variant: "secondary", size: "sm", onPress: tmp15, text: intl.string(userId(tmp2[16]).t.sB0q4C) };
+                      Button = tmp(tmp2[14]).Button;
+                      intl = tmp(tmp2[16]).intl;
+                      tmp29Result = tmp29(tmp30, obj5);
+                    }
+                    cResult[17] = backgroundColor;
+                    cResult[18] = tmp15;
+                    cResult[19] = tmp4.spoiler;
+                    cResult[20] = tmp11;
+                    cResult[21] = tmp29Result;
+                    tmp27 = tmp29Result;
+                  }
+                  const obj7 = { style: hidden, children: tmp20 };
+                  const tmp26 = closure_8(closure_5, obj7);
+                  cResult[14] = hidden;
+                  cResult[15] = tmp20;
+                  cResult[16] = tmp26;
+                  tmp23 = tmp26;
+                }
+              }
+            }
+            const obj8 = { accessible: tmp11, accessibilityElementsHidden: !tmp11, accessibilityLabel: "", variant: "redesign/message-preview/normal", children: note };
+            const tmp22 = closure_8(userId(tmp2[13]).Text, obj8);
+            cResult[9] = note;
+            cResult[10] = tmp11;
+            cResult[11] = !tmp11;
+            cResult[12] = "";
+            cResult[13] = tmp22;
+            tmp20 = tmp22;
+          }
+          const items3 = [tmp4.container, styles];
+          cResult[6] = tmp4.container;
+          cResult[7] = styles;
+          cResult[8] = items3;
+          tmp18 = items3;
+        }
+      }
+    }
+    return null;
+  }
+  cResult[3] = analyticsLocation;
+  let length1;
+  if (note != null) {
+    length1 = note.length;
+  }
+  const fn2 = function x() {
+    let num;
+    react(true);
+    const obj = { analyticsLocation, noteLength: num };
+    num = undefined;
+    const trackViewFriendRequestNote = PeopleListTracking.trackViewFriendRequestNote;
+    PeopleListTracking;
+    if (note != null) {
+      num = note.length;
+    }
+    if (num == null) {
+      num = 0;
+    }
+    const result = trackViewFriendRequestNote(obj);
+  };
+  cResult[4] = length1;
+  cResult[5] = fn2;
+  tmp15 = fn2;
+}) : ((styles) => {
   let Button;
   let Text;
   let _undefined;
@@ -97,7 +277,7 @@ export default function FriendRequestNote(styles) {
         }
         const obj4 = { style: hidden, children: closure_8(Text, obj5) };
         obj5 = { accessible: tmp7, accessibilityElementsHidden: !tmp7, accessibilityLabel: "", variant: "redesign/message-preview/normal", children: note };
-        Text = tmp2(tmp3[11]).Text;
+        Text = tmp2(tmp3[13]).Text;
         items3 = [closure_8(closure_5, obj4), ];
         let tmp15Result = null;
         if (!tmp7) {
@@ -109,9 +289,9 @@ export default function FriendRequestNote(styles) {
           }
           items4[1] = tmp12;
           const obj7 = { style: items4, children: closure_8(Button, obj8) };
-          obj8 = { icon: closure_8(tmp2(analyticsLocation[13]).EyeIcon, { size: "sm" }), variant: "secondary", size: "sm", onPress: callback, text: intl.string(tmp2(analyticsLocation[14]).t.sB0q4C) };
-          Button = tmp2(tmp3[12]).Button;
-          intl = tmp2(tmp3[14]).intl;
+          obj8 = { icon: closure_8(tmp2(analyticsLocation[15]).EyeIcon, { size: "sm" }), variant: "secondary", size: "sm", onPress: callback, text: intl.string(tmp2(analyticsLocation[16]).t.sB0q4C) };
+          Button = tmp2(tmp3[14]).Button;
+          intl = tmp2(tmp3[16]).intl;
           tmp15Result = tmp15(tmp16, obj7);
         }
         items3[1] = tmp15Result;
@@ -120,4 +300,7 @@ export default function FriendRequestNote(styles) {
     }
   }
   return tmp13Result;
-};
+});
+let result = size.fileFinishedImporting("modules/people/native/FriendRequestNote.tsx");
+
+export default tmp5;

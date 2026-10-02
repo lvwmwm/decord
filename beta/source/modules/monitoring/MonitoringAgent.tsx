@@ -1,15 +1,15 @@
-// Module ID: 5179
-// Function ID: 5180
+// Module ID: 5180
+// Function ID: 5181
 // Name: MonitoringAgent
-// Dependencies: [1074, 1364, 5180, 5181, 17, 5182, 5183, 1271, 2]
+// Dependencies: [1086, 1370, 5181, 5182, 17, 5183, 5184, 1283, 2]
 
-// Module 5179 (MonitoringAgent)
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import react_native from "react-native" /* 5182 */;
-import MonitoringAgentUtils from "MonitoringAgentUtils" /* 5183 */;
+// Module 5180 (MonitoringAgent)
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import react_native from "react-native" /* 5183 */;
+import MonitoringAgentUtils from "MonitoringAgentUtils" /* 5184 */;
 import react_native2 from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
 import size from "module_2" /* 2 */;
 
 let obj;
@@ -71,10 +71,10 @@ class MonitoringAgent {
       const _HermesInternal = HermesInternal;
       tags1.push("platform:" + str);
     }
-    const CurrentReleaseChannel = tmp(5180).CurrentReleaseChannel;
+    const CurrentReleaseChannel = tmp(5181).CurrentReleaseChannel;
     let tmp9 = null;
     if (null != CurrentReleaseChannel) {
-      const ALL = tmp(5181).ReleaseChannelsSets.ALL;
+      const ALL = tmp(5182).ReleaseChannelsSets.ALL;
       tmp9 = null;
       if (ALL.has(CurrentReleaseChannel)) {
         tmp9 = CurrentReleaseChannel;
@@ -127,7 +127,7 @@ class MonitoringAgent {
       HermesBuiltin.arraySpread(items, self._metrics, 0);
       const HTTP = HTTPUtils.HTTP;
       const request = { url: Endpoints.METRICS_V2, body, retries: 1, rejectWithError: true };
-      body = { metrics: items, client_info: { built_at: "1790835611750", build_number: "6550" } };
+      body = { metrics: items, client_info: { built_at: "1790921994205", build_number: "6558" } };
       const postResult = HTTP.post(request);
       postResult.catch(() => {
         if (self._metrics.length + items.length < 100) {

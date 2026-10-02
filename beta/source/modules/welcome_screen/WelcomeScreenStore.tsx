@@ -1,11 +1,11 @@
-// Module ID: 12151
-// Function ID: 12152
+// Module ID: 12193
+// Function ID: 12194
 // Name: WelcomeScreenStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 12151 (WelcomeScreenStore)
+// Module 12193 (WelcomeScreenStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 function handleInviteData(invite) {

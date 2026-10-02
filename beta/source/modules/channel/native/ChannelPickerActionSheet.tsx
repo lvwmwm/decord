@@ -1,31 +1,253 @@
-// Module ID: 10872
-// Function ID: 10873
+// Module ID: 11848
+// Function ID: 11849
 // Name: ChannelPickerActionSheet
-// Dependencies: [19, 4479, 1372, 21, 1613, 6619, 4800, 6570, 6000, 5923, 10873, 6618, 6045, 5997, 5335, 4989, 2]
-// Exports: default
+// Dependencies: [19, 4482, 1378, 21, 558, 576, 1619, 6619, 4801, 6571, 5922, 11849, 5994, 5336, 4990, 5995, 6038, 6624, 2]
 
-// Module 10872 (ChannelPickerActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import useChannelName from "useChannelName" /* 4989 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5335 */;
-import TableRadioRow2 from "TableRadioRow" /* 6000 */;
+// Module 11848 (ChannelPickerActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import useChannelName from "useChannelName" /* 4990 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5336 */;
+import TableRadioRow2 from "TableRadioRow" /* 5994 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, noChannelOptionLabel;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const TableRowIcon2 = tmp(5923);
+const TableRowIcon2 = tmp(5922);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const result = size.fileFinishedImporting("modules/channel/native/ChannelPickerActionSheet.tsx");
-
-export default function ChannelPickerActionSheet(noChannelOptionLabel) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channels) => {
+  let guild;
+  let header;
+  let items1;
+  let onClose;
+  let title;
+  let title2;
+  let tmp21;
+  _require = channels;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(33);
+  const tmp4 = guild;
+  const bottom = guild(channels[6])().bottom;
+  ({ header, guild } = channels);
+  channels = channels.channels;
+  const onSelect = channels.onSelect;
+  const selectedChannel = channels.selectedChannel;
+  if (null != header) {
+    ({ title, onClose } = header);
+    let tmp6;
+    if (null != onClose) {
+      let tmp7;
+      if (cResult[0] !== onClose) {
+        let obj2 = {
+          onPress() {
+                  const obj = ActionSheetActionCreatorsDefault;
+                  obj.hideActionSheet();
+                  onClose();
+                }
+        };
+        const tmp9 = closure_5(tmp(channels[7]).ActionSheetCloseButton, obj2);
+        cResult[0] = onClose;
+        cResult[1] = tmp9;
+        tmp7 = tmp9;
+      } else {
+        tmp7 = cResult[1];
+      }
+      tmp6 = tmp7;
+    }
+    let obj3 = { title, trailing: tmp6 };
+    const tmp12 = closure_5(tmp(channels[9]).BottomSheetTitleHeader, obj3);
+    cResult[2] = tmp6;
+    cResult[3] = title;
+    cResult[4] = tmp12;
+  }
+  if (null != channels.noChannelOptionLabel) {
+    let tmp15;
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      let obj4 = { source: tmp4(tmp2[11]) };
+      const TableRowIcon = tmp(tmp2[10]).TableRowIcon;
+      const tmp17 = closure_5(TableRowIcon, obj4);
+      cResult[5] = tmp17;
+      tmp15 = tmp17;
+    } else {
+      tmp15 = cResult[5];
+    }
+    if (cResult[6] !== channels.noChannelOptionLabel) {
+      const obj5 = { value: "", label: channels.noChannelOptionLabel, icon: tmp15 };
+      const tmp20 = closure_5(tmp(channels[12]).TableRadioRow, obj5);
+      cResult[6] = channels.noChannelOptionLabel;
+      cResult[7] = tmp20;
+    }
+  }
+  if (cResult[8] !== bottom) {
+    const obj6 = { paddingBottom: bottom };
+    cResult[8] = bottom;
+    cResult[9] = obj6;
+    tmp21 = obj6;
+  } else {
+    tmp21 = cResult[9];
+  }
+  let str2;
+  if (selectedChannel != null) {
+    str2 = selectedChannel.id;
+  }
+  if (str2 == null) {
+    str2 = "";
+  }
+  if (header != null) {
+    title2 = header.title;
+  }
+  if (cResult[10] === channels) {
+    if (cResult[11] === onSelect) {
+      let tmp22;
+      let tmp23;
+      let tmp25;
+      if (cResult[12] === channels) {
+        tmp22 = cResult[13];
+      }
+      if (cResult[14] !== tmp13) {
+        let items = tmp13;
+        if (tmp13 == null) {
+          items = [];
+        }
+        cResult[14] = tmp13;
+        cResult[15] = items;
+        tmp23 = items;
+      } else {
+        tmp23 = cResult[15];
+      }
+      if (cResult[16] === channels) {
+        let tmp24;
+        if (cResult[17] === guild) {
+          tmp24 = cResult[18];
+        }
+        if (cResult[21] === str2) {
+          if (cResult[22] === title2) {
+            if (cResult[23] === tmp22) {
+              if (cResult[24] === tmp23) {
+                let tmp27;
+                if (cResult[25] === tmp24) {
+                  tmp27 = cResult[26];
+                }
+                if (cResult[27] === tmp21) {
+                  let tmp30;
+                  if (cResult[28] === tmp27) {
+                    tmp30 = cResult[29];
+                  }
+                  if (cResult[30] === tmp5) {
+                    let tmp33;
+                    if (cResult[31] === tmp30) {
+                      tmp33 = cResult[32];
+                    }
+                    return tmp33;
+                  }
+                  const obj7 = { scrollable: true, header: tmp5, children: tmp30 };
+                  const tmp35 = closure_5(tmp(channels[17]).ActionSheet, obj7);
+                  cResult[30] = tmp5;
+                  cResult[31] = tmp30;
+                  cResult[32] = tmp35;
+                  tmp33 = tmp35;
+                }
+                const obj8 = { contentContainerStyle: tmp21, children: tmp27 };
+                const tmp32 = closure_5(tmp(channels[16]).BottomSheetScrollView, obj8);
+                cResult[27] = tmp21;
+                cResult[28] = tmp27;
+                cResult[29] = tmp32;
+                tmp30 = tmp32;
+              }
+            }
+          }
+        }
+        const obj9 = { defaultValue: str2, accessibilityLabel: title2, onChange: tmp22, hasIcons: true, children: items1 };
+        items1 = [tmp23, tmp24];
+        const tmp29 = closure_6(tmp(channels[15]).TableRadioGroup, obj9);
+        cResult[21] = str2;
+        cResult[22] = title2;
+        cResult[23] = tmp22;
+        cResult[24] = tmp23;
+        cResult[25] = tmp24;
+        cResult[26] = tmp29;
+        tmp27 = tmp29;
+      }
+      if (cResult[19] !== guild) {
+        class V {
+          constructor(id) {
+            let obj3;
+            let tmp4Result;
+            const obj = utils_ChannelUtils;
+            const channelIconWithGuild = obj.getChannelIconWithGuild(id, guild);
+            const obj2 = { value: id.id, label: obj3.computeChannelName(id, UserStore, RelationshipStore), icon: tmp4Result };
+            const TableRadioRow = TableRadioRow2.TableRadioRow;
+            tmp4Result = null;
+            obj3 = useChannelName;
+            if (null != channelIconWithGuild) {
+              const obj4 = { source: channelIconWithGuild };
+              tmp4Result = tmp4(TableRowIcon2.TableRowIcon, obj4);
+            }
+            return hasOwnProperty(TableRadioRow, obj2, id.id);
+          }
+        }
+        cResult[19] = guild;
+        cResult[20] = V;
+        tmp25 = V;
+      } else {
+        class V {
+          constructor(id) {
+            let obj3;
+            let tmp4Result;
+            const obj = utils_ChannelUtils;
+            const channelIconWithGuild = obj.getChannelIconWithGuild(id, guild);
+            const obj2 = { value: id.id, label: obj3.computeChannelName(id, UserStore, RelationshipStore), icon: tmp4Result };
+            const TableRadioRow = TableRadioRow2.TableRadioRow;
+            tmp4Result = null;
+            obj3 = useChannelName;
+            if (null != channelIconWithGuild) {
+              const obj4 = { source: channelIconWithGuild };
+              tmp4Result = tmp4(TableRowIcon2.TableRowIcon, obj4);
+            }
+            return hasOwnProperty(TableRadioRow, obj2, id.id);
+          }
+        }
+      }
+      const mapped = channels.map(tmp25);
+      cResult[16] = channels;
+      cResult[17] = guild;
+      cResult[18] = mapped;
+      tmp24 = mapped;
+    }
+  }
+  const fn = function _(arg0) {
+    channels = arg0;
+    if ("" === arg0) {
+      const obj = channels;
+      if (null != channels.noChannelOptionLabel) {
+        const obj3 = ActionSheetActionCreatorsDefault;
+        obj3.hideActionSheet();
+        obj.onSelect(null);
+      }
+    }
+    const found = channels.find((id) => id.id === closure_0);
+    if (null != found) {
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet();
+      onSelect(found);
+    }
+  };
+  cResult[10] = channels;
+  cResult[11] = onSelect;
+  cResult[12] = channels;
+  cResult[13] = fn;
+  tmp22 = fn;
+}) : ((noChannelOptionLabel) => {
   let BottomSheetScrollView;
   let TableRadioGroup;
   let TableRowIcon;
@@ -65,7 +287,7 @@ export default function ChannelPickerActionSheet(noChannelOptionLabel) {
   if (null != noChannelOptionLabel.noChannelOptionLabel) {
     let obj3 = { value: "", label: noChannelOptionLabel.noChannelOptionLabel, icon: closure_5(TableRowIcon, obj4) };
     let TableRadioRow = require("TableRadioRow").TableRadioRow;
-    obj4 = { source: tmp(tmp2[10]) };
+    obj4 = { source: tmp(tmp2[11]) };
     TableRowIcon = require("TableRowIcon").TableRowIcon;
     items = closure_5(TableRadioRow, obj3);
   }
@@ -131,4 +353,7 @@ export default function ChannelPickerActionSheet(noChannelOptionLabel) {
     })
   ];
   return closure_5(ActionSheet, obj5);
-};
+});
+const result = size.fileFinishedImporting("modules/channel/native/ChannelPickerActionSheet.tsx");
+
+export default tmp4;

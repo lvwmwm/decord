@@ -1,10 +1,10 @@
-// Module ID: 6539
-// Function ID: 6540
+// Module ID: 6540
+// Function ID: 6541
 // Name: AutomaticLifecycleManager
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 
-// Module 6539 (AutomaticLifecycleManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 6540 (AutomaticLifecycleManager)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/AutomaticLifecycleManager.tsx");

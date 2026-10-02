@@ -1,22 +1,151 @@
-// Module ID: 12580
-// Function ID: 12581
+// Module ID: 12582
+// Function ID: 12583
 // Name: useTimestampTickedNow
-// Dependencies: [32, 19, 4825, 1091, 504, 2040, 2]
-// Exports: useTimestampTickedNow
+// Dependencies: [32, 19, 4826, 1103, 558, 576, 504, 2046, 2]
 
-// Module 12580 (useTimestampTickedNow)
-import DurationsDefault from "Durations" /* 1091 */;
+// Module 12582 (useTimestampTickedNow)
+import react2 from "react" /* 576 */;
+import DurationsDefault from "Durations" /* 1103 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault;
+let _require, importDefault, startResult;
 
-let result = size.fileFinishedImporting("modules/content_inventory/memberlist/useTimestampTickedNow.tsx");
-
-export const useTimestampTickedNow = function useTimestampTickedNow() {
+let tmp;
+const get_initialized = tmp(504);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let obj4;
+  let require;
+  let result;
+  let tmp10;
+  let tmp15;
+  let tmp16;
+  let tmp4;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  let useReducedMotion;
+  const obj = react2;
+  const cResult = obj.c(11);
+  if (cResult[0] !== arg0) {
+    let obj2 = arg0;
+    if (undefined === arg0) {
+      obj2 = {};
+    }
+    cResult[0] = arg0;
+    cResult[1] = obj2;
+    tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  const isAppFocused = tmp4.isAppFocused;
+  let tmp5 = undefined === isAppFocused;
+  const hovered = tmp4.hovered;
+  if (!tmp5) {
+    tmp5 = isAppFocused;
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function u() {
+      const timestamp = Date.now();
+      const rounded = Math.floor(timestamp / DurationsDefault.Millis.SECOND);
+      return rounded * DurationsDefault.Millis.SECOND;
+    };
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  [tmp8, require] = react.useState(tmp6);
+  _slicedToArray(react.useState(tmp6), 2);
+  const obj3 = react;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    const fn2 = function w() {
+      return useReducedMotion.useReducedMotion;
+    };
+    cResult[3] = items;
+    cResult[4] = fn2;
+    tmp10 = fn2;
+    tmp9 = items;
+  } else {
+    tmp9 = cResult[3];
+    tmp10 = cResult[4];
+  }
+  const tmpResult = get_initialized;
+  let stateFromStores = tmpResult.useStateFromStores(tmp9, tmp10);
+  let tmp13 = !tmp5;
+  if (tmp5) {
+    if (stateFromStores) {
+      stateFromStores = !hovered;
+    }
+    tmp13 = stateFromStores;
+  }
+  const SECOND = DurationsDefault.Millis.SECOND;
+  if (tmp13) {
+    result = 15 * SECOND;
+  } else {
+    result = SECOND;
+  }
+  importDefault = result;
+  if (cResult[5] !== result) {
+    class C {
+      constructor() {
+        interval = new closure_0(closure_1_2[7]).Interval();
+        closure_0 = interval;
+        startResult = interval.start(SECOND, () => {
+          const timestamp = Date.now();
+          const rounded = Math.floor(timestamp / DurationsDefault.Millis.SECOND);
+          interval(rounded * DurationsDefault.Millis.SECOND);
+        });
+        return () => interval.stop();
+      }
+    }
+    const items1 = [result];
+    cResult[5] = result;
+    cResult[6] = C;
+    cResult[7] = items1;
+    tmp16 = items1;
+    tmp15 = C;
+  } else {
+    class C {
+      constructor() {
+        interval = new closure_0(closure_1_2[7]).Interval();
+        closure_0 = interval;
+        startResult = interval.start(SECOND, () => {
+          const timestamp = Date.now();
+          const rounded = Math.floor(timestamp / DurationsDefault.Millis.SECOND);
+          interval(rounded * DurationsDefault.Millis.SECOND);
+        });
+        return () => interval.stop();
+      }
+    }
+    tmp16 = cResult[7];
+  }
+  const effect = obj3.useEffect(tmp15, tmp16);
+  if (cResult[8] === tmp8) {
+    class C {
+      constructor() {
+        interval = new closure_0(closure_1_2[7]).Interval();
+        closure_0 = interval;
+        startResult = interval.start(SECOND, () => {
+          const timestamp = Date.now();
+          const rounded = Math.floor(timestamp / DurationsDefault.Millis.SECOND);
+          interval(rounded * DurationsDefault.Millis.SECOND);
+        });
+        return () => interval.stop();
+      }
+    }
+    return obj4;
+  }
+  obj4 = { now: tmp8, slowTickMode: tmp13 };
+  cResult[8] = tmp8;
+  cResult[9] = tmp13;
+  cResult[10] = obj4;
+}) : (() => {
   let _undefined;
   let closure_0;
   let hovered;
@@ -59,7 +188,7 @@ export const useTimestampTickedNow = function useTimestampTickedNow() {
   importDefault = result;
   const items1 = [result];
   const effect = obj2.useEffect(() => {
-    const interval = new closure_0(dependencyMap[5]).Interval();
+    const interval = new closure_0(dependencyMap[7]).Interval();
     interval.start(c1, () => {
       const timestamp = Date.now();
       const rounded = Math.floor(timestamp / c1(dependencyMap[3]).Millis.SECOND);
@@ -68,4 +197,7 @@ export const useTimestampTickedNow = function useTimestampTickedNow() {
     return () => interval.stop();
   }, items1);
   return { now, slowTickMode };
-};
+});
+let result = size.fileFinishedImporting("modules/content_inventory/memberlist/useTimestampTickedNow.tsx");
+
+export const useTimestampTickedNow = tmp2;

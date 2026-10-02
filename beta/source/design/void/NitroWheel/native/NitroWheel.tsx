@@ -1,21 +1,40 @@
-// Module ID: 13667
-// Function ID: 13668
+// Module ID: 13669
+// Function ID: 13670
 // Name: NitroWheel
-// Dependencies: [19, 21, 5899, 8661, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 5896, 8658, 2]
 
-// Module 13667 (NitroWheel)
+// Module 13669 (NitroWheel)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8661 */;
+import react2 from "react" /* 576 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8658 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("design/void/NitroWheel/native/NitroWheel.tsx");
+let style;
 
-export default function NitroWheel(style) {
+const jsx = Fragment.jsx;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+  let tmp3;
+  const obj = react2;
+  const cResult = obj.c(2);
+  style = style.style;
+  if (cResult[0] !== style) {
+    FastImageDefault;
+    const tmp7 = <tmp6 source={AssetRegistryDefault} style={style} resizeMode="contain" />;
+    cResult[0] = style;
+    cResult[1] = tmp7;
+    tmp3 = tmp7;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return tmp3;
+}) : ((style) => {
   style = style.style;
   FastImageDefault;
   return <tmp source={AssetRegistryDefault} style={style} resizeMode="contain" />;
-};
+});
+const result = size.fileFinishedImporting("design/void/NitroWheel/native/NitroWheel.tsx");
+
+export default tmp3;

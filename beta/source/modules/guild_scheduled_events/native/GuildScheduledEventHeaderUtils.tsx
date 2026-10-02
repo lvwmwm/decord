@@ -1,16 +1,16 @@
-// Module ID: 9073
-// Function ID: 9074
+// Module ID: 9050
+// Function ID: 9051
 // Name: GuildScheduledEventHeaderUtils
-// Dependencies: [6946, 2051, 8946, 576, 9074, 1115, 8082, 9075, 2]
+// Dependencies: [6950, 2057, 8941, 588, 9051, 1127, 8971, 9052, 2]
 // Exports: getGuildScheduledEventHeaderProps
 
-// Module 9073 (GuildScheduledEventHeaderUtils)
-import nativeDefault from "native" /* 576 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;
-import ScheduleUtils from "ScheduleUtils" /* 8946 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9074 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9075 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6946 */;
+// Module 9050 (GuildScheduledEventHeaderUtils)
+import nativeDefault from "native" /* 588 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
+import ScheduleUtils from "ScheduleUtils" /* 8941 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9051 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9052 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6950 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -49,30 +49,30 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
   const ICON_SUBTLE = nativeDefault.colors.ICON_SUBTLE;
   let tmp8Result = AssetRegistryDefault;
   if (tmp4) {
-    const intl4 = tmp(1115).intl;
-    let stringResult = intl4.string(tmp(1115).t["X2K3/4"]);
+    const intl4 = tmp(1127).intl;
+    let stringResult = intl4.string(tmp(1127).t["X2K3/4"]);
     if (isStage) {
-      tmp8Result = tmp8(8082);
+      tmp8Result = tmp8(8971);
     }
     let entity_type;
     if (event != null) {
       entity_type = event.entity_type;
     }
     if (entity_type === constants.EXTERNAL) {
-      const intl5 = tmp(1115).intl;
-      stringResult = intl5.string(tmp(1115).t.TxqPQR);
+      const intl5 = tmp(1127).intl;
+      stringResult = intl5.string(tmp(1127).t.TxqPQR);
     }
-    ICON_FEEDBACK_CRITICAL = tmp8(576).colors.ICON_FEEDBACK_POSITIVE;
+    ICON_FEEDBACK_CRITICAL = tmp8(588).colors.ICON_FEEDBACK_POSITIVE;
     stringResult1 = stringResult;
     tmp8Result3 = tmp8Result;
   } else if (tmp7) {
-    tmp8Result3 = tmp8(9075);
+    tmp8Result3 = tmp8(9052);
     stringResult1 = startDateTimeString;
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
   } else if (currentOrPastEvent) {
-    tmp8Result3 = tmp8(9075);
-    const intl3 = tmp(1115).intl;
-    stringResult1 = intl3.string(tmp(1115).t.WINqKV);
+    tmp8Result3 = tmp8(9052);
+    const intl3 = tmp(1127).intl;
+    stringResult1 = intl3.string(tmp(1127).t.WINqKV);
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
   } else {
     tmp8Result3 = tmp8Result;
@@ -82,12 +82,12 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
       let formatToPlainStringResult;
       const tmp8Result4 = AssetRegistryDefault2;
       if (diffMinutes > 0) {
-        const intl2 = tmp(1115).intl;
+        const intl2 = tmp(1127).intl;
         const obj2 = { minutes: diffMinutes };
-        formatToPlainStringResult = intl2.formatToPlainString(tmp(1115).t.PQlCWk, obj2);
+        formatToPlainStringResult = intl2.formatToPlainString(tmp(1127).t.PQlCWk, obj2);
       } else {
-        const intl = tmp(1115).intl;
-        formatToPlainStringResult = intl.string(tmp(1115).t.WINqKV);
+        const intl = tmp(1127).intl;
+        formatToPlainStringResult = intl.string(tmp(1127).t.WINqKV);
       }
       stringResult1 = formatToPlainStringResult;
       tmp8Result3 = tmp8Result4;
@@ -95,10 +95,10 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
     }
   }
   if (isCanceled) {
-    ICON_FEEDBACK_CRITICAL = tmp8(576).colors.ICON_FEEDBACK_CRITICAL;
+    ICON_FEEDBACK_CRITICAL = tmp8(588).colors.ICON_FEEDBACK_CRITICAL;
   }
   const obj3 = { icon: tmp8Result3, text: stringResult1, color: internal.resolveSemanticColor(theme, ICON_FEEDBACK_CRITICAL), shouldChangeTextColor: tmp17 };
-  internal = tmp8(576).internal;
+  internal = tmp8(588).internal;
   tmp17 = !tmp7;
   if (tmp17) {
     if (!tmp4) {

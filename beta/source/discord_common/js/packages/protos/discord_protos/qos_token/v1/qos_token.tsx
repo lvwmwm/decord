@@ -1,10 +1,10 @@
-// Module ID: 13686
-// Function ID: 13687
+// Module ID: 13688
+// Function ID: 13689
 // Name: qos_token
-// Dependencies: [32, 1187, 2]
+// Dependencies: [32, 1199, 2]
 
-// Module 13686 (qos_token)
-import _mod1187 from "module_1187" /* 1187 */;
+// Module 13688 (qos_token)
+import _mod1199 from "module_1199" /* 1199 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ function T() {
 const T2 = function T() {
   return clientProvidedQosDataType;
 };
-const MessageType = _mod1187.MessageType;
+const MessageType = _mod1199.MessageType;
 class QosToken$Type extends MessageType {
   constructor() {
     const items = [, ];
@@ -33,9 +33,9 @@ class QosToken$Type extends MessageType {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -74,7 +74,7 @@ class QosToken$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -88,21 +88,21 @@ class QosToken$Type extends MessageType {
     if (clientProvided.clientProvided) {
       internalBinaryWrite = closure_3.internalBinaryWrite;
       clientProvided = clientProvided.clientProvided;
-      const tagResult = tag.tag(1, _mod1187.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1199.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(clientProvided, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (clientProvided.derived) {
       internalBinaryWrite2 = clientProvidedQosDataType.internalBinaryWrite;
       const derived = clientProvided.derived;
-      const tagResult1 = tag.tag(2, _mod1187.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1199.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(derived, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, clientProvided, tag);
@@ -114,7 +114,7 @@ const prototype = QosToken$Type.prototype;
 let obj = { no: 1, name: "client_provided", kind: "message", T };
 let items = [obj, { no: 2, name: "derived", kind: "message", T: T2 }];
 const defineProperty1 = new defineProperty("discord_protos.qos_token.v1.QosToken", items, tmp3, tmp2, "create");
-const MessageType2 = _mod1187.MessageType;
+const MessageType2 = _mod1199.MessageType;
 class ClientProvidedQosData$Type extends MessageType2 {
   constructor() {
     const items = [{ no: 1, name: "is_active", kind: "scalar", T: 8 }];
@@ -125,9 +125,9 @@ class ClientProvidedQosData$Type extends MessageType2 {
     const obj = { isActive: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -164,7 +164,7 @@ class ClientProvidedQosData$Type extends MessageType2 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -176,13 +176,13 @@ class ClientProvidedQosData$Type extends MessageType2 {
   }
   internalBinaryWrite(isActive, tag, writeUnknownFields) {
     if (false !== isActive.isActive) {
-      const tagResult = tag.tag(1, _mod1187.WireType.Varint);
+      const tagResult = tag.tag(1, _mod1199.WireType.Varint);
       tagResult.bool(isActive.isActive);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, isActive, tag);
@@ -194,7 +194,7 @@ const prototype2 = ClientProvidedQosData$Type.prototype;
 const items1 = [{ no: 1, name: "is_active", kind: "scalar", T: 8 }];
 let tmp4 = new tmp("discord_protos.qos_token.v1.ClientProvidedQosData", items1, tmp3, tmp2, "create", "internalBinaryRead", ClientProvidedQosData$Type, "internalBinaryWrite", tmp, undefined, require, dependencyMap);
 const _false = tmp4;
-const MessageType3 = _mod1187.MessageType;
+const MessageType3 = _mod1199.MessageType;
 class DerivedQosData$Type extends MessageType3 {
   constructor() {
     const items = [{ no: 1, name: "claims", kind: "scalar", T: 12 }, { no: 2, name: "signature", kind: "scalar", T: 12 }, { no: 3, name: "key_id", kind: "scalar", T: 13 }];
@@ -209,9 +209,9 @@ class DerivedQosData$Type extends MessageType3 {
     uint8Array1 = new Uint8Array(0);
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmp3Result = _mod1187;
+      const tmp3Result = _mod1199;
       const result = tmp3Result.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -252,7 +252,7 @@ class DerivedQosData$Type extends MessageType3 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -264,21 +264,21 @@ class DerivedQosData$Type extends MessageType3 {
   }
   internalBinaryWrite(claims, tag, writeUnknownFields) {
     if (claims.claims.length) {
-      const tagResult = tag.tag(1, _mod1187.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1199.WireType.LengthDelimited);
       tagResult.bytes(claims.claims);
     }
     if (claims.signature.length) {
-      const tagResult1 = tag.tag(2, _mod1187.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1199.WireType.LengthDelimited);
       tagResult1.bytes(claims.signature);
     }
     if (0 !== claims.keyId) {
-      const tagResult2 = tag.tag(3, _mod1187.WireType.Varint);
+      const tagResult2 = tag.tag(3, _mod1199.WireType.Varint);
       tagResult2.uint32(claims.keyId);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, claims, tag);
@@ -289,7 +289,7 @@ class DerivedQosData$Type extends MessageType3 {
 const prototype3 = DerivedQosData$Type.prototype;
 const items2 = [{ no: 1, name: "claims", kind: "scalar", T: 12 }, { no: 2, name: "signature", kind: "scalar", T: 12 }, { no: 3, name: "key_id", kind: "scalar", T: 13 }];
 const clientProvidedQosDataType = new ClientProvidedQosData$Type("discord_protos.qos_token.v1.DerivedQosData", items2, tmp3, DerivedQosData$Type, "create", "internalBinaryRead", ClientProvidedQosData$Type, "internalBinaryWrite", items2, undefined, require, dependencyMap, this, defineProperty1, tmp4);
-const MessageType4 = _mod1187.MessageType;
+const MessageType4 = _mod1199.MessageType;
 class Claims$Type extends MessageType4 {
   constructor() {
     const items = [{ no: 1, name: "user_id", kind: "scalar", T: 6 }, { no: 2, name: "issued_at", kind: "scalar", T: 6 }, { no: 3, name: "is_staff", kind: "scalar", T: 8 }, { no: 4, name: "auth_token_hash", kind: "scalar", T: 12 }, { no: 5, name: "expires_at", kind: "scalar", T: 6 }];
@@ -302,9 +302,9 @@ class Claims$Type extends MessageType4 {
     uint8Array = new Uint8Array(0);
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmp2Result = _mod1187;
+      const tmp2Result = _mod1199;
       const result = tmp2Result.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -352,7 +352,7 @@ class Claims$Type extends MessageType4 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -364,29 +364,29 @@ class Claims$Type extends MessageType4 {
   }
   internalBinaryWrite(userId, tag, writeUnknownFields) {
     if ("0" !== userId.userId) {
-      const tagResult = tag.tag(1, _mod1187.WireType.Bit64);
+      const tagResult = tag.tag(1, _mod1199.WireType.Bit64);
       tagResult.fixed64(userId.userId);
     }
     if ("0" !== userId.issuedAt) {
-      const tagResult1 = tag.tag(2, _mod1187.WireType.Bit64);
+      const tagResult1 = tag.tag(2, _mod1199.WireType.Bit64);
       tagResult1.fixed64(userId.issuedAt);
     }
     if (false !== userId.isStaff) {
-      const tagResult2 = tag.tag(3, _mod1187.WireType.Varint);
+      const tagResult2 = tag.tag(3, _mod1199.WireType.Varint);
       tagResult2.bool(userId.isStaff);
     }
     if (userId.authTokenHash.length) {
-      const tagResult3 = tag.tag(4, _mod1187.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1199.WireType.LengthDelimited);
       tagResult3.bytes(userId.authTokenHash);
     }
     if ("0" !== userId.expiresAt) {
-      const tagResult4 = tag.tag(5, _mod1187.WireType.Bit64);
+      const tagResult4 = tag.tag(5, _mod1199.WireType.Bit64);
       tagResult4.fixed64(userId.expiresAt);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, userId, tag);

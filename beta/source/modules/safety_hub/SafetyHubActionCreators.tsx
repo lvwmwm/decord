@@ -1,17 +1,17 @@
-// Module ID: 11360
-// Function ID: 11361
+// Module ID: 11235
+// Function ID: 11236
 // Name: SafetyHubActionCreators
-// Dependencies: [5, 502, 7881, 7868, 1074, 573, 1271, 4986, 7867, 2]
+// Dependencies: [5, 502, 7885, 7872, 1086, 585, 1283, 4987, 7871, 2]
 // Exports: getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification, resetAgeCheckStatus
 
-// Module 11360 (SafetyHubActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 11235 (SafetyHubActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubStore from "SafetyHubStore" /* 7881 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7868 */;
+import SafetyHubStore from "SafetyHubStore" /* 7885 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7872 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ let c0, c3, c4, signal, suspendedUserToken, user_input;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f93504 = (filename) => {
+const f106778 = (filename) => {
   filename = filename.filename;
   obj = closure_1_0(closure_1_2[7]);
   let isImageFileResult = obj.isImageFile(filename);
@@ -53,7 +53,7 @@ let obj = function _getSafetyHubData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -130,7 +130,7 @@ let obj = function _getSafetyHubData() {
                     let items;
                     const first = flagged_content.flagged_content[0];
                     const attachments = first.attachments;
-                    first.attachments = attachments.filter(f93504);
+                    first.attachments = attachments.filter(f106778);
                     let tmp2 = closure_1_0;
                     obj = closure_1_0(closure_1_2[8]);
                     if (obj.isFlaggedContentEmpty(first)) {
@@ -178,7 +178,7 @@ let obj = function _getSafetyHubData() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp8) {
         c0 = 3;
@@ -208,7 +208,7 @@ obj = function _getSafetyHubDataForClassification() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -282,7 +282,7 @@ obj = function _getSafetyHubDataForClassification() {
                       let items;
                       const first = found.flagged_content[0];
                       const attachments = first.attachments;
-                      first.attachments = attachments.filter(f93504);
+                      first.attachments = attachments.filter(f106778);
                       const obj3 = closure_2_0(closure_2_2[8]);
                       if (obj3.isFlaggedContentEmpty(first)) {
                         items = [];
@@ -312,7 +312,7 @@ obj = function _getSafetyHubDataForClassification() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c1 = 3;
@@ -346,7 +346,7 @@ obj = function _requestReview() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -425,7 +425,7 @@ obj = function _requestReview() {
           return obj;
         } else {
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp13) {
         c3 = 3;
@@ -453,7 +453,7 @@ obj = function _requestSuspendedUserAgeVerification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -514,7 +514,7 @@ obj = function _requestSuspendedUserAgeVerification() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp4) {
           c1 = 3;
@@ -545,7 +545,7 @@ obj = function _checkSuspendedUserAgeVerification() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -611,7 +611,7 @@ obj = function _checkSuspendedUserAgeVerification() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp4) {
         c0 = 3;
@@ -644,7 +644,7 @@ obj = function _checkSuspendedUserAgeVerificationV() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -719,7 +719,7 @@ obj = function _checkSuspendedUserAgeVerificationV() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp4) {
           c1 = 3;

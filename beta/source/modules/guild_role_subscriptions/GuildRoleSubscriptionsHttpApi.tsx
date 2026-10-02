@@ -1,13 +1,13 @@
-// Module ID: 6674
-// Function ID: 6675
+// Module ID: 6675
+// Function ID: 6676
 // Name: GuildRoleSubscriptionsHttpApi
-// Dependencies: [5, 1074, 1085, 1271, 4735, 2]
+// Dependencies: [5, 1086, 1097, 1283, 4737, 2]
 // Exports: archiveGuildRoleSubscriptionListing, createGuildRoleSubscriptionGroupListing, createGuildRoleSubscriptionListing, deleteGuildRoleSubscriptionGroupListing, deleteGuildRoleSubscriptionListing, fetchHighlightedCreatorGuildDetails, getGuildMonetizationRestrictions, getGuildRoleSubscriptionGroupForSubscriptionPlan, getGuildRoleSubscriptionGroupListing, getGuildRoleSubscriptionGroupListingsForGuild, getGuildRoleSubscriptionTrialEligibility, getGuildRoleSubscriptionTrials, getGuildRoleSubscriptionsSettings, getPriceTiers, updateGuildRoleSubscriptionGroupListing, updateGuildRoleSubscriptionListing, updateGuildRoleSubscriptionsSettings, updateGuildRoleSubscriptionsTrial
 
-// Module 6674 (GuildRoleSubscriptionsHttpApi)
-import Constants from "Constants" /* 1074 */;
-import Constants2 from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 6675 (GuildRoleSubscriptionsHttpApi)
+import Constants from "Constants" /* 1086 */;
+import Constants2 from "Constants" /* 1097 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _updateGuildRoleSubscriptionGroupListing() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -106,7 +106,7 @@ obj = function _createGuildRoleSubscriptionGroupListing() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -179,7 +179,7 @@ obj = function _deleteGuildRoleSubscriptionGroupListing() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -224,7 +224,7 @@ obj = function _deleteGuildRoleSubscriptionGroupListing() {
         } else {
           c5 = 0;
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp14) {
         closure_4 = tmp14;
@@ -259,7 +259,7 @@ obj = function _createGuildRoleSubscriptionListing() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -279,7 +279,7 @@ obj = function _createGuildRoleSubscriptionListing() {
               closure_3 = Object.assign(priceTier, Object.assign({ priceTier: 0 }));
               c7 = 1;
               c8 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -357,7 +357,7 @@ obj = function _updateGuildRoleSubscriptionListing() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -377,7 +377,7 @@ obj = function _updateGuildRoleSubscriptionListing() {
               closure_4 = Object.assign(priceTier, Object.assign({ priceTier: 0 }));
               c8 = 1;
               c9 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {
@@ -449,7 +449,7 @@ obj = function _getGuildRoleSubscriptionGroupListingsForGuild() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -476,7 +476,7 @@ obj = function _getGuildRoleSubscriptionGroupListingsForGuild() {
             obj6 = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c6) {
           if (arg0 === 1) {
@@ -536,13 +536,13 @@ obj = function _getGuildRoleSubscriptionsSettings() {
   obj = _asyncToGenerator(async (arg0) => {
     let c1;
     let c2;
-    let obj4;
+    let obj7;
     let closure_0 = arg0;
     const HTTP = HTTPUtils.HTTP;
-    const obj5 = { url: Endpoints.GUILD_ROLE_SUBSCRIPTIONS_SETTINGS(closure_0), rejectWithError: obj4.rejectWithMigratedError() };
+    const obj4 = { url: Endpoints.GUILD_ROLE_SUBSCRIPTIONS_SETTINGS(closure_0), rejectWithError: obj7.rejectWithMigratedError() };
     const get = HTTP.get;
-    obj4 = HTTPUtils;
-    await get(obj5);
+    obj7 = HTTPUtils;
+    await get(obj4);
     return arg1.body;
   });
   return obj(...arguments);
@@ -564,7 +564,7 @@ obj = function _updateGuildRoleSubscriptionsSettings() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -640,7 +640,7 @@ obj = function _getPriceTiers() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -716,7 +716,7 @@ obj = function _getGuildRoleSubscriptionGroupListing() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -739,7 +739,7 @@ obj = function _getGuildRoleSubscriptionGroupListing() {
             }
             c7 = 1;
             c8 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {
@@ -809,7 +809,7 @@ obj = function _getGuildRoleSubscriptionGroupForSubscriptionPlan() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -886,7 +886,7 @@ obj = function _deleteGuildRoleSubscriptionListing() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -931,7 +931,7 @@ obj = function _deleteGuildRoleSubscriptionListing() {
         } else {
           c6 = 0;
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp14) {
         closure_5 = tmp14;
@@ -962,7 +962,7 @@ obj = function _archiveGuildRoleSubscriptionListing() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -1037,7 +1037,7 @@ obj = function _getGuildRoleSubscriptionTrials() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -1116,7 +1116,7 @@ obj = function _updateGuildRoleSubscriptionsTrial() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1190,7 +1190,7 @@ obj = function _getGuildRoleSubscriptionTrialEligibility() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -1266,7 +1266,7 @@ obj = function _getGuildMonetizationRestrictions() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -1291,7 +1291,7 @@ obj = function _getGuildMonetizationRestrictions() {
             signal = obj4.signal;
             c6 = 1;
             c7 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c6) {
           if (arg0 === 1) {
@@ -1360,7 +1360,7 @@ obj = function _fetchHighlightedCreatorGuildDetails() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;

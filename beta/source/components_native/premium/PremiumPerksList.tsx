@@ -1,17 +1,20 @@
-// Module ID: 15291
-// Function ID: 15292
+// Module ID: 15279
+// Function ID: 15280
 // Name: PremiumPerksList
-// Dependencies: [19, 17, 21, 4836, 576, 4832, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4833, 2]
 
-// Module 15291 (PremiumPerksList)
+// Module 15279 (PremiumPerksList)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import nativeDefault from "native" /* 588 */;
+import Text_Text from "Text/Text" /* 4833 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+let _require, perks;
 
 let c3;
 let closure_4;
@@ -21,10 +24,73 @@ const View = react_native.View;
 let obj = { perkInfoContainer: { flexDirection: "row", alignItems: "center", gap: 16 }, perkInfoTextContainer: { flexDirection: "column", gap: 4, maxWidth: 279 }, perkListContainer: { width: "100%", paddingVertical: 24, flexDirection: "column", gap: 24 }, perkIconContainer: size };
 size = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.round, width: 40, height: 40, justifyContent: "center", alignItems: "center" };
 let closure_5 = createStyles.createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("components_native/premium/PremiumPerksList.tsx");
-
-export default function PremiumPerksList(perks) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((perks) => {
+  let closure_0;
+  let tmp4;
+  let obj = require("react");
+  const cResult = obj.c(12);
+  perks = perks.perks;
+  const tmp2 = closure_5();
+  _require = tmp2;
+  if (cResult[0] === perks) {
+    if (cResult[1] === tmp2.perkIconContainer) {
+      if (cResult[2] === tmp2.perkInfoContainer) {
+        if (cResult[3] === tmp2.perkInfoTextContainer) {
+          tmp4 = cResult[4];
+        }
+        if (cResult[9] === tmp2.perkListContainer) {
+          let tmp7;
+          if (cResult[10] === tmp4) {
+            tmp7 = cResult[11];
+          }
+          return tmp7;
+        }
+        let obj2 = { style: tmp3, children: tmp4 };
+        const tmp10 = closure_3(View, obj2);
+        cResult[9] = tmp2.perkListContainer;
+        cResult[10] = tmp4;
+        cResult[11] = tmp10;
+        tmp7 = tmp10;
+      }
+    }
+  }
+  if (cResult[5] === tmp2.perkIconContainer) {
+    if (cResult[6] === tmp2.perkInfoContainer) {
+      let tmp5;
+      if (cResult[7] === tmp2.perkInfoTextContainer) {
+        tmp5 = cResult[8];
+      }
+      const mapped = perks.map(tmp5);
+      cResult[0] = perks;
+      cResult[1] = tmp2.perkIconContainer;
+      cResult[2] = tmp2.perkInfoContainer;
+      cResult[3] = tmp2.perkInfoTextContainer;
+      cResult[4] = mapped;
+      tmp4 = mapped;
+    }
+  }
+  const fn = function p(children, arg1) {
+    let items;
+    let items1;
+    const obj = { style: closure_0.perkInfoContainer, children: items };
+    items = [, ];
+    const obj2 = { style: closure_0.perkIconContainer, children: _false(children.IconComponent, { size: "md" }) };
+    items[0] = _false(View, obj2);
+    const obj3 = { style: closure_0.perkInfoTextContainer, children: items1 };
+    items1 = [, ];
+    const obj4 = { variant: "text-md/bold", color: "text-strong", children: children.label };
+    items1[0] = _false(Text_Text.Text, obj4);
+    const obj5 = { variant: "text-md/medium", color: "text-default", children: children.description };
+    items1[1] = _false(Text_Text.Text, obj5);
+    items[1] = React3(View, obj3);
+    return React3(View, obj, arg1);
+  };
+  cResult[5] = tmp2.perkIconContainer;
+  cResult[6] = tmp2.perkInfoContainer;
+  cResult[7] = tmp2.perkInfoTextContainer;
+  cResult[8] = fn;
+  tmp5 = fn;
+}) : ((perks) => {
   perks = perks.perks;
   const tmp = closure_5();
   let closure_0 = tmp;
@@ -48,4 +114,8 @@ export default function PremiumPerksList(perks) {
     })
   };
   return closure_3(View, obj);
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("components_native/premium/PremiumPerksList.tsx");
+
+export default tmp4;

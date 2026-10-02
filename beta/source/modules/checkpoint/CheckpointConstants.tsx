@@ -1,9 +1,9 @@
-// Module ID: 5061
-// Function ID: 5062
+// Module ID: 5062
+// Function ID: 5063
 // Name: CheckpointConstants
 // Dependencies: [2]
 
-// Module 5061 (CheckpointConstants)
+// Module 5062 (CheckpointConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointConstants.tsx");

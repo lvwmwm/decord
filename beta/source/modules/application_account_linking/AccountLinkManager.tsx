@@ -1,17 +1,17 @@
-// Module ID: 16765
-// Function ID: 16766
+// Module ID: 16767
+// Function ID: 16768
 // Name: AccountLinkManager
-// Dependencies: [32, 5, 6528, 16766, 1074, 1091, 1271, 6539, 2]
+// Dependencies: [32, 5, 6529, 16768, 1086, 1103, 1283, 6540, 2]
 // Exports: claimIncentivizedAccountLinkingReward
 
-// Module 16765 (AccountLinkManager)
-import DurationsDefault from "Durations" /* 1091 */;
+// Module 16767 (AccountLinkManager)
+import DurationsDefault from "Durations" /* 1103 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6528 */;
-import AccountLinkStore from "AccountLinkStore" /* 16766 */;
-import Constants from "Constants" /* 1074 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6529 */;
+import AccountLinkStore from "AccountLinkStore" /* 16768 */;
+import Constants from "Constants" /* 1086 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let postResult;
@@ -54,9 +54,9 @@ let obj = function _claimIncentivizedAccountLinkingReward() {
         }
         c4 = 0;
       }
-      await "HermesInternal";
+      await "IconComponent";
       ({ applicationId: c0, onSuccess: c1, onError: c2 } = closure_0);
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;

@@ -1,10 +1,10 @@
-// Module ID: 558
-// Function ID: 559
+// Module ID: 568
+// Function ID: 569
 // Name: shallowEqual
 // Dependencies: [2]
 // Exports: areArraysShallowEqual, default
 
-// Module 558 (shallowEqual)
+// Module 568 (shallowEqual)
 import size from "module_2" /* 2 */;
 
 let closure_0 = {};
@@ -51,7 +51,7 @@ export default function shallowEqual(arg0, arg1, arr) {
     return arg0 === arg1;
   }
 };
-export const areArraysShallowEqual = function areArraysShallowEqual(items1, current) {
+export const areArraysShallowEqual = function areArraysShallowEqual(memo, current) {
   let logCallback;
   let shouldWarnLargeObjects;
   closure_0 = current;
@@ -60,6 +60,6 @@ export const areArraysShallowEqual = function areArraysShallowEqual(items1, curr
     tmp = closure_0;
   }
   ({ logCallback, shouldWarnLargeObjects } = tmp);
-  const tmp2 = null != current && items1.length === current.length && items1.every((item, index) => closure_0[index] === item);
+  const tmp2 = null != current && memo.length === current.length && memo.every((item, index) => closure_0[index] === item);
   return tmp2;
 };

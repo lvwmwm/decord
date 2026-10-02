@@ -1,10 +1,10 @@
 // Module ID: 5681
 // Function ID: 5682
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 5681 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 267, height: 267, scales: [1], hash: "8004c631509b26672d76ec4ff50dd8cb", name: "img_roblox_light", type: "svg" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "8fce658b14b12e381e1ecc554a57f171", name: "img_roblox_white", type: "png" });

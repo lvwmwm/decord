@@ -1,13 +1,13 @@
-// Module ID: 16254
-// Function ID: 16255
+// Module ID: 16256
+// Function ID: 16257
 // Name: VibegrationsRemix
-// Dependencies: [5, 12642, 8496, 3715, 1115, 2]
+// Dependencies: [5, 12644, 8493, 3718, 1127, 2]
 // Exports: remixVibegrationsProjectInto
 
-// Module 16254 (VibegrationsRemix)
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8496 */;
+// Module 16256 (VibegrationsRemix)
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8493 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12642 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12644 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, status;
@@ -36,7 +36,7 @@ let obj = function _remixVibegrationsProjectInto() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

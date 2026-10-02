@@ -1,11 +1,11 @@
-// Module ID: 1355
-// Function ID: 1356
+// Module ID: 567
+// Function ID: 568
 // Name: timers
-// Dependencies: [1352, 2]
+// Dependencies: [564, 2]
 // Exports: keepAliveWorkaround, registerTimerPolyfills, setTimersMonitorCallback
 
-// Module 1355 (timers)
-import global_types from "global_types" /* 1352 */;
+// Module 567 (timers)
+import global_types from "global_types" /* 564 */;
 import size from "module_2" /* 2 */;
 
 function setTimeout(arg0, arg1) {

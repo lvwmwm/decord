@@ -1,13 +1,13 @@
-// Module ID: 12451
-// Function ID: 12452
+// Module ID: 12449
+// Function ID: 12450
 // Name: VibegrationsCreateErrors
-// Dependencies: [1074, 1115, 3715, 2]
+// Dependencies: [1086, 1127, 3718, 2]
 // Exports: classifyCreateFailure, createFailureStatus, getVibegrationsCreateErrorMessage
 
-// Module 12451 (VibegrationsCreateErrors)
-import Constants from "Constants" /* 1074 */;
-import intl4 from "intl" /* 1115 */;
-import _modDef3715 from "module_3715" /* 3715 */;
+// Module 12449 (VibegrationsCreateErrors)
+import Constants from "Constants" /* 1086 */;
+import intl4 from "intl" /* 1127 */;
+import _modDef3718 from "module_3718" /* 3718 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
@@ -69,12 +69,12 @@ export const getVibegrationsCreateErrorMessage = function getVibegrationsCreateE
   }
   if ("project_limit" === str) {
     const intl3 = intl4.intl;
-    return intl3.string(_modDef3715.Asusmn);
+    return intl3.string(_modDef3718.Asusmn);
   } else if ("rate_limited" === str) {
     const intl2 = intl4.intl;
-    return intl2.string(_modDef3715.DT6qly);
+    return intl2.string(_modDef3718.DT6qly);
   } else {
     const intl = intl4.intl;
-    return intl.string(_modDef3715.KKkp5Y);
+    return intl.string(_modDef3718.KKkp5Y);
   }
 };

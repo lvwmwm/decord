@@ -1,30 +1,207 @@
-// Module ID: 16610
-// Function ID: 16611
+// Module ID: 16612
+// Function ID: 16613
 // Name: MobileShopButtonCoachmark
-// Dependencies: [19, 17, 2042, 21, 4836, 576, 1115, 10589, 2]
-// Exports: default
+// Dependencies: [19, 17, 2048, 21, 4837, 588, 558, 576, 1127, 9656, 2]
 
-// Module 16610 (MobileShopButtonCoachmark)
+// Module 16612 (MobileShopButtonCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import react_mod from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
+let react = react_mod;
 const Image = react_native.Image;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
 let obj = { image: size };
 size = { height: 80, width: 80, marginTop: nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_16 };
 let closure_6 = createStyles.createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/collectibles/native/MobileShopButtonCoachmark.tsx");
-
-export default function MobileShopButtonCoachmark(marketing) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let image;
+  let marketing;
+  let navigateToShop;
+  let onDismiss;
+  let stringResult;
+  let visible;
+  const obj = navigateToShop(onDismiss[7]);
+  const cResult = obj.c(22);
+  const tmp = navigateToShop;
+  ({ marketing, navigateToShop } = arg0);
+  const tmp2 = onDismiss;
+  ({ visible, onDismiss } = arg0);
+  const tmp4 = closure_6();
+  react = tmp4;
+  const assetLight = marketing.assetLight;
+  const obj2 = react;
+  let closure_4 = react.useRef(false);
+  if (cResult[0] === navigateToShop) {
+    let tmp5;
+    let tmp7;
+    let tmp11;
+    let tmp10;
+    if (cResult[1] === onDismiss) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] !== onDismiss) {
+      class C {
+        constructor() {
+          closure_4.current = true;
+          onDismiss(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+      cResult[3] = onDismiss;
+      cResult[4] = C;
+    } else {
+      class C {
+        constructor() {
+          closure_4.current = true;
+          onDismiss(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+    }
+    let closure_5 = obj2.useRef(onDismiss);
+    if (cResult[5] !== onDismiss) {
+      class D {
+        constructor() {
+          closure_5.current = onDismiss;
+        }
+      }
+      cResult[5] = onDismiss;
+      cResult[6] = D;
+      tmp7 = D;
+    } else {
+      class D {
+        constructor() {
+          closure_5.current = onDismiss;
+        }
+      }
+    }
+    const effect = obj2.useEffect(tmp7);
+    const _Symbol = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      class E {
+        constructor() {
+          return () => {
+            if (!ref.current) {
+              ref2.current(ref.AUTO_DISMISS);
+            }
+          };
+        }
+      }
+      const items = [];
+      cResult[7] = E;
+      cResult[8] = items;
+      tmp11 = items;
+      tmp10 = E;
+    } else {
+      class E {
+        constructor() {
+          return () => {
+            if (!ref.current) {
+              ref2.current(ref.AUTO_DISMISS);
+            }
+          };
+        }
+      }
+      tmp11 = cResult[8];
+    }
+    const effect1 = obj2.useEffect(tmp10, tmp11);
+    if (cResult[9] === assetLight) {
+      class E {
+        constructor() {
+          return () => {
+            if (!ref.current) {
+              ref2.current(ref.AUTO_DISMISS);
+            }
+          };
+        }
+      }
+      if (cResult[12] !== marketing.buttonLabel) {
+        class E {
+          constructor() {
+            return () => {
+              if (!ref.current) {
+                ref2.current(ref.AUTO_DISMISS);
+              }
+            };
+          }
+        }
+        if (stringResult == null) {
+          class E {
+            constructor() {
+              return () => {
+                if (!ref.current) {
+                  ref2.current(ref.AUTO_DISMISS);
+                }
+              };
+            }
+          }
+          stringResult = obj3.string(tmp(tmp2[8]).t.fYfGgK);
+        }
+        cResult[12] = marketing.buttonLabel;
+        cResult[13] = stringResult;
+      } else {
+        class E {
+          constructor() {
+            return () => {
+              if (!ref.current) {
+                ref2.current(ref.AUTO_DISMISS);
+              }
+            };
+          }
+        }
+      }
+      if (cResult[14] === tmp5) {
+        class E {
+          constructor() {
+            return () => {
+              if (!ref.current) {
+                ref2.current(ref.AUTO_DISMISS);
+              }
+            };
+          }
+        }
+      }
+      const obj5 = { title: null, description: null, visible, position: "top", renderImgComponent: tmp13, buttonLabel: tmp14, buttonVariant: "secondary", onButtonPress: tmp5, onDismiss: tmp6 };
+      ({ title: obj4.title, body: obj4.description } = marketing);
+      class R {
+        constructor() {
+          return <Image style={image.image} source={{ uri: assetLight }} />;
+        }
+      }
+      cResult[15] = tmp6;
+      cResult[16] = marketing.body;
+      cResult[17] = marketing.title;
+      cResult[18] = tmp13;
+      cResult[19] = tmp14;
+      cResult[20] = visible;
+      cResult[21] = obj5;
+    }
+    class R {
+      constructor() {
+        return <Image style={image.image} source={{ uri: assetLight }} />;
+      }
+    }
+    cResult[9] = assetLight;
+    cResult[10] = tmp4.image;
+    cResult[11] = R;
+  }
+  const fn = function c() {
+    closure_4.current = true;
+    onDismiss(ContentDismissActionType.TAKE_ACTION);
+    navigateToShop();
+  };
+  cResult[0] = navigateToShop;
+  cResult[1] = onDismiss;
+  cResult[2] = fn;
+  tmp5 = fn;
+}) : ((marketing) => {
   marketing = marketing.marketing;
   const navigateToShop = marketing.navigateToShop;
   const visible = marketing.visible;
@@ -93,7 +270,11 @@ export default function MobileShopButtonCoachmark(marketing) {
     }
     return obj;
   }, items2);
-  let obj = marketing(navigateToShop[7]);
+  let obj = marketing(navigateToShop[9]);
   const coachmark = obj.useCoachmark(shopButtonRef, memo);
   return null;
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/collectibles/native/MobileShopButtonCoachmark.tsx");
+
+export default tmp2;

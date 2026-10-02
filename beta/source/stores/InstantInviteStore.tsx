@@ -1,16 +1,16 @@
-// Module ID: 7827
-// Function ID: 7828
+// Module ID: 7831
+// Function ID: 7832
 // Name: InstantInviteStore
-// Dependencies: [7828, 7155, 7829, 7831, 7832, 504, 573, 2]
+// Dependencies: [7832, 7159, 7833, 7835, 7836, 504, 585, 2]
 
-// Module 7827 (InstantInviteStore)
+// Module 7831 (InstantInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 7155 */;
-import headDefault from "head" /* 7829 */;
-import reverseDefault from "reverse" /* 7831 */;
-import _modDef7832 from "module_7832" /* 7832 */;
-import InviteRecord from "InviteRecord" /* 7828 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 7159 */;
+import headDefault from "head" /* 7833 */;
+import reverseDefault from "reverse" /* 7835 */;
+import _modDef7836 from "module_7836" /* 7836 */;
+import InviteRecord from "InviteRecord" /* 7832 */;
 import size from "module_2" /* 2 */;
 
 let c2, closure_5, closure_6, closure_7;
@@ -94,7 +94,7 @@ let obj = {
     closure_8[invite.invite.code] = InviteRecord.createFromServer(invite.invite);
     const tmp = headDefault;
     const tmp2 = reverseDefault;
-    const tmp3 = _modDef7832;
+    const tmp3 = _modDef7836;
     let tmpResult = tmp(tmp2(tmp3(Object.values(closure_8), "createdAt")));
     if (tmpResult == null) {
       tmpResult = null;
@@ -116,7 +116,7 @@ let obj = {
     }
     const tmp2 = headDefault;
     const tmp3 = reverseDefault;
-    const tmp4 = _modDef7832;
+    const tmp4 = _modDef7836;
     let tmp2Result = tmp2(tmp3(tmp4(Object.values(closure_8), "createdAt")));
     if (tmp2Result == null) {
       tmp2Result = null;
@@ -170,7 +170,7 @@ let obj = {
     });
     const tmp2 = headDefault;
     const tmp3 = reverseDefault;
-    const tmp4 = _modDef7832;
+    const tmp4 = _modDef7836;
     let tmp2Result = tmp2(tmp3(tmp4(Object.values(closure_8), "createdAt")));
     if (tmp2Result == null) {
       tmp2Result = null;

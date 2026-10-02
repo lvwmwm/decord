@@ -1,16 +1,16 @@
-// Module ID: 5858
-// Function ID: 5859
+// Module ID: 5859
+// Function ID: 5860
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 32, 19, 4817, 4656, 1074, 504, 5859, 2]
+// Dependencies: [5, 32, 19, 4818, 4658, 1086, 504, 5860, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 5858 (useCanReapplyToRejectedMemberVerificationApplication)
-import Constants from "Constants" /* 1074 */;
+// Module 5859 (useCanReapplyToRejectedMemberVerificationApplication)
+import Constants from "Constants" /* 1086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import InviteStore from "InviteStore" /* 4817 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4656 */;
+import InviteStore from "InviteStore" /* 4818 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4658 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,7 +48,7 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -91,7 +91,7 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
         c4 = 0;
         tmp(false);
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp15) {
         closure_3 = tmp15;
         if (0 === c4) {

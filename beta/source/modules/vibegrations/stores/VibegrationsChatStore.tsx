@@ -1,27 +1,27 @@
-// Module ID: 12643
-// Function ID: 12644
+// Module ID: 12645
+// Function ID: 12646
 // Name: VibegrationsChatStore
-// Dependencies: [32, 109, 6957, 9541, 2099, 4655, 5591, 8495, 1074, 2052, 1115, 3715, 8498, 2021, 9357, 504, 573, 2]
+// Dependencies: [32, 109, 6961, 12210, 2102, 4657, 5592, 8492, 1086, 2058, 1127, 3718, 8495, 2027, 9335, 504, 585, 2]
 // Exports: getOlderHistoryCursor, turnSettled
 
-// Module 12643 (VibegrationsChatStore)
+// Module 12645 (VibegrationsChatStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import intl2 from "intl" /* 1115 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import ChannelConstants from "ChannelConstants" /* 2052 */;
-import _modDef3715 from "module_3715" /* 3715 */;
-import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 8498 */;
-import SoundUtils from "SoundUtils" /* 9357 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import intl2 from "intl" /* 1127 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import _modDef3718 from "module_3718" /* 3718 */;
+import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 8495 */;
+import SoundUtils from "SoundUtils" /* 9335 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 9541 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8495 */;
-import Constants from "Constants" /* 1074 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 12210 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5592 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8492 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let closure_14;
@@ -380,7 +380,7 @@ function recordThinkingTransition(projectId) {
           }
           let isWindowFocusedResult = null != guild_id && SelectedChannelStore.getChannelId() === StaticChannelRoute.VIBEGRATIONS;
           if (isWindowFocusedResult) {
-            const tmp72Result = tmp72(8498);
+            const tmp72Result = tmp72(8495);
             isWindowFocusedResult = tmp72Result.isWindowFocused();
           }
           if (guild_id == null) {
@@ -436,7 +436,7 @@ function recordThinkingTransition(projectId) {
                     if ("terminal_error" !== tmp48.kind) {
                       if ("preview_ready" === tmp48.kind) {
                         let intl = intl2.intl;
-                        content = intl.string(_modDef3715["78YNh7"]);
+                        content = intl.string(_modDef3718["78YNh7"]);
                       } else {
                         diff3 = diff3 - 1;
                         content = null;
@@ -625,7 +625,7 @@ let set = new Set(["reply", "plan_proposed", "terminal_error"]);
 const map = new Map();
 const map1 = new Map();
 const map2 = new Map();
-const authStore5 = [];
+const afk = [];
 const map3 = new Map();
 const map4 = new Map();
 let set1 = new Set();
@@ -648,8 +648,8 @@ class VibegrationsChatStore extends Store {
     const messages = this.getMessages(arg0);
     return null != tmp && "assistant" === tmp.role && null != tmp.settingsRequest;
   }
-  isThinking(item10008) {
-    return hasOpenTurn(map.get(item10008));
+  isThinking(projectId) {
+    return hasOpenTurn(map.get(projectId));
   }
   hasLoadedHistory(projectId) {
     return map5.has(projectId);
@@ -1195,7 +1195,7 @@ let obj = {
                 const obj = { provisionalTodo: undefined, steps: items };
                 const merged = Object.assign(disposition);
                 items = [];
-                const obj2 = { type: "step", kind: "terminal_error", message: intl.string(_modDef3715["wjWm+/"]) };
+                const obj2 = { type: "step", kind: "terminal_error", message: intl.string(_modDef3718["wjWm+/"]) };
                 const arraySpreadResult = HermesBuiltin.arraySpread(items, disposition.steps, 0);
                 intl = intl2.intl;
                 items[arraySpreadResult] = obj2;

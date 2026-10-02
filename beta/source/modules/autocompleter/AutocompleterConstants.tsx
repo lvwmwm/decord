@@ -1,10 +1,10 @@
-// Module ID: 5827
-// Function ID: 5828
+// Module ID: 5828
+// Function ID: 5829
 // Name: autocompleter/AutocompleterConstants
 // Dependencies: [2]
 // Exports: HeaderRecord
 
-// Module 5827 (autocompleter/AutocompleterConstants)
+// Module 5828 (autocompleter/AutocompleterConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/autocompleter/AutocompleterConstants.tsx");

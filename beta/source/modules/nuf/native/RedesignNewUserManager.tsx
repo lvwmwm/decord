@@ -1,14 +1,14 @@
-// Module ID: 17215
-// Function ID: 17216
+// Module ID: 17217
+// Function ID: 17218
 // Name: RedesignNewUserManager
-// Dependencies: [12174, 5871, 6539, 9275, 17216, 5039, 17218, 1981, 17217, 1364, 4692, 2]
+// Dependencies: [12067, 5872, 6540, 9253, 17218, 5040, 17220, 1987, 17219, 1370, 4694, 2]
 
-// Module 17215 (RedesignNewUserManager)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9275 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12174 */;
-import NewUserStore from "NewUserStore" /* 5871 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+// Module 17217 (RedesignNewUserManager)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4694 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9253 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12067 */;
+import NewUserStore from "NewUserStore" /* 5872 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let c3;

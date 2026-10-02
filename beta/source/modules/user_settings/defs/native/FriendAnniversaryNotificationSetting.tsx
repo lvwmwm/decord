@@ -1,15 +1,15 @@
-// Module ID: 15051
-// Function ID: 15052
+// Module ID: 15039
+// Function ID: 15040
 // Name: FriendAnniversaryNotificationSetting
-// Dependencies: [7417, 11006, 1115, 2021, 15052, 7524, 2]
+// Dependencies: [7421, 10874, 1127, 2027, 15040, 7528, 2]
 
-// Module 15051 (FriendAnniversaryNotificationSetting)
-import intl2 from "intl" /* 1115 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import MobileFriendAnniversaryExperimentDefault from "MobileFriendAnniversaryExperiment" /* 7524 */;
-import FriendAnniversaryNotificationUtils from "FriendAnniversaryNotificationUtils" /* 15052 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 15039 (FriendAnniversaryNotificationSetting)
+import intl2 from "intl" /* 1127 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import MobileFriendAnniversaryExperimentDefault from "MobileFriendAnniversaryExperiment" /* 7528 */;
+import FriendAnniversaryNotificationUtils from "FriendAnniversaryNotificationUtils" /* 15040 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

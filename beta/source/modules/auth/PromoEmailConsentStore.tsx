@@ -1,17 +1,17 @@
-// Module ID: 6011
-// Function ID: 6012
+// Module ID: 6006
+// Function ID: 6007
 // Name: PromoEmailConsentStore
-// Dependencies: [560, 1248, 2]
+// Dependencies: [570, 1260, 2]
 // Exports: setPromoEmailConsentChecked, setPromoEmailConsentState
 
-// Module 6011 (PromoEmailConsentStore)
-import module_560 from "module_560" /* 560 */;
+// Module 6006 (PromoEmailConsentStore)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const usePromoEmailConsentStore = module_560.create(() => ({ required: false, checked: false, preChecked: false }));
+const usePromoEmailConsentStore = module_570.create(() => ({ required: false, checked: false, preChecked: false }));
 const result = size.fileFinishedImporting("modules/auth/PromoEmailConsentStore.tsx");
 
 export const setPromoEmailConsentState = function setPromoEmailConsentState(arg0) {

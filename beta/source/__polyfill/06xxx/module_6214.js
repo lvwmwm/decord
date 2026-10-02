@@ -1,108 +1,90 @@
 // Module ID: 6214
 // Function ID: 6215
-// Dependencies: [1638, 6073, 6046]
-// Exports: useGestureHandler
+// Dependencies: [19, 38, 6042]
+// Exports: usePropsValidator
 
 // Module 6214
-import GESTURE_SOURCE from "GESTURE_SOURCE" /* 6046 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
+import react from "react" /* 19 */;
+import _modDef38 from "module_38" /* 38 */;
 
-const require = globalThis.__r;
-let dependencyMap, tmp, tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, tmp8;
+const useMemo = react.useMemo;
 
-let __initData = { code: "function pnpm_useGestureHandlerTs1(event){const{state,State,gestureSource,source,onStart}=this.__closure;state.value=State.BEGAN;gestureSource.value=source;onStart(source,event);return;}" };
-let __initData2 = { code: "function pnpm_useGestureHandlerTs2(event){const{gestureSource,source,state,onChange}=this.__closure;if(gestureSource.value!==source){return;}state.value=event.state;onChange(source,event);}" };
-let __initData3 = { code: "function pnpm_useGestureHandlerTs3(event){const{gestureSource,source,state,GESTURE_SOURCE,onEnd}=this.__closure;if(gestureSource.value!==source){return;}state.value=event.state;gestureSource.value=GESTURE_SOURCE.UNDETERMINED;onEnd(source,event);}" };
-let __initData4 = { code: "function pnpm_useGestureHandlerTs4(event){const{gestureSource,source,state,GESTURE_SOURCE,onFinalize}=this.__closure;if(gestureSource.value!==source){return;}state.value=event.state;gestureSource.value=GESTURE_SOURCE.UNDETERMINED;onFinalize(source,event);}" };
-
-export const useGestureHandler = (source, state, gestureSource, onStart, onChange, onEnd, onFinalize) => {
-  let items;
-  let items1;
-  let items2;
-  let items3;
-  let obj2;
-  let obj4;
-  let obj5;
-  let obj7;
-  const _require = source;
-  dependencyMap = state;
-  __initData = gestureSource;
-  __initData2 = onStart;
-  __initData3 = onChange;
-  __initData4 = onEnd;
-  const obj = { handleOnStart: obj2.useWorkletCallback(R, items), handleOnChange: obj4.useWorkletCallback(U, items1), handleOnEnd: obj5.useWorkletCallback(C, items2), handleOnFinalize: obj7.useWorkletCallback(T, items3) };
-  obj2 = require("module_1638");
-  class R {
-    constructor(arg0) {
-      closure_1.value = closure_0(closure_1[1]).State.BEGAN;
-      closure_2.value = closure_0;
-      tmp = closure_3(closure_0, source);
-      return;
-    }
-  }
-  R.__closure = { state, State: require("LegacyBaseButton").State, gestureSource, source, onStart };
-  R.__workletHash = 16113572067379;
-  R.__initData = __initData;
-  items = [state, gestureSource, source, onStart];
-  ({ state, State: require("LegacyBaseButton").State, gestureSource, source, onStart });
-  obj4 = require("module_1638");
-  class U {
-    constructor(arg0) {
-      if (closure_2.value === closure_0) {
-        tmp2 = source;
-        tmp3 = closure_1;
-        closure_1.value = source.state;
-        tmp4 = closure_4;
-        tmp5 = closure_4(tmp, source);
+export const usePropsValidator = (index) => {
+  index = index.index;
+  const snapPoints = index.snapPoints;
+  const enableDynamicSizing = index.enableDynamicSizing;
+  const topInset = index.topInset;
+  const bottomInset = index.bottomInset;
+  let items = [index, snapPoints, topInset, bottomInset, enableDynamicSizing];
+  topInset(() => {
+    let items;
+    if (snapPoints) {
+      let value = obj;
+      if ("get" in snapPoints) {
+        value = obj.get();
       }
-      return;
+      items = value;
+    } else {
+      items = [];
     }
-  }
-  U.__closure = { gestureSource, source, state, onChange };
-  U.__workletHash = 9050442757159;
-  U.__initData = __initData2;
-  items1 = [state, gestureSource, source, onChange];
-  obj5 = require("module_1638");
-  class C {
-    constructor(arg0) {
-      if (closure_2.value === closure_0) {
-        tmp3 = source;
-        tmp4 = closure_1;
-        closure_1.value = source.state;
-        tmp5 = closure_0;
-        tmp6 = closure_1;
-        tmp.value = closure_0(closure_1[2]).GESTURE_SOURCE.UNDETERMINED;
-        tmp7 = closure_5;
-        tmp8 = closure_5(tmp2, source);
+    let tmp2 = importDefault;
+    let tmp3 = dependencyMap;
+    let tmp5 = items;
+    let tmp4 = _modDef38;
+    if (!items) {
+      tmp5 = enableDynamicSizing;
+    }
+    tmp4(tmp5, "'snapPoints' was not provided! please provide at least one snap point.");
+    const mapped = items.map((item) => {
+      let parsed = item;
+      if (typeof item !== "number") {
+        const _Number = Number;
+        parsed = Number.parseInt(item.replace("%", ""), 10);
       }
-      return;
-    }
-  }
-  C.__closure = { gestureSource, source, state, GESTURE_SOURCE: require("GESTURE_SOURCE").GESTURE_SOURCE, onEnd };
-  C.__workletHash = 10682034812271;
-  C.__initData = __initData3;
-  items2 = [state, gestureSource, source, onEnd];
-  ({ gestureSource, source, state, GESTURE_SOURCE: require("GESTURE_SOURCE").GESTURE_SOURCE, onEnd });
-  obj7 = require("module_1638");
-  class T {
-    constructor(arg0) {
-      if (closure_2.value === closure_0) {
-        tmp3 = source;
-        tmp4 = closure_1;
-        closure_1.value = source.state;
-        tmp5 = closure_0;
-        tmp6 = closure_1;
-        tmp.value = closure_0(closure_1[2]).GESTURE_SOURCE.UNDETERMINED;
-        tmp7 = closure_6;
-        tmp8 = closure_6(tmp2, source);
+      let tmp4 = parsed > 0;
+      const tmp2 = enableDynamicSizing;
+      const tmp3 = snapPoints(enableDynamicSizing[1]);
+      if (!tmp4) {
+        tmp4 = parsed === index(tmp2[2]).INITIAL_SNAP_POINT;
       }
-      return;
+      tmp3(tmp4, "Snap point '" + item + "' is invalid. if you want to allow user to close the sheet, Please use 'enablePanDownToClose' prop.");
+    });
+    let tmp9 = "value" in items;
+    const tmp2Result = _modDef38;
+    if (!tmp9) {
+      tmp9 = items.length > 0;
     }
-  }
-  T.__closure = { gestureSource, source, state, GESTURE_SOURCE: require("GESTURE_SOURCE").GESTURE_SOURCE, onFinalize };
-  T.__workletHash = 9696716573416;
-  T.__initData = __initData4;
-  items3 = [state, gestureSource, source, onFinalize];
-  ({ gestureSource, source, state, GESTURE_SOURCE: require("GESTURE_SOURCE").GESTURE_SOURCE, onFinalize });
-  return obj;
+    if (!tmp9) {
+      tmp9 = enableDynamicSizing;
+    }
+    tmp2Result(tmp9, "'snapPoints' was provided with no points! please provide at least one snap point.");
+    let tmp13 = typeof index === "number";
+    const tmp2Result5 = _modDef38;
+    if (typeof index !== "number") {
+      tmp13 = undefined === tmp12;
+    }
+    tmp2Result5(tmp13, "'index' was provided but with wrong type ! expected type is a number.");
+    let tmp16 = enableDynamicSizing;
+    const tmp2Result6 = _modDef38;
+    if (!enableDynamicSizing) {
+      tmp16 = typeof tmp12 !== "number";
+    }
+    if (!tmp16) {
+      tmp16 = tmp12 >= -1 && tmp12 <= items.length - 1;
+      const tmp17 = tmp12 >= -1 && tmp12 <= items.length - 1;
+    }
+    tmp2Result6(tmp16, `'index' was provided but out of the provided snap points range! expected value to be between -1, ${arr.length - 1}`);
+    let tmp20 = typeof topInset === "number";
+    const tmp2Result7 = _modDef38;
+    if (typeof topInset !== "number") {
+      tmp20 = undefined === topInset;
+    }
+    tmp2Result7(tmp20, "'topInset' was provided but with wrong type ! expected type is a number.");
+    let tmp23 = typeof bottomInset === "number";
+    const tmp2Result8 = _modDef38;
+    if (typeof bottomInset !== "number") {
+      tmp23 = undefined === bottomInset;
+    }
+    tmp2Result8(tmp23, "'bottomInset' was provided but with wrong type ! expected type is a number.");
+  }, items);
 };

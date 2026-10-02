@@ -1,11 +1,11 @@
-// Module ID: 8756
-// Function ID: 8757
+// Module ID: 8751
+// Function ID: 8752
 // Name: ActivityShelfStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 8756 (ActivityShelfStore)
+// Module 8751 (ActivityShelfStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = { usageByApplicationId: {}, shelfOrder: [] };

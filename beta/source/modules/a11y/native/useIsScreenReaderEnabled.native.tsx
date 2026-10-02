@@ -1,12 +1,13 @@
-// Module ID: 5266
-// Function ID: 5267
+// Module ID: 5267
+// Function ID: 5268
 // Name: useIsScreenReaderEnabled
-// Dependencies: [17, 510, 560, 1248, 2]
+// Dependencies: [17, 510, 570, 1260, 558, 2]
 // Exports: addScreenReaderEnabledListener, getIsScreenReaderEnabled, useIsScreenReaderEnabled
 
-// Module 5266 (useIsScreenReaderEnabled)
+// Module 5267 (useIsScreenReaderEnabled)
 import react_native from "react-native" /* 17 */;
-import module_560 from "module_560" /* 560 */;
+import module_570 from "module_570" /* 570 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,7 +18,7 @@ function SCREEN_READER_ENABLED_GETTER(screenReaderEnabled) {
   return screenReaderEnabled.screenReaderEnabled;
 }
 let screenReaderEnabled = "screenReaderEnabled";
-let closure_5 = module_560.create((arg0) => {
+let closure_5 = module_570.create((arg0) => {
   _require = arg0;
   function updateScreenReaderEnabled(event) {
     closure_0 = event;
@@ -57,7 +58,9 @@ let closure_5 = module_560.create((arg0) => {
   }
   return { screenReaderEnabled };
 });
-let result = size.fileFinishedImporting("modules/a11y/native/useIsScreenReaderEnabled.native.tsx");
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("modules/a11y/native/useIsScreenReaderEnabled.native.tsx");
 
 export const addScreenReaderEnabledListener = function addScreenReaderEnabledListener(arg0) {
   let closure_0 = arg0;
@@ -68,6 +71,4 @@ export const addScreenReaderEnabledListener = function addScreenReaderEnabledLis
 export const getIsScreenReaderEnabled = function getIsScreenReaderEnabled() {
   return closure_5.getState().screenReaderEnabled;
 };
-export const useIsScreenReaderEnabled = function useIsScreenReaderEnabled() {
-  return closure_5(SCREEN_READER_ENABLED_GETTER);
-};
+export const useIsScreenReaderEnabled = () => closure_5(SCREEN_READER_ENABLED_GETTER);

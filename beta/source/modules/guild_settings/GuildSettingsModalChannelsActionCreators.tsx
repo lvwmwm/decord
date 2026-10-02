@@ -1,10 +1,10 @@
-// Module ID: 15776
-// Function ID: 15777
+// Module ID: 15775
+// Function ID: 15776
 // Name: GuildSettingsModalChannelsActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 
-// Module 15776 (GuildSettingsModalChannelsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 15775 (GuildSettingsModalChannelsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

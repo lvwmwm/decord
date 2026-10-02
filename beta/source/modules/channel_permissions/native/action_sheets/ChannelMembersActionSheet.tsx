@@ -1,40 +1,40 @@
-// Module ID: 11104
-// Function ID: 11105
+// Module ID: 10972
+// Function ID: 10973
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 2045, 2108, 2102, 2067, 4469, 1074, 21, 4836, 576, 1613, 504, 1485, 4989, 11105, 9016, 1115, 6571, 6570, 5435, 4800, 8085, 11107, 6798, 8055, 11103, 9492, 1177, 6045, 9032, 4832, 2]
-// Exports: default
+// Dependencies: [19, 17, 2051, 2111, 2105, 2073, 4472, 1086, 21, 4837, 588, 558, 576, 1619, 504, 1491, 4990, 10973, 8993, 4801, 9833, 10975, 4833, 1127, 9009, 5436, 6799, 6571, 8059, 10971, 9488, 1189, 6038, 6572, 2]
 
-// Module 11104 (ChannelMembersActionSheet)
+// Module 10972 (ChannelMembersActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import intl7 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import useNavigation from "useNavigation" /* 1485 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import useChannelNameDefault from "useChannelName" /* 4989 */;
-import SettingsIcon from "SettingsIcon" /* 6798 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8085 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9016 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9032 */;
-import GroupPlusIcon from "GroupPlusIcon" /* 9492 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11103 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11105 */;
-import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11107 */;
+import nativeDefault from "native" /* 588 */;
+import intl7 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import useNavigation from "useNavigation" /* 1491 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import useChannelNameDefault from "useChannelName" /* 4990 */;
+import SettingsIcon from "SettingsIcon" /* 6799 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8993 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9009 */;
+import GroupPlusIcon from "GroupPlusIcon" /* 9488 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9833 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10971 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 10973 */;
+import ChannelDetailsUtils from "ChannelDetailsUtils" /* 10975 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildRoleStore from "GuildRoleStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, dependencyMap, guildId;
+let BottomSheet, dependencyMap, navigation, obj1;
 
 let c10;
 let c9;
@@ -47,9 +47,224 @@ const View = react_native.View;
 let obj = { container: { paddingHorizontal: 16, flex: 1 }, sectionRowWrapper: obj2, warning: { margin: 16, marginBottom: 0 } };
 obj2 = { paddingVertical: nativeDefault.space.PX_12 };
 let closure_13 = createStyles.createStyles(obj);
-let result = size.fileFinishedImporting("modules/channel_permissions/native/action_sheets/ChannelMembersActionSheet.tsx");
-
-export default function ChannelMembersActionSheet(arg0) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let first;
+  let guild;
+  let sectionRowWrapper;
+  let showRemove;
+  let sortedGuildRoles;
+  let tmp11;
+  let tmp13;
+  let tmp14;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp9;
+  let obj = channelId(576);
+  const cResult = obj.c(65);
+  channelId = channelId.channelId;
+  let guildId = channelId.guildId;
+  dependencyMap = closure_13();
+  closure_13();
+  guildId(1619)();
+  const tmp5 = guildId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [navigation];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channelId) {
+    class I {
+      constructor() {
+        return closure_4.getChannel(channelId);
+      }
+    }
+    cResult[1] = channelId;
+    cResult[2] = I;
+    tmp9 = I;
+  } else {
+    class I {
+      constructor() {
+        return closure_4.getChannel(channelId);
+      }
+    }
+  }
+  const tmpResult = channelId(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class I {
+      constructor() {
+        return closure_4.getChannel(channelId);
+      }
+    }
+    const items1 = [GuildStore, GuildRoleStore];
+    cResult[3] = items1;
+    tmp11 = items1;
+  } else {
+    class I {
+      constructor() {
+        return closure_4.getChannel(channelId);
+      }
+    }
+  }
+  if (cResult[4] !== stateFromStores) {
+    class M {
+      constructor() {
+        obj = closure_3;
+        guildId = undefined;
+        tmp = closure_7;
+        getGuild = closure_7.getGuild;
+        if (closure_3 != null) {
+          guildId = obj.getGuildId();
+        }
+        guild = getGuild(guildId);
+        obj1 = { guild, sortedGuildRoles: null };
+        sortedRoles = undefined;
+        if (null != guild) {
+          tmp5 = closure_6;
+          sortedRoles = closure_6.getSortedRoles(guild.id);
+        }
+        obj1.sortedGuildRoles = sortedRoles;
+        return obj1;
+      }
+    }
+    const items2 = [stateFromStores];
+    cResult[4] = stateFromStores;
+    cResult[5] = M;
+    cResult[6] = items2;
+    tmp14 = items2;
+    tmp13 = M;
+  } else {
+    class M {
+      constructor() {
+        obj = closure_3;
+        guildId = undefined;
+        tmp = closure_7;
+        getGuild = closure_7.getGuild;
+        if (closure_3 != null) {
+          guildId = obj.getGuildId();
+        }
+        guild = getGuild(guildId);
+        obj1 = { guild, sortedGuildRoles: null };
+        sortedRoles = undefined;
+        if (null != guild) {
+          tmp5 = closure_6;
+          sortedRoles = closure_6.getSortedRoles(guild.id);
+        }
+        obj1.sortedGuildRoles = sortedRoles;
+        return obj1;
+      }
+    }
+    tmp14 = cResult[6];
+  }
+  const tmpResult5 = channelId(504);
+  const stateFromStoresObject = tmpResult5.useStateFromStoresObject(tmp11, tmp13, tmp14);
+  ({ guild, sortedGuildRoles } = stateFromStoresObject);
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    class M {
+      constructor() {
+        obj = closure_3;
+        guildId = undefined;
+        tmp = closure_7;
+        getGuild = closure_7.getGuild;
+        if (closure_3 != null) {
+          guildId = obj.getGuildId();
+        }
+        guild = getGuild(guildId);
+        obj1 = { guild, sortedGuildRoles: null };
+        sortedRoles = undefined;
+        if (null != guild) {
+          tmp5 = closure_6;
+          sortedRoles = closure_6.getSortedRoles(guild.id);
+        }
+        obj1.sortedGuildRoles = sortedRoles;
+        return obj1;
+      }
+    }
+    const items3 = [GuildMemberStore];
+    cResult[7] = items3;
+    tmp16 = items3;
+  } else {
+    class M {
+      constructor() {
+        obj = closure_3;
+        guildId = undefined;
+        tmp = closure_7;
+        getGuild = closure_7.getGuild;
+        if (closure_3 != null) {
+          guildId = obj.getGuildId();
+        }
+        guild = getGuild(guildId);
+        obj1 = { guild, sortedGuildRoles: null };
+        sortedRoles = undefined;
+        if (null != guild) {
+          tmp5 = closure_6;
+          sortedRoles = closure_6.getSortedRoles(guild.id);
+        }
+        obj1.sortedGuildRoles = sortedRoles;
+        return obj1;
+      }
+    }
+  }
+  if (cResult[8] !== stateFromStores) {
+    class A {
+      constructor() {
+        obj = closure_3;
+        guildId = undefined;
+        tmp = closure_5;
+        getMemberIds = closure_5.getMemberIds;
+        if (closure_3 != null) {
+          guildId = obj.getGuildId();
+        }
+        return getMemberIds(guildId);
+      }
+    }
+    const items4 = [stateFromStores];
+    cResult[8] = stateFromStores;
+    cResult[9] = A;
+    cResult[10] = items4;
+    tmp18 = items4;
+    tmp17 = A;
+  } else {
+    class A {
+      constructor() {
+        obj = closure_3;
+        guildId = undefined;
+        tmp = closure_5;
+        getMemberIds = closure_5.getMemberIds;
+        if (closure_3 != null) {
+          guildId = obj.getGuildId();
+        }
+        return getMemberIds(guildId);
+      }
+    }
+    tmp18 = cResult[10];
+  }
+  const tmpResult6 = channelId(504);
+  const stateFromStoresArray = tmpResult6.useStateFromStoresArray(tmp16, tmp17, tmp18);
+  const tmpResult7 = channelId(1491);
+  navigation = tmpResult7.useNavigation();
+  tmp5(4990)(stateFromStores);
+  const tmpResult8 = channelId(10973);
+  const appChannelBotUserId = tmpResult8.useAppChannelBotUserId(stateFromStores);
+  if (null != stateFromStores) {
+    class A {
+      constructor() {
+        obj = closure_3;
+        guildId = undefined;
+        tmp = closure_5;
+        getMemberIds = closure_5.getMemberIds;
+        if (closure_3 != null) {
+          guildId = obj.getGuildId();
+        }
+        return getMemberIds(guildId);
+      }
+    }
+  }
+  return null;
+}) : ((arg0) => {
   let HelpMessage;
   let channelId;
   let guild;
@@ -127,16 +342,16 @@ export default function ChannelMembersActionSheet(arg0) {
         const obj6 = { title: intl4.string(intl7.t["LPJmL/"]), data: existingRolesRows };
         const existingMembersRows = tmp5Result2.getExistingMembersRows(stateFromStoresArray, stateFromStores, guild, stateFromStores.accessPermissions, obj5);
         const push = items5.push;
-        intl4 = tmp5(1115).intl;
+        intl4 = tmp5(1127).intl;
         push(obj6);
         const push2 = items5.push;
         const obj7 = { title: intl5.string(intl7.t["9Oq93m"]), data: existingMembersRows };
-        intl5 = tmp5(1115).intl;
+        intl5 = tmp5(1127).intl;
         push2(obj7);
-        BottomSheet = tmp5(6571).BottomSheet;
+        BottomSheet = tmp5(6572).BottomSheet;
         const obj8 = { title: intl6.string(intl7.t.ES4CC6), subtitle: "#" + tmp9, trailing: tmp32Result };
-        const BottomSheetTitleHeader = tmp5(6570).BottomSheetTitleHeader;
-        intl6 = tmp5(1115).intl;
+        const BottomSheetTitleHeader = tmp5(6571).BottomSheetTitleHeader;
+        intl6 = tmp5(1127).intl;
         const _HermesInternal = HermesInternal;
         tmp32Result = canResult;
         if (tmp32Result) {
@@ -153,8 +368,8 @@ export default function ChannelMembersActionSheet(arg0) {
             accessibilityLabel: intl.string(intl7.t.XPDhcc),
             children: closure_11(SettingsIcon.SettingsIcon, {})
           };
-          const PressableOpacity = tmp5(5435).PressableOpacity;
-          intl = tmp5(1115).intl;
+          const PressableOpacity = tmp5(5436).PressableOpacity;
+          intl = tmp5(1127).intl;
           tmp32Result = tmp32(PressableOpacity, obj9);
         }
         const obj10 = { scrollable: true, header: closure_11(BottomSheetTitleHeader, obj8), startExpanded: true, children: tmp13(stateFromStores, obj11) };
@@ -169,14 +384,14 @@ export default function ChannelMembersActionSheet(arg0) {
                     },
             icon: closure_11(GroupPlusIcon.GroupPlusIcon, {})
           };
-          const RowButton = tmp5(8055).RowButton;
-          intl3 = tmp5(1115).intl;
+          const RowButton = tmp5(8059).RowButton;
+          intl3 = tmp5(1127).intl;
           tmp32Result2 = tmp32(RowButton, obj12);
         } else {
           const obj13 = { style: tmp.warning, children: closure_11(HelpMessage, obj14) };
           obj14 = { messageType: native.HelpMessageTypes.INFO, children: intl2.string(intl7.t.VOuiSj) };
-          HelpMessage = tmp5(1177).HelpMessage;
-          intl2 = tmp5(1115).intl;
+          HelpMessage = tmp5(1189).HelpMessage;
+          intl2 = tmp5(1127).intl;
           tmp32Result2 = tmp32(tmp14, obj13);
         }
         items6 = [tmp32Result2, ];
@@ -206,11 +421,14 @@ export default function ChannelMembersActionSheet(arg0) {
           stickySectionHeadersEnabled: false
         };
         obj16 = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
-        const BottomSheetSectionList = tmp5(6045).BottomSheetSectionList;
+        const BottomSheetSectionList = tmp5(6038).BottomSheetSectionList;
         items6[1] = closure_11(BottomSheetSectionList, obj15);
         return closure_11(BottomSheet, obj10);
       }
     }
   }
   return null;
-};
+});
+let result = size.fileFinishedImporting("modules/channel_permissions/native/action_sheets/ChannelMembersActionSheet.tsx");
+
+export default tmp5;

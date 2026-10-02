@@ -1,27 +1,84 @@
-// Module ID: 8123
-// Function ID: 8124
+// Module ID: 8120
+// Function ID: 8121
 // Name: UserProfileWidgetReportButton
-// Dependencies: [19, 17, 21, 1115, 8124, 8126, 7358, 7365, 576, 2]
-// Exports: default
+// Dependencies: [109, 19, 17, 21, 558, 576, 1127, 8121, 8123, 7364, 588, 7366, 2]
 
-// Module 8123 (UserProfileWidgetReportButton)
+// Module 8120 (UserProfileWidgetReportButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import ContextMenu from "ContextMenu" /* 7358 */;
-import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 7365 */;
-import FlagIcon from "FlagIcon" /* 8124 */;
-import showReportModalForUserWidget from "showReportModalForUserWidget" /* 8126 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 7364 */;
+import ContextMenu from "ContextMenu" /* 7366 */;
+import FlagIcon from "FlagIcon" /* 8121 */;
+import showReportModalForUserWidget from "showReportModalForUserWidget" /* 8123 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let userId;
+
+let closure_3 = ["ref"];
 const Pressable = react_native.Pressable;
 const jsx = Fragment.jsx;
-let closure_5 = { top: 8, bottom: 8, left: 8, right: 8 };
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetReportButton.tsx");
-
-export default function UserProfileWidgetReportButton(arg0) {
+let closure_7 = { top: 8, bottom: 8, left: 8, right: 8 };
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  let first;
+  let hitSlop;
+  function action() {
+    const obj = showReportModalForUserWidget;
+    return obj.showReportModalForUserWidget(userId, widget);
+  }
+  let obj = userId(576);
+  const cResult = obj.c(7);
+  userId = userId.userId;
+  const widget = userId.widget;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let intl = tmp(1127).intl;
+    const stringResult = intl.string(userId(1127).t.D4GvHE);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === userId) {
+    let tmp6;
+    let tmp7;
+    let tmp8;
+    if (cResult[2] === widget) {
+      tmp6 = cResult[3];
+    }
+    const _Symbol = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn = function h(ref) {
+        const merged = Object.assign(_objectWithoutProperties(ref, closure_1_3));
+        const intl = userId(dependencyMap[6]).intl;
+        const MoreHorizontalIcon = userId(dependencyMap[9]).MoreHorizontalIcon;
+        return <Pressable ref={arg0.ref} hitSlop={hitSlop} accessibilityRole="button" accessibilityLabel={intl.string(userId(dependencyMap[6]).t.xpSHSk)}><MoreHorizontalIcon size="sm" color={widget(dependencyMap[10]).colors.TEXT_MUTED} /></Pressable>;
+      };
+      cResult[4] = fn;
+      tmp7 = fn;
+    } else {
+      tmp7 = cResult[4];
+    }
+    if (cResult[5] !== tmp6) {
+      const tmp10 = jsx(userId(7366).ContextMenu, { items: tmp6, children: tmp7 });
+      cResult[5] = tmp6;
+      cResult[6] = tmp10;
+      tmp8 = tmp10;
+    } else {
+      tmp8 = cResult[6];
+    }
+    return tmp8;
+  }
+  const items = [{ label: first, variant: "destructive", IconComponent: userId(8121).FlagIcon, action }];
+  cResult[1] = userId;
+  cResult[2] = widget;
+  cResult[3] = items;
+  tmp6 = items;
+  ({ label: first, variant: "destructive", IconComponent: userId(8121).FlagIcon, action });
+}) : ((arg0) => {
   let hitSlop;
   let intl;
   ({ userId: require, widget: importDefault } = arg0);
@@ -45,4 +102,7 @@ export default function UserProfileWidgetReportButton(arg0) {
       return <Pressable ref={arg0.ref} hitSlop={hitSlop} accessibilityRole="button" accessibilityLabel={intl.string(intl2.t.xpSHSk)}><MoreHorizontalIcon size="sm" color={nativeDefault.colors.TEXT_MUTED} /></Pressable>;
     }
   });
-};
+});
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetReportButton.tsx");
+
+export default tmp3;

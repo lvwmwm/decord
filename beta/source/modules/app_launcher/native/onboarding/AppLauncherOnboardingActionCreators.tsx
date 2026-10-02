@@ -1,11 +1,11 @@
-// Module ID: 11581
-// Function ID: 11582
+// Module ID: 11467
+// Function ID: 11468
 // Name: AppLauncherOnboardingActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 // Exports: setLastSeenTimeMs, setTriggeredOnboardingContentMetadata
 
-// Module 11581 (AppLauncherOnboardingActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 11467 (AppLauncherOnboardingActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/AppLauncherOnboardingActionCreators.tsx");

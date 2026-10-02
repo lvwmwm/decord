@@ -1,23 +1,27 @@
-// Module ID: 16416
-// Function ID: 16417
+// Module ID: 16418
+// Function ID: 16419
 // Name: VibegrationsTraceFormat
-// Dependencies: [19, 17, 21, 4836, 576, 16417, 2]
-// Exports: TraceStatusDot
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 16419, 2]
 
-// Module 16416 (VibegrationsTraceFormat)
+// Module 16418 (VibegrationsTraceFormat)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 16417 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let status;
+
 let obj2;
+let tmp;
+const vibegrations_VibegrationsTraceFormat = tmp(16419);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
-const obj = { model: obj2, subagent: { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE }, context: { color: nativeDefault.colors.TEXT_SUBTLE }, tool: { color: nativeDefault.colors.TEXT_MUTED }, delegated: { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING } };
+let obj = { model: obj2, subagent: { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE }, context: { color: nativeDefault.colors.TEXT_SUBTLE }, tool: { color: nativeDefault.colors.TEXT_MUTED }, delegated: { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING } };
 obj2 = { color: nativeDefault.colors.TEXT_BRAND };
 createStyles = createStyles.createStyles;
 ({ color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE });
@@ -41,14 +45,53 @@ const obj13 = { dot: { width: 8, height: 8, borderRadius: 4 }, started: { backgr
 ({ backgroundColor: nativeDefault.colors.STATUS_POSITIVE });
 ({ backgroundColor: nativeDefault.colors.STATUS_DANGER });
 let closure_4 = createStyles3(obj13);
-const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsTraceFormat.tsx");
-
-export const useTraceCategoryTextStyles = styles;
-export const useTraceCategoryFillStyles = styles2;
-export const TraceStatusDot = function TraceStatusDot(status) {
+const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
+  const obj = react2;
+  const cResult = obj.c(8);
+  status = status.status;
+  const tmp4 = closure_4();
+  if (cResult[0] === tmp4.dot) {
+    let tmp6;
+    let tmp7;
+    if (cResult[1] === tmp4[status]) {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] !== status) {
+      const tmpResult = vibegrations_VibegrationsTraceFormat;
+      const statusLabelResult = tmpResult.statusLabel(status);
+      cResult[3] = status;
+      cResult[4] = statusLabelResult;
+      tmp7 = statusLabelResult;
+    } else {
+      tmp7 = cResult[4];
+    }
+    if (cResult[5] === tmp6) {
+      let tmp9;
+      if (cResult[6] === tmp7) {
+        tmp9 = cResult[7];
+      }
+      return tmp9;
+    }
+    const tmp12 = <View style={tmp6} accessibilityRole="image" accessibilityLabel={tmp7} />;
+    cResult[5] = tmp6;
+    cResult[6] = tmp7;
+    cResult[7] = tmp12;
+    tmp9 = tmp12;
+  }
+  const items = [tmp4.dot, tmp4[status]];
+  cResult[0] = tmp4.dot;
+  cResult[1] = tmp4[status];
+  cResult[2] = items;
+  tmp6 = items;
+}) : ((status) => {
   status = status.status;
   const tmp = closure_4();
   const items = [tmp.dot, tmp[status]];
   const obj2 = vibegrations_VibegrationsTraceFormat;
   return <View style={items} accessibilityRole="image" accessibilityLabel={obj2.statusLabel(status)} />;
-};
+});
+const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsTraceFormat.tsx");
+
+export const useTraceCategoryTextStyles = styles;
+export const useTraceCategoryFillStyles = styles2;
+export const TraceStatusDot = tmp8;

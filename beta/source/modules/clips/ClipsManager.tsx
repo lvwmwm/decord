@@ -1,30 +1,30 @@
-// Module ID: 17632
-// Function ID: 17633
+// Module ID: 17634
+// Function ID: 17635
 // Name: clips/ClipsManager
-// Dependencies: [5, 4881, 502, 1993, 4859, 4875, 1999, 5444, 1074, 4878, 6539, 13219, 4891, 4888, 1241, 2021, 573, 13220, 4450, 1364, 13218, 2]
+// Dependencies: [5, 4882, 502, 1999, 4860, 4876, 2005, 5445, 1086, 4879, 6540, 13221, 4892, 4889, 1253, 2027, 585, 13222, 4453, 1370, 13220, 2]
 
-// Module 17632 (clips/ClipsManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import DiscordNativeDefault from "DiscordNative" /* 4450 */;
-import Constants2 from "Constants" /* 4878 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 4881 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4888 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
-import isClipsEnabled from "isClipsEnabled" /* 13218 */;
-import ClipsExperiment from "ClipsExperiment" /* 13219 */;
-import isClientClipsCapableDefault from "isClientClipsCapable" /* 13220 */;
+// Module 17634 (clips/ClipsManager)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import DiscordNativeDefault from "DiscordNative" /* 4453 */;
+import Constants2 from "Constants" /* 4879 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 4882 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4889 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4892 */;
+import isClipsEnabled from "isClipsEnabled" /* 13220 */;
+import ClipsExperiment from "ClipsExperiment" /* 13221 */;
+import isClientClipsCapableDefault from "isClientClipsCapable" /* 13222 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4875 */;
-import ClipsStore from "ClipsStore" /* 1999 */;
-import ClipsConstants from "ClipsConstants" /* 5444 */;
-import Constants from "Constants" /* 1074 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4876 */;
+import ClipsStore from "ClipsStore" /* 2005 */;
+import ClipsConstants from "ClipsConstants" /* 5445 */;
+import Constants from "Constants" /* 1086 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 const StreamKeyUtilsAll = StreamKeyUtils;
@@ -254,7 +254,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;

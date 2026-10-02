@@ -1,33 +1,33 @@
-// Module ID: 9163
-// Function ID: 9164
+// Module ID: 9140
+// Function ID: 9141
 // Name: SecureFramesUtils
-// Dependencies: [32, 5, 502, 1993, 4859, 4875, 1372, 9164, 9165, 1074, 2111, 9166, 9174, 9148, 9167, 1115, 4678, 4421, 1091, 38, 206, 1271, 1231, 5203, 4988, 2]
+// Dependencies: [32, 5, 502, 1999, 4860, 4876, 1378, 9141, 9142, 1086, 2114, 9143, 9151, 9125, 9144, 1127, 4680, 4424, 1103, 38, 206, 1283, 1243, 5204, 4989, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesHelpdeskArticle, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, showSecureFramesKeyInconsistentAlert, validateSecureFramesKeyConsistent
 
-// Module 9163 (SecureFramesUtils)
+// Module 9140 (SecureFramesUtils)
 import _modDef38 from "module_38" /* 38 */;
 import byteLengthDefault from "byteLength" /* 206 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import intl15 from "intl" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import _modDef4421 from "module_4421" /* 4421 */;
-import UserUtilsDefault from "UserUtils" /* 4678 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import _mod9148 from "module_9148" /* 9148 */;
-import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9166 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9167 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9174 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import intl15 from "intl" /* 1127 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import _modDef4424 from "module_4424" /* 4424 */;
+import UserUtilsDefault from "UserUtils" /* 4680 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
+import _mod9125 from "module_9125" /* 9125 */;
+import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9143 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9144 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9151 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4875 */;
-import UserStore from "UserStore" /* 1372 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 9164 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9165 */;
-import Constants from "Constants" /* 1074 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4876 */;
+import UserStore from "UserStore" /* 1378 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 9141 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9142 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -82,7 +82,7 @@ obj = function _isPublicKeyMatch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -158,7 +158,7 @@ obj = function _uploadCurrentUserPublicKey() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ obj = function _uploadCurrentUserPublicKey() {
             const result = obj.addUploadedKeyVersion(key_version);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp22) {
           closure_3 = tmp22;
@@ -254,7 +254,7 @@ obj = function _ensureCurrentUserPublicKey() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -285,7 +285,7 @@ obj = function _ensureCurrentUserPublicKey() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -309,7 +309,7 @@ obj = function _isCurrentUserPublicKeyMatch() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -478,8 +478,8 @@ export const deleteVerification = function deleteVerification(userId, arg1, isOt
     const _Uint8Array = Uint8Array;
     const self = this;
     const self2 = this;
-    const serializeKey = _mod9148.serializeKey;
-    _mod9148;
+    const serializeKey = _mod9125.serializeKey;
+    _mod9125;
     const uint8Array = new Uint8Array(arg1);
     const serializeKeyResult = serializeKey(uint8Array);
     const obj2 = SecureFramesActionCreatorsDefault;
@@ -534,42 +534,42 @@ export const deleteUserPersistentVerifications = function deleteUserPersistentVe
   let result = openSecureFramesUpdateConfirmation(obj2);
 };
 export const getSecureFramesUserVerifiedTimestamp = function getSecureFramesUserVerifiedTimestamp(timestamp) {
-  const tmp3 = _modDef4421(timestamp);
-  obj = _modDef4421();
+  const tmp3 = _modDef4424(timestamp);
+  obj = _modDef4424();
   const diffResult = obj.diff(tmp3, "s");
   if (diffResult > 12 * DurationsDefault.Seconds.DAYS_30) {
     const _Math6 = Math;
-    const rounded = Math.round(diffResult / (12 * tmp(1091).Seconds.DAYS_30));
+    const rounded = Math.round(diffResult / (12 * tmp(1103).Seconds.DAYS_30));
     const intl7 = intl15.intl;
     const obj2 = { count: rounded };
     return intl7.formatToPlainString(intl15.t.F1wqkD, obj2);
   } else if (diffResult > DurationsDefault.Seconds.DAYS_30) {
     const _Math5 = Math;
-    const rounded1 = Math.round(diffResult / tmp(1091).Seconds.DAYS_30);
+    const rounded1 = Math.round(diffResult / tmp(1103).Seconds.DAYS_30);
     const intl6 = intl15.intl;
     const obj3 = { count: rounded1 };
     return intl6.formatToPlainString(intl15.t["iT+b+2"], obj3);
   } else if (diffResult > 7 * DurationsDefault.Seconds.DAY) {
     const _Math4 = Math;
-    const rounded2 = Math.round(diffResult / (7 * tmp(1091).Seconds.DAY));
+    const rounded2 = Math.round(diffResult / (7 * tmp(1103).Seconds.DAY));
     const intl5 = intl15.intl;
     const obj4 = { count: rounded2 };
     return intl5.formatToPlainString(intl15.t.dLurKZ, obj4);
   } else if (diffResult > DurationsDefault.Seconds.DAY) {
     const _Math3 = Math;
-    const rounded3 = Math.round(diffResult / tmp(1091).Seconds.DAY);
+    const rounded3 = Math.round(diffResult / tmp(1103).Seconds.DAY);
     const intl4 = intl15.intl;
     const obj5 = { count: rounded3 };
     return intl4.formatToPlainString(intl15.t.LE8a2H, obj5);
   } else if (diffResult > DurationsDefault.Seconds.HOUR) {
     const _Math2 = Math;
-    const rounded4 = Math.round(diffResult / tmp(1091).Seconds.HOUR);
+    const rounded4 = Math.round(diffResult / tmp(1103).Seconds.HOUR);
     const intl3 = intl15.intl;
     const obj6 = { count: rounded4 };
     return intl3.formatToPlainString(intl15.t.KULxVS, obj6);
   } else if (diffResult > DurationsDefault.Seconds.MINUTE) {
     const _Math = Math;
-    const rounded5 = Math.round(diffResult / tmp(1091).Seconds.MINUTE);
+    const rounded5 = Math.round(diffResult / tmp(1103).Seconds.MINUTE);
     const intl2 = intl15.intl;
     const obj7 = { count: rounded5 };
     return intl2.formatToPlainString(intl15.t.ws6rWq, obj7);
@@ -583,49 +583,49 @@ export const getUserVerificationDeeplink = function getUserVerificationDeeplink(
   const FEATUREResult = authStore2.FEATURE(map1.DAVE_PROTOCOL_VERIFICATION);
   return "" + protocol + "//" + location.host + FEATUREResult + "?userId=" + userId + "&fingerprint=" + encodeURIComponent(arg1);
 };
-export const getUserVerifyStateText = function getUserVerifyStateText(memo, name) {
-  if (unpackModuleId.OTHER_USER_DISCONNECTED === memo) {
+export const getUserVerifyStateText = function getUserVerifyStateText(CURRENT_USER_DISCONNECTED, name) {
+  if (unpackModuleId.OTHER_USER_DISCONNECTED === CURRENT_USER_DISCONNECTED) {
     const intl13 = intl15.intl;
     const items = [intl13.string(intl15.t.ZBHDM9), ];
     const intl14 = intl15.intl;
     const obj2 = { username: name };
     items[1] = intl14.format(intl15.t["+rIdOd"], obj2);
     return items;
-  } else if (unpackModuleId.CURRENT_USER_DISCONNECTED === memo) {
+  } else if (unpackModuleId.CURRENT_USER_DISCONNECTED === CURRENT_USER_DISCONNECTED) {
     const intl11 = intl15.intl;
     const items1 = [intl11.string(intl15.t["5ICxE6"]), ];
     const intl12 = intl15.intl;
     items1[1] = intl12.string(intl15.t["v1eXp/"]);
     return items1;
-  } else if (unpackModuleId.UNABLE_TO_VERIFY === memo) {
+  } else if (unpackModuleId.UNABLE_TO_VERIFY === CURRENT_USER_DISCONNECTED) {
     const intl9 = intl15.intl;
     const items2 = [intl9.string(intl15.t["+no/a7"]), ];
     const intl10 = intl15.intl;
     const obj3 = { username: name };
     items2[1] = intl10.format(intl15.t.Mft7iJ, obj3);
     return items2;
-  } else if (unpackModuleId.FINGERPRINT_MISMATCH === memo) {
+  } else if (unpackModuleId.FINGERPRINT_MISMATCH === CURRENT_USER_DISCONNECTED) {
     const intl7 = intl15.intl;
     const items3 = [intl7.string(intl15.t.HTJ76H), ];
     const intl8 = intl15.intl;
     const obj4 = { username: name };
     items3[1] = intl8.format(intl15.t.tc6aAc, obj4);
     return items3;
-  } else if (unpackModuleId.OTHER_USER_ALREADY_VERIFIED === memo) {
+  } else if (unpackModuleId.OTHER_USER_ALREADY_VERIFIED === CURRENT_USER_DISCONNECTED) {
     const intl5 = intl15.intl;
     const items4 = [intl5.string(intl15.t["9lw+J+"]), ];
     const intl6 = intl15.intl;
     const obj5 = { username: name };
     items4[1] = intl6.format(intl15.t.TvBS1w, obj5);
     return items4;
-  } else if (unpackModuleId.MATCH === memo) {
+  } else if (unpackModuleId.MATCH === CURRENT_USER_DISCONNECTED) {
     const intl3 = intl15.intl;
     const items5 = [intl3.string(intl15.t["xyE+Dn"]), ];
     const intl4 = intl15.intl;
     const obj6 = { username: name };
     items5[1] = intl4.format(intl15.t.znsPl5, obj6);
     return items5;
-  } else if (unpackModuleId.OTHER_USER_INCONSISTENT_KEYS === memo) {
+  } else if (unpackModuleId.OTHER_USER_INCONSISTENT_KEYS === CURRENT_USER_DISCONNECTED) {
     const intl = intl15.intl;
     const items6 = [intl.string(intl15.t.im1uUi), ];
     const intl2 = intl15.intl;

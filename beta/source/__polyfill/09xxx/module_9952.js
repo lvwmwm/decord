@@ -1,13 +1,12 @@
 // Module ID: 9952
 // Function ID: 9953
-// Dependencies: [41, 42, 93, 95, 98, 9900, 9902]
+// Dependencies: [41, 42, 93, 95, 98, 9953]
 
 // Module 9952
-import Meridiem from "Meridiem" /* 9900 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
+import _mod9953 from "module_9953" /* 9953 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -26,14 +25,31 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FRCasualTimeParser {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class ENMergeDateTimeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, FRCasualTimeParser);
-    const obj = _getPrototypeOf(FRCasualTimeParser);
+    _classCallCheck(this, ENMergeDateTimeRefiner);
+    const obj = _getPrototypeOf(ENMergeDateTimeRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -43,47 +59,14 @@ class FRCasualTimeParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FRCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENMergeDateTimeRefiner, fn(_mod9953).default);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern(arg0) {
-    return /(cet?)?\s*(matin|soir|après-midi|aprem|a midi|à minuit)(?=\W|$)/i;
+  key: "patternBetween",
+  value: function patternBetween() {
+    const regExp = new RegExp("^\\s*(T|at|after|before|on|of|,|-|\\.|\u2219|:)?\\s*$");
+    return regExp;
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(createParsingComponents, arg1) {
-      const str = arg1[2];
-      const formatted = str.toLowerCase();
-      const parsingComponents = createParsingComponents.createParsingComponents();
-      if ("apr\u00E8s-midi" !== formatted) {
-        if ("aprem" !== formatted) {
-          if ("soir" === formatted) {
-            parsingComponents.imply("hour", 18);
-            parsingComponents.imply("minute", 0);
-            parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-          } else if ("matin" === formatted) {
-            parsingComponents.imply("hour", 8);
-            parsingComponents.imply("minute", 0);
-            parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
-          } else if ("a midi" === formatted) {
-            parsingComponents.imply("hour", 12);
-            parsingComponents.imply("minute", 0);
-            parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
-          } else if ("\u00E0 minuit" === formatted) {
-            parsingComponents.imply("hour", 0);
-            parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
-          }
-        }
-        return parsingComponents;
-      }
-      parsingComponents.imply("hour", 14);
-      parsingComponents.imply("minute", 0);
-      parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(FRCasualTimeParser, items);
+export default _createClass(ENMergeDateTimeRefiner, items);

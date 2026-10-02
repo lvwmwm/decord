@@ -1,15 +1,15 @@
-// Module ID: 4997
-// Function ID: 4998
+// Module ID: 4998
+// Function ID: 4999
 // Name: GuildRoomUtils
-// Dependencies: [4994, 4998, 4999, 4996, 4995, 2]
+// Dependencies: [4995, 4999, 5000, 4997, 4996, 2]
 // Exports: findSeat, serverGuildRoomToClient
 
-// Module 4997 (GuildRoomUtils)
-import GuildRoomTypes from "GuildRoomTypes" /* 4995 */;
-import GuildRoomSeats from "GuildRoomSeats" /* 4996 */;
-import GuildRoomConstants from "GuildRoomConstants" /* 4998 */;
-import GuildRoomBackgrounds from "GuildRoomBackgrounds" /* 4999 */;
-import GuildRoomStore from "GuildRoomStore" /* 4994 */;
+// Module 4998 (GuildRoomUtils)
+import GuildRoomTypes from "GuildRoomTypes" /* 4996 */;
+import GuildRoomSeats from "GuildRoomSeats" /* 4997 */;
+import GuildRoomConstants from "GuildRoomConstants" /* 4999 */;
+import GuildRoomBackgrounds from "GuildRoomBackgrounds" /* 5000 */;
+import GuildRoomStore from "GuildRoomStore" /* 4995 */;
 import size from "module_2" /* 2 */;
 
 let map, map1;

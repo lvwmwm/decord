@@ -1,46 +1,151 @@
-// Module ID: 13025
-// Function ID: 13026
+// Module ID: 13027
+// Function ID: 13028
 // Name: usePremiumGroupFeaturesTableCardText
-// Dependencies: [4494, 4502, 1115, 3199, 1380, 7493, 13026, 504, 2]
-// Exports: default
+// Dependencies: [4497, 4505, 1127, 3202, 1386, 7497, 558, 576, 13028, 504, 2]
 
-// Module 13025 (usePremiumGroupFeaturesTableCardText)
+// Module 13027 (usePremiumGroupFeaturesTableCardText)
 import get_initialized from "get initialized" /* 504 */;
-import user from "user" /* 1380 */;
-import _modDef3199 from "module_3199" /* 3199 */;
-import PremiumGroupUtils from "PremiumGroupUtils" /* 7493 */;
-import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 13026 */;
-import SubscriptionStore from "SubscriptionStore" /* 4494 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4502 */;
+import react from "react" /* 576 */;
+import user from "user" /* 1386 */;
+import PremiumGroupUtils from "PremiumGroupUtils" /* 7497 */;
+import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 13028 */;
+import SubscriptionStore from "SubscriptionStore" /* 4497 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 4505 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
+let tmp6;
+const _modDef3202 = tmp6(3202);
 ({ getPremiumGroupProductName: closure_4, HELP_CENTER_LINK: hasOwnProperty } = PremiumGroupConstants);
-const result = size.fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupFeaturesTableCardText.tsx");
-
-export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let premiumGroupSubscription;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  const obj = react;
+  const cResult = obj.c(14);
+  const tmp4 = arg0 === user.PremiumSubscriptionGroupRole.MEMBER;
+  if (cResult[0] !== tmp4) {
+    const obj2 = { useCachedData: true, fetch: tmp4 };
+    cResult[0] = tmp4;
+    cResult[1] = obj2;
+    tmp5 = obj2;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const tmp7 = usePremiumGroupPrimaryNameDefault(tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SubscriptionStore];
+    class S {
+      constructor() {
+        return closure_1_3.getPremiumGroupSubscription();
+      }
+    }
+    cResult[2] = items;
+    cResult[3] = S;
+    tmp9 = S;
+    tmp8 = items;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
+  if (arg0 === user.PremiumSubscriptionGroupRole.UNSPECIFIED) {
+    return null;
+  } else {
+    if (cResult[4] === tmp7) {
+      if (cResult[5] === arg0) {
+        let tmp12;
+        if (cResult[6] === stateFromStores) {
+          tmp12 = cResult[7];
+        }
+        if (cResult[8] === arg0) {
+          let tmp18;
+          if (cResult[9] === arg1) {
+            tmp18 = cResult[10];
+          }
+          if (cResult[11] === tmp18) {
+            let tmp20;
+            if (cResult[12] === tmp12) {
+              tmp20 = cResult[13];
+            }
+            return tmp20;
+          }
+          const obj3 = { subheaderString: null, bodyString: tmp18 };
+          class S {
+            constructor() {
+              return closure_1_3.getPremiumGroupSubscription();
+            }
+          }
+          cResult[11] = tmp18;
+          cResult[12] = tmp12;
+          cResult[13] = obj3;
+          tmp20 = obj3;
+        }
+        class S {
+          constructor() {
+            return closure_1_3.getPremiumGroupSubscription();
+          }
+        }
+        cResult[8] = arg0;
+        cResult[9] = arg1;
+        cResult[10] = tmp19;
+        tmp18 = tmp19;
+      }
+    }
+    if (arg0 === user.PremiumSubscriptionGroupRole.PRIMARY) {
+      const tmpResult2 = PremiumGroupUtils;
+      let priceString = tmpResult2.getPriceString(stateFromStores, { withIntervals: true });
+    } else {
+      priceString = null;
+      if (null != tmp7) {
+        const intl = tmp(1127).intl;
+        const format = intl.format;
+        const obj4 = { primaryName: null, premiumGroupProductName: React3() };
+        class S {
+          constructor() {
+            return closure_1_3.getPremiumGroupSubscription();
+          }
+        }
+        const Nu9LNm = _modDef3202.Nu9LNm;
+        priceString = format(Nu9LNm, obj4);
+      }
+    }
+    class S {
+      constructor() {
+        return closure_1_3.getPremiumGroupSubscription();
+      }
+    }
+    cResult[4] = tmp7;
+    cResult[5] = arg0;
+    cResult[6] = stateFromStores;
+    cResult[7] = tmp16;
+    tmp12 = tmp16;
+  }
+}) : ((arg0, arg1) => {
+  let format3Result;
   let premiumGroupSubscription;
   const obj = { useCachedData: true, fetch: arg0 === user.PremiumSubscriptionGroupRole.MEMBER };
   const tmp4 = usePremiumGroupPrimaryNameDefault(obj);
   const items = [SubscriptionStore];
   const obj2 = get_initialized;
   const stateFromStores = obj2.useStateFromStores(items, () => premiumGroupSubscription.getPremiumGroupSubscription());
-  if (arg0 === user.PremiumSubscriptionGroupRole.UNSPECIFIED) {
-    return null;
-  } else {
+  let tmp6 = null;
+  if (arg0 !== user.PremiumSubscriptionGroupRole.UNSPECIFIED) {
     let priceString;
-    let format3Result;
     if (arg0 === user.PremiumSubscriptionGroupRole.PRIMARY) {
       const tmpResult = PremiumGroupUtils;
       priceString = tmpResult.getPriceString(stateFromStores, { withIntervals: true });
     } else {
       priceString = null;
       if (null != tmp4) {
-        const intl = tmp(1115).intl;
+        const intl = tmp(1127).intl;
         const format = intl.format;
         const obj3 = { primaryName: tmp4, premiumGroupProductName: React3() };
-        const Nu9LNm = tmp3(3199).Nu9LNm;
+        const Nu9LNm = tmp3(3202).Nu9LNm;
         priceString = format(Nu9LNm, obj3);
       }
     }
@@ -48,19 +153,24 @@ export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
     if (null != priceString) {
       str = priceString;
     }
+    const obj4 = { subheaderString: str, bodyString: format3Result };
     if (arg0 === user.PremiumSubscriptionGroupRole.PRIMARY) {
-      const intl3 = tmp(1115).intl;
+      const intl3 = tmp(1127).intl;
       const format3 = intl3.format;
-      const obj4 = { helpCenterLink: hasOwnProperty, premiumGroupProductName: React3() };
-      const prop = tmp3(3199)["+R/K74"];
-      format3Result = format3(prop, obj4);
+      const obj5 = { helpCenterLink: hasOwnProperty, premiumGroupProductName: React3() };
+      const prop = tmp3(3202)["+R/K74"];
+      format3Result = format3(prop, obj5);
     } else {
-      const intl2 = tmp(1115).intl;
+      const intl2 = tmp(1127).intl;
       const format2 = intl2.format;
-      const tmp3Result = _modDef3199;
-      const obj5 = { helpCenterLink: hasOwnProperty };
-      format3Result = format2(arg1 ? tmp3Result["xF+upx"] : tmp3Result.qqfnOm, obj5);
+      const tmp3Result = _modDef3202;
+      const obj6 = { helpCenterLink: hasOwnProperty };
+      format3Result = format2(arg1 ? tmp3Result["xF+upx"] : tmp3Result.qqfnOm, obj6);
     }
-    return { subheaderString: str, bodyString: format3Result };
+    tmp6 = obj4;
   }
-};
+  return tmp6;
+});
+const result = size.fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupFeaturesTableCardText.tsx");
+
+export default tmp3;

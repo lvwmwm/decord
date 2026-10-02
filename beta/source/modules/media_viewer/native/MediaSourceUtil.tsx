@@ -1,34 +1,36 @@
-// Module ID: 7713
-// Function ID: 7714
+// Module ID: 7717
+// Function ID: 7718
 // Name: MediaSourceUtil
-// Dependencies: [19, 2045, 1074, 4986, 1385, 6710, 6715, 1478, 7714, 6747, 7313, 5196, 7388, 5060, 1979, 7567, 7583, 1370, 7715, 1094, 4527, 7709, 5204, 1115, 1427, 7716, 2]
-// Exports: downloadMediaAsset, downloadMediaAssetWithContentType, extractMediaFromMessageComponents, extractMediaSourcesFromComponent, extractMediaSourcesFromEmbed, extractMediaSourcesFromMessage, flattenSource, getAttachmentUrl, getEmbedMedia, getEmbedUrl, getSelectedMediaSource, getVideoSourceType, getYoutubeClipVideoIdFromURI, getYoutubeVideoIdFromURI, isAnimatedAvifSource, isAnimatedImageSource, isAnimatedWebpSource, isGIFSource, isThumbnailAttachment, isValidImageEmbed, isValidVideoAttachment, isValidVideoEmbed, setMediaSourcePortal, supportOverlayVideoControls, useSelectedMediaSource
+// Dependencies: [19, 2051, 1086, 4987, 1391, 6711, 6716, 1484, 7718, 6748, 7317, 5197, 7392, 5061, 1985, 7571, 7587, 1376, 558, 576, 7719, 1106, 4530, 7713, 5205, 1127, 1433, 7720, 2]
+// Exports: downloadMediaAsset, downloadMediaAssetWithContentType, extractMediaFromMessageComponents, extractMediaSourcesFromComponent, extractMediaSourcesFromEmbed, extractMediaSourcesFromMessage, flattenSource, getAttachmentUrl, getEmbedMedia, getEmbedUrl, getSelectedMediaSource, getVideoSourceType, getYoutubeClipVideoIdFromURI, getYoutubeVideoIdFromURI, isAnimatedAvifSource, isAnimatedImageSource, isAnimatedWebpSource, isGIFSource, isThumbnailAttachment, isValidImageEmbed, isValidVideoAttachment, isValidVideoEmbed, setMediaSourcePortal, supportOverlayVideoControls
 
-// Module 7713 (MediaSourceUtil)
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import intl3 from "intl" /* 1115 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import react_nativeDefault from "react-native" /* 1427 */;
-import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1478 */;
-import Server from "Server" /* 1979 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4986 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 5060 */;
-import EmbedUtils from "EmbedUtils" /* 5196 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6710 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6715 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6747 */;
-import renderMessageMarkupDefault from "renderMessageMarkup" /* 7313 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7388 */;
-import transformMessageComponents from "transformMessageComponents" /* 7567 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 7583 */;
-import getDisplayFilenameDefault from "getDisplayFilename" /* 7714 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 7715 */;
-import NativePortalView from "NativePortalView" /* 7716 */;
+// Module 7717 (MediaSourceUtil)
+import react2 from "react" /* 576 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import intl3 from "intl" /* 1127 */;
+import FlagUtils from "FlagUtils" /* 1391 */;
+import react_nativeDefault from "react-native" /* 1433 */;
+import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1484 */;
+import Server from "Server" /* 1985 */;
+import ToastUtils from "ToastUtils" /* 4530 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4987 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 5061 */;
+import EmbedUtils from "EmbedUtils" /* 5197 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6711 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6716 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6748 */;
+import renderMessageMarkupDefault from "renderMessageMarkup" /* 7317 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7392 */;
+import transformMessageComponents from "transformMessageComponents" /* 7571 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 7587 */;
+import getDisplayFilenameDefault from "getDisplayFilename" /* 7718 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 7719 */;
+import NativePortalView from "NativePortalView" /* 7720 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +38,7 @@ let _require, closure_2, dependencyMap, importDefault;
 
 let hasOwnProperty;
 let metroRequire;
-const f84947 = () => {
+const f94914 = () => {
   if (ConstantsIOS.MediaType.IMAGE === VIDEO) {
     const tmp2Result = ToastUtils;
     tmp2Result.presentImageSaved();
@@ -47,7 +49,7 @@ const f84947 = () => {
     const tmp2Result4 = ToastUtils;
     tmp2Result4.presentVideoSaved();
   }
-  const MediaViewerAnalytics = tmp2(7709).MediaViewerAnalytics;
+  const MediaViewerAnalytics = tmp2(7713).MediaViewerAnalytics;
   const result = MediaViewerAnalytics.trackMediaViewerDownloadButtonTapped();
 };
 function isValidImageAttachment(filename) {
@@ -75,7 +77,7 @@ function isValidImageAttachment(filename) {
       if (tmp2) {
         let hasFlagResult = null != filename.flags;
         if (hasFlagResult) {
-          const tmp5Result = tmp5(1385);
+          const tmp5Result = tmp5(1391);
           hasFlagResult = tmp5Result.hasFlag(filename.flags, hasOwnProperty.IS_THUMBNAIL);
         }
         tmp2 = hasFlagResult;
@@ -435,7 +437,7 @@ function extractMediaFromEmbed(image, id, contentMessage, mediaIndex, guildIdFro
       const size3 = { uri: tmp14Result.getMobileOptimizedSrc(str64, image.thumbnail.width, image.thumbnail.height), guildId: guildIdFromSearchContext, spoiler: hasSpoilerEmbeds, flags: image.flags, obscure: result, contentScanVersion: content_scan_version, contentType: contentType2, messageId: id.id, noCarousel: !isEmbedInlineResult, mediaIndex, accessoryType: "embed", channelId: id.channel_id, sourceURI: image.thumbnail.url, width: image.thumbnail.width, height: image.thumbnail.height, shareURI: image.thumbnail.url };
       const thumbnail2 = image.thumbnail;
       const push = items1.push;
-      tmp14Result = tmp14(1478);
+      tmp14Result = tmp14(1484);
       if ("contentType" in thumbnail2) {
         contentType2 = thumbnail2.contentType;
       } else if ("content_type" in thumbnail2) {
@@ -519,7 +521,7 @@ function toMediaSourceFromUnfurledMedia(id, guildId, media, description, spoiler
   if (unfurledMediaItemType === RowGeneratorTypes.MediaGalleryItemType.VISUAL_PLACEHOLDER) {
     return null;
   } else {
-    const VIDEO = tmp(7583).MediaGalleryItemType.VIDEO;
+    const VIDEO = tmp(7587).MediaGalleryItemType.VIDEO;
     ({ proxyUrl: proxyUrl2, width } = media);
     const getMobileOptimizedSrc = utils_ImageUtilsDefault.getMobileOptimizedSrc;
     if (width == null) {
@@ -586,25 +588,80 @@ function handleDownloadError() {
 ({ MessageAttachmentFlags: hasOwnProperty, WEBP_RE_IOS: metroRequire } = Constants);
 const re7 = /\.avif$/i;
 const VideoSourceType = { PORTAL: 0, [0]: "PORTAL", TIKTOK_IFRAME: 1, [1]: "TIKTOK_IFRAME", WEB_FILE_IFRAME: 2, [2]: "WEB_FILE_IFRAME", DEFAULT: 3, [3]: "DEFAULT" };
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/media_viewer/native/MediaSourceUtil.tsx");
-
-export const flattenSource = function flattenSource(arr, arg1) {
-  let tmp = arr;
-  if (Array.isArray(arr)) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
+  const obj = react2;
+  const cResult = obj.c(3);
+  const tmp2 = useStateFromSharedValueDefault(index.index);
+  let tmp3 = null;
+  if (tmp2 >= 0) {
+    tmp3 = null;
+    if (tmp2 < index.sources.length) {
+      let tmp4 = null;
+      if (null != index.sources[tmp2]) {
+        const _Array = Array;
+        let tmp6 = arr;
+        if (Array.isArray(index.sources[tmp2])) {
+          tmp6 = arr[arr.length - 1];
+        }
+        tmp4 = tmp6;
+      }
+      tmp3 = tmp4;
+    }
+  }
+  if (cResult[0] === tmp2) {
+    let tmp7;
+    if (cResult[1] === tmp3) {
+      tmp7 = cResult[2];
+    }
+    return tmp7;
+  }
+  const items = [tmp2, tmp3];
+  cResult[0] = tmp2;
+  cResult[1] = tmp3;
+  cResult[2] = items;
+  tmp7 = items;
+}) : ((index) => {
+  let closure_0 = index;
+  const tmp = useStateFromSharedValueDefault(index.index);
+  let closure_1 = tmp;
+  const items = [index.sources, tmp];
+  const items1 = [
+    tmp,
+    react.useMemo(() => {
+      if (closure_1 >= 0) {
+        if (closure_1 < closure_0.sources.length) {
+          let tmp2 = null;
+          if (null != closure_0.sources[closure_1]) {
+            const _Array = Array;
+            let tmp4 = arr;
+            if (Array.isArray(closure_0.sources[closure_1])) {
+              tmp4 = arr[arr.length - 1];
+            }
+            tmp2 = tmp4;
+          }
+          return tmp2;
+        }
+      }
+      return null;
+    }, items)
+  ];
+  return items1;
+});
+function flattenSource(cResult, arg1) {
+  let tmp = cResult;
+  if (Array.isArray(cResult)) {
     let first;
     const tmp2 = arg1;
     if (tmp2) {
-      first = arr[arr.length - 1];
+      first = cResult[cResult.length - 1];
     } else {
-      first = arr[0];
+      first = cResult[0];
     }
     tmp = first;
   }
   return tmp;
-};
-export { isValidImageAttachment };
-export const isValidVideoAttachment = function isValidVideoAttachment(filename) {
+}
+function isValidVideoAttachment(filename) {
   let tmp = null != filename;
   if (tmp) {
     let isVideoFileResult = null != filename;
@@ -618,14 +675,14 @@ export const isValidVideoAttachment = function isValidVideoAttachment(filename) 
     tmp = isVideoFileResult;
   }
   return tmp;
-};
-export const isValidImageEmbed = function isValidImageEmbed(image) {
+}
+function isValidImageEmbed(image) {
   return null != image.image || null != image.thumbnail;
-};
-export const isValidVideoEmbed = function isValidVideoEmbed(video) {
+}
+function isValidVideoEmbed(video) {
   return null != video.video;
-};
-export const isThumbnailAttachment = function isThumbnailAttachment(flags) {
+}
+function isThumbnailAttachment(flags) {
   let tmp = null != flags;
   if (tmp) {
     let hasFlagResult = null != flags.flags;
@@ -636,8 +693,8 @@ export const isThumbnailAttachment = function isThumbnailAttachment(flags) {
     tmp = hasFlagResult;
   }
   return tmp;
-};
-export const getAttachmentUrl = function getAttachmentUrl(proxy_url) {
+}
+function getAttachmentUrl(proxy_url) {
   if (null != proxy_url.proxy_url) {
     let url;
     if ("" !== proxy_url.proxy_url) {
@@ -646,11 +703,10 @@ export const getAttachmentUrl = function getAttachmentUrl(proxy_url) {
     return url;
   }
   url = proxy_url.url;
-};
-export { extractMediaFromAttachment };
-export const getEmbedUrl = function getEmbedUrl(size) {
-  const proxyURL = size.proxyURL;
-  const url = size.url;
+}
+function getEmbedUrl(embedMedia) {
+  const proxyURL = embedMedia.proxyURL;
+  const url = embedMedia.url;
   if (null != proxyURL) {
     if ("" !== proxyURL) {
       const _URL = URL;
@@ -679,8 +735,8 @@ export const getEmbedUrl = function getEmbedUrl(size) {
     }
   }
   return url;
-};
-export const getEmbedMedia = function getEmbedMedia(embed) {
+}
+function getEmbedMedia(embed) {
   let thumbnail = embed.image;
   if (thumbnail == null) {
     thumbnail = embed.video;
@@ -689,7 +745,68 @@ export const getEmbedMedia = function getEmbedMedia(embed) {
     thumbnail = embed.thumbnail;
   }
   return thumbnail;
-};
+}
+function downloadMediaAssetWithContentType(mediaUrl, VIDEO, contentType) {
+  let result;
+  let closure_0 = VIDEO;
+  if (null != contentType) {
+    const obj2 = react_nativeDefault;
+    result = obj2.downloadMediaAssetWithContentType(mediaUrl, VIDEO, contentType);
+  } else {
+    const obj = react_nativeDefault;
+    result = obj.downloadMediaAsset(mediaUrl, VIDEO);
+  }
+  return result.then(f94914, handleDownloadError);
+}
+function isAnimatedWebpSource(sourceURI) {
+  let result = null != sourceURI.sourceURI && null != sourceURI.uri;
+  if (result) {
+    const obj = MediaFormatTesters;
+    result = obj.urlMatchesFileExtension(sourceURI.sourceURI, metroRequire);
+  }
+  if (result) {
+    const _URL = URL;
+    const self = this;
+    const self2 = this;
+    const uRL = new URL(sourceURI.uri);
+    const searchParams = uRL.searchParams;
+    result = "true" === searchParams.get("animated");
+  }
+  return result;
+}
+function isAnimatedAvifSource(sourceURI) {
+  let result = null != sourceURI.sourceURI && null != sourceURI.uri;
+  if (result) {
+    const obj = MediaFormatTesters;
+    result = obj.urlMatchesFileExtension(sourceURI.sourceURI, re7);
+  }
+  if (result) {
+    const _URL = URL;
+    const self = this;
+    const self2 = this;
+    const uRL = new URL(sourceURI.uri);
+    const searchParams = uRL.searchParams;
+    result = "true" === searchParams.get("animated");
+  }
+  return result;
+}
+function isGIFSource(sourceURI) {
+  const obj = MediaFormatTesters;
+  return obj.urlMatchesFileExtension(sourceURI.sourceURI, ConstantsIOS.GIF_RE_IOS);
+}
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/media_viewer/native/MediaSourceUtil.tsx");
+
+export { flattenSource };
+export { isValidImageAttachment };
+export { isValidVideoAttachment };
+export { isValidImageEmbed };
+export { isValidVideoEmbed };
+export { isThumbnailAttachment };
+export { getAttachmentUrl };
+export { extractMediaFromAttachment };
+export { getEmbedUrl };
+export { getEmbedMedia };
 export { extractMediaFromEmbed };
 export const extractMediaFromMessageComponents = function extractMediaFromMessageComponents(getContentMessage, contentMessage, getContentMessage2) {
   if (0 === contentMessage.components.length) {
@@ -717,7 +834,7 @@ export const extractMediaFromMessageComponents = function extractMediaFromMessag
           }
           continue;
         }
-      } else if (tmp7(1979).ComponentType.THUMBNAIL === type) {
+      } else if (tmp7(1985).ComponentType.THUMBNAIL === type) {
         let tmp36 = toMediaSourceFromUnfurledMedia(getContentMessage, getContentMessage, tmp5.media, tmp5.description, tmp5.spoiler);
         if (null != tmp36) {
           let obj3 = { sources: tmp37, unfurledMediaItem: tmp5.media };
@@ -810,7 +927,7 @@ export const extractMediaSourcesFromComponent = function extractMediaSourcesFrom
     return null;
   } else {
     const type = value.type;
-    if (tmp(1979).ComponentType.MEDIA_GALLERY === type) {
+    if (tmp(1985).ComponentType.MEDIA_GALLERY === type) {
       let num2 = 0;
       if (null != componentMediaIndex) {
         num2 = 0;
@@ -831,9 +948,9 @@ export const extractMediaSourcesFromComponent = function extractMediaSourcesFrom
         }
         return tmp;
       });
-      const obj2 = { initialIndex: dependencyMap, sources: mapped.filter(tmp(1370).isNotNullish) };
+      const obj2 = { initialIndex: dependencyMap, sources: mapped.filter(tmp(1376).isNotNullish) };
       return obj2;
-    } else if (tmp(1979).ComponentType.THUMBNAIL === type) {
+    } else if (tmp(1985).ComponentType.THUMBNAIL === type) {
       const tmp7 = toMediaSourceFromUnfurledMedia(message2, guild_id, value.media, value.description, value.spoiler);
       let tmp8 = null;
       if (null != tmp7) {
@@ -939,51 +1056,14 @@ export const getSelectedMediaSource = function getSelectedMediaSource(mediaViewe
   }
   return null;
 };
-export const useSelectedMediaSource = function useSelectedMediaSource(syncer) {
-  let closure_0 = syncer;
-  const tmp = useStateFromSharedValueDefault(syncer.index);
-  let closure_1 = tmp;
-  const items = [syncer.sources, tmp];
-  const items1 = [
-    tmp,
-    react.useMemo(() => {
-      if (closure_1 >= 0) {
-        if (closure_1 < closure_0.sources.length) {
-          let tmp2 = null;
-          if (null != closure_0.sources[closure_1]) {
-            const _Array = Array;
-            let tmp4 = arr;
-            if (Array.isArray(closure_0.sources[closure_1])) {
-              tmp4 = arr[arr.length - 1];
-            }
-            tmp2 = tmp4;
-          }
-          return tmp2;
-        }
-      }
-      return null;
-    }, items)
-  ];
-  return items1;
-};
+export const useSelectedMediaSource = tmp3;
 export const downloadMediaAsset = function downloadMediaAsset(mediaUrl, VIDEO) {
   let closure_0 = VIDEO;
   const obj = react_nativeDefault;
   const downloadMediaAssetResult = obj.downloadMediaAsset(mediaUrl, VIDEO);
-  return downloadMediaAssetResult.then(f84947, handleDownloadError);
+  return downloadMediaAssetResult.then(f94914, handleDownloadError);
 };
-export const downloadMediaAssetWithContentType = function downloadMediaAssetWithContentType(mediaUrl, VIDEO, contentType) {
-  let result;
-  let closure_0 = VIDEO;
-  if (null != contentType) {
-    const obj2 = react_nativeDefault;
-    result = obj2.downloadMediaAssetWithContentType(mediaUrl, VIDEO, contentType);
-  } else {
-    const obj = react_nativeDefault;
-    result = obj.downloadMediaAsset(mediaUrl, VIDEO);
-  }
-  return result.then(f84947, handleDownloadError);
-};
+export { downloadMediaAssetWithContentType };
 export const getYoutubeClipVideoIdFromURI = function getYoutubeClipVideoIdFromURI(uri) {
   const match = uri.match(/^https:\/\/www\.youtube\.com\/embed\/([A-Za-z0-9_-]*)(\?clip=([A-Za-z0-9_-]+)(&clipt=([A-Za-z0-9_-]+)))?$/);
   if (null != match) {
@@ -1061,42 +1141,9 @@ export const supportOverlayVideoControls = function supportOverlayVideoControls(
   }
   return tmp;
 };
-export const isAnimatedWebpSource = function isAnimatedWebpSource(sourceURI) {
-  let result = null != sourceURI.sourceURI && null != sourceURI.uri;
-  if (result) {
-    const obj = MediaFormatTesters;
-    result = obj.urlMatchesFileExtension(sourceURI.sourceURI, metroRequire);
-  }
-  if (result) {
-    const _URL = URL;
-    const self = this;
-    const self2 = this;
-    const uRL = new URL(sourceURI.uri);
-    const searchParams = uRL.searchParams;
-    result = "true" === searchParams.get("animated");
-  }
-  return result;
-};
-export const isAnimatedAvifSource = function isAnimatedAvifSource(sourceURI) {
-  let result = null != sourceURI.sourceURI && null != sourceURI.uri;
-  if (result) {
-    const obj = MediaFormatTesters;
-    result = obj.urlMatchesFileExtension(sourceURI.sourceURI, re7);
-  }
-  if (result) {
-    const _URL = URL;
-    const self = this;
-    const self2 = this;
-    const uRL = new URL(sourceURI.uri);
-    const searchParams = uRL.searchParams;
-    result = "true" === searchParams.get("animated");
-  }
-  return result;
-};
-export const isGIFSource = function isGIFSource(sourceURI) {
-  const obj = MediaFormatTesters;
-  return obj.urlMatchesFileExtension(sourceURI.sourceURI, ConstantsIOS.GIF_RE_IOS);
-};
+export { isAnimatedWebpSource };
+export { isAnimatedAvifSource };
+export { isGIFSource };
 export const isAnimatedImageSource = function isAnimatedImageSource(source) {
   const obj = MediaFormatTesters;
   let result = obj.urlMatchesFileExtension(source.sourceURI, ConstantsIOS.GIF_RE_IOS);

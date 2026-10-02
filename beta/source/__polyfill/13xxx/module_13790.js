@@ -1,34 +1,85 @@
 // Module ID: 13790
 // Function ID: 13791
-// Dependencies: [13791, 13793, 13800, 13823, 13811, 13825, 13821, 13826]
+// Dependencies: []
 
 // Module 13790
-import _mod13791 from "module_13791" /* 13791 */;
-import _mod13793 from "module_13793" /* 13793 */;
-import _mod13800 from "module_13800" /* 13800 */;
-import _mod13811 from "module_13811" /* 13811 */;
-import _mod13821 from "module_13821" /* 13821 */;
-import _mod13823 from "module_13823" /* 13823 */;
-import _mod13825 from "module_13825" /* 13825 */;
-import propertyIsEnumerable from "propertyIsEnumerable" /* 13826 */;
-
-if (!_mod13791) {
-  getOwnPropertyDescriptor = function getOwnPropertyDescriptor(arg0, arg1) {
-    const tmp3 = _mod13793(arg0);
-    const tmp4 = _mod13800(arg1);
-    if (!_mod13823) {
-      if (_mod13811(tmp3, tmp4)) {
-        const tmpResult = _mod13825;
-        const tmpResult2 = _mod13821;
-        return tmpResult(!tmpResult2(propertyIsEnumerable.f, tmp3, tmp4), tmp3[tmp4]);
-      }
-    } else {
-      try {
-        return getOwnPropertyDescriptor(tmp3, tmp4);
-      } catch (err) {
-      }
-    }
-  };
+let _globalThis = typeof globalThis === "object";
+if (typeof globalThis === "object") {
+  _globalThis = globalThis;
+}
+let tmp = _globalThis;
+if (tmp) {
+  const _Math = Math;
+  tmp = _globalThis.Math === Math;
+}
+if (tmp) {
+  tmp = _globalThis;
+}
+if (!tmp) {
+  const _window = window;
+  let _window2 = typeof window === "object";
+  if (typeof window === "object") {
+    _window2 = window;
+  }
+  let tmp2 = _window2;
+  if (tmp2) {
+    const _Math2 = Math;
+    tmp2 = _window2.Math === Math;
+  }
+  if (tmp2) {
+    tmp2 = _window2;
+  }
+  tmp = tmp2;
+}
+if (!tmp) {
+  const _self = self;
+  let _self2 = typeof self === "object";
+  if (typeof self === "object") {
+    _self2 = self;
+  }
+  let tmp3 = _self2;
+  if (tmp3) {
+    const _Math3 = Math;
+    tmp3 = _self2.Math === Math;
+  }
+  if (tmp3) {
+    tmp3 = _self2;
+  }
+  tmp = tmp3;
+}
+if (!tmp) {
+  let tmp5 = typeof global === "object";
+  if (typeof global === "object") {
+    tmp5 = global;
+  }
+  let tmp6 = tmp5;
+  if (tmp6) {
+    const _Math4 = Math;
+    tmp6 = tmp5.Math === Math;
+  }
+  if (tmp6) {
+    tmp6 = tmp5;
+  }
+  tmp = tmp6;
+}
+if (!tmp) {
+  let self = typeof this === "object";
+  if (typeof this === "object") {
+    self = this;
+  }
+  let tmp7 = self;
+  if (tmp7) {
+    const _Math5 = Math;
+    tmp7 = self.Math === Math;
+  }
+  if (tmp7) {
+    tmp7 = self;
+  }
+  tmp = tmp7;
+}
+if (!tmp) {
+  const _Function = Function;
+  tmp = Function("return this")();
 }
 
-export const f = getOwnPropertyDescriptor;
+export default tmp;

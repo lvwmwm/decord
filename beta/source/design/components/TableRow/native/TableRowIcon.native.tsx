@@ -1,34 +1,37 @@
-// Module ID: 5923
-// Function ID: 5924
+// Module ID: 5922
+// Function ID: 5923
 // Name: TableRowIcon
-// Dependencies: [109, 19, 17, 21, 4836, 576, 5283, 2]
-// Exports: TableRowIcon
+// Dependencies: [109, 19, 17, 21, 4837, 588, 5284, 558, 576, 2]
 
-// Module 5923 (TableRowIcon)
+// Module 5922 (TableRowIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import Icon from "Icon" /* 5283 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Icon from "Icon" /* 5284 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const IconDefault = Icon;
 
 let obj2;
 let obj3;
+let obj4;
 let size;
 let closure_3 = ["color"];
+let closure_4 = ["color"];
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
-let obj = { container: size, default: obj2, statusOnline: obj3, statusIdle: { color: nativeDefault.colors.TEXT_STATUS_IDLE }, statusDND: { color: nativeDefault.colors.TEXT_STATUS_DND }, statusOffline: { color: nativeDefault.colors.TEXT_STATUS_OFFLINE }, xbox: { backgroundColor: nativeDefault.unsafe_rawColors.PLATFORM_XBOX, color: nativeDefault.colors.WHITE }, playstation: { backgroundColor: nativeDefault.unsafe_rawColors.PLATFORM_PLAYSTATION, color: nativeDefault.colors.WHITE }, danger: { color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL }, secondary: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, translucent: { color: nativeDefault.colors.WHITE } };
+let obj = { container: size, default: obj2, statusOnline: obj3, statusIdle: obj4, statusDND: { color: nativeDefault.colors.TEXT_STATUS_DND }, statusOffline: { color: nativeDefault.colors.TEXT_STATUS_OFFLINE }, xbox: { backgroundColor: nativeDefault.unsafe_rawColors.PLATFORM_XBOX, color: nativeDefault.colors.WHITE }, playstation: { backgroundColor: nativeDefault.unsafe_rawColors.PLATFORM_PLAYSTATION, color: nativeDefault.colors.WHITE }, danger: { color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL }, secondary: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, translucent: { color: nativeDefault.colors.WHITE } };
 size = { width: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, height: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg };
 createStyles = createStyles.createStyles;
 obj2 = { color: nativeDefault.colors.TABLEROW_ICON_COLOR_DEFAULT };
 obj3 = { color: nativeDefault.colors.TEXT_STATUS_ONLINE };
-({ color: nativeDefault.colors.TEXT_STATUS_IDLE });
+obj4 = { color: nativeDefault.colors.TEXT_STATUS_IDLE };
 ({ color: nativeDefault.colors.TEXT_STATUS_DND });
 ({ color: nativeDefault.colors.TEXT_STATUS_OFFLINE });
 ({ backgroundColor: nativeDefault.unsafe_rawColors.PLATFORM_XBOX, color: nativeDefault.colors.WHITE });
@@ -36,11 +39,186 @@ obj3 = { color: nativeDefault.colors.TEXT_STATUS_ONLINE };
 ({ color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL });
 ({ color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT });
 ({ color: nativeDefault.colors.WHITE });
-let closure_7 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("design/components/TableRow/native/TableRowIcon.native.tsx");
-
-export const TableRowIcon = function TableRowIcon(arg0) {
+let closure_8 = createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let IconComponent;
+  let source;
+  let tmp5;
+  let translucent;
+  let variant;
+  const obj = react2;
+  const cResult = obj.c(22);
+  ({ source, IconComponent, variant } = arg0);
+  let str = "default";
+  if (undefined !== variant) {
+    str = variant;
+  }
+  const tmp4 = closure_8();
+  if (cResult[0] === tmp4) {
+    let tmp7;
+    let tmp6;
+    let tmp11;
+    let tmp12;
+    let tmp14;
+    if (cResult[1] === str) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] !== tmp5) {
+      const color = tmp5.color;
+      const tmp10 = _objectWithoutProperties(tmp5, closure_3);
+      cResult[3] = tmp5;
+      cResult[4] = color;
+      cResult[5] = tmp10;
+      tmp7 = tmp10;
+      tmp6 = color;
+    } else {
+      tmp6 = cResult[4];
+      tmp7 = cResult[5];
+    }
+    if (cResult[6] !== str) {
+      let REFRESH_SMALL_16;
+      if ("default" === str) {
+        REFRESH_SMALL_16 = tmp(5284).IconSizes.MEDIUM;
+      } else {
+        REFRESH_SMALL_16 = tmp(5284).IconSizes.REFRESH_SMALL_16;
+      }
+      cResult[6] = str;
+      cResult[7] = REFRESH_SMALL_16;
+      tmp11 = REFRESH_SMALL_16;
+    } else {
+      tmp11 = cResult[7];
+    }
+    if (cResult[8] !== str) {
+      let str3 = "md";
+      if ("default" !== str) {
+        str3 = "md";
+        if ("danger" !== str) {
+          str3 = "md";
+          if ("secondary" !== str) {
+            str3 = "md";
+            if ("translucent" !== str) {
+              str3 = "sm";
+            }
+          }
+        }
+      }
+      cResult[8] = str;
+      cResult[9] = str3;
+      tmp12 = str3;
+    } else {
+      tmp12 = cResult[9];
+    }
+    if (null != source) {
+      if (cResult[10] === tmp4.container) {
+        let tmp15;
+        let tmp19;
+        if (cResult[11] === tmp7) {
+          tmp15 = cResult[12];
+        }
+        if (cResult[13] === IconComponent) {
+          if (cResult[14] === tmp11) {
+            if (cResult[15] === tmp12) {
+              if (cResult[16] === source) {
+                let tmp16;
+                if (cResult[17] === tmp6) {
+                  tmp16 = cResult[18];
+                }
+                if (cResult[19] === tmp15) {
+                  let tmp21;
+                  if (cResult[20] === tmp16) {
+                    tmp21 = cResult[21];
+                  }
+                  tmp14 = tmp21;
+                }
+                const tmp24 = <View style={tmp15}>{tmp16}</View>;
+                cResult[19] = tmp15;
+                cResult[20] = tmp16;
+                cResult[21] = tmp24;
+                tmp21 = tmp24;
+              }
+            }
+          }
+        }
+        if (null != IconComponent) {
+          tmp19 = <IconComponent size={tmp12} color={tmp6} />;
+        } else {
+          tmp19 = jsx(IconDefault, { color: tmp6, source, size: tmp11 });
+        }
+        cResult[13] = IconComponent;
+        cResult[14] = tmp11;
+        cResult[15] = tmp12;
+        cResult[16] = source;
+        cResult[17] = tmp6;
+        cResult[18] = tmp19;
+        tmp16 = tmp19;
+      }
+      const items = [tmp4.container, tmp7];
+      cResult[10] = tmp4.container;
+      cResult[11] = tmp7;
+      cResult[12] = items;
+      tmp15 = items;
+    } else {
+      tmp14 = null;
+    }
+    return tmp14;
+  }
+  switch (str) {
+    case "default":
+    {
+      translucent = tmp4.default;
+      cResult[0] = tmp4;
+      cResult[1] = str;
+      cResult[2] = translucent;
+      tmp5 = translucent;
+      break;
+    }
+    case "text-status-online":
+    {
+      translucent = tmp4.statusOnline;
+      break;
+    }
+    case "text-status-idle":
+    {
+      translucent = tmp4.statusIdle;
+      break;
+    }
+    case "text-status-dnd":
+    {
+      translucent = tmp4.statusDND;
+      break;
+    }
+    case "text-status-offline":
+    {
+      translucent = tmp4.statusOffline;
+      break;
+    }
+    case "xbox":
+    {
+      translucent = tmp4.xbox;
+      break;
+    }
+    case "playstation":
+    {
+      translucent = tmp4.playstation;
+      break;
+    }
+    case "danger":
+    {
+      translucent = tmp4.danger;
+      break;
+    }
+    case "secondary":
+    {
+      translucent = tmp4.secondary;
+      break;
+    }
+    case "translucent":
+    {
+      translucent = tmp4.translucent;
+      break;
+    }
+  }
+}) : ((arg0) => {
   let IconComponent;
   let items;
   let source;
@@ -51,7 +229,7 @@ export const TableRowIcon = function TableRowIcon(arg0) {
   if (variant === undefined) {
     variant = "default";
   }
-  const tmp = closure_7();
+  const tmp = closure_8();
   switch (variant) {
     case "default":
     {
@@ -59,7 +237,7 @@ export const TableRowIcon = function TableRowIcon(arg0) {
       let tmp11Result2;
       translucent = tmp.default;
       const color = translucent.color;
-      const tmp4 = _objectWithoutProperties(translucent, closure_3);
+      const tmp4 = _objectWithoutProperties(translucent, closure_4);
       if ("default" === variant) {
         REFRESH_SMALL_16 = Icon.IconSizes.MEDIUM;
       } else {
@@ -141,4 +319,8 @@ export const TableRowIcon = function TableRowIcon(arg0) {
       break;
     }
   }
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("design/components/TableRow/native/TableRowIcon.native.tsx");
+
+export const TableRowIcon = tmp4;

@@ -1,24 +1,25 @@
-// Module ID: 15590
-// Function ID: 15591
+// Module ID: 15592
+// Function ID: 15593
 // Name: RegisterDisplayName
-// Dependencies: [5, 32, 19, 17, 14267, 15570, 15571, 21, 4836, 576, 1115, 6363, 1485, 15567, 15586, 15569, 1094, 15585, 13992, 14268, 6795, 6376, 6391, 6024, 5281, 5890, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17, 14255, 15572, 15573, 21, 4837, 588, 1127, 558, 576, 6360, 1491, 15569, 15571, 1106, 15588, 15587, 13994, 14256, 6796, 6373, 6021, 5282, 6388, 6462, 2]
 
-// Module 15590 (RegisterDisplayName)
+// Module 15592 (RegisterDisplayName)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl5 from "intl" /* 1127 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14267 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15570 */;
-import RegistrationConstants from "RegistrationConstants" /* 15571 */;
+import react_mod from "react" /* 19 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14255 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15572 */;
+import RegistrationConstants from "RegistrationConstants" /* 15573 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault, navigation;
+let _require, importDefault, navigation, setOptionsResult;
 
 let c10;
 let c9;
@@ -28,7 +29,24 @@ let metroImportAll;
 let obj2;
 let obj3;
 let unpackModuleId;
+function getGlobalNameError(first1) {
+  if (closure_16.includes(first1)) {
+    const intl2 = intl5.intl;
+    return intl2.string(intl5.t.WeJZyy);
+  } else {
+    for (const item10009 of closure_15) {
+      let formatted = first1.toLowerCase();
+      if (formatted.includes(item10009)) {
+        let intl = intl5.intl;
+        let stringResult = intl.string(intl5.t.WeJZyy);
+        obj.return();
+        return stringResult;
+      }
+    }
+  }
+}
 let _asyncToGenerator = _asyncToGenerator_mod;
+let react = react_mod;
 const View = react_native.View;
 ({ updateRegistrationOptions: metroImportAll, useRegistrationUIStore: c9 } = RegistrationUIStore);
 ({ RegisterTransitionSteps: c10, RegistrationTransitionActionTypes: unpackModuleId } = RegistrationConstants);
@@ -41,75 +59,351 @@ obj3 = { marginTop: nativeDefault.space.PX_24 };
 let closure_14 = createStyles(obj);
 let closure_15 = ["discord", "hypesquad", "snowsgiving", "system message", "system mesage", "sustem mesage", "sustem message"];
 let closure_16 = ["everyone", "here"];
-let result = size.fileFinishedImporting("modules/auth/native/components/RegisterDisplayName.tsx");
-
-export default function RegisterDisplayName() {
-  let Button;
-  let TextInput;
-  let callback;
-  let closure_1;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let closure_3;
+  let closure_5;
   let context;
-  let intl;
-  let intl2;
-  let intl4;
-  let items3;
-  let obj5;
-  let obj7;
-  let str;
-  let stringResult;
+  let first;
+  let first1;
+  let obj6;
+  let tmp12;
+  let tmp15;
+  let tmp19;
+  let tmp24;
+  let tmp25;
   let tmp28;
-  function getGlobalNameError(str) {
-    if (closure_1_16.includes(str)) {
-      const intl2 = navigation(str[10]).intl;
-      return intl2.string(navigation(str[10]).t.WeJZyy);
-    } else {
-      for (const item10009 of closure_1_15) {
-        let formatted = str.toLowerCase();
-        if (formatted.includes(item10009)) {
-          let intl = navigation(str[10]).intl;
-          let stringResult = intl.string(navigation(str[10]).t.WeJZyy);
-          obj.return();
-          return stringResult;
+  let tmp = navigation;
+  let obj = navigation(first1[12]);
+  const cResult = obj.c(55);
+  closure_14();
+  let tmp5 = importDefault;
+  require("useWideAuthView")();
+  let obj2 = navigation(first1[14]);
+  navigation = obj2.useNavigation();
+  const obj3 = react;
+  [r10025, importDefault] = context(react.useState(false), 2);
+  const tmp8 = context;
+  const tmp9 = context(react.useState(false), 2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function u(errors) {
+      return errors.errors;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const tmp11 = state(first);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function x() {
+      let str = state.getState().registrationOptions.globalName;
+      if (str == null) {
+        str = "";
+      }
+      return str;
+    };
+    cResult[1] = fn2;
+    tmp12 = fn2;
+  } else {
+    tmp12 = cResult[1];
+  }
+  const tmp8Result = tmp8(obj3.useState(tmp12), 2);
+  first1 = tmp8Result[0];
+  _asyncToGenerator = tmp8Result[1];
+  if (cResult[2] !== first1) {
+    const tmp17 = getGlobalNameError(first1);
+    cResult[2] = first1;
+    cResult[3] = tmp17;
+    tmp15 = tmp17;
+  } else {
+    tmp15 = cResult[3];
+  }
+  context = obj3.useContext(tmp(tmp2[15]).TrackRegistrationContext);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = tmp(first1[16]);
+    const previousRegistrationTransitionStep = tmpResult.getPreviousRegistrationTransitionStep(tmp(tmp2[17]).AuthStates.REGISTER_DISPLAY_NAME);
+    cResult[4] = previousRegistrationTransitionStep;
+    tmp19 = previousRegistrationTransitionStep;
+  } else {
+    tmp19 = cResult[4];
+  }
+  const tmp21 = tmp5(tmp2[18])(tmp19);
+  const tmp5Result = tmp5(first1[19]);
+  tmp5Result(tmp(first1[17]).AuthStates.REGISTER_DISPLAY_NAME);
+  if (cResult[5] !== context) {
+    const fn3 = function j() {
+      const obj = { step: constants.ACCOUNT_DISPLAY_NAME, actionType: unpackModuleId.VIEWED };
+      context(obj);
+    };
+    const items = [context];
+    cResult[5] = context;
+    cResult[6] = fn3;
+    cResult[7] = items;
+    tmp25 = items;
+    tmp24 = fn3;
+  } else {
+    tmp24 = cResult[6];
+    tmp25 = cResult[7];
+  }
+  const effect = obj3.useEffect(tmp24, tmp25);
+  const ref = obj3.useRef(null);
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj4 = { inputRef: ref };
+    cResult[8] = obj4;
+    tmp28 = obj4;
+  } else {
+    tmp28 = cResult[8];
+  }
+  tmp5(first1[20])(tmp28);
+  if (cResult[9] === navigation) {
+    let tmp30;
+    if (cResult[10] === context) {
+      tmp30 = cResult[11];
+    }
+    react = tmp30;
+    if (cResult[12] === tmp30) {
+      let tmp31;
+      let tmp32;
+      if (cResult[13] === navigation) {
+        tmp31 = cResult[14];
+        tmp32 = cResult[15];
+      }
+      const layoutEffect = obj3.useLayoutEffect(tmp31, tmp32);
+      const _Symbol = Symbol;
+      class K {
+        constructor() {
+          obj = {
+            headerRight() {
+                      let intl;
+                      const obj = {
+                        text: intl.string(navigation(first1[10]).t["5Wxrcd"]),
+                        onPress() {
+                          return closure_1_5(null);
+                        }
+                      };
+                      const HeaderActionButton = navigation(first1[22]).HeaderActionButton;
+                      intl = navigation(first1[10]).intl;
+                      return closure_2_12(HeaderActionButton, obj);
+                    }
+          };
+          setOptionsResult = closure_0.setOptions(obj);
+          return;
         }
       }
+      if (tmp34 === Symbol.for("react.memo_cache_sentinel")) {
+        class V {
+          constructor(str) {
+            str = "";
+            const tmp = closure_3;
+            tmp(str);
+          }
+        }
+        cResult[16] = V;
+        class K {
+          constructor() {
+            obj = {
+              headerRight() {
+                          let intl;
+                          const obj = {
+                            text: intl.string(navigation(first1[10]).t["5Wxrcd"]),
+                            onPress() {
+                              return closure_1_5(null);
+                            }
+                          };
+                          const HeaderActionButton = navigation(first1[22]).HeaderActionButton;
+                          intl = navigation(first1[10]).intl;
+                          return closure_2_12(HeaderActionButton, obj);
+                        }
+            };
+            setOptionsResult = closure_0.setOptions(obj);
+            return;
+          }
+        }
+      } else {
+        class V {
+          constructor(str) {
+            str = "";
+            const tmp = closure_3;
+            tmp(str);
+          }
+        }
+      }
+      if (cResult[17] === tmp11) {
+        class V {
+          constructor(str) {
+            str = "";
+            const tmp = closure_3;
+            tmp(str);
+          }
+        }
+        const _Symbol2 = Symbol;
+        class K {
+          constructor() {
+            obj = {
+              headerRight() {
+                          let intl;
+                          const obj = {
+                            text: intl.string(navigation(first1[10]).t["5Wxrcd"]),
+                            onPress() {
+                              return closure_1_5(null);
+                            }
+                          };
+                          const HeaderActionButton = navigation(first1[22]).HeaderActionButton;
+                          intl = navigation(first1[10]).intl;
+                          return closure_2_12(HeaderActionButton, obj);
+                        }
+            };
+            setOptionsResult = closure_0.setOptions(obj);
+            return;
+          }
+        }
+        if (cResult[21] === first1) {
+          class V {
+            constructor(str) {
+              str = "";
+              const tmp = closure_3;
+              tmp(str);
+            }
+          }
+          const _Symbol3 = Symbol;
+          class K {
+            constructor() {
+              obj = {
+                headerRight() {
+                              let intl;
+                              const obj = {
+                                text: intl.string(navigation(first1[10]).t["5Wxrcd"]),
+                                onPress() {
+                                  return closure_1_5(null);
+                                }
+                              };
+                              const HeaderActionButton = navigation(first1[22]).HeaderActionButton;
+                              intl = navigation(first1[10]).intl;
+                              return closure_2_12(HeaderActionButton, obj);
+                            }
+              };
+              setOptionsResult = closure_0.setOptions(obj);
+              return;
+            }
+          }
+          if (cResult[25] !== tmp36) {
+            let stringResult;
+            class V {
+              constructor(str) {
+                str = "";
+                const tmp = closure_3;
+                tmp(str);
+              }
+            }
+            if (null == tmp36) {
+              class V {
+                constructor(str) {
+                  str = "";
+                  const tmp = closure_3;
+                  tmp(str);
+                }
+              }
+              stringResult = obj6.string(tmp(first1[10]).t.fbKwSs);
+            }
+            class K {
+              constructor() {
+                obj = {
+                  headerRight() {
+                                  let intl;
+                                  const obj = {
+                                    text: intl.string(navigation(first1[10]).t["5Wxrcd"]),
+                                    onPress() {
+                                      return closure_1_5(null);
+                                    }
+                                  };
+                                  const HeaderActionButton = navigation(first1[22]).HeaderActionButton;
+                                  intl = navigation(first1[10]).intl;
+                                  return closure_2_12(HeaderActionButton, obj);
+                                }
+                };
+                setOptionsResult = closure_0.setOptions(obj);
+                return;
+              }
+            }
+            cResult[26] = stringResult;
+          } else {
+            class V {
+              constructor(str) {
+                str = "";
+                const tmp = closure_3;
+                tmp(str);
+              }
+            }
+          }
+          if (cResult[27] === first1) {
+            class V {
+              constructor(str) {
+                str = "";
+                const tmp = closure_3;
+                tmp(str);
+              }
+            }
+          }
+          const obj5 = { ref, value: first1, onChange: tmp35, returnKeyType: "next", onSubmitEditing: tmp39, textContentType: "nickname", errorMessage: tmp36, label: tmp41, description: tmp42, clearable: true };
+          cResult[27] = first1;
+          cResult[28] = tmp36;
+          cResult[29] = tmp39;
+          cResult[30] = tmp42;
+          cResult[31] = closure_12(tmp(first1[24]).TextInput, obj5);
+          const tmp46 = closure_12(tmp(first1[24]).TextInput, obj5);
+        }
+        const fn5 = function q() {
+          return closure_5(first1);
+        };
+        cResult[21] = first1;
+        cResult[22] = tmp30;
+        cResult[23] = fn5;
+      }
+      let str = "global_name";
+      const tmp37 = tmp5(first1[23])("global_name", tmp11);
+      if (tmp37 == null) {
+        class V {
+          constructor(str) {
+            str = "";
+            const tmp = closure_3;
+            tmp(str);
+          }
+        }
+      }
+      cResult[17] = tmp11;
+      cResult[18] = tmp15;
+      cResult[19] = tmp37;
     }
+    class K {
+      constructor() {
+        obj = {
+          headerRight() {
+                  let intl;
+                  const obj = {
+                    text: intl.string(navigation(first1[10]).t["5Wxrcd"]),
+                    onPress() {
+                      return closure_1_5(null);
+                    }
+                  };
+                  const HeaderActionButton = navigation(first1[22]).HeaderActionButton;
+                  intl = navigation(first1[10]).intl;
+                  return closure_2_12(HeaderActionButton, obj);
+                }
+        };
+        setOptionsResult = closure_0.setOptions(obj);
+        return;
+      }
+    }
+    const items1 = [tmp30, navigation];
+    cResult[12] = tmp30;
+    cResult[13] = navigation;
+    cResult[14] = K;
+    cResult[15] = items1;
+    tmp32 = items1;
+    tmp31 = K;
   }
-  let tmp = closure_14();
-  let tmp3 = str;
-  let tmp5 = navigation;
-  let tmp4 = require("useWideAuthView")();
-  let obj = navigation(str[12]);
-  navigation = obj.useNavigation();
-  const tmp7 = context(callback.useState(false), 2);
-  importDefault = tmp7[1];
-  const first = tmp7[0];
-  const tmp9 = state((errors) => errors.errors);
-  const tmp10 = context(callback.useState(() => {
-    str = state.getState().registrationOptions.globalName;
-    if (str == null) {
-      str = "";
-    }
-    return str;
-  }), 2);
-  str = tmp10[0];
-  _asyncToGenerator = tmp10[1];
-  const tmp11 = getGlobalNameError(str);
-  context = callback.useContext(navigation(str[13]).TrackRegistrationContext);
-  const tmp13 = require("useAuthFlowBackHandler");
-  let obj2 = navigation(str[15]);
-  tmp13(obj2.getPreviousRegistrationTransitionStep(navigation(str[16]).AuthStates.REGISTER_DISPLAY_NAME));
-  const tmp15 = require("useInitialRegistrationStep");
-  tmp15(navigation(str[16]).AuthStates.REGISTER_DISPLAY_NAME);
-  const items = [context];
-  const effect = callback.useEffect(() => {
-    const obj = { step: constants.ACCOUNT_DISPLAY_NAME, actionType: unpackModuleId.VIEWED };
-    context(obj);
-  }, items);
-  const ref = callback.useRef(null);
-  require("useFocusRefOnNavigation")({ inputRef: ref });
-  const useCallback = callback.useCallback;
-  let closure_0 = _asyncToGenerator(async (globalName) => {
+  _require = _asyncToGenerator(async (globalName) => {
+    let closure_1;
     let c2 = 0;
     let c3 = 0;
     return (async (arg0, value) => {
@@ -123,7 +417,7 @@ export default function RegisterDisplayName() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -148,14 +442,134 @@ export default function RegisterDisplayName() {
                   c2 = 1;
                   c3 = 1;
                   const obj8 = { value: obj2.fetchSuggestionsRegistration(globalName), done: false };
-                  obj2 = closure_2_1(str[19]);
+                  obj2 = closure_2_1(first1[21]);
                   return obj8;
                 }
               }
-              const obj4 = globalName(str[15]);
-              const result = obj4.handleNextOrSubmitRegistration(globalName(str[16]).AuthStates.REGISTER_DISPLAY_NAME, globalName, closure_1_4);
+              const obj4 = globalName(first1[16]);
+              const result = obj4.handleNextOrSubmitRegistration(globalName(first1[17]).AuthStates.REGISTER_DISPLAY_NAME, globalName, closure_1_4);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            return { value, done: true };
+          }
+          tmp(false);
+        } catch (tmp21) {
+          c3 = 3;
+          throw tmp21;
+        }
+      }
+    })();
+  });
+  const fn4 = function() {
+    return closure_0(...arguments);
+  };
+  cResult[9] = navigation;
+  cResult[10] = context;
+  cResult[11] = fn4;
+  tmp30 = fn4;
+}) : (() => {
+  let Button;
+  let TextInput;
+  let callback;
+  let closure_1;
+  let closure_3;
+  let context;
+  let intl;
+  let intl2;
+  let intl4;
+  let items3;
+  let obj5;
+  let obj7;
+  let str;
+  let stringResult;
+  let tmp28;
+  let tmp = closure_14();
+  const tmp3 = str;
+  let tmp5 = navigation;
+  const tmp4 = require("useWideAuthView")();
+  let obj = navigation(str[14]);
+  navigation = obj.useNavigation();
+  const tmp7 = context(callback.useState(false), 2);
+  importDefault = tmp7[1];
+  const first = tmp7[0];
+  const tmp9 = state((errors) => errors.errors);
+  const tmp10 = context(callback.useState(() => {
+    str = state.getState().registrationOptions.globalName;
+    if (str == null) {
+      str = "";
+    }
+    return str;
+  }), 2);
+  str = tmp10[0];
+  _asyncToGenerator = tmp10[1];
+  const tmp11 = getGlobalNameError(str);
+  context = callback.useContext(navigation(str[15]).TrackRegistrationContext);
+  const tmp13 = require("useAuthFlowBackHandler");
+  let obj2 = navigation(str[16]);
+  tmp13(obj2.getPreviousRegistrationTransitionStep(navigation(str[17]).AuthStates.REGISTER_DISPLAY_NAME));
+  const tmp15 = require("useInitialRegistrationStep");
+  tmp15(navigation(str[17]).AuthStates.REGISTER_DISPLAY_NAME);
+  const items = [context];
+  const effect = callback.useEffect(() => {
+    const obj = { step: constants.ACCOUNT_DISPLAY_NAME, actionType: unpackModuleId.VIEWED };
+    context(obj);
+  }, items);
+  const ref = callback.useRef(null);
+  require("useFocusRefOnNavigation")({ inputRef: ref });
+  const useCallback = callback.useCallback;
+  let closure_0 = _asyncToGenerator(async (globalName) => {
+    let c2 = 0;
+    let c3 = 0;
+    return (async (arg0, value) => {
+      let obj2;
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              return { value, done: true };
+            } else {
+              const obj6 = { globalName };
+              closure_2_8(obj6);
+              const registrationOptions = state.getState().registrationOptions;
+              const obj7 = { step: constants.ACCOUNT_DISPLAY_NAME, actionType: constants2.SUBMITTED };
+              closure_1_4(obj7);
+              const tmp5 = null != registrationOptions.username && "" !== registrationOptions.username;
+              if (!tmp5) {
+                tmp(true);
+                if (!closure_2_7.wasRegistrationSuggestionFetched(globalName)) {
+                  c2 = 1;
+                  c3 = 1;
+                  const obj8 = { value: obj2.fetchSuggestionsRegistration(globalName), done: false };
+                  obj2 = closure_2_1(str[21]);
+                  return obj8;
+                }
+              }
+              const obj4 = globalName(str[16]);
+              const result = obj4.handleNextOrSubmitRegistration(globalName(str[17]).AuthStates.REGISTER_DISPLAY_NAME, globalName, closure_1_4);
+              c3 = 3;
+              return { value: "IconComponent", done: null };
             }
           } else if (arg0 === 1) {
             c3 = 3;
@@ -187,7 +601,7 @@ export default function RegisterDisplayName() {
             return closure_1_5(null);
           }
         };
-        const HeaderActionButton = navigation(str[20]).HeaderActionButton;
+        const HeaderActionButton = navigation(str[22]).HeaderActionButton;
         intl = navigation(str[10]).intl;
         return closure_2_12(HeaderActionButton, obj);
       }
@@ -220,7 +634,7 @@ export default function RegisterDisplayName() {
     description: stringResult,
     clearable: true
   };
-  TextInput = tmp5(tmp3[23]).TextInput;
+  TextInput = tmp5(tmp3[24]).TextInput;
   intl2 = tmp5(tmp3[10]).intl;
   stringResult = undefined;
   const tmp23 = closure_13;
@@ -239,7 +653,7 @@ export default function RegisterDisplayName() {
     },
     disabled: tmp28
   };
-  Button = tmp5(tmp3[24]).Button;
+  Button = tmp5(tmp3[25]).Button;
   intl4 = tmp5(tmp3[10]).intl;
   tmp28 = null != tmp11;
   if (!tmp28) {
@@ -250,7 +664,10 @@ export default function RegisterDisplayName() {
   let tmp25Result = tmp23Result;
   if (!tmp4) {
     let obj8 = { style: tmp.page, children: tmp23Result };
-    tmp25Result = tmp25(tmp2(tmp3[25]), obj8);
+    tmp25Result = tmp25(tmp2(tmp3[27]), obj8);
   }
   return tmp25Result;
-};
+});
+let result = size.fileFinishedImporting("modules/auth/native/components/RegisterDisplayName.tsx");
+
+export default tmp6;

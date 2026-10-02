@@ -1,20 +1,20 @@
-// Module ID: 15634
-// Function ID: 15635
+// Module ID: 15636
+// Function ID: 15637
 // Name: ChannelScreenAnimatedFrame
-// Dependencies: [19, 21, 4836, 576, 4566, 4837, 1177, 15632, 7297, 6544, 2]
-// Exports: default
+// Dependencies: [19, 21, 4837, 588, 558, 576, 4570, 4838, 1189, 15634, 7301, 6546, 2]
 
-// Module 15634 (ChannelScreenAnimatedFrame)
+// Module 15636 (ChannelScreenAnimatedFrame)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import timing from "timing" /* 4837 */;
-import PanelsConfig from "PanelsConfig" /* 15632 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import timing from "timing" /* 4838 */;
+import PanelsConfig from "PanelsConfig" /* 15634 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let num, obj1, tmp2, tmp2Result, tmp3, tmp4;
+let obj1, tmp2, tmp3;
 
 let obj2;
 let obj3;
@@ -26,43 +26,116 @@ createStyles = createStyles.createStyles;
 obj3 = { borderLeftColor: nativeDefault.colors.APP_FRAME_BORDER, borderLeftWidth: nativeDefault.modules.mobile.CHANNEL_DRAWER_DIVIDER_WIDTH };
 let closure_4 = createStyles(obj);
 const __initData = { code: "function ChannelScreenAnimatedFrameTsx1(){const{translateX,maxWidth,isChatLockedOpen,withTiming,STANDARD_EASING,SIDE_PANEL_CLOSE_DURATION_MS,SIDE_PANEL_OPEN_DURATION_MS}=this.__closure;const hide=translateX.get()===maxWidth||isChatLockedOpen;return{opacity:withTiming(hide?0:1,{easing:STANDARD_EASING,duration:hide?SIDE_PANEL_CLOSE_DURATION_MS:SIDE_PANEL_OPEN_DURATION_MS})};}" };
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/ChannelScreenAnimatedFrame.tsx");
-
-export default function ChannelScreenAnimatedFrame(translateX) {
+const __initData2 = { code: "function ChannelScreenAnimatedFrameTsx2(){const{translateX,maxWidth,isChatLockedOpen,withTiming,STANDARD_EASING,SIDE_PANEL_CLOSE_DURATION_MS,SIDE_PANEL_OPEN_DURATION_MS}=this.__closure;const hide=translateX.get()===maxWidth||isChatLockedOpen;return{opacity:withTiming(hide?0:1,{easing:STANDARD_EASING,duration:hide?SIDE_PANEL_CLOSE_DURATION_MS:SIDE_PANEL_OPEN_DURATION_MS})};}" };
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((translateX) => {
+  let isChatLockedOpen;
+  let tmp = translateX;
+  let obj = translateX(isChatLockedOpen[5]);
+  const cResult = obj.c(8);
   translateX = translateX.translateX;
   const maxWidth = translateX.maxWidth;
-  const isChatLockedOpen = translateX.isChatLockedOpen;
-  let tmp = closure_4();
-  let obj = translateX(isChatLockedOpen[4]);
+  isChatLockedOpen = translateX.isChatLockedOpen;
+  const tmp4 = closure_4();
+  let obj2 = translateX(isChatLockedOpen[6]);
   class S {
     constructor() {
       tmp = translateX.get() === maxWidth || isChatLockedOpen;
       tmp2 = closure_0;
       tmp3 = closure_2;
-      tmp4 = closure_0(closure_2[5]);
+      tmp4 = closure_0(closure_2[7]);
       num = 1;
       withTiming = tmp4.withTiming;
       if (tmp) {
         num = 0;
       }
-      obj = { easing: tmp2(tmp3[6]).STANDARD_EASING, duration: null };
-      tmp2Result = tmp2(tmp3[7]);
+      obj = { easing: tmp2(tmp3[8]).STANDARD_EASING, duration: null };
+      tmp2Result = tmp2(tmp3[9]);
       obj1 = { opacity: withTiming(num, obj) };
       obj.duration = tmp ? tmp2Result.SIDE_PANEL_CLOSE_DURATION_MS : tmp2Result.SIDE_PANEL_OPEN_DURATION_MS;
       return obj1;
     }
   }
-  let obj2 = { translateX, maxWidth, isChatLockedOpen, withTiming: translateX(isChatLockedOpen[5]).withTiming, STANDARD_EASING: translateX(isChatLockedOpen[6]).STANDARD_EASING, SIDE_PANEL_CLOSE_DURATION_MS: translateX(isChatLockedOpen[7]).SIDE_PANEL_CLOSE_DURATION_MS, SIDE_PANEL_OPEN_DURATION_MS: translateX(isChatLockedOpen[7]).SIDE_PANEL_OPEN_DURATION_MS };
-  S.__closure = obj2;
+  S.__closure = { translateX, maxWidth, isChatLockedOpen, withTiming: translateX(isChatLockedOpen[7]).withTiming, STANDARD_EASING: translateX(isChatLockedOpen[8]).STANDARD_EASING, SIDE_PANEL_CLOSE_DURATION_MS: translateX(isChatLockedOpen[9]).SIDE_PANEL_CLOSE_DURATION_MS, SIDE_PANEL_OPEN_DURATION_MS: translateX(isChatLockedOpen[9]).SIDE_PANEL_OPEN_DURATION_MS };
   S.__workletHash = 9063010717249;
   S.__initData = __initData;
-  const animatedStyle = obj.useAnimatedStyle(S);
-  const obj3 = translateX(isChatLockedOpen[8]);
+  ({ translateX, maxWidth, isChatLockedOpen, withTiming: translateX(isChatLockedOpen[7]).withTiming, STANDARD_EASING: translateX(isChatLockedOpen[8]).STANDARD_EASING, SIDE_PANEL_CLOSE_DURATION_MS: translateX(isChatLockedOpen[9]).SIDE_PANEL_CLOSE_DURATION_MS, SIDE_PANEL_OPEN_DURATION_MS: translateX(isChatLockedOpen[9]).SIDE_PANEL_OPEN_DURATION_MS });
+  const animatedStyle = obj2.useAnimatedStyle(S);
+  const obj4 = translateX(isChatLockedOpen[10]);
+  const gradientTop = obj4.useGradientTop();
+  if (cResult[0] === gradientTop) {
+    if (cResult[1] === animatedStyle) {
+      if (cResult[2] === tmp4.container) {
+        let tmp7;
+        let tmp9;
+        let tmp12;
+        if (cResult[3] === tmp4.splitDivider) {
+          tmp7 = cResult[4];
+        }
+        const _Symbol = Symbol;
+        if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+          const tmp11 = jsx(tmp(isChatLockedOpen[11]).SafeAreaPaddingView, { top: true });
+          let num = 5;
+          cResult[5] = tmp11;
+          tmp9 = tmp11;
+        } else {
+          tmp9 = cResult[5];
+        }
+        if (cResult[6] !== tmp7) {
+          const tmp15 = jsx(maxWidth(isChatLockedOpen[6]).View, { pointerEvents: "none", style: tmp7, children: tmp9 });
+          cResult[6] = tmp7;
+          cResult[7] = tmp15;
+          tmp12 = tmp15;
+        } else {
+          tmp12 = cResult[7];
+        }
+        return tmp12;
+      }
+    }
+  }
+  const items = [, , , ];
+  ({ container: arr[0], splitDivider: arr[1] } = tmp4);
+  items[2] = gradientTop;
+  items[3] = animatedStyle;
+  cResult[0] = gradientTop;
+  cResult[1] = animatedStyle;
+  cResult[2] = tmp4.container;
+  cResult[3] = tmp4.splitDivider;
+  cResult[4] = items;
+  tmp7 = items;
+}) : ((translateX) => {
+  translateX = translateX.translateX;
+  const maxWidth = translateX.maxWidth;
+  const isChatLockedOpen = translateX.isChatLockedOpen;
+  let tmp = closure_4();
+  let obj = translateX(isChatLockedOpen[6]);
+  const fn = function o() {
+    let tmp2Result;
+    const tmp = translateX.get() === maxWidth || isChatLockedOpen;
+    let num = 1;
+    const withTiming = timing.withTiming;
+    timing;
+    if (tmp) {
+      num = 0;
+    }
+    const obj = { easing: native.STANDARD_EASING, duration: tmp ? tmp2Result.SIDE_PANEL_CLOSE_DURATION_MS : tmp2Result.SIDE_PANEL_OPEN_DURATION_MS };
+    tmp2Result = PanelsConfig;
+    const obj2 = { opacity: withTiming(num, obj) };
+    return obj2;
+  };
+  let obj2 = { translateX, maxWidth, isChatLockedOpen, withTiming: translateX(isChatLockedOpen[7]).withTiming, STANDARD_EASING: translateX(isChatLockedOpen[8]).STANDARD_EASING, SIDE_PANEL_CLOSE_DURATION_MS: translateX(isChatLockedOpen[9]).SIDE_PANEL_CLOSE_DURATION_MS, SIDE_PANEL_OPEN_DURATION_MS: translateX(isChatLockedOpen[9]).SIDE_PANEL_OPEN_DURATION_MS };
+  fn.__closure = obj2;
+  fn.__workletHash = 10998352187650;
+  fn.__initData = __initData2;
+  const animatedStyle = obj.useAnimatedStyle(fn);
+  const obj3 = translateX(isChatLockedOpen[10]);
   const gradientTop = obj3.useGradientTop();
   const items = [, , , ];
   ({ container: arr[0], splitDivider: arr[1] } = tmp);
   items[2] = gradientTop;
   items[3] = animatedStyle;
-  const View = maxWidth(isChatLockedOpen[4]).View;
+  const View = maxWidth(isChatLockedOpen[6]).View;
   return <View pointerEvents="none" style={items}>{null}</View>;
-};
+});
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/ChannelScreenAnimatedFrame.tsx");
+
+export default tmp4;

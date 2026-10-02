@@ -1,29 +1,29 @@
-// Module ID: 4474
-// Function ID: 4475
+// Module ID: 4477
+// Function ID: 4478
 // Name: PermissionUtils
-// Dependencies: [2101, 4470, 4471, 2049, 2063, 2103, 502, 2045, 2108, 2102, 2067, 1372, 1074, 1086, 12, 4475, 4456, 11, 1979, 4476, 2106, 2]
+// Dependencies: [2104, 4473, 4474, 2055, 2069, 2106, 502, 2051, 2111, 2105, 2073, 1378, 1086, 1098, 12, 4478, 4459, 11, 1985, 4479, 2109, 2]
 // Exports: areChannelsLocked, can, canEveryone, canEveryoneRole, canManageACategory, getGuildVisualOwnerId, getHighestHoistedRole, getHighestRole, isRoleHigher, makeEveryoneOverwrite
 
-// Module 4474 (PermissionUtils)
+// Module 4477 (PermissionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import Server from "Server" /* 1979 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2103 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 2106 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4475 */;
-import AppChannelPermissions from "AppChannelPermissions" /* 4476 */;
-import ImpersonateStore from "ImpersonateStore" /* 2101 */;
-import LurkingStore from "LurkingStore" /* 4470 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import GuildRecord from "GuildRecord" /* 2063 */;
+import Server from "Server" /* 1985 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2106 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 2109 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4478 */;
+import AppChannelPermissions from "AppChannelPermissions" /* 4479 */;
+import ImpersonateStore from "ImpersonateStore" /* 2104 */;
+import LurkingStore from "LurkingStore" /* 4473 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4474 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import GuildRecord from "GuildRecord" /* 2069 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
-import BigFlagUtils_mod from "BigFlagUtils" /* 1086 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildRoleStore from "GuildRoleStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import BigFlagUtils_mod from "BigFlagUtils" /* 1098 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -91,7 +91,7 @@ function applyOverwrites(id, member, deserializeResult, overwrites) {
       found = tmp19Result7.filter(addResult4, closure_29);
     }
     found1 = found;
-    const tmp28Result = tmp28(4456);
+    const tmp28Result = tmp28(4459);
     const tmp34 = tmp28Result.isMemberCommunicationDisabled(member) && !hasItem;
     if (tmp34) {
       const tmp19Result8 = BigFlagUtils;
@@ -385,7 +385,7 @@ function getSyncedPermissionOverwrites(guild_id, appChannelBotUserId) {
       allow = deserializeResult;
     }
     deny = undefined;
-    remove = tmp12(1086).remove;
+    remove = tmp12(1098).remove;
     BigFlagUtils;
     if (obj[appChannelBotUserId] != null) {
       deny = tmp9.deny;
@@ -518,7 +518,7 @@ export const areChannelsLocked = function areChannelsLocked(c18, c19, appChannel
           const tmp12 = getSyncedPermissionOverwrites(c19, appChannelBotUserId);
           let closure_1 = tmp12;
           if (null == obj2[guild_id]) {
-            let obj = { id: guild_id, type: obj2(1979).PermissionOverwriteType.ROLE, allow: deserializeResult, deny: deserializeResult };
+            let obj = { id: guild_id, type: obj2(1985).PermissionOverwriteType.ROLE, allow: deserializeResult, deny: deserializeResult };
             let tmp3 = obj2;
             obj2[guild_id] = obj;
           }
@@ -598,7 +598,7 @@ export const makeEveryoneOverwrite = function makeEveryoneOverwrite(guildId1) {
   const obj = { id: guildId1, type: Server.PermissionOverwriteType.ROLE, allow: deserializeResult, deny: deserializeResult };
   return obj;
 };
-export const canManageACategory = function canManageACategory(currentUser, guild, _categories) {
+export const canManageACategory = function canManageACategory(currentUser, guild, categories) {
   let context;
   let excludeGuildPermissions;
   let overwrites;
@@ -611,7 +611,7 @@ export const canManageACategory = function canManageACategory(currentUser, guild
   let obj2 = BigFlagUtils;
   let someResult = obj2.has(computePermissions({ user, context, overwrites, roles, checkElevated: true, excludeGuildPermissions }), permission);
   if (!someResult) {
-    someResult = _categories.some((channel) => {
+    someResult = categories.some((channel) => {
       let context;
       let excludeGuildPermissions;
       let overwrites;

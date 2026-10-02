@@ -1,15 +1,15 @@
-// Module ID: 1231
-// Function ID: 1232
+// Module ID: 1243
+// Function ID: 1244
 // Name: SentryUtils
-// Dependencies: [17, 3, 1232, 675, 13625, 674, 1363, 2]
+// Dependencies: [17, 3, 1244, 687, 13627, 686, 1369, 2]
 
-// Module 1231 (SentryUtils)
+// Module 1243 (SentryUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 674 */;
-import _modAll675 from "module_675" /* 675 */;
-import react_nativeAll from "react-native" /* 1363 */;
-import SentryInitUtils_mod from "SentryInitUtils" /* 1232 */;
+import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 686 */;
+import _modAll687 from "module_687" /* 687 */;
+import react_nativeAll from "react-native" /* 1369 */;
+import SentryInitUtils_mod from "SentryInitUtils" /* 1244 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,26 +23,26 @@ SentryInitUtils = SentryInitUtils.initSentry();
 let obj = {
   setUser(id, username, email, staff) {
     const user = { id, username, email, staff };
-    const obj2 = _modAll675;
+    const obj2 = _modAll687;
     const currentScope = obj2.getCurrentScope();
     currentScope.setUser(user);
     const CrashReportingManager = NativeModules.CrashReportingManager;
     CrashReportingManager.setUser(user);
   },
   clearUser() {
-    const obj = _modAll675;
+    const obj = _modAll687;
     const currentScope = obj.getCurrentScope();
     currentScope.setUser(null);
     const CrashReportingManager = NativeModules.CrashReportingManager;
     CrashReportingManager.setUser({ staff: false });
   },
   setTags(arg0) {
-    const obj = _modAll675;
+    const obj = _modAll687;
     const currentScope = obj.getCurrentScope();
     currentScope.setTags(arg0);
   },
   setExtra(arg0) {
-    const obj = _modAll675;
+    const obj = _modAll687;
     const currentScope = obj.getCurrentScope();
     currentScope.setExtras(arg0);
   },
@@ -52,7 +52,7 @@ let obj = {
     _require = arg0;
     let obj = require("ErrorCommonUtils");
     importAll = obj.getUpdatedOptions(extra);
-    const obj2 = _modAll675;
+    const obj2 = _modAll687;
     obj2.withScope((setTags) => {
       if (null != closure_2) {
         if (null != closure_2.tags) {
@@ -62,7 +62,7 @@ let obj = {
           setTags.setExtras(closure_2.extra);
         }
       }
-      const obj = _modAll675;
+      const obj = _modAll687;
       closure_1 = obj.captureException(closure_0);
     });
     return closure_1;
@@ -84,7 +84,7 @@ let obj = {
       }
     }
     dependencyMap = Object.assign({ crash: "true" }, {});
-    const obj2 = updatedOptions(675);
+    const obj2 = updatedOptions(687);
     obj2.withScope((setExtras) => {
       const tmp2 = null != updatedOptions && null != tmp.extra;
       if (tmp2) {
@@ -108,7 +108,7 @@ let obj = {
         }
         return exception;
       });
-      let obj = _modAll675;
+      let obj = _modAll687;
       closure_1 = obj.captureException(error);
     });
     return closure_1;
@@ -120,7 +120,7 @@ let obj = {
     let closure_1 = arg2;
     let obj = require("ErrorCommonUtils");
     importAll = obj.getUpdatedOptions(extra);
-    const obj2 = _modAll675;
+    const obj2 = _modAll687;
     obj2.withScope((setExtras) => {
       const tmp2 = null != closure_2 && null != closure_2.extra;
       if (tmp2) {
@@ -138,14 +138,14 @@ let obj = {
           return arg0;
         });
       }
-      const obj = _modAll675;
+      const obj = _modAll687;
       obj.captureMessage(closure_0, closure_1);
     });
   },
   addFeatureFlag(arg0, arg1) {
-    const getClient = _modAll675.getClient;
+    const getClient = _modAll687.getClient;
     let client;
-    _modAll675;
+    _modAll687;
     if (getClient != null) {
       client = getClient();
     }
@@ -171,7 +171,7 @@ let obj = {
     let withProfilerResult = displayName;
     const obj = react_nativeAll;
     if ("canaryRelease" === obj.getConstants().ReleaseChannel) {
-      const tmpResult = _modAll675;
+      const tmpResult = _modAll687;
       withProfilerResult = tmpResult.withProfiler(displayName, { includeRender: true, includeUpdates: true });
     }
     return withProfilerResult;

@@ -1,19 +1,21 @@
-// Module ID: 13270
-// Function ID: 13271
+// Module ID: 13272
+// Function ID: 13273
 // Name: ProgramRewardsUtils
-// Dependencies: [1372, 1374, 4262, 13271, 13274, 13275, 4488, 2]
-// Exports: canFetchAnyProgramReward, canFetchNitroProgramReward, canFetchXboxProgramReward, hasNecessaryPremiumSubscriptionStatus, isEligibleForProgramReward, isProgramRewardStale, useIsEligibleForProgramReward
+// Dependencies: [1378, 1380, 4265, 13273, 13276, 558, 13277, 4491, 2]
+// Exports: canFetchAnyProgramReward, canFetchNitroProgramReward, canFetchXboxProgramReward, hasNecessaryPremiumSubscriptionStatus, isEligibleForProgramReward, isProgramRewardStale
 
-// Module 13270 (ProgramRewardsUtils)
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import isPastDefault from "isPast" /* 4262 */;
-import PremiumUtils from "PremiumUtils" /* 4488 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 13271 */;
-import PremiumRewardsOrbsExperiment from "PremiumRewardsOrbsExperiment" /* 13274 */;
-import useHasXboxMonthlyOrbsPerk from "useHasXboxMonthlyOrbsPerk" /* 13275 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 13272 (ProgramRewardsUtils)
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import isPastDefault from "isPast" /* 4265 */;
+import PremiumUtils from "PremiumUtils" /* 4491 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 13273 */;
+import PremiumRewardsOrbsExperiment from "PremiumRewardsOrbsExperiment" /* 13276 */;
+import useHasXboxMonthlyOrbsPerk from "useHasXboxMonthlyOrbsPerk" /* 13277 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const PremiumTypes = PremiumConstants.PremiumTypes;
 function canFetchNitroProgramReward(ProgramRewardsUtils) {
   let flag;
   let str = ProgramRewardsUtils;
@@ -65,8 +67,60 @@ function canFetchXboxProgramReward(ProgramRewardsUtils) {
   }
   return flag;
 }
-const PremiumTypes = PremiumConstants.PremiumTypes;
-let closure_5 = { [ProgramRewardsTypes.RewardProgram.NITRO]: canFetchNitroProgramReward, [ProgramRewardsTypes.RewardProgram.XBOX]: canFetchXboxProgramReward };
+let obj = {};
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let str = "ProgramRewardsUtils";
+  if (undefined !== arg1) {
+    str = arg1;
+  }
+  obj = PremiumRewardsOrbsExperiment;
+  const isInTreatment = obj.usePremiumRewardsOrbsExperiment(str).isInTreatment;
+  if (ProgramRewardsTypes.RewardProgram.NITRO === arg0) {
+    return isInTreatment;
+  } else if (ProgramRewardsTypes.RewardProgram.XBOX === arg0) {
+    return true;
+  } else {
+    return false;
+  }
+}) : ((arg0) => {
+  let str = arg1;
+  if (arg1 === undefined) {
+    str = "ProgramRewardsUtils";
+  }
+  obj = PremiumRewardsOrbsExperiment;
+  const isInTreatment = obj.usePremiumRewardsOrbsExperiment(str).isInTreatment;
+  if (ProgramRewardsTypes.RewardProgram.NITRO === arg0) {
+    return isInTreatment;
+  } else if (ProgramRewardsTypes.RewardProgram.XBOX === arg0) {
+    return true;
+  } else {
+    return false;
+  }
+});
+function isEligibleForProgramReward(arg0, ProgramRewardsUtils) {
+  let str = ProgramRewardsUtils;
+  if (ProgramRewardsUtils === undefined) {
+    str = "ProgramRewardsUtils";
+  }
+  if (ProgramRewardsTypes.RewardProgram.NITRO === arg0) {
+    const tmpResult = PremiumRewardsOrbsExperiment;
+    return tmpResult.getPremiumRewardsOrbsExperiment(str).isInTreatment;
+  } else if (ProgramRewardsTypes.RewardProgram.XBOX === arg0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+function hasNecessaryPremiumSubscriptionStatus(stateFromStores) {
+  let currentUser = stateFromStores;
+  if (stateFromStores == null) {
+    currentUser = UserStore.getCurrentUser();
+  }
+  obj = PremiumUtils;
+  return obj.isPremiumExactly(currentUser, PremiumTypes.TIER_2);
+}
+obj[ProgramRewardsTypes.RewardProgram.NITRO] = canFetchNitroProgramReward;
+obj[ProgramRewardsTypes.RewardProgram.XBOX] = canFetchXboxProgramReward;
 const result = size.fileFinishedImporting("modules/rewards/ProgramRewardsUtils.tsx");
 
 export const isProgramRewardStale = function isProgramRewardStale(next_reward_date) {
@@ -86,35 +140,8 @@ export const isProgramRewardStale = function isProgramRewardStale(next_reward_da
     return tmp;
   }
 };
-export const isEligibleForProgramReward = function isEligibleForProgramReward(arg0, ProgramRewardsUtils) {
-  let str = ProgramRewardsUtils;
-  if (ProgramRewardsUtils === undefined) {
-    str = "ProgramRewardsUtils";
-  }
-  if (ProgramRewardsTypes.RewardProgram.NITRO === arg0) {
-    const tmpResult = PremiumRewardsOrbsExperiment;
-    return tmpResult.getPremiumRewardsOrbsExperiment(str).isInTreatment;
-  } else if (ProgramRewardsTypes.RewardProgram.XBOX === arg0) {
-    return true;
-  } else {
-    return false;
-  }
-};
-export const useIsEligibleForProgramReward = function useIsEligibleForProgramReward(arg0, ProgramRewardsUtils) {
-  let str = ProgramRewardsUtils;
-  if (ProgramRewardsUtils === undefined) {
-    str = "ProgramRewardsUtils";
-  }
-  const obj = PremiumRewardsOrbsExperiment;
-  const isInTreatment = obj.usePremiumRewardsOrbsExperiment(str).isInTreatment;
-  if (ProgramRewardsTypes.RewardProgram.NITRO === arg0) {
-    return isInTreatment;
-  } else if (ProgramRewardsTypes.RewardProgram.XBOX === arg0) {
-    return true;
-  } else {
-    return false;
-  }
-};
+export { isEligibleForProgramReward };
+export const useIsEligibleForProgramReward = tmp2;
 export { canFetchNitroProgramReward };
 export { canFetchXboxProgramReward };
 export const canFetchAnyProgramReward = function canFetchAnyProgramReward(ProgramRewardsStore) {
@@ -125,7 +152,7 @@ export const canFetchAnyProgramReward = function canFetchAnyProgramReward(Progra
   const values = Object.values(ProgramRewardsTypes.RewardProgram);
   for (const item10015 of values) {
     if (typeof item10015 === "number") {
-      if (closure_5[tmp2](str)) {
+      if (obj[tmp2](str)) {
         obj.return();
         let flag = true;
         return true;
@@ -135,10 +162,4 @@ export const canFetchAnyProgramReward = function canFetchAnyProgramReward(Progra
   }
   return false;
 };
-export const hasNecessaryPremiumSubscriptionStatus = function hasNecessaryPremiumSubscriptionStatus(currentUser) {
-  if (currentUser == null) {
-    currentUser = UserStore.getCurrentUser();
-  }
-  const obj = PremiumUtils;
-  return obj.isPremiumExactly(currentUser, PremiumTypes.TIER_2);
-};
+export { hasNecessaryPremiumSubscriptionStatus };

@@ -1,21 +1,82 @@
-// Module ID: 10502
-// Function ID: 10503
+// Module ID: 10534
+// Function ID: 10535
 // Name: PremiumWishlistItemCard
-// Dependencies: [19, 21, 8234, 8235, 2]
-// Exports: default
+// Dependencies: [109, 19, 21, 558, 576, 8231, 8232, 2]
 
-// Module 10502 (PremiumWishlistItemCard)
+// Module 10534 (PremiumWishlistItemCard)
 import Fragment from "Fragment" /* 21 */;
-import SKUPreview from "SKUPreview" /* 8234 */;
-import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 8235 */;
+import SKUPreview from "SKUPreview" /* 8231 */;
+import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 8232 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-const jsx = Fragment.jsx;
-let size = size_mod;
-const result = size.fileFinishedImporting("modules/wishlists/native/PremiumWishlistItemCard.tsx");
+const require = globalThis.__r;
 
-export default function PremiumWishlistItemCard(size) {
+let closure_3 = ["sku", "source", "size"];
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let _require;
+  let sku;
+  let source;
+  let tmp3;
+  let tmp5;
+  let tmp6;
+  const obj = require("react");
+  const cResult = obj.c(13);
+  if (cResult[0] !== arg0) {
+    ({ sku, source, size } = arg0);
+    _require = size;
+    const tmp9 = _objectWithoutProperties(arg0, closure_3);
+    cResult[0] = arg0;
+    cResult[1] = tmp9;
+    cResult[2] = size;
+    cResult[3] = sku;
+    cResult[4] = source;
+    tmp6 = source;
+    tmp5 = sku;
+    tmp3 = tmp9;
+  } else {
+    tmp3 = cResult[1];
+    _require = cResult[2];
+    tmp5 = cResult[3];
+    tmp6 = cResult[4];
+  }
+  if (cResult[5] !== tmp4) {
+    class P {
+      constructor() {
+        obj = { size: closure_0 };
+        return jsx(closure_0(closure_2[5]).PremiumSKUPreview, obj);
+      }
+    }
+    cResult[5] = tmp4;
+    cResult[6] = P;
+  } else {
+    class P {
+      constructor() {
+        obj = { size: closure_0 };
+        return jsx(closure_0(closure_2[5]).PremiumSKUPreview, obj);
+      }
+    }
+  }
+  if (cResult[7] === tmp3) {
+    class P {
+      constructor() {
+        obj = { size: closure_0 };
+        return jsx(closure_0(closure_2[5]).PremiumSKUPreview, obj);
+      }
+    }
+  }
+  WishlistItemCardBaseDefault;
+  const merged = Object.assign(tmp3);
+  cResult[7] = tmp3;
+  cResult[8] = tmp10;
+  cResult[9] = tmp4;
+  cResult[10] = tmp5.name;
+  cResult[11] = tmp6;
+  cResult[12] = <tmp11 accessibilityLabel={tmp5.name} renderPreview={tmp10} source={tmp6} size={tmp4} />;
+}) : ((size) => {
   let sku;
   let source;
   size = size.size;
@@ -26,4 +87,8 @@ export default function PremiumWishlistItemCard(size) {
   WishlistItemCardBaseDefault;
   const merged1 = Object.assign(merged);
   return <tmp3 accessibilityLabel={sku.name} renderPreview={callback} source={source} size={size} />;
-};
+});
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/wishlists/native/PremiumWishlistItemCard.tsx");
+
+export default tmp2;

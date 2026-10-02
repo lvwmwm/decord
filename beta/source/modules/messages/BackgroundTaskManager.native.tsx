@@ -1,15 +1,15 @@
-// Module ID: 7174
-// Function ID: 7175
+// Module ID: 7178
+// Function ID: 7179
 // Name: BackgroundTaskManager
-// Dependencies: [5, 17, 1364, 7175, 7177, 2]
+// Dependencies: [5, 17, 1370, 7179, 7181, 2]
 // Exports: backgroundify, endBackgroundTask
 
-// Module 7174 (BackgroundTaskManager)
+// Module 7178 (BackgroundTaskManager)
 import react_native from "react-native" /* 17 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 7175 */;
-import ForegroundServiceManagerTypes from "ForegroundServiceManagerTypes" /* 7177 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 7179 */;
+import ForegroundServiceManagerTypes from "ForegroundServiceManagerTypes" /* 7181 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -67,7 +67,7 @@ function backgroundify(arg0, arg1) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;

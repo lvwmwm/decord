@@ -1,11 +1,11 @@
-// Module ID: 12058
-// Function ID: 12059
+// Module ID: 11968
+// Function ID: 11969
 // Name: AppliedGuildBoostStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 12058 (AppliedGuildBoostStore)
+// Module 11968 (AppliedGuildBoostStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let closure_0, closure_2, set;
@@ -75,7 +75,7 @@ Object.defineProperty(prototype, "isFetchingCurrentUserAppliedBoosts", {
   set: undefined
 });
 AppliedGuildBoostStore.displayName = "AppliedGuildBoostStore";
-const obj = {
+let obj = {
   GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: function handleAppliedBoostsForGuildFetchSuccess(appliedBoosts) {
     closure_0[appliedBoosts.guildId] = { subscriptions: appliedBoosts.appliedBoosts, lastFetchedAt: Date.now() };
     ({ subscriptions: appliedBoosts.appliedBoosts, lastFetchedAt: Date.now() });

@@ -1,76 +1,56 @@
 // Module ID: 1871
 // Function ID: 1872
-// Dependencies: [19, 1638, 1868]
-// Exports: useEndVisible
+// Dependencies: [19, 21, 1863, 1864, 1869, 1836, 1862]
+// Exports: default
 
 // Module 1871
-import react from "react" /* 19 */;
-import _mod1638 from "module_1638" /* 1638 */;
-import _mod1868 from "module_1868" /* 1868 */;
+import react2 from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import KeyboardController2 from "KeyboardController" /* 1836 */;
+import _modDef1863 from "module_1863" /* 1863 */;
+import _modDef1864 from "module_1864" /* 1864 */;
 
-const useMemo = react.useMemo;
-let closure_3 = { code: "function pnpm_useEndVisibleTs1(){const{layout,size,isScrollAtEnd,scroll,inverted}=this.__closure;if(layout.value.height===0||size.value.height===0){return null;}return isScrollAtEnd(scroll.value,layout.value.height,size.value.height,inverted);}" };
-let closure_4 = { code: "function pnpm_useEndVisibleTs2(){const{isAtEnd}=this.__closure;return isAtEnd.value;}" };
-let __initData = { code: "function pnpm_useEndVisibleTs3(current,previous){const{onEndVisible,isWorklet,runOnJS}=this.__closure;if(current===null||current===previous||!onEndVisible){return;}if(isWorklet){onEndVisible(current);}else{runOnJS(onEndVisible)(current);}}" };
+const useCallback = react2.useCallback;
+const jsx = Fragment.jsx;
 
-export const useEndVisible = (scroll) => {
-  let closure_5;
-  scroll = scroll.scroll;
-  const layout = scroll.layout;
-  size = scroll.size;
-  const inverted = scroll.inverted;
-  const onEndVisible = scroll.onEndVisible;
-  const items = [onEndVisible];
-  let tmp = size(() => {
-    let __workletHash = typeof onEndVisible === "function";
-    if (typeof onEndVisible === "function") {
-      __workletHash = onEndVisible.__workletHash;
-    }
-    return __workletHash;
-  }, items);
-  __initData = tmp;
-  let obj = scroll(layout[1]);
-  const fn = function v() {
-    let isScrollAtEndResult = null;
-    if (0 !== layout.value.height) {
-      isScrollAtEndResult = null;
-      if (0 !== size.value.height) {
-        const obj = _mod1868;
-        isScrollAtEndResult = obj.isScrollAtEnd(scroll.value, iter.value.height, iter2.value.height, inverted);
-      }
-    }
-    return isScrollAtEndResult;
-  };
-  fn.__closure = { layout, size, isScrollAtEnd: scroll(layout[2]).isScrollAtEnd, scroll, inverted };
-  fn.__workletHash = 9190864194226;
-  fn.__initData = inverted;
-  ({ layout, size, isScrollAtEnd: scroll(layout[2]).isScrollAtEnd, scroll, inverted });
-  const derivedValue = obj.useDerivedValue(fn);
-  const fn2 = function f() {
-    return derivedValue.value;
-  };
-  fn2.__closure = { isAtEnd: derivedValue };
-  fn2.__workletHash = 3323533137377;
-  fn2.__initData = onEndVisible;
-  const obj3 = scroll(layout[1]);
-  class E {
-    constructor(arg0, arg1) {
-      const tmp = null !== arg0 && arg0 !== arg1 && onEndVisible;
-      if (tmp) {
-        const tmp3 = closure_5;
-        if (tmp3) {
-          onEndVisible(arg0);
-        } else {
-          const obj = _mod1638;
-          obj.runOnJS(onEndVisible)(arg0);
-        }
-      }
-    }
+export default function _default(icon) {
+  let button;
+  let children;
+  let disabled;
+  let onPress;
+  let rippleRadius;
+  let style;
+  ({ children, onPress } = icon);
+  ({ disabled, button } = icon);
+  ({ rippleRadius, style } = icon);
+  if (button === undefined) {
+    const tmp = importDefault;
+    button = _modDef1863;
   }
-  E.__closure = { onEndVisible, isWorklet: tmp, runOnJS: scroll(layout[1]).runOnJS };
-  E.__workletHash = 2507987378306;
-  E.__initData = __initData;
-  const items1 = [onEndVisible, tmp, inverted];
-  ({ onEndVisible, isWorklet: tmp, runOnJS: scroll(layout[1]).runOnJS });
-  const animatedReaction = obj3.useAnimatedReaction(fn2, E, items1);
+  icon = icon.icon;
+  if (icon === undefined) {
+    icon = _modDef1864;
+  }
+  const obj = onPress(1869);
+  const toolbarContext = obj.useToolbarContext();
+  const theme = toolbarContext.theme;
+  const tmp5 = onPress;
+  if (disabled == null) {
+    disabled = toolbarContext.isPrevDisabled;
+  }
+  const items = [onPress];
+  const tmp8 = useCallback((isDefaultPrevented) => {
+    if (onPress != null) {
+      tmp(isDefaultPrevented);
+    }
+    if (!isDefaultPrevented.isDefaultPrevented()) {
+      const KeyboardController = KeyboardController2.KeyboardController;
+      KeyboardController.setFocusTo("prev");
+    }
+  }, items);
+  if (children == null) {
+    const obj3 = { disabled, theme, type: "prev" };
+    children = tmp9(icon, obj3);
+  }
+  return <button accessibilityHint="Moves focus to the previous field" accessibilityLabel="Previous" disabled={disabled} rippleRadius={rippleRadius} style={style} testID={tmp5(1862).TEST_ID_KEYBOARD_TOOLBAR_PREVIOUS} theme={theme} onPress={tmp8}>{children}</button>;
 };

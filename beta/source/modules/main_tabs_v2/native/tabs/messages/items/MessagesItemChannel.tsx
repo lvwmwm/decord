@@ -1,27 +1,100 @@
-// Module ID: 15663
-// Function ID: 15664
+// Module ID: 15662
+// Function ID: 15663
 // Name: MessagesItemChannel
-// Dependencies: [32, 19, 2045, 21, 9578, 576, 15664, 504, 15673, 8179, 15674, 2]
+// Dependencies: [32, 19, 2051, 21, 10489, 588, 15663, 558, 576, 504, 15672, 8176, 15673, 2]
 // Exports: getMessagesItemChannelSizes
 
-// Module 15663 (MessagesItemChannel)
+// Module 15662 (MessagesItemChannel)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 8179 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9578 */;
-import MessagesItemChannelBase from "MessagesItemChannelBase" /* 15664 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 15673 */;
-import LegendList from "LegendList" /* 15674 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10489 */;
+import MessagesItemChannelBase from "MessagesItemChannelBase" /* 15663 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 15672 */;
+import LegendList from "LegendList" /* 15673 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const MessagesItemChannelBaseDefault = MessagesItemChannelBase;
+let channelId;
 
+let tmp;
+const defaultMVCPConfig = tmp(8176);
 const jsx = Fragment.jsx;
-let closure_7 = react.memo(function MessagesItemChannel(arg0) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_7 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let first;
+  let isPressed;
+  let placeholderHeight;
+  let row;
+  let setIsPressed;
+  let tmp6;
+  let tmp8;
+  const obj = channelId(576);
+  const cResult = obj.c(11);
+  const tmp = channelId;
+  channelId = channelId.channelId;
+  ({ placeholderHeight, row, isPressed, setIsPressed } = channelId);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channelId) {
+    const fn = function c() {
+      return ChannelStore.getChannel(channelId);
+    };
+    cResult[1] = channelId;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  let isPrivateResult;
+  if (stateFromStores != null) {
+    isPrivateResult = stateFromStores.isPrivate();
+  }
+  if (true === isPrivateResult) {
+    if (cResult[3] === stateFromStores) {
+      if (cResult[4] === isPressed) {
+        if (cResult[5] === placeholderHeight) {
+          let tmp12;
+          if (cResult[6] === setIsPressed) {
+            tmp12 = cResult[7];
+          }
+          tmp8 = tmp12;
+        }
+      }
+    }
+    const tmp15 = jsx(MessagesItemChannelBaseDefault, { channel: stateFromStores, height: placeholderHeight, isPressed, setIsPressed });
+    cResult[3] = stateFromStores;
+    cResult[4] = isPressed;
+    cResult[5] = placeholderHeight;
+    cResult[6] = setIsPressed;
+    cResult[7] = tmp15;
+    tmp12 = tmp15;
+  } else {
+    if (cResult[8] === placeholderHeight) {
+      if (cResult[9] === row) {
+        tmp8 = cResult[10];
+      }
+    }
+    const tmp11 = jsx(MessagesItemPlaceholderDefault, { height: placeholderHeight, row });
+    cResult[8] = placeholderHeight;
+    cResult[9] = row;
+    cResult[10] = tmp11;
+    tmp8 = tmp11;
+  }
+  return tmp8;
+}) : ((arg0) => {
   let isPressed;
   let placeholderHeight;
   let row;
@@ -42,16 +115,86 @@ let closure_7 = react.memo(function MessagesItemChannel(arg0) {
     tmp5 = jsx(MessagesItemPlaceholderDefault, { height: placeholderHeight, row });
   }
   return tmp5;
-});
-const memoResult = react.memo((arg0) => {
+}));
+const memo = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+const memo2 = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp3;
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(3);
+  [tmp3, tmp4] = react.useState(false);
+  _slicedToArray(react.useState(false), 2);
+  if (cResult[0] === tmp3) {
+    let tmp5;
+    if (cResult[1] === arg0) {
+      tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  const merged = Object.assign(arg0);
+  const tmp7 = <closure_7 isPressed={tmp3} setIsPressed={tmp4} />;
+  cResult[0] = tmp3;
+  cResult[1] = arg0;
+  cResult[2] = tmp7;
+  tmp5 = tmp7;
+}) : ((arg0) => {
   let tmp2;
   let tmp3;
   [tmp2, tmp3] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const merged = Object.assign(arg0);
   return <closure_7 isPressed={tmp2} setIsPressed={tmp3} />;
-});
-const memoResult1 = react.memo((channelId) => {
+}));
+ReactCompilerGating = ReactCompilerGating_mod;
+const memo3 = react.memo;
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let tmp4;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(8);
+  if (cResult[0] !== channelId.channelId) {
+    const items = [channelId.channelId];
+    cResult[0] = channelId.channelId;
+    cResult[1] = items;
+    tmp4 = items;
+  } else {
+    tmp4 = cResult[1];
+  }
+  const tmpResult = defaultMVCPConfig;
+  [tmp6, tmp7] = tmpResult.useRecyclingState(false, tmp4);
+  let closure_0 = tmp7;
+  _slicedToArray(tmpResult.useRecyclingState(false, tmp4), 2);
+  if (cResult[2] !== tmp7) {
+    const fn = function o(arg0) {
+      return tmp7(arg0, true);
+    };
+    cResult[2] = tmp7;
+    cResult[3] = fn;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] === tmp6) {
+    if (cResult[5] === channelId) {
+      let tmp9;
+      if (cResult[6] === tmp8) {
+        tmp9 = cResult[7];
+      }
+      return tmp9;
+    }
+  }
+  const merged = Object.assign(channelId);
+  const tmp11 = <closure_7 isPressed={tmp6} setIsPressed={tmp8} />;
+  cResult[4] = tmp6;
+  cResult[5] = channelId;
+  cResult[6] = tmp8;
+  cResult[7] = tmp11;
+  tmp9 = tmp11;
+}) : ((channelId) => {
   const items = [channelId.channelId];
   const obj = defaultMVCPConfig;
   const tmp = _slicedToArray(obj.useRecyclingState(false, items), 2);
@@ -61,8 +204,33 @@ const memoResult1 = react.memo((channelId) => {
   const callback = react.useCallback((arg0) => closure_0(arg0, true), items1);
   const merged = Object.assign(channelId);
   return <closure_7 isPressed={first} setIsPressed={callback} />;
-});
-const memoResult2 = react.memo((arg0) => {
+}));
+ReactCompilerGating = ReactCompilerGating_mod;
+const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp3;
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(4);
+  const obj2 = LegendList;
+  [tmp3, tmp4] = obj2.useRecyclingState(false);
+  _slicedToArray(obj2.useRecyclingState(false), 2);
+  if (cResult[0] === tmp3) {
+    if (cResult[1] === arg0) {
+      let tmp5;
+      if (cResult[2] === tmp4) {
+        tmp5 = cResult[3];
+      }
+      return tmp5;
+    }
+  }
+  const merged = Object.assign(arg0);
+  const tmp7 = <closure_7 isPressed={tmp3} setIsPressed={tmp4} />;
+  cResult[0] = tmp3;
+  cResult[1] = arg0;
+  cResult[2] = tmp4;
+  cResult[3] = tmp7;
+  tmp5 = tmp7;
+}) : ((arg0) => {
   let tmp2;
   let tmp3;
   const obj = LegendList;
@@ -70,7 +238,7 @@ const memoResult2 = react.memo((arg0) => {
   _slicedToArray(obj.useRecyclingState(false), 2);
   const merged = Object.assign(arg0);
   return <closure_7 isPressed={tmp2} setIsPressed={tmp3} />;
-});
+}));
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemChannel.tsx");
 
 export const getMessagesItemChannelSizes = function getMessagesItemChannelSizes(fontScale) {
@@ -86,5 +254,5 @@ export const getMessagesItemChannelSizes = function getMessagesItemChannelSizes(
   return obj3;
 };
 export const MessagesItemChannelFast = memoResult;
-export const MessagesItemChannelFlash = memoResult1;
-export const MessagesItemChannelLegend = memoResult2;
+export const MessagesItemChannelFlash = memo2Result;
+export const MessagesItemChannelLegend = memo3Result;

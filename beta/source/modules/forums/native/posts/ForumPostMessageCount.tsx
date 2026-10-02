@@ -1,19 +1,21 @@
-// Module ID: 11500
-// Function ID: 11501
+// Module ID: 11376
+// Function ID: 11377
 // Name: ForumPostMessageCount
-// Dependencies: [19, 17, 21, 4836, 576, 1364, 7310, 1115, 5385, 4832, 10858, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 1370, 558, 576, 7314, 1127, 5386, 4833, 10825, 2]
 
-// Module 11500 (ForumPostMessageCount)
+// Module 11376 (ForumPostMessageCount)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl3 from "intl" /* 1115 */;
-import ForumHooks from "ForumHooks" /* 7310 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 10858 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl3 from "intl" /* 1127 */;
+import ChatIcon2 from "ChatIcon" /* 5386 */;
+import ForumHooks from "ForumHooks" /* 7314 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 10825 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -39,9 +41,133 @@ if (PlatformUtils.isAndroid()) {
   num2 = 2;
 }
 let closure_6 = createStyles(obj2);
-const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostMessageCount.tsx");
-
-export default function ForumPostMessageCount(hasUnreads) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
+  let containerStyle;
+  let hasUnreads;
+  let isMaxMessageCount;
+  let items;
+  let items1;
+  let messageCount;
+  let messageCountText;
+  let unreadCount;
+  const obj = react2;
+  const cResult = obj.c(22);
+  ({ hasUnreads, containerStyle } = thread);
+  thread = thread.thread;
+  const tmp4 = closure_6();
+  const obj2 = ForumHooks;
+  const messageCount1 = obj2.useMessageCount(thread);
+  ({ messageCountText, isMaxMessageCount, messageCount, unreadCount } = messageCount1);
+  let str = "text-muted";
+  if (hasUnreads) {
+    str = "text-default";
+  }
+  if (cResult[0] === containerStyle) {
+    let tmp6;
+    let tmp7;
+    if (cResult[1] === tmp4.container) {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] !== messageCountText) {
+      const intl = tmp(1127).intl;
+      const obj3 = { count: messageCountText };
+      const formatToPlainStringResult = intl.formatToPlainString(intl3.t["8M0DrB"], obj3);
+      cResult[3] = messageCountText;
+      cResult[4] = formatToPlainStringResult;
+      tmp7 = formatToPlainStringResult;
+    } else {
+      tmp7 = cResult[4];
+    }
+    const tmp9 = hasUnreads ? tmp4.iconUnread : tmp4.iconRead;
+    let str2 = "icon-muted";
+    if (hasUnreads) {
+      str2 = "interactive-text-default";
+    }
+    if (cResult[5] === tmp9) {
+      let tmp10;
+      let tmp14Result;
+      if (cResult[6] === str2) {
+        tmp10 = cResult[7];
+      }
+      if (cResult[8] === str) {
+        if (cResult[9] === isMaxMessageCount) {
+          if (cResult[10] === messageCount) {
+            let tmp13;
+            if (cResult[11] === messageCountText) {
+              tmp13 = cResult[12];
+            }
+            if (cResult[13] === tmp4.messageUnreadCount) {
+              let tmp17;
+              if (cResult[14] === unreadCount) {
+                tmp17 = cResult[15];
+              }
+              if (cResult[16] === tmp6) {
+                if (cResult[17] === tmp7) {
+                  if (cResult[18] === tmp10) {
+                    if (cResult[19] === tmp13) {
+                      let tmp21;
+                      if (cResult[20] === tmp17) {
+                        tmp21 = cResult[21];
+                      }
+                      return tmp21;
+                    }
+                  }
+                }
+              }
+              const obj4 = { style: tmp6, accessibilityLabel: tmp7, children: items };
+              items = [tmp10, tmp13, tmp17];
+              const tmp24 = hasOwnProperty(View, obj4);
+              cResult[16] = tmp6;
+              cResult[17] = tmp7;
+              cResult[18] = tmp10;
+              cResult[19] = tmp13;
+              cResult[20] = tmp17;
+              cResult[21] = tmp24;
+              tmp21 = tmp24;
+            }
+            let tmp19 = null != unreadCount;
+            if (tmp19) {
+              const obj5 = { variant: "text-sm/semibold", color: "text-brand", style: tmp4.messageUnreadCount, children: items1 };
+              const Text = tmp(4833).Text;
+              const intl2 = tmp(1127).intl;
+              const obj6 = { count: unreadCount };
+              items1 = ["(", intl2.format(intl3.t.z3PEth, obj6), ")"];
+              tmp19 = hasOwnProperty(Text, obj5);
+            }
+            cResult[13] = tmp4.messageUnreadCount;
+            cResult[14] = unreadCount;
+            cResult[15] = tmp19;
+            tmp17 = tmp19;
+          }
+        }
+      }
+      if (isMaxMessageCount) {
+        const obj7 = { variant: "text-sm/semibold", color: str, children: messageCountText };
+        tmp14Result = tmp14(tmp(4833).Text, obj7);
+      } else {
+        const obj8 = { count: messageCount, textVariant: "text-sm/semibold", textColor: str, animate: false };
+        tmp14Result = tmp14(AnimatedCounterDefault, obj8);
+      }
+      cResult[8] = str;
+      cResult[9] = isMaxMessageCount;
+      cResult[10] = messageCount;
+      cResult[11] = messageCountText;
+      cResult[12] = tmp14Result;
+      tmp13 = tmp14Result;
+    }
+    const obj9 = { size: "xs", style: tmp9, color: str2 };
+    const tmp12 = React3(ChatIcon2.ChatIcon, obj9);
+    cResult[5] = tmp9;
+    cResult[6] = str2;
+    cResult[7] = tmp12;
+    tmp10 = tmp12;
+  }
+  const items2 = [tmp4.container, containerStyle];
+  cResult[0] = containerStyle;
+  cResult[1] = tmp4.container;
+  cResult[2] = items2;
+  tmp6 = items2;
+}) : ((hasUnreads) => {
   let containerStyle;
   let intl;
   let isMaxMessageCount;
@@ -67,10 +193,10 @@ export default function ForumPostMessageCount(hasUnreads) {
   }
   const obj2 = { style: items, accessibilityLabel: intl.formatToPlainString(intl3.t["8M0DrB"], { count: messageCountText }), children: items1 };
   items = [tmp.container, containerStyle];
-  intl = tmp2(1115).intl;
+  intl = tmp2(1127).intl;
   const obj3 = { size: "xs", style: hasUnreads ? tmp.iconUnread : tmp.iconRead, color: str2 };
   str2 = "icon-muted";
-  const ChatIcon = tmp2(5385).ChatIcon;
+  const ChatIcon = tmp2(5386).ChatIcon;
   const tmp6 = View;
   if (hasUnreads) {
     str2 = "interactive-text-default";
@@ -78,7 +204,7 @@ export default function ForumPostMessageCount(hasUnreads) {
   items1 = [React3(ChatIcon, obj3), , ];
   if (isMaxMessageCount) {
     const obj4 = { variant: "text-sm/semibold", color: str, children: messageCountText };
-    tmp7Result = tmp7(tmp2(4832).Text, obj4);
+    tmp7Result = tmp7(tmp2(4833).Text, obj4);
   } else {
     const obj5 = { count: messageCount, textVariant: "text-sm/semibold", textColor: str, animate: false };
     tmp7Result = tmp7(AnimatedCounterDefault, obj5);
@@ -87,12 +213,15 @@ export default function ForumPostMessageCount(hasUnreads) {
   let tmp5Result = null != unreadCount;
   if (tmp5Result) {
     const obj6 = { variant: "text-sm/semibold", color: "text-brand", style: tmp.messageUnreadCount, children: items2 };
-    const Text = tmp2(4832).Text;
-    const intl2 = tmp2(1115).intl;
+    const Text = tmp2(4833).Text;
+    const intl2 = tmp2(1127).intl;
     const obj7 = { count: unreadCount };
     items2 = ["(", intl2.format(intl3.t.z3PEth, obj7), ")"];
     tmp5Result = tmp5(Text, obj6);
   }
   items1[2] = tmp5Result;
   return hasOwnProperty(tmp6, obj2);
-};
+});
+const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostMessageCount.tsx");
+
+export default tmp5;

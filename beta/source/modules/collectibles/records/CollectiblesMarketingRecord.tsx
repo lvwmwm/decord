@@ -1,14 +1,14 @@
-// Module ID: 6983
-// Function ID: 6984
+// Module ID: 6987
+// Function ID: 6988
 // Name: CollectiblesMarketingRecord
-// Dependencies: [6984, 6986, 6987, 6988, 6985, 2]
+// Dependencies: [6988, 6990, 6991, 6992, 6989, 2]
 
-// Module 6983 (CollectiblesMarketingRecord)
-import CollectiblesMarketingBadgeRecord from "CollectiblesMarketingBadgeRecord" /* 6984 */;
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 6985 */;
-import CollectiblesMarketingBannerRecord from "CollectiblesMarketingBannerRecord" /* 6986 */;
-import CollectiblesMarketingCoachmarkRecord from "CollectiblesMarketingCoachmarkRecord" /* 6987 */;
-import CollectiblesMarketingTabTooltipRecord from "CollectiblesMarketingTabTooltipRecord" /* 6988 */;
+// Module 6987 (CollectiblesMarketingRecord)
+import CollectiblesMarketingBadgeRecord from "CollectiblesMarketingBadgeRecord" /* 6988 */;
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 6989 */;
+import CollectiblesMarketingBannerRecord from "CollectiblesMarketingBannerRecord" /* 6990 */;
+import CollectiblesMarketingCoachmarkRecord from "CollectiblesMarketingCoachmarkRecord" /* 6991 */;
+import CollectiblesMarketingTabTooltipRecord from "CollectiblesMarketingTabTooltipRecord" /* 6992 */;
 import size from "module_2" /* 2 */;
 
 let marketings;

@@ -1,12 +1,12 @@
-// Module ID: 8820
-// Function ID: 8821
+// Module ID: 8815
+// Function ID: 8816
 // Name: PresenceActivityFiltering
-// Dependencies: [5063, 1979, 2]
+// Dependencies: [5064, 1985, 2]
 // Exports: doesGameHaveRichPresence
 
-// Module 8820 (PresenceActivityFiltering)
-import Server from "Server" /* 1979 */;
-import ApplicationStore from "ApplicationStore" /* 5063 */;
+// Module 8815 (PresenceActivityFiltering)
+import Server from "Server" /* 1985 */;
+import ApplicationStore from "ApplicationStore" /* 5064 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rich_presence/PresenceActivityFiltering.tsx");

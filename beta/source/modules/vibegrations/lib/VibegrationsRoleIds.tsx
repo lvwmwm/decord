@@ -1,10 +1,10 @@
-// Module ID: 16262
-// Function ID: 16263
+// Module ID: 16264
+// Function ID: 16265
 // Name: VibegrationsRoleIds
 // Dependencies: [2]
 // Exports: haveSameRoleIds
 
-// Module 16262 (VibegrationsRoleIds)
+// Module 16264 (VibegrationsRoleIds)
 import size from "module_2" /* 2 */;
 
 let set;

@@ -1,18 +1,18 @@
-// Module ID: 13265
-// Function ID: 13266
+// Module ID: 13267
+// Function ID: 13268
 // Name: HabitualDNDStore
-// Dependencies: [5591, 1074, 1091, 2021, 573, 504, 2]
+// Dependencies: [5592, 1086, 1103, 2027, 585, 504, 2]
 
-// Module 13265 (HabitualDNDStore)
+// Module 13267 (HabitualDNDStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5592 */;
 import size from "module_2" /* 2 */;
 
-const f97754 = (item) => {
+const f113766 = (item) => {
   const timestamp = Date.now();
   return item < timestamp - 3 * DurationsDefault.Millis.DAY;
 };
@@ -60,7 +60,7 @@ let obj = {
           return item > timestamp - 5 * DurationsDefault.Millis.DAY;
         });
         sessionStartsWithDND = found;
-        const someResult = found.length >= 4 && sessionStartsWithDND.some(f97754);
+        const someResult = found.length >= 4 && sessionStartsWithDND.some(f113766);
         if (someResult) {
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => {
@@ -73,8 +73,8 @@ let obj = {
     sessionStartsWithDND = [];
   },
   HABITUAL_DND_CLEAR: function handleDNDClear() {
-    c6 = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f97754);
-    const someResult = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f97754);
+    c6 = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f113766);
+    const someResult = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f113766);
     sessionStartsWithDND = [];
   }
 };

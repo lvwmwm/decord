@@ -1,30 +1,145 @@
-// Module ID: 11462
-// Function ID: 11463
+// Module ID: 11338
+// Function ID: 11339
 // Name: CustomTypingIndicatorDisplay
-// Dependencies: [19, 21, 4836, 1115, 11453, 5279, 11463, 4832, 5435, 576, 2]
-// Exports: default
+// Dependencies: [19, 21, 4837, 558, 576, 1127, 11331, 11339, 4833, 5280, 5436, 588, 2]
 
-// Module 11462 (CustomTypingIndicatorDisplay)
-import nativeDefault from "native" /* 576 */;
-import intl3 from "intl" /* 1115 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 11453 */;
-import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 11463 */;
+// Module 11338 (CustomTypingIndicatorDisplay)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl3 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import Stack_Stack from "Stack/Stack" /* 5280 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 11331 */;
+import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 11339 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp3;
-const Text_Text = tmp3(4832);
-const Stack_Stack = tmp3(5279);
-const Pressables = tmp3(5435);
+const Pressables = tmp3(5436);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles(() => ({ text: { flexShrink: 1 }, pressable: { flex: 1 } }));
-const result = size.fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorDisplay.tsx");
-
-export default function CustomTypingIndicatorDisplay(showName) {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let config;
+  let emojiSize;
+  let items;
+  let justifyCenter;
+  let onPress;
+  let showEmojis;
+  let showName;
+  let tmp8;
+  let username;
+  const obj = react2;
+  const cResult = obj.c(19);
+  ({ config, username, showEmojis, showName, emojiSize, justifyCenter, onPress } = arg0);
+  let num = 14;
+  if (undefined !== emojiSize) {
+    num = emojiSize;
+  }
+  const tmp6 = undefined !== justifyCenter && justifyCenter;
+  const tmp7 = closure_5();
+  if (cResult[0] === config.typingSuggestion) {
+    if (cResult[1] === (undefined === showName || showName)) {
+      if (cResult[2] === username) {
+        tmp8 = cResult[3];
+      }
+      let str = "flex-start";
+      if (tmp6) {
+        str = "center";
+      }
+      if (cResult[4] === config) {
+        if (cResult[5] === num) {
+          let tmp11;
+          if (cResult[6] === (undefined === showEmojis || showEmojis)) {
+            tmp11 = cResult[7];
+          }
+          if (cResult[8] === tmp7.text) {
+            let tmp15;
+            if (cResult[9] === tmp8) {
+              tmp15 = cResult[10];
+            }
+            if (cResult[11] === str) {
+              if (cResult[12] === tmp11) {
+                let tmp18;
+                if (cResult[13] === tmp15) {
+                  tmp18 = cResult[14];
+                }
+                let tmp22 = tmp18;
+                if (null != onPress) {
+                  if (cResult[15] === tmp18) {
+                    if (cResult[16] === onPress) {
+                      let tmp23;
+                      if (cResult[17] === tmp7.pressable) {
+                        tmp23 = cResult[18];
+                      }
+                      tmp22 = tmp23;
+                    }
+                  }
+                  const obj2 = { style: tmp7.pressable, hitSlop: nativeDefault.space.PX_8, onPress, accessibilityRole: "button", children: tmp18 };
+                  const PressableOpacity = tmp(5436).PressableOpacity;
+                  const tmp26 = _false(PressableOpacity, obj2);
+                  cResult[15] = tmp18;
+                  cResult[16] = onPress;
+                  cResult[17] = tmp7.pressable;
+                  cResult[18] = tmp26;
+                  tmp23 = tmp26;
+                }
+                return tmp22;
+              }
+            }
+            const obj3 = { direction: "horizontal", spacing: 8, align: "center", justify: str, children: items };
+            items = [tmp11, tmp15];
+            const tmp20 = React3(Stack_Stack.Stack, obj3);
+            cResult[11] = str;
+            cResult[12] = tmp11;
+            cResult[13] = tmp15;
+            cResult[14] = tmp20;
+            tmp18 = tmp20;
+          }
+          const obj4 = { style: tmp7.text, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, maxFontSizeMultiplier: 2, includeFontPadding: true, ellipsizeMode: "tail", children: tmp8 };
+          const tmp17 = _false(Text_Text.Text, obj4);
+          cResult[8] = tmp7.text;
+          cResult[9] = tmp8;
+          cResult[10] = tmp17;
+          tmp15 = tmp17;
+        }
+      }
+      let tmp12 = null;
+      if (undefined === showEmojis || showEmojis) {
+        const obj5 = { config, size: num };
+        tmp12 = _false(CustomTypingIndicatorGlyphDefault, obj5);
+      }
+      cResult[4] = config;
+      cResult[5] = num;
+      cResult[6] = undefined === showEmojis || showEmojis;
+      cResult[7] = tmp12;
+      tmp11 = tmp12;
+    }
+  }
+  if (undefined === showName || showName) {
+    let formatResult;
+    if (null != username) {
+      const intl2 = tmp(1127).intl;
+      const format = intl2.format;
+      const obj6 = { name: username };
+      const tmpResult = CustomTypingIndicatorUtils;
+      formatResult = format(tmpResult.getCustomTypingIndicatorSuggestionWithNameMessage(config.typingSuggestion), obj6);
+    }
+    cResult[0] = config.typingSuggestion;
+    cResult[1] = undefined === showName || showName;
+    cResult[2] = username;
+    cResult[3] = formatResult;
+    tmp8 = formatResult;
+  }
+  const intl = tmp(1127).intl;
+  const string = intl.string;
+  const tmpResult2 = CustomTypingIndicatorUtils;
+  formatResult = string(tmpResult2.getCustomTypingIndicatorSuggestionMessage(config.typingSuggestion));
+}) : ((showName) => {
   let config;
   let items;
   let showEmojis;
@@ -85,4 +200,7 @@ export default function CustomTypingIndicatorDisplay(showName) {
   const string = intl.string;
   const obj = CustomTypingIndicatorUtils;
   formatResult = string(obj.getCustomTypingIndicatorSuggestionMessage(config.typingSuggestion));
-};
+});
+const result = size.fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorDisplay.tsx");
+
+export default tmp4;

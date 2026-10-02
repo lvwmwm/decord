@@ -1,11 +1,11 @@
 // Module ID: 8415
 // Function ID: 8416
 // Name: default_1
-// Dependencies: [8403]
+// Dependencies: [8400]
 // Exports: default
 
 // Module 8415 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 8403 */;
+import captureStackTrace2 from "captureStackTrace" /* 8400 */;
 
 let hasOwnProperty;
 
@@ -95,152 +95,141 @@ function error() {
 
 export default function default_1() {
   if (typeof error === "function") {
-    let obj = {
+    const obj2 = { string: { unit: "characters", verb: "to have" }, file: { unit: "bytes", verb: "to have" }, array: { unit: "items", verb: "to have" }, set: { unit: "items", verb: "to have" }, map: { unit: "entries", verb: "to have" } };
+    closure_1 = { regex: "input", email: "email address", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO datetime", date: "ISO date", time: "ISO time", duration: "ISO duration", ipv4: "IPv4 address", ipv6: "IPv6 address", mac: "MAC address", cidrv4: "IPv4 range", cidrv6: "IPv6 range", base64: "base64-encoded string", base64url: "base64url-encoded string", json_string: "JSON string", e164: "E.164 number", jwt: "JWT", template_literal: "input" };
+    let closure_2 = { nan: "NaN" };
+    return {
       localeError: (code) => {
           switch (code.code) {
             case "invalid_type":
             {
-              let combined;
               let expected = closure_2[code.expected];
+              const tmp44 = closure_2;
               if (expected == null) {
                 expected = code.expected;
               }
               const parsedTypeResult = captureStackTrace.parsedType(code.input);
-              const obj = /^[A-Z]/;
-              if (obj.test(code.expected)) {
-                const _HermesInternal17 = HermesInternal;
-                combined = "Neplatn\u00FD vstup: o\u010Dek\u00E1v\u00E1no instanceof " + code.expected + ", obdr\u017Eeno " + tmp49;
-              } else {
-                const _HermesInternal16 = HermesInternal;
-                combined = "Neplatn\u00FD vstup: o\u010Dek\u00E1v\u00E1no " + expected + ", obdr\u017Eeno " + tmp49;
-              }
-              return combined;
+              const _HermesInternal16 = HermesInternal;
+              const tmp48 = tmp44[parsedTypeResult] ?? parsedTypeResult;
+              return "Invalid input: expected " + expected + ", received " + tmp48;
             }
             case "invalid_value":
             {
-              let combined1;
+              let combined;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "Neplatn\u00FD vstup: o\u010Dek\u00E1v\u00E1no " + captureStackTrace.stringifyPrimitive(code.values[0]);
+                combined = "Invalid input: expected " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "Neplatn\u00E1 mo\u017Enost: o\u010Dek\u00E1v\u00E1na jedna z hodnot " + captureStackTrace.joinValues(code.values, "|");
+                combined = "Invalid option: expected one of " + captureStackTrace.joinValues(code.values, "|");
               }
-              return combined1;
+              return combined;
             }
             case "too_big":
             {
-              let combined2;
-              let str27 = "<";
+              let combined1;
+              let str24 = "<";
               if (code.inclusive) {
-                str27 = "<=";
+                str24 = "<=";
               }
-              let str28 = code.origin;
+              let str25 = code.origin;
               if (obj2[code.origin] ?? null) {
-                if (str28 == null) {
-                  str28 = "hodnota";
+                if (str25 == null) {
+                  str25 = "value";
                 }
-                const str33 = code.maximum;
+                const str30 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
-                const str1 = str33.toString();
-                const str34 = (obj2[code.origin] ?? null).unit ?? "prvk\u016F";
-                combined2 = "Hodnota je p\u0159\u00EDli\u0161 velk\u00E1: " + str28 + " mus\u00ED m\u00EDt " + str27 + str1 + " " + str34;
+                const str1 = str30.toString();
+                const str31 = (obj2[code.origin] ?? null).unit ?? "elements";
+                combined1 = "Too big: expected " + str25 + " to have " + str24 + str1 + " " + str31;
               } else {
-                let str29 = str28;
-                if (str28 == null) {
-                  str29 = "hodnota";
+                let str26 = str25;
+                if (str25 == null) {
+                  str26 = "value";
                 }
                 const _HermesInternal12 = HermesInternal;
-                const str30 = code.maximum;
-                combined2 = "Hodnota je p\u0159\u00EDli\u0161 velk\u00E1: " + str29 + " mus\u00ED b\u00FDt " + str27 + str30.toString();
+                const str27 = code.maximum;
+                combined1 = "Too big: expected " + str26 + " to be " + str24 + str27.toString();
               }
-              return combined2;
+              return combined1;
             }
             case "too_small":
             {
-              let combined3;
-              let str16 = ">";
+              let combined2;
+              let minimum;
+              let origin;
+              let str18 = ">";
               if (code.inclusive) {
-                str16 = ">=";
+                str18 = ">=";
               }
-              let str17 = code.origin;
+              ({ origin, minimum } = code);
+              const str43 = minimum.toString();
               if (obj2[code.origin] ?? null) {
-                if (str17 == null) {
-                  str17 = "hodnota";
-                }
-                const str22 = code.minimum;
                 const _HermesInternal11 = HermesInternal;
-                const str23 = (obj2[code.origin] ?? null).unit ?? "prvk\u016F";
-                const str48 = str22.toString();
-                combined3 = "Hodnota je p\u0159\u00EDli\u0161 mal\u00E1: " + str17 + " mus\u00ED m\u00EDt " + str16 + str48 + " " + str23;
+                combined2 = "Too small: expected " + origin + " to have " + str18 + str43 + " " + tmp15.unit;
               } else {
-                let str18 = str17;
-                if (str17 == null) {
-                  str18 = "hodnota";
-                }
                 const _HermesInternal10 = HermesInternal;
-                const str19 = code.minimum;
-                combined3 = "Hodnota je p\u0159\u00EDli\u0161 mal\u00E1: " + str18 + " mus\u00ED b\u00FDt " + str16 + str19.toString();
+                combined2 = "Too small: expected " + origin + " to be " + str18 + str43;
               }
-              return combined3;
+              return combined2;
             }
             case "invalid_format":
             {
-              let combined4;
+              let combined3;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "Neplatn\u00FD \u0159et\u011Bzec: mus\u00ED za\u010D\u00EDnat na \"" + code.prefix + "\"";
+                combined3 = "Invalid string: must start with \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "Neplatn\u00FD \u0159et\u011Bzec: mus\u00ED kon\u010Dit na \"" + code.suffix + "\"";
+                combined3 = "Invalid string: must end with \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "Neplatn\u00FD \u0159et\u011Bzec: mus\u00ED obsahovat \"" + code.includes + "\"";
+                combined3 = "Invalid string: must include \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "Neplatn\u00FD \u0159et\u011Bzec: mus\u00ED odpov\u00EDdat vzoru " + code.pattern;
+                combined3 = "Invalid string: must match pattern " + code.pattern;
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "Neplatn\u00FD form\u00E1t " + format;
+                combined3 = "Invalid " + format;
               }
-              return combined4;
+              return combined3;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "Neplatn\u00E9 \u010D\u00EDslo: mus\u00ED b\u00FDt n\u00E1sobkem " + code.divisor;
+              return "Invalid number: must be a multiple of " + code.divisor;
             }
             case "unrecognized_keys":
             {
+              let str3 = "";
+              if (code.keys.length > 1) {
+                str3 = "s";
+              }
               const _HermesInternal3 = HermesInternal;
-              return "Nezn\u00E1m\u00E9 kl\u00ED\u010De: " + captureStackTrace.joinValues(code.keys, ", ");
+              return "Unrecognized key" + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
               const _HermesInternal2 = HermesInternal;
-              return "Neplatn\u00FD kl\u00ED\u010D v " + code.origin;
+              return "Invalid key in " + code.origin;
             }
             case "invalid_union":
             {
-              return "Neplatn\u00FD vstup";
+              return "Invalid input";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "Neplatn\u00E1 hodnota v " + code.origin;
+              return "Invalid value in " + code.origin;
             }
             default:
             {
-              return "Neplatn\u00FD vstup";
+              return "Invalid input";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "znak\u016F", verb: "m\u00EDt" }, file: { unit: "bajt\u016F", verb: "m\u00EDt" }, array: { unit: "prvk\u016F", verb: "m\u00EDt" }, set: { unit: "prvk\u016F", verb: "m\u00EDt" } };
-    closure_1 = { regex: "regul\u00E1rn\u00ED v\u00FDraz", email: "e-mailov\u00E1 adresa", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "datum a \u010Das ve form\u00E1tu ISO", date: "datum ve form\u00E1tu ISO", time: "\u010Das ve form\u00E1tu ISO", duration: "doba trv\u00E1n\u00ED ISO", ipv4: "IPv4 adresa", ipv6: "IPv6 adresa", cidrv4: "rozsah IPv4", cidrv6: "rozsah IPv6", base64: "\u0159et\u011Bzec zak\u00F3dovan\u00FD ve form\u00E1tu base64", base64url: "\u0159et\u011Bzec zak\u00F3dovan\u00FD ve form\u00E1tu base64url", json_string: "\u0159et\u011Bzec ve form\u00E1tu JSON", e164: "\u010D\u00EDslo E.164", jwt: "JWT", template_literal: "vstup" };
-    let closure_2 = { nan: "NaN", number: "\u010D\u00EDslo", string: "\u0159et\u011Bzec", function: "funkce", array: "pole" };
-    return obj;
   } else {
     throw new TypeError("Trying to call a non-function");
   }

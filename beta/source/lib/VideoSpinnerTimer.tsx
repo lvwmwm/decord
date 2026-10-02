@@ -1,28 +1,28 @@
-// Module ID: 8883
-// Function ID: 8884
+// Module ID: 8878
+// Function ID: 8879
 // Name: VideoSpinnerTimer
-// Dependencies: [502, 2045, 4885, 4859, 4855, 1074, 3, 4865, 1241, 2]
+// Dependencies: [502, 2051, 4886, 4860, 4856, 1086, 3, 4866, 1253, 2]
 
-// Module 8883 (VideoSpinnerTimer)
+// Module 8878 (VideoSpinnerTimer)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import TimeUtils from "TimeUtils" /* 4865 */;
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import TimeUtils from "TimeUtils" /* 4866 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import NetworkStore from "NetworkStore" /* 4885 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import NetworkStore from "NetworkStore" /* 4886 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const map = new Map();
 let result = size.fileFinishedImporting("lib/VideoSpinnerTimer.tsx");
 class VideoSpinnerTimer {
-  constructor(arg0) {
+  constructor(_location) {
     const merged = Object.assign({ spinnerVisibleStart: null });
-    merged.logger = new LoggerDefault(arg0);
-    new LoggerDefault(arg0);
+    merged.logger = new LoggerDefault(_location);
+    new LoggerDefault(_location);
     return merged;
   }
   onSpinnerStarted() {

@@ -1,27 +1,67 @@
-// Module ID: 4842
-// Function ID: 4843
+// Module ID: 4843
+// Function ID: 4844
 // Name: useTypographyVariantRemap
-// Dependencies: [4547, 4843, 2]
-// Exports: useTypographyVariantRemap
+// Dependencies: [558, 576, 4551, 4844, 2]
 
-// Module 4842 (useTypographyVariantRemap)
-import ThemeContext from "ThemeContext" /* 4547 */;
-import typographyVariantRemap from "typographyVariantRemap" /* 4843 */;
+// Module 4843 (useTypographyVariantRemap)
+import react from "react" /* 576 */;
+import ThemeContext from "ThemeContext" /* 4551 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Text/useTypographyVariantRemap.native.tsx");
-
-export const useTypographyVariantRemap = function useTypographyVariantRemap(variant, arg1) {
+let tmp;
+const typographyVariantRemap = tmp(4844);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let tmp4;
+  const obj = react;
+  const cResult = obj.c(6);
+  const obj2 = ThemeContext;
+  let themeContext = obj2.useThemeContext();
+  if (themeContext == null) {
+    themeContext = [];
+  }
+  const enabledExperiments = themeContext.enabledExperiments;
+  if (cResult[0] !== enabledExperiments) {
+    let items = enabledExperiments;
+    if (enabledExperiments == null) {
+      items = [];
+    }
+    cResult[0] = enabledExperiments;
+    cResult[1] = items;
+    tmp4 = items;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] === arg1) {
+    if (cResult[3] === tmp4) {
+      let tmp5;
+      if (cResult[4] === arg0) {
+        tmp5 = cResult[5];
+      }
+      return tmp5;
+    }
+  }
+  const tmpResult = typographyVariantRemap;
+  const result = tmpResult.remapTypographyVariant(tmp4, arg0, arg1);
+  cResult[2] = arg1;
+  cResult[3] = tmp4;
+  cResult[4] = arg0;
+  cResult[5] = result;
+  tmp5 = result;
+}) : ((arg0, arg1) => {
   const obj = ThemeContext;
   let themeContext = obj.useThemeContext();
   if (themeContext == null) {
     themeContext = [];
   }
   let enabledExperiments = themeContext.enabledExperiments;
-  const remapTypographyVariant = tmp(4843).remapTypographyVariant;
+  const remapTypographyVariant = tmp(4844).remapTypographyVariant;
   typographyVariantRemap;
   if (enabledExperiments == null) {
     enabledExperiments = [];
   }
-  return remapTypographyVariant(enabledExperiments, variant, arg1);
-};
+  return remapTypographyVariant(enabledExperiments, arg0, arg1);
+});
+let result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Text/useTypographyVariantRemap.native.tsx");
+
+export const useTypographyVariantRemap = tmp2;

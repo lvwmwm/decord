@@ -1,28 +1,190 @@
-// Module ID: 5283
-// Function ID: 5284
+// Module ID: 5284
+// Function ID: 5285
 // Name: Icon
-// Dependencies: [19, 17, 21, 4836, 576, 2]
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 2]
 // Exports: getIconSize, getIconStyle
 
-// Module 5283 (Icon)
+// Module 5284 (Icon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
-import size from "module_2" /* 2 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-let obj, source;
+let obj;
 
+let forwardRef;
+let memo;
 const Image = react_native.Image;
 const jsx = Fragment.jsx;
 const IconSizes = { EXTRA_SMALL_10: "extraSmall10", EXTRA_SMALL: "extraSmall", SMALL: "small", SMALL_20: "small20", MEDIUM: "medium", LARGE: "large", CUSTOM: "custom", REFRESH_SMALL_16: "refreshSmall16", SMALL_14: "small14" };
-let closure_5 = createStyles.createStyles(() => {
+let closure_6 = createStyles.createStyles(() => {
   obj = { iconColor: { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT } };
   ({ tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT });
   return obj;
 });
-const memoResult = react.memo(react.forwardRef((source, ref) => {
+({ memo, forwardRef } = react);
+function getIconSize(arg0) {
+  if (obj.EXTRA_SMALL_10 === arg0) {
+    return 10;
+  } else if (obj.EXTRA_SMALL === arg0) {
+    return 12;
+  } else if (obj.SMALL === arg0) {
+    return 18;
+  } else if (obj.SMALL_14 === arg0) {
+    return 14;
+  } else if (obj.SMALL_20 === arg0) {
+    return 20;
+  } else if (obj.MEDIUM === arg0) {
+    return 24;
+  } else if (obj.LARGE === arg0) {
+    return 32;
+  } else if (obj.REFRESH_SMALL_16 === arg0) {
+    return 16;
+  }
+}
+function getIconStyle(MEDIUM) {
+  let width = 10;
+  if (obj.EXTRA_SMALL_10 !== MEDIUM) {
+    width = 12;
+    if (obj.EXTRA_SMALL !== MEDIUM) {
+      width = 18;
+      if (obj.SMALL !== MEDIUM) {
+        width = 14;
+        if (obj.SMALL_14 !== MEDIUM) {
+          width = 20;
+          if (obj.SMALL_20 !== MEDIUM) {
+            width = 24;
+            if (obj.MEDIUM !== MEDIUM) {
+              width = 32;
+              if (obj.LARGE !== MEDIUM) {
+                width = 16;
+                if (obj.REFRESH_SMALL_16 !== MEDIUM) {
+                  const CUSTOM = tmp.CUSTOM;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  return { width, height: width };
+}
+const memoResult = memo(forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+  let accessibilityLabel;
+  let accessible;
+  let color;
+  let disableColor;
+  let resizeMode;
+  let source;
+  let style;
+  let tmp8;
+  obj = react2;
+  const cResult = obj.c(15);
+  ({ source, color, disableColor, size, style, resizeMode, accessible, accessibilityLabel } = arg0);
+  const tmp2 = undefined !== disableColor && disableColor;
+  if (undefined === size) {
+    size = obj.MEDIUM;
+  }
+  let str = "cover";
+  if (undefined !== resizeMode) {
+    str = resizeMode;
+  }
+  let tmp5;
+  if (!tmp2) {
+    let iconColor;
+    if (null != color) {
+      let tmp7;
+      if (cResult[0] !== color) {
+        const obj2 = { tintColor: color };
+        cResult[0] = color;
+        cResult[1] = obj2;
+        tmp7 = obj2;
+      } else {
+        tmp7 = cResult[1];
+      }
+      iconColor = tmp7;
+    } else {
+      iconColor = tmp4.iconColor;
+    }
+    tmp5 = iconColor;
+  }
+  if (cResult[2] !== size) {
+    let num3 = 10;
+    if (obj.EXTRA_SMALL_10 !== size) {
+      num3 = 12;
+      if (obj.EXTRA_SMALL !== size) {
+        num3 = 18;
+        if (obj.SMALL !== size) {
+          num3 = 14;
+          if (obj.SMALL_14 !== size) {
+            num3 = 20;
+            if (obj.SMALL_20 !== size) {
+              num3 = 24;
+              if (obj.MEDIUM !== size) {
+                num3 = 32;
+                if (obj.LARGE !== size) {
+                  num3 = 16;
+                  if (obj.REFRESH_SMALL_16 !== size) {
+                    const CUSTOM = tmp9.CUSTOM;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    const size1 = { width: num3, height: num3 };
+    cResult[2] = size;
+    cResult[3] = size1;
+    tmp8 = size1;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] === style) {
+    if (cResult[5] === tmp8) {
+      let tmp10;
+      if (cResult[6] === tmp5) {
+        tmp10 = cResult[7];
+      }
+      if (cResult[8] === accessibilityLabel) {
+        if (cResult[9] === accessible) {
+          if (cResult[10] === ref) {
+            if (cResult[11] === str) {
+              if (cResult[12] === source) {
+                let tmp12;
+                if (cResult[13] === tmp10) {
+                  tmp12 = cResult[14];
+                }
+                return tmp12;
+              }
+            }
+          }
+        }
+      }
+      const tmp15 = <Image resizeMode={str} source={source} style={tmp10} accessible={accessible} accessibilityLabel={accessibilityLabel} fadeDuration={0} ref={arg1} />;
+      cResult[8] = accessibilityLabel;
+      cResult[9] = accessible;
+      cResult[10] = ref;
+      cResult[11] = str;
+      cResult[12] = source;
+      cResult[13] = tmp10;
+      cResult[14] = tmp15;
+      tmp12 = tmp15;
+    }
+  }
+  const items = [tmp8, tmp5, style];
+  cResult[4] = style;
+  cResult[5] = tmp8;
+  cResult[6] = tmp5;
+  cResult[7] = items;
+  tmp10 = items;
+}) : ((source, ref) => {
   let accessibilityLabel;
   let accessible;
   let color;
@@ -85,57 +247,13 @@ const memoResult = react.memo(react.forwardRef((source, ref) => {
   }
   items = [{ width: num, height: num }, tmp3, style];
   return tmp5(tmp6, obj2);
-}));
+})));
 memoResult.displayName = "Icon";
 memoResult.Sizes = IconSizes;
+let size = size_mod;
 const result = size.fileFinishedImporting("design/void/Icon/native/Icon.tsx");
 
 export default memoResult;
 export { IconSizes };
-export const getIconSize = function getIconSize(arg0) {
-  if (obj.EXTRA_SMALL_10 === arg0) {
-    return 10;
-  } else if (obj.EXTRA_SMALL === arg0) {
-    return 12;
-  } else if (obj.SMALL === arg0) {
-    return 18;
-  } else if (obj.SMALL_14 === arg0) {
-    return 14;
-  } else if (obj.SMALL_20 === arg0) {
-    return 20;
-  } else if (obj.MEDIUM === arg0) {
-    return 24;
-  } else if (obj.LARGE === arg0) {
-    return 32;
-  } else if (obj.REFRESH_SMALL_16 === arg0) {
-    return 16;
-  }
-};
-export const getIconStyle = function getIconStyle(MEDIUM) {
-  let width = 10;
-  if (obj.EXTRA_SMALL_10 !== MEDIUM) {
-    width = 12;
-    if (obj.EXTRA_SMALL !== MEDIUM) {
-      width = 18;
-      if (obj.SMALL !== MEDIUM) {
-        width = 14;
-        if (obj.SMALL_14 !== MEDIUM) {
-          width = 20;
-          if (obj.SMALL_20 !== MEDIUM) {
-            width = 24;
-            if (obj.MEDIUM !== MEDIUM) {
-              width = 32;
-              if (obj.LARGE !== MEDIUM) {
-                width = 16;
-                if (obj.REFRESH_SMALL_16 !== MEDIUM) {
-                  const CUSTOM = tmp.CUSTOM;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  return { width, height: width };
-};
+export { getIconSize };
+export { getIconStyle };

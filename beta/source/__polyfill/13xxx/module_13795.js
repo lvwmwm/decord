@@ -1,23 +1,13 @@
 // Module ID: 13795
 // Function ID: 13796
-// Dependencies: [13796]
+// Dependencies: [13796, 13800]
 
 // Module 13795
-import module_13796_mod from "module_13796" /* 13796 */;
+import _mod13796 from "module_13796" /* 13796 */;
+import _mod13800 from "module_13800" /* 13800 */;
 
-const call = prototype.call;
-let module_13796 = module_13796_mod;
-if (module_13796) {
-  const bind = prototype.bind;
-  module_13796 = bind.bind(call, call);
-}
-if (!module_13796) {
-  module_13796 = (arg0) => {
-    let closure_0 = arg0;
-    return function() {
-      return call(...arguments);
-    };
-  };
-}
 
-export default module_13796;
+export default (arg0) => {
+  const tmp = _mod13796;
+  return tmp(_mod13800(arg0));
+};

@@ -1,9 +1,9 @@
-// Module ID: 564
-// Function ID: 565
+// Module ID: 574
+// Function ID: 575
 // Name: BatchedStoreListener
 // Dependencies: [508, 2]
 
-// Module 564 (BatchedStoreListener)
+// Module 574 (BatchedStoreListener)
 import EmitterDefault from "Emitter" /* 508 */;
 import size from "module_2" /* 2 */;
 

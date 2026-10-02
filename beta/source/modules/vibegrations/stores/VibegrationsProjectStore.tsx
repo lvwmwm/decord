@@ -1,15 +1,15 @@
-// Module ID: 8495
-// Function ID: 8496
+// Module ID: 8492
+// Function ID: 8493
 // Name: VibegrationsProjectStore
-// Dependencies: [32, 1372, 5371, 504, 573, 2]
+// Dependencies: [32, 1378, 5372, 504, 585, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 8495 (VibegrationsProjectStore)
+// Module 8492 (VibegrationsProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5371 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5372 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 function isProjectOwner(item10010) {

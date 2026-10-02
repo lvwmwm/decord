@@ -1,17 +1,18 @@
-// Module ID: 13449
-// Function ID: 13450
+// Module ID: 13451
+// Function ID: 13452
 // Name: ShareEmbed
-// Dependencies: [19, 17, 21, 4836, 576, 5889, 4832, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 5890, 4833, 2]
 
-// Module 13449 (ShareEmbed)
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5889 */;
+// Module 13451 (ShareEmbed)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5890 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -30,10 +31,229 @@ obj2 = { flexDirection: "row", height: 80, backgroundColor: nativeDefault.colors
 createStyles = createStyles.createStyles;
 size = { height: 16, width: 16, borderRadius: nativeDefault.radii.sm, marginRight: 4 };
 let closure_8 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/share/native/ShareEmbed.tsx");
-
-export default function ShareEmbed(embed) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let embed;
+  let isLoadingEmbed;
+  let isRevamp;
+  let items;
+  let items2;
+  let items3;
+  let obj7;
+  let tmp27;
+  let tmp44Result;
+  const obj = react2;
+  const cResult = obj.c(31);
+  ({ embed, isLoadingEmbed, isRevamp } = arg0);
+  const tmp4 = closure_8();
+  if (null != embed) {
+    const thumbnail = embed.thumbnail;
+    let url;
+    if (thumbnail != null) {
+      url = thumbnail.url;
+    }
+    if (url == null) {
+      const image = embed.image;
+      let url1;
+      if (image != null) {
+        url1 = image.url;
+      }
+      url = url1;
+    }
+    if (null != url) {
+      if (cResult[0] !== url) {
+        const obj2 = { uri: url };
+        cResult[0] = url;
+        cResult[1] = obj2;
+      }
+    }
+  }
+  let tmp9 = null;
+  if (isLoadingEmbed) {
+    let tmp10;
+    if (cResult[2] !== tmp4.loadingSpinner) {
+      const obj3 = { style: tmp4.loadingSpinner };
+      const tmp12 = hasOwnProperty(ActivityIndicator_ActivityIndicator.ActivityIndicator, obj3);
+      cResult[2] = tmp4.loadingSpinner;
+      cResult[3] = tmp12;
+      tmp10 = tmp12;
+    } else {
+      tmp10 = cResult[3];
+    }
+    tmp9 = tmp10;
+  }
+  let author;
+  if (embed != null) {
+    author = embed.author;
+  }
+  let tmp14 = null;
+  if (null != author) {
+    let icon_url = author.proxy_icon_url;
+    if (icon_url == null) {
+      icon_url = author.icon_url;
+    }
+    if (cResult[4] === icon_url) {
+      let tmp15;
+      let tmp19;
+      if (cResult[5] === tmp4.authorThumbnail) {
+        tmp15 = cResult[6];
+      }
+      if (cResult[7] !== author.name) {
+        const obj4 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", ellipsizeMode: "tail", lineClamp: 1, children: author.name };
+        const tmp21 = hasOwnProperty(Text_Text.Text, obj4);
+        cResult[7] = author.name;
+        cResult[8] = tmp21;
+        tmp19 = tmp21;
+      } else {
+        tmp19 = cResult[8];
+      }
+      if (cResult[9] === tmp4.authorView) {
+        if (cResult[10] === tmp15) {
+          let tmp22;
+          if (cResult[11] === tmp19) {
+            tmp22 = cResult[12];
+          }
+          tmp14 = tmp22;
+        }
+      }
+      const obj5 = { style: tmp4.authorView, children: items };
+      items = [tmp15, tmp19];
+      const tmp25 = metroRequire(React3, obj5);
+      cResult[9] = tmp4.authorView;
+      cResult[10] = tmp15;
+      cResult[11] = tmp19;
+      cResult[12] = tmp25;
+      tmp22 = tmp25;
+    }
+    let tmp16 = null != icon_url;
+    if (tmp16) {
+      const obj6 = { style: tmp4.authorThumbnail, source: obj7, resizeMode: "cover" };
+      obj7 = { uri: icon_url };
+      tmp16 = hasOwnProperty(_false, obj6);
+    }
+    cResult[4] = icon_url;
+    cResult[5] = tmp4.authorThumbnail;
+    cResult[6] = tmp16;
+    tmp15 = tmp16;
+  }
+  let title;
+  if (embed != null) {
+    title = embed.title;
+  }
+  if (cResult[13] !== title) {
+    let tmp28 = null;
+    if (null != title) {
+      const obj8 = { style: { marginVertical: 1 }, variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, ellipsizeMode: "tail", children: title };
+      tmp28 = hasOwnProperty(tmp(4833).Text, obj8);
+    }
+    cResult[13] = title;
+    cResult[14] = tmp28;
+    tmp27 = tmp28;
+  } else {
+    tmp27 = cResult[14];
+  }
+  let description;
+  if (embed != null) {
+    description = embed.description;
+  }
+  if (cResult[15] === description) {
+    let tmp31;
+    let tmp35;
+    let tmp40Result2;
+    if (cResult[16] === tmp27) {
+      tmp31 = cResult[17];
+    }
+    let url2;
+    if (embed != null) {
+      url2 = embed.url;
+    }
+    if (cResult[18] !== url2) {
+      let tmp36 = null;
+      if (null != url2) {
+        const obj9 = { style: { marginVertical: 1 }, variant: "text-xs/medium", color: "text-link", lineClamp: 1, ellipsizeMode: "tail", children: url2 };
+        tmp36 = hasOwnProperty(tmp(4833).Text, obj9);
+      }
+      cResult[18] = url2;
+      cResult[19] = tmp36;
+      tmp35 = tmp36;
+    } else {
+      tmp35 = cResult[19];
+    }
+    if (cResult[20] === tmp14) {
+      if (cResult[21] === tmp31) {
+        if (cResult[22] === embed) {
+          if (cResult[23] === tmp5) {
+            if (cResult[24] === isLoadingEmbed) {
+              if (cResult[25] === isRevamp) {
+                if (cResult[26] === tmp9) {
+                  if (cResult[27] === tmp4) {
+                    if (cResult[28] === tmp27) {
+                      let tmp38;
+                      if (cResult[29] === tmp35) {
+                        tmp38 = cResult[30];
+                      }
+                      return tmp38;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    if (null != embed) {
+      const items1 = [tmp4.container, ];
+      let containerRevamp;
+      if (isRevamp) {
+        containerRevamp = tmp4.containerRevamp;
+      }
+      const obj10 = { style: items1, children: tmp44Result };
+      items1[1] = containerRevamp;
+      tmp44Result = tmp9;
+      if (!isLoadingEmbed) {
+        let tmp40Result = null != tmp5;
+        const tmp45 = metroImportDefault;
+        if (tmp40Result) {
+          const obj11 = { style: tmp4.thumbnail, source: tmp5, resizeMode: "cover" };
+          tmp40Result = tmp40(_false, obj11);
+        }
+        const obj12 = { children: items2 };
+        items2 = [tmp40Result, ];
+        const obj13 = { style: tmp4.contentContainer, children: items3 };
+        items3 = [tmp14, tmp27, tmp31, tmp35];
+        items2[1] = metroRequire(React3, obj13);
+        tmp44Result = tmp44(tmp45, obj12);
+      }
+      tmp40Result2 = tmp40(tmp41, obj10);
+    } else {
+      tmp40Result2 = null;
+    }
+    cResult[20] = tmp14;
+    cResult[21] = tmp31;
+    cResult[22] = embed;
+    cResult[23] = tmp5;
+    cResult[24] = isLoadingEmbed;
+    cResult[25] = isRevamp;
+    cResult[26] = tmp9;
+    cResult[27] = tmp4;
+    cResult[28] = tmp27;
+    cResult[29] = tmp35;
+    cResult[30] = tmp40Result2;
+    tmp38 = tmp40Result2;
+  }
+  let tmp32 = null;
+  if (null == tmp27) {
+    tmp32 = null;
+    if (null != description) {
+      const obj14 = { style: { marginVertical: 1 }, variant: "text-xs/medium", color: "text-default", lineClamp: 1, ellipsizeMode: "tail", children: description };
+      tmp32 = hasOwnProperty(tmp(4833).Text, obj14);
+    }
+  }
+  cResult[15] = description;
+  cResult[16] = tmp27;
+  cResult[17] = tmp32;
+  tmp31 = tmp32;
+}) : ((embed) => {
   let closure_2;
   let items6;
   let items7;
@@ -160,4 +380,8 @@ export default function ShareEmbed(embed) {
     tmp9Result2 = null;
   }
   return tmp9Result2;
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/share/native/ShareEmbed.tsx");
+
+export default tmp5;

@@ -1,20 +1,20 @@
-// Module ID: 10941
-// Function ID: 10942
+// Module ID: 9606
+// Function ID: 9607
 // Name: InappropriateConversationUtils
-// Dependencies: [1220, 1372, 10376, 10912, 2]
+// Dependencies: [1232, 1378, 9559, 9571, 2]
 // Exports: getInappropriateConversationTakeoverForChannel, getSafetyAlertsSettingOrDefault, shouldShowInappropriateConversationTakeoverForChannelRecord, shouldShowTakeoverForWarnings
 
-// Module 10941 (InappropriateConversationUtils)
-import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10376 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10912 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 9606 (InappropriateConversationUtils)
+import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 9559 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 9571 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 const ChannelSafetyWarningsStore = ChannelSafetyWarningsStore2;
 
-const f92306 = (type) => type.type === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1;
-const f92307 = (dismiss_timestamp) => null == dismiss_timestamp.dismiss_timestamp;
+const f100729 = (type) => type.type === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1;
+const f100730 = (dismiss_timestamp) => null == dismiss_timestamp.dismiss_timestamp;
 const SafetyWarningTypes = ChannelSafetyWarningsStore2.SafetyWarningTypes;
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationUtils.tsx");
 
@@ -56,14 +56,14 @@ export const shouldShowInappropriateConversationTakeoverForChannelRecord = funct
   let tmp = null != safetyWarnings.safetyWarnings;
   if (tmp) {
     safetyWarnings = safetyWarnings.safetyWarnings;
-    const found = safetyWarnings.filter(f92306);
-    tmp = found.length > 0 && found.every(f92307);
-    const everyResult = found.length > 0 && found.every(f92307);
+    const found = safetyWarnings.filter(f100729);
+    tmp = found.length > 0 && found.every(f100730);
+    const everyResult = found.length > 0 && found.every(f100730);
   }
   return tmp;
 };
 export const shouldShowTakeoverForWarnings = function shouldShowTakeoverForWarnings(inappropriateConversationWarningsForChannel) {
-  const found = inappropriateConversationWarningsForChannel.filter(f92306);
-  const everyResult = found.length > 0 && found.every(f92307);
+  const found = inappropriateConversationWarningsForChannel.filter(f100729);
+  const everyResult = found.length > 0 && found.every(f100730);
   return everyResult;
 };

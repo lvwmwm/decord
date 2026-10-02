@@ -1,20 +1,20 @@
-// Module ID: 14704
-// Function ID: 14705
+// Module ID: 14692
+// Function ID: 14693
 // Name: MobileQuestPreviewControlBar
-// Dependencies: [5, 32, 19, 17, 7116, 1085, 21, 4836, 576, 10681, 504, 10683, 6616, 1115, 6610, 14705, 14709, 7363, 14506, 12523, 4832, 2]
+// Dependencies: [5, 32, 19, 17, 7120, 1097, 21, 4837, 588, 10670, 504, 9765, 6617, 1127, 6611, 14693, 14697, 7362, 14494, 12525, 4833, 2]
 
-// Module 14704 (MobileQuestPreviewControlBar)
+// Module 14692 (MobileQuestPreviewControlBar)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl5 from "intl" /* 1115 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6616 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1097 */;
+import intl5 from "intl" /* 1127 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6617 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7116 */;
+import QuestStore from "QuestStore" /* 7120 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, config;
@@ -113,7 +113,7 @@ class MobileQuestPreviewControlBar {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -154,7 +154,7 @@ class MobileQuestPreviewControlBar {
             closure_128_3(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp24) {
           refreshQuest = tmp24;
           if (0 === v0) {
@@ -182,7 +182,7 @@ class MobileQuestPreviewControlBar {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -223,7 +223,7 @@ class MobileQuestPreviewControlBar {
             closure_128_3(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp24) {
           refreshQuest = tmp24;
           if (0 === v0) {
@@ -251,7 +251,7 @@ class MobileQuestPreviewControlBar {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -294,7 +294,7 @@ class MobileQuestPreviewControlBar {
             closure_128_3(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp25) {
           refreshQuest = tmp25;
           if (0 === v0) {

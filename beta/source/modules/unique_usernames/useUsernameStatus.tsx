@@ -1,25 +1,74 @@
-// Module ID: 14265
-// Function ID: 14266
+// Module ID: 14253
+// Function ID: 14254
 // Name: useUsernameStatus
-// Dependencies: [32, 19, 14266, 2]
-// Exports: useUsernameStatus
+// Dependencies: [32, 19, 558, 576, 14254, 2]
 
-// Module 14265 (useUsernameStatus)
-import useUsernameLiveCheck from "useUsernameLiveCheck" /* 14266 */;
+// Module 14253 (useUsernameStatus)
+import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/unique_usernames/useUsernameStatus.tsx");
-
-export const useUsernameStatus = (arg0, flag, flag2) => {
+let tmp;
+const useUsernameLiveCheck = tmp(14254);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+  let closure_0 = arg0;
+  const tmp = require;
+  const obj = react2;
+  const cResult = obj.c(5);
+  let tmp6;
+  const tmp4 = undefined === arg1 || arg1;
+  const tmp5 = undefined !== arg2 && arg2;
+  if (undefined !== arg3) {
+    tmp6 = arg3;
+  }
+  let closure_1 = tmp6;
+  const tmpResult = useUsernameLiveCheck;
+  const usernameLiveCheck = tmpResult.useUsernameLiveCheck(arg0, tmp4, tmp5);
+  let closure_3 = _slicedToArray(react.useState(undefined), 2)[1];
+  _slicedToArray(react.useState(undefined), 2);
+  const obj3 = react;
+  if (cResult[0] === tmp6) {
+    if (cResult[1] === arg0) {
+      let tmp10;
+      let tmp11;
+      if (cResult[2] === usernameLiveCheck) {
+        tmp10 = cResult[3];
+        tmp11 = cResult[4];
+      }
+      const effect = obj3.useEffect(tmp10, tmp11);
+      return tmp9;
+    }
+  }
+  const fn = function l() {
+    if ("" !== closure_0) {
+      if (tmp !== closure_1) {
+        if (null != usernameLiveCheck) {
+          closure_3(tmp3);
+        }
+      }
+    }
+    closure_3(undefined);
+  };
+  const items = [usernameLiveCheck, arg0, tmp6];
+  cResult[0] = tmp6;
+  cResult[1] = arg0;
+  cResult[2] = usernameLiveCheck;
+  cResult[3] = fn;
+  cResult[4] = items;
+  tmp11 = items;
+  tmp10 = fn;
+}) : ((arg0) => {
   let closure_3;
   let first;
   let closure_0 = arg0;
-  if (flag === undefined) {
+  let flag = arg1;
+  if (arg1 === undefined) {
     flag = true;
   }
-  if (flag2 === undefined) {
+  let flag2 = arg2;
+  if (arg2 === undefined) {
     flag2 = false;
   }
   const tmp = arg3;
@@ -40,4 +89,7 @@ export const useUsernameStatus = (arg0, flag, flag2) => {
     closure_3(undefined);
   }, items);
   return first;
-};
+});
+const result = size.fileFinishedImporting("modules/unique_usernames/useUsernameStatus.tsx");
+
+export const useUsernameStatus = tmp2;

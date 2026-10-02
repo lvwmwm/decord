@@ -1,15 +1,16 @@
-// Module ID: 12174
-// Function ID: 12175
+// Module ID: 12067
+// Function ID: 12068
 // Name: ContactSyncModalStore
-// Dependencies: [5593, 1372, 12175, 1074, 560, 1248, 2]
-// Exports: getIsOnboarding, initialize, setAllowEmail, setAllowPhone, setAllowSync, setError, setName, setPermissionState, setPhone, setPhoneToken, setSuggestions, useIsOnboarding
+// Dependencies: [5594, 1378, 12068, 1086, 570, 1260, 558, 2]
+// Exports: getIsOnboarding, initialize, setAllowEmail, setAllowPhone, setAllowSync, setError, setName, setPermissionState, setPhone, setPhoneToken, setSuggestions
 
-// Module 12174 (ContactSyncModalStore)
-import Constants from "Constants" /* 1074 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12175 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
-import UserStore from "UserStore" /* 1372 */;
-import module_560 from "module_560" /* 560 */;
+// Module 12067 (ContactSyncModalStore)
+import Constants from "Constants" /* 1086 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12068 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
+import UserStore from "UserStore" /* 1378 */;
+import module_570 from "module_570" /* 570 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,10 +19,17 @@ let _require, dependencyMap;
 const ContactPermissions = ContactSyncConstants.ContactPermissions;
 const PlatformTypes = Constants.PlatformTypes;
 const ContactSyncModes = { NORMAL: 0, [0]: "NORMAL", ONBOARDING: 1, [1]: "ONBOARDING", ONBOARDING_INVITE: 2, [2]: "ONBOARDING_INVITE" };
-let obj2 = module_560.create(() => {
+let obj2 = module_570.create(() => {
   let obj;
   obj = { mode: obj.NORMAL, permissionState: ContactPermissions.NOT_DETERMINED, error: "", phone: null, phoneToken: null, name: null, isNameFromContactBook: false, allowPhone: true, allowEmail: true, bulkAddToken: null, suggestions: [] };
   return obj;
+});
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const mode = obj2().mode;
+  return mode === obj.ONBOARDING || mode === obj.ONBOARDING_INVITE;
+}) : (() => {
+  const mode = obj2().mode;
+  return mode === obj.ONBOARDING || mode === obj.ONBOARDING_INVITE;
 });
 const result = size.fileFinishedImporting("modules/contact_sync/native/ContactSyncModalStore.tsx");
 
@@ -177,10 +185,7 @@ export const setError = function setError(arg0) {
     });
   });
 };
-export const useIsOnboarding = function useIsOnboarding() {
-  const mode = obj2().mode;
-  return mode === obj.ONBOARDING || mode === obj.ONBOARDING_INVITE;
-};
+export const useIsOnboarding = tmp3;
 export const getIsOnboarding = function getIsOnboarding() {
   const mode = obj2.getState().mode;
   return mode === obj.ONBOARDING || mode === obj.ONBOARDING_INVITE;

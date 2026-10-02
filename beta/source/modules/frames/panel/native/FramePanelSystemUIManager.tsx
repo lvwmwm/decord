@@ -1,23 +1,46 @@
-// Module ID: 16871
-// Function ID: 16872
+// Module ID: 16840
+// Function ID: 16841
 // Name: FramePanelSystemUIManager
-// Dependencies: [19, 21, 16865, 16862, 2]
+// Dependencies: [19, 21, 558, 576, 16834, 16831, 2]
 
-// Module 16871 (FramePanelSystemUIManager)
+// Module 16840 (FramePanelSystemUIManager)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelSystemUIManager from "ActivityPanelSystemUIManager" /* 16862 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 16865 */;
+import react2 from "react" /* 576 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 16834 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const ActivityPanelSystemUIManager = tmp(16831);
 const jsx = Fragment.jsx;
-const memoResult = react.memo(() => {
+const memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let mode;
+  let wrapperDimensions;
+  const obj = react2;
+  const cResult = obj.c(3);
+  const context = react.useContext(FramePanelStateContextDefault);
+  ({ mode, wrapperDimensions } = context);
+  if (cResult[0] === mode) {
+    let tmp5;
+    if (cResult[1] === wrapperDimensions.isWindowLandscape) {
+      tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  const tmp6 = jsx(ActivityPanelSystemUIManager.BaseActivityPanelSystemUIManager, { mode, isWindowLandscape: wrapperDimensions.isWindowLandscape });
+  cResult[0] = mode;
+  cResult[1] = wrapperDimensions.isWindowLandscape;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : (() => {
   let mode;
   let wrapperDimensions;
   const context = react.useContext(FramePanelStateContextDefault);
   ({ mode, wrapperDimensions } = context);
   return jsx(ActivityPanelSystemUIManager.BaseActivityPanelSystemUIManager, { mode, isWindowLandscape: wrapperDimensions.isWindowLandscape });
-});
+}));
 const result = size.fileFinishedImporting("modules/frames/panel/native/FramePanelSystemUIManager.tsx");
 
 export default memoResult;

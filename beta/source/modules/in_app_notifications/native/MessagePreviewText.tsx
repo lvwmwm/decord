@@ -1,32 +1,34 @@
-// Module ID: 9566
-// Function ID: 9567
+// Module ID: 12232
+// Function ID: 12233
 // Name: MessagePreviewText
-// Dependencies: [19, 17, 2045, 9555, 1085, 21, 4836, 1365, 576, 9567, 9568, 9554, 4832, 5899, 9590, 5083, 9595, 9596, 1096, 6720, 1115, 7304, 2]
-// Exports: default
+// Dependencies: [19, 17, 2051, 12222, 1097, 21, 4837, 1371, 588, 558, 576, 12233, 12234, 12221, 4833, 5896, 12235, 5084, 12238, 12239, 1108, 6721, 1127, 7308, 2]
 
-// Module 9566 (MessagePreviewText)
+// Module 12232 (MessagePreviewText)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 1096 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import useMessageAuthor from "useMessageAuthor" /* 5083 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6720 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7304 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 9554 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 9567 */;
-import ChannelRowPreview2 from "ChannelRowPreview" /* 9568 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 9590 */;
-import usePreviewableMediaText from "usePreviewableMediaText" /* 9595 */;
-import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 9596 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1097 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 1108 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import useMessageAuthor from "useMessageAuthor" /* 5084 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6721 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7308 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 12221 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 12233 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 12235 */;
+import usePreviewableMediaText from "usePreviewableMediaText" /* 12238 */;
+import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 12239 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 9555 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 12222 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1365 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1371 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
+
+let embed, media;
 
 let c9;
 let metroImportAll;
@@ -37,7 +39,58 @@ let obj4;
 let obj5;
 let obj6;
 let size;
-function NativeMessagePreviewContent(arg0) {
+let tmp;
+const ChannelRowPreview2 = tmp(12234);
+const View = react_native.View;
+({ IN_APP_NOTIFICATION_MAX_HEIGHT: metroRequire, NOTIFICATION_PREVIEW_LINE_CLAMP: metroImportDefault } = InAppNotificationConstants);
+const Fonts = Constants.Fonts;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let createStyles = createStyles_mod;
+createStyles = createStyles.createStyles;
+let obj = { italic: obj2 };
+obj2 = { fontStyle: "italic", fontFamily: PlatformUtils.isIOS() ? Fonts.PRIMARY_NORMAL_ITALIC : Fonts.PRIMARY_MEDIUM_ITALIC };
+let closure_10 = createStyles(obj);
+createStyles = createStyles_mod;
+let obj3 = { embedContainer: obj4, embedAccentBar: obj5, embedTextContainer: obj6, embedMediaContainer: size, embedMedia: { width: "100%", height: "100%" } };
+obj4 = { borderRadius: nativeDefault.radii.sm, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8, paddingRight: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, flexDirection: "row", overflow: "hidden" };
+const createStyles2 = createStyles.createStyles;
+obj5 = { width: 4, marginTop: -nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_8, alignSelf: "stretch" };
+obj6 = { flex: 1, gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8 };
+size = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", height: 60, width: "unicodeVersion" };
+let closure_11 = createStyles2(obj3);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let gradientColors;
+  let gradientStyles;
+  let message;
+  const obj = react2;
+  const cResult = obj.c(6);
+  ({ message, lineClamp, maxHeight } = arg0);
+  ({ gradientColors, gradientStyles } = useTruncatedGradientColorsDefault());
+  useTruncatedGradientColorsDefault();
+  if (cResult[0] === gradientColors) {
+    if (cResult[1] === gradientStyles) {
+      if (cResult[2] === lineClamp) {
+        if (cResult[3] === maxHeight) {
+          let tmp5;
+          if (cResult[4] === message) {
+            tmp5 = cResult[5];
+          }
+          return tmp5;
+        }
+      }
+    }
+  }
+  const obj2 = { children: metroImportAll(ChannelRowPreview2.NativeChannelRowPreview, { message, lineClamp, maxHeight, gradientStyles, gradientColors }) };
+  const tmp6 = metroImportAll(View, obj2);
+  cResult[0] = gradientColors;
+  cResult[1] = gradientStyles;
+  cResult[2] = lineClamp;
+  cResult[3] = maxHeight;
+  cResult[4] = message;
+  cResult[5] = tmp6;
+  tmp5 = tmp6;
+}) : ((arg0) => {
   let gradientColors;
   let gradientStyles;
   let message;
@@ -46,18 +99,117 @@ function NativeMessagePreviewContent(arg0) {
   const obj = { children: metroImportAll(ChannelRowPreview2.NativeChannelRowPreview, { message, lineClamp, maxHeight, gradientStyles, gradientColors }) };
   ({ gradientColors, gradientStyles } = tmp);
   return metroImportAll(View, obj);
-}
-class SystemMessageText {
-  constructor(text) {
-    text = text.text;
-    const tmp = closure_10();
-    const obj = InAppNotificationUtils;
-    const messagePreviewTextVariant = obj.getMessagePreviewTextVariant();
-    const obj2 = { variant: messagePreviewTextVariant, color: "text-subtle", style: tmp.italic, lineClamp: metroImportDefault, children: text };
-    return metroImportAll(Text_Text.Text, obj2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(4);
+  text = text.text;
+  const tmp4 = closure_10();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = InAppNotificationUtils;
+    const messagePreviewTextVariant = tmpResult.getMessagePreviewTextVariant();
+    cResult[0] = messagePreviewTextVariant;
+    first = messagePreviewTextVariant;
+  } else {
+    first = cResult[0];
   }
-}
-function EmbedMediaThumbnail(media) {
+  if (cResult[1] === tmp4.italic) {
+    let tmp7;
+    if (cResult[2] === text) {
+      tmp7 = cResult[3];
+    }
+    return tmp7;
+  }
+  const obj2 = { variant: first, color: "text-subtle", style: tmp4.italic, lineClamp: metroImportDefault, children: text };
+  const tmp8 = metroImportAll(Text_Text.Text, obj2);
+  cResult[1] = tmp4.italic;
+  cResult[2] = text;
+  cResult[3] = tmp8;
+  tmp7 = tmp8;
+}) : ((text) => {
+  text = text.text;
+  const tmp = closure_10();
+  const obj = InAppNotificationUtils;
+  const messagePreviewTextVariant = obj.getMessagePreviewTextVariant();
+  const obj2 = { variant: messagePreviewTextVariant, color: "text-subtle", style: tmp.italic, lineClamp: metroImportDefault, children: text };
+  return metroImportAll(Text_Text.Text, obj2);
+});
+let closure_13 = tmp6;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(13);
+  media = media.media;
+  const tmp3 = closure_11();
+  let url = media.proxyURL;
+  if (url == null) {
+    url = media.url;
+  }
+  const result = media.width / media.height;
+  let num = 1;
+  if (Number.isFinite(result)) {
+    num = 1;
+    if (result > 0) {
+      num = result;
+    }
+  }
+  if (cResult[0] !== num) {
+    const obj2 = { aspectRatio: num };
+    cResult[0] = num;
+    cResult[1] = obj2;
+    tmp5 = obj2;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === tmp3.embedMediaContainer) {
+    let tmp6;
+    let tmp7;
+    if (cResult[3] === tmp5) {
+      tmp6 = cResult[4];
+    }
+    if (cResult[5] !== url) {
+      const obj3 = { uri: url };
+      cResult[5] = url;
+      cResult[6] = obj3;
+      tmp7 = obj3;
+    } else {
+      tmp7 = cResult[6];
+    }
+    if (cResult[7] === tmp3.embedMedia) {
+      let tmp8;
+      if (cResult[8] === tmp7) {
+        tmp8 = cResult[9];
+      }
+      if (cResult[10] === tmp6) {
+        let tmp12;
+        if (cResult[11] === tmp8) {
+          tmp12 = cResult[12];
+        }
+        return tmp12;
+      }
+      const obj4 = { style: tmp6, children: tmp8 };
+      const tmp15 = metroImportAll(View, obj4);
+      cResult[10] = tmp6;
+      cResult[11] = tmp8;
+      cResult[12] = tmp15;
+      tmp12 = tmp15;
+    }
+    const obj5 = { source: tmp7, style: tmp3.embedMedia, resizeMode: "contain" };
+    const tmp11 = metroImportAll(FastImageDefault, obj5);
+    cResult[7] = tmp3.embedMedia;
+    cResult[8] = tmp7;
+    cResult[9] = tmp11;
+    tmp8 = tmp11;
+  }
+  const items = [tmp3.embedMediaContainer, tmp5];
+  cResult[2] = tmp3.embedMediaContainer;
+  cResult[3] = tmp5;
+  cResult[4] = items;
+  tmp6 = items;
+}) : ((media) => {
   let items;
   let obj2;
   media = media.media;
@@ -78,8 +230,173 @@ function EmbedMediaThumbnail(media) {
   items = [tmp.embedMediaContainer, { aspectRatio: num }];
   obj2 = { source: { uri: url }, style: tmp.embedMedia, resizeMode: "contain" };
   return metroImportAll(View, obj);
-}
-function EmbedCard(embed) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((embed) => {
+  let items;
+  let items1;
+  let items2;
+  let rawTitle;
+  let thumbnail;
+  const obj = react2;
+  const cResult = obj.c(25);
+  embed = embed.embed;
+  const tmp4 = closure_11();
+  const provider = embed.provider;
+  let name;
+  if (provider != null) {
+    name = provider.name;
+  }
+  const author = embed.author;
+  let name1;
+  if (author != null) {
+    name1 = author.name;
+  }
+  ({ rawTitle, thumbnail } = embed);
+  if (thumbnail == null) {
+    thumbnail = embed.image;
+  }
+  let color;
+  if (null != embed.color) {
+    const str = embed.color;
+    if ("#ffffff" !== str.toLowerCase()) {
+      color = embed.color;
+    }
+  }
+  if (cResult[0] === color) {
+    let tmp9;
+    let tmp13;
+    let tmp16;
+    if (cResult[1] === tmp4.embedAccentBar) {
+      tmp9 = cResult[2];
+    }
+    if (cResult[3] !== name) {
+      let tmp14 = null != name;
+      if (tmp14) {
+        const obj2 = { variant: "text-xxs/normal", color: "text-subtle", lineClamp: 1, children: name };
+        tmp14 = metroImportAll(tmp(4833).Text, obj2);
+      }
+      cResult[3] = name;
+      cResult[4] = tmp14;
+      tmp13 = tmp14;
+    } else {
+      tmp13 = cResult[4];
+    }
+    if (cResult[5] !== name1) {
+      let tmp17 = null != name1;
+      if (tmp17) {
+        const obj3 = { variant: "text-xs/medium", color: "text-default", lineClamp: 1, children: name1 };
+        tmp17 = metroImportAll(tmp(4833).Text, obj3);
+      }
+      cResult[5] = name1;
+      cResult[6] = tmp17;
+      tmp16 = tmp17;
+    } else {
+      tmp16 = cResult[6];
+    }
+    if (cResult[7] === (null == name && null == name1)) {
+      let tmp19;
+      let tmp22;
+      if (cResult[8] === rawTitle) {
+        tmp19 = cResult[9];
+      }
+      if (cResult[10] !== embed.rawDescription) {
+        let tmp23 = null != embed.rawDescription;
+        if (tmp23) {
+          const obj4 = { variant: "text-xs/medium", color: "text-default", lineClamp: 3, children: embed.rawDescription };
+          tmp23 = metroImportAll(tmp(4833).Text, obj4);
+        }
+        cResult[10] = embed.rawDescription;
+        cResult[11] = tmp23;
+        tmp22 = tmp23;
+      } else {
+        tmp22 = cResult[11];
+      }
+      if (cResult[12] === tmp4.embedTextContainer) {
+        if (cResult[13] === tmp13) {
+          if (cResult[14] === tmp16) {
+            if (cResult[15] === tmp19) {
+              let tmp25;
+              let tmp29;
+              if (cResult[16] === tmp22) {
+                tmp25 = cResult[17];
+              }
+              if (cResult[18] !== thumbnail) {
+                let tmp30 = null != thumbnail;
+                if (tmp30) {
+                  const obj5 = { media: thumbnail };
+                  tmp30 = metroImportAll(closure_14, obj5);
+                }
+                cResult[18] = thumbnail;
+                cResult[19] = tmp30;
+                tmp29 = tmp30;
+              } else {
+                tmp29 = cResult[19];
+              }
+              if (cResult[20] === tmp4.embedContainer) {
+                if (cResult[21] === tmp9) {
+                  if (cResult[22] === tmp25) {
+                    let tmp33;
+                    if (cResult[23] === tmp29) {
+                      tmp33 = cResult[24];
+                    }
+                    return tmp33;
+                  }
+                }
+              }
+              const obj6 = { style: tmp4.embedContainer, children: items };
+              items = [tmp9, tmp25, tmp29];
+              const tmp36 = React4(View, obj6);
+              cResult[20] = tmp4.embedContainer;
+              cResult[21] = tmp9;
+              cResult[22] = tmp25;
+              cResult[23] = tmp29;
+              cResult[24] = tmp36;
+              tmp33 = tmp36;
+            }
+          }
+        }
+      }
+      const obj7 = { style: tmp4.embedTextContainer, children: items1 };
+      items1 = [tmp13, tmp16, tmp19, tmp22];
+      const tmp28 = React4(View, obj7);
+      cResult[12] = tmp4.embedTextContainer;
+      cResult[13] = tmp13;
+      cResult[14] = tmp16;
+      cResult[15] = tmp19;
+      cResult[16] = tmp22;
+      cResult[17] = tmp28;
+      tmp25 = tmp28;
+    }
+    let tmp21Result = null != rawTitle;
+    if (tmp21Result) {
+      let num5 = 1;
+      const Text = tmp(4833).Text;
+      const tmp21 = metroImportAll;
+      if (null == name && null == name1) {
+        num5 = 3;
+      }
+      const obj8 = { variant: "text-xs/medium", color: "text-link", lineClamp: num5, children: rawTitle };
+      tmp21Result = tmp21(Text, obj8);
+    }
+    cResult[7] = null == name && null == name1;
+    cResult[8] = rawTitle;
+    cResult[9] = tmp21Result;
+    tmp19 = tmp21Result;
+  }
+  let tmp10 = null != color;
+  if (tmp10) {
+    const obj9 = { style: items2 };
+    items2 = [tmp4.embedAccentBar, ];
+    const obj10 = { backgroundColor: color };
+    items2[1] = obj10;
+    tmp10 = metroImportAll(View, obj9);
+  }
+  cResult[0] = color;
+  cResult[1] = tmp4.embedAccentBar;
+  cResult[2] = tmp10;
+  tmp9 = tmp10;
+}) : ((embed) => {
   let items;
   let items1;
   let items2;
@@ -156,32 +473,255 @@ function EmbedCard(embed) {
   let tmp25 = null != thumbnail;
   if (tmp25) {
     const obj9 = { media: thumbnail };
-    tmp25 = metroImportAll(EmbedMediaThumbnail, obj9);
+    tmp25 = metroImportAll(closure_14, obj9);
   }
   items1[2] = tmp25;
   return React4(View, obj);
-}
-const View = react_native.View;
-({ IN_APP_NOTIFICATION_MAX_HEIGHT: metroRequire, NOTIFICATION_PREVIEW_LINE_CLAMP: metroImportDefault } = InAppNotificationConstants);
-const Fonts = Constants.Fonts;
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-let createStyles = createStyles_mod;
-createStyles = createStyles.createStyles;
-let obj = { italic: obj2 };
-obj2 = { fontStyle: "italic", fontFamily: PlatformUtils.isIOS() ? Fonts.PRIMARY_NORMAL_ITALIC : Fonts.PRIMARY_MEDIUM_ITALIC };
-const authStore = createStyles(obj);
-createStyles = createStyles_mod;
-let obj3 = { embedContainer: obj4, embedAccentBar: obj5, embedTextContainer: obj6, embedMediaContainer: size, embedMedia: { width: "100%", height: "100%" } };
-obj4 = { borderRadius: nativeDefault.radii.sm, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8, paddingRight: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, flexDirection: "row", overflow: "hidden" };
-const createStyles2 = createStyles.createStyles;
-obj5 = { width: 4, marginTop: -nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_8, alignSelf: "stretch" };
-obj6 = { flex: 1, gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8 };
-size = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", height: 60, width: "__closure" };
-let closure_11 = createStyles2(obj3);
-size = size_mod;
-let result = size.fileFinishedImporting("modules/in_app_notifications/native/MessagePreviewText.tsx");
-
-export default function MessagePreviewText(message) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let items;
+  let message;
+  let secondaryText;
+  let showMessageAuthor;
+  let text;
+  let tmp35;
+  const obj = react2;
+  const cResult = obj.c(56);
+  ({ message, lineClamp, maxHeight, showMessageAuthor } = arg0);
+  const tmp4 = undefined !== showMessageAuthor && showMessageAuthor;
+  const tmpResult = usePreviewableMedia;
+  const previewableMedia = tmpResult.usePreviewableMedia(message);
+  let tmp6 = null;
+  const useNullableMessageAuthor = tmp(5084).useNullableMessageAuthor;
+  useMessageAuthor;
+  if (tmp4) {
+    tmp6 = message;
+  }
+  const nullableMessageAuthor = useNullableMessageAuthor(tmp6);
+  if (cResult[0] === nullableMessageAuthor) {
+    let tmp8;
+    let tmp10;
+    let arr2;
+    if (cResult[1] === previewableMedia) {
+      tmp8 = cResult[2];
+    }
+    const tmpResult5 = usePreviewableMediaText;
+    const previewableMediaText = tmpResult5.usePreviewableMediaText(tmp8);
+    ({ text, secondaryText } = previewableMediaText);
+    if (cResult[3] !== message) {
+      const obj2 = { message };
+      cResult[3] = message;
+      cResult[4] = obj2;
+      tmp10 = obj2;
+    } else {
+      tmp10 = cResult[4];
+    }
+    const tmpResult6 = useGetInitialMessagePreview;
+    const getInitialMessagePreview = tmpResult6.useGetInitialMessagePreview(tmp10);
+    if (cResult[5] !== message.embeds) {
+      let tmp13;
+      const _Symbol = Symbol;
+      if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+        class S {
+          constructor(arg0) {
+            tmp = null != arg0.image || null != arg0.thumbnail;
+            return tmp;
+          }
+        }
+        cResult[7] = S;
+        tmp13 = S;
+      } else {
+        class S {
+          constructor(arg0) {
+            tmp = null != arg0.image || null != arg0.thumbnail;
+            return tmp;
+          }
+        }
+      }
+      const embeds = message.embeds;
+      const found = embeds.filter(tmp13);
+      cResult[5] = message.embeds;
+      cResult[6] = found;
+      arr2 = found;
+    } else {
+      class S {
+        constructor(arg0) {
+          tmp = null != arg0.image || null != arg0.thumbnail;
+          return tmp;
+        }
+      }
+    }
+    if (arr2.length > 0) {
+      class S {
+        constructor(arg0) {
+          tmp = null != arg0.image || null != arg0.thumbnail;
+          return tmp;
+        }
+      }
+      if (tmp26.type === MessageEmbedTypes.MessageEmbedTypes.GIFV) {
+        class S {
+          constructor(arg0) {
+            tmp = null != arg0.image || null != arg0.thumbnail;
+            return tmp;
+          }
+        }
+        return tmp35;
+      }
+      if (cResult[10] !== getInitialMessagePreview) {
+        class S {
+          constructor(arg0) {
+            tmp = null != arg0.image || null != arg0.thumbnail;
+            return tmp;
+          }
+        }
+        const obj3 = { message: getInitialMessagePreview, lineClamp: metroImportDefault, maxHeight: metroRequire };
+        cResult[10] = getInitialMessagePreview;
+        cResult[11] = metroImportAll(closure_12, obj3);
+        const tmp31 = metroImportAll(closure_12, obj3);
+      } else {
+        class S {
+          constructor(arg0) {
+            tmp = null != arg0.image || null != arg0.thumbnail;
+            return tmp;
+          }
+        }
+      }
+      if (cResult[12] !== tmp26) {
+        class S {
+          constructor(arg0) {
+            tmp = null != arg0.image || null != arg0.thumbnail;
+            return tmp;
+          }
+        }
+        const obj4 = { embed: tmp26 };
+        cResult[12] = tmp26;
+        cResult[13] = metroImportAll(closure_15, obj4);
+        const tmp34 = metroImportAll(closure_15, obj4);
+      } else {
+        class S {
+          constructor(arg0) {
+            tmp = null != arg0.image || null != arg0.thumbnail;
+            return tmp;
+          }
+        }
+      }
+      if (cResult[14] === tmp27) {
+        class S {
+          constructor(arg0) {
+            tmp = null != arg0.image || null != arg0.thumbnail;
+            return tmp;
+          }
+        }
+      }
+      const obj5 = { children: items };
+      items = [tmp27, tmp32];
+      const tmp38 = React4(View, obj5);
+      cResult[14] = tmp27;
+      cResult[15] = tmp32;
+      cResult[16] = tmp38;
+      tmp35 = tmp38;
+    } else {
+      class S {
+        constructor(arg0) {
+          tmp = null != arg0.image || null != arg0.thumbnail;
+          return tmp;
+        }
+      }
+      if (isForwardMessageDefault(message)) {
+        class S {
+          constructor(arg0) {
+            tmp = null != arg0.image || null != arg0.thumbnail;
+            return tmp;
+          }
+        }
+        let tmp15 = previewableMedia.length > 0;
+        if (tmp15) {
+          class S {
+            constructor(arg0) {
+              tmp = null != arg0.image || null != arg0.thumbnail;
+              return tmp;
+            }
+          }
+          tmp15 = tmp16 === tmp(12235).PreviewableMediaTypes.GIF;
+        }
+        if (previewableMedia.length > 0) {
+          let tmp23;
+          class S {
+            constructor(arg0) {
+              tmp = null != arg0.image || null != arg0.thumbnail;
+              return tmp;
+            }
+          }
+          if (cResult[17] !== nullableMessageAuthor) {
+            class S {
+              constructor(arg0) {
+                tmp = null != arg0.image || null != arg0.thumbnail;
+                return tmp;
+              }
+            }
+            cResult[17] = nullableMessageAuthor;
+            cResult[18] = tmp22;
+          } else {
+            class S {
+              constructor(arg0) {
+                tmp = null != arg0.image || null != arg0.thumbnail;
+                return tmp;
+              }
+            }
+          }
+          if (cResult[19] !== tmp21) {
+            class S {
+              constructor(arg0) {
+                tmp = null != arg0.image || null != arg0.thumbnail;
+                return tmp;
+              }
+            }
+            const obj6 = { text: tmp21 };
+            const tmp25 = metroImportAll(closure_13, obj6);
+            cResult[19] = tmp21;
+            cResult[20] = tmp25;
+            tmp23 = tmp25;
+          } else {
+            class S {
+              constructor(arg0) {
+                tmp = null != arg0.image || null != arg0.thumbnail;
+                return tmp;
+              }
+            }
+          }
+          return tmp23;
+        }
+        if (cResult[21] === getInitialMessagePreview) {
+          class S {
+            constructor(arg0) {
+              tmp = null != arg0.image || null != arg0.thumbnail;
+              return tmp;
+            }
+          }
+        }
+        const obj7 = { message: getInitialMessagePreview, lineClamp: metroImportDefault, maxHeight: metroRequire };
+        cResult[21] = getInitialMessagePreview;
+        cResult[22] = metroImportDefault;
+        cResult[23] = metroRequire;
+        cResult[24] = metroImportAll(closure_12, obj7);
+        const tmp20 = metroImportAll(closure_12, obj7);
+      } else {
+        class S {
+          constructor(arg0) {
+            tmp = null != arg0.image || null != arg0.thumbnail;
+            return tmp;
+          }
+        }
+      }
+    }
+  }
+  const obj8 = { previewableMedia, author: nullableMessageAuthor };
+  cResult[0] = nullableMessageAuthor;
+  cResult[1] = previewableMedia;
+  cResult[2] = obj8;
+  tmp8 = obj8;
+}) : ((message) => {
   let items1;
   let items3;
   let secondaryText;
@@ -217,60 +757,60 @@ export default function MessagePreviewText(message) {
       let tmp44;
       if (null != text) {
         const obj2 = { text };
-        tmp44 = metroImportAll(SystemMessageText, obj2);
+        tmp44 = metroImportAll(closure_13, obj2);
       }
       return tmp44;
     }
     const obj3 = { children: items1 };
     const obj4 = { message: getInitialMessagePreview, lineClamp: metroImportDefault, maxHeight: metroRequire };
-    items1 = [metroImportAll(NativeMessagePreviewContent, obj4), ];
+    items1 = [metroImportAll(closure_12, obj4), ];
     const obj5 = { embed: first };
-    items1[1] = metroImportAll(EmbedCard, obj5);
+    items1[1] = metroImportAll(closure_15, obj5);
     tmp44 = React4(View, obj3);
   } else if (isForwardMessageDefault(message)) {
     let tmp30 = previewableMedia.length > 0;
     if (tmp30) {
-      tmp30 = previewableMedia[0].type === tmp(9590).PreviewableMediaTypes.GIF;
+      tmp30 = previewableMedia[0].type === tmp(12235).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       let formatResult;
       if (null != nullableMessageAuthor) {
-        const intl4 = tmp(1115).intl;
+        const intl4 = tmp(1127).intl;
         const obj6 = { username: nullableMessageAuthor.nick };
-        formatResult = intl4.format(tmp(1115).t.sLDHDi, obj6);
+        formatResult = intl4.format(tmp(1127).t.sLDHDi, obj6);
       } else {
-        const intl3 = tmp(1115).intl;
-        formatResult = intl3.string(tmp(1115).t["9ddYKt"]);
+        const intl3 = tmp(1127).intl;
+        formatResult = intl3.string(tmp(1127).t["9ddYKt"]);
       }
       const obj7 = { text: formatResult };
-      return metroImportAll(SystemMessageText, obj7);
+      return metroImportAll(closure_13, obj7);
     }
     const obj8 = { message: getInitialMessagePreview, lineClamp: metroImportDefault, maxHeight: metroRequire };
-    return metroImportAll(NativeMessagePreviewContent, obj8);
+    return metroImportAll(closure_12, obj8);
   } else if (message.content.length > 0) {
     if (null != nullableMessageAuthor) {
       const channel = ChannelStore.getChannel(message.channel_id);
       InAppNotificationUtils;
       if (null != channel) {
         const obj9 = { channel, message, color: "text-default", layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, variant: tmp25, muted: false, lineClamp: metroImportDefault };
-        const ChannelRowPreview = tmp(9568).ChannelRowPreview;
+        const ChannelRowPreview = tmp(12234).ChannelRowPreview;
         return metroImportAll(ChannelRowPreview, obj9);
       }
     }
     const obj10 = { message: getInitialMessagePreview, lineClamp: metroImportDefault, maxHeight: metroRequire };
-    return metroImportAll(NativeMessagePreviewContent, obj10);
+    return metroImportAll(closure_12, obj10);
   } else {
     if (previewableMedia.length > 0) {
       if (null !== text) {
         const obj11 = { text };
-        const items2 = [metroImportAll(SystemMessageText, obj11), ];
+        const items2 = [metroImportAll(closure_13, obj11), ];
         let tmp18Result = null !== secondaryText;
         const tmp16 = React4;
         const tmp17 = View;
         const tmp18 = metroImportAll;
         if (tmp18Result) {
           const obj12 = { variant: "redesign/message-preview/medium", color: "text-link", lineClamp: metroImportDefault, children: secondaryText };
-          tmp18Result = tmp18(tmp(4832).Text, obj12);
+          tmp18Result = tmp18(tmp(4833).Text, obj12);
         }
         const obj13 = { children: items2 };
         items2[1] = tmp18Result;
@@ -281,23 +821,27 @@ export default function MessagePreviewText(message) {
       let formatResult1;
       const text2 = message.poll.question.text;
       if (null != nullableMessageAuthor) {
-        const intl2 = tmp(1115).intl;
+        const intl2 = tmp(1127).intl;
         const obj14 = { username: nullableMessageAuthor.nick };
-        formatResult1 = intl2.format(tmp(1115).t["1wtRlq"], obj14);
+        formatResult1 = intl2.format(tmp(1127).t["1wtRlq"], obj14);
       } else {
-        const intl = tmp(1115).intl;
-        formatResult1 = intl.string(tmp(1115).t.n3shVJ);
+        const intl = tmp(1127).intl;
+        formatResult1 = intl.string(tmp(1127).t.n3shVJ);
       }
       const obj15 = { children: items3 };
       const obj16 = { text: formatResult1 };
-      items3 = [metroImportAll(SystemMessageText, obj16), ];
+      items3 = [metroImportAll(closure_13, obj16), ];
       const obj17 = { variant: "redesign/message-preview/medium", color: "text-default", lineClamp: metroImportDefault, children: text2 };
       items3[1] = metroImportAll(Text_Text.Text, obj17);
       return React4(View, obj15);
     } else {
       const obj18 = { message, lineClamp: metroImportDefault, maxHeight: metroRequire };
-      return metroImportAll(NativeMessagePreviewContent, obj18);
+      return metroImportAll(closure_12, obj18);
     }
   }
-};
-export { SystemMessageText };
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/in_app_notifications/native/MessagePreviewText.tsx");
+
+export default tmp7;
+export const SystemMessageText = tmp6;

@@ -1,14 +1,14 @@
 // Module ID: 6414
 // Function ID: 6415
 // Name: UserSettingsConfirmPassword
-// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4836, 576, 6415, 504, 6416, 4735, 1231, 1115, 6419, 4832, 6023, 6360, 5281, 2]
-// Exports: UserSettingsConfirmPasswordWrapped
+// Dependencies: [5, 32, 19, 17, 1378, 1086, 21, 4837, 588, 558, 576, 6415, 504, 6416, 4737, 1243, 1127, 6419, 4833, 6020, 6357, 5282, 2]
 
 // Module 6414 (UserSettingsConfirmPassword)
 import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6023 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6020 */;
 import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6415 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
 import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 6419 */;
@@ -16,9 +16,10 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,9 +33,9 @@ let obj3;
 let obj4;
 let tmp3;
 let unpackModuleId;
-const intl5 = tmp3(1115);
-const Text_Text = tmp3(4832);
-const components_Button_Button = tmp3(5281);
+const intl5 = tmp3(1127);
+const Text_Text = tmp3(4833);
+const components_Button_Button = tmp3(5282);
 let react = react_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 const UserSettingsSections = Constants.UserSettingsSections;
@@ -46,6 +47,29 @@ createStyles = createStyles.createStyles;
 obj3 = { borderRadius: nativeDefault.radii.lg };
 obj4 = { color: nativeDefault.unsafe_rawColors.RED_400 };
 let closure_12 = createStyles(obj);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp3;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const obj2 = useSettingNavigationRoute;
+  const settingNavigationRoute = obj2.useSettingNavigationRoute();
+  if (cResult[0] !== settingNavigationRoute.params) {
+    const obj3 = {};
+    const merged = Object.assign(settingNavigationRoute.params);
+    const tmp8 = authStore(map1, obj3);
+    cResult[0] = settingNavigationRoute.params;
+    cResult[1] = tmp8;
+    tmp3 = tmp8;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return tmp3;
+}) : (() => {
+  const obj = useSettingNavigationRoute;
+  const obj2 = {};
+  const merged = Object.assign(obj.useSettingNavigationRoute().params);
+  return authStore(map1, obj2);
+});
 const forwardRefResult = react.forwardRef((arg0, ref) => {
   let Button;
   let _undefined;
@@ -90,7 +114,7 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -122,14 +146,14 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
             if (2 === c4) {
               c3 = 1;
               const tmp = closure_2;
-              const obj4 = tmp(closure_2[13]);
+              const obj4 = tmp(closure_2[15]);
               obj4.captureException(tmp);
               const message = tmp.message;
-              const intl = closure_0(closure_2[14]).intl;
-              if (message !== intl.string(closure_0(closure_2[14]).t.N2yb9a)) {
+              const intl = closure_0(closure_2[16]).intl;
+              if (message !== intl.string(closure_0(closure_2[16]).t.N2yb9a)) {
                 const self3 = this;
                 const self4 = this;
-                const v6OrEarlierAPIError = new closure_0(closure_2[12]).V6OrEarlierAPIError(tmp);
+                const v6OrEarlierAPIError = new closure_0(closure_2[14]).V6OrEarlierAPIError(tmp);
                 closure_129_5(v6OrEarlierAPIError);
               }
               if (closure_129_2 != null) {
@@ -160,7 +184,7 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
                   if (closure_0.status <= 599) {
                     const self = this;
                     const self2 = this;
-                    const v6OrEarlierAPIError1 = new closure_0(closure_2[12]).V6OrEarlierAPIError(closure_0);
+                    const v6OrEarlierAPIError1 = new closure_0(closure_2[14]).V6OrEarlierAPIError(closure_0);
                     closure_129_5(v6OrEarlierAPIError1);
                     if (closure_129_2 != null) {
                       closure_129_2();
@@ -179,7 +203,7 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
             c3 = 0;
             closure_129_3(false);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp67) {
           closure_2 = tmp67;
@@ -252,7 +276,7 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
       tmp20Result = null;
       if (null == obj2.getFieldMessage("password")) {
         const obj9 = { style: tmp.hint, children: obj2.message };
-        tmp20Result = tmp20(tmp21(6360), obj9);
+        tmp20Result = tmp20(tmp21(6357), obj9);
       }
     }
     items3[3] = tmp20Result;
@@ -270,9 +294,4 @@ const map1 = forwardRefResult;
 let result = size.fileFinishedImporting("modules/user_settings/account/native/UserSettingsConfirmPassword.tsx");
 
 export default forwardRefResult;
-export const UserSettingsConfirmPasswordWrapped = function UserSettingsConfirmPasswordWrapped() {
-  const obj = useSettingNavigationRoute;
-  const obj2 = {};
-  const merged = Object.assign(obj.useSettingNavigationRoute().params);
-  return authStore(map1, obj2);
-};
+export const UserSettingsConfirmPasswordWrapped = tmp5;

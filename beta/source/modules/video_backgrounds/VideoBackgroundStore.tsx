@@ -1,17 +1,17 @@
-// Module ID: 9111
-// Function ID: 9112
+// Module ID: 9088
+// Function ID: 9089
 // Name: VideoBackgroundStore
-// Dependencies: [1184, 1220, 1993, 2099, 1372, 4891, 504, 573, 2]
+// Dependencies: [1196, 1232, 1999, 2102, 1378, 4892, 504, 585, 2]
 
-// Module 9111 (VideoBackgroundStore)
+// Module 9088 (VideoBackgroundStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import UserStore from "UserStore" /* 1372 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4892 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1196 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 function handleSyncedStoresUpdate() {

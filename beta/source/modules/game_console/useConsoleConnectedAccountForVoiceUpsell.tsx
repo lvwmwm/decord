@@ -1,24 +1,212 @@
-// Module ID: 16947
-// Function ID: 16948
+// Module ID: 16902
+// Function ID: 16903
 // Name: useConsoleConnectedAccountForVoiceUpsell
-// Dependencies: [5593, 5591, 4853, 8545, 1074, 504, 16948, 2]
-// Exports: default
+// Dependencies: [5594, 5592, 4854, 8542, 1086, 558, 576, 504, 16903, 2]
 
-// Module 16947 (useConsoleConnectedAccountForVoiceUpsell)
-import Constants from "Constants" /* 1074 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 8545 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
-import GameConsoleStore from "GameConsoleStore" /* 4853 */;
+// Module 16902 (useConsoleConnectedAccountForVoiceUpsell)
+import Constants from "Constants" /* 1086 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 8542 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5592 */;
+import GameConsoleStore from "GameConsoleStore" /* 4854 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let account, platform;
+let account;
 
 const CONSOLE_VOICE_PLATFORMS = GameConsoleConstants.CONSOLE_VOICE_PLATFORMS;
 const ActivityTypes = Constants.ActivityTypes;
-const result = size.fileFinishedImporting("modules/game_console/useConsoleConnectedAccountForVoiceUpsell.tsx");
-
-export default function useConsoleConnectedAccountForVoiceUpsell() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let activities;
+  let arr3;
+  let awaitingRemoteSessionInfo;
+  let tmp10;
+  let tmp13;
+  let tmp15;
+  let tmp4;
+  let tmp5;
+  let tmp9;
+  let tmp = arr3;
+  const obj = arr3(576);
+  const cResult = obj.c(10);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SelfPresenceStore];
+    const fn = function c() {
+      return activities.getActivities(true);
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] !== stateFromStores) {
+    let tmp7;
+    const _Symbol = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn2 = function v(platform) {
+        platform = platform.platform;
+        const hasItem = platform.type === constants.PLAYING && null != platform && set.has(platform);
+        return hasItem;
+      };
+      cResult[4] = fn2;
+      tmp7 = fn2;
+    } else {
+      tmp7 = cResult[4];
+    }
+    const found = stateFromStores.filter(tmp7);
+    cResult[2] = stateFromStores;
+    cResult[3] = found;
+    arr3 = found;
+  } else {
+    arr3 = cResult[3];
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [GameConsoleStore];
+    class A {
+      constructor() {
+        const tmp = null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo() || null != awaitingRemoteSessionInfo.getRemoteSessionId();
+        return tmp;
+      }
+    }
+    cResult[5] = items1;
+    cResult[6] = A;
+    tmp10 = A;
+    tmp9 = items1;
+  } else {
+    tmp9 = cResult[5];
+    tmp10 = cResult[6];
+  }
+  const tmpResult3 = tmp(504);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp10);
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [ConnectedAccountsStore];
+    class A {
+      constructor() {
+        const tmp = null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo() || null != awaitingRemoteSessionInfo.getRemoteSessionId();
+        return tmp;
+      }
+    }
+    cResult[7] = items2;
+    tmp13 = items2;
+  } else {
+    tmp13 = cResult[7];
+  }
+  if (cResult[8] !== arr3) {
+    class F {
+      constructor() {
+        mapped = closure_0.map((platform) => {
+          platform = platform.platform;
+          if (null == platform) {
+            return null;
+          } else {
+            const tmp3 = closure_1_1(closure_1_2[8])(platform);
+            account = null;
+            if (null != tmp3) {
+              account = account.getAccount(null, tmp3);
+            }
+            return account;
+          }
+        });
+        return mapped.find((item) => null != item);
+      }
+    }
+    cResult[8] = arr3;
+    class A {
+      constructor() {
+        const tmp = null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo() || null != awaitingRemoteSessionInfo.getRemoteSessionId();
+        return tmp;
+      }
+    }
+    cResult[9] = F;
+    tmp15 = F;
+  } else {
+    class F {
+      constructor() {
+        mapped = closure_0.map((platform) => {
+          platform = platform.platform;
+          if (null == platform) {
+            return null;
+          } else {
+            const tmp3 = closure_1_1(closure_1_2[8])(platform);
+            account = null;
+            if (null != tmp3) {
+              account = account.getAccount(null, tmp3);
+            }
+            return account;
+          }
+        });
+        return mapped.find((item) => null != item);
+      }
+    }
+  }
+  const tmpResult4 = tmp(504);
+  const stateFromStores2 = tmpResult4.useStateFromStores(tmp13, tmp15);
+  if (arr3.length > 0) {
+    class F {
+      constructor() {
+        mapped = closure_0.map((platform) => {
+          platform = platform.platform;
+          if (null == platform) {
+            return null;
+          } else {
+            const tmp3 = closure_1_1(closure_1_2[8])(platform);
+            account = null;
+            if (null != tmp3) {
+              account = account.getAccount(null, tmp3);
+            }
+            return account;
+          }
+        });
+        return mapped.find((item) => null != item);
+      }
+    }
+    if (null != stateFromStores2) {
+      class F {
+        constructor() {
+          mapped = closure_0.map((platform) => {
+            platform = platform.platform;
+            if (null == platform) {
+              return null;
+            } else {
+              const tmp3 = closure_1_1(closure_1_2[8])(platform);
+              account = null;
+              if (null != tmp3) {
+                account = account.getAccount(null, tmp3);
+              }
+              return account;
+            }
+          });
+          return mapped.find((item) => null != item);
+        }
+      }
+      if (!stateFromStores1) {
+        class F {
+          constructor() {
+            mapped = closure_0.map((platform) => {
+              platform = platform.platform;
+              if (null == platform) {
+                return null;
+              } else {
+                const tmp3 = closure_1_1(closure_1_2[8])(platform);
+                account = null;
+                if (null != tmp3) {
+                  account = account.getAccount(null, tmp3);
+                }
+                return account;
+              }
+            });
+            return mapped.find((item) => null != item);
+          }
+        }
+      }
+    }
+  }
+  return null;
+}) : (() => {
   let activities;
   let awaitingRemoteSessionInfo;
   let found;
@@ -44,7 +232,7 @@ export default function useConsoleConnectedAccountForVoiceUpsell() {
       if (null == platform) {
         return null;
       } else {
-        const tmp3 = closure_1_1(closure_1_2[6])(platform);
+        const tmp3 = closure_1_1(closure_1_2[8])(platform);
         account = null;
         if (null != tmp3) {
           account = account.getAccount(null, tmp3);
@@ -65,4 +253,7 @@ export default function useConsoleConnectedAccountForVoiceUpsell() {
     }
   }
   return tmp3;
-};
+});
+const result = size.fileFinishedImporting("modules/game_console/useConsoleConnectedAccountForVoiceUpsell.tsx");
+
+export default tmp2;

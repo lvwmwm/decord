@@ -1,19 +1,21 @@
-// Module ID: 11595
-// Function ID: 11596
+// Module ID: 11481
+// Function ID: 11482
 // Name: NoPermsState
-// Dependencies: [19, 17, 21, 4836, 576, 4685, 4767, 11596, 11597, 11533, 8712, 4832, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4687, 4769, 11482, 11483, 11409, 8707, 1127, 4833, 2]
 
-// Module 11595 (NoPermsState)
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import shared from "shared" /* 4685 */;
-import useThemeDefault from "useTheme" /* 4767 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11533 */;
+// Module 11481 (NoPermsState)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import shared from "shared" /* 4687 */;
+import useThemeDefault from "useTheme" /* 4769 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11409 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -26,23 +28,83 @@ let obj2;
 let obj = { container: obj2, textContainer: { flexShrink: 1 }, image: { width: 64, height: 64 } };
 obj2 = { paddingVertical: 16, paddingHorizontal: 24, gap: 12, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "flex-start", display: "flex", flexDirection: "row" };
 let closure_7 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/NoPermsState.tsx");
-
-export default function EmptyState() {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let items;
+  const obj = react2;
+  const cResult = obj.c(10);
+  const tmp4 = closure_7();
+  const obj2 = shared;
+  const tmp5Result = importDefault(obj2.isThemeLight(useThemeDefault()) ? 11482 : 11483);
+  const tmpResult = AppLauncherNativeUtils;
+  const logAppLauncherEmptyStateView = tmpResult.useLogAppLauncherEmptyStateView(tmp(8707).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  if (cResult[0] === tmp5Result) {
+    let tmp9;
+    let tmp12;
+    let tmp14;
+    if (cResult[1] === tmp4.image) {
+      tmp9 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    const textContainer = tmp4.textContainer;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(intl2.t.uDnXXj);
+      cResult[3] = stringResult;
+      tmp12 = stringResult;
+    } else {
+      tmp12 = cResult[3];
+    }
+    if (cResult[4] !== tmp4.textContainer) {
+      const obj3 = { style: textContainer, variant: "text-sm/medium", color: "text-muted", children: tmp12 };
+      const tmp16 = hasOwnProperty(Text_Text.Text, obj3);
+      cResult[4] = tmp4.textContainer;
+      cResult[5] = tmp16;
+      tmp14 = tmp16;
+    } else {
+      tmp14 = cResult[5];
+    }
+    if (cResult[6] === tmp4.container) {
+      if (cResult[7] === tmp9) {
+        let tmp17;
+        if (cResult[8] === tmp14) {
+          tmp17 = cResult[9];
+        }
+        return tmp17;
+      }
+    }
+    const obj4 = { style: tmp8, children: items };
+    items = [tmp9, tmp14];
+    const tmp20 = metroRequire(_false, obj4);
+    cResult[6] = tmp4.container;
+    cResult[7] = tmp9;
+    cResult[8] = tmp14;
+    cResult[9] = tmp20;
+    tmp17 = tmp20;
+  }
+  const obj5 = { style: tmp4.image, resizeMode: "contain", source: tmp5Result };
+  const tmp10 = hasOwnProperty(React3, obj5);
+  cResult[0] = tmp5Result;
+  cResult[1] = tmp4.image;
+  cResult[2] = tmp10;
+  tmp9 = tmp10;
+}) : (() => {
   let intl;
   let items;
   const tmp = closure_7();
   const obj = shared;
-  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 11596 : 11597);
+  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 11482 : 11483);
   const tmp2Result = AppLauncherNativeUtils;
-  const logAppLauncherEmptyStateView = tmp2Result.useLogAppLauncherEmptyStateView(tmp2(8712).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const logAppLauncherEmptyStateView = tmp2Result.useLogAppLauncherEmptyStateView(tmp2(8707).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   const obj2 = { style: tmp.container, children: items };
   items = [, ];
   const obj3 = { style: tmp.image, resizeMode: "contain", source: tmp4Result };
   items[0] = hasOwnProperty(React3, obj3);
   const obj4 = { style: tmp.textContainer, variant: "text-sm/medium", color: "text-muted", children: intl.string(intl2.t.uDnXXj) };
-  const Text = tmp2(4832).Text;
-  intl = tmp2(1115).intl;
+  const Text = tmp2(4833).Text;
+  intl = tmp2(1127).intl;
   items[1] = hasOwnProperty(Text, obj4);
   return metroRequire(_false, obj2);
-};
+});
+const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/NoPermsState.tsx");
+
+export default tmp5;

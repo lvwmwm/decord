@@ -1,13 +1,13 @@
-// Module ID: 16789
-// Function ID: 16790
+// Module ID: 16791
+// Function ID: 16792
 // Name: updateTheme
-// Dependencies: [17, 1364, 14000, 2]
+// Dependencies: [17, 1370, 14002, 2]
 // Exports: updateTheme
 
-// Module 16789 (updateTheme)
+// Module 16791 (updateTheme)
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import react_nativeDefault from "react-native" /* 14000 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import react_nativeDefault from "react-native" /* 14002 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = react_native.NativeModules;

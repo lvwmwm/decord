@@ -1,13 +1,13 @@
 // Module ID: 6429
 // Function ID: 6430
 // Name: HeaderContainer
-// Dependencies: [19, 17, 21, 5943, 1486, 6430, 6431]
+// Dependencies: [19, 17, 21, 5942, 1492, 6430, 6431]
 // Exports: HeaderContainer
 
 // Module 6429 (HeaderContainer)
 import Fragment from "Fragment" /* 21 */;
-import Link from "Link" /* 1486 */;
-import _mod5943 from "module_5943" /* 5943 */;
+import Link from "Link" /* 1492 */;
+import _mod5942 from "module_5942" /* 5942 */;
 import react_native from "react-native" /* 6430 */;
 import _mod6431 from "module_6431" /* 6431 */;
 import react from "react" /* 19 */;
@@ -29,7 +29,7 @@ export const HeaderContainer = function HeaderContainer(style) {
   ({ mode: require, scenes, layout: dependencyMap, getPreviousScene: react, contentHeight: closure_3, onContentHeightChange: jsx } = style);
   style = style.style;
   const focusedRoute = style.getFocusedRoute();
-  let closure_6 = react.useContext(_mod5943.HeaderBackContext);
+  let closure_6 = react.useContext(_mod5942.HeaderBackContext);
   let obj = Link;
   const buildHref = obj.useLinkBuilder().buildHref;
   let substr = scenes.slice(-2);
@@ -61,7 +61,7 @@ export const HeaderContainer = function HeaderContainer(style) {
               if (tmp7) {
                 const obj2 = { title: obj3.getHeaderTitle(tmp10, route.name), href: buildHref(route.name, route.params) };
                 tmp8 = obj2;
-                obj3 = _mod5943;
+                obj3 = _mod5942;
               }
               tmp9 = tmp8;
             }

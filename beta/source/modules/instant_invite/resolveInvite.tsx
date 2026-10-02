@@ -1,17 +1,17 @@
-// Module ID: 12487
-// Function ID: 12488
+// Module ID: 12489
+// Function ID: 12490
 // Name: resolveInvite
-// Dependencies: [502, 2067, 7155, 1074, 7154, 4818, 1241, 5029, 1249, 2057, 2]
+// Dependencies: [502, 2073, 7159, 1086, 7158, 4819, 1253, 5030, 1261, 2063, 2]
 // Exports: default
 
-// Module 12487 (resolveInvite)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import TypeUtils from "TypeUtils" /* 2057 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5029 */;
+// Module 12489 (resolveInvite)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import TypeUtils from "TypeUtils" /* 2063 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5030 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import Constants_mod from "Constants" /* 7155 */;
-import Constants_mod2 from "Constants" /* 1074 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import Constants_mod from "Constants" /* 7159 */;
+import Constants_mod2 from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,7 +24,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp3;
-const InviteTypeUtils = tmp3(7154);
+const InviteTypeUtils = tmp3(7158);
 let Constants = Constants_mod2;
 ({ InviteTargetTypes: hasOwnProperty, InviteTypes: metroRequire } = Constants);
 Constants = Constants_mod2;
@@ -74,10 +74,10 @@ export default function resolveInvite(inviteKey, _location, inviteInstanceId) {
     }
     const request = { url: closure_7.INVITE(baseCode), query: obj4, oldFormErrors: true, trackedActionData: obj5, rejectWithError: false };
     const tmp12 = closure_7;
-    const get = tmp4(5029).get;
+    const get = tmp4(5030).get;
     TrackedHTTPUtilsDefault;
     obj5 = {
-      event: tmp(1249).NetworkActionNames.INVITE_RESOLVE,
+      event: tmp(1261).NetworkActionNames.INVITE_RESOLVE,
       properties(ok) {
           let STREAM;
           let getGuild;

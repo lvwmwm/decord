@@ -163,7 +163,7 @@ class TTITimer {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ class TTITimer {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -854,8 +854,8 @@ class TTITracker extends TTITrackers {
   setLazyCacheInfo(lazyCacheInfo) {
     this.lazyCacheInfo = lazyCacheInfo;
   }
-  setInterstitial(ChannelSpoiler) {
-    this.interstitial = ChannelSpoiler;
+  setInterstitial(EmptyState) {
+    this.interstitial = EmptyState;
     loggerCallback();
   }
   addLocalMessages(arg0, length) {

@@ -1,19 +1,19 @@
-// Module ID: 567
-// Function ID: 568
+// Module ID: 579
+// Function ID: 580
 // Name: LoggingUtils
-// Dependencies: [4, 568, 569, 2]
+// Dependencies: [4, 580, 581, 2]
 
-// Module 567 (LoggingUtils)
+// Module 579 (LoggingUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
-import _mod568 from "module_568" /* 568 */;
-import navigationStart from "navigationStart" /* 569 */;
+import _mod580 from "module_580" /* 580 */;
+import navigationStart from "navigationStart" /* 581 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const logger = new logger_Logger.Logger("Flux");
-const EventEmitter = _mod568.EventEmitter;
+const EventEmitter = _mod580.EventEmitter;
 class ActionLogger extends EventEmitter {
   constructor(arg0) {
     let obj = arg0;
@@ -43,7 +43,7 @@ class ActionLogger extends EventEmitter {
         const nowResult = _performance.now();
         try {
           const tmp5 = fn();
-          const _performance2 = tmp(569).performance;
+          const _performance2 = tmp(581).performance;
           obj.time = _performance2.now() - nowResult;
           if (self.persist) {
             const traces = closure_0.traces;
@@ -52,7 +52,7 @@ class ActionLogger extends EventEmitter {
           self.emit("trace", action.type, name, obj.time);
           return tmp5;
         } catch (tmp12) {
-          const _performance3 = tmp(569).performance;
+          const _performance3 = tmp(581).performance;
           obj.time = _performance3.now() - nowResult;
           if (self.persist) {
             const traces1 = closure_0.traces;

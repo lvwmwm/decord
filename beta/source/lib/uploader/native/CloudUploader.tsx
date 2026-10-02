@@ -1,16 +1,16 @@
-// Module ID: 7258
-// Function ID: 7259
+// Module ID: 7262
+// Function ID: 7263
 // Name: CloudUploader
-// Dependencies: [5, 1074, 4829, 3, 7259, 7174, 1115, 7260, 5488, 7261, 7262, 5439, 5440, 1427, 12, 2]
+// Dependencies: [5, 1086, 4830, 3, 7263, 7178, 1127, 7264, 5489, 7265, 7266, 5440, 5441, 1433, 12, 2]
 
-// Module 7258 (CloudUploader)
+// Module 7262 (CloudUploader)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import MessageConstants from "MessageConstants" /* 4829 */;
-import Upload from "Upload" /* 5440 */;
+import MessageConstants from "MessageConstants" /* 4830 */;
+import Upload from "Upload" /* 5441 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1074 */;
-import UploaderBase from "UploaderBase" /* 7259 */;
+import Constants from "Constants" /* 1086 */;
+import UploaderBase from "UploaderBase" /* 7263 */;
 import size from "module_2" /* 2 */;
 
 let _self, c2, c4, closure_0, constants, logger, set, uri;
@@ -54,7 +54,7 @@ class CloudUploader extends UploaderBase {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp57;
@@ -97,7 +97,7 @@ class CloudUploader extends UploaderBase {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -138,7 +138,7 @@ class CloudUploader extends UploaderBase {
                         obj.endBackgroundTask(_aborted);
                       }
                       c2 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp12) {
                     c2 = 3;
@@ -284,7 +284,7 @@ class CloudUploader extends UploaderBase {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -391,12 +391,12 @@ class CloudUploader extends UploaderBase {
               } else {
                 c3 = 0;
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               }
             }
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp57) {
           closure_2 = tmp57;
           if (0 === c3) {
@@ -437,7 +437,7 @@ class CloudUploader extends UploaderBase {
     let mediaEventSubscriptions = this.mediaEventSubscriptions;
     const id = this._file.id;
     set = mediaEventSubscriptions.set;
-    const obj = self(1427);
+    const obj = self(1433);
     let result = set(id, obj.onCompressionProgress((uri) => {
       uri = uri.uri;
       const uploadItems = self.uploadItems;

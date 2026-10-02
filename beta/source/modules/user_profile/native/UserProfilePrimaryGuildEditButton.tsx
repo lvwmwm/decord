@@ -1,18 +1,18 @@
-// Module ID: 14197
-// Function ID: 14198
+// Module ID: 14185
+// Function ID: 14186
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 2067, 7386, 21, 4836, 576, 504, 14198, 7610, 7609, 1115, 1364, 4832, 14175, 4800, 14199, 1981, 5896, 9205, 2]
+// Dependencies: [19, 2073, 7390, 21, 4837, 588, 504, 14186, 7614, 7613, 1127, 1370, 4833, 14163, 4801, 14187, 1987, 5893, 9171, 2]
 // Exports: default
 
-// Module 14197 (UserProfilePrimaryGuildEditButton)
+// Module 14185 (UserProfilePrimaryGuildEditButton)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import GuildTagConstants from "GuildTagConstants" /* 7386 */;
+import nativeDefault from "native" /* 588 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import GuildTagConstants from "GuildTagConstants" /* 7390 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import createStyles from "createStyles" /* 4836 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -140,7 +140,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     return <UserProfileEditFormButton label={intl2.string(pendingPrimaryGuildId(handleSelectPrimaryGuild[10]).t["DUD+5n"])} buttonText={name} accessibilityValue={obj5} onPress={function onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild };
-      obj.openLazy(asyncRequire(14199, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
+      obj.openLazy(asyncRequire(14187, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
     }} leading={tmp23Result} trailing={tmp23Result2} disabled={disabled} />;
   }
   return null;

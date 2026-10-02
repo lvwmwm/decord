@@ -1,16 +1,16 @@
-// Module ID: 1389
-// Function ID: 1390
+// Module ID: 1395
+// Function ID: 1396
 // Name: DisplayNameStylesUtils
-// Dependencies: [32, 1390, 1391, 672, 1092, 1392, 2]
+// Dependencies: [32, 1396, 1397, 684, 1104, 1398, 2]
 // Exports: applyFlywheelViewingFallback, buildGummyColors, doesEffectImpactLayout, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, isSolidPresetColor, parseServerDisplayNameStyles, rebuildGummySourceColor, resolveSolidColor, resolveSolidPresetSeed, wrapHue
 
-// Module 1389 (DisplayNameStylesUtils)
-import _modDef672 from "module_672" /* 672 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1391 */;
-import DisplayNameFont from "DisplayNameFont" /* 1392 */;
+// Module 1395 (DisplayNameStylesUtils)
+import _modDef684 from "module_684" /* 684 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1397 */;
+import DisplayNameFont from "DisplayNameFont" /* 1398 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1390 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1396 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,12 +52,12 @@ export const resolveSolidPresetSeed = function resolveSolidPresetSeed(selectedCo
   }
   return first;
 };
-export const getEffectColorCount = function getEffectColorCount(effectId) {
-  if (DisplayNameEffect.DisplayNameEffect.GRADIENT === effectId) {
+export const getEffectColorCount = function getEffectColorCount(selectedEffectId) {
+  if (DisplayNameEffect.DisplayNameEffect.GRADIENT === selectedEffectId) {
     return 2;
-  } else if (DisplayNameEffect.DisplayNameEffect.GUMMY === effectId) {
+  } else if (DisplayNameEffect.DisplayNameEffect.GUMMY === selectedEffectId) {
     return 4;
-  } else if (DisplayNameEffect.DisplayNameEffect.PRISM === effectId) {
+  } else if (DisplayNameEffect.DisplayNameEffect.PRISM === selectedEffectId) {
     return 5;
   } else {
     return 1;
@@ -73,7 +73,7 @@ export const generateColorVariants = function generateColorVariants(displayNameS
   let result3;
   let result4;
   let result6;
-  const obj = _modDef672(displayNameStylesAccessibleColors);
+  const obj = _modDef684(displayNameStylesAccessibleColors);
   const alphaResult = obj.alpha(1);
   const value = alphaResult.get("hsl.l");
   const bound = Math.min(1, 1.2 * alphaResult.get("hsl.s"));
@@ -97,7 +97,7 @@ export const buildGummyColors = function buildGummyColors(color) {
   let first;
   let tmp5;
   let tmp6;
-  const tmp = _modDef672;
+  const tmp = _modDef684;
   let obj = require("utils/ColorUtils");
   const tmpResult = tmp(obj.int2hex(color));
   [first, tmp5, tmp6] = tmpResult.hsl();
@@ -113,7 +113,7 @@ export const buildGummyColors = function buildGummyColors(color) {
     let lightness;
     let saturation;
     ({ hueShift, saturation, lightness } = item);
-    const obj = _modDef672;
+    const obj = _modDef684;
     const hslResult = obj.hsl(((closure_0 + hueShift) % 360 + 360) % 360, saturation, lightness);
     return hslResult.num();
   });
@@ -124,11 +124,11 @@ export const rebuildGummySourceColor = function rebuildGummySourceColor(selected
   let tmp18;
   const first = selectedColors[0];
   if (null == first) {
-    const obj3 = _modDef672;
+    const obj3 = _modDef684;
     const hslResult = obj3.hsl(0, hasOwnProperty, React3);
     return hslResult.num();
   } else {
-    const tmp12 = _modDef672;
+    const tmp12 = _modDef684;
     const obj5 = utils_ColorUtils;
     const tmp12Result = tmp12(obj5.int2hex(first));
     [first1, tmp17, tmp18] = tmp12Result.hsl();
@@ -141,13 +141,13 @@ export const rebuildGummySourceColor = function rebuildGummySourceColor(selected
     }
     const items = [num, tmp17, tmp18];
     const result = (tmp14(items, 1)[0] - items1[0].hueShift) % 360;
-    const tmp10Result = tmp10(672);
+    const tmp10Result = tmp10(684);
     const hslResult1 = tmp10Result.hsl((result + 360) % 360, hasOwnProperty, React3);
     return hslResult1.num();
   }
 };
 export const hueToGummyColor = function hueToGummyColor(sharedValue) {
-  const obj = _modDef672;
+  const obj = _modDef684;
   const hslResult = obj.hsl(sharedValue, hasOwnProperty, React3);
   return hslResult.num();
 };

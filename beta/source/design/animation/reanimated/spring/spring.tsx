@@ -1,17 +1,17 @@
-// Module ID: 5280
-// Function ID: 5281
+// Module ID: 5281
+// Function ID: 5282
 // Name: spring
-// Dependencies: [4838, 4839, 4566, 2]
+// Dependencies: [4839, 4840, 4570, 2]
 // Exports: withSpring
 
-// Module 5280 (spring)
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import ReanimatedConstants from "ReanimatedConstants" /* 4838 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 4839 */;
+// Module 5281 (spring)
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import ReanimatedConstants from "ReanimatedConstants" /* 4839 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 4840 */;
 import size from "module_2" /* 2 */;
 
 const CONFIG_NEVER_ANIMATE = ReanimatedConstants.CONFIG_NEVER_ANIMATE;
-function withSpring(targetHeight, SUBTLE_SPRING, fn, fn2) {
+function withSpring(value, SUBTLE_SPRING, fn, fn2) {
   let tmp5;
   let str = fn;
   if (fn === undefined) {
@@ -34,7 +34,7 @@ function withSpring(targetHeight, SUBTLE_SPRING, fn, fn2) {
     tmp5 = CONFIG_NEVER_ANIMATE;
   }
   const tmpResult = ReanimatedRexport;
-  return tmpResult.withSpring(targetHeight, tmp5, fn2);
+  return tmpResult.withSpring(value, tmp5, fn2);
 }
 let obj = { accessibilityPreferencesSharedValue: reanimated_AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue, CONFIG_NEVER_ANIMATE, ReduceMotion: ReanimatedRexport.ReduceMotion, REAwithSpring: ReanimatedRexport.withSpring };
 withSpring.__closure = obj;

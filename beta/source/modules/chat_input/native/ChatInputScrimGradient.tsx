@@ -1,28 +1,173 @@
-// Module ID: 11743
-// Function ID: 11744
+// Module ID: 11636
+// Function ID: 11637
 // Name: ChatInputScrimGradient
-// Dependencies: [19, 17, 21, 4652, 4531, 576, 1092, 5293, 2]
-// Exports: ChatInputScrimGradient, useChatInputFloatingOverlayStyle
+// Dependencies: [19, 17, 21, 558, 576, 4654, 4535, 588, 1104, 5292, 2]
 
-// Module 11743 (ChatInputScrimGradient)
+// Module 11636 (ChatInputScrimGradient)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import useToken2 from "useToken" /* 4531 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4652 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
+import useToken2 from "useToken" /* 4535 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4654 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
-let tmp4;
-const LinearGradientDefault = tmp4(5293);
+let tmp6;
+const LinearGradientDefault = tmp6(5292);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let result = size.fileFinishedImporting("modules/chat_input/native/ChatInputScrimGradient.tsx");
-
-export const ChatInputScrimGradient = function ChatInputScrimGradient(scrimBase) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let gradientHeight;
+  let inline;
+  let items1;
+  let obj4;
+  let result;
+  let scrimBase;
+  let tmp11;
+  let tmp14;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(23);
+  ({ gradientHeight, inline, scrimBase } = arg0);
+  const tmp4 = undefined !== inline && inline;
+  const tmpResult = client_themes_ClientThemesUtils;
+  const gradientValue = tmpResult.useGradientValue(tmp(4654).GradientPercentage.END);
+  const tmpResult5 = useToken2;
+  const token = tmpResult5.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER);
+  const useToken = useToken2.useToken;
+  useToken2;
+  if (gradientHeight == null) {
+    gradientHeight = useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_SCRIM_GRADIENT_HEIGHT);
+  }
+  if (scrimBase == null) {
+    scrimBase = gradientValue;
+  }
+  if (scrimBase == null) {
+    scrimBase = token;
+  }
+  if (cResult[0] !== scrimBase) {
+    const tmpResult7 = utils_ColorUtils;
+    let hex2rgbResult = tmpResult7.hex2rgb(scrimBase, 1);
+    if (hex2rgbResult == null) {
+      hex2rgbResult = scrimBase;
+    }
+    cResult[0] = scrimBase;
+    cResult[1] = hex2rgbResult;
+    tmp9 = hex2rgbResult;
+  } else {
+    tmp9 = cResult[1];
+  }
+  if (cResult[2] !== scrimBase) {
+    const tmpResult8 = utils_ColorUtils;
+    let str = tmpResult8.hex2rgb(scrimBase, 0);
+    if (str == null) {
+      str = "transparent";
+    }
+    cResult[2] = scrimBase;
+    cResult[3] = str;
+    tmp11 = str;
+  } else {
+    tmp11 = cResult[3];
+  }
+  if (tmp4) {
+    result = tmp12;
+  } else {
+    result = tmp12 / 2;
+  }
+  if (cResult[4] !== result) {
+    const rect = { position: "absolute", top: result, left: 0, right: 0, bottom: 0 };
+    cResult[4] = result;
+    cResult[5] = rect;
+    tmp14 = rect;
+  } else {
+    tmp14 = cResult[5];
+  }
+  if (cResult[6] === tmp9) {
+    let tmp15;
+    let tmp16;
+    let tmp20;
+    let tmp19;
+    let tmp18;
+    if (cResult[7] === tmp11) {
+      tmp15 = cResult[8];
+    }
+    if (cResult[9] !== gradientHeight) {
+      const obj2 = { height: gradientHeight };
+      cResult[9] = gradientHeight;
+      cResult[10] = obj2;
+      tmp16 = obj2;
+    } else {
+      tmp16 = cResult[10];
+    }
+    const _Symbol = Symbol;
+    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+      const point = { x: 0, y: 0 };
+      const point1 = { x: 0, y: 1 };
+      const items = [0, 1];
+      cResult[11] = point;
+      cResult[12] = point1;
+      cResult[13] = items;
+      tmp20 = items;
+      tmp19 = point1;
+      tmp18 = point;
+    } else {
+      tmp18 = cResult[11];
+      tmp19 = cResult[12];
+      tmp20 = cResult[13];
+    }
+    if (cResult[14] === tmp15) {
+      let tmp21;
+      let tmp24;
+      if (cResult[15] === tmp16) {
+        tmp21 = cResult[16];
+      }
+      if (cResult[17] !== tmp9) {
+        const obj3 = { style: obj4 };
+        obj4 = { flex: 1, backgroundColor: tmp9 };
+        const tmp27 = React3(View, obj3);
+        cResult[17] = tmp9;
+        cResult[18] = tmp27;
+        tmp24 = tmp27;
+      } else {
+        tmp24 = cResult[18];
+      }
+      if (cResult[19] === tmp21) {
+        if (cResult[20] === tmp24) {
+          let tmp28;
+          if (cResult[21] === tmp14) {
+            tmp28 = cResult[22];
+          }
+          return tmp28;
+        }
+      }
+      const obj5 = { style: tmp14, pointerEvents: "none", children: items1 };
+      items1 = [tmp21, tmp24];
+      const tmp31 = hasOwnProperty(View, obj5);
+      cResult[19] = tmp21;
+      cResult[20] = tmp24;
+      cResult[21] = tmp14;
+      cResult[22] = tmp31;
+      tmp28 = tmp31;
+    }
+    const obj6 = { colors: tmp15, style: tmp16, start: tmp18, end: tmp19, locations: tmp20 };
+    const tmp23 = React3(LinearGradientDefault, obj6);
+    cResult[14] = tmp15;
+    cResult[15] = tmp16;
+    cResult[16] = tmp23;
+    tmp21 = tmp23;
+  }
+  const items2 = [tmp11, tmp9];
+  cResult[6] = tmp9;
+  cResult[7] = tmp11;
+  cResult[8] = items2;
+  tmp15 = items2;
+}) : ((scrimBase) => {
   let gradientHeight;
   let inline;
   let items;
@@ -71,10 +216,30 @@ export const ChatInputScrimGradient = function ChatInputScrimGradient(scrimBase)
   const obj5 = { style: { flex: 1, backgroundColor: hex2rgbResult } };
   items1[1] = React3(View, obj5);
   return tmp8(View, obj3);
-};
-export const useChatInputFloatingOverlayStyle = function useChatInputFloatingOverlayStyle() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp3;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const obj2 = useToken2;
+  const result = -obj2.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_SCRIM_GRADIENT_HEIGHT) / 2;
+  if (cResult[0] !== result) {
+    const obj3 = { marginTop: result, overflow: "visible" };
+    cResult[0] = result;
+    cResult[1] = obj3;
+    tmp3 = obj3;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return tmp3;
+}) : (() => {
   let obj2;
   const obj = { marginTop: -obj2.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_SCRIM_GRADIENT_HEIGHT) / 2, overflow: "visible" };
   obj2 = useToken2;
   return obj;
-};
+});
+let result = size.fileFinishedImporting("modules/chat_input/native/ChatInputScrimGradient.tsx");
+
+export const ChatInputScrimGradient = tmp4;
+export const useChatInputFloatingOverlayStyle = tmp5;

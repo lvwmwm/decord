@@ -1,21 +1,47 @@
-// Module ID: 17443
-// Function ID: 17444
+// Module ID: 17445
+// Function ID: 17446
 // Name: ApplicationIdentityLinkedRolesExperiment
-// Dependencies: [4748, 2]
-// Exports: useApplicationIdentityLinkedRolesEnabled
+// Dependencies: [4750, 558, 576, 2]
 
-// Module 17443 (ApplicationIdentityLinkedRolesExperiment)
-import createExperiment from "module_4748" /* 4748 */;
+// Module 17445 (ApplicationIdentityLinkedRolesExperiment)
+import react from "react" /* 576 */;
+import createExperiment from "module_4750" /* 4750 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let items;
 let obj = { kind: "guild", id: "2026-04_application_identity_linked_roles", label: "Application Identity Linked Roles", defaultConfig: { enabled: false }, treatments: items };
 items = [{ id: 1, label: "Enable Application Identity Linked Roles", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location) => {
+  const obj = react;
+  const cResult = obj.c(4);
+  if (cResult[0] === guildId) {
+    let tmp2;
+    let tmp4;
+    if (cResult[1] === location) {
+      tmp2 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { autoTrackExposure: false };
+      cResult[3] = obj2;
+      tmp4 = obj2;
+    } else {
+      tmp4 = cResult[3];
+    }
+    return experiment.useExperiment(tmp2, tmp4).enabled;
+  }
+  const obj3 = { guildId, location };
+  cResult[0] = guildId;
+  cResult[1] = location;
+  cResult[2] = obj3;
+  tmp2 = obj3;
+}) : ((guildId, location) => {
+  const obj = { guildId, location };
+  return experiment.useExperiment(obj, { autoTrackExposure: false }).enabled;
+});
 const result = size.fileFinishedImporting("modules/connections/experiments/ApplicationIdentityLinkedRolesExperiment.tsx");
 
 export const ApplicationIdentityLinkedRolesExperiment = experiment;
-export const useApplicationIdentityLinkedRolesEnabled = function useApplicationIdentityLinkedRolesEnabled(guildId, location) {
-  const obj = { guildId, location };
-  return experiment.useExperiment(obj, { autoTrackExposure: false }).enabled;
-};
+export const useApplicationIdentityLinkedRolesEnabled = tmp3;

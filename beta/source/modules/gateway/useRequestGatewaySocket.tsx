@@ -1,33 +1,68 @@
-// Module ID: 14121
-// Function ID: 14122
+// Module ID: 14123
+// Function ID: 14124
 // Name: useRequestGatewaySocket
-// Dependencies: [19, 10704, 7176, 2]
-// Exports: useRequestGatewaySocket
+// Dependencies: [19, 558, 576, 9786, 7180, 2]
 
-// Module 14121 (useRequestGatewaySocket)
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7176 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 10704 */;
+// Module 14123 (useRequestGatewaySocket)
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7180 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let importDefault;
+const require = globalThis.__r;
+let _require;
 
-const result = size.fileFinishedImporting("modules/gateway/useRequestGatewaySocket.tsx");
-
-export const useRequestGatewaySocket = function useRequestGatewaySocket(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let canUIRequestGatewaySocket;
   let closure_0;
-  importDefault = arg0;
-  let obj = DiscordAppStateDefault;
-  const canUIRequestGatewaySocket = obj.useCanUIRequestGatewaySocket();
+  _require = arg0;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  const obj2 = canUIRequestGatewaySocket(9786);
+  canUIRequestGatewaySocket = obj2.useCanUIRequestGatewaySocket();
+  if (cResult[0] === canUIRequestGatewaySocket) {
+    let tmp3;
+    let tmp4;
+    if (cResult[1] === arg0) {
+      tmp3 = cResult[2];
+      tmp4 = cResult[3];
+    }
+    const effect = react.useEffect(tmp3, tmp4);
+  }
+  const fn = function u() {
+    if (canUIRequestGatewaySocket) {
+      let obj = RequestGatewaySocketAll;
+      obj.setRequestedBy(closure_0);
+      return () => {
+        const obj = RequestGatewaySocketAll;
+        obj.stopRequest(closure_1_0);
+      };
+    }
+  };
+  const items = [arg0, canUIRequestGatewaySocket];
+  cResult[0] = canUIRequestGatewaySocket;
+  cResult[1] = arg0;
+  cResult[2] = fn;
+  cResult[3] = items;
+  tmp4 = items;
+  tmp3 = fn;
+}) : ((arg0) => {
+  let canUIRequestGatewaySocket;
+  let closure_0 = arg0;
+  let obj = canUIRequestGatewaySocket(9786);
+  canUIRequestGatewaySocket = obj.useCanUIRequestGatewaySocket();
   const items = [arg0, canUIRequestGatewaySocket];
   const effect = react.useEffect(() => {
     if (canUIRequestGatewaySocket) {
       let obj = RequestGatewaySocketAll;
       obj.setRequestedBy(closure_0);
       return () => {
-        const obj = canUIRequestGatewaySocket(dependencyMap[2]);
+        const obj = RequestGatewaySocketAll;
         obj.stopRequest(closure_1_0);
       };
     }
   }, items);
-};
+});
+const result = size.fileFinishedImporting("modules/gateway/useRequestGatewaySocket.tsx");
+
+export const useRequestGatewaySocket = tmp2;

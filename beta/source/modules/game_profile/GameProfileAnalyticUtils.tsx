@@ -1,15 +1,15 @@
-// Module ID: 8139
-// Function ID: 8140
+// Module ID: 8125
+// Function ID: 8126
 // Name: GameProfileAnalyticUtils
-// Dependencies: [7784, 1074, 7806, 1255, 1241, 2]
+// Dependencies: [7788, 1086, 7810, 1267, 1253, 2]
 // Exports: generateViewId, getGuildIdAndVerifiedFromInvite, trackGameProfileAction, trackGameProfileClose, trackGameProfileEmbedAction, trackGameProfileFeedback, trackGameProfileOpen
 
-// Module 8139 (GameProfileAnalyticUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import v1 from "v1" /* 1255 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 7806 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 7784 */;
-import Constants from "Constants" /* 1074 */;
+// Module 8125 (GameProfileAnalyticUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import v1 from "v1" /* 1267 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 7810 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 7788 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

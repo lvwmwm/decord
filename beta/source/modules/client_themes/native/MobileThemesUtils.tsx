@@ -1,19 +1,20 @@
-// Module ID: 4764
-// Function ID: 4765
+// Module ID: 4766
+// Function ID: 4767
 // Name: MobileThemesUtils
-// Dependencies: [1182, 4765, 1227, 1229, 1115, 2717, 1230, 4766, 504, 2]
-// Exports: getAllMobileThemes, getCustomBackgroundGradient, useAllMobileThemes, useCustomBackgroundGradient, usePerModeCustomBackgroundGradient, useSavedCustomTheme
+// Dependencies: [1194, 4767, 1239, 1241, 1127, 2720, 1242, 558, 576, 4768, 504, 2]
+// Exports: getAllMobileThemes, getCustomBackgroundGradient
 
-// Module 4764 (MobileThemesUtils)
-import get_initialized from "get initialized" /* 504 */;
-import intl2 from "intl" /* 1115 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1230 */;
-import _modDef2717 from "module_2717" /* 2717 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4766 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
-import SavedCustomThemeStore from "SavedCustomThemeStore" /* 4765 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1227 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1229 */;
+// Module 4766 (MobileThemesUtils)
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1242 */;
+import _modDef2720 from "module_2720" /* 2720 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4768 */;
+import ThemeStore from "ThemeStore" /* 1194 */;
+import SavedCustomThemeStore from "SavedCustomThemeStore" /* 4767 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1239 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1241 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,36 +22,207 @@ let _require;
 
 let metroImportDefault;
 let metroRequire;
-const f79308 = () => {
-  if (null == mode) {
-    return null;
-  } else {
-    const syncedClientTheme = ThemeStore.getSyncedClientTheme(tmp);
-    let prop;
-    const obj2 = ThemeStore;
-    if (syncedClientTheme != null) {
-      prop = syncedClientTheme.customUserThemeSettings;
-    }
-    let tmp3 = null;
-    if (null != prop) {
-      tmp3 = null;
-      if (0 !== prop.colors.length) {
-        tmp3 = { type: ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName, theme: obj2.themePreferenceForSystemTheme(mode), customThemeSettings: prop };
-        const obj = { type: ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName, theme: obj2.themePreferenceForSystemTheme(mode), customThemeSettings: prop };
-      }
-    }
-    return tmp3;
-  }
-};
-const f79309 = () => savedCustomTheme.getSavedCustomTheme();
+let tmp;
+const get_initialized = tmp(504);
 function getCustomThemesName() {
   const intl = intl2.intl;
-  return intl.string(_modDef2717.yl1iMm);
+  return intl.string(_modDef2720.yl1iMm);
 }
 ({ BACKGROUND_GRADIENT_PRESETS_MOBILE: metroRequire, REFRESH_STANDARD_BACKGROUND_THEMES: metroImportDefault } = ClientThemesConstants);
-const result = size.fileFinishedImporting("modules/client_themes/native/MobileThemesUtils.tsx");
-
-export const getCustomBackgroundGradient = function getCustomBackgroundGradient() {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const obj = react;
+  const cResult = obj.c(3);
+  const obj2 = useCustomThemeDisplaySettings;
+  const customThemeDisplaySettings = obj2.useCustomThemeDisplaySettings(arg0);
+  let tmp5 = null;
+  if (undefined !== customThemeDisplaySettings) {
+    if (cResult[0] === customThemeDisplaySettings.baseTheme) {
+      let tmp6;
+      if (cResult[1] === customThemeDisplaySettings.customTheme) {
+        tmp6 = cResult[2];
+      }
+      tmp5 = tmp6;
+    }
+    const obj4 = { type: ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName, theme: null, customThemeSettings: null };
+    ({ baseTheme: obj3.theme, customTheme: obj3.customThemeSettings } = customThemeDisplaySettings);
+    cResult[0] = customThemeDisplaySettings.baseTheme;
+    cResult[1] = customThemeDisplaySettings.customTheme;
+    cResult[2] = obj4;
+    tmp6 = obj4;
+  }
+  return tmp5;
+}) : ((arg0) => {
+  const obj = useCustomThemeDisplaySettings;
+  const customThemeDisplaySettings = obj.useCustomThemeDisplaySettings(arg0);
+  let tmp4 = null;
+  if (undefined !== customThemeDisplaySettings) {
+    ({ baseTheme: obj2.theme, customTheme: obj2.customThemeSettings } = customThemeDisplaySettings);
+    tmp4 = { type: ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName, theme: null, customThemeSettings: null };
+    const obj3 = { type: ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName, theme: null, customThemeSettings: null };
+  }
+  return tmp4;
+});
+let closure_9 = tmp3;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  _require = arg0;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ThemeStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      if (null == closure_0) {
+        return null;
+      } else {
+        const syncedClientTheme = ThemeStore.getSyncedClientTheme(tmp);
+        let prop;
+        const obj2 = ThemeStore;
+        if (syncedClientTheme != null) {
+          prop = syncedClientTheme.customUserThemeSettings;
+        }
+        let tmp3 = null;
+        if (null != prop) {
+          tmp3 = null;
+          if (0 !== prop.colors.length) {
+            tmp3 = { type: ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName, theme: obj2.themePreferenceForSystemTheme(closure_0), customThemeSettings: prop };
+            const obj = { type: ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName, theme: obj2.themePreferenceForSystemTheme(closure_0), customThemeSettings: prop };
+          }
+        }
+        return tmp3;
+      }
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  let obj = require("get initialized");
+  const items = [ThemeStore];
+  return obj.useStateFromStores(items, () => {
+    if (null == closure_0) {
+      return null;
+    } else {
+      const syncedClientTheme = ThemeStore.getSyncedClientTheme(tmp);
+      let prop;
+      const obj2 = ThemeStore;
+      if (syncedClientTheme != null) {
+        prop = syncedClientTheme.customUserThemeSettings;
+      }
+      let tmp3 = null;
+      if (null != prop) {
+        tmp3 = null;
+        if (0 !== prop.colors.length) {
+          tmp3 = { type: ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName, theme: obj2.themePreferenceForSystemTheme(closure_0), customThemeSettings: prop };
+          const obj = { type: ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName, theme: obj2.themePreferenceForSystemTheme(closure_0), customThemeSettings: prop };
+        }
+      }
+      return tmp3;
+    }
+  });
+});
+let closure_10 = tmp4;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp4;
+  const obj = react;
+  const cResult = obj.c(2);
+  let tmp3 = closure_9(closure_11());
+  if (null != arg0) {
+    tmp3 = closure_10(arg0);
+  }
+  if (cResult[0] !== tmp3) {
+    let items1;
+    if (null != tmp3) {
+      const items = [];
+      const arraySpreadResult = HermesBuiltin.arraySpread(items, metroImportDefault, 0);
+      items[arraySpreadResult] = tmp3;
+      HermesBuiltin.arraySpread(items, metroRequire, arraySpreadResult + 1);
+      items1 = items;
+    } else {
+      items1 = [];
+      HermesBuiltin.arraySpread(items1, metroRequire, HermesBuiltin.arraySpread(items1, metroImportDefault, 0));
+    }
+    cResult[0] = tmp3;
+    cResult[1] = items1;
+    tmp4 = items1;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : ((arg0) => {
+  let items1;
+  let tmp2 = closure_9(closure_11());
+  if (null != arg0) {
+    tmp2 = closure_10(arg0);
+  }
+  if (null != tmp2) {
+    const items = [];
+    const arraySpreadResult = HermesBuiltin.arraySpread(items, metroImportDefault, 0);
+    items[arraySpreadResult] = tmp2;
+    HermesBuiltin.arraySpread(items, metroRequire, arraySpreadResult + 1);
+    items1 = items;
+  } else {
+    items1 = [];
+    HermesBuiltin.arraySpread(items1, metroRequire, HermesBuiltin.arraySpread(items1, metroImportDefault, 0));
+  }
+  return items1;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let savedCustomTheme;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SavedCustomThemeStore];
+    const fn = function s() {
+      return savedCustomTheme.getSavedCustomTheme();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  let tmp8 = null;
+  if (null != stateFromStores) {
+    tmp8 = stateFromStores;
+  }
+  return tmp8;
+}) : (() => {
+  let savedCustomTheme;
+  const items = [SavedCustomThemeStore];
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => savedCustomTheme.getSavedCustomTheme());
+  let tmp2 = null;
+  if (null != stateFromStores) {
+    tmp2 = stateFromStores;
+  }
+  return tmp2;
+});
+let closure_11 = tmp6;
+function getCustomBackgroundGradient() {
   const customThemeDisplaySettings = CustomThemeMobileStore.getCustomThemeDisplaySettings();
   let tmp2 = null;
   if (undefined !== customThemeDisplaySettings) {
@@ -59,25 +231,12 @@ export const getCustomBackgroundGradient = function getCustomBackgroundGradient(
     tmp2 = obj;
   }
   return tmp2;
-};
-export const useCustomBackgroundGradient = function useCustomBackgroundGradient(stateFromStores) {
-  const obj = useCustomThemeDisplaySettings;
-  const customThemeDisplaySettings = obj.useCustomThemeDisplaySettings(stateFromStores);
-  let tmp4 = null;
-  if (undefined !== customThemeDisplaySettings) {
-    ({ baseTheme: obj2.theme, customTheme: obj2.customThemeSettings } = customThemeDisplaySettings);
-    tmp4 = { type: ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName, theme: null, customThemeSettings: null };
-    const obj3 = { type: ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName, theme: null, customThemeSettings: null };
-  }
-  return tmp4;
-};
-export const usePerModeCustomBackgroundGradient = function usePerModeCustomBackgroundGradient(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [ThemeStore];
-  const obj = require("get initialized");
-  return obj.useStateFromStores(items, f79308);
-};
+}
+const result = size.fileFinishedImporting("modules/client_themes/native/MobileThemesUtils.tsx");
+
+export { getCustomBackgroundGradient };
+export const useCustomBackgroundGradient = tmp3;
+export const usePerModeCustomBackgroundGradient = tmp4;
 export const getAllMobileThemes = function getAllMobileThemes() {
   let items1;
   const customThemeDisplaySettings = CustomThemeMobileStore.getCustomThemeDisplaySettings();
@@ -99,50 +258,5 @@ export const getAllMobileThemes = function getAllMobileThemes() {
   }
   return items1;
 };
-export const useAllMobileThemes = function useAllMobileThemes(mode) {
-  let items3;
-  let savedCustomTheme;
-  let tmp3 = dependencyMap;
-  let obj = require("get initialized");
-  const items = [SavedCustomThemeStore];
-  const stateFromStores = obj.useStateFromStores(items, f79309);
-  let tmp5 = null;
-  if (null != stateFromStores) {
-    tmp5 = stateFromStores;
-  }
-  const tmp2Result = require("useCustomThemeDisplaySettings");
-  const customThemeDisplaySettings = tmp2Result.useCustomThemeDisplaySettings(tmp5);
-  let stateFromStores1 = null;
-  if (undefined !== customThemeDisplaySettings) {
-    let obj2 = { type: require("ClientThemesTypes").ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName, theme: null, customThemeSettings: null };
-    ({ baseTheme: obj3.theme, customTheme: obj3.customThemeSettings } = customThemeDisplaySettings);
-    stateFromStores1 = obj2;
-  }
-  _require = mode;
-  const items1 = [ThemeStore];
-  const tmp2Result2 = require("get initialized");
-  if (null != mode) {
-    stateFromStores1 = tmp2Result2.useStateFromStores(items1, f79308);
-  }
-  if (null != stateFromStores1) {
-    const items2 = [];
-    const arraySpreadResult = HermesBuiltin.arraySpread(items2, closure_7, 0);
-    items2[arraySpreadResult] = stateFromStores1;
-    HermesBuiltin.arraySpread(items2, closure_6, arraySpreadResult + 1);
-    items3 = items2;
-  } else {
-    items3 = [];
-    HermesBuiltin.arraySpread(items3, closure_6, HermesBuiltin.arraySpread(items3, closure_7, 0));
-  }
-  return items3;
-};
-export const useSavedCustomTheme = function useSavedCustomTheme() {
-  const items = [SavedCustomThemeStore];
-  const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f79309);
-  let tmp2 = null;
-  if (null != stateFromStores) {
-    tmp2 = stateFromStores;
-  }
-  return tmp2;
-};
+export const useAllMobileThemes = tmp5;
+export const useSavedCustomTheme = tmp6;

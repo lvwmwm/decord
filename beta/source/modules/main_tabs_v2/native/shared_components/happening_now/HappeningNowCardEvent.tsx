@@ -1,22 +1,24 @@
-// Module ID: 15720
-// Function ID: 15721
+// Module ID: 15717
+// Function ID: 15718
 // Name: HappeningNowCardEvent
-// Dependencies: [19, 17, 2112, 1372, 14841, 1074, 21, 4836, 576, 1177, 8276, 504, 6729, 8946, 9071, 1241, 9080, 1397, 9070, 14842, 5403, 4832, 1882, 1115, 2]
+// Dependencies: [19, 17, 2115, 1378, 14829, 1086, 21, 4837, 588, 1189, 8273, 558, 576, 504, 6730, 8941, 9048, 1253, 9057, 1403, 9047, 5404, 4833, 1888, 14830, 1127, 2]
 
-// Module 15720 (HappeningNowCardEvent)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import native from "native" /* 1177 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ClipView from "ClipView" /* 8276 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9080 */;
+// Module 15717 (HappeningNowCardEvent)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import native from "native" /* 1189 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ClipView from "ClipView" /* 8273 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9057 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import UserStore from "UserStore" /* 1372 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 14841 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import UserStore from "UserStore" /* 1378 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 14829 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let event;
@@ -53,7 +55,31 @@ obj5 = { width: native.AVATAR_SIZE_MAP[native.AvatarSizes.XSMALL_20] };
 let closure_14 = createStyles(obj);
 const point = { shape: ClipView.CutoutShape.Circle, x: -8, y: HAPPENING_NOW_CONTENT_HEIGHT / 2 - 8, size: 16 };
 let items = [point];
-let closure_16 = react.memo(() => {
+const memo = react.memo;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_16 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp3;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const tmp2 = closure_14();
+  if (cResult[0] !== tmp2) {
+    items = [];
+    let num3 = 0;
+    if (0 <= HAPPENING_NOW_CONTENT_HEIGHT) {
+      do {
+        let obj2 = { style: 0 === num3 ? tmp2.shortDottedLineSegment : tmp2.dottedLineSegment };
+        let arr = items.push(closure_12(React3, obj2, num3));
+        num3 = num3 + 8;
+      } while (num3 <= HAPPENING_NOW_CONTENT_HEIGHT);
+    }
+    cResult[0] = tmp2;
+    cResult[1] = items;
+    tmp3 = items;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return tmp3;
+}) : (() => {
   const tmp = closure_14();
   items = [];
   let num = 0;
@@ -65,8 +91,143 @@ let closure_16 = react.memo(() => {
     } while (num <= HAPPENING_NOW_CONTENT_HEIGHT);
   }
   return items;
-});
-const memoResult = react.memo((event) => {
+}));
+const memo2 = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
+  let creator_id;
+  let isLive;
+  let locale;
+  let panelVariant;
+  let tmp10;
+  let tmp12;
+  let tmp14;
+  let tmp16;
+  let tmp6;
+  let tmp7;
+  const tmp2 = creator_id;
+  let obj = event(creator_id[12]);
+  const cResult = obj.c(65);
+  event = event.event;
+  const index = event.index;
+  ({ isLive, panelVariant } = event);
+  const tmp4 = undefined !== panelVariant && panelVariant;
+  let tmp5 = closure_14();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    items = [LocaleStore];
+    const fn = function c() {
+      return locale.locale;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const tmpResult = event(tmp2[13]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
+  creator_id = event.host_id;
+  if (creator_id == null) {
+    creator_id = event.creator_id;
+  }
+  if (cResult[2] !== creator_id) {
+    let items2;
+    if (null != creator_id) {
+      const items1 = [creator_id];
+      items2 = items1;
+    } else {
+      items2 = [];
+    }
+    cResult[2] = creator_id;
+    cResult[3] = items2;
+    tmp10 = items2;
+  } else {
+    tmp10 = cResult[3];
+  }
+  const tmpResult3 = event(tmp2[14]);
+  const ensureHydratedGuildUsers = tmpResult3.useEnsureHydratedGuildUsers(event.guild_id, tmp10);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items3 = [UserStore];
+    cResult[4] = items3;
+    tmp12 = items3;
+  } else {
+    tmp12 = cResult[4];
+  }
+  if (cResult[5] !== creator_id) {
+    class A {
+      constructor() {
+        return UserStore.getUser(creator_id);
+      }
+    }
+    cResult[5] = creator_id;
+    cResult[6] = A;
+    tmp14 = A;
+  } else {
+    class A {
+      constructor() {
+        return UserStore.getUser(creator_id);
+      }
+    }
+  }
+  const tmpResult4 = event(tmp2[13]);
+  const stateFromStores1 = tmpResult4.useStateFromStores(tmp12, tmp14);
+  if (cResult[7] !== event) {
+    let nextRecurrenceIdInEvent;
+    class A {
+      constructor() {
+        return UserStore.getUser(creator_id);
+      }
+    }
+    if (null != event) {
+      class A {
+        constructor() {
+          return UserStore.getUser(creator_id);
+        }
+      }
+      nextRecurrenceIdInEvent = obj5.getNextRecurrenceIdInEvent(event);
+    }
+    cResult[7] = event;
+    cResult[8] = nextRecurrenceIdInEvent;
+    tmp16 = nextRecurrenceIdInEvent;
+  } else {
+    class A {
+      constructor() {
+        return UserStore.getUser(creator_id);
+      }
+    }
+  }
+  index(tmp2[16])(event.guild_id, event.id, tmp16);
+  if (cResult[9] === event) {
+    class A {
+      constructor() {
+        return UserStore.getUser(creator_id);
+      }
+    }
+  }
+  class H {
+    constructor() {
+      let tmp5;
+      const obj = { order: index, guild_id: event.guild_id, type: constants.GUILD_EVENT_CARD, highlighted_user_ids: tmp5, destination_channel_id: event.channel_id };
+      tmp5 = null;
+      const track = AnalyticsUtilsDefault.track;
+      const ACTIVITY_CARD_CLICKED = AnalyticEvents.ACTIVITY_CARD_CLICKED;
+      AnalyticsUtilsDefault;
+      if (null != creator_id) {
+        items = [tmp4];
+        tmp5 = items;
+      }
+      track(ACTIVITY_CARD_CLICKED, obj);
+      const obj2 = guild_scheduled_events_GuildScheduledEventModalActionCreators;
+      const obj3 = { eventId: event.id, event };
+      const result = obj2.openGuildEventDetails(obj3);
+    }
+  }
+  cResult[9] = event;
+  cResult[10] = index;
+  cResult[11] = creator_id;
+  cResult[12] = H;
+}) : ((event) => {
   let isLive;
   let items10;
   let items2;
@@ -90,16 +251,16 @@ const memoResult = react.memo((event) => {
   let creator_id;
   const tmp = closure_14();
   const tmp2 = event;
-  let obj = event(creator_id[11]);
+  let obj = event(creator_id[13]);
   items = [LocaleStore];
   creator_id = event.host_id;
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
   if (creator_id == null) {
     creator_id = event.creator_id;
   }
-  const useEnsureHydratedGuildUsers = tmp2(tmp3[12]).useEnsureHydratedGuildUsers;
+  const useEnsureHydratedGuildUsers = tmp2(tmp3[14]).useEnsureHydratedGuildUsers;
   const guild_id = event.guild_id;
-  tmp2(creator_id[12]);
+  tmp2(creator_id[14]);
   if (null != creator_id) {
     const items1 = [creator_id];
     items2 = items1;
@@ -108,14 +269,14 @@ const memoResult = react.memo((event) => {
   }
   const ensureHydratedGuildUsers = useEnsureHydratedGuildUsers(guild_id, items2);
   const items3 = [UserStore];
-  const tmp2Result5 = tmp2(creator_id[11]);
+  const tmp2Result5 = tmp2(creator_id[13]);
   const stateFromStores1 = tmp2Result5.useStateFromStores(items3, () => UserStore.getUser(creator_id));
   let nextRecurrenceIdInEvent = null;
   if (null != event) {
-    const tmp2Result6 = tmp2(creator_id[13]);
+    const tmp2Result6 = tmp2(creator_id[15]);
     nextRecurrenceIdInEvent = tmp2Result6.getNextRecurrenceIdInEvent(event);
   }
-  const tmp10 = index(creator_id[14])(event.guild_id, event.id, nextRecurrenceIdInEvent);
+  const tmp10 = index(creator_id[16])(event.guild_id, event.id, nextRecurrenceIdInEvent);
   const items4 = [event, index, creator_id];
   let source = null;
   const callback = react.useCallback(() => {
@@ -136,10 +297,10 @@ const memoResult = react.memo((event) => {
   }, items4);
   const tmp9 = index;
   if (null != event.image) {
-    const tmp2Result7 = tmp2(creator_id[17]);
-    source = tmp2Result7.makeSource(tmp9(tmp3[18])(event, 200));
+    const tmp2Result7 = tmp2(creator_id[19]);
+    source = tmp2Result7.makeSource(tmp9(tmp3[20])(event, 200));
   }
-  const tmp2Result8 = tmp2(creator_id[13]);
+  const tmp2Result8 = tmp2(creator_id[15]);
   let startDateTimeString = tmp2Result8.getEventTimeData(event.scheduled_start_time).startDateTimeString;
   const items5 = [];
   let num2 = 0;
@@ -153,7 +314,7 @@ const memoResult = react.memo((event) => {
   let obj3 = { onPress: callback, width: str, panelVariant, children: items9 };
   str = "stretchy";
   const tmp18 = index;
-  const tmp20 = index(creator_id[19]);
+  const tmp20 = index(creator_id[24]);
   if (fullwidth) {
     str = "full";
   }
@@ -171,12 +332,12 @@ const memoResult = react.memo((event) => {
   const obj8 = { style: tmp.interestedUsersContainer, children: items7 };
   items7 = [, ];
   const obj9 = { style: tmp.interestedUsersIcon, size: "xxs" };
-  items7[0] = closure_12(event(creator_id[20]).GroupIcon, obj9);
+  items7[0] = closure_12(event(creator_id[21]).GroupIcon, obj9);
   let tmp23Result4 = tmp10 > 0;
   if (tmp23Result4) {
     const obj10 = { color: "mobile-text-heading-primary", variant: "text-xs/semibold", children: tmp26Result.humanizeValue(tmp10, stateFromStores) };
-    const Text = tmp26(tmp19[21]).Text;
-    tmp26Result = event(creator_id[22]);
+    const Text = tmp26(tmp19[22]).Text;
+    tmp26Result = event(creator_id[23]);
     tmp23Result4 = tmp23(Text, obj10);
   }
   items7[1] = tmp23Result4;
@@ -198,9 +359,9 @@ const memoResult = react.memo((event) => {
   const obj13 = { style: null == source ? tmp.infoNoImage : tmp.info, children: items10 };
   items10 = [, ];
   const obj14 = { lineClamp: 3, noMargin: true, children: event.name };
-  items10[0] = closure_12(event(creator_id[19]).HappeningNowCardHeader, obj14);
+  items10[0] = closure_12(event(creator_id[24]).HappeningNowCardHeader, obj14);
   let str2;
-  const HappeningNowCardSubtitle = tmp26(tmp19[19]).HappeningNowCardSubtitle;
+  const HappeningNowCardSubtitle = tmp26(tmp19[24]).HappeningNowCardSubtitle;
   if (isLive) {
     str2 = "text-feedback-positive";
   }
@@ -210,16 +371,16 @@ const memoResult = react.memo((event) => {
     str3 = "text-xs/bold";
   }
   if (isLive) {
-    const intl = tmp26(tmp19[23]).intl;
+    const intl = tmp26(tmp19[25]).intl;
     const _HermesInternal = HermesInternal;
-    const str4 = intl.string(event(creator_id[23]).t.dI3q4h);
+    const str4 = intl.string(event(creator_id[25]).t.dI3q4h);
     startDateTimeString = "\u00B7 " + str4.toUpperCase();
   }
   items10[1] = closure_12(HappeningNowCardSubtitle, obj15);
   items9[2] = closure_13(closure_4, obj13);
   return closure_13(tmp20, obj3);
-});
+}));
 size = size_mod;
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardEvent.tsx");
 
-export default memoResult;
+export default memo2Result;

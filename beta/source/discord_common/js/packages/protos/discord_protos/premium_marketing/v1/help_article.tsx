@@ -1,11 +1,11 @@
-// Module ID: 10134
-// Function ID: 10135
+// Module ID: 10173
+// Function ID: 10174
 // Name: help_article
-// Dependencies: [32, 1187, 10133, 2]
+// Dependencies: [32, 1199, 10172, 2]
 
-// Module 10134 (help_article)
-import _mod1187 from "module_1187" /* 1187 */;
-import localized_string from "localized_string" /* 10133 */;
+// Module 10173 (help_article)
+import _mod1199 from "module_1199" /* 1199 */;
+import localized_string from "localized_string" /* 10172 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let tmp;
 function T() {
   return localized_string.LocalizedString;
 }
-const MessageType = _mod1187.MessageType;
+const MessageType = _mod1199.MessageType;
 class HelpArticle$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "id", kind: "scalar", T: 9 }, { no: 2, name: "link_text", kind: "scalar", T: 9 }, { no: 3, name: "link_text_localized", kind: "message", T }];
@@ -26,9 +26,9 @@ class HelpArticle$Type extends MessageType {
     const obj = { id: "", linkText: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -70,7 +70,7 @@ class HelpArticle$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -82,25 +82,25 @@ class HelpArticle$Type extends MessageType {
   }
   internalBinaryWrite(id, tag, writeUnknownFields) {
     if ("" !== id.id) {
-      const tagResult = tag.tag(1, _mod1187.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1199.WireType.LengthDelimited);
       tagResult.string(id.id);
     }
     if ("" !== id.linkText) {
-      const tagResult1 = tag.tag(2, _mod1187.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1199.WireType.LengthDelimited);
       tagResult1.string(id.linkText);
     }
     if (id.linkTextLocalized) {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite = LocalizedString.internalBinaryWrite;
       const linkTextLocalized = id.linkTextLocalized;
-      const tagResult2 = tag.tag(3, _mod1187.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1199.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(linkTextLocalized, tagResult2.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, id, tag);

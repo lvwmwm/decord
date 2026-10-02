@@ -1,20 +1,20 @@
-// Module ID: 8813
-// Function ID: 8814
+// Module ID: 8808
+// Function ID: 8809
 // Name: QuestMatchingUtils
-// Dependencies: [32, 5063, 8814, 5756, 1074, 2005, 7137, 7112, 7135, 8822, 2]
+// Dependencies: [32, 5064, 8809, 5757, 1086, 2011, 7141, 7116, 7139, 8817, 2]
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestApplicationIdsForRunningGame, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 8813 (QuestMatchingUtils)
-import Constants from "Constants" /* 1074 */;
-import Constants2 from "Constants" /* 2005 */;
-import QuestDataUtils from "QuestDataUtils" /* 7112 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7135 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7137 */;
-import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 8822 */;
+// Module 8808 (QuestMatchingUtils)
+import Constants from "Constants" /* 1086 */;
+import Constants2 from "Constants" /* 2011 */;
+import QuestDataUtils from "QuestDataUtils" /* 7116 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7139 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7141 */;
+import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 8817 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationStore from "ApplicationStore" /* 5063 */;
-import LocalActivityStore from "LocalActivityStore" /* 8814 */;
-import QuestConstants from "QuestConstants" /* 5756 */;
+import ApplicationStore from "ApplicationStore" /* 5064 */;
+import LocalActivityStore from "LocalActivityStore" /* 8809 */;
+import QuestConstants from "QuestConstants" /* 5757 */;
 import size from "module_2" /* 2 */;
 
 let userStatus;

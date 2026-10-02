@@ -1,19 +1,19 @@
-// Module ID: 14023
-// Function ID: 14024
+// Module ID: 14025
+// Function ID: 14026
 // Name: validateEmbeddedAppFrame
-// Dependencies: [8499, 14024, 4739, 1074, 8500, 8501, 8775, 8321, 8770, 2]
+// Dependencies: [8496, 14026, 4741, 1086, 8497, 8498, 8770, 8318, 8765, 2]
 // Exports: tryValidateEmbeddedAppFrame
 
-// Module 14023 (validateEmbeddedAppFrame)
-import Constants2 from "Constants" /* 4739 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8321 */;
-import FramesConstants from "FramesConstants" /* 8500 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8501 */;
-import RPCErrorDefault from "RPCError" /* 8770 */;
-import RPCHelpers from "RPCHelpers" /* 8775 */;
-import FramesStore from "FramesStore" /* 8499 */;
-import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14024 */;
-import Constants from "Constants" /* 1074 */;
+// Module 14025 (validateEmbeddedAppFrame)
+import Constants2 from "Constants" /* 4741 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8318 */;
+import FramesConstants from "FramesConstants" /* 8497 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8498 */;
+import RPCErrorDefault from "RPCError" /* 8765 */;
+import RPCHelpers from "RPCHelpers" /* 8770 */;
+import FramesStore from "FramesStore" /* 8496 */;
+import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14026 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -41,7 +41,7 @@ function validateEmbeddedAppFrame(transport) {
             if (EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN === type) {
               let obj5;
               if (tmp29.applicationId === VibegrationsBuilderPreviewStore.getBuilderPreviewApplicationId()) {
-                obj5 = { channelId: "Array", guildId: "channel" };
+                obj5 = { channelId: "diversity", guildId: "a" };
               } else {
                 obj5 = null;
               }

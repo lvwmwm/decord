@@ -1,22 +1,57 @@
-// Module ID: 15512
-// Function ID: 15513
+// Module ID: 15500
+// Function ID: 15501
 // Name: ParentalControlsMessageRequests
-// Dependencies: [6957, 7417, 8107, 14354, 15498, 7859, 7861, 14353, 11006, 1115, 2487, 2]
+// Dependencies: [6961, 7421, 558, 8104, 14342, 15486, 7863, 7865, 14341, 10874, 1127, 2490, 2]
 
-// Module 15512 (ParentalControlsMessageRequests)
-import intl2 from "intl" /* 1115 */;
-import _modDef2487 from "module_2487" /* 2487 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
-import useSelectedTeen from "useSelectedTeen" /* 8107 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14353 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14354 */;
-import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 15498 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 15500 (ParentalControlsMessageRequests)
+import intl2 from "intl" /* 1127 */;
+import _modDef2490 from "module_2490" /* 2490 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7863 */;
+import useSelectedTeen from "useSelectedTeen" /* 8104 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14341 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14342 */;
+import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 15486 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  if (typeof fn === "function") {
+    const obj = useParentalControlSettings;
+    const defaultGuildsRestricted = obj.useDefaultGuildsRestricted();
+    const obj2 = useSelectedTeen;
+    const selectedTeenId = obj2.useSelectedTeenId();
+    const ParentalControlledDefaultMessageRequestRestricted = ParentalControlledUserSettings.ParentalControlledDefaultMessageRequestRestricted;
+    const useControlledSetting = ParentalControlledDefaultMessageRequestRestricted.useControlledSetting;
+    const tmp6 = !defaultGuildsRestricted && !useControlledSetting(selectedTeenId);
+    return tmp6;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}) : (() => {
+  if (typeof fn === "function") {
+    const obj = useParentalControlSettings;
+    const defaultGuildsRestricted = obj.useDefaultGuildsRestricted();
+    const obj2 = useSelectedTeen;
+    const selectedTeenId = obj2.useSelectedTeenId();
+    const ParentalControlledDefaultMessageRequestRestricted = ParentalControlledUserSettings.ParentalControlledDefaultMessageRequestRestricted;
+    const useControlledSetting = ParentalControlledDefaultMessageRequestRestricted.useControlledSetting;
+    const tmp6 = !defaultGuildsRestricted && !useControlledSetting(selectedTeenId);
+    return tmp6;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const useIsDisabled = () => {
+  const obj = useParentalControlSettings;
+  return obj.useDefaultGuildsRestricted();
+};
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -24,23 +59,11 @@ let obj = {
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef2487["7aYkh1"]);
+    return intl.string(_modDef2490["7aYkh1"]);
   },
   parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
-  useValue() {
-    const obj = useParentalControlSettings;
-    const defaultGuildsRestricted = obj.useDefaultGuildsRestricted();
-    const obj2 = useSelectedTeen;
-    const selectedTeenId = obj2.useSelectedTeenId();
-    const ParentalControlledDefaultMessageRequestRestricted = ParentalControlledUserSettings.ParentalControlledDefaultMessageRequestRestricted;
-    const useControlledSetting = ParentalControlledDefaultMessageRequestRestricted.useControlledSetting;
-    const tmp3 = !defaultGuildsRestricted && !useControlledSetting(selectedTeenId);
-    return tmp3;
-  },
-  useIsDisabled() {
-    const obj = useParentalControlSettings;
-    return obj.useDefaultGuildsRestricted();
-  },
+  useValue: tmp2,
+  useIsDisabled,
   onValueChange: function onAllowMessageRequestsFromServerMembersValueChange(arg0) {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {
@@ -49,7 +72,7 @@ let obj = {
         const obj = DefaultDMSettingsExperiment;
         const tmp2 = require;
         if (obj.shouldAgeVerifyForDMDefaultOff()) {
-          const obj2 = { entryPoint: tmp2(7861).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
+          const obj2 = { entryPoint: tmp2(7865).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
           const showAgeVerificationGetStartedModal = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal;
           AgeVerificationActionCreatorsDefault;
           const result = showAgeVerificationGetStartedModal(obj2);
@@ -62,6 +85,6 @@ let obj = {
   unsearchable: true
 };
 const toggle = SettingBuilders.createToggle(obj);
-let result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsMessageRequests.tsx");
+let result1 = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsMessageRequests.tsx");
 
 export default toggle;

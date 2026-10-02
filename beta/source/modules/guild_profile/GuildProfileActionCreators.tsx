@@ -1,19 +1,19 @@
-// Module ID: 9030
-// Function ID: 9031
+// Module ID: 9007
+// Function ID: 9008
 // Name: GuildProfileActionCreators
-// Dependencies: [5, 4656, 2108, 9028, 1074, 573, 1271, 5860, 4735, 1241, 2]
+// Dependencies: [5, 4658, 2111, 9005, 1086, 585, 1283, 5861, 4737, 1253, 2]
 // Exports: fetchGuildTopGames, getGuildProfile, saveGuildProfile, setGuildProfileVisibility, trackGuildProfileViewed
 
-// Module 9030 (GuildProfileActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4735 */;
-import GuildProfileBuilders from "GuildProfileBuilders" /* 5860 */;
-import GuildProfileStore2 from "GuildProfileStore" /* 9028 */;
+// Module 9007 (GuildProfileActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4737 */;
+import GuildProfileBuilders from "GuildProfileBuilders" /* 5861 */;
+import GuildProfileStore2 from "GuildProfileStore" /* 9005 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4656 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import Constants from "Constants" /* 1074 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4658 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let obj = function _fetchGuildTopGames() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

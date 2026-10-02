@@ -1,24 +1,26 @@
-// Module ID: 6361
-// Function ID: 6362
+// Module ID: 6358
+// Function ID: 6359
 // Name: Login
-// Dependencies: [5, 32, 19, 17, 6362, 502, 1074, 21, 4836, 5435, 4832, 5204, 1115, 1364, 5460, 6363, 1485, 504, 1488, 6010, 6365, 5205, 6366, 6367, 6368, 4735, 6369, 6373, 6374, 6376, 6370, 5281, 6377, 1610, 6379, 6381, 6024, 6387, 6389, 6391, 5279, 6398, 6360, 2]
+// Dependencies: [5, 32, 19, 17, 6359, 502, 1086, 21, 4837, 558, 576, 4833, 5436, 5205, 1127, 1370, 5461, 6360, 1491, 504, 1494, 6005, 6362, 5206, 6363, 6364, 6365, 4737, 6366, 6370, 6371, 6373, 6367, 5282, 6374, 1616, 6376, 6378, 6021, 6384, 6386, 6388, 5280, 6395, 6357, 2]
 // Exports: default
 
-// Module 6361 (Login)
+// Module 6358 (Login)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1074 */;
-import intl11 from "intl" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
-import Pressables from "Pressables" /* 5435 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl11 from "intl" /* 1127 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
+import Pressables from "Pressables" /* 5436 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 6362 */;
+import PhoneStore from "PhoneStore" /* 6359 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,28 +28,6 @@ let _undefined2, _undefined3, navigation;
 
 let c10;
 let unpackModuleId;
-class LinkButton {
-  constructor(variant) {
-    let containerStyle;
-    let items;
-    let onPress;
-    let text;
-    let textStyle;
-    let str = variant.variant;
-    ({ onPress, text, containerStyle, textStyle } = variant);
-    if (str === undefined) {
-      str = "text-xs/medium";
-    }
-    let str2 = variant.textColor;
-    if (str2 === undefined) {
-      str2 = "text-link";
-    }
-    const obj = { style: items, hitSlop: { top: 8, right: 8, bottom: 8 }, accessibilityRole: "button", onPress, children: authStore(Text_Text.Text, { style: textStyle, variant: str, color: str2, children: text }) };
-    items = [containerStyle];
-    const PressableOpacity = Pressables.PressableOpacity;
-    return authStore(PressableOpacity, obj);
-  }
-}
 function handlePressPasswordManagerHint() {
   let intl;
   let intl2;
@@ -90,6 +70,95 @@ let closure_12 = createStyles.createStyles((arg0) => {
   }
   return obj;
 });
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let containerStyle;
+  let onPress;
+  let text;
+  let textColor;
+  let textStyle;
+  let tmp4;
+  let tmp5;
+  let variant;
+  const obj = react2;
+  const cResult = obj.c(12);
+  ({ onPress, text, containerStyle, textStyle, variant, textColor } = arg0);
+  let str = "text-xs/medium";
+  if (undefined !== variant) {
+    str = variant;
+  }
+  let str2 = "text-link";
+  if (undefined !== textColor) {
+    str2 = textColor;
+  }
+  if (cResult[0] !== containerStyle) {
+    const items = [containerStyle];
+    cResult[0] = containerStyle;
+    cResult[1] = items;
+    tmp4 = items;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const rect = { top: 8, right: 8, bottom: 8 };
+    cResult[2] = rect;
+    tmp5 = rect;
+  } else {
+    tmp5 = cResult[2];
+  }
+  if (cResult[3] === text) {
+    if (cResult[4] === str2) {
+      if (cResult[5] === textStyle) {
+        let tmp6;
+        if (cResult[6] === str) {
+          tmp6 = cResult[7];
+        }
+        if (cResult[8] === onPress) {
+          if (cResult[9] === tmp4) {
+            let tmp8;
+            if (cResult[10] === tmp6) {
+              tmp8 = cResult[11];
+            }
+            return tmp8;
+          }
+        }
+        const obj2 = { style: tmp4, hitSlop: tmp5, accessibilityRole: "button", onPress, children: tmp6 };
+        const tmp10 = authStore(Pressables.PressableOpacity, obj2);
+        cResult[8] = onPress;
+        cResult[9] = tmp4;
+        cResult[10] = tmp6;
+        cResult[11] = tmp10;
+        tmp8 = tmp10;
+      }
+    }
+  }
+  const tmp7 = authStore(Text_Text.Text, { style: textStyle, variant: str, color: str2, children: text });
+  cResult[3] = text;
+  cResult[4] = str2;
+  cResult[5] = textStyle;
+  cResult[6] = str;
+  cResult[7] = tmp7;
+  tmp6 = tmp7;
+}) : ((variant) => {
+  let containerStyle;
+  let items;
+  let onPress;
+  let text;
+  let textStyle;
+  let str = variant.variant;
+  ({ onPress, text, containerStyle, textStyle } = variant);
+  if (str === undefined) {
+    str = "text-xs/medium";
+  }
+  let str2 = variant.textColor;
+  if (str2 === undefined) {
+    str2 = "text-link";
+  }
+  const obj = { style: items, hitSlop: { top: 8, right: 8, bottom: 8 }, accessibilityRole: "button", onPress, children: authStore(Text_Text.Text, { style: textStyle, variant: str, color: str2, children: text }) };
+  items = [containerStyle];
+  const PressableOpacity = Pressables.PressableOpacity;
+  return authStore(PressableOpacity, obj);
+});
+let closure_13 = tmp3;
 let result = size.fileFinishedImporting("modules/auth/native/components/Login.tsx");
 
 export default function Login(isMultiAccount) {
@@ -139,11 +208,11 @@ export default function Login(isMultiAccount) {
   let ref;
   let callback;
   let tmp = navigation;
-  const tmp3 = callback(navigation(ref[15])());
+  const tmp3 = callback(navigation(ref[17])());
   const tmp4 = flag;
-  let obj = flag(ref[16]);
+  let obj = flag(ref[18]);
   navigation = obj.useNavigation();
-  let obj2 = flag(ref[17]);
+  let obj2 = flag(ref[19]);
   const items = [countryCode];
   const stateFromStores = obj2.useStateFromStores(items, () => countryCode.getCountryCode());
   const str = stateFromStores.code;
@@ -175,12 +244,12 @@ export default function Login(isMultiAccount) {
       }, 1000 * retry_after.retry_after);
     }
   }, []);
-  let obj3 = flag(ref[18]);
+  let obj3 = flag(ref[20]);
   const focusEffect = obj3.useFocusEffect(react.useCallback(() => {
     _undefined2(false);
   }, []));
   const items1 = [callback, first1];
-  let closure_13 = react.useCallback(_asyncToGenerator(async (arg0, value) => {
+  closure_13 = react.useCallback(_asyncToGenerator(async (arg0, value) => {
     let closure_1;
     let closure_2;
     let intl;
@@ -199,7 +268,7 @@ export default function Login(isMultiAccount) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -224,7 +293,7 @@ export default function Login(isMultiAccount) {
             _undefined2 = 3;
             _undefined3 = 1;
             const obj6 = { value: obj4.forgotPassword(first1), done: false };
-            obj4 = tmp(ref[19]);
+            obj4 = tmp(ref[21]);
             return obj6;
           }
         } else if (1 === _undefined2) {
@@ -234,7 +303,7 @@ export default function Login(isMultiAccount) {
         } else {
           if (2 === _undefined2) {
             c3 = 1;
-            const obj3 = closure_0(ref[23]);
+            const obj3 = closure_0(ref[25]);
             tmp = obj3.getAuthenticationErrorsFromV6OrEarlierAPIError(ref);
             closure_129_12(tmp);
           } else if (arg0 === 1) {
@@ -252,17 +321,17 @@ export default function Login(isMultiAccount) {
               c3 = 0;
               closure_129_4(false);
               _undefined3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else {
-              if (closure_0 === closure_0(ref[20]).PasswordResetMethods.ONE_TIME_LOGIN) {
-                const obj = closure_0(ref[21]);
-                obj.openAlert("one-time-login-forgot-password-confirm", closure_1_10(tmp(ref[22]), {}));
+              if (closure_0 === closure_0(ref[22]).PasswordResetMethods.ONE_TIME_LOGIN) {
+                const obj = closure_0(ref[23]);
+                obj.openAlert("one-time-login-forgot-password-confirm", closure_1_10(tmp(ref[24]), {}));
               } else {
-                const obj8 = { title: intl.string(closure_0(ref[12]).t.f5Pi7A), body: intl2.format(closure_0(ref[12]).t["6u5hQ9"], obj9) };
-                const show = tmp(ref[11]).show;
-                const tmp58 = tmp(ref[11]);
-                intl = closure_0(ref[12]).intl;
-                intl2 = closure_0(ref[12]).intl;
+                const obj8 = { title: intl.string(closure_0(ref[14]).t.f5Pi7A), body: intl2.format(closure_0(ref[14]).t["6u5hQ9"], obj9) };
+                const show = tmp(ref[13]).show;
+                const tmp58 = tmp(ref[13]);
+                intl = closure_0(ref[14]).intl;
+                intl2 = closure_0(ref[14]).intl;
                 obj9 = { email: closure_129_6 };
                 show(obj8);
               }
@@ -272,7 +341,7 @@ export default function Login(isMultiAccount) {
           c3 = 0;
           closure_129_4(false);
           _undefined3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp43) {
         ref = tmp43;
@@ -308,7 +377,7 @@ export default function Login(isMultiAccount) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -330,7 +399,7 @@ export default function Login(isMultiAccount) {
               authenticationErrorsFromV6OrEarlierAPIError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -347,14 +416,14 @@ export default function Login(isMultiAccount) {
               c8 = 1;
               const obj6 = { login: isMultiAccount, password, undelete: flag, isMultiAccount };
               const obj8 = { value: obj7.login(obj6), done: false };
-              obj7 = navigation(ref[19]);
+              obj7 = navigation(ref[21]);
               return obj8;
             }
           } else {
             if (2 === c7) {
               c6 = 0;
               tmp19(false);
-              const obj2 = isMultiAccount(ref[23]);
+              const obj2 = isMultiAccount(ref[25]);
               authenticationErrorsFromV6OrEarlierAPIError = obj2.getAuthenticationErrorsFromV6OrEarlierAPIError(tmp);
               closure_1_12(authenticationErrorsFromV6OrEarlierAPIError);
             } else if (arg0 === 1) {
@@ -368,7 +437,7 @@ export default function Login(isMultiAccount) {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           if (0 === c6) {
@@ -406,7 +475,7 @@ export default function Login(isMultiAccount) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -426,7 +495,7 @@ export default function Login(isMultiAccount) {
             const tmp54 = first2;
             if (!tmp54) {
               if (!isPasswordlessActive.getIsPasswordlessActive()) {
-                const obj4 = tmp(ref[24]);
+                const obj4 = tmp(ref[26]);
                 const passkeyAuthenticator = obj4.getPasskeyAuthenticator();
                 _undefined2(true);
                 _undefined3({});
@@ -435,7 +504,7 @@ export default function Login(isMultiAccount) {
                 _undefined2 = 3;
                 _undefined3 = 1;
                 const obj8 = { value: obj5.authenticatePasswordless(obj7), done: false };
-                obj5 = tmp(ref[19]);
+                obj5 = tmp(ref[21]);
                 return obj8;
               }
             }
@@ -448,11 +517,11 @@ export default function Login(isMultiAccount) {
           if (2 === _undefined2) {
             c3 = 1;
             tmp = ref;
-            if (tmp instanceof authenticationErrorsFromAPIError(ref[25]).APIError) {
-              const obj3 = authenticationErrorsFromAPIError(ref[23]);
+            if (tmp instanceof authenticationErrorsFromAPIError(ref[27]).APIError) {
+              const obj3 = authenticationErrorsFromAPIError(ref[25]);
               authenticationErrorsFromAPIError = obj3.getAuthenticationErrorsFromAPIError(tmp);
               closure_129_12(authenticationErrorsFromAPIError);
-            } else if (!(tmp instanceof authenticationErrorsFromAPIError(ref[26]).IgnorableWebAuthnError)) {
+            } else if (!(tmp instanceof authenticationErrorsFromAPIError(ref[28]).IgnorableWebAuthnError)) {
               const obj9 = { message: tmp.message };
               closure_129_5(obj9);
             }
@@ -472,7 +541,7 @@ export default function Login(isMultiAccount) {
           closure_129_4(false);
         }
         _undefined3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp48) {
         ref = tmp48;
         if (0 === c3) {
@@ -486,34 +555,34 @@ export default function Login(isMultiAccount) {
       }
     }
   }), items3);
-  navigation(ref[27])();
-  navigation(ref[28])(navigation, callback1);
-  let tmp28 = navigation(ref[29])("login", tmp14);
+  navigation(ref[29])();
+  navigation(ref[30])(navigation, callback1);
+  let tmp28 = navigation(ref[31])("login", tmp14);
   if (tmp28 == null) {
-    tmp28 = tmp(tmp2[29])("email", tmp14);
+    tmp28 = tmp(tmp2[31])("email", tmp14);
   }
   let tmp31Result = null;
-  const tmp29 = tmp(ref[29])("password", tmp14);
-  if (tmp4(ref[30]).hasWebAuthn) {
-    let obj4 = { icon: closure_10(tmp4(tmp2[32]).KeyIcon, {}), size: "lg", variant: "tertiary", disabled: tmp12 || first2, text: intl.string(tmp4(tmp2[12]).t.EiwJkN), onPress: callback2 };
-    const Button = tmp4(tmp2[31]).Button;
-    intl = tmp4(tmp2[12]).intl;
+  const tmp29 = tmp(ref[31])("password", tmp14);
+  if (tmp4(ref[32]).hasWebAuthn) {
+    let obj4 = { icon: closure_10(tmp4(tmp2[34]).KeyIcon, {}), size: "lg", variant: "tertiary", disabled: tmp12 || first2, text: intl.string(tmp4(tmp2[14]).t.EiwJkN), onPress: callback2 };
+    const Button = tmp4(tmp2[33]).Button;
+    intl = tmp4(tmp2[14]).intl;
     tmp31Result = closure_10(Button, obj4);
   }
-  const tmp4Result = tmp4(ref[33]);
+  const tmp4Result = tmp4(ref[35]);
   if (tmp4Result.isMetaQuest()) {
     let obj5 = {
-      icon: closure_10(tmp4(tmp2[34]).MobilePhoneIcon, { color: "control-primary-text-default" }),
+      icon: closure_10(tmp4(tmp2[36]).MobilePhoneIcon, { color: "control-primary-text-default" }),
       size: "lg",
       variant: "primary",
       disabled: tmp12,
-      text: intl2.string(tmp4(tmp2[12]).t.Cc4Mc9),
+      text: intl2.string(tmp4(tmp2[14]).t.Cc4Mc9),
       onPress() {
           return navigation.push(AuthStates.COMPANION_REMOTE_AUTH);
         }
     };
-    const Button2 = tmp4(tmp2[31]).Button;
-    intl2 = tmp4(tmp2[12]).intl;
+    const Button2 = tmp4(tmp2[33]).Button;
+    intl2 = tmp4(tmp2[14]).intl;
     tmp31Result = closure_10(Button2, obj5);
   }
   let obj6 = {
@@ -535,7 +604,7 @@ export default function Login(isMultiAccount) {
     },
     returnKeyType: "next",
     autoCapitalize: "none",
-    label: intl3.string(tmp4(tmp2[12]).t.tUjnxr),
+    label: intl3.string(tmp4(tmp2[14]).t.tUjnxr),
     errorMessage: tmp28,
     testID: "login_login_input",
     onPressCountrySelector() {
@@ -544,8 +613,8 @@ export default function Login(isMultiAccount) {
     clearable: true,
     autoComplete: "username"
   };
-  const tmpResult = tmp(ref[35]);
-  intl3 = tmp4(tmp2[12]).intl;
+  const tmpResult = tmp(ref[37]);
+  intl3 = tmp4(tmp2[14]).intl;
   const items4 = [closure_10(tmpResult, obj6), , , , ];
   let obj7 = {
     containerStyle: tmp3.password,
@@ -557,7 +626,7 @@ export default function Login(isMultiAccount) {
     onSubmitEditing() {
       return callback1(first1, c8);
     },
-    label: intl4.string(tmp4(tmp2[12]).t["CIGa+7"]),
+    label: intl4.string(tmp4(tmp2[14]).t["CIGa+7"]),
     trailingIcon: EyeIcon,
     trailingPressableProps: {
       accessibilityLabel: stringResult,
@@ -571,16 +640,16 @@ export default function Login(isMultiAccount) {
     testID: "login_password_input",
     autoComplete: "current-password"
   };
-  const TextInput = tmp4(tmp2[36]).TextInput;
-  intl4 = tmp4(tmp2[12]).intl;
+  const TextInput = tmp4(tmp2[38]).TextInput;
+  intl4 = tmp4(tmp2[14]).intl;
   if (tmp10) {
-    EyeIcon = tmp4(tmp2[37]).EyeSlashIcon;
+    EyeIcon = tmp4(tmp2[39]).EyeSlashIcon;
   } else {
-    EyeIcon = tmp4(tmp2[38]).EyeIcon;
+    EyeIcon = tmp4(tmp2[40]).EyeIcon;
   }
-  const intl5 = tmp4(tmp2[12]).intl;
+  const intl5 = tmp4(tmp2[14]).intl;
   const string = intl5.string;
-  const t = tmp4(tmp2[12]).t;
+  const t = tmp4(tmp2[14]).t;
   if (tmp10) {
     stringResult = string(t.Nusip4);
   } else {
@@ -592,27 +661,27 @@ export default function Login(isMultiAccount) {
     onPress() {
       return closure_13();
     },
-    text: intl6.string(tmp4(tmp2[12]).t.wWIufs)
+    text: intl6.string(tmp4(tmp2[14]).t.wWIufs)
   };
-  intl6 = tmp4(tmp2[12]).intl;
+  intl6 = tmp4(tmp2[14]).intl;
   items4[2] = closure_10(closure_13, obj8);
   let tmp35Result = null;
   const tmp38 = closure_13;
-  const tmp4Result6 = tmp4(ref[13]);
+  const tmp4Result6 = tmp4(ref[15]);
   if (tmp4Result6.isAndroid()) {
     tmp35Result = null;
-    const tmp4Result7 = tmp4(ref[33]);
+    const tmp4Result7 = tmp4(ref[35]);
     if (!tmp4Result7.isMetaQuest()) {
-      let obj9 = { containerStyle: tmp3.link, onPress: callback1, text: intl7.string(tmp4(tmp2[12]).t.RL5Fy2), textColor: "text-link" };
-      intl7 = tmp4(tmp2[12]).intl;
+      let obj9 = { containerStyle: tmp3.link, onPress: callback1, text: intl7.string(tmp4(tmp2[14]).t.RL5Fy2), textColor: "text-link" };
+      intl7 = tmp4(tmp2[14]).intl;
       tmp35Result = tmp35(tmp38, obj9);
     }
   }
   items4[3] = tmp35Result;
   const obj10 = { style: tmp3.button, children: closure_10(Button3, obj12) };
-  Button3 = tmp4(tmp2[31]).Button;
+  Button3 = tmp4(tmp2[33]).Button;
   let str3 = "primary";
-  const tmp4Result8 = tmp4(ref[33]);
+  const tmp4Result8 = tmp4(ref[35]);
   if (tmp4Result8.isMetaQuest()) {
     str3 = "tertiary";
   }
@@ -622,31 +691,31 @@ export default function Login(isMultiAccount) {
     variant: str3,
     disabled: first2,
     loading: tmp12,
-    text: intl8.string(tmp4(ref[12]).t.dKhVQN),
+    text: intl8.string(tmp4(ref[14]).t.dKhVQN),
     onPress() {
       return callback1(first1, c8);
     }
   };
-  intl8 = tmp4(tmp2[12]).intl;
+  intl8 = tmp4(tmp2[14]).intl;
   items4[4] = closure_10(first1, obj10);
   const tmp33Result = ref(first1, obj11);
-  const obj13 = { headerText: intl9.string(tmp4(ref[12]).t["7fNJgA"]), subHeader: closure_10(Text, obj14), children: ref(first1, obj15) };
-  const tmpResult2 = tmp(ref[39]);
-  intl9 = tmp4(tmp2[12]).intl;
-  obj14 = { variant: "text-sm/medium", color: "text-default", children: intl10.string(tmp4(ref[12]).t.euS7r4) };
-  Text = tmp4(tmp2[10]).Text;
-  intl10 = tmp4(tmp2[12]).intl;
+  const obj13 = { headerText: intl9.string(tmp4(ref[14]).t["7fNJgA"]), subHeader: closure_10(Text, obj14), children: ref(first1, obj15) };
+  const tmpResult2 = tmp(ref[41]);
+  intl9 = tmp4(tmp2[14]).intl;
+  obj14 = { variant: "text-sm/medium", color: "text-default", children: intl10.string(tmp4(ref[14]).t.euS7r4) };
+  Text = tmp4(tmp2[11]).Text;
+  intl10 = tmp4(tmp2[14]).intl;
   let tmp43 = tmp33Result;
   obj15 = { style: tmp3.content, children: items5 };
-  const tmp4Result9 = tmp4(ref[33]);
+  const tmp4Result9 = tmp4(ref[35]);
   if (tmp4Result9.isMetaQuest()) {
     tmp43 = tmp31Result;
   }
   items5 = [tmp43, , , ];
-  const obj16 = { style: tmp3.separator, children: closure_10(tmp4(ref[41]).OrSeparator, {}) };
-  const Stack = tmp4(tmp2[40]).Stack;
+  const obj16 = { style: tmp3.separator, children: closure_10(tmp4(ref[43]).OrSeparator, {}) };
+  const Stack = tmp4(tmp2[42]).Stack;
   items5[1] = closure_10(Stack, obj16);
-  const tmp4Result10 = tmp4(ref[33]);
+  const tmp4Result10 = tmp4(ref[35]);
   if (tmp4Result10.isMetaQuest()) {
     tmp31Result = tmp33Result;
   }
@@ -656,10 +725,10 @@ export default function Login(isMultiAccount) {
     tmp35Result2 = null;
     if ("" !== tmp14.message) {
       const obj17 = { style: tmp3.hint, children: tmp14.message };
-      tmp35Result2 = tmp35(tmp(tmp2[42]), obj17);
+      tmp35Result2 = tmp35(tmp(tmp2[44]), obj17);
     }
   }
   items5[3] = tmp35Result2;
   return closure_10(tmpResult2, obj13);
 };
-export { LinkButton };
+export const LinkButton = tmp3;

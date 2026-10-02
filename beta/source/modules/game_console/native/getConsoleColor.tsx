@@ -1,12 +1,12 @@
-// Module ID: 17000
-// Function ID: 17001
+// Module ID: 16959
+// Function ID: 16960
 // Name: getConsoleColor
-// Dependencies: [1074, 576, 2]
+// Dependencies: [1086, 588, 2]
 // Exports: default
 
-// Module 17000 (getConsoleColor)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
+// Module 16959 (getConsoleColor)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let PLAYSTATION;

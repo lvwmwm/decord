@@ -1,28 +1,136 @@
-// Module ID: 14156
-// Function ID: 14157
+// Module ID: 14144
+// Function ID: 14145
 // Name: HSVColorPicker
-// Dependencies: [19, 17, 21, 4836, 4566, 14157, 14158, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 558, 576, 4570, 14145, 14146, 2]
 
-// Module 14156 (HSVColorPicker)
+// Module 14144 (HSVColorPicker)
 import react_native from "react-native" /* 17 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import SaturationValueColorPickerDefault from "SaturationValueColorPicker" /* 14157 */;
+import react2 from "react" /* 576 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import SaturationValueColorPickerDefault from "SaturationValueColorPicker" /* 14145 */;
+import HuePickerDefault from "HuePicker" /* 14146 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
-let tmp9;
-const HuePickerDefault = tmp9(14158);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ hsvColorPicker: { alignItems: "center" } });
-const result = size.fileFinishedImporting("modules/color_picker/native/HSVColorPicker.tsx");
-
-export default function HSVColorPicker(arg0) {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let hue;
+  let hueColorBarInnerStyle;
+  let huePickerStyle;
+  let hueSliderStyle;
+  let items;
+  let onPanFinalize;
+  let onPanUpdate;
+  let saturation;
+  let saturationValueColorBoxInnerStyle;
+  let saturationValueColorBoxStyle;
+  let saturationValuePickerStyle;
+  let saturationValueSelectorStyle;
+  let value;
+  const obj = react2;
+  const cResult = obj.c(21);
+  ({ hue, saturation, value, saturationValuePickerStyle, saturationValueColorBoxStyle, saturationValueColorBoxInnerStyle, saturationValueSelectorStyle, huePickerStyle, hueColorBarInnerStyle, hueSliderStyle, onPanUpdate, onPanFinalize } = arg0);
+  const tmp3 = closure_6();
+  const obj2 = ReanimatedRexport;
+  const sharedValue = obj2.useSharedValue(0);
+  const obj3 = ReanimatedRexport;
+  const sharedValue1 = obj3.useSharedValue(1);
+  let tmp7 = hue;
+  const obj4 = ReanimatedRexport;
+  const sharedValue2 = obj4.useSharedValue(1);
+  if (hue == null) {
+    tmp7 = sharedValue;
+  }
+  if (saturation == null) {
+    saturation = sharedValue1;
+  }
+  if (value == null) {
+    value = sharedValue2;
+  }
+  if (cResult[0] === onPanFinalize) {
+    if (cResult[1] === onPanUpdate) {
+      if (cResult[2] === saturationValueColorBoxInnerStyle) {
+        if (cResult[3] === saturationValueColorBoxStyle) {
+          if (cResult[4] === saturationValuePickerStyle) {
+            if (cResult[5] === saturationValueSelectorStyle) {
+              if (cResult[6] === tmp7) {
+                if (cResult[7] === saturation) {
+                  let tmp8;
+                  if (cResult[8] === value) {
+                    tmp8 = cResult[9];
+                  }
+                  if (hue == null) {
+                    hue = sharedValue;
+                  }
+                  if (cResult[10] === hueColorBarInnerStyle) {
+                    if (cResult[11] === huePickerStyle) {
+                      if (cResult[12] === hueSliderStyle) {
+                        if (cResult[13] === onPanFinalize) {
+                          if (cResult[14] === onPanUpdate) {
+                            let tmp10;
+                            if (cResult[15] === hue) {
+                              tmp10 = cResult[16];
+                            }
+                            if (cResult[17] === tmp3.hsvColorPicker) {
+                              if (cResult[18] === tmp8) {
+                                let tmp14;
+                                if (cResult[19] === tmp10) {
+                                  tmp14 = cResult[20];
+                                }
+                                return tmp14;
+                              }
+                            }
+                            const obj5 = { style: tmp3.hsvColorPicker, children: items };
+                            items = [tmp8, tmp10];
+                            const tmp17 = hasOwnProperty(View, obj5);
+                            cResult[17] = tmp3.hsvColorPicker;
+                            cResult[18] = tmp8;
+                            cResult[19] = tmp10;
+                            cResult[20] = tmp17;
+                            tmp14 = tmp17;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  const obj6 = { hue, style: huePickerStyle, colorBarInnerStyle: hueColorBarInnerStyle, sliderStyle: hueSliderStyle, onPanUpdate, onPanFinalize };
+                  const tmp13 = React3(HuePickerDefault, obj6);
+                  cResult[10] = hueColorBarInnerStyle;
+                  cResult[11] = huePickerStyle;
+                  cResult[12] = hueSliderStyle;
+                  cResult[13] = onPanFinalize;
+                  cResult[14] = onPanUpdate;
+                  cResult[15] = hue;
+                  cResult[16] = tmp13;
+                  tmp10 = tmp13;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  const tmp9 = React3(SaturationValueColorPickerDefault, { hue: tmp7, saturation, value, style: saturationValuePickerStyle, colorBoxStyle: saturationValueColorBoxStyle, colorBoxInnerStyle: saturationValueColorBoxInnerStyle, selectorStyle: saturationValueSelectorStyle, onPanUpdate, onPanFinalize });
+  cResult[0] = onPanFinalize;
+  cResult[1] = onPanUpdate;
+  cResult[2] = saturationValueColorBoxInnerStyle;
+  cResult[3] = saturationValueColorBoxStyle;
+  cResult[4] = saturationValuePickerStyle;
+  cResult[5] = saturationValueSelectorStyle;
+  cResult[6] = tmp7;
+  cResult[7] = saturation;
+  cResult[8] = value;
+  cResult[9] = tmp9;
+  tmp8 = tmp9;
+}) : ((arg0) => {
   let hue;
   let hueColorBarInnerStyle;
   let huePickerStyle;
@@ -67,4 +175,7 @@ export default function HSVColorPicker(arg0) {
   }
   items[1] = React3(tmp9Result, { hue, style: huePickerStyle, colorBarInnerStyle: hueColorBarInnerStyle, sliderStyle: hueSliderStyle, onPanUpdate, onPanFinalize });
   return tmp6(tmp7, obj4);
-};
+});
+const result = size.fileFinishedImporting("modules/color_picker/native/HSVColorPicker.tsx");
+
+export default tmp4;

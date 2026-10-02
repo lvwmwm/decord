@@ -1,37 +1,39 @@
-// Module ID: 11611
-// Function ID: 11612
+// Module ID: 11497
+// Function ID: 11498
 // Name: AppDetailContent
-// Dependencies: [5, 19, 17, 8591, 1484, 1074, 5305, 21, 4836, 11612, 576, 11536, 5917, 10785, 11587, 6941, 8791, 1115, 1613, 8719, 1979, 11616, 8590, 6943, 11533, 1364, 11618, 4832, 11620, 11584, 11622, 8589, 1177, 11629, 11631, 4800, 5016, 8506, 2]
+// Dependencies: [5, 19, 17, 8588, 1490, 1086, 5306, 21, 4837, 11498, 588, 558, 576, 11412, 5916, 10749, 6945, 8786, 11473, 1127, 1619, 8714, 1985, 11502, 8587, 6947, 11409, 1370, 11504, 4833, 11506, 11470, 11508, 8586, 1189, 11515, 11517, 4801, 5017, 8503, 2]
 // Exports: default
 
-// Module 11611 (AppDetailContent)
+// Module 11497 (AppDetailContent)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import intl3 from "intl" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5305 */;
-import TableRow2 from "TableRow" /* 5917 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6941 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6943 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 8590 */;
-import AppLauncherContext from "AppLauncherContext" /* 10785 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11533 */;
-import react2 from "react" /* 11536 */;
-import CommandRowButtonDefault from "CommandRowButton" /* 11587 */;
-import Header from "Header" /* 11612 */;
-import BillIcon from "BillIcon" /* 11618 */;
-import ShopIcon from "ShopIcon" /* 11620 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl3 from "intl" /* 1127 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
+import TableRow2 from "TableRow" /* 5916 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6945 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6947 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 8587 */;
+import AppLauncherContext from "AppLauncherContext" /* 10749 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11409 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 11412 */;
+import CommandRowButtonDefault from "CommandRowButton" /* 11473 */;
+import Header from "Header" /* 11498 */;
+import BillIcon from "BillIcon" /* 11504 */;
+import ShopIcon from "ShopIcon" /* 11506 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8591 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1484 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8588 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1490 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3, navigation;
+let c2, c3, command, navigation;
 
 let closure_14;
 let closure_15;
@@ -45,184 +47,6 @@ let obj5;
 let obj6;
 let obj7;
 let obj8;
-function PlaceholderCommandRow(isFirstRow) {
-  let items;
-  let items1;
-  let obj4;
-  let obj6;
-  let flag = isFirstRow.isFirstRow;
-  if (flag === undefined) {
-    flag = false;
-  }
-  let flag2 = isFirstRow.isLastRow;
-  if (flag2 === undefined) {
-    flag2 = false;
-  }
-  const tmp = closure_16();
-  const obj = react2;
-  const placeholderWidth = obj.usePlaceholderWidth(10, 50);
-  const obj2 = react2;
-  const placeholderWidth1 = obj2.usePlaceholderWidth(30, 90);
-  const obj3 = { label: map1(View, obj4), subLabel: map1(View, obj6), subLabelLineClamp: 1, start: flag, end: flag2 };
-  obj4 = { style: items };
-  items = [tmp.loadingTextPlaceholder, ];
-  const obj5 = { width: "" + placeholderWidth + "%" };
-  const TableRow = TableRow2.TableRow;
-  items[1] = obj5;
-  obj6 = { style: items1 };
-  items1 = [tmp.loadingTextPlaceholderSmall, { width: "" + placeholderWidth1 + "%" }];
-  ({ width: "" + placeholderWidth1 + "%" });
-  return map1(TableRow, obj3);
-}
-class CommandRow {
-  constructor(command) {
-    let _location;
-    let context;
-    let fn;
-    let icon;
-    let installOnDemand;
-    let isFirstRow;
-    let isLastRow;
-    let onExecuteCommand;
-    let sectionName;
-    command = command.command;
-    ({ onPressCommand: importDefault, context } = command);
-    ({ section: dependencyMap, location: _asyncToGenerator, sectionName } = command);
-    let hasOptions;
-    let onPressSend;
-    ({ isFirstRow, isLastRow, onExecuteCommand, installOnDemand, icon } = command);
-    let tmp = command;
-    let obj = command(10785);
-    const entrypoint = obj.useAppLauncherContext().entrypoint;
-    const tmp3 = onPressSend(true, true);
-    hasOptions(context, true, true);
-    let obj2 = {
-      command,
-      context,
-      beforeExecuteCommand() {
-        let obj2;
-        const obj = { command, location: _asyncToGenerator, triggerSection: obj2.getCommandTriggerSection(dependencyMap), sectionName };
-        const trackCommandSelected = ApplicationCommandUtils.trackCommandSelected;
-        ApplicationCommandUtils;
-        obj2 = ApplicationCommandUtils;
-        return trackCommandSelected(obj);
-      },
-      onExecuteCommand,
-      tryExecuteCommand: fn,
-      sectionName
-    };
-    fn = undefined;
-    const useCommandRowSend = command(11587).useCommandRowSend;
-    const tmp5 = command(11587);
-    if (installOnDemand) {
-      let closure_0 = _asyncToGenerator(async (arg0, value) => {
-        let obj5;
-        let tmp20;
-        closure_0 = arg0;
-        if (c3 === 2) {
-          c3 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          try {
-            c3 = 2;
-            if (0 === c2) {
-              if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                let closure_1 = tmp;
-                let channel;
-                const obj4 = { applicationId: closure_0.applicationId, channel, commandIntegrationTypes: tmp20.integration_types, appLauncherContext: obj5 };
-                const installApplicationOnDemandIfNeeded = closure_0(dependencyMap[16]).installApplicationOnDemandIfNeeded;
-                const tmp19 = closure_0(dependencyMap[16]);
-                tmp20 = closure_0;
-                if ("channel" === c2.type) {
-                  channel = c2.channel;
-                }
-                obj5 = { entrypoint, location: _location, sectionName };
-                c2 = 1;
-                c3 = 1;
-                const obj6 = { value: installApplicationOnDemandIfNeeded(obj4), done: false };
-                return obj6;
-              }
-            } else if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              const obj = { value, done: true };
-              return obj;
-            } else {
-              if (value.isAuthorized) {
-                closure_0();
-              }
-              c3 = 3;
-              return { value: "HermesInternal", done: null };
-            }
-          } catch (tmp12) {
-            c3 = 3;
-            throw tmp12;
-          }
-        }
-      });
-      fn = function() {
-        return closure_0(...arguments);
-      };
-    }
-    const commandRowSend = useCommandRowSend(obj2);
-    hasOptions = commandRowSend.hasOptions;
-    onPressSend = commandRowSend.onPressSend;
-    let items = [hasOptions];
-    const sending = commandRowSend.sending;
-    const items1 = [onPressSend];
-    const memo = sectionName.useMemo(() => {
-      let intl;
-      let tmp;
-      if (!hasOptions) {
-        const obj = { name: "send", label: intl.string(intl3.t.TXNS7S) };
-        intl = intl3.intl;
-        const items = [obj];
-        tmp = items;
-      }
-      return tmp;
-    }, items);
-    const callback = sectionName.useCallback((nativeEvent) => {
-      if ("send" === nativeEvent.nativeEvent.actionName) {
-        onPressSend();
-      }
-    }, items1);
-    let obj3 = {
-      start: isFirstRow,
-      end: isLastRow,
-      label: command.displayName,
-      labelLineClamp: 1,
-      subLabel: command.displayDescription,
-      subLabelLineClamp: 1,
-      icon,
-      onPress() {
-        return importDefault(command, dependencyMap, _asyncToGenerator);
-      },
-      accessibilityActions: memo,
-      onAccessibilityAction: callback,
-      trailing: closure_13(CommandRowButtonDefault, { hasOptions, sending, onPressSend })
-    };
-    const TableRow = tmp(5917).TableRow;
-    return closure_13(TableRow, obj3);
-  }
-}
 const View = react_native.View;
 ({ useContextIndexState: metroImportDefault, useUserIndexState: metroImportAll } = ApplicationCommandIndexStore);
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
@@ -245,6 +69,542 @@ let obj9 = { PLACEHOLDER: 0, [0]: "PLACEHOLDER", COMMAND: 1, [1]: "COMMAND" };
 const array = new Array(6);
 const obj10 = { type: obj9.PLACEHOLDER };
 let closure_18 = array.fill(obj10);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let isFirstRow;
+  let isLastRow;
+  let items;
+  let items1;
+  let tmp10;
+  const obj = react2;
+  const cResult = obj.c(15);
+  ({ isFirstRow, isLastRow } = arg0);
+  const tmp6 = closure_16();
+  const tmpResult = usePlaceholderSize;
+  const placeholderWidth = tmpResult.usePlaceholderWidth(10, 50);
+  const tmpResult2 = usePlaceholderSize;
+  const placeholderWidth1 = tmpResult2.usePlaceholderWidth(30, 90);
+  const combined = "" + placeholderWidth + "%";
+  if (cResult[0] !== combined) {
+    const obj2 = { width: combined };
+    cResult[0] = combined;
+    cResult[1] = obj2;
+    tmp10 = obj2;
+  } else {
+    tmp10 = cResult[1];
+  }
+  if (cResult[2] === tmp6.loadingTextPlaceholder) {
+    let tmp11;
+    let tmp14;
+    if (cResult[3] === tmp10) {
+      tmp11 = cResult[4];
+    }
+    const _HermesInternal = HermesInternal;
+    const combined1 = "" + placeholderWidth1 + "%";
+    if (cResult[5] !== combined1) {
+      const obj3 = { width: combined1 };
+      cResult[5] = combined1;
+      cResult[6] = obj3;
+      tmp14 = obj3;
+    } else {
+      tmp14 = cResult[6];
+    }
+    if (cResult[7] === tmp6.loadingTextPlaceholderSmall) {
+      let tmp15;
+      if (cResult[8] === tmp14) {
+        tmp15 = cResult[9];
+      }
+      if (cResult[10] === (undefined !== isFirstRow && isFirstRow)) {
+        if (cResult[11] === (undefined !== isLastRow && isLastRow)) {
+          if (cResult[12] === tmp11) {
+            let tmp19;
+            if (cResult[13] === tmp15) {
+              tmp19 = cResult[14];
+            }
+            return tmp19;
+          }
+        }
+      }
+      const obj4 = { label: tmp11, subLabel: tmp15, subLabelLineClamp: 1, start: undefined !== isFirstRow && isFirstRow, end: undefined !== isLastRow && isLastRow };
+      const tmp21 = map1(TableRow2.TableRow, obj4);
+      cResult[10] = undefined !== isFirstRow && isFirstRow;
+      cResult[11] = undefined !== isLastRow && isLastRow;
+      cResult[12] = tmp11;
+      cResult[13] = tmp15;
+      cResult[14] = tmp21;
+      tmp19 = tmp21;
+    }
+    const obj5 = { style: items };
+    items = [tmp6.loadingTextPlaceholderSmall, tmp14];
+    const tmp18 = map1(View, obj5);
+    cResult[7] = tmp6.loadingTextPlaceholderSmall;
+    cResult[8] = tmp14;
+    cResult[9] = tmp18;
+    tmp15 = tmp18;
+  }
+  const obj6 = { style: items1 };
+  items1 = [tmp6.loadingTextPlaceholder, tmp10];
+  const tmp12 = map1(View, obj6);
+  cResult[2] = tmp6.loadingTextPlaceholder;
+  cResult[3] = tmp10;
+  cResult[4] = tmp12;
+  tmp11 = tmp12;
+}) : ((isFirstRow) => {
+  let items;
+  let items1;
+  let obj4;
+  let obj6;
+  let flag = isFirstRow.isFirstRow;
+  if (flag === undefined) {
+    flag = false;
+  }
+  let flag2 = isFirstRow.isLastRow;
+  if (flag2 === undefined) {
+    flag2 = false;
+  }
+  const tmp = closure_16();
+  const obj = usePlaceholderSize;
+  const placeholderWidth = obj.usePlaceholderWidth(10, 50);
+  const obj2 = usePlaceholderSize;
+  const placeholderWidth1 = obj2.usePlaceholderWidth(30, 90);
+  const obj3 = { label: map1(View, obj4), subLabel: map1(View, obj6), subLabelLineClamp: 1, start: flag, end: flag2 };
+  obj4 = { style: items };
+  items = [tmp.loadingTextPlaceholder, ];
+  const obj5 = { width: "" + placeholderWidth + "%" };
+  const TableRow = TableRow2.TableRow;
+  items[1] = obj5;
+  obj6 = { style: items1 };
+  items1 = [tmp.loadingTextPlaceholderSmall, { width: "" + placeholderWidth1 + "%" }];
+  ({ width: "" + placeholderWidth1 + "%" });
+  return map1(TableRow, obj3);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
+  let context;
+  let hasOptions;
+  let installOnDemand;
+  let intl;
+  let isFirstRow;
+  let isLastRow;
+  let onExecuteCommand;
+  let onPressSend;
+  let section;
+  let sectionName;
+  let sending;
+  const tmp = command;
+  let obj = command(section[12]);
+  const cResult = obj.c(43);
+  command = command.command;
+  const onPressCommand = command.onPressCommand;
+  ({ isFirstRow, isLastRow, context } = command);
+  ({ onExecuteCommand, section } = command);
+  const _location = command.location;
+  ({ installOnDemand, sectionName } = command);
+  const icon = command.icon;
+  let obj2 = command(section[15]);
+  const entrypoint = obj2.useAppLauncherContext().entrypoint;
+  closure_8(true, true);
+  onPressSend(context, true, true);
+  if (cResult[0] === command) {
+    if (cResult[1] === _location) {
+      if (cResult[2] === section) {
+        let tmp6;
+        if (cResult[3] === sectionName) {
+          tmp6 = cResult[4];
+        }
+        if (cResult[5] === command.applicationId) {
+          if (cResult[6] === command.integration_types) {
+            if (cResult[7] === context) {
+              if (cResult[8] === entrypoint) {
+                if (cResult[9] === installOnDemand) {
+                  if (cResult[10] === _location) {
+                    let tmp7;
+                    if (cResult[11] === sectionName) {
+                      tmp7 = cResult[12];
+                    }
+                    if (cResult[13] === command) {
+                      if (cResult[14] === context) {
+                        if (cResult[15] === onExecuteCommand) {
+                          if (cResult[16] === sectionName) {
+                            if (cResult[17] === tmp6) {
+                              let tmp9;
+                              let tmp11;
+                              let tmp13;
+                              if (cResult[18] === tmp7) {
+                                tmp9 = cResult[19];
+                              }
+                              const tmpResult = tmp(section[18]);
+                              const commandRowSend = tmpResult.useCommandRowSend(tmp9);
+                              ({ hasOptions, sending, onPressSend } = commandRowSend);
+                              if (cResult[20] !== hasOptions) {
+                                let tmp12;
+                                if (!hasOptions) {
+                                  let obj3 = { name: "send", label: intl.string(tmp(tmp2[19]).t.TXNS7S) };
+                                  intl = tmp(tmp2[19]).intl;
+                                  const items = [obj3];
+                                  tmp12 = items;
+                                }
+                                cResult[20] = hasOptions;
+                                cResult[21] = tmp12;
+                                tmp11 = tmp12;
+                              } else {
+                                tmp11 = cResult[21];
+                              }
+                              if (cResult[22] !== onPressSend) {
+                                const fn3 = function v(nativeEvent) {
+                                  if ("send" === nativeEvent.nativeEvent.actionName) {
+                                    onPressSend();
+                                  }
+                                };
+                                cResult[22] = onPressSend;
+                                cResult[23] = fn3;
+                                tmp13 = fn3;
+                              } else {
+                                tmp13 = cResult[23];
+                              }
+                              if (cResult[24] === command) {
+                                if (cResult[25] === _location) {
+                                  if (cResult[26] === onPressCommand) {
+                                    let tmp14;
+                                    if (cResult[27] === section) {
+                                      tmp14 = cResult[28];
+                                    }
+                                    if (cResult[29] === hasOptions) {
+                                      if (cResult[30] === onPressSend) {
+                                        let tmp15;
+                                        if (cResult[31] === sending) {
+                                          tmp15 = cResult[32];
+                                        }
+                                        if (cResult[33] === tmp11) {
+                                          if (cResult[34] === command.displayDescription) {
+                                            if (cResult[35] === command.displayName) {
+                                              if (cResult[36] === icon) {
+                                                if (cResult[37] === isFirstRow) {
+                                                  if (cResult[38] === isLastRow) {
+                                                    if (cResult[39] === tmp13) {
+                                                      if (cResult[40] === tmp14) {
+                                                        let tmp19;
+                                                        if (cResult[41] === tmp15) {
+                                                          tmp19 = cResult[42];
+                                                        }
+                                                        return tmp19;
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                        let tmp20 = closure_13;
+                                        let obj4 = { start: isFirstRow, end: isLastRow, label: null, labelLineClamp: 1, subLabel: null, subLabelLineClamp: 1, icon, onPress: tmp14, accessibilityActions: null, onAccessibilityAction: tmp13, trailing: tmp15 };
+                                        ({ displayName: obj7.label, displayDescription: obj7.subLabel } = command);
+                                        class M {
+                                          constructor() {
+                                            return onPressCommand(command, section, _location);
+                                          }
+                                        }
+                                        const tmp21 = closure_13(tmp(section[14]).TableRow, obj4);
+                                        cResult[33] = tmp11;
+                                        cResult[34] = command.displayDescription;
+                                        cResult[35] = command.displayName;
+                                        cResult[36] = icon;
+                                        cResult[37] = isFirstRow;
+                                        cResult[38] = isLastRow;
+                                        cResult[39] = tmp13;
+                                        cResult[40] = tmp14;
+                                        cResult[41] = tmp15;
+                                        cResult[42] = tmp21;
+                                        tmp19 = tmp21;
+                                      }
+                                    }
+                                    let obj5 = { hasOptions, sending, onPressSend };
+                                    const tmp18 = closure_13(onPressCommand(section[18]), obj5);
+                                    class M {
+                                      constructor() {
+                                        return onPressCommand(command, section, _location);
+                                      }
+                                    }
+                                    cResult[30] = onPressSend;
+                                    cResult[31] = sending;
+                                    cResult[32] = tmp18;
+                                    tmp15 = tmp18;
+                                  }
+                                }
+                              }
+                              class M {
+                                constructor() {
+                                  return onPressCommand(command, section, _location);
+                                }
+                              }
+                              cResult[24] = command;
+                              cResult[25] = _location;
+                              cResult[26] = onPressCommand;
+                              cResult[27] = section;
+                              cResult[28] = M;
+                              tmp14 = M;
+                            }
+                          }
+                        }
+                      }
+                    }
+                    let obj6 = { command, context, beforeExecuteCommand: tmp6, onExecuteCommand, tryExecuteCommand: tmp7, sectionName };
+                    cResult[14] = context;
+                    cResult[15] = onExecuteCommand;
+                    cResult[16] = sectionName;
+                    cResult[17] = tmp6;
+                    cResult[18] = tmp7;
+                    cResult[19] = obj6;
+                    tmp9 = obj6;
+                  }
+                }
+              }
+            }
+          }
+        }
+        let fn2;
+        if (installOnDemand) {
+          let closure_0 = _location(function*(arg0, value) {
+            let obj5;
+            let tmp20;
+            closure_0 = arg0;
+            if (c3 === 2) {
+              c3 = 3;
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp3 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj2 = { value, done: true };
+                return obj2;
+              } else {
+                return { value: "IconComponent", done: null };
+              }
+            } else {
+              try {
+                c3 = 2;
+                if (0 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj3 = { value, done: true };
+                    return obj3;
+                  } else {
+                    let closure_1 = tmp;
+                    let channel;
+                    const obj4 = { applicationId: closure_0.applicationId, channel, commandIntegrationTypes: tmp20.integration_types, appLauncherContext: obj5 };
+                    const installApplicationOnDemandIfNeeded = closure_0(section[17]).installApplicationOnDemandIfNeeded;
+                    const tmp19 = closure_0(section[17]);
+                    tmp20 = closure_0;
+                    if ("channel" === c2.type) {
+                      channel = c2.channel;
+                    }
+                    obj5 = { entrypoint, location: _location, sectionName };
+                    c2 = 1;
+                    c3 = 1;
+                    const obj6 = { value: installApplicationOnDemandIfNeeded(obj4), done: false };
+                    return obj6;
+                  }
+                } else if (arg0 === 1) {
+                  c3 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 3;
+                  const obj = { value, done: true };
+                  return obj;
+                } else {
+                  if (value.isAuthorized) {
+                    closure_0();
+                  }
+                  c3 = 3;
+                  return { value: "IconComponent", done: null };
+                }
+              } catch (tmp12) {
+                c3 = 3;
+                throw tmp12;
+              }
+            }
+          });
+          fn2 = function() {
+            return closure_0(...arguments);
+          };
+        }
+        cResult[5] = command.applicationId;
+        cResult[6] = command.integration_types;
+        cResult[7] = context;
+        cResult[8] = entrypoint;
+        cResult[9] = installOnDemand;
+        cResult[10] = _location;
+        cResult[11] = sectionName;
+        cResult[12] = fn2;
+        tmp7 = fn2;
+      }
+    }
+  }
+  const fn = function o() {
+    let obj2;
+    const obj = { command, location: _location, triggerSection: obj2.getCommandTriggerSection(section), sectionName };
+    const trackCommandSelected = ApplicationCommandUtils.trackCommandSelected;
+    ApplicationCommandUtils;
+    obj2 = ApplicationCommandUtils;
+    return trackCommandSelected(obj);
+  };
+  cResult[0] = command;
+  cResult[1] = _location;
+  cResult[2] = section;
+  cResult[3] = sectionName;
+  cResult[4] = fn;
+  tmp6 = fn;
+}) : ((command) => {
+  let _location;
+  let context;
+  let fn;
+  let icon;
+  let installOnDemand;
+  let isFirstRow;
+  let isLastRow;
+  let onExecuteCommand;
+  let sectionName;
+  command = command.command;
+  ({ onPressCommand: importDefault, context } = command);
+  ({ section: dependencyMap, location: _asyncToGenerator, sectionName } = command);
+  let hasOptions;
+  let onPressSend;
+  ({ isFirstRow, isLastRow, onExecuteCommand, installOnDemand, icon } = command);
+  let tmp = command;
+  let obj = command(10749);
+  const entrypoint = obj.useAppLauncherContext().entrypoint;
+  const tmp3 = onPressSend(true, true);
+  hasOptions(context, true, true);
+  let obj2 = {
+    command,
+    context,
+    beforeExecuteCommand() {
+      let obj2;
+      const obj = { command, location: _asyncToGenerator, triggerSection: obj2.getCommandTriggerSection(dependencyMap), sectionName };
+      const trackCommandSelected = ApplicationCommandUtils.trackCommandSelected;
+      ApplicationCommandUtils;
+      obj2 = ApplicationCommandUtils;
+      return trackCommandSelected(obj);
+    },
+    onExecuteCommand,
+    tryExecuteCommand: fn,
+    sectionName
+  };
+  fn = undefined;
+  const useCommandRowSend = command(11473).useCommandRowSend;
+  const tmp5 = command(11473);
+  if (installOnDemand) {
+    let closure_0 = _asyncToGenerator(async (arg0, value) => {
+      let obj5;
+      let tmp20;
+      closure_0 = arg0;
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              let closure_1 = tmp;
+              let channel;
+              const obj4 = { applicationId: closure_0.applicationId, channel, commandIntegrationTypes: tmp20.integration_types, appLauncherContext: obj5 };
+              const installApplicationOnDemandIfNeeded = closure_0(dependencyMap[17]).installApplicationOnDemandIfNeeded;
+              const tmp19 = closure_0(dependencyMap[17]);
+              tmp20 = closure_0;
+              if ("channel" === c2.type) {
+                channel = c2.channel;
+              }
+              obj5 = { entrypoint, location: _location, sectionName };
+              c2 = 1;
+              c3 = 1;
+              const obj6 = { value: installApplicationOnDemandIfNeeded(obj4), done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            if (value.isAuthorized) {
+              closure_0();
+            }
+            c3 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp12) {
+          c3 = 3;
+          throw tmp12;
+        }
+      }
+    });
+    fn = function() {
+      return closure_0(...arguments);
+    };
+  }
+  const commandRowSend = useCommandRowSend(obj2);
+  hasOptions = commandRowSend.hasOptions;
+  onPressSend = commandRowSend.onPressSend;
+  let items = [hasOptions];
+  const sending = commandRowSend.sending;
+  const items1 = [onPressSend];
+  const memo = sectionName.useMemo(() => {
+    let intl;
+    let tmp;
+    if (!hasOptions) {
+      const obj = { name: "send", label: intl.string(intl3.t.TXNS7S) };
+      intl = intl3.intl;
+      const items = [obj];
+      tmp = items;
+    }
+    return tmp;
+  }, items);
+  const callback = sectionName.useCallback((nativeEvent) => {
+    if ("send" === nativeEvent.nativeEvent.actionName) {
+      onPressSend();
+    }
+  }, items1);
+  let obj3 = {
+    start: isFirstRow,
+    end: isLastRow,
+    label: command.displayName,
+    labelLineClamp: 1,
+    subLabel: command.displayDescription,
+    subLabelLineClamp: 1,
+    icon,
+    onPress() {
+      return importDefault(command, dependencyMap, _asyncToGenerator);
+    },
+    accessibilityActions: memo,
+    onAccessibilityAction: callback,
+    trailing: closure_13(CommandRowButtonDefault, { hasOptions, sending, onPressSend })
+  };
+  const TableRow = tmp(5916).TableRow;
+  return closure_13(TableRow, obj3);
+});
+let closure_20 = tmp6;
 let result = size.fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/AppDetailContent.tsx");
 
 export default function AppDetailContent(context) {
@@ -287,23 +647,23 @@ export default function AppDetailContent(context) {
   let tmp = onPressCommand();
   let closure_7 = tmp;
   const tmp3 = sectionName;
-  const bottom = application(sectionName[18])().bottom;
-  let obj = context(sectionName[13]);
+  const bottom = application(sectionName[20])().bottom;
+  let obj = context(sectionName[15]);
   const requiredAppLauncherContext = obj.useRequiredAppLauncherContext();
   const chatInputRef = requiredAppLauncherContext.chatInputRef;
   const keyboardCloseReasonRef = requiredAppLauncherContext.keyboardCloseReasonRef;
-  let tmp6 = installOnDemand(sectionName[19]);
+  let tmp6 = installOnDemand(sectionName[21]);
   let obj2 = { context, filters: obj3, options: obj4, allowFetch: true };
   obj3 = { commandTypes: items };
   const useDiscovery = tmp6.useDiscovery;
-  items = [context(sectionName[20]).ApplicationCommandType.CHAT];
+  items = [context(sectionName[22]).ApplicationCommandType.CHAT];
   obj4 = { placeholderCount: 0, limit: loading, includeFrecency: true, allowApplicationState: installOnDemand, installOnDemand, applicationId: application.id };
   const discovery = useDiscovery(obj2);
   const filterSection = discovery.filterSection;
   const sectionDescriptors = discovery.sectionDescriptors;
   loading = discovery.loading;
   let obj5 = { sectionId: application.id, commandsByActiveSection: discovery.commandsByActiveSection };
-  const tmp8 = application(sectionName[21])(obj5);
+  const tmp8 = application(sectionName[23])(obj5);
   ({ setSortOrder: c13, commands } = tmp8);
   let canSort = tmp8.canSort;
   const sortOrder = tmp8.sortOrder;
@@ -319,7 +679,7 @@ export default function AppDetailContent(context) {
   }
   let tmp12 = tmp11 && tmp10;
   if (tmp12) {
-    const tmp4Result = context(tmp3[22]);
+    const tmp4Result = context(tmp3[24]);
     tmp12 = !tmp4Result.isEmbeddedApp(application);
   }
   let items1 = [loading, commands, context.type];
@@ -377,10 +737,10 @@ export default function AppDetailContent(context) {
     const type = item.type;
     if (obj9.PLACEHOLDER === type) {
       const obj2 = { isFirstRow: 0 === index, isLastRow: index === found.length - 1 };
-      return map1(PlaceholderCommandRow, obj2);
+      return map1(closure_19, obj2);
     } else if (tmp.COMMAND === type) {
       const obj = { command: item.command, onPressCommand, isFirstRow: 0 === index, isLastRow: index === commands.length - 1, context, onExecuteCommand: callback1, section: found, location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW, installOnDemand, sectionName };
-      return map1(CommandRow, obj);
+      return map1(closure_20, obj);
     } else {
       return null;
     }
@@ -405,8 +765,8 @@ export default function AppDetailContent(context) {
       const obj2 = { style: closure_7.monetizationDisclosureStyle, children: items };
       items = [map1(BillIcon.BillIcon, { size: "sm", color: "icon-muted" }), ];
       const obj3 = { style: closure_7.monetizationDisclosureTextStyle, variant: "text-xs/normal", color: "text-subtle", lineClamp: 1, children: intl.string(intl3.t["5khEk8"]) };
-      const Text = tmp(4832).Text;
-      intl = tmp(1115).intl;
+      const Text = tmp(4833).Text;
+      intl = tmp(1127).intl;
       items[1] = map1(Text, obj3);
       tmp6 = authStore2(View, obj2);
     }
@@ -415,8 +775,8 @@ export default function AppDetailContent(context) {
       const obj4 = { style: closure_7.monetizationDisclosureStyle, children: items1 };
       items1 = [map1(ShopIcon.ShopIcon, { size: "sm", color: "icon-muted" }), ];
       const obj5 = { style: closure_7.monetizationDisclosureTextStyle, variant: "text-xs/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(intl3.t["8z5B2U"]) };
-      const Text2 = tmp(4832).Text;
-      intl2 = tmp(1115).intl;
+      const Text2 = tmp(4833).Text;
+      intl2 = tmp(1127).intl;
       items1[1] = map1(Text2, obj5);
       tmp11 = authStore2(View, obj4);
     }
@@ -437,24 +797,24 @@ export default function AppDetailContent(context) {
     return obj;
   }, items7);
   const memo3 = onCommandExecuted.useMemo(() => ({ bottom: _undefined2 }), items8);
-  const tmp4Result4 = context(tmp3[29]);
+  const tmp4Result4 = context(tmp3[31]);
   const appLauncherFlashListProps = tmp4Result4.useAppLauncherFlashListProps();
   let obj6 = { style: tmp.headerSpacer };
   const items9 = [, , , , , , ];
-  const tmp2Result = application(tmp3[29]);
+  const tmp2Result = application(tmp3[31]);
   items9[0] = c13(onAauth2Cancel, obj6);
-  const tmp4Result5 = context(tmp3[22]);
+  const tmp4Result5 = context(tmp3[24]);
   if (tmp4Result5.isEmbeddedApp(application)) {
     const obj7 = { application, context, sectionName, onActivityItemSelected, entrypoint, hasCommands: commands.length > 0 };
-    tmp27Result = tmp27(tmp2(tmp3[30]), obj7);
+    tmp27Result = tmp27(tmp2(tmp3[32]), obj7);
   } else {
     const obj8 = { application, viewContainerStyle: null, mainContainerStyle: null };
     ({ viewContainerStyle: obj10.viewContainerStyle, mainContainerStyle: obj10.mainContainerStyle } = tmp);
-    tmp27Result = tmp27(tmp2(tmp3[31]), obj8);
+    tmp27Result = tmp27(tmp2(tmp3[33]), obj8);
   }
   items9[1] = tmp27Result;
   let num3 = 24;
-  const Spacer = tmp4(tmp3[32]).Spacer;
+  const Spacer = tmp4(tmp3[34]).Spacer;
   if (null != memo1) {
     num3 = tmp2(tmp3[10]).space.PX_16;
   }
@@ -463,18 +823,18 @@ export default function AppDetailContent(context) {
   let tmp27Result3 = commands.length > 1 && !loading && "channel" === context.type;
   if (tmp27Result3) {
     obj9 = { context, allCommands: commands, onPressCommand, section: found, onExecuteCommand: callback1, installOnDemand, sectionName };
-    tmp27Result3 = tmp27(tmp2(tmp3[33]), obj9);
+    tmp27Result3 = tmp27(tmp2(tmp3[35]), obj9);
   }
   items9[4] = tmp27Result3;
   let tmp27Result4 = null;
   if (tmp11) {
     tmp27Result4 = null;
-    const tmp4Result6 = context(tmp3[22]);
+    const tmp4Result6 = context(tmp3[24]);
     if (!tmp4Result6.isEmbeddedApp(application)) {
       const obj11 = { style: tmp.noCommandsTextContainer, children: c13(Text, obj12) };
-      obj12 = { variant: "text-sm/normal", color: "text-default", children: intl.string(context(tmp3[17]).t["w8+YDM"]) };
-      Text = tmp4(tmp3[27]).Text;
-      intl = tmp4(tmp3[17]).intl;
+      obj12 = { variant: "text-sm/normal", color: "text-default", children: intl.string(context(tmp3[19]).t["w8+YDM"]) };
+      Text = tmp4(tmp3[29]).Text;
+      intl = tmp4(tmp3[19]).intl;
       tmp27Result4 = tmp27(tmp29, obj11);
     }
   }
@@ -485,9 +845,9 @@ export default function AppDetailContent(context) {
     if ("channel" === context.type) {
       const obj13 = { style: tmp.commandsHeaderContainer, children: items10 };
       const obj14 = { style: tmp.commandsHeaderTextContainer, children: c13(Heading, obj15) };
-      obj15 = { variant: "text-md/medium", color: "text-default", children: intl2.string(context(tmp3[17]).t.GOXqks) };
-      Heading = tmp4(tmp3[27]).Heading;
-      intl2 = tmp4(tmp3[17]).intl;
+      obj15 = { variant: "text-md/medium", color: "text-default", children: intl2.string(context(tmp3[19]).t.GOXqks) };
+      Heading = tmp4(tmp3[29]).Heading;
+      intl2 = tmp4(tmp3[19]).intl;
       items10 = [c13(onAauth2Cancel, obj14), ];
       if (canSort) {
         const obj16 = {
@@ -496,7 +856,7 @@ export default function AppDetailContent(context) {
                   _undefined(dependencyMap);
                 }
         };
-        canSort = tmp27(tmp2(tmp3[34]), obj16);
+        canSort = tmp27(tmp2(tmp3[36]), obj16);
       }
       items10[1] = canSort;
       tmp25Result = tmp25(tmp29, obj13);
@@ -519,16 +879,16 @@ export default function AppDetailContent(context) {
       installAppProps = installAppProps.installAppProps;
       let obj2;
       const tmp = sectionName;
-      let obj = application(sectionName[35]);
+      let obj = application(sectionName[37]);
       obj.hideActionSheet();
-      keyboardCloseReasonRef.current = context(sectionName[13]).AppLauncherKeyboardCloseReason.OAUTH_MODAL;
+      keyboardCloseReasonRef.current = context(sectionName[15]).AppLauncherKeyboardCloseReason.OAUTH_MODAL;
       const current = chatInputRef.current;
       if (current != null) {
         current.closeCustomKeyboard();
       }
-      obj2 = { location: tmp3(tmp[23]).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU, application_id: application.id, section_name: sectionName, source: entrypoint };
+      obj2 = { location: tmp3(tmp[25]).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU, application_id: application.id, section_name: sectionName, source: entrypoint };
       if (null == installAppProps.customInstallUrl) {
-        const tmp3Result = context(tmp[36]);
+        const tmp3Result = context(tmp[38]);
         tmp3Result.trackWithMetadata(sectionDescriptors.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, obj2);
       }
       const obj3 = {
@@ -544,8 +904,8 @@ export default function AppDetailContent(context) {
           }
         }
       };
-      const installApplication = tmp3(tmp[37]).installApplication;
-      context(tmp[37]);
+      const installApplication = tmp3(tmp[39]).installApplication;
+      context(tmp[39]);
       const merged = Object.assign(installAppProps);
       installApplication(obj3);
     }
@@ -554,4 +914,4 @@ export default function AppDetailContent(context) {
   return commands(navigation, obj18);
 };
 export const BETWEEN_SECTIONS_MARGIN = 24;
-export { CommandRow };
+export const CommandRow = tmp6;

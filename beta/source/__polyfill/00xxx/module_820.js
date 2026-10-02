@@ -1,269 +1,178 @@
 // Module ID: 820
 // Function ID: 821
-// Dependencies: [704, 684, 821, 822, 823, 824]
-// Exports: addVercelAiProcessors
+// Dependencies: [817, 777, 819]
+// Exports: buildTypeSpecificAttributes
 
 // Module 820
-import TRACE_FLAG_NONE from "TRACE_FLAG_NONE" /* 684 */;
-import AI_MODEL_ID_ATTRIBUTE from "AI_MODEL_ID_ATTRIBUTE" /* 821 */;
-import _INTERNAL_cleanupToolCallSpan from "_INTERNAL_cleanupToolCallSpan" /* 822 */;
-import ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE from "ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE" /* 823 */;
+import _mod777 from "module_777" /* 777 */;
+import CLIENT_ADDRESS_ATTRIBUTE from "CLIENT_ADDRESS_ATTRIBUTE" /* 817 */;
+import extractTargetInfo2 from "extractTargetInfo" /* 819 */;
 
-let map;
-
-function onVercelAiSpanStart(setAttribute) {
-  let data;
-  let description;
-  const obj = TRACE_FLAG_NONE;
-  ({ data, description } = obj.spanToJSON(setAttribute));
-  obj.spanToJSON(setAttribute);
-  if (description) {
-    if (data[AI_MODEL_ID_ATTRIBUTE.AI_TOOL_CALL_NAME_ATTRIBUTE]) {
-      if (data[AI_MODEL_ID_ATTRIBUTE.AI_TOOL_CALL_ID_ATTRIBUTE]) {
-        if ("ai.toolCall" === description) {
-          const attr = setAttribute.setAttribute(tmp(704).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.vercelai.otel");
-          const attr1 = setAttribute.setAttribute(tmp(704).SEMANTIC_ATTRIBUTE_SENTRY_OP, "gen_ai.execute_tool");
-          const AI_TOOL_CALL_NAME_ATTRIBUTE = tmp(821).AI_TOOL_CALL_NAME_ATTRIBUTE;
-          if (null != data[AI_TOOL_CALL_NAME_ATTRIBUTE]) {
-            data["gen_ai.tool.name"] = data[AI_TOOL_CALL_NAME_ATTRIBUTE];
-            delete data[AI_TOOL_CALL_NAME_ATTRIBUTE];
-          }
-          const AI_TOOL_CALL_ID_ATTRIBUTE = tmp(821).AI_TOOL_CALL_ID_ATTRIBUTE;
-          if (null != data[AI_TOOL_CALL_ID_ATTRIBUTE]) {
-            data["gen_ai.tool.call.id"] = data[AI_TOOL_CALL_ID_ATTRIBUTE];
-            delete data[AI_TOOL_CALL_ID_ATTRIBUTE];
-          }
-          const prop = data["gen_ai.tool.call.id"];
-          if (typeof prop === "string") {
-            const toolCallSpanMap = tmp(824).toolCallSpanMap;
-            const result = toolCallSpanMap.set(prop, setAttribute);
-          }
-          if (!data["gen_ai.tool.type"]) {
-            const attr2 = setAttribute.setAttribute("gen_ai.tool.type", "function");
-          }
-          const prop1 = data["gen_ai.tool.name"];
-          if (prop1) {
-            const _HermesInternal7 = HermesInternal;
-            setAttribute.updateName("execute_tool " + prop1);
-          }
+function getNotificationAttributes(arg0, requestId, arg2) {
+  const obj = {};
+  if ("notifications/cancelled" === arg0) {
+    requestId = undefined;
+    if (requestId != null) {
+      requestId = requestId.requestId;
+    }
+    if (requestId) {
+      const _String7 = String;
+      obj["mcp.cancelled.request_id"] = String(requestId.requestId);
+    }
+    let reason;
+    if (requestId != null) {
+      reason = requestId.reason;
+    }
+    if (reason) {
+      const _String8 = String;
+      obj["mcp.cancelled.reason"] = String(requestId.reason);
+    }
+  } else if ("notifications/message" === arg0) {
+    let level;
+    if (requestId != null) {
+      level = requestId.level;
+    }
+    if (level) {
+      const _String5 = String;
+      obj[CLIENT_ADDRESS_ATTRIBUTE.MCP_LOGGING_LEVEL_ATTRIBUTE] = String(requestId.level);
+    }
+    let logger;
+    if (requestId != null) {
+      logger = requestId.logger;
+    }
+    if (logger) {
+      const _String6 = String;
+      obj[CLIENT_ADDRESS_ATTRIBUTE.MCP_LOGGING_LOGGER_ATTRIBUTE] = String(requestId.logger);
+    }
+    let data1;
+    if (requestId != null) {
+      data1 = requestId.data;
+    }
+    if (undefined !== data1) {
+      obj[CLIENT_ADDRESS_ATTRIBUTE.MCP_LOGGING_DATA_TYPE_ATTRIBUTE] = typeof requestId.data;
+      const tmp33 = require;
+      if (arg2) {
+        const data = requestId.data;
+        let json = data;
+        const MCP_LOGGING_MESSAGE_ATTRIBUTE = tmp33(817).MCP_LOGGING_MESSAGE_ATTRIBUTE;
+        if (typeof data !== "string") {
+          const _JSON = JSON;
+          json = JSON.stringify(data);
         }
+        obj[MCP_LOGGING_MESSAGE_ATTRIBUTE] = json;
       }
     }
-    const startsWithResult = data[tmp(undefined, 821).AI_OPERATION_ID_ATTRIBUTE] || description.startsWith("ai.");
-    if (startsWithResult) {
-      const attr3 = setAttribute.setAttribute(tmp(704).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.vercelai.otel");
-      const replaced = description.replace("ai.", "");
-      const attr4 = setAttribute.setAttribute("ai.pipeline.name", replaced);
-      setAttribute.updateName(replaced);
-      const tmp9 = data[AI_MODEL_ID_ATTRIBUTE.AI_TELEMETRY_FUNCTION_ID_ATTRIBUTE];
-      const tmp10 = tmp9 && typeof tmp9 === "string";
-      if (tmp10) {
-        const _HermesInternal = HermesInternal;
-        setAttribute.updateName("" + replaced + " " + tmp9);
-        const attr5 = setAttribute.setAttribute("gen_ai.function_id", tmp9);
+  } else if ("notifications/progress" === arg0) {
+    let progressToken;
+    if (requestId != null) {
+      progressToken = requestId.progressToken;
+    }
+    if (progressToken) {
+      const _String3 = String;
+      obj["mcp.progress.token"] = String(requestId.progressToken);
+    }
+    let progress;
+    if (requestId != null) {
+      progress = requestId.progress;
+    }
+    if (typeof progress === "number") {
+      obj["mcp.progress.current"] = requestId.progress;
+    }
+    let total;
+    if (requestId != null) {
+      total = requestId.total;
+    }
+    if (typeof total === "number") {
+      obj["mcp.progress.total"] = requestId.total;
+      let progress1;
+      if (requestId != null) {
+        progress1 = requestId.progress;
       }
-      const tmpResult = _INTERNAL_cleanupToolCallSpan;
-      const messagesFromPrompt = tmpResult.requestMessagesFromPrompt(setAttribute, data);
-      const tmp15 = data[AI_MODEL_ID_ATTRIBUTE.AI_MODEL_ID_ATTRIBUTE] && !data[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_MODEL_ATTRIBUTE];
-      if (tmp15) {
-        setAttribute = setAttribute.setAttribute;
-        const attr6 = setAttribute(tmp(823).GEN_AI_RESPONSE_MODEL_ATTRIBUTE, data[tmp(undefined, 821).AI_MODEL_ID_ATTRIBUTE]);
-      }
-      const attr7 = setAttribute.setAttribute("ai.streaming", description.includes("stream"));
-      const tmpResult2 = _INTERNAL_cleanupToolCallSpan;
-      const spanOpFromName = tmpResult2.getSpanOpFromName(description);
-      if (spanOpFromName) {
-        const attr8 = setAttribute.setAttribute(tmp(704).SEMANTIC_ATTRIBUTE_SENTRY_OP, spanOpFromName);
-      }
-      const tmp20 = data[AI_MODEL_ID_ATTRIBUTE.AI_MODEL_ID_ATTRIBUTE];
-      if (tmp20) {
-        if ("ai.generateText.doGenerate" === description) {
-          const _HermesInternal6 = HermesInternal;
-          setAttribute.updateName("generate_text " + tmp20);
-        } else if ("ai.streamText.doStream" === description) {
-          const _HermesInternal5 = HermesInternal;
-          setAttribute.updateName("stream_text " + tmp20);
-        } else if ("ai.generateObject.doGenerate" === description) {
-          const _HermesInternal4 = HermesInternal;
-          setAttribute.updateName("generate_object " + tmp20);
-        } else if ("ai.streamObject.doStream" === description) {
-          const _HermesInternal3 = HermesInternal;
-          setAttribute.updateName("stream_object " + tmp20);
-        } else if ("ai.embed.doEmbed" === description) {
-          const _HermesInternal2 = HermesInternal;
-          setAttribute.updateName("embed " + tmp20);
-        } else if ("ai.embedMany.doEmbed" === description) {
-          const _HermesInternal8 = HermesInternal;
-          setAttribute.updateName("embed_many " + tmp20);
-        }
+      if (typeof progress1 === "number") {
+        obj["mcp.progress.percentage"] = requestId.progress / requestId.total * 100;
       }
     }
+    let message;
+    if (requestId != null) {
+      message = requestId.message;
+    }
+    if (message) {
+      const _String4 = String;
+      obj["mcp.progress.message"] = String(requestId.message);
+    }
+  } else if ("notifications/resources/updated" === arg0) {
+    let uri;
+    if (requestId != null) {
+      uri = requestId.uri;
+    }
+    if (uri) {
+      const _String = String;
+      obj[CLIENT_ADDRESS_ATTRIBUTE.MCP_RESOURCE_URI_ATTRIBUTE] = String(requestId.uri);
+      const _String2 = String;
+      const obj2 = _mod777;
+      const result = obj2.parseStringToURLObject(String(requestId.uri));
+      let tmp7 = result;
+      const tmp3 = require;
+      if (tmp7) {
+        const tmp3Result = tmp3(777);
+        tmp7 = !tmp3Result.isURLObjectRelative(result);
+      }
+      if (tmp7) {
+        const str2 = result.protocol;
+        obj["mcp.resource.protocol"] = str2.replace(":", "");
+      }
+    }
+  } else if ("notifications/initialized" === arg0) {
+    obj["mcp.lifecycle.phase"] = "initialization_complete";
+    obj["mcp.protocol.ready"] = 1;
   }
-}
-function vercelAiEventProcessor(type) {
-  if ("transaction" === type.type) {
-    if (type.spans) {
-      const _Map = Map;
-      const self = this;
-      const self2 = this;
-      map = new Map();
-      const spans = type.spans;
-      for (const item10015 of spans) {
-        let tmp7 = processEndedVercelAiSpan(item10015);
-        let obj = _INTERNAL_cleanupToolCallSpan;
-        let result = obj.accumulateTokensForParent(item10015, map);
-        continue;
-      }
-      const spans2 = type.spans;
-      const iter = spans2[Symbol.iterator]();
-      const nextResult = iter.next();
-      while (iter !== undefined) {
-        if ("gen_ai.invoke_agent" === nextResult.op) {
-          let obj2 = _INTERNAL_cleanupToolCallSpan;
-          let result1 = obj2.applyAccumulatedTokens(tmp15, map);
-        }
-        continue;
-      }
-      const contexts = type.contexts;
-      let trace;
-      if (contexts != null) {
-        trace = contexts.trace;
-      }
-      const tmp22 = trace && "gen_ai.invoke_agent" === trace.op;
-      if (tmp22) {
-        const obj3 = _INTERNAL_cleanupToolCallSpan;
-        const result2 = obj3.applyAccumulatedTokens(trace, map);
-      }
-    }
-  }
-  return type;
-}
-function processEndedVercelAiSpan(item10015) {
-  function addProviderMetadataToAttributes(data) {
-    const tmp3 = data[AI_MODEL_ID_ATTRIBUTE.AI_RESPONSE_PROVIDER_METADATA_ATTRIBUTE];
-    if (tmp3) {
-      try {
-        const _JSON = JSON;
-        const parsed = JSON.parse(tmp3);
-        const azure = parsed.openai ?? tmp6.azure;
-        const tmp9 = azure;
-        if (tmp9) {
-          setAttributeIfDefined(data, ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_INPUT_TOKENS_CACHED_ATTRIBUTE, azure.cachedPromptTokens);
-          setAttributeIfDefined(data, "gen_ai.usage.output_tokens.reasoning", azure.reasoningTokens);
-          setAttributeIfDefined(data, "gen_ai.usage.output_tokens.prediction_accepted", azure.acceptedPredictionTokens);
-          setAttributeIfDefined(data, "gen_ai.usage.output_tokens.prediction_rejected", azure.rejectedPredictionTokens);
-          setAttributeIfDefined(data, "gen_ai.conversation.id", azure.responseId);
-        }
-        if (parsed.anthropic) {
-          const usage = tmp6.anthropic.usage;
-          let prop;
-          if (usage != null) {
-            prop = usage.cache_read_input_tokens;
-          }
-          if (prop == null) {
-            prop = tmp6.anthropic.cacheReadInputTokens;
-          }
-          setAttributeIfDefined(data, ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_INPUT_TOKENS_CACHED_ATTRIBUTE, prop);
-          const usage2 = tmp6.anthropic.usage;
-          let prop1;
-          const tmp20 = setAttributeIfDefined;
-          if (usage2 != null) {
-            prop1 = usage2.cache_creation_input_tokens;
-          }
-          if (prop1 == null) {
-            prop1 = tmp6.anthropic.cacheCreationInputTokens;
-          }
-          tmp20(data, ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_INPUT_TOKENS_CACHE_WRITE_ATTRIBUTE, prop1);
-        }
-        const bedrock = tmp6.bedrock;
-        let usage1;
-        if (bedrock != null) {
-          usage1 = bedrock.usage;
-        }
-        if (usage1) {
-          setAttributeIfDefined(data, ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_INPUT_TOKENS_CACHED_ATTRIBUTE, parsed.bedrock.usage.cacheReadInputTokens);
-          setAttributeIfDefined(data, ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_INPUT_TOKENS_CACHE_WRITE_ATTRIBUTE, parsed.bedrock.usage.cacheWriteInputTokens);
-        }
-        if (parsed.deepseek) {
-          setAttributeIfDefined(data, ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_INPUT_TOKENS_CACHED_ATTRIBUTE, parsed.deepseek.promptCacheHitTokens);
-          setAttributeIfDefined(data, "gen_ai.usage.input_tokens.cache_miss", parsed.deepseek.promptCacheMissTokens);
-        }
-      } catch (err) {
-      }
-    }
-  }
-  const data = item10015.data;
-  if ("auto.vercelai.otel" === item10015.origin) {
-    renameAttributeKey(data, AI_MODEL_ID_ATTRIBUTE.AI_USAGE_COMPLETION_TOKENS_ATTRIBUTE, ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE);
-    renameAttributeKey(data, AI_MODEL_ID_ATTRIBUTE.AI_USAGE_PROMPT_TOKENS_ATTRIBUTE, ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE);
-    renameAttributeKey(data, AI_MODEL_ID_ATTRIBUTE.AI_USAGE_CACHED_INPUT_TOKENS_ATTRIBUTE, ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_INPUT_TOKENS_CACHED_ATTRIBUTE);
-    const tmp34 = data[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE];
-    let tmp35 = typeof tmp34 === "number";
-    if (typeof tmp34 === "number") {
-      tmp35 = typeof data[tmp29(undefined, 823).GEN_AI_USAGE_INPUT_TOKENS_CACHED_ATTRIBUTE] === "number";
-    }
-    if (tmp35) {
-      const GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE = tmp29(823).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE;
-      data[GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE] = data[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE] + data[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_INPUT_TOKENS_CACHED_ATTRIBUTE];
-    }
-    const tmp = data[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE];
-    let tmp2 = typeof tmp === "number";
-    if (typeof tmp === "number") {
-      tmp2 = typeof data[tmp29(undefined, 823).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE] === "number";
-    }
-    if (tmp2) {
-      data["gen_ai.usage.total_tokens"] = data[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE] + data[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE];
-    }
-    let isArray = data[tmp29(undefined, 821).AI_PROMPT_TOOLS_ATTRIBUTE];
-    if (isArray) {
-      const _Array = Array;
-      isArray = Array.isArray(data[tmp29(undefined, 821).AI_PROMPT_TOOLS_ATTRIBUTE]);
-    }
-    if (isArray) {
-      const AI_PROMPT_TOOLS_ATTRIBUTE = tmp29(821).AI_PROMPT_TOOLS_ATTRIBUTE;
-      const tmp29Result = _INTERNAL_cleanupToolCallSpan;
-      data[AI_PROMPT_TOOLS_ATTRIBUTE] = tmp29Result.convertAvailableToolsToJsonString(data[AI_MODEL_ID_ATTRIBUTE.AI_PROMPT_TOOLS_ATTRIBUTE]);
-    }
-    renameAttributeKey(data, AI_MODEL_ID_ATTRIBUTE.OPERATION_NAME_ATTRIBUTE, ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_OPERATION_NAME_ATTRIBUTE);
-    renameAttributeKey(data, AI_MODEL_ID_ATTRIBUTE.AI_PROMPT_MESSAGES_ATTRIBUTE, ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_REQUEST_MESSAGES_ATTRIBUTE);
-    renameAttributeKey(data, AI_MODEL_ID_ATTRIBUTE.AI_RESPONSE_TEXT_ATTRIBUTE, "gen_ai.response.text");
-    renameAttributeKey(data, AI_MODEL_ID_ATTRIBUTE.AI_RESPONSE_TOOL_CALLS_ATTRIBUTE, "gen_ai.response.tool_calls");
-    renameAttributeKey(data, AI_MODEL_ID_ATTRIBUTE.AI_RESPONSE_OBJECT_ATTRIBUTE, "gen_ai.response.object");
-    renameAttributeKey(data, AI_MODEL_ID_ATTRIBUTE.AI_PROMPT_TOOLS_ATTRIBUTE, "gen_ai.request.available_tools");
-    renameAttributeKey(data, AI_MODEL_ID_ATTRIBUTE.AI_TOOL_CALL_ARGS_ATTRIBUTE, "gen_ai.tool.input");
-    renameAttributeKey(data, AI_MODEL_ID_ATTRIBUTE.AI_TOOL_CALL_RESULT_ATTRIBUTE, "gen_ai.tool.output");
-    renameAttributeKey(data, AI_MODEL_ID_ATTRIBUTE.AI_SCHEMA_ATTRIBUTE, "gen_ai.request.schema");
-    renameAttributeKey(data, AI_MODEL_ID_ATTRIBUTE.AI_MODEL_ID_ATTRIBUTE, ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_REQUEST_MODEL_ATTRIBUTE);
-    addProviderMetadataToAttributes(data);
-    const _Object = Object;
-    const keys = Object.keys(data);
-    const iter = keys[Symbol.iterator]();
-    let tmp20 = keys;
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp22 = nextResult;
-      if (nextResult.startsWith("ai.")) {
-        let _HermesInternal = HermesInternal;
-        let tmp26 = renameAttributeKey(data, tmp22, "vercel." + tmp22);
-      }
-      continue;
-    }
-  }
-}
-function renameAttributeKey(data, AI_USAGE_CACHED_INPUT_TOKENS_ATTRIBUTE, GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE) {
-  if (null != data[AI_USAGE_CACHED_INPUT_TOKENS_ATTRIBUTE]) {
-    data[GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE] = data[AI_USAGE_CACHED_INPUT_TOKENS_ATTRIBUTE];
-    delete tmp[tmp2];
-  }
-}
-function setAttributeIfDefined(arg0, arg1, arg2) {
-  if (null != arg2) {
-    arg0[arg1] = arg2;
-  }
+  return obj;
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const addVercelAiProcessors = function addVercelAiProcessors(on) {
-  on.on("spanStart", onVercelAiSpanStart);
-  on.addEventProcessor(Object.assign(vercelAiEventProcessor, { id: "VercelAiEventProcessor" }));
+export const buildTypeSpecificAttributes = function buildTypeSpecificAttributes(request, message, params, recordInputs) {
+  let obj = params;
+  if ("request" === request) {
+    let requestArguments;
+    let obj2 = obj;
+    const extractTargetInfo = extractTargetInfo2.extractTargetInfo;
+    const method2 = message.method;
+    extractTargetInfo2;
+    if (!obj) {
+      obj2 = {};
+    }
+    let tmp6 = undefined !== message.id;
+    const extractTargetInfoResult = extractTargetInfo(method2, obj2);
+    if (tmp6) {
+      const obj3 = {};
+      const _String = String;
+      obj3[CLIENT_ADDRESS_ATTRIBUTE.MCP_REQUEST_ID_ATTRIBUTE] = String(message.id);
+      tmp6 = obj3;
+    }
+    const obj4 = {};
+    const merged = Object.assign(tmp6);
+    const merged1 = Object.assign(extractTargetInfoResult.attributes);
+    if (recordInputs) {
+      const getRequestArguments = extractTargetInfo2.getRequestArguments;
+      const method3 = message.method;
+      extractTargetInfo2;
+      if (!obj) {
+        obj = {};
+      }
+      requestArguments = getRequestArguments(method3, obj);
+    } else {
+      requestArguments = {};
+    }
+    const merged2 = Object.assign(requestArguments);
+    return obj4;
+  } else {
+    let obj5 = obj;
+    const method = message.method;
+    const tmp = getNotificationAttributes;
+    if (!obj) {
+      obj5 = {};
+    }
+    return tmp(method, obj5, recordInputs);
+  }
 };
+export { getNotificationAttributes };

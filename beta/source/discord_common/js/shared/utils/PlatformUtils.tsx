@@ -1,10 +1,10 @@
-// Module ID: 1365
-// Function ID: 1366
+// Module ID: 1371
+// Function ID: 1372
 // Name: utils/PlatformUtils
 // Dependencies: [2]
 // Exports: getNativePlatform, getNewUpdaterPlatformName, getOS, getPlatform, getPlatformName, isAndroid, isAndroidChrome, isAndroidWeb, isDesktop, isIOS, isLinux, isMac, isMacWeb, isOculusWeb, isWeb, isWindows, platformPrefersDeepLink, platformSupportsActivityJoin
 
-// Module 1365 (utils/PlatformUtils)
+// Module 1371 (utils/PlatformUtils)
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = { WINDOWS: "WINDOWS", OSX: "OSX", LINUX: "LINUX", WEB: "WEB" };

@@ -1,154 +1,56 @@
 // Module ID: 697
 // Function ID: 698
-// Dependencies: [692, 698]
-// Exports: isMatchingPattern, safeJoin, snipLine, stringMatchesSomePattern, truncate
+// Dependencies: [698, 699]
+// Exports: getCapturedScopesOnSpan, setCapturedScopesOnSpan
 
 // Module 697
-import _mod692 from "module_692" /* 692 */;
+import _mod698 from "module_698" /* 698 */;
+import _mod699 from "module_699" /* 699 */;
 
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-
-export const isMatchingPattern = function isMatchingPattern(arr, test) {
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  const obj = _mod692;
-  let isStringResult = obj.isString(arr);
-  if (isStringResult) {
-    let isMatch;
-    const tmpResult = _mod692;
-    if (tmpResult.isRegExp(test)) {
-      isMatch = test.test(arr);
-    } else {
-      const tmpResult2 = _mod692;
-      isMatch = tmpResult2.isString(test);
-      if (isMatch) {
-        let hasItem;
-        if (flag) {
-          hasItem = arr === test;
-        } else {
-          hasItem = arr.includes(test);
-        }
-        isMatch = hasItem;
-      }
-    }
-    isStringResult = isMatch;
-  }
-  return isStringResult;
-};
-export const safeJoin = function safeJoin(__v_isVNode, arg1) {
-  if (Array.isArray(__v_isVNode)) {
-    const items = [];
-    let num = 0;
-    if (0 < __v_isVNode.length) {
-      try {
-        const push = items.push;
-        const obj = _mod692;
-        const tmp3 = require;
-        if (obj.isVueViewModel(__v_isVNode[num])) {
-          const tmp3Result = tmp3(698);
-          push(tmp3Result.getVueInternalName(__v_isVNode[num]));
-        } else {
-          const _String = String;
-          push(String(__v_isVNode[num]));
-        }
-      } catch (err) {
-        items.push("[value cannot be serialized]");
-      }
-      num = num + 1;
-    }
-    return items.join(arg1);
-  } else {
-    return "";
-  }
-};
-export const snipLine = function snipLine(arr, arg1) {
-  if (arr.length <= 150) {
-    return arr;
-  } else {
-    let tmp = arg1;
-    if (arg1 > arr.length) {
-      tmp = length;
-    }
-    const _Math = Math;
-    let num3 = Math.max(tmp - 60, 0);
-    if (num3 < 5) {
-      num3 = 0;
-    }
-    const _Math2 = Math;
-    let bound = Math.min(num3 + 140, length);
-    if (bound > arr.length - 5) {
-      bound = length;
-    }
-    if (bound === arr.length) {
-      const _Math3 = Math;
-      num3 = Math.max(bound - 140, 0);
-    }
-    const substr = arr.slice(num3, bound);
-    let combined = substr;
-    if (num3 > 0) {
-      const _HermesInternal = HermesInternal;
-      combined = "'{snip} " + substr;
-    }
-    let text = combined;
-    if (bound < arr.length) {
-      text = `${tmp6} {snip}`;
-    }
-    return text;
-  }
-};
-export const stringMatchesSomePattern = function stringMatchesSomePattern(arg0) {
-  let closure_0 = arg0;
-  let items = arg1;
-  if (arg1 === undefined) {
-    items = [];
-  }
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  return items.some((test) => {
-    const obj2 = _mod692;
-    let isStringResult = obj2.isString(obj);
-    if (isStringResult) {
-      let isMatch;
-      const tmpResult = _mod692;
-      if (tmpResult.isRegExp(test)) {
-        isMatch = test.test(obj);
-      } else {
-        const tmpResult2 = _mod692;
-        isMatch = tmpResult2.isString(test);
-        if (isMatch) {
-          let hasItem;
-          if (flag) {
-            hasItem = obj === test;
-          } else {
-            hasItem = obj.includes(test);
+function unwrapScopeFromWeakRef(deref) {
+  const tmp = deref;
+  if (tmp) {
+    if (typeof deref === "object") {
+      if ("deref" in deref) {
+        if (typeof deref.deref === "function") {
+          try {
+            return deref.deref();
+          } catch (err) {
           }
-          isMatch = hasItem;
         }
       }
-      isStringResult = isMatch;
     }
-    return isStringResult;
-  });
+    return deref;
+  }
+}
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+const _sentryScope = "_sentryScope";
+const _sentryIsolationScope = "_sentryIsolationScope";
+
+export const getCapturedScopesOnSpan = function getCapturedScopesOnSpan(scope) {
+  const obj = { scope: scope[_sentryScope], isolationScope: unwrapScopeFromWeakRef(scope[_sentryIsolationScope]) };
+  return obj;
 };
-export const truncate = function truncate(str) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 0;
-  }
-  let combined = str;
-  if (typeof str === "string") {
-    combined = str;
-    if (0 !== num) {
-      combined = str;
-      if (str.length > num) {
-        const _HermesInternal = HermesInternal;
-        combined = "" + str.slice(0, num) + "...";
+export const setCapturedScopesOnSpan = function setCapturedScopesOnSpan(arg0, arg1, arg2) {
+  function wrapScopeWithWeakRef(arg0) {
+    try {
+      const _WeakRef = _mod698.GLOBAL_OBJ.WeakRef;
+      if (typeof _WeakRef === "function") {
+        const self = this;
+        const self2 = this;
+        const _WeakRef1 = new _WeakRef(arg0);
+        return _WeakRef1;
+      } else {
+        return arg0;
       }
+    } catch (err) {
     }
   }
-  return combined;
+  const tmp = arg0;
+  if (tmp) {
+    const obj = _mod699;
+    const result = obj.addNonEnumerableProperty(arg0, _sentryIsolationScope, wrapScopeWithWeakRef(arg2));
+    const obj2 = _mod699;
+    const result1 = obj2.addNonEnumerableProperty(arg0, _sentryScope, arg1);
+  }
 };

@@ -1,17 +1,17 @@
-// Module ID: 7592
-// Function ID: 7593
+// Module ID: 7596
+// Function ID: 7597
 // Name: utils
-// Dependencies: [1091, 11, 1115, 4421, 7593, 4064, 7587, 2]
+// Dependencies: [1103, 11, 1127, 4424, 7597, 4067, 7591, 2]
 // Exports: calculateActiveTimestampDurations, formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEntryDuration, getEpisodeBadgeA11yText, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getStreakCount, getTrait, getTrendingType, isEntryActive, isEntryExpired, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 7592 (utils)
+// Module 7596 (utils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import intl4 from "intl" /* 1115 */;
-import _mod4064 from "module_4064" /* 4064 */;
-import _modDef4421 from "module_4421" /* 4421 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 7587 */;
-import ContentInventoryTraitType from "ContentInventoryTraitType" /* 7593 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import intl4 from "intl" /* 1127 */;
+import _mod4067 from "module_4067" /* 4067 */;
+import _modDef4424 from "module_4424" /* 4424 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 7591 */;
+import ContentInventoryTraitType from "ContentInventoryTraitType" /* 7597 */;
 import size_mod from "module_2" /* 2 */;
 
 function calculateTimestampDurations(end, now) {
@@ -98,7 +98,7 @@ function formatTimestampToA11yLabel(time) {
   push3(intl3.formatToPlainString(intl4.t.geSp4K, { seconds }));
   return items.join(", ");
 }
-function formatEndedTimestamp(entry, arg1, timestamp, arg3) {
+function formatEndedTimestamp(entry, stateFromStores, timestamp, arg3) {
   let obj = arg3;
   if (arg3 === undefined) {
     obj = {};
@@ -107,8 +107,8 @@ function formatEndedTimestamp(entry, arg1, timestamp, arg3) {
   if (formatSet === undefined) {
     formatSet = closure_6;
   }
-  const obj2 = _modDef4421(timestamp);
-  const tmp3 = _modDef4421;
+  const obj2 = _modDef4424(timestamp);
+  const tmp3 = _modDef4424;
   const obj3 = SnowflakeUtilsDefault;
   const diffResult = obj2.diff(tmp3(obj3.extractTimestamp(entry.id)), "s");
   const absolute = Math.abs(diffResult);
@@ -406,9 +406,9 @@ export const isEntryMarathon = function isEntryMarathon(entry) {
   }
   return marathon;
 };
-export const getResurrectedEntryLastPlayTime = function getResurrectedEntryLastPlayTime(entry) {
+export const getResurrectedEntryLastPlayTime = function getResurrectedEntryLastPlayTime(traits) {
   const RESURRECTED = ContentInventoryTraitType.ContentInventoryTraitType.RESURRECTED;
-  const traits = entry.traits;
+  traits = traits.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let prop;
   if (found != null) {
@@ -427,8 +427,8 @@ export const getFullResurrectedBadgeText = function getFullResurrectedBadgeText(
   let num4;
   let num5;
   const obj = { start, end: new Date() };
-  const intervalToDuration = _mod4064.intervalToDuration;
-  _mod4064;
+  const intervalToDuration = _mod4067.intervalToDuration;
+  _mod4067;
   new Date();
   const intervalToDurationResult = intervalToDuration(obj);
   const months = intervalToDurationResult.months;
@@ -446,11 +446,11 @@ export const getFullResurrectedBadgeText = function getFullResurrectedBadgeText(
   if (undefined !== days) {
     num3 = days;
   }
-  const intl = tmp(1115).intl;
+  const intl = tmp(1127).intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj2 = { months: num, weeks: num4, days: num5 };
   num4 = 0;
-  const NXBtjF = tmp(1115).t.NXBtjF;
+  const NXBtjF = tmp(1127).t.NXBtjF;
   if (num <= 0) {
     num4 = num2;
   }
@@ -595,19 +595,19 @@ export const getMarathonDescription = function getMarathonDescription(entry) {
       obj = { text: null, tooltipText: null, a11yText: null };
     } else {
       obj = { text: intl.formatToPlainString(intl4.t.vZaMem, obj2), tooltipText: intl2.formatToPlainString(intl4.t.S5F485, obj3), a11yText: intl3.formatToPlainString(intl4.t["RZY+tX"], obj4) };
-      intl = tmp(1115).intl;
+      intl = tmp(1127).intl;
       obj2 = { hours: rounded };
-      intl2 = tmp(1115).intl;
+      intl2 = tmp(1127).intl;
       obj3 = { hours: rounded };
-      intl3 = tmp(1115).intl;
+      intl3 = tmp(1127).intl;
       obj4 = { hours: rounded };
     }
     return obj;
   }
 };
-export const getTrendingType = function getTrendingType(entry) {
+export const getTrendingType = function getTrendingType(traits) {
   const TRENDING_CONTENT = ContentInventoryTraitType.ContentInventoryTraitType.TRENDING_CONTENT;
-  const traits = entry.traits;
+  traits = traits.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let trending;
   if (found != null) {

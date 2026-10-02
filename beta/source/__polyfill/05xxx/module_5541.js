@@ -1,27 +1,25 @@
 // Module ID: 5541
 // Function ID: 5542
-// Dependencies: [5526]
+// Dependencies: [5527]
 
 // Module 5541
-import _mod5526 from "module_5526" /* 5526 */;
+import _mod5527 from "module_5527" /* 5527 */;
 
 let obj = {
-  isXMLFile(dataView) {
-    let tmp = dataView;
-    if (tmp) {
-      const obj = _mod5526;
-      tmp = obj.getStringFromDataView(dataView, c2, length.length) === length;
+  isGifFile(dataView) {
+    let hasItem = dataView;
+    if (hasItem) {
+      includes = includes.includes;
+      const obj = _mod5527;
+      hasItem = includes(obj.getStringFromDataView(dataView, 0, c2));
     }
-    return tmp;
+    return hasItem;
   },
-  findOffsets(byteLength) {
-    const xmpChunks = [];
-    const obj = { dataOffset, length: byteLength.byteLength };
-    xmpChunks.push(obj);
-    return { xmpChunks };
+  findOffsets() {
+    return { gifHeaderOffset: 0 };
   }
 };
-let c2 = 0;
-let c3 = "<?xpacket begin";
+let c2 = 6;
+let includes = ["GIF87a", "GIF89a"];
 
 export default obj;

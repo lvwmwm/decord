@@ -1,19 +1,22 @@
-// Module ID: 16485
-// Function ID: 16486
+// Module ID: 16487
+// Function ID: 16488
 // Name: MediaGridItem
-// Dependencies: [19, 17, 2045, 7303, 21, 4836, 576, 504, 4566, 4837, 4840, 16486, 5919, 1177, 2]
+// Dependencies: [19, 17, 2051, 7307, 21, 4837, 588, 558, 576, 504, 4570, 4838, 4841, 16488, 5918, 1189, 2]
 
-// Module 16485 (MediaGridItem)
-import nativeDefault from "native" /* 576 */;
-import timing from "timing" /* 4837 */;
-import timingPresets from "timingPresets" /* 4840 */;
-import SearchConstants from "SearchConstants" /* 7303 */;
+// Module 16487 (MediaGridItem)
+import nativeDefault from "native" /* 588 */;
+import timing from "timing" /* 4838 */;
+import timingPresets from "timingPresets" /* 4841 */;
+import SearchConstants from "SearchConstants" /* 7307 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
+
+let media;
 
 let c10;
 let c9;
@@ -27,9 +30,193 @@ const SearchMediaTypes = SearchConstants.SearchMediaTypes;
 let obj = { container: obj2, avatar: { position: "absolute", top: 8, right: 8 }, card: { padding: 0 } };
 obj2 = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_11 = createStyles.createStyles(obj);
-let closure_12 = { HIDDEN: 0, [0]: "HIDDEN", VISIBLE: 1, [1]: "VISIBLE" };
+const constants = { HIDDEN: 0, [0]: "HIDDEN", VISIBLE: 1, [1]: "VISIBLE" };
 const __initData = { code: "function MediaGridItemTsx1(){const{withTiming,opacity,timingStandard}=this.__closure;return{opacity:withTiming(opacity.get(),timingStandard)};}" };
-const memoResult = react.memo(function MediaGridItem(media) {
+const __initData2 = { code: "function MediaGridItemTsx2(){const{withTiming,opacity,timingStandard}=this.__closure;return{opacity:withTiming(opacity.get(),timingStandard)};}" };
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
+  let containerStyle;
+  let first;
+  let onPress;
+  let ref;
+  let sharedValue;
+  let tmp8;
+  const tmp = media;
+  let obj = media(ref[8]);
+  const cResult = obj.c(63);
+  media = media.media;
+  ({ size, containerStyle, onPress } = media);
+  const animate = media.animate;
+  const tmp4 = closure_11();
+  const scale = closure_6().scale;
+  ref = sharedValue.useRef(null);
+  const obj2 = sharedValue;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== media.channelId) {
+    const fn = function v() {
+      return ChannelStore.getChannel(media.channelId);
+    };
+    cResult[1] = media.channelId;
+    cResult[2] = fn;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+  }
+  const tmpResult = tmp(ref[9]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
+  let guild_id;
+  const tmp10 = cResult[3];
+  if (stateFromStores != null) {
+    guild_id = stateFromStores.guild_id;
+  }
+  if (tmp10 === guild_id) {
+    if (cResult[6] === media) {
+      let tmp21;
+      let tmp20;
+      const tmpResult3 = tmp(ref[10]);
+      class B {
+        constructor() {
+          const obj = { media, originView: ref.current };
+          onPress(obj);
+        }
+      }
+      sharedValue = tmpResult3.useSharedValue(animate ? tmp15.HIDDEN : tmp15.VISIBLE);
+      const tmpResult4 = tmp(ref[10]);
+      class N {
+        constructor() {
+          let value;
+          let withTiming;
+          const obj = { opacity: withTiming(value, timingPresets.timingStandard) };
+          withTiming = timing.withTiming;
+          timing;
+          value = sharedValue.get();
+          return obj;
+        }
+      }
+      const useAnimatedStyle = tmpResult4.useAnimatedStyle;
+      N.__closure = { withTiming: tmp(ref[11]).withTiming, opacity: sharedValue, timingStandard: tmp(ref[12]).timingStandard };
+      N.__workletHash = 9644750191833;
+      N.__initData = __initData;
+      const obj3 = { withTiming: tmp(ref[11]).withTiming, opacity: sharedValue, timingStandard: tmp(ref[12]).timingStandard };
+      const animatedStyle = useAnimatedStyle(N);
+      if (cResult[9] !== sharedValue) {
+        class O {
+          constructor() {
+            const result = sharedValue.set(constants.VISIBLE);
+          }
+        }
+        const items1 = [];
+        class B {
+          constructor() {
+            const obj = { media, originView: ref.current };
+            onPress(obj);
+          }
+        }
+        cResult[9] = sharedValue;
+        class N {
+          constructor() {
+            let value;
+            let withTiming;
+            const obj = { opacity: withTiming(value, timingPresets.timingStandard) };
+            withTiming = timing.withTiming;
+            timing;
+            value = sharedValue.get();
+            return obj;
+          }
+        }
+        cResult[11] = items1;
+        tmp21 = items1;
+        tmp20 = O;
+      } else {
+        class O {
+          constructor() {
+            const result = sharedValue.set(constants.VISIBLE);
+          }
+        }
+        tmp21 = cResult[11];
+      }
+      const effect = obj2.useEffect(tmp20, tmp21);
+      if (cResult[12] !== size) {
+        class O {
+          constructor() {
+            const result = sharedValue.set(constants.VISIBLE);
+          }
+        }
+        tmp24[0] = size;
+        class B {
+          constructor() {
+            const obj = { media, originView: ref.current };
+            onPress(obj);
+          }
+        }
+        cResult[12] = size;
+        class N {
+          constructor() {
+            let value;
+            let withTiming;
+            const obj = { opacity: withTiming(value, timingPresets.timingStandard) };
+            withTiming = timing.withTiming;
+            timing;
+            value = sharedValue.get();
+            return obj;
+          }
+        }
+      } else {
+        class O {
+          constructor() {
+            const result = sharedValue.set(constants.VISIBLE);
+          }
+        }
+      }
+      if (cResult[14] === animatedStyle) {
+        class O {
+          constructor() {
+            const result = sharedValue.set(constants.VISIBLE);
+          }
+        }
+      }
+      const items2 = [tmp4.container, containerStyle, tmp23, animatedStyle];
+      cResult[14] = animatedStyle;
+      cResult[15] = containerStyle;
+      cResult[16] = tmp23;
+      cResult[17] = tmp4.container;
+      cResult[18] = items2;
+    }
+    class B {
+      constructor() {
+        const obj = { media, originView: ref.current };
+        onPress(obj);
+      }
+    }
+    cResult[6] = media;
+    cResult[8] = B;
+  }
+  const author = media.author;
+  const getAvatarSource = author.getAvatarSource;
+  if (stateFromStores != null) {
+    class O {
+      constructor() {
+        const result = sharedValue.set(constants.VISIBLE);
+      }
+    }
+  }
+  const avatarSource = getAvatarSource(undefined);
+  if (stateFromStores != null) {
+    class O {
+      constructor() {
+        const result = sharedValue.set(constants.VISIBLE);
+      }
+    }
+  }
+  cResult[3] = undefined;
+  cResult[4] = media.author;
+  cResult[5] = avatarSource;
+}) : ((media) => {
   let Avatar;
   let Card;
   let animate;
@@ -52,7 +239,7 @@ const memoResult = react.memo(function MediaGridItem(media) {
   let obj = ref;
   ref = ref.useRef(null);
   const items = [ChannelStore];
-  const obj2 = media(onPress[7]);
+  const obj2 = media(onPress[9]);
   const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(media.channelId));
   const items1 = [media.author, ];
   let guild_id;
@@ -75,7 +262,7 @@ const memoResult = react.memo(function MediaGridItem(media) {
     const obj = { media, originView: ref.current };
     onPress(obj);
   }, items2);
-  const tmp3Result = media(onPress[8]);
+  const tmp3Result = media(onPress[10]);
   sharedValue = tmp3Result.useSharedValue(animate ? tmp9.HIDDEN : tmp9.VISIBLE);
   const fn = function f() {
     let value;
@@ -86,12 +273,12 @@ const memoResult = react.memo(function MediaGridItem(media) {
     value = sharedValue.get();
     return obj;
   };
-  const tmp3Result2 = media(onPress[8]);
-  fn.__closure = { withTiming: media(onPress[9]).withTiming, opacity: sharedValue, timingStandard: media(onPress[10]).timingStandard };
-  fn.__workletHash = 9644750191833;
-  fn.__initData = __initData;
+  const tmp3Result2 = media(onPress[10]);
+  fn.__closure = { withTiming: media(onPress[11]).withTiming, opacity: sharedValue, timingStandard: media(onPress[12]).timingStandard };
+  fn.__workletHash = 10968342083642;
+  fn.__initData = __initData2;
   const items3 = [sharedValue];
-  ({ withTiming: media(onPress[9]).withTiming, opacity: sharedValue, timingStandard: media(onPress[10]).timingStandard });
+  ({ withTiming: media(onPress[11]).withTiming, opacity: sharedValue, timingStandard: media(onPress[12]).timingStandard });
   const animatedStyle = tmp3Result2.useAnimatedStyle(fn);
   const effect = obj.useEffect(() => {
     const result = sharedValue.set(constants.VISIBLE);
@@ -105,47 +292,47 @@ const memoResult = react.memo(function MediaGridItem(media) {
   items5 = [tmp.container, containerStyle, memo1, animatedStyle];
   let tmp14Result = media.type === SearchMediaTypes.EMBED;
   obj5 = { ref, style: memo1, accessibilityRole: "button", onPress: callback, children: items6 };
-  const View = size(tmp4[8]).View;
+  const View = size(tmp4[10]).View;
   tmp15 = closure_10;
   tmp16 = sharedValue;
   if (tmp14Result) {
     const obj6 = { sources: null, embed: null, messageId: null, channelId: null, authorId: media.author.id, scale, containerHeight: size, containerWidth: size };
     ({ sources: obj8.sources, embed: obj8.embed, messageId: obj8.messageId, channelId: obj8.channelId } = media);
-    tmp14Result = tmp14(tmp3(tmp4[11]).SearchEmbedMediaImage, obj6);
+    tmp14Result = tmp14(tmp3(tmp4[13]).SearchEmbedMediaImage, obj6);
   }
   items6 = [tmp14Result, , , , ];
   let tmp14Result5 = media.type === tmp17.ATTACHMENT;
   if (tmp14Result5) {
     const obj7 = { attachment: null, channelId: null, authorId: media.author.id, scale, containerHeight: size, containerWidth: size };
     ({ attachment: obj9.attachment, channelId: obj9.channelId } = media);
-    tmp14Result5 = tmp14(tmp3(tmp4[11]).SearchAttachmentMediaImage, obj7);
+    tmp14Result5 = tmp14(tmp3(tmp4[13]).SearchAttachmentMediaImage, obj7);
   }
   items6[1] = tmp14Result5;
   let tmp14Result6 = media.type === tmp17.AUDIO;
   if (tmp14Result6) {
     const size1 = { height: size, width: size };
-    tmp14Result6 = tmp14(tmp3(tmp4[11]).SearchSoundMediaImage, size1);
+    tmp14Result6 = tmp14(tmp3(tmp4[13]).SearchSoundMediaImage, size1);
   }
   items6[2] = tmp14Result6;
   let tmp14Result7 = media.type === tmp17.COMPONENT;
   if (tmp14Result7) {
     const obj10 = { unfurledMediaItem: null, sources: null, channelId: null, authorId: media.author.id, isBot: media.author.bot, scale, containerHeight: size, containerWidth: size };
     ({ unfurledMediaItem: obj11.unfurledMediaItem, sources: obj11.sources, channelId: obj11.channelId } = media);
-    tmp14Result7 = tmp14(tmp3(tmp4[11]).SearchComponentMediaImage, obj10);
+    tmp14Result7 = tmp14(tmp3(tmp4[13]).SearchComponentMediaImage, obj10);
   }
   items6[3] = tmp14Result7;
   let tmp14Result8 = null != memo;
   if (tmp14Result8) {
     const obj12 = { style: tmp.avatar, children: closure_9(Card, obj13) };
     obj13 = { shadow: "low", style: tmp.card, children: closure_9(Avatar, obj14) };
-    Card = tmp3(tmp4[12]).Card;
-    obj14 = { source: memo, size: media(onPress[13]).AvatarSizes.XSMALL, avatarDecoration: media.author.avatarDecoration };
-    Avatar = tmp3(tmp4[13]).Avatar;
+    Card = tmp3(tmp4[14]).Card;
+    obj14 = { source: memo, size: media(onPress[15]).AvatarSizes.XSMALL, avatarDecoration: media.author.avatarDecoration };
+    Avatar = tmp3(tmp4[15]).Avatar;
     tmp14Result8 = tmp14(stateFromStores, obj12);
   }
   items6[4] = tmp14Result8;
   return closure_9(View, obj4);
-});
+}));
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/search/native/components/list/rows/MediaGridItem.tsx");
 

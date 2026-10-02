@@ -1,14 +1,14 @@
-// Module ID: 17141
-// Function ID: 17142
+// Module ID: 17143
+// Function ID: 17144
 // Name: GuildRoomManager
-// Dependencies: [502, 4994, 6539, 5036, 4992, 2]
+// Dependencies: [502, 4995, 6540, 5037, 4993, 2]
 
-// Module 17141 (GuildRoomManager)
-import GuildRoomActionCreators from "GuildRoomActionCreators" /* 4992 */;
-import GuildRoomsExperiment from "GuildRoomsExperiment" /* 5036 */;
+// Module 17143 (GuildRoomManager)
+import GuildRoomActionCreators from "GuildRoomActionCreators" /* 4993 */;
+import GuildRoomsExperiment from "GuildRoomsExperiment" /* 5037 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildRoomStore from "GuildRoomStore" /* 4994 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import GuildRoomStore from "GuildRoomStore" /* 4995 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 const channelId = null;

@@ -1,26 +1,26 @@
-// Module ID: 16823
-// Function ID: 16824
+// Module ID: 16792
+// Function ID: 16793
 // Name: AppComponents
-// Dependencies: [21, 16292, 1364, 4692, 16161, 16731, 4707, 16747, 9538, 13984, 5209, 4542, 16824, 16830, 16863, 16872, 17044, 2]
+// Dependencies: [21, 16294, 1370, 4694, 16163, 16733, 4709, 16749, 12208, 13986, 5210, 4546, 16793, 16799, 16832, 16841, 17013, 2]
 
-// Module 16823 (AppComponents)
-import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 4542 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
-import PortalKeyboard from "PortalKeyboard" /* 4707 */;
-import AlertModal from "AlertModal" /* 5209 */;
-import NotificationsDefault from "Notifications" /* 9538 */;
-import ContextMenuContainer from "ContextMenuContainer" /* 13984 */;
-import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 16292 */;
-import MainShared from "MainShared" /* 16731 */;
-import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 16747 */;
-import ExternalPipViewDefault from "ExternalPipView" /* 16824 */;
-import ActivityPanelContainerDefault from "ActivityPanelContainer" /* 16830 */;
-import FramePanelContainerDefault from "FramePanelContainer" /* 16863 */;
-import VoicePanelContainerDefault from "VoicePanelContainer" /* 16872 */;
-import MediaPlaybackPanelContainerDefault from "MediaPlaybackPanelContainer" /* 17044 */;
+// Module 16792 (AppComponents)
+import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 4546 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4694 */;
+import PortalKeyboard from "PortalKeyboard" /* 4709 */;
+import AlertModal from "AlertModal" /* 5210 */;
+import common_NotificationsDefault from "common/Notifications" /* 12208 */;
+import ContextMenuContainer from "ContextMenuContainer" /* 13986 */;
+import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 16294 */;
+import MainShared from "MainShared" /* 16733 */;
+import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 16749 */;
+import ExternalPipViewDefault from "ExternalPipView" /* 16793 */;
+import ActivityPanelContainerDefault from "ActivityPanelContainer" /* 16799 */;
+import FramePanelContainerDefault from "FramePanelContainer" /* 16832 */;
+import VoicePanelContainerDefault from "VoicePanelContainer" /* 16841 */;
+import MediaPlaybackPanelContainerDefault from "MediaPlaybackPanelContainer" /* 17013 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
-import AppFreezer_mod from "AppFreezer" /* 16161 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
+import AppFreezer_mod from "AppFreezer" /* 16163 */;
 import size from "module_2" /* 2 */;
 
 let jsx;
@@ -37,7 +37,7 @@ PlatformUtils.isIOS() ? (() => {
   return tmp;
 }) : (() => closure_2);
 let AppFreezer = AppFreezer_mod;
-const items = [jsx(MainShared.PictureInPictureGlobalContainer, {}), jsx(MainShared.BurstReactionAnimationContainer, {}), jsx(MainShared.MenuContainer, {}), jsx(PortalKeyboard.PortalKeyboardHost, {}), <tmp3 />, jsx(MainShared.ActionSheetContainer, { appEntryKey: "main" }), jsx(MainShared.Alerts, {}), jsx(MainShared.SoundPlayer, {}), jsx(MainViewTooltipActionSheetsV2Default, {}), jsx(NotificationsDefault, {}), jsx(ContextMenuContainer.ContextMenuContainer, {}), jsx(AlertModal.AlertModalContainer, {}), jsx(MainShared.ToastContainer, {})];
+const items = [jsx(MainShared.PictureInPictureGlobalContainer, {}), jsx(MainShared.BurstReactionAnimationContainer, {}), jsx(MainShared.MenuContainer, {}), jsx(PortalKeyboard.PortalKeyboardHost, {}), <tmp3 />, jsx(MainShared.ActionSheetContainer, { appEntryKey: "main" }), jsx(MainShared.Alerts, {}), jsx(MainShared.SoundPlayer, {}), jsx(MainViewTooltipActionSheetsV2Default, {}), jsx(common_NotificationsDefault, {}), jsx(ContextMenuContainer.ContextMenuContainer, {}), jsx(AlertModal.AlertModalContainer, {}), jsx(MainShared.ToastContainer, {})];
 const jsxsResult = <AppFreezer lockKeys={["external-pip"]}>{items}</AppFreezer>;
 PlatformUtils = PlatformUtils_mod;
 let jsxResult = null;

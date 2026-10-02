@@ -1,19 +1,19 @@
-// Module ID: 4701
-// Function ID: 4702
+// Module ID: 4703
+// Function ID: 4704
 // Name: ChatInputUtils
-// Dependencies: [4702, 1876, 4703, 1611, 1483, 4704, 2]
+// Dependencies: [4704, 1882, 4705, 1617, 1489, 4706, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
-// Module 4701 (ChatInputUtils)
-import KeyboardUIStore from "KeyboardUIStore" /* 1483 */;
-import KeyboardTypes from "KeyboardTypes" /* 1611 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
-import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4702 */;
-import useKeyboardType from "useKeyboardType" /* 4703 */;
-import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4704 */;
+// Module 4703 (ChatInputUtils)
+import KeyboardUIStore from "KeyboardUIStore" /* 1489 */;
+import KeyboardTypes from "KeyboardTypes" /* 1617 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1882 */;
+import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4704 */;
+import useKeyboardType from "useKeyboardType" /* 4705 */;
+import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4706 */;
 import size from "module_2" /* 2 */;
 
-const f79192 = (item) => {
+const f88135 = (item) => {
   let tmp = typeof item === "number";
   if (typeof item === "number") {
     const obj = ScreenIndexFrozen;
@@ -34,7 +34,7 @@ function getBestActiveInput() {
           if (!map1.has("vibegrations-preview")) {
             const _Array = Array;
             const arr = Array.from(map1.keys());
-            const found = arr.filter(f79192);
+            const found = arr.filter(f88135);
             if (0 !== found.length) {
               const _Math = Math;
               const items = [];
@@ -162,7 +162,7 @@ export const getHighestActiveScreenIndex = function getHighestActiveScreenIndex(
     } else {
       const _Array = Array;
       const arr = Array.from(obj.keys());
-      const found = arr.filter(f79192);
+      const found = arr.filter(f88135);
       if (0 !== found.length) {
         const _Math = Math;
         const items = [];
@@ -206,7 +206,7 @@ export const getBestActiveInputForChannelId = function getBestActiveInputForChan
               if (!obj2.has("vibegrations-preview")) {
                 const _Array = Array;
                 const arr = Array.from(obj2.keys());
-                const found = arr.filter(f79192);
+                const found = arr.filter(f88135);
                 if (0 !== found.length) {
                   const _Math = Math;
                   const items = [];

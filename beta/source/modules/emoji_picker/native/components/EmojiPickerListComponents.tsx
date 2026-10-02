@@ -1,23 +1,23 @@
-// Module ID: 9769
-// Function ID: 9770
+// Module ID: 9685
+// Function ID: 9686
 // Name: EmojiPickerListComponents
-// Dependencies: [19, 17, 9753, 21, 4836, 576, 1177, 7601, 4832, 1115, 9767, 2]
+// Dependencies: [19, 17, 9643, 21, 4837, 588, 558, 576, 1189, 7605, 1127, 4833, 9683, 2]
 
-// Module 9769 (EmojiPickerListComponents)
+// Module 9685 (EmojiPickerListComponents)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7601 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9767 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7605 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9683 */;
 import react from "react" /* 19 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9753 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9643 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let useTier0UpsellContent;
 
 let LABEL_BOTTOM_PADDING;
 let LABEL_TOP_PADDING;
@@ -35,7 +35,60 @@ obj2 = { justifyContent: "center", overflow: "hidden", backgroundColor: nativeDe
 createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", height: NSFW_ROW_HEIGHT, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.sm, marginLeft: 12, marginRight: 12, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 let closure_6 = createStyles(obj);
-const memoResult = react.memo(() => {
+const memo = react.memo;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const memo2 = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let items;
+  let tmp11;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(7);
+  const tmp4 = closure_6();
+  const nsfwContainer = tmp4.nsfwContainer;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL };
+    const Icon = tmp(1189).Icon;
+    const tmp8 = React3(Icon, obj2);
+    cResult[0] = tmp8;
+    first = tmp8;
+  } else {
+    first = cResult[0];
+  }
+  const nsfwText = tmp4.nsfwText;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl2.t.SLzV5z);
+    cResult[1] = stringResult;
+    tmp9 = stringResult;
+  } else {
+    tmp9 = cResult[1];
+  }
+  if (cResult[2] !== tmp4.nsfwText) {
+    const obj3 = { style: nsfwText, variant: "text-sm/normal", color: "interactive-text-active", children: tmp9 };
+    const tmp13 = React3(Text_Text.Text, obj3);
+    cResult[2] = tmp4.nsfwText;
+    cResult[3] = tmp13;
+    tmp11 = tmp13;
+  } else {
+    tmp11 = cResult[3];
+  }
+  if (cResult[4] === tmp4.nsfwContainer) {
+    let tmp14;
+    if (cResult[5] === tmp11) {
+      tmp14 = cResult[6];
+    }
+    return tmp14;
+  }
+  const obj4 = { style: nsfwContainer, children: items };
+  items = [first, tmp11];
+  const tmp15 = hasOwnProperty(View, obj4);
+  cResult[4] = tmp4.nsfwContainer;
+  cResult[5] = tmp11;
+  cResult[6] = tmp15;
+  tmp14 = tmp15;
+}) : (() => {
   let intl;
   let items;
   const tmp = closure_6();
@@ -48,8 +101,63 @@ const memoResult = react.memo(() => {
   intl = intl2.intl;
   items[1] = React3(Text, obj3);
   return hasOwnProperty(View, obj);
-});
-const memoResult1 = react.memo((useTier0UpsellContent) => {
+}));
+ReactCompilerGating = ReactCompilerGating_mod;
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let isSectionNitroLocked;
+  let items;
+  let label;
+  let useTier0UpsellContent;
+  const obj = react2;
+  const cResult = obj.c(9);
+  ({ label, isSectionNitroLocked, useTier0UpsellContent } = arg0);
+  const tmp4 = closure_6();
+  if (cResult[0] === isSectionNitroLocked) {
+    let tmp5;
+    let tmp8;
+    if (cResult[1] === useTier0UpsellContent) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] !== label) {
+      let tmp9 = null;
+      if ("" !== label) {
+        const obj2 = { lineClamp: 1, color: "interactive-text-default", variant: "heading-sm/semibold", children: label };
+        tmp9 = React3(tmp(4833).Text, obj2);
+      }
+      cResult[3] = label;
+      cResult[4] = tmp9;
+      tmp8 = tmp9;
+    } else {
+      tmp8 = cResult[4];
+    }
+    if (cResult[5] === tmp4.section) {
+      if (cResult[6] === tmp5) {
+        let tmp11;
+        if (cResult[7] === tmp8) {
+          tmp11 = cResult[8];
+        }
+        return tmp11;
+      }
+    }
+    const obj3 = { style: tmp4.section, children: items };
+    items = [tmp5, tmp8];
+    const tmp14 = hasOwnProperty(View, obj3);
+    cResult[5] = tmp4.section;
+    cResult[6] = tmp5;
+    cResult[7] = tmp8;
+    cResult[8] = tmp14;
+    tmp11 = tmp14;
+  }
+  let tmp6 = isSectionNitroLocked;
+  if (tmp6) {
+    const obj4 = { useTier0UpsellContent };
+    tmp6 = React3(tmp(9683).PremiumUpsellGradientBackground, obj4);
+  }
+  cResult[0] = isSectionNitroLocked;
+  cResult[1] = useTier0UpsellContent;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((useTier0UpsellContent) => {
   let isSectionNitroLocked;
   let items;
   let label;
@@ -70,8 +178,8 @@ const memoResult1 = react.memo((useTier0UpsellContent) => {
   }
   items[1] = tmp6;
   return tmp(tmp2, obj);
-});
+}));
 const result = size.fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponents.tsx");
 
 export const NSFWRow = memoResult;
-export const Section = memoResult1;
+export const Section = memo2Result;

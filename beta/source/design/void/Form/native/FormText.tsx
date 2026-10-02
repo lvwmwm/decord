@@ -1,19 +1,22 @@
-// Module ID: 8066
-// Function ID: 8067
+// Module ID: 8070
+// Function ID: 8071
 // Name: FormText
-// Dependencies: [19, 21, 4836, 5753, 576, 1177, 2]
+// Dependencies: [19, 21, 4837, 5754, 588, 558, 576, 1189, 2]
 
-// Module 8066 (FormText)
+// Module 8070 (FormText)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import LegacyTokens from "LegacyTokens" /* 5753 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import LegacyTokens from "LegacyTokens" /* 5754 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
+let tmp;
+const native = tmp(1189);
 const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles((arg0) => {
   let num2;
@@ -37,8 +40,54 @@ obj3 = { color: nativeDefault.unsafe_rawColors.RED_400 };
 ({ color: nativeDefault.unsafe_rawColors.GREEN_360 });
 ({ color: nativeDefault.unsafe_rawColors.YELLOW_300 });
 ({ color: nativeDefault.unsafe_rawColors.BLUE_345 });
+const forwardRef = react.forwardRef;
 ({ color: nativeDefault.unsafe_rawColors.WHITE });
-const forwardRefResult = react.forwardRef((size, ref) => {
+const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+  let children;
+  let color;
+  let style;
+  const obj = react2;
+  const cResult = obj.c(8);
+  ({ children, size, color, style } = arg0);
+  let str = "medium";
+  const tmp4 = closure_3;
+  if (undefined !== size) {
+    str = size;
+  }
+  const tmp4Result = tmp4(str);
+  if (color == null) {
+    color = tmp4Result.primary;
+  }
+  if (cResult[0] === style) {
+    if (cResult[1] === tmp4Result.text) {
+      let tmp6;
+      if (cResult[2] === color) {
+        tmp6 = cResult[3];
+      }
+      if (cResult[4] === children) {
+        if (cResult[5] === ref) {
+          let tmp8;
+          if (cResult[6] === tmp6) {
+            tmp8 = cResult[7];
+          }
+          return tmp8;
+        }
+      }
+      const tmp10 = jsx(native.LegacyText, { ref, style: tmp6, children });
+      cResult[4] = children;
+      cResult[5] = ref;
+      cResult[6] = tmp6;
+      cResult[7] = tmp10;
+      tmp8 = tmp10;
+    }
+  }
+  const items = [tmp4Result.text, color, style];
+  cResult[0] = style;
+  cResult[1] = tmp4Result.text;
+  cResult[2] = color;
+  cResult[3] = items;
+  tmp6 = items;
+}) : ((size, ref) => {
   let items;
   let str = size.size;
   const children = size.children;
@@ -58,7 +107,7 @@ const forwardRefResult = react.forwardRef((size, ref) => {
   items[1] = primary;
   items[2] = style;
   return tmp2(LegacyText, obj);
-});
+}));
 const result = size.fileFinishedImporting("design/void/Form/native/FormText.tsx");
 
 export default forwardRefResult;

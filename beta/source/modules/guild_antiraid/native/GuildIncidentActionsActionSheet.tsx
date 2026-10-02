@@ -1,23 +1,25 @@
-// Module ID: 11307
-// Function ID: 11308
+// Module ID: 11181
+// Function ID: 11182
 // Name: GuildIncidentActionsActionSheet
-// Dependencies: [19, 9540, 11308, 7459, 1074, 21, 4836, 6618, 6570, 1115, 6620, 563, 7458, 4800, 1177, 5917, 5999, 6621, 8905, 8048, 5745, 5281, 11309, 1241, 11310, 2]
+// Dependencies: [19, 10906, 11182, 7463, 1086, 21, 4837, 558, 576, 6624, 6571, 1127, 6620, 573, 7462, 4801, 1189, 5916, 5997, 6621, 8899, 8052, 5746, 5282, 11183, 1253, 11185, 2]
 
-// Module 11307 (GuildIncidentActionsActionSheet)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 7458 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 7459 */;
-import GuildAntiRaidActionCreators from "GuildAntiRaidActionCreators" /* 11309 */;
+// Module 11181 (GuildIncidentActionsActionSheet)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4801 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 7462 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 7463 */;
+import GuildAntiRaidActionCreators from "GuildAntiRaidActionCreators" /* 11183 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 9540 */;
-import GuildIncidentsActionSheetStore from "GuildIncidentsActionSheetStore" /* 11308 */;
-import Constants from "Constants" /* 1074 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10906 */;
+import GuildIncidentsActionSheetStore from "GuildIncidentsActionSheetStore" /* 11182 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
+let onClose;
 
 let c10;
 let c9;
@@ -30,17 +32,108 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp7;
-const GuildRaidLockdownFeedbackActionSheetDefault = tmp7(11310);
-function DurationSelectionActionSheet(onClose) {
+const GuildRaidLockdownFeedbackActionSheetDefault = tmp7(11185);
+({ resetGuildIncidentsActionSheetStore: hasOwnProperty, setInitialTime: metroRequire, setPauseDms: metroImportDefault, setPauseInvites: metroImportAll, setTime: c9, useGuildIncidentsActionSheetStore: c10 } = GuildIncidentsActionSheetStore);
+const getTimeframes = GuildAntiRaidConstants.getTimeframes;
+({ AnalyticEvents: closure_12, GuildFeatures: map1 } = Constants);
+({ jsx: closure_14, jsxs: closure_15 } = Fragment);
+const authStore3 = createStyles.createStyles({ beta: { marginLeft: -12 } });
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+  let flag;
+  let intl;
+  let items;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let obj = onClose(576);
+  const cResult = obj.c(15);
+  onClose = onClose.onClose;
+  if (cResult[0] !== onClose) {
+    let tmp10;
+    const arr = getTimeframes();
+    const ActionSheet = tmp(6624).ActionSheet;
+    const _Symbol = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { title: intl.string(onClose(1127).t.vKYZzc) };
+      const BottomSheetTitleHeader = tmp(6571).BottomSheetTitleHeader;
+      intl = tmp(1127).intl;
+      const tmp12 = closure_14(BottomSheetTitleHeader, obj2);
+      cResult[6] = tmp12;
+      tmp10 = tmp12;
+    } else {
+      tmp10 = cResult[6];
+    }
+    const Group = tmp(6620).ActionSheetRow.Group;
+    const mapped = arr.map((label) => {
+      const obj = {
+        label: label.label,
+        onPress() {
+          React4(label.value);
+          onClose();
+        }
+      };
+      return closure_1_14(onClose(dependencyMap[12]).ActionSheetRow, obj, label.value);
+    });
+    cResult[0] = onClose;
+    cResult[1] = Group;
+    cResult[2] = ActionSheet;
+    cResult[3] = false;
+    cResult[4] = mapped;
+    cResult[5] = tmp10;
+    tmp7 = tmp10;
+    tmp6 = mapped;
+    flag = false;
+    tmp5 = ActionSheet;
+    tmp4 = Group;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    flag = cResult[3];
+    tmp6 = cResult[4];
+    tmp7 = cResult[5];
+  }
+  if (cResult[7] === tmp4) {
+    if (cResult[8] === flag) {
+      let tmp14;
+      if (cResult[9] === tmp6) {
+        tmp14 = cResult[10];
+      }
+      if (cResult[11] === tmp5) {
+        if (cResult[12] === tmp7) {
+          let tmp16;
+          if (cResult[13] === tmp14) {
+            tmp16 = cResult[14];
+          }
+          return tmp16;
+        }
+      }
+      const obj3 = { children: items };
+      items = [tmp7, tmp14];
+      const tmp18 = closure_15(tmp5, obj3);
+      cResult[11] = tmp5;
+      cResult[12] = tmp7;
+      cResult[13] = tmp14;
+      cResult[14] = tmp18;
+      tmp16 = tmp18;
+    }
+  }
+  const tmp15 = closure_14(tmp4, { hasIcons: flag, children: tmp6 });
+  cResult[7] = tmp4;
+  cResult[8] = flag;
+  cResult[9] = tmp6;
+  cResult[10] = tmp15;
+  tmp14 = tmp15;
+}) : ((onClose) => {
   let intl;
   let items;
   onClose = onClose.onClose;
   let obj = { children: items };
   const arr = getTimeframes();
-  const ActionSheet = onClose(6618).ActionSheet;
-  const obj2 = { title: intl.string(onClose(1115).t.vKYZzc) };
-  const BottomSheetTitleHeader = onClose(6570).BottomSheetTitleHeader;
-  intl = onClose(1115).intl;
+  const ActionSheet = onClose(6624).ActionSheet;
+  const obj2 = { title: intl.string(onClose(1127).t.vKYZzc) };
+  const BottomSheetTitleHeader = onClose(6571).BottomSheetTitleHeader;
+  intl = onClose(1127).intl;
   items = [closure_14(BottomSheetTitleHeader, obj2), ];
   const obj3 = {
     hasIcons: false,
@@ -52,18 +145,13 @@ function DurationSelectionActionSheet(onClose) {
           onClose();
         }
       };
-      return closure_1_14(onClose(dependencyMap[10]).ActionSheetRow, obj, label.value);
+      return closure_1_14(onClose(dependencyMap[12]).ActionSheetRow, obj, label.value);
     })
   };
   const Group = onClose(6620).ActionSheetRow.Group;
   items[1] = closure_14(Group, obj3);
   return closure_15(ActionSheet, obj);
-}
-({ resetGuildIncidentsActionSheetStore: hasOwnProperty, setInitialTime: metroRequire, setPauseDms: metroImportDefault, setPauseInvites: metroImportAll, setTime: c9, useGuildIncidentsActionSheetStore: c10 } = GuildIncidentsActionSheetStore);
-const getTimeframes = GuildAntiRaidConstants.getTimeframes;
-({ AnalyticEvents: closure_12, GuildFeatures: map1 } = Constants);
-({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-const authStore3 = createStyles.createStyles({ beta: { marginLeft: -12 } });
+});
 class GuildIncidentActionsActionSheet {
   constructor(guild) {
     let BetaTag;
@@ -104,16 +192,16 @@ class GuildIncidentActionsActionSheet {
     let tmp3 = guild;
     let tmp4 = time;
     const hasTimeChanges = tmp2.hasTimeChanges;
-    let obj = guild(time[11]);
+    let obj = guild(time[13]);
     const items = [pauseDms];
     const stateFromStores = obj.useStateFromStores(items, () => GuildIncidentsStore.getGuildIncident(guild.id));
-    let obj2 = guild(time[12]);
+    let obj2 = guild(time[14]);
     const hasInvitesDisabledResult = obj2.hasInvitesDisabled(stateFromStores);
     let c5 = hasInvitesDisabledResult;
-    let obj3 = guild(time[12]);
+    let obj3 = guild(time[14]);
     const hasDMsDisabledResult = obj3.hasDMsDisabled(stateFromStores);
     let c6 = hasDMsDisabledResult;
-    let obj4 = guild(time[12]);
+    let obj4 = guild(time[14]);
     let result = obj4.initialLockdownDurationHours(stateFromStores);
     let c7 = result;
     let hasItem;
@@ -143,25 +231,25 @@ class GuildIncidentActionsActionSheet {
       return label;
     }, items3);
     let obj5 = { startExpanded: true, header: closure_14(BottomSheetTitleHeader, obj6), children: items4 };
-    const ActionSheet = tmp3(tmp4[7]).ActionSheet;
-    obj6 = { title: intl.string(tmp3(tmp4[9]).t.oCYAc7), leading: closure_14(BetaTag, obj7) };
-    BottomSheetTitleHeader = tmp3(tmp4[8]).BottomSheetTitleHeader;
-    intl = tmp3(tmp4[9]).intl;
-    obj7 = { size: tmp3(tmp4[14]).BetaSizes.SMALL, style: tmp.beta };
-    BetaTag = tmp3(tmp4[14]).BetaTag;
-    const TableRow = tmp3(tmp4[15]).TableRow;
+    const ActionSheet = tmp3(tmp4[9]).ActionSheet;
+    obj6 = { title: intl.string(tmp3(tmp4[11]).t.oCYAc7), leading: closure_14(BetaTag, obj7) };
+    BottomSheetTitleHeader = tmp3(tmp4[10]).BottomSheetTitleHeader;
+    intl = tmp3(tmp4[11]).intl;
+    obj7 = { size: tmp3(tmp4[16]).BetaSizes.SMALL, style: tmp.beta };
+    BetaTag = tmp3(tmp4[16]).BetaTag;
+    const TableRow = tmp3(tmp4[17]).TableRow;
     let str = memo;
-    const TrailingText = tmp3(tmp4[15]).TableRow.TrailingText;
+    const TrailingText = tmp3(tmp4[17]).TableRow.TrailingText;
     if (memo == null) {
       str = "";
     }
     const obj8 = {
       trailing: closure_14(TrailingText, { text: str }),
-      label: intl2.string(tmp3(tmp4[9]).t.vKYZzc),
+      label: intl2.string(tmp3(tmp4[11]).t.vKYZzc),
       arrow: true,
       onPress() {
         let obj2;
-        const obj = { content: authStore2(DurationSelectionActionSheet, obj2), key: "DurationSelectionActionSheet" };
+        const obj = { content: authStore2(closure_17, obj2), key: "DurationSelectionActionSheet" };
         const showActionSheet = ActionSheetActionCreators.showActionSheet;
         obj2 = { onClose: onDurationSelectorClose };
         ActionSheetActionCreators;
@@ -169,39 +257,39 @@ class GuildIncidentActionsActionSheet {
       },
       start: true,
       end: true,
-      accessibilityLabel: intl3.string(tmp3(tmp4[9]).t.vKYZzc),
+      accessibilityLabel: intl3.string(tmp3(tmp4[11]).t.vKYZzc),
       accessibilityHint: memo
     };
-    intl2 = tmp3(tmp4[9]).intl;
-    intl3 = tmp3(tmp4[9]).intl;
+    intl2 = tmp3(tmp4[11]).intl;
+    intl3 = tmp3(tmp4[11]).intl;
     items4 = [tmp15(TableRow, obj8), , , ];
-    const TableRowGroup = tmp3(tmp4[16]).TableRowGroup;
+    const TableRowGroup = tmp3(tmp4[18]).TableRowGroup;
     const obj9 = {
-      label: intl4.string(tmp3(tmp4[9]).t.Uwsjn6),
-      subLabel: intl5.string(tmp3(tmp4[9]).t.qPJkZh),
+      label: intl4.string(tmp3(tmp4[11]).t.Uwsjn6),
+      subLabel: intl5.string(tmp3(tmp4[11]).t.qPJkZh),
       value: pauseInvites || hasItem,
       onValueChange() {
         metroImportAll(!pauseInvites);
       },
       disabled: hasItem
     };
-    const TableSwitchRow = tmp3(tmp4[17]).TableSwitchRow;
-    intl4 = tmp3(tmp4[9]).intl;
-    intl5 = tmp3(tmp4[9]).intl;
+    const TableSwitchRow = tmp3(tmp4[19]).TableSwitchRow;
+    intl4 = tmp3(tmp4[11]).intl;
+    intl5 = tmp3(tmp4[11]).intl;
     const items5 = [tmp15(TableSwitchRow, obj9), ];
     if (hasItem) {
-      const obj10 = { icon: closure_14(Icon, obj11), label: intl6.string(tmp3(tmp4[9]).t["9GPbsV"]) };
-      const TableRow2 = tmp3(tmp4[15]).TableRow;
-      obj11 = { source: analyticsData(tmp4[18]), IconComponent: tmp3(tmp4[19]).WarningIcon, variant: "secondary" };
-      Icon = tmp3(tmp4[15]).TableRow.Icon;
-      intl6 = tmp3(tmp4[9]).intl;
+      const obj10 = { icon: closure_14(Icon, obj11), label: intl6.string(tmp3(tmp4[11]).t["9GPbsV"]) };
+      const TableRow2 = tmp3(tmp4[17]).TableRow;
+      obj11 = { source: analyticsData(tmp4[20]), IconComponent: tmp3(tmp4[21]).WarningIcon, variant: "secondary" };
+      Icon = tmp3(tmp4[17]).TableRow.Icon;
+      intl6 = tmp3(tmp4[11]).intl;
       hasItem = tmp15(TableRow2, obj10);
     }
     items5[1] = hasItem;
     items4[1] = closure_15(TableRowGroup, { hasIcons: true, children: items5 });
     const obj12 = {
-      label: intl7.string(tmp3(tmp4[9]).t["wrDmA/"]),
-      subLabel: intl8.string(tmp3(tmp4[9]).t.UQbJW7),
+      label: intl7.string(tmp3(tmp4[11]).t["wrDmA/"]),
+      subLabel: intl8.string(tmp3(tmp4[11]).t.UQbJW7),
       value: pauseDms,
       onValueChange() {
         metroImportDefault(!pauseDms);
@@ -209,11 +297,11 @@ class GuildIncidentActionsActionSheet {
       start: true,
       end: true
     };
-    const TableSwitchRow2 = tmp3(tmp4[17]).TableSwitchRow;
-    intl7 = tmp3(tmp4[9]).intl;
-    intl8 = tmp3(tmp4[9]).intl;
+    const TableSwitchRow2 = tmp3(tmp4[19]).TableSwitchRow;
+    intl7 = tmp3(tmp4[11]).intl;
+    intl8 = tmp3(tmp4[11]).intl;
     items4[2] = closure_14(TableSwitchRow2, obj12);
-    const ButtonGroup = tmp3(tmp4[20]).ButtonGroup;
+    const ButtonGroup = tmp3(tmp4[22]).ButtonGroup;
     const obj13 = {
       onPress() {
         let alertType;
@@ -250,30 +338,30 @@ class GuildIncidentActionsActionSheet {
         }
         if (!tmp12) {
           const obj6 = { content: authStore2(GuildRaidLockdownFeedbackActionSheetDefault, obj7), key: "GuildRaidLockdownFeedbackActionSheet" };
-          const showActionSheet = tmp(4800).showActionSheet;
+          const showActionSheet = tmp(4801).showActionSheet;
           obj7 = { guildId: tmp3.id };
           ActionSheetActionCreators;
           showActionSheet(obj6);
         }
       },
-      text: intl9.string(tmp3(tmp4[9]).t["R3BPH+"]),
+      text: intl9.string(tmp3(tmp4[11]).t["R3BPH+"]),
       variant: "primary",
       size: "md",
       disabled: !tmp17
     };
-    const Button = tmp3(tmp4[21]).Button;
-    intl9 = tmp3(tmp4[9]).intl;
+    const Button = tmp3(tmp4[23]).Button;
+    intl9 = tmp3(tmp4[11]).intl;
     function handleClose() {
-      const obj = analyticsData(time[13]);
+      const obj = analyticsData(time[15]);
       obj.hideActionSheet("GuildIncidentActionsActionSheet");
       _undefined();
     }
     const obj14 = { children: items6 };
     tmp17 = pauseInvites !== hasInvitesDisabledResult || pauseDms !== hasDMsDisabledResult || hasTimeChanges;
     items6 = [tmp15(Button, obj13), ];
-    const obj15 = { onPress: handleClose, text: intl10.string(tmp3(tmp4[9]).t["ETE/oC"]), variant: "secondary", size: "md" };
-    const Button2 = tmp3(tmp4[21]).Button;
-    intl10 = tmp3(tmp4[9]).intl;
+    const obj15 = { onPress: handleClose, text: intl10.string(tmp3(tmp4[11]).t["ETE/oC"]), variant: "secondary", size: "md" };
+    const Button2 = tmp3(tmp4[23]).Button;
+    intl10 = tmp3(tmp4[11]).intl;
     items6[1] = closure_14(Button2, obj15);
     items4[3] = closure_15(ButtonGroup, obj14);
     return closure_15(ActionSheet, obj5);

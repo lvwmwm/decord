@@ -1,98 +1,41 @@
 // Module ID: 12351
 // Function ID: 12352
-// Dependencies: [12341, 12318, 12313]
-// Exports: logSpanEnd, logSpanStart
+// Dependencies: [12339, 12311]
+// Exports: parseSampleRate
 
 // Module 12351
-import _mod12318 from "module_12318" /* 12318 */;
-import _mod12341 from "module_12341" /* 12341 */;
+import _mod12339 from "module_12339" /* 12339 */;
 
 
-export const logSpanEnd = function logSpanEnd(spanContext) {
-  if (_mod12341.DEBUG_BUILD) {
-    const tmpResult = _mod12318;
-    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
-    const description = spanToJSONResult.description;
-    let str = "< unknown name >";
-    if (undefined !== description) {
-      str = description;
+export const parseSampleRate = function parseSampleRate(flag) {
+  if (typeof flag === "boolean") {
+    const _Number = Number;
+    return Number(flag);
+  } else {
+    let parsed = flag;
+    if (typeof flag === "string") {
+      const _parseFloat = parseFloat;
+      parsed = parseFloat(flag);
     }
-    const op = spanToJSONResult.op;
-    let str2 = "< unknown op >";
-    if (undefined !== op) {
-      str2 = op;
-    }
-    const spanId = spanContext.spanContext().spanId;
-    let str3 = "";
-    const tmpResult2 = _mod12318;
-    if (tmpResult2.getRootSpan(spanContext) === spanContext) {
-      str3 = "root ";
-    }
-    const _HermesInternal = HermesInternal;
-    const combined = "[Tracing] Finishing \"" + str2 + "\" " + str3 + "span \"" + str + "\" with ID " + spanId;
-    const logger = tmp(12313).logger;
-    logger.log(combined);
-  }
-};
-export const logSpanStart = function logSpanStart(spanContext) {
-  let description2;
-  let op2;
-  if (_mod12341.DEBUG_BUILD) {
-    const tmpResult = _mod12318;
-    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
-    const description = spanToJSONResult.description;
-    let str = "< unknown name >";
-    if (undefined !== description) {
-      str = description;
-    }
-    const op = spanToJSONResult.op;
-    let str2 = "< unknown op >";
-    if (undefined !== op) {
-      str2 = op;
-    }
-    const parent_span_id = spanToJSONResult.parent_span_id;
-    const spanId = spanContext.spanContext().spanId;
-    const tmpResult4 = _mod12318;
-    const spanIsSampledResult = tmpResult4.spanIsSampled(spanContext);
-    const tmpResult5 = _mod12318;
-    const rootSpan = tmpResult5.getRootSpan(spanContext);
-    let str3 = "unsampled";
-    if (spanIsSampledResult) {
-      str3 = "sampled";
-    }
-    let str5 = "";
-    if (rootSpan === spanContext) {
-      str5 = "root ";
-    }
-    const _HermesInternal = HermesInternal;
-    const _HermesInternal2 = HermesInternal;
-    const combined = "[Tracing] Starting " + str3 + " " + str5 + "span";
-    const items = ["op: " + str2, , ];
-    const _HermesInternal3 = HermesInternal;
-    items[1] = "name: " + str;
-    const _HermesInternal4 = HermesInternal;
-    items[2] = "ID: " + spanId;
-    if (parent_span_id) {
-      const _HermesInternal5 = HermesInternal;
-      items.push("parent ID: " + parent_span_id);
-    }
-    if (rootSpan !== spanContext) {
-      const tmpResult6 = _mod12318;
-      ({ op: op2, description: description2 } = tmpResult6.spanToJSON(rootSpan));
-      const _HermesInternal6 = HermesInternal;
-      tmpResult6.spanToJSON(rootSpan);
-      items.push("root ID: " + rootSpan.spanContext().spanId);
-      if (op2) {
-        const _HermesInternal7 = HermesInternal;
-        items.push("root op: " + op2);
-      }
-      if (description2) {
-        const _HermesInternal8 = HermesInternal;
-        items.push("root description: " + description2);
+    if (typeof parsed === "number") {
+      const _isNaN = isNaN;
+      if (!isNaN(parsed)) {
+        if (parsed >= 0) {
+          if (parsed <= 1) {
+            return parsed;
+          }
+        }
       }
     }
-    const logger = tmp(12313).logger;
-    const _HermesInternal9 = HermesInternal;
-    logger.log("" + combined + "\n  " + items.join("\n  "));
+    const tmp = require;
+    if (_mod12339.DEBUG_BUILD) {
+      const logger = tmp(12311).logger;
+      const _JSON = JSON;
+      const warn = logger.warn;
+      const json = JSON.stringify(flag);
+      const _JSON2 = JSON;
+      const _HermesInternal = HermesInternal;
+      warn("[Tracing] Given sample rate is invalid. Sample rate must be a boolean or a number between 0 and 1. Got " + json + " of type " + JSON.stringify(typeof flag) + ".");
+    }
   }
 };

@@ -1,29 +1,31 @@
-// Module ID: 15236
-// Function ID: 15237
+// Module ID: 15224
+// Function ID: 15225
 // Name: BackupScreen
-// Dependencies: [5, 32, 19, 21, 15234, 4832, 1115, 6363, 15229, 15235, 15232, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 21, 15222, 4833, 1127, 558, 576, 6360, 15223, 15217, 15218, 2]
 
-// Module 15236 (BackupScreen)
-import intl10 from "intl" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6363 */;
-import MfaOptionScreenDefault from "MfaOptionScreen" /* 15229 */;
-import MFA from "MFA" /* 15234 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+// Module 15224 (BackupScreen)
+import intl6 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6360 */;
+import MFA from "MFA" /* 15222 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c6, c7;
+const require = globalThis.__r;
+let c6, c7, closure_3, importDefault;
 
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-let tmp;
-const buttonDefault = tmp(15232);
-const ClipboardCopyInputDefault = tmp(15235);
+let tmp4;
+const ClipboardCopyInputDefault = tmp4(15223);
+function removeDashes(str) {
+  return str.replace(/-/g, "");
+}
 function isValidClipboardCode(arg0) {
   let tmp3 = arg0.length >= MFA.BACKUP_CODE_MIN_LENGTH;
   if (tmp3) {
@@ -31,51 +33,326 @@ function isValidClipboardCode(arg0) {
   }
   return tmp3;
 }
+function getFormattedExplainer(first1) {
+  let items;
+  let items1;
+  let obj3;
+  const Text = Text_Text.Text;
+  const tmp = metroRequire;
+  if (first1 > 0) {
+    const obj = { variant: "text-md/normal", children: items };
+    const intl = tmp2(1127).intl;
+    items = [intl.string(intl6.t.RRtlLg), ];
+    const intl2 = tmp2(1127).intl;
+    const obj2 = { countdown: first1 };
+    items[1] = intl2.format(intl6.t.tsWkAE, obj2);
+    obj3 = obj;
+  } else {
+    obj3 = { variant: "text-md/normal", children: items1 };
+    const intl3 = tmp2(1127).intl;
+    items1 = [intl3.string(intl6.t.RRtlLg), ];
+    const intl4 = tmp2(1127).intl;
+    items1[1] = intl4.string(intl6.t.v3a6Pd);
+  }
+  return tmp(Text, obj3);
+}
+let _asyncToGenerator = _asyncToGenerator_mod;
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
 ({ jsxs: metroRequire, jsx: metroImportDefault, Fragment: metroImportAll } = Fragment);
-const result = size.fileFinishedImporting("modules/mfa/native/screens/BackupScreen.tsx");
-
-export default function BackupScreen(finish) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_7;
+  let finish;
+  let first;
+  let mfaChallenge;
+  let obj3;
+  let obj4;
+  let tmp10;
+  let tmp12;
+  let tmp15;
+  let tmp16;
+  let tmp18;
+  let tmp19;
+  let tmp26;
+  let tmp27;
+  let tmp7;
+  const tmp = finish;
+  let obj = finish(576);
+  const cResult = obj.c(34);
+  ({ mfaChallenge, finish } = arg0);
+  const tmp4 = importDefault;
+  let obj2 = react;
+  const tmp5 = useWideAuthViewDefault();
+  [tmp7, importDefault] = _slicedToArray(react.useState(false), 2);
+  const tmp6 = _slicedToArray(react.useState(false), 2);
+  [dependencyMap, _asyncToGenerator] = react.useState("");
+  const tmp9 = _slicedToArray(react.useState(undefined), 2);
+  [tmp10, _slicedToArray] = tmp9;
+  const tmp11 = _slicedToArray(react.useState(false), 2);
+  [tmp12, react] = tmp11;
+  [first, closure_7] = react.useState(10);
+  if (cResult[0] !== first) {
+    const fn = function f() {
+      let closure_0;
+      if (first > 0) {
+        const _setTimeout = setTimeout;
+        const timeout = setTimeout(() => {
+          closure_1_7((arg0) => arg0 - 1);
+        }, 1000);
+        return () => clearTimeout(closure_0);
+      }
+    };
+    const items = [first];
+    cResult[0] = first;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp16 = items;
+    tmp15 = fn;
+  } else {
+    tmp15 = cResult[1];
+    tmp16 = cResult[2];
+  }
+  const effect = obj2.useEffect(tmp15, tmp16);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+    cResult[3] = C;
+    tmp18 = C;
+  } else {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+  }
+  if (cResult[4] !== finish) {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+    let closure_0 = _asyncToGenerator(async (arg0, value) => {
+      let closure_4;
+      let message2;
+      let v0;
+      closure_0 = arg0;
+      if (c7 === 2) {
+        c7 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        let c5;
+        try {
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              closure_3 = tmp;
+              closure_2 = tmp4;
+              closure_0 = undefined;
+              tmp28(undefined);
+              message2(true);
+              c5 = 1;
+              const obj4 = { mfaType: "backup", data: removeDashes(closure_0) };
+              c6 = 2;
+              c7 = 1;
+              const obj5 = { value: closure_0(obj4), done: false };
+              return obj5;
+            }
+          } else {
+            if (1 === c6) {
+              c5 = 0;
+              closure_0 = tmp28;
+              let message;
+              const tmp12 = tmp28;
+              if (closure_0 != null) {
+                const body = closure_0.body;
+                if (body != null) {
+                  message = body.message;
+                }
+              }
+              message2 = message;
+              if (message == null) {
+                message2 = closure_0.message;
+              }
+              tmp12(message2);
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 0;
+              c7 = 3;
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              c5(true);
+              c5 = 0;
+            }
+            message2(false);
+            c7 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp28) {
+          if (0 === c5) {
+            c7 = 3;
+            throw tmp28;
+          } else {
+            c6 = 1;
+          }
+        }
+      }
+    });
+    let fn2 = function() {
+      return closure_0(...arguments);
+    };
+    cResult[4] = finish;
+    cResult[5] = fn2;
+    tmp19 = fn2;
+  } else {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+  }
+  fn2 = tmp19;
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+    const stringResult = obj3.string(tmp(1127).t.B2T1HD);
+    const intl = tmp(1127).intl;
+    const stringResult1 = intl.string(tmp(1127).t.c5J7O0);
+    cResult[6] = stringResult;
+    cResult[7] = stringResult1;
+  } else {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+  }
+  if (cResult[8] !== first) {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+    const tmp25 = getFormattedExplainer(first);
+    cResult[8] = first;
+    cResult[9] = tmp25;
+  } else {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+  }
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+    const stringResult2 = obj4.string(tmp(1127).t["C/ZAw/"]);
+    const intl2 = tmp(1127).intl;
+    const stringResult3 = intl2.string(tmp(1127).t.fZSi1D);
+    cResult[10] = stringResult2;
+    cResult[11] = stringResult3;
+    tmp27 = stringResult3;
+    tmp26 = stringResult2;
+  } else {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+    tmp27 = cResult[11];
+  }
+  if (cResult[12] === tmp10) {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+  }
+  let obj5 = { label: tmp26, placeholder: tmp27, isValidClipboardCode, maxLength: tmp(15222).BACKUP_CODE_MAX_LENGTH, onChangeCode: tmp18, error: tmp10, isDisabled: tmp30, autoFocus: tmp31 };
+  const tmp4Result = ClipboardCopyInputDefault;
+  cResult[12] = tmp10;
+  cResult[13] = tmp7 || tmp12;
+  cResult[14] = !tmp5;
+  cResult[15] = closure_7(tmp4Result, obj5);
+  const tmp33 = closure_7(tmp4Result, obj5);
+}) : ((finish) => {
+  let _undefined;
   let c1;
   let c4;
   let c5;
-  let closure_3;
+  let closure_7;
   let first;
   let first1;
   let intl;
   let intl2;
+  let intl3;
+  let intl4;
   let intl5;
-  let intl6;
-  let intl7;
-  let items2;
-  let items3;
+  let obj3;
   let obj4;
-  let obj6;
-  let obj7;
   let tmp10;
   let tmp18;
   let tmp20;
   let tmp5;
   let tmp8;
-  let tmpResult2;
+  let tmpResult;
   finish = finish.finish;
-  c1 = undefined;
+  importDefault = undefined;
   first = undefined;
-  closure_3 = undefined;
-  c4 = undefined;
-  c5 = undefined;
+  _asyncToGenerator = undefined;
+  _slicedToArray = undefined;
+  react = undefined;
   first1 = undefined;
-  metroImportDefault = undefined;
-  const tmp = importDefault;
+  closure_7 = undefined;
   const mfaChallenge = finish.mfaChallenge;
-  const tmp3 = useWideAuthViewDefault();
+  const tmp = importDefault;
+  const tmp3 = require("useWideAuthView")();
   const tmp4 = _slicedToArray(react.useState(false), 2);
   [tmp5, c1] = tmp4;
-  [first, closure_3] = react.useState("");
+  [first, _asyncToGenerator] = react.useState("");
   [tmp8, c4] = _slicedToArray(react.useState(undefined), 2);
   const tmp7 = _slicedToArray(react.useState(undefined), 2);
   [tmp10, c5] = _slicedToArray(react.useState(false), 2);
   const tmp9 = _slicedToArray(react.useState(false), 2);
-  [first1, metroImportDefault] = react.useState(10);
+  [first1, closure_7] = react.useState(10);
   const items = [first1];
   const effect = react.useEffect(() => {
     let closure_0;
@@ -103,10 +380,9 @@ export default function BackupScreen(finish) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
-      let c5;
       try {
         c7 = 2;
         if (0 === c6) {
@@ -118,12 +394,12 @@ export default function BackupScreen(finish) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_3 = tmp;
+            closure_3 = tmp;
             let closure_2 = tmp4;
-            tmp27(undefined);
+            tmp28(undefined);
             message2(true);
             c5 = 1;
-            const obj4 = { mfaType: "backup", data: closure_0.replace(/-/g, "") };
+            const obj4 = { mfaType: "backup", data: removeDashes(closure_0) };
             c6 = 2;
             c7 = 1;
             const obj5 = { value: closure_0(obj4), done: false };
@@ -132,9 +408,9 @@ export default function BackupScreen(finish) {
         } else {
           if (1 === c6) {
             c5 = 0;
-            closure_0 = tmp27;
+            closure_0 = tmp28;
             let message;
-            const tmp12 = tmp27;
+            const tmp12 = tmp28;
             if (closure_0 != null) {
               const body = closure_0.body;
               if (body != null) {
@@ -160,12 +436,12 @@ export default function BackupScreen(finish) {
           }
           message2(false);
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
-      } catch (tmp27) {
+      } catch (tmp28) {
         if (0 === c5) {
           c7 = 3;
-          throw tmp27;
+          throw tmp28;
         } else {
           c6 = 1;
         }
@@ -173,36 +449,19 @@ export default function BackupScreen(finish) {
     }
   });
   const items1 = [finish];
-  metroImportAll = useCallback(function() {
+  let closure_8 = useCallback(function() {
     return closure_0(...arguments);
   }, items1);
-  let obj = { headerText: intl.string(intl10.t.B2T1HD), subtitle: intl2.string(intl10.t.c5J7O0), input: metroRequire(tmp18, obj6), submit: tmp14(tmpResult2, obj7), screenProps: { mfaChallenge, finish }, mfaMethod: "backup" };
-  const tmp15 = MfaOptionScreenDefault;
-  intl = intl10.intl;
-  intl2 = intl10.intl;
-  const Text = Text_Text.Text;
-  tmp18 = metroImportAll;
-  if (first1 > 0) {
-    let obj2 = { variant: "text-md/normal", children: items2 };
-    const intl3 = tmp16(1115).intl;
-    items2 = [intl3.string(tmp16(1115).t.RRtlLg), ];
-    const intl4 = tmp16(1115).intl;
-    let obj3 = { countdown: first1 };
-    items2[1] = intl4.format(intl10.t.tsWkAE, obj3);
-    obj4 = obj2;
-  } else {
-    obj4 = { variant: "text-md/normal", children: items3 };
-    const intl8 = tmp16(1115).intl;
-    items3 = [intl8.string(tmp16(1115).t.RRtlLg), ];
-    const intl9 = tmp16(1115).intl;
-    items3[1] = intl9.string(intl10.t.v3a6Pd);
-  }
-  const items4 = [metroRequire(Text, obj4), ];
-  let obj5 = {
-    label: intl5.string(tmp16(1115).t["C/ZAw/"]),
-    placeholder: intl6.string(tmp16(1115).t.fZSi1D),
+  let obj = { headerText: intl.string(finish(first[6]).t.B2T1HD), subtitle: intl2.string(finish(first[6]).t.c5J7O0), input: first1(tmp18, obj3), submit: tmp14(tmpResult, obj4), screenProps: { mfaChallenge, finish }, mfaMethod: "backup" };
+  const tmp15 = require("MfaOptionScreen");
+  intl = finish(first[6]).intl;
+  intl2 = finish(first[6]).intl;
+  const items2 = [getFormattedExplainer(first1), ];
+  let obj2 = {
+    label: intl3.string(finish(first[6]).t["C/ZAw/"]),
+    placeholder: intl4.string(finish(first[6]).t.fZSi1D),
     isValidClipboardCode,
-    maxLength: tmp16(15234).BACKUP_CODE_MAX_LENGTH,
+    maxLength: finish(first[4]).BACKUP_CODE_MAX_LENGTH,
     onChangeCode(arg0) {
       closure_3(arg0);
       _undefined(undefined);
@@ -211,31 +470,35 @@ export default function BackupScreen(finish) {
     isDisabled: tmp20,
     autoFocus: !tmp3
   };
-  const tmpResult = ClipboardCopyInputDefault;
-  intl5 = tmp16(1115).intl;
-  intl6 = tmp16(1115).intl;
-  obj6 = { children: items4 };
+  const tmp19 = require("ClipboardCopyInput");
+  intl3 = finish(first[6]).intl;
+  intl4 = finish(first[6]).intl;
+  obj3 = { children: items2 };
   tmp20 = tmp5 || tmp10;
-  items4[1] = metroImportDefault(tmpResult, obj5);
-  obj7 = {
+  items2[1] = closure_7(tmp19, obj2);
+  obj4 = {
     variant: "primary",
-    text: intl7.string(intl10.t.geKm7t),
+    text: intl5.string(tmp16(tmp2[6]).t.geKm7t),
     loading: tmp5 || tmp10,
     onPress() {
       return closure_8(first);
     },
     disabled: tmp5
   };
-  tmpResult2 = buttonDefault;
-  intl7 = tmp16(1115).intl;
+  tmpResult = tmp(first[11]);
+  intl5 = tmp16(tmp2[6]).intl;
+  tmp18 = closure_8;
   if (!tmp5) {
     tmp5 = tmp10;
   }
   if (!tmp5) {
-    tmp5 = first.length < tmp16(15234).BACKUP_CODE_MIN_LENGTH;
+    tmp5 = first.length < tmp16(tmp2[4]).BACKUP_CODE_MIN_LENGTH;
   }
   if (!tmp5) {
     tmp5 = first1 > 0;
   }
-  return metroImportDefault(tmp15, obj);
-};
+  return closure_7(tmp15, obj);
+});
+const result = size.fileFinishedImporting("modules/mfa/native/screens/BackupScreen.tsx");
+
+export default tmp3;

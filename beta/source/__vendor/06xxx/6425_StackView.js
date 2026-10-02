@@ -1,7 +1,7 @@
 // Module ID: 6425
 // Function ID: 6426
 // Name: StackView
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 6426, 6429, 1486, 5943, 1616, 6433, 6435]
+// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 6426, 6429, 1492, 5942, 1622, 6433, 6435]
 
 // Module 6425 (StackView)
 import Fragment from "Fragment" /* 21 */;
@@ -227,8 +227,8 @@ const entry = {
       return acc;
     }, {});
     let obj = { style: container.container, children: self(SafeAreaProviderCompat, obj2) };
-    obj2 = { children: self(require("module_1616").SafeAreaInsetsContext.Consumer, obj3) };
-    SafeAreaProviderCompat = require("module_5943").SafeAreaProviderCompat;
+    obj2 = { children: self(require("module_1622").SafeAreaInsetsContext.Consumer, obj3) };
+    SafeAreaProviderCompat = require("module_5942").SafeAreaProviderCompat;
     obj3 = {
       children(arg0) {
         closure_0 = arg0;
@@ -258,7 +258,7 @@ const entry1 = {
     let arr3;
     let closingRouteKeys;
     let openingRouteKeys;
-    const f82189 = (item, index) => Object.is(item, arr3[index]);
+    const f91459 = (item, index) => Object.is(item, arr3[index]);
     _require = state;
     dependencyMap = previousState;
     const items = [...state.state.preloadedRoutes];
@@ -279,7 +279,7 @@ const entry1 = {
       let tmp11;
       let found4;
       let arr11;
-      const tmp6 = mapped.length === mapped1.length && mapped.every(f82189);
+      const tmp6 = mapped.length === mapped1.length && mapped.every(f91459);
       if (tmp6) {
         if (previousState.routes.length) {
           let routes = previousState.routes;
@@ -320,7 +320,7 @@ const entry1 = {
           }
           if (typeof tmp5 === "function") {
             let mapped2 = substr;
-            const tmp73 = items.length === arr3.length && items.every(f82189);
+            const tmp73 = items.length === arr3.length && items.every(f91459);
             if (!tmp73) {
               closure_2 = items.reduce((acc, key) => {
                 acc[key.key] = key;

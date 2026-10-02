@@ -1,11 +1,11 @@
-// Module ID: 9113
-// Function ID: 9114
+// Module ID: 9090
+// Function ID: 9091
 // Name: VideoFilterImageError
-// Dependencies: [1271, 1115, 2]
+// Dependencies: [1283, 1127, 2]
 
-// Module 9113 (VideoFilterImageError)
-import intl3 from "intl" /* 1115 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 9090 (VideoFilterImageError)
+import intl3 from "intl" /* 1127 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import size from "module_2" /* 2 */;
 
 const React2 = { ASSET_SIZE: "BINARY_TYPE_MAX_SIZE" };
@@ -26,7 +26,7 @@ class VideoFilterImageError extends V8APIError {
       tmp7 = code === constants.ASSET_SIZE;
     }
     if (tmp7) {
-      const intl2 = tmp4(1115).intl;
+      const intl2 = tmp4(1127).intl;
       tmp32.message = intl2.string(intl3.t.mrlScX);
     }
     return tmp32;

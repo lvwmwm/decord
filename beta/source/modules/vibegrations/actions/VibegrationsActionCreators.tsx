@@ -1,18 +1,18 @@
-// Module ID: 8496
-// Function ID: 8497
+// Module ID: 8493
+// Function ID: 8494
 // Name: VibegrationsActionCreators
-// Dependencies: [5, 8495, 1074, 573, 8497, 8498, 1271, 5371, 12451, 6584, 8491, 2]
+// Dependencies: [5, 8492, 1086, 585, 8494, 8495, 1283, 5372, 12449, 6585, 8488, 2]
 // Exports: createProject, deleteProjectInBackground, markLogsSeen, refreshPublishedProject, reloadVibegrationsProjectFrames, renameProject, setBuilderPreviewApplicationId, setBuilderPreviewMobile, setChatSidebarWidth, setComposerDraft, setGuildHints, setProjectIcon, setSelectedProjectForGuild, trackPublishFailed, updateProjectSettings
 
-// Module 8496 (VibegrationsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5371 */;
-import VibegrationsAnalytics from "VibegrationsAnalytics" /* 8497 */;
-import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 8498 */;
+// Module 8493 (VibegrationsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5372 */;
+import VibegrationsAnalytics from "VibegrationsAnalytics" /* 8494 */;
+import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 8495 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8495 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8492 */;
 import size from "module_2" /* 2 */;
 
 let closure_7, closure_8, projectsFetchState;
@@ -40,7 +40,7 @@ let obj = function _listProjects() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -119,7 +119,7 @@ let obj = function _listProjects() {
             }
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp44) {
           if (0 === c4) {
             c6 = 3;
@@ -183,7 +183,7 @@ obj = function _createProject() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -344,7 +344,7 @@ obj = function _deleteProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -490,9 +490,9 @@ obj = function _refreshPublishedProject() {
       const obj13 = { isPreview };
       const obj5 = closure_131_0(closure_131_2[4]);
       const result = obj5.trackVibegrationDeployed(closure_0, obj13);
-      await "HermesInternal";
+      await "IconComponent";
       isPreview = isPreview.isPreview;
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -527,7 +527,7 @@ export const reloadVibegrationsProjectFrames = function reloadVibegrationsProjec
     if (prop == null) {
       prop = null;
     }
-    const tmp2Result = tmp2(8498);
+    const tmp2Result = tmp2(8495);
     tmp2Result.reloadAppFrames(prop);
   }
 };

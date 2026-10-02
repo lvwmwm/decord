@@ -1,26 +1,28 @@
-// Module ID: 12665
-// Function ID: 12666
+// Module ID: 12667
+// Function ID: 12668
 // Name: UserProfileDismissibleUpsells
-// Dependencies: [19, 17, 1372, 7628, 6852, 2042, 21, 4836, 576, 12666, 7635, 504, 4488, 10088, 2029, 1177, 4832, 1115, 5435, 5992, 5281, 8122, 11620, 2]
-// Exports: default
+// Dependencies: [19, 17, 1378, 7632, 6853, 2048, 21, 4837, 588, 558, 576, 12668, 7639, 504, 4491, 2035, 10125, 1189, 4833, 1127, 5436, 5940, 5282, 8119, 11506, 2]
 
-// Module 12665 (UserProfileDismissibleUpsells)
+// Module 12667 (UserProfileDismissibleUpsells)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl5 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import dismissible_content from "dismissible_content" /* 2029 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import XSmallIcon from "XSmallIcon" /* 5992 */;
-import ColorConstants from "ColorConstants" /* 6852 */;
-import Constants from "Constants" /* 7628 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8122 */;
-import ShopIcon from "ShopIcon" /* 11620 */;
+import nativeDefault from "native" /* 588 */;
+import intl5 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import dismissible_content from "dismissible_content" /* 2035 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import XSmallIcon from "XSmallIcon" /* 5940 */;
+import ColorConstants from "ColorConstants" /* 6853 */;
+import Constants from "Constants" /* 7632 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8119 */;
+import ShopIcon from "ShopIcon" /* 11506 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let navigateToShop;
 
 let c9;
 let metroImportAll;
@@ -40,9 +42,227 @@ obj2 = { paddingVertical: 16, paddingHorizontal: 12, borderRadius: nativeDefault
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME };
 let closure_11 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileDismissibleUpsells.tsx");
-
-export default function UserProfileDismissibleUpsells(navigateToShop) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToShop) => {
+  let colors;
+  let currentUser;
+  let hasCustomProfileTheme;
+  let tmp10;
+  let tmp6;
+  let tmp7;
+  const tmp = navigateToShop;
+  let obj = navigateToShop(hasCustomProfileTheme[10]);
+  const cResult = obj.c(22);
+  navigateToShop = navigateToShop.navigateToShop;
+  const navigateToPremium = navigateToShop.navigateToPremium;
+  hasCustomProfileTheme = navigateToShop.hasCustomProfileTheme;
+  let tmp4 = closure_11();
+  const upsellContainer = tmp4;
+  let obj2 = navigateToShop(hasCustomProfileTheme[11]);
+  const isPrivacyNoticeVisible = obj2.useIsPrivacyNoticeVisible();
+  let obj3 = navigateToShop(hasCustomProfileTheme[12]);
+  const trackUserProfileAction = obj3.useUserProfileAnalyticsContext().trackUserProfileAction;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [currentUser];
+    const fn = function u() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const tmpResult = tmp(hasCustomProfileTheme[13]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
+  if (cResult[2] !== stateFromStores) {
+    const tmpResult2 = tmp(hasCustomProfileTheme[14]);
+    const isPremiumResult = tmpResult2.isPremium(stateFromStores);
+    cResult[2] = stateFromStores;
+    cResult[3] = isPremiumResult;
+    tmp10 = isPremiumResult;
+  } else {
+    tmp10 = cResult[3];
+  }
+  currentUser = tmp10;
+  if (cResult[4] === navigateToShop) {
+    let tmp12;
+    if (cResult[5] === trackUserProfileAction) {
+      tmp12 = cResult[6];
+    }
+    const onPress = tmp12;
+    if (cResult[7] === navigateToPremium) {
+      let tmp13;
+      if (cResult[8] === trackUserProfileAction) {
+        tmp13 = cResult[9];
+      }
+      let closure_7 = tmp13;
+      if (cResult[10] === navigateToPremium) {
+        let tmp14;
+        if (cResult[11] === trackUserProfileAction) {
+          tmp14 = cResult[12];
+        }
+        let closure_8 = tmp14;
+        if (isPrivacyNoticeVisible) {
+          const _Symbol2 = Symbol;
+          if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+            const tmp24 = closure_8(navigateToPremium(hasCustomProfileTheme[11]), {});
+            class D {
+              constructor() {
+                const obj = { action: TrackUserProfileActions.GET_PREMIUM };
+                trackUserProfileAction(obj);
+                navigateToPremium();
+              }
+            }
+            cResult[13] = tmp24;
+          }
+          class D {
+            constructor() {
+              const obj = { action: TrackUserProfileActions.GET_PREMIUM };
+              trackUserProfileAction(obj);
+              navigateToPremium();
+            }
+          }
+        } else {
+          let tmp16;
+          const _Symbol = Symbol;
+          if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+            let items1 = [tmp(tmp2[15]).DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS];
+            class D {
+              constructor() {
+                const obj = { action: TrackUserProfileActions.GET_PREMIUM };
+                trackUserProfileAction(obj);
+                navigateToPremium();
+              }
+            }
+            tmp16 = items1;
+          } else {
+            tmp16 = cResult[14];
+          }
+          class D {
+            constructor() {
+              const obj = { action: TrackUserProfileActions.GET_PREMIUM };
+              trackUserProfileAction(obj);
+              navigateToPremium();
+            }
+          }
+          let obj4 = {
+            contentTypes: tmp16,
+            children(markAsDismissed) {
+                      let Button;
+                      let Button2;
+                      let intl;
+                      let intl2;
+                      let intl4;
+                      let items;
+                      let items1;
+                      let items2;
+                      let obj;
+                      let obj11;
+                      let obj9;
+                      markAsDismissed = markAsDismissed.markAsDismissed;
+                      let tmp11Result = null;
+                      if (markAsDismissed.visibleContent === dismissible_content.DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS) {
+                        let stringResult;
+                        const obj2 = { borderWidth: 2, direction: native.GradientBorder.Direction.VERTICAL, colors, borderRadius: nativeDefault.radii.lg, children: React4(View, obj) };
+                        const GradientBorder = tmp(1189).GradientBorder;
+                        const obj3 = {};
+                        const merged = Object.assign(upsellContainer.upsellContainer);
+                        obj = { style: obj3, children: items1 };
+                        const tmp4 = hasCustomProfileTheme ? upsellContainer.customProfileThemeUpsellContainer : {};
+                        const merged1 = Object.assign(tmp4);
+                        const obj4 = { style: upsellContainer.header, children: items };
+                        const obj5 = { accessibilityRole: "header", variant: "text-sm/semibold", children: intl.string(intl5.t.EIYbj6) };
+                        const Text = tmp(4833).Text;
+                        intl = tmp(1127).intl;
+                        items = [metroImportAll(Text, obj5), ];
+                        const obj6 = {
+                          accessibilityRole: "button",
+                          accessibilityLabel: intl2.string(intl5.t["6Xcq+Y"]),
+                          onPress() {
+                              return markAsDismissed(constants.USER_DISMISS);
+                            },
+                          children: metroImportAll(XSmallIcon.XSmallIcon, { size: "sm" })
+                        };
+                        const PressableOpacity = tmp(5436).PressableOpacity;
+                        intl2 = tmp(1127).intl;
+                        items[1] = metroImportAll(PressableOpacity, obj6);
+                        items1 = [React4(View, obj4), ];
+                        const obj7 = { style: upsellContainer.upsellButtonsContainer, children: items2 };
+                        const obj8 = { style: upsellContainer.upsellButton, children: metroImportAll(Button, obj9) };
+                        Button = tmp(5282).Button;
+                        const intl3 = tmp(1127).intl;
+                        const string = intl3.string;
+                        const t = tmp(1127).t;
+                        if (currentUser) {
+                          stringResult = string(t["0Q61kF"]);
+                        } else {
+                          stringResult = string(t.x6rkDp);
+                        }
+                        obj9 = { text: stringResult, onPress: currentUser ? metroImportAll : constants, icon: metroImportAll(NitroWheelIcon.NitroWheelIcon, { size: "sm" }), iconPosition: "start", variant: "secondary", shiny: true };
+                        items2 = [metroImportAll(View, obj8), ];
+                        const obj10 = { style: upsellContainer.upsellButton, children: metroImportAll(Button2, obj11) };
+                        obj11 = { text: intl4.string(intl5.t.pWG4ze), onPress, icon: metroImportAll(ShopIcon.ShopIcon, { size: "sm" }), iconPosition: "start", variant: "secondary" };
+                        Button2 = tmp(5282).Button;
+                        intl4 = tmp(1127).intl;
+                        items2[1] = metroImportAll(View, obj10);
+                        items1[1] = React4(View, obj7);
+                        tmp11Result = tmp11(GradientBorder, obj2);
+                      }
+                      return tmp11Result;
+                    }
+          };
+          const tmp20 = closure_8(navigateToPremium(hasCustomProfileTheme[16]), obj4);
+          cResult[15] = tmp13;
+          cResult[16] = tmp12;
+          cResult[17] = tmp14;
+          cResult[18] = hasCustomProfileTheme;
+          cResult[19] = tmp10;
+          cResult[20] = tmp4;
+          cResult[21] = tmp20;
+        }
+        class D {
+          constructor() {
+            const obj = { action: TrackUserProfileActions.GET_PREMIUM };
+            trackUserProfileAction(obj);
+            navigateToPremium();
+          }
+        }
+      }
+      class D {
+        constructor() {
+          const obj = { action: TrackUserProfileActions.GET_PREMIUM };
+          trackUserProfileAction(obj);
+          navigateToPremium();
+        }
+      }
+      cResult[10] = navigateToPremium;
+      cResult[11] = trackUserProfileAction;
+      cResult[12] = tmp15;
+      tmp14 = tmp15;
+    }
+    class D {
+      constructor() {
+        const obj = { action: TrackUserProfileActions.GET_PREMIUM };
+        trackUserProfileAction(obj);
+        navigateToPremium();
+      }
+    }
+    cResult[7] = navigateToPremium;
+    cResult[8] = trackUserProfileAction;
+    cResult[9] = D;
+    tmp13 = D;
+  }
+  const fn2 = function f() {
+    const obj = { action: TrackUserProfileActions.VISIT_SHOP };
+    trackUserProfileAction(obj);
+    navigateToShop();
+  };
+  cResult[4] = navigateToShop;
+  cResult[5] = trackUserProfileAction;
+  cResult[6] = fn2;
+  tmp12 = fn2;
+}) : ((navigateToShop) => {
   let colors;
   let items4;
   let tmp5Result;
@@ -53,14 +273,14 @@ export default function UserProfileDismissibleUpsells(navigateToShop) {
   let currentUser;
   react = closure_11();
   const tmp = navigateToShop;
-  let obj = navigateToShop(hasCustomProfileTheme[9]);
+  let obj = navigateToShop(hasCustomProfileTheme[11]);
   const isPrivacyNoticeVisible = obj.useIsPrivacyNoticeVisible();
-  let obj2 = navigateToShop(hasCustomProfileTheme[10]);
+  let obj2 = navigateToShop(hasCustomProfileTheme[12]);
   const trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
-  let obj3 = navigateToShop(hasCustomProfileTheme[11]);
+  let obj3 = navigateToShop(hasCustomProfileTheme[13]);
   let items = [currentUser];
   const stateFromStores = obj3.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj4 = navigateToShop(hasCustomProfileTheme[12]);
+  let obj4 = navigateToShop(hasCustomProfileTheme[14]);
   currentUser = obj4.isPremium(stateFromStores);
   let items1 = [navigateToShop, trackUserProfileAction];
   const onPress = react.useCallback(() => {
@@ -81,7 +301,7 @@ export default function UserProfileDismissibleUpsells(navigateToShop) {
     navigateToPremium();
   }, items3);
   if (isPrivacyNoticeVisible) {
-    tmp5Result = tmp5(tmp6(tmp2[9]), {});
+    tmp5Result = tmp5(tmp6(tmp2[11]), {});
   } else {
     let obj5 = {
       contentTypes: items4,
@@ -102,7 +322,7 @@ export default function UserProfileDismissibleUpsells(navigateToShop) {
           if (markAsDismissed.visibleContent === dismissible_content.DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS) {
             let stringResult;
             const obj2 = { borderWidth: 2, direction: native.GradientBorder.Direction.VERTICAL, colors, borderRadius: nativeDefault.radii.lg, children: React4(View, obj) };
-            const GradientBorder = tmp(1177).GradientBorder;
+            const GradientBorder = tmp(1189).GradientBorder;
             const obj3 = {};
             const merged = Object.assign(upsellContainer.upsellContainer);
             obj = { style: obj3, children: items1 };
@@ -110,8 +330,8 @@ export default function UserProfileDismissibleUpsells(navigateToShop) {
             const merged1 = Object.assign(tmp4);
             const obj4 = { style: upsellContainer.header, children: items };
             const obj5 = { accessibilityRole: "header", variant: "text-sm/semibold", children: intl.string(intl5.t.EIYbj6) };
-            const Text = tmp(4832).Text;
-            intl = tmp(1115).intl;
+            const Text = tmp(4833).Text;
+            intl = tmp(1127).intl;
             items = [metroImportAll(Text, obj5), ];
             const obj6 = {
               accessibilityRole: "button",
@@ -121,16 +341,16 @@ export default function UserProfileDismissibleUpsells(navigateToShop) {
                 },
               children: metroImportAll(XSmallIcon.XSmallIcon, { size: "sm" })
             };
-            const PressableOpacity = tmp(5435).PressableOpacity;
-            intl2 = tmp(1115).intl;
+            const PressableOpacity = tmp(5436).PressableOpacity;
+            intl2 = tmp(1127).intl;
             items[1] = metroImportAll(PressableOpacity, obj6);
             items1 = [React4(View, obj4), ];
             const obj7 = { style: upsellContainer.upsellButtonsContainer, children: items2 };
             const obj8 = { style: upsellContainer.upsellButton, children: metroImportAll(Button, obj9) };
-            Button = tmp(5281).Button;
-            const intl3 = tmp(1115).intl;
+            Button = tmp(5282).Button;
+            const intl3 = tmp(1127).intl;
             const string = intl3.string;
-            const t = tmp(1115).t;
+            const t = tmp(1127).t;
             if (currentUser) {
               stringResult = string(t["0Q61kF"]);
             } else {
@@ -140,8 +360,8 @@ export default function UserProfileDismissibleUpsells(navigateToShop) {
             items2 = [metroImportAll(View, obj8), ];
             const obj10 = { style: upsellContainer.upsellButton, children: metroImportAll(Button2, obj11) };
             obj11 = { text: intl4.string(intl5.t.pWG4ze), onPress, icon: metroImportAll(ShopIcon.ShopIcon, { size: "sm" }), iconPosition: "start", variant: "secondary" };
-            Button2 = tmp(5281).Button;
-            intl4 = tmp(1115).intl;
+            Button2 = tmp(5282).Button;
+            intl4 = tmp(1127).intl;
             items2[1] = metroImportAll(View, obj10);
             items1[1] = React4(View, obj7);
             tmp11Result = tmp11(GradientBorder, obj2);
@@ -150,9 +370,12 @@ export default function UserProfileDismissibleUpsells(navigateToShop) {
         }
     };
     items4 = [];
-    const tmp6Result = navigateToPremium(hasCustomProfileTheme[13]);
-    items4[0] = tmp(hasCustomProfileTheme[14]).DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS;
+    const tmp6Result = navigateToPremium(hasCustomProfileTheme[16]);
+    items4[0] = tmp(hasCustomProfileTheme[15]).DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS;
     tmp5Result = tmp5(tmp6Result, obj5);
   }
   return tmp5Result;
-};
+});
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileDismissibleUpsells.tsx");
+
+export default tmp4;

@@ -1,144 +1,756 @@
 // Module ID: 13691
 // Function ID: 13692
-// Dependencies: [1161, 13692, 13693, 13694, 13700, 13702, 13703, 13704, 13705, 13706, 13707, 13708, 13709, 13710, 13711, 13712, 13717, 13718, 13721, 13722, 13724, 13726, 13727, 13713, 13714, 13728, 13723, 13725, 13744, 13743, 13716, 13715, 13745, 13746, 13697, 13695, 13747, 13748, 13749, 13750, 13751, 13752, 13753, 13699, 13754]
+// Dependencies: [1173, 13692, 13693, 13757, 13764, 13769, 13784, 13785]
 
 // Module 13691
-import CanonicalizeLocaleList from "CanonicalizeLocaleList" /* 13692 */;
-import CanonicalizeTimeZoneName from "CanonicalizeTimeZoneName" /* 13693 */;
-import CoerceOptionsToObject from "CoerceOptionsToObject" /* 13694 */;
-import _mod13695 from "module_13695" /* 13695 */;
-import GetNumberOption from "GetNumberOption" /* 13700 */;
-import GetOption from "GetOption" /* 13702 */;
-import GetOptionsObject from "GetOptionsObject" /* 13703 */;
-import GetStringOrBooleanOption from "GetStringOrBooleanOption" /* 13704 */;
-import SANCTIONED_UNITS from "SANCTIONED_UNITS" /* 13705 */;
-import IsValidTimeZoneName from "IsValidTimeZoneName" /* 13706 */;
-import IsWellFormedCurrencyCode from "IsWellFormedCurrencyCode" /* 13707 */;
-import IsWellFormedUnitIdentifier from "IsWellFormedUnitIdentifier" /* 13708 */;
-import ApplyUnsignedRoundingMode from "ApplyUnsignedRoundingMode" /* 13709 */;
-import CollapseNumberRange from "CollapseNumberRange" /* 13710 */;
-import ComputeExponent from "ComputeExponent" /* 13711 */;
-import ComputeExponentForMagnitude from "ComputeExponentForMagnitude" /* 13712 */;
-import FormatNumericToString from "FormatNumericToString" /* 13713 */;
-import GetUnsignedRoundingMode from "GetUnsignedRoundingMode" /* 13714 */;
-import ToRawPrecision from "ToRawPrecision" /* 13715 */;
-import ToRawFixed from "ToRawFixed" /* 13716 */;
-import CurrencyDigits from "CurrencyDigits" /* 13717 */;
-import FormatApproximately from "FormatApproximately" /* 13721 */;
-import FormatNumeric from "FormatNumeric" /* 13722 */;
-import PartitionNumberPattern from "PartitionNumberPattern" /* 13723 */;
-import FormatNumericRange from "FormatNumericRange" /* 13724 */;
-import PartitionNumberRangePattern from "PartitionNumberRangePattern" /* 13725 */;
-import FormatNumericRangeToParts from "FormatNumericRangeToParts" /* 13726 */;
-import FormatNumericToParts from "FormatNumericToParts" /* 13727 */;
-import InitializeNumberFormat from "InitializeNumberFormat" /* 13728 */;
-import SetNumberFormatUnitOptions from "SetNumberFormatUnitOptions" /* 13743 */;
-import SetNumberFormatDigitOptions from "SetNumberFormatDigitOptions" /* 13744 */;
-import PartitionPattern from "PartitionPattern" /* 13745 */;
-import SupportedLocales from "SupportedLocales" /* 13746 */;
-import RangePatternType from "RangePatternType" /* 13748 */;
-import _mod13749 from "module_13749" /* 13749 */;
-import _mod13750 from "module_13750" /* 13750 */;
-import _mod13751 from "module_13751" /* 13751 */;
-import _mod13752 from "module_13752" /* 13752 */;
-import _mod13753 from "module_13753" /* 13753 */;
-import module_1161_mod from "module_1161" /* 1161 */;
+import getInternalSlots2 from "getInternalSlots" /* 13692 */;
+import _mod13693 from "module_13693" /* 13693 */;
+import _mod13757 from "module_13757" /* 13757 */;
+import module_1173 from "module_1173" /* 1173 */;
 
-const require = globalThis.__r;
+let collation, found, num, obj1, supportedValuesOfResult;
 
-let module_1161 = module_1161_mod;
-module_1161.__exportStar(CanonicalizeLocaleList, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(CanonicalizeTimeZoneName, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(CoerceOptionsToObject, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(GetNumberOption, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(GetOption, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(GetOptionsObject, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(GetStringOrBooleanOption, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(SANCTIONED_UNITS, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(IsValidTimeZoneName, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(IsWellFormedCurrencyCode, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(IsWellFormedUnitIdentifier, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(ApplyUnsignedRoundingMode, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(CollapseNumberRange, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(ComputeExponent, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(ComputeExponentForMagnitude, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(CurrencyDigits, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(FormatApproximately, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(FormatNumeric, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(FormatNumericRange, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(FormatNumericRangeToParts, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(FormatNumericToParts, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(FormatNumericToString, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(GetUnsignedRoundingMode, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(InitializeNumberFormat, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(PartitionNumberPattern, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(PartitionNumberRangePattern, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(SetNumberFormatDigitOptions, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(SetNumberFormatUnitOptions, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(ToRawFixed, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(ToRawPrecision, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(PartitionPattern, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(SupportedLocales, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(_mod13695, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(RangePatternType, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(_mod13749, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(_mod13750, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(_mod13751, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(_mod13752, exports);
-module_1161 = module_1161_mod;
-module_1161.__exportStar(_mod13753, exports);
+function addLikelySubtags(locale) {
+  let __spreadArray2;
+  let __spreadArray3;
+  let __spreadArray4;
+  let lang;
+  let region;
+  let script;
+  let tmpResult10;
+  let tmpResult12;
+  let tmpResult8;
+  let variants;
+  const parseUnicodeLocaleIdResult = _mod13757.parseUnicodeLocaleId(locale);
+  ({ lang, script, region, variants } = parseUnicodeLocaleIdResult.lang);
+  if (script) {
+    if (region) {
+      const obj = { lang, script, region, variants: [] };
+      const tmp4 = _mod13757.likelySubtags[_mod13757.emitUnicodeLanguageId(undefined, obj)];
+      if (tmp4) {
+        let obj3;
+        const result = tmp(13757).parseUnicodeLanguageId(tmp4);
+        if (undefined === variants) {
+          variants = [];
+        }
+        if (result) {
+          ({ lang: obj14.lang, script: obj14.script, region: obj14.region } = result);
+          const obj2 = { lang: null, script: null, region: null, variants: __spreadArray4(tmpResult8.__spreadArray([], variants, true), result.variants, true) };
+          __spreadArray4 = module_1173.__spreadArray;
+          module_1173;
+          obj3 = obj2;
+          tmpResult8 = module_1173;
+        } else {
+          obj3 = { lang: "und", script: "Array", region: "applicationId", variants };
+        }
+        parseUnicodeLocaleIdResult.lang = obj3;
+        return _mod13757.emitUnicodeLocaleId(parseUnicodeLocaleIdResult);
+      }
+    }
+  }
+  if (script) {
+    const obj4 = { lang, script, variants: [] };
+    const tmp5 = _mod13757.likelySubtags[_mod13757.emitUnicodeLanguageId(undefined, obj4)];
+    if (tmp5) {
+      let obj6;
+      const result1 = tmp(13757).parseUnicodeLanguageId(tmp5);
+      let items = variants;
+      if (undefined === variants) {
+        items = [];
+      }
+      if (result1) {
+        ({ lang: obj11.lang, script: obj11.script } = result1);
+        const obj5 = { lang: null, script: null, region, variants: __spreadArray3(tmpResult10.__spreadArray([], items, true), result1.variants, true) };
+        if (!region) {
+          region = result1.region;
+        }
+        __spreadArray3 = module_1173.__spreadArray;
+        module_1173;
+        obj6 = obj5;
+        tmpResult10 = module_1173;
+      } else {
+        obj6 = { lang: "und", script: "r", region, variants: items };
+      }
+      parseUnicodeLocaleIdResult.lang = obj6;
+      return _mod13757.emitUnicodeLocaleId(parseUnicodeLocaleIdResult);
+    }
+  }
+  if (region) {
+    const obj7 = { lang, region, variants: [] };
+    const tmp6 = _mod13757.likelySubtags[_mod13757.emitUnicodeLanguageId(undefined, obj7)];
+    if (tmp6) {
+      let obj9;
+      const result2 = tmp(13757).parseUnicodeLanguageId(tmp6);
+      let items1 = variants;
+      if (undefined === variants) {
+        items1 = [];
+      }
+      if (result2) {
+        const obj8 = { lang: result2.lang, script, region: result2.region, variants: __spreadArray2(tmpResult12.__spreadArray([], items1, true), result2.variants, true) };
+        if (!script) {
+          script = result2.script;
+        }
+        __spreadArray2 = module_1173.__spreadArray;
+        module_1173;
+        obj9 = obj8;
+        tmpResult12 = module_1173;
+      } else {
+        obj9 = { lang: "und", script, region: "Array", variants: items1 };
+      }
+      parseUnicodeLocaleIdResult.lang = obj9;
+      return _mod13757.emitUnicodeLocaleId(parseUnicodeLocaleIdResult);
+    }
+  }
+  let tmp7 = tmp(13757).likelySubtags[lang];
+  if (!tmp7) {
+    const obj10 = { lang: "und", script, variants: [] };
+    tmp7 = tmp(13757).likelySubtags[tmp(undefined, 13757).emitUnicodeLanguageId(undefined, obj10)];
+  }
+  if (tmp7) {
+    let tmp12;
+    const result3 = tmp(13757).parseUnicodeLanguageId(tmp7);
+    let items2 = variants;
+    if (undefined === variants) {
+      items2 = [];
+    }
+    const obj12 = { lang: null, script: null, region: null, variants: null };
+    if (result3) {
+      obj12.lang = result3.lang;
+      obj12.script = script || result3.script;
+      obj12.region = region || result3.region;
+      const __spreadArray = module_1173.__spreadArray;
+      module_1173;
+      const tmpResult14 = module_1173;
+      obj12.variants = __spreadArray(tmpResult14.__spreadArray([], items2, true), result3.variants, true);
+      tmp12 = obj12;
+    } else {
+      obj12.lang = "und";
+      obj12.script = script;
+      obj12.region = region;
+      obj12.variants = items2;
+      tmp12 = obj12;
+    }
+    parseUnicodeLocaleIdResult.lang = tmp12;
+    return _mod13757.emitUnicodeLocaleId(parseUnicodeLocaleIdResult);
+  } else {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error("No match for addLikelySubtags");
+    throw error;
+  }
+}
+const getInternalSlots = module_1173.__importDefault(getInternalSlots2);
+const re3 = /^[a-z0-9]{3,8}$/i;
+const relevantExtensionKeys = ["ca", "co", "hc", "kf", "kn", "nu", "fw"];
+const re5 = /^[a-z0-9]{3,8}(-[a-z0-9]{3,8})*$/i;
+let closure_7 = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+let tmp2 = (() => {
+  class Locale {
+    constructor(locale, arg1) {
+      let tmp118;
+      let tmp127;
+      let tmp128;
+      const self = this;
+      let constructor;
+      if (this) {
+        if (self instanceof Locale) {
+          constructor = self.constructor;
+        }
+      }
+      if (constructor) {
+        const prop = Locale.relevantExtensionKeys;
+        const items = ["initializedLocale", "locale", "calendar", "collation", "hourCycle", "numberingSystem"];
+        if (prop.indexOf("kf") > -1) {
+          items.push("caseFirst");
+        }
+        if (prop.indexOf("kn") > -1) {
+          items.push("numeric");
+        }
+        if (undefined === locale) {
+          const _TypeError3 = TypeError;
+          const self14 = this;
+          const self15 = this;
+          const typeError = new TypeError("First argument to Intl.Locale constructor can't be empty or missing");
+          throw typeError;
+        } else {
+          if (typeof locale !== "string") {
+            if (typeof locale !== "object") {
+              const _TypeError2 = TypeError;
+              const self12 = this;
+              const self13 = this;
+              const typeError1 = new TypeError("tag must be a string or object");
+              throw typeError1;
+            }
+          }
+          if (typeof locale === "object") {
+            const defaultResult = getInternalSlots.default(locale);
+            if (defaultResult) {
+              let num5;
+              if (_mod13693.HasOwnProperty(defaultResult, "initializedLocale")) {
+                locale = defaultResult.locale;
+              }
+              const defaultResult1 = getInternalSlots.default(self, items);
+              const result = _mod13693.CoerceOptionsToObject(arg1);
+              _mod13693.invariant(typeof locale === "string", "language tag must be a string");
+              const _RangeError = RangeError;
+              _mod13693.invariant(_mod13757.isStructurallyValidLanguageTag(locale), "malformed language tag", RangeError);
+              const GetOptionResult = _mod13693.GetOption(result, "language", "string", undefined, undefined);
+              if (undefined !== GetOptionResult) {
+                const _RangeError2 = RangeError;
+                _mod13693.invariant(_mod13757.isUnicodeLanguageSubtag(GetOptionResult), "Malformed unicode_language_subtag", RangeError);
+              }
+              const GetOptionResult1 = _mod13693.GetOption(result, "script", "string", undefined, undefined);
+              if (undefined !== GetOptionResult1) {
+                const _RangeError3 = RangeError;
+                _mod13693.invariant(_mod13757.isUnicodeScriptSubtag(GetOptionResult1), "Malformed unicode_script_subtag", RangeError);
+              }
+              const GetOptionResult2 = _mod13693.GetOption(result, "region", "string", undefined, undefined);
+              if (undefined !== GetOptionResult2) {
+                const _RangeError4 = RangeError;
+                _mod13693.invariant(_mod13757.isUnicodeRegionSubtag(GetOptionResult2), "Malformed unicode_region_subtag", RangeError);
+              }
+              const result1 = _mod13757.parseUnicodeLanguageId(locale);
+              if (undefined !== GetOptionResult) {
+                result1.lang = GetOptionResult;
+              }
+              if (undefined !== GetOptionResult1) {
+                result1.script = GetOptionResult1;
+              }
+              if (undefined !== GetOptionResult2) {
+                result1.region = GetOptionResult2;
+              }
+              const _Intl = Intl;
+              const emitUnicodeLocaleId = _mod13757.emitUnicodeLocaleId;
+              const __assign = module_1173.__assign;
+              module_1173;
+              const _Object = Object;
+              const obj2 = { lang: result1 };
+              const obj = module_1173;
+              const first = getCanonicalLocales(emitUnicodeLocaleId(__assign(obj.__assign({}, _mod13757.parseUnicodeLocaleId(locale)), obj2)))[0];
+              const obj3 = Object.create(null);
+              const GetOptionResult3 = _mod13693.GetOption(result, "calendar", "string", undefined, undefined);
+              if (undefined !== GetOptionResult3) {
+                if (!re5.test(GetOptionResult3)) {
+                  const _RangeError5 = RangeError;
+                  const self4 = this;
+                  const self5 = this;
+                  const rangeError = new RangeError("invalid calendar");
+                  throw rangeError;
+                }
+              }
+              obj3.ca = GetOptionResult3;
+              const GetOptionResult4 = _mod13693.GetOption(result, "collation", "string", undefined, undefined);
+              if (undefined !== GetOptionResult4) {
+                if (!re5.test(GetOptionResult4)) {
+                  const _RangeError6 = RangeError;
+                  const self6 = this;
+                  const self7 = this;
+                  const rangeError1 = new RangeError("invalid collation");
+                  throw rangeError1;
+                }
+              }
+              obj3.co = GetOptionResult4;
+              const GetOptionResult5 = _mod13693.GetOption(result, "firstDayOfWeek", "string", undefined, undefined);
+              let tmp91 = GetOptionResult5;
+              if (undefined !== GetOptionResult5) {
+                tmp91 = tmp93;
+                if (!re3.test(closure_7[+GetOptionResult5])) {
+                  const _RangeError7 = RangeError;
+                  const self8 = this;
+                  const self9 = this;
+                  const rangeError2 = new RangeError("Invalid firstDayOfWeek");
+                  throw rangeError2;
+                }
+              }
+              obj3.fw = tmp91;
+              obj3.hc = _mod13693.GetOption(result, "hourCycle", "string", ["h11", "h12", "h23", "h24"], undefined);
+              obj3.kf = _mod13693.GetOption(result, "caseFirst", "string", ["upper", "lower", "false"], undefined);
+              const GetOptionResult6 = _mod13693.GetOption(result, "numeric", "boolean", undefined, undefined);
+              let StringResult;
+              if (undefined !== GetOptionResult6) {
+                const _String = String;
+                StringResult = String(GetOptionResult6);
+              }
+              obj3.kn = StringResult;
+              const GetOptionResult7 = _mod13693.GetOption(result, "numberingSystem", "string", undefined, undefined);
+              if (undefined !== GetOptionResult7) {
+                if (!re5.test(GetOptionResult7)) {
+                  const _RangeError8 = RangeError;
+                  const self10 = this;
+                  const self11 = this;
+                  const rangeError3 = new RangeError("Invalid numberingSystem");
+                  throw rangeError3;
+                }
+              }
+              obj3.nu = GetOptionResult7;
+              let items1 = [];
+              const parseUnicodeLocaleIdResult = _mod13757.parseUnicodeLocaleId(first);
+              const extensions = parseUnicodeLocaleIdResult.extensions;
+              let num4 = 0;
+              let arr5 = items1;
+              let tmp119;
+              if (0 < extensions.length) {
+                do {
+                  let tmp120 = extensions[num4];
+                  let keywords = items1;
+                  let tmp122 = tmp118;
+                  let tmp123 = items1;
+                  if ("u" === tmp120.type) {
+                    let _Array = Array;
+                    if (Array.isArray(tmp120.keywords)) {
+                      keywords = tmp120.keywords;
+                    }
+                    tmp123 = keywords;
+                    tmp122 = tmp120;
+                  }
+                  num4 = num4 + 1;
+                  items1 = tmp123;
+                  tmp118 = tmp122;
+                  arr5 = tmp123;
+                  tmp119 = tmp122;
+                } while (num4 < extensions.length);
+              }
+              const _Object2 = Object;
+              const obj7 = Object.create(null);
+              for (let num5 = 0; num5 < prop.length; num5 = num5 + 1) {
+                let tmp129;
+                let tmp125 = prop[num5];
+                let num6 = 0;
+                let tmp130;
+                if (0 < arr5.length) {
+                  do {
+                    let tmp131 = arr5[num6];
+                    let tmp133 = tmp127;
+                    let tmp134 = tmp128;
+                    if (tmp131[0] === tmp125) {
+                      tmp134 = tmp131[1];
+                      tmp133 = tmp131;
+                    }
+                    num6 = num6 + 1;
+                    tmp127 = tmp133;
+                    tmp128 = tmp134;
+                    tmp129 = tmp133;
+                    tmp130 = tmp134;
+                  } while (num6 < arr5.length);
+                }
+                let concat = "".concat;
+                let tmp137 = tmp125 in obj3;
+                let invariantResult5 = _mod13693.invariant(tmp137, "".concat(tmp125, " must be in options"));
+                let tmp139 = obj3[tmp125];
+                if (undefined !== tmp139) {
+                  let concat2 = "Value for ".concat;
+                  let invariantResult6 = _mod13693.invariant(typeof tmp139 === "string", "Value for ".concat(tmp125, " must be a string"));
+                  if (tmp129) {
+                    tmp129[1] = tmp139;
+                    tmp130 = tmp139;
+                  } else {
+                    let items2 = [tmp125, tmp139];
+                    let arr3 = arr5.push(items2);
+                    tmp130 = tmp139;
+                  }
+                }
+                obj7[tmp125] = tmp130;
+              }
+              if (tmp119) {
+                tmp119.keywords = arr5;
+              } else if (arr5.length) {
+                const extensions1 = parseUnicodeLocaleIdResult.extensions;
+                const obj8 = { type: "u", keywords: arr5, attributes: [] };
+                extensions1.push(obj8);
+              }
+              const _Intl2 = Intl;
+              obj7.locale = Intl.getCanonicalLocales(_mod13757.emitUnicodeLocaleId(parseUnicodeLocaleIdResult))[0];
+              ({ locale: tmp14.locale, ca: tmp14.calendar, co: tmp14.collation, fw: tmp14.firstDayOfWeek, hc: tmp14.hourCycle } = obj7);
+              if (prop.indexOf("kf") > -1) {
+                defaultResult1.caseFirst = obj7.kf;
+              }
+              if (prop.indexOf("kn") > -1) {
+                defaultResult1.numeric = _mod13693.SameValue(obj7.kn, "true");
+              }
+              defaultResult1.numberingSystem = obj7.nu;
+            }
+          }
+          locale = locale.toString();
+        }
+      } else {
+        const _TypeError = TypeError;
+        const self2 = this;
+        const self3 = this;
+        const typeError2 = new TypeError("Intl.Locale must be called with 'new'");
+        throw typeError2;
+      }
+    }
+    maximize() {
+      const locale = getInternalSlots.default(this).locale;
+      try {
+        const tmp3 = addLikelySubtags(locale);
+        const obj = Object.create(Locale.prototype);
+        Locale(tmp3);
+        return obj;
+      } catch (err) {
+        const obj2 = Object.create(Locale.prototype);
+        Locale(locale);
+        return obj2;
+      }
+    }
+    minimize() {
+      locale = closure_2.default(this).locale;
+      try {
+        tmp = Locale;
+        num = 0;
+        tmp2 = (function removeLikelySubtags(locale) {
+          let lang;
+          let obj11;
+          let obj5;
+          let obj8;
+          let region;
+          let script;
+          let tmp12;
+          let tmp9;
+          let variants;
+          const tmp2 = closure_1_6(locale);
+          if (tmp2) {
+            let emitUnicodeLocaleId2Result;
+            const emitUnicodeLanguageId = Locale(closure_1_1[3]).emitUnicodeLanguageId;
+            const __assign = Locale(closure_1_1[0]).__assign;
+            Locale(closure_1_1[0]);
+            const obj2 = { variants: [] };
+            const obj = Locale(closure_1_1[0]);
+            const result = emitUnicodeLanguageId(__assign(obj.__assign({}, Locale(closure_1_1[3]).parseUnicodeLanguageId(tmp2)), obj2));
+            const parseUnicodeLocaleIdResult = Locale(closure_1_1[3]).parseUnicodeLocaleId(locale);
+            ({ lang, script, region, variants } = parseUnicodeLocaleIdResult.lang);
+            const obj3 = { lang, variants: [] };
+            if (closure_1_6(Locale(closure_1_1[3]).emitUnicodeLanguageId(obj3)) === result) {
+              const emitUnicodeLocaleId2 = tmp3(tmp4[3]).emitUnicodeLocaleId;
+              const __assign3 = Locale(closure_1_1[0]).__assign;
+              Locale(closure_1_1[0]);
+              const tmp3Result6 = Locale(closure_1_1[0]);
+              const __assignResult = tmp3Result6.__assign({}, parseUnicodeLocaleIdResult);
+              if (undefined === variants) {
+                variants = [];
+              }
+              if (!lang) {
+                lang = "und";
+              }
+              const obj4 = { lang: obj5 };
+              obj5 = { lang, script: "Array", region: "applicationId", variants };
+              emitUnicodeLocaleId2Result = emitUnicodeLocaleId2(__assign3(__assignResult, obj4));
+            } else {
+              if (region) {
+                const obj6 = { lang, region, variants: [] };
+                if (closure_1_6(Locale(closure_1_1[3]).emitUnicodeLanguageId(obj6)) === result) {
+                  const emitUnicodeLocaleId = tmp3(tmp4[3]).emitUnicodeLocaleId;
+                  const __assign2 = Locale(closure_1_1[0]).__assign;
+                  Locale(closure_1_1[0]);
+                  let items = variants;
+                  const tmp3Result8 = Locale(closure_1_1[0]);
+                  const __assignResult1 = tmp3Result8.__assign({}, parseUnicodeLocaleIdResult);
+                  if (undefined === variants) {
+                    items = [];
+                  }
+                  const obj7 = { lang: obj8 };
+                  obj8 = { lang: tmp12, script: "r", region, variants: items };
+                  tmp12 = lang || "und";
+                  emitUnicodeLocaleId2Result = emitUnicodeLocaleId(__assign2(__assignResult1, obj7));
+                }
+              }
+              emitUnicodeLocaleId2Result = locale;
+              if (script) {
+                emitUnicodeLocaleId2Result = locale;
+                const obj9 = { lang, script, variants: [] };
+                if (closure_1_6(Locale(closure_1_1[3]).emitUnicodeLanguageId(obj9)) === result) {
+                  const emitUnicodeLocaleId3 = tmp3(tmp4[3]).emitUnicodeLocaleId;
+                  const __assign4 = Locale(closure_1_1[0]).__assign;
+                  Locale(closure_1_1[0]);
+                  let items1 = variants;
+                  const tmp3Result10 = Locale(closure_1_1[0]);
+                  const __assignResult2 = tmp3Result10.__assign({}, parseUnicodeLocaleIdResult);
+                  if (undefined === variants) {
+                    items1 = [];
+                  }
+                  const obj10 = { lang: obj11 };
+                  obj11 = { lang: tmp9, script, region: "Array", variants: items1 };
+                  tmp9 = lang || "und";
+                  emitUnicodeLocaleId2Result = emitUnicodeLocaleId3(__assign4(__assignResult2, obj10));
+                }
+              }
+            }
+            return emitUnicodeLocaleId2Result;
+          } else {
+            return locale;
+          }
+        })(locale);
+        obj = Object.create(Locale.prototype);
+        tmp4 = Locale(tmp2);
+        return obj;
+      } catch (err) {
+        tmp5 = Locale;
+        obj1 = Object.create(Locale.prototype);
+        tmp7 = Locale(locale);
+        return obj1;
+      }
+      return;
+    }
+    toString() {
+      return getInternalSlots.default(this).locale;
+    }
+    getCalendars() {
+      const self = this;
+      const defaultResult = getInternalSlots.default(this);
+      const calendar = defaultResult.calendar;
+      let region;
+      if ("root" !== defaultResult.locale) {
+        region = self.maximize().region;
+      }
+      let calendarPreferenceDataForRegion = Locale(dependencyMap[4]).getCalendarPreferenceDataForRegion(region);
+      if (undefined !== calendar) {
+        const items = [calendar];
+        calendarPreferenceDataForRegion = items;
+      }
+      return Array.from(calendarPreferenceDataForRegion);
+    }
+    getCollations() {
+      defaultResult = closure_1_2.default(this);
+      collation = defaultResult.collation;
+      supportedValuesOfResult = Locale(closure_1_1[5]).supportedValuesOf("collation", defaultResult.locale);
+      found = supportedValuesOfResult.filter((item) => "standard" !== item && "search" !== item);
+      sorted = found.sort();
+      tmp3 = found;
+      if (undefined !== collation) {
+        items = [];
+        items[0] = collation;
+        tmp3 = items;
+      }
+      return Array.from(tmp3);
+    }
+    getHourCycles() {
+      let hourCycle;
+      let locale;
+      const self = this;
+      const defaultResult = getInternalSlots.default(this);
+      const tmp2 = Locale;
+      const tmp3 = dependencyMap;
+      if (Locale(dependencyMap[2]).HasOwnProperty(defaultResult, "initializedLocale")) {
+        ({ hourCycle, locale } = getInternalSlots.default(self));
+        let region;
+        getInternalSlots.default(self);
+        if ("root" !== locale) {
+          region = self.maximize().region;
+        }
+        let hourCyclesPreferenceDataForLocaleOrRegion = tmp2(tmp3[4]).getHourCyclesPreferenceDataForLocaleOrRegion(locale, region);
+        if (undefined !== hourCycle) {
+          const items = [hourCycle];
+          hourCyclesPreferenceDataForLocaleOrRegion = items;
+        }
+        const _Array = Array;
+        return Array.from(hourCyclesPreferenceDataForLocaleOrRegion);
+      } else {
+        const _TypeError = TypeError;
+        const self2 = this;
+        const self3 = this;
+        const typeError = new TypeError("Error uninitialized locale");
+        throw typeError;
+      }
+    }
+    getNumberingSystems() {
+      let __spreadArrayResult;
+      const defaultResult = getInternalSlots.default(this);
+      const numberingSystem = defaultResult.numberingSystem;
+      const language = this.language;
+      const tmp4 = Locale(dependencyMap[6]).numberingSystems[defaultResult.locale] ?? tmp2(tmp3[6]).numberingSystems[language];
+      const items = [];
+      if (tmp4) {
+        const tmp2Result = Locale(dependencyMap[0]);
+        __spreadArrayResult = tmp2Result.__spreadArray(items, tmp4, true);
+      } else {
+        __spreadArrayResult = items;
+      }
+      if (undefined !== numberingSystem) {
+        const items1 = [numberingSystem];
+        __spreadArrayResult = items1;
+      }
+      return Array.from(__spreadArrayResult);
+    }
+    getTimeZones() {
+      const region = Locale(dependencyMap[3]).parseUnicodeLanguageId(getInternalSlots.default(this).locale).region;
+      let arr;
+      const tmp = Locale;
+      const tmp2 = dependencyMap;
+      if (region) {
+        const timeZonePreferenceForRegion = tmp(tmp2[4]).getTimeZonePreferenceForRegion(region);
+        const sorted = timeZonePreferenceForRegion.sort();
+        const _Array = Array;
+        arr = Array.from(timeZonePreferenceForRegion);
+      }
+      return arr;
+    }
+    getTextInfo() {
+      const obj = Object.create(Object.prototype);
+      let str2 = "ltr";
+      const str = this.minimize();
+      const str1 = str.toString();
+      const tmp3 = Locale;
+      const tmp4 = dependencyMap;
+      if ("right-to-left" === Locale(dependencyMap[7]).characterOrders[str1]) {
+        str2 = "rtl";
+      }
+      const dataProperty = tmp3(tmp4[2]).createDataProperty(obj, "direction", str2);
+      return obj;
+    }
+    getWeekInfo() {
+      const self = this;
+      const obj2 = Object.create(Object.prototype);
+      const defaultResult = getInternalSlots.default(this);
+      const obj = getInternalSlots;
+      if (Locale(dependencyMap[2]).HasOwnProperty(defaultResult, "initializedLocale")) {
+        let region;
+        if ("root" !== obj.default(self).locale) {
+          region = self.maximize().region;
+        }
+        const weekDataForRegion = tmp3(tmp4[4]).getWeekDataForRegion(region);
+        const weekend = weekDataForRegion.weekend;
+        const dataProperty = tmp3(tmp4[2]).createDataProperty(obj2, "firstDay", weekDataForRegion.firstDay);
+        const dataProperty1 = tmp3(tmp4[2]).createDataProperty(obj2, "weekend", weekend);
+        const dataProperty2 = tmp3(tmp4[2]).createDataProperty(obj2, "minimalDays", weekDataForRegion.minimalDays);
+        const firstDayOfWeek = defaultResult.firstDayOfWeek;
+        if (undefined !== firstDayOfWeek) {
+          obj2.firstDay = firstDayOfWeek;
+        }
+        return obj2;
+      } else {
+        const _TypeError = TypeError;
+        const self2 = this;
+        const self3 = this;
+        const typeError = new TypeError("Error uninitialized locale");
+        throw typeError;
+      }
+    }
+  }
+  let obj = {
+    get() {
+      const locale = getInternalSlots.default(this).locale;
+      return Locale(dependencyMap[3]).emitUnicodeLanguageId(Locale(dependencyMap[3]).parseUnicodeLanguageId(locale));
+    },
+    enumerable: false,
+    configurable: true
+  };
+  Object.defineProperty(Locale.prototype, "baseName", obj);
+  let obj2 = {
+    get() {
+      return getInternalSlots.default(this).calendar;
+    },
+    enumerable: false,
+    configurable: true
+  };
+  Object.defineProperty(Locale.prototype, "calendar", obj2);
+  let obj3 = {
+    get() {
+      return getInternalSlots.default(this).collation;
+    },
+    enumerable: false,
+    configurable: true
+  };
+  Object.defineProperty(Locale.prototype, "collation", obj3);
+  let obj4 = {
+    get() {
+      return getInternalSlots.default(this).caseFirst;
+    },
+    enumerable: false,
+    configurable: true
+  };
+  Object.defineProperty(Locale.prototype, "caseFirst", obj4);
+  let obj5 = {
+    get() {
+      return getInternalSlots.default(this).numeric;
+    },
+    enumerable: false,
+    configurable: true
+  };
+  Object.defineProperty(Locale.prototype, "numeric", obj5);
+  let obj6 = {
+    get() {
+      return getInternalSlots.default(this).numberingSystem;
+    },
+    enumerable: false,
+    configurable: true
+  };
+  Object.defineProperty(Locale.prototype, "numberingSystem", obj6);
+  let obj7 = {
+    get() {
+      return Locale(dependencyMap[3]).parseUnicodeLanguageId(getInternalSlots.default(this).locale).lang;
+    },
+    enumerable: false,
+    configurable: true
+  };
+  Object.defineProperty(Locale.prototype, "language", obj7);
+  let obj8 = {
+    get() {
+      return Locale(dependencyMap[3]).parseUnicodeLanguageId(getInternalSlots.default(this).locale).script;
+    },
+    enumerable: false,
+    configurable: true
+  };
+  Object.defineProperty(Locale.prototype, "script", obj8);
+  let obj9 = {
+    get() {
+      return Locale(dependencyMap[3]).parseUnicodeLanguageId(getInternalSlots.default(this).locale).region;
+    },
+    enumerable: false,
+    configurable: true
+  };
+  Object.defineProperty(Locale.prototype, "region", obj9);
+  let obj10 = {
+    get() {
+      const defaultResult = getInternalSlots.default(this);
+      if (Locale(dependencyMap[2]).HasOwnProperty(defaultResult, "initializedLocale")) {
+        return defaultResult.firstDayOfWeek;
+      } else {
+        const _TypeError = TypeError;
+        const self = this;
+        const self2 = this;
+        const typeError = new TypeError("Error uninitialized locale");
+        throw typeError;
+      }
+    },
+    enumerable: false,
+    configurable: true
+  };
+  Object.defineProperty(Locale.prototype, "firstDayOfWeek", obj10);
+  let obj11 = {
+    get() {
+      const defaultResult = getInternalSlots.default(this);
+      if (Locale(dependencyMap[2]).HasOwnProperty(defaultResult, "initializedLocale")) {
+        return defaultResult.hourCycle;
+      } else {
+        const _TypeError = TypeError;
+        const self = this;
+        const self2 = this;
+        const typeError = new TypeError("Error uninitialized locale");
+        throw typeError;
+      }
+    },
+    enumerable: false,
+    configurable: true
+  };
+  Object.defineProperty(Locale.prototype, "hourCycle", obj11);
+  Locale.relevantExtensionKeys = relevantExtensionKeys;
+  Locale.polyfilled = true;
+  return Locale;
+})();
+try {
+  const _Symbol = Symbol;
+  if (typeof Symbol !== "undefined") {
+    let _Object2 = Object;
+    const _Symbol2 = Symbol;
+    Object.defineProperty(tmp2.prototype, Symbol.toStringTag, { value: "Intl.Locale", writable: false, enumerable: false, configurable: true });
+  }
+  let _Object = Object;
+  let str = "length";
+  Object.defineProperty(tmp2.prototype.constructor, "length", { value: 1, writable: false, enumerable: false, configurable: true });
+  exports.default = tmp2;
+} catch (err) {
+}
+const Locale_export = tmp2;
 
-export const _formatToParts = obj.__importDefault(require("formatToParts")).default;
-export const createDataProperty = require("UNICODE_EXTENSION_SEQUENCE_REGEX").createDataProperty;
-export const defineProperty = require("UNICODE_EXTENSION_SEQUENCE_REGEX").defineProperty;
-export const getInternalSlot = require("UNICODE_EXTENSION_SEQUENCE_REGEX").getInternalSlot;
-export const getMultiInternalSlots = require("UNICODE_EXTENSION_SEQUENCE_REGEX").getMultiInternalSlots;
-export const isLiteralPart = require("UNICODE_EXTENSION_SEQUENCE_REGEX").isLiteralPart;
-export const setInternalSlot = require("UNICODE_EXTENSION_SEQUENCE_REGEX").setInternalSlot;
-export const setMultiInternalSlots = require("UNICODE_EXTENSION_SEQUENCE_REGEX").setMultiInternalSlots;
-export const isMissingLocaleDataError = require("module_13747").isMissingLocaleDataError;
-export const createMemoizedDateTimeFormat = require("UNICODE_EXTENSION_SEQUENCE_REGEX").createMemoizedDateTimeFormat;
-export const createMemoizedListFormat = require("UNICODE_EXTENSION_SEQUENCE_REGEX").createMemoizedListFormat;
-export const createMemoizedLocale = require("UNICODE_EXTENSION_SEQUENCE_REGEX").createMemoizedLocale;
-export const createMemoizedNumberFormat = require("UNICODE_EXTENSION_SEQUENCE_REGEX").createMemoizedNumberFormat;
-export const createMemoizedPluralRules = require("UNICODE_EXTENSION_SEQUENCE_REGEX").createMemoizedPluralRules;
-export const invariant = require("UNICODE_EXTENSION_SEQUENCE_REGEX").invariant;
-export const ZERO = require("TEN").ZERO;
-export const ToIntlMathematicalValue = require("ToIntlMathematicalValue").ToIntlMathematicalValue;
+export { Locale_export as Locale };

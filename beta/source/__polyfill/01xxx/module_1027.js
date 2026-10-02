@@ -1,889 +1,152 @@
 // Module ID: 1027
 // Function ID: 1028
-// Dependencies: [866, 1028, 682, 987]
-// Exports: createNativeFramesIntegrations
+// Dependencies: [1026, 901, 1019, 694]
+// Exports: handleAsyncHandlerResult
 
 // Module 1027
-import _mod866 from "module_866" /* 866 */;
-import _mod987 from "module_987" /* 987 */;
+import _mod1026 from "module_1026" /* 1026 */;
 
 const require = globalThis.__r;
-let _require, c4, c5, set;
+let _require, dependencyMap;
 
-let tmp;
-const _mod682 = tmp(682);
-const f72964 = (arg0, arg1) => {
-  closure_0 = arg0;
-  let closure_1 = arg1;
-  let c2 = false;
-  const timeout = setTimeout(() => {
-    const tmp = c2;
-    if (!tmp) {
-      c2 = true;
-      closure_1("Fetching native frames took too long. Dropping frames.");
-    }
-  }, 2000);
-  const NATIVE = closure_0(closure_1_1[0]).NATIVE;
-  nativeFrames = NATIVE.fetchNativeFrames();
-  const nextPromise = nativeFrames.then((result) => {
-    const tmp = c2;
-    if (!tmp) {
-      const _clearTimeout = clearTimeout;
-      clearTimeout(closure_3);
-      c2 = true;
-      if (result) {
-        closure_0(result);
-      } else {
-        closure_1("Native frames response is null.");
-      }
-    }
-  });
-  nextPromise.then(undefined, (arg0) => {
-    const tmp = c2;
-    if (!tmp) {
-      const _clearTimeout = clearTimeout;
-      clearTimeout(closure_3);
-      c2 = true;
-      closure_1(arg0);
-    }
-  });
+let tmp2;
+const _mod694 = tmp2(694);
+const f81805 = (error) => {
+  const tmp = item10034;
+  const tmp2 = item10008;
+  if (item10034(item10008[2]).DEBUG_BUILD) {
+    const debug = tmp(tmp2[3]).debug;
+    const _HermesInternal = HermesInternal;
+    debug.warn("Error resolving async handler '" + closure_1 + "' for route", closure_0, error);
+  }
 };
-function fetchNativeFrames() {
-  const promise = new Promise(f72964);
-  return promise;
-}
-function isClose(arg0, arg1) {
-  return Math.abs(arg0 - arg1) < 0.05;
-}
-let closure_2 = this && this.__awaiter || ((arg0, arg1, arg2, arg3) => {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  let _Promise = arg2;
-  const Promise = arg2;
-  let closure_3 = arg3;
-  if (!arg2) {
-    let tmp = globalThis;
-    _Promise = Promise;
-  }
-  const _Promise1 = new _Promise(function(fn, arg1) {
-    closure_0 = fn;
-    closure_1 = arg1;
-    function fulfilled(result) {
-      try {
-        step(iter.next(result));
-      } catch (tmp5) {
-        closure_1(tmp5);
-      }
-    }
-    function rejected(arg0) {
-      try {
-        step(iter.throw(arg0));
-      } catch (tmp5) {
-        closure_1(tmp5);
-      }
-    }
-    let iter = rejected;
-    function step(done) {
-      if (done.done) {
-        fn(done.value);
-      } else {
-        let tmp1 = done.value;
-        const value = tmp1;
-        if (!(tmp1 instanceof Promise)) {
-          const self = this;
-          const self2 = this;
-          tmp1 = new tmp((fn) => {
-            fn(value);
-          });
+function createAsyncHandlerProxy(arg0, item10034, item10008, processResolvedRoutes) {
+  _require = item10034;
+  dependencyMap = item10008;
+  let closure_2 = processResolvedRoutes;
+  let obj = {
+    apply(apply, arg1, arg2) {
+      let span;
+      function captureCurrentLocation() {
+        let search;
+        const obj = item10034(item10008[0]);
+        const navigationContext = obj.getNavigationContext();
+        let targetPath;
+        if (navigationContext != null) {
+          targetPath = navigationContext.targetPath;
         }
-        tmp1.then(fulfilled, iter);
-      }
-    }
-    let items = closure_1;
-    const tmp = iter;
-    const apply = iter.apply;
-    const tmp2 = closure_0;
-    if (!closure_1) {
-      items = [];
-    }
-    iter = apply(tmp2, items);
-    const iter2 = iter.next();
-    let value = iter2.value;
-    if (iter2.done) {
-      const tmp5 = fn(value);
-    } else {
-      let tmp32 = value;
-      if (!(value instanceof fulfilled)) {
-        let self = this;
-        let self2 = this;
-        tmp32 = new tmp3((fn) => {
-          fn(value);
-        });
-      }
-      tmp32.then(fulfilled, rejected);
-    }
-  });
-  return _Promise1;
-});
-const NativeFrames = "NativeFrames";
-function nativeFramesIntegration() {
-  let asyncExpiringMap;
-  let c0;
-  _require = null;
-  asyncExpiringMap = new require("AsyncExpiringMap").AsyncExpiringMap({ ttl: 60000 });
-  const asyncExpiringMap1 = new require("AsyncExpiringMap").AsyncExpiringMap({ ttl: 2000 });
-  function fetchStartFramesForSpan(spanContext) {
-    const spanId = spanContext.spanContext().spanId;
-    let str = "child";
-    const obj = _mod987;
-    if (obj.isRootSpan(spanContext)) {
-      str = "root";
-    }
-    let debug = _mod682.debug;
-    debug.log("[" + NativeFrames + "] Fetching frames for " + str + " span start (" + spanId + ").");
-    set = asyncExpiringMap.set;
-    let promise = new Promise((arg0) => {
-      let closure_0 = arg0;
-      const promise = new Promise(f72964);
-      const nextPromise = promise.then((result) => closure_0(result));
-      nextPromise.then(undefined, (arg0) => {
-        const debug = closure_2_0(asyncExpiringMap[2]).debug;
-        debug.log("[" + fetchStartFramesForSpan + "] Error while fetching native frames.", arg0);
-        closure_0(null);
-      });
-    });
-    const result = set(spanId, promise);
-  }
-  function fetchEndFramesForSpan(arg0) {
-    let closure_0 = arg0;
-    return asyncExpiringMap1(undefined, undefined, undefined, async function(arg0, value) {
-      let tmp;
-      if (c5 === 2) {
-        c5 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
+        if (targetPath) {
+          return { pathname: navigationContext.targetPath, search: "", hash: "", state: null, key: "default" };
         } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        let tmp65;
-        let c3;
-        try {
-          let timestamp;
-          let nativeFrames;
-          let closure_4;
-          let closure_5;
-          let closure_6;
-          let spanId;
-          c5 = 2;
-          const tmp4 = c4;
-          if (0 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              set = tmp;
-              timestamp = undefined;
-              tmp65 = undefined;
-              nativeFrames = undefined;
-              closure_4 = undefined;
-              closure_5 = undefined;
-              closure_6 = undefined;
-              const obj11 = timestamp(asyncExpiringMap[2]);
-              timestamp = obj11.timestampInSeconds();
-              spanId = timestamp.spanContext().spanId;
-              const obj12 = set;
-              if (set.has(spanId)) {
-                const obj7 = timestamp(asyncExpiringMap[3]);
-                if (obj7.isRootSpan(timestamp)) {
-                  const debug4 = timestamp(asyncExpiringMap[2]).debug;
-                  const _HermesInternal4 = HermesInternal;
-                  const logResult = debug4.log("[" + fetchStartFramesForSpan + "] Fetch frames for root span end (" + spanId + ").");
-                  const self = this;
-                  const self2 = this;
-                  set = tmp65.set;
-                  let promise = new Promise((arg0) => {
-                    closure_0 = arg0;
-                    const promise = new Promise(f72964);
-                    let nextPromise = promise.then((nativeFrames) => {
-                      const obj = { timestamp, nativeFrames };
-                      closure_0(obj);
-                    });
-                    nextPromise.then(undefined, (arg0) => {
-                      const debug = timestamp(set[2]).debug;
-                      debug.log("[" + nativeFrames + "] Error while fetching native frames.", arg0);
-                      closure_0(null);
-                    });
-                  });
-                  const result = set(spanId, promise);
+          if (undefined !== item10034(item10008[1]).WINDOW) {
+            try {
+              const _location = tmp(tmp2[1]).WINDOW.location;
+              if (_location) {
+                const obj5 = { pathname: null, search, hash: str, state: null, key: "default" };
+                ({ pathname: obj2.pathname, search } = _location);
+                if (!search) {
+                  search = "";
                 }
-                c3 = 1;
-                c4 = 2;
-                c5 = 1;
-                const obj4 = { value: obj12.get(spanId), done: false };
-                return obj4;
-              }
-            }
-          } else if (1 === tmp4) {
-            c3 = 0;
-            let closure_7 = tmp65;
-            const debug3 = timestamp(asyncExpiringMap[2]).debug;
-            const _HermesInternal3 = HermesInternal;
-            debug3.log("[" + fetchStartFramesForSpan + "] Error while capturing end frames for span " + spanId + ".", closure_7);
-          } else if (2 === tmp4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 0;
-              c5 = 3;
-              const obj5 = { value, done: true };
-              return obj5;
-            } else {
-              tmp65 = value;
-              if (tmp65) {
-                c4 = 3;
-                c5 = 1;
-                const obj6 = { value: fetchNativeFrames(), done: false };
-                return obj6;
-              } else {
-                const debug2 = timestamp(asyncExpiringMap[2]).debug;
-                const _HermesInternal2 = HermesInternal;
-                debug2.log("[" + fetchStartFramesForSpan + "] No start frames found for span " + spanId + ", skipping frame data.");
-                c3 = 0;
-                c5 = 3;
-                const obj8 = { value: undefined, done: true };
-                return obj8;
-              }
-            }
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 0;
-            c5 = 3;
-            const obj9 = { value, done: true };
-            return obj9;
-          } else {
-            nativeFrames = value;
-            closure_4 = nativeFrames.totalFrames - tmp65.totalFrames;
-            closure_5 = nativeFrames.slowFrames - tmp65.slowFrames;
-            closure_6 = nativeFrames.frozenFrames - tmp65.frozenFrames;
-            let tmp7 = closure_4 > 0;
-            if (!tmp7) {
-              tmp7 = closure_5 > 0;
-            }
-            if (!tmp7) {
-              tmp7 = closure_6 > 0;
-            }
-            if (tmp7) {
-              const attr = timestamp.setAttribute("frames.total", closure_4);
-              const attr1 = timestamp.setAttribute("frames.slow", closure_5);
-              const attr2 = timestamp.setAttribute("frames.frozen", closure_6);
-              let debug = timestamp(asyncExpiringMap[2]).debug;
-              const _HermesInternal = HermesInternal;
-              const str = "[";
-              debug.log("[" + fetchStartFramesForSpan + "] Attached frame data to span " + spanId + ": total=" + closure_4 + ", slow=" + closure_5 + ", frozen=" + closure_6);
-            }
-            let obj = timestamp(asyncExpiringMap[3]);
-            if (!obj.isRootSpan(timestamp)) {
-              const obj10 = { timestamp, nativeFrames };
-            }
-            c3 = 0;
-          }
-          c5 = 3;
-          return { value: "HermesInternal", done: null };
-        } catch (tmp65) {
-          if (0 === c3) {
-            c5 = 3;
-            throw tmp65;
-          } else {
-            c4 = 1;
-          }
-        }
-      }
-    });
-  }
-  return {
-    name: fetchStartFramesForSpan,
-    setup(on) {
-      if (_mod866.NATIVE.enableNative) {
-        const NATIVE = tmp(866).NATIVE;
-        const result = NATIVE.enableNativeFramesTracking();
-        on.on("spanStart", fetchStartFramesForSpan);
-        on.on("spanEnd", fetchEndFramesForSpan);
-      } else {
-        const debug = tmp(682).debug;
-        const _HermesInternal = HermesInternal;
-        debug.warn("[" + NativeFrames + "] This is not available on the Web, Expo Go and other platforms without native modules.");
-      }
-    },
-    processEvent(arg0) {
-      let closure_0 = arg0;
-      return asyncExpiringMap1(undefined, undefined, undefined, async (arg0, value) => {
-        let obj11;
-        let obj12;
-        let obj13;
-        if (c3 === 2) {
-          c3 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp2 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          try {
-            let measurements;
-            let op;
-            let span_id;
-            let closure_3;
-            let nativeFrames;
-            let closure_5;
-            let obj10;
-            c3 = 2;
-            if (0 === c2) {
-              if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                let closure_1 = tmp3;
-                value = 0;
-                measurements = undefined;
-                op = undefined;
-                span_id = undefined;
-                closure_3 = undefined;
-                nativeFrames = undefined;
-                closure_5 = undefined;
-                obj10 = undefined;
-                if ("transaction" === value.type) {
-                  if (value.transaction) {
-                    if (value.contexts) {
-                      if (value.contexts.trace) {
-                        if (value.timestamp) {
-                          if (value.contexts.trace.span_id) {
-                            op = value.contexts.trace.op;
-                            span_id = value.contexts.trace.span_id;
-                            c2 = 1;
-                            c3 = 1;
-                            const obj4 = { value: closure_1.pop(span_id), done: false };
-                            return obj4;
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-                c3 = 3;
-                const obj5 = { value, done: true };
                 return obj5;
               }
-            } else if (1 === c2) {
-              if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj6 = { value, done: true };
-                return obj6;
-              } else {
-                closure_3 = value;
-                if (closure_3) {
-                  c2 = 2;
-                  c3 = 1;
-                  const obj7 = { value: c2.pop(span_id), done: false };
-                  return obj7;
-                } else {
-                  const debug6 = value(asyncExpiringMap[2]).debug;
-                  const _HermesInternal6 = HermesInternal;
-                  debug6.warn("[" + fetchStartFramesForSpan + "] Start frames of transaction " + closure_129_0.transaction + " (eventId, " + closure_129_0.event_id + ") are missing, but the transaction already ended.");
-                  c3 = 3;
-                  const obj8 = { value: closure_129_0, done: true };
-                  return obj8;
-                }
+            } catch (err) {
+              if (item10034(item10008[2]).DEBUG_BUILD) {
+                const debug = tmp(tmp2[3]).debug;
+                debug.warn("[React Router] Could not access window.location");
               }
-            } else if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              const obj9 = { value, done: true };
-              return obj9;
-            } else {
-              closure_5 = value;
-              const tmp106 = closure_5;
-              if (tmp106) {
-                let tmp75;
-                if (isClose(closure_5.timestamp, closure_129_0.timestamp)) {
-                  const debug3 = value(asyncExpiringMap[2]).debug;
-                  const _HermesInternal3 = HermesInternal;
-                  debug3.log("[" + fetchStartFramesForSpan + "] Using frames from root span end (spanId, " + span_id + ").");
-                  nativeFrames = closure_5.nativeFrames;
-                }
-                obj10 = { frames_total: obj11, frames_frozen: obj12, frames_slow: obj13 };
-                obj11 = { value: nativeFrames.totalFrames - closure_3.totalFrames, unit: "none" };
-                obj12 = { value: nativeFrames.frozenFrames - closure_3.frozenFrames, unit: "none" };
-                obj13 = { value: nativeFrames.slowFrames - closure_3.slowFrames, unit: "none" };
-                if (obj10.frames_frozen.value <= 0) {
-                  if (obj10.frames_slow.value <= 0) {
-                    if (obj10.frames_total.value <= 0) {
-                      const debug5 = value(asyncExpiringMap[2]).debug;
-                      const _HermesInternal5 = HermesInternal;
-                      debug5.warn("[" + fetchStartFramesForSpan + "] Detected zero slow or frozen frames. Not adding measurements to spanId (" + span_id + ").");
-                      tmp75 = closure_129_0;
-                    }
-                    c3 = 3;
-                    const obj14 = { value: tmp75, done: true };
-                    return obj14;
-                  }
-                }
-                const debug4 = value(asyncExpiringMap[2]).debug;
-                const _JSON = JSON;
-                const _HermesInternal4 = HermesInternal;
-                debug4.log("[" + fetchStartFramesForSpan + "] Adding measurements to " + op + " transaction " + closure_129_0.transaction + ": " + JSON.stringify(obj10, undefined, 2));
-                measurements = closure_129_0.measurements;
-                if (null !== measurements) {
-                  let obj15;
-                  if (undefined !== measurements) {
-                    obj15 = measurements;
-                  }
-                  tmp63.measurements = tmp65(tmp67({}, obj15), obj10);
-                  tmp75 = closure_129_0;
-                }
-                obj15 = {};
-              }
-              const tmp9 = value;
-              if (tmp9) {
-                if (isClose(value.timestamp, closure_129_0.timestamp)) {
-                  const debug2 = value(asyncExpiringMap[2]).debug;
-                  const _HermesInternal2 = HermesInternal;
-                  debug2.log("[" + fetchStartFramesForSpan + "] Using native frames from last child span end (spanId, " + span_id + ").");
-                  nativeFrames = value.nativeFrames;
-                }
-              }
-              const debug = value(asyncExpiringMap[2]).debug;
-              const _HermesInternal = HermesInternal;
-              debug.warn("[" + fetchStartFramesForSpan + "] Frames were collected within larger than margin of error delay for spanId (" + span_id + "). Dropping the inaccurate values.");
-              c3 = 3;
-              const obj = { value: closure_129_0, done: true };
-              return obj;
             }
-          } catch (tmp101) {
-            c3 = 3;
-            throw tmp101;
           }
+          return null;
         }
-      });
+      }
+      let tmp = captureCurrentLocation();
+      let tmp2 = require;
+      let obj = _mod1026;
+      let navigationContext = obj.getNavigationContext();
+      if (navigationContext) {
+        span = navigationContext.span;
+      } else {
+        const tmp2Result = _mod1026;
+        span = tmp2Result.getActiveRootSpan();
+      }
+      const applyResult = apply.apply(arg1, arg2);
+      let closure_3 = tmp;
+      const tmp2Result2 = _mod694;
+      const tmp5 = item10034;
+      const tmp6 = closure_2;
+      if (tmp2Result2.isThenable(applyResult)) {
+        const nextPromise = applyResult.then((result) => {
+          if (Array.isArray(result)) {
+            closure_2(result, closure_0, closure_3, span);
+          }
+        });
+        nextPromise.catch(f81805);
+      } else {
+        const _Array = Array;
+        if (Array.isArray(applyResult)) {
+          tmp6(applyResult, tmp5, tmp, span);
+        }
+      }
+      return applyResult;
     }
   };
+  const proxy = new Proxy(arg0, obj);
+  const obj2 = require("module_694");
+  const result = obj2.addNonEnumerableProperty(proxy, "__sentry_proxied__", true);
+  return proxy;
+}
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+function checkRouteForAsyncHandler(item10034, processResolvedRoutes) {
+  if (item10034.handle) {
+    if (typeof item10034.handle === "object") {
+      const _Object = Object;
+      const keys = Object.keys(item10034.handle);
+      for (const item10008 of keys) {
+        let tmp2 = item10008;
+        let tmp3 = item10034.handle[item10008];
+        let tmp4 = tmp3;
+        let __sentry_proxied__ = typeof tmp3 !== "function";
+        if (!__sentry_proxied__) {
+          __sentry_proxied__ = tmp4.__sentry_proxied__;
+        }
+        if (!__sentry_proxied__) {
+          item10034.handle[tmp2] = createAsyncHandlerProxy(tmp4, item10034, item10008, processResolvedRoutes);
+        }
+        continue;
+      }
+    }
+  }
+  if (Array.isArray(item10034.children)) {
+    const children = item10034.children;
+    for (const item10034 of children) {
+      let tmp14 = checkRouteForAsyncHandler(item10034, processResolvedRoutes);
+      continue;
+    }
+  }
 }
 
-export const createNativeFramesIntegrations = function(arg0) {
-  let asyncExpiringMap;
-  let c0;
-  let fetchEndFramesForSpan;
-  let tmp = arg0;
-  if (!tmp) {
-    const tmp2 = _require;
-    const tmp3 = asyncExpiringMap;
-    if (require("module_866").NATIVE.enableNative) {
-      let NATIVE = tmp2(tmp3[0]).NATIVE;
-      let result = NATIVE.disableNativeFramesTracking();
-    }
-  }
-  if (typeof fetchEndFramesForSpan === "function") {
-    _require = null;
-    let tmp6 = _require;
-    let tmp7 = asyncExpiringMap;
-    let self = this;
-    let self2 = this;
-    asyncExpiringMap = new require("AsyncExpiringMap").AsyncExpiringMap({ ttl: 60000 });
-    let tmp9 = asyncExpiringMap;
-    const self3 = this;
-    const self4 = this;
-    const asyncExpiringMap1 = new require("AsyncExpiringMap").AsyncExpiringMap({ ttl: 2000 });
-    function fetchStartFramesForSpan(spanContext) {
-      const spanId = spanContext.spanContext().spanId;
-      let str = "child";
-      const obj = _mod987;
-      if (obj.isRootSpan(spanContext)) {
-        str = "root";
+export { checkRouteForAsyncHandler };
+export { createAsyncHandlerProxy };
+export const handleAsyncHandlerResult = function handleAsyncHandlerResult(promise, arg1, arg2, fn, arg4, arg5) {
+  let closure_0;
+  let closure_1;
+  _require = arg1;
+  dependencyMap = arg2;
+  let closure_2 = fn;
+  let closure_3 = arg4;
+  let closure_4 = arg5;
+  const obj = require("module_694");
+  if (obj.isThenable(promise)) {
+    const nextPromise = promise.then((result) => {
+      if (Array.isArray(result)) {
+        closure_2(result, closure_0, closure_3, span);
       }
-      let debug = _mod682.debug;
-      debug.log("[" + NativeFrames + "] Fetching frames for " + str + " span start (" + spanId + ").");
-      set = asyncExpiringMap.set;
-      let promise = new Promise((arg0) => {
-        let closure_0 = arg0;
-        const promise = new Promise(f72964);
-        const nextPromise = promise.then((result) => closure_0(result));
-        nextPromise.then(undefined, (arg0) => {
-          const debug = closure_2_0(asyncExpiringMap[2]).debug;
-          debug.log("[" + fetchStartFramesForSpan + "] Error while fetching native frames.", arg0);
-          closure_0(null);
-        });
-      });
-      const result = set(spanId, promise);
-    }
-    fetchEndFramesForSpan = function fetchEndFramesForSpan(arg0) {
-      let closure_0 = arg0;
-      return asyncExpiringMap1(undefined, undefined, undefined, async function(arg0, value) {
-        let tmp;
-        if (c5 === 2) {
-          c5 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          let tmp65;
-          let c3;
-          try {
-            let timestamp;
-            let nativeFrames;
-            let closure_4;
-            let closure_5;
-            let closure_6;
-            let spanId;
-            c5 = 2;
-            const tmp4 = c4;
-            if (0 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                set = tmp;
-                timestamp = undefined;
-                tmp65 = undefined;
-                nativeFrames = undefined;
-                closure_4 = undefined;
-                closure_5 = undefined;
-                closure_6 = undefined;
-                const obj11 = timestamp(asyncExpiringMap[2]);
-                timestamp = obj11.timestampInSeconds();
-                spanId = timestamp.spanContext().spanId;
-                const obj12 = set;
-                if (set.has(spanId)) {
-                  const obj7 = timestamp(asyncExpiringMap[3]);
-                  if (obj7.isRootSpan(timestamp)) {
-                    const debug4 = timestamp(asyncExpiringMap[2]).debug;
-                    const _HermesInternal4 = HermesInternal;
-                    const logResult = debug4.log("[" + fetchStartFramesForSpan + "] Fetch frames for root span end (" + spanId + ").");
-                    const self = this;
-                    const self2 = this;
-                    set = tmp65.set;
-                    let promise = new Promise((arg0) => {
-                      closure_0 = arg0;
-                      const promise = new Promise(f72964);
-                      let nextPromise = promise.then((nativeFrames) => {
-                        const obj = { timestamp, nativeFrames };
-                        closure_0(obj);
-                      });
-                      nextPromise.then(undefined, (arg0) => {
-                        const debug = timestamp(set[2]).debug;
-                        debug.log("[" + nativeFrames + "] Error while fetching native frames.", arg0);
-                        closure_0(null);
-                      });
-                    });
-                    const result = set(spanId, promise);
-                  }
-                  c3 = 1;
-                  c4 = 2;
-                  c5 = 1;
-                  const obj4 = { value: obj12.get(spanId), done: false };
-                  return obj4;
-                }
-              }
-            } else if (1 === tmp4) {
-              c3 = 0;
-              let closure_7 = tmp65;
-              const debug3 = timestamp(asyncExpiringMap[2]).debug;
-              const _HermesInternal3 = HermesInternal;
-              debug3.log("[" + fetchStartFramesForSpan + "] Error while capturing end frames for span " + spanId + ".", closure_7);
-            } else if (2 === tmp4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 0;
-                c5 = 3;
-                const obj5 = { value, done: true };
-                return obj5;
-              } else {
-                tmp65 = value;
-                if (tmp65) {
-                  c4 = 3;
-                  c5 = 1;
-                  const obj6 = { value: fetchNativeFrames(), done: false };
-                  return obj6;
-                } else {
-                  const debug2 = timestamp(asyncExpiringMap[2]).debug;
-                  const _HermesInternal2 = HermesInternal;
-                  debug2.log("[" + fetchStartFramesForSpan + "] No start frames found for span " + spanId + ", skipping frame data.");
-                  c3 = 0;
-                  c5 = 3;
-                  const obj8 = { value: undefined, done: true };
-                  return obj8;
-                }
-              }
-            } else if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 0;
-              c5 = 3;
-              const obj9 = { value, done: true };
-              return obj9;
-            } else {
-              nativeFrames = value;
-              closure_4 = nativeFrames.totalFrames - tmp65.totalFrames;
-              closure_5 = nativeFrames.slowFrames - tmp65.slowFrames;
-              closure_6 = nativeFrames.frozenFrames - tmp65.frozenFrames;
-              let tmp7 = closure_4 > 0;
-              if (!tmp7) {
-                tmp7 = closure_5 > 0;
-              }
-              if (!tmp7) {
-                tmp7 = closure_6 > 0;
-              }
-              if (tmp7) {
-                const attr = timestamp.setAttribute("frames.total", closure_4);
-                const attr1 = timestamp.setAttribute("frames.slow", closure_5);
-                const attr2 = timestamp.setAttribute("frames.frozen", closure_6);
-                let debug = timestamp(asyncExpiringMap[2]).debug;
-                const _HermesInternal = HermesInternal;
-                const str = "[";
-                debug.log("[" + fetchStartFramesForSpan + "] Attached frame data to span " + spanId + ": total=" + closure_4 + ", slow=" + closure_5 + ", frozen=" + closure_6);
-              }
-              let obj = timestamp(asyncExpiringMap[3]);
-              if (!obj.isRootSpan(timestamp)) {
-                const obj10 = { timestamp, nativeFrames };
-              }
-              c3 = 0;
-            }
-            c5 = 3;
-            return { value: "HermesInternal", done: null };
-          } catch (tmp65) {
-            if (0 === c3) {
-              c5 = 3;
-              throw tmp65;
-            } else {
-              c4 = 1;
-            }
-          }
-        }
-      });
-    };
-    let obj = {
-      name: fetchStartFramesForSpan,
-      setup(on) {
-          if (_mod866.NATIVE.enableNative) {
-            const NATIVE = tmp(866).NATIVE;
-            const result = NATIVE.enableNativeFramesTracking();
-            on.on("spanStart", fetchStartFramesForSpan);
-            on.on("spanEnd", fetchEndFramesForSpan);
-          } else {
-            const debug = tmp(682).debug;
-            const _HermesInternal = HermesInternal;
-            debug.warn("[" + NativeFrames + "] This is not available on the Web, Expo Go and other platforms without native modules.");
-          }
-        },
-      processEvent(arg0) {
-          let closure_0 = arg0;
-          return asyncExpiringMap1(undefined, undefined, undefined, async (arg0, value) => {
-            let obj11;
-            let obj12;
-            let obj13;
-            if (c3 === 2) {
-              c3 = 3;
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp2 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj2 = { value, done: true };
-                return obj2;
-              } else {
-                return { value: "HermesInternal", done: null };
-              }
-            } else {
-              try {
-                let measurements;
-                let op;
-                let span_id;
-                let closure_3;
-                let nativeFrames;
-                let closure_5;
-                let obj10;
-                c3 = 2;
-                if (0 === c2) {
-                  if (arg0 === 1) {
-                    c3 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c3 = 3;
-                    const obj3 = { value, done: true };
-                    return obj3;
-                  } else {
-                    let closure_1 = tmp3;
-                    value = 0;
-                    measurements = undefined;
-                    op = undefined;
-                    span_id = undefined;
-                    closure_3 = undefined;
-                    nativeFrames = undefined;
-                    closure_5 = undefined;
-                    obj10 = undefined;
-                    if ("transaction" === value.type) {
-                      if (value.transaction) {
-                        if (value.contexts) {
-                          if (value.contexts.trace) {
-                            if (value.timestamp) {
-                              if (value.contexts.trace.span_id) {
-                                op = value.contexts.trace.op;
-                                span_id = value.contexts.trace.span_id;
-                                c2 = 1;
-                                c3 = 1;
-                                const obj4 = { value: closure_1.pop(span_id), done: false };
-                                return obj4;
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                    c3 = 3;
-                    const obj5 = { value, done: true };
-                    return obj5;
-                  }
-                } else if (1 === c2) {
-                  if (arg0 === 1) {
-                    c3 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c3 = 3;
-                    const obj6 = { value, done: true };
-                    return obj6;
-                  } else {
-                    closure_3 = value;
-                    if (closure_3) {
-                      c2 = 2;
-                      c3 = 1;
-                      const obj7 = { value: c2.pop(span_id), done: false };
-                      return obj7;
-                    } else {
-                      const debug6 = value(asyncExpiringMap[2]).debug;
-                      const _HermesInternal6 = HermesInternal;
-                      debug6.warn("[" + fetchStartFramesForSpan + "] Start frames of transaction " + closure_129_0.transaction + " (eventId, " + closure_129_0.event_id + ") are missing, but the transaction already ended.");
-                      c3 = 3;
-                      const obj8 = { value: closure_129_0, done: true };
-                      return obj8;
-                    }
-                  }
-                } else if (arg0 === 1) {
-                  c3 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c3 = 3;
-                  const obj9 = { value, done: true };
-                  return obj9;
-                } else {
-                  closure_5 = value;
-                  const tmp106 = closure_5;
-                  if (tmp106) {
-                    let tmp75;
-                    if (isClose(closure_5.timestamp, closure_129_0.timestamp)) {
-                      const debug3 = value(asyncExpiringMap[2]).debug;
-                      const _HermesInternal3 = HermesInternal;
-                      debug3.log("[" + fetchStartFramesForSpan + "] Using frames from root span end (spanId, " + span_id + ").");
-                      nativeFrames = closure_5.nativeFrames;
-                    }
-                    obj10 = { frames_total: obj11, frames_frozen: obj12, frames_slow: obj13 };
-                    obj11 = { value: nativeFrames.totalFrames - closure_3.totalFrames, unit: "none" };
-                    obj12 = { value: nativeFrames.frozenFrames - closure_3.frozenFrames, unit: "none" };
-                    obj13 = { value: nativeFrames.slowFrames - closure_3.slowFrames, unit: "none" };
-                    if (obj10.frames_frozen.value <= 0) {
-                      if (obj10.frames_slow.value <= 0) {
-                        if (obj10.frames_total.value <= 0) {
-                          const debug5 = value(asyncExpiringMap[2]).debug;
-                          const _HermesInternal5 = HermesInternal;
-                          debug5.warn("[" + fetchStartFramesForSpan + "] Detected zero slow or frozen frames. Not adding measurements to spanId (" + span_id + ").");
-                          tmp75 = closure_129_0;
-                        }
-                        c3 = 3;
-                        const obj14 = { value: tmp75, done: true };
-                        return obj14;
-                      }
-                    }
-                    const debug4 = value(asyncExpiringMap[2]).debug;
-                    const _JSON = JSON;
-                    const _HermesInternal4 = HermesInternal;
-                    debug4.log("[" + fetchStartFramesForSpan + "] Adding measurements to " + op + " transaction " + closure_129_0.transaction + ": " + JSON.stringify(obj10, undefined, 2));
-                    measurements = closure_129_0.measurements;
-                    if (null !== measurements) {
-                      let obj15;
-                      if (undefined !== measurements) {
-                        obj15 = measurements;
-                      }
-                      tmp63.measurements = tmp65(tmp67({}, obj15), obj10);
-                      tmp75 = closure_129_0;
-                    }
-                    obj15 = {};
-                  }
-                  const tmp9 = value;
-                  if (tmp9) {
-                    if (isClose(value.timestamp, closure_129_0.timestamp)) {
-                      const debug2 = value(asyncExpiringMap[2]).debug;
-                      const _HermesInternal2 = HermesInternal;
-                      debug2.log("[" + fetchStartFramesForSpan + "] Using native frames from last child span end (spanId, " + span_id + ").");
-                      nativeFrames = value.nativeFrames;
-                    }
-                  }
-                  const debug = value(asyncExpiringMap[2]).debug;
-                  const _HermesInternal = HermesInternal;
-                  debug.warn("[" + fetchStartFramesForSpan + "] Frames were collected within larger than margin of error delay for spanId (" + span_id + "). Dropping the inaccurate values.");
-                  c3 = 3;
-                  const obj = { value: closure_129_0, done: true };
-                  return obj;
-                }
-              } catch (tmp101) {
-                c3 = 3;
-                throw tmp101;
-              }
-            }
-          });
-        }
-    };
-    return obj;
+    });
+    nextPromise.catch(f81805);
   } else {
-    let str = "Trying to call a non-function";
-    throw new TypeError("Trying to call a non-function");
+    const _Array = Array;
+    if (Array.isArray(promise)) {
+      fn(promise, arg1, arg4, arg5);
+    }
   }
 };
-export { nativeFramesIntegration };

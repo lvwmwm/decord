@@ -1,30 +1,30 @@
-// Module ID: 12222
-// Function ID: 12223
+// Module ID: 12115
+// Function ID: 12116
 // Name: CreationIntent
-// Dependencies: [19, 17, 6399, 1074, 21, 4836, 5994, 576, 1485, 5266, 5275, 12180, 1241, 6544, 4832, 1115, 5999, 11807, 12223, 12225, 2]
-// Exports: default
+// Dependencies: [19, 17, 6396, 1086, 21, 4837, 5991, 588, 558, 576, 1491, 5267, 5276, 12073, 1253, 1127, 4833, 5997, 11708, 12116, 12118, 6546, 2]
 
-// Module 12222 (CreationIntent)
-import nativeDefault from "native" /* 576 */;
-import intl8 from "intl" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import useNavigation from "useNavigation" /* 1485 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5266 */;
-import react_native from "react-native" /* 5275 */;
-import NavigatorConstants from "NavigatorConstants" /* 5994 */;
-import TableRowGroup2 from "TableRowGroup" /* 5999 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12180 */;
+// Module 12115 (CreationIntent)
+import nativeDefault from "native" /* 588 */;
+import intl8 from "intl" /* 1127 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import useNavigation from "useNavigation" /* 1491 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5267 */;
+import react_native from "react-native" /* 5276 */;
+import NavigatorConstants from "NavigatorConstants" /* 5991 */;
+import TableRowGroup2 from "TableRowGroup" /* 5997 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6546 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12073 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6399 */;
-import Constants from "Constants" /* 1074 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 6396 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
+let dependencyMap, navigation;
 
 let c10;
 let c9;
@@ -39,8 +39,8 @@ let obj3;
 let obj4;
 let tmp2;
 let unpackModuleId;
-const ChairIllocon = tmp2(12223);
-const WorldIllocon = tmp2(12225);
+const ChairIllocon = tmp2(12116);
+const WorldIllocon = tmp2(12118);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native2);
 ({ CreateGuildModalStates: metroRequire, GuildTemplateTriggers: metroImportDefault, NUXGuildTemplatesAnalytics: metroImportAll } = CreateGuildConstants);
 ({ AnalyticEvents: c9, AnalyticsLocations: c10 } = Constants);
@@ -53,9 +53,359 @@ obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj4 = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
 let closure_13 = createStyles(obj);
 let closure_14 = Math.random() < 0.5;
-let result = size.fileFinishedImporting("modules/create_guild/native/components/CreationIntent.tsx");
-
-export default function CreationIntent(arg0) {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildTemplate) => {
+  let contentContainer;
+  let headerContainer;
+  let headerTitle;
+  let intl4;
+  let intl6;
+  let items4;
+  let items5;
+  let scrollContainer;
+  let tmp11;
+  let tmp12;
+  let tmp8;
+  let tmp9;
+  let tmp = guildTemplate;
+  const tmp2 = navigation;
+  let obj = guildTemplate(navigation[9]);
+  const cResult = obj.c(38);
+  guildTemplate = guildTemplate.guildTemplate;
+  const trigger = guildTemplate.trigger;
+  const tmp4 = closure_13();
+  let obj2 = guildTemplate(navigation[10]);
+  navigation = obj2.useNavigation();
+  let obj3 = guildTemplate(navigation[11]);
+  const isScreenReaderEnabled = obj3.useIsScreenReaderEnabled();
+  let obj4 = isScreenReaderEnabled;
+  const ref = isScreenReaderEnabled.useRef(null);
+  if (cResult[0] !== isScreenReaderEnabled) {
+    const fn = function o() {
+      const tmp = isScreenReaderEnabled && null != ref.current;
+      if (tmp) {
+        const obj2 = { ref, delay: 100 };
+        const obj = react_native;
+        const result = obj.setAccessibilityFocus(obj2);
+      }
+    };
+    const items = [isScreenReaderEnabled];
+    cResult[0] = isScreenReaderEnabled;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp9 = items;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[1];
+    tmp9 = cResult[2];
+  }
+  const effect = obj4.useEffect(tmp8, tmp9);
+  if (cResult[3] !== trigger) {
+    const fn2 = function h() {
+      if (metroImportDefault.NUF === trigger) {
+        const obj2 = NewUserAnalyticsUtils;
+        obj2.trackNUFStep(metroImportAll.STEP_GUILD_TEMPLATE, metroImportAll.STEP_CREATION_INTENT, { skip: false });
+      } else if (tmp2.IN_APP === tmp) {
+        const obj = AnalyticsUtilsDefault;
+        obj.track(constants.OPEN_MODAL, { type: "Server Intent Discovery" });
+      }
+    };
+    const items1 = [trigger];
+    cResult[3] = trigger;
+    cResult[4] = fn2;
+    cResult[5] = items1;
+    tmp12 = items1;
+    tmp11 = fn2;
+  } else {
+    tmp11 = cResult[4];
+    tmp12 = cResult[5];
+  }
+  const effect1 = obj4.useEffect(tmp11, tmp12);
+  if (cResult[6] === guildTemplate) {
+    if (cResult[7] === navigation) {
+      let tmp14;
+      let tmp16;
+      let tmp18;
+      let tmp21;
+      let tmp23;
+      if (cResult[8] === trigger) {
+        tmp14 = cResult[9];
+      }
+      let closure_5 = tmp14;
+      const _Symbol = Symbol;
+      ({ contentContainer, scrollContainer, headerContainer, headerTitle } = tmp4);
+      if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl = tmp(tmp2[15]).intl;
+        const stringResult = intl.string(tmp(tmp2[15]).t.f3MvGS);
+        cResult[10] = stringResult;
+        tmp16 = stringResult;
+      } else {
+        tmp16 = cResult[10];
+      }
+      if (cResult[11] !== tmp4.headerTitle) {
+        let obj5 = { ref, style: headerTitle, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp16 };
+        const tmp20 = closure_11(tmp(tmp2[16]).Text, obj5);
+        cResult[11] = tmp4.headerTitle;
+        cResult[12] = tmp20;
+        tmp18 = tmp20;
+      } else {
+        tmp18 = cResult[12];
+      }
+      const _Symbol2 = Symbol;
+      const headerDescription = tmp4.headerDescription;
+      if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl2 = tmp(tmp2[15]).intl;
+        const stringResult1 = intl2.string(tmp(tmp2[15]).t.nOzc7w);
+        cResult[13] = stringResult1;
+        tmp21 = stringResult1;
+      } else {
+        tmp21 = cResult[13];
+      }
+      if (cResult[14] !== tmp4.headerDescription) {
+        let obj6 = { style: headerDescription, variant: "text-sm/medium", color: "text-default", children: tmp21 };
+        const tmp25 = closure_11(tmp(tmp2[16]).Text, obj6);
+        cResult[14] = tmp4.headerDescription;
+        cResult[15] = tmp25;
+        tmp23 = tmp25;
+      } else {
+        tmp23 = cResult[15];
+      }
+      if (cResult[16] === tmp4.headerContainer) {
+        if (cResult[17] === tmp18) {
+          let tmp26;
+          let tmp30;
+          if (cResult[18] === tmp23) {
+            tmp26 = cResult[19];
+          }
+          if (cResult[20] !== tmp14) {
+            let tmp37;
+            const obj7 = { hasIcons: true, children: null };
+            const TableRowGroup = tmp(tmp2[17]).TableRowGroup;
+            const tmp35 = trigger(tmp2[18]);
+            const obj8 = { Icon: null, message: null, onPress: null };
+            const tmp31 = closure_12;
+            if (closure_14) {
+              obj8.Icon = tmp(tmp2[19]).ChairIllocon;
+              const intl5 = tmp(tmp2[15]).intl;
+              obj8.message = intl5.string(tmp(tmp2[15]).t.uE7zcu);
+              obj8.onPress = function onPress() {
+                return closure_5(false);
+              };
+              const items2 = [closure_11(tmp35, obj8), ];
+              const obj9 = {
+                Icon: tmp(tmp2[20]).WorldIllocon,
+                message: intl6.string(tmp(tmp2[15]).t.h9Q1lG),
+                onPress() {
+                              return closure_5(true);
+                            }
+              };
+              const tmp34Result = trigger(tmp2[18]);
+              intl6 = tmp(tmp2[15]).intl;
+              items2[1] = closure_11(tmp34Result, obj9);
+              obj7.children = items2;
+              tmp37 = obj7;
+            } else {
+              obj8.Icon = tmp(tmp2[20]).WorldIllocon;
+              const intl3 = tmp(tmp2[15]).intl;
+              obj8.message = intl3.string(tmp(tmp2[15]).t.h9Q1lG);
+              obj8.onPress = function onPress() {
+                return closure_5(true);
+              };
+              const items3 = [closure_11(tmp35, obj8), ];
+              const obj10 = {
+                Icon: tmp(tmp2[19]).ChairIllocon,
+                message: intl4.string(tmp(tmp2[15]).t.uE7zcu),
+                onPress() {
+                              return closure_5(false);
+                            }
+              };
+              const tmp34Result2 = trigger(tmp2[18]);
+              intl4 = tmp(tmp2[15]).intl;
+              items3[1] = closure_11(tmp34Result2, obj10);
+              obj7.children = items3;
+              tmp37 = obj7;
+            }
+            const tmp31Result = tmp31(TableRowGroup, tmp37);
+            cResult[20] = tmp14;
+            cResult[21] = tmp31Result;
+            tmp30 = tmp31Result;
+          } else {
+            tmp30 = cResult[21];
+          }
+          if (cResult[22] === tmp4.sections) {
+            let tmp40;
+            let tmp44;
+            if (cResult[23] === tmp30) {
+              tmp40 = cResult[24];
+            }
+            const skipDescription = tmp4.skipDescription;
+            if (cResult[25] !== tmp14) {
+              const intl7 = tmp(tmp2[15]).intl;
+              const obj11 = {
+                onSkip() {
+                              return closure_5(null);
+                            }
+              };
+              const formatResult = intl7.format(tmp(tmp2[15]).t["SMc+Gz"], obj11);
+              cResult[25] = tmp14;
+              cResult[26] = formatResult;
+              tmp44 = formatResult;
+            } else {
+              tmp44 = cResult[26];
+            }
+            if (cResult[27] === tmp4.skipDescription) {
+              let tmp46;
+              if (cResult[28] === tmp44) {
+                tmp46 = cResult[29];
+              }
+              if (cResult[30] === tmp4.scrollContainer) {
+                if (cResult[31] === tmp26) {
+                  if (cResult[32] === tmp40) {
+                    let tmp49;
+                    if (cResult[33] === tmp46) {
+                      tmp49 = cResult[34];
+                    }
+                    if (cResult[35] === tmp4.contentContainer) {
+                      let tmp53;
+                      if (cResult[36] === tmp49) {
+                        tmp53 = cResult[37];
+                      }
+                      return tmp53;
+                    }
+                    const rect = { top: true, left: true, right: true, style: contentContainer, children: tmp49 };
+                    const tmp55 = closure_11(tmp(tmp2[21]).SafeAreaPaddingView, rect);
+                    cResult[35] = tmp4.contentContainer;
+                    cResult[36] = tmp49;
+                    cResult[37] = tmp55;
+                    tmp53 = tmp55;
+                  }
+                }
+              }
+              const obj12 = { style: scrollContainer, children: items4 };
+              items4 = [tmp26, tmp40, tmp46];
+              const tmp52 = closure_12(closure_5, obj12);
+              cResult[30] = tmp4.scrollContainer;
+              cResult[31] = tmp26;
+              cResult[32] = tmp40;
+              cResult[33] = tmp46;
+              cResult[34] = tmp52;
+              tmp49 = tmp52;
+            }
+            const obj13 = { style: skipDescription, variant: "text-sm/medium", color: "text-default", children: tmp44 };
+            const tmp48 = closure_11(tmp(tmp2[16]).Text, obj13);
+            cResult[27] = tmp4.skipDescription;
+            cResult[28] = tmp44;
+            cResult[29] = tmp48;
+            tmp46 = tmp48;
+          }
+          const obj14 = { style: tmp4.sections, children: tmp30 };
+          const tmp43 = closure_11(ref, obj14);
+          cResult[22] = tmp4.sections;
+          cResult[23] = tmp30;
+          cResult[24] = tmp43;
+          tmp40 = tmp43;
+        }
+      }
+      const obj15 = { style: headerContainer, children: items5 };
+      items5 = [tmp18, tmp23];
+      const tmp29 = closure_12(ref, obj15);
+      class P {
+        constructor(isCommunityIntent) {
+          let flag;
+          let id1;
+          const obj = { skipped: null == isCommunityIntent, is_community: flag };
+          flag = isCommunityIntent;
+          const track = AnalyticsUtilsDefault.track;
+          const GUILD_CREATION_INTENT_SELECTED = constants.GUILD_CREATION_INTENT_SELECTED;
+          AnalyticsUtilsDefault;
+          if (isCommunityIntent == null) {
+            flag = false;
+          }
+          track(GUILD_CREATION_INTENT_SELECTED, obj);
+          const obj2 = { guildTemplate, isCommunityIntent };
+          navigation.push(metroRequire.CREATE_SERVER, obj2);
+          if (metroImportDefault.NUF === trigger) {
+            const obj3 = NewUserAnalyticsUtils;
+            obj3.trackNUFStep(metroImportAll.STEP_CREATION_INTENT, metroImportAll.STEP_GUILD_CREATE, { skip: false });
+            let id;
+            const track2 = AnalyticsUtilsDefault.track;
+            const CREATE_GUILD_VIEWED = tmp4.CREATE_GUILD_VIEWED;
+            AnalyticsUtilsDefault;
+            if (guildTemplate != null) {
+              id = tmp6.id;
+            }
+            const obj4 = { guild_template_name: id };
+            track2(CREATE_GUILD_VIEWED, obj4);
+          } else if (tmp9.IN_APP === tmp8) {
+            const obj5 = { type: "Create Guild Step 2", location_section: constants2.CREATE_JOIN_GUILD_MODAL };
+            const tmpResult3 = AnalyticsUtilsDefault;
+            tmpResult3.track(constants.OPEN_MODAL, obj5);
+            const obj6 = { location_section: constants2.CREATE_JOIN_GUILD_MODAL, guild_template_name: id1 };
+            id1 = undefined;
+            const track3 = AnalyticsUtilsDefault.track;
+            const CREATE_GUILD_VIEWED2 = tmp4.CREATE_GUILD_VIEWED;
+            AnalyticsUtilsDefault;
+            if (guildTemplate != null) {
+              id1 = tmp6.id;
+            }
+            track3(CREATE_GUILD_VIEWED2, obj6);
+          }
+        }
+      }
+      cResult[17] = tmp18;
+      cResult[18] = tmp23;
+      cResult[19] = tmp29;
+      tmp26 = tmp29;
+    }
+  }
+  class P {
+    constructor(isCommunityIntent) {
+      let flag;
+      let id1;
+      const obj = { skipped: null == isCommunityIntent, is_community: flag };
+      flag = isCommunityIntent;
+      const track = AnalyticsUtilsDefault.track;
+      const GUILD_CREATION_INTENT_SELECTED = constants.GUILD_CREATION_INTENT_SELECTED;
+      AnalyticsUtilsDefault;
+      if (isCommunityIntent == null) {
+        flag = false;
+      }
+      track(GUILD_CREATION_INTENT_SELECTED, obj);
+      const obj2 = { guildTemplate, isCommunityIntent };
+      navigation.push(metroRequire.CREATE_SERVER, obj2);
+      if (metroImportDefault.NUF === trigger) {
+        const obj3 = NewUserAnalyticsUtils;
+        obj3.trackNUFStep(metroImportAll.STEP_CREATION_INTENT, metroImportAll.STEP_GUILD_CREATE, { skip: false });
+        let id;
+        const track2 = AnalyticsUtilsDefault.track;
+        const CREATE_GUILD_VIEWED = tmp4.CREATE_GUILD_VIEWED;
+        AnalyticsUtilsDefault;
+        if (guildTemplate != null) {
+          id = tmp6.id;
+        }
+        const obj4 = { guild_template_name: id };
+        track2(CREATE_GUILD_VIEWED, obj4);
+      } else if (tmp9.IN_APP === tmp8) {
+        const obj5 = { type: "Create Guild Step 2", location_section: constants2.CREATE_JOIN_GUILD_MODAL };
+        const tmpResult3 = AnalyticsUtilsDefault;
+        tmpResult3.track(constants.OPEN_MODAL, obj5);
+        const obj6 = { location_section: constants2.CREATE_JOIN_GUILD_MODAL, guild_template_name: id1 };
+        id1 = undefined;
+        const track3 = AnalyticsUtilsDefault.track;
+        const CREATE_GUILD_VIEWED2 = tmp4.CREATE_GUILD_VIEWED;
+        AnalyticsUtilsDefault;
+        if (guildTemplate != null) {
+          id1 = tmp6.id;
+        }
+        track3(CREATE_GUILD_VIEWED2, obj6);
+      }
+    }
+  }
+  cResult[6] = guildTemplate;
+  cResult[7] = navigation;
+  cResult[8] = trigger;
+  cResult[9] = P;
+  tmp14 = P;
+}) : ((arg0) => {
   let TableRowGroup;
   let closure_2;
   let guildTemplate;
@@ -68,6 +418,7 @@ export default function CreationIntent(arg0) {
   let items3;
   let obj13;
   let obj3;
+  let require;
   let tmp10;
   let tmp15;
   let tmp9;
@@ -159,7 +510,7 @@ export default function CreationIntent(arg0) {
   const obj8 = { hasIcons: true, children: null };
   const obj7 = { style: tmp.sections, children: tmp9(TableRowGroup, tmp15) };
   TableRowGroup = TableRowGroup2.TableRowGroup;
-  const tmp13 = trigger(11807);
+  const tmp13 = trigger(11708);
   const obj9 = { Icon: null, message: null, onPress: null };
   tmp10 = onPress;
   const tmp11 = ref;
@@ -178,7 +529,7 @@ export default function CreationIntent(arg0) {
           onPress(true);
         }
     };
-    const tmp12Result = trigger(11807);
+    const tmp12Result = trigger(11708);
     intl6 = intl8.intl;
     items4[1] = tmp8(tmp12Result, obj10);
     obj8.children = items4;
@@ -198,7 +549,7 @@ export default function CreationIntent(arg0) {
           onPress(false);
         }
     };
-    const tmp12Result2 = trigger(11807);
+    const tmp12Result2 = trigger(11708);
     intl4 = intl8.intl;
     items5[1] = tmp8(tmp12Result2, obj11);
     obj8.children = items5;
@@ -215,4 +566,7 @@ export default function CreationIntent(arg0) {
   };
   items3[2] = tmp8(Text3, obj12);
   return tmp8(SafeAreaPaddingView, rect);
-};
+});
+let result = size.fileFinishedImporting("modules/create_guild/native/components/CreationIntent.tsx");
+
+export default tmp7;

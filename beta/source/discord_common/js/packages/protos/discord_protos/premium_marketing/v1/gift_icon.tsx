@@ -1,11 +1,11 @@
-// Module ID: 10140
-// Function ID: 10141
+// Module ID: 10179
+// Function ID: 10180
 // Name: gift_icon
-// Dependencies: [32, 1187, 10141, 2]
+// Dependencies: [32, 1199, 10180, 2]
 
-// Module 10140 (gift_icon)
-import _mod1187 from "module_1187" /* 1187 */;
-import gradient2 from "gradient" /* 10141 */;
+// Module 10179 (gift_icon)
+import _mod1199 from "module_1199" /* 1199 */;
+import gradient2 from "gradient" /* 10180 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let tmp;
 function T() {
   return gradient2.Gradient;
 }
-const MessageType = _mod1187.MessageType;
+const MessageType = _mod1199.MessageType;
 class GiftIcon$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "box_animation_url", kind: "scalar", T: 9 }, { no: 2, name: "trinket_animation_url", kind: "scalar", T: 9 }, { no: 3, name: "trinket_glow_animation_url", kind: "scalar", T: 9 }, { no: 4, name: "gradient", kind: "message", T }];
@@ -26,9 +26,9 @@ class GiftIcon$Type extends MessageType {
     const obj = { boxAnimationUrl: "", trinketAnimationUrl: "", trinketGlowAnimationUrl: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -72,7 +72,7 @@ class GiftIcon$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -84,29 +84,29 @@ class GiftIcon$Type extends MessageType {
   }
   internalBinaryWrite(boxAnimationUrl, tag, writeUnknownFields) {
     if ("" !== boxAnimationUrl.boxAnimationUrl) {
-      const tagResult = tag.tag(1, _mod1187.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1199.WireType.LengthDelimited);
       tagResult.string(boxAnimationUrl.boxAnimationUrl);
     }
     if ("" !== boxAnimationUrl.trinketAnimationUrl) {
-      const tagResult1 = tag.tag(2, _mod1187.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1199.WireType.LengthDelimited);
       tagResult1.string(boxAnimationUrl.trinketAnimationUrl);
     }
     if ("" !== boxAnimationUrl.trinketGlowAnimationUrl) {
-      const tagResult2 = tag.tag(3, _mod1187.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1199.WireType.LengthDelimited);
       tagResult2.string(boxAnimationUrl.trinketGlowAnimationUrl);
     }
     if (boxAnimationUrl.gradient) {
       const Gradient = gradient2.Gradient;
       internalBinaryWrite = Gradient.internalBinaryWrite;
       const gradient = boxAnimationUrl.gradient;
-      const tagResult3 = tag.tag(4, _mod1187.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1199.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(gradient, tagResult3.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, boxAnimationUrl, tag);

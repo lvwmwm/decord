@@ -1,29 +1,275 @@
-// Module ID: 14746
-// Function ID: 14747
+// Module ID: 14734
+// Function ID: 14735
 // Name: useNoFillDecision
-// Dependencies: [32, 19, 7113, 7116, 14747, 504, 10682, 2]
-// Exports: default
+// Dependencies: [32, 19, 7117, 7120, 558, 576, 14735, 504, 10671, 2]
 
-// Module 14746 (useNoFillDecision)
+// Module 14734 (useNoFillDecision)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7113 */;
-import QuestStore from "QuestStore" /* 7116 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7117 */;
+import QuestStore from "QuestStore" /* 7120 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, num, tmp3;
 
-const result = size.fileFinishedImporting("modules/quests/hooks/useNoFillDecision.tsx");
-
-export default function useNoFillDecision(arg0, location) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
+  let closure_0;
+  let stateFromStores;
+  let tmp10;
+  let tmp11;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp4;
+  let tmp5;
+  let tmp7;
+  let tmp8;
+  _require = arg0;
+  const tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(16);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  const obj3 = stateFromStores(14735);
+  const enableNoFill = obj3.useConfig(tmp4).enableNoFill;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AdDeliveryStore];
+    cResult[2] = items;
+    tmp5 = items;
+  } else {
+    tmp5 = cResult[2];
+  }
+  if (cResult[3] !== arg0) {
+    class S {
+      constructor() {
+        return AdDeliveryStore.getNoFillForPlacement(closure_0);
+      }
+    }
+    const items1 = [arg0];
+    cResult[3] = arg0;
+    cResult[4] = S;
+    cResult[5] = items1;
+    tmp8 = items1;
+    tmp7 = S;
+  } else {
+    class S {
+      constructor() {
+        return AdDeliveryStore.getNoFillForPlacement(closure_0);
+      }
+    }
+    tmp8 = cResult[5];
+  }
+  const tmpResult = tmp(504);
+  stateFromStores = tmpResult.useStateFromStores(tmp5, tmp7, tmp8);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return AdDeliveryStore.getNoFillForPlacement(closure_0);
+      }
+    }
+    const items2 = [QuestStore];
+    const fn = function _() {
+      return null != QuestStore.questEnrollmentBlockedUntil;
+    };
+    cResult[6] = items2;
+    cResult[7] = fn;
+    tmp11 = fn;
+    tmp10 = items2;
+  } else {
+    class S {
+      constructor() {
+        return AdDeliveryStore.getNoFillForPlacement(closure_0);
+      }
+    }
+    tmp11 = cResult[7];
+  }
+  const tmpResult2 = tmp(504);
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp10, tmp11);
+  [tmp14, dependencyMap] = react.useState(null);
+  _slicedToArray(react.useState(null), 2);
+  const obj6 = react;
+  if (cResult[8] !== stateFromStores) {
+    class I {
+      constructor() {
+        tmp = closure_1;
+        if (null != closure_1) {
+          tmp3 = globalThis;
+          _Date = Date;
+          sum = tmp.fetchedAt + tmp.ttlMillis;
+          _setTimeout = setTimeout;
+          _Math = Math;
+          num = 0;
+          closure_0 = setTimeout(() => closure_1_2(decisionId.decisionId), Math.max(sum - Date.now(), 0));
+          return () => clearTimeout(closure_0);
+        } else {
+          return;
+        }
+      }
+    }
+    const items3 = [stateFromStores];
+    cResult[8] = stateFromStores;
+    cResult[9] = I;
+    cResult[10] = items3;
+    tmp16 = items3;
+    tmp15 = I;
+  } else {
+    class I {
+      constructor() {
+        tmp = closure_1;
+        if (null != closure_1) {
+          tmp3 = globalThis;
+          _Date = Date;
+          sum = tmp.fetchedAt + tmp.ttlMillis;
+          _setTimeout = setTimeout;
+          _Math = Math;
+          num = 0;
+          closure_0 = setTimeout(() => closure_1_2(decisionId.decisionId), Math.max(sum - Date.now(), 0));
+          return () => clearTimeout(closure_0);
+        } else {
+          return;
+        }
+      }
+    }
+    tmp16 = cResult[10];
+  }
+  const effect = obj6.useEffect(tmp15, tmp16);
+  if (cResult[11] === enableNoFill) {
+    class I {
+      constructor() {
+        tmp = closure_1;
+        if (null != closure_1) {
+          tmp3 = globalThis;
+          _Date = Date;
+          sum = tmp.fetchedAt + tmp.ttlMillis;
+          _setTimeout = setTimeout;
+          _Math = Math;
+          num = 0;
+          closure_0 = setTimeout(() => closure_1_2(decisionId.decisionId), Math.max(sum - Date.now(), 0));
+          return () => clearTimeout(closure_0);
+        } else {
+          return;
+        }
+      }
+    }
+  }
+  let tmp18 = null;
+  if (enableNoFill) {
+    class I {
+      constructor() {
+        tmp = closure_1;
+        if (null != closure_1) {
+          tmp3 = globalThis;
+          _Date = Date;
+          sum = tmp.fetchedAt + tmp.ttlMillis;
+          _setTimeout = setTimeout;
+          _Math = Math;
+          num = 0;
+          closure_0 = setTimeout(() => closure_1_2(decisionId.decisionId), Math.max(sum - Date.now(), 0));
+          return () => clearTimeout(closure_0);
+        } else {
+          return;
+        }
+      }
+    }
+    if (null != stateFromStores) {
+      class I {
+        constructor() {
+          tmp = closure_1;
+          if (null != closure_1) {
+            tmp3 = globalThis;
+            _Date = Date;
+            sum = tmp.fetchedAt + tmp.ttlMillis;
+            _setTimeout = setTimeout;
+            _Math = Math;
+            num = 0;
+            closure_0 = setTimeout(() => closure_1_2(decisionId.decisionId), Math.max(sum - Date.now(), 0));
+            return () => clearTimeout(closure_0);
+          } else {
+            return;
+          }
+        }
+      }
+      if (stateFromStores.decisionId !== tmp14) {
+        class I {
+          constructor() {
+            tmp = closure_1;
+            if (null != closure_1) {
+              tmp3 = globalThis;
+              _Date = Date;
+              sum = tmp.fetchedAt + tmp.ttlMillis;
+              _setTimeout = setTimeout;
+              _Math = Math;
+              num = 0;
+              closure_0 = setTimeout(() => closure_1_2(decisionId.decisionId), Math.max(sum - Date.now(), 0));
+              return () => clearTimeout(closure_0);
+            } else {
+              return;
+            }
+          }
+        }
+        tmp18 = null;
+        if (obj7.getIsEligibleForQuests()) {
+          class I {
+            constructor() {
+              tmp = closure_1;
+              if (null != closure_1) {
+                tmp3 = globalThis;
+                _Date = Date;
+                sum = tmp.fetchedAt + tmp.ttlMillis;
+                _setTimeout = setTimeout;
+                _Math = Math;
+                num = 0;
+                closure_0 = setTimeout(() => closure_1_2(decisionId.decisionId), Math.max(sum - Date.now(), 0));
+                return () => clearTimeout(closure_0);
+              } else {
+                return;
+              }
+            }
+          }
+          if (!stateFromStores1) {
+            class I {
+              constructor() {
+                tmp = closure_1;
+                if (null != closure_1) {
+                  tmp3 = globalThis;
+                  _Date = Date;
+                  sum = tmp.fetchedAt + tmp.ttlMillis;
+                  _setTimeout = setTimeout;
+                  _Math = Math;
+                  num = 0;
+                  closure_0 = setTimeout(() => closure_1_2(decisionId.decisionId), Math.max(sum - Date.now(), 0));
+                  return () => clearTimeout(closure_0);
+                } else {
+                  return;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  cResult[11] = enableNoFill;
+  cResult[12] = tmp14;
+  cResult[13] = stateFromStores1;
+  cResult[14] = stateFromStores;
+  cResult[15] = tmp18;
+}) : ((arg0, location) => {
   let closure_0;
   let closure_2;
   let first;
   let stateFromStores;
   _require = arg0;
   const tmp = dependencyMap;
-  const obj = stateFromStores(14747);
+  const obj = stateFromStores(14735);
   const obj2 = { location };
   const enableNoFill = obj.useConfig(obj2).enableNoFill;
   const items = [AdDeliveryStore];
@@ -54,7 +300,7 @@ export default function useNoFillDecision(arg0, location) {
       tmp8 = null;
       if (stateFromStores.decisionId !== first) {
         tmp8 = null;
-        const tmp2Result = tmp2(10682);
+        const tmp2Result = tmp2(10671);
         if (tmp2Result.getIsEligibleForQuests()) {
           tmp8 = null;
           if (!stateFromStores1) {
@@ -65,4 +311,7 @@ export default function useNoFillDecision(arg0, location) {
     }
   }
   return tmp8;
-};
+});
+const result = size.fileFinishedImporting("modules/quests/hooks/useNoFillDecision.tsx");
+
+export default tmp2;

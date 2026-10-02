@@ -1,10 +1,10 @@
 // Module ID: 5692
 // Function ID: 5693
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 5692 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "924c5a5eda5a5885b3a2345095a2f59c", name: "img_account_sync_tiktok_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "8d6755adef39a79b94cc758161d8de0c", name: "img_account_sync_ebay_white", type: "svg" });

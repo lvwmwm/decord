@@ -1,121 +1,49 @@
 // Module ID: 12425
 // Function ID: 12426
-// Dependencies: [12314, 12312, 12313]
-// Exports: supportsDOMError, supportsDOMException, supportsErrorEvent, supportsNativeFetch, supportsReferrerPolicy, supportsReportingObserver
+// Dependencies: [12426]
+// Exports: isNodeEnv, loadModule
 
 // Module 12425
-import _mod12312 from "module_12312" /* 12312 */;
-import _mod12314 from "module_12314" /* 12314 */;
+import _mod12426 from "module_12426" /* 12426 */;
 
-function supportsFetch() {
-  if ("fetch" in _mod12314.GLOBAL_OBJ) {
-    try {
-      const _Headers = Headers;
-      const self = this;
-      const headers = new Headers();
-      const _Request = Request;
-      const self2 = this;
-      const request = new Request("http://www.example.com");
-      const _Response = Response;
-      const self3 = this;
-      const response = new Response();
-      return true;
-    } catch (err) {
-      return false;
-    }
-  } else {
-    return false;
-  }
-}
-function isNativeFunction(arg0) {
-  let isMatch = arg0;
-  if (isMatch) {
-    const obj = /^function\s+\w+\(\)\s+\{\s+\[native code\]\s+\}$/;
-    isMatch = obj.test(arg0.toString());
-  }
-  return isMatch;
+function dynamicRequire(require, arg1) {
+  return require.require(arg1);
 }
 
-export { isNativeFunction };
-export const supportsDOMError = function supportsDOMError() {
-  try {
-    const self = this;
-    const dOMError = new globalThis.DOMError("");
-    return true;
-  } catch (err) {
-    return false;
-  }
-};
-export const supportsDOMException = function supportsDOMException() {
-  try {
-    const self = this;
-    const dOMException = new globalThis.DOMException("");
-    return true;
-  } catch (err) {
-    return false;
-  }
-};
-export const supportsErrorEvent = function supportsErrorEvent() {
-  try {
-    const self = this;
-    const errorEvent = new globalThis.ErrorEvent("");
-    return true;
-  } catch (err) {
-    return false;
-  }
-};
-export { supportsFetch };
-export const supportsNativeFetch = function supportsNativeFetch() {
-  if (typeof globalThis.EdgeRuntime === "string") {
-    return true;
-  } else if (supportsFetch()) {
-    const tmp = isNativeFunction;
-    if (isNativeFunction(_mod12314.GLOBAL_OBJ.fetch)) {
-      return true;
-    } else {
-      let flag2 = false;
-      const _document = tmp2(12314).GLOBAL_OBJ.document;
-      if (_document) {
-        if (typeof _document.createElement === "function") {
-          try {
-            const element = <iframe />;
-            element.hidden = true;
-            const head = _document.head;
-            head.appendChild(element);
-            const _fetch = element.contentWindow && tmp5.contentWindow.fetch;
-            if (_fetch) {
-              flag2 = tmp(tmp5.contentWindow.fetch);
-            }
-            const head2 = _document.head;
-            head2.removeChild(element);
-          } catch (tmp10) {
-            if (_mod12312.DEBUG_BUILD) {
-              const logger = tmp2(12313).logger;
-              logger.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", tmp10);
-            }
-          }
-        }
-      }
-      return flag2;
+export { dynamicRequire };
+export const isNodeEnv = function isNodeEnv() {
+  const obj = _mod12426;
+  let tmp2 = !obj.isBrowserBundle();
+  obj.isBrowserBundle();
+  if (tmp2) {
+    const _Object = Object;
+    const _process = process;
+    let num = 0;
+    const call = toString.call;
+    if (typeof process !== "undefined") {
+      num = process;
     }
-  } else {
-    return false;
+    tmp2 = "[object process]" === call(num);
   }
+  return tmp2;
 };
-export const supportsReferrerPolicy = function supportsReferrerPolicy() {
-  if (supportsFetch()) {
+export const loadModule = function loadModule(arg0) {
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    tmp = module;
+  }
+  let tmp2;
+  try {
+    tmp2 = dynamicRequire(tmp, arg0);
+  } catch (err) {
+  }
+  const tmp4 = tmp2;
+  if (!tmp4) {
     try {
-      const _Request = Request;
-      const self = this;
-      const request = new Request("_", { referrerPolicy: "origin" });
-      return true;
+      const _HermesInternal = HermesInternal;
+      tmp2 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
     } catch (err) {
-      return false;
     }
-  } else {
-    return false;
   }
-};
-export const supportsReportingObserver = function supportsReportingObserver() {
-  return "ReportingObserver" in _mod12314.GLOBAL_OBJ;
+  return tmp2;
 };

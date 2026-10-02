@@ -1,11 +1,11 @@
 // Module ID: 10048
 // Function ID: 10049
-// Dependencies: [41, 42, 93, 95, 98, 10049, 9898, 9902]
+// Dependencies: [41, 42, 93, 95, 98, 10047, 9934, 9939]
 
 // Module 10048
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9898 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
-import _mod10049 from "module_10049" /* 10049 */;
+import EmptyDuration from "EmptyDuration" /* 9934 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9939 */;
+import _mod10047 from "module_10047" /* 10047 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,13 +27,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let closure_6 = "(?:(?:\u043F\u0440\u0438\u0431\u043B\u0438\u0437\u043D\u043E|\u043E\u0440\u0456\u0454\u043D\u0442\u043E\u0432\u043D\u043E)\\s*(?:~\\s*)?)?(" + _mod10049.TIME_UNITS_PATTERN + ")" + _mod10049.REGEX_PARTS.rightBoundary;
-class UKTimeUnitWithinFormatParser {
+const keys = Object.keys(_mod10047.NUMBER);
+const regExp = new RegExp("(\\d+|[" + keys.join("") + "]+|\u534A|\u5E7E)(?:\\s*)(?:\u500B)?(\u79D2(?:\u9418)?|\u5206\u9418|\u5C0F\u6642|\u9418|\u65E5|\u5929|\u661F\u671F|\u79AE\u62DC|\u6708|\u5E74)(?:(?:\u4E4B|\u904E)?\u5F8C|(?:\u4E4B)?\u5167)", "i");
+class ZHHantDeadlineFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKTimeUnitWithinFormatParser);
-    const obj = _getPrototypeOf(UKTimeUnitWithinFormatParser);
+    _classCallCheck(this, ZHHantDeadlineFormatParser);
+    const obj = _getPrototypeOf(ZHHantDeadlineFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,42 +46,85 @@ class UKTimeUnitWithinFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ZHHantDeadlineFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternLeftBoundary",
-  value: function patternLeftBoundary() {
-    return _mod10049.REGEX_PARTS.leftBoundary;
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
 const items = [
   entry,
   {
-    key: "innerPattern",
-    value: function innerPattern(option) {
-      let _RegExp1;
-      const _RegExp = RegExp;
-      if (option.option.forwardDate) {
-        const self3 = this;
-        const self4 = this;
-        _RegExp1 = new _RegExp(tmp, "i");
-      } else {
-        const _HermesInternal = HermesInternal;
-        const combined = "(?:\u043F\u0440\u043E\u0442\u044F\u0433\u043E\u043C|\u043D\u0430 \u043F\u0440\u043E\u0442\u044F\u0437\u0456|\u043F\u0440\u043E\u0442\u044F\u0433\u043E\u043C|\u0443\u043F\u0440\u043E\u0434\u043E\u0432\u0436|\u0432\u043F\u0440\u043E\u0434\u043E\u0432\u0436)\\s*" + tmp;
-        const self = this;
-        const self2 = this;
-        _RegExp1 = new _RegExp(combined, _mod10049.REGEX_PARTS.flags);
-      }
-      return _RegExp1;
-    }
-  },
-  {
     key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod10049.parseDuration(arg1[1]);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      let num = parseInt(index[1]);
+      if (isNaN(num)) {
+        num = _mod10047.zhStringToNumber(index[1]);
+      }
+      if (isNaN(num)) {
+        num = 3;
+        if ("\u5E7E" !== index[1]) {
+          num = 0.5;
+          if ("\u534A" !== index[1]) {
+            return null;
+          }
+        }
+      }
+      const obj = {};
+      if (index[2][0].match(/[日天星禮月年]/)) {
+        if ("\u65E5" != index[2][0]) {
+          if ("\u5929" != index[2][0]) {
+            if ("\u661F" != index[2][0]) {
+              if ("\u79AE" != index[2][0]) {
+                if ("\u6708" == index[2][0]) {
+                  obj.month = num;
+                } else if ("\u5E74" == index[2][0]) {
+                  obj.year = num;
+                }
+              }
+            }
+            obj.week = num;
+          }
+          const addDurationResult = EmptyDuration.addDuration(createParsingResult.refDate, obj);
+          const start7 = parsingResult.start;
+          start7.assign("year", addDurationResult.getFullYear());
+          const start8 = parsingResult.start;
+          start8.assign("month", addDurationResult.getMonth() + 1);
+          const start9 = parsingResult.start;
+          start9.assign("day", addDurationResult.getDate());
+          return parsingResult;
+        }
+        obj.day = num;
+      } else {
+        if ("\u79D2" == index[2][0]) {
+          obj.second = num;
+        } else if ("\u5206" == index[2][0]) {
+          obj.minute = num;
+        } else {
+          const tmp6 = "\u5C0F" != str3 && "\u9418" != str3;
+          if (!tmp6) {
+            obj.hour = num;
+          }
+        }
+        const addDurationResult1 = EmptyDuration.addDuration(createParsingResult.refDate, obj);
+        const start = parsingResult.start;
+        start.imply("year", addDurationResult1.getFullYear());
+        const start2 = parsingResult.start;
+        start2.imply("month", addDurationResult1.getMonth() + 1);
+        const start3 = parsingResult.start;
+        start3.imply("day", addDurationResult1.getDate());
+        const start4 = parsingResult.start;
+        start4.assign("hour", addDurationResult1.getHours());
+        const start5 = parsingResult.start;
+        start5.assign("minute", addDurationResult1.getMinutes());
+        const start6 = parsingResult.start;
+        start6.assign("second", addDurationResult1.getSeconds());
+        return parsingResult;
+      }
     }
   }
 ];
 
-export default _createClass(UKTimeUnitWithinFormatParser, items);
+export default _createClass(ZHHantDeadlineFormatParser, items);

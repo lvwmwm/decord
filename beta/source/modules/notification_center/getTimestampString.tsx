@@ -1,12 +1,12 @@
-// Module ID: 5070
-// Function ID: 5071
+// Module ID: 5071
+// Function ID: 5072
 // Name: getTimestampString
-// Dependencies: [1115, 4421, 2]
+// Dependencies: [1127, 4424, 2]
 // Exports: default, getAbbreviatedFormatter, getFullFormatter
 
-// Module 5070 (getTimestampString)
-import intl7 from "intl" /* 1115 */;
-import _modDef4421 from "module_4421" /* 4421 */;
+// Module 5071 (getTimestampString)
+import intl7 from "intl" /* 1127 */;
+import _modDef4424 from "module_4424" /* 4424 */;
 import size from "module_2" /* 2 */;
 
 function getDurationString(seconds) {
@@ -62,9 +62,9 @@ export default function getTimestampString(arg0) {
   let getFormatter;
   let obj2;
   let since;
-  const obj = { seconds: obj2.diff(_modDef4421(since), "s"), getFormatter };
+  const obj = { seconds: obj2.diff(_modDef4424(since), "s"), getFormatter };
   ({ since, getFormatter } = arg0);
-  obj2 = _modDef4421();
+  obj2 = _modDef4424();
   return getDurationString(obj);
 };
 export const getAbbreviatedFormatter = function getAbbreviatedFormatter() {

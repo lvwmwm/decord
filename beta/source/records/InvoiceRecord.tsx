@@ -1,11 +1,11 @@
-// Module ID: 4497
-// Function ID: 4498
+// Module ID: 4500
+// Function ID: 4501
 // Name: InvoiceRecord
-// Dependencies: [1387, 4498, 2]
+// Dependencies: [1393, 4501, 2]
 
-// Module 4497 (InvoiceRecord)
-import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4498 */;
-import Record from "Record" /* 1387 */;
+// Module 4500 (InvoiceRecord)
+import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4501 */;
+import Record from "Record" /* 1393 */;
 import size from "module_2" /* 2 */;
 
 let billing_facet, order_line_items;

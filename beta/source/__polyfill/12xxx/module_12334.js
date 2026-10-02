@@ -1,563 +1,150 @@
 // Module ID: 12334
 // Function ID: 12335
-// Dependencies: [32, 41, 42, 12323, 12335, 12336, 12320, 12327, 12338, 12324, 12313]
+// Dependencies: [12310, 12311, 12335, 12325, 12322, 12317]
+// Exports: closeSession, makeSession
 
 // Module 12334
-import _mod12313 from "module_12313" /* 12313 */;
-import _mod12320 from "module_12320" /* 12320 */;
-import generatePropagationContext from "generatePropagationContext" /* 12323 */;
-import _mod12324 from "module_12324" /* 12324 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12327 */;
+import _mod12317 from "module_12317" /* 12317 */;
+import _mod12322 from "module_12322" /* 12322 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12325 */;
 import _mod12335 from "module_12335" /* 12335 */;
-import _mod12336 from "module_12336" /* 12336 */;
-import _mod12338 from "module_12338" /* 12338 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import DEBUG_BUILD from "module_12310" /* 12310 */;
+import CONSOLE_LEVELS from "module_12311" /* 12311 */;
 
-class ScopeClass {
-  constructor() {
-    let obj2;
-    let obj3;
-    _classCallCheck(this, ScopeClass);
-    this._notifyingListeners = false;
-    this._scopeListeners = [];
-    this._eventProcessors = [];
-    this._breadcrumbs = [];
-    this._attachments = [];
-    this._user = {};
-    this._tags = {};
-    this._extra = {};
-    this._contexts = {};
-    this._sdkProcessingMetadata = {};
-    const obj = { traceId: obj2.generateTraceId(), spanId: obj3.generateSpanId() };
-    obj2 = generatePropagationContext;
-    this._propagationContext = obj;
-    obj3 = generatePropagationContext;
+function updateSession(ipAddress) {
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
+  }
+  if (obj.user) {
+    const tmp = !ipAddress.ipAddress && obj.user.ip_address;
+    if (tmp) {
+      ipAddress.ipAddress = obj.user.ip_address;
+    }
+    const tmp2 = ipAddress.did || obj.did;
+    if (!tmp2) {
+      ipAddress.did = obj.user.id || obj.user.email || obj.user.username;
+    }
+  }
+  let timestamp = obj.timestamp;
+  if (!timestamp) {
+    const obj2 = _browserPerformanceTimeOriginMode;
+    timestamp = obj2.timestampInSeconds();
+  }
+  ipAddress.timestamp = timestamp;
+  if (obj.abnormal_mechanism) {
+    ipAddress.abnormal_mechanism = obj.abnormal_mechanism;
+  }
+  if (obj.ignoreDuration) {
+    ipAddress.ignoreDuration = obj.ignoreDuration;
+  }
+  if (obj.sid) {
+    let sid;
+    if (32 === obj.sid.length) {
+      sid = obj.sid;
+    } else {
+      const obj3 = _mod12322;
+      sid = obj3.uuid4();
+    }
+    ipAddress.sid = sid;
+  }
+  if (undefined !== obj.init) {
+    ipAddress.init = obj.init;
+  }
+  const tmp7 = !ipAddress.did && obj.did;
+  if (tmp7) {
+    const _HermesInternal = HermesInternal;
+    ipAddress.did = "" + obj.did;
+  }
+  if (typeof obj.started === "number") {
+    ipAddress.started = obj.started;
+  }
+  if (ipAddress.ignoreDuration) {
+    ipAddress.duration = undefined;
+  } else if (typeof obj.duration === "number") {
+    ipAddress.duration = obj.duration;
+  } else {
+    const diff = ipAddress.timestamp - ipAddress.started;
+    let num2 = 0;
+    if (diff >= 0) {
+      num2 = diff;
+    }
+    ipAddress.duration = num2;
+  }
+  if (obj.release) {
+    ipAddress.release = obj.release;
+  }
+  if (obj.environment) {
+    ipAddress.environment = obj.environment;
+  }
+  const tmp9 = !ipAddress.ipAddress && obj.ipAddress;
+  if (tmp9) {
+    ipAddress.ipAddress = obj.ipAddress;
+  }
+  const tmp10 = !ipAddress.userAgent && obj.userAgent;
+  if (tmp10) {
+    ipAddress.userAgent = obj.userAgent;
+  }
+  if (typeof obj.errors === "number") {
+    ipAddress.errors = obj.errors;
+  }
+  if (obj.status) {
+    ipAddress.status = obj.status;
   }
 }
-const entry = {
-  key: "clone",
-  value: function clone() {
-    let items1;
-    let obj2;
-    let obj3;
-    const self = this;
-    const obj4 = Object.create(ScopeClass.prototype);
-    _classCallCheck(obj4, ScopeClass);
-    obj4._notifyingListeners = false;
-    obj4._scopeListeners = [];
-    obj4._eventProcessors = [];
-    obj4._breadcrumbs = [];
-    obj4._attachments = [];
-    obj4._user = {};
-    obj4._tags = {};
-    obj4._extra = {};
-    obj4._contexts = {};
-    obj4._sdkProcessingMetadata = {};
-    const obj = { traceId: obj2.generateTraceId(), spanId: obj3.generateSpanId() };
-    obj2 = generatePropagationContext;
-    obj4._propagationContext = obj;
-    const items = [...this._breadcrumbs];
-    obj4._breadcrumbs = items;
-    obj3 = generatePropagationContext;
-    const obj5 = {};
-    const merged = Object.assign(this._tags);
-    obj4._tags = obj5;
-    const obj6 = {};
-    const merged1 = Object.assign(this._extra);
-    obj4._extra = obj6;
-    const obj7 = {};
-    const merged2 = Object.assign(this._contexts);
-    obj4._contexts = obj7;
-    if (this._contexts.flags) {
-      const obj8 = { values: items1 };
-      items1 = [];
-      const _contexts = obj4._contexts;
-      HermesBuiltin.arraySpread(items1, self._contexts.flags.values, 0);
-      _contexts.flags = obj8;
-    }
-    ({ _user: tmp2._user, _level: tmp2._level, _session: tmp2._session, _transactionName: tmp2._transactionName, _fingerprint: tmp2._fingerprint } = self);
-    const items2 = [...self._eventProcessors];
-    obj4._eventProcessors = items2;
-    obj4._requestSession = self._requestSession;
-    obj4._attachments = [...self._attachments];
-    const obj9 = {};
-    const merged3 = Object.assign(self._sdkProcessingMetadata);
-    obj4._sdkProcessingMetadata = obj9;
-    const obj10 = {};
-    const merged4 = Object.assign(self._propagationContext);
-    obj4._propagationContext = obj10;
-    ({ _client: tmp2._client, _lastEventId: tmp2._lastEventId } = self);
-    const _setSpanForScope = _mod12335._setSpanForScope;
-    _mod12335;
-    const tmp4Result2 = _mod12335;
-    _setSpanForScope(obj4, tmp4Result2._getSpanForScope(self));
-    return obj4;
-  }
-};
-let items = [
-  entry,
-  {
-    key: "setClient",
-    value: function setClient(_client) {
-      this._client = _client;
-    }
-  },
-  {
-    key: "setLastEventId",
-    value: function setLastEventId(_lastEventId) {
-      this._lastEventId = _lastEventId;
-    }
-  },
-  {
-    key: "getClient",
-    value: function getClient() {
-      return this._client;
-    }
-  },
-  {
-    key: "lastEventId",
-    value: function lastEventId() {
-      return this._lastEventId;
-    }
-  },
-  {
-    key: "addScopeListener",
-    value: function addScopeListener(arg0) {
-      const _scopeListeners = this._scopeListeners;
-      _scopeListeners.push(arg0);
-    }
-  },
-  {
-    key: "addEventProcessor",
-    value: function addEventProcessor(arg0) {
-      const _eventProcessors = this._eventProcessors;
-      _eventProcessors.push(arg0);
-      return this;
-    }
-  },
-  {
-    key: "setUser",
-    value: function setUser(user) {
-      const self = this;
-      const tmp = user || { email: "Array", id: "PX_8", ip_address: "y", username: "HermesInternal" };
-      this._user = tmp;
-      if (this._session) {
-        const obj2 = { user };
-        const obj = _mod12336;
-        obj.updateSession(self._session, obj2);
-      }
-      const result = self._notifyScopeListeners();
-      return self;
-    }
-  },
-  {
-    key: "getUser",
-    value: function getUser() {
-      return this._user;
-    }
-  },
-  {
-    key: "getRequestSession",
-    value: function getRequestSession() {
-      return this._requestSession;
-    }
-  },
-  {
-    key: "setRequestSession",
-    value: function setRequestSession(_requestSession) {
-      this._requestSession = _requestSession;
-      return this;
-    }
-  },
-  {
-    key: "setTags",
-    value: function setTags(arg0) {
-      const obj = {};
-      const merged = Object.assign(this._tags);
-      const merged1 = Object.assign(arg0);
-      this._tags = obj;
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "setTag",
-    value: function setTag(arg0, arg1) {
-      const obj = {};
-      const merged = Object.assign(this._tags);
-      obj[arg0] = arg1;
-      this._tags = obj;
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "setExtras",
-    value: function setExtras(arg0) {
-      const obj = {};
-      const merged = Object.assign(this._extra);
-      const merged1 = Object.assign(arg0);
-      this._extra = obj;
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "setExtra",
-    value: function setExtra(arg0, arg1) {
-      const obj = {};
-      const merged = Object.assign(this._extra);
-      obj[arg0] = arg1;
-      this._extra = obj;
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "setFingerprint",
-    value: function setFingerprint(_fingerprint) {
-      this._fingerprint = _fingerprint;
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "setLevel",
-    value: function setLevel(_level) {
-      this._level = _level;
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "setTransactionName",
-    value: function setTransactionName(_transactionName) {
-      this._transactionName = _transactionName;
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "setContext",
-    value: function setContext(arg0, arg1) {
-      const self = this;
-      if (null === arg1) {
-        delete self._contexts[tmp];
-      } else {
-        self._contexts[arg0] = arg1;
-      }
-      const result = self._notifyScopeListeners();
-      return self;
-    }
-  },
-  {
-    key: "setSession",
-    value: function setSession(_session) {
-      const self = this;
-      const tmp = _session;
-      if (tmp) {
-        self._session = _session;
-      } else {
-        delete self["_session"];
-      }
-      const result = self._notifyScopeListeners();
-      return self;
-    }
-  },
-  {
-    key: "getSession",
-    value: function getSession() {
-      return this._session;
-    }
-  },
-  {
-    key: "update",
-    value: function update(requestSession) {
-      let contexts;
-      let extra;
-      let fingerprint;
-      let level;
-      let obj3;
-      let obj4;
-      let tags;
-      let tmp7;
-      let user;
-      const self = this;
-      const tmp = requestSession;
-      if (tmp) {
-        let items2;
-        let obj = requestSession;
-        if (typeof requestSession === "function") {
-          obj = requestSession(self);
-        }
-        if (obj instanceof _moduleResult) {
-          const items = [obj.getScopeData(), obj.getRequestSession()];
-          items2 = items;
-        } else {
-          const obj2 = _mod12320;
-          if (obj2.isPlainObject(obj)) {
-            const items1 = [requestSession, requestSession.requestSession];
-            items2 = items1;
-          } else {
-            items2 = [];
-          }
-        }
-        [obj3, tmp7] = items2;
-        _slicedToArray(items2, 2);
-        if (!obj4) {
-          obj4 = {};
-        }
-        ({ tags, extra, user, contexts, level, fingerprint } = obj4);
-        if (undefined === fingerprint) {
-          fingerprint = [];
-        }
-        const propagationContext = obj4.propagationContext;
-        const obj5 = {};
-        const merged = Object.assign(self._tags);
-        const merged1 = Object.assign(tags);
-        self._tags = obj5;
-        const obj6 = {};
-        const merged2 = Object.assign(self._extra);
-        const merged3 = Object.assign(extra);
-        self._extra = obj6;
-        const obj10 = {};
-        const merged4 = Object.assign(self._contexts);
-        const merged5 = Object.assign(contexts);
-        self._contexts = obj10;
-        let length = user;
-        if (length) {
-          const _Object = Object;
-          length = Object.keys(user).length;
-        }
-        if (length) {
-          self._user = user;
-        }
-        if (level) {
-          self._level = level;
-        }
-        if (fingerprint.length) {
-          self._fingerprint = fingerprint;
-        }
-        if (propagationContext) {
-          self._propagationContext = propagationContext;
-        }
-        if (tmp7) {
-          self._requestSession = tmp7;
-        }
-        return self;
-      } else {
-        return self;
-      }
-    }
-  },
-  {
-    key: "clear",
-    value: function clear() {
-      let obj4;
-      const obj = { _breadcrumbs: [], _tags: {}, _extra: {}, _user: {}, _contexts: {}, _level: undefined, _transactionName: undefined, _fingerprint: undefined, _requestSession: undefined, _session: undefined, _attachments: [] };
-      const obj2 = _mod12335;
-      obj2._setSpanForScope(obj, undefined);
-      const setPropagationContext = obj.setPropagationContext;
-      const obj3 = { traceId: obj4.generateTraceId() };
-      obj4 = generatePropagationContext;
-      const result = setPropagationContext(obj3);
-      const result1 = obj._notifyScopeListeners();
-      return obj;
-    }
-  },
-  {
-    key: "addBreadcrumb",
-    value: function addBreadcrumb(arg0, num) {
-      let obj2;
-      num = 100;
-      const self = this;
-      if (num <= 0) {
-        return self;
-      } else {
-        const obj = { timestamp: obj2.dateTimestampInSeconds() };
-        obj2 = _browserPerformanceTimeOriginMode;
-        const merged = Object.assign(arg0);
-        const _breadcrumbs = self._breadcrumbs;
-        _breadcrumbs.push(obj);
-        if (self._breadcrumbs.length > num) {
-          const _breadcrumbs1 = self._breadcrumbs;
-          self._breadcrumbs = _breadcrumbs1.slice(-num);
-          if (self._client) {
-            const _client = self._client;
-            _client.recordDroppedEvent("buffer_overflow", "log_item");
-          }
-        }
-        const result = self._notifyScopeListeners();
-        return self;
-      }
-    }
-  },
-  {
-    key: "getLastBreadcrumb",
-    value: function getLastBreadcrumb() {
-      return this._breadcrumbs[this._breadcrumbs.length - 1];
-    }
-  },
-  {
-    key: "clearBreadcrumbs",
-    value: function clearBreadcrumbs() {
-      this._breadcrumbs = [];
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "addAttachment",
-    value: function addAttachment(arg0) {
-      const _attachments = this._attachments;
-      _attachments.push(arg0);
-      return this;
-    }
-  },
-  {
-    key: "clearAttachments",
-    value: function clearAttachments() {
-      this._attachments = [];
-      return this;
-    }
-  },
-  {
-    key: "getScopeData",
-    value: function getScopeData() {
-      let obj2;
-      const self = this;
-      const obj = { breadcrumbs: this._breadcrumbs, attachments: this._attachments, contexts: this._contexts, tags: this._tags, extra: this._extra, user: this._user, level: this._level, fingerprint: this._fingerprint || [], eventProcessors: self._eventProcessors, propagationContext: self._propagationContext, sdkProcessingMetadata: self._sdkProcessingMetadata, transactionName: self._transactionName, span: obj2._getSpanForScope(self) };
-      obj2 = _mod12335;
-      return obj;
-    }
-  },
-  {
-    key: "setSDKProcessingMetadata",
-    value: function setSDKProcessingMetadata(arg0) {
-      const obj = _mod12338;
-      this._sdkProcessingMetadata = obj.merge(this._sdkProcessingMetadata, arg0, 2);
-      return this;
-    }
-  },
-  {
-    key: "setPropagationContext",
-    value: function setPropagationContext(arg0) {
-      let obj2;
-      const obj = { spanId: obj2.generateSpanId() };
-      obj2 = generatePropagationContext;
-      const merged = Object.assign(arg0);
-      this._propagationContext = obj;
-      return this;
-    }
-  },
-  {
-    key: "getPropagationContext",
-    value: function getPropagationContext() {
-      return this._propagationContext;
-    }
-  },
-  {
-    key: "captureException",
-    value: function captureException(originalException, event_id) {
-      const tmp = event_id;
-      if (tmp) {
-        if (event_id.event_id) {
-          event_id = event_id.event_id;
-        }
-        const self = this;
-        if (this._client) {
-          const _Error = Error;
-          const self2 = this;
-          const self3 = this;
-          const error = new Error("Sentry syntheticException");
-          const _client = self._client;
-          const captureException = _client.captureException;
-          const obj2 = { originalException, syntheticException: error, event_id };
-          const merged = Object.assign(event_id);
-          captureException(originalException, obj2, self);
-          return event_id;
-        } else {
-          const logger = _mod12313.logger;
-          logger.warn("No client configured on scope - will not capture exception!");
-          return event_id;
-        }
-      }
-      const obj = _mod12324;
-      event_id = obj.uuid4();
-    }
-  },
-  {
-    key: "captureMessage",
-    value: function captureMessage(originalException, arg1, event_id) {
-      const tmp = event_id;
-      if (tmp) {
-        if (event_id.event_id) {
-          event_id = event_id.event_id;
-        }
-        const self = this;
-        if (this._client) {
-          const _Error = Error;
-          const self2 = this;
-          const self3 = this;
-          const error = new Error(originalException);
-          const _client = self._client;
-          const captureMessage = _client.captureMessage;
-          const obj2 = { originalException, syntheticException: error, event_id };
-          const merged = Object.assign(event_id);
-          captureMessage(originalException, arg1, obj2, self);
-          return event_id;
-        } else {
-          const logger = _mod12313.logger;
-          logger.warn("No client configured on scope - will not capture message!");
-          return event_id;
-        }
-      }
-      const obj = _mod12324;
-      event_id = obj.uuid4();
-    }
-  },
-  {
-    key: "captureEvent",
-    value: function captureEvent(arg0, event_id) {
-      const tmp = event_id;
-      if (tmp) {
-        if (event_id.event_id) {
-          event_id = event_id.event_id;
-        }
-        const self = this;
-        if (this._client) {
-          const _client = self._client;
-          const captureEvent = _client.captureEvent;
-          const obj2 = { event_id };
-          const merged = Object.assign(event_id);
-          captureEvent(arg0, obj2, self);
-        } else {
-          const logger = _mod12313.logger;
-          logger.warn("No client configured on scope - will not capture event!");
-        }
-        return event_id;
-      }
-      const obj = _mod12324;
-      event_id = obj.uuid4();
-    }
-  },
-  {
-    key: "_notifyScopeListeners",
-    value: function _notifyScopeListeners() {
-      const self = this;
-      if (!this._notifyingListeners) {
-        self._notifyingListeners = true;
-        const _scopeListeners = self._scopeListeners;
-        const item = _scopeListeners.forEach((fn) => {
-          fn(self);
-        });
-        self._notifyingListeners = false;
-      }
-    }
-  }
-];
-const _moduleResult = _createClass(ScopeClass, items);
+_mod12335;
 
-export const Scope = _moduleResult;
+export const closeSession = function closeSession(status, status2) {
+  let obj;
+  const tmp = status2;
+  if (tmp) {
+    obj = { status: status2 };
+    const obj2 = { status: status2 };
+  } else {
+    obj = {};
+    if ("ok" === status.status) {
+      obj = { status: "exited" };
+    }
+  }
+  updateSession(status, obj);
+};
+export const makeSession = function makeSession(arg0) {
+  let obj2;
+  let obj3;
+  let obj = obj2(12325);
+  const timestampInSecondsResult = obj.timestampInSeconds();
+  obj2 = {
+    sid: obj3.uuid4(),
+    init: true,
+    timestamp: timestampInSecondsResult,
+    started: timestampInSecondsResult,
+    duration: 0,
+    status: "ok",
+    errors: 0,
+    ignoreDuration: false,
+    toJSON() {
+      let combined;
+      let date;
+      let date1;
+      const tmp2 = _mod12317;
+      const obj = { sid: "" + obj2.sid, init: obj2.init, started: date.toISOString(), timestamp: date1.toISOString(), status: null, errors: null, did: combined, duration: null, abnormal_mechanism: null, attrs: { release: obj2.release, environment: obj2.environment, ip_address: obj2.ipAddress, user_agent: obj2.userAgent } };
+      const dropUndefinedKeys = tmp2.dropUndefinedKeys;
+      date = new Date(1000 * obj2.started);
+      ({ status: obj.status, errors: obj.errors } = obj2);
+      date1 = new Date(1000 * obj2.timestamp);
+      if (typeof obj2.did === "number") {
+        const _HermesInternal = HermesInternal;
+        combined = "" + tmp.did;
+      }
+      ({ duration: obj.duration, abnormal_mechanism: obj.abnormal_mechanism } = obj2);
+      return dropUndefinedKeys(obj);
+    }
+  };
+  obj3 = obj2(12322);
+  if (arg0) {
+    let tmp2 = updateSession;
+    updateSession(obj2, arg0);
+  }
+  return obj2;
+};
+export { updateSession };

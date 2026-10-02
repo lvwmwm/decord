@@ -1,11 +1,11 @@
-// Module ID: 5049
-// Function ID: 5050
+// Module ID: 5050
+// Function ID: 5051
 // Name: FamilyCenterPendingConnectionStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 5049 (FamilyCenterPendingConnectionStore)
+// Module 5050 (FamilyCenterPendingConnectionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let c0 = null;

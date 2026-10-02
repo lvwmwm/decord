@@ -144,7 +144,7 @@ let items = [
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             while (true) {
@@ -165,7 +165,7 @@ let items = [
                   value = values[Symbol.iterator]();
                   if (value === undefined) {
                     c9 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   } else {
                     c8 = 1;
                     _searchParams = tmp14;
@@ -226,7 +226,7 @@ let items = [
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           while (true) {
@@ -254,7 +254,7 @@ let items = [
                 closure_1 = closure_0[Symbol.iterator]();
                 if (closure_1 === undefined) {
                   c10 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 } else {
                   let c8 = 1;
                   c0 = tmp16;
@@ -324,7 +324,7 @@ let items = [
   {
     key: "sort",
     value: function sort() {
-      const f109354 = (arg0, arg1) => {
+      const f132134 = (arg0, arg1) => {
         let obj;
         let tmp;
         [obj] = arg0;
@@ -333,8 +333,8 @@ let items = [
       };
       const _searchParams = this._searchParams;
       const items = [..._searchParams.entries()];
-      this._searchParams = new Map(items.sort(f109354));
-      new Map(items.sort(f109354));
+      this._searchParams = new Map(items.sort(f132134));
+      new Map(items.sort(f132134));
     }
   },
 ,

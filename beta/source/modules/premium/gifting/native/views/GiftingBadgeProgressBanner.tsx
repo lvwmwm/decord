@@ -1,19 +1,21 @@
-// Module ID: 10221
-// Function ID: 10222
+// Module ID: 10259
+// Function ID: 10260
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 4836, 576, 6583, 8230, 1249, 10214, 4832, 1115, 2583, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 6584, 1261, 8227, 10252, 1127, 2586, 4833, 2]
 
-// Module 10221 (GiftingBadgeProgressBanner)
+// Module 10259 (GiftingBadgeProgressBanner)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import _modDef2583 from "module_2583" /* 2583 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8230 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import _modDef2586 from "module_2586" /* 2586 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6584 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8227 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -29,9 +31,124 @@ createStyles = createStyles.createStyles;
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj3 = { alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_8, marginInlineEnd: nativeDefault.space.PX_8 };
 let closure_6 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeProgressBanner.tsx");
-
-export default function GiftingBadgeProgressBanner(arg0) {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let analyticsLocation;
+  let giftsToNextTier;
+  let items2;
+  let nextTierIcon;
+  let nextTierName;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(21);
+  ({ giftsToNextTier, nextTierName, nextTierIcon, analyticsLocation } = arg0);
+  const tmp4 = closure_6();
+  if (cResult[0] !== analyticsLocation) {
+    let items1;
+    if (null != analyticsLocation) {
+      const items = [analyticsLocation];
+      items1 = items;
+    } else {
+      items1 = [];
+    }
+    cResult[0] = analyticsLocation;
+    cResult[1] = items1;
+    tmp5 = items1;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const tmp8 = useAnalyticsLocationsDefault;
+  const analyticsLocations = tmp8(...tmp5).analyticsLocations;
+  if (cResult[2] === analyticsLocations) {
+    if (cResult[3] === giftsToNextTier) {
+      let tmp9;
+      let tmp11;
+      let tmp13;
+      if (cResult[4] === nextTierName) {
+        tmp9 = cResult[5];
+      }
+      const _Symbol = Symbol;
+      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj2 = { trackOnInitialLoad: true };
+        cResult[6] = obj2;
+        tmp11 = obj2;
+      } else {
+        tmp11 = cResult[6];
+      }
+      useTrackImpressionDefault(tmp9, tmp11);
+      const container = tmp4.container;
+      if (cResult[7] !== nextTierIcon) {
+        let tmp15 = null != nextTierIcon;
+        if (tmp15) {
+          const obj3 = { icon: nextTierIcon, size: 24 };
+          tmp15 = React3(tmp7(10252), obj3);
+        }
+        cResult[7] = nextTierIcon;
+        cResult[8] = tmp15;
+        tmp13 = tmp15;
+      } else {
+        tmp13 = cResult[8];
+      }
+      if (cResult[9] === tmp4.iconContainer) {
+        let tmp17;
+        if (cResult[10] === tmp13) {
+          tmp17 = cResult[11];
+        }
+        if (cResult[12] === giftsToNextTier) {
+          let tmp21;
+          let tmp23;
+          if (cResult[13] === nextTierName) {
+            tmp21 = cResult[14];
+          }
+          if (cResult[15] !== tmp21) {
+            const obj4 = { variant: "text-md/semibold", children: tmp21 };
+            const tmp25 = React3(Text_Text.Text, obj4);
+            cResult[15] = tmp21;
+            cResult[16] = tmp25;
+            tmp23 = tmp25;
+          } else {
+            tmp23 = cResult[16];
+          }
+          if (cResult[17] === tmp4.container) {
+            if (cResult[18] === tmp17) {
+              let tmp26;
+              if (cResult[19] === tmp23) {
+                tmp26 = cResult[20];
+              }
+              return tmp26;
+            }
+          }
+          const obj5 = { style: container, children: items2 };
+          items2 = [tmp17, tmp23];
+          const tmp29 = hasOwnProperty(View, obj5);
+          cResult[17] = tmp4.container;
+          cResult[18] = tmp17;
+          cResult[19] = tmp23;
+          cResult[20] = tmp29;
+          tmp26 = tmp29;
+        }
+        const intl = tmp(1127).intl;
+        const obj6 = { giftsRemaining: giftsToNextTier, nextTier: nextTierName };
+        const formatToPlainStringResult = intl.formatToPlainString(_modDef2586["0+xfd9"], obj6);
+        cResult[12] = giftsToNextTier;
+        cResult[13] = nextTierName;
+        cResult[14] = formatToPlainStringResult;
+        tmp21 = formatToPlainStringResult;
+      }
+      const obj7 = { style: tmp4.iconContainer, children: tmp13 };
+      const tmp20 = React3(View, obj7);
+      cResult[9] = tmp4.iconContainer;
+      cResult[10] = tmp13;
+      cResult[11] = tmp20;
+      tmp17 = tmp20;
+    }
+  }
+  const obj8 = { name: discord_common_AnalyticsUtils.ImpressionNames.GIFTING_BADGE_PROGRESS_BANNER, type: discord_common_AnalyticsUtils.ImpressionTypes.VIEW, properties: { gifts_to_next_tier: giftsToNextTier, next_tier: nextTierName, location_stack: analyticsLocations } };
+  cResult[2] = analyticsLocations;
+  cResult[3] = giftsToNextTier;
+  cResult[4] = nextTierName;
+  cResult[5] = obj8;
+  tmp9 = obj8;
+}) : ((arg0) => {
   let analyticsLocation;
   let giftsToNextTier;
   let intl;
@@ -59,12 +176,15 @@ export default function GiftingBadgeProgressBanner(arg0) {
   const tmp8 = hasOwnProperty;
   if (tmp10Result) {
     const obj4 = { icon: nextTierIcon, size: 24 };
-    tmp10Result = tmp10(tmp2(10214), obj4);
+    tmp10Result = tmp10(tmp2(10252), obj4);
   }
   items2 = [React3(View, obj3), ];
-  const obj5 = { variant: "text-md/semibold", children: intl.formatToPlainString(_modDef2583["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName }) };
-  const Text = tmp6(4832).Text;
-  intl = tmp6(1115).intl;
+  const obj5 = { variant: "text-md/semibold", children: intl.formatToPlainString(_modDef2586["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName }) };
+  const Text = tmp6(4833).Text;
+  intl = tmp6(1127).intl;
   items2[1] = React3(Text, obj5);
   return tmp8(View, obj2);
-};
+});
+const result = size.fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeProgressBanner.tsx");
+
+export default tmp6;

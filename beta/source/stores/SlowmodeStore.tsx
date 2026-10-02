@@ -1,14 +1,14 @@
-// Module ID: 7100
-// Function ID: 7101
+// Module ID: 7104
+// Function ID: 7105
 // Name: SlowmodeStore
-// Dependencies: [2045, 4469, 7101, 2040, 573, 1091, 504, 2]
+// Dependencies: [2051, 4472, 7105, 2046, 585, 1103, 504, 2]
 
-// Module 7100 (SlowmodeStore)
+// Module 7104 (SlowmodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ function setCooldown(channel, SendMessage, cooldownMs) {
       const self2 = this;
       const obj2 = { rateLimitPerUser: channel.rateLimitPerUser, cooldownMs, cooldownEndTimestamp: sum, timer: timeout };
       const tmp8 = tmp[SendMessage];
-      timeout = new tmp3(2040).Timeout();
+      timeout = new tmp3(2046).Timeout();
       tmp8[id] = obj2;
       const timer2 = tmp[SendMessage][channel.id].timer;
       timer2.start(1000, () => {
@@ -61,10 +61,10 @@ class SlowmodeStore extends Store {
   initialize() {
     this.waitFor(ChannelStore, PermissionStore);
   }
-  getSlowmodeCooldownGuess(id, CreateThread) {
-    let SendMessage = CreateThread;
+  getSlowmodeCooldownGuess(id, slowmodeType) {
+    let SendMessage = slowmodeType;
     const tmp = closure_6;
-    if (CreateThread == null) {
+    if (slowmodeType == null) {
       SendMessage = obj.SendMessage;
     }
     let num = 0;
@@ -73,8 +73,8 @@ class SlowmodeStore extends Store {
     }
     return num;
   }
-  isChannelOnCooldown(channel, CreateThread) {
-    const tmp = this.getSlowmodeCooldownGuess(channel.id, CreateThread) > 0 && channel.rateLimitPerUser > 0;
+  isChannelOnCooldown(channel, slowmodeType) {
+    const tmp = this.getSlowmodeCooldownGuess(channel.id, slowmodeType) > 0 && channel.rateLimitPerUser > 0;
     return tmp;
   }
 }

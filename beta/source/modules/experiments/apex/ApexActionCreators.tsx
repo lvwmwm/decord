@@ -1,18 +1,18 @@
-// Module ID: 11018
-// Function ID: 11019
+// Module ID: 10886
+// Function ID: 10887
 // Name: ApexActionCreators
-// Dependencies: [109, 5, 1235, 1074, 1271, 573, 7319, 1438, 504, 2]
+// Dependencies: [109, 5, 1247, 1086, 1283, 585, 7323, 1444, 504, 2]
 // Exports: fetchApexExperimentsMetadata, fetchInstallationExperiments, fetchUserExperimentAssignments
 
-// Module 11018 (ApexActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import apex_ApexTypes from "apex/ApexTypes" /* 1438 */;
-import experiment from "experiment" /* 7319 */;
+// Module 10886 (ApexActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import apex_ApexTypes from "apex/ApexTypes" /* 1444 */;
+import experiment from "experiment" /* 7323 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1247 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _fetchApexExperimentsMetadata() {
@@ -29,7 +29,7 @@ let obj = function _fetchApexExperimentsMetadata() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -84,7 +84,7 @@ let obj = function _fetchApexExperimentsMetadata() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp16) {
         closure_3 = tmp16;
@@ -116,7 +116,7 @@ obj = function _fetchUserExperimentAssignments() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -176,7 +176,7 @@ obj = function _fetchUserExperimentAssignments() {
             obj3.dispatch(obj13);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp34) {
           closure_3 = tmp34;
           if (0 === c4) {
@@ -206,7 +206,7 @@ obj = function _fetchInstallationExperiments() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -293,7 +293,7 @@ obj = function _fetchInstallationExperiments() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp47) {
         experiments = tmp47;
         if (0 === c4) {

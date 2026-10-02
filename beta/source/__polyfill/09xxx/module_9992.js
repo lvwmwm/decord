@@ -1,15 +1,12 @@
 // Module ID: 9992
 // Function ID: 9993
-// Dependencies: [41, 42, 93, 95, 98, 9895, 9989, 9896, 9902]
+// Dependencies: [41, 42, 93, 95, 98, 9950]
 
 // Module 9992
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9895 */;
-import findMostLikelyADYear from "findMostLikelyADYear" /* 9896 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
-import _mod9989 from "module_9989" /* 9989 */;
+import _mod9950 from "module_9950" /* 9950 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -28,16 +25,31 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod9989.MONTH_DICTIONARY);
-const regExp = new RegExp("(" + matchAnyPatternResult + ")\\s*(?:[,-]?\\s*(" + _mod9989.YEAR_PATTERN + ")?)?(?=[^\\s\\w]|\\s+[^0-9]|\\s+$|$)", "i");
-class NLMonthNameParser {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class FRMergeDateRangeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, NLMonthNameParser);
-    const obj = _getPrototypeOf(NLMonthNameParser);
+    _classCallCheck(this, FRMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(FRMergeDateRangeRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -47,30 +59,13 @@ class NLMonthNameParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(NLMonthNameParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(FRMergeDateRangeRefiner, fn(_mod9950).default);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*(à|a|au|-)\s*$/i;
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(createParsingComponents, arg1) {
-      const parsingComponents = createParsingComponents.createParsingComponents();
-      parsingComponents.imply("day", 1);
-      const tmp4 = _mod9989.MONTH_DICTIONARY[arg1[1].toLowerCase(arg1[1])];
-      parsingComponents.assign("month", tmp4);
-      if (arg1[2]) {
-        parsingComponents.assign("year", _mod9989.parseYear(arg1[2]));
-      } else {
-        parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, 1, tmp4));
-      }
-      return parsingComponents;
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(NLMonthNameParser, items);
+export default _createClass(FRMergeDateRangeRefiner, items);

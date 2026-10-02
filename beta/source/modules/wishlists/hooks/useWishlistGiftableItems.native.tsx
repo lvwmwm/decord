@@ -1,28 +1,56 @@
-// Module ID: 8257
-// Function ID: 8258
+// Module ID: 8254
+// Function ID: 8255
 // Name: useWishlistGiftableItems
-// Dependencies: [19, 1074, 2]
-// Exports: useWishlistGiftableItems
+// Dependencies: [19, 1086, 558, 576, 2]
 
-// Module 8257 (useWishlistGiftableItems)
-import Constants from "Constants" /* 1074 */;
-import react_mod from "react" /* 19 */;
+// Module 8254 (useWishlistGiftableItems)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let react = react_mod;
 let items = [, , ];
 ({ COLLECTIBLES: arr[0], PREMIUM: arr[1], SOCIAL_LAYER_GAME_ITEM: arr[2] } = Constants.SKUProductLines);
 const set = new Set(items);
-const result = size.fileFinishedImporting("modules/wishlists/hooks/useWishlistGiftableItems.native.tsx");
-
-export const GIFTABLE_PRODUCT_LINES = set;
-export const useWishlistGiftableItems = function useWishlistGiftableItems(wishlist) {
-  react = wishlist;
-  let items = [wishlist];
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((items) => {
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(2);
+  items = undefined;
+  const first = cResult[0];
+  if (items != null) {
+    items = items.items;
+  }
+  if (first !== items) {
+    let found;
+    if (items != null) {
+      const items1 = items.items;
+      found = items1.filter((skuProductLine) => {
+        const tmp = set.has(skuProductLine.skuProductLine) && !skuProductLine.isOwned;
+        return tmp;
+      });
+    }
+    if (found == null) {
+      found = [];
+    }
+    let items2;
+    if (items != null) {
+      items2 = items.items;
+    }
+    cResult[0] = items2;
+    cResult[1] = found;
+    tmp4 = found;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : ((arg0) => {
+  let items = [arg0];
   return react.useMemo(() => {
     let found;
-    if (wishlist != null) {
-      const items = wishlist.items;
+    if (items != null) {
+      items = items.items;
       found = items.filter((skuProductLine) => {
         const tmp = set.has(skuProductLine.skuProductLine) && !skuProductLine.isOwned;
         return tmp;
@@ -33,4 +61,8 @@ export const useWishlistGiftableItems = function useWishlistGiftableItems(wishli
     }
     return found;
   }, items);
-};
+});
+const result = size.fileFinishedImporting("modules/wishlists/hooks/useWishlistGiftableItems.native.tsx");
+
+export const GIFTABLE_PRODUCT_LINES = set;
+export const useWishlistGiftableItems = tmp3;

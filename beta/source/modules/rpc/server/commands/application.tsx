@@ -1,21 +1,21 @@
-// Module ID: 14028
-// Function ID: 14029
+// Module ID: 14030
+// Function ID: 14031
 // Name: application
-// Dependencies: [5063, 4739, 1074, 8773, 8775, 14029, 8321, 8770, 8755, 1241, 1271, 8319, 2]
+// Dependencies: [5064, 4741, 1086, 8768, 8770, 14031, 8318, 8765, 8750, 1253, 1283, 8316, 2]
 
-// Module 14028 (application)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import Constants2 from "Constants" /* 4739 */;
-import TestModeUtils from "TestModeUtils" /* 8319 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8321 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 8755 */;
-import RPCErrorDefault from "RPCError" /* 8770 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8773 */;
-import RPCHelpers from "RPCHelpers" /* 8775 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14029 */;
-import ApplicationStore from "ApplicationStore" /* 5063 */;
-import Constants from "Constants" /* 1074 */;
+// Module 14030 (application)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import Constants2 from "Constants" /* 4741 */;
+import TestModeUtils from "TestModeUtils" /* 8316 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8318 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 8750 */;
+import RPCErrorDefault from "RPCError" /* 8765 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8768 */;
+import RPCHelpers from "RPCHelpers" /* 8770 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14031 */;
+import ApplicationStore from "ApplicationStore" /* 5064 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;
@@ -87,20 +87,20 @@ let obj2 = {
   scope: RPC_LOCAL_SCOPE,
   handler(socket) {
     let obj2;
-    let obj3;
+    let obj4;
     const id = socket.socket.application.id;
     if (null == id) {
       const self = this;
       const self2 = this;
       const obj = { errorCode: metroRequire.INVALID_COMMAND };
-      const tmp8 = new RPCErrorDefault(obj, "No application.");
-      throw tmp8;
+      const tmp5 = new RPCErrorDefault(obj, "No application.");
+      throw tmp5;
     } else {
       const HTTP = HTTPUtils.HTTP;
       const request = { url: hasOwnProperty.APPLICATION_TICKET(id), body: obj2, retries: 3, oldFormErrors: true, rejectWithError: false };
       const post = HTTP.post;
-      obj2 = { test_mode: obj3.isTestModeForApplication(id) };
-      obj3 = TestModeUtils;
+      obj2 = { test_mode: obj4.isTestModeForApplication(id) };
+      obj4 = TestModeUtils;
       const postResult = post(request);
       return postResult.then((body) => body.body);
     }

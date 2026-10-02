@@ -1,31 +1,33 @@
-// Module ID: 14470
-// Function ID: 14471
+// Module ID: 14458
+// Function ID: 14459
 // Name: ScheduleDowntimeScreen
-// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4800, 8995, 1981, 4836, 576, 1177, 5279, 4832, 1115, 2487, 1485, 6415, 9543, 563, 14471, 14472, 4790, 5999, 6621, 5917, 6544, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 1378, 1086, 21, 4801, 8972, 1987, 4837, 588, 558, 576, 4833, 1127, 2490, 1189, 5280, 1491, 6415, 12212, 573, 14459, 14460, 4791, 5997, 6621, 5916, 6546, 5282, 2]
 // Exports: default
 
-// Module 14470 (ScheduleDowntimeScreen)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import intl11 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import _modDef2487 from "module_2487" /* 2487 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 9543 */;
+// Module 14458 (ScheduleDowntimeScreen)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl11 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import _modDef2490 from "module_2490" /* 2490 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import Stack_Stack from "Stack/Stack" /* 5280 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 12212 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c1, c5, closure_0, closure_2, closure_3, dayLabel, set;
+let _require, c1, c5, closure_0, closure_2, closure_3, conflictingEntries, set;
 
 let closure_12;
 let metroImportAll;
@@ -39,7 +41,87 @@ let obj6;
 let obj7;
 let obj8;
 let unpackModuleId;
-function OverlappingSchedulesWarning(conflictingEntries) {
+let _asyncToGenerator = _asyncToGenerator_mod;
+({ View: metroRequire, Pressable: metroImportDefault, ScrollView: metroImportAll } = react_native);
+const UserSettingsSections = Constants.UserSettingsSections;
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: { flex: 1 }, scrollContent: obj2, section: obj3, sectionHeader: obj4, daysContainer: obj5, dayButton: obj6, dayButtonSelected: { backgroundColor: "rgba(88, 101, 242, 0.16)", borderColor: "rgba(88, 101, 242, 1)" }, overlapWarningContent: obj7, footer: obj8 };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
+createStyles = createStyles.createStyles;
+obj3 = { gap: nativeDefault.space.PX_8 };
+obj4 = { gap: nativeDefault.space.PX_4 };
+obj5 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
+obj6 = { flex: 1, aspectRatio: 1, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderWidth: 1, borderColor: "transparent" };
+obj7 = { marginTop: nativeDefault.space.PX_24 };
+obj8 = { paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
+let closure_13 = createStyles(obj);
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((conflictingEntries) => {
+  let Stack;
+  let intl;
+  let items;
+  let obj4;
+  let obj = react2;
+  const cResult = obj.c(6);
+  conflictingEntries = conflictingEntries.conflictingEntries;
+  if (0 === conflictingEntries.length) {
+    return null;
+  } else {
+    let first;
+    let tmp8;
+    let tmp11;
+    const _Symbol2 = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { variant: "text-sm/medium", children: intl.string(_modDef2490["26A0Df"]) };
+      let Text = tmp(4833).Text;
+      intl = tmp(1127).intl;
+      const tmp7 = unpackModuleId(Text, obj2);
+      cResult[0] = tmp7;
+      first = tmp7;
+    } else {
+      first = cResult[0];
+    }
+    if (cResult[1] !== conflictingEntries) {
+      let tmp9;
+      const _Symbol = Symbol;
+      if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+        const fn = function l(dayLabel) {
+          dayLabel = dayLabel.dayLabel;
+          const timeRange = dayLabel.timeRange;
+          const obj = { variant: "text-sm/medium", children: "" + dayLabel + "  " + timeRange };
+          const Text = require("Text/Text").Text;
+          return closure_1_11(Text, obj, dayLabel);
+        };
+        cResult[3] = fn;
+        tmp9 = fn;
+      } else {
+        tmp9 = cResult[3];
+      }
+      const mapped = conflictingEntries.map(tmp9);
+      cResult[1] = conflictingEntries;
+      cResult[2] = mapped;
+      tmp8 = mapped;
+    } else {
+      tmp8 = cResult[2];
+    }
+    if (cResult[4] !== tmp8) {
+      const obj3 = { messageType: native.HelpMessageTypes.WARNING, borderRadius: nativeDefault.radii.md, children: closure_12(Stack, obj4) };
+      const HelpMessage = tmp(1189).HelpMessage;
+      obj4 = { spacing: 8, children: items };
+      items = [first, ];
+      Stack = tmp(5280).Stack;
+      const obj5 = { spacing: 4, children: tmp8 };
+      items[1] = unpackModuleId(Stack_Stack.Stack, obj5);
+      const tmp15 = unpackModuleId(HelpMessage, obj3);
+      cResult[4] = tmp8;
+      cResult[5] = tmp15;
+      tmp11 = tmp15;
+    } else {
+      tmp11 = cResult[5];
+    }
+    return tmp11;
+  }
+}) : ((conflictingEntries) => {
   let Stack;
   let intl;
   let items;
@@ -51,7 +133,7 @@ function OverlappingSchedulesWarning(conflictingEntries) {
     const HelpMessage = native.HelpMessage;
     obj2 = { spacing: 8, children: items };
     Stack = Stack_Stack.Stack;
-    const obj3 = { variant: "text-sm/medium", children: intl.string(_modDef2487["26A0Df"]) };
+    const obj3 = { variant: "text-sm/medium", children: intl.string(_modDef2490["26A0Df"]) };
     let Text = Text_Text.Text;
     intl = intl11.intl;
     items = [unpackModuleId(Text, obj3), ];
@@ -70,22 +152,7 @@ function OverlappingSchedulesWarning(conflictingEntries) {
     tmp = unpackModuleId(HelpMessage, obj);
   }
   return tmp;
-}
-let _asyncToGenerator = _asyncToGenerator_mod;
-({ View: metroRequire, Pressable: metroImportDefault, ScrollView: metroImportAll } = react_native);
-const UserSettingsSections = Constants.UserSettingsSections;
-({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { container: { flex: 1 }, scrollContent: obj2, section: obj3, sectionHeader: obj4, daysContainer: obj5, dayButton: obj6, dayButtonSelected: { backgroundColor: "rgba(88, 101, 242, 0.16)", borderColor: "rgba(88, 101, 242, 1)" }, overlapWarningContent: obj7, footer: obj8 };
-obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
-createStyles = createStyles.createStyles;
-obj3 = { gap: nativeDefault.space.PX_8 };
-obj4 = { gap: nativeDefault.space.PX_4 };
-obj5 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
-obj6 = { flex: 1, aspectRatio: 1, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderWidth: 1, borderColor: "transparent" };
-obj7 = { marginTop: nativeDefault.space.PX_24 };
-obj8 = { paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
-let closure_13 = createStyles(obj);
+});
 let result = size.fileFinishedImporting("modules/parent_tools/native/ScheduleDowntimeScreen.tsx");
 
 export default function ScheduleDowntimeScreen() {
@@ -138,7 +205,7 @@ export default function ScheduleDowntimeScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -156,8 +223,8 @@ export default function ScheduleDowntimeScreen() {
               closure_2_17(true);
               c3 = 1;
               const obj6 = { label: "", start_time: obj4.toTimeProto(first1), end_time: obj5.toTimeProto(first2), days: Array.from(first3), enabled };
-              obj4 = tmp(closure_2[19]);
-              obj5 = tmp(closure_2[19]);
+              obj4 = tmp(closure_2[21]);
+              obj5 = tmp(closure_2[21]);
               const _Array = Array;
               const tmp30 = closure_2_6;
               if (tmp30) {
@@ -169,14 +236,14 @@ export default function ScheduleDowntimeScreen() {
                   c1 = 3;
                   c4 = 1;
                   const obj7 = { value: tmp24Result.updateRestrictedScheduleRule(teenId, rule.ruleId, obj6), done: false };
-                  tmp24Result = tmp(closure_2[22]);
+                  tmp24Result = tmp(closure_2[24]);
                   return obj7;
                 }
               }
               c1 = 2;
               c4 = 1;
               const obj8 = { value: tmp24Result2.addRestrictedScheduleRule(teenId, obj6), done: false };
-              tmp24Result2 = tmp(closure_2[22]);
+              tmp24Result2 = tmp(closure_2[24]);
               return obj8;
             }
           } else if (1 === c1) {
@@ -210,7 +277,7 @@ export default function ScheduleDowntimeScreen() {
             closure_128_17(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp33) {
           closure_2 = tmp33;
           if (0 === c3) {
@@ -238,11 +305,11 @@ export default function ScheduleDowntimeScreen() {
   }
   let obj3 = teenId;
   _asyncToGenerator = teenId.useMemo(() => {
-    obj = closure_0(rule[19]);
+    obj = closure_0(rule[21]);
     return obj.getShortDayLabels("narrow");
   }, []);
   const memo = teenId.useMemo(() => {
-    obj = closure_0(rule[19]);
+    obj = closure_0(rule[21]);
     return obj.getShortDayLabels("short");
   }, []);
   teenId = undefined;
@@ -262,7 +329,7 @@ export default function ScheduleDowntimeScreen() {
   const value = tmp10[0];
   let closure_8 = tmp10[1];
   let items = [stateFromStores];
-  const tmp2Result = tmp2(tmp3[20]);
+  const tmp2Result = tmp2(tmp3[22]);
   stateFromStores = tmp2Result.useStateFromStores(items, () => {
     let items;
     if (null == teenId) {
@@ -283,7 +350,7 @@ export default function ScheduleDowntimeScreen() {
     return items;
   });
   let startTime;
-  const tmp14 = stackNavigation(tmp3[21]);
+  const tmp14 = stackNavigation(tmp3[23]);
   if (rule != null) {
     startTime = rule.startTime;
   }
@@ -300,7 +367,7 @@ export default function ScheduleDowntimeScreen() {
   const first1 = tmp9Result[0];
   let closure_11 = tmp9Result[1];
   let endTime;
-  const tmp13Result = stackNavigation(tmp3[21]);
+  const tmp13Result = stackNavigation(tmp3[23]);
   if (rule != null) {
     endTime = rule.endTime;
   }
@@ -374,7 +441,7 @@ export default function ScheduleDowntimeScreen() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -398,7 +465,7 @@ export default function ScheduleDowntimeScreen() {
               if (null != ruleId) {
                 closure_17(true);
                 c4 = 1;
-                const obj2 = closure_0(rule[22]);
+                const obj2 = closure_0(rule[24]);
                 rule = 2;
                 c5 = 1;
                 const obj5 = { value: obj2.deleteRestrictedScheduleRule(teenId, rule.ruleId), done: false };
@@ -441,7 +508,7 @@ export default function ScheduleDowntimeScreen() {
           closure_129_17(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp32) {
         closure_3 = tmp32;
         if (0 === c4) {
@@ -473,16 +540,16 @@ export default function ScheduleDowntimeScreen() {
             obj = { onPress, accessibilityRole: "button", accessibilityLabel: intl.string(closure_0(rule[15]).t.oyYWHE), hitSlop: 8, disabled, children: closure_11(TrashIcon, obj2) };
             intl = closure_0(rule[15]).intl;
             obj2 = { color: stackNavigation(rule[11]).colors.ICON_FEEDBACK_CRITICAL, size: "md" };
-            TrashIcon = closure_0(rule[23]).TrashIcon;
+            TrashIcon = closure_0(rule[25]).TrashIcon;
             return closure_11(first, obj);
           }
       };
       stackNavigation.setOptions(obj);
     }
   }, items4);
-  const tmp2Result7 = tmp2(tmp3[19]);
+  const tmp2Result7 = tmp2(tmp3[21]);
   const timeToMinutesResult = tmp2Result7.timeToMinutes(first1);
-  const tmp2Result8 = tmp2(tmp3[19]);
+  const tmp2Result8 = tmp2(tmp3[21]);
   const timeToMinutesResult1 = tmp2Result8.timeToMinutes(first2);
   let obj4 = {
     startTime: tmp2Result9.formatTime(first1),
@@ -492,8 +559,8 @@ export default function ScheduleDowntimeScreen() {
       return closure_11(closure_0(rule[14]).Text, obj, arg1);
     }
   };
-  tmp2Result9 = tmp2(tmp3[19]);
-  tmp2Result10 = tmp2(tmp3[19]);
+  tmp2Result9 = tmp2(tmp3[21]);
+  tmp2Result10 = tmp2(tmp3[21]);
   if (timeToMinutesResult > timeToMinutesResult1) {
     const intl2 = tmp2(tmp3[15]).intl;
     formatResult = intl2.format(tmp13(tmp3[16]).R87Y2K, obj4);
@@ -514,7 +581,7 @@ export default function ScheduleDowntimeScreen() {
     const tmp45 = closure_8;
     if (tmp44Result) {
       let obj8 = { hasIcons: false, children: closure_11(TableSwitchRow, obj9) };
-      const TableRowGroup = tmp2(tmp3[24]).TableRowGroup;
+      const TableRowGroup = tmp2(tmp3[26]).TableRowGroup;
       obj9 = {
         label: intl4.string(tmp13(tmp3[16])["30Owsd"]),
         value,
@@ -522,7 +589,7 @@ export default function ScheduleDowntimeScreen() {
               closure_8((arg0) => !arg0);
             }
       };
-      TableSwitchRow = tmp2(tmp3[25]).TableSwitchRow;
+      TableSwitchRow = tmp2(tmp3[27]).TableSwitchRow;
       intl4 = tmp2(tmp3[15]).intl;
       tmp44Result = tmp44(TableRowGroup, obj8);
     }
@@ -533,21 +600,21 @@ export default function ScheduleDowntimeScreen() {
     intl5 = tmp2(tmp3[15]).intl;
     items6 = [closure_11(Text2, obj11), ];
     const obj12 = { hasIcons: false, children: items7 };
-    const TableRowGroup2 = tmp2(tmp3[24]).TableRowGroup;
+    const TableRowGroup2 = tmp2(tmp3[26]).TableRowGroup;
     const obj13 = {
       label: intl6.string(stackNavigation(tmp3[16]).DsXytO),
       trailing: closure_11(Text3, obj14),
       arrow: true,
       onPress: function handleStartTimePress() {
           const intl = intl11.intl;
-          const f118320 = (first1) => {
+          const f142422 = (first1) => {
             closure_1_11(first1);
-            obj = closure_2_0(rule[19]);
+            obj = closure_2_0(rule[21]);
             const result = (obj.timeToMinutes(first1) + 540) % 1440;
             const time = { hours: Math.floor(result / 60), minutes: result % 60 };
             closure_1_13(time);
           };
-          const stringResult = intl.string(_modDef2487["8bLRt0"]);
+          const stringResult = intl.string(_modDef2490["8bLRt0"]);
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           obj = {
             title: stringResult,
@@ -559,16 +626,16 @@ export default function ScheduleDowntimeScreen() {
             }
           };
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(8995, dependencyMap.paths);
+          const tmp3 = asyncRequire(8972, dependencyMap.paths);
           new Date(2025, 0, 1, first1.hours, first1.minutes, 0, 0);
           openLazy(tmp3, "ScheduleDowntimeStartTimePicker", obj);
         }
     };
-    const TableRow = tmp2(tmp3[26]).TableRow;
+    const TableRow = tmp2(tmp3[28]).TableRow;
     intl6 = tmp2(tmp3[15]).intl;
     obj14 = { variant: "text-md/normal", children: tmp2Result11.formatTime(first1) };
     Text3 = tmp2(tmp3[14]).Text;
-    tmp2Result11 = tmp2(tmp3[19]);
+    tmp2Result11 = tmp2(tmp3[21]);
     items7 = [closure_11(TableRow, obj13), ];
     const obj15 = {
       label: intl7.string(stackNavigation(tmp3[16])["5SHDP6"]),
@@ -577,7 +644,7 @@ export default function ScheduleDowntimeScreen() {
       onPress: function handleEndTimePress() {
           const intl = intl11.intl;
           closure_0 = closure_13;
-          const stringResult = intl.string(_modDef2487["+JkWJV"]);
+          const stringResult = intl.string(_modDef2490["+JkWJV"]);
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           obj = {
             title: stringResult,
@@ -589,16 +656,16 @@ export default function ScheduleDowntimeScreen() {
             }
           };
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(8995, dependencyMap.paths);
+          const tmp3 = asyncRequire(8972, dependencyMap.paths);
           new Date(2025, 0, 1, first2.hours, first2.minutes, 0, 0);
           openLazy(tmp3, "ScheduleDowntimeEndTimePicker", obj);
         }
     };
-    const TableRow2 = tmp2(tmp3[26]).TableRow;
+    const TableRow2 = tmp2(tmp3[28]).TableRow;
     intl7 = tmp2(tmp3[15]).intl;
     obj16 = { variant: "text-md/normal", children: tmp2Result12.formatTime(first2) };
     Text4 = tmp2(tmp3[14]).Text;
-    tmp2Result12 = tmp2(tmp3[19]);
+    tmp2Result12 = tmp2(tmp3[21]);
     items7[1] = closure_11(TableRow2, obj15);
     items6[1] = first2(TableRowGroup2, obj12);
     items5[2] = first2(closure_6, obj10);
@@ -653,7 +720,7 @@ export default function ScheduleDowntimeScreen() {
           return closure_11(tmp3, obj, item);
         })
     };
-    DAYS_ORDERED = tmp2(tmp3[19]).DAYS_ORDERED;
+    DAYS_ORDERED = tmp2(tmp3[21]).DAYS_ORDERED;
     items9[1] = closure_11(closure_6, obj21);
     let tmp44Result2 = memo2.conflictingEntries.length > 0;
     if (tmp44Result2) {
@@ -666,8 +733,8 @@ export default function ScheduleDowntimeScreen() {
     items5[3] = first2(closure_6, obj17);
     items10 = [closure_11(tmp45, obj24), ];
     const obj25 = { style: tmp.footer, children: items11 };
-    const SafeAreaPaddingView = tmp2(tmp3[27]).SafeAreaPaddingView;
-    const Button = tmp2(tmp3[28]).Button;
+    const SafeAreaPaddingView = tmp2(tmp3[29]).SafeAreaPaddingView;
+    const Button = tmp2(tmp3[30]).Button;
     const intl9 = tmp2(tmp3[15]).intl;
     const string = intl9.string;
     const tmp13Result2 = stackNavigation(tmp3[16]);
@@ -692,7 +759,7 @@ export default function ScheduleDowntimeScreen() {
       variant: "secondary",
       size: "lg"
     };
-    const Button2 = tmp2(tmp3[28]).Button;
+    const Button2 = tmp2(tmp3[30]).Button;
     intl10 = tmp2(tmp3[15]).intl;
     items11[1] = closure_11(Button2, obj28);
     items10[1] = closure_11(SafeAreaPaddingView, obj26);

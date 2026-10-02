@@ -1,87 +1,235 @@
-// Module ID: 5886
-// Function ID: 5887
+// Module ID: 5887
+// Function ID: 5888
 // Name: MemberVerificationModalHooks
-// Dependencies: [19, 1372, 5887, 504, 4658, 2]
-// Exports: useInitialVerification, useSetInitialVerificationEffect, useUserVerificationState
+// Dependencies: [19, 1378, 5888, 558, 576, 4660, 504, 2]
 
-// Module 5886 (MemberVerificationModalHooks)
-import get_initialized from "get initialized" /* 504 */;
-import InitialMemberVerificationStore2 from "InitialMemberVerificationStore" /* 5887 */;
+// Module 5887 (MemberVerificationModalHooks)
+import react2 from "react" /* 576 */;
+import InitialMemberVerificationStore2 from "InitialMemberVerificationStore" /* 5888 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const InitialMemberVerificationStore = InitialMemberVerificationStore2;
-let _require, currentUser;
+let _require, currentUser, dependencyMap;
 
-const f81158 = () => {
-  let obj;
-  currentUser = currentUser.getCurrentUser();
-  let flag;
-  const EMAIL = guildId(obj[4]).UserVerificationFieldPlatforms.EMAIL;
-  const tmp = guildId;
-  const tmp2 = obj;
-  if (currentUser != null) {
-    flag = currentUser.verified;
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  obj = {};
-  obj[EMAIL] = flag;
-  let flag2;
-  const PHONE = tmp(tmp2[4]).UserVerificationFieldPlatforms.PHONE;
-  if (currentUser != null) {
-    flag2 = currentUser.isPhoneVerified();
-  }
-  if (flag2 == null) {
-    flag2 = false;
-  }
-  obj[PHONE] = flag2;
-  return obj;
-};
-const f81159 = () => initialVerificationState.getInitialVerificationState(closure_0);
+let tmp;
+const get_initialized = tmp(504);
 let react = react_mod;
 const setInitialVerification = InitialMemberVerificationStore2.setInitialVerification;
-const result = size.fileFinishedImporting("modules/guild_member_verification/native/MemberVerificationModalHooks.tsx");
-
-export const useSetInitialVerificationEffect = function useSetInitialVerificationEffect(guildId) {
-  let initialVerificationState;
-  let items;
-  let items1;
-  let items2;
-  let obj2;
-  let obj3;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let current;
   let ref;
-  const current = { initial: obj2.useStateFromStores(items, f81159, items1), current: obj3.useStateFromStoresObject(items2, f81158) };
-  _require = guildId;
-  items = [InitialMemberVerificationStore];
-  items1 = [guildId];
-  items2 = [UserStore];
-  obj2 = require("get initialized");
-  obj3 = require("get initialized");
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(8);
+  const tmp2 = closure_7(arg0);
+  const tmp3 = closure_6();
+  if (cResult[0] === tmp2) {
+    let tmp4;
+    let tmp5;
+    let tmp8;
+    let tmp7;
+    if (cResult[1] === tmp3) {
+      tmp4 = cResult[2];
+    }
+    dependencyMap = tmp4;
+    react = react.useRef(tmp4);
+    if (cResult[3] !== tmp4) {
+      class S {
+        constructor() {
+          closure_2.current = closure_1;
+          return;
+        }
+      }
+      cResult[3] = tmp4;
+      cResult[4] = S;
+      tmp5 = S;
+    } else {
+      class S {
+        constructor() {
+          closure_2.current = closure_1;
+          return;
+        }
+      }
+    }
+    const effect = obj3.useEffect(tmp5);
+    if (cResult[5] !== arg0) {
+      class V {
+        constructor() {
+          if (null == closure_2.current.initial) {
+            tmp2 = setInitialVerification;
+            tmp3 = closure_0;
+            tmp4 = setInitialVerification(closure_0, tmp);
+          }
+          return;
+        }
+      }
+      const items = [arg0];
+      cResult[5] = arg0;
+      cResult[6] = V;
+      cResult[7] = items;
+      tmp8 = items;
+      tmp7 = V;
+    } else {
+      class V {
+        constructor() {
+          if (null == closure_2.current.initial) {
+            tmp2 = setInitialVerification;
+            tmp3 = closure_0;
+            tmp4 = setInitialVerification(closure_0, tmp);
+          }
+          return;
+        }
+      }
+      tmp8 = cResult[7];
+    }
+    const effect1 = obj3.useEffect(tmp7, tmp8);
+    return tmp4.initial;
+  }
+  const obj2 = { initial: tmp2, current: tmp3 };
+  cResult[0] = tmp2;
+  cResult[1] = tmp3;
+  cResult[2] = obj2;
+  tmp4 = obj2;
+}) : ((arg0) => {
+  let ref;
+  let closure_0 = arg0;
+  const current = { initial: closure_7(arg0), current: closure_6() };
   react = react.useRef(current);
   const effect = react.useEffect(() => {
     ref.current = current;
   });
-  const items3 = [guildId];
+  const items = [arg0];
   const effect1 = react.useEffect(() => {
     if (null == ref.current.initial) {
-      setInitialVerification(guildId, tmp);
+      setInitialVerification(closure_0, tmp);
     }
-  }, items3);
+  }, items);
   return current.initial;
-};
-export const useUserVerificationState = function useUserVerificationState() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  let tmp = require;
+  let tmp2 = dependencyMap;
+  let obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function o() {
+      currentUser = currentUser.getCurrentUser();
+      let flag;
+      const EMAIL = require("MemberVerificationTypes").UserVerificationFieldPlatforms.EMAIL;
+      const tmp = _require;
+      const tmp2 = dependencyMap;
+      if (currentUser != null) {
+        flag = currentUser.verified;
+      }
+      if (flag == null) {
+        flag = false;
+      }
+      const obj = {};
+      obj[EMAIL] = flag;
+      let flag2;
+      const PHONE = tmp(tmp2[5]).UserVerificationFieldPlatforms.PHONE;
+      if (currentUser != null) {
+        flag2 = currentUser.isPhoneVerified();
+      }
+      if (flag2 == null) {
+        flag2 = false;
+      }
+      obj[PHONE] = flag2;
+      return obj;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStoresObject(tmp4, tmp5);
+}) : (() => {
+  let obj = get_initialized;
   const items = [UserStore];
-  const obj = get_initialized;
-  return obj.useStateFromStoresObject(items, f81158);
-};
-export const useInitialVerification = function useInitialVerification(id) {
-  _require = id;
+  return obj.useStateFromStoresObject(items, () => {
+    currentUser = currentUser.getCurrentUser();
+    let flag;
+    const EMAIL = require("MemberVerificationTypes").UserVerificationFieldPlatforms.EMAIL;
+    const tmp = _require;
+    const tmp2 = dependencyMap;
+    if (currentUser != null) {
+      flag = currentUser.verified;
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    const obj = {};
+    obj[EMAIL] = flag;
+    let flag2;
+    const PHONE = tmp(tmp2[5]).UserVerificationFieldPlatforms.PHONE;
+    if (currentUser != null) {
+      flag2 = currentUser.isPhoneVerified();
+    }
+    if (flag2 == null) {
+      flag2 = false;
+    }
+    obj[PHONE] = flag2;
+    return obj;
+  });
+});
+let closure_6 = tmp3;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [InitialMemberVerificationStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function c() {
+      return InitialMemberVerificationStore.getInitialVerificationState(closure_0);
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6, tmp7);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
   const items = [InitialMemberVerificationStore];
-  const items1 = [id];
+  const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f81159, items1);
-};
+  return obj.useStateFromStores(items, () => InitialMemberVerificationStore.getInitialVerificationState(closure_0), items1);
+});
+let closure_7 = tmp4;
+const result = size.fileFinishedImporting("modules/guild_member_verification/native/MemberVerificationModalHooks.tsx");
+
+export const useSetInitialVerificationEffect = tmp2;
+export const useUserVerificationState = tmp3;
+export const useInitialVerification = tmp4;

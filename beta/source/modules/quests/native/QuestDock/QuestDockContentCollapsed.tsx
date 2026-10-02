@@ -1,17 +1,21 @@
-// Module ID: 14715
-// Function ID: 14716
+// Module ID: 14702
+// Function ID: 14703
 // Name: QuestDockContentCollapsed
-// Dependencies: [19, 17, 5756, 14624, 21, 4836, 14625, 4566, 5280, 6494, 2]
+// Dependencies: [19, 17, 5757, 14612, 21, 4837, 558, 576, 14613, 4570, 5281, 6495, 2]
 
-// Module 14715 (QuestDockContentCollapsed)
+// Module 14702 (QuestDockContentCollapsed)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import spring from "spring" /* 5280 */;
-import QuestConstants from "QuestConstants" /* 5756 */;
-import QuestDockConstants from "QuestDockConstants" /* 14624 */;
+import spring from "spring" /* 5281 */;
+import QuestConstants from "QuestConstants" /* 5757 */;
+import QuestDockConstants from "QuestDockConstants" /* 14612 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+let _require;
 
 let obj2;
 const StyleSheet = react_native.StyleSheet;
@@ -25,8 +29,84 @@ createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_7 = createStyles(obj);
 const __initData = { code: "function QuestDockContentCollapsedTsx1(){const{withSpring,activeQuestDockMode,QuestDockMode,hideOnExpand,QUEST_DOCK_MODE_CHANGE_PHYSICS}=this.__closure;return{opacity:withSpring(activeQuestDockMode.get()===QuestDockMode.COLLAPSED||!hideOnExpand?1:0,QUEST_DOCK_MODE_CHANGE_PHYSICS)};}" };
-const __initData2 = { code: "function QuestDockContentCollapsedTsx2(){const{activeQuestDockMode,QuestDockMode,hideOnExpand}=this.__closure;return{pointerEvents:activeQuestDockMode.get()===QuestDockMode.COLLAPSED||!hideOnExpand?'auto':'none'};}" };
-const memoResult = react.memo(function QuestDockContentCollapsed(hideOnExpand) {
+const __initData2 = { code: "function QuestDockContentCollapsedTsx2(){const{activeQuestDockMode,QuestDockMode,hideOnExpand}=this.__closure;return{pointerEvents:activeQuestDockMode.get()===QuestDockMode.COLLAPSED||!hideOnExpand?\"auto\":\"none\"};}" };
+const __initData3 = { code: "function QuestDockContentCollapsedTsx3(){const{withSpring,activeQuestDockMode,QuestDockMode,hideOnExpand,QUEST_DOCK_MODE_CHANGE_PHYSICS}=this.__closure;return{opacity:withSpring(activeQuestDockMode.get()===QuestDockMode.COLLAPSED||!hideOnExpand?1:0,QUEST_DOCK_MODE_CHANGE_PHYSICS)};}" };
+const __initData4 = { code: "function QuestDockContentCollapsedTsx4(){const{activeQuestDockMode,QuestDockMode,hideOnExpand}=this.__closure;return{pointerEvents:activeQuestDockMode.get()===QuestDockMode.COLLAPSED||!hideOnExpand?'auto':'none'};}" };
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let closure_0;
+  let hideOnExpand;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(7);
+  ({ children, hideOnExpand } = arg0);
+  _require = tmp4;
+  const tmp5 = closure_7();
+  const activeQuestDockMode = react.useContext(tmp(14613).QuestDockGestureContext).activeQuestDockMode;
+  const tmpResult = tmp(4570);
+  class C {
+    constructor() {
+      const withSpring = spring.withSpring;
+      let num = 1;
+      spring;
+      if (activeQuestDockMode.get() !== QuestDockMode.COLLAPSED) {
+        num = 1;
+        if (closure_0) {
+          num = 0;
+        }
+      }
+      const obj = { opacity: withSpring(num, QUEST_DOCK_MODE_CHANGE_PHYSICS) };
+      return obj;
+    }
+  }
+  C.__closure = { withSpring: tmp(5281).withSpring, activeQuestDockMode, QuestDockMode, hideOnExpand: undefined === hideOnExpand || hideOnExpand, QUEST_DOCK_MODE_CHANGE_PHYSICS };
+  C.__workletHash = 13361221764426;
+  C.__initData = __initData;
+  ({ withSpring: tmp(5281).withSpring, activeQuestDockMode, QuestDockMode, hideOnExpand: undefined === hideOnExpand || hideOnExpand, QUEST_DOCK_MODE_CHANGE_PHYSICS });
+  const animatedStyle = tmpResult.useAnimatedStyle(C);
+  const fn = function l() {
+    let pointerEvents = "auto";
+    if (activeQuestDockMode.get() !== QuestDockMode.COLLAPSED) {
+      pointerEvents = "auto";
+      if (closure_0) {
+        pointerEvents = "none";
+      }
+    }
+    return { pointerEvents };
+  };
+  fn.__closure = { activeQuestDockMode, QuestDockMode, hideOnExpand: undefined === hideOnExpand || hideOnExpand };
+  fn.__workletHash = 10575811857405;
+  fn.__initData = __initData2;
+  const tmpResult2 = tmp(4570);
+  const animatedProps = tmpResult2.useAnimatedProps(fn);
+  if (cResult[0] === tmp5.questDockContentCollapsed) {
+    let tmp8;
+    if (cResult[1] === animatedStyle) {
+      tmp8 = cResult[2];
+    }
+    if (cResult[3] === children) {
+      if (cResult[4] === tmp8) {
+        let tmp9;
+        if (cResult[5] === animatedProps) {
+          tmp9 = cResult[6];
+        }
+        return tmp9;
+      }
+    }
+    const tmp12 = jsx(activeQuestDockMode(6495), { style: tmp8, animatedProps, children });
+    let num = 3;
+    cResult[3] = children;
+    cResult[4] = tmp8;
+    cResult[5] = animatedProps;
+    cResult[6] = tmp12;
+    tmp9 = tmp12;
+  }
+  const items = [tmp5.questDockContentCollapsed, animatedStyle];
+  cResult[0] = tmp5.questDockContentCollapsed;
+  cResult[1] = animatedStyle;
+  cResult[2] = items;
+  tmp8 = items;
+}) : ((hideOnExpand) => {
   hideOnExpand = hideOnExpand.hideOnExpand;
   let tmp = undefined === hideOnExpand;
   const children = hideOnExpand.children;
@@ -35,46 +115,46 @@ const memoResult = react.memo(function QuestDockContentCollapsed(hideOnExpand) {
   }
   hideOnExpand = tmp;
   const tmp2 = closure_7();
-  const activeQuestDockMode = react.useContext(hideOnExpand(14625).QuestDockGestureContext).activeQuestDockMode;
-  let obj = hideOnExpand(4566);
-  const fn = function l() {
-    const withSpring = spring.withSpring;
-    let num = 1;
-    spring;
-    if (activeQuestDockMode.get() !== QuestDockMode.COLLAPSED) {
-      num = 1;
-      if (hideOnExpand) {
-        num = 0;
-      }
-    }
-    const obj = { opacity: withSpring(num, QUEST_DOCK_MODE_CHANGE_PHYSICS) };
-    return obj;
-  };
-  fn.__closure = { withSpring: hideOnExpand(5280).withSpring, activeQuestDockMode, QuestDockMode, hideOnExpand: tmp, QUEST_DOCK_MODE_CHANGE_PHYSICS };
-  fn.__workletHash = 13361221764426;
-  fn.__initData = __initData;
-  ({ withSpring: hideOnExpand(5280).withSpring, activeQuestDockMode, QuestDockMode, hideOnExpand: tmp, QUEST_DOCK_MODE_CHANGE_PHYSICS });
-  const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = hideOnExpand(4566);
-  class C {
+  const activeQuestDockMode = react.useContext(hideOnExpand(14613).QuestDockGestureContext).activeQuestDockMode;
+  let obj = hideOnExpand(4570);
+  class D {
     constructor() {
-      let pointerEvents = "auto";
+      const withSpring = spring.withSpring;
+      let num = 1;
+      spring;
       if (activeQuestDockMode.get() !== QuestDockMode.COLLAPSED) {
-        pointerEvents = "auto";
+        num = 1;
         if (hideOnExpand) {
-          pointerEvents = "none";
+          num = 0;
         }
       }
-      return { pointerEvents };
+      const obj = { opacity: withSpring(num, QUEST_DOCK_MODE_CHANGE_PHYSICS) };
+      return obj;
     }
   }
-  C.__closure = { activeQuestDockMode, QuestDockMode, hideOnExpand: tmp };
-  C.__workletHash = 14339269503421;
-  C.__initData = __initData2;
-  const animatedProps = obj3.useAnimatedProps(C);
+  D.__closure = { withSpring: hideOnExpand(5281).withSpring, activeQuestDockMode, QuestDockMode, hideOnExpand: tmp, QUEST_DOCK_MODE_CHANGE_PHYSICS };
+  D.__workletHash = 3717871904776;
+  D.__initData = __initData3;
+  ({ withSpring: hideOnExpand(5281).withSpring, activeQuestDockMode, QuestDockMode, hideOnExpand: tmp, QUEST_DOCK_MODE_CHANGE_PHYSICS });
+  const animatedStyle = obj.useAnimatedStyle(D);
+  const fn = function _() {
+    let pointerEvents = "auto";
+    if (activeQuestDockMode.get() !== QuestDockMode.COLLAPSED) {
+      pointerEvents = "auto";
+      if (hideOnExpand) {
+        pointerEvents = "none";
+      }
+    }
+    return { pointerEvents };
+  };
+  fn.__closure = { activeQuestDockMode, QuestDockMode, hideOnExpand: tmp };
+  fn.__workletHash = 6904949409659;
+  fn.__initData = __initData4;
+  const obj3 = hideOnExpand(4570);
+  const animatedProps = obj3.useAnimatedProps(fn);
   const items = [tmp2.questDockContentCollapsed, animatedStyle];
-  return jsx(activeQuestDockMode(6494), { style: items, animatedProps, children });
-});
+  return jsx(activeQuestDockMode(6495), { style: items, animatedProps, children });
+}));
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockContentCollapsed.tsx");
 
 export default memoResult;

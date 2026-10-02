@@ -1,16 +1,17 @@
-// Module ID: 1437
-// Function ID: 1438
+// Module ID: 1443
+// Function ID: 1444
 // Name: discord_common/apex/ApexExperiment
-// Dependencies: [32, 19, 4, 504, 2]
+// Dependencies: [32, 19, 4, 558, 576, 504, 2]
 // Exports: default
 
-// Module 1437 (discord_common/apex/ApexExperiment)
+// Module 1443 (discord_common/apex/ApexExperiment)
 import logger_Logger from "logger/Logger" /* 4 */;
 import react from "react" /* 19 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-let closure_3;
+const require = globalThis.__r;
+let _require, closure_1, closure_3, dependencyMap;
 
 const useEffect = react.useEffect;
 const logger = new logger_Logger.Logger("ApexExperiment");
@@ -39,77 +40,214 @@ export default function createApexExperimentCommon(definition, registerExperimen
       }
     }
   }
-  let closure_1 = arg2;
+  _require = registerExperiment;
+  dependencyMap = arg2;
   let closure_2 = arg3;
   ({ name: logger, kind: closure_5, variations: closure_6, defaultConfig: closure_7 } = definition);
   registerExperiment.registerExperiment(definition);
   let closure_8 = null;
-  let obj = {
+  let obj = require("ReactCompilerGating");
+  let closure_9 = obj.isReactCompilerEnabled();
+  let obj2 = {
     definition,
-    useConfig(location) {
-      let _location;
-      let revision;
-      registerExperiment = location;
-      const tmp = closure_2(revision, location);
-      closure_1 = tmp;
-      let tmp2 = closure_2("user", location);
-      closure_2 = tmp2;
-      const items = [registerExperiment];
-      const items1 = [tmp, tmp2];
-      const obj = registerExperiment(closure_1[3]);
-      const tmp3 = closure_2(obj.useStateFromStoresArray(items, () => _location.getEvaluationAndAssignment(closure_5, closure_1, logger, closure_2), items1), 2);
-      let first = tmp3[0];
-      let variantId;
-      if (tmp3[1] != null) {
-        variantId = tmp5.variantId;
-      }
-      let trackedVariantId;
-      if (tmp3[1] != null) {
-        trackedVariantId = tmp5.trackedVariantId;
-      }
-      if (trackedVariantId == null) {
-        trackedVariantId = variantId;
-      }
-      revision = undefined;
-      if (tmp3[1] != null) {
-        revision = tmp5.revision;
-      }
-      let isOverride;
-      if (tmp3[1] != null) {
-        isOverride = tmp5.isOverride;
-      }
-      let prop;
-      if (tmp3[1] != null) {
-        prop = tmp5.exposureTrackingEnabled;
-      }
-      let useAsEligibility;
-      if (tmp3[1] != null) {
-        useAsEligibility = tmp5.useAsEligibility;
-      }
-      let tmp12 = null;
-      if (null != tmp3[1]) {
-        if (tmp3[1] !== first) {
-          first = tmp5;
-          useAsEligibility = computeVariantConfig(tmp5);
+    useConfig(cResult) {
+      let prop1;
+      let revision1;
+      let tmp20;
+      let tmp8;
+      const tmp = closure_9;
+      if (tmp) {
+        let first;
+        registerExperiment = cResult;
+        const obj2 = registerExperiment(closure_1[4]);
+        cResult = obj2.c(18);
+        const tmp30 = closure_2(revision1, cResult);
+        closure_1 = tmp30;
+        const tmp31 = closure_2("user", cResult);
+        closure_2 = tmp31;
+        const _Symbol = Symbol;
+        if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+          const items = [registerExperiment];
+          cResult[0] = items;
+          first = items;
+        } else {
+          first = cResult[0];
         }
-        tmp12 = useAsEligibility;
-      }
-      let closure_9 = tmp14;
-      const items2 = [tmp, first, trackedVariantId, revision, location.location, isOverride, prop, useAsEligibility, tmp14];
-      tmp8(() => {
-        const tmp2 = null == first || null == trackedVariantId || null == revision || false !== isOverride || true !== prop || true === useAsEligibility || closure_9;
-        if (!tmp2) {
-          const result = _location.trackExperimentExposure(tmp, logger, _location.location, closure_5, revision, trackedVariantId, closure_1);
+        if (cResult[1] === tmp30) {
+          let tmp35;
+          let tmp36;
+          let variantId;
+          let tmp49;
+          if (cResult[2] === tmp31) {
+            tmp35 = cResult[3];
+            tmp36 = cResult[4];
+          }
+          const obj3 = registerExperiment(closure_1[5]);
+          const tmp40 = closure_2(obj3.useStateFromStoresArray(first, tmp35, tmp36), 2);
+          const first1 = tmp40[0];
+          if (tmp40[1] != null) {
+            variantId = tmp42.variantId;
+          }
+          let trackedVariantId;
+          if (tmp40[1] != null) {
+            trackedVariantId = tmp42.trackedVariantId;
+          }
+          if (trackedVariantId == null) {
+            trackedVariantId = variantId;
+          }
+          let revision;
+          if (tmp40[1] != null) {
+            revision = tmp42.revision;
+          }
+          let isOverride;
+          if (tmp40[1] != null) {
+            isOverride = tmp42.isOverride;
+          }
+          let prop;
+          if (tmp40[1] != null) {
+            prop = tmp42.exposureTrackingEnabled;
+          }
+          let useAsEligibility;
+          if (tmp40[1] != null) {
+            useAsEligibility = tmp42.useAsEligibility;
+          }
+          if (cResult[5] !== tmp40[1]) {
+            let tmp50 = null;
+            if (null != tmp40[1]) {
+              if (tmp40[1] !== tmp8) {
+                tmp8 = tmp42;
+                closure_8 = computeVariantConfig(tmp42);
+              }
+              tmp50 = closure_8;
+            }
+            cResult[5] = tmp40[1];
+            cResult[6] = tmp50;
+            tmp49 = tmp50;
+          } else {
+            tmp49 = cResult[6];
+          }
+          closure_9 = tmp52;
+          if (cResult[7] === first1) {
+            if (cResult[8] === prop) {
+              if (cResult[9] === isOverride) {
+                if (cResult[10] === cResult.location) {
+                  if (cResult[11] === null == tmp49) {
+                    if (cResult[12] === revision) {
+                      if (cResult[13] === trackedVariantId) {
+                        if (cResult[14] === tmp30) {
+                          let tmp53;
+                          let tmp54;
+                          if (cResult[15] === useAsEligibility) {
+                            tmp53 = cResult[16];
+                            tmp54 = cResult[17];
+                          }
+                          tmp8(tmp53, tmp54);
+                          if (null != variantId) {
+                            tmp20 = tmp49;
+                          }
+                          tmp49 = prop1;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          const fn2 = function j() {
+            const tmp2 = null == first1 || null == trackedVariantId || null == revision || false !== isOverride || true !== prop || true === useAsEligibility || closure_9;
+            if (!tmp2) {
+              const result = registerExperiment.trackExperimentExposure(tmp, trackedVariantId1, registerExperiment.location, revision1, revision, trackedVariantId, closure_1);
+            }
+          };
+          const items1 = [tmp30, first1, trackedVariantId, revision, cResult.location, isOverride, prop, useAsEligibility, null == tmp49];
+          cResult[7] = first1;
+          cResult[8] = prop;
+          cResult[9] = isOverride;
+          cResult[10] = cResult.location;
+          cResult[11] = null == tmp49;
+          cResult[12] = revision;
+          cResult[13] = trackedVariantId;
+          cResult[14] = tmp30;
+          cResult[15] = useAsEligibility;
+          cResult[16] = fn2;
+          cResult[17] = items1;
+          tmp54 = items1;
+          tmp53 = fn2;
         }
-      }, items2);
-      if (null != variantId) {
-        return tmp12;
+        const fn = function s() {
+          return registerExperiment.getEvaluationAndAssignment(revision1, closure_1, trackedVariantId1, closure_2);
+        };
+        const items2 = [tmp30, tmp31];
+        cResult[1] = tmp30;
+        cResult[2] = tmp31;
+        cResult[3] = fn;
+        cResult[4] = items2;
+        tmp36 = items2;
+        tmp35 = fn;
+      } else {
+        registerExperiment = cResult;
+        let tmp2 = closure_2;
+        const tmp4 = closure_2(revision1, cResult);
+        closure_1 = tmp4;
+        const tmp5 = closure_2("user", cResult);
+        closure_2 = tmp5;
+        const items3 = [registerExperiment];
+        const items4 = [tmp4, tmp5];
+        const obj = registerExperiment(closure_1[5]);
+        const tmp10 = closure_2(obj.useStateFromStoresArray(items3, () => cResult.getEvaluationAndAssignment(closure_5, closure_1, logger, closure_2), items4), 2);
+        const first2 = tmp10[0];
+        tmp8 = first2;
+        let variantId1;
+        if (tmp10[1] != null) {
+          variantId1 = tmp12.variantId;
+        }
+        let trackedVariantId1;
+        if (tmp10[1] != null) {
+          trackedVariantId1 = tmp12.trackedVariantId;
+        }
+        if (trackedVariantId1 == null) {
+          trackedVariantId1 = variantId1;
+        }
+        revision1 = undefined;
+        if (tmp10[1] != null) {
+          revision1 = tmp12.revision;
+        }
+        let isOverride1;
+        if (tmp10[1] != null) {
+          isOverride1 = tmp12.isOverride;
+        }
+        prop1 = undefined;
+        if (tmp10[1] != null) {
+          prop1 = tmp12.exposureTrackingEnabled;
+        }
+        let useAsEligibility1;
+        if (tmp10[1] != null) {
+          useAsEligibility1 = tmp12.useAsEligibility;
+        }
+        closure_8 = useAsEligibility1;
+        tmp20 = null;
+        if (null != tmp10[1]) {
+          if (tmp10[1] !== tmp8) {
+            tmp8 = tmp12;
+            closure_8 = computeVariantConfig(tmp12);
+          }
+          tmp20 = closure_8;
+        }
+        closure_9 = tmp22;
+        const items5 = [tmp4, first2, trackedVariantId1, revision1, cResult.location, isOverride1, prop1, useAsEligibility1, null == tmp20];
+        tmp8(() => {
+          const tmp2 = null == closure_3 || null == trackedVariantId1 || null == revision1 || false !== isOverride1 || true !== prop1 || true === closure_8 || closure_9;
+          if (!tmp2) {
+            const result = cResult.trackExperimentExposure(tmp, logger, cResult.location, closure_5, revision1, trackedVariantId1, closure_1);
+          }
+        }, items5);
+        tmp20 = prop1;
       }
-      tmp12 = prop;
+      return tmp20;
     },
-    getConfig(location) {
+    getConfig(location, autoTrackExposure) {
       let exposureTrackingEnabled;
-      let isOverride;
       let tmp7;
       let tmp8;
       let useAsEligibility;
@@ -139,6 +277,7 @@ export default function createApexExperimentCommon(definition, registerExperimen
       if (tmp8 != null) {
         revision = tmp8.revision;
       }
+      let isOverride;
       if (tmp8 != null) {
         isOverride = tmp8.isOverride;
       }
@@ -148,23 +287,27 @@ export default function createApexExperimentCommon(definition, registerExperimen
       if (tmp8 != null) {
         useAsEligibility = tmp8.useAsEligibility;
       }
-      let tmp12 = null;
+      let tmp13 = null;
       if (null != tmp8) {
         if (tmp8 !== closure_3) {
           closure_3 = tmp8;
           closure_8 = computeVariantConfig(tmp8);
         }
-        tmp12 = closure_8;
+        tmp13 = closure_8;
       }
-      const tmp14 = null != tmp7 && null != trackedVariantId && null != revision && false === isOverride && true === exposureTrackingEnabled && true !== useAsEligibility && null != tmp12;
-      if (tmp14) {
+      autoTrackExposure = undefined;
+      if (autoTrackExposure != null) {
+        autoTrackExposure = autoTrackExposure.autoTrackExposure;
+      }
+      const tmp16 = false !== autoTrackExposure && null != tmp7 && null != trackedVariantId && null != revision && false === isOverride && true === exposureTrackingEnabled && true !== useAsEligibility && null != tmp13;
+      if (tmp16) {
         const result = obj2.trackExperimentExposure(tmp7, tmp5, location.location, tmp2, revision, trackedVariantId, tmp3);
       }
       if (null != variantId) {
-        return tmp12;
+        return tmp13;
       }
-      tmp12 = closure_7;
+      tmp13 = closure_7;
     }
   };
-  return obj;
+  return obj2;
 };

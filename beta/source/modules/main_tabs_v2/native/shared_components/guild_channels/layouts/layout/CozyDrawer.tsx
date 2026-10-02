@@ -1,15 +1,15 @@
-// Module ID: 9581
-// Function ID: 9582
+// Module ID: 11443
+// Function ID: 11444
 // Name: CozyDrawer
-// Dependencies: [9582, 9583, 576, 1177, 5896, 6593, 2]
+// Dependencies: [11444, 11445, 588, 1189, 5893, 6594, 2]
 
-// Module 9581 (CozyDrawer)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import GuildIcon from "GuildIcon" /* 5896 */;
-import GameIcon from "GameIcon" /* 6593 */;
-import Compact from "Compact" /* 9583 */;
-import deepmerge_mod from "deepmerge" /* 9582 */;
+// Module 11443 (CozyDrawer)
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import GuildIcon from "GuildIcon" /* 5893 */;
+import GameIcon from "GameIcon" /* 6594 */;
+import Compact from "Compact" /* 11445 */;
+import deepmerge_mod from "deepmerge" /* 11444 */;
 import size from "module_2" /* 2 */;
 
 let items;

@@ -1,30 +1,54 @@
-// Module ID: 14804
-// Function ID: 14805
+// Module ID: 14792
+// Function ID: 14793
 // Name: AutomaticGainControlSetting
-// Dependencies: [1993, 7417, 504, 1115, 11006, 9449, 2]
+// Dependencies: [1999, 7421, 558, 576, 504, 1127, 10874, 9445, 2]
 
-// Module 14804 (AutomaticGainControlSetting)
-import get_initialized from "get initialized" /* 504 */;
-import intl2 from "intl" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 9449 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 14792 (AutomaticGainControlSetting)
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 9445 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let automaticGainControl;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MediaEngineStore];
+    const fn = function o() {
+      return automaticGainControl.getAutomaticGainControl();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let automaticGainControl;
+  const items = [MediaEngineStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => automaticGainControl.getAutomaticGainControl());
+});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.cUMdH0);
   },
   parent: MobileUserSettings.VOICE,
-  useValue: function useAutomaticGainControlSettingValue() {
-    let automaticGainControl;
-    const items = [MediaEngineStore];
-    const obj = get_initialized;
-    return obj.useStateFromStores(items, () => automaticGainControl.getAutomaticGainControl());
-  },
+  useValue: tmp2,
   onValueChange: UserSettingsVoiceUtils.handleAutomaticGainControlChange,
   useDescription: function useAutomaticGainControlSettingDescription() {
     const intl = intl2.intl;

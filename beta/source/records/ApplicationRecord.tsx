@@ -1,18 +1,18 @@
-// Module ID: 2003
-// Function ID: 2004
+// Module ID: 2009
+// Function ID: 2010
 // Name: ApplicationRecord
-// Dependencies: [1387, 2004, 1386, 2005, 1349, 1086, 2007, 1397, 2009, 11, 2]
+// Dependencies: [1393, 2010, 1392, 2011, 1361, 1098, 2013, 1403, 2015, 11, 2]
 
-// Module 2003 (ApplicationRecord)
+// Module 2009 (ApplicationRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import ApplicationConstants from "ApplicationConstants" /* 1349 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 2009 */;
-import Record from "Record" /* 1387 */;
-import CompanyRecord from "CompanyRecord" /* 2004 */;
-import UserRecord from "UserRecord" /* 1386 */;
-import Constants from "Constants" /* 2005 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import ApplicationConstants from "ApplicationConstants" /* 1361 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 2015 */;
+import Record from "Record" /* 1393 */;
+import CompanyRecord from "CompanyRecord" /* 2010 */;
+import UserRecord from "UserRecord" /* 1392 */;
+import Constants from "Constants" /* 2011 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

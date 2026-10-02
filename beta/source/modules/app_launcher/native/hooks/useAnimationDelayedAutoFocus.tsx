@@ -1,23 +1,59 @@
-// Module ID: 11651
-// Function ID: 11652
+// Module ID: 11536
+// Function ID: 11537
 // Name: useAnimationDelayedAutoFocus
-// Dependencies: [19, 11644, 2]
-// Exports: useAnimationDelayedAutoFocus
+// Dependencies: [19, 558, 576, 11537, 2]
 
-// Module 11651 (useAnimationDelayedAutoFocus)
-import useAwaitAnimationComplete from "useAwaitAnimationComplete" /* 11644 */;
+// Module 11536 (useAnimationDelayedAutoFocus)
+import react2 from "react" /* 576 */;
+import useAwaitAnimationComplete from "useAwaitAnimationComplete" /* 11537 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/app_launcher/native/hooks/useAnimationDelayedAutoFocus.tsx");
-
-export const useAnimationDelayedAutoFocus = function useAnimationDelayedAutoFocus(autoFocus, onPress) {
-  let closure_0 = autoFocus;
-  let closure_1 = onPress;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  const obj = react2;
+  const cResult = obj.c(5);
+  const obj2 = useAwaitAnimationComplete;
+  const awaitAnimationCompletion = obj2.useAwaitAnimationCompletion();
+  let closure_3 = react.useRef(false);
+  const obj3 = react;
+  if (cResult[0] === awaitAnimationCompletion) {
+    if (cResult[1] === arg0) {
+      let tmp3;
+      let tmp4;
+      if (cResult[2] === arg1) {
+        tmp3 = cResult[3];
+        tmp4 = cResult[4];
+      }
+      const effect = obj3.useEffect(tmp3, tmp4);
+    }
+  }
+  const fn = function o() {
+    const tmp = closure_0 && !ref.current;
+    if (tmp) {
+      awaitAnimationCompletion(() => {
+        closure_1_1();
+      });
+    }
+    ref.current = true;
+  };
+  const items = [arg0, arg1, awaitAnimationCompletion];
+  cResult[0] = awaitAnimationCompletion;
+  cResult[1] = arg0;
+  cResult[2] = arg1;
+  cResult[3] = fn;
+  cResult[4] = items;
+  tmp4 = items;
+  tmp3 = fn;
+}) : ((arg0, arg1) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   const obj = useAwaitAnimationComplete;
   const awaitAnimationCompletion = obj.useAwaitAnimationCompletion();
   let closure_3 = react.useRef(false);
-  const items = [autoFocus, onPress, awaitAnimationCompletion];
+  const items = [arg0, arg1, awaitAnimationCompletion];
   const effect = react.useEffect(() => {
     const tmp = closure_0 && !ref.current;
     if (tmp) {
@@ -27,4 +63,7 @@ export const useAnimationDelayedAutoFocus = function useAnimationDelayedAutoFocu
     }
     ref.current = true;
   }, items);
-};
+});
+const result = size.fileFinishedImporting("modules/app_launcher/native/hooks/useAnimationDelayedAutoFocus.tsx");
+
+export const useAnimationDelayedAutoFocus = tmp2;

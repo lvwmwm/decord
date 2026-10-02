@@ -1,61 +1,777 @@
-// Module ID: 13460
-// Function ID: 13461
+// Module ID: 13462
+// Function ID: 13463
 // Name: badges/GuildBadge
-// Dependencies: [19, 7386, 21, 13461, 13464, 13465, 13466, 13467, 13468, 13469, 13470, 13471, 13472, 13473, 13474, 13475, 13476, 13477, 13478, 13479, 13480, 13481, 13482, 13483, 13484, 13485, 13486, 13487, 13488, 13489, 13490, 13491, 13492, 13493, 13494, 13495, 13496, 13497, 13498, 13499, 13500, 13501, 13502, 13503, 2]
-// Exports: GuildBadge
+// Dependencies: [109, 19, 7390, 21, 558, 576, 13463, 13466, 13467, 13468, 13469, 13470, 13471, 13472, 13473, 13474, 13475, 13476, 13477, 13478, 13479, 13480, 13481, 13482, 13483, 13484, 13485, 13486, 13487, 13488, 13489, 13490, 13491, 13492, 13493, 13494, 13495, 13496, 13497, 13498, 13499, 13500, 13501, 13502, 13503, 13504, 13505, 2]
 
-// Module 13460 (badges/GuildBadge)
+// Module 13462 (badges/GuildBadge)
 import Fragment from "Fragment" /* 21 */;
-import GuildTagConstants from "GuildTagConstants" /* 7386 */;
-import GuildBadgeSword2 from "GuildBadgeSword" /* 13461 */;
-import GuildBadgeWaterDrop2 from "GuildBadgeWaterDrop" /* 13464 */;
-import GuildBadgeSkull2 from "GuildBadgeSkull" /* 13465 */;
-import GuildBadgeToadstool2 from "GuildBadgeToadstool" /* 13466 */;
-import GuildBadgeMoon2 from "GuildBadgeMoon" /* 13467 */;
-import GuildBadgeLightning2 from "GuildBadgeLightning" /* 13468 */;
-import GuildBadgeLeaf2 from "GuildBadgeLeaf" /* 13469 */;
-import GuildBadgeHeart2 from "GuildBadgeHeart" /* 13470 */;
-import GuildBadgeFire2 from "GuildBadgeFire" /* 13471 */;
-import GuildBadgeCompass2 from "GuildBadgeCompass" /* 13472 */;
-import GuildBadgeCrosshairs2 from "GuildBadgeCrosshairs" /* 13473 */;
-import GuildBadgeFlower2 from "GuildBadgeFlower" /* 13474 */;
-import GuildBadgeForce2 from "GuildBadgeForce" /* 13475 */;
-import GuildBadgeGem2 from "GuildBadgeGem" /* 13476 */;
-import GuildBadgeLava2 from "GuildBadgeLava" /* 13477 */;
-import GuildBadgePsychic2 from "GuildBadgePsychic" /* 13478 */;
-import GuildBadgeSmoke2 from "GuildBadgeSmoke" /* 13479 */;
-import GuildBadgeSnow2 from "GuildBadgeSnow" /* 13480 */;
-import GuildBadgeSound2 from "GuildBadgeSound" /* 13481 */;
-import GuildBadgeSun2 from "GuildBadgeSun" /* 13482 */;
-import GuildBadgeWind2 from "GuildBadgeWind" /* 13483 */;
-import GuildBadgeBunny2 from "GuildBadgeBunny" /* 13484 */;
-import GuildBadgeDog2 from "GuildBadgeDog" /* 13485 */;
-import GuildBadgeFrog2 from "GuildBadgeFrog" /* 13486 */;
-import GuildBadgeGoat2 from "GuildBadgeGoat" /* 13487 */;
-import GuildBadgeCat2 from "GuildBadgeCat" /* 13488 */;
-import GuildBadgeDiamond2 from "GuildBadgeDiamond" /* 13489 */;
-import GuildBadgeCrown2 from "GuildBadgeCrown" /* 13490 */;
-import GuildBadgeTrophy2 from "GuildBadgeTrophy" /* 13491 */;
-import GuildBadgeMoneyBag2 from "GuildBadgeMoneyBag" /* 13492 */;
-import GuildBadgeDollarSign2 from "GuildBadgeDollarSign" /* 13493 */;
-import GuildBadgeClover2 from "GuildBadgeClover" /* 13494 */;
-import GuildBadgeBlossom2 from "GuildBadgeBlossom" /* 13495 */;
-import GuildBadgePottedPlant2 from "GuildBadgePottedPlant" /* 13496 */;
-import GuildBadgeMaple2 from "GuildBadgeMaple" /* 13497 */;
-import GuildBadgeWiltedFlower2 from "GuildBadgeWiltedFlower" /* 13498 */;
-import GuildBadgeButterfly2 from "GuildBadgeButterfly" /* 13499 */;
-import GuildBadgeSnail2 from "GuildBadgeSnail" /* 13500 */;
-import GuildBadgeCaterpillar2 from "GuildBadgeCaterpillar" /* 13501 */;
-import GuildBadgeSpider2 from "GuildBadgeSpider" /* 13502 */;
-import GuildBadgeBee2 from "GuildBadgeBee" /* 13503 */;
+import react2 from "react" /* 576 */;
+import GuildTagConstants from "GuildTagConstants" /* 7390 */;
+import GuildBadgeSword2 from "GuildBadgeSword" /* 13463 */;
+import GuildBadgeWaterDrop2 from "GuildBadgeWaterDrop" /* 13466 */;
+import GuildBadgeSkull2 from "GuildBadgeSkull" /* 13467 */;
+import GuildBadgeToadstool2 from "GuildBadgeToadstool" /* 13468 */;
+import GuildBadgeMoon2 from "GuildBadgeMoon" /* 13469 */;
+import GuildBadgeLightning2 from "GuildBadgeLightning" /* 13470 */;
+import GuildBadgeLeaf2 from "GuildBadgeLeaf" /* 13471 */;
+import GuildBadgeHeart2 from "GuildBadgeHeart" /* 13472 */;
+import GuildBadgeFire2 from "GuildBadgeFire" /* 13473 */;
+import GuildBadgeCompass2 from "GuildBadgeCompass" /* 13474 */;
+import GuildBadgeCrosshairs2 from "GuildBadgeCrosshairs" /* 13475 */;
+import GuildBadgeFlower2 from "GuildBadgeFlower" /* 13476 */;
+import GuildBadgeForce2 from "GuildBadgeForce" /* 13477 */;
+import GuildBadgeGem2 from "GuildBadgeGem" /* 13478 */;
+import GuildBadgeLava2 from "GuildBadgeLava" /* 13479 */;
+import GuildBadgePsychic2 from "GuildBadgePsychic" /* 13480 */;
+import GuildBadgeSmoke2 from "GuildBadgeSmoke" /* 13481 */;
+import GuildBadgeSnow2 from "GuildBadgeSnow" /* 13482 */;
+import GuildBadgeSound2 from "GuildBadgeSound" /* 13483 */;
+import GuildBadgeSun2 from "GuildBadgeSun" /* 13484 */;
+import GuildBadgeWind2 from "GuildBadgeWind" /* 13485 */;
+import GuildBadgeBunny2 from "GuildBadgeBunny" /* 13486 */;
+import GuildBadgeDog2 from "GuildBadgeDog" /* 13487 */;
+import GuildBadgeFrog2 from "GuildBadgeFrog" /* 13488 */;
+import GuildBadgeGoat2 from "GuildBadgeGoat" /* 13489 */;
+import GuildBadgeCat2 from "GuildBadgeCat" /* 13490 */;
+import GuildBadgeDiamond2 from "GuildBadgeDiamond" /* 13491 */;
+import GuildBadgeCrown2 from "GuildBadgeCrown" /* 13492 */;
+import GuildBadgeTrophy2 from "GuildBadgeTrophy" /* 13493 */;
+import GuildBadgeMoneyBag2 from "GuildBadgeMoneyBag" /* 13494 */;
+import GuildBadgeDollarSign2 from "GuildBadgeDollarSign" /* 13495 */;
+import GuildBadgeClover2 from "GuildBadgeClover" /* 13496 */;
+import GuildBadgeBlossom2 from "GuildBadgeBlossom" /* 13497 */;
+import GuildBadgePottedPlant2 from "GuildBadgePottedPlant" /* 13498 */;
+import GuildBadgeMaple2 from "GuildBadgeMaple" /* 13499 */;
+import GuildBadgeWiltedFlower2 from "GuildBadgeWiltedFlower" /* 13500 */;
+import GuildBadgeButterfly2 from "GuildBadgeButterfly" /* 13501 */;
+import GuildBadgeSnail2 from "GuildBadgeSnail" /* 13502 */;
+import GuildBadgeCaterpillar2 from "GuildBadgeCaterpillar" /* 13503 */;
+import GuildBadgeSpider2 from "GuildBadgeSpider" /* 13504 */;
+import GuildBadgeBee2 from "GuildBadgeBee" /* 13505 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let closure_2 = ["badge", "primaryTintColor", "secondaryTintColor"];
 const GuildTagBadgeKind = GuildTagConstants.GuildTagBadgeKind;
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/guild_tag/native/badges/GuildBadge.tsx");
-
-export const GuildBadge = function GuildBadge(arg0) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let badge;
+  let primaryTintColor;
+  let secondaryTintColor;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(151);
+  if (cResult[0] !== arg0) {
+    ({ badge, primaryTintColor, secondaryTintColor } = arg0);
+    const tmp10 = _objectWithoutProperties(arg0, closure_2);
+    cResult[0] = arg0;
+    cResult[1] = badge;
+    cResult[2] = primaryTintColor;
+    cResult[3] = tmp10;
+    cResult[4] = secondaryTintColor;
+    tmp7 = secondaryTintColor;
+    tmp6 = tmp10;
+    tmp5 = primaryTintColor;
+    tmp4 = badge;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    tmp6 = cResult[3];
+    tmp7 = cResult[4];
+  }
+  if (GuildTagBadgeKind.SWORD === tmp4) {
+    if (cResult[5] === tmp5) {
+      if (cResult[6] === tmp6) {
+        let tmp253;
+        if (cResult[7] === tmp7) {
+          tmp253 = cResult[8];
+        }
+        return tmp253;
+      }
+    }
+    const GuildBadgeSword = tmp(13463).GuildBadgeSword;
+    const merged = Object.assign(tmp6);
+    const tmp258 = <GuildBadgeSword primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[5] = tmp5;
+    cResult[6] = tmp6;
+    cResult[7] = tmp7;
+    cResult[8] = tmp258;
+    tmp253 = tmp258;
+  } else if (GuildTagBadgeKind.WATER_DROP === tmp4) {
+    if (cResult[9] === tmp5) {
+      let tmp247;
+      if (cResult[10] === tmp6) {
+        tmp247 = cResult[11];
+      }
+      return tmp247;
+    }
+    const GuildBadgeWaterDrop = tmp(13466).GuildBadgeWaterDrop;
+    const merged1 = Object.assign(tmp6);
+    const tmp252 = <GuildBadgeWaterDrop primaryTintColor={tmp5} />;
+    cResult[9] = tmp5;
+    cResult[10] = tmp6;
+    cResult[11] = tmp252;
+    tmp247 = tmp252;
+  } else if (GuildTagBadgeKind.SKULL === tmp4) {
+    if (cResult[12] === tmp5) {
+      let tmp241;
+      if (cResult[13] === tmp6) {
+        tmp241 = cResult[14];
+      }
+      return tmp241;
+    }
+    const GuildBadgeSkull = tmp(13467).GuildBadgeSkull;
+    const merged2 = Object.assign(tmp6);
+    const tmp246 = <GuildBadgeSkull primaryTintColor={tmp5} />;
+    cResult[12] = tmp5;
+    cResult[13] = tmp6;
+    cResult[14] = tmp246;
+    tmp241 = tmp246;
+  } else if (GuildTagBadgeKind.TOADSTOOL === tmp4) {
+    if (cResult[15] === tmp5) {
+      if (cResult[16] === tmp6) {
+        let tmp235;
+        if (cResult[17] === tmp7) {
+          tmp235 = cResult[18];
+        }
+        return tmp235;
+      }
+    }
+    const GuildBadgeToadstool = tmp(13468).GuildBadgeToadstool;
+    const merged3 = Object.assign(tmp6);
+    const tmp240 = <GuildBadgeToadstool primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[15] = tmp5;
+    cResult[16] = tmp6;
+    cResult[17] = tmp7;
+    cResult[18] = tmp240;
+    tmp235 = tmp240;
+  } else if (GuildTagBadgeKind.MOON === tmp4) {
+    if (cResult[19] === tmp5) {
+      let tmp229;
+      if (cResult[20] === tmp6) {
+        tmp229 = cResult[21];
+      }
+      return tmp229;
+    }
+    const GuildBadgeMoon = tmp(13469).GuildBadgeMoon;
+    const merged4 = Object.assign(tmp6);
+    const tmp234 = <GuildBadgeMoon primaryTintColor={tmp5} />;
+    cResult[19] = tmp5;
+    cResult[20] = tmp6;
+    cResult[21] = tmp234;
+    tmp229 = tmp234;
+  } else if (GuildTagBadgeKind.LIGHTNING === tmp4) {
+    if (cResult[22] === tmp5) {
+      let tmp223;
+      if (cResult[23] === tmp6) {
+        tmp223 = cResult[24];
+      }
+      return tmp223;
+    }
+    const GuildBadgeLightning = tmp(13470).GuildBadgeLightning;
+    const merged5 = Object.assign(tmp6);
+    const tmp228 = <GuildBadgeLightning primaryTintColor={tmp5} />;
+    cResult[22] = tmp5;
+    cResult[23] = tmp6;
+    cResult[24] = tmp228;
+    tmp223 = tmp228;
+  } else if (GuildTagBadgeKind.LEAF === tmp4) {
+    if (cResult[25] === tmp5) {
+      let tmp217;
+      if (cResult[26] === tmp6) {
+        tmp217 = cResult[27];
+      }
+      return tmp217;
+    }
+    const GuildBadgeLeaf = tmp(13471).GuildBadgeLeaf;
+    const merged6 = Object.assign(tmp6);
+    const tmp222 = <GuildBadgeLeaf primaryTintColor={tmp5} />;
+    cResult[25] = tmp5;
+    cResult[26] = tmp6;
+    cResult[27] = tmp222;
+    tmp217 = tmp222;
+  } else if (GuildTagBadgeKind.HEART === tmp4) {
+    if (cResult[28] === tmp5) {
+      let tmp211;
+      if (cResult[29] === tmp6) {
+        tmp211 = cResult[30];
+      }
+      return tmp211;
+    }
+    const GuildBadgeHeart = tmp(13472).GuildBadgeHeart;
+    const merged7 = Object.assign(tmp6);
+    const tmp216 = <GuildBadgeHeart primaryTintColor={tmp5} />;
+    cResult[28] = tmp5;
+    cResult[29] = tmp6;
+    cResult[30] = tmp216;
+    tmp211 = tmp216;
+  } else if (GuildTagBadgeKind.FIRE === tmp4) {
+    if (cResult[31] === tmp5) {
+      let tmp205;
+      if (cResult[32] === tmp6) {
+        tmp205 = cResult[33];
+      }
+      return tmp205;
+    }
+    const GuildBadgeFire = tmp(13473).GuildBadgeFire;
+    const merged8 = Object.assign(tmp6);
+    const tmp210 = <GuildBadgeFire primaryTintColor={tmp5} />;
+    cResult[31] = tmp5;
+    cResult[32] = tmp6;
+    cResult[33] = tmp210;
+    tmp205 = tmp210;
+  } else if (GuildTagBadgeKind.COMPASS === tmp4) {
+    if (cResult[34] === tmp5) {
+      if (cResult[35] === tmp6) {
+        let tmp199;
+        if (cResult[36] === tmp7) {
+          tmp199 = cResult[37];
+        }
+        return tmp199;
+      }
+    }
+    const GuildBadgeCompass = tmp(13474).GuildBadgeCompass;
+    const merged9 = Object.assign(tmp6);
+    const tmp204 = <GuildBadgeCompass primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[34] = tmp5;
+    cResult[35] = tmp6;
+    cResult[36] = tmp7;
+    cResult[37] = tmp204;
+    tmp199 = tmp204;
+  } else if (GuildTagBadgeKind.CROSSHAIRS === tmp4) {
+    if (cResult[38] === tmp5) {
+      if (cResult[39] === tmp6) {
+        let tmp193;
+        if (cResult[40] === tmp7) {
+          tmp193 = cResult[41];
+        }
+        return tmp193;
+      }
+    }
+    const GuildBadgeCrosshairs = tmp(13475).GuildBadgeCrosshairs;
+    const merged10 = Object.assign(tmp6);
+    const tmp198 = <GuildBadgeCrosshairs primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[38] = tmp5;
+    cResult[39] = tmp6;
+    cResult[40] = tmp7;
+    cResult[41] = tmp198;
+    tmp193 = tmp198;
+  } else if (GuildTagBadgeKind.FLOWER === tmp4) {
+    if (cResult[42] === tmp5) {
+      if (cResult[43] === tmp6) {
+        let tmp187;
+        if (cResult[44] === tmp7) {
+          tmp187 = cResult[45];
+        }
+        return tmp187;
+      }
+    }
+    const GuildBadgeFlower = tmp(13476).GuildBadgeFlower;
+    const merged11 = Object.assign(tmp6);
+    const tmp192 = <GuildBadgeFlower primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[42] = tmp5;
+    cResult[43] = tmp6;
+    cResult[44] = tmp7;
+    cResult[45] = tmp192;
+    tmp187 = tmp192;
+  } else if (GuildTagBadgeKind.FORCE === tmp4) {
+    if (cResult[46] === tmp5) {
+      if (cResult[47] === tmp6) {
+        let tmp181;
+        if (cResult[48] === tmp7) {
+          tmp181 = cResult[49];
+        }
+        return tmp181;
+      }
+    }
+    const GuildBadgeForce = tmp(13477).GuildBadgeForce;
+    const merged12 = Object.assign(tmp6);
+    const tmp186 = <GuildBadgeForce primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[46] = tmp5;
+    cResult[47] = tmp6;
+    cResult[48] = tmp7;
+    cResult[49] = tmp186;
+    tmp181 = tmp186;
+  } else if (GuildTagBadgeKind.GEM === tmp4) {
+    if (cResult[50] === tmp5) {
+      if (cResult[51] === tmp6) {
+        let tmp175;
+        if (cResult[52] === tmp7) {
+          tmp175 = cResult[53];
+        }
+        return tmp175;
+      }
+    }
+    const GuildBadgeGem = tmp(13478).GuildBadgeGem;
+    const merged13 = Object.assign(tmp6);
+    const tmp180 = <GuildBadgeGem primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[50] = tmp5;
+    cResult[51] = tmp6;
+    cResult[52] = tmp7;
+    cResult[53] = tmp180;
+    tmp175 = tmp180;
+  } else if (GuildTagBadgeKind.LAVA === tmp4) {
+    if (cResult[54] === tmp5) {
+      if (cResult[55] === tmp6) {
+        let tmp169;
+        if (cResult[56] === tmp7) {
+          tmp169 = cResult[57];
+        }
+        return tmp169;
+      }
+    }
+    const GuildBadgeLava = tmp(13479).GuildBadgeLava;
+    const merged14 = Object.assign(tmp6);
+    const tmp174 = <GuildBadgeLava primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[54] = tmp5;
+    cResult[55] = tmp6;
+    cResult[56] = tmp7;
+    cResult[57] = tmp174;
+    tmp169 = tmp174;
+  } else if (GuildTagBadgeKind.PSYCHIC === tmp4) {
+    if (cResult[58] === tmp5) {
+      if (cResult[59] === tmp6) {
+        let tmp163;
+        if (cResult[60] === tmp7) {
+          tmp163 = cResult[61];
+        }
+        return tmp163;
+      }
+    }
+    const GuildBadgePsychic = tmp(13480).GuildBadgePsychic;
+    const merged15 = Object.assign(tmp6);
+    const tmp168 = <GuildBadgePsychic primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[58] = tmp5;
+    cResult[59] = tmp6;
+    cResult[60] = tmp7;
+    cResult[61] = tmp168;
+    tmp163 = tmp168;
+  } else if (GuildTagBadgeKind.SMOKE === tmp4) {
+    if (cResult[62] === tmp5) {
+      if (cResult[63] === tmp6) {
+        let tmp157;
+        if (cResult[64] === tmp7) {
+          tmp157 = cResult[65];
+        }
+        return tmp157;
+      }
+    }
+    const GuildBadgeSmoke = tmp(13481).GuildBadgeSmoke;
+    const merged16 = Object.assign(tmp6);
+    const tmp162 = <GuildBadgeSmoke primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[62] = tmp5;
+    cResult[63] = tmp6;
+    cResult[64] = tmp7;
+    cResult[65] = tmp162;
+    tmp157 = tmp162;
+  } else if (GuildTagBadgeKind.SNOW === tmp4) {
+    if (cResult[66] === tmp5) {
+      if (cResult[67] === tmp6) {
+        let tmp151;
+        if (cResult[68] === tmp7) {
+          tmp151 = cResult[69];
+        }
+        return tmp151;
+      }
+    }
+    const GuildBadgeSnow = tmp(13482).GuildBadgeSnow;
+    const merged17 = Object.assign(tmp6);
+    const tmp156 = <GuildBadgeSnow primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[66] = tmp5;
+    cResult[67] = tmp6;
+    cResult[68] = tmp7;
+    cResult[69] = tmp156;
+    tmp151 = tmp156;
+  } else if (GuildTagBadgeKind.SOUND === tmp4) {
+    if (cResult[70] === tmp5) {
+      if (cResult[71] === tmp6) {
+        let tmp145;
+        if (cResult[72] === tmp7) {
+          tmp145 = cResult[73];
+        }
+        return tmp145;
+      }
+    }
+    const GuildBadgeSound = tmp(13483).GuildBadgeSound;
+    const merged18 = Object.assign(tmp6);
+    const tmp150 = <GuildBadgeSound primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[70] = tmp5;
+    cResult[71] = tmp6;
+    cResult[72] = tmp7;
+    cResult[73] = tmp150;
+    tmp145 = tmp150;
+  } else if (GuildTagBadgeKind.SUN === tmp4) {
+    if (cResult[74] === tmp5) {
+      if (cResult[75] === tmp6) {
+        let tmp139;
+        if (cResult[76] === tmp7) {
+          tmp139 = cResult[77];
+        }
+        return tmp139;
+      }
+    }
+    const GuildBadgeSun = tmp(13484).GuildBadgeSun;
+    const merged19 = Object.assign(tmp6);
+    const tmp144 = <GuildBadgeSun primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[74] = tmp5;
+    cResult[75] = tmp6;
+    cResult[76] = tmp7;
+    cResult[77] = tmp144;
+    tmp139 = tmp144;
+  } else if (GuildTagBadgeKind.WIND === tmp4) {
+    if (cResult[78] === tmp5) {
+      if (cResult[79] === tmp6) {
+        let tmp133;
+        if (cResult[80] === tmp7) {
+          tmp133 = cResult[81];
+        }
+        return tmp133;
+      }
+    }
+    const GuildBadgeWind = tmp(13485).GuildBadgeWind;
+    const merged20 = Object.assign(tmp6);
+    const tmp138 = <GuildBadgeWind primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[78] = tmp5;
+    cResult[79] = tmp6;
+    cResult[80] = tmp7;
+    cResult[81] = tmp138;
+    tmp133 = tmp138;
+  } else if (GuildTagBadgeKind.BUNNY === tmp4) {
+    if (cResult[82] === tmp5) {
+      let tmp127;
+      if (cResult[83] === tmp6) {
+        tmp127 = cResult[84];
+      }
+      return tmp127;
+    }
+    const GuildBadgeBunny = tmp(13486).GuildBadgeBunny;
+    const merged21 = Object.assign(tmp6);
+    const tmp132 = <GuildBadgeBunny primaryTintColor={tmp5} />;
+    cResult[82] = tmp5;
+    cResult[83] = tmp6;
+    cResult[84] = tmp132;
+    tmp127 = tmp132;
+  } else if (GuildTagBadgeKind.DOG === tmp4) {
+    if (cResult[85] === tmp5) {
+      if (cResult[86] === tmp6) {
+        let tmp121;
+        if (cResult[87] === tmp7) {
+          tmp121 = cResult[88];
+        }
+        return tmp121;
+      }
+    }
+    const GuildBadgeDog = tmp(13487).GuildBadgeDog;
+    const merged22 = Object.assign(tmp6);
+    const tmp126 = <GuildBadgeDog primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[85] = tmp5;
+    cResult[86] = tmp6;
+    cResult[87] = tmp7;
+    cResult[88] = tmp126;
+    tmp121 = tmp126;
+  } else if (GuildTagBadgeKind.FROG === tmp4) {
+    if (cResult[89] === tmp5) {
+      if (cResult[90] === tmp6) {
+        let tmp115;
+        if (cResult[91] === tmp7) {
+          tmp115 = cResult[92];
+        }
+        return tmp115;
+      }
+    }
+    const GuildBadgeFrog = tmp(13488).GuildBadgeFrog;
+    const merged23 = Object.assign(tmp6);
+    const tmp120 = <GuildBadgeFrog primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[89] = tmp5;
+    cResult[90] = tmp6;
+    cResult[91] = tmp7;
+    cResult[92] = tmp120;
+    tmp115 = tmp120;
+  } else if (GuildTagBadgeKind.GOAT === tmp4) {
+    if (cResult[93] === tmp5) {
+      let tmp109;
+      if (cResult[94] === tmp6) {
+        tmp109 = cResult[95];
+      }
+      return tmp109;
+    }
+    const GuildBadgeGoat = tmp(13489).GuildBadgeGoat;
+    const merged24 = Object.assign(tmp6);
+    const tmp114 = <GuildBadgeGoat primaryTintColor={tmp5} />;
+    cResult[93] = tmp5;
+    cResult[94] = tmp6;
+    cResult[95] = tmp114;
+    tmp109 = tmp114;
+  } else if (GuildTagBadgeKind.CAT === tmp4) {
+    if (cResult[96] === tmp5) {
+      let tmp103;
+      if (cResult[97] === tmp6) {
+        tmp103 = cResult[98];
+      }
+      return tmp103;
+    }
+    const GuildBadgeCat = tmp(13490).GuildBadgeCat;
+    const merged25 = Object.assign(tmp6);
+    const tmp108 = <GuildBadgeCat primaryTintColor={tmp5} />;
+    cResult[96] = tmp5;
+    cResult[97] = tmp6;
+    cResult[98] = tmp108;
+    tmp103 = tmp108;
+  } else if (GuildTagBadgeKind.DIAMOND === tmp4) {
+    if (cResult[99] === tmp5) {
+      let tmp97;
+      if (cResult[100] === tmp6) {
+        tmp97 = cResult[101];
+      }
+      return tmp97;
+    }
+    const GuildBadgeDiamond = tmp(13491).GuildBadgeDiamond;
+    const merged26 = Object.assign(tmp6);
+    const tmp102 = <GuildBadgeDiamond primaryTintColor={tmp5} />;
+    cResult[99] = tmp5;
+    cResult[100] = tmp6;
+    cResult[101] = tmp102;
+    tmp97 = tmp102;
+  } else if (GuildTagBadgeKind.CROWN === tmp4) {
+    if (cResult[102] === tmp5) {
+      if (cResult[103] === tmp6) {
+        let tmp91;
+        if (cResult[104] === tmp7) {
+          tmp91 = cResult[105];
+        }
+        return tmp91;
+      }
+    }
+    const GuildBadgeCrown = tmp(13492).GuildBadgeCrown;
+    const merged27 = Object.assign(tmp6);
+    const tmp96 = <GuildBadgeCrown primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[102] = tmp5;
+    cResult[103] = tmp6;
+    cResult[104] = tmp7;
+    cResult[105] = tmp96;
+    tmp91 = tmp96;
+  } else if (GuildTagBadgeKind.TROPHY === tmp4) {
+    if (cResult[106] === tmp5) {
+      let tmp85;
+      if (cResult[107] === tmp6) {
+        tmp85 = cResult[108];
+      }
+      return tmp85;
+    }
+    const GuildBadgeTrophy = tmp(13493).GuildBadgeTrophy;
+    const merged28 = Object.assign(tmp6);
+    const tmp90 = <GuildBadgeTrophy primaryTintColor={tmp5} />;
+    cResult[106] = tmp5;
+    cResult[107] = tmp6;
+    cResult[108] = tmp90;
+    tmp85 = tmp90;
+  } else if (GuildTagBadgeKind.MONEY_BAG === tmp4) {
+    if (cResult[109] === tmp5) {
+      let tmp79;
+      if (cResult[110] === tmp6) {
+        tmp79 = cResult[111];
+      }
+      return tmp79;
+    }
+    const GuildBadgeMoneyBag = tmp(13494).GuildBadgeMoneyBag;
+    const merged29 = Object.assign(tmp6);
+    const tmp84 = <GuildBadgeMoneyBag primaryTintColor={tmp5} />;
+    cResult[109] = tmp5;
+    cResult[110] = tmp6;
+    cResult[111] = tmp84;
+    tmp79 = tmp84;
+  } else if (GuildTagBadgeKind.DOLLAR_SIGN === tmp4) {
+    if (cResult[112] === tmp5) {
+      let tmp73;
+      if (cResult[113] === tmp6) {
+        tmp73 = cResult[114];
+      }
+      return tmp73;
+    }
+    const GuildBadgeDollarSign = tmp(13495).GuildBadgeDollarSign;
+    const merged30 = Object.assign(tmp6);
+    const tmp78 = <GuildBadgeDollarSign primaryTintColor={tmp5} />;
+    cResult[112] = tmp5;
+    cResult[113] = tmp6;
+    cResult[114] = tmp78;
+    tmp73 = tmp78;
+  } else if (GuildTagBadgeKind.CLOVER === tmp4) {
+    if (cResult[115] === tmp5) {
+      let tmp67;
+      if (cResult[116] === tmp6) {
+        tmp67 = cResult[117];
+      }
+      return tmp67;
+    }
+    const GuildBadgeClover = tmp(13496).GuildBadgeClover;
+    const merged31 = Object.assign(tmp6);
+    const tmp72 = <GuildBadgeClover primaryTintColor={tmp5} />;
+    cResult[115] = tmp5;
+    cResult[116] = tmp6;
+    cResult[117] = tmp72;
+    tmp67 = tmp72;
+  } else if (GuildTagBadgeKind.BLOSSOM === tmp4) {
+    if (cResult[118] === tmp5) {
+      let tmp61;
+      if (cResult[119] === tmp6) {
+        tmp61 = cResult[120];
+      }
+      return tmp61;
+    }
+    const GuildBadgeBlossom = tmp(13497).GuildBadgeBlossom;
+    const merged32 = Object.assign(tmp6);
+    const tmp66 = <GuildBadgeBlossom primaryTintColor={tmp5} />;
+    cResult[118] = tmp5;
+    cResult[119] = tmp6;
+    cResult[120] = tmp66;
+    tmp61 = tmp66;
+  } else if (GuildTagBadgeKind.POTTED_PLANT === tmp4) {
+    if (cResult[121] === tmp5) {
+      if (cResult[122] === tmp6) {
+        let tmp55;
+        if (cResult[123] === tmp7) {
+          tmp55 = cResult[124];
+        }
+        return tmp55;
+      }
+    }
+    const GuildBadgePottedPlant = tmp(13498).GuildBadgePottedPlant;
+    const merged33 = Object.assign(tmp6);
+    const tmp60 = <GuildBadgePottedPlant primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[121] = tmp5;
+    cResult[122] = tmp6;
+    cResult[123] = tmp7;
+    cResult[124] = tmp60;
+    tmp55 = tmp60;
+  } else if (GuildTagBadgeKind.MAPLE === tmp4) {
+    if (cResult[125] === tmp5) {
+      let tmp49;
+      if (cResult[126] === tmp6) {
+        tmp49 = cResult[127];
+      }
+      return tmp49;
+    }
+    const GuildBadgeMaple = tmp(13499).GuildBadgeMaple;
+    const merged34 = Object.assign(tmp6);
+    const tmp54 = <GuildBadgeMaple primaryTintColor={tmp5} />;
+    cResult[125] = tmp5;
+    cResult[126] = tmp6;
+    cResult[127] = tmp54;
+    tmp49 = tmp54;
+  } else if (GuildTagBadgeKind.WILTED_FLOWER === tmp4) {
+    if (cResult[128] === tmp5) {
+      if (cResult[129] === tmp6) {
+        let tmp43;
+        if (cResult[130] === tmp7) {
+          tmp43 = cResult[131];
+        }
+        return tmp43;
+      }
+    }
+    const GuildBadgeWiltedFlower = tmp(13500).GuildBadgeWiltedFlower;
+    const merged35 = Object.assign(tmp6);
+    const tmp48 = <GuildBadgeWiltedFlower primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[128] = tmp5;
+    cResult[129] = tmp6;
+    cResult[130] = tmp7;
+    cResult[131] = tmp48;
+    tmp43 = tmp48;
+  } else if (GuildTagBadgeKind.BUTTERFLY === tmp4) {
+    if (cResult[132] === tmp5) {
+      if (cResult[133] === tmp6) {
+        let tmp37;
+        if (cResult[134] === tmp7) {
+          tmp37 = cResult[135];
+        }
+        return tmp37;
+      }
+    }
+    const GuildBadgeButterfly = tmp(13501).GuildBadgeButterfly;
+    const merged36 = Object.assign(tmp6);
+    const tmp42 = <GuildBadgeButterfly primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[132] = tmp5;
+    cResult[133] = tmp6;
+    cResult[134] = tmp7;
+    cResult[135] = tmp42;
+    tmp37 = tmp42;
+  } else if (GuildTagBadgeKind.SNAIL === tmp4) {
+    if (cResult[136] === tmp5) {
+      if (cResult[137] === tmp6) {
+        let tmp31;
+        if (cResult[138] === tmp7) {
+          tmp31 = cResult[139];
+        }
+        return tmp31;
+      }
+    }
+    const GuildBadgeSnail = tmp(13502).GuildBadgeSnail;
+    const merged37 = Object.assign(tmp6);
+    const tmp36 = <GuildBadgeSnail primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[136] = tmp5;
+    cResult[137] = tmp6;
+    cResult[138] = tmp7;
+    cResult[139] = tmp36;
+    tmp31 = tmp36;
+  } else if (GuildTagBadgeKind.CATERPILLAR === tmp4) {
+    if (cResult[140] === tmp5) {
+      if (cResult[141] === tmp6) {
+        let tmp25;
+        if (cResult[142] === tmp7) {
+          tmp25 = cResult[143];
+        }
+        return tmp25;
+      }
+    }
+    const GuildBadgeCaterpillar = tmp(13503).GuildBadgeCaterpillar;
+    const merged38 = Object.assign(tmp6);
+    const tmp30 = <GuildBadgeCaterpillar primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[140] = tmp5;
+    cResult[141] = tmp6;
+    cResult[142] = tmp7;
+    cResult[143] = tmp30;
+    tmp25 = tmp30;
+  } else if (GuildTagBadgeKind.SPIDER === tmp4) {
+    if (cResult[144] === tmp5) {
+      if (cResult[145] === tmp6) {
+        let tmp19;
+        if (cResult[146] === tmp7) {
+          tmp19 = cResult[147];
+        }
+        return tmp19;
+      }
+    }
+    const GuildBadgeSpider = tmp(13504).GuildBadgeSpider;
+    const merged39 = Object.assign(tmp6);
+    const tmp24 = <GuildBadgeSpider primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
+    cResult[144] = tmp5;
+    cResult[145] = tmp6;
+    cResult[146] = tmp7;
+    cResult[147] = tmp24;
+    tmp19 = tmp24;
+  } else if (GuildTagBadgeKind.BEE === tmp4) {
+    if (cResult[148] === tmp5) {
+      let tmp13;
+      if (cResult[149] === tmp6) {
+        tmp13 = cResult[150];
+      }
+      return tmp13;
+    }
+    const GuildBadgeBee = tmp(13505).GuildBadgeBee;
+    const merged40 = Object.assign(tmp6);
+    const tmp18 = <GuildBadgeBee primaryTintColor={tmp5} />;
+    cResult[148] = tmp5;
+    cResult[149] = tmp6;
+    cResult[150] = tmp18;
+    tmp13 = tmp18;
+  } else {
+    return null;
+  }
+}) : ((arg0) => {
   let badge;
   let primaryTintColor;
   let secondaryTintColor;
@@ -228,4 +944,7 @@ export const GuildBadge = function GuildBadge(arg0) {
   } else {
     return null;
   }
-};
+});
+const result = size.fileFinishedImporting("modules/guild_tag/native/badges/GuildBadge.tsx");
+
+export const GuildBadge = tmp3;

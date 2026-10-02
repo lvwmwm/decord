@@ -1,20 +1,20 @@
-// Module ID: 12960
-// Function ID: 12961
+// Module ID: 12962
+// Function ID: 12963
 // Name: PromotionsActionCreators
-// Dependencies: [5, 2112, 1372, 10128, 1374, 1074, 573, 12961, 1271, 6820, 2026, 1217, 12962, 2]
+// Dependencies: [5, 2115, 1378, 10167, 1380, 1086, 585, 12963, 1283, 6821, 2032, 1229, 12964, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 12960 (PromotionsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import wrappers from "wrappers" /* 1217 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import MarketingComponentPlatform from "MarketingComponentPlatform" /* 12961 */;
+// Module 12962 (PromotionsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import wrappers from "wrappers" /* 1229 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import MarketingComponentPlatform from "MarketingComponentPlatform" /* 12963 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import UserStore from "UserStore" /* 1372 */;
-import PromotionsStore from "PromotionsStore" /* 10128 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import UserStore from "UserStore" /* 1378 */;
+import PromotionsStore from "PromotionsStore" /* 10167 */;
 import size from "module_2" /* 2 */;
 
 let c3, c5, c6;
@@ -38,7 +38,7 @@ let obj = function _fetchActivePromotions() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -125,7 +125,7 @@ let obj = function _fetchActivePromotions() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           let closure_3 = tmp25;
@@ -146,12 +146,12 @@ function dismissOutboundPromotionNotice() {
   obj.dispatch({ type: "OUTBOUND_PROMOTION_NOTICE_DISMISS" });
   const lastDismissedOutboundPromotionStartDate = PromotionsStore.lastDismissedOutboundPromotionStartDate;
   if (null != lastDismissedOutboundPromotionStartDate) {
-    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(2026).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(2032).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("userContent", async (arg0) => {
       const StringValue = wrappers.StringValue;
       obj = { value: lastDismissedOutboundPromotionStartDate };
       arg0.lastDismissedOutboundPromotionStartDate = StringValue.create(obj);
-    }, lastDismissedOutboundPromotionStartDate(2026).UserSettingsDelay.INFREQUENT_USER_ACTION);
+    }, lastDismissedOutboundPromotionStartDate(2032).UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
 function fetchClaimedOutboundPromotionCodes() {
@@ -172,7 +172,7 @@ obj = function _fetchClaimedOutboundPromotionCodes() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;
@@ -223,7 +223,7 @@ obj = function _fetchClaimedOutboundPromotionCodes() {
             c2 = 0;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp17) {
         if (0 === c2) {

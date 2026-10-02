@@ -1,18 +1,18 @@
-// Module ID: 8516
-// Function ID: 8517
+// Module ID: 8513
+// Function ID: 8514
 // Name: Authorize
-// Dependencies: [2045, 4655, 1074, 8517, 7787, 5768, 4474, 1086, 2]
+// Dependencies: [2051, 4657, 1086, 8514, 7791, 5769, 4477, 1098, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 8516 (Authorize)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
-import _mod5768 from "module_5768" /* 5768 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7787 */;
-import scopes from "scopes" /* 8517 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
-import Constants from "Constants" /* 1074 */;
+// Module 8513 (Authorize)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4477 */;
+import _mod5769 from "module_5769" /* 5769 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 7791 */;
+import scopes from "scopes" /* 8514 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -26,7 +26,7 @@ export const filterScopes = function filterScopes(items) {
     const RemovedScopes = scopes.RemovedScopes;
     return !RemovedScopes.includes(item);
   });
-  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(7787).OAuth2Scopes.APPLICATIONS_COMMANDS);
+  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(7791).OAuth2Scopes.APPLICATIONS_COMMANDS);
   if (hasItem) {
     found.push(OAuth2Scopes.OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
@@ -43,12 +43,12 @@ export const parseOAuth2AuthorizeProps = function parseOAuth2AuthorizeProps(quer
       return guild_id;
     }
   }
-  const obj = _mod5768;
+  const obj = _mod5769;
   const parsed = obj.parse(query, { arrayFormat: "bracket" });
   let NONE = PermissionUtilsAll.NONE;
   try {
     let str2 = "0";
-    const deserialize = tmp3(1086).deserialize;
+    const deserialize = tmp3(1098).deserialize;
     BigFlagUtilsAll;
     if (null != parsed.permissions) {
       str2 = "0";

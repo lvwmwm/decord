@@ -1,10 +1,10 @@
-// Module ID: 10740
-// Function ID: 10741
+// Module ID: 10704
+// Function ID: 10705
 // Name: AppLauncherPlayUtils
-// Dependencies: [5, 8784, 4849, 10741, 2]
+// Dependencies: [5, 8779, 4850, 10705, 2]
 // Exports: launchActivityInBotDM
 
-// Module 10740 (AppLauncherPlayUtils)
+// Module 10704 (AppLauncherPlayUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _launchActivityInBotDM() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -60,7 +60,7 @@ let obj = function _launchActivityInBotDM() {
             channelId = undefined;
             customId = 1;
             referrerId = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === customId) {
           if (arg0 === 1) {

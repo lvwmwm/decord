@@ -1,15 +1,15 @@
-// Module ID: 11857
-// Function ID: 11858
+// Module ID: 11750
+// Function ID: 11751
 // Name: IntelligenceSearchActionCreators
-// Dependencies: [5, 1372, 11846, 1074, 7303, 11849, 11823, 11858, 573, 1271, 11848, 2]
+// Dependencies: [5, 1378, 11739, 1086, 7307, 11742, 11716, 11751, 585, 1283, 11741, 2]
 // Exports: fetchAnswer
 
-// Module 11857 (IntelligenceSearchActionCreators)
-import Constants from "Constants" /* 1074 */;
-import SearchConstants from "SearchConstants" /* 7303 */;
+// Module 11750 (IntelligenceSearchActionCreators)
+import Constants from "Constants" /* 1086 */;
+import SearchConstants from "SearchConstants" /* 7307 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1372 */;
-import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11846 */;
+import UserStore from "UserStore" /* 1378 */;
+import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11739 */;
 import size from "module_2" /* 2 */;
 
 let c5;
@@ -107,10 +107,10 @@ let obj = function _fetchAnswer() {
       dispatch(obj13);
       c4 = 0;
     }
-    await "HermesInternal";
+    await "IconComponent";
     guildId = tmp;
     ({ searchContext: c0, searchQueryString: c1 } = closure_0);
-    return "flex";
+    return "Reflect";
   });
   return obj(...arguments);
 };

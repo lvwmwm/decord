@@ -1,21 +1,26 @@
-// Module ID: 8377
-// Function ID: 8378
+// Module ID: 8374
+// Function ID: 8375
 // Name: FloatingActionButton
-// Dependencies: [19, 21, 4836, 576, 5286, 4566, 5280, 7364, 2]
-// Exports: FloatingActionButton
+// Dependencies: [109, 19, 21, 4837, 588, 5287, 558, 576, 4570, 5281, 7363, 2]
 
-// Module 8377 (FloatingActionButton)
+// Module 8374 (FloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5280 */;
-import ButtonConstants from "ButtonConstants" /* 5286 */;
+import nativeDefault from "native" /* 588 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4570 */;
+import spring from "spring" /* 5281 */;
+import ButtonConstants from "ButtonConstants" /* 5287 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let num, num2, rect, tmp, tmp3, tmp4, tmpResult, withSpring2;
+const require = globalThis.__r;
+let _require, importDefault, rect, withSpring2;
 
+let closure_3 = ["icon", "positionBottom", "positionRight", "accessibilityLabel"];
 const jsx = Fragment.jsx;
+let c7 = 16;
 const styles = createStyles.createStyles(() => {
   let obj2;
   const obj = { button: obj2, iconButtonPill: { minWidth: ButtonConstants.FAB_BUTTON_SIZE, minHeight: ButtonConstants.FAB_BUTTON_SIZE, padding: 0, borderRadius: nativeDefault.radii.lg } };
@@ -25,58 +30,224 @@ const styles = createStyles.createStyles(() => {
   return obj;
 });
 const SPRING_CONFIG = { mass: 0.5, damping: 80, stiffness: 320 };
-const __initData = { code: "function FloatingActionButtonNativeTsx1(){const{withSpring,positionBottom,DEFAULT_POSITION_OFFSET,SPRING_CONFIG,positionRight}=this.__closure;var _positionBottom,_positionRight;return{position:'absolute',bottom:withSpring((_positionBottom=positionBottom)!==null&&_positionBottom!==void 0?_positionBottom:DEFAULT_POSITION_OFFSET,SPRING_CONFIG),right:withSpring((_positionRight=positionRight)!==null&&_positionRight!==void 0?_positionRight:DEFAULT_POSITION_OFFSET,SPRING_CONFIG)};}" };
-const result = size.fileFinishedImporting("design/components/Button/native/FloatingActionButton.native.tsx");
-
-export const DEFAULT_POSITION_OFFSET = 16;
-export const useStyles = styles;
-export const FloatingActionButton = function FloatingActionButton(positionRight) {
+const __initData = { code: "function FloatingActionButtonNativeTsx1(){const{withSpring,positionBottom,DEFAULT_POSITION_OFFSET,SPRING_CONFIG,positionRight}=this.__closure;var _positionBottom,_positionRight;return{position:\"absolute\",bottom:withSpring((_positionBottom=positionBottom)!==null&&_positionBottom!==void 0?_positionBottom:DEFAULT_POSITION_OFFSET,SPRING_CONFIG),right:withSpring((_positionRight=positionRight)!==null&&_positionRight!==void 0?_positionRight:DEFAULT_POSITION_OFFSET,SPRING_CONFIG)};}" };
+const __initData2 = { code: "function FloatingActionButtonNativeTsx2(){const{withSpring,positionBottom,DEFAULT_POSITION_OFFSET,SPRING_CONFIG,positionRight}=this.__closure;var _positionBottom,_positionRight;return{position:'absolute',bottom:withSpring((_positionBottom=positionBottom)!==null&&_positionBottom!==void 0?_positionBottom:DEFAULT_POSITION_OFFSET,SPRING_CONFIG),right:withSpring((_positionRight=positionRight)!==null&&_positionRight!==void 0?_positionRight:DEFAULT_POSITION_OFFSET,SPRING_CONFIG)};}" };
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionRight) => {
+  let closure_0;
+  let closure_1;
   let icon;
+  let positionBottom;
+  let tmp14;
+  let tmp4;
+  let tmp5;
+  let tmp7;
+  let tmp8;
+  const tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(17);
+  if (cResult[0] !== positionRight) {
+    ({ icon, positionBottom } = positionRight);
+    _require = positionBottom;
+    positionRight = positionRight.positionRight;
+    importDefault = positionRight;
+    const accessibilityLabel = positionRight.accessibilityLabel;
+    const tmp11 = _objectWithoutProperties(positionRight, closure_3);
+    cResult[0] = positionRight;
+    class T {
+      constructor() {
+        tmp = closure_0;
+        tmp2 = closure_2;
+        tmp3 = closure_0(closure_2[9]);
+        tmp4 = closure_0;
+        withSpring = tmp3.withSpring;
+        if (closure_0 == null) {
+          tmp4 = c7;
+        }
+        rect = { position: "absolute", bottom: withSpring(tmp4, closure_9), right: null };
+        tmp5 = closure_9;
+        tmpResult = tmp(tmp2[9]);
+        tmp7 = closure_1;
+        withSpring2 = tmpResult.withSpring;
+        if (closure_1 == null) {
+          tmp7 = c7;
+        }
+        rect.right = withSpring2(tmp7, tmp5);
+        return rect;
+      }
+    }
+    cResult[1] = accessibilityLabel;
+    cResult[2] = icon;
+    cResult[3] = positionBottom;
+    cResult[4] = positionRight;
+    cResult[5] = tmp11;
+    tmp8 = tmp11;
+    tmp7 = positionRight;
+    tmp5 = icon;
+    tmp4 = accessibilityLabel;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    _require = cResult[3];
+    importDefault = cResult[4];
+    tmp8 = cResult[5];
+  }
+  const tmp12 = styles();
+  const tmpResult = tmp(4570);
+  class T {
+    constructor() {
+      tmp = closure_0;
+      tmp2 = closure_2;
+      tmp3 = closure_0(closure_2[9]);
+      tmp4 = closure_0;
+      withSpring = tmp3.withSpring;
+      if (closure_0 == null) {
+        tmp4 = c7;
+      }
+      rect = { position: "absolute", bottom: withSpring(tmp4, closure_9), right: null };
+      tmp5 = closure_9;
+      tmpResult = tmp(tmp2[9]);
+      tmp7 = closure_1;
+      withSpring2 = tmpResult.withSpring;
+      if (closure_1 == null) {
+        tmp7 = c7;
+      }
+      rect.right = withSpring2(tmp7, tmp5);
+      return rect;
+    }
+  }
+  T.__closure = { withSpring: tmp(5281).withSpring, positionBottom: tmp6, DEFAULT_POSITION_OFFSET, SPRING_CONFIG, positionRight: tmp7 };
+  T.__workletHash = 10049262876607;
+  T.__initData = __initData;
+  ({ withSpring: tmp(5281).withSpring, positionBottom: tmp6, DEFAULT_POSITION_OFFSET, SPRING_CONFIG, positionRight: tmp7 });
+  const animatedStyle = tmpResult.useAnimatedStyle(T);
+  if (cResult[6] !== tmp5) {
+    let cloneElementResult = tmp5;
+    const tmp15 = react;
+    if (react.isValidElement(tmp5)) {
+      const cloneElement = tmp15.cloneElement;
+      const obj3 = { color: nativeDefault.colors.WHITE };
+      cloneElementResult = cloneElement(tmp5, obj3);
+    }
+    cResult[6] = tmp5;
+    cResult[7] = cloneElementResult;
+    tmp14 = cloneElementResult;
+  } else {
+    tmp14 = cResult[7];
+  }
+  if (cResult[8] === tmp4) {
+    if (cResult[9] === tmp8) {
+      if (cResult[10] === tmp12.button) {
+        if (cResult[11] === tmp12.iconButtonPill) {
+          let tmp18;
+          if (cResult[12] === tmp14) {
+            tmp18 = cResult[13];
+          }
+          if (cResult[14] === animatedStyle) {
+            let tmp21;
+            if (cResult[15] === tmp18) {
+              tmp21 = cResult[16];
+            }
+            return tmp21;
+          }
+          const tmp24 = jsx(ReanimatedRexportDefault.View, { style: animatedStyle, children: tmp18 });
+          cResult[14] = animatedStyle;
+          class T {
+            constructor() {
+              tmp = closure_0;
+              tmp2 = closure_2;
+              tmp3 = closure_0(closure_2[9]);
+              tmp4 = closure_0;
+              withSpring = tmp3.withSpring;
+              if (closure_0 == null) {
+                tmp4 = c7;
+              }
+              rect = { position: "absolute", bottom: withSpring(tmp4, closure_9), right: null };
+              tmp5 = closure_9;
+              tmpResult = tmp(tmp2[9]);
+              tmp7 = closure_1;
+              withSpring2 = tmpResult.withSpring;
+              if (closure_1 == null) {
+                tmp7 = c7;
+              }
+              rect.right = withSpring2(tmp7, tmp5);
+              return rect;
+            }
+          }
+          cResult[16] = tmp24;
+          tmp21 = tmp24;
+        }
+      }
+    }
+  }
+  const BaseIconButton = tmp(7363).BaseIconButton;
+  const merged = Object.assign(tmp8);
+  ({ button: obj5.style, iconButtonPill: obj5.pillStyle } = tmp12);
+  const tmp20 = <BaseIconButton accessibilityLabel={tmp4} size="lg" variant="primary" icon={tmp14} />;
+  cResult[8] = tmp4;
+  cResult[9] = tmp8;
+  cResult[10] = tmp12.button;
+  cResult[11] = tmp12.iconButtonPill;
+  cResult[12] = tmp14;
+  cResult[13] = tmp20;
+  tmp18 = tmp20;
+}) : ((positionRight) => {
+  let BaseIconButton;
+  let cloneElementResult;
+  let icon;
+  let obj5;
   let positionBottom;
   ({ icon, positionBottom } = positionRight);
   positionRight = positionRight.positionRight;
   const accessibilityLabel = positionRight.accessibilityLabel;
   const merged = Object.assign(positionRight, Object.assign({ icon: 0, positionBottom: 0, positionRight: 0, accessibilityLabel: 0 }));
   const tmp2 = styles();
-  const obj = positionBottom(4566);
+  const obj = positionBottom(4570);
   class F {
     constructor() {
       tmp = closure_0;
       tmp2 = closure_2;
-      tmp3 = closure_0(closure_2[6]);
-      num = positionBottom;
+      tmp3 = closure_0(closure_2[9]);
+      tmp4 = positionBottom;
       withSpring = tmp3.withSpring;
       if (positionBottom == null) {
-        num = 16;
+        tmp4 = c7;
       }
-      rect = { position: "absolute", bottom: withSpring(num, closure_6), right: null };
-      tmp4 = closure_6;
-      tmpResult = tmp(tmp2[6]);
-      num2 = positionRight;
+      rect = { position: "absolute", bottom: withSpring(tmp4, closure_9), right: null };
+      tmp5 = closure_9;
+      tmpResult = tmp(tmp2[9]);
+      tmp7 = positionRight;
       withSpring2 = tmpResult.withSpring;
       if (positionRight == null) {
-        num2 = 16;
+        tmp7 = c7;
       }
-      rect.right = withSpring2(num2, tmp4);
+      rect.right = withSpring2(tmp7, tmp5);
       return rect;
     }
   }
-  F.__closure = { withSpring: positionBottom(5280).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG, positionRight };
-  F.__workletHash = 10762818944671;
-  F.__initData = __initData;
-  ({ withSpring: positionBottom(5280).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG, positionRight });
+  F.__closure = { withSpring: positionBottom(5281).withSpring, positionBottom, DEFAULT_POSITION_OFFSET, SPRING_CONFIG, positionRight };
+  F.__workletHash = 9924952956188;
+  F.__initData = __initData2;
+  let tmp5 = jsx;
+  ({ withSpring: positionBottom(5281).withSpring, positionBottom, DEFAULT_POSITION_OFFSET, SPRING_CONFIG, positionRight });
   const animatedStyle = obj.useAnimatedStyle(F);
-  const View = positionRight(4566).View;
-  const BaseIconButton = positionBottom(7364).BaseIconButton;
+  const obj3 = { style: animatedStyle, children: tmp5(BaseIconButton, obj5) };
+  const View = positionRight(4570).View;
+  obj5 = { accessibilityLabel, size: "lg", variant: "primary", icon: cloneElementResult };
+  BaseIconButton = positionBottom(7363).BaseIconButton;
   const merged1 = Object.assign(merged);
-  let cloneElementResult = icon;
+  cloneElementResult = icon;
   const tmp6 = positionRight;
   const tmp8 = react;
   if (react.isValidElement(icon)) {
     const cloneElement = tmp8.cloneElement;
-    const obj9 = { color: tmp6(576).colors.WHITE };
+    const obj9 = { color: tmp6(588).colors.WHITE };
     cloneElementResult = cloneElement(icon, obj9);
   }
   ({ button: obj4.style, iconButtonPill: obj4.pillStyle } = tmp2);
-  return <View style={animatedStyle}>{null}</View>;
-};
+  return tmp5(View, obj3);
+});
+const result = size.fileFinishedImporting("design/components/Button/native/FloatingActionButton.native.tsx");
+
+export const DEFAULT_POSITION_OFFSET = 16;
+export const useStyles = styles;
+export const FloatingActionButton = tmp3;

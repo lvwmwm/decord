@@ -1,43 +1,149 @@
-// Module ID: 16039
-// Function ID: 16040
+// Module ID: 16041
+// Function ID: 16042
 // Name: useForLaterCoachmark
-// Dependencies: [32, 19, 17, 2042, 21, 2029, 4836, 12870, 7275, 6806, 1115, 10589, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 2048, 21, 2035, 4837, 558, 576, 12872, 7279, 6807, 1127, 9656, 2]
 
-// Module 16039 (useForLaterCoachmark)
+// Module 16041 (useForLaterCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1115 */;
-import dismissible_content from "dismissible_content" /* 2029 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12870 */;
+import react2 from "react" /* 576 */;
+import intl3 from "intl" /* 1127 */;
+import dismissible_content from "dismissible_content" /* 2035 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12872 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-function CoachmarkImg() {
-  const tmp = closure_9();
-  return <Image source={AssetRegistryDefault} style={tmp.imageContainer} />;
-}
+const require = globalThis.__r;
+let _require;
+
 const Image = react_native.Image;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
 let closure_8 = dismissible_content.DismissibleContent.FOR_LATER_NOTIFICATIONS_COACHMARK;
 let closure_9 = createStyles.createStyles({ imageContainer: { width: 100, height: 80 } });
-const result = size.fileFinishedImporting("modules/saved_messages/native/useForLaterCoachmark.tsx");
-
-export default function useForLaterCoachmark(targetRef) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const tmp3 = closure_9();
+  if (cResult[0] !== tmp3.imageContainer) {
+    const tmp8 = <Image source={AssetRegistryDefault} style={tmp3.imageContainer} />;
+    cResult[0] = tmp3.imageContainer;
+    cResult[1] = tmp8;
+    tmp4 = tmp8;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (() => {
+  const tmp = closure_9();
+  return <Image source={AssetRegistryDefault} style={tmp.imageContainer} />;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let obj3;
+  let tmp10;
+  let tmp11;
+  let tmp16;
+  let tmp5;
+  const obj = require("react");
+  const cResult = obj.c(10);
+  const obj2 = require("ForLaterExperiment");
+  const isForLaterExperimentOn = obj2.useIsForLaterExperimentOn("forLaterCoachmark");
+  if (cResult[0] !== isForLaterExperimentOn) {
+    let items1;
+    if (isForLaterExperimentOn) {
+      const items = [closure_8];
+      items1 = items;
+    } else {
+      items1 = [];
+    }
+    cResult[0] = isForLaterExperimentOn;
+    cResult[1] = items1;
+    tmp5 = items1;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const tmpResult = require("useSelectedDismissibleContent");
+  const tmp7 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp5, undefined, true), 2);
+  _require = tmp9;
+  const first = tmp7[0];
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(require("intl").t.qPbFK2);
+    const intl2 = tmp(1127).intl;
+    const stringResult1 = intl2.string(require("intl").t.URrJq1);
+    cResult[2] = stringResult;
+    cResult[3] = stringResult1;
+    tmp11 = stringResult1;
+    tmp10 = stringResult;
+  } else {
+    tmp10 = cResult[2];
+    tmp11 = cResult[3];
+  }
+  if (cResult[4] !== tmp7[1]) {
+    class R {
+      constructor() {
+        tmp = closure_0(ContentDismissActionType.USER_DISMISS);
+        return;
+      }
+    }
+    cResult[4] = tmp7[1];
+    cResult[5] = R;
+  } else {
+    class R {
+      constructor() {
+        tmp = closure_0(ContentDismissActionType.USER_DISMISS);
+        return;
+      }
+    }
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor() {
+        return closure_1_7(closure_1_10, {});
+      }
+    }
+    cResult[6] = D;
+    tmp16 = D;
+  } else {
+    class D {
+      constructor() {
+        return closure_1_7(closure_1_10, {});
+      }
+    }
+  }
+  if (cResult[7] === first === closure_8) {
+    class D {
+      constructor() {
+        return closure_1_7(closure_1_10, {});
+      }
+    }
+    const tmpResult2 = require("useCoachmark");
+    const coachmark = tmpResult2.useCoachmark(arg0, obj3);
+    return tmp7[1];
+  }
+  obj3 = { title: tmp10, description: tmp11, position: "bottom", visible: first === closure_8, onDismiss: tmp15, renderImgComponent: tmp16 };
+  cResult[7] = first === closure_8;
+  cResult[8] = tmp15;
+  cResult[9] = obj3;
+}) : ((arg0) => {
   let first;
   let items1;
-  let obj = first(7275);
+  let obj = first(7279);
   if (obj.useIsForLaterExperimentOn("forLaterCoachmark")) {
     const items = [closure_8];
     items1 = items;
   } else {
     items1 = [];
   }
-  const tmpResult = first(6806);
+  const tmpResult = first(6807);
   const tmp4 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items1, undefined, true), 2);
   first = tmp4[0];
   let closure_1 = tmp6;
@@ -61,7 +167,10 @@ export default function useForLaterCoachmark(targetRef) {
     intl2 = intl3.intl;
     return obj;
   }, items2);
-  const tmpResult2 = first(10589);
-  const coachmark = tmpResult2.useCoachmark(targetRef, memo);
+  const tmpResult2 = first(9656);
+  const coachmark = tmpResult2.useCoachmark(arg0, memo);
   return tmp4[1];
-};
+});
+const result = size.fileFinishedImporting("modules/saved_messages/native/useForLaterCoachmark.tsx");
+
+export default tmp2;

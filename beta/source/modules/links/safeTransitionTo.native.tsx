@@ -1,17 +1,17 @@
-// Module ID: 6665
-// Function ID: 6666
+// Module ID: 6666
+// Function ID: 6667
 // Name: safeTransitionTo
-// Dependencies: [5, 2067, 1074, 4990, 6666, 1101, 6667, 5204, 1115, 6694, 2619, 6734, 2]
+// Dependencies: [5, 2073, 1086, 4991, 6667, 1113, 6668, 5205, 1127, 6695, 2622, 6735, 2]
 // Exports: default
 
-// Module 6665 (safeTransitionTo)
-import Constants from "Constants" /* 1074 */;
-import router_utils from "router_utils" /* 1101 */;
-import LinkUtils from "LinkUtils" /* 4990 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 6666 */;
-import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 6667 */;
+// Module 6666 (safeTransitionTo)
+import Constants from "Constants" /* 1086 */;
+import router_utils from "router_utils" /* 1113 */;
+import LinkUtils from "LinkUtils" /* 4991 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 6667 */;
+import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 6668 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildStore from "GuildStore" /* 2073 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6;
@@ -40,7 +40,7 @@ let obj = function _safeTransitionTo() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -117,7 +117,7 @@ let obj = function _safeTransitionTo() {
             obj.transitionTo(closure_0, closure_1);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
         if (null != c2) {
           if (null != c2.guildId) {
@@ -144,7 +144,7 @@ let obj = function _safeTransitionTo() {
         const maybePerformRoleSubscriptionUpsellRedirect = closure_132_1(closure_132_2[11]).maybePerformRoleSubscriptionUpsellRedirect;
         const tmp51 = closure_132_1(closure_132_2[11]);
         if (c2 == null) {
-          closure_2 = { guildId: "Path" };
+          closure_2 = { guildId: "call" };
         }
         c5 = 2;
         c6 = 1;

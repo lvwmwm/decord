@@ -1,10 +1,10 @@
-// Module ID: 9646
-// Function ID: 9647
+// Module ID: 12272
+// Function ID: 12273
 // Name: BugReportUtils
-// Dependencies: [5, 3, 1255, 5450, 1231, 2]
+// Dependencies: [5, 3, 1267, 5451, 1243, 2]
 // Exports: getAttachments
 
-// Module 9646 (BugReportUtils)
+// Module 12272 (BugReportUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ let obj = function _getAttachments() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {

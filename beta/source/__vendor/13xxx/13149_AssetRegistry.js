@@ -1,10 +1,10 @@
 // Module ID: 13149
 // Function ID: 13150
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 13149 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 160, height: 82, scales: [2, 3], hash: "0d2c2c590995b34f0429dc331d39457b", name: "subscribe_confirm", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 18, height: 18, scales: [1, 2, 3], hash: "62d7aa01daae8d1f045686e6148f0a24", name: "ic_add_18px", type: "png" });

@@ -1,19 +1,20 @@
-// Module ID: 7394
-// Function ID: 7395
+// Module ID: 7398
+// Function ID: 7399
 // Name: useIsAccessibilityServiceEnabled
-// Dependencies: [560, 5207, 5266, 2]
-// Exports: getIsAccessibilityServiceEnabled, useIsAccessibilityServiceEnabled
+// Dependencies: [570, 5208, 5267, 558, 2]
+// Exports: getIsAccessibilityServiceEnabled
 
-// Module 7394 (useIsAccessibilityServiceEnabled)
-import react_nativeDefault from "react-native" /* 5207 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5266 */;
-import module_560 from "module_560" /* 560 */;
+// Module 7398 (useIsAccessibilityServiceEnabled)
+import react_nativeDefault from "react-native" /* 5208 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5267 */;
+import module_570 from "module_570" /* 570 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 function ACCESSIBILITY_SERVICE_ENABLED_GETTER(accessibilityServiceEnabled) {
   return accessibilityServiceEnabled.accessibilityServiceEnabled;
 }
-const state = module_560.create((arg0) => {
+const state = module_570.create((arg0) => {
   let obj3;
   let closure_0 = arg0;
   let obj = react_nativeDefault;
@@ -25,6 +26,15 @@ const state = module_560.create((arg0) => {
   obj3 = react_nativeDefault;
   return obj2;
 });
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = useIsScreenReaderEnabled;
+  const isScreenReaderEnabled = obj.useIsScreenReaderEnabled() || state(ACCESSIBILITY_SERVICE_ENABLED_GETTER);
+  return isScreenReaderEnabled;
+}) : (() => {
+  const obj = useIsScreenReaderEnabled;
+  const isScreenReaderEnabled = obj.useIsScreenReaderEnabled() || state(ACCESSIBILITY_SERVICE_ENABLED_GETTER);
+  return isScreenReaderEnabled;
+});
 let result = size.fileFinishedImporting("modules/a11y/native/useIsAccessibilityServiceEnabled.native.tsx");
 
 export const getIsAccessibilityServiceEnabled = function getIsAccessibilityServiceEnabled() {
@@ -32,8 +42,4 @@ export const getIsAccessibilityServiceEnabled = function getIsAccessibilityServi
   const accessibilityServiceEnabled = obj.getIsScreenReaderEnabled() || state.getState().accessibilityServiceEnabled;
   return accessibilityServiceEnabled;
 };
-export const useIsAccessibilityServiceEnabled = function useIsAccessibilityServiceEnabled() {
-  const obj = useIsScreenReaderEnabled;
-  const isScreenReaderEnabled = obj.useIsScreenReaderEnabled() || state(ACCESSIBILITY_SERVICE_ENABLED_GETTER);
-  return isScreenReaderEnabled;
-};
+export const useIsAccessibilityServiceEnabled = tmp2;

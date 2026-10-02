@@ -1,12 +1,12 @@
-// Module ID: 7176
-// Function ID: 7177
+// Module ID: 7180
+// Function ID: 7181
 // Name: RequestGatewaySocket
-// Dependencies: [5, 1074, 6892, 1241, 2]
+// Dependencies: [5, 1086, 6896, 1253, 2]
 // Exports: describeConnectionReasons, isRequested, recordStartHeadlessTask, startBridgeTo, withRequest
 
-// Module 7176 (RequestGatewaySocket)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+// Module 7180 (RequestGatewaySocket)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let obj = function _withRequest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -148,7 +148,7 @@ export const startBridgeTo = function startBridgeTo(arg0) {
     num = 0;
   }
   let result = obj.set(combined, num + 1);
-  let obj2 = combined(6892);
+  let obj2 = combined(6896);
   obj2.requestSafeIdleCallback(() => {
     if (map.has(combined)) {
       const _performance = performance;

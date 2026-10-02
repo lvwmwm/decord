@@ -1,10 +1,10 @@
 // Module ID: 6411
 // Function ID: 6412
 // Name: UserSettingsModalActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 
 // Module 6411 (UserSettingsModalActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

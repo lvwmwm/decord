@@ -1,20 +1,64 @@
-// Module ID: 10665
-// Function ID: 10666
+// Module ID: 10654
+// Function ID: 10655
 // Name: useShowBadgeProgress
-// Dependencies: [6012, 1074, 504, 10659, 2]
-// Exports: default
+// Dependencies: [6007, 1086, 558, 576, 504, 10648, 2]
 
-// Module 10665 (useShowBadgeProgress)
+// Module 10654 (useShowBadgeProgress)
 import get_initialized from "get initialized" /* 504 */;
-import Constants from "Constants" /* 1074 */;
-import BadgeUtils from "BadgeUtils" /* 10659 */;
-import ConsentStore from "ConsentStore" /* 6012 */;
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import BadgeUtils from "BadgeUtils" /* 10648 */;
+import ConsentStore from "ConsentStore" /* 6007 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const Consents = Constants.Consents;
-const result = size.fileFinishedImporting("modules/badges/useShowBadgeProgress.tsx");
-
-export default function useShowBadgeProgress(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let badge;
+  let isViewingOtherUser;
+  let tmp4;
+  let tmp5;
+  let viewerBadge;
+  const obj = react;
+  const cResult = obj.c(7);
+  ({ badge, viewerBadge, isViewingOtherUser } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ConsentStore];
+    const fn = function l() {
+      return ConsentStore.hasConsented(constants.PERSONALIZATION);
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (viewerBadge == null) {
+    viewerBadge = badge;
+  }
+  if (cResult[2] !== viewerBadge) {
+    const tmpResult3 = BadgeUtils;
+    cResult[2] = viewerBadge;
+    cResult[3] = tmpResult3.findTier(viewerBadge, viewerBadge.next_tier);
+    const findTierResult = tmpResult3.findTier(viewerBadge, viewerBadge.next_tier);
+  }
+  if (cResult[4] === badge.badge_id) {
+    let tmp11;
+    if (cResult[5] === stateFromStores) {
+      tmp11 = cResult[6];
+    }
+    return !isViewingOtherUser && viewerBadge.owned && tmp10 && !tmp11;
+  }
+  const tmpResult4 = BadgeUtils;
+  const tmp12 = tmpResult4.isPersonalizationGatedBadge(badge.badge_id) && !stateFromStores;
+  cResult[4] = badge.badge_id;
+  cResult[5] = stateFromStores;
+  cResult[6] = tmp12;
+  tmp11 = tmp12;
+}) : ((arg0) => {
   let badge;
   let isViewingOtherUser;
   let viewerBadge;
@@ -30,4 +74,7 @@ export default function useShowBadgeProgress(arg0) {
   const tmpResult2 = BadgeUtils;
   const tmp6 = !isViewingOtherUser && viewerBadge.owned && tmp4 && !(tmpResult2.isPersonalizationGatedBadge(badge.badge_id) && !stateFromStores);
   return tmp6;
-};
+});
+const result = size.fileFinishedImporting("modules/badges/useShowBadgeProgress.tsx");
+
+export default tmp2;

@@ -1,23 +1,23 @@
-// Module ID: 8828
-// Function ID: 8829
+// Module ID: 8823
+// Function ID: 8824
 // Name: transitionToActivity
-// Dependencies: [8829, 2044, 8502, 8830, 4458, 4692, 8835, 8803, 12443, 5037, 8805, 4800, 8782, 2]
+// Dependencies: [8824, 2050, 8499, 8825, 4461, 4694, 8830, 8798, 12441, 5038, 8800, 4801, 8777, 2]
 // Exports: default
 
-// Module 8828 (transitionToActivity)
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4458 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8502 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8782 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 8803 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 8805 */;
-import ChannelCallStore from "ChannelCallStore" /* 8829 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 8830 */;
-import ChannelCallModalDefault from "ChannelCallModal" /* 8835 */;
-import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 12443 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+// Module 8823 (transitionToActivity)
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4461 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4694 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5038 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 8499 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8777 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 8798 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 8800 */;
+import ChannelCallStore from "ChannelCallStore" /* 8824 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 8825 */;
+import ChannelCallModalDefault from "ChannelCallModal" /* 8830 */;
+import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 12441 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
 import size from "module_2" /* 2 */;
 
 const setVoiceChatDrawerState = ChannelCallStore.setVoiceChatDrawerState;
@@ -25,9 +25,9 @@ const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const VoiceChatDrawerState = ChannelCallConstants.VoiceChatDrawerState;
 let result = size.fileFinishedImporting("modules/activities/utils/transitionToActivity.native.tsx");
 
-export default function transitionToActivity(arg0, _location) {
+export default function transitionToActivity(arg0, connectedActivityLocation) {
   const obj = embeddedActivityLocationUtils;
-  const embeddedActivityLocationChannelId = obj.getEmbeddedActivityLocationChannelId(_location);
+  const embeddedActivityLocationChannelId = obj.getEmbeddedActivityLocationChannelId(connectedActivityLocation);
   if (null != embeddedActivityLocationChannelId) {
     const tmpResult = NavigationRouteUtils;
     const isModalOpenResult = tmpResult.isModalOpen(ChannelCallModalDefault);
@@ -35,7 +35,7 @@ export default function transitionToActivity(arg0, _location) {
     if (tmp4) {
       openChannelCallModalForChannelIdDefault(embeddedActivityLocationChannelId);
     }
-    const selfEmbeddedActivityForLocation = EmbeddedActivitiesStore.getSelfEmbeddedActivityForLocation(_location);
+    const selfEmbeddedActivityForLocation = EmbeddedActivitiesStore.getSelfEmbeddedActivityForLocation(connectedActivityLocation);
     if (null != selfEmbeddedActivityForLocation) {
       if (isVoiceEmbeddedActivityDefault(embeddedActivityLocationChannelId)) {
         const selectParticipant = ChannelRTCActionCreatorsDefault.selectParticipant;

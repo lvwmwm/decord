@@ -1,11 +1,11 @@
-// Module ID: 2032
-// Function ID: 2033
+// Module ID: 2038
+// Function ID: 2039
 // Name: DCFEventStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 2032 (DCFEventStore)
+// Module 2038 (DCFEventStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 const DCFEventTypes = { DC_SHOWN: 0, [0]: "DC_SHOWN", DC_SHOW_REQUEST: 1, [1]: "DC_SHOW_REQUEST", DC_DISMISSED: 2, [2]: "DC_DISMISSED" };

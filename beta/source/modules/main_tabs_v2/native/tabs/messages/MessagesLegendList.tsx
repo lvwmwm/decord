@@ -1,28 +1,179 @@
-// Module ID: 15688
-// Function ID: 15689
+// Module ID: 15685
+// Function ID: 15686
 // Name: MessagesLegendList
-// Dependencies: [19, 21, 15689, 15663, 15728, 15729, 15675, 15673, 15678, 15690, 15727, 15730, 15732, 2]
+// Dependencies: [19, 21, 558, 576, 15686, 15662, 15725, 15726, 15674, 15672, 15677, 15687, 15724, 15727, 15729, 2]
 
-// Module 15688 (MessagesLegendList)
+// Module 15685 (MessagesLegendList)
 import Fragment from "Fragment" /* 21 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 15663 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 15673 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 15675 */;
-import useMessagesData from "useMessagesData" /* 15678 */;
-import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 15690 */;
-import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 15727 */;
-import MessagesItemSeparator from "MessagesItemSeparator" /* 15728 */;
-import MessagesItemSuggestedFriendsHeader from "MessagesItemSuggestedFriendsHeader" /* 15729 */;
-import MessagesItemAddFriendsWidgetDefault from "MessagesItemAddFriendsWidget" /* 15730 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 15662 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 15672 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 15674 */;
+import useMessagesData from "useMessagesData" /* 15677 */;
+import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 15687 */;
+import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 15724 */;
+import MessagesItemSeparator from "MessagesItemSeparator" /* 15725 */;
+import MessagesItemSuggestedFriendsHeader from "MessagesItemSuggestedFriendsHeader" /* 15726 */;
+import MessagesItemAddFriendsWidgetDefault from "MessagesItemAddFriendsWidget" /* 15727 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const MessagesItemSeparatorDefault = MessagesItemSeparator;
 const MessagesItemSuggestedFriendsHeaderDefault = MessagesItemSuggestedFriendsHeader;
-let item;
+let item, obj1, obj5, obj6, str, str2, str3, str4, str5, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp3, tmp8, tmp9;
 
 const jsx = Fragment.jsx;
-const memoResult = react.memo(react.forwardRef(function MessagesLegendList(listItemHeight, ref) {
+const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((listItemSuggestedFriendHeight, ref) => {
+  let accessibilityLabel;
+  let data;
+  let friendsHeaderIndex;
+  let friendsHeaderOffset;
+  let handleScrollAnimated;
+  let insetEnd;
+  let listData;
+  let listItemHeight;
+  let listLeft;
+  let listRefHappeningNow;
+  let listTop;
+  let recycleItems;
+  let renderFooter;
+  let renderHeader;
+  let scrollIndicatorInsetBottom;
+  let scrollPosition;
+  let setAddedFriendSuggestions;
+  let tmp4;
+  let tmp6;
+  let tmp7;
+  let tmp = listLeft;
+  let obj = listItemHeight(listLeft[3]);
+  const cResult = obj.c(46);
+  ({ accessibilityLabel, data, handleScrollAnimated, insetEnd, listItemHeight } = listItemSuggestedFriendHeight);
+  listItemSuggestedFriendHeight = listItemSuggestedFriendHeight.listItemSuggestedFriendHeight;
+  listLeft = listItemSuggestedFriendHeight.listLeft;
+  ({ listRefHappeningNow, listTop } = listItemSuggestedFriendHeight);
+  ({ recycleItems, scrollIndicatorInsetBottom, scrollPosition } = listItemSuggestedFriendHeight);
+  const friendSuggestions = data.friendSuggestions;
+  ({ renderHeader, renderFooter, setAddedFriendSuggestions } = data);
+  ref = listTop.useRef(null);
+  const obj2 = listTop;
+  if (cResult[0] !== listItemHeight) {
+    const obj3 = { listItemHeight };
+    cResult[0] = listItemHeight;
+    cResult[1] = obj3;
+    tmp4 = obj3;
+  } else {
+    tmp4 = cResult[1];
+  }
+  const tmp5 = listItemSuggestedFriendHeight(tmp[4])(data, tmp4);
+  ({ listData, friendsHeaderIndex, friendsHeaderOffset } = tmp5);
+  const listHeaderHeight = tmp5.listHeaderHeight;
+  if (cResult[2] !== listHeaderHeight) {
+    class L {
+      constructor() {
+        obj = { scrollToTop() { /* body not rendered: F143722 */ } };
+        return obj;
+      }
+    }
+    const items = [listHeaderHeight];
+    cResult[2] = listHeaderHeight;
+    cResult[3] = L;
+    cResult[4] = items;
+    tmp7 = items;
+    tmp6 = L;
+  } else {
+    class L {
+      constructor() {
+        obj = { scrollToTop() { /* body not rendered: F143722 */ } };
+        return obj;
+      }
+    }
+    tmp7 = cResult[4];
+  }
+  const imperativeHandle = obj2.useImperativeHandle(ref, tmp6, tmp7);
+  if (cResult[5] === friendSuggestions) {
+    class L {
+      constructor() {
+        obj = { scrollToTop() { /* body not rendered: F143722 */ } };
+        return obj;
+      }
+    }
+  }
+  class R {
+    constructor(arg0) {
+      item = listItemSuggestedFriendHeight.item;
+      kind = item.kind;
+      if ("favorite" !== kind) {
+        str2 = "channel";
+        if ("channel" !== kind) {
+          str3 = "separator";
+          if ("separator" === kind) {
+            tmp18 = jsx;
+            tmp19 = closure_1;
+            tmp20 = closure_2;
+            return jsx(closure_1(closure_2[6]), {});
+          } else {
+            str4 = "friendsHeader";
+            if ("friendsHeader" === kind) {
+              tmp11 = jsx;
+              tmp12 = closure_1;
+              tmp13 = closure_2;
+              obj1 = { scrollPosition: null, stickyAt: null, stickyTop: null, stickyLeft: null };
+              tmp14 = scrollPosition;
+              obj1.scrollPosition = scrollPosition;
+              tmp15 = friendsHeaderOffset;
+              obj1.stickyAt = friendsHeaderOffset;
+              tmp16 = listTop;
+              obj1.stickyTop = listTop;
+              tmp17 = listLeft;
+              obj1.stickyLeft = listLeft;
+              return jsx(closure_1(closure_2[7]), obj1);
+            } else {
+              str5 = "suggestedFriend";
+              if ("suggestedFriend" === kind) {
+                tmp5 = jsx;
+                tmp6 = closure_0;
+                tmp7 = closure_2;
+                obj5 = { height: null, suggestedFriend: null, onAddFriendSuggestions: null };
+                tmp8 = closure_1;
+                obj5.height = closure_1;
+                tmp9 = friendSuggestions;
+                obj5.suggestedFriend = friendSuggestions[item.row];
+                tmp10 = setAddedFriendSuggestions;
+                obj5.onAddFriendSuggestions = setAddedFriendSuggestions;
+                return jsx(closure_0(closure_2[8]).MessagesItemSuggestedFriendLegend, obj5);
+              } else {
+                str = "placeholder";
+                if ("placeholder" === kind) {
+                  tmp = jsx;
+                  tmp2 = closure_1;
+                  tmp3 = closure_2;
+                  obj = { row: null, height: null };
+                  obj.row = item.row;
+                  tmp4 = listItemHeight;
+                  obj.height = listItemHeight;
+                  return jsx(closure_1(closure_2[9]), obj);
+                } else {
+                  return;
+                }
+              }
+            }
+          }
+        }
+      }
+      obj6 = { channelId: item.channelId, placeholderHeight: listItemHeight, row: item.row };
+      return jsx(closure_0(closure_2[5]).MessagesItemChannelLegend, obj6);
+    }
+  }
+  cResult[5] = friendSuggestions;
+  cResult[6] = friendsHeaderOffset;
+  cResult[7] = listItemHeight;
+  cResult[8] = listItemSuggestedFriendHeight;
+  cResult[9] = listLeft;
+  cResult[10] = listTop;
+  cResult[11] = scrollPosition;
+  cResult[12] = setAddedFriendSuggestions;
+  cResult[13] = R;
+}) : ((listItemHeight, ref) => {
   let accessibilityLabel;
   let data;
   let handleScrollAnimated;
@@ -42,7 +193,7 @@ const memoResult = react.memo(react.forwardRef(function MessagesLegendList(listI
   const setAddedFriendSuggestions = data.setAddedFriendSuggestions;
   ({ accessibilityLabel, handleScrollAnimated, recycleItems } = listItemHeight);
   ref = listLeft.useRef(null);
-  let tmp2 = estimatedItemSize(listItemSuggestedFriendHeight[2])(data, { listItemHeight: estimatedItemSize });
+  let tmp2 = estimatedItemSize(listItemSuggestedFriendHeight[4])(data, { listItemHeight: estimatedItemSize });
   const friendsHeaderIndex = tmp2.friendsHeaderIndex;
   const friendsHeaderOffset = tmp2.friendsHeaderOffset;
   const estimatedHeaderSize = tmp2.listHeaderHeight;
@@ -163,8 +314,8 @@ const memoResult = react.memo(react.forwardRef(function MessagesLegendList(listI
   const items8 = [scrollIndicatorInsetBottom];
   const contentContainerStyle = listLeft.useMemo(() => ({ paddingBottom: insetEnd }), items7);
   const scrollIndicatorInsets = listLeft.useMemo(() => ({ bottom: scrollIndicatorInsetBottom }), items8);
-  return listRefHappeningNow(insetEnd(listItemSuggestedFriendHeight[12]).AnimatedLegendList, { ref, accessibilityLabel, contentContainerStyle, data: data2, estimatedHeaderSize, estimatedItemSize, getFixedItemSize, getItemType, keyExtractor, ListFooterComponent, ListHeaderComponent, onScroll, recycleItems, renderItem, scrollIndicatorInsets, stickyHeaderIndices });
-}));
+  return listRefHappeningNow(insetEnd(listItemSuggestedFriendHeight[14]).AnimatedLegendList, { ref, accessibilityLabel, contentContainerStyle, data: data2, estimatedHeaderSize, estimatedItemSize, getFixedItemSize, getItemType, keyExtractor, ListFooterComponent, ListHeaderComponent, onScroll, recycleItems, renderItem, scrollIndicatorInsets, stickyHeaderIndices });
+})));
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesLegendList.tsx");
 
 export default memoResult;

@@ -1,22 +1,22 @@
-// Module ID: 11142
-// Function ID: 11143
+// Module ID: 11012
+// Function ID: 11013
 // Name: FeedbackActionSheet
-// Dependencies: [32, 19, 17, 11121, 21, 4836, 576, 4800, 7720, 12, 11124, 5298, 5039, 11143, 1981, 1613, 6571, 6570, 6619, 6045, 4832, 11125, 5999, 5917, 5916, 1115, 2]
+// Dependencies: [32, 19, 17, 10991, 21, 4837, 588, 4801, 7724, 12, 10994, 5297, 5040, 11013, 1987, 1619, 6572, 6571, 6619, 6038, 4833, 10995, 5997, 5916, 5913, 1127, 2]
 // Exports: default
 
-// Module 11142 (FeedbackActionSheet)
+// Module 11012 (FeedbackActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import Constants from "Constants" /* 11121 */;
-import FeedbackUtils from "FeedbackUtils" /* 11124 */;
+import nativeDefault from "native" /* 588 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import Constants from "Constants" /* 10991 */;
+import FeedbackUtils from "FeedbackUtils" /* 10994 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet, onPress;
@@ -128,7 +128,7 @@ export default function FeedbackActionSheet(feedbackReasons) {
       tmp16 = undefined;
       obj3 = { rating, reason, dontShowAgain: first1 };
       ModalActionCreatorsDefault;
-      const tmp11 = asyncRequire(11143, dependencyMap.paths);
+      const tmp11 = asyncRequire(11013, dependencyMap.paths);
       if (View != null) {
         tmp16 = View(reason);
       }

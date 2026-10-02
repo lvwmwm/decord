@@ -1,13 +1,13 @@
-// Module ID: 14212
-// Function ID: 14213
+// Module ID: 14200
+// Function ID: 14201
 // Name: AccountSetting
-// Dependencies: [1074, 11006, 1115, 10378, 14213, 2]
+// Dependencies: [1086, 10874, 1127, 10420, 14201, 2]
 
-// Module 14212 (AccountSetting)
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import UserCircleIcon from "UserCircleIcon" /* 10378 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 14200 (AccountSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import UserCircleIcon from "UserCircleIcon" /* 10420 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,18 +1,18 @@
-// Module ID: 17094
-// Function ID: 17095
+// Module ID: 17096
+// Function ID: 17097
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1372, 8624, 1074, 3, 8625, 6539, 1364, 12995, 4488, 1241, 2]
+// Dependencies: [5, 1378, 8621, 1086, 3, 8622, 6540, 1370, 12997, 4491, 1253, 2]
 
-// Module 17094 (AppIconPremiumManager)
+// Module 17096 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import AppIconConstants from "AppIconConstants" /* 8624 */;
-import AppIconTypes from "AppIconTypes" /* 8625 */;
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import AppIconConstants from "AppIconConstants" /* 8621 */;
+import AppIconTypes from "AppIconTypes" /* 8622 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1372 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import UserStore from "UserStore" /* 1378 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,7 +65,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -142,7 +142,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
               }
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp38) {
           c5 = 3;

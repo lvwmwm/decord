@@ -1,31 +1,32 @@
-// Module ID: 14523
-// Function ID: 14524
+// Module ID: 14511
+// Function ID: 14512
 // Name: PremiumManageSubscriptionsSetting
-// Dependencies: [19, 1074, 6837, 10977, 4488, 12936, 11006, 1115, 14524, 14522, 2]
+// Dependencies: [19, 1086, 558, 576, 6838, 10845, 4491, 12938, 10874, 1127, 14512, 14510, 2]
 
-// Module 14523 (PremiumManageSubscriptionsSetting)
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import PremiumUtils from "PremiumUtils" /* 4488 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 6837 */;
-import MobileNitroManageSubscriptionsSettingsExperiment from "MobileNitroManageSubscriptionsSettingsExperiment" /* 12936 */;
-import SubscriptionIcon from "SubscriptionIcon" /* 14524 */;
+// Module 14511 (PremiumManageSubscriptionsSetting)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import PremiumUtils from "PremiumUtils" /* 4491 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 6838 */;
+import SubscriptionIcon from "SubscriptionIcon" /* 14512 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
+let tmp;
+const MobileNitroManageSubscriptionsSettingsExperiment = tmp(12938);
 const UserSettingsSections = Constants.UserSettingsSections;
-let obj = {
-  useTitle() {
-    const intl = intl2.intl;
-    return intl.string(intl2.t["z5YcJ+"]);
-  },
-  parent: null,
-  IconComponent: SubscriptionIcon.SubscriptionIcon,
-  usePreNavigationAction: function useCanNavigateToPaymentSetting() {
-    return react.useCallback(() => {
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
       const obj = BlockedPaymentsCountryExperiment;
       const isPaymentsBlocked = obj.getIsPaymentsBlocked();
       let flag = !isPaymentsBlocked;
@@ -35,17 +36,61 @@ let obj = {
         flag = false;
       }
       return flag;
-    }, []);
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => react.useCallback(() => {
+  const obj = BlockedPaymentsCountryExperiment;
+  const isPaymentsBlocked = obj.getIsPaymentsBlocked();
+  let flag = !isPaymentsBlocked;
+  const tmp = dependencyMap;
+  if (isPaymentsBlocked) {
+    require("openBlockedPaymentsCountryActionSheet")();
+    flag = false;
+  }
+  return flag;
+}, []));
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  const obj2 = PremiumUtils;
+  let hasPremiumSubscriptionToDisplay = obj2.useHasPremiumSubscriptionToDisplay();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { location: "useShowManageSubscriptionsSetting" };
+    cResult[0] = obj3;
+    first = obj3;
+  } else {
+    first = cResult[0];
+  }
+  const tmpResult = MobileNitroManageSubscriptionsSettingsExperiment;
+  if (hasPremiumSubscriptionToDisplay) {
+    hasPremiumSubscriptionToDisplay = tmpResult.useMobileNitroManageSubscriptionsSettingsExperiment(first);
+  }
+  return hasPremiumSubscriptionToDisplay;
+}) : (() => {
+  const obj = PremiumUtils;
+  let hasPremiumSubscriptionToDisplay = obj.useHasPremiumSubscriptionToDisplay();
+  const obj2 = MobileNitroManageSubscriptionsSettingsExperiment;
+  if (hasPremiumSubscriptionToDisplay) {
+    hasPremiumSubscriptionToDisplay = obj2.useMobileNitroManageSubscriptionsSettingsExperiment({ location: "useShowManageSubscriptionsSetting" });
+  }
+  return hasPremiumSubscriptionToDisplay;
+});
+let obj = {
+  useTitle() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t["z5YcJ+"]);
   },
-  usePredicate: function useShowManageSubscriptionsSetting() {
-    const obj = PremiumUtils;
-    let hasPremiumSubscriptionToDisplay = obj.useHasPremiumSubscriptionToDisplay();
-    const obj2 = MobileNitroManageSubscriptionsSettingsExperiment;
-    if (hasPremiumSubscriptionToDisplay) {
-      hasPremiumSubscriptionToDisplay = obj2.useMobileNitroManageSubscriptionsSettingsExperiment({ location: "useShowManageSubscriptionsSetting" });
-    }
-    return hasPremiumSubscriptionToDisplay;
-  },
+  parent: null,
+  IconComponent: SubscriptionIcon.SubscriptionIcon,
+  usePreNavigationAction: tmp2,
+  usePredicate: tmp3,
   screen: {
     route: UserSettingsSections.PREMIUM_MANAGE_PLAN,
     getComponent() {

@@ -1,29 +1,31 @@
-// Module ID: 9876
-// Function ID: 9877
+// Module ID: 9913
+// Function ID: 9914
 // Name: StickerPickerList
-// Dependencies: [32, 19, 17, 5814, 9851, 9736, 1074, 21, 4836, 576, 1177, 9877, 4832, 1115, 9767, 5581, 4566, 9783, 9754, 504, 9878, 9766, 9879, 9863, 12, 6483, 9880, 6476, 5891, 9774, 9788, 7273, 2]
+// Dependencies: [32, 19, 17, 5815, 9885, 9853, 1086, 21, 4837, 588, 558, 576, 1189, 9914, 1127, 4833, 9683, 5582, 4570, 9699, 9669, 504, 9915, 9682, 9916, 9897, 12, 6484, 9917, 6402, 9691, 6477, 9704, 7277, 2]
 
-// Module 9876 (StickerPickerList)
+// Module 9913 (StickerPickerList)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6483 */;
-import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 9766 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9767 */;
-import StickerPickerStore from "StickerPickerStore" /* 9851 */;
-import StickerPickerListRowDefault from "StickerPickerListRow" /* 9863 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9877 */;
-import useStickerPickerListData from "useStickerPickerListData" /* 9878 */;
-import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 9879 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6484 */;
+import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 9682 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9683 */;
+import StickerPickerStore from "StickerPickerStore" /* 9885 */;
+import StickerPickerListRowDefault from "StickerPickerListRow" /* 9897 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9914 */;
+import useStickerPickerListData from "useStickerPickerListData" /* 9915 */;
+import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 9916 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 5814 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 9736 */;
-import Constants from "Constants" /* 1074 */;
+import StickersStore from "StickersStore" /* 5815 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 9853 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let bottomSheetRef, constants;
@@ -53,7 +55,81 @@ obj3 = { justifyContent: "center", overflow: "hidden", backgroundColor: nativeDe
 obj4 = { backgroundColor: nativeDefault.colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
 obj5 = { flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.sm, marginLeft: 12, marginRight: 12, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 let closure_16 = createStyles(obj);
-let closure_17 = react.memo((height) => {
+let memo = react.memo;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((height) => {
+  let items;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(12);
+  height = height.height;
+  const tmp4 = closure_16();
+  if (cResult[0] !== height) {
+    const obj2 = { height };
+    cResult[0] = height;
+    cResult[1] = obj2;
+    tmp5 = obj2;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === tmp4.nsfwContainer) {
+    let tmp6;
+    let tmp8;
+    let tmp12;
+    let tmp14;
+    if (cResult[3] === tmp5) {
+      tmp6 = cResult[4];
+    }
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL };
+      const Icon = tmp(1189).Icon;
+      const tmp11 = map1(Icon, obj3);
+      cResult[5] = tmp11;
+      tmp8 = tmp11;
+    } else {
+      tmp8 = cResult[5];
+    }
+    const _Symbol2 = Symbol;
+    const nsfwText = tmp4.nsfwText;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(intl2.t.uy25Qz);
+      cResult[6] = stringResult;
+      tmp12 = stringResult;
+    } else {
+      tmp12 = cResult[6];
+    }
+    if (cResult[7] !== tmp4.nsfwText) {
+      const obj4 = { style: nsfwText, variant: "text-sm/normal", color: "interactive-text-active", children: tmp12 };
+      const tmp16 = map1(Text_Text.Text, obj4);
+      cResult[7] = tmp4.nsfwText;
+      cResult[8] = tmp16;
+      tmp14 = tmp16;
+    } else {
+      tmp14 = cResult[8];
+    }
+    if (cResult[9] === tmp6) {
+      let tmp17;
+      if (cResult[10] === tmp14) {
+        tmp17 = cResult[11];
+      }
+      return tmp17;
+    }
+    const obj5 = { style: tmp6, children: items };
+    items = [tmp8, tmp14];
+    const tmp20 = authStore2(View, obj5);
+    cResult[9] = tmp6;
+    cResult[10] = tmp14;
+    cResult[11] = tmp20;
+    tmp17 = tmp20;
+  }
+  const items1 = [tmp4.nsfwContainer, tmp5];
+  cResult[2] = tmp4.nsfwContainer;
+  cResult[3] = tmp5;
+  cResult[4] = items1;
+  tmp6 = items1;
+}) : ((height) => {
   let intl;
   let items;
   let items1;
@@ -69,8 +145,79 @@ let closure_17 = react.memo((height) => {
   intl = intl2.intl;
   items1[1] = map1(Text, obj3);
   return authStore2(View, obj);
-});
-let closure_18 = react.memo((isSectionNitroLocked) => {
+}));
+let memo2 = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let height;
+  let isSectionNitroLocked;
+  let items;
+  let label;
+  let sectionStyle;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(14);
+  ({ height, label, isSectionNitroLocked, sectionStyle } = arg0);
+  const tmp4 = closure_16();
+  if (cResult[0] !== height) {
+    const obj2 = { height };
+    cResult[0] = height;
+    cResult[1] = obj2;
+    tmp5 = obj2;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === sectionStyle) {
+    if (cResult[3] === tmp4.section) {
+      let tmp6;
+      let tmp7;
+      let tmp10;
+      if (cResult[4] === tmp5) {
+        tmp6 = cResult[5];
+      }
+      if (cResult[6] !== isSectionNitroLocked) {
+        const tmp8 = isSectionNitroLocked && map1(tmp(9683).PremiumUpsellGradientBackground, {});
+        cResult[6] = isSectionNitroLocked;
+        cResult[7] = tmp8;
+        tmp7 = tmp8;
+      } else {
+        tmp7 = cResult[7];
+      }
+      if (cResult[8] !== label) {
+        const obj3 = { lineClamp: 1, color: "interactive-text-default", variant: "heading-sm/semibold", children: label };
+        const tmp12 = map1(Text_Text.Text, obj3);
+        cResult[8] = label;
+        cResult[9] = tmp12;
+        tmp10 = tmp12;
+      } else {
+        tmp10 = cResult[9];
+      }
+      if (cResult[10] === tmp6) {
+        if (cResult[11] === tmp7) {
+          let tmp13;
+          if (cResult[12] === tmp10) {
+            tmp13 = cResult[13];
+          }
+          return tmp13;
+        }
+      }
+      const obj4 = { style: tmp6, children: items };
+      items = [tmp7, tmp10];
+      const tmp16 = authStore2(View, obj4);
+      cResult[10] = tmp6;
+      cResult[11] = tmp7;
+      cResult[12] = tmp10;
+      cResult[13] = tmp16;
+      tmp13 = tmp16;
+    }
+  }
+  const items1 = [tmp4.section, sectionStyle, tmp5];
+  cResult[2] = sectionStyle;
+  cResult[3] = tmp4.section;
+  cResult[4] = tmp5;
+  cResult[5] = items1;
+  tmp6 = items1;
+}) : ((isSectionNitroLocked) => {
   let height;
   let items;
   let items1;
@@ -87,8 +234,46 @@ let closure_18 = react.memo((isSectionNitroLocked) => {
   }
   items1 = [isSectionNitroLocked, map1(Text_Text.Text, { lineClamp: 1, color: "interactive-text-default", variant: "heading-sm/semibold", children: label })];
   return tmp(tmp2, obj);
-});
-let closure_19 = react.memo((height) => {
+}));
+const memo3 = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_19 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let height;
+  let isSectionNitroLocked;
+  let tmp4;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(7);
+  ({ height, isSectionNitroLocked } = arg0);
+  if (cResult[0] !== height) {
+    const obj2 = { height };
+    cResult[0] = height;
+    cResult[1] = obj2;
+    tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] !== isSectionNitroLocked) {
+    const tmp6 = isSectionNitroLocked && map1(PremiumUpsellGradientBackground.PremiumUpsellGradientBackground, {});
+    cResult[2] = isSectionNitroLocked;
+    cResult[3] = tmp6;
+    tmp5 = tmp6;
+  } else {
+    tmp5 = cResult[3];
+  }
+  if (cResult[4] === tmp4) {
+    let tmp8;
+    if (cResult[5] === tmp5) {
+      tmp8 = cResult[6];
+    }
+    return tmp8;
+  }
+  const tmp9 = map1(View, { style: tmp4, children: tmp5 });
+  cResult[4] = tmp4;
+  cResult[5] = tmp5;
+  cResult[6] = tmp9;
+  tmp8 = tmp9;
+}) : ((height) => {
   let isSectionNitroLocked = height.isSectionNitroLocked;
   const obj = { style: { height: height.height }, children: isSectionNitroLocked };
   const tmp2 = View;
@@ -96,8 +281,175 @@ let closure_19 = react.memo((height) => {
     isSectionNitroLocked = tmp(PremiumUpsellGradientBackground.PremiumUpsellGradientBackground, {});
   }
   return map1(tmp2, obj);
-});
-const memoResult = react.memo((bottomSheetRef) => {
+}));
+const memo4 = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+const memo4Result = memo4(ReactCompilerGating.isReactCompilerEnabled() ? ((bottomSheetRef) => {
+  let channel;
+  let height;
+  let height2;
+  let inPortalKeyboard;
+  let insetBottom;
+  let insetTop;
+  let length;
+  let onPressSticker;
+  let rowSize;
+  let searchResults;
+  let setCategoryIndex;
+  let stickerFormats;
+  let tmp15;
+  let tmp16;
+  let tmp = bottomSheetRef;
+  let tmp2 = setCategoryIndex;
+  let obj = bottomSheetRef(setCategoryIndex[11]);
+  const cResult = obj.c(128);
+  bottomSheetRef = bottomSheetRef.bottomSheetRef;
+  const bottomSheetIndex = bottomSheetRef.bottomSheetIndex;
+  setCategoryIndex = bottomSheetRef.setCategoryIndex;
+  ({ searchResults, onPressSticker } = bottomSheetRef);
+  const onLongPressStickerDetail = bottomSheetRef.onLongPressStickerDetail;
+  ({ insetBottom, insetTop, channel } = bottomSheetRef);
+  ({ inPortalKeyboard, stickerFormats } = bottomSheetRef);
+  if (undefined !== insetTop) {
+    let tmp5 = insetTop;
+  }
+  let closure_6 = tmp6;
+  if (cResult[0] !== stickerFormats) {
+    let tmp8 = stickerFormats;
+    if (undefined === stickerFormats) {
+      let items = [tmp(tmp2[17]).StickerFormat.PNG, tmp(tmp2[17]).StickerFormat.APNG, tmp(tmp2[17]).StickerFormat.LOTTIE, tmp(tmp2[17]).StickerFormat.GIF];
+      tmp8 = items;
+    }
+    cResult[0] = stickerFormats;
+    let num = 1;
+    cResult[1] = tmp8;
+  }
+  onLongPressStickerDetail.useRef(null);
+  const sectionSticker = closure_16();
+  const tmp10 = closure_16();
+  const tmp11 = onPressSticker(onLongPressStickerDetail.useState(null), 2);
+  const focusedSticker = tmp11[0];
+  const setFocusedSticker = tmp11[1];
+  const tmpResult = tmp(tmp2[18]);
+  const sharedValue = tmpResult.useSharedValue(false);
+  const ref = onLongPressStickerDetail.useRef(0);
+  const ref2 = onLongPressStickerDetail.useRef(0);
+  const tmpResult3 = tmp(tmp2[19]);
+  const isPortalKeyboardInModal = tmpResult3.useIsPortalKeyboardInModal();
+  const containerWidth = bottomSheetIndex(tmp2[20])(undefined !== inPortalKeyboard && inPortalKeyboard);
+  const tmp14 = bottomSheetIndex(tmp2[20])(undefined !== inPortalKeyboard && inPortalKeyboard);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [closure_6];
+    class K {
+      constructor() {
+        return closure_6.hasLoadedStickerPacks;
+      }
+    }
+    cResult[2] = items1;
+    cResult[3] = K;
+    tmp16 = K;
+    tmp15 = items1;
+  } else {
+    tmp15 = cResult[2];
+    tmp16 = cResult[3];
+  }
+  const tmpResult4 = tmp(tmp2[21]);
+  const stateFromStores = tmpResult4.useStateFromStores(tmp15, tmp16);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class J {
+      constructor(setPackToScrollTo) {
+        return setPackToScrollTo.setPackToScrollTo;
+      }
+    }
+    let num3 = 4;
+    cResult[4] = J;
+    class K {
+      constructor() {
+        return closure_6.hasLoadedStickerPacks;
+      }
+    }
+  } else {
+    class J {
+      constructor(setPackToScrollTo) {
+        return setPackToScrollTo.setPackToScrollTo;
+      }
+    }
+  }
+  const tmp20 = ref(tmp19);
+  closure_16 = tmp20;
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class J {
+      constructor(setPackToScrollTo) {
+        return setPackToScrollTo.setPackToScrollTo;
+      }
+    }
+    let num4 = 5;
+    cResult[5] = tmp22;
+    class K {
+      constructor() {
+        return closure_6.hasLoadedStickerPacks;
+      }
+    }
+  } else {
+    class J {
+      constructor(setPackToScrollTo) {
+        return setPackToScrollTo.setPackToScrollTo;
+      }
+    }
+  }
+  const scrollTo = tmp21;
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class J {
+      constructor(setPackToScrollTo) {
+        return setPackToScrollTo.setPackToScrollTo;
+      }
+    }
+    cResult[6] = tmp24;
+    class K {
+      constructor() {
+        return closure_6.hasLoadedStickerPacks;
+      }
+    }
+  } else {
+    class J {
+      constructor(setPackToScrollTo) {
+        return setPackToScrollTo.setPackToScrollTo;
+      }
+    }
+  }
+  if (cResult[7] === bottomSheetRef) {
+    class J {
+      constructor(setPackToScrollTo) {
+        return setPackToScrollTo.setPackToScrollTo;
+      }
+    }
+  }
+  function oe(index) {
+    let expand;
+    index = index.index;
+    ({ delay, expand } = index);
+    tmp23();
+    if (expand) {
+      let current = index.current;
+      if (current != null) {
+        current.expandActionSheet();
+      }
+    }
+    closure_17.scrollTo = setTimeout(() => {
+      const current = ref.current;
+      if (current != null) {
+        const obj = { section: index, item: 0, animated: true };
+        current.scrollToLocation(obj);
+      }
+      closure_16(null);
+    }, delay);
+    setCategoryIndex(index);
+  }
+  cResult[7] = bottomSheetRef;
+  cResult[8] = setCategoryIndex;
+  cResult[9] = tmp20;
+  cResult[10] = oe;
+}) : ((bottomSheetRef) => {
   let intl;
   let listHeaderSize;
   let num3;
@@ -132,7 +484,7 @@ const memoResult = react.memo((bottomSheetRef) => {
   if (stickerFormats === undefined) {
     let tmp = bottomSheetRef;
     let tmp2 = setCategoryIndex;
-    let items = [bottomSheetRef(setCategoryIndex[15]).StickerFormat.PNG, bottomSheetRef(setCategoryIndex[15]).StickerFormat.APNG, bottomSheetRef(setCategoryIndex[15]).StickerFormat.LOTTIE, bottomSheetRef(setCategoryIndex[15]).StickerFormat.GIF];
+    let items = [bottomSheetRef(setCategoryIndex[17]).StickerFormat.PNG, bottomSheetRef(setCategoryIndex[17]).StickerFormat.APNG, bottomSheetRef(setCategoryIndex[17]).StickerFormat.LOTTIE, bottomSheetRef(setCategoryIndex[17]).StickerFormat.GIF];
     stickerFormats = items;
   }
   closure_16 = undefined;
@@ -144,16 +496,16 @@ const memoResult = react.memo((bottomSheetRef) => {
   let tmp5 = onPressSticker(onLongPressStickerDetail.useState(null), 2);
   const focusedSticker = tmp5[0];
   const setFocusedSticker = tmp5[1];
-  let obj2 = bottomSheetRef(setCategoryIndex[16]);
+  let obj2 = bottomSheetRef(setCategoryIndex[18]);
   const sharedValue = obj2.useSharedValue(false);
   constants = onLongPressStickerDetail.useRef(0);
   const ref2 = onLongPressStickerDetail.useRef(0);
-  let obj3 = bottomSheetRef(setCategoryIndex[17]);
+  let obj3 = bottomSheetRef(setCategoryIndex[19]);
   const isPortalKeyboardInModal = obj3.useIsPortalKeyboardInModal();
-  const tmp12 = bottomSheetIndex(setCategoryIndex[18])(flag);
+  const tmp12 = bottomSheetIndex(setCategoryIndex[20])(flag);
   const containerWidth = tmp12;
   const items1 = [flag];
-  const obj4 = bottomSheetRef(setCategoryIndex[19]);
+  const obj4 = bottomSheetRef(setCategoryIndex[21]);
   const stateFromStores = obj4.useStateFromStores(items1, () => flag.hasLoadedStickerPacks);
   const tmp14 = ref((setPackToScrollTo) => setPackToScrollTo.setPackToScrollTo);
   closure_16 = tmp14;
@@ -192,7 +544,7 @@ const memoResult = react.memo((bottomSheetRef) => {
     };
     return obj;
   }, items2);
-  const tmp16 = bottomSheetIndex(setCategoryIndex[20])({ channel, containerWidth: tmp12, searchResults, stickerFormats });
+  const tmp16 = bottomSheetIndex(setCategoryIndex[22])({ channel, containerWidth: tmp12, searchResults, stickerFormats });
   const sectionHeights = tmp16.sectionHeights;
   const sectionSize = tmp16.sectionSize;
   ({ sectionFooterSize, sectionFooterSizes } = tmp16);
@@ -294,7 +646,7 @@ const memoResult = react.memo((bottomSheetRef) => {
   }, items8);
   const memo1 = obj.useMemo(() => {
     let length;
-    const obj = bottomSheetIndex(setCategoryIndex[24]);
+    const obj = bottomSheetIndex(setCategoryIndex[26]);
     const debounceResult = obj.debounce((arg0) => {
       let num = 0;
       if (0 < sectionHeights.length) {
@@ -318,7 +670,7 @@ const memoResult = react.memo((bottomSheetRef) => {
       setCategoryIndex(num);
     }, 100);
     bottomSheetRef = debounceResult;
-    const obj2 = bottomSheetIndex(setCategoryIndex[24]);
+    const obj2 = bottomSheetIndex(setCategoryIndex[26]);
     const debounceResult1 = obj2.debounce((arg0, arg1) => {
       const sum = arg0 + arg1 / 2;
       let num = 0;
@@ -397,17 +749,17 @@ const memoResult = react.memo((bottomSheetRef) => {
   }, items15);
   if (tmp19) {
     const obj5 = { inActionSheet: true, insetTop: num2, insetBottom: num };
-    tmp33Result = ref2(tmp11(tmp8[26]), obj5);
+    tmp33Result = ref2(tmp11(tmp8[28]), obj5);
   } else {
-    const obj6 = { accessibilityLabel: intl.string(bottomSheetRef(setCategoryIndex[13]).t.nf1s3u), estimatedListSize: tmp7Result.getCustomKeyboardHeight(), inActionSheet: true, preventNativeModalDismiss: isPortalKeyboardInModal, insetEnd: num, insetStart: num2, itemSize: rowHeight, keyboardShouldPersistTaps: "always", listId: "sticker-picker-list", listFooterSize: num3, listHeaderSize, onLayout: tmp37, onScroll, placeholderConfig: memo2, renderItem: callback4, renderListFooter: callback3, renderListHeader: callback2, renderSectionHeader: callback, renderSectionFooter: callback1, ref, scrollReporting: "callbacks", sections, sectionHeaderSize: sectionSize, sectionFooterSize, wrapChildren: someResult };
-    const tmp11Result = bottomSheetIndex(setCategoryIndex[27]);
-    intl = tmp7(tmp8[13]).intl;
+    const obj6 = { accessibilityLabel: intl.string(bottomSheetRef(setCategoryIndex[14]).t.nf1s3u), estimatedListSize: tmp7Result.getCustomKeyboardHeight(), inActionSheet: true, preventNativeModalDismiss: isPortalKeyboardInModal, insetEnd: num, insetStart: num2, itemSize: rowHeight, keyboardShouldPersistTaps: "always", listId: "sticker-picker-list", listFooterSize: num3, listHeaderSize, onLayout: tmp37, onScroll, placeholderConfig: memo2, renderItem: callback4, renderListFooter: callback3, renderListHeader: callback2, renderSectionHeader: callback, renderSectionFooter: callback1, ref, scrollReporting: "callbacks", sections, sectionHeaderSize: sectionSize, sectionFooterSize, wrapChildren: someResult };
+    const tmp11Result = bottomSheetIndex(setCategoryIndex[31]);
+    intl = tmp7(tmp8[14]).intl;
     num3 = 0;
     const tmp33 = containerWidth;
     const tmp34 = stateFromStores;
-    tmp7Result = bottomSheetRef(setCategoryIndex[28]);
+    tmp7Result = bottomSheetRef(setCategoryIndex[29]);
     if (tmp18) {
-      num3 = tmp7(tmp8[29]).PREMIUM_EXPRESSION_PICKER_SEARCH_UPSELL_HEIGHT;
+      num3 = tmp7(tmp8[30]).PREMIUM_EXPRESSION_PICKER_SEARCH_UPSELL_HEIGHT;
     }
     tmp37 = undefined;
     if (someResult) {
@@ -420,8 +772,8 @@ const memoResult = react.memo((bottomSheetRef) => {
     let tmp35Result = someResult;
     if (tmp35Result) {
       let DM_CHANNEL;
-      const obj7 = { bottomSheetIndex, featureName: bottomSheetRef(setCategoryIndex[31]).EntitlementFeatureNames.STICKERS_EVERYWHERE, analyticsLocation: obj8, inPortalKeyboard: flag, shouldShow: sharedValue };
-      const tmp11Result2 = bottomSheetIndex(setCategoryIndex[30]);
+      const obj7 = { bottomSheetIndex, featureName: bottomSheetRef(setCategoryIndex[33]).EntitlementFeatureNames.STICKERS_EVERYWHERE, analyticsLocation: obj8, inPortalKeyboard: flag, shouldShow: sharedValue };
+      const tmp11Result2 = bottomSheetIndex(setCategoryIndex[32]);
       if (null != channel.guild_id) {
         DM_CHANNEL = sharedValue.GUILD_CHANNEL;
       } else {
@@ -435,8 +787,8 @@ const memoResult = react.memo((bottomSheetRef) => {
     tmp33Result = tmp33(tmp34, obj9);
   }
   return tmp33Result;
-});
+}));
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/stickers/native/StickerPickerList.tsx");
 
-export default memoResult;
+export default memo4Result;

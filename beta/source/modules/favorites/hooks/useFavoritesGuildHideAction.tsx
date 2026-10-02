@@ -1,30 +1,103 @@
-// Module ID: 15770
-// Function ID: 15771
+// Module ID: 15769
+// Function ID: 15770
 // Name: useFavoritesGuildHideAction
-// Dependencies: [19, 4655, 1074, 9685, 9684, 2070, 1101, 1115, 3361, 2]
-// Exports: default
+// Dependencies: [19, 4657, 1086, 558, 576, 9807, 9806, 2076, 1113, 1127, 3364, 2]
 
-// Module 15770 (useFavoritesGuildHideAction)
-import Constants from "Constants" /* 1074 */;
-import router_utils from "router_utils" /* 1101 */;
-import FavoritesUtils from "FavoritesUtils" /* 2070 */;
-import _modDef3361 from "module_3361" /* 3361 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 9684 */;
+// Module 15769 (useFavoritesGuildHideAction)
+import Constants from "Constants" /* 1086 */;
+import router_utils from "router_utils" /* 1113 */;
+import FavoritesUtils from "FavoritesUtils" /* 2076 */;
+import _modDef3364 from "module_3364" /* 3364 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 9806 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
-let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildHideAction.tsx");
-
-export default function useFavoritesGuildHideAction() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let hasAccess;
+  let tmp4;
+  let tmp6;
+  let tmp9;
+  let tmp = hasAccess;
+  let obj = hasAccess(576);
+  const cResult = obj.c(11);
+  let obj2 = hasAccess(9807);
+  hasAccess = obj2.useFavoritesAccess().hasAccess;
+  if (cResult[0] !== hasAccess) {
+    const fn = function s() {
+      const tmp = hasAccess;
+      if (tmp) {
+        const obj = FavoritesActionCreators;
+        const result = obj.setFavoritesGuildVisibility(false, "server_context_menu");
+      }
+      const obj2 = FavoritesUtils;
+      if (obj2.isFavoritesGuildId(SelectedGuildStore.getGuildId())) {
+        const obj3 = router_utils;
+        obj3.transitionTo(Routes.ME);
+      }
+    };
+    cResult[0] = hasAccess;
+    cResult[1] = fn;
+    tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] !== hasAccess) {
+    let ojM1xJ;
+    const intl = tmp(1127).intl;
+    const string = intl.string;
+    if (hasAccess) {
+      ojM1xJ = _modDef3364["8FO0y9"];
+    } else {
+      ojM1xJ = tmp(1127).t.ojM1xJ;
+    }
+    const stringResult = string(ojM1xJ);
+    cResult[2] = hasAccess;
+    cResult[3] = stringResult;
+    tmp6 = stringResult;
+  } else {
+    tmp6 = cResult[3];
+  }
+  if (cResult[4] !== hasAccess) {
+    let stringResult1;
+    if (hasAccess) {
+      const intl2 = tmp(1127).intl;
+      stringResult1 = intl2.string(_modDef3364.FaHxWl);
+    }
+    cResult[4] = hasAccess;
+    cResult[5] = stringResult1;
+    tmp9 = stringResult1;
+  } else {
+    tmp9 = cResult[5];
+  }
+  if (cResult[6] === tmp4) {
+    if (cResult[7] === !hasAccess) {
+      if (cResult[8] === tmp6) {
+        let tmp12;
+        if (cResult[9] === tmp9) {
+          tmp12 = cResult[10];
+        }
+        return tmp12;
+      }
+    }
+  }
+  let obj3 = { isPreview: tmp5, label: tmp6, subLabel: tmp9, perform: tmp4 };
+  cResult[6] = tmp4;
+  cResult[7] = !hasAccess;
+  cResult[8] = tmp6;
+  cResult[9] = tmp9;
+  cResult[10] = obj3;
+  tmp12 = obj3;
+}) : (() => {
   let callback;
   let hasAccess;
   let ojM1xJ;
   let string;
   let stringResult;
   let tmp = hasAccess;
-  let obj = hasAccess(9685);
+  let obj = hasAccess(9807);
   hasAccess = obj.useFavoritesAccess().hasAccess;
   const items = [hasAccess];
   let obj2 = { isPreview: !hasAccess, label: string(ojM1xJ), subLabel: stringResult, perform: callback };
@@ -40,17 +113,20 @@ export default function useFavoritesGuildHideAction() {
       obj3.transitionTo(Routes.ME);
     }
   }, items);
-  const intl = hasAccess(1115).intl;
+  const intl = hasAccess(1127).intl;
   string = intl.string;
   if (hasAccess) {
-    ojM1xJ = _modDef3361["8FO0y9"];
+    ojM1xJ = _modDef3364["8FO0y9"];
   } else {
-    ojM1xJ = tmp(1115).t.ojM1xJ;
+    ojM1xJ = tmp(1127).t.ojM1xJ;
   }
   stringResult = undefined;
   if (hasAccess) {
-    const intl2 = tmp(1115).intl;
-    stringResult = intl2.string(_modDef3361.FaHxWl);
+    const intl2 = tmp(1127).intl;
+    stringResult = intl2.string(_modDef3364.FaHxWl);
   }
   return obj2;
-};
+});
+let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildHideAction.tsx");
+
+export default tmp2;

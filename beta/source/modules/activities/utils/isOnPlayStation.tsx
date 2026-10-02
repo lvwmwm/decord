@@ -1,11 +1,11 @@
-// Module ID: 12577
-// Function ID: 12578
+// Module ID: 12579
+// Function ID: 12580
 // Name: isOnPlayStation
-// Dependencies: [1074, 2]
+// Dependencies: [1086, 2]
 // Exports: default
 
-// Module 12577 (isOnPlayStation)
-import Constants from "Constants" /* 1074 */;
+// Module 12579 (isOnPlayStation)
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const ActivityGamePlatforms = Constants.ActivityGamePlatforms;

@@ -1,17 +1,17 @@
-// Module ID: 10263
-// Function ID: 10264
+// Module ID: 10301
+// Function ID: 10302
 // Name: SocialLayerStorefrontActionCreators
-// Dependencies: [5, 8248, 6649, 1074, 1091, 573, 6647, 8319, 1271, 2011, 559, 2]
+// Dependencies: [5, 8245, 6650, 1086, 1103, 585, 6648, 8316, 1283, 2017, 569, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 10263 (SocialLayerStorefrontActionCreators)
-import BackoffDefault from "Backoff" /* 559 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import DurationsDefault from "Durations" /* 1091 */;
+// Module 10301 (SocialLayerStorefrontActionCreators)
+import BackoffDefault from "Backoff" /* 569 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import DurationsDefault from "Durations" /* 1103 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8248 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6649 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8245 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6650 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -175,13 +175,13 @@ let obj = function _fetchSocialLayerStorefront2() {
         }
         c7 = 0;
       }
-      await "HermesInternal";
+      await "IconComponent";
       eager = tmp4;
       obj6 = closure_2;
       if (closure_2 === undefined) {
         obj6 = {};
       }
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -278,13 +278,13 @@ obj = function _fetchSocialLayerStorefrontSkuWithUrl2() {
           c6 = 0;
         }
       }
-      await "HermesInternal";
+      await "IconComponent";
       closure_4 = tmp;
       obj7 = closure_2;
       if (closure_2 === undefined) {
         obj7 = {};
       }
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -317,7 +317,7 @@ obj = function _fetchSocialLayerStorefrontEntries() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -395,7 +395,7 @@ obj = function _fetchSocialLayerStorefrontEntries() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp24) {
           closure_3 = tmp24;
           if (0 === c4) {
@@ -428,7 +428,7 @@ obj = function _fetchSocialLayerStorefrontById() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -547,7 +547,7 @@ obj = function _fetchSocialLayerStorefrontById() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp62) {
           storefront = tmp62;
           if (0 === c6) {
@@ -582,7 +582,7 @@ obj = function _fetchSocialLayerStorefrontAnnouncement() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -639,7 +639,7 @@ obj = function _fetchSocialLayerStorefrontAnnouncement() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp34) {
           closure_3 = tmp34;
@@ -668,7 +668,7 @@ obj = function _fetchSocialLayerStorefrontConfig() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -785,7 +785,7 @@ obj = function _fetchSocialLayerStorefrontConfig() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp42) {
         if (0 === c3) {
           c5 = 3;
@@ -817,7 +817,7 @@ obj = function _fetchSocialLayerStorefrontLaunchAnnouncement() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c11;
@@ -907,7 +907,7 @@ obj = function _fetchSocialLayerStorefrontLaunchAnnouncement() {
             c11 = 0;
           }
           c13 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp43) {
         closure_10 = tmp43;

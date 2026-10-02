@@ -1,17 +1,17 @@
-// Module ID: 8826
-// Function ID: 8827
+// Module ID: 8821
+// Function ID: 8822
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 5063, 2045, 2099, 1372, 2044, 2005, 8827, 8764, 4458, 8828, 8793, 8792, 8803, 8804, 8789, 12444, 8782, 2]
+// Dependencies: [5, 5064, 2051, 2102, 1378, 2050, 2011, 8822, 8759, 4461, 8823, 8788, 8787, 8798, 8799, 8784, 12442, 8777, 2]
 // Exports: default
 
-// Module 8826 (handleJoinEmbeddedActivity)
-import Constants from "Constants" /* 2005 */;
+// Module 8821 (handleJoinEmbeddedActivity)
+import Constants from "Constants" /* 2011 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5063 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import UserStore from "UserStore" /* 1372 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import ApplicationStore from "ApplicationStore" /* 5064 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import UserStore from "UserStore" /* 1378 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
               let closure_18;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === analyticsLocations) {
             if (arg0 === 1) {

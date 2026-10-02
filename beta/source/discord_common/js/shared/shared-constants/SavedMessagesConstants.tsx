@@ -1,9 +1,9 @@
-// Module ID: 7272
-// Function ID: 7273
+// Module ID: 7276
+// Function ID: 7277
 // Name: SavedMessagesConstants
 // Dependencies: [2]
 
-// Module 7272 (SavedMessagesConstants)
+// Module 7276 (SavedMessagesConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/SavedMessagesConstants.tsx");

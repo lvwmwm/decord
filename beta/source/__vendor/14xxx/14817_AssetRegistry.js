@@ -1,10 +1,10 @@
 // Module ID: 14817
 // Function ID: 14818
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 14817 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "45bf3d60b04cc6fd9a97d07a70a73cd6", name: "ThemeMidnightIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/avatars", width: 161, height: 160, scales: [1], hash: "a65b20898883190dcbc92bb129f3d9b7", name: "wumpus_1", type: "png" });

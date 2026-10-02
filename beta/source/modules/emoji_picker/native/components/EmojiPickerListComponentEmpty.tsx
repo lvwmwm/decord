@@ -1,17 +1,20 @@
-// Module ID: 9777
-// Function ID: 9778
+// Module ID: 9693
+// Function ID: 9694
 // Name: EmojiPickerListComponentEmpty
-// Dependencies: [19, 17, 21, 4836, 576, 9778, 9782, 6045, 1177, 1115, 2]
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 9694, 9698, 6038, 1127, 1189, 2]
 
-// Module 9777 (EmojiPickerListComponentEmpty)
+// Module 9693 (EmojiPickerListComponentEmpty)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import SearchEmpty from "SearchEmpty" /* 9778 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9782 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import SearchEmpty from "SearchEmpty" /* 9694 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9698 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -24,7 +27,82 @@ obj2 = { color: nativeDefault.colors.TEXT_SUBTLE };
 createStyles = createStyles.createStyles;
 obj3 = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
 let closure_5 = createStyles(obj);
-const memoResult = react.memo(function EmojiPickerListComponentEmpty(insetBottom) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let inActionSheet;
+  let insetBottom;
+  let insetTop;
+  const obj = react2;
+  const cResult = obj.c(14);
+  ({ inActionSheet, insetTop, insetBottom } = arg0);
+  const tmp4 = closure_5();
+  if (cResult[0] === insetBottom) {
+    let tmp5;
+    let BottomSheetScrollView;
+    let tmp10;
+    if (cResult[1] === insetTop) {
+      tmp5 = cResult[2];
+    }
+    const tmpResult = SearchEmpty;
+    const searchEmptySource = tmpResult.useSearchEmptySource();
+    const tmpResult2 = useModalDismissGuardRefreshControl;
+    const modalDismissGuardRefreshControl = tmpResult2.useModalDismissGuardRefreshControl();
+    if (inActionSheet) {
+      BottomSheetScrollView = tmp(6038).BottomSheetScrollView;
+    } else {
+      BottomSheetScrollView = ScrollView;
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(intl2.t.IxxiKF);
+      cResult[3] = stringResult;
+      tmp10 = stringResult;
+    } else {
+      tmp10 = cResult[3];
+    }
+    if (cResult[4] === searchEmptySource) {
+      if (cResult[5] === tmp4.emptyStateBody) {
+        if (cResult[6] === tmp4.emptyStateContainer) {
+          let tmp12;
+          if (cResult[7] === tmp4.emptyStateImage) {
+            tmp12 = cResult[8];
+          }
+          if (cResult[9] === BottomSheetScrollView) {
+            if (cResult[10] === tmp5) {
+              if (cResult[11] === tmp8) {
+                let tmp15;
+                if (cResult[12] === tmp12) {
+                  tmp15 = cResult[13];
+                }
+                return tmp15;
+              }
+            }
+          }
+          const tmp17 = <BottomSheetScrollView contentContainerStyle={tmp5} keyboardShouldPersistTaps="always" refreshControl={tmp8}>{tmp12}</BottomSheetScrollView>;
+          cResult[9] = BottomSheetScrollView;
+          cResult[10] = tmp5;
+          cResult[11] = tmp8;
+          cResult[12] = tmp12;
+          cResult[13] = tmp17;
+          tmp15 = tmp17;
+        }
+      }
+    }
+    ({ emptyStateBody: obj5.bodyStyle, emptyStateContainer: obj5.containerStyle, emptyStateImage: obj5.imageStyle } = tmp4);
+    const tmp14 = jsx(native.RefreshEmptyState, { source: searchEmptySource, body: tmp10, bodyStyle: null, containerStyle: null, imageStyle: null });
+    cResult[4] = searchEmptySource;
+    cResult[5] = tmp4.emptyStateBody;
+    cResult[6] = tmp4.emptyStateContainer;
+    cResult[7] = tmp4.emptyStateImage;
+    cResult[8] = tmp14;
+    tmp12 = tmp14;
+  }
+  const obj4 = { marginBottom: insetBottom, marginTop: insetTop, flex: 1 };
+  cResult[0] = insetBottom;
+  cResult[1] = insetTop;
+  cResult[2] = obj4;
+  tmp5 = obj4;
+}) : ((insetBottom) => {
   let inActionSheet;
   let insetTop;
   let intl;
@@ -38,7 +116,7 @@ const memoResult = react.memo(function EmojiPickerListComponentEmpty(insetBottom
   const obj2 = useModalDismissGuardRefreshControl;
   const modalDismissGuardRefreshControl = obj2.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp3(6045).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(6038).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
@@ -47,11 +125,11 @@ const memoResult = react.memo(function EmojiPickerListComponentEmpty(insetBottom
     tmp8 = modalDismissGuardRefreshControl;
   }
   ({ source: searchEmptySource, body: intl.string(intl2.t.IxxiKF), bodyStyle: null, containerStyle: null, imageStyle: null });
-  const RefreshEmptyState = tmp3(1177).RefreshEmptyState;
-  intl = tmp3(1115).intl;
+  const RefreshEmptyState = tmp3(1189).RefreshEmptyState;
+  intl = tmp3(1127).intl;
   ({ emptyStateBody: obj4.bodyStyle, emptyStateContainer: obj4.containerStyle, emptyStateImage: obj4.imageStyle } = tmp);
   return <BottomSheetScrollView contentContainerStyle={memo} keyboardShouldPersistTaps="always" refreshControl={tmp8}>{null}</BottomSheetScrollView>;
-});
+}));
 const result = size.fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponentEmpty.tsx");
 
 export default memoResult;

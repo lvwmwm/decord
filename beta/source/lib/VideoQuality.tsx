@@ -1,18 +1,18 @@
-// Module ID: 13365
-// Function ID: 13366
+// Module ID: 13367
+// Function ID: 13368
 // Name: VideoQuality
-// Dependencies: [4894, 13362, 4865, 7161, 4891, 7160, 12, 1364, 11, 2062, 2]
+// Dependencies: [4895, 13364, 4866, 7165, 4892, 7164, 12, 1370, 11, 2068, 2]
 
-// Module 13365 (VideoQuality)
+// Module 13367 (VideoQuality)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import TimeUtils from "TimeUtils" /* 4865 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
-import VideoQualityStats from "VideoQualityStats" /* 7160 */;
-import Histogram from "Histogram" /* 7161 */;
-import NetworkQualityDefault from "NetworkQuality" /* 13362 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 4894 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import TimeUtils from "TimeUtils" /* 4866 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4892 */;
+import VideoQualityStats from "VideoQualityStats" /* 7164 */;
+import Histogram from "Histogram" /* 7165 */;
+import NetworkQualityDefault from "NetworkQuality" /* 13364 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 4895 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, map, map1, set, vmafHistogram;
@@ -280,23 +280,23 @@ class VideoQuality extends TypedEventEmitter {
         if (num == null) {
           num = 0;
         }
-        num2 = value.get(tmp2(7160).CodecTypes.H265);
+        num2 = value.get(tmp2(7164).CodecTypes.H265);
         if (num2 == null) {
           num2 = 0;
         }
-        num3 = value.get(tmp2(7160).CodecTypes.VP8);
+        num3 = value.get(tmp2(7164).CodecTypes.VP8);
         if (num3 == null) {
           num3 = 0;
         }
-        num4 = value.get(tmp2(7160).CodecTypes.VP9);
+        num4 = value.get(tmp2(7164).CodecTypes.VP9);
         if (num4 == null) {
           num4 = 0;
         }
-        num5 = value.get(tmp2(7160).CodecTypes.AV1);
+        num5 = value.get(tmp2(7164).CodecTypes.AV1);
         if (num5 == null) {
           num5 = 0;
         }
-        num6 = value.get(tmp2(7160).CodecTypes.UNKNOWN);
+        num6 = value.get(tmp2(7164).CodecTypes.UNKNOWN);
         if (num6 == null) {
           num6 = 0;
         }
@@ -314,23 +314,23 @@ class VideoQuality extends TypedEventEmitter {
     if (num8 == null) {
       num8 = 0;
     }
-    num9 = map.get(tmp7(7160).CodecTypes.H265);
+    num9 = map.get(tmp7(7164).CodecTypes.H265);
     if (num9 == null) {
       num9 = 0;
     }
-    num10 = map.get(tmp7(7160).CodecTypes.VP8);
+    num10 = map.get(tmp7(7164).CodecTypes.VP8);
     if (num10 == null) {
       num10 = 0;
     }
-    num11 = map.get(tmp7(7160).CodecTypes.VP9);
+    num11 = map.get(tmp7(7164).CodecTypes.VP9);
     if (num11 == null) {
       num11 = 0;
     }
-    num12 = map.get(tmp7(7160).CodecTypes.AV1);
+    num12 = map.get(tmp7(7164).CodecTypes.AV1);
     if (num12 == null) {
       num12 = 0;
     }
-    num13 = map.get(tmp7(7160).CodecTypes.UNKNOWN);
+    num13 = map.get(tmp7(7164).CodecTypes.UNKNOWN);
     if (num13 == null) {
       num13 = 0;
     }
@@ -1325,7 +1325,7 @@ class VideoQuality extends TypedEventEmitter {
     dependencyMap = transport;
     transport = transport.transport;
     let tmp = videoEntropy;
-    let obj = videoEntropy(1364);
+    let obj = videoEntropy(1370);
     let num = 1;
     if (!obj.isWeb()) {
       const receiverReports = transport.receiverReports;
@@ -1343,14 +1343,14 @@ class VideoQuality extends TypedEventEmitter {
     self.updateSendState({ receivers: num });
     let value = self.cameraDuration.value;
     const cameraDuration = self.cameraDuration;
-    let tmp7 = self.connection.context === tmp(4891).MediaEngineContextTypes.DEFAULT;
+    let tmp7 = self.connection.context === tmp(4892).MediaEngineContextTypes.DEFAULT;
     if (tmp7) {
       let tmp8 = null;
       tmp7 = null != transport.camera;
     }
     cameraDuration.value = tmp7;
     const cameraOpportunityDuration = self.cameraOpportunityDuration;
-    let tmp9 = self.connection.context === tmp(4891).MediaEngineContextTypes.DEFAULT;
+    let tmp9 = self.connection.context === tmp(4892).MediaEngineContextTypes.DEFAULT;
     if (tmp9) {
       let tmp10 = null;
       tmp9 = null != transport.camera;
@@ -1360,7 +1360,7 @@ class VideoQuality extends TypedEventEmitter {
     }
     cameraOpportunityDuration.value = tmp9;
     const cameraSendDuration = self.cameraSendDuration;
-    let tmp11 = self.connection.context === tmp(4891).MediaEngineContextTypes.DEFAULT;
+    let tmp11 = self.connection.context === tmp(4892).MediaEngineContextTypes.DEFAULT;
     if (tmp11) {
       tmp11 = null != transport.camera;
     }
@@ -1673,7 +1673,7 @@ class VideoQuality extends TypedEventEmitter {
     }
     const tmp19 = 0 !== set.size && 0 !== set1.size;
     if (tmp19) {
-      const tmpResult = tmp(2062);
+      const tmpResult = tmp(2068);
       if (tmpResult.areSetsEqual(set, set1)) {
         self.symmetricCodecUpdates = self.symmetricCodecUpdates + 1;
       } else {

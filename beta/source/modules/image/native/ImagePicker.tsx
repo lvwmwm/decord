@@ -1,17 +1,17 @@
-// Module ID: 5462
-// Function ID: 5463
+// Module ID: 5463
+// Function ID: 5464
 // Name: ImagePicker
-// Dependencies: [1182, 1085, 1364, 5463, 5464, 576, 5466, 1115, 2]
+// Dependencies: [1194, 1097, 1370, 5464, 5465, 588, 5467, 1127, 2]
 
-// Module 5462 (ImagePicker)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl7 from "intl" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ImagePickerUtils from "ImagePickerUtils" /* 5463 */;
-import react_native from "react-native" /* 5464 */;
-import react_nativeDefault from "react-native" /* 5466 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+// Module 5463 (ImagePicker)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1097 */;
+import intl7 from "intl" /* 1127 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import ImagePickerUtils from "ImagePickerUtils" /* 5464 */;
+import react_native from "react-native" /* 5465 */;
+import react_nativeDefault from "react-native" /* 5467 */;
+import ThemeStore from "ThemeStore" /* 1194 */;
 import size_mod from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;
@@ -89,7 +89,7 @@ let obj = {
     });
     return promise;
   },
-  launchCropper(catchPromise) {
+  launchCropper(size) {
     let freeStyleCropEnabled;
     let height;
     let includeBase64;
@@ -103,7 +103,7 @@ let obj = {
     let uri;
     let width;
     const theme = ThemeStore.theme;
-    ({ uri, width, height, includeBase64, mimeType, freeStyleCropEnabled } = catchPromise);
+    ({ uri, width, height, includeBase64, mimeType, freeStyleCropEnabled } = size);
     const internal = nativeDefault.internal;
     const semanticColor = internal.resolveSemanticColor(theme, nativeDefault.colors.BACKGROUND_BASE_LOW);
     const internal2 = nativeDefault.internal;

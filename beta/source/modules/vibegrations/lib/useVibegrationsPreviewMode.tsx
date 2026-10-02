@@ -1,23 +1,145 @@
-// Module ID: 16270
-// Function ID: 16271
+// Module ID: 16272
+// Function ID: 16273
 // Name: useVibegrationsPreviewMode
-// Dependencies: [32, 19, 502, 504, 16271, 16272, 8473, 6584, 8783, 2]
-// Exports: useVibegrationsPreviewMode
+// Dependencies: [32, 19, 502, 558, 576, 504, 16273, 16274, 8470, 6585, 8778, 2]
 
-// Module 16270 (useVibegrationsPreviewMode)
+// Module 16272 (useVibegrationsPreviewMode)
 import get_initialized from "get initialized" /* 504 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6584 */;
-import canLaunchFrame from "canLaunchFrame" /* 8783 */;
-import useUserApplicationWidgetDataDefault from "useUserApplicationWidgetData" /* 16271 */;
-import vibegrationsPreviewModes from "vibegrationsPreviewModes" /* 16272 */;
+import react2 from "react" /* 576 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6585 */;
+import canLaunchFrame from "canLaunchFrame" /* 8778 */;
+import useUserApplicationWidgetDataDefault from "useUserApplicationWidgetData" /* 16273 */;
+import vibegrationsPreviewModes from "vibegrationsPreviewModes" /* 16274 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsPreviewMode.tsx");
-
-export const useVibegrationsPreviewMode = function useVibegrationsPreviewMode(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let applicationId;
+  let data2;
+  let declaredActivity;
+  let installScope;
+  let isLoading;
+  let mainCardOnly;
+  let ownerAuthorizationRevoked;
+  let previewApplicationId;
+  let tmp12;
+  let tmp13;
+  let tmp21;
+  let tmp22;
+  let tmp6;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(7);
+  ({ applicationId, previewApplicationId, declaredActivity, mainCardOnly } = arg0);
+  let tmp4 = undefined !== mainCardOnly;
+  ({ installScope, ownerAuthorizationRevoked } = arg0);
+  if (tmp4) {
+    tmp4 = mainCardOnly;
+  }
+  [tmp6, tmp7] = react.useState(null);
+  _slicedToArray(react.useState(null), 2);
+  const tmp8 = _slicedToArray(react.useState(applicationId), 2);
+  if (tmp8[0] !== applicationId) {
+    tmp8[1](applicationId);
+    tmp7(null);
+  }
+  let tmp11 = null;
+  if (null != previewApplicationId) {
+    tmp11 = null;
+    if (previewApplicationId === applicationId) {
+      tmp11 = previewApplicationId;
+    }
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthenticationStore];
+    class T {
+      constructor() {
+        return closure_1_5.getId();
+      }
+    }
+    cResult[0] = items;
+    cResult[1] = T;
+    tmp12 = items;
+    tmp13 = T;
+  } else {
+    [tmp12, tmp13] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp12, tmp13);
+  const tmp16 = useUserApplicationWidgetDataDefault;
+  const applicationWidgetConfig = tmp16(stateFromStores, tmp11).applicationWidgetConfig;
+  let surfaces;
+  if (applicationWidgetConfig != null) {
+    surfaces = applicationWidgetConfig.surfaces;
+  }
+  let tmp20;
+  const profileSurfaceAvailability = vibegrationsPreviewModes.profileSurfaceAvailability;
+  vibegrationsPreviewModes;
+  if (surfaces != null) {
+    tmp20 = surfaces[tmp(undefined, 8470).ApplicationWidgetConfigSurface.WIDGET_TOP];
+  }
+  const obj2 = { widgetTop: null != tmp20, widgetBottom: null != tmp21, miniProfile: null != tmp22 };
+  tmp21 = undefined;
+  if (surfaces != null) {
+    tmp21 = surfaces[tmp(undefined, 8470).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
+  }
+  tmp22 = undefined;
+  if (surfaces != null) {
+    tmp22 = surfaces[tmp(undefined, 8470).ApplicationWidgetConfigSurface.MINI_PROFILE];
+  }
+  const result = profileSurfaceAvailability(obj2);
+  const tmp24 = null != tmp11 && (tmp4 ? result.hasMainCard : result.hasAny);
+  const useApplication = ApplicationActionCreators.useApplication;
+  ApplicationActionCreators;
+  const data = useApplication(previewApplicationId).data;
+  let tmp27 = null != previewApplicationId;
+  if (tmp27) {
+    let id;
+    if (data != null) {
+      const bot = data.bot;
+      if (bot != null) {
+        id = bot.id;
+      }
+    }
+    tmp27 = null != id;
+  }
+  const useApplication2 = ApplicationActionCreators.useApplication;
+  ApplicationActionCreators;
+  const application2 = useApplication2(applicationId);
+  ({ data: data2, isLoading } = application2);
+  if (!declaredActivity) {
+    const tmpResult10 = canLaunchFrame;
+    declaredActivity = tmpResult10.canLaunchFrame(data2);
+  }
+  const tmpResult11 = vibegrationsPreviewModes;
+  const result1 = tmpResult11.previewModeAvailability({ installScope, hasFrame: declaredActivity, hasProfileWidget: tmp24, hasBotDm: tmp27, ownerAuthorizationRevoked });
+  let previewMode = null;
+  if (!(null != applicationId && isLoading && null == data2)) {
+    const tmpResult12 = vibegrationsPreviewModes;
+    previewMode = tmpResult12.resolvePreviewMode(tmp6, result1);
+  }
+  if (cResult[2] === result1) {
+    if (cResult[3] === (null != applicationId && isLoading && null == data2)) {
+      if (cResult[4] === previewMode) {
+        let tmp35;
+        if (cResult[5] === tmp11) {
+          tmp35 = cResult[6];
+        }
+        return tmp35;
+      }
+    }
+  }
+  const obj3 = { availability: result1, isResolving: null != applicationId && isLoading && null == data2, activeMode: previewMode, setMode: tmp7, widgetApplicationId: tmp11 };
+  cResult[2] = result1;
+  cResult[3] = null != applicationId && isLoading && null == data2;
+  cResult[4] = previewMode;
+  cResult[5] = tmp11;
+  cResult[6] = obj3;
+  tmp35 = obj3;
+}) : ((arg0) => {
   let applicationId;
   let data2;
   let declaredActivity;
@@ -63,16 +185,16 @@ export const useVibegrationsPreviewMode = function useVibegrationsPreviewMode(ar
   const profileSurfaceAvailability = vibegrationsPreviewModes.profileSurfaceAvailability;
   vibegrationsPreviewModes;
   if (surfaces != null) {
-    tmp15 = surfaces[tmp8(undefined, 8473).ApplicationWidgetConfigSurface.WIDGET_TOP];
+    tmp15 = surfaces[tmp8(undefined, 8470).ApplicationWidgetConfigSurface.WIDGET_TOP];
   }
   const obj2 = { widgetTop: null != tmp15, widgetBottom: null != tmp16, miniProfile: null != tmp17 };
   tmp16 = undefined;
   if (surfaces != null) {
-    tmp16 = surfaces[tmp8(undefined, 8473).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
+    tmp16 = surfaces[tmp8(undefined, 8470).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
   }
   tmp17 = undefined;
   if (surfaces != null) {
-    tmp17 = surfaces[tmp8(undefined, 8473).ApplicationWidgetConfigSurface.MINI_PROFILE];
+    tmp17 = surfaces[tmp8(undefined, 8470).ApplicationWidgetConfigSurface.MINI_PROFILE];
   }
   const result = profileSurfaceAvailability(obj2);
   const tmp19 = null != tmp7 && (mainCardOnly ? result.hasMainCard : result.hasAny);
@@ -107,4 +229,7 @@ export const useVibegrationsPreviewMode = function useVibegrationsPreviewMode(ar
     previewMode = tmp8Result10.resolvePreviewMode(tmp2, result1);
   }
   return obj3;
-};
+});
+let result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsPreviewMode.tsx");
+
+export const useVibegrationsPreviewMode = tmp2;

@@ -1,11 +1,11 @@
-// Module ID: 8248
-// Function ID: 8249
+// Module ID: 8245
+// Function ID: 8246
 // Name: StorefrontPromotionOverrideStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 8248 (StorefrontPromotionOverrideStore)
+// Module 8245 (StorefrontPromotionOverrideStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let promotionIdOverride;

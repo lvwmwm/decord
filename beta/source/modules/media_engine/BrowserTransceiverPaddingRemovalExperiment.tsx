@@ -1,10 +1,10 @@
-// Module ID: 13351
-// Function ID: 13352
+// Module ID: 13353
+// Function ID: 13354
 // Name: BrowserTransceiverPaddingRemovalExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1441, 2]
 
-// Module 13351 (BrowserTransceiverPaddingRemovalExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 13353 (BrowserTransceiverPaddingRemovalExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

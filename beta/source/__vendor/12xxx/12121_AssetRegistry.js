@@ -1,0 +1,10 @@
+// Module ID: 12121
+// Function ID: 12122
+// Name: AssetRegistry
+// Dependencies: [1133]
+
+// Module 12121 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1133 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/create_guild/native/images", width: 161, height: 105, scales: [1, 2, 3], hash: "15df55e98006c5e50dacb86d466b47d8", name: "invite-wumpus-ticket", type: "png" });

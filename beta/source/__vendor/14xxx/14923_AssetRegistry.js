@@ -1,10 +1,10 @@
 // Module ID: 14923
 // Function ID: 14924
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 14923 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "581f8c52f7fbe4b74bb81eae47db1969", name: "EmojiFaceWithMonocleIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "82e1774e7b1dafde5756234a2c6c5214", name: "EmojiSalutingFaceIcon", type: "png" });

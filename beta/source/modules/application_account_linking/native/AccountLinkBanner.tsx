@@ -1,30 +1,202 @@
-// Module ID: 15826
-// Function ID: 15827
+// Module ID: 15825
+// Function ID: 15826
 // Name: AccountLinkBanner
-// Dependencies: [19, 17, 1372, 2042, 21, 576, 6593, 9578, 5286, 4836, 563, 6583, 6603, 5919, 5435, 5992, 1177, 4832, 1115, 5281, 8197, 2]
+// Dependencies: [19, 17, 1378, 2048, 21, 588, 6594, 10489, 5287, 4837, 558, 576, 573, 6584, 6604, 5940, 5436, 1189, 1127, 4833, 8194, 5282, 5918, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 15826 (AccountLinkBanner)
+// Module 15825 (AccountLinkBanner)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import ButtonConstants from "ButtonConstants" /* 5286 */;
-import GameIcon from "GameIcon" /* 6593 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9578 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import ButtonConstants from "ButtonConstants" /* 5287 */;
+import GameIcon from "GameIcon" /* 6594 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10489 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let startAuthorization;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let size;
 let size1;
-function AccountLinkLargeBanner(arg0) {
+const View = react_native.View;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+const PX_8 = nativeDefault.space.PX_8;
+const PX_82 = nativeDefault.space.PX_8;
+const PX_12 = nativeDefault.space.PX_12;
+const PX_16 = nativeDefault.space.PX_16;
+const PX_4 = nativeDefault.space.PX_4;
+const NORMAL = GameIcon.GameIconSizes.NORMAL;
+let closure_14 = GameIcon.GameIconImageSize[NORMAL];
+let c15 = "heading-md/bold";
+let c16 = "text-sm/medium";
+const PX_162 = nativeDefault.space.PX_16;
+let createStyles = createStyles_mod;
+let obj = { card: { padding: PX_12 }, closeButton: size, imagesContainer: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, ellipsisContainer: obj2, ellipsisDot: size1, title: { marginTop: PX_16, textAlign: "center" }, body: { marginTop: PX_4, textAlign: "center" }, ctaContainer: { marginTop: PX_162 } };
+size = { position: "absolute", top: nativeDefault.space.PX_12, right: nativeDefault.space.PX_12, width: 24, height: 24, alignItems: "center", justifyContent: "center", zIndex: 1 };
+createStyles = createStyles.createStyles;
+obj2 = { flexDirection: "row", alignItems: "center", marginHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_4 };
+size1 = { width: nativeDefault.space.PX_4, height: nativeDefault.space.PX_4, borderRadius: nativeDefault.space.PX_4 / 2, backgroundColor: nativeDefault.colors.INTERACTIVE_MUTED };
+let closure_18 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((startAuthorization) => {
+  let analyticsLocations;
+  let application;
+  let applicationAccountLinkBenefitConfig;
+  let currentUser;
+  let items1;
+  let markAsDismissed;
+  let name;
+  let tmp5;
+  let tmp6;
+  let obj = markAsDismissed(analyticsLocations[11]);
+  const cResult = obj.c(53);
+  ({ application, markAsDismissed } = startAuthorization);
+  startAuthorization = startAuthorization.startAuthorization;
+  const tmp4 = closure_18();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function u() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = markAsDismissed(analyticsLocations[12]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  const tmp10 = startAuthorization(analyticsLocations[13]);
+  analyticsLocations = tmp10(startAuthorization(tmp2[14]).MOBILE_ACCOUNT_LINK_LARGE_BANNER).analyticsLocations;
+  ({ name, applicationAccountLinkBenefitConfig } = application);
+  let reward_name;
+  const tmp9 = startAuthorization;
+  if (applicationAccountLinkBenefitConfig != null) {
+    reward_name = applicationAccountLinkBenefitConfig.reward_name;
+  }
+  if (null == reward_name) {
+    return null;
+  } else {
+    let tmp13;
+    const card = tmp4.card;
+    if (cResult[2] !== markAsDismissed) {
+      class P {
+        constructor() {
+          return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+      cResult[2] = markAsDismissed;
+      cResult[3] = P;
+    } else {
+      class P {
+        constructor() {
+          return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      class P {
+        constructor() {
+          return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+      const tmp14 = closure_6(markAsDismissed(analyticsLocations[15]).XSmallIcon, { size: "sm", color: "text-muted" });
+      cResult[4] = tmp14;
+      tmp13 = tmp14;
+    } else {
+      class P {
+        constructor() {
+          return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+    }
+    if (cResult[5] === tmp4.closeButton) {
+      let tmp23;
+      let tmp22;
+      class P {
+        constructor() {
+          return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+      if (cResult[8] !== application) {
+        class P {
+          constructor() {
+            return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+          }
+        }
+        const obj2 = { game: application, size: NORMAL };
+        cResult[8] = application;
+        cResult[9] = closure_6(tmp9(analyticsLocations[6]), obj2);
+        const tmp20 = closure_6(tmp9(analyticsLocations[6]), obj2);
+      } else {
+        class P {
+          constructor() {
+            return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+          }
+        }
+      }
+      if (cResult[10] !== tmp4.ellipsisDot) {
+        class P {
+          constructor() {
+            return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+          }
+        }
+        const obj3 = { style: tmp4.ellipsisDot };
+        const tmp25 = closure_6(View, obj3);
+        const obj4 = { style: tmp4.ellipsisDot };
+        const tmp26 = closure_6(View, obj4);
+        const obj5 = { style: tmp4.ellipsisDot };
+        cResult[10] = tmp4.ellipsisDot;
+        cResult[11] = closure_6(View, obj5);
+        cResult[12] = tmp25;
+        cResult[13] = tmp26;
+        tmp23 = tmp26;
+        tmp22 = tmp25;
+        const tmp27 = closure_6(View, obj5);
+      } else {
+        class P {
+          constructor() {
+            return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+          }
+        }
+        tmp22 = cResult[12];
+        tmp23 = cResult[13];
+      }
+      if (cResult[14] === tmp4.ellipsisContainer) {
+        class P {
+          constructor() {
+            return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+          }
+        }
+      }
+      const obj6 = { style: tmp4.ellipsisContainer, children: items1 };
+      items1 = [tmp22, tmp23, tmp21];
+      cResult[14] = tmp4.ellipsisContainer;
+      cResult[15] = tmp21;
+      cResult[16] = tmp22;
+      cResult[17] = tmp23;
+      cResult[18] = closure_7(View, obj6);
+      const tmp31 = closure_7(View, obj6);
+    }
+    const obj7 = { accessibilityRole: "button", onPress: tmp12, style: tmp4.closeButton, children: tmp13 };
+    cResult[5] = tmp4.closeButton;
+    cResult[6] = tmp12;
+    cResult[7] = closure_6(markAsDismissed(analyticsLocations[16]).PressableOpacity, obj7);
+    const tmp17 = closure_6(markAsDismissed(analyticsLocations[16]).PressableOpacity, obj7);
+  }
+}) : ((arg0) => {
   let Button;
   let application;
   let currentUser;
@@ -55,7 +227,7 @@ function AccountLinkLargeBanner(arg0) {
   let tmp8 = null;
   if (null != reward_name) {
     const obj2 = { variant: "secondary", style: tmp.card, children: items1 };
-    const Card = tmp2(tmp3[13]).Card;
+    const Card = tmp2(tmp3[22]).Card;
     const obj3 = {
       accessibilityRole: "button",
       onPress() {
@@ -64,7 +236,7 @@ function AccountLinkLargeBanner(arg0) {
       style: tmp.closeButton,
       children: closure_6(require("XSmallIcon").XSmallIcon, { size: "sm", color: "text-muted" })
     };
-    const PressableOpacity = tmp2(tmp3[14]).PressableOpacity;
+    const PressableOpacity = tmp2(tmp3[16]).PressableOpacity;
     items1 = [closure_6(PressableOpacity, obj3), , , , ];
     const obj4 = { style: tmp.imagesContainer, children: items2 };
     const obj5 = { game: application, size: NORMAL };
@@ -78,16 +250,16 @@ function AccountLinkLargeBanner(arg0) {
     items3[2] = closure_6(View, obj9);
     items2[1] = closure_7(View, obj6);
     const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "Array" };
-    const Avatar = tmp2(tmp3[16]).Avatar;
+    const Avatar = tmp2(tmp3[17]).Avatar;
     items2[2] = closure_6(Avatar, obj10);
     items1[1] = closure_7(View, obj4);
     const obj11 = { variant, color: "mobile-text-heading-primary", style: tmp.title, children: intl.formatToPlainString(require("intl").t["3gpxqO"], obj12) };
-    const Text = tmp2(tmp3[17]).Text;
+    const Text = tmp2(tmp3[19]).Text;
     intl = tmp2(tmp3[18]).intl;
     obj12 = { gameName: name };
     items1[2] = closure_6(Text, obj11);
     const obj13 = { variant: variant2, color: "text-muted", style: tmp.body, children: intl2.formatToPlainString(require("intl").t.vxvKMm, obj14) };
-    const Text2 = tmp2(tmp3[17]).Text;
+    const Text2 = tmp2(tmp3[19]).Text;
     intl2 = tmp2(tmp3[18]).intl;
     obj14 = { rewardName: reward_name };
     items1[3] = closure_6(Text2, obj13);
@@ -102,38 +274,35 @@ function AccountLinkLargeBanner(arg0) {
         },
       icon: closure_6(require("ExperimentalGameControllerLinkIcon").ExperimentalGameControllerLinkIcon, { size: "sm" })
     };
-    Button = tmp2(tmp3[19]).Button;
+    Button = tmp2(tmp3[21]).Button;
     intl3 = tmp2(tmp3[18]).intl;
     items1[4] = closure_6(View, obj15);
     tmp8 = closure_7(Card, obj2);
   }
   return tmp8;
-}
-const View = react_native.View;
-const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-const PX_8 = nativeDefault.space.PX_8;
-const PX_82 = nativeDefault.space.PX_8;
-const PX_12 = nativeDefault.space.PX_12;
-const PX_16 = nativeDefault.space.PX_16;
-const PX_4 = nativeDefault.space.PX_4;
-const NORMAL = GameIcon.GameIconSizes.NORMAL;
-let closure_14 = GameIcon.GameIconImageSize[NORMAL];
-let c15 = "heading-md/bold";
-let c16 = "text-sm/medium";
-const PX_162 = nativeDefault.space.PX_16;
-let createStyles = createStyles_mod;
-let obj = { card: { padding: PX_12 }, closeButton: size, imagesContainer: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, ellipsisContainer: obj2, ellipsisDot: size1, title: { marginTop: PX_16, textAlign: "center" }, body: { marginTop: PX_4, textAlign: "center" }, ctaContainer: { marginTop: PX_162 } };
-size = { position: "absolute", top: nativeDefault.space.PX_12, right: nativeDefault.space.PX_12, width: 24, height: 24, alignItems: "center", justifyContent: "center", zIndex: 1 };
-createStyles = createStyles.createStyles;
-obj2 = { flexDirection: "row", alignItems: "center", marginHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_4 };
-size1 = { width: nativeDefault.space.PX_4, height: nativeDefault.space.PX_4, borderRadius: nativeDefault.space.PX_4 / 2, backgroundColor: nativeDefault.colors.INTERACTIVE_MUTED };
-let closure_18 = createStyles(obj);
-const memoResult = react.memo((arg0) => {
+});
+const memo = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp2;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] !== arg0) {
+    const obj2 = {};
+    const merged = Object.assign(arg0);
+    const tmp8 = metroRequire(closure_19, obj2);
+    cResult[0] = arg0;
+    cResult[1] = tmp8;
+    tmp2 = tmp8;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return tmp2;
+}) : ((arg0) => {
   const obj = {};
   const merged = Object.assign(arg0);
-  return metroRequire(AccountLinkLargeBanner, obj);
-});
+  return metroRequire(closure_19, obj);
+}));
 size = size_mod;
 const result = size.fileFinishedImporting("modules/application_account_linking/native/AccountLinkBanner.tsx");
 

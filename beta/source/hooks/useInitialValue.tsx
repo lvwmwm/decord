@@ -1,15 +1,16 @@
-// Module ID: 5910
-// Function ID: 5911
-// Name: react
-// Dependencies: [19, 2]
+// Module ID: 5907
+// Function ID: 5908
+// Name: useInitialValue
+// Dependencies: [19, 558, 2]
 // Exports: default
 
-// Module 5910 (react)
+// Module 5907 (useInitialValue)
 import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("hooks/useInitialValue.tsx");
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("hooks/useInitialValue.tsx");
 
-export default function useInitialValue(arg0) {
-  return react.useState(arg0)[0];
-};
+export default (arg0) => react.useState(arg0)[0];

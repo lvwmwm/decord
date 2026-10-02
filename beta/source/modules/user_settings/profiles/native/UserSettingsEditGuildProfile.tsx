@@ -1,20 +1,20 @@
-// Module ID: 14203
-// Function ID: 14204
+// Module ID: 14191
+// Function ID: 14192
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 7605, 1372, 21, 4836, 576, 6583, 6603, 504, 14204, 9229, 7632, 14206, 5917, 5896, 10384, 4800, 14208, 1981, 14209, 2]
+// Dependencies: [19, 17, 7609, 1378, 21, 4837, 588, 6584, 6604, 504, 14192, 9195, 7636, 14194, 5916, 5893, 10425, 4801, 14196, 1987, 14197, 2]
 // Exports: default
 
-// Module 14203 (UserSettingsEditGuildProfile)
-import nativeDefault from "native" /* 576 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9229 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 10384 */;
+// Module 14191 (UserSettingsEditGuildProfile)
+import nativeDefault from "native" /* 588 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7636 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9195 */;
+import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 10425 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7605 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7609 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -41,10 +41,10 @@ export default function UserSettingsEditGuildProfile() {
   let resetPending;
   let stateFromStores;
   let tmp2Result;
-  function onSelectGuild(id) {
+  function onSelectGuild(dependencyMap) {
     resetPending();
     const obj = GuildIdentityActionCreators;
-    obj.setCurrentGuild(id.id);
+    obj.setCurrentGuild(dependencyMap.id);
   }
   let tmp2 = guild;
   let tmp = closure_9();

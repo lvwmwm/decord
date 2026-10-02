@@ -1,24 +1,25 @@
-// Module ID: 9039
-// Function ID: 9040
+// Module ID: 9016
+// Function ID: 9017
 // Name: TagListInputTag
-// Dependencies: [19, 17, 21, 4836, 576, 1115, 9040, 5435, 4832, 2]
-// Exports: TagListInputTagComponent
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1127, 9017, 4833, 5436, 2]
 
-// Module 9039 (TagListInputTag)
+// Module 9016 (TagListInputTag)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import Pressables from "Pressables" /* 5435 */;
-import reactDefault from "react" /* 9040 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import Pressables from "Pressables" /* 5436 */;
+import useAccessibilityPressDefault from "useAccessibilityPress" /* 9017 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp2;
-const Text_Text = tmp2(4832);
+const Text_Text = tmp2(4833);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles(() => {
@@ -29,9 +30,84 @@ let closure_6 = createStyles.createStyles(() => {
   ({ marginRight: nativeDefault.space.PX_4 });
   return obj;
 });
-const result = size.fileFinishedImporting("design/components/TagListInput/native/TagListInputTag.native.tsx");
-
-export const TagListInputTagComponent = function TagListInputTagComponent(end) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let accessibilityActions;
+  let end;
+  let onAccessibilityAction;
+  let onPress;
+  let selected;
+  let start;
+  let tag;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(26);
+  ({ tag, selected, onPress } = arg0);
+  ({ start, end } = arg0);
+  const tmp4 = undefined !== start && start;
+  const tmp5 = undefined !== end && end;
+  const tmp6 = closure_6();
+  if (cResult[0] !== tag.text) {
+    const intl = tmp(1127).intl;
+    const obj2 = { text: tag.text };
+    const formatToPlainStringResult = intl.formatToPlainString(intl2.t["0Vb9FQ"], obj2);
+    cResult[0] = tag.text;
+    cResult[1] = formatToPlainStringResult;
+    tmp7 = formatToPlainStringResult;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (cResult[2] !== onPress) {
+    class A {
+      constructor() {
+        return onPress("remove");
+      }
+    }
+    cResult[2] = onPress;
+    cResult[3] = A;
+  } else {
+    class A {
+      constructor() {
+        return onPress("remove");
+      }
+    }
+  }
+  ({ onAccessibilityAction, accessibilityActions } = useAccessibilityPressDefault(tmp9, tmp7));
+  useAccessibilityPressDefault(tmp9, tmp7);
+  if (selected) {
+    class A {
+      constructor() {
+        return onPress("remove");
+      }
+    }
+  }
+  if (tmp4) {
+    class A {
+      constructor() {
+        return onPress("remove");
+      }
+    }
+  }
+  if (tmp5) {
+    class A {
+      constructor() {
+        return onPress("remove");
+      }
+    }
+  }
+  if (cResult[4] === tmp6.tagWrapper) {
+    class A {
+      constructor() {
+        return onPress("remove");
+      }
+    }
+  }
+  const items = [tmp6.tagWrapper, undefined, undefined, undefined];
+  cResult[4] = tmp6.tagWrapper;
+  cResult[5] = undefined;
+  cResult[6] = undefined;
+  cResult[7] = undefined;
+  cResult[8] = items;
+}) : ((end) => {
   let accessibilityActions;
   let closure_129_0;
   let items1;
@@ -40,7 +116,7 @@ export const TagListInputTagComponent = function TagListInputTagComponent(end) {
   let start;
   let str;
   let tag;
-  const f87965 = () => closure_1_0("remove");
+  const f98840 = () => closure_1_0("remove");
   ({ tag, selected, onPress: closure_129_0, start } = end);
   if (start === undefined) {
     start = false;
@@ -53,10 +129,10 @@ export const TagListInputTagComponent = function TagListInputTagComponent(end) {
   const intl = intl2.intl;
   const obj = { text: tag.text };
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t["0Vb9FQ"], obj);
-  ({ onAccessibilityAction, accessibilityActions } = reactDefault(f87965, formatToPlainStringResult));
+  ({ onAccessibilityAction, accessibilityActions } = useAccessibilityPressDefault(f98840, formatToPlainStringResult));
   const items = [tmp.tagWrapper, , , ];
   let prop;
-  reactDefault(f87965, formatToPlainStringResult);
+  useAccessibilityPressDefault(f98840, formatToPlainStringResult);
   const PressableOpacity = Pressables.PressableOpacity;
   const tmp6 = hasOwnProperty;
   if (selected) {
@@ -99,4 +175,7 @@ export const TagListInputTagComponent = function TagListInputTagComponent(end) {
   }
   items1[1] = tmp13(Text, obj4);
   return tmp6(PressableOpacity, obj2);
-};
+});
+const result = size.fileFinishedImporting("design/components/TagListInput/native/TagListInputTag.native.tsx");
+
+export const TagListInputTagComponent = tmp4;

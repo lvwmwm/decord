@@ -1,17 +1,131 @@
-// Module ID: 15442
-// Function ID: 15443
+// Module ID: 15429
+// Function ID: 15430
 // Name: useCardLayout
-// Dependencies: [8226, 1479, 2]
-// Exports: useCardLayout
+// Dependencies: [8223, 558, 576, 1485, 2]
 
-// Module 15442 (useCardLayout)
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 8226 */;
+// Module 15429 (useCardLayout)
+import react from "react" /* 576 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1485 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 8223 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let result = size.fileFinishedImporting("modules/collectibles/native/hooks/useCardLayout.tsx");
-
-export const useCardLayout = function useCardLayout() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = react;
+  const cResult = obj.c(11);
+  const width = useWindowDimensionsDefault().width;
+  let num = 1;
+  if (width >= 320) {
+    num = 2;
+  }
+  if (num < 2) {
+    let tmp31;
+    if (cResult[0] !== num) {
+      const obj2 = { columns: num, cardWidth: "Array", rowWidth: "applicationId" };
+      cResult[0] = num;
+      cResult[1] = obj2;
+      tmp31 = obj2;
+    } else {
+      tmp31 = cResult[1];
+    }
+    return tmp31;
+  } else {
+    let bound;
+    let num2 = 2;
+    if (width >= 768) {
+      num2 = 4;
+    }
+    const result = tmp(8223).COLLECTIBLES_SHOP_CARD_WIDTH * num;
+    const diff = num - 1;
+    const diff1 = width - (result + tmp(8223).COLLECTIBLES_SHOP_CARD_GAP * diff);
+    if (diff1 < 2 * CollectiblesShopCardV2.COLLECTIBLES_SHOP_CARD_GAP) {
+      const _Math = Math;
+      bound = Math.max(4, diff1);
+    } else {
+      bound = 2 * tmp(8223).COLLECTIBLES_SHOP_CARD_GAP;
+    }
+    if (cResult[2] === num) {
+      if (cResult[3] === bound) {
+        let tmp9;
+        if (cResult[4] === width) {
+          tmp9 = cResult[5];
+        }
+        let tmp12 = tmp;
+        let tmp13 = tmp9;
+        let tmp14 = num;
+        let tmp16 = tmp;
+        if (tmp9 > CollectiblesShopCardV2.COLLECTIBLES_SHOP_CARD_MAX_WIDTH) {
+          let tmp21 = num;
+          tmp12 = tmp;
+          tmp13 = tmp9;
+          tmp16 = tmp;
+          tmp14 = num;
+          if (num < num2) {
+            const sum = tmp21 + 1;
+            const result1 = (width - (bound + CollectiblesShopCardV2.COLLECTIBLES_SHOP_CARD_GAP * (sum - 1))) / sum;
+            tmp12 = require;
+            tmp13 = result1;
+            tmp14 = sum;
+            tmp16 = require;
+            while (result1 > CollectiblesShopCardV2.COLLECTIBLES_SHOP_CARD_MAX_WIDTH) {
+              tmp21 = sum;
+              tmp12 = tmp18;
+              tmp13 = result1;
+              tmp16 = tmp18;
+              tmp14 = sum;
+              if (sum >= num2) {
+                break;
+              }
+            }
+          }
+        }
+        const _Math2 = Math;
+        const _Math3 = Math;
+        const bound1 = Math.max(tmp13, tmp16(8223).COLLECTIBLES_SHOP_CARD_WIDTH);
+        const minResult = min(bound1, tmp16(8223).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
+        const result2 = minResult * tmp14;
+        const diff2 = tmp14 - 1;
+        if (result2 + (bound + tmp12(8223).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
+          if (1 < tmp14) {
+            let tmp30;
+            const _Symbol = Symbol;
+            if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+              const obj3 = { columns: 1, cardWidth: "Array", rowWidth: "unicodeVersion" };
+              cResult[6] = obj3;
+              tmp30 = obj3;
+            } else {
+              tmp30 = cResult[6];
+            }
+            return tmp30;
+          }
+        }
+        const result3 = minResult * tmp14;
+        const sum1 = result3 + tmp16(8223).COLLECTIBLES_SHOP_CARD_GAP * diff2;
+        if (cResult[7] === minResult) {
+          if (cResult[8] === tmp14) {
+            let tmp29;
+            if (cResult[9] === sum1) {
+              tmp29 = cResult[10];
+            }
+            return tmp29;
+          }
+        }
+        const obj4 = { columns: tmp14, cardWidth: minResult, rowWidth: sum1 };
+        cResult[7] = minResult;
+        cResult[8] = tmp14;
+        cResult[9] = sum1;
+        cResult[10] = obj4;
+        tmp29 = obj4;
+      }
+    }
+    const result4 = (width - (bound + tmp(8223).COLLECTIBLES_SHOP_CARD_GAP * diff)) / num;
+    cResult[2] = num;
+    cResult[3] = bound;
+    cResult[4] = width;
+    cResult[5] = result4;
+    tmp9 = result4;
+  }
+}) : (() => {
   let result4;
   const width = useWindowDimensionsDefault().width;
   let num = 1;
@@ -19,7 +133,7 @@ export const useCardLayout = function useCardLayout() {
     num = 2;
   }
   if (num < 2) {
-    return { columns: num, cardWidth: "Array", rowWidth: "paddingHorizontal" };
+    return { columns: num, cardWidth: "Array", rowWidth: "applicationId" };
   } else {
     let bound;
     let num2 = 2;
@@ -33,9 +147,9 @@ export const useCardLayout = function useCardLayout() {
       const _Math = Math;
       bound = Math.max(4, diff1);
     } else {
-      bound = 2 * tmp2(8226).COLLECTIBLES_SHOP_CARD_GAP;
+      bound = 2 * tmp2(8223).COLLECTIBLES_SHOP_CARD_GAP;
     }
-    const result1 = (width - (bound + tmp2(8226).COLLECTIBLES_SHOP_CARD_GAP * diff)) / num;
+    const result1 = (width - (bound + tmp2(8223).COLLECTIBLES_SHOP_CARD_GAP * diff)) / num;
     let tmp10 = tmp2;
     let tmp11 = result1;
     let tmp12 = num;
@@ -67,18 +181,21 @@ export const useCardLayout = function useCardLayout() {
     }
     const _Math2 = Math;
     const _Math3 = Math;
-    const bound1 = Math.max(tmp11, tmp14(8226).COLLECTIBLES_SHOP_CARD_WIDTH);
-    const minResult = min(bound1, tmp14(8226).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
+    const bound1 = Math.max(tmp11, tmp14(8223).COLLECTIBLES_SHOP_CARD_WIDTH);
+    const minResult = min(bound1, tmp14(8223).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
     const result3 = minResult * tmp12;
     const diff2 = tmp12 - 1;
-    if (result3 + (bound + tmp10(8226).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
+    if (result3 + (bound + tmp10(8223).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
       let obj;
       if (1 < tmp12) {
-        obj = { columns: 1, cardWidth: "Array", rowWidth: "channel" };
+        obj = { columns: 1, cardWidth: "Array", rowWidth: "unicodeVersion" };
       }
       return obj;
     }
-    obj = { columns: tmp12, cardWidth: minResult, rowWidth: result4 + tmp14(8226).COLLECTIBLES_SHOP_CARD_GAP * diff2 };
+    obj = { columns: tmp12, cardWidth: minResult, rowWidth: result4 + tmp14(8223).COLLECTIBLES_SHOP_CARD_GAP * diff2 };
     result4 = minResult * tmp12;
   }
-};
+});
+let result = size.fileFinishedImporting("modules/collectibles/native/hooks/useCardLayout.tsx");
+
+export const useCardLayout = tmp2;

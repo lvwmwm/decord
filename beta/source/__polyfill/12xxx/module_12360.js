@@ -1,170 +1,325 @@
 // Module ID: 12360
 // Function ID: 12361
-// Dependencies: [32, 12313, 12312]
-// Exports: dsnToString, makeDsn
+// Dependencies: [12322, 12325, 12338, 12361, 12362, 12348, 12320, 12363, 12356, 12332]
+// Exports: parseEventHintOrCaptureContext, prepareEvent
 
 // Module 12360
-import _mod12313 from "module_12313" /* 12313 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod12320 from "module_12320" /* 12320 */;
+import _mod12332 from "module_12332" /* 12332 */;
+import _mod12348 from "module_12348" /* 12348 */;
+import _mod12356 from "module_12356" /* 12356 */;
+import _mod12363 from "module_12363" /* 12363 */;
 
-function dsnFromString(arg0) {
-  let closure_0 = arg0;
-  const match = re3.exec(arg0);
-  if (match) {
-    const tmp5 = _slicedToArray(match.slice(1), 6);
-    let str = tmp5[1];
-    let str3 = "";
-    const first = tmp5[0];
-    if (undefined !== tmp5[2]) {
-      str3 = tmp7;
+let breadcrumbs, data, filename, integrations;
+
+function applyClientOptions(environment, environment2) {
+  let dist;
+  let maxValueLength;
+  let release;
+  ({ release, dist, maxValueLength } = environment2);
+  let num = 250;
+  environment = environment2.environment;
+  if (undefined !== maxValueLength) {
+    num = maxValueLength;
+  }
+  const DEFAULT_ENVIRONMENT = environment.environment || environment || _mod12348.DEFAULT_ENVIRONMENT;
+  environment.environment = DEFAULT_ENVIRONMENT;
+  const tmp3 = !environment.release && release;
+  if (tmp3) {
+    environment.release = release;
+  }
+  const tmp4 = !environment.dist && dist;
+  if (tmp4) {
+    environment.dist = dist;
+  }
+  if (environment.message) {
+    const obj = _mod12320;
+    environment.message = obj.truncate(environment.message, num);
+  }
+  const tmp7 = environment.exception && environment.exception.values && environment.exception.values[0] && (environment.exception && environment.exception.values && environment.exception.values[0]).value;
+  if (tmp7) {
+    const obj2 = _mod12320;
+    (environment.exception && environment.exception.values && environment.exception.values[0]).value = obj2.truncate((environment.exception && environment.exception.values && environment.exception.values[0]).value, num);
+  }
+  const request = environment.request;
+  const tmp10 = request && request.url;
+  if (tmp10) {
+    const obj3 = _mod12320;
+    request.url = obj3.truncate(request.url, num);
+  }
+}
+function applyDebugIds(exception, arg1) {
+  const obj = _mod12363;
+  const filenameToDebugIdMap = obj.getFilenameToDebugIdMap(arg1);
+  try {
+    const values = exception.exception.values;
+    let item = values.forEach((stacktrace) => {
+      const frames = stacktrace.stacktrace.frames;
+      const item = frames.forEach((filename) => {
+        filename = closure_1_0 && filename.filename;
+        if (filename) {
+          filename.debug_id = closure_1_0[filename.filename];
+        }
+      });
+    });
+  } catch (err) {
+  }
+}
+function applyDebugMeta(exception) {
+  const obj = {};
+  try {
+    const values = exception.exception.values;
+    let item = values.forEach((stacktrace) => {
+      const frames = stacktrace.stacktrace.frames;
+      const item = frames.forEach((debug_id) => {
+        if (debug_id.debug_id) {
+          if (debug_id.abs_path) {
+            obj[debug_id.abs_path] = debug_id.debug_id;
+          } else if (debug_id.filename) {
+            obj[debug_id.filename] = debug_id.debug_id;
+          }
+          delete tmp["debug_id"];
+        }
+      });
+    });
+  } catch (err) {
+  }
+  if (0 !== Object.keys(obj).length) {
+    exception.debug_meta = exception.debug_meta || {};
+    let images = exception.debug_meta.images;
+    const debug_meta = exception.debug_meta;
+    if (!images) {
+      images = [];
     }
-    let str4 = "";
-    if (undefined !== tmp5[3]) {
-      str4 = tmp8;
-    }
-    let str5 = "";
-    if (undefined !== tmp5[4]) {
-      str5 = tmp9;
-    }
-    let str6 = "";
-    if (undefined !== tmp5[5]) {
-      str6 = tmp10;
-    }
-    const parts = str6.split("/");
-    let str8 = str6;
-    let str9 = "";
-    if (parts.length > 1) {
-      const substr = parts.slice(0, -1);
-      str9 = substr.join("/");
-      str8 = parts.pop();
-    }
-    let first1 = str8;
-    if (first1) {
-      const match1 = str8.match(/^\d+/);
-      first1 = str8;
-      if (match1) {
-        first1 = match1[0];
-      }
-    }
-    const url = { protocol: first, publicKey: str, pass: str3, host: str4, port: str5, path: str9, projectId: first1 };
-    if (!str) {
-      str = "";
-    }
-    if (!str3) {
-      str3 = "";
-    }
-    if (!str5) {
-      str5 = "";
-    }
-    if (!str9) {
-      str9 = "";
-    }
-    return url;
-  } else {
-    const obj = _mod12313;
-    obj.consoleSandbox(() => {
-      console.error("Invalid Sentry Dsn: " + closure_0);
+    debug_meta.images = images;
+    images = exception.debug_meta.images;
+    const _Object = Object;
+    const entries = Object.entries(obj);
+    const item1 = entries.forEach((item) => {
+      let tmp;
+      let tmp2;
+      [tmp, tmp2] = item;
+      images.push({ type: "sourcemap", code_file: tmp, debug_id: tmp2 });
     });
   }
 }
-const re3 = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+)?)?@)([\w.-]+)(?::(\d+))?\/(.+)/;
+let closure_5 = ["user", "level", "extra", "contexts", "tags", "fingerprint", "requestSession", "propagationContext"];
 
-export { dsnFromString };
-export const dsnToString = function dsnToString(arg0) {
-  let host;
-  let pass;
-  let path;
-  let port;
-  let projectId;
-  let protocol;
-  let publicKey;
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = false;
-  }
-  ({ host, path, pass, port, projectId, protocol, publicKey } = arg0);
-  let str = "";
-  if (flag) {
-    str = "";
-    if (pass) {
-      const _HermesInternal = HermesInternal;
-      str = ":" + pass;
+export { applyClientOptions };
+export { applyDebugIds };
+export { applyDebugMeta };
+export const parseEventHintOrCaptureContext = function parseEventHintOrCaptureContext(captureContext) {
+  if (captureContext) {
+    let tmp5;
+    const tmp3 = captureContext instanceof _mod12332.Scope || typeof captureContext === "function";
+    if (tmp3) {
+      tmp5 = { captureContext };
+      const obj = { captureContext };
+    } else {
+      const _Object = Object;
+      const keys = Object.keys(captureContext);
+      tmp5 = captureContext;
     }
+    return tmp5;
   }
-  let str3 = "";
-  if (port) {
-    const _HermesInternal2 = HermesInternal;
-    str3 = ":" + port;
-  }
-  let combined = path;
-  if (combined) {
-    const _HermesInternal3 = HermesInternal;
-    combined = "" + path + "/";
-  }
-  return "" + protocol + "://" + publicKey + str + "@" + host + str3 + "/" + combined + projectId;
 };
-export const makeDsn = function makeDsn(protocol) {
-  let port;
-  let projectId;
-  let url;
-  if (typeof protocol === "string") {
-    url = dsnFromString(protocol);
+export const prepareEvent = function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, getScopeData) {
+  let timestamp;
+  let uuid4Result;
+  normalizeDepth = normalizeDepth.normalizeDepth;
+  let num = 3;
+  if (undefined !== normalizeDepth) {
+    num = normalizeDepth;
+  }
+  const normalizeMaxBreadth = normalizeDepth.normalizeMaxBreadth;
+  let num2 = 1000;
+  if (undefined !== normalizeMaxBreadth) {
+    num2 = normalizeMaxBreadth;
+  }
+  let obj = { event_id: uuid4Result, timestamp };
+  let merged = Object.assign(event_id);
+  uuid4Result = event_id.event_id || event_id2.event_id;
+  if (!uuid4Result) {
+    const tmp4 = num;
+    let tmp5 = num2;
+    let obj2 = num(num2[0]);
+    uuid4Result = obj2.uuid4();
+  }
+  timestamp = event_id.timestamp;
+  if (!timestamp) {
+    let obj3 = num(num2[1]);
+    timestamp = obj3.dateTimestampInSeconds();
+  }
+  integrations = event_id2.integrations;
+  if (!integrations) {
+    const integrations1 = normalizeDepth.integrations;
+    integrations = integrations1.map((name) => name.name);
+  }
+  applyClientOptions(obj, normalizeDepth);
+  if (integrations.length > 0) {
+    obj.sdk = obj.sdk || {};
+    let integrations2 = obj.sdk.integrations;
+    const sdk = obj.sdk;
+    if (!integrations2) {
+      integrations2 = [];
+    }
+    const items = [];
+    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, integrations2, 0));
+    sdk.integrations = items;
+  }
+  const tmp14 = emit;
+  if (tmp14) {
+    emit.emit("applyFrameMetadata", event_id);
+  }
+  if (undefined === event_id.type) {
+    applyDebugIds(obj, normalizeDepth.stackParser);
+  }
+  const captureContext = event_id2.captureContext;
+  let obj4 = clone;
+  if (captureContext) {
+    let cloneResult;
+    if (clone) {
+      cloneResult = clone.clone();
+    } else {
+      const self = this;
+      const self2 = this;
+      cloneResult = new num(num2[9]).Scope();
+    }
+    cloneResult.update(captureContext);
+    obj4 = cloneResult;
+  }
+  if (event_id2.mechanism) {
+    const obj6 = num(num2[0]);
+    const result = obj6.addExceptionMechanism(obj, event_id2.mechanism);
+  }
+  if (emit) {
+    let eventProcessors = emit.getEventProcessors();
   } else {
-    url = { protocol: protocol.protocol, publicKey: protocol.publicKey || "", pass: protocol.pass || "", host: protocol.host, port: protocol.port || "", path: protocol.path || "", projectId: protocol.projectId };
+    eventProcessors = [];
   }
-  if (url) {
-    let flag = true;
-    if (url(12312).DEBUG_BUILD) {
-      ({ port, projectId, protocol } = url);
-      const items = ["protocol", "publicKey", "host", "projectId"];
-      let found = items.find((item) => {
-        let flag = !url[item];
-        if (flag) {
-          const logger = _mod12313.logger;
-          const _HermesInternal = HermesInternal;
-          logger.error("Invalid Sentry Dsn: " + item + " missing");
-          flag = true;
-        }
-        return flag;
-      });
-      if (!found) {
-        let num;
-        if (projectId.match(/^\d+$/)) {
-          let num2;
-          const tmp7 = "http" === protocol || "https" === protocol;
-          if (tmp7) {
-            let num3 = port;
-            if (num3) {
-              const _isNaN = isNaN;
-              const _parseInt = parseInt;
-              num3 = isNaN(parseInt(port, 10));
-            }
-            if (num3) {
-              const logger3 = tmp2(12313).logger;
-              const _HermesInternal3 = HermesInternal;
-              logger3.error("Invalid Sentry Dsn: Invalid port " + port);
-              num3 = 1;
-            }
-            num2 = num3;
-          } else {
-            const logger2 = tmp2(12313).logger;
-            const _HermesInternal2 = HermesInternal;
-            logger2.error("Invalid Sentry Dsn: Invalid protocol " + protocol);
-            num2 = 1;
+  const obj7 = num(num2[2]);
+  const globalScope = obj7.getGlobalScope();
+  const scopeData = globalScope.getScopeData();
+  if (getScopeData) {
+    const scopeData1 = getScopeData.getScopeData();
+    const tmp24Result = num(num2[3]);
+    tmp24Result.mergeScopeData(scopeData, scopeData1);
+  }
+  if (obj4) {
+    const scopeData2 = obj4.getScopeData();
+    const tmp24Result4 = num(num2[3]);
+    tmp24Result4.mergeScopeData(scopeData, scopeData2);
+  }
+  let tmp31 = event_id2.attachments || [];
+  const items1 = [...scopeData.attachments];
+  if (items1.length) {
+    event_id2.attachments = items1;
+  }
+  const tmp24Result5 = num(num2[3]);
+  const result1 = tmp24Result5.applyScopeDataToEvent(obj, scopeData);
+  const items2 = [...scopeData.eventProcessors];
+  const tmp24Result6 = num(num2[4]);
+  const result2 = tmp24Result6.notifyEventProcessors(items2, obj, event_id2);
+  return result2.then((breadcrumbs) => {
+    let breadcrumbs1;
+    let normalizer;
+    let normalizer2;
+    let normalizer3;
+    const tmp = breadcrumbs;
+    if (tmp) {
+      applyDebugMeta(breadcrumbs);
+    }
+    let tmp5 = breadcrumbs;
+    if (typeof num === "number") {
+      num2 = 0;
+      tmp5 = breadcrumbs;
+      if (num > 0) {
+        let closure_0 = tmp4;
+        let closure_1 = num2;
+        let tmp31 = null;
+        if (breadcrumbs) {
+          let obj = {};
+          let merged = Object.assign(breadcrumbs);
+          breadcrumbs = breadcrumbs.breadcrumbs;
+          if (breadcrumbs) {
+            let obj2 = {
+              breadcrumbs: breadcrumbs1.map((data) => {
+                        let normalizer;
+                        const obj = {};
+                        const merged = Object.assign(data);
+                        data = data.data;
+                        if (data) {
+                          const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
+                          normalizer = num(num2[8]);
+                          data = obj2;
+                        }
+                        const merged1 = Object.assign(data);
+                        return obj;
+                      })
+            };
+            breadcrumbs1 = breadcrumbs.breadcrumbs;
+            breadcrumbs = obj2;
           }
-          num = num2;
-        } else {
-          let logger = tmp2(12313).logger;
-          let _HermesInternal = HermesInternal;
-          logger.error("Invalid Sentry Dsn: Invalid projectId " + projectId);
-          num = 1;
+          let merged1 = Object.assign(breadcrumbs);
+          let user = breadcrumbs.user;
+          if (user) {
+            const obj3 = { user: normalizer.normalize(breadcrumbs.user, num, num2) };
+            normalizer = _mod12356;
+            user = obj3;
+          }
+          const merged2 = Object.assign(user);
+          let contexts = breadcrumbs.contexts;
+          if (contexts) {
+            const obj4 = { contexts: normalizer2.normalize(breadcrumbs.contexts, num, num2) };
+            normalizer2 = _mod12356;
+            contexts = obj4;
+          }
+          const merged3 = Object.assign(contexts);
+          let extra = breadcrumbs.extra;
+          if (extra) {
+            const obj5 = { extra: normalizer3.normalize(breadcrumbs.extra, num, num2) };
+            normalizer3 = _mod12356;
+            extra = obj5;
+          }
+          const merged4 = Object.assign(extra);
+          const tmp27 = breadcrumbs.contexts && breadcrumbs.contexts.trace && obj.contexts;
+          if (tmp27) {
+            obj.contexts.trace = breadcrumbs.contexts.trace;
+            if (breadcrumbs.contexts.trace.data) {
+              const trace = obj.contexts.trace;
+              const normalizer4 = _mod12356;
+              trace.data = normalizer4.normalize(breadcrumbs.contexts.trace.data, num, num2);
+            }
+          }
+          if (breadcrumbs.spans) {
+            const spans = breadcrumbs.spans;
+            obj.spans = spans.map((data) => {
+              let normalizer;
+              const obj = {};
+              const merged = Object.assign(data);
+              data = data.data;
+              if (data) {
+                const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
+                normalizer = num(num2[8]);
+                data = obj2;
+              }
+              const merged1 = Object.assign(data);
+              return obj;
+            });
+          }
+          tmp31 = obj;
+          const tmp30 = breadcrumbs.contexts && breadcrumbs.contexts.flags && obj.contexts;
+          if (tmp30) {
+            const contexts2 = obj.contexts;
+            const normalizer5 = _mod12356;
+            num = 3;
+            contexts2.flags = normalizer5.normalize(breadcrumbs.contexts.flags, 3, num2);
+            tmp31 = obj;
+          }
         }
-        found = num;
+        tmp5 = tmp31;
       }
-      flag = !found;
     }
-    if (flag) {
-      return url;
-    }
-  }
+    return tmp5;
+  });
 };

@@ -1,15 +1,15 @@
-// Module ID: 9648
-// Function ID: 9649
+// Module ID: 12274
+// Function ID: 12275
 // Name: DebugUploadManager
-// Dependencies: [5, 2045, 3, 17, 4735, 8875, 9649, 9650, 7, 9651, 9652, 1350, 4699, 9653, 9654, 9655, 9656, 2]
+// Dependencies: [5, 2051, 3, 17, 4737, 8869, 12275, 12276, 7, 12277, 12278, 562, 4701, 12279, 12280, 12281, 12282, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 9648 (DebugUploadManager)
+// Module 12274 (DebugUploadManager)
 import LoggerDefault from "Logger" /* 3 */;
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
 import size from "module_2" /* 2 */;
 
 let appFirstVisibleTimestamp, body;
@@ -43,7 +43,7 @@ let obj = function _uploadDebugLogFiles() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -111,7 +111,7 @@ let obj = function _uploadDebugLogFiles() {
         } else {
           c5 = 0;
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp36) {
         closure_4 = tmp36;
@@ -155,7 +155,7 @@ obj = function _uploadAppLogFiles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp80;
@@ -314,7 +314,7 @@ obj = function _uploadAppLogFiles() {
               return obj13;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
           c5 = 3;
           appFirstVisibleTimestamp = closure_131_8;

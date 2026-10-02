@@ -1,12 +1,12 @@
-// Module ID: 13625
-// Function ID: 13626
+// Module ID: 13627
+// Function ID: 13628
 // Name: ErrorCommonUtils
-// Dependencies: [573, 509, 2]
+// Dependencies: [585, 509, 2]
 // Exports: getUpdatedOptions
 
-// Module 13625 (ErrorCommonUtils)
+// Module 13627 (ErrorCommonUtils)
 import LastFewActions from "LastFewActions" /* 509 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/ErrorCommonUtils.tsx");

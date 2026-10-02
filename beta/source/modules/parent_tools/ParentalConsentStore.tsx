@@ -1,11 +1,11 @@
-// Module ID: 15582
-// Function ID: 15583
+// Module ID: 15584
+// Function ID: 15585
 // Name: ParentalConsentStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 15582 (ParentalConsentStore)
+// Module 15584 (ParentalConsentStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let flag = false;

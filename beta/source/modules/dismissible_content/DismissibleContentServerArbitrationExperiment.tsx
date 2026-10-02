@@ -1,10 +1,10 @@
-// Module ID: 2039
-// Function ID: 2040
+// Module ID: 2045
+// Function ID: 2046
 // Name: DismissibleContentServerArbitrationExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1441, 2]
 
-// Module 2039 (DismissibleContentServerArbitrationExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 2045 (DismissibleContentServerArbitrationExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-09-dismissible-content-server-arbitration", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

@@ -1,17 +1,17 @@
-// Module ID: 8722
-// Function ID: 8723
+// Module ID: 8717
+// Function ID: 8718
 // Name: BioMarkupUtils
-// Dependencies: [5303, 5304, 4824, 1439, 7429, 4823, 1930, 12, 2]
+// Dependencies: [5304, 5305, 4825, 1445, 7433, 4824, 1936, 12, 2]
 // Exports: getOrParseBioAST, parseBioReact, parseBioReactWithCachedAST
 
-// Module 8722 (BioMarkupUtils)
-import LRUCacheDefault from "LRUCache" /* 1439 */;
-import _modDef1930 from "module_1930" /* 1930 */;
-import MarkupReactRulesDefault from "MarkupReactRules" /* 4824 */;
-import MarkupRulesDefault from "MarkupRules" /* 5304 */;
-import combineMarkupRules_mod from "combineMarkupRules" /* 5303 */;
-import MarkupParser_mod from "MarkupParser" /* 7429 */;
-import MarkupUtils from "MarkupUtils" /* 4823 */;
+// Module 8717 (BioMarkupUtils)
+import LRUCacheDefault from "LRUCache" /* 1445 */;
+import _modDef1936 from "module_1936" /* 1936 */;
+import MarkupReactRulesDefault from "MarkupReactRules" /* 4825 */;
+import MarkupRulesDefault from "MarkupRules" /* 5305 */;
+import combineMarkupRules_mod from "combineMarkupRules" /* 5304 */;
+import MarkupParser_mod from "MarkupParser" /* 7433 */;
+import MarkupUtils from "MarkupUtils" /* 4824 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -59,20 +59,20 @@ export const getOrParseBioAST = function getOrParseBioAST(arg0) {
   }
   return value;
 };
-export const parseBioReactWithCachedAST = function parseBioReactWithCachedAST(description) {
-  if (0 === description.trim().length) {
+export const parseBioReactWithCachedAST = function parseBioReactWithCachedAST(cResult) {
+  if (0 === cResult.trim().length) {
     return null;
   } else {
-    let value = closure_3.get(description);
+    let value = closure_3.get(cResult);
     const obj = closure_3;
     if (null == value) {
-      const tmp4 = closure_6(description, true);
-      const result = obj.set(description, tmp4);
+      const tmp4 = closure_6(cResult, true);
+      const result = obj.set(cResult, tmp4);
       value = tmp4;
     }
-    const reactFor = _modDef1930.reactFor;
-    _modDef1930;
-    const obj2 = _modDef1930;
+    const reactFor = _modDef1936.reactFor;
+    _modDef1936;
+    const obj2 = _modDef1936;
     return reactFor(obj2.ruleOutput(c2, "react"))(value);
   }
 };

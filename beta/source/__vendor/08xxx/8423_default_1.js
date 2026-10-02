@@ -1,11 +1,11 @@
 // Module ID: 8423
 // Function ID: 8424
 // Name: default_1
-// Dependencies: [8403]
+// Dependencies: [8400]
 // Exports: default
 
 // Module 8423 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 8403 */;
+import captureStackTrace2 from "captureStackTrace" /* 8400 */;
 
 let hasOwnProperty;
 
@@ -109,10 +109,10 @@ export default function default_1() {
               const obj = /^[A-Z]/;
               if (obj.test(code.expected)) {
                 const _HermesInternal17 = HermesInternal;
-                combined = "Entr\u00E9e invalide : instanceof " + code.expected + " attendu, " + tmp49 + " re\u00E7u";
+                combined = "\u00C9rv\u00E9nytelen bemenet: a v\u00E1rt \u00E9rt\u00E9k instanceof " + code.expected + ", a kapott \u00E9rt\u00E9k " + tmp48;
               } else {
                 const _HermesInternal16 = HermesInternal;
-                combined = "Entr\u00E9e invalide : " + expected + " attendu, " + tmp49 + " re\u00E7u";
+                combined = "\u00C9rv\u00E9nytelen bemenet: a v\u00E1rt \u00E9rt\u00E9k " + expected + ", a kapott \u00E9rt\u00E9k " + tmp48;
               }
               return combined;
             }
@@ -121,58 +121,58 @@ export default function default_1() {
               let combined1;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "Entr\u00E9e invalide : " + captureStackTrace.stringifyPrimitive(code.values[0]) + " attendu";
+                combined1 = "\u00C9rv\u00E9nytelen bemenet: a v\u00E1rt \u00E9rt\u00E9k " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "Option invalide : une valeur parmi " + captureStackTrace.joinValues(code.values, "|") + " attendue";
+                combined1 = "\u00C9rv\u00E9nytelen opci\u00F3: valamelyik \u00E9rt\u00E9k v\u00E1rt " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
             case "too_big":
             {
               let combined2;
-              let str31 = "<";
+              let str26 = "<";
               if (code.inclusive) {
-                str31 = "<=";
+                str26 = "<=";
               }
-              let str32 = code.origin;
+              let str27 = code.origin;
               if (obj2[code.origin] ?? null) {
-                if (str32 == null) {
-                  str32 = "valeur";
+                if (str27 == null) {
+                  str27 = "\u00E9rt\u00E9k";
                 }
-                const verb = tmp27.verb;
-                const str37 = code.maximum;
+                const str32 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
-                const str1 = str37.toString();
-                const str38 = (obj2[code.origin] ?? null).unit ?? "\u00E9l\u00E9ment(s)";
-                combined2 = "Trop grand : " + str32 + " doit " + verb + " " + str31 + str1 + " " + str38;
+                const str1 = str32.toString();
+                const str33 = (obj2[code.origin] ?? null).unit ?? "elem";
+                combined2 = "T\u00FAl nagy: " + str27 + " m\u00E9rete t\u00FAl nagy " + str26 + str1 + " " + str33;
               } else {
-                let str33 = str32;
-                if (str32 == null) {
-                  str33 = "valeur";
+                let str28 = str27;
+                if (str27 == null) {
+                  str28 = "\u00E9rt\u00E9k";
                 }
                 const _HermesInternal12 = HermesInternal;
-                const str34 = code.maximum;
-                combined2 = "Trop grand : " + str33 + " doit \u00EAtre " + str31 + str34.toString();
+                const str29 = code.maximum;
+                combined2 = "T\u00FAl nagy: a bemeneti \u00E9rt\u00E9k " + str28 + " t\u00FAl nagy: " + str26 + str29.toString();
               }
               return combined2;
             }
             case "too_small":
             {
               let combined3;
-              let str21 = ">";
+              let minimum;
+              let origin;
+              let str20 = ">";
               if (code.inclusive) {
-                str21 = ">=";
+                str20 = ">=";
               }
-              const origin = code.origin;
+              ({ origin, minimum } = code);
+              const str47 = minimum.toString();
               if (obj2[code.origin] ?? null) {
                 const _HermesInternal11 = HermesInternal;
-                const str25 = code.minimum;
-                combined3 = "Trop petit : " + origin + " doit " + tmp17.verb + " " + str21 + str25.toString() + " " + tmp17.unit;
+                combined3 = "T\u00FAl kicsi: a bemeneti \u00E9rt\u00E9k " + origin + " m\u00E9rete t\u00FAl kicsi " + str20 + str47 + " " + tmp15.unit;
               } else {
                 const _HermesInternal10 = HermesInternal;
-                const str22 = code.minimum;
-                combined3 = "Trop petit : " + origin + " doit \u00EAtre " + str21 + str22.toString();
+                combined3 = "T\u00FAl kicsi: a bemeneti \u00E9rt\u00E9k " + origin + " t\u00FAl kicsi " + str20 + str47;
               }
               return combined3;
             }
@@ -181,65 +181,61 @@ export default function default_1() {
               let combined4;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "Cha\u00EEne invalide : doit commencer par \"" + code.prefix + "\"";
+                combined4 = "\u00C9rv\u00E9nytelen string: \"" + code.prefix + "\" \u00E9rt\u00E9kkel kell kezd\u0151dnie";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "Cha\u00EEne invalide : doit se terminer par \"" + code.suffix + "\"";
+                combined4 = "\u00C9rv\u00E9nytelen string: \"" + code.suffix + "\" \u00E9rt\u00E9kkel kell v\u00E9gz\u0151dnie";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "Cha\u00EEne invalide : doit inclure \"" + code.includes + "\"";
+                combined4 = "\u00C9rv\u00E9nytelen string: \"" + code.includes + "\" \u00E9rt\u00E9ket kell tartalmaznia";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "Cha\u00EEne invalide : doit correspondre au mod\u00E8le " + code.pattern;
+                combined4 = "\u00C9rv\u00E9nytelen string: " + code.pattern + " mint\u00E1nak kell megfelelnie";
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "" + format + " invalide";
+                combined4 = "\u00C9rv\u00E9nytelen " + format;
               }
               return combined4;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "Nombre invalide : doit \u00EAtre un multiple de " + code.divisor;
+              return "\u00C9rv\u00E9nytelen sz\u00E1m: " + code.divisor + " t\u00F6bbsz\u00F6r\u00F6s\u00E9nek kell lennie";
             }
             case "unrecognized_keys":
             {
               let str3 = "";
-              let str4 = "";
-              if (code.keys.length > 1) {
-                str4 = "s";
-              }
               if (code.keys.length > 1) {
                 str3 = "s";
               }
               const _HermesInternal3 = HermesInternal;
-              return "Cl\u00E9" + str4 + " non reconnue" + str3 + " : " + captureStackTrace.joinValues(code.keys, ", ");
+              return "Ismeretlen kulcs" + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
               const _HermesInternal2 = HermesInternal;
-              return "Cl\u00E9 invalide dans " + code.origin;
+              return "\u00C9rv\u00E9nytelen kulcs " + code.origin;
             }
             case "invalid_union":
             {
-              return "Entr\u00E9e invalide";
+              return "\u00C9rv\u00E9nytelen bemenet";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "Valeur invalide dans " + code.origin;
+              return "\u00C9rv\u00E9nytelen \u00E9rt\u00E9k: " + code.origin;
             }
             default:
             {
-              return "Entr\u00E9e invalide";
+              return "\u00C9rv\u00E9nytelen bemenet";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "caract\u00E8res", verb: "avoir" }, file: { unit: "octets", verb: "avoir" }, array: { unit: "\u00E9l\u00E9ments", verb: "avoir" }, set: { unit: "\u00E9l\u00E9ments", verb: "avoir" } };
-    closure_1 = { regex: "entr\u00E9e", email: "adresse e-mail", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "date et heure ISO", date: "date ISO", time: "heure ISO", duration: "dur\u00E9e ISO", ipv4: "adresse IPv4", ipv6: "adresse IPv6", cidrv4: "plage IPv4", cidrv6: "plage IPv6", base64: "cha\u00EEne encod\u00E9e en base64", base64url: "cha\u00EEne encod\u00E9e en base64url", json_string: "cha\u00EEne JSON", e164: "num\u00E9ro E.164", jwt: "JWT", template_literal: "entr\u00E9e" };
-    let closure_2 = { nan: "NaN", number: "nombre", array: "tableau" };
+    const obj2 = { string: { unit: "karakter", verb: "legyen" }, file: { unit: "byte", verb: "legyen" }, array: { unit: "elem", verb: "legyen" }, set: { unit: "elem", verb: "legyen" } };
+    closure_1 = { regex: "bemenet", email: "email c\u00EDm", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO id\u0151b\u00E9lyeg", date: "ISO d\u00E1tum", time: "ISO id\u0151", duration: "ISO id\u0151intervallum", ipv4: "IPv4 c\u00EDm", ipv6: "IPv6 c\u00EDm", cidrv4: "IPv4 tartom\u00E1ny", cidrv6: "IPv6 tartom\u00E1ny", base64: "base64-k\u00F3dolt string", base64url: "base64url-k\u00F3dolt string", json_string: "JSON string", e164: "E.164 sz\u00E1m", jwt: "JWT", template_literal: "bemenet" };
+    let closure_2 = { nan: "NaN", number: "sz\u00E1m", array: "t\u00F6mb" };
     return obj;
   } else {
     throw new TypeError("Trying to call a non-function");

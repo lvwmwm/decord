@@ -1,12 +1,12 @@
-// Module ID: 13645
-// Function ID: 13646
+// Module ID: 13647
+// Function ID: 13648
 // Name: Status/StatusUtils
-// Dependencies: [1178, 13646, 2]
+// Dependencies: [1190, 13648, 2]
 // Exports: getAnimatedTypingTranslateX, getMobileStatusContainerRect, getStatusTypingDimensions, getVRStatusContainerRect
 
-// Module 13645 (Status/StatusUtils)
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13646 */;
-import StatusConstants from "StatusConstants" /* 1178 */;
+// Module 13647 (Status/StatusUtils)
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13648 */;
+import StatusConstants from "StatusConstants" /* 1190 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2;
@@ -18,22 +18,22 @@ const result = size.fileFinishedImporting("design/void/Status/native/StatusUtils
 export const getAnimatedTypingTranslateX = function getAnimatedTypingTranslateX(width) {
   return width / 2 - 6;
 };
-export const getMobileStatusContainerRect = function getMobileStatusContainerRect(arg0) {
+export const getMobileStatusContainerRect = function getMobileStatusContainerRect(statusSizeOverride) {
   let sum;
   size = { width: sum, height: 1.4 * sum, cornerRadius: sum / 4 };
-  sum = arg0 + 2 * React2;
+  sum = statusSizeOverride + 2 * React2;
   return size;
 };
-export const getVRStatusContainerRect = function getVRStatusContainerRect(arg0) {
-  size = getStatusContainerStyleDefault(arg0, false, true);
+export const getVRStatusContainerRect = function getVRStatusContainerRect(statusSizeOverride) {
+  size = getStatusContainerStyleDefault(statusSizeOverride, false, true);
   const size1 = { width: size.width, height: size.height, cornerRadius: size.borderRadius };
   return size1;
 };
-export const getStatusTypingDimensions = function getStatusTypingDimensions(arg0) {
-  if (constants.SMALL !== arg0) {
+export const getStatusTypingDimensions = function getStatusTypingDimensions(statusSizeOverride) {
+  if (constants.SMALL !== statusSizeOverride) {
     let num;
     let num2;
-    if (constants.XSMALL !== arg0) {
+    if (constants.XSMALL !== statusSizeOverride) {
       num = 6;
       num2 = 28;
     }

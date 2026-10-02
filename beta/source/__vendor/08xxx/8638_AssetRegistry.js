@@ -1,10 +1,10 @@
 // Module ID: 8638
 // Function ID: 8639
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 8638 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/SunsetIcon", width: 60, height: 60, scales: [2, 3], hash: "9f9f6665c181624b81b98f40c0532d57", name: "SunsetIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/CherryBlossomIcon", width: 60, height: 60, scales: [2, 3], hash: "0958a3140b1354fdc2a2c5ce3e4f3233", name: "CherryBlossomIcon", type: "png" });

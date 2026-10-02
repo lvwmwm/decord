@@ -1,25 +1,25 @@
 // Module ID: 15904
 // Function ID: 15905
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 4825, 4470, 2067, 1074, 21, 4836, 576, 504, 1397, 1432, 1479, 1241, 5832, 6760, 6759, 1115, 8276, 8202, 1177, 4832, 5281, 7358, 7363, 7365, 2]
+// Dependencies: [5, 32, 19, 17, 4826, 4473, 2073, 1086, 21, 4837, 588, 504, 1403, 1438, 1485, 1253, 5833, 6761, 6760, 1127, 8273, 8199, 1189, 4833, 5282, 7366, 7362, 7364, 2]
 // Exports: default
 
 // Module 15904 (GameCommunityMultiGuildUpsellCard)
-import nativeDefault from "native" /* 576 */;
-import intl6 from "intl" /* 1115 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1432 */;
-import transitionToGuild from "transitionToGuild" /* 6760 */;
+import nativeDefault from "native" /* 588 */;
+import intl6 from "intl" /* 1127 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1438 */;
+import transitionToGuild from "transitionToGuild" /* 6761 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import LurkingStore from "LurkingStore" /* 4470 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import Constants from "Constants" /* 1074 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import LurkingStore from "LurkingStore" /* 4473 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4;
@@ -183,7 +183,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -252,7 +252,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
           closure_128_4(false);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp36) {
         onDismiss = tmp36;
         if (0 === c3) {
@@ -285,7 +285,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -347,7 +347,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
           closure_128_4(false);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp29) {
         onDismiss = tmp29;
         if (0 === c3) {

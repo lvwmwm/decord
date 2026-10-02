@@ -1,15 +1,15 @@
-// Module ID: 14033
-// Function ID: 14034
+// Module ID: 14035
+// Function ID: 14036
 // Name: getCurrentEmbeddedChannel
-// Dependencies: [8499, 2045, 4739, 8501, 14029, 2]
+// Dependencies: [8496, 2051, 4741, 8498, 14031, 2]
 // Exports: default
 
-// Module 14033 (getCurrentEmbeddedChannel)
-import Constants from "Constants" /* 4739 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8501 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14029 */;
-import FramesStore from "FramesStore" /* 8499 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+// Module 14035 (getCurrentEmbeddedChannel)
+import Constants from "Constants" /* 4741 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8498 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14031 */;
+import FramesStore from "FramesStore" /* 8496 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
 import size from "module_2" /* 2 */;
 
 const TransportTypes = Constants.TransportTypes;

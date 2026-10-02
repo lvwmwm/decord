@@ -1,28 +1,57 @@
-// Module ID: 17196
-// Function ID: 17197
+// Module ID: 17198
+// Function ID: 17199
 // Name: AccountSwitchingSpinnerModal
-// Dependencies: [19, 17, 21, 4836, 1115, 5889, 1094, 2]
+// Dependencies: [19, 17, 21, 4837, 558, 576, 1127, 5890, 1106, 2]
 
-// Module 17196 (AccountSwitchingSpinnerModal)
+// Module 17198 (AccountSwitchingSpinnerModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import intl2 from "intl" /* 1115 */;
+import react2 from "react" /* 576 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import intl2 from "intl" /* 1127 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5890 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-class AccountSwitchingSpinnerModal {
-  constructor() {
-    const intl = intl2.intl;
-    return <View style={closure_4().switchingSpinnerContainer} accessible accessibilityLabel={intl.string(intl2.t.n8qMH0)}>{null}</View>;
-  }
-}
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const React3 = createStyles.createStyles({ switchingSpinnerContainer: { flex: 1, alignItems: "center", justifyContent: "center" } });
-AccountSwitchingSpinnerModal.modalConfig = { animation: ConstantsIOS.ModalAnimation.FADE, closable: false };
-const obj = { animation: ConstantsIOS.ModalAnimation.FADE, closable: false };
+let closure_4 = createStyles.createStyles({ switchingSpinnerContainer: { flex: 1, alignItems: "center", justifyContent: "center" } });
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp10;
+  let tmp5;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(4);
+  const tmp4 = closure_4();
+  const switchingSpinnerContainer = tmp4.switchingSpinnerContainer;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl2.t.n8qMH0);
+    const tmp9 = jsx(ActivityIndicator_ActivityIndicator.ActivityIndicator, {});
+    cResult[0] = stringResult;
+    cResult[1] = tmp9;
+    tmp5 = stringResult;
+    tmp6 = tmp9;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  if (cResult[2] !== tmp4.switchingSpinnerContainer) {
+    const tmp13 = <View style={switchingSpinnerContainer} accessible accessibilityLabel={tmp5}>{tmp6}</View>;
+    cResult[2] = tmp4.switchingSpinnerContainer;
+    cResult[3] = tmp13;
+    tmp10 = tmp13;
+  } else {
+    tmp10 = cResult[3];
+  }
+  return tmp10;
+}) : (() => {
+  const intl = intl2.intl;
+  return <View style={closure_4().switchingSpinnerContainer} accessible accessibilityLabel={intl.string(intl2.t.n8qMH0)}>{null}</View>;
+});
+let obj = { animation: ConstantsIOS.ModalAnimation.FADE, closable: false };
+tmp3.modalConfig = obj;
 const result = size.fileFinishedImporting("modules/multi_account/native/AccountSwitchingSpinnerModal.tsx");
 
-export default AccountSwitchingSpinnerModal;
+export default tmp3;

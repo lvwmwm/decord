@@ -1,21 +1,24 @@
-// Module ID: 8111
-// Function ID: 8112
+// Module ID: 8108
+// Function ID: 8109
 // Name: InAppReportsMessagePreview
-// Dependencies: [19, 17, 21, 4836, 576, 7374, 4683, 4832, 1115, 8112, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 7378, 558, 576, 4685, 1127, 4833, 8109, 2]
 
-// Module 8111 (InAppReportsMessagePreview)
+// Module 8108 (InAppReportsMessagePreview)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import ColorUtils from "ColorUtils" /* 4683 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import RowGeneratorDefault from "RowGenerator" /* 7374 */;
-import ChatItemDefault from "ChatItem" /* 8112 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import ColorUtils from "ColorUtils" /* 4685 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import RowGeneratorDefault from "RowGenerator" /* 7378 */;
+import ChatItemDefault from "ChatItem" /* 8109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let message;
 
 let closure_4;
 let hasOwnProperty;
@@ -31,9 +34,104 @@ obj3 = { minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, pa
 let closure_6 = createStyles(obj);
 let obj4 = new RowGeneratorDefault();
 obj4.setOptions({ renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderEmbeds: true, ignoreMentioned: true, inlineAttachmentMedia: false, inlineEmbedMedia: true, renderReactions: false });
-const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsMessagePreview.tsx");
-
-export default function MessagePreview(message) {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+  let container;
+  let items;
+  let title;
+  let tmp12;
+  let tmp5;
+  let tmp7;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(19);
+  message = message.message;
+  const tmp4 = closure_6();
+  if (cResult[0] !== tmp4.borderColor.color) {
+    const tmpResult = ColorUtils;
+    const hexWithOpacityResult = tmpResult.hexWithOpacity(tmp4.borderColor.color, 0.08);
+    cResult[0] = tmp4.borderColor.color;
+    cResult[1] = hexWithOpacityResult;
+    tmp5 = hexWithOpacityResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  ({ container, title } = tmp4);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl2.t.iouM3a);
+    cResult[2] = stringResult;
+    tmp7 = stringResult;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] !== tmp4.title) {
+    const obj2 = { style: title, accessibilityRole: "header", variant: "text-xs/bold", children: tmp7 };
+    const tmp11 = React3(Text_Text.Text, obj2);
+    cResult[3] = tmp4.title;
+    cResult[4] = tmp11;
+    tmp9 = tmp11;
+  } else {
+    tmp9 = cResult[4];
+  }
+  if (cResult[5] !== tmp5) {
+    const obj3 = { borderColor: tmp5 };
+    cResult[5] = tmp5;
+    cResult[6] = obj3;
+    tmp12 = obj3;
+  } else {
+    tmp12 = cResult[6];
+  }
+  if (cResult[7] === tmp4.chatItemContainer) {
+    let tmp13;
+    let tmp14;
+    if (cResult[8] === tmp12) {
+      tmp13 = cResult[9];
+    }
+    if (cResult[10] !== message) {
+      obj4 = { rowGenerator: obj4, maxHeight: 120, message, pointerEvents: "none" };
+      const tmp18 = React3(ChatItemDefault, obj4);
+      cResult[10] = message;
+      cResult[11] = tmp18;
+      tmp14 = tmp18;
+    } else {
+      tmp14 = cResult[11];
+    }
+    if (cResult[12] === tmp13) {
+      let tmp19;
+      if (cResult[13] === tmp14) {
+        tmp19 = cResult[14];
+      }
+      if (cResult[15] === tmp4.container) {
+        if (cResult[16] === tmp9) {
+          let tmp23;
+          if (cResult[17] === tmp19) {
+            tmp23 = cResult[18];
+          }
+          return tmp23;
+        }
+      }
+      const obj5 = { style: container, children: items };
+      items = [tmp9, tmp19];
+      const tmp26 = hasOwnProperty(View, obj5);
+      cResult[15] = tmp4.container;
+      cResult[16] = tmp9;
+      cResult[17] = tmp19;
+      cResult[18] = tmp26;
+      tmp23 = tmp26;
+    }
+    const obj6 = { accessible: true, style: tmp13, children: tmp14 };
+    const tmp22 = React3(View, obj6);
+    cResult[12] = tmp13;
+    cResult[13] = tmp14;
+    cResult[14] = tmp22;
+    tmp19 = tmp22;
+  }
+  const items1 = [tmp4.chatItemContainer, tmp12];
+  cResult[7] = tmp4.chatItemContainer;
+  cResult[8] = tmp12;
+  cResult[9] = items1;
+  tmp13 = items1;
+}) : ((message) => {
   let intl;
   let items;
   let items1;
@@ -52,4 +150,7 @@ export default function MessagePreview(message) {
   obj5 = { rowGenerator: obj4, maxHeight: 120, message, pointerEvents: "none" };
   items[1] = React3(View, obj4);
   return hasOwnProperty(View, obj2);
-};
+});
+const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsMessagePreview.tsx");
+
+export default tmp6;

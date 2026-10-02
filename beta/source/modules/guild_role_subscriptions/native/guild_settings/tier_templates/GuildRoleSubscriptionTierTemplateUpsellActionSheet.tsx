@@ -1,29 +1,29 @@
 // Module ID: 15881
 // Function ID: 15882
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [32, 19, 17, 4825, 1074, 2042, 21, 4836, 576, 5438, 563, 6571, 1115, 7755, 4832, 5281, 9048, 4800, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 4826, 1086, 2048, 21, 4837, 588, 558, 576, 9025, 5439, 573, 1127, 7759, 4833, 5282, 4801, 6572, 2]
 
 // Module 15881 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
-import useStateFromStores from "useStateFromStores" /* 563 */;
-import nativeDefault from "native" /* 576 */;
-import intl6 from "intl" /* 1115 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5438 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9048 */;
+import useStateFromStores from "useStateFromStores" /* 573 */;
+import nativeDefault from "native" /* 588 */;
+import intl6 from "intl" /* 1127 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5439 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9025 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import Constants from "Constants" /* 1074 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, dependencyMap;
+let BottomSheet, dependencyMap, guildId;
 
 let c10;
 let metroImportAll;
@@ -36,17 +36,193 @@ const View = react_native.View;
 ({ GuildSettingsSections: metroImportDefault, GuildSettingsSubsections: metroImportAll } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+let c12 = 1.7289156626506024;
 const src = { videoURI: "https://cdn.discordapp.com/assets/server-subscription-tier-template/upsell.mov" };
 let createStyles = createStyles_mod;
 let obj = { container: obj2, videoContainer: obj3, info: { marginTop: 16, alignItems: "center" }, title: { marginTop: 24, textAlign: "center" }, subtitle: { marginTop: 12, textAlign: "center" }, footer: { marginTop: 32 }, button: { marginBottom: 8 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 16, paddingTop: 24, justifyContent: "center" };
 createStyles = createStyles.createStyles;
 obj3 = { borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-let closure_13 = createStyles(obj);
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateUpsellActionSheet.tsx");
-
-export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0) {
+let closure_14 = createStyles(obj);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let isScreenLandscape;
+  let tmp8;
+  let useReducedMotion;
+  let tmp2 = dependencyMap;
+  let obj = guildId(576);
+  const cResult = obj.c(49);
+  guildId = guildId.guildId;
+  const markAsDismissed = guildId.markAsDismissed;
+  const tmp4 = closure_14();
+  if (cResult[0] === guildId) {
+    let tmp12;
+    let tmp11;
+    let tmp17;
+    let tmp16;
+    let tmp21;
+    [tmp8, dependencyMap] = isScreenLandscape(P.useState(0), 2);
+    isScreenLandscape(P.useState(0), 2);
+    const tmpResult = guildId(5439);
+    isScreenLandscape = tmpResult.useIsScreenLandscape();
+    const _Symbol = Symbol;
+    const obj2 = P;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [AccessibilityStore];
+      class E {
+        constructor() {
+          return useReducedMotion.useReducedMotion;
+        }
+      }
+      cResult[3] = items;
+      cResult[4] = E;
+      tmp12 = E;
+      tmp11 = items;
+    } else {
+      tmp11 = cResult[3];
+      tmp12 = cResult[4];
+    }
+    const tmpResult2 = guildId(573);
+    const stateFromStores = tmpResult2.useStateFromStores(tmp11, tmp12);
+    if (cResult[5] !== isScreenLandscape) {
+      class P {
+        constructor(arg0) {
+          const diff = arg0 - 32;
+          let result = diff;
+          const tmp2 = dependencyMap;
+          if (isScreenLandscape) {
+            result = diff / 2;
+          }
+          tmp2(result);
+        }
+      }
+      cResult[5] = isScreenLandscape;
+      class E {
+        constructor() {
+          return useReducedMotion.useReducedMotion;
+        }
+      }
+      cResult[6] = P;
+    } else {
+      class P {
+        constructor(arg0) {
+          const diff = arg0 - 32;
+          let result = diff;
+          const tmp2 = dependencyMap;
+          if (isScreenLandscape) {
+            result = diff / 2;
+          }
+          tmp2(result);
+        }
+      }
+    }
+    P = tmp15;
+    if (cResult[7] !== markAsDismissed) {
+      class P {
+        constructor(arg0) {
+          const diff = arg0 - 32;
+          let result = diff;
+          const tmp2 = dependencyMap;
+          if (isScreenLandscape) {
+            result = diff / 2;
+          }
+          tmp2(result);
+        }
+      }
+      const items1 = [markAsDismissed];
+      class E {
+        constructor() {
+          return useReducedMotion.useReducedMotion;
+        }
+      }
+      cResult[7] = markAsDismissed;
+      cResult[8] = tmp18;
+      cResult[9] = items1;
+      tmp17 = items1;
+      tmp16 = tmp18;
+    } else {
+      class P {
+        constructor(arg0) {
+          const diff = arg0 - 32;
+          let result = diff;
+          const tmp2 = dependencyMap;
+          if (isScreenLandscape) {
+            result = diff / 2;
+          }
+          tmp2(result);
+        }
+      }
+      tmp17 = cResult[9];
+    }
+    const effect = obj2.useEffect(tmp16, tmp17);
+    const container = tmp4.container;
+    if (cResult[10] !== tmp15) {
+      class F {
+        constructor(nativeEvent) {
+          return P(nativeEvent.nativeEvent.layout.width);
+        }
+      }
+      cResult[10] = tmp15;
+      class E {
+        constructor() {
+          return useReducedMotion.useReducedMotion;
+        }
+      }
+      cResult[11] = F;
+    } else {
+      class F {
+        constructor(nativeEvent) {
+          return P(nativeEvent.nativeEvent.layout.width);
+        }
+      }
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+      class F {
+        constructor(nativeEvent) {
+          return P(nativeEvent.nativeEvent.layout.width);
+        }
+      }
+      const stringResult = obj5.string(guildId(1127).t.gCgirr);
+      class E {
+        constructor() {
+          return useReducedMotion.useReducedMotion;
+        }
+      }
+      cResult[12] = stringResult;
+      tmp21 = stringResult;
+    } else {
+      class F {
+        constructor(nativeEvent) {
+          return P(nativeEvent.nativeEvent.layout.width);
+        }
+      }
+    }
+    let result = tmp8 / c12;
+    if (cResult[13] === tmp4.videoContainer) {
+      class F {
+        constructor(nativeEvent) {
+          return P(nativeEvent.nativeEvent.layout.width);
+        }
+      }
+    }
+    const obj3 = { accessibilityRole: "image", accessibilityLabel: tmp21, children: closure_10(markAsDismissed(7759), size) };
+    size = { style: tmp4.videoContainer, src, width: tmp8, height: result, muted: true, paused: stateFromStores, ariaHidden: true };
+    cResult[13] = tmp4.videoContainer;
+    cResult[14] = result;
+    cResult[15] = stateFromStores;
+    cResult[16] = tmp8;
+    cResult[17] = closure_10(View, obj3);
+    const tmp30 = closure_10(View, obj3);
+  }
+  const fn = function b() {
+    const obj = GuildSettingsActionCreatorsDefault;
+    obj.open(guildId, metroImportDefault.ROLE_SUBSCRIPTIONS_TIERS, undefined, metroImportAll.ROLE_SUBSCRIPTION_TIER_TEMPLATE);
+    markAsDismissed(ContentDismissActionType.UNKNOWN);
+  };
+  cResult[0] = guildId;
+  cResult[1] = markAsDismissed;
+  cResult[2] = fn;
+}) : ((arg0) => {
   let Button;
   let Button2;
   let _undefined;
@@ -70,7 +246,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   ({ guildId: require, markAsDismissed } = arg0);
   dependencyMap = undefined;
   _slicedToArray = undefined;
-  const tmp = closure_13();
+  const tmp = closure_14();
   let tmp2 = _slicedToArray(react.useState(0), 2);
   [tmp3, c2] = tmp2;
   let obj = useIsScreenLandscape;
@@ -94,10 +270,10 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
     },
     children: items2
   };
-  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(7755), size) };
+  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(7759), size) };
   BottomSheet = Sheet_BottomSheet.BottomSheet;
   intl = intl6.intl;
-  size = { style: tmp.videoContainer, src, width: tmp3, height: tmp3 / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true };
+  size = { style: tmp.videoContainer, src, width: tmp3, height: tmp3 / c12, muted: true, paused: stateFromStores, ariaHidden: true };
   items2 = [closure_10(View, obj5), , ];
   const obj6 = { style: tmp.info, children: items3 };
   const obj7 = { variant: "heading-lg/semibold", style: tmp.title, color: "mobile-text-heading-primary", children: intl2.string(intl6.t.gCgirr) };
@@ -127,7 +303,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   obj13 = {
     text: intl5.string(intl6.t.WAI6xu),
     onPress() {
-      const obj = markAsDismissed(c2[17]);
+      const obj = markAsDismissed(c2[18]);
       return obj.hideActionSheet();
     },
     variant: "secondary"
@@ -137,4 +313,8 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   items5[1] = closure_10(View, obj12);
   items2[2] = closure_11(View, obj9);
   return closure_10(BottomSheet, obj3);
-};
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateUpsellActionSheet.tsx");
+
+export default tmp5;

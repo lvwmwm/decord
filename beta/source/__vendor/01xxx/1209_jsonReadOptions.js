@@ -1,0 +1,55 @@
+// Module ID: 1209
+// Function ID: 1210
+// Name: jsonReadOptions
+// Dependencies: []
+// Exports: jsonReadOptions, jsonWriteOptions, mergeJsonOptions
+
+// Module 1209 (jsonReadOptions)
+let closure_0 = { emitDefaultValues: false, enumAsInteger: false, useProtoFieldName: false, prettySpaces: 0 };
+let closure_1 = { ignoreUnknownFields: false };
+
+export const jsonReadOptions = function jsonReadOptions(arg0) {
+  let merged;
+  const tmp = arg0;
+  if (tmp) {
+    const _Object = Object;
+    const _Object2 = Object;
+    merged = Object.assign(Object.assign({}, closure_1), arg0);
+  } else {
+    merged = closure_1;
+  }
+  return merged;
+};
+export const jsonWriteOptions = function jsonWriteOptions(prettySpaces) {
+  let merged;
+  const tmp = prettySpaces;
+  if (tmp) {
+    const _Object = Object;
+    const _Object2 = Object;
+    merged = Object.assign(Object.assign({}, closure_0), prettySpaces);
+  } else {
+    merged = closure_0;
+  }
+  return merged;
+};
+export const mergeJsonOptions = function mergeJsonOptions(typeRegistry, typeRegistry2) {
+  const merged = Object.assign(Object.assign({}, typeRegistry), typeRegistry2);
+  typeRegistry = undefined;
+  if (null != typeRegistry) {
+    typeRegistry = typeRegistry.typeRegistry;
+  }
+  if (null === typeRegistry) {
+    typeRegistry = [];
+  }
+  const items = [...typeRegistry];
+  let typeRegistry1;
+  if (null != typeRegistry2) {
+    typeRegistry1 = typeRegistry2.typeRegistry;
+  }
+  if (null === typeRegistry1) {
+    typeRegistry1 = [];
+  }
+  HermesBuiltin.arraySpread(items, typeRegistry1, tmp3);
+  merged.typeRegistry = items;
+  return merged;
+};

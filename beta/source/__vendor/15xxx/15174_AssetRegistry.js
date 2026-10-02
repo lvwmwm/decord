@@ -1,10 +1,10 @@
 // Module ID: 15174
 // Function ID: 15175
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 15174 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "4aac4b9e524273cde97c71cf7da9357a", name: "DoubleCheckmarkIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "15e2770ff873ff5fbea525f59a114fa0", name: "es-419.messages.15e2770ff873ff5fbea525f59a114fa0.compiled.messages", type: "jsona" });

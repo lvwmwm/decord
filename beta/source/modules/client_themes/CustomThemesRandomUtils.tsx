@@ -1,11 +1,11 @@
-// Module ID: 4690
-// Function ID: 4691
+// Module ID: 4692
+// Function ID: 4693
 // Name: CustomThemesRandomUtils
-// Dependencies: [672, 2]
+// Dependencies: [684, 2]
 // Exports: generateRandomColorOptions
 
-// Module 4690 (CustomThemesRandomUtils)
-import _modDef672 from "module_672" /* 672 */;
+// Module 4692 (CustomThemesRandomUtils)
+import _modDef684 from "module_684" /* 684 */;
 import size from "module_2" /* 2 */;
 
 let items = ["#94E0CF", "#9AF0B1", "#9A90FF", "#9A53FF", "#FDA6E4", "#FFE6C0", "#EFB4AA", "#56B69F", "#29C566", "#5348CA", "#6D24D4", "#CA48C8", "#F0AE29", "#DF4232"];
@@ -66,7 +66,7 @@ export const generateRandomColorOptions = function generateRandomColorOptions() 
       return items;
     }
     try {
-      let obj = _modDef672(items);
+      let obj = _modDef684(items);
       const value = obj.get("hsl.h");
       const value3 = obj.get("hsl.s");
       const value4 = obj.get("hsl.l");

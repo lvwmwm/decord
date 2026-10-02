@@ -1,23 +1,23 @@
-// Module ID: 6723
-// Function ID: 6724
+// Module ID: 6724
+// Function ID: 6725
 // Name: ForumActivePostStore
-// Dependencies: [5819, 6724, 502, 2045, 4851, 2099, 2054, 2056, 12, 6725, 11, 504, 2062, 573, 2]
+// Dependencies: [5820, 6725, 502, 2051, 4852, 2102, 2060, 2062, 12, 6726, 11, 504, 2068, 585, 2]
 // Exports: computeThreadIdsSnapshot
 
-// Module 6723 (ForumActivePostStore)
+// Module 6724 (ForumActivePostStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 2054 */;
-import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2056 */;
-import SetUtils from "SetUtils" /* 2062 */;
-import ForumUtils from "ForumUtils" /* 6725 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 5819 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 6724 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 2060 */;
+import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2062 */;
+import SetUtils from "SetUtils" /* 2068 */;
+import ForumUtils from "ForumUtils" /* 6726 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 5820 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 6725 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import ReadStateStore from "ReadStateStore" /* 4851 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ReadStateStore from "ReadStateStore" /* 4852 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ function rebuildState(refreshThreadIds) {
       const obj3 = module_12;
       const sort = obj3.chain(closure_19).sort;
       obj3.chain(closure_19);
-      LATEST_ACTIVITY = LATEST_ACTIVITY(2054).ThreadSortOrder.LATEST_ACTIVITY;
+      LATEST_ACTIVITY = LATEST_ACTIVITY(2060).ThreadSortOrder.LATEST_ACTIVITY;
       closure_21 = sort((id, id2) => {
         let num = -1;
         const obj = ForumUtils;
@@ -132,7 +132,7 @@ function rebuildState(refreshThreadIds) {
       const obj4 = module_12;
       const sort2 = obj4.chain(closure_19).sort;
       obj4.chain(closure_19);
-      const CREATION_DATE = LATEST_ACTIVITY(2054).ThreadSortOrder.CREATION_DATE;
+      const CREATION_DATE = LATEST_ACTIVITY(2060).ThreadSortOrder.CREATION_DATE;
       closure_20 = sort2((id, id2) => {
         let num = -1;
         const obj = ForumUtils;
@@ -165,7 +165,7 @@ function rebuildState(refreshThreadIds) {
         return num;
       });
     }
-    const iter = LATEST_ACTIVITY === LATEST_ACTIVITY(2054).ThreadSortOrder.LATEST_ACTIVITY ? closure_21 : closure_20;
+    const iter = LATEST_ACTIVITY === LATEST_ACTIVITY(2060).ThreadSortOrder.LATEST_ACTIVITY ? closure_21 : closure_20;
     const valueResult = iter.value();
     let found = valueResult;
     if (0 !== set.size) {
@@ -237,20 +237,21 @@ class ForumActivePostStore extends Store {
   getCanAckThreads() {
     return c18;
   }
-  getThreadIds(id, arg1, set, arg3) {
+  getThreadIds(id, sortOrder, tagFilter, tagSetting) {
     const obj = SetUtils;
-    const areSetsEqualResult = obj.areSetsEqual(set, set);
+    const areSetsEqualResult = obj.areSetsEqual(tagFilter, set);
     let tmp2 = !areSetsEqualResult;
     c12 = id;
-    LATEST_ACTIVITY = arg1;
-    MATCH_SOME = arg3;
+    LATEST_ACTIVITY = sortOrder;
+    MATCH_SOME = tagSetting;
+    set = tagFilter;
     if (id !== c12) {
       rebuildState({ refreshThreadIds: true });
-    } else if (arg1 !== tmp3) {
+    } else if (sortOrder !== tmp3) {
       rebuildState({ sortThreadIds: true });
     } else {
       if (areSetsEqualResult) {
-        tmp2 = arg3 !== tmp4;
+        tmp2 = tagSetting !== tmp4;
       }
       if (tmp2) {
         rebuildState();

@@ -1,14 +1,14 @@
-// Module ID: 9013
-// Function ID: 9014
+// Module ID: 8990
+// Function ID: 8991
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 1074, 1979, 1086, 9014, 4685, 1115, 2]
+// Dependencies: [5, 32, 19, 1086, 1985, 1098, 8991, 4687, 1127, 2]
 // Exports: default
 
-// Module 9013 (useCreateChannelSubmit)
+// Module 8990 (useCreateChannelSubmit)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let applicationId, bitrate, body, body2, closure_3, closure_4, closure_5, name, permissionOverwrites, type, userLimit;
@@ -51,7 +51,7 @@ export default function useCreateChannelSubmit(arg0) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -82,7 +82,7 @@ export default function useCreateChannelSubmit(arg0) {
               guild_id = undefined;
               c7 = 1;
               applicationId = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -170,7 +170,7 @@ export default function useCreateChannelSubmit(arg0) {
             type = 0;
             bitrate(false);
             applicationId = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp61) {
           closure_5 = tmp61;

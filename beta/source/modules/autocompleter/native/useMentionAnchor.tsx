@@ -1,155 +1,259 @@
-// Module ID: 11883
-// Function ID: 11884
+// Module ID: 11777
+// Function ID: 11778
 // Name: useMentionAnchor
-// Dependencies: [32, 19, 9725, 2]
-// Exports: default
+// Dependencies: [32, 19, 9842, 558, 576, 2]
 
-// Module 11883 (useMentionAnchor)
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9725 */;
+// Module 11777 (useMentionAnchor)
+import react2 from "react" /* 576 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9842 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-function isMentionAnchorValid(seenText, arg1, anchor1, arg3, allowSpaces) {
-  let startsWithResult = null != anchor1 && anchor1 >= 0 && seenText.startsWith(arg3, anchor1) && arg1 >= anchor1 + arg3.length;
+function isMentionAnchorValid(text, selectionEnd, anchor, prefix, options) {
+  let startsWithResult = null != anchor && anchor >= 0 && text.startsWith(prefix, anchor) && selectionEnd >= anchor + prefix.length;
   if (startsWithResult) {
     let isUnbrokenRunResult;
-    const sum = anchor1 + arg3.length;
-    allowSpaces = undefined;
-    if (allowSpaces != null) {
-      allowSpaces = allowSpaces.allowSpaces;
+    const sum = anchor + prefix.length;
+    let allowSpaces;
+    if (options != null) {
+      allowSpaces = options.allowSpaces;
     }
     if (true === allowSpaces) {
-      let num2 = allowSpaces.maxQueryLength;
-      const diff = arg1 - sum;
+      let num2 = options.maxQueryLength;
+      const diff = selectionEnd - sum;
       if (num2 == null) {
         num2 = 64;
       }
       let isSingleLineRunResult = diff <= num2;
       if (isSingleLineRunResult) {
         const obj2 = autocompleter_AutocompleteUtils;
-        isSingleLineRunResult = obj2.isSingleLineRun(seenText, sum, arg1);
+        isSingleLineRunResult = obj2.isSingleLineRun(text, sum, selectionEnd);
       }
       if (isSingleLineRunResult) {
-        isSingleLineRunResult = !re4.test(seenText.slice(sum, arg1));
+        isSingleLineRunResult = !re4.test(text.slice(sum, selectionEnd));
       }
       isUnbrokenRunResult = isSingleLineRunResult;
     } else {
       const obj = autocompleter_AutocompleteUtils;
-      isUnbrokenRunResult = obj.isUnbrokenRun(seenText, sum, arg1);
+      isUnbrokenRunResult = obj.isUnbrokenRun(text, sum, selectionEnd);
     }
     startsWithResult = isUnbrokenRunResult;
   }
   return startsWithResult;
 }
+function transition(kind, enabled, enabled2) {
+  let anchor;
+  let options;
+  let prefix;
+  let seenText;
+  let selectionEnd;
+  let text;
+  ({ text, selectionEnd, prefix, options } = enabled);
+  if (enabled.enabled) {
+    let tmp2 = kind;
+    kind = kind.kind;
+    if ("idle" === kind) {
+      let tmp17;
+      const lastIndexOfResult = text.lastIndexOf(prefix, selectionEnd);
+      let tmp7 = null;
+      if (-1 !== lastIndexOfResult) {
+        let tmp10 = null;
+        const obj4 = autocompleter_AutocompleteUtils;
+        if (obj4.isWhitespaceSeparatingBoundary(text, lastIndexOfResult)) {
+          tmp10 = null;
+          if (isMentionAnchorValid(text, selectionEnd, lastIndexOfResult, prefix, options)) {
+            tmp10 = lastIndexOfResult;
+          }
+        }
+        tmp7 = tmp10;
+      }
+      if (null != tmp7) {
+        tmp17 = { kind: "pending", anchor: tmp7, seenText: null };
+        const obj2 = { kind: "pending", anchor: tmp7, seenText: null };
+      } else {
+        tmp17 = closure_6;
+      }
+      return tmp17;
+    } else if ("active" === kind) {
+      if (!enabled) {
+        tmp2 = closure_6;
+      }
+      return tmp2;
+    } else if ("pending" === kind) {
+      let tmp4;
+      ({ anchor, seenText } = tmp2);
+      if (enabled) {
+        tmp4 = { kind: "active", anchor };
+        const obj3 = { kind: "active", anchor };
+      } else if (text.startsWith(prefix, anchor)) {
+        tmp4 = { kind: "pending", anchor, seenText: null };
+        const obj5 = { kind: "pending", anchor, seenText: null };
+      } else if (anchor > text.length) {
+        tmp4 = closure_6;
+      } else if (null == seenText) {
+        tmp4 = { kind: "pending", anchor, seenText: text };
+        const obj = { kind: "pending", anchor, seenText: text };
+      } else {
+        tmp4 = tmp2;
+        if (seenText !== text) {
+          tmp4 = closure_6;
+        }
+      }
+      return tmp4;
+    }
+  } else {
+    return closure_6;
+  }
+}
 const re4 = /\s\s/;
 let closure_6 = { kind: "idle" };
-const result = size.fileFinishedImporting("modules/autocompleter/native/useMentionAnchor.tsx");
-
-export default function useMentionAnchor(seenText, arg1, arg2, arg3, allowSpaces) {
-  let anchor;
-  let items;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((text, selectionEnd, enabled, prefix, options) => {
   let tmp3;
   let tmp4;
-  let closure_0 = arg2;
-  let obj = react;
-  let tmp = closure_6;
+  let closure_0 = enabled;
+  let obj = react2;
+  const cResult = obj.c(14);
   [tmp3, tmp4] = _slicedToArray(react.useState(closure_6), 2);
   let closure_1 = tmp4;
-  let anchor1 = null;
   const tmp2 = _slicedToArray(react.useState(closure_6), 2);
-  if ("idle" !== tmp3.kind) {
-    anchor1 = tmp3.anchor;
-  }
-  const tmp6 = arg2 && isMentionAnchorValid(seenText, arg1, anchor1, arg3, allowSpaces);
-  let tmp13 = null;
-  if (tmp6) {
-    tmp13 = anchor1;
-  }
-  let tmp14 = tmp;
-  if (arg2) {
-    const kind = tmp3.kind;
-    if ("idle" === kind) {
-      const lastIndexOfResult = seenText.lastIndexOf(arg3, arg1);
-      let tmp19 = null;
-      if (-1 !== lastIndexOfResult) {
-        let tmp22 = null;
-        const obj5 = autocompleter_AutocompleteUtils;
-        if (obj5.isWhitespaceSeparatingBoundary(seenText, lastIndexOfResult)) {
-          tmp22 = null;
-          if (isMentionAnchorValid(seenText, arg1, lastIndexOfResult, arg3, allowSpaces)) {
-            tmp22 = lastIndexOfResult;
-          }
-        }
-        tmp19 = tmp22;
-      }
-      if (null != tmp19) {
-        tmp = { kind: "pending", anchor: tmp19, seenText: null };
-        const obj2 = { kind: "pending", anchor: tmp19, seenText: null };
-      }
-      tmp14 = tmp;
-    } else if ("active" === kind) {
-      let tmp17 = tmp;
-      if (tmp6) {
-        tmp17 = tmp3;
-      }
-      tmp14 = tmp17;
-    } else if ("pending" === kind) {
-      let tmp15;
-      ({ anchor, seenText } = tmp3);
-      if (tmp6) {
-        tmp15 = { kind: "active", anchor };
-        const obj3 = { kind: "active", anchor };
-      } else if (seenText.startsWith(arg3, anchor)) {
-        tmp15 = { kind: "pending", anchor, seenText: null };
-        const obj4 = { kind: "pending", anchor, seenText: null };
-      } else {
-        tmp15 = tmp;
-        if (anchor <= seenText.length) {
-          let tmp16;
-          if (null == seenText) {
-            tmp16 = { kind: "pending", anchor, seenText };
-            const obj6 = { kind: "pending", anchor, seenText };
-          } else {
-            tmp16 = tmp3;
-            if (seenText !== seenText) {
-              tmp16 = tmp;
+  if (cResult[0] === enabled) {
+    if (cResult[1] === options) {
+      if (cResult[2] === prefix) {
+        if (cResult[3] === tmp3) {
+          if (cResult[4] === selectionEnd) {
+            let tmp5;
+            let tmp6;
+            let tmp7;
+            let tmp23;
+            if (cResult[5] === text) {
+              tmp5 = cResult[6];
+              tmp6 = cResult[7];
+              tmp7 = cResult[8];
             }
+            if (!tmp7) {
+              tmp4(tmp6);
+            }
+            if (cResult[9] !== enabled) {
+              const fn = function k(anchor) {
+                let tmp4;
+                const tmp = closure_0;
+                if (tmp) {
+                  const obj = { kind: "pending", anchor, seenText: null };
+                  tmp4 = tmp4(obj);
+                }
+              };
+              cResult[9] = enabled;
+              cResult[10] = fn;
+              tmp23 = fn;
+            } else {
+              tmp23 = cResult[10];
+            }
+            if (cResult[11] === tmp23) {
+              let tmp24;
+              if (cResult[12] === tmp5) {
+                tmp24 = cResult[13];
+              }
+              return tmp24;
+            }
+            const obj2 = { anchor: tmp5, beginSearch: tmp23 };
+            cResult[11] = tmp23;
+            cResult[12] = tmp5;
+            cResult[13] = obj2;
+            tmp24 = obj2;
           }
-          tmp15 = tmp16;
         }
       }
-      tmp14 = tmp15;
     }
   }
-  let tmp29 = tmp3.kind === tmp14.kind;
-  if (tmp29) {
-    let tmp30 = "idle" === tmp3.kind;
-    if (!tmp30) {
-      let tmp31;
+  let anchor = null;
+  if ("idle" !== tmp3.kind) {
+    anchor = tmp3.anchor;
+  }
+  const tmp9 = enabled && isMentionAnchorValid(text, selectionEnd, anchor, prefix, options);
+  let tmp16 = null;
+  if (tmp9) {
+    tmp16 = anchor;
+  }
+  const obj3 = { enabled, text, selectionEnd, prefix, options };
+  const tmp17 = transition(tmp3, tmp9, obj3);
+  let tmp18 = tmp3.kind === tmp17.kind;
+  if (tmp18) {
+    let tmp19 = "idle" === tmp3.kind;
+    if (!tmp19) {
+      let tmp20;
       if ("active" === tmp3.kind) {
-        tmp31 = "active" === tmp14.kind && tmp3.anchor === tmp14.anchor;
+        tmp20 = "active" === tmp17.kind && tmp3.anchor === tmp17.anchor;
       } else {
-        tmp31 = "pending" === tmp14.kind && tmp3.anchor === tmp14.anchor && tmp3.seenText === tmp14.seenText;
+        tmp20 = "pending" === tmp17.kind && tmp3.anchor === tmp17.anchor && tmp3.seenText === tmp17.seenText;
       }
-      tmp30 = tmp31;
+      tmp19 = tmp20;
     }
-    tmp29 = tmp30;
+    tmp18 = tmp19;
   }
-  if (!tmp29) {
-    tmp4(tmp14);
+  cResult[0] = enabled;
+  cResult[1] = options;
+  cResult[2] = prefix;
+  cResult[3] = tmp3;
+  cResult[4] = selectionEnd;
+  cResult[5] = text;
+  cResult[6] = tmp16;
+  cResult[7] = tmp17;
+  cResult[8] = tmp18;
+  tmp7 = tmp18;
+  tmp6 = tmp17;
+  tmp5 = tmp16;
+}) : ((text, selectionEnd, enabled, prefix, options) => {
+  let items;
+  let tmp2;
+  let tmp3;
+  let closure_0 = enabled;
+  let obj = react;
+  let tmp = _slicedToArray(react.useState(closure_6), 2);
+  [tmp2, tmp3] = tmp;
+  let closure_1 = tmp3;
+  let anchor = null;
+  if ("idle" !== tmp2.kind) {
+    anchor = tmp2.anchor;
   }
-  const obj7 = {
-    anchor: tmp13,
+  const tmp5 = enabled && isMentionAnchorValid(text, selectionEnd, anchor, prefix, options);
+  let tmp12 = null;
+  if (tmp5) {
+    tmp12 = anchor;
+  }
+  const obj2 = { enabled, text, selectionEnd, prefix, options };
+  const tmp13 = transition(tmp2, tmp5, obj2);
+  let tmp14 = tmp2.kind === tmp13.kind;
+  if (tmp14) {
+    let tmp15 = "idle" === tmp2.kind;
+    if (!tmp15) {
+      let tmp16;
+      if ("active" === tmp2.kind) {
+        tmp16 = "active" === tmp13.kind && tmp2.anchor === tmp13.anchor;
+      } else {
+        tmp16 = "pending" === tmp13.kind && tmp2.anchor === tmp13.anchor && tmp2.seenText === tmp13.seenText;
+      }
+      tmp15 = tmp16;
+    }
+    tmp14 = tmp15;
+  }
+  if (!tmp14) {
+    tmp3(tmp13);
+  }
+  const obj3 = {
+    anchor: tmp12,
     beginSearch: obj.useCallback((anchor) => {
-      let tmp4;
       const tmp = closure_0;
       if (tmp) {
         const obj = { kind: "pending", anchor, seenText: null };
-        tmp4 = tmp4(obj);
+        tmp3(obj);
       }
     }, items)
   };
-  items = [arg2];
-  return obj7;
-};
+  items = [enabled];
+  return obj3;
+});
+const result = size.fileFinishedImporting("modules/autocompleter/native/useMentionAnchor.tsx");
+
+export default tmp2;

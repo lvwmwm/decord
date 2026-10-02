@@ -1,16 +1,16 @@
-// Module ID: 1223
-// Function ID: 1224
+// Module ID: 1235
+// Function ID: 1236
 // Name: ProtoUtils
-// Dependencies: [1187, 2]
+// Dependencies: [1199, 2]
 // Exports: b64ToProto, protoToB64
 
-// Module 1223 (ProtoUtils)
-import _mod1187 from "module_1187" /* 1187 */;
+// Module 1235 (ProtoUtils)
+import _mod1199 from "module_1199" /* 1199 */;
 import size from "module_2" /* 2 */;
 
 const BINARY_READ_OPTIONS = {
   readerFactory(buf) {
-    const BinaryReader = _mod1187.BinaryReader;
+    const BinaryReader = _mod1199.BinaryReader;
     const textDecoder = new TextDecoder("utf-8");
     const binaryReader = new BinaryReader(buf, textDecoder);
     return binaryReader;
@@ -23,12 +23,12 @@ export const b64ToProto = function b64ToProto(fromBinary, actionData) {
   let fromBinaryResult = null;
   if (null != actionData) {
     fromBinary = fromBinary.fromBinary;
-    const obj = _mod1187;
+    const obj = _mod1199;
     fromBinaryResult = fromBinary(obj.base64decode(actionData), obj);
   }
   return fromBinaryResult;
 };
 export const protoToB64 = function protoToB64(toBinary, favoriteGifs) {
-  const obj = _mod1187;
+  const obj = _mod1199;
   return obj.base64encode(toBinary.toBinary(favoriteGifs));
 };

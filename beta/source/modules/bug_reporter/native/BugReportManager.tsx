@@ -1,15 +1,15 @@
-// Module ID: 9675
-// Function ID: 9676
+// Module ID: 12284
+// Function ID: 12285
 // Name: BugReportManager
-// Dependencies: [5, 17, 1346, 1074, 5045, 1364, 9554, 9556, 1255, 6539, 9676, 2]
+// Dependencies: [5, 17, 1358, 1086, 5046, 1370, 12221, 12223, 1267, 6540, 12285, 2]
 
-// Module 9675 (BugReportManager)
-import Constants from "Constants" /* 1074 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5045 */;
+// Module 12284 (BugReportManager)
+import Constants from "Constants" /* 1086 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 5046 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1358 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_3, duration;
@@ -28,7 +28,7 @@ function showNotification(uri) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -72,7 +72,7 @@ function showNotification(uri) {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -104,7 +104,7 @@ function showNotification(uri) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -160,7 +160,7 @@ function showNotification(uri) {
             obj8 = tmp(duration[8]);
             enqueueNotification(obj10);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -214,7 +214,7 @@ class BugReportManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -261,7 +261,7 @@ class BugReportManager extends AutomaticLifecycleManager {
               addScreenshotEvent();
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp11) {
           c3 = 3;

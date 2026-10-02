@@ -1,22 +1,23 @@
-// Module ID: 9621
-// Function ID: 9622
+// Module ID: 12254
+// Function ID: 12255
 // Name: NotificationSettingsMessageNotificationActionSheet
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 6571, 9618, 4832, 1115, 5997, 6000, 2]
-// Exports: default
+// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 12251, 4833, 1127, 5994, 5995, 6572, 2]
 
-// Module 9621 (NotificationSettingsMessageNotificationActionSheet)
+// Module 12254 (NotificationSettingsMessageNotificationActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import intl5 from "intl" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 5997 */;
-import TableRadioRow4 from "TableRadioRow" /* 6000 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
-import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 9618 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl5 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import TableRadioRow4 from "TableRadioRow" /* 5994 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 5995 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 12251 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -34,9 +35,163 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, padding: 16 };
 let closure_7 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsMessageNotificationActionSheet.tsx");
-
-export default function NotificationSettingsMessageNotificationActionSheet(defaultValue) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((value) => {
+  let intl;
+  let intl3;
+  let intl4;
+  let items;
+  let items1;
+  let items2;
+  let onChange;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(26);
+  const tmp4 = closure_7();
+  const sheet = tmp4.sheet;
+  if (cResult[0] !== value.value) {
+    const obj2 = { notificationSetting: value.value };
+    const tmp8 = hasOwnProperty(NotificationSettingsMockMessageDefault, obj2);
+    cResult[0] = value.value;
+    cResult[1] = tmp8;
+    tmp5 = tmp8;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === tmp4.header) {
+    let tmp9;
+    let tmp13;
+    let tmp12;
+    let tmp17;
+    let tmp19;
+    let tmp23;
+    let tmp27;
+    if (cResult[3] === tmp5) {
+      tmp9 = cResult[4];
+    }
+    const _Symbol = Symbol;
+    const content = tmp4.content;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = { variant: "text-sm/semibold", children: intl.string(intl5.t["1m22ZB"]) };
+      const Text = tmp(4833).Text;
+      intl = tmp(1127).intl;
+      const tmp15 = hasOwnProperty(Text, obj3);
+      const tmp16 = hasOwnProperty(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted" });
+      cResult[5] = tmp15;
+      cResult[6] = tmp16;
+      tmp13 = tmp16;
+      tmp12 = tmp15;
+    } else {
+      tmp12 = cResult[5];
+      tmp13 = cResult[6];
+    }
+    const _Symbol2 = Symbol;
+    const form = tmp4.form;
+    ({ value, onChange } = value);
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl2 = tmp(1127).intl;
+      const stringResult = intl2.string(intl5.t["HVah/3"]);
+      cResult[7] = stringResult;
+      tmp17 = stringResult;
+    } else {
+      tmp17 = cResult[7];
+    }
+    if (cResult[8] !== value.allMessagesSubLabel) {
+      const obj4 = { label: tmp17, value: UserNotificationSettings.ALL_MESSAGES, subLabel: value.allMessagesSubLabel };
+      const tmp22 = hasOwnProperty(TableRadioRow4.TableRadioRow, obj4);
+      cResult[8] = value.allMessagesSubLabel;
+      cResult[9] = tmp22;
+      tmp19 = tmp22;
+    } else {
+      tmp19 = cResult[9];
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj5 = { label: intl3.string(intl5.t["tu+ZWJ"]), value: UserNotificationSettings.ONLY_MENTIONS };
+      const TableRadioRow = tmp(5994).TableRadioRow;
+      intl3 = tmp(1127).intl;
+      const tmp26 = hasOwnProperty(TableRadioRow, obj5);
+      cResult[10] = tmp26;
+      tmp23 = tmp26;
+    } else {
+      tmp23 = cResult[10];
+    }
+    const _Symbol4 = Symbol;
+    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj6 = { label: intl4.string(intl5.t.X4wWUi), value: UserNotificationSettings.NO_MESSAGES };
+      const TableRadioRow2 = tmp(5994).TableRadioRow;
+      intl4 = tmp(1127).intl;
+      const tmp30 = hasOwnProperty(TableRadioRow2, obj6);
+      cResult[11] = tmp30;
+      tmp27 = tmp30;
+    } else {
+      tmp27 = cResult[11];
+    }
+    if (cResult[12] === value.onChange) {
+      if (cResult[13] === value.value) {
+        let tmp31;
+        if (cResult[14] === tmp19) {
+          tmp31 = cResult[15];
+        }
+        if (cResult[16] === tmp4.form) {
+          let tmp34;
+          if (cResult[17] === tmp31) {
+            tmp34 = cResult[18];
+          }
+          if (cResult[19] === tmp4.content) {
+            let tmp38;
+            if (cResult[20] === tmp34) {
+              tmp38 = cResult[21];
+            }
+            if (cResult[22] === tmp4.sheet) {
+              if (cResult[23] === tmp38) {
+                let tmp42;
+                if (cResult[24] === tmp9) {
+                  tmp42 = cResult[25];
+                }
+                return tmp42;
+              }
+            }
+            const obj7 = { startExpanded: true, backgroundStyles: sheet, children: items };
+            items = [tmp9, tmp38];
+            const tmp44 = metroRequire(Sheet_BottomSheet.BottomSheet, obj7);
+            cResult[22] = tmp4.sheet;
+            cResult[23] = tmp38;
+            cResult[24] = tmp9;
+            cResult[25] = tmp44;
+            tmp42 = tmp44;
+          }
+          const obj8 = { style: content, children: items1 };
+          items1 = [tmp12, tmp13, tmp34];
+          const tmp41 = metroRequire(View, obj8);
+          cResult[19] = tmp4.content;
+          cResult[20] = tmp34;
+          cResult[21] = tmp41;
+          tmp38 = tmp41;
+        }
+        const obj9 = { style: form, children: tmp31 };
+        const tmp37 = hasOwnProperty(View, obj9);
+        cResult[16] = tmp4.form;
+        cResult[17] = tmp31;
+        cResult[18] = tmp37;
+        tmp34 = tmp37;
+      }
+    }
+    const obj10 = { defaultValue: value, onChange, hasIcons: false, children: items2 };
+    items2 = [tmp19, tmp23, tmp27];
+    const tmp33 = metroRequire(TableRadioGroup2.TableRadioGroup, obj10);
+    cResult[12] = value.onChange;
+    cResult[13] = value.value;
+    cResult[14] = tmp19;
+    cResult[15] = tmp33;
+    tmp31 = tmp33;
+  }
+  const obj11 = { style: tmp4.header, children: tmp5 };
+  const tmp10 = hasOwnProperty(View, obj11);
+  cResult[2] = tmp4.header;
+  cResult[3] = tmp5;
+  cResult[4] = tmp10;
+  tmp9 = tmp10;
+}) : ((defaultValue) => {
   let TableRadioGroup;
   let intl;
   let intl2;
@@ -76,4 +231,7 @@ export default function NotificationSettingsMessageNotificationActionSheet(defau
   items1[2] = hasOwnProperty(View, obj6);
   items[1] = metroRequire(View, obj4);
   return metroRequire(BottomSheet, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsMessageNotificationActionSheet.tsx");
+
+export default tmp5;

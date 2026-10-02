@@ -1,17 +1,23 @@
-// Module ID: 11414
-// Function ID: 11415
+// Module ID: 11289
+// Function ID: 11290
 // Name: SoundmojiActionSheet
-// Dependencies: [19, 17, 21, 4836, 576, 1364, 5318, 6571, 6551, 11415, 4832, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 1370, 558, 576, 5319, 6552, 11290, 4833, 1127, 6572, 2]
 
-// Module 11414 (SoundmojiActionSheet)
+// Module 11289 (SoundmojiActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5318 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5319 */;
+import EmojiDefault from "Emoji" /* 6552 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 11290 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -34,10 +40,128 @@ if (PlatformUtils.isIOS()) {
 size = { width: 32, height: 32, fontSize: num, lineHeight: 36, marginEnd: nativeDefault.space.PX_16 };
 obj3 = { gap: nativeDefault.space.PX_4, display: "flex", flex: 1 };
 let closure_7 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/premium/sounds/soundmoji/native/views/SoundmojiActionSheet.tsx");
-
-export default function SoundmojiActionSheet(guildId) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let channelId;
+  let guildId;
+  let intl;
+  let items;
+  let items1;
+  let messageId;
+  let soundId;
+  let str;
+  const obj = react2;
+  const cResult = obj.c(21);
+  ({ guildId, channelId, messageId, soundId } = arg0);
+  const tmp4 = closure_7();
+  if (cResult[0] === guildId) {
+    if (cResult[1] === channelId) {
+      if (cResult[2] === messageId) {
+        let tmp5;
+        if (cResult[3] === soundId) {
+          tmp5 = cResult[4];
+        }
+        let tmp8 = null;
+        if (null != tmp5) {
+          if (cResult[5] === tmp5) {
+            let tmp9;
+            let tmp14;
+            let tmp18;
+            if (cResult[6] === tmp4.emoji) {
+              tmp9 = cResult[7];
+            }
+            if (cResult[8] !== tmp5.name) {
+              const obj2 = { variant: "text-sm/bold", children: tmp5.name };
+              const tmp16 = hasOwnProperty(Text_Text.Text, obj2);
+              cResult[8] = tmp5.name;
+              cResult[9] = tmp16;
+              tmp14 = tmp16;
+            } else {
+              tmp14 = cResult[9];
+            }
+            const _Symbol = Symbol;
+            if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+              const obj4 = { variant: "text-sm/normal", children: intl.string(intl2.t.Tj5Nwi) };
+              const Text = tmp(4833).Text;
+              intl = tmp(1127).intl;
+              const tmp20 = hasOwnProperty(Text, obj4);
+              cResult[10] = tmp20;
+              tmp18 = tmp20;
+            } else {
+              tmp18 = cResult[10];
+            }
+            if (cResult[11] === tmp4.textContainer) {
+              let tmp21;
+              if (cResult[12] === tmp14) {
+                tmp21 = cResult[13];
+              }
+              if (cResult[14] === tmp4.soundmojiContainer) {
+                if (cResult[15] === tmp9) {
+                  let tmp25;
+                  if (cResult[16] === tmp21) {
+                    tmp25 = cResult[17];
+                  }
+                  if (cResult[18] === tmp4.container) {
+                    let tmp29;
+                    if (cResult[19] === tmp25) {
+                      tmp29 = cResult[20];
+                    }
+                    tmp8 = tmp29;
+                  }
+                  const obj5 = { startExpanded: true, bodyStyles: tmp4.container, children: tmp25 };
+                  const tmp31 = hasOwnProperty(Sheet_BottomSheet.BottomSheet, obj5);
+                  cResult[18] = tmp4.container;
+                  cResult[19] = tmp25;
+                  cResult[20] = tmp31;
+                  tmp29 = tmp31;
+                }
+              }
+              const obj6 = { style: tmp4.soundmojiContainer, children: items };
+              items = [tmp9, tmp21];
+              const tmp28 = metroRequire(View, obj6);
+              cResult[14] = tmp4.soundmojiContainer;
+              cResult[15] = tmp9;
+              cResult[16] = tmp21;
+              cResult[17] = tmp28;
+              tmp25 = tmp28;
+            }
+            const obj7 = { style: tmp4.textContainer, children: items1 };
+            items1 = [tmp14, tmp18];
+            const tmp24 = metroRequire(View, obj7);
+            cResult[11] = tmp4.textContainer;
+            cResult[12] = tmp14;
+            cResult[13] = tmp24;
+            tmp21 = tmp24;
+          }
+          let tmp11Result = null != tmp5.emojiId || null != tmp5.emojiName;
+          if (tmp11Result) {
+            ({ emoji: obj3.fastImageStyle, emoji: obj3.textEmojiStyle } = tmp4);
+            const obj8 = { fastImageStyle: null, textEmojiStyle: null, src: getSoundboardEmojiUrlDefault(tmp5, 32), name: str };
+            str = tmp5.emojiName;
+            const tmp11 = hasOwnProperty;
+            const tmp13 = EmojiDefault;
+            if (str == null) {
+              str = "";
+            }
+            tmp11Result = tmp11(tmp13, obj8);
+          }
+          cResult[5] = tmp5;
+          cResult[6] = tmp4.emoji;
+          cResult[7] = tmp11Result;
+          tmp9 = tmp11Result;
+        }
+        return tmp8;
+      }
+    }
+  }
+  const tmpResult = getSoundmojiASTFromString;
+  const soundmojiFromMessage = tmpResult.getSoundmojiFromMessage(guildId, channelId, messageId, soundId, []);
+  cResult[0] = guildId;
+  cResult[1] = channelId;
+  cResult[2] = messageId;
+  cResult[3] = soundId;
+  cResult[4] = soundmojiFromMessage;
+  tmp5 = soundmojiFromMessage;
+}) : ((guildId) => {
   let intl;
   let items1;
   let items2;
@@ -58,15 +182,15 @@ export default function SoundmojiActionSheet(guildId) {
     let obj = { startExpanded: true, bodyStyles: tmp.container, children: closure_6(View, obj2) };
     let tmp4Result = null != memo.emojiId;
     obj2 = { style: tmp.soundmojiContainer, children: items1 };
-    BottomSheet = guildId(messageId[7]).BottomSheet;
+    BottomSheet = guildId(messageId[13]).BottomSheet;
     if (!tmp4Result) {
       tmp4Result = null != memo.emojiName;
     }
     if (tmp4Result) {
       ({ emoji: obj3.fastImageStyle, emoji: obj3.textEmojiStyle } = tmp);
-      const obj4 = { fastImageStyle: null, textEmojiStyle: null, src: channelId(messageId[9])(memo, 32), name: str };
+      const obj4 = { fastImageStyle: null, textEmojiStyle: null, src: channelId(messageId[10])(memo, 32), name: str };
       str = memo.emojiName;
-      const tmp11 = channelId(messageId[8]);
+      const tmp11 = channelId(messageId[9]);
       if (str == null) {
         str = "";
       }
@@ -75,13 +199,17 @@ export default function SoundmojiActionSheet(guildId) {
     items1 = [tmp4Result, ];
     const obj5 = { style: tmp.textContainer, children: items2 };
     const obj6 = { variant: "text-sm/bold", children: memo.name };
-    items2 = [closure_5(guildId(messageId[10]).Text, obj6), ];
-    const obj11 = { variant: "text-sm/normal", children: intl.string(guildId(messageId[11]).t.Tj5Nwi) };
-    const Text = tmp5(tmp6[10]).Text;
-    intl = tmp5(tmp6[11]).intl;
+    items2 = [closure_5(guildId(messageId[11]).Text, obj6), ];
+    const obj11 = { variant: "text-sm/normal", children: intl.string(guildId(messageId[12]).t.Tj5Nwi) };
+    const Text = tmp5(tmp6[11]).Text;
+    intl = tmp5(tmp6[12]).intl;
     items2[1] = closure_5(Text, obj11);
     items1[1] = closure_6(View, obj5);
     tmp4Result2 = tmp4(BottomSheet, obj);
   }
   return tmp4Result2;
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/premium/sounds/soundmoji/native/views/SoundmojiActionSheet.tsx");
+
+export default tmp4;

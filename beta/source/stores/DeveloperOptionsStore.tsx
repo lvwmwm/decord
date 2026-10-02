@@ -1,18 +1,18 @@
-// Module ID: 1346
-// Function ID: 1347
+// Module ID: 1358
+// Function ID: 1359
 // Name: DeveloperOptionsStore
-// Dependencies: [1074, 559, 1091, 1271, 1100, 1347, 510, 1231, 504, 573, 2]
+// Dependencies: [1086, 569, 1103, 1283, 1112, 1359, 510, 1243, 504, 585, 2]
 
-// Module 1346 (DeveloperOptionsStore)
+// Module 1358 (DeveloperOptionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import TokenManagerAll from "TokenManager" /* 1100 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import Backoff from "Backoff" /* 559 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import TokenManagerAll from "TokenManager" /* 1112 */;
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import Backoff from "Backoff" /* 569 */;
 import size from "module_2" /* 2 */;
 
 const UserFlags = Constants.UserFlags;

@@ -1,66 +1,130 @@
-// Module ID: 12145
-// Function ID: 12146
+// Module ID: 12187
+// Function ID: 12188
 // Name: ChatViewPopups
-// Dependencies: [19, 12146, 12150, 12158, 2]
+// Dependencies: [19, 558, 576, 12188, 12192, 12198, 2]
 
-// Module 12145 (ChatViewPopups)
-import useIsHubRealNamePromptShowingDefault from "useIsHubRealNamePromptShowing" /* 12146 */;
-import WelcomeScreenUtils from "WelcomeScreenUtils" /* 12150 */;
-import GuildDirectoryNicknameUpsellModalActionCreatorsDefault from "GuildDirectoryNicknameUpsellModalActionCreators" /* 12158 */;
+// Module 12187 (ChatViewPopups)
+import useIsHubRealNamePromptShowingDefault from "useIsHubRealNamePromptShowing" /* 12188 */;
+import WelcomeScreenUtils from "WelcomeScreenUtils" /* 12192 */;
+import GuildDirectoryNicknameUpsellModalActionCreatorsDefault from "GuildDirectoryNicknameUpsellModalActionCreators" /* 12198 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, importDefault;
+let dependencyMap, guildId, importDefault;
 
-class ChatViewPopups {
-  constructor(guildId) {
-    let closure_2;
-    let ref;
-    guildId = guildId.guildId;
-    let showWelcomeModal;
-    const channelId = guildId.channelId;
-    importDefault = showWelcomeModal.useRef(false);
-    const tmp = useIsHubRealNamePromptShowingDefault(guildId);
-    dependencyMap = tmp;
-    let obj = guildId(12150);
-    showWelcomeModal = obj.useShowWelcomeModal(guildId, channelId);
-    const items = [guildId, showWelcomeModal, tmp];
-    const effect = showWelcomeModal.useEffect(() => {
-      if (!ref.current) {
-        const tmp2 = closure_2;
-        if (tmp2) {
-          const obj2 = {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let closure_2;
+  let ref;
+  let showWelcomeModal;
+  let obj = guildId(576);
+  const cResult = obj.c(5);
+  guildId = guildId.guildId;
+  let obj2 = showWelcomeModal;
+  const channelId = guildId.channelId;
+  importDefault = showWelcomeModal.useRef(false);
+  let tmp2 = useIsHubRealNamePromptShowingDefault(guildId);
+  dependencyMap = tmp2;
+  let obj3 = guildId(12192);
+  showWelcomeModal = obj3.useShowWelcomeModal(guildId, channelId);
+  if (cResult[0] === guildId) {
+    if (cResult[1] === tmp2) {
+      let tmp4;
+      let tmp5;
+      if (cResult[2] === showWelcomeModal) {
+        tmp4 = cResult[3];
+        tmp5 = cResult[4];
+      }
+      const effect = obj2.useEffect(tmp4, tmp5);
+      return null;
+    }
+  }
+  const fn = function t() {
+    if (!ref.current) {
+      const tmp2 = closure_2;
+      if (tmp2) {
+        const obj2 = {
+          guildId,
+          onHide() {
+                ref.current = false;
+                return false;
+              }
+        };
+        const obj3 = GuildDirectoryNicknameUpsellModalActionCreatorsDefault;
+        obj3.open(obj2);
+        ref.current = true;
+      } else {
+        const tmp3 = showWelcomeModal;
+        if (tmp3) {
+          const obj4 = {
             guildId,
             onHide() {
-                  ref.current = false;
-                  return false;
-                }
+                    ref.current = false;
+                    return false;
+                  }
           };
-          const obj3 = GuildDirectoryNicknameUpsellModalActionCreatorsDefault;
-          obj3.open(obj2);
+          const obj = WelcomeScreenUtils;
+          const result = obj.openWelcomeActionSheet(obj4);
           ref.current = true;
-        } else {
-          const tmp3 = showWelcomeModal;
-          if (tmp3) {
-            const obj4 = {
-              guildId,
-              onHide() {
-                      ref.current = false;
-                      return false;
-                    }
-            };
-            const obj = WelcomeScreenUtils;
-            const result = obj.openWelcomeActionSheet(obj4);
-            ref.current = true;
-          }
         }
       }
-    }, items);
-    return null;
-  }
-}
-const memoResult = react.memo(ChatViewPopups);
+    }
+  };
+  const items = [guildId, showWelcomeModal, tmp2];
+  cResult[0] = guildId;
+  cResult[1] = tmp2;
+  cResult[2] = showWelcomeModal;
+  cResult[3] = fn;
+  cResult[4] = items;
+  tmp5 = items;
+  tmp4 = fn;
+}) : ((guildId) => {
+  let closure_2;
+  let ref;
+  guildId = guildId.guildId;
+  let showWelcomeModal;
+  const channelId = guildId.channelId;
+  importDefault = showWelcomeModal.useRef(false);
+  const tmp = useIsHubRealNamePromptShowingDefault(guildId);
+  dependencyMap = tmp;
+  let obj = guildId(12192);
+  showWelcomeModal = obj.useShowWelcomeModal(guildId, channelId);
+  const items = [guildId, showWelcomeModal, tmp];
+  const effect = showWelcomeModal.useEffect(() => {
+    if (!ref.current) {
+      const tmp2 = closure_2;
+      if (tmp2) {
+        const obj2 = {
+          guildId,
+          onHide() {
+                ref.current = false;
+                return false;
+              }
+        };
+        const obj3 = GuildDirectoryNicknameUpsellModalActionCreatorsDefault;
+        obj3.open(obj2);
+        ref.current = true;
+      } else {
+        const tmp3 = showWelcomeModal;
+        if (tmp3) {
+          const obj4 = {
+            guildId,
+            onHide() {
+                    ref.current = false;
+                    return false;
+                  }
+          };
+          const obj = WelcomeScreenUtils;
+          const result = obj.openWelcomeActionSheet(obj4);
+          ref.current = true;
+        }
+      }
+    }
+  }, items);
+  return null;
+});
+const memoResult = react.memo(tmp2);
 let result = size.fileFinishedImporting("modules/chat/native/ChatViewPopups.tsx");
 
 export default memoResult;
-export { ChatViewPopups };
+export const ChatViewPopups = tmp2;

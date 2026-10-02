@@ -1,32 +1,32 @@
 // Module ID: 502
 // Function ID: 503
 // Name: AuthenticationStore
-// Dependencies: [503, 1073, 1074, 1099, 3, 1100, 510, 1101, 1241, 13681, 573, 13682, 6367, 4736, 1254, 13683, 1231, 11908, 504, 11018, 13684, 7081, 1979, 2]
+// Dependencies: [503, 1085, 1086, 1111, 3, 1112, 510, 1113, 1253, 13683, 585, 13684, 6364, 4738, 1266, 13685, 1243, 11802, 504, 10886, 13686, 7085, 1985, 2]
 
 // Module 502 (AuthenticationStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage6 from "Storage" /* 510 */;
-import Dispatcher2 from "Dispatcher" /* 573 */;
-import TokenManagerAll from "TokenManager" /* 1100 */;
-import router_utils from "router_utils" /* 1101 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import FingerprintUtils from "FingerprintUtils" /* 1254 */;
-import Server from "Server" /* 1979 */;
-import APIErrorDefault from "APIError" /* 4736 */;
-import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 6367 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 7081 */;
-import ApexActionCreators from "ApexActionCreators" /* 11018 */;
-import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 11908 */;
-import fetchExperiments2 from "fetchExperiments" /* 13681 */;
-import awaitExperiments from "awaitExperiments" /* 13682 */;
-import TrackingConsentUtilsDefault from "TrackingConsentUtils" /* 13683 */;
-import react_native from "react-native" /* 13684 */;
+import Dispatcher2 from "Dispatcher" /* 585 */;
+import TokenManagerAll from "TokenManager" /* 1112 */;
+import router_utils from "router_utils" /* 1113 */;
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import FingerprintUtils from "FingerprintUtils" /* 1266 */;
+import Server from "Server" /* 1985 */;
+import APIErrorDefault from "APIError" /* 4738 */;
+import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 6364 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 7085 */;
+import ApexActionCreators from "ApexActionCreators" /* 10886 */;
+import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 11802 */;
+import fetchExperiments2 from "fetchExperiments" /* 13683 */;
+import awaitExperiments from "awaitExperiments" /* 13684 */;
+import TrackingConsentUtilsDefault from "TrackingConsentUtils" /* 13685 */;
+import react_native from "react-native" /* 13686 */;
 import BrowserHandoffStore from "BrowserHandoffStore" /* 503 */;
-import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1073 */;
-import Constants from "Constants" /* 1074 */;
-import AgeGateConstants from "AgeGateConstants" /* 1099 */;
+import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1085 */;
+import Constants from "Constants" /* 1086 */;
+import AgeGateConstants from "AgeGateConstants" /* 1111 */;
 import size from "module_2" /* 2 */;
 
 const Dispatcher = Dispatcher2;
@@ -39,7 +39,7 @@ let c10;
 let closure_12;
 let metroImportAll;
 let unpackModuleId;
-const f71492 = (body) => {
+const f80358 = (body) => {
   let assignments;
   let guild_experiments;
   body = body.body;
@@ -65,12 +65,12 @@ const f71492 = (body) => {
   const obj6 = awaitExperiments;
   obj6.onExperimentsLoaded();
 };
-const f71493 = () => {
+const f80359 = () => {
   c33 = null;
   const obj = Dispatcher;
   obj.dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
 };
-const f71494 = () => {
+const f80360 = () => {
   const obj = router_utils;
   obj.transitionTo(constants.REGISTER);
 };
@@ -133,7 +133,7 @@ function fetchFingerprint(arg0) {
           fetchExperiments2;
           tmpResult4 = router_utils;
           const experiments = fetchExperiments(obj3);
-          nextPromise = experiments.then(f71492, f71493);
+          nextPromise = experiments.then(f80358, f80359);
           closure_33 = nextPromise;
         }
         return nextPromise;
@@ -467,7 +467,7 @@ let obj = {
         c26 = true;
         handleLogout();
         const obj4 = Dispatcher;
-        obj4.wait(f71494);
+        obj4.wait(f80360);
       } else {
         const obj3 = { user_id: Storage2.get(user_id_cache) };
         const track = AnalyticsUtilsDefault.track;
@@ -775,7 +775,7 @@ let obj = {
     const fetchExperiments = tmp5.fetchExperiments;
     obj5 = router_utils;
     const experiments = fetchExperiments(obj3);
-    closure_33 = experiments.then(f71492, f71493);
+    closure_33 = experiments.then(f80358, f80359);
   },
   CURRENT_USER_UPDATE: function handleUserUpdate(user) {
     user = user.user;
@@ -790,7 +790,7 @@ let obj = {
     c26 = true;
     handleLogout();
     const obj = Dispatcher;
-    obj.wait(f71494);
+    obj.wait(f80360);
   },
   CLOSE_SUSPENDED_USER: function handleSuspendedUserClosed() {
     c34 = null;

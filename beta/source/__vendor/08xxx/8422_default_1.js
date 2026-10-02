@@ -1,11 +1,11 @@
 // Module ID: 8422
 // Function ID: 8423
 // Name: default_1
-// Dependencies: [8403]
+// Dependencies: [8400]
 // Exports: default
 
 // Module 8422 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 8403 */;
+import captureStackTrace2 from "captureStackTrace" /* 8400 */;
 
 let hasOwnProperty;
 
@@ -94,138 +94,551 @@ function error() {
 }
 
 export default function default_1() {
-  if (typeof error === "function") {
-    let obj = {
+  let typeLabel;
+  if (typeof typeLabel === "function") {
+    let obj2 = { string: { label: "\u05DE\u05D7\u05E8\u05D5\u05D6\u05EA", gender: "f" }, number: { label: "\u05DE\u05E1\u05E4\u05E8", gender: "m" }, boolean: { label: "\u05E2\u05E8\u05DA \u05D1\u05D5\u05DC\u05D9\u05D0\u05E0\u05D9", gender: "m" }, bigint: { label: "BigInt", gender: "m" }, date: { label: "\u05EA\u05D0\u05E8\u05D9\u05DA", gender: "m" }, array: { label: "\u05DE\u05E2\u05E8\u05DA", gender: "m" }, object: { label: "\u05D0\u05D5\u05D1\u05D9\u05D9\u05E7\u05D8", gender: "m" }, null: { label: "\u05E2\u05E8\u05DA \u05E8\u05D9\u05E7 (null)", gender: "m" }, undefined: { label: "\u05E2\u05E8\u05DA \u05DC\u05D0 \u05DE\u05D5\u05D2\u05D3\u05E8 (undefined)", gender: "m" }, symbol: { label: "\u05E1\u05D9\u05DE\u05D1\u05D5\u05DC (Symbol)", gender: "m" }, function: { label: "\u05E4\u05D5\u05E0\u05E7\u05E6\u05D9\u05D4", gender: "f" }, map: { label: "\u05DE\u05E4\u05D4 (Map)", gender: "f" }, set: { label: "\u05E7\u05D1\u05D5\u05E6\u05D4 (Set)", gender: "f" }, file: { label: "\u05E7\u05D5\u05D1\u05E5", gender: "m" }, promise: { label: "Promise", gender: "m" }, NaN: { label: "NaN", gender: "m" }, unknown: { label: "\u05E2\u05E8\u05DA \u05DC\u05D0 \u05D9\u05D3\u05D5\u05E2", gender: "m" }, value: { label: "\u05E2\u05E8\u05DA", gender: "m" } };
+    const obj3 = { string: { unit: "\u05EA\u05D5\u05D5\u05D9\u05DD", shortLabel: "\u05E7\u05E6\u05E8", longLabel: "\u05D0\u05E8\u05D5\u05DA" }, file: { unit: "\u05D1\u05D9\u05D9\u05D8\u05D9\u05DD", shortLabel: "\u05E7\u05D8\u05DF", longLabel: "\u05D2\u05D3\u05D5\u05DC" }, array: { unit: "\u05E4\u05E8\u05D9\u05D8\u05D9\u05DD", shortLabel: "\u05E7\u05D8\u05DF", longLabel: "\u05D2\u05D3\u05D5\u05DC" }, set: { unit: "\u05E4\u05E8\u05D9\u05D8\u05D9\u05DD", shortLabel: "\u05E7\u05D8\u05DF", longLabel: "\u05D2\u05D3\u05D5\u05DC" }, number: { unit: "", shortLabel: "\u05E7\u05D8\u05DF", longLabel: "\u05D2\u05D3\u05D5\u05DC" } };
+    function typeEntry(arg0) {
+
+    }
+    typeLabel = function typeLabel(arg0) {
+
+    };
+    function withDefinite(arg0) {
+
+    }
+    function verbFor(arg0) {
+
+    }
+    function getSizing(arg0) {
+
+    }
+    const obj4 = { regex: { label: "\u05E7\u05DC\u05D8", gender: "m" }, email: { label: "\u05DB\u05EA\u05D5\u05D1\u05EA \u05D0\u05D9\u05DE\u05D9\u05D9\u05DC", gender: "f" }, url: { label: "\u05DB\u05EA\u05D5\u05D1\u05EA \u05E8\u05E9\u05EA", gender: "f" }, emoji: { label: "\u05D0\u05D9\u05DE\u05D5\u05D2'\u05D9", gender: "m" }, uuid: { label: "UUID", gender: "m" }, nanoid: { label: "nanoid", gender: "m" }, guid: { label: "GUID", gender: "m" }, cuid: { label: "cuid", gender: "m" }, cuid2: { label: "cuid2", gender: "m" }, ulid: { label: "ULID", gender: "m" }, xid: { label: "XID", gender: "m" }, ksuid: { label: "KSUID", gender: "m" }, datetime: { label: "\u05EA\u05D0\u05E8\u05D9\u05DA \u05D5\u05D6\u05DE\u05DF ISO", gender: "m" }, date: { label: "\u05EA\u05D0\u05E8\u05D9\u05DA ISO", gender: "m" }, time: { label: "\u05D6\u05DE\u05DF ISO", gender: "m" }, duration: { label: "\u05DE\u05E9\u05DA \u05D6\u05DE\u05DF ISO", gender: "m" }, ipv4: { label: "\u05DB\u05EA\u05D5\u05D1\u05EA IPv4", gender: "f" }, ipv6: { label: "\u05DB\u05EA\u05D5\u05D1\u05EA IPv6", gender: "f" }, cidrv4: { label: "\u05D8\u05D5\u05D5\u05D7 IPv4", gender: "m" }, cidrv6: { label: "\u05D8\u05D5\u05D5\u05D7 IPv6", gender: "m" }, base64: { label: "\u05DE\u05D7\u05E8\u05D5\u05D6\u05EA \u05D1\u05D1\u05E1\u05D9\u05E1 64", gender: "f" }, base64url: { label: "\u05DE\u05D7\u05E8\u05D5\u05D6\u05EA \u05D1\u05D1\u05E1\u05D9\u05E1 64 \u05DC\u05DB\u05EA\u05D5\u05D1\u05D5\u05EA \u05E8\u05E9\u05EA", gender: "f" }, json_string: { label: "\u05DE\u05D7\u05E8\u05D5\u05D6\u05EA JSON", gender: "f" }, e164: { label: "\u05DE\u05E1\u05E4\u05E8 E.164", gender: "m" }, jwt: { label: "JWT", gender: "m" }, ends_with: { label: "\u05E7\u05DC\u05D8", gender: "m" }, includes: { label: "\u05E7\u05DC\u05D8", gender: "m" }, lowercase: { label: "\u05E7\u05DC\u05D8", gender: "m" }, starts_with: { label: "\u05E7\u05DC\u05D8", gender: "m" }, uppercase: { label: "\u05E7\u05DC\u05D8", gender: "m" } };
+    let closure_8 = { nan: "NaN" };
+    return {
       localeError: (code) => {
           switch (code.code) {
             case "invalid_type":
             {
               let combined;
-              let expected = closure_2[code.expected];
-              if (expected == null) {
-                expected = code.expected;
+              let label = code.expected;
+              let str135 = label;
+              if (label == null) {
+                str135 = "";
+              }
+              let tmp111 = tmp109[str135];
+              if (tmp111 == null) {
+                if (typeof typeLabel === "function") {
+                  if (typeof typeEntry === "function") {
+                    let tmp114;
+                    if (label) {
+                      tmp114 = obj2[label];
+                    }
+                    if (tmp114) {
+                      label = tmp114.label;
+                    } else if (label == null) {
+                      label = obj2.unknown.label;
+                    }
+                    tmp111 = label;
+                  } else {
+                    throw new TypeError("Trying to call a non-function");
+                  }
+                } else {
+                  throw new TypeError("Trying to call a non-function");
+                }
               }
               const parsedTypeResult = captureStackTrace.parsedType(code.input);
-              const obj = /^[A-Z]/;
-              if (obj.test(code.expected)) {
-                const _HermesInternal15 = HermesInternal;
-                combined = "Virheellinen tyyppi: odotettiin instanceof " + code.expected + ", oli " + tmp35;
+              let tmp119 = tmp109[parsedTypeResult];
+              if (tmp119 == null) {
+                let label1;
+                if (obj2[parsedTypeResult] != null) {
+                  label1 = tmp121.label;
+                }
+                tmp119 = label1;
+              }
+              if (tmp119 == null) {
+                tmp119 = parsedTypeResult;
+              }
+              obj2 = /^[A-Z]/;
+              if (obj2.test(code.expected)) {
+                const _HermesInternal33 = HermesInternal;
+                combined = "\u05E7\u05DC\u05D8 \u05DC\u05D0 \u05EA\u05E7\u05D9\u05DF: \u05E6\u05E8\u05D9\u05DA \u05DC\u05D4\u05D9\u05D5\u05EA instanceof " + code.expected + ", \u05D4\u05EA\u05E7\u05D1\u05DC " + tmp119;
               } else {
-                const _HermesInternal14 = HermesInternal;
-                combined = "Virheellinen tyyppi: odotettiin " + expected + ", oli " + tmp35;
+                const _HermesInternal32 = HermesInternal;
+                combined = "\u05E7\u05DC\u05D8 \u05DC\u05D0 \u05EA\u05E7\u05D9\u05DF: \u05E6\u05E8\u05D9\u05DA \u05DC\u05D4\u05D9\u05D5\u05EA " + tmp111 + ", \u05D4\u05EA\u05E7\u05D1\u05DC " + tmp119;
               }
               return combined;
             }
             case "invalid_value":
             {
-              let combined1;
               if (1 === code.values.length) {
-                const _HermesInternal13 = HermesInternal;
-                combined1 = "Virheellinen sy\u00F6te: t\u00E4ytyy olla " + captureStackTrace.stringifyPrimitive(code.values[0]);
+                const _HermesInternal31 = HermesInternal;
+                return "\u05E2\u05E8\u05DA \u05DC\u05D0 \u05EA\u05E7\u05D9\u05DF: \u05D4\u05E2\u05E8\u05DA \u05D7\u05D9\u05D9\u05D1 \u05DC\u05D4\u05D9\u05D5\u05EA " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
-                const _HermesInternal12 = HermesInternal;
-                combined1 = "Virheellinen valinta: t\u00E4ytyy olla yksi seuraavista: " + captureStackTrace.joinValues(code.values, "|");
+                const values = code.values;
+                const mapped = values.map((item) => typeEntry.stringifyPrimitive(item));
+                if (2 === code.values.length) {
+                  const _HermesInternal30 = HermesInternal;
+                  return "\u05E2\u05E8\u05DA \u05DC\u05D0 \u05EA\u05E7\u05D9\u05DF: \u05D4\u05D0\u05E4\u05E9\u05E8\u05D5\u05D9\u05D5\u05EA \u05D4\u05DE\u05EA\u05D0\u05D9\u05DE\u05D5\u05EA \u05D4\u05DF " + mapped[0] + " \u05D0\u05D5 " + mapped[1];
+                } else {
+                  const tmp104 = mapped[mapped.length - 1];
+                  const substr = mapped.slice(0, -1);
+                  const _HermesInternal29 = HermesInternal;
+                  return "\u05E2\u05E8\u05DA \u05DC\u05D0 \u05EA\u05E7\u05D9\u05DF: \u05D4\u05D0\u05E4\u05E9\u05E8\u05D5\u05D9\u05D5\u05EA \u05D4\u05DE\u05EA\u05D0\u05D9\u05DE\u05D5\u05EA \u05D4\u05DF " + substr.join(", ") + " \u05D0\u05D5 " + tmp104;
+                }
               }
-              return combined1;
+              break;
             }
             case "too_big":
             {
-              let trimmed;
-              let str28 = "<";
-              if (code.inclusive) {
-                str28 = "<=";
-              }
-              if (obj2[code.origin] ?? null) {
-                const _HermesInternal11 = HermesInternal;
-                const str31 = code.maximum;
-                const str35 = "Liian suuri: " + (obj2[code.origin] ?? null).subject + " t\u00E4ytyy olla " + str28 + str31.toString() + " " + (obj2[code.origin] ?? null).unit;
-                trimmed = str35.trim();
+              const origin3 = code.origin;
+              if (typeof getSizing === "function") {
+                let tmp67 = null;
+                if (origin3) {
+                  tmp67 = obj3[origin3] ?? null;
+                  const tmp69 = obj3[origin3] ?? null;
+                }
+                let str79 = code.origin;
+                const tmp70 = withDefinite;
+                if (str79 == null) {
+                  str79 = "value";
+                }
+                if (typeof tmp70 === "function") {
+                  if (typeof typeLabel === "function") {
+                    if (typeof typeEntry === "function") {
+                      let tmp73;
+                      if (str79) {
+                        tmp73 = obj2[str79];
+                      }
+                      if (tmp73) {
+                        str79 = tmp73.label;
+                      } else if (str79 == null) {
+                        str79 = obj2.unknown.label;
+                      }
+                      const _HermesInternal20 = HermesInternal;
+                      const combined1 = "\u05D4" + str79;
+                      if ("string" === code.origin) {
+                        let str118;
+                        if (tmp67 != null) {
+                          str118 = tmp67.longLabel;
+                        }
+                        if (str118 == null) {
+                          str118 = "\u05D0\u05E8\u05D5\u05DA";
+                        }
+                        const str119 = code.maximum;
+                        let str120;
+                        const str1 = str119.toString();
+                        if (tmp67 != null) {
+                          str120 = tmp67.unit;
+                        }
+                        if (str120 == null) {
+                          str120 = "";
+                        }
+                        let str121 = "\u05DC\u05DB\u05DC \u05D4\u05D9\u05D5\u05EA\u05E8";
+                        if (code.inclusive) {
+                          str121 = "\u05D0\u05D5 \u05E4\u05D7\u05D5\u05EA";
+                        }
+                        const _HermesInternal28 = HermesInternal;
+                        const str128 = "" + str118 + " \u05DE\u05D3\u05D9: " + combined1 + " \u05E6\u05E8\u05D9\u05DB\u05D4 \u05DC\u05D4\u05DB\u05D9\u05DC " + str1 + " " + str120 + " " + str121;
+                        return str128.trim();
+                      } else if ("number" === code.origin) {
+                        let concat2Result;
+                        const maximum2 = code.maximum;
+                        const _HermesInternal26 = HermesInternal;
+                        const concat2 = HermesInternal.concat;
+                        if (code.inclusive) {
+                          concat2Result = concat2(maximum2);
+                        } else {
+                          concat2Result = concat2(maximum2);
+                        }
+                        const _HermesInternal27 = HermesInternal;
+                        return "\u05D2\u05D3\u05D5\u05DC \u05DE\u05D3\u05D9: " + combined1 + " \u05E6\u05E8\u05D9\u05DA \u05DC\u05D4\u05D9\u05D5\u05EA " + concat2Result;
+                      } else {
+                        let combined3;
+                        if ("array" !== code.origin) {
+                          if ("set" !== code.origin) {
+                            let str82 = "<";
+                            if (code.inclusive) {
+                              str82 = "<=";
+                            }
+                            let str83 = code.origin;
+                            const tmp78 = verbFor;
+                            if (str83 == null) {
+                              str83 = "value";
+                            }
+                            if (typeof tmp78 === "function") {
+                              if (typeof tmp72 === "function") {
+                                let combined2;
+                                let tmp79;
+                                if (str83) {
+                                  tmp79 = obj2[str83];
+                                }
+                                let str84;
+                                if (tmp79 != null) {
+                                  str84 = tmp79.gender;
+                                }
+                                if (str84 == null) {
+                                  str84 = "m";
+                                }
+                                let str85 = "\u05E6\u05E8\u05D9\u05DA \u05DC\u05D4\u05D9\u05D5\u05EA";
+                                if ("f" === str84) {
+                                  str85 = "\u05E6\u05E8\u05D9\u05DB\u05D4 \u05DC\u05D4\u05D9\u05D5\u05EA";
+                                }
+                                let unit;
+                                if (tmp67 != null) {
+                                  unit = tmp67.unit;
+                                }
+                                if (unit) {
+                                  const _HermesInternal22 = HermesInternal;
+                                  const str94 = code.maximum;
+                                  combined2 = "" + tmp67.longLabel + " \u05DE\u05D3\u05D9: " + combined1 + " " + str85 + " " + str82 + str94.toString() + " " + tmp67.unit;
+                                } else {
+                                  let str87;
+                                  if (tmp67 != null) {
+                                    str87 = tmp67.longLabel;
+                                  }
+                                  if (str87 == null) {
+                                    str87 = "\u05D2\u05D3\u05D5\u05DC";
+                                  }
+                                  const _HermesInternal21 = HermesInternal;
+                                  const str88 = code.maximum;
+                                  combined2 = "" + str87 + " \u05DE\u05D3\u05D9: " + combined1 + " " + str85 + " " + str82 + str88.toString();
+                                }
+                                return combined2;
+                              } else {
+                                throw new TypeError("Trying to call a non-function");
+                              }
+                            } else {
+                              throw new TypeError("Trying to call a non-function");
+                            }
+                          }
+                        }
+                        let str101 = "\u05E6\u05E8\u05D9\u05DA";
+                        if ("set" === code.origin) {
+                          str101 = "\u05E6\u05E8\u05D9\u05DB\u05D4";
+                        }
+                        const maximum = code.maximum;
+                        if (code.inclusive) {
+                          let str106;
+                          if (tmp67 != null) {
+                            str106 = tmp67.unit;
+                          }
+                          if (str106 == null) {
+                            str106 = "";
+                          }
+                          const _HermesInternal24 = HermesInternal;
+                          combined3 = "" + maximum + " " + str106 + " \u05D0\u05D5 \u05E4\u05D7\u05D5\u05EA";
+                        } else {
+                          let str103;
+                          if (tmp67 != null) {
+                            str103 = tmp67.unit;
+                          }
+                          if (str103 == null) {
+                            str103 = "";
+                          }
+                          const _HermesInternal23 = HermesInternal;
+                          combined3 = "\u05E4\u05D7\u05D5\u05EA \u05DE-" + maximum + " " + str103;
+                        }
+                        const _HermesInternal25 = HermesInternal;
+                        const str113 = "\u05D2\u05D3\u05D5\u05DC \u05DE\u05D3\u05D9: " + combined1 + " " + str101 + " \u05DC\u05D4\u05DB\u05D9\u05DC " + combined3;
+                        return str113.trim();
+                      }
+                    } else {
+                      throw new TypeError("Trying to call a non-function");
+                    }
+                  } else {
+                    throw new TypeError("Trying to call a non-function");
+                  }
+                } else {
+                  throw new TypeError("Trying to call a non-function");
+                }
               } else {
-                const _HermesInternal10 = HermesInternal;
-                const str29 = code.maximum;
-                trimmed = "Liian suuri: arvon t\u00E4ytyy olla " + str28 + str29.toString();
+                throw new TypeError("Trying to call a non-function");
               }
-              return trimmed;
+              break;
             }
             case "too_small":
             {
-              let trimmed1;
-              let str20 = ">";
-              if (code.inclusive) {
-                str20 = ">=";
-              }
-              if (obj2[code.origin] ?? null) {
-                const _HermesInternal9 = HermesInternal;
-                const str23 = code.minimum;
-                const str27 = "Liian pieni: " + (obj2[code.origin] ?? null).subject + " t\u00E4ytyy olla " + str20 + str23.toString() + " " + (obj2[code.origin] ?? null).unit;
-                trimmed1 = str27.trim();
+              const origin = code.origin;
+              if (typeof getSizing === "function") {
+                let tmp25 = null;
+                if (origin) {
+                  tmp25 = obj3[origin] ?? null;
+                  const tmp27 = obj3[origin] ?? null;
+                }
+                let str25 = code.origin;
+                const tmp28 = withDefinite;
+                if (str25 == null) {
+                  str25 = "value";
+                }
+                if (typeof tmp28 === "function") {
+                  if (typeof typeLabel === "function") {
+                    if (typeof typeEntry === "function") {
+                      let tmp31;
+                      if (str25) {
+                        tmp31 = obj2[str25];
+                      }
+                      if (tmp31) {
+                        str25 = tmp31.label;
+                      } else if (str25 == null) {
+                        str25 = obj2.unknown.label;
+                      }
+                      const _HermesInternal10 = HermesInternal;
+                      const combined4 = "\u05D4" + str25;
+                      if ("string" === code.origin) {
+                        let str68;
+                        if (tmp25 != null) {
+                          str68 = tmp25.shortLabel;
+                        }
+                        if (str68 == null) {
+                          str68 = "\u05E7\u05E6\u05E8";
+                        }
+                        const str69 = code.minimum;
+                        let str70;
+                        const str167 = str69.toString();
+                        if (tmp25 != null) {
+                          str70 = tmp25.unit;
+                        }
+                        if (str70 == null) {
+                          str70 = "";
+                        }
+                        let str71 = "\u05DC\u05E4\u05D7\u05D5\u05EA";
+                        if (code.inclusive) {
+                          str71 = "\u05D0\u05D5 \u05D9\u05D5\u05EA\u05E8";
+                        }
+                        const _HermesInternal19 = HermesInternal;
+                        const str78 = "" + str68 + " \u05DE\u05D3\u05D9: " + combined4 + " \u05E6\u05E8\u05D9\u05DB\u05D4 \u05DC\u05D4\u05DB\u05D9\u05DC " + str167 + " " + str70 + " " + str71;
+                        return str78.trim();
+                      } else if ("number" === code.origin) {
+                        let combined5;
+                        const minimum2 = code.minimum;
+                        const _HermesInternal17 = HermesInternal;
+                        if (code.inclusive) {
+                          combined5 = concat(minimum2);
+                        } else {
+                          combined5 = concat(minimum2);
+                        }
+                        const _HermesInternal18 = HermesInternal;
+                        return "\u05E7\u05D8\u05DF \u05DE\u05D3\u05D9: " + combined4 + " \u05E6\u05E8\u05D9\u05DA \u05DC\u05D4\u05D9\u05D5\u05EA " + combined5;
+                      } else {
+                        let combined8;
+                        if ("array" !== code.origin) {
+                          if ("set" !== code.origin) {
+                            let str28 = ">";
+                            if (code.inclusive) {
+                              str28 = ">=";
+                            }
+                            let str29 = code.origin;
+                            const tmp36 = verbFor;
+                            if (str29 == null) {
+                              str29 = "value";
+                            }
+                            if (typeof tmp36 === "function") {
+                              if (typeof tmp30 === "function") {
+                                let combined6;
+                                let tmp37;
+                                if (str29) {
+                                  tmp37 = obj2[str29];
+                                }
+                                let str30;
+                                if (tmp37 != null) {
+                                  str30 = tmp37.gender;
+                                }
+                                if (str30 == null) {
+                                  str30 = "m";
+                                }
+                                let str31 = "\u05E6\u05E8\u05D9\u05DA \u05DC\u05D4\u05D9\u05D5\u05EA";
+                                if ("f" === str30) {
+                                  str31 = "\u05E6\u05E8\u05D9\u05DB\u05D4 \u05DC\u05D4\u05D9\u05D5\u05EA";
+                                }
+                                let unit1;
+                                if (tmp25 != null) {
+                                  unit1 = tmp25.unit;
+                                }
+                                if (unit1) {
+                                  const _HermesInternal12 = HermesInternal;
+                                  const str40 = code.minimum;
+                                  combined6 = "" + tmp25.shortLabel + " \u05DE\u05D3\u05D9: " + combined4 + " " + str31 + " " + str28 + str40.toString() + " " + tmp25.unit;
+                                } else {
+                                  let str33;
+                                  if (tmp25 != null) {
+                                    str33 = tmp25.shortLabel;
+                                  }
+                                  if (str33 == null) {
+                                    str33 = "\u05E7\u05D8\u05DF";
+                                  }
+                                  const _HermesInternal11 = HermesInternal;
+                                  const str34 = code.minimum;
+                                  combined6 = "" + str33 + " \u05DE\u05D3\u05D9: " + combined4 + " " + str31 + " " + str28 + str34.toString();
+                                }
+                                return combined6;
+                              } else {
+                                throw new TypeError("Trying to call a non-function");
+                              }
+                            } else {
+                              throw new TypeError("Trying to call a non-function");
+                            }
+                          }
+                        }
+                        let str47 = "\u05E6\u05E8\u05D9\u05DA";
+                        if ("set" === code.origin) {
+                          str47 = "\u05E6\u05E8\u05D9\u05DB\u05D4";
+                        }
+                        if (1 === code.minimum) {
+                          let combined7;
+                          if (code.inclusive) {
+                            const origin2 = code.origin;
+                            const _HermesInternal16 = HermesInternal;
+                            combined7 = "\u05E7\u05D8\u05DF \u05DE\u05D3\u05D9: " + combined4 + " " + str47 + " \u05DC\u05D4\u05DB\u05D9\u05DC " + "\u05DC\u05E4\u05D7\u05D5\u05EA \u05E4\u05E8\u05D9\u05D8 \u05D0\u05D7\u05D3";
+                          }
+                          return combined7;
+                        }
+                        const minimum = code.minimum;
+                        if (code.inclusive) {
+                          let str52;
+                          if (tmp25 != null) {
+                            str52 = tmp25.unit;
+                          }
+                          if (str52 == null) {
+                            str52 = "";
+                          }
+                          const _HermesInternal14 = HermesInternal;
+                          combined8 = "" + minimum + " " + str52 + " \u05D0\u05D5 \u05D9\u05D5\u05EA\u05E8";
+                        } else {
+                          let str49;
+                          if (tmp25 != null) {
+                            str49 = tmp25.unit;
+                          }
+                          if (str49 == null) {
+                            str49 = "";
+                          }
+                          const _HermesInternal13 = HermesInternal;
+                          combined8 = "\u05D9\u05D5\u05EA\u05E8 \u05DE-" + minimum + " " + str49;
+                        }
+                        const _HermesInternal15 = HermesInternal;
+                        const str59 = "\u05E7\u05D8\u05DF \u05DE\u05D3\u05D9: " + combined4 + " " + str47 + " \u05DC\u05D4\u05DB\u05D9\u05DC " + combined8;
+                        combined7 = str59.trim();
+                      }
+                    } else {
+                      throw new TypeError("Trying to call a non-function");
+                    }
+                  } else {
+                    throw new TypeError("Trying to call a non-function");
+                  }
+                } else {
+                  throw new TypeError("Trying to call a non-function");
+                }
               } else {
-                const _HermesInternal8 = HermesInternal;
-                const str21 = code.minimum;
-                trimmed1 = "Liian pieni: arvon t\u00E4ytyy olla " + str20 + str21.toString();
+                throw new TypeError("Trying to call a non-function");
               }
-              return trimmed1;
+              break;
             }
             case "invalid_format":
             {
-              let combined2;
               if ("starts_with" === code.format) {
-                const _HermesInternal7 = HermesInternal;
-                combined2 = "Virheellinen sy\u00F6te: t\u00E4ytyy alkaa \"" + code.prefix + "\"";
+                const _HermesInternal9 = HermesInternal;
+                return "\u05D4\u05DE\u05D7\u05E8\u05D5\u05D6\u05EA \u05D7\u05D9\u05D9\u05D1\u05EA \u05DC\u05D4\u05EA\u05D7\u05D9\u05DC \u05D1 \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
-                const _HermesInternal6 = HermesInternal;
-                combined2 = "Virheellinen sy\u00F6te: t\u00E4ytyy loppua \"" + code.suffix + "\"";
+                const _HermesInternal8 = HermesInternal;
+                return "\u05D4\u05DE\u05D7\u05E8\u05D5\u05D6\u05EA \u05D7\u05D9\u05D9\u05D1\u05EA \u05DC\u05D4\u05E1\u05EA\u05D9\u05D9\u05DD \u05D1 \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
-                const _HermesInternal5 = HermesInternal;
-                combined2 = "Virheellinen sy\u00F6te: t\u00E4ytyy sis\u00E4lt\u00E4\u00E4 \"" + code.includes + "\"";
+                const _HermesInternal7 = HermesInternal;
+                return "\u05D4\u05DE\u05D7\u05E8\u05D5\u05D6\u05EA \u05D7\u05D9\u05D9\u05D1\u05EA \u05DC\u05DB\u05DC\u05D5\u05DC \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
-                const _HermesInternal4 = HermesInternal;
-                combined2 = "Virheellinen sy\u00F6te: t\u00E4ytyy vastata s\u00E4\u00E4nn\u00F6llist\u00E4 lauseketta " + code.pattern;
+                const _HermesInternal6 = HermesInternal;
+                return "\u05D4\u05DE\u05D7\u05E8\u05D5\u05D6\u05EA \u05D7\u05D9\u05D9\u05D1\u05EA \u05DC\u05D4\u05EA\u05D0\u05D9\u05DD \u05DC\u05EA\u05D1\u05E0\u05D9\u05EA " + code.pattern;
               } else {
-                const format = closure_1[code.format] ?? code.format;
-                const _HermesInternal3 = HermesInternal;
-                combined2 = "Virheellinen " + format;
+                let label2;
+                if (obj4[code.format] != null) {
+                  label2 = tmp15.label;
+                }
+                if (label2 == null) {
+                  label2 = code.format;
+                }
+                let str13;
+                if (obj4[code.format] != null) {
+                  str13 = tmp15.gender;
+                }
+                if (str13 == null) {
+                  str13 = "m";
+                }
+                let str14 = "\u05EA\u05E7\u05D9\u05DF";
+                if ("f" === str13) {
+                  str14 = "\u05EA\u05E7\u05D9\u05E0\u05D4";
+                }
+                const _HermesInternal5 = HermesInternal;
+                return "" + label2 + " \u05DC\u05D0 " + str14;
               }
-              return combined2;
+              break;
             }
             case "not_multiple_of":
             {
-              const _HermesInternal2 = HermesInternal;
-              return "Virheellinen luku: t\u00E4ytyy olla luvun " + code.divisor + " monikerta";
+              const _HermesInternal4 = HermesInternal;
+              return "\u05DE\u05E1\u05E4\u05E8 \u05DC\u05D0 \u05EA\u05E7\u05D9\u05DF: \u05D7\u05D9\u05D9\u05D1 \u05DC\u05D4\u05D9\u05D5\u05EA \u05DE\u05DB\u05E4\u05DC\u05D4 \u05E9\u05DC " + code.divisor;
             }
             case "unrecognized_keys":
             {
-              let str4 = "Tuntematon avain";
+              let str5 = "";
               if (code.keys.length > 1) {
-                str4 = "Tuntemattomat avaimet";
+                str5 = "\u05D5\u05EA";
               }
-              const _HermesInternal = HermesInternal;
-              return "" + str4 + ": " + captureStackTrace.joinValues(code.keys, ", ");
+              let str6 = "\u05D4";
+              if (code.keys.length > 1) {
+                str6 = "\u05D9\u05DD";
+              }
+              const _HermesInternal3 = HermesInternal;
+              return "\u05DE\u05E4\u05EA\u05D7" + str5 + " \u05DC\u05D0 \u05DE\u05D6\u05D5\u05D4" + str6 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
-              return "Virheellinen avain tietueessa";
+              return "\u05E9\u05D3\u05D4 \u05DC\u05D0 \u05EA\u05E7\u05D9\u05DF \u05D1\u05D0\u05D5\u05D1\u05D9\u05D9\u05E7\u05D8";
             }
             case "invalid_union":
             {
-              return "Virheellinen unioni";
+              return "\u05E7\u05DC\u05D8 \u05DC\u05D0 \u05EA\u05E7\u05D9\u05DF";
             }
             case "invalid_element":
             {
-              return "Virheellinen arvo joukossa";
+              let str = code.origin;
+              const tmp = withDefinite;
+              if (str == null) {
+                str = "array";
+              }
+              if (typeof tmp === "function") {
+                if (typeof typeLabel === "function") {
+                  if (typeof typeEntry === "function") {
+                    let tmp5;
+                    if (str) {
+                      tmp5 = obj2[str];
+                    }
+                    if (tmp5) {
+                      str = tmp5.label;
+                    } else if (str == null) {
+                      str = obj2.unknown.label;
+                    }
+                    const _HermesInternal = HermesInternal;
+                    const _HermesInternal2 = HermesInternal;
+                    return "\u05E2\u05E8\u05DA \u05DC\u05D0 \u05EA\u05E7\u05D9\u05DF \u05D1" + "\u05D4" + str;
+                  } else {
+                    throw new TypeError("Trying to call a non-function");
+                  }
+                } else {
+                  throw new TypeError("Trying to call a non-function");
+                }
+              } else {
+                throw new TypeError("Trying to call a non-function");
+              }
+              break;
             }
             default:
             {
-              return "Virheellinen sy\u00F6te";
+              return "\u05E7\u05DC\u05D8 \u05DC\u05D0 \u05EA\u05E7\u05D9\u05DF";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "merkki\u00E4", subject: "merkkijonon" }, file: { unit: "tavua", subject: "tiedoston" }, array: { unit: "alkiota", subject: "listan" }, set: { unit: "alkiota", subject: "joukon" }, number: { unit: "", subject: "luvun" }, bigint: { unit: "", subject: "suuren kokonaisluvun" }, int: { unit: "", subject: "kokonaisluvun" }, date: { unit: "", subject: "p\u00E4iv\u00E4m\u00E4\u00E4r\u00E4n" } };
-    closure_1 = { regex: "s\u00E4\u00E4nn\u00F6llinen lauseke", email: "s\u00E4hk\u00F6postiosoite", url: "URL-osoite", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO-aikaleima", date: "ISO-p\u00E4iv\u00E4m\u00E4\u00E4r\u00E4", time: "ISO-aika", duration: "ISO-kesto", ipv4: "IPv4-osoite", ipv6: "IPv6-osoite", cidrv4: "IPv4-alue", cidrv6: "IPv6-alue", base64: "base64-koodattu merkkijono", base64url: "base64url-koodattu merkkijono", json_string: "JSON-merkkijono", e164: "E.164-luku", jwt: "JWT", template_literal: "templaattimerkkijono" };
-    let closure_2 = { nan: "NaN" };
-    return obj;
   } else {
+    let str = "Trying to call a non-function";
     throw new TypeError("Trying to call a non-function");
   }
 };

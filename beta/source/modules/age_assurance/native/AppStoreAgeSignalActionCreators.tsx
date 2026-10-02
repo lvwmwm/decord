@@ -1,12 +1,12 @@
-// Module ID: 8025
-// Function ID: 8026
+// Module ID: 8029
+// Function ID: 8030
 // Name: AppStoreAgeSignalActionCreators
-// Dependencies: [5, 1074, 1271, 2]
+// Dependencies: [5, 1086, 1283, 2]
 // Exports: registerAgeSignalAttestKey, requestAgeSignalChallenge, submitAgeSignal
 
-// Module 8025 (AppStoreAgeSignalActionCreators)
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 8029 (AppStoreAgeSignalActionCreators)
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = function _requestAgeSignalChallenge() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ let obj = function _requestAgeSignalChallenge() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp11) {
           c4 = 3;
@@ -131,7 +131,7 @@ obj = function _submitAgeSignal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -154,7 +154,7 @@ obj = function _submitAgeSignal() {
               }
               c8 = 1;
               c9 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {

@@ -1,24 +1,24 @@
-// Module ID: 6526
-// Function ID: 6527
+// Module ID: 6527
+// Function ID: 6528
 // Name: GuildOnboardingActionCreators
-// Dependencies: [5, 32, 2101, 2045, 2108, 1372, 6521, 1074, 4455, 5018, 1271, 573, 1231, 5864, 12, 6527, 1370, 6530, 1241, 5016, 6531, 11, 1385, 6534, 6541, 2]
+// Dependencies: [5, 32, 2104, 2051, 2111, 1378, 6522, 1086, 4458, 5019, 1283, 585, 1243, 5865, 12, 6528, 1376, 6531, 1253, 5017, 6532, 11, 1391, 6535, 6542, 2]
 
-// Module 6526 (GuildOnboardingActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4455 */;
-import ReadStateConstants from "ReadStateConstants" /* 5018 */;
-import ImpersonateActionCreators from "ImpersonateActionCreators" /* 5864 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 6534 */;
+// Module 6527 (GuildOnboardingActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4458 */;
+import ReadStateConstants from "ReadStateConstants" /* 5019 */;
+import ImpersonateActionCreators from "ImpersonateActionCreators" /* 5865 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 6535 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ImpersonateStore from "ImpersonateStore" /* 2101 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import UserStore from "UserStore" /* 1372 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6521 */;
-import Constants from "Constants" /* 1074 */;
+import ImpersonateStore from "ImpersonateStore" /* 2104 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import UserStore from "UserStore" /* 1378 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6522 */;
+import Constants from "Constants" /* 1086 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -135,7 +135,7 @@ let obj = {
     }
   },
   updateOnboardingResponses: module_12.debounce(_updateOnboardingResponses, 1000),
-  updateRolesLocal(guildId, items2, difference2Result) {
+  updateRolesLocal(guildId, addedRoleIds, removedRoleIds) {
     let difference;
     let obj2;
     const selfMember = GuildMemberStore.getSelfMember(guildId);
@@ -152,11 +152,11 @@ let obj = {
       const difference2 = module_12.difference;
       module_12;
       const obj3 = module_12;
-      const result = updateImpersonatedRoles(guildId, difference2(obj3.union(roles, items2), difference2Result));
+      const result = updateImpersonatedRoles(guildId, difference2(obj3.union(roles, addedRoleIds), removedRoleIds));
     } else {
-      const tmp2 = items2.length > 0 || difference2Result.length > 0;
+      const tmp2 = addedRoleIds.length > 0 || removedRoleIds.length > 0;
       if (tmp2) {
-        const obj = { type: "GUILD_MEMBER_UPDATE_LOCAL", guildId, roles: difference(obj2.union(roles, items2), difference2Result), addedRoleIds: items2, removedRoleIds: difference2Result };
+        const obj = { type: "GUILD_MEMBER_UPDATE_LOCAL", guildId, roles: difference(obj2.union(roles, addedRoleIds), removedRoleIds), addedRoleIds, removedRoleIds };
         const dispatch = DispatcherDefault.dispatch;
         DispatcherDefault;
         difference = module_12.difference;
@@ -180,23 +180,23 @@ let obj = {
       tmp = prompts[prompts.length - 1];
     }
     const selectedOptions = GuildOnboardingPromptsStore.getSelectedOptions(guildId);
-    const obj2 = items1(6527);
+    const obj2 = items1(6528);
     const selectedRoleIds = obj2.getSelectedRoleIds(selectedOptions);
-    const obj3 = items1(6527);
+    const obj3 = items1(6528);
     const selectedChannelIds = obj3.getSelectedChannelIds(selectedOptions);
     if (GuildOnboardingPromptsStore.getEnabled(guildId)) {
       defaultChannelIds = obj.getDefaultChannelIds(guildId);
     } else {
       defaultChannelIds = [];
     }
-    const tmp2Result = items1(6527);
+    const tmp2Result = items1(6528);
     [arr3, arr4] = tmp2Result.getChannelCoverageForOnboarding(guildId, prompts, defaultChannelIds);
     const items = [...defaultChannelIds];
     _slicedToArray(tmp2Result.getChannelCoverageForOnboarding(guildId, prompts, defaultChannelIds), 2);
     const mapped = items.map((item) => channel.getChannel(item));
-    const found = mapped.filter(tmp2(1370).isNotNullish);
-    const getFlattenedChannels = items1(6530).getFlattenedChannels;
-    items1(6530);
+    const found = mapped.filter(tmp2(1376).isNotNullish);
+    const getFlattenedChannels = items1(6531).getFlattenedChannels;
+    items1(6531);
     set = new Set(items);
     const length = getFlattenedChannels(guildId, set, found, true).length;
     if (null == tmp) {
@@ -206,15 +206,15 @@ let obj = {
       items1 = options.map((id) => id.id);
     }
     const connections = obj.getConnections(guildId);
-    const tmp2Result12 = items1(6527);
+    const tmp2Result12 = items1(6528);
     const providerConnectionState = tmp2Result12.getProviderConnectionState(connections);
-    const tmp2Result13 = items1(6527);
+    const tmp2Result13 = items1(6528);
     const applicationConnectionState = tmp2Result13.getApplicationConnectionState(connections);
     const obj4 = { step: prompts.length - 1, options_selected: num2, skipped: items1.length > 0, back: false, in_onboarding: true, is_final_step: true, roles_granted: selectedRoleIds.size, channels_granted: length, guild_onboarding_covered_channel_ids: arr3.map((id) => id.id), guild_onboarding_uncovered_channel_ids: arr4.map((id) => id.id) };
     const track = AnalyticsUtilsDefault.track;
     const GUILD_ONBOARDING_STEP_COMPLETED = constants.GUILD_ONBOARDING_STEP_COMPLETED;
     AnalyticsUtilsDefault;
-    const tmp2Result14 = items1(5016);
+    const tmp2Result14 = items1(5017);
     const merged = Object.assign(tmp2Result14.collectGuildAnalyticsMetadata(guildId));
     num2 = 0;
     if (null != tmp) {
@@ -223,19 +223,19 @@ let obj = {
     ({ connected: obj7.provider_connections_connected, notConnected: obj7.provider_connections_not_connected } = providerConnectionState);
     ({ connected: obj7.application_connections_connected, notConnected: obj7.application_connections_not_connected } = applicationConnectionState);
     track(GUILD_ONBOARDING_STEP_COMPLETED, obj4);
-    const ackGuildFeature = items1(6531).ackGuildFeature;
+    const ackGuildFeature = items1(6532).ackGuildFeature;
     const GUILD_ONBOARDING_QUESTION = ReadStateTypes.GUILD_ONBOARDING_QUESTION;
-    items1(6531);
+    items1(6532);
     const tmp13Result = SnowflakeUtilsDefault;
     ackGuildFeature(guildId, GUILD_ONBOARDING_QUESTION, tmp13Result.fromTimestamp(Date.now()));
     _updateOnboardingResponses(guildId, true);
     if (ImpersonateStore.isFullServerPreview(guildId)) {
-      const tmp2Result16 = items1(5864);
+      const tmp2Result16 = items1(5865);
       const result = tmp2Result16.updateImpersonatedChannels(guildId, items, []);
-      const tmp2Result17 = items1(5864);
+      const tmp2Result17 = items1(5865);
       const result1 = tmp2Result17.updateImpersonatedData(guildId, { optInEnabled: true });
       const _Array = Array;
-      const tmp2Result18 = items1(5864);
+      const tmp2Result18 = items1(5865);
       const result2 = tmp2Result18.updateImpersonatedRoles(guildId, Array.from(selectedRoleIds));
       const currentUser = UserStore.getCurrentUser();
       if (null != currentUser) {
@@ -249,9 +249,9 @@ let obj = {
         }
         const obj5 = { memberOptions: obj6 };
         obj6 = { flags: tmp2Result20.setFlag(num3, GuildMemberFlags.COMPLETED_ONBOARDING, true) };
-        const updateImpersonatedData = items1(5864).updateImpersonatedData;
-        items1(5864);
-        tmp2Result20 = items1(1385);
+        const updateImpersonatedData = items1(5865).updateImpersonatedData;
+        items1(5865);
+        tmp2Result20 = items1(1391);
         const result3 = updateImpersonatedData(guildId, obj5);
       }
     }
@@ -299,7 +299,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -344,7 +344,7 @@ let obj = {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp13) {
           c1 = 3;
           throw tmp13;

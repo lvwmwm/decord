@@ -1,14 +1,14 @@
-// Module ID: 12246
-// Function ID: 12247
+// Module ID: 12141
+// Function ID: 12142
 // Name: HubActionCreators
-// Dependencies: [5, 1074, 5029, 1249, 2057, 1271, 573, 2]
+// Dependencies: [5, 1086, 5030, 1261, 2063, 1283, 585, 2]
 
-// Module 12246 (HubActionCreators)
-import Constants from "Constants" /* 1074 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import TypeUtils from "TypeUtils" /* 2057 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5029 */;
+// Module 12141 (HubActionCreators)
+import Constants from "Constants" /* 1086 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import TypeUtils from "TypeUtils" /* 2063 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5030 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -147,7 +147,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp29) {
           body = tmp29;
           if (0 === c3) {
@@ -179,7 +179,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -213,7 +213,7 @@ let obj = {
                 return obj7;
               } else {
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               }
             }
           } else if (1 === constants) {

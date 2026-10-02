@@ -1,21 +1,24 @@
-// Module ID: 7889
-// Function ID: 7890
+// Module ID: 7893
+// Function ID: 7894
 // Name: AgeVerificationMethodAvailability
-// Dependencies: [5, 32, 19, 1380, 1364, 7890, 7891, 2]
-// Exports: getAvailableMethodsV2, useAvailableMethodsV2
+// Dependencies: [5, 32, 19, 1386, 1370, 7894, 558, 576, 7895, 2]
+// Exports: getAvailableMethodsV2
 
-// Module 7889 (AgeVerificationMethodAvailability)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 7891 */;
+// Module 7893 (AgeVerificationMethodAvailability)
+import react2 from "react" /* 576 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 7895 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
 let c5, c6, method;
 
 let tmp;
-const AppStoreAgeSignalSupport = tmp(7890);
+const AppStoreAgeSignalSupport = tmp(7894);
 function filterByAvailability(arr, arg1) {
   ({ googleWallet: require, appStoreSignal: dependencyMap } = arg1);
   return arr.filter((method) => {
@@ -54,7 +57,7 @@ let obj = function _getAvailableMethodsV() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -103,16 +106,87 @@ let obj = function _getAvailableMethodsV() {
   });
   return obj(...arguments);
 };
-let result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationMethodAvailability.native.tsx");
-
-export const useAvailableMethodsV2 = function useAvailableMethodsV2(methods) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp9;
+  let tmp = require;
+  obj = react2;
+  const cResult = obj.c(6);
+  [tmp5, require] = _slicedToArray(react.useState(false), 2);
+  const obj2 = react;
+  const tmp4 = _slicedToArray(react.useState(false), 2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n() {
+      let c0 = false;
+      obj = GoogleWalletActionCreators;
+      const result = obj.checkGoogleWalletAvailable();
+      result.then((result) => {
+        const tmp = c0;
+        if (!tmp) {
+          require(result);
+        }
+      });
+      return () => {
+        c0 = true;
+      };
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp6 = fn;
+    tmp7 = items;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const effect = obj2.useEffect(tmp6, tmp7);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = PlatformUtils;
+    let isIOSResult = tmpResult.isIOS();
+    if (isIOSResult) {
+      const tmpResult2 = AppStoreAgeSignalSupport;
+      isIOSResult = tmpResult2.isAppStoreAgeSignalSupported();
+    }
+    cResult[2] = isIOSResult;
+    tmp9 = isIOSResult;
+  } else {
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] === tmp5) {
+    let tmp11;
+    if (cResult[4] === arr) {
+      tmp11 = cResult[5];
+    }
+    return tmp11;
+  }
+  let closure_0 = tmp5;
+  let closure_1 = tmp9;
+  const found = arr.filter((method) => {
+    method = method.method;
+    const tmp = first;
+    const tmp2 = memo;
+    if (first(memo[3]).AgeAssuranceMethod.GOOGLE_WALLET === method) {
+      return closure_0;
+    } else if (tmp(tmp2[3]).AgeAssuranceMethod.OS_SIGNAL === method) {
+      return closure_1;
+    } else {
+      return true;
+    }
+  });
+  cResult[3] = tmp5;
+  cResult[4] = arr;
+  cResult[5] = found;
+  tmp11 = found;
+}) : ((arg0) => {
   let memo;
+  let closure_0 = arg0;
   let tmp = memo(react.useState(false), 2);
-  const first = tmp[0];
+  let first = tmp[0];
   let closure_2 = tmp[1];
   const effect = react.useEffect(() => {
     let c0 = false;
-    obj = methods(first[6]);
+    obj = closure_0(first[8]);
     const result = obj.checkGoogleWalletAvailable();
     result.then((result) => {
       const tmp = c0;
@@ -125,9 +199,9 @@ export const useAvailableMethodsV2 = function useAvailableMethodsV2(methods) {
     };
   }, []);
   memo = react.useMemo(() => {
-    obj = methods(first[4]);
+    obj = closure_0(first[4]);
     let isIOSResult = obj.isIOS();
-    const tmp = methods;
+    const tmp = closure_0;
     const tmp2 = first;
     if (isIOSResult) {
       const tmpResult = tmp(tmp2[5]);
@@ -135,23 +209,23 @@ export const useAvailableMethodsV2 = function useAvailableMethodsV2(methods) {
     }
     return isIOSResult;
   }, []);
-  const items = [methods, first, memo];
-  return react.useMemo(() => {
-    methods = first;
-    return methods.filter((method) => {
-      method = method.method;
-      const tmp = first;
-      const tmp2 = memo;
-      if (first(memo[3]).AgeAssuranceMethod.GOOGLE_WALLET === method) {
-        return closure_0;
-      } else if (tmp(tmp2[3]).AgeAssuranceMethod.OS_SIGNAL === method) {
-        return closure_1;
-      } else {
-        return true;
-      }
-    });
-  }, items);
-};
+  const items = [arg0, first, memo];
+  return react.useMemo(() => first.filter((method) => {
+    method = method.method;
+    const tmp = first;
+    const tmp2 = memo;
+    if (first(memo[3]).AgeAssuranceMethod.GOOGLE_WALLET === method) {
+      return closure_0;
+    } else if (tmp(tmp2[3]).AgeAssuranceMethod.OS_SIGNAL === method) {
+      return closure_1;
+    } else {
+      return true;
+    }
+  }), items);
+});
+let result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationMethodAvailability.native.tsx");
+
+export const useAvailableMethodsV2 = tmp2;
 export const getAvailableMethodsV2 = function getAvailableMethodsV2() {
   return obj(...arguments);
 };

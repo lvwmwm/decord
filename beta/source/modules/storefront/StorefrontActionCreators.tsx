@@ -1,20 +1,20 @@
-// Module ID: 8247
-// Function ID: 8248
+// Module ID: 8244
+// Function ID: 8245
 // Name: StorefrontActionCreators
-// Dependencies: [5, 4490, 6653, 8248, 8249, 8250, 1074, 1091, 573, 1271, 4736, 6652, 2]
+// Dependencies: [5, 4493, 6654, 8245, 8246, 8247, 1086, 1103, 585, 1283, 4738, 6653, 2]
 // Exports: claimStorefrontPromotion, fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 8247 (StorefrontActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 8244 (StorefrontActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BillingInfoStore from "BillingInfoStore" /* 4490 */;
-import SKUPricesStore from "SKUPricesStore" /* 6653 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8248 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 8249 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 8250 */;
+import BillingInfoStore from "BillingInfoStore" /* 4493 */;
+import SKUPricesStore from "SKUPricesStore" /* 6654 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8245 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 8246 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 8247 */;
 import size from "module_2" /* 2 */;
 
 let apiError, c1, closure_3, closure_4, promotions;
@@ -50,7 +50,7 @@ let obj = function _maybeFetchStorefrontPromotions() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -81,7 +81,7 @@ let obj = function _maybeFetchStorefrontPromotions() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -109,7 +109,7 @@ obj = function _fetchStorefrontPromotions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _fetchStorefrontPromotions() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp29) {
           if (0 === c3) {
             c5 = 3;
@@ -199,7 +199,7 @@ obj = function _claimStorefrontPromotion() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -246,7 +246,7 @@ obj = function _claimStorefrontPromotion() {
               return { value, done: true };
             } else {
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else if (arg0 === 1) {
             c7 = 3;
@@ -290,9 +290,9 @@ obj = function _fetchStorefrontPricesForApplicationId() {
     const iter = (async (arg0) => {
       const obj5 = { type: "application", applicationId };
       await closure_130_18(obj5);
-      await "HermesInternal";
+      await "IconComponent";
       applicationId = applicationId.applicationId;
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -309,9 +309,9 @@ obj = function _fetchStorefrontPricesForSkuIds() {
     const iter = (async (arg0) => {
       const obj5 = { type: "skus", skuIds };
       await closure_130_18(obj5);
-      await "HermesInternal";
+      await "IconComponent";
       skuIds = skuIds.skuIds;
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -334,7 +334,7 @@ obj = function _fetchStorefrontPrices() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;
@@ -379,7 +379,7 @@ obj = function _fetchStorefrontPrices() {
           c2 = 0;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp21) {
         if (0 === c2) {
           c4 = 3;

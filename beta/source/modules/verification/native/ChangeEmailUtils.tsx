@@ -1,14 +1,14 @@
 // Module ID: 6404
 // Function ID: 6405
 // Name: verification/ChangeEmailUtils
-// Dependencies: [5, 5935, 6405, 6412, 1094, 2]
+// Dependencies: [5, 5932, 6405, 6412, 1106, 2]
 // Exports: finishChangeEmailFlow, finishVerifyEmailFlow, saveEmail
 
 // Module 6404 (verification/ChangeEmailUtils)
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
 import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 6405 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 5935 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 5932 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;
@@ -32,7 +32,7 @@ let obj = function _saveEmail() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

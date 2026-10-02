@@ -1,12 +1,12 @@
-// Module ID: 9229
-// Function ID: 9230
+// Module ID: 9195
+// Function ID: 9196
 // Name: GuildIdentityActionCreators
-// Dependencies: [5, 1074, 573, 1271, 5482, 6406, 2]
+// Dependencies: [5, 1086, 585, 1283, 5483, 6406, 2]
 // Exports: clearErrors, initGuildIdentitySettings, resetAllPending, resetPendingMemberChanges, resetPendingProfileChanges, saveGuildIdentityChanges, setCurrentGuild
 
-// Module 9229 (GuildIdentityActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
+// Module 9195 (GuildIdentityActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let obj = function _saveGuildIdentityChanges() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -72,7 +72,7 @@ let obj = function _saveGuildIdentityChanges() {
               body = undefined;
               c7 = 1;
               vad_colors = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

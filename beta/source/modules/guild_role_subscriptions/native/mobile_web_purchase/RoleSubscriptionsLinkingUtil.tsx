@@ -1,12 +1,12 @@
-// Module ID: 6734
-// Function ID: 6735
+// Module ID: 6735
+// Function ID: 6736
 // Name: RoleSubscriptionsLinkingUtil
-// Dependencies: [5, 1074, 2052, 6735, 1981, 3, 6739, 2]
+// Dependencies: [5, 1086, 2058, 6736, 1987, 3, 6740, 2]
 
-// Module 6734 (RoleSubscriptionsLinkingUtil)
-import ChannelConstants from "ChannelConstants" /* 2052 */;
+// Module 6735 (RoleSubscriptionsLinkingUtil)
+import ChannelConstants from "ChannelConstants" /* 2058 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let obj = function _performRoleSubscriptionUpsellRedirect() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -122,7 +122,7 @@ obj = function _performRoleSubscriptionTeamCreationRedirect() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -150,7 +150,7 @@ obj = function _performRoleSubscriptionTeamCreationRedirect() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp6) {
         c0 = 3;
@@ -173,7 +173,7 @@ obj = function _performRoleSubscriptionEditPayoutRedirect() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -201,7 +201,7 @@ obj = function _performRoleSubscriptionEditPayoutRedirect() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp7) {
         c1 = 3;
@@ -228,7 +228,7 @@ obj = function _performDeveloperPortalRedirectWithTokenHandoff() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;

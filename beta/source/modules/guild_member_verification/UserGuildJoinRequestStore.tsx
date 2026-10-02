@@ -1,15 +1,15 @@
-// Module ID: 4656
-// Function ID: 4657
+// Module ID: 4658
+// Function ID: 4659
 // Name: UserGuildJoinRequestStore
-// Dependencies: [1372, 4657, 504, 2059, 573, 2]
+// Dependencies: [1378, 4659, 504, 2065, 585, 2]
 // Exports: joinRequestFromServer
 
-// Module 4656 (UserGuildJoinRequestStore)
+// Module 4658 (UserGuildJoinRequestStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4657 */;
-import UserStore from "UserStore" /* 1372 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2065 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4659 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_6, guild_id;

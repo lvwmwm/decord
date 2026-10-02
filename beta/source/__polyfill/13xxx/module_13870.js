@@ -1,226 +1,209 @@
 // Module ID: 13870
 // Function ID: 13871
-// Dependencies: [41, 42, 13868]
+// Dependencies: [32, 1264, 13869]
 
 // Module 13870
-import _createClass from "_createClass" /* 42 */;
-import _mod13868 from "module_13868" /* 13868 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
+import Buffer from "Buffer" /* 1264 */;
+import _mod13869 from "module_13869" /* 13869 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-class URLSearchParamsImpl {
-  constructor(arg0, arg1, doNotStripQMark) {
-    let flag = doNotStripQMark.doNotStripQMark;
-    if (flag === undefined) {
-      flag = false;
+function replaceByteInByteSequence(arr, arg1, arg2) {
+  let index = arr.indexOf(43);
+  if (index >= 0) {
+    do {
+      arr[index] = 32;
+      index = arr.indexOf(43, index + 1);
+    } while (index >= 0);
+  }
+  return arr;
+}
+function percentEncode(arr) {
+  const str = arr.toString(16);
+  const formatted = str.toUpperCase();
+  let text = formatted;
+  if (1 === formatted.length) {
+    text = `0${arr}`;
+  }
+  return "%" + text;
+}
+function percentDecode(_Buffer) {
+  _Buffer = Buffer.Buffer;
+  const allocResult = _Buffer.alloc(_Buffer.byteLength);
+  let num = 0;
+  let num2 = 0;
+  let num3 = 0;
+  if (0 < _Buffer.length) {
+    while (true) {
+      if (37 === _Buffer[num]) {
+        let tmp3 = require;
+        let obj = _mod13869;
+        let sum = num + 1;
+        if (obj.isASCIIHex(_Buffer[sum])) {
+          let tmp3Result = tmp3(13869);
+          let sum1 = num + 2;
+          if (tmp3Result.isASCIIHex(_Buffer[sum1])) {
+            let sum2 = num2 + 1;
+            let _parseInt = parseInt;
+            let str = _Buffer.slice(sum, num + 3);
+            allocResult[num2] = parseInt(str.toString(), 16);
+            let tmp8 = sum1;
+            num = tmp8 + 1;
+            num2 = sum2;
+            num3 = sum2;
+            if (num >= _Buffer.length) {
+              break;
+            }
+          }
+        }
+      }
+      sum2 = num2 + 1;
+      allocResult[num2] = _Buffer[num];
+      tmp8 = num;
     }
-    const self = this;
-    _classCallCheck(this, URLSearchParamsImpl);
-    const first = arg1[0];
-    this._list = [];
-    this._url = null;
-    if (!flag) {
-      flag = typeof first !== "string";
+  }
+  return allocResult.slice(0, num3);
+}
+function serializeUrlencodedByte(_Buffer) {
+  let str = "";
+  const iter = _Buffer[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    let str2 = "+";
+    if (32 !== nextResult) {
+      if (42 !== tmp2) {
+        if (45 !== tmp2) {
+          if (46 !== tmp2) {
+            if (tmp2 < 48) {
+              if (tmp2 < 65) {
+                let fromCodePointResult;
+                if (95 !== tmp2) {
+                  if (tmp2 < 97) {
+                    fromCodePointResult = percentEncode(tmp2);
+                  }
+                }
+                str2 = fromCodePointResult;
+              }
+            }
+          }
+        }
+      }
+      let _String = String;
+      fromCodePointResult = String.fromCodePoint(tmp2);
     }
-    if (!flag) {
-      flag = "?" !== first[0];
-    }
-    let substr = first;
-    if (!flag) {
-      substr = first.slice(1);
-    }
-    if (Array.isArray(substr)) {
-      const iter = substr[Symbol.iterator]();
+    str = str + str2;
+    continue;
+  }
+  return str;
+}
+let obj = {
+  percentEncode,
+  percentDecode,
+  parseUrlencoded(arg0) {
+    function parseUrlencoded(_Buffer) {
+      function strictlySplitByteSequence(arr, arg1) {
+        const items = [];
+        const index = arr.indexOf(38);
+        let index1 = index;
+        let num = 0;
+        let num2 = 0;
+        if (index >= 0) {
+          do {
+            arr = items.push(arr.slice(num, index1));
+            let sum = index1 + 1;
+            index1 = arr.indexOf(38, sum);
+            num = sum;
+            num2 = sum;
+          } while (index1 >= 0);
+        }
+        if (num2 !== arr.length) {
+          items.push(arr.slice(num2));
+        }
+        return items;
+      }
+      let items = [];
+      const tmp = strictlySplitByteSequence(_Buffer, 38);
+      const iter = tmp[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
-        let tmp12 = nextResult;
-        if (2 !== nextResult.length) {
-          let _TypeError = TypeError;
-          let self2 = this;
-          let str2 = "Failed to construct 'URLSearchParams': parameter 1 sequence's element does not contain exactly two elements.";
-          let self3 = this;
-          let typeError = new TypeError("Failed to construct 'URLSearchParams': parameter 1 sequence's element does not contain exactly two elements.");
-          throw typeError;
-        } else {
-          let _list = self._list;
-          let items = [, ];
-          [arr6[0], arr6[1]] = tmp12;
-          let arr = _list.push(items);
-          continue;
-        }
-      }
-    } else {
-      if (typeof substr === "object") {
-        const _Object2 = Object;
-        if (null === Object.getPrototypeOf(substr)) {
-          const _Object = Object;
-          const keys = Object.keys(substr);
-          for (const item10033 of keys) {
-            let _list1 = self._list;
-            let items1 = [item10033, substr[item10033]];
-            let arr2 = _list1.push(items1);
-            continue;
-          }
-        }
-      }
-      const obj = _mod13868;
-      self._list = obj.parseUrlencoded(substr);
-    }
-  }
-}
-const entry = {
-  key: "_updateSteps",
-  value: function _updateSteps() {
-    const self = this;
-    if (null !== this._url) {
-      const obj = _mod13868;
-      let serializeUrlencodedResult = obj.serializeUrlencoded(self._list);
-      if ("" === serializeUrlencodedResult) {
-        serializeUrlencodedResult = null;
-      }
-      self._url._url.query = serializeUrlencodedResult;
-    }
-  }
-};
-let items = [
-  entry,
-  {
-    key: "append",
-    value: function append(arg0, arg1) {
-      const _list = this._list;
-      const items = [arg0, arg1];
-      _list.push(items);
-      this._updateSteps();
-    }
-  },
-  {
-    key: "delete",
-    value: function _delete(arg0) {
-      let sum;
-      const self = this;
-      let num = 0;
-      if (0 < this._list.length) {
-        do {
-          if (self._list[num][0] === arg0) {
-            let _list = self._list;
-            let spliceResult = _list.splice(num, 1);
-            sum = num;
+        let arr3 = nextResult;
+        if (0 !== nextResult.length) {
+          let substr;
+          let substr1;
+          let index = arr3.indexOf(61);
+          let tmp23 = index;
+          if (index >= 0) {
+            substr = arr3.slice(0, tmp23);
+            substr1 = arr3.slice(tmp23 + 1);
           } else {
-            sum = num + 1;
+            substr = nextResult;
+            _Buffer = Buffer.Buffer;
+            substr1 = _Buffer.alloc(0);
           }
-          num = sum;
-        } while (sum < self._list.length);
-      }
-      self._updateSteps();
-    }
-  },
-  {
-    key: "get",
-    value: function get(arg0) {
-      const _list = this._list;
-      for (const item10008 of _list) {
-        if (item10008[0] === arg0) {
-          let tmp2 = item10008[1];
-          obj.return();
-          return tmp2;
-        }
-      }
-      return null;
-    }
-  },
-  {
-    key: "getAll",
-    value: function getAll(arg0) {
-      const items = [];
-      const _list = this._list;
-      for (const item10009 of _list) {
-        if (item10009[0] === arg0) {
-          let arr = items.push(tmp[1]);
+          let _Buffer2 = Buffer.Buffer;
+          let fromResult = _Buffer2.from(substr);
+          let tmp13 = replaceByteInByteSequence(fromResult, 43, 32);
+          let _Buffer3 = Buffer.Buffer;
+          let fromResult1 = _Buffer3.from(substr1);
+          let tmp17 = replaceByteInByteSequence(fromResult1, 43, 32);
+          let push = items.push;
+          let str = percentDecode(fromResult);
+          let items1 = [str.toString(), ];
+          let str2 = percentDecode(fromResult1);
+          items1[1] = str2.toString();
+          let arr = push(items1);
         }
         continue;
       }
       return items;
     }
+    let _Buffer = Buffer.Buffer;
+    return parseUrlencoded(_Buffer.from(arg0));
   },
-  {
-    key: "has",
-    value: function has(arg0) {
-      const _list = this._list;
-      for (const item10007 of _list) {
-        if (item10007[0] === arg0) {
-          obj.return();
-          let flag = true;
-          return true;
+  serializeUrlencoded(_list) {
+    let arr;
+    let tmp7;
+    let str = "utf-8";
+    if (undefined !== arg1) {
+      str = tmp;
+    }
+    let str2 = "";
+    const entries = _list.entries();
+    const tmp3 = entries[Symbol.iterator]();
+    while (tmp3 !== undefined) {
+      let tmp6 = _slicedToArray(tmp4, 2);
+      [tmp7, arr] = tmp6;
+      let tmp8 = arr;
+      let tmp9 = serializeUrlencodedByte;
+      let tmp10 = require;
+      let _Buffer = Buffer.Buffer;
+      let tmp12 = serializeUrlencodedByte(_Buffer.from(arr[0]));
+      let name = arr[1];
+      let tmp13 = arr.length > 2;
+      if (tmp13) {
+        tmp13 = undefined !== tmp8[2];
+      }
+      if (tmp13) {
+        if ("hidden" === tmp8[2]) {
+          if ("_charset_" === tmp12) {
+            name = str;
+          }
+        }
+        if ("file" === tmp8[2]) {
+          name = name.name;
         }
       }
-      return false;
-    }
-  },
-  {
-    key: "set",
-    value: function set(arg0, arg1) {
-      let sum;
-      const self = this;
-      let num = 0;
-      let flag = false;
-      let flag2 = false;
-      if (0 < this._list.length) {
-        do {
-          let flag3;
-          if (self._list[num][0] === arg0) {
-            let _list = self._list;
-            if (flag) {
-              let spliceResult = _list.splice(num, 1);
-              sum = num;
-              flag3 = flag;
-            } else {
-              _list[num][1] = arg1;
-              sum = num + 1;
-              flag3 = true;
-            }
-          } else {
-            sum = num + 1;
-            flag3 = flag;
-          }
-          num = sum;
-          flag = flag3;
-          flag2 = flag3;
-        } while (sum < self._list.length);
+      if (0 !== tmp7) {
+        str2 = `${str2}&`;
       }
-      if (!flag2) {
-        const _list1 = self._list;
-        const items = [arg0, arg1];
-        _list1.push(items);
-      }
-      self._updateSteps();
+      let _Buffer2 = tmp10(1264).Buffer;
+      let tmp9Result = tmp9(_Buffer2.from(name));
+      let _HermesInternal = HermesInternal;
+      str2 = str2 + "" + tmp12 + "=" + tmp9Result;
+      continue;
     }
-  },
-  {
-    key: "sort",
-    value: function sort() {
-      const _list = this._list;
-      const mapped = _list.map((item, index) => ({ item, index }));
-      const sorted = mapped.sort((index, index2) => index.item[0] > index2.item[0] || index.index - index2.index);
-      this._list = sorted.map((item) => item.item);
-      this._updateSteps();
-    }
-  },
-,
-
-];
-const entry1 = {
-  key: Symbol.iterator,
-  value() {
-    const _list = this._list;
-    return _list[Symbol.iterator]();
-  }
-};
-items[8] = entry1;
-items[9] = {
-  key: "toString",
-  value: function toString() {
-    const obj = _mod13868;
-    return obj.serializeUrlencoded(this._list);
+    return str2;
   }
 };
 
-export const implementation = _createClass(URLSearchParamsImpl, items);
+export default obj;

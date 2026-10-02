@@ -1,36 +1,36 @@
-// Module ID: 5304
-// Function ID: 5305
+// Module ID: 5305
+// Function ID: 5306
 // Name: MarkupRules
-// Dependencies: [32, 718, 2045, 2102, 2067, 1372, 1074, 5305, 5306, 5307, 1115, 5310, 2105, 4988, 4678, 5311, 1930, 5312, 5313, 5316, 4483, 5318, 5330, 5331, 5332, 5333, 5303, 5334, 12, 2]
+// Dependencies: [32, 730, 2051, 2105, 2073, 1378, 1086, 5306, 5307, 5308, 1127, 5311, 2108, 4989, 4680, 5312, 1936, 5313, 5314, 5317, 4486, 5319, 5331, 5332, 5333, 5334, 5304, 5335, 12, 2]
 // Exports: hydrateCommandMention
 
-// Module 5304 (MarkupRules)
-import intl2 from "intl" /* 1115 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5305 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5306 */;
-import MarkupLinkRule from "MarkupLinkRule" /* 5307 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5310 */;
-import StaticRouteRendering from "StaticRouteRendering" /* 5311 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5312 */;
-import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5313 */;
-import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5316 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5318 */;
-import TimestampUtils from "TimestampUtils" /* 5330 */;
-import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 5331 */;
-import MarkupListRuleDefault from "MarkupListRule" /* 5332 */;
-import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 5333 */;
-import PlatformMarkupRulesDefault from "PlatformMarkupRules" /* 5334 */;
+// Module 5305 (MarkupRules)
+import intl2 from "intl" /* 1127 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4486 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5307 */;
+import MarkupLinkRule from "MarkupLinkRule" /* 5308 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5311 */;
+import StaticRouteRendering from "StaticRouteRendering" /* 5312 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5313 */;
+import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5314 */;
+import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5317 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5319 */;
+import TimestampUtils from "TimestampUtils" /* 5331 */;
+import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 5332 */;
+import MarkupListRuleDefault from "MarkupListRule" /* 5333 */;
+import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 5334 */;
+import PlatformMarkupRulesDefault from "PlatformMarkupRules" /* 5335 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import _toArray from "_toArray" /* 718 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
-import module_1930_mod from "module_1930" /* 1930 */;
-import combineMarkupRules_mod from "combineMarkupRules" /* 5303 */;
+import _toArray from "_toArray" /* 730 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildRoleStore from "GuildRoleStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import module_1936_mod from "module_1936" /* 1936 */;
+import combineMarkupRules_mod from "combineMarkupRules" /* 5304 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ const getSoundmojiASTFromStringDefault = getSoundmojiASTFromString;
 
 let c10;
 let c9;
-let module_1930;
+let module_1936;
 let obj2;
 let obj21;
 let obj3;
@@ -144,7 +144,7 @@ const parse6 = function parse(arg0, arg1, returnMentionIds) {
     const items = [];
     const arr = _toArray(arg0[1].split(" "));
     HermesBuiltin.arraySpread(items, arr.slice(1), 0);
-    const mapped = items.map(f80419);
+    const mapped = items.map(f89473);
     const _HermesInternal = HermesInternal;
     obj2 = { type: "commandMention", channelId: returnMentionIds.channelId, commandId: arg0[2], commandName: arg0[1], commandKey: "" + arg0[2] + mapped.join(""), content: items1 };
     const _HermesInternal2 = HermesInternal;
@@ -244,7 +244,7 @@ const parse14 = function parse(arg0, arg1, guildId) {
   const tmp = _slicedToArray(arg0, 3);
   return hydrateStaticRouteLink(tmp[1], tmp[2], guildId);
 };
-const f80419 = (item) => "" + SUB_COMMAND_KEY_SEPARATOR + item;
+const f89473 = (item) => "" + SUB_COMMAND_KEY_SEPARATOR + item;
 function parseLink(arg0) {
   let items;
   let obj3;
@@ -254,7 +254,7 @@ function parseLink(arg0) {
     obj3 = { type: "text", content: arg0[1] };
     const obj2 = { type: "text", content: arg0[1] };
   } else {
-    obj3 = { type: "link", content: items, target: punycodeLinkResult.target, title: "__closure" };
+    obj3 = { type: "link", content: items, target: punycodeLinkResult.target, title: "unicodeVersion" };
     items = [{ type: "text", content: punycodeLinkResult.displayTarget }];
     const obj4 = { type: "text", content: punycodeLinkResult.displayTarget };
   }
@@ -301,7 +301,7 @@ function hydrateRoleMention(roleId, guildId) {
     }
     let hasEnhancedRoleColorsForRole = getHasEnhancedRoleColorsForRole(id, role);
     if (hasEnhancedRoleColorsForRole) {
-      const tmp19Result = tmp19(2105);
+      const tmp19Result = tmp19(2108);
       hasEnhancedRoleColorsForRole = !tmp19Result.getIsDefaultErc(role);
     }
     const obj2 = { type: "mention", channelId: guildId.channelId, guildId: id1, roleId, roleColor: role.color, roleColors: tmp11, roleName: "@" + role.name, color: null, colorString: null, content: items };
@@ -357,7 +357,7 @@ function hydrateUserMention(everyoneOrHere, channelId) {
       let nickname = obj2.getNickname(channel.getGuildId(), channelId.channelId, str);
       const tmp4 = importDefault;
       if (nickname == null) {
-        const tmp4Result = tmp4(4678);
+        const tmp4Result = tmp4(4680);
         nickname = tmp4Result.getName(str);
       }
       str1 = nickname;
@@ -457,18 +457,18 @@ const re15 = /^$|\n *$/;
 const re16 = /^ *>>> ?/;
 const re17 = /^ *> ?/gm;
 const re18 = /^((?:https?|steam):\/\/[^\s<]+[^<.,:;"'\]\s])/;
-let obj = { newline: module_1930.defaultRules.newline, paragraph: module_1930.defaultRules.paragraph, escape: obj2, blockQuote: obj3, link: MarkupLinkRuleDefault, autolink: obj4, mailto: obj5, tel: obj6, url: obj7, strong: module_1930.defaultRules.strong, em: module_1930.defaultRules.em, u: module_1930.defaultRules.u, br: module_1930.defaultRules.br, text: MarkupTextRuleDefault, inlineCode: obj8, emoticon: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["\u00AF"], match, parse }, codeBlock: { order: module_1930.defaultRules.codeBlock.order, requiredFirstCharacters: ["`"], match: match2, parse: parse2 }, roleMention: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match3, parse: parse3 }, mention: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<", "@"], match: match4, parse: parse4 }, silentPrefix: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["@"], match: match5, parse: parse5 }, channelMention: MarkupChannelMentionRuleDefault.channelMention, channelOrMessageUrl: MarkupChannelMentionRuleDefault.channelOrMessageUrl, mediaPostLink: MarkupChannelMentionRuleDefault.mediaPostLink, attachmentLink: MarkupAttachmentLinkRuleDefault.attachmentLink, commandMention: { order: module_1930.defaultRules.text.order, requiredFirstCharacters: ["<"], match: match6, parse: parse6 }, timestampMentionInput: { order: module_1930.defaultRules.text.order, requiredFirstCharacters: ["<"], match: match7, parse: parse7 }, gameMention: { order: module_1930.defaultRules.text.order, requiredFirstCharacters: ["<"], match: match8, parse: parse8 }, emoji: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: [":"], match: match9, parse: parse9 }, soundboard: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match10, parse: parse10 }, customEmoji: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match11, parse: parse11 }, timestamp: { order: MarkupTextRuleDefault.order - 1, requiredFirstCharacters: ["<"], match: match12, parse: parse12 }, s: obj21, spoiler: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["|"], match: match13, parse: parse13 }, staticRouteLink: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match14, parse: parse14 }, heading: MarkupHeadingRuleDefault, list: MarkupListRuleDefault, subtext: MarkupSubtextRuleDefault };
+let obj = { newline: module_1936.defaultRules.newline, paragraph: module_1936.defaultRules.paragraph, escape: obj2, blockQuote: obj3, link: MarkupLinkRuleDefault, autolink: obj4, mailto: obj5, tel: obj6, url: obj7, strong: module_1936.defaultRules.strong, em: module_1936.defaultRules.em, u: module_1936.defaultRules.u, br: module_1936.defaultRules.br, text: MarkupTextRuleDefault, inlineCode: obj8, emoticon: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["\u00AF"], match, parse }, codeBlock: { order: module_1936.defaultRules.codeBlock.order, requiredFirstCharacters: ["`"], match: match2, parse: parse2 }, roleMention: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match3, parse: parse3 }, mention: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<", "@"], match: match4, parse: parse4 }, silentPrefix: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["@"], match: match5, parse: parse5 }, channelMention: MarkupChannelMentionRuleDefault.channelMention, channelOrMessageUrl: MarkupChannelMentionRuleDefault.channelOrMessageUrl, mediaPostLink: MarkupChannelMentionRuleDefault.mediaPostLink, attachmentLink: MarkupAttachmentLinkRuleDefault.attachmentLink, commandMention: { order: module_1936.defaultRules.text.order, requiredFirstCharacters: ["<"], match: match6, parse: parse6 }, timestampMentionInput: { order: module_1936.defaultRules.text.order, requiredFirstCharacters: ["<"], match: match7, parse: parse7 }, gameMention: { order: module_1936.defaultRules.text.order, requiredFirstCharacters: ["<"], match: match8, parse: parse8 }, emoji: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: [":"], match: match9, parse: parse9 }, soundboard: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match10, parse: parse10 }, customEmoji: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match11, parse: parse11 }, timestamp: { order: MarkupTextRuleDefault.order - 1, requiredFirstCharacters: ["<"], match: match12, parse: parse12 }, s: obj21, spoiler: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["|"], match: match13, parse: parse13 }, staticRouteLink: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match14, parse: parse14 }, heading: MarkupHeadingRuleDefault, list: MarkupListRuleDefault, subtext: MarkupSubtextRuleDefault };
 obj2 = {
   match(arg0, allowEscape, arg2) {
     let match = null;
     if (false !== allowEscape.allowEscape) {
-      const str = module_1930.defaultRules.escape;
+      const str = module_1936.defaultRules.escape;
       match = str.match(arg0, allowEscape, arg2);
     }
     return match;
   }
 };
-let merged = Object.assign(module_1930.defaultRules.escape);
+let merged = Object.assign(module_1936.defaultRules.escape);
 obj3 = {
   requiredFirstCharacters: [" ", ">"],
   match(arg0, prevCapture) {
@@ -513,11 +513,11 @@ obj3 = {
     return { content, type: "blockQuote" };
   }
 };
-const merged1 = Object.assign(module_1930.defaultRules.blockQuote);
+const merged1 = Object.assign(module_1936.defaultRules.blockQuote);
 obj4 = { parse: parseLink };
-const merged2 = Object.assign(module_1930.defaultRules.autolink);
+const merged2 = Object.assign(module_1936.defaultRules.autolink);
 obj5 = {
-  match: module_1930.inlineRegex(/^<([^\s<>@]+@[^\s<>@]+\.[^\s<>@]+)>/),
+  match: module_1936.inlineRegex(/^<([^\s<>@]+@[^\s<>@]+\.[^\s<>@]+)>/),
   requiredFirstCharacters: ["<"],
   parse(arg0) {
     let items;
@@ -531,11 +531,11 @@ obj5 = {
     return obj2;
   }
 };
-const merged3 = Object.assign(module_1930.defaultRules.mailto);
-module_1930 = module_1930_mod;
+const merged3 = Object.assign(module_1936.defaultRules.mailto);
+module_1936 = module_1936_mod;
 obj6 = {
   requiredFirstCharacters: ["<"],
-  match: module_1930.inlineRegex(/^<((?:(?:tel|sms):\+?|\+)(?:(?:[0-9]|\([0-9]+\)))(?:[- .\/]?(?:[0-9]|\([0-9]+\)))+)>/),
+  match: module_1936.inlineRegex(/^<((?:(?:tel|sms):\+?|\+)(?:(?:[0-9]|\([0-9]+\)))(?:[- .\/]?(?:[0-9]|\([0-9]+\)))+)>/),
   parse(arg0) {
     let items;
     const obj = arg0[1];
@@ -551,8 +551,8 @@ obj6 = {
     return obj3;
   }
 };
-const merged4 = Object.assign(module_1930.defaultRules.mailto);
-module_1930 = module_1930_mod;
+const merged4 = Object.assign(module_1936.defaultRules.mailto);
+module_1936 = module_1936_mod;
 obj7 = {
   requiredFirstCharacters: ["h", "s"],
   match(arg0, inline) {
@@ -589,10 +589,10 @@ obj7 = {
   },
   parse: parseLink
 };
-const merged5 = Object.assign(module_1930.defaultRules.url);
+const merged5 = Object.assign(module_1936.defaultRules.url);
 obj8 = {
   parse(arg0, fn, parseInlineCodeChildContent) {
-    const inlineCode = module_1930.defaultRules.inlineCode;
+    const inlineCode = module_1936.defaultRules.inlineCode;
     const parsed = inlineCode.parse(arg0, fn, parseInlineCodeChildContent);
     let tmp2 = parsed;
     if (true === parseInlineCodeChildContent.parseInlineCodeChildContent) {
@@ -603,21 +603,21 @@ obj8 = {
     return tmp2;
   }
 };
-const merged6 = Object.assign(module_1930.defaultRules.inlineCode);
+const merged6 = Object.assign(module_1936.defaultRules.inlineCode);
 ({ order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["\u00AF"], match, parse });
-({ order: module_1930.defaultRules.codeBlock.order, requiredFirstCharacters: ["`"], match: match2, parse: parse2 });
+({ order: module_1936.defaultRules.codeBlock.order, requiredFirstCharacters: ["`"], match: match2, parse: parse2 });
 ({ order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match3, parse: parse3 });
 ({ order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<", "@"], match: match4, parse: parse4 });
 ({ order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["@"], match: match5, parse: parse5 });
-({ order: module_1930.defaultRules.text.order, requiredFirstCharacters: ["<"], match: match6, parse: parse6 });
-({ order: module_1930.defaultRules.text.order, requiredFirstCharacters: ["<"], match: match7, parse: parse7 });
-({ order: module_1930.defaultRules.text.order, requiredFirstCharacters: ["<"], match: match8, parse: parse8 });
+({ order: module_1936.defaultRules.text.order, requiredFirstCharacters: ["<"], match: match6, parse: parse6 });
+({ order: module_1936.defaultRules.text.order, requiredFirstCharacters: ["<"], match: match7, parse: parse7 });
+({ order: module_1936.defaultRules.text.order, requiredFirstCharacters: ["<"], match: match8, parse: parse8 });
 ({ order: MarkupTextRuleDefault.order, requiredFirstCharacters: [":"], match: match9, parse: parse9 });
 ({ order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match10, parse: parse10 });
 ({ order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match11, parse: parse11 });
 ({ order: MarkupTextRuleDefault.order - 1, requiredFirstCharacters: ["<"], match: match12, parse: parse12 });
-obj21 = { order: module_1930.defaultRules.u.order, requiredFirstCharacters: ["~"], match: module_1930.inlineRegex(/^~~([\s\S]+?)~~(?!_)/), parse: module_1930.defaultRules.u.parse };
-module_1930 = module_1930_mod;
+obj21 = { order: module_1936.defaultRules.u.order, requiredFirstCharacters: ["~"], match: module_1936.inlineRegex(/^~~([\s\S]+?)~~(?!_)/), parse: module_1936.defaultRules.u.parse };
+module_1936 = module_1936_mod;
 ({ order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["|"], match: match13, parse: parse13 });
 ({ order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match14, parse: parse14 });
 let items = [obj, ];
@@ -773,7 +773,7 @@ export const hydrateCommandMention = function hydrateCommandMention(name, comman
   let items1;
   const items = [..._toArray(name.split(" ")).slice(1)];
   _toArray(name.split(" "));
-  const mapped = items.map(f80419);
+  const mapped = items.map(f89473);
   const obj = { type: "commandMention", channelId: channelId.channelId, commandId, commandName: name, commandKey: "" + commandId + mapped.join(""), content: items1 };
   items1 = [{ type: "text", content: "" + name }];
   ({ type: "text", content: "" + name });

@@ -1,17 +1,19 @@
-// Module ID: 9505
-// Function ID: 9506
+// Module ID: 9501
+// Function ID: 9502
 // Name: StageChannelListStore
-// Dependencies: [32, 19, 1243, 1248, 4452, 2]
-// Exports: useActiveSpeakerPillScrollHandler, useActiveSpeakerPillState
+// Dependencies: [32, 19, 1255, 1260, 558, 576, 4455, 2]
 
-// Module 9505 (StageChannelListStore)
-import _slicedToArray2 from "_slicedToArray" /* 4452 */;
+// Module 9501 (StageChannelListStore)
+import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_1243 from "module_1243" /* 1243 */;
+import module_1255 from "module_1255" /* 1255 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_4 = module_1243.createWithEqualityFn((arg0) => {
+let tmp;
+const _slicedToArray2 = tmp(4455);
+let closure_4 = module_1255.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   let obj = {
     showActiveSpeakerPill: false,
@@ -33,9 +35,74 @@ let closure_4 = module_1243.createWithEqualityFn((arg0) => {
   };
   return obj;
 });
-const result = size.fileFinishedImporting("modules/stage_channels/native/StageChannelListStore.tsx");
-
-export const useActiveSpeakerPillScrollHandler = function useActiveSpeakerPillScrollHandler() {
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let items;
+  let tmp8;
+  let obj = react2;
+  const cResult = obj.c(8);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function l(arg0) {
+      const items = [, ];
+      ({ listRef: arr[0], setListRef: arr[1] } = arg0);
+      return items;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const tmp5 = _slicedToArray(closure_4(first, _slicedToArray2.shallow), 2);
+  const first1 = tmp5[0];
+  let closure_1 = tmp7;
+  if (cResult[1] !== tmp5[1]) {
+    const fn2 = function c(arg0) {
+      closure_1(arg0);
+    };
+    cResult[1] = tmp5[1];
+    cResult[2] = fn2;
+    tmp8 = fn2;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] !== first1) {
+    class S {
+      constructor() {
+        const obj = first1;
+        if (first1 != null) {
+          obj.scrollToLocation({ section: 0, item: 0, animated: true });
+        }
+      }
+    }
+    cResult[3] = first1;
+    cResult[4] = S;
+  } else {
+    class S {
+      constructor() {
+        const obj = first1;
+        if (first1 != null) {
+          obj.scrollToLocation({ section: 0, item: 0, animated: true });
+        }
+      }
+    }
+  }
+  if (cResult[5] === tmp9) {
+    class S {
+      constructor() {
+        const obj = first1;
+        if (first1 != null) {
+          obj.scrollToLocation({ section: 0, item: 0, animated: true });
+        }
+      }
+    }
+    return items;
+  }
+  items = [tmp8, tmp9];
+  cResult[5] = tmp9;
+  cResult[6] = tmp8;
+  cResult[7] = items;
+}) : (() => {
   const tmp = _slicedToArray(closure_4((arg0) => {
     const items = [, ];
     ({ listRef: arr[0], setListRef: arr[1] } = arg0);
@@ -58,11 +125,30 @@ export const useActiveSpeakerPillScrollHandler = function useActiveSpeakerPillSc
     }
   }, items2);
   return items1;
-};
-export const useActiveSpeakerPillState = function useActiveSpeakerPillState() {
-  return closure_4((arg0) => {
-    const items = [, ];
-    ({ showActiveSpeakerPill: arr[0], setShowActiveSpeakerPill: arr[1] } = arg0);
-    return items;
-  }, _slicedToArray2.shallow);
-};
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(arg0) {
+      const items = [, ];
+      ({ showActiveSpeakerPill: arr[0], setShowActiveSpeakerPill: arr[1] } = arg0);
+      return items;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_4(first, _slicedToArray2.shallow);
+}) : (() => closure_4((arg0) => {
+  const items = [, ];
+  ({ showActiveSpeakerPill: arr[0], setShowActiveSpeakerPill: arr[1] } = arg0);
+  return items;
+}, _slicedToArray2.shallow));
+const result = size.fileFinishedImporting("modules/stage_channels/native/StageChannelListStore.tsx");
+
+export const useActiveSpeakerPillScrollHandler = tmp2;
+export const useActiveSpeakerPillState = tmp3;

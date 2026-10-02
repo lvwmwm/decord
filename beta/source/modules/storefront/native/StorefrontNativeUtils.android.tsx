@@ -1,21 +1,114 @@
-// Module ID: 10267
-// Function ID: 10268
+// Module ID: 10305
+// Function ID: 10306
 // Name: StorefrontNativeUtils
-// Dependencies: [19, 8668, 504, 6658, 2]
-// Exports: useFormattedSKUPrice
+// Dependencies: [19, 558, 576, 8665, 6659, 504, 2]
 
-// Module 10267 (StorefrontNativeUtils)
-import IAPStoreDefault from "IAPStore" /* 6658 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 8668 */;
+// Module 10305 (StorefrontNativeUtils)
+import IAPStoreDefault from "IAPStore" /* 6659 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 8665 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, sku;
 
-const result = size.fileFinishedImporting("modules/storefront/native/StorefrontNativeUtils.android.tsx");
-
-export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
+  let c0;
+  let tmp11;
+  let tmp12;
+  let tmp15;
+  let tmp6;
+  let tmp7;
+  let tmp9;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(10);
+  sku = sku.sku;
+  let tmp5;
+  if (sku != null) {
+    const googleSkuIds = sku.googleSkuIds;
+    if (googleSkuIds != null) {
+      tmp5 = googleSkuIds[tmp4];
+    }
+  }
+  if (tmp5 == null) {
+    tmp5 = null;
+  }
+  _require = tmp5;
+  if (cResult[0] !== tmp5) {
+    const fn = function t() {
+      if (null != c0) {
+        const items = [tmp];
+        const obj = GPlayActionCreators;
+        const inAppSkus = obj.loadInAppSkus(items);
+      }
+    };
+    let items = [tmp5];
+    cResult[0] = tmp5;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp7 = items;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[1];
+    tmp7 = cResult[2];
+  }
+  const effect = react.useEffect(tmp6, tmp7);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [IAPStoreDefault];
+    cResult[3] = items1;
+    tmp9 = items1;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] !== tmp5) {
+    const fn2 = function o() {
+      let product = null;
+      if (null != c0) {
+        const obj = IAPStoreDefault;
+        product = obj.getProduct(tmp);
+      }
+      return product;
+    };
+    const items2 = [tmp5];
+    cResult[4] = tmp5;
+    cResult[5] = fn2;
+    cResult[6] = items2;
+    tmp12 = items2;
+    tmp11 = fn2;
+  } else {
+    tmp11 = cResult[5];
+    tmp12 = cResult[6];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp11, tmp12);
+  let priceString;
+  if (stateFromStores != null) {
+    priceString = stateFromStores.priceString;
+  }
+  if (null == priceString) {
+    let tmp16;
+    const _Symbol = Symbol;
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { normalPrice: null, discountedPrice: null, discountPercent: null, userPrice: null };
+      cResult[9] = obj2;
+      tmp16 = obj2;
+    } else {
+      tmp16 = cResult[9];
+    }
+    tmp15 = tmp16;
+  } else if (cResult[7] !== stateFromStores.priceString) {
+    const obj4 = { normalPrice: null, discountedPrice: null, discountPercent: null, userPrice: null };
+    ({ priceString: obj3.normalPrice, priceString: obj3.userPrice } = stateFromStores);
+    cResult[7] = stateFromStores.priceString;
+    cResult[8] = obj4;
+    tmp15 = obj4;
+  } else {
+    tmp15 = cResult[8];
+  }
+  return tmp15;
+}) : ((sku) => {
   let c0;
   sku = sku.sku;
   _require = undefined;
@@ -41,7 +134,7 @@ export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
   }, items);
   const useStateFromStores = require("get initialized").useStateFromStores;
   const tmp4 = require("get initialized");
-  const items1 = [stateFromStores(6658)];
+  const items1 = [stateFromStores(6659)];
   const items2 = [tmp2];
   stateFromStores = useStateFromStores(items1, () => {
     let product = null;
@@ -67,4 +160,7 @@ export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
     }
     return obj;
   }, items3);
-};
+});
+const result = size.fileFinishedImporting("modules/storefront/native/StorefrontNativeUtils.android.tsx");
+
+export const useFormattedSKUPrice = tmp2;

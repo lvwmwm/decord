@@ -1,15 +1,15 @@
-// Module ID: 16242
-// Function ID: 16243
+// Module ID: 16244
+// Function ID: 16245
 // Name: VibegrationsArchivePicker
-// Dependencies: [5, 12642, 10793, 5371, 1115, 3715, 2]
+// Dependencies: [5, 12644, 10775, 5372, 1127, 3718, 2]
 // Exports: describeVibegrationsArchiveRejection, pickVibegrationsArchive, sendVibegrationsArchiveImport
 
-// Module 16242 (VibegrationsArchivePicker)
-import _modDef3715 from "module_3715" /* 3715 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5371 */;
-import FilePickerUtils from "FilePickerUtils" /* 10793 */;
+// Module 16244 (VibegrationsArchivePicker)
+import _modDef3718 from "module_3718" /* 3718 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5372 */;
+import FilePickerUtils from "FilePickerUtils" /* 10775 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12642 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12644 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, c5, c6;
@@ -31,7 +31,7 @@ let obj = function _pickVibegrationsArchive() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -145,7 +145,7 @@ obj = function _sendVibegrationsArchiveImport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -181,7 +181,7 @@ obj = function _sendVibegrationsArchiveImport() {
           const items = [closure_2];
           closure_132_5(closure_0, closure_1, items);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp20) {
         c6 = 3;
@@ -204,10 +204,10 @@ export const describeVibegrationsArchiveRejection = function describeVibegration
   let formatToPlainStringResult = null;
   obj = VibegrationsTypes;
   if (!obj.isVibegrationsAttachmentWithinLimit(bytes.bytes.size, bytes.contentType)) {
-    const intl = tmp(1115).intl;
+    const intl = tmp(1127).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj2 = { size: formatVibegrationsAttachmentLimit(tmpResult2.vibegrationsAttachmentLimit(bytes.contentType)) };
-    const AzziHF = _modDef3715.AzziHF;
+    const AzziHF = _modDef3718.AzziHF;
     formatVibegrationsAttachmentLimit = VibegrationsTypes.formatVibegrationsAttachmentLimit;
     VibegrationsTypes;
     tmpResult2 = VibegrationsTypes;

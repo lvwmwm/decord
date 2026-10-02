@@ -1,15 +1,15 @@
-// Module ID: 17674
-// Function ID: 17675
+// Module ID: 17676
+// Function ID: 17677
 // Name: AVErrorAudioCaptureSampleRateMismatch
-// Dependencies: [4874, 1993, 4859, 1091, 8875, 17662, 2]
+// Dependencies: [4875, 1999, 4860, 1103, 8869, 17664, 2]
 
-// Module 17674 (AVErrorAudioCaptureSampleRateMismatch)
-import DurationsDefault from "Durations" /* 1091 */;
-import AVError from "AVError" /* 8875 */;
-import AVErrorContext from "AVErrorContext" /* 17662 */;
-import MediaEngineStatsStore from "MediaEngineStatsStore" /* 4874 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
+// Module 17676 (AVErrorAudioCaptureSampleRateMismatch)
+import DurationsDefault from "Durations" /* 1103 */;
+import AVError from "AVError" /* 8869 */;
+import AVErrorContext from "AVErrorContext" /* 17664 */;
+import MediaEngineStatsStore from "MediaEngineStatsStore" /* 4875 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
 import size from "module_2" /* 2 */;
 
 let closure_5 = 10 * DurationsDefault.Millis.SECOND;

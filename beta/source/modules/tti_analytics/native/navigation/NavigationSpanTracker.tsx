@@ -1,13 +1,13 @@
-// Module ID: 16179
-// Function ID: 16180
+// Module ID: 16181
+// Function ID: 16182
 // Name: NavigationSpanTracker
-// Dependencies: [3, 1255, 16180, 16178, 2]
+// Dependencies: [3, 1267, 16182, 16180, 2]
 
-// Module 16179 (NavigationSpanTracker)
+// Module 16181 (NavigationSpanTracker)
 import LoggerDefault from "Logger" /* 3 */;
-import v1 from "v1" /* 1255 */;
-import NavigationSpanTypes from "NavigationSpanTypes" /* 16178 */;
-import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 16180 */;
+import v1 from "v1" /* 1267 */;
+import NavigationSpanTypes from "NavigationSpanTypes" /* 16180 */;
+import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 16182 */;
 import size from "module_2" /* 2 */;
 
 let obj = new LoggerDefault("NavTTI");

@@ -1,14 +1,14 @@
-// Module ID: 13447
-// Function ID: 13448
+// Module ID: 13449
+// Function ID: 13450
 // Name: ShareUtils
-// Dependencies: [5, 5200, 4829, 4528, 10823, 8608, 7196, 5440, 5439, 7095, 8594, 6876, 2]
+// Dependencies: [5, 5201, 4830, 4531, 9628, 8605, 7200, 5441, 5440, 7099, 8591, 6880, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 13447 (ShareUtils)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
-import MessageConstants from "MessageConstants" /* 4829 */;
-import DraftStore from "DraftStore" /* 5200 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10823 */;
+// Module 13449 (ShareUtils)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
+import MessageConstants from "MessageConstants" /* 4830 */;
+import DraftStore from "DraftStore" /* 5201 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9628 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _sendShareMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -61,7 +61,7 @@ let obj = function _sendShareMessage() {
             future = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

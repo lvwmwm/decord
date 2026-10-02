@@ -1,37 +1,90 @@
-// Module ID: 9271
-// Function ID: 9272
+// Module ID: 9249
+// Function ID: 9250
 // Name: FormHeader
-// Dependencies: [19, 1085, 21, 4836, 5836, 576, 1177, 2]
-// Exports: default
+// Dependencies: [109, 19, 1097, 21, 4837, 5837, 588, 558, 576, 1189, 2]
 
-// Module 9271 (FormHeader)
+// Module 9249 (FormHeader)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1177 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1097 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
-import TextStyles from "TextStyles" /* 5836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import TextStyles from "TextStyles" /* 5837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let children;
+
 let obj2;
+let tmp;
+const native = tmp(1189);
+let closure_2 = ["children"];
 const Fonts = Constants.Fonts;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
-const obj = { fieldHeader: obj2 };
+let obj = { fieldHeader: obj2 };
 createStyles = createStyles.createStyles;
 const DISPLAY_EXTRABOLD = Fonts.DISPLAY_EXTRABOLD;
 obj2 = { paddingBottom: 8 };
 let merged = Object.assign(TextStyles(DISPLAY_EXTRABOLD, nativeDefault.colors.TEXT_SUBTLE, 12, { uppercase: true }));
-let closure_3 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/FormHeader.tsx");
-
-export default function FormHeader(children) {
+let closure_5 = createStyles(obj);
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+  let tmp4;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(10);
+  if (cResult[0] !== children) {
+    children = children.children;
+    const tmp8 = _objectWithoutProperties(children, closure_2);
+    cResult[0] = children;
+    cResult[1] = children;
+    cResult[2] = tmp8;
+    tmp5 = tmp8;
+    tmp4 = children;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+  }
+  const tmp9 = closure_5();
+  if (cResult[3] === tmp5.style) {
+    let tmp10;
+    if (cResult[4] === tmp9.fieldHeader) {
+      tmp10 = cResult[5];
+    }
+    if (cResult[6] === tmp4) {
+      if (cResult[7] === tmp5) {
+        let tmp11;
+        if (cResult[8] === tmp10) {
+          tmp11 = cResult[9];
+        }
+        return tmp11;
+      }
+    }
+    const LegacyText = native.LegacyText;
+    const merged = Object.assign(tmp5);
+    const tmp16 = <LegacyText style={tmp10}>{tmp4}</LegacyText>;
+    cResult[6] = tmp4;
+    cResult[7] = tmp5;
+    cResult[8] = tmp10;
+    cResult[9] = tmp16;
+    tmp11 = tmp16;
+  }
+  const items = [tmp9.fieldHeader, tmp5.style];
+  cResult[3] = tmp5.style;
+  cResult[4] = tmp9.fieldHeader;
+  cResult[5] = items;
+  tmp10 = items;
+}) : ((children) => {
   children = children.children;
   const merged = Object.assign(children, Object.assign({ children: 0 }));
-  const tmp2 = closure_3();
+  const tmp2 = closure_5();
   const LegacyText = native.LegacyText;
   const merged1 = Object.assign(merged);
   const items = [tmp2.fieldHeader, merged.style];
   return <LegacyText style={items}>{children}</LegacyText>;
-};
+});
+const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/FormHeader.tsx");
+
+export default tmp6;

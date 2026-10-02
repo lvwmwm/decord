@@ -1,14 +1,14 @@
-// Module ID: 11419
-// Function ID: 11420
+// Module ID: 11294
+// Function ID: 11295
 // Name: onTapCheckpointCard
-// Dependencies: [2045, 1074, 1241, 5016, 2]
+// Dependencies: [2051, 1086, 1253, 5017, 2]
 // Exports: onTapCheckpointCard
 
-// Module 11419 (onTapCheckpointCard)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+// Module 11294 (onTapCheckpointCard)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

@@ -1,11 +1,11 @@
-// Module ID: 5826
-// Function ID: 5827
+// Module ID: 5827
+// Function ID: 5828
 // Name: transformSKUTenantMetadata
-// Dependencies: [1974, 2]
+// Dependencies: [1980, 2]
 // Exports: default
 
-// Module 5826 (transformSKUTenantMetadata)
-import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
+// Module 5827 (transformSKUTenantMetadata)
+import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
 import size_mod from "module_2" /* 2 */;
 
 function transformProfileEffectKeyFrameFromServer(src) {

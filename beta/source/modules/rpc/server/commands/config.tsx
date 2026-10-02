@@ -1,14 +1,14 @@
-// Module ID: 14034
-// Function ID: 14035
+// Module ID: 14036
+// Function ID: 14037
 // Name: commands/config
-// Dependencies: [4739, 1074, 8773, 8770, 573, 2]
+// Dependencies: [4741, 1086, 8768, 8765, 585, 2]
 
-// Module 14034 (commands/config)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import RPCErrorDefault from "RPCError" /* 8770 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8773 */;
-import Constants_mod from "Constants" /* 4739 */;
-import Constants_mod2 from "Constants" /* 1074 */;
+// Module 14036 (commands/config)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import RPCErrorDefault from "RPCError" /* 8765 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8768 */;
+import Constants_mod from "Constants" /* 4741 */;
+import Constants_mod2 from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let RPC_AUTHENTICATED_SCOPE;

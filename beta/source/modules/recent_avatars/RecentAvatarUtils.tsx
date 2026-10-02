@@ -1,16 +1,16 @@
-// Module ID: 7614
-// Function ID: 7615
+// Module ID: 7618
+// Function ID: 7619
 // Name: RecentAvatarUtils
-// Dependencies: [1074, 1397, 1432, 1473, 1115, 6410, 1370, 2]
+// Dependencies: [1086, 1403, 1438, 1479, 1127, 6410, 1376, 2]
 // Exports: generateAvatarDescription, generateRecentAvatarFileDetails, getImageFormat, getPendingAvatarSrc
 
-// Module 7614 (RecentAvatarUtils)
-import Constants from "Constants" /* 1074 */;
-import intl3 from "intl" /* 1115 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1432 */;
-import _modDef1473 from "module_1473" /* 1473 */;
+// Module 7618 (RecentAvatarUtils)
+import Constants from "Constants" /* 1086 */;
+import intl3 from "intl" /* 1127 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import AvatarUtils from "AvatarUtils" /* 1403 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1438 */;
+import _modDef1479 from "module_1479" /* 1479 */;
 import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6410 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ function getArchivedAvatarURL(allowWebp) {
       let str6 = "gif";
       if (flag) {
         str6 = "gif";
-        if (tmp2(1397).SUPPORTS_WEBP) {
+        if (tmp2(1403).SUPPORTS_WEBP) {
           str6 = "webp";
         }
       }
@@ -67,7 +67,7 @@ function getArchivedAvatarURL(allowWebp) {
     obj3 = ImageLoaderUtils;
     const tmp6 = require;
     if (isAnimatedIconHashResult) {
-      const tmp6Result = tmp6(1397);
+      const tmp6Result = tmp6(1403);
       isAnimatedIconHashResult = tmp6Result.isAnimatedIconHash(storageHash);
     }
     if (isAnimatedIconHashResult) {
@@ -75,7 +75,7 @@ function getArchivedAvatarURL(allowWebp) {
     }
     const _HermesInternal2 = HermesInternal;
     const ARCHIVED_AVATARResult = Endpoints.ARCHIVED_AVATAR(userId, avatarId, storageHash, str2);
-    const obj5 = _modDef1473;
+    const obj5 = _modDef1479;
     return "" + combined + ARCHIVED_AVATARResult + "?" + obj5.stringify(obj2);
   }
   str2 = "jpg";
@@ -112,7 +112,7 @@ export const getImageFormat = function getImageFormat(canAnimate) {
       let str5 = "gif";
       if (flag2) {
         str5 = "gif";
-        if (tmp(1397).SUPPORTS_WEBP) {
+        if (tmp(1403).SUPPORTS_WEBP) {
           str5 = "webp";
         }
       }
@@ -147,20 +147,20 @@ export const generateAvatarDescription = function generateAvatarDescription(arg0
   if (assetOrigin !== ProfilePendingImageTypes.AssetOriginTypes.ARCHIVED_ASSET) {
     let DYil93;
     if (filename == null) {
-      const intl = tmp3(1115).intl;
-      filename = intl.string(tmp3(1115).t.lqaIxI);
+      const intl = tmp3(1127).intl;
+      filename = intl.string(tmp3(1127).t.lqaIxI);
     }
     const _Date = Date;
     const self = this;
     const self2 = this;
     const date = new Date();
     const toLocaleStringResult = date.toLocaleString(intl3.intl.currentLocale, { year: "numeric", day: "numeric", month: "long", hour: "numeric", minute: "numeric" });
-    const intl2 = tmp3(1115).intl;
+    const intl2 = tmp3(1127).intl;
     const formatToPlainString = intl2.formatToPlainString;
     if (assetOrigin === ProfilePendingImageTypes.AssetOriginTypes.EDITED_ARCHIVED_ASSET) {
-      DYil93 = tmp3(1115).t.eC2sZi;
+      DYil93 = tmp3(1127).t.eC2sZi;
     } else {
-      DYil93 = tmp3(1115).t.DYil93;
+      DYil93 = tmp3(1127).t.DYil93;
     }
     const obj2 = { name: filename, dateTime: toLocaleStringResult };
     return formatToPlainString(DYil93, obj2);
@@ -199,8 +199,8 @@ export const generateRecentAvatarFileDetails = function generateRecentAvatarFile
     }
   }
   if (null == arg1) {
-    const intl = tmp(1115).intl;
-    stringResult = intl.string(tmp(1115).t.lqaIxI);
+    const intl = tmp(1127).intl;
+    stringResult = intl.string(tmp(1127).t.lqaIxI);
   } else {
     stringResult = arg1.split(",")[0];
   }

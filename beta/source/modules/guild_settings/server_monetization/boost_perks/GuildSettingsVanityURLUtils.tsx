@@ -1,12 +1,12 @@
-// Module ID: 17291
-// Function ID: 17292
+// Module ID: 17293
+// Function ID: 17294
 // Name: GuildSettingsVanityURLUtils
-// Dependencies: [1074, 1115, 2]
+// Dependencies: [1086, 1127, 2]
 // Exports: canSeeVanityUrlSettings, getErrorMessageFromErrorCode
 
-// Module 17291 (GuildSettingsVanityURLUtils)
-import intl8 from "intl" /* 1115 */;
-import Constants from "Constants" /* 1074 */;
+// Module 17293 (GuildSettingsVanityURLUtils)
+import intl8 from "intl" /* 1127 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c2;

@@ -1,15 +1,15 @@
-// Module ID: 5368
-// Function ID: 5369
+// Module ID: 5369
+// Function ID: 5370
 // Name: getVibegrationsChannelIcon
-// Dependencies: [5369, 5374, 5375, 5340, 5376, 2]
+// Dependencies: [5370, 5375, 5376, 5341, 5377, 2]
 // Exports: getVibegrationsChannelIconComponent, getVibegrationsChannelIconSource
 
-// Module 5368 (getVibegrationsChannelIcon)
-import AssetRegistryDefault from "AssetRegistry" /* 5340 */;
-import vibegrationsChannelIconKind from "vibegrationsChannelIconKind" /* 5369 */;
-import AppsIcon from "AppsIcon" /* 5374 */;
-import AppsLockIcon from "AppsLockIcon" /* 5375 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 5376 */;
+// Module 5369 (getVibegrationsChannelIcon)
+import AssetRegistryDefault from "AssetRegistry" /* 5341 */;
+import vibegrationsChannelIconKind from "vibegrationsChannelIconKind" /* 5370 */;
+import AppsIcon from "AppsIcon" /* 5375 */;
+import AppsLockIcon from "AppsLockIcon" /* 5376 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 5377 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/vibegrations/native/getVibegrationsChannelIcon.tsx");

@@ -1,21 +1,21 @@
-// Module ID: 14866
-// Function ID: 14867
+// Module ID: 14854
+// Function ID: 14855
 // Name: MessagePreviewManager
-// Dependencies: [32, 5, 5589, 2049, 502, 2045, 13262, 1074, 3, 6539, 12, 2074, 573, 1271, 14867, 2]
+// Dependencies: [32, 5, 5590, 2055, 502, 2051, 13264, 1086, 3, 6540, 12, 2077, 585, 1283, 14855, 2]
 
-// Module 14866 (MessagePreviewManager)
+// Module 14854 (MessagePreviewManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1074 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import RemoteFetchData from "RemoteFetchData" /* 14867 */;
+import Constants from "Constants" /* 1086 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import RemoteFetchData from "RemoteFetchData" /* 14855 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13262 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13264 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let c2, c4, c5, c7, c8, closure_2, importDefault, set;
@@ -82,7 +82,7 @@ class MessagePreviewManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {
@@ -114,7 +114,7 @@ class MessagePreviewManager extends AutomaticLifecycleManager {
               closure_4 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else {
             let closure_1;
@@ -190,7 +190,7 @@ class MessagePreviewManager extends AutomaticLifecycleManager {
               c6 = 1;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         }
       }
@@ -229,7 +229,7 @@ class MessagePreviewManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -322,7 +322,7 @@ class MessagePreviewManager extends AutomaticLifecycleManager {
             mostRecents(closure_129_0);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp51) {
           closure_2 = tmp51;
           if (0 === c3) {
@@ -377,7 +377,7 @@ class MessagePreviewManager extends AutomaticLifecycleManager {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -416,7 +416,7 @@ class MessagePreviewManager extends AutomaticLifecycleManager {
               const obj = tmp4(c2[12]);
               obj.dispatch(obj7);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp11) {
             c3 = 3;

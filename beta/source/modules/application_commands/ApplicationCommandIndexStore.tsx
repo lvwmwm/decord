@@ -1,57 +1,51 @@
-// Module ID: 8591
-// Function ID: 8592
+// Module ID: 8588
+// Function ID: 8589
 // Name: ApplicationCommandIndexStore
-// Dependencies: [32, 5, 19, 8592, 2112, 502, 2045, 2108, 2067, 1372, 8593, 5305, 1074, 3, 8594, 8595, 6941, 6942, 5832, 38, 504, 8596, 1241, 1979, 8599, 573, 8600, 8601, 2026, 8708, 6943, 5829, 2]
-// Exports: appLauncherOnlyCompareNames, getOrFetchApplicationCommandIndexForTarget, getSection, isStale, useContextIndexState, useDiscoveryState, useGuildIndexState, useUserIndexState
+// Dependencies: [32, 5, 19, 8589, 2115, 502, 2051, 2111, 2073, 1378, 8590, 5306, 1086, 3, 8591, 8592, 6945, 6946, 5833, 38, 504, 8593, 1253, 1985, 8596, 585, 558, 576, 8597, 8598, 2032, 8703, 6947, 5830, 2]
+// Exports: appLauncherOnlyCompareNames, getOrFetchApplicationCommandIndexForTarget, getSection, isStale
 
-// Module 8591 (ApplicationCommandIndexStore)
+// Module 8588 (ApplicationCommandIndexStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import Server from "Server" /* 1979 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5829 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6941 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6943 */;
-import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 8595 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 8596 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 8599 */;
-import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 8601 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 8708 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react2 from "react" /* 576 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import Server from "Server" /* 1985 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5830 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5833 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6945 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6947 */;
+import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 8592 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 8593 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 8596 */;
+import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 8598 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 8703 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import react from "react" /* 19 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 8592 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
+import react_mod from "react" /* 19 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 8589 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import UserStore from "UserStore" /* 1372 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 8593 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5305 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import UserStore from "UserStore" /* 1378 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 8590 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const CommandPermissionUtilsAll = CommandPermissionUtils;
-let _require, c2, c6, c7, data, dependencyMap, locale, map, set;
+let _require, c2, c6, c7, data, importDefault, locale, map, set;
 
 let closure_15;
 let closure_16;
 let closure_17;
 let closure_18;
-const f87015 = () => {
-  let contextState;
-  if ("channel" === closure_0.type) {
-    contextState = authStore.getContextState(tmp);
-  } else {
-    contextState = authStore.getUserState();
-  }
-  return contextState;
-};
-const f87017 = () => authStore.getUserState();
+let tmp;
+const get_initialized = tmp(504);
 function getIndexKey(type) {
   type = type.type;
   if ("guild" === type) {
@@ -64,21 +58,22 @@ function getIndexKey(type) {
     return "application" === type ? type.applicationId : undefined;
   }
 }
-function updateIndex(target, arg1, flag) {
+function updateIndex(type, arg1) {
   let applicationId;
   let tmp3;
-  if (flag === undefined) {
+  let flag = arg2;
+  if (arg2 === undefined) {
     flag = false;
   }
-  const type = target.type;
+  type = type.type;
   if ("guild" === type) {
-    applicationId = target.guildId;
+    applicationId = type.guildId;
   } else if ("channel" === type) {
-    applicationId = target.channelId;
+    applicationId = type.channelId;
   } else if ("user" === type) {
     applicationId = closure_20;
   } else if ("application" === type) {
-    applicationId = target.applicationId;
+    applicationId = type.applicationId;
   }
   if (null != applicationCommandIndexStore.indices[applicationId]) {
     const tmp8 = "fetchState" in arg1 && applicationCommandIndexStore.indices[applicationId].fetchState.fetching;
@@ -97,7 +92,7 @@ function updateIndex(target, arg1, flag) {
   }
   if (undefined !== tmp3) {
     applicationCommandIndexStore.indices[applicationId] = tmp3;
-    if ("application" === target.type) {
+    if ("application" === type.type) {
       const applicationIndices = tmp.applicationIndices;
       const result = applicationIndices.set(applicationId, tmp3);
       applicationCommandIndexStore.applicationIndicesVersion = applicationCommandIndexStore.applicationIndicesVersion + 1;
@@ -131,7 +126,7 @@ let obj = function _getOrFetchApplicationCommandIndexForTarget() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -230,7 +225,7 @@ obj = function _updateIndexAndFetchApplicationCommandIndex() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -271,7 +266,7 @@ obj = function _updateIndexAndFetchApplicationCommandIndex() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -281,12 +276,13 @@ obj = function _updateIndexAndFetchApplicationCommandIndex() {
   });
   return obj(...arguments);
 };
-function handleFetchSuccess(arg0, flag) {
+function handleFetchSuccess(arg0) {
   let index;
   let keyPermissionsResult;
   let obj8;
   let target;
-  if (flag === undefined) {
+  let flag = arg1;
+  if (arg1 === undefined) {
     flag = false;
   }
   ({ target, index } = arg0);
@@ -325,11 +321,11 @@ function handleFetchSuccess(arg0, flag) {
           }
           obj = { permissions: keyPermissionsResult, botId: tmp6.bot_id };
           let tmp19 = id;
-          let obj2 = id(6941);
+          let obj2 = id(6945);
           let merged = Object.assign(obj2.getApplicationCommandSection(toApplication(tmp6), false));
           keyPermissionsResult = undefined;
           if (null != tmp6.permissions) {
-            let tmp19Result = tmp19(6942);
+            let tmp19Result = tmp19(6946);
             keyPermissionsResult = tmp19Result.keyPermissions(toServerPermissions(tmp6.permissions, id));
           }
           let obj6 = { descriptor: obj, commands: {} };
@@ -352,7 +348,7 @@ function handleFetchSuccess(arg0, flag) {
       const membersById = requestMembersById(guildId, items);
     }
     const application_commands = index.application_commands;
-    const obj5 = id(6941);
+    const obj5 = id(6945);
     const applicationCommands = obj5.buildApplicationCommands(application_commands.map((description_default) => {
       let mapped;
       let name_default;
@@ -462,255 +458,6 @@ function handleStaleUserIndex() {
   obj = { serverVersion: SymbolResult };
   updateIndex({ type: "user" }, obj);
 }
-function useQueryState(type, commandTypes, allowFetch) {
-  let allowApplicationCommands;
-  let allowFetch3;
-  let applicationId;
-  let closure_3;
-  let first;
-  let first1;
-  let first2;
-  let launcherContext;
-  let permissionContext;
-  let stateFromStoresObject1;
-  _require = type;
-  let channel;
-  if ("channel" === type.type) {
-    channel = type.channel;
-  }
-  obj = require("CommandPermissionContext");
-  permissionContext = obj.usePermissionContext(channel, commandTypes.commandTypes);
-  const tmp3 = false !== commandTypes.applicationCommands;
-  allowFetch = allowFetch.allowFetch;
-  _require = type;
-  commandTypes = tmp3;
-  first = undefined;
-  _slicedToArray = undefined;
-  [first, _slicedToArray] = stateFromStoresObject1.useState(true);
-  let obj2 = require("get initialized");
-  const items = [applicationCommandIndexStore];
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f87015);
-  const items1 = [stateFromStoresObject, allowFetch, type, tmp3, first];
-  const effect = stateFromStoresObject1.useEffect(() => {
-    const tmp = first;
-    if (tmp) {
-      if ("contextless" !== closure_0.type) {
-        const tmp14 = allowFetch;
-        if (tmp14) {
-          let tmp15 = closure_1;
-          if (tmp15) {
-            const channel = tmp2.channel;
-            let guild_id;
-            if (channel != null) {
-              guild_id = channel.guild_id;
-            }
-            let tmp18 = null != guild_id;
-            if (!tmp18) {
-              let type;
-              if (channel != null) {
-                type = channel.type;
-              }
-              let tmp21 = type === constants2.DM;
-              if (tmp21) {
-                user = user.getUser(channel.getRecipientId());
-                let bot;
-                if (user != null) {
-                  bot = user.bot;
-                }
-                tmp21 = true === bot;
-              }
-              tmp18 = tmp21;
-            }
-            tmp15 = tmp18;
-          }
-          if (tmp15) {
-            const _Object = Object;
-            const obj2 = { miss: null == stateFromStoresObject.result, size: Object.keys(authStore.indices).length };
-            const track = closure_1(permissionContext[22]).track;
-            const APPLICATION_COMMAND_CACHE_FETCH = constants.APPLICATION_COMMAND_CACHE_FETCH;
-            closure_1(permissionContext[22]);
-            track(APPLICATION_COMMAND_CACHE_FETCH, obj2);
-            const result2 = stateFromStoresObject.result;
-            let version;
-            if (result2 != null) {
-              version = result2.version;
-            }
-            let fetching2 = !tmp35;
-            if (version !== stateFromStoresObject.serverVersion) {
-              fetching2 = tmp29.fetchState.fetching;
-            }
-            let tmp36 = !fetching2;
-            if (tmp36) {
-              let tmp37 = null == tmp29.fetchState.retryAfter;
-              if (!tmp37) {
-                const _Date2 = Date;
-                tmp37 = Date.now() >= tmp29.fetchState.retryAfter;
-              }
-              tmp36 = tmp37;
-            }
-            if (tmp36) {
-              if (null != closure_0.channel.guild_id) {
-                const obj4 = { type: "guild", guildId: closure_0.channel.guild_id };
-                const obj5 = closure_0(permissionContext[15]);
-                const applicationCommandIndex = obj5.requestApplicationCommandIndex(obj4);
-              } else {
-                const obj6 = { type: "channel", channelId: closure_0.channel.id };
-                const obj3 = closure_0(permissionContext[15]);
-                const applicationCommandIndex1 = obj3.requestApplicationCommandIndex(obj6);
-              }
-            }
-          }
-        }
-        closure_4(false);
-      } else {
-        let tmp10 = allowFetch;
-        if (tmp10) {
-          const result = stateFromStoresObject.result;
-          let version1;
-          if (result != null) {
-            version1 = result.version;
-          }
-          let fetching = !tmp6;
-          if (version1 !== stateFromStoresObject.serverVersion) {
-            fetching = tmp3.fetchState.fetching;
-          }
-          let tmp7 = !fetching;
-          if (tmp7) {
-            let tmp8 = null == tmp3.fetchState.retryAfter;
-            if (!tmp8) {
-              const _Date = Date;
-              tmp8 = Date.now() >= tmp3.fetchState.retryAfter;
-            }
-            tmp7 = tmp8;
-          }
-          tmp10 = tmp7;
-        }
-        if (tmp10) {
-          obj = closure_0(permissionContext[15]);
-          const applicationCommandIndex2 = obj.requestApplicationCommandIndex({ type: "user" });
-        }
-      }
-    }
-  }, items1);
-  const allowFetch2 = allowFetch.allowFetch;
-  _require = tmp3;
-  first1 = undefined;
-  stateFromStoresObject1 = undefined;
-  [first1, closure_3] = stateFromStoresObject1.useState(true);
-  let obj3 = require("get initialized");
-  const items2 = [applicationCommandIndexStore];
-  stateFromStoresObject1 = obj3.useStateFromStoresObject(items2, f87017);
-  const items3 = [stateFromStoresObject1, allowFetch2, tmp3, first1];
-  const effect1 = stateFromStoresObject1.useEffect(() => {
-    const tmp = first1;
-    if (tmp) {
-      let tmp2 = allowFetch2;
-      if (tmp2) {
-        const result = stateFromStoresObject1.result;
-        let version;
-        if (result != null) {
-          version = result.version;
-        }
-        let fetching = !tmp6;
-        if (version !== stateFromStoresObject1.serverVersion) {
-          fetching = tmp3.fetchState.fetching;
-        }
-        let tmp7 = !fetching;
-        if (tmp7) {
-          let tmp8 = null == tmp3.fetchState.retryAfter;
-          if (!tmp8) {
-            const _Date = Date;
-            tmp8 = Date.now() >= tmp3.fetchState.retryAfter;
-          }
-          tmp7 = tmp8;
-        }
-        tmp2 = tmp7;
-      }
-      if (tmp2) {
-        tmp2 = closure_0;
-      }
-      if (tmp2) {
-        obj = closure_0(permissionContext[15]);
-        const applicationCommandIndex = obj.requestApplicationCommandIndex({ type: "user" });
-      }
-      closure_3(false);
-    }
-  }, items3);
-  let obj4 = require("get initialized");
-  const items4 = [applicationCommandIndexStore];
-  const stateFromStores = obj4.useStateFromStores(items4, () => authStore.getApplicationStates());
-  let obj5 = require("get initialized");
-  const items5 = [applicationCommandIndexStore];
-  ({ applicationId, allowFetch: allowFetch3 } = allowFetch);
-  first2 = undefined;
-  closure_3 = undefined;
-  const stateFromStores1 = obj5.useStateFromStores(items5, () => authStore.applicationIndicesVersion);
-  [first2, closure_3] = stateFromStoresObject1.useState(true);
-  let obj6 = require("get initialized");
-  const items6 = [applicationCommandIndexStore];
-  const stateFromStores2 = obj6.useStateFromStores(items6, () => authStore.getApplicationState(applicationId));
-  const items7 = [allowFetch3, applicationId, stateFromStores2, first2];
-  const effect2 = stateFromStoresObject1.useEffect(() => {
-    const tmp = first2;
-    if (tmp) {
-      let tmp2 = allowFetch3;
-      if (tmp2) {
-        const result = stateFromStores2.result;
-        let version;
-        if (result != null) {
-          version = result.version;
-        }
-        let fetching = !tmp6;
-        if (version !== stateFromStores2.serverVersion) {
-          fetching = tmp3.fetchState.fetching;
-        }
-        let tmp7 = !fetching;
-        if (tmp7) {
-          let tmp8 = null == tmp3.fetchState.retryAfter;
-          if (!tmp8) {
-            const _Date = Date;
-            tmp8 = Date.now() >= tmp3.fetchState.retryAfter;
-          }
-          tmp7 = tmp8;
-        }
-        tmp2 = tmp7;
-      }
-      if (tmp2) {
-        tmp2 = null != applicationId;
-      }
-      if (tmp2) {
-        const obj2 = { type: "application", applicationId };
-        obj = applicationId(permissionContext[15]);
-        const applicationCommandIndex = obj.requestApplicationCommandIndex(obj2);
-      }
-      closure_3(false);
-    }
-  }, items7);
-  const items8 = [permissionContext, , , , , , , , , , , , , , ];
-  ({ text: arr9[1], builtIns: arr9[2] } = commandTypes);
-  items8[3] = tmp3;
-  ({ scoreMethod: arr9[4], allowEmptySections: arr9[5], sortOptions: arr9[6], allowApplicationState: arr9[7], applicationId: arr9[8], installOnDemand: arr9[9] } = allowFetch);
-  items8[10] = stateFromStoresObject;
-  items8[11] = stateFromStoresObject1;
-  items8[12] = type;
-  items8[13] = stateFromStores;
-  items8[14] = stateFromStores1;
-  return stateFromStoresObject1.useMemo(function() {
-    obj = { permissionContext, text: commandTypes.text, allowApplicationCommands, builtIns: commandTypes.builtIns, scoreMethod: allowFetch.scoreMethod, allowEmptySections: allowFetch.allowEmptySections, contextState: stateFromStoresObject, userState: stateFromStoresObject1, launcherContext, applicationStates: map, sortOptions: null, singleApplicationId: null, installOnDemand: null };
-    const tmp = queryIndex;
-    const tmp2 = allowFetch;
-    if (allowFetch.allowApplicationState) {
-      map = stateFromStores;
-    } else {
-      const _Map = Map;
-      const self = this;
-      const self2 = this;
-      map = new Map();
-    }
-    ({ sortOptions: obj.sortOptions, applicationId: obj.singleApplicationId, installOnDemand: obj.installOnDemand } = tmp2);
-    return tmp(obj);
-  }, items8);
-}
 function queryIndex(allowApplicationCommands) {
   let NONE;
   let allowEmptySections;
@@ -728,7 +475,7 @@ function queryIndex(allowApplicationCommands) {
   ({ permissionContext, contextState, userState, applicationStates, text, builtIns } = allowApplicationCommands);
   if (builtIns === undefined) {
     let tmp = NONE;
-    builtIns = NONE(8599).BuiltInCommandFilter.ALLOW;
+    builtIns = NONE(8596).BuiltInCommandFilter.ALLOW;
   }
   let flag = allowApplicationCommands.allowApplicationCommands;
   if (flag === undefined) {
@@ -740,11 +487,11 @@ function queryIndex(allowApplicationCommands) {
   }
   NONE = allowApplicationCommands.scoreMethod;
   if (NONE === undefined) {
-    NONE = NONE(8599).ScoreMethod.NONE;
+    NONE = NONE(8596).ScoreMethod.NONE;
   }
   let sortOptions = allowApplicationCommands.sortOptions;
   if (sortOptions === undefined) {
-    sortOptions = closure_38;
+    sortOptions = closure_43;
   }
   let flag2 = allowApplicationCommands.installOnDemand;
   if (flag2 === undefined) {
@@ -760,11 +507,11 @@ function queryIndex(allowApplicationCommands) {
   if (formatted != null) {
     parts = formatted.split(" ");
   }
-  const ONLY_TEXT = NONE(8599).BuiltInCommandFilter.ONLY_TEXT;
+  const ONLY_TEXT = NONE(8596).BuiltInCommandFilter.ONLY_TEXT;
   const tmp9 = NONE;
-  if (builtIns !== NONE(8599).BuiltInCommandFilter.DENY) {
+  if (builtIns !== NONE(8596).BuiltInCommandFilter.DENY) {
     const tmp12 = builtIns === ONLY_TEXT;
-    const tmp9Result = tmp9(8601);
+    const tmp9Result = tmp9(8598);
     builtInCommands = tmp9Result.getBuiltInCommands(commandTypes, true, tmp12);
   } else {
     builtInCommands = [];
@@ -891,7 +638,7 @@ function queryIndex(allowApplicationCommands) {
     }
   }
   if (sortOptions.applications.useFrecency) {
-    const FrecencyUserSettingsActionCreators = NONE(2026).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = NONE(2032).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }
   const sorted = items.sort((section, section2) => {
@@ -933,7 +680,7 @@ function queryIndex(allowApplicationCommands) {
   });
   if (builtInCommands.length > 0) {
     let num2 = 0;
-    const tmp87 = queryIndexSection(NONE(8601).BUILT_IN_SECTIONS[constants.BUILT_IN], builtInCommands, true, true, obj);
+    const tmp87 = queryIndexSection(NONE(8598).BUILT_IN_SECTIONS[constants.BUILT_IN], builtInCommands, true, true, obj);
     if (null != tmp87) {
       items.push(tmp87);
     }
@@ -946,7 +693,7 @@ function queryIndex(allowApplicationCommands) {
       return obj;
     });
   });
-  if (NONE === NONE(8599).ScoreMethod.COMMAND_ONLY) {
+  if (NONE === NONE(8596).ScoreMethod.COMMAND_ONLY) {
     const context = permissionContext.context;
     let guild_id;
     const getGuild = GuildStore.getGuild;
@@ -959,7 +706,7 @@ function queryIndex(allowApplicationCommands) {
     const guild = getGuild(guild_id);
     const tmp96 = sortOptions.commands.useFrecency && items.some((section) => section.section.id !== constants.BUILT_IN && section.data.length > 0);
     if (tmp96) {
-      const FrecencyUserSettingsActionCreators2 = tmp89(2026).FrecencyUserSettingsActionCreators;
+      const FrecencyUserSettingsActionCreators2 = tmp89(2032).FrecencyUserSettingsActionCreators;
       const ifNecessary1 = FrecencyUserSettingsActionCreators2.loadIfNecessary();
     }
     let tmp98;
@@ -1389,7 +1136,7 @@ function scoreCommand(untranslatedName, arg1, arg2, arg3) {
               if (!toLocaleLowerCaseResult1.includes(arg1)) {
                 const tmp25 = importDefault;
                 if (!fuzzysearchDefault(arg1, str)) {
-                  if (!tmp25(5829)(arg1, str2)) {
+                  if (!tmp25(5830)(arg1, str2)) {
                     let COMMAND_DESCRIPTION_FUZZY_MATCHES;
                     let options1 = untranslatedName.options;
                     if (options1 == null) {
@@ -1421,7 +1168,7 @@ function scoreCommand(untranslatedName, arg1, arg2, arg3) {
   }
   return constants4.COMMAND_NAME_STARTS_WITH;
 }
-let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
 ({ BuiltInSectionId: closure_15, DISCOVERY_COMMANDS_FRECENCY_LIMIT: closure_16 } = ApplicationCommandConstants);
 ({ AnalyticEvents: closure_17, ChannelTypes: closure_18 } = Constants);
 let tmp4 = new LoggerDefault("ApplicationCommandIndexStore");
@@ -1580,17 +1327,17 @@ class ApplicationCommandIndexStore extends Store {
   hasApplicationState(applicationId) {
     return applicationId in this.indices;
   }
-  query(withAffinitySuggestions, commandTypes, applicationId) {
+  query(dependencyMap, commandTypes, applicationId) {
     obj = UserStore;
     if (null == UserStore.getCurrentUser()) {
       return closure_23;
     } else {
       let channel;
-      if ("channel" === withAffinitySuggestions.type) {
-        channel = withAffinitySuggestions.channel;
+      if ("channel" === dependencyMap.type) {
+        channel = dependencyMap.channel;
       }
       const self = this;
-      const contextState = this.getContextState(withAffinitySuggestions);
+      const contextState = this.getContextState(dependencyMap);
       const userState = this.getUserState();
       const applicationState = this.getApplicationState(applicationId.applicationId);
       let applicationStates = this.getApplicationStates();
@@ -1948,15 +1695,196 @@ let obj2 = {
   }
 };
 const applicationCommandIndexStore = new ApplicationCommandIndexStore(DispatcherDefault, obj2);
-let closure_38 = Object.freeze({ applications: { useFrecency: false, useScore: false }, commands: { useFrecency: true, useScore: true } });
-const constants4 = { COMMAND_NAME_STARTS_WITH: 0, [0]: "COMMAND_NAME_STARTS_WITH", STARTS_WITH_COMMAND_NAME: 1, [1]: "STARTS_WITH_COMMAND_NAME", COMMAND_NAME_CONTAINS: 2, [2]: "COMMAND_NAME_CONTAINS", STARTS_WITH_COMMAND_OPTION_NAME_OR_OPTION_NAME: 3, [3]: "STARTS_WITH_COMMAND_OPTION_NAME_OR_OPTION_NAME", OPTION_NAME_CONTAINS: 4, [4]: "OPTION_NAME_CONTAINS", SECTION_NAME_STARTS_WITH: 5, [5]: "SECTION_NAME_STARTS_WITH", SECTION_NAME_CONTAINS: 6, [6]: "SECTION_NAME_CONTAINS", COMMAND_DESCRIPTION_CONTAINS: 7, [7]: "COMMAND_DESCRIPTION_CONTAINS", SECTION_DESCRIPTION_CONTAINS: 8, [8]: "SECTION_DESCRIPTION_CONTAINS", COMMAND_NAME_FUZZY_MATCHES: 9, [9]: "COMMAND_NAME_FUZZY_MATCHES", OPTION_NAME_FUZZY_MATCHES: 10, [10]: "OPTION_NAME_FUZZY_MATCHES", SECTION_NAME_FUZZY_MATCHES: 11, [11]: "SECTION_NAME_FUZZY_MATCHES", COMMAND_DESCRIPTION_FUZZY_MATCHES: 12, [12]: "COMMAND_DESCRIPTION_FUZZY_MATCHES" };
-let result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandIndexStore.tsx");
-
-export default applicationCommandIndexStore;
-export const getOrFetchApplicationCommandIndexForTarget = function getOrFetchApplicationCommandIndexForTarget() {
-  return obj(...arguments);
-};
-export const useContextIndexState = function useContextIndexState(arg0, arg1, arg2) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, arg1, arg2) => {
+  let closure_1;
+  let closure_4;
+  let first;
+  let first1;
+  let tmp8;
+  _require = channel;
+  importDefault = arg1;
+  let closure_2 = arg2;
+  let tmp = _require;
+  const tmp2 = first;
+  obj = require("react");
+  const cResult = obj.c(16);
+  let obj2 = react;
+  [first, _slicedToArray] = react.useState(true);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp7 = applicationCommandIndexStore;
+    const items = [applicationCommandIndexStore];
+    cResult[0] = items;
+    first1 = items;
+  } else {
+    first1 = cResult[0];
+  }
+  if (cResult[1] !== channel) {
+    const fn = function c() {
+      let contextState;
+      if ("channel" === channel.type) {
+        contextState = applicationCommandIndexStore.getContextState(tmp);
+      } else {
+        contextState = applicationCommandIndexStore.getUserState();
+      }
+      return contextState;
+    };
+    cResult[1] = channel;
+    cResult[2] = fn;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+  }
+  const tmpResult = tmp(tmp2[20]);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first1, tmp8);
+  if (cResult[3] === arg1) {
+    if (cResult[4] === arg2) {
+      if (cResult[5] === first) {
+        if (cResult[6] === channel.channel) {
+          if (cResult[7] === channel.type) {
+            let tmp10;
+            if (cResult[8] === stateFromStoresObject) {
+              tmp10 = cResult[9];
+            }
+            if (cResult[10] === arg1) {
+              if (cResult[11] === arg2) {
+                if (cResult[12] === first) {
+                  if (cResult[13] === channel) {
+                    let tmp11;
+                    if (cResult[14] === stateFromStoresObject) {
+                      tmp11 = cResult[15];
+                    }
+                    const effect = obj2.useEffect(tmp10, tmp11);
+                    return stateFromStoresObject;
+                  }
+                }
+              }
+            }
+            const items1 = [stateFromStoresObject, arg2, channel, arg1, first];
+            cResult[10] = arg1;
+            cResult[11] = arg2;
+            cResult[12] = first;
+            cResult[13] = channel;
+            cResult[14] = stateFromStoresObject;
+            cResult[15] = items1;
+            tmp11 = items1;
+          }
+        }
+      }
+    }
+  }
+  class C {
+    constructor() {
+      const tmp = first;
+      if (tmp) {
+        if ("contextless" !== channel.type) {
+          const tmp14 = closure_2;
+          if (tmp14) {
+            let tmp15 = closure_1;
+            if (tmp15) {
+              channel = tmp2.channel;
+              let guild_id;
+              if (channel != null) {
+                guild_id = channel.guild_id;
+              }
+              let tmp18 = null != guild_id;
+              if (!tmp18) {
+                let type;
+                if (channel != null) {
+                  type = channel.type;
+                }
+                let tmp21 = type === constants2.DM;
+                if (tmp21) {
+                  const user = UserStore.getUser(channel.getRecipientId());
+                  let bot;
+                  if (user != null) {
+                    bot = user.bot;
+                  }
+                  tmp21 = true === bot;
+                }
+                tmp18 = tmp21;
+              }
+              tmp15 = tmp18;
+            }
+            if (tmp15) {
+              const _Object = Object;
+              const obj2 = { miss: null == stateFromStoresObject.result, size: Object.keys(applicationCommandIndexStore.indices).length };
+              const track = AnalyticsUtilsDefault.track;
+              const APPLICATION_COMMAND_CACHE_FETCH = constants.APPLICATION_COMMAND_CACHE_FETCH;
+              AnalyticsUtilsDefault;
+              track(APPLICATION_COMMAND_CACHE_FETCH, obj2);
+              const result2 = stateFromStoresObject.result;
+              let version;
+              if (result2 != null) {
+                version = result2.version;
+              }
+              let fetching2 = !tmp35;
+              if (version !== stateFromStoresObject.serverVersion) {
+                fetching2 = tmp29.fetchState.fetching;
+              }
+              let tmp36 = !fetching2;
+              if (tmp36) {
+                let tmp37 = null == tmp29.fetchState.retryAfter;
+                if (!tmp37) {
+                  const _Date2 = Date;
+                  tmp37 = Date.now() >= tmp29.fetchState.retryAfter;
+                }
+                tmp36 = tmp37;
+              }
+              if (tmp36) {
+                if (null != channel.channel.guild_id) {
+                  const obj4 = { type: "guild", guildId: channel.channel.guild_id };
+                  const obj5 = ApplicationCommandIndexActionCreators;
+                  const applicationCommandIndex = obj5.requestApplicationCommandIndex(obj4);
+                } else {
+                  const obj6 = { type: "channel", channelId: channel.channel.id };
+                  const obj3 = ApplicationCommandIndexActionCreators;
+                  const applicationCommandIndex1 = obj3.requestApplicationCommandIndex(obj6);
+                }
+              }
+            }
+          }
+          closure_4(false);
+        } else {
+          let tmp10 = closure_2;
+          if (tmp10) {
+            const result = stateFromStoresObject.result;
+            let version1;
+            if (result != null) {
+              version1 = result.version;
+            }
+            let fetching = !tmp6;
+            if (version1 !== stateFromStoresObject.serverVersion) {
+              fetching = tmp3.fetchState.fetching;
+            }
+            let tmp7 = !fetching;
+            if (tmp7) {
+              let tmp8 = null == tmp3.fetchState.retryAfter;
+              if (!tmp8) {
+                const _Date = Date;
+                tmp8 = Date.now() >= tmp3.fetchState.retryAfter;
+              }
+              tmp7 = tmp8;
+            }
+            tmp10 = tmp7;
+          }
+          if (tmp10) {
+            obj = ApplicationCommandIndexActionCreators;
+            const applicationCommandIndex2 = obj.requestApplicationCommandIndex({ type: "user" });
+          }
+        }
+      }
+    }
+  }
+  cResult[3] = arg1;
+  cResult[4] = arg2;
+  cResult[5] = first;
+  cResult[6] = channel.channel;
+  cResult[7] = channel.type;
+  cResult[8] = stateFromStoresObject;
+  cResult[9] = C;
+  tmp10 = C;
+}) : ((arg0, arg1, arg2) => {
   let closure_0;
   let closure_4;
   let first;
@@ -1964,15 +1892,23 @@ export const useContextIndexState = function useContextIndexState(arg0, arg1, ar
   let closure_1 = arg1;
   let closure_2 = arg2;
   [first, _slicedToArray] = react.useState(true);
-  const items = [applicationCommandIndexStore];
   obj = require("get initialized");
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f87015);
+  const items = [applicationCommandIndexStore];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    let contextState;
+    if ("channel" === closure_0.type) {
+      contextState = applicationCommandIndexStore.getContextState(tmp);
+    } else {
+      contextState = applicationCommandIndexStore.getUserState();
+    }
+    return contextState;
+  });
   const items1 = [stateFromStoresObject, arg2, arg0, arg1, first];
   const effect = react.useEffect(() => {
     const tmp = first;
     if (tmp) {
       if ("contextless" !== closure_0.type) {
-        const tmp14 = allowFetch;
+        const tmp14 = closure_2;
         if (tmp14) {
           let tmp15 = closure_1;
           if (tmp15) {
@@ -1989,7 +1925,7 @@ export const useContextIndexState = function useContextIndexState(arg0, arg1, ar
               }
               let tmp21 = type === constants2.DM;
               if (tmp21) {
-                user = user.getUser(channel.getRecipientId());
+                const user = UserStore.getUser(channel.getRecipientId());
                 let bot;
                 if (user != null) {
                   bot = user.bot;
@@ -2002,10 +1938,10 @@ export const useContextIndexState = function useContextIndexState(arg0, arg1, ar
           }
           if (tmp15) {
             const _Object = Object;
-            const obj2 = { miss: null == stateFromStoresObject.result, size: Object.keys(authStore.indices).length };
-            const track = closure_1(permissionContext[22]).track;
+            const obj2 = { miss: null == stateFromStoresObject.result, size: Object.keys(applicationCommandIndexStore.indices).length };
+            const track = AnalyticsUtilsDefault.track;
             const APPLICATION_COMMAND_CACHE_FETCH = constants.APPLICATION_COMMAND_CACHE_FETCH;
-            closure_1(permissionContext[22]);
+            AnalyticsUtilsDefault;
             track(APPLICATION_COMMAND_CACHE_FETCH, obj2);
             const result2 = stateFromStoresObject.result;
             let version;
@@ -2028,11 +1964,11 @@ export const useContextIndexState = function useContextIndexState(arg0, arg1, ar
             if (tmp36) {
               if (null != closure_0.channel.guild_id) {
                 const obj4 = { type: "guild", guildId: closure_0.channel.guild_id };
-                const obj5 = closure_0(permissionContext[15]);
+                const obj5 = ApplicationCommandIndexActionCreators;
                 const applicationCommandIndex = obj5.requestApplicationCommandIndex(obj4);
               } else {
                 const obj6 = { type: "channel", channelId: closure_0.channel.id };
-                const obj3 = closure_0(permissionContext[15]);
+                const obj3 = ApplicationCommandIndexActionCreators;
                 const applicationCommandIndex1 = obj3.requestApplicationCommandIndex(obj6);
               }
             }
@@ -2040,7 +1976,7 @@ export const useContextIndexState = function useContextIndexState(arg0, arg1, ar
         }
         closure_4(false);
       } else {
-        let tmp10 = allowFetch;
+        let tmp10 = closure_2;
         if (tmp10) {
           const result = stateFromStoresObject.result;
           let version1;
@@ -2063,15 +1999,118 @@ export const useContextIndexState = function useContextIndexState(arg0, arg1, ar
           tmp10 = tmp7;
         }
         if (tmp10) {
-          obj = closure_0(permissionContext[15]);
+          obj = ApplicationCommandIndexActionCreators;
           const applicationCommandIndex2 = obj.requestApplicationCommandIndex({ type: "user" });
         }
       }
     }
   }, items1);
   return stateFromStoresObject;
-};
-export const useGuildIndexState = function useGuildIndexState(guildId, arg1) {
+});
+let closure_38 = tmp8;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, arg1) => {
+  let closure_1;
+  let closure_3;
+  let first1;
+  let stateFromStoresObject;
+  let tmp8;
+  _require = guildId;
+  importDefault = arg1;
+  let tmp = _require;
+  obj = require("react");
+  const cResult = obj.c(9);
+  let obj2 = react;
+  let tmp4 = stateFromStoresObject(react.useState(true), 2);
+  const first = tmp4[0];
+  dependencyMap = tmp4[1];
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [applicationCommandIndexStore];
+    cResult[0] = items;
+    first1 = items;
+  } else {
+    first1 = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function l() {
+      let tmp = applicationCommandIndexStore.indices[guildId];
+      if (tmp == null) {
+        tmp = closure_25;
+      }
+      return tmp;
+    };
+    cResult[1] = guildId;
+    cResult[2] = fn;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  stateFromStoresObject = tmpResult.useStateFromStoresObject(first1, tmp8);
+  if (cResult[3] === arg1) {
+    if (cResult[4] === first) {
+      if (cResult[5] === guildId) {
+        let tmp10;
+        let tmp11;
+        if (cResult[6] === stateFromStoresObject) {
+          tmp10 = cResult[7];
+          tmp11 = cResult[8];
+        }
+        const effect = obj2.useEffect(tmp10, tmp11);
+        return stateFromStoresObject;
+      }
+    }
+  }
+  class S {
+    constructor() {
+      const tmp = first && null != guildId;
+      if (tmp) {
+        const tmp4 = closure_1;
+        if (tmp4) {
+          const _Object = Object;
+          obj = { miss: null == stateFromStoresObject.result, size: Object.keys(applicationCommandIndexStore.indices).length };
+          const track = AnalyticsUtilsDefault.track;
+          const APPLICATION_COMMAND_CACHE_FETCH = constants.APPLICATION_COMMAND_CACHE_FETCH;
+          AnalyticsUtilsDefault;
+          track(APPLICATION_COMMAND_CACHE_FETCH, obj);
+          const result = stateFromStoresObject.result;
+          let version;
+          if (result != null) {
+            version = result.version;
+          }
+          let fetching = !tmp15;
+          if (version !== stateFromStoresObject.serverVersion) {
+            fetching = tmp9.fetchState.fetching;
+          }
+          let tmp16 = !fetching;
+          if (tmp16) {
+            let tmp17 = null == tmp9.fetchState.retryAfter;
+            if (!tmp17) {
+              const _Date = Date;
+              tmp17 = Date.now() >= tmp9.fetchState.retryAfter;
+            }
+            tmp16 = tmp17;
+          }
+          if (tmp16) {
+            const obj3 = { type: "guild", guildId };
+            const obj2 = ApplicationCommandIndexActionCreators;
+            const applicationCommandIndex = obj2.requestApplicationCommandIndex(obj3);
+          }
+        }
+        closure_3(false);
+      }
+    }
+  }
+  const items1 = [stateFromStoresObject, arg1, guildId, first];
+  cResult[3] = arg1;
+  cResult[4] = first;
+  cResult[5] = guildId;
+  cResult[6] = stateFromStoresObject;
+  cResult[7] = S;
+  cResult[8] = items1;
+  tmp11 = items1;
+  tmp10 = S;
+}) : ((guildId, arg1) => {
   let closure_3;
   let stateFromStoresObject;
   _require = guildId;
@@ -2128,32 +2167,126 @@ export const useGuildIndexState = function useGuildIndexState(guildId, arg1) {
     }
   }, items1);
   return stateFromStoresObject;
-};
-export const useUserIndexState = function useUserIndexState(arg0, arg1) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   let closure_0;
   let closure_3;
   let stateFromStoresObject;
+  let tmp6;
+  let tmp7;
+  let userState;
   _require = arg0;
   let closure_1 = arg1;
-  const tmp = stateFromStoresObject(react.useState(true), 2);
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  obj = require("react");
+  const cResult = obj.c(8);
+  const tmp4 = stateFromStoresObject(react.useState(true), 2);
+  const first = tmp4[0];
+  dependencyMap = tmp4[1];
+  const obj2 = react;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp8 = applicationCommandIndexStore;
+    const items = [applicationCommandIndexStore];
+    const fn = function l() {
+      return userState.getUserState();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp7 = fn;
+    tmp6 = items;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const tmpResult = tmp(504);
+  stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp6, tmp7);
+  if (cResult[2] === arg0) {
+    if (cResult[3] === arg1) {
+      if (cResult[4] === first) {
+        let tmp10;
+        let tmp11;
+        if (cResult[5] === stateFromStoresObject) {
+          tmp10 = cResult[6];
+          tmp11 = cResult[7];
+        }
+        const effect = obj2.useEffect(tmp10, tmp11);
+        return stateFromStoresObject;
+      }
+    }
+  }
+  class S {
+    constructor() {
+      const tmp = first;
+      if (tmp) {
+        let tmp2 = closure_1;
+        if (tmp2) {
+          const result = stateFromStoresObject.result;
+          let version;
+          if (result != null) {
+            version = result.version;
+          }
+          let fetching = !tmp6;
+          if (version !== stateFromStoresObject.serverVersion) {
+            fetching = tmp3.fetchState.fetching;
+          }
+          let tmp7 = !fetching;
+          if (tmp7) {
+            let tmp8 = null == tmp3.fetchState.retryAfter;
+            if (!tmp8) {
+              const _Date = Date;
+              tmp8 = Date.now() >= tmp3.fetchState.retryAfter;
+            }
+            tmp7 = tmp8;
+          }
+          tmp2 = tmp7;
+        }
+        if (tmp2) {
+          tmp2 = closure_0;
+        }
+        if (tmp2) {
+          obj = ApplicationCommandIndexActionCreators;
+          const applicationCommandIndex = obj.requestApplicationCommandIndex({ type: "user" });
+        }
+        closure_3(false);
+      }
+    }
+  }
+  const items1 = [stateFromStoresObject, arg1, arg0, first];
+  cResult[2] = arg0;
+  cResult[3] = arg1;
+  cResult[4] = first;
+  cResult[5] = stateFromStoresObject;
+  cResult[6] = S;
+  cResult[7] = items1;
+  tmp11 = items1;
+  tmp10 = S;
+}) : ((arg0, arg1) => {
+  let closure_0;
+  let closure_3;
+  let stateFromStoresObject;
+  let userState;
+  _require = arg0;
+  let closure_1 = arg1;
+  let tmp = stateFromStoresObject(react.useState(true), 2);
   const first = tmp[0];
   dependencyMap = tmp[1];
-  const items = [applicationCommandIndexStore];
   obj = require("get initialized");
-  stateFromStoresObject = obj.useStateFromStoresObject(items, f87017);
+  const items = [applicationCommandIndexStore];
+  stateFromStoresObject = obj.useStateFromStoresObject(items, () => userState.getUserState());
   const items1 = [stateFromStoresObject, arg1, arg0, first];
   const effect = react.useEffect(() => {
-    const tmp = first1;
+    const tmp = first;
     if (tmp) {
-      let tmp2 = allowFetch2;
+      let tmp2 = closure_1;
       if (tmp2) {
-        const result = stateFromStoresObject1.result;
+        const result = stateFromStoresObject.result;
         let version;
         if (result != null) {
           version = result.version;
         }
         let fetching = !tmp6;
-        if (version !== stateFromStoresObject1.serverVersion) {
+        if (version !== stateFromStoresObject.serverVersion) {
           fetching = tmp3.fetchState.fetching;
         }
         let tmp7 = !fetching;
@@ -2171,22 +2304,402 @@ export const useUserIndexState = function useUserIndexState(arg0, arg1) {
         tmp2 = closure_0;
       }
       if (tmp2) {
-        obj = closure_0(permissionContext[15]);
+        obj = ApplicationCommandIndexActionCreators;
         const applicationCommandIndex = obj.requestApplicationCommandIndex({ type: "user" });
       }
       closure_3(false);
     }
   }, items1);
   return stateFromStoresObject;
-};
-export const useDiscoveryState = function useDiscoveryState(type, guild, commandTypes, includeFrecency) {
-  _require = type;
-  const tmp = useQueryState(type, commandTypes, includeFrecency);
+});
+let closure_39 = tmp10;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId, arg1) => {
+  let closure_3;
+  let first1;
+  let stateFromStores;
+  let tmp8;
+  _require = applicationId;
+  let closure_1 = arg1;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  obj = require("react");
+  const cResult = obj.c(9);
+  let obj2 = react;
+  const tmp4 = stateFromStores(react.useState(true), 2);
+  const first = tmp4[0];
+  dependencyMap = tmp4[1];
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp7 = applicationCommandIndexStore;
+    const items = [applicationCommandIndexStore];
+    cResult[0] = items;
+    first1 = items;
+  } else {
+    first1 = cResult[0];
+  }
+  if (cResult[1] !== applicationId) {
+    const fn = function l() {
+      return applicationCommandIndexStore.getApplicationState(applicationId);
+    };
+    cResult[1] = applicationId;
+    cResult[2] = fn;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  stateFromStores = tmpResult.useStateFromStores(first1, tmp8);
+  if (cResult[3] === arg1) {
+    if (cResult[4] === applicationId) {
+      if (cResult[5] === stateFromStores) {
+        let tmp10;
+        let tmp11;
+        if (cResult[6] === first) {
+          tmp10 = cResult[7];
+          tmp11 = cResult[8];
+        }
+        const effect = obj2.useEffect(tmp10, tmp11);
+      }
+    }
+  }
+  class S {
+    constructor() {
+      const tmp = first;
+      if (tmp) {
+        let tmp2 = closure_1;
+        if (tmp2) {
+          const result = stateFromStores.result;
+          let version;
+          if (result != null) {
+            version = result.version;
+          }
+          let fetching = !tmp6;
+          if (version !== stateFromStores.serverVersion) {
+            fetching = tmp3.fetchState.fetching;
+          }
+          let tmp7 = !fetching;
+          if (tmp7) {
+            let tmp8 = null == tmp3.fetchState.retryAfter;
+            if (!tmp8) {
+              const _Date = Date;
+              tmp8 = Date.now() >= tmp3.fetchState.retryAfter;
+            }
+            tmp7 = tmp8;
+          }
+          tmp2 = tmp7;
+        }
+        if (tmp2) {
+          tmp2 = null != applicationId;
+        }
+        if (tmp2) {
+          const obj2 = { type: "application", applicationId };
+          obj = ApplicationCommandIndexActionCreators;
+          const applicationCommandIndex = obj.requestApplicationCommandIndex(obj2);
+        }
+        closure_3(false);
+      }
+    }
+  }
+  const items1 = [arg1, applicationId, stateFromStores, first];
+  cResult[3] = arg1;
+  cResult[4] = applicationId;
+  cResult[5] = stateFromStores;
+  cResult[6] = first;
+  cResult[7] = S;
+  cResult[8] = items1;
+  tmp11 = items1;
+  tmp10 = S;
+}) : ((applicationId, arg1) => {
+  let closure_3;
+  let stateFromStores;
+  _require = applicationId;
+  let closure_1 = arg1;
+  let tmp = stateFromStores(react.useState(true), 2);
+  const first = tmp[0];
+  dependencyMap = tmp[1];
+  obj = require("get initialized");
+  const items = [applicationCommandIndexStore];
+  stateFromStores = obj.useStateFromStores(items, () => applicationCommandIndexStore.getApplicationState(applicationId));
+  const items1 = [arg1, applicationId, stateFromStores, first];
+  const effect = react.useEffect(() => {
+    const tmp = first;
+    if (tmp) {
+      let tmp2 = closure_1;
+      if (tmp2) {
+        const result = stateFromStores.result;
+        let version;
+        if (result != null) {
+          version = result.version;
+        }
+        let fetching = !tmp6;
+        if (version !== stateFromStores.serverVersion) {
+          fetching = tmp3.fetchState.fetching;
+        }
+        let tmp7 = !fetching;
+        if (tmp7) {
+          let tmp8 = null == tmp3.fetchState.retryAfter;
+          if (!tmp8) {
+            const _Date = Date;
+            tmp8 = Date.now() >= tmp3.fetchState.retryAfter;
+          }
+          tmp7 = tmp8;
+        }
+        tmp2 = tmp7;
+      }
+      if (tmp2) {
+        tmp2 = null != applicationId;
+      }
+      if (tmp2) {
+        const obj2 = { type: "application", applicationId };
+        obj = ApplicationCommandIndexActionCreators;
+        const applicationCommandIndex = obj.requestApplicationCommandIndex(obj2);
+      }
+      closure_3(false);
+    }
+  }, items1);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let applicationStates;
+  let tmp4;
+  let tmp5;
+  obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [applicationCommandIndexStore];
+    const fn = function n() {
+      return applicationStates.getApplicationStates();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let applicationStates;
+  const items = [applicationCommandIndexStore];
+  obj = get_initialized;
+  return obj.useStateFromStores(items, () => applicationStates.getApplicationStates());
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [applicationCommandIndexStore];
+    const fn = function n() {
+      return applicationCommandIndexStore.applicationIndicesVersion;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  const items = [applicationCommandIndexStore];
+  obj = get_initialized;
+  return obj.useStateFromStores(items, () => applicationCommandIndexStore.applicationIndicesVersion);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, arg1, arg2, includeFrecency) => {
+  let closure_0;
+  let commands;
+  let descriptors;
+  let loading;
+  let sectionedCommands;
+  let tmp20;
+  obj = require("react");
+  const cResult = obj.c(33);
+  ({ descriptors, commands, sectionedCommands, loading } = closure_44(channel, arg2, includeFrecency));
+  closure_44(channel, arg2, includeFrecency);
+  if (cResult[0] === channel.channel) {
+    if (cResult[1] === channel.type) {
+      let tmp6;
+      let tmp10;
+      if (cResult[2] === arg1) {
+        tmp6 = cResult[3];
+      }
+      _require = tmp6;
+      const tmp2Result = require("ApplicationCommandFrecencyHooks");
+      const topCommands = tmp2Result.useTopCommands(tmp6);
+      if (cResult[4] === tmp6) {
+        if (cResult[5] === commands) {
+          if (cResult[6] === descriptors) {
+            if (cResult[7] === loading) {
+              if (cResult[8] === includeFrecency.includeFrecency) {
+                if (cResult[9] === sectionedCommands) {
+                  if (cResult[10] === topCommands) {
+                    tmp10 = cResult[11];
+                  }
+                  return tmp10;
+                }
+              }
+            }
+          }
+        }
+      }
+      if (includeFrecency.includeFrecency) {
+        let tmp11;
+        if (0 !== topCommands.length) {
+          let tmp12;
+          let tmp13;
+          if (cResult[17] !== topCommands) {
+            class O {
+              constructor(arg0) {
+                return closure_1.includes(channel.id);
+              }
+            }
+            cResult[17] = topCommands;
+            cResult[18] = O;
+            tmp12 = O;
+          } else {
+            class O {
+              constructor(arg0) {
+                return closure_1.includes(channel.id);
+              }
+            }
+          }
+          if (cResult[19] !== tmp6) {
+            class T {
+              constructor(arg0, arg1) {
+                scoreWithoutLoadingLatest = closure_14.getScoreWithoutLoadingLatest(closure_0, channel);
+                return closure_14.getScoreWithoutLoadingLatest(closure_0, arg1) - scoreWithoutLoadingLatest;
+              }
+            }
+            cResult[19] = tmp6;
+            cResult[20] = T;
+            tmp13 = T;
+          } else {
+            class T {
+              constructor(arg0, arg1) {
+                scoreWithoutLoadingLatest = closure_14.getScoreWithoutLoadingLatest(closure_0, channel);
+                return closure_14.getScoreWithoutLoadingLatest(closure_0, arg1) - scoreWithoutLoadingLatest;
+              }
+            }
+          }
+          const found = commands.filter(tmp12);
+          const sorted = found.sort(tmp13);
+          const spliceResult = sorted.splice(0, closure_16);
+          if (0 !== spliceResult.length) {
+            class T {
+              constructor(arg0, arg1) {
+                scoreWithoutLoadingLatest = closure_14.getScoreWithoutLoadingLatest(closure_0, channel);
+                return closure_14.getScoreWithoutLoadingLatest(closure_0, arg1) - scoreWithoutLoadingLatest;
+              }
+            }
+            if (cResult[28] !== spliceResult) {
+              class T {
+                constructor(arg0, arg1) {
+                  scoreWithoutLoadingLatest = closure_14.getScoreWithoutLoadingLatest(closure_0, channel);
+                  return closure_14.getScoreWithoutLoadingLatest(closure_0, arg1) - scoreWithoutLoadingLatest;
+                }
+              }
+              tmp18[0] = require("ApplicationCommandBuiltIns").BUILT_IN_SECTIONS[constants.FRECENCY];
+              tmp18[1] = spliceResult;
+              cResult[28] = spliceResult;
+              cResult[29] = tmp18;
+            } else {
+              class T {
+                constructor(arg0, arg1) {
+                  scoreWithoutLoadingLatest = closure_14.getScoreWithoutLoadingLatest(closure_0, channel);
+                  return closure_14.getScoreWithoutLoadingLatest(closure_0, arg1) - scoreWithoutLoadingLatest;
+                }
+              }
+            }
+            if (cResult[30] === sectionedCommands) {
+              class T {
+                constructor(arg0, arg1) {
+                  scoreWithoutLoadingLatest = closure_14.getScoreWithoutLoadingLatest(closure_0, channel);
+                  return closure_14.getScoreWithoutLoadingLatest(closure_0, arg1) - scoreWithoutLoadingLatest;
+                }
+              }
+              tmp11 = { descriptors: tmp16, commands: spliceResult.concat(commands), sectionedCommands: tmp20, loading };
+              const obj2 = { descriptors: tmp16, commands: spliceResult.concat(commands), sectionedCommands: tmp20, loading };
+            }
+            const items = [tmp17];
+            HermesBuiltin.arraySpread(items, sectionedCommands, 1);
+            cResult[30] = sectionedCommands;
+            cResult[31] = tmp17;
+            cResult[32] = items;
+            tmp20 = items;
+          } else {
+            class T {
+              constructor(arg0, arg1) {
+                scoreWithoutLoadingLatest = closure_14.getScoreWithoutLoadingLatest(closure_0, channel);
+                return closure_14.getScoreWithoutLoadingLatest(closure_0, arg1) - scoreWithoutLoadingLatest;
+              }
+            }
+            const obj3 = { descriptors, commands, sectionedCommands, loading };
+            cResult[21] = commands;
+            cResult[22] = descriptors;
+            cResult[23] = loading;
+            cResult[24] = sectionedCommands;
+            cResult[25] = obj3;
+          }
+        }
+        cResult[4] = tmp6;
+        cResult[5] = commands;
+        cResult[6] = descriptors;
+        cResult[7] = loading;
+        cResult[8] = includeFrecency.includeFrecency;
+        cResult[9] = sectionedCommands;
+        cResult[10] = topCommands;
+        cResult[11] = tmp11;
+        tmp10 = tmp11;
+      }
+      if (cResult[12] === commands) {
+        class T {
+          constructor(arg0, arg1) {
+            scoreWithoutLoadingLatest = closure_14.getScoreWithoutLoadingLatest(closure_0, channel);
+            return closure_14.getScoreWithoutLoadingLatest(closure_0, arg1) - scoreWithoutLoadingLatest;
+          }
+        }
+      }
+      const obj4 = { descriptors, commands, sectionedCommands, loading };
+      cResult[12] = commands;
+      cResult[13] = descriptors;
+      cResult[14] = loading;
+      cResult[15] = sectionedCommands;
+      cResult[16] = obj4;
+      tmp11 = obj4;
+    }
+  }
+  let tmp7;
+  if ("channel" === channel.type) {
+    class T {
+      constructor(arg0, arg1) {
+        scoreWithoutLoadingLatest = closure_14.getScoreWithoutLoadingLatest(closure_0, channel);
+        return closure_14.getScoreWithoutLoadingLatest(closure_0, arg1) - scoreWithoutLoadingLatest;
+      }
+    }
+    tmp8[0] = channel.channel;
+    tmp8[1] = arg1;
+    tmp7 = tmp8;
+  }
+  cResult[0] = channel.channel;
+  cResult[1] = channel.type;
+  cResult[2] = arg1;
+  cResult[3] = tmp7;
+  tmp6 = tmp7;
+}) : ((arg0, guild, arg2, includeFrecency) => {
+  let type;
+  _require = arg0;
+  const tmp = closure_44(arg0, arg2, includeFrecency);
   const descriptors = tmp.descriptors;
   const commands = tmp.commands;
   const sectionedCommands = tmp.sectionedCommands;
   const loading = tmp.loading;
-  let items = [type, guild];
+  let items = [arg0, guild];
   const memo = loading.useMemo(() => {
     let tmp2;
     if ("channel" === type.type) {
@@ -2226,16 +2739,148 @@ export const useDiscoveryState = function useDiscoveryState(type, guild, command
     }
     return { descriptors, commands, sectionedCommands, loading };
   }, items1);
-};
-export { useQueryState };
-export const isStale = function isStale(result) {
+});
+let closure_43 = Object.freeze({ applications: { useFrecency: false, useScore: false }, commands: { useFrecency: true, useScore: true } });
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function(launcherContext, commandTypes, allowFetch) {
+  obj = react2;
+  const cResult = obj.c(15);
+  let channel;
+  if ("channel" === launcherContext.type) {
+    channel = launcherContext.channel;
+  }
+  const tmpResult = CommandPermissionContext;
+  const permissionContext = tmpResult.usePermissionContext(channel, commandTypes.commandTypes);
+  const tmp7 = closure_38(launcherContext, false !== commandTypes.applicationCommands, allowFetch.allowFetch);
+  const tmp8 = closure_39(false !== commandTypes.applicationCommands, allowFetch.allowFetch);
+  const tmp9 = closure_41();
+  closure_42();
+  closure_40(allowFetch.applicationId, allowFetch.allowFetch);
+  if (cResult[0] === false !== commandTypes.applicationCommands) {
+    if (cResult[1] === tmp9) {
+      if (cResult[2] === launcherContext) {
+        if (cResult[3] === tmp7) {
+          if (cResult[4] === commandTypes.builtIns) {
+            if (cResult[5] === commandTypes.text) {
+              if (cResult[6] === allowFetch.allowApplicationState) {
+                if (cResult[7] === allowFetch.allowEmptySections) {
+                  if (cResult[8] === allowFetch.applicationId) {
+                    if (cResult[9] === allowFetch.installOnDemand) {
+                      if (cResult[10] === allowFetch.scoreMethod) {
+                        if (cResult[11] === allowFetch.sortOptions) {
+                          if (cResult[12] === permissionContext) {
+                            let tmp12;
+                            if (cResult[13] === tmp8) {
+                              tmp12 = cResult[14];
+                            }
+                            return tmp12;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  const obj2 = { permissionContext, text: commandTypes.text, allowApplicationCommands: false !== commandTypes.applicationCommands, builtIns: commandTypes.builtIns, scoreMethod: allowFetch.scoreMethod, allowEmptySections: allowFetch.allowEmptySections, contextState: tmp7, userState: tmp8, launcherContext, applicationStates: map, sortOptions: null, singleApplicationId: null, installOnDemand: null };
+  map = tmp9;
+  const tmp13 = queryIndex;
+  if (!allowFetch.allowApplicationState) {
+    const _Map = Map;
+    const self = this;
+    const self2 = this;
+    map = new Map();
+  }
+  ({ sortOptions: obj3.sortOptions, applicationId: obj3.singleApplicationId, installOnDemand: obj3.installOnDemand } = allowFetch);
+  const tmp13Result = tmp13(obj2);
+  cResult[0] = false !== commandTypes.applicationCommands;
+  cResult[1] = tmp9;
+  cResult[2] = launcherContext;
+  cResult[3] = tmp7;
+  cResult[4] = commandTypes.builtIns;
+  cResult[5] = commandTypes.text;
+  cResult[6] = allowFetch.allowApplicationState;
+  cResult[7] = allowFetch.allowEmptySections;
+  cResult[8] = allowFetch.applicationId;
+  cResult[9] = allowFetch.installOnDemand;
+  cResult[10] = allowFetch.scoreMethod;
+  cResult[11] = allowFetch.sortOptions;
+  cResult[12] = permissionContext;
+  cResult[13] = tmp8;
+  cResult[14] = tmp13Result;
+  tmp12 = tmp13Result;
+}) : ((type, commandTypes, allowFetch) => {
+  let launcherContext;
+  let permissionContext;
+  let userState;
+  _require = type;
+  let channel;
+  if ("channel" === type.type) {
+    channel = type.channel;
+  }
+  obj = require("CommandPermissionContext");
+  permissionContext = obj.usePermissionContext(channel, commandTypes.commandTypes);
+  const allowApplicationCommands = tmp3;
+  const tmp4 = closure_38(type, false !== commandTypes.applicationCommands, allowFetch.allowFetch);
+  const contextState = tmp4;
+  const tmp5 = closure_39(false !== commandTypes.applicationCommands, allowFetch.allowFetch);
+  react = tmp5;
+  const tmp6 = closure_41();
+  let closure_7 = tmp6;
+  const tmp7 = closure_42();
+  closure_40(allowFetch.applicationId, allowFetch.allowFetch);
+  const items = [permissionContext, , , , , , , , , , , , , , ];
+  ({ text: arr[1], builtIns: arr[2] } = commandTypes);
+  items[3] = false !== commandTypes.applicationCommands;
+  ({ scoreMethod: arr[4], allowEmptySections: arr[5], sortOptions: arr[6], allowApplicationState: arr[7], applicationId: arr[8], installOnDemand: arr[9] } = allowFetch);
+  items[10] = tmp4;
+  items[11] = tmp5;
+  items[12] = type;
+  items[13] = tmp6;
+  items[14] = tmp7;
+  return react.useMemo(function() {
+    obj = { permissionContext, text: commandTypes.text, allowApplicationCommands, builtIns: commandTypes.builtIns, scoreMethod: allowFetch.scoreMethod, allowEmptySections: allowFetch.allowEmptySections, contextState, userState, launcherContext, applicationStates: map, sortOptions: null, singleApplicationId: null, installOnDemand: null };
+    const tmp = queryIndex;
+    const tmp2 = allowFetch;
+    if (allowFetch.allowApplicationState) {
+      map = closure_7;
+    } else {
+      const _Map = Map;
+      const self = this;
+      const self2 = this;
+      map = new Map();
+    }
+    ({ sortOptions: obj.sortOptions, applicationId: obj.singleApplicationId, installOnDemand: obj.installOnDemand } = tmp2);
+    return tmp(obj);
+  }, items);
+});
+let closure_44 = tmp12;
+const constants4 = { COMMAND_NAME_STARTS_WITH: 0, [0]: "COMMAND_NAME_STARTS_WITH", STARTS_WITH_COMMAND_NAME: 1, [1]: "STARTS_WITH_COMMAND_NAME", COMMAND_NAME_CONTAINS: 2, [2]: "COMMAND_NAME_CONTAINS", STARTS_WITH_COMMAND_OPTION_NAME_OR_OPTION_NAME: 3, [3]: "STARTS_WITH_COMMAND_OPTION_NAME_OR_OPTION_NAME", OPTION_NAME_CONTAINS: 4, [4]: "OPTION_NAME_CONTAINS", SECTION_NAME_STARTS_WITH: 5, [5]: "SECTION_NAME_STARTS_WITH", SECTION_NAME_CONTAINS: 6, [6]: "SECTION_NAME_CONTAINS", COMMAND_DESCRIPTION_CONTAINS: 7, [7]: "COMMAND_DESCRIPTION_CONTAINS", SECTION_DESCRIPTION_CONTAINS: 8, [8]: "SECTION_DESCRIPTION_CONTAINS", COMMAND_NAME_FUZZY_MATCHES: 9, [9]: "COMMAND_NAME_FUZZY_MATCHES", OPTION_NAME_FUZZY_MATCHES: 10, [10]: "OPTION_NAME_FUZZY_MATCHES", SECTION_NAME_FUZZY_MATCHES: 11, [11]: "SECTION_NAME_FUZZY_MATCHES", COMMAND_DESCRIPTION_FUZZY_MATCHES: 12, [12]: "COMMAND_DESCRIPTION_FUZZY_MATCHES" };
+function isStale(result) {
   result = result.result;
   let version;
   if (result != null) {
     version = result.version;
   }
   return version !== result.serverVersion;
+}
+let result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandIndexStore.tsx");
+
+export default applicationCommandIndexStore;
+export const getOrFetchApplicationCommandIndexForTarget = function getOrFetchApplicationCommandIndexForTarget() {
+  return obj(...arguments);
 };
+export const useContextIndexState = tmp8;
+export const useGuildIndexState = tmp9;
+export const useUserIndexState = tmp10;
+export const useDiscoveryState = tmp11;
+export const useQueryState = tmp12;
+export { isStale };
 export const appLauncherOnlyCompareNames = function appLauncherOnlyCompareNames(arg0, arg1) {
   const collator = applicationCommandIndexStore.collator;
   return collator.compare(arg0, arg1);

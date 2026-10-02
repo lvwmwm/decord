@@ -1,26 +1,52 @@
-// Module ID: 17699
-// Function ID: 17700
+// Module ID: 17701
+// Function ID: 17702
 // Name: LogOutDisclaimer
-// Dependencies: [21, 13995, 4832, 1115, 2781, 6010, 2]
-// Exports: default
+// Dependencies: [21, 558, 576, 13997, 4833, 1127, 2784, 6005, 2]
 
-// Module 17699 (LogOutDisclaimer)
+// Module 17701 (LogOutDisclaimer)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1115 */;
-import _modDef2781 from "module_2781" /* 2781 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6010 */;
-import ModalDisclaimer2 from "ModalDisclaimer" /* 13995 */;
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import _modDef2784 from "module_2784" /* 2784 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
+import ModalDisclaimer2 from "ModalDisclaimer" /* 13997 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/safety_flows/native/LogOutDisclaimer.tsx");
-
-export default function LogOutDisclaimer() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  let obj4;
+  let obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const ModalDisclaimer = tmp(13997).ModalDisclaimer;
+    ({ variant: "text-xs/medium", children: intl.format(_modDef2784["0DHxym"], obj4) });
+    const Text = tmp(4833).Text;
+    intl = tmp(1127).intl;
+    const tmp7 = <ModalDisclaimer>{null}</ModalDisclaimer>;
+    obj4 = {
+      handleLogOut() {
+          const obj = AuthenticationActionCreatorsDefault;
+          obj.logout("safety_flows_enter_email_screen");
+        }
+    };
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
   let intl;
   const ModalDisclaimer = ModalDisclaimer2.ModalDisclaimer;
-  ({ variant: "text-xs/medium", children: intl.format(_modDef2781["0DHxym"], obj3) });
+  ({ variant: "text-xs/medium", children: intl.format(_modDef2784["0DHxym"], obj3) });
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <ModalDisclaimer>{null}</ModalDisclaimer>;
-};
+});
+const result = size.fileFinishedImporting("modules/safety_flows/native/LogOutDisclaimer.tsx");
+
+export default tmp2;

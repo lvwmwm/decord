@@ -1,19 +1,22 @@
-// Module ID: 14327
-// Function ID: 14328
+// Module ID: 14315
+// Function ID: 14316
 // Name: AccountRemove2faSetting
-// Dependencies: [7417, 14328, 5203, 1115, 14241, 11006, 14242, 2]
+// Dependencies: [7421, 558, 14316, 5204, 1127, 14229, 10874, 14230, 2]
 
-// Module 14327 (AccountRemove2faSetting)
-import intl4 from "intl" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 14241 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 14242 */;
-import account_MFAUtils from "account/MFAUtils" /* 14328 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 14315 (AccountRemove2faSetting)
+import intl4 from "intl" /* 1127 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 14229 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 14230 */;
+import account_MFAUtils from "account/MFAUtils" /* 14316 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 let obj = {
   useTitle() {
     const intl = intl4.intl;
@@ -40,7 +43,7 @@ let obj = {
     intl3 = intl4.intl;
     show(obj);
   },
-  useIsDisabled() {
+  useIsDisabled: () => {
     const obj = account_MFAUtils;
     return null !== obj.use2FARemoveDisableReason();
   },
@@ -48,6 +51,6 @@ let obj = {
   usePredicate: SettingsAccountUtils.useIsTOTPEnabled
 };
 const pressable = SettingBuilders.createPressable(obj);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountRemove2faSetting.tsx");
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/AccountRemove2faSetting.tsx");
 
 export default pressable;

@@ -1,102 +1,333 @@
-// Module ID: 11949
-// Function ID: 11950
+// Module ID: 11857
+// Function ID: 11858
 // Name: ChatInputGuardGuildMemberVerification
-// Dependencies: [19, 17, 4825, 11444, 1074, 21, 4836, 5857, 4658, 11950, 1115, 5016, 5839, 11951, 5992, 5881, 504, 11941, 5841, 11952, 2]
+// Dependencies: [19, 17, 4826, 11320, 1086, 21, 4837, 558, 576, 5858, 4660, 11858, 1127, 5017, 5840, 11859, 5940, 5882, 504, 5843, 11860, 11835, 2]
 
-// Module 11949 (ChatInputGuardGuildMemberVerification)
+// Module 11857 (ChatInputGuardGuildMemberVerification)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1074 */;
-import intl5 from "intl" /* 1115 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5839 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5881 */;
-import ChatInputConstants from "ChatInputConstants" /* 11444 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 11941 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11950 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11951 */;
+import Constants from "Constants" /* 1086 */;
+import intl5 from "intl" /* 1127 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5017 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5840 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5882 */;
+import ChatInputConstants from "ChatInputConstants" /* 11320 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 11835 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11858 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11859 */;
+import _mod11860 from "module_11860" /* 11860 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import createStyles from "createStyles" /* 4836 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp14;
-const LottieAnimationViewDefault = tmp14(5841);
+const require = globalThis.__r;
+let guildId, importDefault;
+
+let tmp15;
+const LottieAnimationViewDefault = tmp15(5843);
 const Image = react_native.Image;
 const TextAreaCta = ChatInputConstants.TextAreaCta;
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ noticeIcon: { height: 36, width: 36, resizeMode: "contain" }, lottieAnimation: { height: 36, width: 36 } });
-const memoResult = react.memo(function ChatInputGuardGuildMemberVerification(guildId) {
-  let fn;
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let fn3;
+  let lottieAnimation;
+  let stateFromStores;
+  let tmp11;
+  let tmp27;
+  let tmp28;
+  let useReducedMotion;
+  const tmp = guildId;
+  const tmp2 = stateFromStores;
+  let obj = guildId(stateFromStores[8]);
+  const cResult = obj.c(25);
+  guildId = guildId.guildId;
+  const tmp4 = closure_8();
+  importDefault = tmp4;
+  let obj2 = guildId(stateFromStores[9]);
+  const currentUserGuildJoinRequest = obj2.useCurrentUserGuildJoinRequest(guildId);
+  let applicationStatus;
+  if (currentUserGuildJoinRequest != null) {
+    applicationStatus = currentUserGuildJoinRequest.applicationStatus;
+  }
+  if (tmp(tmp2[10]).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+    const _Symbol3 = Symbol;
+    const tmp22 = require("AssetRegistry");
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl3 = tmp(tmp2[12]).intl;
+      const stringResult = intl3.string(tmp(tmp2[12]).t.lk30cY);
+      cResult[0] = stringResult;
+      let first = stringResult;
+    } else {
+      first = cResult[0];
+    }
+    if (cResult[1] !== guildId) {
+      const fn2 = function y() {
+        const obj = AppAnalyticsUtilsDefault;
+        const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION_REJECTED };
+        obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
+        const obj3 = MemberVerificationAlertActionCreators;
+        const obj4 = { guildId, canWithdraw: false };
+        const result = obj3.openMemberVerificationRejectedAlert(obj4);
+      };
+      cResult[1] = guildId;
+      cResult[2] = fn2;
+    }
+    tmp11 = tmp22;
+  } else if (tmp(tmp2[10]).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
+    const _Symbol = Symbol;
+    const tmp13 = require("AssetRegistry");
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp17 = jsx(tmp(tmp2[16]).XSmallIcon, {});
+      cResult[3] = tmp17;
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl2 = tmp(tmp2[12]).intl;
+      const stringResult1 = intl2.string(tmp(tmp2[12]).t["5iLvSx"]);
+      cResult[4] = stringResult1;
+    }
+    if (cResult[5] !== guildId) {
+      const fn = function v() {
+        let intl;
+        const obj = AppAnalyticsUtilsDefault;
+        const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION_CONFIRMED };
+        obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
+        const obj3 = { guildId, subtitleText: intl.string(intl5.t["13tjTU"]) };
+        const openMemberVerificationCancelPendingAlert = MemberVerificationAlertActionCreators.openMemberVerificationCancelPendingAlert;
+        MemberVerificationAlertActionCreators;
+        intl = intl5.intl;
+        const result = openMemberVerificationCancelPendingAlert(obj3);
+      };
+      cResult[5] = guildId;
+      cResult[6] = fn;
+    }
+    tmp11 = tmp13;
+  } else {
+    const _Symbol4 = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      let intl = tmp(tmp2[12]).intl;
+      cResult[7] = intl.string(tmp(tmp2[12]).t.rEBKvg);
+      const stringResult2 = intl.string(tmp(tmp2[12]).t.rEBKvg);
+    }
+    if (cResult[8] !== guildId) {
+      class V {
+        constructor() {
+          const obj = AppAnalyticsUtilsDefault;
+          const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION };
+          obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
+          const obj3 = MemberVerificationModalActionCreators;
+          const result = obj3.openMemberVerificationModal(guildId);
+        }
+      }
+      cResult[8] = guildId;
+      cResult[9] = V;
+    } else {
+      class V {
+        constructor() {
+          const obj = AppAnalyticsUtilsDefault;
+          const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION };
+          obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
+          const obj3 = MemberVerificationModalActionCreators;
+          const result = obj3.openMemberVerificationModal(guildId);
+        }
+      }
+    }
+  }
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    class V {
+      constructor() {
+        const obj = AppAnalyticsUtilsDefault;
+        const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION };
+        obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
+        const obj3 = MemberVerificationModalActionCreators;
+        const result = obj3.openMemberVerificationModal(guildId);
+      }
+    }
+    const items = [AccessibilityStore];
+    class T {
+      constructor() {
+        return useReducedMotion.useReducedMotion;
+      }
+    }
+    cResult[10] = items;
+    cResult[11] = T;
+    tmp28 = T;
+    tmp27 = items;
+  } else {
+    class V {
+      constructor() {
+        const obj = AppAnalyticsUtilsDefault;
+        const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION };
+        obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
+        const obj3 = MemberVerificationModalActionCreators;
+        const result = obj3.openMemberVerificationModal(guildId);
+      }
+    }
+    tmp28 = cResult[11];
+  }
+  const tmpResult = tmp(tmp2[18]);
+  stateFromStores = tmpResult.useStateFromStores(tmp27, tmp28);
+  if (cResult[12] === tmp4.lottieAnimation) {
+    let tmp31;
+    class V {
+      constructor() {
+        const obj = AppAnalyticsUtilsDefault;
+        const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION };
+        obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
+        const obj3 = MemberVerificationModalActionCreators;
+        const result = obj3.openMemberVerificationModal(guildId);
+      }
+    }
+    if (cResult[15] === tmp11) {
+      class V {
+        constructor() {
+          const obj = AppAnalyticsUtilsDefault;
+          const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION };
+          obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
+          const obj3 = MemberVerificationModalActionCreators;
+          const result = obj3.openMemberVerificationModal(guildId);
+        }
+      }
+    }
+    if (null != tmp11) {
+      class V {
+        constructor() {
+          const obj = AppAnalyticsUtilsDefault;
+          const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION };
+          obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
+          const obj3 = MemberVerificationModalActionCreators;
+          const result = obj3.openMemberVerificationModal(guildId);
+        }
+      }
+      class T {
+        constructor() {
+          return useReducedMotion.useReducedMotion;
+        }
+      }
+      tmp31 = <Image style={null} source={tmp11} />;
+    } else {
+      class V {
+        constructor() {
+          const obj = AppAnalyticsUtilsDefault;
+          const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION };
+          obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
+          const obj3 = MemberVerificationModalActionCreators;
+          const result = obj3.openMemberVerificationModal(guildId);
+        }
+      }
+    }
+    class T {
+      constructor() {
+        return useReducedMotion.useReducedMotion;
+      }
+    }
+    cResult[15] = tmp11;
+    cResult[16] = fn3;
+    cResult[17] = tmp4.noticeIcon;
+    cResult[18] = tmp31;
+  }
+  fn3 = function k() {
+    LottieAnimationViewDefault;
+    return <tmp style={lottieAnimation.lottieAnimation} source={_mod11860} autoPlay={!stateFromStores} />;
+  };
+  cResult[12] = tmp4.lottieAnimation;
+  cResult[13] = stateFromStores;
+  cResult[14] = fn3;
+}) : ((guildId) => {
   let stringResult;
-  let tmp13Result;
+  let tmp14Result;
   let tmp7;
   let tmp8;
   let useReducedMotion;
   guildId = guildId.guildId;
   const tmp = closure_8();
   const tmp2 = guildId;
-  let obj = guildId(5857);
+  let obj = guildId(5858);
   const currentUserGuildJoinRequest = obj.useCurrentUserGuildJoinRequest(guildId);
   let applicationStatus;
   if (currentUserGuildJoinRequest != null) {
     applicationStatus = currentUserGuildJoinRequest.applicationStatus;
   }
-  if (tmp2(4658).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+  if (tmp2(4660).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
     tmp8 = AssetRegistryDefault;
-    const intl3 = tmp2(1115).intl;
-    stringResult = intl3.string(tmp2(1115).t.lk30cY);
-    fn = function _() {
-      const obj = AppAnalyticsUtilsDefault;
-      const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION_REJECTED };
-      obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
-      const obj3 = MemberVerificationAlertActionCreators;
-      const obj4 = { guildId, canWithdraw: false };
-      const result = obj3.openMemberVerificationRejectedAlert(obj4);
-    };
-  } else if (tmp2(4658).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
+    const intl3 = tmp2(1127).intl;
+    stringResult = intl3.string(tmp2(1127).t.lk30cY);
+    class I {
+      constructor() {
+        const obj = AppAnalyticsUtilsDefault;
+        const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION_REJECTED };
+        obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
+        const obj3 = MemberVerificationAlertActionCreators;
+        const obj4 = { guildId, canWithdraw: false };
+        const result = obj3.openMemberVerificationRejectedAlert(obj4);
+      }
+    }
+  } else if (tmp2(4660).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
     tmp8 = AssetRegistryDefault2;
-    tmp7 = jsx(tmp2(5992).XSmallIcon, {});
-    const intl2 = tmp2(1115).intl;
-    stringResult = intl2.string(tmp2(1115).t["5iLvSx"]);
-    fn = function _() {
-      let intl;
-      const obj = AppAnalyticsUtilsDefault;
-      const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION_CONFIRMED };
-      obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
-      const obj3 = { guildId, subtitleText: intl.string(intl5.t["13tjTU"]) };
-      const openMemberVerificationCancelPendingAlert = MemberVerificationAlertActionCreators.openMemberVerificationCancelPendingAlert;
-      MemberVerificationAlertActionCreators;
-      intl = intl5.intl;
-      const result = openMemberVerificationCancelPendingAlert(obj3);
-    };
+    tmp7 = jsx(tmp2(5940).XSmallIcon, {});
+    const intl2 = tmp2(1127).intl;
+    class I {
+      constructor() {
+        let intl;
+        const obj = AppAnalyticsUtilsDefault;
+        const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION_CONFIRMED };
+        obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
+        const obj3 = { guildId, subtitleText: intl.string(intl5.t["13tjTU"]) };
+        const openMemberVerificationCancelPendingAlert = MemberVerificationAlertActionCreators.openMemberVerificationCancelPendingAlert;
+        MemberVerificationAlertActionCreators;
+        intl = intl5.intl;
+        const result = openMemberVerificationCancelPendingAlert(obj3);
+      }
+    }
+    stringResult = tmp11(tmp2(1127).t["5iLvSx"]);
   } else {
-    let intl = tmp2(1115).intl;
-    stringResult = intl.string(tmp2(1115).t.rEBKvg);
-    fn = function _() {
-      const obj = AppAnalyticsUtilsDefault;
-      const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION };
-      obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
-      const obj3 = MemberVerificationModalActionCreators;
-      const result = obj3.openMemberVerificationModal(guildId);
-    };
+    let intl = tmp2(1127).intl;
+    stringResult = intl.string(tmp2(1127).t.rEBKvg);
+    class I {
+      constructor() {
+        const obj = AppAnalyticsUtilsDefault;
+        const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION };
+        obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
+        const obj3 = MemberVerificationModalActionCreators;
+        const result = obj3.openMemberVerificationModal(guildId);
+      }
+    }
   }
   const items = [AccessibilityStore];
   const tmp2Result = tmp2(504);
   const stateFromStores = tmp2Result.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   ChatInputGuardDefault;
   if (null != tmp8) {
-    let obj2 = { style: tmp.noticeIcon, source: tmp8 };
-    tmp13Result = tmp13(Image, obj2);
+    class I {
+      constructor() {
+        const obj = AppAnalyticsUtilsDefault;
+        const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION };
+        obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
+        const obj3 = MemberVerificationModalActionCreators;
+        const result = obj3.openMemberVerificationModal(guildId);
+      }
+    }
+    tmp14Result = <Image style={tmp.noticeIcon} source={null} />;
   } else {
-    let obj3 = { style: tmp.lottieAnimation, source: tmp2(11952), autoPlay: !stateFromStores };
-    const tmp14Result = LottieAnimationViewDefault;
-    tmp13Result = tmp13(tmp14Result, obj3);
+    let obj3 = { style: tmp.lottieAnimation, source: null, autoPlay: !stateFromStores };
+    LottieAnimationViewDefault;
+    class I {
+      constructor() {
+        const obj = AppAnalyticsUtilsDefault;
+        const obj2 = { cta_type: TextAreaCta.MEMBER_VERIFICATION };
+        obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj2);
+        const obj3 = MemberVerificationModalActionCreators;
+        const result = obj3.openMemberVerificationModal(guildId);
+      }
+    }
   }
-  const intl4 = tmp2(1115).intl;
-  return <tmp15 type="simple-action" icon={tmp13Result} message={stringResult} actionIcon={tmp7} actionLabel={intl4.string(tmp2(1115).t["r8/DT+"])} actionOnPress={fn} />;
-});
+  const intl4 = tmp2(1127).intl;
+  return <tmp16 type="simple-action" icon={tmp14Result} message={stringResult} actionIcon={tmp7} actionLabel={intl4.string(tmp2(1127).t["r8/DT+"])} actionOnPress={I} />;
+}));
 let result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardGuildMemberVerification.tsx");
 
 export default memoResult;

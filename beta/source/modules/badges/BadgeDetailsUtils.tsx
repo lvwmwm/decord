@@ -1,20 +1,20 @@
-// Module ID: 10667
-// Function ID: 10668
+// Module ID: 10656
+// Function ID: 10657
 // Name: BadgeDetailsUtils
-// Dependencies: [7637, 1374, 7629, 1115, 7638, 10659, 2011, 2]
+// Dependencies: [7641, 1380, 7633, 1127, 7642, 10648, 2017, 2]
 // Exports: getBadgeArtUrls, getBadgeCtaVariant, getBadgeDescriptionText, getBadgeProgressDisplay, getBadgeStatusText, getBadgeTitle, isLegacyDisplayBadge, isUpgradeableNitroViewer, shouldShowLegacyUnavailableNotice
 
-// Module 10667 (BadgeDetailsUtils)
-import intl5 from "intl" /* 1115 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import StringUtils from "StringUtils" /* 2011 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7637 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 7638 */;
-import BadgeUtils from "BadgeUtils" /* 10659 */;
+// Module 10656 (BadgeDetailsUtils)
+import intl5 from "intl" /* 1127 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import StringUtils from "StringUtils" /* 2017 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7641 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 7642 */;
+import BadgeUtils from "BadgeUtils" /* 10648 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const BadgeId = tmp(7629);
+const BadgeId = tmp(7633);
 const getObtainedAtFromBadge = BadgeDirectoryStore.getObtainedAtFromBadge;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const result = size.fileFinishedImporting("modules/badges/BadgeDetailsUtils.tsx");
@@ -77,8 +77,8 @@ export const getBadgeTitle = function getBadgeTitle(badge, displayTier) {
     name = displayTier.name;
   }
   if (tmp3) {
-    const intl = tmp(1115).intl;
-    name2 = intl.string(tmp(1115).t.Ipxkog);
+    const intl = tmp(1127).intl;
+    name2 = intl.string(tmp(1127).t.Ipxkog);
   } else {
     name2 = badge.name;
   }
@@ -116,29 +116,29 @@ export const getBadgeStatusText = function getBadgeStatusText(badge, arg1) {
   if (badge.owned) {
     let stringResult;
     if (badge.badge_id === BadgeId.BadgeId.APRIL_FOOLS_2026) {
-      const intl4 = tmp5(1115).intl;
-      stringResult = intl4.string(tmp5(1115).t["5LcHT0"]);
+      const intl4 = tmp5(1127).intl;
+      stringResult = intl4.string(tmp5(1127).t["5LcHT0"]);
     } else {
       const tmp5Result = BadgeIdResolution;
-      const tmp7 = tmp5Result.isLegacyBadgeId(badge.badge_id) && !badge.is_earnable && badge.badge_id !== tmp5(7629).BadgeId.STAFF;
+      const tmp7 = tmp5Result.isLegacyBadgeId(badge.badge_id) && !badge.is_earnable && badge.badge_id !== tmp5(7633).BadgeId.STAFF;
       if (!tmp7) {
         if (null != tmp) {
           let formatToPlainStringResult;
           if (badge.badge_id !== BadgeId.BadgeId.STAFF) {
-            const intl3 = tmp5(1115).intl;
+            const intl3 = tmp5(1127).intl;
             const formatToPlainString = intl3.formatToPlainString;
             const _Date = Date;
             const self = this;
             const self2 = this;
             const obj = { date };
-            const XmaiRQ = tmp5(1115).t.XmaiRQ;
+            const XmaiRQ = tmp5(1127).t.XmaiRQ;
             date = new Date(tmp);
             formatToPlainStringResult = formatToPlainString(XmaiRQ, obj);
           }
           stringResult = formatToPlainStringResult;
         }
-        const intl2 = tmp5(1115).intl;
-        formatToPlainStringResult = intl2.string(tmp5(1115).t.sTFApF);
+        const intl2 = tmp5(1127).intl;
+        formatToPlainStringResult = intl2.string(tmp5(1127).t.sTFApF);
       } else {
         stringResult = arg1;
       }
@@ -291,7 +291,7 @@ export const getBadgeProgressDisplay = function getBadgeProgressDisplay(badge, v
     prop1 = simple_icon_url1;
   }
   let progress_helper_text;
-  const isNullOrEmpty = tmp2(2011).isNullOrEmpty;
+  const isNullOrEmpty = tmp2(2017).isNullOrEmpty;
   StringUtils;
   if (first != null) {
     progress_helper_text = first.progress_helper_text;

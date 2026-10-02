@@ -1,14 +1,14 @@
-// Module ID: 8320
-// Function ID: 8321
+// Module ID: 8317
+// Function ID: 8318
 // Name: DeveloperActivityShelfStore
-// Dependencies: [1074, 8321, 504, 2021, 573, 2]
+// Dependencies: [1086, 8318, 504, 2027, 585, 2]
 
-// Module 8320 (DeveloperActivityShelfStore)
+// Module 8317 (DeveloperActivityShelfStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8321 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8318 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_6;

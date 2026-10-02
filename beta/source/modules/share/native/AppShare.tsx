@@ -1,54 +1,243 @@
-// Module ID: 17752
-// Function ID: 17753
+// Module ID: 17754
+// Function ID: 17755
 // Name: AppShare
-// Dependencies: [32, 19, 17, 6880, 13887, 502, 1074, 11907, 21, 504, 6010, 1364, 13926, 11910, 6895, 1241, 5298, 14115, 13444, 1610, 7810, 6460, 16731, 16784, 5209, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 6884, 13889, 502, 1086, 11801, 21, 558, 576, 504, 6005, 1370, 13928, 11804, 6899, 1253, 5297, 13446, 1616, 7814, 6460, 16733, 16786, 5210, 14117, 2]
 
-// Module 17752 (AppShare)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import useMountEffectDefault from "useMountEffect" /* 5298 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6010 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 6895 */;
-import Constants2 from "Constants" /* 11907 */;
-import ShareScreenDefault from "ShareScreen" /* 13444 */;
-import AccessibilityManagerDefault from "AccessibilityManager" /* 13926 */;
-import AppContainerDefault from "AppContainer" /* 14115 */;
-import ToastContainerDefault from "ToastContainer" /* 16784 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+// Module 17754 (AppShare)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import useMountEffectDefault from "useMountEffect" /* 5297 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 6899 */;
+import Constants2 from "Constants" /* 11801 */;
+import ShareScreenDefault from "ShareScreen" /* 13446 */;
+import AccessibilityManagerDefault from "AccessibilityManager" /* 13928 */;
+import AppContainerDefault from "AppContainer" /* 14117 */;
+import ToastContainerDefault from "ToastContainer" /* 16786 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 6880 */;
-import ShareStore from "ShareStore" /* 13887 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 6884 */;
+import ShareStore from "ShareStore" /* 13889 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, exitApp;
+let _require, attachments, flag, initResult, targetUserId;
 
 let c10;
 let hasOwnProperty;
 let metroRequire;
 let unpackModuleId;
+let _slicedToArray = _slicedToArray_mod;
 ({ BackHandler: hasOwnProperty, NativeModules: metroRequire } = react_native);
 const AnalyticEvents = Constants.AnalyticEvents;
 let closure_9 = Constants2.MultiAccountSwitchLocation;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-const share = "share";
-const result = size.fileFinishedImporting("modules/share/native/AppShare.tsx");
-
-export default function AppShare(targetUserId) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let authenticated;
+  let stateFromStores;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  let tmp = stateFromStores;
+  let obj = stateFromStores(576);
+  const cResult = obj.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthenticationStore];
+    const fn = function s() {
+      return authenticated.isAuthenticated();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = tmp(504);
+  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] !== stateFromStores) {
+    const fn2 = function u() {
+      const tmp = stateFromStores;
+      if (tmp) {
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.startSession(AuthenticationStore.getToken());
+        const obj2 = PlatformUtils;
+        if (obj2.isAndroid()) {
+          const NativePermissionManager = metroRequire.NativePermissionManager;
+          const notificationAuthorization = NativePermissionManager.requestNotificationAuthorization();
+        }
+      }
+    };
+    const items1 = [stateFromStores];
+    cResult[2] = stateFromStores;
+    cResult[3] = fn2;
+    cResult[4] = items1;
+    tmp9 = items1;
+    tmp8 = fn2;
+  } else {
+    tmp8 = cResult[3];
+    tmp9 = cResult[4];
+  }
+  const effect = react.useEffect(tmp8, tmp9);
+}) : (() => {
+  let authenticated;
+  let stateFromStores;
+  let obj = stateFromStores(504);
+  const items = [AuthenticationStore];
+  stateFromStores = obj.useStateFromStores(items, () => authenticated.isAuthenticated());
+  const items1 = [stateFromStores];
+  const effect = react.useEffect(() => {
+    const tmp = stateFromStores;
+    if (tmp) {
+      const obj = AuthenticationActionCreatorsDefault;
+      obj.startSession(AuthenticationStore.getToken());
+      const obj2 = PlatformUtils;
+      if (obj2.isAndroid()) {
+        const NativePermissionManager = metroRequire.NativePermissionManager;
+        const notificationAuthorization = NativePermissionManager.requestNotificationAuthorization();
+      }
+    }
+  }, items1);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((targetUserId) => {
   let closure_2;
   let first;
-  let items5;
-  let tmp20Result;
-  let tmp22;
-  _require = targetUserId;
+  let tmp10;
+  let tmp11;
+  let tmp13;
+  let tmp14;
+  let tmp5;
+  let obj = targetUserId(576);
+  const cResult = obj.c(8);
+  targetUserId = targetUserId.targetUserId;
+  let tmp2 = _slicedToArray;
+  [first, dependencyMap] = react.useState(false);
+  if (cResult[0] !== targetUserId) {
+    const tmp7 = null == targetUserId || AuthenticationStore.getId() === targetUserId;
+    cResult[0] = targetUserId;
+    cResult[1] = tmp7;
+    tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[1];
+  }
+  [r10031, _slicedToArray] = tmp2(react.useState(tmp5), 2);
+  tmp2(react.useState(tmp5), 2);
+  if (cResult[2] !== first) {
+    class A {
+      constructor() {
+        tmp = closure_1;
+        if (!tmp) {
+          tmp2 = closure_1;
+          tmp3 = closure_2;
+          obj = closure_1(closure_2[14]);
+          initResult = obj.init();
+          tmp5 = closure_2;
+          flag = true;
+          tmp6 = closure_2(true);
+        }
+        return;
+      }
+    }
+    const items = [first];
+    cResult[2] = first;
+    cResult[3] = A;
+    cResult[4] = items;
+    tmp11 = items;
+    tmp10 = A;
+  } else {
+    class A {
+      constructor() {
+        tmp = closure_1;
+        if (!tmp) {
+          tmp2 = closure_1;
+          tmp3 = closure_2;
+          obj = closure_1(closure_2[14]);
+          initResult = obj.init();
+          tmp5 = closure_2;
+          flag = true;
+          tmp6 = closure_2(true);
+        }
+        return;
+      }
+    }
+    tmp11 = cResult[4];
+  }
+  const effect = obj2.useEffect(tmp10, tmp11);
+  if (cResult[5] !== targetUserId) {
+    class A {
+      constructor() {
+        tmp = closure_1;
+        if (!tmp) {
+          tmp2 = closure_1;
+          tmp3 = closure_2;
+          obj = closure_1(closure_2[14]);
+          initResult = obj.init();
+          tmp5 = closure_2;
+          flag = true;
+          tmp6 = closure_2(true);
+        }
+        return;
+      }
+    }
+    const items1 = [targetUserId];
+    cResult[5] = targetUserId;
+    cResult[6] = tmp15;
+    cResult[7] = items1;
+    tmp14 = items1;
+    tmp13 = tmp15;
+  } else {
+    class A {
+      constructor() {
+        tmp = closure_1;
+        if (!tmp) {
+          tmp2 = closure_1;
+          tmp3 = closure_2;
+          obj = closure_1(closure_2[14]);
+          initResult = obj.init();
+          tmp5 = closure_2;
+          flag = true;
+          tmp6 = closure_2(true);
+        }
+        return;
+      }
+    }
+    tmp14 = cResult[7];
+  }
+  const effect1 = obj2.useEffect(tmp13, tmp14);
+  if (first) {
+    class A {
+      constructor() {
+        tmp = closure_1;
+        if (!tmp) {
+          tmp2 = closure_1;
+          tmp3 = closure_2;
+          obj = closure_1(closure_2[14]);
+          initResult = obj.init();
+          tmp5 = closure_2;
+          flag = true;
+          tmp6 = closure_2(true);
+        }
+        return;
+      }
+    }
+  }
+  return first;
+}) : ((targetUserId) => {
+  let closure_2;
+  let closure_3;
+  let first;
   targetUserId = targetUserId.targetUserId;
   first = undefined;
   closure_2 = undefined;
-  let closure_3;
+  _slicedToArray = undefined;
   let obj = react;
   let tmp = _slicedToArray;
   [first, closure_2] = react.useState(false);
@@ -58,7 +247,7 @@ export default function AppShare(targetUserId) {
     tmp4 = AuthenticationStore.getId() === targetUserId;
   }
   const tmpResult = tmp(useState(tmp4), 2);
-  closure_3 = tmpResult[1];
+  _slicedToArray = tmpResult[1];
   const items = [first];
   const first1 = tmpResult[0];
   const effect = obj.useEffect(() => {
@@ -71,11 +260,11 @@ export default function AppShare(targetUserId) {
   }, items);
   const items1 = [targetUserId];
   const effect1 = obj.useEffect(() => {
-    const tmp2 = null != targetUserId && authStore.getId() !== tmp;
+    const tmp2 = null != targetUserId && AuthenticationStore.getId() !== tmp;
     if (tmp2) {
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
-        const obj = targetUserId(closure_2[13]);
+        const obj = targetUserId(closure_2[15]);
         const switchAccountResult = obj.switchAccount(closure_1_0, false, constants.SHARE_EXTENSION);
         switchAccountResult.then(() => {
           closure_1_3(true);
@@ -86,37 +275,150 @@ export default function AppShare(targetUserId) {
   if (first) {
     first = first1;
   }
-  let obj2 = require("get initialized");
-  const items2 = [AuthenticationStore];
-  const stateFromStores = obj2.useStateFromStores(items2, () => authStore.isAuthenticated());
-  const items3 = [stateFromStores];
-  const effect2 = obj.useEffect(() => {
-    const tmp = stateFromStores;
-    if (tmp) {
-      const obj = AuthenticationActionCreatorsDefault;
-      obj.startSession(authStore.getToken());
-      const obj2 = stateFromStores(dependencyMap[11]);
-      if (obj2.isAndroid()) {
-        const NativePermissionManager = closure_2_6.NativePermissionManager;
-        const notificationAuthorization = NativePermissionManager.requestNotificationAuthorization();
-      }
+  return first;
+});
+const share = "share";
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((attachments) => {
+  let exitApp;
+  let items;
+  _require = attachments;
+  const tmp = _require;
+  const tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(14);
+  const tmp4 = closure_13(attachments);
+  closure_12();
+  if (cResult[0] === attachments.attachments.length) {
+    let tmp6;
+    let tmp7;
+    let tmp10;
+    let tmp14Result;
+    if (cResult[1] === attachments.text) {
+      tmp6 = cResult[2];
+      tmp7 = cResult[3];
     }
-  }, items3);
-  const items4 = [targetUserId.attachments.length, targetUserId.text];
-  const effect3 = obj.useEffect(() => {
-    let tmp3 = null != targetUserId.text;
+    const effect = react.useEffect(tmp6, tmp7);
+    if (cResult[4] !== attachments.attachments) {
+      const fn2 = function h() {
+        attachments = attachments.attachments;
+        const length = attachments.attachments.length;
+        const mapped = attachments.map((mimeType) => {
+          let str = mimeType.mimeType;
+          if (str == null) {
+            str = "unknown";
+          }
+          return str;
+        });
+        const obj = TTIAnalyticsUtils;
+        obj.trackAppUIViewed("share", { share_num_attachments: length, share_attachment_mimetypes: mapped });
+      };
+      cResult[4] = attachments.attachments;
+      cResult[5] = fn2;
+      tmp10 = fn2;
+    } else {
+      tmp10 = cResult[5];
+    }
+    useMountEffectDefault(tmp10);
+    if (cResult[6] === tmp4) {
+      let tmp13;
+      let tmp22;
+      let tmp21;
+      let tmp20;
+      let tmp28;
+      if (cResult[7] === attachments) {
+        tmp13 = cResult[8];
+      }
+      const _Symbol = Symbol;
+      let str = "react.memo_cache_sentinel";
+      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj2 = { appEntryKey: share };
+        const tmp25 = closure_10(tmp(16733).ActionSheetContainer, obj2);
+        const tmp26 = closure_10(ToastContainerDefault, {});
+        const tmp27 = closure_10(tmp(5210).AlertModalContainer, {});
+        cResult[9] = tmp25;
+        cResult[10] = tmp26;
+        cResult[11] = tmp27;
+        tmp22 = tmp27;
+        tmp21 = tmp26;
+        tmp20 = tmp25;
+      } else {
+        tmp20 = cResult[9];
+        tmp21 = cResult[10];
+        tmp22 = cResult[11];
+      }
+      if (cResult[12] !== tmp13) {
+        const obj3 = { appEntryKey: share, children: items };
+        items = [tmp13, tmp20, tmp21, tmp22];
+        const tmp31 = closure_11(AppContainerDefault, obj3);
+        cResult[12] = tmp13;
+        cResult[13] = tmp31;
+        tmp28 = tmp31;
+      } else {
+        tmp28 = cResult[13];
+      }
+      return tmp28;
+    }
+    if (tmp4) {
+      const obj4 = { appEntryKey: share, sharedContent: attachments, onClose: exitApp };
+      const tmp11Result = ShareScreenDefault;
+      const tmpResult = tmp(1616);
+      if (tmpResult.isMetaQuest()) {
+        exitApp = tmp11(7814).close;
+      } else {
+        exitApp = closure_5.exitApp;
+      }
+      tmp14Result = tmp14(tmp11Result, obj4);
+    } else {
+      tmp14Result = tmp14(tmp(6460).SceneLoadingIndicator, {});
+    }
+    cResult[6] = tmp4;
+    cResult[7] = attachments;
+    cResult[8] = tmp14Result;
+    tmp13 = tmp14Result;
+  }
+  const fn = function s() {
+    let tmp3 = null != attachments.text;
     const track = AnalyticsUtilsDefault.track;
     const EXTERNAL_SHARE_OPENED = AnalyticEvents.EXTERNAL_SHARE_OPENED;
     AnalyticsUtilsDefault;
     if (tmp3) {
       tmp3 = tmp2.text.length > 0;
     }
-    const obj = { has_content: tmp3, has_attachment: targetUserId.attachments.length > 0 };
+    const obj = { has_content: tmp3, has_attachment: attachments.attachments.length > 0 };
     track(EXTERNAL_SHARE_OPENED, obj);
-  }, items4);
+  };
+  const items1 = [attachments.attachments.length, attachments.text];
+  cResult[0] = attachments.attachments.length;
+  cResult[1] = attachments.text;
+  cResult[2] = fn;
+  cResult[3] = items1;
+  tmp7 = items1;
+  tmp6 = fn;
+}) : ((attachments) => {
+  let exitApp;
+  let items1;
+  let tmp10Result;
+  let tmp11;
+  let tmp13;
+  _require = attachments;
+  const tmp = closure_13(attachments);
+  const tmp2 = closure_12();
+  const items = [attachments.attachments.length, attachments.text];
+  const effect = react.useEffect(() => {
+    let tmp3 = null != attachments.text;
+    const track = AnalyticsUtilsDefault.track;
+    const EXTERNAL_SHARE_OPENED = AnalyticEvents.EXTERNAL_SHARE_OPENED;
+    AnalyticsUtilsDefault;
+    if (tmp3) {
+      tmp3 = tmp2.text.length > 0;
+    }
+    const obj = { has_content: tmp3, has_attachment: attachments.attachments.length > 0 };
+    track(EXTERNAL_SHARE_OPENED, obj);
+  }, items);
   useMountEffectDefault(() => {
-    const attachments = targetUserId.attachments;
-    const length = targetUserId.attachments.length;
+    attachments = attachments.attachments;
+    const length = attachments.attachments.length;
     const mapped = attachments.map((mimeType) => {
       let str = mimeType.mimeType;
       if (str == null) {
@@ -127,24 +429,30 @@ export default function AppShare(targetUserId) {
     const obj = TTIAnalyticsUtils;
     obj.trackAppUIViewed("share", { share_num_attachments: length, share_attachment_mimetypes: mapped });
   });
-  const obj3 = { appEntryKey: share, children: items5 };
-  const tmp17 = closure_11;
-  const tmp18 = AppContainerDefault;
-  if (first) {
-    const obj4 = { appEntryKey: share, sharedContent: targetUserId, onClose: exitApp };
-    const tmp15Result = ShareScreenDefault;
-    const tmp10Result = require("MetaQuestUtils");
-    if (tmp10Result.isMetaQuest()) {
-      exitApp = tmp15(7810).close;
+  let obj = { appEntryKey: share, children: items1 };
+  const tmp7 = closure_11;
+  const tmp8 = AppContainerDefault;
+  if (tmp) {
+    const obj2 = { appEntryKey: share, sharedContent: attachments, onClose: exitApp };
+    const tmp4Result = ShareScreenDefault;
+    const obj3 = require("MetaQuestUtils");
+    const tmp15 = _require;
+    if (obj3.isMetaQuest()) {
+      exitApp = tmp4(7814).close;
     } else {
-      exitApp = exitApp.exitApp;
+      exitApp = closure_5.exitApp;
     }
-    tmp20Result = tmp20(tmp15Result, obj4);
-    tmp22 = tmp20;
+    tmp10Result = tmp10(tmp4Result, obj2);
+    tmp11 = tmp15;
+    tmp13 = tmp10;
   } else {
-    tmp20Result = tmp20(tmp10(6460).SceneLoadingIndicator, {});
-    tmp22 = tmp20;
+    tmp11 = _require;
+    tmp10Result = tmp10(require("SceneLoadingIndicator").SceneLoadingIndicator, {});
+    tmp13 = tmp10;
   }
-  items5 = [tmp20Result, tmp22(require("MainShared").ActionSheetContainer, { appEntryKey: share }), tmp22(ToastContainerDefault, {}), tmp22(require("AlertModal").AlertModalContainer, {})];
-  return tmp17(tmp18, obj3);
-};
+  items1 = [tmp10Result, tmp13(tmp11(16733).ActionSheetContainer, { appEntryKey: share }), tmp13(ToastContainerDefault, {}), tmp13(tmp11(5210).AlertModalContainer, {})];
+  return tmp7(tmp8, obj);
+});
+const result = size.fileFinishedImporting("modules/share/native/AppShare.tsx");
+
+export default tmp6;

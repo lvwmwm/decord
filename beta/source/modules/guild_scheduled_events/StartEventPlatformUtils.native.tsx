@@ -1,19 +1,19 @@
-// Module ID: 9267
-// Function ID: 9268
+// Module ID: 9245
+// Function ID: 9246
 // Name: StartEventPlatformUtils
-// Dependencies: [5, 2045, 4859, 4655, 2051, 1074, 38, 7841, 7846, 5723, 1101, 2]
+// Dependencies: [5, 2051, 4860, 4657, 2057, 1086, 38, 7845, 7850, 5724, 1113, 2]
 // Exports: navigateToEvent, postStartActions
 
-// Module 9267 (StartEventPlatformUtils)
+// Module 9245 (StartEventPlatformUtils)
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 1074 */;
-import router_utils from "router_utils" /* 1101 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;
-import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 7841 */;
+import Constants from "Constants" /* 1086 */;
+import router_utils from "router_utils" /* 1113 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
+import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 7845 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -38,7 +38,7 @@ let obj = function _navigateToEvent() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -92,7 +92,7 @@ let obj = function _navigateToEvent() {
                 }
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           }
         } else if (1 === c4) {

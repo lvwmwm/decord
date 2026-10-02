@@ -1,21 +1,21 @@
-// Module ID: 8594
-// Function ID: 8595
+// Module ID: 8591
+// Function ID: 8592
 // Name: Future
 // Dependencies: [2]
 // Exports: Future
 
-// Module 8594 (Future)
+// Module 8591 (Future)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/Future.tsx");
 
 export function Future() {
-  const f87037 = (resolve, reject) => {
+  const f97564 = (resolve, reject) => {
     obj.resolve = resolve;
     obj.reject = reject;
   };
   const obj = Object.create(new.target.prototype);
-  obj.promise = new Promise(f87037);
-  new Promise(f87037);
+  obj.promise = new Promise(f97564);
+  new Promise(f97564);
   return obj;
 }

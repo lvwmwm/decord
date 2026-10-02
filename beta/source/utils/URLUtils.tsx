@@ -1,15 +1,15 @@
-// Module ID: 1366
-// Function ID: 1367
+// Module ID: 1372
+// Function ID: 1373
 // Name: URLUtils
-// Dependencies: [1074, 1367, 1368, 1366, 1370, 12, 2]
+// Dependencies: [1086, 1373, 1374, 1372, 1376, 12, 2]
 
-// Module 1366 (URLUtils)
+// Module 1372 (URLUtils)
 import _modDef12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1074 */;
-import URLUtilsDefault from "URLUtils" /* 1366 */;
-import urlParseAll from "urlParse" /* 1368 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ip from "ip" /* 1367 */;
+import Constants from "Constants" /* 1086 */;
+import URLUtilsDefault from "URLUtils" /* 1372 */;
+import urlParseAll from "urlParse" /* 1374 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import ip from "ip" /* 1373 */;
 import size from "module_2" /* 2 */;
 
 function isDiscordProxiedAssetUrl(url, arg1, arg2) {

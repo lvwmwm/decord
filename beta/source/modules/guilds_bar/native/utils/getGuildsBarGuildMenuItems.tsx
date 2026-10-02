@@ -1,21 +1,21 @@
-// Module ID: 15922
-// Function ID: 15923
+// Module ID: 15923
+// Function ID: 15924
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 2067, 5017, 1074, 9605, 6502, 1115, 13505, 1981, 9067, 6540, 6798, 13452, 11866, 4800, 9600, 11867, 6535, 2]
+// Dependencies: [5, 2073, 5018, 1086, 9622, 6503, 1127, 13507, 1987, 9044, 6541, 6799, 13454, 11759, 4801, 10819, 11760, 6536, 2]
 // Exports: default
 
-// Module 15922 (getGuildsBarGuildMenuItems)
-import Constants from "Constants" /* 1074 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11866 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11867 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 13452 */;
+// Module 15923 (getGuildsBarGuildMenuItems)
+import Constants from "Constants" /* 1086 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6536 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6541 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11759 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11760 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 13454 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5018 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -49,7 +49,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -79,7 +79,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
               const items = [closure_128_0];
               value.default(items, constants.GUILD_LIST);
               paths = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp10) {
             paths = 3;
@@ -119,8 +119,8 @@ export default function getGuildsBarGuildMenuItems(guildId) {
     const obj5 = { iconSource: null, label: null, action: null };
     if (isMutedResult) {
       obj5.iconSource = AssetRegistryDefault2;
-      const intl5 = tmp(1115).intl;
-      obj5.label = intl5.string(tmp(1115).t.De0BTC);
+      const intl5 = tmp(1127).intl;
+      obj5.label = intl5.string(tmp(1127).t.De0BTC);
       obj5.action = function action() {
         if (null != guildId) {
           const obj = NotificationSettingsModalActionCreatorsDefault;
@@ -130,13 +130,13 @@ export default function getGuildsBarGuildMenuItems(guildId) {
       splice(1, 0, obj5);
     } else {
       obj5.iconSource = AssetRegistryDefault;
-      const intl4 = tmp(1115).intl;
-      obj5.label = intl4.string(tmp(1115).t.vRzp7P);
+      const intl4 = tmp(1127).intl;
+      obj5.label = intl4.string(tmp(1127).t.vRzp7P);
       obj5.action = function action() {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         ActionSheetActionCreatorsDefault;
         const obj = { guildId };
-        const tmp2 = asyncRequire(9600, dependencyMap.paths);
+        const tmp2 = asyncRequire(10819, dependencyMap.paths);
         openLazy(tmp2, "muteSettings" + guildId, obj);
       };
       splice(1, 0, obj5);

@@ -1,106 +1,62 @@
 // Module ID: 5544
 // Function ID: 5545
-// Dependencies: [5543]
+// Dependencies: [5532]
 
 // Module 5544
-import _modDef5543 from "module_5543" /* 5543 */;
+import _modDef5532 from "module_5532" /* 5532 */;
 
-
-export default {
-  read(buffer, sum) {
-    let str6;
-    let tmp13;
-    let tmp15;
-    let tmp17;
-    const obj = _modDef5543;
-    const shortAt = obj.getShortAt(buffer, sum);
-    let tmp4;
-    if (15 <= shortAt) {
-      const tmpResult = _modDef5543;
-      const byteAt = tmpResult.getByteAt(buffer, sum + 14);
-      const _HermesInternal = HermesInternal;
-      tmp4 = { value: byteAt, description: "" + byteAt + "px" };
-      const obj2 = { value: byteAt, description: "" + byteAt + "px" };
+const typeSizes = { 1: 1, 2: 1, 3: 2, 4: 4, 5: 8, 7: 1, 9: 4, 10: 8, 13: 4 };
+const obj2 = { BYTE: 1, ASCII: 2, SHORT: 3, LONG: 4, RATIONAL: 5, UNDEFINED: 7, SLONG: 9, SRATIONAL: 10, IFD: 13 };
+const obj3 = {
+  getAsciiValue(items) {
+    return items.map((item) => String.fromCharCode(item));
+  },
+  getByteAt(getUint8, sum) {
+    return getUint8.getUint8(sum);
+  },
+  getAsciiAt(getUint8, sum) {
+    return getUint8.getUint8(sum);
+  },
+  getShortAt(dataView, sum, byteOrder) {
+    return dataView.getUint16(sum, byteOrder === _modDef5532.LITTLE_ENDIAN);
+  },
+  getLongAt(dataView, sum, byteOrder) {
+    return dataView.getUint32(sum, byteOrder === _modDef5532.LITTLE_ENDIAN);
+  },
+  getRationalAt(getUint32, sum, arg2) {
+    const items = [getUint32.getUint32(sum, arg2 === _modDef5532.LITTLE_ENDIAN), ];
+    sum = sum + 4;
+    items[1] = getUint32.getUint32(sum, arg2 === _modDef5532.LITTLE_ENDIAN);
+    return items;
+  },
+  getUndefinedAt(getUint8, sum) {
+    return getUint8.getUint8(sum);
+  },
+  getSlongAt(getInt32, sum, arg2) {
+    return getInt32.getInt32(sum, arg2 === _modDef5532.LITTLE_ENDIAN);
+  },
+  getSrationalAt(getInt32, sum, arg2) {
+    const items = [getInt32.getInt32(sum, arg2 === _modDef5532.LITTLE_ENDIAN), ];
+    sum = sum + 4;
+    items[1] = getInt32.getInt32(sum, arg2 === _modDef5532.LITTLE_ENDIAN);
+    return items;
+  },
+  getIfdPointerAt(getUint32, sum, arg2) {
+    return getUint32.getUint32(sum, arg2 === _modDef5532.LITTLE_ENDIAN);
+  },
+  typeSizes,
+  tagTypes: obj2,
+  getTypeSize(LONG) {
+    if (undefined === obj2[LONG]) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("No such type found.");
+      throw error;
+    } else {
+      return obj[tmp[LONG]];
     }
-    let tmp7;
-    if (16 <= shortAt) {
-      const tmpResult7 = _modDef5543;
-      const byteAt1 = tmpResult7.getByteAt(buffer, sum + 15);
-      const _HermesInternal2 = HermesInternal;
-      tmp7 = { value: byteAt1, description: "" + byteAt1 + "px" };
-      const obj3 = { value: byteAt1, description: "" + byteAt1 + "px" };
-    }
-    let tmp10;
-    if (9 <= shortAt) {
-      const tmpResult8 = _modDef5543;
-      const byteAt2 = tmpResult8.getByteAt(buffer, sum + 7);
-      const tmpResult9 = _modDef5543;
-      const byteAt3 = tmpResult9.getByteAt(buffer, sum + 7 + 1);
-      tmp10 = { value: 256 * byteAt2 + byteAt3, description: `${tmp11}.${tmp12}` };
-      const obj4 = { value: 256 * byteAt2 + byteAt3, description: `${tmp11}.${tmp12}` };
-    }
-    const obj5 = { "JFIF Version": tmp10, "Resolution Unit": tmp13, XResolution: tmp15, YResolution: tmp17, "JFIF Thumbnail Width": tmp4, "JFIF Thumbnail Height": tmp7 };
-    tmp13 = undefined;
-    if (10 <= shortAt) {
-      const tmpResult10 = _modDef5543;
-      const byteAt4 = tmpResult10.getByteAt(buffer, sum + 9);
-      const obj6 = { value: byteAt4, description: str6 };
-      str6 = "None";
-      if (0 !== byteAt4) {
-        let str7 = "inches";
-        if (1 !== byteAt4) {
-          let str8 = "Unknown";
-          if (2 === byteAt4) {
-            str8 = "cm";
-          }
-          str7 = str8;
-        }
-        str6 = str7;
-      }
-      tmp13 = obj6;
-    }
-    tmp15 = undefined;
-    if (12 <= shortAt) {
-      const tmpResult11 = _modDef5543;
-      const shortAt1 = tmpResult11.getShortAt(buffer, sum + 10);
-      tmp15 = { value: shortAt1, description: "" + shortAt1 };
-      const obj7 = { value: shortAt1, description: "" + shortAt1 };
-    }
-    tmp17 = undefined;
-    if (14 <= shortAt) {
-      const tmpResult12 = _modDef5543;
-      const shortAt2 = tmpResult12.getShortAt(buffer, sum + 12);
-      tmp17 = { value: shortAt2, description: "" + shortAt2 };
-      const obj8 = { value: shortAt2, description: "" + shortAt2 };
-    }
-    if (undefined !== tmp4) {
-      if (undefined !== tmp7) {
-        const result = 3 * tmp4.value * tmp7.value;
-        let tmp20;
-        if (0 !== result) {
-          if (16 + result <= shortAt) {
-            buffer = buffer.buffer;
-            tmp20 = { value: buffer.slice(sum + 16, sum + 16 + result), description: "<24-bit RGB pixel data>" };
-            const obj10 = { value: buffer.slice(sum + 16, sum + 16 + result), description: "<24-bit RGB pixel data>" };
-          }
-        }
-        if (tmp20) {
-          obj5["JFIF Thumbnail"] = tmp20;
-        }
-      }
-    }
-    const keys = Object.keys();
-    if (keys !== undefined) {
-      while (keys[16] !== undefined) {
-        if (undefined !== obj5[tmp22]) {
-          continue;
-        } else {
-          delete obj9[tmp23];
-          continue;
-        }
-        continue;
-      }
-    }
-    return obj5;
   }
 };
+
+export default obj3;

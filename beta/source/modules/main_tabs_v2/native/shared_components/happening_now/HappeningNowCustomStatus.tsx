@@ -1,25 +1,25 @@
-// Module ID: 15709
-// Function ID: 15710
+// Module ID: 15706
+// Function ID: 15707
 // Name: HappeningNowCustomStatus
-// Dependencies: [5, 32, 19, 17, 4876, 14841, 1085, 21, 4836, 576, 563, 5084, 9188, 15710, 15711, 10339, 9060, 14842, 1364, 10353, 1177, 4832, 2]
-// Exports: CustomStatusActivityCard
+// Dependencies: [5, 32, 19, 17, 4877, 14829, 1097, 21, 4837, 588, 558, 576, 573, 5085, 9165, 15707, 15708, 10382, 9038, 1370, 10396, 1189, 14830, 4833, 2]
 
-// Module 15709 (HappeningNowCustomStatus)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ActivityEmojiDefault from "ActivityEmoji" /* 10353 */;
+// Module 15706 (HappeningNowCustomStatus)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1097 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import ActivityEmojiDefault from "ActivityEmoji" /* 10396 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PresenceStore from "PresenceStore" /* 4876 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 14841 */;
+import PresenceStore from "PresenceStore" /* 4877 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 14829 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c2, closure_2, dependencyMap;
+let c2, closure_0, closure_2, dependencyMap, user;
 
 let closure_12;
 let closure_14;
@@ -72,10 +72,665 @@ let closure_18 = createStyles.createStyles((arg0) => {
   size2 = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
   return obj;
 });
-let size = size_mod;
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCustomStatus.tsx");
-
-export const CustomStatusActivityCard = function CustomStatusActivityCard(user) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+  let activity;
+  let closure_4;
+  let closure_5;
+  let first;
+  let guildId;
+  let isMobileOnline;
+  let isVROnline;
+  let obj8;
+  let onPress;
+  let panelVariant;
+  let status;
+  let tmp10;
+  let userTitle;
+  const tmp = user;
+  const tmp2 = dependencyMap;
+  let obj = user(576);
+  const cResult = obj.c(46);
+  user = user.user;
+  ({ guildId, activity } = user);
+  ({ userTitle, onPress, panelVariant } = user);
+  dependencyMap = closure_18(null == activity.emoji);
+  let obj2 = react;
+  const tmp5 = closure_18(null == activity.emoji);
+  [r10028, _asyncToGenerator] = _slicedToArray(react.useState(undefined), 2);
+  const tmp6 = _slicedToArray(react.useState(undefined), 2);
+  [_slicedToArray, react] = react.useState(undefined);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [PresenceStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== user.id) {
+    const fn = function p() {
+      const status = PresenceStore.getStatus(user.id);
+      let tmp3 = null;
+      if (status !== StatusTypes.OFFLINE) {
+        tmp3 = status;
+      }
+      const obj2 = { status: tmp3, isMobileOnline: PresenceStore.isMobileOnline(user.id), isVROnline: PresenceStore.isVROnline(user.id) };
+      return obj2;
+    };
+    cResult[1] = user.id;
+    cResult[2] = fn;
+    tmp10 = fn;
+  } else {
+    tmp10 = cResult[2];
+  }
+  const tmpResult = tmp(573);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp10);
+  ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
+  if (cResult[3] === guildId) {
+    let tmp12;
+    let tmp15;
+    let tmp18;
+    let tmp17;
+    if (cResult[4] === user.id) {
+      tmp12 = cResult[5];
+    }
+    const tmp14 = activity(5085)(tmp12);
+    if (cResult[6] !== tmp14) {
+      let obj3 = { displayNameStyles: tmp14 };
+      cResult[6] = tmp14;
+      cResult[7] = obj3;
+      tmp15 = obj3;
+    } else {
+      tmp15 = cResult[7];
+    }
+    const tmpResult3 = tmp(9165);
+    const displayNameStylesFont = tmpResult3.useDisplayNameStylesFont(tmp15);
+    if (cResult[8] !== activity.emoji) {
+      class K {
+        constructor() {
+          closure_0 = closure_3(async (arg0, value) => {
+            let obj2;
+            let obj6;
+            let v3;
+            if (c3 === 2) {
+              c3 = 3;
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp2 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                return { value: "IconComponent", done: null };
+              }
+            } else {
+              try {
+                let c1;
+                let emojiSource;
+                let closure_1;
+                c3 = 2;
+                if (0 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj4 = { value, done: true };
+                    return obj4;
+                  } else {
+                    c1 = 0;
+                    emojiSource = undefined;
+                    closure_1 = undefined;
+                    closure_2 = undefined;
+                    if (null != c1.emoji) {
+                      c2 = 1;
+                      c3 = 1;
+                      const obj5 = { value: obj6.getEmojiSource(c1.emoji), done: false };
+                      obj6 = emojiSource(closure_2_2[15]);
+                      return obj5;
+                    }
+                  }
+                } else if (1 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj7 = { value, done: true };
+                    return obj7;
+                  } else {
+                    emojiSource = value;
+                    const obj8 = { emoji: c1.emoji, emojiSource };
+                    c2 = 2;
+                    c3 = 1;
+                    const obj9 = { value: obj2.getEmojiDominantColors(obj8), done: false };
+                    obj2 = emojiSource(closure_2_2[16]);
+                    return obj9;
+                  }
+                } else if (arg0 === 1) {
+                  c3 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 3;
+                  const obj = { value, done: true };
+                  return obj;
+                } else {
+                  closure_1 = value;
+                  if (closure_1.length > 0) {
+                    closure_2 = closure_1[0];
+                    const _HermesInternal = HermesInternal;
+                    c3("rgba(" + closure_2[0] + ", " + closure_2[1] + ", " + closure_2[2] + ", 0.16)");
+                  }
+                  closure_1_5(emojiSource);
+                }
+                c3 = 3;
+                return { value: "IconComponent", done: null };
+              } catch (tmp27) {
+                c3 = 3;
+                throw tmp27;
+              }
+            }
+          });
+          tmp = (function loadEmoji() {
+            return closure_0(...arguments);
+          })();
+          return;
+        }
+      }
+      items1 = [activity.emoji];
+      cResult[8] = activity.emoji;
+      cResult[9] = K;
+      cResult[10] = items1;
+      tmp18 = items1;
+      tmp17 = K;
+    } else {
+      class K {
+        constructor() {
+          closure_0 = closure_3(async (arg0, value) => {
+            let obj2;
+            let obj6;
+            let v3;
+            if (c3 === 2) {
+              c3 = 3;
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp2 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                return { value: "IconComponent", done: null };
+              }
+            } else {
+              try {
+                let c1;
+                let emojiSource;
+                let closure_1;
+                c3 = 2;
+                if (0 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj4 = { value, done: true };
+                    return obj4;
+                  } else {
+                    c1 = 0;
+                    emojiSource = undefined;
+                    closure_1 = undefined;
+                    closure_2 = undefined;
+                    if (null != c1.emoji) {
+                      c2 = 1;
+                      c3 = 1;
+                      const obj5 = { value: obj6.getEmojiSource(c1.emoji), done: false };
+                      obj6 = emojiSource(closure_2_2[15]);
+                      return obj5;
+                    }
+                  }
+                } else if (1 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj7 = { value, done: true };
+                    return obj7;
+                  } else {
+                    emojiSource = value;
+                    const obj8 = { emoji: c1.emoji, emojiSource };
+                    c2 = 2;
+                    c3 = 1;
+                    const obj9 = { value: obj2.getEmojiDominantColors(obj8), done: false };
+                    obj2 = emojiSource(closure_2_2[16]);
+                    return obj9;
+                  }
+                } else if (arg0 === 1) {
+                  c3 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 3;
+                  const obj = { value, done: true };
+                  return obj;
+                } else {
+                  closure_1 = value;
+                  if (closure_1.length > 0) {
+                    closure_2 = closure_1[0];
+                    const _HermesInternal = HermesInternal;
+                    c3("rgba(" + closure_2[0] + ", " + closure_2[1] + ", " + closure_2[2] + ", 0.16)");
+                  }
+                  closure_1_5(emojiSource);
+                }
+                c3 = 3;
+                return { value: "IconComponent", done: null };
+              } catch (tmp27) {
+                c3 = 3;
+                throw tmp27;
+              }
+            }
+          });
+          tmp = (function loadEmoji() {
+            return closure_0(...arguments);
+          })();
+          return;
+        }
+      }
+      tmp18 = cResult[10];
+    }
+    const effect = obj2.useEffect(tmp17, tmp18);
+    if (null != activity.emoji) {
+      class K {
+        constructor() {
+          closure_0 = closure_3(async (arg0, value) => {
+            let obj2;
+            let obj6;
+            let v3;
+            if (c3 === 2) {
+              c3 = 3;
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp2 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                return { value: "IconComponent", done: null };
+              }
+            } else {
+              try {
+                let c1;
+                let emojiSource;
+                let closure_1;
+                c3 = 2;
+                if (0 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj4 = { value, done: true };
+                    return obj4;
+                  } else {
+                    c1 = 0;
+                    emojiSource = undefined;
+                    closure_1 = undefined;
+                    closure_2 = undefined;
+                    if (null != c1.emoji) {
+                      c2 = 1;
+                      c3 = 1;
+                      const obj5 = { value: obj6.getEmojiSource(c1.emoji), done: false };
+                      obj6 = emojiSource(closure_2_2[15]);
+                      return obj5;
+                    }
+                  }
+                } else if (1 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj7 = { value, done: true };
+                    return obj7;
+                  } else {
+                    emojiSource = value;
+                    const obj8 = { emoji: c1.emoji, emojiSource };
+                    c2 = 2;
+                    c3 = 1;
+                    const obj9 = { value: obj2.getEmojiDominantColors(obj8), done: false };
+                    obj2 = emojiSource(closure_2_2[16]);
+                    return obj9;
+                  }
+                } else if (arg0 === 1) {
+                  c3 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 3;
+                  const obj = { value, done: true };
+                  return obj;
+                } else {
+                  closure_1 = value;
+                  if (closure_1.length > 0) {
+                    closure_2 = closure_1[0];
+                    const _HermesInternal = HermesInternal;
+                    c3("rgba(" + closure_2[0] + ", " + closure_2[1] + ", " + closure_2[2] + ", 0.16)");
+                  }
+                  closure_1_5(emojiSource);
+                }
+                c3 = 3;
+                return { value: "IconComponent", done: null };
+              } catch (tmp27) {
+                c3 = 3;
+                throw tmp27;
+              }
+            }
+          });
+          tmp = (function loadEmoji() {
+            return closure_0(...arguments);
+          })();
+          return;
+        }
+      }
+    }
+    const tmpResult4 = tmp(10382);
+    const gameMentionsAsPlainText = tmpResult4.useGameMentionsAsPlainText(activity.state);
+    if (cResult[11] !== status) {
+      class K {
+        constructor() {
+          closure_0 = closure_3(async (arg0, value) => {
+            let obj2;
+            let obj6;
+            let v3;
+            if (c3 === 2) {
+              c3 = 3;
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp2 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                return { value: "IconComponent", done: null };
+              }
+            } else {
+              try {
+                let c1;
+                let emojiSource;
+                let closure_1;
+                c3 = 2;
+                if (0 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj4 = { value, done: true };
+                    return obj4;
+                  } else {
+                    c1 = 0;
+                    emojiSource = undefined;
+                    closure_1 = undefined;
+                    closure_2 = undefined;
+                    if (null != c1.emoji) {
+                      c2 = 1;
+                      c3 = 1;
+                      const obj5 = { value: obj6.getEmojiSource(c1.emoji), done: false };
+                      obj6 = emojiSource(closure_2_2[15]);
+                      return obj5;
+                    }
+                  }
+                } else if (1 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj7 = { value, done: true };
+                    return obj7;
+                  } else {
+                    emojiSource = value;
+                    const obj8 = { emoji: c1.emoji, emojiSource };
+                    c2 = 2;
+                    c3 = 1;
+                    const obj9 = { value: obj2.getEmojiDominantColors(obj8), done: false };
+                    obj2 = emojiSource(closure_2_2[16]);
+                    return obj9;
+                  }
+                } else if (arg0 === 1) {
+                  c3 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 3;
+                  const obj = { value, done: true };
+                  return obj;
+                } else {
+                  closure_1 = value;
+                  if (closure_1.length > 0) {
+                    closure_2 = closure_1[0];
+                    const _HermesInternal = HermesInternal;
+                    c3("rgba(" + closure_2[0] + ", " + closure_2[1] + ", " + closure_2[2] + ", 0.16)");
+                  }
+                  closure_1_5(emojiSource);
+                }
+                c3 = 3;
+                return { value: "IconComponent", done: null };
+              } catch (tmp27) {
+                c3 = 3;
+                throw tmp27;
+              }
+            }
+          });
+          tmp = (function loadEmoji() {
+            return closure_0(...arguments);
+          })();
+          return;
+        }
+      }
+      const statusLabel = obj8.getStatusLabel(status);
+      cResult[11] = status;
+      cResult[12] = statusLabel;
+    } else {
+      class K {
+        constructor() {
+          closure_0 = closure_3(async (arg0, value) => {
+            let obj2;
+            let obj6;
+            let v3;
+            if (c3 === 2) {
+              c3 = 3;
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp2 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                return { value: "IconComponent", done: null };
+              }
+            } else {
+              try {
+                let c1;
+                let emojiSource;
+                let closure_1;
+                c3 = 2;
+                if (0 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj4 = { value, done: true };
+                    return obj4;
+                  } else {
+                    c1 = 0;
+                    emojiSource = undefined;
+                    closure_1 = undefined;
+                    closure_2 = undefined;
+                    if (null != c1.emoji) {
+                      c2 = 1;
+                      c3 = 1;
+                      const obj5 = { value: obj6.getEmojiSource(c1.emoji), done: false };
+                      obj6 = emojiSource(closure_2_2[15]);
+                      return obj5;
+                    }
+                  }
+                } else if (1 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj7 = { value, done: true };
+                    return obj7;
+                  } else {
+                    emojiSource = value;
+                    const obj8 = { emoji: c1.emoji, emojiSource };
+                    c2 = 2;
+                    c3 = 1;
+                    const obj9 = { value: obj2.getEmojiDominantColors(obj8), done: false };
+                    obj2 = emojiSource(closure_2_2[16]);
+                    return obj9;
+                  }
+                } else if (arg0 === 1) {
+                  c3 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 3;
+                  const obj = { value, done: true };
+                  return obj;
+                } else {
+                  closure_1 = value;
+                  if (closure_1.length > 0) {
+                    closure_2 = closure_1[0];
+                    const _HermesInternal = HermesInternal;
+                    c3("rgba(" + closure_2[0] + ", " + closure_2[1] + ", " + closure_2[2] + ", 0.16)");
+                  }
+                  closure_1_5(emojiSource);
+                }
+                c3 = 3;
+                return { value: "IconComponent", done: null };
+              } catch (tmp27) {
+                c3 = 3;
+                throw tmp27;
+              }
+            }
+          });
+          tmp = (function loadEmoji() {
+            return closure_0(...arguments);
+          })();
+          return;
+        }
+      }
+    }
+    if (cResult[13] === gameMentionsAsPlainText) {
+      class K {
+        constructor() {
+          closure_0 = closure_3(async (arg0, value) => {
+            let obj2;
+            let obj6;
+            let v3;
+            if (c3 === 2) {
+              c3 = 3;
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp2 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                return { value: "IconComponent", done: null };
+              }
+            } else {
+              try {
+                let c1;
+                let emojiSource;
+                let closure_1;
+                c3 = 2;
+                if (0 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj4 = { value, done: true };
+                    return obj4;
+                  } else {
+                    c1 = 0;
+                    emojiSource = undefined;
+                    closure_1 = undefined;
+                    closure_2 = undefined;
+                    if (null != c1.emoji) {
+                      c2 = 1;
+                      c3 = 1;
+                      const obj5 = { value: obj6.getEmojiSource(c1.emoji), done: false };
+                      obj6 = emojiSource(closure_2_2[15]);
+                      return obj5;
+                    }
+                  }
+                } else if (1 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj7 = { value, done: true };
+                    return obj7;
+                  } else {
+                    emojiSource = value;
+                    const obj8 = { emoji: c1.emoji, emojiSource };
+                    c2 = 2;
+                    c3 = 1;
+                    const obj9 = { value: obj2.getEmojiDominantColors(obj8), done: false };
+                    obj2 = emojiSource(closure_2_2[16]);
+                    return obj9;
+                  }
+                } else if (arg0 === 1) {
+                  c3 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 3;
+                  const obj = { value, done: true };
+                  return obj;
+                } else {
+                  closure_1 = value;
+                  if (closure_1.length > 0) {
+                    closure_2 = closure_1[0];
+                    const _HermesInternal = HermesInternal;
+                    c3("rgba(" + closure_2[0] + ", " + closure_2[1] + ", " + closure_2[2] + ", 0.16)");
+                  }
+                  closure_1_5(emojiSource);
+                }
+                c3 = 3;
+                return { value: "IconComponent", done: null };
+              } catch (tmp27) {
+                c3 = 3;
+                throw tmp27;
+              }
+            }
+          });
+          tmp = (function loadEmoji() {
+            return closure_0(...arguments);
+          })();
+          return;
+        }
+      }
+    }
+    const items2 = [userTitle, tmp21, gameMentionsAsPlainText];
+    cResult[13] = gameMentionsAsPlainText;
+    cResult[14] = tmp21;
+    cResult[15] = userTitle;
+    cResult[16] = items2;
+  }
+  let obj4 = { userId: user.id, guildId };
+  cResult[3] = guildId;
+  cResult[4] = user.id;
+  cResult[5] = obj4;
+  tmp12 = obj4;
+}) : ((user) => {
   let activity;
   let c3;
   let closure_5;
@@ -115,7 +770,7 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
   source = tmp4[0];
   react = tmp4[1];
   let tmp7 = dependencyMap;
-  let obj = user(563);
+  let obj = user(573);
   let items = [PresenceStore];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     const status = PresenceStore.getStatus(user.id);
@@ -128,15 +783,15 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
   });
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   let obj2 = { userId: user.id, guildId };
-  let tmp10 = activity(5084)(obj2);
-  let obj3 = user(9188);
+  let tmp10 = activity(5085)(obj2);
+  let obj3 = user(9165);
   const displayNameStylesFont = obj3.useDisplayNameStylesFont({ displayNameStyles: tmp10 });
   items1 = [activity.emoji];
   const effect = react.useEffect(() => {
     function loadEmoji() {
       return obj(...arguments);
     }
-    let obj = function _loadEmoji() {
+    let obj = function _loadEmoji2() {
       obj = _asyncToGenerator(async (arg0, value) => {
         let obj2;
         let obj6;
@@ -151,7 +806,7 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -176,7 +831,7 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
                   c2 = 1;
                   c3 = 1;
                   const obj5 = { value: obj6.getEmojiSource(c1.emoji), done: false };
-                  obj6 = closure_2_0(closure_2_2[13]);
+                  obj6 = closure_2_0(closure_2_2[15]);
                   return obj5;
                 }
               }
@@ -194,7 +849,7 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
                 c2 = 2;
                 c3 = 1;
                 const obj9 = { value: obj2.getEmojiDominantColors(obj8), done: false };
-                obj2 = closure_2_0(closure_2_2[14]);
+                obj2 = closure_2_0(closure_2_2[16]);
                 return obj9;
               }
             } else if (arg0 === 1) {
@@ -214,7 +869,7 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
               closure_1_5(emojiSource);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } catch (tmp27) {
             c3 = 3;
             throw tmp27;
@@ -228,16 +883,16 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
   if (null != activity.emoji) {
     num = 1;
   }
-  const tmp6Result = user(10339);
+  const tmp6Result = user(10382);
   const gameMentionsAsPlainText = tmp6Result.useGameMentionsAsPlainText(activity.state);
   const items2 = [userTitle, , ];
-  const tmp6Result3 = user(9060);
+  const tmp6Result3 = user(9038);
   items2[1] = tmp6Result3.getStatusLabel(status);
   items2[2] = gameMentionsAsPlainText;
   const joined = items2.join(", ");
   let obj4 = { onPress, width: str, style: tmp.cardContainer, accessibilityLabel: joined, panelVariant, children: tmp15(tmp17, obj5) };
   str = "stretchy";
-  const tmp9Result = activity(14842);
+  const tmp9Result = activity(14830);
   if (fullwidth) {
     str = "full";
   }
@@ -249,7 +904,7 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
     let obj7 = { backgroundColor: tmp3 };
     items3[1] = obj7;
     const tmp19 = closure_14;
-    const tmp6Result4 = user(1364);
+    const tmp6Result4 = user(1370);
     if (tmp6Result4.isAndroid()) {
       let tmp15Result = null != source;
       if (tmp15Result) {
@@ -259,7 +914,7 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
       tmp15Result3 = tmp15Result;
     } else {
       let obj9 = { emoji: activity.emoji, size: v32, style: tmp.largeEmoji, animate: false };
-      tmp15Result3 = tmp15(tmp9(10353), obj9);
+      tmp15Result3 = tmp15(tmp9(10396), obj9);
     }
     items4 = [tmp15Result3, ];
     items4[1] = items1.map((item, index) => {
@@ -283,11 +938,11 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
     });
     const items5 = [tmp18(tmp17, obj6), ];
     const obj10 = { style: tmp.customStatusContextContainer, children: items6 };
-    const obj11 = { user, avatarDecoration: user.avatarDecoration, size: user(1177).AvatarSizes.XSMALL, guildId, status, isMobileOnline, isVROnline, style: tmp.statusAvatar, autoStatusCutout: STATUS_CUTOUT_SMALL };
-    const Avatar = tmp6(1177).Avatar;
+    const obj11 = { user, avatarDecoration: user.avatarDecoration, size: user(1189).AvatarSizes.XSMALL, guildId, status, isMobileOnline, isVROnline, style: tmp.statusAvatar, autoStatusCutout: STATUS_CUTOUT_SMALL };
+    const Avatar = tmp6(1189).Avatar;
     items6 = [tmp15(Avatar, obj11), , ];
     const obj12 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items6[1] = closure_12(user(14842).HappeningNowCardHeader, obj12);
+    items6[1] = closure_12(user(14830).HappeningNowCardHeader, obj12);
     const state = activity.state;
     let num2;
     if (state != null) {
@@ -299,7 +954,7 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
     let tmp15Result4 = num2 > 0;
     if (tmp15Result4) {
       const obj13 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
-      tmp15Result4 = tmp15(tmp6(4832).Text, obj13);
+      tmp15Result4 = tmp15(tmp6(4833).Text, obj13);
     }
     const obj14 = { children: items5 };
     items6[2] = tmp15Result4;
@@ -307,16 +962,20 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
     tmp18Result = tmp18(tmp19, obj14);
   } else {
     const obj15 = { children: items7 };
-    const obj16 = { user, avatarDecoration: user.avatarDecoration, size: user(1177).AvatarSizes.LARGE, guildId, status, isMobileOnline, isVROnline, autoStatusCutout: true };
-    const Avatar2 = tmp6(1177).Avatar;
+    const obj16 = { user, avatarDecoration: user.avatarDecoration, size: user(1189).AvatarSizes.LARGE, guildId, status, isMobileOnline, isVROnline, autoStatusCutout: true };
+    const Avatar2 = tmp6(1189).Avatar;
     items7 = [tmp15(Avatar2, obj16), ];
     const obj17 = { style: tmp.customStatusContextContainer, children: items8 };
     const obj18 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items8 = [tmp15(tmp6(14842).HappeningNowCardHeader, obj18), ];
+    items8 = [tmp15(tmp6(14830).HappeningNowCardHeader, obj18), ];
     const obj19 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
-    items8[1] = closure_12(user(4832).Text, obj19);
+    items8[1] = closure_12(user(4833).Text, obj19);
     items7[1] = closure_13(closure_6, obj17);
     tmp18Result = closure_13(closure_14, obj15);
   }
   return closure_12(tmp9Result, obj4);
-};
+});
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCustomStatus.tsx");
+
+export const CustomStatusActivityCard = tmp5;

@@ -1,23 +1,37 @@
-// Module ID: 15340
-// Function ID: 15341
+// Module ID: 15328
+// Function ID: 15329
 // Name: BugReporterSetting
-// Dependencies: [9644, 5039, 9645, 1981, 9676, 11006, 1115, 15341, 2]
-// Exports: useBugReporterExperimentSettingPredicate
+// Dependencies: [12270, 5040, 12271, 1987, 558, 576, 12285, 10874, 1127, 15329, 2]
 
-// Module 15340 (BugReporterSetting)
-import intl2 from "intl" /* 1115 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import BugReporterExperimentDefault from "BugReporterExperiment" /* 9676 */;
-import BugIcon from "BugIcon" /* 15341 */;
-import BugReportStore from "BugReportStore" /* 9644 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 15328 (BugReporterSetting)
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import BugReporterExperimentDefault from "BugReporterExperiment" /* 12285 */;
+import BugIcon from "BugIcon" /* 15329 */;
+import BugReportStore from "BugReportStore" /* 12270 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
-function useBugReporterExperimentSettingPredicate() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { location: "native-settings" };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const obj3 = BugReporterExperimentDefault;
+  return obj3.useConfig(first).hasBugReporterAccess;
+}) : (() => {
   const obj = BugReporterExperimentDefault;
   return obj.useConfig({ location: "native-settings" }).hasBugReporterAccess;
-}
+});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -30,14 +44,14 @@ let obj = {
     if (!BugReportStore.getField("isReportOpen")) {
       obj.setState({ isReportOpen: true });
       const obj2 = ModalActionCreatorsDefault;
-      obj2.pushLazy(asyncRequire(9645, dependencyMap.paths));
+      obj2.pushLazy(asyncRequire(12271, dependencyMap.paths));
     }
   },
   withArrow: true,
-  usePredicate: useBugReporterExperimentSettingPredicate
+  usePredicate: tmp2
 };
 const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/BugReporterSetting.tsx");
 
 export default pressable;
-export { useBugReporterExperimentSettingPredicate };
+export const useBugReporterExperimentSettingPredicate = tmp2;

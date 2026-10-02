@@ -1,16 +1,16 @@
-// Module ID: 11156
-// Function ID: 11157
+// Module ID: 11026
+// Function ID: 11027
 // Name: canForwardMessage
-// Dependencies: [2100, 2045, 2067, 4469, 1074, 1385, 504, 2]
-// Exports: useCanForwardMessage
+// Dependencies: [2103, 2051, 2073, 4472, 1086, 1391, 558, 576, 504, 2]
 
-// Module 11156 (canForwardMessage)
-import FlagUtils from "FlagUtils" /* 1385 */;
-import GatedChannelStore from "GatedChannelStore" /* 2100 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import Constants from "Constants" /* 1074 */;
+// Module 11026 (canForwardMessage)
+import FlagUtils from "FlagUtils" /* 1391 */;
+import GatedChannelStore from "GatedChannelStore" /* 2103 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -110,12 +110,41 @@ function canForwardMessage(state, PermissionStore, GatedChannelStore, ChannelSto
 }
 ({ GuildFeatures: metroRequire, MessageFlags, MessageStates: metroImportDefault, MessageTypesSets: metroImportAll, Permissions: c9 } = Constants);
 let closure_10 = MessageFlags.CROSSPOSTED | MessageFlags.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | MessageFlags.GUILD_FEED_HIDDEN | MessageFlags.HAS_SNAPSHOT | MessageFlags.HAS_THREAD | MessageFlags.IS_CROSSPOST | MessageFlags.IS_VOICE_MESSAGE | MessageFlags.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | MessageFlags.SUPPRESS_EMBEDS | MessageFlags.SUPPRESS_NOTIFICATIONS | MessageFlags.URGENT | MessageFlags.IS_COMPONENTS_V2 | MessageFlags.IS_GUILD_OFFICIAL | MessageFlags.IS_SCHEDULED;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp9;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore, GatedChannelStore, ChannelStore, GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      return canForwardMessage(closure_0, PermissionStore, GatedChannelStore, ChannelStore, GuildStore);
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp9 = fn;
+  } else {
+    tmp9 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp9);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  const items = [PermissionStore, GatedChannelStore, ChannelStore, GuildStore];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => canForwardMessage(closure_0, PermissionStore, GatedChannelStore, ChannelStore, GuildStore));
+});
 const result = size.fileFinishedImporting("modules/forwarding/canForwardMessage.tsx");
 
 export { canForwardMessage };
-export const useCanForwardMessage = function useCanForwardMessage(message) {
-  _require = message;
-  const items = [PermissionStore, GatedChannelStore, ChannelStore, GuildStore];
-  const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => canForwardMessage(message, PermissionStore, GatedChannelStore, ChannelStore, GuildStore));
-};
+export const useCanForwardMessage = tmp3;

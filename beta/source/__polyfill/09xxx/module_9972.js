@@ -1,9 +1,9 @@
 // Module ID: 9972
 // Function ID: 9973
-// Dependencies: [41, 42, 93, 95, 98, 9914]
+// Dependencies: [41, 42, 93, 95, 98, 9951]
 
 // Module 9972
-import _mod9914 from "module_9914" /* 9914 */;
+import _mod9951 from "module_9951" /* 9951 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -25,61 +25,85 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class JPMergeWeekdayComponentRefiner {
-  constructor() {
+class UnlikelyFormatFilter {
+  constructor(strictMode) {
     let constructResult;
     const self = this;
-    _classCallCheck(this, JPMergeWeekdayComponentRefiner);
-    const obj = _getPrototypeOf(JPMergeWeekdayComponentRefiner);
+    _classCallCheck(this, UnlikelyFormatFilter);
+    const obj = _getPrototypeOf(UnlikelyFormatFilter);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, undefined);
     }
-    return tmp3(self, constructResult);
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = strictMode;
+    return tmp3Result;
   }
 }
-_inherits(JPMergeWeekdayComponentRefiner, _mod9914.MergingRefiner);
+_inherits(UnlikelyFormatFilter, _mod9951.Filter);
 const entry = {
-  key: "mergeResults",
-  value: function mergeResults(arg0, clone, text) {
-    const cloneResult = clone.clone();
-    cloneResult.text = clone.text + arg0 + text.text;
-    const start = cloneResult.start;
-    const start2 = text.start;
-    start.assign("weekday", start2.get("weekday"));
-    if (cloneResult.end) {
-      const end = cloneResult.end;
-      const start3 = text.start;
-      end.assign("weekday", start3.get("weekday"));
+  key: "isValid",
+  value: function isValid(debug, text) {
+    let flag;
+    const str = text.text;
+    const str2 = str.replace(" ", "");
+    if (str2.match(/^\d*(\.\d*)?$/)) {
+      debug.debug(() => {
+        console.log("Removing unlikely result '" + text.text + "'");
+      });
+      flag = false;
+    } else {
+      const start = text.start;
+      if (start.isValidDate()) {
+        if (text.end) {
+          let flag2;
+          const end = text.end;
+          if (!end.isValidDate()) {
+            debug.debug(() => {
+              console.log("Removing invalid result: " + text + " (" + text.end + ")");
+            });
+            flag2 = false;
+          }
+          flag = flag2;
+        }
+        const self = this;
+        const strictMode = this.strictMode;
+        let isStrictModeValidResult = !strictMode;
+        if (strictMode) {
+          isStrictModeValidResult = self.isStrictModeValid(debug, text);
+        }
+        flag2 = isStrictModeValidResult;
+      } else {
+        debug.debug(() => {
+          console.log("Removing invalid result: " + text + " (" + text.start + ")");
+        });
+        flag = false;
+      }
     }
-    return cloneResult;
+    return flag;
   }
 };
 const items = [
   entry,
   {
-    key: "shouldMergeResults",
-    value: function shouldMergeResults(str, start, start2) {
+    key: "isStrictModeValid",
+    value: function isStrictModeValid(debug, start) {
       start = start.start;
-      let isCertainResult = start.isCertain("day");
-      if (isCertainResult) {
-        start2 = start2.start;
-        isCertainResult = start2.isOnlyWeekdayComponent();
+      const result = start.isOnlyWeekdayComponent();
+      let flag = !result;
+      if (result) {
+        debug.debug(() => {
+          console.log("(Strict) Removing weekday only component: " + start + " (" + start.end + ")");
+        });
+        flag = false;
       }
-      if (isCertainResult) {
-        const start3 = start2.start;
-        isCertainResult = !start3.isCertain("hour");
-      }
-      if (isCertainResult) {
-        isCertainResult = null !== str.match(/^[,、の]?\s*$/);
-      }
-      return isCertainResult;
+      return flag;
     }
   }
 ];
 
-export default _createClass(JPMergeWeekdayComponentRefiner, items);
+export default _createClass(UnlikelyFormatFilter, items);

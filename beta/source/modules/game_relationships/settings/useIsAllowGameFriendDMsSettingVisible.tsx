@@ -1,19 +1,42 @@
-// Module ID: 15505
-// Function ID: 15506
+// Module ID: 15493
+// Function ID: 15494
 // Name: useIsAllowGameFriendDMsSettingVisible
-// Dependencies: [7071, 504, 2]
-// Exports: useIsAllowGameFriendDMsSettingVisible
+// Dependencies: [7075, 558, 576, 504, 2]
 
-// Module 15505 (useIsAllowGameFriendDMsSettingVisible)
-import get_initialized from "get initialized" /* 504 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7071 */;
+// Module 15493 (useIsAllowGameFriendDMsSettingVisible)
+import react from "react" /* 576 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7075 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/game_relationships/settings/useIsAllowGameFriendDMsSettingVisible.tsx");
-
-export const useIsAllowGameFriendDMsSettingVisible = function useIsAllowGameFriendDMsSettingVisible() {
+let tmp;
+const get_initialized = tmp(504);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let gameRelationshipCount;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GameRelationshipStore];
+    const fn = function n() {
+      return gameRelationshipCount.getGameRelationshipCount() > 0;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
   let gameRelationshipCount;
   const items = [GameRelationshipStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => gameRelationshipCount.getGameRelationshipCount() > 0);
-};
+});
+const result = size.fileFinishedImporting("modules/game_relationships/settings/useIsAllowGameFriendDMsSettingVisible.tsx");
+
+export const useIsAllowGameFriendDMsSettingVisible = tmp2;

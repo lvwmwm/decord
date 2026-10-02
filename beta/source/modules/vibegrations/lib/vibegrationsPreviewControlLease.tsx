@@ -1,14 +1,16 @@
-// Module ID: 12446
-// Function ID: 12447
+// Module ID: 12444
+// Function ID: 12445
 // Name: vibegrationsPreviewControlLease
-// Dependencies: [19, 2]
-// Exports: acquireVibegrationsControlLease, beginVibegrationsControlOperation, endVibegrationsControlOperation, getVibegrationsControlActiveProjectIds, isVibegrationsControlActive, releaseVibegrationsControlLeases, subscribeVibegrationsControlReleased, useVibegrationsControlActive
+// Dependencies: [19, 558, 576, 2]
+// Exports: acquireVibegrationsControlLease, beginVibegrationsControlOperation, endVibegrationsControlOperation, getVibegrationsControlActiveProjectIds, isVibegrationsControlActive, releaseVibegrationsControlLeases, subscribeVibegrationsControlReleased
 
-// Module 12446 (vibegrationsPreviewControlLease)
-import react_mod from "react" /* 19 */;
+// Module 12444 (vibegrationsPreviewControlLease)
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let set2;
+const require = globalThis.__r;
+let _require, dependencyMap, set2;
 
 function emit() {
   const items = [...set];
@@ -39,17 +41,65 @@ function subscribeVibegrationsControl(arg0) {
     set.delete(closure_0);
   };
 }
-let react = react_mod;
 const map = new Map();
 let set = new Set();
 let set1 = new Set();
 const map1 = new Map();
-let result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsPreviewControlLease.tsx");
-
-export const acquireVibegrationsControlLease = function acquireVibegrationsControlLease(arg0) {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let tmp2;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(2);
+  if (cResult[0] !== arg0) {
+    const fn = function n() {
+      let tmp2 = null != closure_0;
+      if (tmp2) {
+        const value = map.get(tmp);
+        let num;
+        if (value != null) {
+          num = value.holders;
+        }
+        if (num == null) {
+          num = 0;
+        }
+        tmp2 = num > 0;
+      }
+      return tmp2;
+    };
+    let num = 0;
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return react.useSyncExternalStore(subscribeVibegrationsControl, tmp2, tmp2);
+}) : ((arg0) => {
   let closure_0 = arg0;
-  let value = map.get(arg0);
-  const obj = map;
+  const items = [arg0];
+  const callback = react.useCallback(() => {
+    let tmp2 = null != closure_0;
+    if (tmp2) {
+      const value = map.get(tmp);
+      let num;
+      if (value != null) {
+        num = value.holders;
+      }
+      if (num == null) {
+        num = 0;
+      }
+      tmp2 = num > 0;
+    }
+    return tmp2;
+  }, items);
+  return react.useSyncExternalStore(subscribeVibegrationsControl, callback, callback);
+});
+function acquireVibegrationsControlLease(arg0) {
+  let timerId;
+  let closure_0 = arg0;
+  let value = timerId.get(arg0);
+  const obj = timerId;
   if (value == null) {
     const _Set = Set;
     const self = this;
@@ -58,6 +108,7 @@ export const acquireVibegrationsControlLease = function acquireVibegrationsContr
     value = obj2;
     set = new Set();
   }
+  dependencyMap = value;
   value.holders = value.holders + 1;
   function release() {
     const tmp = c2;
@@ -83,7 +134,7 @@ export const acquireVibegrationsControlLease = function acquireVibegrationsContr
   }
   const result = obj.set(arg0, value);
   let c2 = false;
-  const timerId = setTimeout(() => {
+  timerId = setTimeout(() => {
     const tmp = c2;
     if (!tmp) {
       c2 = true;
@@ -109,7 +160,31 @@ export const acquireVibegrationsControlLease = function acquireVibegrationsContr
   timers.add(timerId);
   emit();
   return release;
-};
+}
+function endVibegrationsControlOperation(openResult) {
+  const value = map1.get(openResult);
+  const obj = map1;
+  if (null != value) {
+    obj.delete(openResult);
+    const _clearTimeout = clearTimeout;
+    clearTimeout(value.timer);
+    value.release();
+  }
+}
+function isVibegrationsControlActive(openResult) {
+  const value = map.get(openResult);
+  let num;
+  if (value != null) {
+    num = value.holders;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  return num > 0;
+}
+let result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsPreviewControlLease.tsx");
+
+export { acquireVibegrationsControlLease };
 export const CONTROL_OPERATION_IDLE_MS = 20000;
 export const beginVibegrationsControlOperation = function beginVibegrationsControlOperation(Stack2) {
   let release;
@@ -268,16 +343,7 @@ export const beginVibegrationsControlOperation = function beginVibegrationsContr
     const result3 = set(Stack2, obj6);
   }
 };
-export const endVibegrationsControlOperation = function endVibegrationsControlOperation(openResult) {
-  const value = map1.get(openResult);
-  const obj = map1;
-  if (null != value) {
-    obj.delete(openResult);
-    const _clearTimeout = clearTimeout;
-    clearTimeout(value.timer);
-    value.release();
-  }
-};
+export { endVibegrationsControlOperation };
 export const releaseVibegrationsControlLeases = function releaseVibegrationsControlLeases(projectId) {
   const value = map1.get(projectId);
   const obj = map1;
@@ -300,17 +366,7 @@ export const releaseVibegrationsControlLeases = function releaseVibegrationsCont
     emitReleased(projectId);
   }
 };
-export const isVibegrationsControlActive = function isVibegrationsControlActive(openResult) {
-  const value = map.get(openResult);
-  let num;
-  if (value != null) {
-    num = value.holders;
-  }
-  if (num == null) {
-    num = 0;
-  }
-  return num > 0;
-};
+export { isVibegrationsControlActive };
 export const getVibegrationsControlActiveProjectIds = function getVibegrationsControlActiveProjectIds() {
   const items = [...map.keys()];
   return items;
@@ -323,23 +379,4 @@ export const subscribeVibegrationsControlReleased = function subscribeVibegratio
     set1.delete(closure_0);
   };
 };
-export const useVibegrationsControlActive = function useVibegrationsControlActive(projectId) {
-  react = projectId;
-  const items = [projectId];
-  const callback = react.useCallback(() => {
-    let tmp2 = null != projectId;
-    if (tmp2) {
-      const value = map.get(tmp);
-      let num;
-      if (value != null) {
-        num = value.holders;
-      }
-      if (num == null) {
-        num = 0;
-      }
-      tmp2 = num > 0;
-    }
-    return tmp2;
-  }, items);
-  return react.useSyncExternalStore(subscribeVibegrationsControl, callback, callback);
-};
+export const useVibegrationsControlActive = tmp6;

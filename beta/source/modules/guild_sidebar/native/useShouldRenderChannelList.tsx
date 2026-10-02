@@ -1,24 +1,106 @@
 // Module ID: 15895
 // Function ID: 15896
 // Name: useShouldRenderChannelList
-// Dependencies: [32, 19, 6896, 5589, 1074, 4692, 4693, 1110, 2]
-// Exports: useShouldRenderChannelList
+// Dependencies: [32, 19, 6900, 5590, 1086, 558, 576, 4694, 4695, 1122, 2]
 
 // Module 15895 (useShouldRenderChannelList)
-import Constants from "Constants" /* 1074 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import RootNavigationRef from "RootNavigationRef" /* 4693 */;
+import Constants from "Constants" /* 1086 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4694 */;
+import RootNavigationRef from "RootNavigationRef" /* 4695 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CacheStore from "CacheStore" /* 6896 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
+import CacheStore from "CacheStore" /* 6900 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let addListenerResult, str, tmp10, tmp6, tmp7, tmp8;
 
 const ComponentActions = Constants.ComponentActions;
 let c7 = false;
-let result = size.fileFinishedImporting("modules/guild_sidebar/native/useShouldRenderChannelList.tsx");
-
-export const useShouldRenderChannelList = function useShouldRenderChannelList() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_1;
+  let first;
+  let tmp4;
+  let tmp5;
+  let obj = first(576);
+  const cResult = obj.c(3);
+  [first, dependencyMap] = react.useState(c7);
+  const obj2 = react;
+  if (cResult[0] !== first) {
+    class R {
+      constructor() {
+        tmp = allowRender;
+        if (tmp) {
+          return;
+        } else {
+          allowRender = function allowRender() { /* body not rendered: F143934 */ };
+          handleGatewayChange = function handleGatewayChange() { /* body not rendered: F143935 */ };
+          handleCacheChange = function handleCacheChange() { /* body not rendered: F143936 */ };
+          handleNavigationChange = function handleNavigationChange() { /* body not rendered: F143937 */ };
+          tmp2 = closure_1_5;
+          result = closure_1_5.addReactChangeListener(handleGatewayChange);
+          tmp4 = closure_1_4;
+          result1 = closure_1_4.addReactChangeListener(handleCacheChange);
+          tmp6 = closure_0;
+          tmp7 = closure_1;
+          ComponentDispatch = closure_0(closure_1[9]).ComponentDispatch;
+          tmp8 = closure_1_6;
+          subscription = ComponentDispatch.subscribe(closure_1_6.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
+          obj = closure_0(closure_1[8]);
+          rootNavigationRef = obj.getRootNavigationRef();
+          tmp10 = null;
+          if (rootNavigationRef != null) {
+            str = "state";
+            addListenerResult = rootNavigationRef.addListener("state", handleNavigationChange);
+          }
+          return () => { /* body not rendered: F143938 */ };
+        }
+      }
+    }
+    const items = [first];
+    cResult[0] = first;
+    cResult[1] = R;
+    cResult[2] = items;
+    tmp5 = items;
+    tmp4 = R;
+  } else {
+    class R {
+      constructor() {
+        tmp = allowRender;
+        if (tmp) {
+          return;
+        } else {
+          allowRender = function allowRender() { /* body not rendered: F143934 */ };
+          handleGatewayChange = function handleGatewayChange() { /* body not rendered: F143935 */ };
+          handleCacheChange = function handleCacheChange() { /* body not rendered: F143936 */ };
+          handleNavigationChange = function handleNavigationChange() { /* body not rendered: F143937 */ };
+          tmp2 = closure_1_5;
+          result = closure_1_5.addReactChangeListener(handleGatewayChange);
+          tmp4 = closure_1_4;
+          result1 = closure_1_4.addReactChangeListener(handleCacheChange);
+          tmp6 = closure_0;
+          tmp7 = closure_1;
+          ComponentDispatch = closure_0(closure_1[9]).ComponentDispatch;
+          tmp8 = closure_1_6;
+          subscription = ComponentDispatch.subscribe(closure_1_6.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
+          obj = closure_0(closure_1[8]);
+          rootNavigationRef = obj.getRootNavigationRef();
+          tmp10 = null;
+          if (rootNavigationRef != null) {
+            str = "state";
+            addListenerResult = rootNavigationRef.addListener("state", handleNavigationChange);
+          }
+          return () => { /* body not rendered: F143938 */ };
+        }
+      }
+    }
+    tmp5 = cResult[2];
+  }
+  const effect = obj2.useEffect(tmp4, tmp5);
+  return first;
+}) : (() => {
   let closure_1;
   let first;
   [first, closure_1] = react.useState(c7);
@@ -41,9 +123,9 @@ export const useShouldRenderChannelList = function useShouldRenderChannelList() 
       }
     }
     function handleNavigationChange() {
-      const coerceGuildsRoute = first(handleGatewayChange[5]).coerceGuildsRoute;
-      first(handleGatewayChange[5]);
-      const obj = first(handleGatewayChange[6]);
+      const coerceGuildsRoute = first(handleGatewayChange[7]).coerceGuildsRoute;
+      first(handleGatewayChange[7]);
+      const obj = first(handleGatewayChange[8]);
       const rootNavigationRef = obj.getRootNavigationRef();
       let currentRoute;
       if (rootNavigationRef != null) {
@@ -58,9 +140,9 @@ export const useShouldRenderChannelList = function useShouldRenderChannelList() 
     if (!tmp) {
       let result = GatewayConnectionStore.addReactChangeListener(handleGatewayChange);
       let result1 = CacheStore.addReactChangeListener(handleCacheChange);
-      let ComponentDispatch = first(handleGatewayChange[7]).ComponentDispatch;
+      let ComponentDispatch = first(handleGatewayChange[9]).ComponentDispatch;
       const subscription = ComponentDispatch.subscribe(constants.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-      let obj = first(handleGatewayChange[6]);
+      let obj = first(handleGatewayChange[8]);
       let rootNavigationRef = obj.getRootNavigationRef();
       if (rootNavigationRef != null) {
         rootNavigationRef.addListener("state", handleNavigationChange);
@@ -79,4 +161,7 @@ export const useShouldRenderChannelList = function useShouldRenderChannelList() 
     }
   }, items);
   return first;
-};
+});
+let result = size.fileFinishedImporting("modules/guild_sidebar/native/useShouldRenderChannelList.tsx");
+
+export const useShouldRenderChannelList = tmp2;

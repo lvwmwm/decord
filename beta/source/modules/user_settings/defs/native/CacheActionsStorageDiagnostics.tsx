@@ -1,10 +1,10 @@
-// Module ID: 15125
-// Function ID: 15126
+// Module ID: 15113
+// Function ID: 15114
 // Name: CacheActionsStorageDiagnostics
-// Dependencies: [5, 32, 19, 21, 15124, 4528, 4787, 1115, 5279, 4832, 5281, 2]
+// Dependencies: [5, 32, 19, 21, 15112, 4531, 4788, 1127, 5280, 4833, 5282, 2]
 // Exports: default
 
-// Module 15125 (CacheActionsStorageDiagnostics)
+// Module 15113 (CacheActionsStorageDiagnostics)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -45,7 +45,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -135,7 +135,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
             closure_129_0(false);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp45) {
           ref = tmp45;
           if (0 === c3) {
@@ -155,22 +155,22 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
   [tmp2, c1] = tmp;
   dependencyMap = react.useRef(false);
   obj = { children: items };
-  const Stack = onBusyChange(5279).Stack;
-  let obj2 = { variant: "text-sm/normal", color: "text-subtle", children: intl.string(onBusyChange(1115).t.Fzi4HX) };
-  const Text = onBusyChange(4832).Text;
-  intl = onBusyChange(1115).intl;
+  const Stack = onBusyChange(5280).Stack;
+  let obj2 = { variant: "text-sm/normal", color: "text-subtle", children: intl.string(onBusyChange(1127).t.Fzi4HX) };
+  const Text = onBusyChange(4833).Text;
+  intl = onBusyChange(1127).intl;
   items = [closure_6(Text, obj2), ];
   let obj3 = {
     variant: "secondary",
-    text: intl2.string(onBusyChange(1115).t.VSunuT),
+    text: intl2.string(onBusyChange(1127).t.VSunuT),
     loading: tmp2,
     disabled: tmp2,
     onPress: function handleUpload() {
       return obj(...arguments);
     }
   };
-  const Button = onBusyChange(5281).Button;
-  intl2 = onBusyChange(1115).intl;
+  const Button = onBusyChange(5282).Button;
+  intl2 = onBusyChange(1127).intl;
   items[1] = closure_6(Button, obj3);
   return closure_7(Stack, obj);
 };

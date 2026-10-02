@@ -1,17 +1,17 @@
-// Module ID: 5877
-// Function ID: 5878
+// Module ID: 5878
+// Function ID: 5879
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1074, 38, 4763, 1364, 510, 5878, 2020, 4, 5879, 5880, 1366, 1271, 4862, 2]
+// Dependencies: [32, 5, 1086, 38, 4765, 1370, 510, 5879, 2026, 4, 5880, 5881, 1372, 1283, 4863, 2]
 
-// Module 5877 (DesktopNativeUtils)
+// Module 5878 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
-import Constants from "Constants" /* 1074 */;
-import GameDetectionTypes from "GameDetectionTypes" /* 2020 */;
-import flow_Client from "flow/Client" /* 4763 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 4862 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 5878 */;
-import IPCEvents from "IPCEvents" /* 5879 */;
+import Constants from "Constants" /* 1086 */;
+import GameDetectionTypes from "GameDetectionTypes" /* 2026 */;
+import flow_Client from "flow/Client" /* 4765 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 4863 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 5879 */;
+import IPCEvents from "IPCEvents" /* 5880 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, c10, c9, closeResult, importDefault;
 
 let tmp2;
-const FileExtensionUtils = tmp2(5880);
+const FileExtensionUtils = tmp2(5881);
 function sanitizeFilename(str) {
   try {
     const _decodeURIComponent = decodeURIComponent;
@@ -76,7 +76,7 @@ obj = function _transcodeImageToPng() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -667,7 +667,7 @@ let obj2 = {
               obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -701,7 +701,7 @@ let obj2 = {
                 const dock = closure_129_0.dock;
                 dock.cancelBounce(closure_0);
                 c3 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp10) {
               c3 = 3;
@@ -736,7 +736,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -799,7 +799,7 @@ let obj2 = {
                 const _Buffer2 = Buffer;
                 clipboard2.copyImage(Buffer.from(closure_0), combined);
                 c4 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               }
               combined = closure_130_0;
             }
@@ -841,7 +841,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -876,7 +876,7 @@ let obj2 = {
             const _Buffer = Buffer;
             clipboard.copyImage(Buffer.from(tmp), closure_129_1);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -889,7 +889,7 @@ let obj2 = {
     if (null != uri) {
       const tmp = require;
       if (require("PlatformUtils").isPlatformEmbedded) {
-        const tmpResult = tmp(5880);
+        const tmpResult = tmp(5881);
         const decideFileExtensionResult = tmpResult.decideFileExtension(uri, contentType);
         const hasItem = null == decideFileExtensionResult || set2.has(decideFileExtensionResult);
         return hasItem;
@@ -914,7 +914,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c8;
@@ -1404,7 +1404,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1444,7 +1444,7 @@ let obj2 = {
           } else {
             self = this;
             const self2 = this;
-            const promise = new Promise((callback2) => closure_1_1.requestAnimationFrame(callback2));
+            const promise = new Promise((step) => closure_1_1.requestAnimationFrame(step));
             c2 = 1;
             c3 = 1;
             const obj4 = { value: promise, done: false };
@@ -1553,7 +1553,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

@@ -1,19 +1,24 @@
-// Module ID: 6001
-// Function ID: 6002
+// Module ID: 5998
+// Function ID: 5999
 // Name: FormRadio
-// Dependencies: [19, 21, 4836, 576, 4550, 4566, 5280, 5284, 2]
-// Exports: FormRadio
+// Dependencies: [19, 21, 4837, 588, 558, 576, 4554, 4570, 5281, 5285, 2]
 
-// Module 6001 (FormRadio)
+// Module 5998 (FormRadio)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5280 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import react3 from "react" /* 4554 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4570 */;
+import spring from "spring" /* 5281 */;
+import springPresets from "springPresets" /* 5285 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let tmp;
-const springPresets = tmp(5284);
+const require = globalThis.__r;
+let _require;
+
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles(() => {
   let size1;
@@ -26,114 +31,278 @@ let closure_5 = createStyles.createStyles(() => {
   size1 = { width: CONTROL_RADIO_ICON_DOT_SIZE_DEFAULT, height: CONTROL_RADIO_ICON_DOT_SIZE_DEFAULT, backgroundColor: nativeDefault.colors.WHITE, borderRadius: nativeDefault.radii.round };
   return obj;
 });
-const __initData = { code: "function FormRadioNativeTsx1(){const{withSpring,selectedShared,selectedStyles,unselectedStyles,SUBTLE_SPRING}=this.__closure;return withSpring(selectedShared.get()?selectedStyles.borderColor:unselectedStyles.borderColor,SUBTLE_SPRING,'animate-always');}" };
-const __initData2 = { code: "function FormRadioNativeTsx2(){const{withSpring,selectedShared,selectedStyles,unselectedStyles,SUBTLE_SPRING}=this.__closure;return withSpring(selectedShared.get()?selectedStyles.backgroundColor:unselectedStyles.backgroundColor,SUBTLE_SPRING,'animate-always');}" };
+let ReactCompilerGating = ReactCompilerGating_mod;
+const __initData = { code: "function FormRadioNativeTsx1(){const{withSpring,selectedShared,selectedStyles,unselectedStyles,SUBTLE_SPRING}=this.__closure;return withSpring(selectedShared.get()?selectedStyles.borderColor:unselectedStyles.borderColor,SUBTLE_SPRING,\"animate-always\");}" };
+const __initData2 = { code: "function FormRadioNativeTsx2(){const{withSpring,selectedShared,selectedStyles,unselectedStyles,SUBTLE_SPRING}=this.__closure;return withSpring(selectedShared.get()?selectedStyles.backgroundColor:unselectedStyles.backgroundColor,SUBTLE_SPRING,\"animate-always\");}" };
 const __initData3 = { code: "function FormRadioNativeTsx3(){const{borderColor,backgroundColor}=this.__closure;return{borderColor:borderColor.get(),backgroundColor:backgroundColor.get()};}" };
-const __initData4 = { code: "function FormRadioNativeTsx4(){const{useReducedMotion,withSpring,selected,SUBTLE_SPRING}=this.__closure;const unselectedScale=useReducedMotion?1:0.5;return{opacity:withSpring(selected?1:0,SUBTLE_SPRING,'animate-always'),transform:[{scale:withSpring(selected?1:unselectedScale,SUBTLE_SPRING)}]};}" };
-let size = size_mod;
-let result = size.fileFinishedImporting("design/components/Forms/native/FormRadio.native.tsx");
-
-export const FormRadio = function FormRadio(selected) {
-  let derivedValue1;
-  let items1;
-  let items2;
-  let obj10;
-  let sharedValue;
-  let unselected;
+const __initData4 = { code: "function FormRadioNativeTsx4(){const{withSpring,selectedShared,selectedStyles,unselectedStyles,SUBTLE_SPRING}=this.__closure;return withSpring(selectedShared.get()?selectedStyles.borderColor:unselectedStyles.borderColor,SUBTLE_SPRING,'animate-always');}" };
+const __initData5 = { code: "function FormRadioNativeTsx5(){const{withSpring,selectedShared,selectedStyles,unselectedStyles,SUBTLE_SPRING}=this.__closure;return withSpring(selectedShared.get()?selectedStyles.backgroundColor:unselectedStyles.backgroundColor,SUBTLE_SPRING,'animate-always');}" };
+const __initData6 = { code: "function FormRadioNativeTsx6(){const{borderColor,backgroundColor}=this.__closure;return{borderColor:borderColor.get(),backgroundColor:backgroundColor.get()};}" };
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
+  const obj = react2;
+  const cResult = obj.c(9);
   selected = selected.selected;
+  const tmp3 = closure_5();
+  const enabled = react.useContext(react3.AccessibilityPreferencesContext).reducedMotion.enabled;
+  const tmp4 = closure_12(selected);
+  const tmp5 = closure_15(enabled, selected);
+  if (cResult[0] === tmp4) {
+    let tmp6;
+    if (cResult[1] === tmp3.radio) {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] === tmp5) {
+      let tmp7;
+      if (cResult[4] === tmp3.dot) {
+        tmp7 = cResult[5];
+      }
+      if (cResult[6] === tmp6) {
+        let tmp11;
+        if (cResult[7] === tmp7) {
+          tmp11 = cResult[8];
+        }
+        return tmp11;
+      }
+      const tmp14 = jsx(ReanimatedRexportDefault.View, { style: tmp6, children: tmp7 });
+      cResult[6] = tmp6;
+      cResult[7] = tmp7;
+      cResult[8] = tmp14;
+      tmp11 = tmp14;
+    }
+    const items = [tmp3.dot, tmp5];
+    const tmp10 = jsx(ReanimatedRexportDefault.View, { style: items });
+    cResult[3] = tmp5;
+    cResult[4] = tmp3.dot;
+    cResult[5] = tmp10;
+    tmp7 = tmp10;
+  }
+  const items1 = [tmp3.radio, tmp4];
+  cResult[0] = tmp4;
+  cResult[1] = tmp3.radio;
+  cResult[2] = items1;
+  tmp6 = items1;
+}) : ((selected) => {
+  selected = selected.selected;
+  const tmp = closure_5();
+  const enabled = react.useContext(react3.AccessibilityPreferencesContext).reducedMotion.enabled;
+  const items = [tmp.radio, closure_12(selected)];
+  const tmp2 = closure_12(selected);
+  const tmp3 = closure_15(enabled, selected);
+  const View = ReanimatedRexportDefault.View;
+  const items1 = [tmp.dot, tmp3];
+  return <View style={items}>{null}</View>;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((point) => {
+  let derivedValue2;
+  let unselected;
+  _require = point;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  const tmp4 = derivedValue2();
+  const selected = tmp4.selected;
+  unselected = tmp4.unselected;
+  const obj2 = require("ReanimatedRexport");
+  const sharedValue = obj2.useSharedValue(point);
+  if (cResult[0] === point) {
+    let tmp6;
+    let tmp7;
+    if (cResult[1] === sharedValue) {
+      tmp6 = cResult[2];
+      tmp7 = cResult[3];
+    }
+    const effect = sharedValue.useEffect(tmp6, tmp7);
+    const tmpResult = tmp(unselected[7]);
+    class E {
+      constructor() {
+        let borderColor;
+        const withSpring = spring.withSpring;
+        spring;
+        if (sharedValue.get()) {
+          borderColor = selected.borderColor;
+        } else {
+          borderColor = unselected.borderColor;
+        }
+        return withSpring(borderColor, springPresets.SUBTLE_SPRING, "animate-always");
+      }
+    }
+    const useDerivedValue = tmpResult.useDerivedValue;
+    E.__closure = { withSpring: tmp(unselected[8]).withSpring, selectedShared: sharedValue, selectedStyles: selected, unselectedStyles: unselected, SUBTLE_SPRING: tmp(unselected[9]).SUBTLE_SPRING };
+    E.__workletHash = 14978954667069;
+    E.__initData = __initData;
+    const obj3 = { withSpring: tmp(unselected[8]).withSpring, selectedShared: sharedValue, selectedStyles: selected, unselectedStyles: unselected, SUBTLE_SPRING: tmp(unselected[9]).SUBTLE_SPRING };
+    const derivedValue = useDerivedValue(E);
+    const fn2 = function b() {
+      let backgroundColor;
+      const withSpring = spring.withSpring;
+      spring;
+      if (sharedValue.get()) {
+        backgroundColor = selected.backgroundColor;
+      } else {
+        backgroundColor = unselected.backgroundColor;
+      }
+      return withSpring(backgroundColor, springPresets.SUBTLE_SPRING, "animate-always");
+    };
+    const obj4 = { withSpring: tmp(unselected[8]).withSpring, selectedShared: sharedValue, selectedStyles: selected, unselectedStyles: unselected, SUBTLE_SPRING: tmp(unselected[9]).SUBTLE_SPRING };
+    const useDerivedValue2 = tmp(tmp2[7]).useDerivedValue;
+    tmp(unselected[7]);
+    fn2.__closure = obj4;
+    fn2.__workletHash = 16292331689118;
+    fn2.__initData = __initData2;
+    derivedValue2 = useDerivedValue2(fn2);
+    const tmpResult4 = tmp(unselected[7]);
+    class T {
+      constructor() {
+        const obj = { borderColor: derivedValue.get(), backgroundColor: derivedValue2.get() };
+        return obj;
+      }
+    }
+    const obj5 = { borderColor: derivedValue, backgroundColor: derivedValue2 };
+    T.__closure = obj5;
+    T.__workletHash = 5670342272321;
+    T.__initData = __initData3;
+    return tmpResult4.useAnimatedStyle(T);
+  }
+  const fn = function s() {
+    const result = sharedValue.set(point);
+  };
+  const items = [point, sharedValue];
+  cResult[0] = point;
+  cResult[1] = sharedValue;
+  cResult[2] = fn;
+  cResult[3] = items;
+  tmp7 = items;
+  tmp6 = fn;
+}) : ((point) => {
+  let derivedValue1;
+  _require = point;
   let tmp = derivedValue1();
-  const enabled = sharedValue.useContext(selected(unselected[4]).AccessibilityPreferencesContext).reducedMotion.enabled;
-  let derivedValue;
-  derivedValue1 = undefined;
-  const tmp2 = derivedValue1();
-  const selected2 = tmp2.selected;
-  unselected = tmp2.unselected;
-  let obj = selected(unselected[5]);
-  sharedValue = obj.useSharedValue(selected);
-  let items = [selected, sharedValue];
+  const selected = tmp.selected;
+  const unselected = tmp.unselected;
+  let obj = require("ReanimatedRexport");
+  const sharedValue = obj.useSharedValue(point);
+  const items = [point, sharedValue];
   const effect = sharedValue.useEffect(() => {
-    const result = sharedValue.set(selected);
+    const result = sharedValue.set(point);
   }, items);
-  const obj2 = selected(unselected[5]);
-  class T {
+  const obj2 = require("ReanimatedRexport");
+  class R {
     constructor() {
       let borderColor;
       const withSpring = spring.withSpring;
       spring;
       if (sharedValue.get()) {
-        borderColor = selected2.borderColor;
+        borderColor = selected.borderColor;
       } else {
         borderColor = unselected.borderColor;
       }
       return withSpring(borderColor, springPresets.SUBTLE_SPRING, "animate-always");
     }
   }
-  T.__closure = { withSpring: selected(unselected[6]).withSpring, selectedShared: sharedValue, selectedStyles: selected2, unselectedStyles: unselected, SUBTLE_SPRING: selected(unselected[7]).SUBTLE_SPRING };
-  T.__workletHash = 12275577765341;
-  T.__initData = __initData;
-  ({ withSpring: selected(unselected[6]).withSpring, selectedShared: sharedValue, selectedStyles: selected2, unselectedStyles: unselected, SUBTLE_SPRING: selected(unselected[7]).SUBTLE_SPRING });
-  derivedValue = obj2.useDerivedValue(T);
-  const obj4 = selected(unselected[5]);
+  R.__closure = { withSpring: require("spring").withSpring, selectedShared: sharedValue, selectedStyles: selected, unselectedStyles: unselected, SUBTLE_SPRING: require("springPresets").SUBTLE_SPRING };
+  R.__workletHash = 898669597880;
+  R.__initData = __initData4;
+  ({ withSpring: require("spring").withSpring, selectedShared: sharedValue, selectedStyles: selected, unselectedStyles: unselected, SUBTLE_SPRING: require("springPresets").SUBTLE_SPRING });
+  const derivedValue = obj2.useDerivedValue(R);
+  const fn = function w() {
+    let backgroundColor;
+    const withSpring = spring.withSpring;
+    spring;
+    if (sharedValue.get()) {
+      backgroundColor = selected.backgroundColor;
+    } else {
+      backgroundColor = unselected.backgroundColor;
+    }
+    return withSpring(backgroundColor, springPresets.SUBTLE_SPRING, "animate-always");
+  };
+  const obj4 = require("ReanimatedRexport");
+  fn.__closure = { withSpring: require("spring").withSpring, selectedShared: sharedValue, selectedStyles: selected, unselectedStyles: unselected, SUBTLE_SPRING: require("springPresets").SUBTLE_SPRING };
+  fn.__workletHash = 8933067400601;
+  fn.__initData = __initData5;
+  ({ withSpring: require("spring").withSpring, selectedShared: sharedValue, selectedStyles: selected, unselectedStyles: unselected, SUBTLE_SPRING: require("springPresets").SUBTLE_SPRING });
+  derivedValue1 = obj4.useDerivedValue(fn);
+  const obj6 = require("ReanimatedRexport");
   class C {
     constructor() {
-      let backgroundColor;
-      const withSpring = spring.withSpring;
-      spring;
-      if (sharedValue.get()) {
-        backgroundColor = selected2.backgroundColor;
-      } else {
-        backgroundColor = unselected.backgroundColor;
-      }
-      return withSpring(backgroundColor, springPresets.SUBTLE_SPRING, "animate-always");
+      const obj = { borderColor: derivedValue.get(), backgroundColor: derivedValue1.get() };
+      return obj;
     }
   }
-  C.__closure = { withSpring: selected(unselected[6]).withSpring, selectedShared: sharedValue, selectedStyles: selected2, unselectedStyles: unselected, SUBTLE_SPRING: selected(unselected[7]).SUBTLE_SPRING };
-  C.__workletHash = 7732795836606;
-  C.__initData = __initData2;
-  ({ withSpring: selected(unselected[6]).withSpring, selectedShared: sharedValue, selectedStyles: selected2, unselectedStyles: unselected, SUBTLE_SPRING: selected(unselected[7]).SUBTLE_SPRING });
-  derivedValue1 = obj4.useDerivedValue(C);
-  const fn = function b() {
-    const obj = { borderColor: derivedValue.get(), backgroundColor: derivedValue1.get() };
-    return obj;
-  };
-  fn.__closure = { borderColor: derivedValue, backgroundColor: derivedValue1 };
-  fn.__workletHash = 5670342272321;
-  fn.__initData = __initData3;
-  const obj6 = selected(unselected[5]);
-  const animatedStyle = obj6.useAnimatedStyle(fn);
-  const fn2 = function s() {
+  C.__closure = { borderColor: derivedValue, backgroundColor: derivedValue1 };
+  C.__workletHash = 8248205778724;
+  C.__initData = __initData6;
+  return obj6.useAnimatedStyle(C);
+});
+const __initData7 = { code: "function FormRadioNativeTsx7(){const{useReducedMotion,withSpring,selected,SUBTLE_SPRING}=this.__closure;const unselectedScale=useReducedMotion?1:0.5;return{opacity:withSpring(selected?1:0,SUBTLE_SPRING,\"animate-always\"),transform:[{scale:withSpring(selected?1:unselectedScale,SUBTLE_SPRING)}]};}" };
+const __initData8 = { code: "function FormRadioNativeTsx8(){const{useReducedMotion,withSpring,selected,SUBTLE_SPRING}=this.__closure;const unselectedScale=useReducedMotion?1:0.5;return{opacity:withSpring(selected?1:0,SUBTLE_SPRING,'animate-always'),transform:[{scale:withSpring(selected?1:unselectedScale,SUBTLE_SPRING)}]};}" };
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((useReducedMotion, selected) => {
+  _require = useReducedMotion;
+  let closure_1 = selected;
+  let obj = require("ReanimatedRexport");
+  const fn = function l() {
     let items;
     let num = 0.5;
-    if (enabled) {
+    if (useReducedMotion) {
       num = 1;
     }
     let num2 = 0;
-    const withSpring = selected(unselected[6]).withSpring;
-    selected(unselected[6]);
+    const withSpring = spring.withSpring;
+    spring;
     if (selected) {
       num2 = 1;
     }
     let num3 = 1;
-    const obj = { opacity: withSpring(num2, selected(unselected[7]).SUBTLE_SPRING, "animate-always"), transform: items };
-    const withSpring2 = selected(unselected[6]).withSpring;
-    selected(unselected[6]);
+    const obj = { opacity: withSpring(num2, springPresets.SUBTLE_SPRING, "animate-always"), transform: items };
+    const withSpring2 = spring.withSpring;
+    spring;
     if (!selected) {
       num3 = num;
     }
-    items = [{ scale: withSpring2(num3, selected(unselected[7]).SUBTLE_SPRING) }];
-    ({ scale: withSpring2(num3, selected(unselected[7]).SUBTLE_SPRING) });
+    items = [{ scale: withSpring2(num3, springPresets.SUBTLE_SPRING) }];
+    ({ scale: withSpring2(num3, springPresets.SUBTLE_SPRING) });
     return obj;
   };
-  const obj7 = selected(unselected[5]);
-  fn2.__closure = { useReducedMotion: enabled, withSpring: selected(unselected[6]).withSpring, selected, SUBTLE_SPRING: selected(unselected[7]).SUBTLE_SPRING };
-  fn2.__workletHash = 15209729079449;
-  fn2.__initData = __initData4;
-  ({ useReducedMotion: enabled, withSpring: selected(unselected[6]).withSpring, selected, SUBTLE_SPRING: selected(unselected[7]).SUBTLE_SPRING });
-  const animatedStyle1 = obj7.useAnimatedStyle(fn2);
-  const obj9 = { style: items1, children: derivedValue(selected2(unselected[5]).View, obj10) };
-  items1 = [tmp.radio, animatedStyle];
-  const View = selected2(unselected[5]).View;
-  obj10 = { style: items2 };
-  items2 = [tmp.dot, animatedStyle1];
-  return derivedValue(View, obj9);
-};
+  const obj2 = { useReducedMotion, withSpring: require("spring").withSpring, selected, SUBTLE_SPRING: require("springPresets").SUBTLE_SPRING };
+  fn.__closure = obj2;
+  fn.__workletHash = 10696975113626;
+  fn.__initData = __initData7;
+  return obj.useAnimatedStyle(fn);
+}) : ((useReducedMotion, selected) => {
+  _require = useReducedMotion;
+  let closure_1 = selected;
+  let obj = require("ReanimatedRexport");
+  const fn = function l() {
+    let items;
+    let num = 0.5;
+    if (useReducedMotion) {
+      num = 1;
+    }
+    let num2 = 0;
+    const withSpring = spring.withSpring;
+    spring;
+    if (selected) {
+      num2 = 1;
+    }
+    let num3 = 1;
+    const obj = { opacity: withSpring(num2, springPresets.SUBTLE_SPRING, "animate-always"), transform: items };
+    const withSpring2 = spring.withSpring;
+    spring;
+    if (!selected) {
+      num3 = num;
+    }
+    items = [{ scale: withSpring2(num3, springPresets.SUBTLE_SPRING) }];
+    ({ scale: withSpring2(num3, springPresets.SUBTLE_SPRING) });
+    return obj;
+  };
+  const obj2 = { useReducedMotion, withSpring: require("spring").withSpring, selected, SUBTLE_SPRING: require("springPresets").SUBTLE_SPRING };
+  fn.__closure = obj2;
+  fn.__workletHash = 11748294509845;
+  fn.__initData = __initData8;
+  return obj.useAnimatedStyle(fn);
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("design/components/Forms/native/FormRadio.native.tsx");
+
+export const FormRadio = tmp2;

@@ -1,22 +1,22 @@
-// Module ID: 10607
-// Function ID: 10608
+// Module ID: 9639
+// Function ID: 9640
 // Name: PremiumUpsellTooltipActionSheet
-// Dependencies: [19, 17, 2042, 21, 4836, 576, 4654, 6571, 1177, 4832, 5281, 4800, 2]
-// Exports: default
+// Dependencies: [19, 17, 2048, 21, 4837, 588, 558, 576, 4656, 4801, 1189, 4833, 5282, 6572, 2]
 
-// Module 10607 (PremiumUpsellTooltipActionSheet)
-import nativeDefault from "native" /* 576 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4654 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
+// Module 9639 (PremiumUpsellTooltipActionSheet)
+import nativeDefault from "native" /* 588 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4656 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet;
+let BottomSheet, onPrimaryButtonPress;
 
 let c3;
 let closure_4;
@@ -28,9 +28,9 @@ let obj4;
 let size;
 let size1;
 let tmp3;
-const native = tmp3(1177);
-const Text_Text = tmp3(4832);
-const components_Button_Button = tmp3(5281);
+const native = tmp3(1189);
+const Text_Text = tmp3(4833);
+const components_Button_Button = tmp3(5282);
 ({ Image: c3, View: closure_4 } = react_native);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -43,10 +43,133 @@ obj3 = { textAlign: "center", marginBottom: nativeDefault.space.PX_24 };
 size1 = { tintColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, width: 32, height: 32, marginTop: -2, marginLeft: -16 };
 obj4 = { gap: nativeDefault.space.PX_8 };
 let closure_8 = createStyles(obj);
-size = size_mod;
-let result = size.fileFinishedImporting("modules/upsell_tooltip/native/PremiumUpsellTooltipActionSheet.tsx");
-
-export default function PremiumUpsellTooltipActionSheet(arg0) {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPrimaryButtonPress) => {
+  let backdropProps;
+  let description;
+  let descriptionStyle;
+  let dismissibleContent;
+  let imageSource;
+  let imageStyle;
+  let onDismiss;
+  let primaryButtonIcon;
+  let primaryButtonText;
+  let secondaryButtonText;
+  let title;
+  let obj = dismissibleContent(onPrimaryButtonPress[7]);
+  const cResult = obj.c(52);
+  ({ title, backdropProps, description, descriptionStyle, imageSource, imageStyle, dismissibleContent } = onPrimaryButtonPress);
+  ({ primaryButtonText, primaryButtonIcon, secondaryButtonText, onDismiss } = onPrimaryButtonPress);
+  onPrimaryButtonPress = onPrimaryButtonPress.onPrimaryButtonPress;
+  const onSecondaryButtonPress = onPrimaryButtonPress.onSecondaryButtonPress;
+  const tmp2 = closure_8();
+  if (cResult[0] === dismissibleContent) {
+    let tmp3;
+    if (cResult[1] === onDismiss) {
+      tmp3 = cResult[2];
+    }
+    let closure_4 = tmp3;
+    if (cResult[3] === tmp3) {
+      if (cResult[6] === tmp3) {
+        class E {
+          constructor() {
+            if (onSecondaryButtonPress != null) {
+              tmp();
+            }
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet();
+            closure_4(ContentDismissActionType.DISMISS);
+          }
+        }
+        class R {
+          constructor() {
+            onPrimaryButtonPress();
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet();
+            closure_4(ContentDismissActionType.PRIMARY);
+          }
+        }
+        let tmp9 = null;
+        if (tmp7) {
+          class E {
+            constructor() {
+              if (onSecondaryButtonPress != null) {
+                tmp();
+              }
+              const obj = ActionSheetActionCreatorsDefault;
+              obj.hideActionSheet();
+              closure_4(ContentDismissActionType.DISMISS);
+            }
+          }
+          class R {
+            constructor() {
+              onPrimaryButtonPress();
+              const obj = ActionSheetActionCreatorsDefault;
+              obj.hideActionSheet();
+              closure_4(ContentDismissActionType.PRIMARY);
+            }
+          }
+          tmp13[0] = tmp2.img;
+          tmp13[1] = imageStyle;
+          tmp12[0] = tmp13;
+          tmp12[1] = imageSource;
+          tmp9 = closure_6(onSecondaryButtonPress, tmp12);
+        }
+        cResult[9] = tmp7;
+        cResult[10] = imageSource;
+        cResult[11] = imageStyle;
+        cResult[12] = tmp2.img;
+        cResult[13] = tmp9;
+      }
+      class E {
+        constructor() {
+          if (onSecondaryButtonPress != null) {
+            tmp();
+          }
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet();
+          closure_4(ContentDismissActionType.DISMISS);
+        }
+      }
+      class R {
+        constructor() {
+          onPrimaryButtonPress();
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet();
+          closure_4(ContentDismissActionType.PRIMARY);
+        }
+      }
+      cResult[6] = tmp3;
+      cResult[7] = onSecondaryButtonPress;
+      cResult[8] = E;
+    }
+    class R {
+      constructor() {
+        onPrimaryButtonPress();
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        closure_4(ContentDismissActionType.PRIMARY);
+      }
+    }
+    cResult[3] = tmp3;
+    cResult[4] = onPrimaryButtonPress;
+    cResult[5] = R;
+  }
+  const fn = function l(dismissAction) {
+    const tmp = null != dismissAction && dismissAction !== ContentDismissActionType.DISMISS;
+    if (!tmp) {
+      if (onDismiss != null) {
+        tmp3();
+      }
+    }
+    const obj = DismissibleContentUnsafeUtils;
+    const obj2 = { forceTrack: true, dismissAction };
+    const result = obj.UNSAFE_markDismissibleContentAsDismissed(dismissibleContent, obj2);
+  };
+  cResult[0] = dismissibleContent;
+  cResult[1] = onDismiss;
+  cResult[2] = fn;
+  tmp3 = fn;
+}) : ((arg0) => {
   let backdropProps;
   let closure_3;
   let description;
@@ -159,4 +282,8 @@ export default function PremiumUpsellTooltipActionSheet(arg0) {
   items4[1] = tmp2Result2;
   items1[3] = closure_7(closure_4, obj8);
   return closure_6(BottomSheet, obj);
-};
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/upsell_tooltip/native/PremiumUpsellTooltipActionSheet.tsx");
+
+export default tmp6;

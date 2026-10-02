@@ -1,28 +1,119 @@
-// Module ID: 15705
-// Function ID: 15706
+// Module ID: 15702
+// Function ID: 15703
 // Name: HappeningNowCardUnifiedVC
-// Dependencies: [19, 2044, 4858, 4479, 21, 15706, 15718, 15719, 563, 15696, 2]
-// Exports: default, useCallActivityData
+// Dependencies: [19, 2050, 4859, 4482, 21, 558, 576, 15703, 15715, 15716, 15693, 573, 2]
 
-// Module 15705 (HappeningNowCardUnifiedVC)
+// Module 15702 (HappeningNowCardUnifiedVC)
 import Fragment from "Fragment" /* 21 */;
-import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 15696 */;
-import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 15706 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 15718 */;
-import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 15719 */;
+import react2 from "react" /* 576 */;
+import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 15693 */;
+import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 15703 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 15715 */;
+import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 15716 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardUnifiedVC.tsx");
-
-export default function HappeningNowCardUnifiedVC(arg0) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let activity;
+  let cardKey;
+  let fullwidth;
+  let guildId;
+  let index;
+  let panelVariant;
+  let stream;
+  let tmp5;
+  let userId;
+  let voiceState;
+  const obj = react2;
+  const cResult = obj.c(21);
+  ({ guildId, index, voiceState, fullwidth, userId, cardKey, panelVariant } = arg0);
+  ({ stream, activity } = closure_7(voiceState.channelId));
+  closure_7(voiceState.channelId);
+  if (null != stream) {
+    if (cResult[0] === fullwidth) {
+      if (cResult[1] === guildId) {
+        if (cResult[2] === index) {
+          if (cResult[3] === (undefined !== panelVariant && panelVariant)) {
+            let tmp13;
+            if (cResult[4] === stream) {
+              tmp13 = cResult[5];
+            }
+            tmp5 = tmp13;
+          }
+        }
+      }
+    }
+    const tmp16 = jsx(HappeningNowCardActivityDefault, { index, userId: stream.ownerId, guildId, stream, fullwidth, panelVariant: undefined !== panelVariant && panelVariant });
+    cResult[0] = fullwidth;
+    cResult[1] = guildId;
+    cResult[2] = index;
+    cResult[3] = undefined !== panelVariant && panelVariant;
+    cResult[4] = stream;
+    cResult[5] = tmp16;
+    tmp13 = tmp16;
+  } else if (null != activity) {
+    if (cResult[6] === activity) {
+      if (cResult[7] === cardKey) {
+        if (cResult[8] === fullwidth) {
+          if (cResult[9] === guildId) {
+            if (cResult[10] === index) {
+              if (cResult[11] === (undefined !== panelVariant && panelVariant)) {
+                if (cResult[12] === userId) {
+                  let tmp9;
+                  if (cResult[13] === voiceState) {
+                    tmp9 = cResult[14];
+                  }
+                  tmp5 = tmp9;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    const tmp12 = jsx(HappeningNowCardEmbeddedActivityDefault, { index, voiceState, fullwidth, guildId, activity, userId, cardKey, panelVariant: undefined !== panelVariant && panelVariant });
+    cResult[6] = activity;
+    cResult[7] = cardKey;
+    cResult[8] = fullwidth;
+    cResult[9] = guildId;
+    cResult[10] = index;
+    cResult[11] = undefined !== panelVariant && panelVariant;
+    cResult[12] = userId;
+    cResult[13] = voiceState;
+    cResult[14] = tmp12;
+    tmp9 = tmp12;
+  } else {
+    if (cResult[15] === fullwidth) {
+      if (cResult[16] === guildId) {
+        if (cResult[17] === index) {
+          if (cResult[18] === (undefined !== panelVariant && panelVariant)) {
+            if (cResult[19] === voiceState) {
+              tmp5 = cResult[20];
+            }
+          }
+        }
+      }
+    }
+    const tmp8 = jsx(HappeningNowCardVoiceDefault, { index, voiceState, fullwidth, guildId, panelVariant: undefined !== panelVariant && panelVariant });
+    cResult[15] = fullwidth;
+    cResult[16] = guildId;
+    cResult[17] = index;
+    cResult[18] = undefined !== panelVariant && panelVariant;
+    cResult[19] = voiceState;
+    cResult[20] = tmp8;
+    tmp5 = tmp8;
+  }
+  return tmp5;
+}) : ((arg0) => {
   let activity;
   let cardKey;
   let fullwidth;
@@ -38,57 +129,86 @@ export default function HappeningNowCardUnifiedVC(arg0) {
   if (panelVariant === undefined) {
     panelVariant = false;
   }
-  const channelId = voiceState.channelId;
-  const tmp = dependencyMap;
-  let obj = channelId(563);
-  const items = [EmbeddedActivitiesStore, ApplicationStreamingStore, RelationshipStore];
-  const items1 = [channelId];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    let friend;
-    if (null == channelId) {
-      return {};
-    } else {
-      let obj;
-      const allApplicationStreamsForChannel = ApplicationStreamingStore.getAllApplicationStreamsForChannel(tmp);
-      if (allApplicationStreamsForChannel.length > 0) {
-        const found = allApplicationStreamsForChannel.find((ownerId) => friend.isFriend(ownerId.ownerId));
-        if (null != found) {
-          return { stream: found };
-        }
-      }
-      const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(tmp);
-      const tmp7 = findActivityWithMostParticipantsDefault(embeddedActivitiesForChannel);
-      if (null != tmp7) {
-        obj = { activity: tmp7 };
-        const obj3 = { activity: tmp7 };
-      } else if (allApplicationStreamsForChannel.length > 0) {
-        obj = { stream: allApplicationStreamsForChannel[0] };
-        const obj4 = { stream: allApplicationStreamsForChannel[0] };
-      } else {
-        obj = {};
-      }
-      return obj;
-    }
-  }, items1);
-  ({ stream, activity } = stateFromStoresObject);
+  ({ stream, activity } = closure_7(voiceState.channelId));
+  closure_7(voiceState.channelId);
   if (null != stream) {
     tmp5 = jsx(HappeningNowCardActivityDefault, { index, userId: stream.ownerId, guildId, stream, fullwidth, panelVariant });
   } else if (null != activity) {
-    let tmp7 = importDefault;
     tmp5 = jsx(HappeningNowCardEmbeddedActivityDefault, { index, voiceState, fullwidth, guildId, activity, userId, cardKey, panelVariant });
   } else {
     tmp5 = jsx(HappeningNowCardVoiceDefault, { index, voiceState, fullwidth, guildId, panelVariant });
   }
   return tmp5;
-};
-export const useCallActivityData = function useCallActivityData(channel_id) {
-  _require = channel_id;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp8;
+  let tmp9;
+  _require = arg0;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [EmbeddedActivitiesStore, , ];
+    items[1] = ApplicationStreamingStore;
+    let tmp7 = RelationshipStore;
+    items[2] = RelationshipStore;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function o() {
+      let friend;
+      if (null == closure_0) {
+        return {};
+      } else {
+        let obj;
+        const allApplicationStreamsForChannel = ApplicationStreamingStore.getAllApplicationStreamsForChannel(tmp);
+        if (allApplicationStreamsForChannel.length > 0) {
+          const found = allApplicationStreamsForChannel.find((ownerId) => friend.isFriend(ownerId.ownerId));
+          if (null != found) {
+            return { stream: found };
+          }
+        }
+        const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(tmp);
+        const tmp7 = findActivityWithMostParticipantsDefault(embeddedActivitiesForChannel);
+        if (null != tmp7) {
+          obj = { activity: tmp7 };
+          const obj3 = { activity: tmp7 };
+        } else if (allApplicationStreamsForChannel.length > 0) {
+          obj = { stream: allApplicationStreamsForChannel[0] };
+          const obj4 = { stream: allApplicationStreamsForChannel[0] };
+        } else {
+          obj = {};
+        }
+        return obj;
+      }
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp9 = items1;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult = tmp(573);
+  return tmpResult.useStateFromStoresObject(first, tmp8, tmp9);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  let obj = require("useStateFromStores");
   const items = [EmbeddedActivitiesStore, ApplicationStreamingStore, RelationshipStore];
-  const items1 = [channel_id];
-  const obj = require("useStateFromStores");
+  const items1 = [arg0];
   return obj.useStateFromStoresObject(items, () => {
     let friend;
-    if (null == channelId) {
+    if (null == closure_0) {
       return {};
     } else {
       let obj;
@@ -113,4 +233,9 @@ export const useCallActivityData = function useCallActivityData(channel_id) {
       return obj;
     }
   }, items1);
-};
+});
+let closure_7 = tmp4;
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardUnifiedVC.tsx");
+
+export default tmp3;
+export const useCallActivityData = tmp4;

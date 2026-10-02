@@ -1,18 +1,18 @@
-// Module ID: 7637
-// Function ID: 7638
+// Module ID: 7641
+// Function ID: 7642
 // Name: BadgeDirectoryStore
-// Dependencies: [1372, 1091, 1439, 7638, 559, 7642, 504, 573, 2]
+// Dependencies: [1378, 1103, 1445, 7642, 569, 7646, 504, 585, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 7637 (BadgeDirectoryStore)
+// Module 7641 (BadgeDirectoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import BackoffDefault from "Backoff" /* 559 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import LRUCacheDefault from "LRUCache" /* 1439 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 7638 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7642 */;
-import UserStore from "UserStore" /* 1372 */;
+import BackoffDefault from "Backoff" /* 569 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import LRUCacheDefault from "LRUCache" /* 1445 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 7642 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7646 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -200,7 +200,7 @@ let obj = {
   BADGE_DIRECTORY_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     let badges;
     let userId;
-    const f84799 = (badge_id) => {
+    const f94681 = (badge_id) => {
       const items = [badge_id.badge_id, badge_id];
       return items;
     };
@@ -215,10 +215,10 @@ let obj = {
       peekResult = obj2;
       map = new Map();
     }
-    peekResult.badges = new Map(badges.map(f84799));
+    peekResult.badges = new Map(badges.map(f94681));
     peekResult.catalogFetched = true;
     peekResult.fetchError = false;
-    new Map(badges.map(f84799));
+    new Map(badges.map(f94681));
     peekResult.fetchedAt = Date.now();
     const result = obj.set(userId, peekResult);
   },

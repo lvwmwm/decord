@@ -1,17 +1,17 @@
-// Module ID: 4864
-// Function ID: 4865
+// Module ID: 4865
+// Function ID: 4866
 // Name: DeviceFrecencyStore
-// Dependencies: [1993, 1372, 4861, 4865, 4873, 504, 12, 573, 2]
+// Dependencies: [1999, 1378, 4862, 4866, 4874, 504, 12, 585, 2]
 
-// Module 4864 (DeviceFrecencyStore)
+// Module 4865 (DeviceFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import TimeUtils from "TimeUtils" /* 4865 */;
-import FrecencyDefault from "Frecency" /* 4873 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 4861 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import TimeUtils from "TimeUtils" /* 4866 */;
+import FrecencyDefault from "Frecency" /* 4874 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 4862 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -47,10 +47,10 @@ let obj3 = {};
 const AUDIO_INPUT2 = DeviceTypes.AUDIO_INPUT;
 obj3[AUDIO_INPUT2] = new FrecencyDefault(obj);
 const AUDIO_OUTPUT2 = DeviceTypes.AUDIO_OUTPUT;
-new FrecencyDefault(obj);
+const tmp6 = new FrecencyDefault(obj);
 obj3[AUDIO_OUTPUT2] = new FrecencyDefault(obj);
 const VIDEO_INPUT2 = DeviceTypes.VIDEO_INPUT;
-new FrecencyDefault(obj);
+const tmp7 = new FrecencyDefault(obj);
 obj3[VIDEO_INPUT2] = new FrecencyDefault(obj);
 const tmp8 = new FrecencyDefault(obj);
 const PersistedStore = get_initializedDefault.PersistedStore;

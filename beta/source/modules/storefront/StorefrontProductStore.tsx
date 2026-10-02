@@ -1,11 +1,11 @@
-// Module ID: 7664
-// Function ID: 7665
+// Module ID: 7668
+// Function ID: 7669
 // Name: StorefrontProductStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 7664 (StorefrontProductStore)
+// Module 7668 (StorefrontProductStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let closure_0, closure_1, id, set;
@@ -100,11 +100,11 @@ class StorefrontProductStore extends Store {
     }
     return product;
   }
-  getProductsForSku(nextResult) {
+  getProductsForSku(skuId) {
     let tmp;
-    if (null != nextResult) {
+    if (null != skuId) {
       let products;
-      if (closure_1[nextResult] != null) {
+      if (closure_1[skuId] != null) {
         products = tmp3.products;
       }
       tmp = products;

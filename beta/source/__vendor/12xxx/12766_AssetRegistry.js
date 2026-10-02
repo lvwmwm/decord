@@ -1,10 +1,10 @@
 // Module ID: 12766
 // Function ID: 12767
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 12766 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/standard", width: 144, height: 150, scales: [1], hash: "e32285515cb51d557a374cd91c39dd3d", name: "box_idle", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting", width: 120, height: 125, scales: [1, 2, 3], hash: "c43124de927c4f7db7d60a63938625a8", name: "wumpus_cup_premium120", type: "png" });

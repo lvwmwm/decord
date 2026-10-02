@@ -1,20 +1,20 @@
-// Module ID: 12686
-// Function ID: 12687
+// Module ID: 12688
+// Function ID: 12689
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 1074, 21, 4836, 576, 12684, 8234, 8301, 1241, 8245, 4528, 1115, 8235, 8231, 2]
+// Dependencies: [5, 32, 19, 17, 1086, 21, 4837, 588, 12687, 8231, 8298, 1253, 8242, 4531, 1127, 8232, 8228, 2]
 // Exports: default
 
-// Module 12686 (AddToWishlistItemCard)
+// Module 12688 (AddToWishlistItemCard)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import SKUPreviewDefault from "SKUPreview" /* 8234 */;
-import HeartOutlineIcon2 from "HeartOutlineIcon" /* 8301 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import SKUPreviewDefault from "SKUPreview" /* 8231 */;
+import HeartOutlineIcon2 from "HeartOutlineIcon" /* 8298 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let c4;
@@ -85,7 +85,7 @@ export default function AddToWishlistItemCard(sku) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -150,7 +150,7 @@ export default function AddToWishlistItemCard(sku) {
           closure_128_7(false);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp33) {
         analyticsLocations = tmp33;
         if (0 === c3) {

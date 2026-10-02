@@ -1,16 +1,20 @@
-// Module ID: 14283
-// Function ID: 14284
+// Module ID: 14271
+// Function ID: 14272
 // Name: DismissibleBadgeUtils
-// Dependencies: [32, 19, 2042, 21, 6806, 14282, 2]
+// Dependencies: [32, 19, 2048, 21, 6807, 558, 576, 14270, 2]
 // Exports: createDismissibleBadgePreNavigationAction, createDismissibleBadgeRouteProps
 
-// Module 14283 (DismissibleBadgeUtils)
+// Module 14271 (DismissibleBadgeUtils)
 import Fragment from "Fragment" /* 21 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 14282 */;
+import react2 from "react" /* 576 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 14270 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+let _require;
 
 function useAlwaysShow() {
   return true;
@@ -51,13 +55,26 @@ export function createDismissibleBadgePreNavigationAction(TINY_BRONCO_SETTINGS, 
     }, items1);
   };
 }
-export function createDismissibleBadgeRouteProps(CUSTOM_APP_ICONS_NEW_BADGE) {
-  const dismissibleContent = CUSTOM_APP_ICONS_NEW_BADGE;
+export const createDismissibleBadgeRouteProps = function createDismissibleBadgeRouteProps(CUSTOM_APP_ICONS_NEW_BADGE) {
+  let dismissibleContent;
+  _require = CUSTOM_APP_ICONS_NEW_BADGE;
+  let obj = require("ReactCompilerGating");
+  _require = CUSTOM_APP_ICONS_NEW_BADGE;
   let closure_1 = useAlwaysShow;
-  return {
-    useTrailing() {
-      return jsx(DismissiblePremiumNewBadgeDefault, { dismissibleContent, newPremiumStyle: true });
-    },
+  const obj2 = {
+    useTrailing: obj.isReactCompilerEnabled() ? (() => {
+      let first;
+      const obj = react2;
+      const cResult = obj.c(1);
+      if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp7 = jsx(DismissiblePremiumNewBadgeDefault, { dismissibleContent, newPremiumStyle: true });
+        cResult[0] = tmp7;
+        first = tmp7;
+      } else {
+        first = cResult[0];
+      }
+      return first;
+    }) : (() => jsx(DismissiblePremiumNewBadgeDefault, { dismissibleContent, newPremiumStyle: true })),
     usePreNavigationAction: () => {
       let first;
       let tmp3;
@@ -82,4 +99,5 @@ export function createDismissibleBadgeRouteProps(CUSTOM_APP_ICONS_NEW_BADGE) {
       }, items1);
     }
   };
-}
+  return obj2;
+};

@@ -1,9 +1,9 @@
-// Module ID: 13543
-// Function ID: 13544
+// Module ID: 13545
+// Function ID: 13546
 // Name: SpatialAudioConstants
 // Dependencies: [2]
 
-// Module 13543 (SpatialAudioConstants)
+// Module 13545 (SpatialAudioConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/spatial_audio/SpatialAudioConstants.tsx");

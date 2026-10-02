@@ -1,15 +1,15 @@
-// Module ID: 12307
-// Function ID: 12308
+// Module ID: 12305
+// Function ID: 12306
 // Name: convertRouteToNavigation
-// Dependencies: [1074, 4695, 4692, 4693, 4660, 4673, 2]
+// Dependencies: [1086, 4697, 4694, 4695, 4662, 4675, 2]
 // Exports: convertRouteToNavigation
 
-// Module 12307 (convertRouteToNavigation)
-import Constants from "Constants" /* 1074 */;
-import matchPathCompat from "matchPathCompat" /* 4660 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
-import RootNavigationRef from "RootNavigationRef" /* 4693 */;
-import useChatLayout from "useChatLayout" /* 4695 */;
+// Module 12305 (convertRouteToNavigation)
+import Constants from "Constants" /* 1086 */;
+import matchPathCompat from "matchPathCompat" /* 4662 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4694 */;
+import RootNavigationRef from "RootNavigationRef" /* 4695 */;
+import useChatLayout from "useChatLayout" /* 4697 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
@@ -40,14 +40,14 @@ export const convertRouteToNavigation = function convertRouteToNavigation(pathna
         const matchPath = matchPathCompat.matchPath;
         const CHANNEL = Routes.CHANNEL;
         matchPathCompat;
-        const RouteParam = tmp(4673).RouteParam;
+        const RouteParam = tmp(4675).RouteParam;
         const guildIdResult = RouteParam.guildId();
-        const RouteParam2 = tmp(4673).RouteParam;
+        const RouteParam2 = tmp(4675).RouteParam;
         VOICE_CHAT_CHANNEL_PARTIAL = Routes.VOICE_CHAT_CHANNEL_PARTIAL;
         CHANNELResult = CHANNEL(guildIdResult, RouteParam2.channelId({ optional: true }));
-        const RouteParam3 = tmp(4673).RouteParam;
+        const RouteParam3 = tmp(4675).RouteParam;
         guildIdResult1 = RouteParam3.guildId({ name: "voiceGuildId" });
-        RouteParam4 = tmp(4673).RouteParam;
+        RouteParam4 = tmp(4675).RouteParam;
         const _HermesInternal = HermesInternal;
         const tmp4 = Routes;
         if (null != matchPath(pathname, obj2)) {
@@ -57,9 +57,9 @@ export const convertRouteToNavigation = function convertRouteToNavigation(pathna
           const matchPath3 = matchPathCompat.matchPath;
           CHANNEL2 = tmp4.CHANNEL;
           matchPathCompat;
-          const RouteParam6 = tmp(4673).RouteParam;
+          const RouteParam6 = tmp(4675).RouteParam;
           guildIdResult2 = RouteParam6.guildId();
-          RouteParam7 = tmp(4673).RouteParam;
+          RouteParam7 = tmp(4675).RouteParam;
           const matchPath3Result = matchPath3(pathname, obj3);
           if (null != matchPath3Result) {
             ({ channelId, guildId, messageId } = matchPath3Result.params);
@@ -113,7 +113,7 @@ export const convertRouteToNavigation = function convertRouteToNavigation(pathna
               }
               const tmp18 = null != channelId && true !== navigationReplace;
               if (tmp18) {
-                const obj9 = { channelId, guildId, messageId, replaceChannelAndFixRoot: "a" };
+                const obj9 = { channelId, guildId, messageId, replaceChannelAndFixRoot: "Array" };
                 const tmpResult24 = NavigationRouteUtils;
                 tmpResult24.navigateToChannel(obj9);
               }
@@ -131,7 +131,7 @@ export const convertRouteToNavigation = function convertRouteToNavigation(pathna
         const matchPath2 = matchPathCompat.matchPath;
         GUILD_MEMBER_VERIFICATION = Routes.GUILD_MEMBER_VERIFICATION;
         matchPathCompat;
-        RouteParam5 = tmp(4673).RouteParam;
+        RouteParam5 = tmp(4675).RouteParam;
         const matchPath2Result = matchPath2(pathname, obj11);
         if (null != matchPath2Result) {
           const tmpResult27 = NavigationRouteUtils;

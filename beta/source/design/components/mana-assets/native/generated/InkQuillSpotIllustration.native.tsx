@@ -1,20 +1,79 @@
-// Module ID: 12247
-// Function ID: 12248
+// Module ID: 12142
+// Function ID: 12143
 // Name: InkQuillSpotIllustration
-// Dependencies: [21, 5899, 12248, 2]
-// Exports: InkQuillSpotIllustration
+// Dependencies: [21, 558, 576, 12143, 5896, 2]
 
-// Module 12247 (InkQuillSpotIllustration)
+// Module 12142 (InkQuillSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import _modDef12248 from "module_12248" /* 12248 */;
+import react from "react" /* 576 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import _modDef12143 from "module_12143" /* 12143 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-let size = size_mod;
-const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/InkQuillSpotIllustration.native.tsx");
-
-export const InkQuillSpotIllustration = function InkQuillSpotIllustration(width) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let accessibilityLabel;
+  let accessible;
+  let first;
+  let height;
+  let resizeMode;
+  let scale;
+  let width;
+  const obj = react;
+  const cResult = obj.c(9);
+  ({ accessible, accessibilityLabel, resizeMode, width, height, scale } = arg0);
+  let num = 288;
+  if (undefined !== width) {
+    num = width;
+  }
+  let num2 = 162;
+  if (undefined !== height) {
+    num2 = height;
+  }
+  let num3 = 1;
+  if (undefined !== scale) {
+    num3 = scale;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { uri: _modDef12143 };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const result = num * num3;
+  const result1 = num2 * num3;
+  if (cResult[1] === result) {
+    let tmp7;
+    if (cResult[2] === result1) {
+      tmp7 = cResult[3];
+    }
+    if (cResult[4] === accessibilityLabel) {
+      if (cResult[5] === accessible) {
+        if (cResult[6] === resizeMode) {
+          let tmp8;
+          if (cResult[7] === tmp7) {
+            tmp8 = cResult[8];
+          }
+          return tmp8;
+        }
+      }
+    }
+    const tmp11 = jsx(FastImageDefault, { fadeDuration: 0, source: first, style: tmp7, accessible, accessibilityLabel, resizeMode });
+    cResult[4] = accessibilityLabel;
+    cResult[5] = accessible;
+    cResult[6] = resizeMode;
+    cResult[7] = tmp7;
+    cResult[8] = tmp11;
+    tmp8 = tmp11;
+  }
+  const items = [{ width: result, height: result1 }];
+  cResult[1] = result;
+  cResult[2] = result1;
+  cResult[3] = items;
+  tmp7 = items;
+}) : ((width) => {
   let accessibilityLabel;
   let accessible;
   let resizeMode;
@@ -31,9 +90,13 @@ export const InkQuillSpotIllustration = function InkQuillSpotIllustration(width)
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj2 = { uri: _modDef12248 };
+  const obj2 = { uri: _modDef12143 };
   FastImageDefault;
   size = { width: num * num3, height: num2 * num3 };
   const items = [size];
   return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
-};
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("design/components/mana-assets/native/generated/InkQuillSpotIllustration.native.tsx");
+
+export const InkQuillSpotIllustration = tmp2;

@@ -1,27 +1,62 @@
-// Module ID: 15410
-// Function ID: 15411
+// Module ID: 15398
+// Function ID: 15399
 // Name: UserSettingsDesignSystemHaptics
-// Dependencies: [19, 17, 21, 4836, 5281, 4801, 4802, 5279, 5919, 4832, 4803, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 558, 576, 4802, 5282, 4803, 5918, 5280, 4833, 4804, 2]
 
-// Module 15410 (UserSettingsDesignSystemHaptics)
+// Module 15398 (UserSettingsDesignSystemHaptics)
 import react_native from "react-native" /* 17 */;
-import HapticUtils from "HapticUtils" /* 4801 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
-import Patterns from "Patterns" /* 4803 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import Card_Card from "Card/Card" /* 5919 */;
+import react2 from "react" /* 576 */;
+import HapticUtils from "HapticUtils" /* 4802 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4803 */;
+import Patterns from "Patterns" /* 4804 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import Stack_Stack from "Stack/Stack" /* 5280 */;
+import Card_Card from "Card/Card" /* 5918 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let description;
 
 let c3;
 let closure_4;
-function HapticButton(text) {
+const ScrollView = react_native.ScrollView;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+let closure_5 = createStyles.createStyles({ container: { padding: 16, alignItems: "center" } });
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+  let tmp4;
+  let obj = type(576);
+  const cResult = obj.c(5);
+  const tmp = type;
+  type = type.type;
+  const label = type.label;
+  if (cResult[0] !== type) {
+    const fn = function l() {
+      const obj = HapticUtils;
+      return obj.triggerHapticFeedback(type);
+    };
+    cResult[0] = type;
+    cResult[1] = fn;
+    tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] === label) {
+    let tmp5;
+    if (cResult[3] === tmp4) {
+      tmp5 = cResult[4];
+    }
+    return tmp5;
+  }
+  const tmp6 = closure_3(tmp(5282).Button, { variant: "secondary", onPress: tmp4, text: label });
+  cResult[2] = label;
+  cResult[3] = tmp4;
+  cResult[4] = tmp6;
+  tmp5 = tmp6;
+}) : ((text) => {
   const type = text.type;
   let obj = {
     variant: "secondary",
@@ -31,11 +66,8 @@ function HapticButton(text) {
     },
     text: text.label
   };
-  return closure_3(type(5281).Button, obj);
-}
-const ScrollView = react_native.ScrollView;
-({ jsx: c3, jsxs: closure_4 } = Fragment);
-let closure_5 = createStyles.createStyles({ container: { padding: 16, alignItems: "center" } });
+  return closure_3(type(5282).Button, obj);
+});
 let obj = { type: haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT, label: "IMPACT_LIGHT" };
 let items = [obj, , , , , , , , ];
 let obj2 = { type: haptics_HapticFeedbackTypesDefault.IMPACT_MEDIUM, label: "IMPACT_MEDIUM" };
@@ -60,9 +92,8 @@ let obj11 = { type: haptics_HapticFeedbackTypesDefault.NOTIFICATION_SUCCESS, lab
 items1[1] = obj11;
 let obj12 = { type: haptics_HapticFeedbackTypesDefault.NOTIFICATION_WARNING, label: "NOTIFICATION_WARNING" };
 items1[2] = obj12;
-let items2 = [{ type: haptics_HapticFeedbackTypesDefault.CONFIRM, label: "CONFIRM" }, , , , , , , ];
-({ type: haptics_HapticFeedbackTypesDefault.CONFIRM, label: "CONFIRM" });
-items2[1] = { type: haptics_HapticFeedbackTypesDefault.REJECT, label: "REJECT" };
+let obj13 = { type: haptics_HapticFeedbackTypesDefault.CONFIRM, label: "CONFIRM" };
+let items2 = [obj13, { type: haptics_HapticFeedbackTypesDefault.REJECT, label: "REJECT" }, , , , , , ];
 ({ type: haptics_HapticFeedbackTypesDefault.REJECT, label: "REJECT" });
 items2[2] = { type: haptics_HapticFeedbackTypesDefault.GESTURE_START, label: "GESTURE_START" };
 ({ type: haptics_HapticFeedbackTypesDefault.GESTURE_START, label: "GESTURE_START" });
@@ -103,9 +134,142 @@ items3[11] = { type: haptics_HapticFeedbackTypesDefault.EFFECT_HEAVY_CLICK, labe
 items3[12] = { type: haptics_HapticFeedbackTypesDefault.EFFECT_TICK, label: "EFFECT_TICK" };
 let items4 = [{ label: "Success", description: "oO.O", pattern: "success" }, { label: "Error", description: "OO.OO", pattern: "error" }, { label: "Warning", description: "O.O", pattern: "warning" }, { label: "Heartbeat", description: "oO--oO", pattern: "heartbeat" }, { label: "Triple Click", description: "o.o.o", pattern: "tripleClick" }, { label: "Notification", description: "o-O=o", pattern: "notification" }];
 ({ type: haptics_HapticFeedbackTypesDefault.EFFECT_TICK, label: "EFFECT_TICK" });
-const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemHaptics.tsx");
-
-export default function UserSettingsDesignSystemHaptics() {
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let Stack;
+  let Stack2;
+  let Stack3;
+  let Stack4;
+  let Stack6;
+  let first;
+  let items5;
+  let obj12;
+  let obj3;
+  let obj5;
+  let obj7;
+  let obj9;
+  let tmp10;
+  let tmp15;
+  let tmp20;
+  let tmp25;
+  let tmp30;
+  let obj = react2;
+  const cResult = obj.c(7);
+  const tmp4 = closure_5();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { children: React3(Stack, obj3) };
+    const Card = tmp(5918).Card;
+    obj3 = { children: items };
+    Stack = tmp(5280).Stack;
+    items = [_false(Text_Text.Text, { variant: "text-lg/bold", children: "Semantic Types" }), _false(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Existing haptic types with platform-specific remapping for the best feel." }), ];
+    items[2] = items.map((label) => {
+      label = label.label;
+      const obj = { type: label.type, label };
+      return closure_1_3(closure_1_6, obj, label);
+    });
+    const tmp9 = _false(Card, obj2);
+    cResult[0] = tmp9;
+    first = tmp9;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj4 = { children: React3(Stack2, obj5) };
+    const Card2 = tmp(5918).Card;
+    obj5 = { children: items1 };
+    Stack2 = tmp(5280).Stack;
+    items1 = [_false(Text_Text.Text, { variant: "text-lg/bold", children: "Impact / Notification Types" }), _false(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Direct 1:1 mappings for impact and notification feedback." }), ];
+    items1[2] = items1.map((label) => {
+      label = label.label;
+      const obj = { type: label.type, label };
+      return closure_1_3(closure_1_6, obj, label);
+    });
+    const tmp14 = _false(Card2, obj4);
+    cResult[1] = tmp14;
+    tmp10 = tmp14;
+  } else {
+    tmp10 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj6 = { children: React3(Stack3, obj7) };
+    const Card3 = tmp(5918).Card;
+    obj7 = { children: items2 };
+    Stack3 = tmp(5280).Stack;
+    items2 = [_false(Text_Text.Text, { variant: "text-lg/bold", children: "Gesture / UI Types" }), _false(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Feedback for gestures, toggles, and UI confirmations. New in v3." }), ];
+    items2[2] = items2.map((label) => {
+      label = label.label;
+      const obj = { type: label.type, label };
+      return closure_1_3(closure_1_6, obj, label);
+    });
+    const tmp19 = _false(Card3, obj6);
+    cResult[2] = tmp19;
+    tmp15 = tmp19;
+  } else {
+    tmp15 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj8 = { children: React3(Stack4, obj9) };
+    const Card4 = tmp(5918).Card;
+    obj9 = { children: items3 };
+    Stack4 = tmp(5280).Stack;
+    items3 = [_false(Text_Text.Text, { variant: "text-lg/bold", children: "Platform Haptic Types" }), _false(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Native Android haptics with iOS Core Haptics approximations. Cross-platform in v3." }), ];
+    items3[2] = items3.map((label) => {
+      label = label.label;
+      const obj = { type: label.type, label };
+      return closure_1_3(closure_1_6, obj, label);
+    });
+    const tmp24 = _false(Card4, obj8);
+    cResult[3] = tmp24;
+    tmp20 = tmp24;
+  } else {
+    tmp20 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj10 = { spacing: 24, children: items4 };
+    items4 = [first, tmp10, tmp15, tmp20, ];
+    const Stack5 = tmp(5280).Stack;
+    const obj11 = { children: React3(Stack6, obj12) };
+    const Card5 = tmp(5918).Card;
+    obj12 = { children: items5 };
+    Stack6 = tmp(5280).Stack;
+    items5 = [
+      _false(Text_Text.Text, { variant: "text-lg/bold", children: "Pattern Presets" }),
+      _false(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Built-in haptic sequences using triggerPattern(). Each preset uses a compact notation (o=soft, O=strong, .=short gap, -=medium gap, ==long gap)." }),
+      items4.map((description) => {
+          let closure_0;
+          let label;
+          ({ label, pattern: closure_0 } = description);
+          description = description.description;
+          let obj = {
+            variant: "secondary",
+            onPress() {
+              const obj = Patterns;
+              return obj.triggerPattern(Patterns.Patterns[closure_0]);
+            },
+            text: "" + label + " (" + description + ")"
+          };
+          const Button = closure_0(closure_1[7]).Button;
+          return closure_3(Button, obj, label);
+        })
+    ];
+    items4[4] = _false(Card5, obj11);
+    const tmp29 = React3(Stack5, obj10);
+    cResult[4] = tmp29;
+    tmp25 = tmp29;
+  } else {
+    tmp25 = cResult[4];
+  }
+  if (cResult[5] !== tmp4.container) {
+    const obj13 = { contentContainerStyle: tmp4.container, children: tmp25 };
+    const tmp33 = _false(ScrollView, obj13);
+    cResult[5] = tmp4.container;
+    cResult[6] = tmp33;
+    tmp30 = tmp33;
+  } else {
+    tmp30 = cResult[6];
+  }
+  return tmp30;
+}) : (() => {
   let Stack;
   let Stack2;
   let Stack3;
@@ -130,7 +294,7 @@ export default function UserSettingsDesignSystemHaptics() {
   items[2] = items.map((label) => {
     label = label.label;
     const obj = { type: label.type, label };
-    return closure_1_3(HapticButton, obj, label);
+    return closure_1_3(closure_1_6, obj, label);
   });
   items1 = [_false(Card, obj3), , , , ];
   const obj5 = { children: React3(Stack3, obj6) };
@@ -143,7 +307,7 @@ export default function UserSettingsDesignSystemHaptics() {
     items1.map((label) => {
       label = label.label;
       const obj = { type: label.type, label };
-      return closure_1_3(HapticButton, obj, label);
+      return closure_1_3(closure_1_6, obj, label);
     })
   ];
   items1[1] = _false(Card2, obj5);
@@ -157,7 +321,7 @@ export default function UserSettingsDesignSystemHaptics() {
     items2.map((label) => {
       label = label.label;
       const obj = { type: label.type, label };
-      return closure_1_3(HapticButton, obj, label);
+      return closure_1_3(closure_1_6, obj, label);
     })
   ];
   items1[2] = _false(Card3, obj7);
@@ -171,7 +335,7 @@ export default function UserSettingsDesignSystemHaptics() {
     items3.map((label) => {
       label = label.label;
       const obj = { type: label.type, label };
-      return closure_1_3(HapticButton, obj, label);
+      return closure_1_3(closure_1_6, obj, label);
     })
   ];
   items1[3] = _false(Card4, obj9);
@@ -195,10 +359,13 @@ export default function UserSettingsDesignSystemHaptics() {
         },
         text: "" + label + " (" + description + ")"
       };
-      const Button = closure_0(closure_1[4]).Button;
+      const Button = closure_0(closure_1[7]).Button;
       return closure_3(Button, obj, label);
     })
   ];
   items1[4] = _false(Card5, obj11);
   return _false(ScrollView, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemHaptics.tsx");
+
+export default tmp4;

@@ -1,12 +1,12 @@
-// Module ID: 11080
-// Function ID: 11081
+// Module ID: 10948
+// Function ID: 10949
 // Name: handleContentLinking
-// Dependencies: [5, 5870, 1074, 5039, 6665, 1101, 10886, 2]
+// Dependencies: [5, 5871, 1086, 5040, 6666, 1113, 9537, 2]
 // Exports: default
 
-// Module 11080 (handleContentLinking)
-import Constants from "Constants" /* 1074 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5870 */;
+// Module 10948 (handleContentLinking)
+import Constants from "Constants" /* 1086 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5871 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _handleContentLinking() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -60,7 +60,7 @@ let obj = function _handleContentLinking() {
             skipMessageFetch = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else {
           if (1 === c3) {
@@ -131,7 +131,7 @@ let obj = function _handleContentLinking() {
               obj5.setSelectedSummary(c1, c4);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
           if (safe) {
             const obj9 = { navigationReplace, openChannel: true, skipMessageFetch };

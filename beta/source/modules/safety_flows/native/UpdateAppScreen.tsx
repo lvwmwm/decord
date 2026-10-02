@@ -1,18 +1,19 @@
-// Module ID: 17704
-// Function ID: 17705
+// Module ID: 17706
+// Function ID: 17707
 // Name: UpdateAppScreen
-// Dependencies: [17, 21, 4836, 576, 4832, 1115, 2781, 5281, 2]
-// Exports: default
+// Dependencies: [17, 21, 4837, 588, 558, 576, 4833, 1127, 2784, 5282, 2]
 
-// Module 17704 (UpdateAppScreen)
-import nativeDefault from "native" /* 576 */;
-import intl4 from "intl" /* 1115 */;
-import _modDef2781 from "module_2781" /* 2781 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
+// Module 17706 (UpdateAppScreen)
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import _modDef2784 from "module_2784" /* 2784 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let BundleUpdaterManager;
@@ -31,9 +32,83 @@ obj2 = { flexDirection: "column", justifyContent: "center", gap: nativeDefault.s
 createStyles = createStyles.createStyles;
 obj3 = { marginTop: nativeDefault.space.PX_8 };
 let closure_7 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/safety_flows/native/UpdateAppScreen.tsx");
-
-export default function UpdateAppScreen() {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let tmp10;
+  let tmp14;
+  let tmp18;
+  let tmp6;
+  const obj = react;
+  const cResult = obj.c(9);
+  const tmp4 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
+      BundleUpdaterManager = BundleUpdaterManager.BundleUpdaterManager;
+      BundleUpdaterManager.reload();
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef2784.yxqMCD) };
+    const Text = tmp(4833).Text;
+    intl = tmp(1127).intl;
+    const tmp9 = hasOwnProperty(Text, obj2);
+    cResult[1] = tmp9;
+    tmp6 = tmp9;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef2784.VBZJJg) };
+    const Text2 = tmp(4833).Text;
+    intl2 = tmp(1127).intl;
+    const tmp13 = hasOwnProperty(Text2, obj3);
+    cResult[2] = tmp13;
+    tmp10 = tmp13;
+  } else {
+    tmp10 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj4 = { onPress: first, text: intl3.string(_modDef2784.o4D6fm), variant: "primary", size: "md" };
+    const Button = tmp(5282).Button;
+    intl3 = tmp(1127).intl;
+    const tmp17 = hasOwnProperty(Button, obj4);
+    cResult[3] = tmp17;
+    tmp14 = tmp17;
+  } else {
+    tmp14 = cResult[3];
+  }
+  if (cResult[4] !== tmp4.buttonContainer) {
+    const obj5 = { style: tmp4.buttonContainer, children: tmp14 };
+    const tmp21 = hasOwnProperty(React3, obj5);
+    cResult[4] = tmp4.buttonContainer;
+    cResult[5] = tmp21;
+    tmp18 = tmp21;
+  } else {
+    tmp18 = cResult[5];
+  }
+  if (cResult[6] === tmp4.container) {
+    let tmp22;
+    if (cResult[7] === tmp18) {
+      tmp22 = cResult[8];
+    }
+    return tmp22;
+  }
+  const obj6 = { style: tmp4.container, children: items };
+  items = [tmp6, tmp10, tmp18];
+  const tmp23 = metroRequire(React3, obj6);
+  cResult[6] = tmp4.container;
+  cResult[7] = tmp18;
+  cResult[8] = tmp23;
+  tmp22 = tmp23;
+}) : (() => {
   let Button;
   let intl;
   let intl2;
@@ -42,11 +117,11 @@ export default function UpdateAppScreen() {
   let obj5;
   const tmp = closure_7();
   const obj = { style: tmp.container, children: items };
-  const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef2781.yxqMCD) };
+  const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef2784.yxqMCD) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [hasOwnProperty(Text, obj2), , ];
-  const obj3 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef2781.VBZJJg) };
+  const obj3 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef2784.VBZJJg) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = hasOwnProperty(Text2, obj3);
@@ -56,7 +131,7 @@ export default function UpdateAppScreen() {
       BundleUpdaterManager = BundleUpdaterManager.BundleUpdaterManager;
       BundleUpdaterManager.reload();
     },
-    text: intl3.string(_modDef2781.o4D6fm),
+    text: intl3.string(_modDef2784.o4D6fm),
     variant: "primary",
     size: "md"
   };
@@ -64,4 +139,7 @@ export default function UpdateAppScreen() {
   intl3 = intl4.intl;
   items[2] = hasOwnProperty(React3, obj4);
   return metroRequire(React3, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/safety_flows/native/UpdateAppScreen.tsx");
+
+export default tmp5;

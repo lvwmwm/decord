@@ -1,21 +1,21 @@
-// Module ID: 9110
-// Function ID: 9111
+// Module ID: 9087
+// Function ID: 9088
 // Name: applyBackgroundOption
-// Dependencies: [5, 1372, 9111, 6408, 1074, 9112, 4891, 9116, 1397, 9121, 9115, 9114, 9122, 2]
+// Dependencies: [5, 1378, 9088, 6408, 1086, 9089, 4892, 9093, 1403, 9098, 9092, 9091, 9099, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 9110 (applyBackgroundOption)
-import Constants from "Constants" /* 1074 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 9112 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 9114 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 9116 */;
-import getFilterImageDefault from "getFilterImage" /* 9121 */;
-import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 9122 */;
+// Module 9087 (applyBackgroundOption)
+import Constants from "Constants" /* 1086 */;
+import AvatarUtils from "AvatarUtils" /* 1403 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4892 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 9089 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 9091 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 9093 */;
+import getFilterImageDefault from "getFilterImage" /* 9098 */;
+import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 9099 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1372 */;
-import VideoBackgroundStore from "VideoBackgroundStore" /* 9111 */;
+import UserStore from "UserStore" /* 1378 */;
+import VideoBackgroundStore from "VideoBackgroundStore" /* 9088 */;
 import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6408 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ obj = function _applyBackgroundOption() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c7;
@@ -95,11 +95,11 @@ obj = function _applyBackgroundOption() {
             if (null == closure_2) {
               applyBackgroundMediaFilterSettings(closure_0, closure_1, BaseConnectionEvent.FilterSettingsGraph.NONE);
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else if (closure_2 === metroImportDefault) {
               applyBackgroundMediaFilterSettings(closure_0, closure_1, BaseConnectionEvent.FilterSettingsGraph.BACKGROUND_BLUR);
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else {
               if (typeof closure_2 !== "string") {
                 let isAnimatedIconHashResult;
@@ -184,7 +184,7 @@ obj = function _applyBackgroundOption() {
           }
         }
         c9 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp47) {
         let closure_6 = tmp47;
         if (0 === c7) {
@@ -220,14 +220,14 @@ obj = function _applyBackgroundOptionLive() {
         obj = closure_131_0(closure_131_2[10]);
         const result = obj.trackBackgroundOptionUpdated(closure_0, location, "Enabled");
       }
-      await "HermesInternal";
+      await "IconComponent";
       flag = track.track;
-      const tmp22 = track;
+      const tmp14 = track;
       if (flag === undefined) {
         flag = true;
       }
-      location = tmp22.location;
-      return "flex";
+      location = tmp14.location;
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -255,14 +255,14 @@ obj = function _applyBackgroundOptionPreview() {
         obj = closure_132_0(closure_132_2[10]);
         const result1 = obj.trackBackgroundOptionUpdated(closure_0, location, "Preview");
       }
-      await "HermesInternal";
+      await "IconComponent";
       flag = track.track;
       const tmp15 = track;
       if (flag === undefined) {
         flag = true;
       }
       location = tmp15.location;
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;

@@ -1,16 +1,16 @@
-// Module ID: 8721
-// Function ID: 8722
+// Module ID: 8716
+// Function ID: 8717
 // Name: ApplicationInstallUtils
-// Dependencies: [8591, 5305, 8505, 2]
+// Dependencies: [8588, 5306, 8502, 2]
 // Exports: canInstallApplication, isAppUserInstallable, shouldInstallApplicationOnDemand
 
-// Module 8721 (ApplicationInstallUtils)
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5305 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8505 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8591 */;
+// Module 8716 (ApplicationInstallUtils)
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8502 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8588 */;
 import size from "module_2" /* 2 */;
 
-const f87185 = (oauth2_install_params) => {
+const f97764 = (oauth2_install_params) => {
   let prop;
   if (oauth2_install_params != null) {
     prop = oauth2_install_params.oauth2_install_params;
@@ -28,15 +28,15 @@ const f87185 = (oauth2_install_params) => {
 const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;
 let result = size.fileFinishedImporting("modules/applications/utils/ApplicationInstallUtils.tsx");
 
-export const canInstallApplication = function canInstallApplication(application) {
-  const integrationTypesConfig = application.integrationTypesConfig;
-  let tmp = null != application.customInstallUrl || null != application.installParams;
+export const canInstallApplication = function canInstallApplication(installAppProps) {
+  const integrationTypesConfig = installAppProps.integrationTypesConfig;
+  let tmp = null != installAppProps.customInstallUrl || null != installAppProps.installParams;
   if (!tmp) {
     let someResult = null != integrationTypesConfig;
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f87185);
+      someResult = values.some(f97764);
     }
     tmp = someResult;
   }
@@ -50,7 +50,7 @@ export const isAppUserInstallable = function isAppUserInstallable(integrationTyp
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f87185);
+      someResult = values.some(f97764);
     }
     tmp = someResult;
   }

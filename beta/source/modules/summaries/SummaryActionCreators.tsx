@@ -1,24 +1,27 @@
-// Module ID: 10886
-// Function ID: 10887
+// Module ID: 9537
+// Function ID: 9538
 // Name: SummaryActionCreators
-// Dependencies: [5, 19, 5589, 2045, 10887, 1074, 1091, 573, 1271, 4735, 12, 10889, 563, 2]
-// Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries, useMaybeFetchChannelAffinitiesAndSummaries
+// Dependencies: [5, 19, 5590, 2051, 9538, 1086, 1103, 585, 1283, 4737, 12, 9540, 558, 576, 573, 2]
+// Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages
 
-// Module 10886 (SummaryActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 9537 (SummaryActionCreators)
+import react2 from "react" /* 576 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SummaryStore from "SummaryStore" /* 10887 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SummaryStore from "SummaryStore" /* 9538 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let channel, closure_3;
 
-const f92170 = () => connected.isConnected();
+let tmp;
+const useStateFromStores = tmp(573);
 function fetchSummary() {
   return obj(...arguments);
 }
@@ -37,7 +40,7 @@ let obj = function _fetchSummary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -103,7 +106,7 @@ let obj = function _fetchSummary() {
             dispatch(obj8);
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp34) {
           body = tmp34;
           if (0 === c5) {
@@ -118,9 +121,6 @@ let obj = function _fetchSummary() {
   });
   return obj(...arguments);
 };
-function fetchSummaries() {
-  return obj(...arguments);
-}
 obj = function _fetchSummaries() {
   obj = _asyncToGenerator(async (channelId) => {
     let c7 = 0;
@@ -136,7 +136,7 @@ obj = function _fetchSummaries() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -224,7 +224,7 @@ obj = function _fetchSummaries() {
             dispatch(obj9);
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp42) {
           closure_5 = tmp42;
           if (0 === c6) {
@@ -239,49 +239,6 @@ obj = function _fetchSummaries() {
   });
   return obj(...arguments);
 };
-function setHighlightedSummary(channelId, arg1) {
-  let tmp = arg1;
-  obj = { type: "SET_HIGHLIGHTED_SUMMARY", channelId, summaryId: tmp };
-  const dispatch = DispatcherDefault.dispatch;
-  DispatcherDefault;
-  if (arg1 == null) {
-    tmp = null;
-  }
-  dispatch(obj);
-}
-function setSelectedSummary(c1, c4) {
-  let tmp = c4;
-  const tmp2 = null != c1 && null != tmp;
-  if (tmp2) {
-    fetchSummary(c1, tmp);
-  }
-  obj = { type: "SET_SELECTED_SUMMARY", channelId: c1, summaryId: tmp };
-  const dispatch = DispatcherDefault.dispatch;
-  DispatcherDefault;
-  if (tmp == null) {
-    tmp = null;
-  }
-  dispatch(obj);
-}
-function updateVisibleMessages(arg0, arg1) {
-  let tmp = arg0;
-  const dispatch = DispatcherDefault.dispatch;
-  DispatcherDefault;
-  if (arg0 == null) {
-    tmp = null;
-  }
-  let tmp3 = arg1;
-  obj = { type: "UPDATE_VISIBLE_MESSAGES", topVisibleMessage: tmp, bottomVisibleMessage: tmp3 };
-  if (arg1 == null) {
-    tmp3 = null;
-  }
-  dispatch(obj);
-}
-function setSummaryFeedback(summary, rating) {
-  obj = DispatcherDefault;
-  const obj2 = { type: "SET_SUMMARY_FEEDBACK", summary, rating };
-  obj.dispatch(obj2);
-}
 function fetchChannelAffinities() {
   return obj(...arguments);
 }
@@ -298,7 +255,7 @@ obj = function _fetchChannelAffinities() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -378,7 +335,7 @@ obj = function _fetchChannelAffinities() {
           const _Date = Date;
           dispatch(obj8);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp34) {
         closure_3 = tmp34;
@@ -478,7 +435,7 @@ obj = function _fetchSummariesBulk() {
     const tmp21 = closure_132_1(closure_132_2[7]);
     obj13 = { channelIds: substr };
     dispatch(obj12);
-    await "HermesInternal";
+    await "IconComponent";
     requestedAt = tmp4;
     substr = closure_0;
     let obj4 = closure_1;
@@ -487,120 +444,10 @@ obj = function _fetchSummariesBulk() {
     }
     flag = obj4.useQuickSwitcher ?? true;
     flag2 = obj4.useChannelAffinities ?? true;
-    return "flex";
+    return "Reflect";
   });
   return obj(...arguments);
 };
-function useChannelSummaries(channelIds) {
-  let connected;
-  channelIds = channelIds.channelIds;
-  if (channelIds === undefined) {
-    channelIds = [];
-  }
-  if (channelIds === undefined) {
-    channelIds = [];
-  }
-  let memo;
-  obj = channelIds(memo[12]);
-  const items = [GatewayConnectionStore];
-  const stateFromStores = obj.useStateFromStores(items, f92170);
-  const items1 = [channelIds];
-  memo = react.useMemo(() => channelIds.join(","), items1);
-  const items2 = [memo, stateFromStores];
-  const effect = react.useEffect(() => {
-    function fetch() {
-      return obj(...arguments);
-    }
-    obj = function _fetch() {
-      obj = _asyncToGenerator(async (arg0, value) => {
-        let closure_2;
-        if (c4 === 2) {
-          c4 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          let c3;
-          try {
-            c4 = 2;
-            if (0 === c1) {
-              if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c4 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                let closure_0 = tmp;
-                c3 = 1;
-                c1 = 3;
-                c4 = 1;
-                const obj4 = { value: closure_2_15(), done: false };
-                return obj4;
-              }
-            } else {
-              if (1 === c1) {
-                c3 = 0;
-              } else if (2 === c1) {
-                if (arg0 === 1) {
-                  c4 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c4 = 3;
-                  const obj5 = { value, done: true };
-                  return obj5;
-                } else {
-                  c4 = 3;
-                  return { value: "HermesInternal", done: null };
-                }
-              } else if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 0;
-                c4 = 3;
-                obj = { value, done: true };
-                return obj;
-              } else {
-                c3 = 0;
-              }
-              c1 = 2;
-              c4 = 1;
-              const obj6 = { value: closure_2_17(tmp10.split(",")), done: false };
-              return obj6;
-            }
-          } catch (tmp10) {
-            if (0 === c3) {
-              c4 = 3;
-              throw tmp10;
-            } else {
-              c1 = 1;
-            }
-          }
-        }
-      });
-      return obj(...arguments);
-    };
-    const tmp = stateFromStores;
-    if (tmp) {
-      fetch();
-    }
-  }, items2);
-  let obj2 = channelIds(memo[12]);
-  const items3 = [SummaryStore];
-  return obj2.useStateFromStoresArray(items3, () => SummaryStore.topSummaries(), []);
-}
-function deleteSummary(arg0) {
-  return obj(...arguments);
-}
 obj = function _deleteSummary() {
   obj = _asyncToGenerator(async (summary) => {
     let c5 = 0;
@@ -616,7 +463,7 @@ obj = function _deleteSummary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -660,7 +507,7 @@ obj = function _deleteSummary() {
             obj.dispatch(obj7);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp20) {
           closure_3 = tmp20;
@@ -680,52 +527,170 @@ const Routes = Constants.Routes;
 let closure_9 = 30 * DurationsDefault.Millis.SECOND;
 let closure_10 = {};
 let closure_11 = {};
-const result = size.fileFinishedImporting("modules/summaries/SummaryActionCreators.tsx");
-
-export default { setSummaryFeedback, updateVisibleMessages, setSelectedSummary, setHighlightedSummary, fetchSummaries, fetchSummariesBulk, useChannelSummaries, deleteSummary };
-export { fetchSummary };
-export { fetchSummaries };
-export { setHighlightedSummary };
-export const toggleTopicsBar = function toggleTopicsBar() {
-  obj = DispatcherDefault;
-  obj.dispatch({ type: "TOGGLE_TOPICS_BAR" });
-};
-export { setSelectedSummary };
-export { updateVisibleMessages };
-export const stopPolling = function stopPolling(arg0) {
-  if (null == closure_10[arg0]) {
-    closure_10[arg0] = 0;
-  }
-  closure_10[arg0] = closure_10[arg0] + -1;
-  if (closure_10[arg0] <= 0) {
-    if (null == closure_10[arg0]) {
-      closure_10[arg0] = 0;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let connected;
+  let obj2;
+  let stateFromStores;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp = stateFromStores;
+  obj = stateFromStores(576);
+  const cResult = obj.c(10);
+  if (cResult[0] !== arg0) {
+    let items = arg0;
+    if (undefined === arg0) {
+      items = [];
     }
-    closure_10[arg0] = closure_10[arg0];
-    const _clearInterval = clearInterval;
-    clearInterval(closure_11[arg0]);
+    cResult[0] = arg0;
+    cResult[1] = items;
+    obj2 = items;
+  } else {
+    obj2 = cResult[1];
   }
-};
-export { setSummaryFeedback };
-export { fetchChannelAffinities };
-export { fetchSummariesBulk };
-export const useMaybeFetchChannelAffinitiesAndSummaries = function useMaybeFetchChannelAffinitiesAndSummaries() {
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [GatewayConnectionStore];
+    const fn = function o() {
+      return connected.isConnected();
+    };
+    cResult[2] = items1;
+    cResult[3] = fn;
+    tmp5 = fn;
+    tmp4 = items1;
+  } else {
+    tmp4 = cResult[2];
+    tmp5 = cResult[3];
+  }
+  const tmpResult = tmp(573);
+  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[4] !== obj2) {
+    const joined = obj2.join(",");
+    cResult[4] = obj2;
+    cResult[5] = joined;
+    tmp8 = joined;
+  } else {
+    tmp8 = cResult[5];
+  }
+  let closure_1 = tmp8;
+  if (cResult[6] === tmp8) {
+    let tmp10;
+    let tmp11;
+    if (cResult[7] === stateFromStores) {
+      tmp10 = cResult[8];
+      tmp11 = cResult[9];
+    }
+    const effect = react.useEffect(tmp10, tmp11);
+  }
+  const fn2 = function p() {
+    function fetch() {
+      return closure_0(...arguments);
+    }
+    const tmp = closure_0;
+    if (tmp) {
+      closure_0 = _asyncToGenerator(async (arg0, value) => {
+        if (c4 === 2) {
+          c4 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj2 = { value, done: true };
+            return obj2;
+          } else {
+            return { value: "IconComponent", done: null };
+          }
+        } else {
+          let c3;
+          try {
+            c4 = 2;
+            if (0 === c1) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                closure_0 = tmp;
+                c3 = 1;
+                c1 = 3;
+                c4 = 1;
+                const obj4 = { value: fetchChannelAffinities(), done: false };
+                return obj4;
+              }
+            } else {
+              if (1 === c1) {
+                c3 = 0;
+              } else if (2 === c1) {
+                if (arg0 === 1) {
+                  c4 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 3;
+                  const obj5 = { value, done: true };
+                  return obj5;
+                } else {
+                  c4 = 3;
+                  return { value: "IconComponent", done: null };
+                }
+              } else if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c3 = 0;
+                c4 = 3;
+                obj = { value, done: true };
+                return obj;
+              } else {
+                c3 = 0;
+              }
+              c1 = 2;
+              c4 = 1;
+              const obj6 = { value: fetchSummariesBulk(c1.split(",")), done: false };
+              return obj6;
+            }
+          } catch (tmp10) {
+            let closure_2 = tmp10;
+            if (0 === c3) {
+              c4 = 3;
+              throw tmp10;
+            } else {
+              c1 = 1;
+            }
+          }
+        }
+      });
+      const tmp3 = fetch();
+    }
+  };
+  const items2 = [tmp8, stateFromStores];
+  cResult[6] = tmp8;
+  cResult[7] = stateFromStores;
+  cResult[8] = fn2;
+  cResult[9] = items2;
+  tmp11 = items2;
+  tmp10 = fn2;
+}) : (() => {
+  let connected;
   let items = arg0;
   if (arg0 === undefined) {
     items = [];
   }
   let memo;
+  obj = items(memo[14]);
   const items1 = [GatewayConnectionStore];
-  obj = items(memo[12]);
-  const stateFromStores = obj.useStateFromStores(items1, f92170);
+  const stateFromStores = obj.useStateFromStores(items1, () => connected.isConnected());
   const items2 = [items];
-  memo = react.useMemo(() => channelIds.join(","), items2);
+  memo = react.useMemo(() => items.join(","), items2);
   const items3 = [memo, stateFromStores];
   const effect = react.useEffect(() => {
     function fetch() {
       return obj(...arguments);
     }
-    obj = function _fetch() {
+    obj = function _fetch2() {
       obj = _asyncToGenerator(async (arg0, value) => {
         let closure_2;
         if (c4 === 2) {
@@ -738,7 +703,7 @@ export const useMaybeFetchChannelAffinitiesAndSummaries = function useMaybeFetch
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -773,7 +738,7 @@ export const useMaybeFetchChannelAffinitiesAndSummaries = function useMaybeFetch
                   return obj5;
                 } else {
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 }
               } else if (arg0 === 1) {
                 c4 = 3;
@@ -808,6 +773,136 @@ export const useMaybeFetchChannelAffinitiesAndSummaries = function useMaybeFetch
       fetch();
     }
   }, items3);
+});
+let closure_19 = tmp2;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelSummaries(channelIds) {
+  let tmp4;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  obj = react2;
+  const cResult = obj.c(5);
+  channelIds = channelIds.channelIds;
+  if (cResult[0] !== channelIds) {
+    let items = channelIds;
+    if (undefined === channelIds) {
+      items = [];
+    }
+    cResult[0] = channelIds;
+    cResult[1] = items;
+    tmp4 = items;
+  } else {
+    tmp4 = cResult[1];
+  }
+  closure_19(tmp4);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [SummaryStore];
+    const fn = function u() {
+      return SummaryStore.topSummaries();
+    };
+    const items2 = [];
+    cResult[2] = items1;
+    cResult[3] = fn;
+    cResult[4] = items2;
+    tmp8 = items2;
+    tmp7 = fn;
+    tmp6 = items1;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+    tmp8 = cResult[4];
+  }
+  const tmpResult = useStateFromStores;
+  return tmpResult.useStateFromStoresArray(tmp6, tmp7, tmp8);
+}) : (function useChannelSummaries(channelIds) {
+  channelIds = channelIds.channelIds;
+  if (channelIds === undefined) {
+    channelIds = [];
+  }
+  closure_19(channelIds);
+  const items = [SummaryStore];
+  obj = useStateFromStores;
+  return obj.useStateFromStoresArray(items, () => SummaryStore.topSummaries(), []);
+});
+function fetchSummaries() {
+  return obj(...arguments);
+}
+function setHighlightedSummary(channelId, arg1) {
+  let tmp = arg1;
+  obj = { type: "SET_HIGHLIGHTED_SUMMARY", channelId, summaryId: tmp };
+  const dispatch = DispatcherDefault.dispatch;
+  DispatcherDefault;
+  if (arg1 == null) {
+    tmp = null;
+  }
+  dispatch(obj);
+}
+function setSelectedSummary(c1, c4) {
+  let tmp = c4;
+  const tmp2 = null != c1 && null != tmp;
+  if (tmp2) {
+    fetchSummary(c1, tmp);
+  }
+  obj = { type: "SET_SELECTED_SUMMARY", channelId: c1, summaryId: tmp };
+  const dispatch = DispatcherDefault.dispatch;
+  DispatcherDefault;
+  if (tmp == null) {
+    tmp = null;
+  }
+  dispatch(obj);
+}
+function updateVisibleMessages(arg0, arg1) {
+  let tmp = arg0;
+  const dispatch = DispatcherDefault.dispatch;
+  DispatcherDefault;
+  if (arg0 == null) {
+    tmp = null;
+  }
+  let tmp3 = arg1;
+  obj = { type: "UPDATE_VISIBLE_MESSAGES", topVisibleMessage: tmp, bottomVisibleMessage: tmp3 };
+  if (arg1 == null) {
+    tmp3 = null;
+  }
+  dispatch(obj);
+}
+function setSummaryFeedback(summary, rating) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "SET_SUMMARY_FEEDBACK", summary, rating };
+  obj.dispatch(obj2);
+}
+function deleteSummary(arg0) {
+  return obj(...arguments);
+}
+const result = size.fileFinishedImporting("modules/summaries/SummaryActionCreators.tsx");
+
+export default { setSummaryFeedback, updateVisibleMessages, setSelectedSummary, setHighlightedSummary, fetchSummaries, fetchSummariesBulk, useChannelSummaries: tmp3, deleteSummary };
+export { fetchSummary };
+export { fetchSummaries };
+export { setHighlightedSummary };
+export const toggleTopicsBar = function toggleTopicsBar() {
+  obj = DispatcherDefault;
+  obj.dispatch({ type: "TOGGLE_TOPICS_BAR" });
 };
-export { useChannelSummaries };
+export { setSelectedSummary };
+export { updateVisibleMessages };
+export const stopPolling = function stopPolling(arg0) {
+  if (null == closure_10[arg0]) {
+    closure_10[arg0] = 0;
+  }
+  closure_10[arg0] = closure_10[arg0] + -1;
+  if (closure_10[arg0] <= 0) {
+    if (null == closure_10[arg0]) {
+      closure_10[arg0] = 0;
+    }
+    closure_10[arg0] = closure_10[arg0];
+    const _clearInterval = clearInterval;
+    clearInterval(closure_11[arg0]);
+  }
+};
+export { setSummaryFeedback };
+export { fetchChannelAffinities };
+export { fetchSummariesBulk };
+export const useMaybeFetchChannelAffinitiesAndSummaries = tmp2;
+export const useChannelSummaries = tmp3;
 export { deleteSummary };

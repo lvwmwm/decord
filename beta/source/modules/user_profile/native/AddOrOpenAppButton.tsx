@@ -1,28 +1,268 @@
-// Module ID: 12571
-// Function ID: 12572
+// Module ID: 12573
+// Function ID: 12574
 // Name: AddOrOpenAppButton
-// Dependencies: [5, 32, 19, 8591, 1074, 1484, 21, 11627, 8506, 4800, 6610, 11614, 4527, 1366, 8037, 8332, 1115, 5281, 576, 6584, 4849, 4701, 1611, 1241, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 8588, 1086, 1490, 21, 558, 576, 11513, 8503, 4801, 6611, 11500, 4530, 1372, 8041, 8329, 1127, 588, 5282, 6585, 4850, 4703, 1617, 1253, 2]
 
-// Module 12571 (AddOrOpenAppButton)
+// Module 12573 (AddOrOpenAppButton)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1074 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1484 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import ApplicationUtils from "ApplicationUtils" /* 8506 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8591 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 11614 */;
-import useIsAppDMDefault from "useIsAppDM" /* 11627 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1490 */;
+import ToastUtils from "ToastUtils" /* 4530 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import ClipboardUtils from "ClipboardUtils" /* 6611 */;
+import ApplicationUtils from "ApplicationUtils" /* 8503 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8588 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 11500 */;
+import useIsAppDMDefault from "useIsAppDM" /* 11513 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3, c4;
+let c3, c4, profileApplication;
 
-function AddAppButton(application) {
+let _asyncToGenerator = _asyncToGenerator_mod;
+const getSection = ApplicationCommandIndexStore.getSection;
+const AnalyticEvents = Constants.AnalyticEvents;
+const AppLauncherRouteName = AppLauncherNativeConstants.AppLauncherRouteName;
+const jsx = Fragment.jsx;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let application;
+  let botUserId;
+  let channel;
+  let guildId;
+  let tmp3;
+  const obj = react2;
+  const cResult = obj.c(6);
+  ({ application, botUserId, channel, guildId } = arg0);
+  const tmp2 = useIsAppDMDefault(channel);
+  if (cResult[0] === application) {
+    if (cResult[1] === botUserId) {
+      if (cResult[2] === channel) {
+        if (cResult[3] === guildId) {
+          if (cResult[4] === tmp2) {
+            tmp3 = cResult[5];
+          }
+          return tmp3;
+        }
+      }
+    }
+  }
+  if (tmp2) {
+    let tmp5;
+    if (null != channel) {
+      tmp5 = <closure_11 profileApplication={application} botUserId={botUserId} channel={channel} />;
+    }
+    cResult[0] = application;
+    cResult[1] = botUserId;
+    cResult[2] = channel;
+    cResult[3] = guildId;
+    cResult[4] = tmp2;
+    cResult[5] = tmp5;
+    tmp3 = tmp5;
+  }
+  tmp5 = <closure_10 application={application} guildId={guildId} />;
+}) : ((arg0) => {
+  let application;
+  let botUserId;
+  let channel;
+  let guildId;
+  ({ application, channel } = arg0);
+  ({ botUserId, guildId } = arg0);
+  if (useIsAppDMDefault(channel)) {
+    let tmp2;
+    if (null != channel) {
+      tmp2 = <closure_11 profileApplication={application} botUserId={botUserId} channel={channel} />;
+    }
+    return tmp2;
+  }
+  tmp2 = <closure_10 application={application} guildId={guildId} />;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
+  let intl;
+  const tmp = application;
+  let obj = application(576);
+  const cResult = obj.c(19);
+  application = application.application;
+  const guildId = application.guildId;
+  if (cResult[0] === application.customInstallUrl) {
+    if (cResult[1] === application.id) {
+      if (cResult[2] === application.installParams) {
+        if (cResult[3] === application.integrationTypesConfig) {
+          let tmp4;
+          let tmp5;
+          if (cResult[4] === guildId) {
+            tmp4 = cResult[5];
+          }
+          if (cResult[6] !== application) {
+            const fn2 = function c() {
+              const copy = ClipboardUtils.copy;
+              ClipboardUtils;
+              const obj = getApplicationInstallURL;
+              copy(obj.getApplicationInstallURL(application));
+              const obj2 = ToastUtils;
+              obj2.presentLinkCopied();
+            };
+            cResult[6] = application;
+            cResult[7] = fn2;
+            tmp5 = fn2;
+          } else {
+            tmp5 = cResult[7];
+          }
+          const customInstallUrl = application.customInstallUrl;
+          if (null != customInstallUrl) {
+            let PlusSmallIcon;
+            let tmp9;
+            let tmp11;
+            let obj2 = guildId(1372);
+            if (!obj2.isDiscordUrl(customInstallUrl)) {
+              PlusSmallIcon = tmp(8041).LinkExternalSmallIcon;
+            }
+            const _Symbol = Symbol;
+            if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+              let obj3 = { name: "longpress", label: intl.string(tmp(1127).t.XWDihq) };
+              intl = tmp(1127).intl;
+              const items = [obj3];
+              cResult[8] = items;
+              tmp9 = items;
+            } else {
+              tmp9 = cResult[8];
+            }
+            if (cResult[9] !== application) {
+              class C {
+                constructor(nativeEvent) {
+                  if ("longPress" === nativeEvent.nativeEvent.actionName) {
+                    const copy = ClipboardUtils.copy;
+                    ClipboardUtils;
+                    const obj = getApplicationInstallURL;
+                    copy(obj.getApplicationInstallURL(application));
+                    const obj2 = ToastUtils;
+                    obj2.presentLinkCopied();
+                  }
+                }
+              }
+              cResult[9] = application;
+              cResult[10] = C;
+            } else {
+              class C {
+                constructor(nativeEvent) {
+                  if ("longPress" === nativeEvent.nativeEvent.actionName) {
+                    const copy = ClipboardUtils.copy;
+                    ClipboardUtils;
+                    const obj = getApplicationInstallURL;
+                    copy(obj.getApplicationInstallURL(application));
+                    const obj2 = ToastUtils;
+                    obj2.presentLinkCopied();
+                  }
+                }
+              }
+            }
+            const _Symbol2 = Symbol;
+            if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+              class C {
+                constructor(nativeEvent) {
+                  if ("longPress" === nativeEvent.nativeEvent.actionName) {
+                    const copy = ClipboardUtils.copy;
+                    ClipboardUtils;
+                    const obj = getApplicationInstallURL;
+                    copy(obj.getApplicationInstallURL(application));
+                    const obj2 = ToastUtils;
+                    obj2.presentLinkCopied();
+                  }
+                }
+              }
+              const stringResult = obj4.string(tmp(1127).t.NgXl3C);
+              cResult[11] = stringResult;
+              tmp11 = stringResult;
+            } else {
+              class C {
+                constructor(nativeEvent) {
+                  if ("longPress" === nativeEvent.nativeEvent.actionName) {
+                    const copy = ClipboardUtils.copy;
+                    ClipboardUtils;
+                    const obj = getApplicationInstallURL;
+                    copy(obj.getApplicationInstallURL(application));
+                    const obj2 = ToastUtils;
+                    obj2.presentLinkCopied();
+                  }
+                }
+              }
+            }
+            if (cResult[12] !== PlusSmallIcon) {
+              class C {
+                constructor(nativeEvent) {
+                  if ("longPress" === nativeEvent.nativeEvent.actionName) {
+                    const copy = ClipboardUtils.copy;
+                    ClipboardUtils;
+                    const obj = getApplicationInstallURL;
+                    copy(obj.getApplicationInstallURL(application));
+                    const obj2 = ToastUtils;
+                    obj2.presentLinkCopied();
+                  }
+                }
+              }
+              const tmp15 = <PlusSmallIcon size="sm" color={guildId(588).colors.WHITE} />;
+              cResult[12] = PlusSmallIcon;
+              cResult[13] = tmp15;
+            } else {
+              class C {
+                constructor(nativeEvent) {
+                  if ("longPress" === nativeEvent.nativeEvent.actionName) {
+                    const copy = ClipboardUtils.copy;
+                    ClipboardUtils;
+                    const obj = getApplicationInstallURL;
+                    copy(obj.getApplicationInstallURL(application));
+                    const obj2 = ToastUtils;
+                    obj2.presentLinkCopied();
+                  }
+                }
+              }
+            }
+            if (cResult[14] === tmp10) {
+              class C {
+                constructor(nativeEvent) {
+                  if ("longPress" === nativeEvent.nativeEvent.actionName) {
+                    const copy = ClipboardUtils.copy;
+                    ClipboardUtils;
+                    const obj = getApplicationInstallURL;
+                    copy(obj.getApplicationInstallURL(application));
+                    const obj2 = ToastUtils;
+                    obj2.presentLinkCopied();
+                  }
+                }
+              }
+            }
+            cResult[14] = tmp10;
+            cResult[15] = tmp5;
+            cResult[16] = tmp4;
+            cResult[17] = tmp13;
+            cResult[18] = jsx(tmp(5282).Button, { text: tmp11, onPress: tmp4, onLongPress: tmp5, accessibilityActions: tmp9, onAccessibilityAction: tmp10, icon: tmp13 });
+            const tmp18 = jsx(tmp(5282).Button, { text: tmp11, onPress: tmp4, onLongPress: tmp5, accessibilityActions: tmp9, onAccessibilityAction: tmp10, icon: tmp13 });
+          }
+          PlusSmallIcon = tmp(8329).PlusSmallIcon;
+        }
+      }
+    }
+  }
+  const fn = function t() {
+    const obj = ApplicationUtils;
+    const obj2 = { applicationId: application.id, customInstallUrl: application.customInstallUrl, installParams: application.installParams, integrationTypesConfig: application.integrationTypesConfig, guildId };
+    obj.installApplication(obj2);
+    const obj3 = ActionSheetActionCreatorsDefault;
+    obj3.hideActionSheet();
+  };
+  cResult[0] = application.customInstallUrl;
+  cResult[1] = application.id;
+  cResult[2] = application.installParams;
+  cResult[3] = application.integrationTypesConfig;
+  cResult[4] = guildId;
+  cResult[5] = fn;
+  tmp4 = fn;
+}) : ((application) => {
   application = application.application;
   const guildId = application.guildId;
   let obj = react;
@@ -40,16 +280,16 @@ function AddAppButton(application) {
   const customInstallUrl = application.customInstallUrl;
   if (null != customInstallUrl) {
     let tmp6;
-    let obj2 = guildId(1366);
+    let obj2 = guildId(1372);
     if (!obj2.isDiscordUrl(customInstallUrl)) {
-      let PlusSmallIcon = application(8037).LinkExternalSmallIcon;
+      let PlusSmallIcon = application(8041).LinkExternalSmallIcon;
       tmp6 = application;
     }
     const items1 = [application];
     const memo = obj.useMemo(() => {
       let intl;
-      const obj = { name: "longpress", label: intl.string(application(dependencyMap[16]).t.XWDihq) };
-      intl = application(dependencyMap[16]).intl;
+      const obj = { name: "longpress", label: intl.string(application(dependencyMap[18]).t.XWDihq) };
+      intl = application(dependencyMap[18]).intl;
       const items = [obj];
       return items;
     }, []);
@@ -63,15 +303,183 @@ function AddAppButton(application) {
         obj2.presentLinkCopied();
       }
     }, items1);
-    const Button = tmp6(5281).Button;
-    let intl = tmp6(1115).intl;
-    ({ size: "sm", color: guildId(576).colors.WHITE });
-    return <Button text={intl.string(tmp6(1115).t.NgXl3C)} onPress={callback} onLongPress={tmp2} accessibilityActions={memo} onAccessibilityAction={callback1} icon={null} />;
+    const Button = tmp6(5282).Button;
+    let intl = tmp6(1127).intl;
+    ({ size: "sm", color: guildId(588).colors.WHITE });
+    return <Button text={intl.string(tmp6(1127).t.NgXl3C)} onPress={callback} onLongPress={tmp2} accessibilityActions={memo} onAccessibilityAction={callback1} icon={null} />;
   }
-  PlusSmallIcon = application(8332).PlusSmallIcon;
+  PlusSmallIcon = application(8329).PlusSmallIcon;
   tmp6 = application;
-}
-function OpenAppButton(profileApplication) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((profileApplication) => {
+  let channel;
+  let tmp5;
+  let tmp = profileApplication;
+  let tmp2 = channel;
+  let obj = profileApplication(channel[8]);
+  const cResult = obj.c(8);
+  profileApplication = profileApplication.profileApplication;
+  const botUserId = profileApplication.botUserId;
+  channel = profileApplication.channel;
+  let tmp4 = _slicedToArray(react.useState(false), 2);
+  [tmp5, _asyncToGenerator] = tmp4;
+  if (cResult[0] === botUserId) {
+    if (cResult[1] === channel) {
+      let tmp6;
+      let tmp8;
+      if (cResult[2] === profileApplication.id) {
+        tmp6 = cResult[3];
+      }
+      const _Symbol = Symbol;
+      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl = tmp(tmp2[18]).intl;
+        const stringResult = intl.string(tmp(tmp2[18]).t["Cia+A8"]);
+        cResult[4] = stringResult;
+        tmp8 = stringResult;
+      } else {
+        tmp8 = cResult[4];
+      }
+      if (cResult[5] === tmp5) {
+        let tmp10;
+        if (cResult[6] === tmp6) {
+          tmp10 = cResult[7];
+        }
+        return tmp10;
+      }
+      const tmp12 = jsx(tmp(tmp2[20]).Button, { text: tmp8, loading: tmp5, onPress: tmp6 });
+      cResult[5] = tmp5;
+      cResult[6] = tmp6;
+      cResult[7] = tmp12;
+      tmp10 = tmp12;
+    }
+  }
+  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+    let application1;
+    let obj6;
+    let obj9;
+    let v2;
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        let obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        let recipientIds;
+        c4 = 2;
+        const tmp4 = c3;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            let obj3 = { value, done: true };
+            return obj3;
+          } else {
+            channel = tmp4;
+            recipientIds = undefined;
+            const obj4 = { type: "channel", channel };
+            const tmp41 = getSection(obj4, application1.id);
+            closure_0 = tmp41;
+            const descriptor2 = tmp41.descriptor;
+            let application;
+            const tmp40 = application1;
+            if (descriptor2 != null) {
+              application = descriptor2.application;
+            }
+            if (null == application) {
+              c3(true);
+            }
+            const descriptor = tmp41.descriptor;
+            application1 = undefined;
+            if (descriptor != null) {
+              application1 = descriptor.application;
+            }
+            if (application1 == null) {
+              c3 = 1;
+              c4 = 1;
+              const obj7 = { value: obj9.fetchApplication(tmp40.id), done: false };
+              obj9 = botUserId(channel[21]);
+              return obj7;
+            }
+          }
+        } else {
+          if (1 === tmp4) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj8 = { value, done: true };
+              return obj8;
+            } else {
+              application1 = value;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj10 = { value, done: true };
+            return obj10;
+          } else {
+            const _setTimeout = setTimeout;
+            const timerId = setTimeout(() => {
+              let obj3;
+              const obj = application1(channel[23]);
+              const bestActiveInput = obj.getBestActiveInput();
+              const tmp = application1;
+              const tmp2 = channel;
+              if (bestActiveInput != null) {
+                const openCustomKeyboard = bestActiveInput.openCustomKeyboard;
+                const obj2 = { type: tmp(tmp2[24]).KeyboardTypes.APP_LAUNCHER, context: obj3 };
+                obj3 = { initialRouteName: constants.APPLICATION_VIEW, initiallyExpanded: true, application, installOnDemand: !closure_1_0.isGuildInstalled && !closure_1_0.isUserInstalled };
+                openCustomKeyboard(obj2);
+              }
+            }, 0);
+            let obj = botUserId(channel[25]);
+            const obj11 = { application_id: recipientIds.id };
+            obj.track(constants.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, obj11);
+          }
+          c4 = 3;
+          return { value: "IconComponent", done: null };
+        }
+        recipientIds = application1;
+        c3(false);
+        if (null != closure_0) {
+          const obj5 = botUserId(channel[11]);
+          obj5.hideAllActionSheets();
+          const obj12 = { recipientIds };
+          c3 = 2;
+          c4 = 1;
+          const obj13 = { value: obj6.openPrivateChannel(obj12), done: false };
+          obj6 = botUserId(channel[22]);
+          return obj13;
+        }
+      } catch (tmp34) {
+        c4 = 3;
+        throw tmp34;
+      }
+    }
+  });
+  const fn = function() {
+    return closure_0(...arguments);
+  };
+  cResult[0] = botUserId;
+  cResult[1] = channel;
+  cResult[2] = profileApplication.id;
+  cResult[3] = fn;
+  tmp6 = fn;
+}) : ((profileApplication) => {
   let closure_3;
   let first;
   profileApplication = profileApplication.profileApplication;
@@ -96,7 +504,7 @@ function OpenAppButton(profileApplication) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -136,7 +544,7 @@ function OpenAppButton(profileApplication) {
               c3 = 1;
               c4 = 1;
               const obj7 = { value: obj9.fetchApplication(tmp40.id), done: false };
-              obj9 = tmp(channel[19]);
+              obj9 = tmp(channel[21]);
               return obj7;
             }
           }
@@ -163,34 +571,34 @@ function OpenAppButton(profileApplication) {
             const _setTimeout = setTimeout;
             const timerId = setTimeout(() => {
               let obj3;
-              const obj = application1(c2[21]);
+              const obj = application1(c2[23]);
               const bestActiveInput = obj.getBestActiveInput();
               const tmp = application1;
               const tmp2 = c2;
               if (bestActiveInput != null) {
                 const openCustomKeyboard = bestActiveInput.openCustomKeyboard;
-                const obj2 = { type: tmp(tmp2[22]).KeyboardTypes.APP_LAUNCHER, context: obj3 };
+                const obj2 = { type: tmp(tmp2[24]).KeyboardTypes.APP_LAUNCHER, context: obj3 };
                 obj3 = { initialRouteName: constants2.APPLICATION_VIEW, initiallyExpanded: true, application, installOnDemand: !closure_1_0.isGuildInstalled && !closure_1_0.isUserInstalled };
                 openCustomKeyboard(obj2);
               }
             }, 0);
-            let obj = tmp(channel[23]);
+            let obj = tmp(channel[25]);
             const obj11 = { application_id: tmp.id };
             obj.track(constants.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, obj11);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
         tmp = application1;
         closure_130_3(false);
         if (null != closure_0) {
-          const obj5 = tmp(channel[9]);
+          const obj5 = tmp(channel[11]);
           obj5.hideAllActionSheets();
           const obj12 = { recipientIds: closure_130_1 };
           c3 = 2;
           c4 = 1;
           const obj13 = { value: obj6.openPrivateChannel(obj12), done: false };
-          obj6 = tmp(channel[20]);
+          obj6 = tmp(channel[22]);
           return obj13;
         }
       } catch (tmp34) {
@@ -199,30 +607,10 @@ function OpenAppButton(profileApplication) {
       }
     }
   }), items);
-  const Button = profileApplication(channel[17]).Button;
-  const intl = profileApplication(channel[16]).intl;
-  return <Button text={intl.string(profileApplication(channel[16]).t["Cia+A8"])} loading={first} onPress={callback} />;
-}
-let _asyncToGenerator = _asyncToGenerator_mod;
-const getSection = ApplicationCommandIndexStore.getSection;
-const AnalyticEvents = Constants.AnalyticEvents;
-const AppLauncherRouteName = AppLauncherNativeConstants.AppLauncherRouteName;
-const jsx = Fragment.jsx;
+  const Button = profileApplication(channel[20]).Button;
+  const intl = profileApplication(channel[18]).intl;
+  return <Button text={intl.string(profileApplication(channel[18]).t["Cia+A8"])} loading={first} onPress={callback} />;
+});
 const result = size.fileFinishedImporting("modules/user_profile/native/AddOrOpenAppButton.tsx");
 
-export default function AddOrOpenAppButton(arg0) {
-  let application;
-  let botUserId;
-  let channel;
-  let guildId;
-  ({ application, channel } = arg0);
-  ({ botUserId, guildId } = arg0);
-  if (useIsAppDMDefault(channel)) {
-    let tmp2;
-    if (null != channel) {
-      tmp2 = <OpenAppButton profileApplication={application} botUserId={botUserId} channel={channel} />;
-    }
-    return tmp2;
-  }
-  tmp2 = <AddAppButton application={application} guildId={guildId} />;
-};
+export default tmp2;

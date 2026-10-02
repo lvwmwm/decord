@@ -1,15 +1,16 @@
-// Module ID: 17441
-// Function ID: 17442
+// Module ID: 17443
+// Function ID: 17444
 // Name: GuildConfigGates
-// Dependencies: [5, 17442, 1074, 504, 1271, 573, 2]
+// Dependencies: [5, 17444, 1086, 504, 1283, 585, 558, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled, useGuildVerificationRoleEnabled
 
-// Module 17441 (GuildConfigGates)
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 17443 (GuildConfigGates)
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildConfigGatesStore from "GuildConfigGatesStore" /* 17442 */;
+import GuildConfigGatesStore from "GuildConfigGatesStore" /* 17444 */;
 import get_initialized from "get initialized" /* 504 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let applicationIdentityLinkedRolesEnabled, closure_4, guildVerificationRoleEnabled;
@@ -53,7 +54,7 @@ let closure_3 = _asyncToGenerator(async (guildId) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -102,7 +103,7 @@ let closure_3 = _asyncToGenerator(async (guildId) => {
           dispatch(obj5);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp13) {
         c6 = 3;
         throw tmp13;
@@ -111,9 +112,13 @@ let closure_3 = _asyncToGenerator(async (guildId) => {
   })();
 });
 let closure_6 = createFetchStore(GuildConfigGatesStore, obj);
-const result = size.fileFinishedImporting("modules/guild_config_gates/GuildConfigGates.tsx");
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result2 = size.fileFinishedImporting("modules/guild_config_gates/GuildConfigGates.tsx");
 
-export const useGuildVerificationRoleEnabled = function useGuildVerificationRoleEnabled(arg0) {
+export const useGuildVerificationRoleEnabled = (arg0) => {
   const data = closure_6(arg0).data;
   let flag;
   if (data != null) {
@@ -124,7 +129,7 @@ export const useGuildVerificationRoleEnabled = function useGuildVerificationRole
   }
   return flag;
 };
-export const useApplicationIdentityLinkedRolesEnabled = function useApplicationIdentityLinkedRolesEnabled(arg0) {
+export const useApplicationIdentityLinkedRolesEnabled = (arg0) => {
   const data = closure_6(arg0).data;
   let flag;
   if (data != null) {

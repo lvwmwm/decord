@@ -1,21 +1,21 @@
-// Module ID: 12230
-// Function ID: 12231
+// Module ID: 12123
+// Function ID: 12124
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 2108, 2067, 4817, 1074, 4455, 21, 4836, 576, 1485, 504, 5936, 1385, 6516, 1981, 7154, 8976, 6734, 7826, 9230, 12231, 6544, 4540, 2]
+// Dependencies: [5, 19, 2111, 2073, 4818, 1086, 4458, 21, 4837, 588, 1491, 504, 5933, 1391, 6517, 1987, 7158, 8952, 6735, 7830, 9196, 12124, 6546, 4544, 2]
 // Exports: default
 
-// Module 12230 (AcceptInviteContainer)
+// Module 12123 (AcceptInviteContainer)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4455 */;
-import NavigatorHeader from "NavigatorHeader" /* 5936 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4458 */;
+import NavigatorHeader from "NavigatorHeader" /* 5933 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import InviteStore from "InviteStore" /* 4817 */;
-import createStyles from "createStyles" /* 4836 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import InviteStore from "InviteStore" /* 4818 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3, closure_2, closure_3, navigation;
@@ -117,7 +117,7 @@ export default function AcceptInviteContainer(code) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -180,7 +180,7 @@ export default function AcceptInviteContainer(code) {
           return obj;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp14) {
         c3 = 3;
         throw tmp14;
@@ -203,7 +203,7 @@ export default function AcceptInviteContainer(code) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -239,7 +239,7 @@ export default function AcceptInviteContainer(code) {
                     } else if (arg0 === 2) {
                       return { value, done: true };
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     try {
@@ -263,7 +263,7 @@ export default function AcceptInviteContainer(code) {
                               }
                               if (null == prop) {
                                 c6 = 3;
-                                return { value: "HermesInternal", done: null };
+                                return { value: "IconComponent", done: null };
                               } else {
                                 closure_1();
                                 const tmp8Result = closure_2_0(transitionToInviteChannel[17]);
@@ -293,7 +293,7 @@ export default function AcceptInviteContainer(code) {
                             closure_1();
                           }
                           c6 = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "IconComponent", done: null };
                         }
                       } else if (1 === c5) {
                         c4 = 0;
@@ -348,7 +348,7 @@ export default function AcceptInviteContainer(code) {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -403,7 +403,7 @@ export default function AcceptInviteContainer(code) {
                       closure_128_2(closure_128_1);
                     }
                     c2 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   } catch (tmp15) {
                     c2 = 3;
                     throw tmp15;
@@ -431,7 +431,7 @@ export default function AcceptInviteContainer(code) {
           return obj;
         }
         code = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp4) {
         code = 3;
         throw tmp4;

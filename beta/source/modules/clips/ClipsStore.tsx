@@ -1,23 +1,23 @@
-// Module ID: 1999
-// Function ID: 2000
+// Module ID: 2005
+// Function ID: 2006
 // Name: ClipsStore
-// Dependencies: [5, 2000, 502, 5444, 1074, 4883, 4450, 13536, 1385, 13537, 13539, 13540, 504, 1993, 573, 2]
+// Dependencies: [5, 2006, 502, 5445, 1086, 4884, 4453, 13538, 1391, 13539, 13541, 13542, 504, 1999, 585, 2]
 
-// Module 1999 (ClipsStore)
+// Module 2005 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import DiscordNativeDefault from "DiscordNative" /* 4450 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 13537 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 13539 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 13540 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import FlagUtils from "FlagUtils" /* 1391 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import DiscordNativeDefault from "DiscordNative" /* 4453 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 13539 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 13541 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 13542 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2000 */;
+import RunningGameStore from "RunningGameStore" /* 2006 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 5444 */;
-import Constants from "Constants" /* 1074 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4883 */;
+import ClipsConstants from "ClipsConstants" /* 5445 */;
+import Constants from "Constants" /* 1086 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 4884 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_18, closure_2;
@@ -49,7 +49,7 @@ let obj = function _migrateDefaultStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -119,7 +119,7 @@ let obj = function _migrateDefaultStorage() {
           closure_129_40.emitChange();
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp33) {
         closure_2 = tmp33;
         if (0 === c3) {
@@ -306,7 +306,7 @@ const map = new Map();
 map1 = new Map();
 const map2 = new Map();
 let closure_33 = [];
-obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_30, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "flex", showPovClipsInGallery: true };
+obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_30, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "Reflect", showPovClipsInGallery: true };
 obj = { clipsSettings: obj, hardwareClassification: null, hardwareClassificationForDecoupled: null, hardwareClassificationVersion: 0, newClipIds: [], hasClips: false, hasTakenDecoupledClip: false, clipsEducationState: { dismissedAt: null, numberOfGamesLaunchedSinceDismissal: 0, numberOfTimesDismissed: 0 } };
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class ClipsStoreClass extends DeviceSettingsStore {

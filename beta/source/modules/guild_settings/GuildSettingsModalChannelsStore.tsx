@@ -1,17 +1,17 @@
-// Module ID: 15775
-// Function ID: 15776
+// Module ID: 15774
+// Function ID: 15775
 // Name: GuildSettingsModalChannelsStore
-// Dependencies: [109, 2049, 4467, 4469, 1074, 2070, 6533, 12, 504, 573, 2]
+// Dependencies: [109, 2055, 4470, 4472, 1086, 2076, 6534, 12, 504, 585, 2]
 
-// Module 15775 (GuildSettingsModalChannelsStore)
+// Module 15774 (GuildSettingsModalChannelsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6533 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 6534 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4467 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4470 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f102862 = (channel) => channel.channel.id;
+const f121573 = (channel) => channel.channel.id;
 function sortCategoryList(channel, channel2) {
   let num;
   channel = channel.channel;
@@ -126,7 +126,7 @@ function buildSortedChannels() {
       }
       return tmp;
     });
-    closure_15 = arr4.map(f102862);
+    closure_15 = arr4.map(f121573);
   }
 }
 let closure_3 = ["lock_permissions", "id"];
@@ -273,7 +273,7 @@ let obj = {
           }
           return tmp;
         });
-        closure_15 = arr.map(f102862);
+        closure_15 = arr.map(f121573);
       }
     }
   },
@@ -290,7 +290,7 @@ let obj = {
         }
         return tmp;
       });
-      closure_15 = arr.map(f102862);
+      closure_15 = arr.map(f121573);
     }
   },
   GUILD_SETTINGS_MODAL_LOCAL_SORT_CHANGE: function handleLocalSortChange(updates) {

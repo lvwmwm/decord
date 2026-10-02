@@ -1,16 +1,17 @@
-// Module ID: 14749
-// Function ID: 14750
+// Module ID: 14737
+// Function ID: 14738
 // Name: GuildRoleSubscriptionsSetting
-// Dependencies: [7417, 1074, 14750, 14751, 11006, 1115, 14752, 14754, 2]
+// Dependencies: [7421, 1086, 14738, 558, 14739, 10874, 1127, 14740, 14742, 2]
 
-// Module 14749 (GuildRoleSubscriptionsSetting)
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 14750 */;
-import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 14751 */;
-import TicketIcon from "TicketIcon" /* 14752 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 14737 (GuildRoleSubscriptionsSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 14738 */;
+import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 14739 */;
+import TicketIcon from "TicketIcon" /* 14740 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,6 +19,8 @@ const require = globalThis.__r;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
 const constants = GuildRoleSubscriptionsConstants.UserGuildRoleSubscriptionRelationship;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -25,9 +28,7 @@ const obj = {
   },
   parent: MobileUserSettings.PREMIUM,
   IconComponent: TicketIcon.TicketIcon,
-  usePredicate: function useHasGuildRoleSubscriptionsSetting() {
-    return useUserRoleSubscriptionRelationshipDefault() === constants.SUBSCRIBED;
-  },
+  usePredicate: () => useUserRoleSubscriptionRelationshipDefault() === constants.SUBSCRIBED,
   screen: {
     route: UserSettingsSections.GUILD_ROLE_SUBSCRIPTIONS,
     getComponent() {
@@ -36,6 +37,6 @@ const obj = {
   }
 };
 const route = SettingBuilders.createRoute(obj);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/GuildRoleSubscriptionsSetting.tsx");
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/GuildRoleSubscriptionsSetting.tsx");
 
 export default route;

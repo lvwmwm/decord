@@ -1,38 +1,127 @@
-// Module ID: 8262
-// Function ID: 8263
+// Module ID: 8259
+// Function ID: 8260
 // Name: ProfileEffectSampleV2
-// Dependencies: [17, 8261, 21, 4836, 576, 5899, 8263, 8264, 2]
-// Exports: default
+// Dependencies: [17, 8258, 21, 4837, 588, 558, 576, 8260, 5896, 8261, 2]
 
-// Module 8262 (ProfileEffectSampleV2)
+// Module 8259 (ProfileEffectSampleV2)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8261 */;
-import _modDef8263 from "module_8263" /* 8263 */;
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8258 */;
+import _modDef8260 from "module_8260" /* 8260 */;
+import ProfileEffectDefault from "ProfileEffect" /* 8261 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c3;
 let closure_4;
+let hasOwnProperty;
 let obj2;
 let size;
-let tmp5;
-const ProfileEffectDefault = tmp5(8264);
 const View = react_native.View;
 const SAMPLE_PROFILE_ASPECT_RATIO = CollectiblesPreviewConstants.SAMPLE_PROFILE_ASPECT_RATIO;
-({ jsx: c3, jsxs: closure_4 } = Fragment);
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { profileContainer: { position: "absolute", display: "flex", height: "100%", width: "100%" }, profileBackground: obj2, sampleProfileImage: { aspectRatio: SAMPLE_PROFILE_ASPECT_RATIO }, profileBorder: size };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 createStyles = createStyles.createStyles;
 size = { position: "absolute", height: "100%", width: "100%", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
-let closure_5 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/collectibles/native/ProfileEffectSampleV2.tsx");
-
-export default function ProfileEffectSample(hideBackground) {
+let closure_6 = createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let hideBackground;
+  let item;
+  let items1;
+  const obj = react;
+  const cResult = obj.c(18);
+  ({ item, hideBackground } = arg0);
+  const tmp4 = closure_6();
+  if (cResult[0] === tmp4.profileContainer) {
+    let tmp6;
+    let tmp7;
+    let tmp9;
+    let tmp11;
+    if (cResult[1] === (!(undefined !== hideBackground && hideBackground) && tmp4.profileBackground)) {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] !== tmp4.sampleProfileImage) {
+      const items = [tmp4.sampleProfileImage];
+      cResult[3] = tmp4.sampleProfileImage;
+      cResult[4] = items;
+      tmp7 = items;
+    } else {
+      tmp7 = cResult[4];
+    }
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { uri: _modDef8260 };
+      cResult[5] = obj2;
+      tmp9 = obj2;
+    } else {
+      tmp9 = cResult[5];
+    }
+    if (cResult[6] !== tmp7) {
+      const obj3 = { style: tmp7, source: tmp9, accessible: false, resizeMode: "cover" };
+      const tmp14 = React3(FastImageDefault, obj3);
+      cResult[6] = tmp7;
+      cResult[7] = tmp14;
+      tmp11 = tmp14;
+    } else {
+      tmp11 = cResult[7];
+    }
+    if (cResult[8] === (undefined !== hideBackground && hideBackground)) {
+      let tmp15;
+      let tmp19;
+      if (cResult[9] === tmp4.profileBorder) {
+        tmp15 = cResult[10];
+      }
+      if (cResult[11] !== item.skuId) {
+        const obj4 = { skuId: item.skuId, bannerAdjustment: 0, useThumbnail: true };
+        const tmp22 = React3(ProfileEffectDefault, obj4);
+        cResult[11] = item.skuId;
+        cResult[12] = tmp22;
+        tmp19 = tmp22;
+      } else {
+        tmp19 = cResult[12];
+      }
+      if (cResult[13] === tmp6) {
+        if (cResult[14] === tmp11) {
+          if (cResult[15] === tmp15) {
+            let tmp23;
+            if (cResult[16] === tmp19) {
+              tmp23 = cResult[17];
+            }
+            return tmp23;
+          }
+        }
+      }
+      const obj5 = { style: tmp6, children: items1 };
+      items1 = [tmp11, tmp15, tmp19];
+      const tmp26 = hasOwnProperty(View, obj5);
+      cResult[13] = tmp6;
+      cResult[14] = tmp11;
+      cResult[15] = tmp15;
+      cResult[16] = tmp19;
+      cResult[17] = tmp26;
+      tmp23 = tmp26;
+    }
+    let tmp16 = !tmp3;
+    if (tmp16) {
+      const obj6 = { style: tmp4.profileBorder };
+      tmp16 = React3(View, obj6);
+    }
+    cResult[8] = undefined !== hideBackground && hideBackground;
+    cResult[9] = tmp4.profileBorder;
+    cResult[10] = tmp16;
+    tmp15 = tmp16;
+  }
+  const items2 = [tmp4.profileContainer, !(undefined !== hideBackground && hideBackground) && tmp4.profileBackground];
+  cResult[0] = tmp4.profileContainer;
+  cResult[1] = !(undefined !== hideBackground && hideBackground) && tmp4.profileBackground;
+  cResult[2] = items2;
+  tmp6 = items2;
+}) : ((hideBackground) => {
   let items1;
   let items2;
   let obj3;
@@ -41,10 +130,10 @@ export default function ProfileEffectSample(hideBackground) {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = closure_5();
+  const tmp = closure_6();
   const items = [tmp.profileContainer, ];
   let profileBackground = !flag;
-  const tmp2 = React3;
+  const tmp2 = hasOwnProperty;
   if (!flag) {
     profileBackground = tmp.profileBackground;
   }
@@ -52,9 +141,9 @@ export default function ProfileEffectSample(hideBackground) {
   items[1] = profileBackground;
   const obj2 = { style: items1, source: obj3, accessible: false, resizeMode: "cover" };
   items1 = [tmp.sampleProfileImage];
-  obj3 = { uri: _modDef8263 };
+  obj3 = { uri: _modDef8260 };
   const tmp7 = FastImageDefault;
-  items2 = [_false(tmp7, obj2), , ];
+  items2 = [React3(tmp7, obj2), , ];
   let tmp4Result = !flag;
   if (tmp4Result) {
     const obj4 = { style: tmp.profileBorder };
@@ -62,6 +151,10 @@ export default function ProfileEffectSample(hideBackground) {
   }
   items2[1] = tmp4Result;
   const obj5 = { skuId: item.skuId, bannerAdjustment: 0, useThumbnail: true };
-  items2[2] = _false(ProfileEffectDefault, obj5);
+  items2[2] = React3(ProfileEffectDefault, obj5);
   return tmp2(View, obj);
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/collectibles/native/ProfileEffectSampleV2.tsx");
+
+export default tmp4;

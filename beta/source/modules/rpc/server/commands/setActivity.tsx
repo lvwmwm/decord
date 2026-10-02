@@ -1,16 +1,16 @@
-// Module ID: 14054
-// Function ID: 14055
+// Module ID: 14056
+// Function ID: 14057
 // Name: setActivity
-// Dependencies: [5063, 4739, 1074, 7787, 8773, 10348, 14023, 8770, 573, 8821, 8783, 12, 1091, 7595, 1241, 2]
+// Dependencies: [5064, 4741, 1086, 7791, 8768, 10391, 14025, 8765, 585, 8816, 8778, 12, 1103, 7599, 1253, 2]
 
-// Module 14054 (setActivity)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7787 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8773 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 10348 */;
-import ApplicationStore from "ApplicationStore" /* 5063 */;
-import Constants_mod from "Constants" /* 4739 */;
-import Constants_mod2 from "Constants" /* 1074 */;
+// Module 14056 (setActivity)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 7791 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8768 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 10391 */;
+import ApplicationStore from "ApplicationStore" /* 5064 */;
+import Constants_mod from "Constants" /* 4741 */;
+import Constants_mod2 from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let RPC_EMBEDDED_APP_SCOPE;
@@ -404,7 +404,7 @@ let obj2 = {
               obj4.party_max = tmp17;
               obj4.party_id = party.id;
             }
-            const tmp5Result = tmp5(1241);
+            const tmp5Result = tmp5(1253);
             tmp5Result.track(constants.ACTIVITY_UPDATED, obj4);
             return activity;
           }

@@ -1,11 +1,11 @@
-// Module ID: 11167
-// Function ID: 11168
+// Module ID: 11037
+// Function ID: 11038
 // Name: ChannelFollowerStatsStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 11167 (ChannelFollowerStatsStore)
+// Module 11037 (ChannelFollowerStatsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let closure_1;

@@ -1,13 +1,13 @@
-// Module ID: 12153
-// Function ID: 12154
+// Module ID: 12195
+// Function ID: 12196
 // Name: WelcomeScreenActionCreators
-// Dependencies: [5, 1074, 573, 1271, 2]
+// Dependencies: [5, 1086, 585, 1283, 2]
 // Exports: clearWelcomeScreenSettings, fetchWelcomeScreen, resetWelcomeScreen, saveWelcomeScreen, updateSettings, welcomeScreenViewed
 
-// Module 12153 (WelcomeScreenActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 12195 (WelcomeScreenActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _fetchWelcomeScreen() {
       await get(obj4);
       const obj5 = closure_130_1(closure_130_2[2]);
       obj5.dispatch({ type: "WELCOME_SCREEN_FETCH_FAIL" });
-      closure_1 = await "HermesInternal";
+      closure_1 = await "IconComponent";
       const obj8 = { type: "WELCOME_SCREEN_FETCH_SUCCESS", guildId, welcomeScreen: closure_1.body };
       obj = closure_130_1(closure_130_2[2]);
       obj.dispatch(obj8);
@@ -55,7 +55,7 @@ obj = function _saveWelcomeScreen() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ obj = function _saveWelcomeScreen() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp17) {
           closure_4 = tmp17;

@@ -1,22 +1,25 @@
-// Module ID: 10506
-// Function ID: 10507
+// Module ID: 10538
+// Function ID: 10539
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 4836, 576, 1613, 4832, 1115, 10507, 5281, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 1619, 1127, 4833, 10539, 5282, 2]
 
-// Module 10506 (GiftingSKUSelectScreen)
-import nativeDefault from "native" /* 576 */;
-import intl4 from "intl" /* 1115 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 10507 */;
+// Module 10538 (GiftingSKUSelectScreen)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 10539 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let defaultHighlightedReward;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -38,9 +41,122 @@ obj4 = { textAlign: "center", padding: nativeDefault.space.PX_8 };
 obj5 = { marginHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_24 };
 obj6 = { marginBottom: nativeDefault.space.PX_24 };
 let closure_9 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingSKUSelectScreen.tsx");
-
-export default function GiftingSKUSelectScreen(defaultHighlightedReward) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultHighlightedReward) => {
+  let allRewards;
+  let claimableRewards;
+  let closure_6;
+  let first;
+  let first1;
+  const obj = react2;
+  const cResult = obj.c(52);
+  defaultHighlightedReward = defaultHighlightedReward.defaultHighlightedReward;
+  ({ allRewards, claimableRewards } = defaultHighlightedReward);
+  const onSelect = defaultHighlightedReward.onSelect;
+  closure_9();
+  const bottom = useSafeAreaInsetsDefault().bottom;
+  [first, react] = react.useState(defaultHighlightedReward);
+  [first1, closure_6] = react.useState(false);
+  if (cResult[0] === claimableRewards) {
+    if (cResult[1] === first) {
+      if (cResult[2] === onSelect) {
+        let tmp7 = cResult[3];
+      }
+      const _Symbol = Symbol;
+      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+        class O {
+          constructor(arg0) {
+            closure_4(arg0);
+            closure_6(true);
+          }
+        }
+        cResult[4] = O;
+      } else {
+        class O {
+          constructor(arg0) {
+            closure_4(arg0);
+            closure_6(true);
+          }
+        }
+      }
+      const flag = false;
+      if (null != first) {
+        let tmp12;
+        class O {
+          constructor(arg0) {
+            closure_4(arg0);
+            closure_6(true);
+          }
+        }
+        if (cResult[8] !== first) {
+          class O {
+            constructor(arg0) {
+              closure_4(arg0);
+              closure_6(true);
+            }
+          }
+          cResult[8] = first;
+          cResult[9] = tmp13;
+          tmp12 = tmp13;
+        } else {
+          class O {
+            constructor(arg0) {
+              closure_4(arg0);
+              closure_6(true);
+            }
+          }
+        }
+        let someResult = claimableRewards.some(tmp12);
+        cResult[5] = claimableRewards;
+        cResult[6] = first;
+        cResult[7] = someResult;
+      }
+      if (cResult[10] === claimableRewards) {
+        class O {
+          constructor(arg0) {
+            closure_4(arg0);
+            closure_6(true);
+          }
+        }
+      }
+      class H {
+        constructor() {
+          if (0 === claimableRewards.length) {
+            closure_4(undefined);
+          } else {
+            const tmp = flag;
+            if (!tmp) {
+              let tmp7;
+              const someResult = !first1 && null != defaultHighlightedReward && obj.some((item) => item === defaultHighlightedReward);
+              const tmp6 = closure_4;
+              if (someResult) {
+                tmp7 = defaultHighlightedReward;
+              }
+              tmp6(tmp7);
+            }
+          }
+        }
+      }
+      const items = [first, claimableRewards, first1, defaultHighlightedReward, flag];
+      cResult[10] = claimableRewards;
+      cResult[11] = defaultHighlightedReward;
+      cResult[12] = first1;
+      cResult[13] = first;
+      cResult[14] = flag;
+      cResult[15] = H;
+      cResult[16] = items;
+    }
+  }
+  const fn = function c() {
+    const found = claimableRewards.find((item) => item === first);
+    if (null != found) {
+      onSelect(found);
+    }
+  };
+  cResult[0] = claimableRewards;
+  cResult[1] = first;
+  cResult[2] = onSelect;
+  cResult[3] = fn;
+}) : ((defaultHighlightedReward) => {
   let Button;
   let closure_4;
   let first;
@@ -118,4 +234,7 @@ export default function GiftingSKUSelectScreen(defaultHighlightedReward) {
   intl3 = intl4.intl;
   items5[1] = metroImportDefault(hasOwnProperty, obj6);
   return metroImportAll(hasOwnProperty, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingSKUSelectScreen.tsx");
+
+export default tmp5;

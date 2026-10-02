@@ -1,60 +1,18 @@
 // Module ID: 13568
 // Function ID: 13569
-// Dependencies: [13558]
+// Dependencies: [13560]
 
 // Module 13568
-import _mod13558 from "module_13558" /* 13558 */;
+import _mod13560 from "module_13560" /* 13560 */;
 
 
-export default (arg0, arg1) => {
-  const obj = _mod13558(arg0, null, true);
-  const tmp = _mod13558(arg1, null, true);
-  const compareResult = obj.compare(tmp);
-  if (0 === compareResult) {
-    return null;
-  } else {
-    let str5;
-    let tmp3 = tmp;
-    if (compareResult > 0) {
-      tmp3 = obj;
-    }
-    let tmp4 = obj;
-    if (compareResult > 0) {
-      tmp4 = tmp;
-    }
-    if (tmp4.prerelease.length) {
-      if (!tmp3.prerelease.length) {
-        let str;
-        if (tmp4.patch) {
-          let str2 = "patch";
-          if (!tmp3.patch) {
-            let str3 = "major";
-            if (tmp3.minor) {
-              str3 = "minor";
-            }
-            str2 = str3;
-          }
-          str = str2;
-        } else {
-          str = "major";
-        }
-        return str;
-      }
-    }
-    let str4 = "";
-    if (tmp3.prerelease.length) {
-      str4 = "pre";
-    }
-    if (obj.major !== tmp.major) {
-      str5 = `${str4}major`;
-    } else if (obj.minor !== tmp.minor) {
-      str5 = `${str4}minor`;
-    } else {
-      str5 = "prerelease";
-      if (obj.patch !== tmp.patch) {
-        str5 = `${str4}patch`;
-      }
-    }
-    return str5;
+export default (str, arg1) => {
+  const tmp = _mod13560;
+  str = str.trim();
+  const tmpResult = tmp(str.replace(/^[=v]+/, ""), arg1);
+  let version = null;
+  if (tmpResult) {
+    version = tmpResult.version;
   }
+  return version;
 };

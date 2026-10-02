@@ -1,34 +1,35 @@
-// Module ID: 17356
-// Function ID: 17357
+// Module ID: 17358
+// Function ID: 17359
 // Name: AuditLog
-// Dependencies: [19, 17, 1182, 1386, 4479, 1372, 1074, 21, 4836, 576, 1400, 1397, 5595, 4685, 6589, 4832, 1364, 4540, 17344, 1115, 4678, 1177, 2059, 4989, 4981, 4421, 1370, 1092, 10090, 6551, 5919, 17348, 5435, 4800, 7624, 14159, 504, 2]
+// Dependencies: [19, 17, 1194, 1392, 4482, 1378, 1086, 21, 4837, 588, 1406, 1403, 5596, 4687, 558, 576, 6590, 4833, 1370, 4544, 17346, 1127, 4680, 1189, 2065, 4990, 4982, 4424, 1376, 1104, 10127, 6552, 5918, 17350, 5436, 4801, 7628, 14147, 504, 2]
 
-// Module 17356 (AuditLog)
+// Module 17358 (AuditLog)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl3 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import native2 from "native" /* 4540 */;
-import UserUtilsDefault from "UserUtils" /* 4678 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import PlatformsDefault from "Platforms" /* 5595 */;
-import EmojiDefault from "Emoji" /* 6551 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6589 */;
-import AppliedForumTag from "AppliedForumTag" /* 10090 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 17344 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl3 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2065 */;
+import native2 from "native" /* 4544 */;
+import UserUtilsDefault from "UserUtils" /* 4680 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import PlatformsDefault from "Platforms" /* 5596 */;
+import EmojiDefault from "Emoji" /* 6552 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6590 */;
+import AppliedForumTag from "AppliedForumTag" /* 10127 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 17346 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
-import UserRecord from "UserRecord" /* 1386 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import ThemeStore from "ThemeStore" /* 1194 */;
+import UserRecord from "UserRecord" /* 1392 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
 import get_initialized from "get initialized" /* 504 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -54,31 +55,8 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const showUserProfileActionSheetDefault = tmp(7624);
-function ApplicationHook(applicationId) {
-  applicationId = applicationId.applicationId;
-  const obj = useGetOrFetchApplications;
-  const getOrFetchApplication = obj.useGetOrFetchApplication(applicationId);
-  let children;
-  const Text = Text_Text.Text;
-  const tmp2 = authStore2;
-  if (getOrFetchApplication != null) {
-    children = getOrFetchApplication.name;
-  }
-  if (children == null) {
-    children = applicationId;
-  }
-  return tmp2(Text, { variant: "text-sm/semibold", children });
-}
-function InlineSegment(children) {
-  children = children.children;
-  let tmp2 = children;
-  if (null != obj8) {
-    const obj = { style: tmp, children };
-    tmp2 = authStore2(View, obj);
-  }
-  return tmp2;
-}
+const Text_Text = tmp(4833);
+const showUserProfileActionSheetDefault = tmp(7628);
 const View = react_native.View;
 ({ AuditLogTargetTypes: c10, AuditLogActionTypes: unpackModuleId, AuditLogActions: closure_12, Fonts, AuditLogChangeKeys: map1 } = Constants);
 let Fragment = Fragment_mod;
@@ -96,6 +74,46 @@ size1 = { height: 10, width: 10, borderRadius: 5, borderColor: nativeDefault.uns
 obj7 = { height: "auto", paddingVertical: 0, paddingHorizontal: nativeDefault.space.PX_4, transform: items1 };
 items1 = [{ translateY: 0.5 }];
 const authStore3 = createLegacyClassComponentStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(2);
+  applicationId = applicationId.applicationId;
+  const obj2 = useGetOrFetchApplications;
+  const getOrFetchApplication = obj2.useGetOrFetchApplication(applicationId);
+  let name;
+  if (getOrFetchApplication != null) {
+    name = getOrFetchApplication.name;
+  }
+  if (name == null) {
+    name = applicationId;
+  }
+  if (cResult[0] !== name) {
+    const obj3 = { variant: "text-sm/semibold", children: name };
+    const tmp8 = authStore2(Text_Text.Text, obj3);
+    cResult[0] = name;
+    cResult[1] = tmp8;
+    tmp6 = tmp8;
+  } else {
+    tmp6 = cResult[1];
+  }
+  return tmp6;
+}) : ((applicationId) => {
+  applicationId = applicationId.applicationId;
+  const obj = useGetOrFetchApplications;
+  const getOrFetchApplication = obj.useGetOrFetchApplication(applicationId);
+  let children;
+  const Text = Text_Text.Text;
+  const tmp2 = authStore2;
+  if (getOrFetchApplication != null) {
+    children = getOrFetchApplication.name;
+  }
+  if (children == null) {
+    children = applicationId;
+  }
+  return tmp2(Text, { variant: "text-sm/semibold", children });
+});
 let tmp7;
 if (PlatformUtils.isAndroid()) {
   let obj8 = { transform: items2 };
@@ -103,6 +121,35 @@ if (PlatformUtils.isAndroid()) {
   tmp7 = obj8;
 }
 obj8 = tmp7;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+  const obj = react2;
+  const cResult = obj.c(2);
+  children = children.children;
+  let tmp3 = children;
+  if (null != obj8) {
+    let tmp4;
+    if (cResult[0] !== children) {
+      const obj2 = { style: tmp2, children };
+      const tmp7 = authStore2(View, obj2);
+      cResult[0] = children;
+      cResult[1] = tmp7;
+      tmp4 = tmp7;
+    } else {
+      tmp4 = cResult[1];
+    }
+    tmp3 = tmp4;
+  }
+  return tmp3;
+}) : ((children) => {
+  children = children.children;
+  let tmp2 = children;
+  if (null != obj8) {
+    const obj = { style: tmp, children };
+    tmp2 = authStore2(View, obj);
+  }
+  return tmp2;
+});
 const PureComponent = react.PureComponent;
 class AuditLog extends PureComponent {
   constructor() {
@@ -123,7 +170,7 @@ class AuditLog extends PureComponent {
     const target = log.target;
     const options = log.options;
     let tmp2 = target;
-    let obj = user(target[18]);
+    let obj = user(target[20]);
     const changeTitle = obj.getChangeTitle(log);
     let tmp5Result = null;
     if (null != changeTitle) {
@@ -183,7 +230,7 @@ class AuditLog extends PureComponent {
                 const tmp9 = require;
                 if (tmp12) {
                   const obj2 = { style: closure_0.discriminator, children: `#${target.discriminator}` };
-                  tmp12 = authStore2(tmp9(1177).LegacyText, obj2);
+                  tmp12 = authStore2(tmp9(1189).LegacyText, obj2);
                 }
                 const obj4 = { variant: "text-md/medium", color: "text-default", children: items };
                 items[1] = tmp12;
@@ -197,7 +244,7 @@ class AuditLog extends PureComponent {
                 const tmp15 = require;
                 if (obj6.isGuildRecord(target)) {
                   const obj5 = { variant: "text-md/medium", color: "text-default", children: target.name };
-                  tmp8Result = authStore2(tmp15(4832).Text, obj5, `target${tmp5.id}`);
+                  tmp8Result = authStore2(tmp15(4833).Text, obj5, `target${tmp5.id}`);
                 }
               }
             }
@@ -218,7 +265,7 @@ class AuditLog extends PureComponent {
       if (null != options.channel) {
         let channel;
         if (typeof options.channel !== "string") {
-          const tmp6Result = tmp6(tmp2[23]);
+          const tmp6Result = tmp6(tmp2[25]);
           let tmp8 = RelationshipStore;
           let tmp9 = tmp6Result;
           channel = tmp6Result.computeChannelName(options.channel, UserStore, RelationshipStore, true);
@@ -226,7 +273,7 @@ class AuditLog extends PureComponent {
         obj3.channel = channel;
         obj3.channelHook = function channelHook(children, arg1) {
           const obj = { variant: "text-md/medium", color: "text-default", children };
-          return closure_1_14(closure_0(target[15]).Text, obj, arg1);
+          return closure_1_14(closure_0(target[17]).Text, obj, arg1);
         };
         obj3.subtarget = options.subtarget;
         obj2.children = format(changeTitle, obj3);
@@ -294,7 +341,7 @@ class AuditLog extends PureComponent {
             let result;
             let str;
             let tmp = log;
-            let obj = children(log[18]);
+            let obj = children(log[20]);
             let tmp2 = log;
             if (obj.shouldNotRenderChangeDetail(log, key)) {
               return null;
@@ -305,14 +352,14 @@ class AuditLog extends PureComponent {
                   let oldValue = key.oldValue;
                   if (oldValue == null) {
                     let obj3 = { type: key.oldValue };
-                    obj8 = v0(tmp[24]);
+                    obj8 = v0(tmp[26]);
                     oldValue = obj8.channelTypeString(obj3);
                   }
                   const obj7 = { oldValue, newValue: newValue2 };
                   newValue2 = key.newValue;
                   if (newValue2 == null) {
                     const obj9 = { type: key.newValue };
-                    const obj11 = v0(tmp[24]);
+                    const obj11 = v0(tmp[26]);
                     newValue2 = obj11.channelTypeString(obj9);
                   }
                   obj33 = obj7;
@@ -329,7 +376,7 @@ class AuditLog extends PureComponent {
                     if (null == tmp18Result) {
                       return null;
                     } else {
-                      const intl = v0(tmp[19]).intl;
+                      const intl = v0(tmp[21]).intl;
                       const _Array = Array;
                       const format = intl.format;
                       const obj10 = {
@@ -345,7 +392,7 @@ class AuditLog extends PureComponent {
                                     items = [children.colorHook, ];
                                     const obj3 = { backgroundColor: newValue1 };
                                     items[1] = obj3;
-                                    return authStore2(InlineSegment, obj, arg1);
+                                    return authStore2(closure_19, obj, arg1);
                                   },
                         newColorsHook(arg0, arg1) {
                                     let found;
@@ -360,21 +407,21 @@ class AuditLog extends PureComponent {
                                         let tmp3Result2;
                                         const Fragment = React.Fragment;
                                         let str = "";
-                                        const Text = application_id(log[15]).Text;
+                                        const Text = application_id(log[17]).Text;
                                         const tmp = closure_2_15;
                                         if (index > 0) {
                                           str = ", ";
                                         }
                                         const obj = { children: items };
                                         const obj2 = { variant: "text-sm/bold", children: "" + str + str2.toUpperCase() + " " };
-                                        const tmp3Result = application_id(log[27]);
+                                        const tmp3Result = application_id(log[29]);
                                         str2 = tmp3Result.int2hex(item);
                                         items = [closure_2_14(Text, obj2), ];
                                         const obj3 = { style: items1 };
                                         items1 = [colorHook.colorHook, ];
                                         const obj4 = { backgroundColor: tmp3Result2.int2hex(item) };
                                         items1[1] = obj4;
-                                        tmp3Result2 = application_id(log[27]);
+                                        tmp3Result2 = application_id(log[29]);
                                         items[1] = closure_2_14(closure_2_5, obj3);
                                         return tmp(Fragment, obj, index);
                                       })
@@ -382,7 +429,7 @@ class AuditLog extends PureComponent {
                                     let items = [, , ];
                                     ({ primary_color: arr[0], secondary_color: arr[1], tertiary_color: arr[2] } = newValue1);
                                     found = items.filter(GlobalUtils.isNotNullish);
-                                    return authStore2(InlineSegment, obj, arg1);
+                                    return authStore2(closure_19, obj, arg1);
                                   },
                         oldColorHook() {
                                     return null;
@@ -391,13 +438,13 @@ class AuditLog extends PureComponent {
                                     let obj2;
                                     const obj = { children: authStore2(AppliedForumTag.AppliedForumTagPill, obj2) };
                                     obj2 = { tag: application_id, containerStyle: children.forumTag, disableEndMargin: true };
-                                    return authStore2(InlineSegment, obj, arg1);
+                                    return authStore2(closure_19, obj, arg1);
                                   },
                         newTagHook(arg0, arg1) {
                                     let obj2;
                                     const obj = { children: authStore2(AppliedForumTag.AppliedForumTagPill, obj2) };
                                     obj2 = { tag: newValue1, containerStyle: children.forumTag, disableEndMargin: true };
-                                    return authStore2(InlineSegment, obj, arg1);
+                                    return authStore2(closure_19, obj, arg1);
                                   },
                         oldEmojiHook(arg0, arg1) {
                                     let obj4;
@@ -409,7 +456,7 @@ class AuditLog extends PureComponent {
                                     }
                                     const obj3 = { children: authStore2(EmojiDefault, obj4) };
                                     obj4 = { src: emojiURL, name: application_id, textEmojiStyle: children.textEmoji, fastImageStyle: children.imageEmoji };
-                                    return authStore2(InlineSegment, obj3, arg1);
+                                    return authStore2(closure_19, obj3, arg1);
                                   },
                         newEmojiHook(arg0, arg1) {
                                     let obj4;
@@ -421,12 +468,12 @@ class AuditLog extends PureComponent {
                                     }
                                     const obj3 = { children: authStore2(EmojiDefault, obj4) };
                                     obj4 = { src: emojiURL, name: newValue1, textEmojiStyle: children.textEmoji, fastImageStyle: children.imageEmoji };
-                                    return authStore2(InlineSegment, obj3, arg1);
+                                    return authStore2(closure_19, obj3, arg1);
                                   },
                         applicationHook(arg0, arg1) {
                                     let applicationId;
                                     const tmp = authStore2;
-                                    const tmp2 = ApplicationHook;
+                                    const tmp2 = closure_17;
                                     if (application_id != null) {
                                       applicationId = application_id.application_id;
                                     }
@@ -441,11 +488,11 @@ class AuditLog extends PureComponent {
                                   },
                         oldApplicationHook(arg0, arg1) {
                                     const obj = { applicationId: application_id };
-                                    return authStore2(ApplicationHook, obj, arg1);
+                                    return authStore2(closure_17, obj, arg1);
                                   },
                         newApplicationHook(arg0, arg1) {
                                     const obj = { applicationId: newValue1 };
-                                    return authStore2(ApplicationHook, obj, arg1);
+                                    return authStore2(closure_17, obj, arg1);
                                   }
                       };
                       num = 0;
@@ -479,7 +526,7 @@ class AuditLog extends PureComponent {
                         const obj14 = { color: RED_400 };
                         items[1] = obj14;
                         let str2 = null;
-                        let Text = tmp39(tmp[15]).Text;
+                        let Text = tmp39(tmp[17]).Text;
                         const tmp29 = application_id;
                         if (application_id < 10) {
                           str2 = "0";
@@ -500,7 +547,7 @@ class AuditLog extends PureComponent {
                                 const push = items3.push;
                                 const _HermesInternal = HermesInternal;
                                 const obj = { variant: "text-sm/normal", style: changeItemTextLine, children };
-                                push(closure_2_14(changeItemTextLine(log[15]).Text, obj, "text-" + items3.length));
+                                push(closure_2_14(changeItemTextLine(log[17]).Text, obj, "text-" + items3.length));
                                 children = [];
                               }
                               items3.push(type);
@@ -512,7 +559,7 @@ class AuditLog extends PureComponent {
                           let push = items3.push;
                           let _HermesInternal = HermesInternal;
                           const obj18 = { variant: "text-sm/normal", style: changeItemTextLine, children };
-                          const arr = push(tmp30(tmp39(tmp[15]).Text, obj18, "text-" + items3.length));
+                          const arr = push(tmp30(tmp39(tmp[17]).Text, obj18, "text-" + items3.length));
                           children = [];
                         }
                         items4 = [closure_1_14(View, obj16), ];
@@ -537,7 +584,7 @@ class AuditLog extends PureComponent {
               }
               if (tmp2.action === constants3.MEMBER_UPDATE) {
                 if (key.key === constants4.COMMUNICATION_DISABLED_UNTIL) {
-                  const obj6 = changeStrings(tmp[25])(key.newValue);
+                  const obj6 = changeStrings(tmp[27])(key.newValue);
                   const obj19 = { oldValue: key.oldValue, newValue };
                   if (obj6.isValid()) {
                     newValue = obj6.calendar();
@@ -550,9 +597,9 @@ class AuditLog extends PureComponent {
               if (tmp2.action === constants3.GUILD_UPDATE) {
                 if (key.key === constants4.OWNER_ID) {
                   const obj32 = { oldValue: obj4.getUserTag(key.oldValue, { mode: "username" }), newValue: obj5.getUserTag(key.newValue, { mode: "username" }) };
-                  obj4 = changeStrings(tmp[20]);
+                  obj4 = changeStrings(tmp[22]);
                   obj33 = obj32;
-                  obj5 = changeStrings(tmp[20]);
+                  obj5 = changeStrings(tmp[22]);
                 }
               }
               obj33 = { oldValue: null, newValue: null };
@@ -628,7 +675,7 @@ class AuditLog extends PureComponent {
     const obj4 = { accessible: false, style: items1, variant: str2, border: str3, onPress: onHeaderClick, children: null };
     items1 = [tmp.container, containerStyle];
     str2 = "secondary";
-    const Card = tmp10(5919).Card;
+    const Card = tmp10(5918).Card;
     if (expanded) {
       str2 = "primary";
     }
@@ -639,10 +686,10 @@ class AuditLog extends PureComponent {
     const obj5 = { style: tmp.rowContainer, children: null };
     const items2 = [, , , ];
     const obj6 = { action: log.action };
-    items2[0] = closure_14(user(17348), obj6);
+    items2[0] = closure_14(user(17350), obj6);
     const obj7 = {
       accessibilityRole: "button",
-      accessibilityLabel: intl.string(tmp10(1115).t.iXAna6),
+      accessibilityLabel: intl.string(tmp10(1127).t.iXAna6),
       accessibilityHint: username,
       onPress() {
         const obj = ActionSheetActionCreatorsDefault;
@@ -654,8 +701,8 @@ class AuditLog extends PureComponent {
       },
       children: null
     };
-    const PressableOpacity = tmp10(5435).PressableOpacity;
-    intl = tmp10(1115).intl;
+    const PressableOpacity = tmp10(5436).PressableOpacity;
+    intl = tmp10(1127).intl;
     username = undefined;
     const tmp16 = View;
     if (user != null) {
@@ -668,13 +715,13 @@ class AuditLog extends PureComponent {
           let source;
           if (log.action !== constants2.AUTO_MODERATION_QUARANTINE_USER) {
             if (null != log.options.integration_type) {
-              const tmp18Result = user(5595);
+              const tmp18Result = user(5596);
               const value = tmp18Result.get(log.options.integration_type);
               if (null != value) {
                 const icon = value.icon;
-                const tmp9Result = tmp9(4685);
+                const tmp9Result = tmp9(4687);
                 const tmp25 = tmp9Result.isThemeDark(theme) ? icon.darkPNG : icon.lightPNG;
-                const tmp9Result5 = tmp9(1397);
+                const tmp9Result5 = tmp9(1403);
                 source = tmp9Result5.makeSource(tmp25);
               }
             }
@@ -688,19 +735,19 @@ class AuditLog extends PureComponent {
             }
           }
           obj8.source = source;
-          obj8.size = tmp10(1177).AvatarSizes.SMALL;
+          obj8.size = tmp10(1189).AvatarSizes.SMALL;
           obj7.children = closure_14(tmp20, obj8);
           items2[1] = closure_14(PressableOpacity, obj7);
           const obj9 = { accessibilityRole: "button", accessibilityState: obj10, onPress: onHeaderClick, style: tmp.titleContainer, disabled: !checkChangesToRenderResult, children: items3 };
           obj10 = { expanded, disabled: !checkChangesToRenderResult };
-          const PressableOpacity2 = tmp10(5435).PressableOpacity;
+          const PressableOpacity2 = tmp10(5436).PressableOpacity;
           items3 = [self.renderTitle(), tmp8];
           items2[2] = closure_15(PressableOpacity2, obj9);
           let tmp17Result = null;
           if (checkChangesToRenderResult) {
-            const obj11 = { style: items4, size: tmp10(1177).Icon.Sizes.CUSTOM, source: user(14159) };
+            const obj11 = { style: items4, size: tmp10(1189).Icon.Sizes.CUSTOM, source: user(14147) };
             items4 = [tmp.arrow, rotate90];
-            const Icon = tmp10(1177).Icon;
+            const Icon = tmp10(1189).Icon;
             tmp17Result = tmp17(Icon, obj11);
           }
           items2[3] = tmp17Result;
@@ -716,11 +763,11 @@ class AuditLog extends PureComponent {
         }
       }
     }
-    const ensureAvatarSource = tmp9(1400).ensureAvatarSource;
-    tmp9(1400);
-    const makeSource = tmp9(1397).makeSource;
-    tmp9(1397);
-    const tmp9Result8 = tmp9(1400);
+    const ensureAvatarSource = tmp9(1406).ensureAvatarSource;
+    tmp9(1406);
+    const makeSource = tmp9(1403).makeSource;
+    tmp9(1403);
+    const tmp9Result8 = tmp9(1406);
     source = ensureAvatarSource(makeSource(tmp9Result8.getAutomodAvatarURL()));
   }
 }

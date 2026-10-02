@@ -1,308 +1,177 @@
 // Module ID: 12405
 // Function ID: 12406
-// Dependencies: []
-// Exports: basename, dirname, isAbsolute, join, relative
+// Dependencies: [12318, 12320, 12367]
 
 // Module 12405
-function resolve() {
-  let tmp17;
-  const items = [...arguments];
-  let diff = items.length - 1;
-  let flag = false;
-  let str = "";
-  let flag2 = false;
-  let str2 = "";
-  if (-1 <= diff) {
-    while (true) {
-      let tmp3 = flag;
-      let str3 = "/";
-      if (0 <= diff) {
-        str3 = items[diff];
-      }
-      let combined = str;
-      if (str3) {
-        let _HermesInternal = HermesInternal;
-        combined = "" + str3 + "/" + str;
-        tmp3 = "/" === str3.charAt(0);
-      }
-      let diff1 = diff - 1;
-      flag2 = tmp3;
-      str2 = combined;
-      if (-1 > diff1) {
-        break;
-      } else {
-        diff = diff1;
-        flag = tmp3;
-        str = combined;
-        str2 = combined;
-        flag2 = tmp3;
-        if (flag2) {
-          break;
-        }
-      }
-    }
-  }
-  let str4 = "";
-  if (flag2) {
-    str4 = "/";
-  }
-  const parts = str2.split("/");
-  const found = parts.filter((item) => item);
-  let diff2 = found.length - 1;
-  let num = 0;
-  let num2 = 0;
-  if (0 <= diff2) {
-    do {
-      let sum;
-      let tmp8 = found[diff2];
-      if ("." === tmp8) {
-        let spliceResult = found.splice(diff2, 1);
-        sum = num;
-      } else if (".." === tmp8) {
-        let spliceResult1 = found.splice(diff2, 1);
-        sum = num + 1;
-      } else {
-        sum = num;
-        if (sum) {
-          let spliceResult2 = found.splice(diff2, 1);
-          sum = num - 1;
-        }
-      }
-      diff2 = diff2 - 1;
-      num = sum;
-      num2 = sum;
-    } while (0 <= diff2);
-  }
-  if (!flag2) {
-    let diff3 = num2 - 1;
-    if (num2) {
-      do {
-        let arr = found.unshift("..");
-        tmp17 = diff3;
-        diff3 = diff3 - 1;
-      } while (tmp17);
-    }
-  }
-  const tmp18 = str4 + found.join("/") || ".";
-  return tmp18;
-}
-function normalizePath(str) {
-  let tmp14;
-  const charAtResult = str.charAt(0);
-  const substr = str.slice(-1);
-  const parts = str.split("/");
-  const found = parts.filter((item) => item);
-  let diff = found.length - 1;
-  let num = 0;
-  let num2 = 0;
-  if (0 <= diff) {
-    do {
-      let sum;
-      let tmp4 = found[diff];
-      if ("." === tmp4) {
-        let spliceResult = found.splice(diff, 1);
-        sum = num;
-      } else if (".." === tmp4) {
-        let spliceResult1 = found.splice(diff, 1);
-        sum = num + 1;
-      } else {
-        sum = num;
-        if (sum) {
-          let spliceResult2 = found.splice(diff, 1);
-          sum = num - 1;
-        }
-      }
-      diff = diff - 1;
-      num = sum;
-      num2 = sum;
-    } while (0 <= diff);
-  }
-  if ("/" !== charAtResult) {
-    let diff1 = num2 - 1;
-    if (num2) {
-      do {
-        let arr = found.unshift("..");
-        tmp14 = diff1;
-        diff1 = diff1 - 1;
-      } while (tmp14);
-    }
-  }
-  str = found.join("/");
-  const tmp15 = str || "/" === charAtResult;
-  if (!tmp15) {
-    str = ".";
-  }
-  let text = str;
-  const tmp16 = str && "/" === substr;
-  if (tmp16) {
-    text = `${str}/`;
-  }
-  let str2 = "";
-  if ("/" === charAtResult) {
-    str2 = "/";
-  }
-  return str2 + text;
-}
-const re0 = /^(\S+:\\|\/?)([\s\S]*?)((?:\.{1,2}|[^/\\]+?|)(\.[^./\\]*|))(?:[/\\]*)$/;
+import _mod12318 from "module_12318" /* 12318 */;
+import _mod12320 from "module_12320" /* 12320 */;
+import module_12367 from "module_12367" /* 12367 */;
 
-export const basename = function basename(arr, arg1) {
-  let combined = arr;
-  if (arr.length > 1024) {
+let set;
+
+function flattenIssue(path) {
+  let joined;
+  let json;
+  let json1;
+  const obj = { path: joined, keys: json, unionErrors: json1 };
+  const merged = Object.assign(path);
+  joined = undefined;
+  if ("path" in path) {
+    const _Array = Array;
+    if (Array.isArray(path.path)) {
+      path = path.path;
+      joined = path.join(".");
+    }
+  }
+  json = undefined;
+  if ("keys" in path) {
+    const _JSON = JSON;
+    json = JSON.stringify(path.keys);
+  }
+  json1 = undefined;
+  if ("unionErrors" in path) {
+    const _JSON2 = JSON;
+    json1 = JSON.stringify(path.unionErrors);
+  }
+  return obj;
+}
+function flattenIssuePath(arr) {
+  const mapped = arr.map((item) => {
+    let str = "<array>";
+    if (typeof item !== "number") {
+      str = item;
+    }
+    return str;
+  });
+  return mapped.join(".");
+}
+function formatIssueMessage(issues) {
+  set = new Set();
+  const tmp = issues.issues[Symbol.iterator]();
+  while (tmp !== undefined) {
+    let arr = flattenIssuePath(tmp2.path);
+    if (arr.length > 0) {
+      let addResult = set.add(tmp4);
+    }
+    continue;
+  }
+  const arr2 = Array.from(set);
+  if (0 === arr2.length) {
+    let str4 = "variable";
+    if (issues.issues.length > 0) {
+      const first = issues.issues[0];
+      str4 = "variable";
+      const tmp10 = undefined !== first && "expected" in first && typeof first.expected === "string";
+      if (tmp10) {
+        str4 = first.expected;
+      }
+    }
+    const _HermesInternal2 = HermesInternal;
+    return "Failed to validate " + str4;
+  } else {
     const _HermesInternal = HermesInternal;
-    combined = "<truncated>" + arr.slice(-1024);
+    const obj2 = _mod12320;
+    return "Failed to validate keys: " + obj2.truncate(arr2.join(", "), 100);
   }
-  const match = re0.exec(combined);
-  if (match) {
-    let substr = match.slice(1);
-  } else {
-    substr = [];
-  }
-  let substr1 = arr3;
-  const tmp3 = arg1 && arr3.slice(-1 * arg1.length) === arg1;
-  if (tmp3) {
-    substr1 = arr3.slice(0, arr3.length - arg1.length);
-  }
-  return substr1;
-};
-export const dirname = function dirname(arr) {
-  let str2;
-  let substr;
-  let combined = arr;
-  if (arr.length > 1024) {
-    const _HermesInternal = HermesInternal;
-    combined = "<truncated>" + arr.slice(-1024);
-  }
-  const match = re0.exec(combined);
-  if (match) {
-    substr = match.slice(1);
-  } else {
-    substr = [];
-  }
-  if (substr[0] || "") {
-    const substr1 = arr3 && arr3.slice(0, arr3.length - 1);
-    str2 = tmp3 + substr1;
-  } else {
-    str2 = ".";
-  }
-  return str2;
-};
-export const isAbsolute = function isAbsolute(str) {
-  return "/" === str.charAt(0);
-};
-export const join = function join() {
-  const items = [...arguments];
-  return normalizePath(items.join("/"));
-};
-export { normalizePath };
-export const relative = function relative(arg0, arg1) {
+}
+function applyZodErrorsToEvent(arg0, arg1, exception, originalException) {
   let items;
-  let items1;
-  let length;
-  const arr = resolve(arg0);
-  const str = arr.slice(1);
-  const arr2 = resolve(arg1);
-  const str2 = arr2.slice(1);
-  const parts = str.split("/");
-  let num = 0;
-  if (0 < parts.length) {
-    let num2 = 0;
-    num = 0;
-    if ("" === parts[0]) {
-      const sum = num2 + 1;
-      num = sum;
-      while (sum < parts.length) {
-        num2 = sum;
-        num = sum;
-        if ("" !== parts[sum]) {
-          break;
+  let obj2;
+  let obj4;
+  let obj6;
+  let obj8;
+  function originalExceptionIsZodError(originalException) {
+    const obj = _mod12318;
+    let isErrorResult = obj.isError(originalException) && "ZodError" === originalException.name;
+    if (isErrorResult) {
+      const _Array = Array;
+      isErrorResult = Array.isArray(originalException.issues);
+    }
+    return isErrorResult;
+  }
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = false;
+  }
+  if (exception.exception) {
+    if (exception.exception.values) {
+      const tmp2 = originalException;
+      if (tmp2) {
+        if (originalException.originalException) {
+          if (originalExceptionIsZodError(originalException.originalException)) {
+            if (0 !== originalException.originalException.issues.length) {
+              try {
+                let substr;
+                const issues = originalException.originalException.issues;
+                if (flag) {
+                  substr = issues;
+                } else {
+                  substr = issues.slice(0, arg0);
+                }
+                const mapped = substr.map(flattenIssue);
+                if (flag) {
+                  let _Array = Array;
+                  if (!Array.isArray(originalException.attachments)) {
+                    originalException.attachments = [];
+                  }
+                  const attachments = originalException.attachments;
+                  let obj = { filename: "zod_issues.json", data: JSON.stringify(obj2) };
+                  const _JSON = JSON;
+                  const push = attachments.push;
+                  obj2 = { issues: mapped };
+                  push(obj);
+                }
+                const obj3 = { exception: obj4, extra: obj6 };
+                const merged = Object.assign(exception);
+                obj4 = { values: items };
+                const merged1 = Object.assign(exception.exception);
+                const obj5 = { value: formatIssueMessage(originalException.originalException) };
+                const merged2 = Object.assign(exception.exception.values[0]);
+                items = [obj5];
+                const values = exception.exception.values;
+                HermesBuiltin.arraySpread(items, values.slice(1), 1);
+                obj6 = { "zoderror.issues": mapped.slice(0, arg0) };
+                const merged3 = Object.assign(exception.extra);
+                return obj3;
+              } catch (error) {
+                const obj7 = { extra: obj8 };
+                const merged4 = Object.assign(exception);
+                obj8 = { "zoderrors sentry integration parse error": obj9 };
+                const merged5 = Object.assign(exception.extra);
+                const _Error = Error;
+                let str = "unknown";
+                if (error instanceof Error) {
+                  const _HermesInternal = HermesInternal;
+                  str = "" + error.name + ": " + error.message + "\n" + error.stack;
+                }
+                return obj7;
+              }
+            }
+          }
         }
       }
     }
   }
-  const diff = parts.length - 1;
-  let tmp3 = diff;
-  if (0 <= diff) {
-    let tmp4 = diff;
-    tmp3 = diff;
-    if ("" === parts[diff]) {
-      const diff1 = tmp4 - 1;
-      tmp3 = diff1;
-      while (0 <= diff1) {
-        tmp4 = diff1;
-        tmp3 = diff1;
-        if ("" !== parts[diff1]) {
-          break;
-        }
-      }
+  return exception;
+}
+
+export { applyZodErrorsToEvent };
+export { flattenIssue };
+export { flattenIssuePath };
+export { formatIssueMessage };
+export const zodErrorsIntegration = module_12367.defineIntegration(() => {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  let num = 10;
+  if (undefined !== obj.limit) {
+    num = obj.limit;
+  }
+  return {
+    name: "ZodErrors",
+    processEvent(arg0, arg1) {
+      return applyZodErrorsToEvent(num, obj.saveZodIssuesAsAttachment, arg0, arg1);
     }
-  }
-  if (tmp3 < num) {
-    items = [];
-  } else {
-    items = parts.slice(num, tmp3 - num + 1);
-  }
-  const parts1 = str2.split("/");
-  let num3 = 0;
-  if (0 < parts1.length) {
-    let num4 = 0;
-    num3 = 0;
-    if ("" === parts1[0]) {
-      const sum1 = num4 + 1;
-      num3 = sum1;
-      while (sum1 < parts1.length) {
-        num4 = sum1;
-        num3 = sum1;
-        if ("" !== parts1[sum1]) {
-          break;
-        }
-      }
-    }
-  }
-  const diff2 = parts1.length - 1;
-  let tmp8 = diff2;
-  if (0 <= diff2) {
-    let tmp9 = diff2;
-    tmp8 = diff2;
-    if ("" === parts1[diff2]) {
-      const diff3 = tmp9 - 1;
-      tmp8 = diff3;
-      while (0 <= diff3) {
-        tmp9 = diff3;
-        tmp8 = diff3;
-        if ("" !== parts1[diff3]) {
-          break;
-        }
-      }
-    }
-  }
-  if (tmp8 < num3) {
-    items1 = [];
-  } else {
-    items1 = parts1.slice(num3, tmp8 - num3 + 1);
-  }
-  const bound = Math.min(items.length, items1.length);
-  let num5 = 0;
-  let tmp12 = bound;
-  if (0 < bound) {
-    tmp12 = num5;
-    while (items[num5] === items1[num5]) {
-      num5 = num5 + 1;
-      tmp12 = bound;
-      if (num5 >= bound) {
-        break;
-      }
-    }
-  }
-  const items2 = [];
-  let sum2 = tmp12;
-  if (tmp12 < items.length) {
-    do {
-      let arr3 = items2.push("..");
-      sum2 = sum2 + 1;
-      length = items.length;
-    } while (sum2 < length);
-  }
-  const combined = items2.concat(items1.slice(tmp12));
-  return combined.join("/");
-};
-export { resolve };
+  };
+});

@@ -1,16 +1,16 @@
-// Module ID: 12281
-// Function ID: 12282
+// Module ID: 12178
+// Function ID: 12179
 // Name: ForumPlatformHooks
-// Dependencies: [19, 4693, 4692, 7326, 2]
+// Dependencies: [19, 4695, 4694, 7330, 2]
 
-// Module 12281 (ForumPlatformHooks)
-import RootNavigationRef from "RootNavigationRef" /* 4693 */;
-import ForumChannelSeenManagerDefault from "ForumChannelSeenManager" /* 7326 */;
+// Module 12178 (ForumPlatformHooks)
+import RootNavigationRef from "RootNavigationRef" /* 4695 */;
+import ForumChannelSeenManagerDefault from "ForumChannelSeenManager" /* 7330 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const NavigationRouteUtils = tmp(4692);
+const NavigationRouteUtils = tmp(4694);
 let obj = {
   useForumChannelSeenManager(guildId) {
     guildId = guildId.guildId;

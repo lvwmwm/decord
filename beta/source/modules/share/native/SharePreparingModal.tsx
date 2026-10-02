@@ -1,23 +1,26 @@
-// Module ID: 7815
-// Function ID: 7816
+// Module ID: 7819
+// Function ID: 7820
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 4836, 576, 5267, 7816, 7817, 1115, 5992, 5889, 4832, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 5268, 1127, 5940, 7820, 7821, 5890, 4833, 2]
 
-// Module 7815 (SharePreparingModal)
-import nativeDefault from "native" /* 576 */;
-import intl3 from "intl" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import Backdrop from "Backdrop" /* 5267 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5889 */;
-import XSmallIcon from "XSmallIcon" /* 5992 */;
-import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 7816 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 7817 */;
+// Module 7819 (SharePreparingModal)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl3 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import Backdrop from "Backdrop" /* 5268 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5890 */;
+import XSmallIcon from "XSmallIcon" /* 5940 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 7820 */;
+import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 7821 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let onCancel;
 
 let StyleSheet;
 let closure_4;
@@ -34,9 +37,125 @@ createStyles = createStyles.createStyles;
 obj3 = { bottom: undefined };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_7 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/share/native/SharePreparingModal.tsx");
-
-export default function SharePreparingModal(onCancel) {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancel) => {
+  let intl2;
+  let items1;
+  let tmp11;
+  let tmp12;
+  let tmp16;
+  let tmp5;
+  let tmp6;
+  let tmp8;
+  let topBar;
+  let topBarEnd;
+  const obj = react2;
+  const cResult = obj.c(19);
+  onCancel = onCancel.onCancel;
+  const tmp4 = closure_7();
+  if (cResult[0] !== onCancel) {
+    const fn = function o() {
+      return () => onCancel();
+    };
+    const items = [onCancel];
+    cResult[0] = onCancel;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp6 = items;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+    tmp6 = cResult[2];
+  }
+  const effect = react.useEffect(tmp5, tmp6);
+  const content = tmp4.content;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp10 = hasOwnProperty(Backdrop.Backdrop, { blur: "none", "aria-hidden": true });
+    cResult[3] = tmp10;
+    tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[3];
+  }
+  ({ topBar, topBarEnd } = tmp4);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl3.t.cpT0Cq);
+    const tmp15 = hasOwnProperty(XSmallIcon.XSmallIcon, { size: "md", color: "interactive-text-active" });
+    cResult[4] = stringResult;
+    cResult[5] = tmp15;
+    tmp12 = tmp15;
+    tmp11 = stringResult;
+  } else {
+    tmp11 = cResult[4];
+    tmp12 = cResult[5];
+  }
+  if (cResult[6] !== onCancel) {
+    const obj2 = { accessibilityLabel: tmp11, icon: tmp12, onPress: onCancel };
+    const tmp19 = hasOwnProperty(MediaViewerOverlayButtonDefault, obj2);
+    cResult[6] = onCancel;
+    cResult[7] = tmp19;
+    tmp16 = tmp19;
+  } else {
+    tmp16 = cResult[7];
+  }
+  if (cResult[8] === tmp4.topBarEnd) {
+    let tmp20;
+    if (cResult[9] === tmp16) {
+      tmp20 = cResult[10];
+    }
+    if (cResult[11] === tmp4.topBar) {
+      let tmp22;
+      let tmp26;
+      let tmp29;
+      if (cResult[12] === tmp20) {
+        tmp22 = cResult[13];
+      }
+      const _Symbol = Symbol;
+      if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp28 = hasOwnProperty(ActivityIndicator_ActivityIndicator.ActivityIndicator, {});
+        cResult[14] = tmp28;
+        tmp26 = tmp28;
+      } else {
+        tmp26 = cResult[14];
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children: intl2.string(intl3.t.DwTQE5) };
+        const Text = tmp(4833).Text;
+        intl2 = tmp(1127).intl;
+        const tmp31 = hasOwnProperty(Text, obj3);
+        cResult[15] = tmp31;
+        tmp29 = tmp31;
+      } else {
+        tmp29 = cResult[15];
+      }
+      if (cResult[16] === tmp4.content) {
+        let tmp32;
+        if (cResult[17] === tmp22) {
+          tmp32 = cResult[18];
+        }
+        return tmp32;
+      }
+      const obj4 = { style: content, children: items1 };
+      items1 = [tmp8, tmp22, tmp26, tmp29];
+      const tmp35 = metroRequire(React3, obj4);
+      cResult[16] = tmp4.content;
+      cResult[17] = tmp22;
+      cResult[18] = tmp35;
+      tmp32 = tmp35;
+    }
+    const obj5 = { style: topBar, pointerEvents: "box-none", children: tmp20 };
+    const tmp25 = hasOwnProperty(React3, obj5);
+    cResult[11] = tmp4.topBar;
+    cResult[12] = tmp20;
+    cResult[13] = tmp25;
+    tmp22 = tmp25;
+  }
+  const tmp21 = hasOwnProperty(MediaModalOverlayHeaderWrapper2.MediaModalOverlayHeaderWrapper, { style: topBarEnd, children: tmp16 });
+  cResult[8] = tmp4.topBarEnd;
+  cResult[9] = tmp16;
+  cResult[10] = tmp21;
+  tmp20 = tmp21;
+}) : ((onCancel) => {
   let MediaModalOverlayHeaderWrapper;
   let intl;
   let intl2;
@@ -63,4 +182,7 @@ export default function SharePreparingModal(onCancel) {
   intl2 = intl3.intl;
   items1[3] = hasOwnProperty(Text, obj5);
   return metroRequire(React3, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/share/native/SharePreparingModal.tsx");
+
+export default tmp6;

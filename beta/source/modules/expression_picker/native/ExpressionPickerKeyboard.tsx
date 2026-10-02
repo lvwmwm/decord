@@ -1,42 +1,215 @@
-// Module ID: 16300
-// Function ID: 16301
+// Module ID: 16302
+// Function ID: 16303
 // Name: ExpressionPickerKeyboard
-// Dependencies: [32, 19, 11518, 21, 4566, 5266, 11921, 1876, 1611, 4703, 10898, 4540, 11561, 9739, 2]
+// Dependencies: [32, 19, 11394, 21, 558, 576, 4570, 5267, 11815, 1882, 1617, 4705, 9549, 4544, 9855, 11566, 2]
 
-// Module 16300 (ExpressionPickerKeyboard)
+// Module 16302 (ExpressionPickerKeyboard)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardTypes from "KeyboardTypes" /* 1611 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
-import native from "native" /* 4540 */;
-import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11518 */;
-import getEmojiTextDefault from "getEmojiText" /* 11921 */;
+import KeyboardTypes from "KeyboardTypes" /* 1617 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1882 */;
+import native from "native" /* 4544 */;
+import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11394 */;
+import getEmojiTextDefault from "getEmojiText" /* 11815 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const KEYBOARD_ANIMATION_CONFIG = PortalKeyboardConstants.KEYBOARD_ANIMATION_CONFIG;
 const jsx = Fragment.jsx;
 let __initData = { code: "function ExpressionPickerKeyboardTsx1(){const{bottomSheetIndex}=this.__closure;return Math.max(bottomSheetIndex.get(),0)>0;}" };
 let closure_8 = { code: "function ExpressionPickerKeyboardTsx2(){const{bottomSheetExpandingOrExpanded,maximum,minimum}=this.__closure;return{height:bottomSheetExpandingOrExpanded.get()?maximum:minimum};}" };
-const memoResult = react.memo(function ExpressionPickerKeyboard(chatInputRef) {
-  let View;
+let closure_9 = { code: "function ExpressionPickerKeyboardTsx3(){const{bottomSheetIndex}=this.__closure;return Math.max(bottomSheetIndex.get(),0)>0;}" };
+let closure_10 = { code: "function ExpressionPickerKeyboardTsx4(){const{bottomSheetExpandingOrExpanded,maximum,minimum}=this.__closure;return{height:bottomSheetExpandingOrExpanded.get()?maximum:minimum};}" };
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+  let channel;
+  let chatInputRef;
   let closure_7;
+  let ref;
+  let transitionState;
+  let tmp = chatInputRef;
+  let tmp2 = transitionState;
+  let obj = chatInputRef(transitionState[5]);
+  const cResult = obj.c(36);
+  ({ channel, chatInputRef } = onClose);
+  onClose = onClose.onClose;
+  transitionState = onClose.transitionState;
+  let obj2 = chatInputRef(transitionState[6]);
+  const sharedValue = obj2.useSharedValue(-1);
+  const obj3 = chatInputRef(transitionState[6]);
+  const sharedValue1 = obj3.useSharedValue(0);
+  ref = ref.useRef(null);
+  const obj4 = chatInputRef(transitionState[7]);
+  const isScreenReaderEnabled = obj4.useIsScreenReaderEnabled();
+  const tmp8 = sharedValue(ref.useState(false), 2);
+  const first = tmp8[0];
+  __initData = tmp8[1];
+  if (cResult[0] !== chatInputRef) {
+    const fn = function x(arg0) {
+      const current = chatInputRef.current;
+      current.insertText(getEmojiTextDefault(arg0), null, true);
+      const obj = KeyboardManagerUtils;
+      const result = obj.dismissGlobalKeyboard();
+      const current2 = chatInputRef.current;
+      const obj2 = { type: KeyboardTypes.KeyboardTypes.EXPRESSION };
+      current2.openCustomKeyboard(obj2);
+      const current3 = ref.current;
+      if (current3 != null) {
+        current3.snapToIndex(0);
+      }
+    };
+    cResult[0] = chatInputRef;
+    cResult[1] = fn;
+  }
+  if (cResult[2] !== chatInputRef) {
+    class C {
+      constructor(url) {
+        const current = chatInputRef.current;
+        current.handleSelectGIF(url);
+        const current2 = chatInputRef.current;
+        current2.openSystemKeyboard();
+      }
+    }
+    cResult[2] = chatInputRef;
+    cResult[3] = C;
+  } else {
+    class C {
+      constructor(url) {
+        const current = chatInputRef.current;
+        current.handleSelectGIF(url);
+        const current2 = chatInputRef.current;
+        current2.openSystemKeyboard();
+      }
+    }
+  }
+  if (cResult[4] !== chatInputRef) {
+    class C {
+      constructor(url) {
+        const current = chatInputRef.current;
+        current.handleSelectGIF(url);
+        const current2 = chatInputRef.current;
+        current2.openSystemKeyboard();
+      }
+    }
+    cResult[4] = chatInputRef;
+    cResult[5] = tmp13;
+  } else {
+    class C {
+      constructor(url) {
+        const current = chatInputRef.current;
+        current.handleSelectGIF(url);
+        const current2 = chatInputRef.current;
+        current2.openSystemKeyboard();
+      }
+    }
+  }
+  if (cResult[6] !== chatInputRef) {
+    class D {
+      constructor() {
+        const current = chatInputRef.current;
+        current.backspace();
+      }
+    }
+    cResult[6] = chatInputRef;
+    cResult[7] = D;
+  } else {
+    class D {
+      constructor() {
+        const current = chatInputRef.current;
+        current.backspace();
+      }
+    }
+  }
+  const tmpResult = tmp(tmp2[11]);
+  const keyboardContextForType = tmpResult.useKeyboardContextForType(tmp(tmp2[10]).KeyboardTypes.EXPRESSION);
+  const tmp16 = onClose(tmp2[12])();
+  const minimum = tmp16.minimum;
+  const maximum = tmp16.maximum;
+  const tmpResult3 = tmp(tmp2[6]);
+  class M {
+    constructor() {
+      return Math.max(sharedValue.get(), 0) > 0;
+    }
+  }
+  M.__closure = { bottomSheetIndex: sharedValue };
+  M.__workletHash = 1982988107352;
+  M.__initData = __initData;
+  const derivedValue = tmpResult3.useDerivedValue(M);
+  const tmpResult4 = tmp(tmp2[6]);
+  class V {
+    constructor() {
+      const obj = { height: derivedValue.get() ? maximum : minimum };
+      return obj;
+    }
+  }
+  V.__closure = { bottomSheetExpandingOrExpanded: derivedValue, maximum, minimum };
+  V.__workletHash = 13253776832356;
+  V.__initData = minimum;
+  const animatedStyle = tmpResult4.useAnimatedStyle(V);
+  if (cResult[8] === chatInputRef) {
+    class D {
+      constructor() {
+        const current = chatInputRef.current;
+        current.backspace();
+      }
+    }
+    if (cResult[11] === first) {
+      class D {
+        constructor() {
+          const current = chatInputRef.current;
+          current.backspace();
+        }
+      }
+    }
+    class Y {
+      constructor() {
+        const tmp = first && transitionState === native.TransitionStates.YEETED;
+        if (tmp) {
+          if (onClose != null) {
+            tmp5();
+          }
+        }
+      }
+    }
+    const items = [first, onClose, transitionState];
+    cResult[11] = first;
+    cResult[12] = onClose;
+    cResult[13] = transitionState;
+    cResult[14] = Y;
+    cResult[15] = items;
+  }
+  class G {
+    constructor() {
+      closure_7(true);
+      const tmp2 = isScreenReaderEnabled;
+      if (tmp2) {
+        const current = chatInputRef.current;
+        current.openSystemKeyboard();
+      }
+    }
+  }
+  cResult[8] = chatInputRef;
+  cResult[9] = isScreenReaderEnabled;
+  cResult[10] = G;
+}) : ((chatInputRef) => {
+  let View;
   let obj8;
   chatInputRef = chatInputRef.chatInputRef;
   const onClose = chatInputRef.onClose;
   const transitionState = chatInputRef.transitionState;
   let ref;
+  let derivedValue;
   const channel = chatInputRef.channel;
-  let obj = chatInputRef(transitionState[4]);
+  let obj = chatInputRef(transitionState[6]);
   const sharedValue = obj.useSharedValue(-1);
-  let obj2 = chatInputRef(transitionState[4]);
+  let obj2 = chatInputRef(transitionState[6]);
   const sharedValue1 = obj2.useSharedValue(0);
   ref = ref.useRef(null);
-  const obj3 = chatInputRef(transitionState[5]);
+  const obj3 = chatInputRef(transitionState[7]);
   const isScreenReaderEnabled = obj3.useIsScreenReaderEnabled();
   const tmp5 = sharedValue(ref.useState(false), 2);
   const first = tmp5[0];
-  __initData = tmp5[1];
+  let closure_7 = tmp5[1];
   const items = [chatInputRef];
   const items1 = [chatInputRef];
   const callback = ref.useCallback((arg0) => {
@@ -72,31 +245,31 @@ const memoResult = react.memo(function ExpressionPickerKeyboard(chatInputRef) {
     const current = chatInputRef.current;
     current.backspace();
   }, items3);
-  const obj4 = chatInputRef(transitionState[9]);
-  const keyboardContextForType = obj4.useKeyboardContextForType(chatInputRef(transitionState[8]).KeyboardTypes.EXPRESSION);
-  const tmp12 = onClose(transitionState[10])();
+  const obj4 = chatInputRef(transitionState[11]);
+  const keyboardContextForType = obj4.useKeyboardContextForType(chatInputRef(transitionState[10]).KeyboardTypes.EXPRESSION);
+  const tmp12 = onClose(transitionState[12])();
   const minimum = tmp12.minimum;
   const maximum = tmp12.maximum;
-  const fn = function b() {
-    return Math.max(sharedValue.get(), 0) > 0;
-  };
-  fn.__closure = { bottomSheetIndex: sharedValue };
-  fn.__workletHash = 1982988107352;
-  fn.__initData = __initData;
-  const obj5 = chatInputRef(transitionState[4]);
-  const derivedValue = obj5.useDerivedValue(fn);
-  const obj6 = chatInputRef(transitionState[4]);
+  const obj5 = chatInputRef(transitionState[6]);
   class S {
     constructor() {
-      const obj = { height: derivedValue.get() ? maximum : minimum };
-      return obj;
+      return Math.max(sharedValue.get(), 0) > 0;
     }
   }
-  S.__closure = { bottomSheetExpandingOrExpanded: derivedValue, maximum, minimum };
-  S.__workletHash = 13253776832356;
-  S.__initData = minimum;
+  S.__closure = { bottomSheetIndex: sharedValue };
+  S.__workletHash = 17590128332378;
+  S.__initData = maximum;
+  derivedValue = obj5.useDerivedValue(S);
+  const fn = function b() {
+    const obj = { height: derivedValue.get() ? maximum : minimum };
+    return obj;
+  };
+  fn.__closure = { bottomSheetExpandingOrExpanded: derivedValue, maximum, minimum };
+  fn.__workletHash = 7280607865186;
+  fn.__initData = derivedValue;
   const items4 = [isScreenReaderEnabled, chatInputRef];
-  const animatedStyle = obj6.useAnimatedStyle(S);
+  const obj6 = chatInputRef(transitionState[6]);
+  const animatedStyle = obj6.useAnimatedStyle(fn);
   const items5 = [first, onClose, transitionState];
   const callback4 = ref.useCallback(() => {
     closure_7(true);
@@ -115,11 +288,11 @@ const memoResult = react.memo(function ExpressionPickerKeyboard(chatInputRef) {
     }
   }, items5);
   const obj7 = { ref, animatedIndex: sharedValue, animatedPosition: sharedValue1, forceMaxHeight: isScreenReaderEnabled, chatInputRef, animationConfigs: isScreenReaderEnabled, onClose: callback4, renderExpressionFooter: true, transitionState, children: first(View, obj8) };
-  obj8 = { nativeID: "expression-picker-sheet", style: animatedStyle, children: first(onClose(transitionState[13]), { bottomSheetRef: ref, bottomSheetIndex: sharedValue, onBackspace: callback3, onPressEmoji: callback, onPressGIF: callback1, onPressSticker: callback2, channel, expressionType: keyboardContextForType, inPortalKeyboard: true }) };
-  const tmp17 = onClose(transitionState[12]);
-  View = onClose(transitionState[4]).View;
+  obj8 = { nativeID: "expression-picker-sheet", style: animatedStyle, children: first(onClose(transitionState[14]), { bottomSheetRef: ref, bottomSheetIndex: sharedValue, onBackspace: callback3, onPressEmoji: callback, onPressGIF: callback1, onPressSticker: callback2, channel, expressionType: keyboardContextForType, inPortalKeyboard: true }) };
+  const tmp17 = onClose(transitionState[15]);
+  View = onClose(transitionState[6]).View;
   return first(tmp17, obj7, "expression-picker-" + isScreenReaderEnabled);
-});
+}));
 let result = size.fileFinishedImporting("modules/expression_picker/native/ExpressionPickerKeyboard.tsx");
 
 export default memoResult;

@@ -1,14 +1,14 @@
-// Module ID: 13932
-// Function ID: 13933
+// Module ID: 13934
+// Function ID: 13935
 // Name: MenuGroup
-// Dependencies: [19, 17, 21, 4836, 576, 2]
+// Dependencies: [19, 17, 21, 4837, 588, 2]
 
-// Module 13932 (MenuGroup)
-import nativeDefault from "native" /* 576 */;
+// Module 13934 (MenuGroup)
+import nativeDefault from "native" /* 588 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -37,14 +37,14 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
   }
   items = [tmp4, ];
   const Children = react.Children;
-  items[1] = Children.map(children, (icon, arg1) => {
-    let cloneElementResult = icon;
+  items[1] = Children.map(children, (label, arg1) => {
+    let cloneElementResult = label;
     if (0 === arg1) {
-      cloneElementResult = icon;
+      cloneElementResult = label;
       const obj = react;
-      if (react.isValidElement(icon)) {
+      if (react.isValidElement(label)) {
         const obj2 = { ref };
-        cloneElementResult = obj.cloneElement(icon, obj2);
+        cloneElementResult = obj.cloneElement(label, obj2);
       }
     }
     return cloneElementResult;

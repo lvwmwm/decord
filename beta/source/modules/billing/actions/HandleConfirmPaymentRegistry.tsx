@@ -1,14 +1,14 @@
-// Module ID: 5193
-// Function ID: 5194
+// Module ID: 5194
+// Function ID: 5195
 // Name: HandleConfirmPaymentRegistry
-// Dependencies: [5, 1074, 1085, 5175, 5189, 1271, 2]
+// Dependencies: [5, 1086, 1097, 5176, 5190, 1283, 2]
 // Exports: getIsStripeDirectConfirmationPaymentSource, getIsStripeRedirectedPaymentSource
 
-// Module 5193 (HandleConfirmPaymentRegistry)
-import Constants2 from "Constants" /* 1085 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5175 */;
+// Module 5194 (HandleConfirmPaymentRegistry)
+import Constants2 from "Constants" /* 1097 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5176 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let _self, c2;
@@ -162,7 +162,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -289,7 +289,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -340,7 +340,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
             closure_1 = value;
             closure_129_2.performRedirect(closure_1);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           c3 = 3;
@@ -391,7 +391,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

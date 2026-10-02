@@ -1,29 +1,70 @@
-// Module ID: 16525
-// Function ID: 16526
+// Module ID: 16527
+// Function ID: 16528
 // Name: useSearchMessages
-// Dependencies: [6699, 11822, 504, 11823, 2]
-// Exports: useSearchMessages
+// Dependencies: [6700, 11715, 558, 576, 11716, 504, 2]
 
-// Module 16525 (useSearchMessages)
-import SearchUtils from "SearchUtils" /* 11823 */;
-import SearchMessageStore from "SearchMessageStore" /* 6699 */;
-import SearchQueryStore from "SearchQueryStore" /* 11822 */;
+// Module 16527 (useSearchMessages)
+import SearchUtils from "SearchUtils" /* 11716 */;
+import SearchMessageStore from "SearchMessageStore" /* 6700 */;
+import SearchQueryStore from "SearchQueryStore" /* 11715 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const result = size.fileFinishedImporting("modules/search/native/components/tabs/hooks/useSearchMessages.tsx");
-
-export const useSearchMessages = function useSearchMessages(searchContext, tab) {
-  _require = searchContext;
-  dependencyMap = tab;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let first;
+  _require = arg0;
+  dependencyMap = arg1;
+  let obj = require("react");
+  const cResult = obj.c(5);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SearchQueryStore, SearchMessageStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    let tmp7;
+    let tmp8;
+    if (cResult[2] === arg1) {
+      tmp7 = cResult[3];
+      tmp8 = cResult[4];
+    }
+    const tmpResult = tmp(504);
+    return tmpResult.useStateFromStores(first, tmp7, tmp8);
+  }
+  const fn = function u() {
+    const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(closure_0);
+    const obj = SearchUtils;
+    return SearchMessageStore.getMessages(obj.getSearchTabFetchId(closure_0, closure_1, searchResultsQuery));
+  };
+  const items1 = [arg0, arg1];
+  cResult[1] = arg0;
+  cResult[2] = arg1;
+  cResult[3] = fn;
+  cResult[4] = items1;
+  tmp8 = items1;
+  tmp7 = fn;
+}) : ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  _require = arg0;
+  dependencyMap = arg1;
   let obj = require("get initialized");
   const items = [SearchQueryStore, SearchMessageStore];
-  const items1 = [searchContext, tab];
+  const items1 = [arg0, arg1];
   return obj.useStateFromStores(items, () => {
-    const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
+    const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(closure_0);
     const obj = SearchUtils;
-    return SearchMessageStore.getMessages(obj.getSearchTabFetchId(searchContext, tab, searchResultsQuery));
+    return SearchMessageStore.getMessages(obj.getSearchTabFetchId(closure_0, closure_1, searchResultsQuery));
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/search/native/components/tabs/hooks/useSearchMessages.tsx");
+
+export const useSearchMessages = tmp2;

@@ -1,13 +1,13 @@
-// Module ID: 12062
-// Function ID: 12063
+// Module ID: 11971
+// Function ID: 11972
 // Name: GuildBoostingMarketingConstants
-// Dependencies: [1074, 1374, 4728, 1115, 2]
+// Dependencies: [1086, 1380, 4730, 1127, 2]
 
-// Module 12062 (GuildBoostingMarketingConstants)
-import intl3 from "intl" /* 1115 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4728 */;
-import Constants from "Constants" /* 1074 */;
+// Module 11971 (GuildBoostingMarketingConstants)
+import intl3 from "intl" /* 1127 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 4730 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let items;

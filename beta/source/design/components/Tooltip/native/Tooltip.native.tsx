@@ -1,18 +1,18 @@
-// Module ID: 10592
-// Function ID: 10593
+// Module ID: 9659
+// Function ID: 9660
 // Name: Tooltip
-// Dependencies: [32, 19, 17, 21, 4836, 576, 4566, 4531, 10593, 5280, 4832, 2]
-// Exports: Tooltip
+// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 4570, 4535, 9660, 5281, 4833, 2]
 
-// Module 10592 (Tooltip)
+// Module 9659 (Tooltip)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5280 */;
+import nativeDefault from "native" /* 588 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import spring from "spring" /* 5281 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -29,12 +29,138 @@ obj2 = { paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDef
 createStyles = createStyles.createStyles;
 size = { width: 0, height: 0, borderStyle: "solid", borderLeftColor: "transparent", borderRightColor: "transparent", borderTopColor: nativeDefault.colors.BACKGROUND_BRAND, borderBottomColor: nativeDefault.colors.BACKGROUND_BRAND };
 let closure_9 = createStyles(obj);
-const __initData = { code: "function TooltipNativeTsx1(){const{withSpring,interpolateColor,pressed,backgroundColor,backgroundColorPressed,ON_PRESS_SPRING}=this.__closure;return{backgroundColor:withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,'animate-always')};}" };
-const __initData2 = { code: "function TooltipNativeTsx2(){const{withSpring,interpolateColor,pressed,backgroundColor,backgroundColorPressed,ON_PRESS_SPRING}=this.__closure;return{borderTopColor:withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,'animate-always'),borderBottomColor:withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,'animate-always')};}" };
-size = size_mod;
-let result = size.fileFinishedImporting("design/components/Tooltip/native/Tooltip.native.tsx");
-
-export const Tooltip = function Tooltip(targetMeasurements) {
+const __initData = { code: "function TooltipNativeTsx1(){const{withSpring,interpolateColor,pressed,backgroundColor,backgroundColorPressed,ON_PRESS_SPRING}=this.__closure;return{backgroundColor:withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,\"animate-always\")};}" };
+const __initData2 = { code: "function TooltipNativeTsx2(){const{withSpring,interpolateColor,pressed,backgroundColor,backgroundColorPressed,ON_PRESS_SPRING}=this.__closure;return{borderTopColor:withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,\"animate-always\"),borderBottomColor:withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,\"animate-always\")};}" };
+const __initData3 = { code: "function TooltipNativeTsx3(){const{withSpring,interpolateColor,pressed,backgroundColor,backgroundColorPressed,ON_PRESS_SPRING}=this.__closure;return{backgroundColor:withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,'animate-always')};}" };
+const __initData4 = { code: "function TooltipNativeTsx4(){const{withSpring,interpolateColor,pressed,backgroundColor,backgroundColorPressed,ON_PRESS_SPRING}=this.__closure;return{borderTopColor:withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,'animate-always'),borderBottomColor:withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,'animate-always')};}" };
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let adjustmentX;
+  let label;
+  let onPress;
+  let position;
+  let sharedValue;
+  let surfaceMeasurements;
+  let targetMeasurements;
+  let tmp12;
+  let token;
+  let token1;
+  let tooltipX;
+  let tooltipY;
+  const tmp = sharedValue;
+  const tmp2 = token1;
+  let obj = sharedValue(token1[7]);
+  const cResult = obj.c(43);
+  ({ targetMeasurements, surfaceMeasurements, label, position, onPress } = arg0);
+  closure_9();
+  let obj2 = sharedValue(token1[8]);
+  sharedValue = obj2.useSharedValue(0);
+  let obj3 = sharedValue(token1[9]);
+  token = obj3.useToken(token(token1[5]).colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT);
+  const obj4 = sharedValue(token1[9]);
+  token1 = obj4.useToken(token(token1[5]).colors.CONTROL_PRIMARY_BACKGROUND_ACTIVE);
+  if (cResult[0] !== sharedValue) {
+    const fn = function _() {
+      const result = sharedValue.set(1);
+    };
+    cResult[0] = sharedValue;
+    cResult[1] = fn;
+  }
+  if (cResult[2] !== sharedValue) {
+    class T {
+      constructor() {
+        const result = sharedValue.set(0);
+      }
+    }
+    cResult[2] = sharedValue;
+    cResult[3] = T;
+  } else {
+    class T {
+      constructor() {
+        const result = sharedValue.set(0);
+      }
+    }
+  }
+  const tmp11 = _slicedToArray(react.useState(null), 2);
+  [tmp12, _slicedToArray] = tmp11;
+  ({ adjustmentX, tooltipX, tooltipY } = token(tmp2[10])(tmp12, surfaceMeasurements, targetMeasurements, position, 4));
+  token(tmp2[10])(tmp12, surfaceMeasurements, targetMeasurements, position, 4);
+  const fn2 = function x() {
+    let items;
+    let obj2;
+    let withSpring;
+    const obj = { backgroundColor: withSpring(obj2.interpolateColor(sharedValue.get(), [0, 1], items), ON_PRESS_SPRING, "animate-always") };
+    withSpring = spring.withSpring;
+    spring;
+    items = [token, token1];
+    obj2 = ReanimatedRexport;
+    return obj;
+  };
+  const tmpResult = tmp(tmp2[8]);
+  fn2.__closure = { withSpring: tmp(tmp2[11]).withSpring, interpolateColor: tmp(tmp2[8]).interpolateColor, pressed: sharedValue, backgroundColor: token, backgroundColorPressed: token1, ON_PRESS_SPRING };
+  fn2.__workletHash = 15323606626185;
+  fn2.__initData = __initData;
+  ({ withSpring: tmp(tmp2[11]).withSpring, interpolateColor: tmp(tmp2[8]).interpolateColor, pressed: sharedValue, backgroundColor: token, backgroundColorPressed: token1, ON_PRESS_SPRING });
+  const animatedStyle = tmpResult.useAnimatedStyle(fn2);
+  const tmpResult2 = tmp(tmp2[8]);
+  class I {
+    constructor() {
+      let items;
+      let items1;
+      let obj2;
+      let obj3;
+      let withSpring;
+      let withSpring2;
+      const obj = { borderTopColor: withSpring(obj2.interpolateColor(sharedValue.get(), [0, 1], items), ON_PRESS_SPRING, "animate-always"), borderBottomColor: withSpring2(obj3.interpolateColor(sharedValue.get(), [0, 1], items1), ON_PRESS_SPRING, "animate-always") };
+      withSpring = spring.withSpring;
+      spring;
+      items = [token, token1];
+      obj2 = ReanimatedRexport;
+      withSpring2 = spring.withSpring;
+      spring;
+      items1 = [token, token1];
+      obj3 = ReanimatedRexport;
+      return obj;
+    }
+  }
+  I.__closure = { withSpring: tmp(tmp2[11]).withSpring, interpolateColor: tmp(tmp2[8]).interpolateColor, pressed: sharedValue, backgroundColor: token, backgroundColorPressed: token1, ON_PRESS_SPRING };
+  I.__workletHash = 6345133227978;
+  I.__initData = __initData2;
+  ({ withSpring: tmp(tmp2[11]).withSpring, interpolateColor: tmp(tmp2[8]).interpolateColor, pressed: sharedValue, backgroundColor: token, backgroundColorPressed: token1, ON_PRESS_SPRING });
+  const animatedStyle1 = tmpResult2.useAnimatedStyle(I);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
+      constructor() {
+        const result = sharedValue.set(0);
+      }
+    }
+    cResult[4] = tmp17;
+  } else {
+    class T {
+      constructor() {
+        const result = sharedValue.set(0);
+      }
+    }
+  }
+  if (null != tmp12) {
+    class T {
+      constructor() {
+        const result = sharedValue.set(0);
+      }
+    }
+  }
+  if (cResult[5] === 0) {
+    class T {
+      constructor() {
+        const result = sharedValue.set(0);
+      }
+    }
+  }
+  const rect = { opacity: num4, top: tooltipY, left: tooltipX };
+  cResult[5] = 0;
+  cResult[6] = tooltipX;
+  cResult[7] = tooltipY;
+  cResult[8] = rect;
+}) : ((targetMeasurements) => {
   let _undefined;
   let adjustmentX;
   let c3;
@@ -59,12 +185,12 @@ export const Tooltip = function Tooltip(targetMeasurements) {
   targetMeasurements = targetMeasurements.targetMeasurements;
   const tmp = closure_9();
   const tmp2 = sharedValue;
-  let obj = sharedValue(token1[6]);
+  let obj = sharedValue(token1[8]);
   let num = 0;
   sharedValue = obj.useSharedValue(0);
-  let obj2 = sharedValue(token1[7]);
+  let obj2 = sharedValue(token1[9]);
   token = obj2.useToken(token(token1[5]).colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT);
-  let obj3 = sharedValue(token1[7]);
+  let obj3 = sharedValue(token1[9]);
   token1 = obj3.useToken(token(token1[5]).colors.CONTROL_PRIMARY_BACKGROUND_ACTIVE);
   let items = [sharedValue];
   let items1 = [sharedValue];
@@ -76,10 +202,10 @@ export const Tooltip = function Tooltip(targetMeasurements) {
   }, items1);
   [tmp11, c3] = react.useState(null);
   _slicedToArray(react.useState(null), 2);
-  ({ adjustmentX, tooltipX, tooltipY } = token(token1[8])(tmp11, surfaceMeasurements, targetMeasurements, position, 4));
-  token(token1[8])(tmp11, surfaceMeasurements, targetMeasurements, position, 4);
-  const obj4 = sharedValue(token1[6]);
-  class R {
+  ({ adjustmentX, tooltipX, tooltipY } = token(token1[10])(tmp11, surfaceMeasurements, targetMeasurements, position, 4));
+  token(token1[10])(tmp11, surfaceMeasurements, targetMeasurements, position, 4);
+  const obj4 = sharedValue(token1[8]);
+  class P {
     constructor() {
       let items;
       let obj2;
@@ -92,13 +218,13 @@ export const Tooltip = function Tooltip(targetMeasurements) {
       return obj;
     }
   }
-  R.__closure = { withSpring: sharedValue(token1[9]).withSpring, interpolateColor: sharedValue(token1[6]).interpolateColor, pressed: sharedValue, backgroundColor: token, backgroundColorPressed: token1, ON_PRESS_SPRING };
-  R.__workletHash = 3664740129577;
-  R.__initData = __initData;
-  ({ withSpring: sharedValue(token1[9]).withSpring, interpolateColor: sharedValue(token1[6]).interpolateColor, pressed: sharedValue, backgroundColor: token, backgroundColorPressed: token1, ON_PRESS_SPRING });
-  const animatedStyle = obj4.useAnimatedStyle(R);
-  const obj6 = sharedValue(token1[6]);
-  class P {
+  P.__closure = { withSpring: sharedValue(token1[11]).withSpring, interpolateColor: sharedValue(token1[8]).interpolateColor, pressed: sharedValue, backgroundColor: token, backgroundColorPressed: token1, ON_PRESS_SPRING };
+  P.__workletHash = 17276673117291;
+  P.__initData = __initData3;
+  ({ withSpring: sharedValue(token1[11]).withSpring, interpolateColor: sharedValue(token1[8]).interpolateColor, pressed: sharedValue, backgroundColor: token, backgroundColorPressed: token1, ON_PRESS_SPRING });
+  const animatedStyle = obj4.useAnimatedStyle(P);
+  const obj6 = sharedValue(token1[8]);
+  class R {
     constructor() {
       let items;
       let items1;
@@ -118,11 +244,11 @@ export const Tooltip = function Tooltip(targetMeasurements) {
       return obj;
     }
   }
-  P.__closure = { withSpring: sharedValue(token1[9]).withSpring, interpolateColor: sharedValue(token1[6]).interpolateColor, pressed: sharedValue, backgroundColor: token, backgroundColorPressed: token1, ON_PRESS_SPRING };
-  P.__workletHash = 11850141175626;
-  P.__initData = __initData2;
-  ({ withSpring: sharedValue(token1[9]).withSpring, interpolateColor: sharedValue(token1[6]).interpolateColor, pressed: sharedValue, backgroundColor: token, backgroundColorPressed: token1, ON_PRESS_SPRING });
-  const animatedStyle1 = obj6.useAnimatedStyle(P);
+  R.__closure = { withSpring: sharedValue(token1[11]).withSpring, interpolateColor: sharedValue(token1[8]).interpolateColor, pressed: sharedValue, backgroundColor: token, backgroundColorPressed: token1, ON_PRESS_SPRING };
+  R.__workletHash = 5305172198540;
+  R.__initData = __initData4;
+  ({ withSpring: sharedValue(token1[11]).withSpring, interpolateColor: sharedValue(token1[8]).interpolateColor, pressed: sharedValue, backgroundColor: token, backgroundColorPressed: token1, ON_PRESS_SPRING });
+  const animatedStyle1 = obj6.useAnimatedStyle(R);
   const obj8 = {
     disabled: null == onPress,
     onPress,
@@ -153,12 +279,12 @@ export const Tooltip = function Tooltip(targetMeasurements) {
     const obj10 = { left: -adjustmentX };
     items3[2] = obj10;
     items3[3] = animatedStyle1;
-    tmp17 = closure_6(tmp5(tmp3[6]).View, obj9);
+    tmp17 = closure_6(tmp5(tmp3[8]).View, obj9);
   }
   items4 = [tmp17, , ];
-  const obj11 = { style: items5, children: closure_6(tmp2(token1[10]).Text, obj12) };
+  const obj11 = { style: items5, children: closure_6(tmp2(token1[12]).Text, obj12) };
   items5 = [tmp.textContainer, animatedStyle];
-  const View = tmp5(tmp3[6]).View;
+  const View = tmp5(tmp3[8]).View;
   obj12 = { style: tmp.text, variant: "text-xs/bold", color: "text-overlay-light", children: label };
   items4[1] = closure_6(View, obj11);
   let tmp19Result = "top" === position;
@@ -170,8 +296,12 @@ export const Tooltip = function Tooltip(targetMeasurements) {
     const obj14 = { left: -adjustmentX };
     items6[2] = obj14;
     items6[3] = animatedStyle1;
-    tmp19Result = tmp19(tmp5(tmp3[6]).View, obj13);
+    tmp19Result = tmp19(tmp5(tmp3[8]).View, obj13);
   }
   items4[2] = tmp19Result;
   return tmp15(tmp16, obj8);
-};
+});
+size = size_mod;
+let result = size.fileFinishedImporting("design/components/Tooltip/native/Tooltip.native.tsx");
+
+export const Tooltip = tmp4;

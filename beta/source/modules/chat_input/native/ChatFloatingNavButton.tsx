@@ -1,18 +1,18 @@
-// Module ID: 11750
-// Function ID: 11751
+// Module ID: 11643
+// Function ID: 11644
 // Name: ChatFloatingNavButton
-// Dependencies: [19, 17, 21, 4836, 576, 4566, 4531, 5280, 5284, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4570, 4535, 5281, 5285, 2]
 
-// Module 11750 (ChatFloatingNavButton)
+// Module 11643 (ChatFloatingNavButton)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5280 */;
-import springPresets from "springPresets" /* 5284 */;
+import nativeDefault from "native" /* 588 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import spring from "spring" /* 5281 */;
+import springPresets from "springPresets" /* 5285 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -27,11 +27,151 @@ size = { height: nativeDefault.modules.mobile.JUMP_TO_PRESENT_BUTTON_SIZE, width
 createStyles = createStyles.createStyles;
 size1 = { width: nativeDefault.modules.mobile.JUMP_TO_PRESENT_ICON_SIZE, height: nativeDefault.modules.mobile.JUMP_TO_PRESENT_ICON_SIZE };
 let closure_7 = createStyles(obj);
-const __initData = { code: "function ChatFloatingNavButtonTsx1(){const{withSpring,interpolateColor,pressed,bgColor,pressedBgColor,ON_PRESS_SPRING}=this.__closure;return{backgroundColor:withSpring(interpolateColor(pressed.get(),[0,1],[bgColor,pressedBgColor]),ON_PRESS_SPRING,'animate-always')};}" };
-size = size_mod;
-let result = size.fileFinishedImporting("modules/chat_input/native/ChatFloatingNavButton.tsx");
-
-export default function ChatFloatingNavButton(arg0) {
+const __initData = { code: "function ChatFloatingNavButtonTsx1(){const{withSpring,interpolateColor,pressed,bgColor,pressedBgColor,ON_PRESS_SPRING}=this.__closure;return{backgroundColor:withSpring(interpolateColor(pressed.get(),[0,1],[bgColor,pressedBgColor]),ON_PRESS_SPRING,\"animate-always\")};}" };
+const __initData2 = { code: "function ChatFloatingNavButtonTsx2(){const{withSpring,interpolateColor,pressed,bgColor,pressedBgColor,ON_PRESS_SPRING}=this.__closure;return{backgroundColor:withSpring(interpolateColor(pressed.get(),[0,1],[bgColor,pressedBgColor]),ON_PRESS_SPRING,'animate-always')};}" };
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let accessibilityLabel;
+  let icon;
+  let onPress;
+  let sharedValue;
+  let token;
+  let token1;
+  const tmp = token1;
+  let obj = sharedValue(token1[6]);
+  const cResult = obj.c(24);
+  ({ accessibilityLabel, icon, onPress } = arg0);
+  const tmp3 = closure_7();
+  let obj2 = sharedValue(token1[7]);
+  sharedValue = obj2.useSharedValue(0);
+  const obj3 = sharedValue(token1[8]);
+  const tmp5 = token;
+  token = obj3.useToken(token(token1[4]).colors.MOBILE_FLOATINGBAR_BACKGROUND);
+  const obj4 = sharedValue(token1[8]);
+  token1 = obj4.useToken(token(token1[4]).colors.BACKGROUND_BASE_LOWEST);
+  const obj5 = sharedValue(token1[8]);
+  const token2 = obj5.useToken(token(token1[4]).colors.CHAT_INPUT_ICON_DEFAULT_TINT);
+  const fn = function t() {
+    let interpolateColorResult;
+    let withSpring;
+    const obj = { backgroundColor: withSpring(interpolateColorResult, springPresets.ON_PRESS_SPRING, "animate-always") };
+    withSpring = spring.withSpring;
+    spring;
+    const items = [token, token1];
+    const obj2 = ReanimatedRexport;
+    interpolateColorResult = obj2.interpolateColor(sharedValue.get(), [0, 1], items);
+    return obj;
+  };
+  const obj6 = sharedValue(token1[7]);
+  fn.__closure = { withSpring: sharedValue(token1[9]).withSpring, interpolateColor: sharedValue(token1[7]).interpolateColor, pressed: sharedValue, bgColor: token, pressedBgColor: token1, ON_PRESS_SPRING: sharedValue(token1[10]).ON_PRESS_SPRING };
+  fn.__workletHash = 6110457262684;
+  fn.__initData = __initData;
+  ({ withSpring: sharedValue(token1[9]).withSpring, interpolateColor: sharedValue(token1[7]).interpolateColor, pressed: sharedValue, bgColor: token, pressedBgColor: token1, ON_PRESS_SPRING: sharedValue(token1[10]).ON_PRESS_SPRING });
+  const animatedStyle = obj6.useAnimatedStyle(fn);
+  if (cResult[0] !== sharedValue) {
+    class S {
+      constructor() {
+        const result = sharedValue.set(1);
+      }
+    }
+    cResult[0] = sharedValue;
+    cResult[1] = S;
+  } else {
+    class S {
+      constructor() {
+        const result = sharedValue.set(1);
+      }
+    }
+  }
+  if (cResult[2] !== sharedValue) {
+    class I {
+      constructor() {
+        const result = sharedValue.set(0);
+      }
+    }
+    cResult[2] = sharedValue;
+    cResult[3] = I;
+  } else {
+    class I {
+      constructor() {
+        const result = sharedValue.set(0);
+      }
+    }
+  }
+  if (cResult[4] === animatedStyle) {
+    class I {
+      constructor() {
+        const result = sharedValue.set(0);
+      }
+    }
+    if (cResult[7] !== token2) {
+      class I {
+        constructor() {
+          const result = sharedValue.set(0);
+        }
+      }
+      tmp14[0] = token2;
+      cResult[7] = token2;
+      cResult[8] = tmp14;
+    } else {
+      class I {
+        constructor() {
+          const result = sharedValue.set(0);
+        }
+      }
+    }
+    if (cResult[9] === tmp3.icon) {
+      class I {
+        constructor() {
+          const result = sharedValue.set(0);
+        }
+      }
+      if (cResult[12] === icon) {
+        class I {
+          constructor() {
+            const result = sharedValue.set(0);
+          }
+        }
+        if (cResult[15] === tmp12) {
+          class I {
+            constructor() {
+              const result = sharedValue.set(0);
+            }
+          }
+          if (cResult[18] === accessibilityLabel) {
+            class I {
+              constructor() {
+                const result = sharedValue.set(0);
+              }
+            }
+          }
+          const tmp26 = <closure_5 accessibilityRole="button" accessibilityLabel={accessibilityLabel} onPress={onPress} onPressIn={tmp10} onPressOut={tmp11}>{tmp20}</closure_5>;
+          cResult[18] = accessibilityLabel;
+          cResult[19] = tmp10;
+          cResult[20] = tmp11;
+          cResult[21] = onPress;
+          cResult[22] = tmp20;
+          cResult[23] = tmp26;
+        }
+        cResult[15] = tmp12;
+        cResult[16] = tmp16;
+        cResult[17] = jsx(tmp5(tmp[7]).View, { style: tmp12, children: tmp16 });
+        const tmp22 = jsx(tmp5(tmp[7]).View, { style: tmp12, children: tmp16 });
+      }
+      const tmp19 = <closure_4 source={icon} style={tmp15} />;
+      cResult[12] = icon;
+      cResult[13] = tmp15;
+      cResult[14] = tmp19;
+    }
+    let items = [tmp3.icon, tmp13];
+    cResult[9] = tmp3.icon;
+    cResult[10] = tmp13;
+    cResult[11] = items;
+  }
+  const items1 = [tmp3.pill, animatedStyle];
+  cResult[4] = animatedStyle;
+  cResult[5] = tmp3.pill;
+  cResult[6] = items1;
+}) : ((arg0) => {
   let accessibilityLabel;
   let icon;
   let onPress;
@@ -40,15 +180,15 @@ export default function ChatFloatingNavButton(arg0) {
   let token1;
   ({ accessibilityLabel, icon, onPress } = arg0);
   const tmp = closure_7();
-  let obj = sharedValue(token1[5]);
+  let obj = sharedValue(token1[7]);
   sharedValue = obj.useSharedValue(0);
-  let obj2 = sharedValue(token1[6]);
+  let obj2 = sharedValue(token1[8]);
   token = obj2.useToken(token(token1[4]).colors.MOBILE_FLOATINGBAR_BACKGROUND);
-  const obj3 = sharedValue(token1[6]);
+  const obj3 = sharedValue(token1[8]);
   token1 = obj3.useToken(token(token1[4]).colors.BACKGROUND_BASE_LOWEST);
-  const obj4 = sharedValue(token1[6]);
+  const obj4 = sharedValue(token1[8]);
   const token2 = obj4.useToken(token(token1[4]).colors.CHAT_INPUT_ICON_DEFAULT_TINT);
-  const obj5 = sharedValue(token1[5]);
+  const obj5 = sharedValue(token1[7]);
   class C {
     constructor() {
       let interpolateColorResult;
@@ -62,11 +202,11 @@ export default function ChatFloatingNavButton(arg0) {
       return obj;
     }
   }
-  C.__closure = { withSpring: sharedValue(token1[7]).withSpring, interpolateColor: sharedValue(token1[5]).interpolateColor, pressed: sharedValue, bgColor: token, pressedBgColor: token1, ON_PRESS_SPRING: sharedValue(token1[8]).ON_PRESS_SPRING };
-  C.__workletHash = 9363515218556;
-  C.__initData = __initData;
+  C.__closure = { withSpring: sharedValue(token1[9]).withSpring, interpolateColor: sharedValue(token1[7]).interpolateColor, pressed: sharedValue, bgColor: token, pressedBgColor: token1, ON_PRESS_SPRING: sharedValue(token1[10]).ON_PRESS_SPRING };
+  C.__workletHash = 11350052873759;
+  C.__initData = __initData2;
   let items = [sharedValue];
-  ({ withSpring: sharedValue(token1[7]).withSpring, interpolateColor: sharedValue(token1[5]).interpolateColor, pressed: sharedValue, bgColor: token, pressedBgColor: token1, ON_PRESS_SPRING: sharedValue(token1[8]).ON_PRESS_SPRING });
+  ({ withSpring: sharedValue(token1[9]).withSpring, interpolateColor: sharedValue(token1[7]).interpolateColor, pressed: sharedValue, bgColor: token, pressedBgColor: token1, ON_PRESS_SPRING: sharedValue(token1[10]).ON_PRESS_SPRING });
   const animatedStyle = obj5.useAnimatedStyle(C);
   const items1 = [sharedValue];
   const callback = react.useCallback(() => {
@@ -74,8 +214,12 @@ export default function ChatFloatingNavButton(arg0) {
   }, items);
   const items2 = [tmp.pill, animatedStyle];
   const items3 = [tmp.icon, { tintColor: token2 }];
-  const View = token(token1[5]).View;
+  const View = token(token1[7]).View;
   return <closure_5 accessibilityRole="button" accessibilityLabel={accessibilityLabel} onPress={onPress} onPressIn={callback} onPressOut={react.useCallback(() => {
     const result = sharedValue.set(0);
   }, items1)}>{null}</closure_5>;
-};
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/chat_input/native/ChatFloatingNavButton.tsx");
+
+export default tmp4;

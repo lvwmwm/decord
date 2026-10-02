@@ -1,13 +1,13 @@
-// Module ID: 8224
-// Function ID: 8225
+// Module ID: 8221
+// Function ID: 8222
 // Name: navigateToGameAnnouncement
-// Dependencies: [5, 2067, 1074, 38, 6759, 7826, 1101, 2]
+// Dependencies: [5, 2073, 1086, 38, 6760, 7830, 1113, 2]
 // Exports: default
 
-// Module 8224 (navigateToGameAnnouncement)
+// Module 8221 (navigateToGameAnnouncement)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import Constants from "Constants" /* 1074 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -35,7 +35,7 @@ let obj = function _navigateToGameAnnouncement() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -64,7 +64,7 @@ let obj = function _navigateToGameAnnouncement() {
             joinedAt = undefined;
             messageId = 1;
             sourceLocationStack = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else {
           if (1 === messageId) {
@@ -124,7 +124,7 @@ let obj = function _navigateToGameAnnouncement() {
                 }
               }
               sourceLocationStack = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else if (2 === messageId) {
             if (arg0 === 1) {

@@ -1,12 +1,12 @@
-// Module ID: 12803
-// Function ID: 12804
+// Module ID: 12805
+// Function ID: 12806
 // Name: getRemoteJoinFooterLabel
-// Dependencies: [1074, 1115, 2]
+// Dependencies: [1086, 1127, 2]
 // Exports: getRemoteJoinFooterLabel
 
-// Module 12803 (getRemoteJoinFooterLabel)
-import Constants from "Constants" /* 1074 */;
-import intl6 from "intl" /* 1115 */;
+// Module 12805 (getRemoteJoinFooterLabel)
+import Constants from "Constants" /* 1086 */;
+import intl6 from "intl" /* 1127 */;
 import size from "module_2" /* 2 */;
 
 const ActivityGamePlatforms = Constants.ActivityGamePlatforms;

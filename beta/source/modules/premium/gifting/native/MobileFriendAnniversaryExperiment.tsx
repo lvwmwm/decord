@@ -1,10 +1,10 @@
-// Module ID: 7524
-// Function ID: 7525
+// Module ID: 7528
+// Function ID: 7529
 // Name: MobileFriendAnniversaryExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1441, 2]
 
-// Module 7524 (MobileFriendAnniversaryExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 7528 (MobileFriendAnniversaryExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

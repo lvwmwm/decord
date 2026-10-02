@@ -1,15 +1,15 @@
-// Module ID: 6664
-// Function ID: 6665
+// Module ID: 6665
+// Function ID: 6666
 // Name: OrderActionCreators
-// Dependencies: [5, 1074, 3, 4510, 1271, 4503, 2]
+// Dependencies: [5, 1086, 3, 4513, 1283, 4506, 2]
 // Exports: fetchOrderEntitlementsWithRetry, getOrder, signOrder
 
-// Module 6664 (OrderActionCreators)
+// Module 6665 (OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BillingError_mod from "BillingError" /* 4510 */;
+import BillingError_mod from "BillingError" /* 4513 */;
 import size from "module_2" /* 2 */;
 
 let c11, c12;
@@ -36,7 +36,7 @@ let obj = function _signOrder() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let tmp44;
@@ -65,7 +65,7 @@ let obj = function _signOrder() {
             body = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -160,7 +160,7 @@ obj = function _getOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -238,7 +238,7 @@ obj = function _fetchOrderEntitlements() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -316,7 +316,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c9;
@@ -369,7 +369,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -422,7 +422,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                     } else {
                       length = value;
                       c3 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp13) {
                     c3 = 3;

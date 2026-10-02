@@ -1,10 +1,10 @@
-// Module ID: 8702
-// Function ID: 8703
+// Module ID: 8700
+// Function ID: 8701
 // Name: useExplicitMediaActions
-// Dependencies: [5, 32, 19, 4735, 2]
+// Dependencies: [5, 32, 19, 4737, 2]
 // Exports: useExplicitMediaActions
 
-// Module 8702 (useExplicitMediaActions)
+// Module 8700 (useExplicitMediaActions)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -43,7 +43,7 @@ export const useExplicitMediaActions = function useExplicitMediaActions(onError)
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ export const useExplicitMediaActions = function useExplicitMediaActions(onError)
             closure_129_3(false);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp35) {
           closure_2 = tmp35;
           if (0 === v0) {

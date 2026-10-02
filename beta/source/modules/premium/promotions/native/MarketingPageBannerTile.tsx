@@ -1,20 +1,23 @@
-// Module ID: 12965
-// Function ID: 12966
+// Module ID: 12967
+// Function ID: 12968
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 4836, 576, 6583, 12966, 8230, 1249, 10203, 12969, 4832, 4525, 9425, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 6584, 12968, 1261, 10241, 8227, 12971, 4833, 4528, 9421, 2]
 
-// Module 12965 (MarketingPageBannerTile)
-import nativeDefault from "native" /* 576 */;
-import LinkingDefault from "Linking" /* 4525 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8230 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9425 */;
+// Module 12967 (MarketingPageBannerTile)
+import nativeDefault from "native" /* 588 */;
+import LinkingDefault from "Linking" /* 4528 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6584 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8227 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9421 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+let _require;
 
 let c3;
 let closure_4;
@@ -34,10 +37,231 @@ size = { width: "100%", maxWidth: 317, height: 144, borderRadius: nativeDefault.
 obj3 = { marginTop: nativeDefault.space.PX_4 };
 obj4 = { marginTop: nativeDefault.space.PX_16 };
 let closure_7 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/premium/promotions/native/MarketingPageBannerTile.tsx");
-
-export default function MarketingPageBannerTile(bannerFields) {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let analyticsPage;
+  let bannerFields;
+  let cardStyle;
+  let componentId;
+  let items;
+  let items1;
+  let obj10;
+  let obj12;
+  let obj7;
+  let onPaymentDismiss;
+  let onPaymentSuccess;
+  let promotionId;
+  let style;
+  let url;
+  let obj = require("react");
+  const cResult = obj.c(43);
+  ({ style, cardStyle, componentId, promotionId, bannerFields, analyticsPage, onPaymentSuccess, onPaymentDismiss } = arg0);
+  const tmp4 = closure_7();
+  const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
+  const button = bannerFields.button;
+  let buttonAction;
+  if (button != null) {
+    buttonAction = button.buttonAction;
+  }
+  const button2 = bannerFields.button;
+  let value;
+  if (button2 != null) {
+    if (button2.navigableStorefrontApplicationId != null) {
+      value = iter.value;
+    }
+  }
+  if (cResult[0] === analyticsLocations) {
+    if (cResult[1] === analyticsPage) {
+      if (cResult[2] === onPaymentDismiss) {
+        if (cResult[3] === onPaymentSuccess) {
+          if (cResult[4] === buttonAction) {
+            let tmp8;
+            if (cResult[5] === value) {
+              tmp8 = cResult[6];
+            }
+            if (cResult[7] === componentId) {
+              let tmp10;
+              if (cResult[8] === promotionId) {
+                tmp10 = cResult[9];
+              }
+              useTrackImpressionDefault(tmp10);
+              const tmpResult = require("PromotionStringUtils");
+              const formatStringWithCommonPremiumParams = tmpResult.useFormatStringWithCommonPremiumParams(bannerFields.body);
+              if (cResult[10] === bannerFields.helpArticle) {
+                let tmp13;
+                if (cResult[11] === bannerFields.helpArticleId) {
+                  tmp13 = cResult[12];
+                }
+                _require = tmp13;
+                if (cResult[13] === style) {
+                  let tmp15;
+                  if (cResult[14] === tmp4.container) {
+                    tmp15 = cResult[15];
+                  }
+                  if (cResult[16] === cardStyle) {
+                    let tmp16;
+                    if (cResult[17] === tmp4.card) {
+                      tmp16 = cResult[18];
+                    }
+                    if (cResult[19] === bannerFields.assetUrl) {
+                      let tmp17;
+                      let tmp21;
+                      let tmp24;
+                      if (cResult[20] === tmp4.image) {
+                        tmp17 = cResult[21];
+                      }
+                      if (cResult[22] !== bannerFields.header) {
+                        const obj2 = { color: "mobile-text-heading-primary", variant: "text-lg/bold", children: bannerFields.header };
+                        const tmp23 = closure_5(require("Text/Text").Text, obj2);
+                        cResult[22] = bannerFields.header;
+                        cResult[23] = tmp23;
+                        tmp21 = tmp23;
+                      } else {
+                        tmp21 = cResult[23];
+                      }
+                      if (cResult[24] !== tmp13) {
+                        let tmp25 = null != tmp13;
+                        if (tmp25) {
+                          const obj3 = {
+                            color: "text-link",
+                            variant: "text-sm/medium",
+                            accessibilityRole: "link",
+                            onPress() {
+                                                      const obj = LinkingDefault;
+                                                      return obj.openURL(url.url);
+                                                    },
+                            children: tmp13.linkText
+                          };
+                          tmp25 = closure_5(tmp(4833).Text, obj3);
+                        }
+                        cResult[24] = tmp13;
+                        cResult[25] = tmp25;
+                        tmp24 = tmp25;
+                      } else {
+                        tmp24 = cResult[25];
+                      }
+                      if (cResult[26] === formatStringWithCommonPremiumParams) {
+                        if (cResult[27] === tmp4.bodyText) {
+                          let tmp27;
+                          if (cResult[28] === tmp24) {
+                            tmp27 = cResult[29];
+                          }
+                          if (cResult[30] === bannerFields.button) {
+                            if (cResult[31] === tmp8) {
+                              let tmp30;
+                              if (cResult[32] === tmp4.ctaButton) {
+                                tmp30 = cResult[33];
+                              }
+                              if (cResult[34] === tmp27) {
+                                if (cResult[35] === tmp30) {
+                                  if (cResult[36] === tmp16) {
+                                    if (cResult[37] === tmp17) {
+                                      let tmp34;
+                                      if (cResult[38] === tmp21) {
+                                        tmp34 = cResult[39];
+                                      }
+                                      if (cResult[40] === tmp34) {
+                                        let tmp38;
+                                        if (cResult[41] === tmp15) {
+                                          tmp38 = cResult[42];
+                                        }
+                                        return tmp38;
+                                      }
+                                      const obj4 = { style: tmp15, children: tmp34 };
+                                      const tmp41 = closure_5(closure_4, obj4);
+                                      cResult[40] = tmp34;
+                                      cResult[41] = tmp15;
+                                      cResult[42] = tmp41;
+                                      tmp38 = tmp41;
+                                    }
+                                  }
+                                }
+                              }
+                              const obj5 = { style: tmp16, children: items };
+                              items = [tmp17, tmp21, tmp27, tmp30];
+                              const tmp37 = closure_6(closure_4, obj5);
+                              cResult[34] = tmp27;
+                              cResult[35] = tmp30;
+                              cResult[36] = tmp16;
+                              cResult[37] = tmp17;
+                              cResult[38] = tmp21;
+                              cResult[39] = tmp37;
+                              tmp34 = tmp37;
+                            }
+                          }
+                          let tmp31 = null != bannerFields.button;
+                          if (tmp31) {
+                            const obj6 = { style: tmp4.ctaButton, children: closure_5(NitroUpsellButtonDefault, obj7) };
+                            obj7 = { text: bannerFields.button.copy, onPress: tmp8 };
+                            tmp31 = closure_5(closure_4, obj6);
+                          }
+                          cResult[30] = bannerFields.button;
+                          cResult[31] = tmp8;
+                          cResult[32] = tmp4.ctaButton;
+                          cResult[33] = tmp31;
+                          tmp30 = tmp31;
+                        }
+                      }
+                      const obj8 = { color: "mobile-text-heading-primary", variant: "text-sm/medium", style: tmp4.bodyText, children: items1 };
+                      items1 = [formatStringWithCommonPremiumParams, " ", tmp24];
+                      const tmp29 = closure_6(require("Text/Text").Text, obj8);
+                      cResult[26] = formatStringWithCommonPremiumParams;
+                      cResult[27] = tmp4.bodyText;
+                      cResult[28] = tmp24;
+                      cResult[29] = tmp29;
+                      tmp27 = tmp29;
+                    }
+                    let tmp18 = "" !== bannerFields.assetUrl;
+                    if (tmp18) {
+                      const obj9 = { source: obj10, style: tmp4.image, resizeMode: "contain" };
+                      obj10 = { uri: bannerFields.assetUrl };
+                      tmp18 = closure_5(closure_3, obj9);
+                    }
+                    cResult[19] = bannerFields.assetUrl;
+                    cResult[20] = tmp4.image;
+                    cResult[21] = tmp18;
+                    tmp17 = tmp18;
+                  }
+                  const items2 = [tmp4.card, cardStyle];
+                  cResult[16] = cardStyle;
+                  cResult[17] = tmp4.card;
+                  cResult[18] = items2;
+                  tmp16 = items2;
+                }
+                const items3 = [tmp4.container, style];
+                cResult[13] = style;
+                cResult[14] = tmp4.container;
+                cResult[15] = items3;
+                tmp15 = items3;
+              }
+              const tmpResult3 = require("PromotionStringUtils");
+              const helpArticleLinkProps = tmpResult3.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
+              cResult[10] = bannerFields.helpArticle;
+              cResult[11] = bannerFields.helpArticleId;
+              cResult[12] = helpArticleLinkProps;
+              tmp13 = helpArticleLinkProps;
+            }
+            const obj11 = { type: require("discord_common/AnalyticsUtils").ImpressionTypes.VIEW, name: require("discord_common/AnalyticsUtils").ImpressionNames.PREMIUM_MARKETING_COMPONENT, properties: obj12 };
+            cResult[7] = componentId;
+            cResult[8] = promotionId;
+            cResult[9] = obj11;
+            tmp10 = obj11;
+            obj12 = { component_type: require("MarketingComponentType").MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId };
+          }
+        }
+      }
+    }
+  }
+  const tmpResult4 = require("PremiumMarketingButtonActions");
+  const buttonActionHandler = tmpResult4.getButtonActionHandler({ buttonAction, applicationId: value, analyticsLocations, analyticsPage, onPaymentSuccess, onPaymentDismiss });
+  cResult[0] = analyticsLocations;
+  cResult[1] = analyticsPage;
+  cResult[2] = onPaymentDismiss;
+  cResult[3] = onPaymentSuccess;
+  cResult[4] = buttonAction;
+  cResult[5] = value;
+  cResult[6] = buttonActionHandler;
+  tmp8 = buttonActionHandler;
+}) : ((bannerFields) => {
   let analyticsPage;
   let cardStyle;
   let componentId;
@@ -60,7 +284,7 @@ export default function MarketingPageBannerTile(bannerFields) {
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const button = bannerFields.button;
   let buttonAction;
-  const getButtonActionHandler = helpArticleLinkProps(12966).getButtonActionHandler;
+  const getButtonActionHandler = helpArticleLinkProps(12968).getButtonActionHandler;
   if (button != null) {
     buttonAction = button.buttonAction;
   }
@@ -72,14 +296,14 @@ export default function MarketingPageBannerTile(bannerFields) {
       value = iter.value;
     }
   }
-  const obj2 = { type: helpArticleLinkProps(1249).ImpressionTypes.VIEW, name: helpArticleLinkProps(1249).ImpressionNames.PREMIUM_MARKETING_COMPONENT, properties: { component_type: helpArticleLinkProps(10203).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId } };
+  const obj2 = { type: helpArticleLinkProps(1261).ImpressionTypes.VIEW, name: helpArticleLinkProps(1261).ImpressionNames.PREMIUM_MARKETING_COMPONENT, properties: { component_type: helpArticleLinkProps(10241).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId } };
   const buttonActionHandler = getButtonActionHandler(obj);
   const tmp2Result = useTrackImpressionDefault;
-  ({ component_type: helpArticleLinkProps(10203).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId });
+  ({ component_type: helpArticleLinkProps(10241).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId });
   tmp2Result(obj2);
-  const tmp4Result = helpArticleLinkProps(12969);
+  const tmp4Result = helpArticleLinkProps(12971);
   const formatStringWithCommonPremiumParams = tmp4Result.useFormatStringWithCommonPremiumParams(bannerFields.body);
-  const tmp4Result2 = helpArticleLinkProps(12969);
+  const tmp4Result2 = helpArticleLinkProps(12971);
   helpArticleLinkProps = tmp4Result2.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj4 = { style: items, children: closure_6(closure_4, obj5) };
   items = [tmp.container, style];
@@ -93,11 +317,11 @@ export default function MarketingPageBannerTile(bannerFields) {
   }
   items2 = [tmp13Result, , , ];
   const obj8 = { color: "mobile-text-heading-primary", variant: "text-lg/bold", children: bannerFields.header };
-  items2[1] = closure_5(helpArticleLinkProps(4832).Text, obj8);
+  items2[1] = closure_5(helpArticleLinkProps(4833).Text, obj8);
   const obj9 = { color: "mobile-text-heading-primary", variant: "text-sm/medium", style: tmp.bodyText, children: items3 };
   items3 = [formatStringWithCommonPremiumParams, " ", ];
   let tmp13Result3 = null != helpArticleLinkProps;
-  const Text = tmp4(4832).Text;
+  const Text = tmp4(4833).Text;
   if (tmp13Result3) {
     const obj10 = {
       color: "text-link",
@@ -109,7 +333,7 @@ export default function MarketingPageBannerTile(bannerFields) {
         },
       children: helpArticleLinkProps.linkText
     };
-    tmp13Result3 = tmp13(tmp4(4832).Text, obj10);
+    tmp13Result3 = tmp13(tmp4(4833).Text, obj10);
   }
   items3[2] = tmp13Result3;
   items2[2] = closure_6(Text, obj9);
@@ -121,4 +345,8 @@ export default function MarketingPageBannerTile(bannerFields) {
   }
   items2[3] = tmp13Result4;
   return closure_5(closure_4, obj4);
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/premium/promotions/native/MarketingPageBannerTile.tsx");
+
+export default tmp6;

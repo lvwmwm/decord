@@ -1,17 +1,17 @@
-// Module ID: 13217
-// Function ID: 13218
+// Module ID: 13219
+// Function ID: 13220
 // Name: LocalVoiceStateManager
-// Dependencies: [2045, 1993, 4886, 1074, 13215, 2021, 1385, 13218, 2]
+// Dependencies: [2051, 1999, 4887, 1086, 13217, 2027, 1391, 13220, 2]
 
-// Module 13217 (LocalVoiceStateManager)
-import FlagUtils from "FlagUtils" /* 1385 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import isClipsEnabled from "isClipsEnabled" /* 13218 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import RTCRegionStore from "RTCRegionStore" /* 4886 */;
-import Constants from "Constants" /* 1074 */;
-import StateManager from "StateManager" /* 13215 */;
+// Module 13219 (LocalVoiceStateManager)
+import FlagUtils from "FlagUtils" /* 1391 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import isClipsEnabled from "isClipsEnabled" /* 13220 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import RTCRegionStore from "RTCRegionStore" /* 4887 */;
+import Constants from "Constants" /* 1086 */;
+import StateManager from "StateManager" /* 13217 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

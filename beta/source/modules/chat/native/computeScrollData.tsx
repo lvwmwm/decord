@@ -1,14 +1,14 @@
-// Module ID: 10840
-// Function ID: 10841
+// Module ID: 9759
+// Function ID: 9760
 // Name: computeScrollData
-// Dependencies: [4825, 7375, 10841, 4763, 2]
+// Dependencies: [4826, 7379, 9760, 4765, 2]
 // Exports: default, findMessageRowIndex
 
-// Module 10840 (computeScrollData)
-import flow_Client from "flow/Client" /* 4763 */;
-import NativeChatUtils from "NativeChatUtils" /* 10841 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7375 */;
+// Module 9759 (computeScrollData)
+import flow_Client from "flow/Client" /* 4765 */;
+import NativeChatUtils from "NativeChatUtils" /* 9760 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7379 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -35,7 +35,7 @@ export default function computeScrollData(shouldInitialScroll) {
         tmp3 = findIndexResult;
       }
       if (null != tmp3) {
-        const obj2 = { type: NativeChatUtils.ChatScrollType.SCROLL, index: tmp3, animate: animated, highlight: false, position: tmp16(10841).ChatScrollPosition.TOP };
+        const obj2 = { type: NativeChatUtils.ChatScrollType.SCROLL, index: tmp3, animate: animated, highlight: false, position: tmp16(9760).ChatScrollPosition.TOP };
         tmp16 = require;
         if (animated) {
           animated = !AccessibilityStore.useReducedMotion;
@@ -55,7 +55,7 @@ export default function computeScrollData(shouldInitialScroll) {
       const obj = { type: NativeChatUtils.ChatScrollType.SCROLL, index: tmp6, animate: !AccessibilityStore.useReducedMotion && jumpType !== flow_Client.JumpType.INSTANT, highlight: scrollToMessageId === jumpTargetId, position: scrollPosition };
       !AccessibilityStore.useReducedMotion && jumpType !== flow_Client.JumpType.INSTANT;
       if (scrollPosition == null) {
-        scrollPosition = tmp7(10841).ChatScrollPosition.TOP;
+        scrollPosition = tmp7(9760).ChatScrollPosition.TOP;
       }
       tmp4 = obj;
     }

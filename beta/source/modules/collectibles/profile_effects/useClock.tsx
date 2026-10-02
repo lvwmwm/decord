@@ -1,10 +1,10 @@
-// Module ID: 8269
-// Function ID: 8270
+// Module ID: 8266
+// Function ID: 8267
 // Name: useClock
-// Dependencies: [19, 38, 5298, 2]
+// Dependencies: [19, 38, 5297, 2]
 // Exports: default
 
-// Module 8269 (useClock)
+// Module 8266 (useClock)
 import _modDef38 from "module_38" /* 38 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

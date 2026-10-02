@@ -1,20 +1,76 @@
-// Module ID: 7385
-// Function ID: 7386
+// Module ID: 7389
+// Function ID: 7390
 // Name: useIsFirstMessageInMediaPost
-// Dependencies: [2045, 563, 11, 2]
-// Exports: isFirstMessageIdInMediaPost, isFirstMessageInMediaPost, useIsFirstMessageInMediaPost
+// Dependencies: [2051, 558, 576, 573, 11, 2]
+// Exports: isFirstMessageIdInMediaPost, isFirstMessageInMediaPost
 
-// Module 7385 (useIsFirstMessageInMediaPost)
+// Module 7389 (useIsFirstMessageInMediaPost)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const result = size.fileFinishedImporting("modules/media_channel/useIsFirstMessageInMediaPost.tsx");
-
-export const useIsFirstMessageInMediaPost = function useIsFirstMessageInMediaPost(arg0) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp5;
+  let tmp6;
+  _require = arg0;
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function n() {
+      let tmp2 = null != closure_0;
+      if (tmp2) {
+        const channel_id = tmp.channel_id;
+        const id = tmp.id;
+        let flag = false;
+        const obj = SnowflakeUtilsDefault;
+        if (id === obj.castChannelIdAsMessageId(channel_id)) {
+          const channel = ChannelStore.getChannel(channel_id);
+          flag = false;
+          const obj2 = ChannelStore;
+          if (null != channel) {
+            flag = false;
+            if (channel.isForumPost()) {
+              const channel1 = obj2.getChannel(channel.parent_id);
+              let isMediaChannelResult;
+              if (channel1 != null) {
+                isMediaChannelResult = channel1.isMediaChannel();
+              }
+              flag = true === isMediaChannelResult;
+            }
+          }
+        }
+        tmp2 = flag;
+      }
+      return tmp2;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp6 = items1;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[2];
+    tmp6 = cResult[3];
+  }
+  const tmpResult = tmp(573);
+  return tmpResult.useStateFromStores(first, tmp5, tmp6);
+}) : ((arg0) => {
   let closure_0;
   _require = arg0;
   let obj = require("useStateFromStores");
@@ -46,8 +102,8 @@ export const useIsFirstMessageInMediaPost = function useIsFirstMessageInMediaPos
     }
     return tmp2;
   }, items);
-};
-export const isFirstMessageInMediaPost = function isFirstMessageInMediaPost(channel_id) {
+});
+function isFirstMessageInMediaPost(channel_id) {
   let tmp = null != channel_id;
   if (tmp) {
     channel_id = channel_id.channel_id;
@@ -73,8 +129,8 @@ export const isFirstMessageInMediaPost = function isFirstMessageInMediaPost(chan
     tmp = flag;
   }
   return tmp;
-};
-export const isFirstMessageIdInMediaPost = function isFirstMessageIdInMediaPost(id, channel_id) {
+}
+function isFirstMessageIdInMediaPost(id, channel_id) {
   const obj = SnowflakeUtilsDefault;
   if (id !== obj.castChannelIdAsMessageId(channel_id)) {
     return false;
@@ -93,4 +149,9 @@ export const isFirstMessageIdInMediaPost = function isFirstMessageIdInMediaPost(
     }
     return false;
   }
-};
+}
+const result = size.fileFinishedImporting("modules/media_channel/useIsFirstMessageInMediaPost.tsx");
+
+export const useIsFirstMessageInMediaPost = tmp2;
+export { isFirstMessageInMediaPost };
+export { isFirstMessageIdInMediaPost };

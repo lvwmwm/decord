@@ -1,10 +1,11 @@
-// Module ID: 4705
-// Function ID: 4706
+// Module ID: 4707
+// Function ID: 4708
 // Name: ZustandStore
-// Dependencies: [1243, 4706, 1248, 2]
+// Dependencies: [1255, 4708, 1260, 558, 576, 2]
 // Exports: createZustandStore
 
-// Module 4705 (ZustandStore)
+// Module 4707 (ZustandStore)
+import react from "react" /* 576 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,8 +19,10 @@ const result = size.fileFinishedImporting("lib/ZustandStore.tsx");
 export const createZustandStore = function createZustandStore(arg0) {
   let closure_1;
   _require = arg0;
-  let tmp = require("module_1243");
-  const createWithEqualityFn = tmp.createWithEqualityFn;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  let tmp3 = require("module_1255");
+  const createWithEqualityFn = tmp3.createWithEqualityFn;
   let obj = require("combine");
   dependencyMap = createWithEqualityFn(obj.subscribeWithSelector((arg0, arg1, arg2) => {
     closure_0 = arg0;
@@ -29,19 +32,30 @@ export const createZustandStore = function createZustandStore(arg0) {
       return obj.batchUpdates(() => closure_0(closure_0));
     }, arg1, arg2);
   }));
+  const obj2 = require("ReactCompilerGating");
+  const tmp4 = obj2.isReactCompilerEnabled() ? ((arg0, arg1) => {
+    let tmp = arg1;
+    const tmp2 = closure_1;
+    if (undefined === arg1) {
+      tmp = defaultStatesAreEqual;
+    }
+    return tmp2(arg0, tmp);
+  }) : ((arg0) => {
+    let tmp = arg1;
+    if (arg1 === undefined) {
+      tmp = defaultStatesAreEqual;
+    }
+    return closure_1(arg0, tmp);
+  });
+  let closure_2 = tmp4;
   function setState(arg0) {
     closure_0 = arg0;
     const obj = closure_0(closure_1[2]);
     obj.batchUpdates(() => state.setState(closure_0));
   }
+  const tmpResult = tmp(558);
   const store = {
-    useState(arg0) {
-      let tmp = arg1;
-      if (arg1 === undefined) {
-        tmp = defaultStatesAreEqual;
-      }
-      return closure_1(arg0, tmp);
-    },
+    useState: tmp4,
     getState(fn) {
       const state = closure_1.getState();
       let tmp2 = state;
@@ -50,19 +64,36 @@ export const createZustandStore = function createZustandStore(arg0) {
       }
       return tmp2;
     },
-    useField(blocklist) {
-      closure_0 = blocklist;
+    useField: tmpResult.isReactCompilerEnabled() ? ((arg0, arg1) => {
+      let tmp3;
+      closure_0 = arg0;
+      let tmp = arg1;
+      const obj = react;
+      const cResult = obj.c(2);
+      if (undefined === arg1) {
+        tmp = defaultStatesAreEqual;
+      }
+      if (cResult[0] !== arg0) {
+        const fn = function s(arg0) {
+          return arg0[closure_0];
+        };
+        cResult[0] = arg0;
+        cResult[1] = fn;
+        tmp3 = fn;
+      } else {
+        tmp3 = cResult[1];
+      }
+      return closure_2(tmp3, tmp);
+    }) : ((arg0) => {
+      closure_0 = arg0;
       let tmp = arg1;
       if (arg1 === undefined) {
         tmp = defaultStatesAreEqual;
       }
-      if (tmp === undefined) {
-        tmp = defaultStatesAreEqual;
-      }
-      return closure_1((arg0) => arg0[closure_0], tmp);
-    },
-    getField(blocklist) {
-      return closure_1.getState()[blocklist];
+      return closure_2((arg0) => arg0[closure_0], tmp);
+    }),
+    getField(keyboard) {
+      return closure_1.getState()[keyboard];
     },
     subscribe(arg0, arg1, arg2) {
       return closure_1.subscribe(arg0, arg1, arg2);

@@ -1,20 +1,24 @@
-// Module ID: 11920
-// Function ID: 11921
+// Module ID: 11814
+// Function ID: 11815
 // Name: useEmojiSuggestions
-// Dependencies: [32, 19, 5771, 5306, 1375, 504, 5754, 2]
-// Exports: default
+// Dependencies: [32, 19, 5772, 5307, 1381, 558, 576, 504, 5755, 2]
 
-// Module 11920 (useEmojiSuggestions)
-import EmojiConstants from "EmojiConstants" /* 1375 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5306 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5754 */;
-import EmojiStore2 from "EmojiStore" /* 5771 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+// Module 11814 (useEmojiSuggestions)
+import react2 from "react" /* 576 */;
+import EmojiConstants from "EmojiConstants" /* 1381 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5307 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5755 */;
+import EmojiStore2 from "EmojiStore" /* 5772 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let importDefault;
+const EmojiStore_mod = EmojiStore2;
+let dependencyMap, importDefault, num2, num3, tmp7;
 
+let tmp;
+const get_initialized = tmp(504);
 function findWordSpan(text, selectionStart, selectionEnd) {
   if (selectionStart !== selectionEnd) {
     const obj2 = { query: text.slice(selectionStart, selectionEnd), queryStart: selectionStart, queryEnd: selectionEnd };
@@ -54,14 +58,351 @@ function findWordSpan(text, selectionStart, selectionEnd) {
     return { query: str + str2, queryStart: selectionStart - str.length, queryEnd: selectionStart + str2.length };
   }
 }
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+let EmojiStore = EmojiStore_mod;
 const LoadState = EmojiStore2.LoadState;
 const EMOJI_SENTINEL = ChannelAutocompleteConstants.EMOJI_SENTINEL;
 const EmojiIntention = EmojiConstants.EmojiIntention;
 const re9 = /(\S+)\s$/;
 let closure_10 = { unlockedEmojis: [], lockedEmojis: [], queryStart: 0, queryEnd: 0 };
-const result = size.fileFinishedImporting("modules/chat_input/native/useEmojiSuggestions.tsx");
-
-export default function useEmojiSuggestions(channel) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let channel;
+  let closure_2;
+  let closure_3;
+  let closure_4;
+  let enabled;
+  let maxCount;
+  let minUnlockedEmojis;
+  let ref;
+  let selectionEnd;
+  let selectionStart;
+  let text;
+  let tmp18;
+  let tmp19;
+  let tmp4;
+  let tmp5;
+  let tmp = require;
+  const obj = react2;
+  const cResult = obj.c(31);
+  ({ channel, text } = arg0);
+  require = text;
+  ({ selectionStart, selectionEnd, enabled } = arg0);
+  ({ maxCount, minUnlockedEmojis } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [EmojiStore];
+    class E {
+      constructor() {
+        return closure_5.loadState;
+      }
+    }
+    let num = 0;
+    cResult[0] = items;
+    cResult[1] = E;
+    tmp4 = items;
+    tmp5 = E;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === channel) {
+    if (cResult[3] === stateFromStores) {
+      if (cResult[4] === enabled) {
+        if (cResult[5] === maxCount) {
+          if (cResult[6] === minUnlockedEmojis) {
+            if (cResult[7] === selectionEnd) {
+              if (cResult[8] === selectionStart) {
+                dependencyMap = tmp8;
+                class E {
+                  constructor() {
+                    return closure_5.loadState;
+                  }
+                }
+                [tmp18, tmp19] = react.useState(closure_10);
+                _slicedToArray(react.useState(closure_10), 2);
+                _slicedToArray = tmp19;
+                react = tmp20;
+                EmojiStore = obj6.useRef(null);
+                let tmp22 = enabled;
+                if (tmp22) {
+                  tmp22 = "" !== text;
+                }
+                if (!tmp22) {
+                  tmp22 = tmp18 === tmp15;
+                }
+                if (!tmp22) {
+                  tmp19(tmp15);
+                }
+                if (cResult[15] === enabled) {
+                  if (cResult[16] === tmp8) {
+                    if (cResult[17] === (tmp8.unlockedEmojis.length > 0 || tmp8.lockedEmojis.length > 0)) {
+                      let tmp24;
+                      let tmp25;
+                      if (cResult[18] === text) {
+                        tmp24 = cResult[19];
+                        tmp25 = cResult[20];
+                      }
+                      const effect = obj6.useEffect(tmp24, tmp25);
+                      const _Symbol = Symbol;
+                      class E {
+                        constructor() {
+                          return closure_5.loadState;
+                        }
+                      }
+                      if (tmp27 === Symbol.for("react.memo_cache_sentinel")) {
+                        class W {
+                          constructor() {
+                            closure_5.current = null;
+                            tmp = closure_3(closure_10);
+                            return;
+                          }
+                        }
+                        cResult[21] = W;
+                        class E {
+                          constructor() {
+                            return closure_5.loadState;
+                          }
+                        }
+                      } else {
+                        class W {
+                          constructor() {
+                            closure_5.current = null;
+                            tmp = closure_3(closure_10);
+                            return;
+                          }
+                        }
+                      }
+                      if (cResult[22] === selectionEnd) {
+                        class W {
+                          constructor() {
+                            closure_5.current = null;
+                            tmp = closure_3(closure_10);
+                            return;
+                          }
+                        }
+                      }
+                      const tmp30 = findWordSpan(text, selectionStart, selectionEnd);
+                      if (tmp30 == null) {
+                        class W {
+                          constructor() {
+                            closure_5.current = null;
+                            tmp = closure_3(closure_10);
+                            return;
+                          }
+                        }
+                        tmp31[0] = selectionStart;
+                        tmp31[1] = selectionEnd;
+                        class E {
+                          constructor() {
+                            return closure_5.loadState;
+                          }
+                        }
+                      }
+                      cResult[22] = selectionEnd;
+                      cResult[23] = selectionStart;
+                      cResult[24] = text;
+                      cResult[25] = tmp30;
+                    }
+                  }
+                }
+                class M {
+                  constructor() {
+                    tmp = enabled;
+                    if (tmp) {
+                      tmp2 = closure_0;
+                      str = "";
+                      if ("" !== closure_0) {
+                        tmp3 = closure_4;
+                        if (tmp3) {
+                          tmp4 = closure_5;
+                          num = closure_5.current;
+                          tmp5 = null;
+                          if (num == null) {
+                            num = -Infinity;
+                          }
+                          num2 = 500;
+                          tmp7 = globalThis;
+                          _Math = Math;
+                          _Date = Date;
+                          sum = num + 500;
+                          num3 = 0;
+                          _setTimeout = setTimeout;
+                          closure_0 = setTimeout(() => { /* body not rendered: F140568 */ }, Math.max(0, sum - Date.now()));
+                          return () => { /* body not rendered: F140569 */ };
+                        }
+                      }
+                      return;
+                    }
+                    closure_5.current = null;
+                    return;
+                  }
+                }
+                const items1 = [enabled, text, tmp8, tmp8.unlockedEmojis.length > 0 || tmp8.lockedEmojis.length > 0];
+                cResult[15] = enabled;
+                cResult[16] = tmp8;
+                cResult[17] = tmp8.unlockedEmojis.length > 0 || tmp8.lockedEmojis.length > 0;
+                cResult[18] = text;
+                cResult[19] = M;
+                cResult[20] = items1;
+                tmp25 = items1;
+                tmp24 = M;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  if (enabled) {
+    class W {
+      constructor() {
+        closure_5.current = null;
+        tmp = closure_3(closure_10);
+        return;
+      }
+    }
+    if (stateFromStores === LoadState.Loaded) {
+      class W {
+        constructor() {
+          closure_5.current = null;
+          tmp = closure_3(closure_10);
+          return;
+        }
+      }
+      const tmp10 = findWordSpan(text, selectionStart, selectionEnd);
+      class E {
+        constructor() {
+          return closure_5.loadState;
+        }
+      }
+      let tmp11 = null;
+      if (null != tmp10) {
+        class W {
+          constructor() {
+            closure_5.current = null;
+            tmp = closure_3(closure_10);
+            return;
+          }
+        }
+        tmp11 = null;
+        if (tmp10.query.length >= 3) {
+          class W {
+            constructor() {
+              closure_5.current = null;
+              tmp = closure_3(closure_10);
+              return;
+            }
+          }
+          tmp11 = null;
+          class E {
+            constructor() {
+              return closure_5.loadState;
+            }
+          }
+        }
+      }
+      if (null != tmp11) {
+        class W {
+          constructor() {
+            closure_5.current = null;
+            tmp = closure_3(closure_10);
+            return;
+          }
+        }
+        const obj2 = { query: null, channel, intention: EmojiIntention.CHAT, maxCount };
+        const obj3 = enabled(5755);
+        class E {
+          constructor() {
+            return closure_5.loadState;
+          }
+        }
+        const emojis = obj3.queryEmojiResults(obj2).emojis;
+        if (emojis.unlocked.length < minUnlockedEmojis) {
+          class W {
+            constructor() {
+              closure_5.current = null;
+              tmp = closure_3(closure_10);
+              return;
+            }
+          }
+        } else {
+          class W {
+            constructor() {
+              closure_5.current = null;
+              tmp = closure_3(closure_10);
+              return;
+            }
+          }
+          const obj4 = { unlockedEmojis: emojis.unlocked, lockedEmojis: null, queryStart: null, queryEnd: null };
+          class E {
+            constructor() {
+              return closure_5.loadState;
+            }
+          }
+          ({ queryStart: obj5.queryStart, queryEnd: obj5.queryEnd } = tmp11);
+          cResult[11] = emojis.locked;
+          cResult[12] = emojis.unlocked;
+          cResult[13] = tmp11;
+          cResult[14] = obj4;
+        }
+      } else {
+        class W {
+          constructor() {
+            closure_5.current = null;
+            tmp = closure_3(closure_10);
+            return;
+          }
+        }
+      }
+    }
+    class E {
+      constructor() {
+        return closure_5.loadState;
+      }
+    }
+    cResult[3] = stateFromStores;
+    cResult[4] = enabled;
+    cResult[5] = maxCount;
+    cResult[6] = minUnlockedEmojis;
+    cResult[7] = selectionEnd;
+    cResult[8] = selectionStart;
+    cResult[9] = text;
+    cResult[10] = closure_10;
+    class M {
+      constructor() {
+        tmp = enabled;
+        if (tmp) {
+          tmp2 = closure_0;
+          str = "";
+          if ("" !== closure_0) {
+            tmp3 = closure_4;
+            if (tmp3) {
+              tmp4 = closure_5;
+              num = closure_5.current;
+              tmp5 = null;
+              if (num == null) {
+                num = -Infinity;
+              }
+              num2 = 500;
+              tmp7 = globalThis;
+              _Math = Math;
+              _Date = Date;
+              sum = num + 500;
+              num3 = 0;
+              _setTimeout = setTimeout;
+              closure_0 = setTimeout(() => { /* body not rendered: F140568 */ }, Math.max(0, sum - Date.now()));
+              return () => { /* body not rendered: F140569 */ };
+            }
+          }
+          return;
+        }
+        closure_5.current = null;
+        return;
+      }
+    }
+  }
+}) : ((channel) => {
   let _undefined;
   let tmp5;
   let tmp6;
@@ -74,7 +415,7 @@ export default function useEmojiSuggestions(channel) {
   const maxCount = channel.maxCount;
   const minUnlockedEmojis = channel.minUnlockedEmojis;
   closure_10 = undefined;
-  let obj = channel(selectionStart[5]);
+  let obj = channel(selectionStart[7]);
   const items = [maxCount];
   const stateFromStores = obj.useStateFromStores(items, () => maxCount.loadState);
   let obj2 = enabled;
@@ -177,4 +518,7 @@ export default function useEmojiSuggestions(channel) {
   }
   let obj3 = { unlockedEmojis: tmp3.unlockedEmojis, lockedEmojis: tmp3.lockedEmojis, queryStart: memo1.queryStart, queryEnd: memo1.queryEnd, clear: callback };
   return obj3;
-};
+});
+const result = size.fileFinishedImporting("modules/chat_input/native/useEmojiSuggestions.tsx");
+
+export default tmp2;

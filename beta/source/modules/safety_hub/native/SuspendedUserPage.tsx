@@ -1,24 +1,25 @@
-// Module ID: 16730
-// Function ID: 16731
+// Module ID: 16732
+// Function ID: 16733
 // Name: SuspendedUserPage
-// Dependencies: [19, 17, 7881, 7868, 21, 4836, 576, 504, 6544, 7363, 1115, 6010, 6413, 4832, 4525, 14300, 2]
-// Exports: default
+// Dependencies: [19, 17, 7885, 7872, 21, 4837, 588, 558, 576, 504, 6005, 4528, 7362, 1127, 6413, 4833, 14288, 6546, 2]
 
-// Module 16730 (SuspendedUserPage)
+// Module 16732 (SuspendedUserPage)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import intl4 from "intl" /* 1115 */;
-import LinkingDefault from "Linking" /* 4525 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6010 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import LinkingDefault from "Linking" /* 4528 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
 import AssetRegistryDefault from "AssetRegistry" /* 6413 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
-import SafetyHubPageDefault from "SafetyHubPage" /* 14300 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6546 */;
+import SafetyHubPageDefault from "SafetyHubPage" /* 14288 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7881 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7868 */;
+import SafetyHubStore from "SafetyHubStore" /* 7885 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7872 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -38,9 +39,106 @@ createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, flexDirection: "row", paddingVertical: nativeDefault.space.PX_8, alignItems: "center" };
 obj4 = { marginRight: nativeDefault.space.PX_8, textAlign: "left", flexShrink: 1 };
 let closure_9 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/safety_hub/native/SuspendedUserPage.tsx");
-
-export default function SuspendedUserSafetyHubPage() {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let ageCheckStatus;
+  let intl;
+  let intl3;
+  let items1;
+  let items2;
+  let tmp10;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  let obj = react2;
+  const cResult = obj.c(13);
+  const tmp4 = closure_9();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SafetyHubStore];
+    const fn = function s() {
+      return ageCheckStatus.getAgeCheckStatus();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  const VERIFIED = hasOwnProperty.VERIFIED;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.closeSuspendedUser();
+      }
+    }
+    cResult[2] = S;
+    tmp9 = S;
+  } else {
+    class S {
+      constructor() {
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.closeSuspendedUser();
+      }
+    }
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.closeSuspendedUser();
+      }
+    }
+    cResult[3] = tmp11;
+    tmp10 = tmp11;
+  } else {
+    class S {
+      constructor() {
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.closeSuspendedUser();
+      }
+    }
+  }
+  if (cResult[4] === stateFromStores !== VERIFIED) {
+    class S {
+      constructor() {
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.closeSuspendedUser();
+      }
+    }
+  }
+  let tmp13 = tmp12;
+  if (tmp13) {
+    class S {
+      constructor() {
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.closeSuspendedUser();
+      }
+    }
+    const obj2 = { style: tmp4.header, children: items1 };
+    const obj3 = { variant: "destructive", accessibilityLabel: intl.string(intl4.t.cpT0Cq), onPress: tmp9, icon: AssetRegistryDefault };
+    const IconButton = tmp(7362).IconButton;
+    intl = tmp(1127).intl;
+    items1 = [metroImportDefault(IconButton, obj3), ];
+    const obj4 = { style: tmp4.text, onPress: tmp10, variant: "text-xs/medium", color: "control-critical-primary-text-default", children: items2 };
+    const Text = tmp(4833).Text;
+    const intl2 = tmp(1127).intl;
+    items2 = [intl2.string(intl4.t["MG+Bzb"]), " ", ];
+    const obj5 = { style: tmp4.link, variant: "text-xs/medium", color: "control-critical-primary-text-default", children: intl3.string(intl4.t["9JceHN"]) };
+    const Text2 = tmp(4833).Text;
+    intl3 = tmp(1127).intl;
+    items2[2] = metroImportDefault(Text2, obj5);
+    items1[1] = metroImportAll(Text, obj4);
+    tmp13 = metroImportAll(View, obj2);
+  }
+  cResult[4] = stateFromStores !== VERIFIED;
+  cResult[5] = tmp4.header;
+  cResult[6] = tmp4.link;
+  cResult[7] = tmp4.text;
+  cResult[8] = tmp13;
+}) : (() => {
   let ageCheckStatus;
   let intl;
   let intl3;
@@ -64,8 +162,8 @@ export default function SuspendedUserSafetyHubPage() {
         },
       icon: AssetRegistryDefault
     };
-    const IconButton = tmp2(7363).IconButton;
-    intl = tmp2(1115).intl;
+    const IconButton = tmp2(7362).IconButton;
+    intl = tmp2(1127).intl;
     items1 = [metroImportDefault(IconButton, obj4), ];
     const obj5 = {
       style: tmp.text,
@@ -77,12 +175,12 @@ export default function SuspendedUserSafetyHubPage() {
       color: "control-critical-primary-text-default",
       children: items2
     };
-    const Text = tmp2(4832).Text;
-    const intl2 = tmp2(1115).intl;
+    const Text = tmp2(4833).Text;
+    const intl2 = tmp2(1127).intl;
     items2 = [intl2.string(intl4.t["MG+Bzb"]), " ", ];
     const obj6 = { style: tmp.link, variant: "text-xs/medium", color: "control-critical-primary-text-default", children: intl3.string(intl4.t["9JceHN"]) };
-    const Text2 = tmp2(4832).Text;
-    intl3 = tmp2(1115).intl;
+    const Text2 = tmp2(4833).Text;
+    intl3 = tmp2(1127).intl;
     items2[2] = metroImportDefault(Text2, obj6);
     items1[1] = metroImportAll(Text, obj5);
     tmp6Result = tmp6(tmp7, obj3);
@@ -90,4 +188,7 @@ export default function SuspendedUserSafetyHubPage() {
   const rect = { top: true, right: true, left: true, children: metroImportAll(View, obj2) };
   items3 = [tmp6Result, metroImportDefault(SafetyHubPageDefault, { visible: true })];
   return metroImportDefault(SafeAreaPaddingView, rect);
-};
+});
+const result = size.fileFinishedImporting("modules/safety_hub/native/SuspendedUserPage.tsx");
+
+export default tmp6;

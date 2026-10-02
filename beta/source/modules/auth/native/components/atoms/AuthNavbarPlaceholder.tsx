@@ -1,23 +1,39 @@
-// Module ID: 6397
-// Function ID: 6398
+// Module ID: 6394
+// Function ID: 6395
 // Name: AuthNavbarPlaceholder
-// Dependencies: [19, 21, 4836, 576, 5936, 2]
-// Exports: default
+// Dependencies: [19, 21, 4837, 588, 558, 576, 5933, 2]
 
-// Module 6397 (AuthNavbarPlaceholder)
+// Module 6394 (AuthNavbarPlaceholder)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 5936 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let obj2;
+let tmp;
+const NavigatorHeader = tmp(5933);
 const jsx = Fragment.jsx;
-const obj = { navBar: { backgroundColor: nativeDefault.unsafe_rawColors.TRANSPARENT, borderBottomWidth: 0 } };
-({ backgroundColor: nativeDefault.unsafe_rawColors.TRANSPARENT, borderBottomWidth: 0 });
+let obj = { navBar: obj2 };
+obj2 = { backgroundColor: nativeDefault.unsafe_rawColors.TRANSPARENT, borderBottomWidth: 0 };
 let closure_3 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const tmp4 = closure_3();
+  if (cResult[0] !== tmp4.navBar) {
+    const tmp7 = jsx(NavigatorHeader.FauxHeader, { style: tmp4.navBar, children: null });
+    cResult[0] = tmp4.navBar;
+    cResult[1] = tmp7;
+    tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5;
+}) : (() => jsx(NavigatorHeader.FauxHeader, { style: closure_3().navBar, children: null }));
 const result = size.fileFinishedImporting("modules/auth/native/components/atoms/AuthNavbarPlaceholder.tsx");
 
-export default function AuthNavbarPlaceholder() {
-  return jsx(NavigatorHeader.FauxHeader, { style: closure_3().navBar, children: null });
-};
+export default tmp3;

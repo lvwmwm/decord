@@ -1,18 +1,18 @@
-// Module ID: 8762
-// Function ID: 8763
+// Module ID: 8757
+// Function ID: 8758
 // Name: launchFrame
-// Dependencies: [5, 8499, 8500, 8502, 8763, 573, 8782, 8764, 8811, 8812, 2]
+// Dependencies: [5, 8496, 8497, 8499, 8758, 585, 8777, 8759, 8806, 8807, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFramePrefersPictureInPictureOnNavigateAway, updateFramePanelMode
 
-// Module 8762 (launchFrame)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8502 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 8763 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8782 */;
-import getFramesManagerDefault from "getFramesManager" /* 8812 */;
+// Module 8757 (launchFrame)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 8499 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 8758 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8777 */;
+import getFramesManagerDefault from "getFramesManager" /* 8807 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 8499 */;
-import FramesConstants from "FramesConstants" /* 8500 */;
+import FramesStore from "FramesStore" /* 8496 */;
+import FramesConstants from "FramesConstants" /* 8497 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, customId, dispatchResult1, error, hostWindowKey, intent, message, proxyTicket, referrerId;
@@ -45,7 +45,7 @@ let obj = function _launchFrame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -74,7 +74,7 @@ let obj = function _launchFrame() {
               message = undefined;
               hostWindowKey = 1;
               c6 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === hostWindowKey) {
             if (arg0 === 1) {
@@ -256,7 +256,7 @@ obj = function _refreshProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp49;

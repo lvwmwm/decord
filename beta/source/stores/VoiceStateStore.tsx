@@ -1,17 +1,17 @@
-// Module ID: 4855
-// Function ID: 4856
+// Module ID: 4856
+// Function ID: 4857
 // Name: VoiceStateStore
-// Dependencies: [32, 4856, 1074, 4857, 12, 504, 1610, 573, 2]
+// Dependencies: [32, 4857, 1086, 4858, 12, 504, 1616, 585, 2]
 
-// Module 4855 (VoiceStateStore)
+// Module 4856 (VoiceStateStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1610 */;
-import CallConstants from "CallConstants" /* 4857 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1616 */;
+import CallConstants from "CallConstants" /* 4858 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 4856 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 let closure_14, closure_16, closure_9, sessionId, set2, set3;
@@ -363,10 +363,10 @@ class VoiceStateStore extends Store {
     }
     return values(tmp2).length > 0;
   }
-  getVoicePlatformForChannel(channelId, id) {
+  getVoicePlatformForChannel(id, id2) {
     let tmp = null != sessionId;
     if (tmp) {
-      channelId = undefined;
+      let channelId;
       if (closure_16[id] != null) {
         if (closure_16[id][sessionId] != null) {
           channelId = tmp7.channelId;
@@ -374,15 +374,15 @@ class VoiceStateStore extends Store {
       }
       tmp = channelId;
     }
-    if (id === id) {
+    if (id2 === id) {
       let tmp8;
-      if (channelId === tmp) {
+      if (id === tmp) {
         const obj = MetaQuestUtils;
         tmp8 = obj.isMetaQuest() ? tmp11.QUEST : tmp11.MOBILE;
       }
       return tmp8;
     }
-    tmp8 = closure_17["" + id + ":" + channelId];
+    tmp8 = closure_17["" + id2 + ":" + id];
   }
 }
 Object.defineProperty(VoiceStateStore.prototype, "userHasBeenMovedVersion", {

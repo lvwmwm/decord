@@ -1,14 +1,14 @@
-// Module ID: 13308
-// Function ID: 13309
+// Module ID: 13310
+// Function ID: 13311
 // Name: getTinyBroncoWarningDescriptions
-// Dependencies: [9231, 1115, 9235, 3071, 2]
+// Dependencies: [9197, 1127, 9201, 3074, 2]
 // Exports: getTinyBroncoServerDescriptions, getTinyBroncoWarningDescriptions
 
-// Module 13308 (getTinyBroncoWarningDescriptions)
-import intl6 from "intl" /* 1115 */;
-import _modDef3071 from "module_3071" /* 3071 */;
-import TinyBroncoExperiment from "TinyBroncoExperiment" /* 9235 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 9231 */;
+// Module 13310 (getTinyBroncoWarningDescriptions)
+import intl6 from "intl" /* 1127 */;
+import _modDef3074 from "module_3074" /* 3074 */;
+import TinyBroncoExperiment from "TinyBroncoExperiment" /* 9201 */;
+import TinyBroncoConstants from "TinyBroncoConstants" /* 9197 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -26,30 +26,30 @@ export const getTinyBroncoServerDescriptions = function getTinyBroncoServerDescr
   intl3 = intl6.intl;
   return obj;
 };
-export const getTinyBroncoWarningDescriptions = function getTinyBroncoWarningDescriptions(tmp4Result, guildName) {
+export const getTinyBroncoWarningDescriptions = function getTinyBroncoWarningDescriptions(arg0, guildName) {
   let tmp4 = null;
-  const tmp = tmp4Result ? React3 : _false;
+  const tmp = arg0 ? React3 : _false;
   const obj = TinyBroncoExperiment;
   if (obj.isTinyBroncoEnabled(tmp)) {
     let tmp7;
     const obj2 = { adult: null, teen: null, unverified: null };
-    const intl = tmp2(1115).intl;
-    if (tmp4Result) {
+    const intl = tmp2(1127).intl;
+    if (arg0) {
       obj2.adult = intl.string(intl6.t.fp3xf5);
-      const intl4 = tmp2(1115).intl;
+      const intl4 = tmp2(1127).intl;
       obj2.teen = intl4.string(intl6.t.dqC1w2);
-      const intl5 = tmp2(1115).intl;
+      const intl5 = tmp2(1127).intl;
       obj2.unverified = intl5.string(intl6.t.qiLic6);
       tmp7 = obj2;
     } else {
       const obj3 = { guildName };
-      obj2.adult = intl.formatToPlainString(_modDef3071.iK0n30, obj3);
-      const intl2 = tmp2(1115).intl;
+      obj2.adult = intl.formatToPlainString(_modDef3074.iK0n30, obj3);
+      const intl2 = tmp2(1127).intl;
       const obj4 = { guildName };
-      obj2.teen = intl2.formatToPlainString(_modDef3071.ezJA0R, obj4);
-      const intl3 = tmp2(1115).intl;
+      obj2.teen = intl2.formatToPlainString(_modDef3074.ezJA0R, obj4);
+      const intl3 = tmp2(1127).intl;
       const obj5 = { guildName };
-      obj2.unverified = intl3.formatToPlainString(_modDef3071.h4HbnI, obj5);
+      obj2.unverified = intl3.formatToPlainString(_modDef3074.h4HbnI, obj5);
       tmp7 = obj2;
     }
     tmp4 = tmp7;

@@ -1,21 +1,17 @@
 // Module ID: 13815
 // Function ID: 13816
-// Dependencies: [13806, 13816, 13814, 13817]
+// Dependencies: [13816]
 
 // Module 13815
-import _mod13806 from "module_13806" /* 13806 */;
-import _mod13814 from "module_13814" /* 13814 */;
 import _mod13816 from "module_13816" /* 13816 */;
 
-let tmp;
-const _mod13817 = tmp(13817);
 
-export default _mod13806 ? ((arg0) => typeof arg0 === "symbol") : ((arg0) => {
-  const tmp3 = _mod13816("Symbol");
-  let tmpResultResult = _mod13814(tmp3);
-  if (tmpResultResult) {
-    const tmpResult = _mod13817;
-    tmpResultResult = tmpResult(tmp3.prototype, Object(arg0));
+export default (obj) => {
+  let tmp2;
+  if (typeof obj === "object") {
+    tmp2 = null !== obj;
+  } else {
+    tmp2 = _mod13816(obj);
   }
-  return tmpResultResult;
-});
+  return tmp2;
+};

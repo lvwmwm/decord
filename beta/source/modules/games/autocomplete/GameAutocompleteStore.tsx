@@ -1,13 +1,13 @@
-// Module ID: 5420
-// Function ID: 5421
+// Module ID: 5421
+// Function ID: 5422
 // Name: GameAutocompleteStore
-// Dependencies: [1439, 504, 5421, 573, 2]
+// Dependencies: [1445, 504, 5422, 585, 2]
 
-// Module 5420 (GameAutocompleteStore)
+// Module 5421 (GameAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import LRUCacheDefault from "LRUCache" /* 1439 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5421 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import LRUCacheDefault from "LRUCache" /* 1445 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5422 */;
 import size from "module_2" /* 2 */;
 
 const React2 = new LRUCacheDefault({ max: 100 });

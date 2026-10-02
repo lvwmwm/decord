@@ -1,44 +1,191 @@
-// Module ID: 16599
-// Function ID: 16600
+// Module ID: 16601
+// Function ID: 16602
 // Name: SpamRequestsScreen
-// Dependencies: [19, 4479, 1372, 10320, 1074, 21, 6583, 6603, 504, 16598, 8230, 1249, 7624, 10326, 2]
-// Exports: default
+// Dependencies: [19, 4482, 1378, 10361, 1086, 21, 558, 576, 6584, 6604, 16600, 504, 1261, 8227, 7628, 10367, 2]
 
-// Module 16599 (SpamRequestsScreen)
+// Module 16601 (SpamRequestsScreen)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1074 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import UserRowConstants from "UserRowConstants" /* 10320 */;
+import Constants from "Constants" /* 1086 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
+import UserRowConstants from "UserRowConstants" /* 10361 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let navigation, onPress;
 
 const UserRowModes = UserRowConstants.UserRowModes;
 const RelationshipTypes = Constants.RelationshipTypes;
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/SpamRequestsScreen.tsx");
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let analyticsLocations;
+  let mutableRelationships;
+  let stateFromStoresArray;
+  let stateFromStoresArray1;
+  let tmp10;
+  let tmp12;
+  let tmp14;
+  let tmp15;
+  let tmp17;
+  let tmp20;
+  let tmp6;
+  let tmp7;
+  let obj = analyticsLocations(stateFromStoresArray1[7]);
+  const cResult = obj.c(18);
+  const tmp5 = stateFromStoresArray(stateFromStoresArray1[8]);
+  analyticsLocations = tmp5(stateFromStoresArray(stateFromStoresArray1[9]).FRIEND_REQUESTS).analyticsLocations;
+  const tmp4 = stateFromStoresArray;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [RelationshipStore];
+    const fn = function p() {
+      const obj = analyticsLocations(stateFromStoresArray1[10]);
+      return obj.getPendingRelationshipIds(mutableRelationships.getMutableRelationships()).spamIds;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const tmpResult = analyticsLocations(stateFromStoresArray1[11]);
+  stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp6, tmp7);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { name: analyticsLocations(stateFromStoresArray1[12]).ImpressionNames.FRIEND_REQUESTS_SPAM_INBOX };
+    cResult[2] = obj2;
+    tmp10 = obj2;
+  } else {
+    tmp10 = cResult[2];
+  }
+  tmp4(stateFromStoresArray1[13])(tmp10);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserStore];
+    cResult[3] = items1;
+    tmp12 = items1;
+  } else {
+    tmp12 = cResult[3];
+  }
+  if (cResult[4] !== stateFromStoresArray) {
+    class N {
+      constructor() {
+        mapped = closure_1.map((item) => user.getUser(item));
+        return mapped.filter((item) => null != item);
+      }
+    }
+    const items2 = [stateFromStoresArray];
+    cResult[4] = stateFromStoresArray;
+    cResult[5] = N;
+    cResult[6] = items2;
+    tmp15 = items2;
+    tmp14 = N;
+  } else {
+    class N {
+      constructor() {
+        mapped = closure_1.map((item) => user.getUser(item));
+        return mapped.filter((item) => null != item);
+      }
+    }
+    tmp15 = cResult[6];
+  }
+  const tmpResult2 = analyticsLocations(stateFromStoresArray1[11]);
+  stateFromStoresArray1 = tmpResult2.useStateFromStoresArray(tmp12, tmp14, tmp15);
+  if (cResult[7] !== analyticsLocations) {
+    class E {
+      constructor(id) {
+        const obj = { userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations };
+        showUserProfileActionSheetDefault(obj);
+      }
+    }
+    cResult[7] = analyticsLocations;
+    cResult[8] = E;
+  } else {
+    class E {
+      constructor(id) {
+        const obj = { userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations };
+        showUserProfileActionSheetDefault(obj);
+      }
+    }
+  }
+  E = tmp16;
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class P {
+      constructor() {
 
-export default function SpamRequestsScreen(navigation) {
+      }
+    }
+    cResult[9] = P;
+    tmp17 = P;
+  } else {
+    class P {
+      constructor() {
+
+      }
+    }
+  }
+  if (cResult[10] === tmp16) {
+    class P {
+      constructor() {
+
+      }
+    }
+    if (0 !== stateFromStoresArray1.length) {
+      class P {
+        constructor() {
+
+        }
+      }
+      if (cResult[15] === tmp18) {
+        class P {
+          constructor() {
+
+          }
+        }
+        return tmp20;
+      }
+      const tmp22 = jsx(analyticsLocations(stateFromStoresArray1[15]).UsersFastList, { getItemProps: tmp18, getSectionProps: tmp17, sections: tmp19 });
+      cResult[15] = tmp18;
+      cResult[16] = tmp19;
+      cResult[17] = tmp22;
+      tmp20 = tmp22;
+    } else {
+      class P {
+        constructor() {
+
+        }
+      }
+    }
+  }
+  class F {
+    constructor(arg0, arg1) {
+      const element = { type: "user", props: obj };
+      return element;
+    }
+  }
+  cResult[10] = tmp16;
+  cResult[11] = stateFromStoresArray1;
+  cResult[12] = F;
+}) : ((navigation) => {
   let mutableRelationships;
   navigation = navigation.navigation;
   let stateFromStoresArray;
   let stateFromStoresArray1;
-  let onPress;
-  const tmp2 = stateFromStoresArray(stateFromStoresArray1[6]);
-  const analyticsLocations = tmp2(stateFromStoresArray(stateFromStoresArray1[7]).FRIEND_REQUESTS).analyticsLocations;
-  let obj = analyticsLocations(stateFromStoresArray1[8]);
+  onPress = undefined;
+  const tmp2 = stateFromStoresArray(stateFromStoresArray1[8]);
+  const analyticsLocations = tmp2(stateFromStoresArray(stateFromStoresArray1[9]).FRIEND_REQUESTS).analyticsLocations;
+  let obj = analyticsLocations(stateFromStoresArray1[11]);
   const items = [RelationshipStore];
   stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
-    const obj = analyticsLocations(stateFromStoresArray1[9]);
+    const obj = analyticsLocations(stateFromStoresArray1[10]);
     return obj.getPendingRelationshipIds(mutableRelationships.getMutableRelationships()).spamIds;
   });
-  const obj2 = { name: analyticsLocations(stateFromStoresArray1[11]).ImpressionNames.FRIEND_REQUESTS_SPAM_INBOX };
-  const tmp5 = stateFromStoresArray(stateFromStoresArray1[10]);
+  const obj2 = { name: analyticsLocations(stateFromStoresArray1[12]).ImpressionNames.FRIEND_REQUESTS_SPAM_INBOX };
+  const tmp5 = stateFromStoresArray(stateFromStoresArray1[13]);
   tmp5(obj2);
   const items1 = [UserStore];
   const items2 = [stateFromStoresArray];
-  const obj3 = analyticsLocations(stateFromStoresArray1[8]);
+  const obj3 = analyticsLocations(stateFromStoresArray1[11]);
   const tmp = stateFromStoresArray1;
   stateFromStoresArray1 = obj3.useStateFromStoresArray(items1, () => {
     let user;
@@ -57,8 +204,11 @@ export default function SpamRequestsScreen(navigation) {
   const tmp3 = analyticsLocations;
   if (0 !== stateFromStoresArray1.length) {
     const items5 = [stateFromStoresArray1.length];
-    return jsx(tmp3(tmp[13]).UsersFastList, { getItemProps: tmp9, getSectionProps: callback1, sections: items5 });
+    return jsx(tmp3(tmp[15]).UsersFastList, { getItemProps: tmp9, getSectionProps: callback1, sections: items5 });
   } else {
     navigation.goBack();
   }
-};
+});
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/SpamRequestsScreen.tsx");
+
+export default tmp2;

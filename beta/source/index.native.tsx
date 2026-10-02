@@ -1,26 +1,26 @@
 // Module ID: 0
 // Function ID: 1
 // Name: Discord
-// Dependencies: [1, 15, 13687, 16, 9, 1231, 13881, 13882, 17, 13884, 17053, 17752, 17753, 17754, 17755, 17756, 17758, 17759, 17760, 17761, 17762, 17763, 17764, 17765, 2]
+// Dependencies: [1, 15, 13689, 16, 9, 1243, 13883, 13884, 17, 13886, 17055, 17754, 17755, 17756, 17757, 17758, 17760, 17761, 17762, 17763, 17764, 17765, 17766, 17767, 2]
 
 // Module 0 (Discord)
 import TTITracker from "TTITracker" /* 9 */;
 import react_native from "react-native" /* 17 */;
-import isTTITest from "isTTITest" /* 13881 */;
-import installSystrace from "installSystrace" /* 13882 */;
+import isTTITest from "isTTITest" /* 13883 */;
+import installSystrace from "installSystrace" /* 13884 */;
 import logAppStart from "logAppStart" /* 1 */;
 import fast_connect from "fast_connect" /* 15 */;
-import polyfills from "polyfills" /* 13687 */;
+import polyfills from "polyfills" /* 13689 */;
 import checkEnv from "checkEnv" /* 16 */;
-import SentryUtils from "SentryUtils" /* 1231 */;
+import SentryUtils from "SentryUtils" /* 1243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f69809 = () => {
-  let closure_0 = GenerateInvite(f17811[12]).default;
-  return (arg0) => closure_0(GenerateInvite, f17811, arg0);
+const f78675 = () => {
+  let closure_0 = GenerateInvite(f17813[12]).default;
+  return (arg0) => closure_0(GenerateInvite, f17813, arg0);
 };
 const polyfillsEnd = TTITracker.default.imports.polyfillsEnd;
 polyfillsEnd.record();
@@ -47,38 +47,38 @@ AppRegistry.registerRunnable("Share", () => {
   return require("executeRunnable").default("Share", () => closure_3(...closure_0));
 });
 const BackgroundSync = "BackgroundSync";
-const f17801 = () => BackgroundSync(f17801[13]);
-AppRegistry.registerHeadlessTask("BackgroundSync", f69809);
+const f17803 = () => BackgroundSync(f17803[13]);
+AppRegistry.registerHeadlessTask("BackgroundSync", f78675);
 if (isTTITest.isTTITest) {
   const TTITestAction = "TTITestAction";
-  const f17802 = () => TTITestAction(f17802[14]);
-  AppRegistry.registerHeadlessTask("TTITestAction", f69809);
+  const f17804 = () => TTITestAction(f17804[14]);
+  AppRegistry.registerHeadlessTask("TTITestAction", f78675);
 }
 const Disconnect = "Disconnect";
-const f17803 = () => Disconnect(f17803[15]);
-AppRegistry.registerHeadlessTask("Disconnect", f69809);
+const f17805 = () => Disconnect(f17805[15]);
+AppRegistry.registerHeadlessTask("Disconnect", f78675);
 const MarkAsRead = "MarkAsRead";
-const f17804 = () => MarkAsRead(f17804[16]);
-AppRegistry.registerHeadlessTask("MarkAsRead", f69809);
+const f17806 = () => MarkAsRead(f17806[16]);
+AppRegistry.registerHeadlessTask("MarkAsRead", f78675);
 const MuteAction = "MuteAction";
-const f17805 = () => MuteAction(f17805[17]);
-AppRegistry.registerHeadlessTask("MuteAction", f69809);
+const f17807 = () => MuteAction(f17807[17]);
+AppRegistry.registerHeadlessTask("MuteAction", f78675);
 const ToggleDeafen = "ToggleDeafen";
-const f17806 = () => ToggleDeafen(f17806[18]);
-AppRegistry.registerHeadlessTask("ToggleDeafen", f69809);
+const f17808 = () => ToggleDeafen(f17808[18]);
+AppRegistry.registerHeadlessTask("ToggleDeafen", f78675);
 const ToggleSelfMute = "ToggleSelfMute";
-const f17807 = () => ToggleSelfMute(f17807[19]);
-AppRegistry.registerHeadlessTask("ToggleSelfMute", f69809);
+const f17809 = () => ToggleSelfMute(f17809[19]);
+AppRegistry.registerHeadlessTask("ToggleSelfMute", f78675);
 const DismissCallAction = "DismissCallAction";
-const f17808 = () => DismissCallAction(f17808[20]);
-AppRegistry.registerHeadlessTask("DismissCallAction", f69809);
+const f17810 = () => DismissCallAction(f17810[20]);
+AppRegistry.registerHeadlessTask("DismissCallAction", f78675);
 const DirectReply = "DirectReply";
-const f17809 = () => DirectReply(f17809[21]);
-AppRegistry.registerHeadlessTask("DirectReply", f69809);
+const f17811 = () => DirectReply(f17811[21]);
+AppRegistry.registerHeadlessTask("DirectReply", f78675);
 const SelectVoiceChannel = "SelectVoiceChannel";
-const f17810 = () => SelectVoiceChannel(f17810[22]);
-AppRegistry.registerHeadlessTask("SelectVoiceChannel", f69809);
+const f17812 = () => SelectVoiceChannel(f17812[22]);
+AppRegistry.registerHeadlessTask("SelectVoiceChannel", f78675);
 const GenerateInvite = "GenerateInvite";
-const f17811 = () => GenerateInvite(f17811[23]);
-AppRegistry.registerHeadlessTask("GenerateInvite", f69809);
+const f17813 = () => GenerateInvite(f17813[23]);
+AppRegistry.registerHeadlessTask("GenerateInvite", f78675);
 const result = size.fileFinishedImporting("index.native.tsx");

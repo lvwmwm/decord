@@ -1,11 +1,11 @@
-// Module ID: 10136
-// Function ID: 10137
+// Module ID: 10175
+// Function ID: 10176
 // Name: premium_tab
-// Dependencies: [32, 1187, 10133, 2]
+// Dependencies: [32, 1199, 10172, 2]
 
-// Module 10136 (premium_tab)
-import _mod1187 from "module_1187" /* 1187 */;
-import localized_string from "localized_string" /* 10133 */;
+// Module 10175 (premium_tab)
+import _mod1199 from "module_1199" /* 1199 */;
+import localized_string from "localized_string" /* 10172 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let tmp;
 const T2 = function T() {
   return require("localized_string").LocalizedString;
 };
-const MessageType = _mod1187.MessageType;
+const MessageType = _mod1199.MessageType;
 class PremiumTab$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "badge_label", kind: "scalar", T: 9 }, { no: 2, name: "acknowledged_badge_label", kind: "scalar", T: 9 }, { no: 3, name: "show_hover_gradient", kind: "scalar", T: 8 }, { no: 4, name: "deeplink_section", kind: "scalar", T: 9 }, , ];
@@ -35,9 +35,9 @@ class PremiumTab$Type extends MessageType {
     const obj = { badgeLabel: "", acknowledgedBadgeLabel: "", showHoverGradient: false, deeplinkSection: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -86,7 +86,7 @@ class PremiumTab$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -98,26 +98,26 @@ class PremiumTab$Type extends MessageType {
   }
   internalBinaryWrite(badgeLabel, tag, writeUnknownFields) {
     if ("" !== badgeLabel.badgeLabel) {
-      const tagResult = tag.tag(1, _mod1187.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1199.WireType.LengthDelimited);
       tagResult.string(badgeLabel.badgeLabel);
     }
     if ("" !== badgeLabel.acknowledgedBadgeLabel) {
-      const tagResult1 = tag.tag(2, _mod1187.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1199.WireType.LengthDelimited);
       tagResult1.string(badgeLabel.acknowledgedBadgeLabel);
     }
     if (false !== badgeLabel.showHoverGradient) {
-      const tagResult2 = tag.tag(3, _mod1187.WireType.Varint);
+      const tagResult2 = tag.tag(3, _mod1199.WireType.Varint);
       tagResult2.bool(badgeLabel.showHoverGradient);
     }
     if ("" !== badgeLabel.deeplinkSection) {
-      const tagResult3 = tag.tag(4, _mod1187.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1199.WireType.LengthDelimited);
       tagResult3.string(badgeLabel.deeplinkSection);
     }
     if (badgeLabel.badgeLabelLocalized) {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite = LocalizedString.internalBinaryWrite;
       const badgeLabelLocalized = badgeLabel.badgeLabelLocalized;
-      const tagResult4 = tag.tag(5, _mod1187.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1199.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(badgeLabelLocalized, tagResult4.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -125,14 +125,14 @@ class PremiumTab$Type extends MessageType {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite2 = LocalizedString2.internalBinaryWrite;
       const acknowledgedBadgeLabelLocalized = badgeLabel.acknowledgedBadgeLabelLocalized;
-      const tagResult5 = tag.tag(6, _mod1187.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1199.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(acknowledgedBadgeLabelLocalized, tagResult5.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, badgeLabel, tag);

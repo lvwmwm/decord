@@ -1,105 +1,42 @@
 // Module ID: 12346
 // Function ID: 12347
-// Dependencies: [41, 42, 12323, 12318]
+// Dependencies: [12318]
+// Exports: handleCallbackErrors
 
 // Module 12346
 import _mod12318 from "module_12318" /* 12318 */;
-import generatePropagationContext from "generatePropagationContext" /* 12323 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
 
-class SentryNonRecordingSpan {
-  constructor() {
-    let obj = arg0;
-    if (arg0 === undefined) {
-      obj = {};
+
+export const handleCallbackErrors = function handleCallbackErrors(fn, fn2) {
+  function maybeHandlePromiseRejection(promise, fn2, fn) {
+    let closure_0 = fn2;
+    let closure_1 = fn;
+    const obj = _mod12318;
+    if (obj.isThenable(promise)) {
+      return promise.then((result) => {
+        closure_1();
+        return result;
+      }, (arg0) => {
+        closure_0(arg0);
+        closure_1();
+        throw arg0;
+      });
+    } else {
+      fn();
+      return promise;
     }
-    const self = this;
-    _classCallCheck(this, SentryNonRecordingSpan);
-    let traceId = obj.traceId;
-    if (!traceId) {
-      const obj2 = generatePropagationContext;
-      traceId = obj2.generateTraceId();
-    }
-    self._traceId = traceId;
-    let spanId = obj.spanId;
-    if (!spanId) {
-      const obj3 = generatePropagationContext;
-      spanId = obj3.generateSpanId();
-    }
-    self._spanId = spanId;
   }
-}
-const entry = {
-  key: "spanContext",
-  value: function spanContext() {
-    const obj = { spanId: this._spanId, traceId: this._traceId, traceFlags: _mod12318.TRACE_FLAG_NONE };
-    return obj;
+  fn = arg2;
+  if (arg2 === undefined) {
+    fn = function t() {
+
+    };
+  }
+  try {
+    return maybeHandlePromiseRejection(fn(), fn2, fn);
+  } catch (tmp2) {
+    fn2(tmp2);
+    fn();
+    throw tmp2;
   }
 };
-const items = [
-  entry,
-  {
-    key: "end",
-    value: function end(arg0) {
-
-    }
-  },
-  {
-    key: "setAttribute",
-    value: function setAttribute(arg0, arg1) {
-      return this;
-    }
-  },
-  {
-    key: "setAttributes",
-    value: function setAttributes(arg0) {
-      return this;
-    }
-  },
-  {
-    key: "setStatus",
-    value: function setStatus(arg0) {
-      return this;
-    }
-  },
-  {
-    key: "updateName",
-    value: function updateName(arg0) {
-      return this;
-    }
-  },
-  {
-    key: "isRecording",
-    value: function isRecording() {
-      return false;
-    }
-  },
-  {
-    key: "addEvent",
-    value: function addEvent(arg0, arg1, arg2) {
-      return this;
-    }
-  },
-  {
-    key: "addLink",
-    value: function addLink(arg0) {
-      return this;
-    }
-  },
-  {
-    key: "addLinks",
-    value: function addLinks(arg0) {
-      return this;
-    }
-  },
-  {
-    key: "recordException",
-    value: function recordException(arg0, arg1) {
-
-    }
-  }
-];
-const SentryNonRecordingSpan_export = _createClass(SentryNonRecordingSpan, items);
-
-export { SentryNonRecordingSpan_export as SentryNonRecordingSpan };

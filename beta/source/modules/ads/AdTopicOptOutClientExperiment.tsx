@@ -1,24 +1,37 @@
-// Module ID: 15474
-// Function ID: 15475
+// Module ID: 15462
+// Function ID: 15463
 // Name: AdTopicOptOutClientExperiment
-// Dependencies: [1435, 2]
-// Exports: isAdTopicOptOutClientEnabled, useIsAdTopicOptOutClientEnabled
+// Dependencies: [1441, 558, 576, 2]
+// Exports: isAdTopicOptOutClientEnabled
 
-// Module 15474 (AdTopicOptOutClientExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 15462 (AdTopicOptOutClientExperiment)
+import react from "react" /* 576 */;
+import ApexExperiment from "ApexExperiment" /* 1441 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
-const obj = { kind: "user", name: "2026-08-ad-topic-opt-out-client", defaultConfig: { enabled: false }, variations: obj2 };
+let obj = { kind: "user", name: "2026-08-ad-topic-opt-out-client", defaultConfig: { enabled: false }, variations: obj2 };
 obj2 = { 1: null, 2: { enabled: false }, 3: { enabled: true }, 4: { enabled: true }, 5: { enabled: true } };
 obj2[5] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { location: "useIsAdTopicOptOutClientEnabled" };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  return apexExperiment.useConfig(first).enabled;
+}) : (() => apexExperiment.useConfig({ location: "useIsAdTopicOptOutClientEnabled" }).enabled);
 const result = size.fileFinishedImporting("modules/ads/AdTopicOptOutClientExperiment.tsx");
 
 export const AdTopicOptOutClientExperiment = apexExperiment;
-export const useIsAdTopicOptOutClientEnabled = function useIsAdTopicOptOutClientEnabled() {
-  return apexExperiment.useConfig({ location: "useIsAdTopicOptOutClientEnabled" }).enabled;
-};
+export const useIsAdTopicOptOutClientEnabled = tmp3;
 export const isAdTopicOptOutClientEnabled = function isAdTopicOptOutClientEnabled() {
   return apexExperiment.getConfig({ location: "isAdTopicOptOutClientEnabled" }).enabled;
 };

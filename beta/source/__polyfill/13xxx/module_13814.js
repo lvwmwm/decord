@@ -1,18 +1,9 @@
 // Module ID: 13814
 // Function ID: 13815
-// Dependencies: []
+// Dependencies: [13800]
 
 // Module 13814
-let all = typeof document === "object";
-if (typeof document === "object") {
-  const _document = document;
-  all = document.all;
-}
-if (undefined === all) {
-  let fn;
-  if (undefined !== all) {
-    fn = (fn) => typeof fn === "function" || fn === all;
-  }
-  module.exports = fn;
-}
-fn = (fn) => typeof fn === "function";
+import _mod13800 from "module_13800" /* 13800 */;
+
+
+export default (arg0) => Object(_mod13800(arg0));

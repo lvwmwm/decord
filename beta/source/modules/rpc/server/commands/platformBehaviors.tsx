@@ -1,10 +1,10 @@
-// Module ID: 14068
-// Function ID: 14069
+// Module ID: 14070
+// Function ID: 14071
 // Name: platformBehaviors
-// Dependencies: [1085, 2]
+// Dependencies: [1097, 2]
 
-// Module 14068 (platformBehaviors)
-import Constants from "Constants" /* 1085 */;
+// Module 14070 (platformBehaviors)
+import Constants from "Constants" /* 1097 */;
 import size from "module_2" /* 2 */;
 
 const obj = {

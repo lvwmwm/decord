@@ -1,16 +1,16 @@
-// Module ID: 6537
-// Function ID: 6538
+// Module ID: 6538
+// Function ID: 6539
 // Name: UserGuildSettingsManager
-// Dependencies: [5, 6538, 2045, 1074, 1091, 1271, 6539, 2]
+// Dependencies: [5, 6539, 2051, 1086, 1103, 1283, 6540, 2]
 
-// Module 6537 (UserGuildSettingsManager)
-import DurationsDefault from "Durations" /* 1091 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 6538 (UserGuildSettingsManager)
+import DurationsDefault from "Durations" /* 1103 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 6538 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import Constants from "Constants" /* 1074 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 6539 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import Constants from "Constants" /* 1086 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let body, c3, c4, c6, c7, channel, collapsedCategories, guilds;
@@ -45,7 +45,7 @@ let obj = function _saveUserGuildSettings() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -107,7 +107,7 @@ let obj = function _saveUserGuildSettings() {
             return obj;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -160,7 +160,7 @@ obj = function _saveUserGuildSettingsBulk() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

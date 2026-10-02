@@ -1,18 +1,22 @@
 // Module ID: 7984
 // Function ID: 7985
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7985, 7986, 7933]
+// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 7926, 7985, 7928, 7937]
 
 // Module 7984
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import multiplyMatricesDefault from "multiplyMatrices" /* 7933 */;
+import extractViewBox from "extractViewBox" /* 7926 */;
+import extractProps from "extractProps" /* 7928 */;
+import multiplyMatricesDefault from "multiplyMatrices" /* 7937 */;
 import _modDef7985 from "module_7985" /* 7985 */;
-import extractGradientDefault from "extractGradient" /* 7986 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 import react from "react" /* 19 */;
+
+let size;
 
 function _isNativeReflectConstruct() {
   try {
@@ -29,15 +33,17 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
+const Image = react_native.Image;
 const jsx = Fragment.jsx;
-class LinearGradient {
+const re9 = /\s+/;
+class SvgImage {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, LinearGradient);
-    const obj = _getPrototypeOf(LinearGradient);
+    _classCallCheck(this, SvgImage);
+    const obj = _getPrototypeOf(SvgImage);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = _possibleConstructorReturn;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -47,24 +53,60 @@ class LinearGradient {
     return tmp3(self, constructResult);
   }
 }
-_inherits(LinearGradient, multiplyMatricesDefault);
+_inherits(SvgImage, multiplyMatricesDefault);
 const entry = {
   key: "render",
   value: function render() {
+    let assetSource;
+    let height;
+    let href;
+    let parts;
+    let preserveAspectRatio;
+    let tmp2;
+    let tmp3;
+    let width;
+    let x;
+    let y;
     const self = this;
     const props = this.props;
-    const obj = { x1: props.x1, y1: props.y1, x2: props.x2, y2: props.y2 };
+    ({ preserveAspectRatio, href } = props);
+    ({ x, y, width, height } = props);
+    if (undefined === href) {
+      href = props.xlinkHref;
+    }
+    const onLoad = props.onLoad;
+    if (preserveAspectRatio) {
+      const str = preserveAspectRatio.trim();
+      parts = str.split(re9);
+    } else {
+      parts = [];
+    }
+    size = { x, y, width, height, onLoad, meetOrSlice: extractViewBox.meetOrSliceTypes[tmp3] || 0, align: extractViewBox.alignEnum[tmp2] || "xMidYMid", src: assetSource };
+    [tmp2, tmp3] = parts;
+    extractViewBox.meetOrSliceTypes[tmp3] || 0;
+    assetSource = null;
+    extractViewBox.alignEnum[tmp2] || "xMidYMid";
+    if (href) {
+      let tmp10 = href;
+      const resolveAssetSource = Image.resolveAssetSource;
+      if (typeof href === "string") {
+        tmp10 = { uri: href };
+        const obj = { uri: href };
+      }
+      assetSource = resolveAssetSource(tmp10);
+    }
     _modDef7985;
-    const merged = Object.assign(obj);
-    const merged1 = Object.assign(extractGradientDefault(props, this));
-    return <tmp ref={function ref(arg0) {
+    const tmp4Result = extractProps;
+    const merged = Object.assign(tmp4Result.withoutXY(this, props));
+    const merged1 = Object.assign(size);
+    return <tmp11 ref={function ref(arg0) {
       return self.refMethod(arg0);
     }} />;
   }
 };
 const items = [entry];
-const importDefaultResultResult = _createClass(LinearGradient, items);
-importDefaultResultResult.displayName = "LinearGradient";
-importDefaultResultResult.defaultProps = { x1: "0%", y1: "0%", x2: "100%", y2: "0%" };
+const importDefaultResultResult = _createClass(SvgImage, items);
+importDefaultResultResult.displayName = "Image";
+importDefaultResultResult.defaultProps = { x: 0, y: 0, width: 0, height: 0, preserveAspectRatio: "xMidYMid meet" };
 
 export default importDefaultResultResult;

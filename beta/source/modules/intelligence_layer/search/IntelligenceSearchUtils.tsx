@@ -1,19 +1,19 @@
-// Module ID: 11849
-// Function ID: 11850
+// Module ID: 11742
+// Function ID: 11743
 // Name: IntelligenceSearchUtils
-// Dependencies: [4479, 11846, 11847, 1074, 7303, 11829, 11823, 5058, 11848, 2]
+// Dependencies: [4482, 11739, 11740, 1086, 7307, 11722, 11716, 5059, 11741, 2]
 // Exports: getIntelligenceSearchCitationsCount, getIntelligenceSearchQuery, getIntelligenceSearchStatus, hydrateAndFilterCitations, isIntelligenceSearchActive, isIntelligenceSearchEmptyOrErrored, isSupportedSearchContext, parseConversationId, resolveSearchStatus
 
-// Module 11849 (IntelligenceSearchUtils)
-import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
-import SearchConstants from "SearchConstants" /* 7303 */;
-import SearchUtils from "SearchUtils" /* 11823 */;
-import QueryTokenizer from "QueryTokenizer" /* 11829 */;
-import IntelligenceSearchConstants from "IntelligenceSearchConstants" /* 11847 */;
-import IntelligenceSearchTypes from "IntelligenceSearchTypes" /* 11848 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11846 */;
-import Constants from "Constants" /* 1074 */;
+// Module 11742 (IntelligenceSearchUtils)
+import MessageRecordUtils from "MessageRecordUtils" /* 5059 */;
+import SearchConstants from "SearchConstants" /* 7307 */;
+import SearchUtils from "SearchUtils" /* 11716 */;
+import QueryTokenizer from "QueryTokenizer" /* 11722 */;
+import IntelligenceSearchConstants from "IntelligenceSearchConstants" /* 11740 */;
+import IntelligenceSearchTypes from "IntelligenceSearchTypes" /* 11741 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11739 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let SearchTokenTypes;
@@ -107,8 +107,8 @@ export const getIntelligenceSearchStatus = function getIntelligenceSearchStatus(
   }
   return status;
 };
-export const isIntelligenceSearchActive = function isIntelligenceSearchActive(intelligenceStatus) {
-  const tmp3 = intelligenceStatus === IntelligenceSearchTypes.IntelligenceSearchStatus.LOADING || intelligenceStatus === IntelligenceSearchTypes.IntelligenceSearchStatus.LOADED;
+export const isIntelligenceSearchActive = function isIntelligenceSearchActive(status) {
+  const tmp3 = status === IntelligenceSearchTypes.IntelligenceSearchStatus.LOADING || status === IntelligenceSearchTypes.IntelligenceSearchStatus.LOADED;
   return tmp3;
 };
 export const isIntelligenceSearchEmptyOrErrored = function isIntelligenceSearchEmptyOrErrored(status) {

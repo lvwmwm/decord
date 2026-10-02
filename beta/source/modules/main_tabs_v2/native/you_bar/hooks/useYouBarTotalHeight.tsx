@@ -1,19 +1,26 @@
-// Module ID: 14629
-// Function ID: 14630
+// Module ID: 14617
+// Function ID: 14618
 // Name: useYouBarTotalHeight
-// Dependencies: [14627, 14626, 14630, 2]
-// Exports: useYouBarTotalHeight
+// Dependencies: [14615, 558, 14614, 14618, 2]
 
-// Module 14629 (useYouBarTotalHeight)
-import useYouBarMargins from "useYouBarMargins" /* 14626 */;
-import YouBarConstants from "YouBarConstants" /* 14627 */;
-import useConnectionBannerHeight from "useConnectionBannerHeight" /* 14630 */;
+// Module 14617 (useYouBarTotalHeight)
+import useYouBarMargins from "useYouBarMargins" /* 14614 */;
+import YouBarConstants from "YouBarConstants" /* 14615 */;
+import useConnectionBannerHeight from "useConnectionBannerHeight" /* 14618 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const YOU_BAR_HEIGHT = YouBarConstants.YOU_BAR_HEIGHT;
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarTotalHeight.tsx");
-
-export const useYouBarTotalHeight = function useYouBarTotalHeight(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let num = 0;
+  if (undefined !== arg0) {
+    num = arg0;
+  }
+  const obj = useYouBarMargins;
+  const youBarBottomMargin = obj.useYouBarBottomMargin();
+  const obj2 = useConnectionBannerHeight;
+  return youBarBottomMargin + YOU_BAR_HEIGHT + obj2.useConnectionBannerHeight() + num;
+}) : (() => {
   let num = arg0;
   if (arg0 === undefined) {
     num = 0;
@@ -22,4 +29,7 @@ export const useYouBarTotalHeight = function useYouBarTotalHeight(arg0) {
   const youBarBottomMargin = obj.useYouBarBottomMargin();
   const obj2 = useConnectionBannerHeight;
   return youBarBottomMargin + YOU_BAR_HEIGHT + obj2.useConnectionBannerHeight() + num;
-};
+});
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarTotalHeight.tsx");
+
+export const useYouBarTotalHeight = tmp2;

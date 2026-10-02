@@ -1,12 +1,12 @@
-// Module ID: 4812
-// Function ID: 4813
+// Module ID: 4813
+// Function ID: 4814
 // Name: DeviceUtils
-// Dependencies: [1342, 1364, 510, 2]
+// Dependencies: [1354, 1370, 510, 2]
 // Exports: getDevice, getDeviceBrand, getDeviceInfo, getDeviceManufacturer, getDeviceMediaPerformanceClass, getDeviceModel, getDeviceProduct, getIsRunningOnSimulator, getMaxCpuFreq, getRamSize, getSmallestScreenWidthDp, getSocName, getSystemVersion, getSystemVersionMajor, getSystemVersionMinor, getTimeZone, isGestureNavigationEnabled, isIpadOS, isOrientationLockSupported
 
-// Module 4812 (DeviceUtils)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import react_native from "react-native" /* 1342 */;
+// Module 4813 (DeviceUtils)
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import react_native from "react-native" /* 1354 */;
 import size from "module_2" /* 2 */;
 
 const constants = react_native.getConstants();

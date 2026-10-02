@@ -1,22 +1,22 @@
-// Module ID: 12023
-// Function ID: 12024
+// Module ID: 11931
+// Function ID: 11932
 // Name: GuildBoostingMarketingUtils
-// Dependencies: [4728, 8219, 12024, 9842, 12026, 12028, 8674, 9033, 11195, 9698, 5411, 9573, 2]
+// Dependencies: [4730, 8216, 11932, 9876, 11934, 11936, 8671, 9010, 11066, 9716, 5412, 11937, 2]
 // Exports: getIconForPerk
 
-// Module 12023 (GuildBoostingMarketingUtils)
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4728 */;
-import StageIcon from "StageIcon" /* 5411 */;
-import ReactionIcon from "ReactionIcon" /* 8219 */;
-import UploadIcon from "UploadIcon" /* 8674 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9033 */;
-import StickerIcon from "StickerIcon" /* 9573 */;
-import StarIcon from "StarIcon" /* 9698 */;
-import GifIcon from "GifIcon" /* 9842 */;
-import ImagesIcon from "ImagesIcon" /* 11195 */;
-import SoundboardIcon from "SoundboardIcon" /* 12024 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 12026 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 12028 */;
+// Module 11931 (GuildBoostingMarketingUtils)
+import GuildBoostingUtils from "GuildBoostingUtils" /* 4730 */;
+import StageIcon from "StageIcon" /* 5412 */;
+import ReactionIcon from "ReactionIcon" /* 8216 */;
+import UploadIcon from "UploadIcon" /* 8671 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9010 */;
+import StarIcon from "StarIcon" /* 9716 */;
+import GifIcon from "GifIcon" /* 9876 */;
+import ImagesIcon from "ImagesIcon" /* 11066 */;
+import SoundboardIcon from "SoundboardIcon" /* 11932 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 11934 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 11936 */;
+import StickerIcon from "StickerIcon" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_boosting/native/GuildBoostingMarketingUtils.tsx");

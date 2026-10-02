@@ -1,13 +1,13 @@
-// Module ID: 6850
-// Function ID: 6851
+// Module ID: 6851
+// Function ID: 6852
 // Name: showCheckoutOrderErrorModal
-// Dependencies: [5, 32, 19, 21, 5209, 1115, 5205, 2]
+// Dependencies: [5, 32, 19, 21, 5210, 1127, 5206, 2]
 // Exports: showCheckoutOrderErrorModal, showRetryConfirmModal
 
-// Module 6850 (showCheckoutOrderErrorModal)
-import intl4 from "intl" /* 1115 */;
-import useAlertStore from "useAlertStore" /* 5205 */;
-import AlertModal2 from "AlertModal" /* 5209 */;
+// Module 6851 (showCheckoutOrderErrorModal)
+import intl4 from "intl" /* 1127 */;
+import useAlertStore from "useAlertStore" /* 5206 */;
+import AlertModal2 from "AlertModal" /* 5210 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -52,7 +52,7 @@ function SyncedLoadingAlertModal(onConfirm) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -92,7 +92,7 @@ function SyncedLoadingAlertModal(onConfirm) {
             c3 = 0;
             closure_128_1(false);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           closure_2 = tmp19;
@@ -171,7 +171,7 @@ export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -204,7 +204,7 @@ export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(
             tmp = value;
             closure_129_0(tmp);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp11) {
           c3 = 3;

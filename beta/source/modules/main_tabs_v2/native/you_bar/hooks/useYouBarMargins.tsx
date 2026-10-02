@@ -1,23 +1,25 @@
-// Module ID: 14626
-// Function ID: 14627
+// Module ID: 14614
+// Function ID: 14615
 // Name: useYouBarMargins
-// Dependencies: [14627, 1613, 1365, 4531, 576, 2]
-// Exports: useYouBarBottomMargin, useYouBarHorizontalMargin
+// Dependencies: [14615, 558, 1619, 1371, 4535, 588, 2]
+// Exports: useYouBarHorizontalMargin
 
-// Module 14626 (useYouBarMargins)
-import nativeDefault from "native" /* 576 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import useToken from "useToken" /* 4531 */;
-import YouBarConstants from "YouBarConstants" /* 14627 */;
+// Module 14614 (useYouBarMargins)
+import nativeDefault from "native" /* 588 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import useToken from "useToken" /* 4535 */;
+import YouBarConstants from "YouBarConstants" /* 14615 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 ({ YOU_BAR_MARGIN_IOS: c3, YOU_BAR_MARGIN: closure_4 } = YouBarConstants);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarMargins.tsx");
-
-export const useYouBarHorizontalMargin = function useYouBarHorizontalMargin() {
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+const fn = () => {
   if (useSafeAreaInsetsDefault().bottom > 0) {
     let tmp3;
     const obj = utils_PlatformUtils;
@@ -28,8 +30,16 @@ export const useYouBarHorizontalMargin = function useYouBarHorizontalMargin() {
   }
   tmp3 = React3;
 };
-export const useYouBarBottomMargin = function useYouBarBottomMargin() {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const bottom = useSafeAreaInsetsDefault().bottom;
   const obj = useToken;
   return Math.max(obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_OFFSET_MINIMUM), bottom);
-};
+}) : (() => {
+  const bottom = useSafeAreaInsetsDefault().bottom;
+  const obj = useToken;
+  return Math.max(obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_OFFSET_MINIMUM), bottom);
+});
+const result1 = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarMargins.tsx");
+
+export const useYouBarHorizontalMargin = fn;
+export const useYouBarBottomMargin = tmp4;

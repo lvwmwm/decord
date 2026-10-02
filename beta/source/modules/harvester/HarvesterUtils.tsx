@@ -1,63 +1,255 @@
-// Module ID: 14395
-// Function ID: 14396
+// Module ID: 14383
+// Function ID: 14384
 // Name: HarvesterUtils
-// Dependencies: [32, 19, 1372, 13255, 14396, 504, 2]
-// Exports: harvestDisabled, useRequestHarvestStatus
+// Dependencies: [32, 19, 1378, 13257, 14384, 558, 576, 504, 2]
+// Exports: harvestDisabled
 
-// Module 14395 (HarvesterUtils)
+// Module 14383 (HarvesterUtils)
 import get_initialized from "get initialized" /* 504 */;
-import HarvesterConstants from "HarvesterConstants" /* 14396 */;
+import react2 from "react" /* 576 */;
+import HarvesterConstants from "HarvesterConstants" /* 14384 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
-import DataHarvestStore from "DataHarvestStore" /* 13255 */;
+import UserStore from "UserStore" /* 1378 */;
+import DataHarvestStore from "DataHarvestStore" /* 13257 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
+let clearTimeoutResult, dependencyMap;
 
 let _slicedToArray = _slicedToArray_mod;
 const REQUEST_DATA_LIMIT_MS = HarvesterConstants.REQUEST_DATA_LIMIT_MS;
-const result = size.fileFinishedImporting("modules/harvester/HarvesterUtils.tsx");
-
-export const harvestDisabled = function harvestDisabled(created_at, stateFromStores) {
-  const verified = stateFromStores.verified;
-  let tmp = !verified;
-  if (verified) {
-    let isStaffResult = stateFromStores.isStaff();
-    if (!isStaffResult) {
-      let tmp5 = null != created_at;
-      if (tmp5) {
-        const _Date = Date;
-        const _Date2 = Date;
-        const self = this;
-        const self2 = this;
-        const timestamp = Date.now();
-        const date = new Date(created_at.created_at);
-        tmp5 = REQUEST_DATA_LIMIT_MS > timestamp - date.getTime();
-      }
-      isStaffResult = tmp5;
-    }
-    tmp = isStaffResult;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+  let closure_1;
+  let currentUser;
+  let harvestType;
+  let ref;
+  let tmp14;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(17);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function c() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
   }
-  return tmp;
-};
-export const useRequestHarvestStatus = function useRequestHarvestStatus() {
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [DataHarvestStore];
+    const fn2 = function v() {
+      return harvestType.harvestType;
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    tmp9 = fn2;
+    tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult2 = get_initialized;
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return Date.now();
+      }
+    }
+    cResult[4] = S;
+  } else {
+    class S {
+      constructor() {
+        return Date.now();
+      }
+    }
+  }
+  [tmp14, require] = react.useState(tmp12);
+  _slicedToArray(react.useState(tmp12), 2);
+  if (cResult[5] === stateFromStores1) {
+    let tmp21;
+    let tmp20;
+    let tmp24;
+    class S {
+      constructor() {
+        return Date.now();
+      }
+    }
+    dependencyMap = tmp15;
+    _slicedToArray = obj4.useRef(null);
+    if (cResult[8] !== tmp15) {
+      class E {
+        constructor() {
+          diff = closure_1 - Date.now();
+          if (diff > 0) {
+            _setTimeout = setTimeout;
+            _clearTimeout = clearTimeout;
+            tmp3 = closure_2;
+            timerId = setTimeout(() => closure_1_0(Date.now()), diff);
+            clearTimeoutResult = clearTimeout(closure_2.current);
+            closure_2.current = timerId;
+          }
+          return () => clearTimeout(ref.current);
+        }
+      }
+      const items2 = [tmp15];
+      cResult[8] = tmp15;
+      cResult[9] = E;
+      cResult[10] = items2;
+      tmp21 = items2;
+      tmp20 = E;
+    } else {
+      class E {
+        constructor() {
+          diff = closure_1 - Date.now();
+          if (diff > 0) {
+            _setTimeout = setTimeout;
+            _clearTimeout = clearTimeout;
+            tmp3 = closure_2;
+            timerId = setTimeout(() => closure_1_0(Date.now()), diff);
+            clearTimeoutResult = clearTimeout(closure_2.current);
+            closure_2.current = timerId;
+          }
+          return () => clearTimeout(ref.current);
+        }
+      }
+      tmp21 = cResult[10];
+    }
+    const effect = obj4.useEffect(tmp20, tmp21);
+    if (stateFromStores != null) {
+      class E {
+        constructor() {
+          diff = closure_1 - Date.now();
+          if (diff > 0) {
+            _setTimeout = setTimeout;
+            _clearTimeout = clearTimeout;
+            tmp3 = closure_2;
+            timerId = setTimeout(() => closure_1_0(Date.now()), diff);
+            clearTimeoutResult = clearTimeout(closure_2.current);
+            closure_2.current = timerId;
+          }
+          return () => clearTimeout(ref.current);
+        }
+      }
+    }
+    if (undefined) {
+      class E {
+        constructor() {
+          diff = closure_1 - Date.now();
+          if (diff > 0) {
+            _setTimeout = setTimeout;
+            _clearTimeout = clearTimeout;
+            tmp3 = closure_2;
+            timerId = setTimeout(() => closure_1_0(Date.now()), diff);
+            clearTimeoutResult = clearTimeout(closure_2.current);
+            closure_2.current = timerId;
+          }
+          return () => clearTimeout(ref.current);
+        }
+      }
+      tmp24 = tmp26;
+    } else {
+      class E {
+        constructor() {
+          diff = closure_1 - Date.now();
+          if (diff > 0) {
+            _setTimeout = setTimeout;
+            _clearTimeout = clearTimeout;
+            tmp3 = closure_2;
+            timerId = setTimeout(() => closure_1_0(Date.now()), diff);
+            clearTimeoutResult = clearTimeout(closure_2.current);
+            closure_2.current = timerId;
+          }
+          return () => clearTimeout(ref.current);
+        }
+      }
+      if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+        class E {
+          constructor() {
+            diff = closure_1 - Date.now();
+            if (diff > 0) {
+              _setTimeout = setTimeout;
+              _clearTimeout = clearTimeout;
+              tmp3 = closure_2;
+              timerId = setTimeout(() => closure_1_0(Date.now()), diff);
+              clearTimeoutResult = clearTimeout(closure_2.current);
+              closure_2.current = timerId;
+            }
+            return () => clearTimeout(ref.current);
+          }
+        }
+        cResult[11] = tmp25;
+        tmp24 = tmp25;
+      } else {
+        class E {
+          constructor() {
+            diff = closure_1 - Date.now();
+            if (diff > 0) {
+              _setTimeout = setTimeout;
+              _clearTimeout = clearTimeout;
+              tmp3 = closure_2;
+              timerId = setTimeout(() => closure_1_0(Date.now()), diff);
+              clearTimeoutResult = clearTimeout(closure_2.current);
+              closure_2.current = timerId;
+            }
+            return () => clearTimeout(ref.current);
+          }
+        }
+      }
+    }
+    return tmp24;
+  }
+  let sum = tmp14;
+  if (null != stateFromStores1) {
+    class E {
+      constructor() {
+        diff = closure_1 - Date.now();
+        if (diff > 0) {
+          _setTimeout = setTimeout;
+          _clearTimeout = clearTimeout;
+          tmp3 = closure_2;
+          timerId = setTimeout(() => closure_1_0(Date.now()), diff);
+          clearTimeoutResult = clearTimeout(closure_2.current);
+          closure_2.current = timerId;
+        }
+        return () => clearTimeout(ref.current);
+      }
+    }
+    const self = this;
+    const self2 = this;
+    const date = new Date(stateFromStores1.created_at);
+    sum = date.getTime() + REQUEST_DATA_LIMIT_MS;
+  }
+  cResult[5] = stateFromStores1;
+  cResult[6] = tmp14;
+  cResult[7] = sum;
+}) : (function() {
   let currentUser;
   let date1;
   let harvestType;
   let obj6;
   let ref;
   let tmp3;
-  const f99620 = () => Date.now();
+  const f116339 = () => Date.now();
   const items = [UserStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [DataHarvestStore];
   const obj3 = get_initialized;
   const stateFromStores1 = obj3.useStateFromStores(items1, () => harvestType.harvestType);
-  [tmp3, require] = react.useState(f99620);
+  [tmp3, require] = react.useState(f116339);
   let sum = tmp3;
-  _slicedToArray(react.useState(f99620), 2);
+  _slicedToArray(react.useState(f116339), 2);
   if (null != stateFromStores1) {
     const _Date = Date;
     const self = this;
@@ -104,4 +296,29 @@ export const useRequestHarvestStatus = function useRequestHarvestStatus() {
     obj6 = { allowed: false, reason: "not_verified" };
   }
   return obj6;
+});
+const result = size.fileFinishedImporting("modules/harvester/HarvesterUtils.tsx");
+
+export const harvestDisabled = function harvestDisabled(created_at, stateFromStores) {
+  const verified = stateFromStores.verified;
+  let tmp = !verified;
+  if (verified) {
+    let isStaffResult = stateFromStores.isStaff();
+    if (!isStaffResult) {
+      let tmp5 = null != created_at;
+      if (tmp5) {
+        const _Date = Date;
+        const _Date2 = Date;
+        const self = this;
+        const self2 = this;
+        const timestamp = Date.now();
+        const date = new Date(created_at.created_at);
+        tmp5 = REQUEST_DATA_LIMIT_MS > timestamp - date.getTime();
+      }
+      isStaffResult = tmp5;
+    }
+    tmp = isStaffResult;
+  }
+  return tmp;
 };
+export const useRequestHarvestStatus = tmp2;

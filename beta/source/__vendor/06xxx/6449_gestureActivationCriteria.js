@@ -13,7 +13,7 @@ export const gestureActivationCriteria = (direction) => {
   let gestureResponseDistance;
   let layout;
   let obj7;
-  let obj9;
+  let obj8;
   ({ gestureDirection, gestureResponseDistance, layout } = direction);
   direction = direction.direction;
   if (undefined === gestureResponseDistance) {
@@ -32,17 +32,17 @@ export const gestureActivationCriteria = (direction) => {
     const obj4 = { maxDeltaX: 15, minOffsetY: -5, hitSlop: obj5, enableTrackpadTwoFingerGesture: true };
     return obj4;
   } else {
-    let obj8;
+    let obj;
     const sum = -layout.width + gestureResponseDistance;
-    const obj = _mod6441;
-    if (1 === obj.getInvertedMultiplier(gestureDirection, "rtl" === direction)) {
+    const obj9 = _mod6441;
+    if (1 === obj9.getInvertedMultiplier(gestureDirection, "rtl" === direction)) {
       const obj6 = { minOffsetX: 5, maxDeltaY: 20, hitSlop: obj7, enableTrackpadTwoFingerGesture: true };
-      obj8 = obj6;
+      obj = obj6;
       obj7 = { right: sum };
     } else {
-      obj8 = { minOffsetX: -5, maxDeltaY: 20, hitSlop: obj9, enableTrackpadTwoFingerGesture: true };
-      obj9 = { left: sum };
+      obj = { minOffsetX: -5, maxDeltaY: 20, hitSlop: obj8, enableTrackpadTwoFingerGesture: true };
+      obj8 = { left: sum };
     }
-    return obj8;
+    return obj;
   }
 };

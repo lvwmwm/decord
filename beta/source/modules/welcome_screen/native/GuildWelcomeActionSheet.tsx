@@ -1,34 +1,34 @@
-// Module ID: 12154
-// Function ID: 12155
+// Module ID: 12196
+// Function ID: 12197
 // Name: GuildWelcomeActionSheet
-// Dependencies: [19, 17, 5771, 2045, 2067, 4469, 12151, 12155, 1074, 1375, 1085, 21, 4836, 576, 5836, 504, 4989, 1101, 4800, 5899, 1397, 4483, 4832, 1177, 11282, 8053, 573, 12153, 1241, 6618, 12156, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 5772, 2051, 2073, 4472, 12193, 12197, 1086, 1381, 1097, 21, 4837, 588, 5837, 558, 576, 504, 4990, 1113, 4801, 1403, 5896, 4486, 4833, 1189, 11157, 8057, 585, 12195, 1253, 12127, 1127, 6624, 2]
 
-// Module 12154 (GuildWelcomeActionSheet)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import nativeDefault from "native" /* 576 */;
-import Constants2 from "Constants" /* 1085 */;
-import router_utils from "router_utils" /* 1101 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import EmojiConstants from "EmojiConstants" /* 1375 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import WelcomeScreenStore2 from "WelcomeScreenStore" /* 12151 */;
-import WelcomeScreenConstants from "WelcomeScreenConstants" /* 12155 */;
+// Module 12196 (GuildWelcomeActionSheet)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import nativeDefault from "native" /* 588 */;
+import Constants2 from "Constants" /* 1097 */;
+import router_utils from "router_utils" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import EmojiConstants from "EmojiConstants" /* 1381 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import WelcomeScreenStore2 from "WelcomeScreenStore" /* 12193 */;
+import WelcomeScreenConstants from "WelcomeScreenConstants" /* 12197 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmojiStore from "EmojiStore" /* 5771 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import Constants from "Constants" /* 1074 */;
+import EmojiStore_mod from "EmojiStore" /* 5772 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
-import TextStyles_mod from "TextStyles" /* 5836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import TextStyles_mod from "TextStyles" /* 5837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const WelcomeScreenStore = WelcomeScreenStore2;
-let c2, dependencyMap, has_custom_emojis;
+let c2, dependencyMap, guildId, has_custom_emojis, welcomeChannel;
 
 let Fonts;
 let closure_14;
@@ -43,87 +43,8 @@ let obj4;
 let obj5;
 let obj6;
 let size;
-class WelcomeChannelRow {
-  constructor(welcomeChannel) {
-    let Icon;
-    let obj12;
-    let obj5;
-    let obj6;
-    let obj9;
-    let tmp12Result;
-    let tmp5Result4;
-    welcomeChannel = welcomeChannel.welcomeChannel;
-    const trackOptionSelect = welcomeChannel.trackOptionSelect;
-    let stateFromStores;
-    const tmp = closure_19();
-    let obj = welcomeChannel(stateFromStores[15]);
-    const items = [ChannelStore];
-    stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(welcomeChannel.channel_id));
-    const tmp6 = trackOptionSelect(stateFromStores[16])(stateFromStores, true);
-    let obj2 = welcomeChannel(stateFromStores[15]);
-    const items1 = [PermissionStore];
-    const stateFromStores1 = obj2.useStateFromStores(items1, () => {
-      const canResult = null != stateFromStores && PermissionStore.can(Permissions.VIEW_CHANNEL, tmp);
-      return canResult;
-    });
-    const items2 = [EmojiStore];
-    const items3 = [welcomeChannel.emoji_id];
-    const obj3 = welcomeChannel(stateFromStores[15]);
-    const stateFromStores2 = obj3.useStateFromStores(items2, () => {
-      let customEmojiById = null;
-      if (null != welcomeChannel.emoji_id) {
-        customEmojiById = EmojiStore.getCustomEmojiById(tmp.emoji_id);
-      }
-      return customEmojiById;
-    }, items3);
-    const items4 = [stateFromStores, trackOptionSelect];
-    let tmp12Result2 = null;
-    if (null != stateFromStores) {
-      tmp12Result2 = null;
-      if (stateFromStores1) {
-        let tmp14;
-        let tmp12;
-        if (null != stateFromStores2) {
-          const obj4 = { style: tmp.emoji, source: obj5, resizeMode: "contain" };
-          obj5 = { uri: tmp5Result4.getEmojiURL(obj6) };
-          obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
-          ({ id: obj11.id, animated: obj11.animated } = stateFromStores2);
-          const tmp5Result = trackOptionSelect(stateFromStores[19]);
-          tmp5Result4 = trackOptionSelect(stateFromStores[20]);
-          tmp14 = closure_17(tmp5Result, obj4);
-          tmp12 = closure_17;
-        } else {
-          if (null != welcomeChannel.emoji_name) {
-            const getByName = tmp5(tmp3[21]).getByName;
-            trackOptionSelect(stateFromStores[21]);
-            const tmp5Result6 = trackOptionSelect(stateFromStores[21]);
-            if (null != getByName(tmp5Result6.convertSurrogateToName(welcomeChannel.emoji_name, false))) {
-              const obj7 = { style: tmp.emoji, variant: "text-sm/medium", children: welcomeChannel.emoji_name };
-              tmp14 = closure_17(tmp2(tmp3[22]).Text, obj7);
-              tmp12 = closure_17;
-            }
-          }
-          tmp12 = closure_17;
-          const obj8 = { style: tmp.placeholderEmojiWrapper, children: closure_17(Icon, obj9) };
-          obj9 = { size: welcomeChannel(stateFromStores[23]).Icon.Sizes.REFRESH_SMALL_16, source: trackOptionSelect(stateFromStores[24]) };
-          Icon = tmp2(tmp3[23]).Icon;
-          tmp14 = closure_17(closure_4, obj8);
-        }
-        const obj10 = { DEPRECATED_style: tmp.welcomeChannel, leading: tmp14, label: tmp12(welcomeChannel(stateFromStores[22]).Text, obj12), subLabel: tmp12Result, onPress: tmp9, trailing: tmp12(welcomeChannel(stateFromStores[25]).FormRow.Arrow, {}) };
-        const FormRow = tmp2(tmp3[25]).FormRow;
-        tmp12Result = null;
-        obj12 = { variant: "text-sm/semibold", color: "interactive-text-active", children: welcomeChannel.description };
-        if (null != stateFromStores) {
-          const obj13 = { variant: "text-sm/medium", color: "text-default", children: tmp6 };
-          tmp12Result = tmp12(tmp2(tmp3[22]).Text, obj13);
-        }
-        tmp12Result2 = tmp12(FormRow, obj10);
-      }
-    }
-    return tmp12Result2;
-  }
-}
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
+let EmojiStore = EmojiStore_mod;
 const NO_WELCOME_SCREEN = WelcomeScreenStore2.NO_WELCOME_SCREEN;
 const WELCOME_SCREEN_TYPE = WelcomeScreenConstants.WELCOME_SCREEN_TYPE;
 ({ AnalyticEvents: map1, Fonts, Routes: closure_14 } = Constants);
@@ -144,10 +65,567 @@ const merged1 = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.
 obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginTop: 8, borderRadius: nativeDefault.radii.sm };
 obj6 = { padding: 4, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs };
 let closure_19 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/welcome_screen/native/GuildWelcomeActionSheet.tsx");
-
-export default function GuildWelcomeActionSheet(guildId) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((welcomeChannel) => {
+  let first;
+  let stateFromStores;
+  let tmp10;
+  let tmp12;
+  let tmp14;
+  let tmp16;
+  let tmp17;
+  let tmp7;
+  const tmp = welcomeChannel;
+  let obj = welcomeChannel(stateFromStores[16]);
+  const cResult = obj.c(39);
+  welcomeChannel = welcomeChannel.welcomeChannel;
+  const trackOptionSelect = welcomeChannel.trackOptionSelect;
+  closure_19();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== welcomeChannel.channel_id) {
+    const fn = function o() {
+      return ChannelStore.getChannel(welcomeChannel.channel_id);
+    };
+    cResult[1] = welcomeChannel.channel_id;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(stateFromStores[17]);
+  stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  trackOptionSelect(stateFromStores[18])(stateFromStores, true);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [PermissionStore];
+    cResult[3] = items1;
+    tmp10 = items1;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] !== stateFromStores) {
+    const fn2 = function p() {
+      const canResult = null != stateFromStores && PermissionStore.can(Permissions.VIEW_CHANNEL, tmp);
+      return canResult;
+    };
+    cResult[4] = stateFromStores;
+    cResult[5] = fn2;
+    tmp12 = fn2;
+  } else {
+    tmp12 = cResult[5];
+  }
+  const tmpResult3 = tmp(stateFromStores[17]);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp10, tmp12);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [EmojiStore];
+    cResult[6] = items2;
+    tmp14 = items2;
+  } else {
+    tmp14 = cResult[6];
+  }
+  if (cResult[7] !== welcomeChannel.emoji_id) {
+    class A {
+      constructor() {
+        let customEmojiById = null;
+        if (null != welcomeChannel.emoji_id) {
+          customEmojiById = EmojiStore.getCustomEmojiById(tmp.emoji_id);
+        }
+        return customEmojiById;
+      }
+    }
+    const items3 = [welcomeChannel.emoji_id];
+    cResult[7] = welcomeChannel.emoji_id;
+    cResult[8] = A;
+    cResult[9] = items3;
+    tmp17 = items3;
+    tmp16 = A;
+  } else {
+    class A {
+      constructor() {
+        let customEmojiById = null;
+        if (null != welcomeChannel.emoji_id) {
+          customEmojiById = EmojiStore.getCustomEmojiById(tmp.emoji_id);
+        }
+        return customEmojiById;
+      }
+    }
+    tmp17 = cResult[9];
+  }
+  const tmpResult4 = tmp(stateFromStores[17]);
+  const stateFromStores2 = tmpResult4.useStateFromStores(tmp14, tmp16, tmp17);
+  if (cResult[10] === stateFromStores) {
+    class A {
+      constructor() {
+        let customEmojiById = null;
+        if (null != welcomeChannel.emoji_id) {
+          customEmojiById = EmojiStore.getCustomEmojiById(tmp.emoji_id);
+        }
+        return customEmojiById;
+      }
+    }
+    if (null != stateFromStores) {
+      class A {
+        constructor() {
+          let customEmojiById = null;
+          if (null != welcomeChannel.emoji_id) {
+            customEmojiById = EmojiStore.getCustomEmojiById(tmp.emoji_id);
+          }
+          return customEmojiById;
+        }
+      }
+    }
+    return null;
+  }
+  class I {
+    constructor() {
+      if (null != stateFromStores) {
+        trackOptionSelect();
+        const obj = router_utils;
+        obj.transitionTo(authStore2.CHANNEL(stateFromStores.guild_id, stateFromStores.id));
+        const obj2 = ActionSheetActionCreatorsDefault;
+        obj2.hideActionSheet();
+      }
+    }
+  }
+  cResult[10] = stateFromStores;
+  cResult[11] = trackOptionSelect;
+  cResult[12] = I;
+}) : ((welcomeChannel) => {
+  let Icon;
+  let obj12;
+  let obj5;
+  let obj6;
+  let obj9;
+  let tmp12Result;
+  let tmp5Result4;
+  welcomeChannel = welcomeChannel.welcomeChannel;
+  const trackOptionSelect = welcomeChannel.trackOptionSelect;
+  let stateFromStores;
+  const tmp = closure_19();
+  let obj = welcomeChannel(stateFromStores[17]);
+  const items = [ChannelStore];
+  stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(welcomeChannel.channel_id));
+  const tmp6 = trackOptionSelect(stateFromStores[18])(stateFromStores, true);
+  let obj2 = welcomeChannel(stateFromStores[17]);
+  const items1 = [PermissionStore];
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
+    const canResult = null != stateFromStores && PermissionStore.can(Permissions.VIEW_CHANNEL, tmp);
+    return canResult;
+  });
+  const items2 = [EmojiStore];
+  const items3 = [welcomeChannel.emoji_id];
+  const obj3 = welcomeChannel(stateFromStores[17]);
+  const stateFromStores2 = obj3.useStateFromStores(items2, () => {
+    let customEmojiById = null;
+    if (null != welcomeChannel.emoji_id) {
+      customEmojiById = EmojiStore.getCustomEmojiById(tmp.emoji_id);
+    }
+    return customEmojiById;
+  }, items3);
+  const items4 = [stateFromStores, trackOptionSelect];
+  let tmp12Result2 = null;
+  if (null != stateFromStores) {
+    tmp12Result2 = null;
+    if (stateFromStores1) {
+      let tmp14;
+      let tmp12;
+      if (null != stateFromStores2) {
+        const obj4 = { style: tmp.emoji, source: obj5, resizeMode: "contain" };
+        obj5 = { uri: tmp5Result4.getEmojiURL(obj6) };
+        obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
+        ({ id: obj11.id, animated: obj11.animated } = stateFromStores2);
+        const tmp5Result = trackOptionSelect(stateFromStores[22]);
+        tmp5Result4 = trackOptionSelect(stateFromStores[21]);
+        tmp14 = closure_17(tmp5Result, obj4);
+        tmp12 = closure_17;
+      } else {
+        if (null != welcomeChannel.emoji_name) {
+          const getByName = tmp5(tmp3[23]).getByName;
+          trackOptionSelect(stateFromStores[23]);
+          const tmp5Result6 = trackOptionSelect(stateFromStores[23]);
+          if (null != getByName(tmp5Result6.convertSurrogateToName(welcomeChannel.emoji_name, false))) {
+            const obj7 = { style: tmp.emoji, variant: "text-sm/medium", children: welcomeChannel.emoji_name };
+            tmp14 = closure_17(tmp2(tmp3[24]).Text, obj7);
+            tmp12 = closure_17;
+          }
+        }
+        tmp12 = closure_17;
+        const obj8 = { style: tmp.placeholderEmojiWrapper, children: closure_17(Icon, obj9) };
+        obj9 = { size: welcomeChannel(stateFromStores[25]).Icon.Sizes.REFRESH_SMALL_16, source: trackOptionSelect(stateFromStores[26]) };
+        Icon = tmp2(tmp3[25]).Icon;
+        tmp14 = closure_17(closure_4, obj8);
+      }
+      const obj10 = { DEPRECATED_style: tmp.welcomeChannel, leading: tmp14, label: tmp12(welcomeChannel(stateFromStores[24]).Text, obj12), subLabel: tmp12Result, onPress: tmp9, trailing: tmp12(welcomeChannel(stateFromStores[27]).FormRow.Arrow, {}) };
+      const FormRow = tmp2(tmp3[27]).FormRow;
+      tmp12Result = null;
+      obj12 = { variant: "text-sm/semibold", color: "interactive-text-active", children: welcomeChannel.description };
+      if (null != stateFromStores) {
+        const obj13 = { variant: "text-sm/medium", color: "text-default", children: tmp6 };
+        tmp12Result = tmp12(tmp2(tmp3[24]).Text, obj13);
+      }
+      tmp12Result2 = tmp12(FormRow, obj10);
+    }
+  }
+  return tmp12Result2;
+});
+let closure_20 = tmp10;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let closure_6;
+  let first;
+  let tmp11;
+  let tmp31;
+  let tmp7;
+  let tmp9;
+  let tmp = guildId;
+  let obj = guildId(576);
+  const cResult = obj.c(58);
+  guildId = guildId.guildId;
+  const onHide = guildId.onHide;
+  dependencyMap = closure_19();
+  const tmp4 = closure_19();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function c() {
+      return GuildStore.getGuild(guildId);
+    };
+    cResult[1] = guildId;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    let items1 = [WelcomeScreenStore];
+    cResult[3] = items1;
+    tmp9 = items1;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] !== guildId) {
+    const fn2 = function j() {
+      const obj = { welcomeScreen: WelcomeScreenStore.get(guildId), fetching: WelcomeScreenStore.isFetching(), hasError: WelcomeScreenStore.hasError() };
+      return obj;
+    };
+    cResult[4] = guildId;
+    cResult[5] = fn2;
+    tmp11 = fn2;
+  } else {
+    tmp11 = cResult[5];
+  }
+  const tmpResult2 = tmp(504);
+  const stateFromStoresObject = tmpResult2.useStateFromStoresObject(tmp9, tmp11);
+  const welcomeScreen = stateFromStoresObject.welcomeScreen;
+  const fetching = stateFromStoresObject.fetching;
+  const hasError = stateFromStoresObject.hasError;
+  if (cResult[6] === guildId) {
+    let tmp13;
+    let tmp14;
+    if (cResult[7] === welcomeScreen) {
+      tmp13 = cResult[8];
+      tmp14 = cResult[9];
+    }
+    const effect = welcomeScreen.useEffect(tmp13, tmp14);
+    if (cResult[10] === fetching) {
+      let tmp16;
+      let tmp17;
+      if (cResult[11] === hasError) {
+        tmp16 = cResult[12];
+        tmp17 = cResult[13];
+      }
+      const effect1 = obj4.useEffect(tmp16, tmp17);
+      if (cResult[14] === guildId) {
+        let tmp19;
+        let tmp20;
+        let tmp28;
+        let tmp29;
+        if (cResult[15] === welcomeScreen) {
+          tmp19 = cResult[16];
+          tmp20 = cResult[17];
+        }
+        const effect2 = obj4.useEffect(tmp20, tmp19);
+        if (cResult[18] !== welcomeScreen) {
+          class D {
+            constructor() {
+              if (welcomeScreen === NO_WELCOME_SCREEN) {
+                const obj = ActionSheetActionCreatorsDefault;
+                obj.hideActionSheet();
+              }
+            }
+          }
+          const items2 = [welcomeScreen];
+          class O {
+            constructor() {
+              if (null != welcomeScreen) {
+                let obj = DispatcherDefault;
+                obj.wait(() => {
+                  const obj = guildId(has_custom_emojis[29]);
+                  return obj.welcomeScreenViewed(closure_1_0);
+                });
+              }
+            }
+          }
+          class R {
+            constructor() {
+              const tmp = false === fetching && true === hasError;
+              if (tmp) {
+                const obj = ActionSheetActionCreatorsDefault;
+                obj.hideActionSheet();
+              }
+            }
+          }
+          cResult[19] = D;
+          cResult[20] = items2;
+          class G {
+            constructor(index) {
+              if (null != welcomeScreen) {
+                const items = [];
+                const items1 = [];
+                has_custom_emojis = false;
+                const welcome_channels = tmp.welcome_channels;
+                const item = welcome_channels.forEach((description) => {
+                  items.push(description.description);
+                  items1.push(description.channel_id);
+                  if (null != description.emoji_id) {
+                    c2 = true;
+                  }
+                });
+                const obj2 = { index, guild_id: guildId, options: items, options_channel_ids: items1, guild_description: welcomeScreen.description, has_custom_emojis };
+                const obj = AnalyticsUtilsDefault;
+                obj.track(map1.GUILD_WELCOME_SCREEN_OPTION_SELECTED, obj2);
+              }
+            }
+          }
+        } else {
+          class D {
+            constructor() {
+              if (welcomeScreen === NO_WELCOME_SCREEN) {
+                const obj = ActionSheetActionCreatorsDefault;
+                obj.hideActionSheet();
+              }
+            }
+          }
+        }
+        class O {
+          constructor() {
+            if (null != welcomeScreen) {
+              let obj = DispatcherDefault;
+              obj.wait(() => {
+                const obj = guildId(has_custom_emojis[29]);
+                return obj.welcomeScreenViewed(closure_1_0);
+              });
+            }
+          }
+        }
+        class R {
+          constructor() {
+            const tmp = false === fetching && true === hasError;
+            if (tmp) {
+              const obj = ActionSheetActionCreatorsDefault;
+              obj.hideActionSheet();
+            }
+          }
+        }
+        const effect3 = obj4.useEffect(tmp25, tmp26);
+        if (cResult[24] !== onHide) {
+          class W {
+            constructor() {
+              return () => {
+                if (onHide != null) {
+                  tmp();
+                }
+              };
+            }
+          }
+          const items3 = [onHide];
+          class O {
+            constructor() {
+              if (null != welcomeScreen) {
+                let obj = DispatcherDefault;
+                obj.wait(() => {
+                  const obj = guildId(has_custom_emojis[29]);
+                  return obj.welcomeScreenViewed(closure_1_0);
+                });
+              }
+            }
+          }
+          class R {
+            constructor() {
+              const tmp = false === fetching && true === hasError;
+              if (tmp) {
+                const obj = ActionSheetActionCreatorsDefault;
+                obj.hideActionSheet();
+              }
+            }
+          }
+          cResult[25] = W;
+          cResult[26] = items3;
+          class G {
+            constructor(index) {
+              if (null != welcomeScreen) {
+                const items = [];
+                const items1 = [];
+                has_custom_emojis = false;
+                const welcome_channels = tmp.welcome_channels;
+                const item = welcome_channels.forEach((description) => {
+                  items.push(description.description);
+                  items1.push(description.channel_id);
+                  if (null != description.emoji_id) {
+                    c2 = true;
+                  }
+                });
+                const obj2 = { index, guild_id: guildId, options: items, options_channel_ids: items1, guild_description: welcomeScreen.description, has_custom_emojis };
+                const obj = AnalyticsUtilsDefault;
+                obj.track(map1.GUILD_WELCOME_SCREEN_OPTION_SELECTED, obj2);
+              }
+            }
+          }
+          tmp28 = W;
+        } else {
+          class W {
+            constructor() {
+              return () => {
+                if (onHide != null) {
+                  tmp();
+                }
+              };
+            }
+          }
+          tmp29 = cResult[26];
+        }
+        const effect4 = obj4.useEffect(tmp28, tmp29);
+        if (cResult[27] === guildId) {
+          class W {
+            constructor() {
+              return () => {
+                if (onHide != null) {
+                  tmp();
+                }
+              };
+            }
+          }
+          EmojiStore = tmp31;
+          class O {
+            constructor() {
+              if (null != welcomeScreen) {
+                let obj = DispatcherDefault;
+                obj.wait(() => {
+                  const obj = guildId(has_custom_emojis[29]);
+                  return obj.welcomeScreenViewed(closure_1_0);
+                });
+              }
+            }
+          }
+          class R {
+            constructor() {
+              const tmp = false === fetching && true === hasError;
+              if (tmp) {
+                const obj = ActionSheetActionCreatorsDefault;
+                obj.hideActionSheet();
+              }
+            }
+          }
+        }
+        class G {
+          constructor(index) {
+            if (null != welcomeScreen) {
+              const items = [];
+              const items1 = [];
+              has_custom_emojis = false;
+              const welcome_channels = tmp.welcome_channels;
+              const item = welcome_channels.forEach((description) => {
+                items.push(description.description);
+                items1.push(description.channel_id);
+                if (null != description.emoji_id) {
+                  c2 = true;
+                }
+              });
+              const obj2 = { index, guild_id: guildId, options: items, options_channel_ids: items1, guild_description: welcomeScreen.description, has_custom_emojis };
+              const obj = AnalyticsUtilsDefault;
+              obj.track(map1.GUILD_WELCOME_SCREEN_OPTION_SELECTED, obj2);
+            }
+          }
+        }
+        cResult[27] = guildId;
+        cResult[28] = welcomeScreen;
+        cResult[29] = G;
+        tmp31 = G;
+      }
+      class O {
+        constructor() {
+          if (null != welcomeScreen) {
+            let obj = DispatcherDefault;
+            obj.wait(() => {
+              const obj = guildId(has_custom_emojis[29]);
+              return obj.welcomeScreenViewed(closure_1_0);
+            });
+          }
+        }
+      }
+      class R {
+        constructor() {
+          const tmp = false === fetching && true === hasError;
+          if (tmp) {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet();
+          }
+        }
+      }
+      tmp21[0] = guildId;
+      tmp21[1] = welcomeScreen;
+      cResult[14] = guildId;
+      cResult[15] = welcomeScreen;
+      cResult[16] = tmp21;
+      cResult[17] = O;
+      tmp20 = O;
+      tmp19 = tmp21;
+    }
+    class R {
+      constructor() {
+        const tmp = false === fetching && true === hasError;
+        if (tmp) {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet();
+        }
+      }
+    }
+    const items4 = [fetching, hasError];
+    cResult[11] = hasError;
+    cResult[12] = R;
+    cResult[13] = items4;
+    tmp17 = items4;
+    tmp16 = R;
+  }
+  const fn3 = function v() {
+    if (null == welcomeScreen) {
+      let obj = DispatcherDefault;
+      obj.wait(() => {
+        const obj = guildId(has_custom_emojis[29]);
+        return obj.fetchWelcomeScreen(closure_1_0);
+      });
+    }
+  };
+  const items5 = [guildId, welcomeScreen];
+  cResult[6] = guildId;
+  cResult[7] = welcomeScreen;
+  cResult[8] = fn3;
+  cResult[9] = items5;
+  tmp14 = items5;
+  tmp13 = fn3;
+}) : ((guildId) => {
   let intl;
   let items9;
   let obj4;
@@ -174,7 +652,7 @@ export default function GuildWelcomeActionSheet(guildId) {
     if (null == welcomeScreen) {
       let obj = DispatcherDefault;
       obj.wait(() => {
-        const obj = guildId(has_custom_emojis[27]);
+        const obj = guildId(has_custom_emojis[29]);
         return obj.fetchWelcomeScreen(closure_1_0);
       });
     }
@@ -192,7 +670,7 @@ export default function GuildWelcomeActionSheet(guildId) {
     if (null != welcomeScreen) {
       let obj = DispatcherDefault;
       obj.wait(() => {
-        const obj = guildId(has_custom_emojis[27]);
+        const obj = guildId(has_custom_emojis[29]);
         return obj.welcomeScreenViewed(closure_1_0);
       });
     }
@@ -241,13 +719,13 @@ export default function GuildWelcomeActionSheet(guildId) {
     if (null != welcomeScreen) {
       const obj3 = { startExpanded: true, children: closure_18(hasError, obj4) };
       obj4 = { contentContainerStyle: tmp.container, children: items9 };
-      const ActionSheet = tmp2(6618).ActionSheet;
-      const obj5 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(12156).Sizes.MEDIUM, textScale: 2 };
-      const tmp17 = onHide(12156);
+      const ActionSheet = tmp2(6624).ActionSheet;
+      const obj5 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(12127).Sizes.MEDIUM, textScale: 2 };
+      const tmp17 = onHide(12127);
       items9 = [closure_17(tmp17, obj5), , , , ];
-      const obj6 = { style: tmp.header, variant: "heading-xl/extrabold", color: "text-default", children: intl.format(guildId(1115).t["0aydCN"], obj7) };
-      const Text = tmp2(4832).Text;
-      intl = tmp2(1115).intl;
+      const obj6 = { style: tmp.header, variant: "heading-xl/extrabold", color: "text-default", children: intl.format(guildId(1127).t["0aydCN"], obj7) };
+      const Text = tmp2(4833).Text;
+      intl = tmp2(1127).intl;
       obj7 = {
         guildName: stateFromStores.name,
         guildNameHook(children, arg1) {
@@ -257,11 +735,11 @@ export default function GuildWelcomeActionSheet(guildId) {
       };
       items9[1] = closure_17(Text, obj6);
       const obj8 = { style: tmp.guildDescription, variant: "text-sm/medium", color: "text-default", children: welcomeScreen.description };
-      items9[2] = closure_17(guildId(4832).Text, obj8);
+      items9[2] = closure_17(guildId(4833).Text, obj8);
       const obj9 = { style: tmp.channelsTitle, variant: "eyebrow", color: "text-default", children: str.toUpperCase() };
-      const Text2 = tmp2(4832).Text;
-      const intl2 = tmp2(1115).intl;
-      str = intl2.string(guildId(1115).t["haj5+i"]);
+      const Text2 = tmp2(4833).Text;
+      const intl2 = tmp2(1127).intl;
+      str = intl2.string(guildId(1127).t["haj5+i"]);
       items9[3] = closure_17(Text2, obj9);
       let welcome_channels = welcomeScreen.welcome_channels;
       items9[4] = welcome_channels.map((welcomeChannel, index) => {
@@ -272,11 +750,15 @@ export default function GuildWelcomeActionSheet(guildId) {
             return closure_6(index);
           }
         };
-        return closure_1_17(WelcomeChannelRow, obj, index);
+        return closure_1_17(closure_1_20, obj, index);
       });
       tmp12 = closure_17(ActionSheet, obj3);
     }
   }
   return tmp12;
-};
-export { WelcomeChannelRow };
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/welcome_screen/native/GuildWelcomeActionSheet.tsx");
+
+export default tmp11;
+export const WelcomeChannelRow = tmp10;

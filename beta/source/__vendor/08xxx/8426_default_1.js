@@ -1,11 +1,11 @@
 // Module ID: 8426
 // Function ID: 8427
 // Name: default_1
-// Dependencies: [8403]
+// Dependencies: [8400]
 // Exports: default
 
 // Module 8426 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 8403 */;
+import captureStackTrace2 from "captureStackTrace" /* 8400 */;
 
 let hasOwnProperty;
 
@@ -109,10 +109,10 @@ export default function default_1() {
               const obj = /^[A-Z]/;
               if (obj.test(code.expected)) {
                 const _HermesInternal17 = HermesInternal;
-                combined = "\u00C9rv\u00E9nytelen bemenet: a v\u00E1rt \u00E9rt\u00E9k instanceof " + code.expected + ", a kapott \u00E9rt\u00E9k " + tmp48;
+                combined = "Rangt gildi: \u00DE\u00FA sl\u00F3st inn " + tmp48 + " \u00FEar sem \u00E1 a\u00F0 vera instanceof " + code.expected;
               } else {
                 const _HermesInternal16 = HermesInternal;
-                combined = "\u00C9rv\u00E9nytelen bemenet: a v\u00E1rt \u00E9rt\u00E9k " + expected + ", a kapott \u00E9rt\u00E9k " + tmp48;
+                combined = "Rangt gildi: \u00DE\u00FA sl\u00F3st inn " + tmp48 + " \u00FEar sem \u00E1 a\u00F0 vera " + expected;
               }
               return combined;
             }
@@ -121,38 +121,38 @@ export default function default_1() {
               let combined1;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "\u00C9rv\u00E9nytelen bemenet: a v\u00E1rt \u00E9rt\u00E9k " + captureStackTrace.stringifyPrimitive(code.values[0]);
+                combined1 = "Rangt gildi: gert r\u00E1\u00F0 fyrir " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "\u00C9rv\u00E9nytelen opci\u00F3: valamelyik \u00E9rt\u00E9k v\u00E1rt " + captureStackTrace.joinValues(code.values, "|");
+                combined1 = "\u00D3gilt val: m\u00E1 vera eitt af eftirfarandi " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
             case "too_big":
             {
               let combined2;
-              let str26 = "<";
+              let str24 = "<";
               if (code.inclusive) {
-                str26 = "<=";
+                str24 = "<=";
               }
-              let str27 = code.origin;
+              let str25 = code.origin;
               if (obj2[code.origin] ?? null) {
-                if (str27 == null) {
-                  str27 = "\u00E9rt\u00E9k";
+                if (str25 == null) {
+                  str25 = "gildi";
                 }
-                const str32 = code.maximum;
+                const str30 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
-                const str1 = str32.toString();
-                const str33 = (obj2[code.origin] ?? null).unit ?? "elem";
-                combined2 = "T\u00FAl nagy: " + str27 + " m\u00E9rete t\u00FAl nagy " + str26 + str1 + " " + str33;
+                const str1 = str30.toString();
+                const str31 = (obj2[code.origin] ?? null).unit ?? "hluti";
+                combined2 = "Of st\u00F3rt: gert er r\u00E1\u00F0 fyrir a\u00F0 " + str25 + " hafi " + str24 + str1 + " " + str31;
               } else {
-                let str28 = str27;
-                if (str27 == null) {
-                  str28 = "\u00E9rt\u00E9k";
+                let str26 = str25;
+                if (str25 == null) {
+                  str26 = "gildi";
                 }
                 const _HermesInternal12 = HermesInternal;
-                const str29 = code.maximum;
-                combined2 = "T\u00FAl nagy: a bemeneti \u00E9rt\u00E9k " + str28 + " t\u00FAl nagy: " + str26 + str29.toString();
+                const str27 = code.maximum;
+                combined2 = "Of st\u00F3rt: gert er r\u00E1\u00F0 fyrir a\u00F0 " + str26 + " s\u00E9 " + str24 + str27.toString();
               }
               return combined2;
             }
@@ -161,18 +161,18 @@ export default function default_1() {
               let combined3;
               let minimum;
               let origin;
-              let str20 = ">";
+              let str18 = ">";
               if (code.inclusive) {
-                str20 = ">=";
+                str18 = ">=";
               }
               ({ origin, minimum } = code);
-              const str47 = minimum.toString();
+              const str45 = minimum.toString();
               if (obj2[code.origin] ?? null) {
                 const _HermesInternal11 = HermesInternal;
-                combined3 = "T\u00FAl kicsi: a bemeneti \u00E9rt\u00E9k " + origin + " m\u00E9rete t\u00FAl kicsi " + str20 + str47 + " " + tmp15.unit;
+                combined3 = "Of l\u00EDti\u00F0: gert er r\u00E1\u00F0 fyrir a\u00F0 " + origin + " hafi " + str18 + str45 + " " + tmp15.unit;
               } else {
                 const _HermesInternal10 = HermesInternal;
-                combined3 = "T\u00FAl kicsi: a bemeneti \u00E9rt\u00E9k " + origin + " t\u00FAl kicsi " + str20 + str47;
+                combined3 = "Of l\u00EDti\u00F0: gert er r\u00E1\u00F0 fyrir a\u00F0 " + origin + " s\u00E9 " + str18 + str45;
               }
               return combined3;
             }
@@ -181,61 +181,61 @@ export default function default_1() {
               let combined4;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "\u00C9rv\u00E9nytelen string: \"" + code.prefix + "\" \u00E9rt\u00E9kkel kell kezd\u0151dnie";
+                combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 byrja \u00E1 \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "\u00C9rv\u00E9nytelen string: \"" + code.suffix + "\" \u00E9rt\u00E9kkel kell v\u00E9gz\u0151dnie";
+                combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 enda \u00E1 \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "\u00C9rv\u00E9nytelen string: \"" + code.includes + "\" \u00E9rt\u00E9ket kell tartalmaznia";
+                combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 innihalda \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "\u00C9rv\u00E9nytelen string: " + code.pattern + " mint\u00E1nak kell megfelelnie";
+                combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 fylgja mynstri " + code.pattern;
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "\u00C9rv\u00E9nytelen " + format;
+                combined4 = "Rangt " + format;
               }
               return combined4;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "\u00C9rv\u00E9nytelen sz\u00E1m: " + code.divisor + " t\u00F6bbsz\u00F6r\u00F6s\u00E9nek kell lennie";
+              return "R\u00F6ng tala: ver\u00F0ur a\u00F0 vera margfeldi af " + code.divisor;
             }
             case "unrecognized_keys":
             {
-              let str3 = "";
+              let str3 = "ur lykill";
               if (code.keys.length > 1) {
-                str3 = "s";
+                str3 = "ir lyklar";
               }
               const _HermesInternal3 = HermesInternal;
-              return "Ismeretlen kulcs" + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
+              return "\u00D3\u00FEekkt " + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
               const _HermesInternal2 = HermesInternal;
-              return "\u00C9rv\u00E9nytelen kulcs " + code.origin;
+              return "Rangur lykill \u00ED " + code.origin;
             }
             case "invalid_union":
             {
-              return "\u00C9rv\u00E9nytelen bemenet";
+              return "Rangt gildi";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "\u00C9rv\u00E9nytelen \u00E9rt\u00E9k: " + code.origin;
+              return "Rangt gildi \u00ED " + code.origin;
             }
             default:
             {
-              return "\u00C9rv\u00E9nytelen bemenet";
+              return "Rangt gildi";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "karakter", verb: "legyen" }, file: { unit: "byte", verb: "legyen" }, array: { unit: "elem", verb: "legyen" }, set: { unit: "elem", verb: "legyen" } };
-    closure_1 = { regex: "bemenet", email: "email c\u00EDm", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO id\u0151b\u00E9lyeg", date: "ISO d\u00E1tum", time: "ISO id\u0151", duration: "ISO id\u0151intervallum", ipv4: "IPv4 c\u00EDm", ipv6: "IPv6 c\u00EDm", cidrv4: "IPv4 tartom\u00E1ny", cidrv6: "IPv6 tartom\u00E1ny", base64: "base64-k\u00F3dolt string", base64url: "base64url-k\u00F3dolt string", json_string: "JSON string", e164: "E.164 sz\u00E1m", jwt: "JWT", template_literal: "bemenet" };
-    let closure_2 = { nan: "NaN", number: "sz\u00E1m", array: "t\u00F6mb" };
+    const obj2 = { string: { unit: "stafi", verb: "a\u00F0 hafa" }, file: { unit: "b\u00E6ti", verb: "a\u00F0 hafa" }, array: { unit: "hluti", verb: "a\u00F0 hafa" }, set: { unit: "hluti", verb: "a\u00F0 hafa" } };
+    closure_1 = { regex: "gildi", email: "netfang", url: "vefsl\u00F3\u00F0", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO dagsetning og t\u00EDmi", date: "ISO dagsetning", time: "ISO t\u00EDmi", duration: "ISO t\u00EDmalengd", ipv4: "IPv4 address", ipv6: "IPv6 address", cidrv4: "IPv4 range", cidrv6: "IPv6 range", base64: "base64-encoded strengur", base64url: "base64url-encoded strengur", json_string: "JSON strengur", e164: "E.164 t\u00F6lugildi", jwt: "JWT", template_literal: "gildi" };
+    let closure_2 = { nan: "NaN", number: "n\u00FAmer", array: "fylki" };
     return obj;
   } else {
     throw new TypeError("Trying to call a non-function");

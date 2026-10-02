@@ -1,14 +1,14 @@
-// Module ID: 6823
-// Function ID: 6824
+// Module ID: 6824
+// Function ID: 6825
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 4494, 1074, 1374, 5204, 1115, 1241, 5174, 6824, 6829, 6661, 6830, 6831, 4488, 2]
+// Dependencies: [5, 4497, 1086, 1380, 5205, 1127, 1253, 5175, 6825, 6830, 6662, 6831, 6832, 4491, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 6823 (GuildBoostPurchasingUtils)
+// Module 6824 (GuildBoostPurchasingUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 4494 */;
-import Constants from "Constants" /* 1074 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+import SubscriptionStore from "SubscriptionStore" /* 4497 */;
+import Constants from "Constants" /* 1086 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
 import size from "module_2" /* 2 */;
 
 let analyticsLocation, analyticsLocations, guildId, onBack, onPaymentDismiss, onPaymentSuccess;
@@ -54,7 +54,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -87,7 +87,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               mobileBoostingEnabled = undefined;
               onPaymentDismiss = 1;
               c6 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else {
             if (1 === onPaymentDismiss) {
@@ -123,7 +123,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                   }
                 }
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               } else {
                 let obj2 = closure_131_0(closure_131_2[7]);
                 onPaymentDismiss = 2;

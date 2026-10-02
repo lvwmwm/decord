@@ -1,11 +1,11 @@
-// Module ID: 13525
-// Function ID: 13526
+// Module ID: 13527
+// Function ID: 13528
 // Name: openActivityDMLauncher
-// Dependencies: [5, 1484, 6584, 4849, 12496, 10741, 6603, 6943, 4701, 1611, 2]
+// Dependencies: [5, 1490, 6585, 4850, 12498, 10705, 6604, 6947, 4703, 1617, 2]
 // Exports: default
 
-// Module 13525 (openActivityDMLauncher)
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1484 */;
+// Module 13527 (openActivityDMLauncher)
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1490 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = function _openActivityDMLauncher() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -61,7 +61,7 @@ let obj = function _openActivityDMLauncher() {
               customId = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -156,7 +156,7 @@ let obj = function _openActivityDMLauncher() {
               return { value, done: true };
             }
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp49) {
           c8 = 3;

@@ -1,29 +1,77 @@
-// Module ID: 14710
-// Function ID: 14711
+// Module ID: 14698
+// Function ID: 14699
 // Name: QuestBarPreview
-// Dependencies: [19, 17, 21, 4836, 576, 14628, 14711, 14712, 2]
-// Exports: QuestBarPreview
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 14616, 14699, 14700, 2]
 
-// Module 14710 (QuestBarPreview)
+// Module 14698 (QuestBarPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 14628 */;
-import reactDefault from "react" /* 14711 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 14616 */;
+import reactDefault from "react" /* 14699 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let quest;
 
 let rect;
 const View = react_native.View;
 const jsx = Fragment.jsx;
 const value = { isRendered: true, isVisibleToUser: true };
-const obj = { overlay: { position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 1000, elevation: 1000, pointerEvents: "box-none" }, questDockContainer: rect };
+let obj = { overlay: { position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 1000, elevation: 1000, pointerEvents: "box-none" }, questDockContainer: rect };
 rect = { position: "absolute", bottom: 0, left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, zIndex: 1001, elevation: 1001 };
 let closure_6 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/user_settings/quests/native/QuestBarPreview.tsx");
-
-export const QuestBarPreview = function QuestBarPreview(quest) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+  const obj = react2;
+  const cResult = obj.c(8);
+  quest = quest.quest;
+  const isVisible = quest.isVisible;
+  const tmp4 = closure_6();
+  let tmp5 = null;
+  if (null != quest) {
+    tmp5 = null;
+    if (isVisible) {
+      let tmp6;
+      if (cResult[0] !== quest) {
+        const QuestDockExternalCoordinationContextProvider = tmp(14616).QuestDockExternalCoordinationContextProvider;
+        const Provider = reactDefault.Provider;
+        const tmp10 = <QuestDockExternalCoordinationContextProvider>{null}</QuestDockExternalCoordinationContextProvider>;
+        cResult[0] = quest;
+        cResult[1] = tmp10;
+        tmp6 = tmp10;
+      } else {
+        tmp6 = cResult[1];
+      }
+      if (cResult[2] === tmp4.questDockContainer) {
+        let tmp11;
+        if (cResult[3] === tmp6) {
+          tmp11 = cResult[4];
+        }
+        if (cResult[5] === tmp4.overlay) {
+          let tmp15;
+          if (cResult[6] === tmp11) {
+            tmp15 = cResult[7];
+          }
+          tmp5 = tmp15;
+        }
+        const tmp18 = <View style={tmp4.overlay}>{tmp11}</View>;
+        cResult[5] = tmp4.overlay;
+        cResult[6] = tmp11;
+        cResult[7] = tmp18;
+        tmp15 = tmp18;
+      }
+      const tmp14 = <View style={tmp4.questDockContainer}>{tmp6}</View>;
+      cResult[2] = tmp4.questDockContainer;
+      cResult[3] = tmp6;
+      cResult[4] = tmp14;
+      tmp11 = tmp14;
+    }
+  }
+  return tmp5;
+}) : ((quest) => {
   quest = quest.quest;
   const isVisible = quest.isVisible;
   const tmp = closure_6();
@@ -37,4 +85,7 @@ export const QuestBarPreview = function QuestBarPreview(quest) {
     }
   }
   return tmp2;
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/quests/native/QuestBarPreview.tsx");
+
+export const QuestBarPreview = tmp3;

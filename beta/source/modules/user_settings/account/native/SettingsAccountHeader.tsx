@@ -1,31 +1,64 @@
-// Module ID: 14244
-// Function ID: 14245
+// Module ID: 14232
+// Function ID: 14233
 // Name: SettingsAccountHeader
-// Dependencies: [19, 17, 4479, 1372, 1074, 7847, 21, 4836, 576, 14245, 1115, 6800, 504, 6419, 5933, 5917, 5281, 2]
+// Dependencies: [19, 17, 4482, 1378, 1086, 7851, 21, 4837, 588, 558, 576, 6801, 14233, 1127, 504, 6419, 5930, 5916, 5282, 2]
 
-// Module 14244 (SettingsAccountHeader)
+// Module 14232 (SettingsAccountHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import intl from "intl" /* 1115 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5933 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5930 */;
 import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6419 */;
-import openUserSettings from "openUserSettings" /* 6800 */;
-import Constants2 from "Constants" /* 7847 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14245 */;
+import openUserSettings from "openUserSettings" /* 6801 */;
+import Constants2 from "Constants" /* 7851 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14233 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c10;
 let c9;
 let obj2;
-function RestrictedAccountRedirect() {
+let tmp;
+const intl = tmp(1127);
+const View = react_native.View;
+const AnalyticsSections = Constants.AnalyticsSections;
+const SafetySettingsNoticeType = Constants2.SafetySettingsNoticeType;
+({ jsx: c9, jsxs: c10 } = Fragment);
+let obj = { header: obj2 };
+obj2 = { paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
+let closure_11 = createStyles.createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = {
+      label: intl.t.zqv4nV,
+      labelHook() {
+          const obj = openUserSettings;
+          const obj2 = { screen: constants.SETTINGS_CONTENT_AND_SOCIAL };
+          obj.openUserSettings(obj2);
+        },
+      noticeType: SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE
+    };
+    const tmp7 = SafetySettingsNoticeDefault;
+    const tmp9 = React4(tmp7, obj2);
+    cResult[0] = tmp9;
+    first = tmp9;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
   let obj = {
     label: intl.t.zqv4nV,
     labelHook() {
@@ -37,15 +70,140 @@ function RestrictedAccountRedirect() {
   };
   const tmp = SafetySettingsNoticeDefault;
   return React4(tmp, obj);
-}
-const View = react_native.View;
-const AnalyticsSections = Constants.AnalyticsSections;
-const SafetySettingsNoticeType = Constants2.SafetySettingsNoticeType;
-({ jsx: c9, jsxs: c10 } = Fragment);
-let obj = { header: obj2 };
-obj2 = { paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
-let closure_11 = createStyles.createStyles(obj);
-const memoResult = react.memo(() => {
+});
+const memo = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let blockedOrIgnoredIDs;
+  let currentUser;
+  let items2;
+  let obj3;
+  let tmp11;
+  let tmp12;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  let obj = react2;
+  const cResult = obj.c(15);
+  const tmp4 = closure_11();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function o() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] !== stateFromStores) {
+    const tmpResult3 = UserSettingsAccountUnverifiedHeader;
+    const bannerText = tmpResult3.getBannerText(stateFromStores);
+    cResult[2] = stateFromStores;
+    cResult[3] = bannerText;
+    tmp9 = bannerText;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [RelationshipStore];
+    const fn2 = function p() {
+      return blockedOrIgnoredIDs.getBlockedOrIgnoredIDs().size > 0;
+    };
+    cResult[4] = items1;
+    cResult[5] = fn2;
+    tmp12 = fn2;
+    tmp11 = items1;
+  } else {
+    tmp11 = cResult[4];
+    tmp12 = cResult[5];
+  }
+  const tmpResult4 = get_initialized;
+  const stateFromStores1 = tmpResult4.useStateFromStores(tmp11, tmp12);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class N {
+      constructor() {
+        const obj = EmailVerificationModalActionCreatorsDefault;
+        obj.open();
+      }
+    }
+    cResult[6] = N;
+  } else {
+    class N {
+      constructor() {
+        const obj = EmailVerificationModalActionCreatorsDefault;
+        obj.open();
+      }
+    }
+  }
+  if (null != tmp9) {
+    class N {
+      constructor() {
+        const obj = EmailVerificationModalActionCreatorsDefault;
+        obj.open();
+      }
+    }
+    if (cResult[9] !== tmp9) {
+      let tmp19;
+      class N {
+        constructor() {
+          const obj = EmailVerificationModalActionCreatorsDefault;
+          obj.open();
+        }
+      }
+      if (null != tmp9) {
+        class N {
+          constructor() {
+            const obj = EmailVerificationModalActionCreatorsDefault;
+            obj.open();
+          }
+        }
+        ({ title: obj5.label, title: obj5.accessibilityLabel } = tmp9);
+        const obj2 = { onPress: tmp15, variant: "danger", label: null, accessibilityLabel: null, trailing: React4(components_Button_Button.Button, obj3), start: true, end: true };
+        const TableRow = tmp(5916).TableRow;
+        obj3 = { text: null, accessibilityLabel: null, onPress: tmp15 };
+        ({ button: obj6.text, button: obj6.accessibilityLabel } = tmp9);
+        tmp19 = React4(TableRow, obj2);
+      }
+      cResult[9] = tmp9;
+      cResult[10] = tmp19;
+    } else {
+      class N {
+        constructor() {
+          const obj = EmailVerificationModalActionCreatorsDefault;
+          obj.open();
+        }
+      }
+    }
+    if (cResult[11] === tmp4.header) {
+      class N {
+        constructor() {
+          const obj = EmailVerificationModalActionCreatorsDefault;
+          obj.open();
+        }
+      }
+    }
+    const obj4 = { style: tmp4.header, children: items2 };
+    items2 = [tmp17, tmp18];
+    cResult[11] = tmp4.header;
+    cResult[12] = tmp17;
+    cResult[13] = tmp18;
+    cResult[14] = authStore(View, obj4);
+    const tmp23 = authStore(View, obj4);
+  } else {
+    class N {
+      constructor() {
+        const obj = EmailVerificationModalActionCreatorsDefault;
+        obj.open();
+      }
+    }
+  }
+  return tmp16;
+}) : (() => {
   let blockedOrIgnoredIDs;
   let currentUser;
   let items2;
@@ -70,14 +228,14 @@ const memoResult = react.memo(() => {
     const tmp10 = View;
     const tmp9 = authStore;
     if (stateFromStores1) {
-      tmp11 = React4(RestrictedAccountRedirect, {});
+      tmp11 = React4(closure_12, {});
     }
     items2 = [tmp11, ];
     let tmp14 = null;
     if (null != bannerText) {
       ({ title: obj5.label, title: obj5.accessibilityLabel } = bannerText);
       const obj9 = { onPress: callback, variant: "danger", label: null, accessibilityLabel: null, trailing: React4(components_Button_Button.Button, obj10), start: true, end: true };
-      const TableRow = tmp2(5917).TableRow;
+      const TableRow = tmp2(5916).TableRow;
       obj10 = { text: null, accessibilityLabel: null, onPress: callback };
       ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
       tmp14 = React4(TableRow, obj9);
@@ -88,7 +246,7 @@ const memoResult = react.memo(() => {
     tmp9Result = null;
   }
   return tmp9Result;
-});
+}));
 const result = size.fileFinishedImporting("modules/user_settings/account/native/SettingsAccountHeader.tsx");
 
 export default memoResult;

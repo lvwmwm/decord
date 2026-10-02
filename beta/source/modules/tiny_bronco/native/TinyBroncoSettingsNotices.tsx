@@ -1,36 +1,208 @@
-// Module ID: 14352
-// Function ID: 14353
+// Module ID: 14340
+// Function ID: 14341
 // Name: TinyBroncoSettingsNotices
-// Dependencies: [19, 17, 1372, 9231, 7847, 21, 4836, 576, 14246, 14274, 7859, 7861, 1177, 5281, 1115, 3071, 14286, 9235, 5735, 5048, 14353, 8104, 2]
-// Exports: ContentFiltersTeenNotice, ContentFiltersUnconfirmedNotice, MessageRequestsNotice, shouldShowTeenNotice, shouldShowUnconfirmedNotice, useIsEnabled, useMessageRequestsNoticeVariant
+// Dependencies: [19, 17, 1378, 9197, 7851, 21, 4837, 588, 558, 576, 14234, 14262, 7863, 7865, 1127, 5282, 1189, 3074, 14274, 9201, 5736, 5049, 14341, 8101, 2]
+// Exports: shouldShowTeenNotice, shouldShowUnconfirmedNotice, useIsEnabled
 
-// Module 14352 (TinyBroncoSettingsNotices)
+// Module 14340 (TinyBroncoSettingsNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import _modDef3071 from "module_3071" /* 3071 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5048 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5735 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7861 */;
-import useUserIsTeen from "useUserIsTeen" /* 8104 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 9231 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 14246 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 14274 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 14286 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14353 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import _modDef3074 from "module_3074" /* 3074 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5049 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5736 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7863 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7865 */;
+import useUserIsTeen from "useUserIsTeen" /* 8101 */;
+import TinyBroncoConstants from "TinyBroncoConstants" /* 9197 */;
+import TinyBroncoExperiment from "TinyBroncoExperiment" /* 9201 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 14234 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 14262 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 14274 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14341 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 7847 */;
-import createStyles from "createStyles" /* 4836 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 7851 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let obj2;
-let tmp;
-const TinyBroncoExperiment = tmp(9235);
-function TeenNotice(noticeType) {
+const View = react_native.View;
+let closure_6 = TinyBroncoConstants.TINY_BRONCO_SETTINGS_LOCATION;
+({ SafetySettingsNoticeAction: metroImportDefault, SafetySettingsNoticeType: metroImportAll } = Constants);
+const jsx = Fragment.jsx;
+let obj = { container: obj2 };
+obj2 = { marginBottom: nativeDefault.space.PX_8 };
+let closure_10 = createStyles.createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let message;
+  let noticeType;
+  let obj2;
+  let tmp10;
+  let tmp20;
+  let tmp5;
+  let tmp6;
+  let tmp8;
+  let obj = noticeType(576);
+  const cResult = obj.c(19);
+  ({ message, noticeType } = arg0);
+  const tmp4 = closure_10();
+  if (cResult[0] !== noticeType) {
+    const fn = function s() {
+      const obj = SafetySettingsUtils;
+      const result = obj.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.VIEWED);
+    };
+    const items = [noticeType];
+    cResult[0] = noticeType;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp6 = items;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+    tmp6 = cResult[2];
+  }
+  const effect = react.useEffect(tmp5, tmp6);
+  if (cResult[3] !== noticeType) {
+    const fn2 = function u() {
+      const obj = useAgeGroupPresentation;
+      const result = obj.handleOpenAgeGatedContentArticle();
+      const obj2 = SafetySettingsUtils;
+      const result1 = obj2.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.LEARN_MORE);
+    };
+    cResult[3] = noticeType;
+    cResult[4] = fn2;
+    tmp8 = fn2;
+  } else {
+    tmp8 = cResult[4];
+  }
+  if (cResult[5] !== noticeType) {
+    class A {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+    cResult[5] = noticeType;
+    cResult[6] = A;
+  } else {
+    class A {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+  }
+  const container = tmp4.container;
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    class A {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+    const stringResult = obj2.string(noticeType(1127).t.hvVgAZ);
+    cResult[7] = stringResult;
+    tmp10 = stringResult;
+  } else {
+    class A {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+  }
+  if (cResult[8] !== tmp8) {
+    class A {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+    cResult[8] = tmp8;
+    cResult[9] = jsx(noticeType(5282).Button, { variant: "secondary", size: "sm", text: tmp10, onPress: tmp8 });
+    const tmp13 = jsx(noticeType(5282).Button, { variant: "secondary", size: "sm", text: tmp10, onPress: tmp8 });
+  } else {
+    class A {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+  }
+  if (cResult[10] === tmp9) {
+    class A {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+    if (cResult[13] === tmp12) {
+      class A {
+        constructor() {
+          const obj = AgeVerificationActionCreatorsDefault;
+          const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+          const result = obj.showAgeVerificationGetStartedModal(obj2);
+          const obj3 = SafetySettingsUtils;
+          const result1 = obj3.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.CONFIRM_AGE);
+        }
+      }
+      if (cResult[16] === tmp4.container) {
+        class A {
+          constructor() {
+            const obj = AgeVerificationActionCreatorsDefault;
+            const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+            const result = obj.showAgeVerificationGetStartedModal(obj2);
+            const obj3 = SafetySettingsUtils;
+            const result1 = obj3.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.CONFIRM_AGE);
+          }
+        }
+        return tmp20;
+      }
+      const tmp23 = <View style={container}>{tmp16}</View>;
+      cResult[16] = tmp4.container;
+      cResult[17] = tmp16;
+      cResult[18] = tmp23;
+      tmp20 = tmp23;
+    }
+    const HelpMessage = tmp(1189).HelpMessage;
+    const tmp19 = <HelpMessage messageType={noticeType(1189).HelpMessageTypes.INFO} borderRadius={nativeDefault.radii.lg} button={tmp12}>{tmp14}</HelpMessage>;
+    cResult[13] = tmp12;
+    cResult[14] = tmp14;
+    cResult[15] = tmp19;
+  }
+  const intl = tmp(1127).intl;
+  cResult[10] = tmp9;
+  cResult[11] = message;
+  cResult[12] = intl.format(message, { handleOnConfirmAgeHook: tmp9 });
+  const formatResult = intl.format(message, { handleOnConfirmAgeHook: tmp9 });
+}) : ((noticeType) => {
   let intl;
   let intl2;
   noticeType = noticeType.noticeType;
@@ -56,20 +228,201 @@ function TeenNotice(noticeType) {
     const obj3 = SafetySettingsUtils;
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.CONFIRM_AGE);
   }, items2);
-  let obj2 = { messageType: noticeType(1177).HelpMessageTypes.INFO, borderRadius: nativeDefault.radii.lg, button: null, children: intl2.format(message, { handleOnConfirmAgeHook: callback1 }) };
-  const HelpMessage = noticeType(1177).HelpMessage;
-  let obj3 = { variant: "secondary", size: "sm", text: intl.string(noticeType(1115).t.hvVgAZ), onPress: callback };
-  const Button = noticeType(5281).Button;
-  intl = noticeType(1115).intl;
-  intl2 = noticeType(1115).intl;
+  let obj2 = { messageType: noticeType(1189).HelpMessageTypes.INFO, borderRadius: nativeDefault.radii.lg, button: null, children: intl2.format(message, { handleOnConfirmAgeHook: callback1 }) };
+  const HelpMessage = noticeType(1189).HelpMessage;
+  let obj3 = { variant: "secondary", size: "sm", text: intl.string(noticeType(1127).t.hvVgAZ), onPress: callback };
+  const Button = noticeType(5282).Button;
+  intl = noticeType(1127).intl;
+  intl2 = noticeType(1127).intl;
   return <View style={tmp.container}>{null}</View>;
-}
-class MessageRequestsTeenNotice {
-  constructor() {
-    return <TeenNotice message={_modDef3071["l+jt8J"]} noticeType={metroImportAll.CONTENT_AND_SOCIAL_NOTICE} />;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp8 = <closure_11 message={_modDef3074.qbBkFI} noticeType={metroImportAll.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE} />;
+    cResult[0] = tmp8;
+    first = tmp8;
+  } else {
+    first = cResult[0];
   }
-}
-function UnconfirmedNotice(message) {
+  return first;
+}) : (() => <closure_11 message={_modDef3074.qbBkFI} noticeType={metroImportAll.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE} />);
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp8 = <closure_11 message={_modDef3074["l+jt8J"]} noticeType={metroImportAll.CONTENT_AND_SOCIAL_NOTICE} />;
+    cResult[0] = tmp8;
+    first = tmp8;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => <closure_11 message={_modDef3074["l+jt8J"]} noticeType={metroImportAll.CONTENT_AND_SOCIAL_NOTICE} />);
+let closure_12 = tmp4;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+  let AGE_CONFIRMATION_NOTICE;
+  let obj3;
+  let tmp10;
+  let tmp17;
+  let tmp5;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  let obj = AGE_CONFIRMATION_NOTICE(576);
+  const cResult = obj.c(12);
+  message = message.message;
+  const tmp4 = closure_10();
+  AGE_CONFIRMATION_NOTICE = constants2.AGE_CONFIRMATION_NOTICE;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s() {
+      const obj = SafetySettingsUtils;
+      const result = obj.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.VIEWED);
+    };
+    const items = [AGE_CONFIRMATION_NOTICE];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp5 = fn;
+    tmp6 = items;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const effect = react.useEffect(tmp5, tmp6);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function y() {
+      const obj = handleOpenUnconfirmedAgeGroupSupportArticle;
+      const result = obj.handleOpenUnconfirmedAgeGroupSupportArticle();
+      const obj2 = SafetySettingsUtils;
+      const result1 = obj2.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.LEARN_MORE);
+    };
+    cResult[2] = fn2;
+    tmp8 = fn2;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+    cResult[3] = T;
+    tmp9 = T;
+  } else {
+    class T {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+  }
+  const container = tmp4.container;
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+    const Button = tmp(5282).Button;
+    const intl = tmp(1127).intl;
+    const tmp11 = <Button variant="secondary" size="sm" text={intl.string(AGE_CONFIRMATION_NOTICE(1127).t.FDSSia)} onPress={tmp9} />;
+    cResult[4] = tmp11;
+    tmp10 = tmp11;
+  } else {
+    class T {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+  }
+  if (cResult[5] !== message) {
+    class T {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+    const obj4 = { handleOnAgeGatedContentHook: tmp8 };
+    cResult[5] = message;
+    cResult[6] = obj3.format(message, obj4);
+    const formatResult = obj3.format(message, obj4);
+  } else {
+    class T {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+  }
+  if (cResult[7] !== tmp12) {
+    class T {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+    const HelpMessage = tmp(1189).HelpMessage;
+    const tmp16 = <HelpMessage messageType={AGE_CONFIRMATION_NOTICE(1189).HelpMessageTypes.INFO} borderRadius={nativeDefault.radii.lg} button={tmp10}>{tmp12}</HelpMessage>;
+    cResult[7] = tmp12;
+    cResult[8] = tmp16;
+  } else {
+    class T {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+  }
+  if (cResult[9] === tmp4.container) {
+    class T {
+      constructor() {
+        const obj = AgeVerificationActionCreatorsDefault;
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = SafetySettingsUtils;
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
+      }
+    }
+    return tmp17;
+  }
+  tmp17 = <View style={container}>{tmp14}</View>;
+  cResult[9] = tmp4.container;
+  cResult[10] = tmp14;
+  cResult[11] = tmp17;
+}) : ((message) => {
   let intl;
   let intl2;
   message = message.message;
@@ -95,40 +448,147 @@ function UnconfirmedNotice(message) {
     const obj3 = SafetySettingsUtils;
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
   }, items2);
-  let obj2 = { messageType: AGE_CONFIRMATION_NOTICE(1177).HelpMessageTypes.INFO, borderRadius: nativeDefault.radii.lg, button: null, children: intl2.format(message, { handleOnAgeGatedContentHook: callback }) };
-  const HelpMessage = AGE_CONFIRMATION_NOTICE(1177).HelpMessage;
-  let obj3 = { variant: "secondary", size: "sm", text: intl.string(AGE_CONFIRMATION_NOTICE(1115).t.FDSSia), onPress: callback1 };
-  const Button = AGE_CONFIRMATION_NOTICE(5281).Button;
-  intl = AGE_CONFIRMATION_NOTICE(1115).intl;
-  intl2 = AGE_CONFIRMATION_NOTICE(1115).intl;
+  let obj2 = { messageType: AGE_CONFIRMATION_NOTICE(1189).HelpMessageTypes.INFO, borderRadius: nativeDefault.radii.lg, button: null, children: intl2.format(message, { handleOnAgeGatedContentHook: callback }) };
+  const HelpMessage = AGE_CONFIRMATION_NOTICE(1189).HelpMessage;
+  let obj3 = { variant: "secondary", size: "sm", text: intl.string(AGE_CONFIRMATION_NOTICE(1127).t.FDSSia), onPress: callback1 };
+  const Button = AGE_CONFIRMATION_NOTICE(5282).Button;
+  intl = AGE_CONFIRMATION_NOTICE(1127).intl;
+  intl2 = AGE_CONFIRMATION_NOTICE(1127).intl;
   return <View style={tmp.container}>{null}</View>;
-}
-class MessageRequestsUnconfirmedNotice {
-  constructor() {
-    return <UnconfirmedNotice message={_modDef3071.tGsCdS} />;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp7 = <closure_13 message={_modDef3074.HGJo1F} />;
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
   }
-}
-const View = react_native.View;
-let closure_6 = TinyBroncoConstants.TINY_BRONCO_SETTINGS_LOCATION;
-({ SafetySettingsNoticeAction: metroImportDefault, SafetySettingsNoticeType: metroImportAll } = Constants);
-const jsx = Fragment.jsx;
-let obj = { container: obj2 };
-obj2 = { marginBottom: nativeDefault.space.PX_8 };
-let closure_10 = createStyles.createStyles(obj);
-let result = size.fileFinishedImporting("modules/tiny_bronco/native/TinyBroncoSettingsNotices.tsx");
-
-export const ContentFiltersTeenNotice = function ContentFiltersTeenNotice() {
-  return <TeenNotice message={_modDef3071.qbBkFI} noticeType={metroImportAll.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE} />;
-};
-export { MessageRequestsTeenNotice };
-export const ContentFiltersUnconfirmedNotice = function ContentFiltersUnconfirmedNotice() {
-  return <UnconfirmedNotice message={_modDef3071.HGJo1F} />;
-};
-export { MessageRequestsUnconfirmedNotice };
-export const useIsEnabled = function useIsEnabled() {
+  return first;
+}) : (() => <closure_13 message={_modDef3074.HGJo1F} />);
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp7 = <closure_13 message={_modDef3074.tGsCdS} />;
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => <closure_13 message={_modDef3074.tGsCdS} />);
+let closure_14 = tmp6;
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = useParentalControlSettings;
+  const isParentallyControlled = obj.useIsParentallyControlled();
+  const obj2 = RegionalFeatureConfigUtils;
+  const hasAgeGatedFeatures = obj2.useHasAgeGatedFeatures();
+  const obj3 = AgeVerificationUtils;
+  const isAgeVerified = obj3.useIsAgeVerified();
+  useUserIsTeen;
+  if (!isParentallyControlled) {
+    let str;
+    if (!hasAgeGatedFeatures) {
+      if (tmp7) {
+        str = "teen";
+      }
+    } else {
+      str = "unconfirmed";
+    }
+    if (null != str) {
+      const tmpResult = TinyBroncoExperiment;
+      if (tmpResult.isTinyBroncoEnabled(closure_6)) {
+        return str;
+      }
+    }
+  }
+}) : (() => {
+  const obj = useParentalControlSettings;
+  const isParentallyControlled = obj.useIsParentallyControlled();
+  const obj2 = RegionalFeatureConfigUtils;
+  const hasAgeGatedFeatures = obj2.useHasAgeGatedFeatures();
+  const obj3 = AgeVerificationUtils;
+  const isAgeVerified = obj3.useIsAgeVerified();
+  useUserIsTeen;
+  if (!isParentallyControlled) {
+    let str;
+    if (!hasAgeGatedFeatures) {
+      if (tmp7) {
+        str = "teen";
+      }
+    } else {
+      str = "unconfirmed";
+    }
+    if (null != str) {
+      const tmpResult = TinyBroncoExperiment;
+      if (tmpResult.isTinyBroncoEnabled(closure_6)) {
+        return str;
+      }
+    }
+  }
+});
+let closure_15 = tmp8;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = react2;
+  const cResult = obj.c(2);
+  const tmp2 = closure_15();
+  if ("unconfirmed" === tmp2) {
+    let first;
+    const _Symbol2 = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp13 = <closure_14 />;
+      cResult[0] = tmp13;
+      first = tmp13;
+    } else {
+      first = cResult[0];
+    }
+    return first;
+  } else if ("teen" === tmp2) {
+    let tmp5;
+    const _Symbol = Symbol;
+    if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp8 = <closure_12 />;
+      cResult[1] = tmp8;
+      tmp5 = tmp8;
+    } else {
+      tmp5 = cResult[1];
+    }
+    return tmp5;
+  } else if (undefined === tmp2) {
+    return null;
+  }
+}) : (() => {
+  const tmp = closure_15();
+  if ("unconfirmed" === tmp) {
+    return <closure_14 />;
+  } else if ("teen" === tmp) {
+    return <closure_12 />;
+  } else if (undefined === tmp) {
+    return null;
+  }
+});
+let fn = () => {
   const obj = TinyBroncoExperiment;
   return obj.useIsTinyBroncoEnabled(closure_6);
 };
+let result1 = size.fileFinishedImporting("modules/tiny_bronco/native/TinyBroncoSettingsNotices.tsx");
+
+export const ContentFiltersTeenNotice = tmp3;
+export const MessageRequestsTeenNotice = tmp4;
+export const ContentFiltersUnconfirmedNotice = tmp5;
+export const MessageRequestsUnconfirmedNotice = tmp6;
+export const useIsEnabled = fn;
 export const shouldShowUnconfirmedNotice = function shouldShowUnconfirmedNotice() {
   const obj = RegionalFeatureConfigUtils;
   let hasAgeGatedFeaturesResult = obj.hasAgeGatedFeatures();
@@ -155,61 +615,5 @@ export const shouldShowTeenNotice = function shouldShowTeenNotice() {
   }
   return isTinyBroncoEnabledResult;
 };
-export const useMessageRequestsNoticeVariant = function useMessageRequestsNoticeVariant() {
-  const obj = useParentalControlSettings;
-  const isParentallyControlled = obj.useIsParentallyControlled();
-  const obj2 = RegionalFeatureConfigUtils;
-  const hasAgeGatedFeatures = obj2.useHasAgeGatedFeatures();
-  const obj3 = AgeVerificationUtils;
-  const isAgeVerified = obj3.useIsAgeVerified();
-  useUserIsTeen;
-  if (!isParentallyControlled) {
-    let str;
-    if (!hasAgeGatedFeatures) {
-      if (tmp7) {
-        str = "teen";
-      }
-    } else {
-      str = "unconfirmed";
-    }
-    if (null != str) {
-      const tmpResult = TinyBroncoExperiment;
-      if (tmpResult.isTinyBroncoEnabled(closure_6)) {
-        return str;
-      }
-    }
-  }
-};
-export const MessageRequestsNotice = function MessageRequestsNotice() {
-  const obj = useParentalControlSettings;
-  const isParentallyControlled = obj.useIsParentallyControlled();
-  const obj2 = RegionalFeatureConfigUtils;
-  const hasAgeGatedFeatures = obj2.useHasAgeGatedFeatures();
-  const obj3 = AgeVerificationUtils;
-  const isAgeVerified = obj3.useIsAgeVerified();
-  useUserIsTeen;
-  let tmp8;
-  if (!isParentallyControlled) {
-    let str;
-    if (!hasAgeGatedFeatures) {
-      if (tmp7) {
-        str = "teen";
-      }
-    } else {
-      str = "unconfirmed";
-    }
-    if (null != str) {
-      const tmpResult = TinyBroncoExperiment;
-      if (tmpResult.isTinyBroncoEnabled(closure_6)) {
-        tmp8 = str;
-      }
-    }
-  }
-  if ("unconfirmed" === tmp8) {
-    return <MessageRequestsUnconfirmedNotice />;
-  } else if ("teen" === tmp8) {
-    return <MessageRequestsTeenNotice />;
-  } else if (undefined === tmp8) {
-    return null;
-  }
-};
+export const useMessageRequestsNoticeVariant = tmp8;
+export const MessageRequestsNotice = tmp9;

@@ -1,12 +1,12 @@
-// Module ID: 16937
-// Function ID: 16938
+// Module ID: 16892
+// Function ID: 16893
 // Name: getChannelInfoSubtitle
-// Dependencies: [4988, 1115, 2]
+// Dependencies: [4989, 1127, 2]
 // Exports: default
 
-// Module 16937 (getChannelInfoSubtitle)
-import intl3 from "intl" /* 1115 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
+// Module 16892 (getChannelInfoSubtitle)
+import intl3 from "intl" /* 1127 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_panel/native/utils/getChannelInfoSubtitle.tsx");

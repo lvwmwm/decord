@@ -1,17 +1,17 @@
-// Module ID: 9349
-// Function ID: 9350
+// Module ID: 9327
+// Function ID: 9328
 // Name: InstantInviteSendStateStore
-// Dependencies: [560, 1248, 2]
+// Dependencies: [570, 1260, 2]
 // Exports: setSendState
 
-// Module 9349 (InstantInviteSendStateStore)
-import module_560 from "module_560" /* 560 */;
+// Module 9327 (InstantInviteSendStateStore)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap, state;
 
-let obj = module_560.create(() => ({}));
+let obj = module_570.create(() => ({}));
 const result = size.fileFinishedImporting("modules/instant_invite/InstantInviteSendStateStore.tsx");
 
 export const setSendState = function setSendState(arg0, arg1, arg2) {

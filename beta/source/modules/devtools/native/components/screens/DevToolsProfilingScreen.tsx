@@ -1,27 +1,27 @@
-// Module ID: 15216
-// Function ID: 15217
+// Module ID: 15204
+// Function ID: 15205
 // Name: DevToolsProfilingScreen
-// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 9654, 5279, 5999, 5917, 4832, 15217, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 1086, 21, 4837, 588, 558, 576, 12280, 5997, 5916, 4833, 15205, 5280, 2]
 
-// Module 15216 (DevToolsProfilingScreen)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import Stack_Stack from "Stack/Stack" /* 5279 */;
-import TableRow2 from "TableRow" /* 5917 */;
-import TableRowGroup3 from "TableRowGroup" /* 5999 */;
-import ComponentProfiler from "ComponentProfiler" /* 9654 */;
-import DevToolsProfilingUseStateFromStores from "DevToolsProfilingUseStateFromStores" /* 15217 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+// Module 15204 (DevToolsProfilingScreen)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import Stack_Stack from "Stack/Stack" /* 5280 */;
+import TableRow2 from "TableRow" /* 5916 */;
+import TableRowGroup3 from "TableRowGroup" /* 5997 */;
+import ComponentProfiler from "ComponentProfiler" /* 12280 */;
+import DevToolsProfilingUseStateFromStores from "DevToolsProfilingUseStateFromStores" /* 15205 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, stat;
+let _require, dependencyMap, stat;
 
 let StyleSheet;
 let closure_4;
@@ -29,6 +29,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let obj2;
+let _slicedToArray = _slicedToArray_mod;
 ({ ScrollView: closure_4, StyleSheet } = react_native);
 const Fonts = Constants.Fonts;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -38,9 +39,146 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 16 
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_8 = createStyles(obj);
-let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsProfilingScreen.tsx");
-
-export default function DevToolsProfilingScreen() {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let TableRow;
+  let Text;
+  let arr;
+  let closure_0;
+  let closure_1;
+  let closure_2;
+  let first;
+  let items;
+  let items1;
+  let items2;
+  let obj4;
+  let obj6;
+  let obj7;
+  let tmp16;
+  let tmp19;
+  let tmp6;
+  let tmp9;
+  let obj = require("react");
+  const cResult = obj.c(11);
+  _require = _slicedToArray(react.useState(false), 2)[1];
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n() {
+      const obj = ComponentProfiler;
+      const result = obj.clearComponentRenderStats();
+      closure_0(true);
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const tmp5 = closure_8();
+  dependencyMap = tmp5;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = require("ComponentProfiler");
+    const componentRenderStats = tmpResult.getComponentRenderStats();
+    cResult[1] = componentRenderStats;
+    tmp6 = componentRenderStats;
+  } else {
+    tmp6 = cResult[1];
+  }
+  _slicedToArray = tmp6;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const _Object = Object;
+    const keys = Object.keys(tmp6);
+    cResult[2] = keys;
+    arr = keys;
+  } else {
+    arr = cResult[2];
+  }
+  if (cResult[3] !== tmp5.monospace) {
+    let tmp12;
+    if (arr.length > 0) {
+      let obj2 = { children: items };
+      let obj3 = { title: "Component Profiler", hasIcons: false, children: closure_5(require("TableRow").TableRow, obj4) };
+      const TableRowGroup2 = tmp(5997).TableRowGroup;
+      obj4 = { variant: "danger", arrow: true, label: "Reset Stats", onPress: first };
+      items = [closure_5(TableRowGroup2, obj3), ];
+      const _Object2 = Object;
+      const keys1 = Object.keys(tmp6);
+      items[1] = keys1.map((item) => {
+        let items;
+        let mount;
+        let nestedUpdate;
+        let update;
+        ({ mount, update, nestedUpdate } = closure_2[item]);
+        let obj = {
+          title: "Component Profiler Target: '" + item + "'",
+          hasIcons: false,
+          children: items.map((stat, index) => {
+            let items;
+            let obj2;
+            stat = stat.stat;
+            const label = stat.label;
+            const obj = { subLabel: closure_2_7(closure_2_6, obj2), label };
+            obj2 = { children: items };
+            const TableRow = closure_0(closure_1[11]).TableRow;
+            const obj3 = { variant: "text-sm/medium", color: "text-subtle", style: closure_1_1.monospace, children: "Count - " + stat.count };
+            const Text = closure_0(closure_1[12]).Text;
+            items = [closure_2_5(Text, obj3), ];
+            const obj4 = { variant: "text-sm/medium", color: "text-subtle", style: closure_1_1.monospace, children: "Mean - " + stat.mean };
+            const Text2 = closure_0(closure_1[12]).Text;
+            items[1] = closure_2_5(Text2, obj4);
+            return closure_2_5(TableRow, obj, index);
+          })
+        };
+        const TableRowGroup = TableRowGroup3.TableRowGroup;
+        items = [{ stat: mount, label: "Mount" }, { stat: update, label: "Update" }, { stat: nestedUpdate, label: "Nested Update" }];
+        return hasOwnProperty(TableRowGroup, obj, item);
+      });
+      tmp12 = closure_7(closure_6, obj2);
+    } else {
+      const obj5 = { title: "Component Profiler", hasIcons: false, children: closure_5(TableRow, obj6) };
+      let TableRowGroup = tmp(5997).TableRowGroup;
+      obj6 = { label: "No components rendered yet.", subLabel: closure_7(Text, obj7) };
+      TableRow = tmp(5916).TableRow;
+      obj7 = { variant: "text-xs/medium", color: "text-subtle", children: items1 };
+      Text = tmp(4833).Text;
+      const obj8 = { variant: "text-xs/semibold", style: tmp5.monospace, children: "<ComponentProfiler />" };
+      items1 = ["Make sure you wrap your component in ", closure_5(require("Text/Text").Text, obj8), " to enable measurements."];
+      tmp12 = closure_5(TableRowGroup, obj5);
+    }
+    cResult[3] = tmp5.monospace;
+    cResult[4] = tmp12;
+    tmp9 = tmp12;
+  } else {
+    tmp9 = cResult[4];
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp18 = closure_5(require("DevToolsProfilingUseStateFromStores").DevToolsProfilingUseStateFromStores, {});
+    cResult[5] = tmp18;
+    tmp16 = tmp18;
+  } else {
+    tmp16 = cResult[5];
+  }
+  if (cResult[6] !== tmp9) {
+    const obj9 = { spacing: 16, children: items2 };
+    items2 = [tmp9, tmp16];
+    const tmp21 = closure_7(require("Stack/Stack").Stack, obj9);
+    cResult[6] = tmp9;
+    cResult[7] = tmp21;
+    tmp19 = tmp21;
+  } else {
+    tmp19 = cResult[7];
+  }
+  if (cResult[8] === tmp5.container) {
+    let tmp22;
+    if (cResult[9] === tmp19) {
+      tmp22 = cResult[10];
+    }
+    return tmp22;
+  }
+  const obj10 = { style: tmp5.container, children: tmp19 };
+  const tmp23 = closure_5(closure_4, obj10);
+  cResult[8] = tmp5.container;
+  cResult[9] = tmp19;
+  cResult[10] = tmp23;
+  tmp22 = tmp23;
+}) : (() => {
   let Stack;
   let TableRow;
   let Text;
@@ -53,13 +191,14 @@ export default function DevToolsProfilingScreen() {
   let obj5;
   let obj7;
   let obj8;
+  let require;
   let tmp8Result;
   [r10008, require] = componentRenderStats(react.useState(false), 2);
   componentRenderStats(react.useState(false), 2);
   const callback = react.useCallback(() => {
     const obj = ComponentProfiler;
     const result = obj.clearComponentRenderStats();
-    require(true);
+    _require(true);
   }, []);
   const tmp3 = closure_8();
   dependencyMap = tmp3;
@@ -72,7 +211,7 @@ export default function DevToolsProfilingScreen() {
   if (tmp7) {
     let obj3 = { children: items };
     let obj4 = { title: "Component Profiler", hasIcons: false, children: closure_5(TableRow2.TableRow, obj5) };
-    const TableRowGroup2 = tmp4(5999).TableRowGroup;
+    const TableRowGroup2 = tmp4(5997).TableRowGroup;
     obj5 = { variant: "danger", arrow: true, label: "Reset Stats", onPress: callback };
     items = [closure_5(TableRowGroup2, obj4), ];
     const _Object = Object;
@@ -110,11 +249,11 @@ export default function DevToolsProfilingScreen() {
     tmp8Result = tmp10(closure_6, obj3);
   } else {
     const obj6 = { title: "Component Profiler", hasIcons: false, children: closure_5(TableRow, obj7) };
-    let TableRowGroup = tmp4(5999).TableRowGroup;
+    let TableRowGroup = tmp4(5997).TableRowGroup;
     obj7 = { label: "No components rendered yet.", subLabel: closure_7(Text, obj8) };
-    TableRow = tmp4(5917).TableRow;
+    TableRow = tmp4(5916).TableRow;
     obj8 = { variant: "text-xs/medium", color: "text-subtle", children: items1 };
-    Text = tmp4(4832).Text;
+    Text = tmp4(4833).Text;
     const obj9 = { variant: "text-xs/semibold", style: tmp3.monospace, children: "<ComponentProfiler />" };
     items1 = ["Make sure you wrap your component in ", closure_5(Text_Text.Text, obj9), " to enable measurements."];
     tmp8Result = tmp8(TableRowGroup, obj6);
@@ -122,4 +261,7 @@ export default function DevToolsProfilingScreen() {
   obj10 = { spacing: 16, children: items2 };
   items2 = [tmp8Result, closure_5(DevToolsProfilingUseStateFromStores.DevToolsProfilingUseStateFromStores, {})];
   return closure_5(tmp9, obj2);
-};
+});
+let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsProfilingScreen.tsx");
+
+export default tmp6;

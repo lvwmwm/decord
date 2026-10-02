@@ -1,24 +1,44 @@
-// Module ID: 9503
-// Function ID: 9504
+// Module ID: 9499
+// Function ID: 9500
 // Name: StageChannelBackground
-// Dependencies: [19, 17, 21, 4836, 576, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 2]
 
-// Module 9503 (StageChannelBackground)
+// Module 9499 (StageChannelBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let children;
+
+let obj2;
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const obj = { container: { flex: 1, backgroundColor: nativeDefault.colors.BLACK } };
-({ flex: 1, backgroundColor: nativeDefault.colors.BLACK });
-let closure_2 = createStyles.createStyles(obj);
+let obj = { container: obj2 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BLACK };
+let closure_4 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+  const obj = react2;
+  const cResult = obj.c(3);
+  children = children.children;
+  const tmp2 = closure_4();
+  if (cResult[0] === children) {
+    let tmp3;
+    if (cResult[1] === tmp2.container) {
+      tmp3 = cResult[2];
+    }
+    return tmp3;
+  }
+  const tmp4 = <View style={tmp2.container}>{children}</View>;
+  cResult[0] = children;
+  cResult[1] = tmp2.container;
+  cResult[2] = tmp4;
+  tmp3 = tmp4;
+}) : ((children) => <View style={closure_4().container}>{arg0.children}</View>);
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageChannelBackground.tsx");
 
-export default function StageChannelBackground(children) {
-  return <View style={closure_2().container}>{arg0.children}</View>;
-};
+export default tmp3;

@@ -1,18 +1,19 @@
-// Module ID: 17336
-// Function ID: 17337
+// Module ID: 17338
+// Function ID: 17339
 // Name: BlockMessageActionSheet
-// Dependencies: [32, 19, 11341, 21, 17314, 4800, 6618, 6570, 4832, 1115, 6506, 5281, 8370, 2]
-// Exports: default
+// Dependencies: [32, 19, 11216, 21, 558, 576, 17316, 4801, 6571, 4833, 1127, 6507, 5282, 8367, 6624, 2]
 
-// Module 17336 (BlockMessageActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+// Module 17338 (BlockMessageActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 11341 */;
+import Constants from "Constants" /* 11216 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let hideActionSheetResult, onRemove, tmp2;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -20,9 +21,252 @@ let metroImportDefault;
 let metroRequire;
 ({ AutomodActionType: hasOwnProperty, MAX_BLOCK_ACTION_CUSTOM_MESSAGE_LENGTH: metroRequire } = Constants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-const result = size.fileFinishedImporting("modules/guild_automod/native/components/BlockMessageActionSheet.tsx");
-
-export default function BlockMessageActionSheet(triggerType) {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRemove) => {
+  let action;
+  let first;
+  let intl6;
+  let intl7;
+  let items;
+  let onConfirm;
+  let triggerType;
+  let obj = onConfirm(first[5]);
+  const cResult = obj.c(27);
+  ({ triggerType, action, onConfirm } = onRemove);
+  onRemove = onRemove.onRemove;
+  let str;
+  const useState = react.useState;
+  if (action != null) {
+    str = action.metadata.customMessage;
+  }
+  if (str == null) {
+    str = "";
+  }
+  first = _slicedToArray(useState(str), 2)[0];
+  _slicedToArray(useState(str), 2);
+  if (cResult[0] === action) {
+    let tmp8;
+    if (cResult[1] === triggerType) {
+      tmp8 = cResult[2];
+    }
+    if (null == tmp8) {
+      return null;
+    } else {
+      if (cResult[3] === first) {
+        let tmp10;
+        let tmp12;
+        let tmp16;
+        let tmp21;
+        let tmp27;
+        let tmp25;
+        let tmp26;
+        let tmp32;
+        let tmp40;
+        if (cResult[4] === onConfirm) {
+          tmp10 = cResult[5];
+        }
+        class C {
+          constructor() {
+            obj = closure_1(closure_2[7]);
+            hideActionSheetResult = obj.hideActionSheet();
+            tmp2 = onConfirm(closure_2);
+            return;
+          }
+        }
+        if (cResult[8] !== tmp8.headerText) {
+          class C {
+            constructor() {
+              obj = closure_1(closure_2[7]);
+              hideActionSheetResult = obj.hideActionSheet();
+              tmp2 = onConfirm(closure_2);
+              return;
+            }
+          }
+          tmp14[0] = tmp8.headerText;
+          const tmp15 = closure_7(onConfirm(first[8]).BottomSheetTitleHeader, tmp14);
+          cResult[8] = tmp8.headerText;
+          cResult[9] = tmp15;
+          tmp12 = tmp15;
+        } else {
+          tmp12 = cResult[9];
+        }
+        if (cResult[10] !== tmp8.descriptionText) {
+          class C {
+            constructor() {
+              obj = closure_1(closure_2[7]);
+              hideActionSheetResult = obj.hideActionSheet();
+              tmp2 = onConfirm(closure_2);
+              return;
+            }
+          }
+          tmp18[2] = tmp8.descriptionText;
+          const tmp19 = closure_7(onConfirm(first[9]).Text, tmp18);
+          cResult[10] = tmp8.descriptionText;
+          cResult[11] = tmp19;
+          tmp16 = tmp19;
+        } else {
+          tmp16 = cResult[11];
+        }
+        const _Symbol = Symbol;
+        if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+          class C {
+            constructor() {
+              obj = closure_1(closure_2[7]);
+              hideActionSheetResult = obj.hideActionSheet();
+              tmp2 = onConfirm(closure_2);
+              return;
+            }
+          }
+          const Text = tmp(tmp2[9]).Text;
+          const intl = tmp(tmp2[10]).intl;
+          tmp23[2] = intl.string(onConfirm(first[10]).t.Oa9oWJ);
+          const tmp24 = closure_7(Text, tmp23);
+          cResult[12] = tmp24;
+          tmp21 = tmp24;
+        } else {
+          tmp21 = cResult[12];
+        }
+        const _Symbol2 = Symbol;
+        if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl2 = tmp(tmp2[10]).intl;
+          class C {
+            constructor() {
+              obj = closure_1(closure_2[7]);
+              hideActionSheetResult = obj.hideActionSheet();
+              tmp2 = onConfirm(closure_2);
+              return;
+            }
+          }
+          const tmp28Result = tmp28(onConfirm(first[10]).t.Df4aUN);
+          const intl3 = tmp(tmp2[10]).intl;
+          const stringResult = intl3.string(onConfirm(first[10]).t.eOWEmL);
+          const intl4 = tmp(tmp2[10]).intl;
+          const stringResult1 = intl4.string(onConfirm(first[10]).t.gDZw7A);
+          cResult[13] = tmp28Result;
+          cResult[14] = stringResult;
+          cResult[15] = stringResult1;
+          tmp27 = stringResult1;
+          tmp25 = tmp28Result;
+          tmp26 = stringResult;
+        } else {
+          tmp25 = cResult[13];
+          class C {
+            constructor() {
+              obj = closure_1(closure_2[7]);
+              hideActionSheetResult = obj.hideActionSheet();
+              tmp2 = onConfirm(closure_2);
+              return;
+            }
+          }
+          tmp27 = cResult[15];
+        }
+        if (cResult[16] !== first) {
+          class C {
+            constructor() {
+              obj = closure_1(closure_2[7]);
+              hideActionSheetResult = obj.hideActionSheet();
+              tmp2 = onConfirm(closure_2);
+              return;
+            }
+          }
+          tmp34[0] = tmp25;
+          tmp34[1] = tmp26;
+          tmp34[2] = tmp27;
+          tmp34[3] = closure_6;
+          tmp34[4] = first;
+          tmp34[5] = tmp7;
+          const tmp36 = closure_7(onConfirm(first[11]).TextArea, tmp34);
+          cResult[16] = first;
+          cResult[17] = tmp36;
+          tmp32 = tmp36;
+        } else {
+          tmp32 = cResult[17];
+        }
+        if (cResult[18] === action) {
+          if (cResult[19] === tmp10) {
+            let tmp37;
+            if (cResult[20] === tmp11) {
+              tmp37 = cResult[21];
+            }
+            class C {
+              constructor() {
+                obj = closure_1(closure_2[7]);
+                hideActionSheetResult = obj.hideActionSheet();
+                tmp2 = onConfirm(closure_2);
+                return;
+              }
+            }
+            const obj2 = { keyboardShouldPersistTaps: "handled", header: tmp12, children: items };
+            items = [tmp16, tmp21, tmp32, tmp37];
+            cResult[22] = tmp32;
+            cResult[23] = tmp37;
+            cResult[24] = tmp12;
+            cResult[25] = tmp16;
+            cResult[26] = closure_8(onConfirm(first[14]).ActionSheet, obj2);
+            const tmp43 = closure_8(onConfirm(first[14]).ActionSheet, obj2);
+          }
+        }
+        if (null == action) {
+          class C {
+            constructor() {
+              obj = closure_1(closure_2[7]);
+              hideActionSheetResult = obj.hideActionSheet();
+              tmp2 = onConfirm(closure_2);
+              return;
+            }
+          }
+          const Button = tmp(tmp2[12]).Button;
+          const intl5 = tmp(tmp2[10]).intl;
+          tmp39[1] = intl5.string(onConfirm(first[10]).t.JFfins);
+          tmp39[2] = tmp10;
+          tmp40 = closure_7(Button, tmp39);
+        } else {
+          class C {
+            constructor() {
+              obj = closure_1(closure_2[7]);
+              hideActionSheetResult = obj.hideActionSheet();
+              tmp2 = onConfirm(closure_2);
+              return;
+            }
+          }
+          const TwinButtons = tmp(tmp2[13]).TwinButtons;
+          const obj3 = { grow: true, variant: "secondary", text: intl6.string(onConfirm(first[10]).t.R9GHya), onPress: tmp11 };
+          const Button2 = tmp(tmp2[12]).Button;
+          intl6 = tmp(tmp2[10]).intl;
+          const items1 = [closure_7(Button2, obj3), ];
+          const obj4 = { grow: true, text: intl7.string(onConfirm(first[10]).t["R3BPH+"]), onPress: tmp10 };
+          const Button3 = tmp(tmp2[12]).Button;
+          intl7 = tmp(tmp2[10]).intl;
+          items1[1] = closure_7(Button3, obj4);
+          tmp45[0] = items1;
+          tmp40 = closure_8(TwinButtons, tmp45);
+        }
+        cResult[18] = action;
+        cResult[19] = tmp10;
+        cResult[20] = tmp11;
+        cResult[21] = tmp40;
+        tmp37 = tmp40;
+      }
+      class C {
+        constructor() {
+          obj = closure_1(closure_2[7]);
+          hideActionSheetResult = obj.hideActionSheet();
+          tmp2 = onConfirm(closure_2);
+          return;
+        }
+      }
+      cResult[3] = first;
+      cResult[4] = onConfirm;
+      cResult[5] = C;
+      tmp10 = C;
+    }
+  }
+  const tmpResult = onConfirm(first[6]);
+  const actionInfo = tmpResult.getActionInfo(constants.BLOCK_MESSAGE, action, triggerType);
+  cResult[0] = action;
+  cResult[1] = triggerType;
+  cResult[2] = actionInfo;
+  tmp8 = actionInfo;
+}) : ((triggerType) => {
   let action;
   let intl;
   let intl2;
@@ -60,28 +304,28 @@ export default function BlockMessageActionSheet(triggerType) {
       require(first);
     }
     const obj2 = { keyboardShouldPersistTaps: "handled", header: closure_7(require("BottomSheetTitleHeader").BottomSheetTitleHeader, obj3), children: items };
-    const ActionSheet = tmp5(tmp6[6]).ActionSheet;
+    const ActionSheet = tmp5(tmp6[14]).ActionSheet;
     obj3 = { title: actionInfo.headerText };
     const obj4 = { variant: "text-md/normal", color: "text-default", children: actionInfo.descriptionText };
     items = [closure_7(require("Text/Text").Text, obj4), , , ];
     const obj5 = { variant: "text-md/normal", color: "text-default", children: intl2.string(require("intl").t.Oa9oWJ) };
-    const Text = tmp5(tmp6[8]).Text;
-    intl2 = tmp5(tmp6[9]).intl;
+    const Text = tmp5(tmp6[9]).Text;
+    intl2 = tmp5(tmp6[10]).intl;
     items[1] = closure_7(Text, obj5);
     const obj6 = { label: intl3.string(require("intl").t.Df4aUN), description: intl4.string(require("intl").t.eOWEmL), placeholder: intl5.string(require("intl").t.gDZw7A), maxLength, value, onChange: tmp4 };
-    const TextArea = tmp5(tmp6[10]).TextArea;
-    intl3 = tmp5(tmp6[9]).intl;
-    intl4 = tmp5(tmp6[9]).intl;
-    intl5 = tmp5(tmp6[9]).intl;
+    const TextArea = tmp5(tmp6[11]).TextArea;
+    intl3 = tmp5(tmp6[10]).intl;
+    intl4 = tmp5(tmp6[10]).intl;
+    intl5 = tmp5(tmp6[10]).intl;
     items[2] = closure_7(TextArea, obj6);
     if (null == action) {
       const obj7 = { grow: true, text: intl.string(require("intl").t.JFfins), onPress: handleConfirm };
-      const Button = tmp5(tmp6[11]).Button;
-      intl = tmp5(tmp6[9]).intl;
+      const Button = tmp5(tmp6[12]).Button;
+      intl = tmp5(tmp6[10]).intl;
       tmp9Result = tmp10(Button, obj7);
     } else {
       const obj8 = { children: items1 };
-      const TwinButtons = tmp5(tmp6[12]).TwinButtons;
+      const TwinButtons = tmp5(tmp6[13]).TwinButtons;
       const obj9 = {
         grow: true,
         variant: "secondary",
@@ -92,16 +336,19 @@ export default function BlockMessageActionSheet(triggerType) {
               importDefault();
             }
       };
-      const Button2 = tmp5(tmp6[11]).Button;
-      intl6 = tmp5(tmp6[9]).intl;
+      const Button2 = tmp5(tmp6[12]).Button;
+      intl6 = tmp5(tmp6[10]).intl;
       items1 = [closure_7(Button2, obj9), ];
       const obj10 = { grow: true, text: intl7.string(require("intl").t["R3BPH+"]), onPress: handleConfirm };
-      const Button3 = tmp5(tmp6[11]).Button;
-      intl7 = tmp5(tmp6[9]).intl;
+      const Button3 = tmp5(tmp6[12]).Button;
+      intl7 = tmp5(tmp6[10]).intl;
       items1[1] = closure_7(Button3, obj10);
       tmp9Result = tmp9(TwinButtons, obj8);
     }
     items[3] = tmp9Result;
     return closure_8(ActionSheet, obj2);
   }
-};
+});
+const result = size.fileFinishedImporting("modules/guild_automod/native/components/BlockMessageActionSheet.tsx");
+
+export default tmp4;

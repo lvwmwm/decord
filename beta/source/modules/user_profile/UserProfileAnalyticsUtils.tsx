@@ -1,27 +1,27 @@
-// Module ID: 7636
-// Function ID: 7637
+// Module ID: 7640
+// Function ID: 7641
 // Name: UserProfileAnalyticsUtils
-// Dependencies: [7637, 6528, 7072, 4858, 2108, 4876, 4479, 1372, 7035, 7628, 1074, 1085, 1397, 7631, 1241, 5016, 7643, 2]
+// Dependencies: [7641, 6529, 7076, 4859, 2111, 4877, 4482, 1378, 7039, 7632, 1086, 1097, 1403, 7635, 1253, 5017, 7647, 2]
 // Exports: getActivityType, getTrackUserRelationshipProperties, getUserStatus, maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction
 
-// Module 7636 (UserProfileAnalyticsUtils)
-import Constants2 from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6528 */;
-import Constants3 from "Constants" /* 7628 */;
-import useDisplayProfile from "useDisplayProfile" /* 7631 */;
-import UserProfilePerformanceAnalyticsExperiment from "UserProfilePerformanceAnalyticsExperiment" /* 7643 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7637 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7072 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import PresenceStore from "PresenceStore" /* 4876 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
-import UserProfileStore from "UserProfileStore" /* 7035 */;
-import Constants from "Constants" /* 1074 */;
+// Module 7640 (UserProfileAnalyticsUtils)
+import Constants2 from "Constants" /* 1097 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import AvatarUtils from "AvatarUtils" /* 1403 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6529 */;
+import Constants3 from "Constants" /* 7632 */;
+import useDisplayProfile from "useDisplayProfile" /* 7635 */;
+import UserProfilePerformanceAnalyticsExperiment from "UserProfilePerformanceAnalyticsExperiment" /* 7647 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7641 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7076 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import PresenceStore from "PresenceStore" /* 4877 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
+import UserProfileStore from "UserProfileStore" /* 7039 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const AuthorizedAppsStore = AuthorizedAppsStore2;

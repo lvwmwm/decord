@@ -1,22 +1,22 @@
-// Module ID: 9243
-// Function ID: 9244
+// Module ID: 9221
+// Function ID: 9222
 // Name: GameConsoleActionCreators
-// Dependencies: [5, 4859, 4854, 4853, 1074, 1241, 573, 5203, 1115, 9107, 9244, 1271, 1231, 9245, 9246, 9249, 2]
+// Dependencies: [5, 4860, 4855, 4854, 1086, 1253, 585, 5204, 1127, 9084, 9222, 1283, 1243, 9223, 9224, 9227, 2]
 // Exports: connectToRemote, fetchDevices, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, transferToPlayStation, waitForSession
 
-// Module 9243 (GameConsoleActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 9107 */;
-import ConsoleHandoffType from "ConsoleHandoffType" /* 9244 */;
-import ConsoleCommands from "ConsoleCommands" /* 9245 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 9246 */;
+// Module 9221 (GameConsoleActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 9084 */;
+import ConsoleHandoffType from "ConsoleHandoffType" /* 9222 */;
+import ConsoleCommands from "ConsoleCommands" /* 9223 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 9224 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import SessionsStore from "SessionsStore" /* 4854 */;
-import GameConsoleStore from "GameConsoleStore" /* 4853 */;
-import Constants from "Constants" /* 1074 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import SessionsStore from "SessionsStore" /* 4855 */;
+import GameConsoleStore from "GameConsoleStore" /* 4854 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let awaitingRemoteSessionInfo, body, c1, closure_3, closure_4, closure_5, error;
@@ -41,7 +41,7 @@ let obj = function _disconnectRemote() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -124,7 +124,7 @@ let obj = function _disconnectRemote() {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp30) {
         let closure_2 = tmp30;
@@ -205,7 +205,7 @@ obj = function _fetchDevices() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -289,7 +289,7 @@ obj = function _sendConnectVoiceCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -374,7 +374,7 @@ obj = function _cancelCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -421,7 +421,7 @@ obj = function _cancelCommand() {
             obj = closure_132_1(closure_132_2[6]);
             obj.dispatch(obj11);
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           closure_5 = tmp25;
@@ -458,7 +458,7 @@ obj = function _transferToPlayStation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -528,7 +528,7 @@ obj = function _transferToPlayStation() {
           } else {
             closure_132_1(closure_132_2[15])(id.id, closure_0);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp26) {
           c6 = 3;

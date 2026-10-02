@@ -1,32 +1,32 @@
-// Module ID: 10367
-// Function ID: 10368
+// Module ID: 10410
+// Function ID: 10411
 // Name: GuildLeaderboardUtils
-// Dependencies: [32, 10368, 1115, 2]
+// Dependencies: [32, 10411, 1127, 2]
 // Exports: decodeWinnerData, encodeWinnerData, getLeaderboardWinnerBadgeText
 
-// Module 10367 (GuildLeaderboardUtils)
-import GuildLeaderboardStatCopy from "GuildLeaderboardStatCopy" /* 10368 */;
+// Module 10410 (GuildLeaderboardUtils)
+import GuildLeaderboardStatCopy from "GuildLeaderboardStatCopy" /* 10411 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_space/gaming_leaderboard/GuildLeaderboardUtils.tsx");
 
 export const LEADERBOARD_WINNER_ROLE_NAME_PREFIX = "leaderboard-winner-badge-sentinel-deliberately-longer-than-the-100-character-maximum-role-name-length:";
-export const getLeaderboardWinnerBadgeText = function getLeaderboardWinnerBadgeText(prop) {
+export const getLeaderboardWinnerBadgeText = function getLeaderboardWinnerBadgeText(stateFromStores) {
   const obj = GuildLeaderboardStatCopy;
-  const name = obj.getStatName(prop.winningStat).name;
-  const winningStreak = prop.winningStreak;
+  const name = obj.getStatName(stateFromStores.winningStat).name;
+  const winningStreak = stateFromStores.winningStreak;
   if (null != winningStreak) {
     let formatToPlainStringResult;
     if (winningStreak > 1) {
-      const intl2 = tmp(1115).intl;
+      const intl2 = tmp(1127).intl;
       const obj2 = { streakCount: winningStreak, statName: name };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp(1115).t.owAd83, obj2);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp(1127).t.owAd83, obj2);
     }
     return formatToPlainStringResult;
   }
-  const intl = tmp(1115).intl;
-  formatToPlainStringResult = intl.formatToPlainString(tmp(1115).t.So4gmj, { statName: name });
+  const intl = tmp(1127).intl;
+  formatToPlainStringResult = intl.formatToPlainString(tmp(1127).t.So4gmj, { statName: name });
 };
 export const encodeWinnerData = function encodeWinnerData(prop) {
   let num = prop.winningStat;

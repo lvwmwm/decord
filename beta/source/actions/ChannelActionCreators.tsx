@@ -1,25 +1,25 @@
-// Module ID: 4849
-// Function ID: 4850
+// Module ID: 4850
+// Function ID: 4851
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 4850, 2049, 2045, 4851, 1074, 9194, 1271, 5834, 4693, 4847, 5723, 573, 7822, 1241, 1101, 4685, 1115, 6741, 5092, 2]
+// Dependencies: [32, 5, 4851, 2055, 2051, 4852, 1086, 9206, 1283, 5835, 4695, 4848, 5724, 585, 7826, 1253, 1113, 4687, 1127, 6742, 5093, 2]
 
-// Module 4849 (ChannelActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import router_utils from "router_utils" /* 1101 */;
-import intl2 from "intl" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import shared from "shared" /* 4685 */;
-import RootNavigationRef from "RootNavigationRef" /* 4693 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 7822 */;
+// Module 4850 (ChannelActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import router_utils from "router_utils" /* 1113 */;
+import intl2 from "intl" /* 1127 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import shared from "shared" /* 4687 */;
+import RootNavigationRef from "RootNavigationRef" /* 4695 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5724 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 7826 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 4850 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import ReadStateStore from "ReadStateStore" /* 4851 */;
-import Constants from "Constants" /* 1074 */;
+import ChangelogStore from "ChangelogStore" /* 4851 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ReadStateStore from "ReadStateStore" /* 4852 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let _require, c0, c5, recipient_id;
@@ -32,7 +32,7 @@ let closure_15;
 let map1;
 let tmp5;
 let unpackModuleId;
-const transitionToChannel = tmp5(4847);
+const transitionToChannel = tmp5(4848);
 let closure_6 = ChannelRecord.createChannelRecordFromServer;
 ({ AnalyticEvents: c9, AbortCodes: c10, Endpoints: unpackModuleId, Routes: closure_12, ME: map1, CURRENT_APP_CONTEXT: closure_14, ChannelTypes: closure_15 } = Constants);
 let obj = {
@@ -71,7 +71,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -199,7 +199,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -296,7 +296,7 @@ let obj = {
         const obj2 = RootNavigationRef;
         const tmp6 = require;
         if (null != obj2.getRootNavigationRef()) {
-          const tmp6Result = tmp6(4847);
+          const tmp6Result = tmp6(4848);
           tmp6Result.transitionToChannel(channel.id, { navigationReplace: true });
           tmp3 = channel;
         } else {
@@ -346,7 +346,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -390,8 +390,8 @@ let obj = {
       }
     })();
   },
-  getDMChannel(arr) {
-    let closure_0 = arr;
+  getDMChannel(id) {
+    let closure_0 = id;
     return (async () => {
       let c3;
       let closure_0;
@@ -453,7 +453,7 @@ let obj = {
       AnalyticsUtilsDefault;
       track(CHANGE_LOG_DM_REMOVED, obj);
     }
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "paddingHorizontal" }, silent: flag2 };
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "applicationId" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     tmpResult2.dispatch(obj2);
     if (flag) {
@@ -635,7 +635,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -782,7 +782,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -998,7 +998,7 @@ let obj = {
       let closure_1;
       closure_0 = tmp4;
       await self.fetchChannel(closure_0);
-      closure_0 = await "HermesInternal";
+      closure_0 = await "IconComponent";
       const tmp = closure_1_6(closure_0);
       const obj6 = { type: "CHANNEL_CREATE", channel: tmp };
       const obj = tmp(c2[13]);

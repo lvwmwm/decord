@@ -1,40 +1,94 @@
 // Module ID: 9973
 // Function ID: 9974
-// Dependencies: [41, 42, 9965, 9922]
+// Dependencies: [41, 42, 93, 95, 98, 9939]
 
 // Module 9973
-import NUMBER from "NUMBER" /* 9965 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9939 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-let tmp;
-const _mod9922 = tmp(9922);
-const keys = Object.keys(NUMBER.WEEKDAY_OFFSET);
-const regExp = new RegExp("(?:\\(|\\\uFF08)(?<weekday>" + keys.join("|") + ")(?:\\)|\\\uFF09)", "i");
-class JPWeekdayWithParenthesesParser {
-  constructor() {
-    _classCallCheck(this, JPWeekdayWithParenthesesParser);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+const regExp = new RegExp("([0-9]{4})\\-([0-9]{1,2})\\-([0-9]{1,2})(?:T([0-9]{1,2}):([0-9]{1,2})(?::([0-9]{1,2})(?:\\.(\\d{1,4}))?)?(Z|([+-]\\d{2}):?(\\d{2})?)?)?(?=\\W|$)", "i");
+class ISOFormatParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ISOFormatParser);
+    const obj = _getPrototypeOf(ISOFormatParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ISOFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "pattern",
-  value: function pattern() {
+  key: "innerPattern",
+  value: function innerPattern() {
     return regExp;
   }
 };
 const items = [
   entry,
   {
-    key: "extract",
-    value: function extract(reference, arg1) {
-      const tmp3 = NUMBER.WEEKDAY_OFFSET[arg1.groups.weekday];
-      let parsingComponentsAtWeekday = null;
-      if (undefined !== tmp3) {
-        parsingComponentsAtWeekday = _mod9922.createParsingComponentsAtWeekday(reference.reference, tmp3);
+    key: "innerExtract",
+    value: function innerExtract(createParsingComponents, arg1) {
+      const date = { year: parseInt(arg1[1]), month: parseInt(arg1[2]), day: parseInt(arg1[3]) };
+      const parsingComponents = createParsingComponents.createParsingComponents(date);
+      if (null != arg1[4]) {
+        const _parseInt5 = parseInt;
+        parsingComponents.assign("hour", parseInt(arg1[4]));
+        const _parseInt6 = parseInt;
+        parsingComponents.assign("minute", parseInt(arg1[5]));
+        if (null != arg1[6]) {
+          const _parseInt = parseInt;
+          parsingComponents.assign("second", parseInt(arg1[6]));
+        }
+        if (null != arg1[7]) {
+          const _parseInt2 = parseInt;
+          parsingComponents.assign("millisecond", parseInt(arg1[7]));
+        }
+        if (null != arg1[8]) {
+          let num2 = 0;
+          if (arg1[9]) {
+            const _parseInt3 = parseInt;
+            let num3 = 0;
+            const parsed = parseInt(arg1[9]);
+            if (null != arg1[10]) {
+              const _parseInt4 = parseInt;
+              num3 = parseInt(arg1[10]);
+            }
+            const result = 60 * parsed;
+            num2 = result < 0 ? result - num3 : result + num3;
+          }
+          parsingComponents.assign("timezoneOffset", num2);
+        }
       }
-      return parsingComponentsAtWeekday;
+      return parsingComponents.addTag("parser/ISOFormatParser");
     }
   }
 ];
 
-export default _createClass(JPWeekdayWithParenthesesParser, items);
+export default _createClass(ISOFormatParser, items);

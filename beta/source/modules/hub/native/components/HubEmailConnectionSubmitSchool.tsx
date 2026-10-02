@@ -1,26 +1,26 @@
-// Module ID: 12252
-// Function ID: 12253
+// Module ID: 12147
+// Function ID: 12148
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 12233, 1074, 21, 4836, 576, 1485, 6402, 12246, 4735, 12241, 1177, 1115, 4832, 6023, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 12126, 1086, 21, 4837, 588, 1491, 6399, 12141, 4737, 12136, 1189, 1127, 4833, 6020, 5282, 2]
 // Exports: default
 
-// Module 12252 (HubEmailConnectionSubmitSchool)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import intl6 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import useNavigation from "useNavigation" /* 1485 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6023 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
-import HubConstants from "HubConstants" /* 12233 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12241 */;
+// Module 12147 (HubEmailConnectionSubmitSchool)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl6 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import useNavigation from "useNavigation" /* 1491 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6020 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6399 */;
+import HubConstants from "HubConstants" /* 12126 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12136 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_2, dependencyMap;
@@ -87,7 +87,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -142,7 +142,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
             c3 = 0;
             closure_129_3(false);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp41) {
           closure_2 = tmp41;
@@ -233,8 +233,8 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
       return obj(...arguments);
     }
   };
-  Button = tmp2(5281).Button;
-  intl5 = tmp2(1115).intl;
+  Button = tmp2(5282).Button;
+  intl5 = tmp2(1127).intl;
   items2[2] = closure_9(first1, obj12);
   return closure_9(HubEmailConnectionScreen, obj10);
 };

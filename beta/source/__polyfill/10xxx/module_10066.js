@@ -1,12 +1,12 @@
 // Module ID: 10066
 // Function ID: 10067
-// Dependencies: [41, 42, 93, 95, 98, 9895, 10064, 9896, 9902]
+// Dependencies: [41, 42, 93, 95, 98, 10061, 9934, 9935, 10063]
 
 // Module 10066
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9895 */;
-import findMostLikelyADYear from "findMostLikelyADYear" /* 9896 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
-import _mod10064 from "module_10064" /* 10064 */;
+import EmptyDuration from "EmptyDuration" /* 9934 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9935 */;
+import REGEX_PARTS from "REGEX_PARTS" /* 10061 */;
+import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 10063 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -28,15 +28,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod10064.MONTH_DICTIONARY);
-const ORDINAL_NUMBER_PATTERN = _mod10064.ORDINAL_NUMBER_PATTERN;
-const regExp = new RegExp("(" + matchAnyPatternResult + ")(?:-|/|\\s*,?\\s*)(" + ORDINAL_NUMBER_PATTERN + ")(?!\\s*(?:am|pm))\\s*(?:(?:al|\\-|\\alle|\\del|\\s)\\s*(" + _mod10064.ORDINAL_NUMBER_PATTERN + ")\\s*)?(?:(?:-|/|\\s*,?\\s*)(" + _mod10064.YEAR_PATTERN + "))?(?=\\W|$)(?!\\:\\d)", "i");
-class ENMonthNameMiddleEndianParser {
+class RUTimeUnitAgoFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENMonthNameMiddleEndianParser);
-    const obj = _getPrototypeOf(ENMonthNameMiddleEndianParser);
+    _classCallCheck(this, RUTimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(RUTimeUnitAgoFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -48,44 +45,24 @@ class ENMonthNameMiddleEndianParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENMonthNameMiddleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(RUTimeUnitAgoFormatParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "innerPatternString",
+  value: function innerPatternString(arg0) {
+    return "(" + REGEX_PARTS.TIME_UNITS_PATTERN + ")\\s{0,5}\u043D\u0430\u0437\u0430\u0434(?=(?:\\W|$))";
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingComponents, index) {
-      const tmp3 = _mod10064.MONTH_DICTIONARY[index[1].toLowerCase(index[1])];
-      const result = _mod10064.parseOrdinalNumberPattern(index[2]);
-      if (result > 31) {
-        return null;
-      } else {
-        const date = { day: result, month: tmp3 };
-        const parsingComponents = createParsingComponents.createParsingComponents(date);
-        if (index[4]) {
-          parsingComponents.assign("year", _mod10064.parseYear(index[4]));
-        } else {
-          parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, result, tmp3));
-        }
-        if (index[3]) {
-          const result1 = tmp(10064).parseOrdinalNumberPattern(index[3]);
-          const parsingResult = createParsingComponents.createParsingResult(index.index, index[0]);
-          parsingResult.start = parsingComponents;
-          parsingResult.end = parsingComponents.clone();
-          const end = parsingResult.end;
-          end.assign("day", result1);
-          return parsingResult;
-        } else {
-          return parsingComponents;
-        }
-      }
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = REGEX_PARTS.parseDuration(arg1[1]);
+      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
     }
   }
 ];
 
-export default _createClass(ENMonthNameMiddleEndianParser, items);
+export default _createClass(RUTimeUnitAgoFormatParser, items);

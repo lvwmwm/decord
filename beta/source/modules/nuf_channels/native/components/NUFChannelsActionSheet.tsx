@@ -1,24 +1,106 @@
-// Module ID: 13312
-// Function ID: 13313
+// Module ID: 13314
+// Function ID: 13315
 // Name: NUFChannelsActionSheet
-// Dependencies: [19, 2042, 21, 4800, 6571, 13313, 13314, 1115, 2]
-// Exports: default
+// Dependencies: [19, 2048, 21, 558, 576, 4801, 13315, 1127, 13322, 6572, 2]
 
-// Module 13312 (NUFChannelsActionSheet)
+// Module 13314 (NUFChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import NUFTemplateV2Default from "NUFTemplateV2" /* 13313 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 13315 */;
+import NUFTemplateV2Default from "NUFTemplateV2" /* 13322 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet;
+let BottomSheet, markAsDismissed;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/nuf_channels/native/components/NUFChannelsActionSheet.tsx");
-
-export default function NUFChannelsActionSheet(markAsDismissed) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+  let tmp16;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  const tmp = markAsDismissed;
+  const tmp2 = dependencyMap;
+  let obj = markAsDismissed(576);
+  const cResult = obj.c(13);
+  markAsDismissed = markAsDismissed.markAsDismissed;
+  if (cResult[0] !== markAsDismissed) {
+    const fn = function o() {
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
+      if (markAsDismissed != null) {
+        tmp2(ContentDismissActionType.UNKNOWN);
+      }
+    };
+    cResult[0] = markAsDismissed;
+    cResult[1] = fn;
+    tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] !== markAsDismissed) {
+    const fn2 = function u() {
+      let tmpResult;
+      if (markAsDismissed != null) {
+        tmpResult = tmp(ContentDismissActionType.UNKNOWN);
+      }
+      return tmpResult;
+    };
+    cResult[2] = markAsDismissed;
+    cResult[3] = fn2;
+    tmp5 = fn2;
+  } else {
+    tmp5 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp12 = jsx(NUFChannelIllustrationDefault, {});
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(tmp(1127).t.Ay9424);
+    const intl2 = tmp(1127).intl;
+    const stringResult1 = intl2.string(tmp(1127).t.mufH2P);
+    const intl3 = tmp(1127).intl;
+    const stringResult2 = intl3.string(tmp(1127).t.BddRzS);
+    cResult[4] = tmp12;
+    cResult[5] = stringResult;
+    cResult[6] = stringResult1;
+    cResult[7] = stringResult2;
+    tmp9 = stringResult2;
+    tmp8 = stringResult1;
+    tmp7 = stringResult;
+    tmp6 = tmp12;
+  } else {
+    tmp6 = cResult[4];
+    tmp7 = cResult[5];
+    tmp8 = cResult[6];
+    tmp9 = cResult[7];
+  }
+  if (cResult[8] !== tmp4) {
+    const tmp19 = jsx(NUFTemplateV2Default, { illustration: tmp6, title: tmp7, description: tmp8, CTALabel: tmp9, onCTAPress: tmp4 });
+    cResult[8] = tmp4;
+    cResult[9] = tmp19;
+    tmp16 = tmp19;
+  } else {
+    tmp16 = cResult[9];
+  }
+  if (cResult[10] === tmp5) {
+    let tmp20;
+    if (cResult[11] === tmp16) {
+      tmp20 = cResult[12];
+    }
+    return tmp20;
+  }
+  const tmp21 = jsx(tmp(6572).BottomSheet, { onDismiss: tmp5, startExpanded: true, children: tmp16 });
+  cResult[10] = tmp5;
+  cResult[11] = tmp16;
+  cResult[12] = tmp21;
+  tmp20 = tmp21;
+}) : ((markAsDismissed) => {
   let intl;
   let intl2;
   let intl3;
@@ -31,12 +113,12 @@ export default function NUFChannelsActionSheet(markAsDismissed) {
       tmp2(ContentDismissActionType.UNKNOWN);
     }
   }, items);
-  BottomSheet = markAsDismissed(6571).BottomSheet;
-  ({ illustration: null, title: intl.string(markAsDismissed(1115).t.Ay9424), description: intl2.string(markAsDismissed(1115).t.mufH2P), CTALabel: intl3.string(markAsDismissed(1115).t.BddRzS), onCTAPress: callback });
+  BottomSheet = markAsDismissed(6572).BottomSheet;
+  ({ illustration: null, title: intl.string(markAsDismissed(1127).t.Ay9424), description: intl2.string(markAsDismissed(1127).t.mufH2P), CTALabel: intl3.string(markAsDismissed(1127).t.BddRzS), onCTAPress: callback });
   const tmp2 = NUFTemplateV2Default;
-  intl = markAsDismissed(1115).intl;
-  intl2 = markAsDismissed(1115).intl;
-  intl3 = markAsDismissed(1115).intl;
+  intl = markAsDismissed(1127).intl;
+  intl2 = markAsDismissed(1127).intl;
+  intl3 = markAsDismissed(1127).intl;
   return <BottomSheet onDismiss={function onDismiss() {
     let tmpResult;
     if (markAsDismissed != null) {
@@ -44,4 +126,7 @@ export default function NUFChannelsActionSheet(markAsDismissed) {
     }
     return tmpResult;
   }} startExpanded>{null}</BottomSheet>;
-};
+});
+const result = size.fileFinishedImporting("modules/nuf_channels/native/components/NUFChannelsActionSheet.tsx");
+
+export default tmp2;

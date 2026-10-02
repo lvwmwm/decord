@@ -1,7 +1,10 @@
 // Module ID: 7779
 // Function ID: 7780
-// Dependencies: []
+// Dependencies: [4665]
 
 // Module 7779
+import module_4665 from "module_4665" /* 4665 */;
 
-export default { SRT: "application/x-subrip", TTML: "application/ttml+xml", VTT: "text/vtt" };
+const point = { x: module_4665.number, y: module_4665.number };
+
+export default module_4665.shape(point);

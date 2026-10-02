@@ -1,186 +1,272 @@
 // Module ID: 1740
 // Function ID: 1741
-// Dependencies: [32, 1649]
-// Exports: processTransformOrigin
+// Dependencies: [41, 42, 32, 1693, 1741, 1742, 1743, 1744, 1692]
+// Exports: getInlineStyle, hasInlineStyles
 
 // Module 1740
-import ReanimatedError from "ReanimatedError" /* 1649 */;
+import _mod1692 from "module_1692" /* 1692 */;
+import _mod1693 from "module_1693" /* 1693 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
-function validateTransformOrigin(arg0) {
-  let obj;
-  let obj2;
-  let tmp22;
-  if (3 !== arg0.length) {
-    const self7 = this;
-    const self8 = this;
-    const reanimatedError = new ReanimatedError.ReanimatedError("Transform origin must have exactly 3 values.");
-    throw reanimatedError;
-  } else {
-    [obj, obj2, tmp22] = arg0;
-    _slicedToArray(arg0, 3);
-    if (typeof obj !== "number") {
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const reanimatedError1 = new ReanimatedError.ReanimatedError("Transform origin x-position must be a number or a percentage string. Passed value: " + obj + ".");
-      throw reanimatedError1;
-    }
-    if (typeof obj2 !== "number") {
-      const _HermesInternal2 = HermesInternal;
-      const self3 = this;
-      const self4 = this;
-      const reanimatedError2 = new ReanimatedError.ReanimatedError("Transform origin y-position must be a number or a percentage string. Passed value: " + obj2 + ".");
-      throw reanimatedError2;
-    }
-    if (typeof tmp22 !== "number") {
-      const _HermesInternal3 = HermesInternal;
-      const self5 = this;
-      const self6 = this;
-      const reanimatedError3 = new ReanimatedError.ReanimatedError("Transform origin z-position must be a number. Passed value: " + tmp22 + ".");
-      throw reanimatedError3;
-    }
-  }
-}
-validateTransformOrigin.__closure = {};
-validateTransformOrigin.__workletHash = 6034608374885;
-validateTransformOrigin.__initData = { code: "function validateTransformOrigin_Pnpm_processTransformOriginTs1(transformOrigin){if(transformOrigin.length!==3){throw new ReanimatedError('Transform origin must have exactly 3 values.');}const[x,y,z]=transformOrigin;if(!(typeof x==='number'||typeof x==='string'&&x.endsWith('%'))){throw new ReanimatedError(\"Transform origin x-position must be a number or a percentage string. Passed value: \"+x+\".\");}if(!(typeof y==='number'||typeof y==='string'&&y.endsWith('%'))){throw new ReanimatedError(\"Transform origin y-position must be a number or a percentage string. Passed value: \"+y+\".\");}if(typeof z!=='number'){throw new ReanimatedError(\"Transform origin z-position must be a number. Passed value: \"+z+\".\");}}" };
-function processTransformOrigin(str) {
-  let items = str;
-  if (!Array.isArray(str)) {
-    items = ["50%", "50%", 0];
-  }
-  if (typeof str === "string") {
-    const obj = /(top|bottom|left|right|center|\d+(?:%|px)|0)/gi;
-    const items1 = ["50%", "50%", 0];
-    let match = obj.exec(str);
-    let num4 = 0;
-    items = items1;
-    if (match) {
-      while (true) {
-        let num;
-        str = match[0];
-        let formatted = str.toLowerCase();
-        let sum = num4 + 1;
-        if ("left" !== formatted) {
-          if ("right" !== formatted) {
-            if ("top" !== formatted) {
-              if ("bottom" !== formatted) {
-                if ("center" === formatted) {
-                  if (2 === num4) {
-                    let _HermesInternal2 = HermesInternal;
-                    let str3 = " cannot be used for z-position";
-                    let str4 = "Transform-origin value ";
-                    let self3 = this;
-                    let self4 = this;
-                    let reanimatedError = new ReanimatedError.ReanimatedError("Transform-origin value " + str + " cannot be used for z-position");
-                    throw reanimatedError;
-                  } else {
-                    items1[num4] = "50%";
-                    num = sum;
-                  }
-                } else if (str.endsWith("%")) {
-                  items1[num4] = str;
-                  num = sum;
-                } else {
-                  let _parseFloat = parseFloat;
-                  let parsed = parseFloat(str);
-                  let _isNaN = isNaN;
-                  if (isNaN(parsed)) {
-                    break;
-                  } else {
-                    items1[num4] = parsed;
-                    num = sum;
-                  }
-                }
-              }
-            }
-            if (2 === num4) {
-              let _HermesInternal4 = HermesInternal;
-              let str7 = " can only be used for y-position";
-              let str8 = "Transform-origin ";
-              let self7 = this;
-              let self8 = this;
-              let reanimatedError1 = new ReanimatedError.ReanimatedError("Transform-origin " + str + " can only be used for y-position");
-              throw reanimatedError1;
-            } else {
-              let num2 = "100%";
-              if ("top" === formatted) {
-                num2 = 0;
-              }
-              items1[1] = num2;
-              num = sum;
-              if (0 === num4) {
-                let match1 = obj.exec(str);
-                num = sum;
-                if (null != match1) {
-                  let formatted1;
-                  if (match1 != null) {
-                    let str5 = match1[0];
-                    formatted1 = str5.toLowerCase();
-                  }
-                  if ("left" === formatted1) {
-                    items1[0] = 0;
-                    num = 2;
-                  } else if ("right" === formatted1) {
-                    items1[0] = "100%";
-                    num = 2;
-                  } else if ("center" === formatted1) {
-                    items1[0] = "50%";
-                    num = 2;
-                  } else {
-                    let _HermesInternal3 = HermesInternal;
-                    let str6 = "Could not parse transform-origin: ";
-                    let self5 = this;
-                    let self6 = this;
-                    let reanimatedError2 = new ReanimatedError.ReanimatedError("Could not parse transform-origin: " + str);
-                    throw reanimatedError2;
-                  }
-                }
-              }
-            }
-          }
-          match = obj.exec(str);
-          num4 = num;
-          items = items1;
-        }
-        if (0 !== num4) {
-          let _HermesInternal5 = HermesInternal;
-          let str10 = " can only be used for x-position";
-          let str11 = "Transform-origin ";
-          let self11 = this;
-          let self12 = this;
-          let reanimatedError3 = new ReanimatedError.ReanimatedError("Transform-origin " + str + " can only be used for x-position");
-          throw reanimatedError3;
-        } else {
-          let num3 = "100%";
-          if ("left" === formatted) {
-            num3 = 0;
-          }
-          items1[0] = num3;
-          num = sum;
-        }
-      }
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const reanimatedError4 = new ReanimatedError.ReanimatedError("Invalid numeric value in transform-origin: " + str);
-      throw reanimatedError4;
-    }
-  }
-  if (typeof str !== "string") {
-    const _Array = Array;
-    if (!Array.isArray(str)) {
-      const self9 = this;
-      const self10 = this;
-      const reanimatedError5 = new ReanimatedError.ReanimatedError("Invalid transformOrigin type: " + typeof str);
-      throw reanimatedError5;
-    }
-  }
-  return items;
-}
-processTransformOrigin.__closure = { INDEX_X: 0, INDEX_Z: 2, INDEX_Y: 1, __DEV__: false, validateTransformOrigin };
-processTransformOrigin.__workletHash = 11541675557002;
-processTransformOrigin.__initData = { code: "function processTransformOrigin_Pnpm_processTransformOriginTs2(transformOriginIn){const{INDEX_X,INDEX_Z,INDEX_Y,__DEV__,validateTransformOrigin}=this.__closure;let transformOrigin=Array.isArray(transformOriginIn)?transformOriginIn:['50%','50%',0];if(typeof transformOriginIn==='string'){const transformOriginString=transformOriginIn;const regex=/(top|bottom|left|right|center|\\d+(?:%|px)|0)/gi;const transformOriginArray=['50%','50%',0];let index=INDEX_X;let matches;while(matches=regex.exec(transformOriginString)){let nextIndex=index+1;const value=matches[0];const valueLower=value.toLowerCase();switch(valueLower){case'left':case'right':{if(index!==INDEX_X){throw new ReanimatedError(\"Transform-origin \"+value+\" can only be used for x-position\");}transformOriginArray[INDEX_X]=valueLower==='left'?0:'100%';break;}case'top':case'bottom':{if(index===INDEX_Z){throw new ReanimatedError(\"Transform-origin \"+value+\" can only be used for y-position\");}transformOriginArray[INDEX_Y]=valueLower==='top'?0:'100%';if(index===INDEX_X){const horizontal=regex.exec(transformOriginString);if(horizontal==null){break;}switch(horizontal===null||horizontal===void 0?void 0:horizontal[0].toLowerCase()){case'left':transformOriginArray[INDEX_X]=0;break;case'right':transformOriginArray[INDEX_X]='100%';break;case'center':transformOriginArray[INDEX_X]='50%';break;default:throw new ReanimatedError(\"Could not parse transform-origin: \"+transformOriginString);}nextIndex=INDEX_Z;}break;}case'center':{if(index===INDEX_Z){throw new ReanimatedError(\"Transform-origin value \"+value+\" cannot be used for z-position\");}transformOriginArray[index]='50%';break;}default:{if(value.endsWith('%')){transformOriginArray[index]=value;}else{const numericValue=parseFloat(value);if(isNaN(numericValue)){throw new ReanimatedError(\"Invalid numeric value in transform-origin: \"+value);}transformOriginArray[index]=numericValue;}break;}}index=nextIndex;}transformOrigin=transformOriginArray;}if(typeof transformOriginIn!=='string'&&!Array.isArray(transformOriginIn)){throw new ReanimatedError(\"Invalid transformOrigin type: \"+typeof transformOriginIn);}if(__DEV__){validateTransformOrigin(transformOrigin);}return transformOrigin;}" };
+const require = globalThis.__r;
 
-export { processTransformOrigin };
+function isInlineStyleTransform(arr) {
+  const f83647 = (item) => {
+    let someResult = item;
+    if (someResult) {
+      let tmp2 = globalThis;
+      let _Object = Object;
+      let keys = Object.keys(item);
+      someResult = keys.some(f83648);
+    }
+    return someResult;
+  };
+  const tmp = Array.isArray(arr) && arr.some(f83647);
+  return tmp;
+}
+function getInlinePropsUpdate(iter) {
+  let tmp6;
+  let tmp7;
+  const obj = {};
+  const entries = Object.entries(iter);
+  const tmp2 = entries[Symbol.iterator]();
+  while (tmp2 !== undefined) {
+    let tmp5 = _slicedToArray(tmp3, 2);
+    [tmp6, tmp7] = tmp5;
+    iter = tmp7;
+    let obj2 = _mod1693;
+    if (obj2.isSharedValue(tmp7)) {
+      obj[tmp6] = iter.value;
+    } else {
+      let _Array = Array;
+      if (Array.isArray(iter)) {
+        obj[tmp6] = iter.map((item) => getInlinePropsUpdate(item));
+      } else {
+        let tmp15;
+        if (typeof iter === "object") {
+          tmp15 = getInlinePropsUpdate(iter);
+        } else {
+          tmp15 = tmp7;
+        }
+        obj[tmp6] = tmp15;
+      }
+    }
+    continue;
+  }
+  return obj;
+}
+let obj = { isSharedValue: require("module_1693").isSharedValue };
+getInlinePropsUpdate.__closure = obj;
+getInlinePropsUpdate.__workletHash = 14886679339062;
+getInlinePropsUpdate.__initData = { code: "function getInlinePropsUpdate_Pnpm_InlinePropManagerTs1(inlineProps){const getInlinePropsUpdate_Pnpm_InlinePropManagerTs1=this._recur;const{isSharedValue}=this.__closure;const update={};for(const[key,styleValue]of Object.entries(inlineProps)){if(isSharedValue(styleValue)){update[key]=styleValue.value;}else if(Array.isArray(styleValue)){update[key]=styleValue.map(function(item){return getInlinePropsUpdate_Pnpm_InlinePropManagerTs1(item);});}else if(typeof styleValue==='object'){update[key]=getInlinePropsUpdate_Pnpm_InlinePropManagerTs1(styleValue);}else{update[key]=styleValue;}}return update;}" };
+const __initData = { code: "function pnpm_InlinePropManagerTs2(){const{getInlinePropsUpdate,newInlineProps,updateProps,shareableViewDescriptors}=this.__closure;const update=getInlinePropsUpdate(newInlineProps);updateProps(shareableViewDescriptors,update);}" };
+class InlinePropManager {
+  constructor() {
+    _classCallCheck(this, InlinePropManager);
+    this._inlinePropsViewDescriptors = null;
+    this._inlinePropsMapperId = null;
+    this._inlineProps = {};
+  }
+}
+const entry = {
+  key: "attachInlineProps",
+  value: function attachInlineProps(self, self2) {
+    let shadowNodeWrapper;
+    let viewName;
+    let viewTag;
+    function inlinePropsHasChanged(arg0, _inlineProps) {
+      if (Object.keys(arg0).length !== Object.keys(_inlineProps).length) {
+        return true;
+      } else {
+        const _Object = Object;
+        const keys = Object.keys(arg0);
+        for (const item10018 of keys) {
+          if (arg0[item10018] !== _inlineProps[item10018]) {
+            obj.return();
+            let flag = true;
+            return true;
+          }
+        }
+        return false;
+      }
+    }
+    const props = self.props;
+    const _inlineProps = {};
+    for (const key10008 in props) {
+      let tmp20 = key10008;
+      let tmp21 = props[key10008];
+      if ("style" === key10008) {
+        let tmp4 = dependencyMap;
+        let tmp5 = _inlineProps(1741);
+        let style = props.style;
+        let flattenArray = tmp5.flattenArray;
+        if (style == null) {
+          style = [];
+        }
+        let flattenArrayResult = flattenArray(style);
+        let item = flattenArrayResult.forEach((item) => {
+          let tmp10;
+          let tmp11;
+          if (item) {
+            const _Object = Object;
+            const entries = Object.entries(item);
+            const tmp4 = entries[Symbol.iterator]();
+            while (tmp4 !== undefined) {
+              let tmp9 = _slicedToArray(tmp6, 2);
+              [tmp10, tmp11] = tmp9;
+              let tmp12 = tmp11;
+              obj = _mod1693;
+              let isSharedValueResult = obj.isSharedValue(tmp11);
+              if (!isSharedValueResult) {
+                let tmp17 = "transform" === tmp10;
+                if (tmp17) {
+                  tmp17 = isInlineStyleTransform(tmp12);
+                }
+                isSharedValueResult = tmp17;
+              }
+              if (isSharedValueResult) {
+                obj[tmp10] = tmp12;
+              }
+              continue;
+            }
+          }
+        });
+        continue;
+      } else {
+        let tmp = _inlineProps;
+        let obj2 = _inlineProps(1693);
+        if (!obj2.isSharedValue(tmp21)) {
+          continue;
+        } else {
+          _inlineProps[key10008] = tmp21;
+          continue;
+        }
+        continue;
+      }
+      continue;
+    }
+    self = this;
+    if (inlinePropsHasChanged(_inlineProps, this._inlineProps)) {
+      if (!self._inlinePropsViewDescriptors) {
+        let tmp8 = _inlineProps;
+        let tmp9 = dependencyMap;
+        const obj3 = _inlineProps(1742);
+        self._inlinePropsViewDescriptors = obj3.makeViewDescriptorsSet();
+        const viewConfig = self2.viewConfig;
+        const tmp10 = globalThis;
+        let _Object = Object;
+        ({ viewTag, viewName, shadowNodeWrapper } = self2);
+        const tmp11 = Object.keys(_inlineProps).length && viewConfig;
+        if (tmp11) {
+          const tmp8Result = tmp8(1743);
+          tmp8Result.adaptViewConfig(viewConfig);
+        }
+        const _inlinePropsViewDescriptors = self._inlinePropsViewDescriptors;
+        const obj4 = { tag: viewTag, name: viewName, shadowNodeWrapper };
+        _inlinePropsViewDescriptors.add(obj4);
+      }
+      const shareableViewDescriptors = self._inlinePropsViewDescriptors.shareableViewDescriptors;
+      const fn = function o() {
+        const tmp = getInlinePropsUpdate(obj);
+        obj = obj(dependencyMap[7]);
+        obj.updateProps(shareableViewDescriptors, tmp);
+      };
+      let tmp14 = getInlinePropsUpdate;
+      let tmp16 = dependencyMap;
+      fn.__closure = { getInlinePropsUpdate, newInlineProps: _inlineProps, updateProps: _inlineProps(1744).updateProps, shareableViewDescriptors };
+      fn.__workletHash = 4459550727912;
+      let tmp17 = __initData;
+      fn.__initData = __initData;
+      self._inlineProps = _inlineProps;
+      const obj5 = { getInlinePropsUpdate, newInlineProps: _inlineProps, updateProps: _inlineProps(1744).updateProps, shareableViewDescriptors };
+      if (self._inlinePropsMapperId) {
+        const tmp15Result = _inlineProps(1692);
+        tmp15Result.stopMapper(self._inlinePropsMapperId);
+      }
+      self._inlinePropsMapperId = null;
+      let tmp19 = globalThis;
+      const _Object2 = Object;
+      if (Object.keys(_inlineProps).length) {
+        const _Object3 = Object;
+        const tmp15Result2 = _inlineProps(1692);
+        self._inlinePropsMapperId = tmp15Result2.startMapper(fn, Object.values(_inlineProps));
+      }
+    }
+  }
+};
+const items = [
+  entry,
+  {
+    key: "detachInlineProps",
+    value: function detachInlineProps() {
+      if (this._inlinePropsMapperId) {
+        const obj = _mod1692;
+        obj.stopMapper(tmp._inlinePropsMapperId);
+      }
+    }
+  }
+];
+const InlinePropManager_export = _createClass(InlinePropManager, items);
+
+export const hasInlineStyles = function hasInlineStyles(viewDescriptors) {
+  const f83648 = (item) => {
+    let obj = item[item];
+    let obj2 = closure_2_0(closure_2_1[3]);
+    let isSharedValueResult = obj2.isSharedValue(obj);
+    if (!isSharedValueResult) {
+      let str = "transform";
+      let tmp2 = "transform" === item;
+      if (tmp2) {
+        let tmp3 = globalThis;
+        let _Array = Array;
+        let tmp4 = Array.isArray(obj) && obj.some(f83647);
+        tmp2 = tmp4;
+      }
+      isSharedValueResult = tmp2;
+    }
+    return isSharedValueResult;
+  };
+  let closure_0 = viewDescriptors;
+  let someResult = viewDescriptors;
+  if (someResult) {
+    const _Object = Object;
+    const keys = Object.keys(viewDescriptors);
+    someResult = keys.some(f83648);
+  }
+  return someResult;
+};
+export const getInlineStyle = function getInlineStyle(viewDescriptors, _isFirstRender) {
+  let tmp11;
+  let tmp12;
+  const tmp = _isFirstRender;
+  if (tmp) {
+    return getInlinePropsUpdate(viewDescriptors);
+  } else {
+    const obj = {};
+    const _Object = Object;
+    const entries = Object.entries(viewDescriptors);
+    const tmp5 = entries[Symbol.iterator]();
+    while (tmp5 !== undefined) {
+      let tmp10 = _slicedToArray(tmp7, 2);
+      [tmp11, tmp12] = tmp10;
+      let tmp13 = tmp12;
+      let obj2 = _mod1693;
+      let isSharedValueResult = obj2.isSharedValue(tmp12);
+      if (!isSharedValueResult) {
+        let tmp18 = "transform" === tmp11;
+        if (tmp18) {
+          tmp18 = isInlineStyleTransform(tmp13);
+        }
+        isSharedValueResult = tmp18;
+      }
+      if (!isSharedValueResult) {
+        obj[tmp11] = tmp13;
+      }
+      continue;
+    }
+    return obj;
+  }
+};
+export { InlinePropManager_export as InlinePropManager };

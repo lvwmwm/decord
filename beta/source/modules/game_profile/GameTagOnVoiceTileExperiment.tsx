@@ -1,10 +1,10 @@
-// Module ID: 16982
-// Function ID: 16983
+// Module ID: 16938
+// Function ID: 16939
 // Name: GameTagOnVoiceTileExperiment
-// Dependencies: [1436, 2]
+// Dependencies: [1442, 2]
 
-// Module 16982 (GameTagOnVoiceTileExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1436 */;
+// Module 16938 (GameTagOnVoiceTileExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1442 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,35 +1,111 @@
-// Module ID: 9722
-// Function ID: 9723
+// Module ID: 9839
+// Function ID: 9840
 // Name: useFocusHandlers
-// Dependencies: [32, 19, 2]
-// Exports: useFocusHandlers
+// Dependencies: [32, 19, 558, 576, 2]
 
-// Module 9722 (useFocusHandlers)
+// Module 9839 (useFocusHandlers)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const PostComposerInputs = { TITLE: 0, [0]: "TITLE", CONTENT: 1, [1]: "CONTENT" };
-const result = size.fileFinishedImporting("modules/forums/native/composer/hooks/useFocusHandlers.tsx");
+let titleInput;
 
-export { PostComposerInputs };
-export const useFocusHandlers = function useFocusHandlers(arg0) {
+const PostComposerInputs = { TITLE: 0, [0]: "TITLE", CONTENT: 1, [1]: "CONTENT" };
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((titleInput) => {
+  let contentInput;
+  let focusedInput;
+  const obj = titleInput(contentInput[3]);
+  const cResult = obj.c(12);
+  titleInput = titleInput.titleInput;
+  contentInput = titleInput.contentInput;
+  const tmp2 = focusedInput(react.useState(obj.TITLE), 2);
+  focusedInput = tmp2[0];
+  if (cResult[0] === contentInput) {
+    if (cResult[1] === focusedInput) {
+      let tmp5;
+      if (cResult[2] === titleInput) {
+        tmp5 = cResult[3];
+      }
+      if (cResult[4] === contentInput) {
+        if (cResult[5] === focusedInput) {
+          let tmp6;
+          if (cResult[6] === titleInput) {
+            tmp6 = cResult[7];
+          }
+          if (cResult[8] === tmp6) {
+            if (cResult[9] === tmp5) {
+              let tmp7;
+              if (cResult[10] === focusedInput) {
+                tmp7 = cResult[11];
+              }
+              return tmp7;
+            }
+          }
+          const obj2 = { setFocusedInput: tmp4, focusLastInput: tmp5, blurLastInput: tmp6, focusedInput };
+          cResult[8] = tmp6;
+          cResult[9] = tmp5;
+          cResult[10] = focusedInput;
+          cResult[11] = obj2;
+          tmp7 = obj2;
+        }
+      }
+      const fn2 = function b() {
+        if (obj.TITLE === first) {
+          const current2 = titleInput.current;
+          if (current2 != null) {
+            current2.blur();
+          }
+        } else if (tmp2.CONTENT === tmp) {
+          const current = contentInput.current;
+          if (current != null) {
+            current.blur();
+          }
+        }
+      };
+      cResult[4] = contentInput;
+      cResult[5] = focusedInput;
+      cResult[6] = titleInput;
+      cResult[7] = fn2;
+      tmp6 = fn2;
+    }
+  }
+  const fn = function c() {
+    if (obj.TITLE === first) {
+      const current2 = titleInput.current;
+      if (current2 != null) {
+        current2.focus();
+      }
+    } else if (tmp2.CONTENT === tmp) {
+      const current = contentInput.current;
+      if (current != null) {
+        current.focus();
+      }
+    }
+  };
+  cResult[0] = contentInput;
+  cResult[1] = focusedInput;
+  cResult[2] = titleInput;
+  cResult[3] = fn;
+  tmp5 = fn;
+}) : ((arg0) => {
+  let obj;
   let ref;
   let ref2;
-  ({ titleInput: _slicedToArray, contentInput: react } = arg0);
+  ({ titleInput: require, contentInput: dependencyMap } = arg0);
   let focusedInput;
-  const tmp = _slicedToArray(react.useState(focusedInput.TITLE), 2);
+  const tmp = focusedInput(react.useState(obj.TITLE), 2);
   focusedInput = tmp[0];
-  const obj = {
+  obj = {
     setFocusedInput: tmp[1],
     focusLastInput() {
       if (obj.TITLE === first) {
-        const current2 = _slicedToArray.current;
+        const current2 = require.current;
         if (current2 != null) {
           current2.focus();
         }
       } else if (tmp2.CONTENT === tmp) {
-        const current = react.current;
+        const current = dependencyMap.current;
         if (current != null) {
           current.focus();
         }
@@ -37,12 +113,12 @@ export const useFocusHandlers = function useFocusHandlers(arg0) {
     },
     blurLastInput() {
       if (obj.TITLE === first) {
-        const current2 = _slicedToArray.current;
+        const current2 = require.current;
         if (current2 != null) {
           current2.blur();
         }
       } else if (tmp2.CONTENT === tmp) {
-        const current = react.current;
+        const current = dependencyMap.current;
         if (current != null) {
           current.blur();
         }
@@ -51,4 +127,8 @@ export const useFocusHandlers = function useFocusHandlers(arg0) {
     focusedInput
   };
   return obj;
-};
+});
+const result = size.fileFinishedImporting("modules/forums/native/composer/hooks/useFocusHandlers.tsx");
+
+export { PostComposerInputs };
+export const useFocusHandlers = tmp2;

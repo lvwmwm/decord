@@ -1,27 +1,67 @@
-// Module ID: 8935
-// Function ID: 8936
+// Module ID: 8930
+// Function ID: 8931
 // Name: useIsStreamFocused
-// Dependencies: [4852, 4857, 504, 2]
-// Exports: useIsStreamFocused
+// Dependencies: [4853, 4858, 558, 576, 504, 2]
 
-// Module 8935 (useIsStreamFocused)
-import CallConstants from "CallConstants" /* 4857 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
+// Module 8930 (useIsStreamFocused)
+import CallConstants from "CallConstants" /* 4858 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4853 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const isStreamParticipant = CallConstants.isStreamParticipant;
-const result = size.fileFinishedImporting("modules/video_calls/useIsStreamFocused.tsx");
-
-export const useIsStreamFocused = function useIsStreamFocused(id) {
-  _require = id;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp8;
+  _require = arg0;
+  const tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelRTCStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function s() {
+      let selectedParticipant = null;
+      if (null != closure_0) {
+        selectedParticipant = ChannelRTCStore.getSelectedParticipant(tmp);
+      }
+      return selectedParticipant;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] !== stateFromStores) {
+    const tmp10 = null != stateFromStores && isStreamParticipant(stateFromStores);
+    cResult[3] = stateFromStores;
+    cResult[4] = tmp10;
+    tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[4];
+  }
+  return tmp8;
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
   const items = [ChannelRTCStore];
   const obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => {
     let selectedParticipant = null;
-    if (null != id) {
+    if (null != closure_0) {
       selectedParticipant = ChannelRTCStore.getSelectedParticipant(tmp);
     }
     return selectedParticipant;
@@ -31,4 +71,7 @@ export const useIsStreamFocused = function useIsStreamFocused(id) {
     tmp2 = isStreamParticipant(stateFromStores);
   }
   return tmp2;
-};
+});
+const result = size.fileFinishedImporting("modules/video_calls/useIsStreamFocused.tsx");
+
+export const useIsStreamFocused = tmp2;

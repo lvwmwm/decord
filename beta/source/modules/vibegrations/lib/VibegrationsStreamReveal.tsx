@@ -1,10 +1,10 @@
-// Module ID: 16347
-// Function ID: 16348
+// Module ID: 16349
+// Function ID: 16350
 // Name: VibegrationsStreamReveal
 // Dependencies: [2]
 // Exports: nextRevealLength, reconcileRevealedLength, safeRevealBoundary, wholeCharacterBoundary
 
-// Module 16347 (VibegrationsStreamReveal)
+// Module 16349 (VibegrationsStreamReveal)
 import size from "module_2" /* 2 */;
 
 function splitsCharacter(target, sum) {
@@ -218,31 +218,31 @@ export const safeRevealBoundary = function safeRevealBoundary(str, arg1, arg2) {
     return tmp;
   }
 };
-export const reconcileRevealedLength = function reconcileRevealedLength(target, source, length) {
+export const reconcileRevealedLength = function reconcileRevealedLength(target, target2, length) {
   const bound = Math.min(Math.max(length, 0), target.length);
   if (0 === bound) {
     return 0;
   } else {
-    if (source.length >= bound) {
-      if (source.startsWith(target.slice(0, bound))) {
+    if (target.length >= bound) {
+      if (target.startsWith(target.slice(0, bound))) {
         return bound;
       }
     }
     const _Math = Math;
-    const bound1 = Math.min(bound, source.length);
+    const bound1 = Math.min(bound, target.length);
     let num = 0;
     if (0 < bound1) {
       let num3 = 0;
       num = 0;
       const charCodeAtResult = target.charCodeAt(0);
-      if (charCodeAtResult === source.charCodeAt(0)) {
+      if (charCodeAtResult === target.charCodeAt(0)) {
         const sum = num3 + 1;
         num = sum;
         while (sum < bound1) {
           let charCodeAtResult1 = target.charCodeAt(sum);
           num3 = sum;
           num = sum;
-          if (charCodeAtResult1 !== source.charCodeAt(sum)) {
+          if (charCodeAtResult1 !== target.charCodeAt(sum)) {
             break;
           }
         }
@@ -252,13 +252,13 @@ export const reconcileRevealedLength = function reconcileRevealedLength(target, 
     if (0 < num) {
       let tmp8 = num;
       tmp6 = num;
-      if (splitsCharacter(source, num)) {
+      if (splitsCharacter(target, num)) {
         const diff = tmp8 - 1;
         tmp6 = diff;
         while (0 < diff) {
           tmp8 = diff;
           tmp6 = diff;
-          if (!splitsCharacter(source, diff)) {
+          if (!splitsCharacter(target, diff)) {
             break;
           }
         }

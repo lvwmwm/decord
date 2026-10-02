@@ -1,12 +1,12 @@
-// Module ID: 9719
-// Function ID: 9720
+// Module ID: 9836
+// Function ID: 9837
 // Name: FormError
-// Dependencies: [1115, 7381, 2]
+// Dependencies: [1127, 7385, 2]
 // Exports: makeApiNameValidationError, makeAutomodViolationError, makeEmptyMessageError, makeEmptyTagsError, makeEmptyTitleError, renderError
 
-// Module 9719 (FormError)
-import intl2 from "intl" /* 1115 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 7381 */;
+// Module 9836 (FormError)
+import intl2 from "intl" /* 1127 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 7385 */;
 import size from "module_2" /* 2 */;
 
 const FormSubmitErrorType = { EmptyContent: 0, [0]: "EmptyContent", AutomodViolation: 1, [1]: "AutomodViolation", EmptyTags: 2, [2]: "EmptyTags", ApiValidation: 3, [3]: "ApiValidation" };

@@ -1,40 +1,128 @@
-// Module ID: 11322
-// Function ID: 11323
+// Module ID: 11197
+// Function ID: 11198
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1372, 2110, 1074, 21, 4836, 7419, 5298, 1241, 11321, 4528, 1115, 8810, 5300, 4832, 4988, 10391, 2]
-// Exports: default
+// Dependencies: [5, 32, 109, 19, 17, 1378, 2113, 1086, 21, 4837, 558, 576, 7423, 10433, 1253, 5297, 4989, 11196, 4531, 1127, 8805, 4833, 5301, 2]
 
-// Module 11322 (GuildEnableCommunicationAlert)
+// Module 11197 (GuildEnableCommunicationAlert)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import CountDownDefault from "CountDown" /* 10391 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
+import useUserCommunicationDisabledDefault from "useUserCommunicationDisabled" /* 7423 */;
+import CountDownDefault from "CountDown" /* 10433 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2110 */;
-import Constants from "Constants" /* 1074 */;
+import UserStore from "UserStore" /* 1378 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2113 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c1, c2, dependencyMap;
+const require = globalThis.__r;
+let c1, c2, dependencyMap, guildId, importDefault;
 
 let Fonts;
 let c10;
 let c9;
-let metroImportAll;
-let metroImportDefault;
+let closure_12;
+let map1;
+let tmp11;
 let unpackModuleId;
+const useMountEffectDefault = tmp11(5297);
+let closure_3 = ["guildId", "userId", "onCancel"];
 const View = react_native.View;
-({ CLEAR_COMMUNICATION_DISABLED_MODAL_NAME: metroImportDefault, GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK: metroImportAll } = GuildDisableCommunicationConstants);
-({ AnalyticEvents: c9, Fonts } = Constants);
-({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+({ CLEAR_COMMUNICATION_DISABLED_MODAL_NAME: c9, GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK: c10 } = GuildDisableCommunicationConstants);
+({ AnalyticEvents: unpackModuleId, Fonts } = Constants);
+({ jsx: closure_12, jsxs: map1 } = Fragment);
 let obj = { wrapper: { padding: 16 }, body: { paddingTop: 16 }, description: { lineHeight: 18 }, cta: { paddingTop: 8 }, countdown: { fontFamily: Fonts.PRIMARY_SEMIBOLD } };
-let closure_12 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/guild_communication_disabled/native/GuildEnableCommunicationAlert.tsx");
-
-export default function GuildEnableCommunicationAlert(guildId) {
+let closure_14 = createStyles.createStyles(obj);
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let _require;
+  let countdown;
+  let first;
+  let other_user_id;
+  const tmp = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(43);
+  if (cResult[0] !== guildId) {
+    guildId = guildId.guildId;
+    _require = guildId;
+    const userId = guildId.userId;
+    importDefault = userId;
+    const onCancel = guildId.onCancel;
+    const tmp9 = _objectWithoutProperties(guildId, first);
+    let num = 0;
+    cResult[0] = guildId;
+    cResult[1] = tmp9;
+    cResult[2] = guildId;
+    cResult[3] = onCancel;
+    cResult[4] = userId;
+  } else {
+    _require = cResult[2];
+    importDefault = cResult[4];
+  }
+  const tmp10 = closure_14();
+  dependencyMap = tmp10;
+  first = _slicedToArray(useUserCommunicationDisabledDefault(tmp6, tmp4), 1)[0];
+  if (cResult[5] === first) {
+    if (cResult[8] === tmp4) {
+      let tmp14;
+      if (cResult[9] === tmp6) {
+        tmp14 = cResult[10];
+      }
+      useMountEffectDefault(tmp14);
+      class S {
+        constructor() {
+          const obj = AnalyticsUtilsDefault;
+          const obj2 = { type, guild_id, other_user_id };
+          obj.track(unpackModuleId.OPEN_MODAL, obj2);
+        }
+      }
+      class U {
+        constructor() {
+          const user = UserStore.getUser(other_user_id);
+          const obj = NicknameUtilsDefault;
+          let str = obj.getName(guild_id, null, user);
+          if (str == null) {
+            str = "";
+          }
+          return str;
+        }
+      }
+      cResult[11] = tmp4;
+      cResult[12] = tmp6;
+      cResult[13] = U;
+    }
+    class S {
+      constructor() {
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { type, guild_id, other_user_id };
+        obj.track(unpackModuleId.OPEN_MODAL, obj2);
+      }
+    }
+    cResult[8] = tmp4;
+    cResult[9] = tmp6;
+    cResult[10] = S;
+    tmp14 = S;
+  }
+  const fn = function b() {
+    let num = 0;
+    if (null != first) {
+      const _Date = Date;
+      const self = this;
+      const self2 = this;
+      num = new Date(tmp);
+    }
+    const obj = { style: countdown.countdown, deadline: num, withUnits: true };
+    return closure_12(CountDownDefault, obj);
+  };
+  cResult[5] = first;
+  cResult[6] = tmp10.countdown;
+  cResult[7] = fn;
+}) : ((guildId) => {
   let countdown;
   let format;
   let intl;
@@ -54,7 +142,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
   const userId = guildId.userId;
   const onCancel = guildId.onCancel;
   const merged = Object.assign(guildId, Object.assign({ guildId: 0, userId: 0, onCancel: 0 }));
-  let obj = function _handleConfirmRemoveTimeout() {
+  let obj = function _handleConfirmRemoveTimeout2() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let closure_0;
       let intl;
@@ -69,7 +157,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -83,7 +171,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              const obj2 = c1(c2[12]);
+              const obj2 = c1(c2[17]);
               c1 = 1;
               c2 = 1;
               const obj5 = { value: obj2.setCommunicationDisabledDuration(guildId, userId), done: false };
@@ -97,13 +185,13 @@ export default function GuildEnableCommunicationAlert(guildId) {
             obj = { value, done: true };
             return obj;
           } else {
-            const obj6 = { key: "GUILD_ENABLE_COMMUNICATION_SUCCESS", content: intl.string(tmp3(c2[14]).t["/Mmbfv"]), icon: c1(c2[15]) };
-            const open = c1(c2[13]).open;
-            const tmp15 = c1(c2[13]);
-            intl = tmp3(c2[14]).intl;
+            const obj6 = { key: "GUILD_ENABLE_COMMUNICATION_SUCCESS", content: intl.string(tmp3(c2[19]).t["/Mmbfv"]), icon: c1(c2[20]) };
+            const open = c1(c2[18]).open;
+            const tmp15 = c1(c2[18]);
+            intl = tmp3(c2[19]).intl;
             open(obj6);
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c2 = 3;
@@ -113,46 +201,46 @@ export default function GuildEnableCommunicationAlert(guildId) {
     });
     return obj(...arguments);
   };
-  const tmp2 = closure_12();
+  const tmp2 = closure_14();
   dependencyMap = tmp2;
   const tmp3 = userId;
-  let closure_3 = obj(userId(7419)(userId, guildId), 1)[0];
-  userId(5298)(() => {
+  closure_3 = _slicedToArray(userId(7423)(userId, guildId), 1)[0];
+  userId(5297)(() => {
     obj = AnalyticsUtilsDefault;
-    const obj2 = { type: metroImportDefault, guild_id: guildId, other_user_id: userId };
-    obj.track(constants.OPEN_MODAL, obj2);
+    const obj2 = { type, guild_id: guildId, other_user_id: userId };
+    obj.track(unpackModuleId.OPEN_MODAL, obj2);
   });
   obj = {
-    title: intl.string(guildId(1115).t["+ZD3ou"]),
+    title: intl.string(guildId(1127).t["+ZD3ou"]),
     style: tmp2.wrapper,
-    cancelText: intl2.string(guildId(1115).t["ETE/oC"]),
+    cancelText: intl2.string(guildId(1127).t["ETE/oC"]),
     onClose,
     onCancel,
-    confirmText: intl3.string(tmp9(1115).t.qXtNtS),
+    confirmText: intl3.string(tmp9(1127).t.qXtNtS),
     onConfirm: function handleConfirmRemoveTimeout() {
       return obj(...arguments);
     },
     children: tmp11(tmp12, obj2)
   };
-  const tmp7 = userId(5300);
+  const tmp7 = userId(5301);
   const merged1 = Object.assign(merged);
-  intl = guildId(1115).intl;
-  intl2 = guildId(1115).intl;
+  intl = guildId(1127).intl;
+  intl2 = guildId(1127).intl;
   onClose = undefined;
   if (merged != null) {
     onClose = merged.onClose;
   }
-  intl3 = tmp9(1115).intl;
+  intl3 = tmp9(1127).intl;
   obj2 = { style: tmp2.body, children: items };
   let obj3 = { style: tmp2.description, variant: "text-sm/medium", children: format(prop, obj4) };
-  const Text = tmp9(4832).Text;
-  const intl4 = tmp9(1115).intl;
+  const Text = tmp9(4833).Text;
+  const intl4 = tmp9(1127).intl;
   format = intl4.format;
-  prop = tmp9(1115).t["t+abNU"];
+  prop = tmp9(1127).t["t+abNU"];
   const user = UserStore.getUser(userId);
-  const tmp3Result = tmp3(4988);
+  const tmp3Result = tmp3(4989);
   let str = tmp3Result.getName(guildId, null, user);
-  tmp11 = closure_11;
+  tmp11 = closure_13;
   tmp12 = View;
   if (str == null) {
     str = "";
@@ -168,16 +256,19 @@ export default function GuildEnableCommunicationAlert(guildId) {
         num = new Date(tmp);
       }
       obj = { style: countdown.countdown, deadline: num, withUnits: true };
-      return authStore(CountDownDefault, obj);
+      return closure_12(CountDownDefault, obj);
     }
   };
   items = [tmp6(Text, obj3), ];
-  let obj5 = { style: items1, variant: "text-sm/medium", children: intl5.format(tmp9(1115).t.KtENkK, obj6) };
+  let obj5 = { style: items1, variant: "text-sm/medium", children: intl5.format(tmp9(1127).t.KtENkK, obj6) };
   items1 = [, ];
   ({ cta: arr2[0], description: arr2[1] } = tmp2);
-  const Text2 = tmp9(4832).Text;
-  intl5 = tmp9(1115).intl;
+  const Text2 = tmp9(4833).Text;
+  intl5 = tmp9(1127).intl;
   obj6 = { link };
-  items[1] = closure_10(Text2, obj5);
-  return closure_10(tmp7, obj);
-};
+  items[1] = closure_12(Text2, obj5);
+  return closure_12(tmp7, obj);
+});
+const result = size.fileFinishedImporting("modules/guild_communication_disabled/native/GuildEnableCommunicationAlert.tsx");
+
+export default tmp6;

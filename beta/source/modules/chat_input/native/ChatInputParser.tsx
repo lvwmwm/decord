@@ -1,10 +1,10 @@
-// Module ID: 11474
-// Function ID: 11475
+// Module ID: 11350
+// Function ID: 11351
 // Name: ChatInputParser
 // Dependencies: [17, 12, 2]
 // Exports: convertToNativeStyle
 
-// Module 11474 (ChatInputParser)
+// Module 11350 (ChatInputParser)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;

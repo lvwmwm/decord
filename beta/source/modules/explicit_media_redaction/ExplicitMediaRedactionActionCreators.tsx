@@ -1,12 +1,12 @@
-// Module ID: 7024
-// Function ID: 7025
+// Module ID: 7028
+// Function ID: 7029
 // Name: ExplicitMediaRedactionActionCreators
-// Dependencies: [1074, 1271, 2]
+// Dependencies: [1086, 1283, 2]
 // Exports: reportFailedSendFalsePositive, reportFalsePositive, sendMessagesForScanning, sendMultiChannelMessagesForScanning
 
-// Module 7024 (ExplicitMediaRedactionActionCreators)
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 7028 (ExplicitMediaRedactionActionCreators)
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
@@ -19,11 +19,11 @@ export const reportFalsePositive = function reportFalsePositive(channel_id, mess
   obj = { channel_id, message_id, attachment_ids, embed_ids };
   return HTTP.post(request);
 };
-export const reportFailedSendFalsePositive = function reportFailedSendFalsePositive(channelId, messageId, attachment_ids, filenames) {
+export const reportFailedSendFalsePositive = function reportFailedSendFalsePositive(channelId, messageId, attachment_ids, mapped1) {
   let obj;
   const HTTP = HTTPUtils.HTTP;
   const request = { url: Endpoints.EXPLICIT_MEDIA_SENDER_REPORT_FALSE_POSITIVE, body: obj, rejectWithError: false };
-  obj = { channel_id: channelId, message_id: messageId, attachment_ids, filenames };
+  obj = { channel_id: channelId, message_id: messageId, attachment_ids, filenames: mapped1 };
   return HTTP.post(request);
 };
 export const sendMessagesForScanning = function sendMessagesForScanning(channel_id, message_ids) {

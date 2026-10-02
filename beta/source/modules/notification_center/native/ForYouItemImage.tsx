@@ -1,21 +1,33 @@
-// Module ID: 16062
-// Function ID: 16063
+// Module ID: 16064
+// Function ID: 16065
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 2063, 2067, 1372, 16063, 21, 4836, 576, 7054, 9336, 16064, 16065, 16066, 16067, 5899, 16068, 1177, 16069, 16070, 6583, 504, 5435, 7624, 7693, 16071, 4832, 2]
+// Dependencies: [19, 17, 2069, 2073, 1378, 16065, 21, 4837, 588, 7058, 9314, 16066, 16067, 16068, 16069, 5896, 16070, 1189, 16071, 16072, 558, 576, 6584, 504, 7628, 7697, 5436, 16073, 4833, 2]
 
-// Module 16062 (ForYouItemImage)
+// Module 16064 (ForYouItemImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import GuildRecord from "GuildRecord" /* 2063 */;
-import Pressables from "Pressables" /* 5435 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 7693 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import GuildRecord from "GuildRecord" /* 2069 */;
+import Pressables from "Pressables" /* 5436 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7058 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 7697 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9314 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16066 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 16067 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 16068 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 16069 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 16070 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 16071 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 16072 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 16063 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 16065 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let item;
@@ -27,6 +39,53 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
+function getFallbackIcon(type, fallbackImage) {
+  if (NotificationCenterItemsTypes.NotificationCenterItems.MISSED_MESSAGES === type) {
+    const obj2 = { icon: AssetRegistryDefault, color: fallbackImage.fallbackImage.color };
+    return obj2;
+  } else if (NotificationCenterItemsTypes.NotificationCenterItems.FRIEND_REQUEST_REMINDER === type) {
+    const obj3 = { icon: AssetRegistryDefault2, color: fallbackImage.fallbackImage.color };
+    return obj3;
+  } else {
+    if (NotificationCenterItemsTypes.NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED !== type) {
+      if (NotificationCenterItemsTypes.NotificationCenterItems.TOP_MESSAGES !== type) {
+        if (NotificationCenterItemsTypes.NotificationCenterItems.MISSED_MESSAGES !== type) {
+          if (NotificationCenterItemsTypes.NotificationCenterItems.TOP_MESSAGES === type) {
+            const obj4 = { icon: AssetRegistryDefault4, color: fallbackImage.fallbackImage.color };
+            return obj4;
+          } else {
+            const obj = { icon: AssetRegistryDefault5, color: fallbackImage.fallbackImage.color };
+            return obj;
+          }
+        }
+      }
+    }
+    const obj5 = { icon: AssetRegistryDefault3, color: fallbackImage.fallbackImageV2.color, backgroundStyle: fallbackImage.guildGridBackground };
+    return obj5;
+  }
+}
+function getLifecycleIcon(item_enum) {
+  let tmp5;
+  if (item_enum === NotificationCenterItemsTypes.ItemEnum.UPDATE_PROFILE) {
+    FastImageDefault;
+    tmp5 = <tmp13 source={AssetRegistryDefault6} />;
+  } else {
+    if (item_enum !== NotificationCenterItemsTypes.ItemEnum.FIND_FRIENDS) {
+      if (item_enum !== NotificationCenterItemsTypes.ItemEnum.ADD_FRIEND) {
+        if (item_enum === NotificationCenterItemsTypes.ItemEnum.FIRST_MESSAGE) {
+          FastImageDefault;
+          tmp5 = <tmp8 source={AssetRegistryDefault8} style={{ width: "105%" }} />;
+        } else {
+          const Icon = tmp(1189).Icon;
+          tmp5 = <Icon source={AssetRegistryDefault5} />;
+        }
+      }
+    }
+    const Icon2 = tmp(1189).Icon;
+    tmp5 = <Icon2 source={AssetRegistryDefault7} size={native.IconSizes.SMALL_20} color={nativeDefault.unsafe_rawColors.WHITE} />;
+  }
+  return tmp5;
+}
 const View = react_native.View;
 const getGuildAcronym = GuildRecord.getGuildAcronym;
 ({ FRIEND_BACKGROUND, MESSAGE_BACKGROUND, PROFILE_BACKGROUND } = Constants);
@@ -58,24 +117,188 @@ obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_10 = createStyles(obj);
-const memoResult = react.memo((item) => {
+let memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
+  let analyticsLocations;
+  let first;
+  let id;
+  let tmp10;
+  let tmp18;
+  let obj = item(id[21]);
+  const cResult = obj.c(56);
+  item = item.item;
+  const tmp4 = closure_9(item.compactMode);
+  const tmp5 = analyticsLocations;
+  analyticsLocations = analyticsLocations(id[22])().analyticsLocations;
+  const tmp6 = closure_10();
+  const other_user = item.other_user;
+  id = undefined;
+  if (other_user != null) {
+    id = other_user.id;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== id) {
+    const fn = function s() {
+      return UserStore.getUser(id);
+    };
+    cResult[1] = id;
+    cResult[2] = fn;
+    tmp10 = fn;
+  } else {
+    tmp10 = cResult[2];
+  }
+  const tmpResult = item(id[23]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp10);
+  if (null != stateFromStores) {
+    if (cResult[3] === analyticsLocations) {
+      if (cResult[4] === item.message_id) {
+        class N {
+          constructor() {
+            const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+            showUserProfileActionSheetDefault(obj);
+          }
+        }
+        const tmpResult2 = item(id[25]);
+        const avatarSource = tmpResult2.getAvatarSource(stateFromStores, item.guild_id, undefined, item.acked);
+        cResult[7] = item.acked;
+        cResult[8] = item.guild_id;
+        cResult[9] = stateFromStores;
+        cResult[10] = avatarSource;
+      }
+    }
+    class N {
+      constructor() {
+        const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+        showUserProfileActionSheetDefault(obj);
+      }
+    }
+    cResult[3] = analyticsLocations;
+    cResult[4] = item.message_id;
+    cResult[5] = stateFromStores;
+    cResult[6] = N;
+  }
+  if (null != item.icon_name) {
+    let tmp24;
+    if (cResult[18] !== item.icon_name) {
+      class N {
+        constructor() {
+          const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+          showUserProfileActionSheetDefault(obj);
+        }
+      }
+      cResult[18] = item.icon_name;
+      cResult[19] = tmp25;
+      tmp24 = tmp25;
+    } else {
+      tmp24 = cResult[19];
+    }
+    class N {
+      constructor() {
+        const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+        showUserProfileActionSheetDefault(obj);
+      }
+    }
+    cResult[20] = tmp6.fallbackImage.color;
+    cResult[21] = tmp24;
+    cResult[22] = jsx(item(id[17]).Icon, { source: tmp24, color: tmp6.fallbackImage.color });
+    const tmp28 = jsx(item(id[17]).Icon, { source: tmp24, color: tmp6.fallbackImage.color });
+  } else if (null != item.icon_url) {
+    tmp18 = null;
+    class N {
+      constructor() {
+        const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+        showUserProfileActionSheetDefault(obj);
+      }
+    }
+    if (null == null) {
+      let tmp20;
+      if (cResult[23] !== item.icon_url) {
+        const obj3 = { uri: null };
+        class N {
+          constructor() {
+            const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+            showUserProfileActionSheetDefault(obj);
+          }
+        }
+        cResult[23] = item.icon_url;
+        cResult[24] = obj3;
+        tmp20 = obj3;
+      } else {
+        tmp20 = cResult[24];
+      }
+      class N {
+        constructor() {
+          const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+          showUserProfileActionSheetDefault(obj);
+        }
+      }
+      cResult[25] = tmp4.rowImage;
+      cResult[26] = tmp20;
+      cResult[27] = jsx(tmp5(id[15]), { style: tmp4.rowImage, source: tmp20, resizeMode: "contain" });
+      const tmp23 = jsx(tmp5(id[15]), { style: tmp4.rowImage, source: tmp20, resizeMode: "contain" });
+    }
+  } else {
+    tmp18 = null;
+    class N {
+      constructor() {
+        const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+        showUserProfileActionSheetDefault(obj);
+      }
+    }
+    if (null == null) {
+      class N {
+        constructor() {
+          const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+          showUserProfileActionSheetDefault(obj);
+        }
+      }
+    }
+  }
+  if (cResult[50] === tmp18) {
+    let tmp29;
+    if (cResult[51] === tmp4.container) {
+      tmp29 = cResult[52];
+    }
+    class N {
+      constructor() {
+        const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+        showUserProfileActionSheetDefault(obj);
+      }
+    }
+    const tmp33 = <View style={tmp29}>{tmp19}</View>;
+    cResult[53] = tmp19;
+    cResult[54] = tmp29;
+    cResult[55] = tmp33;
+  }
+  const items1 = [tmp4.container, tmp18];
+  cResult[50] = tmp18;
+  cResult[51] = tmp4.container;
+  cResult[52] = items1;
+  tmp29 = items1;
+}) : ((item) => {
   let brandBackground1;
   let items2;
-  let tmp27Result;
+  let tmp24Result;
   item = item.item;
   const compactMode = item.compactMode;
   let analyticsLocations;
   let stateFromStores;
   const tmp = closure_9(compactMode);
   const tmp3 = analyticsLocations;
-  analyticsLocations = compactMode(analyticsLocations[20])().analyticsLocations;
+  analyticsLocations = compactMode(analyticsLocations[22])().analyticsLocations;
   const tmp4 = closure_10();
   const other_user = item.other_user;
   let id;
   if (other_user != null) {
     id = other_user.id;
   }
-  let obj = item(tmp3[21]);
+  let obj = item(tmp3[23]);
   const items = [UserStore];
   stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(id));
   const items1 = [stateFromStores, compactMode, , , , ];
@@ -83,7 +306,6 @@ const memoResult = react.memo((item) => {
   items1[5] = analyticsLocations;
   const memo = id.useMemo(() => {
     let AvatarSizes;
-    let localUser;
     let message_id;
     let obj3;
     let sourceAnalyticsLocations;
@@ -92,7 +314,7 @@ const memoResult = react.memo((item) => {
       let obj = {
         onPress() {
             const obj = { userId: localUser.id, localUser, messageId: message_id.message_id, sourceAnalyticsLocations };
-            compactMode(analyticsLocations[23])(obj);
+            compactMode(analyticsLocations[24])(obj);
           },
         children: null
       };
@@ -106,50 +328,31 @@ const memoResult = react.memo((item) => {
     return tmp3Result;
   }, items1);
   if (null != item.icon_name) {
-    const Icon3 = tmp6(tmp3[17]).Icon;
-    tmp27Result = <Icon3 source={compactMode("icHighlight" === item.icon_name ? tmp3[13] : tmp3[14])} color={tmp4.fallbackImage.color} />;
+    const Icon = tmp6(tmp3[17]).Icon;
+    tmp24Result = <Icon source={compactMode("icHighlight" === item.icon_name ? tmp3[13] : tmp3[14])} color={tmp4.fallbackImage.color} />;
     brandBackground1 = tmp4.brandBackground;
   } else if (null != item.icon_url) {
     brandBackground1 = null;
-    tmp27Result = memo;
+    tmp24Result = memo;
     if (null == memo) {
-      const obj4 = { uri: item.icon_url };
-      tmp27Result = jsx(tmp2(tmp3[15]), { style: tmp.rowImage, source: obj4, resizeMode: "contain" });
+      const obj5 = { uri: item.icon_url };
+      tmp24Result = jsx(tmp2(tmp3[15]), { style: tmp.rowImage, source: obj5, resizeMode: "contain" });
       brandBackground1 = tmp4.brandBackground;
     }
   } else {
     brandBackground1 = null;
-    tmp27Result = memo;
+    tmp24Result = memo;
     if (null == memo) {
       if ("lifecycle_item" === item.type) {
-        let tmp19;
         let profileBackground;
         const item_enum = item.item_enum;
+        const tmp21 = getLifecycleIcon(item.item_enum);
         if (item_enum === item(tmp3[9]).ItemEnum.UPDATE_PROFILE) {
-          compactMode(tmp3[15]);
-          tmp19 = <tmp2Result source={compactMode(tmp3[16])} />;
+          profileBackground = tmp4.profileBackground;
         } else {
           if (item_enum !== item(tmp3[9]).ItemEnum.FIND_FRIENDS) {
             if (item_enum !== item(tmp3[9]).ItemEnum.ADD_FRIEND) {
-              if (item_enum === item(tmp3[9]).ItemEnum.FIRST_MESSAGE) {
-                compactMode(tmp3[15]);
-                tmp19 = <tmp2Result3 source={compactMode(tmp3[19])} style={{ width: "105%" }} />;
-              } else {
-                const Icon = tmp6(tmp3[17]).Icon;
-                tmp19 = <Icon source={compactMode(tmp3[14])} />;
-              }
-            }
-          }
-          const Icon2 = tmp6(tmp3[17]).Icon;
-          tmp19 = <Icon2 source={compactMode(tmp3[18])} size={tmp6(tmp3[17]).IconSizes.SMALL_20} color={compactMode(tmp3[8]).unsafe_rawColors.WHITE} />;
-        }
-        const item_enum2 = item.item_enum;
-        if (item_enum2 === item(tmp3[9]).ItemEnum.UPDATE_PROFILE) {
-          profileBackground = tmp4.profileBackground;
-        } else {
-          if (item_enum2 !== item(tmp3[9]).ItemEnum.FIND_FRIENDS) {
-            if (item_enum2 !== item(tmp3[9]).ItemEnum.ADD_FRIEND) {
-              profileBackground = item_enum2 === tmp6(tmp3[9]).ItemEnum.FIRST_MESSAGE ? tmp4.messageBackground : tmp4.brandBackground;
+              profileBackground = item_enum === tmp6(tmp3[9]).ItemEnum.FIRST_MESSAGE ? tmp4.messageBackground : tmp4.brandBackground;
             }
           }
           profileBackground = tmp4.friendBackground;
@@ -158,70 +361,47 @@ const memoResult = react.memo((item) => {
           profileBackground = null;
         }
         brandBackground1 = profileBackground;
-        tmp27Result = tmp19;
+        tmp24Result = tmp21;
       } else if (item.type === item(tmp3[9]).NotificationCenterItems.REFERRAL_PROGRAM_ENTRYPOINT_REMINDER) {
         compactMode(tmp3[15]);
-        tmp27Result = <tmp2Result4 source={compactMode(tmp3[25])} style={tmp.rowImage} resizeMode="contain" />;
+        tmp24Result = <tmp2Result source={compactMode(tmp3[27])} style={tmp.rowImage} resizeMode="contain" />;
         brandBackground1 = tmp4.brandBackground;
       } else {
-        let obj14;
         const guild = GuildStore.getGuild(item.guild_id);
         let tmp10 = null;
         if (null != guild) {
           tmp10 = getGuildAcronym(guild);
         }
-        const type = item.type;
-        if (item(tmp3[9]).NotificationCenterItems.MISSED_MESSAGES === type) {
-          obj14 = { icon: compactMode(tmp3[10]), color: tmp4.fallbackImage.color };
-          const obj11 = { icon: compactMode(tmp3[10]), color: tmp4.fallbackImage.color };
-        } else if (item(tmp3[9]).NotificationCenterItems.FRIEND_REQUEST_REMINDER === type) {
-          obj14 = { icon: compactMode(tmp3[11]), color: tmp4.fallbackImage.color };
-          const obj12 = { icon: compactMode(tmp3[11]), color: tmp4.fallbackImage.color };
-        } else {
-          if (item(tmp3[9]).NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED !== type) {
-            if (item(tmp3[9]).NotificationCenterItems.TOP_MESSAGES !== type) {
-              if (item(tmp3[9]).NotificationCenterItems.MISSED_MESSAGES !== type) {
-                if (item(tmp3[9]).NotificationCenterItems.TOP_MESSAGES === type) {
-                  obj14 = { icon: compactMode(tmp3[13]), color: tmp4.fallbackImage.color };
-                  const obj13 = { icon: compactMode(tmp3[13]), color: tmp4.fallbackImage.color };
-                } else {
-                  obj14 = { icon: compactMode(tmp3[14]), color: tmp4.fallbackImage.color };
-                }
-              }
-            }
-          }
-          obj14 = { icon: compactMode(tmp3[12]), color: tmp4.fallbackImageV2.color, backgroundStyle: tmp4.guildGridBackground };
-          const obj15 = { icon: compactMode(tmp3[12]), color: tmp4.fallbackImageV2.color, backgroundStyle: tmp4.guildGridBackground };
-        }
-        if (obj14.icon === compactMode(tmp3[12])) {
-          let tmp13Result;
+        const tmp12 = getFallbackIcon(item.type, tmp4);
+        if (tmp12.icon === compactMode(tmp3[12])) {
+          let tmp15Result;
           if (null != tmp10) {
             let str2 = "text-lg/normal";
-            const Text = tmp6(tmp3[26]).Text;
-            const tmp13 = jsx;
+            const Text = tmp6(tmp3[28]).Text;
+            const tmp15 = jsx;
             if (tmp10.length > 4) {
               str2 = "text-md/normal";
             }
-            const obj16 = { variant: str2, style: items2, children: tmp10 };
+            const obj7 = { variant: str2, style: items2, children: tmp10 };
             items2 = [, ];
             ({ rowImage: arr3[0], guildFallbackImage: arr3[1] } = tmp);
-            tmp13Result = tmp13(Text, obj16);
+            tmp15Result = tmp15(Text, obj7);
           }
-          let brandBackground = obj14.backgroundStyle;
+          let brandBackground = tmp12.backgroundStyle;
           if (brandBackground == null) {
             brandBackground = tmp4.brandBackground;
           }
           brandBackground1 = brandBackground;
-          tmp27Result = tmp13Result;
+          tmp24Result = tmp15Result;
         }
-        ({ icon: obj7.source, color: obj7.color } = obj14);
-        tmp13Result = jsx(tmp6(tmp3[17]).Icon, { source: null, color: null });
+        ({ icon: obj2.source, color: obj2.color } = tmp12);
+        tmp15Result = jsx(tmp6(tmp3[17]).Icon, { source: null, color: null });
       }
     }
   }
   const items3 = [tmp.container, brandBackground1];
-  return <stateFromStores style={items3}>{tmp27Result}</stateFromStores>;
-});
+  return <stateFromStores style={items3}>{tmp24Result}</stateFromStores>;
+}));
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/notification_center/native/ForYouItemImage.tsx");
 

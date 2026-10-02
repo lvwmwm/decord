@@ -1,18 +1,18 @@
-// Module ID: 10364
-// Function ID: 10365
-// Dependencies: [10363, 2]
+// Module ID: 10407
+// Function ID: 10408
+// Dependencies: [10406, 2]
 // Exports: splitGraphemes
 
-// Module 10364
-import _modDef10363 from "module_10363" /* 10363 */;
+// Module 10407
+import _modDef10406 from "module_10406" /* 10406 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/native/StringUtils.tsx");
 
-export const splitGraphemes = function splitGraphemes(memo) {
-  const obj = _modDef10363();
+export const splitGraphemes = function splitGraphemes(name) {
+  const obj = _modDef10406();
   const items = [];
-  let match = obj.exec(memo);
+  let match = obj.exec(name);
   let num = 0;
   let num2 = 0;
   if (null !== match) {
@@ -21,20 +21,20 @@ export const splitGraphemes = function splitGraphemes(memo) {
         let push = items.push;
         let _Array = Array;
         let items1 = [];
-        let arraySpreadResult = HermesBuiltin.arraySpread(items1, Array.from(memo.slice(num, match.index)), 0);
+        let arraySpreadResult = HermesBuiltin.arraySpread(items1, Array.from(name.slice(num, match.index)), 0);
         let applyResult = HermesBuiltin.apply(push, items1, items);
       }
       let arr = items.push(match[0]);
       num = obj.lastIndex;
-      match = obj.exec(memo);
+      match = obj.exec(name);
       num2 = num;
     } while (null !== match);
   }
-  if (num2 < memo.length) {
+  if (num2 < name.length) {
     const push2 = items.push;
     const _Array2 = Array;
     const items2 = [];
-    HermesBuiltin.arraySpread(items2, Array.from(memo.slice(num2)), 0);
+    HermesBuiltin.arraySpread(items2, Array.from(name.slice(num2)), 0);
     HermesBuiltin.apply(push2, items2, items);
   }
   return items;

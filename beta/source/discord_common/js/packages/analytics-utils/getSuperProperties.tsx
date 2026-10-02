@@ -1,19 +1,19 @@
-// Module ID: 1336
-// Function ID: 1337
+// Module ID: 1348
+// Function ID: 1349
 // Name: getSuperProperties
-// Dependencies: [1337, 1338, 1339, 1340, 1341, 1342, 1343, 1344, 510, 1345, 1334, 2]
+// Dependencies: [1349, 1350, 1351, 1352, 1353, 1354, 1355, 1356, 510, 1357, 1346, 2]
 // Exports: extendSuperProperties, getCampaignParams, getSuperProperties, getSuperPropertiesBase64
 
-// Module 1336 (getSuperProperties)
+// Module 1348 (getSuperProperties)
 import Storage5 from "Storage" /* 510 */;
-import encodeProperties from "encodeProperties" /* 1334 */;
-import react_native from "react-native" /* 1337 */;
-import ClientModDetectionUtils from "ClientModDetectionUtils" /* 1338 */;
-import clientLaunchId from "clientLaunchId" /* 1339 */;
-import _modDef1340 from "module_1340" /* 1340 */;
-import react_native2 from "react-native" /* 1341 */;
-import react_native3 from "react-native" /* 1342 */;
-import DesignIds from "DesignIds" /* 1344 */;
+import encodeProperties from "encodeProperties" /* 1346 */;
+import react_native from "react-native" /* 1349 */;
+import ClientModDetectionUtils from "ClientModDetectionUtils" /* 1350 */;
+import clientLaunchId from "clientLaunchId" /* 1351 */;
+import _modDef1352 from "module_1352" /* 1352 */;
+import react_native2 from "react-native" /* 1353 */;
+import react_native3 from "react-native" /* 1354 */;
+import DesignIds from "DesignIds" /* 1356 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, constants;
@@ -39,7 +39,7 @@ function getCachedSuperProperties() {
     const result1 = Storage4.set(tmp8, obj);
     value3 = obj;
   }
-  const SessionStorage = tmp(1345).SessionStorage;
+  const SessionStorage = tmp(1357).SessionStorage;
   let value4 = SessionStorage.get(tmp8);
   if (null == value4) {
     const obj2 = {};
@@ -50,13 +50,13 @@ function getCachedSuperProperties() {
       obj3["" + item + "_current"] = obj2[item];
       return obj2[item];
     });
-    const SessionStorage2 = tmp(1345).SessionStorage;
+    const SessionStorage2 = tmp(1357).SessionStorage;
     const result2 = SessionStorage2.set(tmp8, obj3);
     value4 = obj3;
   }
-  const obj4 = { browser_user_agent: window.navigator.userAgent || "", browser_version: _modDef1340.version || "", os_version: _default.getConstants().systemVersion || "" };
+  const obj4 = { browser_user_agent: window.navigator.userAgent || "", browser_version: _modDef1352.version || "", os_version: _default.getConstants().systemVersion || "" };
   const merged = Object.assign(value);
-  _modDef1340.version || "";
+  _modDef1352.version || "";
   _default = react_native3.default;
   _default.getConstants().systemVersion || "";
   const merged1 = Object.assign(value3);
@@ -65,7 +65,7 @@ function getCachedSuperProperties() {
 }
 function getContextualSuperProperties() {
   let obj2;
-  obj = { client_build_number: parseInt("6550", 10), client_event_source: null, has_client_mods: obj2.usesClientMods(), client_launch_id: clientLaunchId.clientLaunchId };
+  obj = { client_build_number: parseInt("6558", 10), client_event_source: null, has_client_mods: obj2.usesClientMods(), client_launch_id: clientLaunchId.clientLaunchId };
   let buildNumber;
   if (DiscordNative != null) {
     const app = DiscordNative.app;
@@ -123,7 +123,7 @@ function getDeviceProperties() {
   tmp = getOS();
   obj2 = ClientModDetectionUtils;
   try {
-    let _default = tmp2(1343).default;
+    let _default = tmp2(1355).default;
     constants = _default.getConstants();
     let str = "";
     ({ Version, ReleaseChannel, DeviceVendorID } = constants);
@@ -164,16 +164,16 @@ if (null != DiscordNative) {
     str4 = "unknown";
   }
   _module = ClientModDetectionUtils;
-  const name = _modDef1340.name;
+  const name = _modDef1352.name;
   let toLocaleLowerCaseResult;
   if (name != null) {
     toLocaleLowerCaseResult = name.toLocaleLowerCase();
   }
   if ("electron" === toLocaleLowerCaseResult) {
     let tmp3 = obj;
-    tmp3.browser_user_agent = _modDef1340.ua || "";
-    _modDef1340.ua || "";
-    let tmp6 = _modDef1340.version || "";
+    tmp3.browser_user_agent = _modDef1352.ua || "";
+    _modDef1352.ua || "";
+    let tmp6 = _modDef1352.version || "";
     obj.browser_version = tmp6;
   }
   if ("linux" === platform) {

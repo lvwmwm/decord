@@ -1,12 +1,12 @@
-// Module ID: 2105
-// Function ID: 2106
+// Module ID: 2108
+// Function ID: 2109
 // Name: EnhancedRoleColorUtils
-// Dependencies: [1074, 1092, 2]
+// Dependencies: [1086, 1104, 2]
 // Exports: extractColorStringsFromServerColors, getAuthorHasGradientRole, getIsDefaultErc
 
-// Module 2105 (EnhancedRoleColorUtils)
-import Constants from "Constants" /* 1074 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
+// Module 2108 (EnhancedRoleColorUtils)
+import Constants from "Constants" /* 1086 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
 import size from "module_2" /* 2 */;
 
 const DEFAULT_ROLE_COLOR_HEX = Constants.DEFAULT_ROLE_COLOR_HEX;

@@ -1,11 +1,11 @@
-// Module ID: 14150
-// Function ID: 14151
+// Module ID: 14138
+// Function ID: 14139
 // Name: ProfilePendingImageUtils
-// Dependencies: [6410, 1370, 2]
+// Dependencies: [6410, 1376, 2]
 // Exports: createPendingImage
 
-// Module 14150 (ProfilePendingImageUtils)
-import GlobalUtils from "GlobalUtils" /* 1370 */;
+// Module 14138 (ProfilePendingImageUtils)
+import GlobalUtils from "GlobalUtils" /* 1376 */;
 import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6410 */;
 import size from "module_2" /* 2 */;
 

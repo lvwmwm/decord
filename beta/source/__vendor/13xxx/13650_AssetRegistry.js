@@ -1,10 +1,10 @@
 // Module ID: 13650
 // Function ID: 13651
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 13650 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/status", width: 8, height: 12, scales: [2, 3], hash: "62f99171df821200253910f3b9f2a1f7", name: "StatusMobileOnline", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/status", width: 16, height: 16, scales: [2, 3], hash: "12a800ef241b26f28e2697e2835bd1ab", name: "StatusStreaming", type: "png" });

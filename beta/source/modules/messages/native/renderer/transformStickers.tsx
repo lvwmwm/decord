@@ -1,13 +1,13 @@
-// Module ID: 12814
-// Function ID: 12815
+// Module ID: 12816
+// Function ID: 12817
 // Name: transformStickers
-// Dependencies: [5198, 7442, 7393, 1115, 2]
+// Dependencies: [5199, 7446, 7397, 1127, 2]
 // Exports: default
 
-// Module 12814 (transformStickers)
-import intl3 from "intl" /* 1115 */;
-import StickersUtils from "StickersUtils" /* 5198 */;
-import getAccessibilityLabelOrCheapFallbackUnsafe2 from "getAccessibilityLabelOrCheapFallbackUnsafe" /* 7393 */;
+// Module 12816 (transformStickers)
+import intl3 from "intl" /* 1127 */;
+import StickersUtils from "StickersUtils" /* 5199 */;
+import getAccessibilityLabelOrCheapFallbackUnsafe2 from "getAccessibilityLabelOrCheapFallbackUnsafe" /* 7397 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/transformStickers.tsx");
@@ -40,7 +40,7 @@ export default function transformStickers(message) {
     if (str2 == null) {
       str2 = "";
     }
-    NativeLottieRenderMode = tmp(7442).NativeLottieRenderMode;
+    NativeLottieRenderMode = tmp(7446).NativeLottieRenderMode;
     obj4 = {
       expensive() {
         const intl = closure_2_0(closure_2_1[3]).intl;
@@ -51,8 +51,8 @@ export default function transformStickers(message) {
     };
     getAccessibilityLabelOrCheapFallbackUnsafe = getAccessibilityLabelOrCheapFallbackUnsafe2.getAccessibilityLabelOrCheapFallbackUnsafe;
     getAccessibilityLabelOrCheapFallbackUnsafe2;
-    intl = tmp(1115).intl;
-    intl2 = tmp(1115).intl;
+    intl = tmp(1127).intl;
+    intl2 = tmp(1127).intl;
     return obj2;
   });
 };

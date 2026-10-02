@@ -1,14 +1,14 @@
-// Module ID: 7861
-// Function ID: 7862
+// Module ID: 7865
+// Function ID: 7866
 // Name: AgeVerificationAnalyticsUtils
-// Dependencies: [2045, 1074, 1241, 2, 7862]
+// Dependencies: [2051, 1086, 1253, 2, 7866]
 // Exports: trackAgeVerificationDmClicked, trackAgeVerificationModalClicked, trackAgeVerificationModalViewed, trackAgeVerificationToastViewed, trackNsfwSpaceWarningModalClicked, trackNsfwSpaceWarningModalViewed
 
-// Module 7861 (AgeVerificationAnalyticsUtils)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import NsfwSpaceWarningModalType from "NsfwSpaceWarningModalType" /* 7862 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+// Module 7865 (AgeVerificationAnalyticsUtils)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import NsfwSpaceWarningModalType from "NsfwSpaceWarningModalType" /* 7866 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -26,9 +26,9 @@ export const trackAgeVerificationModalViewed = function trackAgeVerificationModa
   const obj2 = { modal_session_id: memo, modal_version: EXPRESSIVE_PRIMARY, entry_point: entryPoint };
   obj.track(AnalyticEvents.AGE_VERIFICATION_MODAL_VIEWED, obj2);
 };
-export const trackAgeVerificationModalClicked = function trackAgeVerificationModalClicked(modalSessionId, EXPRESSIVE_V2, METHOD_SELECT, GOOGLE_WALLET) {
+export const trackAgeVerificationModalClicked = function trackAgeVerificationModalClicked(modalSessionId, PRIMARY, METHOD_SELECT, GOOGLE_WALLET) {
   const obj = AnalyticsUtilsDefault;
-  const obj2 = { modal_session_id: modalSessionId, modal_version: EXPRESSIVE_V2, cta: METHOD_SELECT, method: GOOGLE_WALLET };
+  const obj2 = { modal_session_id: modalSessionId, modal_version: PRIMARY, cta: METHOD_SELECT, method: GOOGLE_WALLET };
   obj.track(AnalyticEvents.AGE_VERIFICATION_MODAL_CLICKED, obj2);
 };
 export const trackAgeVerificationDmClicked = function trackAgeVerificationDmClicked(CONNECT_TO_TEEN, channelId) {

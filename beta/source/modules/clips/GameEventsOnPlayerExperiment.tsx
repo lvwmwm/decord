@@ -1,11 +1,11 @@
-// Module ID: 5445
-// Function ID: 5446
+// Module ID: 5446
+// Function ID: 5447
 // Name: GameEventsOnPlayerExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1441, 2]
 // Exports: isGameEventsOnPlayerEnabled
 
-// Module 5445 (GameEventsOnPlayerExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 5446 (GameEventsOnPlayerExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

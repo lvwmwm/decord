@@ -1,19 +1,20 @@
-// Module ID: 6643
-// Function ID: 6644
+// Module ID: 6644
+// Function ID: 6645
 // Name: OnboardingHomeUtils
-// Dependencies: [2101, 2045, 2067, 5023, 1074, 2052, 6644, 563, 2070, 6527, 5025, 2]
-// Exports: canSeeOnboardingHome, useCanSeeOnboardingHome
+// Dependencies: [2104, 2051, 2073, 5024, 1086, 2058, 558, 576, 6645, 2076, 6528, 5026, 573, 2]
+// Exports: canSeeOnboardingHome
 
-// Module 6643 (OnboardingHomeUtils)
-import ChannelConstants from "ChannelConstants" /* 2052 */;
-import FavoritesUtils from "FavoritesUtils" /* 2070 */;
-import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 5025 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 6644 */;
-import ImpersonateStore from "ImpersonateStore" /* 2101 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5023 */;
-import Constants from "Constants" /* 1074 */;
+// Module 6644 (OnboardingHomeUtils)
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import FavoritesUtils from "FavoritesUtils" /* 2076 */;
+import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 5026 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 6645 */;
+import ImpersonateStore from "ImpersonateStore" /* 2104 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5024 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,21 +24,42 @@ let metroImportAll;
 let metroImportDefault;
 ({ GuildFeatures: metroImportDefault, ME: metroImportAll } = Constants);
 const ChannelFlags = ChannelConstants.ChannelFlags;
-let result = size.fileFinishedImporting("modules/guild_onboarding_home/OnboardingHomeUtils.tsx");
-
-export const useCanSeeOnboardingHome = function useCanSeeOnboardingHome(guild_id) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
   let closure_1;
-  _require = guild_id;
-  const tmp = useIsNewMemberDefault(guild_id);
-  importDefault = tmp;
-  const items = [ChannelStore, GuildStore, ImpersonateStore];
-  const items1 = [guild_id, tmp];
-  const obj = require("useStateFromStores");
-  return obj.useStateFromStores(items, () => {
-    if (guild_id !== metroImportAll) {
+  let first;
+  _require = arg0;
+  const tmp = _require;
+  const tmp2 = dependencyMap;
+  const obj = require("react");
+  const cResult = obj.c(5);
+  const tmp4 = useIsNewMemberDefault(arg0);
+  importDefault = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore, , ];
+    items[1] = GuildStore;
+    let tmp8 = ImpersonateStore;
+    items[2] = ImpersonateStore;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    let tmp9;
+    let tmp10;
+    if (cResult[2] === tmp4) {
+      tmp9 = cResult[3];
+      tmp10 = cResult[4];
+    }
+    const tmpResult = tmp(573);
+    return tmpResult.useStateFromStores(first, tmp9, tmp10);
+  }
+  const fn = function f() {
+    if (closure_0 !== metroImportAll) {
       const obj3 = FavoritesUtils;
       const tmp23 = require;
-      if (!obj3.isFavoritesGuildId(guild_id)) {
+      if (!obj3.isFavoritesGuildId(closure_0)) {
         const guild = GuildStore.getGuild(tmp2);
         let hasItem;
         if (guild != null) {
@@ -47,7 +69,7 @@ export const useCanSeeOnboardingHome = function useCanSeeOnboardingHome(guild_id
         let tmp8 = hasItem;
         if (tmp8) {
           let result;
-          if (ImpersonateStore.isFullServerPreview(guild_id)) {
+          if (ImpersonateStore.isFullServerPreview(closure_0)) {
             const id = guild.id;
             let newMemberActions = GuildOnboardingHomeSettingsStore.getNewMemberActions(id);
             const obj2 = GuildOnboardingHomeSettingsStore;
@@ -67,7 +89,87 @@ export const useCanSeeOnboardingHome = function useCanSeeOnboardingHome(guild_id
             }
             result = hasItem1;
           } else {
-            const tmp23Result = tmp23(6527);
+            const tmp23Result = tmp23(6528);
+            result = tmp23Result.isGuildOnboardingSettingsAvailable(tmp2) || guildHasOnboardingHomeDefault(guild);
+            if (result) {
+              let tmp12 = closure_1;
+              if (!tmp12) {
+                const mutableGuildChannelsForGuild = ChannelStore.getMutableGuildChannelsForGuild(tmp2);
+                let flag = false;
+                const keys = Object.keys();
+                if (keys !== undefined) {
+                  flag = false;
+                  while (keys[tmp] !== undefined) {
+                    let obj4 = mutableGuildChannelsForGuild[tmp17];
+                    flag = true;
+                    if (obj4.hasFlag(ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) {
+                      break;
+                    }
+                  }
+                }
+                tmp12 = flag;
+              }
+              result = tmp12;
+            }
+          }
+          tmp8 = result;
+        }
+        return tmp8;
+      }
+    }
+    return false;
+  };
+  const items1 = [arg0, tmp4];
+  cResult[1] = arg0;
+  cResult[2] = tmp4;
+  cResult[3] = fn;
+  cResult[4] = items1;
+  tmp10 = items1;
+  tmp9 = fn;
+}) : ((arg0) => {
+  let closure_0;
+  let closure_1;
+  _require = arg0;
+  const tmp = useIsNewMemberDefault(arg0);
+  importDefault = tmp;
+  const items = [ChannelStore, GuildStore, ImpersonateStore];
+  const items1 = [arg0, tmp];
+  const obj = require("useStateFromStores");
+  return obj.useStateFromStores(items, () => {
+    if (closure_0 !== metroImportAll) {
+      const obj3 = FavoritesUtils;
+      const tmp23 = require;
+      if (!obj3.isFavoritesGuildId(closure_0)) {
+        const guild = GuildStore.getGuild(tmp2);
+        let hasItem;
+        if (guild != null) {
+          const features = guild.features;
+          hasItem = features.has(metroImportDefault.COMMUNITY);
+        }
+        let tmp8 = hasItem;
+        if (tmp8) {
+          let result;
+          if (ImpersonateStore.isFullServerPreview(closure_0)) {
+            const id = guild.id;
+            let newMemberActions = GuildOnboardingHomeSettingsStore.getNewMemberActions(id);
+            const obj2 = GuildOnboardingHomeSettingsStore;
+            if (newMemberActions == null) {
+              newMemberActions = [];
+            }
+            let hasItem1 = newMemberActions.length > 0;
+            const enabled = obj2.getEnabled(id);
+            if (hasItem1) {
+              const features2 = guild.features;
+              hasItem1 = features2.has(metroImportDefault.COMMUNITY);
+            }
+            if (hasItem1) {
+              const features3 = guild.features;
+              hasItem1 = !(features3.has(metroImportDefault.GUILD_ONBOARDING) && !enabled);
+              features3.has(metroImportDefault.GUILD_ONBOARDING) && !enabled;
+            }
+            result = hasItem1;
+          } else {
+            const tmp23Result = tmp23(6528);
             result = tmp23Result.isGuildOnboardingSettingsAvailable(tmp2) || guildHasOnboardingHomeDefault(guild);
             if (result) {
               let tmp12 = closure_1;
@@ -97,7 +199,10 @@ export const useCanSeeOnboardingHome = function useCanSeeOnboardingHome(guild_id
     }
     return false;
   }, items1);
-};
+});
+let result = size.fileFinishedImporting("modules/guild_onboarding_home/OnboardingHomeUtils.tsx");
+
+export const useCanSeeOnboardingHome = tmp3;
 export const canSeeOnboardingHome = function canSeeOnboardingHome(id) {
   const guild = GuildStore.getGuild(id);
   if (null == guild) {
@@ -127,7 +232,7 @@ export const canSeeOnboardingHome = function canSeeOnboardingHome(id) {
           }
           return hasItem;
         } else {
-          const tmp14Result = tmp14(6527);
+          const tmp14Result = tmp14(6528);
           let result = tmp14Result.isGuildOnboardingSettingsAvailable(id);
           if (result) {
             const features = guild.features;

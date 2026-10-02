@@ -1,15 +1,15 @@
-// Module ID: 12152
-// Function ID: 12153
+// Module ID: 12194
+// Function ID: 12195
 // Name: useWelcomeScreenEnabled
-// Dependencies: [2049, 2045, 2067, 2099, 1074, 504, 2]
-// Exports: default
+// Dependencies: [2055, 2051, 2073, 2102, 1086, 558, 576, 504, 2]
 
-// Module 12152 (useWelcomeScreenEnabled)
-import Constants from "Constants" /* 1074 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+// Module 12194 (useWelcomeScreenEnabled)
+import Constants from "Constants" /* 1086 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,9 +17,62 @@ let _require, dependencyMap;
 
 const isGuildTextChannelType = ChannelRecord.isGuildTextChannelType;
 const GuildFeatures = Constants.GuildFeatures;
-const result = size.fileFinishedImporting("modules/welcome_screen/useWelcomeScreenEnabled.tsx");
-
-export default function useWelcomeScreenEnabled(arg0, arg1) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let first;
+  _require = arg0;
+  dependencyMap = arg1;
+  let tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp5 = ChannelStore;
+    const items = [ChannelStore, , ];
+    items[1] = GuildStore;
+    items[2] = SelectedChannelStore;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    let tmp8;
+    if (cResult[2] === arg1) {
+      tmp8 = cResult[3];
+    }
+    const tmpResult = tmp(504);
+    return tmpResult.useStateFromStores(first, tmp8);
+  }
+  const fn = function _() {
+    const guild = GuildStore.getGuild(closure_1);
+    let hasItem;
+    const tmp = closure_1;
+    if (guild != null) {
+      const features = guild.features;
+      hasItem = features.has(GuildFeatures.WELCOME_SCREEN_ENABLED);
+    }
+    if (true === hasItem) {
+      const features2 = guild.features;
+      const tmp5 = GuildFeatures;
+      if (features2.has(GuildFeatures.COMMUNITY)) {
+        const features3 = guild.features;
+        if (features3.has(tmp5.GUILD_SERVER_GUIDE)) {
+          return false;
+        } else {
+          const channel = ChannelStore.getChannel(closure_0);
+          const tmp9 = closure_0 === SelectedChannelStore.getChannelId(tmp) && null != channel && channel.getGuildId() === guild.id && isGuildTextChannelType(channel.type);
+          return tmp9;
+        }
+      }
+    }
+    return false;
+  };
+  cResult[1] = arg0;
+  cResult[2] = arg1;
+  cResult[3] = fn;
+  tmp8 = fn;
+}) : ((arg0, arg1) => {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -50,4 +103,7 @@ export default function useWelcomeScreenEnabled(arg0, arg1) {
     }
     return false;
   });
-};
+});
+const result = size.fileFinishedImporting("modules/welcome_screen/useWelcomeScreenEnabled.tsx");
+
+export default tmp2;

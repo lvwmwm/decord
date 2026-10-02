@@ -1,13 +1,13 @@
-// Module ID: 16313
-// Function ID: 16314
+// Module ID: 16315
+// Function ID: 16316
 // Name: maybeShowVibegrationsFeedback
-// Dependencies: [11121, 16314, 16315, 16333, 1981, 6459, 4800, 2]
+// Dependencies: [10991, 16316, 16317, 16335, 1987, 6459, 4801, 2]
 // Exports: default
 
-// Module 16313 (maybeShowVibegrationsFeedback)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Constants from "Constants" /* 11121 */;
-import FeedbackManagerDefault from "FeedbackManager" /* 16315 */;
+// Module 16315 (maybeShowVibegrationsFeedback)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Constants from "Constants" /* 10991 */;
+import FeedbackManagerDefault from "FeedbackManager" /* 16317 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ export default function maybeShowVibegrationsFeedback(arg0) {
   let result = countSettledTurnsResult < require("vibegrationsFeedback").MINIMUM_SETTLED_TURNS_FOR_FEEDBACK;
   const tmp = _require;
   if (!result) {
-    const tmpResult = tmp(16314);
+    const tmpResult = tmp(16316);
     result = tmpResult.hasShownFeedbackForProject(arg0);
   }
   if (!result) {

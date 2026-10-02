@@ -1,18 +1,18 @@
-// Module ID: 11841
-// Function ID: 11842
+// Module ID: 11734
+// Function ID: 11735
 // Name: search/tracking/Tracking
-// Dependencies: [2045, 11822, 7302, 1074, 11842, 11823, 5016, 1255, 2021, 2]
+// Dependencies: [2051, 11715, 7306, 1086, 11735, 11716, 5017, 1267, 2027, 2]
 
-// Module 11841 (search/tracking/Tracking)
-import v1 from "v1" /* 1255 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import TrackingConstants from "TrackingConstants" /* 7302 */;
-import SearchUtils from "SearchUtils" /* 11823 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 11842 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SearchQueryStore from "SearchQueryStore" /* 11822 */;
-import Constants from "Constants" /* 1074 */;
+// Module 11734 (search/tracking/Tracking)
+import v1 from "v1" /* 1267 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5017 */;
+import TrackingConstants from "TrackingConstants" /* 7306 */;
+import SearchUtils from "SearchUtils" /* 11716 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 11735 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SearchQueryStore from "SearchQueryStore" /* 11715 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

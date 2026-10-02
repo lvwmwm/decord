@@ -1,30 +1,82 @@
-// Module ID: 14805
-// Function ID: 14806
+// Module ID: 14793
+// Function ID: 14794
 // Name: AdvancedVoiceActivitySetting
-// Dependencies: [1993, 7417, 504, 9104, 1115, 11006, 2]
+// Dependencies: [1999, 7421, 558, 576, 504, 9081, 1127, 10874, 2]
 
-// Module 14805 (AdvancedVoiceActivitySetting)
-import get_initialized from "get initialized" /* 504 */;
-import intl2 from "intl" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 14793 (AdvancedVoiceActivitySetting)
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9081 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let advancedVoiceActivitySupported;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MediaEngineStore];
+    const fn = function o() {
+      return advancedVoiceActivitySupported.isAdvancedVoiceActivitySupported();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let advancedVoiceActivitySupported;
+  const items = [MediaEngineStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => advancedVoiceActivitySupported.isAdvancedVoiceActivitySupported());
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let modeOptions;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MediaEngineStore];
+    const fn = function o() {
+      return modeOptions.getModeOptions().vadUseKrisp;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let modeOptions;
+  const items = [MediaEngineStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => modeOptions.getModeOptions().vadUseKrisp);
+});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.BbESsg);
   },
   parent: MobileUserSettings.VOICE,
-  useValue: function useAdvancedVoiceActivitySettingValue() {
-    let modeOptions;
-    const items = [MediaEngineStore];
-    const obj = get_initialized;
-    return obj.useStateFromStores(items, () => modeOptions.getModeOptions().vadUseKrisp);
-  },
+  useValue: tmp3,
   onValueChange: function onAdvancedVoiceActivitySettingValueChange(vadUseKrisp) {
     const mode = MediaEngineStore.getMode();
     const obj = AudioActionCreatorsDefault;
@@ -35,12 +87,7 @@ let obj = {
     const intl = intl2.intl;
     return intl.string(intl2.t.LoOB1F);
   },
-  usePredicate: function useHasAdvancedVoiceActivitySetting() {
-    let advancedVoiceActivitySupported;
-    const items = [MediaEngineStore];
-    const obj = get_initialized;
-    return obj.useStateFromStores(items, () => advancedVoiceActivitySupported.isAdvancedVoiceActivitySupported());
-  }
+  usePredicate: tmp2
 };
 const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AdvancedVoiceActivitySetting.tsx");

@@ -1,21 +1,21 @@
-// Module ID: 1480
-// Function ID: 1481
+// Module ID: 1486
+// Function ID: 1487
 // Name: DimensionsStore
-// Dependencies: [17, 1481, 1878, 1613, 1879, 1626, 1248, 560, 1614, 2]
+// Dependencies: [17, 1487, 1884, 1619, 1885, 1632, 1260, 570, 1620, 2]
 
-// Module 1480 (DimensionsStore)
+// Module 1486 (DimensionsStore)
 import react_native from "react-native" /* 17 */;
-import react_native2 from "react-native" /* 1248 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1613 */;
-import AppEntryKey from "AppEntryKey" /* 1626 */;
-import react_native3 from "react-native" /* 1878 */;
-import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1879 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1481 */;
-import module_560 from "module_560" /* 560 */;
-import SafeAreaStore from "SafeAreaStore" /* 1614 */;
+import react_native2 from "react-native" /* 1260 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1619 */;
+import AppEntryKey from "AppEntryKey" /* 1632 */;
+import react_native3 from "react-native" /* 1884 */;
+import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1885 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1487 */;
+import module_570 from "module_570" /* 570 */;
+import SafeAreaStore from "SafeAreaStore" /* 1620 */;
 import size_mod from "module_2" /* 2 */;
 
-const f74192 = () => state.setState((arg0) => closure_1_4(arg0));
+const f83065 = () => state.setState((arg0) => closure_1_4(arg0));
 function getDimensionsStoreStateForEntry(appEntryKey, arg1) {
   let height2;
   let height4;
@@ -129,19 +129,19 @@ function getDimensionsStoreState(arg0) {
   return tmp;
 }
 const Dimensions = react_native.Dimensions;
-let byAppEntry = module_560.create(() => getDimensionsStoreState(undefined));
+let byAppEntry = module_570.create(() => getDimensionsStoreState(undefined));
 const subscription = SafeAreaStore.subscribe(() => {
   const obj = react_native2;
-  obj.batchUpdates(f74192);
+  obj.batchUpdates(f83065);
 });
 subscribeToKeyboardUIStore(() => {
   const obj = react_native2;
-  obj.batchUpdates(f74192);
+  obj.batchUpdates(f83065);
 });
 const listener = Dimensions.addEventListener("change", () => {
   let state;
   const obj = react_native2;
-  obj.batchUpdates(f74192);
+  obj.batchUpdates(f83065);
 });
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/screen/native/DimensionsStore.android.tsx");

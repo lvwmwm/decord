@@ -1,10 +1,10 @@
-// Module ID: 4741
-// Function ID: 4742
+// Module ID: 4743
+// Function ID: 4744
 // Name: ClientOutdatedAcceptGiftError
-// Dependencies: [1074, 2]
+// Dependencies: [1086, 2]
 
-// Module 4741 (ClientOutdatedAcceptGiftError)
-import Constants from "Constants" /* 1074 */;
+// Module 4743 (ClientOutdatedAcceptGiftError)
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;

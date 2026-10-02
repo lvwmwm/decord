@@ -1,18 +1,21 @@
-// Module ID: 9767
-// Function ID: 9768
+// Module ID: 9683
+// Function ID: 9684
 // Name: PremiumUpsellGradientBackground
-// Dependencies: [19, 17, 6852, 21, 4836, 5293, 1094, 2]
-// Exports: PremiumUpsellGradientBackground
+// Dependencies: [19, 17, 6853, 21, 4837, 558, 576, 5292, 1106, 2]
 
-// Module 9767 (PremiumUpsellGradientBackground)
+// Module 9683 (PremiumUpsellGradientBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import ColorConstants from "ColorConstants" /* 6852 */;
+import react2 from "react" /* 576 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import LinearGradientDefault from "LinearGradient" /* 5292 */;
+import ColorConstants from "ColorConstants" /* 6853 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let useTier0UpsellContent;
 
 let obj2;
 const StyleSheet = react_native.StyleSheet;
@@ -24,9 +27,31 @@ createStyles = createStyles.createStyles;
 obj2 = { opacity: 0.1 };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_5 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumUpsellGradientBackground.tsx");
-
-export const PremiumUpsellGradientBackground = function PremiumUpsellGradientBackground(useTier0UpsellContent) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((useTier0UpsellContent) => {
+  let PREMIUM_TIER_2_TRI_COLOR;
+  const obj = react2;
+  const cResult = obj.c(3);
+  useTier0UpsellContent = useTier0UpsellContent.useTier0UpsellContent;
+  const tmp4 = closure_5();
+  if (true === useTier0UpsellContent) {
+    PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_0;
+  } else {
+    PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_2_TRI_COLOR;
+  }
+  if (cResult[0] === tmp4.gradient) {
+    let tmp7;
+    if (cResult[1] === PREMIUM_TIER_2_TRI_COLOR) {
+      tmp7 = cResult[2];
+    }
+    return tmp7;
+  }
+  LinearGradientDefault;
+  const tmp9 = <tmp8 style={tmp4.gradient} start={ConstantsIOS.HorizontalGradient.START} end={ConstantsIOS.HorizontalGradient.END} colors={PREMIUM_TIER_2_TRI_COLOR} />;
+  cResult[0] = tmp4.gradient;
+  cResult[1] = PREMIUM_TIER_2_TRI_COLOR;
+  cResult[2] = tmp9;
+  tmp7 = tmp9;
+}) : ((useTier0UpsellContent) => {
   let PREMIUM_TIER_2_TRI_COLOR;
   useTier0UpsellContent = useTier0UpsellContent.useTier0UpsellContent;
   const obj = { style: closure_5().gradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: PREMIUM_TIER_2_TRI_COLOR };
@@ -38,4 +63,7 @@ export const PremiumUpsellGradientBackground = function PremiumUpsellGradientBac
     PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_2_TRI_COLOR;
   }
   return tmp2(tmp3, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumUpsellGradientBackground.tsx");
+
+export const PremiumUpsellGradientBackground = tmp5;

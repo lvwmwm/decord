@@ -1,18 +1,19 @@
-// Module ID: 7403
-// Function ID: 7404
+// Module ID: 7407
+// Function ID: 7408
 // Name: enhanced_role_colors/EnhancedRoleColorUtils
-// Dependencies: [32, 19, 17, 1182, 1085, 672, 1370, 5310, 2]
+// Dependencies: [32, 19, 17, 1194, 1097, 684, 1376, 5311, 558, 2]
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, processColorStringsArray, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray
 
-// Module 7403 (enhanced_role_colors/EnhancedRoleColorUtils)
+// Module 7407 (enhanced_role_colors/EnhancedRoleColorUtils)
 import react_native from "react-native" /* 17 */;
-import _modDef672 from "module_672" /* 672 */;
-import Constants from "Constants" /* 1085 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5310 */;
+import _modDef684 from "module_684" /* 684 */;
+import Constants from "Constants" /* 1097 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5311 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+import ThemeStore from "ThemeStore" /* 1194 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useHasEnhancedRoleColorsDefault = useHasEnhancedRoleColors;
@@ -33,11 +34,11 @@ function processColorStrings(colorStrings) {
       let tmp10;
       let tmp12Result;
       if (null != primaryColor) {
-        const obj = _modDef672(primaryColor);
+        const obj = _modDef684(primaryColor);
         tmp10 = processColor;
         [tmp7, tmp8, tmp9] = obj.hsl();
         _slicedToArray(obj.hsl(), 3);
-        const obj2 = _modDef672;
+        const obj2 = _modDef684;
         const hslResult = obj2.hsl(tmp7, tmp8, 0.85 * tmp9);
         tmp12Result = processColor(hslResult.hex());
       }
@@ -46,10 +47,10 @@ function processColorStrings(colorStrings) {
       if (ThemeStore.theme === ThemeTypes.LIGHT) {
         let tmp10Result;
         if (null != secondaryColor) {
-          const obj5 = _modDef672(secondaryColor);
+          const obj5 = _modDef684(secondaryColor);
           [tmp17, tmp18, tmp19] = obj5.hsl();
           _slicedToArray(obj5.hsl(), 3);
-          const obj6 = _modDef672;
+          const obj6 = _modDef684;
           const hslResult1 = obj6.hsl(tmp17, tmp18, 0.85 * tmp19);
           tmp10Result = tmp10(hslResult1.hex());
         }
@@ -58,10 +59,10 @@ function processColorStrings(colorStrings) {
         if (ThemeStore.theme === ThemeTypes.LIGHT) {
           let tmp10Result2;
           if (null != tertiaryColor) {
-            const obj8 = _modDef672(tertiaryColor);
+            const obj8 = _modDef684(tertiaryColor);
             [tmp25, tmp26, tmp27] = obj8.hsl();
             _slicedToArray(obj8.hsl(), 3);
-            const obj9 = _modDef672;
+            const obj9 = _modDef684;
             const hslResult2 = obj9.hsl(tmp25, tmp26, 0.85 * tmp27);
             tmp10Result2 = tmp10(hslResult2.hex());
           }
@@ -78,7 +79,9 @@ function processColorStrings(colorStrings) {
 }
 const processColor = react_native.processColor;
 const ThemeTypes = Constants.ThemeTypes;
-const result = size.fileFinishedImporting("modules/premium/enhanced_role_colors/native/EnhancedRoleColorUtils.tsx");
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("modules/premium/enhanced_role_colors/native/EnhancedRoleColorUtils.tsx");
 
 export { processColorStrings };
 export const processColorStringsArray = function processColorStringsArray(colorStrings) {
@@ -127,7 +130,7 @@ export const isNativeMessageEligibleForEnhancedRoleColors = function isNativeMes
   const obj = useHasEnhancedRoleColors;
   return obj.getHasEnhancedRoleColors(guildId1, id);
 };
-export const useIsRoleStyleAndRoleColorsEligibleForERC = function useIsRoleStyleAndRoleColorsEligibleForERC(guildId, id, stateFromStores, processColorStringsArray) {
-  const tmp = useHasEnhancedRoleColorsDefault(guildId, id) && "username" === stateFromStores && processColorStringsArray.length > 1;
+export const useIsRoleStyleAndRoleColorsEligibleForERC = (arg0, arg1, arg2, arg3) => {
+  const tmp = useHasEnhancedRoleColorsDefault(arg0, arg1) && "username" === arg2 && arg3.length > 1;
   return tmp;
 };

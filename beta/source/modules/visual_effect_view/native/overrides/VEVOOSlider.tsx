@@ -1,15 +1,17 @@
-// Module ID: 15552
-// Function ID: 15553
+// Module ID: 15540
+// Function ID: 15541
 // Name: VEVOOSlider
-// Dependencies: [19, 21, 4836, 1364, 576, 7726, 2]
+// Dependencies: [19, 21, 4837, 1370, 588, 558, 576, 7730, 2]
 
-// Module 15552 (VEVOOSlider)
+// Module 15540 (VEVOOSlider)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import _modDef7726 from "module_7726" /* 7726 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import _modDef7730 from "module_7730" /* 7730 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -21,7 +23,77 @@ if (PlatformUtils.isAndroid()) {
 }
 let obj = { slider: { marginTop: num } };
 let closure_4 = createStyles(obj);
-const memoResult = react.memo(function VEVOOSlider(disabledOpacity) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((initialValue) => {
+  let disabled;
+  let disabledOpacity;
+  let onValueChange;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(11);
+  ({ disabled, disabledOpacity, onValueChange } = initialValue);
+  let tmp4 = undefined !== disabledOpacity;
+  initialValue = initialValue.initialValue;
+  if (tmp4) {
+    tmp4 = disabledOpacity;
+  }
+  const tmp5 = closure_4();
+  let num = 1;
+  if (tmp4) {
+    num = 0.5;
+  }
+  if (cResult[0] !== num) {
+    const obj2 = { opacity: num };
+    cResult[0] = num;
+    cResult[1] = obj2;
+    tmp6 = obj2;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === tmp5.slider) {
+    let tmp7;
+    let tmp10;
+    if (cResult[3] === tmp6) {
+      tmp7 = cResult[4];
+    }
+    const current = initialValue.current;
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      let fn;
+      const tmpResult = PlatformUtils;
+      if (tmpResult.isAndroid()) {
+        fn = () => true;
+      }
+      cResult[5] = fn;
+      tmp10 = fn;
+    } else {
+      tmp10 = cResult[5];
+    }
+    if (cResult[6] === disabled) {
+      if (cResult[7] === onValueChange) {
+        if (cResult[8] === tmp7) {
+          let tmp11;
+          if (cResult[9] === current) {
+            tmp11 = cResult[10];
+          }
+          return tmp11;
+        }
+      }
+    }
+    _modDef7730;
+    const tmp15 = <tmp14 style={tmp7} disabled={disabled} value={current} minimumValue={0} maximumValue={1} minimumTrackTintColor={nativeDefault.unsafe_rawColors.BRAND_500} maximumTrackTintColor={nativeDefault.unsafe_rawColors.PRIMARY_400} onValueChange={onValueChange} onResponderGrant={tmp10} />;
+    cResult[6] = disabled;
+    cResult[7] = onValueChange;
+    cResult[8] = tmp7;
+    cResult[9] = current;
+    cResult[10] = tmp15;
+    tmp11 = tmp15;
+  }
+  const items = [tmp5.slider, tmp6];
+  cResult[2] = tmp5.slider;
+  cResult[3] = tmp6;
+  cResult[4] = items;
+  tmp7 = items;
+}) : ((disabledOpacity) => {
   let current;
   let fn;
   let initialValue;
@@ -36,7 +108,7 @@ const memoResult = react.memo(function VEVOOSlider(disabledOpacity) {
   let num = 1;
   closure_4();
   const tmp2 = jsx;
-  const tmp5 = _modDef7726;
+  const tmp5 = _modDef7730;
   if (flag) {
     num = 0.5;
   }
@@ -49,7 +121,7 @@ const memoResult = react.memo(function VEVOOSlider(disabledOpacity) {
     fn = () => true;
   }
   return tmp2(tmp5, obj);
-});
+}));
 const result = size.fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOSlider.tsx");
 
 export default memoResult;

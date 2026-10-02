@@ -1,32 +1,540 @@
-// Module ID: 9798
-// Function ID: 9799
+// Module ID: 9713
+// Function ID: 9714
 // Name: useEmojiAndSource
-// Dependencies: [5, 32, 19, 2067, 5771, 5897, 1074, 4486, 563, 2]
-// Exports: useEmojiAndSource
+// Dependencies: [5, 32, 19, 2073, 5772, 5894, 1086, 4489, 558, 576, 573, 2]
 
-// Module 9798 (useEmojiAndSource)
-import Constants from "Constants" /* 1074 */;
-import EmojiTypes from "EmojiTypes" /* 4486 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+// Module 9713 (useEmojiAndSource)
+import Constants from "Constants" /* 1086 */;
+import EmojiTypes from "EmojiTypes" /* 4489 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import EmojiStore from "EmojiStore" /* 5771 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 5897 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import EmojiStore from "EmojiStore" /* 5772 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 5894 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c2;
+let c2, current2Result, currentResult, emojiId, obj1, ref;
 
 let c9;
 let metroImportAll;
 let metroImportDefault;
+let _asyncToGenerator = _asyncToGenerator_mod;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ ExpressionSourceGuildRecord: metroImportDefault, EmojiSourceDataTypes: metroImportAll, getEmojiSourceData: c9 } = ExpressionSourceRecord);
 const GuildFeatures = Constants.GuildFeatures;
-const result = size.fileFinishedImporting("modules/emojis/hooks/useEmojiAndSource.tsx");
-
-export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiId) => {
+  let closure_2;
+  let emoji;
+  let first;
+  let hasItem;
+  let items1;
+  let joinedEmojiSourceGuildRecord;
+  let obj3;
+  let refreshPositionKey;
+  let tmp16;
+  let tmp18;
+  let tmp22;
+  let tmp24;
+  let tmp25;
+  let tmp7;
+  let tmp = emojiId;
+  const tmp2 = refreshPositionKey;
+  let obj = emojiId(refreshPositionKey[9]);
+  const cResult = obj.c(21);
+  emojiId = emojiId.emojiId;
+  refreshPositionKey = emojiId.refreshPositionKey;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp5 = EmojiStore;
+    const items = [EmojiStore, ];
+    items[1] = GuildStore;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== emojiId) {
+    class E {
+      constructor() {
+        obj = closure_6;
+        tmp = closure_5;
+        customEmojiById = null;
+        if (null != emojiId) {
+          customEmojiById = obj.getCustomEmojiById(tmp2);
+        }
+        type = undefined;
+        if (customEmojiById != null) {
+          type = customEmojiById.type;
+        }
+        if (type === closure_0(closure_1[7]).EmojiTypes.GUILD) {
+          obj1 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+          obj1.emoji = customEmojiById;
+          guildId = undefined;
+          getGuild = tmp.getGuild;
+          if (customEmojiById != null) {
+            guildId = customEmojiById.guildId;
+          }
+          obj1.joinedEmojiSourceGuildRecord = getGuild(guildId);
+          obj4 = obj1;
+        } else {
+          obj4 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+        }
+        return obj4;
+      }
+    }
+    cResult[1] = emojiId;
+    cResult[2] = E;
+    tmp7 = E;
+  } else {
+    class E {
+      constructor() {
+        obj = closure_6;
+        tmp = closure_5;
+        customEmojiById = null;
+        if (null != emojiId) {
+          customEmojiById = obj.getCustomEmojiById(tmp2);
+        }
+        type = undefined;
+        if (customEmojiById != null) {
+          type = customEmojiById.type;
+        }
+        if (type === closure_0(closure_1[7]).EmojiTypes.GUILD) {
+          obj1 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+          obj1.emoji = customEmojiById;
+          guildId = undefined;
+          getGuild = tmp.getGuild;
+          if (customEmojiById != null) {
+            guildId = customEmojiById.guildId;
+          }
+          obj1.joinedEmojiSourceGuildRecord = getGuild(guildId);
+          obj4 = obj1;
+        } else {
+          obj4 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+        }
+        return obj4;
+      }
+    }
+  }
+  const tmpResult = tmp(tmp2[10]);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp7);
+  ({ joinedEmojiSourceGuildRecord, emoji } = stateFromStoresObject);
+  if (cResult[3] !== joinedEmojiSourceGuildRecord) {
+    class E {
+      constructor() {
+        obj = closure_6;
+        tmp = closure_5;
+        customEmojiById = null;
+        if (null != emojiId) {
+          customEmojiById = obj.getCustomEmojiById(tmp2);
+        }
+        type = undefined;
+        if (customEmojiById != null) {
+          type = customEmojiById.type;
+        }
+        if (type === closure_0(closure_1[7]).EmojiTypes.GUILD) {
+          obj1 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+          obj1.emoji = customEmojiById;
+          guildId = undefined;
+          getGuild = tmp.getGuild;
+          if (customEmojiById != null) {
+            guildId = customEmojiById.guildId;
+          }
+          obj1.joinedEmojiSourceGuildRecord = getGuild(guildId);
+          obj4 = obj1;
+        } else {
+          obj4 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+        }
+        return obj4;
+      }
+    }
+    if (hasItem) {
+      class E {
+        constructor() {
+          obj = closure_6;
+          tmp = closure_5;
+          customEmojiById = null;
+          if (null != emojiId) {
+            customEmojiById = obj.getCustomEmojiById(tmp2);
+          }
+          type = undefined;
+          if (customEmojiById != null) {
+            type = customEmojiById.type;
+          }
+          if (type === closure_0(closure_1[7]).EmojiTypes.GUILD) {
+            obj1 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+            obj1.emoji = customEmojiById;
+            guildId = undefined;
+            getGuild = tmp.getGuild;
+            if (customEmojiById != null) {
+              guildId = customEmojiById.guildId;
+            }
+            obj1.joinedEmojiSourceGuildRecord = getGuild(guildId);
+            obj4 = obj1;
+          } else {
+            obj4 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+          }
+          return obj4;
+        }
+      }
+      hasItem = obj3.has(GuildFeatures.DISCOVERABLE);
+    }
+    cResult[3] = joinedEmojiSourceGuildRecord;
+    cResult[4] = hasItem;
+  } else {
+    class E {
+      constructor() {
+        obj = closure_6;
+        tmp = closure_5;
+        customEmojiById = null;
+        if (null != emojiId) {
+          customEmojiById = obj.getCustomEmojiById(tmp2);
+        }
+        type = undefined;
+        if (customEmojiById != null) {
+          type = customEmojiById.type;
+        }
+        if (type === closure_0(closure_1[7]).EmojiTypes.GUILD) {
+          obj1 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+          obj1.emoji = customEmojiById;
+          guildId = undefined;
+          getGuild = tmp.getGuild;
+          if (customEmojiById != null) {
+            guildId = customEmojiById.guildId;
+          }
+          obj1.joinedEmojiSourceGuildRecord = getGuild(guildId);
+          obj4 = obj1;
+        } else {
+          obj4 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+        }
+        return obj4;
+      }
+    }
+  }
+  if (null != joinedEmojiSourceGuildRecord) {
+    class E {
+      constructor() {
+        obj = closure_6;
+        tmp = closure_5;
+        customEmojiById = null;
+        if (null != emojiId) {
+          customEmojiById = obj.getCustomEmojiById(tmp2);
+        }
+        type = undefined;
+        if (customEmojiById != null) {
+          type = customEmojiById.type;
+        }
+        if (type === closure_0(closure_1[7]).EmojiTypes.GUILD) {
+          obj1 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+          obj1.emoji = customEmojiById;
+          guildId = undefined;
+          getGuild = tmp.getGuild;
+          if (customEmojiById != null) {
+            guildId = customEmojiById.guildId;
+          }
+          obj1.joinedEmojiSourceGuildRecord = getGuild(guildId);
+          obj4 = obj1;
+        } else {
+          obj4 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+        }
+        return obj4;
+      }
+    }
+  }
+  if (null == joinedEmojiSourceGuildRecord) {
+    class E {
+      constructor() {
+        obj = closure_6;
+        tmp = closure_5;
+        customEmojiById = null;
+        if (null != emojiId) {
+          customEmojiById = obj.getCustomEmojiById(tmp2);
+        }
+        type = undefined;
+        if (customEmojiById != null) {
+          type = customEmojiById.type;
+        }
+        if (type === closure_0(closure_1[7]).EmojiTypes.GUILD) {
+          obj1 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+          obj1.emoji = customEmojiById;
+          guildId = undefined;
+          getGuild = tmp.getGuild;
+          if (customEmojiById != null) {
+            guildId = customEmojiById.guildId;
+          }
+          obj1.joinedEmojiSourceGuildRecord = getGuild(guildId);
+          obj4 = obj1;
+        } else {
+          obj4 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+        }
+        return obj4;
+      }
+    }
+  }
+  _asyncToGenerator = tmp13;
+  let obj4 = react;
+  const tmp15 = _slicedToArray(react.useState(null == joinedEmojiSourceGuildRecord), 2);
+  [tmp16, _slicedToArray] = tmp15;
+  const tmp17 = _slicedToArray(react.useState(null), 2);
+  [tmp18, react] = tmp17;
+  if (cResult[5] !== joinedEmojiSourceGuildRecord) {
+    let fromGuildRecord;
+    class E {
+      constructor() {
+        obj = closure_6;
+        tmp = closure_5;
+        customEmojiById = null;
+        if (null != emojiId) {
+          customEmojiById = obj.getCustomEmojiById(tmp2);
+        }
+        type = undefined;
+        if (customEmojiById != null) {
+          type = customEmojiById.type;
+        }
+        if (type === closure_0(closure_1[7]).EmojiTypes.GUILD) {
+          obj1 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+          obj1.emoji = customEmojiById;
+          guildId = undefined;
+          getGuild = tmp.getGuild;
+          if (customEmojiById != null) {
+            guildId = customEmojiById.guildId;
+          }
+          obj1.joinedEmojiSourceGuildRecord = getGuild(guildId);
+          obj4 = obj1;
+        } else {
+          obj4 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+        }
+        return obj4;
+      }
+    }
+    if (null != joinedEmojiSourceGuildRecord) {
+      class E {
+        constructor() {
+          obj = closure_6;
+          tmp = closure_5;
+          customEmojiById = null;
+          if (null != emojiId) {
+            customEmojiById = obj.getCustomEmojiById(tmp2);
+          }
+          type = undefined;
+          if (customEmojiById != null) {
+            type = customEmojiById.type;
+          }
+          if (type === closure_0(closure_1[7]).EmojiTypes.GUILD) {
+            obj1 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+            obj1.emoji = customEmojiById;
+            guildId = undefined;
+            getGuild = tmp.getGuild;
+            if (customEmojiById != null) {
+              guildId = customEmojiById.guildId;
+            }
+            obj1.joinedEmojiSourceGuildRecord = getGuild(guildId);
+            obj4 = obj1;
+          } else {
+            obj4 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+          }
+          return obj4;
+        }
+      }
+      fromGuildRecord = ref.createFromGuildRecord(joinedEmojiSourceGuildRecord);
+    }
+    cResult[5] = joinedEmojiSourceGuildRecord;
+    cResult[6] = fromGuildRecord;
+  } else {
+    class E {
+      constructor() {
+        obj = closure_6;
+        tmp = closure_5;
+        customEmojiById = null;
+        if (null != emojiId) {
+          customEmojiById = obj.getCustomEmojiById(tmp2);
+        }
+        type = undefined;
+        if (customEmojiById != null) {
+          type = customEmojiById.type;
+        }
+        if (type === closure_0(closure_1[7]).EmojiTypes.GUILD) {
+          obj1 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+          obj1.emoji = customEmojiById;
+          guildId = undefined;
+          getGuild = tmp.getGuild;
+          if (customEmojiById != null) {
+            guildId = customEmojiById.guildId;
+          }
+          obj1.joinedEmojiSourceGuildRecord = getGuild(guildId);
+          obj4 = obj1;
+        } else {
+          obj4 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+        }
+        return obj4;
+      }
+    }
+  }
+  [tmp22, GuildStore] = _slicedToArray(obj4.useState(tmp19), 2);
+  _slicedToArray(obj4.useState(tmp19), 2);
+  [tmp24, EmojiStore] = _slicedToArray(obj4.useState(null), 2);
+  _slicedToArray(obj4.useState(null), 2);
+  ref = obj4.useRef(refreshPositionKey);
+  if (cResult[7] !== refreshPositionKey) {
+    class E {
+      constructor() {
+        obj = closure_6;
+        tmp = closure_5;
+        customEmojiById = null;
+        if (null != emojiId) {
+          customEmojiById = obj.getCustomEmojiById(tmp2);
+        }
+        type = undefined;
+        if (customEmojiById != null) {
+          type = customEmojiById.type;
+        }
+        if (type === closure_0(closure_1[7]).EmojiTypes.GUILD) {
+          obj1 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+          obj1.emoji = customEmojiById;
+          guildId = undefined;
+          getGuild = tmp.getGuild;
+          if (customEmojiById != null) {
+            guildId = customEmojiById.guildId;
+          }
+          obj1.joinedEmojiSourceGuildRecord = getGuild(guildId);
+          obj4 = obj1;
+        } else {
+          obj4 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+        }
+        return obj4;
+      }
+    }
+    cResult[7] = refreshPositionKey;
+    cResult[8] = tmp26;
+    tmp25 = tmp26;
+  } else {
+    class E {
+      constructor() {
+        obj = closure_6;
+        tmp = closure_5;
+        customEmojiById = null;
+        if (null != emojiId) {
+          customEmojiById = obj.getCustomEmojiById(tmp2);
+        }
+        type = undefined;
+        if (customEmojiById != null) {
+          type = customEmojiById.type;
+        }
+        if (type === closure_0(closure_1[7]).EmojiTypes.GUILD) {
+          obj1 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+          obj1.emoji = customEmojiById;
+          guildId = undefined;
+          getGuild = tmp.getGuild;
+          if (customEmojiById != null) {
+            guildId = customEmojiById.guildId;
+          }
+          obj1.joinedEmojiSourceGuildRecord = getGuild(guildId);
+          obj4 = obj1;
+        } else {
+          obj4 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+        }
+        return obj4;
+      }
+    }
+  }
+  const effect = obj4.useEffect(tmp25);
+  if (cResult[9] === emojiId) {
+    class E {
+      constructor() {
+        obj = closure_6;
+        tmp = closure_5;
+        customEmojiById = null;
+        if (null != emojiId) {
+          customEmojiById = obj.getCustomEmojiById(tmp2);
+        }
+        type = undefined;
+        if (customEmojiById != null) {
+          type = customEmojiById.type;
+        }
+        if (type === closure_0(closure_1[7]).EmojiTypes.GUILD) {
+          obj1 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+          obj1.emoji = customEmojiById;
+          guildId = undefined;
+          getGuild = tmp.getGuild;
+          if (customEmojiById != null) {
+            guildId = customEmojiById.guildId;
+          }
+          obj1.joinedEmojiSourceGuildRecord = getGuild(guildId);
+          obj4 = obj1;
+        } else {
+          obj4 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+        }
+        return obj4;
+      }
+    }
+    const effect1 = obj4.useEffect(B, items1);
+    if (cResult[13] === emoji) {
+      class E {
+        constructor() {
+          obj = closure_6;
+          tmp = closure_5;
+          customEmojiById = null;
+          if (null != emojiId) {
+            customEmojiById = obj.getCustomEmojiById(tmp2);
+          }
+          type = undefined;
+          if (customEmojiById != null) {
+            type = customEmojiById.type;
+          }
+          if (type === closure_0(closure_1[7]).EmojiTypes.GUILD) {
+            obj1 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+            obj1.emoji = customEmojiById;
+            guildId = undefined;
+            getGuild = tmp.getGuild;
+            if (customEmojiById != null) {
+              guildId = customEmojiById.guildId;
+            }
+            obj1.joinedEmojiSourceGuildRecord = getGuild(guildId);
+            obj4 = obj1;
+          } else {
+            obj4 = { emoji: null, joinedEmojiSourceGuildRecord: null };
+          }
+          return obj4;
+        }
+      }
+    }
+    let obj2 = { expressionSourceGuild: tmp22, expressionSourceApplication: tmp24, sourceType: tmp18, joinedEmojiSourceGuildRecord, hasJoinedEmojiSourceGuild: tmp9, emoji, isFetching: tmp16 };
+    cResult[13] = emoji;
+    cResult[14] = tmp24;
+    cResult[15] = tmp22;
+    cResult[16] = null != joinedEmojiSourceGuildRecord;
+    cResult[17] = tmp16;
+    cResult[18] = joinedEmojiSourceGuildRecord;
+    cResult[19] = tmp18;
+    cResult[20] = obj2;
+  }
+  class B {
+    constructor() {
+      tmp = closure_7;
+      current = closure_7.current;
+      if (current != null) {
+        currentResult = current();
+      }
+      closure_0 = closure_2(function() { /* body not rendered: F150333 */ });
+      tmp3 = closure_2;
+      if (tmp3) {
+        tmp5 = (function fetch() { /* body not rendered: F150334 */ })();
+      } else {
+        current2 = tmp.current;
+        if (current2 != null) {
+          current2Result = current2();
+        }
+      }
+      return;
+    }
+  }
+  items1 = [emojiId, tmp13];
+  cResult[9] = emojiId;
+  cResult[10] = null == joinedEmojiSourceGuildRecord;
+  cResult[11] = B;
+  cResult[12] = items1;
+}) : ((emojiId) => {
   let c3;
   let c5;
   let c6;
@@ -42,8 +550,8 @@ export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
   react = undefined;
   c5 = undefined;
   c6 = undefined;
-  let ref;
-  let obj = emojiId(refreshPositionKey[8]);
+  ref = undefined;
+  let obj = emojiId(refreshPositionKey[10]);
   const items = [c6, c5];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let getGuild;
@@ -112,7 +620,7 @@ export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
     function fetch() {
       return obj(...arguments);
     }
-    let obj = function _fetch() {
+    let obj = function _fetch2() {
       obj = _asyncToGenerator(async (arg0, value) => {
         let closure_0;
         let v3;
@@ -126,7 +634,7 @@ export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -179,7 +687,7 @@ export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
               current();
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } catch (tmp26) {
             c3 = 3;
             throw tmp26;
@@ -205,4 +713,7 @@ export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
     return tmp5;
   }, items1);
   return { expressionSourceGuild, expressionSourceApplication, sourceType, joinedEmojiSourceGuildRecord, hasJoinedEmojiSourceGuild, emoji, isFetching };
-};
+});
+const result = size.fileFinishedImporting("modules/emojis/hooks/useEmojiAndSource.tsx");
+
+export const useEmojiAndSource = tmp3;

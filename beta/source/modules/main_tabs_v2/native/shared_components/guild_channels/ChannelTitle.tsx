@@ -1,21 +1,87 @@
-// Module ID: 16477
-// Function ID: 16478
+// Module ID: 16479
+// Function ID: 16480
 // Name: guild_channels/ChannelTitle
-// Dependencies: [19, 5018, 21, 4836, 576, 9580, 4832, 2]
+// Dependencies: [19, 5019, 21, 4837, 588, 558, 576, 11442, 4833, 2]
 
-// Module 16477 (guild_channels/ChannelTitle)
+// Module 16479 (guild_channels/ChannelTitle)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import ReadStateConstants from "ReadStateConstants" /* 5018 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import ReadStateConstants from "ReadStateConstants" /* 5019 */;
+import ChannelListLayout from "ChannelListLayout" /* 11442 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 const jsx = Fragment.jsx;
 let obj = { muted: nativeDefault.colors.TEXT_MUTED, normal: nativeDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: nativeDefault.colors.REDESIGN_CHANNEL_NAME_TEXT };
 let closure_5 = createStyles.createStyleProperties(obj);
-const memoResult = react.memo(function ChannelTitle(unread) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let connected;
+  let layout;
+  let muted;
+  let resolvedUnreadSetting;
+  let title;
+  let tmp4;
+  let tmp8;
+  let unread;
+  const obj = react2;
+  const cResult = obj.c(8);
+  ({ title, unread, layout, muted, resolvedUnreadSetting, connected } = arg0);
+  if (cResult[0] !== layout) {
+    const tmpResult = ChannelListLayout;
+    const layoutStyles = tmpResult.getLayoutStyles(layout);
+    cResult[0] = layout;
+    cResult[1] = layoutStyles;
+    tmp4 = layoutStyles;
+  } else {
+    tmp4 = cResult[1];
+  }
+  const tmp6 = closure_5();
+  let unreadOrConnected = tmp6.normal;
+  if (muted) {
+    unreadOrConnected = tmp6.muted;
+  } else {
+    if (unread) {
+      unread = resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES;
+    }
+    if (!unread) {
+      unread = connected;
+    }
+    if (unread) {
+      unreadOrConnected = tmp6.unreadOrConnected;
+    }
+  }
+  if (cResult[2] !== unreadOrConnected) {
+    const obj2 = { color: unreadOrConnected, paddingRight: 4, flexShrink: 1 };
+    cResult[2] = unreadOrConnected;
+    cResult[3] = obj2;
+    tmp8 = obj2;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (title == null) {
+    title = "";
+  }
+  if (cResult[4] === tmp4.channelName.text.variant) {
+    if (cResult[5] === tmp8) {
+      let tmp9;
+      if (cResult[6] === title) {
+        tmp9 = cResult[7];
+      }
+      return tmp9;
+    }
+  }
+  const tmp10 = jsx(Text_Text.Text, { variant: tmp4.channelName.text.variant, lineClamp: 1, maxFontSizeMultiplier: 1.75, style: tmp8, children: title });
+  cResult[4] = tmp4.channelName.text.variant;
+  cResult[5] = tmp8;
+  cResult[6] = title;
+  cResult[7] = tmp10;
+  tmp9 = tmp10;
+}) : ((unread) => {
   let muted;
   let title;
   ({ title, muted } = unread);
@@ -23,7 +89,7 @@ const memoResult = react.memo(function ChannelTitle(unread) {
   const resolvedUnreadSetting = unread.resolvedUnreadSetting;
   const connected = unread.connected;
   const layout = unread.layout;
-  const obj = muted(unread[5]);
+  const obj = muted(unread[7]);
   const layoutStyles = obj.getLayoutStyles(layout);
   let tmp2 = closure_5();
   const normal = tmp2;
@@ -42,13 +108,13 @@ const memoResult = react.memo(function ChannelTitle(unread) {
     return { color, paddingRight: 4, flexShrink: 1 };
   }, items);
   const obj2 = { variant: layoutStyles.channelName.text.variant, lineClamp: 1, maxFontSizeMultiplier: 1.75, style: memo, children: title };
-  const Text = muted(unread[6]).Text;
+  const Text = muted(unread[8]).Text;
   const tmp4 = normal;
   if (title == null) {
     title = "";
   }
   return tmp4(Text, obj2);
-});
+}));
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelTitle.tsx");
 
 export default memoResult;

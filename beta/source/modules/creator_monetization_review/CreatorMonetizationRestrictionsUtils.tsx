@@ -1,14 +1,14 @@
-// Module ID: 4461
-// Function ID: 4462
+// Module ID: 4464
+// Function ID: 4465
 // Name: CreatorMonetizationRestrictionsUtils
-// Dependencies: [4462, 2067, 4463, 1074, 2]
+// Dependencies: [4465, 2073, 4466, 1086, 2]
 // Exports: isRestrictedFromMonetizationReapplication, isRestrictedFromShowingGuildPurchaseEntryPoints, isRestrictedFromUpdatingCreatorMonetizationSettings, shouldHideGuildPurchaseEntryPoints, shouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 4461 (CreatorMonetizationRestrictionsUtils)
-import Constants from "Constants" /* 1074 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4462 */;
-import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 4463 */;
-import GuildStore from "GuildStore" /* 2067 */;
+// Module 4464 (CreatorMonetizationRestrictionsUtils)
+import Constants from "Constants" /* 1086 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4465 */;
+import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 4466 */;
+import GuildStore from "GuildStore" /* 2073 */;
 import size from "module_2" /* 2 */;
 
 const GuildRoleSubscriptionsStore = GuildRoleSubscriptionsStore2;
@@ -46,8 +46,8 @@ export const shouldHideGuildPurchaseEntryPoints = function shouldHideGuildPurcha
     return flag;
   }
 };
-export const isRestrictedFromUpdatingCreatorMonetizationSettings = function isRestrictedFromUpdatingCreatorMonetizationSettings(stateFromStoresArray) {
-  const hasItem = null != stateFromStoresArray && stateFromStoresArray.includes(constants.SETTINGS_READ_ONLY);
+export const isRestrictedFromUpdatingCreatorMonetizationSettings = function isRestrictedFromUpdatingCreatorMonetizationSettings(restrictions) {
+  const hasItem = null != restrictions && restrictions.includes(constants.SETTINGS_READ_ONLY);
   return hasItem;
 };
 export const shouldRestrictUpdatingCreatorMonetizationSettings = function shouldRestrictUpdatingCreatorMonetizationSettings(id) {
@@ -74,7 +74,7 @@ export const shouldRestrictUpdatingCreatorMonetizationSettings = function should
     return flag;
   }
 };
-export const isRestrictedFromMonetizationReapplication = function isRestrictedFromMonetizationReapplication(stateFromStoresArray) {
-  const hasItem = null != stateFromStoresArray && stateFromStoresArray.includes(constants.REAPPLICATION_DISABLED);
+export const isRestrictedFromMonetizationReapplication = function isRestrictedFromMonetizationReapplication(restrictions) {
+  const hasItem = null != restrictions && restrictions.includes(constants.REAPPLICATION_DISABLED);
   return hasItem;
 };

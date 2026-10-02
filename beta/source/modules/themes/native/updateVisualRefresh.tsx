@@ -1,13 +1,13 @@
-// Module ID: 16788
-// Function ID: 16789
+// Module ID: 16790
+// Function ID: 16791
 // Name: updateVisualRefresh
-// Dependencies: [17, 1364, 14000, 2]
+// Dependencies: [17, 1370, 14002, 2]
 // Exports: updateVisualRefresh
 
-// Module 16788 (updateVisualRefresh)
+// Module 16790 (updateVisualRefresh)
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import react_nativeDefault from "react-native" /* 14000 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import react_nativeDefault from "react-native" /* 14002 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = react_native.NativeModules;

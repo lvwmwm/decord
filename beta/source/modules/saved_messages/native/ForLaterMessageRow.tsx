@@ -1,21 +1,23 @@
-// Module ID: 11698
-// Function ID: 11699
+// Module ID: 11590
+// Function ID: 11591
 // Name: ForLaterMessageRow
-// Dependencies: [19, 17, 21, 4836, 576, 4767, 2021, 7374, 8112, 1364, 2]
-// Exports: ForLaterMessageRow
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4769, 1370, 2027, 7378, 8109, 2]
 
-// Module 11698 (ForLaterMessageRow)
+// Module 11590 (ForLaterMessageRow)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import RowGeneratorDefault from "RowGenerator" /* 7374 */;
+import nativeDefault from "native" /* 588 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import useThemeDefault from "useTheme" /* 4769 */;
+import RowGeneratorDefault from "RowGenerator" /* 7378 */;
+import ChatItemDefault from "ChatItem" /* 8109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault;
+let importDefault, tmp5;
 
 let hasOwnProperty;
 let metroRequire;
@@ -25,13 +27,224 @@ const View = react_native.View;
 let obj = { preview: { marginHorizontal: -16, marginTop: -9, overflow: "hidden" }, flushToCardBottom: obj2, footer: { paddingHorizontal: 16, paddingTop: 8 } };
 obj2 = { marginBottom: -16, borderBottomLeftRadius: nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS, borderBottomRightRadius: nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS };
 let closure_7 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/saved_messages/native/ForLaterMessageRow.tsx");
-
-export const ForLaterMessageRow = function ForLaterMessageRow(arg0) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+  let footer;
+  let items;
+  let lineClamp;
+  let maxHeight;
+  let message;
+  let seeMoreLabelColor;
+  let tmp7;
+  const tmp = lineClamp;
+  let obj = lineClamp(576);
+  const cResult = obj.c(23);
+  ({ message, lineClamp } = arg0);
+  ({ maxHeight, footer } = arg0);
+  const tmp4 = closure_7();
+  const tmp6 = useThemeDefault();
+  if (cResult[0] !== tmp6) {
+    let obj2 = { seeMoreLabelColor: tmp5(588).colors.TEXT_DEFAULT };
+    const createNativeStyleProperties = tmp(4837).createNativeStyleProperties;
+    tmp(4837);
+    const tmp9 = createNativeStyleProperties(obj2)(tmp6);
+    cResult[0] = tmp6;
+    cResult[1] = tmp9;
+    tmp7 = tmp9;
+  } else {
+    tmp7 = cResult[1];
+  }
+  importDefault = tmp7;
+  if (cResult[2] === lineClamp) {
+    let tmp10;
+    let tmp12;
+    let tmp14;
+    let tmp16;
+    let tmp18;
+    if (cResult[3] === tmp7) {
+      tmp10 = cResult[4];
+    }
+    const _Symbol = Symbol;
+    let str = "react.memo_cache_sentinel";
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const RenderEmbeds = tmp(2027).RenderEmbeds;
+      const setting = RenderEmbeds.getSetting();
+      cResult[5] = setting;
+      tmp12 = setting;
+    } else {
+      tmp12 = cResult[5];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const InlineEmbedMedia = tmp(2027).InlineEmbedMedia;
+      const setting1 = InlineEmbedMedia.getSetting();
+      cResult[6] = setting1;
+      tmp14 = setting1;
+    } else {
+      tmp14 = cResult[6];
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      const InlineAttachmentMedia = tmp(2027).InlineAttachmentMedia;
+      const setting2 = InlineAttachmentMedia.getSetting();
+      cResult[7] = setting2;
+      tmp16 = setting2;
+    } else {
+      tmp16 = cResult[7];
+    }
+    const _Symbol4 = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      const self = this;
+      const self2 = this;
+      let obj3 = new tmp5(7378)();
+      const obj4 = { renderEmbeds: tmp12, inlineEmbedMedia: tmp14, inlineAttachmentMedia: tmp16, renderReplies: false, renderExecutedCommands: false, animateEmoji: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, ignoreMentioned: true, shouldDisableInteractiveComponents: true };
+      obj3.setOptions(obj4);
+      cResult[8] = obj3;
+      tmp18 = obj3;
+    } else {
+      tmp18 = cResult[8];
+    }
+    let flushToCardBottom = null;
+    if (null == footer) {
+      flushToCardBottom = tmp4.flushToCardBottom;
+    }
+    if (cResult[9] === tmp4.preview) {
+      let tmp23;
+      if (cResult[10] === flushToCardBottom) {
+        tmp23 = cResult[11];
+      }
+      if (cResult[12] === maxHeight) {
+        if (cResult[13] === message) {
+          let tmp25;
+          if (cResult[14] === tmp10) {
+            tmp25 = cResult[15];
+          }
+          if (cResult[16] === footer) {
+            let tmp28;
+            if (cResult[17] === tmp4.footer) {
+              tmp28 = cResult[18];
+            }
+            if (cResult[19] === tmp23) {
+              if (cResult[20] === tmp25) {
+                let tmp32;
+                if (cResult[21] === tmp28) {
+                  tmp32 = cResult[22];
+                }
+                return tmp32;
+              }
+            }
+            const obj5 = { style: tmp23, children: items };
+            items = [tmp25, tmp28];
+            cResult[19] = tmp23;
+            cResult[20] = tmp25;
+            cResult[21] = tmp28;
+            cResult[22] = closure_6(View, obj5);
+            closure_6(View, obj5);
+            class M {
+              constructor(arg0) {
+                if (null != lineClamp) {
+                  obj = { numberOfLines: null, expandable: null, seeMoreLabel: null, seeMoreLabelColor: null };
+                  obj.numberOfLines = tmp;
+                  tmp2 = closure_0;
+                  tmp3 = closure_2;
+                  obj2 = closure_0(closure_2[8]);
+                  obj.expandable = obj2.isIOS();
+                  obj3 = closure_0(closure_2[8]);
+                  str = "";
+                  if (obj3.isIOS()) {
+                    str = "...";
+                  }
+                  tmp4 = arg0;
+                  obj.seeMoreLabel = str;
+                  tmp5 = closure_1;
+                  obj.seeMoreLabelColor = closure_1.seeMoreLabelColor;
+                  arg0.truncation = obj;
+                }
+                return;
+              }
+            }
+          }
+          let tmp29 = null;
+          if (null != footer) {
+            const obj6 = { style: tmp4.footer, children: footer };
+            tmp29 = closure_5(View, obj6);
+          }
+          cResult[16] = footer;
+          cResult[17] = tmp4.footer;
+          cResult[18] = tmp29;
+          tmp28 = tmp29;
+        }
+      }
+      const obj7 = { pointerEvents: "none", horizontalOffset: 0, modifyRow: tmp10, message, rowGenerator: tmp18, maxHeight };
+      const tmp27 = closure_5(ChatItemDefault, obj7);
+      cResult[12] = maxHeight;
+      cResult[13] = message;
+      cResult[14] = tmp10;
+      cResult[15] = tmp27;
+      tmp25 = tmp27;
+    }
+    class M {
+      constructor(arg0) {
+        if (null != lineClamp) {
+          obj = { numberOfLines: null, expandable: null, seeMoreLabel: null, seeMoreLabelColor: null };
+          obj.numberOfLines = tmp;
+          tmp2 = closure_0;
+          tmp3 = closure_2;
+          obj2 = closure_0(closure_2[8]);
+          obj.expandable = obj2.isIOS();
+          obj3 = closure_0(closure_2[8]);
+          str = "";
+          if (obj3.isIOS()) {
+            str = "...";
+          }
+          tmp4 = arg0;
+          obj.seeMoreLabel = str;
+          tmp5 = closure_1;
+          obj.seeMoreLabelColor = closure_1.seeMoreLabelColor;
+          arg0.truncation = obj;
+        }
+        return;
+      }
+    }
+    tmp24[0] = tmp4.preview;
+    tmp24[1] = flushToCardBottom;
+    cResult[9] = tmp4.preview;
+    cResult[10] = flushToCardBottom;
+    cResult[11] = tmp24;
+    tmp23 = tmp24;
+  }
+  class M {
+    constructor(arg0) {
+      if (null != lineClamp) {
+        obj = { numberOfLines: null, expandable: null, seeMoreLabel: null, seeMoreLabelColor: null };
+        obj.numberOfLines = tmp;
+        tmp2 = closure_0;
+        tmp3 = closure_2;
+        obj2 = closure_0(closure_2[8]);
+        obj.expandable = obj2.isIOS();
+        obj3 = closure_0(closure_2[8]);
+        str = "";
+        if (obj3.isIOS()) {
+          str = "...";
+        }
+        tmp4 = arg0;
+        obj.seeMoreLabel = str;
+        tmp5 = closure_1;
+        obj.seeMoreLabelColor = closure_1.seeMoreLabelColor;
+        arg0.truncation = obj;
+      }
+      return;
+    }
+  }
+  cResult[2] = lineClamp;
+  cResult[3] = tmp7;
+  cResult[4] = M;
+  tmp10 = M;
+}) : ((arg0) => {
   let footer;
   let items2;
   let maxHeight;
   let message;
+  let require;
   let seeMoreLabelColor;
   ({ lineClamp: require, footer } = arg0);
   importDefault = undefined;
@@ -72,7 +285,7 @@ export const ForLaterMessageRow = function ForLaterMessageRow(arg0) {
     modifyRow(arg0) {
       let obj2;
       let str;
-      if (null != require) {
+      if (null != _require) {
         const obj = { numberOfLines: tmp, expandable: obj2.isIOS(), seeMoreLabel: str, seeMoreLabelColor: seeMoreLabelColor.seeMoreLabelColor };
         str = "";
         obj2 = PlatformUtils;
@@ -87,7 +300,7 @@ export const ForLaterMessageRow = function ForLaterMessageRow(arg0) {
     rowGenerator: memo,
     maxHeight
   };
-  items2[0] = closure_5(tmp2(tmp3[8]), obj4);
+  items2[0] = closure_5(tmp2(tmp3[11]), obj4);
   let tmp12Result = null;
   const tmp12 = closure_5;
   if (null != footer) {
@@ -96,4 +309,7 @@ export const ForLaterMessageRow = function ForLaterMessageRow(arg0) {
   }
   items2[1] = tmp12Result;
   return tmp9(setting2, obj3);
-};
+});
+const result = size.fileFinishedImporting("modules/saved_messages/native/ForLaterMessageRow.tsx");
+
+export const ForLaterMessageRow = tmp3;

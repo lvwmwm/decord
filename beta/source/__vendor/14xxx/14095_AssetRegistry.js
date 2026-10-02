@@ -1,10 +1,10 @@
 // Module ID: 14095
 // Function ID: 14096
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 14095 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 24, height: 24, scales: [2, 3], hash: "4d2adea177cc0cf5fd8e4a93e093db12", name: "mic", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "d63daceced7ceb0d84c7aba817626689", name: "ic_call_status_yellow_24px", type: "png" });

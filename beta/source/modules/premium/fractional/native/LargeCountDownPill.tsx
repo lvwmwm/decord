@@ -1,16 +1,16 @@
-// Module ID: 13003
-// Function ID: 13004
+// Module ID: 13005
+// Function ID: 13006
 // Name: LargeCountDownPill
-// Dependencies: [17, 21, 4836, 576, 4528, 1115, 4787, 4832, 2]
-// Exports: default
+// Dependencies: [17, 21, 4837, 588, 558, 576, 4531, 1127, 4788, 4833, 2]
 
-// Module 13003 (LargeCountDownPill)
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
+// Module 13005 (LargeCountDownPill)
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,9 +30,103 @@ obj2 = { flexDirection: "row", justifyContent: "center", alignItems: "center", b
 createStyles = createStyles.createStyles;
 obj3 = { paddingVertical: 8, color: nativeDefault.colors.TEXT_STATUS_IDLE, fontSize: 14, lineHeight: 16, marginRight: 8 };
 let closure_7 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/premium/fractional/native/LargeCountDownPill.tsx");
-
-export default function LargeCountDownPill(countdownText) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((countdownText) => {
+  let closure_0;
+  let items;
+  let largeCountdownPill;
+  let largeCountdownPillText;
+  let tmp5;
+  let tmp6;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(16);
+  const tmp4 = closure_7();
+  _require = tmp4;
+  if (cResult[0] !== tmp4.iconStyle) {
+    const fn = function l() {
+      let intl;
+      let obj = {
+        key: "LARGE_COUNTDOWN_PILL_TOAST",
+        content: intl.string(intl2.t["Mv4E/M"]),
+        icon() {
+          const obj = { style: closure_1_0.iconStyle, color: nativeDefault.colors.STATUS_WARNING };
+          const CircleInformationIcon = closure_0(dependencyMap[8]).CircleInformationIcon;
+          return closure_2_5(CircleInformationIcon, obj);
+        },
+        iconColor: nativeDefault.colors.STATUS_WARNING
+      };
+      const open = ToastActionCreatorsDefault.open;
+      ToastActionCreatorsDefault;
+      intl = intl2.intl;
+      open(obj);
+    };
+    cResult[0] = tmp4.iconStyle;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  ({ largeCountdownPill, largeCountdownPillText } = tmp4);
+  if (cResult[2] !== countdownText.countdownText) {
+    const formatted = str.toUpperCase();
+    cResult[2] = countdownText.countdownText;
+    cResult[3] = formatted;
+    tmp6 = formatted;
+  } else {
+    tmp6 = cResult[3];
+  }
+  if (cResult[4] === tmp4.largeCountdownPillText) {
+    let tmp8;
+    let tmp10;
+    if (cResult[5] === tmp6) {
+      tmp8 = cResult[6];
+    }
+    if (cResult[7] !== tmp4.iconStyle) {
+      const obj2 = { style: tmp4.iconStyle, color: nativeDefault.colors.TEXT_STATUS_IDLE };
+      let CircleInformationIcon = tmp(4788).CircleInformationIcon;
+      const tmp13 = closure_5(CircleInformationIcon, obj2);
+      cResult[7] = tmp4.iconStyle;
+      cResult[8] = tmp13;
+      tmp10 = tmp13;
+    } else {
+      tmp10 = cResult[8];
+    }
+    if (cResult[9] === tmp4.largeCountdownPill) {
+      if (cResult[10] === tmp8) {
+        let tmp14;
+        if (cResult[11] === tmp10) {
+          tmp14 = cResult[12];
+        }
+        if (cResult[13] === tmp5) {
+          let tmp18;
+          if (cResult[14] === tmp14) {
+            tmp18 = cResult[15];
+          }
+          return tmp18;
+        }
+        const obj3 = { onPress: tmp5, children: tmp14 };
+        const tmp21 = closure_5(closure_3, obj3);
+        cResult[13] = tmp5;
+        cResult[14] = tmp14;
+        cResult[15] = tmp21;
+        tmp18 = tmp21;
+      }
+    }
+    const obj4 = { style: largeCountdownPill, children: items };
+    items = [tmp8, tmp10];
+    const tmp17 = closure_6(closure_4, obj4);
+    cResult[9] = tmp4.largeCountdownPill;
+    cResult[10] = tmp8;
+    cResult[11] = tmp10;
+    cResult[12] = tmp17;
+    tmp14 = tmp17;
+  }
+  const tmp9 = closure_5(tmp(4833).Text, { variant: "text-xs/bold", style: largeCountdownPillText, children: tmp6 });
+  cResult[4] = tmp4.largeCountdownPillText;
+  cResult[5] = tmp6;
+  cResult[6] = tmp9;
+  tmp8 = tmp9;
+}) : ((countdownText) => {
   let closure_0;
   let items;
   let obj2;
@@ -47,7 +141,7 @@ export default function LargeCountDownPill(countdownText) {
         content: intl.string(intl2.t["Mv4E/M"]),
         icon() {
           const obj = { style: closure_1_0.iconStyle, color: nativeDefault.colors.STATUS_WARNING };
-          const CircleInformationIcon = closure_0(dependencyMap[6]).CircleInformationIcon;
+          const CircleInformationIcon = closure_0(dependencyMap[8]).CircleInformationIcon;
           return closure_2_5(CircleInformationIcon, obj);
         },
         iconColor: nativeDefault.colors.STATUS_WARNING
@@ -67,4 +161,7 @@ export default function LargeCountDownPill(countdownText) {
   let CircleInformationIcon = require("CircleInformationIcon").CircleInformationIcon;
   items[1] = closure_5(CircleInformationIcon, obj4);
   return closure_5(closure_3, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/premium/fractional/native/LargeCountDownPill.tsx");
+
+export default tmp5;

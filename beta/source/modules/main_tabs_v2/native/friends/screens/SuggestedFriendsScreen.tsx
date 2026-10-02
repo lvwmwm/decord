@@ -1,19 +1,21 @@
-// Module ID: 16593
-// Function ID: 16594
+// Module ID: 16595
+// Function ID: 16596
 // Name: SuggestedFriendsScreen
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 6583, 6603, 1241, 15679, 16586, 7624, 16590, 5437, 10326, 10457, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 6584, 6604, 1253, 15678, 16588, 7628, 16592, 5438, 10367, 10492, 1127, 2]
 
-// Module 16593 (SuggestedFriendsScreen)
+// Module 16595 (SuggestedFriendsScreen)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 16590 */;
+import nativeDefault from "native" /* 588 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 16592 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let closure_1, closure_2, constants, num;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -26,9 +28,147 @@ const View = react_native.View;
 let obj = { emptyContainer: obj2, container: { flex: 1 } };
 obj2 = { flex: 1, paddingTop: nativeDefault.space.PX_32 };
 let closure_9 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/SuggestedFriendsScreen.tsx");
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let added;
+  let analyticsLocations;
+  let friendSuggestions;
+  let setAdded;
+  let tmp13;
+  let tmp7;
+  let tmp8;
+  const tmp = analyticsLocations;
+  let obj = analyticsLocations(setAdded[7]);
+  const cResult = obj.c(26);
+  closure_9();
+  const tmp6 = added(setAdded[8]);
+  analyticsLocations = tmp6(added(setAdded[9]).SUGGESTED_FRIENDS).analyticsLocations;
+  const tmp5 = added;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s() {
+      const obj = added(setAdded[10]);
+      const obj2 = { friend_add_type: constants.FRIENDS_SUGGESTED_FRIENDS_MODAL };
+      obj.track(userRowWithSubLabelHeight1.FRIEND_ADD_VIEWED, obj2);
+    };
+    let items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp7 = fn;
+    tmp8 = items;
+  } else {
+    [tmp7, tmp8] = cResult;
+  }
+  const effect = friendSuggestions.useEffect(tmp7, tmp8);
+  const tmp10 = tmp5(setAdded[11])();
+  added = tmp10.added;
+  setAdded = tmp10.setAdded;
+  friendSuggestions = tmp10.friendSuggestions;
+  const tmpResult = tmp(setAdded[12]);
+  const userRowWithSubLabelHeight = tmpResult.useUserRowWithSubLabelHeight(1);
+  const tmpResult2 = tmp(setAdded[12]);
+  const userRowWithSubLabelHeight1 = tmpResult2.useUserRowWithSubLabelHeight(2);
+  if (cResult[2] !== analyticsLocations) {
+    const fn2 = function h(id) {
+      const obj = { userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations };
+      showUserProfileActionSheetDefault(obj);
+    };
+    cResult[2] = analyticsLocations;
+    cResult[3] = fn2;
+    tmp13 = fn2;
+  } else {
+    tmp13 = cResult[3];
+  }
+  constants = tmp13;
+  if (cResult[4] === added) {
+    if (cResult[5] === friendSuggestions) {
+      if (cResult[6] === tmp13) {
+        const _Symbol = Symbol;
+        if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+          class A {
+            constructor() {
 
-export default function SuggestedFriendsScreen() {
+            }
+          }
+          cResult[9] = A;
+        } else {
+          class A {
+            constructor() {
+
+            }
+          }
+        }
+        if (cResult[10] === friendSuggestions) {
+          class A {
+            constructor() {
+
+            }
+          }
+        }
+        class M {
+          constructor(arg0, arg1) {
+            let mutualFriendsCount;
+            if (friendSuggestions[arg1] != null) {
+              mutualFriendsCount = tmp.mutualFriendsCount;
+            }
+            let tmp3 = null != mutualFriendsCount;
+            if (tmp3) {
+              let mutualFriendsCount1;
+              if (friendSuggestions[arg1] != null) {
+                mutualFriendsCount1 = tmp.mutualFriendsCount;
+              }
+              tmp3 = mutualFriendsCount1 > 0;
+            }
+            return tmp3 ? userRowWithSubLabelHeight1 : userRowWithSubLabelHeight;
+          }
+        }
+        cResult[10] = friendSuggestions;
+        cResult[11] = userRowWithSubLabelHeight;
+        cResult[12] = userRowWithSubLabelHeight1;
+        cResult[13] = M;
+      }
+    }
+  }
+  class I {
+    constructor(arg0, arg1) {
+      closure_0 = arg1;
+      tmp = friendSuggestions[arg1];
+      closure_1 = tmp;
+      closure_2 = arg1 === friendSuggestions.length - 1;
+      mutualFriendsCount = undefined;
+      if (tmp != null) {
+        mutualFriendsCount = tmp.mutualFriendsCount;
+      }
+      tmp3 = null != mutualFriendsCount;
+      if (tmp3) {
+        mutualFriendsCount1 = undefined;
+        if (tmp != null) {
+          mutualFriendsCount1 = tmp.mutualFriendsCount;
+        }
+        num = 0;
+        tmp3 = mutualFriendsCount1 > 0;
+      }
+      str = "contactSuggestionNoMutualCount";
+      if (tmp3) {
+        str = "contactSuggestionMutualCount";
+      }
+      obj = {
+        type: "custom",
+        itemType: str,
+        key: tmp.user.id,
+        component() {
+              const obj = { added: added.includes(suggestedFriend), suggestedFriend, start: 0 === closure_0, end, onPress, onAddSuggestion() { /* body not rendered: F151771 */ }, location: metroRequire.FRIENDS_SUGGESTED_FRIENDS_MODAL };
+              const ContactSuggestionRow = ContactSuggestionRow2.ContactSuggestionRow;
+              return metroImportDefault(ContactSuggestionRow, obj);
+            }
+      };
+      return obj;
+    }
+  }
+  cResult[4] = added;
+  cResult[5] = friendSuggestions;
+  cResult[6] = tmp13;
+  cResult[7] = setAdded;
+  cResult[8] = I;
+}) : (() => {
   let added;
   let friendSuggestions;
   let intl;
@@ -40,21 +180,21 @@ export default function SuggestedFriendsScreen() {
   let tmp2Result;
   const tmp = closure_9();
   let tmp3 = setAdded;
-  const tmp4 = added(setAdded[6]);
-  const analyticsLocations = tmp4(added(setAdded[7]).SUGGESTED_FRIENDS).analyticsLocations;
+  const tmp4 = added(setAdded[8]);
+  const analyticsLocations = tmp4(added(setAdded[9]).SUGGESTED_FRIENDS).analyticsLocations;
   const effect = friendSuggestions.useEffect(() => {
-    const obj = added(setAdded[8]);
+    const obj = added(setAdded[10]);
     const obj2 = { friend_add_type: callback.FRIENDS_SUGGESTED_FRIENDS_MODAL };
     obj.track(userRowWithSubLabelHeight1.FRIEND_ADD_VIEWED, obj2);
   }, []);
-  const tmp6 = added(setAdded[9])();
+  const tmp6 = added(setAdded[11])();
   const tmp2 = added;
   added = tmp6.added;
   setAdded = tmp6.setAdded;
   friendSuggestions = tmp6.friendSuggestions;
-  let obj = analyticsLocations(setAdded[10]);
+  let obj = analyticsLocations(setAdded[12]);
   const userRowWithSubLabelHeight = obj.useUserRowWithSubLabelHeight(1);
-  let obj2 = analyticsLocations(setAdded[10]);
+  let obj2 = analyticsLocations(setAdded[12]);
   const userRowWithSubLabelHeight1 = obj2.useUserRowWithSubLabelHeight(2);
   let items = [analyticsLocations];
   const onPress = friendSuggestions.useCallback((id) => {
@@ -128,21 +268,24 @@ export default function SuggestedFriendsScreen() {
     return tmp3 ? userRowWithSubLabelHeight1 : userRowWithSubLabelHeight;
   }, items2);
   const obj3 = { value: analyticsLocations, children: items3 };
-  const AnalyticsLocationProvider = analyticsLocations(setAdded[6]).AnalyticsLocationProvider;
-  items3 = [closure_7(added(setAdded[13]), { absolute: true }), ];
+  const AnalyticsLocationProvider = analyticsLocations(setAdded[8]).AnalyticsLocationProvider;
+  items3 = [closure_7(added(setAdded[15]), { absolute: true }), ];
   const obj4 = { style: tmp.container, children: tmp15Result };
   const tmp14 = closure_8;
   if (0 !== friendSuggestions.length) {
     const obj5 = { sections: items4, getItemProps: callback1, getSectionProps: callback2, getItemSize: callback3, insetStart: 8 };
     items4 = [friendSuggestions.length];
-    tmp15Result = tmp15(tmp7(tmp3[14]).UsersFastList, obj5);
+    tmp15Result = tmp15(tmp7(tmp3[16]).UsersFastList, obj5);
   } else {
     const obj6 = { style: tmp.emptyContainer, children: closure_7(tmp2Result, obj7) };
-    obj7 = { title: intl.string(analyticsLocations(tmp3[16]).t.pxFW8V), disableBackgroundOverlay: true };
-    tmp2Result = tmp2(tmp3[15]);
-    intl = tmp7(tmp3[16]).intl;
+    obj7 = { title: intl.string(analyticsLocations(tmp3[18]).t.pxFW8V), disableBackgroundOverlay: true };
+    tmp2Result = tmp2(tmp3[17]);
+    intl = tmp7(tmp3[18]).intl;
     tmp15Result = tmp15(tmp16, obj6);
   }
   items3[1] = closure_7(userRowWithSubLabelHeight, obj4);
   return tmp14(AnalyticsLocationProvider, obj3);
-};
+});
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/SuggestedFriendsScreen.tsx");
+
+export default tmp4;

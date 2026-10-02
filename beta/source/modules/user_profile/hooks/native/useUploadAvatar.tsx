@@ -1,31 +1,210 @@
-// Module ID: 14166
-// Function ID: 14167
+// Module ID: 14154
+// Function ID: 14155
 // Name: useUploadAvatar
-// Dependencies: [5, 19, 1372, 1074, 1374, 563, 8614, 4800, 5450, 4488, 14150, 7614, 7612, 7609, 7611, 2]
-// Exports: default
+// Dependencies: [5, 19, 1378, 1086, 1380, 558, 576, 573, 8611, 4801, 5451, 4491, 14138, 7618, 7616, 7613, 7615, 2]
 
-// Module 14166 (useUploadAvatar)
+// Module 14154 (useUploadAvatar)
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8614 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8611 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
+let c3, dependencyMap, guildId;
 
 let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
+function isGIF(arg0) {
+  const match = arg0.match;
+  const regExp = new RegExp("^" + metroImportAll, "i");
+  return null != match(regExp);
+}
 let useCallback = react.useCallback;
 ({ AnalyticsPages: metroRequire, UPLOAD_MEDIUM_SIZE: metroImportDefault, Base64GIFPrefix: metroImportAll, AnalyticsSections: c9, UpsellTypes: c10 } = Constants);
 const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
-let result = size.fileFinishedImporting("modules/user_profile/hooks/native/useUploadAvatar.tsx");
-
-export default function useUploadAvatar(guildId) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let analyticsLocations;
+  let closure_2;
+  let currentUser;
+  let isTryItOut;
+  let tmp5;
+  let tmp6;
+  const tmp = guildId;
+  let obj = guildId(576);
+  const cResult = obj.c(9);
+  guildId = guildId.guildId;
+  ({ isTryItOut, analyticsLocations } = guildId);
+  dependencyMap = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    class A {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
+    }
+    cResult[0] = items;
+    cResult[1] = A;
+    tmp5 = items;
+    tmp6 = A;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(573);
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] !== analyticsLocations) {
+    class E {
+      constructor() {
+        let obj3;
+        let obj4;
+        const obj2 = { initialUpsellKey: constants2.ANIMATED_AVATAR, analyticsLocation: obj3, analyticsProperties: obj4, analyticsLocations };
+        obj3 = { page: metroRequire.USER_SETTINGS, section: constants.SETTINGS_OVERVIEW };
+        obj4 = { type: PremiumUpsellTypes.ANIMATED_USER_AVATAR_MODAL };
+        const obj = PremiumUpsellUtilsDefault;
+        const result = obj.handleShowUpsellAlert(obj2);
+      }
+    }
+    cResult[2] = analyticsLocations;
+    class A {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
+    }
+    cResult[3] = E;
+  } else {
+    class E {
+      constructor() {
+        let obj3;
+        let obj4;
+        const obj2 = { initialUpsellKey: constants2.ANIMATED_AVATAR, analyticsLocation: obj3, analyticsProperties: obj4, analyticsLocations };
+        obj3 = { page: metroRequire.USER_SETTINGS, section: constants.SETTINGS_OVERVIEW };
+        obj4 = { type: PremiumUpsellTypes.ANIMATED_USER_AVATAR_MODAL };
+        const obj = PremiumUpsellUtilsDefault;
+        const result = obj.handleShowUpsellAlert(obj2);
+      }
+    }
+  }
+  E = tmp9;
+  if (cResult[4] === guildId) {
+    class E {
+      constructor() {
+        let obj3;
+        let obj4;
+        const obj2 = { initialUpsellKey: constants2.ANIMATED_AVATAR, analyticsLocation: obj3, analyticsProperties: obj4, analyticsLocations };
+        obj3 = { page: metroRequire.USER_SETTINGS, section: constants.SETTINGS_OVERVIEW };
+        obj4 = { type: PremiumUpsellTypes.ANIMATED_USER_AVATAR_MODAL };
+        const obj = PremiumUpsellUtilsDefault;
+        const result = obj.handleShowUpsellAlert(obj2);
+      }
+    }
+  }
+  let closure_0 = stateFromStores(function*(arg0, value) {
+    let obj13;
+    let obj3;
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        let base64;
+        let originalMd5;
+        let avatar;
+        c3 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let closure_1 = tmp;
+            guildId = undefined;
+            base64 = undefined;
+            originalMd5 = undefined;
+            avatar = undefined;
+            const obj12 = analyticsLocations(closure_2_2[9]);
+            obj12.hideActionSheet();
+            const obj5 = { size };
+            c2 = 1;
+            c3 = 1;
+            const obj7 = { value: obj13.openImagePicker(obj5), done: false };
+            obj13 = analyticsLocations(closure_2_2[10]);
+            return obj7;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          const obj8 = { value, done: true };
+          return obj8;
+        } else {
+          guildId = value;
+          base64 = guildId.base64;
+          originalMd5 = guildId.originalMd5;
+          if (null != base64) {
+            let canUseAnimatedAvatarResult = c2;
+            if (!canUseAnimatedAvatarResult) {
+              const obj = analyticsLocations(closure_2_2[11]);
+              canUseAnimatedAvatarResult = obj.canUseAnimatedAvatar(c3);
+            }
+            c3 = canUseAnimatedAvatarResult;
+            if (isGIF(base64)) {
+              const tmp14 = c3;
+              if (!tmp14) {
+                avatar();
+              }
+            }
+            const obj9 = { imageUri: base64, description: obj3.generateAvatarDescription(), originalMd5 };
+            const createPendingImage = guildId(closure_2_2[12]).createPendingImage;
+            const tmp22 = guildId(closure_2_2[12]);
+            obj3 = guildId(closure_2_2[13]);
+            avatar = createPendingImage(obj9);
+            if (c2) {
+              const tmp30Result = guildId(closure_2_2[14]);
+              tmp30Result.setTryItOutAvatar(avatar);
+            } else {
+              const obj10 = { guildId, avatar };
+              const tmp30Result2 = guildId(closure_2_2[15]);
+              tmp30Result2.setPendingChanges(obj10);
+              const obj6 = guildId(closure_2_2[16]);
+              const result = obj6.announcePendingAvatarChange("set");
+            }
+          }
+          c3 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp40) {
+        c3 = 3;
+        throw tmp40;
+      }
+    }
+  });
+  const fn = function() {
+    return closure_0(...arguments);
+  };
+  cResult[4] = guildId;
+  cResult[5] = undefined !== isTryItOut && isTryItOut;
+  cResult[6] = tmp9;
+  cResult[7] = stateFromStores;
+  cResult[8] = fn;
+}) : ((guildId) => {
   let closure_4;
   let currentUser;
   guildId = guildId.guildId;
@@ -35,7 +214,7 @@ export default function useUploadAvatar(guildId) {
   }
   let analyticsLocations = guildId.analyticsLocations;
   useCallback = undefined;
-  let obj = guildId(analyticsLocations[5]);
+  let obj = guildId(analyticsLocations[7]);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [analyticsLocations];
@@ -52,14 +231,8 @@ export default function useUploadAvatar(guildId) {
   const items2 = [stateFromStores, guildId, flag, tmp2];
   return useCallback(stateFromStores(function*(arg0, value) {
     let c2;
-    let closure_0;
     let closure_1;
     let obj3;
-    function isGIF(base64) {
-      const match = base64.match;
-      const regExp = new RegExp("^" + closure_1_8, "i");
-      return null != match(regExp);
-    }
     if (c3 === 2) {
       c3 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -70,11 +243,11 @@ export default function useUploadAvatar(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
-        let tmp;
+        let v0;
         let base64;
         let originalMd5;
         let avatar;
@@ -88,14 +261,14 @@ export default function useUploadAvatar(guildId) {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            tmp = undefined;
+            v0 = undefined;
             base64 = undefined;
             originalMd5 = undefined;
             avatar = undefined;
-            const obj12 = tmp(analyticsLocations[7]);
+            const obj12 = tmp(analyticsLocations[9]);
             obj12.hideActionSheet();
             const obj5 = { size };
-            const obj13 = tmp(analyticsLocations[8]);
+            const obj13 = tmp(analyticsLocations[10]);
             analyticsLocations = 1;
             c3 = 1;
             const obj7 = { value: obj13.openImagePicker(obj5), done: false };
@@ -109,45 +282,48 @@ export default function useUploadAvatar(guildId) {
           const obj8 = { value, done: true };
           return obj8;
         } else {
-          tmp = value;
-          base64 = tmp.base64;
-          originalMd5 = tmp.originalMd5;
+          v0 = value;
+          base64 = v0.base64;
+          originalMd5 = v0.originalMd5;
           if (null != base64) {
             let canUseAnimatedAvatarResult = closure_129_1;
             if (!canUseAnimatedAvatarResult) {
-              const obj = tmp2(analyticsLocations[9]);
+              const obj = tmp(analyticsLocations[11]);
               canUseAnimatedAvatarResult = obj.canUseAnimatedAvatar(closure_129_3);
             }
             c3 = canUseAnimatedAvatarResult;
             if (isGIF(base64)) {
-              const tmp12 = c3;
-              if (!tmp12) {
+              const tmp14 = c3;
+              if (!tmp14) {
                 closure_129_4();
               }
             }
             const obj9 = { imageUri: base64, description: obj3.generateAvatarDescription(), originalMd5 };
-            const createPendingImage = tmp(analyticsLocations[10]).createPendingImage;
-            const tmp20 = tmp(analyticsLocations[10]);
-            obj3 = tmp(analyticsLocations[11]);
+            const createPendingImage = v0(analyticsLocations[12]).createPendingImage;
+            const tmp22 = v0(analyticsLocations[12]);
+            obj3 = v0(analyticsLocations[13]);
             avatar = createPendingImage(obj9);
             if (closure_129_1) {
-              const tmp28Result = tmp(analyticsLocations[12]);
-              tmp28Result.setTryItOutAvatar(avatar);
+              const tmp30Result = v0(analyticsLocations[14]);
+              tmp30Result.setTryItOutAvatar(avatar);
             } else {
               const obj10 = { guildId: closure_129_0, avatar };
-              const tmp28Result2 = tmp(analyticsLocations[13]);
-              tmp28Result2.setPendingChanges(obj10);
-              const obj6 = tmp(analyticsLocations[14]);
+              const tmp30Result2 = v0(analyticsLocations[15]);
+              tmp30Result2.setPendingChanges(obj10);
+              const obj6 = v0(analyticsLocations[16]);
               const result = obj6.announcePendingAvatarChange("set");
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
-      } catch (tmp38) {
+      } catch (tmp40) {
         c3 = 3;
-        throw tmp38;
+        throw tmp40;
       }
     }
   }), items2);
-};
+});
+let result = size.fileFinishedImporting("modules/user_profile/hooks/native/useUploadAvatar.tsx");
+
+export default tmp3;

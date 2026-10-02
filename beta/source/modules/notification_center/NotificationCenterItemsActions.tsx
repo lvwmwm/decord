@@ -1,19 +1,19 @@
-// Module ID: 16051
-// Function ID: 16052
+// Module ID: 16053
+// Function ID: 16054
 // Name: NotificationCenterItemsActions
-// Dependencies: [5, 7053, 1074, 573, 5029, 1249, 2057, 7055, 1271, 2021, 2]
+// Dependencies: [5, 7057, 1086, 585, 5030, 1261, 2063, 7059, 1283, 2027, 2]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, markNotificationCenterLocalItemsAcked, markNotificationCenterMentionAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 16051 (NotificationCenterItemsActions)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5029 */;
-import NotificationCenterUtils from "NotificationCenterUtils" /* 7055 */;
+// Module 16053 (NotificationCenterItemsActions)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5030 */;
+import NotificationCenterUtils from "NotificationCenterUtils" /* 7059 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7053 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7057 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -44,7 +44,7 @@ let obj = function _fetchNotificationCenterItems() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -156,7 +156,7 @@ let obj = function _fetchNotificationCenterItems() {
             return obj;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp21) {
           closure_4 = tmp21;
           if (0 === c5) {
@@ -189,7 +189,7 @@ obj = function _markNotificationCenterRemoteItemAcked() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -238,7 +238,7 @@ obj = function _markNotificationCenterRemoteItemAcked() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp12) {
         let closure_3 = tmp12;
@@ -267,7 +267,7 @@ obj = function _bulkMarkNotificationCenterItemsAcked() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -325,7 +325,7 @@ obj = function _bulkMarkNotificationCenterItemsAcked() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp12) {
         let closure_3 = tmp12;
@@ -359,7 +359,7 @@ obj = function _deleteNotificationCenterItem() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -414,7 +414,7 @@ obj = function _deleteNotificationCenterItem() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           closure_3 = tmp16;

@@ -1,20 +1,20 @@
-// Module ID: 5593
-// Function ID: 5594
+// Module ID: 5594
+// Function ID: 5595
 // Name: ConnectedAccountsStore
-// Dependencies: [5594, 1074, 5595, 2059, 5718, 504, 573, 2]
+// Dependencies: [5595, 1086, 5596, 2065, 5719, 504, 585, 2]
 
-// Module 5593 (ConnectedAccountsStore)
+// Module 5594 (ConnectedAccountsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import PlatformsDefault from "Platforms" /* 5595 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5718 */;
-import ConnectedAccountRecord from "ConnectedAccountRecord" /* 5594 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import PlatformsDefault from "Platforms" /* 5596 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5719 */;
+import ConnectedAccountRecord from "ConnectedAccountRecord" /* 5595 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, closure_7, integrations;
 
-const f80729 = (type) => {
+const f89802 = (type) => {
   const hasItem = set.has(type.type);
   let isSupportedResult = !hasItem;
   if (isSupportedResult) {
@@ -23,7 +23,7 @@ const f80729 = (type) => {
   }
   return isSupportedResult;
 };
-const f80730 = (type) => set.has(type.type);
+const f89803 = (type) => set.has(type.type);
 const items = [Constants.PlatformTypes.CONTACTS];
 const set = new Set(items);
 let c5 = true;
@@ -50,9 +50,9 @@ class ConnectedAccountsStore extends Store {
   getLocalAccounts() {
     return closure_7;
   }
-  getAccount(accountId, SPOTIFY) {
+  getAccount(accountId, provider_id) {
     let closure_0 = accountId;
-    let closure_1 = SPOTIFY;
+    let closure_1 = provider_id;
     return closure_6.find((id) => (null == closure_0 || id.id === tmp) && id.type === closure_1);
   }
   getLocalAccount(CONTACTS) {
@@ -81,8 +81,8 @@ let obj = {
       const tmp = new ConnectedAccountRecord(item);
       return tmp;
     });
-    closure_6 = mapped.filter(f80729);
-    closure_7 = mapped.filter(f80730);
+    closure_6 = mapped.filter(f89802);
+    closure_7 = mapped.filter(f89803);
     c5 = false;
   },
   USER_CONNECTIONS_UPDATE: function handleConnectionsUpdate(local) {
@@ -108,8 +108,8 @@ let obj = {
           const tmp2 = new ConnectedAccountRecord(obj);
           return tmp2;
         });
-        closure_6 = mapped.filter(f80729);
-        closure_7 = mapped.filter(f80730);
+        closure_6 = mapped.filter(f89802);
+        closure_7 = mapped.filter(f89803);
         c5 = false;
       }
     }

@@ -1,25 +1,67 @@
-// Module ID: 11496
-// Function ID: 11497
+// Module ID: 11372
+// Function ID: 11373
 // Name: ForumPostTimestamp
-// Dependencies: [19, 11483, 21, 4836, 7310, 4832, 2]
-// Exports: default
+// Dependencies: [19, 11359, 21, 4837, 558, 576, 7314, 4833, 2]
 
-// Module 11496 (ForumPostTimestamp)
+// Module 11372 (ForumPostTimestamp)
 import Fragment from "Fragment" /* 21 */;
-import ForumHooks from "ForumHooks" /* 7310 */;
-import ForumChannelStore from "ForumChannelStore" /* 11483 */;
+import react2 from "react" /* 576 */;
+import ForumHooks from "ForumHooks" /* 7314 */;
+import ForumChannelStore from "ForumChannelStore" /* 11359 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2;
-const Text_Text = tmp2(4832);
+let tmp;
+const Text_Text = tmp(4833);
 const useForumChannelStore = ForumChannelStore.useForumChannelStore;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ text: { lineHeight: 18, height: 18 } });
-const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostTimestamp.tsx");
-
-export default function ForumPostTimestamp(thread) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let format;
+  let hasUnreads;
+  let textStyle;
+  let thread;
+  const obj = react2;
+  const cResult = obj.c(7);
+  ({ textStyle, thread } = arg0);
+  ({ hasUnreads, format } = arg0);
+  const tmp4 = closure_4();
+  const sortOrder = useForumChannelStore(thread.parent_id).sortOrder;
+  const obj2 = ForumHooks;
+  const lastActiveTimestamp = obj2.useLastActiveTimestamp(thread, sortOrder, format);
+  let str = "text-muted";
+  if (hasUnreads) {
+    str = "text-default";
+  }
+  if (cResult[0] === tmp4.text) {
+    let tmp6;
+    if (cResult[1] === textStyle) {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] === str) {
+      if (cResult[4] === lastActiveTimestamp) {
+        let tmp7;
+        if (cResult[5] === tmp6) {
+          tmp7 = cResult[6];
+        }
+        return tmp7;
+      }
+    }
+    const tmp9 = jsx(Text_Text.Text, { lineClamp: 1, variant: "text-xs/normal", color: str, style: tmp6, children: lastActiveTimestamp });
+    cResult[3] = str;
+    cResult[4] = lastActiveTimestamp;
+    cResult[5] = tmp6;
+    cResult[6] = tmp9;
+    tmp7 = tmp9;
+  }
+  const items = [textStyle, tmp4.text];
+  cResult[0] = tmp4.text;
+  cResult[1] = textStyle;
+  cResult[2] = items;
+  tmp6 = items;
+}) : ((thread) => {
   let format;
   let hasUnreads;
   let textStyle;
@@ -35,4 +77,7 @@ export default function ForumPostTimestamp(thread) {
   }
   const items = [textStyle, tmp.text];
   return jsx(Text_Text.Text, { lineClamp: 1, variant: "text-xs/normal", color: str, style: items, children: lastActiveTimestamp });
-};
+});
+const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostTimestamp.tsx");
+
+export default tmp3;

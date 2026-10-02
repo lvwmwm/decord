@@ -1,18 +1,20 @@
-// Module ID: 17511
-// Function ID: 17512
+// Module ID: 17513
+// Function ID: 17514
 // Name: WarningNotice
-// Dependencies: [19, 17, 21, 4836, 576, 5899, 5909, 4832, 5281, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 5896, 5906, 4833, 5282, 2]
 
-// Module 17511 (WarningNotice)
+// Module 17513 (WarningNotice)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5909 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5906 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -20,8 +22,6 @@ let hasOwnProperty;
 let obj2;
 let obj3;
 let obj4;
-let tmp7;
-const components_Button_Button = tmp7(5281);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -31,9 +31,129 @@ createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, borderColor: nativeDefault.colors.STATUS_WARNING };
 obj4 = { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
 let closure_6 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/WarningNotice.tsx");
-
-export default function WarningNotice(arg0) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let ctaLabel;
+  let disabled;
+  let items;
+  let items1;
+  let notice;
+  let obj5;
+  let onClick;
+  let style;
+  let submitting;
+  const obj = react2;
+  const cResult = obj.c(26);
+  ({ style, notice, ctaLabel, onClick, submitting, disabled } = arg0);
+  const tmp4 = closure_6();
+  if (cResult[0] === style) {
+    if (cResult[1] === tmp4.container) {
+      let tmp5;
+      let tmp6;
+      if (cResult[2] === tmp4.containerYellow) {
+        tmp5 = cResult[3];
+      }
+      if (cResult[4] !== tmp4.alertIcon) {
+        const obj2 = { style: tmp4.alertIcon, source: AssetRegistryDefault };
+        const tmp9 = FastImageDefault;
+        const tmp10 = React3(tmp9, obj2);
+        cResult[4] = tmp4.alertIcon;
+        cResult[5] = tmp10;
+        tmp6 = tmp10;
+      } else {
+        tmp6 = cResult[5];
+      }
+      if (cResult[6] === tmp4.message) {
+        let tmp11;
+        if (cResult[7] === tmp4.textYellow) {
+          tmp11 = cResult[8];
+        }
+        if (cResult[9] === notice) {
+          let tmp12;
+          if (cResult[10] === tmp11) {
+            tmp12 = cResult[11];
+          }
+          if (cResult[12] === tmp4.horizontalContainer) {
+            if (cResult[13] === tmp6) {
+              let tmp15;
+              if (cResult[14] === tmp12) {
+                tmp15 = cResult[15];
+              }
+              if (cResult[16] === ctaLabel) {
+                if (cResult[17] === disabled) {
+                  if (cResult[18] === onClick) {
+                    if (cResult[19] === tmp4.actionButtonWrapper) {
+                      let tmp19;
+                      if (cResult[20] === submitting) {
+                        tmp19 = cResult[21];
+                      }
+                      if (cResult[22] === tmp5) {
+                        if (cResult[23] === tmp15) {
+                          let tmp24;
+                          if (cResult[24] === tmp19) {
+                            tmp24 = cResult[25];
+                          }
+                          return tmp24;
+                        }
+                      }
+                      const obj3 = { style: tmp5, children: items };
+                      items = [tmp15, tmp19];
+                      const tmp27 = hasOwnProperty(View, obj3);
+                      cResult[22] = tmp5;
+                      cResult[23] = tmp15;
+                      cResult[24] = tmp19;
+                      cResult[25] = tmp27;
+                      tmp24 = tmp27;
+                    }
+                  }
+                }
+              }
+              let tmp21 = null != onClick && null != ctaLabel;
+              if (tmp21) {
+                const obj4 = { style: tmp4.actionButtonWrapper, children: React3(components_Button_Button.Button, obj5) };
+                obj5 = { onPress: onClick, disabled, loading: submitting, text: ctaLabel, grow: true };
+                tmp21 = React3(View, obj4);
+              }
+              cResult[16] = ctaLabel;
+              cResult[17] = disabled;
+              cResult[18] = onClick;
+              cResult[19] = tmp4.actionButtonWrapper;
+              cResult[20] = submitting;
+              cResult[21] = tmp21;
+              tmp19 = tmp21;
+            }
+          }
+          const obj6 = { style: tmp4.horizontalContainer, children: items1 };
+          items1 = [tmp6, tmp12];
+          const tmp18 = hasOwnProperty(View, obj6);
+          cResult[12] = tmp4.horizontalContainer;
+          cResult[13] = tmp6;
+          cResult[14] = tmp12;
+          cResult[15] = tmp18;
+          tmp15 = tmp18;
+        }
+        const obj7 = { style: tmp11, variant: "text-sm/medium", color: "interactive-text-active", children: notice };
+        const tmp14 = React3(Text_Text.Text, obj7);
+        cResult[9] = notice;
+        cResult[10] = tmp11;
+        cResult[11] = tmp14;
+        tmp12 = tmp14;
+      }
+      const items2 = [, ];
+      ({ message: arr2[0], textYellow: arr2[1] } = tmp4);
+      cResult[6] = tmp4.message;
+      cResult[7] = tmp4.textYellow;
+      cResult[8] = items2;
+      tmp11 = items2;
+    }
+  }
+  const items3 = [style, , ];
+  ({ container: arr[1], containerYellow: arr[2] } = tmp4);
+  cResult[0] = style;
+  cResult[1] = tmp4.container;
+  cResult[2] = tmp4.containerYellow;
+  cResult[3] = items3;
+  tmp5 = items3;
+}) : ((arg0) => {
   let ctaLabel;
   let disabled;
   let items;
@@ -69,4 +189,7 @@ export default function WarningNotice(arg0) {
   }
   items3[1] = tmp4Result;
   return tmp2(View, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/WarningNotice.tsx");
+
+export default tmp5;

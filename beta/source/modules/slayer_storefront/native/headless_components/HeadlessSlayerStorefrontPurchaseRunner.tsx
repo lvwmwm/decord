@@ -1,25 +1,124 @@
-// Module ID: 10273
-// Function ID: 10274
+// Module ID: 10311
+// Function ID: 10312
 // Name: HeadlessSlayerStorefrontPurchaseRunner
-// Dependencies: [19, 6844, 1074, 1241, 10274, 1364, 2]
-// Exports: HeadlessSlayerStorefrontPurchaseRunner
+// Dependencies: [19, 6845, 1086, 558, 576, 1253, 1370, 10312, 2]
 
-// Module 10273 (HeadlessSlayerStorefrontPurchaseRunner)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 6844 */;
+// Module 10311 (HeadlessSlayerStorefrontPurchaseRunner)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 6845 */;
 import react_mod from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let onPurchaseComplete, ref;
 
 let react = react_mod;
 let useNativeCheckoutStore = NativeCheckoutStore.useNativeCheckoutStore;
 const AnalyticEvents = Constants.AnalyticEvents;
-const result = size.fileFinishedImporting("modules/slayer_storefront/native/headless_components/HeadlessSlayerStorefrontPurchaseRunner.tsx");
-
-export const HeadlessSlayerStorefrontPurchaseRunner = function HeadlessSlayerStorefrontPurchaseRunner(attempt) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPurchaseComplete) => {
+  let analyticsLocations;
+  let attempt;
+  let closure_3;
+  let closure_4;
+  let first;
+  let onPurchaseError;
+  let ref2;
+  let sku;
+  let skuId;
+  let tmp5;
+  let obj = attempt(onPurchaseError[4]);
+  const cResult = obj.c(27);
+  ({ skuId, sku, analyticsLocations, attempt } = onPurchaseComplete);
+  onPurchaseComplete = onPurchaseComplete.onPurchaseComplete;
+  onPurchaseError = onPurchaseComplete.onPurchaseError;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s(analyticsFields) {
+      return analyticsFields.analyticsFields;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  let tmp3 = useNativeCheckoutStore;
+  const tmp4 = useNativeCheckoutStore(first);
+  react = tmp4;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    class P {
+      constructor(setCheckoutFailed) {
+        return setCheckoutFailed.setCheckoutFailed;
+      }
+    }
+    cResult[1] = P;
+    tmp5 = P;
+  } else {
+    class P {
+      constructor(setCheckoutFailed) {
+        return setCheckoutFailed.setCheckoutFailed;
+      }
+    }
+  }
+  const tmp3Result = tmp3(tmp5);
+  useNativeCheckoutStore = tmp3Result;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor(orderRecord) {
+        return orderRecord.orderRecord;
+      }
+    }
+    cResult[2] = S;
+  } else {
+    class S {
+      constructor(orderRecord) {
+        return orderRecord.orderRecord;
+      }
+    }
+  }
+  let closure_5 = tmp3(tmp7);
+  tmp3(tmp7);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor(orderRequired) {
+        return orderRequired.orderRequired;
+      }
+    }
+    cResult[3] = C;
+  } else {
+    class C {
+      constructor(orderRequired) {
+        return orderRequired.orderRequired;
+      }
+    }
+  }
+  let closure_6 = tmp3(tmp9);
+  tmp3(tmp9);
+  ref = react.useRef(false);
+  if (cResult[4] === tmp4) {
+    class C {
+      constructor(orderRequired) {
+        return orderRequired.orderRequired;
+      }
+    }
+  }
+  class L {
+    constructor() {
+      if (!ref.current) {
+        tmp.current = true;
+        const obj = AnalyticsUtilsDefault;
+        obj.track(AnalyticEvents.PAYMENT_FLOW_FAILED, closure_3);
+        closure_4();
+      }
+      onPurchaseError();
+    }
+  }
+  cResult[4] = tmp4;
+  cResult[5] = onPurchaseError;
+  cResult[6] = tmp3Result;
+  cResult[7] = L;
+}) : ((attempt) => {
   let analyticsLocations;
   let closure_3;
   let closure_4;
@@ -43,7 +142,7 @@ export const HeadlessSlayerStorefrontPurchaseRunner = function HeadlessSlayerSto
   const tmp4 = useNativeCheckoutStore((orderRequired) => orderRequired.orderRequired);
   let closure_6 = tmp4;
   let obj = react;
-  const ref = react.useRef(false);
+  ref = react.useRef(false);
   const items = [tmp, tmp2, onPurchaseError];
   onPurchaseError = react.useCallback(() => {
     if (!ref.current) {
@@ -96,4 +195,7 @@ export const HeadlessSlayerStorefrontPurchaseRunner = function HeadlessSlayerSto
     }
   }, items1);
   return null;
-};
+});
+const result = size.fileFinishedImporting("modules/slayer_storefront/native/headless_components/HeadlessSlayerStorefrontPurchaseRunner.tsx");
+
+export const HeadlessSlayerStorefrontPurchaseRunner = tmp2;

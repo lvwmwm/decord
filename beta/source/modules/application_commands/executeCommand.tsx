@@ -1,26 +1,26 @@
-// Module ID: 8714
-// Function ID: 8715
+// Module ID: 8709
+// Function ID: 8710
 // Name: executeCommand
-// Dependencies: [5, 5771, 2112, 2067, 5199, 1372, 7199, 1074, 4829, 6943, 573, 7184, 6941, 1979, 8715, 8717, 38, 8718, 5016, 7197, 8608, 4483, 1370, 7172, 7574, 7253, 7573, 8719, 7626, 7171, 6876, 5474, 5446, 5441, 1115, 7262, 2]
+// Dependencies: [5, 5772, 2115, 2073, 5200, 1378, 7203, 1086, 4830, 6947, 585, 7188, 6945, 1985, 8710, 8712, 38, 8713, 5017, 7201, 8605, 4486, 1376, 7176, 7578, 7257, 7577, 8714, 7630, 7175, 6880, 5475, 5447, 5442, 1127, 7266, 2]
 // Exports: default, retryCommandMessage
 
-// Module 8714 (executeCommand)
-import MessageConstants from "MessageConstants" /* 4829 */;
-import UploadUtils from "UploadUtils" /* 5441 */;
-import FileUtils from "FileUtils" /* 5446 */;
-import UploadLimits from "UploadLimits" /* 5474 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6943 */;
-import MessageQueue from "MessageQueue" /* 7253 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 7574 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 8719 */;
+// Module 8709 (executeCommand)
+import MessageConstants from "MessageConstants" /* 4830 */;
+import UploadUtils from "UploadUtils" /* 5442 */;
+import FileUtils from "FileUtils" /* 5447 */;
+import UploadLimits from "UploadLimits" /* 5475 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6947 */;
+import MessageQueue from "MessageQueue" /* 7257 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 7578 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 8714 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmojiStore from "EmojiStore" /* 5771 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5199 */;
-import UserStore from "UserStore" /* 1372 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7199 */;
-import Constants from "Constants" /* 1074 */;
+import EmojiStore from "EmojiStore" /* 5772 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5200 */;
+import UserStore from "UserStore" /* 1378 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7203 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const MessageQueueDefault = MessageQueue;
@@ -52,7 +52,7 @@ let obj = function _executeCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {
@@ -126,7 +126,7 @@ let obj = function _executeCommand() {
               obj25 = undefined;
               c15 = 1;
               c16 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else {
             if (1 === tmp4) {
@@ -652,7 +652,7 @@ let obj = function _executeCommand() {
               }
             }
             c16 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         }
       }
@@ -678,7 +678,7 @@ obj = function _retryCommandMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -718,7 +718,7 @@ obj = function _retryCommandMessage() {
             closure_4(obj5);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp12) {
           c6 = 3;
           throw tmp12;
@@ -753,12 +753,12 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     message = { applicationId, channelId: id, guildId: id1, data: tmp, nonce, attachments, maxSizeCallback, analytics_location: tmp2, sectionName: tmp3, source: tmp4 };
     nonce = interactionLifecycleOptions.nonce;
     if (nonce == null) {
-      const obj2 = onMessageSuccess(7172);
+      const obj2 = onMessageSuccess(7176);
       nonce = obj2.createNonce();
     }
     const obj4 = { messageId: null, onCreate: null, onSuccess: null, onFailure: null, data: obj5 };
     ({ messageId: obj3.messageId, onCreate: obj3.onCreate, onSuccess: obj3.onSuccess, onFailure: obj3.onFailure } = interactionLifecycleOptions);
-    obj5 = { interactionType: onMessageSuccess(1979).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
+    obj5 = { interactionType: onMessageSuccess(1985).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
     const addQueued = InteractionActionCreatorsAll.addQueued;
     const nonce2 = message.nonce;
     InteractionActionCreatorsAll;
@@ -796,9 +796,9 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         });
       }
     }
-    const obj8 = { type: tmp11(7253).MessageDataType.COMMAND, message };
-    let enqueue = message(7253).enqueue;
-    message(7253);
+    const obj8 = { type: tmp11(7257).MessageDataType.COMMAND, message };
+    let enqueue = message(7257).enqueue;
+    message(7257);
     enqueue(obj8, (ok) => {
       let applicationId;
       let channelId;
@@ -842,7 +842,7 @@ obj = function _displayInteractionLifecycleInChat() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1016,7 +1016,7 @@ obj = function _getMaxAndTotalFileSize() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {

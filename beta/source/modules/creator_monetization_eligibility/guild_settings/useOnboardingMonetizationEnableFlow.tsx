@@ -1,27 +1,479 @@
-// Module ID: 17538
-// Function ID: 17539
+// Module ID: 17540
+// Function ID: 17541
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [19, 2063, 1372, 1074, 6679, 563, 17539, 17540, 17541, 6671, 1115, 2111, 17542, 2]
-// Exports: default
+// Dependencies: [19, 2069, 1378, 1086, 558, 576, 6680, 573, 17541, 17542, 17543, 6672, 1127, 2114, 17544, 2]
 
-// Module 17538 (useOnboardingMonetizationEnableFlow)
-import GuildRecord from "GuildRecord" /* 2063 */;
+// Module 17540 (useOnboardingMonetizationEnableFlow)
+import GuildRecord from "GuildRecord" /* 2069 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require, dependencyMap, features, tmp4;
 
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 const isGuildOwner = GuildRecord.isGuildOwner;
 ({ GuildFeatures: metroRequire, HelpdeskArticles: metroImportDefault, MarketingURLs: metroImportAll } = Constants);
-const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useOnboardingMonetizationEnableFlow.tsx");
-
-export default function useOnboardingMonetizationEnableFlow(features) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
+  let closure_2;
+  let createEnableRequest;
+  let error;
+  let error2;
+  let isApplicationRejected;
+  let loading;
+  let loading2;
+  let refresh;
+  let requestCooldownDuration;
+  let submittedRequest;
+  let tmp13;
+  let tmp17;
+  let tmp19;
+  let tmp21Result2;
+  let tmp28;
+  let tmp7;
+  _require = features;
+  let tmp = _require;
+  const tmp2 = dependencyMap;
+  const obj = require("react");
+  const cResult = obj.c(40);
+  const obj2 = require("CreatorMonetizationEligibilityExperimentUtils");
+  let isExpeditedOnboardingGuild = obj2.useIsExpeditedOnboardingGuild(features);
+  let features1;
+  const first = cResult[0];
+  if (features != null) {
+    features1 = features.features;
+  }
+  if (first !== features1) {
+    let hasItem;
+    if (features != null) {
+      features = features.features;
+      hasItem = features.has(constants.CREATOR_MONETIZABLE_PROVISIONAL);
+    }
+    let features3;
+    if (features != null) {
+      features3 = features.features;
+    }
+    cResult[0] = features3;
+    cResult[1] = hasItem;
+    tmp7 = hasItem;
+  } else {
+    tmp7 = cResult[1];
+  }
+  let features4;
+  const tmp11 = cResult[2];
+  if (features != null) {
+    features4 = features.features;
+  }
+  if (tmp11 !== features4) {
+    let hasItem1;
+    if (features != null) {
+      const features2 = features.features;
+      hasItem1 = features2.has(constants.CREATOR_MONETIZABLE);
+    }
+    let features5;
+    if (features != null) {
+      features5 = features.features;
+    }
+    cResult[2] = features5;
+    cResult[3] = hasItem1;
+    tmp13 = hasItem1;
+  } else {
+    tmp13 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    cResult[4] = items;
+    tmp17 = items;
+  } else {
+    tmp17 = cResult[4];
+  }
+  if (cResult[5] !== features) {
+    class T {
+      constructor() {
+        tmp3 = null != closure_0;
+        if (tmp3) {
+          tmp4 = isGuildOwner;
+          tmp3 = isGuildOwner(tmp2, tmp);
+        }
+        return tmp3;
+      }
+    }
+    cResult[5] = features;
+    cResult[6] = T;
+    tmp19 = T;
+  } else {
+    class T {
+      constructor() {
+        tmp3 = null != closure_0;
+        if (tmp3) {
+          tmp4 = isGuildOwner;
+          tmp3 = isGuildOwner(tmp2, tmp);
+        }
+        return tmp3;
+      }
+    }
+  }
+  const tmpResult = tmp(573);
+  const stateFromStores = tmpResult.useStateFromStores(tmp17, tmp19);
+  const tmp22 = refresh(17541);
+  if (features != null) {
+    class T {
+      constructor() {
+        tmp3 = null != closure_0;
+        if (tmp3) {
+          tmp4 = isGuildOwner;
+          tmp3 = isGuildOwner(tmp2, tmp);
+        }
+        return tmp3;
+      }
+    }
+  }
+  ({ error, loading, createEnableRequest, submittedRequest } = tmp22(undefined));
+  tmp22(undefined);
+  const tmp21Result = refresh(17542);
+  if (features != null) {
+    class T {
+      constructor() {
+        tmp3 = null != closure_0;
+        if (tmp3) {
+          tmp4 = isGuildOwner;
+          tmp3 = isGuildOwner(tmp2, tmp);
+        }
+        return tmp3;
+      }
+    }
+  }
+  const tmp21ResultResult = tmp21Result(undefined);
+  ({ loading: loading2, error: error2, refresh } = tmp21ResultResult);
+  const eligibility = tmp21ResultResult.eligibility;
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(17543)(eligibility));
+  refresh(17543)(eligibility);
+  const tmp27 = cResult[7];
+  if (features != null) {
+    class T {
+      constructor() {
+        tmp3 = null != closure_0;
+        if (tmp3) {
+          tmp4 = isGuildOwner;
+          tmp3 = isGuildOwner(tmp2, tmp);
+        }
+        return tmp3;
+      }
+    }
+  }
+  if (tmp27 !== undefined) {
+    let hasItem2;
+    class T {
+      constructor() {
+        tmp3 = null != closure_0;
+        if (tmp3) {
+          tmp4 = isGuildOwner;
+          tmp3 = isGuildOwner(tmp2, tmp);
+        }
+        return tmp3;
+      }
+    }
+    if (features != null) {
+      class T {
+        constructor() {
+          tmp3 = null != closure_0;
+          if (tmp3) {
+            tmp4 = isGuildOwner;
+            tmp3 = isGuildOwner(tmp2, tmp);
+          }
+          return tmp3;
+        }
+      }
+      hasItem2 = obj4.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
+    }
+    let tmp31 = true === hasItem2;
+    if (!tmp31) {
+      let hasItem3;
+      class T {
+        constructor() {
+          tmp3 = null != closure_0;
+          if (tmp3) {
+            tmp4 = isGuildOwner;
+            tmp3 = isGuildOwner(tmp2, tmp);
+          }
+          return tmp3;
+        }
+      }
+      if (features != null) {
+        class T {
+          constructor() {
+            tmp3 = null != closure_0;
+            if (tmp3) {
+              tmp4 = isGuildOwner;
+              tmp3 = isGuildOwner(tmp2, tmp);
+            }
+            return tmp3;
+          }
+        }
+        hasItem3 = obj5.has(constants.CREATOR_MONETIZABLE_DISABLED);
+      }
+      tmp31 = true === hasItem3;
+    }
+    if (features != null) {
+      class T {
+        constructor() {
+          tmp3 = null != closure_0;
+          if (tmp3) {
+            tmp4 = isGuildOwner;
+            tmp3 = isGuildOwner(tmp2, tmp);
+          }
+          return tmp3;
+        }
+      }
+    }
+    cResult[7] = undefined;
+    cResult[8] = tmp31;
+    tmp28 = tmp31;
+  } else {
+    class T {
+      constructor() {
+        tmp3 = null != closure_0;
+        if (tmp3) {
+          tmp4 = isGuildOwner;
+          tmp3 = isGuildOwner(tmp2, tmp);
+        }
+        return tmp3;
+      }
+    }
+  }
+  const useIsMonetizationReapplicationDisabled = tmp(6672).useIsMonetizationReapplicationDisabled;
+  tmp(6672);
+  if (features != null) {
+    class T {
+      constructor() {
+        tmp3 = null != closure_0;
+        if (tmp3) {
+          tmp4 = isGuildOwner;
+          tmp3 = isGuildOwner(tmp2, tmp);
+        }
+        return tmp3;
+      }
+    }
+  }
+  const isMonetizationReapplicationDisabled = useIsMonetizationReapplicationDisabled(undefined).isMonetizationReapplicationDisabled;
+  if (!submittedRequest) {
+    class T {
+      constructor() {
+        tmp3 = null != closure_0;
+        if (tmp3) {
+          tmp4 = isGuildOwner;
+          tmp3 = isGuildOwner(tmp2, tmp);
+        }
+        return tmp3;
+      }
+    }
+    if (eligibility != null) {
+      class T {
+        constructor() {
+          tmp3 = null != closure_0;
+          if (tmp3) {
+            tmp4 = isGuildOwner;
+            tmp3 = isGuildOwner(tmp2, tmp);
+          }
+          return tmp3;
+        }
+      }
+    }
+  }
+  if (eligibility != null) {
+    class T {
+      constructor() {
+        tmp3 = null != closure_0;
+        if (tmp3) {
+          tmp4 = isGuildOwner;
+          tmp3 = isGuildOwner(tmp2, tmp);
+        }
+        return tmp3;
+      }
+    }
+  }
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
+      constructor() {
+        tmp3 = null != closure_0;
+        if (tmp3) {
+          tmp4 = isGuildOwner;
+          tmp3 = isGuildOwner(tmp2, tmp);
+        }
+        return tmp3;
+      }
+    }
+    const format = tmp39.format;
+    const obj3 = { faqUrl: tmp21Result2.getArticleURL(constants2.CREATOR_FAQ) };
+    const aJUdOi = tmp(1127).t.aJUdOi;
+    tmp21Result2 = refresh(2114);
+    cResult[9] = format(aJUdOi, obj3);
+    const formatResult = format(aJUdOi, obj3);
+  } else {
+    class T {
+      constructor() {
+        tmp3 = null != closure_0;
+        if (tmp3) {
+          tmp4 = isGuildOwner;
+          tmp3 = isGuildOwner(tmp2, tmp);
+        }
+        return tmp3;
+      }
+    }
+  }
+  if (isApplicationRejected) {
+    class T {
+      constructor() {
+        tmp3 = null != closure_0;
+        if (tmp3) {
+          tmp4 = isGuildOwner;
+          tmp3 = isGuildOwner(tmp2, tmp);
+        }
+        return tmp3;
+      }
+    }
+    let tmp45 = isExpeditedOnboardingGuild && stateFromStores;
+    if (tmp45) {
+      class T {
+        constructor() {
+          tmp3 = null != closure_0;
+          if (tmp3) {
+            tmp4 = isGuildOwner;
+            tmp3 = isGuildOwner(tmp2, tmp);
+          }
+          return tmp3;
+        }
+      }
+      tmp45 = false === tmp13;
+    }
+    dependencyMap = tmp45;
+    if (isExpeditedOnboardingGuild) {
+      class T {
+        constructor() {
+          tmp3 = null != closure_0;
+          if (tmp3) {
+            tmp4 = isGuildOwner;
+            tmp3 = isGuildOwner(tmp2, tmp);
+          }
+          return tmp3;
+        }
+      }
+      isExpeditedOnboardingGuild = false === tmp7;
+    }
+    let tmp46 = isExpeditedOnboardingGuild;
+    if (tmp46) {
+      class T {
+        constructor() {
+          tmp3 = null != closure_0;
+          if (tmp3) {
+            tmp4 = isGuildOwner;
+            tmp3 = isGuildOwner(tmp2, tmp);
+          }
+          return tmp3;
+        }
+      }
+      tmp46 = tmp28;
+    }
+    const _Symbol = Symbol;
+    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+      class T {
+        constructor() {
+          tmp3 = null != closure_0;
+          if (tmp3) {
+            tmp4 = isGuildOwner;
+            tmp3 = isGuildOwner(tmp2, tmp);
+          }
+          return tmp3;
+        }
+      }
+      const creatorMonetizationAcceptTermsCheckboxText = obj8.getCreatorMonetizationAcceptTermsCheckboxText();
+      cResult[14] = creatorMonetizationAcceptTermsCheckboxText;
+    } else {
+      class T {
+        constructor() {
+          tmp3 = null != closure_0;
+          if (tmp3) {
+            tmp4 = isGuildOwner;
+            tmp3 = isGuildOwner(tmp2, tmp);
+          }
+          return tmp3;
+        }
+      }
+    }
+    if (cResult[15] === true === undefined) {
+      class T {
+        constructor() {
+          tmp3 = null != closure_0;
+          if (tmp3) {
+            tmp4 = isGuildOwner;
+            tmp3 = isGuildOwner(tmp2, tmp);
+          }
+          return tmp3;
+        }
+      }
+    }
+    let formatResult1;
+    if (isApplicationRejected) {
+      class T {
+        constructor() {
+          tmp3 = null != closure_0;
+          if (tmp3) {
+            tmp4 = isGuildOwner;
+            tmp3 = isGuildOwner(tmp2, tmp);
+          }
+          return tmp3;
+        }
+      }
+      if (true === undefined) {
+        class T {
+          constructor() {
+            tmp3 = null != closure_0;
+            if (tmp3) {
+              tmp4 = isGuildOwner;
+              tmp3 = isGuildOwner(tmp2, tmp);
+            }
+            return tmp3;
+          }
+        }
+        if (stateFromStores) {
+          class T {
+            constructor() {
+              tmp3 = null != closure_0;
+              if (tmp3) {
+                tmp4 = isGuildOwner;
+                tmp3 = isGuildOwner(tmp2, tmp);
+              }
+              return tmp3;
+            }
+          }
+          formatResult1 = obj9.format(tmp(1127).t.wbVIUB, {});
+        }
+      }
+    }
+    cResult[15] = true === undefined;
+    cResult[16] = isApplicationRejected;
+    cResult[17] = stateFromStores;
+    cResult[18] = formatResult1;
+  }
+  const tmp42 = isApplicationRejected && null != requestCooldownDuration;
+  if (tmp42) {
+    class T {
+      constructor() {
+        tmp3 = null != closure_0;
+        if (tmp3) {
+          tmp4 = isGuildOwner;
+          tmp3 = isGuildOwner(tmp2, tmp);
+        }
+        return tmp3;
+      }
+    }
+  }
+}) : ((features) => {
   let canApply;
   let closure_2;
   let createEnableRequest;
@@ -51,29 +503,29 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     const hasItem1 = features2.has(constants.CREATOR_MONETIZABLE);
   }
   const items = [UserStore];
-  const tmpResult = tmp(563);
+  const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(items, () => {
     const tmp3 = null != features && isGuildOwner(tmp2, tmp);
     return tmp3;
   });
   let id;
-  const tmp10 = refresh(17539);
+  const tmp10 = refresh(17541);
   if (features != null) {
     id = features.id;
   }
   ({ submittedRequest, error, loading, createEnableRequest } = tmp10(id));
   let id1;
   tmp10(id);
-  const tmp9Result = refresh(17540);
+  const tmp9Result = refresh(17542);
   if (features != null) {
     id1 = features.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(17541)(eligibility));
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(17543)(eligibility));
   let hasItem2;
-  refresh(17541)(eligibility);
+  refresh(17543)(eligibility);
   if (features != null) {
     const features3 = features.features;
     hasItem2 = features3.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
@@ -88,8 +540,8 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     tmp19 = true === hasItem3;
   }
   let id2;
-  const useIsMonetizationReapplicationDisabled = tmp(6671).useIsMonetizationReapplicationDisabled;
-  tmp(6671);
+  const useIsMonetizationReapplicationDisabled = tmp(6672).useIsMonetizationReapplicationDisabled;
+  tmp(6672);
   if (features != null) {
     id2 = features.id;
   }
@@ -105,22 +557,22 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   if (eligibility != null) {
     canApply = eligibility.canApply;
   }
-  const intl = tmp(1115).intl;
-  const aJUdOi = tmp(1115).t.aJUdOi;
-  const tmp9Result3 = refresh(2111);
+  const intl = tmp(1127).intl;
+  const aJUdOi = tmp(1127).t.aJUdOi;
+  const tmp9Result3 = refresh(2114);
   ({ faqUrl: null }.faqUrl) = tmp9Result3.getArticleURL(constants2.CREATOR_FAQ);
   const tmp26 = constants2;
   if (isApplicationRejected) {
     if (isMonetizationReapplicationDisabled) {
       let formatResult;
       if (true === hasItem) {
-        const intl4 = tmp(1115).intl;
+        const intl4 = tmp(1127).intl;
         const obj2 = { communityGuidelineUrl: constants3.GUIDELINES };
-        formatResult = intl4.format(tmp(1115).t["0o1Q+t"], obj2);
+        formatResult = intl4.format(tmp(1127).t["0o1Q+t"], obj2);
       } else {
-        const intl3 = tmp(1115).intl;
+        const intl3 = tmp(1127).intl;
         const obj3 = { communityGuidelineUrl: constants3.GUIDELINES };
-        formatResult = intl3.format(tmp(1115).t.b6h59n, obj3);
+        formatResult = intl3.format(tmp(1127).t.b6h59n, obj3);
       }
       formatResult2 = formatResult;
     }
@@ -129,13 +581,13 @@ export default function useOnboardingMonetizationEnableFlow(features) {
       isExpeditedOnboardingGuild = false === hasItem;
     }
     let formatResult1;
-    const tmpResult4 = tmp(17542);
+    const tmpResult4 = tmp(17544);
     const creatorMonetizationAcceptTermsCheckboxText = tmpResult4.getCreatorMonetizationAcceptTermsCheckboxText();
     if (isApplicationRejected) {
       if (true === canApply) {
         if (stateFromStores) {
-          const intl5 = tmp(1115).intl;
-          formatResult1 = intl5.format(tmp(1115).t.wbVIUB, {});
+          const intl5 = tmp(1127).intl;
+          formatResult1 = intl5.format(tmp(1127).t.wbVIUB, {});
         }
       }
     }
@@ -157,11 +609,14 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   }
   const tmp28 = isApplicationRejected && null != requestCooldownDuration;
   if (tmp28) {
-    const intl2 = tmp(1115).intl;
+    const intl2 = tmp(1127).intl;
     const format = intl2.format;
     const obj5 = { requestCooldownDuration, creatorRevenuePolicyUrl: tmp9Result4.getArticleURL(tmp26.CREATOR_POLICY) };
-    const TvX207 = tmp(1115).t.TvX207;
-    tmp9Result4 = refresh(2111);
+    const TvX207 = tmp(1127).t.TvX207;
+    tmp9Result4 = refresh(2114);
     formatResult2 = format(TvX207, obj5);
   }
-};
+});
+const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useOnboardingMonetizationEnableFlow.tsx");
+
+export default tmp3;

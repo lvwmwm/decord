@@ -1,12 +1,12 @@
-// Module ID: 6600
-// Function ID: 6601
+// Module ID: 6601
+// Function ID: 6602
 // Name: getDefaultProviderDescription
-// Dependencies: [1074, 1115, 2]
+// Dependencies: [1086, 1127, 2]
 // Exports: default
 
-// Module 6600 (getDefaultProviderDescription)
-import Constants from "Constants" /* 1074 */;
-import intl3 from "intl" /* 1115 */;
+// Module 6601 (getDefaultProviderDescription)
+import Constants from "Constants" /* 1086 */;
+import intl3 from "intl" /* 1127 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;

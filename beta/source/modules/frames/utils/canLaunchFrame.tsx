@@ -1,13 +1,13 @@
-// Module ID: 8783
-// Function ID: 8784
+// Module ID: 8778
+// Function ID: 8779
 // Name: canLaunchFrame
-// Dependencies: [1074, 8590, 8321, 2]
+// Dependencies: [1086, 8587, 8318, 2]
 // Exports: canLaunchFrame
 
-// Module 8783 (canLaunchFrame)
-import Constants from "Constants" /* 1074 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8321 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 8590 */;
+// Module 8778 (canLaunchFrame)
+import Constants from "Constants" /* 1086 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8318 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 8587 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationFlags = Constants.ApplicationFlags;

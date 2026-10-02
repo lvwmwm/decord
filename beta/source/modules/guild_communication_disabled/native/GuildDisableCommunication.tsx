@@ -1,28 +1,29 @@
-// Module ID: 11320
-// Function ID: 11321
+// Module ID: 11195
+// Function ID: 11196
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 2110, 1074, 21, 1115, 4836, 576, 6402, 10608, 5298, 1241, 11321, 4528, 4988, 8810, 4832, 5997, 6000, 6506, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 2113, 1086, 21, 1127, 4837, 588, 558, 576, 6399, 10596, 1253, 5297, 11196, 4531, 4989, 8805, 4833, 5995, 5994, 6507, 5282, 2]
 
-// Module 11320 (GuildDisableCommunication)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import intl6 from "intl" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import useMountEffectDefault from "useMountEffect" /* 5298 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 5997 */;
-import TableRadioRow2 from "TableRadioRow" /* 6000 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
-import TextArea2 from "TextArea" /* 6506 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 10608 */;
+// Module 11195 (GuildDisableCommunication)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl6 from "intl" /* 1127 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import useMountEffectDefault from "useMountEffect" /* 5297 */;
+import TableRadioRow2 from "TableRadioRow" /* 5994 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 5995 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6399 */;
+import TextArea2 from "TextArea" /* 6507 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 10596 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2110 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2113 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -96,7 +97,388 @@ createStyles = createStyles.createStyles;
 obj4 = { marginVertical: nativeDefault.space.PX_16 };
 obj5 = { marginBottom: nativeDefault.space.PX_16 };
 let closure_15 = createStyles(obj2);
-const memoResult = react.memo(function GuildDisableCommunication(arg0) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+  let closure_4;
+  let closure_5;
+  let first;
+  let first1;
+  let intl;
+  let items1;
+  let obj8;
+  let onClose;
+  let tmp11;
+  let tmp12;
+  const tmp2 = onClose;
+  let obj = user(onClose[11]);
+  const cResult = obj.c(37);
+  user = user.user;
+  const guildId = user.guildId;
+  onClose = user.onClose;
+  const tmp4 = closure_15();
+  [first, _slicedToArray] = react.useState(0);
+  react = react.useRef("");
+  const ref = react.useRef(null);
+  const ref1 = react.useRef(null);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = { includeKeyboardHeight: true };
+    cResult[0] = obj2;
+    first1 = obj2;
+  } else {
+    first1 = cResult[0];
+  }
+  const insets = guildId(tmp2[12])(first1).insets;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj3 = { ref: ref1, offset: { type: "toBottom" } };
+    items = [obj3];
+    cResult[1] = items;
+    tmp11 = items;
+  } else {
+    tmp11 = cResult[1];
+  }
+  if (cResult[2] !== insets) {
+    let obj4 = { insets, inputs: tmp11, scrollViewRef: ref };
+    cResult[2] = insets;
+    cResult[3] = obj4;
+    tmp12 = obj4;
+  } else {
+    tmp12 = cResult[3];
+  }
+  guildId(tmp2[13])(tmp12);
+  if (cResult[4] === guildId) {
+    let tmp14;
+    if (cResult[5] === user.id) {
+      tmp14 = cResult[6];
+    }
+    guildId(tmp2[15])(tmp14);
+    if (cResult[7] === guildId) {
+      if (cResult[8] === onClose) {
+        if (cResult[9] === first) {
+          let tmp16;
+          let tmp18;
+          let tmp19;
+          let tmp20;
+          let tmp24;
+          let tmp26;
+          let tmp27;
+          let tmp31;
+          let tmp30;
+          let tmp34;
+          let tmp37;
+          let tmp39;
+          if (cResult[10] === user) {
+            tmp16 = cResult[11];
+          }
+          const container = tmp4.container;
+          if (cResult[12] !== insets.bottom) {
+            let obj5 = { paddingHorizontal: tmp10(tmp2[9]).space.PX_12, paddingBottom: insets.bottom };
+            cResult[12] = insets.bottom;
+            cResult[13] = obj5;
+            tmp18 = obj5;
+          } else {
+            tmp18 = cResult[13];
+          }
+          const _Symbol = Symbol;
+          if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+            let obj6 = { marginVertical: tmp10(tmp2[9]).space.PX_16 };
+            cResult[14] = obj6;
+            tmp19 = obj6;
+          } else {
+            tmp19 = cResult[14];
+          }
+          const _Symbol2 = Symbol;
+          if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+            let obj7 = { style: tmp19, variant: "heading-md/semibold", children: intl.format(tmp(tmp2[7]).t.Ns83GT, obj8) };
+            const Text = tmp(tmp2[20]).Text;
+            intl = tmp(tmp2[7]).intl;
+            obj8 = { helpdeskArticle };
+            const tmp23 = closure_11(Text, obj7);
+            cResult[15] = tmp23;
+            tmp20 = tmp23;
+          } else {
+            tmp20 = cResult[15];
+          }
+          const _Symbol3 = Symbol;
+          if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+            const intl2 = tmp(tmp2[7]).intl;
+            const stringResult = intl2.string(user(tmp2[7]).t["9XsExm"]);
+            cResult[16] = stringResult;
+            tmp24 = stringResult;
+          } else {
+            tmp24 = cResult[16];
+          }
+          const _Symbol4 = Symbol;
+          if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+            class X {
+              constructor(arg0) {
+                closure_4(arg0);
+              }
+            }
+            cResult[17] = X;
+            tmp26 = X;
+          } else {
+            class X {
+              constructor(arg0) {
+                closure_4(arg0);
+              }
+            }
+          }
+          const _Symbol5 = Symbol;
+          if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+            class X {
+              constructor(arg0) {
+                closure_4(arg0);
+              }
+            }
+            const obj9 = {
+              title: tmp24,
+              defaultValue: 0,
+              onChange: tmp26,
+              hasIcons: false,
+              children: items.map((getLabel, value) => {
+                          const obj = { value, label: getLabel.getLabel() };
+                          const TableRadioRow = user(onClose[22]).TableRadioRow;
+                          return closure_1_11(TableRadioRow, obj, value);
+                        })
+            };
+            const TableRadioGroup = tmp(tmp2[21]).TableRadioGroup;
+            const tmp29 = closure_11(TableRadioGroup, obj9);
+            cResult[18] = tmp29;
+            tmp27 = tmp29;
+          } else {
+            class X {
+              constructor(arg0) {
+                closure_4(arg0);
+              }
+            }
+          }
+          const _Symbol6 = Symbol;
+          const reasonTextArea = tmp4.reasonTextArea;
+          if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
+            class X {
+              constructor(arg0) {
+                closure_4(arg0);
+              }
+            }
+            const stringResult1 = obj10.string(user(tmp2[7]).t.GakiH1);
+            const intl3 = tmp(tmp2[7]).intl;
+            const stringResult2 = intl3.string(user(tmp2[7]).t.ewHW15);
+            cResult[19] = stringResult1;
+            cResult[20] = stringResult2;
+            tmp31 = stringResult2;
+            tmp30 = stringResult1;
+          } else {
+            class X {
+              constructor(arg0) {
+                closure_4(arg0);
+              }
+            }
+            tmp31 = cResult[20];
+          }
+          const _Symbol7 = Symbol;
+          if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
+            class Y {
+              constructor(current) {
+                closure_5.current = current;
+              }
+            }
+            cResult[21] = Y;
+            tmp34 = Y;
+          } else {
+            class Y {
+              constructor(current) {
+                closure_5.current = current;
+              }
+            }
+          }
+          if (cResult[22] !== tmp4.reasonTextArea) {
+            class Y {
+              constructor(current) {
+                closure_5.current = current;
+              }
+            }
+            const obj11 = { ref: ref1, containerStyle: reasonTextArea, placeholder: tmp30, label: tmp31, maxLength: 512, onChange: tmp34 };
+            cResult[22] = tmp4.reasonTextArea;
+            cResult[23] = closure_11(user(tmp2[23]).TextArea, obj11);
+            const tmp36 = closure_11(user(tmp2[23]).TextArea, obj11);
+          } else {
+            class Y {
+              constructor(current) {
+                closure_5.current = current;
+              }
+            }
+          }
+          const _Symbol8 = Symbol;
+          const buttonContainer = tmp4.buttonContainer;
+          if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
+            class Y {
+              constructor(current) {
+                closure_5.current = current;
+              }
+            }
+            const stringResult3 = obj12.string(user(tmp2[7]).t.MlPTIi);
+            cResult[24] = stringResult3;
+            tmp37 = stringResult3;
+          } else {
+            class Y {
+              constructor(current) {
+                closure_5.current = current;
+              }
+            }
+          }
+          if (cResult[25] !== tmp16) {
+            class Y {
+              constructor(current) {
+                closure_5.current = current;
+              }
+            }
+            const obj13 = { variant: "primary", text: tmp37, onPress: tmp16 };
+            const tmp40 = closure_11(user(tmp2[24]).Button, obj13);
+            cResult[25] = tmp16;
+            cResult[26] = tmp40;
+            tmp39 = tmp40;
+          } else {
+            class Y {
+              constructor(current) {
+                closure_5.current = current;
+              }
+            }
+          }
+          if (cResult[27] === tmp4.buttonContainer) {
+            class Y {
+              constructor(current) {
+                closure_5.current = current;
+              }
+            }
+            if (cResult[30] === tmp35) {
+              class Y {
+                constructor(current) {
+                  closure_5.current = current;
+                }
+              }
+              if (cResult[33] === tmp4.container) {
+                class Y {
+                  constructor(current) {
+                    closure_5.current = current;
+                  }
+                }
+              }
+              const obj14 = { style: container, ref, contentContainerStyle: tmp18, children: tmp45 };
+              cResult[33] = tmp4.container;
+              cResult[34] = tmp45;
+              cResult[35] = tmp18;
+              cResult[36] = closure_11(closure_7, obj14);
+              const tmp52 = closure_11(closure_7, obj14);
+            }
+            const obj15 = { children: items1 };
+            items1 = [tmp20, tmp27, tmp35, tmp41];
+            cResult[30] = tmp35;
+            cResult[31] = tmp41;
+            cResult[32] = closure_13(closure_12, obj15);
+            const tmp48 = closure_13(closure_12, obj15);
+          }
+          const obj16 = { style: buttonContainer, children: tmp39 };
+          cResult[27] = tmp4.buttonContainer;
+          const tmp44 = closure_11(closure_6, obj16);
+          class U {
+            constructor() {
+              const obj = AnalyticsUtilsDefault;
+              const obj2 = { type, guild_id: guildId, other_user_id: user.id };
+              obj.track(AnalyticEvents.OPEN_MODAL, obj2);
+            }
+          }
+          cResult[29] = tmp44;
+        }
+      }
+    }
+    let closure_0 = first(function*(arg0, value) {
+      let obj7;
+      let v1;
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let closure_1;
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              closure_1 = tmp3;
+              const obj4 = guildId(onClose[16]);
+              c2 = 1;
+              c3 = 1;
+              const obj5 = { value: obj4.setCommunicationDisabledDuration(closure_1, user.id, items[c3].value, ref.current), done: false };
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj6 = { value, done: true };
+            return obj6;
+          } else {
+            const open = guildId(onClose[17]).open;
+            const tmp26 = guildId(onClose[17]);
+            const intl = user(onClose[7]).intl;
+            const formatToPlainString = intl.formatToPlainString;
+            const O9C3Nt = user(onClose[7]).t.O9C3Nt;
+            const obj8 = guildId(onClose[18]);
+            const name = obj8.getName(closure_1, null, user);
+            user = name;
+            if (name == null) {
+              user = "";
+            }
+            const obj = { key: "GUILD_COMMUNICATION_DISABLED_SUCCESS", content: formatToPlainString(O9C3Nt, obj7), icon: guildId(onClose[19]) };
+            obj7 = { user };
+            open(obj);
+            c2();
+            c3 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp19) {
+          c3 = 3;
+          throw tmp19;
+        }
+      }
+    });
+    function handleSubmitButtonPressed() {
+      return closure_0(...arguments);
+    }
+    cResult[7] = guildId;
+    cResult[8] = onClose;
+    cResult[9] = first;
+    cResult[10] = user;
+    cResult[11] = handleSubmitButtonPressed;
+    tmp16 = handleSubmitButtonPressed;
+  }
+  class U {
+    constructor() {
+      const obj = AnalyticsUtilsDefault;
+      const obj2 = { type, guild_id: guildId, other_user_id: user.id };
+      obj.track(AnalyticEvents.OPEN_MODAL, obj2);
+    }
+  }
+  cResult[4] = guildId;
+  cResult[5] = user.id;
+  cResult[6] = U;
+  tmp14 = U;
+}) : ((arg0) => {
   let Button;
   let _undefined;
   let c3;
@@ -118,7 +500,7 @@ const memoResult = react.memo(function GuildDisableCommunication(arg0) {
   c3 = undefined;
   _slicedToArray = undefined;
   react = undefined;
-  let obj = function _handleSubmitButtonPressed() {
+  let obj = function _handleSubmitButtonPressed2() {
     let id;
     let ref;
     obj = _asyncToGenerator(async (arg0, value) => {
@@ -135,7 +517,7 @@ const memoResult = react.memo(function GuildDisableCommunication(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -149,7 +531,7 @@ const memoResult = react.memo(function GuildDisableCommunication(arg0) {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              const obj4 = tmp3(c2[14]);
+              const obj4 = tmp3(c2[16]);
               c2 = 1;
               c3 = 1;
               const obj5 = { value: obj4.setCommunicationDisabledDuration(guild_id, id.id, closure_1_14[closure_2_3].value, ref.current), done: false };
@@ -163,23 +545,23 @@ const memoResult = react.memo(function GuildDisableCommunication(arg0) {
             const obj6 = { value, done: true };
             return obj6;
           } else {
-            const open = tmp3(c2[15]).open;
-            const tmp26 = tmp3(c2[15]);
+            const open = tmp3(c2[17]).open;
+            const tmp26 = tmp3(c2[17]);
             const intl = user(c2[7]).intl;
             const formatToPlainString = intl.formatToPlainString;
             const O9C3Nt = user(c2[7]).t.O9C3Nt;
-            const obj8 = tmp3(c2[16]);
+            const obj8 = tmp3(c2[18]);
             const name = obj8.getName(closure_129_1, null, closure_129_0);
             user = name;
             if (name == null) {
               user = "";
             }
-            obj = { key: "GUILD_COMMUNICATION_DISABLED_SUCCESS", content: formatToPlainString(O9C3Nt, obj7), icon: tmp3(c2[17]) };
+            obj = { key: "GUILD_COMMUNICATION_DISABLED_SUCCESS", content: formatToPlainString(O9C3Nt, obj7), icon: tmp3(c2[19]) };
             obj7 = { user };
             open(obj);
             closure_129_2();
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           c3 = 3;
@@ -255,7 +637,7 @@ const memoResult = react.memo(function GuildDisableCommunication(arg0) {
   intl5 = intl6.intl;
   items1[3] = closure_11(obj, obj10);
   return closure_11(closure_7, obj2);
-});
+}));
 const result = size.fileFinishedImporting("modules/guild_communication_disabled/native/GuildDisableCommunication.tsx");
 
 export default memoResult;

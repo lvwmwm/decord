@@ -1,21 +1,83 @@
-// Module ID: 9464
-// Function ID: 9465
+// Module ID: 9460
+// Function ID: 9461
 // Name: VoicePanelRiveMicButton
-// Dependencies: [19, 17, 21, 4636, 9140, 9465, 2]
-// Exports: VoicePanelRiveMicButton
+// Dependencies: [19, 17, 21, 558, 576, 9117, 9461, 4638, 2]
 
-// Module 9464 (VoicePanelRiveMicButton)
+// Module 9460 (VoicePanelRiveMicButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import MicrophoneRive2 from "MicrophoneRive" /* 4636 */;
+import react2 from "react" /* 576 */;
+import MicrophoneRive2 from "MicrophoneRive" /* 4638 */;
 import react from "react" /* 19 */;
-import size from "module_2" /* 2 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelRiveMicButton.tsx");
-
-export const VoicePanelRiveMicButton = function VoicePanelRiveMicButton(arg0) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let color;
+  let first;
+  let muted;
+  const obj = react2;
+  const cResult = obj.c(11);
+  ({ color, muted } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    size = { width: 24, height: 24, pointerEvents: "none" };
+    cResult[0] = size;
+    first = size;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === color) {
+    let tmp6;
+    let MicrophoneIcon;
+    if (cResult[2] === !muted) {
+      tmp6 = cResult[3];
+    }
+    let str = "On";
+    if (muted) {
+      str = "Off";
+    }
+    if (cResult[4] === color) {
+      let tmp7;
+      if (cResult[5] === muted) {
+        tmp7 = cResult[6];
+      }
+      if (cResult[7] === tmp6) {
+        if (cResult[8] === str) {
+          let tmp10;
+          if (cResult[9] === tmp7) {
+            tmp10 = cResult[10];
+          }
+          return tmp10;
+        }
+      }
+      const tmp13 = <View style={first}>{null}</View>;
+      cResult[7] = tmp6;
+      cResult[8] = str;
+      cResult[9] = tmp7;
+      cResult[10] = tmp13;
+      tmp10 = tmp13;
+    }
+    const tmp8 = jsx;
+    if (muted) {
+      MicrophoneIcon = tmp(9117).MicrophoneSlashIcon;
+    } else {
+      MicrophoneIcon = tmp(9461).MicrophoneIcon;
+    }
+    const obj4 = { color };
+    const tmp8Result = tmp8(MicrophoneIcon, obj4);
+    cResult[4] = color;
+    cResult[5] = muted;
+    cResult[6] = tmp8Result;
+    tmp7 = tmp8Result;
+  }
+  const obj5 = { fill: color, on: !muted };
+  cResult[1] = color;
+  cResult[2] = !muted;
+  cResult[3] = obj5;
+  tmp6 = obj5;
+}) : ((arg0) => {
   let color;
   let muted;
   ({ color, muted } = arg0);
@@ -25,9 +87,13 @@ export const VoicePanelRiveMicButton = function VoicePanelRiveMicButton(arg0) {
     str = "Off";
   }
   if (muted) {
-    let MicrophoneIcon = tmp3(9140).MicrophoneSlashIcon;
+    let MicrophoneIcon = tmp3(9117).MicrophoneSlashIcon;
   } else {
-    MicrophoneIcon = tmp3(9465).MicrophoneIcon;
+    MicrophoneIcon = tmp3(9461).MicrophoneIcon;
   }
   return <tmp2 style={{ width: 24, height: 24, pointerEvents: "none" }}>{null}</tmp2>;
-};
+});
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelRiveMicButton.tsx");
+
+export const VoicePanelRiveMicButton = tmp3;

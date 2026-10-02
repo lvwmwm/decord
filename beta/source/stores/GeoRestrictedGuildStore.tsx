@@ -1,11 +1,11 @@
-// Module ID: 13289
-// Function ID: 13290
+// Module ID: 13291
+// Function ID: 13292
 // Name: GeoRestrictedGuildStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 13289 (GeoRestrictedGuildStore)
+// Module 13291 (GeoRestrictedGuildStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let found = [];

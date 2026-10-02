@@ -1,9 +1,9 @@
-// Module ID: 5900
-// Function ID: 5901
+// Module ID: 5897
+// Function ID: 5898
 // Name: FastImageNativeComponent
 // Dependencies: [81, 106, 65, 2]
 
-// Module 5900 (FastImageNativeComponent)
+// Module 5897 (FastImageNativeComponent)
 import resolveAssetSource_mod from "resolveAssetSource" /* 81 */;
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;

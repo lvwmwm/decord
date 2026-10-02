@@ -1,10 +1,10 @@
-// Module ID: 1995
-// Function ID: 1996
+// Module ID: 2001
+// Function ID: 2002
 // Name: inject
 // Dependencies: [2]
 // Exports: getOpenH264LibraryPath, getVoiceEngine, inject, setProcessPriority, supported, supportsFeature
 
-// Module 1995 (inject)
+// Module 2001 (inject)
 import size from "module_2" /* 2 */;
 
 let voiceEngine;

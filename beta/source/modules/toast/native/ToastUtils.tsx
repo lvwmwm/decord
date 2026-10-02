@@ -1,28 +1,28 @@
-// Module ID: 4527
-// Function ID: 4528
+// Module ID: 4530
+// Function ID: 4531
 // Name: ToastUtils
-// Dependencies: [1074, 4528, 1115, 4529, 4769, 4771, 4773, 4775, 4777, 4779, 4781, 4783, 1397, 4785, 4787, 4790, 1255, 4792, 4795, 2]
+// Dependencies: [1086, 4531, 1127, 4532, 4770, 4772, 4774, 4776, 4778, 4780, 4782, 4784, 1403, 4786, 4788, 4791, 1267, 4793, 4796, 2]
 // Exports: communityAdminOnly, communityRequirementSatisfied, memberOrRoleAddedToast, memberOrRoleRemovedToast, presentAddedFriendToast, presentCommandCopied, presentCopiedToClipboard, presentEmoji, presentError, presentFailedToast, presentFeedbackSent, presentFriendRequestAcceptedToast, presentFriendRequestIgnoredToast, presentGameFriendRequestAcceptedToast, presentGameFriendRequestIgnoredToast, presentGifSaved, presentGuildMemberBio, presentGuildMemberPronouns, presentGuildRoleSubscriptionTrialTierMonthCost, presentIdCopied, presentImageSaved, presentInviteSent, presentLinkCopied, presentMessageCopied, presentMessageIdCopied, presentNoiseCancellation, presentNoiseCancellationError, presentPostIdCopied, presentTimestamp, presentUserPronouns, presentUsernameCopied, presentVideoSaved, presentVoiceActivityDetectionError, roleCreateFailedToast, roleCreatedToast, roleIdCopied, roleTemplateAppliedToast, showMaxGroupMembers, showSafetySuccess, showTransferOwnershipSuccess, showVerificationSent, showVoiceRecordingFailed, transferOwnershipProtected, unverifiedVoiceGate
 
-// Module 4527 (ToastUtils)
-import Constants from "Constants" /* 1074 */;
-import intl7 from "intl" /* 1115 */;
-import v1 from "v1" /* 1255 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
-import FriendsIcon from "FriendsIcon" /* 4529 */;
-import UserPlatformIcon from "UserPlatformIcon" /* 4771 */;
-import UserMinusIcon from "UserMinusIcon" /* 4773 */;
-import LinkIcon from "LinkIcon" /* 4775 */;
-import SendMessageIcon from "SendMessageIcon" /* 4777 */;
-import CopyIcon from "CopyIcon" /* 4779 */;
-import DownloadIcon from "DownloadIcon" /* 4781 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4783 */;
-import XLargeIcon2 from "XLargeIcon" /* 4785 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4787 */;
-import TrashIcon from "TrashIcon" /* 4790 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4792 */;
-import ClockIcon from "ClockIcon" /* 4795 */;
+// Module 4530 (ToastUtils)
+import Constants from "Constants" /* 1086 */;
+import intl7 from "intl" /* 1127 */;
+import v1 from "v1" /* 1267 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
+import FriendsIcon from "FriendsIcon" /* 4532 */;
+import UserPlatformIcon from "UserPlatformIcon" /* 4772 */;
+import UserMinusIcon from "UserMinusIcon" /* 4774 */;
+import LinkIcon from "LinkIcon" /* 4776 */;
+import SendMessageIcon from "SendMessageIcon" /* 4778 */;
+import CopyIcon from "CopyIcon" /* 4780 */;
+import DownloadIcon from "DownloadIcon" /* 4782 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4784 */;
+import XLargeIcon2 from "XLargeIcon" /* 4786 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4788 */;
+import TrashIcon from "TrashIcon" /* 4791 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4793 */;
+import ClockIcon from "ClockIcon" /* 4796 */;
 import size from "module_2" /* 2 */;
 
 const VerificationCriteria = Constants.VerificationCriteria;
@@ -36,22 +36,22 @@ export const presentAddedFriendToast = function presentAddedFriendToast() {
   intl = intl7.intl;
   open(obj);
 };
-export const presentFriendRequestAcceptedToast = function presentFriendRequestAcceptedToast(dependencyMap) {
+export const presentFriendRequestAcceptedToast = function presentFriendRequestAcceptedToast(username) {
   let stringResult;
   let tmp3;
   const open = ToastActionCreatorsDefault.open;
   ToastActionCreatorsDefault;
-  if (null == dependencyMap) {
+  if (null == username) {
     const intl2 = intl7.intl;
     stringResult = intl2.string(intl7.t.UhJna5);
     tmp3 = require;
   } else {
     tmp3 = require;
     const intl = intl7.intl;
-    const obj = { username: dependencyMap.username };
+    const obj = { username: username.username };
     stringResult = intl.formatToPlainString(intl7.t.b3eoD4, obj);
   }
-  const obj2 = { key: "TOAST_FRIEND_REQUEST_ACCEPTED", content: stringResult, IconComponent: tmp3(4769).UserPlusIcon, iconColor: "status-positive" };
+  const obj2 = { key: "TOAST_FRIEND_REQUEST_ACCEPTED", content: stringResult, IconComponent: tmp3(4770).UserPlusIcon, iconColor: "status-positive" };
   open(obj2);
 };
 export const presentGameFriendRequestAcceptedToast = function presentGameFriendRequestAcceptedToast() {
@@ -193,9 +193,9 @@ export const presentNoiseCancellation = function presentNoiseCancellation(arg0) 
   }
   const obj = { key: "NOISE_CANCELLATION_TOGGLE", content: stringResult, IconComponent: XLargeIcon, iconColor: str };
   if (arg0) {
-    XLargeIcon = tmp5(4783).CheckmarkLargeIcon;
+    XLargeIcon = tmp5(4784).CheckmarkLargeIcon;
   } else {
-    XLargeIcon = tmp5(4785).XLargeIcon;
+    XLargeIcon = tmp5(4786).XLargeIcon;
   }
   str = "icon-feedback-critical";
   if (arg0) {
@@ -456,9 +456,9 @@ export const showTransferOwnershipSuccess = function showTransferOwnershipSucces
   intl = intl7.intl;
   open(obj);
 };
-export const showSafetySuccess = function showSafetySuccess(BLOCK_SUCCESS, safetyToastTypeContent) {
+export const showSafetySuccess = function showSafetySuccess(IAR_SHARE_WITH_PARENT_SUCCESS, safetyToastTypeContent) {
   const obj = ToastActionCreatorsDefault;
-  const obj2 = { key: BLOCK_SUCCESS, content: safetyToastTypeContent, IconComponent: CircleCheckIcon.CircleCheckIcon, iconColor: "status-positive" };
+  const obj2 = { key: IAR_SHARE_WITH_PARENT_SUCCESS, content: safetyToastTypeContent, IconComponent: CircleCheckIcon.CircleCheckIcon, iconColor: "status-positive" };
   obj.open(obj2);
 };
 export const showVerificationSent = function showVerificationSent() {

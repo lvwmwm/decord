@@ -1,13 +1,13 @@
-// Module ID: 15923
-// Function ID: 15924
+// Module ID: 15924
+// Function ID: 15925
 // Name: GuildsBarFolderMenuItems
-// Dependencies: [5, 5750, 1074, 6502, 1115, 13505, 1981, 6798, 15924, 2]
+// Dependencies: [5, 5751, 1086, 6503, 1127, 13507, 1987, 6799, 15925, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 15923 (GuildsBarFolderMenuItems)
-import Constants from "Constants" /* 1074 */;
+// Module 15924 (GuildsBarFolderMenuItems)
+import Constants from "Constants" /* 1086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SortedGuildStore from "SortedGuildStore" /* 5750 */;
+import SortedGuildStore from "SortedGuildStore" /* 5751 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -71,7 +71,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
               value.default(guildFolderById.guildIds, constants.GUILD_LIST);
             }
             guildFolderById = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } catch (tmp13) {
             guildFolderById = 3;
             throw tmp13;
@@ -98,7 +98,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -127,7 +127,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
             } else {
               const result = value.showGuildsBarFolderModal(closure_128_0);
               c2 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp9) {
             c2 = 3;

@@ -1,12 +1,12 @@
-// Module ID: 15711
-// Function ID: 15712
+// Module ID: 15708
+// Function ID: 15709
 // Name: utils/EmojiColorUtils
-// Dependencies: [5, 17, 1439, 2]
+// Dependencies: [5, 17, 1445, 2]
 // Exports: getEmojiDominantColors
 
-// Module 15711 (utils/EmojiColorUtils)
+// Module 15708 (utils/EmojiColorUtils)
 import react_native from "react-native" /* 17 */;
-import LRUCacheDefault from "LRUCache" /* 1439 */;
+import LRUCacheDefault from "LRUCache" /* 1445 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _getFromCacheOrFallback2() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let v0;
@@ -57,7 +57,7 @@ let obj = function _getFromCacheOrFallback2() {
             value2 = undefined;
             c2 = 1;
             c4 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c2) {
           if (arg0 === 1) {
@@ -134,7 +134,7 @@ obj = function _getEmojiDominantColors() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -156,7 +156,7 @@ obj = function _getEmojiDominantColors() {
             ({ emoji: c0, emojiSource: c1 } = closure_0);
             c4 = 1;
             c5 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

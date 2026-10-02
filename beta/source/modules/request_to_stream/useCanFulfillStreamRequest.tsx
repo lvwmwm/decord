@@ -1,23 +1,23 @@
-// Module ID: 11266
-// Function ID: 11267
+// Module ID: 11140
+// Function ID: 11141
 // Name: useCanFulfillStreamRequest
-// Dependencies: [2000, 4858, 502, 2045, 2067, 4469, 4876, 4859, 1074, 9403, 1364, 504, 2]
-// Exports: default
+// Dependencies: [2006, 4859, 502, 2051, 2073, 4472, 4877, 4860, 1086, 9399, 1370, 558, 576, 504, 2]
 
-// Module 11266 (useCanFulfillStreamRequest)
-import RunningGameStore from "RunningGameStore" /* 2000 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
+// Module 11140 (useCanFulfillStreamRequest)
+import RunningGameStore from "RunningGameStore" /* 2006 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import PresenceStore from "PresenceStore" /* 4876 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import PresenceStore from "PresenceStore" /* 4877 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, dependencyMap;
 
 let c10;
 let unpackModuleId;
@@ -104,9 +104,44 @@ function canFulfillStreamRequest(channel_id, flag, ApplicationStreamingStore, Ch
 }
 ({ ActivityGamePlatforms: c10, ActivityTypes: unpackModuleId } = Constants);
 const StreamRequestUnfulfillableReason = { NOT_IN_VOICE_CHANNEL: "NOT_IN_VOICE_CHANNEL", NOT_RUNNING_GAME: "NOT_RUNNING_GAME", ALREADY_STREAMING: "ALREADY_STREAMING", NO_PERMISSION: "NO_PERMISSION", PENDING_REQUEST: "PENDING_REQUEST", EXPIRED: "EXPIRED" };
-const result = size.fileFinishedImporting("modules/request_to_stream/useCanFulfillStreamRequest.tsx");
-
-export default function useCanFulfillStreamRequest(arg0) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let first;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  dependencyMap = tmp4;
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ApplicationStreamingStore, ChannelStore, PresenceStore, RunningGameStore, RTCConnectionStore, GuildStore, PermissionStore];
+    cResult[0] = items;
+    class R {
+      constructor() {
+        return canFulfillStreamRequest(closure_0, closure_1, closure_3, closure_5, closure_8, closure_2, closure_9, closure_6, closure_7);
+      }
+    }
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === (undefined !== arg1 && arg1)) {
+    let tmp13;
+    if (cResult[2] === arg0) {
+      tmp13 = cResult[3];
+    }
+    const tmpResult = tmp(504);
+    return tmpResult.useStateFromStores(first, tmp13);
+  }
+  class R {
+    constructor() {
+      return canFulfillStreamRequest(closure_0, closure_1, closure_3, closure_5, closure_8, closure_2, closure_9, closure_6, closure_7);
+    }
+  }
+  cResult[1] = undefined !== arg1 && arg1;
+  cResult[2] = arg0;
+  cResult[3] = R;
+  tmp13 = R;
+}) : ((arg0) => {
   let closure_0;
   _require = arg0;
   let flag = arg1;
@@ -116,6 +151,9 @@ export default function useCanFulfillStreamRequest(arg0) {
   const items = [ApplicationStreamingStore, ChannelStore, PresenceStore, RunningGameStore, RTCConnectionStore, GuildStore, PermissionStore];
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => canFulfillStreamRequest(closure_0, flag, ApplicationStreamingStore, ChannelStore, PresenceStore, RunningGameStore, RTCConnectionStore, GuildStore, PermissionStore));
-};
+});
+const result = size.fileFinishedImporting("modules/request_to_stream/useCanFulfillStreamRequest.tsx");
+
+export default tmp3;
 export { StreamRequestUnfulfillableReason };
 export { canFulfillStreamRequest };

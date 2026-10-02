@@ -1,11 +1,11 @@
-// Module ID: 14500
-// Function ID: 14501
+// Module ID: 14488
+// Function ID: 14489
 // Name: shouldWarnConnectedAccountTwoWay
-// Dependencies: [1074, 2]
+// Dependencies: [1086, 2]
 // Exports: default
 
-// Module 14500 (shouldWarnConnectedAccountTwoWay)
-import Constants from "Constants" /* 1074 */;
+// Module 14488 (shouldWarnConnectedAccountTwoWay)
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const items = [, , , ];

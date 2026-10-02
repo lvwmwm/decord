@@ -1,28 +1,30 @@
-// Module ID: 10964
-// Function ID: 10965
+// Module ID: 10832
+// Function ID: 10833
 // Name: ChatBanner
-// Dependencies: [19, 17, 5589, 4851, 10965, 1074, 21, 4836, 576, 10966, 10967, 504, 11, 1241, 5016, 6534, 4832, 1115, 5281, 6687, 7184, 5435, 6531, 7415, 2]
-// Exports: default
+// Dependencies: [19, 17, 5590, 4852, 10833, 1086, 21, 4837, 588, 558, 576, 10834, 10835, 11, 504, 1253, 5017, 6535, 1127, 4833, 5282, 7188, 6688, 5436, 6532, 7419, 2]
 
-// Module 10964 (ChatBanner)
+// Module 10832 (ChatBanner)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6531 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 6534 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7184 */;
-import ChatOverlayConstants from "ChatOverlayConstants" /* 10965 */;
-import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 10966 */;
-import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 10967 */;
+import nativeDefault from "native" /* 588 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6532 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 6535 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7188 */;
+import ChatOverlayConstants from "ChatOverlayConstants" /* 10833 */;
+import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 10834 */;
+import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 10835 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
-import ReadStateStore from "ReadStateStore" /* 4851 */;
-import Constants from "Constants" /* 1074 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import ReadStateStore from "ReadStateStore" /* 4852 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let channel;
 
 let StyleSheet;
 let c10;
@@ -36,246 +38,6 @@ let obj3;
 let obj4;
 let obj5;
 let unpackModuleId;
-class OptInChannelBanner {
-  constructor(channel) {
-    let Button;
-    let intl;
-    let intl2;
-    let items3;
-    let obj4;
-    channel = channel.channel;
-    const ctaProps = channel.ctaProps;
-    const topBorder = channel.topBorder;
-    const tmp = closure_14();
-    const items = [channel];
-    const effect = react.useEffect(() => {
-      const obj = { banner_type: "channel_opt_in" };
-      const track = AnalyticsUtilsDefault.track;
-      const CHANNEL_BANNER_VIEWED = constants.CHANNEL_BANNER_VIEWED;
-      AnalyticsUtilsDefault;
-      const obj2 = AppAnalyticsUtils;
-      const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
-      const obj3 = AppAnalyticsUtils;
-      const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
-      track(CHANNEL_BANNER_VIEWED, obj);
-    }, items);
-    const items1 = [channel];
-    const items2 = [tmp.optInChannelBannerContainer, ];
-    let topBorder1 = null;
-    const callback = react.useCallback(() => {
-      const obj = { banner_type: "channel_opt_in", cta_type: "add channel" };
-      const track = AnalyticsUtilsDefault.track;
-      const CHANNEL_BANNER_CTA_CLICKED = constants.CHANNEL_BANNER_CTA_CLICKED;
-      AnalyticsUtilsDefault;
-      const obj2 = AppAnalyticsUtils;
-      const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
-      const obj3 = AppAnalyticsUtils;
-      const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
-      track(CHANNEL_BANNER_CTA_CLICKED, obj);
-      const obj4 = OptInChannelsActionCreators;
-      const obj5 = { section: unpackModuleId.CHANNEL };
-      obj4.setOptInChannel(channel.guild_id, channel.id, true, obj5);
-    }, items1);
-    const tmp4 = closure_13;
-    if (topBorder) {
-      topBorder1 = tmp.topBorder;
-    }
-    let obj = { style: items2, children: items3 };
-    items2[1] = topBorder1;
-    let obj2 = { lineClamp: 2, style: tmp.optInChannelBannerText, variant: "text-sm/semibold", children: intl.string(channel(1115).t.iOWmmB) };
-    const Text = channel(4832).Text;
-    intl = channel(1115).intl;
-    items3 = [closure_12(Text, obj2), ];
-    let obj3 = { style: tmp.optInChannelBannerButtonContainer, children: closure_12(Button, obj4) };
-    obj4 = { onPress: callback, size: "sm", text: intl2.string(channel(1115).t["TD/+zP"]) };
-    Button = channel(5281).Button;
-    let merged = Object.assign(ctaProps);
-    intl2 = channel(1115).intl;
-    items3[1] = closure_12(closure_4, obj3);
-    return tmp4(closure_4, obj);
-  }
-}
-function ArchivedLockedThreadChatBanner(channel) {
-  let Button;
-  let intl2;
-  let items1;
-  let obj5;
-  let stringResult;
-  channel = channel.channel;
-  const tmp = closure_14();
-  const items = [channel];
-  const effect = react.useEffect(() => {
-    const obj = { banner_type: "thread" };
-    const track = AnalyticsUtilsDefault.track;
-    const CHANNEL_BANNER_VIEWED = constants.CHANNEL_BANNER_VIEWED;
-    AnalyticsUtilsDefault;
-    const obj2 = AppAnalyticsUtils;
-    const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
-    const obj3 = AppAnalyticsUtils;
-    const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
-    track(CHANNEL_BANNER_VIEWED, obj);
-  }, items);
-  let obj = channel(6687);
-  let canUnarchiveThread = obj.useCanUnarchiveThread(channel);
-  let obj2 = { style: tmp.threadBannerContainer, children: items1 };
-  let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: stringResult };
-  const Text = channel(4832).Text;
-  const isForumPostResult = channel.isForumPost();
-  const intl = channel(1115).intl;
-  const string = intl.string;
-  const t = channel(1115).t;
-  const tmp6 = closure_13;
-  if (isForumPostResult) {
-    stringResult = string(t["833FDn"]);
-  } else {
-    stringResult = string(t.rEeodK);
-  }
-  items1 = [closure_12(Text, obj3), ];
-  if (canUnarchiveThread) {
-    let obj4 = { style: tmp.threadBannerButton, children: closure_12(Button, obj5) };
-    obj5 = {
-      variant: "secondary",
-      size: "sm",
-      text: intl2.string(channel(1115).t["0dvvEi"]),
-      onPress() {
-          const obj = { banner_type: "thread", cta_type: "unarchive" };
-          const track = AnalyticsUtilsDefault.track;
-          const CHANNEL_BANNER_CTA_CLICKED = constants.CHANNEL_BANNER_CTA_CLICKED;
-          AnalyticsUtilsDefault;
-          const obj2 = AppAnalyticsUtils;
-          const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
-          const obj3 = AppAnalyticsUtils;
-          const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
-          track(CHANNEL_BANNER_CTA_CLICKED, obj);
-          const obj4 = ThreadActionCreatorsDefault;
-          obj4.unarchiveThread(channel, false);
-        }
-    };
-    Button = tmp3(5281).Button;
-    intl2 = tmp3(1115).intl;
-    canUnarchiveThread = tmp8(tmp7, obj4);
-  }
-  items1[1] = canUnarchiveThread;
-  return tmp6(closure_4, obj2);
-}
-function LockedThreadChatBanner(channel) {
-  let Button;
-  let intl2;
-  let items1;
-  let obj5;
-  let stringResult;
-  channel = channel.channel;
-  const tmp = closure_14();
-  const items = [channel];
-  const effect = react.useEffect(() => {
-    const obj = { banner_type: "thread" };
-    const track = AnalyticsUtilsDefault.track;
-    const CHANNEL_BANNER_VIEWED = constants.CHANNEL_BANNER_VIEWED;
-    AnalyticsUtilsDefault;
-    const obj2 = AppAnalyticsUtils;
-    const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
-    const obj3 = AppAnalyticsUtils;
-    const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
-    track(CHANNEL_BANNER_VIEWED, obj);
-  }, items);
-  let obj = channel(6687);
-  let isThreadModerator = obj.useIsThreadModerator(channel);
-  let obj2 = { style: tmp.threadBannerContainer, children: items1 };
-  let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: stringResult };
-  const Text = channel(4832).Text;
-  const isForumPostResult = channel.isForumPost();
-  const intl = channel(1115).intl;
-  const string = intl.string;
-  const t = channel(1115).t;
-  const tmp6 = closure_13;
-  if (isForumPostResult) {
-    stringResult = string(t.E7oO8u);
-  } else {
-    stringResult = string(t["V/JF2N"]);
-  }
-  items1 = [closure_12(Text, obj3), ];
-  if (isThreadModerator) {
-    let obj4 = { style: tmp.threadBannerButton, children: closure_12(Button, obj5) };
-    obj5 = {
-      variant: "secondary",
-      size: "sm",
-      text: intl2.string(channel(1115).t.zA9d1J),
-      onPress() {
-          const obj = { banner_type: "thread", cta_type: "unlock" };
-          const track = AnalyticsUtilsDefault.track;
-          const CHANNEL_BANNER_CTA_CLICKED = constants.CHANNEL_BANNER_CTA_CLICKED;
-          AnalyticsUtilsDefault;
-          const obj2 = AppAnalyticsUtils;
-          const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
-          const obj3 = AppAnalyticsUtils;
-          const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
-          track(CHANNEL_BANNER_CTA_CLICKED, obj);
-          const obj4 = ThreadActionCreatorsDefault;
-          obj4.unlockThread(channel);
-        }
-    };
-    Button = tmp3(5281).Button;
-    intl2 = tmp3(1115).intl;
-    isThreadModerator = tmp8(tmp7, obj4);
-  }
-  items1[1] = isThreadModerator;
-  return tmp6(closure_4, obj2);
-}
-function NewMessagesChatBar(channel) {
-  let Text;
-  let XSmallBoldIcon;
-  let connected;
-  let handleScrollToNewMessages;
-  let intl;
-  let intl2;
-  let items1;
-  let obj4;
-  let obj5;
-  let obj7;
-  let oldestUnreadTimestamp;
-  channel = channel.channel;
-  const unreadCount = channel.unreadCount;
-  ({ oldestUnreadTimestamp, handleScrollToNewMessages } = channel);
-  const tmp = closure_14();
-  let obj = channel(504);
-  const items = [GatewayConnectionStore];
-  let tmp4 = null;
-  if (obj.useStateFromStores(items, () => connected.isConnected(), [])) {
-    let tmp5 = null;
-    if (unreadCount > 0) {
-      const isEstimatedResult = ReadStateStore.isEstimated(channel.id);
-      const t = tmp2(1115).t;
-      let obj2 = { style: tmp.newMessageBar, children: items1 };
-      const obj3 = { accessibilityRole: "button", style: tmp.newMessageBarTextContainer, onPress: handleScrollToNewMessages, children: closure_12(Text, obj4) };
-      const tmp8 = isEstimatedResult ? t.wvtbbG : t["BctFH/"];
-      const PressableOpacity = tmp2(5435).PressableOpacity;
-      obj4 = { variant: "text-sm/semibold", color: "text-overlay-light", children: intl.format(tmp8, obj5) };
-      Text = tmp2(4832).Text;
-      intl = tmp2(1115).intl;
-      obj5 = { count: unreadCount, timestamp: oldestUnreadTimestamp };
-      items1 = [closure_12(PressableOpacity, obj3), ];
-      const obj6 = {
-        style: tmp.newMessageBarCloseButton,
-        accessibilityRole: "button",
-        accessibilityLabel: intl2.string(channel(1115).t.e6RscS),
-        onPress() {
-              const obj = ReadStateActionCreators;
-              const obj2 = { section: unpackModuleId.NEW_MESSAGES_BANNER, object: constants.MARK_CHANNEL_AS_READ_BUTTON, objectType: metroImportAll.ACK_MANUAL };
-              return obj.ack(channel.id, obj2);
-            },
-        children: closure_12(XSmallBoldIcon, obj7)
-      };
-      const PressableOpacity2 = tmp2(5435).PressableOpacity;
-      intl2 = tmp2(1115).intl;
-      obj7 = { size: "sm", color: nativeDefault.colors.WHITE };
-      XSmallBoldIcon = tmp2(7415).XSmallBoldIcon;
-      items1[1] = closure_12(PressableOpacity2, obj6);
-      tmp5 = closure_13(closure_4, obj2);
-    }
-    tmp4 = tmp5;
-  }
-  return tmp4;
-}
 ({ StyleSheet, View: closure_4 } = react_native);
 const ChatOverlays = ChatOverlayConstants.ChatOverlays;
 ({ AnalyticsObjectTypes: metroImportAll, AnalyticsObjects: c9, AnalyticEvents: c10, AnalyticsSections: unpackModuleId } = Constants);
@@ -287,10 +49,121 @@ createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, flexDirection: "row", justifyContent: "center", alignItems: "center", overflow: "hidden", zIndex: 100, minHeight: 45 };
 obj4 = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", overflow: "hidden", padding: 8, paddingLeft: 16, paddingRight: 16, zIndex: 100, backgroundColor: nativeDefault.colors.CHAT_BANNER_BG, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: nativeDefault.colors.CHAT_BORDER };
 obj5 = { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.CHAT_BORDER };
-const authStore2 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/messages/native/ChatBanner.tsx");
-
-export default function ChatBanner(channel) {
+let closure_14 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let first;
+  let oldestUnreadTimestamp;
+  let tmp11;
+  let tmp7;
+  let tmp8;
+  let unreadCount;
+  let tmp = channel;
+  let obj = channel(576);
+  const cResult = obj.c(15);
+  channel = channel.channel;
+  const handleScrollToNewMessages = channel.handleScrollToNewMessages;
+  const tmp4 = useShowChannelOptInNoticeDefault(channel);
+  let obj2 = useAllowedChatOverlaysDefault();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ReadStateStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channel.id) {
+    const fn = function l() {
+      let oldestUnreadTimestamp = ReadStateStore.getOldestUnreadTimestamp(channel.id);
+      const obj = { unreadCount: ReadStateStore.getUnreadCount(channel.id), oldestUnreadTimestamp };
+      const tmp = channel;
+      if (0 === oldestUnreadTimestamp) {
+        const obj2 = SnowflakeUtilsDefault;
+        oldestUnreadTimestamp = obj2.extractTimestamp(tmp.id);
+      }
+      return obj;
+    };
+    const items1 = [channel.id];
+    cResult[1] = channel.id;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp8 = items1;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp7, tmp8);
+  ({ unreadCount, oldestUnreadTimestamp } = stateFromStoresObject);
+  if (channel.isArchivedLockedThread()) {
+    let tmp25;
+    if (cResult[4] !== channel) {
+      const obj3 = { channel };
+      const tmp28 = closure_12(closure_16, obj3);
+      cResult[4] = channel;
+      cResult[5] = tmp28;
+      tmp25 = tmp28;
+    } else {
+      tmp25 = cResult[5];
+    }
+    tmp11 = tmp25;
+  } else if (channel.isLockedThread()) {
+    let tmp21;
+    if (cResult[6] !== channel) {
+      const obj4 = { channel };
+      const tmp24 = closure_12(closure_17, obj4);
+      cResult[6] = channel;
+      cResult[7] = tmp24;
+      tmp21 = tmp24;
+    } else {
+      tmp21 = cResult[7];
+    }
+    tmp11 = tmp21;
+  } else {
+    if (unreadCount > 0) {
+      if (obj2.includes(ChatOverlays.NEW_MESSAGES)) {
+        if (cResult[8] === channel) {
+          if (cResult[9] === handleScrollToNewMessages) {
+            if (cResult[10] === oldestUnreadTimestamp) {
+              let tmp17;
+              if (cResult[11] === unreadCount) {
+                tmp17 = cResult[12];
+              }
+              tmp11 = tmp17;
+            }
+          }
+        }
+        const obj5 = { unreadCount, oldestUnreadTimestamp, channel, handleScrollToNewMessages };
+        const tmp20 = closure_12(closure_18, obj5);
+        cResult[8] = channel;
+        cResult[9] = handleScrollToNewMessages;
+        cResult[10] = oldestUnreadTimestamp;
+        cResult[11] = unreadCount;
+        cResult[12] = tmp20;
+        tmp17 = tmp20;
+      }
+    }
+    tmp11 = null;
+    if (tmp4) {
+      tmp11 = null;
+      if (obj2.includes(ChatOverlays.OPT_IN_CHANNEL)) {
+        let tmp13;
+        if (cResult[13] !== channel) {
+          const obj6 = { channel };
+          const tmp16 = closure_12(closure_15, obj6);
+          cResult[13] = channel;
+          cResult[14] = tmp16;
+          tmp13 = tmp16;
+        } else {
+          tmp13 = cResult[14];
+        }
+        tmp11 = tmp13;
+      }
+    }
+  }
+  return tmp11;
+}) : ((channel) => {
   let oldestUnreadTimestamp;
   let tmp4;
   let unreadCount;
@@ -314,15 +187,15 @@ export default function ChatBanner(channel) {
   ({ unreadCount, oldestUnreadTimestamp } = stateFromStoresObject);
   if (channel.isArchivedLockedThread()) {
     const obj3 = { channel };
-    tmp4 = closure_12(ArchivedLockedThreadChatBanner, obj3);
+    tmp4 = closure_12(closure_16, obj3);
   } else if (channel.isLockedThread()) {
     const obj4 = { channel };
-    tmp4 = closure_12(LockedThreadChatBanner, obj4);
+    tmp4 = closure_12(closure_17, obj4);
   } else {
     if (unreadCount > 0) {
       if (obj.includes(ChatOverlays.NEW_MESSAGES)) {
         const obj5 = { unreadCount, oldestUnreadTimestamp, channel, handleScrollToNewMessages };
-        tmp4 = closure_12(NewMessagesChatBar, obj5);
+        tmp4 = closure_12(closure_18, obj5);
       }
     }
     tmp4 = null;
@@ -330,10 +203,827 @@ export default function ChatBanner(channel) {
       tmp4 = null;
       if (obj.includes(ChatOverlays.OPT_IN_CHANNEL)) {
         const obj6 = { channel };
-        tmp4 = closure_12(OptInChannelBanner, obj6);
+        tmp4 = closure_12(closure_15, obj6);
       }
     }
   }
   return tmp4;
-};
-export { OptInChannelBanner };
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let items1;
+  let tmp5;
+  let tmp6;
+  let tmp8;
+  const tmp = channel;
+  let obj = channel(576);
+  const cResult = obj.c(22);
+  channel = channel.channel;
+  const ctaProps = channel.ctaProps;
+  const topBorder = channel.topBorder;
+  const tmp4 = closure_14();
+  if (cResult[0] !== channel) {
+    const fn = function l() {
+      const obj = { banner_type: "channel_opt_in" };
+      const track = AnalyticsUtilsDefault.track;
+      const CHANNEL_BANNER_VIEWED = constants.CHANNEL_BANNER_VIEWED;
+      AnalyticsUtilsDefault;
+      const obj2 = AppAnalyticsUtils;
+      const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+      const obj3 = AppAnalyticsUtils;
+      const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+      track(CHANNEL_BANNER_VIEWED, obj);
+    };
+    const items = [channel];
+    cResult[0] = channel;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp6 = items;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+    tmp6 = cResult[2];
+  }
+  const effect = react.useEffect(tmp5, tmp6);
+  if (cResult[3] !== channel) {
+    const fn2 = function c() {
+      const obj = { banner_type: "channel_opt_in", cta_type: "add channel" };
+      const track = AnalyticsUtilsDefault.track;
+      const CHANNEL_BANNER_CTA_CLICKED = constants.CHANNEL_BANNER_CTA_CLICKED;
+      AnalyticsUtilsDefault;
+      const obj2 = AppAnalyticsUtils;
+      const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+      const obj3 = AppAnalyticsUtils;
+      const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+      track(CHANNEL_BANNER_CTA_CLICKED, obj);
+      const obj4 = OptInChannelsActionCreators;
+      const obj5 = { section: unpackModuleId.CHANNEL };
+      obj4.setOptInChannel(channel.guild_id, channel.id, true, obj5);
+    };
+    cResult[3] = channel;
+    cResult[4] = fn2;
+    tmp8 = fn2;
+  } else {
+    tmp8 = cResult[4];
+  }
+  let topBorder1 = null;
+  if (topBorder) {
+    topBorder1 = tmp4.topBorder;
+  }
+  if (cResult[5] === tmp4.optInChannelBannerContainer) {
+    let tmp10;
+    let tmp12;
+    let tmp14;
+    let tmp17;
+    if (cResult[6] === topBorder1) {
+      tmp10 = cResult[7];
+    }
+    const _Symbol = Symbol;
+    const optInChannelBannerText = tmp4.optInChannelBannerText;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(tmp(1127).t.iOWmmB);
+      cResult[8] = stringResult;
+      tmp12 = stringResult;
+    } else {
+      tmp12 = cResult[8];
+    }
+    if (cResult[9] !== tmp4.optInChannelBannerText) {
+      let obj2 = { lineClamp: 2, style: optInChannelBannerText, variant: "text-sm/semibold", children: tmp12 };
+      const tmp16 = closure_12(tmp(4833).Text, obj2);
+      cResult[9] = tmp4.optInChannelBannerText;
+      cResult[10] = tmp16;
+      tmp14 = tmp16;
+    } else {
+      tmp14 = cResult[10];
+    }
+    const _Symbol2 = Symbol;
+    const optInChannelBannerButtonContainer = tmp4.optInChannelBannerButtonContainer;
+    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl2 = tmp(1127).intl;
+      const stringResult1 = intl2.string(tmp(1127).t["TD/+zP"]);
+      cResult[11] = stringResult1;
+      tmp17 = stringResult1;
+    } else {
+      tmp17 = cResult[11];
+    }
+    if (cResult[12] === ctaProps) {
+      let tmp19;
+      if (cResult[13] === tmp8) {
+        tmp19 = cResult[14];
+      }
+      if (cResult[15] === tmp4.optInChannelBannerButtonContainer) {
+        let tmp25;
+        if (cResult[16] === tmp19) {
+          tmp25 = cResult[17];
+        }
+        if (cResult[18] === tmp25) {
+          if (cResult[19] === tmp10) {
+            let tmp29;
+            if (cResult[20] === tmp14) {
+              tmp29 = cResult[21];
+            }
+            return tmp29;
+          }
+        }
+        let obj3 = { style: tmp10, children: items1 };
+        items1 = [tmp14, tmp25];
+        const tmp32 = closure_13(closure_4, obj3);
+        cResult[18] = tmp25;
+        cResult[19] = tmp10;
+        cResult[20] = tmp14;
+        cResult[21] = tmp32;
+        tmp29 = tmp32;
+      }
+      let obj4 = { style: optInChannelBannerButtonContainer, children: tmp19 };
+      const tmp28 = closure_12(closure_4, obj4);
+      cResult[15] = tmp4.optInChannelBannerButtonContainer;
+      cResult[16] = tmp19;
+      cResult[17] = tmp28;
+      tmp25 = tmp28;
+    }
+    let obj5 = { onPress: tmp8, size: "sm", text: tmp17 };
+    const Button = tmp(5282).Button;
+    let merged = Object.assign(ctaProps);
+    const tmp24 = closure_12(Button, obj5);
+    cResult[12] = ctaProps;
+    cResult[13] = tmp8;
+    cResult[14] = tmp24;
+    tmp19 = tmp24;
+  }
+  const items2 = [tmp4.optInChannelBannerContainer, topBorder1];
+  cResult[5] = tmp4.optInChannelBannerContainer;
+  cResult[6] = topBorder1;
+  cResult[7] = items2;
+  tmp10 = items2;
+}) : ((channel) => {
+  let Button;
+  let intl;
+  let intl2;
+  let items3;
+  let obj4;
+  channel = channel.channel;
+  const ctaProps = channel.ctaProps;
+  const topBorder = channel.topBorder;
+  const tmp = closure_14();
+  const items = [channel];
+  const effect = react.useEffect(() => {
+    const obj = { banner_type: "channel_opt_in" };
+    const track = AnalyticsUtilsDefault.track;
+    const CHANNEL_BANNER_VIEWED = constants.CHANNEL_BANNER_VIEWED;
+    AnalyticsUtilsDefault;
+    const obj2 = AppAnalyticsUtils;
+    const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+    const obj3 = AppAnalyticsUtils;
+    const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+    track(CHANNEL_BANNER_VIEWED, obj);
+  }, items);
+  const items1 = [channel];
+  const items2 = [tmp.optInChannelBannerContainer, ];
+  let topBorder1 = null;
+  const callback = react.useCallback(() => {
+    const obj = { banner_type: "channel_opt_in", cta_type: "add channel" };
+    const track = AnalyticsUtilsDefault.track;
+    const CHANNEL_BANNER_CTA_CLICKED = constants.CHANNEL_BANNER_CTA_CLICKED;
+    AnalyticsUtilsDefault;
+    const obj2 = AppAnalyticsUtils;
+    const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+    const obj3 = AppAnalyticsUtils;
+    const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+    track(CHANNEL_BANNER_CTA_CLICKED, obj);
+    const obj4 = OptInChannelsActionCreators;
+    const obj5 = { section: unpackModuleId.CHANNEL };
+    obj4.setOptInChannel(channel.guild_id, channel.id, true, obj5);
+  }, items1);
+  const tmp4 = closure_13;
+  if (topBorder) {
+    topBorder1 = tmp.topBorder;
+  }
+  let obj = { style: items2, children: items3 };
+  items2[1] = topBorder1;
+  let obj2 = { lineClamp: 2, style: tmp.optInChannelBannerText, variant: "text-sm/semibold", children: intl.string(channel(1127).t.iOWmmB) };
+  const Text = channel(4833).Text;
+  intl = channel(1127).intl;
+  items3 = [closure_12(Text, obj2), ];
+  let obj3 = { style: tmp.optInChannelBannerButtonContainer, children: closure_12(Button, obj4) };
+  obj4 = { onPress: callback, size: "sm", text: intl2.string(channel(1127).t["TD/+zP"]) };
+  Button = channel(5282).Button;
+  let merged = Object.assign(ctaProps);
+  intl2 = channel(1127).intl;
+  items3[1] = closure_12(closure_4, obj3);
+  return tmp4(closure_4, obj);
+});
+let closure_15 = tmp7;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let Button;
+  let intl2;
+  let items1;
+  let obj4;
+  let tmp10;
+  let tmp5;
+  let tmp6;
+  let tmp8;
+  const tmp = channel;
+  let obj = channel(576);
+  const cResult = obj.c(18);
+  channel = channel.channel;
+  const tmp4 = closure_14();
+  if (cResult[0] !== channel) {
+    const fn = function l() {
+      const obj = { banner_type: "thread" };
+      const track = AnalyticsUtilsDefault.track;
+      const CHANNEL_BANNER_VIEWED = constants.CHANNEL_BANNER_VIEWED;
+      AnalyticsUtilsDefault;
+      const obj2 = AppAnalyticsUtils;
+      const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+      const obj3 = AppAnalyticsUtils;
+      const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+      track(CHANNEL_BANNER_VIEWED, obj);
+    };
+    const items = [channel];
+    cResult[0] = channel;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp6 = items;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+    tmp6 = cResult[2];
+  }
+  const effect = react.useEffect(tmp5, tmp6);
+  if (cResult[3] !== channel) {
+    const fn2 = function c() {
+      const obj = { banner_type: "thread", cta_type: "unarchive" };
+      const track = AnalyticsUtilsDefault.track;
+      const CHANNEL_BANNER_CTA_CLICKED = constants.CHANNEL_BANNER_CTA_CLICKED;
+      AnalyticsUtilsDefault;
+      const obj2 = AppAnalyticsUtils;
+      const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+      const obj3 = AppAnalyticsUtils;
+      const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+      track(CHANNEL_BANNER_CTA_CLICKED, obj);
+      const obj4 = ThreadActionCreatorsDefault;
+      obj4.unarchiveThread(channel, false);
+    };
+    cResult[3] = channel;
+    cResult[4] = fn2;
+    tmp8 = fn2;
+  } else {
+    tmp8 = cResult[4];
+  }
+  const tmpResult = tmp(6688);
+  const canUnarchiveThread = tmpResult.useCanUnarchiveThread(channel);
+  if (cResult[5] !== channel) {
+    let stringResult;
+    const isForumPostResult = channel.isForumPost();
+    const intl = tmp(1127).intl;
+    const string = intl.string;
+    const t = tmp(1127).t;
+    if (isForumPostResult) {
+      stringResult = string(t["833FDn"]);
+    } else {
+      stringResult = string(t.rEeodK);
+    }
+    cResult[5] = channel;
+    cResult[6] = stringResult;
+    tmp10 = stringResult;
+  } else {
+    tmp10 = cResult[6];
+  }
+  if (cResult[7] === tmp4.threadBannerTitle) {
+    let tmp13;
+    if (cResult[8] === tmp10) {
+      tmp13 = cResult[9];
+    }
+    if (cResult[10] === canUnarchiveThread) {
+      if (cResult[11] === tmp8) {
+        let tmp15;
+        if (cResult[12] === tmp4.threadBannerButton) {
+          tmp15 = cResult[13];
+        }
+        if (cResult[14] === tmp4.threadBannerContainer) {
+          if (cResult[15] === tmp13) {
+            let tmp19;
+            if (cResult[16] === tmp15) {
+              tmp19 = cResult[17];
+            }
+            return tmp19;
+          }
+        }
+        let obj2 = { style: tmp4.threadBannerContainer, children: items1 };
+        items1 = [tmp13, tmp15];
+        const tmp22 = closure_13(closure_4, obj2);
+        cResult[14] = tmp4.threadBannerContainer;
+        cResult[15] = tmp13;
+        cResult[16] = tmp15;
+        cResult[17] = tmp22;
+        tmp19 = tmp22;
+      }
+    }
+    let tmp16 = canUnarchiveThread;
+    if (tmp16) {
+      let obj3 = { style: tmp4.threadBannerButton, children: closure_12(Button, obj4) };
+      obj4 = { variant: "secondary", size: "sm", text: intl2.string(tmp(1127).t["0dvvEi"]), onPress: tmp8 };
+      Button = tmp(5282).Button;
+      intl2 = tmp(1127).intl;
+      tmp16 = closure_12(closure_4, obj3);
+    }
+    cResult[10] = canUnarchiveThread;
+    cResult[11] = tmp8;
+    cResult[12] = tmp4.threadBannerButton;
+    cResult[13] = tmp16;
+    tmp15 = tmp16;
+  }
+  const obj5 = { lineClamp: 4, style: tmp4.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: tmp10 };
+  const tmp14 = closure_12(tmp(4833).Text, obj5);
+  cResult[7] = tmp4.threadBannerTitle;
+  cResult[8] = tmp10;
+  cResult[9] = tmp14;
+  tmp13 = tmp14;
+}) : ((channel) => {
+  let Button;
+  let intl2;
+  let items1;
+  let obj5;
+  let stringResult;
+  channel = channel.channel;
+  const tmp = closure_14();
+  const items = [channel];
+  const effect = react.useEffect(() => {
+    const obj = { banner_type: "thread" };
+    const track = AnalyticsUtilsDefault.track;
+    const CHANNEL_BANNER_VIEWED = constants.CHANNEL_BANNER_VIEWED;
+    AnalyticsUtilsDefault;
+    const obj2 = AppAnalyticsUtils;
+    const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+    const obj3 = AppAnalyticsUtils;
+    const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+    track(CHANNEL_BANNER_VIEWED, obj);
+  }, items);
+  let obj = channel(6688);
+  let canUnarchiveThread = obj.useCanUnarchiveThread(channel);
+  let obj2 = { style: tmp.threadBannerContainer, children: items1 };
+  let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: stringResult };
+  const Text = channel(4833).Text;
+  const isForumPostResult = channel.isForumPost();
+  const intl = channel(1127).intl;
+  const string = intl.string;
+  const t = channel(1127).t;
+  const tmp6 = closure_13;
+  if (isForumPostResult) {
+    stringResult = string(t["833FDn"]);
+  } else {
+    stringResult = string(t.rEeodK);
+  }
+  items1 = [closure_12(Text, obj3), ];
+  if (canUnarchiveThread) {
+    let obj4 = { style: tmp.threadBannerButton, children: closure_12(Button, obj5) };
+    obj5 = {
+      variant: "secondary",
+      size: "sm",
+      text: intl2.string(channel(1127).t["0dvvEi"]),
+      onPress() {
+          const obj = { banner_type: "thread", cta_type: "unarchive" };
+          const track = AnalyticsUtilsDefault.track;
+          const CHANNEL_BANNER_CTA_CLICKED = constants.CHANNEL_BANNER_CTA_CLICKED;
+          AnalyticsUtilsDefault;
+          const obj2 = AppAnalyticsUtils;
+          const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+          const obj3 = AppAnalyticsUtils;
+          const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+          track(CHANNEL_BANNER_CTA_CLICKED, obj);
+          const obj4 = ThreadActionCreatorsDefault;
+          obj4.unarchiveThread(channel, false);
+        }
+    };
+    Button = tmp3(5282).Button;
+    intl2 = tmp3(1127).intl;
+    canUnarchiveThread = tmp8(tmp7, obj4);
+  }
+  items1[1] = canUnarchiveThread;
+  return tmp6(closure_4, obj2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let Button;
+  let intl2;
+  let items1;
+  let obj4;
+  let tmp10;
+  let tmp5;
+  let tmp6;
+  let tmp8;
+  const tmp = channel;
+  let obj = channel(576);
+  const cResult = obj.c(18);
+  channel = channel.channel;
+  const tmp4 = closure_14();
+  if (cResult[0] !== channel) {
+    const fn = function l() {
+      const obj = { banner_type: "thread" };
+      const track = AnalyticsUtilsDefault.track;
+      const CHANNEL_BANNER_VIEWED = constants.CHANNEL_BANNER_VIEWED;
+      AnalyticsUtilsDefault;
+      const obj2 = AppAnalyticsUtils;
+      const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+      const obj3 = AppAnalyticsUtils;
+      const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+      track(CHANNEL_BANNER_VIEWED, obj);
+    };
+    const items = [channel];
+    cResult[0] = channel;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp6 = items;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+    tmp6 = cResult[2];
+  }
+  const effect = react.useEffect(tmp5, tmp6);
+  if (cResult[3] !== channel) {
+    const fn2 = function c() {
+      const obj = { banner_type: "thread", cta_type: "unlock" };
+      const track = AnalyticsUtilsDefault.track;
+      const CHANNEL_BANNER_CTA_CLICKED = constants.CHANNEL_BANNER_CTA_CLICKED;
+      AnalyticsUtilsDefault;
+      const obj2 = AppAnalyticsUtils;
+      const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+      const obj3 = AppAnalyticsUtils;
+      const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+      track(CHANNEL_BANNER_CTA_CLICKED, obj);
+      const obj4 = ThreadActionCreatorsDefault;
+      obj4.unlockThread(channel);
+    };
+    cResult[3] = channel;
+    cResult[4] = fn2;
+    tmp8 = fn2;
+  } else {
+    tmp8 = cResult[4];
+  }
+  const tmpResult = tmp(6688);
+  const isThreadModerator = tmpResult.useIsThreadModerator(channel);
+  if (cResult[5] !== channel) {
+    let stringResult;
+    const isForumPostResult = channel.isForumPost();
+    const intl = tmp(1127).intl;
+    const string = intl.string;
+    const t = tmp(1127).t;
+    if (isForumPostResult) {
+      stringResult = string(t.E7oO8u);
+    } else {
+      stringResult = string(t["V/JF2N"]);
+    }
+    cResult[5] = channel;
+    cResult[6] = stringResult;
+    tmp10 = stringResult;
+  } else {
+    tmp10 = cResult[6];
+  }
+  if (cResult[7] === tmp4.threadBannerTitle) {
+    let tmp13;
+    if (cResult[8] === tmp10) {
+      tmp13 = cResult[9];
+    }
+    if (cResult[10] === tmp8) {
+      if (cResult[11] === isThreadModerator) {
+        let tmp15;
+        if (cResult[12] === tmp4.threadBannerButton) {
+          tmp15 = cResult[13];
+        }
+        if (cResult[14] === tmp4.threadBannerContainer) {
+          if (cResult[15] === tmp13) {
+            let tmp19;
+            if (cResult[16] === tmp15) {
+              tmp19 = cResult[17];
+            }
+            return tmp19;
+          }
+        }
+        let obj2 = { style: tmp4.threadBannerContainer, children: items1 };
+        items1 = [tmp13, tmp15];
+        const tmp22 = closure_13(closure_4, obj2);
+        cResult[14] = tmp4.threadBannerContainer;
+        cResult[15] = tmp13;
+        cResult[16] = tmp15;
+        cResult[17] = tmp22;
+        tmp19 = tmp22;
+      }
+    }
+    let tmp16 = isThreadModerator;
+    if (tmp16) {
+      let obj3 = { style: tmp4.threadBannerButton, children: closure_12(Button, obj4) };
+      obj4 = { variant: "secondary", size: "sm", text: intl2.string(tmp(1127).t.zA9d1J), onPress: tmp8 };
+      Button = tmp(5282).Button;
+      intl2 = tmp(1127).intl;
+      tmp16 = closure_12(closure_4, obj3);
+    }
+    cResult[10] = tmp8;
+    cResult[11] = isThreadModerator;
+    cResult[12] = tmp4.threadBannerButton;
+    cResult[13] = tmp16;
+    tmp15 = tmp16;
+  }
+  const obj5 = { lineClamp: 4, style: tmp4.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: tmp10 };
+  const tmp14 = closure_12(tmp(4833).Text, obj5);
+  cResult[7] = tmp4.threadBannerTitle;
+  cResult[8] = tmp10;
+  cResult[9] = tmp14;
+  tmp13 = tmp14;
+}) : ((channel) => {
+  let Button;
+  let intl2;
+  let items1;
+  let obj5;
+  let stringResult;
+  channel = channel.channel;
+  const tmp = closure_14();
+  const items = [channel];
+  const effect = react.useEffect(() => {
+    const obj = { banner_type: "thread" };
+    const track = AnalyticsUtilsDefault.track;
+    const CHANNEL_BANNER_VIEWED = constants.CHANNEL_BANNER_VIEWED;
+    AnalyticsUtilsDefault;
+    const obj2 = AppAnalyticsUtils;
+    const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+    const obj3 = AppAnalyticsUtils;
+    const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+    track(CHANNEL_BANNER_VIEWED, obj);
+  }, items);
+  let obj = channel(6688);
+  let isThreadModerator = obj.useIsThreadModerator(channel);
+  let obj2 = { style: tmp.threadBannerContainer, children: items1 };
+  let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: stringResult };
+  const Text = channel(4833).Text;
+  const isForumPostResult = channel.isForumPost();
+  const intl = channel(1127).intl;
+  const string = intl.string;
+  const t = channel(1127).t;
+  const tmp6 = closure_13;
+  if (isForumPostResult) {
+    stringResult = string(t.E7oO8u);
+  } else {
+    stringResult = string(t["V/JF2N"]);
+  }
+  items1 = [closure_12(Text, obj3), ];
+  if (isThreadModerator) {
+    let obj4 = { style: tmp.threadBannerButton, children: closure_12(Button, obj5) };
+    obj5 = {
+      variant: "secondary",
+      size: "sm",
+      text: intl2.string(channel(1127).t.zA9d1J),
+      onPress() {
+          const obj = { banner_type: "thread", cta_type: "unlock" };
+          const track = AnalyticsUtilsDefault.track;
+          const CHANNEL_BANNER_CTA_CLICKED = constants.CHANNEL_BANNER_CTA_CLICKED;
+          AnalyticsUtilsDefault;
+          const obj2 = AppAnalyticsUtils;
+          const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(channel.getGuildId()));
+          const obj3 = AppAnalyticsUtils;
+          const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
+          track(CHANNEL_BANNER_CTA_CLICKED, obj);
+          const obj4 = ThreadActionCreatorsDefault;
+          obj4.unlockThread(channel);
+        }
+    };
+    Button = tmp3(5282).Button;
+    intl2 = tmp3(1127).intl;
+    isThreadModerator = tmp8(tmp7, obj4);
+  }
+  items1[1] = isThreadModerator;
+  return tmp6(closure_4, obj2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let connected;
+  let handleScrollToNewMessages;
+  let items2;
+  let oldestUnreadTimestamp;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let unreadCount;
+  let obj = channel(576);
+  const cResult = obj.c(24);
+  channel = channel.channel;
+  ({ unreadCount, oldestUnreadTimestamp, handleScrollToNewMessages } = channel);
+  const tmp4 = closure_14();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GatewayConnectionStore];
+    const fn = function l() {
+      return connected.isConnected();
+    };
+    const items1 = [];
+    cResult[0] = items;
+    cResult[1] = fn;
+    cResult[2] = items1;
+    tmp5 = items;
+    tmp6 = fn;
+    tmp7 = items1;
+  } else {
+    [tmp5, tmp6, tmp7] = cResult;
+  }
+  const tmpResult = channel(504);
+  if (tmpResult.useStateFromStores(tmp5, tmp6, tmp7)) {
+    if (unreadCount <= 0) {
+      return null;
+    } else {
+      const isEstimatedResult = ReadStateStore.isEstimated(channel.id);
+      const t = tmp(1127).t;
+      const tmp9 = isEstimatedResult ? t.wvtbbG : t["BctFH/"];
+      if (cResult[3] === tmp9) {
+        if (cResult[4] === oldestUnreadTimestamp) {
+          let tmp12;
+          let tmp14;
+          if (cResult[5] === unreadCount) {
+            tmp12 = cResult[6];
+          }
+          if (cResult[7] !== tmp12) {
+            let obj2 = { variant: "text-sm/semibold", color: "text-overlay-light", children: tmp12 };
+            const tmp16 = closure_12(channel(4833).Text, obj2);
+            cResult[7] = tmp12;
+            cResult[8] = tmp16;
+            tmp14 = tmp16;
+          } else {
+            tmp14 = cResult[8];
+          }
+          if (cResult[9] === handleScrollToNewMessages) {
+            if (cResult[10] === tmp4.newMessageBarTextContainer) {
+              let tmp17;
+              let tmp20;
+              let tmp23;
+              if (cResult[11] === tmp14) {
+                tmp17 = cResult[12];
+              }
+              const _Symbol = Symbol;
+              const newMessageBarCloseButton = tmp4.newMessageBarCloseButton;
+              if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+                const intl2 = tmp(1127).intl;
+                const stringResult = intl2.string(channel(1127).t.e6RscS);
+                cResult[13] = stringResult;
+                tmp20 = stringResult;
+              } else {
+                tmp20 = cResult[13];
+              }
+              if (cResult[14] !== channel.id) {
+                class L {
+                  constructor() {
+                    const obj = ReadStateActionCreators;
+                    const obj2 = { section: unpackModuleId.NEW_MESSAGES_BANNER, object: constants.MARK_CHANNEL_AS_READ_BUTTON, objectType: metroImportAll.ACK_MANUAL };
+                    return obj.ack(channel.id, obj2);
+                  }
+                }
+                cResult[14] = channel.id;
+                cResult[15] = L;
+              } else {
+                class L {
+                  constructor() {
+                    const obj = ReadStateActionCreators;
+                    const obj2 = { section: unpackModuleId.NEW_MESSAGES_BANNER, object: constants.MARK_CHANNEL_AS_READ_BUTTON, objectType: metroImportAll.ACK_MANUAL };
+                    return obj.ack(channel.id, obj2);
+                  }
+                }
+              }
+              const _Symbol2 = Symbol;
+              if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+                class L {
+                  constructor() {
+                    const obj = ReadStateActionCreators;
+                    const obj2 = { section: unpackModuleId.NEW_MESSAGES_BANNER, object: constants.MARK_CHANNEL_AS_READ_BUTTON, objectType: metroImportAll.ACK_MANUAL };
+                    return obj.ack(channel.id, obj2);
+                  }
+                }
+                const obj3 = { size: "sm", color: nativeDefault.colors.WHITE };
+                const XSmallBoldIcon = tmp(7419).XSmallBoldIcon;
+                const tmp25 = closure_12(XSmallBoldIcon, obj3);
+                cResult[16] = tmp25;
+                tmp23 = tmp25;
+              } else {
+                class L {
+                  constructor() {
+                    const obj = ReadStateActionCreators;
+                    const obj2 = { section: unpackModuleId.NEW_MESSAGES_BANNER, object: constants.MARK_CHANNEL_AS_READ_BUTTON, objectType: metroImportAll.ACK_MANUAL };
+                    return obj.ack(channel.id, obj2);
+                  }
+                }
+              }
+              if (cResult[17] === tmp4.newMessageBarCloseButton) {
+                class L {
+                  constructor() {
+                    const obj = ReadStateActionCreators;
+                    const obj2 = { section: unpackModuleId.NEW_MESSAGES_BANNER, object: constants.MARK_CHANNEL_AS_READ_BUTTON, objectType: metroImportAll.ACK_MANUAL };
+                    return obj.ack(channel.id, obj2);
+                  }
+                }
+                if (cResult[20] === tmp4.newMessageBar) {
+                  class L {
+                    constructor() {
+                      const obj = ReadStateActionCreators;
+                      const obj2 = { section: unpackModuleId.NEW_MESSAGES_BANNER, object: constants.MARK_CHANNEL_AS_READ_BUTTON, objectType: metroImportAll.ACK_MANUAL };
+                      return obj.ack(channel.id, obj2);
+                    }
+                  }
+                }
+                const obj4 = { style: tmp10, children: items2 };
+                items2 = [tmp17, tmp26];
+                cResult[20] = tmp4.newMessageBar;
+                cResult[21] = tmp26;
+                cResult[22] = tmp17;
+                cResult[23] = closure_13(closure_4, obj4);
+                const tmp32 = closure_13(closure_4, obj4);
+              }
+              const obj5 = { style: newMessageBarCloseButton, accessibilityRole: "button", accessibilityLabel: tmp20, onPress: tmp22, children: tmp23 };
+              cResult[17] = tmp4.newMessageBarCloseButton;
+              cResult[18] = tmp22;
+              cResult[19] = closure_12(channel(5436).PressableOpacity, obj5);
+              const tmp28 = closure_12(channel(5436).PressableOpacity, obj5);
+            }
+          }
+          const obj6 = { accessibilityRole: "button", style: tmp11, onPress: handleScrollToNewMessages, children: tmp14 };
+          const tmp19 = closure_12(channel(5436).PressableOpacity, obj6);
+          cResult[9] = handleScrollToNewMessages;
+          cResult[10] = tmp4.newMessageBarTextContainer;
+          cResult[11] = tmp14;
+          cResult[12] = tmp19;
+          tmp17 = tmp19;
+        }
+      }
+      const intl = tmp(1127).intl;
+      const obj7 = { count: unreadCount, timestamp: oldestUnreadTimestamp };
+      const formatResult = intl.format(tmp9, obj7);
+      cResult[3] = tmp9;
+      cResult[4] = oldestUnreadTimestamp;
+      cResult[5] = unreadCount;
+      cResult[6] = formatResult;
+      tmp12 = formatResult;
+    }
+  } else {
+    class L {
+      constructor() {
+        const obj = ReadStateActionCreators;
+        const obj2 = { section: unpackModuleId.NEW_MESSAGES_BANNER, object: constants.MARK_CHANNEL_AS_READ_BUTTON, objectType: metroImportAll.ACK_MANUAL };
+        return obj.ack(channel.id, obj2);
+      }
+    }
+    return null;
+  }
+}) : ((channel) => {
+  let Text;
+  let XSmallBoldIcon;
+  let connected;
+  let handleScrollToNewMessages;
+  let intl;
+  let intl2;
+  let items1;
+  let obj4;
+  let obj5;
+  let obj7;
+  let oldestUnreadTimestamp;
+  channel = channel.channel;
+  const unreadCount = channel.unreadCount;
+  ({ oldestUnreadTimestamp, handleScrollToNewMessages } = channel);
+  const tmp = closure_14();
+  let obj = channel(504);
+  const items = [GatewayConnectionStore];
+  let tmp4 = null;
+  if (obj.useStateFromStores(items, () => connected.isConnected(), [])) {
+    let tmp5 = null;
+    if (unreadCount > 0) {
+      const isEstimatedResult = ReadStateStore.isEstimated(channel.id);
+      const t = tmp2(1127).t;
+      let obj2 = { style: tmp.newMessageBar, children: items1 };
+      const obj3 = { accessibilityRole: "button", style: tmp.newMessageBarTextContainer, onPress: handleScrollToNewMessages, children: closure_12(Text, obj4) };
+      const tmp8 = isEstimatedResult ? t.wvtbbG : t["BctFH/"];
+      const PressableOpacity = tmp2(5436).PressableOpacity;
+      obj4 = { variant: "text-sm/semibold", color: "text-overlay-light", children: intl.format(tmp8, obj5) };
+      Text = tmp2(4833).Text;
+      intl = tmp2(1127).intl;
+      obj5 = { count: unreadCount, timestamp: oldestUnreadTimestamp };
+      items1 = [closure_12(PressableOpacity, obj3), ];
+      const obj6 = {
+        style: tmp.newMessageBarCloseButton,
+        accessibilityRole: "button",
+        accessibilityLabel: intl2.string(channel(1127).t.e6RscS),
+        onPress() {
+              const obj = ReadStateActionCreators;
+              const obj2 = { section: unpackModuleId.NEW_MESSAGES_BANNER, object: constants.MARK_CHANNEL_AS_READ_BUTTON, objectType: metroImportAll.ACK_MANUAL };
+              return obj.ack(channel.id, obj2);
+            },
+        children: closure_12(XSmallBoldIcon, obj7)
+      };
+      const PressableOpacity2 = tmp2(5436).PressableOpacity;
+      intl2 = tmp2(1127).intl;
+      obj7 = { size: "sm", color: nativeDefault.colors.WHITE };
+      XSmallBoldIcon = tmp2(7419).XSmallBoldIcon;
+      items1[1] = closure_12(PressableOpacity2, obj6);
+      tmp5 = closure_13(closure_4, obj2);
+    }
+    tmp4 = tmp5;
+  }
+  return tmp4;
+});
+const result = size.fileFinishedImporting("modules/messages/native/ChatBanner.tsx");
+
+export default tmp6;
+export const OptInChannelBanner = tmp7;

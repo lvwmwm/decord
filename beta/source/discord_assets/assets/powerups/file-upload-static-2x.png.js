@@ -1,8 +1,8 @@
-// Module ID: 15809
-// Function ID: 15810
+// Module ID: 15808
+// Function ID: 15809
 // Dependencies: [2]
 
-// Module 15809
+// Module 15808
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/powerups/file-upload-static-2x.png.js");

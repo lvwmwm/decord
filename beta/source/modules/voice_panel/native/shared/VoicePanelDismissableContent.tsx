@@ -1,38 +1,178 @@
-// Module ID: 16923
-// Function ID: 16924
+// Module ID: 16852
+// Function ID: 16853
 // Name: VoicePanelDismissableContent
-// Dependencies: [32, 19, 4852, 11755, 4857, 21, 16924, 1981, 11754, 4566, 2029, 10088, 10089, 2]
+// Dependencies: [32, 19, 4853, 11648, 4858, 21, 16853, 1987, 558, 576, 11647, 4570, 2035, 10126, 10125, 2]
 
-// Module 16923 (VoicePanelDismissableContent)
+// Module 16852 (VoicePanelDismissableContent)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import CallConstants from "CallConstants" /* 4857 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11755 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import CallConstants from "CallConstants" /* 4858 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11648 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4853 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
+
 function VoiceControlsNuxActionSheetImporter() {
-  return asyncRequire(16924, dependencyMap.paths);
+  return asyncRequire(16853, dependencyMap.paths);
 }
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const isActivityParticipant = CallConstants.isActivityParticipant;
 const jsx = Fragment.jsx;
+const VoiceControlToggleNuxActionSheet = "VoiceControlToggleNuxActionSheet";
 const __initData = { code: "function VoicePanelDismissableContentTsx1(){const{mode,VoicePanelModes,focused}=this.__closure;var _focused$get;return mode.get()===VoicePanelModes.PANEL?(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id:undefined;}" };
 const __initData2 = { code: "function VoicePanelDismissableContentTsx2(manualId,previousManualId){const{runOnJS,handleFocusChange}=this.__closure;if(manualId!==previousManualId){runOnJS(handleFocusChange)(manualId);}}" };
-const memoResult = react.memo(function VoicePanelDismissibleContent() {
+const __initData3 = { code: "function VoicePanelDismissableContentTsx3(){const{mode,VoicePanelModes,focused}=this.__closure;var _focused$get;return mode.get()===VoicePanelModes.PANEL?(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id:undefined;}" };
+const __initData4 = { code: "function VoicePanelDismissableContentTsx4(manualId,previousManualId){const{runOnJS,handleFocusChange}=this.__closure;if(manualId!==previousManualId){runOnJS(handleFocusChange)(manualId);}}" };
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let focused;
+  let handleFocusChange;
+  let mode;
+  let tmp10;
+  let tmp11;
+  let tmp7;
+  let tmp9;
+  let tmp2 = mode;
+  let tmp = require;
+  let obj = require("react");
+  const cResult = obj.c(5);
+  const context = handleFocusChange.useContext(focused(mode[10]));
+  const tmp4 = focused;
+  ({ channelId: require, focused } = context);
+  mode = context.mode;
+  const tmp6 = _slicedToArray(handleFocusChange.useState(false), 2);
+  [tmp7, _slicedToArray] = tmp6;
+  handleFocusChange = function handleFocusChange(arg0) {
+    const tmp = null != arg0 && isActivityParticipant(ChannelRTCStore.getParticipant(require, arg0));
+    _slicedToArray(tmp);
+  };
+  const obj2 = require("ReanimatedRexport");
+  class I {
+    constructor() {
+      let tmp;
+      if (mode.get() === VoicePanelModes.PANEL) {
+        const value = focused.get();
+        let id;
+        if (value != null) {
+          id = value.id;
+        }
+        tmp = id;
+      }
+      return tmp;
+    }
+  }
+  const obj3 = { mode, VoicePanelModes, focused };
+  I.__closure = obj3;
+  I.__workletHash = 11330064461661;
+  I.__initData = __initData;
+  const fn = function h(arg0, arg1) {
+    if (arg0 !== arg1) {
+      const obj = ReanimatedRexport;
+      obj.runOnJS(handleFocusChange)(arg0);
+    }
+  };
+  fn.__closure = { runOnJS: require("ReanimatedRexport").runOnJS, handleFocusChange };
+  fn.__workletHash = 15579591345007;
+  fn.__initData = __initData2;
+  ({ runOnJS: require("ReanimatedRexport").runOnJS, handleFocusChange });
+  const animatedReaction = obj2.useAnimatedReaction(I, fn);
+  if (cResult[0] !== tmp7) {
+    let items1;
+    if (tmp7) {
+      const items = [tmp(tmp2[12]).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX];
+      items1 = items;
+    } else {
+      items1 = [];
+    }
+    cResult[0] = tmp7;
+    cResult[1] = items1;
+    tmp9 = items1;
+  } else {
+    tmp9 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class O {
+      constructor(arg0) {
+        let markAsDismissed;
+        let visibleContent;
+        ({ visibleContent, markAsDismissed } = arg0);
+        let tmp3 = null;
+        const tmp = require;
+        const tmp2 = mode;
+        if (visibleContent === require("dismissible_content").DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX) {
+          tmp3 = jsx(tmp(tmp2[13]).DismissibleActionSheet, { markAsDismissed, importer, actionSheetKey });
+        }
+        return tmp3;
+      }
+    }
+    cResult[2] = O;
+    tmp10 = O;
+  } else {
+    class O {
+      constructor(arg0) {
+        let markAsDismissed;
+        let visibleContent;
+        ({ visibleContent, markAsDismissed } = arg0);
+        let tmp3 = null;
+        const tmp = require;
+        const tmp2 = mode;
+        if (visibleContent === require("dismissible_content").DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX) {
+          tmp3 = jsx(tmp(tmp2[13]).DismissibleActionSheet, { markAsDismissed, importer, actionSheetKey });
+        }
+        return tmp3;
+      }
+    }
+  }
+  if (cResult[3] !== tmp9) {
+    class O {
+      constructor(arg0) {
+        let markAsDismissed;
+        let visibleContent;
+        ({ visibleContent, markAsDismissed } = arg0);
+        let tmp3 = null;
+        const tmp = require;
+        const tmp2 = mode;
+        if (visibleContent === require("dismissible_content").DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX) {
+          tmp3 = jsx(tmp(tmp2[13]).DismissibleActionSheet, { markAsDismissed, importer, actionSheetKey });
+        }
+        return tmp3;
+      }
+    }
+    const tmp12 = jsx(tmp4(tmp2[14]), { contentTypes: tmp9, children: tmp10 });
+    cResult[3] = tmp9;
+    cResult[4] = tmp12;
+    tmp11 = tmp12;
+  } else {
+    class O {
+      constructor(arg0) {
+        let markAsDismissed;
+        let visibleContent;
+        ({ visibleContent, markAsDismissed } = arg0);
+        let tmp3 = null;
+        const tmp = require;
+        const tmp2 = mode;
+        if (visibleContent === require("dismissible_content").DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX) {
+          tmp3 = jsx(tmp(tmp2[13]).DismissibleActionSheet, { markAsDismissed, importer, actionSheetKey });
+        }
+        return tmp3;
+      }
+    }
+  }
+  return tmp11;
+}) : (() => {
   let closure_3;
   let first;
   let focused;
   let handleFocusChange;
-  let importer;
   let items2;
   let mode;
   let tmp2 = mode;
   let tmp = focused;
-  const context = handleFocusChange.useContext(focused(mode[8]));
+  const context = handleFocusChange.useContext(focused(mode[10]));
   const channelId = context.channelId;
   focused = context.focused;
   mode = context.mode;
@@ -42,8 +182,8 @@ const memoResult = react.memo(function VoicePanelDismissibleContent() {
     const tmp = null != arg0 && isActivityParticipant(ChannelRTCStore.getParticipant(channelId, arg0));
     closure_3(tmp);
   }, items);
-  let obj = channelId(mode[9]);
-  const fn = function h() {
+  let obj = channelId(mode[11]);
+  const fn = function f() {
     let tmp;
     if (mode.get() === VoicePanelModes.PANEL) {
       const value = focused.get();
@@ -57,27 +197,27 @@ const memoResult = react.memo(function VoicePanelDismissibleContent() {
   };
   const obj2 = { mode, VoicePanelModes, focused };
   fn.__closure = obj2;
-  fn.__workletHash = 11330064461661;
-  fn.__initData = __initData;
-  const fn2 = function f(arg0, arg1) {
+  fn.__workletHash = 6904572530271;
+  fn.__initData = __initData3;
+  const fn2 = function _(arg0, arg1) {
     if (arg0 !== arg1) {
       const obj = ReanimatedRexport;
       obj.runOnJS(callback)(arg0);
     }
   };
-  fn2.__closure = { runOnJS: channelId(mode[9]).runOnJS, handleFocusChange };
-  fn2.__workletHash = 15579591345007;
-  fn2.__initData = __initData2;
-  ({ runOnJS: channelId(mode[9]).runOnJS, handleFocusChange });
+  fn2.__closure = { runOnJS: channelId(mode[11]).runOnJS, handleFocusChange };
+  fn2.__workletHash = 1489576347241;
+  fn2.__initData = __initData4;
+  ({ runOnJS: channelId(mode[11]).runOnJS, handleFocusChange });
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
   const tmp7 = channelId;
   if (first) {
-    const items1 = [tmp7(tmp2[10]).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX];
+    const items1 = [tmp7(tmp2[12]).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX];
     items2 = items1;
   } else {
     items2 = [];
   }
-  return jsx(tmp(tmp2[11]), {
+  return jsx(tmp(tmp2[14]), {
     contentTypes: items2,
     children(arg0) {
       let markAsDismissed;
@@ -86,13 +226,13 @@ const memoResult = react.memo(function VoicePanelDismissibleContent() {
       let tmp3 = null;
       const tmp = channelId;
       const tmp2 = mode;
-      if (visibleContent === channelId(mode[10]).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX) {
-        tmp3 = jsx(tmp(tmp2[12]).DismissibleActionSheet, { markAsDismissed, importer, actionSheetKey: "VoiceControlToggleNuxActionSheet" });
+      if (visibleContent === channelId(mode[12]).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX) {
+        tmp3 = jsx(tmp(tmp2[13]).DismissibleActionSheet, { markAsDismissed, importer, actionSheetKey });
       }
       return tmp3;
     }
   });
-});
+}));
 const result = size.fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelDismissableContent.tsx");
 
 export default memoResult;

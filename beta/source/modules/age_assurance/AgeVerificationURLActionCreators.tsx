@@ -1,15 +1,15 @@
-// Module ID: 7866
-// Function ID: 7867
+// Module ID: 7870
+// Function ID: 7871
 // Name: AgeVerificationURLActionCreators
-// Dependencies: [5, 502, 7860, 1074, 7867, 1271, 573, 2]
+// Dependencies: [5, 502, 7864, 1086, 7871, 1283, 585, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestAgeVerificationV2, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 7866 (AgeVerificationURLActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 7860 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7867 */;
+// Module 7870 (AgeVerificationURLActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 7864 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7871 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let obj = function _requestAgeVerification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ let obj = function _requestAgeVerification() {
               ({ method: c0, classificationId: c1, vendor: c2 } = closure_0);
               c3 = 1;
               c4 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -217,7 +217,7 @@ obj = function _requestAgeVerificationV() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -294,7 +294,7 @@ obj = function _initiateSuspendedUserAgeVerification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -314,7 +314,7 @@ obj = function _initiateSuspendedUserAgeVerification() {
               token = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -369,7 +369,7 @@ obj = function _registerIncodeInterview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -398,7 +398,7 @@ obj = function _registerIncodeInterview() {
             return { value, done: true };
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c1 = 3;
@@ -422,7 +422,7 @@ obj = function _requestIncodeSessionBootstrap() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -445,7 +445,7 @@ obj = function _requestIncodeSessionBootstrap() {
             }
             c3 = 1;
             c4 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {

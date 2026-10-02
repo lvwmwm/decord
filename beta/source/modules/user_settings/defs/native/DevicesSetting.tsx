@@ -1,13 +1,13 @@
-// Module ID: 14481
-// Function ID: 14482
+// Module ID: 14469
+// Function ID: 14470
 // Name: DevicesSetting
-// Dependencies: [1074, 11006, 1115, 14482, 14484, 2]
+// Dependencies: [1086, 10874, 1127, 14470, 14472, 2]
 
-// Module 14481 (DevicesSetting)
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import LaptopPhoneIcon from "LaptopPhoneIcon" /* 14482 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 14469 (DevicesSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import LaptopPhoneIcon from "LaptopPhoneIcon" /* 14470 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,38 +1,38 @@
-// Module ID: 13039
-// Function ID: 13040
+// Module ID: 13041
+// Function ID: 13042
 // Name: UserSettingsPremiumGuildSubscriptions
-// Dependencies: [19, 17, 1372, 4490, 4729, 4493, 4494, 1074, 1374, 21, 4836, 5753, 4540, 4732, 6675, 5174, 6411, 6416, 4832, 1115, 2111, 13040, 1380, 13054, 13056, 13058, 13062, 12939, 6813, 7509, 13001, 504, 1485, 6824, 1610, 2]
-// Exports: default
+// Dependencies: [19, 17, 1378, 4493, 4731, 4496, 4497, 1086, 1380, 21, 4837, 5754, 4544, 4734, 6676, 5175, 6411, 6416, 4833, 1127, 2114, 13042, 1386, 13056, 13058, 13060, 13064, 558, 576, 12941, 6814, 7513, 13003, 504, 1491, 6825, 1616, 2]
 
-// Module 13039 (UserSettingsPremiumGuildSubscriptions)
-import intl3 from "intl" /* 1115 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import user from "user" /* 1380 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import native from "native" /* 4540 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 4732 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5174 */;
-import LegacyTokens from "LegacyTokens" /* 5753 */;
+// Module 13041 (UserSettingsPremiumGuildSubscriptions)
+import intl3 from "intl" /* 1127 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import user from "user" /* 1386 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import native from "native" /* 4544 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 4734 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5175 */;
+import LegacyTokens from "LegacyTokens" /* 5754 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6675 */;
-import BoostingUnavailablePillDefault from "BoostingUnavailablePill" /* 13054 */;
-import BoostingCountDownPillDefault from "BoostingCountDownPill" /* 13056 */;
-import GuildBoostingUpsellDefault from "GuildBoostingUpsell" /* 13062 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6676 */;
+import BoostingUnavailablePillDefault from "BoostingUnavailablePill" /* 13056 */;
+import BoostingCountDownPillDefault from "BoostingCountDownPill" /* 13058 */;
+import GuildBoostingUpsellDefault from "GuildBoostingUpsell" /* 13064 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1372 */;
-import BillingInfoStore from "BillingInfoStore" /* 4490 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4729 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4493 */;
-import SubscriptionStore from "SubscriptionStore" /* 4494 */;
-import Constants from "Constants" /* 1074 */;
+import UserStore from "UserStore" /* 1378 */;
+import BillingInfoStore from "BillingInfoStore" /* 4493 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4731 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4496 */;
+import SubscriptionStore from "SubscriptionStore" /* 4497 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, dependencyMap, navigation;
+let _require, dependencyMap, navigation, route;
 
 let closure_12;
 let closure_14;
@@ -42,7 +42,7 @@ let hasOwnProperty;
 let obj2;
 let tmp2;
 let unpackModuleId;
-const TopPattern = tmp2(13058);
+const TopPattern = tmp2(13060);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 ({ HelpdeskArticles: unpackModuleId, UserSettingsSections: closure_12 } = Constants);
 const FractionalPremiumStates = PremiumConstants.FractionalPremiumStates;
@@ -126,11 +126,11 @@ class UserSettingsPremiumGuildSubscriptions extends PureComponent {
       const tmp9 = importDefault;
       if (tmp6Result) {
         const obj6 = { style: tmp.externalManagement, variant: "text-sm/medium", color: "text-default", children: externalManagementMessage };
-        tmp6Result = tmp6(tmp7(4832).Text, obj6);
+        tmp6Result = tmp6(tmp7(4833).Text, obj6);
       }
       const obj7 = { children: items2 };
       items1[2] = tmp6Result;
-      items2 = [closure_15(tmp5, obj), authStore2(tmp9(13040), {})];
+      items2 = [closure_15(tmp5, obj), authStore2(tmp9(13042), {})];
       tmp3Result = tmp3(Fragment, obj7);
     }
     return tmp3Result;
@@ -181,9 +181,154 @@ class UserSettingsPremiumGuildSubscriptions extends PureComponent {
 }
 const prototype = UserSettingsPremiumGuildSubscriptions.prototype;
 UserSettingsPremiumGuildSubscriptions.contextType = native.ThemeContext;
-let result = size.fileFinishedImporting("modules/user_settings/premium/native/UserSettingsPremiumGuildSubscriptions.tsx");
-
-export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
+  let first;
+  let fractionalState;
+  let premiumTypeSubscription;
+  let subscriptionPlansLoaded;
+  let tmp10;
+  let obj = subscriptionPlansLoaded(fractionalState[28]);
+  const cResult = obj.c(18);
+  route = route.route;
+  const obj2 = subscriptionPlansLoaded(fractionalState[29]);
+  subscriptionPlansLoaded = obj2.useSubscriptionPlansLoaded();
+  let flag;
+  if (route != null) {
+    const params = route.params;
+    if (params != null) {
+      flag = params.shouldFetchSubscriptionPlans;
+    }
+  }
+  if (flag == null) {
+    flag = true;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { forceFetch: true };
+    cResult[0] = obj3;
+    first = obj3;
+  } else {
+    first = cResult[0];
+  }
+  const tmp6 = flag(fractionalState[30])(first);
+  fractionalState = tmp6.fractionalState;
+  const endsAt = tmp6.endsAt;
+  const tmpResult = subscriptionPlansLoaded(fractionalState[31]);
+  const isInReverseTrial = tmpResult.useIsInReverseTrial();
+  const tmp8 = flag(fractionalState[32]);
+  const tmp8Result = tmp8(endsAt, subscriptionPlansLoaded(fractionalState[32]).CountDownMessageTypes.LONG_TIME_LEFT);
+  const fpDurationText = tmp8Result;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildBoostSlotStore, BillingInfoStore, SubscriptionPlanStore, UserStore];
+    cResult[1] = items;
+    tmp10 = items;
+  } else {
+    tmp10 = cResult[1];
+  }
+  if (cResult[2] === tmp8Result) {
+    if (cResult[3] === fractionalState) {
+      if (cResult[4] === subscriptionPlansLoaded) {
+        if (cResult[5] === isInReverseTrial) {
+          let tmp15;
+          let tmp18;
+          let tmp17;
+          let tmp22;
+          let tmp24;
+          if (cResult[6] === flag) {
+            tmp15 = cResult[7];
+          }
+          const tmpResult6 = subscriptionPlansLoaded(fractionalState[33]);
+          const stateFromStoresObject = tmpResult6.useStateFromStoresObject(tmp10, tmp15);
+          const _Symbol = Symbol;
+          if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+            const items1 = [SubscriptionStore];
+            class I {
+              constructor() {
+                return premiumTypeSubscription.getPremiumTypeSubscription();
+              }
+            }
+            cResult[8] = items1;
+            cResult[9] = I;
+            tmp18 = I;
+            tmp17 = items1;
+          } else {
+            tmp17 = cResult[8];
+            tmp18 = cResult[9];
+          }
+          const tmpResult7 = subscriptionPlansLoaded(fractionalState[33]);
+          const stateFromStores = tmpResult7.useStateFromStores(tmp17, tmp18);
+          const tmpResult8 = subscriptionPlansLoaded(fractionalState[34]);
+          navigation = tmpResult8.useNavigation();
+          if (cResult[10] !== stateFromStores) {
+            const tmpResult9 = subscriptionPlansLoaded(fractionalState[35]);
+            const externalManagementMessage = tmpResult9.getExternalManagementMessage(stateFromStores, { shouldAllowExternalManagement: true });
+            class I {
+              constructor() {
+                return premiumTypeSubscription.getPremiumTypeSubscription();
+              }
+            }
+            cResult[11] = externalManagementMessage;
+            tmp22 = externalManagementMessage;
+          } else {
+            tmp22 = cResult[11];
+          }
+          if (cResult[12] !== tmp22) {
+            let tmp25 = null;
+            const tmpResult10 = subscriptionPlansLoaded(fractionalState[36]);
+            if (tmpResult10.isMetaQuest()) {
+              tmp25 = tmp22;
+            }
+            class I {
+              constructor() {
+                return premiumTypeSubscription.getPremiumTypeSubscription();
+              }
+            }
+            cResult[12] = tmp22;
+            cResult[13] = tmp25;
+            tmp24 = tmp25;
+          } else {
+            tmp24 = cResult[13];
+          }
+          if (cResult[14] === navigation) {
+            if (cResult[15] === stateFromStoresObject) {
+              let tmp26;
+              if (cResult[16] === tmp24) {
+                tmp26 = cResult[17];
+              }
+              return tmp26;
+            }
+          }
+          const obj4 = { navigation, externalManagementMessage: tmp24 };
+          const merged = Object.assign(stateFromStoresObject);
+          const tmp32 = closure_14(UserSettingsPremiumGuildSubscriptions, obj4);
+          cResult[14] = navigation;
+          cResult[15] = stateFromStoresObject;
+          cResult[16] = tmp24;
+          cResult[17] = tmp32;
+          tmp26 = tmp32;
+        }
+      }
+    }
+  }
+  const fn = function v() {
+    let premiumGroupRole;
+    let values;
+    const obj = { hasFetchedSlots: GuildBoostSlotStore.hasFetched, hasSlots: Object.keys(GuildBoostSlotStore.boostSlots).length > 0, hasAvailableSlots: values.filter((isAvailable) => isAvailable.isAvailable()).length > 0, hasFetchedSubscriptionPlans: subscriptionPlansLoaded, isFetchingSubscriptionPlans: SubscriptionPlanStore.isFetchingForPremiumSKUs(), isFetchingPaymentSources: BillingInfoStore.isPaymentSourceFetching, shouldFetchSubscriptionPlans: flag, fractionalState, isInReverseTrial, fpDurationText, premiumGroupRole };
+    values = Object.values(GuildBoostSlotStore.boostSlots);
+    premiumGroupRole = undefined;
+    const currentUser = UserStore.getCurrentUser();
+    if (currentUser != null) {
+      premiumGroupRole = currentUser.premiumGroupRole;
+    }
+    return obj;
+  };
+  cResult[2] = tmp8Result;
+  cResult[3] = fractionalState;
+  cResult[4] = subscriptionPlansLoaded;
+  cResult[5] = isInReverseTrial;
+  cResult[6] = flag;
+  cResult[7] = fn;
+  tmp15 = fn;
+}) : ((route) => {
   let c2;
   let endsAt;
   let fractionalState;
@@ -207,12 +352,12 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
   if (flag == null) {
     flag = true;
   }
-  ({ fractionalState: c2, endsAt } = flag(6813)({ forceFetch: true }));
-  flag(6813)({ forceFetch: true });
+  ({ fractionalState: c2, endsAt } = flag(6814)({ forceFetch: true }));
+  flag(6814)({ forceFetch: true });
   const tmpResult = require("ReverseTrialUtils");
   isInReverseTrial = tmpResult.useIsInReverseTrial();
-  const tmp4 = flag(13001);
-  fpDurationText = tmp4(endsAt, tmp(13001).CountDownMessageTypes.LONG_TIME_LEFT);
+  const tmp4 = flag(13003);
+  fpDurationText = tmp4(endsAt, tmp(13003).CountDownMessageTypes.LONG_TIME_LEFT);
   const items = [GuildBoostSlotStore, BillingInfoStore, SubscriptionPlanStore, UserStore];
   const tmpResult6 = require("get initialized");
   const stateFromStoresObject = tmpResult6.useStateFromStoresObject(items, () => {
@@ -244,4 +389,7 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
   }
   const merged = Object.assign(stateFromStoresObject);
   return tmp9(tmp10, obj2);
-};
+});
+let result = size.fileFinishedImporting("modules/user_settings/premium/native/UserSettingsPremiumGuildSubscriptions.tsx");
+
+export default tmp6;

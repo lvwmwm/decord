@@ -1,13 +1,13 @@
-// Module ID: 7794
-// Function ID: 7795
+// Module ID: 7798
+// Function ID: 7799
 // Name: GuildAffinitiesActionCreators
-// Dependencies: [1074, 1271, 573, 2]
+// Dependencies: [1086, 1283, 585, 2]
 // Exports: fetchGuildAffinities
 
-// Module 7794 (GuildAffinitiesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 7798 (GuildAffinitiesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

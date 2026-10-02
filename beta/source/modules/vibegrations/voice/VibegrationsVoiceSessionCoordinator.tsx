@@ -1,24 +1,24 @@
-// Module ID: 14020
-// Function ID: 14021
+// Module ID: 14022
+// Function ID: 14023
 // Name: VibegrationsVoiceSessionCoordinator
-// Dependencies: [14021, 8499, 502, 1993, 4859, 1372, 4855, 1074, 4861, 8770, 13371, 1255, 9104, 14022, 14023, 2]
+// Dependencies: [14023, 8496, 502, 1999, 4860, 1378, 4856, 1086, 4862, 8765, 13373, 1267, 9081, 14024, 14025, 2]
 
-// Module 14020 (VibegrationsVoiceSessionCoordinator)
-import Constants2 from "Constants" /* 1074 */;
-import v1 from "v1" /* 1255 */;
-import RPCErrorDefault from "RPCError" /* 8770 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13371 */;
-import VibegrationsVoiceGeometry from "VibegrationsVoiceGeometry" /* 14022 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14023 */;
-import FrameVisibilityStore from "FrameVisibilityStore" /* 14021 */;
-import FramesStore from "FramesStore" /* 8499 */;
+// Module 14022 (VibegrationsVoiceSessionCoordinator)
+import Constants2 from "Constants" /* 1086 */;
+import v1 from "v1" /* 1267 */;
+import RPCErrorDefault from "RPCError" /* 8765 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9081 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13373 */;
+import VibegrationsVoiceGeometry from "VibegrationsVoiceGeometry" /* 14024 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14025 */;
+import FrameVisibilityStore from "FrameVisibilityStore" /* 14023 */;
+import FramesStore from "FramesStore" /* 8496 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
-import Constants from "Constants" /* 4861 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import UserStore from "UserStore" /* 1378 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import Constants from "Constants" /* 4862 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, set, user, user_id;

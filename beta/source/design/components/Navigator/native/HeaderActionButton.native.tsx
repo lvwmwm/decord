@@ -1,18 +1,20 @@
-// Module ID: 6795
-// Function ID: 6796
+// Module ID: 6796
+// Function ID: 6797
 // Name: HeaderActionButton
-// Dependencies: [19, 1181, 21, 4836, 576, 4832, 5286, 5283, 5435, 2]
+// Dependencies: [19, 1193, 21, 4837, 588, 558, 576, 4833, 5287, 5284, 5436, 2]
 
-// Module 6795 (HeaderActionButton)
-import nativeDefault from "native" /* 576 */;
-import FormConstants from "FormConstants" /* 1181 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import IconDefault from "Icon" /* 5283 */;
-import ButtonConstants from "ButtonConstants" /* 5286 */;
-import Pressables from "Pressables" /* 5435 */;
+// Module 6796 (HeaderActionButton)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import FormConstants from "FormConstants" /* 1193 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import IconDefault from "Icon" /* 5284 */;
+import ButtonConstants from "ButtonConstants" /* 5287 */;
+import Pressables from "Pressables" /* 5436 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -23,7 +25,156 @@ const ANDROID_FOREGROUND_RIPPLE = FormConstants.ANDROID_FOREGROUND_RIPPLE;
 let obj = { button: { alignSelf: "stretch", alignItems: "center", justifyContent: "center", flexDirection: "row" }, text: obj2, buttonFont: { fontSize: 16, maxWidth: 80 }, buttonDisabled: { opacity: 0.6 } };
 obj2 = { color: nativeDefault.colors.TEXT_BRAND, textTransform: "capitalize" };
 let closure_6 = createStyles.createStyles(obj);
-const forwardRefResult = react.forwardRef((arg0, ref) => {
+const forwardRef = react.forwardRef;
+const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((foregroundRipple, ref) => {
+  let IconComponent;
+  let IconComponentSize;
+  let accessibilityActions;
+  let accessibilityHint;
+  let accessibilityLabel;
+  let disabled;
+  let hitSlop;
+  let icon;
+  let iconSize;
+  let imageStyle;
+  let items1;
+  let onAccessibilityAction;
+  let onPress;
+  let source;
+  let style;
+  let text;
+  let textStyle;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(31);
+  ({ style, textStyle, imageStyle, text, source, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, icon, IconComponent, IconComponentSize, onPress, disabled, iconSize, hitSlop } = foregroundRipple);
+  foregroundRipple = foregroundRipple.foregroundRipple;
+  const tmp4 = closure_6();
+  if (null != text) {
+    if (cResult[0] === tmp4.buttonFont) {
+      if (cResult[1] === tmp4.text) {
+        let tmp13;
+        if (cResult[2] === textStyle) {
+          tmp13 = cResult[3];
+        }
+        if (cResult[4] === tmp13) {
+          let tmp14;
+          if (cResult[5] === text) {
+            tmp14 = cResult[6];
+          }
+          tmp9 = tmp14;
+        }
+        const obj2 = { style: tmp13, variant: "text-md/semibold", lineClamp: 1, maxFontSizeMultiplier: ButtonConstants.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER, children: text };
+        const Text = tmp(4833).Text;
+        const tmp16 = React3(Text, obj2);
+        cResult[4] = tmp13;
+        cResult[5] = text;
+        cResult[6] = tmp16;
+        tmp14 = tmp16;
+      }
+    }
+    const items = [, , ];
+    ({ text: arr[0], buttonFont: arr[1] } = tmp4);
+    items[2] = textStyle;
+    cResult[0] = tmp4.buttonFont;
+    cResult[1] = tmp4.text;
+    cResult[2] = textStyle;
+    cResult[3] = items;
+    tmp13 = items;
+  } else if (null != IconComponent) {
+    if (cResult[7] === IconComponent) {
+      let tmp10;
+      if (cResult[8] === IconComponentSize) {
+        tmp10 = cResult[9];
+      }
+      tmp9 = tmp10;
+    }
+    const obj3 = { size: IconComponentSize };
+    const tmp12 = React3(IconComponent, obj3);
+    cResult[7] = IconComponent;
+    cResult[8] = IconComponentSize;
+    cResult[9] = tmp12;
+    tmp10 = tmp12;
+  } else if (null != source) {
+    if (cResult[10] === iconSize) {
+      if (cResult[11] === imageStyle) {
+        let tmp5;
+        if (cResult[12] === source) {
+          tmp5 = cResult[13];
+        }
+        tmp9 = tmp5;
+      }
+    }
+    const obj4 = { source, style: imageStyle, size: iconSize };
+    const tmp8 = React3(IconDefault, obj4);
+    cResult[10] = iconSize;
+    cResult[11] = imageStyle;
+    cResult[12] = source;
+    cResult[13] = tmp8;
+    tmp5 = tmp8;
+  }
+  if (accessibilityLabel == null) {
+    accessibilityLabel = text;
+  }
+  if (cResult[14] === style) {
+    if (cResult[15] === tmp4.button) {
+      let tmp19;
+      if (cResult[16] === (disabled && tmp4.buttonDisabled)) {
+        tmp19 = cResult[17];
+      }
+      if (cResult[18] === accessibilityActions) {
+        if (cResult[19] === accessibilityHint) {
+          if (cResult[20] === tmp9) {
+            if (cResult[21] === disabled) {
+              if (cResult[22] === hitSlop) {
+                if (cResult[23] === icon) {
+                  if (cResult[24] === onAccessibilityAction) {
+                    if (cResult[25] === onPress) {
+                      if (cResult[26] === ref) {
+                        if (cResult[27] === accessibilityLabel) {
+                          if (cResult[28] === tmp17) {
+                            let tmp21;
+                            if (cResult[29] === tmp19) {
+                              tmp21 = cResult[30];
+                            }
+                            return tmp21;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      const obj5 = { ref, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, accessibilityRole: "button", onPress, activeOpacity: 0.6, androidRippleConfig: tmp17, style: tmp19, hitSlop, disabled, children: items1 };
+      items1 = [tmp9, icon];
+      const tmp23 = hasOwnProperty(Pressables.PressableOpacity, obj5);
+      cResult[18] = accessibilityActions;
+      cResult[19] = accessibilityHint;
+      cResult[20] = tmp9;
+      cResult[21] = disabled;
+      cResult[22] = hitSlop;
+      cResult[23] = icon;
+      cResult[24] = onAccessibilityAction;
+      cResult[25] = onPress;
+      cResult[26] = ref;
+      cResult[27] = accessibilityLabel;
+      cResult[28] = tmp17;
+      cResult[29] = tmp19;
+      cResult[30] = tmp23;
+      tmp21 = tmp23;
+    }
+  }
+  const items2 = [tmp4.button, style, disabled && tmp4.buttonDisabled];
+  cResult[14] = style;
+  cResult[15] = tmp4.button;
+  cResult[16] = disabled && tmp4.buttonDisabled;
+  cResult[17] = items2;
+  tmp19 = items2;
+}) : ((arg0, ref) => {
   let IconComponent;
   let IconComponentSize;
   let accessibilityActions;
@@ -76,7 +227,7 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
   items1 = [tmp.button, style, disabled && tmp.buttonDisabled];
   items2 = [tmp2, icon];
   return tmp10(PressableOpacity, obj4);
-});
+}));
 const result = size.fileFinishedImporting("design/components/Navigator/native/HeaderActionButton.native.tsx");
 
 export const HeaderActionButton = forwardRefResult;

@@ -1,20 +1,21 @@
-// Module ID: 8059
-// Function ID: 8060
+// Module ID: 8063
+// Function ID: 8064
 // Name: FormDivider
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 4540, 6605, 4683, 5998, 2]
-// Exports: default
+// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 4544, 6606, 4685, 5996, 2]
 
-// Module 8059 (FormDivider)
+// Module 8063 (FormDivider)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import native from "native" /* 4540 */;
-import ColorUtils from "ColorUtils" /* 4683 */;
-import RedesignCompat from "RedesignCompat" /* 5998 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 6605 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import native from "native" /* 4544 */;
+import ColorUtils from "ColorUtils" /* 4685 */;
+import RedesignCompat from "RedesignCompat" /* 5996 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 6606 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let ASH;
@@ -34,9 +35,81 @@ let closure_7 = createStyles.createStyles(() => {
 });
 const DIVIDER_COLORS = { [LIGHT]: nativeDefault.unsafe_rawColors.BLACK, [ASH]: nativeDefault.unsafe_rawColors.WHITE, [DARK]: nativeDefault.unsafe_rawColors.WHITE, [ONYX]: nativeDefault.unsafe_rawColors.WHITE };
 ({ LIGHT, ASH, DARK, ONYX } = ThemeTypes);
-const result = size.fileFinishedImporting("design/void/Form/native/FormDivider.tsx");
-
-export default function Divider(arg0) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let iconPush;
+  let outer;
+  let primaryColor;
+  let style;
+  let theme;
+  const obj = react2;
+  const cResult = obj.c(10);
+  ({ outer, iconPush, style } = arg0);
+  let dividerHasIcon = undefined !== iconPush && iconPush;
+  const tmp5 = closure_7();
+  const tmpResult = native;
+  const themeContext = tmpResult.useThemeContext();
+  ({ theme, primaryColor } = themeContext);
+  const tmpResult3 = useProfileThemeValues;
+  const profileThemeValues = tmpResult3.useProfileThemeValues(theme);
+  let tmp8 = null;
+  if (null != (undefined !== outer && outer ? tmp5.dividerOuter : tmp5.divider).backgroundColor) {
+    tmp8 = null;
+    if (null != primaryColor) {
+      tmp8 = null;
+      if (null != profileThemeValues) {
+        if (cResult[0] === profileThemeValues.dividerOpacity) {
+          let tmp11;
+          let tmp13;
+          if (cResult[1] === obj[theme]) {
+            tmp11 = cResult[2];
+          }
+          if (cResult[3] !== tmp11) {
+            const obj2 = { backgroundColor: tmp11 };
+            cResult[3] = tmp11;
+            cResult[4] = obj2;
+            tmp13 = obj2;
+          } else {
+            tmp13 = cResult[4];
+          }
+          tmp8 = tmp13;
+        }
+        const tmpResult4 = ColorUtils;
+        const hexOpacityToRgbaResult = tmpResult4.hexOpacityToRgba(obj[theme], profileThemeValues.dividerOpacity);
+        cResult[0] = profileThemeValues.dividerOpacity;
+        cResult[1] = obj[theme];
+        cResult[2] = hexOpacityToRgbaResult;
+        tmp11 = hexOpacityToRgbaResult;
+      }
+    }
+  }
+  if (react.useContext(RedesignCompat.RedesignCompatContext)) {
+    return null;
+  } else {
+    const tmp14 = undefined !== outer && outer ? tmp5.dividerOuter : tmp5.divider;
+    if (dividerHasIcon) {
+      dividerHasIcon = tmp5.dividerHasIcon;
+    }
+    if (cResult[5] === style) {
+      if (cResult[6] === tmp14) {
+        if (cResult[7] === dividerHasIcon) {
+          let tmp15;
+          if (cResult[8] === tmp8) {
+            tmp15 = cResult[9];
+          }
+          return tmp15;
+        }
+      }
+    }
+    const items = [tmp14, dividerHasIcon, style, tmp8];
+    const tmp18 = <React3 style={items} />;
+    cResult[5] = style;
+    cResult[6] = tmp14;
+    cResult[7] = dividerHasIcon;
+    cResult[8] = tmp8;
+    cResult[9] = tmp18;
+    tmp15 = tmp18;
+  }
+}) : ((arg0) => {
   let primaryColor;
   let theme;
   let tmp2Result;
@@ -77,5 +150,8 @@ export default function Divider(arg0) {
     tmp10Result = tmp10(tmp11, obj4);
   }
   return tmp10Result;
-};
+});
+const result = size.fileFinishedImporting("design/void/Form/native/FormDivider.tsx");
+
+export default tmp3;
 export { DIVIDER_COLORS };

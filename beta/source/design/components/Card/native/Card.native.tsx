@@ -1,167 +1,53 @@
-// Module ID: 5919
-// Function ID: 5920
+// Module ID: 5918
+// Function ID: 5919
 // Name: Card/Card
-// Dependencies: [109, 19, 17, 21, 4566, 576, 4836, 5920, 4531, 1364, 5280, 5284, 5921, 2]
+// Dependencies: [109, 19, 17, 21, 4570, 588, 4837, 5919, 558, 576, 4535, 1370, 5281, 5285, 5920, 2]
 
-// Module 5919 (Card/Card)
+// Module 5918 (Card/Card)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import useToken2 from "useToken" /* 4531 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
-import spring from "spring" /* 5280 */;
-import springPresets from "springPresets" /* 5284 */;
-import CardTokens from "CardTokens" /* 5920 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import useToken2 from "useToken" /* 4535 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4570 */;
+import spring from "spring" /* 5281 */;
+import springPresets from "springPresets" /* 5285 */;
+import CardTokens from "CardTokens" /* 5919 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
 const ReanimatedRexport = ReanimatedRexport2;
+let _require;
 
 let Pressable;
-let metroRequire;
-class Card {
-  constructor(start) {
-    let flag = start.start;
-    if (flag === undefined) {
-      flag = true;
-    }
-    let flag2 = start.end;
-    if (flag2 === undefined) {
-      flag2 = true;
-    }
-    let str = start.shadow;
-    if (str === undefined) {
-      str = "none";
-    }
-    let str2 = start.border;
-    if (str2 === undefined) {
-      str2 = "faint";
-    }
-    let str3 = start.variant;
-    if (str3 === undefined) {
-      str3 = "primary";
-    }
-    const merged = Object.assign(start, Object.assign({ start: 0, end: 0, shadow: 0, border: 0, variant: 0 }));
-    const useToken = useToken2.useToken;
-    let radius = merged.radius;
-    useToken2;
-    if (radius == null) {
-      radius = useToken(nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS);
-    }
-    const items = [, , ];
-    ({ spacing: arr[0], card: arr[1] } = closure_10(flag, flag2, str3, str, str2, radius));
-    items[2] = merged.style;
-    closure_10(flag, flag2, str3, str, str2, radius);
-    if ("onPress" in merged) {
-      if (null != merged.onPress) {
-        let str4 = merged.accessibilityRole;
-        const tmp7 = _objectWithoutProperties(merged, closure_3);
-        const tmp8 = jsx;
-        const tmp9 = PressableCard;
-        if (str4 == null) {
-          str4 = "button";
-        }
-        const obj2 = { accessibilityRole: str4, start: flag, end: flag2, style: items, variant: str3, radius };
-        const merged1 = Object.assign(tmp7);
-        return tmp8(tmp9, obj2);
-      }
-    }
-    const merged2 = Object.assign(merged);
-    return <metroRequire style={items} />;
-  }
-}
-function PressableCard(start) {
-  let children;
-  let end;
-  let onPressIn;
-  let radius;
-  let sharedValue;
-  let style;
-  let tmp20;
-  let variant;
-  let tmp = onPressIn;
-  const tmp2 = sharedValue;
-  let obj = onPressIn(sharedValue[9]);
+let c10;
+let tmp;
+const AnimatedPressableHighlight2 = tmp(5920);
+function PressableCard(arg0) {
+  let tmp2;
+  const obj = PlatformUtils;
   if (obj.isAndroid()) {
-    const start2 = start.start;
-    const end2 = start.end;
-    const radius2 = start.radius;
-    const children2 = start.children;
-    let obj2 = {};
-    const merged = Object.assign(start, Object.assign({ children: 0, start: 0, end: 0, radius: 0 }));
-    let items = [start2, end2, radius2];
-    const memo = react.useMemo(() => {
-      let cornerRadius;
-      const tmp = start2;
-      if (tmp) {
-        cornerRadius = radius2;
-      } else {
-        cornerRadius = 0;
-      }
-      return { cornerRadius };
-    }, items);
-    const AnimatedPressableHighlight = tmp(tmp2[12]).AnimatedPressableHighlight;
-    const merged1 = Object.assign(merged);
-    tmp20 = <AnimatedPressableHighlight androidRippleConfig={memo}>{children2}</AnimatedPressableHighlight>;
+    tmp2 = closure_19(arg0);
   } else {
-    onPressIn = start.onPressIn;
-    const onPressOut = start.onPressOut;
-    ({ radius, start, end } = start);
-    ({ children, style, variant } = start);
-    const merged2 = Object.assign(start, Object.assign({ children: 0, style: 0, variant: 0, onPressIn: 0, onPressOut: 0, radius: 0, start: 0, end: 0 }));
-    const tmpResult = tmp(tmp2[4]);
-    sharedValue = tmpResult.useSharedValue(0);
-    const items1 = [sharedValue, onPressIn];
-    const items2 = [sharedValue, onPressOut];
-    const callback = react.useCallback((arg0) => {
-      const result = sharedValue.set(1);
-      if (onPressIn != null) {
-        tmp2(arg0);
-      }
-    }, items1);
-    const callback1 = react.useCallback((arg0) => {
-      const result = sharedValue.set(0);
-      if (onPressOut != null) {
-        tmp2(arg0);
-      }
-    }, items2);
-    const tmp11 = closure_9(variant);
-    const backgroundColor = tmp11.backgroundColor;
-    const backgroundColorPressed = tmp11.backgroundColorPressed;
-    const tmpResult2 = tmp(tmp2[4]);
-    class B {
-      constructor() {
-        let interpolateColorResult;
-        let withSpring;
-        const obj = { backgroundColor: withSpring(interpolateColorResult, springPresets.ON_PRESS_SPRING, "animate-always") };
-        withSpring = spring.withSpring;
-        spring;
-        const items = [backgroundColor, backgroundColorPressed];
-        const obj2 = ReanimatedRexport2;
-        interpolateColorResult = obj2.interpolateColor(sharedValue.get(), [0, 1], items);
-        return obj;
-      }
-    }
-    const useAnimatedStyle = tmpResult2.useAnimatedStyle;
-    B.__closure = { withSpring: tmp(tmp2[10]).withSpring, interpolateColor: tmp(tmp2[4]).interpolateColor, pressed: sharedValue, backgroundColor, backgroundColorPressed, ON_PRESS_SPRING: tmp(tmp2[11]).ON_PRESS_SPRING };
-    B.__workletHash = 14943431549291;
-    B.__initData = __initData;
-    const obj5 = { withSpring: tmp(tmp2[10]).withSpring, interpolateColor: tmp(tmp2[4]).interpolateColor, pressed: sharedValue, backgroundColor, backgroundColorPressed, ON_PRESS_SPRING: tmp(tmp2[11]).ON_PRESS_SPRING };
-    const animatedStyle = useAnimatedStyle(B);
-    const merged3 = Object.assign(merged2);
-    const items3 = [style, animatedStyle];
-    tmp20 = <closure_8 onPressIn={callback} onPressOut={callback1} style={items3} unstable_pressDelay={130}>{children}</closure_8>;
+    tmp2 = closure_18(arg0);
   }
-  return tmp20;
+  return tmp2;
 }
-let closure_3 = ["accessibilityRole"];
-({ View: metroRequire, Pressable } = react_native);
+let closure_3 = ["start", "end", "shadow", "border", "variant"];
+let closure_4 = ["accessibilityRole"];
+let closure_5 = ["accessibilityRole"];
+let closure_6 = ["children", "style", "variant", "onPressIn", "onPressOut", "radius", "start", "end"];
+let closure_7 = ["children", "start", "end", "radius"];
+({ View: c10, Pressable } = react_native);
 const jsx = Fragment.jsx;
-let closure_8 = ReanimatedRexport.createAnimatedComponent(Pressable);
+let closure_12 = ReanimatedRexport.createAnimatedComponent(Pressable);
 let createStyles = createStyles_mod;
-let closure_9 = createStyles.createStyleProperties((arg0) => {
+let closure_13 = createStyles.createStyleProperties((arg0) => {
   let backgroundColor;
   let backgroundColorPressed;
   if ("primary" === arg0) {
@@ -193,7 +79,7 @@ let closure_9 = createStyles.createStyleProperties((arg0) => {
   return { backgroundColor, backgroundColorPressed };
 });
 createStyles = createStyles_mod;
-const authStore = createStyles.createStyles((arg0, arg1, arg2, arg3, arg4, arg5) => {
+let closure_14 = createStyles.createStyles((arg0, arg1, arg2, arg3, arg4, arg5) => {
   let BACKGROUND_SURFACE_HIGH;
   let num;
   let tmp21;
@@ -253,8 +139,491 @@ const authStore = createStyles.createStyles((arg0, arg1, arg2, arg3, arg4, arg5)
   }
   return { card, spacing: { padding: 16 } };
 });
-const __initData = { code: "function CardNativeTsx1(){const{withSpring,interpolateColor,pressed,backgroundColor,backgroundColorPressed,ON_PRESS_SPRING}=this.__closure;const pressedColor=withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,'animate-always');return{backgroundColor:pressedColor};}" };
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let border;
+  let end;
+  let shadow;
+  let start;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  let variant;
+  const obj = react2;
+  const cResult = obj.c(25);
+  if (cResult[0] !== arg0) {
+    ({ start, end, shadow, border, variant } = arg0);
+    const tmp12 = _objectWithoutProperties(arg0, closure_3);
+    cResult[0] = arg0;
+    cResult[1] = tmp12;
+    cResult[2] = start;
+    cResult[3] = end;
+    cResult[4] = shadow;
+    cResult[5] = border;
+    cResult[6] = variant;
+    tmp9 = variant;
+    tmp8 = border;
+    tmp7 = shadow;
+    tmp6 = end;
+    tmp5 = start;
+    tmp4 = tmp12;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    tmp6 = cResult[3];
+    tmp7 = cResult[4];
+    tmp8 = cResult[5];
+    tmp9 = cResult[6];
+  }
+  let str = "none";
+  if (undefined !== tmp7) {
+    str = tmp7;
+  }
+  let str2 = "faint";
+  if (undefined !== tmp8) {
+    str2 = tmp8;
+  }
+  let str3 = "primary";
+  if (undefined !== tmp9) {
+    str3 = tmp9;
+  }
+  const useToken = tmp(4535).useToken;
+  let radius = tmp4.radius;
+  useToken2;
+  if (radius == null) {
+    radius = useToken(nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS);
+  }
+  const tmp16 = closure_14(undefined === tmp5 || tmp5, undefined === tmp6 || tmp6, str3, str, str2, radius);
+  if (cResult[7] === tmp4.style) {
+    if (cResult[8] === tmp16.card) {
+      let tmp17;
+      if (cResult[9] === tmp16.spacing) {
+        tmp17 = cResult[10];
+      }
+      if ("onPress" in tmp4) {
+        if (null != tmp4.onPress) {
+          let tmp25;
+          let str5;
+          if (cResult[11] !== tmp4) {
+            const accessibilityRole = tmp4.accessibilityRole;
+            const tmp28 = _objectWithoutProperties(tmp4, closure_4);
+            cResult[11] = tmp4;
+            cResult[12] = accessibilityRole;
+            cResult[13] = tmp28;
+            tmp25 = tmp28;
+            str5 = accessibilityRole;
+          } else {
+            str5 = cResult[12];
+            tmp25 = cResult[13];
+          }
+          if (str5 == null) {
+            str5 = "button";
+          }
+          if (cResult[14] === (undefined === tmp6 || tmp6)) {
+            if (cResult[15] === tmp25) {
+              if (cResult[16] === radius) {
+                if (cResult[17] === (undefined === tmp5 || tmp5)) {
+                  if (cResult[18] === tmp17) {
+                    if (cResult[19] === str5) {
+                      let tmp29;
+                      if (cResult[20] === str3) {
+                        tmp29 = cResult[21];
+                      }
+                      return tmp29;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          const merged = Object.assign(tmp25);
+          const tmp35 = <PressableCard accessibilityRole={str5} start={undefined === tmp5 || tmp5} end={undefined === tmp6 || tmp6} style={tmp17} variant={str3} radius={radius} />;
+          cResult[14] = undefined === tmp6 || tmp6;
+          cResult[15] = tmp25;
+          cResult[16] = radius;
+          cResult[17] = undefined === tmp5 || tmp5;
+          cResult[18] = tmp17;
+          cResult[19] = str5;
+          cResult[20] = str3;
+          cResult[21] = tmp35;
+          tmp29 = tmp35;
+        }
+      }
+      if (cResult[22] === tmp17) {
+        let tmp18;
+        if (cResult[23] === tmp4) {
+          tmp18 = cResult[24];
+        }
+        return tmp18;
+      }
+      const merged1 = Object.assign(tmp4);
+      const tmp24 = <authStore style={tmp17} />;
+      cResult[22] = tmp17;
+      cResult[23] = tmp4;
+      cResult[24] = tmp24;
+      tmp18 = tmp24;
+    }
+  }
+  const items = [, , ];
+  ({ spacing: arr[0], card: arr[1] } = tmp16);
+  items[2] = tmp4.style;
+  cResult[7] = tmp4.style;
+  cResult[8] = tmp16.card;
+  cResult[9] = tmp16.spacing;
+  cResult[10] = items;
+  tmp17 = items;
+}) : ((start) => {
+  let flag = start.start;
+  if (flag === undefined) {
+    flag = true;
+  }
+  let flag2 = start.end;
+  if (flag2 === undefined) {
+    flag2 = true;
+  }
+  let str = start.shadow;
+  if (str === undefined) {
+    str = "none";
+  }
+  let str2 = start.border;
+  if (str2 === undefined) {
+    str2 = "faint";
+  }
+  let str3 = start.variant;
+  if (str3 === undefined) {
+    str3 = "primary";
+  }
+  const merged = Object.assign(start, Object.assign({ start: 0, end: 0, shadow: 0, border: 0, variant: 0 }));
+  const useToken = useToken2.useToken;
+  let radius = merged.radius;
+  useToken2;
+  if (radius == null) {
+    radius = useToken(nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS);
+  }
+  const items = [, , ];
+  ({ spacing: arr[0], card: arr[1] } = closure_14(flag, flag2, str3, str, str2, radius));
+  items[2] = merged.style;
+  closure_14(flag, flag2, str3, str, str2, radius);
+  if ("onPress" in merged) {
+    if (null != merged.onPress) {
+      let str4 = merged.accessibilityRole;
+      const tmp7 = _objectWithoutProperties(merged, closure_5);
+      const tmp8 = jsx;
+      const tmp9 = PressableCard;
+      if (str4 == null) {
+        str4 = "button";
+      }
+      const obj2 = { accessibilityRole: str4, start: flag, end: flag2, style: items, variant: str3, radius };
+      const merged1 = Object.assign(tmp7);
+      return tmp8(tmp9, obj2);
+    }
+  }
+  const merged2 = Object.assign(merged);
+  return <authStore style={items} />;
+});
+const __initData = { code: "function CardNativeTsx1(){const{withSpring,interpolateColor,pressed,backgroundColor,backgroundColorPressed,ON_PRESS_SPRING}=this.__closure;const pressedColor=withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,\"animate-always\");return{backgroundColor:pressedColor};}" };
+const __initData2 = { code: "function CardNativeTsx2(){const{withSpring,interpolateColor,pressed,backgroundColor,backgroundColorPressed,ON_PRESS_SPRING}=this.__closure;const pressedColor=withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,'animate-always');return{backgroundColor:pressedColor};}" };
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let closure_0;
+  let end;
+  let onPressIn;
+  let onPressOut;
+  let radius;
+  let sharedValue;
+  let start;
+  let style;
+  let tmp4;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  let variant;
+  const tmp = _require;
+  const tmp2 = sharedValue;
+  let obj = require("react");
+  const cResult = obj.c(22);
+  if (cResult[0] !== arg0) {
+    ({ children, style, variant, onPressIn, onPressOut, radius, start, end } = arg0);
+    const tmp12 = _objectWithoutProperties(arg0, closure_6);
+    _require = onPressIn;
+    let closure_1 = onPressOut;
+    class N {
+      constructor(arg0) {
+        const result = sharedValue.set(1);
+        if (closure_0 != null) {
+          tmp2(arg0);
+        }
+      }
+    }
+    cResult[0] = arg0;
+    cResult[1] = children;
+    cResult[2] = onPressIn;
+    cResult[3] = onPressOut;
+    cResult[4] = tmp12;
+    cResult[5] = style;
+    cResult[6] = variant;
+    tmp9 = variant;
+    tmp8 = style;
+    tmp7 = tmp12;
+    tmp4 = children;
+  } else {
+    tmp4 = cResult[1];
+    _require = cResult[2];
+    closure_1 = cResult[3];
+    tmp7 = cResult[4];
+    tmp8 = cResult[5];
+    tmp9 = cResult[6];
+  }
+  const tmpResult = tmp(tmp2[4]);
+  sharedValue = tmpResult.useSharedValue(0);
+  if (cResult[7] === tmp5) {
+    let tmp14;
+    if (cResult[8] === sharedValue) {
+      tmp14 = cResult[9];
+    }
+    if (cResult[10] === tmp6) {
+      let tmp15;
+      if (cResult[11] === sharedValue) {
+        tmp15 = cResult[12];
+      }
+      const tmp17 = closure_13(tmp9);
+      const backgroundColor = tmp17.backgroundColor;
+      const backgroundColorPressed = tmp17.backgroundColorPressed;
+      const fn2 = function f() {
+        let interpolateColorResult;
+        let withSpring;
+        const obj = { backgroundColor: withSpring(interpolateColorResult, springPresets.ON_PRESS_SPRING, "animate-always") };
+        withSpring = spring.withSpring;
+        spring;
+        const items = [backgroundColor, backgroundColorPressed];
+        const obj2 = ReanimatedRexport2;
+        interpolateColorResult = obj2.interpolateColor(sharedValue.get(), [0, 1], items);
+        return obj;
+      };
+      let obj2 = { withSpring: tmp(tmp2[12]).withSpring, interpolateColor: tmp(tmp2[4]).interpolateColor, pressed: null, backgroundColor, backgroundColorPressed, ON_PRESS_SPRING: tmp(tmp2[13]).ON_PRESS_SPRING };
+      const useAnimatedStyle = tmp(tmp2[4]).useAnimatedStyle;
+      tmp(tmp2[4]);
+      class N {
+        constructor(arg0) {
+          const result = sharedValue.set(1);
+          if (closure_0 != null) {
+            tmp2(arg0);
+          }
+        }
+      }
+      fn2.__closure = obj2;
+      fn2.__workletHash = 3250854615435;
+      fn2.__initData = __initData;
+      const animatedStyle = useAnimatedStyle(fn2);
+      if (cResult[13] === animatedStyle) {
+        let tmp21;
+        if (cResult[14] === tmp8) {
+          tmp21 = cResult[15];
+        }
+        if (cResult[16] === tmp4) {
+          if (cResult[17] === tmp14) {
+            if (cResult[18] === tmp15) {
+              if (cResult[19] === tmp7) {
+                let tmp22;
+                if (cResult[20] === tmp21) {
+                  tmp22 = cResult[21];
+                }
+                return tmp22;
+              }
+            }
+          }
+        }
+        const merged = Object.assign(tmp7);
+        class N {
+          constructor(arg0) {
+            const result = sharedValue.set(1);
+            if (closure_0 != null) {
+              tmp2(arg0);
+            }
+          }
+        }
+        const tmp28 = <closure_12 onPressIn={tmp14} onPressOut={tmp15} style={tmp21} unstable_pressDelay={130} />;
+        cResult[16] = tmp4;
+        cResult[17] = tmp14;
+        cResult[18] = tmp15;
+        cResult[19] = tmp7;
+        cResult[20] = tmp21;
+        cResult[21] = tmp28;
+        tmp22 = tmp28;
+      }
+      let items = [tmp8, animatedStyle];
+      cResult[13] = animatedStyle;
+      cResult[14] = tmp8;
+      cResult[15] = items;
+      tmp21 = items;
+    }
+    const fn = function y(arg0) {
+      const result = sharedValue.set(0);
+      if (closure_1 != null) {
+        tmp2(arg0);
+      }
+    };
+    cResult[10] = tmp6;
+    cResult[11] = sharedValue;
+    cResult[12] = fn;
+    tmp15 = fn;
+  }
+  class N {
+    constructor(arg0) {
+      const result = sharedValue.set(1);
+      if (closure_0 != null) {
+        tmp2(arg0);
+      }
+    }
+  }
+  cResult[7] = tmp5;
+  cResult[8] = sharedValue;
+  cResult[9] = N;
+  tmp14 = N;
+}) : ((onPressIn) => {
+  let children;
+  let end;
+  let radius;
+  let start;
+  let style;
+  let variant;
+  onPressIn = onPressIn.onPressIn;
+  const onPressOut = onPressIn.onPressOut;
+  ({ radius, start, end } = onPressIn);
+  ({ children, style, variant } = onPressIn);
+  const merged = Object.assign(onPressIn, Object.assign({ children: 0, style: 0, variant: 0, onPressIn: 0, onPressOut: 0, radius: 0, start: 0, end: 0 }));
+  let sharedValue;
+  let obj = onPressIn(sharedValue[4]);
+  sharedValue = obj.useSharedValue(0);
+  let items = [sharedValue, onPressIn];
+  const items1 = [sharedValue, onPressOut];
+  const callback = react.useCallback((arg0) => {
+    const result = sharedValue.set(1);
+    if (onPressIn != null) {
+      tmp2(arg0);
+    }
+  }, items);
+  const callback1 = react.useCallback((arg0) => {
+    const result = sharedValue.set(0);
+    if (onPressOut != null) {
+      tmp2(arg0);
+    }
+  }, items1);
+  const tmp5 = closure_13(variant);
+  const backgroundColor = tmp5.backgroundColor;
+  const backgroundColorPressed = tmp5.backgroundColorPressed;
+  let obj2 = onPressIn(sharedValue[4]);
+  class P {
+    constructor() {
+      let interpolateColorResult;
+      let withSpring;
+      const obj = { backgroundColor: withSpring(interpolateColorResult, springPresets.ON_PRESS_SPRING, "animate-always") };
+      withSpring = spring.withSpring;
+      spring;
+      const items = [backgroundColor, backgroundColorPressed];
+      const obj2 = ReanimatedRexport2;
+      interpolateColorResult = obj2.interpolateColor(sharedValue.get(), [0, 1], items);
+      return obj;
+    }
+  }
+  P.__closure = { withSpring: onPressIn(sharedValue[12]).withSpring, interpolateColor: onPressIn(sharedValue[4]).interpolateColor, pressed: sharedValue, backgroundColor, backgroundColorPressed, ON_PRESS_SPRING: onPressIn(sharedValue[13]).ON_PRESS_SPRING };
+  P.__workletHash = 13243018769960;
+  P.__initData = __initData2;
+  ({ withSpring: onPressIn(sharedValue[12]).withSpring, interpolateColor: onPressIn(sharedValue[4]).interpolateColor, pressed: sharedValue, backgroundColor, backgroundColorPressed, ON_PRESS_SPRING: onPressIn(sharedValue[13]).ON_PRESS_SPRING });
+  const animatedStyle = obj2.useAnimatedStyle(P);
+  const merged1 = Object.assign(merged);
+  const items2 = [style, animatedStyle];
+  return <closure_12 onPressIn={callback} onPressOut={callback1} style={items2} unstable_pressDelay={130}>{children}</closure_12>;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let end;
+  let num7;
+  let radius;
+  let start;
+  let tmp12;
+  let tmp4;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(12);
+  if (cResult[0] !== arg0) {
+    ({ children, start, end, radius } = arg0);
+    const tmp11 = _objectWithoutProperties(arg0, closure_7);
+    cResult[0] = arg0;
+    cResult[1] = children;
+    cResult[2] = end;
+    cResult[3] = tmp11;
+    cResult[4] = radius;
+    cResult[5] = start;
+    tmp8 = start;
+    tmp7 = radius;
+    tmp6 = tmp11;
+    tmp4 = children;
+  } else {
+    tmp4 = cResult[1];
+    tmp6 = cResult[3];
+    tmp7 = cResult[4];
+    tmp8 = cResult[5];
+  }
+  if (tmp8) {
+    num7 = tmp7;
+  } else {
+    num7 = 0;
+  }
+  if (cResult[6] !== num7) {
+    const obj2 = { cornerRadius: num7 };
+    cResult[6] = num7;
+    cResult[7] = obj2;
+    tmp12 = obj2;
+  } else {
+    tmp12 = cResult[7];
+  }
+  if (cResult[8] === tmp12) {
+    if (cResult[9] === tmp4) {
+      let tmp13;
+      if (cResult[10] === tmp6) {
+        tmp13 = cResult[11];
+      }
+      return tmp13;
+    }
+  }
+  const AnimatedPressableHighlight = AnimatedPressableHighlight2.AnimatedPressableHighlight;
+  const merged = Object.assign(tmp6);
+  const tmp15 = <AnimatedPressableHighlight androidRippleConfig={tmp12}>{tmp4}</AnimatedPressableHighlight>;
+  cResult[8] = tmp12;
+  cResult[9] = tmp4;
+  cResult[10] = tmp6;
+  cResult[11] = tmp15;
+  tmp13 = tmp15;
+}) : ((start) => {
+  start = start.start;
+  const end = start.end;
+  const radius = start.radius;
+  const children = start.children;
+  const merged = Object.assign(start, Object.assign({ children: 0, start: 0, end: 0, radius: 0 }));
+  const items = [start, end, radius];
+  const memo = react.useMemo(() => {
+    let cornerRadius;
+    const tmp = start;
+    if (tmp) {
+      cornerRadius = radius;
+    } else {
+      cornerRadius = 0;
+    }
+    return { cornerRadius };
+  }, items);
+  const AnimatedPressableHighlight = AnimatedPressableHighlight2.AnimatedPressableHighlight;
+  const merged1 = Object.assign(merged);
+  return <AnimatedPressableHighlight androidRippleConfig={memo}>{children}</AnimatedPressableHighlight>;
+});
 let result = size.fileFinishedImporting("design/components/Card/native/Card.native.tsx");
 
-export { Card };
-export const InternalCard = Card;
+export const Card = tmp3;
+export const InternalCard = tmp3;

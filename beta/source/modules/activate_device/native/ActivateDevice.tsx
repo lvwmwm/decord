@@ -1,24 +1,24 @@
-// Module ID: 13419
-// Function ID: 13420
+// Module ID: 13421
+// Function ID: 13422
 // Name: ActivateDevice
-// Dependencies: [32, 19, 17, 21, 4836, 576, 13420, 13422, 8506, 8547, 13423, 8517, 13424, 5899, 13425, 13429, 13430, 1397, 13431, 6544, 2]
-// Exports: ActivateDevice
+// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 13422, 13424, 8503, 8544, 13425, 8514, 13426, 5896, 13427, 13431, 13432, 1403, 13433, 6546, 2]
 
-// Module 13419 (ActivateDevice)
+// Module 13421 (ActivateDevice)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import FastImageDefault from "FastImage" /* 5899 */;
-import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 8547 */;
-import _modDef13423 from "module_13423" /* 13423 */;
-import _modDef13424 from "module_13424" /* 13424 */;
+import nativeDefault from "native" /* 588 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 8544 */;
+import _modDef13425 from "module_13425" /* 13425 */;
+import _modDef13426 from "module_13426" /* 13426 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault;
+let importDefault, obj1, onClose, openOAuth2ModalResult, tmp2, tmp3, tmp5, tmp6, tmp7, tmp8;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -35,9 +35,422 @@ obj2 = { marginVertical: 0, resizeMode: "cover", backgroundColor: nativeDefault.
 createStyles = createStyles.createStyles;
 obj3 = { maxWidth: 480, backgroundColor: nativeDefault.colors.PANEL_BG, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.lg, padding: 24, marginHorizontal: 24, marginVertical: 36, shadowColor: nativeDefault.colors.BLACK, shadowOpacity: 0.2, shadowOffset: { width: 0, height: 4 }, shadowRadius: 4 };
 let closure_10 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/activate_device/native/ActivateDevice.tsx");
-
-export const ActivateDevice = (onClose) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+  let closure_1;
+  let closure_3;
+  let deviceCodeAuthorizeCallback;
+  let first;
+  let first1;
+  let first2;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp16;
+  let tmp17;
+  let tmp19;
+  let tmp20;
+  let tmp22;
+  const tmp = first1;
+  let obj = first1(first2[7]);
+  const cResult = obj.c(39);
+  onClose = onClose.onClose;
+  const tmp4 = closure_10();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = { type: "user-code-input", usePrefilledCode: true };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  let obj3 = deviceCodeAuthorizeCallback;
+  [first1, importDefault] = deviceCodeAuthorizeCallback.useState(first);
+  [first2, _slicedToArray] = deviceCodeAuthorizeCallback.useState(null);
+  const tmpResult = tmp(first2[8]);
+  const activateDeviceStepTracking = tmpResult.useActivateDeviceStepTracking(first1);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function v() {
+      closure_1({ type: "user-code-input" });
+    };
+    cResult[1] = fn;
+    tmp11 = fn;
+  } else {
+    tmp11 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function w(userCodeData) {
+      const obj = { type: "success", userCodeData };
+      closure_1(obj);
+    };
+    cResult[2] = fn2;
+    tmp12 = fn2;
+  } else {
+    tmp12 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class L {
+      constructor(userCodeData) {
+        const obj = { type: "error", userCodeData };
+        closure_1(obj);
+      }
+    }
+    cResult[3] = L;
+    tmp13 = L;
+  } else {
+    class L {
+      constructor(userCodeData) {
+        const obj = { type: "error", userCodeData };
+        closure_1(obj);
+      }
+    }
+  }
+  const tmpResult2 = tmp(first2[9]);
+  deviceCodeAuthorizeCallback = tmpResult2.useDeviceCodeAuthorizeCallback(tmp11, tmp13, tmp12);
+  if (cResult[4] !== deviceCodeAuthorizeCallback) {
+    class U {
+      constructor(arg0) {
+        closure_0 = onClose;
+        obj = { type: "authorization", userCodeData: onClose };
+        tmp = closure_1(obj);
+        obj2 = closure_0(closure_2[10]);
+        obj1 = {
+          clientId: onClose.clientId,
+          scopes: onClose.scopes,
+          responseType: "code",
+          isTrustedName: true,
+          isEmbeddedFlow: true,
+          withBackPressHandler: false,
+          callbackWithoutPost(arg0) {
+                  return deviceCodeAuthorizeCallback(userCodeData, arg0);
+                }
+        };
+        openOAuth2ModalResult = obj2.openOAuth2Modal(obj1);
+        return;
+      }
+    }
+    cResult[4] = deviceCodeAuthorizeCallback;
+    cResult[5] = U;
+  } else {
+    class U {
+      constructor(arg0) {
+        closure_0 = onClose;
+        obj = { type: "authorization", userCodeData: onClose };
+        tmp = closure_1(obj);
+        obj2 = closure_0(closure_2[10]);
+        obj1 = {
+          clientId: onClose.clientId,
+          scopes: onClose.scopes,
+          responseType: "code",
+          isTrustedName: true,
+          isEmbeddedFlow: true,
+          withBackPressHandler: false,
+          callbackWithoutPost(arg0) {
+                  return deviceCodeAuthorizeCallback(userCodeData, arg0);
+                }
+        };
+        openOAuth2ModalResult = obj2.openOAuth2Modal(obj1);
+        return;
+      }
+    }
+  }
+  if (cResult[6] !== first1) {
+    class B {
+      constructor() {
+        if ("userCodeData" in closure_0) {
+          userCodeData = closure_0.userCodeData;
+          tmp = closure_0;
+          tmp2 = closure_2;
+          items = [, ];
+          items[0] = closure_0(closure_2[11]).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID;
+          items[1] = closure_0(closure_2[11]).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
+          if (items.includes(userCodeData.clientId)) {
+            tmp6 = closure_3;
+            tmp7 = closure_1;
+            tmp8 = closure_3(closure_1(tmp2[12]));
+          } else {
+            scopes = userCodeData.scopes;
+            if (scopes.some((item) => {
+              const obj = first1(first2[13]);
+              return obj.isSocialLayerUmbrellaScope(item);
+            })) {
+              tmp3 = closure_3;
+              tmp4 = closure_1;
+              tmp5 = closure_3(closure_1(tmp2[14]));
+            }
+          }
+        }
+        return;
+      }
+    }
+    let items = [first1];
+    cResult[6] = first1;
+    cResult[7] = B;
+    cResult[8] = items;
+    tmp17 = items;
+    tmp16 = B;
+  } else {
+    class B {
+      constructor() {
+        if ("userCodeData" in closure_0) {
+          userCodeData = closure_0.userCodeData;
+          tmp = closure_0;
+          tmp2 = closure_2;
+          items = [, ];
+          items[0] = closure_0(closure_2[11]).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID;
+          items[1] = closure_0(closure_2[11]).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
+          if (items.includes(userCodeData.clientId)) {
+            tmp6 = closure_3;
+            tmp7 = closure_1;
+            tmp8 = closure_3(closure_1(tmp2[12]));
+          } else {
+            scopes = userCodeData.scopes;
+            if (scopes.some((item) => {
+              const obj = first1(first2[13]);
+              return obj.isSocialLayerUmbrellaScope(item);
+            })) {
+              tmp3 = closure_3;
+              tmp4 = closure_1;
+              tmp5 = closure_3(closure_1(tmp2[14]));
+            }
+          }
+        }
+        return;
+      }
+    }
+    tmp17 = cResult[8];
+  }
+  const effect = obj3.useEffect(tmp16, tmp17);
+  if (cResult[9] !== first2) {
+    class R {
+      constructor() {
+        if (null != first2) {
+          const obj = FastImageDefault;
+          obj.preload(tmp);
+        }
+      }
+    }
+    const items1 = [first2];
+    cResult[9] = first2;
+    cResult[10] = R;
+    cResult[11] = items1;
+    tmp20 = items1;
+    tmp19 = R;
+  } else {
+    class R {
+      constructor() {
+        if (null != first2) {
+          const obj = FastImageDefault;
+          obj.preload(tmp);
+        }
+      }
+    }
+    tmp20 = cResult[11];
+  }
+  const effect1 = obj3.useEffect(tmp19, tmp20);
+  const type = first1.type;
+  if ("user-code-input" === type) {
+    class R {
+      constructor() {
+        if (null != first2) {
+          const obj = FastImageDefault;
+          obj.preload(tmp);
+        }
+      }
+    }
+    if (first1.usePrefilledCode) {
+      class R {
+        constructor() {
+          if (null != first2) {
+            const obj = FastImageDefault;
+            obj.preload(tmp);
+          }
+        }
+      }
+    }
+    if (cResult[12] === onClose) {
+      class R {
+        constructor() {
+          if (null != first2) {
+            const obj = FastImageDefault;
+            obj.preload(tmp);
+          }
+        }
+      }
+    }
+    cResult[12] = onClose;
+    cResult[13] = tmp31;
+    cResult[14] = tmp15;
+    cResult[15] = jsx(tmp(first2[16]).UserCodeInput, { prefilledUserCode: tmp31, onUserCodeAccepted: tmp15, onClose });
+    const tmp34 = jsx(tmp(first2[16]).UserCodeInput, { prefilledUserCode: tmp31, onUserCodeAccepted: tmp15, onClose });
+  } else {
+    class R {
+      constructor() {
+        if (null != first2) {
+          const obj = FastImageDefault;
+          obj.preload(tmp);
+        }
+      }
+    }
+    if ("authorization" === type) {
+      let tmp28;
+      class R {
+        constructor() {
+          if (null != first2) {
+            const obj = FastImageDefault;
+            obj.preload(tmp);
+          }
+        }
+      }
+      if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+        class R {
+          constructor() {
+            if (null != first2) {
+              const obj = FastImageDefault;
+              obj.preload(tmp);
+            }
+          }
+        }
+        const tmp30 = <closure_7 animating />;
+        cResult[16] = tmp30;
+        tmp28 = tmp30;
+      } else {
+        class R {
+          constructor() {
+            if (null != first2) {
+              const obj = FastImageDefault;
+              obj.preload(tmp);
+            }
+          }
+        }
+      }
+      tmp22 = tmp28;
+    } else {
+      class R {
+        constructor() {
+          if (null != first2) {
+            const obj = FastImageDefault;
+            obj.preload(tmp);
+          }
+        }
+      }
+      if ("success" === type) {
+        class R {
+          constructor() {
+            if (null != first2) {
+              const obj = FastImageDefault;
+              obj.preload(tmp);
+            }
+          }
+        }
+        cResult[17] = onClose;
+        cResult[18] = first1.userCodeData;
+        cResult[19] = first2;
+        cResult[20] = jsx(tmp(first2[17]).ActivateDeviceSuccess, { onComplete: onClose, data: first1.userCodeData, successImage: first2 });
+        const tmp27 = jsx(tmp(first2[17]).ActivateDeviceSuccess, { onComplete: onClose, data: first1.userCodeData, successImage: first2 });
+      } else {
+        class R {
+          constructor() {
+            if (null != first2) {
+              const obj = FastImageDefault;
+              obj.preload(tmp);
+            }
+          }
+        }
+        tmp22 = null;
+        if ("error" === type) {
+          let tmp23;
+          class R {
+            constructor() {
+              if (null != first2) {
+                const obj = FastImageDefault;
+                obj.preload(tmp);
+              }
+            }
+          }
+          if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
+            class R {
+              constructor() {
+                if (null != first2) {
+                  const obj = FastImageDefault;
+                  obj.preload(tmp);
+                }
+              }
+            }
+            const tmp24 = jsx(tmp(first2[18]).ActivateDeviceError, { onRetry: tmp11 });
+            cResult[21] = tmp24;
+            tmp23 = tmp24;
+          } else {
+            class R {
+              constructor() {
+                if (null != first2) {
+                  const obj = FastImageDefault;
+                  obj.preload(tmp);
+                }
+              }
+            }
+          }
+          tmp22 = tmp23;
+        }
+      }
+    }
+  }
+  if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor() {
+        if (null != first2) {
+          const obj = FastImageDefault;
+          obj.preload(tmp);
+        }
+      }
+    }
+    const source = obj9.makeSource(require("module_13433"));
+    cResult[22] = source;
+  } else {
+    class R {
+      constructor() {
+        if (null != first2) {
+          const obj = FastImageDefault;
+          obj.preload(tmp);
+        }
+      }
+    }
+  }
+  if (cResult[23] !== tmp4.background) {
+    class R {
+      constructor() {
+        if (null != first2) {
+          const obj = FastImageDefault;
+          obj.preload(tmp);
+        }
+      }
+    }
+    tmp39[0] = tmp4.background;
+    cResult[23] = tmp4.background;
+    cResult[24] = tmp39;
+  } else {
+    class R {
+      constructor() {
+        if (null != first2) {
+          const obj = FastImageDefault;
+          obj.preload(tmp);
+        }
+      }
+    }
+  }
+  if (cResult[25] === tmp22) {
+    class R {
+      constructor() {
+        if (null != first2) {
+          const obj = FastImageDefault;
+          obj.preload(tmp);
+        }
+      }
+    }
+  }
+  cResult[25] = tmp22;
+  cResult[26] = tmp4.scroller;
+  cResult[27] = tmp4.scrollerContent;
+  cResult[28] = <closure_8 bounces={false} style={tmp4.scroller} contentContainerStyle={tmp4.scrollerContent}>{tmp22}</closure_8>;
+}) : ((onClose) => {
   let closure_1;
   let closure_3;
   let first;
@@ -53,7 +466,7 @@ export const ActivateDevice = (onClose) => {
   [first, tmp4] = deviceCodeAuthorizeCallback.useState({ type: "user-code-input", usePrefilledCode: true });
   importDefault = tmp4;
   [first1, _slicedToArray] = deviceCodeAuthorizeCallback.useState(null);
-  let obj = first(first1[6]);
+  let obj = first(first1[8]);
   const activateDeviceStepTracking = obj.useActivateDeviceStepTracking(first);
   let items = [tmp4];
   const callback = deviceCodeAuthorizeCallback.useCallback(() => {
@@ -69,7 +482,7 @@ export const ActivateDevice = (onClose) => {
     const obj = { type: "error", userCodeData };
     closure_1(obj);
   }, items2);
-  let obj2 = first(first1[7]);
+  let obj2 = first(first1[9]);
   deviceCodeAuthorizeCallback = obj2.useDeviceCodeAuthorizeCallback(callback, callback2, callback1);
   const items3 = [deviceCodeAuthorizeCallback];
   const items4 = [first];
@@ -77,7 +490,7 @@ export const ActivateDevice = (onClose) => {
     let closure_0 = userCodeData;
     const obj = { type: "authorization", userCodeData };
     closure_1(obj);
-    const obj2 = first(first1[8]);
+    const obj2 = first(first1[10]);
     const obj3 = {
       clientId: userCodeData.clientId,
       scopes: userCodeData.scopes,
@@ -96,14 +509,14 @@ export const ActivateDevice = (onClose) => {
       const userCodeData = first.userCodeData;
       const items = [ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID, ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID];
       if (items.includes(userCodeData.clientId)) {
-        closure_3(_modDef13423);
+        closure_3(_modDef13425);
       } else {
         const scopes = userCodeData.scopes;
         if (scopes.some((item) => {
-          const obj = first(first1[11]);
+          const obj = first(first1[13]);
           return obj.isSocialLayerUmbrellaScope(item);
         })) {
-          closure_3(_modDef13424);
+          closure_3(_modDef13426);
         }
       }
     }
@@ -118,7 +531,7 @@ export const ActivateDevice = (onClose) => {
   const type = first.type;
   if ("user-code-input" === type) {
     let tmp22;
-    const UserCodeInput = tmp7(tmp8[14]).UserCodeInput;
+    const UserCodeInput = tmp7(tmp8[16]).UserCodeInput;
     const tmp21 = jsx;
     if (first.usePrefilledCode) {
       tmp22 = prefilledUserCode;
@@ -128,16 +541,19 @@ export const ActivateDevice = (onClose) => {
   } else if ("authorization" === type) {
     tmp21Result = <closure_7 animating />;
   } else if ("success" === type) {
-    tmp21Result = jsx(tmp7(tmp8[15]).ActivateDeviceSuccess, { onComplete: onClose, data: first.userCodeData, successImage: first1 });
+    tmp21Result = jsx(tmp7(tmp8[17]).ActivateDeviceSuccess, { onComplete: onClose, data: first.userCodeData, successImage: first1 });
   } else {
     tmp21Result = null;
     if ("error" === type) {
-      tmp21Result = jsx(tmp7(tmp8[16]).ActivateDeviceError, { onRetry: callback });
+      tmp21Result = jsx(tmp7(tmp8[18]).ActivateDeviceError, { onRetry: callback });
     }
   }
   const items6 = [tmp.background];
   const rect = { bottom: true, top: true, style: tmp.safeArea, children: null };
-  const tmp7Result = first(first1[17]);
-  const SafeAreaPaddingView = tmp7(tmp8[19]).SafeAreaPaddingView;
-  return <closure_6 source={tmp7Result.makeSource(require("module_13431"))} imageStyle={tmp.imageStyle} style={items6}>{null}</closure_6>;
-};
+  const tmp7Result = first(first1[19]);
+  const SafeAreaPaddingView = tmp7(tmp8[21]).SafeAreaPaddingView;
+  return <closure_6 source={tmp7Result.makeSource(require("module_13433"))} imageStyle={tmp.imageStyle} style={items6}>{null}</closure_6>;
+});
+const result = size.fileFinishedImporting("modules/activate_device/native/ActivateDevice.tsx");
+
+export const ActivateDevice = tmp4;

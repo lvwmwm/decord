@@ -1,11 +1,11 @@
-// Module ID: 15421
-// Function ID: 15422
+// Module ID: 15409
+// Function ID: 15410
 // Name: CollectiblesShopOpenTriggerPoint
-// Dependencies: [4751, 10271, 2]
+// Dependencies: [4753, 10309, 2]
 
-// Module 15421 (CollectiblesShopOpenTriggerPoint)
-import ExperimentConstants from "ExperimentConstants" /* 4751 */;
-import Helpers from "Helpers" /* 10271 */;
+// Module 15409 (CollectiblesShopOpenTriggerPoint)
+import ExperimentConstants from "ExperimentConstants" /* 4753 */;
+import Helpers from "Helpers" /* 10309 */;
 import size from "module_2" /* 2 */;
 
 const commonTriggerPointConfiguration = new Helpers.CommonTriggerPointConfiguration([], ExperimentConstants.CommonTriggerPoints.COLLECTIBLES_SHOP_OPEN, { location: "collectibles shop open" });

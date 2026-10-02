@@ -1,13 +1,13 @@
-// Module ID: 16664
-// Function ID: 16665
+// Module ID: 16666
+// Function ID: 16667
 // Name: WebhooksStore
-// Dependencies: [16665, 12, 504, 573, 2]
+// Dependencies: [16667, 12, 504, 585, 2]
 
-// Module 16664 (WebhooksStore)
+// Module 16666 (WebhooksStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 16665 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 16667 */;
 import size from "module_2" /* 2 */;
 
 let c2;

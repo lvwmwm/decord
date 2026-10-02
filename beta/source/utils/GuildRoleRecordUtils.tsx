@@ -1,15 +1,15 @@
-// Module ID: 2104
-// Function ID: 2105
+// Module ID: 2107
+// Function ID: 2108
 // Name: GuildRoleRecordUtils
-// Dependencies: [2060, 2103, 1086, 1092, 2105, 2]
+// Dependencies: [2066, 2106, 1098, 1104, 2108, 2]
 // Exports: constructGuildRoleInPlace, fromSerializedPartition, fromSyncOperation, isGuildRoleRecord, toSerializedPartition
 
-// Module 2104 (GuildRoleRecordUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2103 */;
-import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2105 */;
-import PlainRecord from "PlainRecord" /* 2060 */;
+// Module 2107 (GuildRoleRecordUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2106 */;
+import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2108 */;
+import PlainRecord from "PlainRecord" /* 2066 */;
 import size from "module_2" /* 2 */;
 
 let c3;

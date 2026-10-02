@@ -1,17 +1,17 @@
-// Module ID: 4732
-// Function ID: 4733
+// Module ID: 4734
+// Function ID: 4735
 // Name: BoostingActionCreators
-// Dependencies: [5, 4733, 4734, 4494, 1074, 1271, 573, 4735, 2]
+// Dependencies: [5, 4735, 4736, 4497, 1086, 1283, 585, 4737, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 4732 (BoostingActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 4734 (BoostingActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 4733 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 4734 */;
-import SubscriptionStore from "SubscriptionStore" /* 4494 */;
+import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 4735 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 4736 */;
+import SubscriptionStore from "SubscriptionStore" /* 4497 */;
 import size from "module_2" /* 2 */;
 
 let boostId, closure_3, closure_4, closure_5;
@@ -32,7 +32,7 @@ let obj = function _fetchAppliedGuildBoostsForGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ let obj = function _fetchAppliedGuildBoostsForGuild() {
               tmp = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c4) {
             if (arg0 === 1) {
@@ -121,7 +121,7 @@ obj = function _fetchAppliedGuildBoostsForUser() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -145,7 +145,7 @@ obj = function _fetchAppliedGuildBoostsForUser() {
             tmp = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -228,7 +228,7 @@ obj = function _fetchAppliedBoostsCooldown() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -322,7 +322,7 @@ obj = function _applyToGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -349,7 +349,7 @@ obj = function _applyToGuild() {
               appliedGuildBoostError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -439,7 +439,7 @@ obj = function _unapplyFromGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -493,7 +493,7 @@ obj = function _unapplyFromGuild() {
             obj = closure_131_1(closure_131_2[6]);
             obj.dispatch(obj10);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           closure_4 = tmp28;
@@ -522,8 +522,8 @@ obj = function _cancelGuildBoostSlot() {
     closure_0 = await post(obj4);
     const tmp4 = closure_130_5.createFromServer(closure_0.body, closure_130_6.getSubscriptionById(closure_0.body.subscription_id));
     const obj8 = { type: "GUILD_BOOST_SLOT_UPDATE_SUCCESS", guildBoostSlot: tmp4 };
-    const obj7 = closure_130_1(closure_130_2[6]);
-    obj7.dispatch(obj8);
+    const obj6 = closure_130_1(closure_130_2[6]);
+    obj6.dispatch(obj8);
     return tmp4;
   });
   return obj(...arguments);
@@ -541,8 +541,8 @@ obj = function _uncancelGuildBoostSlot() {
     closure_0 = await post(obj4);
     const tmp4 = closure_130_5.createFromServer(closure_0.body, closure_130_6.getSubscriptionById(closure_0.body.subscription_id));
     const obj8 = { type: "GUILD_BOOST_SLOT_UPDATE_SUCCESS", guildBoostSlot: tmp4 };
-    const obj7 = closure_130_1(closure_130_2[6]);
-    obj7.dispatch(obj8);
+    const obj6 = closure_130_1(closure_130_2[6]);
+    obj6.dispatch(obj8);
     return tmp4;
   });
   return obj(...arguments);

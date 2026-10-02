@@ -1,32 +1,50 @@
-// Module ID: 8373
-// Function ID: 8374
+// Module ID: 8370
+// Function ID: 8371
 // Name: Button/HeaderButton
-// Dependencies: [19, 21, 5286, 4832, 4836, 5282, 2]
+// Dependencies: [19, 21, 5287, 4833, 4837, 558, 576, 5283, 2]
 
-// Module 8373 (Button/HeaderButton)
+// Module 8370 (Button/HeaderButton)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import BaseTextButton2 from "BaseTextButton" /* 5282 */;
-import ButtonConstants from "ButtonConstants" /* 5286 */;
+import react2 from "react" /* 576 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import BaseTextButton2 from "BaseTextButton" /* 5283 */;
+import ButtonConstants from "ButtonConstants" /* 5287 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-class HeaderButton {
-  constructor(arg0) {
-    const tmp = closure_4();
-    const BaseTextButton = BaseTextButton2.BaseTextButton;
-    const merged = Object.assign(arg0);
-    return <BaseTextButton accessibilityRole="header" pillStyle={tmp.pill} size="sm" textVariant={textVariant} variant="secondary-overlay" />;
-  }
-}
 const jsx = Fragment.jsx;
-const _false = "heading-md/bold";
+let c3 = "heading-md/bold";
 const diff = ButtonConstants.SMALL_BUTTON_HEIGHT - 2 * ButtonConstants.BUTTON_BORDER_WIDTH;
 const diff1 = diff - Text_Text.TextStyleSheet["heading-md/bold"].lineHeight;
-const obj = { pill: { paddingVertical: diff1 / 2 } };
-const React3 = createStyles.createStyles(obj);
-HeaderButton.Icon = BaseTextButton2.BaseTextButton.Icon;
+let obj = { pill: { paddingVertical: diff1 / 2 } };
+let closure_4 = createStyles.createStyles(obj);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const obj = react2;
+  const cResult = obj.c(3);
+  const tmp4 = closure_4();
+  if (cResult[0] === arg0) {
+    let tmp5;
+    if (cResult[1] === tmp4.pill) {
+      tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  const BaseTextButton = BaseTextButton2.BaseTextButton;
+  const merged = Object.assign(arg0);
+  const tmp7 = <BaseTextButton accessibilityRole="header" pillStyle={tmp4.pill} size="sm" textVariant={c3} variant="secondary-overlay" />;
+  cResult[0] = arg0;
+  cResult[1] = tmp4.pill;
+  cResult[2] = tmp7;
+  tmp5 = tmp7;
+}) : ((arg0) => {
+  const tmp = closure_4();
+  const BaseTextButton = BaseTextButton2.BaseTextButton;
+  const merged = Object.assign(arg0);
+  return <BaseTextButton accessibilityRole="header" pillStyle={tmp.pill} size="sm" textVariant={c3} variant="secondary-overlay" />;
+});
+tmp5.Icon = BaseTextButton2.BaseTextButton.Icon;
 const result = size.fileFinishedImporting("design/components/experimental/Button/native/HeaderButton.native.tsx");
 
-export { HeaderButton };
+export const HeaderButton = tmp5;

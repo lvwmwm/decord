@@ -1,21 +1,23 @@
-// Module ID: 8586
-// Function ID: 8587
+// Module ID: 8583
+// Function ID: 8584
 // Name: IntegrationTypeSelector
-// Dependencies: [19, 17, 21, 4836, 576, 1397, 8505, 4769, 1115, 8587, 5899, 4832, 8589, 5999, 5917, 1177, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1403, 8502, 4770, 1127, 8584, 5896, 4833, 8586, 5997, 5916, 1189, 2]
 
-// Module 8586 (IntegrationTypeSelector)
-import nativeDefault from "native" /* 576 */;
-import intl5 from "intl" /* 1115 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import UserPlusIcon from "UserPlusIcon" /* 4769 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8505 */;
-import ServerIcon from "ServerIcon" /* 8587 */;
+// Module 8583 (IntegrationTypeSelector)
+import nativeDefault from "native" /* 588 */;
+import intl5 from "intl" /* 1127 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import UserPlusIcon from "UserPlusIcon" /* 4770 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8502 */;
+import ServerIcon from "ServerIcon" /* 8584 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
+
+let application;
 
 let StyleSheet;
 let closure_4;
@@ -39,10 +41,228 @@ size = { height: 82, width: 82, borderRadius: nativeDefault.radii.xl };
 obj5 = { padding: 4, borderRadius: nativeDefault.radii.xl + 4 };
 obj6 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 const styles = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/oauth2/native/IntegrationTypeSelector.tsx");
-
-export default function IntegrationTypeSelector(application) {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
+  let arr3;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items1;
+  let items2;
+  let items3;
+  const tmp = application;
+  let tmp2 = arr3;
+  let obj = application(arr3[6]);
+  const cResult = obj.c(35);
+  application = application.application;
+  const onSelect = application.onSelect;
+  const tmp4 = styles();
+  if (cResult[0] === application.icon) {
+    let tmp5;
+    let tmp8;
+    let arr;
+    let tmp14;
+    if (cResult[1] === application.id) {
+      tmp5 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = { type: tmp(tmp2[8]).ApplicationIntegrationType.USER_INSTALL, icon: tmp(tmp2[9]).UserPlusIcon, label: intl.string(tmp(tmp2[10]).t.aCg60P), subLabel: intl2.string(tmp(tmp2[10]).t.YeiIUZ), beta: false };
+      intl = tmp(tmp2[10]).intl;
+      intl2 = tmp(tmp2[10]).intl;
+      cResult[3] = obj3;
+      tmp8 = obj3;
+    } else {
+      tmp8 = cResult[3];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [tmp8, ];
+      const obj4 = { type: tmp(tmp2[8]).ApplicationIntegrationType.GUILD_INSTALL, icon: tmp(tmp2[11]).ServerIcon, label: intl3.string(tmp(tmp2[10]).t.E64YCz), subLabel: intl4.string(tmp(tmp2[10]).t.bbtoKm), beta: false };
+      intl3 = tmp(tmp2[10]).intl;
+      intl4 = tmp(tmp2[10]).intl;
+      items[1] = obj4;
+      cResult[4] = items;
+      arr = items;
+    } else {
+      arr = cResult[4];
+    }
+    if (cResult[5] !== application.integrationTypesConfig) {
+      const found = arr.filter((item) => {
+        const integrationTypesConfig = application.integrationTypesConfig;
+        let oauth2InstallParams;
+        if (integrationTypesConfig != null) {
+          if (integrationTypesConfig[item.type] != null) {
+            oauth2InstallParams = tmp3.oauth2InstallParams;
+          }
+        }
+        return null != oauth2InstallParams;
+      });
+      cResult[5] = application.integrationTypesConfig;
+      cResult[6] = found;
+      arr3 = found;
+    } else {
+      arr3 = cResult[6];
+    }
+    if (cResult[7] === tmp5) {
+      if (cResult[8] === tmp4.appIcon) {
+        let tmp10;
+        if (cResult[9] === tmp4.loadingIcon) {
+          tmp10 = cResult[10];
+        }
+        if (cResult[11] === tmp10) {
+          let tmp17;
+          let tmp21;
+          if (cResult[12] === tmp4.appIconMask) {
+            tmp17 = cResult[13];
+          }
+          if (cResult[14] !== application.name) {
+            const obj5 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: application.name };
+            const tmp23 = closure_5(tmp(tmp2[13]).Text, obj5);
+            cResult[14] = application.name;
+            cResult[15] = tmp23;
+            tmp21 = tmp23;
+          } else {
+            tmp21 = cResult[15];
+          }
+          if (cResult[16] === application) {
+            if (cResult[17] === tmp4.descriptionContainer) {
+              let tmp24;
+              if (cResult[18] === tmp4.descriptionMainContainer) {
+                tmp24 = cResult[19];
+              }
+              if (cResult[20] === tmp4.header) {
+                if (cResult[21] === tmp17) {
+                  if (cResult[22] === tmp21) {
+                    let tmp29;
+                    if (cResult[23] === tmp24) {
+                      tmp29 = cResult[24];
+                    }
+                    if (cResult[25] === onSelect) {
+                      let tmp33;
+                      if (cResult[26] === arr3) {
+                        tmp33 = cResult[27];
+                      }
+                      if (cResult[28] === tmp4.rows) {
+                        let tmp36;
+                        if (cResult[29] === tmp33) {
+                          tmp36 = cResult[30];
+                        }
+                        if (cResult[31] === tmp4.container) {
+                          if (cResult[32] === tmp36) {
+                            let tmp40;
+                            if (cResult[33] === tmp29) {
+                              tmp40 = cResult[34];
+                            }
+                            return tmp40;
+                          }
+                        }
+                        const obj6 = { style: tmp4.container, children: items1 };
+                        items1 = [tmp29, tmp36];
+                        const tmp43 = closure_6(closure_4, obj6);
+                        cResult[31] = tmp4.container;
+                        cResult[32] = tmp36;
+                        cResult[33] = tmp29;
+                        cResult[34] = tmp43;
+                        tmp40 = tmp43;
+                      }
+                      const obj7 = { style: tmp4.rows, children: tmp33 };
+                      const tmp39 = closure_5(closure_4, obj7);
+                      cResult[28] = tmp4.rows;
+                      cResult[29] = tmp33;
+                      cResult[30] = tmp39;
+                      tmp36 = tmp39;
+                    }
+                    const obj8 = {
+                      hasIcons: true,
+                      children: arr3.map((icon, index) => {
+                                          let tmpResult;
+                                          const obj = {
+                                            icon: closure_1_5(icon.icon, { color: "interactive-text-default" }),
+                                            label: null,
+                                            subLabel: null,
+                                            onPress() {
+                                              return onSelect(icon.type);
+                                            },
+                                            start: 0 === index,
+                                            end: index === arr3.length - 1,
+                                            arrow: true,
+                                            trailing: tmpResult
+                                          };
+                                          const TableRow = application(arr3[16]).TableRow;
+                                          ({ label: obj.label, subLabel: obj.subLabel } = icon);
+                                          tmpResult = undefined;
+                                          const tmp2 = application;
+                                          const tmp3 = arr3;
+                                          if (icon.beta) {
+                                            tmpResult = tmp(tmp2(tmp3[17]).BetaTag, {});
+                                          }
+                                          return closure_1_5(TableRow, obj, icon.type);
+                                        })
+                    };
+                    const TableRowGroup = tmp(tmp2[15]).TableRowGroup;
+                    const tmp35 = closure_5(TableRowGroup, obj8);
+                    cResult[25] = onSelect;
+                    cResult[26] = arr3;
+                    cResult[27] = tmp35;
+                    tmp33 = tmp35;
+                  }
+                }
+              }
+              const obj9 = { style: tmp4.header, children: items2 };
+              items2 = [tmp17, tmp21, tmp24];
+              const tmp32 = closure_6(closure_4, obj9);
+              cResult[20] = tmp4.header;
+              cResult[21] = tmp17;
+              cResult[22] = tmp21;
+              cResult[23] = tmp24;
+              cResult[24] = tmp32;
+              tmp29 = tmp32;
+            }
+          }
+          let tmp26 = null != application.description;
+          if (tmp26) {
+            const obj11 = { hideName: true, application, viewContainerStyle: null, mainContainerStyle: null };
+            ({ descriptionContainer: obj10.viewContainerStyle, descriptionMainContainer: obj10.mainContainerStyle } = tmp4);
+            tmp26 = closure_5(onSelect(tmp2[14]), obj11);
+          }
+          cResult[16] = application;
+          cResult[17] = tmp4.descriptionContainer;
+          cResult[18] = tmp4.descriptionMainContainer;
+          cResult[19] = tmp26;
+          tmp24 = tmp26;
+        }
+        const obj12 = { style: tmp4.appIconMask, children: tmp10 };
+        const tmp20 = closure_5(closure_4, obj12);
+        cResult[11] = tmp10;
+        cResult[12] = tmp4.appIconMask;
+        cResult[13] = tmp20;
+        tmp17 = tmp20;
+      }
+    }
+    if (null != tmp5) {
+      const obj13 = { style: tmp4.appIcon, source: tmp5 };
+      tmp14 = closure_5(onSelect(tmp2[12]), obj13);
+    } else {
+      const obj14 = { style: items3 };
+      items3 = [, ];
+      ({ appIcon: arr4[0], loadingIcon: arr4[1] } = tmp4);
+      tmp14 = closure_5(closure_4, obj14);
+    }
+    cResult[7] = tmp5;
+    cResult[8] = tmp4.appIcon;
+    cResult[9] = tmp4.loadingIcon;
+    cResult[10] = tmp14;
+    tmp10 = tmp14;
+  }
+  const obj2 = onSelect(tmp2[7]);
+  const obj26 = { id: application.id, icon: application.icon };
+  const applicationIconSource = obj2.getApplicationIconSource(obj26);
+  cResult[0] = application.icon;
+  cResult[1] = application.id;
+  cResult[2] = applicationIconSource;
+  tmp5 = applicationIconSource;
+}) : ((application) => {
   let TableRowGroup;
   let items2;
   let items3;
@@ -87,7 +307,7 @@ export default function IntegrationTypeSelector(application) {
   }, items1);
   if (null != memo) {
     let obj2 = { style: tmp.appIcon, source: memo };
-    tmp5 = closure_5(onSelect(memo1[10]), obj2);
+    tmp5 = closure_5(onSelect(memo1[12]), obj2);
     tmp6 = closure_5;
   } else {
     let tmp3 = closure_5;
@@ -103,13 +323,13 @@ export default function IntegrationTypeSelector(application) {
   const obj5 = { style: tmp.appIconMask, children: tmp5 };
   items3[0] = tmp6(closure_4, obj5);
   const obj6 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: application.name };
-  items3[1] = tmp6(application(memo1[11]).Text, obj6);
+  items3[1] = tmp6(application(memo1[13]).Text, obj6);
   let tmp6Result = null != application.description;
   const tmp12 = application;
   if (tmp6Result) {
     const obj8 = { hideName: true, application, viewContainerStyle: null, mainContainerStyle: null };
     ({ descriptionContainer: obj7.viewContainerStyle, descriptionMainContainer: obj7.mainContainerStyle } = tmp);
-    tmp6Result = tmp6(onSelect(tmp13[12]), obj8);
+    tmp6Result = tmp6(onSelect(tmp13[14]), obj8);
   }
   items3[2] = tmp6Result;
   items4 = [closure_6(closure_4, obj4), ];
@@ -130,19 +350,23 @@ export default function IntegrationTypeSelector(application) {
         arrow: true,
         trailing: tmpResult
       };
-      const TableRow = application(memo1[14]).TableRow;
+      const TableRow = application(memo1[16]).TableRow;
       ({ label: obj.label, subLabel: obj.subLabel } = icon);
       tmpResult = undefined;
       const tmp2 = application;
       const tmp3 = memo1;
       if (icon.beta) {
-        tmpResult = tmp(tmp2(tmp3[15]).BetaTag, {});
+        tmpResult = tmp(tmp2(tmp3[17]).BetaTag, {});
       }
       return closure_1_5(TableRow, obj, icon.type);
     })
   };
-  TableRowGroup = tmp12(tmp13[13]).TableRowGroup;
+  TableRowGroup = tmp12(tmp13[15]).TableRowGroup;
   items4[1] = tmp6(closure_4, obj9);
   return closure_6(closure_4, obj3);
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/oauth2/native/IntegrationTypeSelector.tsx");
+
+export default tmp6;
 export const useStyles = styles;

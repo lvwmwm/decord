@@ -1,10 +1,10 @@
-// Module ID: 12077
-// Function ID: 12078
+// Module ID: 11987
+// Function ID: 11988
 // Name: getBoostLifecyclePhase
 // Dependencies: [11, 2]
 // Exports: getBoostLifecycleInfo, getBoostLifecycleTimestamp
 
-// Module 12077 (getBoostLifecyclePhase)
+// Module 11987 (getBoostLifecyclePhase)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const result = size.fileFinishedImporting("modules/premium/powerups/utils/getBoo
 
 export const BOOST_EXPIRING_DISPLAY_WINDOW_DAYS = 3;
 export const BOOST_EXPIRING_DISPLAY_WINDOW_MS = 259200000;
-export const getBoostLifecycleInfo = function getBoostLifecycleInfo(ended, arg1) {
+export const getBoostLifecycleInfo = function getBoostLifecycleInfo(ended, first1) {
   if (!ended.ended) {
     if (null != ended.endsAt) {
       const endsAt = ended.endsAt;

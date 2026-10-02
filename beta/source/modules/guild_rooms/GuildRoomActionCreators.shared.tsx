@@ -1,21 +1,21 @@
-// Module ID: 4993
-// Function ID: 4994
+// Module ID: 4994
+// Function ID: 4995
 // Name: guildRoomConnect
-// Dependencies: [5, 502, 4994, 1074, 4996, 1271, 4997, 573, 5015, 5026, 5034, 11, 4995, 5035, 5036, 2]
+// Dependencies: [5, 502, 4995, 1086, 4997, 1283, 4998, 585, 5016, 5027, 5035, 11, 4996, 5036, 5037, 2]
 // Exports: clearGuildRoomPendingPosition, createGuildRoomNote, deleteGuildRoomNote, fetchGuildRoom, guildRoomConnect, guildRoomDisconnect, guildRoomLocalDisconnect, guildRoomObjectUpdate, guildRoomToggleLayout, guildRoomUpdate, maybeSetGuildRoomVideoOverlay, placePendingGuildRoomNote, selectGuildRoomLocalPosition, setGuildRoomRememberVideoOverlayVisibility, setGuildRoomVideoOverlayVisibility, startPendingGuildRoomNote
 
-// Module 4993 (guildRoomConnect)
+// Module 4994 (guildRoomConnect)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import GuildRoomTypes from "GuildRoomTypes" /* 4995 */;
-import GuildRoomSeats from "GuildRoomSeats" /* 4996 */;
-import GuildRoomAnalytics from "GuildRoomAnalytics" /* 5015 */;
-import GuildRoomsExperiment from "GuildRoomsExperiment" /* 5036 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import GuildRoomTypes from "GuildRoomTypes" /* 4996 */;
+import GuildRoomSeats from "GuildRoomSeats" /* 4997 */;
+import GuildRoomAnalytics from "GuildRoomAnalytics" /* 5016 */;
+import GuildRoomsExperiment from "GuildRoomsExperiment" /* 5037 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildRoomStore from "GuildRoomStore" /* 4994 */;
+import GuildRoomStore from "GuildRoomStore" /* 4995 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_4, closure_5, closure_6, closure_8, originalRoom, originalRoomObjects, originalRoomUsers, pendingPosition, pendingSeat, room, update;
@@ -37,7 +37,7 @@ let obj = function _guildRoomConnect() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {
@@ -140,7 +140,7 @@ let obj = function _guildRoomConnect() {
               }
               c11 = 0;
               c13 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             c11 = 1;
@@ -173,7 +173,7 @@ obj = function _guildRoomUpdate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -330,7 +330,7 @@ obj = function _guildRoomUpdate() {
             }
             c6 = 0;
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp77) {
           originalRoomObjects = tmp77;
@@ -424,7 +424,7 @@ obj = function _createGuildRoomNote() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -477,7 +477,7 @@ obj = function _createGuildRoomNote() {
             }
             c7 = 0;
             c9 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp24) {
           closure_6 = tmp24;
@@ -508,7 +508,7 @@ obj = function _deleteGuildRoomNote() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -542,7 +542,7 @@ obj = function _deleteGuildRoomNote() {
               const result = obj.trackGuildRoomObjectInteracted(obj7);
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c6 = 3;
@@ -569,7 +569,7 @@ obj = function _fetchGuildRoom() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -616,7 +616,7 @@ obj = function _fetchGuildRoom() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp20) {
           closure_4 = tmp20;
@@ -722,7 +722,7 @@ export const maybeSetGuildRoomVideoOverlay = function maybeSetGuildRoomVideoOver
     obj3.dispatch(obj4);
     if (value !== videoOverlayVisibility) {
       let str = "video_overlay_closed";
-      const trackGuildRoomInteracted = tmp(5015).trackGuildRoomInteracted;
+      const trackGuildRoomInteracted = tmp(5016).trackGuildRoomInteracted;
       GuildRoomAnalytics;
       if (value) {
         str = "video_overlay_opened";

@@ -1,26 +1,26 @@
-// Module ID: 7333
-// Function ID: 7334
+// Module ID: 7337
+// Function ID: 7338
 // Name: ConversationsActionCreators
-// Dependencies: [5, 7014, 7018, 7334, 7015, 1074, 7331, 573, 1271, 6876, 7335, 5026, 5034, 2]
+// Dependencies: [5, 7018, 7022, 7338, 7019, 1086, 7335, 585, 1283, 6880, 7339, 5027, 5035, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, fetchConversation, requestConversationFocus, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 7333 (ConversationsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 5026 */;
-import ConversationConstants from "ConversationConstants" /* 7015 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7335 */;
+// Module 7337 (ConversationsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 5027 */;
+import ConversationConstants from "ConversationConstants" /* 7019 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7339 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7014 */;
-import ConversationsStore from "ConversationsStore" /* 7018 */;
-import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 7334 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7018 */;
+import ConversationsStore from "ConversationsStore" /* 7022 */;
+import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 7338 */;
 import size from "module_2" /* 2 */;
 
 let _false, _undefined, isJump, requestKey;
 
 let tmp;
-const SurveyActionTypes = tmp(5034);
+const SurveyActionTypes = tmp(5035);
 let obj = function _fetchChannelConversations() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_4;
@@ -128,7 +128,7 @@ let obj = function _fetchChannelConversations() {
         c8 = 3;
         return { value: conversations, done: true };
       }
-      await "HermesInternal";
+      await "IconComponent";
       ({ channelId: c0, guildId: c1, direction: c2, anchor: c3, limit: limit2 } = closure_0);
       if (limit2 === undefined) {
         limit2 = FETCH_LIMIT;
@@ -138,7 +138,7 @@ let obj = function _fetchChannelConversations() {
         throwOnError = false;
       }
       hydrateMessages = tmp89.hydrateMessages;
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -161,7 +161,7 @@ obj = function _fetchConversation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -207,7 +207,7 @@ obj = function _fetchConversation() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp15) {
           if (0 === c4) {
             c6 = 3;
@@ -246,7 +246,7 @@ obj = function _fetchConversationMessages() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -285,7 +285,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (isFullyHydratedResult) {
                   c8 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 let hydratedMessages;
@@ -296,7 +296,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (null != hydratedMessages) {
                   c8 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 }
               }
               if (tmp15) {
@@ -339,7 +339,7 @@ obj = function _fetchConversationMessages() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp32) {
           if (0 === c6) {
             c8 = 3;
@@ -390,7 +390,7 @@ export const setSelectedConversation = function setSelectedConversation(channelI
       }
       if (null != startMessageId) {
         const obj3 = { channelId, messageId: startMessageId, flash: false };
-        const tmp6Result = tmp6(6876);
+        const tmp6Result = tmp6(6880);
         tmp6Result.jumpToMessage(obj3);
       }
     }

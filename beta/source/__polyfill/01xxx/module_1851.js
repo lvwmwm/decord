@@ -1,153 +1,130 @@
 // Module ID: 1851
 // Function ID: 1852
-// Dependencies: [17, 1638, 1832]
-// Exports: useSmoothKeyboardHandler
+// Dependencies: [19, 17, 1837, 1644, 1838]
+// Exports: useKeyboardAnimation, useTranslateAnimation
 
 // Module 1851
 import react_native from "react-native" /* 17 */;
-import _mod1638 from "module_1638" /* 1638 */;
+import react from "react" /* 19 */;
+import _mod1644 from "module_1644" /* 1644 */;
+import _mod1837 from "module_1837" /* 1837 */;
+import _mod1838 from "module_1838" /* 1838 */;
 
-const require = globalThis.__r;
-let _require;
+const useLayoutEffect = react.useLayoutEffect;
+const Platform = react_native.Platform;
+const android = "android";
+const __initData = { code: "function pnpm_hooksTs1(e){const{isClosed,heightWhenOpened}=this.__closure;if(e.height>0){isClosed.value=false;heightWhenOpened.value=e.height;}}" };
+const __initData2 = { code: "function pnpm_hooksTs2(e){const{progress,height}=this.__closure;progress.value=e.progress;height.value=e.height;}" };
+const __initData3 = { code: "function pnpm_hooksTs3(e){const{progress,height}=this.__closure;progress.value=e.progress;height.value=e.height;}" };
+const __initData4 = { code: "function pnpm_hooksTs4(e){const{isClosed,height,progress}=this.__closure;isClosed.value=e.height===0;height.value=e.height;progress.value=e.progress;}" };
+const __initData5 = { code: "function pnpm_hooksTs5(e){const{padding,OS,translate}=this.__closure;if(e.height===0){padding.value=0;}if(OS===\"ios\"){translate.value=e.progress;}}" };
+const __initData6 = { code: "function pnpm_hooksTs6(e){const{OS,translate}=this.__closure;if(OS!==\"ios\"){translate.value=e.progress;}}" };
+const __initData7 = { code: "function pnpm_hooksTs7(e){const{padding,translate}=this.__closure;padding.value=0;translate.value=e.progress;}" };
+const __initData8 = { code: "function pnpm_hooksTs8(e){const{padding,OS,translate}=this.__closure;padding.value=e.progress;if(OS!==\"ios\"){translate.value=e.progress;}}" };
 
-let Easing;
-let tmp2 = react_native.Platform.Version >= 30 || false;
-const value = tmp2;
-let obj = { duration: 250, easing: Easing.bezier(0.19919472913616398, 0.010644531250000006, 0.27920937042459737, 0.91025390625) };
-Easing = _mod1638.Easing;
-let closure_4 = { code: "function pnpm_useSmoothKeyboardHandlerTs1(){const{IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS,persistedHeight,TELEGRAM_ANDROID_TIMING_CONFIG,target,animatedKeyboardHeight}=this.__closure;if(IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS){return;}if(persistedHeight.value===0){return;}const event={duration:TELEGRAM_ANDROID_TIMING_CONFIG.duration,target:target.value,height:animatedKeyboardHeight.value,progress:animatedKeyboardHeight.value/persistedHeight.value};return event;}" };
-const __initData = { code: "function pnpm_useSmoothKeyboardHandlerTs2(evt){const{handler,height,persistedHeight}=this.__closure;var _handler$onMove,_handler;if(!evt){return;}(_handler$onMove=(_handler=handler).onMove)===null||_handler$onMove===void 0||_handler$onMove.call(_handler,evt);if(evt.height===height.value){var _handler$onEnd,_handler2;(_handler$onEnd=(_handler2=handler).onEnd)===null||_handler$onEnd===void 0||_handler$onEnd.call(_handler2,evt);persistedHeight.value=height.value;}}" };
-const __initData2 = { code: "function pnpm_useSmoothKeyboardHandlerTs3(e){const{IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS,persistedHeight,handler,target,height,animatedKeyboardHeight,withTiming,TELEGRAM_ANDROID_TIMING_CONFIG}=this.__closure;var _handler$onStart2,_handler3;if(!IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS&&e.height===persistedHeight.value){var _handler$onStart,_handler,_handler$onEnd,_handler2;(_handler$onStart=(_handler=handler).onStart)===null||_handler$onStart===void 0||_handler$onStart.call(_handler,e);(_handler$onEnd=(_handler2=handler).onEnd)===null||_handler$onEnd===void 0||_handler$onEnd.call(_handler2,e);return;}target.value=e.target;height.value=e.height;if(e.height>0){persistedHeight.value=e.height;}if(!IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS){animatedKeyboardHeight.value=withTiming(e.height,TELEGRAM_ANDROID_TIMING_CONFIG);}(_handler$onStart2=(_handler3=handler).onStart)===null||_handler$onStart2===void 0||_handler$onStart2.call(_handler3,{...e,duration:IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS?e.duration:TELEGRAM_ANDROID_TIMING_CONFIG.duration});}" };
-const __initData3 = { code: "function pnpm_useSmoothKeyboardHandlerTs4(e){const{IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS,handler}=this.__closure;if(IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS){var _handler$onMove,_handler;(_handler$onMove=(_handler=handler).onMove)===null||_handler$onMove===void 0||_handler$onMove.call(_handler,e);}}" };
-const __initData4 = { code: "function pnpm_useSmoothKeyboardHandlerTs5(e){const{IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS,handler}=this.__closure;if(IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS){var _handler$onEnd,_handler;(_handler$onEnd=(_handler=handler).onEnd)===null||_handler$onEnd===void 0||_handler$onEnd.call(_handler,e);}}" };
-
-export const useSmoothKeyboardHandler = (handler, items) => {
+export const useKeyboardAnimation = () => {
+  let fn;
   let fn2;
-  let sharedValue;
-  _require = handler;
-  let tmp2 = _require;
-  let tmp3 = sharedValue;
-  obj = require("module_1638");
-  sharedValue = obj.useSharedValue(-1);
-  let obj2 = require("module_1638");
-  const sharedValue1 = obj2.useSharedValue(0);
-  const obj3 = require("module_1638");
-  const sharedValue2 = obj3.useSharedValue(0);
-  const obj4 = require("module_1638");
-  const sharedValue3 = obj4.useSharedValue(0);
-  const fn = function s() {
-    const tmp = React2;
-    if (!tmp) {
-      if (0 !== sharedValue2.value) {
-        obj = { duration: obj.duration, target: sharedValue.value, height: sharedValue3.value, progress: sharedValue3.value / iter.value };
-        return obj;
-      }
-    }
-  };
-  const obj5 = { IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS: sharedValue1, persistedHeight: sharedValue2, TELEGRAM_ANDROID_TIMING_CONFIG: sharedValue2, target: sharedValue, animatedKeyboardHeight: sharedValue3 };
-  fn.__closure = obj5;
-  fn.__workletHash = 4217597553195;
-  fn.__initData = sharedValue3;
-  const tmp8 = require("module_1638");
-  class I {
-    constructor(height) {
-      const tmp = height;
-      if (tmp) {
-        const onMove = handler.onMove;
-        const tmp2 = handler;
-        if (onMove != null) {
-          onMove(height);
-        }
-        if (height.height === sharedValue1.value) {
-          const onEnd = tmp2.onEnd;
-          if (onEnd != null) {
-            onEnd(height);
-          }
-          sharedValue2.value = iter.value;
-        }
-      }
-    }
-  }
-  I.__closure = { handler, height: sharedValue1, persistedHeight: sharedValue2 };
-  I.__workletHash = 1186520959152;
-  I.__initData = __initData;
-  let tmp11 = items;
-  const useAnimatedReaction = tmp8.useAnimatedReaction;
-  if (items) {
-    items = [];
-    HermesBuiltin.arraySpread(items, items, 0);
-    tmp11 = items;
-  }
-  const animatedReaction = useAnimatedReaction(fn, I, tmp11);
-  const obj6 = { onStart: fn2, onMove: R, onEnd: O };
-  fn2 = function v(height) {
-    let duration;
-    if (!React2) {
-      if (height.height === sharedValue2.value) {
-        const onStart = handler.onStart;
-        const tmp3 = handler;
-        if (onStart != null) {
-          onStart(height);
-        }
-        const onEnd = tmp3.onEnd;
-        if (onEnd != null) {
-          onEnd(height);
-        }
-      }
-    }
-    sharedValue.value = height.target;
-    sharedValue1.value = height.height;
+  let fn3;
+  let fn4;
+  const obj = _mod1837;
+  const reanimated = obj.useKeyboardContext().reanimated;
+  const obj2 = _mod1644;
+  const heightWhenOpened = obj2.useSharedValue(0);
+  const obj3 = _mod1644;
+  const height = obj3.useSharedValue(0);
+  const obj4 = _mod1644;
+  const progress = obj4.useSharedValue(0);
+  const obj5 = _mod1644;
+  const isClosed = obj5.useSharedValue(true);
+  useLayoutEffect(() => {
+    const value = reanimated.progress.value;
+    heightWhenOpened.value = -reanimated.height.value;
+    height.value = -reanimated.height.value;
+    progress.value = value;
+    isClosed.value = 0 === value;
+  }, []);
+  const obj7 = { onStart: fn, onMove: fn2, onInteractive: fn3, onEnd: fn4 };
+  fn = function _(height) {
     if (height.height > 0) {
-      sharedValue2.value = height.height;
-    }
-    if (!React2) {
-      obj = _mod1638;
-      sharedValue3.value = obj.withTiming(height.height, obj);
-    }
-    const onStart2 = handler.onStart;
-    if (onStart2 != null) {
-      const obj2 = { duration };
-      const merged = Object.assign(height);
-      if (React2) {
-        duration = height.duration;
-      } else {
-        duration = obj.duration;
-      }
-      onStart2(obj2);
+      isClosed.value = false;
+      heightWhenOpened.value = height.height;
     }
   };
-  const useKeyboardHandler = tmp2(tmp3[2]).useKeyboardHandler;
-  fn2.__closure = { IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS: sharedValue1, persistedHeight: sharedValue2, handler, target: sharedValue, height: sharedValue1, animatedKeyboardHeight: sharedValue3, withTiming: tmp2(tmp3[1]).withTiming, TELEGRAM_ANDROID_TIMING_CONFIG: sharedValue2 };
-  fn2.__workletHash = 2049629670138;
+  fn.__closure = { isClosed, heightWhenOpened };
+  fn.__workletHash = 12249381939606;
+  fn.__initData = __initData;
+  fn2 = function h(progress) {
+    progress.value = progress.progress;
+    height.value = progress.height;
+  };
+  fn2.__closure = { progress, height };
+  fn2.__workletHash = 6522928191084;
   fn2.__initData = __initData2;
-  ({ IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS: sharedValue1, persistedHeight: sharedValue2, handler, target: sharedValue, height: sharedValue1, animatedKeyboardHeight: sharedValue3, withTiming: tmp2(tmp3[1]).withTiming, TELEGRAM_ANDROID_TIMING_CONFIG: sharedValue2 });
-  class R {
-    constructor(arg0) {
-      const tmp = React2;
-      if (tmp) {
-        const onMove = handler.onMove;
-        if (onMove != null) {
-          onMove(arg0);
-        }
-      }
+  fn3 = function l(progress) {
+    progress.value = progress.progress;
+    height.value = progress.height;
+  };
+  fn3.__closure = { progress, height };
+  fn3.__workletHash = 4743203414413;
+  fn3.__initData = __initData3;
+  fn4 = function s(height) {
+    isClosed.value = 0 === height.height;
+    height.value = height.height;
+    progress.value = height.progress;
+  };
+  fn4.__closure = { isClosed, height, progress };
+  fn4.__workletHash = 7189399485148;
+  fn4.__initData = __initData4;
+  const obj6 = _mod1838;
+  obj6.useKeyboardHandler(obj7, []);
+  return { height, progress, heightWhenOpened, isClosed };
+};
+export const useTranslateAnimation = () => {
+  let fn;
+  let fn2;
+  let fn3;
+  let fn4;
+  const obj = _mod1837;
+  const reanimated = obj.useKeyboardContext().reanimated;
+  const obj2 = _mod1644;
+  const padding = obj2.useSharedValue(0);
+  const obj3 = _mod1644;
+  const translate = obj3.useSharedValue(0);
+  useLayoutEffect(() => {
+    padding.value = reanimated.progress.value;
+  }, []);
+  const obj5 = { onStart: fn, onMove: fn2, onInteractive: fn3, onEnd: fn4 };
+  fn = function u(height) {
+    if (0 === height.height) {
+      padding.value = 0;
     }
-  }
-  R.__closure = { IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS: sharedValue1, handler };
-  R.__workletHash = 16381726355375;
-  R.__initData = __initData3;
-  class O {
-    constructor(arg0) {
-      const tmp = React2;
-      if (tmp) {
-        const onEnd = handler.onEnd;
-        if (onEnd != null) {
-          onEnd(arg0);
-        }
-      }
-    }
-  }
-  O.__closure = { IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS: sharedValue1, handler };
-  O.__workletHash = 9348108811600;
-  O.__initData = __initData4;
-  useKeyboardHandler(obj6, items);
+  };
+  const obj6 = { padding, OS: android, translate };
+  fn.__closure = obj6;
+  fn.__workletHash = 12261942243858;
+  fn.__initData = __initData5;
+  fn2 = function n(progress) {
+    translate.value = progress.progress;
+  };
+  fn2.__closure = { OS: android, translate };
+  fn2.__workletHash = 4704193858755;
+  fn2.__initData = __initData6;
+  fn3 = function o(progress) {
+    padding.value = 0;
+    translate.value = progress.progress;
+  };
+  fn3.__closure = { padding, translate };
+  fn3.__workletHash = 3250463859117;
+  fn3.__initData = __initData7;
+  fn4 = function t(progress) {
+    padding.value = progress.progress;
+    translate.value = progress.progress;
+  };
+  fn4.__closure = { padding, OS: android, translate };
+  fn4.__workletHash = 14425204766932;
+  fn4.__initData = __initData8;
+  const obj4 = _mod1838;
+  obj4.useKeyboardHandler(obj5, []);
+  return { translate, padding };
 };

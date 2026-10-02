@@ -1,12 +1,12 @@
-// Module ID: 11107
-// Function ID: 11108
+// Module ID: 10975
+// Function ID: 10976
 // Name: ChannelDetailsUtils
-// Dependencies: [10377, 1095, 2]
+// Dependencies: [10419, 1107, 2]
 // Exports: getChannelDetailsButtons, navigateToChannelDetailsScreen
 
-// Module 11107 (ChannelDetailsUtils)
-import ChannelTypes from "ChannelTypes" /* 1095 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10377 */;
+// Module 10975 (ChannelDetailsUtils)
+import ChannelTypes from "ChannelTypes" /* 1107 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10419 */;
 import size from "module_2" /* 2 */;
 
 const ChannelDetailsButtonTypes = ChannelDetailsConstants.ChannelDetailsButtonTypes;
@@ -30,7 +30,7 @@ export const getChannelDetailsButtons = function getChannelDetailsButtons(channe
   }
   return found;
 };
-export const navigateToChannelDetailsScreen = function navigateToChannelDetailsScreen(navigate, PERMISSIONS, channelId, source) {
+export const navigateToChannelDetailsScreen = function navigateToChannelDetailsScreen(navigation, PERMISSIONS, channelId, source) {
   const obj = { screen: PERMISSIONS, channelId, source };
-  navigate.navigate("sidebar", obj);
+  navigation.navigate("sidebar", obj);
 };

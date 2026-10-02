@@ -1,13 +1,13 @@
-// Module ID: 8175
-// Function ID: 8176
+// Module ID: 8172
+// Function ID: 8173
 // Name: GameProfileMediaSources
-// Dependencies: [1432, 5092, 2015, 2]
+// Dependencies: [1438, 5093, 2021, 2]
 // Exports: buildMediaEntries, buildMediaViewerSources, getCarouselPreviewPixelSize
 
-// Module 8175 (GameProfileMediaSources)
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1432 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2015 */;
-import StoreUtils from "StoreUtils" /* 5092 */;
+// Module 8172 (GameProfileMediaSources)
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1438 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2021 */;
+import StoreUtils from "StoreUtils" /* 5093 */;
 import size_mod from "module_2" /* 2 */;
 
 let originalUrl;
@@ -63,9 +63,9 @@ export const buildMediaEntries = function buildMediaEntries(game) {
   }
   return items;
 };
-export const buildMediaViewerSources = function buildMediaViewerSources(memo1, memo) {
-  let closure_0 = memo;
-  return memo1.map((originalUrl, mediaIndex) => {
+export const buildMediaViewerSources = function buildMediaViewerSources(arr2, cResult) {
+  let closure_0 = cResult;
+  return arr2.map((originalUrl, mediaIndex) => {
     let obj2;
     const obj = { uri: originalUrl.originalUrl, videoURI: originalUrl, mediaIndex, thumbnail: obj2, accessoryType: "embed", disableDownload: true };
     originalUrl = undefined;
@@ -74,7 +74,7 @@ export const buildMediaViewerSources = function buildMediaViewerSources(memo1, m
     }
     const merged = Object.assign(closure_3);
     obj2 = { uri: originalUrl.previewUrl };
-    const merged1 = Object.assign(memo);
+    const merged1 = Object.assign(require);
     return obj;
   });
 };

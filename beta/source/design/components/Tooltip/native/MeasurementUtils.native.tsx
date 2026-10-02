@@ -1,10 +1,10 @@
-// Module ID: 10595
-// Function ID: 10596
+// Module ID: 9662
+// Function ID: 9663
 // Name: MeasurementUtils
 // Dependencies: [5, 12, 2]
 // Exports: getMeasurements
 
-// Module 10595 (MeasurementUtils)
+// Module 9662 (MeasurementUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -78,12 +78,12 @@ let obj = function _retryMeasurements() {
       const obj8 = { value: closure_1(closure_5), done: true };
       return obj8;
     }
-    await "HermesInternal";
+    await "IconComponent";
     num10 = closure_4;
     if (closure_4 === undefined) {
       num10 = 0;
     }
-    return "flex";
+    return "Reflect";
   });
   return obj(...arguments);
 };

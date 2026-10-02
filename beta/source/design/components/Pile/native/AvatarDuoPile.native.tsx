@@ -1,24 +1,91 @@
-// Module ID: 13996
-// Function ID: 13997
+// Module ID: 13998
+// Function ID: 13999
 // Name: AvatarDuoPile
-// Dependencies: [19, 21, 10466, 12116, 8276, 12, 12602, 2]
-// Exports: AvatarDuoPile
+// Dependencies: [109, 19, 21, 558, 576, 10501, 12026, 12, 12604, 8273, 2]
 
-// Module 13996 (AvatarDuoPile)
+// Module 13998 (AvatarDuoPile)
 import _mod12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
-import ClipView from "ClipView" /* 8276 */;
-import Pile2 from "Pile" /* 10466 */;
-import ListUtils from "ListUtils" /* 12116 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12602 */;
+import react2 from "react" /* 576 */;
+import ClipView from "ClipView" /* 8273 */;
+import Pile2 from "Pile" /* 10501 */;
+import ListUtils from "ListUtils" /* 12026 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12604 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
+let closure_2 = ["size", "children"];
 const jsx = Fragment.jsx;
-let size = size_mod;
-const result = size.fileFinishedImporting("design/components/Pile/native/AvatarDuoPile.native.tsx");
-
-export const AvatarDuoPile = function AvatarDuoPile(size) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let arr;
+  let children;
+  let tmp11;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(12);
+  if (cResult[0] !== arg0) {
+    let prop;
+    ({ size, children } = arg0);
+    const tmp9 = _objectWithoutProperties(arg0, closure_2);
+    const Pile = tmp(10501).Pile;
+    if ("aria-label" in tmp9) {
+      prop = tmp9["aria-label"];
+    } else {
+      const tmpResult = ListUtils;
+      prop = tmpResult.getListSummaryLabel(tmp9.names);
+    }
+    cResult[0] = arg0;
+    cResult[1] = Pile;
+    cResult[2] = children;
+    cResult[3] = size;
+    cResult[4] = prop;
+    tmp6 = prop;
+    arr = size;
+    tmp5 = children;
+    tmp4 = Pile;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    arr = cResult[3];
+    tmp6 = cResult[4];
+  }
+  if (cResult[5] !== arr) {
+    let mapped;
+    const tmpResult2 = _mod12;
+    if (tmpResult2.isArray(arr)) {
+      mapped = arr.map((item) => CutoutableAvatarImage.AVATAR_SIZE_MAP[item]);
+    } else {
+      mapped = tmp(12604).AVATAR_SIZE_MAP[arr];
+    }
+    cResult[5] = arr;
+    cResult[6] = mapped;
+    tmp11 = mapped;
+  } else {
+    tmp11 = cResult[6];
+  }
+  if (cResult[7] === tmp4) {
+    if (cResult[8] === tmp5) {
+      if (cResult[9] === tmp6) {
+        let tmp13;
+        if (cResult[10] === tmp11) {
+          tmp13 = cResult[11];
+        }
+        return tmp13;
+      }
+    }
+  }
+  const tmp14 = <tmp4 aria-label={tmp6} shape={ClipView.CutoutShape.Circle} size={tmp11} gap={4} depthX={0.5} depthY={0.5}>{tmp5}</tmp4>;
+  cResult[7] = tmp4;
+  cResult[8] = tmp5;
+  cResult[9] = tmp6;
+  cResult[10] = tmp11;
+  cResult[11] = tmp14;
+  tmp13 = tmp14;
+}) : ((size) => {
   let mapped;
   let prop;
   size = size.size;
@@ -37,7 +104,11 @@ export const AvatarDuoPile = function AvatarDuoPile(size) {
   if (tmp3Result2.isArray(size)) {
     mapped = size.map((item) => CutoutableAvatarImage.AVATAR_SIZE_MAP[item]);
   } else {
-    mapped = tmp3(12602).AVATAR_SIZE_MAP[size];
+    mapped = tmp3(12604).AVATAR_SIZE_MAP[size];
   }
   return tmp2(Pile, obj);
-};
+});
+let size = size_mod;
+const result = size.fileFinishedImporting("design/components/Pile/native/AvatarDuoPile.native.tsx");
+
+export const AvatarDuoPile = tmp3;

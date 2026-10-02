@@ -1,20 +1,20 @@
-// Module ID: 8054
-// Function ID: 8055
+// Module ID: 8058
+// Function ID: 8059
 // Name: FormCTA
-// Dependencies: [19, 17, 1085, 21, 4836, 576, 1177, 5929, 6558, 8055, 2]
-// Exports: default
+// Dependencies: [19, 17, 1097, 21, 4837, 588, 558, 576, 1189, 5914, 6560, 8059, 2]
 
-// Module 8054 (FormCTA)
+// Module 8058 (FormCTA)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1177 */;
-import FormCheckbox from "FormCheckbox" /* 5929 */;
-import FormRowDefault from "FormRow" /* 6558 */;
-import RowButton2 from "RowButton" /* 8055 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1097 */;
+import native from "native" /* 1189 */;
+import FormCheckbox from "FormCheckbox" /* 5914 */;
+import FormRowDefault from "FormRow" /* 6560 */;
+import RowButton2 from "RowButton" /* 8059 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -34,10 +34,288 @@ obj4 = { fontSize: 12, lineHeight: 18, color: nativeDefault.colors.TEXT_SUBTLE, 
 size = { width: nativeDefault.space.PX_40, height: nativeDefault.space.PX_40 };
 obj5 = { color: nativeDefault.colors.TEXT_MUTED };
 let closure_5 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("design/void/Form/native/FormCTA.tsx");
-
-export default function FormCTA(arg0) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let Icon;
+  let completed;
+  let iconContainerStyle;
+  let iconSource;
+  let iconStyle;
+  let items5;
+  let obj10;
+  let onLongPress;
+  let onPress;
+  let style;
+  let subtitle;
+  let title;
+  let titleStyle;
+  let trailing;
+  let variant;
+  let tmp = completed;
+  let tmp2 = dependencyMap;
+  const obj = completed(576);
+  const cResult = obj.c(58);
+  ({ style, title, titleStyle, subtitle, completed } = arg0);
+  ({ iconSource, iconStyle, iconContainerStyle, trailing } = arg0);
+  ({ onPress, onLongPress, variant } = arg0);
+  const tmp4 = closure_5();
+  if (cResult[0] === completed) {
+    if (cResult[1] === iconContainerStyle) {
+      if (cResult[2] === iconSource) {
+        if (cResult[3] === iconStyle) {
+          if (cResult[4] === tmp4.completedIcon) {
+            let tmp5;
+            if (cResult[5] === tmp4.icon) {
+              tmp5 = cResult[6];
+            }
+            if (cResult[7] === completed) {
+              let tmp10;
+              if (cResult[8] === trailing) {
+                tmp10 = cResult[9];
+              }
+              if (cResult[10] === completed) {
+                if (cResult[11] === tmp4.completedText) {
+                  if (cResult[12] === tmp4.description) {
+                    let tmp11;
+                    if (cResult[13] === subtitle) {
+                      tmp11 = cResult[14];
+                    }
+                    if ("row-button" === variant) {
+                      let tmp30;
+                      if (cResult[15] !== completed) {
+                        const obj2 = { checked: completed };
+                        cResult[15] = completed;
+                        cResult[16] = obj2;
+                        tmp30 = obj2;
+                      } else {
+                        tmp30 = cResult[16];
+                      }
+                      let completedText;
+                      if (completed) {
+                        completedText = tmp4.completedText;
+                      }
+                      if (cResult[17] === tmp4.title) {
+                        if (cResult[18] === completedText) {
+                          let tmp32;
+                          if (cResult[19] === titleStyle) {
+                            tmp32 = cResult[20];
+                          }
+                          if (cResult[21] === tmp32) {
+                            let tmp33;
+                            let tmp37;
+                            if (cResult[22] === title) {
+                              tmp33 = cResult[23];
+                            }
+                            if (cResult[24] !== tmp10) {
+                              const tmp10Result = tmp10();
+                              cResult[24] = tmp10;
+                              cResult[25] = tmp10Result;
+                              tmp37 = tmp10Result;
+                            } else {
+                              tmp37 = cResult[25];
+                            }
+                            if (cResult[26] === tmp5) {
+                              if (cResult[27] === onLongPress) {
+                                if (cResult[28] === onPress) {
+                                  if (cResult[29] === tmp11) {
+                                    if (cResult[30] === tmp30) {
+                                      if (cResult[31] === tmp33) {
+                                        let tmp39;
+                                        if (cResult[32] === tmp37) {
+                                          tmp39 = cResult[33];
+                                        }
+                                        return tmp39;
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            const tmp41 = jsx(tmp(8059).RowButton, { arrow: false, onPress, onLongPress, accessibilityState: tmp30, label: tmp33, subLabel: tmp11, trailing: tmp37, icon: tmp5 });
+                            cResult[26] = tmp5;
+                            cResult[27] = onLongPress;
+                            cResult[28] = onPress;
+                            cResult[29] = tmp11;
+                            cResult[30] = tmp30;
+                            cResult[31] = tmp33;
+                            cResult[32] = tmp37;
+                            cResult[33] = tmp41;
+                            tmp39 = tmp41;
+                          }
+                          const tmp36 = jsx(trailing(6560).Label, { style: tmp32, text: title });
+                          cResult[21] = tmp32;
+                          cResult[22] = title;
+                          cResult[23] = tmp36;
+                          tmp33 = tmp36;
+                        }
+                      }
+                      const items = [tmp4.title, completedText, titleStyle];
+                      cResult[17] = tmp4.title;
+                      cResult[18] = completedText;
+                      cResult[19] = titleStyle;
+                      cResult[20] = items;
+                      tmp32 = items;
+                    } else {
+                      if (cResult[34] === style) {
+                        let tmp16;
+                        let tmp17;
+                        if (cResult[35] === tmp4.form) {
+                          tmp16 = cResult[36];
+                        }
+                        if (cResult[37] !== completed) {
+                          const obj5 = { checked: completed };
+                          cResult[37] = completed;
+                          cResult[38] = obj5;
+                          tmp17 = obj5;
+                        } else {
+                          tmp17 = cResult[38];
+                        }
+                        let completedText1;
+                        if (completed) {
+                          completedText1 = tmp4.completedText;
+                        }
+                        if (cResult[39] === tmp4.title) {
+                          if (cResult[40] === completedText1) {
+                            let tmp19;
+                            if (cResult[41] === titleStyle) {
+                              tmp19 = cResult[42];
+                            }
+                            if (cResult[43] === tmp19) {
+                              let tmp20;
+                              let tmp24;
+                              if (cResult[44] === title) {
+                                tmp20 = cResult[45];
+                              }
+                              if (cResult[46] !== tmp10) {
+                                const tmp10Result2 = tmp10();
+                                cResult[46] = tmp10;
+                                cResult[47] = tmp10Result2;
+                                tmp24 = tmp10Result2;
+                              } else {
+                                tmp24 = cResult[47];
+                              }
+                              if (cResult[48] === tmp5) {
+                                if (cResult[49] === onLongPress) {
+                                  if (cResult[50] === onPress) {
+                                    if (cResult[51] === tmp11) {
+                                      if (cResult[52] === tmp16) {
+                                        if (cResult[53] === tmp17) {
+                                          if (cResult[54] === tmp20) {
+                                            if (cResult[55] === tmp24) {
+                                              let tmp26;
+                                              if (cResult[56] === variant) {
+                                                tmp26 = cResult[57];
+                                              }
+                                              return tmp26;
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                              const tmp29 = jsx(trailing(6560), { start: true, end: true, variant, onPress, onLongPress, DEPRECATED_style: tmp16, accessibilityState: tmp17, label: tmp20, subLabel: tmp11, trailing: tmp24, leading: tmp5 });
+                              cResult[48] = tmp5;
+                              cResult[49] = onLongPress;
+                              cResult[50] = onPress;
+                              cResult[51] = tmp11;
+                              cResult[52] = tmp16;
+                              cResult[53] = tmp17;
+                              cResult[54] = tmp20;
+                              cResult[55] = tmp24;
+                              cResult[56] = variant;
+                              cResult[57] = tmp29;
+                              tmp26 = tmp29;
+                            }
+                            const tmp23 = jsx(trailing(6560).Label, { style: tmp19, text: title });
+                            cResult[43] = tmp19;
+                            cResult[44] = title;
+                            cResult[45] = tmp23;
+                            tmp20 = tmp23;
+                          }
+                        }
+                        const items1 = [tmp4.title, completedText1, titleStyle];
+                        cResult[39] = tmp4.title;
+                        cResult[40] = completedText1;
+                        cResult[41] = titleStyle;
+                        cResult[42] = items1;
+                        tmp19 = items1;
+                      }
+                      const items2 = [tmp4.form, style];
+                      cResult[34] = style;
+                      cResult[35] = tmp4.form;
+                      cResult[36] = items2;
+                      tmp16 = items2;
+                    }
+                  }
+                }
+              }
+              let tmp13Result = null;
+              if (undefined !== subtitle) {
+                const items3 = [tmp4.description, ];
+                let completedText2 = null;
+                const SubLabel = trailing(6560).SubLabel;
+                const tmp13 = jsx;
+                if (completed) {
+                  completedText2 = tmp4.completedText;
+                }
+                const obj8 = { style: items3, text: subtitle };
+                items3[1] = completedText2;
+                tmp13Result = tmp13(SubLabel, obj8);
+              }
+              cResult[10] = completed;
+              cResult[11] = tmp4.completedText;
+              cResult[12] = tmp4.description;
+              cResult[13] = subtitle;
+              cResult[14] = tmp13Result;
+              tmp11 = tmp13Result;
+            }
+            const fn = function h() {
+              let tmp2;
+              const tmp = completed;
+              if (tmp) {
+                tmp2 = jsx(FormCheckbox.FormCheckbox, { checked: true });
+              } else {
+                tmp2 = trailing;
+                if (trailing == null) {
+                  tmp2 = jsx(FormRowDefault.Arrow, {});
+                }
+              }
+              return tmp2;
+            };
+            cResult[7] = completed;
+            cResult[8] = trailing;
+            cResult[9] = fn;
+            tmp10 = fn;
+          }
+        }
+      }
+    }
+  }
+  let tmp7Result = null;
+  if (null != iconSource) {
+    const items4 = [iconContainerStyle, ];
+    let completedIcon = null;
+    const tmp8 = View;
+    if (completed) {
+      completedIcon = tmp4.completedIcon;
+    }
+    items4[1] = completedIcon;
+    const obj9 = { style: items4, children: jsx(Icon, obj10) };
+    obj10 = { style: items5, source: iconSource, size: tmp(1189).Icon.Sizes.CUSTOM, disableColor: true };
+    items5 = [tmp4.icon, iconStyle];
+    Icon = tmp(1189).Icon;
+    tmp7Result = tmp7(tmp8, obj9);
+  }
+  cResult[0] = completed;
+  cResult[1] = iconContainerStyle;
+  cResult[2] = iconSource;
+  cResult[3] = iconStyle;
+  cResult[4] = tmp4.completedIcon;
+  cResult[5] = tmp4.icon;
+  cResult[6] = tmp7Result;
+  tmp5 = tmp7Result;
+}) : ((arg0) => {
   let completed;
   let iconContainerStyle;
   let iconSource;
@@ -102,9 +380,9 @@ export default function FormCTA(arg0) {
     items3[1] = completedText1;
     items3[2] = titleStyle;
     if (completed) {
-      trailing = tmp17(tmp18(5929).FormCheckbox, { checked: true });
+      trailing = tmp17(tmp18(5914).FormCheckbox, { checked: true });
     } else if (trailing == null) {
-      trailing = tmp17(tmp20(6558).Arrow, {});
+      trailing = tmp17(tmp20(6560).Arrow, {});
     }
     tmp22Result1 = tmp17(RowButton, obj4);
   } else {
@@ -126,10 +404,14 @@ export default function FormCTA(arg0) {
     } else {
       tmp22Result = trailing;
       if (trailing == null) {
-        tmp22Result = tmp22(tmp23(6558).Arrow, {});
+        tmp22Result = tmp22(tmp23(6560).Arrow, {});
       }
     }
     tmp22Result1 = tmp22(tmp25, obj7);
   }
   return tmp22Result1;
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("design/void/Form/native/FormCTA.tsx");
+
+export default tmp4;

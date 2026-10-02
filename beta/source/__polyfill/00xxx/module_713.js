@@ -1,99 +1,32 @@
 // Module ID: 713
 // Function ID: 714
-// Dependencies: [690, 706, 708, 694]
-// Exports: getClient, getCurrentScope, getGlobalScope, getIsolationScope, getTraceContextFromScope, withIsolationScope, withScope
+// Dependencies: []
+// Exports: parseSampleRate
 
 // Module 713
-import _mod690 from "module_690" /* 690 */;
-import generateSpanId from "generateSpanId" /* 694 */;
-import _mod706 from "module_706" /* 706 */;
-import Scope from "Scope" /* 708 */;
-
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const getClient = function getClient() {
-  const obj = _mod690;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod706;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  const currentScope = asyncContextStrategy.getCurrentScope();
-  return currentScope.getClient();
-};
-export const getCurrentScope = function getCurrentScope() {
-  const obj = _mod690;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod706;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  return asyncContextStrategy.getCurrentScope();
-};
-export const getGlobalScope = function getGlobalScope() {
-  const obj = _mod690;
-  return obj.getGlobalSingleton("globalScope", () => {
-    const scope = new Scope.Scope();
-    return scope;
-  });
-};
-export const getIsolationScope = function getIsolationScope() {
-  const obj = _mod690;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod706;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  return asyncContextStrategy.getIsolationScope();
-};
-export const getTraceContextFromScope = function getTraceContextFromScope(getPropagationContext) {
-  let propagationSpanId;
-  const propagationContext = getPropagationContext.getPropagationContext();
-  const parentSpanId = propagationContext.parentSpanId;
-  const obj = { trace_id: propagationContext.traceId, span_id: propagationSpanId };
-  propagationSpanId = propagationContext.propagationSpanId;
-  if (!propagationSpanId) {
-    const obj2 = generateSpanId;
-    propagationSpanId = obj2.generateSpanId();
-  }
-  if (parentSpanId) {
-    obj.parent_span_id = parentSpanId;
-  }
-  return obj;
-};
-export const withIsolationScope = function withIsolationScope() {
-  let tmp2;
-  let tmp3;
-  const items = [...arguments];
-  const obj = _mod690;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod706;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  if (2 === items.length) {
-    let result;
-    [tmp2, tmp3] = items;
-    if (tmp2) {
-      result = asyncContextStrategy.withSetIsolationScope(tmp2, tmp3);
-    } else {
-      result = asyncContextStrategy.withIsolationScope(tmp3);
-    }
-    return result;
+export const parseSampleRate = function parseSampleRate(flag) {
+  if (typeof flag === "boolean") {
+    const _Number = Number;
+    return Number(flag);
   } else {
-    return asyncContextStrategy.withIsolationScope(items[0]);
-  }
-};
-export const withScope = function withScope() {
-  let tmp2;
-  let tmp3;
-  const items = [...arguments];
-  const obj = _mod690;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod706;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  if (2 === items.length) {
-    let withSetScopeResult;
-    [tmp2, tmp3] = items;
-    if (tmp2) {
-      withSetScopeResult = asyncContextStrategy.withSetScope(tmp2, tmp3);
-    } else {
-      withSetScopeResult = asyncContextStrategy.withScope(tmp3);
+    let parsed = flag;
+    if (typeof flag === "string") {
+      const _parseFloat = parseFloat;
+      parsed = parseFloat(flag);
     }
-    return withSetScopeResult;
-  } else {
-    return asyncContextStrategy.withScope(items[0]);
+    let tmp;
+    if (typeof parsed === "number") {
+      const _isNaN = isNaN;
+      if (!isNaN(parsed)) {
+        if (parsed >= 0) {
+          if (parsed <= 1) {
+            tmp = parsed;
+          }
+        }
+      }
+    }
+    return tmp;
   }
 };

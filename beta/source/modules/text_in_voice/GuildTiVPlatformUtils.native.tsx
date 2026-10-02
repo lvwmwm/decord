@@ -1,10 +1,10 @@
-// Module ID: 7851
-// Function ID: 7852
+// Module ID: 7855
+// Function ID: 7856
 // Name: GuildTiVPlatformUtils
-// Dependencies: [1115, 2]
+// Dependencies: [1127, 2]
 
-// Module 7851 (GuildTiVPlatformUtils)
-import intl2 from "intl" /* 1115 */;
+// Module 7855 (GuildTiVPlatformUtils)
+import intl2 from "intl" /* 1127 */;
 import size from "module_2" /* 2 */;
 
 const obj = {

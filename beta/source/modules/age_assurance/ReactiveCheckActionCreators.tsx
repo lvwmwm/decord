@@ -1,12 +1,12 @@
-// Module ID: 13307
-// Function ID: 13308
+// Module ID: 13309
+// Function ID: 13310
 // Name: ReactiveCheckActionCreators
-// Dependencies: [5, 1074, 1271, 573, 2]
+// Dependencies: [5, 1086, 1283, 585, 2]
 // Exports: fetchReactiveCheckResult, resetAgeVerification
 
-// Module 13307 (ReactiveCheckActionCreators)
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 13309 (ReactiveCheckActionCreators)
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ obj = function _resetAgeVerification() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -76,7 +76,7 @@ obj = function _resetAgeVerification() {
           obj = closure_128_1(closure_128_2[3]);
           obj.dispatch({ type: "AGE_VERIFICATION_RESET" });
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp12) {
         c2 = 3;

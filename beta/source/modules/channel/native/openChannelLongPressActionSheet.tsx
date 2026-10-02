@@ -1,11 +1,11 @@
-// Module ID: 10374
-// Function ID: 10375
+// Module ID: 10417
+// Function ID: 10418
 // Name: openChannelLongPressActionSheet
-// Dependencies: [4800, 10375, 1981, 2]
+// Dependencies: [4801, 10418, 1987, 2]
 // Exports: openChannelLongPressActionSheet
 
-// Module 10374 (openChannelLongPressActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+// Module 10417 (openChannelLongPressActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel/native/openChannelLongPressActionSheet.tsx");
@@ -20,5 +20,5 @@ export const openChannelLongPressActionSheet = function openChannelLongPressActi
       obj.hideActionSheet(combined);
     }
   };
-  obj.openLazy(combined(1981)(10375, dependencyMap.paths), combined, obj2);
+  obj.openLazy(combined(1987)(10418, dependencyMap.paths), combined, obj2);
 };

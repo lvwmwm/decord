@@ -1,18 +1,18 @@
-// Module ID: 9647
-// Function ID: 9648
+// Module ID: 12273
+// Function ID: 12274
 // Name: bug_reporter/BugReportUtils
-// Dependencies: [5, 1182, 1074, 1271, 1115, 9648, 1364, 5029, 1249, 2]
+// Dependencies: [5, 1194, 1086, 1283, 1127, 12274, 1370, 5030, 1261, 2]
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
-// Module 9647 (bug_reporter/BugReportUtils)
-import intl9 from "intl" /* 1115 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5029 */;
-import DebugUploadManager from "DebugUploadManager" /* 9648 */;
+// Module 12273 (bug_reporter/BugReportUtils)
+import intl9 from "intl" /* 1127 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5030 */;
+import DebugUploadManager from "DebugUploadManager" /* 12274 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
-import Constants from "Constants" /* 1074 */;
+import ThemeStore from "ThemeStore" /* 1194 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;
@@ -49,7 +49,7 @@ obj = function _submitReport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;

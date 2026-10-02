@@ -1,28 +1,31 @@
-// Module ID: 14386
-// Function ID: 14387
+// Module ID: 14374
+// Function ID: 14375
 // Name: ProfilePrivacySetting
-// Dependencies: [7417, 2021, 12667, 14387, 4800, 14388, 1981, 1115, 1186, 11006, 2]
+// Dependencies: [7421, 558, 2027, 12669, 14375, 4801, 14376, 1987, 1127, 1198, 10874, 2]
 
-// Module 14386 (ProfilePrivacySetting)
-import intl7 from "intl" /* 1115 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import PrivateProfilesExperiment from "PrivateProfilesExperiment" /* 12667 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14387 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 14374 (ProfilePrivacySetting)
+import intl7 from "intl" /* 1127 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import PrivateProfilesExperiment from "PrivateProfilesExperiment" /* 12669 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14375 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 let obj = {
   useTitle() {
     const intl = intl7.intl;
     return intl.string(intl7.t.Qnf32C);
   },
   parent: MobileUserSettings.DATA_AND_PRIVACY,
-  useValue() {
+  useValue: () => {
     const ProfileVisibility = UserSettings.ProfileVisibility;
     return ProfileVisibility.useSetting();
   },
@@ -41,7 +44,7 @@ let obj = {
         const obj2 = { direction: null, affectedGuildIds: null, settingName: null, mappedActivityValue: null };
         ({ direction: obj4.direction, affectedGuildIds: obj4.affectedGuildIds, settingName: obj4.settingName, mappedActivityValue: obj4.mappedActivityValue } = profileToActivityUpsell);
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(14388, tmp3.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj2);
+        obj3.openLazy(asyncRequire(14376, tmp3.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj2);
       }
     }
   },
@@ -72,6 +75,6 @@ let obj = {
   }
 };
 const radio = SettingBuilders.createRadio(obj);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/ProfilePrivacySetting.tsx");
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/ProfilePrivacySetting.tsx");
 
 export default radio;

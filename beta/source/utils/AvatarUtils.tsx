@@ -1,23 +1,23 @@
-// Module ID: 1397
-// Function ID: 1398
+// Module ID: 1403
+// Function ID: 1404
 // Name: AvatarUtils
-// Dependencies: [1074, 1398, 1400, 1364, 1432, 1473, 1881, 1882, 14, 1966, 1968, 1969, 11, 1368, 2]
+// Dependencies: [1086, 1404, 1406, 1370, 1438, 1479, 1887, 1888, 14, 1972, 1974, 1975, 11, 1374, 2]
 // Exports: getAvatarDecorationURL, getEmojiURL, getGuildMemberAvatarSource, getGuildMemberAvatarURL, getGuildMemberBannerURL, getGuildTemplateIconURL, getNewMemberActionIconURL, getResourceChannelIconURL, getUserBannerURL, getVideoFilterAssetURL, hasAnimatedGuildIcon, isAnimatedIconHash, isAnimatedImageURL, isDataUri, isVideoAssetHash, isVideoURL, makeSource
 
-// Module 1397 (AvatarUtils)
+// Module 1403 (AvatarUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef14 from "module_14" /* 14 */;
-import urlParse from "urlParse" /* 1368 */;
-import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1398 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1432 */;
-import _modDef1473 from "module_1473" /* 1473 */;
-import NumberUtils from "NumberUtils" /* 1882 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1966 */;
-import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1968 */;
-import AssetRegistryDefault from "AssetRegistry" /* 1969 */;
-import Constants from "Constants" /* 1074 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+import urlParse from "urlParse" /* 1374 */;
+import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1404 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1406 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1438 */;
+import _modDef1479 from "module_1479" /* 1479 */;
+import NumberUtils from "NumberUtils" /* 1888 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1972 */;
+import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1974 */;
+import AssetRegistryDefault from "AssetRegistry" /* 1975 */;
+import Constants from "Constants" /* 1086 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -25,7 +25,7 @@ let set;
 let c3;
 let closure_4;
 let tmp2;
-const ForceSdrEmojisStickersExperiment = tmp2(1881);
+const ForceSdrEmojisStickersExperiment = tmp2(1887);
 function getAvatarURL(endpoint) {
   let format;
   let hash;
@@ -122,7 +122,7 @@ function getAvatarURL(endpoint) {
           obj3.animated = true;
         }
         const _HermesInternal2 = HermesInternal;
-        const obj2 = _modDef1473;
+        const obj2 = _modDef1479;
         return combined + "?" + obj2.stringify(obj3);
       }
     }
@@ -283,7 +283,7 @@ function getGuildMemberAvatarURLSimple(size) {
   if (tmp21) {
     obj.animated = true;
   }
-  const obj3 = _modDef1473;
+  const obj3 = _modDef1479;
   return combined + "?" + obj3.stringify(obj);
 }
 function getGuildBannerURL(guild, flag) {
@@ -340,7 +340,7 @@ function getGuildBannerURL(guild, flag) {
       obj.animated = true;
     }
     const _HermesInternal2 = HermesInternal;
-    const obj2 = _modDef1473;
+    const obj2 = _modDef1479;
     return combined + "?" + obj2.stringify(obj);
   }
 }
@@ -646,7 +646,7 @@ function getUserBannerURL(arg0) {
       obj.animated = true;
     }
     const _HermesInternal2 = HermesInternal;
-    const obj3 = _modDef1473;
+    const obj3 = _modDef1479;
     return combined + "?" + obj3.stringify(obj);
   }
 }
@@ -768,7 +768,7 @@ function getGuildMemberBannerURL(arg0) {
         obj.animated = true;
       }
       const _HermesInternal2 = HermesInternal;
-      const obj3 = _modDef1473;
+      const obj3 = _modDef1479;
       return combined + "?" + obj3.stringify(obj);
     }
   }
@@ -840,11 +840,11 @@ function isAnimatedIconHash(storageHash) {
   const startsWithResult = null != storageHash && storageHash.startsWith("a_");
   return startsWithResult;
 }
-function makeSource(automodAvatarURL) {
-  let tmp = automodAvatarURL;
-  if (typeof automodAvatarURL !== "number") {
-    tmp = { uri: automodAvatarURL };
-    const obj = { uri: automodAvatarURL };
+function makeSource(src) {
+  let tmp = src;
+  if (typeof src !== "number") {
+    tmp = { uri: src };
+    const obj = { uri: src };
   }
   return tmp;
 }
@@ -1203,11 +1203,11 @@ let obj = {
     return tmp2;
   },
   makeSource,
-  getAnimatableSourceWithFallback(flag, fn) {
-    const tmp = fn(flag);
+  getAnimatableSourceWithFallback(hasItem, fn) {
+    const tmp = fn(hasItem);
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
-      if (flag) {
+      if (hasItem) {
         if (typeof tmp !== "number") {
           let tmp6;
           const tmp2 = fn(false);

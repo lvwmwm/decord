@@ -1,19 +1,19 @@
-// Module ID: 10167
-// Function ID: 10168
+// Module ID: 10206
+// Function ID: 10207
 // Name: handlePremiumPurchase
-// Dependencies: [109, 5, 19, 8669, 502, 4494, 6658, 1074, 1085, 1271, 10168, 4735, 10169, 1115, 4510, 5203, 6661, 504, 6867, 10170, 10171, 10126, 10172, 6656, 4503, 8668, 1241, 2]
+// Dependencies: [109, 5, 19, 8666, 502, 4497, 6659, 1086, 1097, 1283, 10207, 4737, 10208, 1127, 4513, 5204, 6662, 504, 6871, 10209, 10210, 10165, 10211, 6657, 4506, 8665, 1253, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 10167 (handlePremiumPurchase)
-import Constants2 from "Constants" /* 1085 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 8669 */;
+// Module 10206 (handlePremiumPurchase)
+import Constants2 from "Constants" /* 1097 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 8666 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 4494 */;
-import IAPStore from "IAPStore" /* 6658 */;
-import Constants from "Constants" /* 1074 */;
+import SubscriptionStore from "SubscriptionStore" /* 4497 */;
+import IAPStore from "IAPStore" /* 6659 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let currency, is_gift, offer_id, product_id;
@@ -45,7 +45,7 @@ let obj = function _validatePurchase() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -67,7 +67,7 @@ let obj = function _validatePurchase() {
               ({ productId: c0, premiumSubscription: c1, offerId: c2, currency: c3, price: c4, isGift: c5 } = closure_0);
               is_gift = 1;
               c6 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else {
             let self;
@@ -110,7 +110,7 @@ let obj = function _validatePurchase() {
             } else {
               price = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           }
         } catch (tmp19) {
@@ -423,7 +423,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
       obj = { value, done: true };
       return obj;
     }
-    yield "HermesInternal";
+    yield "IconComponent";
     closure_3 = tmp;
     ({ productId: c0, skuId: c1, analyticsLoadId: c2, analyticsLocation: c3, analyticsLocations: c4, analyticsData: c5, isGift } = premiumSubscription);
     if (isGift === undefined) {
@@ -432,7 +432,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
     flag = tmp185.isOneTimePurchase ?? false;
     flag2 = tmp185.allowPlanChange ?? true;
     ({ applicationId: c9, giftInfoOptions: c10, onPurchaseComplete: c11, onPurchaseError: c12 } = premiumSubscription);
-    return "flex";
+    return "Reflect";
   });
   const items1 = [tmp5, paymentGatewayPlanId, prop, id, premiumTrialOffer, premiumDiscountOffer, stateFromStores, isEligibleForBogoOffer];
   return useCallback(function() {

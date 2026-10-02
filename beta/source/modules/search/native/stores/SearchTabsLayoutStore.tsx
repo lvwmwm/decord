@@ -1,22 +1,22 @@
-// Module ID: 11845
-// Function ID: 11846
+// Module ID: 11738
+// Function ID: 11739
 // Name: SearchTabsLayoutStore
-// Dependencies: [11846, 2045, 6699, 11850, 11851, 11852, 11822, 7303, 558, 11823, 11849, 11848, 504, 573, 2]
+// Dependencies: [11739, 2051, 6700, 11743, 11744, 11745, 11715, 7307, 568, 11716, 11742, 11741, 504, 585, 2]
 
-// Module 11845 (SearchTabsLayoutStore)
+// Module 11738 (SearchTabsLayoutStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import SearchUtils from "SearchUtils" /* 11823 */;
-import IntelligenceSearchTypes from "IntelligenceSearchTypes" /* 11848 */;
-import IntelligenceSearchUtils from "IntelligenceSearchUtils" /* 11849 */;
-import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11846 */;
-import ChannelStore_mod from "ChannelStore" /* 2045 */;
-import SearchMessageStore from "SearchMessageStore" /* 6699 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 11850 */;
-import SearchMemberTabStore from "SearchMemberTabStore" /* 11851 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 11852 */;
-import SearchQueryStore from "SearchQueryStore" /* 11822 */;
-import SearchConstants from "SearchConstants" /* 7303 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import SearchUtils from "SearchUtils" /* 11716 */;
+import IntelligenceSearchTypes from "IntelligenceSearchTypes" /* 11741 */;
+import IntelligenceSearchUtils from "IntelligenceSearchUtils" /* 11742 */;
+import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11739 */;
+import ChannelStore_mod from "ChannelStore" /* 2051 */;
+import SearchMessageStore from "SearchMessageStore" /* 6700 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 11743 */;
+import SearchMemberTabStore from "SearchMemberTabStore" /* 11744 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 11745 */;
+import SearchQueryStore from "SearchQueryStore" /* 11715 */;
+import SearchConstants from "SearchConstants" /* 7307 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -118,7 +118,7 @@ function computeLayoutForState(value) {
         const tmp11 = searchResultsQuery;
         const tmp8 = require;
         if (null != totalCount2) {
-          const tmp8Result = tmp8(11849);
+          const tmp8Result = tmp8(11742);
           sum = totalCount2 + tmp8Result.getIntelligenceSearchCitationsCount(tmp10, tmp11, totalCount2 > 0);
         }
         acc[item] = sum;
@@ -184,8 +184,8 @@ function computeLayoutForState(value) {
     let tmp18 = visibleTabCounts2 === visibleTabCounts;
     const tmp17 = !result1;
     if (!tmp18) {
-      tmp18 = null != visibleTabCounts2 && null != visibleTabCounts && searchContext(558)(visibleTabCounts2, visibleTabCounts);
-      const tmp19 = null != visibleTabCounts2 && null != visibleTabCounts && searchContext(558)(visibleTabCounts2, visibleTabCounts);
+      tmp18 = null != visibleTabCounts2 && null != visibleTabCounts && searchContext(568)(visibleTabCounts2, visibleTabCounts);
+      const tmp19 = null != visibleTabCounts2 && null != visibleTabCounts && searchContext(568)(visibleTabCounts2, visibleTabCounts);
     }
     const tmp21 = !tmp18;
     if (!result) {

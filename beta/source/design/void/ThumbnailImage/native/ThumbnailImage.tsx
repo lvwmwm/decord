@@ -1,15 +1,16 @@
-// Module ID: 13641
-// Function ID: 13642
+// Module ID: 13643
+// Function ID: 13644
 // Name: ThumbnailImage
-// Dependencies: [19, 17, 21, 1364, 13642, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 1370, 13644, 558, 576, 2]
 
-// Module 13641 (ThumbnailImage)
+// Module 13643 (ThumbnailImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import LocalImageThumbnailNativeComponent from "LocalImageThumbnailNativeComponent" /* 13642 */;
+import react2 from "react" /* 576 */;
+import LocalImageThumbnailNativeComponent from "LocalImageThumbnailNativeComponent" /* 13644 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 react_native.Image;
@@ -17,9 +18,24 @@ const jsx = Fragment.jsx;
 if (PlatformUtils.isAndroid()) {
   LocalImageThumbnailNativeComponent.default;
 }
-const result = size.fileFinishedImporting("design/void/ThumbnailImage/native/ThumbnailImage.tsx");
-
-export default function LocalImageThumbnail(arg0) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp2;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] !== arg0) {
+    const merged = Object.assign(arg0);
+    const tmp8 = <_default />;
+    cResult[0] = arg0;
+    cResult[1] = tmp8;
+    tmp2 = tmp8;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return tmp2;
+}) : ((arg0) => {
   const merged = Object.assign(arg0);
   return <_default />;
-};
+});
+const result = size.fileFinishedImporting("design/void/ThumbnailImage/native/ThumbnailImage.tsx");
+
+export default tmp3;

@@ -1,22 +1,22 @@
-// Module ID: 4902
-// Function ID: 4903
+// Module ID: 4903
+// Function ID: 4904
 // Name: Connection
-// Dependencies: [32, 4861, 4893, 4903, 1995, 4, 4891, 4951, 4952, 4953, 4901, 4955, 4904, 4956, 4908, 4957, 4960, 2]
+// Dependencies: [32, 4862, 4894, 4904, 2001, 4, 4892, 4952, 4953, 4954, 4902, 4956, 4905, 4957, 4909, 4958, 4961, 2]
 
-// Module 4902 (Connection)
-import inject from "inject" /* 1995 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
-import VideoQualityManager from "VideoQualityManager" /* 4904 */;
-import cloneDeepDefault from "cloneDeep" /* 4908 */;
-import VideoCodecUtils from "VideoCodecUtils" /* 4951 */;
-import transformStatsDefault from "transformStats" /* 4953 */;
-import isEqualDefault from "isEqual" /* 4955 */;
-import discord_common_VoiceEngine from "discord_common/VoiceEngine" /* 4956 */;
-import reduceDefault from "reduce" /* 4957 */;
+// Module 4903 (Connection)
+import inject from "inject" /* 2001 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4892 */;
+import VideoQualityManager from "VideoQualityManager" /* 4905 */;
+import cloneDeepDefault from "cloneDeep" /* 4909 */;
+import VideoCodecUtils from "VideoCodecUtils" /* 4952 */;
+import transformStatsDefault from "transformStats" /* 4954 */;
+import isEqualDefault from "isEqual" /* 4956 */;
+import discord_common_VoiceEngine from "discord_common/VoiceEngine" /* 4957 */;
+import reduceDefault from "reduce" /* 4958 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Constants_mod from "Constants" /* 4861 */;
-import Constants_mod2 from "Constants" /* 4893 */;
-import BaseConnection from "BaseConnection" /* 4903 */;
+import Constants_mod from "Constants" /* 4862 */;
+import Constants_mod2 from "Constants" /* 4894 */;
+import BaseConnection from "BaseConnection" /* 4904 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -145,7 +145,7 @@ class Connection extends BaseConnection {
           tmp11 = false === obj.soundshareSentSpeakingEvent;
         }
         if (tmp11) {
-          closure_0.emit(tmp3(4891).BaseConnectionEvent.SoundshareSpeaking);
+          closure_0.emit(tmp3(4892).BaseConnectionEvent.SoundshareSpeaking);
           closure_0.soundshareSentSpeakingEvent = true;
         }
       }
@@ -333,7 +333,7 @@ class Connection extends BaseConnection {
         const conn = closure_0.conn;
         const _Math = Math;
         const setTransportOptions = conn.setTransportOptions;
-        const obj = { encodingVoiceBitRate: Math.max(authStore5, closure_0.voiceBitrate) };
+        const obj = { encodingVoiceBitRate: Math.max(afk, closure_0.voiceBitrate) };
         setTransportOptions(obj);
         closure_0.emit(BaseConnectionEvent.BaseConnectionEvent.SoundshareAttached);
       }
@@ -398,7 +398,7 @@ class Connection extends BaseConnection {
               if (diff1 >= 0) {
                 let num = 1;
                 let num2 = 100;
-                const tmp6 = tmp24(4960)(diff1 / (diff + diff1), 0, 1);
+                const tmp6 = tmp24(4961)(diff1 / (diff + diff1), 0, 1);
                 closure_0.emit(BaseConnectionEvent.BaseConnectionEvent.OutboundLossRate, 100 * tmp6);
               }
             }
@@ -540,7 +540,7 @@ class Connection extends BaseConnection {
     let items = [obj, ...this.videoStreamParameters];
     address.streamParameters = items;
     address.context = this.context;
-    let obj2 = createVoiceConnection(1995);
+    let obj2 = createVoiceConnection(2001);
     const voiceEngine = obj2.getVoiceEngine();
     if (null != voiceEngine.createOwnStreamConnectionWithOptions) {
       if (self.context === tmp3.STREAM) {
@@ -858,7 +858,7 @@ class Connection extends BaseConnection {
       resolved = Promise.resolve(null);
     } else {
       const tmp = self;
-      const tmp3 = self(4952);
+      const tmp3 = self(4953);
       self = this;
       const self2 = this;
       const timeout = tmp3.timeout;
@@ -877,7 +877,7 @@ class Connection extends BaseConnection {
           const stats1 = voiceEngine.getStats((arg0) => closure_0(transformStatsDefault(self.mediaEngineConnectionId, arg0, self.remoteVideoSinkWants, self.localVideoSinkWants)));
         }
       });
-      const timeoutResult = timeout(promise, self(4901).STATS_INTERVAL);
+      const timeoutResult = timeout(promise, self(4902).STATS_INTERVAL);
       resolved = timeoutResult.catch((error) => {
         if (!(error instanceof self(dependencyMap[8]).TimeoutError)) {
           throw error;
@@ -1166,7 +1166,7 @@ class Connection extends BaseConnection {
       let bound = voiceBitrate;
       if (self.soundshareActive) {
         const _Math = Math;
-        bound = Math.max(authStore5, voiceBitrate);
+        bound = Math.max(afk, voiceBitrate);
       }
       const conn = self.conn;
       const obj = { encodingVoiceBitRate: bound };
@@ -1625,7 +1625,7 @@ class Connection extends BaseConnection {
           FIXED = constants7.FIXED;
         }
         const emit = self.emit;
-        const Video = tmp8(4891).BaseConnectionEvent.Video;
+        const Video = tmp8(4892).BaseConnectionEvent.Video;
         ({ userId, audioSSRC } = self);
         const ssrc = self.videoStreamParameters[num5].ssrc;
         const ssrc2 = self.videoStreamParameters[num5].ssrc;
@@ -1760,7 +1760,7 @@ class Connection extends BaseConnection {
           const self2 = this;
           const error = new Error("Invalid rid");
           closure_0(error);
-          return { v: "Path" };
+          return { v: "call" };
         } else {
           const items = [];
           if (!isEqualDefault(self.videoStreamParameters[findIndexResult], closure_1[findIndexResult])) {
@@ -1982,7 +1982,7 @@ class Connection extends BaseConnection {
         tmp7.params["hardware-h264"] = "1";
         let experimentFlags5 = self.experimentFlags;
         if (experimentFlags5.has(tmp8.USE_LIBOPENH264_DECODER)) {
-          let tmp25Result = tmp25(1995);
+          let tmp25Result = tmp25(2001);
           let openH264LibraryPath = tmp25Result.getOpenH264LibraryPath();
           if (null != openH264LibraryPath) {
             tmp7.params.libopenh264 = "1";

@@ -1,24 +1,167 @@
-// Module ID: 10370
-// Function ID: 10371
+// Module ID: 10413
+// Function ID: 10414
 // Name: GroupDMRow
-// Dependencies: [19, 10320, 21, 4989, 10371, 1177, 10372, 4832, 5916, 5917, 2]
-// Exports: default
+// Dependencies: [109, 19, 10361, 21, 558, 576, 4990, 10414, 1189, 10415, 4833, 5913, 5916, 2]
 
-// Module 10370 (GroupDMRow)
+// Module 10413 (GroupDMRow)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 1177 */;
-import useChannelNameDefault from "useChannelName" /* 4989 */;
-import UserRowConstants from "UserRowConstants" /* 10320 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10371 */;
-import useRecipientsLabel from "useRecipientsLabel" /* 10372 */;
+import react2 from "react" /* 576 */;
+import useChannelNameDefault from "useChannelName" /* 4990 */;
+import UserRowConstants from "UserRowConstants" /* 10361 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let channel;
+
+let tmp;
+let tmp15;
+const native = tmp(1189);
+const Text_Text = tmp(4833);
+const TableCheckboxRow2 = tmp(5913);
+const TableRow2 = tmp(5916);
+const GroupDMAvatarDefault = tmp15(10414);
+const useRecipientsLabel = tmp(10415);
+let closure_3 = ["channel", "mode", "selected", "disabled", "onPress"];
 const UserRowModes = UserRowConstants.UserRowModes;
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/GroupDMRow.tsx");
-
-export default function GroupDMRow(channel) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let NONE;
+  let disabled;
+  let mode;
+  let onPress;
+  let selected;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  const tmp = require;
+  const obj = react2;
+  const cResult = obj.c(26);
+  if (cResult[0] !== channel) {
+    channel = channel.channel;
+    let closure_0 = channel;
+    ({ mode, selected, disabled, onPress } = channel);
+    let closure_1 = onPress;
+    const tmp11 = _objectWithoutProperties(channel, closure_3);
+    cResult[0] = channel;
+    cResult[1] = channel;
+    cResult[2] = onPress;
+    cResult[3] = tmp11;
+    cResult[4] = mode;
+    cResult[5] = selected;
+    cResult[6] = disabled;
+    tmp8 = disabled;
+    tmp7 = selected;
+    NONE = mode;
+    tmp6 = tmp11;
+  } else {
+    closure_0 = cResult[1];
+    closure_1 = cResult[2];
+    tmp6 = cResult[3];
+    NONE = cResult[4];
+    tmp7 = cResult[5];
+    tmp8 = cResult[6];
+  }
+  if (undefined === NONE) {
+    NONE = UserRowModes.NONE;
+  }
+  const tmp16 = useChannelNameDefault(tmp4);
+  if (cResult[7] === tmp4) {
+    let tmp17;
+    let tmp18;
+    let tmp23;
+    if (cResult[8] === tmp5) {
+      tmp17 = cResult[9];
+    }
+    if (cResult[10] !== tmp4) {
+      GroupDMAvatarDefault;
+      const tmp21 = <tmp15Result size={native.AvatarSizes.REFRESH_MEDIUM_32} channel={tmp4} />;
+      cResult[10] = tmp4;
+      cResult[11] = tmp21;
+      tmp18 = tmp21;
+    } else {
+      tmp18 = cResult[11];
+    }
+    const tmpResult = useRecipientsLabel;
+    const recipientsLabel = tmpResult.useRecipientsLabel(tmp4);
+    if (cResult[12] !== recipientsLabel) {
+      let tmp25;
+      if (null != recipientsLabel) {
+        tmp25 = jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel });
+      }
+      cResult[12] = recipientsLabel;
+      cResult[13] = tmp25;
+      tmp23 = tmp25;
+    } else {
+      tmp23 = cResult[13];
+    }
+    let str = tmp16;
+    if (tmp16 == null) {
+      str = "";
+    }
+    if (cResult[14] === (undefined !== tmp8 && tmp8)) {
+      if (cResult[15] === tmp17) {
+        if (cResult[16] === tmp18) {
+          if (cResult[17] === tmp6) {
+            if (cResult[18] === tmp23) {
+              let tmp28;
+              let tmp33;
+              if (cResult[19] === str) {
+                tmp28 = cResult[20];
+              }
+              if (NONE === UserRowModes.TOGGLE) {
+                if (cResult[21] === (undefined !== tmp7 && tmp7)) {
+                  let tmp39;
+                  if (cResult[22] === tmp28) {
+                    tmp39 = cResult[23];
+                  }
+                  tmp33 = tmp39;
+                }
+                const TableCheckboxRow = TableCheckboxRow2.TableCheckboxRow;
+                const merged = Object.assign(tmp28);
+                const tmp44 = <TableCheckboxRow checked={undefined !== tmp7 && tmp7} />;
+                cResult[21] = undefined !== tmp7 && tmp7;
+                cResult[22] = tmp28;
+                cResult[23] = tmp44;
+                tmp39 = tmp44;
+              } else if (cResult[24] !== tmp28) {
+                const TableRow = TableRow2.TableRow;
+                const merged1 = Object.assign(tmp28);
+                const tmp38 = <TableRow />;
+                cResult[24] = tmp28;
+                cResult[25] = tmp38;
+                tmp33 = tmp38;
+              } else {
+                tmp33 = cResult[25];
+              }
+              return tmp33;
+            }
+          }
+        }
+      }
+    }
+    const obj6 = { disabled: undefined !== tmp8 && tmp8, subLabel: tmp23, icon: tmp18, onPress: tmp17, label: str, labelLineClamp: 1, height: "100%" };
+    const merged2 = Object.assign(tmp6);
+    cResult[14] = undefined !== tmp8 && tmp8;
+    cResult[15] = tmp17;
+    cResult[16] = tmp18;
+    cResult[17] = tmp6;
+    cResult[18] = tmp23;
+    cResult[19] = str;
+    cResult[20] = obj6;
+    tmp28 = obj6;
+  }
+  const fn = function _() {
+    if (closure_1 != null) {
+      tmp(closure_0);
+    }
+  };
+  cResult[7] = tmp4;
+  cResult[8] = tmp5;
+  cResult[9] = fn;
+  tmp17 = fn;
+}) : ((channel) => {
   let tmp5Result;
   let tmp5Result2;
   channel = channel.channel;
@@ -53,21 +196,24 @@ export default function GroupDMRow(channel) {
   tmp5Result = undefined;
   if (null != recipientsLabel) {
     const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-    tmp5Result = tmp5(tmp7(4832).Text, obj4);
+    tmp5Result = tmp5(tmp7(4833).Text, obj4);
   }
   if (str == null) {
     str = "";
   }
   if (NONE === UserRowModes.TOGGLE) {
     const obj5 = { checked: flag };
-    const TableCheckboxRow = tmp7(5916).TableCheckboxRow;
+    const TableCheckboxRow = tmp7(5913).TableCheckboxRow;
     const merged2 = Object.assign(obj3);
     tmp5Result2 = tmp5(TableCheckboxRow, obj5);
   } else {
     const obj6 = {};
-    const TableRow = tmp7(5917).TableRow;
+    const TableRow = tmp7(5916).TableRow;
     const merged3 = Object.assign(obj3);
     tmp5Result2 = tmp5(TableRow, obj6);
   }
   return tmp5Result2;
-};
+});
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/GroupDMRow.tsx");
+
+export default tmp2;

@@ -1,21 +1,22 @@
-// Module ID: 15077
-// Function ID: 15078
+// Module ID: 15065
+// Function ID: 15066
 // Name: UserSettingsAppIcons
-// Dependencies: [5, 19, 17, 1372, 1074, 8624, 21, 4836, 504, 12995, 1970, 6583, 8625, 8614, 8053, 15078, 9425, 8695, 8663, 1115, 2]
+// Dependencies: [5, 19, 17, 1378, 1086, 8621, 21, 4837, 558, 576, 504, 12997, 1976, 6584, 8622, 8611, 8057, 15066, 9421, 8690, 8660, 1127, 2]
 
-// Module 15077 (UserSettingsAppIcons)
+// Module 15065 (UserSettingsAppIcons)
 import react_native from "react-native" /* 17 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
-import AppIconConstants from "AppIconConstants" /* 8624 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8663 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8695 */;
-import AppIconRowsDefault from "AppIconRows" /* 15078 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6584 */;
+import AppIconConstants from "AppIconConstants" /* 8621 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8660 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8690 */;
+import AppIconRowsDefault from "AppIconRows" /* 15066 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, dependencyMap, importDefault;
@@ -26,13 +27,243 @@ let metroImportDefault;
 let metroRequire;
 let tmp6;
 let unpackModuleId;
-const NitroUpsellButtonDefault = tmp6(9425);
+const NitroUpsellButtonDefault = tmp6(9421);
 const View = react_native.View;
 ({ UpsellTypes: metroRequire, AnalyticsPages: metroImportDefault } = Constants);
 const getIconById = AppIconConstants.getIconById;
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
 let closure_12 = createStyles.createStyles({ upsellButtonContainer: { padding: 0, position: "absolute", bottom: 56, width: 350, alignSelf: "center" } });
-const memoResult = react.memo(() => {
+const memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_2;
+  let currentUser;
+  let intl;
+  let items1;
+  let obj4;
+  let obj5;
+  let obj8;
+  let stateFromStores;
+  let tmp10;
+  let tmp12Result;
+  let tmp13;
+  let tmp5;
+  let tmp6;
+  let tmp = stateFromStores;
+  const tmp2 = dependencyMap;
+  let obj = stateFromStores(576);
+  const cResult = obj.c(18);
+  const tmp4 = closure_12();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function s() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = fn;
+    tmp5 = items;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(504);
+  stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  const tmpResult3 = tmp(12997);
+  const currentAppIcon = tmpResult3.useCurrentAppIcon();
+  if (cResult[2] !== stateFromStores) {
+    const tmpResult4 = tmp(1976);
+    const isPremiumResult = tmpResult4.isPremium(stateFromStores);
+    cResult[2] = stateFromStores;
+    cResult[3] = isPremiumResult;
+    tmp10 = isPremiumResult;
+  } else {
+    tmp10 = cResult[3];
+  }
+  dependencyMap = tmp10;
+  const analyticsLocations = currentAppIcon(6584)().analyticsLocations;
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = { page: constants.APP_ICONS };
+    cResult[4] = obj2;
+    tmp13 = obj2;
+  } else {
+    tmp13 = cResult[4];
+  }
+  const analyticsLocation = tmp13;
+  if (cResult[5] === currentAppIcon) {
+    let tmp16 = null;
+    let premiumType;
+    const tmp15 = cResult[6];
+    if (stateFromStores != null) {
+      premiumType = stateFromStores.premiumType;
+    }
+    if (tmp15 === premiumType) {
+      let tmp18;
+      let tmp20;
+      if (cResult[7] === tmp10) {
+        tmp18 = cResult[8];
+      }
+      if (cResult[9] !== tmp18) {
+        let obj3 = { children: closure_9(analyticsLocation, obj4) };
+        let tmp22 = analyticsLocation;
+        obj4 = { accessibilityRole: "radiogroup", children: closure_9(tmp12(15066), obj5) };
+        const Form = tmp(8057).Form;
+        obj5 = { onSelect: tmp18 };
+        const tmp23 = closure_9(Form, obj3);
+        cResult[9] = tmp18;
+        cResult[10] = tmp23;
+        tmp20 = tmp23;
+      } else {
+        tmp20 = cResult[10];
+      }
+      if (cResult[11] === analyticsLocations) {
+        if (cResult[12] === tmp10) {
+          let tmp24;
+          if (cResult[13] === tmp4) {
+            tmp24 = cResult[14];
+          }
+          if (cResult[15] === tmp20) {
+            let tmp29;
+            if (cResult[16] === tmp24) {
+              tmp29 = cResult[17];
+            }
+            return tmp29;
+          }
+          let obj6 = { children: items1 };
+          items1 = [tmp20, tmp24];
+          const tmp32 = closure_11(closure_10, obj6);
+          cResult[15] = tmp20;
+          cResult[16] = tmp24;
+          cResult[17] = tmp32;
+          tmp29 = tmp32;
+        }
+      }
+      let tmp25 = !tmp10;
+      if (tmp25) {
+        const tmp26 = closure_9;
+        const tmp27 = analyticsLocation;
+        let obj7 = { style: tmp4.upsellButtonContainer, children: closure_9(tmp12Result, obj8) };
+        obj8 = {
+          onPress() {
+                  const obj = { analyticsLocation, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
+                  const tmp = openPremiumModalDefault;
+                  tmp(obj);
+                },
+          text: intl.string(tmp(1127).t.M0rDSO)
+        };
+        tmp12Result = currentAppIcon(9421);
+        intl = tmp(1127).intl;
+        tmp25 = closure_9(analyticsLocation, obj7);
+      }
+      cResult[11] = analyticsLocations;
+      cResult[12] = tmp10;
+      cResult[13] = tmp4;
+      cResult[14] = tmp25;
+      tmp24 = tmp25;
+    }
+  }
+  let closure_0 = analyticsLocations(function*(arg0, value) {
+    closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c1 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c1 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c1 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            const tmp24 = getIconById(closure_0);
+            const tmp22 = closure_0;
+            if (null != tmp24) {
+              const id = tmp24.id;
+              if (id === tmp22) {
+                if (c1 !== id) {
+                  if (tmp26) {
+                    const tmp9 = c2;
+                    if (!tmp9) {
+                      const obj5 = { initialUpsellKey: constants.APP_ICONS, imageSource: tmp27 };
+                      const obj4 = currentAppIcon(closure_2_2[15]);
+                      const result = obj4.handleShowUpsellAlert(obj5);
+                    }
+                  }
+                  let premiumType;
+                  const setAppIcon2 = closure_0(closure_2_2[11]).setAppIcon;
+                  const tmp16 = closure_0(closure_2_2[11]);
+                  if (closure_0 != null) {
+                    premiumType = closure_0.premiumType;
+                  }
+                  c2 = 1;
+                  c1 = 1;
+                  const obj6 = { value: setAppIcon2(id, premiumType), done: false };
+                  return obj6;
+                }
+              } else {
+                const setAppIcon = closure_0(closure_2_2[11]).setAppIcon;
+                let premiumType1;
+                const tmp6 = closure_0(closure_2_2[11]);
+                const DEFAULT = closure_0(closure_2_2[14]).FreemiumAppIconIds.DEFAULT;
+                if (closure_0 != null) {
+                  premiumType1 = closure_0.premiumType;
+                }
+                c2 = 2;
+                c1 = 1;
+                const obj7 = { value: setAppIcon(DEFAULT, premiumType1), done: false };
+                return obj7;
+              }
+            }
+          }
+        } else if (1 === tmp3) {
+          if (arg0 === 1) {
+            c1 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c1 = 3;
+            const obj8 = { value, done: true };
+            return obj8;
+          }
+        } else if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          const obj = { value, done: true };
+          return obj;
+        }
+        c1 = 3;
+        return { value: "IconComponent", done: null };
+      } catch (tmp18) {
+        c1 = 3;
+        throw tmp18;
+      }
+    }
+  });
+  cResult[5] = currentAppIcon;
+  let premiumType1;
+  if (stateFromStores != null) {
+    premiumType1 = stateFromStores.premiumType;
+  }
+  function onSelect() {
+    return closure_0(...arguments);
+  }
+  cResult[6] = premiumType1;
+  cResult[7] = tmp10;
+  cResult[8] = onSelect;
+  tmp18 = onSelect;
+}) : (() => {
   let closure_1;
   let intl;
   let obj6;
@@ -40,7 +271,7 @@ const memoResult = react.memo(() => {
   let obj9;
   let stateFromStores;
   let tmp6Result;
-  let obj = function _onSelect() {
+  let obj = function _onSelect2() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let v3;
       let closure_0 = arg0;
@@ -54,7 +285,7 @@ const memoResult = react.memo(() => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -78,13 +309,13 @@ const memoResult = react.memo(() => {
                       const tmp9 = dependencyMap;
                       if (!tmp9) {
                         const obj5 = { initialUpsellKey: constants.APP_ICONS, imageSource: tmp27 };
-                        obj4 = c1(c2[13]);
+                        obj4 = c1(c2[15]);
                         const result = obj4.handleShowUpsellAlert(obj5);
                       }
                     }
                     let premiumType;
-                    const setAppIcon2 = closure_0(c2[9]).setAppIcon;
-                    const tmp16 = closure_0(c2[9]);
+                    const setAppIcon2 = closure_0(c2[11]).setAppIcon;
+                    const tmp16 = closure_0(c2[11]);
                     if (stateFromStores != null) {
                       premiumType = stateFromStores.premiumType;
                     }
@@ -94,10 +325,10 @@ const memoResult = react.memo(() => {
                     return obj6;
                   }
                 } else {
-                  const setAppIcon = closure_0(c2[9]).setAppIcon;
+                  const setAppIcon = closure_0(c2[11]).setAppIcon;
                   let premiumType1;
-                  const tmp6 = closure_0(c2[9]);
-                  const DEFAULT = closure_0(c2[12]).FreemiumAppIconIds.DEFAULT;
+                  const tmp6 = closure_0(c2[11]);
+                  const DEFAULT = closure_0(c2[14]).FreemiumAppIconIds.DEFAULT;
                   if (stateFromStores != null) {
                     premiumType1 = stateFromStores.premiumType;
                   }
@@ -126,7 +357,7 @@ const memoResult = react.memo(() => {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp18) {
           c1 = 3;
           throw tmp18;
@@ -141,9 +372,9 @@ const memoResult = react.memo(() => {
   obj = stateFromStores(504);
   const items = [obj];
   stateFromStores = obj.useStateFromStores(items, () => obj.getCurrentUser());
-  let obj2 = stateFromStores(12995);
+  let obj2 = stateFromStores(12997);
   importDefault = obj2.useCurrentAppIcon();
-  let obj3 = stateFromStores(1970);
+  let obj3 = stateFromStores(1976);
   const isPremiumResult = obj3.isPremium(stateFromStores);
   dependencyMap = isPremiumResult;
   let tmp6 = importDefault;
@@ -152,7 +383,7 @@ const memoResult = react.memo(() => {
   let tmp9 = closure_9;
   let obj5 = { children: closure_9(obj4, obj6) };
   obj6 = { accessibilityRole: "radiogroup", children: closure_9(AppIconRowsDefault, obj7) };
-  const Form = stateFromStores(8053).Form;
+  const Form = stateFromStores(8057).Form;
   obj7 = {
     onSelect(arg0) {
       return obj(...arguments);
@@ -171,15 +402,15 @@ const memoResult = react.memo(() => {
           const tmp = openPremiumModalDefault;
           tmp(obj);
         },
-      text: intl.string(tmp2(1115).t.M0rDSO)
+      text: intl.string(tmp2(1127).t.M0rDSO)
     };
     tmp6Result = NitroUpsellButtonDefault;
-    intl = tmp2(1115).intl;
+    intl = tmp2(1127).intl;
     tmp9Result = tmp9(tmp10, obj8);
   }
   children[1] = tmp9Result;
   return tmp7(tmp8, { children });
-});
+}));
 let result = size.fileFinishedImporting("modules/user_settings/app_icon/native/UserSettingsAppIcons.tsx");
 
 export default memoResult;

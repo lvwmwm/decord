@@ -1,10 +1,10 @@
-// Module ID: 16129
-// Function ID: 16130
+// Module ID: 16131
+// Function ID: 16132
 // Name: DesignConstants
-// Dependencies: [576, 2]
+// Dependencies: [588, 2]
 
-// Module 16129 (DesignConstants)
-import nativeDefault from "native" /* 576 */;
+// Module 16131 (DesignConstants)
+import nativeDefault from "native" /* 588 */;
 import size from "module_2" /* 2 */;
 
 const PX_12 = nativeDefault.space.PX_12;

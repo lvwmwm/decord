@@ -1,20 +1,91 @@
-// Module ID: 4983
-// Function ID: 4984
+// Module ID: 4984
+// Function ID: 4985
 // Name: useAudienceRequestToSpeakState
-// Dependencies: [4855, 504, 2]
-// Exports: default, getAudienceRequestToSpeakState
+// Dependencies: [4856, 558, 576, 504, 2]
+// Exports: getAudienceRequestToSpeakState
 
-// Module 4983 (useAudienceRequestToSpeakState)
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+// Module 4984 (useAudienceRequestToSpeakState)
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require, dependencyMap, tmp3, tmp4, tmp5, tmp8;
 
-const RequestToSpeakStates = { NONE: 0, [0]: "NONE", REQUESTED_TO_SPEAK: 1, [1]: "REQUESTED_TO_SPEAK", REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK: 2, [2]: "REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK", ON_STAGE: 3, [3]: "ON_STAGE" };
-const result = size.fileFinishedImporting("modules/stage_channels/useAudienceRequestToSpeakState.tsx");
-
-export default function useAudienceRequestToSpeakState(arg0, arg1) {
+let obj = { NONE: 0, [0]: "NONE", REQUESTED_TO_SPEAK: 1, [1]: "REQUESTED_TO_SPEAK", REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK: 2, [2]: "REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK", ON_STAGE: 3, [3]: "ON_STAGE" };
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let first;
+  _require = arg0;
+  dependencyMap = arg1;
+  const tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [VoiceStateStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg1) {
+    let tmp6;
+    let tmp7;
+    if (cResult[2] === arg0) {
+      tmp6 = cResult[3];
+      tmp7 = cResult[4];
+    }
+    const tmpResult = tmp(504);
+    return tmpResult.useStateFromStores(first, tmp6, tmp7);
+  }
+  class E {
+    constructor() {
+      if (null != closure_0) {
+        if (null != closure_1) {
+          tmp8 = closure_2;
+          voiceStateForChannel = closure_2.getVoiceStateForChannel(tmp7, tmp);
+          if (null == voiceStateForChannel) {
+            tmp6 = closure_3;
+            NONE = closure_3.NONE;
+          } else {
+            if (voiceStateForChannel.suppress) {
+              if (null != voiceStateForChannel.requestToSpeakTimestamp) {
+                tmp5 = closure_3;
+                NONE = closure_3.REQUESTED_TO_SPEAK;
+              }
+            }
+            if (!voiceStateForChannel.suppress) {
+              if (null != voiceStateForChannel.requestToSpeakTimestamp) {
+                tmp2 = closure_3;
+                NONE = closure_3.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+              }
+            }
+            if (!voiceStateForChannel.suppress) {
+              if (null == voiceStateForChannel.requestToSpeakTimestamp) {
+                tmp3 = closure_3;
+                NONE2 = closure_3.ON_STAGE;
+              }
+              NONE = NONE2;
+            }
+            tmp4 = closure_3;
+            NONE2 = closure_3.NONE;
+          }
+        }
+        return NONE;
+      }
+      NONE = closure_3.NONE;
+      return;
+    }
+  }
+  const items1 = [arg0, arg1];
+  cResult[1] = arg1;
+  cResult[2] = arg0;
+  cResult[3] = E;
+  cResult[4] = items1;
+  tmp7 = items1;
+  tmp6 = E;
+}) : ((arg0, arg1) => {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -54,9 +125,8 @@ export default function useAudienceRequestToSpeakState(arg0, arg1) {
     }
     NONE = obj.NONE;
   }, items1);
-};
-export { RequestToSpeakStates };
-export const getAudienceRequestToSpeakState = function getAudienceRequestToSpeakState(voiceStateForChannel) {
+});
+function getAudienceRequestToSpeakState(voiceStateForChannel) {
   let REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
   if (null == voiceStateForChannel) {
     REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK = obj.NONE;
@@ -81,4 +151,9 @@ export const getAudienceRequestToSpeakState = function getAudienceRequestToSpeak
     NONE = obj.NONE;
   }
   return REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
-};
+}
+const result = size.fileFinishedImporting("modules/stage_channels/useAudienceRequestToSpeakState.tsx");
+
+export default tmp2;
+export const RequestToSpeakStates = obj;
+export { getAudienceRequestToSpeakState };

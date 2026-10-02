@@ -1,23 +1,56 @@
-// Module ID: 5938
-// Function ID: 5939
+// Module ID: 5935
+// Function ID: 5936
 // Name: useDesignToggle
-// Dependencies: [5939, 504, 2]
-// Exports: default
+// Dependencies: [5936, 558, 576, 504, 2]
 
-// Module 5938 (useDesignToggle)
-import DesignTogglesStore from "DesignTogglesStore" /* 5939 */;
+// Module 5935 (useDesignToggle)
+import DesignTogglesStore from "DesignTogglesStore" /* 5936 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const result = size.fileFinishedImporting("modules/devtools/design_toggles/useDesignToggle.tsx");
-
-export default function useDesignToggle(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [DesignTogglesStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function n() {
+      return DesignTogglesStore.get(closure_0);
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6, tmp7);
+}) : ((arg0) => {
   let closure_0;
   _require = arg0;
   const items = [DesignTogglesStore];
   const items1 = [arg0];
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => DesignTogglesStore.get(closure_0), items1);
-};
+});
+const result = size.fileFinishedImporting("modules/devtools/design_toggles/useDesignToggle.tsx");
+
+export default tmp2;

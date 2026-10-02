@@ -1,30 +1,30 @@
-// Module ID: 8313
-// Function ID: 8314
+// Module ID: 8310
+// Function ID: 8311
 // Name: collectibles/CollectiblesUtils
-// Dependencies: [1074, 6655, 4501, 6658, 6974, 4488, 6973, 7641, 8314, 2]
+// Dependencies: [1086, 6656, 4504, 6659, 6978, 4491, 6977, 7645, 8311, 2]
 // Exports: createOrbProfileBadge, extractPriceByPurchaseTypes, filterGPlaySyncedCategories, filterHiddenCategories, getCollectibleGoogleSkuId, getFormattedPriceForCollectiblesProduct, isGPlaySynced
 
-// Module 8313 (collectibles/CollectiblesUtils)
-import Constants from "Constants" /* 1074 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 4501 */;
-import PriceUtils from "PriceUtils" /* 6655 */;
-import IAPStoreDefault from "IAPStore" /* 6658 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6973 */;
-import types from "types" /* 7641 */;
-import _modDef8314 from "module_8314" /* 8314 */;
+// Module 8310 (collectibles/CollectiblesUtils)
+import Constants from "Constants" /* 1086 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 4504 */;
+import PriceUtils from "PriceUtils" /* 6656 */;
+import IAPStoreDefault from "IAPStore" /* 6659 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6977 */;
+import types from "types" /* 7645 */;
+import _modDef8311 from "module_8311" /* 8311 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const CollectiblesUtils = tmp(6974);
-const f86094 = (variants) => {
+const CollectiblesUtils = tmp(6978);
+const f96432 = (variants) => {
   let everyResult;
   const obj = closure_1_0(closure_1_2[6]);
   if (obj.getIsVariantProduct(variants)) {
     variants = variants.variants;
-    everyResult = variants.every(f86094);
+    everyResult = variants.every(f96432);
   } else {
     const googleSkuIds = variants.googleSkuIds;
     let tmp5;
@@ -52,7 +52,7 @@ function hasAtLeastOneGPlaySynced(nextResult) {
     let obj = CollectiblesProductUtils;
     if (obj.getIsVariantProduct(variants)) {
       variants = variants.variants;
-      everyResult = variants.every(f86094);
+      everyResult = variants.every(f96432);
     } else {
       const tmp2 = importDefault;
       const tmp3 = require("IAPStore");
@@ -168,12 +168,12 @@ export const extractPriceByPurchaseTypes = function extractPriceByPurchaseTypes(
     return tmpResult.extractPriceByPurchaseTypes(googleSkuIds, arg1);
   }
 };
-export const getCollectibleGoogleSkuId = function getCollectibleGoogleSkuId(product, stateFromStores) {
+export const getCollectibleGoogleSkuId = function getCollectibleGoogleSkuId(cResult, stateFromStores) {
   if (null == stateFromStores) {
     return null;
   } else {
     const obj = PremiumUtilsDefault;
-    const googleSkuIds = product.googleSkuIds;
+    const googleSkuIds = cResult.googleSkuIds;
     let tmp5;
     if (googleSkuIds != null) {
       tmp5 = googleSkuIds[obj.canUseShopDiscounts(obj, stateFromStores) ? tmp3.MOBILE_PREMIUM_TIER_2 : tmp3.MOBILE];
@@ -188,7 +188,7 @@ export const isGPlaySynced = function isGPlaySynced(variants) {
   const obj = CollectiblesProductUtils;
   if (obj.getIsVariantProduct(variants)) {
     variants = variants.variants;
-    return variants.every(f86094);
+    return variants.every(f96432);
   } else {
     const googleSkuIds = variants.googleSkuIds;
     let tmp5;
@@ -200,7 +200,7 @@ export const isGPlaySynced = function isGPlaySynced(variants) {
     const product = getProduct(tmp5);
     const googleSkuIds2 = variants.googleSkuIds;
     let tmp9;
-    const getProduct2 = tmp2(6658).getProduct;
+    const getProduct2 = tmp2(6659).getProduct;
     IAPStoreDefault;
     if (googleSkuIds2 != null) {
       tmp9 = googleSkuIds2[closure_3.MOBILE_PREMIUM_TIER_2];
@@ -245,6 +245,6 @@ export const filterHiddenCategories = function filterHiddenCategories(arr) {
   });
 };
 export const createOrbProfileBadge = function createOrbProfileBadge() {
-  const obj = { id: types.OrbBadges.ORB_PROFILE_BADGE, icon: types.OrbBadges.ORB_PROFILE_BADGE, iconSrc: _modDef8314, description: "", isPreviewMode: true };
+  const obj = { id: types.OrbBadges.ORB_PROFILE_BADGE, icon: types.OrbBadges.ORB_PROFILE_BADGE, iconSrc: _modDef8311, description: "", isPreviewMode: true };
   return obj;
 };

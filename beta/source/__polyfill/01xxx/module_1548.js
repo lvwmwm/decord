@@ -4,15 +4,11 @@
 
 // Module 1548
 
-export default function(str) {
-  if (typeof str !== "string") {
-    const _TypeError = TypeError;
-    const self = this;
-    const self2 = this;
-    const typeError = new TypeError("Expected a string");
-    throw typeError;
-  } else {
-    const str3 = str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
-    return str3.replace(/-/g, "\\x2d");
-  }
+export default (arg0) => {
+  let str = encodeURIComponent(arg0);
+  return str.replace(/[!'()*]/g, (str) => {
+    str = str.charCodeAt(0);
+    const str2 = str.toString(16);
+    return "%" + str2.toUpperCase();
+  });
 };

@@ -1,30 +1,541 @@
-// Module ID: 15433
-// Function ID: 15434
+// Module ID: 15421
+// Function ID: 15422
 // Name: useTrackProductCardImpression
-// Dependencies: [19, 6962, 1074, 8229, 504, 7623, 4488, 6974, 1241, 2]
-// Exports: useTrackProductCardImpression
+// Dependencies: [19, 6966, 1086, 558, 576, 8226, 504, 7627, 4491, 6978, 1253, 2]
 
-// Module 15433 (useTrackProductCardImpression)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 6974 */;
+// Module 15421 (useTrackProductCardImpression)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 6978 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6966 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault;
+let _require, clearTimeoutResult, importDefault, num, tmp3, tmp5;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-const result = size.fileFinishedImporting("modules/collectibles/hooks/useTrackProductCardImpression.tsx");
-
-export const useTrackProductCardImpression = function useTrackProductCardImpression(categoryStoreListingId, mobile_home, featured_block) {
-  let page_type;
-  let sku_id;
-  _require = categoryStoreListingId;
-  importDefault = mobile_home;
-  let str = featured_block;
-  if (featured_block === undefined) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku_id, page_type, arg2) => {
+  let first;
+  let stateFromStores;
+  let str;
+  let tmp10;
+  let tmp7;
+  _require = sku_id;
+  importDefault = page_type;
+  const tmp = _require;
+  let tmp2 = str;
+  let obj = require("react");
+  const cResult = obj.c(23);
+  str = "product";
+  if (undefined !== arg2) {
+    str = arg2;
+  }
+  const tmpResult = tmp(tmp2[5]);
+  const collectiblesAnalyticsContext = tmpResult.useCollectiblesAnalyticsContext();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [stateFromStores];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== sku_id) {
+    const fn = function p() {
+      return CollectiblesCategoryStore.getProduct(sku_id);
+    };
+    cResult[1] = sku_id;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult3 = tmp(tmp2[6]);
+  stateFromStores = tmpResult3.useStateFromStores(first, tmp7);
+  const tmpResult4 = tmp(tmp2[7]);
+  const currentUser = tmpResult4.useCurrentUser();
+  if (cResult[3] !== currentUser) {
+    const tmp11 = importDefault;
+    const obj5 = require("PremiumUtils");
+    const canUseShopDiscountsResult = obj5.canUseShopDiscounts(currentUser);
+    cResult[3] = currentUser;
+    cResult[4] = canUseShopDiscountsResult;
+    tmp10 = canUseShopDiscountsResult;
+  } else {
+    tmp10 = cResult[4];
+  }
+  let closure_5 = tmp10;
+  const ref = collectiblesAnalyticsContext.useRef(null);
+  let categoryPosition;
+  const obj6 = collectiblesAnalyticsContext;
+  const tmp13 = cResult[5];
+  if (collectiblesAnalyticsContext != null) {
+    categoryPosition = collectiblesAnalyticsContext.categoryPosition;
+  }
+  if (tmp13 === categoryPosition) {
+    let pageCategory;
+    const tmp31 = cResult[6];
+    if (collectiblesAnalyticsContext != null) {
+      pageCategory = collectiblesAnalyticsContext.pageCategory;
+    }
+    if (tmp31 === pageCategory) {
+      let pageSection;
+      const tmp16 = cResult[7];
+      if (collectiblesAnalyticsContext != null) {
+        pageSection = collectiblesAnalyticsContext.pageSection;
+      }
+      if (tmp16 === pageSection) {
+        let sessionId;
+        const tmp18 = cResult[8];
+        if (collectiblesAnalyticsContext != null) {
+          sessionId = collectiblesAnalyticsContext.sessionId;
+        }
+        if (tmp18 === sessionId) {
+          let tilePosition;
+          const tmp20 = cResult[9];
+          if (collectiblesAnalyticsContext != null) {
+            tilePosition = collectiblesAnalyticsContext.tilePosition;
+          }
+          if (tmp20 === tilePosition) {
+            if (cResult[10] === tmp10) {
+              if (cResult[11] === page_type) {
+                if (cResult[12] === stateFromStores) {
+                  if (cResult[13] === sku_id) {
+                    let tmp22;
+                    let tmp24;
+                    let tmp26;
+                    let tmp29;
+                    if (cResult[14] === str) {
+                      tmp22 = cResult[15];
+                    }
+                    let closure_7 = tmp22;
+                    if (cResult[16] !== tmp22) {
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
+                          }
+                          return;
+                        }
+                      }
+                      cResult[16] = tmp22;
+                      cResult[17] = T;
+                    } else {
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
+                          }
+                          return;
+                        }
+                      }
+                    }
+                    const _Symbol = Symbol;
+                    if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
+                          }
+                          return;
+                        }
+                      }
+                      cResult[18] = tmp25;
+                      tmp24 = tmp25;
+                    } else {
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
+                          }
+                          return;
+                        }
+                      }
+                    }
+                    if (cResult[19] !== sku_id) {
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
+                          }
+                          return;
+                        }
+                      }
+                      tmp27[0] = sku_id;
+                      cResult[19] = sku_id;
+                      cResult[20] = tmp27;
+                      tmp26 = tmp27;
+                    } else {
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
+                          }
+                          return;
+                        }
+                      }
+                    }
+                    const effect = obj6.useEffect(tmp24, tmp26);
+                    if (cResult[21] !== tmp23) {
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
+                          }
+                          return;
+                        }
+                      }
+                      tmp30[0] = tmp23;
+                      cResult[21] = tmp23;
+                      cResult[22] = tmp30;
+                      tmp29 = tmp30;
+                    } else {
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
+                          }
+                          return;
+                        }
+                      }
+                    }
+                    return tmp29;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  if (collectiblesAnalyticsContext != null) {
+    class T {
+      constructor(arg0) {
+        tmp = closure_6;
+        current = closure_6.current;
+        tmp2 = sku_id;
+        if (tmp2) {
+          if (null === current) {
+            tmp5 = globalThis;
+            _setTimeout = setTimeout;
+            num = 1000;
+            tmp.current = setTimeout(() => {
+              closure_1_7();
+              ref.current = null;
+            }, 1000);
+          }
+        } else if (null !== current) {
+          tmp3 = globalThis;
+          _clearTimeout = clearTimeout;
+          clearTimeoutResult = clearTimeout(tmp.current);
+          tmp.current = null;
+        }
+        return;
+      }
+    }
+  }
+  cResult[5] = undefined;
+  if (collectiblesAnalyticsContext != null) {
+    class T {
+      constructor(arg0) {
+        tmp = closure_6;
+        current = closure_6.current;
+        tmp2 = sku_id;
+        if (tmp2) {
+          if (null === current) {
+            tmp5 = globalThis;
+            _setTimeout = setTimeout;
+            num = 1000;
+            tmp.current = setTimeout(() => {
+              closure_1_7();
+              ref.current = null;
+            }, 1000);
+          }
+        } else if (null !== current) {
+          tmp3 = globalThis;
+          _clearTimeout = clearTimeout;
+          clearTimeoutResult = clearTimeout(tmp.current);
+          tmp.current = null;
+        }
+        return;
+      }
+    }
+  }
+  cResult[6] = undefined;
+  if (collectiblesAnalyticsContext != null) {
+    class T {
+      constructor(arg0) {
+        tmp = closure_6;
+        current = closure_6.current;
+        tmp2 = sku_id;
+        if (tmp2) {
+          if (null === current) {
+            tmp5 = globalThis;
+            _setTimeout = setTimeout;
+            num = 1000;
+            tmp.current = setTimeout(() => {
+              closure_1_7();
+              ref.current = null;
+            }, 1000);
+          }
+        } else if (null !== current) {
+          tmp3 = globalThis;
+          _clearTimeout = clearTimeout;
+          clearTimeoutResult = clearTimeout(tmp.current);
+          tmp.current = null;
+        }
+        return;
+      }
+    }
+  }
+  cResult[7] = undefined;
+  if (collectiblesAnalyticsContext != null) {
+    class T {
+      constructor(arg0) {
+        tmp = closure_6;
+        current = closure_6.current;
+        tmp2 = sku_id;
+        if (tmp2) {
+          if (null === current) {
+            tmp5 = globalThis;
+            _setTimeout = setTimeout;
+            num = 1000;
+            tmp.current = setTimeout(() => {
+              closure_1_7();
+              ref.current = null;
+            }, 1000);
+          }
+        } else if (null !== current) {
+          tmp3 = globalThis;
+          _clearTimeout = clearTimeout;
+          clearTimeoutResult = clearTimeout(tmp.current);
+          tmp.current = null;
+        }
+        return;
+      }
+    }
+  }
+  cResult[8] = undefined;
+  if (collectiblesAnalyticsContext != null) {
+    class T {
+      constructor(arg0) {
+        tmp = closure_6;
+        current = closure_6.current;
+        tmp2 = sku_id;
+        if (tmp2) {
+          if (null === current) {
+            tmp5 = globalThis;
+            _setTimeout = setTimeout;
+            num = 1000;
+            tmp.current = setTimeout(() => {
+              closure_1_7();
+              ref.current = null;
+            }, 1000);
+          }
+        } else if (null !== current) {
+          tmp3 = globalThis;
+          _clearTimeout = clearTimeout;
+          clearTimeoutResult = clearTimeout(tmp.current);
+          tmp.current = null;
+        }
+        return;
+      }
+    }
+  }
+  const fn2 = function b() {
+    let amount;
+    let categoryPosition;
+    let pageCategory;
+    let pageSection;
+    let str1;
+    let tilePosition;
+    let priceForCollectiblesProduct = null;
+    if (null != stateFromStores) {
+      const obj = CollectiblesUtils;
+      priceForCollectiblesProduct = obj.getPriceForCollectiblesProduct(tmp, closure_5, true);
+    }
+    let strikeThroughPriceAmountForCollectiblesProduct;
+    if (null != stateFromStores) {
+      const obj2 = CollectiblesUtils;
+      strikeThroughPriceAmountForCollectiblesProduct = obj2.getStrikeThroughPriceAmountForCollectiblesProduct(tmp, closure_5, true);
+    }
+    let sessionId;
+    const track = AnalyticsUtilsDefault.track;
+    const COLLECTIBLES_TILE_IMPRESSION = AnalyticEvents.COLLECTIBLES_TILE_IMPRESSION;
+    AnalyticsUtilsDefault;
+    if (collectiblesAnalyticsContext != null) {
+      sessionId = tmp11.sessionId;
+    }
+    const obj3 = { collectibles_shop_session_id: sessionId, sku_id, display_price: amount, display_price_currency: str1, display_price_strikethrough: strikeThroughPriceAmountForCollectiblesProduct, position: tilePosition, page_type, page_category: pageCategory, page_section: pageSection, type: str, category_position: categoryPosition };
+    amount = undefined;
+    if (priceForCollectiblesProduct != null) {
+      amount = priceForCollectiblesProduct.amount;
+    }
+    str1 = undefined;
+    if (priceForCollectiblesProduct != null) {
+      str1 = str.toString();
+    }
+    tilePosition = undefined;
+    if (collectiblesAnalyticsContext != null) {
+      tilePosition = tmp11.tilePosition;
+    }
+    pageCategory = undefined;
+    if (collectiblesAnalyticsContext != null) {
+      pageCategory = tmp11.pageCategory;
+    }
+    pageSection = undefined;
+    if (collectiblesAnalyticsContext != null) {
+      pageSection = tmp11.pageSection;
+    }
+    categoryPosition = undefined;
+    if (collectiblesAnalyticsContext != null) {
+      categoryPosition = tmp11.categoryPosition;
+    }
+    track(COLLECTIBLES_TILE_IMPRESSION, obj3);
+  };
+  cResult[9] = undefined;
+  cResult[10] = tmp10;
+  cResult[11] = page_type;
+  cResult[12] = stateFromStores;
+  cResult[13] = sku_id;
+  cResult[14] = str;
+  cResult[15] = fn2;
+  tmp22 = fn2;
+}) : ((sku_id, page_type) => {
+  _require = sku_id;
+  importDefault = page_type;
+  let str = arg2;
+  if (arg2 === undefined) {
     str = "product";
   }
   let stateFromStores;
@@ -67,9 +578,9 @@ export const useTrackProductCardImpression = function useTrackProductCardImpress
   }
   items1[4] = tilePosition;
   items1[5] = canUseShopDiscountsResult;
-  items1[6] = mobile_home;
+  items1[6] = page_type;
   items1[7] = stateFromStores;
-  items1[8] = categoryStoreListingId;
+  items1[8] = sku_id;
   items1[9] = str;
   callback = useCallback(() => {
     let amount;
@@ -123,7 +634,7 @@ export const useTrackProductCardImpression = function useTrackProductCardImpress
     track(COLLECTIBLES_TILE_IMPRESSION, obj3);
   }, items1);
   const items2 = [callback];
-  const items3 = [categoryStoreListingId];
+  const items3 = [sku_id];
   const handleCardVisibilityChange = obj5.useCallback((arg0) => {
     const current = ref.current;
     const tmp2 = arg0;
@@ -149,4 +660,7 @@ export const useTrackProductCardImpression = function useTrackProductCardImpress
     }
   }, items3);
   return { handleCardVisibilityChange };
-};
+});
+const result = size.fileFinishedImporting("modules/collectibles/hooks/useTrackProductCardImpression.tsx");
+
+export const useTrackProductCardImpression = tmp2;

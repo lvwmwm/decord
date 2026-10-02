@@ -1,23 +1,23 @@
-// Module ID: 12753
-// Function ID: 12754
+// Module ID: 12755
+// Function ID: 12756
 // Name: transformMessageAttachments
-// Dependencies: [7375, 1074, 1385, 10845, 4986, 7565, 1364, 7564, 1115, 7584, 7714, 5447, 7582, 2]
+// Dependencies: [7379, 1086, 1391, 9764, 4987, 7569, 1370, 7568, 1127, 7588, 7718, 5448, 7586, 2]
 // Exports: default
 
-// Module 12753 (transformMessageAttachments)
-import Constants from "Constants" /* 1074 */;
-import intl6 from "intl" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4986 */;
-import _modDef5447 from "module_5447" /* 5447 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7375 */;
-import sanitizeMediaDimension3 from "sanitizeMediaDimension" /* 7564 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 7565 */;
-import ExplicitMediaUtils from "ExplicitMediaUtils" /* 7582 */;
-import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 7584 */;
-import getDisplayFilenameDefault from "getDisplayFilename" /* 7714 */;
-import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10845 */;
+// Module 12755 (transformMessageAttachments)
+import Constants from "Constants" /* 1086 */;
+import intl6 from "intl" /* 1127 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import FlagUtils from "FlagUtils" /* 1391 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4987 */;
+import _modDef5448 from "module_5448" /* 5448 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7379 */;
+import sanitizeMediaDimension3 from "sanitizeMediaDimension" /* 7568 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 7569 */;
+import ExplicitMediaUtils from "ExplicitMediaUtils" /* 7586 */;
+import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 7588 */;
+import getDisplayFilenameDefault from "getDisplayFilename" /* 7718 */;
+import MediaPlaybackFacts from "MediaPlaybackFacts" /* 9764 */;
 import size from "module_2" /* 2 */;
 
 const AttachmentType = RowGeneratorConstants.AttachmentType;
@@ -155,7 +155,7 @@ export default function transformMessageAttachments(arg0) {
         let tmp31;
         if (hasFlag(flags, tmp11.IS_CLIP)) {
           const obj7 = { attachmentTagText: intl.string(intl6.t.gESDiU), attachmentTagIconType: "clip", attachmentTagBackgroundColor: null, attachmentTagTextColor: null };
-          intl = tmp(1115).intl;
+          intl = tmp(1127).intl;
           ({ clipTagBackgroundColor: obj8.attachmentTagBackgroundColor, clipTagTextColor: obj8.attachmentTagTextColor } = closure_9);
           tmp31 = obj7;
         }
@@ -178,21 +178,21 @@ export default function transformMessageAttachments(arg0) {
           const tmpResult11 = SuspiciousDownloadUtils;
           tmp33 = null != tmpResult11.isSuspiciousDownload(localUri);
         }
-        obj11 = _modDef5447;
-        const intl2 = tmp(1115).intl;
+        obj11 = _modDef5448;
+        const intl2 = tmp(1127).intl;
         str5 = intl2.string(intl6.t.jCV1Tz);
-        intl3 = tmp(1115).intl;
-        const intl4 = tmp(1115).intl;
+        intl3 = tmp(1127).intl;
+        const intl4 = tmp(1127).intl;
         const string = intl4.string;
-        const t = tmp(1115).t;
+        const t = tmp(1127).t;
         if (isVideoFileResult) {
           stringResult = string(t["BEWw/7"]);
         } else {
           stringResult = string(t.IPzNKE);
         }
-        const intl5 = tmp(1115).intl;
+        const intl5 = tmp(1127).intl;
         const string2 = intl5.string;
-        const t2 = tmp(1115).t;
+        const t2 = tmp(1127).t;
         if (isVideoFileResult) {
           string2Result = string2(t2["/SCpvi"]);
         } else {

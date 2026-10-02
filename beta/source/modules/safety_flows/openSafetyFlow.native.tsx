@@ -1,13 +1,13 @@
-// Module ID: 17691
-// Function ID: 17692
+// Module ID: 17693
+// Function ID: 17694
 // Name: openSafetyFlow
-// Dependencies: [5, 2037, 1074, 17692, 5039, 17693, 17694, 17229, 17695, 1981, 2]
+// Dependencies: [5, 2043, 1086, 17694, 5040, 17695, 17696, 17231, 17697, 1987, 2]
 // Exports: openSafetyFlow
 
-// Module 17691 (openSafetyFlow)
-import Constants from "Constants" /* 1074 */;
+// Module 17693 (openSafetyFlow)
+import Constants from "Constants" /* 1086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2037 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2043 */;
 import size from "module_2" /* 2 */;
 
 let c6;
@@ -84,7 +84,7 @@ let obj = function _openSafetyFlow() {
           if (null == task) {
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } else if (task.task_type === closure_131_0(closure_131_2[3]).TaskType.APP_STORE_PARENTAL_REVOCATION) {
             c6 = 4;
             c7 = 1;
@@ -122,7 +122,7 @@ let obj = function _openSafetyFlow() {
         if (null == value) {
           c5 = 0;
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       }
       let initialScreen = getInitialScreenForTask(task);
@@ -133,14 +133,14 @@ let obj = function _openSafetyFlow() {
       pushLazy(tmp19, obj16, closure_131_0(closure_131_2[5]).SAFETY_FLOWS_MODAL_KEY);
       c5 = 0;
     }
-    await "HermesInternal";
+    await "IconComponent";
     initialScreen = tmp4;
     let obj5 = closure_0;
     if (closure_0 === undefined) {
       obj5 = {};
     }
     requiredAction = obj5.requiredAction;
-    return "flex";
+    return "Reflect";
   });
   return obj(...arguments);
 };

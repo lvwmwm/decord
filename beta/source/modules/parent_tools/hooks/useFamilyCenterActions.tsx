@@ -1,15 +1,15 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 11270
+// Function ID: 11271
 // Name: useFamilyCenterActions
-// Dependencies: [5, 32, 19, 6957, 6958, 6959, 4735, 2]
+// Dependencies: [5, 32, 19, 6961, 6962, 6963, 4737, 2]
 // Exports: useFamilyCenterActions
 
-// Module 11395 (useFamilyCenterActions)
-import FamilyCenterConstants from "FamilyCenterConstants" /* 6958 */;
+// Module 11270 (useFamilyCenterActions)
+import FamilyCenterConstants from "FamilyCenterConstants" /* 6962 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
 import size from "module_2" /* 2 */;
 
 let c6, c7, closure_4;
@@ -17,7 +17,7 @@ let c6, c7, closure_4;
 const UserLinkStatus = FamilyCenterConstants.UserLinkStatus;
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useFamilyCenterActions.tsx");
 
-export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
+export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
   let closure_11;
   let closure_13;
   let closure_7;
@@ -30,8 +30,8 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
   let tmp4;
   let tmp6;
   let tmp8;
-  let obj = arg0;
-  if (arg0 == null) {
+  let obj = cResult;
+  if (cResult == null) {
     obj = {};
   }
   const onSuccess = obj.onSuccess;
@@ -65,7 +65,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -128,7 +128,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
           tmp(false);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp36) {
         closure_3 = tmp36;
         if (0 === c4) {
@@ -161,7 +161,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -225,7 +225,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
           tmp36(false);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp36) {
         if (0 === c4) {
           c6 = 3;
@@ -257,7 +257,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -320,7 +320,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
           c4(false);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp36) {
         closure_3 = tmp36;
         if (0 === c4) {
@@ -353,7 +353,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -373,13 +373,13 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
             let closure_2 = tmp;
             closure_1 = tmp4;
             aPIError = undefined;
-            const tmp32 = closure_1_14;
-            if (!tmp32) {
+            const tmp43 = closure_1_14;
+            if (!tmp43) {
               c5(true);
               c4 = 2;
               c5 = 3;
               c6 = 1;
-              const obj5 = { value: obj2.removeLinkForUserId(tmp31), done: false };
+              const obj5 = { value: obj2.removeLinkForUserId(tmp42), done: false };
               obj2 = closure_0(dependencyMap[5]);
               return obj5;
             }
@@ -417,13 +417,13 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
           c5(false);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
-      } catch (tmp37) {
-        closure_3 = tmp37;
+        return { value: "IconComponent", done: null };
+      } catch (tmp35) {
+        closure_3 = tmp35;
         if (0 === c4) {
           c6 = 3;
-          throw tmp37;
-        } else if (1 === tmp39) {
+          throw tmp35;
+        } else if (1 === tmp37) {
           c5 = 1;
         } else {
           c5 = 2;
@@ -449,7 +449,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -513,7 +513,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
           closure_129_7(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp36) {
         closure_2 = tmp36;
         if (0 === c3) {
@@ -541,7 +541,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -561,13 +561,13 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
             let closure_2 = tmp;
             closure_1 = tmp4;
             aPIError = undefined;
-            const tmp32 = first2;
-            if (!tmp32) {
+            const tmp43 = first2;
+            if (!tmp43) {
               closure_1_11(true);
               c4 = 2;
               c5 = 3;
               c6 = 1;
-              const obj5 = { value: obj2.fetchTeenActivity(tmp31), done: false };
+              const obj5 = { value: obj2.fetchTeenActivity(tmp42), done: false };
               obj2 = onSuccess(dependencyMap[5]);
               return obj5;
             }
@@ -605,13 +605,13 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
           closure_1_11(false);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
-      } catch (tmp37) {
-        closure_3 = tmp37;
+        return { value: "IconComponent", done: null };
+      } catch (tmp35) {
+        closure_3 = tmp35;
         if (0 === c4) {
           c6 = 3;
-          throw tmp37;
-        } else if (1 === tmp39) {
+          throw tmp35;
+        } else if (1 === tmp37) {
           c5 = 1;
         } else {
           c5 = 2;
@@ -638,7 +638,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -701,7 +701,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
           closure_1_9(false);
         }
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp35) {
         closure_4 = tmp35;
         if (0 === c5) {
@@ -732,7 +732,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -801,7 +801,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
           closure_1_13(false);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp37) {
         closure_3 = tmp37;
         if (0 === c4) {

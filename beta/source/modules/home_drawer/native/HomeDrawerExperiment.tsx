@@ -1,10 +1,10 @@
-// Module ID: 4698
-// Function ID: 4699
+// Module ID: 4700
+// Function ID: 4701
 // Name: HomeDrawerExperiment
-// Dependencies: [1436, 2]
+// Dependencies: [1442, 2]
 
-// Module 4698 (HomeDrawerExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1436 */;
+// Module 4700 (HomeDrawerExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1442 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

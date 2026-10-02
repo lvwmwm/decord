@@ -1,27 +1,30 @@
-// Module ID: 17621
-// Function ID: 17622
+// Module ID: 17623
+// Function ID: 17624
 // Name: NotificationSettingChannelOverrides
-// Dependencies: [32, 19, 17, 2049, 6532, 4479, 1372, 1074, 21, 4836, 576, 504, 6402, 6533, 4989, 5829, 1115, 4541, 6470, 5917, 5923, 5335, 10327, 6471, 1177, 7678, 6476, 2]
+// Dependencies: [32, 19, 17, 2055, 6533, 4482, 1378, 1086, 21, 4837, 588, 558, 576, 504, 6399, 6534, 4990, 5830, 1127, 4545, 6471, 5916, 5922, 5336, 10369, 6472, 1189, 7682, 6477, 2]
 
-// Module 17621 (NotificationSettingChannelOverrides)
+// Module 17623 (NotificationSettingChannelOverrides)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl4 from "intl" /* 1115 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6533 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4545 */;
+import useChannelName from "useChannelName" /* 4990 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5830 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 6534 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 6532 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 6533 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let channel;
+let closure_0, guildId, navigation, obj1;
 
 let c10;
 let closure_12;
@@ -39,13 +42,448 @@ obj2 = { marginHorizontal: nativeDefault.space.PX_8, flex: 1 };
 createStyles = createStyles.createStyles;
 obj3 = { paddingVertical: nativeDefault.space.PX_16 };
 let closure_14 = createStyles(obj);
-const memoResult = react.memo(function NotificationSettingChannelOverrides(arg0) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let channels;
+  let first;
+  let first1;
+  let intl;
+  let stateFromStores;
+  let tmp12;
+  let tmp7;
+  let tmp = guildId;
+  let obj = guildId(stateFromStores[12]);
+  const cResult = obj.c(35);
+  guildId = guildId.guildId;
+  navigation = guildId.navigation;
+  const tmp4 = closure_14();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildCategoryStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function y() {
+      return GuildCategoryStore.getCategories(guildId);
+    };
+    cResult[1] = guildId;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(stateFromStores[13]);
+  stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  const insets = navigation(tmp2[14])().insets;
+  let obj3 = channels;
+  const tmp10 = first1(channels.useState(""), 2);
+  first1 = tmp10[0];
+  if (cResult[3] === stateFromStores) {
+    let arr2;
+    let tmp14;
+    if (cResult[4] === first1) {
+      arr2 = cResult[5];
+    }
+    if (cResult[7] !== arr2.length) {
+      const items1 = [arr2.length];
+      cResult[7] = arr2.length;
+      cResult[8] = items1;
+      tmp14 = items1;
+    } else {
+      tmp14 = cResult[8];
+    }
+    if (cResult[9] === arr2) {
+      let tmp15;
+      if (cResult[10] === tmp14) {
+        tmp15 = cResult[11];
+      }
+      channels = tmp15.channels;
+      const sections = tmp15.sections;
+      if (cResult[12] === channels.length) {
+        let tmp16;
+        if (cResult[13] === first1) {
+          tmp16 = cResult[14];
+        }
+        if (cResult[15] === channels) {
+          let tmp17;
+          if (cResult[16] === first1) {
+            tmp17 = cResult[17];
+          }
+          const effect = obj3.useEffect(tmp16, tmp17);
+          const tmp19 = navigation(stateFromStores[20])();
+          if (cResult[18] === channels) {
+            let tmp20;
+            let tmp26;
+            if (cResult[19] === navigation) {
+              tmp20 = cResult[20];
+            }
+            const tmp21 = navigation(stateFromStores[24])();
+            const _Symbol = Symbol;
+            class Q {
+              constructor(arg0, arg1) {
+                tmp = channels[arg1];
+                closure_0 = tmp;
+                obj = { icon: null, start: null, end: null, label: null, labelLineClamp: 1, arrow: true, onPress: null };
+                TableRow = guildId(closure_2[21]).TableRow;
+                obj1 = { IconComponent: null };
+                TableRowIcon = guildId(closure_2[22]).TableRowIcon;
+                obj3 = guildId(closure_2[23]);
+                obj1.IconComponent = obj3.getChannelIconComponent(tmp);
+                obj.icon = closure_1_12(TableRowIcon, obj1);
+                obj.start = 0 === arg1;
+                obj.end = arg1 === channels.length - 1;
+                obj4 = guildId(closure_2[16]);
+                obj.label = obj4.computeChannelName(tmp, closure_1_9, closure_1_8);
+                obj.onPress = function onPress() {
+                  const obj = { channelId: id.id };
+                  navigation.push(unpackModuleId.CHANNEL_OVERRIDE, obj);
+                };
+                return closure_1_12(TableRow, obj);
+              }
+            }
+            class F {
+              constructor() {
+                if (null != first1) {
+                  if ("" !== tmp) {
+                    let formatToPlainStringResult;
+                    if (channels.length > 0) {
+                      const intl2 = intl4.intl;
+                      const obj = { count: channels.length };
+                      formatToPlainStringResult = intl2.formatToPlainString(intl4.t.ZGVL3g, obj);
+                    } else {
+                      const intl = intl4.intl;
+                      formatToPlainStringResult = intl.string(intl4.t.f5cMAg);
+                    }
+                    const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                    AccessibilityAnnouncer.announce(formatToPlainStringResult);
+                  }
+                }
+              }
+            }
+            if (cResult[24] === channels.length) {
+              if (cResult[25] === insets) {
+                if (cResult[26] === tmp19) {
+                  if (cResult[27] === tmp20) {
+                    if (cResult[28] === tmp21) {
+                      let tmp24;
+                      if (cResult[29] === sections) {
+                        tmp24 = cResult[30];
+                      }
+                      if (cResult[31] === tmp4.container) {
+                        if (cResult[32] === tmp23) {
+                          let tmp30;
+                          if (cResult[33] === tmp24) {
+                            tmp30 = cResult[34];
+                          }
+                          return tmp30;
+                        }
+                      }
+                      class Q {
+                        constructor(arg0, arg1) {
+                          tmp = channels[arg1];
+                          closure_0 = tmp;
+                          obj = { icon: null, start: null, end: null, label: null, labelLineClamp: 1, arrow: true, onPress: null };
+                          TableRow = guildId(closure_2[21]).TableRow;
+                          obj1 = { IconComponent: null };
+                          TableRowIcon = guildId(closure_2[22]).TableRowIcon;
+                          obj3 = guildId(closure_2[23]);
+                          obj1.IconComponent = obj3.getChannelIconComponent(tmp);
+                          obj.icon = closure_1_12(TableRowIcon, obj1);
+                          obj.start = 0 === arg1;
+                          obj.end = arg1 === channels.length - 1;
+                          obj4 = guildId(closure_2[16]);
+                          obj.label = obj4.computeChannelName(tmp, closure_1_9, closure_1_8);
+                          obj.onPress = function onPress() {
+                            const obj = { channelId: id.id };
+                            navigation.push(unpackModuleId.CHANNEL_OVERRIDE, obj);
+                          };
+                          return closure_1_12(TableRow, obj);
+                        }
+                      }
+                      class F {
+                        constructor() {
+                          if (null != first1) {
+                            if ("" !== tmp) {
+                              let formatToPlainStringResult;
+                              if (channels.length > 0) {
+                                const intl2 = intl4.intl;
+                                const obj = { count: channels.length };
+                                formatToPlainStringResult = intl2.formatToPlainString(intl4.t.ZGVL3g, obj);
+                              } else {
+                                const intl = intl4.intl;
+                                formatToPlainStringResult = intl.string(intl4.t.f5cMAg);
+                              }
+                              const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                              AccessibilityAnnouncer.announce(formatToPlainStringResult);
+                            }
+                          }
+                        }
+                      }
+                      const items2 = [tmp23, tmp24];
+                      tmp33[1] = items2;
+                      const tmp34 = closure_13(View, tmp33);
+                      cResult[31] = tmp4.container;
+                      cResult[32] = tmp23;
+                      cResult[33] = tmp24;
+                      cResult[34] = tmp34;
+                      tmp30 = tmp34;
+                    }
+                  }
+                }
+              }
+            }
+            if (0 === channels.length) {
+              let obj2 = { Illustration: tmp(tmp2[27]).NoResults, title: tmp29(tmp(tmp2[18]).t.wM7uRI), body: intl.string(tmp(tmp2[18]).t.f5cMAg) };
+              const EmptyState = tmp(tmp2[26]).EmptyState;
+              class Q {
+                constructor(arg0, arg1) {
+                  tmp = channels[arg1];
+                  closure_0 = tmp;
+                  obj = { icon: null, start: null, end: null, label: null, labelLineClamp: 1, arrow: true, onPress: null };
+                  TableRow = guildId(closure_2[21]).TableRow;
+                  obj1 = { IconComponent: null };
+                  TableRowIcon = guildId(closure_2[22]).TableRowIcon;
+                  obj3 = guildId(closure_2[23]);
+                  obj1.IconComponent = obj3.getChannelIconComponent(tmp);
+                  obj.icon = closure_1_12(TableRowIcon, obj1);
+                  obj.start = 0 === arg1;
+                  obj.end = arg1 === channels.length - 1;
+                  obj4 = guildId(closure_2[16]);
+                  obj.label = obj4.computeChannelName(tmp, closure_1_9, closure_1_8);
+                  obj.onPress = function onPress() {
+                    const obj = { channelId: id.id };
+                    navigation.push(unpackModuleId.CHANNEL_OVERRIDE, obj);
+                  };
+                  return closure_1_12(TableRow, obj);
+                }
+              }
+              class F {
+                constructor() {
+                  if (null != first1) {
+                    if ("" !== tmp) {
+                      let formatToPlainStringResult;
+                      if (channels.length > 0) {
+                        const intl2 = intl4.intl;
+                        const obj = { count: channels.length };
+                        formatToPlainStringResult = intl2.formatToPlainString(intl4.t.ZGVL3g, obj);
+                      } else {
+                        const intl = intl4.intl;
+                        formatToPlainStringResult = intl.string(intl4.t.f5cMAg);
+                      }
+                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                      AccessibilityAnnouncer.announce(formatToPlainStringResult);
+                    }
+                  }
+                }
+              }
+              intl = tmp(tmp2[18]).intl;
+              tmp26 = closure_12(EmptyState, obj2);
+            } else {
+              let obj4 = { sections, renderItem: tmp20, itemSize: null, insetEnd: null, estimatedListSize: "windowSize", placeholderConfig: tmp21, wrapChildren: true };
+              class Q {
+                constructor(arg0, arg1) {
+                  tmp = channels[arg1];
+                  closure_0 = tmp;
+                  obj = { icon: null, start: null, end: null, label: null, labelLineClamp: 1, arrow: true, onPress: null };
+                  TableRow = guildId(closure_2[21]).TableRow;
+                  obj1 = { IconComponent: null };
+                  TableRowIcon = guildId(closure_2[22]).TableRowIcon;
+                  obj3 = guildId(closure_2[23]);
+                  obj1.IconComponent = obj3.getChannelIconComponent(tmp);
+                  obj.icon = closure_1_12(TableRowIcon, obj1);
+                  obj.start = 0 === arg1;
+                  obj.end = arg1 === channels.length - 1;
+                  obj4 = guildId(closure_2[16]);
+                  obj.label = obj4.computeChannelName(tmp, closure_1_9, closure_1_8);
+                  obj.onPress = function onPress() {
+                    const obj = { channelId: id.id };
+                    navigation.push(unpackModuleId.CHANNEL_OVERRIDE, obj);
+                  };
+                  return closure_1_12(TableRow, obj);
+                }
+              }
+              class F {
+                constructor() {
+                  if (null != first1) {
+                    if ("" !== tmp) {
+                      let formatToPlainStringResult;
+                      if (channels.length > 0) {
+                        const intl2 = intl4.intl;
+                        const obj = { count: channels.length };
+                        formatToPlainStringResult = intl2.formatToPlainString(intl4.t.ZGVL3g, obj);
+                      } else {
+                        const intl = intl4.intl;
+                        formatToPlainStringResult = intl.string(intl4.t.f5cMAg);
+                      }
+                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                      AccessibilityAnnouncer.announce(formatToPlainStringResult);
+                    }
+                  }
+                }
+              }
+              tmp26 = closure_12(tmp9(tmp2[28]), obj4);
+            }
+            cResult[24] = channels.length;
+            cResult[25] = insets;
+            cResult[26] = tmp19;
+            cResult[27] = tmp20;
+            cResult[28] = tmp21;
+            cResult[29] = sections;
+            cResult[30] = tmp26;
+            tmp24 = tmp26;
+          }
+          class Q {
+            constructor(arg0, arg1) {
+              tmp = channels[arg1];
+              closure_0 = tmp;
+              obj = { icon: null, start: null, end: null, label: null, labelLineClamp: 1, arrow: true, onPress: null };
+              TableRow = guildId(closure_2[21]).TableRow;
+              obj1 = { IconComponent: null };
+              TableRowIcon = guildId(closure_2[22]).TableRowIcon;
+              obj3 = guildId(closure_2[23]);
+              obj1.IconComponent = obj3.getChannelIconComponent(tmp);
+              obj.icon = closure_1_12(TableRowIcon, obj1);
+              obj.start = 0 === arg1;
+              obj.end = arg1 === channels.length - 1;
+              obj4 = guildId(closure_2[16]);
+              obj.label = obj4.computeChannelName(tmp, closure_1_9, closure_1_8);
+              obj.onPress = function onPress() {
+                const obj = { channelId: id.id };
+                navigation.push(unpackModuleId.CHANNEL_OVERRIDE, obj);
+              };
+              return closure_1_12(TableRow, obj);
+            }
+          }
+          class F {
+            constructor() {
+              if (null != first1) {
+                if ("" !== tmp) {
+                  let formatToPlainStringResult;
+                  if (channels.length > 0) {
+                    const intl2 = intl4.intl;
+                    const obj = { count: channels.length };
+                    formatToPlainStringResult = intl2.formatToPlainString(intl4.t.ZGVL3g, obj);
+                  } else {
+                    const intl = intl4.intl;
+                    formatToPlainStringResult = intl.string(intl4.t.f5cMAg);
+                  }
+                  const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                  AccessibilityAnnouncer.announce(formatToPlainStringResult);
+                }
+              }
+            }
+          }
+          cResult[18] = channels;
+          cResult[19] = navigation;
+          cResult[20] = Q;
+          tmp20 = Q;
+        }
+        const items3 = [channels, ];
+        class F {
+          constructor() {
+            if (null != first1) {
+              if ("" !== tmp) {
+                let formatToPlainStringResult;
+                if (channels.length > 0) {
+                  const intl2 = intl4.intl;
+                  const obj = { count: channels.length };
+                  formatToPlainStringResult = intl2.formatToPlainString(intl4.t.ZGVL3g, obj);
+                } else {
+                  const intl = intl4.intl;
+                  formatToPlainStringResult = intl.string(intl4.t.f5cMAg);
+                }
+                const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                AccessibilityAnnouncer.announce(formatToPlainStringResult);
+              }
+            }
+          }
+        }
+        cResult[15] = channels;
+        cResult[16] = first1;
+        cResult[17] = items3;
+        tmp17 = items3;
+      }
+      class F {
+        constructor() {
+          if (null != first1) {
+            if ("" !== tmp) {
+              let formatToPlainStringResult;
+              if (channels.length > 0) {
+                const intl2 = intl4.intl;
+                const obj = { count: channels.length };
+                formatToPlainStringResult = intl2.formatToPlainString(intl4.t.ZGVL3g, obj);
+              } else {
+                const intl = intl4.intl;
+                formatToPlainStringResult = intl.string(intl4.t.f5cMAg);
+              }
+              const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+              AccessibilityAnnouncer.announce(formatToPlainStringResult);
+            }
+          }
+        }
+      }
+      cResult[12] = channels.length;
+      cResult[13] = first1;
+      cResult[14] = F;
+      tmp16 = F;
+    }
+    const obj5 = { channels: null, sections: null };
+    cResult[9] = arr2;
+    cResult[10] = tmp14;
+    cResult[11] = obj5;
+    tmp15 = obj5;
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class L {
+      constructor(channel) {
+        return channel.channel;
+      }
+    }
+    cResult[6] = L;
+    tmp12 = L;
+  } else {
+    class L {
+      constructor(channel) {
+        return channel.channel;
+      }
+    }
+  }
+  const arr3 = navigation(stateFromStores[15])(stateFromStores._categories, stateFromStores, (channel) => {
+    channel = channel.channel;
+    let tmp = isGuildReadableType(channel.type);
+    if (!tmp) {
+      tmp = channel.type === constants.GUILD_CATEGORY && null != stateFromStores[channel.id] && stateFromStores[channel.id].length > 0;
+      const tmp3 = channel.type === constants.GUILD_CATEGORY && null != stateFromStores[channel.id] && stateFromStores[channel.id].length > 0;
+    }
+    if (tmp) {
+      if ("" !== first1) {
+        if (null != first1) {
+          const obj = useChannelName;
+          const str3 = obj.computeChannelName(channel, UserStore, RelationshipStore);
+          const formatted = str3.toLowerCase();
+          const tmp14 = fuzzysearchDefault;
+          return tmp14(first1.toLowerCase(), formatted);
+        }
+      }
+      return tmp;
+    } else {
+      return false;
+    }
+  });
+  const mapped = arr3.map(tmp12);
+  cResult[3] = stateFromStores;
+  cResult[4] = first1;
+  cResult[5] = mapped;
+  arr2 = mapped;
+}) : ((arg0) => {
   let SearchField;
   let intl;
   let intl2;
   let intl3;
   let items4;
   let obj4;
+  let require;
   let tmp16Result;
   ({ guildId: require, navigation } = arg0);
   let stateFromStores;
@@ -55,8 +493,8 @@ const memoResult = react.memo(function NotificationSettingChannelOverrides(arg0)
   let tmp3 = stateFromStores;
   let obj = require("get initialized");
   let items = [GuildCategoryStore];
-  stateFromStores = obj.useStateFromStores(items, () => GuildCategoryStore.getCategories(require));
-  const insets = navigation(stateFromStores[12])().insets;
+  stateFromStores = obj.useStateFromStores(items, () => GuildCategoryStore.getCategories(_require));
+  const insets = navigation(stateFromStores[14])().insets;
   const tmp6 = first(channels.useState(""), 2);
   first = tmp6[0];
   const items1 = [stateFromStores, first];
@@ -76,7 +514,7 @@ const memoResult = react.memo(function NotificationSettingChannelOverrides(arg0)
             const obj = require("useChannelName");
             const str3 = obj.computeChannelName(channel, UserStore, RelationshipStore);
             const formatted = str3.toLowerCase();
-            const tmp14 = navigation(stateFromStores[15]);
+            const tmp14 = navigation(stateFromStores[17]);
             return tmp14(first.toLowerCase(), formatted);
           }
         }
@@ -111,7 +549,7 @@ const memoResult = react.memo(function NotificationSettingChannelOverrides(arg0)
     }
   }, items2);
   const items3 = [channels, navigation];
-  const tmp11 = navigation(stateFromStores[18])();
+  const tmp11 = navigation(stateFromStores[20])();
   const callback = channels.useCallback((arg0, arg1) => {
     let TableRowIcon;
     let obj2;
@@ -140,7 +578,7 @@ const memoResult = react.memo(function NotificationSettingChannelOverrides(arg0)
   let obj2 = { style: tmp.container, children: items4 };
   let obj3 = { style: tmp.searchContainer, children: closure_12(SearchField, obj4) };
   let tmp14 = closure_13;
-  const tmp13 = navigation(stateFromStores[22])();
+  const tmp13 = navigation(stateFromStores[24])();
   obj4 = { placeholder: intl.string(require("intl").t["5h0QOP"]), onChange: tmp8 };
   SearchField = require("SearchField").SearchField;
   intl = require("intl").intl;
@@ -148,18 +586,18 @@ const memoResult = react.memo(function NotificationSettingChannelOverrides(arg0)
   const tmp15 = View;
   const tmp5 = navigation;
   if (0 === channels.length) {
-    const obj5 = { Illustration: require("NoResults").NoResults, title: intl2.string(require("intl").t.wM7uRI), body: intl3.string(require("intl").t.f5cMAg) };
-    const EmptyState = tmp2(tmp3[24]).EmptyState;
-    intl2 = tmp2(tmp3[16]).intl;
-    intl3 = tmp2(tmp3[16]).intl;
+    const obj5 = { Illustration: require("generated/NoResults").NoResults, title: intl2.string(require("intl").t.wM7uRI), body: intl3.string(require("intl").t.f5cMAg) };
+    const EmptyState = tmp2(tmp3[26]).EmptyState;
+    intl2 = tmp2(tmp3[18]).intl;
+    intl3 = tmp2(tmp3[18]).intl;
     tmp16Result = tmp16(EmptyState, obj5);
   } else {
     const obj6 = { sections, renderItem: callback, itemSize: tmp11, insetEnd: insets.bottom, estimatedListSize: "windowSize", placeholderConfig: tmp13, wrapChildren: true };
-    tmp16Result = tmp16(tmp5(tmp3[26]), obj6);
+    tmp16Result = tmp16(tmp5(tmp3[28]), obj6);
   }
   items4[1] = tmp16Result;
   return tmp14(tmp15, obj2);
-});
+}));
 const result = size.fileFinishedImporting("modules/notification_settings/native/NotificationSettingChannelOverrides.native.tsx");
 
 export default memoResult;

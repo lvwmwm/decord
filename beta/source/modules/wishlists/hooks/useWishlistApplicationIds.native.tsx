@@ -1,20 +1,32 @@
-// Module ID: 10259
-// Function ID: 10260
+// Module ID: 10297
+// Function ID: 10298
 // Name: useWishlistApplicationIds
-// Dependencies: [19, 1074, 2]
-// Exports: useWishlistApplicationIds
+// Dependencies: [19, 1086, 558, 576, 2]
 
-// Module 10259 (useWishlistApplicationIds)
-import Constants from "Constants" /* 1074 */;
+// Module 10297 (useWishlistApplicationIds)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_1 = Constants.COLLECTIBLES_APPLICATION_ID;
+let closure_3 = Constants.COLLECTIBLES_APPLICATION_ID;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [closure_3];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => react.useMemo(() => {
+  const items = [closure_1_3];
+  return items;
+}, []));
 const result = size.fileFinishedImporting("modules/wishlists/hooks/useWishlistApplicationIds.native.tsx");
 
-export const useWishlistApplicationIds = function useWishlistApplicationIds() {
-  return react.useMemo(() => {
-    const items = [closure_1_1];
-    return items;
-  }, []);
-};
+export const useWishlistApplicationIds = tmp2;

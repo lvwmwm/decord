@@ -1,12 +1,12 @@
-// Module ID: 11268
-// Function ID: 11269
+// Module ID: 11142
+// Function ID: 11143
 // Name: ApplyBuildOverrideUtils
-// Dependencies: [5, 502, 11269, 1271, 1361, 2]
+// Dependencies: [5, 502, 11143, 1283, 1367, 2]
 // Exports: applyPublicBuildOverride, applyStaffBuildOverride, clearBuildOverride, getPublicBuildOverrideLink
 
-// Module 11268 (ApplyBuildOverrideUtils)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import BuildOverrideUtils from "BuildOverrideUtils" /* 1361 */;
+// Module 11142 (ApplyBuildOverrideUtils)
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import BuildOverrideUtils from "BuildOverrideUtils" /* 1367 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let obj = function _applyStaffBuildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -126,7 +126,7 @@ obj = function _applyPublicBuildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -231,7 +231,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -260,7 +260,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp7) {
       c1 = 3;
@@ -268,7 +268,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
     }
   }
 });
-const f93224 = function() {
+const f106320 = function() {
   return closure_0(...arguments);
 };
 const result = size.fileFinishedImporting("modules/build_overrides/ApplyBuildOverrideUtils.tsx");

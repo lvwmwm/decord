@@ -1,68 +1,68 @@
-// Module ID: 14005
-// Function ID: 14006
+// Module ID: 14007
+// Function ID: 14008
 // Name: NotificationSettingsConstants
-// Dependencies: [2813, 14006, 14007, 2]
+// Dependencies: [2816, 14008, 14009, 2]
 
-// Module 14005 (NotificationSettingsConstants)
-import _modDef2813 from "module_2813" /* 2813 */;
-import NotifSettings from "NotifSettings" /* 14006 */;
-import NotifTypes from "NotifTypes" /* 14007 */;
+// Module 14007 (NotificationSettingsConstants)
+import _modDef2816 from "module_2816" /* 2816 */;
+import NotifSettings from "NotifSettings" /* 14008 */;
+import NotifTypes from "NotifTypes" /* 14009 */;
 import size from "module_2" /* 2 */;
 
 const obj = { badge: true, visibility: "popup", vibrate: true, sound: true };
 const obj2 = { badge: true, visibility: "default", vibrate: true, sound: true };
 const obj3 = { badge: true, visibility: "default", vibrate: false, sound: false };
-const items = [{ title: _modDef2813.S5cB9e, string_id: "111_realtime" }, , , ];
-({ title: _modDef2813.S5cB9e, string_id: "111_realtime" });
-items[1] = { title: _modDef2813["UzRF+8"], string_id: "222_social" };
-({ title: _modDef2813["UzRF+8"], string_id: "222_social" });
-items[2] = { title: _modDef2813.zRKbpz, string_id: "333_server" };
-({ title: _modDef2813.zRKbpz, string_id: "333_server" });
-items[3] = { title: _modDef2813.q5M7HV, string_id: "444_other" };
-({ title: _modDef2813.q5M7HV, string_id: "444_other" });
-const items1 = [{ title: _modDef2813["IUH/Oe"], id: NotifSettings.NotifSettings.CALLS, string_id: "calls", category: "111_realtime", behavior: { badge: false, ringtone: "call_ringing", visibility: "popup", vibrate: true, sound: true }, systemOnly: true }, , , , , , , , , , , , , , , , , , , , ];
-({ title: _modDef2813["IUH/Oe"], id: NotifSettings.NotifSettings.CALLS, string_id: "calls", category: "111_realtime", behavior: { badge: false, ringtone: "call_ringing", visibility: "popup", vibrate: true, sound: true }, systemOnly: true });
-items1[1] = { title: _modDef2813.VeBD1N, id: NotifSettings.NotifSettings.VOICE_CONNECTED, string_id: "mediaConnections", category: "111_realtime", behavior: { badge: false, visibility: "default", vibrate: false, sound: true }, systemOnly: true };
-({ title: _modDef2813.VeBD1N, id: NotifSettings.NotifSettings.VOICE_CONNECTED, string_id: "mediaConnections", category: "111_realtime", behavior: { badge: false, visibility: "default", vibrate: false, sound: true }, systemOnly: true });
-items1[2] = { title: _modDef2813.NGdNZb, id: NotifSettings.NotifSettings.DMS, string_id: "directMessages", category: "222_social", behavior: obj, systemOnly: true };
-({ title: _modDef2813.NGdNZb, id: NotifSettings.NotifSettings.DMS, string_id: "directMessages", category: "222_social", behavior: obj, systemOnly: true });
-items1[3] = { title: _modDef2813.NxgGZA, id: NotifSettings.NotifSettings.FRIEND_REQUESTS, string_id: "friendRequests", category: "222_social", behavior: obj, systemOnly: true };
-({ title: _modDef2813.NxgGZA, id: NotifSettings.NotifSettings.FRIEND_REQUESTS, string_id: "friendRequests", category: "222_social", behavior: obj, systemOnly: true });
-items1[4] = { title: _modDef2813.MOjygY, id: NotifSettings.NotifSettings.POLLS, string_id: "polls", category: "222_social", behavior: obj2, systemOnly: true };
-({ title: _modDef2813.MOjygY, id: NotifSettings.NotifSettings.POLLS, string_id: "polls", category: "222_social", behavior: obj2, systemOnly: true });
-items1[5] = { title: _modDef2813.wv4QHR, id: NotifSettings.NotifSettings.REACTIONS, string_id: "reactions", category: "222_social", behavior: obj2 };
-({ title: _modDef2813.wv4QHR, id: NotifSettings.NotifSettings.REACTIONS, string_id: "reactions", category: "222_social", behavior: obj2 });
-items1[6] = { title: _modDef2813.n0Wp6j, id: NotifSettings.NotifSettings.MISSED_MESSAGES_LOW, string_id: "missed_messages_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 2, 3, 4] };
-({ title: _modDef2813.n0Wp6j, id: NotifSettings.NotifSettings.MISSED_MESSAGES_LOW, string_id: "missed_messages_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 2, 3, 4] });
-items1[7] = { title: _modDef2813.n0Wp6j, id: NotifSettings.NotifSettings.MISSED_MESSAGES_DEFAULT, string_id: "missed_messages_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [1, 5] };
-({ title: _modDef2813.n0Wp6j, id: NotifSettings.NotifSettings.MISSED_MESSAGES_DEFAULT, string_id: "missed_messages_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [1, 5] });
-items1[8] = { title: _modDef2813.Iy9grw, id: NotifSettings.NotifSettings.VOICE_ACTIVITY_LOW, string_id: "voice_activity_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 3, 4] };
-({ title: _modDef2813.Iy9grw, id: NotifSettings.NotifSettings.VOICE_ACTIVITY_LOW, string_id: "voice_activity_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 3, 4] });
-items1[9] = { title: _modDef2813.Iy9grw, id: NotifSettings.NotifSettings.VOICE_ACTIVITY_DEFAULT, string_id: "voice_activity_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [2, 5] };
-({ title: _modDef2813.Iy9grw, id: NotifSettings.NotifSettings.VOICE_ACTIVITY_DEFAULT, string_id: "voice_activity_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [2, 5] });
-items1[10] = { title: _modDef2813["9EDo+/"], id: NotifSettings.NotifSettings.GAMING_LOW, string_id: "gaming_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 4] };
-({ title: _modDef2813["9EDo+/"], id: NotifSettings.NotifSettings.GAMING_LOW, string_id: "gaming_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 4] });
-items1[11] = { title: _modDef2813["9EDo+/"], id: NotifSettings.NotifSettings.GAMING_DEFAULT, string_id: "gaming_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [3, 5] };
-({ title: _modDef2813["9EDo+/"], id: NotifSettings.NotifSettings.GAMING_DEFAULT, string_id: "gaming_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [3, 5] });
-items1[12] = { title: _modDef2813.vcrTV5, id: NotifSettings.NotifSettings.FRIEND_ACTIVITY_LOW, string_id: "social", category: "222_social", behavior: obj3, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 3] };
-({ title: _modDef2813.vcrTV5, id: NotifSettings.NotifSettings.FRIEND_ACTIVITY_LOW, string_id: "social", category: "222_social", behavior: obj3, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 3] });
-items1[13] = { title: _modDef2813.vcrTV5, id: NotifSettings.NotifSettings.FRIEND_ACTIVITY_DEFAULT, string_id: "social", category: "222_social", behavior: obj2, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [4, 5] };
-({ title: _modDef2813.vcrTV5, id: NotifSettings.NotifSettings.FRIEND_ACTIVITY_DEFAULT, string_id: "social", category: "222_social", behavior: obj2, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [4, 5] });
-items1[14] = { title: _modDef2813["4qWUAO"], id: NotifSettings.NotifSettings.GUILD_MESSAGES, string_id: "messages", category: "333_server", behavior: obj, systemOnly: true };
-({ title: _modDef2813["4qWUAO"], id: NotifSettings.NotifSettings.GUILD_MESSAGES, string_id: "messages", category: "333_server", behavior: obj, systemOnly: true });
-items1[15] = { title: _modDef2813.HibKoy, id: NotifSettings.NotifSettings.FORUM_NOTIFICATIONS, string_id: "forumThreadCreated", category: "333_server", behavior: obj, systemOnly: true };
-({ title: _modDef2813.HibKoy, id: NotifSettings.NotifSettings.FORUM_NOTIFICATIONS, string_id: "forumThreadCreated", category: "333_server", behavior: obj, systemOnly: true });
-items1[16] = { title: _modDef2813["40TIqW"], id: NotifSettings.NotifSettings.GUILD_EVENT_NOTIFICATIONS, string_id: "guildEventLive", category: "333_server", behavior: obj, systemOnly: true };
-({ title: _modDef2813["40TIqW"], id: NotifSettings.NotifSettings.GUILD_EVENT_NOTIFICATIONS, string_id: "guildEventLive", category: "333_server", behavior: obj, systemOnly: true });
-items1[17] = { title: _modDef2813["4n388K"], id: NotifSettings.NotifSettings.STAGE_NOTIFICATIONS, string_id: "stageLive", category: "333_server", behavior: obj, systemOnly: true };
-({ title: _modDef2813["4n388K"], id: NotifSettings.NotifSettings.STAGE_NOTIFICATIONS, string_id: "stageLive", category: "333_server", behavior: obj, systemOnly: true });
-items1[18] = { title: _modDef2813.kIrLfg, id: NotifSettings.NotifSettings.OTHER_GUILD, string_id: "other", category: "333_server", behavior: obj3, systemOnly: true };
-({ title: _modDef2813.kIrLfg, id: NotifSettings.NotifSettings.OTHER_GUILD, string_id: "other", category: "333_server", behavior: obj3, systemOnly: true });
-items1[19] = { title: _modDef2813["T+79Eo"], id: NotifSettings.NotifSettings.OTHER, string_id: "default", category: "444_other", behavior: obj3, systemOnly: true };
-({ title: _modDef2813["T+79Eo"], id: NotifSettings.NotifSettings.OTHER, string_id: "default", category: "444_other", behavior: obj3, systemOnly: true });
-items1[20] = { title: _modDef2813.zJlwvV, id: NotifSettings.NotifSettings.SYSTEM, string_id: "systemMessages", category: "444_other", behavior: obj, systemOnly: true };
+const items = [{ title: _modDef2816.S5cB9e, string_id: "111_realtime" }, , , ];
+({ title: _modDef2816.S5cB9e, string_id: "111_realtime" });
+items[1] = { title: _modDef2816["UzRF+8"], string_id: "222_social" };
+({ title: _modDef2816["UzRF+8"], string_id: "222_social" });
+items[2] = { title: _modDef2816.zRKbpz, string_id: "333_server" };
+({ title: _modDef2816.zRKbpz, string_id: "333_server" });
+items[3] = { title: _modDef2816.q5M7HV, string_id: "444_other" };
+({ title: _modDef2816.q5M7HV, string_id: "444_other" });
+const items1 = [{ title: _modDef2816["IUH/Oe"], id: NotifSettings.NotifSettings.CALLS, string_id: "calls", category: "111_realtime", behavior: { badge: false, ringtone: "call_ringing", visibility: "popup", vibrate: true, sound: true }, systemOnly: true }, , , , , , , , , , , , , , , , , , , , ];
+({ title: _modDef2816["IUH/Oe"], id: NotifSettings.NotifSettings.CALLS, string_id: "calls", category: "111_realtime", behavior: { badge: false, ringtone: "call_ringing", visibility: "popup", vibrate: true, sound: true }, systemOnly: true });
+items1[1] = { title: _modDef2816.VeBD1N, id: NotifSettings.NotifSettings.VOICE_CONNECTED, string_id: "mediaConnections", category: "111_realtime", behavior: { badge: false, visibility: "default", vibrate: false, sound: true }, systemOnly: true };
+({ title: _modDef2816.VeBD1N, id: NotifSettings.NotifSettings.VOICE_CONNECTED, string_id: "mediaConnections", category: "111_realtime", behavior: { badge: false, visibility: "default", vibrate: false, sound: true }, systemOnly: true });
+items1[2] = { title: _modDef2816.NGdNZb, id: NotifSettings.NotifSettings.DMS, string_id: "directMessages", category: "222_social", behavior: obj, systemOnly: true };
+({ title: _modDef2816.NGdNZb, id: NotifSettings.NotifSettings.DMS, string_id: "directMessages", category: "222_social", behavior: obj, systemOnly: true });
+items1[3] = { title: _modDef2816.NxgGZA, id: NotifSettings.NotifSettings.FRIEND_REQUESTS, string_id: "friendRequests", category: "222_social", behavior: obj, systemOnly: true };
+({ title: _modDef2816.NxgGZA, id: NotifSettings.NotifSettings.FRIEND_REQUESTS, string_id: "friendRequests", category: "222_social", behavior: obj, systemOnly: true });
+items1[4] = { title: _modDef2816.MOjygY, id: NotifSettings.NotifSettings.POLLS, string_id: "polls", category: "222_social", behavior: obj2, systemOnly: true };
+({ title: _modDef2816.MOjygY, id: NotifSettings.NotifSettings.POLLS, string_id: "polls", category: "222_social", behavior: obj2, systemOnly: true });
+items1[5] = { title: _modDef2816.wv4QHR, id: NotifSettings.NotifSettings.REACTIONS, string_id: "reactions", category: "222_social", behavior: obj2 };
+({ title: _modDef2816.wv4QHR, id: NotifSettings.NotifSettings.REACTIONS, string_id: "reactions", category: "222_social", behavior: obj2 });
+items1[6] = { title: _modDef2816.n0Wp6j, id: NotifSettings.NotifSettings.MISSED_MESSAGES_LOW, string_id: "missed_messages_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 2, 3, 4] };
+({ title: _modDef2816.n0Wp6j, id: NotifSettings.NotifSettings.MISSED_MESSAGES_LOW, string_id: "missed_messages_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 2, 3, 4] });
+items1[7] = { title: _modDef2816.n0Wp6j, id: NotifSettings.NotifSettings.MISSED_MESSAGES_DEFAULT, string_id: "missed_messages_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [1, 5] };
+({ title: _modDef2816.n0Wp6j, id: NotifSettings.NotifSettings.MISSED_MESSAGES_DEFAULT, string_id: "missed_messages_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [1, 5] });
+items1[8] = { title: _modDef2816.Iy9grw, id: NotifSettings.NotifSettings.VOICE_ACTIVITY_LOW, string_id: "voice_activity_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 3, 4] };
+({ title: _modDef2816.Iy9grw, id: NotifSettings.NotifSettings.VOICE_ACTIVITY_LOW, string_id: "voice_activity_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 3, 4] });
+items1[9] = { title: _modDef2816.Iy9grw, id: NotifSettings.NotifSettings.VOICE_ACTIVITY_DEFAULT, string_id: "voice_activity_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [2, 5] };
+({ title: _modDef2816.Iy9grw, id: NotifSettings.NotifSettings.VOICE_ACTIVITY_DEFAULT, string_id: "voice_activity_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [2, 5] });
+items1[10] = { title: _modDef2816["9EDo+/"], id: NotifSettings.NotifSettings.GAMING_LOW, string_id: "gaming_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 4] };
+({ title: _modDef2816["9EDo+/"], id: NotifSettings.NotifSettings.GAMING_LOW, string_id: "gaming_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 4] });
+items1[11] = { title: _modDef2816["9EDo+/"], id: NotifSettings.NotifSettings.GAMING_DEFAULT, string_id: "gaming_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [3, 5] };
+({ title: _modDef2816["9EDo+/"], id: NotifSettings.NotifSettings.GAMING_DEFAULT, string_id: "gaming_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [3, 5] });
+items1[12] = { title: _modDef2816.vcrTV5, id: NotifSettings.NotifSettings.FRIEND_ACTIVITY_LOW, string_id: "social", category: "222_social", behavior: obj3, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 3] };
+({ title: _modDef2816.vcrTV5, id: NotifSettings.NotifSettings.FRIEND_ACTIVITY_LOW, string_id: "social", category: "222_social", behavior: obj3, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 3] });
+items1[13] = { title: _modDef2816.vcrTV5, id: NotifSettings.NotifSettings.FRIEND_ACTIVITY_DEFAULT, string_id: "social", category: "222_social", behavior: obj2, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [4, 5] };
+({ title: _modDef2816.vcrTV5, id: NotifSettings.NotifSettings.FRIEND_ACTIVITY_DEFAULT, string_id: "social", category: "222_social", behavior: obj2, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [4, 5] });
+items1[14] = { title: _modDef2816["4qWUAO"], id: NotifSettings.NotifSettings.GUILD_MESSAGES, string_id: "messages", category: "333_server", behavior: obj, systemOnly: true };
+({ title: _modDef2816["4qWUAO"], id: NotifSettings.NotifSettings.GUILD_MESSAGES, string_id: "messages", category: "333_server", behavior: obj, systemOnly: true });
+items1[15] = { title: _modDef2816.HibKoy, id: NotifSettings.NotifSettings.FORUM_NOTIFICATIONS, string_id: "forumThreadCreated", category: "333_server", behavior: obj, systemOnly: true };
+({ title: _modDef2816.HibKoy, id: NotifSettings.NotifSettings.FORUM_NOTIFICATIONS, string_id: "forumThreadCreated", category: "333_server", behavior: obj, systemOnly: true });
+items1[16] = { title: _modDef2816["40TIqW"], id: NotifSettings.NotifSettings.GUILD_EVENT_NOTIFICATIONS, string_id: "guildEventLive", category: "333_server", behavior: obj, systemOnly: true };
+({ title: _modDef2816["40TIqW"], id: NotifSettings.NotifSettings.GUILD_EVENT_NOTIFICATIONS, string_id: "guildEventLive", category: "333_server", behavior: obj, systemOnly: true });
+items1[17] = { title: _modDef2816["4n388K"], id: NotifSettings.NotifSettings.STAGE_NOTIFICATIONS, string_id: "stageLive", category: "333_server", behavior: obj, systemOnly: true };
+({ title: _modDef2816["4n388K"], id: NotifSettings.NotifSettings.STAGE_NOTIFICATIONS, string_id: "stageLive", category: "333_server", behavior: obj, systemOnly: true });
+items1[18] = { title: _modDef2816.kIrLfg, id: NotifSettings.NotifSettings.OTHER_GUILD, string_id: "other", category: "333_server", behavior: obj3, systemOnly: true };
+({ title: _modDef2816.kIrLfg, id: NotifSettings.NotifSettings.OTHER_GUILD, string_id: "other", category: "333_server", behavior: obj3, systemOnly: true });
+items1[19] = { title: _modDef2816["T+79Eo"], id: NotifSettings.NotifSettings.OTHER, string_id: "default", category: "444_other", behavior: obj3, systemOnly: true };
+({ title: _modDef2816["T+79Eo"], id: NotifSettings.NotifSettings.OTHER, string_id: "default", category: "444_other", behavior: obj3, systemOnly: true });
+items1[20] = { title: _modDef2816.zJlwvV, id: NotifSettings.NotifSettings.SYSTEM, string_id: "systemMessages", category: "444_other", behavior: obj, systemOnly: true };
 const obj29 = {};
-({ title: _modDef2813.zJlwvV, id: NotifSettings.NotifSettings.SYSTEM, string_id: "systemMessages", category: "444_other", behavior: obj, systemOnly: true });
+({ title: _modDef2816.zJlwvV, id: NotifSettings.NotifSettings.SYSTEM, string_id: "systemMessages", category: "444_other", behavior: obj, systemOnly: true });
 const GUILD_STREAM_START = NotifTypes.NotifTypes.GUILD_STREAM_START;
 const items2 = [NotifSettings.NotifSettings.VOICE_ACTIVITY_LOW, NotifSettings.NotifSettings.VOICE_ACTIVITY_DEFAULT];
 obj29[GUILD_STREAM_START] = items2;

@@ -1,63 +1,86 @@
 // Module ID: 12396
 // Function ID: 12397
-// Dependencies: []
-// Exports: getClientIPAddress
+// Dependencies: [12311, 12312, 12397, 12338, 12367, 12398, 12322, 12320, 12359]
 
 // Module 12396
-const items = ["X-Client-IP", "X-Forwarded-For", "Fly-Client-IP", "CF-Connecting-IP", "Fastly-Client-Ip", "True-Client-Ip", "X-Real-IP", "X-Cluster-Client-IP", "X-Forwarded", "Forwarded-For", "Forwarded", "X-Vercel-Forwarded-For"];
+import _mod12338 from "module_12338" /* 12338 */;
+import _mod12398 from "module_12398" /* 12398 */;
+import module_12367 from "module_12367" /* 12367 */;
 
-export const getClientIPAddress = function getClientIPAddress(arg0) {
-  let closure_0 = arg0;
-  let mapped = items.map((item) => {
-    let mapped;
-    function parseForwardedHeader(str) {
-      if (str) {
-        const parts = str.split(";");
-        const iter = parts[Symbol.iterator]();
-        const nextResult = iter.next();
-        while (iter !== undefined) {
-          let arr = nextResult;
-          if (nextResult.startsWith("for=")) {
-            let substr = arr.slice(4);
-            iter.return();
-            return substr;
+
+export const captureConsoleIntegration = module_12367.defineIntegration(() => {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  let handled;
+  let CONSOLE_LEVELS = obj.levels;
+  if (!CONSOLE_LEVELS) {
+    let tmp = CONSOLE_LEVELS;
+    let tmp2 = handled;
+    CONSOLE_LEVELS = CONSOLE_LEVELS(handled[0]).CONSOLE_LEVELS;
+  }
+  handled = obj.handled;
+  let obj2 = {
+    name: "CaptureConsole",
+    setup(arg0) {
+      let closure_0 = arg0;
+      const tmp2 = handled;
+      const tmp = CONSOLE_LEVELS;
+      if ("console" in CONSOLE_LEVELS(handled[1]).GLOBAL_OBJ) {
+        let tmpResult = tmp(tmp2[2]);
+        let result = tmpResult.addConsoleInstrumentationHandler((arg0) => {
+          let args;
+          let level;
+          let obj3;
+          let tmpResult;
+          ({ args, level } = arg0);
+          let obj = _mod12338;
+          let hasItem = obj.getClient() === closure_0;
+          if (hasItem) {
+            let tmp4 = CONSOLE_LEVELS;
+            hasItem = CONSOLE_LEVELS.includes(level);
           }
-        }
-        return null;
-      } else {
-        return null;
+          if (hasItem) {
+            let closure_2 = handled;
+            let obj2 = { level: tmpResult.severityLevelFromString(level), extra: obj3 };
+            obj3 = { arguments: args };
+            tmpResult = _mod12398;
+            const tmpResult2 = _mod12338;
+            tmpResult2.withScope((addEventProcessor) => {
+              addEventProcessor.addEventProcessor((arg0) => {
+                arg0.logger = "console";
+                const obj = args(level[6]);
+                obj2 = { handled, type: "console" };
+                const result = obj.addExceptionMechanism(arg0, obj2);
+                return arg0;
+              });
+              if ("assert" !== level) {
+                const found = args.find((item) => item instanceof Error);
+                const tmp12 = args;
+                if (found) {
+                  const tmp14Result = closure_2_0(closure_2_1[8]);
+                  tmp14Result.captureException(found, obj2);
+                } else {
+                  const tmp14Result2 = closure_2_0(closure_2_1[7]);
+                  const safeJoinResult = tmp14Result2.safeJoin(tmp12, " ");
+                  const obj4 = closure_2_0(closure_2_1[8]);
+                  obj4.captureMessage(safeJoinResult, obj2);
+                }
+              } else if (!args[0]) {
+                let obj = closure_2_0(closure_2_1[7]);
+                const _HermesInternal = HermesInternal;
+                const tmp4 = obj.safeJoin(args.slice(1), " ") || "console.assert";
+                const combined = "Assertion failed: " + tmp4;
+                addEventProcessor.setExtra("arguments", args.slice(1));
+                obj2 = closure_2_0(closure_2_1[8]);
+                obj2.captureMessage(combined, obj2);
+              }
+            });
+          }
+        });
       }
     }
-    let str = obj;
-    if (Array.isArray(closure_0[item])) {
-      str = obj.join(";");
-    }
-    if ("Forwarded" === item) {
-      mapped = parseForwardedHeader(str);
-    } else {
-      mapped = str;
-      if (mapped) {
-        let parts = str.split(",");
-        mapped = parts.map((item) => item.trim());
-      }
-    }
-    return mapped;
-  });
-  const reduced = mapped.reduce((arr, item) => {
-    let combined = arr;
-    if (item) {
-      combined = arr.concat(item);
-    }
-    return combined;
-  }, []);
-  const tmp = reduced.find((item) => {
-    let isMatch = null !== item;
-    if (isMatch) {
-      const obj = /(?:^(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}$)|(?:^(?:(?:[a-fA-F\d]{1,4}:){7}(?:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){6}(?:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){5}(?::(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,2}|:)|(?:[a-fA-F\d]{1,4}:){4}(?:(?::[a-fA-F\d]{1,4}){0,1}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,3}|:)|(?:[a-fA-F\d]{1,4}:){3}(?:(?::[a-fA-F\d]{1,4}){0,2}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,4}|:)|(?:[a-fA-F\d]{1,4}:){2}(?:(?::[a-fA-F\d]{1,4}){0,3}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,5}|:)|(?:[a-fA-F\d]{1,4}:){1}(?:(?::[a-fA-F\d]{1,4}){0,4}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,6}|:)|(?::(?:(?::[a-fA-F\d]{1,4}){0,5}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,7}|:)))(?:%[0-9a-zA-Z]{1,})?$)/;
-      isMatch = obj.test(item);
-    }
-    return isMatch;
-  }) || null;
-  return tmp;
-};
-export const ipHeaderNames = items;
+  };
+  return obj2;
+});

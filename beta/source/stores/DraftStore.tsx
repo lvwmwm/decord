@@ -1,20 +1,20 @@
-// Module ID: 5200
-// Function ID: 5201
+// Module ID: 5201
+// Function ID: 5202
 // Name: DraftStore
-// Dependencies: [32, 502, 2045, 5201, 1074, 5202, 12, 11, 504, 1370, 573, 2]
+// Dependencies: [32, 502, 2051, 5202, 1086, 5203, 12, 11, 504, 1376, 585, 2]
 
-// Module 5200 (DraftStore)
+// Module 5201 (DraftStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import DraftCommand from "DraftCommand" /* 5202 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import DraftCommand from "DraftCommand" /* 5203 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5201 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5202 */;
 import size from "module_2" /* 2 */;
 
 let closure_9;
@@ -295,8 +295,8 @@ class DraftStore extends PersistedStore {
       return command;
     }
   }
-  getThreadSettings(channelId) {
-    const id = AuthenticationStore.getId();
+  getThreadSettings(id) {
+    id = AuthenticationStore.getId();
     if (null == id) {
       return null;
     } else {
@@ -308,7 +308,7 @@ class DraftStore extends PersistedStore {
         tmp3 = obj;
       }
       let tmp7 = null;
-      if (null != tmp3[channelId]) {
+      if (null != tmp3[id]) {
         tmp7 = tmp6[obj.ThreadSettings];
       }
       return tmp7;

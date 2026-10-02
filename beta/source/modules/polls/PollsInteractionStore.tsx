@@ -1,20 +1,22 @@
-// Module ID: 10971
-// Function ID: 10972
+// Module ID: 10839
+// Function ID: 10840
 // Name: PollsInteractionStore
-// Dependencies: [1243, 1248, 558, 11, 2]
-// Exports: clearChannelPollState, clearPollState, getPollState, updatePollState, useChannelPollInteractions, useMessagePollInteractions
+// Dependencies: [1255, 1260, 558, 576, 568, 11, 2]
+// Exports: clearChannelPollState, clearPollState, getPollState, updatePollState
 
-// Module 10971 (PollsInteractionStore)
+// Module 10839 (PollsInteractionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import shallowEqualDefault from "shallowEqual" /* 558 */;
-import module_1243 from "module_1243" /* 1243 */;
+import shallowEqualDefault from "shallowEqual" /* 568 */;
+import react from "react" /* 576 */;
+import module_1255 from "module_1255" /* 1255 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let closure_3 = {};
-let closure_4 = module_1243.createWithEqualityFn((arg0) => {
+let closure_4 = module_1255.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   let obj = {
     pollsByChannelId: {},
@@ -51,9 +53,31 @@ let closure_4 = module_1243.createWithEqualityFn((arg0) => {
   };
   return obj;
 });
-const result = size.fileFinishedImporting("modules/polls/PollsInteractionStore.tsx");
-
-export const useMessagePollInteractions = function useMessagePollInteractions(arg0) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp3;
+  let closure_0 = arg0;
+  let obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] !== arg0) {
+    const fn = function n(arg0) {
+      closure_0 = arg0;
+      const obj = {};
+      const item = closure_0.forEach((item) => {
+        if (null != pollsByMessageId.pollsByMessageId[item]) {
+          obj[item] = pollsByMessageId.pollsByMessageId[item];
+        }
+      });
+      return obj;
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    tmp3 = fn;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return closure_4(tmp3, shallowEqualDefault);
+}) : ((arg0) => {
   let closure_0 = arg0;
   return closure_4((arg0) => {
     closure_0 = arg0;
@@ -65,8 +89,31 @@ export const useMessagePollInteractions = function useMessagePollInteractions(ar
     });
     return obj;
   }, shallowEqualDefault);
-};
-export const useChannelPollInteractions = function useChannelPollInteractions(arg0) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let tmp3;
+  _require = arg0;
+  let tmp = dependencyMap;
+  const obj = require("react");
+  const cResult = obj.c(2);
+  if (cResult[0] !== arg0) {
+    const fn = function s(arg0) {
+      let tmp = arg0.pollsByChannelId[closure_0];
+      if (tmp == null) {
+        tmp = closure_3;
+      }
+      return tmp;
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    tmp3 = fn;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return closure_4(tmp3, shallowEqualDefault);
+}) : ((arg0) => {
   let closure_0 = arg0;
   return closure_4((arg0) => {
     let tmp = arg0.pollsByChannelId[closure_0];
@@ -75,7 +122,11 @@ export const useChannelPollInteractions = function useChannelPollInteractions(ar
     }
     return tmp;
   }, shallowEqualDefault);
-};
+});
+const result = size.fileFinishedImporting("modules/polls/PollsInteractionStore.tsx");
+
+export const useMessagePollInteractions = tmp2;
+export const useChannelPollInteractions = tmp3;
 export const clearChannelPollState = function clearChannelPollState(arg0) {
   let closure_0;
   let state;

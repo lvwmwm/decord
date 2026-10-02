@@ -1,43 +1,44 @@
-// Module ID: 14250
-// Function ID: 14251
+// Module ID: 14238
+// Function ID: 14239
 // Name: SettingRenderer
-// Dependencies: [32, 109, 19, 17, 2112, 14249, 2067, 11007, 21, 4836, 576, 1177, 5917, 1485, 14251, 504, 1115, 10278, 5896, 14253, 14254, 4832, 6622, 6621, 4550, 5997, 6000, 6610, 4527, 9442, 4801, 4802, 5919, 5279, 1882, 1364, 13997, 5435, 5281, 4531, 6418, 1876, 2]
+// Dependencies: [32, 109, 19, 17, 2115, 14237, 2073, 10875, 21, 4837, 588, 1189, 5916, 1491, 14239, 558, 576, 504, 1127, 10316, 5893, 14241, 14242, 4833, 6622, 6621, 4554, 5995, 5994, 6611, 4530, 9438, 4802, 4803, 5918, 5280, 1888, 1370, 13999, 5436, 5282, 4535, 6418, 1882, 2]
 // Exports: renderSettingItem, renderSettingSearchResultItem, renderSettingSearchResultPlaceholderItem
 
-// Module 14250 (SettingRenderer)
+// Module 14238 (SettingRenderer)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import useToken from "useToken" /* 4531 */;
-import react2 from "react" /* 4550 */;
-import HapticUtils from "HapticUtils" /* 4801 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import GuildIcon from "GuildIcon" /* 5896 */;
-import TableRadioRow from "TableRadioRow" /* 6000 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1882 */;
+import ToastUtils from "ToastUtils" /* 4530 */;
+import useToken from "useToken" /* 4535 */;
+import react3 from "react" /* 4554 */;
+import HapticUtils from "HapticUtils" /* 4802 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4803 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import GuildIcon from "GuildIcon" /* 5893 */;
 import Tracking from "Tracking" /* 6418 */;
-import ClipboardUtils from "ClipboardUtils" /* 6610 */;
+import ClipboardUtils from "ClipboardUtils" /* 6611 */;
 import FormSwitch from "FormSwitch" /* 6622 */;
-import VolumeSliderDefault from "VolumeSlider" /* 9442 */;
-import ClydeIcon from "ClydeIcon" /* 10278 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 14251 */;
-import useHighlightSettingItem from "useHighlightSettingItem" /* 14253 */;
-import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 14254 */;
+import VolumeSliderDefault from "VolumeSlider" /* 9438 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 14239 */;
+import useHighlightSettingItem from "useHighlightSettingItem" /* 14241 */;
+import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 14242 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14249 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11007 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14237 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 10875 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
+const require = globalThis.__r;
 const GuildIconDefault = GuildIcon;
-let dependencyMap, useSelectedGuildId;
+let _require, dependencyMap, useSelectedGuildId;
 
 let closure_12;
 let closure_14;
@@ -50,90 +51,9 @@ let obj4;
 let size;
 let tmp;
 let tmp2;
-const TableRow2 = tmp(5917);
-const TableRadioGroup2 = tmp2(5997);
-class GuildSelectDefaultIcon {
-  constructor(size) {
-    let obj2;
-    let str = size.size;
-    if (str === undefined) {
-      str = "sm";
-    }
-    let num = 32;
-    const tmp = closure_17();
-    if ("xs" === str) {
-      num = 24;
-    }
-    const obj = { style: obj2, children: authStore2(ClydeIcon.ClydeIcon, { color: "white", size: str }) };
-    obj2 = { width: num, height: num, borderRadius: num / 3 };
-    const merged = Object.assign(tmp.defaultIcon);
-    return authStore2(View, obj);
-  }
-}
-function DisabledActionDescriptionWithLink(children) {
-  let description;
-  let descriptionColor;
-  let descriptionVariant;
-  let items;
-  ({ description, descriptionVariant, descriptionColor } = children);
-  const tmp4 = authStore2(Text_Text.Text, { variant: "text-xs/medium", color: "text-link", children: children.disabledActionLabel });
-  const tmp = authStore2;
-  if (null == description) {
-    return tmp4;
-  } else {
-    let tmpResult = description;
-    if (!react.isValidElement(description)) {
-      const Text = Text_Text.Text;
-      if (descriptionVariant == null) {
-        descriptionVariant = "text-xs/medium";
-      }
-      const obj = { variant: descriptionVariant, color: descriptionColor, children: description };
-      if (descriptionColor == null) {
-        descriptionColor = "text-subtle";
-      }
-      tmpResult = tmp(Text, obj);
-    }
-    const obj2 = { children: items };
-    items = [tmp4, tmpResult];
-    return authStore3(View, obj2);
-  }
-}
-function ForceSwitchIcons(children) {
-  children = children.children;
-  const context = react.useContext(react2.AccessibilityPreferencesContext);
-  const items = [context];
-  const value = react.useMemo(() => {
-    const obj = { switchIconsEnabled: true };
-    const merged = Object.assign(context);
-    return obj;
-  }, items);
-  return authStore2(react2.AccessibilityPreferencesContext.Provider, { value, children });
-}
-function SettingSearchResultBreadcrumbs(breadcrumbs) {
-  breadcrumbs = breadcrumbs.breadcrumbs;
-  let tmp = null;
-  if (0 !== breadcrumbs.length) {
-    const obj = { variant: "text-xs/medium", color: "text-muted", children: breadcrumbs.join(" \u2192 ") };
-    const Text = Text_Text.Text;
-    tmp = authStore2(Text, obj);
-  }
-  return tmp;
-}
-function SettingSearchResultIcon(IconComponent) {
-  let obj3;
-  let tmp6;
-  IconComponent = IconComponent.IconComponent;
-  useToken;
-  if (null == IconComponent) {
-    const obj2 = { style: obj3 };
-    obj3 = { width: tmp4 };
-    tmp6 = authStore2(View, obj2);
-  } else {
-    const obj = { IconComponent };
-    tmp6 = authStore2(TableRow2.TableRow.Icon, obj);
-  }
-  return tmp6;
-}
+const TableRow2 = tmp(5916);
+const TableRadioGroup2 = tmp2(5995);
+const ClydeIcon = tmp(10316);
 function RouteSettingSearchResult(setting) {
   let IconComponent;
   let breadcrumbs;
@@ -165,34 +85,9 @@ function RouteSettingSearchResult(setting) {
     const obj5 = { navigation: stackNavigation, screen, preNavigationAction };
     const result1 = obj4.onRouteSettingOnPress(obj5);
   }, items);
-  let obj2 = { label: title, onPress: callback, arrow: true, icon: closure_14(SettingSearchResultIcon, { IconComponent }), subLabel: closure_14(SettingSearchResultBreadcrumbs, { breadcrumbs }), start: 0 === index, end: index === total - 1 };
+  let obj2 = { label: title, onPress: callback, arrow: true, icon: closure_14(closure_31, { IconComponent }), subLabel: closure_14(closure_30, { breadcrumbs }), start: 0 === index, end: index === total - 1 };
   const TableRow = tmp(tmp2[12]).TableRow;
   return closure_14(TableRow, obj2);
-}
-function PressableSettingSearchResult(setting) {
-  let IconComponent;
-  let breadcrumbs;
-  let settingData;
-  let title;
-  ({ settingData, title } = setting);
-  setting = setting.setting;
-  const index = setting.index;
-  const total = setting.total;
-  const onPress = settingData.onPress;
-  const items = [setting, title, index, total, onPress];
-  ({ IconComponent, breadcrumbs } = setting);
-  const withArrow = settingData.withArrow;
-  const callback = react.useCallback(() => {
-    const obj = Tracking;
-    const obj2 = { setting, title, searchResultPosition: index, numSearchResults: total };
-    const result = obj.trackSettingSearchResultPress(obj2);
-    const obj3 = KeyboardManagerUtils;
-    const result1 = obj3.dismissGlobalKeyboard();
-    onPress();
-  }, items);
-  let obj = { label: title, onPress: callback, icon: closure_14(SettingSearchResultIcon, { IconComponent }), subLabel: closure_14(SettingSearchResultBreadcrumbs, { breadcrumbs }), start: 0 === index, end: index === total - 1, arrow: withArrow };
-  const TableRow = title(index[12]).TableRow;
-  return closure_14(TableRow, obj);
 }
 function StaticSettingSearchResult(title) {
   let IconComponent;
@@ -221,7 +116,7 @@ function StaticSettingSearchResult(title) {
       const result1 = obj4.presentCopiedToClipboard();
     }
   }, items);
-  let obj = { label: title, onPress: tmp6, icon: tmp3(SettingSearchResultIcon, { IconComponent }), subLabel: tmp3(SettingSearchResultBreadcrumbs, { breadcrumbs }), trailing: tmp3Result, start: 0 === index, end: index === total - 1 };
+  let obj = { label: title, onPress: tmp6, icon: tmp3(closure_31, { IconComponent }), subLabel: tmp3(closure_30, { breadcrumbs }), trailing: tmp3Result, start: 0 === index, end: index === total - 1 };
   tmp6 = undefined;
   const TableRow = title(index[12]).TableRow;
   const tmp4 = title;
@@ -235,27 +130,6 @@ function StaticSettingSearchResult(title) {
     tmp3Result = tmp3(tmp4(tmp5[12]).TableRow.TrailingText, obj2);
   }
   return closure_14(TableRow, obj);
-}
-function SettingSearchResultPlaceholder(arg0) {
-  let end;
-  let items;
-  let obj2;
-  let obj3;
-  let start;
-  ({ start, end } = arg0);
-  const tmp = closure_17();
-  let obj = { start, end, label: authStore2(View, obj2), icon: authStore2(View, obj3) };
-  obj2 = { style: items };
-  items = [
-    tmp.placeholderUsername,
-    _slicedToArray(react.useState(() => {
-      const obj = { width: `${10 + 80 * Math.random() | 0}%` };
-      return obj;
-    }), 1)[0]
-  ];
-  const TableRow = TableRow2.TableRow;
-  obj3 = { style: tmp.placeholderAvatar };
-  return authStore2(TableRow, obj);
 }
 let closure_3 = ["onSlidingComplete", "step", "startIcon", "endIcon", "minimumValue", "maximumValue", "valueLabel", "defaultValue", "onValueChange"];
 let closure_4 = ["settingData"];
@@ -322,7 +196,7 @@ let closure_18 = react.memo((arg0) => {
   let tmp11 = description;
   if (null != tmp10) {
     let obj2 = { disabledActionLabel: tmp10.label, description };
-    tmp11 = closure_14(DisabledActionDescriptionWithLink, obj2);
+    tmp11 = closure_14(closure_23, obj2);
   }
   const obj3 = { label: title, subLabel: tmp11, disabled: true === isDisabled, arrow: true, variant, icon: tmp14Result, trailing: tmp16, onPress, accessibilityHint, start, end };
   tmp14Result = null;
@@ -357,42 +231,183 @@ let closure_18 = react.memo((arg0) => {
   }
   return closure_14(TableRow, obj3);
 });
-let closure_20 = react.memo((useSelectedGuildId) => {
-  let c2;
-  let callback;
-  let guild;
-  let memoResult;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp9;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(6);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function l() {
+      return GuildStore.getGuild(closure_0);
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = require("get initialized");
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (arg0 === closure_12) {
+    let tmp12;
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl2 = tmp(1127).intl;
+      const stringResult = intl2.string(require("intl").t["32u1Dx"]);
+      cResult[3] = stringResult;
+      tmp12 = stringResult;
+    } else {
+      tmp12 = cResult[3];
+    }
+    tmp9 = tmp12;
+  } else {
+    let name;
+    const tmp14 = cResult[4];
+    if (stateFromStores != null) {
+      name = stateFromStores.name;
+    }
+    if (tmp14 !== name) {
+      let name1;
+      if (stateFromStores != null) {
+        name1 = stateFromStores.name;
+      }
+      if (name1 == null) {
+        const intl = tmp(1127).intl;
+        name1 = intl.string(tmp(1127).t["XBwns+"]);
+      }
+      let name2;
+      if (stateFromStores != null) {
+        name2 = stateFromStores.name;
+      }
+      cResult[4] = name2;
+      cResult[5] = name1;
+      tmp9 = name1;
+    } else {
+      tmp9 = cResult[5];
+    }
+  }
+  return tmp9;
+}) : ((arg0) => {
+  let closure_0;
   let stringResult;
-  useSelectedGuildId = useSelectedGuildId.useSelectedGuildId;
-  const merged = Object.assign(useSelectedGuildId, Object.assign({ useSelectedGuildId: 0 }));
-  dependencyMap = undefined;
-  const selectedGuildId = useSelectedGuildId();
-  let obj = selectedGuildId(504);
+  _require = arg0;
   const items = [GuildStore];
-  let closure_1 = obj.useStateFromStores(items, () => GuildStore.getGuild(selectedGuildId));
-  const items1 = [GuildStore];
-  const obj2 = selectedGuildId(504);
-  const stateFromStores = obj2.useStateFromStores(items1, () => guild.getGuild(selectedGuildId));
-  if (selectedGuildId === closure_12) {
-    const intl2 = tmp3(1115).intl;
-    stringResult = intl2.string(tmp3(1115).t["32u1Dx"]);
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(closure_0));
+  if (arg0 === closure_12) {
+    const intl2 = tmp(1127).intl;
+    stringResult = intl2.string(tmp(1127).t["32u1Dx"]);
   } else {
     stringResult = undefined;
     if (stateFromStores != null) {
       stringResult = stateFromStores.name;
     }
     if (stringResult == null) {
-      const intl = tmp3(1115).intl;
-      stringResult = intl.string(tmp3(1115).t["XBwns+"]);
+      const intl = tmp(1127).intl;
+      stringResult = intl.string(tmp(1127).t["XBwns+"]);
     }
   }
-  dependencyMap = stringResult;
-  const items2 = [stringResult];
-  const obj3 = { type: constants.PRESSABLE, useTitle: callback, withArrow: true, IconComponent: memoResult };
+  return stringResult;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
+  const obj = react2;
+  const cResult = obj.c(9);
+  size = size.size;
+  let str = "sm";
+  if (undefined !== size) {
+    str = size;
+  }
+  const tmp4 = closure_17();
+  let num = 32;
+  if ("xs" === str) {
+    num = 24;
+  }
+  const result = num / 3;
+  if (cResult[0] === result) {
+    if (cResult[1] === num) {
+      let tmp6;
+      let tmp8;
+      if (cResult[2] === tmp4.defaultIcon) {
+        tmp6 = cResult[3];
+      }
+      if (cResult[4] !== str) {
+        const obj2 = { color: "white", size: str };
+        const tmp10 = authStore2(ClydeIcon.ClydeIcon, obj2);
+        cResult[4] = str;
+        cResult[5] = tmp10;
+        tmp8 = tmp10;
+      } else {
+        tmp8 = cResult[5];
+      }
+      if (cResult[6] === tmp6) {
+        let tmp11;
+        if (cResult[7] === tmp8) {
+          tmp11 = cResult[8];
+        }
+        return tmp11;
+      }
+      const obj3 = { style: tmp6, children: tmp8 };
+      const tmp14 = authStore2(View, obj3);
+      cResult[6] = tmp6;
+      cResult[7] = tmp8;
+      cResult[8] = tmp14;
+      tmp11 = tmp14;
+    }
+  }
+  const obj4 = { width: num, height: num, borderRadius: result };
+  const merged = Object.assign(tmp4.defaultIcon);
+  cResult[0] = result;
+  cResult[1] = num;
+  cResult[2] = tmp4.defaultIcon;
+  cResult[3] = obj4;
+  tmp6 = obj4;
+}) : ((size) => {
+  let obj2;
+  let str = size.size;
+  if (str === undefined) {
+    str = "sm";
+  }
+  let num = 32;
+  const tmp = closure_17();
+  if ("xs" === str) {
+    num = 24;
+  }
+  const obj = { style: obj2, children: authStore2(ClydeIcon.ClydeIcon, { color: "white", size: str }) };
+  obj2 = { width: num, height: num, borderRadius: num / 3 };
+  const merged = Object.assign(tmp.defaultIcon);
+  return authStore2(View, obj);
+});
+let closure_20 = tmp5;
+let closure_21 = react.memo((useSelectedGuildId) => {
+  let callback;
+  let closure_2;
+  let memoResult;
+  useSelectedGuildId = useSelectedGuildId.useSelectedGuildId;
+  const merged = Object.assign(useSelectedGuildId, Object.assign({ useSelectedGuildId: 0 }));
+  const selectedGuildId = useSelectedGuildId();
+  let obj = selectedGuildId(504);
+  const items = [GuildStore];
+  let closure_1 = obj.useStateFromStores(items, () => GuildStore.getGuild(selectedGuildId));
+  const tmp3 = closure_19(selectedGuildId);
+  dependencyMap = tmp3;
+  const items1 = [tmp3];
+  const obj2 = { type: constants.PRESSABLE, useTitle: callback, withArrow: true, IconComponent: memoResult };
   memoResult = react.memo(() => {
     let tmp7;
     if (null == closure_1) {
-      tmp7 = authStore2(GuildSelectDefaultIcon, {});
+      tmp7 = authStore2(closure_20, {});
     } else {
       const obj = { size: GuildIcon.GuildIconSizes.SMALL_32, guild: tmp };
       const tmp5 = GuildIconDefault;
@@ -400,11 +415,11 @@ let closure_20 = react.memo((useSelectedGuildId) => {
     }
     return tmp7;
   });
-  callback = react.useCallback(() => c2, items2);
+  callback = react.useCallback(() => closure_2, items1);
   const merged1 = Object.assign(merged);
-  return closure_14(closure_21, obj3);
+  return closure_14(closure_22, obj2);
 });
-let closure_21 = react.memo((arg0) => {
+let closure_22 = react.memo((arg0) => {
   let IconComponent;
   let end;
   let onPress;
@@ -437,19 +452,19 @@ let closure_21 = react.memo((arg0) => {
   }
   const obj2 = { label: title, subLabel: description, arrow: withArrow, variant, icon: tmp10Result, onPress, disabled: true === isDisabled, trailing: tmp12, start, end };
   tmp10Result = null;
-  const TableRow = tmp(5917).TableRow;
+  const TableRow = tmp(5916).TableRow;
   const tmp8 = authStore3;
   const tmp9 = closure_15;
   if (null != IconComponent) {
     const obj3 = { IconComponent, variant };
-    tmp10Result = tmp10(tmp(5917).TableRow.Icon, obj3);
+    tmp10Result = tmp10(tmp(5916).TableRow.Icon, obj3);
   }
   tmp12 = undefined;
   if (null != trailing) {
     let tmp10Result2 = trailing;
     if (typeof trailing === "string") {
       const obj4 = { text: trailing };
-      tmp10Result2 = tmp10(tmp(5917).TableRow.TrailingText, obj4);
+      tmp10Result2 = tmp10(tmp(5916).TableRow.TrailingText, obj4);
     }
     tmp12 = tmp10Result2;
   }
@@ -461,7 +476,102 @@ let closure_21 = react.memo((arg0) => {
   children[1] = highlightSettingItem;
   return tmp8(tmp9, { children });
 });
-let closure_23 = react.memo((arg0) => {
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let description;
+  let descriptionColor;
+  let descriptionVariant;
+  let disabledActionLabel;
+  let items;
+  let str2;
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(9);
+  ({ disabledActionLabel, description, descriptionVariant, descriptionColor } = arg0);
+  if (cResult[0] !== disabledActionLabel) {
+    const obj2 = { variant: "text-xs/medium", color: "text-link", children: disabledActionLabel };
+    const tmp6 = authStore2(Text_Text.Text, obj2);
+    cResult[0] = disabledActionLabel;
+    cResult[1] = tmp6;
+    tmp4 = tmp6;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (null == description) {
+    return tmp4;
+  } else {
+    if (cResult[2] === description) {
+      if (cResult[3] === descriptionColor) {
+        let tmp7;
+        if (cResult[4] === descriptionVariant) {
+          tmp7 = cResult[5];
+        }
+        if (cResult[6] === tmp7) {
+          let tmp11;
+          if (cResult[7] === tmp4) {
+            tmp11 = cResult[8];
+          }
+          return tmp11;
+        }
+        const obj3 = { children: items };
+        items = [tmp4, tmp7];
+        const tmp14 = authStore3(View, obj3);
+        cResult[6] = tmp7;
+        cResult[7] = tmp4;
+        cResult[8] = tmp14;
+        tmp11 = tmp14;
+      }
+    }
+    let tmp10Result = description;
+    if (!react.isValidElement(description)) {
+      let str = descriptionVariant;
+      const Text = tmp(4833).Text;
+      const tmp10 = authStore2;
+      if (descriptionVariant == null) {
+        str = "text-xs/medium";
+      }
+      const obj4 = { variant: str, color: str2, children: description };
+      str2 = descriptionColor;
+      if (descriptionColor == null) {
+        str2 = "text-subtle";
+      }
+      tmp10Result = tmp10(Text, obj4);
+    }
+    cResult[2] = description;
+    cResult[3] = descriptionColor;
+    cResult[4] = descriptionVariant;
+    cResult[5] = tmp10Result;
+    tmp7 = tmp10Result;
+  }
+}) : ((children) => {
+  let description;
+  let descriptionColor;
+  let descriptionVariant;
+  let items;
+  ({ description, descriptionVariant, descriptionColor } = children);
+  const tmp4 = authStore2(Text_Text.Text, { variant: "text-xs/medium", color: "text-link", children: children.disabledActionLabel });
+  const tmp = authStore2;
+  if (null == description) {
+    return tmp4;
+  } else {
+    let tmpResult = description;
+    if (!react.isValidElement(description)) {
+      const Text = Text_Text.Text;
+      if (descriptionVariant == null) {
+        descriptionVariant = "text-xs/medium";
+      }
+      const obj = { variant: descriptionVariant, color: descriptionColor, children: description };
+      if (descriptionColor == null) {
+        descriptionColor = "text-subtle";
+      }
+      tmpResult = tmp(Text, obj);
+    }
+    const obj2 = { children: items };
+    items = [tmp4, tmpResult];
+    return authStore3(View, obj2);
+  }
+});
+let closure_24 = react.memo((arg0) => {
   let IconComponent;
   let end;
   let hasIcon;
@@ -497,11 +607,11 @@ let closure_23 = react.memo((arg0) => {
   tmp8 = null;
   if (null != IconComponent) {
     const obj3 = { IconComponent, variant };
-    tmp8 = authStore2(tmp(5917).TableRow.Icon, obj3);
+    tmp8 = authStore2(tmp(5916).TableRow.Icon, obj3);
   }
   if (typeof isDisabled === "object") {
-    const obj5 = { subLabel: authStore2(DisabledActionDescriptionWithLink, obj6), accessible: true, trailing: authStore2(View, obj7) };
-    const TableRow = tmp(5917).TableRow;
+    const obj5 = { subLabel: authStore2(closure_23, obj6), accessible: true, trailing: authStore2(View, obj7) };
+    const TableRow = tmp(5916).TableRow;
     const merged = Object.assign(obj2);
     obj6 = { disabledActionLabel: isDisabled.label, description, descriptionVariant: "text-md/semibold", descriptionColor: "mobile-text-heading-primary" };
     ({ accessibilityHint: obj4.accessibilityHint, onPress: obj4.onPress } = isDisabled);
@@ -521,7 +631,7 @@ let closure_23 = react.memo((arg0) => {
   const tmp19 = closure_15;
   if (true === hasIcon) {
     const obj10 = { children: tmp16 };
-    tmp17Result = tmp17(ForceSwitchIcons, obj10);
+    tmp17Result = tmp17(closure_25, obj10);
   }
   const children = [tmp17Result, ];
   if (highlightSettingItem) {
@@ -531,7 +641,46 @@ let closure_23 = react.memo((arg0) => {
   children[1] = highlightSettingItem;
   return tmp18(tmp19, { children });
 });
-let closure_25 = react.memo((arg0) => {
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(5);
+  children = children.children;
+  const context = react.useContext(react3.AccessibilityPreferencesContext);
+  if (cResult[0] !== context) {
+    const obj2 = { switchIconsEnabled: true };
+    const merged = Object.assign(context);
+    cResult[0] = context;
+    cResult[1] = obj2;
+    tmp5 = obj2;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === children) {
+    let tmp9;
+    if (cResult[3] === tmp5) {
+      tmp9 = cResult[4];
+    }
+    return tmp9;
+  }
+  const tmp10 = authStore2(react3.AccessibilityPreferencesContext.Provider, { value: tmp5, children });
+  cResult[2] = children;
+  cResult[3] = tmp5;
+  cResult[4] = tmp10;
+  tmp9 = tmp10;
+}) : ((children) => {
+  children = children.children;
+  const context = react.useContext(react3.AccessibilityPreferencesContext);
+  const items = [context];
+  const value = react.useMemo(() => {
+    const obj = { switchIconsEnabled: true };
+    const merged = Object.assign(context);
+    return obj;
+  }, items);
+  return authStore2(react3.AccessibilityPreferencesContext.Provider, { value, children });
+});
+let closure_26 = react.memo((arg0) => {
   let onValueChange;
   let setting;
   let useOptions;
@@ -563,7 +712,7 @@ let closure_25 = react.memo((arg0) => {
         combined = label.value;
       }
       const obj = { value: combined, label: label.label, subLabel: label.subLabel, disabled: label.disabled, icon: label.icon };
-      return closure_1_14(TableRadioRow.TableRadioRow, obj, label.value);
+      return closure_1_14(require("TableRadioRow").TableRadioRow, obj, label.value);
     })
   };
   const TableRadioGroup = TableRadioGroup2.TableRadioGroup;
@@ -578,7 +727,7 @@ let closure_25 = react.memo((arg0) => {
   children[1] = highlightSettingItem;
   return tmp9(tmp10, { children });
 });
-let closure_26 = react.memo((arg0) => {
+let closure_27 = react.memo((arg0) => {
   let IconComponent;
   let end;
   let setting;
@@ -595,7 +744,7 @@ let closure_26 = react.memo((arg0) => {
   let trailing;
   const tmp = trailing;
   ({ setting, useTitle } = arg0);
-  let obj = trailing(14253);
+  let obj = trailing(14241);
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   trailing = undefined;
   const title = useTitle();
@@ -621,7 +770,7 @@ let closure_26 = react.memo((arg0) => {
   }, items);
   let obj2 = { label: title, subLabel: description, onPress: tmp12, variant, disabled: isDisabled, icon: tmp11Result, trailing: tmp11Result2, start, end };
   tmp12 = null;
-  const TableRow = tmp(5917).TableRow;
+  const TableRow = tmp(5916).TableRow;
   const tmp10 = closure_15;
   const tmp9 = closure_16;
   if (null != trailing) {
@@ -630,12 +779,12 @@ let closure_26 = react.memo((arg0) => {
   tmp11Result = null;
   if (null != IconComponent) {
     const obj3 = { IconComponent, variant };
-    tmp11Result = tmp11(tmp(5917).TableRow.Icon, obj3);
+    tmp11Result = tmp11(tmp(5916).TableRow.Icon, obj3);
   }
   tmp11Result2 = null;
   if (null != trailing) {
     const obj4 = { text: trailing };
-    tmp11Result2 = tmp11(tmp(5917).TableRow.TrailingText, obj4);
+    tmp11Result2 = tmp11(tmp(5916).TableRow.TrailingText, obj4);
   }
   const children = [closure_14(TableRow, obj2), ];
   if (highlightSettingItem) {
@@ -645,7 +794,7 @@ let closure_26 = react.memo((arg0) => {
   children[1] = highlightSettingItem;
   return tmp9(tmp10, { children });
 });
-let closure_27 = react.memo((arg0) => {
+let closure_28 = react.memo((arg0) => {
   let end;
   let maximum;
   let obj3;
@@ -678,7 +827,7 @@ let closure_27 = react.memo((arg0) => {
   children[1] = highlightSettingItem;
   return tmp7(tmp8, { children });
 });
-let closure_28 = react.memo((useTrailing) => {
+let closure_29 = react.memo((useTrailing) => {
   let Slider;
   let Stack;
   let _undefined;
@@ -736,7 +885,7 @@ let closure_28 = react.memo((useTrailing) => {
   const tmp3 = _objectWithoutProperties(props, num4);
   _objectWithoutProperties = tmp3;
   const tmp4 = closure_17();
-  let obj = onSlidingComplete(num2[15]);
+  let obj = onSlidingComplete(num2[17]);
   const items = [c9];
   const stateFromStores = obj.useStateFromStores(items, () => _undefined.locale);
   const tmp8 = onValueChange(value.useState(() => {
@@ -793,18 +942,18 @@ let closure_28 = react.memo((useTrailing) => {
     trailing = useTrailing();
   }
   const obj2 = { start, end, shadow: "none", border: "none", children: closure_16(Stack, obj7) };
-  const Card = tmp5(tmp6[32]).Card;
-  Stack = tmp5(tmp6[33]).Stack;
+  const Card = tmp5(tmp6[34]).Card;
+  Stack = tmp5(tmp6[35]).Stack;
   const obj3 = { style: tmp4.sliderTitle, children: items7 };
-  const Stack2 = tmp5(tmp6[33]).Stack;
-  items7 = [closure_14(onSlidingComplete(num2[21]).Text, { variant: "text-md/semibold", children: title }), trailing];
+  const Stack2 = tmp5(tmp6[35]).Stack;
+  items7 = [closure_14(onSlidingComplete(num2[23]).Text, { variant: "text-md/semibold", children: title }), trailing];
   const items8 = [closure_16(closure_8, obj3), ];
   let tmp20Result = null != value;
   const tmp22 = closure_8;
   if (tmp20Result) {
-    const Text = tmp5(tmp6[21]).Text;
+    const Text = tmp5(tmp6[23]).Text;
     if (formatPercentResult == null) {
-      const tmp5Result = onSlidingComplete(num2[34]);
+      const tmp5Result = onSlidingComplete(num2[36]);
       formatPercentResult = tmp5Result.formatPercent(stateFromStores, value);
     }
     const obj4 = { variant: "text-sm/medium", color: "text-muted", children: formatPercentResult };
@@ -813,30 +962,317 @@ let closure_28 = react.memo((useTrailing) => {
   items8[1] = tmp20Result;
   const items9 = [closure_16(Stack2, { direction: "horizontal", justify: "space-between", children: items8 }), , ];
   let slider;
-  const tmp5Result2 = onSlidingComplete(num2[35]);
+  const tmp5Result2 = onSlidingComplete(num2[37]);
   if (tmp5Result2.isAndroid()) {
     slider = tmp4.slider;
   }
   const obj5 = { style: slider, children: closure_14(Slider, obj6) };
-  obj6 = { accessibilityLabel: title, step: num, onValueChange: callback1, value, minimumValue: num2, maximumValue: num4, onSlidingStart: callback, onSlidingComplete: callback2, startIcon: closure_14(onSlidingComplete(num2[37]).PressableOpacity, { accessible: false, onPress: callback6, children: startIcon }), endIcon: closure_14(onSlidingComplete(num2[37]).PressableOpacity, { accessible: false, onPress: callback5, children: endIcon }) };
-  Slider = tmp5(tmp6[36]).Slider;
+  obj6 = { accessibilityLabel: title, step: num, onValueChange: callback1, value, minimumValue: num2, maximumValue: num4, onSlidingStart: callback, onSlidingComplete: callback2, startIcon: closure_14(onSlidingComplete(num2[39]).PressableOpacity, { accessible: false, onPress: callback6, children: startIcon }), endIcon: closure_14(onSlidingComplete(num2[39]).PressableOpacity, { accessible: false, onPress: callback5, children: endIcon }) };
+  Slider = tmp5(tmp6[38]).Slider;
   const merged = Object.assign(tmp3);
   items9[1] = closure_14(tmp22, obj5);
   let tmp26 = !tmp11;
-  const Button = tmp5(tmp6[38]).Button;
+  const Button = tmp5(tmp6[40]).Button;
   if (!tmp11) {
     tmp26 = value === num3;
   }
   obj7 = { children: items9 };
-  const obj8 = { disabled: tmp26, variant: "secondary", text: intl.string(onSlidingComplete(num2[16]).t["3b//lO"]), onPress: callback4 };
-  intl = tmp5(tmp6[16]).intl;
+  const obj8 = { disabled: tmp26, variant: "secondary", text: intl.string(onSlidingComplete(num2[18]).t["3b//lO"]), onPress: callback4 };
+  intl = tmp5(tmp6[18]).intl;
   items9[2] = closure_14(Button, obj8);
   return closure_14(Card, obj2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((breadcrumbs) => {
+  const obj = react2;
+  const cResult = obj.c(4);
+  breadcrumbs = breadcrumbs.breadcrumbs;
+  let tmp4 = null;
+  if (0 !== breadcrumbs.length) {
+    let tmp5;
+    let tmp7;
+    if (cResult[0] !== breadcrumbs) {
+      const joined = breadcrumbs.join(" \u2192 ");
+      cResult[0] = breadcrumbs;
+      cResult[1] = joined;
+      tmp5 = joined;
+    } else {
+      tmp5 = cResult[1];
+    }
+    if (cResult[2] !== tmp5) {
+      const obj2 = { variant: "text-xs/medium", color: "text-muted", children: tmp5 };
+      const tmp9 = authStore2(Text_Text.Text, obj2);
+      cResult[2] = tmp5;
+      cResult[3] = tmp9;
+      tmp7 = tmp9;
+    } else {
+      tmp7 = cResult[3];
+    }
+    tmp4 = tmp7;
+  }
+  return tmp4;
+}) : ((breadcrumbs) => {
+  breadcrumbs = breadcrumbs.breadcrumbs;
+  let tmp = null;
+  if (0 !== breadcrumbs.length) {
+    const obj = { variant: "text-xs/medium", color: "text-muted", children: breadcrumbs.join(" \u2192 ") };
+    const Text = Text_Text.Text;
+    tmp = authStore2(Text, obj);
+  }
+  return tmp;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((IconComponent) => {
+  let obj4;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(4);
+  IconComponent = IconComponent.IconComponent;
+  const obj2 = useToken;
+  const token = obj2.useToken(nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE);
+  if (null == IconComponent) {
+    let tmp8;
+    if (cResult[0] !== token) {
+      const obj3 = { style: obj4 };
+      obj4 = { width: token };
+      const tmp11 = authStore2(View, obj3);
+      cResult[0] = token;
+      cResult[1] = tmp11;
+      tmp8 = tmp11;
+    } else {
+      tmp8 = cResult[1];
+    }
+    tmp5 = tmp8;
+  } else if (cResult[2] !== IconComponent) {
+    const obj5 = { IconComponent };
+    const tmp7 = authStore2(TableRow2.TableRow.Icon, obj5);
+    cResult[2] = IconComponent;
+    cResult[3] = tmp7;
+    tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[3];
+  }
+  return tmp5;
+}) : ((IconComponent) => {
+  let obj3;
+  let tmp6;
+  IconComponent = IconComponent.IconComponent;
+  useToken;
+  if (null == IconComponent) {
+    const obj2 = { style: obj3 };
+    obj3 = { width: tmp4 };
+    tmp6 = authStore2(View, obj2);
+  } else {
+    const obj = { IconComponent };
+    tmp6 = authStore2(TableRow2.TableRow.Icon, obj);
+  }
+  return tmp6;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
+  let IconComponent;
+  let breadcrumbs;
+  let setting;
+  let settingData;
+  let title;
+  let obj = title(index[16]);
+  const cResult = obj.c(18);
+  const tmp = title;
+  ({ settingData, IconComponent, title } = index);
+  ({ breadcrumbs, setting } = index);
+  const tmp2 = index;
+  index = index.index;
+  const total = index.total;
+  const onPress = settingData.onPress;
+  const withArrow = settingData.withArrow;
+  if (cResult[0] === index) {
+    if (cResult[1] === onPress) {
+      if (cResult[2] === setting) {
+        if (cResult[3] === title) {
+          let tmp4;
+          let tmp5;
+          let tmp9;
+          if (cResult[4] === total) {
+            tmp4 = cResult[5];
+          }
+          if (cResult[6] !== IconComponent) {
+            let obj2 = { IconComponent };
+            const tmp8 = closure_14(closure_31, obj2);
+            cResult[6] = IconComponent;
+            cResult[7] = tmp8;
+            tmp5 = tmp8;
+          } else {
+            tmp5 = cResult[7];
+          }
+          if (cResult[8] !== breadcrumbs) {
+            let obj3 = { breadcrumbs };
+            const tmp12 = closure_14(closure_30, obj3);
+            cResult[8] = breadcrumbs;
+            cResult[9] = tmp12;
+            tmp9 = tmp12;
+          } else {
+            tmp9 = cResult[9];
+          }
+          if (cResult[10] === tmp4) {
+            if (cResult[11] === tmp5) {
+              if (cResult[12] === tmp9) {
+                if (cResult[13] === 0 === index) {
+                  if (cResult[14] === index === total - 1) {
+                    if (cResult[15] === title) {
+                      let tmp15;
+                      if (cResult[16] === withArrow) {
+                        tmp15 = cResult[17];
+                      }
+                      return tmp15;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          const obj4 = { label: title, onPress: tmp4, icon: tmp5, subLabel: tmp9, start: 0 === index, end: index === total - 1, arrow: withArrow };
+          const tmp17 = closure_14(tmp(tmp2[12]).TableRow, obj4);
+          cResult[10] = tmp4;
+          cResult[11] = tmp5;
+          cResult[12] = tmp9;
+          cResult[13] = 0 === index;
+          cResult[14] = index === total - 1;
+          cResult[15] = title;
+          cResult[16] = withArrow;
+          cResult[17] = tmp17;
+          tmp15 = tmp17;
+        }
+      }
+    }
+  }
+  const fn = function n() {
+    const obj = Tracking;
+    const obj2 = { setting, title, searchResultPosition: index, numSearchResults: total };
+    const result = obj.trackSettingSearchResultPress(obj2);
+    const obj3 = KeyboardManagerUtils;
+    const result1 = obj3.dismissGlobalKeyboard();
+    onPress();
+  };
+  cResult[0] = index;
+  cResult[1] = onPress;
+  cResult[2] = setting;
+  cResult[3] = title;
+  cResult[4] = total;
+  cResult[5] = fn;
+  tmp4 = fn;
+}) : ((setting) => {
+  let IconComponent;
+  let breadcrumbs;
+  let settingData;
+  let title;
+  ({ settingData, title } = setting);
+  setting = setting.setting;
+  const index = setting.index;
+  const total = setting.total;
+  const onPress = settingData.onPress;
+  const items = [setting, title, index, total, onPress];
+  ({ IconComponent, breadcrumbs } = setting);
+  const withArrow = settingData.withArrow;
+  const callback = react.useCallback(() => {
+    const obj = Tracking;
+    const obj2 = { setting, title, searchResultPosition: index, numSearchResults: total };
+    const result = obj.trackSettingSearchResultPress(obj2);
+    const obj3 = KeyboardManagerUtils;
+    const result1 = obj3.dismissGlobalKeyboard();
+    onPress();
+  }, items);
+  let obj = { label: title, onPress: callback, icon: closure_14(closure_31, { IconComponent }), subLabel: closure_14(closure_30, { breadcrumbs }), start: 0 === index, end: index === total - 1, arrow: withArrow };
+  const TableRow = title(index[12]).TableRow;
+  return closure_14(TableRow, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let end;
+  let first;
+  let items;
+  let start;
+  let obj = react2;
+  const cResult = obj.c(11);
+  ({ start, end } = arg0);
+  const tmp4 = closure_17();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n() {
+      const obj = { width: `${10 + 80 * Math.random() | 0}%` };
+      return obj;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const first1 = _slicedToArray(react.useState(first), 1)[0];
+  if (cResult[1] === tmp4.placeholderUsername) {
+    let tmp7;
+    let tmp9;
+    if (cResult[2] === first1) {
+      tmp7 = cResult[3];
+    }
+    if (cResult[4] !== tmp4.placeholderAvatar) {
+      const obj2 = { style: tmp4.placeholderAvatar };
+      const tmp12 = authStore2(View, obj2);
+      cResult[4] = tmp4.placeholderAvatar;
+      cResult[5] = tmp12;
+      tmp9 = tmp12;
+    } else {
+      tmp9 = cResult[5];
+    }
+    if (cResult[6] === end) {
+      if (cResult[7] === start) {
+        if (cResult[8] === tmp7) {
+          let tmp13;
+          if (cResult[9] === tmp9) {
+            tmp13 = cResult[10];
+          }
+          return tmp13;
+        }
+      }
+    }
+    const obj3 = { start, end, label: tmp7, icon: tmp9 };
+    const tmp15 = authStore2(TableRow2.TableRow, obj3);
+    cResult[6] = end;
+    cResult[7] = start;
+    cResult[8] = tmp7;
+    cResult[9] = tmp9;
+    cResult[10] = tmp15;
+    tmp13 = tmp15;
+  }
+  const obj4 = { style: items };
+  items = [tmp4.placeholderUsername, first1];
+  const tmp8 = authStore2(View, obj4);
+  cResult[1] = tmp4.placeholderUsername;
+  cResult[2] = first1;
+  cResult[3] = tmp8;
+  tmp7 = tmp8;
+}) : ((arg0) => {
+  let end;
+  let items;
+  let obj2;
+  let obj3;
+  let start;
+  ({ start, end } = arg0);
+  const tmp = closure_17();
+  let obj = { start, end, label: authStore2(View, obj2), icon: authStore2(View, obj3) };
+  obj2 = { style: items };
+  items = [
+    tmp.placeholderUsername,
+    _slicedToArray(react.useState(() => {
+      const obj = { width: `${10 + 80 * Math.random() | 0}%` };
+      return obj;
+    }), 1)[0]
+  ];
+  const TableRow = TableRow2.TableRow;
+  obj3 = { style: tmp.placeholderAvatar };
+  return authStore2(TableRow, obj);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/settings/native/renderer/SettingRenderer.tsx");
 
-export { GuildSelectDefaultIcon };
+export const GuildSelectDefaultIcon = tmp5;
 export const renderSettingItem = function renderSettingItem(item) {
   let end;
   let setting;
@@ -847,7 +1283,7 @@ export const renderSettingItem = function renderSettingItem(item) {
   if (map1.GUILD_SELECTOR === type) {
     const obj2 = { setting, start, end };
     const merged = Object.assign(settingData);
-    return authStore2(closure_20, obj2);
+    return authStore2(closure_21, obj2);
   } else if (map1.ROUTE === type) {
     const obj3 = { start, end };
     const merged1 = Object.assign(settingData);
@@ -855,27 +1291,27 @@ export const renderSettingItem = function renderSettingItem(item) {
   } else if (map1.PRESSABLE === type) {
     const obj4 = { start, end, setting };
     const merged2 = Object.assign(settingData);
-    return authStore2(closure_21, obj4);
+    return authStore2(closure_22, obj4);
   } else if (map1.TOGGLE === type) {
     const obj5 = { start, end, setting };
     const merged3 = Object.assign(settingData);
-    return authStore2(closure_23, obj5);
+    return authStore2(closure_24, obj5);
   } else if (map1.STATIC === type) {
     const obj6 = { start, end, setting };
     const merged4 = Object.assign(settingData);
-    return authStore2(closure_26, obj6);
+    return authStore2(closure_27, obj6);
   } else if (map1.VOLUME_SLIDER === type) {
     const obj7 = { start, end, setting };
     const merged5 = Object.assign(settingData);
-    return authStore2(closure_27, obj7);
+    return authStore2(closure_28, obj7);
   } else if (map1.RADIO === type) {
     const obj8 = { setting };
     const merged6 = Object.assign(settingData);
-    return authStore2(closure_25, obj8);
+    return authStore2(closure_26, obj8);
   } else if (map1.SLIDER === type) {
     const obj = { start, end, setting };
     const merged7 = Object.assign(settingData);
-    return authStore2(closure_28, obj);
+    return authStore2(closure_29, obj);
   }
 };
 export const renderSettingSearchResultItem = function renderSettingSearchResultItem(settingData) {
@@ -889,7 +1325,7 @@ export const renderSettingSearchResultItem = function renderSettingSearchResultI
   } else if (map1.PRESSABLE === type) {
     const obj3 = { settingData };
     const merged1 = Object.assign(tmp);
-    return authStore2(PressableSettingSearchResult, obj3);
+    return authStore2(closure_33, obj3);
   } else if (map1.STATIC === type) {
     const obj = { settingData };
     const merged2 = Object.assign(tmp);
@@ -905,5 +1341,5 @@ export const renderSettingSearchResultItem = function renderSettingSearchResultI
 };
 export const renderSettingSearchResultPlaceholderItem = function renderSettingSearchResultPlaceholderItem(start) {
   const obj = { start: start.start, end: start.end };
-  return authStore2(SettingSearchResultPlaceholder, obj);
+  return authStore2(closure_35, obj);
 };

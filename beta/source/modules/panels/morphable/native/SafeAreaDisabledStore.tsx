@@ -1,15 +1,15 @@
-// Module ID: 8939
-// Function ID: 8940
+// Module ID: 8934
+// Function ID: 8935
 // Name: SafeAreaDisabledStore
-// Dependencies: [560, 1248, 2]
+// Dependencies: [570, 1260, 2]
 
-// Module 8939 (SafeAreaDisabledStore)
-import module_560 from "module_560" /* 560 */;
+// Module 8934 (SafeAreaDisabledStore)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
-let obj = module_560.create((arg0, arg1) => {
+let obj = module_570.create((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let obj = {

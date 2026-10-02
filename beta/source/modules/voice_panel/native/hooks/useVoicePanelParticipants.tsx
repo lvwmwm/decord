@@ -1,43 +1,302 @@
-// Module ID: 16906
-// Function ID: 16907
+// Module ID: 16941
+// Function ID: 16942
 // Name: useVoicePanelParticipants
-// Dependencies: [32, 19, 4852, 502, 2045, 4859, 4855, 4860, 11755, 1074, 16861, 504, 15868, 11754, 11757, 2]
-// Exports: default, useChunkedParticipants
+// Dependencies: [32, 19, 4853, 502, 2051, 4860, 4856, 4861, 11648, 1086, 558, 576, 16830, 504, 15868, 11647, 11650, 2]
 
-// Module 16906 (useVoicePanelParticipants)
-import Constants from "Constants" /* 1074 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+// Module 16941 (useVoicePanelParticipants)
+import Constants from "Constants" /* 1086 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4853 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4860 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11755 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4861 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11648 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, map, set;
+let _require, arr1, arr5, arr6, arr7, arr8, arr9, importDefault, map, num2, num3, obj1, obj4, set, tmp12, tmp15, tmp18, tmp20, tmp22, tmp23, tmp24, tmp25, tmp28, tmp29, tmp30, tmp32, tmp33, tmp36, tmp37, tmp38, tmp39, tmp41, tmp42, tmp43, tmp44;
 
 let closure_12;
 let unpackModuleId;
-function getMemoizedParticipant(item10013, get) {
+function getMemoizedParticipant(item10013, first1) {
   const combined = "" + item10013.type + "-" + item10013.id;
-  let value = get.get(combined);
+  let value = first1.get(combined);
   if (null == value) {
-    const result = get.set(combined, item10013);
+    const result = first1.set(combined, item10013);
     value = item10013;
   }
   return value;
 }
+let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ VoicePanelCardItemType: unpackModuleId, VoicePanelCTACard: closure_12 } = VoicePanelConstants);
 const RTCConnectionStates = Constants.RTCConnectionStates;
 let closure_14 = [];
-let result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelParticipants.tsx");
-
-export default function useVoicePanelCards(arg0, arg1) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let closure_3;
+  let closure_4;
+  let desyncedChannelParticipants;
+  let first;
+  let state;
+  let stateFromStores;
+  let tmp11;
+  let tmp13;
+  let tmp14;
+  let tmp16;
+  let tmp17;
+  let tmp7;
+  _require = arg0;
+  importDefault = arg1;
+  let tmp = _require;
+  let tmp2 = first;
+  let obj = require("react");
+  const cResult = obj.c(22);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const id = stateFromStores.getId();
+    cResult[0] = id;
+    first = id;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const channel = desyncedChannelParticipants.getChannel(arg0);
+    let flag;
+    if (channel != null) {
+      flag = channel.isDM();
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    cResult[1] = arg0;
+    cResult[2] = flag;
+    tmp7 = flag;
+  } else {
+    tmp7 = cResult[2];
+  }
+  _slicedToArray = tmp7;
+  const tmp10 = require("useIsConnectedToVoiceChannel")(arg0);
+  react = tmp10;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function _() {
+      map = new Map();
+      return map;
+    };
+    cResult[3] = fn;
+    tmp11 = fn;
+  } else {
+    tmp11 = cResult[3];
+  }
+  let obj3 = react;
+  const first1 = _slicedToArray(react.useState(tmp11), 1)[0];
+  if (cResult[4] !== first1) {
+    class M {
+      constructor() {
+        return () => first1.clear();
+      }
+    }
+    let items = [first1];
+    cResult[4] = first1;
+    cResult[5] = M;
+    cResult[6] = items;
+    tmp14 = items;
+    tmp13 = M;
+  } else {
+    class M {
+      constructor() {
+        return () => first1.clear();
+      }
+    }
+    tmp14 = cResult[6];
+  }
+  const effect = obj3.useEffect(tmp13, tmp14);
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    class M {
+      constructor() {
+        return () => first1.clear();
+      }
+    }
+    let items1 = [RTCConnectionStore];
+    class R {
+      constructor() {
+        return state.getState() === constants2.RTC_CONNECTED;
+      }
+    }
+    cResult[7] = items1;
+    cResult[8] = R;
+    tmp17 = R;
+    tmp16 = items1;
+  } else {
+    class M {
+      constructor() {
+        return () => first1.clear();
+      }
+    }
+    tmp17 = cResult[8];
+  }
+  const tmpResult = tmp(tmp2[13]);
+  stateFromStores = tmpResult.useStateFromStores(tmp16, tmp17);
+  const tmpResult2 = tmp(tmp2[14]);
+  desyncedChannelParticipants = tmpResult2.useDesyncedChannelParticipants(arg0);
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class M {
+      constructor() {
+        return () => first1.clear();
+      }
+    }
+    const items2 = [first1, ];
+    class R {
+      constructor() {
+        return state.getState() === constants2.RTC_CONNECTED;
+      }
+    }
+    items2[1] = SortedVoiceStateStore;
+    cResult[9] = items2;
+  } else {
+    class M {
+      constructor() {
+        return () => first1.clear();
+      }
+    }
+  }
+  if (cResult[10] === first1) {
+    class M {
+      constructor() {
+        return () => first1.clear();
+      }
+    }
+  }
+  class V {
+    constructor() {
+      tmp2 = closure_4;
+      if (tmp2) {
+        tmp6 = closure_5;
+        tmp7 = closure_0;
+        voiceParticipantsHidden = closure_5.getVoiceParticipantsHidden(closure_0);
+        items = [];
+        filteredParticipants = closure_5.getFilteredParticipants(closure_0);
+        tmp10 = filteredParticipants;
+        tmp11 = filteredParticipants;
+        for (const item10024 of filteredParticipants) {
+          arr1 = items.push(item10024);
+          continue;
+        }
+        if (!voiceParticipantsHidden) {
+          tmp13 = closure_7;
+          tmp14 = null;
+          if (null != closure_7) {
+            tmp15 = tmp13;
+            tmp16 = tmp13;
+            for (const item10034 of tmp13) {
+              arr5 = items.push(item10034);
+              continue;
+            }
+          }
+        }
+        items1 = [];
+        tmp18 = items;
+        tmp19 = items[Symbol.iterator]();
+        num2 = 0;
+        tmp20 = items;
+        tmp22 = tmp19;
+        while (tmp19 !== undefined) {
+          tmp23 = getMemoizedParticipant;
+          obj = { type: null, id: null };
+          tmp24 = VoicePanelCardItemType;
+          obj.type = VoicePanelCardItemType.PARTICIPANT;
+          obj.id = tmp21.id;
+          tmp25 = closure_5;
+          tmp26 = getMemoizedParticipant(obj, closure_5);
+          tmp27 = closure_3;
+          if (tmp27) {
+            tmp28 = tmp26;
+            tmp29 = closure_2;
+            if (tmp26.id === closure_2) {
+              tmp = tmp26;
+              continue;
+            }
+          }
+          tmp30 = tmp26;
+          arr6 = items1.push(tmp26);
+        }
+        tmp32 = tmp;
+        tmp33 = null;
+        if (null != tmp) {
+          arr7 = items1.push(tmp);
+        }
+        tmp35 = closure_3 && closure_6;
+        if (tmp35) {
+          num3 = 1;
+          tmp35 = 1 === items1.length;
+        }
+        if (tmp35) {
+          tmp36 = getMemoizedParticipant;
+          obj1 = { type: null, id: null };
+          tmp37 = VoicePanelCardItemType;
+          obj1.type = VoicePanelCardItemType.CTA;
+          tmp38 = VoicePanelCTACard;
+          obj1.id = VoicePanelCTACard.CALLER_DISCONNECTED;
+          tmp39 = closure_5;
+          arr8 = items1.push(getMemoizedParticipant(obj1, closure_5));
+        }
+        if (voiceParticipantsHidden) {
+          voiceParticipantsHidden = 0 === items.length;
+        }
+        if (voiceParticipantsHidden) {
+          tmp41 = getMemoizedParticipant;
+          obj4 = { type: null, id: null };
+          tmp42 = VoicePanelCardItemType;
+          obj4.type = VoicePanelCardItemType.CTA;
+          tmp43 = VoicePanelCTACard;
+          obj4.id = VoicePanelCTACard.NO_VIDEO_PARTICIPANTS;
+          tmp44 = closure_5;
+          arr9 = items1.push(getMemoizedParticipant(obj4, closure_5));
+        }
+        if (items1.length <= 0) {
+          items1 = closure_14;
+        }
+        return items1;
+      } else {
+        tmp3 = closure_10;
+        tmp4 = closure_0;
+        tmp5 = closure_1;
+        voiceStatesForChannelAlt = closure_10.getVoiceStatesForChannelAlt(closure_0, closure_1);
+        mapped = voiceStatesForChannelAlt.map((id) => {
+          const obj = { type: constants.PARTICIPANT, id: id.user.id };
+          const combined = "" + obj.type + "-" + obj.id;
+          let value = first1.get(combined);
+          const obj2 = first1;
+          if (null == value) {
+            const result = obj2.set(combined, obj);
+            value = obj;
+          }
+          return value;
+        });
+        num = 0;
+        if (mapped.length <= 0) {
+          mapped = closure_14;
+        }
+        return mapped;
+      }
+    }
+  }
+  const items3 = [tmp10, desyncedChannelParticipants, arg0, arg1, first1, tmp7, first, stateFromStores];
+  cResult[10] = first1;
+  cResult[11] = arg0;
+  cResult[12] = arg1;
+  cResult[13] = tmp7;
+  cResult[14] = tmp10;
+  cResult[15] = stateFromStores;
+  cResult[16] = desyncedChannelParticipants;
+  cResult[17] = V;
+  cResult[18] = items3;
+}) : ((arg0, arg1) => {
   let closure_0;
   let closure_1;
   let closure_4;
@@ -149,11 +408,156 @@ export default function useVoicePanelCards(arg0, arg1) {
   items3 = [tmp2, desyncedChannelParticipants, arg0, arg1, first, flag, id, stateFromStores];
   obj5 = require("get initialized");
   return obj;
-};
-export const useChunkedParticipants = function useChunkedParticipants(channelId, arg1) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let first;
+  let managerSubscription;
+  let tmp10;
+  let tmp11;
+  let tmp8;
+  _require = arg0;
+  importDefault = arg1;
+  let tmp2 = first;
+  let obj = require("react");
+  const cResult = obj.c(13);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp5 = AuthenticationStore;
+    const id = AuthenticationStore.getId();
+    let num = 0;
+    cResult[0] = id;
+    first = id;
+  } else {
+    first = cResult[0];
+  }
+  const layoutManager = managerSubscription.useContext(require("VoicePanelStateContext")).layoutManager;
+  const tmpResult = tmp(tmp2[16]);
+  managerSubscription = tmpResult.useManagerSubscription(layoutManager);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor() {
+        map = new Map();
+        return map;
+      }
+    }
+    cResult[1] = C;
+    tmp8 = C;
+  } else {
+    class C {
+      constructor() {
+        map = new Map();
+        return map;
+      }
+    }
+  }
+  const first1 = layoutManager(obj2.useState(tmp8), 1)[0];
+  if (cResult[2] !== first1) {
+    class T {
+      constructor() {
+        return () => { /* body not rendered: F146543 */ };
+      }
+    }
+    let items = [first1];
+    cResult[2] = first1;
+    cResult[3] = T;
+    cResult[4] = items;
+    tmp11 = items;
+    tmp10 = T;
+  } else {
+    class T {
+      constructor() {
+        return () => { /* body not rendered: F146543 */ };
+      }
+    }
+    tmp11 = cResult[4];
+  }
+  const effect = obj2.useEffect(tmp10, tmp11);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
+      constructor() {
+        return () => { /* body not rendered: F146543 */ };
+      }
+    }
+    let items1 = [VoiceStateStore, ];
+    items1[1] = first1;
+    cResult[5] = items1;
+  } else {
+    class T {
+      constructor() {
+        return () => { /* body not rendered: F146543 */ };
+      }
+    }
+  }
+  if (cResult[6] === first1) {
+    class T {
+      constructor() {
+        return () => { /* body not rendered: F146543 */ };
+      }
+    }
+  }
+  class I {
+    constructor() {
+      if (closure_4 < 0) {
+        tmp16 = closure_14;
+        return closure_14;
+      } else {
+        tmp17 = closure_9;
+        tmp18 = closure_0;
+        tmp19 = closure_2;
+        items = [];
+        if (closure_9.isInChannel(closure_0, closure_2)) {
+          tmp = globalThis;
+          _Set = Set;
+          self = this;
+          self2 = this;
+          set = new Set((() => { /* body not rendered: F146544 */ })());
+          tmp3 = set;
+          tmp4 = set;
+          for (const item10013 of set) {
+            tmp5 = getMemoizedParticipant;
+            tmp6 = closure_5;
+            arr1 = items.push(getMemoizedParticipant(item10013, closure_5));
+            continue;
+          }
+          tmp8 = closure_5;
+          tmp9 = closure_0;
+          tmp10 = closure_5.getVoiceParticipantsHidden(closure_0) && 0 === items.length;
+          if (tmp10) {
+            tmp11 = getMemoizedParticipant;
+            obj = { type: null, id: null };
+            tmp12 = VoicePanelCardItemType;
+            obj.type = VoicePanelCardItemType.CTA;
+            tmp13 = VoicePanelCTACard;
+            obj.id = VoicePanelCTACard.NO_VIDEO_PARTICIPANTS;
+            tmp14 = closure_5;
+            arr2 = items.push(getMemoizedParticipant(obj, closure_5));
+          }
+          if (items.length <= 0) {
+            items = closure_14;
+          }
+          return items;
+        } else {
+          return items;
+        }
+      }
+    }
+  }
+  const items2 = [arg0, first1, layoutManager, arg1, managerSubscription, first];
+  cResult[6] = first1;
+  cResult[7] = arg0;
+  cResult[8] = managerSubscription;
+  cResult[9] = layoutManager;
+  cResult[10] = arg1;
+  cResult[11] = I;
+  cResult[12] = items2;
+}) : ((arg0, arg1) => {
+  let closure_0;
   let closure_1;
   let managerSubscription;
-  _require = channelId;
+  _require = arg0;
   importDefault = arg1;
   const id = AuthenticationStore.getId();
   const layoutManager = managerSubscription.useContext(require("VoicePanelStateContext")).layoutManager;
@@ -166,7 +570,7 @@ export const useChunkedParticipants = function useChunkedParticipants(channelId,
   let items = [first];
   const effect = managerSubscription.useEffect(() => () => first.clear(), items);
   let items1 = [VoiceStateStore, first];
-  const items2 = [channelId, first, layoutManager, arg1, managerSubscription, id];
+  const items2 = [arg0, first, layoutManager, arg1, managerSubscription, id];
   const obj2 = require("get initialized");
   return obj2.useStateFromStoresArray(items1, function() {
     let chunk;
@@ -174,7 +578,7 @@ export const useChunkedParticipants = function useChunkedParticipants(channelId,
       return closure_14;
     } else {
       let items = [];
-      if (VoiceStateStore.isInChannel(channelId, id)) {
+      if (VoiceStateStore.isInChannel(closure_0, id)) {
         const _Set = Set;
         const self = this;
         const self2 = this;
@@ -202,8 +606,8 @@ export const useChunkedParticipants = function useChunkedParticipants(channelId,
           let arr = items.push(getMemoizedParticipant(item10013, first));
           continue;
         }
-        let tmp9 = channelId;
-        const tmp10 = ChannelRTCStore.getVoiceParticipantsHidden(channelId) && 0 === items.length;
+        let tmp9 = closure_0;
+        const tmp10 = ChannelRTCStore.getVoiceParticipantsHidden(closure_0) && 0 === items.length;
         if (tmp10) {
           const obj = { type: unpackModuleId.CTA, id: constants.NO_VIDEO_PARTICIPANTS };
           items.push(getMemoizedParticipant(obj, first));
@@ -217,4 +621,8 @@ export const useChunkedParticipants = function useChunkedParticipants(channelId,
       }
     }
   }, items2);
-};
+});
+let result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelParticipants.tsx");
+
+export default tmp3;
+export const useChunkedParticipants = tmp4;

@@ -1,18 +1,18 @@
-// Module ID: 7369
-// Function ID: 7370
+// Module ID: 7373
+// Function ID: 7374
 // Name: ConversationPreviewSkeleton
-// Dependencies: [19, 17, 7015, 21, 4836, 576, 4566, 4837, 2]
-// Exports: default
+// Dependencies: [19, 17, 7019, 21, 4837, 588, 558, 576, 4570, 4838, 2]
 
-// Module 7369 (ConversationPreviewSkeleton)
+// Module 7373 (ConversationPreviewSkeleton)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import timing from "timing" /* 4837 */;
-import ConversationConstants from "ConversationConstants" /* 7015 */;
+import nativeDefault from "native" /* 588 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import timing from "timing" /* 4838 */;
+import ConversationConstants from "ConversationConstants" /* 7019 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,10 +40,88 @@ size1 = { height: 10, width: "35%", borderRadius: nativeDefault.radii.xs, backgr
 obj5 = { height: 10, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 let closure_8 = createStyles(obj);
 const __initData = { code: "function ConversationPreviewSkeletonTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-size = size_mod;
-let result = size.fileFinishedImporting("modules/conversations/components/native/ConversationPreviewSkeleton.tsx");
-
-export default function ConversationPreviewSkeleton() {
+const __initData2 = { code: "function ConversationPreviewSkeletonTsx2(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let row;
+  let tmp10;
+  let tmp6;
+  let tmp7;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(8);
+  let tmp4 = closure_8();
+  _require = tmp4;
+  let obj2 = require("ReanimatedRexport");
+  const sharedValue = obj2.useSharedValue(0.4);
+  if (cResult[0] !== sharedValue) {
+    const fn = function s() {
+      set = sharedValue.set;
+      const withRepeat = ReanimatedRexport.withRepeat;
+      ReanimatedRexport;
+      const obj = timing;
+      const result = set(withRepeat(obj.withTiming(1, { duration: 700 }), -1, true));
+    };
+    let items = [sharedValue];
+    cResult[0] = sharedValue;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp7 = items;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[1];
+    tmp7 = cResult[2];
+  }
+  const effect = react.useEffect(tmp6, tmp7);
+  const fn2 = function v() {
+    const obj = { opacity: sharedValue.get() };
+    return obj;
+  };
+  fn2.__closure = { opacity: sharedValue };
+  fn2.__workletHash = 11432452203963;
+  fn2.__initData = __initData;
+  const tmpResult = tmp(4570);
+  const animatedStyle = tmpResult.useAnimatedStyle(fn2);
+  if (cResult[3] !== tmp4) {
+    const _Array = Array;
+    let obj3 = { length: closure_5 };
+    const arr = Array.from(obj3, (arg0, arg1) => {
+      let items1;
+      let items2;
+      const items = [row.row, ];
+      const obj = { style: items, children: items1 };
+      const tmp4 = arg1 > 0 && row.rowSpacing;
+      items[1] = tmp4;
+      items1 = [, ];
+      const obj2 = { style: row.avatar };
+      items1[0] = metroRequire(View, obj2);
+      const obj3 = { style: row.lines, children: items2 };
+      items2 = [, ];
+      const obj4 = { style: row.lineName };
+      items2[0] = metroRequire(View, obj4);
+      const obj5 = { style: row.lineText };
+      items2[1] = metroRequire(View, obj5);
+      items1[1] = metroImportDefault(View, obj3);
+      return metroImportDefault(View, obj, arg1);
+    });
+    cResult[3] = tmp4;
+    cResult[4] = arr;
+    tmp10 = arr;
+  } else {
+    tmp10 = cResult[4];
+  }
+  if (cResult[5] === animatedStyle) {
+    let tmp14;
+    if (cResult[6] === tmp10) {
+      tmp14 = cResult[7];
+    }
+    return tmp14;
+  }
+  const tmp15 = closure_6(sharedValue(4570).View, { style: animatedStyle, "aria-hidden": true, children: tmp10 });
+  cResult[5] = animatedStyle;
+  cResult[6] = tmp10;
+  cResult[7] = tmp15;
+  tmp14 = tmp15;
+}) : (() => {
   let obj4;
   let row;
   _require = closure_8();
@@ -58,13 +136,13 @@ export default function ConversationPreviewSkeleton() {
     const result = set(withRepeat(obj.withTiming(1, { duration: 700 }), -1, true));
   }, items);
   let obj2 = require("ReanimatedRexport");
-  const fn = function p() {
+  const fn = function y() {
     const obj = { opacity: sharedValue.get() };
     return obj;
   };
   fn.__closure = { opacity: sharedValue };
-  fn.__workletHash = 11432452203963;
-  fn.__initData = __initData;
+  fn.__workletHash = 8310335020248;
+  fn.__initData = __initData2;
   const animatedStyle = obj2.useAnimatedStyle(fn);
   let obj3 = {
     style: animatedStyle,
@@ -90,6 +168,10 @@ export default function ConversationPreviewSkeleton() {
     })
   };
   obj4 = { length: closure_5 };
-  View = sharedValue(4566).View;
+  View = sharedValue(4570).View;
   return closure_6(View, obj3);
-};
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/conversations/components/native/ConversationPreviewSkeleton.tsx");
+
+export default tmp4;

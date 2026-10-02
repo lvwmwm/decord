@@ -1,7 +1,10 @@
 // Module ID: 1301
 // Function ID: 1302
-// Dependencies: []
+// Dependencies: [1302]
 
 // Module 1301
+import _mod1302 from "module_1302" /* 1302 */;
 
-export default RangeError;
+_mod1302.getPrototypeOf || null;
+
+export default _mod1302.getPrototypeOf || null;

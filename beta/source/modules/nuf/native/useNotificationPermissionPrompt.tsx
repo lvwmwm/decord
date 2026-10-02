@@ -1,21 +1,96 @@
-// Module ID: 16162
-// Function ID: 16163
+// Module ID: 16164
+// Function ID: 16165
 // Name: useNotificationPermissionPrompt
-// Dependencies: [19, 2036, 5589, 2037, 11902, 504, 2041, 11911, 16163, 16167, 2]
-// Exports: default
+// Dependencies: [19, 2042, 5590, 2043, 11796, 558, 576, 504, 2047, 11805, 16165, 16169, 2]
 
-// Module 16162 (useNotificationPermissionPrompt)
-import NotificationUtilsDefault from "NotificationUtils" /* 11911 */;
+// Module 16164 (useNotificationPermissionPrompt)
+import NotificationUtilsDefault from "NotificationUtils" /* 11805 */;
 import react from "react" /* 19 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2036 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2037 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 11902 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2042 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2043 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 11796 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/nuf/native/useNotificationPermissionPrompt.tsx");
-
-export default function useNotificationPermissionPrompt() {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let connected;
+  let stateFromStores;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  let tmp = stateFromStores;
+  let tmp2 = dependencyMap;
+  const obj = stateFromStores(576);
+  const cResult = obj.c(8);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp6 = GatewayConnectionStore;
+    const items = [GatewayConnectionStore];
+    const fn = function l() {
+      return connected.isConnected();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = tmp(504);
+  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserRequiredActionStore, LoginRequiredActionStore];
+    const fn2 = function p() {
+      return stateFromStores1(dependencyMap[8])(LoginRequiredActionStore, UserRequiredActionStore);
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    tmp9 = fn2;
+    tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult4 = tmp(504);
+  const stateFromStores1 = tmpResult4.useStateFromStores(tmp8, tmp9);
+  if (cResult[4] === stateFromStores1) {
+    let tmp13;
+    let tmp14;
+    if (cResult[5] === stateFromStores) {
+      tmp13 = cResult[6];
+      tmp14 = cResult[7];
+    }
+    const effect = react.useEffect(tmp13, tmp14);
+    const tmpResult5 = tmp(16165);
+    const guildOpenNudge = tmpResult5.useGuildOpenNudge();
+    const tmpResult6 = tmp(16169);
+    const postCallDisconnectNudge = tmpResult6.usePostCallDisconnectNudge();
+  }
+  class N {
+    constructor() {
+      const tmp = stateFromStores;
+      if (tmp) {
+        const tmp2 = stateFromStores1;
+        if (!tmp2) {
+          const tmp6 = NotificationUtilsDefault.shouldRequestNotification && !PushNotificationPermissionStore.promptSeen;
+          if (tmp6) {
+            const tmp4Result = NotificationUtilsDefault;
+            const permission = tmp4Result.requestPermission();
+            NotificationUtilsDefault.shouldRequestNotification = false;
+          }
+        }
+      }
+    }
+  }
+  const items2 = [stateFromStores, stateFromStores1];
+  cResult[4] = stateFromStores1;
+  cResult[5] = stateFromStores;
+  cResult[6] = N;
+  cResult[7] = items2;
+  tmp14 = items2;
+  tmp13 = N;
+}) : (() => {
   let connected;
   let stateFromStores;
   const items = [GatewayConnectionStore];
@@ -23,7 +98,7 @@ export default function useNotificationPermissionPrompt() {
   stateFromStores = obj.useStateFromStores(items, () => connected.isConnected());
   const items1 = [UserRequiredActionStore, LoginRequiredActionStore];
   const obj2 = stateFromStores(504);
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => stateFromStores1(dependencyMap[6])(LoginRequiredActionStore, UserRequiredActionStore));
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => stateFromStores1(dependencyMap[8])(LoginRequiredActionStore, UserRequiredActionStore));
   const items2 = [stateFromStores, stateFromStores1];
   const effect = react.useEffect(() => {
     const tmp = stateFromStores;
@@ -39,8 +114,11 @@ export default function useNotificationPermissionPrompt() {
       }
     }
   }, items2);
-  const obj3 = stateFromStores(16163);
+  const obj3 = stateFromStores(16165);
   const guildOpenNudge = obj3.useGuildOpenNudge();
-  const obj4 = stateFromStores(16167);
+  const obj4 = stateFromStores(16169);
   const postCallDisconnectNudge = obj4.usePostCallDisconnectNudge();
-};
+});
+const result = size.fileFinishedImporting("modules/nuf/native/useNotificationPermissionPrompt.tsx");
+
+export default tmp2;

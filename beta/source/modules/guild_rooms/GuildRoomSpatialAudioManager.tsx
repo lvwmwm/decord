@@ -1,26 +1,26 @@
-// Module ID: 17142
-// Function ID: 17143
+// Module ID: 17144
+// Function ID: 17145
 // Name: GuildRoomSpatialAudioManager
-// Dependencies: [32, 4750, 1235, 502, 2045, 1993, 4859, 4994, 6539, 17143, 9104, 5036, 2]
+// Dependencies: [32, 4752, 1247, 502, 2051, 1999, 4860, 4995, 6540, 17145, 9081, 5037, 2]
 
-// Module 17142 (GuildRoomSpatialAudioManager)
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
-import GuildRoomSpatialAudio from "GuildRoomSpatialAudio" /* 17143 */;
+// Module 17144 (GuildRoomSpatialAudioManager)
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9081 */;
+import GuildRoomSpatialAudio from "GuildRoomSpatialAudio" /* 17145 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 4750 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
+import ExperimentStore from "ExperimentStore" /* 4752 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1247 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import GuildRoomStore from "GuildRoomStore" /* 4994 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import GuildRoomStore from "GuildRoomStore" /* 4995 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let _require, map, setUserPosition;
 
 let tmp;
-const GuildRoomsExperiment = tmp(5036);
+const GuildRoomsExperiment = tmp(5037);
 class GuildRoomSpatialAudioManager extends AutomaticLifecycleManager {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);

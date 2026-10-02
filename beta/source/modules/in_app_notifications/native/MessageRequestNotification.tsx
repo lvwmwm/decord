@@ -1,19 +1,106 @@
-// Module ID: 10864
-// Function ID: 10865
+// Module ID: 12292
+// Function ID: 12293
 // Name: MessageRequestNotification
-// Dependencies: [19, 21, 1115, 9556, 4693, 9630, 1177, 9566, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 1127, 12223, 4695, 1189, 12232, 12262, 2]
 
-// Module 10864 (MessageRequestNotification)
+// Module 12292 (MessageRequestNotification)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1115 */;
+import react2 from "react" /* 576 */;
+import intl3 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import RootNavigationRef from "RootNavigationRef" /* 4695 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12223 */;
+import Notification from "Notification" /* 12262 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/in_app_notifications/native/MessageRequestNotification.tsx");
+let notification;
 
-export default function MessageRequestInAppNotification(notification) {
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
+  let author;
+  let numMutualGuilds;
+  let obj = react2;
+  const cResult = obj.c(13);
+  notification = notification.notification;
+  ({ author, numMutualGuilds } = notification);
+  if (cResult[0] === author.username) {
+    let tmp4;
+    let tmp6;
+    let tmp8;
+    let tmp9;
+    let tmp12;
+    if (cResult[1] === numMutualGuilds) {
+      tmp4 = cResult[2];
+    }
+    if (cResult[3] !== tmp4) {
+      let obj2 = { type: "simple", text: tmp4 };
+      cResult[3] = tmp4;
+      cResult[4] = obj2;
+      tmp6 = obj2;
+    } else {
+      tmp6 = cResult[4];
+    }
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn = function v() {
+        const obj = InAppNotificationActionCreatorsDefault;
+        obj.clearNotification();
+        const obj2 = RootNavigationRef;
+        const rootNavigationRef = obj2.getRootNavigationRef();
+        if (rootNavigationRef != null) {
+          rootNavigationRef.navigate("message-requests");
+        }
+      };
+      cResult[5] = fn;
+      tmp8 = fn;
+    } else {
+      tmp8 = cResult[5];
+    }
+    if (cResult[6] !== author) {
+      const Avatar = tmp(1189).Avatar;
+      const tmp11 = <Avatar user={author} size={native.AvatarSizes.NORMAL} guildId="Array" />;
+      cResult[6] = author;
+      cResult[7] = tmp11;
+      tmp9 = tmp11;
+    } else {
+      tmp9 = cResult[7];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      const SystemMessageText = tmp(12232).SystemMessageText;
+      const intl2 = tmp(1127).intl;
+      const tmp14 = <SystemMessageText text={intl2.string(intl3.t["Bx4/Lf"])} />;
+      cResult[8] = tmp14;
+      tmp12 = tmp14;
+    } else {
+      tmp12 = cResult[8];
+    }
+    if (cResult[9] === tmp6) {
+      if (cResult[10] === notification) {
+        let tmp15;
+        if (cResult[11] === tmp9) {
+          tmp15 = cResult[12];
+        }
+        return tmp15;
+      }
+    }
+    const tmp17 = jsx(Notification.NotificationPressable, { icon: tmp9, header: tmp6, children: tmp12, onPress: tmp8, notification });
+    cResult[9] = tmp6;
+    cResult[10] = notification;
+    cResult[11] = tmp9;
+    cResult[12] = tmp17;
+    tmp15 = tmp17;
+  }
+  const intl = tmp(1127).intl;
+  const obj6 = { name: author.username, count: numMutualGuilds };
+  const formatToPlainStringResult = intl.formatToPlainString(intl3.t.LeYU4d, obj6);
+  cResult[0] = author.username;
+  cResult[1] = numMutualGuilds;
+  cResult[2] = formatToPlainStringResult;
+  tmp4 = formatToPlainStringResult;
+}) : ((notification) => {
   let intl;
   notification = notification.notification;
   const author = notification.author;
@@ -21,24 +108,27 @@ export default function MessageRequestInAppNotification(notification) {
   const items = [author.username, numMutualGuilds];
   const memo = react.useMemo(() => {
     let intl;
-    const obj = { type: "simple", text: intl.formatToPlainString(intl2.t.LeYU4d, obj2) };
-    intl = intl2.intl;
+    const obj = { type: "simple", text: intl.formatToPlainString(intl3.t.LeYU4d, obj2) };
+    intl = intl3.intl;
     return obj;
   }, items);
   const callback = react.useCallback(() => {
-    const obj = numMutualGuilds(dependencyMap[3]);
+    const obj = numMutualGuilds(dependencyMap[5]);
     obj.clearNotification();
-    const obj2 = author(dependencyMap[4]);
+    const obj2 = author(dependencyMap[6]);
     const rootNavigationRef = obj2.getRootNavigationRef();
     if (rootNavigationRef != null) {
       rootNavigationRef.navigate("message-requests");
     }
   }, []);
-  const NotificationPressable = author(9630).NotificationPressable;
-  let obj2 = { user: author, size: author(1177).AvatarSizes.NORMAL, guildId: "Array" };
-  const Avatar = author(1177).Avatar;
-  ({ text: intl.string(author(1115).t["Bx4/Lf"]) });
-  const SystemMessageText = author(9566).SystemMessageText;
-  intl = author(1115).intl;
+  const NotificationPressable = author(12262).NotificationPressable;
+  let obj2 = { user: author, size: author(1189).AvatarSizes.NORMAL, guildId: "Array" };
+  const Avatar = author(1189).Avatar;
+  ({ text: intl.string(author(1127).t["Bx4/Lf"]) });
+  const SystemMessageText = author(12232).SystemMessageText;
+  intl = author(1127).intl;
   return <NotificationPressable icon={null} header={memo} onPress={callback} notification={notification}>{null}</NotificationPressable>;
-};
+});
+const result = size.fileFinishedImporting("modules/in_app_notifications/native/MessageRequestNotification.tsx");
+
+export default tmp2;

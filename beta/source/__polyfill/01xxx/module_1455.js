@@ -1,157 +1,61 @@
 // Module ID: 1455
 // Function ID: 1456
-// Dependencies: []
+// Dependencies: [1452, 1327, 1295, 1326]
 
 // Module 1455
-let toString;
+import _mod1295 from "module_1295" /* 1295 */;
+import hasToStringTagShams from "hasToStringTagShams" /* 1452 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 1327 */;
 
-let apply = typeof Reflect === "object";
-if (typeof Reflect === "object") {
-  const _Reflect2 = Reflect;
-  apply = null !== Reflect;
-}
-if (apply) {
-  const _Reflect = Reflect;
-  apply = Reflect.apply;
-}
-let c3 = apply;
-if (typeof apply === "function") {
-  let tmp2;
-  const _Object3 = Object;
-  if (typeof Object.defineProperty === "function") {
-    let tmp;
-    try {
-      const _Object = Object;
-      let obj = {
-        get() {
-                throw obj2;
-              }
-      };
-      const definePropertyResult = Object.defineProperty({}, "length", obj);
-      const _window = definePropertyResult;
-      const obj2 = {};
-      tmp = obj2;
-      let tmp4 = null;
-      apply(() => {
-        throw 42;
-      }, null, definePropertyResult);
-      tmp2 = apply;
-    } catch (tmp6) {
-      tmp2 = apply;
-      if (tmp6 !== tmp) {
-        c3 = null;
-        tmp2 = null;
-      }
-    }
+let isRegex;
+let tmp = hasToStringTagShams();
+if (tmp) {
+  let closure_2 = callBoundIntrinsic("RegExp.prototype.exec");
+  let closure_3 = {};
+  function throwRegexMarker() {
+    throw closure_3;
   }
-  const re4 = /^\s*class\b/;
-  function isES6ClassFunction(fn) {
-    try {
-      return re4.test(toString.call(fn));
-    } catch (err) {
-      return false;
-    }
-  }
-  function tryFunctionToStr(fn) {
-    try {
-      let flag = !isES6ClassFunction(fn);
-      const tmp3 = isES6ClassFunction(fn);
-      if (flag) {
-        toString.call(fn);
-        flag = true;
-      }
-      return flag;
-    } catch (err) {
-      return false;
-    }
-  }
-  const _Object2 = Object;
-  toString = Object.prototype.toString;
+  const obj = { toString: throwRegexMarker, valueOf: throwRegexMarker };
+  let tmp3 = globalThis;
   const _Symbol = Symbol;
-  let toStringTag = typeof Symbol === "function";
-  if (typeof Symbol === "function") {
+  if (typeof Symbol.toPrimitive === "symbol") {
     const _Symbol2 = Symbol;
-    toStringTag = Symbol.toStringTag;
+    obj[Symbol.toPrimitive] = throwRegexMarker;
   }
-  const items = [];
-  items.length = 1;
-  let closure_9 = !(0 in items);
-  function isDocumentDotAll() {
-    return false;
-  }
-  const _document = document;
-  if (typeof document === "object") {
-    const _document3 = document;
-    const _document2 = document;
-    let callResult = toString.call(document.all);
-    if (callResult === toString.call(document.all)) {
-      isDocumentDotAll = function isDocumentDotAll(obj) {
-        const tmp = closure_9;
-        if (tmp) {
-          try {
-            const callResult = toString.call(obj);
-            const tmp4 = ("[object HTMLAllCollection]" === callResult || "[object HTML document.all class]" === tmp3 || "[object HTMLCollection]" === tmp3 || "[object Object]" === tmp3) && null == obj("");
-            return tmp4;
-          } catch (err) {
+  isRegex = function isRegex(obj) {
+    const tmp = obj;
+    if (tmp) {
+      if (typeof obj === "object") {
+        const tmp9 = _mod1295(obj, "lastIndex");
+        const tmp7 = require;
+        if (tmp9) {
+          if (tmp7(1326)(tmp9, "value")) {
+            try {
+              closure_2(obj, obj);
+            } catch (tmp5) {
+              return tmp5 === closure_3;
+            }
           }
         }
         return false;
-      };
+      }
     }
-  }
-  module.exports = tmp2 ? (function isCallable(fn) {
-    if (isDocumentDotAll(fn)) {
-      return true;
-    } else if (fn) {
-      if (typeof fn !== "function") {
-        if (typeof fn !== "object") {
-          return false;
-        }
+    return false;
+  };
+} else {
+  let closure_5 = callBoundIntrinsic("Object.prototype.toString");
+  isRegex = function isRegex(obj) {
+    let tmp = !obj;
+    if (obj) {
+      let tmp2 = typeof obj !== "object";
+      if (typeof obj !== "object") {
+        tmp2 = typeof obj !== "function";
       }
-      try {
-        _null(fn, null, _window);
-      } catch (tmp5) {
-        if (tmp5 !== obj2) {
-          return false;
-        }
-      }
-      let tmp9 = !isES6ClassFunction(fn);
-      isES6ClassFunction(fn);
-      if (tmp9) {
-        tmp9 = tryFunctionToStr(fn);
-      }
-      return tmp9;
-    } else {
-      return false;
+      tmp = tmp2;
     }
-  }) : (function isCallable(fn) {
-    if (isDocumentDotAll(fn)) {
-      return true;
-    } else if (fn) {
-      if (typeof fn !== "function") {
-        if (typeof fn !== "object") {
-          return false;
-        }
-      }
-      const tmp = toStringTag;
-      if (tmp) {
-        return tryFunctionToStr(fn);
-      } else if (isES6ClassFunction(fn)) {
-        return false;
-      } else {
-        const callResult = toString.call(fn);
-        let tmp4 = "[object Function]" !== callResult && "[object GeneratorFunction]" !== callResult;
-        if (tmp4) {
-          const obj = /^\[object HTML/;
-          tmp4 = !obj.test(callResult);
-        }
-        const tmp5 = !tmp4 && tryFunctionToStr(fn);
-        return tmp5;
-      }
-    } else {
-      return false;
-    }
-  });
+    const tmp3 = !tmp && "[object RegExp]" === closure_5(obj);
+    return tmp3;
+  };
 }
-tmp2 = null;
-c3 = null;
+
+export default isRegex;

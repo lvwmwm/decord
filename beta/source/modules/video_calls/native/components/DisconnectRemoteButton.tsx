@@ -1,22 +1,92 @@
-// Module ID: 9472
-// Function ID: 9473
+// Module ID: 9468
+// Function ID: 9469
 // Name: DisconnectRemoteButton
-// Dependencies: [19, 4853, 21, 504, 8855, 6413, 9430, 1115, 9243, 9097, 2]
-// Exports: DisconnectRemoteButton
+// Dependencies: [19, 4854, 21, 558, 576, 504, 6413, 9426, 1127, 9221, 9074, 8850, 2]
 
-// Module 9472 (DisconnectRemoteButton)
+// Module 9468 (DisconnectRemoteButton)
 import Fragment from "Fragment" /* 21 */;
-import CallBarActionAll from "CallBarAction" /* 8855 */;
-import CallsUtils from "CallsUtils" /* 9097 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 9243 */;
+import CallBarActionAll from "CallBarAction" /* 8850 */;
+import CallsUtils from "CallsUtils" /* 9074 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 9221 */;
 import react from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 4853 */;
+import GameConsoleStore from "GameConsoleStore" /* 4854 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/video_calls/native/components/DisconnectRemoteButton.tsx");
+let channel;
 
-export const DisconnectRemoteButton = function DisconnectRemoteButton(channel) {
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let tmp4;
+  let tmp5;
+  let tmp9;
+  const tmp = channel;
+  let obj = channel(576);
+  const cResult = obj.c(10);
+  channel = channel.channel;
+  const isSmallSize = channel.isSmallSize;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GameConsoleStore];
+    const fn = function c() {
+      const obj = { awaitingRemote: null != GameConsoleStore.getAwaitingRemoteSessionInfo(), remoteSessionId: GameConsoleStore.getRemoteSessionId() };
+      return obj;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp4, tmp5);
+  const remoteSessionId = stateFromStoresObject.remoteSessionId;
+  const tmp8 = remoteSessionId(stateFromStoresObject.awaitingRemote ? 6413 : 9426);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(tmp(1127).t["6vrfgt"]);
+    cResult[2] = stringResult;
+    tmp9 = stringResult;
+  } else {
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] === channel) {
+    let tmp11;
+    if (cResult[4] === remoteSessionId) {
+      tmp11 = cResult[5];
+    }
+    if (cResult[6] === isSmallSize) {
+      if (cResult[7] === tmp8) {
+        let tmp12;
+        if (cResult[8] === tmp11) {
+          tmp12 = cResult[9];
+        }
+        return tmp12;
+      }
+    }
+    const tmp15 = jsx(CallBarActionAll.PrimaryActionButton, { source: tmp8, accessibilityLabel: tmp9, isSmallSize, onPress: tmp11 });
+    cResult[6] = isSmallSize;
+    cResult[7] = tmp8;
+    cResult[8] = tmp11;
+    cResult[9] = tmp15;
+    tmp12 = tmp15;
+  }
+  const fn2 = function f() {
+    if (null != remoteSessionId) {
+      const obj2 = GameConsoleActionCreators;
+      obj2.remoteDisconnect(tmp);
+      const obj3 = CallsUtils;
+      obj3.handleDisconnect(channel);
+    } else {
+      const obj = GameConsoleActionCreators;
+      obj.disconnectRemote();
+    }
+  };
+  cResult[3] = channel;
+  cResult[4] = remoteSessionId;
+  cResult[5] = fn2;
+  tmp11 = fn2;
+}) : ((channel) => {
   channel = channel.channel;
   const tmp = channel;
   const isSmallSize = channel.isSmallSize;
@@ -29,8 +99,8 @@ export const DisconnectRemoteButton = function DisconnectRemoteButton(channel) {
   const remoteSessionId = stateFromStoresObject.remoteSessionId;
   const awaitingRemote = stateFromStoresObject.awaitingRemote;
   const PrimaryActionButton = CallBarActionAll.PrimaryActionButton;
-  const intl = tmp(1115).intl;
-  return <PrimaryActionButton source={remoteSessionId(awaitingRemote ? 6413 : 9430)} accessibilityLabel={intl.string(tmp(1115).t["6vrfgt"])} isSmallSize={isSmallSize} onPress={function onPress() {
+  const intl = tmp(1127).intl;
+  return <PrimaryActionButton source={remoteSessionId(awaitingRemote ? 6413 : 9426)} accessibilityLabel={intl.string(tmp(1127).t["6vrfgt"])} isSmallSize={isSmallSize} onPress={function onPress() {
     if (null != remoteSessionId) {
       const obj2 = GameConsoleActionCreators;
       obj2.remoteDisconnect(tmp);
@@ -41,4 +111,7 @@ export const DisconnectRemoteButton = function DisconnectRemoteButton(channel) {
       obj.disconnectRemote();
     }
   }} />;
-};
+});
+const result = size.fileFinishedImporting("modules/video_calls/native/components/DisconnectRemoteButton.tsx");
+
+export const DisconnectRemoteButton = tmp3;

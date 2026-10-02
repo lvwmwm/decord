@@ -1,29 +1,449 @@
-// Module ID: 16482
-// Function ID: 16483
+// Module ID: 16484
+// Function ID: 16485
 // Name: renderChannelContent
-// Dependencies: [19, 17, 9577, 5018, 21, 4836, 1364, 16479, 5373, 16483, 4832, 5409, 8048, 15750, 2]
+// Dependencies: [19, 17, 11441, 5019, 21, 4837, 1370, 558, 576, 16481, 5374, 16485, 4833, 5410, 8052, 15761, 2]
 // Exports: default
 
-// Module 16482 (renderChannelContent)
+// Module 16484 (renderChannelContent)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import ReadStateConstants from "ReadStateConstants" /* 5018 */;
-import LockIcon from "LockIcon" /* 5409 */;
-import WarningIcon from "WarningIcon" /* 8048 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 9577 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16479 */;
-import ChannelTitleDefault from "ChannelTitle" /* 16483 */;
+import react2 from "react" /* 576 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import ReadStateConstants from "ReadStateConstants" /* 5019 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5374 */;
+import LockIcon from "LockIcon" /* 5410 */;
+import WarningIcon from "WarningIcon" /* 8052 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11441 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 15761 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16481 */;
+import ChannelTitleDefault from "ChannelTitle" /* 16485 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let num2;
 let obj2;
-function ChannelContent(arg0) {
+const View = react_native.View;
+const SUBTITLE_OPACITY_NORMAL = RedesignChannelListConstants.SUBTITLE_OPACITY_NORMAL;
+const UnreadSetting = ReadStateConstants.UnreadSetting;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+createStyles = createStyles.createStyles;
+let PlatformUtils = PlatformUtils_mod;
+let num = -1;
+if (PlatformUtils.isIOS()) {
+  num = 2;
+}
+let obj = { channelContent: { flex: 1, marginTop: num }, channelContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, leftBox: { flexDirection: "column", alignItems: "flex-start", flexShrink: 1 }, rightBox: { flexDirection: "column", alignItems: "flex-end" }, rightContentAbsolute: { position: "absolute", right: 0, top: 0 }, channelTraits: { display: "flex", flexDirection: "row", alignItems: "center" }, channelTraitIcon: obj2 };
+obj2 = { opacity: SUBTITLE_OPACITY_NORMAL, marginRight: 4, marginTop: num2 };
+PlatformUtils = PlatformUtils_mod;
+num2 = 0;
+if (PlatformUtils.isAndroid()) {
+  num2 = 2;
+}
+let closure_9 = createStyles(obj);
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let channel;
+  let channelCategoryName;
+  let connected;
+  let first;
+  let isSubscriptionGated;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let items7;
+  let lastMessageTimestampString;
+  let locked;
+  let mentionBadge;
+  let mentionCount;
+  let muted;
+  let name;
+  let needSubscriptionToAccess;
+  let obj12;
+  let resolvedUnreadSetting;
+  let subtitle;
+  let unread;
+  const obj = react2;
+  const cResult = obj.c(70);
+  ({ name, subtitle, unread, resolvedUnreadSetting, locked, muted, lastMessageTimestampString, channel, channelCategoryName, connected, mentionCount, mentionBadge, isSubscriptionGated, needSubscriptionToAccess } = arg0);
+  const tmp4 = closure_9();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp7 = getLayoutStylesDefault();
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === channel) {
+    let tmp8;
+    let tmp12;
+    let tmp16;
+    let tmp22;
+    if (cResult[2] === locked) {
+      tmp8 = cResult[3];
+    }
+    if (cResult[4] !== channel) {
+      let isNSFWResult;
+      if (channel != null) {
+        isNSFWResult = channel.isNSFW();
+      }
+      cResult[4] = channel;
+      cResult[5] = isNSFWResult;
+      tmp12 = isNSFWResult;
+    } else {
+      tmp12 = cResult[5];
+    }
+    if (cResult[6] !== subtitle) {
+      const isValidElementResult = react.isValidElement(subtitle);
+      cResult[6] = subtitle;
+      cResult[7] = isValidElementResult;
+      tmp16 = isValidElementResult;
+    } else {
+      tmp16 = cResult[7];
+    }
+    let str = "center";
+    if (tmp16) {
+      str = "space-between";
+    }
+    if (cResult[8] !== str) {
+      const obj2 = { justifyContent: str };
+      cResult[8] = str;
+      cResult[9] = obj2;
+      tmp22 = obj2;
+    } else {
+      tmp22 = cResult[9];
+    }
+    if (cResult[10] === tmp4.leftBox) {
+      let tmp23;
+      let tmp24;
+      if (cResult[11] === tmp22) {
+        tmp23 = cResult[12];
+      }
+      let num12 = 0;
+      if (null != lastMessageTimestampString && null == mentionBadge) {
+        num12 = 30;
+      }
+      if (cResult[13] !== num12) {
+        const obj3 = { flexDirection: "row", paddingRight: num12, alignItems: "center" };
+        cResult[13] = num12;
+        cResult[14] = obj3;
+        tmp24 = obj3;
+      } else {
+        tmp24 = cResult[14];
+      }
+      if (resolvedUnreadSetting == null) {
+        resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
+      }
+      if (cResult[15] === connected) {
+        if (cResult[16] === muted) {
+          if (cResult[17] === name) {
+            if (cResult[18] === resolvedUnreadSetting) {
+              let tmp26;
+              let tmp30;
+              if (cResult[19] === unread) {
+                tmp26 = cResult[20];
+              }
+              if (cResult[21] !== channelCategoryName) {
+                let tmp31 = null;
+                if (null != channelCategoryName) {
+                  const obj4 = { variant: "text-xs/bold", color: "text-muted", style: { marginRight: 4 }, children: channelCategoryName };
+                  tmp31 = metroImportDefault(tmp(4833).Text, obj4);
+                }
+                cResult[21] = channelCategoryName;
+                cResult[22] = tmp31;
+                tmp30 = tmp31;
+              } else {
+                tmp30 = cResult[22];
+              }
+              if (cResult[23] === (tmp8 || tmp12)) {
+                if (cResult[24] === isSubscriptionGated) {
+                  if (cResult[25] === needSubscriptionToAccess) {
+                    if (cResult[26] === tmp8) {
+                      if (cResult[27] === tmp12) {
+                        if (cResult[28] === tmp4.channelTraitIcon) {
+                          let tmp33;
+                          if (cResult[29] === tmp4.channelTraits) {
+                            tmp33 = cResult[30];
+                          }
+                          if (cResult[31] === tmp26) {
+                            if (cResult[32] === tmp30) {
+                              if (cResult[33] === tmp33) {
+                                let tmp44;
+                                if (cResult[34] === tmp24) {
+                                  tmp44 = cResult[35];
+                                }
+                                if (cResult[36] === mentionCount) {
+                                  if (cResult[37] === tmp16) {
+                                    let tmp48;
+                                    if (cResult[38] === subtitle) {
+                                      tmp48 = cResult[39];
+                                    }
+                                    if (cResult[40] === tmp44) {
+                                      if (cResult[41] === tmp48) {
+                                        let tmp52;
+                                        if (cResult[42] === tmp23) {
+                                          tmp52 = cResult[43];
+                                        }
+                                        const tmp56 = null != lastMessageTimestampString && null == mentionBadge ? tmp4.rightContentAbsolute : tmp4.rightBox;
+                                        if (cResult[44] === lastMessageTimestampString) {
+                                          if (cResult[45] === muted) {
+                                            let tmp57;
+                                            let tmp60;
+                                            let tmp61;
+                                            let tmp63;
+                                            if (cResult[46] === null != lastMessageTimestampString) {
+                                              tmp57 = cResult[47];
+                                            }
+                                            const _Symbol = Symbol;
+                                            if (cResult[48] === Symbol.for("react.memo_cache_sentinel")) {
+                                              const obj5 = { alignItems: "center", paddingLeft: 4 };
+                                              cResult[48] = obj5;
+                                              tmp60 = obj5;
+                                            } else {
+                                              tmp60 = cResult[48];
+                                            }
+                                            if (cResult[49] !== (null != lastMessageTimestampString)) {
+                                              const tmp62 = null != lastMessageTimestampString && { marginTop: 5 };
+                                              cResult[49] = null != lastMessageTimestampString;
+                                              cResult[50] = tmp62;
+                                              tmp61 = tmp62;
+                                            } else {
+                                              tmp61 = cResult[50];
+                                            }
+                                            if (cResult[51] !== tmp61) {
+                                              const items = [tmp60, tmp61];
+                                              cResult[51] = tmp61;
+                                              cResult[52] = items;
+                                              tmp63 = items;
+                                            } else {
+                                              tmp63 = cResult[52];
+                                            }
+                                            if (cResult[53] === mentionBadge) {
+                                              let tmp64;
+                                              let tmp68;
+                                              if (cResult[54] === tmp63) {
+                                                tmp64 = cResult[55];
+                                              }
+                                              if (cResult[56] !== (null != lastMessageTimestampString && null == mentionBadge)) {
+                                                let tmp69 = tmp21;
+                                                if (tmp69) {
+                                                  const obj6 = { style: { flex: 1 } };
+                                                  tmp69 = metroImportDefault(View, obj6);
+                                                }
+                                                cResult[56] = null != lastMessageTimestampString && null == mentionBadge;
+                                                cResult[57] = tmp69;
+                                                tmp68 = tmp69;
+                                              } else {
+                                                tmp68 = cResult[57];
+                                              }
+                                              if (cResult[58] === tmp56) {
+                                                if (cResult[59] === tmp57) {
+                                                  if (cResult[60] === tmp64) {
+                                                    let tmp72;
+                                                    if (cResult[61] === tmp68) {
+                                                      tmp72 = cResult[62];
+                                                    }
+                                                    if (cResult[63] === tmp4.channelContainer) {
+                                                      if (cResult[64] === tmp52) {
+                                                        let tmp76;
+                                                        if (cResult[65] === tmp72) {
+                                                          tmp76 = cResult[66];
+                                                        }
+                                                        if (cResult[67] === tmp4.channelContent) {
+                                                          let tmp80;
+                                                          if (cResult[68] === tmp76) {
+                                                            tmp80 = cResult[69];
+                                                          }
+                                                          return tmp80;
+                                                        }
+                                                        const obj7 = { style: tmp4.channelContent, children: tmp76 };
+                                                        const tmp83 = metroImportDefault(View, obj7);
+                                                        cResult[67] = tmp4.channelContent;
+                                                        cResult[68] = tmp76;
+                                                        cResult[69] = tmp83;
+                                                        tmp80 = tmp83;
+                                                      }
+                                                    }
+                                                    const obj8 = { style: tmp4.channelContainer, children: items1 };
+                                                    items1 = [tmp52, tmp72];
+                                                    const tmp79 = metroImportAll(View, obj8);
+                                                    cResult[63] = tmp4.channelContainer;
+                                                    cResult[64] = tmp52;
+                                                    cResult[65] = tmp72;
+                                                    cResult[66] = tmp79;
+                                                    tmp76 = tmp79;
+                                                  }
+                                                }
+                                              }
+                                              const obj9 = { style: tmp56, children: items2 };
+                                              items2 = [tmp57, tmp64, tmp68];
+                                              const tmp75 = metroImportAll(View, obj9);
+                                              cResult[58] = tmp56;
+                                              cResult[59] = tmp57;
+                                              cResult[60] = tmp64;
+                                              cResult[61] = tmp68;
+                                              cResult[62] = tmp75;
+                                              tmp72 = tmp75;
+                                            }
+                                            const obj10 = { style: tmp63, children: mentionBadge };
+                                            const tmp67 = metroImportDefault(View, obj10);
+                                            cResult[53] = mentionBadge;
+                                            cResult[54] = tmp63;
+                                            cResult[55] = tmp67;
+                                            tmp64 = tmp67;
+                                          }
+                                        }
+                                        let tmp59Result = tmp20;
+                                        if (tmp59Result) {
+                                          let num49 = 1;
+                                          const Text = tmp(4833).Text;
+                                          const tmp59 = metroImportDefault;
+                                          if (!muted) {
+                                            num49 = SUBTITLE_OPACITY_NORMAL;
+                                          }
+                                          const obj11 = { variant: "text-xs/medium", color: "text-muted", style: obj12, maxFontSizeMultiplier: 1.75, children: lastMessageTimestampString };
+                                          obj12 = { marginLeft: "auto", opacity: num49 };
+                                          tmp59Result = tmp59(Text, obj11);
+                                        }
+                                        cResult[44] = lastMessageTimestampString;
+                                        cResult[45] = muted;
+                                        cResult[46] = null != lastMessageTimestampString;
+                                        cResult[47] = tmp59Result;
+                                        tmp57 = tmp59Result;
+                                      }
+                                    }
+                                    const obj13 = { style: tmp23, children: items3 };
+                                    items3 = [tmp44, tmp48];
+                                    const tmp55 = metroImportAll(View, obj13);
+                                    cResult[40] = tmp44;
+                                    cResult[41] = tmp48;
+                                    cResult[42] = tmp23;
+                                    cResult[43] = tmp55;
+                                    tmp52 = tmp55;
+                                  }
+                                }
+                                let tmp50Result = null;
+                                if (tmp16) {
+                                  let num39 = mentionCount;
+                                  const tmp50 = metroImportDefault;
+                                  const tmp51 = View;
+                                  if (mentionCount == null) {
+                                    num39 = 0;
+                                  }
+                                  let num40 = 0;
+                                  if (num39 > 0) {
+                                    num40 = 20;
+                                  }
+                                  const obj14 = { style: items4, children: subtitle };
+                                  items4 = [{ paddingRight: num40 }, ];
+                                  const obj15 = { paddingRight: num40 };
+                                  const obj16 = { marginTop: first.messagePreview.margin.marginTop };
+                                  items4[1] = obj16;
+                                  tmp50Result = tmp50(tmp51, obj14);
+                                }
+                                cResult[36] = mentionCount;
+                                cResult[37] = tmp16;
+                                cResult[38] = subtitle;
+                                cResult[39] = tmp50Result;
+                                tmp48 = tmp50Result;
+                              }
+                            }
+                          }
+                          const obj17 = { style: tmp24, children: items5 };
+                          items5 = [tmp26, tmp30, tmp33];
+                          const tmp47 = metroImportAll(View, obj17);
+                          cResult[31] = tmp26;
+                          cResult[32] = tmp30;
+                          cResult[33] = tmp33;
+                          cResult[34] = tmp24;
+                          cResult[35] = tmp47;
+                          tmp44 = tmp47;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              let tmp35Result = tmp15;
+              if (tmp35Result) {
+                const items6 = [tmp4.channelTraits, ];
+                let num24 = 1;
+                const tmp35 = metroImportAll;
+                const tmp36 = View;
+                if (tmp8) {
+                  num24 = 1;
+                  if (tmp12) {
+                    num24 = 2;
+                  }
+                }
+                const obj18 = { style: items6, children: items7 };
+                const obj19 = { maxWidth: 14 * num24 };
+                items6[1] = obj19;
+                let tmp37 = tmp8;
+                if (tmp37) {
+                  const obj20 = { size: "xxs", color: "icon-muted", style: tmp4.channelTraitIcon };
+                  tmp37 = metroImportDefault(tmp(5410).LockIcon, obj20);
+                }
+                items7 = [tmp37, , ];
+                let tmp39 = tmp12;
+                if (tmp39) {
+                  const obj21 = { size: "xxs", color: "icon-muted", style: tmp4.channelTraitIcon };
+                  tmp39 = metroImportDefault(tmp(8052).WarningIcon, obj21);
+                }
+                items7[1] = tmp39;
+                let tmp41 = isSubscriptionGated;
+                if (tmp41) {
+                  const obj22 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
+                  tmp41 = metroImportDefault(GuildRoleSubscriptionGatedChannelIconDefault, obj22);
+                }
+                items7[2] = tmp41;
+                tmp35Result = tmp35(tmp36, obj18);
+              }
+              cResult[23] = tmp8 || tmp12;
+              cResult[24] = isSubscriptionGated;
+              cResult[25] = needSubscriptionToAccess;
+              cResult[26] = tmp8;
+              cResult[27] = tmp12;
+              cResult[28] = tmp4.channelTraitIcon;
+              cResult[29] = tmp4.channelTraits;
+              cResult[30] = tmp35Result;
+              tmp33 = tmp35Result;
+            }
+          }
+        }
+      }
+      const obj23 = { title: name, muted, unread, resolvedUnreadSetting, connected };
+      const tmp29 = metroImportDefault(ChannelTitleDefault, obj23);
+      cResult[15] = connected;
+      cResult[16] = muted;
+      cResult[17] = name;
+      cResult[18] = resolvedUnreadSetting;
+      cResult[19] = unread;
+      cResult[20] = tmp29;
+      tmp26 = tmp29;
+    }
+    const items8 = [tmp4.leftBox, tmp22];
+    cResult[10] = tmp4.leftBox;
+    cResult[11] = tmp22;
+    cResult[12] = items8;
+    tmp23 = items8;
+  }
+  let tmp9 = null != channel;
+  if (tmp9) {
+    tmp9 = locked || isRoleRequiredDefault(channel);
+    const tmp10 = locked || isRoleRequiredDefault(channel);
+  }
+  cResult[1] = channel;
+  cResult[2] = locked;
+  cResult[3] = tmp9;
+  tmp8 = tmp9;
+}) : ((arg0) => {
   let channel;
   let channelCategoryName;
   let connected;
@@ -53,7 +473,7 @@ function ChannelContent(arg0) {
   const tmp4 = getLayoutStylesDefault();
   if (tmp9Result5) {
     if (!locked) {
-      locked = tmp2(5373)(channel);
+      locked = tmp2(5374)(channel);
     }
     tmp9Result5 = locked;
   }
@@ -115,7 +535,7 @@ function ChannelContent(arg0) {
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj12 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = tmp9(tmp2(15750), obj12);
+      isSubscriptionGated = tmp9(tmp2(15761), obj12);
     }
     items3[2] = isSubscriptionGated;
     tmp11Result = tmp11(tmp10, obj8);
@@ -166,30 +586,11 @@ function ChannelContent(arg0) {
   items7[2] = tmp9Result8;
   items6[1] = metroImportAll(View, obj16);
   return metroImportDefault(View, obj2);
-}
-const View = react_native.View;
-const SUBTITLE_OPACITY_NORMAL = RedesignChannelListConstants.SUBTITLE_OPACITY_NORMAL;
-const UnreadSetting = ReadStateConstants.UnreadSetting;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let createStyles = createStyles_mod;
-createStyles = createStyles.createStyles;
-let PlatformUtils = PlatformUtils_mod;
-let num = -1;
-if (PlatformUtils.isIOS()) {
-  num = 2;
-}
-let obj = { channelContent: { flex: 1, marginTop: num }, channelContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, leftBox: { flexDirection: "column", alignItems: "flex-start", flexShrink: 1 }, rightBox: { flexDirection: "column", alignItems: "flex-end" }, rightContentAbsolute: { position: "absolute", right: 0, top: 0 }, channelTraits: { display: "flex", flexDirection: "row", alignItems: "center" }, channelTraitIcon: obj2 };
-obj2 = { opacity: SUBTITLE_OPACITY_NORMAL, marginRight: 4, marginTop: num2 };
-PlatformUtils = PlatformUtils_mod;
-num2 = 0;
-if (PlatformUtils.isAndroid()) {
-  num2 = 2;
-}
-let closure_9 = createStyles(obj);
+});
 const result = size.fileFinishedImporting("modules/launchpad/native/shared/renderChannelContent.tsx");
 
 export default function renderChannelContent(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
-  return metroImportDefault(ChannelContent, obj);
+  return metroImportDefault(closure_10, obj);
 };

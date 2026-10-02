@@ -1,16 +1,31 @@
 // Module ID: 5295
 // Function ID: 5296
-// Dependencies: [5296]
+// Dependencies: [78, 80, 65]
 
 // Module 5295
-import _mod5296 from "module_5296" /* 5296 */;
+import pointsDiffer_mod from "pointsDiffer" /* 78 */;
+import processColorArray_mod from "processColorArray" /* 80 */;
+import module_65 from "module_65" /* 65 */;
 
-const _modDef5296 = _mod5296;
-
-for (const key10016 in _mod5296) {
-  exports[key10016] = _mod5296[key10016];
-  continue;
+let processColorArray;
+let pointsDiffer = pointsDiffer_mod;
+if ("default" in pointsDiffer) {
+  pointsDiffer = pointsDiffer.default;
 }
+const obj = { startPoint: { diff: pointsDiffer }, endPoint: { diff: pointsDiffer }, colors: { process: processColorArray }, locations: true, useAngle: true, angleCenter: { diff: pointsDiffer }, angle: true, borderRadii: true };
+pointsDiffer = pointsDiffer_mod;
+if ("default" in pointsDiffer) {
+  pointsDiffer = pointsDiffer.default;
+}
+processColorArray = processColorArray_mod;
+if ("default" in processColorArray) {
+  processColorArray = processColorArray.default;
+}
+pointsDiffer = pointsDiffer_mod;
+if ("default" in pointsDiffer) {
+  pointsDiffer = pointsDiffer.default;
+}
+const obj2 = { uiViewClassName: "RNLinearGradient", validAttributes: obj };
 
-export default _modDef5296;
-export const LinearGradient = _modDef5296;
+export default module_65.get("RNLinearGradient", () => obj2);
+export const __INTERNAL_VIEW_CONFIG = obj2;

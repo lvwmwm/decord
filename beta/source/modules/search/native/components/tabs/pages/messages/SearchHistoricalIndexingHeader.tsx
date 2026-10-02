@@ -1,19 +1,19 @@
-// Module ID: 16529
-// Function ID: 16530
+// Module ID: 16531
+// Function ID: 16532
 // Name: SearchHistoricalIndexingHeader
-// Dependencies: [19, 2112, 7303, 21, 4836, 11841, 5919, 4832, 1115, 2]
-// Exports: default
+// Dependencies: [19, 2115, 7307, 21, 4837, 558, 576, 11734, 1127, 4833, 5918, 2]
 
-// Module 16529 (SearchHistoricalIndexingHeader)
+// Module 16531 (SearchHistoricalIndexingHeader)
 import Fragment from "Fragment" /* 21 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11841 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11734 */;
 import react_mod from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import SearchConstants from "SearchConstants" /* 7303 */;
-import createStyles from "createStyles" /* 4836 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import SearchConstants from "SearchConstants" /* 7307 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let headerMessages;
+let searchContext;
 
 let SEARCH_LIST_HORIZONTAL_PADDING;
 let SEARCH_ROW_TAP_STATE_PADDING;
@@ -23,9 +23,92 @@ let react = react_mod;
 const jsx = Fragment.jsx;
 let obj = { header: { marginBottom: 16 }, headerMessages: { marginHorizontal: SEARCH_LIST_HORIZONTAL_PADDING, marginTop: SEARCH_ROW_TAP_STATE_PADDING } };
 let closure_7 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchHistoricalIndexingHeader.tsx");
-
-export default function HistoricalIndexingHeader(searchContext) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+  let headerMessages;
+  let tmp5;
+  let obj = searchContext(576);
+  const cResult = obj.c(16);
+  searchContext = searchContext.searchContext;
+  const documentsIndexed = searchContext.documentsIndexed;
+  const tab = searchContext.tab;
+  const tmp4 = closure_7();
+  const NumberResult = Number(documentsIndexed);
+  if (cResult[0] !== NumberResult) {
+    const toLocaleStringResult = NumberResult.toLocaleString(LocaleStore.locale);
+    cResult[0] = NumberResult;
+    cResult[1] = toLocaleStringResult;
+    tmp5 = toLocaleStringResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (tab === constants.MESSAGES) {
+    headerMessages = tmp4.headerMessages;
+  }
+  if (cResult[2] === documentsIndexed) {
+    let tmp9;
+    let tmp10;
+    if (cResult[3] === searchContext) {
+      tmp9 = cResult[4];
+      tmp10 = cResult[5];
+    }
+    const effect = react.useEffect(tmp9, tmp10);
+    if (cResult[6] === headerMessages) {
+      let tmp13;
+      let tmp14;
+      let tmp16;
+      if (cResult[7] === tmp4.header) {
+        tmp13 = cResult[8];
+      }
+      if (cResult[9] !== tmp5) {
+        const intl = tmp(1127).intl;
+        let obj2 = { count: tmp5 };
+        const formatResult = intl.format(searchContext(1127).t["4Y3O+O"], obj2);
+        cResult[9] = tmp5;
+        cResult[10] = formatResult;
+        tmp14 = formatResult;
+      } else {
+        tmp14 = cResult[10];
+      }
+      if (cResult[11] !== tmp14) {
+        const tmp18 = jsx(searchContext(4833).Text, { variant: "heading-sm/normal", color: "interactive-text-default", children: tmp14 });
+        cResult[11] = tmp14;
+        cResult[12] = tmp18;
+        tmp16 = tmp18;
+      } else {
+        tmp16 = cResult[12];
+      }
+      if (cResult[13] === tmp13) {
+        let tmp19;
+        if (cResult[14] === tmp16) {
+          tmp19 = cResult[15];
+        }
+        return tmp19;
+      }
+      const tmp21 = jsx(searchContext(5918).Card, { variant: "primary", border: "subtle", style: tmp13, children: tmp16 });
+      cResult[13] = tmp13;
+      cResult[14] = tmp16;
+      cResult[15] = tmp21;
+      tmp19 = tmp21;
+    }
+    const items = [tmp4.header, headerMessages];
+    cResult[6] = headerMessages;
+    cResult[7] = tmp4.header;
+    cResult[8] = items;
+    tmp13 = items;
+  }
+  const fn = function b() {
+    const obj = search_tracking_TrackingDefault;
+    const obj2 = { searchContext, isHistoricalIndexing: true, documentsIndexed };
+    obj.trackSearchIndexing(obj2);
+  };
+  const items1 = [documentsIndexed, searchContext];
+  cResult[2] = documentsIndexed;
+  cResult[3] = searchContext;
+  cResult[4] = fn;
+  cResult[5] = items1;
+  tmp10 = items1;
+  tmp9 = fn;
+}) : ((searchContext) => {
   let intl;
   searchContext = searchContext.searchContext;
   const documentsIndexed = searchContext.documentsIndexed;
@@ -51,9 +134,12 @@ export default function HistoricalIndexingHeader(searchContext) {
     obj.trackSearchIndexing(obj2);
   }, items2);
   const items3 = [tmp.header, memo1];
-  const Card = searchContext(tab[6]).Card;
+  const Card = searchContext(tab[10]).Card;
   let obj2 = { variant: "heading-sm/normal", color: "interactive-text-default", children: intl.format(searchContext(tab[8]).t["4Y3O+O"], { count: memo }) };
-  const Text = searchContext(tab[7]).Text;
+  const Text = searchContext(tab[9]).Text;
   intl = searchContext(tab[8]).intl;
   return <Card variant="primary" border="subtle" style={items3}>{null}</Card>;
-};
+});
+const result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchHistoricalIndexingHeader.tsx");
+
+export default tmp3;

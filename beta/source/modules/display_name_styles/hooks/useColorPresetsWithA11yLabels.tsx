@@ -1,18 +1,55 @@
-// Module ID: 14893
-// Function ID: 14894
+// Module ID: 14881
+// Function ID: 14882
 // Name: useColorPresetsWithA11yLabels
-// Dependencies: [19, 1390, 1115, 2877, 1092, 2]
-// Exports: default
+// Dependencies: [19, 1396, 558, 576, 1127, 2880, 1104, 2]
 
-// Module 14893 (useColorPresetsWithA11yLabels)
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1390 */;
+// Module 14881 (useColorPresetsWithA11yLabels)
+import react2 from "react" /* 576 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
+import intl2 from "intl" /* 1127 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1396 */;
+import _modDef2880 from "module_2880" /* 2880 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const getColorPresetsForEffect = DisplayNameStylesConstants.getColorPresetsForEffect;
-const result = size.fileFinishedImporting("modules/display_name_styles/hooks/useColorPresetsWithA11yLabels.tsx");
-
-export default function useColorPresetsWithA11yLabels(arg0) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedEffectId) => {
+  let tmp2;
+  let obj = react2;
+  const cResult = obj.c(3);
+  if (cResult[0] !== selectedEffectId) {
+    let tmp4;
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn = function s(colors, arg1) {
+        let FHfTsV;
+        let formatToPlainString;
+        let mapped;
+        let obj2;
+        const obj = { colors, a11yLabel: formatToPlainString(FHfTsV, obj2) };
+        const intl = intl2.intl;
+        formatToPlainString = intl.formatToPlainString;
+        obj2 = { number: arg1 + 1, hexList: mapped.join(", ") };
+        FHfTsV = _modDef2880.FHfTsV;
+        mapped = colors.map(utils_ColorUtils.int2hex);
+        return obj;
+      };
+      cResult[2] = fn;
+      tmp4 = fn;
+    } else {
+      tmp4 = cResult[2];
+    }
+    const arr = getColorPresetsForEffect(selectedEffectId);
+    let mapped = arr.map(tmp4);
+    cResult[0] = selectedEffectId;
+    cResult[1] = mapped;
+    tmp2 = mapped;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return tmp2;
+}) : ((arg0) => {
   let closure_0 = arg0;
   const items = [arg0];
   return react.useMemo(() => {
@@ -23,12 +60,15 @@ export default function useColorPresetsWithA11yLabels(arg0) {
       let mapped;
       let obj2;
       const obj = { colors, a11yLabel: formatToPlainString(FHfTsV, obj2) };
-      const intl = closure_1_0(closure_1_2[2]).intl;
+      const intl = closure_1_0(closure_1_2[4]).intl;
       formatToPlainString = intl.formatToPlainString;
       obj2 = { number: index + 1, hexList: mapped.join(", ") };
-      FHfTsV = closure_1_1(closure_1_2[3]).FHfTsV;
-      mapped = colors.map(closure_1_0(closure_1_2[4]).int2hex);
+      FHfTsV = closure_1_1(closure_1_2[5]).FHfTsV;
+      mapped = colors.map(closure_1_0(closure_1_2[6]).int2hex);
       return obj;
     });
   }, items);
-};
+});
+const result = size.fileFinishedImporting("modules/display_name_styles/hooks/useColorPresetsWithA11yLabels.tsx");
+
+export default tmp2;

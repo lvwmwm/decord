@@ -1,11 +1,11 @@
-// Module ID: 9198
-// Function ID: 9199
+// Module ID: 9210
+// Function ID: 9211
 // Name: UserLimitedAccessUtils
-// Dependencies: [1074, 2]
+// Dependencies: [1086, 2]
 // Exports: isLimitedAccessErrorCode
 
-// Module 9198 (UserLimitedAccessUtils)
-import Constants from "Constants" /* 1074 */;
+// Module 9210 (UserLimitedAccessUtils)
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;

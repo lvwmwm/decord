@@ -1,33 +1,33 @@
-// Module ID: 8514
-// Function ID: 8515
+// Module ID: 8511
+// Function ID: 8512
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 4484, 4825, 2003, 5593, 1372, 8515, 1074, 21, 4836, 4474, 504, 5266, 4566, 4837, 6584, 8516, 8517, 1086, 8518, 1271, 1255, 8519, 8521, 8523, 8505, 6591, 1231, 8524, 8525, 5016, 8526, 5276, 8509, 5281, 1115, 5889, 5595, 8527, 8586, 7787, 8522, 8723, 8727, 8726, 8728, 8730, 8731, 8733, 8740, 6551, 2]
+// Dependencies: [5, 32, 19, 17, 4487, 4826, 2009, 5594, 1378, 8512, 1086, 21, 4837, 4477, 504, 5267, 4570, 4838, 6585, 8513, 8514, 1098, 8515, 1283, 1267, 8516, 8518, 8520, 8502, 6592, 1243, 8521, 8522, 5017, 8523, 5277, 8506, 5282, 1127, 5890, 5596, 8524, 8583, 7791, 8519, 8718, 8722, 8721, 8723, 8725, 8726, 8728, 8735, 6552, 2]
 // Exports: default
 
-// Module 8514 (useOAuth2AuthorizeForm)
+// Module 8511 (useOAuth2AuthorizeForm)
 import react_native from "react-native" /* 17 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import timing from "timing" /* 4837 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5889 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6584 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8505 */;
-import Authorize from "Authorize" /* 8516 */;
-import react_nativeDefault from "react-native" /* 8518 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4477 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import timing from "timing" /* 4838 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5890 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6585 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8502 */;
+import Authorize from "Authorize" /* 8513 */;
+import react_nativeDefault from "react-native" /* 8515 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_4484 from "module_4484" /* 4484 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import ApplicationRecord from "ApplicationRecord" /* 2003 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants_mod from "Constants" /* 8515 */;
-import Constants_mod2 from "Constants" /* 1074 */;
+import module_4487 from "module_4487" /* 4487 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import ApplicationRecord from "ApplicationRecord" /* 2009 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants_mod from "Constants" /* 8512 */;
+import Constants_mod2 from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let _require, c5, c6, isAuthorized;
@@ -40,7 +40,7 @@ let closure_18;
 let closure_19;
 let map1;
 let tmp4;
-const scopes2 = tmp4(8517);
+const scopes2 = tmp4(8514);
 let View = react_native.View;
 let Constants = Constants_mod2;
 ({ EMOJI_POINTING_DOWN_CODE_POINT: map1, OAuth2Steps: closure_14 } = Constants);
@@ -459,7 +459,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -533,7 +533,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
               c3 = 0;
               closure_1_49.current = false;
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp42) {
             body = tmp42;
@@ -727,10 +727,10 @@ export default function useOAuth2AuthorizeForm(clientId) {
       codeChallengeMethod = 0;
       closure_1_24(false);
     }
-    yield "HermesInternal";
+    yield "IconComponent";
     responseType = tmp4;
     ({ isAuthorized: c0, overrideSuccessCallback: c1, canceled: c2 } = clientId);
-    return "flex";
+    return "Reflect";
   });
   const items13 = [first7, callbackWithoutPost, clientId, requestedScopes, responseType, redirectUri, codeChallenge, codeChallengeMethod, tmp52, nonce, memo4, first6, first4, first5, first12, dismissOAuthModal, callback, flag5, , , ];
   let application;
@@ -822,7 +822,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -912,7 +912,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
           closure_130_57.current = false;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp57) {
         body = tmp57;
         if (0 === c4) {
@@ -1036,7 +1036,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const error1 = new Error("Invalid scope: " + found[0]);
             closure_23(error1);
           } else {
-            const tmp27Result = tmp27(8526);
+            const tmp27Result = tmp27(8523);
             if (tmp27Result.containsDisallowedPermission(memo4)) {
               const _Error = Error;
               const self = this;

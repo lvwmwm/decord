@@ -1,21 +1,21 @@
-// Module ID: 13291
-// Function ID: 13292
+// Module ID: 13293
+// Function ID: 13294
 // Name: NowPlayingStore
-// Dependencies: [7072, 4876, 1372, 1074, 13292, 504, 573, 2]
+// Dependencies: [7076, 4877, 1378, 1086, 13294, 504, 585, 2]
 
-// Module 13291 (NowPlayingStore)
+// Module 13293 (NowPlayingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import getApplicationIdForActivityDefault from "getApplicationIdForActivity" /* 13292 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7072 */;
-import PresenceStore from "PresenceStore" /* 4876 */;
-import UserStore from "UserStore" /* 1372 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import getApplicationIdForActivityDefault from "getApplicationIdForActivity" /* 13294 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7076 */;
+import PresenceStore from "PresenceStore" /* 4877 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, timestamps;
 
-const f97792 = (item) => {
+const f113814 = (item) => {
   const tmp = false !== closure_2_9(item) || closure_0;
   closure_0 = tmp;
 };
@@ -203,14 +203,14 @@ let obj = {
     let item = guilds.forEach((presences) => {
       presences = presences.presences;
       let closure_0 = false;
-      const item = presences.forEach(f97792);
+      const item = presences.forEach(f113814);
       const tmp2 = closure_0;
       if (tmp2) {
         c0 = true;
       }
     });
     let c0 = false;
-    const item1 = presences.forEach(f97792);
+    const item1 = presences.forEach(f113814);
     const tmp3 = c0;
     if (tmp3) {
       c0 = true;
@@ -228,7 +228,7 @@ let obj = {
   PRESENCES_REPLACE: function handlePresencesReplace(presences) {
     presences = presences.presences;
     let c0 = false;
-    const item = presences.forEach(f97792);
+    const item = presences.forEach(f113814);
     return c0;
   }
 };

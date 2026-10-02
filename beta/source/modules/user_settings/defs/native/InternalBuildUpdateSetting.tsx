@@ -1,69 +1,180 @@
-// Module ID: 15344
-// Function ID: 15345
+// Module ID: 15332
+// Function ID: 15333
 // Name: InternalBuildUpdateSetting
-// Dependencies: [13885, 21, 13451, 504, 4421, 14378, 4781, 14506, 11006, 2]
+// Dependencies: [13887, 21, 13453, 558, 576, 504, 4424, 14366, 4782, 14494, 10874, 2]
 
-// Module 15344 (InternalBuildUpdateSetting)
+// Module 15332 (InternalBuildUpdateSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import _modDef4421 from "module_4421" /* 4421 */;
-import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 13451 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14378 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 13885 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import react from "react" /* 576 */;
+import _modDef4424 from "module_4424" /* 4424 */;
+import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 13453 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14366 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 13887 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-let obj = {
-  useTitle() {
-    return "Internal Build Update";
-  },
-  parent: null,
-  IconComponent: function InstallNativeUpdateIcon() {
-    let RefreshIcon;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let str;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  const obj = react;
+  const cResult = obj.c(6);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MobileNativeUpdateStore];
-    const obj = get_initialized;
-    const tmp3 = jsx;
-    if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
-      RefreshIcon = tmp(4781).DownloadIcon;
-    } else {
-      RefreshIcon = tmp(14506).RefreshIcon;
-    }
-    return tmp3(RefreshIcon, {});
-  },
-  useDescription: function useInternalBuildUpdateDescription() {
-    let str;
-    const items = [MobileNativeUpdateStore];
-    const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, () => {
+    const fn = function l() {
       const newBuild = MobileNativeUpdateStore.latestFetchedBuild().newBuild;
       let build;
       if (newBuild != null) {
         build = newBuild.build;
       }
       return build;
-    });
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [MobileNativeUpdateStore];
-    const obj2 = get_initialized;
-    const stateFromStores1 = obj2.useStateFromStores(items1, () => MobileNativeUpdateStore.latestFetchedBuild().lastCheck);
-    if (null != stateFromStores) {
-      const _HermesInternal2 = HermesInternal;
-      str = "Open build " + stateFromStores + " installer in a browser";
-    } else {
-      str = "Never refreshed";
-      if (null != stateFromStores1) {
-        const _HermesInternal = HermesInternal;
-        const obj3 = _modDef4421(stateFromStores1);
-        str = "Last refreshed " + obj3.fromNow();
+    const fn2 = function o() {
+      return MobileNativeUpdateStore.latestFetchedBuild().lastCheck;
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    tmp9 = fn2;
+    tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult2 = get_initialized;
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
+  if (null != stateFromStores) {
+    const _HermesInternal2 = HermesInternal;
+    str = "Open build " + stateFromStores + " installer in a browser";
+  } else {
+    str = "Never refreshed";
+    if (null != stateFromStores1) {
+      let tmp12;
+      if (cResult[4] !== stateFromStores1) {
+        const obj4 = _modDef4424(stateFromStores1);
+        const fromNowResult = obj4.fromNow();
+        cResult[4] = stateFromStores1;
+        cResult[5] = fromNowResult;
+        tmp12 = fromNowResult;
+      } else {
+        tmp12 = cResult[5];
       }
+      const _HermesInternal = HermesInternal;
+      str = "Last refreshed " + tmp12;
     }
-    return str;
+  }
+  return str;
+}) : (() => {
+  let str;
+  const items = [MobileNativeUpdateStore];
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const newBuild = MobileNativeUpdateStore.latestFetchedBuild().newBuild;
+    let build;
+    if (newBuild != null) {
+      build = newBuild.build;
+    }
+    return build;
+  });
+  const items1 = [MobileNativeUpdateStore];
+  const obj2 = get_initialized;
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => MobileNativeUpdateStore.latestFetchedBuild().lastCheck);
+  if (null != stateFromStores) {
+    const _HermesInternal2 = HermesInternal;
+    str = "Open build " + stateFromStores + " installer in a browser";
+  } else {
+    str = "Never refreshed";
+    if (null != stateFromStores1) {
+      const _HermesInternal = HermesInternal;
+      const obj3 = _modDef4424(stateFromStores1);
+      str = "Last refreshed " + obj3.fromNow();
+    }
+  }
+  return str;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = useIsStaffOrDeveloperSettingPredicate;
+  const tmp = MobileNativeUpdateStore.hasUpdatesConfigured && obj.useStaffOrDeveloperSettingPredicate();
+  return tmp;
+}) : (() => {
+  const obj = useIsStaffOrDeveloperSettingPredicate;
+  const tmp = MobileNativeUpdateStore.hasUpdatesConfigured && obj.useStaffOrDeveloperSettingPredicate();
+  return tmp;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  const obj = react;
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MobileNativeUpdateStore];
+    const fn = function s() {
+      return null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] !== stateFromStores) {
+    let RefreshIcon;
+    const tmp9 = jsx;
+    if (stateFromStores) {
+      RefreshIcon = tmp(4782).DownloadIcon;
+    } else {
+      RefreshIcon = tmp(14494).RefreshIcon;
+    }
+    const tmp9Result = tmp9(RefreshIcon, {});
+    cResult[2] = stateFromStores;
+    cResult[3] = tmp9Result;
+    tmp8 = tmp9Result;
+  } else {
+    tmp8 = cResult[3];
+  }
+  return tmp8;
+}) : (() => {
+  let RefreshIcon;
+  const items = [MobileNativeUpdateStore];
+  const obj = get_initialized;
+  const tmp3 = jsx;
+  if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
+    RefreshIcon = tmp(4782).DownloadIcon;
+  } else {
+    RefreshIcon = tmp(14494).RefreshIcon;
+  }
+  return tmp3(RefreshIcon, {});
+});
+let obj = {
+  useTitle() {
+    return "Internal Build Update";
   },
-  usePredicate: function useHasInternalBuildUpdateSetting() {
-    const obj = useIsStaffOrDeveloperSettingPredicate;
-    const tmp = MobileNativeUpdateStore.hasUpdatesConfigured && obj.useStaffOrDeveloperSettingPredicate();
-    return tmp;
-  },
+  parent: null,
+  IconComponent: tmp4,
+  useDescription: tmp2,
+  usePredicate: tmp3,
   onPress: function handleInstallNativeUpdateSettingPress() {
     const newBuild = MobileNativeUpdateStore.latestFetchedBuild().newBuild;
     const obj = MobileNativeUpdateStore;

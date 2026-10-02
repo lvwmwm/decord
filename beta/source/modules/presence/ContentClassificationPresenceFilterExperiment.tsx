@@ -1,10 +1,10 @@
-// Module ID: 13305
-// Function ID: 13306
+// Module ID: 13307
+// Function ID: 13308
 // Name: ContentClassificationPresenceFilterExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1441, 2]
 
-// Module 13305 (ContentClassificationPresenceFilterExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 13307 (ContentClassificationPresenceFilterExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-02-content-classification-presence-filter", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

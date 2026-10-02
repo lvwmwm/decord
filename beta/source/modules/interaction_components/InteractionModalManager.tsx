@@ -1,17 +1,17 @@
-// Module ID: 17156
-// Function ID: 17157
+// Module ID: 17158
+// Function ID: 17159
 // Name: InteractionModalManager
-// Dependencies: [5, 5063, 7383, 1074, 1979, 17157, 1981, 1241, 2071, 1231, 17168, 17171, 6539, 2]
+// Dependencies: [5, 5064, 7387, 1086, 1985, 17159, 1987, 1253, 559, 1243, 17170, 17173, 6540, 2]
 
-// Module 17156 (InteractionModalManager)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 17168 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 17171 */;
+// Module 17158 (InteractionModalManager)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 17170 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 17173 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5063 */;
-import InteractionStore from "InteractionStore" /* 7383 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import ApplicationStore from "ApplicationStore" /* 5064 */;
+import InteractionStore from "InteractionStore" /* 7387 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, data, interactionDebugContext;
@@ -78,7 +78,7 @@ let obj = function _handleInteractionModalCreate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ let obj = function _handleInteractionModalCreate() {
               obj.addBreadcrumb(obj8);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp18) {
           c4 = 3;

@@ -1,37 +1,37 @@
-// Module ID: 15286
-// Function ID: 15287
+// Module ID: 15274
+// Function ID: 15275
 // Name: DevToolsRevenuePlaygroundScreen
-// Dependencies: [5, 32, 19, 17, 7521, 7072, 1220, 2045, 2099, 1372, 4835, 1374, 21, 573, 563, 1271, 4528, 5917, 5924, 5999, 6616, 6876, 1177, 576, 10205, 4836, 6867, 4800, 15287, 1981, 6621, 15292, 10513, 11269, 5039, 15293, 15296, 15300, 15302, 15305, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17, 7525, 7076, 1232, 2051, 2102, 1378, 4836, 1380, 21, 585, 573, 1283, 4531, 5916, 5923, 5997, 6617, 6880, 1189, 588, 10243, 4837, 6871, 4801, 15275, 1987, 558, 576, 6621, 15280, 10545, 11143, 5040, 15281, 15284, 15288, 15290, 15293, 2]
 
-// Module 15286 (DevToolsRevenuePlaygroundScreen)
+// Module 15274 (DevToolsRevenuePlaygroundScreen)
 import react_native from "react-native" /* 17 */;
-import useStateFromStores from "useStateFromStores" /* 563 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import DevSettingsStore2 from "DevSettingsStore" /* 4835 */;
-import TableRow6 from "TableRow" /* 5917 */;
-import TableRowArrow from "TableRowArrow" /* 5924 */;
-import TableRowGroup4 from "TableRowGroup" /* 5999 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6616 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import DevSettingsStore2 from "DevSettingsStore" /* 4836 */;
+import TableRow6 from "TableRow" /* 5916 */;
+import TableRowArrow from "TableRowArrow" /* 5923 */;
+import TableRowGroup4 from "TableRowGroup" /* 5997 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6617 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 6621 */;
-import IAPUtils from "IAPUtils" /* 10513 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 11269 */;
-import DevSettingsActions from "DevSettingsActions" /* 15292 */;
+import IAPUtils from "IAPUtils" /* 10545 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 11143 */;
+import DevSettingsActions from "DevSettingsActions" /* 15280 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 7521 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7072 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import UserStore from "UserStore" /* 1372 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 7525 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7076 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import UserStore from "UserStore" /* 1378 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const DevSettingsStore = DevSettingsStore2;
@@ -44,6 +44,8 @@ let closure_18;
 let closure_19;
 let obj2;
 let obj3;
+let tmp;
+const useStateFromStores = tmp(573);
 function describeServerError(status) {
   status = undefined;
   if (status != null) {
@@ -244,7 +246,7 @@ function FriendAnniversary() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -315,7 +317,7 @@ function FriendAnniversary() {
           c4 = 0;
           closure_130_7(false);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp49) {
         closure_3 = tmp49;
@@ -351,7 +353,7 @@ function FriendAnniversary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -418,7 +420,7 @@ function FriendAnniversary() {
             c5 = 0;
             closure_1_8(false);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp40) {
           closure_4 = tmp40;
@@ -687,10 +689,10 @@ function TrialOfferSheetExample() {
   }
   const tmp = premiumTrialOffer;
   const tmp2 = dependencyMap;
-  let obj = premiumTrialOffer(6867);
+  let obj = premiumTrialOffer(6871);
   premiumTrialOffer = obj.usePremiumTrialOffer();
-  const TableRowGroup = premiumTrialOffer(5999).TableRowGroup;
-  const TableRow = premiumTrialOffer(5917).TableRow;
+  const TableRowGroup = premiumTrialOffer(5997).TableRowGroup;
+  const TableRow = premiumTrialOffer(5916).TableRow;
   let obj2 = {
     label: "Trial Offer Nitro Basic",
     subLabel: str2,
@@ -699,12 +701,12 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(15287, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(15275, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
   items = [closure_17(TableRow, obj2), ];
-  const TableRow2 = tmp(5917).TableRow;
+  const TableRow2 = tmp(5916).TableRow;
   const obj3 = { title: "Trial Offers", hasIcons: false, children: items };
   const obj4 = {
     label: "Trial Offer Nitro",
@@ -714,14 +716,181 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(15287, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(15275, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
   items[1] = closure_17(TableRow2, obj4);
   return closure_18(TableRowGroup, obj3);
 }
-function PremiumToggles() {
+function PaymentFlowTest() {
+  let TableRow;
+  let obj2;
+  let paths;
+  let obj = { title: "Payment Flow Test", hasIcons: false, children: closure_17(TableRow, obj2) };
+  const TableRowGroup = TableRowGroup4.TableRowGroup;
+  obj2 = {
+    label: "Test Payment Flow",
+    onPress() {
+      const obj = require("ModalActionCreators");
+      obj.pushLazy(require("asyncRequire")(paths[37], paths.paths));
+    },
+    trailing: closure_17(TableRowArrow.TableRowArrow, {})
+  };
+  TableRow = TableRow6.TableRow;
+  return closure_17(TableRowGroup, obj);
+}
+function Orbs() {
+  let TableRow;
+  let obj2;
+  let paths;
+  let obj = { title: "Orbs", hasIcons: false, children: closure_17(TableRow, obj2) };
+  const TableRowGroup = TableRowGroup4.TableRowGroup;
+  obj2 = {
+    label: "Test Orbs Flow",
+    onPress() {
+      const obj = require("ModalActionCreators");
+      obj.pushLazy(require("asyncRequire")(paths[38], paths.paths));
+    },
+    trailing: closure_17(TableRowArrow.TableRowArrow, {})
+  };
+  TableRow = TableRow6.TableRow;
+  return closure_17(TableRowGroup, obj);
+}
+function RevenueSmokeTests() {
+  let TableRow;
+  let obj2;
+  let paths;
+  let obj = { title: "Revenue Smoke Tests", hasIcons: false, children: closure_17(TableRow, obj2) };
+  const TableRowGroup = TableRowGroup4.TableRowGroup;
+  obj2 = {
+    label: "Test all purchasing flows",
+    onPress() {
+      const obj = require("ModalActionCreators");
+      obj.pushLazy(require("asyncRequire")(paths[39], paths.paths));
+    },
+    trailing: closure_17(TableRowArrow.TableRowArrow, {})
+  };
+  TableRow = TableRow6.TableRow;
+  return closure_17(TableRowGroup, obj);
+}
+function GuildPowerups() {
+  let TableRow;
+  let obj2;
+  let paths;
+  let obj = { title: "Guild Powerups", hasIcons: false, children: closure_17(TableRow, obj2) };
+  const TableRowGroup = TableRowGroup4.TableRowGroup;
+  obj2 = {
+    label: "Guild Powerups",
+    onPress() {
+      const obj = require("ModalActionCreators");
+      obj.pushLazy(require("asyncRequire")(paths[40], paths.paths));
+    },
+    trailing: closure_17(TableRowArrow.TableRowArrow, {})
+  };
+  TableRow = TableRow6.TableRow;
+  return closure_17(TableRowGroup, obj);
+}
+function GuildTagBadges() {
+  let TableRow;
+  let obj2;
+  let paths;
+  let obj = { title: "Guild Tag Badges", hasIcons: false, children: closure_17(TableRow, obj2) };
+  const TableRowGroup = TableRowGroup4.TableRowGroup;
+  obj2 = {
+    label: "Badge gallery",
+    subLabel: "Preview all native badge kinds across sizes and tints",
+    onPress() {
+      const obj = require("ModalActionCreators");
+      obj.pushLazy(require("asyncRequire")(paths[41], paths.paths));
+    },
+    trailing: closure_17(TableRowArrow.TableRowArrow, {})
+  };
+  TableRow = TableRow6.TableRow;
+  return closure_17(TableRowGroup, obj);
+}
+const ScrollView = react_native.ScrollView;
+let DevSettingsCategory = DevSettingsStore2.DevSettingsCategory;
+({ GiftIntentType: closure_15, PremiumTypes: closure_16 } = PremiumConstants);
+({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = Fragment);
+let items = [{ label: "None", value: null }, { label: "1", value: 1 }, { label: "2", value: 2 }, { label: "3", value: 3 }, { label: "4", value: 4 }, { label: "5", value: 5 }, { label: "10", value: 10 }, { label: "25", value: 25 }];
+let c21 = "/users/@me/gift-intents/dismissals";
+const FRIEND_ANNIVERSARY = "FRIEND_ANNIVERSARY";
+let createStyles = createStyles_mod;
+let obj = { container: obj2, scrollContainer: obj3 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_16 };
+let closure_25 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp11;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp8;
+  let tmp = require;
+  let obj = react2;
+  const cResult = obj.c(8);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    items = [DevSettingsStore];
+    const fn = function n() {
+      const allByCategoryResult = DevSettingsStore.allByCategory(constants.PREMIUM);
+      return allByCategoryResult.filter((item) => "force_mock_iap" !== closure_1_4(item, 1)[0]);
+    };
+    const items1 = [];
+    cResult[0] = items;
+    cResult[1] = fn;
+    cResult[2] = items1;
+    tmp4 = items;
+    tmp5 = fn;
+    tmp6 = items1;
+  } else {
+    [tmp4, tmp5, tmp6] = cResult;
+  }
+  const tmpResult = useStateFromStores;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5, tmp6, useStateFromStores.statesWillNeverBeEqual);
+  if (cResult[3] !== stateFromStores) {
+    let tmp9;
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn2 = function u(arg0) {
+        const tmp = closure_4(arg0, 3);
+        const subLabel = tmp[0];
+        let obj = {
+          label: tmp[2].label,
+          subLabel,
+          value: tmp[1],
+          onValueChange(arg0) {
+            const obj = DevSettingsActions;
+            return obj.toggle(first, arg0);
+          }
+        };
+        return closure_17(subLabel(closure_2[32]).TableSwitchRow, obj, subLabel);
+      };
+      cResult[5] = fn2;
+      tmp9 = fn2;
+    } else {
+      tmp9 = cResult[5];
+    }
+    const mapped = stateFromStores.map(tmp9);
+    cResult[3] = stateFromStores;
+    cResult[4] = mapped;
+    tmp8 = mapped;
+  } else {
+    tmp8 = cResult[4];
+  }
+  if (cResult[6] !== tmp8) {
+    const obj2 = { title: "Premium Toggles", hasIcons: false, children: tmp8 };
+    const tmp13 = closure_17(TableRowGroup4.TableRowGroup, obj2);
+    cResult[6] = tmp8;
+    cResult[7] = tmp13;
+    tmp11 = tmp13;
+  } else {
+    tmp11 = cResult[7];
+  }
+  return tmp11;
+}) : (() => {
   let obj = useStateFromStores;
   items = [DevSettingsStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -748,13 +917,75 @@ function PremiumToggles() {
           return obj.toggle(closure_1_0, arg0);
         }
       };
-      return closure_17(closure_0(closure_2[30]).TableSwitchRow, obj, tmp);
+      return closure_17(closure_0(closure_2[32]).TableSwitchRow, obj, tmp);
     })
   };
   const TableRowGroup = TableRowGroup4.TableRowGroup;
   return closure_17(TableRowGroup, obj2);
-}
-function ForceMockIAP() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let obj3;
+  let tmp11;
+  let tmp12;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let obj = react2;
+  const cResult = obj.c(6);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    items = [DevSettingsStore];
+    const fn = function s() {
+      return DevSettingsStore.get("force_mock_iap");
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = useStateFromStores;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult2 = IAPUtils;
+    let result = tmpResult2.shouldMockIAPForceEnable();
+    cResult[2] = result;
+    tmp8 = result;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function c(arg0) {
+      const obj = DevSettingsActions;
+      obj.toggle("force_mock_iap", arg0);
+      DevSettingsStore.persist();
+      const obj2 = BundleUpdaterDefault;
+      const result = obj2.checkForUpdateAndReload();
+    };
+    cResult[3] = fn2;
+    tmp11 = fn2;
+  } else {
+    tmp11 = cResult[3];
+  }
+  if (cResult[4] !== (tmp8 || stateFromStores)) {
+    const TableRowGroup = tmp(5997).TableRowGroup;
+    let str = "Replaces StoreKit with hardcoded fixture data. App will restart when toggled.";
+    const TableSwitchRow = tmp(6621).TableSwitchRow;
+    if (tmp8) {
+      str = "Forced on - the current device can't fetch real StoreKit products.";
+    }
+    let obj2 = { title: "iOS IAP Mock", hasIcons: false, children: closure_17(TableSwitchRow, obj3) };
+    obj3 = { label: "Force mock IAP products", subLabel: str, value: tmp8 || stateFromStores, disabled: tmp8, onValueChange: tmp11 };
+    const tmp13Result = closure_17(TableRowGroup, obj2);
+    cResult[4] = tmp8 || stateFromStores;
+    cResult[5] = tmp13Result;
+    tmp12 = tmp13Result;
+  } else {
+    tmp12 = cResult[5];
+  }
+  return tmp12;
+}) : (() => {
   let tmp4;
   let obj = useStateFromStores;
   items = [DevSettingsStore];
@@ -783,120 +1014,126 @@ function ForceMockIAP() {
   tmp4 = result || stateFromStores;
   const obj4 = { title: "iOS IAP Mock", hasIcons: false, children: closure_17(TableSwitchRow, obj3) };
   return closure_17(TableRowGroup, obj4);
-}
-function PaymentFlowTest() {
-  let TableRow;
-  let obj2;
-  let paths;
-  let obj = { title: "Payment Flow Test", hasIcons: false, children: closure_17(TableRow, obj2) };
-  const TableRowGroup = TableRowGroup4.TableRowGroup;
-  obj2 = {
-    label: "Test Payment Flow",
-    onPress() {
-      const obj = require("ModalActionCreators");
-      obj.pushLazy(require("asyncRequire")(paths[35], paths.paths));
-    },
-    trailing: closure_17(TableRowArrow.TableRowArrow, {})
-  };
-  TableRow = TableRow6.TableRow;
-  return closure_17(TableRowGroup, obj);
-}
-function Orbs() {
-  let TableRow;
-  let obj2;
-  let paths;
-  let obj = { title: "Orbs", hasIcons: false, children: closure_17(TableRow, obj2) };
-  const TableRowGroup = TableRowGroup4.TableRowGroup;
-  obj2 = {
-    label: "Test Orbs Flow",
-    onPress() {
-      const obj = require("ModalActionCreators");
-      obj.pushLazy(require("asyncRequire")(paths[36], paths.paths));
-    },
-    trailing: closure_17(TableRowArrow.TableRowArrow, {})
-  };
-  TableRow = TableRow6.TableRow;
-  return closure_17(TableRowGroup, obj);
-}
-function RevenueSmokeTests() {
-  let TableRow;
-  let obj2;
-  let paths;
-  let obj = { title: "Revenue Smoke Tests", hasIcons: false, children: closure_17(TableRow, obj2) };
-  const TableRowGroup = TableRowGroup4.TableRowGroup;
-  obj2 = {
-    label: "Test all purchasing flows",
-    onPress() {
-      const obj = require("ModalActionCreators");
-      obj.pushLazy(require("asyncRequire")(paths[37], paths.paths));
-    },
-    trailing: closure_17(TableRowArrow.TableRowArrow, {})
-  };
-  TableRow = TableRow6.TableRow;
-  return closure_17(TableRowGroup, obj);
-}
-function GuildPowerups() {
-  let TableRow;
-  let obj2;
-  let paths;
-  let obj = { title: "Guild Powerups", hasIcons: false, children: closure_17(TableRow, obj2) };
-  const TableRowGroup = TableRowGroup4.TableRowGroup;
-  obj2 = {
-    label: "Guild Powerups",
-    onPress() {
-      const obj = require("ModalActionCreators");
-      obj.pushLazy(require("asyncRequire")(paths[38], paths.paths));
-    },
-    trailing: closure_17(TableRowArrow.TableRowArrow, {})
-  };
-  TableRow = TableRow6.TableRow;
-  return closure_17(TableRowGroup, obj);
-}
-function GuildTagBadges() {
-  let TableRow;
-  let obj2;
-  let paths;
-  let obj = { title: "Guild Tag Badges", hasIcons: false, children: closure_17(TableRow, obj2) };
-  const TableRowGroup = TableRowGroup4.TableRowGroup;
-  obj2 = {
-    label: "Badge gallery",
-    subLabel: "Preview all native badge kinds across sizes and tints",
-    onPress() {
-      const obj = require("ModalActionCreators");
-      obj.pushLazy(require("asyncRequire")(paths[39], paths.paths));
-    },
-    trailing: closure_17(TableRowArrow.TableRowArrow, {})
-  };
-  TableRow = TableRow6.TableRow;
-  return closure_17(TableRowGroup, obj);
-}
-const ScrollView = react_native.ScrollView;
-let DevSettingsCategory = DevSettingsStore2.DevSettingsCategory;
-({ GiftIntentType: closure_15, PremiumTypes: closure_16 } = PremiumConstants);
-({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = Fragment);
-let items = [{ label: "None", value: null }, { label: "1", value: 1 }, { label: "2", value: 2 }, { label: "3", value: 3 }, { label: "4", value: 4 }, { label: "5", value: 5 }, { label: "10", value: 10 }, { label: "25", value: 25 }];
-let c21 = "/users/@me/gift-intents/dismissals";
-const FRIEND_ANNIVERSARY = "FRIEND_ANNIVERSARY";
-let createStyles = createStyles_mod;
-let obj = { container: obj2, scrollContainer: obj3 };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
-createStyles = createStyles.createStyles;
-obj3 = { padding: nativeDefault.space.PX_16 };
-let closure_25 = createStyles(obj);
-let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsRevenuePlaygroundScreen.tsx");
-
-export default function DevToolsRevenuePlaygroundScreen() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp19;
+  let tmp20;
+  let tmp21;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(20);
+  const tmp4 = closure_25();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp24 = closure_17(TrialOfferSheetExample, {});
+    const obj2 = { size: nativeDefault.space.PX_16 };
+    const Spacer = tmp(1189).Spacer;
+    const tmp26 = closure_17(Spacer, obj2);
+    const tmp28 = closure_17(closure_27, {});
+    const obj3 = { size: nativeDefault.space.PX_16 };
+    const Spacer2 = tmp(1189).Spacer;
+    const tmp29 = closure_17(Spacer2, obj3);
+    const tmp31 = closure_17(closure_28, {});
+    const obj4 = { size: nativeDefault.space.PX_16 };
+    const Spacer3 = tmp(1189).Spacer;
+    const tmp32 = closure_17(Spacer3, obj4);
+    const tmp34 = closure_17(PaymentFlowTest, {});
+    const obj5 = { size: nativeDefault.space.PX_16 };
+    const Spacer4 = tmp(1189).Spacer;
+    const tmp35 = closure_17(Spacer4, obj5);
+    const tmp37 = closure_17(Orbs, {});
+    const obj6 = { size: nativeDefault.space.PX_16 };
+    const Spacer5 = tmp(1189).Spacer;
+    const tmp38 = closure_17(Spacer5, obj6);
+    const tmp40 = closure_17(RevenueSmokeTests, {});
+    const obj7 = { size: nativeDefault.space.PX_16 };
+    const Spacer6 = tmp(1189).Spacer;
+    const tmp41 = closure_17(Spacer6, obj7);
+    const tmp43 = closure_17(GuildPowerups, {});
+    const obj8 = { size: nativeDefault.space.PX_16 };
+    const Spacer7 = tmp(1189).Spacer;
+    const tmp44 = closure_17(Spacer7, obj8);
+    const tmp46 = closure_17(GuildTagBadges, {});
+    const obj9 = { size: nativeDefault.space.PX_16 };
+    const Spacer8 = tmp(1189).Spacer;
+    const tmp47 = closure_17(Spacer8, obj9);
+    const tmp49 = closure_17(FriendAnniversary, {});
+    cResult[0] = tmp24;
+    cResult[1] = tmp26;
+    cResult[2] = tmp40;
+    cResult[3] = tmp41;
+    cResult[4] = tmp43;
+    cResult[5] = tmp44;
+    cResult[6] = tmp46;
+    cResult[7] = tmp47;
+    cResult[8] = tmp49;
+    cResult[9] = tmp28;
+    cResult[10] = tmp29;
+    cResult[11] = tmp31;
+    cResult[12] = tmp32;
+    cResult[13] = tmp34;
+    cResult[14] = tmp35;
+    cResult[15] = tmp37;
+    cResult[16] = tmp38;
+    tmp10 = tmp44;
+    tmp11 = tmp46;
+    tmp12 = tmp47;
+    tmp13 = tmp49;
+    tmp14 = tmp28;
+    tmp15 = tmp29;
+    tmp16 = tmp31;
+    tmp17 = tmp32;
+    tmp18 = tmp34;
+    tmp19 = tmp35;
+    tmp20 = tmp37;
+    tmp21 = tmp38;
+    tmp5 = tmp24;
+    tmp6 = tmp26;
+    tmp7 = tmp40;
+    tmp8 = tmp41;
+    tmp9 = tmp43;
+  } else {
+    [tmp5, tmp6, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21] = cResult;
+  }
+  if (cResult[17] === tmp4.container) {
+    let tmp50;
+    if (cResult[18] === tmp4.scrollContainer) {
+      tmp50 = cResult[19];
+    }
+    return tmp50;
+  }
+  const obj10 = { style: tmp4.container, contentContainerStyle: tmp4.scrollContainer, children: items };
+  items = [tmp5, tmp6, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13];
+  const tmp51 = authStore4(ScrollView, obj10);
+  cResult[17] = tmp4.container;
+  cResult[18] = tmp4.scrollContainer;
+  cResult[19] = tmp51;
+  tmp50 = tmp51;
+}) : (() => {
   const tmp = closure_25();
   const obj = { style: tmp.container, contentContainerStyle: tmp.scrollContainer, children: items };
   items = [closure_17(TrialOfferSheetExample, {}), , , , , , , , , , , , , , , , ];
   const obj2 = { size: nativeDefault.space.PX_16 };
   const Spacer = native.Spacer;
   items[1] = closure_17(Spacer, obj2);
-  items[2] = closure_17(PremiumToggles, {});
+  items[2] = closure_17(closure_27, {});
   const obj3 = { size: nativeDefault.space.PX_16 };
   const Spacer2 = native.Spacer;
   items[3] = closure_17(Spacer2, obj3);
-  items[4] = closure_17(ForceMockIAP, {});
+  items[4] = closure_17(closure_28, {});
   const obj4 = { size: nativeDefault.space.PX_16 };
   const Spacer3 = native.Spacer;
   items[5] = closure_17(Spacer3, obj4);
@@ -922,4 +1159,7 @@ export default function DevToolsRevenuePlaygroundScreen() {
   items[15] = closure_17(Spacer8, obj9);
   items[16] = closure_17(FriendAnniversary, {});
   return authStore4(ScrollView, obj);
-};
+});
+let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsRevenuePlaygroundScreen.tsx");
+
+export default tmp5;

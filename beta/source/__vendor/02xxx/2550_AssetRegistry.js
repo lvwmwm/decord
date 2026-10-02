@@ -1,10 +1,10 @@
 // Module ID: 2550
 // Function ID: 2551
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 2550 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/powerups", scales: [1], hash: "b24e9223725c6bf5ddf729ce5a676b3b", name: "GuildPowerups.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Bvd2VydXBz", scales: [1], hash: "8bf81a27cd935350d8fa9a8f3cf83def", name: "vi.messages.8bf81a27cd935350d8fa9a8f3cf83def.compiled.messages", type: "jsona" });

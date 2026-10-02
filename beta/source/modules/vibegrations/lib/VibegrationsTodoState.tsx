@@ -1,12 +1,12 @@
-// Module ID: 16380
-// Function ID: 16381
+// Module ID: 16382
+// Function ID: 16383
 // Name: VibegrationsTodoState
-// Dependencies: [12643, 16349, 2]
+// Dependencies: [12645, 16351, 2]
 // Exports: checklistExpanded, checklistLive, messageChecklist, supersededChecklists, todoLabel, todoMark, toggleChecklist, unfinishedTodoCount
 
-// Module 16380 (VibegrationsTodoState)
-import VibegrationsChatStore from "VibegrationsChatStore" /* 12643 */;
-import VibegrationsTimelineTree from "VibegrationsTimelineTree" /* 16349 */;
+// Module 16382 (VibegrationsTodoState)
+import VibegrationsChatStore from "VibegrationsChatStore" /* 12645 */;
+import VibegrationsTimelineTree from "VibegrationsTimelineTree" /* 16351 */;
 import size from "module_2" /* 2 */;
 
 let map, set;

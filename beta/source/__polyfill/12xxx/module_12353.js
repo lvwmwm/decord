@@ -1,41 +1,56 @@
 // Module ID: 12353
 // Function ID: 12354
-// Dependencies: [12341, 12313]
-// Exports: parseSampleRate
+// Dependencies: [12316, 12339, 12311, 12326]
+// Exports: setMeasurement, timedEventsToMeasurements
 
 // Module 12353
-import _mod12341 from "module_12341" /* 12341 */;
+import _mod12316 from "module_12316" /* 12316 */;
+import _mod12326 from "module_12326" /* 12326 */;
+import _mod12339 from "module_12339" /* 12339 */;
 
 
-export const parseSampleRate = function parseSampleRate(flag) {
-  if (typeof flag === "boolean") {
-    const _Number = Number;
-    return Number(flag);
-  } else {
-    let parsed = flag;
-    if (typeof flag === "string") {
-      const _parseFloat = parseFloat;
-      parsed = parseFloat(flag);
-    }
-    if (typeof parsed === "number") {
-      const _isNaN = isNaN;
-      if (!isNaN(parsed)) {
-        if (parsed >= 0) {
-          if (parsed <= 1) {
-            return parsed;
-          }
-        }
-      }
-    }
-    const tmp = require;
-    if (_mod12341.DEBUG_BUILD) {
-      const logger = tmp(12313).logger;
-      const _JSON = JSON;
-      const warn = logger.warn;
-      const json = JSON.stringify(flag);
-      const _JSON2 = JSON;
+export const setMeasurement = function setMeasurement(arg0, arg1, arg2) {
+  let activeSpan = arg3;
+  if (arg3 === undefined) {
+    const obj = _mod12316;
+    activeSpan = obj.getActiveSpan();
+  }
+  let rootSpan = activeSpan;
+  if (rootSpan) {
+    const obj3 = _mod12316;
+    rootSpan = obj3.getRootSpan(activeSpan);
+  }
+  if (rootSpan) {
+    if (_mod12339.DEBUG_BUILD) {
+      const logger = tmp9(12311).logger;
       const _HermesInternal = HermesInternal;
-      warn("[Tracing] Given sample rate is invalid. Sample rate must be a boolean or a number between 0 and 1. Got " + json + " of type " + JSON.stringify(typeof flag) + ".");
+      logger.log("[Measurement] Setting measurement on root span: " + arg0 + " = " + arg1 + " " + arg2);
+    }
+    const obj2 = {};
+    obj2[_mod12326.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE] = arg1;
+    obj2[_mod12326.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = arg2;
+    rootSpan.addEvent(arg0, obj2);
+  }
+};
+export const timedEventsToMeasurements = function timedEventsToMeasurements(arr) {
+  let tmp = arr;
+  if (tmp) {
+    if (0 !== arr.length) {
+      let obj = {};
+      const item = arr.forEach((attributes) => {
+        const tmp = attributes.attributes || {};
+        const tmp2 = tmp[_mod12326.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT];
+        const tmp3 = tmp[_mod12326.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE];
+        let tmp4 = typeof tmp2 === "string";
+        if (typeof tmp2 === "string") {
+          tmp4 = typeof tmp3 === "number";
+        }
+        if (tmp4) {
+          obj = { value: tmp3, unit: tmp2 };
+          obj[attributes.name] = obj;
+        }
+      });
+      return obj;
     }
   }
 };

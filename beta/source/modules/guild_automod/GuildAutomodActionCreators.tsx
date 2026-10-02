@@ -1,22 +1,22 @@
-// Module ID: 11346
-// Function ID: 11347
+// Module ID: 11221
+// Function ID: 11222
 // Name: GuildAutomodActionCreators
-// Dependencies: [5, 2102, 2067, 4469, 1074, 11347, 1370, 11, 1271, 11340, 5016, 6938, 573, 2]
+// Dependencies: [5, 2105, 2073, 4472, 1086, 11222, 1376, 11, 1283, 11215, 5017, 6942, 585, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 11346 (GuildAutomodActionCreators)
+// Module 11221 (GuildAutomodActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import AutomodFeedback from "AutomodFeedback" /* 6938 */;
-import DataUtils from "DataUtils" /* 11347 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+import AutomodFeedback from "AutomodFeedback" /* 6942 */;
+import DataUtils from "DataUtils" /* 11222 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import Constants from "Constants" /* 1074 */;
+import GuildRoleStore from "GuildRoleStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +46,7 @@ function _transformClientRuleToApiRule(id) {
   }
   const actions = id.actions;
   const obj3 = { id: id.id, name: id.name, guild_id: id.guildId, event_type: id.eventType, trigger_type: id.triggerType, trigger_metadata: result, actions: found.map(_transformClientActionToApiAction), enabled: null, creator_id: null, position: null, exempt_channels: from(exemptChannels), exempt_roles: from2Result.filter((item) => null != GuildRoleStore.getRole(guildId.guildId, item)) };
-  found = actions.filter(tmp(1370).isNotNullish);
+  found = actions.filter(tmp(1376).isNotNullish);
   ({ enabled: obj2.enabled, creatorId: obj2.creator_id, position: obj2.position } = id);
   exemptChannels = id.exemptChannels;
   const _Array = Array;
@@ -116,7 +116,7 @@ let obj = function _validateAutomodRule() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -260,7 +260,7 @@ obj = function _executeAlertAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -297,7 +297,7 @@ obj = function _executeAlertAction() {
           return obj;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp7) {
         c3 = 3;
         throw tmp7;

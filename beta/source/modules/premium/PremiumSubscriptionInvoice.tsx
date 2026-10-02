@@ -1,24 +1,27 @@
-// Module ID: 12928
-// Function ID: 12929
+// Module ID: 12930
+// Function ID: 12931
 // Name: PremiumSubscriptionInvoice
-// Dependencies: [109, 32, 5, 19, 4497, 1074, 4488, 1271, 573, 4735, 38, 5092, 2]
-// Exports: getItemUnitPriceWithDiscount, useFetchGenericInvoicePreview, useFetchSubscriptionGiftInvoicePreview, useFetchSubscriptionInvoicePreview, useGetSubscriptionInvoice
+// Dependencies: [109, 32, 5, 19, 4500, 1086, 4491, 1283, 585, 4737, 38, 5093, 558, 576, 2]
+// Exports: getItemUnitPriceWithDiscount, useFetchSubscriptionInvoicePreview
 
-// Module 12928 (PremiumSubscriptionInvoice)
-import Constants from "Constants" /* 1074 */;
-import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+// Module 12930 (PremiumSubscriptionInvoice)
+import Constants from "Constants" /* 1086 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import InvoiceRecord from "InvoiceRecord" /* 4497 */;
+import InvoiceRecord from "InvoiceRecord" /* 4500 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_12, payment_source_id, planId, sku_subscription_plan_id;
+const require = globalThis.__r;
+let _require, closure_12, dependencyMap, payment_source_id, planId, preventFetch, sku_subscription_plan_id;
 
 let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
+const f112949 = (enabled) => enabled.enabled;
 function createSubscriptionInvoicePreview() {
   return obj(...arguments);
 }
@@ -47,7 +50,7 @@ let obj = function _createSubscriptionInvoicePreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -91,7 +94,7 @@ let obj = function _createSubscriptionInvoicePreview() {
             value = undefined;
             currency = 1;
             renewal = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === currency) {
           if (arg0 === 1) {
@@ -203,7 +206,7 @@ obj = function _updateSubscriptionInvoicePreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let currency;
@@ -245,7 +248,7 @@ obj = function _updateSubscriptionInvoicePreview() {
             value = undefined;
             c5 = 1;
             location_stack = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -355,7 +358,7 @@ obj = function _createOneTimePurchaseInvoicePreview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -381,7 +384,7 @@ obj = function _createOneTimePurchaseInvoicePreview() {
               body = undefined;
               quantity = 1;
               c6 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === quantity) {
             if (arg0 === 1) {
@@ -465,7 +468,7 @@ obj = function _getSubscriptionInvoice() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -487,7 +490,7 @@ obj = function _getSubscriptionInvoice() {
             body = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -534,17 +537,147 @@ obj = function _getSubscriptionInvoice() {
   return obj(...arguments);
 };
 let closure_3 = ["subscriptionId"];
-let _objectWithoutProperties = _objectWithoutProperties_mod;
-let _slicedToArray = _slicedToArray_mod;
 ({ useCallback: metroImportDefault, useEffect: metroImportAll, useState: c9, useRef: c10 } = react);
 const Endpoints = Constants.Endpoints;
-let result = size.fileFinishedImporting("modules/premium/PremiumSubscriptionInvoice.tsx");
-
-export { createSubscriptionInvoicePreview };
-export { updateSubscriptionInvoicePreview };
-export { createOneTimePurchaseInvoicePreview };
-export { getSubscriptionInvoice };
-export const useFetchGenericInvoicePreview = function useFetchGenericInvoicePreview(preventFetch, arg1, arg2) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, arg2) => {
+  let tmp4;
+  let tmp6;
+  _require = arg1;
+  obj = require("react");
+  const cResult = obj.c(10);
+  preventFetch = preventFetch.preventFetch;
+  const tmp2 = undefined !== preventFetch && preventFetch;
+  let closure_1 = tmp2;
+  const tmp3 = _slicedToArray(closure_9(null), 2);
+  [tmp4, dependencyMap] = tmp3;
+  [tmp6, closure_3] = _slicedToArray(closure_9(null), 2);
+  const tmp5 = _slicedToArray(closure_9(null), 2);
+  if (cResult[0] === arg1) {
+    let tmp7;
+    if (cResult[1] === tmp2) {
+      tmp7 = cResult[2];
+    }
+    if (cResult[3] === arg1) {
+      if (cResult[4] === tmp2) {
+        let tmp9;
+        if (cResult[5] === arg2) {
+          tmp9 = cResult[6];
+        }
+        closure_8(tmp7, tmp9);
+        if (cResult[7] === tmp6) {
+          let tmp12;
+          if (cResult[8] === tmp4) {
+            tmp12 = cResult[9];
+          }
+          return tmp12;
+        }
+        const items = [tmp4, tmp6];
+        cResult[7] = tmp6;
+        cResult[8] = tmp4;
+        cResult[9] = items;
+        tmp12 = items;
+      }
+    }
+    const items1 = [tmp2, arg1, arg2];
+    cResult[3] = arg1;
+    cResult[4] = tmp2;
+    cResult[5] = arg2;
+    cResult[6] = items1;
+    tmp9 = items1;
+  }
+  const fn = function o() {
+    function loadPreview() {
+      return closure_0(...arguments);
+    }
+    let c0 = false;
+    closure_0 = _asyncToGenerator(async (arg0, value) => {
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        let c3;
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              closure_1 = tmp;
+              closure_0 = undefined;
+              c3 = 1;
+              closure_2_3(null);
+              c4 = 2;
+              c5 = 1;
+              const obj4 = { value: closure_0(), done: false };
+              return obj4;
+            }
+          } else {
+            if (1 === c4) {
+              c3 = 0;
+              closure_1 = closure_2;
+              const tmp15 = closure_0;
+              if (!tmp15) {
+                closure_2_3(tmp13);
+                closure_2_2(null);
+              }
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c5 = 3;
+              obj = { value, done: true };
+              return obj;
+            } else {
+              closure_0 = value;
+              const tmp7 = closure_0;
+              if (!tmp7) {
+                closure_2_2(closure_0);
+              }
+              c3 = 0;
+            }
+            c5 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp23) {
+          closure_2 = tmp23;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp23;
+          } else {
+            c4 = 1;
+          }
+        }
+      }
+    });
+    const tmp = closure_1;
+    if (!tmp) {
+      loadPreview();
+    }
+    return () => {
+      c0 = true;
+    };
+  };
+  cResult[0] = arg1;
+  cResult[1] = tmp2;
+  cResult[2] = fn;
+  tmp7 = fn;
+}) : ((preventFetch, arg1, arg2) => {
   let c2;
   let first;
   let tmp2;
@@ -555,15 +688,15 @@ export const useFetchGenericInvoicePreview = function useFetchGenericInvoicePrev
   let closure_1 = arg1;
   c2 = undefined;
   closure_3 = undefined;
-  [tmp2, c2] = closure_9(null);
-  _slicedToArray(closure_9(null), 2);
+  let tmp = _slicedToArray(closure_9(null), 2);
+  [tmp2, c2] = tmp;
   [first, closure_3] = closure_9(null);
   const items = [flag, arg1, arg2];
   closure_8(() => {
     function loadPreview() {
       return obj(...arguments);
     }
-    obj = function _loadPreview() {
+    obj = function _loadPreview2() {
       obj = _asyncToGenerator(async (arg0, value) => {
         let closure_2;
         let tmp;
@@ -578,7 +711,7 @@ export const useFetchGenericInvoicePreview = function useFetchGenericInvoicePrev
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -628,7 +761,7 @@ export const useFetchGenericInvoicePreview = function useFetchGenericInvoicePrev
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp23) {
             if (0 === c3) {
@@ -653,20 +786,57 @@ export const useFetchGenericInvoicePreview = function useFetchGenericInvoicePrev
   }, items);
   const items1 = [tmp2, first];
   return items1;
-};
-export const useFetchSubscriptionGiftInvoicePreview = function useFetchSubscriptionGiftInvoicePreview(preventFetch, arg1) {
-  let c2;
-  let first;
+});
+let closure_21 = tmp3;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchSubscriptionGiftInvoicePreview(current, arg1) {
+  let ref2;
+  let tmp2;
   let tmp5;
-  let current = preventFetch;
-  closure_10(preventFetch);
+  _require = current;
+  obj = require("react");
+  const cResult = obj.c(3);
+  const ref = closure_10(current);
+  dependencyMap = closure_10(false);
+  if (cResult[0] !== current) {
+    const fn = function t() {
+      ref.current = current;
+    };
+    cResult[0] = current;
+    cResult[1] = fn;
+    tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  closure_8(tmp2);
+  const json = JSON.stringify(current);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function s() {
+      current = ref.current;
+      let tmp2 = current;
+      const tmp = ref2;
+      if (!ref2.current) {
+        obj = { paymentSourceId: null };
+        const merged = Object.assign(current);
+        tmp2 = obj;
+      }
+      tmp.current = true;
+      return createOneTimePurchaseInvoicePreview(tmp2);
+    };
+    cResult[2] = fn2;
+    tmp5 = fn2;
+  } else {
+    tmp5 = cResult[2];
+  }
+  return closure_21(current, tmp5, arg1);
+}) : (function useFetchSubscriptionGiftInvoicePreview(current, arg1) {
+  const ref = closure_10(current);
   const ref2 = closure_10(false);
-  let tmp = closure_8;
-  let tmp2 = closure_8(() => {
+  let tmp = closure_8(() => {
     ref.current = current;
   });
-  const items = [JSON.stringify(preventFetch)];
-  const tmp3 = closure_7(() => {
+  const items = [JSON.stringify(current)];
+  return closure_21(current, closure_7(() => {
     current = ref.current;
     let tmp2 = current;
     const tmp = ref2;
@@ -677,121 +847,182 @@ export const useFetchSubscriptionGiftInvoicePreview = function useFetchSubscript
     }
     tmp.current = true;
     return createOneTimePurchaseInvoicePreview(tmp2);
-  }, items);
-  let ref;
-  let flag = preventFetch.preventFetch;
-  if (flag === undefined) {
-    flag = false;
-  }
-  ref = tmp3;
-  c2 = undefined;
-  closure_3 = undefined;
-  [tmp5, c2] = _slicedToArray(closure_9(null), 2);
-  const tmp4 = _slicedToArray(closure_9(null), 2);
-  [first, closure_3] = closure_9(null);
-  const items1 = [flag, tmp3, arg1];
-  tmp(() => {
-    function loadPreview() {
-      return obj(...arguments);
-    }
-    obj = function _loadPreview() {
-      obj = _asyncToGenerator(async (arg0, value) => {
-        let closure_2;
-        let tmp;
-        let v0;
-        if (c5 === 2) {
-          c5 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          let c3;
-          try {
-            let closure_0;
-            c5 = 2;
-            if (0 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                closure_0 = undefined;
-                c3 = 1;
-                c3(null);
-                c4 = 2;
-                c5 = 1;
-                const obj4 = { value: tmp(), done: false };
-                return obj4;
-              }
-            } else {
-              if (1 === c4) {
-                c3 = 0;
-                tmp = tmp23;
-                const tmp15 = closure_129_0;
-                if (!tmp15) {
-                  c3(tmp13);
-                  tmp23(null);
-                }
-              } else if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 0;
-                c5 = 3;
-                obj = { value, done: true };
-                return obj;
-              } else {
-                closure_0 = value;
-                const tmp7 = closure_129_0;
-                if (!tmp7) {
-                  tmp23(closure_0);
-                }
-                c3 = 0;
-              }
-              c5 = 3;
-              return { value: "HermesInternal", done: null };
-            }
-          } catch (tmp23) {
-            if (0 === c3) {
-              c5 = 3;
-              throw tmp23;
-            } else {
-              c4 = 1;
-            }
-          }
-        }
-      });
-      return obj(...arguments);
-    };
-    let c0 = false;
-    let tmp = c0;
-    if (!tmp) {
-      loadPreview();
-    }
-    return () => {
-      c0 = true;
-    };
-  }, items1);
-  const items2 = [tmp5, first];
-  return items2;
-};
-export const useFetchSubscriptionInvoicePreview = function useFetchSubscriptionInvoicePreview(subscriptionId, arg1) {
-  let c2;
-  let closure_4;
-  let closure_5;
+  }, items), arg1);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useServerProvidedInvoiceCache(arg0) {
   let first;
-  let ref2;
-  let tmp14;
+  let ref;
+  let tmp4;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  obj = require("react");
+  const cResult = obj.c(6);
+  let tmp2 = closure_10(null);
+  _require = tmp2;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n() {
+      ref.current = null;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const items = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = items;
+    tmp4 = items;
+  } else {
+    tmp4 = cResult[2];
+  }
+  closure_8(first, tmp4);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function c(paymentSourceId, arg1) {
+      const current = ref.current;
+      return null != current && null != paymentSourceId.paymentSourceId && paymentSourceId.paymentSourceId === current.serverSelectedPaymentSourceId && arg1 === current.dedupeKey;
+    };
+    cResult[3] = fn2;
+    tmp6 = fn2;
+  } else {
+    tmp6 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn3 = function s(record, dedupeKey, arg2) {
+      let tmp6;
+      let tmp2 = null;
+      const tmp = ref;
+      if (null == arg2) {
+        const checkoutContext = record.checkoutContext;
+        let payment_sources;
+        obj = { record, dedupeKey, serverSelectedPaymentSourceId: tmp6 };
+        if (checkoutContext != null) {
+          payment_sources = checkoutContext.payment_sources;
+        }
+        tmp6 = null;
+        if (null != payment_sources) {
+          const found = payment_sources.find(f112949);
+          let id;
+          if (found != null) {
+            id = found.id;
+          }
+          if (id == null) {
+            id = null;
+          }
+          tmp6 = id;
+        }
+        tmp2 = obj;
+      }
+      tmp.current = tmp2;
+    };
+    cResult[4] = fn3;
+    tmp7 = fn3;
+  } else {
+    tmp7 = cResult[4];
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { serverPricedPreviewRef: tmp2, shouldReturnInvoiceCache: tmp6, updateServerPricedPreviewRef: tmp7 };
+    cResult[5] = obj2;
+    tmp8 = obj2;
+  } else {
+    tmp8 = cResult[5];
+  }
+  return tmp8;
+}) : (function useServerProvidedInvoiceCache(arg0) {
+  let tmp = closure_10(null);
+  const ref = tmp;
+  const items = [arg0];
+  let tmp2 = closure_8(() => {
+    ref.current = null;
+  }, items);
+  const tmp3 = closure_7((paymentSourceId, arg1) => {
+    const current = ref.current;
+    return null != current && null != paymentSourceId.paymentSourceId && paymentSourceId.paymentSourceId === current.serverSelectedPaymentSourceId && arg1 === current.dedupeKey;
+  }, []);
+  obj = {
+    serverPricedPreviewRef: tmp,
+    shouldReturnInvoiceCache: tmp3,
+    updateServerPricedPreviewRef: closure_7((record, dedupeKey, arg2) => {
+      let tmp6;
+      let tmp2 = null;
+      const tmp = ref;
+      if (null == arg2) {
+        const checkoutContext = record.checkoutContext;
+        let payment_sources;
+        obj = { record, dedupeKey, serverSelectedPaymentSourceId: tmp6 };
+        if (checkoutContext != null) {
+          payment_sources = checkoutContext.payment_sources;
+        }
+        tmp6 = null;
+        if (null != payment_sources) {
+          const found = payment_sources.find(f112949);
+          let id;
+          if (found != null) {
+            id = found.id;
+          }
+          if (id == null) {
+            id = null;
+          }
+          tmp6 = id;
+        }
+        tmp2 = obj;
+      }
+      tmp.current = tmp2;
+    }, [])
+  };
+  return obj;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetSubscriptionInvoice(current, arg1) {
+  let tmp2;
+  let tmp5;
+  _require = current;
+  obj = require("react");
+  const cResult = obj.c(3);
+  const ref = closure_10(current);
+  if (cResult[0] !== current) {
+    const fn = function t() {
+      ref.current = current;
+    };
+    cResult[0] = current;
+    cResult[1] = fn;
+    tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  closure_8(tmp2);
+  const json = JSON.stringify(current);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function o() {
+      return getSubscriptionInvoice(ref.current);
+    };
+    cResult[2] = fn2;
+    tmp5 = fn2;
+  } else {
+    tmp5 = cResult[2];
+  }
+  return closure_21(current, tmp5, arg1);
+}) : (function useGetSubscriptionInvoice(current, arg1) {
+  const ref = closure_10(current);
+  closure_8(() => {
+    ref.current = current;
+  });
+  const items = [JSON.stringify(current)];
+  return closure_21(current, closure_7(() => getSubscriptionInvoice(ref.current), items), arg1);
+});
+let result = size.fileFinishedImporting("modules/premium/PremiumSubscriptionInvoice.tsx");
+
+export { createSubscriptionInvoicePreview };
+export { updateSubscriptionInvoicePreview };
+export { createOneTimePurchaseInvoicePreview };
+export { getSubscriptionInvoice };
+export const useFetchGenericInvoicePreview = tmp3;
+export const useFetchSubscriptionGiftInvoicePreview = tmp4;
+export const useFetchSubscriptionInvoicePreview = function useFetchSubscriptionInvoicePreview(subscriptionId, arg1) {
+  let serverPricedPreviewRef;
+  let shouldReturnInvoiceCache;
   let current = subscriptionId;
   let tmp = subscriptionId;
   if ("subscriptionId" in subscriptionId) {
@@ -799,58 +1030,22 @@ export const useFetchSubscriptionInvoicePreview = function useFetchSubscriptionI
     tmp = subscriptionId;
     if (null == subscriptionId.subscriptionId) {
       subscriptionId = subscriptionId.subscriptionId;
-      const tmp5 = _objectWithoutProperties(subscriptionId, ref2);
+      const tmp5 = shouldReturnInvoiceCache(subscriptionId, serverPricedPreviewRef);
       current = tmp5;
       tmp = tmp5;
     }
   }
-  closure_10(tmp);
+  let closure_1 = closure_10(tmp);
   const ref = closure_10(false);
-  let tmp6 = closure_10(null);
-  current = tmp6;
-  const items = [arg1];
-  closure_8(() => {
-    ref.current = null;
-  }, items);
-  const tmp9 = closure_7((paymentSourceId, arg1) => {
-    current = ref.current;
-    return null != current && null != paymentSourceId.paymentSourceId && paymentSourceId.paymentSourceId === current.serverSelectedPaymentSourceId && arg1 === current.dedupeKey;
-  }, []);
-  const tmp10 = closure_7((record, dedupeKey, arg2) => {
-    let tmp6;
-    let tmp2 = null;
-    const tmp = ref;
-    if (null == arg2) {
-      const checkoutContext = record.checkoutContext;
-      let payment_sources;
-      obj = { record, dedupeKey, serverSelectedPaymentSourceId: tmp6 };
-      if (checkoutContext != null) {
-        payment_sources = checkoutContext.payment_sources;
-      }
-      tmp6 = null;
-      if (null != payment_sources) {
-        const found = payment_sources.find((enabled) => enabled.enabled);
-        let id;
-        if (found != null) {
-          id = found.id;
-        }
-        if (id == null) {
-          id = null;
-        }
-        tmp6 = id;
-      }
-      tmp2 = obj;
-    }
-    tmp.current = tmp2;
-  }, []);
-  ref2 = tmp6;
-  _objectWithoutProperties = tmp9;
-  _slicedToArray = tmp10;
+  const tmp6 = closure_22(arg1);
+  serverPricedPreviewRef = tmp6.serverPricedPreviewRef;
+  shouldReturnInvoiceCache = tmp6.shouldReturnInvoiceCache;
+  const updateServerPricedPreviewRef = tmp6.updateServerPricedPreviewRef;
   closure_8(() => {
     closure_1.current = current;
   });
-  const items1 = [JSON.stringify(tmp), tmp6, tmp9, tmp10];
-  const tmp12 = closure_7(() => {
+  const items = [JSON.stringify(tmp), serverPricedPreviewRef, shouldReturnInvoiceCache, updateServerPricedPreviewRef];
+  return closure_21(tmp, closure_7(() => {
     let json;
     current = json.current;
     let tmp2 = current;
@@ -869,250 +1064,25 @@ export const useFetchSubscriptionInvoicePreview = function useFetchSubscriptionI
       const obj2 = { paymentSourceId: "exclude_from_dedupe" };
       const merged1 = Object.assign(tmp2);
       json = stringify(obj2);
-      const current2 = ref2.current;
+      const current2 = serverPricedPreviewRef.current;
       if (null != current2) {
         let resolved;
-        if (closure_4(tmp2, json)) {
+        if (shouldReturnInvoiceCache(tmp2, json)) {
           resolved = Promise.resolve(current2.record);
         }
         return resolved;
       }
       const promise = createSubscriptionInvoicePreview(tmp2);
       resolved = promise.then((result) => {
-        closure_5(result, json, obj.paymentSourceId);
+        updateServerPricedPreviewRef(result, json, obj.paymentSourceId);
         return result;
       });
     } else {
       return null;
     }
-  }, items1);
-  let closure_1;
-  let flag = tmp.preventFetch;
-  const tmp7 = closure_8;
-  if (flag === undefined) {
-    flag = false;
-  }
-  closure_1 = tmp12;
-  c2 = undefined;
-  ref2 = undefined;
-  [tmp14, c2] = _slicedToArray(closure_9(null), 2);
-  const tmp13 = _slicedToArray(closure_9(null), 2);
-  [first, ref2] = closure_9(null);
-  const items2 = [flag, tmp12, arg1];
-  tmp7(() => {
-    function loadPreview() {
-      return obj(...arguments);
-    }
-    obj = function _loadPreview() {
-      obj = _asyncToGenerator(async (arg0, value) => {
-        let closure_2;
-        let tmp;
-        let v0;
-        if (c5 === 2) {
-          c5 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          let c3;
-          try {
-            let closure_0;
-            c5 = 2;
-            if (0 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                closure_0 = undefined;
-                c3 = 1;
-                c3(null);
-                c4 = 2;
-                c5 = 1;
-                const obj4 = { value: tmp(), done: false };
-                return obj4;
-              }
-            } else {
-              if (1 === c4) {
-                c3 = 0;
-                tmp = tmp23;
-                const tmp15 = closure_129_0;
-                if (!tmp15) {
-                  c3(tmp13);
-                  tmp23(null);
-                }
-              } else if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 0;
-                c5 = 3;
-                obj = { value, done: true };
-                return obj;
-              } else {
-                closure_0 = value;
-                const tmp7 = closure_129_0;
-                if (!tmp7) {
-                  tmp23(closure_0);
-                }
-                c3 = 0;
-              }
-              c5 = 3;
-              return { value: "HermesInternal", done: null };
-            }
-          } catch (tmp23) {
-            if (0 === c3) {
-              c5 = 3;
-              throw tmp23;
-            } else {
-              c4 = 1;
-            }
-          }
-        }
-      });
-      return obj(...arguments);
-    };
-    let c0 = false;
-    let tmp = c0;
-    if (!tmp) {
-      loadPreview();
-    }
-    return () => {
-      c0 = true;
-    };
-  }, items2);
-  const items3 = [tmp14, first];
-  return items3;
+  }, items), arg1);
 };
-export const useGetSubscriptionInvoice = function useGetSubscriptionInvoice(preventFetch, arg1) {
-  let c2;
-  let first;
-  let tmp5;
-  const current = preventFetch;
-  closure_10(preventFetch);
-  let tmp = closure_8;
-  const tmp2 = closure_8(() => {
-    ref.current = current;
-  });
-  const items = [JSON.stringify(preventFetch)];
-  const tmp3 = closure_7(() => getSubscriptionInvoice(ref.current), items);
-  let ref;
-  let flag = preventFetch.preventFetch;
-  if (flag === undefined) {
-    flag = false;
-  }
-  ref = tmp3;
-  c2 = undefined;
-  closure_3 = undefined;
-  const tmp4 = _slicedToArray(closure_9(null), 2);
-  [tmp5, c2] = tmp4;
-  [first, closure_3] = closure_9(null);
-  const items1 = [flag, tmp3, arg1];
-  tmp(() => {
-    function loadPreview() {
-      return obj(...arguments);
-    }
-    obj = function _loadPreview() {
-      obj = _asyncToGenerator(async (arg0, value) => {
-        let closure_2;
-        let tmp;
-        let v0;
-        if (c5 === 2) {
-          c5 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          let c3;
-          try {
-            let closure_0;
-            c5 = 2;
-            if (0 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                closure_0 = undefined;
-                c3 = 1;
-                c3(null);
-                c4 = 2;
-                c5 = 1;
-                const obj4 = { value: tmp(), done: false };
-                return obj4;
-              }
-            } else {
-              if (1 === c4) {
-                c3 = 0;
-                tmp = tmp23;
-                const tmp15 = closure_129_0;
-                if (!tmp15) {
-                  c3(tmp13);
-                  tmp23(null);
-                }
-              } else if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 0;
-                c5 = 3;
-                obj = { value, done: true };
-                return obj;
-              } else {
-                closure_0 = value;
-                const tmp7 = closure_129_0;
-                if (!tmp7) {
-                  tmp23(closure_0);
-                }
-                c3 = 0;
-              }
-              c5 = 3;
-              return { value: "HermesInternal", done: null };
-            }
-          } catch (tmp23) {
-            if (0 === c3) {
-              c5 = 3;
-              throw tmp23;
-            } else {
-              c4 = 1;
-            }
-          }
-        }
-      });
-      return obj(...arguments);
-    };
-    let c0 = false;
-    let tmp = c0;
-    if (!tmp) {
-      loadPreview();
-    }
-    return () => {
-      c0 = true;
-    };
-  }, items1);
-  const items2 = [tmp5, first];
-  return items2;
-};
+export const useGetSubscriptionInvoice = tmp5;
 export const getItemUnitPriceWithDiscount = function getItemUnitPriceWithDiscount(arg0) {
   let closure_1;
   let discounts;

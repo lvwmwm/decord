@@ -1,43 +1,23 @@
 // Module ID: 1586
 // Function ID: 1587
 // Name: react
-// Dependencies: [19]
-// Exports: useMemoArray
+// Dependencies: [19, 1561]
+// Exports: usePreventRemoveContext
 
 // Module 1586 (react)
+import react2 from "react" /* 1561 */;
 import react from "react" /* 19 */;
 
 
-export const useMemoArray = function useMemoArray(arr) {
-  const ref = react.useRef(undefined);
-  const current = ref.current;
-  const mapped = arr.map((item, index) => {
-    let arr;
-    let tmp;
-    [tmp, arr] = item;
-    let tmp3;
-    if (current != null) {
-      tmp3 = tmp2.entries[index];
-    }
-    let everyResult = tmp3 && tmp3.deps.length === arr.length;
-    if (everyResult) {
-      const deps = tmp3.deps;
-      everyResult = deps.every((item, index) => Object.is(item, closure_1_0[index]));
-    }
-    if (!everyResult) {
-      tmp3 = { item: tmp, deps: arr };
-      const obj = { item: tmp, deps: arr };
-    }
-    return tmp3;
-  });
-  if (current) {
-    if (current.entries.length === mapped.length) {
-      if (mapped.every((item, index) => item === current.entries[index])) {
-        return current.items;
-      }
-    }
+export const usePreventRemoveContext = function usePreventRemoveContext() {
+  const context = react.useContext(react2.PreventRemoveContext);
+  if (null == context) {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error("Couldn't find the prevent remove context. Is your component inside NavigationContent?");
+    throw error;
+  } else {
+    return context;
   }
-  const mapped1 = mapped.map((item) => item.item);
-  ref.current = { entries: mapped, items: mapped1 };
-  return mapped1;
 };

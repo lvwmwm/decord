@@ -1,24 +1,26 @@
-// Module ID: 15921
-// Function ID: 15922
+// Module ID: 15922
+// Function ID: 15923
 // Name: GuildsBarDnDStore
-// Dependencies: [5750, 1243, 4566, 1248, 1231, 4452, 2]
-// Exports: useFolderBGHeightOffset, useItemDragState
+// Dependencies: [5751, 1255, 4570, 1260, 1243, 558, 576, 4455, 2]
 
-// Module 15921 (GuildsBarDnDStore)
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import react_native from "react-native" /* 1248 */;
-import _slicedToArray from "_slicedToArray" /* 4452 */;
-import SortedGuildStore from "SortedGuildStore" /* 5750 */;
-import module_1243 from "module_1243" /* 1243 */;
+// Module 15922 (GuildsBarDnDStore)
+import react from "react" /* 576 */;
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import react_native from "react-native" /* 1260 */;
+import SortedGuildStore from "SortedGuildStore" /* 5751 */;
+import module_1255 from "module_1255" /* 1255 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, set;
 
+let tmp;
+const _slicedToArray = tmp(4455);
 const GuildsNodeType = SortedGuildStore.GuildsNodeType;
 const INITIAL_GESTURE_STATE = { mode: null, initialX: 0, initialY: 0, absoluteX: 0, absoluteY: 0 };
 let c5 = -1;
-const withEqualityFn = module_1243.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = module_1255.createWithEqualityFn((arg0, arg1) => {
   let closure_5;
   let obj;
   let obj2;
@@ -30,8 +32,8 @@ const withEqualityFn = module_1243.createWithEqualityFn((arg0, arg1) => {
   let closure_1 = arg1;
   obj = {
     dragSpecs: "Boolean",
-    overSpecs: "disabled",
-    dropSpecs: "isArray",
+    overSpecs: "done",
+    dropSpecs: "toCharArray$esjava$1",
     dragRegion: obj2.makeMutable({ min: 0, max: 0 }),
     gestureState: obj3.makeMutable(obj),
     dragDropInProgress: obj4.makeMutable(false),
@@ -77,7 +79,7 @@ const withEqualityFn = module_1243.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "paddingHorizontal" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "applicationId" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -108,7 +110,7 @@ const withEqualityFn = module_1243.createWithEqualityFn((arg0, arg1) => {
       obj.addBreadcrumb(obj2);
       if (null != dropSpecs) {
         const obj4 = react_native;
-        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "Path" }));
+        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "call" }));
         const _clearTimeout = clearTimeout;
         clearTimeout(c5);
         if (null == dragSpecs) {
@@ -131,11 +133,125 @@ const withEqualityFn = module_1243.createWithEqualityFn((arg0, arg1) => {
   obj6 = require("ReanimatedRexport");
   return obj;
 });
-let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarDnDStore.tsx");
-
-export default withEqualityFn;
-export { INITIAL_GESTURE_STATE };
-export const useItemDragState = function useItemDragState(arg0, arg1) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let tmp = require;
+  let tmp2 = dependencyMap;
+  let obj = react;
+  const cResult = obj.c(3);
+  if (cResult[0] === arg0) {
+    let tmp4;
+    if (cResult[1] === arg1) {
+      tmp4 = cResult[2];
+    }
+    let tmp5 = withEqualityFn;
+    return withEqualityFn(tmp4, _slicedToArray.shallow);
+  }
+  const fn = function s(arg0) {
+    let dragDropInProgress;
+    let dragSpecs;
+    let dropSpecs;
+    let num;
+    let overSpecs;
+    let tmp13;
+    let tmp14;
+    ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
+    if (null == dragSpecs) {
+      if (null == dropSpecs) {
+        return { isDragTarget: false, dragState: "done", overState: "toCharArray$esjava$1", itemSize: null, dragDropInProgress };
+      }
+    }
+    let tmp2 = !closure_1;
+    const tmp = closure_1;
+    if (tmp2) {
+      let id;
+      if (dragSpecs != null) {
+        id = dragSpecs.node.id;
+      }
+      let tmp5 = id === closure_0;
+      const tmp4 = closure_0;
+      if (tmp5) {
+        let node;
+        if (overSpecs != null) {
+          node = overSpecs.node;
+        }
+        tmp5 = null != node;
+      }
+      if (!tmp5) {
+        let id1;
+        if (dropSpecs != null) {
+          id1 = dropSpecs.dragNode.id;
+        }
+        tmp5 = id1 === tmp4;
+      }
+      tmp2 = tmp5;
+    }
+    let tmp8 = !tmp;
+    if (tmp8) {
+      let id2;
+      if (overSpecs != null) {
+        id2 = overSpecs.node.id;
+      }
+      let tmp11 = id2 === closure_0;
+      if (!tmp11) {
+        let id3;
+        if (dropSpecs != null) {
+          id3 = dropSpecs.overNode.id;
+        }
+        tmp11 = id3 === tmp10;
+      }
+      tmp8 = tmp11;
+    }
+    const obj = { isDragTarget: tmp2, dragState: tmp13, overState: tmp14, itemSize: num, dragDropInProgress };
+    if (tmp2) {
+      let str = "dropping";
+      if (null == dropSpecs) {
+        str = "dragging";
+      }
+      tmp13 = str;
+    }
+    tmp14 = undefined;
+    if (tmp8) {
+      let overState;
+      if (dropSpecs != null) {
+        overState = dropSpecs.overState;
+      }
+      if (overState == null) {
+        let state;
+        if (overSpecs != null) {
+          state = overSpecs.state;
+        }
+        overState = state;
+      }
+      tmp14 = overState;
+    }
+    num = 0;
+    if (tmp8) {
+      let num2;
+      if (dropSpecs != null) {
+        num2 = dropSpecs.itemSize;
+      }
+      if (num2 == null) {
+        let itemSize;
+        if (dragSpecs != null) {
+          itemSize = dragSpecs.itemSize;
+        }
+        num2 = itemSize;
+      }
+      if (num2 == null) {
+        num2 = 0;
+      }
+      num = num2;
+    }
+    return obj;
+  };
+  cResult[0] = arg0;
+  cResult[1] = arg1;
+  cResult[2] = fn;
+  tmp4 = fn;
+}) : ((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   return withEqualityFn((arg0) => {
@@ -149,7 +265,7 @@ export const useItemDragState = function useItemDragState(arg0, arg1) {
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        return { isDragTarget: false, dragState: "disabled", overState: "isArray", itemSize: null, dragDropInProgress };
+        return { isDragTarget: false, dragState: "done", overState: "toCharArray$esjava$1", itemSize: null, dragDropInProgress };
       }
     }
     let tmp2 = !closure_1;
@@ -236,8 +352,66 @@ export const useItemDragState = function useItemDragState(arg0, arg1) {
     }
     return obj;
   }, _slicedToArray.shallow);
-};
-export const useFolderBGHeightOffset = function useFolderBGHeightOffset(arg0) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let tmp2;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(2);
+  if (cResult[0] !== arg0) {
+    const fn = function s(dropSpecs) {
+      let dragSpecs;
+      let overSpecs;
+      ({ dragSpecs, overSpecs } = dropSpecs);
+      let num = 0;
+      if (null == dropSpecs.dropSpecs) {
+        num = 0;
+        if (null != overSpecs) {
+          num = 0;
+          if (null != dragSpecs) {
+            num = 0;
+            if ("self" !== overSpecs.state) {
+              num = 0;
+              if (dragSpecs.node.type === GuildsNodeType.GUILD) {
+                let num2;
+                if (dragSpecs.node.parentId === closure_0) {
+                  let num3 = 0;
+                  if (overSpecs.node.parentId !== closure_0) {
+                    if (overSpecs.node.id !== closure_0) {
+                      num3 = -1 * dragSpecs.itemSize;
+                    } else {
+                      num3 = 0;
+                    }
+                  }
+                  num2 = num3;
+                } else if (overSpecs.node.parentId === closure_0) {
+                  num2 = dragSpecs.itemSize;
+                } else {
+                  num2 = 0;
+                  if (overSpecs.node.id === closure_0) {
+                    num2 = 0;
+                  }
+                }
+                num = num2;
+              }
+            }
+          }
+        }
+      }
+      return num;
+    };
+    let num = 0;
+    cResult[0] = arg0;
+    let num2 = 1;
+    cResult[1] = fn;
+    tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return withEqualityFn(tmp2);
+}) : ((arg0) => {
   let closure_0 = arg0;
   return withEqualityFn((dropSpecs) => {
     let dragSpecs;
@@ -280,4 +454,10 @@ export const useFolderBGHeightOffset = function useFolderBGHeightOffset(arg0) {
     }
     return num;
   });
-};
+});
+let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarDnDStore.tsx");
+
+export default withEqualityFn;
+export { INITIAL_GESTURE_STATE };
+export const useItemDragState = tmp3;
+export const useFolderBGHeightOffset = tmp4;

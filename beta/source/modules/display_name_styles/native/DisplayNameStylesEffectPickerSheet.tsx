@@ -1,26 +1,27 @@
-// Module ID: 14891
-// Function ID: 14892
+// Module ID: 14879
+// Function ID: 14880
 // Name: DisplayNameStylesEffectPickerSheet
-// Dependencies: [32, 19, 17, 21, 4836, 576, 7615, 14885, 14886, 4801, 4800, 6571, 14890, 1115, 2877, 5281, 5279, 10360, 10357, 10358, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 7619, 14873, 14874, 4802, 4801, 1127, 2880, 14878, 5282, 5280, 6572, 10403, 10400, 10401, 2]
 
-// Module 14891 (DisplayNameStylesEffectPickerSheet)
-import nativeDefault from "native" /* 576 */;
-import intl3 from "intl" /* 1115 */;
-import _modDef2877 from "module_2877" /* 2877 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import HapticUtils from "HapticUtils" /* 4801 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10357 */;
-import types from "types" /* 10358 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10360 */;
+// Module 14879 (DisplayNameStylesEffectPickerSheet)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl3 from "intl" /* 1127 */;
+import _modDef2880 from "module_2880" /* 2880 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import HapticUtils from "HapticUtils" /* 4802 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10400 */;
+import types from "types" /* 10401 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10403 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, dependencyMap;
+let BottomSheet, closure_0, dependencyMap, userId;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -30,46 +31,6 @@ let obj2;
 let obj3;
 let size;
 let size1;
-function EffectTile(arg0) {
-  let effectId;
-  let items1;
-  let obj2;
-  let onClick;
-  let selected;
-  let showNewDot;
-  let tmp9;
-  let userId;
-  ({ effectId, selected, showNewDot } = arg0);
-  ({ userId, onClick } = arg0);
-  const tmp = closure_9();
-  const intl = intl3.intl;
-  const string = intl.string;
-  let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
-  if (OpWJ3f == null) {
-    OpWJ3f = _modDef2877.OpWJ3f;
-  }
-  const stringResult = string(OpWJ3f);
-  const items = [tmp.effectCard, ];
-  const obj = { onPress: onClick, accessibilityRole: "button", accessibilityLabel: stringResult, accessibilityState: { selected }, children: tmp9(hasOwnProperty, obj2) };
-  const tmp2Result = useDisplayNameStylesEffectConfigs;
-  const displayNameStylesEffectConfig = tmp2Result.useDisplayNameStylesEffectConfig(effectId);
-  const tmp8 = metroRequire;
-  tmp9 = metroImportAll;
-  if (selected) {
-    selected = tmp.effectCardSelected;
-  }
-  obj2 = { style: items, children: items1 };
-  items[1] = selected;
-  const obj3 = { userId, userName: stringResult, effectDisplayType: types.EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, style: tmp.effectName, variant: "text-md/semibold" };
-  const tmp11 = UsernameWithEffectsDefault;
-  items1 = [metroImportDefault(tmp11, obj3), ];
-  if (showNewDot) {
-    const obj4 = { style: tmp.tileNewDot, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-    showNewDot = tmp7(tmp10, obj4);
-  }
-  items1[1] = showNewDot;
-  return metroImportDefault(tmp8, obj, effectId);
-}
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, Pressable: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -81,10 +42,319 @@ size = { width: 109, height: 80, backgroundColor: nativeDefault.colors.BACKGROUN
 obj3 = { borderColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND };
 size1 = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8, width: nativeDefault.space.PX_8, height: nativeDefault.space.PX_8, borderRadius: nativeDefault.space.PX_8 / 2, backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND, shadowColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND, shadowRadius: nativeDefault.space.PX_4, shadowOpacity: 1, elevation: 4 };
 let closure_9 = createStyles(obj);
-size = size_mod;
-let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesEffectPickerSheet.tsx");
-
-export default function DisplayNameStylesEffectPickerSheet(userId) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  let dotEffectIds;
+  let first;
+  let first1;
+  let obj6;
+  let onSelectEffect;
+  let selectedEffectId;
+  let tmp = userId;
+  let obj = userId(dotEffectIds[7]);
+  const cResult = obj.c(33);
+  userId = userId.userId;
+  ({ selectedEffectId, onSelectEffect } = userId);
+  const tmp4 = closure_9();
+  let obj2 = userId(dotEffectIds[8]);
+  const bottomSheetRef = obj2.useBottomSheetRef().bottomSheetRef;
+  const obj3 = userId(dotEffectIds[9]);
+  const visibleEffectOrder = obj3.useVisibleEffectOrder();
+  const obj4 = userId(dotEffectIds[10]);
+  const displayNameStylesNewEffects = obj4.useDisplayNameStylesNewEffects(visibleEffectOrder);
+  dotEffectIds = displayNameStylesNewEffects.dotEffectIds;
+  const dismissEffectDot = displayNameStylesNewEffects.dismissEffectDot;
+  const tmp6 = dismissEffectDot(first.useState(selectedEffectId), 2);
+  first = tmp6[0];
+  let closure_5 = tmp6[1];
+  let closure_6 = tmp8;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function l(arg0) {
+      closure_5(arg0);
+    };
+    cResult[0] = fn;
+    first1 = fn;
+  } else {
+    first1 = cResult[0];
+  }
+  if (cResult[1] === first !== selectedEffectId) {
+    if (cResult[2] === first) {
+      let tmp10;
+      if (cResult[3] === onSelectEffect) {
+        tmp10 = cResult[4];
+      }
+      if (null == userId) {
+        return null;
+      } else {
+        let tmp12;
+        let tmp15;
+        let tmp17;
+        let tmp25;
+        const _Symbol2 = Symbol;
+        if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl = tmp(tmp2[13]).intl;
+          const stringResult = intl.string(onSelectEffect(dotEffectIds[14]).RVtMxT);
+          cResult[5] = stringResult;
+          tmp12 = stringResult;
+        } else {
+          tmp12 = cResult[5];
+        }
+        const _Symbol = Symbol;
+        if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl2 = tmp(tmp2[13]).intl;
+          const stringResult1 = intl2.string(tmp(dotEffectIds[13]).t.XqMe3N);
+          cResult[6] = stringResult1;
+          tmp15 = stringResult1;
+        } else {
+          tmp15 = cResult[6];
+        }
+        if (cResult[7] !== tmp10) {
+          ({ title: tmp12, trailing: first1(tmp(dotEffectIds[16]).Button, obj6) });
+          onSelectEffect(dotEffectIds[15]);
+          obj6 = { text: tmp15, onPress: tmp10, variant: "primary", size: "sm" };
+          class F {
+            constructor(arg0) {
+              closure_0 = userId;
+              obj = {
+                userId: closure_0,
+                effectId: userId,
+                selected: userId === closure_4,
+                showNewDot: dotEffectIds.has(userId),
+                onClick() {
+                              first1(effectId);
+                              const tmp = effectId;
+                              if (dotEffectIds.has(effectId)) {
+                                dismissEffectDot(tmp);
+                              }
+                            }
+              };
+              return closure_7(closure_1_10, obj, userId);
+            }
+          }
+          cResult[7] = tmp10;
+          cResult[8] = tmp21;
+          tmp17 = tmp21;
+        } else {
+          tmp17 = cResult[8];
+        }
+        if (cResult[9] === dismissEffectDot) {
+          if (cResult[10] === dotEffectIds) {
+            if (cResult[11] === visibleEffectOrder) {
+              if (cResult[12] === first) {
+                if (cResult[13] === userId) {
+                  tmp25 = cResult[14];
+                }
+                if (cResult[20] === tmp4.gridContainer) {
+                  let tmp28;
+                  if (cResult[21] === tmp25) {
+                    tmp28 = cResult[22];
+                  }
+                  if (cResult[23] === tmp4.contentContainer) {
+                    let tmp31;
+                    if (cResult[24] === tmp28) {
+                      tmp31 = cResult[25];
+                    }
+                    if (cResult[26] === tmp4.container) {
+                      let tmp35;
+                      if (cResult[27] === tmp31) {
+                        tmp35 = cResult[28];
+                      }
+                      if (cResult[29] === bottomSheetRef) {
+                        if (cResult[30] === tmp35) {
+                          let tmp39;
+                          if (cResult[31] === tmp17) {
+                            tmp39 = cResult[32];
+                          }
+                          return tmp39;
+                        }
+                      }
+                      const obj7 = { ref: bottomSheetRef, header: tmp17, children: tmp35 };
+                      const tmp41 = first1(tmp(dotEffectIds[18]).BottomSheet, obj7);
+                      class F {
+                        constructor(arg0) {
+                          closure_0 = userId;
+                          obj = {
+                            userId: closure_0,
+                            effectId: userId,
+                            selected: userId === closure_4,
+                            showNewDot: dotEffectIds.has(userId),
+                            onClick() {
+                                                      first1(effectId);
+                                                      const tmp = effectId;
+                                                      if (dotEffectIds.has(effectId)) {
+                                                        dismissEffectDot(tmp);
+                                                      }
+                                                    }
+                          };
+                          return closure_7(closure_1_10, obj, userId);
+                        }
+                      }
+                      cResult[30] = tmp35;
+                      cResult[31] = tmp17;
+                      cResult[32] = tmp41;
+                      tmp39 = tmp41;
+                    }
+                    const obj8 = { style: tmp22, children: tmp31 };
+                    const tmp38 = first1(closure_5, obj8);
+                    class F {
+                      constructor(arg0) {
+                        closure_0 = userId;
+                        obj = {
+                          userId: closure_0,
+                          effectId: userId,
+                          selected: userId === closure_4,
+                          showNewDot: dotEffectIds.has(userId),
+                          onClick() {
+                                                  first1(effectId);
+                                                  const tmp = effectId;
+                                                  if (dotEffectIds.has(effectId)) {
+                                                    dismissEffectDot(tmp);
+                                                  }
+                                                }
+                        };
+                        return closure_7(closure_1_10, obj, userId);
+                      }
+                    }
+                    cResult[27] = tmp31;
+                    cResult[28] = tmp38;
+                    tmp35 = tmp38;
+                  }
+                  const obj9 = { style: tmp23, children: tmp28 };
+                  const tmp34 = first1(closure_5, obj9);
+                  class F {
+                    constructor(arg0) {
+                      closure_0 = userId;
+                      obj = {
+                        userId: closure_0,
+                        effectId: userId,
+                        selected: userId === closure_4,
+                        showNewDot: dotEffectIds.has(userId),
+                        onClick() {
+                                              first1(effectId);
+                                              const tmp = effectId;
+                                              if (dotEffectIds.has(effectId)) {
+                                                dismissEffectDot(tmp);
+                                              }
+                                            }
+                      };
+                      return closure_7(closure_1_10, obj, userId);
+                    }
+                  }
+                  cResult[24] = tmp28;
+                  cResult[25] = tmp34;
+                  tmp31 = tmp34;
+                }
+                const obj10 = { direction: "horizontal", spacing: 8, style: tmp24, children: tmp25 };
+                const tmp30 = first1(tmp(dotEffectIds[17]).Stack, obj10);
+                cResult[20] = tmp4.gridContainer;
+                class F {
+                  constructor(arg0) {
+                    closure_0 = userId;
+                    obj = {
+                      userId: closure_0,
+                      effectId: userId,
+                      selected: userId === closure_4,
+                      showNewDot: dotEffectIds.has(userId),
+                      onClick() {
+                                          first1(effectId);
+                                          const tmp = effectId;
+                                          if (dotEffectIds.has(effectId)) {
+                                            dismissEffectDot(tmp);
+                                          }
+                                        }
+                    };
+                    return closure_7(closure_1_10, obj, userId);
+                  }
+                }
+                cResult[21] = tmp25;
+                cResult[22] = tmp30;
+                tmp28 = tmp30;
+              }
+            }
+          }
+        }
+        if (cResult[15] === dismissEffectDot) {
+          if (cResult[16] === dotEffectIds) {
+            if (cResult[17] === first) {
+              let tmp26;
+              if (cResult[18] === userId) {
+                tmp26 = cResult[19];
+              }
+              const mapped = visibleEffectOrder.map(tmp26);
+              cResult[9] = dismissEffectDot;
+              cResult[10] = dotEffectIds;
+              cResult[11] = visibleEffectOrder;
+              class F {
+                constructor(arg0) {
+                  closure_0 = userId;
+                  obj = {
+                    userId: closure_0,
+                    effectId: userId,
+                    selected: userId === closure_4,
+                    showNewDot: dotEffectIds.has(userId),
+                    onClick() {
+                                      first1(effectId);
+                                      const tmp = effectId;
+                                      if (dotEffectIds.has(effectId)) {
+                                        dismissEffectDot(tmp);
+                                      }
+                                    }
+                  };
+                  return closure_7(closure_1_10, obj, userId);
+                }
+              }
+              cResult[13] = userId;
+              cResult[14] = mapped;
+              tmp25 = mapped;
+            }
+          }
+        }
+        class F {
+          constructor(arg0) {
+            closure_0 = userId;
+            obj = {
+              userId: closure_0,
+              effectId: userId,
+              selected: userId === closure_4,
+              showNewDot: dotEffectIds.has(userId),
+              onClick() {
+                          first1(effectId);
+                          const tmp = effectId;
+                          if (dotEffectIds.has(effectId)) {
+                            dismissEffectDot(tmp);
+                          }
+                        }
+            };
+            return closure_7(closure_1_10, obj, userId);
+          }
+        }
+        cResult[15] = dismissEffectDot;
+        cResult[16] = dotEffectIds;
+        cResult[17] = first;
+        cResult[18] = userId;
+        cResult[19] = F;
+        tmp26 = F;
+      }
+    }
+  }
+  class T {
+    constructor() {
+      const obj = HapticUtils;
+      const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
+      const tmp3 = closure_6;
+      if (tmp3) {
+        onSelectEffect(first);
+      }
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet();
+    }
+  }
+  cResult[1] = first !== selectedEffectId;
+  cResult[2] = first;
+  cResult[3] = onSelectEffect;
+  cResult[4] = T;
+  tmp10 = T;
+}) : ((userId) => {
   let Button;
   let Stack;
   let _undefined;
@@ -110,11 +380,11 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
   closure_5 = undefined;
   let tmp = closure_9();
   let tmp3 = dependencyMap;
-  let obj = userId(7615);
+  let obj = userId(7619);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = userId(14885);
+  let obj2 = userId(14873);
   const visibleEffectOrder = obj2.useVisibleEffectOrder();
-  const obj3 = userId(14886);
+  const obj3 = userId(14874);
   const displayNameStylesNewEffects = obj3.useDisplayNameStylesNewEffects(visibleEffectOrder);
   ({ dotEffectIds: c2, dismissEffectDot: c3 } = displayNameStylesNewEffects);
   [first, closure_5] = first.useState(selectedEffectId);
@@ -126,13 +396,13 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
   let tmp9 = null;
   if (null != userId) {
     const obj4 = { ref: bottomSheetRef, header: closure_7(tmp12, obj5), children: closure_7(closure_5, obj7) };
-    BottomSheet = tmp2(6571).BottomSheet;
-    obj5 = { title: intl.string(onSelectEffect(2877).RVtMxT), trailing: closure_7(Button, obj6) };
-    tmp12 = onSelectEffect(14890);
-    intl = tmp2(1115).intl;
-    obj6 = { text: intl2.string(userId(1115).t.XqMe3N), onPress: tmp8, variant: "primary", size: "sm" };
-    Button = tmp2(5281).Button;
-    intl2 = tmp2(1115).intl;
+    BottomSheet = tmp2(6572).BottomSheet;
+    obj5 = { title: intl.string(onSelectEffect(2880).RVtMxT), trailing: closure_7(Button, obj6) };
+    tmp12 = onSelectEffect(14878);
+    intl = tmp2(1127).intl;
+    obj6 = { text: intl2.string(userId(1127).t.XqMe3N), onPress: tmp8, variant: "primary", size: "sm" };
+    Button = tmp2(5282).Button;
+    intl2 = tmp2(1127).intl;
     obj7 = { style: tmp.container, children: closure_7(closure_5, obj8) };
     obj8 = { style: tmp.contentContainer, children: closure_7(Stack, obj9) };
     obj9 = {
@@ -154,11 +424,177 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
               }
             }
           };
-          return closure_7(EffectTile, obj, effectId);
+          return closure_7(closure_1_10, obj, effectId);
         })
     };
-    Stack = tmp2(5279).Stack;
+    Stack = tmp2(5280).Stack;
     tmp9 = closure_7(BottomSheet, obj4);
   }
   return tmp9;
-};
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let effectId;
+  let items;
+  let onClick;
+  let selected;
+  let showNewDot;
+  let tmp10;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(25);
+  ({ userId, effectId, selected, showNewDot, onClick } = arg0);
+  const tmp4 = closure_9();
+  if (cResult[0] !== effectId) {
+    const intl = tmp(1127).intl;
+    const string = intl.string;
+    let OpWJ3f = tmp(10403).DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
+    if (OpWJ3f == null) {
+      OpWJ3f = _modDef2880.OpWJ3f;
+    }
+    const stringResult = string(OpWJ3f);
+    cResult[0] = effectId;
+    cResult[1] = stringResult;
+    tmp5 = stringResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const tmpResult = useDisplayNameStylesEffectConfigs;
+  const displayNameStylesEffectConfig = tmpResult.useDisplayNameStylesEffectConfig(effectId);
+  if (cResult[2] !== selected) {
+    const obj2 = { selected };
+    cResult[2] = selected;
+    cResult[3] = obj2;
+    tmp10 = obj2;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (selected) {
+    selected = tmp4.effectCardSelected;
+  }
+  if (cResult[4] === tmp4.effectCard) {
+    let tmp11;
+    if (cResult[5] === selected) {
+      tmp11 = cResult[6];
+    }
+    if (cResult[7] === displayNameStylesEffectConfig.previewStyles) {
+      if (cResult[8] === tmp5) {
+        if (cResult[9] === tmp4.effectName) {
+          let tmp12;
+          if (cResult[10] === userId) {
+            tmp12 = cResult[11];
+          }
+          if (cResult[12] === showNewDot) {
+            let tmp17;
+            if (cResult[13] === tmp4.tileNewDot) {
+              tmp17 = cResult[14];
+            }
+            if (cResult[15] === tmp11) {
+              if (cResult[16] === tmp12) {
+                let tmp21;
+                if (cResult[17] === tmp17) {
+                  tmp21 = cResult[18];
+                }
+                if (cResult[19] === effectId) {
+                  if (cResult[20] === tmp5) {
+                    if (cResult[21] === onClick) {
+                      if (cResult[22] === tmp10) {
+                        let tmp25;
+                        if (cResult[23] === tmp21) {
+                          tmp25 = cResult[24];
+                        }
+                        return tmp25;
+                      }
+                    }
+                  }
+                }
+                const obj3 = { onPress: onClick, accessibilityRole: "button", accessibilityLabel: tmp5, accessibilityState: tmp10, children: tmp21 };
+                const tmp28 = metroImportDefault(metroRequire, obj3, effectId);
+                cResult[19] = effectId;
+                cResult[20] = tmp5;
+                cResult[21] = onClick;
+                cResult[22] = tmp10;
+                cResult[23] = tmp21;
+                cResult[24] = tmp28;
+                tmp25 = tmp28;
+              }
+            }
+            const obj4 = { style: tmp11, children: items };
+            items = [tmp12, tmp17];
+            const tmp24 = metroImportAll(hasOwnProperty, obj4);
+            cResult[15] = tmp11;
+            cResult[16] = tmp12;
+            cResult[17] = tmp17;
+            cResult[18] = tmp24;
+            tmp21 = tmp24;
+          }
+          let tmp18 = showNewDot;
+          if (tmp18) {
+            const obj5 = { style: tmp4.tileNewDot, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+            tmp18 = metroImportDefault(hasOwnProperty, obj5);
+          }
+          cResult[12] = showNewDot;
+          cResult[13] = tmp4.tileNewDot;
+          cResult[14] = tmp18;
+          tmp17 = tmp18;
+        }
+      }
+    }
+    const obj6 = { userId, userName: tmp5, effectDisplayType: types.EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, style: tmp4.effectName, variant: "text-md/semibold" };
+    const tmp15 = UsernameWithEffectsDefault;
+    const tmp16 = metroImportDefault(tmp15, obj6);
+    cResult[7] = displayNameStylesEffectConfig.previewStyles;
+    cResult[8] = tmp5;
+    cResult[9] = tmp4.effectName;
+    cResult[10] = userId;
+    cResult[11] = tmp16;
+    tmp12 = tmp16;
+  }
+  const items1 = [tmp4.effectCard, selected];
+  cResult[4] = tmp4.effectCard;
+  cResult[5] = selected;
+  cResult[6] = items1;
+  tmp11 = items1;
+}) : ((arg0) => {
+  let effectId;
+  let items1;
+  let obj2;
+  let onClick;
+  let selected;
+  let showNewDot;
+  let tmp9;
+  ({ effectId, selected, showNewDot } = arg0);
+  ({ userId, onClick } = arg0);
+  const tmp = closure_9();
+  const intl = intl3.intl;
+  const string = intl.string;
+  let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
+  if (OpWJ3f == null) {
+    OpWJ3f = _modDef2880.OpWJ3f;
+  }
+  const stringResult = string(OpWJ3f);
+  const items = [tmp.effectCard, ];
+  const obj = { onPress: onClick, accessibilityRole: "button", accessibilityLabel: stringResult, accessibilityState: { selected }, children: tmp9(hasOwnProperty, obj2) };
+  const tmp2Result = useDisplayNameStylesEffectConfigs;
+  const displayNameStylesEffectConfig = tmp2Result.useDisplayNameStylesEffectConfig(effectId);
+  const tmp8 = metroRequire;
+  tmp9 = metroImportAll;
+  if (selected) {
+    selected = tmp.effectCardSelected;
+  }
+  obj2 = { style: items, children: items1 };
+  items[1] = selected;
+  const obj3 = { userId, userName: stringResult, effectDisplayType: types.EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, style: tmp.effectName, variant: "text-md/semibold" };
+  const tmp11 = UsernameWithEffectsDefault;
+  items1 = [metroImportDefault(tmp11, obj3), ];
+  if (showNewDot) {
+    const obj4 = { style: tmp.tileNewDot, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+    showNewDot = tmp7(tmp10, obj4);
+  }
+  items1[1] = showNewDot;
+  return metroImportDefault(tmp8, obj, effectId);
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesEffectPickerSheet.tsx");
+
+export default tmp5;

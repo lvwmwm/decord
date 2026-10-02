@@ -1,44 +1,225 @@
-// Module ID: 8614
-// Function ID: 8615
+// Module ID: 8611
+// Function ID: 8612
 // Name: PremiumUpsellUtils
-// Dependencies: [19, 1372, 1074, 1374, 21, 8615, 1115, 8616, 8617, 8618, 4488, 8619, 8620, 8621, 5204, 8623, 1981, 6867, 8663, 4701, 1241, 4800, 8695, 2]
-// Exports: getUpsellItems, usePremiumUpsellConfig
+// Dependencies: [19, 1378, 1086, 1380, 21, 8612, 1127, 8613, 8614, 8615, 4491, 8616, 8617, 8618, 5205, 8620, 1987, 558, 576, 6871, 8660, 4703, 1253, 4801, 8690, 2]
+// Exports: getUpsellItems
 
-// Module 8614 (PremiumUpsellUtils)
+// Module 8611 (PremiumUpsellUtils)
 import Fragment from "Fragment" /* 21 */;
-import intl20 from "intl" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import PremiumUtils from "PremiumUtils" /* 4488 */;
-import ChatInputUtils from "ChatInputUtils" /* 4701 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8615 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8616 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8617 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 8618 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 8619 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 8620 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8663 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8695 */;
+import intl20 from "intl" /* 1127 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import PremiumUtils from "PremiumUtils" /* 4491 */;
+import ChatInputUtils from "ChatInputUtils" /* 4703 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8612 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8613 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8614 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 8615 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 8616 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 8617 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8660 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8690 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, set;
+let _require, closeCustomKeyboardResult, dependencyMap, hideAllActionSheetsResult, importDefault, obj1, set, tmp5Result, trackResult;
 
 let c9;
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-function usePremiumUpsellConfig(upsellType, analyticsLocations, analyticsLocation) {
-  let _location;
-  _require = upsellType;
-  let closure_1 = analyticsLocations;
-  dependencyMap = analyticsLocation;
+({ AnalyticEvents: hasOwnProperty, AnalyticsObjects: metroRequire, UpsellTypes: metroImportDefault } = Constants);
+({ PremiumSubscriptionSKUs: metroImportAll, PremiumTypes: c9 } = PremiumConstants);
+const jsx = Fragment.jsx;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, _location) {
+  let TIER_2_LEADING;
+  let closure_0;
+  let first;
+  _require = arg1;
+  importDefault = _location;
+  let obj = require("react");
+  const cResult = obj.c(13);
+  let obj2 = require("usePremiumTrialOffer");
+  const premiumTrialOffer = obj2.usePremiumTrialOffer();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const _Set = Set;
+    let tmp5 = constants3;
+    let items = [, ];
+    ({ GLOBAL_EMOJI: arr[0], UPLOAD: arr[1] } = constants3);
+    const self = this;
+    const self2 = this;
+    set = new Set(items);
+    cResult[0] = set;
+    first = set;
+  } else {
+    first = cResult[0];
+  }
+  const tmp9 = null != premiumTrialOffer && first.has(arg0);
+  let tmp10 = tmp9;
+  if (tmp10) {
+    let skuId;
+    if (premiumTrialOffer != null) {
+      const subscriptionTrial = premiumTrialOffer.subscriptionTrial;
+      if (subscriptionTrial != null) {
+        skuId = subscriptionTrial.skuId;
+      }
+    }
+    tmp10 = skuId === closure_8.TIER_0;
+  }
+  if (tmp10) {
+    TIER_2_LEADING = tmp(tmp2[20]).PremiumFeatureCardOrder.TIER_0_LEADING;
+  } else {
+    if (constants3.UPLOAD !== arg0) {
+      if (constants3.ANIMATED_EMOJI !== arg0) {
+        if (constants3.GLOBAL_EMOJI !== arg0) {
+          if (constants3.GLOBAL_STICKER !== arg0) {
+            if (constants3.CUSTOM_PROFILES !== arg0) {
+              if (constants3.PREMIUM_GUILD_PROFILE !== arg0) {
+                if (constants3.APP_ICONS !== arg0) {
+                  if (constants3.STREAM_HIGH_QUALITY !== arg0) {
+                    if (constants3.SHOP_MEMBER_PRICING !== arg0) {
+                      if (constants3.LONGER_MESSAGE !== arg0) {
+                        if (constants3.GUILD_CAP !== arg0) {
+                          const ANIMATED_AVATAR = tmp13.ANIMATED_AVATAR;
+                        }
+                      }
+                      TIER_2_LEADING = tmp(tmp2[20]).PremiumFeatureCardOrder.TIER_0_LEADING;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    TIER_2_LEADING = tmp(tmp2[20]).PremiumFeatureCardOrder.TIER_2_LEADING;
+  }
+  if (cResult[1] === _location) {
+    if (cResult[2] === arg1) {
+      let tmp14;
+      let tmp15;
+      let tmp19;
+      if (cResult[3] === TIER_2_LEADING) {
+        tmp14 = cResult[4];
+      }
+      if (tmp9) {
+        let skuId1;
+        if (premiumTrialOffer != null) {
+          const subscriptionTrial2 = premiumTrialOffer.subscriptionTrial;
+          if (subscriptionTrial2 != null) {
+            skuId1 = subscriptionTrial2.skuId;
+          }
+        }
+        if (closure_8.TIER_0 === skuId1) {
+          let tmp23;
+          const _Symbol4 = Symbol;
+          if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+            const intl4 = tmp(tmp2[6]).intl;
+            const stringResult = intl4.string(require("intl").t.hz78hE);
+            cResult[5] = stringResult;
+            tmp23 = stringResult;
+          } else {
+            tmp23 = cResult[5];
+          }
+          tmp15 = tmp23;
+        } else if (tmp18.TIER_2 === skuId1) {
+          let tmp21;
+          const _Symbol3 = Symbol;
+          if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+            const intl3 = tmp(tmp2[6]).intl;
+            const stringResult1 = intl3.string(require("intl").t["Gd/XHF"]);
+            cResult[6] = stringResult1;
+            tmp21 = stringResult1;
+          } else {
+            tmp21 = cResult[6];
+          }
+          tmp15 = tmp21;
+        }
+        if (cResult[9] === tmp15) {
+          if (cResult[10] === tmp14) {
+            let tmp25;
+            if (cResult[11] === tmp10) {
+              tmp25 = cResult[12];
+            }
+            return tmp25;
+          }
+        }
+        let obj3 = { useTier0UpsellContent: tmp10, onViewAllPerks: tmp14, getNitroText: tmp15 };
+        cResult[9] = tmp15;
+        cResult[10] = tmp14;
+        cResult[11] = tmp10;
+        cResult[12] = obj3;
+        tmp25 = obj3;
+      } else if (tmp10) {
+        const _Symbol = Symbol;
+        if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl = tmp(tmp2[6]).intl;
+          const stringResult2 = intl.string(require("intl").t["9CM5v9"]);
+          cResult[7] = stringResult2;
+          tmp15 = stringResult2;
+        } else {
+          tmp15 = cResult[7];
+        }
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl2 = tmp(tmp2[6]).intl;
+        const stringResult3 = intl2.string(require("intl").t.pj0XBN);
+        cResult[8] = stringResult3;
+        tmp19 = stringResult3;
+      } else {
+        tmp19 = cResult[8];
+      }
+      tmp15 = tmp19;
+    }
+  }
+  class P {
+    constructor() {
+      tmp = closure_2;
+      obj = closure_0(closure_2[21]);
+      bestActiveInput = obj.getBestActiveInput();
+      if (bestActiveInput != null) {
+        closeCustomKeyboardResult = bestActiveInput.closeCustomKeyboard();
+      }
+      obj3 = closure_1(tmp[22]);
+      obj1 = { location: closure_1 };
+      trackResult = obj3.track(AnalyticEvents.PREMIUM_PROMOTION_OPENED, obj1);
+      obj5 = closure_1(tmp[23]);
+      hideAllActionSheetsResult = obj5.hideAllActionSheets();
+      obj8 = { analyticsLocation: null, analyticsLocations: null, premiumFeatureCardOrder: null };
+      obj9 = {};
+      tmp5 = closure_1(tmp[24]);
+      merged = Object.assign(closure_1);
+      obj9.object = AnalyticsObjects.BUTTON_CTA;
+      obj8.analyticsLocation = obj9;
+      items = closure_0;
+      if (closure_0 == null) {
+        items = [];
+      }
+      obj8.analyticsLocations = items;
+      obj8.premiumFeatureCardOrder = TIER_2_LEADING;
+      tmp5Result = tmp5(obj8);
+      return;
+    }
+  }
+  cResult[1] = _location;
+  cResult[2] = arg1;
+  cResult[3] = TIER_2_LEADING;
+  cResult[4] = P;
+  tmp14 = P;
+}) : ((arg0, arg1, _location) => {
+  let closure_0;
+  _require = arg0;
+  let closure_1 = arg1;
+  dependencyMap = _location;
   let obj = require("usePremiumTrialOffer");
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   let items = [, ];
@@ -47,7 +228,7 @@ function usePremiumUpsellConfig(upsellType, analyticsLocations, analyticsLocatio
   let hasItem = null != premiumTrialOffer;
   if (hasItem) {
     const tmp3 = set;
-    hasItem = set.has(upsellType);
+    hasItem = set.has(arg0);
   }
   let tmp4 = hasItem;
   if (tmp4) {
@@ -58,26 +239,26 @@ function usePremiumUpsellConfig(upsellType, analyticsLocations, analyticsLocatio
         skuId = subscriptionTrial.skuId;
       }
     }
-    tmp4 = skuId === TIER_0.TIER_0;
+    tmp4 = skuId === closure_8.TIER_0;
   }
   let closure_5 = tmp4;
-  const items1 = [upsellType, tmp4];
+  const items1 = [arg0, tmp4];
   const memo = premiumTrialOffer.useMemo(() => {
     const tmp = closure_5;
     if (tmp) {
       return PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_0_LEADING;
     } else {
-      if (metroImportDefault.UPLOAD !== upsellType) {
-        if (metroImportDefault.ANIMATED_EMOJI !== upsellType) {
-          if (metroImportDefault.GLOBAL_EMOJI !== upsellType) {
-            if (metroImportDefault.GLOBAL_STICKER !== upsellType) {
-              if (metroImportDefault.CUSTOM_PROFILES !== upsellType) {
-                if (metroImportDefault.PREMIUM_GUILD_PROFILE !== upsellType) {
-                  if (metroImportDefault.APP_ICONS !== upsellType) {
-                    if (metroImportDefault.STREAM_HIGH_QUALITY !== upsellType) {
-                      if (metroImportDefault.SHOP_MEMBER_PRICING !== upsellType) {
-                        if (metroImportDefault.LONGER_MESSAGE !== upsellType) {
-                          if (metroImportDefault.GUILD_CAP !== upsellType) {
+      if (metroImportDefault.UPLOAD !== closure_0) {
+        if (metroImportDefault.ANIMATED_EMOJI !== closure_0) {
+          if (metroImportDefault.GLOBAL_EMOJI !== closure_0) {
+            if (metroImportDefault.GLOBAL_STICKER !== closure_0) {
+              if (metroImportDefault.CUSTOM_PROFILES !== closure_0) {
+                if (metroImportDefault.PREMIUM_GUILD_PROFILE !== closure_0) {
+                  if (metroImportDefault.APP_ICONS !== closure_0) {
+                    if (metroImportDefault.STREAM_HIGH_QUALITY !== closure_0) {
+                      if (metroImportDefault.SHOP_MEMBER_PRICING !== closure_0) {
+                        if (metroImportDefault.LONGER_MESSAGE !== closure_0) {
+                          if (metroImportDefault.GUILD_CAP !== closure_0) {
                             const ANIMATED_AVATAR = tmp3.ANIMATED_AVATAR;
                           }
                         }
@@ -94,7 +275,7 @@ function usePremiumUpsellConfig(upsellType, analyticsLocations, analyticsLocatio
       return PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING;
     }
   }, items1);
-  const items2 = [memo, analyticsLocations, analyticsLocation];
+  const items2 = [memo, arg1, _location];
   const items3 = [tmp4, premiumTrialOffer, hasItem];
   const callback = premiumTrialOffer.useCallback(() => {
     let items;
@@ -113,8 +294,8 @@ function usePremiumUpsellConfig(upsellType, analyticsLocations, analyticsLocatio
     obj6 = { object: metroRequire.BUTTON_CTA };
     const tmp5 = openPremiumModalDefault;
     const merged = Object.assign(_location);
-    items = analyticsLocations;
-    if (analyticsLocations == null) {
+    items = closure_1;
+    if (closure_1 == null) {
       items = [];
     }
     tmp5(obj4);
@@ -151,10 +332,7 @@ function usePremiumUpsellConfig(upsellType, analyticsLocations, analyticsLocatio
     }, items3)
   };
   return obj2;
-}
-({ AnalyticEvents: hasOwnProperty, AnalyticsObjects: metroRequire, UpsellTypes: metroImportDefault } = Constants);
-({ PremiumSubscriptionSKUs: metroImportAll, PremiumTypes: c9 } = PremiumConstants);
-const jsx = Fragment.jsx;
+});
 let obj = {
   handleShowUpsellAlert(initialUpsellKey) {
     let closure_5;
@@ -236,7 +414,7 @@ let obj = {
           importer() {
                 let imageSource;
                 let largestFileSize;
-                const promise = asyncRequire(8623, dependencyMap.paths);
+                const promise = asyncRequire(8620, dependencyMap.paths);
                 return promise.then((result) => {
                   let closure_0 = result.default;
                   return (arg0) => {
@@ -252,7 +430,7 @@ let obj = {
       }
     }
   },
-  usePremiumUpsellConfig
+  usePremiumUpsellConfig: tmp4
 };
 const result = size.fileFinishedImporting("utils/native/PremiumUpsellUtils.tsx");
 
@@ -317,4 +495,4 @@ export const getUpsellItems = function getUpsellItems() {
   items[5] = obj8;
   return items;
 };
-export { usePremiumUpsellConfig };
+export const usePremiumUpsellConfig = tmp4;

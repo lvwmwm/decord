@@ -1,20 +1,21 @@
-// Module ID: 14972
-// Function ID: 14973
+// Module ID: 14960
+// Function ID: 14961
 // Name: UserSettingsLocale
-// Dependencies: [5, 19, 17, 2113, 2112, 21, 4836, 576, 8659, 504, 6544, 5997, 1115, 6000, 14973, 2]
+// Dependencies: [5, 19, 17, 2116, 2115, 21, 4837, 588, 8656, 558, 576, 504, 1127, 5994, 14961, 6546, 5995, 2]
 
-// Module 14972 (UserSettingsLocale)
+// Module 14960 (UserSettingsLocale)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2113 */;
-import TableRadioRow2 from "TableRadioRow" /* 6000 */;
-import flags from "flags" /* 14973 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2116 */;
+import TableRadioRow2 from "TableRadioRow" /* 5994 */;
+import flags from "flags" /* 14961 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import createStyles from "createStyles" /* 4836 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,7 +40,7 @@ let obj = function _handleLanguageChange() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -71,7 +72,7 @@ let obj = function _handleLanguageChange() {
           obj = closure_130_1(closure_130_2[8]);
           obj.updateLocale(closure_0);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp13) {
         c4 = 3;
@@ -87,7 +88,75 @@ const jsx = Fragment.jsx;
 obj = { content: obj2, flagImage: { width: 27, height: 18 } };
 obj2 = { padding: nativeDefault.space.PX_16 };
 let closure_9 = createStyles.createStyles(obj);
-const memoResult = react.memo(function UserSettingsLocale() {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let flagImage;
+  let locale;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  obj = require("react");
+  const cResult = obj.c(10);
+  const tmp4 = closure_9();
+  _require = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [LocaleStore];
+    const fn = function l() {
+      return locale.locale;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = require("get initialized");
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  const content = tmp4.content;
+  if (cResult[2] !== tmp4.flagImage) {
+    const tmpResult2 = require("intl");
+    const availableLocales = tmpResult2.getAvailableLocales();
+    const mapped = availableLocales.map((localizedName) => {
+      let name;
+      let value;
+      ({ name, value } = localizedName);
+      localizedName = localizedName.localizedName;
+      const TableRadioRow = TableRadioRow2.TableRadioRow;
+      const intl = intl2.intl;
+      ({ style: flagImage.flagImage, source: flags.flags[value] });
+      return <TableRadioRow key={name} value={value} label={name} subLabel={intl.string(localizedName)} icon={null} />;
+    });
+    cResult[2] = tmp4.flagImage;
+    cResult[3] = mapped;
+    tmp9 = mapped;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] === stateFromStores) {
+    let tmp11;
+    if (cResult[5] === tmp9) {
+      tmp11 = cResult[6];
+    }
+    if (cResult[7] === tmp4.content) {
+      let tmp13;
+      if (cResult[8] === tmp11) {
+        tmp13 = cResult[9];
+      }
+      return tmp13;
+    }
+    const tmp16 = <closure_5 contentContainerStyle={content}>{tmp11}</closure_5>;
+    cResult[7] = tmp4.content;
+    cResult[8] = tmp11;
+    cResult[9] = tmp16;
+    tmp13 = tmp16;
+  }
+  const SafeAreaPaddingView = tmp(6546).SafeAreaPaddingView;
+  const tmp12 = <SafeAreaPaddingView bottom>{null}</SafeAreaPaddingView>;
+  cResult[4] = stateFromStores;
+  cResult[5] = tmp9;
+  cResult[6] = tmp12;
+  tmp11 = tmp12;
+}) : (() => {
   let availableLocales;
   let flagImage;
   let locale;
@@ -116,7 +185,7 @@ const memoResult = react.memo(function UserSettingsLocale() {
   const obj5 = require("intl");
   availableLocales = obj5.getAvailableLocales();
   return <closure_5 contentContainerStyle={tmp.content}>{null}</closure_5>;
-});
+}));
 const result = size.fileFinishedImporting("modules/user_settings/language_and_time/native/UserSettingsLocale.tsx");
 
 export default memoResult;

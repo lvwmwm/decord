@@ -1,28 +1,28 @@
-// Module ID: 17135
-// Function ID: 17136
+// Module ID: 17137
+// Function ID: 17138
 // Name: GameConsoleManager
-// Dependencies: [5, 502, 1993, 4859, 4854, 4855, 4853, 8545, 4861, 3, 38, 9104, 9469, 6539, 2040, 9243, 1370, 5203, 1115, 17136, 9246, 2]
+// Dependencies: [5, 502, 1999, 4860, 4855, 4856, 4854, 8542, 4862, 3, 38, 9081, 9465, 6540, 2046, 9221, 1376, 5204, 1127, 17138, 9224, 2]
 
-// Module 17135 (GameConsoleManager)
+// Module 17137 (GameConsoleManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import intl3 from "intl" /* 1115 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import Timers from "Timers" /* 2040 */;
-import Constants from "Constants" /* 4861 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 9243 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 9246 */;
-import _modDef17136 from "module_17136" /* 17136 */;
+import intl3 from "intl" /* 1127 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import Timers from "Timers" /* 2046 */;
+import Constants from "Constants" /* 4862 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9081 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 9221 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 9224 */;
+import _modDef17138 from "module_17138" /* 17138 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import SessionsStore from "SessionsStore" /* 4854 */;
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
-import GameConsoleStore from "GameConsoleStore" /* 4853 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 8545 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import SessionsStore from "SessionsStore" /* 4855 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import GameConsoleStore from "GameConsoleStore" /* 4854 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 8542 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, channelId, sessionById, sessionId;
@@ -47,7 +47,7 @@ let obj = function _syncLocalState() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -86,7 +86,7 @@ let obj = function _syncLocalState() {
           obj2.toggleSelfDeaf({ syncRemote: false });
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp15) {
         c4 = 3;
         throw tmp15;
@@ -270,7 +270,7 @@ class GameConsoleManager extends AutomaticLifecycleManager {
               str2 = "";
             }
             let device = getDevice(type, str2);
-            const tmp8 = _modDef17136;
+            const tmp8 = _modDef17138;
             if (device == null) {
               obj = { id: "id", platform: intl.string(intl3.t["UQMV/E"]), name: intl2.string(intl3.t["UQMV/E"]) };
               intl = intl3.intl;
@@ -282,7 +282,7 @@ class GameConsoleManager extends AutomaticLifecycleManager {
               const obj4 = { title: null, body: null, errorCodeMessage: null, reconnectPlatformType: type1 };
               ({ title: obj2.title, body: obj2.body, errorCodeMessage: obj2.errorCodeMessage } = tmp8Result);
               type1 = undefined;
-              const showSelfDismissableAlert = tmp6(9246).showSelfDismissableAlert;
+              const showSelfDismissableAlert = tmp6(9224).showSelfDismissableAlert;
               GameConsoleAlertUtilsDefault;
               if (tmp8Result.isAccountLinkError) {
                 type1 = awaitingRemoteSessionInfo.type;

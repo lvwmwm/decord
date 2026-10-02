@@ -1,14 +1,14 @@
-// Module ID: 1373
-// Function ID: 1374
+// Module ID: 1379
+// Function ID: 1380
 // Name: OverridePremiumTypeStore
-// Dependencies: [1374, 1378, 1383, 504, 573, 2]
+// Dependencies: [1380, 1384, 1389, 504, 585, 2]
 
-// Module 1373 (OverridePremiumTypeStore)
+// Module 1379 (OverridePremiumTypeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import PerksStateUtils from "PerksStateUtils" /* 1378 */;
-import UserStoreUtils from "UserStoreUtils" /* 1383 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import PerksStateUtils from "PerksStateUtils" /* 1384 */;
+import UserStoreUtils from "UserStoreUtils" /* 1389 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
 import size from "module_2" /* 2 */;
 
 function setActualFromUser(user) {

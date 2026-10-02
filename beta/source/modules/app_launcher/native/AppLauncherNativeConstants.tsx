@@ -1,22 +1,25 @@
-// Module ID: 1484
-// Function ID: 1485
+// Module ID: 1490
+// Function ID: 1491
 // Name: AppLauncherNativeConstants
-// Dependencies: [1485, 576, 2, 1608]
+// Dependencies: [558, 1491, 588, 2, 1614]
 // Exports: useAppLauncherNavigation
 
-// Module 1484 (AppLauncherNativeConstants)
-import nativeDefault from "native" /* 576 */;
-import useNavigation from "useNavigation" /* 1485 */;
-import AssetRegistryDefault from "AssetRegistry" /* 1608 */;
+// Module 1490 (AppLauncherNativeConstants)
+import nativeDefault from "native" /* 588 */;
+import useNavigation from "useNavigation" /* 1491 */;
+import AssetRegistryDefault from "AssetRegistry" /* 1614 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const PX_16 = nativeDefault.space.PX_16;
 const MOBILE_KEYBOARD_PANEL_BACKGROUND = nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND;
-const result = size.fileFinishedImporting("modules/app_launcher/native/AppLauncherNativeConstants.tsx");
+const result1 = size.fileFinishedImporting("modules/app_launcher/native/AppLauncherNativeConstants.tsx");
 
 export const APP_LAUNCHER_BUILT_IN_SECTION_ICON = AssetRegistryDefault;
 export const AppLauncherRouteName = { HOME: "home", APPLICATION_VIEW: "application_view", COMMAND_VIEW: "command_view", APP_LIST_VIEW: "app_list_view" };
-export const useAppLauncherNavigation = function useAppLauncherNavigation() {
+export const useAppLauncherNavigation = () => {
   const obj = useNavigation;
   return obj.useNativeStackNavigation();
 };

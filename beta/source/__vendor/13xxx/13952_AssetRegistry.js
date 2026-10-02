@@ -1,10 +1,10 @@
 // Module ID: 13952
 // Function ID: 13953
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 13952 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "76c09ebc2fd9700ae36ec8729cee1e9d", name: "NotificationsTab", type: "lottie" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "42c5142fba4f2f3f3d86c5b7ea6fd4ac", name: "YouTab", type: "lottie" });

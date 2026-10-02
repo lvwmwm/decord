@@ -1,29 +1,255 @@
-// Module ID: 5734
-// Function ID: 5735
+// Module ID: 5735
+// Function ID: 5736
 // Name: useStageSpeakingForCurrentUser
-// Dependencies: [2045, 4469, 2099, 1085, 5048, 5735, 5736, 504, 2]
-// Exports: isStageSpeakingDisabledForCurrentUser, shouldAgeVerifyToSpeakForCurrentUser, useIsStageSpeakingDisabledForCurrentUser, useShouldAgeVerifyToSpeakForCurrentUser, useShouldShowAgeVerificationForEvent, useShouldShowAgeVerificationPopover
+// Dependencies: [2051, 4472, 2102, 1097, 558, 5049, 5736, 5737, 576, 504, 2]
+// Exports: isStageSpeakingDisabledForCurrentUser, shouldAgeVerifyToSpeakForCurrentUser
 
-// Module 5734 (useStageSpeakingForCurrentUser)
-import Constants from "Constants" /* 1085 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5048 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5735 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5736 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+// Module 5735 (useStageSpeakingForCurrentUser)
+import Constants from "Constants" /* 1097 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5049 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5736 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5737 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const Permissions = Constants.Permissions;
-const result = size.fileFinishedImporting("modules/stage_channels/useStageSpeakingForCurrentUser.tsx");
+const require = globalThis.__r;
+let _require, tmp6;
 
-export const useIsStageSpeakingDisabledForCurrentUser = function useIsStageSpeakingDisabledForCurrentUser() {
+const Permissions = Constants.Permissions;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = AgeVerificationUtils;
   const isVerifiedTeen = obj.useIsVerifiedTeen();
   const obj2 = RegionalFeatureConfigUtils;
   const tmp2 = obj2.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.STAGE_SPEAKING) && isVerifiedTeen;
   return tmp2;
-};
+}) : (() => {
+  const obj = AgeVerificationUtils;
+  const isVerifiedTeen = obj.useIsVerifiedTeen();
+  const obj2 = RegionalFeatureConfigUtils;
+  const tmp2 = obj2.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.STAGE_SPEAKING) && isVerifiedTeen;
+  return tmp2;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let tmp11;
+  let tmp12;
+  let tmp4;
+  let tmp8;
+  const tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(6);
+  if (cResult[0] !== arg0) {
+    let channelId = arg0;
+    if (null == arg0) {
+      channelId = SelectedChannelStore.getChannelId();
+    }
+    cResult[0] = arg0;
+    cResult[1] = channelId;
+    tmp4 = channelId;
+  } else {
+    tmp4 = cResult[1];
+  }
+  _require = tmp4;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore, ChannelStore];
+    cResult[2] = items;
+    tmp8 = items;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] !== tmp4) {
+    class E {
+      constructor() {
+        channel = null;
+        if (null != closure_0) {
+          tmp3 = closure_2;
+          channel = closure_2.getChannel(tmp);
+        }
+        canResult = null != channel;
+        if (canResult) {
+          tmp5 = closure_3;
+          tmp6 = Permissions;
+          canResult = closure_3.can(Permissions.REQUEST_TO_SPEAK, channel);
+        }
+        return canResult;
+      }
+    }
+    const items1 = [tmp4];
+    cResult[3] = tmp4;
+    cResult[4] = E;
+    cResult[5] = items1;
+    tmp12 = items1;
+    tmp11 = E;
+  } else {
+    class E {
+      constructor() {
+        channel = null;
+        if (null != closure_0) {
+          tmp3 = closure_2;
+          channel = closure_2.getChannel(tmp);
+        }
+        canResult = null != channel;
+        if (canResult) {
+          tmp5 = closure_3;
+          tmp6 = Permissions;
+          canResult = closure_3.can(Permissions.REQUEST_TO_SPEAK, channel);
+        }
+        return canResult;
+      }
+    }
+    tmp12 = cResult[5];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp11, tmp12);
+  const tmpResult3 = tmp(5049);
+  const isVerifiedAdult = tmpResult3.useIsVerifiedAdult();
+  const tmpResult4 = tmp(5736);
+  const tmp15 = tmpResult4.useIsFeatureAgeGated(tmp(5737).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult && stateFromStores;
+  return tmp15;
+}) : ((arg0) => {
+  let channelId = arg0;
+  if (null == arg0) {
+    channelId = SelectedChannelStore.getChannelId();
+  }
+  const items = [PermissionStore, ChannelStore];
+  const items1 = [channelId];
+  const obj = channelId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    let channel = null;
+    if (null != channelId) {
+      channel = ChannelStore.getChannel(tmp);
+    }
+    const canResult = null != channel && PermissionStore.can(Permissions.REQUEST_TO_SPEAK, channel);
+    return canResult;
+  }, items1);
+  const obj2 = channelId(5049);
+  const isVerifiedAdult = obj2.useIsVerifiedAdult();
+  const obj3 = channelId(5736);
+  const tmp5 = obj3.useIsFeatureAgeGated(channelId(5737).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult && stateFromStores;
+  return tmp5;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let tmp11;
+  let tmp12;
+  let tmp4;
+  let tmp8;
+  const tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(6);
+  if (cResult[0] !== arg0) {
+    let channelId = arg0;
+    if (null == arg0) {
+      channelId = SelectedChannelStore.getChannelId();
+    }
+    cResult[0] = arg0;
+    cResult[1] = channelId;
+    tmp4 = channelId;
+  } else {
+    tmp4 = cResult[1];
+  }
+  _require = tmp4;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore, ChannelStore];
+    cResult[2] = items;
+    tmp8 = items;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] !== tmp4) {
+    class E {
+      constructor() {
+        channel = null;
+        if (null != closure_0) {
+          tmp3 = closure_2;
+          channel = closure_2.getChannel(tmp);
+        }
+        canResult = null != channel;
+        if (canResult) {
+          tmp5 = closure_3;
+          tmp6 = Permissions;
+          canResult = closure_3.can(Permissions.REQUEST_TO_SPEAK, channel);
+        }
+        return canResult;
+      }
+    }
+    const items1 = [tmp4];
+    cResult[3] = tmp4;
+    cResult[4] = E;
+    cResult[5] = items1;
+    tmp12 = items1;
+    tmp11 = E;
+  } else {
+    class E {
+      constructor() {
+        channel = null;
+        if (null != closure_0) {
+          tmp3 = closure_2;
+          channel = closure_2.getChannel(tmp);
+        }
+        canResult = null != channel;
+        if (canResult) {
+          tmp5 = closure_3;
+          tmp6 = Permissions;
+          canResult = closure_3.can(Permissions.REQUEST_TO_SPEAK, channel);
+        }
+        return canResult;
+      }
+    }
+    tmp12 = cResult[5];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp11, tmp12);
+  const tmpResult3 = tmp(5049);
+  const isAgeVerified = tmpResult3.useIsAgeVerified();
+  const tmpResult4 = tmp(5736);
+  const tmp15 = tmpResult4.useIsFeatureAgeGated(tmp(5737).AgeGatedFeature.STAGE_SPEAKING) && !isAgeVerified && stateFromStores;
+  return tmp15;
+}) : ((arg0) => {
+  let channelId = arg0;
+  if (null == arg0) {
+    channelId = SelectedChannelStore.getChannelId();
+  }
+  const items = [PermissionStore, ChannelStore];
+  const items1 = [channelId];
+  const obj = channelId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    let channel = null;
+    if (null != channelId) {
+      channel = ChannelStore.getChannel(tmp);
+    }
+    const canResult = null != channel && PermissionStore.can(Permissions.REQUEST_TO_SPEAK, channel);
+    return canResult;
+  }, items1);
+  const obj2 = channelId(5049);
+  const isAgeVerified = obj2.useIsAgeVerified();
+  const obj3 = channelId(5736);
+  const tmp5 = obj3.useIsFeatureAgeGated(channelId(5737).AgeGatedFeature.STAGE_SPEAKING) && !isAgeVerified && stateFromStores;
+  return tmp5;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = AgeVerificationUtils;
+  const isVerifiedAdult = obj.useIsVerifiedAdult();
+  const obj2 = RegionalFeatureConfigUtils;
+  const tmp2 = obj2.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult;
+  return tmp2;
+}) : (() => {
+  const obj = AgeVerificationUtils;
+  const isVerifiedAdult = obj.useIsVerifiedAdult();
+  const obj2 = RegionalFeatureConfigUtils;
+  const tmp2 = obj2.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult;
+  return tmp2;
+});
+const result = size.fileFinishedImporting("modules/stage_channels/useStageSpeakingForCurrentUser.tsx");
+
+export const useIsStageSpeakingDisabledForCurrentUser = tmp2;
 export const isStageSpeakingDisabledForCurrentUser = function isStageSpeakingDisabledForCurrentUser() {
   const obj = AgeVerificationUtils;
   const isVerifiedTeenResult = obj.isVerifiedTeen();
@@ -47,54 +273,6 @@ export const shouldAgeVerifyToSpeakForCurrentUser = function shouldAgeVerifyToSp
   const tmp11 = tmp2Result.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdultResult && canResult;
   return tmp11;
 };
-export const useShouldAgeVerifyToSpeakForCurrentUser = function useShouldAgeVerifyToSpeakForCurrentUser(id) {
-  let channelId = id;
-  if (null == id) {
-    channelId = SelectedChannelStore.getChannelId();
-  }
-  const items = [PermissionStore, ChannelStore];
-  const items1 = [channelId];
-  const obj = channelId(504);
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    let channel = null;
-    if (null != channelId) {
-      channel = ChannelStore.getChannel(tmp);
-    }
-    const canResult = null != channel && PermissionStore.can(Permissions.REQUEST_TO_SPEAK, channel);
-    return canResult;
-  }, items1);
-  const obj2 = channelId(5048);
-  const isVerifiedAdult = obj2.useIsVerifiedAdult();
-  const obj3 = channelId(5735);
-  const tmp5 = obj3.useIsFeatureAgeGated(channelId(5736).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult && stateFromStores;
-  return tmp5;
-};
-export const useShouldShowAgeVerificationPopover = function useShouldShowAgeVerificationPopover(id) {
-  let channelId = id;
-  if (null == id) {
-    channelId = SelectedChannelStore.getChannelId();
-  }
-  const items = [PermissionStore, ChannelStore];
-  const items1 = [channelId];
-  const obj = channelId(504);
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    let channel = null;
-    if (null != channelId) {
-      channel = ChannelStore.getChannel(tmp);
-    }
-    const canResult = null != channel && PermissionStore.can(Permissions.REQUEST_TO_SPEAK, channel);
-    return canResult;
-  }, items1);
-  const obj2 = channelId(5048);
-  const isAgeVerified = obj2.useIsAgeVerified();
-  const obj3 = channelId(5735);
-  const tmp5 = obj3.useIsFeatureAgeGated(channelId(5736).AgeGatedFeature.STAGE_SPEAKING) && !isAgeVerified && stateFromStores;
-  return tmp5;
-};
-export const useShouldShowAgeVerificationForEvent = function useShouldShowAgeVerificationForEvent() {
-  const obj = AgeVerificationUtils;
-  const isVerifiedAdult = obj.useIsVerifiedAdult();
-  const obj2 = RegionalFeatureConfigUtils;
-  const tmp2 = obj2.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult;
-  return tmp2;
-};
+export const useShouldAgeVerifyToSpeakForCurrentUser = tmp3;
+export const useShouldShowAgeVerificationPopover = tmp4;
+export const useShouldShowAgeVerificationForEvent = tmp5;

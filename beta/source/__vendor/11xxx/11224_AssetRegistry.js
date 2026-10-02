@@ -1,10 +1,10 @@
 // Module ID: 11224
 // Function ID: 11225
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 11224 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/polls/native/images", width: 138, height: 130, scales: [2, 3], hash: "2b9e354438218d1560976bef68047eb2", name: "load-issue-dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_automod/images", width: 32, height: 32, scales: [1, 2, 3], hash: "c1e94f3a9063956a896dc2a0d96e8ae1", name: "ic_blocked_chat_bubble_icon", type: "png" });

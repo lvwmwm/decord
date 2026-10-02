@@ -1,30 +1,37 @@
 // Module ID: 13778
 // Function ID: 13779
-// Dependencies: [13691, 13779]
-// Exports: getSupportedTimeZones
+// Dependencies: [13693, 13779]
+// Exports: getSupportedNumberingSystems
 
 // Module 13778
 const require = globalThis.__r;
 let _require;
 
 
-export const getSupportedTimeZones = function getSupportedTimeZones(locale) {
+export const getSupportedNumberingSystems = function getSupportedNumberingSystems(locale) {
   _require = locale;
-  const timezones = require("module_13779").timezones;
-  return timezones.filter((item) => {
-    function isSupported(timeZone, arg1) {
+  const numberingSystemNames = require("numberingSystemNames").numberingSystemNames;
+  return numberingSystemNames.filter((item) => {
+    function isSupportedNumberingSystem(item, arg1) {
       let str = arg1;
       if (undefined === arg1) {
         str = "en";
       }
       try {
-        const obj = { timeZone };
-        const memoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat(str, obj);
-        return memoizedDateTimeFormat.resolvedOptions().timeZone === timeZone;
+        const concat = "".concat;
+        const createMemoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat;
+        const combined = "".concat(str, "-u-nu-");
+        const memoizedNumberFormat = createMemoizedNumberFormat(combined.concat(item));
+        const obj3 = memoizedNumberFormat;
+        if (memoizedNumberFormat.resolvedOptions().numberingSystem !== item) {
+          if ("123" === obj3.format(123)) {
+            return false;
+          }
+        }
+        return true;
       } catch (err) {
-        return false;
       }
     }
-    return isSupported(item, locale);
+    return isSupportedNumberingSystem(item, locale);
   });
 };

@@ -1,11 +1,11 @@
-// Module ID: 2036
-// Function ID: 2037
+// Module ID: 2042
+// Function ID: 2043
 // Name: LoginRequiredActionStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 2036 (LoginRequiredActionStore)
+// Module 2042 (LoginRequiredActionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let closure_0;

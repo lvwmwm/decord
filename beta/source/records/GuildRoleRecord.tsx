@@ -1,13 +1,13 @@
-// Module ID: 2103
-// Function ID: 2104
+// Module ID: 2106
+// Function ID: 2107
 // Name: GuildRoleRecord
-// Dependencies: [2060, 1086, 12, 2]
+// Dependencies: [2066, 1098, 12, 2]
 // Exports: hasAnyPermission, hasPermission, isEveryoneRole, isRoleEqual
 
-// Module 2103 (GuildRoleRecord)
+// Module 2106 (GuildRoleRecord)
 import _modDef12 from "module_12" /* 12 */;
-import BigFlagUtils from "BigFlagUtils" /* 1086 */;
-import PlainRecord from "PlainRecord" /* 2060 */;
+import BigFlagUtils from "BigFlagUtils" /* 1098 */;
+import PlainRecord from "PlainRecord" /* 2066 */;
 import size from "module_2" /* 2 */;
 
 const TypeTag = PlainRecord.TypeTag;

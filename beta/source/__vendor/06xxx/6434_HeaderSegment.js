@@ -1,12 +1,12 @@
 // Module ID: 6434
 // Function ID: 6435
 // Name: HeaderSegment
-// Dependencies: [109, 32, 19, 17, 21, 1486, 5943]
+// Dependencies: [109, 32, 19, 17, 21, 1492, 5942]
 // Exports: HeaderSegment
 
 // Module 6434 (HeaderSegment)
 import Fragment from "Fragment" /* 21 */;
-import _mod5943 from "module_5943" /* 5943 */;
+import _mod5942 from "module_5942" /* 5942 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -170,7 +170,7 @@ export const HeaderSegment = function HeaderSegment(progress) {
     modal,
     layout,
     headerTitle: typeof headerTitle !== "function" ? ((arg0) => {
-      const HeaderTitle = _mod5943.HeaderTitle;
+      const HeaderTitle = _mod5942.HeaderTitle;
       const merged = Object.assign(arg0);
       return <HeaderTitle onLayout={handleTitleLayout} />;
     }) : ((arg0) => {

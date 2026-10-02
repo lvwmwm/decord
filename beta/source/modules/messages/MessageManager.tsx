@@ -1,36 +1,36 @@
-// Module ID: 9398
-// Function ID: 9399
+// Module ID: 9394
+// Function ID: 9395
 // Name: MessageManager
-// Dependencies: [32, 4852, 5589, 2049, 6698, 2045, 2067, 4851, 2099, 4655, 1074, 2052, 1091, 3, 5584, 9399, 4763, 7822, 6876, 9400, 510, 4660, 1101, 6700, 5203, 1115, 573, 6539, 2]
+// Dependencies: [32, 4853, 5590, 2055, 6699, 2051, 2073, 4852, 2102, 4657, 1086, 2058, 1103, 3, 5585, 9395, 4765, 7826, 6880, 9396, 510, 4662, 1113, 6701, 5204, 1127, 585, 6540, 2]
 
-// Module 9398 (MessageManager)
+// Module 9394 (MessageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import router_utils from "router_utils" /* 1101 */;
-import intl3 from "intl" /* 1115 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import ChannelConstants from "ChannelConstants" /* 2052 */;
-import matchPathCompat from "matchPathCompat" /* 4660 */;
-import flow_Client from "flow/Client" /* 4763 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 5584 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6700 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9399 */;
-import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9400 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import router_utils from "router_utils" /* 1113 */;
+import intl3 from "intl" /* 1127 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import matchPathCompat from "matchPathCompat" /* 4662 */;
+import flow_Client from "flow/Client" /* 4765 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 5585 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6701 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6880 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9395 */;
+import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9396 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6698 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import ReadStateStore from "ReadStateStore" /* 4851 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
-import Constants from "Constants" /* 1074 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4853 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6699 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import ReadStateStore from "ReadStateStore" /* 4852 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import Constants from "Constants" /* 1086 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let map, obj3;
@@ -103,7 +103,7 @@ function fetchMessages(arg0) {
             if (!GatewayConnectionStore.isConnected()) {
               flag = true;
             }
-            const hasUnreadResult = tmp7(7822)(channelId) && ReadStateStore.hasUnread(channelId);
+            const hasUnreadResult = tmp7(7826)(channelId) && ReadStateStore.hasUnread(channelId);
             if (hasUnreadResult) {
               flag = true;
             }

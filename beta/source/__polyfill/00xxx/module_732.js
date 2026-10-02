@@ -1,53 +1,32 @@
 // Module ID: 732
 // Function ID: 733
-// Dependencies: [692]
-// Exports: handleCallbackErrors
+// Dependencies: [725]
+// Exports: hasSpansEnabled
 
 // Module 732
-import _mod692 from "module_692" /* 692 */;
+import _mod725 from "module_725" /* 725 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const handleCallbackErrors = function handleCallbackErrors(fn, fn2) {
-  function maybeHandlePromiseRejection(promise, fn2, fn, fn22) {
-    let closure_0 = fn2;
-    let closure_1 = fn;
-    let closure_2 = fn2;
-    const obj = _mod692;
-    if (obj.isThenable(promise)) {
-      return promise.then((result) => {
-        closure_1();
-        closure_2(result);
-        return result;
-      }, (arg0) => {
-        closure_0(arg0);
-        closure_1();
-        throw arg0;
-      });
-    } else {
-      fn();
-      fn2(promise);
-      return promise;
+export const hasSpansEnabled = function hasSpansEnabled(options) {
+  if (typeof globalThis.__SENTRY_TRACING__ === "boolean") {
+    if (!globalThis.__SENTRY_TRACING__) {
+      return false;
     }
   }
-  fn = arg2;
-  if (arg2 === undefined) {
-    fn = function t() {
-
-    };
+  let tmp = options;
+  if (!tmp) {
+    const obj = _mod725;
+    const client = obj.getClient();
+    options = undefined;
+    if (client != null) {
+      options = client.getOptions();
+    }
+    tmp = options;
   }
-  fn2 = arg3;
-  if (arg3 === undefined) {
-    fn2 = function o() {
-
-    };
+  let tmp6 = !tmp;
+  if (tmp) {
+    tmp6 = null == tmp.tracesSampleRate && !tmp.tracesSampler;
   }
-  try {
-    const tmp2 = fn();
-    return maybeHandlePromiseRejection(tmp2, fn2, fn, fn2);
-  } catch (tmp7) {
-    fn2(tmp7);
-    fn();
-    throw tmp7;
-  }
+  return !tmp6;
 };

@@ -1,13 +1,13 @@
-// Module ID: 4533
-// Function ID: 4534
+// Module ID: 4537
+// Function ID: 4538
 // Name: native
-// Dependencies: [2, 4534, 4536, 4537, 4538]
+// Dependencies: [2, 4538, 4540, 4541, 4542]
 
-// Module 4533 (native)
-import getNodeText from "getNodeText" /* 4534 */;
-import mergeProps from "mergeProps" /* 4536 */;
-import useFocus from "useFocus" /* 4537 */;
-import themes from "themes" /* 4538 */;
+// Module 4537 (native)
+import getNodeText from "getNodeText" /* 4538 */;
+import mergeProps from "mergeProps" /* 4540 */;
+import useFocus from "useFocus" /* 4541 */;
+import themes from "themes" /* 4542 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/utils/native.tsx");

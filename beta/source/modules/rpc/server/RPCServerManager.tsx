@@ -1,37 +1,37 @@
-// Module ID: 14019
-// Function ID: 14020
+// Module ID: 14021
+// Function ID: 14022
 // Name: RPCServerManager
-// Dependencies: [32, 8499, 7116, 2045, 2108, 2067, 1993, 4876, 4859, 4479, 2099, 1372, 4855, 4739, 1074, 2005, 8500, 4861, 1364, 573, 1241, 14020, 504, 1370, 8775, 8781, 14025, 8776, 7137, 2]
+// Dependencies: [32, 8496, 7120, 2051, 2111, 2073, 1999, 4877, 4860, 4482, 2102, 1378, 4856, 4741, 1086, 2011, 8497, 4862, 1370, 585, 1253, 14022, 504, 1376, 8770, 8776, 14027, 8771, 7141, 2]
 
-// Module 14019 (RPCServerManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import Constants2 from "Constants" /* 2005 */;
-import Constants3 from "Constants" /* 4739 */;
-import Constants4 from "Constants" /* 4861 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7137 */;
-import FramesConstants from "FramesConstants" /* 8500 */;
-import RPCHelpers from "RPCHelpers" /* 8775 */;
-import transformUserDefault from "transformUser" /* 8776 */;
-import useThermalState from "useThermalState" /* 8781 */;
-import VibegrationsVoiceSessionCoordinatorDefault from "VibegrationsVoiceSessionCoordinator" /* 14020 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14025 */;
+// Module 14021 (RPCServerManager)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import Constants2 from "Constants" /* 2011 */;
+import Constants3 from "Constants" /* 4741 */;
+import Constants4 from "Constants" /* 4862 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7141 */;
+import FramesConstants from "FramesConstants" /* 8497 */;
+import RPCHelpers from "RPCHelpers" /* 8770 */;
+import transformUserDefault from "transformUser" /* 8771 */;
+import useThermalState from "useThermalState" /* 8776 */;
+import VibegrationsVoiceSessionCoordinatorDefault from "VibegrationsVoiceSessionCoordinator" /* 14022 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14027 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import FramesStore from "FramesStore" /* 8499 */;
-import QuestStore from "QuestStore" /* 7116 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import PresenceStore from "PresenceStore" /* 4876 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
-import Constants from "Constants" /* 1074 */;
+import FramesStore from "FramesStore" /* 8496 */;
+import QuestStore from "QuestStore" /* 7120 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import PresenceStore from "PresenceStore" /* 4877 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import UserStore from "UserStore" /* 1378 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let frameByIframeId, set;
@@ -163,7 +163,7 @@ class RPCServerManager {
         obj3 = RPCHelpers;
         const tmp8 = require;
         if (null != icon) {
-          const tmp8Result = tmp8(8775);
+          const tmp8Result = tmp8(8770);
           remoteIconURL = tmp8Result.getRemoteIconURL(icon);
         }
         const result = dispatchToSubscriptions(NOTIFICATION_CREATE, {}, obj);

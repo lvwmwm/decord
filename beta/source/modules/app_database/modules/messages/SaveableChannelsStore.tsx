@@ -1,19 +1,19 @@
-// Module ID: 6898
-// Function ID: 6899
+// Module ID: 6902
+// Function ID: 6903
 // Name: SaveableChannelsStore
-// Dependencies: [2045, 4754, 1073, 2099, 6899, 6900, 6901, 6903, 6904, 6905, 6906, 2]
+// Dependencies: [2051, 4756, 1085, 2102, 6903, 6904, 6905, 6907, 6908, 6909, 6910, 2]
 
-// Module 6898 (SaveableChannelsStore)
-import ExtendedMemoryLru from "ExtendedMemoryLru" /* 6900 */;
-import Lru from "Lru" /* 6901 */;
-import isPrivateChannel from "isPrivateChannel" /* 6903 */;
-import isReadableChannel from "isReadableChannel" /* 6904 */;
-import withFallbacks from "withFallbacks" /* 6906 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4754 */;
-import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1073 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import FileSystemStore from "FileSystemStore" /* 6899 */;
+// Module 6902 (SaveableChannelsStore)
+import ExtendedMemoryLru from "ExtendedMemoryLru" /* 6904 */;
+import Lru from "Lru" /* 6905 */;
+import isPrivateChannel from "isPrivateChannel" /* 6907 */;
+import isReadableChannel from "isReadableChannel" /* 6908 */;
+import withFallbacks from "withFallbacks" /* 6910 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4756 */;
+import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1085 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import FileSystemStore from "FileSystemStore" /* 6903 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -215,7 +215,7 @@ class SaveableChannelsStore extends MobileCacheSnapshotStore {
         const obj = { guildId: guild_id, channelId: id, channelType: basicChannel.type };
         lastChannel = obj;
         extendedMemoryLru.put(id, obj);
-        const tmp8Result = tmp8(6905);
+        const tmp8Result = tmp8(6909);
         if (tmp8Result.isLimitedChannel(basicChannel)) {
           if (null != lru.put(id, null)) {
             extendedMemoryLru.delete(id);

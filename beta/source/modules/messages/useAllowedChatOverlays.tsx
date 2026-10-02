@@ -1,17 +1,18 @@
-// Module ID: 10967
-// Function ID: 10968
+// Module ID: 10835
+// Function ID: 10836
 // Name: useAllowedChatOverlays
-// Dependencies: [2044, 2045, 10965, 8502, 563, 4458, 8803, 2]
-// Exports: default
+// Dependencies: [2050, 2051, 10833, 8499, 558, 576, 573, 4461, 8798, 2]
 
-// Module 10967 (useAllowedChatOverlays)
-import useStateFromStores from "useStateFromStores" /* 563 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4458 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8502 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 8803 */;
-import ChatOverlayConstants from "ChatOverlayConstants" /* 10965 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+// Module 10835 (useAllowedChatOverlays)
+import useStateFromStores from "useStateFromStores" /* 573 */;
+import react from "react" /* 576 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4461 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 8499 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 8798 */;
+import ChatOverlayConstants from "ChatOverlayConstants" /* 10833 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -34,9 +35,58 @@ obj[ActivityPanelModes.PIP] = items3;
 const items4 = [, , ];
 ({ NEW_MESSAGES: arr5[0], OPT_IN_CHANNEL: arr5[1], SUMMARIES: arr5[2] } = ChatOverlays);
 obj[ActivityPanelModes.ACTIVITY_POPOUT_WINDOW] = items4;
-const result = size.fileFinishedImporting("modules/messages/useAllowedChatOverlays.tsx");
-
-export default function useAllowedChatOverlays() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  obj = react;
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [EmbeddedActivitiesStore];
+    class E {
+      constructor() {
+        return closure_1_3.getCurrentEmbeddedActivity();
+      }
+    }
+    cResult[0] = items;
+    cResult[1] = E;
+    tmp4 = items;
+    tmp5 = E;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = useStateFromStores;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [EmbeddedActivitiesStore];
+    class E {
+      constructor() {
+        return closure_1_3.getCurrentEmbeddedActivity();
+      }
+    }
+    cResult[2] = items1;
+    cResult[3] = tmp11;
+    tmp9 = tmp11;
+    tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult3 = useStateFromStores;
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp9);
+  embeddedActivityLocationUtils;
+  if (stateFromStores != null) {
+    const _location = stateFromStores.location;
+  }
+  if (undefined !== stateFromStores) {
+    class E {
+      constructor() {
+        return closure_1_3.getCurrentEmbeddedActivity();
+      }
+    }
+  }
+}) : (() => {
   obj = useStateFromStores;
   const items = [EmbeddedActivitiesStore];
   const stateFromStores = obj.useStateFromStores(items, () => EmbeddedActivitiesStore.getCurrentEmbeddedActivity());
@@ -55,4 +105,7 @@ export default function useAllowedChatOverlays() {
     return tmp9;
   }
   tmp9 = obj[no_text_activity];
-};
+});
+const result = size.fileFinishedImporting("modules/messages/useAllowedChatOverlays.tsx");
+
+export default tmp2;

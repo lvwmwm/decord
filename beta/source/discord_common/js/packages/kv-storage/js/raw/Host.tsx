@@ -1,10 +1,10 @@
-// Module ID: 2083
-// Function ID: 2084
+// Module ID: 2086
+// Function ID: 2087
 // Name: Host
-// Dependencies: [5, 2084, 2076, 2]
+// Dependencies: [5, 2087, 2079, 2]
 
-// Module 2083 (Host)
-import _mod2076 from "module_2076" /* 2076 */;
+// Module 2086 (Host)
+import _mod2079 from "module_2079" /* 2079 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ class Host {
     const Runtime = require("Runtime").Runtime;
     return Runtime.executeAsync("database_open", async (arg0) => {
       let flag;
-      const KV_RAW = _mod2076.KV_RAW;
+      const KV_RAW = _mod2079.KV_RAW;
       const obj = { database, invalidateDisabledHandles: flag };
       flag = undefined;
       const databaseOpen = KV_RAW.databaseOpen;
@@ -35,7 +35,7 @@ class Host {
   }
   static openSyncUnsafe(database, invalidateDisabledHandles) {
     let flag;
-    const KV_RAW = _mod2076.KV_RAW;
+    const KV_RAW = _mod2079.KV_RAW;
     const obj = { database, invalidateDisabledHandles: flag };
     flag = undefined;
     const databaseOpen = KV_RAW.databaseOpen;
@@ -51,7 +51,7 @@ class Host {
     _require = database;
     const Runtime = require("Runtime").Runtime;
     return Runtime.executeAsync("database_delete", async (arg0) => {
-      const KV_RAW = _mod2076.KV_RAW;
+      const KV_RAW = _mod2079.KV_RAW;
       const obj = { database };
       return KV_RAW.databaseDelete(arg0, obj);
     });
@@ -73,21 +73,21 @@ class Host {
     _require = aggressive;
     const Runtime = require("Runtime").Runtime;
     return Runtime.executeAsync("database_optimize", async (arg0) => {
-      const KV_RAW = _mod2076.KV_RAW;
+      const KV_RAW = _mod2079.KV_RAW;
       const obj = { aggressive };
       return KV_RAW.databaseOptimize(arg0, obj);
     });
   }
   static raise(arg0) {
-    const KV_RAW = _mod2076.KV_RAW;
+    const KV_RAW = _mod2079.KV_RAW;
     KV_RAW.raise(arg0);
   }
   static malformedValueCount() {
-    const KV_RAW = _mod2076.KV_RAW;
+    const KV_RAW = _mod2079.KV_RAW;
     return KV_RAW.malformedValueCount();
   }
   static malformedEntryCount() {
-    const KV_RAW = _mod2076.KV_RAW;
+    const KV_RAW = _mod2079.KV_RAW;
     return KV_RAW.malformedEntryCount();
   }
 }

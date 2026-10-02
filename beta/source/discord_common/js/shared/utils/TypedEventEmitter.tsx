@@ -1,17 +1,17 @@
-// Module ID: 4894
-// Function ID: 4895
+// Module ID: 4895
+// Function ID: 4896
 // Name: TypedEventEmitter
-// Dependencies: [568, 2]
+// Dependencies: [580, 2]
 
-// Module 4894 (TypedEventEmitter)
-import _mod568 from "module_568" /* 568 */;
+// Module 4895 (TypedEventEmitter)
+import _mod580 from "module_580" /* 580 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/TypedEventEmitter.tsx");
 class TypedEventEmitter {
   constructor() {
     const merged = Object.assign({ emitter: null });
-    const eventEmitter = new _mod568.EventEmitter();
+    const eventEmitter = new _mod580.EventEmitter();
     merged[0] = eventEmitter;
     return merged;
   }

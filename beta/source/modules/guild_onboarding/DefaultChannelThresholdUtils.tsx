@@ -1,17 +1,17 @@
-// Module ID: 9018
-// Function ID: 9019
+// Module ID: 8995
+// Function ID: 8996
 // Name: DefaultChannelThresholdUtils
-// Dependencies: [5, 2067, 6521, 6522, 1074, 6520, 6527, 1086, 5203, 1115, 2]
+// Dependencies: [5, 2073, 6522, 6523, 1086, 6521, 6528, 1098, 5204, 1127, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 9018 (DefaultChannelThresholdUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 6520 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6522 */;
+// Module 8995 (DefaultChannelThresholdUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 6521 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6523 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6521 */;
-import Constants from "Constants" /* 1074 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6522 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, guild, set;
@@ -33,7 +33,7 @@ let obj = function _isDefaultChannelThresholdMetAfterDelete() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -135,7 +135,7 @@ obj = function _isChattableChannelThresholdMetAfterChannelChange() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

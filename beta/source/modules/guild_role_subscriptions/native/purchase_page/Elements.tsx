@@ -1,49 +1,183 @@
-// Module ID: 16192
-// Function ID: 16193
+// Module ID: 16194
+// Function ID: 16195
 // Name: Elements
-// Dependencies: [32, 19, 17, 4493, 21, 4836, 576, 4832, 1115, 5435, 1177, 16193, 8667, 14772, 563, 8670, 6655, 2]
-// Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
+// Dependencies: [32, 109, 19, 17, 4496, 21, 4837, 588, 558, 576, 4833, 1127, 1189, 16195, 5436, 8664, 14760, 573, 8667, 6656, 2]
 
-// Module 16192 (Elements)
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import Pressables from "Pressables" /* 5435 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 8667 */;
-import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 8670 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14772 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16193 */;
+// Module 16194 (Elements)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import Pressables from "Pressables" /* 5436 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 8664 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14760 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16195 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4493 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4496 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, lineClamp;
 
-let c10;
 let c9;
-let metroImportDefault;
-let metroRequire;
+let closure_12;
+let metroImportAll;
 let obj2;
 let obj3;
 let obj4;
-({ TouchableOpacity: metroRequire, View: metroImportDefault } = react_native);
-({ jsx: c9, jsxs: c10 } = Fragment);
+let tmp;
+let tmp4;
+let unpackModuleId;
+const intl2 = tmp(1127);
+const Text_Text = tmp(4833);
+const useStoreFrontPriceDefault = tmp4(8667);
+let closure_4 = ["lineClamp"];
+({ TouchableOpacity: metroImportAll, View: c9 } = react_native);
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { toggleTruncateButton: obj2, arrowButton: obj3, arrowButtonText: { flexGrow: 1, flexShrink: 1 }, arrowButtonIcon: obj4 };
 obj2 = { alignSelf: "flex-start", borderBottomWidth: 0.8, borderColor: nativeDefault.colors.TEXT_DEFAULT, marginTop: 2 };
 createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, height: 40, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 obj4 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
-let closure_11 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/Elements.tsx");
-
-export const TruncatedText = function TruncatedText(lineClamp) {
+let closure_13 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((lineClamp) => {
+  let Text;
+  let closure_129_1;
+  let first;
+  let obj4;
+  let tmp11;
+  let tmp4;
+  let tmp5;
+  let tmp = require;
+  const obj = react2;
+  const cResult = obj.c(20);
+  if (cResult[0] !== lineClamp) {
+    lineClamp = lineClamp.lineClamp;
+    const tmp8 = _objectWithoutProperties(lineClamp, closure_4);
+    cResult[0] = lineClamp;
+    cResult[1] = tmp8;
+    cResult[2] = lineClamp;
+    tmp5 = lineClamp;
+    tmp4 = tmp8;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+  }
+  let num4 = 8;
+  if (undefined !== tmp5) {
+    num4 = tmp5;
+  }
+  const tmp9 = closure_13();
+  [tmp11, closure_129_1] = react.useState(false);
+  _slicedToArray(react.useState(false), 2);
+  [first, dependencyMap] = react.useState(false);
+  closure_4 = react.useRef(false);
+  if (cResult[3] !== first) {
+    const fn = function f() {
+      const tmp = first && closure_1_1((arg0) => !arg0);
+      return tmp;
+    };
+    cResult[3] = first;
+    cResult[4] = fn;
+  }
+  if (cResult[5] === tmp11) {
+    if (cResult[6] === first) {
+      let tmp20;
+      if (first) {
+        if (!tmp11) {
+          tmp20 = num4;
+        }
+      }
+      if (cResult[9] !== num4) {
+        class O {
+          constructor(nativeEvent) {
+            if (!ref.current) {
+              tmp.current = true;
+              closure_3(nativeEvent.nativeEvent.lines.length > num4);
+            }
+          }
+        }
+        cResult[9] = num4;
+        cResult[10] = O;
+      } else {
+        class O {
+          constructor(nativeEvent) {
+            if (!ref.current) {
+              tmp.current = true;
+              closure_3(nativeEvent.nativeEvent.lines.length > num4);
+            }
+          }
+        }
+      }
+      if (cResult[11] === tmp4) {
+        class O {
+          constructor(nativeEvent) {
+            if (!ref.current) {
+              tmp.current = true;
+              closure_3(nativeEvent.nativeEvent.lines.length > num4);
+            }
+          }
+        }
+      }
+      const obj2 = { lineClamp: tmp20, onTextLayout: tmp21 };
+      const Text2 = Text_Text.Text;
+      const merged = Object.assign(tmp4);
+      cResult[11] = tmp4;
+      cResult[12] = tmp20;
+      cResult[13] = tmp21;
+      cResult[14] = unpackModuleId(Text2, obj2);
+      const tmp27 = unpackModuleId(Text2, obj2);
+    }
+  }
+  let tmp17Result = first;
+  if (tmp17Result) {
+    class O {
+      constructor(nativeEvent) {
+        if (!ref.current) {
+          tmp.current = true;
+          closure_3(nativeEvent.nativeEvent.lines.length > num4);
+        }
+      }
+    }
+    const obj3 = { style: tmp9.toggleTruncateButton, children: tmp17(Text, obj4) };
+    Text = Text_Text.Text;
+    const string = intl2.intl.string;
+    const t = intl2.t;
+    const tmp18 = React4;
+    if (tmp11) {
+      class O {
+        constructor(nativeEvent) {
+          if (!ref.current) {
+            tmp.current = true;
+            closure_3(nativeEvent.nativeEvent.lines.length > num4);
+          }
+        }
+      }
+    } else {
+      class O {
+        constructor(nativeEvent) {
+          if (!ref.current) {
+            tmp.current = true;
+            closure_3(nativeEvent.nativeEvent.lines.length > num4);
+          }
+        }
+      }
+    }
+    obj4 = { variant: "text-sm/medium", color: "text-default", children: tmp19 };
+    tmp17Result = tmp17(tmp18, obj3);
+  }
+  cResult[5] = tmp11;
+  cResult[6] = first;
+  cResult[7] = tmp9;
+  cResult[8] = tmp17Result;
+}) : ((lineClamp) => {
   let Text;
   let c1;
   let closure_3;
@@ -61,20 +195,20 @@ export const TruncatedText = function TruncatedText(lineClamp) {
   c1 = undefined;
   first = undefined;
   closure_3 = undefined;
-  const tmp2 = closure_11();
+  const tmp2 = closure_13();
   [tmp4, c1] = _slicedToArray(react.useState(false), 2);
   const tmp3 = _slicedToArray(react.useState(false), 2);
   [first, closure_3] = react.useState(false);
-  let closure_4 = react.useRef(false);
+  closure_4 = react.useRef(false);
   let tmp8Result = first;
   if (tmp8Result) {
     let stringResult;
-    const obj = { style: tmp2.toggleTruncateButton, children: React4(Text, obj2) };
+    const obj = { style: tmp2.toggleTruncateButton, children: unpackModuleId(Text, obj2) };
     Text = Text_Text.Text;
     const intl = intl2.intl;
     const string = intl.string;
     const t = intl2.t;
-    const tmp9 = metroImportDefault;
+    const tmp9 = React4;
     if (tmp4) {
       stringResult = string(t["JQX/Pb"]);
     } else {
@@ -93,8 +227,8 @@ export const TruncatedText = function TruncatedText(lineClamp) {
     children: items
   };
   num2 = 1;
-  const tmp13 = authStore;
-  const tmp14 = metroRequire;
+  const tmp13 = closure_12;
+  const tmp14 = metroImportAll;
   if (first) {
     num2 = 0.8;
   }
@@ -110,7 +244,7 @@ export const TruncatedText = function TruncatedText(lineClamp) {
   const Text2 = Text_Text.Text;
   const merged1 = Object.assign(merged);
   tmp17 = undefined;
-  const tmp15 = React4;
+  const tmp15 = unpackModuleId;
   if (first) {
     if (!tmp4) {
       tmp17 = num;
@@ -118,29 +252,130 @@ export const TruncatedText = function TruncatedText(lineClamp) {
   }
   items = [tmp15(Text2, obj4), tmp8Result];
   return tmp13(tmp14, obj3);
-};
-export const ArrowButton = function ArrowButton(arg0) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let items;
+  let onPress;
+  let text;
+  const obj = react2;
+  const cResult = obj.c(10);
+  ({ text, onPress } = arg0);
+  const tmp4 = closure_13();
+  if (cResult[0] === tmp4.arrowButtonText) {
+    let tmp5;
+    let tmp7;
+    if (cResult[1] === text) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] !== tmp4.arrowButtonIcon) {
+      const obj2 = { size: native.Icon.Sizes.SMALL, source: AssetRegistryDefault, style: tmp4.arrowButtonIcon };
+      const Icon = tmp(1189).Icon;
+      const tmp10 = unpackModuleId(Icon, obj2);
+      cResult[3] = tmp4.arrowButtonIcon;
+      cResult[4] = tmp10;
+      tmp7 = tmp10;
+    } else {
+      tmp7 = cResult[4];
+    }
+    if (cResult[5] === onPress) {
+      if (cResult[6] === tmp4.arrowButton) {
+        if (cResult[7] === tmp5) {
+          let tmp11;
+          if (cResult[8] === tmp7) {
+            tmp11 = cResult[9];
+          }
+          return tmp11;
+        }
+      }
+    }
+    const obj3 = { accessibilityRole: "button", style: tmp4.arrowButton, onPress, children: items };
+    items = [tmp5, tmp7];
+    const tmp13 = closure_12(Pressables.PressableOpacity, obj3);
+    cResult[5] = onPress;
+    cResult[6] = tmp4.arrowButton;
+    cResult[7] = tmp5;
+    cResult[8] = tmp7;
+    cResult[9] = tmp13;
+    tmp11 = tmp13;
+  }
+  const obj4 = { variant: "text-md/semibold", color: "text-default", style: tmp4.arrowButtonText, children: text };
+  const tmp6 = unpackModuleId(Text_Text.Text, obj4);
+  cResult[0] = tmp4.arrowButtonText;
+  cResult[1] = text;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((arg0) => {
   let items;
   let onPress;
   let text;
   ({ text, onPress } = arg0);
-  const tmp = closure_11();
+  const tmp = closure_13();
   const obj = { accessibilityRole: "button", style: tmp.arrowButton, onPress, children: items };
   const PressableOpacity = Pressables.PressableOpacity;
   items = [, ];
   const obj2 = { variant: "text-md/semibold", color: "text-default", style: tmp.arrowButtonText, children: text };
-  items[0] = React4(Text_Text.Text, obj2);
+  items[0] = unpackModuleId(Text_Text.Text, obj2);
   const obj3 = { size: native.Icon.Sizes.SMALL, source: AssetRegistryDefault, style: tmp.arrowButtonIcon };
   const Icon = native.Icon;
-  items[1] = React4(Icon, obj3);
-  return authStore(PressableOpacity, obj);
-};
-export const useFormattedSubscriptionPlan = function useFormattedSubscriptionPlan(listingId) {
+  items[1] = unpackModuleId(Icon, obj3);
+  return closure_12(PressableOpacity, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let first;
+  let first1;
+  let tmp9;
+  const obj = first(576);
+  const cResult = obj.c(6);
+  const obj2 = NativePaymentHooksDefault;
+  const mobileStoreFront = obj2.useMobileStoreFront();
+  const obj3 = GuildRoleSubscriptionListingEditStateUtilsAll;
+  first = _slicedToArray(obj3.useSubscriptionPlan(arg0), 1)[0];
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SubscriptionPlanStore];
+    cResult[0] = items;
+    first1 = items;
+  } else {
+    first1 = cResult[0];
+  }
+  if (cResult[1] !== first.id) {
+    const fn = function n() {
+      return SubscriptionPlanStore.get(first.id);
+    };
+    cResult[1] = first.id;
+    cResult[2] = fn;
+    tmp9 = fn;
+  } else {
+    tmp9 = cResult[2];
+  }
+  const tmpResult = first(573);
+  const stateFromStores = tmpResult.useStateFromStores(first1, tmp9);
+  const price = useStoreFrontPriceDefault(stateFromStores, mobileStoreFront).price;
+  let str = "No Price Available";
+  if (null != price) {
+    if (cResult[3] === price.amount) {
+      let tmp11;
+      if (cResult[4] === price.currency) {
+        tmp11 = cResult[5];
+      }
+      const _HermesInternal = HermesInternal;
+      str = "" + tmp11 + "/mo.";
+    }
+    const tmpResult2 = first(6656);
+    const formatPriceResult = tmpResult2.formatPrice(price.amount, price.currency);
+    cResult[3] = price.amount;
+    cResult[4] = price.currency;
+    cResult[5] = formatPriceResult;
+    tmp11 = formatPriceResult;
+  }
+  return str;
+}) : ((arg0) => {
   let id;
   const obj = NativePaymentHooksDefault;
   const mobileStoreFront = obj.useMobileStoreFront();
   const obj2 = GuildRoleSubscriptionListingEditStateUtilsAll;
-  _require = _slicedToArray(obj2.useSubscriptionPlan(listingId), 1)[0];
+  _require = _slicedToArray(obj2.useSubscriptionPlan(arg0), 1)[0];
   const items = [SubscriptionPlanStore];
   const obj3 = require("useStateFromStores");
   const stateFromStores = obj3.useStateFromStores(items, () => SubscriptionPlanStore.get(id.id));
@@ -149,8 +384,13 @@ export const useFormattedSubscriptionPlan = function useFormattedSubscriptionPla
   const tmp3 = _require;
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    const tmp3Result = tmp3(6655);
+    const tmp3Result = tmp3(6656);
     str = "" + tmp3Result.formatPrice(price.amount, price.currency) + "/mo.";
   }
   return str;
-};
+});
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/Elements.tsx");
+
+export const TruncatedText = tmp5;
+export const ArrowButton = tmp6;
+export const useFormattedSubscriptionPlan = tmp7;

@@ -1,14 +1,14 @@
-// Module ID: 6827
-// Function ID: 6828
+// Module ID: 6828
+// Function ID: 6829
 // Name: BillingStandaloneUtils
-// Dependencies: [1074, 1366, 1255, 1271, 2]
+// Dependencies: [1086, 1372, 1267, 1283, 2]
 // Exports: goToBillingStandalonePageWithHandoff, goToStandalonePremiumCheckoutWeb
 
-// Module 6827 (BillingStandaloneUtils)
-import v1 from "v1" /* 1255 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import URLUtilsDefault from "URLUtils" /* 1366 */;
-import Constants from "Constants" /* 1074 */;
+// Module 6828 (BillingStandaloneUtils)
+import v1 from "v1" /* 1267 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import URLUtilsDefault from "URLUtils" /* 1372 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c3;

@@ -1,19 +1,100 @@
-// Module ID: 11177
-// Function ID: 11178
+// Module ID: 11049
+// Function ID: 11050
 // Name: ForwardingAnalyticsUtils
-// Dependencies: [19, 2045, 1074, 1241, 5016, 12, 2]
-// Exports: trackForwardCancel, trackForwardCopyLink, trackForwardSent, trackForwardStart, useTrackForwardAddRecipientOnce, useTrackForwardEditContextMessageOnce, useTrackForwardEditSearchOnce
+// Dependencies: [19, 2051, 1086, 1253, 5017, 558, 576, 12, 2]
+// Exports: trackForwardCancel, trackForwardCopyLink, trackForwardSent, trackForwardStart
 
-// Module 11177 (ForwardingAnalyticsUtils)
-import _mod12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
+// Module 11049 (ForwardingAnalyticsUtils)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const _mod12 = tmp(12);
 const AnalyticEvents = Constants.AnalyticEvents;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = _mod12;
+    const onceResult = tmpResult.once((channel_id, message_id, has_query) => {
+      const obj = AnalyticsUtilsDefault;
+      const obj2 = { channel_id, message_id, has_query };
+      obj.track(constants.FORWARD_ADD_RECIPIENT, obj2);
+    });
+    cResult[0] = onceResult;
+    first = onceResult;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => react.useMemo(() => {
+  let obj = _mod12;
+  return obj.once((channel_id, message_id, has_query) => {
+    const obj = closure_1_1(closure_1_2[3]);
+    const obj2 = { channel_id, message_id, has_query };
+    obj.track(constants.FORWARD_ADD_RECIPIENT, obj2);
+  });
+}, []));
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = _mod12;
+    const onceResult = tmpResult.once((channel_id, message_id) => {
+      const obj = AnalyticsUtilsDefault;
+      const obj2 = { channel_id, message_id };
+      obj.track(constants.FORWARD_EDIT_SEARCH, obj2);
+    });
+    cResult[0] = onceResult;
+    first = onceResult;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => react.useMemo(() => {
+  let obj = _mod12;
+  return obj.once((channel_id, message_id) => {
+    const obj = closure_1_1(closure_1_2[3]);
+    const obj2 = { channel_id, message_id };
+    obj.track(constants.FORWARD_EDIT_SEARCH, obj2);
+  });
+}, []));
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = _mod12;
+    const onceResult = tmpResult.once((channel_id, message_id) => {
+      const obj = AnalyticsUtilsDefault;
+      const obj2 = { channel_id, message_id };
+      obj.track(constants.FORWARD_EDIT_CONTEXT_MESSAGE, obj2);
+    });
+    cResult[0] = onceResult;
+    first = onceResult;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => react.useMemo(() => {
+  let obj = _mod12;
+  return obj.once((channel_id, message_id) => {
+    const obj = closure_1_1(closure_1_2[3]);
+    const obj2 = { channel_id, message_id };
+    obj.track(constants.FORWARD_EDIT_CONTEXT_MESSAGE, obj2);
+  });
+}, []));
 const result = size.fileFinishedImporting("modules/forwarding/ForwardingAnalyticsUtils.tsx");
 
 export const trackForwardStart = function trackForwardStart(channel_id, id, source) {
@@ -48,7 +129,7 @@ export const trackForwardSent = function trackForwardSent(arg0) {
   if ("message-shortcut" === source) {
     const channel = ChannelStore.getChannel(channelId);
     const obj2 = { action: "forward", original_message_id: messageId };
-    const track = tmp(1241).track;
+    const track = tmp(1253).track;
     const MESSAGE_SHORTCUT_ACTION_SENT = tmp3.MESSAGE_SHORTCUT_ACTION_SENT;
     AnalyticsUtilsDefault;
     let guild_id;
@@ -59,7 +140,7 @@ export const trackForwardSent = function trackForwardSent(arg0) {
       guild_id = channel.guild_id;
     }
     const merged = Object.assign(collectGuildAnalyticsMetadata(guild_id));
-    const tmp14Result = tmp14(5016);
+    const tmp14Result = tmp14(5017);
     const merged1 = Object.assign(tmp14Result.collectChannelAnalyticsMetadata(channel));
     track(MESSAGE_SHORTCUT_ACTION_SENT, obj2);
   }
@@ -69,33 +150,6 @@ export const trackForwardCopyLink = function trackForwardCopyLink(channel_id, id
   const obj2 = { channel_id, message_id: id };
   obj.track(AnalyticEvents.FORWARD_COPY_LINK, obj2);
 };
-export const useTrackForwardAddRecipientOnce = function useTrackForwardAddRecipientOnce() {
-  return react.useMemo(() => {
-    let obj = _mod12;
-    return obj.once((channel_id, message_id, has_query) => {
-      const obj = closure_1_1(closure_1_2[3]);
-      const obj2 = { channel_id, message_id, has_query };
-      obj.track(constants.FORWARD_ADD_RECIPIENT, obj2);
-    });
-  }, []);
-};
-export const useTrackForwardEditSearchOnce = function useTrackForwardEditSearchOnce() {
-  return react.useMemo(() => {
-    let obj = _mod12;
-    return obj.once((channel_id, message_id) => {
-      const obj = closure_1_1(closure_1_2[3]);
-      const obj2 = { channel_id, message_id };
-      obj.track(constants.FORWARD_EDIT_SEARCH, obj2);
-    });
-  }, []);
-};
-export const useTrackForwardEditContextMessageOnce = function useTrackForwardEditContextMessageOnce() {
-  return react.useMemo(() => {
-    let obj = _mod12;
-    return obj.once((channel_id, message_id) => {
-      const obj = closure_1_1(closure_1_2[3]);
-      const obj2 = { channel_id, message_id };
-      obj.track(constants.FORWARD_EDIT_CONTEXT_MESSAGE, obj2);
-    });
-  }, []);
-};
+export const useTrackForwardAddRecipientOnce = tmp2;
+export const useTrackForwardEditSearchOnce = tmp3;
+export const useTrackForwardEditContextMessageOnce = tmp4;

@@ -1,65 +1,202 @@
-// Module ID: 11008
-// Function ID: 11009
+// Module ID: 10876
+// Function ID: 10877
 // Name: useSubscribeMissingActivities
-// Dependencies: [32, 19, 11009, 4876, 504, 11011, 2]
-// Exports: default
+// Dependencies: [32, 19, 10877, 4877, 558, 576, 504, 10879, 2]
 
-// Module 11008 (useSubscribeMissingActivities)
-import PresenceSubscriptionsActionCreators from "PresenceSubscriptionsActionCreators" /* 11011 */;
+// Module 10876 (useSubscribeMissingActivities)
+import react2 from "react" /* 576 */;
+import PresenceSubscriptionsActionCreators from "PresenceSubscriptionsActionCreators" /* 10879 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PresenceSubscriptionsStore from "PresenceSubscriptionsStore" /* 11009 */;
-import PresenceStore from "PresenceStore" /* 4876 */;
+import PresenceSubscriptionsStore from "PresenceSubscriptionsStore" /* 10877 */;
+import PresenceStore from "PresenceStore" /* 4877 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, application, application_id, closure_0;
+let _require, application_id, dependencyMap;
 
+const f105290 = (application) => {
+  application = application.application;
+  let id;
+  if (application != null) {
+    id = application.id;
+  }
+  let tmp2 = null != id;
+  if (tmp2) {
+    const activity = application.activity;
+    let party_id;
+    if (activity != null) {
+      party_id = activity.party_id;
+    }
+    tmp2 = null != party_id;
+  }
+  return tmp2;
+};
+const f105291 = (id) => id.id;
 let closure_6 = [];
 let closure_7 = [];
 let closure_8 = [];
-const result = size.fileFinishedImporting("modules/activities/useSubscribeMissingActivities.tsx");
-
-export default function useSubscribeMissingActivities(arg0, arg1) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, isPrivate) => {
   let first;
-  let tmp3;
-  _require = arg0;
-  let closure_1 = arg1;
-  let items = [arg0, arg1];
-  [first, tmp3] = react.useMemo(() => {
-    let items1;
-    const arr = closure_0;
-    if (_private.isPrivate()) {
-      const found = arr.filter((application) => {
-        application = application.application;
+  let items5;
+  let tmp = first;
+  const obj = first(576);
+  const cResult = obj.c(13);
+  if (cResult[0] === isPrivate) {
+    let tmp4;
+    let tmp11;
+    let tmp14;
+    let tmp13;
+    let items3;
+    if (cResult[1] === arr) {
+      tmp4 = cResult[2];
+    }
+    const tmp8 = _slicedToArray(tmp4, 2);
+    first = tmp8[0];
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      let items = [PresenceStore];
+      cResult[3] = items;
+      tmp11 = items;
+    } else {
+      tmp11 = cResult[3];
+    }
+    if (cResult[4] !== first) {
+      const fn = function v() {
+        const items = [];
+        const item = first.forEach((author) => {
+          let closure_0 = author;
+          if (null != closure_2_5.findActivity(author.author.id, (application_id) => {
+            application = application.application;
+            let id;
+            application_id = application_id.application_id;
+            const tmp = application;
+            if (application != null) {
+              id = application.id;
+            }
+            let tmp3 = application_id === id;
+            if (tmp3) {
+              const party = application_id.party;
+              let id1;
+              if (party != null) {
+                id1 = party.id;
+              }
+              const activity = tmp.activity;
+              let party_id;
+              if (activity != null) {
+                party_id = activity.party_id;
+              }
+              tmp3 = id1 === party_id;
+            }
+            return tmp3;
+          }, null, true)) {
+            let tmp = items;
+            items.push(author.id);
+          }
+        });
+        return items;
+      };
+      const items1 = [first];
+      cResult[4] = first;
+      cResult[5] = fn;
+      cResult[6] = items1;
+      tmp14 = items1;
+      tmp13 = fn;
+    } else {
+      tmp13 = cResult[5];
+      tmp14 = cResult[6];
+    }
+    const tmpResult = tmp(504);
+    const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp11, tmp13, tmp14);
+    if (cResult[7] === stateFromStoresArray) {
+      let tmp16;
+      if (cResult[8] === first) {
+        tmp16 = cResult[9];
+      }
+      if (cResult[10] === tmp8[1]) {
+        let tmp18;
+        if (cResult[11] === tmp16) {
+          tmp18 = cResult[12];
+        }
+        return tmp18;
+      }
+      const items2 = [tmp8[1], tmp16];
+      cResult[10] = tmp8[1];
+      cResult[11] = tmp16;
+      cResult[12] = items2;
+      tmp18 = items2;
+    }
+    if (0 === first.length) {
+      items3 = closure_6;
+    } else {
+      items3 = [];
+      let item = first.forEach((application) => {
         let id;
+        let party_id;
+        application = application.application;
         if (application != null) {
           id = application.id;
         }
-        let tmp2 = null != id;
-        if (tmp2) {
-          const activity = application.activity;
-          let party_id;
-          if (activity != null) {
-            party_id = activity.party_id;
-          }
-          tmp2 = null != party_id;
+        const activity = application.activity;
+        if (activity != null) {
+          party_id = activity.party_id;
         }
-        return tmp2;
+        if (!(application.id in closure_0)) {
+          if (null != id) {
+            if (null != party_id) {
+              const timestamp = application.timestamp;
+              const obj = { userId: application.author.id, applicationId: id, partyId: party_id, messageId: null, channelId: null, inviteTime: timestamp.getTime() };
+              ({ id: obj.messageId, channel_id: obj.channelId } = application);
+              items.push(obj);
+            }
+          }
+        }
       });
-      const items = [found, found.map((id) => id.id)];
+    }
+    cResult[7] = stateFromStoresArray;
+    cResult[8] = first;
+    cResult[9] = items3;
+    tmp16 = items3;
+  }
+  if (isPrivate.isPrivate()) {
+    const found = arr.filter(f105290);
+    const items4 = [found, found.map(f105291)];
+    items5 = items4;
+  } else {
+    items5 = [closure_8, closure_7];
+  }
+  cResult[0] = isPrivate;
+  cResult[1] = arr;
+  cResult[2] = items5;
+  tmp4 = items5;
+}) : ((arg0, arg1) => {
+  let _private;
+  let first;
+  let stateFromStoresArray;
+  _require = arg0;
+  dependencyMap = arg1;
+  let items = [arg0, arg1];
+  let tmp = first(stateFromStoresArray.useMemo(() => {
+    let items1;
+    const arr = closure_0;
+    if (_private.isPrivate()) {
+      const found = arr.filter(f105290);
+      const items = [found, found.map(f105291)];
       items1 = items;
     } else {
-      items1 = [closure_2_8, ];
-      let tmp2 = closure_2_7;
-      items1[1] = closure_2_7;
+      items1 = [closure_8, ];
+      let tmp2 = closure_7;
+      items1[1] = closure_7;
     }
     return items1;
-  }, items);
+  }, items), 2);
+  first = tmp[0];
+  let tmp3 = tmp[1];
   let obj = require("get initialized");
   let items1 = [PresenceStore];
   const items2 = [first];
-  const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => {
+  stateFromStoresArray = obj.useStateFromStoresArray(items1, () => {
     const items = [];
     const item = first.forEach((author) => {
       closure_0 = author;
@@ -93,47 +230,95 @@ export default function useSubscribeMissingActivities(arg0, arg1) {
     });
     return items;
   }, items2);
-  const items3 = [first, stateFromStoresArray];
-  const items4 = [
-    tmp3,
-    react.useMemo(() => {
-      let items;
-      closure_0 = stateFromStoresArray;
-      const arr = first;
-      if (0 === first.length) {
-        items = closure_2_6;
-      } else {
-        items = [];
-        const item = arr.forEach((application) => {
-          let id;
-          let party_id;
-          application = application.application;
-          if (application != null) {
-            id = application.id;
-          }
-          const activity = application.activity;
-          if (activity != null) {
-            party_id = activity.party_id;
-          }
-          if (!(application.id in closure_0)) {
-            if (null != id) {
-              if (null != party_id) {
-                const timestamp = application.timestamp;
-                const obj = { userId: application.author.id, applicationId: id, partyId: party_id, messageId: null, channelId: null, inviteTime: timestamp.getTime() };
-                ({ id: obj.messageId, channel_id: obj.channelId } = application);
-                items.push(obj);
-              }
+  const items3 = [tmp3, ];
+  const items4 = [first, stateFromStoresArray];
+  items3[1] = stateFromStoresArray.useMemo(() => {
+    let items;
+    closure_0 = stateFromStoresArray;
+    const arr = first;
+    if (0 === first.length) {
+      items = closure_6;
+    } else {
+      items = [];
+      const item = arr.forEach((application) => {
+        let id;
+        let party_id;
+        application = application.application;
+        if (application != null) {
+          id = application.id;
+        }
+        const activity = application.activity;
+        if (activity != null) {
+          party_id = activity.party_id;
+        }
+        if (!(application.id in closure_0)) {
+          if (null != id) {
+            if (null != party_id) {
+              const timestamp = application.timestamp;
+              const obj = { userId: application.author.id, applicationId: id, partyId: party_id, messageId: null, channelId: null, inviteTime: timestamp.getTime() };
+              ({ id: obj.messageId, channel_id: obj.channelId } = application);
+              items.push(obj);
             }
           }
-        });
+        }
+      });
+    }
+    return items;
+  }, items4);
+  return items3;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let obj = react2;
+  const cResult = obj.c(6);
+  let tmp2 = _slicedToArray(closure_9(arg0, arg1), 2);
+  [tmp3, tmp4] = tmp2;
+  const require = tmp4;
+  if (cResult[0] !== tmp4) {
+    const fn = function o() {
+      for (const item10006 of _require) {
+        let tmp = item10006;
+        if (!PresenceSubscriptionsStore.isSubscribed(item10006)) {
+          let obj = PresenceSubscriptionsActionCreators;
+          let subscription = obj.subscribe(tmp);
+        }
+        continue;
       }
-      return items;
-    }, items3)
-  ];
-  let tmp5 = _slicedToArray(items4, 2);
-  _require = tmp7;
-  const items5 = [tmp5[1]];
-  const first1 = tmp5[0];
+    };
+    const items = [tmp4];
+    cResult[0] = tmp4;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp6 = items;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+    tmp6 = cResult[2];
+  }
+  const effect = react.useEffect(tmp5, tmp6);
+  if (cResult[3] === tmp3) {
+    let tmp8;
+    if (cResult[4] === tmp4) {
+      tmp8 = cResult[5];
+    }
+    return tmp8;
+  }
+  const items1 = [tmp3, tmp4];
+  cResult[3] = tmp3;
+  cResult[4] = tmp4;
+  cResult[5] = items1;
+  tmp8 = items1;
+}) : ((arg0, arg1) => {
+  let first;
+  let tmp3;
+  [first, tmp3] = closure_9(arg0, arg1);
+  let closure_0 = tmp3;
+  const items = [tmp3];
   const effect = react.useEffect(() => {
     for (const item10006 of closure_0) {
       let tmp = item10006;
@@ -143,7 +328,10 @@ export default function useSubscribeMissingActivities(arg0, arg1) {
       }
       continue;
     }
-  }, items5);
-  const items6 = [first1, tmp5[1]];
-  return items6;
-};
+  }, items);
+  const items1 = [first, tmp3];
+  return items1;
+});
+const result = size.fileFinishedImporting("modules/activities/useSubscribeMissingActivities.tsx");
+
+export default tmp2;

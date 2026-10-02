@@ -1,13 +1,13 @@
-// Module ID: 6013
-// Function ID: 6014
+// Module ID: 6008
+// Function ID: 6009
 // Name: PushNotificationConstants
-// Dependencies: [1363, 1610, 1364, 2]
+// Dependencies: [1369, 1616, 1370, 2]
 // Exports: getDevicePushProvider
 
-// Module 6013 (PushNotificationConstants)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import react_native_mod from "react-native" /* 1363 */;
-import MetaQuestUtils_mod from "MetaQuestUtils" /* 1610 */;
+// Module 6008 (PushNotificationConstants)
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import react_native_mod from "react-native" /* 1369 */;
+import MetaQuestUtils_mod from "MetaQuestUtils" /* 1616 */;
 import size from "module_2" /* 2 */;
 
 let react_native = react_native_mod;

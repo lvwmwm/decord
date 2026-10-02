@@ -1,11 +1,11 @@
-// Module ID: 7153
-// Function ID: 7154
+// Module ID: 7157
+// Function ID: 7158
 // Name: AdAnalyticsInterfaceExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1441, 2]
 // Exports: shouldMigrateToAdAnalyticsInterface
 
-// Module 7153 (AdAnalyticsInterfaceExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 7157 (AdAnalyticsInterfaceExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
 let obj3;
@@ -17,8 +17,8 @@ const result = size.fileFinishedImporting("modules/quests/experiments/AdAnalytic
 
 export const AdAnalyticsInterfaceExperimentStep = obj;
 export const AdAnalyticsInterfaceExperiment = apexExperiment;
-export const shouldMigrateToAdAnalyticsInterface = function shouldMigrateToAdAnalyticsInterface(STEP_2_CLICKED_INTERNAL, app_store_overlay_surface_click) {
-  const obj = { location: app_store_overlay_surface_click };
+export const shouldMigrateToAdAnalyticsInterface = function shouldMigrateToAdAnalyticsInterface(STEP_2_CLICKED_INTERNAL, quest_bottom_sheet_footer) {
+  const obj = { location: quest_bottom_sheet_footer };
   const config = apexExperiment.getConfig(obj);
   const enabled = config.enabled && STEP_2_CLICKED_INTERNAL <= config.maxStep;
   return enabled;

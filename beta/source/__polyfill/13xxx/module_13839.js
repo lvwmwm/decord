@@ -1,18 +1,18 @@
 // Module ID: 13839
 // Function ID: 13840
-// Dependencies: [13837]
+// Dependencies: [13840]
 
 // Module 13839
-import _mod13837 from "module_13837" /* 13837 */;
+import _mod13840 from "module_13840" /* 13840 */;
 
 
-export default (arg0, arg1) => {
-  let tmp3;
-  const tmp = _mod13837(arg0);
-  if (tmp < 0) {
-    tmp3 = max(tmp + arg1, 0);
-  } else {
-    tmp3 = min(tmp, arg1);
+export default (arg0) => {
+  let num = 0;
+  {
+    num = 0;
+    if (0 !== +arg0) {
+      num = _mod13840(tmp);
+    }
   }
-  return tmp3;
+  return num;
 };

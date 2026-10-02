@@ -1,21 +1,21 @@
-// Module ID: 17130
-// Function ID: 17131
+// Module ID: 17132
+// Function ID: 17133
 // Name: EntityVersionsManager
-// Dependencies: [5771, 5814, 2045, 2102, 2067, 5589, 3, 6539, 573, 504, 7064, 1240, 11, 2]
+// Dependencies: [5772, 5815, 2051, 2105, 2073, 5590, 3, 6540, 585, 504, 7068, 1252, 11, 2]
 
-// Module 17130 (EntityVersionsManager)
+// Module 17132 (EntityVersionsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildsRequiringDeletedIdsSyncDefault from "GuildsRequiringDeletedIdsSync" /* 7064 */;
-import EmojiStore from "EmojiStore" /* 5771 */;
-import StickersStore from "StickersStore" /* 5814 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import GuildsRequiringDeletedIdsSyncDefault from "GuildsRequiringDeletedIdsSync" /* 7068 */;
+import EmojiStore from "EmojiStore" /* 5772 */;
+import StickersStore from "StickersStore" /* 5815 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildRoleStore from "GuildRoleStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, set, set2, set3, socket, sortedRoles;
@@ -52,6 +52,7 @@ function handleDeletedEntityIds(guild_id) {
     }
     if (null != guild_id.roles) {
       guild_id = tmp.guild_id;
+      let tmp2 = globalThis;
       const _Set = Set;
       const self = this;
       const self2 = this;
@@ -204,7 +205,7 @@ function handleGuildCreate(guild) {
     }, Math.ceil(2000 * Math.random()));
   }
 }
-const tmp2 = new LoggerDefault("EntityVersionsManager");
+let tmp2 = new LoggerDefault("EntityVersionsManager");
 let closure_8 = tmp2;
 class EntityVersionsManager extends AutomaticLifecycleManager {
   constructor() {

@@ -1,16 +1,14 @@
-// Module ID: 4546
-// Function ID: 4547
+// Module ID: 4550
+// Function ID: 4551
 // Name: useBadgeTextVariant
-// Dependencies: [4547, 2]
-// Exports: useBadgeTextVariant
+// Dependencies: [558, 4551, 2]
 
-// Module 4546 (useBadgeTextVariant)
-import ThemeContext from "ThemeContext" /* 4547 */;
+// Module 4550 (useBadgeTextVariant)
+import ThemeContext from "ThemeContext" /* 4551 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("../discord_common/js/packages/design/hooks/useBadgeTextVariant.native.tsx");
-
-export const useBadgeTextVariant = function useBadgeTextVariant() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = ThemeContext;
   const themeContext = obj.useThemeContext();
   let enabledExperiments;
@@ -26,4 +24,23 @@ export const useBadgeTextVariant = function useBadgeTextVariant() {
     str2 = "experimental/body-xs/semibold";
   }
   return str2;
-};
+}) : (() => {
+  const obj = ThemeContext;
+  const themeContext = obj.useThemeContext();
+  let enabledExperiments;
+  if (themeContext != null) {
+    enabledExperiments = themeContext.enabledExperiments;
+  }
+  let hasItem;
+  if (enabledExperiments != null) {
+    hasItem = enabledExperiments.includes("mana-type-consolidation");
+  }
+  let str2 = "eyebrow";
+  if (true === hasItem) {
+    str2 = "experimental/body-xs/semibold";
+  }
+  return str2;
+});
+const result = size.fileFinishedImporting("../discord_common/js/packages/design/hooks/useBadgeTextVariant.native.tsx");
+
+export const useBadgeTextVariant = tmp2;

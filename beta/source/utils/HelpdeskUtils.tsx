@@ -1,13 +1,13 @@
-// Module ID: 2111
-// Function ID: 2112
+// Module ID: 2114
+// Function ID: 2115
 // Name: HelpdeskUtils
-// Dependencies: [2112, 1074, 4451, 1364, 2]
+// Dependencies: [2115, 1086, 4454, 1370, 2]
 
-// Module 2111 (HelpdeskUtils)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import getLocalizedLinkDefault from "getLocalizedLink" /* 4451 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import Constants from "Constants" /* 1074 */;
+// Module 2114 (HelpdeskUtils)
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import getLocalizedLinkDefault from "getLocalizedLink" /* 4454 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const LocalizedLinks = Constants.LocalizedLinks;
@@ -15,9 +15,9 @@ const SUPPORT_DEV_DOMAIN = Constants.SUPPORT_DEV_DOMAIN;
 let combined = "https://" + Constants.SUPPORT_DOMAIN;
 let closure_6 = "https://" + SUPPORT_DEV_DOMAIN;
 let obj = {
-  getArticleURL(REFERRAL_PROGRAM) {
+  getArticleURL(TIGGER_PAWTECT_LEARN_MORE) {
     const str = LocaleStore.locale;
-    return combined + "/hc/" + str.toLowerCase() + "/articles/" + REFERRAL_PROGRAM;
+    return combined + "/hc/" + str.toLowerCase() + "/articles/" + TIGGER_PAWTECT_LEARN_MORE;
   },
   getDevArticleURL(arg0) {
     let tmp2 = closure_6;

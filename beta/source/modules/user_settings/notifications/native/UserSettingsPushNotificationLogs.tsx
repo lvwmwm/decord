@@ -1,23 +1,23 @@
-// Module ID: 15121
-// Function ID: 15122
+// Module ID: 15109
+// Function ID: 15110
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 32, 19, 17, 1074, 21, 4836, 576, 6040, 510, 9651, 1613, 6471, 5435, 1115, 7809, 9652, 12470, 8179, 4832, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17, 1086, 21, 4837, 588, 6032, 558, 576, 510, 12277, 1619, 6472, 1127, 7813, 12278, 12468, 5436, 4833, 8176, 2]
 
-// Module 15121 (UserSettingsPushNotificationLogs)
+// Module 15109 (UserSettingsPushNotificationLogs)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import InputTypes from "InputTypes" /* 6040 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import InputTypes from "InputTypes" /* 6032 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c2, c3;
+let _require, c2, c3, dependencyMap, num;
 
 let metroImportAll;
 let metroImportDefault;
@@ -39,10 +39,339 @@ obj4 = { padding: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "
 size = { backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, marginLeft: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, height: InputTypes.InputHeights.MD, width: InputTypes.InputHeights.MD, justifyContent: "center", alignItems: "center" };
 obj5 = { paddingBottom: nativeDefault.space.PX_16 };
 let closure_9 = createStyles(obj);
-size = size_mod;
-let result = size.fileFinishedImporting("modules/user_settings/notifications/native/UserSettingsPushNotificationLogs.tsx");
-
-export default function UserSettingsPushNotificationLogs() {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_2;
+  let closure_4;
+  let first;
+  let first1;
+  let items3;
+  let items4;
+  let obj4;
+  let searchWrap;
+  let tmp12;
+  let tmp14;
+  let tmp15;
+  let tmp8;
+  let tmp9;
+  let wrap;
+  let tmp = first1;
+  let tmp2 = dependencyMap;
+  let obj = first1(576);
+  const cResult = obj.c(34);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function l() {
+      const Storage = first1(closure_2[11]).Storage;
+      let str = Storage.get("push-notification-logs-query", "");
+      if (str == null) {
+        str = "";
+      }
+      return str;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  let obj2 = react;
+  const tmp5 = _slicedToArray;
+  [first1, tmp8] = react.useState(first);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [];
+    cResult[1] = items;
+    tmp9 = items;
+  } else {
+    tmp9 = cResult[1];
+  }
+  const tmp5Result = tmp5(obj2.useState(tmp9), 2);
+  const first2 = tmp5Result[0];
+  dependencyMap = tmp5Result[1];
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let items1 = [];
+    cResult[2] = items1;
+    tmp12 = items1;
+  } else {
+    tmp12 = cResult[2];
+  }
+  [r10046, _asyncToGenerator] = tmp5(obj2.useState(tmp12), 2);
+  tmp5(obj2.useState(tmp12), 2);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class P {
+      constructor() {
+        closure_0 = function _load() {
+          obj = _asyncToGenerator(function() { /* body not rendered: F151364 */ });
+          return obj(...arguments);
+        };
+        tmp = !(function load() {
+          return obj(...arguments);
+        })();
+        return;
+      }
+    }
+    let items2 = [];
+    cResult[3] = P;
+    cResult[4] = items2;
+    tmp15 = items2;
+    tmp14 = P;
+  } else {
+    class P {
+      constructor() {
+        closure_0 = function _load() {
+          obj = _asyncToGenerator(function() { /* body not rendered: F151364 */ });
+          return obj(...arguments);
+        };
+        tmp = !(function load() {
+          return obj(...arguments);
+        })();
+        return;
+      }
+    }
+    tmp15 = cResult[4];
+  }
+  const effect = obj2.useEffect(tmp14, tmp15);
+  if (cResult[5] === first2) {
+    let tmp25;
+    let tmp24;
+    let tmp23;
+    class P {
+      constructor() {
+        closure_0 = function _load() {
+          obj = _asyncToGenerator(function() { /* body not rendered: F151364 */ });
+          return obj(...arguments);
+        };
+        tmp = !(function load() {
+          return obj(...arguments);
+        })();
+        return;
+      }
+    }
+    const effect1 = obj2.useEffect(C, items4);
+    const tmp19 = closure_9();
+    _slicedToArray = tmp19;
+    const bottom = first2(1619)().bottom;
+    ({ wrap, searchWrap } = tmp19);
+    if (cResult[9] !== first1) {
+      class P {
+        constructor() {
+          closure_0 = function _load() {
+            obj = _asyncToGenerator(function() { /* body not rendered: F151364 */ });
+            return obj(...arguments);
+          };
+          tmp = !(function load() {
+            return obj(...arguments);
+          })();
+          return;
+        }
+      }
+      let obj3 = { size: "md", placeholder: "Filter (regex)", onChange: tmp8, defaultValue: first1 };
+      cResult[9] = first1;
+      cResult[10] = closure_7(tmp(6472).SearchField, obj3);
+      const tmp22 = closure_7(tmp(6472).SearchField, obj3);
+    } else {
+      class P {
+        constructor() {
+          closure_0 = function _load() {
+            obj = _asyncToGenerator(function() { /* body not rendered: F151364 */ });
+            return obj(...arguments);
+          };
+          tmp = !(function load() {
+            return obj(...arguments);
+          })();
+          return;
+        }
+      }
+    }
+    const _Symbol = Symbol;
+    const shareButton = tmp19.shareButton;
+    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+      class P {
+        constructor() {
+          closure_0 = function _load() {
+            obj = _asyncToGenerator(function() { /* body not rendered: F151364 */ });
+            return obj(...arguments);
+          };
+          tmp = !(function load() {
+            return obj(...arguments);
+          })();
+          return;
+        }
+      }
+      const stringResult = obj4.string(tmp(1127).t.leICvh);
+      _require = _asyncToGenerator(async (arg0, value) => {
+        let closure_1;
+        if (c3 === 2) {
+          c3 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj2 = { value, done: true };
+            return obj2;
+          } else {
+            return { value: "IconComponent", done: null };
+          }
+        } else {
+          try {
+            let tmp;
+            c3 = 2;
+            if (0 === c2) {
+              if (arg0 === 1) {
+                c3 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c3 = 3;
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                tmp = undefined;
+                c2 = 1;
+                c3 = 1;
+                const obj4 = { value: tmp4(c2[12])(), done: false };
+                return obj4;
+              }
+            } else if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj5 = { value, done: true };
+              return obj5;
+            } else {
+              tmp = value;
+              const obj = { message: tmp4(c2[17])(tmp, false) };
+              const showShareActionSheet = tmp(c2[16]).showShareActionSheet;
+              const tmp9 = tmp(c2[16]);
+              showShareActionSheet(obj, "push-notification-logs");
+              c3 = 3;
+              return { value: "IconComponent", done: null };
+            }
+          } catch (tmp16) {
+            c3 = 3;
+            throw tmp16;
+          }
+        }
+      });
+      function t12() {
+        return closure_0(...arguments);
+      }
+      const tmp29 = closure_7(tmp(12468).ShareIcon, {});
+      cResult[11] = stringResult;
+      cResult[12] = t12;
+      cResult[13] = tmp29;
+      tmp25 = tmp29;
+      tmp24 = t12;
+      tmp23 = stringResult;
+    } else {
+      class P {
+        constructor() {
+          closure_0 = function _load() {
+            obj = _asyncToGenerator(function() { /* body not rendered: F151364 */ });
+            return obj(...arguments);
+          };
+          tmp = !(function load() {
+            return obj(...arguments);
+          })();
+          return;
+        }
+      }
+      tmp24 = cResult[12];
+      tmp25 = cResult[13];
+    }
+    if (cResult[14] !== tmp19.shareButton) {
+      class P {
+        constructor() {
+          closure_0 = function _load() {
+            obj = _asyncToGenerator(function() { /* body not rendered: F151364 */ });
+            return obj(...arguments);
+          };
+          tmp = !(function load() {
+            return obj(...arguments);
+          })();
+          return;
+        }
+      }
+      let obj5 = { style: shareButton, accessibilityLabel: tmp23, onPress: tmp24, children: tmp25 };
+      cResult[14] = tmp19.shareButton;
+      cResult[15] = closure_7(tmp(5436).PressableOpacity, obj5);
+      const tmp31 = closure_7(tmp(5436).PressableOpacity, obj5);
+    } else {
+      class P {
+        constructor() {
+          closure_0 = function _load() {
+            obj = _asyncToGenerator(function() { /* body not rendered: F151364 */ });
+            return obj(...arguments);
+          };
+          tmp = !(function load() {
+            return obj(...arguments);
+          })();
+          return;
+        }
+      }
+    }
+    if (cResult[16] === tmp19.searchWrap) {
+      class P {
+        constructor() {
+          closure_0 = function _load() {
+            obj = _asyncToGenerator(function() { /* body not rendered: F151364 */ });
+            return obj(...arguments);
+          };
+          tmp = !(function load() {
+            return obj(...arguments);
+          })();
+          return;
+        }
+      }
+    }
+    const obj6 = { style: searchWrap, children: items3 };
+    items3 = [tmp21, tmp30];
+    cResult[16] = tmp19.searchWrap;
+    cResult[17] = tmp30;
+    cResult[18] = tmp21;
+    cResult[19] = closure_8(View, obj6);
+    const tmp35 = closure_8(View, obj6);
+  }
+  class C {
+    constructor() {
+      if ("" !== closure_0) {
+        tmp8 = globalThis;
+        _setTimeout = setTimeout;
+        num = 300;
+        closure_0 = setTimeout(function() {
+          try {
+            const tmp = globalThis;
+            const _RegExp = RegExp;
+            let tmp2 = closure_0;
+            const self = this;
+            let str = "i";
+            const self2 = this;
+            const regExp = new RegExp(closure_0, "i");
+            closure_1_3(first2.filter(() => { /* body not rendered: F151365 */ }));
+            const Storage = first1(closure_2[11]).Storage;
+            let str2 = "push-notification-logs-query";
+            const result = Storage.set("push-notification-logs-query", closure_0);
+          } catch (err) {
+          }
+        }, 300);
+        return () => clearTimeout(closure_0);
+      } else {
+        tmp2 = closure_3;
+        tmp3 = closure_1;
+        tmp4 = closure_3(closure_1);
+        tmp5 = closure_0;
+        tmp6 = closure_2;
+        Storage = closure_0(closure_2[11]).Storage;
+        str = "push-notification-logs-query";
+        result = Storage.set("push-notification-logs-query", tmp);
+        return;
+      }
+    }
+  }
+  items4 = [first2, first1];
+  cResult[5] = first2;
+  cResult[6] = first1;
+  cResult[7] = C;
+  cResult[8] = items4;
+}) : (function UserSettingsPushNotificationLogs() {
   let closure_2;
   let closure_4;
   let defaultValue;
@@ -54,7 +383,7 @@ export default function UserSettingsPushNotificationLogs() {
   let tmp3;
   let tmp7;
   [defaultValue, tmp3] = react.useState(() => {
-    const Storage = first(closure_2[9]).Storage;
+    const Storage = first(closure_2[11]).Storage;
     let str = Storage.get("push-notification-logs-query", "");
     if (str == null) {
       str = "";
@@ -68,7 +397,7 @@ export default function UserSettingsPushNotificationLogs() {
     function load() {
       return obj(...arguments);
     }
-    let obj = function _load() {
+    let obj = function _load2() {
       obj = _asyncToGenerator(async (arg0, value) => {
         let v1;
         if (c3 === 2) {
@@ -81,7 +410,7 @@ export default function UserSettingsPushNotificationLogs() {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -100,7 +429,7 @@ export default function UserSettingsPushNotificationLogs() {
                 closure_0 = undefined;
                 c2 = 1;
                 c3 = 1;
-                const obj4 = { value: first1(closure_2_2[10])(), done: false };
+                const obj4 = { value: first1(closure_2_2[12])(), done: false };
                 return obj4;
               }
             } else if (arg0 === 1) {
@@ -114,7 +443,7 @@ export default function UserSettingsPushNotificationLogs() {
               closure_0 = value;
               c2(closure_0);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp12) {
             c3 = 3;
@@ -158,7 +487,7 @@ export default function UserSettingsPushNotificationLogs() {
             }
             return tmp2;
           }));
-          const Storage = first(closure_2[9]).Storage;
+          const Storage = first(closure_2[11]).Storage;
           let str2 = "push-notification-logs-query";
           const result = Storage.set("push-notification-logs-query", closure_0);
         } catch (err) {
@@ -168,7 +497,7 @@ export default function UserSettingsPushNotificationLogs() {
     } else {
       let tmp2 = closure_3;
       closure_3(first1);
-      let Storage = first(closure_2[9]).Storage;
+      let Storage = first(closure_2[11]).Storage;
       let str = "push-notification-logs-query";
       let result = Storage.set("push-notification-logs-query", tmp);
     }
@@ -177,11 +506,11 @@ export default function UserSettingsPushNotificationLogs() {
   _slicedToArray = tmp10;
   let obj = { style: tmp10.wrap, children: items2 };
   let obj2 = { style: tmp10.searchWrap, children: items1 };
-  const bottom = first1(1613)().bottom;
-  items1 = [closure_7(defaultValue(6471).SearchField, { size: "md", placeholder: "Filter (regex)", onChange: tmp3, defaultValue }), ];
+  const bottom = first1(1619)().bottom;
+  items1 = [closure_7(defaultValue(6472).SearchField, { size: "md", placeholder: "Filter (regex)", onChange: tmp3, defaultValue }), ];
   let obj3 = {
     style: tmp10.shareButton,
-    accessibilityLabel: intl.string(defaultValue(1115).t.leICvh),
+    accessibilityLabel: intl.string(defaultValue(1127).t.leICvh),
     onPress: _asyncToGenerator(async (arg0, value) => {
       let closure_0;
       let closure_1;
@@ -195,7 +524,7 @@ export default function UserSettingsPushNotificationLogs() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -213,7 +542,7 @@ export default function UserSettingsPushNotificationLogs() {
               tmp = undefined;
               c2 = 1;
               c3 = 1;
-              const obj4 = { value: tmp4(c2[10])(), done: false };
+              const obj4 = { value: tmp4(c2[12])(), done: false };
               return obj4;
             }
           } else if (arg0 === 1) {
@@ -225,12 +554,12 @@ export default function UserSettingsPushNotificationLogs() {
             return obj5;
           } else {
             tmp = value;
-            const obj = { message: tmp4(c2[16])(tmp, false) };
-            const showShareActionSheet = tmp(c2[15]).showShareActionSheet;
-            const tmp9 = tmp(c2[15]);
+            const obj = { message: tmp4(c2[17])(tmp, false) };
+            const showShareActionSheet = tmp(c2[16]).showShareActionSheet;
+            const tmp9 = tmp(c2[16]);
             showShareActionSheet(obj, "push-notification-logs");
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           c3 = 3;
@@ -238,10 +567,10 @@ export default function UserSettingsPushNotificationLogs() {
         }
       }
     }),
-    children: closure_7(defaultValue(12470).ShareIcon, {})
+    children: closure_7(defaultValue(12468).ShareIcon, {})
   };
-  const PressableOpacity = defaultValue(5435).PressableOpacity;
-  intl = defaultValue(1115).intl;
+  const PressableOpacity = defaultValue(5436).PressableOpacity;
+  intl = defaultValue(1127).intl;
   items1[1] = closure_7(PressableOpacity, obj3);
   items2 = [closure_8(View, obj2), ];
   let obj4 = {
@@ -272,9 +601,13 @@ export default function UserSettingsPushNotificationLogs() {
       return metroImportAll(View, obj, index);
     }
   };
-  obj5 = { paddingBottom: bottom + first1(576).space.PX_16 };
-  const FlashList = defaultValue(8179).FlashList;
+  obj5 = { paddingBottom: bottom + first1(588).space.PX_16 };
+  const FlashList = defaultValue(8176).FlashList;
   const merged = Object.assign(tmp10.list);
   items2[1] = closure_7(FlashList, obj4);
   return closure_8(View, obj);
-};
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/user_settings/notifications/native/UserSettingsPushNotificationLogs.tsx");
+
+export default tmp4;

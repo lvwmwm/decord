@@ -1,10 +1,10 @@
-// Module ID: 8929
-// Function ID: 8930
+// Module ID: 8924
+// Function ID: 8925
 // Name: createWebviewHtmlFile
-// Dependencies: [5, 1364, 1151, 1231, 2]
+// Dependencies: [5, 1370, 1163, 1243, 2]
 // Exports: createInjectedJavascriptForIOS, default
 
-// Module 8929 (createWebviewHtmlFile)
+// Module 8924 (createWebviewHtmlFile)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ let obj = function _createWebviewHtmlFile() {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -81,7 +81,7 @@ let obj = function _createWebviewHtmlFile() {
                 closure_6 = undefined;
                 messageForDisallowedNavigationError = 1;
                 c6 = 1;
-                return { value: "flex", done: true };
+                return { value: "Reflect", done: true };
               }
             } else if (1 === messageForDisallowedNavigationError) {
               if (arg0 === 1) {

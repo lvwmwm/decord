@@ -1,17 +1,17 @@
-// Module ID: 7692
-// Function ID: 7693
+// Module ID: 7696
+// Function ID: 7697
 // Name: UserProfileBanner
-// Dependencies: [32, 19, 17, 1074, 21, 4836, 2021, 7693, 1397, 7700, 5435, 1115, 7701, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 1086, 21, 4837, 558, 576, 2027, 7697, 1403, 7704, 5436, 1127, 7705, 2]
 
-// Module 7692 (UserProfileBanner)
+// Module 7696 (UserProfileBanner)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1074 */;
-import BannerDefault from "Banner" /* 7700 */;
+import Constants from "Constants" /* 1086 */;
+import BannerDefault from "Banner" /* 7704 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,9 +22,211 @@ const View = react_native.View;
 const BANNER_HEIGHT = Constants.BANNER_HEIGHT;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ bannerContainer: { position: "relative" }, gifTag: { position: "absolute", left: 12, top: 12, right: "auto", bottom: "auto" } });
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileBanner.tsx");
-
-export default function UserProfileBanner(displayProfile) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+  let backgroundColor;
+  let bannerHeight;
+  let bannerSafeArea;
+  let displayProfile;
+  let pendingAccentColor;
+  let pendingAvatarSrc;
+  let pendingBanner;
+  let tmp13;
+  let user;
+  let userProfileBannerBackgroundColor;
+  let tmp = displayProfile;
+  let tmp2 = pendingAccentColor;
+  let obj = displayProfile(pendingAccentColor[7]);
+  const cResult = obj.c(31);
+  ({ user, displayProfile } = style);
+  style = style.style;
+  ({ bannerSafeArea, bannerHeight, pendingBanner, pendingAvatarSrc, pendingAccentColor } = style);
+  const pendingThemeColors = style.pendingThemeColors;
+  const disableInteraction = style.disableInteraction;
+  let num = 0;
+  if (undefined !== bannerSafeArea) {
+    num = bannerSafeArea;
+  }
+  if (undefined === bannerHeight) {
+    bannerHeight = backgroundColor;
+  }
+  const tmp4 = undefined !== disableInteraction && disableInteraction;
+  userProfileBannerBackgroundColor();
+  const GifAutoPlay = tmp(tmp2[8]).GifAutoPlay;
+  const setting = GifAutoPlay.useSetting();
+  const tmp7 = pendingThemeColors(num.useState(false), 2);
+  backgroundColor = tmp7[0];
+  let closure_7 = tmp7[1];
+  let guildId;
+  if (displayProfile != null) {
+    guildId = displayProfile.guildId;
+  }
+  if (cResult[0] === displayProfile) {
+    if (cResult[1] === pendingAvatarSrc) {
+      if (cResult[2] === guildId) {
+        let tmp11;
+        let source;
+        let bannerURL;
+        if (cResult[3] === user) {
+          tmp11 = cResult[4];
+        }
+        const tmpResult = tmp(tmp2[9]);
+        userProfileBannerBackgroundColor = tmpResult.useUserProfileBannerBackgroundColor(tmp11);
+        if (cResult[5] === (setting || backgroundColor)) {
+          if (cResult[6] === displayProfile) {
+            let tmp14;
+            if (cResult[7] === pendingBanner) {
+              source = cResult[8];
+              tmp14 = cResult[9];
+            }
+            if (tmp14) {
+              tmp14 = !setting;
+            }
+            if (tmp14) {
+              tmp14 = !tmp4;
+            }
+            if (cResult[10] !== backgroundColor) {
+              class M {
+                constructor() {
+                  closure_7(!first);
+                }
+              }
+              cResult[10] = backgroundColor;
+              cResult[11] = M;
+            } else {
+              class M {
+                constructor() {
+                  closure_7(!first);
+                }
+              }
+            }
+            if (cResult[12] === bannerHeight) {
+              class M {
+                constructor() {
+                  closure_7(!first);
+                }
+              }
+            }
+            cResult[12] = bannerHeight;
+            cResult[13] = num;
+            cResult[14] = tmp13;
+            cResult[15] = userProfileBannerBackgroundColor;
+            if (displayProfile != null) {
+              class M {
+                constructor() {
+                  closure_7(!first);
+                }
+              }
+            }
+            cResult[16] = undefined;
+            if (displayProfile != null) {
+              class M {
+                constructor() {
+                  closure_7(!first);
+                }
+              }
+            }
+            cResult[17] = undefined;
+            cResult[18] = pendingAccentColor;
+            if (pendingThemeColors != null) {
+              class M {
+                constructor() {
+                  closure_7(!first);
+                }
+              }
+            }
+            const fn = function q() {
+              const obj = { style, bannerSource: source, backgroundColor, bannerSafeArea: num, bannerHeight };
+              backgroundColor = undefined;
+              const tmp = metroImportDefault;
+              const tmp2 = BannerDefault;
+              if (pendingThemeColors != null) {
+                backgroundColor = pendingThemeColors[0];
+              }
+              if (backgroundColor == null) {
+                backgroundColor = pendingAccentColor;
+              }
+              if (backgroundColor == null) {
+                let primaryColor;
+                if (displayProfile != null) {
+                  primaryColor = displayProfile.primaryColor;
+                }
+                backgroundColor = primaryColor;
+              }
+              if (backgroundColor == null) {
+                backgroundColor = userProfileBannerBackgroundColor;
+              }
+              let banner;
+              if (displayProfile != null) {
+                banner = displayProfile.banner;
+              }
+              return tmp(tmp2, obj, banner);
+            };
+            cResult[19] = undefined;
+            cResult[20] = style;
+            cResult[21] = fn;
+          }
+        }
+        if (undefined !== pendingBanner) {
+          let previewBanner;
+          class M {
+            constructor() {
+              closure_7(!first);
+            }
+          }
+          if (displayProfile != null) {
+            class M {
+              constructor() {
+                closure_7(!first);
+              }
+            }
+            previewBanner = displayProfile.getPreviewBanner(pendingBanner, tmp9, 600);
+          }
+          bannerURL = previewBanner;
+        } else {
+          class M {
+            constructor() {
+              closure_7(!first);
+            }
+          }
+          if (displayProfile != null) {
+            class M {
+              constructor() {
+                closure_7(!first);
+              }
+            }
+            tmp16[0] = setting || backgroundColor;
+            bannerURL = displayProfile.getBannerURL(tmp16);
+          }
+        }
+        source = null;
+        if (null != bannerURL) {
+          class M {
+            constructor() {
+              closure_7(!first);
+            }
+          }
+          source = obj4.makeSource(bannerURL);
+        }
+        const tmpResult2 = tmp(tmp2[10]);
+        const isAnimatedImageURLResult = tmpResult2.isAnimatedImageURL(bannerURL);
+        cResult[5] = setting || backgroundColor;
+        cResult[6] = displayProfile;
+        cResult[7] = pendingBanner;
+        cResult[8] = source;
+        cResult[9] = isAnimatedImageURLResult;
+        tmp14 = isAnimatedImageURLResult;
+        tmp13 = source;
+      }
+    }
+  }
+  const obj2 = { user, guildId, pendingAvatarSrc, displayProfile };
+  cResult[0] = displayProfile;
+  cResult[1] = pendingAvatarSrc;
+  cResult[2] = guildId;
+  cResult[3] = user;
+  cResult[4] = obj2;
+  tmp11 = obj2;
+}) : ((displayProfile) => {
   let backgroundColor;
   let bannerSafeArea;
   let bannerURL;
@@ -53,15 +255,15 @@ export default function UserProfileBanner(displayProfile) {
   let source;
   let tmp = source();
   let tmp2 = displayProfile;
-  const GifAutoPlay = displayProfile(bannerSafeArea[6]).GifAutoPlay;
+  const GifAutoPlay = displayProfile(bannerSafeArea[8]).GifAutoPlay;
   const setting = GifAutoPlay.useSetting();
   const tmp5 = bannerHeight(react.useState(false), 2);
   backgroundColor = tmp5[0];
   let closure_7 = tmp5[1];
   let obj = { user, guildId, pendingAvatarSrc, displayProfile };
   guildId = undefined;
-  const useUserProfileBannerBackgroundColor = tmp2(bannerSafeArea[7]).useUserProfileBannerBackgroundColor;
-  tmp2(bannerSafeArea[7]);
+  const useUserProfileBannerBackgroundColor = tmp2(bannerSafeArea[9]).useUserProfileBannerBackgroundColor;
+  tmp2(bannerSafeArea[9]);
   if (displayProfile != null) {
     guildId = displayProfile.guildId;
   }
@@ -78,7 +280,7 @@ export default function UserProfileBanner(displayProfile) {
   }
   source = null;
   if (null != bannerURL) {
-    const tmp2Result3 = tmp2(bannerSafeArea[8]);
+    const tmp2Result3 = tmp2(bannerSafeArea[10]);
     source = tmp2Result3.makeSource(bannerURL);
   }
   function renderBanner() {
@@ -109,7 +311,7 @@ export default function UserProfileBanner(displayProfile) {
     return tmp(tmp2, obj, banner);
   }
   const obj3 = { style: tmp.bannerContainer, children: null };
-  const tmp2Result4 = tmp2(bannerSafeArea[8]);
+  const tmp2Result4 = tmp2(bannerSafeArea[10]);
   if (tmp2Result4.isAnimatedImageURL(bannerURL)) {
     if (!setting) {
       let renderBannerResult;
@@ -119,11 +321,11 @@ export default function UserProfileBanner(displayProfile) {
                   closure_7(!first);
                 },
           accessibilityRole: "button",
-          accessibilityLabel: intl.string(tmp2(bannerSafeArea[11]).t["3fzj/l"]),
+          accessibilityLabel: intl.string(tmp2(bannerSafeArea[13]).t["3fzj/l"]),
           children: items
         };
-        const PressableOpacity = tmp2(tmp3[10]).PressableOpacity;
-        intl = tmp2(tmp3[11]).intl;
+        const PressableOpacity = tmp2(tmp3[12]).PressableOpacity;
+        intl = tmp2(tmp3[13]).intl;
         items = [renderBanner(), ];
         let tmp13Result = null;
         const tmp15 = closure_8;
@@ -139,4 +341,7 @@ export default function UserProfileBanner(displayProfile) {
     }
   }
   renderBannerResult = renderBanner();
-};
+});
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileBanner.tsx");
+
+export default tmp3;

@@ -1,24 +1,26 @@
-// Module ID: 16389
-// Function ID: 16390
+// Module ID: 16391
+// Function ID: 16392
 // Name: vibegrationsAttachmentDrafts
-// Dependencies: [109, 4705, 12642, 1115, 3715, 5371, 573, 2]
-// Exports: addVibegrationsAttachmentDrafts, clearVibegrationsAttachmentDrafts, removeVibegrationsAttachmentDraft, sendVibegrationsCardReply, useVibegrationsAttachmentDraftList
+// Dependencies: [109, 4707, 12644, 558, 576, 1127, 3718, 5372, 585, 2]
+// Exports: addVibegrationsAttachmentDrafts, clearVibegrationsAttachmentDrafts, removeVibegrationsAttachmentDraft, sendVibegrationsCardReply
 
-// Module 16389 (vibegrationsAttachmentDrafts)
-import intl2 from "intl" /* 1115 */;
-import _modDef3715 from "module_3715" /* 3715 */;
-import ZustandStore from "ZustandStore" /* 4705 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5371 */;
+// Module 16391 (vibegrationsAttachmentDrafts)
+import intl2 from "intl" /* 1127 */;
+import _modDef3718 from "module_3718" /* 3718 */;
+import ZustandStore from "ZustandStore" /* 4707 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5372 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12642 */;
-import Dispatcher_mod from "Dispatcher" /* 573 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12644 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import Dispatcher_mod from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
-let closure_8;
+const require = globalThis.__r;
+let _require, closure_8;
 
 let closure_4;
 let hasOwnProperty;
-const f104720 = () => {
+const f124719 = () => {
 
 };
 function _toPropertyKey(obj) {
@@ -80,7 +82,7 @@ function discardDraft(projectId, item10010) {
   }
   if (null != item10010.ref) {
     const promise = React3(projectId, item10010.ref.id);
-    promise.catch(f104720);
+    promise.catch(f124719);
   }
 }
 function discardProject(projectId, deleteFromWorker) {
@@ -144,6 +146,47 @@ const createZustandStore = ZustandStore.createZustandStore;
 let closure_7 = [];
 let c8 = 1;
 const zustandStore = createZustandStore(() => ({ draftsByProject: {} }));
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  _require = arg0;
+  let closure_1 = arg1;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  if (cResult[0] === arg0) {
+    let tmp2;
+    if (cResult[1] === arg1) {
+      tmp2 = cResult[2];
+    }
+    return zustandStore.useState(tmp2);
+  }
+  const fn = function r(arg0) {
+    let tmp2;
+    if (arg0.draftsByProject[closure_0] != null) {
+      tmp2 = tmp[closure_1];
+    }
+    if (tmp2 == null) {
+      tmp2 = closure_7;
+    }
+    return tmp2;
+  };
+  cResult[0] = arg0;
+  cResult[1] = arg1;
+  cResult[2] = fn;
+  tmp2 = fn;
+}) : ((arg0, arg1) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  return zustandStore.useState((arg0) => {
+    let tmp2;
+    if (arg0.draftsByProject[closure_0] != null) {
+      tmp2 = tmp[closure_1];
+    }
+    if (tmp2 == null) {
+      tmp2 = closure_7;
+    }
+    return tmp2;
+  });
+});
 let Dispatcher = Dispatcher_mod;
 const subscription = Dispatcher.subscribe("LOGOUT", () => {
   const keys = Object.keys(zustandStore.getState().draftsByProject);
@@ -161,20 +204,7 @@ const result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrations
 
 export const VibegrationsAttachmentDraftStore = zustandStore;
 export { getVibegrationsAttachmentDrafts };
-export const useVibegrationsAttachmentDraftList = function useVibegrationsAttachmentDraftList(projectId, chat) {
-  let closure_0 = projectId;
-  let closure_1 = chat;
-  return zustandStore.useState((arg0) => {
-    let tmp2;
-    if (arg0.draftsByProject[projectId] != null) {
-      tmp2 = tmp[chat];
-    }
-    if (tmp2 == null) {
-      tmp2 = closure_7;
-    }
-    return tmp2;
-  });
-};
+export const useVibegrationsAttachmentDraftList = tmp4;
 export const addVibegrationsAttachmentDrafts = function addVibegrationsAttachmentDrafts(projectId, chat, mapped) {
   let state;
   let closure_0 = projectId;
@@ -222,7 +252,7 @@ export const removeVibegrationsAttachmentDraft = function removeVibegrationsAtta
     }
     if (null != found.ref) {
       const promise = React3(projectId, found.ref.id);
-      promise.catch(f104720);
+      promise.catch(f124719);
     }
     const found1 = tmp2.filter((localId) => localId.localId !== closure_0);
     const draftsByProject = obj.getState().draftsByProject;

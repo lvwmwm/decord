@@ -1,11 +1,11 @@
-// Module ID: 17720
-// Function ID: 17721
+// Module ID: 17722
+// Function ID: 17723
 // Name: ManagerRegistryShared
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 // Exports: initialize
 
-// Module 17720 (ManagerRegistryShared)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 17722 (ManagerRegistryShared)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 function populateMap(actions) {

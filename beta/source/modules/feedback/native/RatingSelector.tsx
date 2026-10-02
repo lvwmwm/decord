@@ -1,21 +1,21 @@
-// Module ID: 11125
-// Function ID: 11126
+// Module ID: 10995
+// Function ID: 10996
 // Name: RatingSelector
-// Dependencies: [19, 17, 11121, 21, 4836, 11126, 11127, 1115, 11131, 11132, 11136, 11137, 8055, 5435, 2]
-// Exports: default
+// Dependencies: [19, 17, 10991, 21, 4837, 558, 576, 1127, 10996, 10997, 11001, 11002, 11006, 11007, 8059, 5436, 2]
 
-// Module 11125 (RatingSelector)
+// Module 10995 (RatingSelector)
 import Fragment from "Fragment" /* 21 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11126 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11131 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11136 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10996 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11001 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11006 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 11121 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import Constants from "Constants" /* 10991 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let rating;
+let selectedRating;
 
 let c3;
 let closure_4;
@@ -28,15 +28,258 @@ let createStyles = createStyles_mod;
 let closure_8 = createStyles.createStyles({ ratings: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, rating: {}, emoji: { width: 64, height: 64, marginVertical: 24, marginHorizontal: 12 } });
 createStyles = createStyles_mod;
 let closure_9 = createStyles.createStyles({ ratings: { flexDirection: "column", alignItems: "flex-start", justifyContent: "flex-start", gap: 16, marginBottom: 12 }, rating: { width: "100%" }, emoji: { width: 32, height: 32 } });
-const result = size.fileFinishedImporting("modules/feedback/native/RatingSelector.tsx");
-
-export default function RatingSelector(ratingOptions) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+  let first;
+  let obj2;
+  let obj4;
+  let obj6;
+  let obj8;
+  let tmp5;
+  let tmp6;
+  let tmpResult;
+  let tmpResult3;
+  let tmpResult4;
+  const obj = obj2(576);
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function l() {
+      const intl = obj2(dependencyMap[7]).intl;
+      return intl.string(obj2(dependencyMap[7]).t["C/12Tt"]);
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function n() {
+      const intl = obj2(dependencyMap[7]).intl;
+      return intl.string(obj2(dependencyMap[7]).t.Xcb4cF);
+    };
+    cResult[1] = fn2;
+    tmp5 = fn2;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn3 = function s() {
+      const intl = obj2(dependencyMap[7]).intl;
+      return intl.string(obj2(dependencyMap[7]).t["1Vyb5J"]);
+    };
+    cResult[2] = fn3;
+    tmp6 = fn3;
+  } else {
+    tmp6 = cResult[2];
+  }
+  obj2 = {};
+  const obj3 = { source: obj4, getLabel: first, rating: constants.BAD };
+  const BAD = constants.BAD;
+  obj4 = { selected: AssetRegistryDefault, normal: tmpResult.useFeedbackModalSadDesaturatedSource() };
+  obj2[BAD] = obj3;
+  const obj5 = { source: obj6, getLabel: tmp5, rating: constants.NEUTRAL };
+  tmpResult = obj2(10997);
+  const NEUTRAL = constants.NEUTRAL;
+  obj6 = { selected: AssetRegistryDefault2, normal: tmpResult3.useFeedbackModalNeutralDesaturatedSource() };
+  obj2[NEUTRAL] = obj5;
+  const obj7 = { source: obj8, getLabel: tmp6, rating: constants.GOOD };
+  tmpResult3 = obj2(11002);
+  const GOOD = constants.GOOD;
+  obj8 = { selected: AssetRegistryDefault3, normal: tmpResult4.useFeedbackModalHappyDesaturatedSource() };
+  obj2[GOOD] = obj7;
+  tmpResult4 = obj2(11007);
+  return arr.map((item) => obj2[item]);
+}) : ((arr) => {
   let obj10;
   let obj3;
   let obj4;
   let obj6;
   let obj7;
   let obj9;
+  const obj = {};
+  const obj2 = {
+    source: obj3,
+    getLabel() {
+      const intl = obj(dependencyMap[7]).intl;
+      return intl.string(obj(dependencyMap[7]).t["C/12Tt"]);
+    },
+    rating: constants.BAD
+  };
+  const BAD = constants.BAD;
+  obj3 = { selected: AssetRegistryDefault, normal: obj4.useFeedbackModalSadDesaturatedSource() };
+  obj[BAD] = obj2;
+  obj4 = obj(10997);
+  const obj5 = {
+    source: obj6,
+    getLabel() {
+      const intl = obj(dependencyMap[7]).intl;
+      return intl.string(obj(dependencyMap[7]).t.Xcb4cF);
+    },
+    rating: constants.NEUTRAL
+  };
+  const NEUTRAL = constants.NEUTRAL;
+  obj6 = { selected: AssetRegistryDefault2, normal: obj7.useFeedbackModalNeutralDesaturatedSource() };
+  obj[NEUTRAL] = obj5;
+  obj7 = obj(11002);
+  const obj8 = {
+    source: obj9,
+    getLabel() {
+      const intl = obj(dependencyMap[7]).intl;
+      return intl.string(obj(dependencyMap[7]).t["1Vyb5J"]);
+    },
+    rating: constants.GOOD
+  };
+  const GOOD = constants.GOOD;
+  obj9 = { selected: AssetRegistryDefault3, normal: obj10.useFeedbackModalHappyDesaturatedSource() };
+  obj[GOOD] = obj8;
+  obj10 = obj(11007);
+  return arr.map((item) => obj[item]);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedRating) => {
+  let onChangeRating;
+  let ratingOptions;
+  let textLabels;
+  let tmp4;
+  let tmp5;
+  let obj = textLabels(onChangeRating[6]);
+  const cResult = obj.c(16);
+  ({ ratingOptions, textLabels } = selectedRating);
+  selectedRating = selectedRating.selectedRating;
+  onChangeRating = selectedRating.onChangeRating;
+  if (undefined === ratingOptions) {
+    ratingOptions = closure_5;
+  }
+  let tmp2 = closure_9();
+  let tmp3 = closure_8();
+  if (null != textLabels) {
+    tmp3 = tmp2;
+  }
+  let closure_3 = tmp3;
+  const arr = closure_10(ratingOptions);
+  if (cResult[0] === arr) {
+    if (cResult[1] === onChangeRating) {
+      if (cResult[2] === selectedRating) {
+        if (cResult[3] === tmp3.emoji) {
+          if (cResult[4] === tmp3.rating) {
+            if (cResult[5] === textLabels) {
+              tmp5 = cResult[6];
+            }
+            if (cResult[13] === tmp3.ratings) {
+              let tmp8;
+              if (cResult[14] === tmp5) {
+                tmp8 = cResult[15];
+              }
+              return tmp8;
+            }
+            const tmp11 = <closure_3 style={tmp4}>{tmp5}</closure_3>;
+            cResult[13] = tmp3.ratings;
+            cResult[14] = tmp5;
+            cResult[15] = tmp11;
+            tmp8 = tmp11;
+          }
+        }
+      }
+    }
+  }
+  if (cResult[7] === onChangeRating) {
+    if (cResult[8] === selectedRating) {
+      if (cResult[9] === tmp3.emoji) {
+        if (cResult[10] === tmp3.rating) {
+          let tmp6;
+          if (cResult[11] === textLabels) {
+            tmp6 = cResult[12];
+          }
+          const mapped = arr.map(tmp6);
+          cResult[0] = arr;
+          cResult[1] = onChangeRating;
+          cResult[2] = selectedRating;
+          cResult[3] = tmp3.emoji;
+          cResult[4] = tmp3.rating;
+          cResult[5] = textLabels;
+          cResult[6] = mapped;
+          tmp5 = mapped;
+        }
+      }
+    }
+  }
+  const fn = function o(rating) {
+    let RowButton;
+    let getLabel;
+    let normal;
+    let obj2;
+    let obj3;
+    let obj4;
+    let obj6;
+    let obj7;
+    let selected;
+    let source;
+    let tmp12;
+    let tmp13;
+    let tmp14Result;
+    let tmp19;
+    let tmp2;
+    let tmp20;
+    let tmp7;
+    rating = rating.rating;
+    ({ source, getLabel } = rating);
+    ({ selected, normal } = source);
+    if (null != rating) {
+      const obj = { style: closure_3.rating, children: tmp7(RowButton, obj2) };
+      obj2 = {
+        accessibilityRole: "button",
+        accessibilityLabel: getLabel(),
+        accessibilityState: obj3,
+        onPress() {
+            return onChangeRating(rating);
+          },
+        icon: tmp12(tmp13, obj4),
+        label: tmp[rating]
+      };
+      RowButton = textLabels(onChangeRating[14]).RowButton;
+      obj3 = { selected: selectedRating === rating };
+      obj4 = { style: closure_3.emoji, source: normal };
+      tmp12 = jsx;
+      tmp13 = closure_1_4;
+      const tmp4 = jsx;
+      const tmp5 = closure_3;
+      tmp7 = jsx;
+      if (selectedRating === rating) {
+        normal = selected;
+      }
+      tmp14Result = tmp4(tmp5, obj, rating);
+    } else {
+      const obj5 = {
+        accessibilityRole: "button",
+        accessibilityLabel: getLabel(),
+        accessibilityState: obj6,
+        onPress() {
+            return onChangeRating(rating);
+          },
+        children: tmp19(tmp20, obj7)
+      };
+      const PressableOpacity = textLabels(onChangeRating[15]).PressableOpacity;
+      obj7 = { style: closure_3.emoji, source: tmp2 };
+      tmp2 = normal;
+      obj6 = { selected: selectedRating === rating };
+      const tmp14 = jsx;
+      tmp19 = jsx;
+      tmp20 = closure_1_4;
+      if (selectedRating === rating) {
+        tmp2 = selected;
+      }
+      tmp14Result = tmp14(PressableOpacity, obj5, rating);
+    }
+    return tmp14Result;
+  };
+  cResult[7] = onChangeRating;
+  cResult[8] = selectedRating;
+  cResult[9] = tmp3.emoji;
+  cResult[10] = tmp3.rating;
+  cResult[11] = textLabels;
+  cResult[12] = fn;
+  tmp6 = fn;
+}) : ((ratingOptions) => {
   ratingOptions = ratingOptions.ratingOptions;
   if (ratingOptions === undefined) {
     ratingOptions = closure_5;
@@ -50,45 +293,8 @@ export default function RatingSelector(ratingOptions) {
     tmp2 = tmp;
   }
   closure_3 = tmp2;
-  let obj = {};
-  let obj2 = {
-    source: obj3,
-    getLabel() {
-      const intl = textLabels(dependencyMap[7]).intl;
-      return intl.string(textLabels(dependencyMap[7]).t["C/12Tt"]);
-    },
-    rating: constants.BAD
-  };
-  obj3 = { selected: AssetRegistryDefault, normal: obj4.useFeedbackModalSadDesaturatedSource() };
-  const BAD = constants.BAD;
-  obj4 = textLabels(11127);
-  obj[BAD] = obj2;
-  let obj5 = {
-    source: obj6,
-    getLabel() {
-      const intl = textLabels(dependencyMap[7]).intl;
-      return intl.string(textLabels(dependencyMap[7]).t.Xcb4cF);
-    },
-    rating: constants.NEUTRAL
-  };
-  obj6 = { selected: AssetRegistryDefault2, normal: obj7.useFeedbackModalNeutralDesaturatedSource() };
-  const NEUTRAL = constants.NEUTRAL;
-  obj7 = textLabels(11132);
-  obj[NEUTRAL] = obj5;
-  const obj8 = {
-    source: obj9,
-    getLabel() {
-      const intl = textLabels(dependencyMap[7]).intl;
-      return intl.string(textLabels(dependencyMap[7]).t["1Vyb5J"]);
-    },
-    rating: constants.GOOD
-  };
-  const GOOD = constants.GOOD;
-  obj9 = { selected: AssetRegistryDefault3, normal: obj10.useFeedbackModalHappyDesaturatedSource() };
-  obj[GOOD] = obj8;
-  obj10 = textLabels(11137);
-  const mapped = ratingOptions.map((item) => obj[item]);
-  return <closure_3 style={tmp2.ratings}>{mapped.map((rating) => {
+  const arr = closure_10(ratingOptions);
+  return <closure_3 style={tmp2.ratings}>{arr.map((rating) => {
     let RowButton;
     let normal;
     let obj2;
@@ -119,7 +325,7 @@ export default function RatingSelector(ratingOptions) {
         icon: tmp12(tmp13, obj4),
         label: tmp[rating]
       };
-      RowButton = textLabels(dependencyMap[12]).RowButton;
+      RowButton = textLabels(dependencyMap[14]).RowButton;
       obj3 = { selected: closure_1 === rating };
       obj4 = { style: closure_3.emoji, source: normal };
       tmp12 = jsx;
@@ -141,7 +347,7 @@ export default function RatingSelector(ratingOptions) {
           },
         children: tmp19(tmp20, obj7)
       };
-      const PressableOpacity = textLabels(dependencyMap[13]).PressableOpacity;
+      const PressableOpacity = textLabels(dependencyMap[15]).PressableOpacity;
       obj7 = { style: closure_3.emoji, source: tmp2 };
       tmp2 = normal;
       obj6 = { selected: closure_1 === rating };
@@ -155,4 +361,7 @@ export default function RatingSelector(ratingOptions) {
     }
     return tmp14Result;
   })}</closure_3>;
-};
+});
+const result = size.fileFinishedImporting("modules/feedback/native/RatingSelector.tsx");
+
+export default tmp5;

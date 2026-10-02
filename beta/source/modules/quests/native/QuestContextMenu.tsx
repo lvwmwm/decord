@@ -1,39 +1,41 @@
-// Module ID: 14682
-// Function ID: 14683
+// Module ID: 14670
+// Function ID: 14671
 // Name: QuestContextMenu
-// Dependencies: [109, 19, 7116, 1074, 21, 7363, 7366, 1115, 10681, 504, 5759, 10749, 10711, 10699, 7135, 1364, 4813, 10678, 10719, 7141, 4541, 14642, 5763, 10683, 8037, 14683, 4779, 7137, 6610, 4783, 7153, 7142, 7152, 7358, 2]
+// Dependencies: [109, 19, 7120, 1086, 21, 7362, 7365, 1127, 558, 576, 10670, 5760, 504, 10713, 10675, 9781, 7139, 1370, 4814, 10667, 10683, 7145, 4545, 14630, 5764, 9765, 8041, 14671, 4780, 7141, 6611, 4784, 7157, 7146, 7156, 7366, 2]
 
-// Module 14682 (QuestContextMenu)
+// Module 14670 (QuestContextMenu)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1074 */;
-import intl3 from "intl" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
-import CopyIcon from "CopyIcon" /* 4779 */;
-import CheckmarkLargeIcon2 from "CheckmarkLargeIcon" /* 4783 */;
-import parseURLDefault from "parseURL" /* 4813 */;
-import QuestTypes from "QuestTypes" /* 5759 */;
-import AdCreativeType from "AdCreativeType" /* 5763 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7137 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7141 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 7142 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7152 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7153 */;
-import IconButton2 from "IconButton" /* 7363 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7366 */;
-import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8037 */;
-import QuestUtils from "QuestUtils" /* 10678 */;
-import QuestActionCreators from "QuestActionCreators" /* 10683 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 10699 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10719 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 14642 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14683 */;
+import Constants from "Constants" /* 1086 */;
+import intl3 from "intl" /* 1127 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4545 */;
+import CopyIcon from "CopyIcon" /* 4780 */;
+import CheckmarkLargeIcon2 from "CheckmarkLargeIcon" /* 4784 */;
+import parseURLDefault from "parseURL" /* 4814 */;
+import QuestTypes from "QuestTypes" /* 5760 */;
+import AdCreativeType from "AdCreativeType" /* 5764 */;
+import ClipboardUtils from "ClipboardUtils" /* 6611 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7141 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7145 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 7146 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7156 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7157 */;
+import IconButton2 from "IconButton" /* 7362 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7365 */;
+import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8041 */;
+import QuestActionCreators from "QuestActionCreators" /* 9765 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9781 */;
+import QuestUtils from "QuestUtils" /* 10667 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 10683 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 14630 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14671 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7116 */;
+import QuestStore from "QuestStore" /* 7120 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children;
+let announceResult, copyShareLinkResult, tmp3, tmp6;
 
 function renderDefaultButton(ref) {
   ref = ref.ref;
@@ -47,7 +49,285 @@ function renderDefaultButton(ref) {
 let closure_3 = ["ref"];
 const LinkingTypes = Constants.LinkingTypes;
 const jsx = Fragment.jsx;
-const memoResult = react.memo((children) => {
+let memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let additionalItems;
+  let children;
+  let handleComplete;
+  let handleOverridePreviewClick;
+  let handleProgress;
+  let handleResetDismissibilityClick;
+  let handleResetStatusClick;
+  let quest;
+  let questImpressionId;
+  let showShareLink;
+  let sourceQuestContent;
+  let tmp14;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  let tmp = quest;
+  let obj = quest(handleProgress[9]);
+  const cResult = obj.c(89);
+  ({ children, quest } = arg0);
+  ({ showShareLink, additionalItems, sourceQuestContent } = arg0);
+  if (undefined === children) {
+    children = renderDefaultButton;
+  }
+  const tmp4 = undefined !== showShareLink && showShareLink;
+  if (cResult[0] !== additionalItems) {
+    let items = additionalItems;
+    if (undefined === additionalItems) {
+      items = [];
+    }
+    cResult[0] = additionalItems;
+    cResult[1] = items;
+    let tmp5 = items;
+  } else {
+    tmp5 = cResult[1];
+  }
+  let tmpResult = tmp(tmp2[10]);
+  const questPreviewActions = tmpResult.useQuestPreviewActions(quest.id);
+  ({ handleComplete, handleProgress } = questPreviewActions);
+  ({ handleResetDismissibilityClick, handleResetStatusClick, handleOverridePreviewClick } = questPreviewActions);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [questImpressionId];
+    class S {
+      constructor() {
+        return closure_6.getQuestPreviewOverride(quest(handleProgress[11]).QuestContent.QUEST_BAR_MOBILE);
+      }
+    }
+    const items2 = [];
+    cResult[2] = items1;
+    cResult[3] = S;
+    cResult[4] = items2;
+    tmp9 = items2;
+    tmp8 = S;
+    tmp7 = items1;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+    tmp9 = cResult[4];
+  }
+  const tmpResult5 = tmp(handleProgress[12]);
+  const stateFromStores = tmpResult5.useStateFromStores(tmp7, tmp8, tmp9);
+  const tmpResult6 = tmp(handleProgress[13]);
+  const trackQuestContentClickedWithImpression = tmpResult6.useTrackQuestContentClickedWithImpression();
+  const tmpResult7 = tmp(handleProgress[14]);
+  questImpressionId = tmpResult7.useQuestImpressionId();
+  if (cResult[5] !== quest) {
+    const tmpResult8 = tmp(handleProgress[15]);
+    const externalCtaLabel = tmpResult8.getExternalCtaLabel(quest);
+    class S {
+      constructor() {
+        return closure_6.getQuestPreviewOverride(quest(handleProgress[11]).QuestContent.QUEST_BAR_MOBILE);
+      }
+    }
+    cResult[6] = externalCtaLabel;
+    tmp14 = externalCtaLabel;
+  } else {
+    tmp14 = cResult[6];
+  }
+  if (cResult[7] === quest.config) {
+    let tmp16;
+    if (cResult[8] === tmp4) {
+      tmp16 = cResult[9];
+    }
+    let closure_7 = tmp16;
+    if (cResult[10] === questImpressionId) {
+      if (cResult[11] === quest) {
+        let tmp18;
+        if (cResult[12] === sourceQuestContent) {
+          tmp18 = cResult[13];
+        }
+        if (cResult[14] === questImpressionId) {
+          if (cResult[15] === tmp16) {
+            if (cResult[16] === quest.id) {
+              if (cResult[19] === quest) {
+                if (cResult[22] !== quest.id) {
+                  class X {
+                    constructor() {
+                      obj = closure_0(closure_2[25]);
+                      return obj.manuallyStartConsoleQuest(quest.id, true);
+                    }
+                  }
+                  class D {
+                    constructor() {
+                      tmp = closure_7;
+                      if (tmp) {
+                        tmp2 = closure_0;
+                        tmp3 = closure_2;
+                        tmp4 = closure_0(closure_2[15]);
+                        tmp5 = quest;
+                        obj = { content: null, ctaContent: null, impressionId: null, sourceQuestContent: null };
+                        copyShareLink = tmp4.copyShareLink;
+                        id = quest.id;
+                        obj.content = closure_0(closure_2[11]).QuestContent.QUEST_HOME_MOBILE;
+                        obj.ctaContent = closure_0(closure_2[21]).QuestContentCTA.CONTEXT_MENU_COPY_LINK;
+                        tmp6 = closure_6;
+                        obj.impressionId = closure_6;
+                        tmp7 = sourceQuestContent;
+                        obj.sourceQuestContent = sourceQuestContent;
+                        copyShareLinkResult = copyShareLink(id, obj);
+                        AccessibilityAnnouncer = closure_0(closure_2[22]).AccessibilityAnnouncer;
+                        announce = AccessibilityAnnouncer.announce;
+                        intl = closure_0(closure_2[7]).intl;
+                        announceResult = announce(intl.string(closure_0(closure_2[7]).t["+5kSoW"]));
+                      }
+                      return;
+                    }
+                  }
+                  class S {
+                    constructor() {
+                      return closure_6.getQuestPreviewOverride(quest(handleProgress[11]).QuestContent.QUEST_BAR_MOBILE);
+                    }
+                  }
+                  cResult[23] = X;
+                } else {
+                  class X {
+                    constructor() {
+                      obj = closure_0(closure_2[25]);
+                      return obj.manuallyStartConsoleQuest(quest.id, true);
+                    }
+                  }
+                }
+                class D {
+                  constructor() {
+                    tmp = closure_7;
+                    if (tmp) {
+                      tmp2 = closure_0;
+                      tmp3 = closure_2;
+                      tmp4 = closure_0(closure_2[15]);
+                      tmp5 = quest;
+                      obj = { content: null, ctaContent: null, impressionId: null, sourceQuestContent: null };
+                      copyShareLink = tmp4.copyShareLink;
+                      id = quest.id;
+                      obj.content = closure_0(closure_2[11]).QuestContent.QUEST_HOME_MOBILE;
+                      obj.ctaContent = closure_0(closure_2[21]).QuestContentCTA.CONTEXT_MENU_COPY_LINK;
+                      tmp6 = closure_6;
+                      obj.impressionId = closure_6;
+                      tmp7 = sourceQuestContent;
+                      obj.sourceQuestContent = sourceQuestContent;
+                      copyShareLinkResult = copyShareLink(id, obj);
+                      AccessibilityAnnouncer = closure_0(closure_2[22]).AccessibilityAnnouncer;
+                      announce = AccessibilityAnnouncer.announce;
+                      intl = closure_0(closure_2[7]).intl;
+                      announceResult = announce(intl.string(closure_0(closure_2[7]).t["+5kSoW"]));
+                    }
+                    return;
+                  }
+                }
+                class S {
+                  constructor() {
+                    return closure_6.getQuestPreviewOverride(quest(handleProgress[11]).QuestContent.QUEST_BAR_MOBILE);
+                  }
+                }
+                let obj2 = { label: tmp14, IconComponent: tmp(tmp2[26]).LinkExternalSmallIcon, action: tmp18, accessibilityRole: "link" };
+                cResult[26] = tmp14;
+                cResult[27] = tmp18;
+                cResult[28] = obj2;
+              }
+              class D {
+                constructor() {
+                  tmp = closure_7;
+                  if (tmp) {
+                    tmp2 = closure_0;
+                    tmp3 = closure_2;
+                    tmp4 = closure_0(closure_2[15]);
+                    tmp5 = quest;
+                    obj = { content: null, ctaContent: null, impressionId: null, sourceQuestContent: null };
+                    copyShareLink = tmp4.copyShareLink;
+                    id = quest.id;
+                    obj.content = closure_0(closure_2[11]).QuestContent.QUEST_HOME_MOBILE;
+                    obj.ctaContent = closure_0(closure_2[21]).QuestContentCTA.CONTEXT_MENU_COPY_LINK;
+                    tmp6 = closure_6;
+                    obj.impressionId = closure_6;
+                    tmp7 = sourceQuestContent;
+                    obj.sourceQuestContent = sourceQuestContent;
+                    copyShareLinkResult = copyShareLink(id, obj);
+                    AccessibilityAnnouncer = closure_0(closure_2[22]).AccessibilityAnnouncer;
+                    announce = AccessibilityAnnouncer.announce;
+                    intl = closure_0(closure_2[7]).intl;
+                    announceResult = announce(intl.string(closure_0(closure_2[7]).t["+5kSoW"]));
+                  }
+                  return;
+                }
+              }
+              class S {
+                constructor() {
+                  return closure_6.getQuestPreviewOverride(quest(handleProgress[11]).QuestContent.QUEST_BAR_MOBILE);
+                }
+              }
+              cResult[19] = quest;
+              cResult[20] = sourceQuestContent;
+              cResult[21] = tmp22;
+            }
+          }
+        }
+        class D {
+          constructor() {
+            tmp = closure_7;
+            if (tmp) {
+              tmp2 = closure_0;
+              tmp3 = closure_2;
+              tmp4 = closure_0(closure_2[15]);
+              tmp5 = quest;
+              obj = { content: null, ctaContent: null, impressionId: null, sourceQuestContent: null };
+              copyShareLink = tmp4.copyShareLink;
+              id = quest.id;
+              obj.content = closure_0(closure_2[11]).QuestContent.QUEST_HOME_MOBILE;
+              obj.ctaContent = closure_0(closure_2[21]).QuestContentCTA.CONTEXT_MENU_COPY_LINK;
+              tmp6 = closure_6;
+              obj.impressionId = closure_6;
+              tmp7 = sourceQuestContent;
+              obj.sourceQuestContent = sourceQuestContent;
+              copyShareLinkResult = copyShareLink(id, obj);
+              AccessibilityAnnouncer = closure_0(closure_2[22]).AccessibilityAnnouncer;
+              announce = AccessibilityAnnouncer.announce;
+              intl = closure_0(closure_2[7]).intl;
+              announceResult = announce(intl.string(closure_0(closure_2[7]).t["+5kSoW"]));
+            }
+            return;
+          }
+        }
+        class S {
+          constructor() {
+            return closure_6.getQuestPreviewOverride(quest(handleProgress[11]).QuestContent.QUEST_BAR_MOBILE);
+          }
+        }
+        cResult[14] = questImpressionId;
+        cResult[15] = tmp16;
+        cResult[16] = quest.id;
+        cResult[17] = sourceQuestContent;
+        cResult[18] = D;
+      }
+    }
+    class S {
+      constructor() {
+        return closure_6.getQuestPreviewOverride(quest(handleProgress[11]).QuestContent.QUEST_BAR_MOBILE);
+      }
+    }
+    cResult[10] = questImpressionId;
+    cResult[11] = quest;
+    cResult[12] = sourceQuestContent;
+    cResult[13] = tmp19;
+    tmp18 = tmp19;
+  }
+  let isShareableQuestResult = tmp4;
+  if (isShareableQuestResult) {
+    class X {
+      constructor() {
+        obj = closure_0(closure_2[25]);
+        return obj.manuallyStartConsoleQuest(quest.id, true);
+      }
+    }
+    isShareableQuestResult = obj7.isShareableQuest(quest.config);
+  }
+  cResult[7] = quest.config;
+  cResult[8] = tmp4;
+  cResult[9] = isShareableQuestResult;
+  tmp16 = isShareableQuestResult;
+}) : ((children) => {
   let stateFromStores;
   children = children.children;
   if (children === undefined) {
@@ -76,7 +356,7 @@ const memoResult = react.memo((children) => {
   let memo3;
   let tmp = quest;
   const tmp2 = sourceQuestContent;
-  let obj = quest(sourceQuestContent[8]);
+  let obj = quest(sourceQuestContent[10]);
   const questPreviewActions = obj.useQuestPreviewActions(quest.id);
   const handleComplete = questPreviewActions.handleComplete;
   const handleProgress = questPreviewActions.handleProgress;
@@ -84,17 +364,17 @@ const memoResult = react.memo((children) => {
   const handleResetStatusClick = questPreviewActions.handleResetStatusClick;
   const handleOverridePreviewClick = questPreviewActions.handleOverridePreviewClick;
   const handleResetHasBeenSeenClick = questPreviewActions.handleResetHasBeenSeenClick;
-  let obj2 = quest(sourceQuestContent[9]);
+  let obj2 = quest(sourceQuestContent[12]);
   let items = [handleResetStatusClick];
-  stateFromStores = obj2.useStateFromStores(items, () => handleResetStatusClick.getQuestPreviewOverride(quest(sourceQuestContent[10]).QuestContent.QUEST_BAR_MOBILE), []);
-  let obj3 = quest(sourceQuestContent[11]);
+  stateFromStores = obj2.useStateFromStores(items, () => handleResetStatusClick.getQuestPreviewOverride(quest(sourceQuestContent[11]).QuestContent.QUEST_BAR_MOBILE), []);
+  let obj3 = quest(sourceQuestContent[13]);
   const trackQuestContentClickedWithImpression = obj3.useTrackQuestContentClickedWithImpression();
-  let obj4 = quest(sourceQuestContent[12]);
+  let obj4 = quest(sourceQuestContent[14]);
   const questImpressionId = obj4.useQuestImpressionId();
-  let obj5 = quest(sourceQuestContent[13]);
+  let obj5 = quest(sourceQuestContent[15]);
   const externalCtaLabel = obj5.getExternalCtaLabel(quest);
   if (flag) {
-    let tmpResult = tmp(tmp2[14]);
+    let tmpResult = tmp(tmp2[16]);
     flag = tmpResult.isShareableQuest(quest.config);
   }
   let items1 = [quest, questImpressionId, sourceQuestContent];
@@ -160,7 +440,7 @@ const memoResult = react.memo((children) => {
     const tmp4 = flag;
     if (tmp4) {
       const obj3 = { label: intl2.string(intl3.t.WqhZss), IconComponent: CopyIcon.CopyIcon, action: callback1 };
-      intl2 = tmp2(1115).intl;
+      intl2 = tmp2(1127).intl;
       const items1 = [obj3];
       items2 = items1;
     } else {
@@ -205,13 +485,13 @@ const memoResult = react.memo((children) => {
     items[HermesBuiltin.arraySpread(items, memo1, 5)] = {
       label: "Copy Quest ID",
       action() {
-        const obj = quest(sourceQuestContent[28]);
+        const obj = quest(sourceQuestContent[30]);
         return obj.copy(id.id);
       }
     };
     return items;
   }, items8);
-  const tmpResult2 = tmp(tmp2[8]);
+  const tmpResult2 = tmp(tmp2[10]);
   shouldShowQuestPreviewOverrides = tmpResult2.useShouldShowQuestPreviewOverrides(quest);
   const items9 = [handleOverridePreviewClick, quest.id, ];
   let id;
@@ -226,7 +506,7 @@ const memoResult = react.memo((children) => {
     const obj = {
       label: "Show in Quest Bar",
       action() {
-        return handleOverridePreviewClick(quest(sourceQuestContent[10]).QuestContent.QUEST_BAR_MOBILE);
+        return handleOverridePreviewClick(quest(sourceQuestContent[11]).QuestContent.QUEST_BAR_MOBILE);
       },
       IconComponent: CheckmarkLargeIcon
     };
@@ -274,8 +554,8 @@ const memoResult = react.memo((children) => {
       trackQuestContentClickedWithImpression(obj3);
     }
   }, items11);
-  return handleResetHasBeenSeenClick(tmp(tmp2[33]).ContextMenu, { items: items12, onOpen, triggerOnTap: true, children });
-});
+  return handleResetHasBeenSeenClick(tmp(tmp2[35]).ContextMenu, { items: items12, onOpen, triggerOnTap: true, children });
+}));
 let result = size.fileFinishedImporting("modules/quests/native/QuestContextMenu.tsx");
 
 export default memoResult;

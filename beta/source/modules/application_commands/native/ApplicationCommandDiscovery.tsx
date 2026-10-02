@@ -1,31 +1,31 @@
-// Module ID: 11887
-// Function ID: 11888
+// Module ID: 11781
+// Function ID: 11782
 // Name: ApplicationCommandDiscovery
-// Dependencies: [32, 19, 17, 5305, 11888, 9726, 1074, 21, 11889, 4836, 576, 5288, 11890, 8719, 1979, 8599, 4541, 1115, 5016, 12, 11891, 6943, 11892, 11893, 1177, 9881, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 5306, 11782, 9843, 1086, 21, 11783, 4837, 588, 558, 576, 5289, 11784, 1985, 8596, 8714, 4545, 1127, 5017, 12, 1189, 9918, 6947, 11785, 11786, 11787, 2]
 
-// Module 11887 (ApplicationCommandDiscovery)
+// Module 11781 (ApplicationCommandDiscovery)
 import _modDef12 from "module_12" /* 12 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import Server from "Server" /* 1979 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import useFontScale from "useFontScale" /* 5288 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 8599 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9726 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9881 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 11888 */;
-import ApplicationSectionHeader from "ApplicationSectionHeader" /* 11889 */;
-import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 11890 */;
-import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 11891 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import Server from "Server" /* 1985 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+import useFontScale from "useFontScale" /* 5289 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 8596 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9843 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9918 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 11782 */;
+import ApplicationSectionHeader from "ApplicationSectionHeader" /* 11783 */;
+import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 11784 */;
+import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 11787 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5305 */;
-import Constants from "Constants" /* 1074 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,9 +51,667 @@ const AUTOCOMPLETE_ROW_HEIGHT = ApplicationCommandsConstants.AUTOCOMPLETE_ROW_HE
 let obj = { discoveryWrapper: { flex: 1 }, noCommandsImage: { height: 50, width: 50, marginBottom: 16 }, noCommandsContainer: { padding: 0, height: 100 }, commandsList: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
 let closure_17 = createStyles.createStyles(obj);
-let result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandDiscovery.tsx");
-
-export default function ApplicationCommandDiscovery(channel) {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onHeightChange) => {
+  let closure_18;
+  let closure_3;
+  let closure_6;
+  let commandsByActiveSection;
+  let filteredSectionId;
+  let first;
+  let loading;
+  let onPressSlashItem;
+  let ref;
+  let sectionDescriptors;
+  let style;
+  let sum;
+  let tmp11;
+  let tmp12;
+  let tmp35;
+  let tmp8;
+  let tmp = onPressSlashItem;
+  let tmp2 = dependencyMap;
+  let obj = onPressSlashItem(576);
+  const cResult = obj.c(78);
+  ({ style, onPressSlashItem } = onHeightChange);
+  onHeightChange = onHeightChange.onHeightChange;
+  const channel = onHeightChange.channel;
+  const canOnlyUseTextCommands = onHeightChange.canOnlyUseTextCommands;
+  let tmp4 = sum();
+  dependencyMap = tmp4;
+  const obj2 = onPressSlashItem(5289);
+  const bound = Math.max(obj2.useFontScale() * commandsByActiveSection, commandsByActiveSection);
+  let obj3 = ref;
+  ref = ref.useRef(null);
+  let tmp7 = bound(ref.useState(0), 2);
+  [r10036, tmp8] = tmp7;
+  ref = ref.useRef(false);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function l(initialSectionId) {
+      return initialSectionId.initialSectionId;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  let tmpResult = tmp(11784);
+  const commandDiscoveryManager = tmpResult.useCommandDiscoveryManager(first);
+  if (cResult[1] !== channel) {
+    const obj4 = { channel, type: "channel" };
+    let num = 1;
+    cResult[1] = channel;
+    cResult[2] = obj4;
+    tmp11 = obj4;
+  } else {
+    tmp11 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [tmp(1985).ApplicationCommandType.CHAT];
+    let num2 = 3;
+    cResult[3] = items;
+    tmp12 = items;
+  } else {
+    tmp12 = cResult[3];
+  }
+  const BuiltInCommandFilter = tmp(8596).BuiltInCommandFilter;
+  let tmp13 = canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW;
+  let tmp14 = !canOnlyUseTextCommands;
+  if (cResult[4] === tmp13) {
+    let tmp15;
+    let tmp16;
+    if (cResult[5] === tmp14) {
+      tmp15 = cResult[6];
+    }
+    const _Symbol = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      let obj5 = { placeholderCount: 3, limit: sectionDescriptors, includeFrecency: true };
+      let num3 = 7;
+      cResult[7] = obj5;
+      tmp16 = obj5;
+    } else {
+      tmp16 = cResult[7];
+    }
+    if (cResult[8] === tmp11) {
+      let tmp18;
+      if (cResult[9] === tmp15) {
+        tmp18 = cResult[10];
+      }
+      let tmp19 = channel;
+      const obj9 = channel(8714);
+      const discovery = obj9.useDiscovery(tmp18);
+      sectionDescriptors = discovery.sectionDescriptors;
+      const activeSections = discovery.activeSections;
+      commandsByActiveSection = discovery.commandsByActiveSection;
+      const hasMoreAfter = discovery.hasMoreAfter;
+      ({ loading, filteredSectionId } = discovery);
+      const scrollDown = discovery.scrollDown;
+      const filterSection = discovery.filterSection;
+      if (cResult[11] === filterSection) {
+        if (cResult[12] === commandDiscoveryManager) {
+          let tmp21;
+          let tmp22;
+          let tmp25;
+          let tmp24;
+          if (cResult[13] === sectionDescriptors) {
+            tmp21 = cResult[14];
+            tmp22 = cResult[15];
+          }
+          const effect = obj3.useEffect(tmp22, tmp21);
+          const _Symbol2 = Symbol;
+          if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+            const fn2 = function j() {
+              const AccessibilityAnnouncer = onPressSlashItem(closure_3[18]).AccessibilityAnnouncer;
+              const announce = AccessibilityAnnouncer.announce;
+              const intl = onPressSlashItem(closure_3[19]).intl;
+              announce(intl.string(onPressSlashItem(closure_3[19]).t["2wfLMm"]));
+              let obj = onPressSlashItem(closure_3[20]);
+              obj.trackWithMetadata(hasMoreAfter.APPLICATION_COMMAND_BROWSER_OPENED);
+              return () => {
+                const obj = onPressSlashItem(closure_1_3[14]);
+                const result = obj.updateInitialSectionId(undefined);
+              };
+            };
+            const items1 = [];
+            cResult[16] = fn2;
+            cResult[17] = items1;
+            tmp25 = items1;
+            tmp24 = fn2;
+          } else {
+            tmp24 = cResult[16];
+            tmp25 = cResult[17];
+          }
+          const effect1 = obj3.useEffect(tmp24, tmp25);
+          if (cResult[18] === commandsByActiveSection) {
+            if (cResult[19] === onHeightChange) {
+              let tmp27;
+              let tmp28;
+              if (cResult[20] === bound) {
+                tmp27 = cResult[21];
+                tmp28 = cResult[22];
+              }
+              const effect2 = obj3.useEffect(tmp27, tmp28);
+              if (cResult[23] === filterSection) {
+                if (cResult[24] === filteredSectionId) {
+                  let items2;
+                  if (cResult[25] === sectionDescriptors) {
+                    let tmp30 = cResult[26];
+                  }
+                  const _Symbol3 = Symbol;
+                  if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
+                    function re() {
+                      ref.current = true;
+                      const obj = AppAnalyticsUtils;
+                      obj.trackWithMetadata(hasMoreAfter.APPLICATION_COMMAND_BROWSER_SCROLLED);
+                    }
+                    cResult[27] = re;
+                    let tmp31 = re;
+                  } else {
+                    tmp31 = cResult[27];
+                  }
+                  const _Symbol4 = Symbol;
+                  if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
+                    function le(nativeEvent) {
+                      nativeEvent = nativeEvent.nativeEvent;
+                      const targetContentOffset = nativeEvent.targetContentOffset;
+                      let y1;
+                      const y = nativeEvent.contentOffset.y;
+                      if (targetContentOffset != null) {
+                        y1 = targetContentOffset.y;
+                      }
+                      if (y === y1) {
+                        ref.current = false;
+                      }
+                    }
+                    cResult[28] = le;
+                    let tmp32 = le;
+                  } else {
+                    tmp32 = cResult[28];
+                  }
+                  const _Symbol5 = Symbol;
+                  if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
+                    function se(arg0) {
+                      ref.current = false;
+                    }
+                    cResult[29] = se;
+                    let tmp33 = se;
+                  } else {
+                    tmp33 = cResult[29];
+                  }
+                  sum = 0;
+                  if (cResult[30] === commandsByActiveSection) {
+                    if (cResult[31] === bound) {
+                      if (cResult[32] === sectionDescriptors) {
+                        let tmp40;
+                        let tmp34 = sum;
+                        if (cResult[33] === sum) {
+                          items2 = cResult[34];
+                          sum = cResult[35];
+                        }
+                        if (cResult[36] !== tmp35) {
+                          let tmp41 = onHeightChange;
+                          let tmp42 = dependencyMap;
+                          const obj10 = onHeightChange(12);
+                          const throttleResult = obj10.throttle((arg0) => {
+                            let num = 0;
+                            if (0 < tmp35.length) {
+                              let num2 = 0;
+                              let num3 = 0;
+                              if (0 === tmp35[0]) {
+                                sum = num3 + 1;
+                                const sum1 = num2 + 1;
+                                num = sum;
+                                while (sum1 < tmp35.length) {
+                                  num2 = sum1;
+                                  num3 = sum;
+                                  if (0 === tmp5[sum1]) {
+                                    continue;
+                                  } else {
+                                    num2 = sum1;
+                                    num3 = sum;
+                                    num = sum;
+                                    if (arg0 < tmp5[sum1]) {
+                                      break;
+                                    }
+                                  }
+                                  continue;
+                                }
+                              } else {
+                                num2 = 0;
+                                num3 = 0;
+                                num = 0;
+                              }
+                            }
+                            tmp8(num);
+                          }, 100);
+                          cResult[36] = tmp35;
+                          cResult[37] = throttleResult;
+                          tmp40 = throttleResult;
+                        } else {
+                          tmp40 = cResult[37];
+                        }
+                        let closure_19 = tmp40;
+                        if (cResult[38] === activeSections) {
+                          if (cResult[39] === commandsByActiveSection) {
+                            if (cResult[40] === hasMoreAfter) {
+                              if (cResult[41] === bound) {
+                                if (cResult[42] === scrollDown) {
+                                  if (cResult[45] !== bound) {
+                                    class Se {
+                                      constructor(arg0, index) {
+                                        if (null == arg0) {
+                                          return { length: 0, offset: 0, index };
+                                        } else {
+                                          let num = 0;
+                                          let num2 = 0;
+                                          let num3 = 0;
+                                          let ROW = map1.ROW;
+                                          const iter = arg0[Symbol.iterator]();
+                                          const nextResult = iter.next();
+                                          while (iter !== undefined) {
+                                            let num4;
+                                            let tmp4 = nextResult;
+                                            if (num + num2 + nextResult.data.length + num3 + 1 >= index) {
+                                              if (index === num + num2 + num3) {
+                                                ROW = map1.HEADER;
+                                              } else if (index === num + num2 + tmp4.data.length + num3 + 1) {
+                                                num = num + 1;
+                                                num2 = num2 + nextResult.data.length;
+                                                ROW = map1.FOOTER;
+                                              } else {
+                                                sum = num + 1;
+                                                num = sum;
+                                                num2 = num2 + (index - sum - num2 - num3);
+                                                ROW = map1.ROW;
+                                              }
+                                              iter.return();
+                                              break;
+                                            } else {
+                                              num = num + 1;
+                                              num2 = num2 + tmp4.data.length;
+                                              num3 = num3 + 1;
+                                              continue;
+                                            }
+                                            let tmp28 = map1;
+                                            if (map1.ROW === ROW) {
+                                              num4 = bound;
+                                            } else if (tmp29.HEADER === ROW) {
+                                              num4 = ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT;
+                                            } else {
+                                              let FOOTER = tmp28.FOOTER;
+                                              num4 = 0;
+                                            }
+                                            let obj = { length: num4, offset: num * ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT + num2 * bound, index };
+                                            return obj;
+                                          }
+                                        }
+                                      }
+                                    }
+                                    cResult[45] = bound;
+                                    cResult[46] = Se;
+                                  } else {
+                                    class Se {
+                                      constructor(arg0, index) {
+                                        if (null == arg0) {
+                                          return { length: 0, offset: 0, index };
+                                        } else {
+                                          let num = 0;
+                                          let num2 = 0;
+                                          let num3 = 0;
+                                          let ROW = map1.ROW;
+                                          const iter = arg0[Symbol.iterator]();
+                                          const nextResult = iter.next();
+                                          while (iter !== undefined) {
+                                            let num4;
+                                            let tmp4 = nextResult;
+                                            if (num + num2 + nextResult.data.length + num3 + 1 >= index) {
+                                              if (index === num + num2 + num3) {
+                                                ROW = map1.HEADER;
+                                              } else if (index === num + num2 + tmp4.data.length + num3 + 1) {
+                                                num = num + 1;
+                                                num2 = num2 + nextResult.data.length;
+                                                ROW = map1.FOOTER;
+                                              } else {
+                                                sum = num + 1;
+                                                num = sum;
+                                                num2 = num2 + (index - sum - num2 - num3);
+                                                ROW = map1.ROW;
+                                              }
+                                              iter.return();
+                                              break;
+                                            } else {
+                                              num = num + 1;
+                                              num2 = num2 + tmp4.data.length;
+                                              num3 = num3 + 1;
+                                              continue;
+                                            }
+                                            let tmp28 = map1;
+                                            if (map1.ROW === ROW) {
+                                              num4 = bound;
+                                            } else if (tmp29.HEADER === ROW) {
+                                              num4 = ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT;
+                                            } else {
+                                              let FOOTER = tmp28.FOOTER;
+                                              num4 = 0;
+                                            }
+                                            let obj = { length: num4, offset: num * ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT + num2 * bound, index };
+                                            return obj;
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  if (cResult[47] === channel.guild_id) {
+                                    class Se {
+                                      constructor(arg0, index) {
+                                        if (null == arg0) {
+                                          return { length: 0, offset: 0, index };
+                                        } else {
+                                          let num = 0;
+                                          let num2 = 0;
+                                          let num3 = 0;
+                                          let ROW = map1.ROW;
+                                          const iter = arg0[Symbol.iterator]();
+                                          const nextResult = iter.next();
+                                          while (iter !== undefined) {
+                                            let num4;
+                                            let tmp4 = nextResult;
+                                            if (num + num2 + nextResult.data.length + num3 + 1 >= index) {
+                                              if (index === num + num2 + num3) {
+                                                ROW = map1.HEADER;
+                                              } else if (index === num + num2 + tmp4.data.length + num3 + 1) {
+                                                num = num + 1;
+                                                num2 = num2 + nextResult.data.length;
+                                                ROW = map1.FOOTER;
+                                              } else {
+                                                sum = num + 1;
+                                                num = sum;
+                                                num2 = num2 + (index - sum - num2 - num3);
+                                                ROW = map1.ROW;
+                                              }
+                                              iter.return();
+                                              break;
+                                            } else {
+                                              num = num + 1;
+                                              num2 = num2 + tmp4.data.length;
+                                              num3 = num3 + 1;
+                                              continue;
+                                            }
+                                            let tmp28 = map1;
+                                            if (map1.ROW === ROW) {
+                                              num4 = bound;
+                                            } else if (tmp29.HEADER === ROW) {
+                                              num4 = ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT;
+                                            } else {
+                                              let FOOTER = tmp28.FOOTER;
+                                              num4 = 0;
+                                            }
+                                            let obj = { length: num4, offset: num * ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT + num2 * bound, index };
+                                            return obj;
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  function renderSectionHeader(section) {
+                                    let intl;
+                                    let obj5;
+                                    section = section.section;
+                                    const children = [, ];
+                                    const obj = { section: section.section, guildId: channel.guild_id };
+                                    children[0] = authStore2(ApplicationSectionHeaderDefault, obj, section.section.id);
+                                    let tmp3Result = 0 === section.data.length;
+                                    const tmp = authStore3;
+                                    const tmp2 = closure_15;
+                                    const tmp3 = authStore2;
+                                    if (tmp3Result) {
+                                      const obj3 = { lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault, body: intl.format(intl2.t.WoQXT6, obj5), containerStyle: null, imageStyle: null };
+                                      const ThemedEmptyState = native.ThemedEmptyState;
+                                      intl = intl2.intl;
+                                      obj5 = { applicationName: section.section.name };
+                                      ({ noCommandsContainer: obj2.containerStyle, noCommandsImage: obj2.imageStyle } = closure_3);
+                                      tmp3Result = tmp3(ThemedEmptyState, obj3);
+                                    }
+                                    children[1] = tmp3Result;
+                                    return tmp(tmp2, { children });
+                                  }
+                                  cResult[47] = channel.guild_id;
+                                  cResult[48] = tmp4.noCommandsContainer;
+                                  cResult[49] = tmp4.noCommandsImage;
+                                  cResult[50] = renderSectionHeader;
+                                }
+                              }
+                            }
+                          }
+                        }
+                        function onScroll(nativeEvent) {
+                          let contentInset;
+                          let contentSize;
+                          let layoutMeasurement;
+                          nativeEvent = nativeEvent.nativeEvent;
+                          ({ layoutMeasurement, contentSize, contentInset } = nativeEvent);
+                          const y = nativeEvent.contentOffset.y;
+                          closure_19(y);
+                          const tmp2 = !ref.current && activeSections.length > 0;
+                          if (tmp2) {
+                            if (y < contentInset.top) {
+                              const current = ref.current;
+                              if (current != null) {
+                                current.scrollToLocation({ sectionIndex: 0, itemIndex: 0, viewPosition: 0, animated: false });
+                              }
+                            } else if (y > contentSize.height - layoutMeasurement.height - contentInset.bottom) {
+                              const current2 = ref.current;
+                              if (current2 != null) {
+                                const _Math = Math;
+                                const scrollToLocation = current2.scrollToLocation;
+                                const obj = { sectionIndex: activeSections.length - 1, itemIndex: Math.max(commandsByActiveSection[commandsByActiveSection.length - 1].data.length - 1, 0), viewPosition: 1, animated: false };
+                                scrollToLocation(obj);
+                              }
+                            }
+                          }
+                          const tmp7 = hasMoreAfter && y + layoutMeasurement.height >= contentSize.height - 3 * bound;
+                          if (tmp7) {
+                            scrollDown();
+                          }
+                        }
+                        cResult[38] = activeSections;
+                        cResult[39] = commandsByActiveSection;
+                        cResult[40] = hasMoreAfter;
+                        cResult[41] = bound;
+                        cResult[42] = scrollDown;
+                        cResult[43] = tmp40;
+                        class X {
+                          constructor() {
+                            if (null != commandDiscoveryManager) {
+                              filterSection(tmp);
+                              const findIndexResult = sectionDescriptors.findIndex((id) => id.id === commandDiscoveryManager);
+                              let num2 = 0;
+                              const tmp6 = closure_6;
+                              if (-1 !== findIndexResult) {
+                                num2 = findIndexResult;
+                              }
+                              tmp6(num2);
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  items2 = [];
+                  for (const item10189 of sectionDescriptors) {
+                    class Se {
+                      constructor(arg0, index) {
+                        if (null == arg0) {
+                          return { length: 0, offset: 0, index };
+                        } else {
+                          let num = 0;
+                          let num2 = 0;
+                          let num3 = 0;
+                          let ROW = map1.ROW;
+                          const iter = arg0[Symbol.iterator]();
+                          const nextResult = iter.next();
+                          while (iter !== undefined) {
+                            let num4;
+                            let tmp4 = nextResult;
+                            if (num + num2 + nextResult.data.length + num3 + 1 >= index) {
+                              if (index === num + num2 + num3) {
+                                ROW = map1.HEADER;
+                              } else if (index === num + num2 + tmp4.data.length + num3 + 1) {
+                                num = num + 1;
+                                num2 = num2 + nextResult.data.length;
+                                ROW = map1.FOOTER;
+                              } else {
+                                sum = num + 1;
+                                num = sum;
+                                num2 = num2 + (index - sum - num2 - num3);
+                                ROW = map1.ROW;
+                              }
+                              iter.return();
+                              break;
+                            } else {
+                              num = num + 1;
+                              num2 = num2 + tmp4.data.length;
+                              num3 = num3 + 1;
+                              continue;
+                            }
+                            let tmp28 = map1;
+                            if (map1.ROW === ROW) {
+                              num4 = bound;
+                            } else if (tmp29.HEADER === ROW) {
+                              num4 = ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT;
+                            } else {
+                              let FOOTER = tmp28.FOOTER;
+                              num4 = 0;
+                            }
+                            let obj = { length: num4, offset: num * ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT + num2 * bound, index };
+                            return obj;
+                          }
+                        }
+                      }
+                    }
+                    continue;
+                  }
+                  cResult[30] = commandsByActiveSection;
+                  class X {
+                    constructor() {
+                      if (null != commandDiscoveryManager) {
+                        filterSection(tmp);
+                        const findIndexResult = sectionDescriptors.findIndex((id) => id.id === commandDiscoveryManager);
+                        let num2 = 0;
+                        const tmp6 = closure_6;
+                        if (-1 !== findIndexResult) {
+                          num2 = findIndexResult;
+                        }
+                        tmp6(num2);
+                      }
+                    }
+                  }
+                  cResult[32] = sectionDescriptors;
+                  cResult[33] = sum;
+                  cResult[34] = items2;
+                  let tmp39 = sum;
+                  cResult[35] = sum;
+                  tmp35 = items2;
+                }
+              }
+              const fn4 = function q(arg0) {
+                let tmp8;
+                if (sectionDescriptors[arg0].id !== filteredSectionId) {
+                  if (sectionDescriptors[arg0].id !== metroImportAll.FRECENCY) {
+                    filterSection(sectionDescriptors[arg0].id);
+                    tmp8(arg0);
+                  }
+                  const obj = ApplicationCommandDiscoveryManager;
+                  const result = obj.updateInitialSectionId(undefined);
+                }
+                filterSection(null);
+                tmp8 = tmp8(0);
+              };
+              cResult[23] = filterSection;
+              cResult[24] = filteredSectionId;
+              cResult[25] = sectionDescriptors;
+              cResult[26] = fn4;
+              tmp30 = fn4;
+            }
+          }
+          const fn3 = function z() {
+            if (onHeightChange != null) {
+              let closure_0 = bound;
+              let num2 = 0;
+              const arr = commandsByActiveSection;
+              if (0 !== commandsByActiveSection.length) {
+                num2 = arr.reduce((acc, data) => {
+                  let sum;
+                  if (0 === data.data.length) {
+                    sum = closure_2_0(closure_2_3[8]).APPLICATION_SECTION_HEADER_HEIGHT + 160;
+                  } else {
+                    sum = acc + (closure_2_0(closure_2_3[8]).APPLICATION_SECTION_HEADER_HEIGHT + (closure_0 + sectionDescriptors) * data.data.length);
+                  }
+                  return sum;
+                }, 0);
+              }
+              tmp(num2);
+            }
+          };
+          const items3 = [commandsByActiveSection, onHeightChange, bound];
+          cResult[18] = commandsByActiveSection;
+          cResult[19] = onHeightChange;
+          cResult[20] = bound;
+          cResult[21] = fn3;
+          class X {
+            constructor() {
+              if (null != commandDiscoveryManager) {
+                filterSection(tmp);
+                const findIndexResult = sectionDescriptors.findIndex((id) => id.id === commandDiscoveryManager);
+                let num2 = 0;
+                const tmp6 = closure_6;
+                if (-1 !== findIndexResult) {
+                  num2 = findIndexResult;
+                }
+                tmp6(num2);
+              }
+            }
+          }
+          cResult[22] = items3;
+          tmp28 = items3;
+          tmp27 = fn3;
+        }
+      }
+      class X {
+        constructor() {
+          if (null != commandDiscoveryManager) {
+            filterSection(tmp);
+            const findIndexResult = sectionDescriptors.findIndex((id) => id.id === commandDiscoveryManager);
+            let num2 = 0;
+            const tmp6 = closure_6;
+            if (-1 !== findIndexResult) {
+              num2 = findIndexResult;
+            }
+            tmp6(num2);
+          }
+        }
+      }
+      const items4 = [filterSection, commandDiscoveryManager, tmp8, sectionDescriptors];
+      cResult[11] = filterSection;
+      cResult[12] = commandDiscoveryManager;
+      cResult[13] = sectionDescriptors;
+      cResult[14] = items4;
+      cResult[15] = X;
+      tmp22 = X;
+      tmp21 = items4;
+    }
+    const obj6 = { context: tmp11, filters: tmp15, options: tmp16, allowFetch: true };
+    let num4 = 8;
+    cResult[8] = tmp11;
+    cResult[9] = tmp15;
+    cResult[10] = obj6;
+    tmp18 = obj6;
+  }
+  const obj7 = { commandTypes: tmp12, builtIns: tmp13, applicationCommands: tmp14 };
+  cResult[4] = tmp13;
+  cResult[5] = tmp14;
+  cResult[6] = obj7;
+  tmp15 = obj7;
+}) : (function ApplicationCommandDiscovery(channel) {
   let BuiltInCommandFilter;
   let _undefined;
   let _undefined2;
@@ -71,6 +729,7 @@ export default function ApplicationCommandDiscovery(channel) {
   let obj6;
   let obj9;
   let onHeightChange;
+  let require;
   ({ onPressSlashItem: require, onHeightChange } = channel);
   channel = channel.channel;
   const canOnlyUseTextCommands = channel.canOnlyUseTextCommands;
@@ -96,7 +755,7 @@ export default function ApplicationCommandDiscovery(channel) {
   ref = ref.useRef(false);
   let obj3 = ApplicationCommandDiscoveryManager;
   const commandDiscoveryManager = obj3.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
-  let tmp8 = channel(8719);
+  let tmp8 = channel(8714);
   const obj4 = { context: { channel, type: "channel" }, filters: obj5, options: obj6, allowFetch: true };
   obj5 = { commandTypes: items, builtIns: canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW, applicationCommands: !canOnlyUseTextCommands };
   const useDiscovery = tmp8.useDiscovery;
@@ -130,7 +789,7 @@ export default function ApplicationCommandDiscovery(channel) {
     let obj = require("AppAnalyticsUtils");
     obj.trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_OPENED);
     return () => {
-      const obj = closure_1_0(closure_1_3[12]);
+      const obj = closure_1_0(closure_1_3[14]);
       const result = obj.updateInitialSectionId(undefined);
     };
   }, []);
@@ -185,11 +844,11 @@ export default function ApplicationCommandDiscovery(channel) {
     }
   }, []);
   const items4 = [sectionDescriptors, commandsByActiveSection, bound];
-  const callback3 = obj2.useCallback(() => {
+  const callback3 = obj2.useCallback((arg0) => {
     ref.current = false;
   }, []);
   const memo = obj2.useMemo(() => {
-    function _loop(item10008) {
+    function _loop2(item10008) {
       let closure_0 = item10008;
       const findIndexResult = commandsByActiveSection.findIndex((section) => section.section.id === id.id);
       const tmp = commandsByActiveSection;
@@ -205,7 +864,7 @@ export default function ApplicationCommandDiscovery(channel) {
     let c0 = 0;
     const items = [];
     for (const item10008 of sectionDescriptors) {
-      let tmp = _loop(item10008);
+      let tmp = _loop2(item10008);
       continue;
     }
     return items;
@@ -346,14 +1005,14 @@ export default function ApplicationCommandDiscovery(channel) {
       let found;
       const tmp = closure_3;
       if (item.inputType === require("ApplicationCommandTypes").ApplicationCommandInputType.PLACEHOLDER) {
-        return filteredSectionId(onHeightChange(tmp[22]), {});
+        return filteredSectionId(onHeightChange(tmp[25]), {});
       } else {
         found = sectionDescriptors.find((id) => id.id === item.applicationId);
         const obj = {
           command: item,
           onPress() {
               let tmpResult;
-              if (require != null) {
+              if (_require != null) {
                 tmpResult = tmp(item, found, section.section);
               }
               return tmpResult;
@@ -362,7 +1021,7 @@ export default function ApplicationCommandDiscovery(channel) {
           showIcon: item.applicationId !== section.section.id,
           guildId: found.guild_id
         };
-        return filteredSectionId(onHeightChange(tmp[23]), obj);
+        return filteredSectionId(onHeightChange(tmp[26]), obj);
       }
     },
     renderSectionHeader(section) {
@@ -404,4 +1063,7 @@ export default function ApplicationCommandDiscovery(channel) {
   }
   items9 = [tmp22(tmp23, obj8), memo1];
   return tmp20(tmp21, obj7);
-};
+});
+let result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandDiscovery.tsx");
+
+export default tmp6;

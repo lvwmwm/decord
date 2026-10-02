@@ -1,25 +1,25 @@
-// Module ID: 1483
-// Function ID: 1484
+// Module ID: 1489
+// Function ID: 1490
 // Name: KeyboardUIStore
-// Dependencies: [1484, 1218, 1609, 510, 1611, 1612, 1613, 1364, 1625, 558, 1248, 1626, 560, 1627, 1875, 1876, 1614, 1482, 2]
+// Dependencies: [1490, 1230, 1615, 510, 1617, 1618, 1619, 1370, 1631, 568, 1260, 1632, 570, 1633, 1881, 1882, 1620, 1488, 2]
 // Exports: addKeyboardTypeChangedListener, addKeyboardWillOpenChangedListener, setKeyboardContext, setKeyboardType
 
-// Module 1483 (KeyboardUIStore)
+// Module 1489 (KeyboardUIStore)
 import Storage5 from "Storage" /* 510 */;
-import shallowEqualDefault from "shallowEqual" /* 558 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1218 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1482 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1484 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1609 */;
-import KeyboardTypes from "KeyboardTypes" /* 1611 */;
-import ChatInputFocused from "ChatInputFocused" /* 1612 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1613 */;
-import react_nativeDefault from "react-native" /* 1625 */;
-import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1627 */;
-import KeyboardStateDebuggingDefault from "KeyboardStateDebugging" /* 1875 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
-import module_560 from "module_560" /* 560 */;
-import SafeAreaStore from "SafeAreaStore" /* 1614 */;
+import shallowEqualDefault from "shallowEqual" /* 568 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1230 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1488 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1490 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1615 */;
+import KeyboardTypes from "KeyboardTypes" /* 1617 */;
+import ChatInputFocused from "ChatInputFocused" /* 1618 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1619 */;
+import react_nativeDefault from "react-native" /* 1631 */;
+import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1633 */;
+import KeyboardStateDebuggingDefault from "KeyboardStateDebugging" /* 1881 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
+import module_570 from "module_570" /* 570 */;
+import SafeAreaStore from "SafeAreaStore" /* 1620 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -137,8 +137,8 @@ function computeEntryState(arg0, keyboardDuration, DEFAULT_APP_ENTRY_KEY) {
                 const obj3 = {};
                 const merged = Object.assign(tmp.keyboardContexts);
                 const obj4 = { keyboardWillOpen: false };
-                const SYSTEM = tmp2(1611).KeyboardTypes.SYSTEM;
-                const merged1 = Object.assign(tmp.keyboardContexts[tmp2(undefined, 1611).KeyboardTypes.SYSTEM]);
+                const SYSTEM = tmp2(1617).KeyboardTypes.SYSTEM;
+                const merged1 = Object.assign(tmp.keyboardContexts[tmp2(undefined, 1617).KeyboardTypes.SYSTEM]);
                 obj3[SYSTEM] = obj4;
                 tmp21 = obj3;
               }
@@ -194,14 +194,14 @@ function createInitialEntryState(main) {
     num = 253;
   }
   const obj = { customKeyboardHeight: num, customKeyboardHeightExcludingSafeAreaInsets: num2 - tmpResult.getSafeAreaInsets(main).bottom, keyboardContexts: obj2, keyboardDuration: 0, keyboardHeight: num3, keyboardHeightExcludingSafeAreaInsets: num4, systemKeyboardOpen: false, keyboardType: KeyboardTypes.KeyboardTypes.SYSTEM, keyboardTypePrevious: KeyboardTypes.KeyboardTypes.SYSTEM };
-  const SYSTEM2 = tmp(1611).KeyboardTypes.SYSTEM;
-  const SYSTEM3 = tmp(1611).KeyboardTypes.SYSTEM;
+  const SYSTEM2 = tmp(1617).KeyboardTypes.SYSTEM;
+  const SYSTEM3 = tmp(1617).KeyboardTypes.SYSTEM;
   const Storage2 = tmp(510).Storage;
   num2 = Storage2.get(tmp3, 253);
   if (num2 == null) {
     num2 = 253;
   }
-  const SYSTEM4 = tmp(1611).KeyboardTypes.SYSTEM;
+  const SYSTEM4 = tmp(1617).KeyboardTypes.SYSTEM;
   tmpResult = useSafeAreaInsets;
   obj2 = { [KeyboardTypes.KeyboardTypes.SYSTEM]: { keyboardWillOpen: false }, [KeyboardTypes.KeyboardTypes.EXPRESSION]: ExpressionPickerViewType.EMOJI, [KeyboardTypes.KeyboardTypes.MEDIA]: obj3, [KeyboardTypes.KeyboardTypes.APP_LAUNCHER]: obj4 };
   num3 = 0;
@@ -237,7 +237,7 @@ let str2 = "keyboardWillHide";
 if (PlatformUtils.isAndroid()) {
   str2 = "keyboardDidHide";
 }
-let keyboardContexts = module_560.create(() => {
+let keyboardContexts = module_570.create(() => {
   const obj = { byAppEntry: { main: createInitialEntryState("main"), share: createInitialEntryState("share") } };
   ({ main: createInitialEntryState("main"), share: createInitialEntryState("share") });
   return obj;

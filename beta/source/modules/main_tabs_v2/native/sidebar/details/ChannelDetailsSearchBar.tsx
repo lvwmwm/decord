@@ -1,29 +1,148 @@
-// Module ID: 16440
-// Function ID: 16441
+// Module ID: 16442
+// Function ID: 16443
 // Name: ChannelDetailsSearchBar
-// Dependencies: [19, 11822, 7301, 10377, 21, 4836, 11859, 11782, 11841, 11844, 16441, 5435, 1115, 9836, 2]
+// Dependencies: [19, 11715, 7305, 10419, 21, 4837, 11752, 558, 576, 11675, 11734, 11737, 5436, 1127, 9870, 16443, 2]
 
-// Module 16440 (ChannelDetailsSearchBar)
+// Module 16442 (ChannelDetailsSearchBar)
 import Fragment from "Fragment" /* 21 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 7301 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10377 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11844 */;
-import SearchButton from "SearchButton" /* 11859 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 7305 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10419 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11737 */;
+import SearchButton from "SearchButton" /* 11752 */;
 import react from "react" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 11822 */;
-import createStyles from "createStyles" /* 4836 */;
+import SearchQueryStore_mod from "SearchQueryStore" /* 11715 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let channelId;
 
 let obj2;
+let SearchQueryStore = SearchQueryStore_mod;
 let closure_5 = ChannelDetailsStore.setIsChannelDetailsSearchActive;
 const CHANNEL_DETAILS_MARGIN = ChannelDetailsConstants.CHANNEL_DETAILS_MARGIN;
 const jsx = Fragment.jsx;
 let obj = { back: obj2 };
 obj2 = { justifyContent: "center", height: SearchButton.SEARCH_BAR_HEIGHT, paddingStart: CHANNEL_DETAILS_MARGIN, paddingEnd: 8 };
 let closure_7 = createStyles.createStyles(obj);
-const memoResult = react.memo(react.forwardRef((channelId, ref) => {
+const forwardRef = react.forwardRef;
+const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId, arg1) => {
+  let channelDetailsSearchContext;
+  let closure_4;
+  let tmp12;
+  let tmp7;
+  let tmp = channelId;
+  let obj = channelId(channelDetailsSearchContext[8]);
+  const cResult = obj.c(22);
+  channelId = channelId.channelId;
+  const onBackPress = channelId.onBackPress;
+  const showBackButton = channelId.showBackButton;
+  let tmp4 = undefined === showBackButton;
+  const guildId = channelId.guildId;
+  const tmp2 = channelDetailsSearchContext;
+  if (!tmp4) {
+    tmp4 = showBackButton;
+  }
+  closure_7();
+  const tmpResult = tmp(tmp2[9]);
+  channelDetailsSearchContext = tmpResult.useChannelDetailsSearchContext(channelId, guildId);
+  if (cResult[0] !== channelDetailsSearchContext) {
+    const fn = function h() {
+      let searchContext;
+      return () => {
+        const obj = onBackPress(channelDetailsSearchContext[10]);
+        const obj2 = { searchContext };
+        obj.trackSearchClosed(obj2);
+      };
+    };
+    cResult[0] = channelDetailsSearchContext;
+    cResult[1] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (cResult[2] === channelId) {
+    let tmp8;
+    if (cResult[3] === channelDetailsSearchContext) {
+      tmp8 = cResult[4];
+    }
+    const effect = C.useEffect(tmp7, tmp8);
+    if (cResult[5] !== channelDetailsSearchContext) {
+      class C {
+        constructor() {
+          const tmp = channelDetailsSearchContext;
+          if (!SearchQueryStore.isInitialSearchQuery(channelDetailsSearchContext)) {
+            const obj = SearchPlatformActionCreatorsDefault;
+            obj.updateSearchQuery(tmp, (reset) => reset.reset());
+          }
+        }
+      }
+      cResult[5] = channelDetailsSearchContext;
+      cResult[6] = C;
+    } else {
+      class C {
+        constructor() {
+          const tmp = channelDetailsSearchContext;
+          if (!SearchQueryStore.isInitialSearchQuery(channelDetailsSearchContext)) {
+            const obj = SearchPlatformActionCreatorsDefault;
+            obj.updateSearchQuery(tmp, (reset) => reset.reset());
+          }
+        }
+      }
+    }
+    C = tmp11;
+    if (cResult[7] === channelId) {
+      class C {
+        constructor() {
+          const tmp = channelDetailsSearchContext;
+          if (!SearchQueryStore.isInitialSearchQuery(channelDetailsSearchContext)) {
+            const obj = SearchPlatformActionCreatorsDefault;
+            obj.updateSearchQuery(tmp, (reset) => reset.reset());
+          }
+        }
+      }
+      SearchQueryStore = tmp12;
+      if (cResult[10] === onBackPress) {
+        class C {
+          constructor() {
+            const tmp = channelDetailsSearchContext;
+            if (!SearchQueryStore.isInitialSearchQuery(channelDetailsSearchContext)) {
+              const obj = SearchPlatformActionCreatorsDefault;
+              obj.updateSearchQuery(tmp, (reset) => reset.reset());
+            }
+          }
+        }
+      }
+      class E {
+        constructor() {
+          C();
+          if (undefined !== onBackPress) {
+            onBackPress();
+          } else {
+            tmp12();
+          }
+        }
+      }
+      cResult[10] = onBackPress;
+      cResult[11] = tmp12;
+      cResult[12] = tmp11;
+      cResult[13] = E;
+    }
+    const fn2 = function _() {
+      C();
+      closure_5(channelId, false, "action");
+    };
+    cResult[7] = channelId;
+    cResult[8] = tmp11;
+    cResult[9] = fn2;
+    tmp12 = fn2;
+  }
+  const items = [channelId, channelDetailsSearchContext];
+  cResult[2] = channelId;
+  cResult[3] = channelDetailsSearchContext;
+  cResult[4] = items;
+  tmp8 = items;
+}) : ((channelId, ref) => {
   let intl;
   channelId = channelId.channelId;
   const onBackPress = channelId.onBackPress;
@@ -35,13 +154,13 @@ const memoResult = react.memo(react.forwardRef((channelId, ref) => {
   let channelDetailsSearchContext;
   let callback;
   let tmp = closure_7();
-  let obj = channelId(channelDetailsSearchContext[7]);
+  let obj = channelId(channelDetailsSearchContext[9]);
   channelDetailsSearchContext = obj.useChannelDetailsSearchContext(channelId, guildId);
   const items = [channelId, channelDetailsSearchContext];
   const effect = callback.useEffect(() => {
     let searchContext;
     return () => {
-      const obj = onBackPress(channelDetailsSearchContext[8]);
+      const obj = onBackPress(channelDetailsSearchContext[10]);
       const obj2 = { searchContext };
       obj.trackSearchClosed(obj2);
     };
@@ -69,15 +188,15 @@ const memoResult = react.memo(react.forwardRef((channelId, ref) => {
     }
   }, items3);
   let tmp9Result = null;
-  onBackPress(channelDetailsSearchContext[10]);
+  onBackPress(channelDetailsSearchContext[15]);
   if (flag) {
-    const obj3 = { accessibilityRole: "button", onPress: callback2, style: tmp.back, accessibilityLabel: intl.string(channelId(channelDetailsSearchContext[12]).t["13/7kX"]), children: null };
-    const PressableOpacity = tmp2(tmp3[11]).PressableOpacity;
-    intl = tmp2(tmp3[12]).intl;
+    const obj3 = { accessibilityRole: "button", onPress: callback2, style: tmp.back, accessibilityLabel: intl.string(channelId(channelDetailsSearchContext[13]).t["13/7kX"]), children: null };
+    const PressableOpacity = tmp2(tmp3[12]).PressableOpacity;
+    intl = tmp2(tmp3[13]).intl;
     tmp9Result = tmp9(PressableOpacity, obj3);
   }
   return <tmp10 ref={arg1} searchContext={channelDetailsSearchContext} backButton={tmp9Result} />;
-}));
+})));
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsSearchBar.tsx");
 
 export default memoResult;

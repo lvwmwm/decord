@@ -1,25 +1,25 @@
-// Module ID: 17639
-// Function ID: 17640
+// Module ID: 17641
+// Function ID: 17642
 // Name: ContentInventoryManager
-// Dependencies: [5, 5589, 5593, 5722, 13378, 11417, 7784, 7806, 1074, 1091, 12, 12653, 573, 13236, 17640, 6539, 2]
+// Dependencies: [5, 5590, 5594, 5723, 13380, 11292, 7788, 7810, 1086, 1103, 12, 12655, 585, 13238, 17642, 6540, 2]
 
-// Module 17639 (ContentInventoryManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 7806 */;
-import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 12653 */;
-import ContentInventoryExperiments from "ContentInventoryExperiments" /* 13236 */;
-import ContentInventoryFeature from "ContentInventoryFeature" /* 17640 */;
+// Module 17641 (ContentInventoryManager)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 7810 */;
+import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 12655 */;
+import ContentInventoryExperiments from "ContentInventoryExperiments" /* 13238 */;
+import ContentInventoryFeature from "ContentInventoryFeature" /* 17642 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
-import IdleStore from "IdleStore" /* 5722 */;
-import WindowStore from "WindowStore" /* 13378 */;
-import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 11417 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 7784 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
+import IdleStore from "IdleStore" /* 5723 */;
+import WindowStore from "WindowStore" /* 13380 */;
+import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 11292 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 7788 */;
 import module_12 from "module_12" /* 12 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let refresh_token;
@@ -164,7 +164,7 @@ function scheduleNextFetch() {
         const obj4 = { loading: false, nextFetchDate: date2 };
         date2 = new Date(Date.now() + sum);
         const obj5 = { type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId: GLOBAL_FEED, state: obj4 };
-        const tmp2Result = tmp2(573);
+        const tmp2Result = tmp2(585);
         tmp2Result.dispatch(obj5);
         const _setTimeout = setTimeout;
         const result = obj3.set(tmp, setTimeout(() => {
@@ -258,14 +258,14 @@ let actions = function _fetchInventory() {
         }
         c5 = 0;
       }
-      await "HermesInternal";
+      await "IconComponent";
       refresh_token = tmp;
       force = tmp4;
       ({ feedId: c0, feature: c1, force } = feedId);
       if (force === undefined) {
         force = false;
       }
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;

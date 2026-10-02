@@ -1,30 +1,30 @@
-// Module ID: 16303
-// Function ID: 16304
+// Module ID: 16305
+// Function ID: 16306
 // Name: VibegrationsPublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 4467, 2067, 4479, 1372, 1074, 4829, 21, 4836, 576, 6402, 504, 5370, 8605, 16304, 4800, 10872, 1115, 3715, 1101, 7095, 6876, 6618, 6570, 4832, 6506, 4989, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 4470, 2073, 4482, 1378, 1086, 4830, 21, 4837, 588, 6399, 504, 5371, 8602, 16306, 4801, 11848, 1127, 3718, 1113, 7099, 6880, 6624, 6571, 4833, 6507, 4990, 5282, 2]
 // Exports: default
 
-// Module 16303 (VibegrationsPublishNotesSheet)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import router_utils from "router_utils" /* 1101 */;
-import intl15 from "intl" /* 1115 */;
-import _modDef3715 from "module_3715" /* 3715 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4467 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
-import MessageConstants from "MessageConstants" /* 4829 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5370 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 10872 */;
-import VibegrationsPatchNotesChannel from "VibegrationsPatchNotesChannel" /* 16304 */;
+// Module 16305 (VibegrationsPublishNotesSheet)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import router_utils from "router_utils" /* 1113 */;
+import intl15 from "intl" /* 1127 */;
+import _modDef3718 from "module_3718" /* 3718 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4470 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4801 */;
+import MessageConstants from "MessageConstants" /* 4830 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 5371 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11848 */;
+import VibegrationsPatchNotesChannel from "VibegrationsPatchNotesChannel" /* 16306 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;
@@ -261,7 +261,7 @@ export default function VibegrationsPublishNotesSheet(guildId) {
         closure_1_9(id.id);
       }
     };
-    obj3 = { title: intl.string(_modDef3715.IcSdnu) };
+    obj3 = { title: intl.string(_modDef3718.IcSdnu) };
     tmp2 = ChannelPickerActionSheetDefault;
     intl = intl15.intl;
     showActionSheet(obj);
@@ -298,7 +298,7 @@ export default function VibegrationsPublishNotesSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -369,7 +369,7 @@ export default function VibegrationsPublishNotesSheet(guildId) {
           }
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp38) {
         if (0 === publish) {
           c4 = 3;

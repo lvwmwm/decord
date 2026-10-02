@@ -1,23 +1,25 @@
-// Module ID: 11300
-// Function ID: 11301
+// Module ID: 11174
+// Function ID: 11175
 // Name: SelectComponentActionSheet
-// Dependencies: [19, 17, 2045, 2099, 6572, 21, 4836, 576, 6570, 1115, 5281, 9036, 4548, 5917, 5929, 8742, 6402, 4541, 1613, 1479, 5994, 504, 4800, 6571, 6045, 2]
-// Exports: default
+// Dependencies: [19, 17, 2051, 2102, 6573, 21, 4837, 588, 558, 576, 1127, 5282, 6571, 9013, 4552, 5914, 8737, 5916, 6399, 4545, 1619, 1485, 5991, 504, 4801, 6038, 6572, 2]
 
-// Module 11300 (SelectComponentActionSheet)
+// Module 11174 (SelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import react_native2 from "react-native" /* 4548 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6572 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import react_native2 from "react-native" /* 4552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import TableRow2 from "TableRow" /* 5916 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6573 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet;
+let BottomSheet, announceResult, hideActionSheetResult;
 
 let c10;
 let c9;
@@ -27,7 +29,236 @@ let obj2;
 let obj3;
 let rect;
 let size;
-function SelectionHeader(renderIcon) {
+const View = react_native.View;
+let closure_7 = ActionSheetConstants.ACTION_SHEET_START_HEIGHT_RATIO;
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { selectionOptionItemIconWrapper: obj2, tagListIconWrapper: size, tagListIcon: rect, textInputWrapper: obj3 };
+obj2 = { width: nativeDefault.space.PX_32, alignItems: "center" };
+createStyles = createStyles.createStyles;
+size = { width: nativeDefault.space.PX_16, height: nativeDefault.space.PX_16 };
+rect = { transform: items, top: -nativeDefault.space.PX_4, left: -nativeDefault.space.PX_4 };
+items = [{ scale: 0.75 }];
+obj3 = { paddingHorizontal: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_16, marginHorizontal: nativeDefault.space.PX_16 };
+let closure_11 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderIcon) => {
+  let intl3;
+  let items;
+  let labelComponent;
+  let onPressOptionItem;
+  let selectButtonDisabled;
+  let selectedOptions;
+  let selectionActionComponent;
+  let submitSelection;
+  let tmp21Result;
+  let tmp = renderIcon;
+  let tmp2 = onPressOptionItem;
+  let obj = renderIcon(onPressOptionItem[9]);
+  const cResult = obj.c(29);
+  renderIcon = renderIcon.renderIcon;
+  ({ selectionActionComponent, labelComponent, selectButtonDisabled, selectedOptions } = renderIcon);
+  ({ submitSelection, onPressOptionItem } = renderIcon);
+  const onRemoveOptionItem = renderIcon.onRemoveOptionItem;
+  const onQueryChange = renderIcon.onQueryChange;
+  const tmp4 = closure_11();
+  let closure_5 = tmp4;
+  const ref = onRemoveOptionItem.useRef(null);
+  if (cResult[0] === renderIcon) {
+    if (cResult[1] === selectedOptions) {
+      let arr;
+      if (cResult[2] === tmp4) {
+        arr = cResult[3];
+      }
+      let label;
+      const tmp6 = cResult[4];
+      if (labelComponent != null) {
+        label = labelComponent.label;
+      }
+      if (tmp6 === label) {
+        let tmp8;
+        if (cResult[5] === selectionActionComponent.placeholder) {
+          tmp8 = cResult[6];
+        }
+        if (cResult[7] === selectionActionComponent.maxValues > 1) {
+          let tmp11;
+          if (cResult[8] === selectionActionComponent.minValues) {
+            tmp11 = cResult[9];
+          }
+          if (cResult[10] === selectionActionComponent.maxValues > 1) {
+            if (cResult[11] === selectButtonDisabled) {
+              let tmp13;
+              if (cResult[12] === submitSelection) {
+                tmp13 = cResult[13];
+              }
+              if (cResult[14] === tmp8) {
+                if (cResult[15] === tmp11) {
+                  let tmp16;
+                  if (cResult[16] === tmp13) {
+                    tmp16 = cResult[17];
+                  }
+                  if (cResult[18] === selectionActionComponent.maxValues > 1) {
+                    if (cResult[19] === onPressOptionItem) {
+                      if (cResult[20] === onQueryChange) {
+                        if (cResult[21] === onRemoveOptionItem) {
+                          if (cResult[22] === selectedOptions) {
+                            if (cResult[23] === tmp4) {
+                              let tmp19;
+                              if (cResult[24] === arr) {
+                                tmp19 = cResult[25];
+                              }
+                              if (cResult[26] === tmp16) {
+                                let tmp26;
+                                if (cResult[27] === tmp19) {
+                                  tmp26 = cResult[28];
+                                }
+                                return tmp26;
+                              }
+                              let obj2 = { children: items };
+                              items = [tmp16, tmp19];
+                              const tmp29 = closure_10(closure_9, obj2);
+                              cResult[26] = tmp16;
+                              cResult[27] = tmp19;
+                              cResult[28] = tmp29;
+                              tmp26 = tmp29;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  let tmp21Result2 = null;
+                  if (null != onQueryChange) {
+                    tmp21Result2 = null;
+                    if (null != arr) {
+                      let obj3 = {
+                        inActionSheet: true,
+                        style: tmp4.textInputWrapper,
+                        icon: tmp21Result,
+                        tags: arr,
+                        onRemove(arg0) {
+                                              let tmp;
+                                              if (selectedOptions != null) {
+                                                tmp = selectedOptions[arg0];
+                                              }
+                                              if (null != tmp) {
+                                                let tmp2 = onRemoveOptionItem;
+                                                if (null == onRemoveOptionItem) {
+                                                  tmp2 = onPressOptionItem;
+                                                }
+                                                tmp2(arg0, tmp);
+                                              }
+                                            },
+                        onChangeText(arg0) {
+                                              const current = ref.current;
+                                              if (current != null) {
+                                                current.scrollTo({ y: 0, animated: false });
+                                              }
+                                              onQueryChange(arg0);
+                                            }
+                      };
+                      tmp21Result = undefined;
+                      const tmp23 = selectedOptions(tmp2[13]);
+                      if (selectionActionComponent.maxValues > 1) {
+                        if (0 !== arr.length) {
+                          tmp21Result = tmp21(onQueryChange, {});
+                        }
+                      }
+                      tmp21Result2 = tmp21(tmp23, obj3);
+                    }
+                  }
+                  cResult[18] = selectionActionComponent.maxValues > 1;
+                  cResult[19] = onPressOptionItem;
+                  cResult[20] = onQueryChange;
+                  cResult[21] = onRemoveOptionItem;
+                  cResult[22] = selectedOptions;
+                  cResult[23] = tmp4;
+                  cResult[24] = arr;
+                  cResult[25] = tmp21Result2;
+                  tmp19 = tmp21Result2;
+                }
+              }
+              const obj4 = { title: tmp8, subtitle: tmp11, trailing: tmp13 };
+              const tmp18 = closure_8(tmp(tmp2[12]).BottomSheetTitleHeader, obj4);
+              cResult[14] = tmp8;
+              cResult[15] = tmp11;
+              cResult[16] = tmp13;
+              cResult[17] = tmp18;
+              tmp16 = tmp18;
+            }
+          }
+          let tmp15Result;
+          if (selectionActionComponent.maxValues > 1) {
+            let str = "primary";
+            const Button = tmp(tmp2[11]).Button;
+            const tmp15 = closure_8;
+            if (selectButtonDisabled) {
+              str = "secondary";
+            }
+            const obj5 = { size: "sm", variant: str, disabled: selectButtonDisabled, onPress: submitSelection, text: intl3.string(tmp(tmp2[10]).t.XqMe3N) };
+            intl3 = tmp(tmp2[10]).intl;
+            tmp15Result = tmp15(Button, obj5);
+          }
+          cResult[10] = selectionActionComponent.maxValues > 1;
+          cResult[11] = selectButtonDisabled;
+          cResult[12] = submitSelection;
+          cResult[13] = tmp15Result;
+          tmp13 = tmp15Result;
+        }
+        let formatToPlainStringResult;
+        if (selectionActionComponent.maxValues > 1) {
+          if (selectionActionComponent.minValues > 0) {
+            const intl2 = tmp(tmp2[10]).intl;
+            const obj6 = { count: selectionActionComponent.minValues };
+            formatToPlainStringResult = intl2.formatToPlainString(tmp(tmp2[10]).t.Jmwzdx, obj6);
+          }
+        }
+        cResult[7] = selectionActionComponent.maxValues > 1;
+        cResult[8] = selectionActionComponent.minValues;
+        cResult[9] = formatToPlainStringResult;
+        tmp11 = formatToPlainStringResult;
+      }
+      let label1;
+      if (labelComponent != null) {
+        label1 = labelComponent.label;
+      }
+      if (label1 == null) {
+        label1 = selectionActionComponent.placeholder;
+      }
+      if (label1 == null) {
+        const intl = tmp(tmp2[10]).intl;
+        label1 = intl.string(tmp(tmp2[10]).t.Otr6W2);
+      }
+      let label2;
+      if (labelComponent != null) {
+        label2 = labelComponent.label;
+      }
+      cResult[4] = label2;
+      cResult[5] = selectionActionComponent.placeholder;
+      cResult[6] = label1;
+      tmp8 = label1;
+    }
+  }
+  let mapped;
+  if (selectedOptions != null) {
+    mapped = selectedOptions.map((id) => {
+      let obj2;
+      let obj3;
+      const obj = { id: id.value, text: id.label, icon: metroImportAll(View, obj2) };
+      obj2 = { style: closure_5.tagListIconWrapper, children: metroImportAll(View, obj3) };
+      obj3 = { style: closure_5.tagListIcon, children: renderIcon(id) };
+      return obj;
+    });
+  }
+  if (mapped == null) {
+    mapped = [];
+  }
+  cResult[0] = renderIcon;
+  cResult[1] = selectedOptions;
+  cResult[2] = tmp4;
+  cResult[3] = mapped;
+  arr = mapped;
+}) : ((renderIcon) => {
   let formatToPlainStringResult;
   let intl3;
   let labelComponent;
@@ -65,7 +296,7 @@ function SelectionHeader(renderIcon) {
     return mapped;
   }, items);
   let label;
-  const BottomSheetTitleHeader = renderIcon(6570).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = renderIcon(6571).BottomSheetTitleHeader;
   const tmp3 = closure_10;
   const tmp4 = closure_9;
   if (labelComponent != null) {
@@ -75,27 +306,27 @@ function SelectionHeader(renderIcon) {
     label = selectionActionComponent.placeholder;
   }
   if (label == null) {
-    const intl = tmp6(1115).intl;
-    label = intl.string(tmp6(1115).t.Otr6W2);
+    const intl = tmp6(1127).intl;
+    label = intl.string(tmp6(1127).t.Otr6W2);
   }
   let obj = { title: label, subtitle: formatToPlainStringResult, trailing: tmp5Result };
   formatToPlainStringResult = undefined;
   if (tmp2) {
     if (selectionActionComponent.minValues > 0) {
-      const intl2 = tmp6(1115).intl;
+      const intl2 = tmp6(1127).intl;
       let obj2 = { count: selectionActionComponent.minValues };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp6(1115).t.Jmwzdx, obj2);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp6(1127).t.Jmwzdx, obj2);
     }
   }
   tmp5Result = undefined;
   if (tmp2) {
     let str = "primary";
-    const Button = tmp6(5281).Button;
+    const Button = tmp6(5282).Button;
     if (selectButtonDisabled) {
       str = "secondary";
     }
-    let obj3 = { size: "sm", variant: str, disabled: selectButtonDisabled, onPress: submitSelection, text: intl3.string(renderIcon(1115).t.XqMe3N) };
-    intl3 = tmp6(1115).intl;
+    let obj3 = { size: "sm", variant: str, disabled: selectButtonDisabled, onPress: submitSelection, text: intl3.string(renderIcon(1127).t.XqMe3N) };
+    intl3 = tmp6(1127).intl;
     tmp5Result = tmp5(Button, obj3);
   }
   const children = [closure_8(BottomSheetTitleHeader, obj), ];
@@ -130,7 +361,7 @@ function SelectionHeader(renderIcon) {
             }
       };
       tmp5Result3 = undefined;
-      const tmp13 = selectedOptions(9036);
+      const tmp13 = selectedOptions(9013);
       if (tmp2) {
         if (0 !== memo.length) {
           tmp5Result3 = tmp5(onQueryChange, {});
@@ -141,8 +372,254 @@ function SelectionHeader(renderIcon) {
   }
   children[1] = tmp5Result4;
   return tmp3(tmp4, { children });
-}
-function SelectionOptionItem(item) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
+  let clearable;
+  let disabled;
+  let end;
+  let iconContainerStyle;
+  let index;
+  let itemAccessibilityLabel;
+  let items;
+  let renderDescription;
+  let renderIcon;
+  let renderOptionSuffix;
+  let selected;
+  let skipIcon;
+  let start;
+  const obj = react2;
+  const cResult = obj.c(44);
+  item = item.item;
+  const onPressOptionItem = item.onPressOptionItem;
+  ({ clearable, selected, disabled, index } = item);
+  ({ start, end, iconContainerStyle, itemAccessibilityLabel, skipIcon, renderDescription, renderIcon, renderOptionSuffix } = item);
+  const multi = item.multi;
+  const tmp4 = closure_11();
+  let flag = selected;
+  if (selected == null) {
+    flag = false;
+  }
+  if (cResult[0] === disabled) {
+    let tmp5;
+    if (cResult[1] === flag) {
+      tmp5 = cResult[2];
+    }
+    let flag2 = selected;
+    const tmpResult = react_native2;
+    const checkboxA11yNative = tmpResult.useCheckboxA11yNative(tmp5);
+    if (selected == null) {
+      flag2 = false;
+    }
+    if (cResult[3] === disabled) {
+      let tmp7;
+      if (cResult[4] === flag2) {
+        tmp7 = cResult[5];
+      }
+      const tmpResult2 = react_native2;
+      let radioA11yNative = tmpResult2.useRadioA11yNative(tmp7);
+      if (multi) {
+        radioA11yNative = checkboxA11yNative;
+      }
+      if (cResult[6] === item) {
+        let tmp9;
+        let tmp12;
+        if (cResult[7] === itemAccessibilityLabel) {
+          tmp9 = cResult[8];
+        }
+        if (cResult[9] === iconContainerStyle) {
+          if (cResult[10] === item) {
+            if (cResult[11] === renderIcon) {
+              if (cResult[12] === skipIcon) {
+                let tmp11;
+                let renderDescriptionResult;
+                if (cResult[13] === tmp4) {
+                  tmp11 = cResult[14];
+                }
+                if (cResult[15] === item) {
+                  let tmp16;
+                  if (cResult[16] === renderDescription) {
+                    tmp16 = cResult[17];
+                  }
+                  if (cResult[18] === index) {
+                    if (cResult[19] === item) {
+                      let tmp18;
+                      let tmp20;
+                      if (cResult[20] === onPressOptionItem) {
+                        tmp18 = cResult[21];
+                      }
+                      class D {
+                        constructor() {
+                          return onPressOptionItem(index, item);
+                        }
+                      }
+                      if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
+                        const obj2 = { flexDirection: "row" };
+                        class D {
+                          constructor() {
+                            return onPressOptionItem(index, item);
+                          }
+                        }
+                        tmp20 = obj2;
+                      } else {
+                        tmp20 = cResult[22];
+                      }
+                      if (cResult[23] === item) {
+                        let tmp21;
+                        if (cResult[24] === renderOptionSuffix) {
+                          tmp21 = cResult[25];
+                        }
+                        if (cResult[26] === clearable) {
+                          let tmp23;
+                          if (cResult[27] === selected) {
+                            tmp23 = cResult[28];
+                          }
+                          if (cResult[29] === tmp21) {
+                            let tmp25;
+                            if (cResult[30] === tmp23) {
+                              tmp25 = cResult[31];
+                            }
+                            if (cResult[32] === radioA11yNative.accessibilityRole) {
+                              if (cResult[33] === radioA11yNative.accessibilityState) {
+                                if (cResult[34] === disabled) {
+                                  if (cResult[35] === end) {
+                                    if (cResult[36] === item.label) {
+                                      if (cResult[37] === start) {
+                                        if (cResult[38] === tmp25) {
+                                          if (cResult[39] === tmp9) {
+                                            if (cResult[40] === tmp11) {
+                                              if (cResult[41] === tmp16) {
+                                                let tmp28;
+                                                if (cResult[42] === tmp18) {
+                                                  tmp28 = cResult[43];
+                                                }
+                                                return tmp28;
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            class D {
+                              constructor() {
+                                return onPressOptionItem(index, item);
+                              }
+                            }
+                            const obj3 = { accessibilityRole: radioA11yNative.accessibilityRole, accessibilityLabel: tmp9, accessibilityState: radioA11yNative.accessibilityState, start, end, disabled, icon: tmp11, label: item.label, labelLineClamp: 1, subLabel: tmp16, subLabelLineClamp: 1, onPress: tmp18, trailing: tmp25 };
+                            const tmp29 = metroImportAll(TableRow2.TableRow, obj3);
+                            cResult[32] = radioA11yNative.accessibilityRole;
+                            cResult[33] = radioA11yNative.accessibilityState;
+                            cResult[34] = disabled;
+                            cResult[35] = end;
+                            cResult[36] = item.label;
+                            cResult[37] = start;
+                            cResult[38] = tmp25;
+                            cResult[39] = tmp9;
+                            cResult[40] = tmp11;
+                            cResult[41] = tmp16;
+                            cResult[42] = tmp18;
+                            cResult[43] = tmp29;
+                            tmp28 = tmp29;
+                          }
+                          class D {
+                            constructor() {
+                              return onPressOptionItem(index, item);
+                            }
+                          }
+                          const obj4 = { style: tmp20, children: items };
+                          items = [tmp21, tmp23];
+                          const tmp27 = authStore(View, obj4);
+                          cResult[29] = tmp21;
+                          cResult[30] = tmp23;
+                          cResult[31] = tmp27;
+                          tmp25 = tmp27;
+                        }
+                        class D {
+                          constructor() {
+                            return onPressOptionItem(index, item);
+                          }
+                        }
+                        cResult[26] = clearable;
+                        cResult[27] = selected;
+                        cResult[28] = tmp24;
+                        tmp23 = tmp24;
+                      }
+                      let renderOptionSuffixResult;
+                      if (renderOptionSuffix != null) {
+                        renderOptionSuffixResult = renderOptionSuffix(item);
+                      }
+                      cResult[23] = item;
+                      cResult[24] = renderOptionSuffix;
+                      cResult[25] = renderOptionSuffixResult;
+                      tmp21 = renderOptionSuffixResult;
+                    }
+                  }
+                  class D {
+                    constructor() {
+                      return onPressOptionItem(index, item);
+                    }
+                  }
+                  cResult[18] = index;
+                  cResult[19] = item;
+                  cResult[20] = onPressOptionItem;
+                  cResult[21] = D;
+                  tmp18 = D;
+                }
+                if (renderDescription != null) {
+                  renderDescriptionResult = renderDescription(item);
+                }
+                cResult[15] = item;
+                cResult[16] = renderDescription;
+                cResult[17] = renderDescriptionResult;
+                tmp16 = renderDescriptionResult;
+              }
+            }
+          }
+        }
+        if (!skipIcon) {
+          class D {
+            constructor() {
+              return onPressOptionItem(index, item);
+            }
+          }
+          const items1 = [tmp4.selectionOptionItemIconWrapper, iconContainerStyle];
+          tmp15[0] = items1;
+          tmp15[1] = renderIcon(item);
+          tmp12 = metroImportAll(View, tmp15);
+        }
+        cResult[9] = iconContainerStyle;
+        cResult[10] = item;
+        cResult[11] = renderIcon;
+        cResult[12] = skipIcon;
+        cResult[13] = tmp4;
+        cResult[14] = tmp12;
+        tmp11 = tmp12;
+      }
+      let result;
+      if (itemAccessibilityLabel != null) {
+        result = itemAccessibilityLabel(item);
+      }
+      cResult[6] = item;
+      cResult[7] = itemAccessibilityLabel;
+      cResult[8] = result;
+      tmp9 = result;
+    }
+    const obj5 = { selected: flag2, disabled };
+    cResult[3] = disabled;
+    cResult[4] = flag2;
+    cResult[5] = obj5;
+    tmp7 = obj5;
+  }
+  const obj6 = { checked: flag, disabled };
+  cResult[0] = disabled;
+  cResult[1] = flag;
+  cResult[2] = obj6;
+  tmp5 = obj6;
+}) : ((item) => {
   let clearable;
   let closure_129_1;
   let closure_129_2;
@@ -205,7 +682,7 @@ function SelectionOptionItem(item) {
     trailing: tmp13(tmp14, obj3)
   };
   result = undefined;
-  const TableRow = tmp2(5917).TableRow;
+  const TableRow = tmp2(5916).TableRow;
   if (itemAccessibilityLabel != null) {
     result = itemAccessibilityLabel(item);
   }
@@ -228,7 +705,7 @@ function SelectionOptionItem(item) {
   }
   items1 = [renderOptionSuffixResult, ];
   if (clearable) {
-    const FormCheckbox = tmp2(5929).FormCheckbox;
+    const FormCheckbox = tmp2(5914).FormCheckbox;
     if (!selected) {
       selected = false;
     }
@@ -237,28 +714,244 @@ function SelectionOptionItem(item) {
   } else {
     tmp8Result2 = null;
     if (true === selected) {
-      tmp8Result2 = tmp8(tmp2(8742).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp8Result2 = tmp8(tmp2(8737).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp8Result2;
   return metroImportAll(TableRow, obj);
-}
-const View = react_native.View;
-let closure_7 = ActionSheetConstants.ACTION_SHEET_START_HEIGHT_RATIO;
-({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { selectionOptionItemIconWrapper: obj2, tagListIconWrapper: size, tagListIcon: rect, textInputWrapper: obj3 };
-obj2 = { width: nativeDefault.space.PX_32, alignItems: "center" };
-createStyles = createStyles.createStyles;
-size = { width: nativeDefault.space.PX_16, height: nativeDefault.space.PX_16 };
-rect = { transform: items, top: -nativeDefault.space.PX_4, left: -nativeDefault.space.PX_4 };
-items = [{ scale: 0.75 }];
-obj3 = { paddingHorizontal: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_16, marginHorizontal: nativeDefault.space.PX_16 };
-let closure_11 = createStyles(obj);
-size = size_mod;
-let result = size.fileFinishedImporting("modules/interaction_components/native/components/SelectComponentActionSheet.tsx");
-
-export default function SelectComponentActionSheet(selectionActionComponent) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionComponent) => {
+  let allowEmpty;
+  let expanded;
+  let first;
+  let iconContainerStyle;
+  let itemAccessibilityLabel;
+  let labelComponent;
+  let multi;
+  let onPressOptionItem;
+  let onQueryChange;
+  let onRemoveOptionItem;
+  let options;
+  let renderHeaderIcon;
+  let selectedCount;
+  let selectedOptions;
+  let submitSelection;
+  let tmp10;
+  let tmp13;
+  let tmp14;
+  let tmp5;
+  let tmp6;
+  let tmp8;
+  let tmp = selectionActionComponent;
+  let tmp2 = selectedCount;
+  let obj = selectionActionComponent(selectedCount[9]);
+  const cResult = obj.c(51);
+  selectionActionComponent = selectionActionComponent.selectionActionComponent;
+  ({ labelComponent, onPressOptionItem } = selectionActionComponent);
+  ({ selectedOptions, selectedCount } = selectionActionComponent);
+  const renderIcon = selectionActionComponent.renderIcon;
+  ({ renderHeaderIcon, iconContainerStyle } = selectionActionComponent);
+  const skipIcon = selectionActionComponent.skipIcon;
+  const renderDescription = selectionActionComponent.renderDescription;
+  const renderOptionSuffix = selectionActionComponent.renderOptionSuffix;
+  ({ onQueryChange, options } = selectionActionComponent);
+  const itemStyle = selectionActionComponent.itemStyle;
+  const isSelected = selectionActionComponent.isSelected;
+  ({ submitSelection, itemAccessibilityLabel } = selectionActionComponent);
+  const channelId = selectionActionComponent.channelId;
+  ({ expanded, onRemoveOptionItem, allowEmpty } = selectionActionComponent);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = { isKeyboardAwareOnAndroid: false };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const insets = onPressOptionItem(tmp2[18])(first).insets;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    class X {
+      constructor() {
+        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
+        announce = AccessibilityAnnouncer.announce;
+        intl = selectionActionComponent(selectedCount[10]).intl;
+        announceResult = announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
+        return;
+      }
+    }
+    const items = [];
+    cResult[1] = X;
+    cResult[2] = items;
+    tmp6 = items;
+    tmp5 = X;
+  } else {
+    class X {
+      constructor() {
+        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
+        announce = AccessibilityAnnouncer.announce;
+        intl = selectionActionComponent(selectedCount[10]).intl;
+        announceResult = announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
+        return;
+      }
+    }
+    tmp6 = cResult[2];
+  }
+  const effect = renderIcon.useEffect(tmp5, tmp6);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class X {
+      constructor() {
+        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
+        announce = AccessibilityAnnouncer.announce;
+        intl = selectionActionComponent(selectedCount[10]).intl;
+        announceResult = announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
+        return;
+      }
+    }
+    const safeAreaInsets = obj3.getSafeAreaInsets();
+    cResult[3] = safeAreaInsets;
+    tmp8 = safeAreaInsets;
+  } else {
+    class X {
+      constructor() {
+        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
+        announce = AccessibilityAnnouncer.announce;
+        intl = selectionActionComponent(selectedCount[10]).intl;
+        announceResult = announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
+        return;
+      }
+    }
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class X {
+      constructor() {
+        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
+        announce = AccessibilityAnnouncer.announce;
+        intl = selectionActionComponent(selectedCount[10]).intl;
+        announceResult = announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
+        return;
+      }
+    }
+    const windowDimensions = obj4.getWindowDimensions();
+    cResult[4] = windowDimensions;
+    tmp10 = windowDimensions;
+  } else {
+    class X {
+      constructor() {
+        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
+        announce = AccessibilityAnnouncer.announce;
+        intl = selectionActionComponent(selectedCount[10]).intl;
+        announceResult = announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
+        return;
+      }
+    }
+  }
+  const diff = tmp10.height - tmp(tmp2[22]).NAV_BAR_HEIGHT_MULTILINE - tmp8.top;
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class X {
+      constructor() {
+        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
+        announce = AccessibilityAnnouncer.announce;
+        intl = selectionActionComponent(selectedCount[10]).intl;
+        announceResult = announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
+        return;
+      }
+    }
+    const items1 = [renderDescription];
+    class G {
+      constructor() {
+        return renderDescription.getChannelId();
+      }
+    }
+    cResult[5] = items1;
+    cResult[6] = G;
+    tmp14 = G;
+    tmp13 = items1;
+  } else {
+    class X {
+      constructor() {
+        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
+        announce = AccessibilityAnnouncer.announce;
+        intl = selectionActionComponent(selectedCount[10]).intl;
+        announceResult = announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
+        return;
+      }
+    }
+    tmp14 = cResult[6];
+  }
+  const tmpResult = tmp(tmp2[23]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp13, tmp14);
+  if (cResult[7] !== channelId) {
+    class X {
+      constructor() {
+        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
+        announce = AccessibilityAnnouncer.announce;
+        intl = selectionActionComponent(selectedCount[10]).intl;
+        announceResult = announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
+        return;
+      }
+    }
+    let channel = skipIcon.getChannel(channelId);
+    class G {
+      constructor() {
+        return renderDescription.getChannelId();
+      }
+    }
+    cResult[8] = channel;
+  } else {
+    class X {
+      constructor() {
+        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
+        announce = AccessibilityAnnouncer.announce;
+        intl = selectionActionComponent(selectedCount[10]).intl;
+        announceResult = announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
+        return;
+      }
+    }
+  }
+  channel = tmp16;
+  if (cResult[9] === tmp16) {
+    class X {
+      constructor() {
+        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
+        announce = AccessibilityAnnouncer.announce;
+        intl = selectionActionComponent(selectedCount[10]).intl;
+        announceResult = announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
+        return;
+      }
+    }
+  }
+  class U {
+    constructor() {
+      obj = closure_15;
+      isGuildVoiceResult = undefined;
+      if (closure_15 != null) {
+        isGuildVoiceResult = obj.isGuildVoice();
+      }
+      if (!isGuildVoiceResult) {
+        tmp2 = channelId;
+        isGuildVoiceResult = null == channelId;
+      }
+      if (!isGuildVoiceResult) {
+        tmp3 = closure_14;
+        tmp4 = channelId;
+        isGuildVoiceResult = closure_14 === channelId;
+      }
+      if (!isGuildVoiceResult) {
+        tmp5 = closure_1;
+        tmp6 = closure_2;
+        obj2 = closure_1(closure_2[24]);
+        hideActionSheetResult = obj2.hideActionSheet();
+      }
+      return;
+    }
+  }
+  const items2 = [stateFromStores, channelId, tmp16];
+  cResult[9] = tmp16;
+  cResult[10] = channelId;
+  cResult[11] = stateFromStores;
+  cResult[12] = items2;
+  cResult[13] = U;
+}) : ((selectionActionComponent) => {
   let BottomSheetFlatList;
   let expanded;
   let iconContainerStyle;
@@ -291,21 +984,21 @@ export default function SelectComponentActionSheet(selectionActionComponent) {
   let tmp = onPressOptionItem;
   let tmp2 = selectedCount;
   ({ labelComponent, selectedOptions, onQueryChange, submitSelection, expanded, onRemoveOptionItem } = selectionActionComponent);
-  const insets = onPressOptionItem(selectedCount[16])({ isKeyboardAwareOnAndroid: false }).insets;
+  const insets = onPressOptionItem(selectedCount[18])({ isKeyboardAwareOnAndroid: false }).insets;
   const effect = renderIcon.useEffect(() => {
-    const AccessibilityAnnouncer = selectionActionComponent(selectedCount[17]).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
     const announce = AccessibilityAnnouncer.announce;
-    const intl = selectionActionComponent(selectedCount[9]).intl;
-    announce(intl.string(selectionActionComponent(selectedCount[9]).t["7gxe9o"]));
+    const intl = selectionActionComponent(selectedCount[10]).intl;
+    announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
   }, []);
   const memo = renderIcon.useMemo(() => {
-    const obj = selectionActionComponent(selectedCount[18]);
+    const obj = selectionActionComponent(selectedCount[20]);
     const safeAreaInsets = obj.getSafeAreaInsets();
-    const obj2 = selectionActionComponent(selectedCount[19]);
-    return renderOptionSuffix * (obj2.getWindowDimensions().height - selectionActionComponent(selectedCount[20]).NAV_BAR_HEIGHT_MULTILINE - safeAreaInsets.top);
+    const obj2 = selectionActionComponent(selectedCount[21]);
+    return renderOptionSuffix * (obj2.getWindowDimensions().height - selectionActionComponent(selectedCount[22]).NAV_BAR_HEIGHT_MULTILINE - safeAreaInsets.top);
   }, []);
   let tmp5 = selectionActionComponent;
-  let obj = selectionActionComponent(selectedCount[21]);
+  let obj = selectionActionComponent(selectedCount[23]);
   const items = [renderDescription];
   const stateFromStores = obj.useStateFromStores(items, () => renderDescription.getChannelId());
   const channel = skipIcon.getChannel(channelId);
@@ -340,7 +1033,7 @@ export default function SelectComponentActionSheet(selectionActionComponent) {
     const obj = { itemStyle, item, index, start: 0 === index, end: index === options.length - 1, clearable: tmp5, selected: tmp, disabled: tmp6, onPressOptionItem, iconContainerStyle, skipIcon, renderDescription, renderIcon, renderOptionSuffix, itemAccessibilityLabel, multi: memo1 };
     tmp5 = memo1;
     const tmp2 = metroImportAll;
-    const tmp3 = SelectionOptionItem;
+    const tmp3 = closure_13;
     if (!memo1) {
       tmp5 = allowEmpty;
     }
@@ -355,7 +1048,7 @@ export default function SelectComponentActionSheet(selectionActionComponent) {
   obj3 = { selectionActionComponent, labelComponent, selectButtonDisabled: tmp14, selectedOptions, submitSelection, onQueryChange, onPressOptionItem, onRemoveOptionItem, renderIcon: renderHeaderIcon };
   tmp14 = selectedCount > selectionActionComponent.maxValues;
   renderIcon.useRef(null);
-  BottomSheet = selectionActionComponent(selectedCount[23]).BottomSheet;
+  BottomSheet = selectionActionComponent(selectedCount[26]).BottomSheet;
   tmp13 = channelId;
   if (!tmp14) {
     let tmp15;
@@ -380,10 +1073,14 @@ export default function SelectComponentActionSheet(selectionActionComponent) {
     accessibilityRole: str
   };
   obj5 = { paddingHorizontal: tmp(tmp2[7]).space.PX_16, paddingBottom: tmp(tmp2[7]).space.PX_16 + insets.bottom };
-  BottomSheetFlatList = tmp5(tmp2[24]).BottomSheetFlatList;
+  BottomSheetFlatList = tmp5(tmp2[25]).BottomSheetFlatList;
   str = "radiogroup";
   if (memo1) {
     str = "none";
   }
   return options(BottomSheet, obj2);
-};
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/interaction_components/native/components/SelectComponentActionSheet.tsx");
+
+export default tmp4;

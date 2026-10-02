@@ -1,20 +1,20 @@
-// Module ID: 7573
-// Function ID: 7574
+// Module ID: 7577
+// Function ID: 7578
 // Name: InteractionUtils
-// Dependencies: [5, 502, 7383, 1074, 11, 7184, 7574, 1979, 1271, 6876, 7575, 573, 5065, 2, 5062]
+// Dependencies: [5, 502, 7387, 1086, 11, 7188, 7578, 1985, 1283, 6880, 7579, 585, 5066, 2, 5063]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
-// Module 7573 (InteractionUtils)
+// Module 7577 (InteractionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Server from "Server" /* 1979 */;
-import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 5062 */;
-import InteractionActionCreators from "InteractionActionCreators" /* 7574 */;
-import _slicedToArray from "_slicedToArray" /* 7575 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Server from "Server" /* 1985 */;
+import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 5063 */;
+import InteractionActionCreators from "InteractionActionCreators" /* 7578 */;
+import _slicedToArray from "_slicedToArray" /* 7579 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import InteractionStore from "InteractionStore" /* 7383 */;
-import Constants from "Constants" /* 1074 */;
+import InteractionStore from "InteractionStore" /* 7387 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let componentId;
@@ -69,7 +69,7 @@ let obj = function _executeMessageComponentInteraction() {
       } else if (2 === tmp4) {
         custom_id = 0;
         application_id = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           application_id = 3;
@@ -128,9 +128,9 @@ let obj = function _executeMessageComponentInteraction() {
         obj = { value, done: true };
         return obj;
       }
-      await "HermesInternal";
+      await "IconComponent";
       ({ componentType: c0, messageId: c1, messageFlags: c2, customId: c3, componentId: c4, applicationId: c5, channelId: c6, guildId: c7, localState: c8 } = closure_0);
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -202,7 +202,7 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
                   dispatch2(obj2);
                 }
                 let message;
-                const setFailed2 = tmp26(7574).setFailed;
+                const setFailed2 = tmp26(7578).setFailed;
                 InteractionActionCreators;
                 if (firstSkemaError != null) {
                   message = firstSkemaError.message;
@@ -377,7 +377,7 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
           } else {
             tmp4 = options1;
             items = options1;
-            if (options1[0].type !== tmp7(1979).ApplicationCommandOptionType.SUB_COMMAND) {
+            if (options1[0].type !== tmp7(1985).ApplicationCommandOptionType.SUB_COMMAND) {
               break;
             }
           }

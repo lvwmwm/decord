@@ -1,23 +1,66 @@
-// Module ID: 13000
-// Function ID: 13001
+// Module ID: 13002
+// Function ID: 13003
 // Name: useMaybeFetchTieredTenureBadgeData
-// Dependencies: [1372, 1374, 504, 10618, 5298, 7632, 2]
-// Exports: useMaybeFetchTieredTenureBadgeData
+// Dependencies: [1378, 1380, 558, 576, 504, 10607, 7636, 5297, 2]
 
-// Module 13000 (useMaybeFetchTieredTenureBadgeData)
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import useMountEffectDefault from "useMountEffect" /* 5298 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 13002 (useMaybeFetchTieredTenureBadgeData)
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import useMountEffectDefault from "useMountEffect" /* 5297 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7636 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, id, importDefault;
+let _require, importDefault;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;
-const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useMaybeFetchTieredTenureBadgeData.tsx");
-
-export const useMaybeFetchTieredTenureBadgeData = function useMaybeFetchTieredTenureBadgeData() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let currentUser;
+  let stateFromStores;
+  let tmp4;
+  let tmp5;
+  const tmp = stateFromStores;
+  const obj = stateFromStores(576);
+  const cResult = obj.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function n() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = tmp(504);
+  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  const tmpResult2 = tmp(10607);
+  const isPremiumSubscriber = tmpResult2.useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  if (cResult[2] === stateFromStores) {
+    let tmp9;
+    if (cResult[3] === isPremiumSubscriber) {
+      tmp9 = cResult[4];
+    }
+    isPremiumSubscriber(5297)(tmp9);
+  }
+  const fn2 = function c() {
+    let id;
+    if (stateFromStores != null) {
+      id = tmp.id;
+    }
+    const tmp3 = null != id && isPremiumSubscriber;
+    if (tmp3) {
+      maybeFetchUserProfileDefault(stateFromStores.id);
+    }
+  };
+  cResult[2] = stateFromStores;
+  cResult[3] = isPremiumSubscriber;
+  cResult[4] = fn2;
+  tmp9 = fn2;
+}) : (() => {
   let closure_1;
   let currentUser;
   const items = [UserStore];
@@ -35,4 +78,7 @@ export const useMaybeFetchTieredTenureBadgeData = function useMaybeFetchTieredTe
       maybeFetchUserProfileDefault(id.id);
     }
   });
-};
+});
+const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useMaybeFetchTieredTenureBadgeData.tsx");
+
+export const useMaybeFetchTieredTenureBadgeData = tmp2;

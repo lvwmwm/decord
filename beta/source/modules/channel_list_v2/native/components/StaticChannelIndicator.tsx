@@ -1,16 +1,17 @@
-// Module ID: 9625
-// Function ID: 9626
+// Module ID: 11762
+// Function ID: 11763
 // Name: StaticChannelIndicator
-// Dependencies: [17, 5018, 21, 4836, 576, 4531, 2]
-// Exports: default
+// Dependencies: [17, 5019, 21, 4837, 588, 558, 576, 4535, 2]
 
-// Module 9625 (StaticChannelIndicator)
+// Module 11762 (StaticChannelIndicator)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4531 */;
-import ReadStateConstants from "ReadStateConstants" /* 5018 */;
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import useToken2 from "useToken" /* 4535 */;
+import ReadStateConstants from "ReadStateConstants" /* 5019 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -21,22 +22,61 @@ let size;
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
-const obj = { indicatorContainer: obj2, indicator: size };
+let obj = { indicatorContainer: obj2, indicator: size };
 obj2 = { top: 0, bottom: 0, justifyContent: "center" };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 size = { width: 8, height: 8, borderRadius: nativeDefault.radii.round, marginLeft: -4 };
 let closure_6 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/StaticChannelIndicator.tsx");
-
-export default function ChannelIndicator(arg0) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((resolvedUnreadSetting) => {
+  let CHANNELS_DEFAULT;
+  let style;
+  let unread;
+  const obj = react;
+  const cResult = obj.c(5);
+  ({ unread, style } = resolvedUnreadSetting);
+  resolvedUnreadSetting = resolvedUnreadSetting.resolvedUnreadSetting;
+  const tmp3 = closure_6();
+  const useToken = useToken2.useToken;
+  useToken2;
+  if (resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES) {
+    CHANNELS_DEFAULT = nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE;
+  } else {
+    CHANNELS_DEFAULT = nativeDefault.colors.CHANNELS_DEFAULT;
+  }
+  const token = useToken(CHANNELS_DEFAULT);
+  if (cResult[0] === token) {
+    if (cResult[1] === style) {
+      if (cResult[2] === tmp3) {
+        let tmp8;
+        if (cResult[3] === unread) {
+          tmp8 = cResult[4];
+        }
+        return tmp8;
+      }
+    }
+  }
+  let tmp9 = null;
+  if (unread) {
+    const items = [tmp3.indicator, , ];
+    const obj4 = { backgroundColor: token };
+    items[1] = obj4;
+    items[2] = style;
+    tmp9 = <_false style={tmp3.indicatorContainer}>{null}</_false>;
+  }
+  cResult[0] = token;
+  cResult[1] = style;
+  cResult[2] = tmp3;
+  cResult[3] = unread;
+  cResult[4] = tmp9;
+  tmp8 = tmp9;
+}) : ((arg0) => {
   let resolvedUnreadSetting;
   let style;
   let unread;
   ({ unread, resolvedUnreadSetting, style } = arg0);
   const tmp = closure_6();
-  useToken;
+  useToken2;
   if (resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES) {
     let CHANNELS_DEFAULT = nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE;
   } else {
@@ -51,4 +91,8 @@ export default function ChannelIndicator(arg0) {
     tmp7 = <_false style={tmp.indicatorContainer}>{null}</_false>;
   }
   return tmp7;
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/StaticChannelIndicator.tsx");
+
+export default tmp5;

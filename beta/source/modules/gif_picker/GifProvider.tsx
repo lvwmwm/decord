@@ -1,11 +1,11 @@
-// Module ID: 9828
-// Function ID: 9829
+// Module ID: 9862
+// Function ID: 9863
 // Name: GifProvider
-// Dependencies: [1115, 2]
+// Dependencies: [1127, 2]
 // Exports: getSearchPlaceholder
 
-// Module 9828 (GifProvider)
-import intl2 from "intl" /* 1115 */;
+// Module 9862 (GifProvider)
+import intl2 from "intl" /* 1127 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/gif_picker/GifProvider.tsx");

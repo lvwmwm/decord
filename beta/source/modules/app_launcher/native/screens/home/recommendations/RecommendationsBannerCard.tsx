@@ -1,20 +1,20 @@
-// Module ID: 11573
-// Function ID: 11574
+// Module ID: 11459
+// Function ID: 11460
 // Name: RecommendationsBannerCard
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 8590, 7632, 1397, 11565, 5435, 11574, 1979, 11568, 4832, 1115, 11538, 5924, 2]
-// Exports: default
+// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 8587, 7636, 1403, 11438, 5436, 11460, 1985, 11454, 4833, 1127, 11414, 5923, 2]
 
-// Module 11573 (RecommendationsBannerCard)
+// Module 11459 (RecommendationsBannerCard)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;
-import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 11568 */;
-import RecommendationsBannerDefault from "RecommendationsBanner" /* 11574 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7636 */;
+import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 11454 */;
+import RecommendationsBannerDefault from "RecommendationsBanner" /* 11460 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -36,9 +36,319 @@ obj4 = { marginLeft: nativeDefault.space.PX_16, flexDirection: "column", flexGro
 rect = { position: "absolute", display: "flex", gap: nativeDefault.space.PX_4, right: nativeDefault.space.PX_8, top: nativeDefault.space.PX_8, alignItems: "flex-end" };
 obj5 = { paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg };
 let closure_8 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/recommendations/RecommendationsBannerCard.tsx");
-
-export default function RecommendationsBannerCard(application) {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let application;
+  let icon;
+  let intl;
+  let isFirst;
+  let isLandscape;
+  let isLast;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let items6;
+  let obj13;
+  let onPress;
+  let overrideImageUrl;
+  let showsPromoted;
+  let style;
+  let tmpResult3;
+  let tmp = application;
+  const obj = application(576);
+  const cResult = obj.c(25);
+  ({ style, application } = arg0);
+  ({ onPress, isFirst, isLast, isLandscape, showsPromoted, overrideImageUrl } = arg0);
+  const tmp5 = closure_8();
+  if (cResult[0] === application) {
+    let tmp6;
+    let tmp8;
+    let tmp13;
+    let tmp16;
+    if (cResult[1] === (undefined !== showsPromoted && showsPromoted)) {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] !== application) {
+      const tmpResult = tmp(8587);
+      const shelfBadgeTypeIfActive = tmpResult.getShelfBadgeTypeIfActive(application);
+      cResult[3] = application;
+      cResult[4] = shelfBadgeTypeIfActive;
+      tmp8 = shelfBadgeTypeIfActive;
+    } else {
+      tmp8 = cResult[4];
+    }
+    let bot = application.bot;
+    let id;
+    const tmp10 = cResult[5];
+    if (bot != null) {
+      id = bot.id;
+    }
+    if (tmp10 !== id) {
+      const bot2 = application.bot;
+      let id1;
+      if (bot2 != null) {
+        id1 = bot2.id;
+      }
+      class S {
+        constructor() {
+          bot = application.bot;
+          id = undefined;
+          tmp = closure_1(closure_2[9]);
+          if (bot != null) {
+            id = bot.id;
+          }
+          if (id == null) {
+            id = EMPTY_STRING_SNOWFLAKE_ID;
+          }
+          tmpResult = tmp(id);
+          return;
+        }
+      }
+      cResult[5] = id1;
+      cResult[6] = S;
+      tmp13 = S;
+    } else {
+      tmp13 = cResult[6];
+    }
+    const bot3 = application.bot;
+    let id2;
+    if (bot3 != null) {
+      id2 = bot3.id;
+    }
+    if (cResult[7] !== id2) {
+      const items = [id2];
+      class S {
+        constructor() {
+          bot = application.bot;
+          id = undefined;
+          tmp = closure_1(closure_2[9]);
+          if (bot != null) {
+            id = bot.id;
+          }
+          if (id == null) {
+            id = EMPTY_STRING_SNOWFLAKE_ID;
+          }
+          tmpResult = tmp(id);
+          return;
+        }
+      }
+      cResult[8] = items;
+      tmp16 = items;
+    } else {
+      tmp16 = cResult[8];
+    }
+    const effect = react.useEffect(tmp13, tmp16);
+    if (cResult[9] === application.bot) {
+      if (cResult[10] === application.icon) {
+        let tmp19;
+        let tmp23Result2;
+        if (cResult[11] === application.id) {
+          tmp19 = cResult[12];
+        }
+        if (cResult[13] === application) {
+          if (cResult[14] === tmp8) {
+            if (cResult[15] === tmp19) {
+              if (cResult[16] === isFirst) {
+                if (cResult[17] === isLandscape) {
+                  if (cResult[18] === isLast) {
+                    if (cResult[19] === onPress) {
+                      if (cResult[20] === overrideImageUrl) {
+                        if (cResult[21] === tmp6) {
+                          if (cResult[22] === style) {
+                            let tmp22;
+                            if (cResult[23] === tmp5) {
+                              tmp22 = cResult[24];
+                            }
+                            return tmp22;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        if (isLandscape) {
+          const obj2 = { application, iconSource: null, onPress, isFirstRow: isFirst, isLastRow: isLast };
+          class S {
+            constructor() {
+              bot = application.bot;
+              id = undefined;
+              tmp = closure_1(closure_2[9]);
+              if (bot != null) {
+                id = bot.id;
+              }
+              if (id == null) {
+                id = EMPTY_STRING_SNOWFLAKE_ID;
+              }
+              tmpResult = tmp(id);
+              return;
+            }
+          }
+          tmp23Result2 = closure_6(tmp(11438).BaseAppRow, obj2);
+        } else {
+          let tmp23Result;
+          const items1 = [tmp5.container, , ];
+          class S {
+            constructor() {
+              bot = application.bot;
+              id = undefined;
+              tmp = closure_1(closure_2[9]);
+              if (bot != null) {
+                id = bot.id;
+              }
+              if (id == null) {
+                id = EMPTY_STRING_SNOWFLAKE_ID;
+              }
+              tmpResult = tmp(id);
+              return;
+            }
+          }
+          let num12 = 8;
+          const PressableOpacity = tmp(5436).PressableOpacity;
+          if (isFirst) {
+            num12 = 0;
+          }
+          const obj3 = { marginTop: num12, marginBottom: num11 };
+          const obj6 = { style: items1, onPress, children: items4 };
+          items1[1] = obj3;
+          items1[2] = style;
+          const obj7 = { style: tmp5.banner, children: items2 };
+          const obj8 = { applicationBot: application.bot, applicationEmbedded: tmpResult3.isEmbeddedApp(application), applicationId: null, applicationIcon: icon, overrideImageUrl };
+          const tmp27 = RecommendationsBannerDefault;
+          ({ id: obj9.applicationId, icon } = application);
+          tmpResult3 = tmp(8587);
+          items2 = [closure_6(tmp27, obj8), ];
+          const tmp26 = importDefault;
+          if (tmp6) {
+            const obj10 = { style: tmp5.notifsContainer, children: items3 };
+            const obj11 = { labelType: null, replacementStyles: tmp5.badge };
+            class S {
+              constructor() {
+                bot = application.bot;
+                id = undefined;
+                tmp = closure_1(closure_2[9]);
+                if (bot != null) {
+                  id = bot.id;
+                }
+                if (id == null) {
+                  id = EMPTY_STRING_SNOWFLAKE_ID;
+                }
+                tmpResult = tmp(id);
+                return;
+              }
+            }
+            items3 = [closure_6(tmp26(11454), obj11), ];
+            let tmp25Result = tmp6;
+            if (tmp25Result) {
+              const obj12 = { style: tmp5.promotedLabelWrapper, children: closure_6(tmp30, obj13) };
+              obj13 = { variant: "text-xxs/medium", color: "mobile-text-heading-primary", children: intl.string(tmp(1127).t["/eVltv"]) };
+              class S {
+                constructor() {
+                  bot = application.bot;
+                  id = undefined;
+                  tmp = closure_1(closure_2[9]);
+                  if (bot != null) {
+                    id = bot.id;
+                  }
+                  if (id == null) {
+                    id = EMPTY_STRING_SNOWFLAKE_ID;
+                  }
+                  tmpResult = tmp(id);
+                  return;
+                }
+              }
+              intl = tmp(1127).intl;
+              tmp25Result = tmp25(tmp24, obj12);
+            }
+            items3[1] = tmp25Result;
+            tmp23Result = tmp23(tmp24, obj10);
+          } else {
+            tmp23Result = null;
+          }
+          items2[1] = tmp23Result;
+          items4 = [closure_7(View, obj7), ];
+          const obj14 = { style: tmp5.appDetailsContainer, children: items5 };
+          if (null != tmp19) {
+            class S {
+              constructor() {
+                bot = application.bot;
+                id = undefined;
+                tmp = closure_1(closure_2[9]);
+                if (bot != null) {
+                  id = bot.id;
+                }
+                if (id == null) {
+                  id = EMPTY_STRING_SNOWFLAKE_ID;
+                }
+                tmpResult = tmp(id);
+                return;
+              }
+            }
+          }
+          items5 = [null != tmp19, , ];
+          const obj16 = { style: tmp5.appDetails, children: items6 };
+          const obj17 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };
+          items6 = [closure_6(tmp(4833).Text, obj17), ];
+          const obj18 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: application.description };
+          items6[1] = closure_6(tmp(4833).Text, obj18);
+          items5[1] = closure_7(View, obj16);
+          items5[2] = closure_6(tmp(5923).TableRowArrow, {});
+          items4[1] = closure_7(View, obj14);
+          tmp23Result2 = tmp23(PressableOpacity, obj6);
+        }
+        class S {
+          constructor() {
+            bot = application.bot;
+            id = undefined;
+            tmp = closure_1(closure_2[9]);
+            if (bot != null) {
+              id = bot.id;
+            }
+            if (id == null) {
+              id = EMPTY_STRING_SNOWFLAKE_ID;
+            }
+            tmpResult = tmp(id);
+            return;
+          }
+        }
+        cResult[13] = application;
+        cResult[14] = tmp8;
+        cResult[15] = tmp19;
+        cResult[16] = isFirst;
+        cResult[17] = isLandscape;
+        cResult[18] = isLast;
+        cResult[19] = onPress;
+        cResult[20] = overrideImageUrl;
+        cResult[21] = tmp6;
+        cResult[22] = style;
+        cResult[23] = tmp5;
+        cResult[24] = tmp23Result2;
+        tmp22 = tmp23Result2;
+      }
+    }
+    const obj19 = { id: null, icon: null, bot: null, botIconFirst: true };
+    ({ id: obj5.id, icon: obj5.icon, bot: obj5.bot } = application);
+    const obj4 = AvatarUtilsDefault;
+    const applicationIconSource = obj4.getApplicationIconSource(obj19);
+    cResult[9] = application.bot;
+    cResult[10] = application.icon;
+    cResult[11] = application.id;
+    cResult[12] = applicationIconSource;
+    tmp19 = applicationIconSource;
+  }
+  let result = tmp4;
+  if (!result) {
+    const tmpResult4 = tmp(8587);
+    result = tmpResult4.isPromotedApplication(application);
+  }
+  cResult[0] = application;
+  cResult[1] = undefined !== showsPromoted && showsPromoted;
+  cResult[2] = result;
+  tmp6 = result;
+}) : ((application) => {
   let Text;
   let icon;
   let intl;
@@ -65,10 +375,10 @@ export default function RecommendationsBannerCard(application) {
   const overrideImageUrl = application.overrideImageUrl;
   let tmp = closure_8();
   if (!showsPromoted) {
-    const obj = application(8590);
+    const obj = application(8587);
     showsPromoted = obj.isPromotedApplication(application);
   }
-  const obj2 = application(8590);
+  const obj2 = application(8587);
   const shelfBadgeTypeIfActive = obj2.getShelfBadgeTypeIfActive(application);
   let bot = application.bot;
   let id;
@@ -94,13 +404,13 @@ export default function RecommendationsBannerCard(application) {
   const applicationIconSource = obj3.getApplicationIconSource(obj4);
   if (isLandscape) {
     const obj5 = { application, iconSource: applicationIconSource, onPress, isFirstRow: isFirst, isLastRow: isLast };
-    tmp12Result2 = closure_6(tmp4(11565).BaseAppRow, obj5);
+    tmp12Result2 = closure_6(tmp4(11438).BaseAppRow, obj5);
   } else {
     let tmp12Result;
     const items1 = [tmp.container, , ];
     let num = 8;
     let num2 = 8;
-    const PressableOpacity = tmp4(5435).PressableOpacity;
+    const PressableOpacity = tmp4(5436).PressableOpacity;
     if (isFirst) {
       num2 = 0;
     }
@@ -115,7 +425,7 @@ export default function RecommendationsBannerCard(application) {
     const obj10 = { applicationBot: application.bot, applicationEmbedded: tmp4Result.isEmbeddedApp(application), applicationId: null, applicationIcon: icon, overrideImageUrl };
     const tmp10Result = RecommendationsBannerDefault;
     ({ id: obj8.applicationId, icon } = application);
-    tmp4Result = application(8590);
+    tmp4Result = application(8587);
     items2 = [closure_6(tmp10Result, obj10), ];
     if (showsPromoted) {
       const obj11 = { style: tmp.notifsContainer, children: items3 };
@@ -123,9 +433,9 @@ export default function RecommendationsBannerCard(application) {
       items3 = [closure_6(ActivityShelfBadgeDefault, obj12), ];
       if (showsPromoted) {
         const obj13 = { style: tmp.promotedLabelWrapper, children: closure_6(Text, obj14) };
-        obj14 = { variant: "text-xxs/medium", color: "mobile-text-heading-primary", children: intl.string(application(1115).t["/eVltv"]) };
-        Text = tmp4(4832).Text;
-        intl = tmp4(1115).intl;
+        obj14 = { variant: "text-xxs/medium", color: "mobile-text-heading-primary", children: intl.string(application(1127).t["/eVltv"]) };
+        Text = tmp4(4833).Text;
+        intl = tmp4(1127).intl;
         showsPromoted = tmp14(tmp13, obj13);
       }
       items3[1] = showsPromoted;
@@ -139,18 +449,21 @@ export default function RecommendationsBannerCard(application) {
     const obj15 = { style: tmp.appDetailsContainer, children: items5 };
     if (tmp14Result) {
       const obj16 = { iconSource: applicationIconSource, iconSize: 36, wrapperStyle: tmp.appIconContainer };
-      tmp14Result = tmp14(tmp10(11538), obj16);
+      tmp14Result = tmp14(tmp10(11414), obj16);
     }
     items5 = [tmp14Result, , ];
     const obj17 = { style: tmp.appDetails, children: items6 };
     const obj18 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };
-    items6 = [closure_6(application(4832).Text, obj18), ];
+    items6 = [closure_6(application(4833).Text, obj18), ];
     const obj19 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: application.description };
-    items6[1] = closure_6(application(4832).Text, obj19);
+    items6[1] = closure_6(application(4833).Text, obj19);
     items5[1] = closure_7(View, obj17);
-    items5[2] = closure_6(application(5924).TableRowArrow, {});
+    items5[2] = closure_6(application(5923).TableRowArrow, {});
     items4[1] = closure_7(View, obj15);
     tmp12Result2 = tmp12(PressableOpacity, obj7);
   }
   return tmp12Result2;
-};
+});
+let result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/recommendations/RecommendationsBannerCard.tsx");
+
+export default tmp4;

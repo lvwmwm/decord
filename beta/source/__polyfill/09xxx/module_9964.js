@@ -1,68 +1,108 @@
 // Module ID: 9964
 // Function ID: 9965
-// Dependencies: [41, 42, 9965, 9896]
+// Dependencies: [41, 42, 93, 95, 98, 9931, 9934, 9935, 9951]
 
 // Module 9964
-import findMostLikelyADYear from "findMostLikelyADYear" /* 9896 */;
-import NUMBER from "NUMBER" /* 9965 */;
+import _mod9931 from "module_9931" /* 9931 */;
+import ReferenceWithTimezone2 from "ReferenceWithTimezone" /* 9935 */;
+import _mod9951 from "module_9951" /* 9951 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const re3 = /(?:(?:([同今本])|((昭和|平成|令和)?([0-9０-９]{1,4}|元)))年\s*)?([0-9０-９]{1,2})月\s*([0-9０-９]{1,2})日/i;
-class JPStandardParser {
-  constructor() {
-    _classCallCheck(this, JPStandardParser);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+class ENMergeRelativeFollowByDateRefiner {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ENMergeRelativeFollowByDateRefiner);
+    const obj = _getPrototypeOf(ENMergeRelativeFollowByDateRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ENMergeRelativeFollowByDateRefiner, _mod9951.MergingRefiner);
 const entry = {
-  key: "pattern",
-  value: function pattern() {
-    return re3;
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*$/i;
   }
 };
 const items = [
   entry,
   {
-    key: "extract",
-    value: function extract(createParsingComponents, arg1) {
-      const parsed = parseInt(NUMBER.toHankaku(arg1[5]));
-      const parsed1 = parseInt(NUMBER.toHankaku(arg1[6]));
-      const parsingComponents = createParsingComponents.createParsingComponents({ day: parsed1, month: parsed });
-      let match = arg1[1];
+    key: "shouldMergeResults",
+    value: function shouldMergeResults(str, text, start) {
+      let match = str.match(this.patternBetween());
       if (match) {
-        const str = arg1[1];
-        match = str.match("\u540C|\u4ECA|\u672C");
-      }
-      if (match) {
-        const reference = createParsingComponents.reference;
-        const assign = parsingComponents.assign;
-        const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
-        assign("year", dateWithAdjustedTimezone.getFullYear());
-      }
-      if (arg1[2]) {
-        let sum;
-        let num = 1;
-        if ("\u5143" != arg1[4]) {
-          const _parseInt = parseInt;
-          num = parseInt(tmp(9965).toHankaku(tmp8));
+        let tmp5 = null == str.match(/\s+(before|from)$/i);
+        null != text.text.match(/\s+(before|from)$/i);
+        if (tmp5) {
+          const str2 = text.text;
+          tmp5 = null == str2.match(/\s+(after|since)$/i);
         }
-        if ("\u4EE4\u548C" == arg1[3]) {
-          sum = num + 2018;
-        } else if ("\u5E73\u6210" == arg1[3]) {
-          sum = num + 1988;
-        } else {
-          sum = num;
-          if ("\u662D\u548C" == arg1[3]) {
-            sum = num + 1925;
+        let tmp6 = !tmp5;
+        if (tmp6) {
+          start = start.start;
+          let value = start.get("day");
+          if (value) {
+            const start2 = start.start;
+            value = start2.get("month");
           }
+          if (value) {
+            const start3 = start.start;
+            value = start3.get("year");
+          }
+          tmp6 = value;
         }
-        parsingComponents.assign("year", sum);
-      } else {
-        parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, parsed1, parsed));
+        match = tmp6;
       }
-      return parsingComponents;
+      return match;
+    }
+  },
+  {
+    key: "mergeResults",
+    value: function mergeResults(arg0, text, start) {
+      const parseDurationResult = _mod9931.parseDuration(text.text);
+      let reverseDurationResult = parseDurationResult;
+      const str = text.text;
+      if (null != str.match(/\s+(before|from)$/i)) {
+        reverseDurationResult = tmp(9934).reverseDuration(parseDurationResult);
+      }
+      const ParsingComponents = tmp(9935).ParsingComponents;
+      const createRelativeFromReference = ParsingComponents.createRelativeFromReference;
+      const ReferenceWithTimezone = tmp(9935).ReferenceWithTimezone;
+      start = start.start;
+      const relativeFromReference = createRelativeFromReference(ReferenceWithTimezone.fromDate(start.date()), reverseDurationResult);
+      const reference = start.reference;
+      const index = text.index;
+      const parsingResult = new ReferenceWithTimezone2.ParsingResult(reference, index, "" + text.text + arg0 + start.text, relativeFromReference);
+      return parsingResult;
     }
   }
 ];
 
-export default _createClass(JPStandardParser, items);
+export default _createClass(ENMergeRelativeFollowByDateRefiner, items);

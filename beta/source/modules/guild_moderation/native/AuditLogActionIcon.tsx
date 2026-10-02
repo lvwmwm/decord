@@ -1,41 +1,44 @@
-// Module ID: 17348
-// Function ID: 17349
+// Module ID: 17350
+// Function ID: 17351
 // Name: AuditLogActionIcon
-// Dependencies: [19, 17, 17343, 1074, 21, 4836, 576, 17349, 17289, 8219, 4787, 14490, 4775, 8124, 5403, 16553, 5411, 9076, 5387, 9573, 10783, 12024, 17351, 10568, 5385, 8738, 17353, 17354, 17355, 1177, 2]
-// Exports: default
+// Dependencies: [19, 17, 17345, 1086, 21, 4837, 588, 17351, 17291, 8216, 4788, 14478, 4776, 8121, 5404, 16555, 5412, 9053, 5388, 11937, 10747, 11932, 17353, 10770, 5386, 8733, 17355, 17356, 17357, 558, 576, 1189, 2]
 
-// Module 17348 (AuditLogActionIcon)
+// Module 17350 (AuditLogActionIcon)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import LinkIcon from "LinkIcon" /* 4775 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4787 */;
-import ChatIcon from "ChatIcon" /* 5385 */;
-import ThreadIcon from "ThreadIcon" /* 5387 */;
-import GroupIcon from "GroupIcon" /* 5403 */;
-import StageIcon from "StageIcon" /* 5411 */;
-import FlagIcon from "FlagIcon" /* 8124 */;
-import ReactionIcon from "ReactionIcon" /* 8219 */;
-import RobotIcon2 from "RobotIcon" /* 8738 */;
-import CalendarIcon from "CalendarIcon" /* 9076 */;
-import StickerIcon from "StickerIcon" /* 9573 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 10568 */;
-import SlashBoxIcon from "SlashBoxIcon" /* 10783 */;
-import SoundboardIcon from "SoundboardIcon" /* 12024 */;
-import PuzzlePieceIcon from "PuzzlePieceIcon" /* 14490 */;
-import WebhookIcon from "WebhookIcon" /* 16553 */;
-import ChannelListIcon from "ChannelListIcon" /* 17289 */;
-import ListBulletsIcon from "ListBulletsIcon" /* 17349 */;
-import HomeIcon from "HomeIcon" /* 17351 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17353 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17354 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 17355 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import LinkIcon from "LinkIcon" /* 4776 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4788 */;
+import ChatIcon from "ChatIcon" /* 5386 */;
+import ThreadIcon from "ThreadIcon" /* 5388 */;
+import GroupIcon from "GroupIcon" /* 5404 */;
+import StageIcon from "StageIcon" /* 5412 */;
+import FlagIcon from "FlagIcon" /* 8121 */;
+import ReactionIcon from "ReactionIcon" /* 8216 */;
+import RobotIcon2 from "RobotIcon" /* 8733 */;
+import CalendarIcon from "CalendarIcon" /* 9053 */;
+import SlashBoxIcon from "SlashBoxIcon" /* 10747 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 10770 */;
+import SoundboardIcon from "SoundboardIcon" /* 11932 */;
+import StickerIcon from "StickerIcon" /* 11937 */;
+import PuzzlePieceIcon from "PuzzlePieceIcon" /* 14478 */;
+import WebhookIcon from "WebhookIcon" /* 16555 */;
+import ChannelListIcon from "ChannelListIcon" /* 17291 */;
+import ListBulletsIcon from "ListBulletsIcon" /* 17351 */;
+import HomeIcon from "HomeIcon" /* 17353 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17355 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17356 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 17357 */;
 import react from "react" /* 19 */;
-import AuditLogRecord from "AuditLogRecord" /* 17343 */;
-import Constants from "Constants" /* 1074 */;
+import AuditLogRecord from "AuditLogRecord" /* 17345 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
+
+let action;
 
 let ALL;
 let APPLICATION_COMMAND;
@@ -71,7 +74,125 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let size;
-function AuditIcons(action) {
+const View = react_native.View;
+({ getTargetType: closure_4, getActionType: hasOwnProperty } = AuditLogRecord);
+({ AuditLogTargetTypes, AuditLogActionTypes: metroRequire, AuditLogActions: metroImportDefault } = Constants);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let obj = { actionImageContainer: { height: 24, width: 24 }, actionImageOverlay: size, iconComponent: { width: 22, height: 22 }, actionImage: { position: "absolute" } };
+size = { borderRadius: nativeDefault.radii.round, width: 13, height: 13, bottom: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+let closure_10 = createStyles.createStyles(obj);
+let obj2 = { [ALL]: ListBulletsIcon.ListBulletsIcon, [CHANNEL]: ChannelListIcon.ChannelListIcon, [CHANNEL_OVERWRITE]: ChannelListIcon.ChannelListIcon, [EMOJI]: ReactionIcon.ReactionIcon, [GUILD]: CircleInformationIcon.CircleInformationIcon, [GUILD_PROFILE]: CircleInformationIcon.CircleInformationIcon, [INTEGRATION]: PuzzlePieceIcon.PuzzlePieceIcon, [INVITE]: LinkIcon.LinkIcon, [ROLE]: FlagIcon.FlagIcon, [USER]: GroupIcon.GroupIcon, [WEBHOOK]: WebhookIcon.WebhookIcon, [STAGE_INSTANCE]: StageIcon.StageIcon, [GUILD_SCHEDULED_EVENT]: CalendarIcon.CalendarIcon, [GUILD_SCHEDULED_EVENT_EXCEPTION]: CalendarIcon.CalendarIcon, [THREAD]: ThreadIcon.ThreadIcon, [STICKER]: StickerIcon.StickerIcon, [APPLICATION_COMMAND]: SlashBoxIcon.SlashBoxIcon, [AUTO_MODERATION_RULE]: WebhookIcon.WebhookIcon, [GUILD_SOUNDBOARD]: SoundboardIcon.SoundboardIcon, [ONBOARDING_PROMPT]: GroupIcon.GroupIcon, [GUILD_ONBOARDING]: GroupIcon.GroupIcon, [HOME_SETTINGS]: GroupIcon.GroupIcon, [GUILD_MEMBER_VERIFICATION]: GroupIcon.GroupIcon, [VOICE_CHANNEL_STATUS]: ChannelListIcon.ChannelListIcon, [GUILD_HOME]: HomeIcon.HomeIcon, [UNKNOWN]: CircleQuestionIcon.CircleQuestionIcon };
+({ ALL, CHANNEL, CHANNEL_OVERWRITE, EMOJI, GUILD, GUILD_PROFILE, INTEGRATION, INVITE, ROLE, USER, WEBHOOK, STAGE_INSTANCE, GUILD_SCHEDULED_EVENT, GUILD_SCHEDULED_EVENT_EXCEPTION, THREAD, STICKER, APPLICATION_COMMAND, AUTO_MODERATION_RULE, GUILD_SOUNDBOARD, ONBOARDING_PROMPT, GUILD_ONBOARDING, HOME_SETTINGS, GUILD_MEMBER_VERIFICATION, VOICE_CHANNEL_STATUS, GUILD_HOME, UNKNOWN } = AuditLogTargetTypes);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
+  let items;
+  let items1;
+  let tmp13;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(18);
+  action = action.action;
+  const tmp4 = closure_10();
+  if (cResult[0] !== action) {
+    let tmp9;
+    const tmp7 = hasOwnProperty(action);
+    if (metroRequire.CREATE === tmp7) {
+      tmp9 = AssetRegistryDefault;
+    } else if (metroRequire.UPDATE === tmp7) {
+      tmp9 = AssetRegistryDefault2;
+    } else {
+      tmp9 = null;
+      if (metroRequire.DELETE === tmp7) {
+        tmp9 = AssetRegistryDefault3;
+      }
+    }
+    cResult[0] = action;
+    cResult[1] = tmp9;
+    tmp5 = tmp9;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] !== action) {
+    let RobotIcon;
+    if (action === metroImportDefault.MESSAGE_DELETE) {
+      RobotIcon = tmp(5386).ChatIcon;
+    } else {
+      if (action !== metroImportDefault.AUTO_MODERATION_BLOCK_MESSAGE) {
+        if (action !== metroImportDefault.AUTO_MODERATION_FLAG_TO_CHANNEL) {
+          if (action !== metroImportDefault.AUTO_MODERATION_USER_COMMUNICATION_DISABLED) {
+            if (action !== metroImportDefault.AUTO_MODERATION_QUARANTINE_USER) {
+              RobotIcon = obj2[tmp15];
+            }
+          }
+        }
+      }
+      RobotIcon = tmp(8733).RobotIcon;
+    }
+    cResult[2] = action;
+    cResult[3] = RobotIcon;
+    tmp13 = RobotIcon;
+  } else {
+    tmp13 = cResult[3];
+  }
+  if (cResult[4] === tmp13) {
+    let tmp18;
+    if (cResult[5] === tmp4.iconComponent) {
+      tmp18 = cResult[6];
+    }
+    if (cResult[7] === tmp4.actionImage) {
+      let tmp20;
+      if (cResult[8] === tmp4.actionImageOverlay) {
+        tmp20 = cResult[9];
+      }
+      if (cResult[10] === tmp5) {
+        let tmp24;
+        if (cResult[11] === tmp4.actionImage) {
+          tmp24 = cResult[12];
+        }
+        if (cResult[13] === tmp4.actionImageContainer) {
+          if (cResult[14] === tmp18) {
+            if (cResult[15] === tmp20) {
+              let tmp27;
+              if (cResult[16] === tmp24) {
+                tmp27 = cResult[17];
+              }
+              return tmp27;
+            }
+          }
+        }
+        obj2 = { style: tmp4.actionImageContainer, children: items };
+        items = [tmp18, tmp20, tmp24];
+        const tmp30 = React4(View, obj2);
+        cResult[13] = tmp4.actionImageContainer;
+        cResult[14] = tmp18;
+        cResult[15] = tmp20;
+        cResult[16] = tmp24;
+        cResult[17] = tmp30;
+        tmp27 = tmp30;
+      }
+      const obj3 = { style: tmp4.actionImage, source: tmp5, disableColor: true };
+      const tmp26 = metroImportAll(native.Icon, obj3);
+      cResult[10] = tmp5;
+      cResult[11] = tmp4.actionImage;
+      cResult[12] = tmp26;
+      tmp24 = tmp26;
+    }
+    const obj4 = { style: items1 };
+    items1 = [, ];
+    ({ actionImageOverlay: arr[0], actionImage: arr[1] } = tmp4);
+    const tmp23 = metroImportAll(View, obj4);
+    cResult[7] = tmp4.actionImage;
+    cResult[8] = tmp4.actionImageOverlay;
+    cResult[9] = tmp23;
+    tmp20 = tmp23;
+  }
+  const obj5 = { size: "custom", style: tmp4.iconComponent };
+  const tmp19 = metroImportAll(tmp13, obj5);
+  cResult[4] = tmp13;
+  cResult[5] = tmp4.iconComponent;
+  cResult[6] = tmp19;
+  tmp18 = tmp19;
+}) : ((action) => {
   let RobotIcon;
   let items;
   let items1;
@@ -113,21 +234,42 @@ function AuditIcons(action) {
   const obj4 = { style: tmp.actionImage, source: tmp4, disableColor: true };
   items[2] = metroImportAll(native.Icon, obj4);
   return React4(View, obj);
-}
-const View = react_native.View;
-({ getTargetType: closure_4, getActionType: hasOwnProperty } = AuditLogRecord);
-({ AuditLogTargetTypes, AuditLogActionTypes: metroRequire, AuditLogActions: metroImportDefault } = Constants);
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-let obj = { actionImageContainer: { height: 24, width: 24 }, actionImageOverlay: size, iconComponent: { width: 22, height: 22 }, actionImage: { position: "absolute" } };
-size = { borderRadius: nativeDefault.radii.round, width: 13, height: 13, bottom: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-let closure_10 = createStyles.createStyles(obj);
-let obj2 = { [ALL]: ListBulletsIcon.ListBulletsIcon, [CHANNEL]: ChannelListIcon.ChannelListIcon, [CHANNEL_OVERWRITE]: ChannelListIcon.ChannelListIcon, [EMOJI]: ReactionIcon.ReactionIcon, [GUILD]: CircleInformationIcon.CircleInformationIcon, [GUILD_PROFILE]: CircleInformationIcon.CircleInformationIcon, [INTEGRATION]: PuzzlePieceIcon.PuzzlePieceIcon, [INVITE]: LinkIcon.LinkIcon, [ROLE]: FlagIcon.FlagIcon, [USER]: GroupIcon.GroupIcon, [WEBHOOK]: WebhookIcon.WebhookIcon, [STAGE_INSTANCE]: StageIcon.StageIcon, [GUILD_SCHEDULED_EVENT]: CalendarIcon.CalendarIcon, [GUILD_SCHEDULED_EVENT_EXCEPTION]: CalendarIcon.CalendarIcon, [THREAD]: ThreadIcon.ThreadIcon, [STICKER]: StickerIcon.StickerIcon, [APPLICATION_COMMAND]: SlashBoxIcon.SlashBoxIcon, [AUTO_MODERATION_RULE]: WebhookIcon.WebhookIcon, [GUILD_SOUNDBOARD]: SoundboardIcon.SoundboardIcon, [ONBOARDING_PROMPT]: GroupIcon.GroupIcon, [GUILD_ONBOARDING]: GroupIcon.GroupIcon, [HOME_SETTINGS]: GroupIcon.GroupIcon, [GUILD_MEMBER_VERIFICATION]: GroupIcon.GroupIcon, [VOICE_CHANNEL_STATUS]: ChannelListIcon.ChannelListIcon, [GUILD_HOME]: HomeIcon.HomeIcon, [UNKNOWN]: CircleQuestionIcon.CircleQuestionIcon };
-({ ALL, CHANNEL, CHANNEL_OVERWRITE, EMOJI, GUILD, GUILD_PROFILE, INTEGRATION, INVITE, ROLE, USER, WEBHOOK, STAGE_INSTANCE, GUILD_SCHEDULED_EVENT, GUILD_SCHEDULED_EVENT_EXCEPTION, THREAD, STICKER, APPLICATION_COMMAND, AUTO_MODERATION_RULE, GUILD_SOUNDBOARD, ONBOARDING_PROMPT, GUILD_ONBOARDING, HOME_SETTINGS, GUILD_MEMBER_VERIFICATION, VOICE_CHANNEL_STATUS, GUILD_HOME, UNKNOWN } = AuditLogTargetTypes);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
+  let tmp3;
+  const obj = react2;
+  const cResult = obj.c(5);
+  const tmp2 = closure_10();
+  action = action.action;
+  if (cResult[0] !== action) {
+    obj2 = { action };
+    const tmp6 = metroImportAll(closure_12, obj2);
+    cResult[0] = action;
+    cResult[1] = tmp6;
+    tmp3 = tmp6;
+  } else {
+    tmp3 = cResult[1];
+  }
+  if (cResult[2] === tmp2.actionImageContainer) {
+    let tmp7;
+    if (cResult[3] === tmp3) {
+      tmp7 = cResult[4];
+    }
+    return tmp7;
+  }
+  const obj3 = { style: tmp2.actionImageContainer, children: tmp3 };
+  const tmp8 = metroImportAll(View, obj3);
+  cResult[2] = tmp2.actionImageContainer;
+  cResult[3] = tmp3;
+  cResult[4] = tmp8;
+  tmp7 = tmp8;
+}) : ((action) => {
+  const obj = { style: closure_10().actionImageContainer, children: metroImportAll(closure_12, obj2) };
+  obj2 = { action: action.action };
+  return metroImportAll(View, obj);
+});
 size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_moderation/native/AuditLogActionIcon.tsx");
 
-export default function AuditLogActionIcon(action) {
-  const obj = { style: closure_10().actionImageContainer, children: metroImportAll(AuditIcons, obj2) };
-  obj2 = { action: action.action };
-  return metroImportAll(View, obj);
-};
+export default tmp6;

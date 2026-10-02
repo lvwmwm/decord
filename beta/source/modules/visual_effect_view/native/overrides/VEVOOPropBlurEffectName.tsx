@@ -1,18 +1,19 @@
-// Module ID: 15554
-// Function ID: 15555
+// Module ID: 15542
+// Function ID: 15543
 // Name: VEVOOPropBlurEffectName
-// Dependencies: [32, 19, 5270, 21, 4836, 15550, 8053, 6622, 5271, 2]
+// Dependencies: [32, 19, 5271, 21, 4837, 558, 576, 15538, 6622, 8057, 5272, 2]
 
-// Module 15554 (VEVOOPropBlurEffectName)
+// Module 15542 (VEVOOPropBlurEffectName)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import VEVOOStore from "VEVOOStore" /* 5270 */;
+import VEVOOStore from "VEVOOStore" /* 5271 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_0;
+let _require, closure_0, tmp2Result, tmpResult;
 
 let closure_4;
 let hasOwnProperty;
@@ -23,7 +24,200 @@ let react = react_mod;
 ({ getVisualEffectViewOverrides: closure_4, setVisualEffectViewOverides: hasOwnProperty } = VEVOOStore);
 ({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ radio: { fontSize: 14 } });
-const memoResult = react.memo(function VEVOOPropBlurEffectName() {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_3;
+  let first;
+  let first2;
+  let tmp16;
+  let visualEffectViewOverrideSharedStyles;
+  let tmp = _require;
+  let tmp2 = visualEffectViewOverrideSharedStyles;
+  let obj = require("react");
+  const cResult = obj.c(34);
+  _require = closure_9();
+  const tmp4 = closure_9();
+  const obj2 = require("VEVOO");
+  visualEffectViewOverrideSharedStyles = obj2.useVisualEffectViewOverrideSharedStyles();
+  const tmp7 = first(react.useState("Dark"), 2);
+  const tmp6 = first;
+  first = tmp7[0];
+  const obj3 = react;
+  react = tmp7[1];
+  const tmp9 = first(react.useState(false), 2);
+  const first1 = tmp9[0];
+  let closure_5 = tmp9[1];
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp13 = first1();
+    cResult[0] = tmp13;
+    first2 = tmp13;
+  } else {
+    first2 = cResult[0];
+  }
+  const tmp6Result = tmp6(obj3.useState(first2.blurEffectNameOverride), 2);
+  const first3 = tmp6Result[0];
+  let closure_7 = tmp6Result[1];
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    class O {
+      constructor(arg0) {
+        if (null != arg0) {
+          tmp = closure_7;
+          tmp2 = closure_7(arg0);
+        }
+        obj = {};
+        merged = Object.assign(closure_4());
+        obj.blurEffectNameOverride = arg0;
+        tmp4 = closure_5(obj);
+        return;
+      }
+    }
+    cResult[1] = O;
+    tmp16 = O;
+  } else {
+    class O {
+      constructor(arg0) {
+        if (null != arg0) {
+          tmp = closure_7;
+          tmp2 = closure_7(arg0);
+        }
+        obj = {};
+        merged = Object.assign(closure_4());
+        obj.blurEffectNameOverride = arg0;
+        tmp4 = closure_5(obj);
+        return;
+      }
+    }
+  }
+  O = tmp16;
+  if (cResult[2] !== visualEffectViewOverrideSharedStyles.zeroPaddingVertical) {
+    class O {
+      constructor(arg0) {
+        if (null != arg0) {
+          tmp = closure_7;
+          tmp2 = closure_7(arg0);
+        }
+        obj = {};
+        merged = Object.assign(closure_4());
+        obj.blurEffectNameOverride = arg0;
+        tmp4 = closure_5(obj);
+        return;
+      }
+    }
+    ({ zeroPaddingVertical: tmp18[0], zeroPaddingVertical: tmp3[2] } = visualEffectViewOverrideSharedStyles);
+    cResult[3] = tmp18;
+  } else {
+    class O {
+      constructor(arg0) {
+        if (null != arg0) {
+          tmp = closure_7;
+          tmp2 = closure_7(arg0);
+        }
+        obj = {};
+        merged = Object.assign(closure_4());
+        obj.blurEffectNameOverride = arg0;
+        tmp4 = closure_5(obj);
+        return;
+      }
+    }
+  }
+  if (cResult[4] !== first3) {
+    class H {
+      constructor(arg0) {
+        tmp = closure_5(arg0);
+        tmp3 = undefined;
+        tmp2 = closure_8;
+        if (arg0) {
+          tmp3 = closure_6;
+        }
+        tmp2Result = tmp2(tmp3);
+        return;
+      }
+    }
+    cResult[4] = first3;
+    cResult[5] = H;
+  } else {
+    class H {
+      constructor(arg0) {
+        tmp = closure_5(arg0);
+        tmp3 = undefined;
+        tmp2 = closure_8;
+        if (arg0) {
+          tmp3 = closure_6;
+        }
+        tmp2Result = tmp2(tmp3);
+        return;
+      }
+    }
+  }
+  if (cResult[6] === first1) {
+    class H {
+      constructor(arg0) {
+        tmp = closure_5(arg0);
+        tmp3 = undefined;
+        tmp2 = closure_8;
+        if (arg0) {
+          tmp3 = closure_6;
+        }
+        tmp2Result = tmp2(tmp3);
+        return;
+      }
+    }
+    const _HermesInternal = HermesInternal;
+    let str = "Theme: ";
+    const combined = "Theme: " + first;
+    if (cResult[9] !== first) {
+      class T {
+        constructor() {
+          str = "Dark";
+          tmp = closure_3;
+          if ("Dark" === closure_2) {
+            str = "Light";
+          }
+          tmpResult = tmp(str);
+          return;
+        }
+      }
+      cResult[9] = first;
+      cResult[10] = T;
+    } else {
+      class T {
+        constructor() {
+          str = "Dark";
+          tmp = closure_3;
+          if ("Dark" === closure_2) {
+            str = "Light";
+          }
+          tmpResult = tmp(str);
+          return;
+        }
+      }
+    }
+    if (cResult[11] === visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal) {
+      class T {
+        constructor() {
+          str = "Dark";
+          tmp = closure_3;
+          if ("Dark" === closure_2) {
+            str = "Light";
+          }
+          tmpResult = tmp(str);
+          return;
+        }
+      }
+    }
+    const obj4 = { label: combined, style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !first1, value: "Dark" === first, onValueChange: tmp23 };
+    cResult[11] = visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal;
+    cResult[12] = tmp23;
+    cResult[13] = combined;
+    cResult[14] = !first1;
+    cResult[15] = "Dark" === first;
+    cResult[16] = first3(tmp(tmp2[9]).FormSwitchRow, obj4);
+    const tmp27 = first3(tmp(tmp2[9]).FormSwitchRow, obj4);
+  }
+  cResult[6] = first1;
+  cResult[7] = tmp19;
+  cResult[8] = first3(tmp(tmp2[8]).FormSwitch, { value: first1, onValueChange: tmp19 });
+  first3(tmp(tmp2[8]).FormSwitch, { value: first1, onValueChange: tmp19 });
+}) : (() => {
   let closure_3;
   let closure_6;
   let closure_7;
@@ -99,12 +293,12 @@ const memoResult = react.memo(function VEVOOPropBlurEffectName() {
         closure_8(item);
       }
     };
-    const FormRadioRow = closure_0(visualEffectViewOverrideSharedStyles[6]).FormRadioRow;
+    const FormRadioRow = closure_0(visualEffectViewOverrideSharedStyles[9]).FormRadioRow;
     items = [visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, { opacity: 1 }];
     return closure_6(FormRadioRow, obj, index);
   });
   return closure_6(FormRow, obj2);
-});
+}));
 const result = size.fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOPropBlurEffectName.tsx");
 
 export default memoResult;

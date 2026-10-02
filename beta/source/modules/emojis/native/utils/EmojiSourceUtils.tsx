@@ -1,10 +1,10 @@
-// Module ID: 15710
-// Function ID: 15711
+// Module ID: 15707
+// Function ID: 15708
 // Name: EmojiSourceUtils
-// Dependencies: [5, 17, 4487, 1397, 2]
+// Dependencies: [5, 17, 4490, 1403, 2]
 // Exports: getEmojiSource
 
-// Module 15710 (EmojiSourceUtils)
+// Module 15707 (EmojiSourceUtils)
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let obj = function _getEmojiSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -54,7 +54,7 @@ let obj = function _getEmojiSource() {
               closure_3 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {

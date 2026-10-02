@@ -1,184 +1,118 @@
 // Module ID: 4438
 // Function ID: 4439
-// Dependencies: [4421]
+// Dependencies: [4424]
 
 // Module 4438
-import _mod4421 from "module_4421" /* 4421 */;
+import _mod4424 from "module_4424" /* 4424 */;
 
 const fn = function n(moment) {
-  function translate(arg0, arg1, arg2) {
-    const text = `${arg0} `;
-    if ("ss" === arg2) {
-      const result = arg0 % 10;
-      let tmp13 = result < 5;
-      if (result < 5) {
-        tmp13 = arg0 % 10 > 1;
-      }
-      if (tmp13) {
-        tmp13 = ~(~arg0 / 10) % 10 !== 1;
-      }
-      let str9 = "sekund";
-      if (tmp13) {
-        str9 = "sekundy";
-      }
-      return text + str9;
-    } else if ("m" === arg2) {
-      let str8 = "minut\u0119";
-      if (arg1) {
-        str8 = "minuta";
-      }
-      return str8;
-    } else if ("mm" === arg2) {
-      const result1 = arg0 % 10;
-      let tmp11 = result1 < 5;
-      if (result1 < 5) {
-        tmp11 = arg0 % 10 > 1;
-      }
-      if (tmp11) {
-        tmp11 = ~(~arg0 / 10) % 10 !== 1;
-      }
-      let str7 = "minut";
-      if (tmp11) {
-        str7 = "minuty";
-      }
-      return text + str7;
-    } else if ("h" === arg2) {
-      let str6 = "godzin\u0119";
-      if (arg1) {
-        str6 = "godzina";
-      }
-      return str6;
-    } else if ("hh" === arg2) {
-      const result2 = arg0 % 10;
-      let tmp9 = result2 < 5;
-      if (result2 < 5) {
-        tmp9 = arg0 % 10 > 1;
-      }
-      if (tmp9) {
-        tmp9 = ~(~arg0 / 10) % 10 !== 1;
-      }
-      let str5 = "godzin";
-      if (tmp9) {
-        str5 = "godziny";
-      }
-      return text + str5;
-    } else if ("ww" === arg2) {
-      const result3 = arg0 % 10;
-      let tmp7 = result3 < 5;
-      if (result3 < 5) {
-        tmp7 = arg0 % 10 > 1;
-      }
-      if (tmp7) {
-        tmp7 = ~(~arg0 / 10) % 10 !== 1;
-      }
-      let str4 = "tygodni";
-      if (tmp7) {
-        str4 = "tygodnie";
-      }
-      return text + str4;
-    } else if ("MM" === arg2) {
-      const result4 = arg0 % 10;
-      let tmp5 = result4 < 5;
-      if (result4 < 5) {
-        tmp5 = arg0 % 10 > 1;
-      }
-      if (tmp5) {
-        tmp5 = ~(~arg0 / 10) % 10 !== 1;
-      }
-      let str3 = "miesi\u0119cy";
-      if (tmp5) {
-        str3 = "miesi\u0105ce";
-      }
-      return text + str3;
-    } else if ("yy" === arg2) {
-      const result5 = arg0 % 10;
-      let tmp3 = result5 < 5;
-      if (result5 < 5) {
-        tmp3 = arg0 % 10 > 1;
-      }
-      if (tmp3) {
-        tmp3 = ~(~arg0 / 10) % 10 !== 1;
-      }
-      let str2 = "lat";
-      if (tmp3) {
-        str2 = "lata";
-      }
-      return text + str2;
+  let obj4;
+  function translateSingular(arg0, arg1, arg2, arg3) {
+    let first;
+    const str = closure_0[arg2];
+    const parts = str.split("_");
+    const tmp2 = arg1;
+    if (tmp2) {
+      first = parts[0];
+    } else {
+      first = arg3 ? parts[1] : parts[2];
     }
+    return first;
   }
-  let closure_0 = "stycze\u0144_luty_marzec_kwiecie\u0144_maj_czerwiec_lipiec_sierpie\u0144_wrzesie\u0144_pa\u017Adziernik_listopad_grudzie\u0144".split("_");
-  let closure_1 = "stycznia_lutego_marca_kwietnia_maja_czerwca_lipca_sierpnia_wrze\u015Bnia_pa\u017Adziernika_listopada_grudnia".split("_");
-  const items = [/^sty/i, /^lut/i, /^mar/i, /^kwi/i, /^maj/i, /^cze/i, /^lip/i, /^sie/i, /^wrz/i, /^paź/i, /^lis/i, /^gru/i];
-  let obj = {
-    months(arg0, arg1) {
-      let tmp2;
-      const tmp = arg0;
-      if (tmp) {
-        let tmp5;
-        const obj = /D MMMM/;
-        if (obj.test(arg1)) {
-          tmp5 = closure_1[arg0.month(arg0)];
-        } else {
-          tmp5 = closure_0[arg0.month(arg0)];
-        }
-        tmp2 = tmp5;
+  function translate(arg0, arg1, arg2, arg3) {
+    let sum;
+    const text = `${arg0} `;
+    if (1 === arg0) {
+      let first;
+      const str7 = closure_0[arg2[0]];
+      const parts = str7.split("_");
+      if (arg1) {
+        first = parts[0];
       } else {
-        tmp2 = closure_0;
+        first = arg3 ? parts[1] : parts[2];
       }
-      return tmp2;
+      sum = text + first;
+    } else if (arg1) {
+      const result = arg0 % 10;
+      let tmp10 = result === 0;
+      if (!tmp10) {
+        tmp10 = arg0 > 10 && arg0 < 20;
+        const tmp11 = arg0 > 10 && arg0 < 20;
+      }
+      const str5 = closure_0[arg2];
+      const parts1 = str5.split("_");
+      sum = text + (tmp10 ? parts1[1] : parts1[0]);
+    } else if (arg3) {
+      const str3 = closure_0[arg2];
+      sum = text + str3.split("_")[1];
+    } else {
+      const result1 = arg0 % 10;
+      let tmp3 = result1 === 0;
+      if (!tmp3) {
+        tmp3 = arg0 > 10 && arg0 < 20;
+        const tmp4 = arg0 > 10 && arg0 < 20;
+      }
+      const str = closure_0[arg2];
+      const parts2 = str.split("_");
+      sum = text + (tmp3 ? parts2[1] : parts2[2]);
+    }
+    return sum;
+  }
+  let closure_0 = { ss: "sekund\u0117_sekund\u017Ei\u0173_sekundes", m: "minut\u0117_minut\u0117s_minut\u0119", mm: "minut\u0117s_minu\u010Di\u0173_minutes", h: "valanda_valandos_valand\u0105", hh: "valandos_valand\u0173_valandas", d: "diena_dienos_dien\u0105", dd: "dienos_dien\u0173_dienas", M: "m\u0117nuo_m\u0117nesio_m\u0117nes\u012F", MM: "m\u0117nesiai_m\u0117nesi\u0173_m\u0117nesius", y: "metai_met\u0173_metus", yy: "metai_met\u0173_metus" };
+  const defineLocale = moment.defineLocale;
+  const obj = {
+    months: { format: "sausio_vasario_kovo_baland\u017Eio_gegu\u017E\u0117s_bir\u017Eelio_liepos_rugpj\u016B\u010Dio_rugs\u0117jo_spalio_lapkri\u010Dio_gruod\u017Eio".split("_"), standalone: "sausis_vasaris_kovas_balandis_gegu\u017E\u0117_bir\u017Eelis_liepa_rugpj\u016Btis_rugs\u0117jis_spalis_lapkritis_gruodis".split("_"), isFormat: /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?|MMMM?(\[[^\[\]]*\]|\s)+D[oD]?/ },
+    monthsShort: "sau_vas_kov_bal_geg_bir_lie_rgp_rgs_spa_lap_grd".split("_"),
+    weekdays: { format: "sekmadien\u012F_pirmadien\u012F_antradien\u012F_tre\u010Diadien\u012F_ketvirtadien\u012F_penktadien\u012F_\u0161e\u0161tadien\u012F".split("_"), standalone: "sekmadienis_pirmadienis_antradienis_tre\u010Diadienis_ketvirtadienis_penktadienis_\u0161e\u0161tadienis".split("_"), isFormat: /dddd HH:mm/ },
+    weekdaysShort: "Sek_Pir_Ant_Tre_Ket_Pen_\u0160e\u0161".split("_"),
+    weekdaysMin: "S_P_A_T_K_Pn_\u0160".split("_"),
+    weekdaysParseExact: true,
+    longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "YYYY-MM-DD", LL: "YYYY [m.] MMMM D [d.]", LLL: "YYYY [m.] MMMM D [d.], HH:mm [val.]", LLLL: "YYYY [m.] MMMM D [d.], dddd, HH:mm [val.]", l: "YYYY-MM-DD", ll: "YYYY [m.] MMMM D [d.]", lll: "YYYY [m.] MMMM D [d.], HH:mm [val.]", llll: "YYYY [m.] MMMM D [d.], ddd, HH:mm [val.]" },
+    calendar: { sameDay: "[\u0160iandien] LT", nextDay: "[Rytoj] LT", nextWeek: "dddd LT", lastDay: "[Vakar] LT", lastWeek: "[Pra\u0117jus\u012F] dddd LT", sameElse: "L" },
+    relativeTime: obj4,
+    dayOfMonthOrdinalParse: /\d{1,2}-oji/,
+    ordinal(arg0) {
+      return arg0 + "-oji";
     },
-    monthsShort: "sty_lut_mar_kwi_maj_cze_lip_sie_wrz_pa\u017A_lis_gru".split("_"),
-    monthsParse: items,
-    longMonthsParse: items,
-    shortMonthsParse: items,
-    weekdays: "niedziela_poniedzia\u0142ek_wtorek_\u015Broda_czwartek_pi\u0105tek_sobota".split("_"),
-    weekdaysShort: "ndz_pon_wt_\u015Br_czw_pt_sob".split("_"),
-    weekdaysMin: "Nd_Pn_Wt_\u015Ar_Cz_Pt_So".split("_"),
-    longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD.MM.YYYY", LL: "D MMMM YYYY", LLL: "D MMMM YYYY HH:mm", LLLL: "dddd, D MMMM YYYY HH:mm" },
-    calendar: {
-      sameDay: "[Dzi\u015B o] LT",
-      nextDay: "[Jutro o] LT",
-      nextWeek() {
-        const dayResult = this.day();
-        if (0 === dayResult) {
-          return "[W niedziel\u0119 o] LT";
-        } else if (2 === dayResult) {
-          return "[We wtorek o] LT";
-        } else if (3 === dayResult) {
-          return "[W \u015Brod\u0119 o] LT";
-        } else if (6 === dayResult) {
-          return "[W sobot\u0119 o] LT";
-        } else {
-          return "[W] dddd [o] LT";
-        }
-      },
-      lastDay: "[Wczoraj o] LT",
-      lastWeek() {
-        const dayResult = this.day();
-        if (0 === dayResult) {
-          return "[W zesz\u0142\u0105 niedziel\u0119 o] LT";
-        } else if (3 === dayResult) {
-          return "[W zesz\u0142\u0105 \u015Brod\u0119 o] LT";
-        } else if (6 === dayResult) {
-          return "[W zesz\u0142\u0105 sobot\u0119 o] LT";
-        } else {
-          return "[W zesz\u0142y] dddd [o] LT";
-        }
-      },
-      sameElse: "L"
-    },
-    relativeTime: { future: "za %s", past: "%s temu", s: "kilka sekund", ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: "1 dzie\u0144", dd: "%d dni", w: "tydzie\u0144", ww: translate, M: "miesi\u0105c", MM: translate, y: "rok", yy: translate },
-    dayOfMonthOrdinalParse: /\d{1,2}\./,
-    ordinal: "%d.",
     week: { dow: 1, doy: 4 }
   };
-  return moment.defineLocale("pl", obj);
+  ({ format: "sausio_vasario_kovo_baland\u017Eio_gegu\u017E\u0117s_bir\u017Eelio_liepos_rugpj\u016B\u010Dio_rugs\u0117jo_spalio_lapkri\u010Dio_gruod\u017Eio".split("_"), standalone: "sausis_vasaris_kovas_balandis_gegu\u017E\u0117_bir\u017Eelis_liepa_rugpj\u016Btis_rugs\u0117jis_spalis_lapkritis_gruodis".split("_"), isFormat: /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?|MMMM?(\[[^\[\]]*\]|\s)+D[oD]?/ });
+  ({ format: "sekmadien\u012F_pirmadien\u012F_antradien\u012F_tre\u010Diadien\u012F_ketvirtadien\u012F_penktadien\u012F_\u0161e\u0161tadien\u012F".split("_"), standalone: "sekmadienis_pirmadienis_antradienis_tre\u010Diadienis_ketvirtadienis_penktadienis_\u0161e\u0161tadienis".split("_"), isFormat: /dddd HH:mm/ });
+  obj4 = {
+    future: "po %s",
+    past: "prie\u0161 %s",
+    s: function translateSeconds(arg0, arg1, arg2, arg3) {
+      let str = "kelios sekund\u0117s";
+      const tmp = arg1;
+      if (!tmp) {
+        let str2 = "kelias sekundes";
+        if (arg3) {
+          str2 = "keli\u0173 sekund\u017Ei\u0173";
+        }
+        str = str2;
+      }
+      return str;
+    },
+    ss: translate,
+    m: translateSingular,
+    mm: translate,
+    h: translateSingular,
+    hh: translate,
+    d: translateSingular,
+    dd: translate,
+    M: translateSingular,
+    MM: translate,
+    y: translateSingular,
+    yy: translate
+  };
+  return defineLocale("lt", obj);
 };
 if (typeof exports === "object") {
   if (undefined !== module) {
     let tmp = require;
     if (typeof require === "function") {
-      fn(_mod4421);
+      let tmp4 = dependencyMap;
+      fn(_mod4424);
     }
   }
 }

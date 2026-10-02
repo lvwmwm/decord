@@ -1,19 +1,19 @@
-// Module ID: 13178
-// Function ID: 13179
+// Module ID: 13180
+// Function ID: 13181
 // Name: GatewaySocketOpCodes
-// Dependencies: [4886, 568, 1991, 11, 2]
+// Dependencies: [4887, 580, 1997, 11, 2]
 
-// Module 13178 (GatewaySocketOpCodes)
+// Module 13180 (GatewaySocketOpCodes)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import _mod568 from "module_568" /* 568 */;
-import GatewaySocketOpcode from "GatewaySocketOpcode" /* 1991 */;
-import RTCRegionStore from "RTCRegionStore" /* 4886 */;
+import _mod580 from "module_580" /* 580 */;
+import GatewaySocketOpcode from "GatewaySocketOpcode" /* 1997 */;
+import RTCRegionStore from "RTCRegionStore" /* 4887 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, closure_0, dependencyMap, importDefault, subscriptions2;
 
-const EventEmitter = _mod568.EventEmitter;
+const EventEmitter = _mod580.EventEmitter;
 class GatewaySocketOpCodes extends EventEmitter {
   presenceUpdate(status, since, activities, afk) {
     const obj = { status, since, activities, afk };

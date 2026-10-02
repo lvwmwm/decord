@@ -1,16 +1,16 @@
-// Module ID: 8795
-// Function ID: 8796
+// Module ID: 8790
+// Function ID: 8791
 // Name: confirmActivityChangeAlert
-// Dependencies: [4479, 1372, 4989, 5203, 1115, 2011, 2]
+// Dependencies: [4482, 1378, 4990, 5204, 1127, 2017, 2]
 // Exports: default
 
-// Module 8795 (confirmActivityChangeAlert)
-import intl7 from "intl" /* 1115 */;
-import StringUtils from "StringUtils" /* 2011 */;
-import useChannelName from "useChannelName" /* 4989 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 8790 (confirmActivityChangeAlert)
+import intl7 from "intl" /* 1127 */;
+import StringUtils from "StringUtils" /* 2017 */;
+import useChannelName from "useChannelName" /* 4990 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/confirmActivityChangeAlert.tsx");
@@ -41,14 +41,14 @@ export default function confirmActivityChangeModal(name, channel, onConfirm, onC
     name = name.name;
   }
   if (name == null) {
-    const intl5 = tmp7(1115).intl;
-    name = intl5.string(tmp7(1115).t.G99XFs);
+    const intl5 = tmp7(1127).intl;
+    name = intl5.string(tmp7(1127).t.G99XFs);
   }
   obj3 = { currentApplicationName: name, currentApplicationChannelName: str };
   const tmp7Result = StringUtils;
   if (tmp7Result.isNullOrEmpty(str)) {
-    const intl6 = tmp7(1115).intl;
-    str = intl6.string(tmp7(1115).t.OGUjmt);
+    const intl6 = tmp7(1127).intl;
+    str = intl6.string(tmp7(1127).t.OGUjmt);
   }
   show(obj2);
 };

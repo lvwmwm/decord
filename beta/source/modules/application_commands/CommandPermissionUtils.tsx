@@ -1,22 +1,22 @@
-// Module ID: 8708
-// Function ID: 8709
+// Module ID: 8703
+// Function ID: 8704
 // Name: CommandPermissionUtils
-// Dependencies: [2049, 2067, 5305, 1074, 8709, 8596, 6943, 1979, 1086, 8505, 38, 6941, 6942, 2]
+// Dependencies: [2055, 2073, 5306, 1086, 8704, 8593, 6947, 1985, 1098, 8502, 38, 6945, 6946, 2]
 // Exports: computeAllowedForChannel, hasAccess
 
-// Module 8708 (CommandPermissionUtils)
+// Module 8703 (CommandPermissionUtils)
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 1074 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import Server from "Server" /* 1979 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5305 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6941 */;
-import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 6942 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6943 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8505 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 8596 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import Constants from "Constants" /* 1086 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import Server from "Server" /* 1985 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6945 */;
+import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 6946 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6947 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8502 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 8593 */;
+import GuildStore from "GuildStore" /* 2073 */;
 import size from "module_2" /* 2 */;
 
 function computeAllowedForUser(permissions, guild_id, userId, roleIds, isImpersonating) {

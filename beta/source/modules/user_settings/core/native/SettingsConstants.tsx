@@ -1,9 +1,9 @@
-// Module ID: 7417
-// Function ID: 7418
+// Module ID: 7421
+// Function ID: 7422
 // Name: SettingsConstants
 // Dependencies: [2]
 
-// Module 7417 (SettingsConstants)
+// Module 7421 (SettingsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/core/native/SettingsConstants.tsx");

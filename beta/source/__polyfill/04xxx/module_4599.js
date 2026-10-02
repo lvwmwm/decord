@@ -1,89 +1,98 @@
 // Module ID: 4599
 // Function ID: 4600
-// Dependencies: [32, 19, 4600]
-// Exports: useRiveProperty
+// Dependencies: [32, 19, 576]
+// Exports: useRive
 
 // Module 4599
-import react2 from "react" /* 4600 */;
+import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 
+let ref;
+
 let c3;
 let closure_4;
-let hasOwnProperty;
-let metroRequire;
-({ useCallback: c3, useEffect: closure_4, useRef: hasOwnProperty, useState: metroRequire } = react);
+let useCallback;
+({ useRef: c3, useCallback, useState: closure_4 } = react);
 
-export const useRiveProperty = function useRiveProperty(instance, FillColor, f30740) {
-  let closure_7;
+export const useRive = function useRive() {
+  let closure_129_1;
   let first;
-  let first1;
-  let closure_0 = instance;
-  let closure_1 = FillColor;
-  let closure_2 = f30740;
-  let tmp = hasOwnProperty(undefined);
-  let c3 = tmp;
-  const items = [instance, FillColor];
+  let tmp4;
+  let tmp6;
+  let tmp7;
   const obj = react2;
-  const disposableMemo = obj.useDisposableMemo(() => {
-    if (closure_0) {
-      return closure_2(tmp, closure_1);
-    }
-  }, (dispose) => {
-    let disposeResult;
-    if (dispose != null) {
-      disposeResult = dispose.dispose();
-    }
-    return disposeResult;
-  }, items, tmp);
-  [first, metroRequire] = metroRequire(undefined);
-  [first1, closure_7] = metroRequire(null);
-  const items1 = [FillColor, instance];
-  React3(() => {
-    closure_7(null);
-  }, items1);
-  const items2 = [instance, disposableMemo, FillColor];
-  React3(function() {
-    const tmp = closure_0 && !disposableMemo;
-    if (tmp) {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const error = new Error("Property \"" + closure_1 + "\" not found in the ViewModel instance");
-      closure_7(error);
-    }
-  }, items2);
-  const items3 = [disposableMemo];
-  React3(() => {
-    if (disposableMemo) {
-      closure_6(iter.value);
-      closure_0 = iter.addListener((arg0) => {
-        closure_1_6(arg0);
-      });
-      return () => {
-        try {
-          closure_0();
-        } catch (err) {
+  const cResult = obj.c(4);
+  const tmp2 = _false(null);
+  let closure_0 = tmp2;
+  const tmp3 = _slicedToArray(React3(null), 2);
+  [tmp4, closure_129_1] = tmp3;
+  let closure_2 = _false(null);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(current) {
+      ref = current;
+      if (ref.current !== current) {
+        ref.current = current;
+        if (ref2.current) {
+          let _clearTimeout = clearTimeout;
+          clearTimeout(tmp9.current);
         }
-      };
-    }
-  }, items3);
-  const items4 = [disposableMemo, first];
-  const items5 = [
-    first,
-    _false((fn) => {
-      const current = ref.current;
-      if (current) {
-        let tmp2 = fn;
-        if (typeof fn === "function") {
-          tmp2 = fn(first);
+        const self = this;
+        const self2 = this;
+        const promise = new Promise((arg0, arg1) => {
+          let closure_0 = arg1;
+          ref.current = setTimeout(() => {
+            const error = new Error("Rive view ready timeout");
+            closure_0(error);
+          }, 5000);
+        });
+        let awaitViewReadyResult;
+        if (current != null) {
+          awaitViewReadyResult = current.awaitViewReady();
         }
-        current.value = tmp2;
+        const items = [awaitViewReadyResult, promise];
+        const raceResult = race(items);
+        const nextPromise = raceResult.then((result) => {
+          if (true === result) {
+            closure_2_1(current);
+          } else {
+            const _console = console;
+            console.warn("Rive view ready check returned false");
+            closure_2_1(null);
+          }
+        });
+        const catchPromise = nextPromise.catch((error) => {
+          console.warn("Failed to initialize Rive view:", error);
+          closure_1_1(null);
+        });
+        catchPromise.finally(() => {
+          if (ref.current) {
+            const _clearTimeout = clearTimeout;
+            clearTimeout(ref.current);
+            ref.current = null;
+          }
+        });
       }
-    }, items4),
-    first1,
-    disposableMemo
-  ];
-  return items5;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { f: first };
+    cResult[1] = obj2;
+    tmp6 = obj2;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] !== tmp4) {
+    const obj3 = { riveRef: tmp2, riveViewRef: tmp4, setHybridRef: tmp6 };
+    cResult[2] = tmp4;
+    cResult[3] = obj3;
+    tmp7 = obj3;
+  } else {
+    tmp7 = cResult[3];
+  }
+  return tmp7;
 };

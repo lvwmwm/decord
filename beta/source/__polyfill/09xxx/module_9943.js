@@ -1,12 +1,14 @@
 // Module ID: 9943
 // Function ID: 9944
-// Dependencies: [41, 42, 93, 95, 98, 9913]
+// Dependencies: [41, 42, 93, 95, 98, 9932, 9931, 9939]
 
 // Module 9943
-import _mod9913 from "module_9913" /* 9913 */;
+import _mod9931 from "module_9931" /* 9931 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9932 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9939 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,47 +27,80 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class DEMergeDateRangeRefiner {
-  constructor() {
+const regExp = new RegExp("([0-9]{4})[-\\.\\/\\s](?:(" + repeatedTimeunitPattern.matchAnyPattern(_mod9931.MONTH_DICTIONARY) + ")|([0-9]{1,2}))[-\\.\\/\\s]([0-9]{1,2})(?=\\W|$)", "i");
+class ENYearMonthDayParser {
+  constructor(strictMonthDateOrder) {
     let constructResult;
     const self = this;
-    _classCallCheck(this, DEMergeDateRangeRefiner);
-    const obj = _getPrototypeOf(DEMergeDateRangeRefiner);
+    _classCallCheck(this, ENYearMonthDayParser);
+    const obj = _getPrototypeOf(ENYearMonthDayParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, undefined);
     }
-    return tmp3(self, constructResult);
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMonthDateOrder = strictMonthDateOrder;
+    return tmp3Result;
   }
 }
-_inherits(DEMergeDateRangeRefiner, fn(_mod9913).default);
+_inherits(ENYearMonthDayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    return /^\s*(bis(?:\s*(?:am|zum))?|-)\s*$/i;
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
-const items = [entry];
+let items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(arg0, arg1) {
+      let parsed2;
+      let tmp6;
+      let tmp7;
+      const parsed = parseInt(arg1[1]);
+      const parsed1 = parseInt(arg1[4]);
+      if (arg1[3]) {
+        const _parseInt = parseInt;
+        parsed2 = parseInt(arg1[3]);
+      } else {
+        parsed2 = _mod9931.MONTH_DICTIONARY[str.toLowerCase(str)];
+      }
+      if (parsed2 < 1) {
+        const self = this;
+        if (this.strictMonthDateOrder) {
+          return null;
+        } else {
+          tmp6 = parsed2;
+          tmp7 = parsed1;
+          if (parsed1 >= 1) {
+            tmp6 = parsed2;
+            tmp7 = parsed1;
+            if (parsed1 <= 12) {
+              const items = [parsed1, parsed2];
+              [tmp6, tmp7] = items;
+            }
+          }
+        }
+      } else {
+        tmp6 = parsed2;
+        tmp7 = parsed1;
+      }
+      let tmp8 = null;
+      if (tmp7 >= 1) {
+        tmp8 = null;
+        if (tmp7 <= 31) {
+          tmp8 = { day: tmp7, month: tmp6, year: parsed };
+          const date = { day: tmp7, month: tmp6, year: parsed };
+        }
+      }
+      return tmp8;
+    }
+  }
+];
 
-export default _createClass(DEMergeDateRangeRefiner, items);
+export default _createClass(ENYearMonthDayParser, items);

@@ -1,15 +1,15 @@
-// Module ID: 5199
-// Function ID: 5200
+// Module ID: 5200
+// Function ID: 5201
 // Name: UploadAttachmentStore
-// Dependencies: [5200, 1074, 5203, 1115, 12, 5439, 5448, 504, 573, 2]
+// Dependencies: [5201, 1086, 5204, 1127, 12, 5440, 5449, 504, 585, 2]
 
-// Module 5199 (UploadAttachmentStore)
+// Module 5200 (UploadAttachmentStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import DraftStore from "DraftStore" /* 5200 */;
-import CloudUpload from "CloudUpload" /* 5439 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 5448 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import DraftStore from "DraftStore" /* 5201 */;
+import CloudUpload from "CloudUpload" /* 5440 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 5449 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -118,7 +118,7 @@ class UploadAttachmentStore extends Store {
     }
     return value2.find((id) => id.id === closure_0);
   }
-  findUpload(channelId, ChannelMessage, _messages) {
+  findUpload(channelId, ChannelMessage, cResult) {
     map = map.get(channelId);
     if (map == null) {
       const _Map = Map;
@@ -133,7 +133,7 @@ class UploadAttachmentStore extends Store {
     if (value2 == null) {
       value2 = closure_6;
     }
-    return value2.find(_messages);
+    return value2.find(cResult);
   }
 }
 const prototype = UploadAttachmentStore.prototype;

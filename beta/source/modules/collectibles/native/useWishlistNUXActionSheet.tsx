@@ -1,71 +1,129 @@
-// Module ID: 8232
-// Function ID: 8233
+// Module ID: 8229
+// Function ID: 8230
 // Name: useWishlistNUXActionSheet
-// Dependencies: [19, 7035, 502, 2042, 504, 4654, 2029, 2031, 4800, 8233, 1981, 2]
-// Exports: default, useHasNeverWishlisted
+// Dependencies: [19, 7039, 502, 2048, 558, 576, 504, 4656, 2035, 2037, 4801, 8230, 1987, 2]
+// Exports: default
 
-// Module 8232 (useWishlistNUXActionSheet)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
+// Module 8229 (useWishlistNUXActionSheet)
+import dismissible_content from "dismissible_content" /* 2035 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4656 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7035 */;
+import UserProfileStore from "UserProfileStore" /* 7039 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f85951 = () => id.getId();
-const f85952 = () => UserProfileStore.getFirstWishlistId(closure_0);
-const f85953 = () => {
-  const userProfile = UserProfileStore.getUserProfile(closure_0);
-  return null != userProfile && userProfile.fetchEndedAt > 0;
-};
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let id;
+  let stateFromStores;
+  let tmp10;
+  let tmp12;
+  let tmp14;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  const obj = stateFromStores(576);
+  const cResult = obj.c(8);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthenticationStore];
+    const fn = function n() {
+      return id.getId();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = stateFromStores(504);
+  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserProfileStore];
+    cResult[2] = items1;
+    tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] !== stateFromStores) {
+    const fn2 = function c() {
+      return UserProfileStore.getFirstWishlistId(stateFromStores);
+    };
+    cResult[3] = stateFromStores;
+    cResult[4] = fn2;
+    tmp10 = fn2;
+  } else {
+    tmp10 = cResult[4];
+  }
+  const tmpResult3 = stateFromStores(504);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp10);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [UserProfileStore];
+    cResult[5] = items2;
+    tmp12 = items2;
+  } else {
+    tmp12 = cResult[5];
+  }
+  if (cResult[6] !== stateFromStores) {
+    const fn3 = function h() {
+      const userProfile = UserProfileStore.getUserProfile(stateFromStores);
+      return null != userProfile && userProfile.fetchEndedAt > 0;
+    };
+    cResult[6] = stateFromStores;
+    cResult[7] = fn3;
+    tmp14 = fn3;
+  } else {
+    tmp14 = cResult[7];
+  }
+  const tmpResult4 = stateFromStores(504);
+  const stateFromStores2 = tmpResult4.useStateFromStores(tmp12, tmp14) && null == stateFromStores1;
+  return stateFromStores2;
+}) : (() => {
+  let closure_0;
+  let id;
+  const items = [AuthenticationStore];
+  const obj = require("get initialized");
+  _require = obj.useStateFromStores(items, () => id.getId());
+  const items1 = [UserProfileStore];
+  const obj2 = require("get initialized");
+  const stateFromStores = obj2.useStateFromStores(items1, () => UserProfileStore.getFirstWishlistId(closure_0));
+  const items2 = [UserProfileStore];
+  const obj3 = require("get initialized");
+  const stateFromStores1 = obj3.useStateFromStores(items2, () => {
+    const userProfile = UserProfileStore.getUserProfile(closure_0);
+    return null != userProfile && userProfile.fetchEndedAt > 0;
+  }) && null == stateFromStores;
+  return stateFromStores1;
+});
+let closure_7 = tmp2;
 let result = size.fileFinishedImporting("modules/collectibles/native/useWishlistNUXActionSheet.tsx");
 
 export default function useWishlistNUXActionSheet() {
-  let closure_0;
-  let id;
   let paths;
-  let obj = require("get initialized");
-  const items = [AuthenticationStore];
-  _require = obj.useStateFromStores(items, f85951);
-  let obj2 = require("get initialized");
-  const items1 = [UserProfileStore];
-  const stateFromStores = obj2.useStateFromStores(items1, f85952);
-  let obj3 = require("get initialized");
-  const items2 = [UserProfileStore];
-  let stateFromStores1 = obj3.useStateFromStores(items2, f85953) && null == stateFromStores;
-  const useIsDismissibleContentDismissed_UNSAFE = require("DismissibleContentUnsafeUtils").useIsDismissibleContentDismissed_UNSAFE;
-  require("DismissibleContentUnsafeUtils");
-  if (stateFromStores1) {
-    stateFromStores1 = !useIsDismissibleContentDismissed_UNSAFE(tmp(2029).DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET);
+  let tmp = closure_7();
+  const useIsDismissibleContentDismissed_UNSAFE = DismissibleContentUnsafeUtils.useIsDismissibleContentDismissed_UNSAFE;
+  DismissibleContentUnsafeUtils;
+  if (tmp) {
+    tmp = !useIsDismissibleContentDismissed_UNSAFE(dismissible_content.DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET);
   }
-  let obj4 = {
-    shouldShowWishlistNUXActionSheet: stateFromStores1,
+  let obj = {
+    shouldShowWishlistNUXActionSheet: tmp,
     showWishlistNUXActionSheet: react.useCallback((product) => {
-      const obj = closure_0(paths[7]);
-      const result = obj.trackDismissibleContentShown(closure_0(paths[6]).DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET);
+      const obj = require("DismissibleContentUtils");
+      const result = obj.trackDismissibleContentShown(require("dismissible_content").DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET);
       const obj2 = require("ActionSheetActionCreators");
       const obj3 = { product };
-      obj2.openLazy(closure_0(paths[10])(paths[9], paths.paths), "WishlistNUXAddedItemActionSheet", obj3, "stack");
-      const obj4 = closure_0(paths[5]);
+      obj2.openLazy(require("asyncRequire")(paths[11], paths.paths), "WishlistNUXAddedItemActionSheet", obj3, "stack");
+      const obj4 = require("DismissibleContentUnsafeUtils");
       const obj5 = { dismissAction: constants.USER_DISMISS, forceTrack: true };
-      const result1 = obj4.UNSAFE_markDismissibleContentAsDismissed(closure_0(paths[6]).DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET, obj5);
+      const result1 = obj4.UNSAFE_markDismissibleContentAsDismissed(require("dismissible_content").DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET, obj5);
     }, [])
   };
-  return obj4;
+  return obj;
 };
-export const useHasNeverWishlisted = function useHasNeverWishlisted() {
-  let closure_0;
-  const items = [AuthenticationStore];
-  const obj = require("get initialized");
-  _require = obj.useStateFromStores(items, f85951);
-  const items1 = [UserProfileStore];
-  const obj2 = require("get initialized");
-  const stateFromStores = obj2.useStateFromStores(items1, f85952);
-  const items2 = [UserProfileStore];
-  const obj3 = require("get initialized");
-  const stateFromStores1 = obj3.useStateFromStores(items2, f85953) && null == stateFromStores;
-  return stateFromStores1;
-};
+export const useHasNeverWishlisted = tmp2;

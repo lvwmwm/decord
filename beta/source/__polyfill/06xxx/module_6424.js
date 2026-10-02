@@ -1,12 +1,12 @@
 // Module ID: 6424
 // Function ID: 6425
-// Dependencies: [19, 21, 1486, 6425]
+// Dependencies: [19, 21, 1492, 6425]
 // Exports: createStackNavigator
 
 // Module 6424
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import Link from "Link" /* 1486 */;
+import Link from "Link" /* 1492 */;
 
 let focused, navigation;
 

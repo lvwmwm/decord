@@ -1,11 +1,11 @@
-// Module ID: 17110
-// Function ID: 17111
+// Module ID: 17112
+// Function ID: 17113
 // Name: react-native
-// Dependencies: [1363, 2]
+// Dependencies: [1369, 2]
 // Exports: getAppMajorVersion
 
-// Module 17110 (react-native)
-import react_native from "react-native" /* 1363 */;
+// Module 17112 (react-native)
+import react_native from "react-native" /* 1369 */;
 import size from "module_2" /* 2 */;
 
 const constants = react_native.getConstants();

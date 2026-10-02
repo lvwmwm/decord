@@ -1,9 +1,9 @@
-// Module ID: 11037
-// Function ID: 11038
+// Module ID: 10904
+// Function ID: 10905
 // Name: ConversationHeaderDismissTracker
 // Dependencies: [2]
 
-// Module 11037 (ConversationHeaderDismissTracker)
+// Module 10904 (ConversationHeaderDismissTracker)
 import size from "module_2" /* 2 */;
 
 let message;

@@ -1,11 +1,11 @@
-// Module ID: 2124
-// Function ID: 2125
+// Module ID: 2127
+// Function ID: 2128
 // Name: preloader
-// Dependencies: [5, 1115, 1981, 2125, 2157, 2189, 2221, 2253, 2255, 2257, 2289, 2291, 2323, 2355, 2387, 2419, 2421, 2423, 2455, 2487, 2519, 2551, 2583, 2585, 2587, 2619, 2621, 2653, 2685, 2717, 2749, 2781, 2813, 2845, 2877, 2909, 2941, 2973, 3005, 3037, 3039, 3071, 3103, 3135, 3167, 3199, 3231, 3263, 3265, 3297, 3329, 3361, 3393, 3425, 3457, 3489, 3521, 3553, 3585, 3617, 3649, 3651, 3683, 3715, 3717, 3749, 3781, 3813, 3845, 3877, 3909, 3911, 2]
+// Dependencies: [5, 1127, 1987, 2128, 2160, 2192, 2224, 2256, 2258, 2260, 2292, 2294, 2326, 2358, 2390, 2422, 2424, 2426, 2458, 2490, 2522, 2554, 2586, 2588, 2590, 2622, 2624, 2656, 2688, 2720, 2752, 2784, 2816, 2848, 2880, 2912, 2944, 2976, 3008, 3040, 3042, 3074, 3106, 3138, 3170, 3202, 3234, 3266, 3268, 3300, 3332, 3364, 3396, 3428, 3460, 3492, 3524, 3556, 3588, 3620, 3652, 3654, 3686, 3718, 3720, 3752, 3784, 3816, 3848, 3880, 3912, 3914, 2]
 // Exports: preloadAllIntlMessageFiles
 
-// Module 2124 (preloader)
-import asyncRequire from "asyncRequire" /* 1981 */;
+// Module 2127 (preloader)
+import asyncRequire from "asyncRequire" /* 1987 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let obj = function _preloadAllIntlMessageFiles() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

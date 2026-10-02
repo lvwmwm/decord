@@ -1,14 +1,14 @@
-// Module ID: 6586
-// Function ID: 6587
+// Module ID: 6587
+// Function ID: 6588
 // Name: useStartAuthorize
-// Dependencies: [5, 19, 6587, 1074, 6588, 6590, 4525, 1241, 6592, 2]
+// Dependencies: [5, 19, 6588, 1086, 6589, 6591, 4528, 1253, 6593, 2]
 // Exports: default
 
-// Module 6586 (useStartAuthorize)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import LinkingDefault from "Linking" /* 4525 */;
-import ApplicationAccountLinkingConstants from "ApplicationAccountLinkingConstants" /* 6587 */;
+// Module 6587 (useStartAuthorize)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import LinkingDefault from "Linking" /* 4528 */;
+import ApplicationAccountLinkingConstants from "ApplicationAccountLinkingConstants" /* 6588 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ const AuthorizeFlow = ApplicationAccountLinkingConstants.AuthorizeFlow;
 const AnalyticEvents = Constants.AnalyticEvents;
 let result = size.fileFinishedImporting("modules/application_account_linking/native/useStartAuthorize.tsx");
 
-export default function useStartAuthorize(getOfficialApplicationId) {
+export default function useStartAuthorize(arg0) {
   let callback;
   let fetched;
   let items2;
@@ -34,8 +34,8 @@ export default function useStartAuthorize(getOfficialApplicationId) {
   const debug = obj.debug;
   const tmp = undefined !== debug && debug;
   const tmp3 = dependencyMap;
-  let obj2 = authorizationApp(6588);
-  authorizationApp = obj2.useAuthorizationApp(getOfficialApplicationId);
+  let obj2 = authorizationApp(6589);
+  authorizationApp = obj2.useAuthorizationApp(arg0);
   let prop;
   if (authorizationApp != null) {
     prop = authorizationApp.connectionEntrypointUrl;
@@ -45,8 +45,8 @@ export default function useStartAuthorize(getOfficialApplicationId) {
     WEB = AuthorizeFlow.WEB;
   }
   let parentId;
-  const useAuthorizedAppsToken = tmp2(6590).useAuthorizedAppsToken;
-  authorizationApp(6590);
+  const useAuthorizedAppsToken = tmp2(6591).useAuthorizedAppsToken;
+  authorizationApp(6591);
   if (authorizationApp != null) {
     parentId = authorizationApp.parentId;
   }
@@ -72,7 +72,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;

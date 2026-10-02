@@ -1,11 +1,11 @@
-// Module ID: 11006
-// Function ID: 11007
+// Module ID: 10874
+// Function ID: 10875
 // Name: SettingBuilders
-// Dependencies: [11007, 2]
+// Dependencies: [10875, 2]
 // Exports: createGuildSelector, createList, createPressable, createRadio, createRoute, createSegmentedControl, createSlider, createStatic, createToggle, createVolumeSlider
 
-// Module 11006 (SettingBuilders)
-import SettingRendererConstants from "SettingRendererConstants" /* 11007 */;
+// Module 10874 (SettingBuilders)
+import SettingRendererConstants from "SettingRendererConstants" /* 10875 */;
 import size from "module_2" /* 2 */;
 
 const NodeType = SettingRendererConstants.NodeType;

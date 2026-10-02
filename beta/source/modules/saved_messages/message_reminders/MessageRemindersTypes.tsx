@@ -1,16 +1,16 @@
-// Module ID: 11212
-// Function ID: 11213
+// Module ID: 11084
+// Function ID: 11085
 // Name: MessageRemindersTypes
-// Dependencies: [4421, 1115, 2]
+// Dependencies: [4424, 1127, 2]
 
-// Module 11212 (MessageRemindersTypes)
-import intl3 from "intl" /* 1115 */;
-import _modDef4421 from "module_4421" /* 4421 */;
+// Module 11084 (MessageRemindersTypes)
+import intl3 from "intl" /* 1127 */;
+import _modDef4424 from "module_4424" /* 4424 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
   getDueAt() {
-    const obj = _modDef4421();
+    const obj = _modDef4424();
     const addResult = obj.add(30, "minutes");
     return addResult.toDate();
   },
@@ -23,7 +23,7 @@ const items = [
   obj,
   {
     getDueAt() {
-      const obj = _modDef4421();
+      const obj = _modDef4424();
       const addResult = obj.add(1, "hour");
       return addResult.toDate();
     },
@@ -34,7 +34,7 @@ const items = [
   },
   {
     getDueAt() {
-      const obj = _modDef4421();
+      const obj = _modDef4424();
       const addResult = obj.add(4, "hour");
       return addResult.toDate();
     },
@@ -46,10 +46,10 @@ const items = [
   {
     getDueAt() {
       let toDateResult;
-      const obj = _modDef4421();
+      const obj = _modDef4424();
       const startOfResult = obj.startOf("day");
       const addResult = startOfResult.add(9, "hours");
-      const obj4 = _modDef4421();
+      const obj4 = _modDef4424();
       if (obj4.hour() >= 9) {
         const addResult1 = addResult.add(1, "day");
         toDateResult = addResult1.toDate();
@@ -60,7 +60,7 @@ const items = [
     },
     getLabel() {
       let stringResult;
-      const obj = _modDef4421();
+      const obj = _modDef4424();
       if (obj.hour() >= 9) {
         const intl2 = intl3.intl;
         stringResult = intl2.string(intl3.t["7MKr2P"]);
@@ -74,20 +74,20 @@ const items = [
   {
     getDueAt() {
       let num3;
-      const obj = _modDef4421();
+      const obj = _modDef4424();
       const dayResult = obj.day();
       if (0 === dayResult) {
         num3 = 1;
       } else {
         num3 = 8;
         if (1 === dayResult) {
-          const obj2 = _modDef4421();
+          const obj2 = _modDef4424();
           num3 = 8;
           const startOfResult = obj2.startOf("day");
           startOfResult.add(9, "hours");
         }
       }
-      const obj5 = _modDef4421();
+      const obj5 = _modDef4424();
       const dayResult1 = obj5.day(num3);
       const startOfResult1 = dayResult1.startOf("day");
       const addResult1 = startOfResult1.add(9, "hours");

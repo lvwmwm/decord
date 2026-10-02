@@ -1,20 +1,20 @@
-// Module ID: 12176
-// Function ID: 12177
+// Module ID: 12069
+// Function ID: 12070
 // Name: ContactSyncPersistedStore
-// Dependencies: [510, 1248, 573, 560, 2]
+// Dependencies: [510, 1260, 585, 570, 2]
 // Exports: clearDismissState, deleteStoredContacts, dismissDMListCTA, dismissUpsellCTA, setDMListCTAFirstSeenDate, setStoredContacts
 
-// Module 12176 (ContactSyncPersistedStore)
+// Module 12069 (ContactSyncPersistedStore)
 import Storage4 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import react_native from "react-native" /* 1248 */;
-import module_560 from "module_560" /* 560 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import react_native from "react-native" /* 1260 */;
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f95565 = () => {
+const f110221 = () => {
   const obj = DispatcherDefault;
   const obj2 = { type: "CONTACT_SYNC_STORED_CONTACTS", empty: "" === closure_0 };
   return obj.dispatch(obj2);
@@ -40,9 +40,9 @@ Storage.asyncGet("V2_DCD_CONTACTS_STORAGE_KEY", async (arg0) => {
     });
   });
   let obj2 = DispatcherDefault;
-  obj2.wait(f95565);
+  obj2.wait(f110221);
 });
-const useContactSyncStore = module_560.create(() => ({ loadedPolicyNotice: false, storedContacts: "", upsellCTADismissed: false, policyUpdateNoticeDismissed: false, dmListCTADismissed: false }));
+const useContactSyncStore = module_570.create(() => ({ loadedPolicyNotice: false, storedContacts: "", upsellCTADismissed: false, policyUpdateNoticeDismissed: false, dmListCTADismissed: false }));
 let Storage2 = Storage4.Storage;
 Storage2.asyncGet("ContactSyncDMListCTADismissed", async (arg0) => {
   let dmListCTADismissed;
@@ -57,7 +57,7 @@ Storage2.asyncGet("ContactSyncDMListCTADismissed", async (arg0) => {
   if (Date.now() - timestamp > 5184000000) {
     _require = true;
   }
-  const tmpResult = tmp(1248);
+  const tmpResult = tmp(1260);
   tmpResult.batchUpdates(() => {
     const obj = { dmListCTADismissed };
     return obj.setState(obj);
@@ -90,7 +90,7 @@ export const setStoredContacts = function setStoredContacts(arg0) {
     });
   });
   const obj2 = DispatcherDefault;
-  obj2.wait(f95565);
+  obj2.wait(f110221);
 };
 export const deleteStoredContacts = function deleteStoredContacts() {
   let state;

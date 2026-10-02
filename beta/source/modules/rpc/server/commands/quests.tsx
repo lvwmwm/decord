@@ -1,18 +1,18 @@
-// Module ID: 14072
-// Function ID: 14073
+// Module ID: 14074
+// Function ID: 14075
 // Name: quests
-// Dependencies: [7116, 1074, 7787, 8775, 7137, 8770, 1241, 573, 8813, 2]
+// Dependencies: [7120, 1086, 7791, 8770, 7141, 8765, 1253, 585, 8808, 2]
 
-// Module 14072 (quests)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7137 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7787 */;
-import RPCErrorDefault from "RPCError" /* 8770 */;
-import RPCHelpers from "RPCHelpers" /* 8775 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 8813 */;
-import QuestStore from "QuestStore" /* 7116 */;
-import Constants from "Constants" /* 1074 */;
+// Module 14074 (quests)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7141 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 7791 */;
+import RPCErrorDefault from "RPCError" /* 8765 */;
+import RPCHelpers from "RPCHelpers" /* 8770 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 8808 */;
+import QuestStore from "QuestStore" /* 7120 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;

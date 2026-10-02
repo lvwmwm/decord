@@ -1,30 +1,32 @@
-// Module ID: 17558
-// Function ID: 17559
+// Module ID: 17560
+// Function ID: 17561
 // Name: FormImagePicker
-// Dependencies: [5, 19, 17, 21, 4836, 576, 5450, 1432, 9203, 1115, 5899, 17559, 9713, 4832, 5281, 2]
-// Exports: default
+// Dependencies: [109, 5, 19, 17, 21, 4837, 588, 5451, 1438, 9215, 1127, 5896, 17561, 9829, 558, 576, 4833, 5282, 2]
 
-// Module 17558 (FormImagePicker)
+// Module 17560 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1432 */;
-import utils_UploadUtilsDefault from "utils/UploadUtils" /* 5450 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9203 */;
+import nativeDefault from "native" /* 588 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1438 */;
+import utils_UploadUtilsDefault from "utils/UploadUtils" /* 5451 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9215 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let closure_2;
+const require = globalThis.__r;
+let _require, closure_2;
 
-let metroImportDefault;
-let metroRequire;
+let c9;
+let metroImportAll;
 let obj2;
 let obj3;
 let size;
 let tmp6;
-const FastImageDefault = tmp6(5899);
+const FastImageDefault = tmp6(5896);
 function pickImage() {
   return obj(...arguments);
 }
@@ -44,7 +46,7 @@ let obj = function _pickImage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -81,7 +83,7 @@ let obj = function _pickImage() {
               size(obj);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           c4 = 3;
@@ -112,7 +114,7 @@ class ImagePickerIcon {
     if (flag === undefined) {
       flag = false;
     }
-    const tmp = closure_8();
+    const tmp = closure_10();
     const tmp3 = previewShape === obj4.CIRCLE ? tmp.imageCircle : tmp.imageSquircle;
     const items = [image, size];
     const tmp2 = "center" === previewResizeMode ? tmp.imageCentered : tmp.image;
@@ -141,7 +143,7 @@ class ImagePickerIcon {
     }, items);
     obj = {
       accessibilityRole: "button",
-      accessibilityLabel: intl.string(image(1115).t.HNo5cG),
+      accessibilityLabel: intl.string(image(1127).t.HNo5cG),
       accessibilityState: { disabled: flag },
       onPress() {
         return pickImage(importDefault, dependencyMap);
@@ -151,9 +153,9 @@ class ImagePickerIcon {
       children: items3
     };
     const tmp8 = TouchableHitBoxDefault;
-    intl = image(1115).intl;
+    intl = image(1127).intl;
     items1 = [tmp.image, tmp3, tmp.imageContainerEmpty, flag && tmp.disabled, style];
-    const tmp5 = closure_7;
+    const tmp5 = closure_9;
     if (null != image) {
       const obj2 = { style: items2, resizeMode: previewResizeMode, source: obj3 };
       items2 = [tmp2, style, tmp3];
@@ -165,8 +167,8 @@ class ImagePickerIcon {
       tmp12Result = tmp12(tmp6Result, obj2);
       tmp10 = tmp12;
     } else {
-      tmp10 = closure_6;
-      tmp12Result = closure_6(tmp9(17559).ImagePlusIcon, {});
+      tmp10 = closure_8;
+      tmp12Result = closure_8(tmp9(17561).ImagePlusIcon, {});
     }
     items3 = [tmp12Result, ];
     let tmp10Result = null != image && !flag;
@@ -176,7 +178,7 @@ class ImagePickerIcon {
       if (standalone) {
         standalone = tmp.standaloneIcon;
       }
-      obj4 = { style: items4, children: tmp10(image(9713).PencilIcon, { color: "#292b30", size: "sm" }) };
+      obj4 = { style: items4, children: tmp10(image(9829).PencilIcon, { color: "#292b30", size: "sm" }) };
       items4[1] = standalone;
       tmp10Result = tmp10(tmp15, obj4);
     }
@@ -184,20 +186,170 @@ class ImagePickerIcon {
     return tmp5(tmp8, obj);
   }
 }
+let closure_3 = ["description", "imageUploadSize", "image", "setImage", "disabled"];
 const View = react_native.View;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
 obj = { imageSelectionRow: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: 16 }, buttonColumn: { flex: 1, flexDirection: "column", marginEnd: 16 }, imageDescription: { flexWrap: "wrap", marginBottom: 16 }, image: { alignSelf: "center", width: 84, height: 84 }, imageCentered: { alignSelf: "center", width: 20, height: 20 }, imageCircle: { borderRadius: 42 }, imageSquircle: obj2, imageContainerEmpty: obj3, editImageIcon: size, standaloneIcon: { top: -4, right: -4 }, disabled: { opacity: 0.3 } };
 obj2 = { borderRadius: nativeDefault.radii.sm };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 size = { alignItems: "center", backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: nativeDefault.radii.lg, top: 0, height: 24, justifyContent: "center", right: 0, padding: 4, position: "absolute", width: 24 };
-const metroImportAll = createStyles(obj);
+const authStore = createStyles(obj);
 let obj4 = { CIRCLE: 0, [0]: "CIRCLE", SQUIRCLE: 1, [1]: "SQUIRCLE" };
-size = size_mod;
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormImagePicker.tsx");
-
-export default function FormImagePicker(imageUploadSize) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
+  let closure_0;
+  let description;
+  let image;
+  let imageUploadSize;
+  let items;
+  let items1;
+  let setImage;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  obj = require("react");
+  const cResult = obj.c(33);
+  if (cResult[0] !== disabled) {
+    ({ description, imageUploadSize } = disabled);
+    _require = imageUploadSize;
+    ({ image, setImage } = disabled);
+    let closure_1 = setImage;
+    disabled = disabled.disabled;
+    const tmp12 = _objectWithoutProperties(disabled, closure_3);
+    cResult[0] = disabled;
+    cResult[1] = description;
+    cResult[2] = disabled;
+    cResult[3] = tmp12;
+    cResult[4] = image;
+    cResult[5] = imageUploadSize;
+    cResult[6] = setImage;
+    tmp7 = image;
+    tmp6 = tmp12;
+    tmp5 = disabled;
+    tmp4 = description;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    tmp6 = cResult[3];
+    tmp7 = cResult[4];
+    _require = cResult[5];
+    closure_1 = cResult[6];
+  }
+  const tmp13 = closure_10();
+  if (cResult[7] === tmp8) {
+    let tmp14;
+    let tmp15;
+    if (cResult[8] === tmp9) {
+      tmp14 = cResult[9];
+    }
+    if (cResult[10] !== tmp7) {
+      let stringResult;
+      if (null == tmp7) {
+        const intl2 = tmp(1127).intl;
+        stringResult = intl2.string(tmp(1127).t.bGPfSp);
+      } else {
+        const intl = tmp(1127).intl;
+        stringResult = intl.string(tmp(1127).t["0KOido"]);
+      }
+      cResult[10] = tmp7;
+      cResult[11] = stringResult;
+      tmp15 = stringResult;
+    } else {
+      tmp15 = cResult[11];
+    }
+    if (cResult[12] === tmp4) {
+      let tmp18;
+      if (cResult[13] === tmp13.imageDescription) {
+        tmp18 = cResult[14];
+      }
+      if (cResult[15] === tmp15) {
+        if (cResult[16] === tmp5) {
+          let tmp21;
+          if (cResult[17] === tmp14) {
+            tmp21 = cResult[18];
+          }
+          if (cResult[19] === tmp13.buttonColumn) {
+            if (cResult[20] === tmp18) {
+              let tmp24;
+              if (cResult[21] === tmp21) {
+                tmp24 = cResult[22];
+              }
+              if (cResult[23] === tmp5) {
+                if (cResult[24] === tmp6) {
+                  if (cResult[25] === tmp7) {
+                    if (cResult[26] === tmp8) {
+                      let tmp28;
+                      if (cResult[27] === tmp9) {
+                        tmp28 = cResult[28];
+                      }
+                      if (cResult[29] === tmp13.imageSelectionRow) {
+                        if (cResult[30] === tmp24) {
+                          let tmp35;
+                          if (cResult[31] === tmp28) {
+                            tmp35 = cResult[32];
+                          }
+                          return tmp35;
+                        }
+                      }
+                      const obj2 = { style: tmp13.imageSelectionRow, children: items };
+                      items = [tmp24, tmp28];
+                      const tmp38 = closure_9(View, obj2);
+                      cResult[29] = tmp13.imageSelectionRow;
+                      cResult[30] = tmp24;
+                      cResult[31] = tmp28;
+                      cResult[32] = tmp38;
+                      tmp35 = tmp38;
+                    }
+                  }
+                }
+              }
+              const obj3 = { disabled: tmp5, imageUploadSize: tmp8, image: tmp7, setImage: tmp9 };
+              const merged = Object.assign(tmp6);
+              const tmp34 = closure_8(ImagePickerIcon, obj3);
+              cResult[23] = tmp5;
+              cResult[24] = tmp6;
+              cResult[25] = tmp7;
+              cResult[26] = tmp8;
+              cResult[27] = tmp9;
+              cResult[28] = tmp34;
+              tmp28 = tmp34;
+            }
+          }
+          obj4 = { style: tmp13.buttonColumn, children: items1 };
+          items1 = [tmp18, tmp21];
+          const tmp27 = closure_9(View, obj4);
+          cResult[19] = tmp13.buttonColumn;
+          cResult[20] = tmp18;
+          cResult[21] = tmp21;
+          cResult[22] = tmp27;
+          tmp24 = tmp27;
+        }
+      }
+      const obj5 = { text: tmp15, variant: "secondary", onPress: tmp14, size: "md", disabled: tmp5 };
+      const tmp23 = closure_8(require("components/Button/Button").Button, obj5);
+      cResult[15] = tmp15;
+      cResult[16] = tmp5;
+      cResult[17] = tmp14;
+      cResult[18] = tmp23;
+      tmp21 = tmp23;
+    }
+    const obj6 = { style: tmp13.imageDescription, variant: "text-sm/medium", color: "text-default", children: tmp4 };
+    const tmp20 = closure_8(require("Text/Text").Text, obj6);
+    cResult[12] = tmp4;
+    cResult[13] = tmp13.imageDescription;
+    cResult[14] = tmp20;
+    tmp18 = tmp20;
+  }
+  const fn = function h() {
+    return pickImage(closure_0, closure_1);
+  };
+  cResult[7] = tmp8;
+  cResult[8] = tmp9;
+  cResult[9] = fn;
+  tmp14 = fn;
+}) : ((imageUploadSize) => {
   let image;
   let items;
   let items1;
@@ -209,21 +361,21 @@ export default function FormImagePicker(imageUploadSize) {
   const disabled = imageUploadSize.disabled;
   const description = imageUploadSize.description;
   const merged = Object.assign(imageUploadSize, Object.assign({ description: 0, imageUploadSize: 0, image: 0, setImage: 0, disabled: 0 }));
-  const tmp2 = closure_8();
+  const tmp2 = closure_10();
   if (null == image) {
-    const intl2 = imageUploadSize(1115).intl;
-    stringResult = intl2.string(imageUploadSize(1115).t.bGPfSp);
+    const intl2 = imageUploadSize(1127).intl;
+    stringResult = intl2.string(imageUploadSize(1127).t.bGPfSp);
     tmp6 = imageUploadSize;
   } else {
-    const intl = imageUploadSize(1115).intl;
-    stringResult = intl.string(imageUploadSize(1115).t["0KOido"]);
+    const intl = imageUploadSize(1127).intl;
+    stringResult = intl.string(imageUploadSize(1127).t["0KOido"]);
     tmp6 = imageUploadSize;
   }
   const obj2 = { style: tmp2.buttonColumn, children: items };
   items = [, ];
   obj = { style: tmp2.imageSelectionRow, children: items1 };
   const obj3 = { style: tmp2.imageDescription, variant: "text-sm/medium", color: "text-default", children: description };
-  items[0] = closure_6(tmp6(4832).Text, obj3);
+  items[0] = closure_8(tmp6(4833).Text, obj3);
   obj4 = {
     text: stringResult,
     variant: "secondary",
@@ -233,12 +385,16 @@ export default function FormImagePicker(imageUploadSize) {
     size: "md",
     disabled
   };
-  items[1] = closure_6(tmp6(5281).Button, obj4);
-  items1 = [closure_7(View, obj2), ];
+  items[1] = closure_8(tmp6(5282).Button, obj4);
+  items1 = [closure_9(View, obj2), ];
   const obj5 = { disabled, imageUploadSize, image, setImage };
   const merged1 = Object.assign(merged);
-  items1[1] = closure_6(ImagePickerIcon, obj5);
-  return closure_7(View, obj);
-};
+  items1[1] = closure_8(ImagePickerIcon, obj5);
+  return closure_9(View, obj);
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormImagePicker.tsx");
+
+export default tmp4;
 export const PreviewShape = obj4;
 export { ImagePickerIcon };

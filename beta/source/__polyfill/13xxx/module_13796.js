@@ -1,16 +1,27 @@
 // Module ID: 13796
 // Function ID: 13797
-// Dependencies: [13792]
+// Dependencies: [13797, 13794, 13799]
 
 // Module 13796
-import _mod13792 from "module_13792" /* 13792 */;
+import _mod13794 from "module_13794" /* 13794 */;
+import _mod13797 from "module_13797" /* 13797 */;
+import _mod13799 from "module_13799" /* 13799 */;
 
-
-export default !_mod13792(() => {
-  const fn = () => {
-
+let fn = Object;
+let closure_3 = _mod13797("".split);
+if (_mod13794(() => {
+  const obj = Object("z");
+  return !obj.propertyIsEnumerable(0);
+})) {
+  fn = (arg0) => {
+    let tmp2;
+    if ("String" === _mod13799(arg0)) {
+      tmp2 = closure_3(arg0, "");
+    } else {
+      tmp2 = Object(arg0);
+    }
+    return tmp2;
   };
-  const bindResult = fn.bind();
-  const hasOwnPropertyResult = typeof bindResult !== "function" || bindResult.hasOwnProperty("prototype");
-  return hasOwnPropertyResult;
-});
+}
+
+export default fn;

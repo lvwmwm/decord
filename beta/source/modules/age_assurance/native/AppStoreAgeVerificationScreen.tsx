@@ -1,14 +1,14 @@
-// Module ID: 8023
-// Function ID: 8024
+// Module ID: 8027
+// Function ID: 8028
 // Name: AppStoreAgeVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 5179, 5184, 1485, 5048, 8024, 8028, 7890, 8025, 7870, 7871, 5279, 4832, 1115, 3039, 5745, 5281, 7861, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5180, 5185, 1491, 5049, 8028, 8032, 7894, 8029, 7874, 7875, 5280, 4833, 1127, 3042, 5746, 5282, 7865, 2]
 // Exports: default
 
-// Module 8023 (AppStoreAgeVerificationScreen)
+// Module 8027 (AppStoreAgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5179 */;
-import MetricEvents from "MetricEvents" /* 5184 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7861 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5180 */;
+import MetricEvents from "MetricEvents" /* 5185 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7865 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -51,11 +51,11 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
   react = undefined;
   let tmp = modalSessionId;
   const onClose = modalSessionId.onClose;
-  let obj = modalSessionId(1485);
+  let obj = modalSessionId(1491);
   navigation = obj.useNavigation();
   const tmp4 = callback1(react.useState({ type: "loading" }), 2);
   [tmp5, c2] = tmp4;
-  let obj2 = modalSessionId(5048);
+  let obj2 = modalSessionId(5049);
   const watchAgeVerificationStatusChange = obj2.useWatchAgeVerificationStatusChange(onClose);
   let items = [navigation];
   const callback = react.useCallback(() => {
@@ -77,7 +77,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let status;
@@ -188,7 +188,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
             if ("accepted" === closure_5.result) {
               callback1 = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else {
               const reason = closure_5.reason;
               unknown_str = reason;
@@ -202,7 +202,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
             }
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp41) {
         status = tmp41;
@@ -242,29 +242,29 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
       clearTimeout(closure_1);
     };
   }, items2);
-  const ModalScreen = modalSessionId(7870).ModalScreen;
-  const ModalContent = modalSessionId(7871).ModalContent;
-  const Stack = modalSessionId(5279).Stack;
+  const ModalScreen = modalSessionId(7874).ModalScreen;
+  const ModalContent = modalSessionId(7875).ModalContent;
+  const Stack = modalSessionId(5280).Stack;
   if ("loading" === tmp5.type) {
     let obj3 = { children: items3 };
     items3 = [tmp10(ActivityIndicator, { size: "large" }), ];
-    let obj4 = { variant: "text-md/medium", color: "text-strong", children: intl.string(navigation(3039).MN6I4Y) };
-    const Text = tmp(4832).Text;
-    intl = tmp(1115).intl;
+    let obj4 = { variant: "text-md/medium", color: "text-strong", children: intl.string(navigation(3042).MN6I4Y) };
+    const Text = tmp(4833).Text;
+    intl = tmp(1127).intl;
     items3[1] = closure_7(Text, obj4);
     tmp15 = closure_9(closure_8, obj3);
   } else {
     let obj5 = { children: items4 };
-    let obj6 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "alert", children: intl2.string(navigation(3039).tBwanH) };
-    const Text2 = tmp(4832).Text;
-    intl2 = tmp(1115).intl;
+    let obj6 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "alert", children: intl2.string(navigation(3042).tBwanH) };
+    const Text2 = tmp(4833).Text;
+    intl2 = tmp(1127).intl;
     items4 = [tmp10(Text2, obj6), ];
     let obj7 = { children: tmp10(Button, obj8) };
-    const ButtonGroup = tmp(5745).ButtonGroup;
+    const ButtonGroup = tmp(5746).ButtonGroup;
     obj8 = {
       variant: "primary",
       size: "lg",
-      text: intl3.string(navigation(3039)["Jx33+I"]),
+      text: intl3.string(navigation(3042)["Jx33+I"]),
       onPress() {
           const trackAgeVerificationModalClicked = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked;
           AgeVerificationAnalyticsUtils;
@@ -272,8 +272,8 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
           callback();
         }
     };
-    Button = tmp(5281).Button;
-    intl3 = tmp(1115).intl;
+    Button = tmp(5282).Button;
+    intl3 = tmp(1127).intl;
     items4[1] = closure_7(ButtonGroup, obj7);
     tmp15 = closure_9(closure_8, obj5);
   }

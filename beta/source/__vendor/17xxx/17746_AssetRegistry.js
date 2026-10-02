@@ -1,10 +1,10 @@
 // Module ID: 17746
 // Function ID: 17747
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 17746 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/summaries/native/images", width: 14, height: 18, scales: [2, 3], hash: "813d44b12eef1bb0afea69b8182d002f", name: "summary_indicator_end", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/guild_role_subscription", width: 55, height: 128, scales: [2, 3], hash: "3ad934bc4ddf8afa206b19b9a38876a2", name: "image_role_subscription_lanyard", type: "png" });

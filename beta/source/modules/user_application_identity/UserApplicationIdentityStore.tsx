@@ -1,14 +1,14 @@
-// Module ID: 8487
-// Function ID: 8488
+// Module ID: 8484
+// Function ID: 8485
 // Name: UserApplicationIdentityStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 8487 (UserApplicationIdentityStore)
+// Module 8484 (UserApplicationIdentityStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
-const f86824 = (application_id) => {
+const f97230 = (application_id) => {
   const items = [application_id.application_id, application_id];
   return items;
 };
@@ -60,7 +60,7 @@ let obj2 = {
     let identities;
     const result = map1.set(userId.userId, obj.FETCHED);
     ({ userId, identities } = userId);
-    map = new Map(identities.map(f86824));
+    map = new Map(identities.map(f97230));
     const result1 = map.set(userId, { identities, byApplication: map });
     const result2 = map1.set(userId, obj.FETCHED);
   },
@@ -79,7 +79,7 @@ let obj2 = {
       const _Map = Map;
       const self = this;
       const self2 = this;
-      map = new Map(found.map(f86824));
+      map = new Map(found.map(f97230));
       const obj2 = { identities: found, byApplication: map };
       const result = obj.set(user_id, obj2);
       const result1 = map1.set(user_id, obj.FETCHED);

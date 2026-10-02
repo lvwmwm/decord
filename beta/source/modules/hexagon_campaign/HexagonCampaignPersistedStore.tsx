@@ -1,11 +1,11 @@
-// Module ID: 13886
-// Function ID: 13887
+// Module ID: 13888
+// Function ID: 13889
 // Name: HexagonCampaignPersistedStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 13886 (HexagonCampaignPersistedStore)
+// Module 13888 (HexagonCampaignPersistedStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 function handleAppliedPerksCleared() {

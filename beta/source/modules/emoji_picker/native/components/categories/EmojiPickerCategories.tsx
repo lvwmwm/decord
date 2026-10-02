@@ -1,21 +1,21 @@
-// Module ID: 9808
-// Function ID: 9809
+// Module ID: 9727
+// Function ID: 9728
 // Name: EmojiPickerCategories
-// Dependencies: [19, 5775, 1074, 1218, 21, 4836, 576, 4566, 1241, 4801, 4802, 9809, 9819, 6073, 9820, 6476, 9821, 9822, 2]
+// Dependencies: [19, 5776, 1086, 1230, 21, 4837, 588, 4570, 1253, 4802, 4803, 9728, 9738, 6066, 9739, 6477, 9740, 9741, 2]
 
-// Module 9808 (EmojiPickerCategories)
-import nativeDefault from "native" /* 576 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1218 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import HapticUtils from "HapticUtils" /* 4801 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 5775 */;
-import EmojiPickerCategoriesItemDefault from "EmojiPickerCategoriesItem" /* 9809 */;
+// Module 9727 (EmojiPickerCategories)
+import nativeDefault from "native" /* 588 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1230 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import HapticUtils from "HapticUtils" /* 4802 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4803 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 5776 */;
+import EmojiPickerCategoriesItemDefault from "EmojiPickerCategoriesItem" /* 9728 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -36,7 +36,7 @@ let obj = { list: { flex: 1, height: EXPRESSION_FOOTER_HEIGHT }, listPlaceholder
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 let closure_12 = createStyles.createStyles(obj);
 let closure_13 = { code: "function EmojiPickerCategoriesTsx1(){const{categoryIndexActive}=this.__closure;return categoryIndexActive.get();}" };
-let __initData = { code: "function EmojiPickerCategoriesTsx2(categoryIndex,categoryIndexPrev){const{blockRef,EXPRESSION_FOOTER_HEIGHT,runOnJS,scrollToCategoryIndex}=this.__closure;const ref=blockRef.get();if(categoryIndexPrev==null||categoryIndex===categoryIndexPrev||ref==null){return;}const categoryScrollPos=categoryIndex*EXPRESSION_FOOTER_HEIGHT;if(categoryScrollPos>ref.end||categoryScrollPos<ref.start){runOnJS(scrollToCategoryIndex)(categoryIndex);}}" };
+let __initData = { code: "function EmojiPickerCategoriesTsx2(categoryIndex_0,categoryIndexPrev){const{blockRef,EXPRESSION_FOOTER_HEIGHT,runOnJS,scrollToCategoryIndex}=this.__closure;const ref=blockRef.get();if(categoryIndexPrev==null||categoryIndex_0===categoryIndexPrev||ref==null){return;}const categoryScrollPos=categoryIndex_0*EXPRESSION_FOOTER_HEIGHT;if(categoryScrollPos>ref.end||categoryScrollPos<ref.start){runOnJS(scrollToCategoryIndex)(categoryIndex_0);}}" };
 let __initData2 = { code: "function EmojiPickerCategoriesTsx3(){const{inPortalKeyboard,bottomSheetIndex}=this.__closure;return inPortalKeyboard?bottomSheetIndex.get()===1:bottomSheetIndex.get()===0;}" };
 let closure_16 = { code: "function EmojiPickerCategoriesTsx4(){const{bottomSheetOpen}=this.__closure;return bottomSheetOpen.get();}" };
 let closure_17 = { code: "function EmojiPickerCategoriesTsx5(open){const{runOnJS,handleScrollToCategoryIndex}=this.__closure;if(!open){return;}runOnJS(handleScrollToCategoryIndex)();}" };
@@ -140,7 +140,7 @@ const memoResult = react.memo(function EmojiPickerCategories(bottomSheetRef) {
   };
   let obj3 = { blockRef: sharedValue, EXPRESSION_FOOTER_HEIGHT: onClearSearch, runOnJS: bottomSheetRef(categories[7]).runOnJS, scrollToCategoryIndex };
   fn2.__closure = obj3;
-  fn2.__workletHash = 7148256102464;
+  fn2.__workletHash = 14214555212704;
   fn2.__initData = __initData;
   const animatedReaction = obj2.useAnimatedReaction(fn, fn2);
   let items1 = [sharedValue];

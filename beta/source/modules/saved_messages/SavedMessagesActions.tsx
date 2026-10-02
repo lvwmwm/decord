@@ -1,14 +1,14 @@
-// Module ID: 11205
-// Function ID: 11206
+// Module ID: 11077
+// Function ID: 11078
 // Name: SavedMessagesActions
-// Dependencies: [5, 11155, 1074, 1271, 7285, 573, 5058, 2]
+// Dependencies: [5, 11025, 1086, 1283, 7289, 585, 5059, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, upsertSavedMessage
 
-// Module 11205 (SavedMessagesActions)
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 11077 (SavedMessagesActions)
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11155 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11025 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;
@@ -28,7 +28,7 @@ let obj = function _upsertSavedMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -109,7 +109,7 @@ obj = function _fetchAndUpdateSavedMessages() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;
@@ -175,7 +175,7 @@ obj = function _fetchAndUpdateSavedMessages() {
             return obj13;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else if (arg0 === 1) {
           c4 = 3;

@@ -1,32 +1,65 @@
-// Module ID: 8833
-// Function ID: 8834
+// Module ID: 8828
+// Function ID: 8829
 // Name: VoiceChatHooks
-// Dependencies: [502, 4855, 504, 2]
-// Exports: useIsConnectedToVoiceChannel, useIsConnectedToVoiceChannelForId
+// Dependencies: [502, 4856, 558, 576, 504, 2]
+// Exports: useIsConnectedToVoiceChannel
 
-// Module 8833 (VoiceChatHooks)
+// Module 8828 (VoiceChatHooks)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const result = size.fileFinishedImporting("modules/voice_chat/VoiceChatHooks.tsx");
-
-export const useIsConnectedToVoiceChannel = function useIsConnectedToVoiceChannel(id) {
-  id = undefined;
-  if (id != null) {
-    id = id.id;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp7;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [VoiceStateStore, AuthenticationStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
   }
-  const items = [VoiceStateStore, AuthenticationStore];
-  const obj = id(504);
-  return obj.useStateFromStores(items, () => VoiceStateStore.isInChannel(id, AuthenticationStore.getId()));
-};
-export const useIsConnectedToVoiceChannelForId = function useIsConnectedToVoiceChannelForId(arg0) {
+  if (cResult[1] !== arg0) {
+    const fn = function c() {
+      return VoiceStateStore.isInChannel(closure_0, AuthenticationStore.getId());
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp7);
+}) : ((arg0) => {
   let closure_0;
   _require = arg0;
   const items = [VoiceStateStore, AuthenticationStore];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => VoiceStateStore.isInChannel(id, AuthenticationStore.getId()));
+  return obj.useStateFromStores(items, () => VoiceStateStore.isInChannel(closure_0, AuthenticationStore.getId()));
+});
+let closure_4 = tmp3;
+let fn = (id) => {
+  id = undefined;
+  const tmp = closure_4;
+  if (id != null) {
+    id = id.id;
+  }
+  return tmp(id);
 };
+const result1 = size.fileFinishedImporting("modules/voice_chat/VoiceChatHooks.tsx");
+
+export const useIsConnectedToVoiceChannel = fn;
+export const useIsConnectedToVoiceChannelForId = tmp3;

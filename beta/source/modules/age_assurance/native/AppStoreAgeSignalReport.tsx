@@ -1,14 +1,14 @@
-// Module ID: 17229
-// Function ID: 17230
+// Module ID: 17231
+// Function ID: 17232
 // Name: AppStoreAgeSignalReport
-// Dependencies: [32, 5, 1372, 1074, 8028, 7890, 1231, 1364, 8024, 8025, 1241, 5735, 4865, 2]
+// Dependencies: [32, 5, 1378, 1086, 8032, 7894, 1243, 1370, 8028, 8029, 1253, 5736, 4866, 2]
 // Exports: beginAppStoreAgeSignalReport, settleAppStoreAgeSignalReport
 
-// Module 17229 (AppStoreAgeSignalReport)
-import Constants from "Constants" /* 1074 */;
+// Module 17231 (AppStoreAgeSignalReport)
+import Constants from "Constants" /* 1086 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,7 +29,7 @@ let obj = function _collectAgeSignal() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -114,7 +114,7 @@ obj = function _performAgeCheck() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -231,7 +231,7 @@ obj = function _performAgeCheck() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp46) {
         closure_3 = tmp46;
@@ -258,7 +258,7 @@ obj = function _settleAppStoreAgeSignalReport() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -289,7 +289,7 @@ obj = function _settleAppStoreAgeSignalReport() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp7) {
         c0 = 3;
         throw tmp7;
@@ -341,7 +341,7 @@ export const beginAppStoreAgeSignalReport = function beginAppStoreAgeSignalRepor
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -391,7 +391,7 @@ export const beginAppStoreAgeSignalReport = function beginAppStoreAgeSignalRepor
                   c9 = null;
                 }
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               }
             } else if (arg0 === 1) {
               c5 = 3;
@@ -410,7 +410,7 @@ export const beginAppStoreAgeSignalReport = function beginAppStoreAgeSignalRepor
                 c9 = null;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
             c4 = 2;
             c5 = 1;

@@ -1,22 +1,29 @@
-// Module ID: 15660
-// Function ID: 15661
+// Module ID: 15659
+// Function ID: 15660
 // Name: MessagesHeader
-// Dependencies: [19, 17, 1074, 21, 576, 11669, 9578, 5286, 4836, 4566, 5280, 15655, 4693, 11821, 5937, 7363, 10413, 1115, 4832, 6473, 15661, 5281, 4770, 2]
+// Dependencies: [19, 17, 1086, 21, 588, 11557, 10489, 5287, 4837, 558, 576, 4570, 5281, 15654, 4695, 11714, 5934, 10455, 7362, 1127, 4833, 6474, 15660, 5282, 4771, 2]
 // Exports: getMessagesHeaderHeight
 
-// Module 15660 (MessagesHeader)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import spring from "spring" /* 5280 */;
-import ButtonConstants from "ButtonConstants" /* 5286 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9578 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 11669 */;
+// Module 15659 (MessagesHeader)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4570 */;
+import AssetRegistryDefault from "AssetRegistry" /* 4771 */;
+import spring from "spring" /* 5281 */;
+import ButtonConstants from "ButtonConstants" /* 5287 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 5934 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6474 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10489 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 11557 */;
+import MessageRequestsButtonDefault from "MessageRequestsButton" /* 15660 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
 let dependencyMap;
 
 let StyleSheet;
@@ -30,6 +37,7 @@ let obj5;
 ({ View: closure_4, StyleSheet } = react_native);
 const SearchTypes = Constants.SearchTypes;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let c8 = 1.75;
 const PX_16 = nativeDefault.space.PX_16;
 const PX_8 = nativeDefault.space.PX_8;
 let createStyles = createStyles_mod;
@@ -40,9 +48,518 @@ obj3 = { paddingBottom: PX_8, flexDirection: "row", gap: nativeDefault.space.PX_
 obj4 = { height: ButtonConstants.SMALL_BUTTON_HEIGHT, gap: nativeDefault.modules.mobile.MESSAGES_HEADER_BUTTON_GAP, flexDirection: nativeDefault.modules.mobile.MESSAGES_HEADER_BUTTON_LAYOUT, alignItems: "center" };
 obj5 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, top: undefined, height: 1 };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-let closure_10 = createStyles(obj);
+let closure_11 = createStyles(obj);
 const __initData = { code: "function MessagesHeaderTsx1(){const{withSpring,scrollPosition}=this.__closure;return{opacity:withSpring(scrollPosition.get()>0?1:0)};}" };
-const memoResult = react.memo(function MessagesHeader(height) {
+const __initData2 = { code: "function MessagesHeaderTsx2(){const{withSpring,scrollPosition}=this.__closure;return{opacity:withSpring(scrollPosition.get()>0?1:0)};}" };
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let height;
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let items1;
+  let items2;
+  let scrollPosition;
+  let tmp5;
+  let tmp = scrollPosition;
+  let obj = scrollPosition(576);
+  const cResult = obj.c(32);
+  ({ height, scrollPosition } = arg0);
+  const tmp4 = closure_11();
+  if (cResult[0] !== height) {
+    let obj2 = { height };
+    let num = 0;
+    cResult[0] = height;
+    cResult[1] = obj2;
+    tmp5 = obj2;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === tmp4.headerPanel) {
+    let tmp6;
+    let tmp12;
+    let tmp13;
+    let tmp14;
+    let tmp15;
+    let tmp18;
+    let tmp20;
+    if (cResult[3] === tmp5) {
+      tmp6 = cResult[4];
+    }
+    const fn = function y() {
+      const withSpring = spring.withSpring;
+      let num = 0;
+      spring;
+      if (scrollPosition.get() > 0) {
+        num = 1;
+      }
+      const obj = { opacity: withSpring(num) };
+      return obj;
+    };
+    let obj3 = { withSpring: tmp(5281).withSpring, scrollPosition };
+    const useAnimatedStyle = tmp(4570).useAnimatedStyle;
+    tmp(4570);
+    fn.__closure = obj3;
+    fn.__workletHash = 17233409273245;
+    fn.__initData = __initData;
+    const animatedStyle = useAnimatedStyle(fn);
+    const tmpResult2 = tmp(15654);
+    const isHomeDrawerEnabled = tmpResult2.useIsHomeDrawerEnabled();
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn2 = function f() {
+        const obj = scrollPosition(dependencyMap[14]);
+        const rootNavigationRef = obj.getRootNavigationRef();
+        if (rootNavigationRef != null) {
+          rootNavigationRef.navigate("message-requests");
+        }
+      };
+      cResult[5] = fn2;
+      tmp12 = fn2;
+    } else {
+      tmp12 = cResult[5];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      class B {
+        constructor() {
+          const obj = scrollPosition(dependencyMap[14]);
+          const rootNavigationRef = obj.getRootNavigationRef();
+          if (rootNavigationRef != null) {
+            const obj2 = { screen: "add-friends", params: { sourcePage: "Messages Tab", presentation: "card" } };
+            rootNavigationRef.navigate("friends", obj2);
+          }
+        }
+      }
+      cResult[6] = B;
+      tmp13 = B;
+    } else {
+      class B {
+        constructor() {
+          const obj = scrollPosition(dependencyMap[14]);
+          const rootNavigationRef = obj.getRootNavigationRef();
+          if (rootNavigationRef != null) {
+            const obj2 = { screen: "add-friends", params: { sourcePage: "Messages Tab", presentation: "card" } };
+            rootNavigationRef.navigate("friends", obj2);
+          }
+        }
+      }
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      class H {
+        constructor() {
+          const obj = scrollPosition(dependencyMap[14]);
+          const rootNavigationRef = obj.getRootNavigationRef();
+          const tmp = dependencyMap;
+          if (null != rootNavigationRef) {
+            const obj3 = { type: constants.DMS };
+            const obj2 = require("SearchPlatformUtils");
+            const result = obj2.navigateToSearchWithPrefetch(rootNavigationRef, obj3);
+          }
+        }
+      }
+      cResult[7] = H;
+      tmp14 = H;
+    } else {
+      class H {
+        constructor() {
+          const obj = scrollPosition(dependencyMap[14]);
+          const rootNavigationRef = obj.getRootNavigationRef();
+          const tmp = dependencyMap;
+          if (null != rootNavigationRef) {
+            const obj3 = { type: constants.DMS };
+            const obj2 = require("SearchPlatformUtils");
+            const result = obj2.navigateToSearchWithPrefetch(rootNavigationRef, obj3);
+          }
+        }
+      }
+    }
+    const _Symbol4 = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      class I {
+        constructor() {
+          const obj = scrollPosition(dependencyMap[14]);
+          const rootNavigationRef = obj.getRootNavigationRef();
+          if (rootNavigationRef != null) {
+            const current = rootNavigationRef.current;
+            if (current != null) {
+              const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+              current.navigate("friends", obj2);
+            }
+          }
+        }
+      }
+      cResult[8] = I;
+      tmp15 = I;
+    } else {
+      class I {
+        constructor() {
+          const obj = scrollPosition(dependencyMap[14]);
+          const rootNavigationRef = obj.getRootNavigationRef();
+          if (rootNavigationRef != null) {
+            const current = rootNavigationRef.current;
+            if (current != null) {
+              const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+              current.navigate("friends", obj2);
+            }
+          }
+        }
+      }
+    }
+    const tmp17 = HeaderDebugOverlayDefault("bespoke");
+    const _Symbol5 = Symbol;
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      class I {
+        constructor() {
+          const obj = scrollPosition(dependencyMap[14]);
+          const rootNavigationRef = obj.getRootNavigationRef();
+          if (rootNavigationRef != null) {
+            const current = rootNavigationRef.current;
+            if (current != null) {
+              const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+              current.navigate("friends", obj2);
+            }
+          }
+        }
+      }
+      const obj4 = { size: "sm", color: nativeDefault.colors.WHITE };
+      const PlusLargeIcon = tmp(10455).PlusLargeIcon;
+      const tmp19 = closure_6(PlusLargeIcon, obj4);
+      cResult[9] = tmp19;
+      tmp18 = tmp19;
+    } else {
+      class I {
+        constructor() {
+          const obj = scrollPosition(dependencyMap[14]);
+          const rootNavigationRef = obj.getRootNavigationRef();
+          if (rootNavigationRef != null) {
+            const current = rootNavigationRef.current;
+            if (current != null) {
+              const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+              current.navigate("friends", obj2);
+            }
+          }
+        }
+      }
+    }
+    const _Symbol6 = Symbol;
+    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+      class I {
+        constructor() {
+          const obj = scrollPosition(dependencyMap[14]);
+          const rootNavigationRef = obj.getRootNavigationRef();
+          if (rootNavigationRef != null) {
+            const current = rootNavigationRef.current;
+            if (current != null) {
+              const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+              current.navigate("friends", obj2);
+            }
+          }
+        }
+      }
+      const obj5 = { variant: "primary", icon: tmp18, size: "sm", accessibilityLabel: intl.string(tmp(1127).t.jD1qzM), onPress: tmp15 };
+      const IconButton = tmp(7362).IconButton;
+      intl = tmp(1127).intl;
+      const tmp21 = closure_6(IconButton, obj5);
+      cResult[10] = tmp21;
+      tmp20 = tmp21;
+    } else {
+      class I {
+        constructor() {
+          const obj = scrollPosition(dependencyMap[14]);
+          const rootNavigationRef = obj.getRootNavigationRef();
+          if (rootNavigationRef != null) {
+            const current = rootNavigationRef.current;
+            if (current != null) {
+              const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+              current.navigate("friends", obj2);
+            }
+          }
+        }
+      }
+    }
+    if (cResult[11] !== isHomeDrawerEnabled) {
+      class I {
+        constructor() {
+          const obj = scrollPosition(dependencyMap[14]);
+          const rootNavigationRef = obj.getRootNavigationRef();
+          if (rootNavigationRef != null) {
+            const current = rootNavigationRef.current;
+            if (current != null) {
+              const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+              current.navigate("friends", obj2);
+            }
+          }
+        }
+      }
+      const string = tmp23.string;
+      const t = tmp(1127).t;
+      if (isHomeDrawerEnabled) {
+        class I {
+          constructor() {
+            const obj = scrollPosition(dependencyMap[14]);
+            const rootNavigationRef = obj.getRootNavigationRef();
+            if (rootNavigationRef != null) {
+              const current = rootNavigationRef.current;
+              if (current != null) {
+                const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+                current.navigate("friends", obj2);
+              }
+            }
+          }
+        }
+      } else {
+        class I {
+          constructor() {
+            const obj = scrollPosition(dependencyMap[14]);
+            const rootNavigationRef = obj.getRootNavigationRef();
+            if (rootNavigationRef != null) {
+              const current = rootNavigationRef.current;
+              if (current != null) {
+                const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+                current.navigate("friends", obj2);
+              }
+            }
+          }
+        }
+      }
+      cResult[11] = isHomeDrawerEnabled;
+      cResult[12] = tmp24;
+    } else {
+      class I {
+        constructor() {
+          const obj = scrollPosition(dependencyMap[14]);
+          const rootNavigationRef = obj.getRootNavigationRef();
+          if (rootNavigationRef != null) {
+            const current = rootNavigationRef.current;
+            if (current != null) {
+              const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+              current.navigate("friends", obj2);
+            }
+          }
+        }
+      }
+    }
+    if (cResult[13] !== tmp22) {
+      class I {
+        constructor() {
+          const obj = scrollPosition(dependencyMap[14]);
+          const rootNavigationRef = obj.getRootNavigationRef();
+          if (rootNavigationRef != null) {
+            const current = rootNavigationRef.current;
+            if (current != null) {
+              const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+              current.navigate("friends", obj2);
+            }
+          }
+        }
+      }
+      const obj6 = { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", maxFontSizeMultiplier, accessibilityRole: "header", children: tmp22 };
+      cResult[13] = tmp22;
+      cResult[14] = closure_6(tmp(4833).Text, obj6);
+      const tmp27 = closure_6(tmp(4833).Text, obj6);
+    } else {
+      class I {
+        constructor() {
+          const obj = scrollPosition(dependencyMap[14]);
+          const rootNavigationRef = obj.getRootNavigationRef();
+          if (rootNavigationRef != null) {
+            const current = rootNavigationRef.current;
+            if (current != null) {
+              const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+              current.navigate("friends", obj2);
+            }
+          }
+        }
+      }
+    }
+    if (cResult[15] === tmp4.headerPanelTitle) {
+      let tmp33;
+      let tmp32;
+      let tmp36;
+      class I {
+        constructor() {
+          const obj = scrollPosition(dependencyMap[14]);
+          const rootNavigationRef = obj.getRootNavigationRef();
+          if (rootNavigationRef != null) {
+            const current = rootNavigationRef.current;
+            if (current != null) {
+              const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+              current.navigate("friends", obj2);
+            }
+          }
+        }
+      }
+      const _Symbol7 = Symbol;
+      if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+        class I {
+          constructor() {
+            const obj = scrollPosition(dependencyMap[14]);
+            const rootNavigationRef = obj.getRootNavigationRef();
+            if (rootNavigationRef != null) {
+              const current = rootNavigationRef.current;
+              if (current != null) {
+                const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+                current.navigate("friends", obj2);
+              }
+            }
+          }
+        }
+        const obj7 = { onPress: tmp14, variant: "secondary", size: "sm", icon: AssetRegistryDefault2, accessibilityLabel: intl2.string(tmp(1127).t["5h0QOP"]) };
+        const IconButton2 = tmp(7362).IconButton;
+        intl2 = tmp(1127).intl;
+        const tmp34 = closure_6(IconButton2, obj7);
+        const obj8 = { noMargin: true, onPress: tmp12, alternateVariant: true };
+        const tmp35 = closure_6(MessageRequestsButtonDefault, obj8);
+        cResult[18] = tmp34;
+        cResult[19] = tmp35;
+        tmp33 = tmp35;
+        tmp32 = tmp34;
+      } else {
+        class I {
+          constructor() {
+            const obj = scrollPosition(dependencyMap[14]);
+            const rootNavigationRef = obj.getRootNavigationRef();
+            if (rootNavigationRef != null) {
+              const current = rootNavigationRef.current;
+              if (current != null) {
+                const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+                current.navigate("friends", obj2);
+              }
+            }
+          }
+        }
+        tmp33 = cResult[19];
+      }
+      const _Symbol8 = Symbol;
+      if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
+        class I {
+          constructor() {
+            const obj = scrollPosition(dependencyMap[14]);
+            const rootNavigationRef = obj.getRootNavigationRef();
+            if (rootNavigationRef != null) {
+              const current = rootNavigationRef.current;
+              if (current != null) {
+                const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+                current.navigate("friends", obj2);
+              }
+            }
+          }
+        }
+        const obj9 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: AssetRegistryDefault, onPress: tmp13, maxFontSizeMultiplier: 1, text: intl3.string(tmp(1127).t.zIJnA6) };
+        const Button = tmp(5282).Button;
+        intl3 = tmp(1127).intl;
+        const tmp37 = closure_6(Button, obj9);
+        cResult[20] = tmp37;
+        tmp36 = tmp37;
+      } else {
+        class I {
+          constructor() {
+            const obj = scrollPosition(dependencyMap[14]);
+            const rootNavigationRef = obj.getRootNavigationRef();
+            if (rootNavigationRef != null) {
+              const current = rootNavigationRef.current;
+              if (current != null) {
+                const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+                current.navigate("friends", obj2);
+              }
+            }
+          }
+        }
+      }
+      if (cResult[21] !== tmp4.headerPanelButtons) {
+        class I {
+          constructor() {
+            const obj = scrollPosition(dependencyMap[14]);
+            const rootNavigationRef = obj.getRootNavigationRef();
+            if (rootNavigationRef != null) {
+              const current = rootNavigationRef.current;
+              if (current != null) {
+                const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+                current.navigate("friends", obj2);
+              }
+            }
+          }
+        }
+        const obj10 = { style: tmp4.headerPanelButtons, children: items };
+        items = [tmp32, tmp33, tmp36, tmp20];
+        cResult[21] = tmp4.headerPanelButtons;
+        cResult[22] = closure_7(closure_4, obj10);
+        const tmp40 = closure_7(closure_4, obj10);
+      } else {
+        class I {
+          constructor() {
+            const obj = scrollPosition(dependencyMap[14]);
+            const rootNavigationRef = obj.getRootNavigationRef();
+            if (rootNavigationRef != null) {
+              const current = rootNavigationRef.current;
+              if (current != null) {
+                const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+                current.navigate("friends", obj2);
+              }
+            }
+          }
+        }
+      }
+      if (cResult[23] === tmp4.headerBorder) {
+        class I {
+          constructor() {
+            const obj = scrollPosition(dependencyMap[14]);
+            const rootNavigationRef = obj.getRootNavigationRef();
+            if (rootNavigationRef != null) {
+              const current = rootNavigationRef.current;
+              if (current != null) {
+                const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+                current.navigate("friends", obj2);
+              }
+            }
+          }
+        }
+        if (cResult[26] === tmp17) {
+          class I {
+            constructor() {
+              const obj = scrollPosition(dependencyMap[14]);
+              const rootNavigationRef = obj.getRootNavigationRef();
+              if (rootNavigationRef != null) {
+                const current = rootNavigationRef.current;
+                if (current != null) {
+                  const obj2 = { screen: "new-message", params: { sourcePage: "Messages Header" } };
+                  current.navigate("friends", obj2);
+                }
+              }
+            }
+          }
+        }
+        const obj11 = { style: tmp6, children: items1 };
+        items1 = [tmp28, tmp38, tmp41, tmp17];
+        cResult[26] = tmp17;
+        cResult[27] = tmp6;
+        cResult[28] = tmp28;
+        cResult[29] = tmp38;
+        cResult[30] = tmp41;
+        cResult[31] = closure_7(closure_4, obj11);
+        const tmp47 = closure_7(closure_4, obj11);
+      }
+      const obj12 = { style: items2 };
+      items2 = [tmp4.headerBorder, animatedStyle];
+      cResult[23] = tmp4.headerBorder;
+      cResult[24] = animatedStyle;
+      cResult[25] = closure_6(ReanimatedRexportDefault.View, obj12);
+      const tmp43 = closure_6(ReanimatedRexportDefault.View, obj12);
+    }
+    const obj13 = { style: tmp4.headerPanelTitle, children: tmp25 };
+    cResult[15] = tmp4.headerPanelTitle;
+    cResult[16] = tmp25;
+    cResult[17] = closure_6(closure_4, obj13);
+    const tmp31 = closure_6(closure_4, obj13);
+  }
+  const items3 = [tmp4.headerPanel, tmp5];
+  cResult[2] = tmp4.headerPanel;
+  cResult[3] = tmp5;
+  cResult[4] = items3;
+  tmp6 = items3;
+}) : ((height) => {
   let PlusLargeIcon;
   let Text;
   let headerPanel;
@@ -53,10 +570,11 @@ const memoResult = react.memo(function MessagesHeader(height) {
   let items2;
   let items3;
   let obj5;
+  let obj8;
   let stringResult;
   height = height.height;
   const scrollPosition = height.scrollPosition;
-  let tmp = closure_10();
+  let tmp = closure_11();
   dependencyMap = tmp;
   let items = [tmp, height];
   const memo = react.useMemo(() => {
@@ -65,7 +583,7 @@ const memoResult = react.memo(function MessagesHeader(height) {
     items[1] = obj;
     return items;
   }, items);
-  let obj = height(4566);
+  let obj = height(4570);
   const fn = function c() {
     const withSpring = spring.withSpring;
     let num = 0;
@@ -76,22 +594,22 @@ const memoResult = react.memo(function MessagesHeader(height) {
     const obj = { opacity: withSpring(num) };
     return obj;
   };
-  let obj2 = { withSpring: height(5280).withSpring, scrollPosition };
+  let obj2 = { withSpring: height(5281).withSpring, scrollPosition };
   fn.__closure = obj2;
-  fn.__workletHash = 17233409273245;
-  fn.__initData = __initData;
+  fn.__workletHash = 5883359949214;
+  fn.__initData = __initData2;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj3 = height(15655);
+  let obj3 = height(15654);
   const isHomeDrawerEnabled = obj3.useIsHomeDrawerEnabled();
   const callback = react.useCallback(() => {
-    const obj = height(headerPanel[12]);
+    const obj = height(headerPanel[14]);
     const rootNavigationRef = obj.getRootNavigationRef();
     if (rootNavigationRef != null) {
       rootNavigationRef.navigate("message-requests");
     }
   }, []);
   const callback1 = react.useCallback(() => {
-    const obj = height(headerPanel[12]);
+    const obj = height(headerPanel[14]);
     const rootNavigationRef = obj.getRootNavigationRef();
     if (rootNavigationRef != null) {
       const obj2 = { screen: "add-friends", params: { sourcePage: "Messages Tab", presentation: "card" } };
@@ -99,17 +617,17 @@ const memoResult = react.memo(function MessagesHeader(height) {
     }
   }, []);
   const callback2 = react.useCallback(() => {
-    const obj = height(headerPanel[12]);
+    const obj = height(headerPanel[14]);
     const rootNavigationRef = obj.getRootNavigationRef();
     const tmp = headerPanel;
     if (null != rootNavigationRef) {
       const obj3 = { type: constants.DMS };
-      const obj2 = scrollPosition(tmp[13]);
+      const obj2 = scrollPosition(tmp[15]);
       const result = obj2.navigateToSearchWithPrefetch(rootNavigationRef, obj3);
     }
   }, []);
   const callback3 = react.useCallback(() => {
-    const obj = height(headerPanel[12]);
+    const obj = height(headerPanel[14]);
     const rootNavigationRef = obj.getRootNavigationRef();
     if (rootNavigationRef != null) {
       const current = rootNavigationRef.current;
@@ -119,47 +637,48 @@ const memoResult = react.memo(function MessagesHeader(height) {
       }
     }
   }, []);
-  const obj4 = { variant: "primary", icon: closure_6(PlusLargeIcon, obj5), size: "sm", accessibilityLabel: intl.string(height(1115).t.jD1qzM), onPress: callback3 };
-  const tmp12 = scrollPosition(5937)("bespoke");
-  const IconButton = height(7363).IconButton;
-  obj5 = { size: "sm", color: scrollPosition(576).colors.WHITE };
-  PlusLargeIcon = height(10413).PlusLargeIcon;
-  intl = height(1115).intl;
+  const obj4 = { variant: "primary", icon: closure_6(PlusLargeIcon, obj5), size: "sm", accessibilityLabel: intl.string(height(1127).t.jD1qzM), onPress: callback3 };
+  const tmp12 = scrollPosition(5934)("bespoke");
+  const IconButton = height(7362).IconButton;
+  obj5 = { size: "sm", color: scrollPosition(588).colors.WHITE };
+  PlusLargeIcon = height(10455).PlusLargeIcon;
+  intl = height(1127).intl;
   const obj6 = { style: memo, children: items1 };
-  const obj7 = { style: tmp.headerPanelTitle, children: closure_6(Text, { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: stringResult }) };
+  const obj7 = { style: tmp.headerPanelTitle, children: closure_6(Text, obj8) };
+  obj8 = { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", maxFontSizeMultiplier, accessibilityRole: "header", children: stringResult };
   const tmp14 = closure_6(IconButton, obj4);
-  Text = height(4832).Text;
-  const intl2 = height(1115).intl;
+  Text = height(4833).Text;
+  const intl2 = height(1127).intl;
   const string = intl2.string;
-  const t = height(1115).t;
+  const t = height(1127).t;
   if (isHomeDrawerEnabled) {
     stringResult = string(t.YUU0RF);
   } else {
     stringResult = string(t.OIgYlQ);
   }
   items1 = [closure_6(closure_4, obj7), , , ];
-  const obj8 = { style: tmp.headerPanelButtons, children: items2 };
-  const obj9 = { onPress: callback2, variant: "secondary", size: "sm", icon: scrollPosition(6473), accessibilityLabel: intl3.string(height(1115).t["5h0QOP"]) };
-  const IconButton2 = tmp3(7363).IconButton;
-  intl3 = tmp3(1115).intl;
-  items2 = [closure_6(IconButton2, obj9), closure_6(scrollPosition(15661), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
-  const obj10 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: scrollPosition(4770), onPress: callback1, maxFontSizeMultiplier: 1, text: intl4.string(height(1115).t.zIJnA6) };
-  const Button = tmp3(5281).Button;
-  intl4 = tmp3(1115).intl;
-  items2[2] = closure_6(Button, obj10);
+  const obj9 = { style: tmp.headerPanelButtons, children: items2 };
+  const obj10 = { onPress: callback2, variant: "secondary", size: "sm", icon: scrollPosition(6474), accessibilityLabel: intl3.string(height(1127).t["5h0QOP"]) };
+  const IconButton2 = tmp3(7362).IconButton;
+  intl3 = tmp3(1127).intl;
+  items2 = [closure_6(IconButton2, obj10), closure_6(scrollPosition(15660), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
+  const obj11 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: scrollPosition(4771), onPress: callback1, maxFontSizeMultiplier: 1, text: intl4.string(height(1127).t.zIJnA6) };
+  const Button = tmp3(5282).Button;
+  intl4 = tmp3(1127).intl;
+  items2[2] = closure_6(Button, obj11);
   items2[3] = tmp14;
-  items1[1] = closure_7(closure_4, obj8);
-  const obj11 = { style: items3 };
+  items1[1] = closure_7(closure_4, obj9);
+  const obj12 = { style: items3 };
   items3 = [tmp.headerBorder, animatedStyle];
-  items1[2] = closure_6(scrollPosition(4566).View, obj11);
+  items1[2] = closure_6(scrollPosition(4570).View, obj12);
   items1[3] = tmp12;
   return closure_7(closure_4, obj6);
-});
+}));
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesHeader.tsx");
 
 export default memoResult;
 export const getMessagesHeaderHeight = function getMessagesHeaderHeight(fontScale) {
-  const bound = Math.min(fontScale, 1.75);
+  const bound = Math.min(fontScale, c8);
   const obj = MobileVisualRefreshExperiment;
   const refreshToken = obj.resolveRefreshToken(nativeDefault.modules.mobile.MESSAGES_HEADER_PADDING_BOTTOM);
   const obj2 = useScaledTextLineHeight;

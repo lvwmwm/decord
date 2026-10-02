@@ -1,8 +1,8 @@
-// Module ID: 570
-// Function ID: 571
+// Module ID: 582
+// Function ID: 583
 // Dependencies: [2]
 
-// Module 570
+// Module 582
 import size from "module_2" /* 2 */;
 
 let nowResult;

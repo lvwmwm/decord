@@ -1,12 +1,12 @@
-// Module ID: 1350
-// Function ID: 1351
+// Module ID: 562
+// Function ID: 563
 // Name: shim
-// Dependencies: [1351, 2, 1354]
+// Dependencies: [563, 2, 566]
 // Exports: consumeLogs, getExperimentCacher, getHttpClientAPI, isBlockedDomain, isUnsupportedBrowser, startFetchingBlockedDomains
 
-// Module 1350 (shim)
-import ExperimentCacher from "ExperimentCacher" /* 1351 */;
-import initLibdiscore from "initLibdiscore" /* 1354 */;
+// Module 562 (shim)
+import ExperimentCacher from "ExperimentCacher" /* 563 */;
+import initLibdiscore from "initLibdiscore" /* 566 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("../discord_common/js/packages/libdiscore/js_shim/js/shim.native.tsx");

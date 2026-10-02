@@ -1,11 +1,11 @@
-// Module ID: 13623
-// Function ID: 13624
+// Module ID: 13625
+// Function ID: 13626
 // Name: NormalTelemetry
-// Dependencies: [1987, 1988, 2]
+// Dependencies: [1993, 1994, 2]
 
-// Module 13623 (NormalTelemetry)
-import TelemetryRingNative2 from "TelemetryRingNative" /* 1988 */;
-import BaseTelemetryChannel from "BaseTelemetryChannel" /* 1987 */;
+// Module 13625 (NormalTelemetry)
+import TelemetryRingNative2 from "TelemetryRingNative" /* 1994 */;
+import BaseTelemetryChannel from "BaseTelemetryChannel" /* 1993 */;
 import size from "module_2" /* 2 */;
 
 const TelemetryRingNative = TelemetryRingNative2;

@@ -1,10 +1,10 @@
-// Module ID: 15033
-// Function ID: 15034
+// Module ID: 15021
+// Function ID: 15022
 // Name: ContextualOptInNudgeHoldoutExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1441, 2]
 
-// Module 15033 (ContextualOptInNudgeHoldoutExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 15021 (ContextualOptInNudgeHoldoutExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-06-contextual-opt-in-nudge-holdout", kind: "user", defaultConfig: { inHoldout: false }, variations: { 0: { inHoldout: false }, 1: { inHoldout: true } } };

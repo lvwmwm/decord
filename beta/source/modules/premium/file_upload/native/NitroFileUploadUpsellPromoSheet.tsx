@@ -1,22 +1,24 @@
-// Module ID: 16776
-// Function ID: 16777
+// Module ID: 16778
+// Function ID: 16779
 // Name: NitroFileUploadUpsellPromoSheet
-// Dependencies: [19, 17, 1074, 2042, 21, 4836, 576, 5298, 6800, 9422, 9691, 16774, 1115, 2587, 5281, 2]
-// Exports: default
+// Dependencies: [19, 17, 1086, 2048, 21, 4837, 588, 558, 576, 5297, 6801, 9418, 16776, 1127, 2590, 5282, 9816, 2]
 
-// Module 16776 (NitroFileUploadUpsellPromoSheet)
+// Module 16778 (NitroFileUploadUpsellPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import openUserSettings from "openUserSettings" /* 6800 */;
+import nativeDefault from "native" /* 588 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import _modDef2590 from "module_2590" /* 2590 */;
+import openUserSettings from "openUserSettings" /* 6801 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9418 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 1074 */;
-import createStyles from "createStyles" /* 4836 */;
+import Constants from "Constants" /* 1086 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault;
+let dependencyMap, importDefault, markAsDismissed;
 
 let hasOwnProperty;
 let metroRequire;
@@ -29,9 +31,213 @@ const jsx = Fragment.jsx;
 let obj = { illustration: obj2 };
 obj2 = { paddingTop: nativeDefault.space.PX_12 };
 let closure_9 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/premium/file_upload/native/NitroFileUploadUpsellPromoSheet.tsx");
-
-export default function NitroFileUploadUpsellPromoSheet(markAsDismissed) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+  let closure_2;
+  let loading;
+  let onPress;
+  let ref;
+  let ref2;
+  let tmp13;
+  let tmp18;
+  let tmp19;
+  let tmp22;
+  let tmp5;
+  let tmp6;
+  const tmp = markAsDismissed;
+  let obj = markAsDismissed(576);
+  const cResult = obj.c(23);
+  markAsDismissed = markAsDismissed.markAsDismissed;
+  const tmp4 = closure_9();
+  let obj2 = react;
+  importDefault = react.useRef(false);
+  if (cResult[0] !== markAsDismissed) {
+    const fn = function _(arg0) {
+      if (!ref.current) {
+        tmp.current = true;
+        markAsDismissed(arg0);
+      }
+    };
+    cResult[0] = markAsDismissed;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  dependencyMap = tmp5;
+  react = obj2.useRef(ContentDismissActionType.AUTO_DISMISS);
+  if (cResult[2] !== tmp5) {
+    class A {
+      constructor() {
+        closure_2(ref2.current);
+      }
+    }
+    cResult[2] = tmp5;
+    cResult[3] = A;
+    tmp6 = A;
+  } else {
+    class A {
+      constructor() {
+        closure_2(ref2.current);
+      }
+    }
+  }
+  const tmpResult = tmp(5297);
+  const unmountEffect = tmpResult.useUnmountEffect(tmp6);
+  if (cResult[4] !== tmp5) {
+    class P {
+      constructor() {
+        closure_2(ContentDismissActionType.TAKE_ACTION);
+        const obj = openUserSettings;
+        const obj2 = { screen: metroRequire.PREMIUM };
+        obj.openUserSettings(obj2);
+      }
+    }
+    cResult[4] = tmp5;
+    cResult[5] = P;
+  } else {
+    class P {
+      constructor() {
+        closure_2(ContentDismissActionType.TAKE_ACTION);
+        const obj = openUserSettings;
+        const obj2 = { screen: metroRequire.PREMIUM };
+        obj.openUserSettings(obj2);
+      }
+    }
+  }
+  ({ loading, onPress } = usePremiumFeatureUpsellGetNitroDefault(false, tmp8, constants.PREMIUM_UPSELL_FILE_UPLOAD));
+  usePremiumFeatureUpsellGetNitroDefault(false, tmp8, constants.PREMIUM_UPSELL_FILE_UPLOAD);
+  if (cResult[6] !== onPress) {
+    class M {
+      constructor() {
+        ref2.current = ContentDismissActionType.TAKE_ACTION;
+        onPress();
+      }
+    }
+    cResult[6] = onPress;
+    cResult[7] = M;
+  } else {
+    class M {
+      constructor() {
+        ref2.current = ContentDismissActionType.TAKE_ACTION;
+        onPress();
+      }
+    }
+  }
+  if (cResult[8] !== tmp5) {
+    class D {
+      constructor() {
+        closure_2(ContentDismissActionType.USER_DISMISS);
+      }
+    }
+    cResult[8] = tmp5;
+    cResult[9] = D;
+  } else {
+    class D {
+      constructor() {
+        closure_2(ContentDismissActionType.USER_DISMISS);
+      }
+    }
+  }
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor() {
+        closure_2(ContentDismissActionType.USER_DISMISS);
+      }
+    }
+    const tmp14 = jsx(tmp(16776).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
+    cResult[10] = tmp14;
+    tmp13 = tmp14;
+  } else {
+    class D {
+      constructor() {
+        closure_2(ContentDismissActionType.USER_DISMISS);
+      }
+    }
+  }
+  if (cResult[11] !== tmp4.illustration) {
+    class D {
+      constructor() {
+        closure_2(ContentDismissActionType.USER_DISMISS);
+      }
+    }
+    const tmp17 = <onPress style={tmp4.illustration}>{tmp13}</onPress>;
+    cResult[11] = tmp4.illustration;
+    cResult[12] = tmp17;
+  } else {
+    class D {
+      constructor() {
+        closure_2(ContentDismissActionType.USER_DISMISS);
+      }
+    }
+  }
+  if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor() {
+        closure_2(ContentDismissActionType.USER_DISMISS);
+      }
+    }
+    const stringResult = obj5.string(_modDef2590["Uty2/X"]);
+    const intl = tmp(1127).intl;
+    const stringResult1 = intl.string(_modDef2590.VAgI8Q);
+    cResult[13] = stringResult;
+    cResult[14] = stringResult1;
+    tmp19 = stringResult1;
+    tmp18 = stringResult;
+  } else {
+    class D {
+      constructor() {
+        closure_2(ContentDismissActionType.USER_DISMISS);
+      }
+    }
+    tmp19 = cResult[14];
+  }
+  if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor() {
+        closure_2(ContentDismissActionType.USER_DISMISS);
+      }
+    }
+    const stringResult2 = obj6.string(_modDef2590.mRy6sO);
+    cResult[15] = stringResult2;
+    tmp22 = stringResult2;
+  } else {
+    class D {
+      constructor() {
+        closure_2(ContentDismissActionType.USER_DISMISS);
+      }
+    }
+  }
+  if (!loading) {
+    class D {
+      constructor() {
+        closure_2(ContentDismissActionType.USER_DISMISS);
+      }
+    }
+  }
+  if (cResult[16] === loading) {
+    class D {
+      constructor() {
+        closure_2(ContentDismissActionType.USER_DISMISS);
+      }
+    }
+    if (cResult[19] === tmp12) {
+      class D {
+        constructor() {
+          closure_2(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+    }
+    cResult[19] = tmp12;
+    cResult[20] = tmp25;
+    cResult[21] = tmp15;
+    cResult[22] = jsx(tmp(9816).PromoSheet, { illustration: tmp15, title: tmp18, description: tmp19, onDismiss: tmp12, actions: tmp25 });
+    const tmp29 = jsx(tmp(9816).PromoSheet, { illustration: tmp15, title: tmp18, description: tmp19, onDismiss: tmp12, actions: tmp25 });
+  }
+  cResult[16] = loading;
+  cResult[17] = null;
+  cResult[18] = jsx(tmp(5282).Button, { grow: true, size: "lg", variant: "primary", loading, text: tmp22, onPress: null });
+  const tmp26 = jsx(tmp(5282).Button, { grow: true, size: "lg", variant: "primary", loading, text: tmp22, onPress: null });
+}) : ((markAsDismissed) => {
   let intl3;
   let loading;
   let onPress;
@@ -51,7 +257,7 @@ export default function NitroFileUploadUpsellPromoSheet(markAsDismissed) {
     }
   }, items);
   react = react.useRef(ContentDismissActionType.AUTO_DISMISS);
-  let obj = markAsDismissed(callback[7]);
+  let obj = markAsDismissed(callback[9]);
   const unmountEffect = obj.useUnmountEffect(() => {
     callback(ref2.current);
   });
@@ -73,15 +279,18 @@ export default function NitroFileUploadUpsellPromoSheet(markAsDismissed) {
   const callback3 = react.useCallback(() => {
     callback(ContentDismissActionType.USER_DISMISS);
   }, items3);
-  const PromoSheet = markAsDismissed(callback[10]).PromoSheet;
-  const intl = markAsDismissed(callback[12]).intl;
-  const intl2 = markAsDismissed(callback[12]).intl;
-  ({ grow: true, size: "lg", variant: "primary", loading, text: intl3.string(require("module_2587").mRy6sO), onPress: tmp9 });
-  const Button = markAsDismissed(callback[14]).Button;
-  intl3 = markAsDismissed(callback[12]).intl;
+  const PromoSheet = markAsDismissed(callback[16]).PromoSheet;
+  const intl = markAsDismissed(callback[13]).intl;
+  const intl2 = markAsDismissed(callback[13]).intl;
+  ({ grow: true, size: "lg", variant: "primary", loading, text: intl3.string(require("module_2590").mRy6sO), onPress: tmp9 });
+  const Button = markAsDismissed(callback[15]).Button;
+  intl3 = markAsDismissed(callback[13]).intl;
   tmp9 = null;
   if (!loading) {
     tmp9 = callback2;
   }
-  return <PromoSheet illustration={null} title={intl.string(require("module_2587")["Uty2/X"])} description={intl2.string(require("module_2587").VAgI8Q)} onDismiss={callback3} actions={null} />;
-};
+  return <PromoSheet illustration={null} title={intl.string(require("module_2590")["Uty2/X"])} description={intl2.string(require("module_2590").VAgI8Q)} onDismiss={callback3} actions={null} />;
+});
+const result = size.fileFinishedImporting("modules/premium/file_upload/native/NitroFileUploadUpsellPromoSheet.tsx");
+
+export default tmp3;

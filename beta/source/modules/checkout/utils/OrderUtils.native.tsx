@@ -1,11 +1,11 @@
-// Module ID: 10272
-// Function ID: 10273
+// Module ID: 10310
+// Function ID: 10311
 // Name: OrderUtils
-// Dependencies: [5, 4815, 6849, 2]
+// Dependencies: [5, 4816, 6850, 2]
 // Exports: discardDraftOrder
 
-// Module 10272 (OrderUtils)
-import PaymentConstants from "PaymentConstants" /* 4815 */;
+// Module 10310 (OrderUtils)
+import PaymentConstants from "PaymentConstants" /* 4816 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -60,9 +60,9 @@ let obj = function _discardDraftOrder() {
     } else {
       c4 = 0;
     }
-    await "HermesInternal";
+    await "IconComponent";
     ({ checkoutSucceeded: c0, order: c1 } = closure_0);
-    return "flex";
+    return "Reflect";
   });
   return obj(...arguments);
 };

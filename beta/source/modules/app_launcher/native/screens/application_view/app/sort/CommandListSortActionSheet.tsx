@@ -1,30 +1,91 @@
-// Module ID: 11632
-// Function ID: 11633
+// Module ID: 11518
+// Function ID: 11519
 // Name: CommandListSortActionSheet
-// Dependencies: [19, 11617, 21, 1115, 6571, 6570, 11633, 576, 5997, 6000, 2]
-// Exports: default
+// Dependencies: [19, 11503, 21, 1127, 558, 576, 6571, 11519, 588, 5994, 6572, 5995, 2]
 
-// Module 11632 (CommandListSortActionSheet)
+// Module 11518 (CommandListSortActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import intl4 from "intl" /* 1115 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 5997 */;
-import TableRadioRow from "TableRadioRow" /* 6000 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6570 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
-import AppLauncherConstants from "AppLauncherConstants" /* 11617 */;
-import ArrowsUpDownIcon2 from "ArrowsUpDownIcon" /* 11633 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import TableRadioRow from "TableRadioRow" /* 5994 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 5995 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6571 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import AppLauncherConstants from "AppLauncherConstants" /* 11503 */;
+import ArrowsUpDownIcon2 from "ArrowsUpDownIcon" /* 11519 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet;
+let BottomSheet, onClose;
 
 const CommandListSortOrder = AppLauncherConstants.CommandListSortOrder;
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/sort/CommandListSortActionSheet.tsx");
-
-export default function CommandListSortActionSheet(sortOrder) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+  let intl2;
+  let intl3;
+  let onSortOptionPress;
+  let sortOrder;
+  const obj = onClose(576);
+  const cResult = obj.c(8);
+  onClose = onClose.onClose;
+  ({ sortOrder, onSortOptionPress } = onClose);
+  if (cResult[0] === onClose) {
+    let tmp4;
+    let tmp6;
+    if (cResult[1] === onSortOptionPress) {
+      tmp4 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const BottomSheetTitleHeader = tmp(6571).BottomSheetTitleHeader;
+      ({ size: "sm", color: onSortOptionPress(588).colors.TEXT_DEFAULT });
+      const ArrowsUpDownIcon = tmp(11519).ArrowsUpDownIcon;
+      const intl = tmp(1127).intl;
+      const tmp9 = <BottomSheetTitleHeader leading={null} title={intl.string(onClose(1127).t.yeYaHf)} />;
+      cResult[3] = tmp9;
+      tmp6 = tmp9;
+    } else {
+      tmp6 = cResult[3];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj4 = { label: intl2.string(onClose(1127).t.SzxiqK), value: CommandListSortOrder.POPULAR };
+      intl2 = tmp(1127).intl;
+      const items = [obj4, ];
+      const obj5 = { label: intl3.string(onClose(1127).t.m8xsti), value: CommandListSortOrder.ALPHABETICAL };
+      intl3 = tmp(1127).intl;
+      items[1] = obj5;
+      const mapped = items.map((label) => {
+        const value = label.value;
+        return jsx(onClose(dependencyMap[9]).TableRadioRow, { label: label.label, value }, value);
+      });
+      cResult[4] = mapped;
+    }
+    if (cResult[5] === tmp4) {
+      let tmp13;
+      if (cResult[6] === sortOrder) {
+        tmp13 = cResult[7];
+      }
+      return tmp13;
+    }
+    BottomSheet = tmp(6572).BottomSheet;
+    const tmp15 = <BottomSheet startExpanded header={tmp6}>{null}</BottomSheet>;
+    cResult[5] = tmp4;
+    cResult[6] = sortOrder;
+    cResult[7] = tmp15;
+    tmp13 = tmp15;
+  }
+  const fn = function n(dependencyMap) {
+    onSortOptionPress(dependencyMap);
+    onClose();
+  };
+  cResult[0] = onClose;
+  cResult[1] = onSortOptionPress;
+  cResult[2] = fn;
+  tmp4 = fn;
+}) : ((sortOrder) => {
   let intl;
   let intl2;
   let intl3;
@@ -57,4 +118,7 @@ export default function CommandListSortActionSheet(sortOrder) {
   intl3 = intl4.intl;
   items[1] = obj6;
   return <BottomSheet startExpanded header={null}>{null}</BottomSheet>;
-};
+});
+const result = size.fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/sort/CommandListSortActionSheet.tsx");
+
+export default tmp3;

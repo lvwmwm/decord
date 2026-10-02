@@ -1,28 +1,88 @@
-// Module ID: 9494
-// Function ID: 9495
+// Module ID: 9490
+// Function ID: 9491
 // Name: ChannelCallHeaderButtons
-// Dependencies: [19, 1993, 21, 504, 9381, 1115, 9495, 9104, 8831, 8832, 9496, 5037, 2]
-// Exports: CameraButton, GridButton
+// Dependencies: [19, 1999, 21, 558, 576, 504, 9081, 9359, 1127, 9491, 8826, 8827, 9492, 5038, 2]
 
-// Module 9494 (ChannelCallHeaderButtons)
+// Module 9490 (ChannelCallHeaderButtons)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import intl2 from "intl" /* 1115 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 8831 */;
-import useSelectedParticipantDefault from "useSelectedParticipant" /* 8832 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 9381 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9495 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9496 */;
+import intl2 from "intl" /* 1127 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5038 */;
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 8826 */;
+import useSelectedParticipantDefault from "useSelectedParticipant" /* 8827 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9081 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 9359 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9491 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9492 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelCallHeaderButtons.tsx");
+let channel;
 
-export const CameraButton = function CameraButton() {
+const jsx = Fragment.jsx;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let isVideoEnabled;
+  let tmp4;
+  let tmp5;
+  let videoDeviceId;
+  let obj = videoDeviceId(576);
+  const cResult = obj.c(8);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MediaEngineStore];
+    const fn = function l() {
+      const obj = { isVideoEnabled: MediaEngineStore.isVideoEnabled(), videoDeviceId: MediaEngineStore.getVideoDeviceId(), videoDevices: MediaEngineStore.getVideoDevices() };
+      return obj;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = videoDeviceId(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp4, tmp5);
+  ({ isVideoEnabled, videoDeviceId } = stateFromStoresObject);
+  const videoDevices = stateFromStoresObject.videoDevices;
+  if (cResult[2] === videoDeviceId) {
+    let tmp8;
+    if (cResult[3] === videoDevices) {
+      tmp8 = cResult[4];
+    }
+    if (cResult[5] === tmp8) {
+      let tmp9;
+      if (cResult[6] === isVideoEnabled) {
+        tmp9 = cResult[7];
+      }
+      return tmp9;
+    }
+    let tmp10 = null;
+    if (isVideoEnabled) {
+      videoDevices(9359);
+      const intl = tmp(1127).intl;
+      tmp10 = <tmp13 accessibilityLabel={intl.string(videoDeviceId(1127).t["t9eQ/g"])} source={videoDevices(9491)} onPress={tmp8} disableBackground />;
+    }
+    cResult[5] = tmp8;
+    cResult[6] = isVideoEnabled;
+    cResult[7] = tmp10;
+    tmp9 = tmp10;
+  }
+  const fn2 = function o() {
+    const keys = Object.keys(videoDevices);
+    const found = keys.find((item) => item !== videoDeviceId);
+    if (null != found) {
+      const obj = AudioActionCreatorsDefault;
+      obj.setVideoDevice(found);
+    }
+  };
+  cResult[2] = videoDeviceId;
+  cResult[3] = videoDevices;
+  cResult[4] = fn2;
+  tmp8 = fn2;
+}) : (() => {
   let obj = get_initialized;
   const items = [MediaEngineStore];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
@@ -33,7 +93,7 @@ export const CameraButton = function CameraButton() {
   let tmp4 = null;
   if (stateFromStoresObject.isVideoEnabled) {
     ChannelCallNavigatorIconDefault;
-    const intl = tmp(1115).intl;
+    const intl = tmp(1127).intl;
     tmp4 = <tmp7 accessibilityLabel={intl.string(intl2.t["t9eQ/g"])} source={AssetRegistryDefault} onPress={function onPress() {
       const keys = Object.keys(importDefault);
       const found = keys.find((item) => item !== closure_1_0);
@@ -44,8 +104,41 @@ export const CameraButton = function CameraButton() {
     }} disableBackground />;
   }
   return tmp4;
-};
-export const GridButton = function GridButton(channel) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let obj = channel(576);
+  const cResult = obj.c(4);
+  channel = channel.channel;
+  const tmp5 = useIsPrivateAudioOnlyCallDefault(channel);
+  const tmp6 = useSelectedParticipantDefault(channel);
+  if (cResult[0] === channel) {
+    if (cResult[1] === tmp5) {
+      let tmp7;
+      if (cResult[2] === tmp6) {
+        tmp7 = cResult[3];
+      }
+      return tmp7;
+    }
+  }
+  let tmp8 = null;
+  if (null != tmp6) {
+    tmp8 = null;
+    if (!tmp5) {
+      ChannelCallNavigatorIconDefault;
+      const intl = tmp(1127).intl;
+      tmp8 = <tmp4Result accessibilityLabel={intl.string(channel(1127).t.HK4JIu)} source={AssetRegistryDefault2} onPress={function onPress() {
+        const obj = ChannelRTCActionCreatorsDefault;
+        return obj.selectParticipant(channel.id, null);
+      }} disableBackground />;
+    }
+  }
+  cResult[0] = channel;
+  cResult[1] = tmp5;
+  cResult[2] = tmp6;
+  cResult[3] = tmp8;
+  tmp7 = tmp8;
+}) : ((channel) => {
   channel = channel.channel;
   let tmp4 = null;
   const tmp3 = useIsPrivateAudioOnlyCallDefault(channel);
@@ -53,12 +146,16 @@ export const GridButton = function GridButton(channel) {
     tmp4 = null;
     if (!tmp3) {
       ChannelCallNavigatorIconDefault;
-      const intl = channel(1115).intl;
-      tmp4 = <tmpResult accessibilityLabel={intl.string(channel(1115).t.HK4JIu)} source={AssetRegistryDefault2} onPress={function onPress() {
+      const intl = channel(1127).intl;
+      tmp4 = <tmpResult accessibilityLabel={intl.string(channel(1127).t.HK4JIu)} source={AssetRegistryDefault2} onPress={function onPress() {
         const obj = ChannelRTCActionCreatorsDefault;
         return obj.selectParticipant(channel.id, null);
       }} disableBackground />;
     }
   }
   return tmp4;
-};
+});
+const result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelCallHeaderButtons.tsx");
+
+export const CameraButton = tmp3;
+export const GridButton = tmp4;

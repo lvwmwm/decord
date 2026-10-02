@@ -1,29 +1,31 @@
-// Module ID: 10105
-// Function ID: 10106
+// Module ID: 10144
+// Function ID: 10145
 // Name: MediaKeyboardBottomSheetActions
-// Dependencies: [19, 17, 21, 4836, 576, 1364, 4652, 672, 1613, 4531, 5293, 5435, 4832, 2]
+// Dependencies: [19, 17, 21, 4837, 588, 1370, 558, 576, 4654, 684, 1619, 4535, 5292, 5436, 4833, 2]
 
-// Module 10105 (MediaKeyboardBottomSheetActions)
-import nativeDefault from "native" /* 576 */;
-import _modDef672 from "module_672" /* 672 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import Pressables from "Pressables" /* 5435 */;
+// Module 10144 (MediaKeyboardBottomSheetActions)
+import nativeDefault from "native" /* 588 */;
+import _modDef684 from "module_684" /* 684 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import LinearGradientDefault from "LinearGradient" /* 5292 */;
+import Pressables from "Pressables" /* 5436 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, importDefault;
+const require = globalThis.__r;
+let dependencyMap, importDefault, obj1, onHeightChange, tmp3, tmp4, variant;
 
 let closure_4;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const Text_Text = tmp2(4832);
+const Text_Text = tmp2(4833);
 let react = react_mod;
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -35,25 +37,189 @@ let closure_8 = createStyles.createStyles((arg0, arg1, arg2) => {
   let PX_24 = arg0;
   const obj = { wrap: obj2, container: obj3, buttonsContainer: { gap: nativeDefault.modules.mobile.MEDIA_KEYBOARD_BAR_GAP, alignItems: "stretch", flexDirection: "row", marginHorizontal: nativeDefault.modules.mobile.MEDIA_KEYBOARD_BAR_BUTTONS_MARGIN_HORIZONTAL }, button: { flexBasis: 64, minHeight: 48, flexGrow: 1, justifyContent: "center", flexDirection: "column", alignItems: "center", padding: nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_PADDING, borderRadius: nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_BORDER_RADIUS, gap: 4 }, gradient: obj7 };
   obj2 = { alignItems: "center", top: undefined };
-  const merged = Object.assign(absoluteFillObject.absoluteFillObject);
+  const merged = Object.assign(variant.absoluteFillObject);
   obj3 = { paddingVertical: nativeDefault.space.PX_8, marginHorizontal: nativeDefault.modules.mobile.MEDIA_KEYBOARD_BAR_MARGIN_HORIZONTAL, marginBottom: PX_24, borderRadius: nativeDefault.modules.mobile.MEDIA_KEYBOARD_BAR_BORDER_RADIUS, backgroundColor: tmp5, paddingHorizontal: nativeDefault.modules.mobile.MEDIA_KEYBOARD_BAR_PADDING_HORIZONTAL, borderWidth: nativeDefault.modules.mobile.MEDIA_KEYBOARD_BAR_BORDER_WIDTH, borderColor: nativeDefault.colors.BORDER_MUTED };
   const obj4 = PlatformUtils;
-  const tmp = absoluteFillObject;
+  const tmp = variant;
   if (obj4.isIOS()) {
-    PX_24 = tmp3(576).space.PX_24;
+    PX_24 = tmp3(588).space.PX_24;
   }
   tmp5 = arg2;
   if (arg2 == null) {
     tmp5 = arg1;
   }
-  const merged1 = Object.assign(tmp3(576).shadows.SHADOW_HIGH);
+  const merged1 = Object.assign(tmp3(588).shadows.SHADOW_HIGH);
   ({ gap: nativeDefault.modules.mobile.MEDIA_KEYBOARD_BAR_GAP, alignItems: "stretch", flexDirection: "row", marginHorizontal: nativeDefault.modules.mobile.MEDIA_KEYBOARD_BAR_BUTTONS_MARGIN_HORIZONTAL });
   obj7 = { color: nativeDefault.colors.BACKGROUND_BASE_LOW };
   ({ flexBasis: 64, minHeight: 48, flexGrow: 1, justifyContent: "center", flexDirection: "column", alignItems: "center", padding: nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_PADDING, borderRadius: nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_BORDER_RADIUS, gap: 4 });
   const merged2 = Object.assign(tmp.absoluteFillObject);
   return obj;
 });
-const memoResult = react.memo(function MediaKeyboardBottomSheetActions(onHeightChange) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onHeightChange) => {
+  let button;
+  let items;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp17;
+  let tmp5;
+  let token;
+  let tmp = onHeightChange;
+  let tmp2 = token;
+  let obj = onHeightChange(token[7]);
+  const cResult = obj.c(38);
+  onHeightChange = onHeightChange.onHeightChange;
+  let obj2 = onHeightChange(token[8]);
+  const gradientValue = obj2.useGradientValue(onHeightChange(token[8]).GradientPercentage.END);
+  if (cResult[0] !== gradientValue) {
+    let hexResult = null;
+    if (null != gradientValue) {
+      const obj3 = require("module_684")(gradientValue);
+      const alphaResult = obj3.alpha(0.95);
+      hexResult = alphaResult.hex();
+    }
+    cResult[0] = gradientValue;
+    cResult[1] = hexResult;
+    tmp5 = hexResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const bottom = require("useSafeAreaInsets")().bottom;
+  const tmpResult = tmp(tmp2[11]);
+  const tmp9 = closure_8(bottom, tmpResult.useToken(require("native").colors.MOBILE_FLOATINGBAR_BACKGROUND_HIGHER), tmp5);
+  importDefault = tmp9;
+  const tmpResult4 = tmp(tmp2[11]);
+  token = tmpResult4.useToken(require("native").modules.mobile.MEDIA_KEYBOARD_BUTTON_ICON_COLOR_ACTIVE);
+  const tmpResult5 = tmp(tmp2[11]);
+  const token1 = tmpResult5.useToken(require("native").modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_COLOR_ACTIVE);
+  const tmpResult6 = tmp(tmp2[11]);
+  const token2 = tmpResult6.useToken(require("native").modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_VARIANT);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const point = { x: 0, y: 0 };
+    const point1 = { x: 0, y: 1 };
+    cResult[2] = point;
+    cResult[3] = point1;
+    tmp14 = point1;
+    tmp13 = point;
+  } else {
+    tmp13 = cResult[2];
+    tmp14 = cResult[3];
+  }
+  if (cResult[4] !== tmp9.gradient.color) {
+    const obj11 = require("module_684")(tmp9.gradient.color);
+    const alphaResult1 = obj11.alpha(0);
+    const hexResult1 = alphaResult1.hex();
+    cResult[4] = tmp9.gradient.color;
+    cResult[5] = hexResult1;
+    tmp15 = hexResult1;
+  } else {
+    tmp15 = cResult[5];
+  }
+  if (cResult[6] !== tmp9.gradient.color) {
+    const obj13 = require("module_684")(tmp9.gradient.color);
+    const alphaResult2 = obj13.alpha(1);
+    const hexResult2 = alphaResult2.hex();
+    cResult[6] = tmp9.gradient.color;
+    cResult[7] = hexResult2;
+    tmp17 = hexResult2;
+  } else {
+    tmp17 = cResult[7];
+  }
+  if (cResult[8] === tmp15) {
+    let tmp19;
+    if (cResult[9] === tmp17) {
+      tmp19 = cResult[10];
+    }
+    if (cResult[11] !== onHeightChange) {
+      class N {
+        constructor(arg0) {
+          tmp = onHeightChange(onHeightChange.nativeEvent.layout.height);
+          return;
+        }
+      }
+      cResult[11] = onHeightChange;
+      cResult[12] = N;
+    } else {
+      class N {
+        constructor(arg0) {
+          tmp = onHeightChange(onHeightChange.nativeEvent.layout.height);
+          return;
+        }
+      }
+    }
+    if (cResult[13] === tmp19) {
+      class N {
+        constructor(arg0) {
+          tmp = onHeightChange(onHeightChange.nativeEvent.layout.height);
+          return;
+        }
+      }
+      if (cResult[16] === token2) {
+        class N {
+          constructor(arg0) {
+            tmp = onHeightChange(onHeightChange.nativeEvent.layout.height);
+            return;
+          }
+        }
+      }
+      if (cResult[22] === token2) {
+        class N {
+          constructor(arg0) {
+            tmp = onHeightChange(onHeightChange.nativeEvent.layout.height);
+            return;
+          }
+        }
+      }
+      class L {
+        constructor(arg0, arg1) {
+          tmp = jsxs;
+          tmp2 = closure_0;
+          tmp3 = closure_2;
+          obj = { accessibilityRole: "button", accessibilityLabel: onHeightChange.text, accessibilityState: { disabled: onHeightChange.disabled }, disabled: onHeightChange.disabled, style: closure_1.button, onPress: onHeightChange.onPress, children: null };
+          tmp4 = jsx;
+          str = "text-muted";
+          str2 = "text-muted";
+          PressableOpacity = closure_0(closure_2[13]).PressableOpacity;
+          IconComponent = onHeightChange.IconComponent;
+          if (!onHeightChange.disabled) {
+            str2 = closure_2;
+          }
+          items = [, ];
+          items[0] = tmp4(IconComponent, { size: "md", color: str2 });
+          obj1 = { lineClamp: 1, variant: closure_4, color: null, children: null };
+          Text = tmp2(tmp3[14]).Text;
+          if (!onHeightChange.disabled) {
+            str = closure_3;
+          }
+          obj1.color = str;
+          obj1.children = onHeightChange.text;
+          items[1] = tmp4(Text, obj1);
+          obj.children = items;
+          return tmp(PressableOpacity, obj, arg1);
+        }
+      }
+      cResult[22] = token2;
+      cResult[23] = token;
+      cResult[24] = tmp9.button;
+      cResult[25] = token1;
+      cResult[26] = L;
+    }
+    const obj4 = { style: tmp9.gradient, pointerEvents: "none" };
+    const tmp8Result = require("LinearGradient");
+    const merged = Object.assign(tmp19);
+    let str = "none";
+    cResult[13] = tmp19;
+    cResult[14] = tmp9.gradient;
+    cResult[15] = closure_6(tmp8Result, obj4);
+    const tmp26 = closure_6(tmp8Result, obj4);
+  }
+  const obj5 = { start: tmp13, end: tmp14, colors: items };
+  items = [tmp15, tmp17];
+  cResult[8] = tmp15;
+  cResult[9] = tmp17;
+  cResult[10] = obj5;
+  tmp19 = obj5;
+}) : ((onHeightChange) => {
   let closure_1;
   let closure_2;
   let closure_3;
@@ -64,36 +230,36 @@ const memoResult = react.memo(function MediaKeyboardBottomSheetActions(onHeightC
   importDefault = undefined;
   dependencyMap = undefined;
   react = undefined;
-  let variant;
+  variant = undefined;
   let tmp = onHeightChange;
   let tmp2 = dependencyMap;
-  let obj = onHeightChange(4652);
-  const gradientValue = obj.useGradientValue(onHeightChange(4652).GradientPercentage.END);
+  let obj = onHeightChange(4654);
+  const gradientValue = obj.useGradientValue(onHeightChange(4654).GradientPercentage.END);
   let hexResult = null;
   if (null != gradientValue) {
-    let obj2 = _modDef672(gradientValue);
+    let obj2 = _modDef684(gradientValue);
     let alphaResult = obj2.alpha(0.95);
     hexResult = alphaResult.hex();
   }
   const bottom = useSafeAreaInsetsDefault().bottom;
-  const tmpResult = tmp(4531);
+  const tmpResult = tmp(4535);
   const tmp6 = closure_8(bottom, tmpResult.useToken(nativeDefault.colors.MOBILE_FLOATINGBAR_BACKGROUND_HIGHER), hexResult);
   importDefault = tmp6;
-  const tmpResult4 = tmp(4531);
+  const tmpResult4 = tmp(4535);
   dependencyMap = tmpResult4.useToken(nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_ICON_COLOR_ACTIVE);
-  const tmpResult5 = tmp(4531);
+  const tmpResult5 = tmp(4535);
   react = tmpResult5.useToken(nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_COLOR_ACTIVE);
-  const tmpResult6 = tmp(4531);
+  const tmpResult6 = tmp(4535);
   variant = tmpResult6.useToken(nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_VARIANT);
   let items = [tmp6.gradient.color];
   const memo = react.useMemo(() => {
     let items;
     const obj = { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items };
     items = [, ];
-    const obj2 = _modDef672(closure_1.gradient.color);
+    const obj2 = _modDef684(closure_1.gradient.color);
     const alphaResult = obj2.alpha(0);
     items[0] = alphaResult.hex();
-    const obj4 = _modDef672(closure_1.gradient.color);
+    const obj4 = _modDef684(closure_1.gradient.color);
     const alphaResult1 = obj4.alpha(1);
     items[1] = alphaResult1.hex();
     return obj;
@@ -137,7 +303,7 @@ const memoResult = react.memo(function MediaKeyboardBottomSheetActions(onHeightC
   };
   items2[1] = closure_6(closure_5, obj5);
   return closure_7(closure_5, obj3);
-});
+}));
 const result = size.fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardBottomSheetActions.tsx");
 
 export default memoResult;

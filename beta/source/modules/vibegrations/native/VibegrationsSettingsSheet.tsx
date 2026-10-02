@@ -1,87 +1,253 @@
-// Module ID: 16260
-// Function ID: 16261
+// Module ID: 16262
+// Function ID: 16263
 // Name: VibegrationsSettingsSheet
-// Dependencies: [5, 32, 19, 17, 12642, 8495, 21, 3715, 4836, 576, 6402, 504, 16261, 16263, 4800, 6618, 1115, 6570, 16264, 4832, 5889, 5281, 9083, 12111, 9084, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17, 12644, 8492, 21, 3718, 4837, 588, 558, 576, 6399, 504, 16263, 16265, 4801, 1127, 6571, 16266, 4833, 5890, 5282, 6624, 9060, 12021, 9061, 2]
 
-// Module 16260 (VibegrationsSettingsSheet)
+// Module 16262 (VibegrationsSettingsSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import _modDef3715 from "module_3715" /* 3715 */;
-import VibegrationsProjectStore2 from "VibegrationsProjectStore" /* 8495 */;
+import nativeDefault from "native" /* 588 */;
+import _modDef3718 from "module_3718" /* 3718 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6399 */;
+import VibegrationsProjectStore2 from "VibegrationsProjectStore" /* 8492 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12642 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12644 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const VibegrationsProjectStore = VibegrationsProjectStore2;
-let c3, closure_2, closure_3, dependencyMap;
+let c3, closure_2, closure_3, dependencyMap, importDefault, projectId, tabs;
 
 let c10;
+let tmp5;
 let unpackModuleId;
-function SettingsTabStrip(tabs) {
-  let _undefined;
-  let c2;
-  let tmp2;
-  let tmp9Result;
-  tabs = tabs.tabs;
-  const onSelect = tabs.onSelect;
-  dependencyMap = undefined;
-  const selected = tabs.selected;
-  [tmp2, c2] = _slicedToArray(react.useState(0), 2);
-  const items = [tabs];
-  const tmp = _slicedToArray(react.useState(0), 2);
-  const callback = react.useCallback((nativeEvent) => {
-    _undefined(nativeEvent.nativeEvent.layout.width);
-  }, []);
-  const memo = react.useMemo(() => tabs.map((id) => {
-    let intl;
-    obj = { id, label: intl.string(closure_1_13[id]), page: null };
-    intl = tabs(_undefined[16]).intl;
-    return obj;
-  }), items);
-  const tmp7 = tabs(9083);
-  obj = {
-    items: memo,
-    pageWidth: tmp2,
-    defaultIndex: Math.max(0, tabs.indexOf(selected)),
-    onSetActiveIndex(arg0) {
-      if (null != tabs[arg0]) {
-        onSelect(tabs[arg0]);
-      }
-    }
-  };
-  const useSegmentedControlState = tmp7.useSegmentedControlState;
-  const segmentedControlState = useSegmentedControlState(obj);
-  const obj2 = { onLayout: callback, children: tmp9Result };
-  const tmp10 = View;
-  if (tabs.length > 3) {
-    const obj3 = { state: segmentedControlState };
-    tmp9Result = tmp9(tmp5(12111).Tabs, obj3);
-  } else {
-    const obj4 = { state: segmentedControlState };
-    tmp9Result = tmp9(tmp5(9084).SegmentedControl, obj4);
-  }
-  return closure_10(tmp10, obj2);
-}
+const useVibegrationsProjectSettingsFormDefault = tmp5(16263);
 let _asyncToGenerator = _asyncToGenerator_mod;
 let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
 let isProjectOwner = VibegrationsProjectStore2.isProjectOwner;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-const VibegrationsSettingsSheet_str = "VibegrationsSettingsSheet";
-let obj = { project: _modDef3715.wo1EUp, app: _modDef3715["8drwHu"], secrets: _modDef3715.iD7xfZ, model: _modDef3715.aMTBSX };
+const VibegrationsSettingsSheet = "VibegrationsSettingsSheet";
+let obj = { project: _modDef3718.wo1EUp, app: _modDef3718["8drwHu"], secrets: _modDef3718.iD7xfZ, model: _modDef3718.aMTBSX };
 let closure_14 = createStyles.createStyles((paddingBottom) => {
   obj = { container: { gap: nativeDefault.space.PX_16, paddingBottom } };
   ({ gap: nativeDefault.space.PX_16, paddingBottom });
   return obj;
 });
-const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsSettingsSheet.tsx");
-
-export default function VibegrationsSettingsSheet(projectId) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+  let closure_1;
+  let first;
+  let initialTab;
+  let isPreview;
+  let note;
+  let notifyAgent;
+  let scopeKeys;
+  let tmp10;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp7;
+  let tmp9;
+  obj = projectId(576);
+  const cResult = obj.c(74);
+  projectId = projectId.projectId;
+  ({ initialTab, scopeKeys, note, notifyAgent, isPreview } = projectId);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { includeKeyboardHeight: true };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  closure_14(useSafeAreaInsetsKeyboardAwareDefault(first).insets.bottom);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [VibegrationsProjectStore];
+    cResult[1] = items;
+    tmp7 = items;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (cResult[2] !== projectId) {
+    class E {
+      constructor() {
+        return closure_8.getProject(projectId);
+      }
+    }
+    const items1 = [projectId];
+    cResult[2] = projectId;
+    cResult[3] = E;
+    cResult[4] = items1;
+    tmp10 = items1;
+    tmp9 = E;
+  } else {
+    class E {
+      constructor() {
+        return closure_8.getProject(projectId);
+      }
+    }
+    tmp10 = cResult[4];
+  }
+  const tmpResult = projectId(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp9, tmp10);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        return closure_8.getProject(projectId);
+      }
+    }
+    const items2 = [VibegrationsConnectionStore];
+    cResult[5] = items2;
+    tmp12 = items2;
+  } else {
+    class E {
+      constructor() {
+        return closure_8.getProject(projectId);
+      }
+    }
+  }
+  if (cResult[6] !== projectId) {
+    class K {
+      constructor() {
+        modelSettings = closure_7.getModelSettings(projectId);
+        tierSettings = undefined;
+        if (modelSettings != null) {
+          tierSettings = modelSettings.tierSettings;
+        }
+        return null != tierSettings;
+      }
+    }
+    const items3 = [projectId];
+    cResult[6] = projectId;
+    cResult[7] = K;
+    cResult[8] = items3;
+    tmp14 = items3;
+    tmp13 = K;
+  } else {
+    class K {
+      constructor() {
+        modelSettings = closure_7.getModelSettings(projectId);
+        tierSettings = undefined;
+        if (modelSettings != null) {
+          tierSettings = modelSettings.tierSettings;
+        }
+        return null != tierSettings;
+      }
+    }
+    tmp14 = cResult[8];
+  }
+  const tmpResult3 = projectId(504);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp12, tmp13, tmp14);
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class K {
+      constructor() {
+        modelSettings = closure_7.getModelSettings(projectId);
+        tierSettings = undefined;
+        if (modelSettings != null) {
+          tierSettings = modelSettings.tierSettings;
+        }
+        return null != tierSettings;
+      }
+    }
+    const items4 = [VibegrationsConnectionStore];
+    cResult[9] = items4;
+    tmp16 = items4;
+  } else {
+    class K {
+      constructor() {
+        modelSettings = closure_7.getModelSettings(projectId);
+        tierSettings = undefined;
+        if (modelSettings != null) {
+          tierSettings = modelSettings.tierSettings;
+        }
+        return null != tierSettings;
+      }
+    }
+  }
+  if (cResult[10] !== projectId) {
+    class O {
+      constructor() {
+        return "open" === closure_7.getConnState(projectId);
+      }
+    }
+    const items5 = [projectId];
+    cResult[10] = projectId;
+    cResult[11] = items5;
+    cResult[12] = O;
+    tmp18 = O;
+    tmp17 = items5;
+  } else {
+    class O {
+      constructor() {
+        return "open" === closure_7.getConnState(projectId);
+      }
+    }
+    tmp18 = cResult[12];
+  }
+  const tmpResult4 = projectId(504);
+  const stateFromStores2 = tmpResult4.useStateFromStores(tmp16, tmp18, tmp17);
+  if (cResult[13] !== stateFromStores) {
+    class O {
+      constructor() {
+        return "open" === closure_7.getConnState(projectId);
+      }
+    }
+    let tmp21 = null != stateFromStores;
+    if (tmp21) {
+      class O {
+        constructor() {
+          return "open" === closure_7.getConnState(projectId);
+        }
+      }
+      tmp21 = isProjectOwner(stateFromStores);
+    }
+    cResult[13] = stateFromStores;
+    cResult[14] = tmp21;
+  } else {
+    class O {
+      constructor() {
+        return "open" === closure_7.getConnState(projectId);
+      }
+    }
+  }
+  const tmp5Result = useVibegrationsProjectSettingsFormDefault;
+  if (stateFromStores != null) {
+    class O {
+      constructor() {
+        return "open" === closure_7.getConnState(projectId);
+      }
+    }
+  }
+  if (undefined == null) {
+    class O {
+      constructor() {
+        return "open" === closure_7.getConnState(projectId);
+      }
+    }
+  }
+  importDefault = tmp5Result(projectId, undefined);
+  tmp5Result(projectId, undefined);
+  if (cResult[15] === isPreview) {
+    class O {
+      constructor() {
+        return "open" === closure_7.getConnState(projectId);
+      }
+    }
+  }
+  const obj3 = { projectId, scopeKeys, note, notifyAgent, isPreview };
+  cResult[15] = isPreview;
+  cResult[16] = note;
+  cResult[17] = notifyAgent;
+  cResult[18] = projectId;
+  cResult[19] = scopeKeys;
+  cResult[20] = obj3;
+}) : ((projectId) => {
   let BottomSheetTitleHeader;
   let Tuz9vw;
   let closure_4;
@@ -117,7 +283,7 @@ export default function VibegrationsSettingsSheet(projectId) {
   const tmp2 = dependencyMap;
   ({ guildId, initialTab, scopeKeys, note, notifyAgent, isPreview } = projectId);
   const tmp4 = projectId;
-  let tmp3 = closure_14(stateFromStores1(6402)({ includeKeyboardHeight: true }).insets.bottom);
+  let tmp3 = closure_14(stateFromStores1(6399)({ includeKeyboardHeight: true }).insets.bottom);
   obj = projectId(504);
   let items = [memo];
   const items1 = [projectId];
@@ -143,7 +309,7 @@ export default function VibegrationsSettingsSheet(projectId) {
   }
   dependencyMap = tmp8;
   let guild_id;
-  const tmpResult = tmp(16261);
+  const tmpResult = tmp(16263);
   if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
@@ -152,7 +318,7 @@ export default function VibegrationsSettingsSheet(projectId) {
   }
   const tmpResultResult = tmpResult(projectId, guild_id);
   _asyncToGenerator = tmpResultResult;
-  const tmp13 = tmp(16263)({ projectId, scopeKeys, note, notifyAgent, isPreview });
+  const tmp13 = tmp(16265)({ projectId, scopeKeys, note, notifyAgent, isPreview });
   _slicedToArray = tmp13;
   isScoped = tmp13.isScoped;
   loaded = tmp13.loaded;
@@ -211,7 +377,7 @@ export default function VibegrationsSettingsSheet(projectId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -262,7 +428,7 @@ export default function VibegrationsSettingsSheet(projectId) {
           if (tmp36) {
             const tmp7 = closure_3;
             if (tmp7) {
-              obj = stateFromStores1(c2[14]);
+              obj = stateFromStores1(c2[16]);
               obj.hideActionSheet(closure_1_12);
             }
           }
@@ -280,20 +446,20 @@ export default function VibegrationsSettingsSheet(projectId) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp26) {
         c3 = 3;
         throw tmp26;
       }
     }
   }), items8);
-  let obj5 = { startExpanded: true, dismissAccessibilityLabel: intl.string(tmp(3715).Wzi4Jd), header: tmp22(BottomSheetTitleHeader, obj6), children: tmp24(tmp25, obj7) };
-  const ActionSheet = tmp4(6618).ActionSheet;
-  intl = tmp4(1115).intl;
-  BottomSheetTitleHeader = tmp4(6570).BottomSheetTitleHeader;
-  const intl2 = tmp4(1115).intl;
+  let obj5 = { startExpanded: true, dismissAccessibilityLabel: intl.string(tmp(3718).Wzi4Jd), header: tmp22(BottomSheetTitleHeader, obj6), children: tmp24(tmp25, obj7) };
+  const ActionSheet = tmp4(6624).ActionSheet;
+  intl = tmp4(1127).intl;
+  BottomSheetTitleHeader = tmp4(6571).BottomSheetTitleHeader;
+  const intl2 = tmp4(1127).intl;
   const string = intl2.string;
-  const tmpResult2 = tmp(3715);
+  const tmpResult2 = tmp(3718);
   let tmp22Result = null;
   obj6 = { title: string(isScoped ? tmpResult2.wgDhiQ : tmpResult2.cWmjzs) };
   obj7 = { style: tmp3.container, children: items9 };
@@ -305,7 +471,7 @@ export default function VibegrationsSettingsSheet(projectId) {
       tmp22Result = null;
       if (null != found) {
         const obj8 = { tabs: memo, selected: found, onSelect: tmp16[1] };
-        tmp22Result = tmp22(SettingsTabStrip, obj8, memo.join(","));
+        tmp22Result = tmp22(closure_15, obj8, memo.join(","));
       }
     }
   }
@@ -338,7 +504,7 @@ export default function VibegrationsSettingsSheet(projectId) {
     tmp22Result3 = null;
     if ("model" === found) {
       const obj9 = { projectId };
-      tmp22Result3 = tmp22(tmp4(16264).VibegrationsModelSettingsContent, obj9);
+      tmp22Result3 = tmp22(tmp4(16266).VibegrationsModelSettingsContent, obj9);
     }
   }
   items9[4] = tmp22Result3;
@@ -348,27 +514,204 @@ export default function VibegrationsSettingsSheet(projectId) {
     if (null == found) {
       let tmp22Result4;
       if (stateFromStores2) {
-        const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl3.string(tmp(3715).URnN4B) };
-        const Text = tmp4(4832).Text;
-        intl3 = tmp4(1115).intl;
+        const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl3.string(tmp(3718).URnN4B) };
+        const Text = tmp4(4833).Text;
+        intl3 = tmp4(1127).intl;
         tmp22Result4 = tmp22(Text, obj10);
       } else {
-        tmp22Result4 = tmp22(tmp4(5889).ActivityIndicator, {});
+        tmp22Result4 = tmp22(tmp4(5890).ActivityIndicator, {});
       }
       tmp32 = tmp22Result4;
     }
   }
   items9[5] = tmp32;
-  const Button = tmp4(5281).Button;
-  const intl4 = tmp4(1115).intl;
+  const Button = tmp4(5282).Button;
+  const intl4 = tmp4(1127).intl;
   const string2 = intl4.string;
   if (isScoped) {
-    Tuz9vw = tmp(3715).Tuz9vw;
+    Tuz9vw = tmp(3718).Tuz9vw;
   } else {
-    Tuz9vw = tmp4(1115).t["R3BPH+"];
+    Tuz9vw = tmp4(1127).t["R3BPH+"];
   }
   const obj11 = { text: string2(Tuz9vw), variant: "primary", loading: tmpResultResult.saving || tmp13.saving, disabled: !canSave, onPress: callback };
   items9[6] = found(Button, obj11);
   return found(ActionSheet, obj5);
-};
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((tabs) => {
+  let first;
+  let onSelect;
+  let selected;
+  let tmp17Result;
+  let tmp5;
+  let tmp7;
+  obj = tabs(576);
+  const cResult = obj.c(18);
+  tabs = tabs.tabs;
+  ({ selected, onSelect } = tabs);
+  [tmp5, dependencyMap] = react.useState(0);
+  _slicedToArray(react.useState(0), 2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function o(nativeEvent) {
+      dependencyMap(nativeEvent.nativeEvent.layout.width);
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tabs) {
+    let tmp8;
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn2 = function x(id) {
+        let intl;
+        obj = { id, label: intl.string(closure_1_13[id]), page: null };
+        intl = tabs(dependencyMap[17]).intl;
+        return obj;
+      };
+      cResult[3] = fn2;
+      tmp8 = fn2;
+    } else {
+      tmp8 = cResult[3];
+    }
+    const mapped = tabs.map(tmp8);
+    cResult[1] = tabs;
+    cResult[2] = mapped;
+    tmp7 = mapped;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[4] === selected) {
+    let tmp10;
+    if (cResult[5] === tabs) {
+      tmp10 = cResult[6];
+    }
+    const _Math = Math;
+    const bound = Math.max(0, tmp10);
+    if (cResult[7] === onSelect) {
+      let tmp13;
+      if (cResult[8] === tabs) {
+        tmp13 = cResult[9];
+      }
+      if (cResult[10] === tmp7) {
+        if (cResult[11] === tmp5) {
+          if (cResult[12] === bound) {
+            let tmp14;
+            if (cResult[13] === tmp13) {
+              tmp14 = cResult[14];
+            }
+            const tmpResult = tabs(9060);
+            const segmentedControlState = tmpResult.useSegmentedControlState(tmp14);
+            if (cResult[15] === segmentedControlState) {
+              let tmp16;
+              if (cResult[16] === tabs.length) {
+                tmp16 = cResult[17];
+              }
+              return tmp16;
+            }
+            class P {
+              constructor(arg0) {
+                if (null != tabs[arg0]) {
+                  onSelect(tabs[arg0]);
+                }
+              }
+            }
+            const obj2 = { onLayout: first, children: tmp17Result };
+            const tmp18 = View;
+            if (tabs.length > 3) {
+              const obj3 = { state: segmentedControlState };
+              tmp17Result = tmp17(tmp(12021).Tabs, obj3);
+            } else {
+              const obj4 = { state: segmentedControlState };
+              tmp17Result = tmp17(tmp(9061).SegmentedControl, obj4);
+            }
+            const tmp17Result2 = tmp17(tmp18, obj2);
+            cResult[15] = segmentedControlState;
+            cResult[16] = tabs.length;
+            cResult[17] = tmp17Result2;
+            tmp16 = tmp17Result2;
+          }
+        }
+      }
+      const obj5 = { items: tmp7, pageWidth: null, defaultIndex: bound, onSetActiveIndex: tmp13 };
+      class P {
+        constructor(arg0) {
+          if (null != tabs[arg0]) {
+            onSelect(tabs[arg0]);
+          }
+        }
+      }
+      cResult[10] = tmp7;
+      cResult[11] = tmp5;
+      cResult[12] = bound;
+      cResult[13] = tmp13;
+      cResult[14] = obj5;
+      tmp14 = obj5;
+    }
+    class P {
+      constructor(arg0) {
+        if (null != tabs[arg0]) {
+          onSelect(tabs[arg0]);
+        }
+      }
+    }
+    cResult[7] = onSelect;
+    cResult[8] = tabs;
+    cResult[9] = P;
+    tmp13 = P;
+  }
+  const index = tabs.indexOf(selected);
+  cResult[4] = selected;
+  cResult[5] = tabs;
+  cResult[6] = index;
+  tmp10 = index;
+}) : ((tabs) => {
+  let _undefined;
+  let c2;
+  let tmp2;
+  let tmp9Result;
+  tabs = tabs.tabs;
+  const onSelect = tabs.onSelect;
+  dependencyMap = undefined;
+  const selected = tabs.selected;
+  [tmp2, c2] = _slicedToArray(react.useState(0), 2);
+  const items = [tabs];
+  const tmp = _slicedToArray(react.useState(0), 2);
+  const callback = react.useCallback((nativeEvent) => {
+    _undefined(nativeEvent.nativeEvent.layout.width);
+  }, []);
+  const memo = react.useMemo(() => tabs.map((id) => {
+    let intl;
+    obj = { id, label: intl.string(closure_1_13[id]), page: null };
+    intl = tabs(_undefined[17]).intl;
+    return obj;
+  }), items);
+  const tmp7 = tabs(9060);
+  obj = {
+    items: memo,
+    pageWidth: tmp2,
+    defaultIndex: Math.max(0, tabs.indexOf(selected)),
+    onSetActiveIndex(arg0) {
+      if (null != tabs[arg0]) {
+        onSelect(tabs[arg0]);
+      }
+    }
+  };
+  const useSegmentedControlState = tmp7.useSegmentedControlState;
+  const segmentedControlState = useSegmentedControlState(obj);
+  const obj2 = { onLayout: callback, children: tmp9Result };
+  const tmp10 = View;
+  if (tabs.length > 3) {
+    const obj3 = { state: segmentedControlState };
+    tmp9Result = tmp9(tmp5(12021).Tabs, obj3);
+  } else {
+    const obj4 = { state: segmentedControlState };
+    tmp9Result = tmp9(tmp5(9061).SegmentedControl, obj4);
+  }
+  return closure_10(tmp10, obj2);
+});
+const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsSettingsSheet.tsx");
+
+export default tmp3;
 export const VIBEGRATIONS_SETTINGS_SHEET_KEY = "VibegrationsSettingsSheet";

@@ -1,20 +1,20 @@
-// Module ID: 13277
-// Function ID: 13278
+// Module ID: 13279
+// Function ID: 13280
 // Name: SharedSpacesWarningManager
-// Dependencies: [2045, 4859, 4479, 13278, 13276, 1091, 13279, 1094, 13283, 6539, 2]
+// Dependencies: [2051, 4860, 4482, 13280, 13278, 1103, 13281, 1106, 13285, 6540, 2]
 // Exports: userBlockedWarningInCooldown, voiceBlockedWarningInCooldownForUsers
 
-// Module 13277 (SharedSpacesWarningManager)
-import DurationsDefault from "Durations" /* 1091 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 13279 */;
-import showVoiceChannelBlockedUserWarning2 from "showVoiceChannelBlockedUserWarning" /* 13283 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 13278 */;
-import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 13276 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+// Module 13279 (SharedSpacesWarningManager)
+import DurationsDefault from "Durations" /* 1103 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 13281 */;
+import showVoiceChannelBlockedUserWarning2 from "showVoiceChannelBlockedUserWarning" /* 13285 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 13280 */;
+import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 13278 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -24,7 +24,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f97766 = (item) => {
+const f113779 = (item) => {
   let flag = false;
   {
     let num = closure_1_6(item);
@@ -90,11 +90,11 @@ function handleAppStateChanged(state) {
           if (!everyResult) {
             const _Array = Array;
             const arr = Array.from(set);
-            everyResult = arr.every(f97766);
+            everyResult = arr.every(f113779);
           }
           if (!everyResult) {
             const items1 = [];
-            const showVoiceChannelBlockedUserWarning = tmp2(13283).showVoiceChannelBlockedUserWarning;
+            const showVoiceChannelBlockedUserWarning = tmp2(13285).showVoiceChannelBlockedUserWarning;
             showVoiceChannelBlockedUserWarning2;
             HermesBuiltin.arraySpread(items1, ignoredUsersForVoiceChannel, HermesBuiltin.arraySpread(items1, blockedUsersForVoiceChannel, 0));
             const result = showVoiceChannelBlockedUserWarning(channelId, items1[0]);
@@ -159,7 +159,7 @@ export const voiceBlockedWarningInCooldownForUsers = function voiceBlockedWarnin
   if (!everyResult) {
     const _Array = Array;
     const arr = Array.from(arg0);
-    everyResult = arr.every(f97766);
+    everyResult = arr.every(f113779);
   }
   return everyResult;
 };

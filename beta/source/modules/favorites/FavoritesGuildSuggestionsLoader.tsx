@@ -1,39 +1,115 @@
 // Module ID: 15909
 // Function ID: 15910
 // Name: FavoritesGuildSuggestionsLoader
-// Dependencies: [19, 15834, 21, 15910, 2]
+// Dependencies: [19, 15833, 21, 558, 576, 15910, 2]
 
 // Module 15909 (FavoritesGuildSuggestionsLoader)
 import Fragment from "Fragment" /* 21 */;
 import useFavoritesGuildSuggestionCandidatesDefault from "useFavoritesGuildSuggestionCandidates" /* 15910 */;
-import react_mod from "react" /* 19 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 15834 */;
+import react from "react" /* 19 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 15833 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let importDefault;
+const require = globalThis.__r;
+let _require, dependencyMap;
 
-let c3;
 let closure_4;
 let hasOwnProperty;
-function FavoritesGuildSuggestionsLoaderInner() {
+let metroRequire;
+({ NO_SUGGESTIONS: closure_4, setFavoritesGuildSuggestions: hasOwnProperty, useFavoritesGuildSuggestionsVisibility: metroRequire } = FavoritesGuildSuggestionsStore);
+const jsx = Fragment.jsx;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let closure_0;
+  let tmp3;
+  let tmp4;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  const tmp2 = useFavoritesGuildSuggestionCandidatesDefault(4);
+  _require = tmp2;
+  if (cResult[0] !== tmp2) {
+    const fn = function u() {
+      hasOwnProperty(closure_0);
+    };
+    const items = [tmp2];
+    cResult[0] = tmp2;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp4 = items;
+    tmp3 = fn;
+  } else {
+    tmp3 = cResult[1];
+    tmp4 = cResult[2];
+  }
+  const layoutEffect = react.useLayoutEffect(tmp3, tmp4);
+  return null;
+}) : (() => {
   const tmp = useFavoritesGuildSuggestionCandidatesDefault(4);
-  importDefault = tmp;
+  let closure_0 = tmp;
   const items = [tmp];
   const layoutEffect = react.useLayoutEffect(() => {
-    React3(closure_0);
+    hasOwnProperty(closure_0);
   }, items);
   return null;
-}
-let react = react_mod;
-({ NO_SUGGESTIONS: c3, setFavoritesGuildSuggestions: closure_4, useFavoritesGuildSuggestionsVisibility: hasOwnProperty } = FavoritesGuildSuggestionsStore);
-const jsx = Fragment.jsx;
-const memoResult = react.memo(function FavoritesGuildSuggestionsLoader() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let isEligible;
   let ref;
-  const tmp = closure_5();
+  const obj = isEligible(576);
+  const cResult = obj.c(5);
+  let tmp2 = closure_6();
+  isEligible = tmp2.isEligible;
+  const isSelected = tmp2.isSelected;
+  dependencyMap = react.useRef(false);
+  const obj2 = react;
+  if (cResult[0] === isEligible) {
+    let tmp3;
+    let tmp4;
+    if (cResult[1] === isSelected) {
+      tmp3 = cResult[2];
+      tmp4 = cResult[3];
+    }
+    const layoutEffect = obj2.useLayoutEffect(tmp3, tmp4);
+    let tmp6 = null;
+    if (isSelected) {
+      let tmp8;
+      const _Symbol = Symbol;
+      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp11 = <closure_8 />;
+        cResult[4] = tmp11;
+        tmp8 = tmp11;
+      } else {
+        tmp8 = cResult[4];
+      }
+      tmp6 = tmp8;
+    }
+    return tmp6;
+  }
+  const fn = function u() {
+    if (isSelected) {
+      ref.current = true;
+    } else {
+      const tmp2 = !ref.current && isEligible;
+      if (!tmp2) {
+        ref.current = false;
+        hasOwnProperty(React3);
+      }
+    }
+  };
+  const items = [isEligible, isSelected];
+  cResult[0] = isEligible;
+  cResult[1] = isSelected;
+  cResult[2] = fn;
+  cResult[3] = items;
+  tmp4 = items;
+  tmp3 = fn;
+}) : (() => {
+  const tmp = closure_6();
   const isEligible = tmp.isEligible;
   const isSelected = tmp.isSelected;
-  react = react.useRef(false);
+  const ref = react.useRef(false);
   const items = [isEligible, isSelected];
   const layoutEffect = react.useLayoutEffect(() => {
     if (isSelected) {
@@ -42,16 +118,16 @@ const memoResult = react.memo(function FavoritesGuildSuggestionsLoader() {
       const tmp2 = !ref.current && isEligible;
       if (!tmp2) {
         ref.current = false;
-        React3(_false);
+        hasOwnProperty(React3);
       }
     }
   }, items);
   let tmp3 = null;
   if (isSelected) {
-    tmp3 = <FavoritesGuildSuggestionsLoaderInner />;
+    tmp3 = <closure_8 />;
   }
   return tmp3;
-});
+}));
 const result = size.fileFinishedImporting("modules/favorites/FavoritesGuildSuggestionsLoader.tsx");
 
 export default memoResult;

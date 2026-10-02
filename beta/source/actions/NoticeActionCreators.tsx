@@ -1,10 +1,10 @@
-// Module ID: 16627
-// Function ID: 16628
+// Module ID: 16629
+// Function ID: 16630
 // Name: NoticeActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 
-// Module 16627 (NoticeActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 16629 (NoticeActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

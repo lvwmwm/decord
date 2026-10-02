@@ -1,12 +1,12 @@
-// Module ID: 4736
-// Function ID: 4737
+// Module ID: 4738
+// Function ID: 4739
 // Name: APIError
-// Dependencies: [1074, 1271, 1115, 2]
+// Dependencies: [1086, 1283, 1127, 2]
 
-// Module 4736 (APIError)
-import Constants from "Constants" /* 1074 */;
-import intl3 from "intl" /* 1115 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 4738 (APIError)
+import Constants from "Constants" /* 1086 */;
+import intl3 from "intl" /* 1127 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import size from "module_2" /* 2 */;
 
 const Links = Constants.Links;

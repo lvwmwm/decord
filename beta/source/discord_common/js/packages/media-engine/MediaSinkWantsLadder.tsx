@@ -1,10 +1,10 @@
-// Module ID: 4905
-// Function ID: 4906
+// Module ID: 4906
+// Function ID: 4907
 // Name: MediaSinkWantsLadder
-// Dependencies: [4861, 2]
+// Dependencies: [4862, 2]
 
-// Module 4905 (MediaSinkWantsLadder)
-import Constants from "Constants" /* 4861 */;
+// Module 4906 (MediaSinkWantsLadder)
+import Constants from "Constants" /* 4862 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;

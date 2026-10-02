@@ -1,11 +1,11 @@
-// Module ID: 1997
-// Function ID: 1998
+// Module ID: 2003
+// Function ID: 2004
 // Name: VoiceEngineModule
-// Dependencies: [17, 1998, 2]
+// Dependencies: [17, 2004, 2]
 
-// Module 1997 (VoiceEngineModule)
+// Module 2003 (VoiceEngineModule)
 import react_native from "react-native" /* 17 */;
-import react_native2_mod from "react-native" /* 1998 */;
+import react_native2_mod from "react-native" /* 2004 */;
 import size from "module_2" /* 2 */;
 
 const NativeEventEmitter = react_native.NativeEventEmitter;

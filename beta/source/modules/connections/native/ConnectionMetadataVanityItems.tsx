@@ -1,24 +1,26 @@
-// Module ID: 11070
-// Function ID: 11071
+// Module ID: 10938
+// Function ID: 10939
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 5720, 21, 4836, 576, 1115, 11071, 11072, 12, 1882, 4832, 1177, 5719, 2]
+// Dependencies: [19, 17, 5721, 21, 4837, 588, 1127, 10939, 10940, 558, 576, 12, 1888, 4833, 1189, 5720, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11070 (ConnectionMetadataVanityItems)
+// Module 10938 (ConnectionMetadataVanityItems)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl5 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import NumberUtils from "NumberUtils" /* 1882 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 5719 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11071 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11072 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl5 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import NumberUtils from "NumberUtils" /* 1888 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 5720 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10939 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10940 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 5720 */;
+import Constants from "Constants" /* 5721 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let application_metadata;
@@ -30,7 +32,57 @@ let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-function PaypalVanityTag(style) {
+const View = react_native.View;
+({ MetadataFields: closure_4, MetadataItemTypes: hasOwnProperty } = Constants);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { connectedAccountVanityMetadata: { marginTop: 4, paddingRight: 8 }, connectedAccountVanityMetadataItem: { flexDirection: "row", alignItems: "center" }, connectedAccountVanityMetadataItemIcon: { height: 18, width: 18, marginRight: 8 }, connectedAccountVanityMetadataTag: obj2, paypalVerifiedTag: obj3, paypalVerifiedTagText: obj4 };
+obj2 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, paddingHorizontal: 8, paddingVertical: 1, marginRight: 8 };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND };
+obj4 = { color: nativeDefault.colors.WHITE };
+let closure_8 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+  const obj = react2;
+  const cResult = obj.c(7);
+  style = style.style;
+  const tmp4 = closure_8();
+  if (cResult[0] === style) {
+    let tmp5;
+    let tmp7;
+    if (cResult[1] === tmp4.paypalVerifiedTag) {
+      tmp5 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(intl5.t.IhXLyx);
+      cResult[3] = stringResult;
+      tmp7 = stringResult;
+    } else {
+      tmp7 = cResult[3];
+    }
+    if (cResult[4] === tmp4.paypalVerifiedTagText) {
+      let tmp9;
+      if (cResult[5] === tmp5) {
+        tmp9 = cResult[6];
+      }
+      return tmp9;
+    }
+    const obj2 = { style: tmp5, label: tmp7, textStyle: tmp4.paypalVerifiedTagText };
+    const tmp13 = metroRequire(closure_12, obj2, constants.PAYPAL_VERIFIED);
+    cResult[4] = tmp4.paypalVerifiedTagText;
+    cResult[5] = tmp5;
+    cResult[6] = tmp13;
+    tmp9 = tmp13;
+  }
+  const items = [tmp4.paypalVerifiedTag, style];
+  cResult[0] = style;
+  cResult[1] = tmp4.paypalVerifiedTag;
+  cResult[2] = items;
+  tmp5 = items;
+}) : ((style) => {
   let intl;
   let items;
   style = style.style;
@@ -38,9 +90,81 @@ function PaypalVanityTag(style) {
   const obj = { style: items, label: intl.string(intl5.t.IhXLyx), textStyle: tmp.paypalVerifiedTagText };
   items = [tmp.paypalVerifiedTag, style];
   intl = intl5.intl;
-  return metroRequire(VanityTag, obj, constants.PAYPAL_VERIFIED);
-}
-function VanityMetric(label) {
+  return metroRequire(closure_12, obj, constants.PAYPAL_VERIFIED);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let count;
+  let label;
+  let percent;
+  let style;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(12);
+  ({ label, style } = arg0);
+  ({ count, percent } = arg0);
+  const tmp4 = closure_8();
+  let str = "";
+  const obj2 = NumberUtils;
+  const result = obj2.shortenAndLocalizeNumber(count);
+  if (percent) {
+    str = "%";
+  }
+  const sum = result + str;
+  if (typeof label === "string") {
+    if (cResult[0] === label) {
+      let tmp9;
+      if (cResult[1] === sum) {
+        tmp9 = cResult[2];
+      }
+      tmp7 = tmp9;
+    }
+    const intl2 = tmp(1127).intl;
+    const obj3 = { name: label, value: sum };
+    const formatResult = intl2.format(intl5.t.HLoinF, obj3);
+    cResult[0] = label;
+    cResult[1] = sum;
+    cResult[2] = formatResult;
+    tmp9 = formatResult;
+  } else {
+    if (cResult[3] === label) {
+      if (cResult[4] === sum) {
+        tmp7 = cResult[5];
+      }
+    }
+    const intl = tmp(1127).intl;
+    const obj4 = { value: sum };
+    const formatResult1 = intl.format(label, obj4);
+    cResult[3] = label;
+    cResult[4] = sum;
+    cResult[5] = formatResult1;
+    tmp7 = formatResult1;
+  }
+  if (cResult[6] === style) {
+    let tmp11;
+    if (cResult[7] === tmp4.connectedAccountVanityMetadata) {
+      tmp11 = cResult[8];
+    }
+    if (cResult[9] === tmp11) {
+      let tmp12;
+      if (cResult[10] === tmp7) {
+        tmp12 = cResult[11];
+      }
+      return tmp12;
+    }
+    const obj5 = { variant: "text-xs/normal", color: "text-muted", style: tmp11, children: tmp7 };
+    const tmp14 = metroRequire(Text_Text.Text, obj5);
+    cResult[9] = tmp11;
+    cResult[10] = tmp7;
+    cResult[11] = tmp14;
+    tmp12 = tmp14;
+  }
+  const items = [tmp4.connectedAccountVanityMetadata, style];
+  cResult[6] = style;
+  cResult[7] = tmp4.connectedAccountVanityMetadata;
+  cResult[8] = items;
+  tmp11 = items;
+}) : ((label) => {
   let count;
   let formatResult;
   let items;
@@ -57,19 +181,90 @@ function VanityMetric(label) {
   }
   const sum = result + str;
   if (typeof label === "string") {
-    const intl = tmp2(1115).intl;
+    const intl = tmp2(1127).intl;
     const obj2 = { name: label, value: sum };
-    formatResult = intl.format(tmp2(1115).t.HLoinF, obj2);
+    formatResult = intl.format(tmp2(1127).t.HLoinF, obj2);
   } else {
-    const intl2 = tmp2(1115).intl;
+    const intl2 = tmp2(1127).intl;
     const obj3 = { value: sum };
     formatResult = intl2.format(label, obj3);
   }
   const obj4 = { variant: "text-xs/normal", color: "text-muted", style: items, children: formatResult };
   items = [tmp.connectedAccountVanityMetadata, style];
   return metroRequire(Text_Text.Text, obj4);
-}
-function VanityItem(style) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let imageAlt;
+  let imageSrc;
+  let items;
+  let label;
+  let style;
+  const obj = react2;
+  const cResult = obj.c(15);
+  ({ label, imageSrc, imageAlt, style } = arg0);
+  const tmp4 = closure_8();
+  if (cResult[0] === style) {
+    if (cResult[1] === tmp4.connectedAccountVanityMetadata) {
+      let tmp5;
+      if (cResult[2] === tmp4.connectedAccountVanityMetadataItem) {
+        tmp5 = cResult[3];
+      }
+      if (cResult[4] === imageAlt) {
+        if (cResult[5] === imageSrc) {
+          let tmp6;
+          if (cResult[6] === tmp4.connectedAccountVanityMetadataItemIcon) {
+            tmp6 = cResult[7];
+          }
+          if (cResult[8] === label) {
+            let tmp9;
+            if (cResult[9] === style) {
+              tmp9 = cResult[10];
+            }
+            if (cResult[11] === tmp5) {
+              if (cResult[12] === tmp6) {
+                let tmp12;
+                if (cResult[13] === tmp9) {
+                  tmp12 = cResult[14];
+                }
+                return tmp12;
+              }
+            }
+            const obj2 = { style: tmp5, children: items };
+            items = [tmp6, tmp9];
+            const tmp15 = metroImportDefault(View, obj2);
+            cResult[11] = tmp5;
+            cResult[12] = tmp6;
+            cResult[13] = tmp9;
+            cResult[14] = tmp15;
+            tmp12 = tmp15;
+          }
+          const obj3 = { variant: "text-xs/normal", color: "text-muted", style, children: label };
+          const tmp11 = metroRequire(Text_Text.Text, obj3);
+          cResult[8] = label;
+          cResult[9] = style;
+          cResult[10] = tmp11;
+          tmp9 = tmp11;
+        }
+      }
+      const obj4 = { source: imageSrc, accessibilityLabel: imageAlt, style: tmp4.connectedAccountVanityMetadataItemIcon, disableColor: true };
+      const tmp8 = metroRequire(native.Icon, obj4);
+      cResult[4] = imageAlt;
+      cResult[5] = imageSrc;
+      cResult[6] = tmp4.connectedAccountVanityMetadataItemIcon;
+      cResult[7] = tmp8;
+      tmp6 = tmp8;
+    }
+  }
+  const items1 = [, , ];
+  ({ connectedAccountVanityMetadata: arr[0], connectedAccountVanityMetadataItem: arr[1] } = tmp4);
+  items1[2] = style;
+  cResult[0] = style;
+  cResult[1] = tmp4.connectedAccountVanityMetadata;
+  cResult[2] = tmp4.connectedAccountVanityMetadataItem;
+  cResult[3] = items1;
+  tmp5 = items1;
+}) : ((style) => {
   let imageAlt;
   let imageSrc;
   let items;
@@ -87,8 +282,58 @@ function VanityItem(style) {
   items1[0] = metroRequire(native.Icon, obj2);
   items1[1] = metroRequire(Text_Text.Text, { variant: "text-xs/normal", color: "text-muted", style, children: label });
   return metroImportDefault(View, obj);
-}
-function VanityTag(arg0) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let label;
+  let style;
+  let textStyle;
+  const obj = react2;
+  const cResult = obj.c(10);
+  ({ label, style, textStyle } = arg0);
+  const tmp4 = closure_8();
+  if (cResult[0] === style) {
+    if (cResult[1] === tmp4.connectedAccountVanityMetadata) {
+      let tmp5;
+      if (cResult[2] === tmp4.connectedAccountVanityMetadataTag) {
+        tmp5 = cResult[3];
+      }
+      if (cResult[4] === label) {
+        let tmp6;
+        if (cResult[5] === textStyle) {
+          tmp6 = cResult[6];
+        }
+        if (cResult[7] === tmp5) {
+          let tmp9;
+          if (cResult[8] === tmp6) {
+            tmp9 = cResult[9];
+          }
+          return tmp9;
+        }
+        const obj2 = { style: tmp5, children: tmp6 };
+        const tmp12 = metroRequire(View, obj2);
+        cResult[7] = tmp5;
+        cResult[8] = tmp6;
+        cResult[9] = tmp12;
+        tmp9 = tmp12;
+      }
+      const obj3 = { variant: "text-xs/normal", color: "text-muted", style: textStyle, children: label };
+      const tmp8 = metroRequire(Text_Text.Text, obj3);
+      cResult[4] = label;
+      cResult[5] = textStyle;
+      cResult[6] = tmp8;
+      tmp6 = tmp8;
+    }
+  }
+  const items = [, , ];
+  ({ connectedAccountVanityMetadata: arr[0], connectedAccountVanityMetadataTag: arr[1] } = tmp4);
+  items[2] = style;
+  cResult[0] = style;
+  cResult[1] = tmp4.connectedAccountVanityMetadata;
+  cResult[2] = tmp4.connectedAccountVanityMetadataTag;
+  cResult[3] = items;
+  tmp5 = items;
+}) : ((arg0) => {
   let items;
   let label;
   let style;
@@ -100,8 +345,62 @@ function VanityTag(arg0) {
   ({ connectedAccountVanityMetadata: arr[0], connectedAccountVanityMetadataTag: arr[1] } = tmp);
   items[2] = style;
   return metroRequire(View, obj);
-}
-function VanityDate(arg0) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let date;
+  let label;
+  let locale;
+  let style;
+  let tmpResult;
+  const obj = react2;
+  const cResult = obj.c(10);
+  ({ date, label, locale, style } = arg0);
+  const tmp4 = closure_8();
+  if (cResult[0] === style) {
+    let tmp5;
+    if (cResult[1] === tmp4.connectedAccountVanityMetadata) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] === date) {
+      if (cResult[4] === label) {
+        let tmp6;
+        if (cResult[5] === locale) {
+          tmp6 = cResult[6];
+        }
+        if (cResult[7] === tmp5) {
+          let tmp8;
+          if (cResult[8] === tmp6) {
+            tmp8 = cResult[9];
+          }
+          return tmp8;
+        }
+        const obj2 = { variant: "text-xs/normal", color: "text-muted", style: tmp5, children: tmp6 };
+        const tmp10 = metroRequire(Text_Text.Text, obj2);
+        cResult[7] = tmp5;
+        cResult[8] = tmp6;
+        cResult[9] = tmp10;
+        tmp8 = tmp10;
+      }
+    }
+    const intl = tmp(1127).intl;
+    const format = intl.format;
+    const obj3 = { value: tmpResult.getCreatedAtDate(date, locale), name: label };
+    const HLoinF = tmp(1127).t.HLoinF;
+    tmpResult = ConnectionsUtils;
+    const formatResult = format(HLoinF, obj3);
+    cResult[3] = date;
+    cResult[4] = label;
+    cResult[5] = locale;
+    cResult[6] = formatResult;
+    tmp6 = formatResult;
+  }
+  const items = [tmp4.connectedAccountVanityMetadata, style];
+  cResult[0] = style;
+  cResult[1] = tmp4.connectedAccountVanityMetadata;
+  cResult[2] = items;
+  tmp5 = items;
+}) : ((arg0) => {
   let HLoinF;
   let date;
   let format;
@@ -122,17 +421,7 @@ function VanityDate(arg0) {
   HLoinF = intl5.t.HLoinF;
   obj3 = ConnectionsUtils;
   return metroRequire(Text, obj);
-}
-const View = react_native.View;
-({ MetadataFields: closure_4, MetadataItemTypes: hasOwnProperty } = Constants);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { connectedAccountVanityMetadata: { marginTop: 4, paddingRight: 8 }, connectedAccountVanityMetadataItem: { flexDirection: "row", alignItems: "center" }, connectedAccountVanityMetadataItemIcon: { height: 18, width: 18, marginRight: 8 }, connectedAccountVanityMetadataTag: obj2, paypalVerifiedTag: obj3, paypalVerifiedTagText: obj4 };
-obj2 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, paddingHorizontal: 8, paddingVertical: 1, marginRight: 8 };
-createStyles = createStyles.createStyles;
-obj3 = { backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND };
-obj4 = { color: nativeDefault.colors.WHITE };
-let closure_8 = createStyles(obj);
+});
 let result = size.fileFinishedImporting("modules/connections/native/ConnectionMetadataVanityItems.tsx");
 
 export const generateRedditMetadataItems = function generateRedditMetadataItems(metadata, metadataItem) {
@@ -150,19 +439,19 @@ export const generateRedditMetadataItems = function generateRedditMetadataItems(
   if (_NumberResult > -1) {
     const push = items.push;
     const obj = { style: metadataItem, count: _NumberResult, label: intl5.t.SbCNox };
-    push(metroRequire(VanityMetric, obj, constants.REDDIT_TOTAL_KARMA));
+    push(metroRequire(closure_10, obj, constants.REDDIT_TOTAL_KARMA));
   }
   if ("1" === tmp4) {
     const push2 = items.push;
     const obj2 = { style: metadataItem, label: intl.string(intl5.t["06rDHU"]) };
     intl = intl5.intl;
-    push2(metroRequire(VanityTag, obj2, constants.REDDIT_GOLD));
+    push2(metroRequire(closure_12, obj2, constants.REDDIT_GOLD));
   }
   if ("1" === tmp5) {
     const push3 = items.push;
     const obj3 = { style: metadataItem, label: intl2.string(intl5.t.oWM95M) };
     intl2 = intl5.intl;
-    push3(metroRequire(VanityTag, obj3, constants.REDDIT_MOD));
+    push3(metroRequire(closure_12, obj3, constants.REDDIT_MOD));
   }
   return items;
 };
@@ -183,12 +472,12 @@ export const generateTwitterMetadataItems = function generateTwitterMetadataItem
   if (_NumberResult > -1) {
     const push = items.push;
     const obj = { style: metadataItem, count: _NumberResult, label: intl5.t.llwqqe };
-    push(metroRequire(VanityMetric, obj, constants.TWITTER_STATUSES_COUNT));
+    push(metroRequire(closure_10, obj, constants.TWITTER_STATUSES_COUNT));
   }
   if (_Number2Result > -1) {
     const push2 = items.push;
     const obj2 = { style: metadataItem, count: _Number2Result, label: intl5.t.LMNOUQ };
-    push2(metroRequire(VanityMetric, obj2, constants.TWITTER_FOLLOWERS_COUNT));
+    push2(metroRequire(closure_10, obj2, constants.TWITTER_FOLLOWERS_COUNT));
   }
   return items;
 };
@@ -209,12 +498,12 @@ export const generateBlueskyMetadataItems = function generateBlueskyMetadataItem
   if (_NumberResult > -1) {
     const push = items.push;
     const obj = { style, count: _NumberResult, label: intl5.t.thA2ir };
-    push(metroRequire(VanityMetric, obj, constants.BLUESKY_STATUSES_COUNT));
+    push(metroRequire(closure_10, obj, constants.BLUESKY_STATUSES_COUNT));
   }
   if (_Number2Result > -1) {
     const push2 = items.push;
     const obj2 = { style, count: _Number2Result, label: intl5.t.RQath2 };
-    push2(metroRequire(VanityMetric, obj2, constants.BLUESKY_FOLLOWERS_COUNT));
+    push2(metroRequire(closure_10, obj2, constants.BLUESKY_FOLLOWERS_COUNT));
   }
   return items;
 };
@@ -247,7 +536,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
   if (_NumberResult > -1) {
     const push = items.push;
     const obj = { style: metadataItem, count: _NumberResult, label: intl5.t["ppXMu/"] };
-    push(metroRequire(VanityMetric, obj, constants.STEAM_GAME_COUNT));
+    push(metroRequire(closure_10, obj, constants.STEAM_GAME_COUNT));
   }
   if (_Number2Result > -1) {
     const push2 = items.push;
@@ -255,7 +544,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     intl = intl5.intl;
     obj3 = { count: _Number2Result };
     intl2 = intl5.intl;
-    push2(metroRequire(VanityItem, obj2, constants.STEAM_ITEM_COUNT_DOTA2));
+    push2(metroRequire(closure_11, obj2, constants.STEAM_ITEM_COUNT_DOTA2));
   }
   if (_Number3Result > -1) {
     const push3 = items.push;
@@ -263,7 +552,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     intl3 = intl5.intl;
     obj5 = { count: _Number3Result };
     intl4 = intl5.intl;
-    push3(metroRequire(VanityItem, obj4, constants.STEAM_ITEM_COUNT_TF2));
+    push3(metroRequire(closure_11, obj4, constants.STEAM_ITEM_COUNT_TF2));
   }
   return items;
 };
@@ -272,7 +561,7 @@ export const generatePaypalMetadataItems = function generatePaypalMetadataItems(
   const tmp = metadataItem;
   if ("1" === metadata[constants.PAYPAL_VERIFIED]) {
     const obj = { style: tmp };
-    items.push(metroRequire(PaypalVanityTag, obj));
+    items.push(metroRequire(closure_9, obj));
   }
   return items;
 };
@@ -289,13 +578,13 @@ export const generateEbayMetadataItems = function generateEbayMetadataItems(meta
   if (_NumberResult > 0) {
     const push = items.push;
     const obj = { style: metadataItem, count: _NumberResult, label: intl5.t.YmL22d, percent: true };
-    push(metroRequire(VanityMetric, obj, constants.EBAY_POSITIVE_FEEDBACK_PERCENTAGE));
+    push(metroRequire(closure_10, obj, constants.EBAY_POSITIVE_FEEDBACK_PERCENTAGE));
   }
   if ("1" === tmp4) {
     const push2 = items.push;
     const obj2 = { style: metadataItem, label: intl.string(intl5.t.TEEYwa) };
     intl = intl5.intl;
-    push2(metroRequire(VanityTag, obj2, constants.EBAY_TOP_RATED_SELLER));
+    push2(metroRequire(closure_12, obj2, constants.EBAY_TOP_RATED_SELLER));
   }
   return items;
 };
@@ -324,23 +613,23 @@ export const generateTikTokMetadataItems = function generateTikTokMetadataItems(
   if (_NumberResult > -1) {
     const push = items.push;
     const obj = { style: metadataItem, count: _NumberResult, label: intl5.t["Mpm/Bc"] };
-    push(metroRequire(VanityMetric, obj, constants.TIKTOK_FOLLOWER_COUNT));
+    push(metroRequire(closure_10, obj, constants.TIKTOK_FOLLOWER_COUNT));
   }
   if (_Number2Result > -1) {
     const push2 = items.push;
     const obj2 = { style: metadataItem, count: _Number2Result, label: intl5.t.ftf12v };
-    push2(metroRequire(VanityMetric, obj2, constants.TIKTOK_FOLLOWING_COUNT));
+    push2(metroRequire(closure_10, obj2, constants.TIKTOK_FOLLOWING_COUNT));
   }
   if (_Number3Result > -1) {
     const push3 = items.push;
     const obj3 = { style: metadataItem, count: _Number3Result, label: intl5.t.Qwhe5j };
-    push3(metroRequire(VanityMetric, obj3, constants.TIKTOK_LIKES_COUNT));
+    push3(metroRequire(closure_10, obj3, constants.TIKTOK_LIKES_COUNT));
   }
   if ("1" === tmp3) {
     const push4 = items.push;
     const obj4 = { style: metadataItem, label: intl.string(intl5.t.QHHwRR) };
     intl = intl5.intl;
-    push4(metroRequire(VanityTag, obj4, constants.TIKTOK_VERIFIED));
+    push4(metroRequire(closure_12, obj4, constants.TIKTOK_VERIFIED));
   }
   return items;
 };
@@ -379,11 +668,11 @@ export const generateRoleConnectionMetadataItems = function generateRoleConnecti
                     const _Number = Number;
                     const push = items.push;
                     const obj = { style, count: Number(applicationRoleConnection.metadata[tmp6]), label: applicationRoleConnection.application_metadata[nextResult].name };
-                    push(metroRequire(VanityMetric, obj, applicationRoleConnection.application_metadata[nextResult].key));
+                    push(metroRequire(closure_10, obj, applicationRoleConnection.application_metadata[nextResult].key));
                   }
                 }
                 const obj2 = { style, date: applicationRoleConnection.metadata[tmp6], locale: tmp2, label: applicationRoleConnection.application_metadata[nextResult].name };
-                items.push(metroRequire(VanityDate, obj2, applicationRoleConnection.application_metadata[nextResult].key));
+                items.push(metroRequire(closure_13, obj2, applicationRoleConnection.application_metadata[nextResult].key));
               }
             }
             let tmp22 = tmp8.type === tmp10.BOOLEAN_EQUAL && "1" === tmp36;
@@ -393,7 +682,7 @@ export const generateRoleConnectionMetadataItems = function generateRoleConnecti
             }
             if (tmp22) {
               const obj3 = { style, label: applicationRoleConnection.application_metadata[nextResult].name };
-              items.push(metroRequire(VanityTag, obj3, applicationRoleConnection.application_metadata[nextResult].key));
+              items.push(metroRequire(closure_12, obj3, applicationRoleConnection.application_metadata[nextResult].key));
             }
           } catch (err) {
           }

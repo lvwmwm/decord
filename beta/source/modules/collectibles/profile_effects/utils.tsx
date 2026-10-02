@@ -1,62 +1,106 @@
-// Module ID: 8265
-// Function ID: 8266
+// Module ID: 8262
+// Function ID: 8263
 // Name: utils
-// Dependencies: [32, 19, 12, 2]
-// Exports: sortEffectLayers, usePotentiallyRandomizedProfileEffect
+// Dependencies: [32, 19, 12, 558, 576, 2]
+// Exports: sortEffectLayers
 
-// Module 8265 (utils)
+// Module 8262 (utils)
 import _mod12 from "module_12" /* 12 */;
+import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/collectibles/profile_effects/utils.tsx");
-
-export const sortEffectLayers = function sortEffectLayers(effects) {
-  return effects.sort((zIndex, zIndex2) => {
-    let num = zIndex.zIndex;
-    if (num == null) {
-      num = 0;
+const f96343 = (acc, randomizedSources) => {
+  randomizedSources = randomizedSources.randomizedSources;
+  let num;
+  if (randomizedSources != null) {
+    num = randomizedSources.length;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  let tmp = acc;
+  if (num > 0) {
+    let bound = num;
+    if (0 !== acc) {
+      const _Math = Math;
+      bound = Math.min(acc, num);
     }
-    let num2 = zIndex2.zIndex;
-    if (num2 == null) {
-      num2 = 0;
-    }
-    return num - num2;
-  });
+    tmp = bound;
+  }
+  return tmp;
 };
-export const usePotentiallyRandomizedProfileEffect = function usePotentiallyRandomizedProfileEffect(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp12;
+  let tmp13;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(2);
+  [tmp6, tmp7] = react.useState(arg0);
+  _slicedToArray(react.useState(arg0), 2);
+  if (cResult[0] !== arg0) {
+    let tmp10 = arg0;
+    if (null != arg0) {
+      const tmpResult = _mod12;
+      const cloneDeepResult = tmpResult.cloneDeep(arg0);
+      const effects = cloneDeepResult.effects;
+      const _Math = Math;
+      const _Math2 = Math;
+      const diff = effects.reduce(f96343, 0) - 1;
+      let closure_0 = Math.floor(Math.random() * (diff + 1));
+      const effects1 = cloneDeepResult.effects;
+      cloneDeepResult.effects = effects1.map((randomizedSources) => {
+        const tmp = null != randomizedSources.randomizedSources && randomizedSources.randomizedSources.length > 0;
+        if (tmp) {
+          randomizedSources.src = randomizedSources.randomizedSources[closure_0].src;
+        }
+        return randomizedSources;
+      });
+      tmp10 = cloneDeepResult;
+    }
+    cResult[0] = arg0;
+    cResult[1] = tmp10;
+    tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[1];
+  }
+  [tmp12, tmp13] = _slicedToArray(react.useState(tmp8), 2);
+  _slicedToArray(react.useState(tmp8), 2);
+  const tmpResult3 = _mod12;
+  if (!tmpResult3.isEqual(tmp6, arg0)) {
+    tmp7(arg0);
+    closure_0 = undefined;
+    let tmp16 = arg0;
+    if (null != arg0) {
+      const tmpResult4 = _mod12;
+      const cloneDeepResult1 = tmpResult4.cloneDeep(arg0);
+      const effects2 = cloneDeepResult1.effects;
+      const _Math3 = Math;
+      const _Math4 = Math;
+      const diff1 = effects2.reduce(f96343, 0) - 1;
+      closure_0 = Math.floor(Math.random() * (diff1 + 1));
+      const effects3 = cloneDeepResult1.effects;
+      cloneDeepResult1.effects = effects3.map((randomizedSources) => {
+        const tmp = null != randomizedSources.randomizedSources && randomizedSources.randomizedSources.length > 0;
+        if (tmp) {
+          randomizedSources.src = randomizedSources.randomizedSources[closure_0].src;
+        }
+        return randomizedSources;
+      });
+      tmp16 = cloneDeepResult1;
+    }
+    tmp13(tmp16);
+  }
+  return tmp12;
+}) : ((arg0) => {
   let tmp4;
   let tmp5;
   let tmp8;
   let tmp9;
-  const f86038 = (acc, randomizedSources) => {
-    randomizedSources = randomizedSources.randomizedSources;
-    let num;
-    if (randomizedSources != null) {
-      num = randomizedSources.length;
-    }
-    if (num == null) {
-      num = 0;
-    }
-    let tmp = acc;
-    if (num > 0) {
-      let bound = num;
-      if (0 !== acc) {
-        const _Math = Math;
-        bound = Math.min(acc, num);
-      }
-      tmp = bound;
-    }
-    return tmp;
-  };
-  const f86039 = (randomizedSources) => {
-    const tmp = null != randomizedSources.randomizedSources && randomizedSources.randomizedSources.length > 0;
-    if (tmp) {
-      randomizedSources.src = randomizedSources.randomizedSources[closure_0].src;
-    }
-    return randomizedSources;
-  };
   let tmp = react;
   let closure_0;
   let tmp6 = arg0;
@@ -70,10 +114,16 @@ export const usePotentiallyRandomizedProfileEffect = function usePotentiallyRand
     let num = 0;
     let _Math = Math;
     const _Math2 = Math;
-    const diff = effects.reduce(f86038, 0) - 1;
+    const diff = effects.reduce(f96343, 0) - 1;
     closure_0 = Math.floor(Math.random() * (diff + 1));
     const effects1 = cloneDeepResult.effects;
-    cloneDeepResult.effects = effects1.map(f86039);
+    cloneDeepResult.effects = effects1.map((randomizedSources) => {
+      const tmp = null != randomizedSources.randomizedSources && randomizedSources.randomizedSources.length > 0;
+      if (tmp) {
+        randomizedSources.src = randomizedSources.randomizedSources[closure_0].src;
+      }
+      return randomizedSources;
+    });
     tmp6 = cloneDeepResult;
   }
   [tmp8, tmp9] = _slicedToArray(useState(tmp6), 2);
@@ -89,13 +139,35 @@ export const usePotentiallyRandomizedProfileEffect = function usePotentiallyRand
       const effects2 = cloneDeepResult1.effects;
       const _Math3 = Math;
       const _Math4 = Math;
-      const diff1 = effects2.reduce(f86038, 0) - 1;
+      const diff1 = effects2.reduce(f96343, 0) - 1;
       closure_0 = Math.floor(Math.random() * (diff1 + 1));
       const effects3 = cloneDeepResult1.effects;
-      cloneDeepResult1.effects = effects3.map(f86039);
+      cloneDeepResult1.effects = effects3.map((randomizedSources) => {
+        const tmp = null != randomizedSources.randomizedSources && randomizedSources.randomizedSources.length > 0;
+        if (tmp) {
+          randomizedSources.src = randomizedSources.randomizedSources[closure_0].src;
+        }
+        return randomizedSources;
+      });
       tmp13 = cloneDeepResult1;
     }
     tmp9(tmp13);
   }
   return tmp8;
+});
+const result = size.fileFinishedImporting("modules/collectibles/profile_effects/utils.tsx");
+
+export const sortEffectLayers = function sortEffectLayers(effects) {
+  return effects.sort((zIndex, zIndex2) => {
+    let num = zIndex.zIndex;
+    if (num == null) {
+      num = 0;
+    }
+    let num2 = zIndex2.zIndex;
+    if (num2 == null) {
+      num2 = 0;
+    }
+    return num - num2;
+  });
 };
+export const usePotentiallyRandomizedProfileEffect = tmp2;

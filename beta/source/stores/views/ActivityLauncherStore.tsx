@@ -1,14 +1,14 @@
-// Module ID: 11000
-// Function ID: 11001
+// Module ID: 10868
+// Function ID: 10869
 // Name: ActivityLauncherStore
-// Dependencies: [8814, 5591, 1074, 2040, 573, 504, 2]
+// Dependencies: [8809, 5592, 1086, 2046, 585, 504, 2]
 
-// Module 11000 (ActivityLauncherStore)
+// Module 10868 (ActivityLauncherStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import LocalActivityStore from "LocalActivityStore" /* 8814 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
-import Constants from "Constants" /* 1074 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import LocalActivityStore from "LocalActivityStore" /* 8809 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5592 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -16,7 +16,7 @@ let metroRequire;
 function handleActivityStateChanged(COMPLETE, JOIN, type) {
   let applicationId;
   let remotePartyId;
-  const f92502 = () => {
+  const f105286 = () => {
     obj = activityType(dependencyMap[4]);
     const obj2 = { type: "ACTIVITY_LAUNCH_FAIL", applicationId, activityType };
     return obj.dispatch(obj2);
@@ -48,8 +48,8 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       }
       const self3 = this;
       const self4 = this;
-      const timeout = new applicationId(2040).Timeout();
-      timeout.start(tmp10, f92502);
+      const timeout = new applicationId(2046).Timeout();
+      timeout.start(tmp10, f105286);
       closure_8[applicationId] = timeout;
     } else if (COMPLETE === constants.LOADING) {
       let num = 15000;
@@ -63,8 +63,8 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       }
       const self = this;
       const self2 = this;
-      const timeout1 = new applicationId(2040).Timeout();
-      timeout1.start(num, f92502);
+      const timeout1 = new applicationId(2046).Timeout();
+      timeout1.start(num, f105286);
       closure_8[applicationId] = timeout1;
     }
   }

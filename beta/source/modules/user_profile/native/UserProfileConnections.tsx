@@ -1,38 +1,41 @@
-// Module ID: 12671
-// Function ID: 12672
+// Module ID: 12673
+// Function ID: 12674
 // Name: UserProfileConnections
-// Dependencies: [19, 17, 2112, 4679, 6629, 1074, 5720, 21, 1177, 4836, 576, 11070, 4531, 4685, 11075, 11076, 7635, 5719, 5595, 1397, 7818, 5016, 4525, 4801, 6610, 4527, 1115, 4832, 5917, 4530, 8037, 4540, 504, 12672, 6628, 5999, 12675, 2]
-// Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
+// Dependencies: [19, 17, 2115, 4681, 6630, 1086, 5721, 21, 1189, 4837, 588, 10938, 558, 576, 4535, 4687, 10943, 10944, 7639, 5720, 5596, 1403, 7822, 5017, 4528, 4802, 6611, 4530, 1127, 4833, 4534, 8041, 5916, 4544, 504, 12674, 5997, 6629, 12677, 2]
 
-// Module 12671 (UserProfileConnections)
+// Module 12673 (UserProfileConnections)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import intl3 from "intl" /* 1115 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import useToken from "useToken" /* 4531 */;
-import shared from "shared" /* 4685 */;
-import HapticUtils from "HapticUtils" /* 4801 */;
-import Constants2 from "Constants" /* 5720 */;
-import TableRowGroup from "TableRowGroup" /* 5999 */;
-import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 7818 */;
-import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 11070 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11075 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11076 */;
-import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 12675 */;
-import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2112 */;
-import StreamerModeStore from "StreamerModeStore" /* 4679 */;
-import Constants_mod from "Constants" /* 6629 */;
-import Constants_mod2 from "Constants" /* 1074 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl3 from "intl" /* 1127 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import ToastUtils from "ToastUtils" /* 4530 */;
+import useToken from "useToken" /* 4535 */;
+import shared from "shared" /* 4687 */;
+import HapticUtils from "HapticUtils" /* 4802 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import Constants2 from "Constants" /* 5721 */;
+import TableRow2 from "TableRow" /* 5916 */;
+import TableRowGroup from "TableRowGroup" /* 5997 */;
+import ClipboardUtils from "ClipboardUtils" /* 6611 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 7822 */;
+import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 10938 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10943 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10944 */;
+import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 12677 */;
+import react_mod from "react" /* 19 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import StreamerModeStore from "StreamerModeStore" /* 4681 */;
+import Constants_mod from "Constants" /* 6630 */;
+import Constants_mod2 from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import native_mod from "native" /* 1177 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import native_mod from "native" /* 1189 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let application, applicationRoleConnection, dependencyMap;
+let application, copyResult, dependencyMap, handleClickResult, obj1;
 
 let CARD_PADDING;
 let c10;
@@ -47,42 +50,43 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-let tmp2;
-const UserProfileCardDefault = tmp2(6628);
-function VerifiedIcon(arg0) {
-  let isTwitterVerifiedAccount;
-  let items;
-  let theme;
-  ({ theme, isTwitterVerifiedAccount } = arg0);
-  if (isTwitterVerifiedAccount === undefined) {
-    isTwitterVerifiedAccount = false;
-  }
-  const tmp = closure_16();
-  const obj = { size: REFRESH_SMALL_16, style: tmp.verifiedIcon };
-  const obj2 = useToken;
-  let PLATFORM_TWITTER = obj2.useToken(nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, theme);
-  if (isTwitterVerifiedAccount) {
-    PLATFORM_TWITTER = tmp4(576).unsafe_rawColors.PLATFORM_TWITTER;
-  }
-  const tmp2Result = shared;
-  if (!tmp2Result.isThemeLight(theme)) {
-    let WHITE;
-    if (!isTwitterVerifiedAccount) {
-      WHITE = tmp4(576).unsafe_rawColors.BLACK;
+let tmp5;
+const UserProfileCardDefault = tmp5(6629);
+function generateMetadataForPlatform(arg0) {
+  let accountType;
+  let metadata;
+  let style;
+  ({ accountType, metadata, style } = arg0);
+  if (constants.REDDIT === accountType) {
+    const obj6 = ConnectionMetadataVanityItems;
+    return obj6.generateRedditMetadataItems(metadata, style);
+  } else if (constants.STEAM === accountType) {
+    const obj5 = ConnectionMetadataVanityItems;
+    return obj5.generateSteamMetadataItems(metadata, style);
+  } else {
+    if (constants.BLUESKY !== accountType) {
+      if (constants.TWITTER !== accountType) {
+        if (constants.MASTODON !== accountType) {
+          if (constants.PAYPAL === accountType) {
+            const obj3 = ConnectionMetadataVanityItems;
+            return obj3.generatePaypalMetadataItems(metadata, style);
+          } else if (constants.EBAY === accountType) {
+            const obj2 = ConnectionMetadataVanityItems;
+            return obj2.generateEbayMetadataItems(metadata, style);
+          } else if (constants.TIKTOK === accountType) {
+            const obj = ConnectionMetadataVanityItems;
+            return obj.generateTikTokMetadataItems(metadata, style);
+          } else {
+            return null;
+          }
+        }
+      }
     }
-    const obj3 = { style: tmp.verifiedIconContainer, children: items };
-    const obj4 = { source: AssetRegistryDefault, color: PLATFORM_TWITTER };
-    const Icon = tmp2(1177).Icon;
-    const merged = Object.assign(obj);
-    items = [closure_12(Icon, obj4), ];
-    const obj5 = { source: AssetRegistryDefault2, color: WHITE };
-    const Icon2 = tmp2(1177).Icon;
-    const merged1 = Object.assign(obj);
-    items[1] = closure_12(Icon2, obj5);
-    return map1(View, obj3);
+    const obj4 = ConnectionMetadataVanityItems;
+    return obj4.generateTwitterMetadataItems(metadata, style);
   }
-  WHITE = tmp4(576).unsafe_rawColors.WHITE;
 }
+let react = react_mod;
 const View = react_native.View;
 let Constants = Constants_mod2;
 ({ CARD_ROWS_ICON_SIZE: metroImportDefault, CARD_ROWS_ICON_SIZE_VARIANT: metroImportAll, CARD_PADDING } = Constants);
@@ -102,17 +106,597 @@ obj4 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 obj5 = { borderRadius: native.getIconSize(native.Icon.Sizes.MEDIUM) };
 native = native_mod;
 let closure_16 = createStyles(obj);
-let closure_18 = react.memo((userId) => {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let isTwitterVerifiedAccount;
+  let items;
+  let theme;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(12);
+  ({ theme, isTwitterVerifiedAccount } = arg0);
+  const tmp5 = closure_16();
+  if (cResult[0] !== tmp5.verifiedIcon) {
+    const obj2 = { size: REFRESH_SMALL_16, style: tmp5.verifiedIcon };
+    cResult[0] = tmp5.verifiedIcon;
+    cResult[1] = obj2;
+    tmp6 = obj2;
+  } else {
+    tmp6 = cResult[1];
+  }
+  const tmpResult = useToken;
+  let PLATFORM_TWITTER = tmpResult.useToken(nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, theme);
+  if (undefined !== isTwitterVerifiedAccount && isTwitterVerifiedAccount) {
+    PLATFORM_TWITTER = tmp8(588).unsafe_rawColors.PLATFORM_TWITTER;
+  }
+  const tmpResult2 = shared;
+  if (!tmpResult2.isThemeLight(theme)) {
+    let WHITE;
+    if (!(undefined !== isTwitterVerifiedAccount && isTwitterVerifiedAccount)) {
+      WHITE = tmp8(588).unsafe_rawColors.BLACK;
+    }
+    if (cResult[2] === PLATFORM_TWITTER) {
+      let tmp9;
+      if (cResult[3] === tmp6) {
+        tmp9 = cResult[4];
+      }
+      if (cResult[5] === WHITE) {
+        let tmp15;
+        if (cResult[6] === tmp6) {
+          tmp15 = cResult[7];
+        }
+        if (cResult[8] === tmp5.verifiedIconContainer) {
+          if (cResult[9] === tmp9) {
+            let tmp21;
+            if (cResult[10] === tmp15) {
+              tmp21 = cResult[11];
+            }
+            return tmp21;
+          }
+        }
+        const obj3 = { style: tmp5.verifiedIconContainer, children: items };
+        items = [tmp9, tmp15];
+        const tmp24 = map1(View, obj3);
+        cResult[8] = tmp5.verifiedIconContainer;
+        cResult[9] = tmp9;
+        cResult[10] = tmp15;
+        cResult[11] = tmp24;
+        tmp21 = tmp24;
+      }
+      const obj4 = { source: AssetRegistryDefault2, color: WHITE };
+      const Icon2 = tmp(1189).Icon;
+      const merged = Object.assign(tmp6);
+      const tmp20 = closure_12(Icon2, obj4);
+      cResult[5] = WHITE;
+      cResult[6] = tmp6;
+      cResult[7] = tmp20;
+      tmp15 = tmp20;
+    }
+    const obj5 = { source: AssetRegistryDefault, color: PLATFORM_TWITTER };
+    const Icon = tmp(1189).Icon;
+    const merged1 = Object.assign(tmp6);
+    const tmp14 = closure_12(Icon, obj5);
+    cResult[2] = PLATFORM_TWITTER;
+    cResult[3] = tmp6;
+    cResult[4] = tmp14;
+    tmp9 = tmp14;
+  }
+  WHITE = tmp8(588).unsafe_rawColors.WHITE;
+}) : ((arg0) => {
+  let isTwitterVerifiedAccount;
+  let items;
+  let theme;
+  ({ theme, isTwitterVerifiedAccount } = arg0);
+  if (isTwitterVerifiedAccount === undefined) {
+    isTwitterVerifiedAccount = false;
+  }
+  const tmp = closure_16();
+  const obj = { size: REFRESH_SMALL_16, style: tmp.verifiedIcon };
+  const obj2 = useToken;
+  let PLATFORM_TWITTER = obj2.useToken(nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, theme);
+  if (isTwitterVerifiedAccount) {
+    PLATFORM_TWITTER = tmp4(588).unsafe_rawColors.PLATFORM_TWITTER;
+  }
+  const tmp2Result = shared;
+  if (!tmp2Result.isThemeLight(theme)) {
+    let WHITE;
+    if (!isTwitterVerifiedAccount) {
+      WHITE = tmp4(588).unsafe_rawColors.BLACK;
+    }
+    const obj3 = { style: tmp.verifiedIconContainer, children: items };
+    const obj4 = { source: AssetRegistryDefault, color: PLATFORM_TWITTER };
+    const Icon = tmp2(1189).Icon;
+    const merged = Object.assign(obj);
+    items = [closure_12(Icon, obj4), ];
+    const obj5 = { source: AssetRegistryDefault2, color: WHITE };
+    const Icon2 = tmp2(1189).Icon;
+    const merged1 = Object.assign(obj);
+    items[1] = closure_12(Icon2, obj5);
+    return map1(View, obj3);
+  }
+  WHITE = tmp4(588).unsafe_rawColors.WHITE;
+});
+let memo = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  let locale;
+  let showMetadata;
+  let theme;
+  let trackUserProfileAction;
+  const tmp = userId;
+  let obj = userId(trackUserProfileAction[13]);
+  const cResult = obj.c(65);
+  userId = userId.userId;
+  const account = userId.account;
+  ({ theme, locale, showMetadata } = userId);
+  const tmp5 = closure_16();
+  const tmpResult = tmp(trackUserProfileAction[18]);
+  trackUserProfileAction = tmpResult.useUserProfileAnalyticsContext().trackUserProfileAction;
+  const tmpResult6 = tmp(trackUserProfileAction[14]);
+  const token = tmpResult6.useToken(account(tmp2[10]).modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
+  const tmpResult7 = tmp(trackUserProfileAction[14]);
+  const token1 = tmpResult7.useToken(account(tmp2[10]).modules.mobile.TABLE_ROW_LABEL_COLOR);
+  const tmp6 = account;
+  if (cResult[0] === account.metadata) {
+    if (cResult[1] === account.type) {
+      if (cResult[2] === locale) {
+        if (cResult[3] === (undefined === showMetadata || showMetadata)) {
+          let tmp9;
+          let tmp10;
+          if (cResult[4] === tmp5.metadataItem) {
+            tmp9 = cResult[5];
+            tmp10 = cResult[6];
+          }
+          if (cResult[8] === account) {
+            let tmp20;
+            if (cResult[9] === theme) {
+              react = cResult[10];
+              tmp20 = cResult[12];
+            }
+            let closure_4 = tmp20;
+            let tmp30 = account.type === constants.TWITTER;
+            if (tmp30) {
+              let str = "1";
+              tmp30 = "1" === tmp10[MetadataFields.TWITTER_VERIFIED];
+            }
+            if (cResult[13] === account.type) {
+              if (cResult[14] === tmp20) {
+                if (cResult[15] === trackUserProfileAction) {
+                  if (cResult[18] === account.name) {
+                    if (cResult[21] === account.name) {
+                      if (cResult[22] === tmp9) {
+                        let obj7;
+                        let name;
+                        const tmp34 = cResult[23];
+                        class H {
+                          constructor() {
+                            tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
+                            obj = closure_0(closure_2[25]);
+                            result = obj.triggerHapticFeedback(closure_0(closure_2[25]).HapticFeedbackTypes.IMPACT_LIGHT);
+                            obj2 = closure_0(closure_2[26]);
+                            copyResult = obj2.copy(account.name);
+                            obj3 = closure_0(closure_2[27]);
+                            result1 = obj3.presentCopiedToClipboard();
+                            return;
+                          }
+                        }
+                        if (tmp34 === undefined) {
+                          obj7 = cResult[24];
+                        }
+                        const joined = obj7.join(", ");
+                        class U {
+                          constructor() {
+                            if (null != closure_4) {
+                              tmp2 = trackUserProfileAction;
+                              tmp3 = trackUserProfileAction({ action: "PRESS_VIEW_CONNECTED_ACCOUNT" });
+                              tmp4 = closure_0;
+                              tmp5 = closure_2;
+                              obj = closure_0(closure_2[22]);
+                              obj1 = { href: null, trusted: null, onConfirm: null };
+                              obj1.href = tmp;
+                              tmp6 = account;
+                              tmp7 = PlatformTypes;
+                              obj1.trusted = account.type !== PlatformTypes.DOMAIN;
+                              obj1.onConfirm = function onConfirm() { /* body not rendered: F141375 */ };
+                              handleClickResult = obj.handleClick(obj1);
+                            }
+                            return;
+                          }
+                        }
+                        const tmp45 = cResult[27];
+                        if (tmp18 != null) {
+                          name = tmp18.name;
+                        }
+                        if (tmp45 === name) {
+                          let tmp46;
+                          if (cResult[28] === tmp20) {
+                            tmp46 = cResult[29];
+                          }
+                          if (cResult[30] !== tmp46) {
+                            const tmp46Result = tmp46();
+                            class H {
+                              constructor() {
+                                tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
+                                obj = closure_0(closure_2[25]);
+                                result = obj.triggerHapticFeedback(closure_0(closure_2[25]).HapticFeedbackTypes.IMPACT_LIGHT);
+                                obj2 = closure_0(closure_2[26]);
+                                copyResult = obj2.copy(account.name);
+                                obj3 = closure_0(closure_2[27]);
+                                result1 = obj3.presentCopiedToClipboard();
+                                return;
+                              }
+                            }
+                            cResult[31] = tmp46Result;
+                          }
+                          class H {
+                            constructor() {
+                              tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
+                              obj = closure_0(closure_2[25]);
+                              result = obj.triggerHapticFeedback(closure_0(closure_2[25]).HapticFeedbackTypes.IMPACT_LIGHT);
+                              obj2 = closure_0(closure_2[26]);
+                              copyResult = obj2.copy(account.name);
+                              obj3 = closure_0(closure_2[27]);
+                              result1 = obj3.presentCopiedToClipboard();
+                              return;
+                            }
+                          }
+                          let obj2 = { variant: token, color: null, style: tmp5.connectedAccountNameText, lineClamp: 2, children: account.name };
+                          class U {
+                            constructor() {
+                              if (null != closure_4) {
+                                tmp2 = trackUserProfileAction;
+                                tmp3 = trackUserProfileAction({ action: "PRESS_VIEW_CONNECTED_ACCOUNT" });
+                                tmp4 = closure_0;
+                                tmp5 = closure_2;
+                                obj = closure_0(closure_2[22]);
+                                obj1 = { href: null, trusted: null, onConfirm: null };
+                                obj1.href = tmp;
+                                tmp6 = account;
+                                tmp7 = PlatformTypes;
+                                obj1.trusted = account.type !== PlatformTypes.DOMAIN;
+                                obj1.onConfirm = function onConfirm() { /* body not rendered: F141375 */ };
+                                handleClickResult = obj.handleClick(obj1);
+                              }
+                              return;
+                            }
+                          }
+                          cResult[32] = account.name;
+                          const tmp52 = closure_12(tmp(trackUserProfileAction[29]).Text, obj2);
+                          class Y {
+                            constructor() {
+                              if (null != closure_4) {
+                                tmp6 = closure_0;
+                                tmp7 = closure_2;
+                                intl2 = closure_0(closure_2[28]).intl;
+                                tmp8 = closure_0;
+                                tmp9 = closure_2;
+                                stringResult = intl2.string(closure_0(closure_2[28]).t.wuRE8M);
+                              } else {
+                                tmp = closure_0;
+                                tmp2 = closure_2;
+                                intl = closure_0(closure_2[28]).intl;
+                                tmp3 = closure_0;
+                                tmp4 = closure_2;
+                                formatToPlainString = intl.formatToPlainString;
+                                str = undefined;
+                                OKzaN3 = closure_0(closure_2[28]).t.OKzaN3;
+                                if (closure_3 != null) {
+                                  str = closure_3.name;
+                                }
+                                if (str == null) {
+                                  str = "";
+                                }
+                                obj = { name: null };
+                                obj.name = str;
+                                stringResult = formatToPlainString(OKzaN3, obj);
+                              }
+                              return stringResult;
+                            }
+                          }
+                          cResult[33] = token1;
+                          cResult[34] = token;
+                          cResult[35] = tmp5.connectedAccountNameText;
+                          cResult[36] = tmp52;
+                        }
+                        let name1;
+                        if (tmp18 != null) {
+                          name1 = tmp18.name;
+                        }
+                        class Y {
+                          constructor() {
+                            if (null != closure_4) {
+                              tmp6 = closure_0;
+                              tmp7 = closure_2;
+                              intl2 = closure_0(closure_2[28]).intl;
+                              tmp8 = closure_0;
+                              tmp9 = closure_2;
+                              stringResult = intl2.string(closure_0(closure_2[28]).t.wuRE8M);
+                            } else {
+                              tmp = closure_0;
+                              tmp2 = closure_2;
+                              intl = closure_0(closure_2[28]).intl;
+                              tmp3 = closure_0;
+                              tmp4 = closure_2;
+                              formatToPlainString = intl.formatToPlainString;
+                              str = undefined;
+                              OKzaN3 = closure_0(closure_2[28]).t.OKzaN3;
+                              if (closure_3 != null) {
+                                str = closure_3.name;
+                              }
+                              if (str == null) {
+                                str = "";
+                              }
+                              obj = { name: null };
+                              obj.name = str;
+                              stringResult = formatToPlainString(OKzaN3, obj);
+                            }
+                            return stringResult;
+                          }
+                        }
+                        cResult[27] = name1;
+                        cResult[28] = tmp20;
+                        cResult[29] = Y;
+                        tmp46 = Y;
+                      }
+                    }
+                    class H {
+                      constructor() {
+                        tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
+                        obj = closure_0(closure_2[25]);
+                        result = obj.triggerHapticFeedback(closure_0(closure_2[25]).HapticFeedbackTypes.IMPACT_LIGHT);
+                        obj2 = closure_0(closure_2[26]);
+                        copyResult = obj2.copy(account.name);
+                        obj3 = closure_0(closure_2[27]);
+                        result1 = obj3.presentCopiedToClipboard();
+                        return;
+                      }
+                    }
+                    let name2;
+                    const push = arr2.push;
+                    if (tmp18 != null) {
+                      name2 = tmp18.name;
+                    }
+                    class U {
+                      constructor() {
+                        if (null != closure_4) {
+                          tmp2 = trackUserProfileAction;
+                          tmp3 = trackUserProfileAction({ action: "PRESS_VIEW_CONNECTED_ACCOUNT" });
+                          tmp4 = closure_0;
+                          tmp5 = closure_2;
+                          obj = closure_0(closure_2[22]);
+                          obj1 = { href: null, trusted: null, onConfirm: null };
+                          obj1.href = tmp;
+                          tmp6 = account;
+                          tmp7 = PlatformTypes;
+                          obj1.trusted = account.type !== PlatformTypes.DOMAIN;
+                          obj1.onConfirm = function onConfirm() { /* body not rendered: F141375 */ };
+                          handleClickResult = obj.handleClick(obj1);
+                        }
+                        return;
+                      }
+                    }
+                    push(name2);
+                    arr2.push(account.name);
+                    if (null != tmp9) {
+                      let tmp39;
+                      if (cResult[25] !== tmp9) {
+                        let intl = tmp(tmp2[28]).intl;
+                        let formatToPlainString = intl.formatToPlainString;
+                        class H {
+                          constructor() {
+                            tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
+                            obj = closure_0(closure_2[25]);
+                            result = obj.triggerHapticFeedback(closure_0(closure_2[25]).HapticFeedbackTypes.IMPACT_LIGHT);
+                            obj2 = closure_0(closure_2[26]);
+                            copyResult = obj2.copy(account.name);
+                            obj3 = closure_0(closure_2[27]);
+                            result1 = obj3.presentCopiedToClipboard();
+                            return;
+                          }
+                        }
+                        tmp40[0] = tmp9;
+                        const formatToPlainStringResult = formatToPlainString(tmp(trackUserProfileAction[28]).t["9rfonh"], tmp40);
+                        class U {
+                          constructor() {
+                            if (null != closure_4) {
+                              tmp2 = trackUserProfileAction;
+                              tmp3 = trackUserProfileAction({ action: "PRESS_VIEW_CONNECTED_ACCOUNT" });
+                              tmp4 = closure_0;
+                              tmp5 = closure_2;
+                              obj = closure_0(closure_2[22]);
+                              obj1 = { href: null, trusted: null, onConfirm: null };
+                              obj1.href = tmp;
+                              tmp6 = account;
+                              tmp7 = PlatformTypes;
+                              obj1.trusted = account.type !== PlatformTypes.DOMAIN;
+                              obj1.onConfirm = function onConfirm() { /* body not rendered: F141375 */ };
+                              handleClickResult = obj.handleClick(obj1);
+                            }
+                            return;
+                          }
+                        }
+                        cResult[26] = formatToPlainStringResult;
+                        tmp39 = formatToPlainStringResult;
+                      } else {
+                        tmp39 = cResult[26];
+                      }
+                      arr2.push(tmp39);
+                    }
+                    cResult[21] = account.name;
+                    cResult[22] = tmp9;
+                    let name3;
+                    if (tmp18 != null) {
+                      name3 = tmp18.name;
+                    }
+                    cResult[23] = name3;
+                    cResult[24] = arr2;
+                    obj7 = arr2;
+                  }
+                  class H {
+                    constructor() {
+                      tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
+                      obj = closure_0(closure_2[25]);
+                      result = obj.triggerHapticFeedback(closure_0(closure_2[25]).HapticFeedbackTypes.IMPACT_LIGHT);
+                      obj2 = closure_0(closure_2[26]);
+                      copyResult = obj2.copy(account.name);
+                      obj3 = closure_0(closure_2[27]);
+                      result1 = obj3.presentCopiedToClipboard();
+                      return;
+                    }
+                  }
+                  cResult[18] = account.name;
+                  class U {
+                    constructor() {
+                      if (null != closure_4) {
+                        tmp2 = trackUserProfileAction;
+                        tmp3 = trackUserProfileAction({ action: "PRESS_VIEW_CONNECTED_ACCOUNT" });
+                        tmp4 = closure_0;
+                        tmp5 = closure_2;
+                        obj = closure_0(closure_2[22]);
+                        obj1 = { href: null, trusted: null, onConfirm: null };
+                        obj1.href = tmp;
+                        tmp6 = account;
+                        tmp7 = PlatformTypes;
+                        obj1.trusted = account.type !== PlatformTypes.DOMAIN;
+                        obj1.onConfirm = function onConfirm() { /* body not rendered: F141375 */ };
+                        handleClickResult = obj.handleClick(obj1);
+                      }
+                      return;
+                    }
+                  }
+                  cResult[20] = H;
+                }
+              }
+            }
+            class U {
+              constructor() {
+                if (null != closure_4) {
+                  tmp2 = trackUserProfileAction;
+                  tmp3 = trackUserProfileAction({ action: "PRESS_VIEW_CONNECTED_ACCOUNT" });
+                  tmp4 = closure_0;
+                  tmp5 = closure_2;
+                  obj = closure_0(closure_2[22]);
+                  obj1 = { href: null, trusted: null, onConfirm: null };
+                  obj1.href = tmp;
+                  tmp6 = account;
+                  tmp7 = PlatformTypes;
+                  obj1.trusted = account.type !== PlatformTypes.DOMAIN;
+                  obj1.onConfirm = function onConfirm() { /* body not rendered: F141375 */ };
+                  handleClickResult = obj.handleClick(obj1);
+                }
+                return;
+              }
+            }
+            cResult[13] = account.type;
+            cResult[14] = tmp20;
+            cResult[16] = userId;
+            cResult[17] = U;
+          }
+          tmp6(trackUserProfileAction[20]);
+          react = tmp22;
+          const makeSource = tmp(tmp2[21]).makeSource;
+          tmp(trackUserProfileAction[21]);
+          tmp(trackUserProfileAction[15]);
+          const source = makeSource(tmp26);
+          if (tmp22 != null) {
+            const getPlatformUserUrl = tmp22.getPlatformUserUrl;
+            class H {
+              constructor() {
+                tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
+                obj = closure_0(closure_2[25]);
+                result = obj.triggerHapticFeedback(closure_0(closure_2[25]).HapticFeedbackTypes.IMPACT_LIGHT);
+                obj2 = closure_0(closure_2[26]);
+                copyResult = obj2.copy(account.name);
+                obj3 = closure_0(closure_2[27]);
+                result1 = obj3.presentCopiedToClipboard();
+                return;
+              }
+            }
+          }
+          cResult[8] = account;
+          cResult[9] = theme;
+          cResult[10] = tmp22;
+          cResult[11] = source;
+          cResult[12] = undefined;
+          tmp20 = tmp28;
+        }
+      }
+    }
+  }
+  let metadata = account.metadata;
+  if (metadata == null) {
+    metadata = {};
+  }
+  if (undefined === showMetadata || showMetadata) {
+    tmp(trackUserProfileAction[19]);
+    class H {
+      constructor() {
+        tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
+        obj = closure_0(closure_2[25]);
+        result = obj.triggerHapticFeedback(closure_0(closure_2[25]).HapticFeedbackTypes.IMPACT_LIGHT);
+        obj2 = closure_0(closure_2[26]);
+        copyResult = obj2.copy(account.name);
+        obj3 = closure_0(closure_2[27]);
+        result1 = obj3.presentCopiedToClipboard();
+        return;
+      }
+    }
+  }
+  if (undefined === showMetadata || showMetadata) {
+    let obj3 = { accountType: null, metadata, style: tmp5.metadataItem };
+    class H {
+      constructor() {
+        tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
+        obj = closure_0(closure_2[25]);
+        result = obj.triggerHapticFeedback(closure_0(closure_2[25]).HapticFeedbackTypes.IMPACT_LIGHT);
+        obj2 = closure_0(closure_2[26]);
+        copyResult = obj2.copy(account.name);
+        obj3 = closure_0(closure_2[27]);
+        result1 = obj3.presentCopiedToClipboard();
+        return;
+      }
+    }
+    class U {
+      constructor() {
+        if (null != closure_4) {
+          tmp2 = trackUserProfileAction;
+          tmp3 = trackUserProfileAction({ action: "PRESS_VIEW_CONNECTED_ACCOUNT" });
+          tmp4 = closure_0;
+          tmp5 = closure_2;
+          obj = closure_0(closure_2[22]);
+          obj1 = { href: null, trusted: null, onConfirm: null };
+          obj1.href = tmp;
+          tmp6 = account;
+          tmp7 = PlatformTypes;
+          obj1.trusted = account.type !== PlatformTypes.DOMAIN;
+          obj1.onConfirm = function onConfirm() { /* body not rendered: F141375 */ };
+          handleClickResult = obj.handleClick(obj1);
+        }
+        return;
+      }
+    }
+  }
+  cResult[0] = account.metadata;
+  cResult[1] = account.type;
+  cResult[2] = locale;
+  cResult[3] = undefined === showMetadata || showMetadata;
+  cResult[4] = tmp5.metadataItem;
+  cResult[5] = null;
+  cResult[6] = metadata;
+  cResult[7] = null;
+  tmp10 = metadata;
+  tmp9 = tmp11;
+}) : ((userId) => {
   let intl;
   let items4;
   let lightPNG;
-  let obj12;
-  let obj8;
+  let obj13;
+  let obj9;
   let showMetadata;
   let theme;
-  let tmp28Result2;
-  let tmp30Result6;
-  let tmp39;
+  let tmp27Result2;
+  let tmp29Result6;
+  let tmp38;
   let user;
   userId = userId.userId;
   const account = userId.account;
@@ -127,11 +711,11 @@ let closure_18 = react.memo((userId) => {
   let platformUserUrl;
   const tmp = closure_16();
   const tmp3 = trackUserProfileAction;
-  let obj = userId(trackUserProfileAction[16]);
+  let obj = userId(trackUserProfileAction[18]);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
-  let obj2 = userId(trackUserProfileAction[12]);
+  let obj2 = userId(trackUserProfileAction[14]);
   const token = obj2.useToken(account(trackUserProfileAction[10]).modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
-  let obj3 = userId(trackUserProfileAction[12]);
+  let obj3 = userId(trackUserProfileAction[14]);
   let metadata = account.metadata;
   const token1 = obj3.useToken(account(trackUserProfileAction[10]).modules.mobile.TABLE_ROW_LABEL_COLOR);
   const tmp4 = account;
@@ -140,53 +724,22 @@ let closure_18 = react.memo((userId) => {
   }
   createdAtDate = null;
   if (showMetadata) {
-    const tmp2Result = userId(tmp3[17]);
+    const tmp2Result = userId(tmp3[19]);
     createdAtDate = tmp2Result.getCreatedAtDate(metadata[MetadataFields.CREATED_AT], locale);
   }
   let tmp9 = null;
   if (showMetadata) {
-    let redditMetadataItems;
-    const type = account.type;
-    const metadataItem = tmp.metadataItem;
-    if (constants.REDDIT === type) {
-      const tmp2Result9 = userId(tmp3[11]);
-      redditMetadataItems = tmp2Result9.generateRedditMetadataItems(metadata, metadataItem);
-    } else if (constants.STEAM === type) {
-      const tmp2Result10 = userId(tmp3[11]);
-      redditMetadataItems = tmp2Result10.generateSteamMetadataItems(metadata, metadataItem);
-    } else {
-      if (constants.BLUESKY !== type) {
-        if (constants.TWITTER !== type) {
-          if (constants.MASTODON !== type) {
-            if (constants.PAYPAL === type) {
-              const tmp2Result11 = userId(tmp3[11]);
-              redditMetadataItems = tmp2Result11.generatePaypalMetadataItems(metadata, metadataItem);
-            } else if (constants.EBAY === type) {
-              const tmp2Result12 = userId(tmp3[11]);
-              redditMetadataItems = tmp2Result12.generateEbayMetadataItems(metadata, metadataItem);
-            } else {
-              redditMetadataItems = null;
-              if (constants.TIKTOK === type) {
-                const tmp2Result13 = userId(tmp3[11]);
-                redditMetadataItems = tmp2Result13.generateTikTokMetadataItems(metadata, metadataItem);
-              }
-            }
-          }
-        }
-      }
-      const tmp2Result14 = userId(tmp3[11]);
-      redditMetadataItems = tmp2Result14.generateTwitterMetadataItems(metadata, metadataItem);
-    }
-    tmp9 = redditMetadataItems;
+    const obj4 = { accountType: account.type, metadata, style: tmp.metadataItem };
+    tmp9 = generateMetadataForPlatform(obj4);
   }
-  const tmp12 = null != tmp9 && tmp9.length > 0;
-  const tmp4Result = tmp4(tmp3[18]);
+  const tmp11 = null != tmp9 && tmp9.length > 0;
+  const tmp4Result = tmp4(tmp3[20]);
   const value = tmp4Result.get(account.type);
   c4 = value;
-  const makeSource = tmp2(tmp3[19]).makeSource;
-  userId(tmp3[19]);
-  const tmp2Result16 = userId(tmp3[13]);
-  if (tmp2Result16.isThemeDark(theme)) {
+  const makeSource = tmp2(tmp3[21]).makeSource;
+  userId(tmp3[21]);
+  const tmp2Result4 = userId(tmp3[15]);
+  if (tmp2Result4.isThemeDark(theme)) {
     let darkPNG;
     if (value != null) {
       darkPNG = value.icon.darkPNG;
@@ -203,10 +756,10 @@ let closure_18 = react.memo((userId) => {
       platformUserUrl = getPlatformUserUrl(account);
     }
   }
-  let tmp19 = account.type === constants.TWITTER;
-  if (tmp19) {
+  let tmp18 = account.type === constants.TWITTER;
+  if (tmp18) {
     let str = "1";
-    tmp19 = "1" === metadata[MetadataFields.TWITTER_VERIFIED];
+    tmp18 = "1" === metadata[MetadataFields.TWITTER_VERIFIED];
   }
   let items = [account.type, platformUserUrl, trackUserProfileAction, userId];
   const items1 = [account.name, trackUserProfileAction];
@@ -220,10 +773,10 @@ let closure_18 = react.memo((userId) => {
         href: tmp,
         trusted: account.type !== constants.DOMAIN,
         onConfirm() {
-            const obj = userId(trackUserProfileAction[21]);
+            const obj = userId(trackUserProfileAction[23]);
             const obj2 = { platform_type: type.type, other_user_id };
             obj.trackWithMetadata(constants.CONNECTED_ACCOUNT_VIEWED, obj2);
-            const obj3 = account(trackUserProfileAction[22]);
+            const obj3 = account(trackUserProfileAction[24]);
             obj3.openURL(platformUserUrl);
           }
       };
@@ -242,7 +795,7 @@ let closure_18 = react.memo((userId) => {
   const items2 = [account.name, createdAtDate, ];
   let name;
   const useMemo = createdAtDate.useMemo;
-  const tmp21 = createdAtDate;
+  const tmp20 = createdAtDate;
   if (value != null) {
     name = value.name;
   }
@@ -268,12 +821,12 @@ let closure_18 = react.memo((userId) => {
     }
     return items.join(", ");
   }, items2);
-  const useMemo2 = tmp21.useMemo;
+  const useMemo2 = tmp20.useMemo;
   if (value != null) {
     name1 = value.name;
   }
   const items3 = [name1, platformUserUrl];
-  const obj4 = { style: tmp.connectedAccountName, children: items4 };
+  const obj5 = { style: tmp.connectedAccountName, children: items4 };
   const memo2 = useMemo2(() => {
     let stringResult;
     if (null != platformUserUrl) {
@@ -296,56 +849,179 @@ let closure_18 = react.memo((userId) => {
     return stringResult;
   }, items3);
   items4 = [, ];
-  const obj5 = { variant: token, color: token1, style: tmp.connectedAccountNameText, lineClamp: 2, children: account.name };
-  items4[0] = closure_12(userId(tmp3[27]).Text, obj5);
-  let tmp30Result = null;
+  const obj6 = { variant: token, color: token1, style: tmp.connectedAccountNameText, lineClamp: 2, children: account.name };
+  items4[0] = closure_12(userId(tmp3[29]).Text, obj6);
+  let tmp29Result = null;
   if (account.verified) {
-    const obj6 = { theme, isTwitterVerifiedAccount: tmp19 };
-    tmp30Result = tmp30(VerifiedIcon, obj6);
+    const obj7 = { theme, isTwitterVerifiedAccount: tmp18 };
+    tmp29Result = tmp29(closure_18, obj7);
   }
-  items4[1] = tmp30Result;
-  const tmp28Result = closure_13(c4, obj4);
+  items4[1] = tmp29Result;
+  const tmp27Result = closure_13(c4, obj5);
   if (null != createdAtDate) {
-    let tmp30Result4 = null;
-    const tmp35 = closure_14;
+    let tmp29Result4 = null;
+    const tmp34 = closure_14;
     if (null != createdAtDate) {
-      const obj7 = { variant: "text-xs/medium", color: "text-subtle", children: intl.format(userId(tmp3[26]).t["9rfonh"], obj8) };
-      const Text = tmp2(tmp3[27]).Text;
-      intl = tmp2(tmp3[26]).intl;
-      obj8 = { date: createdAtDate };
-      tmp30Result4 = tmp30(Text, obj7);
+      const obj8 = { variant: "text-xs/medium", color: "text-subtle", children: intl.format(userId(tmp3[28]).t["9rfonh"], obj9) };
+      const Text = tmp2(tmp3[29]).Text;
+      intl = tmp2(tmp3[28]).intl;
+      obj9 = { date: createdAtDate };
+      tmp29Result4 = tmp29(Text, obj8);
     }
-    const items5 = [tmp30Result4, ];
-    let tmp30Result5 = null;
-    if (tmp12) {
-      const obj9 = { style: tmp.connectionMetadata, children: tmp9 };
-      tmp30Result5 = tmp30(tmp29, obj9);
+    const items5 = [tmp29Result4, ];
+    let tmp29Result5 = null;
+    if (tmp11) {
+      const obj10 = { style: tmp.connectionMetadata, children: tmp9 };
+      tmp29Result5 = tmp29(tmp28, obj10);
     }
-    const obj10 = { children: items5 };
-    items5[1] = tmp30Result5;
-    tmp28Result2 = closure_13(tmp35, obj10);
+    const obj11 = { children: items5 };
+    items5[1] = tmp29Result5;
+    tmp27Result2 = closure_13(tmp34, obj11);
   }
-  const obj11 = { label: tmp28Result, subLabel: tmp28Result2, icon: closure_12(userId(tmp3[29]).BaseIconImage, obj12), trailing: tmp30Result6, onPress: tmp39, onLongPress: callback1, accessibilityLabel: memo, accessibilityHint: memo2, accessibilityRole: "button" };
-  const TableRow = tmp2(tmp3[28]).TableRow;
-  tmp30Result6 = undefined;
-  obj12 = { size, source };
+  const obj12 = { label: tmp27Result, subLabel: tmp27Result2, icon: closure_12(userId(tmp3[30]).BaseIconImage, obj13), trailing: tmp29Result6, onPress: tmp38, onLongPress: callback1, accessibilityLabel: memo, accessibilityHint: memo2, accessibilityRole: "button" };
+  const TableRow = tmp2(tmp3[32]).TableRow;
+  tmp29Result6 = undefined;
+  obj13 = { size, source };
   if (null != platformUserUrl) {
-    const obj13 = { size: "sm", style: tmp.linkIcon };
-    tmp30Result6 = tmp30(tmp2(tmp3[30]).LinkExternalSmallIcon, obj13);
+    const obj14 = { size: "sm", style: tmp.linkIcon };
+    tmp29Result6 = tmp29(tmp2(tmp3[31]).LinkExternalSmallIcon, obj14);
   }
-  tmp39 = callback1;
+  tmp38 = callback1;
   if (null != platformUserUrl) {
-    tmp39 = callback;
+    tmp38 = callback;
   }
-  return closure_12(TableRow, obj11);
-});
-let closure_19 = react.memo((application) => {
+  return closure_12(TableRow, obj12);
+}));
+let memo2 = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
+  let tmp5;
+  let trackUserProfileAction;
+  let obj = trackUserProfileAction(576);
+  const cResult = obj.c(19);
+  application = application.application;
+  const identity = application.identity;
+  const tmp4 = closure_16();
+  let obj2 = trackUserProfileAction(7639);
+  trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
+  if (cResult[0] !== application) {
+    const iconSource = application.getIconSource(closure_7);
+    cResult[0] = application;
+    cResult[1] = iconSource;
+    tmp5 = iconSource;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const profile = identity.profile;
+  let str;
+  if (profile != null) {
+    str = profile.username;
+  }
+  if (str == null) {
+    str = "";
+  }
+  if (cResult[2] === str) {
+    let tmp8;
+    if (cResult[3] === trackUserProfileAction) {
+      tmp8 = cResult[4];
+    }
+    if (cResult[5] === application.name) {
+      let obj3;
+      let tmp12;
+      if (cResult[6] === str) {
+        obj3 = cResult[7];
+      }
+      const joined = obj3.join(", ");
+      if (cResult[8] !== application.name) {
+        const intl = tmp(1127).intl;
+        const obj4 = { name: application.name };
+        const formatToPlainStringResult = intl.formatToPlainString(trackUserProfileAction(1127).t.OKzaN3, obj4);
+        cResult[8] = application.name;
+        cResult[9] = formatToPlainStringResult;
+        tmp12 = formatToPlainStringResult;
+      } else {
+        tmp12 = cResult[9];
+      }
+      if (cResult[10] === tmp5) {
+        let tmp14;
+        if (cResult[11] === tmp4) {
+          tmp14 = cResult[12];
+        }
+        if (cResult[13] === tmp12) {
+          if (cResult[14] === joined) {
+            if (cResult[15] === tmp8) {
+              if (cResult[16] === str) {
+                let tmp18;
+                if (cResult[17] === tmp14) {
+                  tmp18 = cResult[18];
+                }
+                return tmp18;
+              }
+            }
+          }
+        }
+        const obj5 = { label: str, icon: tmp14, onPress: tmp8, onLongPress: tmp8, accessibilityLabel: joined, accessibilityHint: tmp12, accessibilityRole: "button" };
+        cResult[13] = tmp12;
+        cResult[14] = joined;
+        cResult[15] = tmp8;
+        cResult[16] = str;
+        cResult[17] = tmp14;
+        const tmp20 = closure_12(trackUserProfileAction(5916).TableRow, obj5);
+        class C {
+          constructor() {
+            tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
+            obj = closure_0(closure_2[25]);
+            result = obj.triggerHapticFeedback(closure_0(closure_2[25]).HapticFeedbackTypes.IMPACT_LIGHT);
+            obj2 = closure_0(closure_2[26]);
+            copyResult = obj2.copy(c1);
+            obj3 = closure_0(closure_2[27]);
+            result1 = obj3.presentCopiedToClipboard();
+            return;
+          }
+        }
+        tmp18 = tmp20;
+      }
+      let tmp15;
+      if (null != tmp5) {
+        const obj6 = { size, source: tmp5, style: tmp4.applicationIcon };
+        tmp15 = closure_12(tmp(4534).BaseIconImage, obj6);
+      }
+      cResult[10] = tmp5;
+      cResult[11] = tmp4;
+      cResult[12] = tmp15;
+      tmp14 = tmp15;
+    }
+    const items = [];
+    items.push(application.name);
+    items.push(str);
+    cResult[5] = application.name;
+    cResult[6] = str;
+    cResult[7] = items;
+    obj3 = items;
+  }
+  class C {
+    constructor() {
+      tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
+      obj = closure_0(closure_2[25]);
+      result = obj.triggerHapticFeedback(closure_0(closure_2[25]).HapticFeedbackTypes.IMPACT_LIGHT);
+      obj2 = closure_0(closure_2[26]);
+      copyResult = obj2.copy(c1);
+      obj3 = closure_0(closure_2[27]);
+      result1 = obj3.presentCopiedToClipboard();
+      return;
+    }
+  }
+  cResult[2] = str;
+  cResult[3] = trackUserProfileAction;
+  cResult[4] = C;
+  tmp8 = C;
+}) : ((application) => {
   let tmp8Result;
   application = application.application;
   let str;
   const identity = application.identity;
   const tmp = closure_16();
-  let obj = application(str[16]);
+  let obj = application(str[18]);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   const iconSource = application.getIconSource(closure_7);
   const profile = identity.profile;
@@ -381,14 +1057,169 @@ let closure_19 = react.memo((application) => {
   }, items2);
   let obj2 = { label: str, icon: tmp8Result, onPress: callback, onLongPress: callback, accessibilityLabel: memo, accessibilityHint: memo1, accessibilityRole: "button" };
   tmp8Result = undefined;
-  const TableRow = tmp2(tmp3[28]).TableRow;
+  const TableRow = tmp2(tmp3[32]).TableRow;
   if (null != iconSource) {
     let obj3 = { size, source: iconSource, style: tmp.applicationIcon };
-    tmp8Result = tmp8(tmp2(tmp3[29]).BaseIconImage, obj3);
+    tmp8Result = tmp8(tmp2(tmp3[30]).BaseIconImage, obj3);
   }
   return closure_12(TableRow, obj2);
-});
-const memoResult = react.memo((applicationRoleConnection) => {
+}));
+const memo3 = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((applicationRoleConnection) => {
+  let arr;
+  let items;
+  const obj = react2;
+  const cResult = obj.c(28);
+  applicationRoleConnection = applicationRoleConnection.applicationRoleConnection;
+  const tmp4 = closure_16();
+  if (cResult[0] !== applicationRoleConnection) {
+    const tmpResult = ConnectionMetadataVanityItems;
+    const roleConnectionMetadataItems = tmpResult.generateRoleConnectionMetadataItems(applicationRoleConnection);
+    cResult[0] = applicationRoleConnection;
+    cResult[1] = roleConnectionMetadataItems;
+    arr = roleConnectionMetadataItems;
+  } else {
+    arr = cResult[1];
+  }
+  if (cResult[2] === applicationRoleConnection.application.icon) {
+    let tmp6;
+    if (cResult[3] === applicationRoleConnection.application.id) {
+      tmp6 = cResult[4];
+    }
+    if (cResult[5] === applicationRoleConnection.platform_name) {
+      let tmp8;
+      if (cResult[6] === applicationRoleConnection.platform_username) {
+        tmp8 = cResult[7];
+      }
+      if (cResult[8] === arr) {
+        let tmp12;
+        let tmp17;
+        let tmp19;
+        if (cResult[9] === tmp4.connectionMetadata) {
+          tmp12 = cResult[10];
+        }
+        const poweredByContainer = tmp4.poweredByContainer;
+        if (cResult[11] !== applicationRoleConnection.application.name) {
+          const intl = tmp(1127).intl;
+          const obj2 = {
+            applicationHook() {
+                      return applicationRoleConnection.application.name;
+                    }
+          };
+          const formatResult = intl.format(intl3.t.zIT9YA, obj2);
+          cResult[11] = applicationRoleConnection.application.name;
+          cResult[12] = formatResult;
+          tmp17 = formatResult;
+        } else {
+          tmp17 = cResult[12];
+        }
+        if (cResult[13] !== tmp17) {
+          const obj4 = { variant: "text-xs/medium", color: "text-muted", children: tmp17 };
+          const tmp21 = closure_12(Text_Text.Text, obj4);
+          cResult[13] = tmp17;
+          cResult[14] = tmp21;
+          tmp19 = tmp21;
+        } else {
+          tmp19 = cResult[14];
+        }
+        if (cResult[15] === tmp4.poweredByContainer) {
+          let tmp22;
+          if (cResult[16] === tmp19) {
+            tmp22 = cResult[17];
+          }
+          if (cResult[18] === tmp8) {
+            if (cResult[19] === tmp12) {
+              let tmp26;
+              let tmp31;
+              if (cResult[20] === tmp22) {
+                tmp26 = cResult[21];
+              }
+              let name = applicationRoleConnection.platform_name;
+              if (name == null) {
+                name = applicationRoleConnection.platform_username;
+              }
+              if (name == null) {
+                name = applicationRoleConnection.application.name;
+              }
+              if (cResult[22] !== tmp6) {
+                const obj5 = { size: native.Icon.Sizes.MEDIUM, source: tmp6, disableColor: true };
+                const Icon = tmp(1189).Icon;
+                const tmp33 = closure_12(Icon, obj5);
+                cResult[22] = tmp6;
+                cResult[23] = tmp33;
+                tmp31 = tmp33;
+              } else {
+                tmp31 = cResult[23];
+              }
+              if (cResult[24] === tmp26) {
+                if (cResult[25] === name) {
+                  let tmp34;
+                  if (cResult[26] === tmp31) {
+                    tmp34 = cResult[27];
+                  }
+                  return tmp34;
+                }
+              }
+              const obj6 = { label: name, subLabel: tmp26, icon: tmp31 };
+              const tmp36 = closure_12(TableRow2.TableRow, obj6);
+              cResult[24] = tmp26;
+              cResult[25] = name;
+              cResult[26] = tmp31;
+              cResult[27] = tmp36;
+              tmp34 = tmp36;
+            }
+          }
+          const obj7 = { children: items };
+          items = [tmp8, tmp12, tmp22];
+          const tmp29 = map1(authStore2, obj7);
+          cResult[18] = tmp8;
+          cResult[19] = tmp12;
+          cResult[20] = tmp22;
+          cResult[21] = tmp29;
+          tmp26 = tmp29;
+        }
+        const obj8 = { style: poweredByContainer, children: tmp19 };
+        const tmp25 = closure_12(View, obj8);
+        cResult[15] = tmp4.poweredByContainer;
+        cResult[16] = tmp19;
+        cResult[17] = tmp25;
+        tmp22 = tmp25;
+      }
+      let tmp14 = null;
+      if (null != arr) {
+        tmp14 = null;
+        if (arr.length > 0) {
+          const obj9 = { style: tmp4.connectionMetadata, children: arr };
+          tmp14 = closure_12(View, obj9);
+        }
+      }
+      cResult[8] = arr;
+      cResult[9] = tmp4.connectionMetadata;
+      cResult[10] = tmp14;
+      tmp12 = tmp14;
+    }
+    let tmp10 = null;
+    if (null != applicationRoleConnection.platform_name) {
+      tmp10 = null;
+      if (null != applicationRoleConnection.platform_username) {
+        const obj10 = { variant: "text-xs/medium", color: "text-subtle", children: applicationRoleConnection.platform_username };
+        tmp10 = closure_12(tmp(4833).Text, obj10);
+      }
+    }
+    cResult[5] = applicationRoleConnection.platform_name;
+    cResult[6] = applicationRoleConnection.platform_username;
+    cResult[7] = tmp10;
+    tmp8 = tmp10;
+  }
+  const obj11 = { id: applicationRoleConnection.application.id, icon: applicationRoleConnection.application.icon };
+  const obj3 = AvatarUtilsDefault;
+  const applicationIconSource = obj3.getApplicationIconSource(obj11);
+  cResult[2] = applicationRoleConnection.application.icon;
+  cResult[3] = applicationRoleConnection.application.id;
+  cResult[4] = applicationIconSource;
+  tmp6 = applicationIconSource;
+}) : ((applicationRoleConnection) => {
   let Icon;
   let Text;
   let intl;
@@ -409,7 +1240,7 @@ const memoResult = react.memo((applicationRoleConnection) => {
     tmp7 = null;
     if (null != applicationRoleConnection.platform_username) {
       const obj4 = { variant: "text-xs/medium", color: "text-subtle", children: applicationRoleConnection.platform_username };
-      tmp7 = closure_12(tmp2(4832).Text, obj4);
+      tmp7 = closure_12(tmp2(4833).Text, obj4);
     }
   }
   const items = [tmp7, , ];
@@ -425,8 +1256,8 @@ const memoResult = react.memo((applicationRoleConnection) => {
   items[1] = tmp9;
   const obj7 = { style: tmp.poweredByContainer, children: closure_12(Text, obj8) };
   obj8 = { variant: "text-xs/medium", color: "text-muted", children: intl.format(intl3.t.zIT9YA, obj9) };
-  Text = tmp2(4832).Text;
-  intl = tmp2(1115).intl;
+  Text = tmp2(4833).Text;
+  intl = tmp2(1127).intl;
   obj9 = {
     applicationHook() {
       return applicationRoleConnection.application.name;
@@ -435,7 +1266,7 @@ const memoResult = react.memo((applicationRoleConnection) => {
   items[2] = closure_12(View, obj7);
   let name = applicationRoleConnection.platform_name;
   const tmp5Result = tmp5(tmp6, obj6);
-  const TableRow = tmp2(5917).TableRow;
+  const TableRow = tmp2(5916).TableRow;
   if (name == null) {
     name = applicationRoleConnection.platform_username;
   }
@@ -444,13 +1275,137 @@ const memoResult = react.memo((applicationRoleConnection) => {
   }
   const obj10 = { label: name, subLabel: tmp5Result, icon: closure_12(Icon, obj11) };
   obj11 = { size: native.Icon.Sizes.MEDIUM, source: applicationIconSource, disableColor: true };
-  Icon = tmp2(1177).Icon;
+  Icon = tmp2(1189).Icon;
   return closure_12(TableRow, obj10);
-});
-let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileConnections.tsx");
-
-export const ApplicationRoleConnection = memoResult;
-export const UserProfileAccountConnectionsCard = function UserProfileAccountConnectionsCard(userId) {
+}));
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  let appIdentities;
+  let connections;
+  let locale;
+  let stateFromStores;
+  let tmp10;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  let obj = userId(stateFromStores[13]);
+  const cResult = obj.c(25);
+  userId = userId.userId;
+  const style = userId.style;
+  const tmp4 = closure_16();
+  const obj2 = userId(stateFromStores[33]);
+  const theme = obj2.useThemeContext().theme;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [LocaleStore];
+    const fn = function c() {
+      return locale.locale;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = userId(stateFromStores[34]);
+  stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [StreamerModeStore];
+    class I {
+      constructor() {
+        return StreamerModeStore.hidePersonalInformation;
+      }
+    }
+    cResult[2] = items1;
+    cResult[3] = I;
+    tmp10 = I;
+    tmp9 = items1;
+  } else {
+    tmp9 = cResult[2];
+    tmp10 = cResult[3];
+  }
+  const tmpResult2 = userId(stateFromStores[34]);
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp10);
+  ({ connections, appIdentities } = theme(stateFromStores[35])(userId));
+  theme(stateFromStores[35])(userId);
+  const tmp13 = theme;
+  if (!stateFromStores1) {
+    if (cResult[4] === appIdentities) {
+      if (cResult[5] === connections) {
+        if (cResult[6] === stateFromStores) {
+          if (cResult[7] === theme) {
+            if (cResult[15] === style) {
+              let tmp17;
+              if (cResult[16] === tmp4.cardContainer) {
+                tmp17 = cResult[17];
+              }
+              const _Symbol = Symbol;
+              class I {
+                constructor() {
+                  return StreamerModeStore.hidePersonalInformation;
+                }
+              }
+              class M {
+                constructor(account) {
+                  const obj = { account, theme, locale: stateFromStores, userId };
+                  return closure_12(closure_19, obj, account.id);
+                }
+              }
+              if (cResult[21] === tmp4.refreshCardTitle) {
+                if (cResult[22] === tmp17) {
+                  let tmp21;
+                  if (cResult[23] === tmp20) {
+                    tmp21 = cResult[24];
+                  }
+                  return tmp21;
+                }
+              }
+              const obj3 = { style: tmp17, title: tmp19, titleStyle: tmp4.refreshCardTitle, children: tmp20 };
+              const tmp23 = closure_12(tmp13(stateFromStores[37]), obj3);
+              cResult[21] = tmp4.refreshCardTitle;
+              cResult[22] = tmp17;
+              cResult[23] = tmp20;
+              cResult[24] = tmp23;
+              tmp21 = tmp23;
+            }
+            const items2 = [, ];
+            class I {
+              constructor() {
+                return StreamerModeStore.hidePersonalInformation;
+              }
+            }
+            class M {
+              constructor(account) {
+                const obj = { account, theme, locale: stateFromStores, userId };
+                return closure_12(closure_19, obj, account.id);
+              }
+            }
+            cResult[15] = style;
+            cResult[16] = tmp4.cardContainer;
+            cResult[17] = items2;
+            tmp17 = items2;
+          }
+        }
+      }
+    }
+    class I {
+      constructor() {
+        return StreamerModeStore.hidePersonalInformation;
+      }
+    }
+    class M {
+      constructor(account) {
+        const obj = { account, theme, locale: stateFromStores, userId };
+        return closure_12(closure_19, obj, account.id);
+      }
+    }
+    cResult[10] = stateFromStores;
+    cResult[11] = theme;
+    cResult[12] = userId;
+    cResult[13] = M;
+  }
+  return null;
+}) : ((userId) => {
   let appIdentities;
   let connections;
   let intl;
@@ -461,7 +1416,7 @@ export const UserProfileAccountConnectionsCard = function UserProfileAccountConn
   userId = userId.userId;
   const style = userId.style;
   const tmp2 = closure_16();
-  let obj = userId(4540);
+  let obj = userId(4544);
   const theme = obj.useThemeContext().theme;
   const items = [LocaleStore];
   const obj2 = userId(504);
@@ -469,30 +1424,126 @@ export const UserProfileAccountConnectionsCard = function UserProfileAccountConn
   const items1 = [StreamerModeStore];
   const obj3 = userId(504);
   const stateFromStores = obj3.useStateFromStores(items1, () => StreamerModeStore.hidePersonalInformation);
-  ({ connections, appIdentities } = theme(12672)(userId));
-  theme(12672)(userId);
+  ({ connections, appIdentities } = theme(12674)(userId));
+  theme(12674)(userId);
   const tmp6 = theme;
   if (!stateFromStores) {
     const items2 = [];
     const arraySpreadResult = HermesBuiltin.arraySpread(items2, connections.map((account) => {
       const obj = { account, theme, locale, userId };
-      return closure_12(closure_18, obj, account.id);
+      return closure_12(closure_19, obj, account.id);
     }), 0);
     HermesBuiltin.arraySpread(items2, appIdentities.map((application) => {
       const identity = application.identity;
       const obj = { identity, application: application.application };
-      return closure_1_12(closure_1_19, obj, "" + identity.application_id + "-" + identity.provider_issued_user_id);
+      return closure_1_12(closure_1_20, obj, "" + identity.application_id + "-" + identity.provider_issued_user_id);
     }), arraySpreadResult);
-    const obj4 = { style: items3, title: intl.string(userId(1115).t["3fe7U5"]), titleStyle: tmp2.refreshCardTitle, children: closure_12(userId(5999).TableRowGroup, obj5) };
+    const obj4 = { style: items3, title: intl.string(userId(1127).t["3fe7U5"]), titleStyle: tmp2.refreshCardTitle, children: closure_12(userId(5997).TableRowGroup, obj5) };
     items3 = [tmp2.cardContainer, style];
-    const tmp6Result = tmp6(6628);
-    intl = tmp3(1115).intl;
+    const tmp6Result = tmp6(6629);
+    intl = tmp3(1127).intl;
     obj5 = { hasIcons: true, children: items2 };
     return closure_12(tmp6Result, obj4);
   }
   return null;
-};
-export const UserProfileApplicationRoleConnectionsCard = function UserProfileApplicationRoleConnectionsCard(arg0) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+  let tmp6;
+  let tmp7;
+  let obj = react2;
+  const cResult = obj.c(15);
+  style = style.style;
+  const userId = style.userId;
+  const tmp4 = closure_16();
+  const arr = useUserProfileApplicationRoleConnectionsDefault(userId);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [StreamerModeStore];
+    const fn = function o() {
+      return StreamerModeStore.hidePersonalInformation;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const tmpResult = get_initialized;
+  if (!tmpResult.useStateFromStores(tmp6, tmp7)) {
+    if (0 !== arr.length) {
+      let tmp9;
+      if (cResult[2] !== arr) {
+        let tmp10;
+        const _Symbol = Symbol;
+        if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+          const fn2 = function s(applicationRoleConnection) {
+            const obj = { applicationRoleConnection };
+            return closure_1_12(closure_1_21, obj, applicationRoleConnection.application.id);
+          };
+          cResult[4] = fn2;
+          tmp10 = fn2;
+        } else {
+          tmp10 = cResult[4];
+        }
+        const mapped = arr.map(tmp10);
+        cResult[2] = arr;
+        cResult[3] = mapped;
+        tmp9 = mapped;
+      } else {
+        tmp9 = cResult[3];
+      }
+      if (cResult[5] === style) {
+        let tmp12;
+        let tmp13;
+        let tmp15;
+        if (cResult[6] === tmp4.cardContainer) {
+          tmp12 = cResult[7];
+        }
+        const _Symbol2 = Symbol;
+        if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl = tmp(1127).intl;
+          const stringResult = intl.string(intl3.t.PHjkRE);
+          cResult[8] = stringResult;
+          tmp13 = stringResult;
+        } else {
+          tmp13 = cResult[8];
+        }
+        if (cResult[9] !== tmp9) {
+          const obj2 = { hasIcons: true, children: tmp9 };
+          const tmp17 = closure_12(TableRowGroup.TableRowGroup, obj2);
+          cResult[9] = tmp9;
+          cResult[10] = tmp17;
+          tmp15 = tmp17;
+        } else {
+          tmp15 = cResult[10];
+        }
+        if (cResult[11] === tmp4.refreshCardTitle) {
+          if (cResult[12] === tmp12) {
+            let tmp18;
+            if (cResult[13] === tmp15) {
+              tmp18 = cResult[14];
+            }
+            return tmp18;
+          }
+        }
+        const obj3 = { style: tmp12, title: tmp13, titleStyle: tmp4.refreshCardTitle, children: tmp15 };
+        const tmp20 = closure_12(UserProfileCardDefault, obj3);
+        cResult[11] = tmp4.refreshCardTitle;
+        cResult[12] = tmp12;
+        cResult[13] = tmp15;
+        cResult[14] = tmp20;
+        tmp18 = tmp20;
+      }
+      const items1 = [tmp4.cardContainer, style];
+      cResult[5] = style;
+      cResult[6] = tmp4.cardContainer;
+      cResult[7] = items1;
+      tmp12 = items1;
+    }
+  }
+  return null;
+}) : ((arg0) => {
   let intl;
   let items1;
   let obj3;
@@ -507,15 +1558,20 @@ export const UserProfileApplicationRoleConnectionsCard = function UserProfileApp
     if (0 !== arr.length) {
       const mapped = arr.map((applicationRoleConnection) => {
         const obj = { applicationRoleConnection };
-        return closure_1_12(closure_1_20, obj, applicationRoleConnection.application.id);
+        return closure_1_12(closure_1_21, obj, applicationRoleConnection.application.id);
       });
       const obj2 = { style: items1, title: intl.string(intl3.t.PHjkRE), titleStyle: tmp.refreshCardTitle, children: closure_12(TableRowGroup.TableRowGroup, obj3) };
       items1 = [tmp.cardContainer, style];
       const tmp2Result = UserProfileCardDefault;
-      intl = tmp4(1115).intl;
+      intl = tmp4(1127).intl;
       obj3 = { hasIcons: true, children: mapped };
       return closure_12(tmp2Result, obj2);
     }
   }
   return null;
-};
+});
+let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileConnections.tsx");
+
+export const ApplicationRoleConnection = memo3Result;
+export const UserProfileAccountConnectionsCard = tmp9;
+export const UserProfileApplicationRoleConnectionsCard = tmp10;

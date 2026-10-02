@@ -1,11 +1,11 @@
-// Module ID: 8340
-// Function ID: 8341
+// Module ID: 8337
+// Function ID: 8338
 // Name: StorefrontCollectionStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 8340 (StorefrontCollectionStore)
+// Module 8337 (StorefrontCollectionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let closure_0, closure_1, closure_2, closure_3, closure_4, closure_5, set;
@@ -362,10 +362,10 @@ let obj = {
     tmp[requestKey] = { state: "loading", collectionIds };
   },
   STOREFRONT_COLLECTIONS_AFTER_FETCH_SUCCESS: function handleCollectionsAfterFetchSuccess(collections) {
-    const f86170 = (id) => id.id;
+    const f96534 = (id) => id.id;
     collections = collections.collections;
-    closure_4[collections.requestKey] = { state: "success", collectionIds: collections.map(f86170), fetchedAt: Date.now() };
-    ({ state: "success", collectionIds: collections.map(f86170), fetchedAt: Date.now() });
+    closure_4[collections.requestKey] = { state: "success", collectionIds: collections.map(f96534), fetchedAt: Date.now() };
+    ({ state: "success", collectionIds: collections.map(f96534), fetchedAt: Date.now() });
     const item = collections.forEach((id) => {
       closure_1_5[id.id] = id;
     });

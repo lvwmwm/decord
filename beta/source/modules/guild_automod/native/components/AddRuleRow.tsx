@@ -1,22 +1,63 @@
-// Module ID: 17321
-// Function ID: 17322
+// Module ID: 17323
+// Function ID: 17324
 // Name: AddRuleRow
-// Dependencies: [19, 21, 5917, 10774, 1115, 17310, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 5916, 10738, 1127, 17312, 2]
 
-// Module 17321 (AddRuleRow)
+// Module 17323 (AddRuleRow)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1115 */;
-import TableRow2 from "TableRow" /* 5917 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 10774 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17310 */;
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import TableRow2 from "TableRow" /* 5916 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 10738 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17312 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/guild_automod/native/components/AddRuleRow.tsx");
-
-export default function AddRuleRow(arg0) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let first;
+  let obj4;
+  let onPress;
+  let tmp7;
+  let triggerType;
+  const obj = react2;
+  const cResult = obj.c(6);
+  ({ triggerType, onPress } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const Icon = tmp(5916).TableRow.Icon;
+    const tmp6 = <Icon IconComponent={CirclePlusIcon.CirclePlusIcon} />;
+    cResult[0] = tmp6;
+    first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== triggerType) {
+    const intl = tmp(1127).intl;
+    const format = intl.format;
+    const obj3 = { ruleName: obj4.getDefaultRuleName() };
+    const dNjRAf = tmp(1127).t.dNjRAf;
+    obj4 = AutomodTriggerConfigs.triggerConfigs[triggerType];
+    const formatResult = format(dNjRAf, obj3);
+    cResult[1] = triggerType;
+    cResult[2] = formatResult;
+    tmp7 = formatResult;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] === onPress) {
+    let tmp9;
+    if (cResult[4] === tmp7) {
+      tmp9 = cResult[5];
+    }
+    return tmp9;
+  }
+  const tmp10 = jsx(TableRow2.TableRow, { icon: first, label: tmp7, onPress });
+  cResult[3] = onPress;
+  cResult[4] = tmp7;
+  cResult[5] = tmp10;
+  tmp9 = tmp10;
+}) : ((arg0) => {
   let obj4;
   let onPress;
   let triggerType;
@@ -30,4 +71,7 @@ export default function AddRuleRow(arg0) {
   const dNjRAf = intl2.t.dNjRAf;
   obj4 = AutomodTriggerConfigs.triggerConfigs[triggerType];
   return <TableRow icon={null} label={format(dNjRAf, obj3)} onPress={onPress} />;
-};
+});
+const result = size.fileFinishedImporting("modules/guild_automod/native/components/AddRuleRow.tsx");
+
+export default tmp3;

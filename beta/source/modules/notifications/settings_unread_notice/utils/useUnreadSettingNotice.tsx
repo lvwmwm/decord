@@ -1,26 +1,142 @@
-// Module ID: 10955
-// Function ID: 10956
+// Module ID: 9621
+// Function ID: 9622
 // Name: useUnreadSettingNotice
-// Dependencies: [32, 19, 2049, 9605, 504, 10956, 2]
-// Exports: default
+// Dependencies: [32, 19, 2055, 558, 576, 9622, 9623, 504, 2]
 
-// Module 10955 (useUnreadSettingNotice)
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import UnreadSettingNoticeStore2Default from "UnreadSettingNoticeStore2" /* 10956 */;
+// Module 9621 (useUnreadSettingNotice)
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import UnreadSettingNoticeStore2Default from "UnreadSettingNoticeStore2" /* 9623 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
 
-let closure_5 = ChannelRecord.CHANNEL_ELIGIBLE_FOR_UNREAD_SETTING;
-const result = size.fileFinishedImporting("modules/notifications/settings_unread_notice/utils/useUnreadSettingNotice.tsx");
-
-export default function useUnreadSettingNotice(id) {
+const set = ChannelRecord.CHANNEL_ELIGIBLE_FOR_UNREAD_SETTING;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   let closure_3;
   let first;
-  _require = id;
+  let first1;
+  let tmp10;
+  let tmp12;
+  let tmp8;
+  const _require = id;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(19);
+  const obj2 = require("notifications/NotificationUtils");
+  const shouldUseNewNotificationSystem = obj2.useShouldUseNewNotificationSystem("useShouldRenderBanner");
+  [first, _slicedToArray] = react.useState("");
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function c() {
+      closure_3("");
+    };
+    cResult[0] = fn;
+    first1 = fn;
+  } else {
+    first1 = cResult[0];
+  }
+  if (cResult[1] !== id.id) {
+    const items = [id.id];
+    cResult[1] = id.id;
+    cResult[2] = items;
+    tmp8 = items;
+  } else {
+    tmp8 = cResult[2];
+  }
+  const effect = obj3.useEffect(first1, tmp8);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [shouldUseNewNotificationSystem(first[6])];
+    cResult[3] = items1;
+    tmp10 = items1;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] !== id.id) {
+    const fn2 = function f() {
+      const obj = UnreadSettingNoticeStore2Default;
+      return obj.getLastActionTime(id.id);
+    };
+    cResult[4] = id.id;
+    cResult[5] = fn2;
+    tmp12 = fn2;
+  } else {
+    tmp12 = cResult[5];
+  }
+  const tmpResult = tmp(first[7]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp10, tmp12);
+  if (cResult[6] === id.id) {
+    if (cResult[7] === id.type) {
+      if (cResult[8] === shouldUseNewNotificationSystem) {
+        let tmp14;
+        if (cResult[9] === first) {
+          tmp14 = cResult[10];
+        }
+        if (cResult[11] === id) {
+          if (cResult[12] === stateFromStores) {
+            if (cResult[13] === shouldUseNewNotificationSystem) {
+              let tmp15;
+              let tmp17;
+              let tmp19;
+              if (cResult[14] === first) {
+                tmp15 = cResult[15];
+              }
+              const effect1 = obj3.useEffect(tmp14, tmp15);
+              const _Symbol = Symbol;
+              if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+                const fn3 = function b() {
+                  return closure_3("");
+                };
+                cResult[16] = fn3;
+                tmp17 = fn3;
+              } else {
+                tmp17 = cResult[16];
+              }
+              if (cResult[17] !== (first === id.id)) {
+                const obj4 = { showUnreadsNotice: first === id.id, clearUnreadsNotice: tmp17 };
+                cResult[17] = first === id.id;
+                cResult[18] = obj4;
+                tmp19 = obj4;
+              } else {
+                tmp19 = cResult[18];
+              }
+              return tmp19;
+            }
+          }
+        }
+        const items2 = [first, shouldUseNewNotificationSystem, stateFromStores, id];
+        cResult[11] = id;
+        cResult[12] = stateFromStores;
+        cResult[13] = shouldUseNewNotificationSystem;
+        cResult[14] = first;
+        cResult[15] = items2;
+        tmp15 = items2;
+      }
+    }
+  }
+  class U {
+    constructor() {
+      let hasItem = set.has(id.type) && first !== tmp.id && shouldUseNewNotificationSystem;
+      if (hasItem) {
+        const obj = UnreadSettingNoticeStore2Default;
+        hasItem = obj.maybeAutoUpgradeChannel(tmp.id);
+      }
+      if (hasItem) {
+        closure_3(id.id);
+      }
+    }
+  }
+  cResult[6] = id.id;
+  cResult[7] = id.type;
+  cResult[8] = shouldUseNewNotificationSystem;
+  cResult[9] = first;
+  cResult[10] = U;
+  tmp14 = U;
+}) : ((id) => {
+  let closure_3;
+  let first;
+  const _require = id;
   let obj = require("notifications/NotificationUtils");
   const shouldUseNewNotificationSystem = obj.useShouldUseNewNotificationSystem("useShouldRenderBanner");
   [first, _slicedToArray] = react.useState("");
@@ -30,7 +146,7 @@ export default function useUnreadSettingNotice(id) {
   }, items);
   const useStateFromStores = require("get initialized").useStateFromStores;
   const tmp5 = require("get initialized");
-  const items1 = [shouldUseNewNotificationSystem(first[5])];
+  const items1 = [shouldUseNewNotificationSystem(first[6])];
   const items2 = [
     first,
     shouldUseNewNotificationSystem,
@@ -52,4 +168,7 @@ export default function useUnreadSettingNotice(id) {
   }, items2);
   const obj2 = { showUnreadsNotice: first === id.id, clearUnreadsNotice: react.useCallback(() => closure_3(""), []) };
   return obj2;
-};
+});
+const result = size.fileFinishedImporting("modules/notifications/settings_unread_notice/utils/useUnreadSettingNotice.tsx");
+
+export default tmp2;

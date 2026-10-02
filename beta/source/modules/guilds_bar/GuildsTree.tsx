@@ -1,10 +1,10 @@
-// Module ID: 5752
-// Function ID: 5753
+// Module ID: 5753
+// Function ID: 5754
 // Name: GuildsTree
 // Dependencies: [38, 12, 2]
 // Exports: createFolderNode, createGuildNode
 
-// Module 5752 (GuildsTree)
+// Module 5753 (GuildsTree)
 import _mod12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import size from "module_2" /* 2 */;
@@ -198,7 +198,7 @@ class GuildsTree {
   }
   sortedGuildNodes() {
     let items1;
-    const f112575 = (type) => {
+    const f135403 = (type) => {
       let items1;
       if (type.type === constants.GUILD) {
         const items = [type];
@@ -207,7 +207,7 @@ class GuildsTree {
         items1 = [];
       } else {
         const children = type.children;
-        const mapped = children.map(f112575);
+        const mapped = children.map(f135403);
         items1 = mapped.flat();
       }
       return items1;
@@ -220,7 +220,7 @@ class GuildsTree {
       items1 = [];
     } else {
       let children = root.children;
-      let mapped = children.map(f112575);
+      let mapped = children.map(f135403);
       items1 = mapped.flat();
     }
     return items1;

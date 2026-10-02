@@ -1,18 +1,18 @@
-// Module ID: 12130
-// Function ID: 12131
+// Module ID: 12040
+// Function ID: 12041
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 2045, 1074, 21, 4528, 1115, 6665, 4800, 5853, 4658, 4792, 576, 12131, 1981, 2]
+// Dependencies: [5, 32, 19, 2051, 1086, 21, 4531, 1127, 6666, 4801, 5854, 4660, 4793, 588, 12041, 1987, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 12130 (useJoinRequestButtonActions)
+// Module 12040 (useJoinRequestButtonActions)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1074 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import Constants from "Constants" /* 1086 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -21,11 +21,11 @@ const Routes = Constants.Routes;
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/useJoinRequestButtonActions.tsx");
 
-export const useJoinRequestButtonActions = function useJoinRequestButtonActions(joinRequest, interviewChannelId, callback) {
+export const useJoinRequestButtonActions = function useJoinRequestButtonActions(joinRequest, interviewChannelId, cResult) {
   let callback1;
   let items1;
   let items2;
-  let onDismiss = callback;
+  let onDismiss = cResult;
   let obj = joinRequest;
   if (joinRequest == null) {
     obj = {};
@@ -61,7 +61,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -136,7 +136,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
             obj3.hideActionSheet();
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp40) {
           onDismiss = tmp40;
           if (0 === c3) {
@@ -167,7 +167,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         const _HermesInternal = HermesInternal;
         ActionSheetActionCreatorsDefault;
         const obj = { joinRequest: tmp, onError, onDismiss };
-        const tmp10 = asyncRequire(12131, dependencyMap.paths);
+        const tmp10 = asyncRequire(12041, dependencyMap.paths);
         openLazy(tmp10, "RejectionReason-" + joinRequestId, obj);
       }
     }, items2),
@@ -191,7 +191,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -302,7 +302,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
           obj6.hideActionSheet();
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp56) {
         onDismiss = tmp56;
         if (0 === c3) {
@@ -317,6 +317,6 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
     }
   }), items);
   items1 = [guildId, joinRequestId, onError, submitting, userId];
-  items2 = [guildId, joinRequestId, joinRequest, callback, onError, userId];
+  items2 = [guildId, joinRequestId, joinRequest, cResult, onError, userId];
   return obj2;
 };

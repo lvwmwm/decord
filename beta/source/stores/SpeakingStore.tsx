@@ -1,20 +1,20 @@
-// Module ID: 5731
-// Function ID: 5732
+// Module ID: 5732
+// Function ID: 5733
 // Name: SpeakingStore
-// Dependencies: [32, 2045, 1993, 4859, 2099, 1074, 4861, 4474, 504, 5732, 573, 2]
+// Dependencies: [32, 2051, 1999, 4860, 2102, 1086, 4862, 4477, 504, 5733, 585, 2]
 
-// Module 5731 (SpeakingStore)
+// Module 5732 (SpeakingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants2 from "Constants" /* 1074 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
-import ProportionalVadIndicatorExperimentDefault from "ProportionalVadIndicatorExperiment" /* 5732 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants2 from "Constants" /* 1086 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4477 */;
+import ProportionalVadIndicatorExperimentDefault from "ProportionalVadIndicatorExperiment" /* 5733 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import Constants from "Constants" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import Constants from "Constants" /* 4862 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -115,8 +115,9 @@ class SpeakingStore extends Store {
       return (flags & VOICE) === VOICE;
     });
   }
-  isSpeaking(id, DEFAULT) {
-    if (DEFAULT === undefined) {
+  isSpeaking(id, context) {
+    let DEFAULT = context;
+    if (context === undefined) {
       DEFAULT = constants2.DEFAULT;
     }
     const VOICE = constants.VOICE;
@@ -179,8 +180,9 @@ class SpeakingStore extends Store {
     }
     return anyoneHasFlagInContext(DEFAULT, constants.VOICE, true);
   }
-  isCurrentUserSpeaking(DEFAULT) {
-    if (DEFAULT === undefined) {
+  isCurrentUserSpeaking(context) {
+    let DEFAULT = context;
+    if (context === undefined) {
       DEFAULT = constants2.DEFAULT;
     }
     let isSpeakingResult = null != id;
@@ -210,8 +212,9 @@ class SpeakingStore extends Store {
     }
     return isPrioritySpeakerResult;
   }
-  isCurrentUserPrioritySpeaking(DEFAULT) {
-    if (DEFAULT === undefined) {
+  isCurrentUserPrioritySpeaking(context) {
+    let DEFAULT = context;
+    if (context === undefined) {
       DEFAULT = constants2.DEFAULT;
     }
     const self = this;

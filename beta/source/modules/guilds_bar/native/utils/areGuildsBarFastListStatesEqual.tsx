@@ -1,10 +1,10 @@
-// Module ID: 15993
-// Function ID: 15994
+// Module ID: 15994
+// Function ID: 15995
 // Name: areGuildsBarFastListStatesEqual
 // Dependencies: [2]
 // Exports: default
 
-// Module 15993 (areGuildsBarFastListStatesEqual)
+// Module 15994 (areGuildsBarFastListStatesEqual)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guilds_bar/native/utils/areGuildsBarFastListStatesEqual.tsx");

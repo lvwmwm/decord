@@ -1,13 +1,13 @@
-// Module ID: 15583
-// Function ID: 15584
+// Module ID: 15585
+// Function ID: 15586
 // Name: trackAgeGateSubmitted
-// Dependencies: [1074, 1241, 4421, 2]
+// Dependencies: [1086, 1253, 4424, 2]
 // Exports: default
 
-// Module 15583 (trackAgeGateSubmitted)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import _modDef4421 from "module_4421" /* 4421 */;
+// Module 15585 (trackAgeGateSubmitted)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import _modDef4424 from "module_4424" /* 4424 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -18,7 +18,7 @@ export default function trackAgeGateSubmitted(format, section) {
   const AGE_GATE_SUBMITTED = AnalyticEvents.AGE_GATE_SUBMITTED;
   AnalyticsUtilsDefault;
   let formatResult = null;
-  const obj = _modDef4421();
+  const obj = _modDef4424();
   if (obj.diff(format, "years") < 18) {
     formatResult = format.format("YYYY-MM-DD");
   }

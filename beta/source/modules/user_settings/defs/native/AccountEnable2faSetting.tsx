@@ -1,19 +1,22 @@
-// Module ID: 14314
-// Function ID: 14315
+// Module ID: 14302
+// Function ID: 14303
 // Name: AccountEnable2faSetting
-// Dependencies: [1372, 7417, 14242, 14315, 5203, 1115, 11006, 2]
+// Dependencies: [1378, 7421, 558, 14230, 14303, 5204, 1127, 10874, 2]
 
-// Module 14314 (AccountEnable2faSetting)
-import intl3 from "intl" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 14242 */;
-import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 14315 */;
-import UserStore from "UserStore" /* 1372 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 14302 (AccountEnable2faSetting)
+import intl3 from "intl" /* 1127 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 14230 */;
+import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 14303 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 let obj = {
   useTitle() {
     const intl = intl3.intl;
@@ -42,12 +45,12 @@ let obj = {
     show(obj2);
   },
   withArrow: true,
-  usePredicate: function useHasAccountEnable2FASetting() {
+  usePredicate: () => {
     const obj = SettingsAccountUtils;
     return !obj.useIsTOTPEnabled();
   }
 };
 const pressable = SettingBuilders.createPressable(obj);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountEnable2faSetting.tsx");
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/AccountEnable2faSetting.tsx");
 
 export default pressable;

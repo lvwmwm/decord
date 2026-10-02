@@ -1,16 +1,16 @@
-// Module ID: 9299
-// Function ID: 9300
+// Module ID: 9277
+// Function ID: 9278
 // Name: createAutocompleterResultForChannelId
-// Dependencies: [2045, 4479, 1372, 5827, 1074, 4989, 2]
+// Dependencies: [2051, 4482, 1378, 5828, 1086, 4990, 2]
 // Exports: default
 
-// Module 9299 (createAutocompleterResultForChannelId)
-import Constants from "Constants" /* 1074 */;
-import useChannelName from "useChannelName" /* 4989 */;
-import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5827 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 9277 (createAutocompleterResultForChannelId)
+import Constants from "Constants" /* 1086 */;
+import useChannelName from "useChannelName" /* 4990 */;
+import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5828 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 const AutocompleterResultTypes = autocompleter_AutocompleterConstants.AutocompleterResultTypes;

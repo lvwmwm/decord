@@ -1,11 +1,10 @@
 // Module ID: 9962
 // Function ID: 9963
-// Dependencies: [41, 42, 93, 95, 98, 9957, 9895, 9897, 9898, 9902]
+// Dependencies: [41, 42, 93, 95, 98, 9931, 9934, 9935, 9939]
 
 // Module 9962
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9895 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
-import _mod9957 from "module_9957" /* 9957 */;
+import _mod9931 from "module_9931" /* 9931 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9939 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,12 +26,18 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FRTimeUnitAgoFormatParser {
+const regExp = new RegExp("(this|last|past|next|after|\\+|-)\\s*(" + _mod9931.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+const regExp1 = new RegExp("(this|last|past|next|after|\\+|-)\\s*(" + _mod9931.TIME_UNITS_NO_ABBR_PATTERN + ")(?=\\W|$)", "i");
+class ENTimeUnitCasualRelativeFormatParser {
   constructor() {
     let constructResult;
+    let flag = arg0;
+    if (arg0 === undefined) {
+      flag = true;
+    }
     const self = this;
-    _classCallCheck(this, FRTimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(FRTimeUnitAgoFormatParser);
+    _classCallCheck(this, ENTimeUnitCasualRelativeFormatParser);
+    const obj = _getPrototypeOf(ENTimeUnitCasualRelativeFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -41,16 +46,16 @@ class FRTimeUnitAgoFormatParser {
     } else {
       constructResult = obj.apply(self, undefined);
     }
-    return tmp3(self, constructResult);
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.allowAbbreviations = flag;
+    return tmp3Result;
   }
 }
-_inherits(FRTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
-    const NUMBER_PATTERN = _mod9957.NUMBER_PATTERN;
-    const regExp = new RegExp("(?:les?|la|l'|du|des?)\\s*(" + NUMBER_PATTERN + ")?(?:\\s*(prochaine?s?|derni[e\u00E8]re?s?|pass[\u00E9e]e?s?|pr[\u00E9e]c[\u00E9e]dents?|suivante?s?))?\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod9957.TIME_UNIT_DICTIONARY) + ")(?:\\s*(prochaine?s?|derni[e\u00E8]re?s?|pass[\u00E9e]e?s?|pr[\u00E9e]c[\u00E9e]dents?|suivante?s?))?", "i");
-    return regExp;
+    return this.allowAbbreviations ? regExp : regExp1;
   }
 };
 const items = [
@@ -58,34 +63,24 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      let num = 1;
-      if (arg1[1]) {
-        num = _mod9957.parseNumberPattern(arg1[1]);
-      }
-      const obj = {};
-      obj[_mod9957.TIME_UNIT_DICTIONARY[arg1[3].toLowerCase(arg1[3])]] = num;
-      const str2 = arg1[2] || arg1[4] || "";
-      const formatted = str2.toLowerCase();
-      if (formatted) {
-        const obj2 = /derni[eè]re?s?/;
-        let isMatch = obj2.test(formatted);
-        if (!isMatch) {
-          const obj3 = /pass[ée]e?s?/;
-          isMatch = obj3.test(formatted);
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const parseDurationResult = _mod9931.parseDuration(arg1[2]);
+      if (parseDurationResult) {
+        if ("last" !== formatted) {
+          let reverseDurationResult;
+          if ("past" !== formatted) {
+            reverseDurationResult = parseDurationResult;
+          }
+          const ParsingComponents = tmp2(9935).ParsingComponents;
+          return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
         }
-        if (!isMatch) {
-          const obj4 = /pr[ée]c[ée]dents?/;
-          isMatch = obj4.test(formatted);
-        }
-        let reverseDurationResult = obj;
-        if (isMatch) {
-          reverseDurationResult = tmp3(9897).reverseDuration(obj);
-        }
-        const ParsingComponents = tmp3(9898).ParsingComponents;
-        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+        reverseDurationResult = tmp2(9934).reverseDuration(parseDurationResult);
+      } else {
+        return null;
       }
     }
   }
 ];
 
-export default _createClass(FRTimeUnitAgoFormatParser, items);
+export default _createClass(ENTimeUnitCasualRelativeFormatParser, items);

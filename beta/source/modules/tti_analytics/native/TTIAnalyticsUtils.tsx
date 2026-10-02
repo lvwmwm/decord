@@ -1,37 +1,37 @@
-// Module ID: 6895
-// Function ID: 6896
+// Module ID: 6899
+// Function ID: 6900
 // Name: TTIAnalyticsUtils
-// Dependencies: [5, 6896, 4750, 1182, 502, 2045, 1346, 1074, 7084, 2052, 21, 4812, 7085, 1255, 1363, 4693, 4692, 10, 1231, 1241, 7086, 4699, 7088, 9, 1091, 1358, 7089, 5204, 5300, 1981, 2]
+// Dependencies: [5, 6900, 4752, 1194, 502, 2051, 1358, 1086, 7088, 2058, 21, 4813, 7089, 1267, 1369, 4695, 4694, 10, 1243, 1253, 7090, 4701, 7092, 9, 1103, 1364, 7093, 5205, 5301, 1987, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
-// Module 6895 (TTIAnalyticsUtils)
+// Module 6899 (TTIAnalyticsUtils)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1074 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ChannelConstants from "ChannelConstants" /* 2052 */;
-import RootNavigationRef from "RootNavigationRef" /* 4693 */;
-import react_nativeDefault from "react-native" /* 4699 */;
-import DeviceUtils from "DeviceUtils" /* 4812 */;
-import AcceptInviteConstants from "AcceptInviteConstants" /* 7084 */;
-import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7085 */;
-import AppStartInfo2 from "AppStartInfo" /* 7086 */;
+import Constants from "Constants" /* 1086 */;
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import RootNavigationRef from "RootNavigationRef" /* 4695 */;
+import react_nativeDefault from "react-native" /* 4701 */;
+import DeviceUtils from "DeviceUtils" /* 4813 */;
+import AcceptInviteConstants from "AcceptInviteConstants" /* 7088 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7089 */;
+import AppStartInfo2 from "AppStartInfo" /* 7090 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CacheStore from "CacheStore" /* 6896 */;
-import ExperimentStore from "ExperimentStore" /* 4750 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+import CacheStore from "CacheStore" /* 6900 */;
+import ExperimentStore from "ExperimentStore" /* 4752 */;
+import ThemeStore from "ThemeStore" /* 1194 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
-import v1 from "v1" /* 1255 */;
-import react_native from "react-native" /* 1363 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1358 */;
+import v1 from "v1" /* 1267 */;
+import react_native from "react-native" /* 1369 */;
 import size from "module_2" /* 2 */;
 
 let c6, c7, c8;
 
 let tmp;
-const NavigationRouteUtils = tmp(4692);
+const NavigationRouteUtils = tmp(4694);
 function getDeviceMetadata() {
   let obj2;
   let obj3;
@@ -198,7 +198,7 @@ let obj = function _trackAppUIViewedAsync() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -259,7 +259,7 @@ let obj = function _trackAppUIViewedAsync() {
             }, 1000);
             scheduleTrackAppUiViewed2();
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp5) {
           c6 = 3;
@@ -288,7 +288,7 @@ obj = function _logLegacyAppUiViewed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -348,7 +348,7 @@ obj = function _logLegacyAppUiViewed() {
           const merged2 = Object.assign(closure_0);
           track(APP_UI_VIEWED, obj8, { logEventProperties: true });
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp6) {
         c8 = 3;
@@ -402,7 +402,7 @@ obj = function _trackAppUIViewed() {
         const obj7 = { value, done: true };
         return obj7;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -540,7 +540,7 @@ obj = function _trackAppUIViewed() {
             logToDevice(obj);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp56) {
         c6 = 3;
@@ -586,7 +586,7 @@ obj = function _trackAppLaunchCompletedAsync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -627,7 +627,7 @@ obj = function _trackAppLaunchCompletedAsync() {
           obj = closure_132_1(closure_132_2[19]);
           obj.track(closure_132_10.APP_LAUNCH_COMPLETED, closure_0, { logEventProperties: true });
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp20) {
         c8 = 3;

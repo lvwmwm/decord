@@ -1,22 +1,22 @@
-// Module ID: 16718
-// Function ID: 16719
+// Module ID: 16720
+// Function ID: 16721
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 2045, 5056, 1372, 21, 4836, 576, 1613, 504, 16719, 16721, 11932, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 2051, 5057, 1378, 21, 4837, 588, 558, 576, 1619, 504, 16721, 16723, 11826, 2]
 
-// Module 16718 (RestrictedMessageRequestPreview)
-import nativeDefault from "native" /* 576 */;
+// Module 16720 (RestrictedMessageRequestPreview)
+import nativeDefault from "native" /* 588 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 5056 */;
-import UserStore from "UserStore" /* 1372 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import MessageStore from "MessageStore" /* 5057 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
+let channelId, dependencyMap, num;
 
 let c10;
 let hasOwnProperty;
@@ -35,9 +35,207 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8 };
 obj4 = { paddingHorizontal: nativeDefault.space.PX_12 };
 let closure_12 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/message_request/native/RestrictedMessageRequestPreview.tsx");
-
-export default function RestrictedMessageRequestPreview(channelId) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let closure_4;
+  let first;
+  let first1;
+  let ref;
+  let tmp10;
+  let tmp11;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp20;
+  let tmp21;
+  let tmp22;
+  let tmp25;
+  let tmp26;
+  const tmp = channelId;
+  const obj = channelId(576);
+  const cResult = obj.c(47);
+  channelId = channelId.channelId;
+  let tmp4 = closure_12();
+  const bottom = ref(1619)().bottom;
+  ref = react.useRef(null);
+  dependencyMap = react.useRef(false);
+  const tmp6 = first(react.useState(false), 2);
+  first = tmp6[0];
+  const obj2 = react;
+  react = tmp6[1];
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MessageStore];
+    cResult[0] = items;
+    first1 = items;
+  } else {
+    first1 = cResult[0];
+  }
+  if (cResult[1] !== channelId) {
+    class C {
+      constructor() {
+        return closure_8.getMessages(channelId).length > 0;
+      }
+    }
+    const items1 = [channelId];
+    cResult[1] = channelId;
+    cResult[2] = C;
+    cResult[3] = items1;
+    tmp11 = items1;
+    tmp10 = C;
+  } else {
+    class C {
+      constructor() {
+        return closure_8.getMessages(channelId).length > 0;
+      }
+    }
+    tmp11 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first1, tmp10, tmp11);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor() {
+        return closure_8.getMessages(channelId).length > 0;
+      }
+    }
+    const items2 = [ChannelStore];
+    cResult[4] = items2;
+    tmp13 = items2;
+  } else {
+    class C {
+      constructor() {
+        return closure_8.getMessages(channelId).length > 0;
+      }
+    }
+  }
+  if (cResult[5] !== channelId) {
+    class C {
+      constructor() {
+        return closure_8.getMessages(channelId).length > 0;
+      }
+    }
+    const items3 = [channelId];
+    cResult[5] = channelId;
+    cResult[6] = tmp16;
+    cResult[7] = items3;
+    tmp15 = items3;
+    tmp14 = tmp16;
+  } else {
+    class C {
+      constructor() {
+        return closure_8.getMessages(channelId).length > 0;
+      }
+    }
+    tmp15 = cResult[7];
+  }
+  const tmpResult3 = tmp(504);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp13, tmp14, tmp15);
+  if (stateFromStores1 != null) {
+    class C {
+      constructor() {
+        return closure_8.getMessages(channelId).length > 0;
+      }
+    }
+    if (tmp19 != null) {
+      class C {
+        constructor() {
+          return closure_8.getMessages(channelId).length > 0;
+        }
+      }
+    }
+  }
+  let c6 = tmp18;
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor() {
+        return closure_8.getMessages(channelId).length > 0;
+      }
+    }
+    const items4 = [UserStore];
+    cResult[8] = items4;
+    tmp20 = items4;
+  } else {
+    class C {
+      constructor() {
+        return closure_8.getMessages(channelId).length > 0;
+      }
+    }
+  }
+  if (cResult[9] !== undefined) {
+    class C {
+      constructor() {
+        return closure_8.getMessages(channelId).length > 0;
+      }
+    }
+    const items5 = [undefined];
+    cResult[9] = undefined;
+    cResult[10] = tmp23;
+    cResult[11] = items5;
+    tmp22 = items5;
+    tmp21 = tmp23;
+  } else {
+    class C {
+      constructor() {
+        return closure_8.getMessages(channelId).length > 0;
+      }
+    }
+    tmp22 = cResult[11];
+  }
+  const tmpResult4 = tmp(504);
+  const stateFromStores2 = tmpResult4.useStateFromStores(tmp20, tmp21, tmp22);
+  if (cResult[12] !== first) {
+    class U {
+      constructor() {
+        if (closure_3) {
+          return;
+        } else {
+          tmp = globalThis;
+          _setTimeout = setTimeout;
+          num = 1000;
+          closure_0 = setTimeout(() => { /* body not rendered: F146180 */ }, 1000);
+          return () => { /* body not rendered: F146181 */ };
+        }
+      }
+    }
+    const items6 = [first];
+    cResult[12] = first;
+    cResult[13] = U;
+    cResult[14] = items6;
+    tmp26 = items6;
+    tmp25 = U;
+  } else {
+    class U {
+      constructor() {
+        if (closure_3) {
+          return;
+        } else {
+          tmp = globalThis;
+          _setTimeout = setTimeout;
+          num = 1000;
+          closure_0 = setTimeout(() => { /* body not rendered: F146180 */ }, 1000);
+          return () => { /* body not rendered: F146181 */ };
+        }
+      }
+    }
+    tmp26 = cResult[14];
+  }
+  const effect = obj2.useEffect(tmp25, tmp26);
+  if (null != stateFromStores1) {
+    class U {
+      constructor() {
+        if (closure_3) {
+          return;
+        } else {
+          tmp = globalThis;
+          _setTimeout = setTimeout;
+          num = 1000;
+          closure_0 = setTimeout(() => { /* body not rendered: F146180 */ }, 1000);
+          return () => { /* body not rendered: F146181 */ };
+        }
+      }
+    }
+  }
+  return null;
+}) : ((channelId) => {
   let closure_4;
   let items10;
   let items7;
@@ -49,7 +247,7 @@ export default function RestrictedMessageRequestPreview(channelId) {
   let first;
   react = undefined;
   const tmp = closure_12();
-  const bottom = ref(1613)().bottom;
+  const bottom = ref(1619)().bottom;
   ref = react.useRef(null);
   dependencyMap = react.useRef(false);
   const tmp5 = first(react.useState(false), 2);
@@ -126,18 +324,21 @@ export default function RestrictedMessageRequestPreview(channelId) {
       }
       items7[1] = hidden;
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      items8 = [closure_10(tmp2(16719), obj6), ];
+      items8 = [closure_10(tmp2(16721), obj6), ];
       const obj7 = { channelId };
-      items8[1] = closure_10(ref(16721), obj7);
+      items8[1] = closure_10(ref(16723), obj7);
       items9 = [closure_11(tmp15, obj5), ];
-      const obj8 = { style: items10, children: closure_10(ref(11932), obj10) };
+      const obj8 = { style: items10, children: closure_10(ref(11826), obj10) };
       items10 = [tmp.footer, ];
-      items10[1] = { paddingBottom: ref(576).space.PX_8 + bottom };
+      items10[1] = { paddingBottom: ref(588).space.PX_8 + bottom };
       obj10 = { channel: stateFromStores };
-      const obj9 = { paddingBottom: ref(576).space.PX_8 + bottom };
+      const obj9 = { paddingBottom: ref(588).space.PX_8 + bottom };
       items9[1] = closure_10(first1, obj8);
       tmp13Result = tmp13(tmp14, obj4);
     }
   }
   return tmp13Result;
-};
+});
+const result = size.fileFinishedImporting("modules/message_request/native/RestrictedMessageRequestPreview.tsx");
+
+export default tmp5;

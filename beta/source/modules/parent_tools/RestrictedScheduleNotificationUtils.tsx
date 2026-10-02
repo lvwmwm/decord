@@ -1,14 +1,14 @@
-// Module ID: 9542
-// Function ID: 9543
+// Module ID: 12211
+// Function ID: 12212
 // Name: RestrictedScheduleNotificationUtils
-// Dependencies: [12, 2487, 1115, 9543, 2]
+// Dependencies: [12, 2490, 1127, 12212, 2]
 // Exports: diffSchedules, getRestrictedScheduleNotificationSubtitle, getRestrictedScheduleNotificationTitle, restrictedScheduleNotificationKey, toScheduleSnapshot
 
-// Module 9542 (RestrictedScheduleNotificationUtils)
+// Module 12211 (RestrictedScheduleNotificationUtils)
 import _modDef12 from "module_12" /* 12 */;
-import intl2 from "intl" /* 1115 */;
-import _modDef2487 from "module_2487" /* 2487 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 9543 */;
+import intl2 from "intl" /* 1127 */;
+import _modDef2490 from "module_2490" /* 2490 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 12212 */;
 import size from "module_2" /* 2 */;
 
 let _require, c0, c3, closure_5, dependencyMap, importDefault, set;
@@ -48,7 +48,7 @@ function isOnlyDayLoss(label, label2) {
 }
 let obj = { Created: "created", Enabled: "enabled", Disabled: "disabled", Updated: "updated", Removed: "removed", Multiple: "multiple" };
 let map = new Map();
-let obj2 = { [Created]: _modDef2487["5V7eBH"], [Enabled]: _modDef2487.iefrVg, [Disabled]: _modDef2487["k+s9cM"], [Updated]: _modDef2487.Nm6hZV, [Multiple]: _modDef2487.Nm6hZV, [Removed]: _modDef2487.jR6uOs };
+let obj2 = { [Created]: _modDef2490["5V7eBH"], [Enabled]: _modDef2490.iefrVg, [Disabled]: _modDef2490["k+s9cM"], [Updated]: _modDef2490.Nm6hZV, [Multiple]: _modDef2490.Nm6hZV, [Removed]: _modDef2490.jR6uOs };
 ({ Created, Enabled, Disabled, Updated, Multiple, Removed } = obj);
 let result = size.fileFinishedImporting("modules/parent_tools/RestrictedScheduleNotificationUtils.tsx");
 
@@ -233,7 +233,7 @@ export const getRestrictedScheduleNotificationSubtitle = function getRestrictedS
   }
   if (result == null) {
     const intl = intl2.intl;
-    result = intl.string(_modDef2487["8OlpoY"]);
+    result = intl.string(_modDef2490["8OlpoY"]);
   }
   return result;
 };

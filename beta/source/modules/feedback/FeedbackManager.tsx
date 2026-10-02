@@ -1,18 +1,18 @@
-// Module ID: 16316
-// Function ID: 16317
+// Module ID: 16318
+// Function ID: 16319
 // Name: feedback/FeedbackManager
-// Dependencies: [6635, 4859, 16317, 11121, 6634, 2021, 510, 12, 16318, 6539, 2]
+// Dependencies: [6636, 4860, 16319, 10991, 6635, 2027, 510, 12, 16320, 6540, 2]
 
-// Module 16316 (feedback/FeedbackManager)
+// Module 16318 (feedback/FeedbackManager)
 import _mod12 from "module_12" /* 12 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import HotspotStore2 from "HotspotStore" /* 6634 */;
-import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 16318 */;
-import HotspotStore from "hotspot/HotspotStore" /* 6635 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
-import FeedbackOverrideStore from "FeedbackOverrideStore" /* 16317 */;
-import Constants from "Constants" /* 11121 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import HotspotStore2 from "HotspotStore" /* 6635 */;
+import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 16320 */;
+import HotspotStore from "hotspot/HotspotStore" /* 6636 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import FeedbackOverrideStore from "FeedbackOverrideStore" /* 16319 */;
+import Constants from "Constants" /* 10991 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let _require, optOutExpiryTime;
@@ -47,7 +47,7 @@ function optOutEligibilityCheck(hotspot) {
     tmp10 = !tmp5;
   }
   if (tmp10) {
-    const InAppFeedbackStates2 = tmp(2021).InAppFeedbackStates;
+    const InAppFeedbackStates2 = tmp(2027).InAppFeedbackStates;
     InAppFeedbackStates2.updateSetting((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
@@ -93,7 +93,7 @@ function recencyEligibilityCheck(cooldown, storageKey) {
     isNaNResult = Number.isNaN(tmp7);
   }
   if (!isNaNResult) {
-    const InAppFeedbackStates2 = tmp(2021).InAppFeedbackStates;
+    const InAppFeedbackStates2 = tmp(2027).InAppFeedbackStates;
     InAppFeedbackStates2.updateSetting((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);

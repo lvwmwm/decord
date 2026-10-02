@@ -1,33 +1,53 @@
-// Module ID: 5924
-// Function ID: 5925
+// Module ID: 5923
+// Function ID: 5924
 // Name: TableRowArrow
-// Dependencies: [19, 21, 4836, 576, 5283, 5925, 2]
-// Exports: TableRowArrow
+// Dependencies: [19, 21, 4837, 588, 558, 576, 5284, 5924, 2]
 
-// Module 5924 (TableRowArrow)
+// Module 5923 (TableRowArrow)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import Icon from "Icon" /* 5283 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5925 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import IconDefault from "Icon" /* 5284 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5924 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-const IconDefault = Icon;
-
+let obj2;
 let size;
+let tmp;
+const Icon = tmp(5284);
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
-const obj = { icon: size, iconColor: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT } };
+let obj = { icon: size, iconColor: obj2 };
 size = { width: nativeDefault.modules.mobile.TABLE_ROW_ARROW_WIDTH, height: 24, marginStart: nativeDefault.modules.mobile.TABLE_ROW_ARROW_MARGIN_START, marginEnd: nativeDefault.modules.mobile.TABLE_ROW_ARROW_MARGIN_END };
 createStyles = createStyles.createStyles;
-({ color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT });
+obj2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_4 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("design/components/TableRow/native/TableRowArrow.native.tsx");
-
-export const TableRowArrow = function TableRowArrow() {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = react2;
+  const cResult = obj.c(3);
+  const tmp4 = closure_4();
+  if (cResult[0] === tmp4.icon) {
+    let tmp5;
+    if (cResult[1] === tmp4.iconColor.color) {
+      tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  IconDefault;
+  const tmp7 = <tmp6 style={tmp4.icon} color={tmp4.iconColor.color} source={AssetRegistryDefault} size={Icon.IconSizes.CUSTOM} />;
+  cResult[0] = tmp4.icon;
+  cResult[1] = tmp4.iconColor.color;
+  cResult[2] = tmp7;
+  tmp5 = tmp7;
+}) : (() => {
   const tmp = closure_4();
   IconDefault;
   return <tmp2 style={tmp.icon} color={tmp.iconColor.color} source={AssetRegistryDefault} size={Icon.IconSizes.CUSTOM} />;
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("design/components/TableRow/native/TableRowArrow.native.tsx");
+
+export const TableRowArrow = tmp4;

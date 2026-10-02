@@ -1,29 +1,30 @@
-// Module ID: 14778
-// Function ID: 14779
+// Module ID: 14766
+// Function ID: 14767
 // Name: GuildRoleSubscriptionTierTemplatesUtils
-// Dependencies: [5, 19, 2045, 4462, 14773, 14779, 1074, 2052, 5093, 563, 1385, 573, 9014, 6678, 13437, 2]
-// Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
+// Dependencies: [5, 19, 2051, 4465, 14761, 14767, 1086, 2058, 5094, 558, 576, 573, 1391, 585, 8991, 6679, 13439, 2]
+// Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge
 
-// Module 14778 (GuildRoleSubscriptionTierTemplatesUtils)
+// Module 14766 (GuildRoleSubscriptionTierTemplatesUtils)
 import react from "react" /* 19 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import FlagUtilsAll from "FlagUtils" /* 1385 */;
-import ChannelConstants from "ChannelConstants" /* 2052 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6678 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 14773 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import FlagUtilsAll from "FlagUtils" /* 1391 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6679 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 14761 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4462 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 14779 */;
-import allSettled_mod from "allSettled" /* 5093 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4465 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 14767 */;
+import allSettled_mod from "allSettled" /* 5094 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c3, c4, set;
 
 let tmp;
-const GuildRoleSubscriptionsExperimentUtils = tmp(13437);
+const GuildRoleSubscriptionsExperimentUtils = tmp(13439);
 function getUsedTemplateChannelsForGuild(arg0) {
   const arr = useEditStateStore.getState().editStateIdsForGroup[arg0];
   const listings = useEditStateStore.getState().listings;
@@ -71,7 +72,7 @@ let obj = function _createChannelsFromTemplateTierBenefits() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -92,7 +93,7 @@ let obj = function _createChannelsFromTemplateTierBenefits() {
               channel = channel.getChannel(ref_id.ref_id);
               if (null != channel) {
                 const push = navigation.push;
-                obj = closure_2_1(closure_2_3[12]);
+                obj = closure_2_1(closure_2_3[14]);
                 push(obj.createRoleSubscriptionTemplateChannel(closure_1_0, channel.name, channel.type, channel.topic));
                 closure_1_3.push(channel);
               }
@@ -147,7 +148,7 @@ let obj = function _createChannelsFromTemplateTierBenefits() {
           });
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp8) {
         c4 = 3;
         throw tmp8;
@@ -163,19 +164,123 @@ const ChannelFlags = ChannelConstants.ChannelFlags;
 let allSettled = allSettled_mod;
 allSettled = allSettled.shim();
 let closure_12 = {};
-let result = size.fileFinishedImporting("modules/guild_role_subscriptions/tier_templates/GuildRoleSubscriptionTierTemplatesUtils.tsx");
-
-export const useChannelWithTemplateFallback = function useChannelWithTemplateFallback(ref_id) {
-  _require = ref_id;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let obj7;
+  let tmp11;
+  let tmp13;
+  let tmp6;
+  let tmp7;
+  let tmp9;
+  _require = arg0;
+  obj = require("react");
+  const cResult = obj.c(12);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function s() {
+      return ChannelStore.getChannel(closure_0);
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = require("useStateFromStores");
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [GuildRoleSubscriptionTierTemplatesStore];
+    cResult[3] = items1;
+    tmp7 = items1;
+  } else {
+    tmp7 = cResult[3];
+  }
+  if (cResult[4] !== arg0) {
+    const fn2 = function h() {
+      return GuildRoleSubscriptionTierTemplatesStore.getChannel(closure_0);
+    };
+    cResult[4] = arg0;
+    cResult[5] = fn2;
+    tmp9 = fn2;
+  } else {
+    tmp9 = cResult[5];
+  }
+  const tmpResult3 = require("useStateFromStores");
+  let stateFromStores1 = tmpResult3.useStateFromStores(tmp7, tmp9);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [GuildRoleSubscriptionsStore];
+    cResult[6] = items2;
+    tmp11 = items2;
+  } else {
+    tmp11 = cResult[6];
+  }
+  if (cResult[7] !== arg0) {
+    const fn3 = function _() {
+      return GuildRoleSubscriptionsStore.getBenefitChannel(closure_0);
+    };
+    cResult[7] = arg0;
+    cResult[8] = fn3;
+    tmp13 = fn3;
+  } else {
+    tmp13 = cResult[8];
+  }
+  const tmpResult4 = require("useStateFromStores");
+  const stateFromStores2 = tmpResult4.useStateFromStores(tmp11, tmp13);
+  let tmp15 = null;
+  if (null != stateFromStores) {
+    tmp15 = null;
+    if (stateFromStores.isObfuscated()) {
+      tmp15 = null;
+      if (null != stateFromStores2) {
+        if (cResult[9] === stateFromStores2.name) {
+          let tmp16;
+          if (cResult[10] === stateFromStores) {
+            tmp16 = cResult[11];
+          }
+          tmp15 = tmp16;
+        }
+        const merge = stateFromStores.merge;
+        const obj2 = { name: stateFromStores2.name, flags: obj7.removeFlag(stateFromStores.flags, ChannelFlags.OBFUSCATED) };
+        obj7 = FlagUtilsAll;
+        const mergeResult = merge(obj2);
+        cResult[9] = stateFromStores2.name;
+        cResult[10] = stateFromStores;
+        cResult[11] = mergeResult;
+        tmp16 = mergeResult;
+      }
+    }
+  }
+  if (null != stateFromStores) {
+    let tmp20 = stateFromStores;
+    if (stateFromStores.isObfuscated()) {
+      if (tmp15 == null) {
+        tmp15 = stateFromStores;
+      }
+      tmp20 = tmp15;
+    }
+    stateFromStores1 = tmp20;
+  }
+  return stateFromStores1;
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
   obj = require("useStateFromStores");
   const items = [ChannelStore];
-  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(ref_id));
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(closure_0));
   let obj3 = require("useStateFromStores");
   const items1 = [GuildRoleSubscriptionTierTemplatesStore];
-  let stateFromStores1 = obj3.useStateFromStores(items1, () => GuildRoleSubscriptionTierTemplatesStore.getChannel(ref_id));
+  let stateFromStores1 = obj3.useStateFromStores(items1, () => GuildRoleSubscriptionTierTemplatesStore.getChannel(closure_0));
   const items2 = [GuildRoleSubscriptionsStore];
   const obj4 = require("useStateFromStores");
-  const stateFromStores2 = obj4.useStateFromStores(items2, () => GuildRoleSubscriptionsStore.getBenefitChannel(ref_id));
+  const stateFromStores2 = obj4.useStateFromStores(items2, () => GuildRoleSubscriptionsStore.getBenefitChannel(closure_0));
   const items3 = [stateFromStores, stateFromStores2];
   let tmp3 = useMemo(() => {
     let obj3;
@@ -205,16 +310,240 @@ export const useChannelWithTemplateFallback = function useChannelWithTemplateFal
     stateFromStores1 = tmp4;
   }
   return stateFromStores1;
-};
-export const useSuggestedUnusedPrices = function useSuggestedUnusedPrices(guildId, priceTiers, price_tier) {
-  _require = guildId;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, arg2) {
+  let closure_0;
+  let first;
+  let tmp10;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  const tmp = _require;
+  obj = require("react");
+  const cResult = obj.c(21);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildRoleSubscriptionsStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      return GuildRoleSubscriptionsStore.getSubscriptionListingsForGuild(closure_0);
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(573);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] !== arg0) {
+    const fn2 = function f(arg0) {
+      return arg0.editStateIdsForGroup[closure_0];
+    };
+    cResult[3] = arg0;
+    cResult[4] = fn2;
+    tmp7 = fn2;
+  } else {
+    tmp7 = cResult[4];
+  }
+  const tmp9 = useEditStateStore(tmp7);
+  const tmp8 = useEditStateStore;
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn3 = function p(listings) {
+      return listings.listings;
+    };
+    cResult[5] = fn3;
+    tmp10 = fn3;
+  } else {
+    tmp10 = cResult[5];
+  }
+  const tmp8Result = tmp8(tmp10);
+  let closure_1 = tmp8Result;
+  if (undefined !== arg2) {
+    if (undefined !== arg1) {
+      if (cResult[6] !== stateFromStores) {
+        let tmp13;
+        let tmp14;
+        const _Symbol = Symbol;
+        if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+          class S {
+            constructor(soft_deleted) {
+              return !soft_deleted.soft_deleted && !soft_deleted.archived;
+            }
+          }
+          cResult[8] = S;
+          tmp13 = S;
+        } else {
+          class S {
+            constructor(soft_deleted) {
+              return !soft_deleted.soft_deleted && !soft_deleted.archived;
+            }
+          }
+        }
+        const found = stateFromStores.filter(tmp13);
+        const _Symbol2 = Symbol;
+        if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+          class T {
+            constructor(arg0) {
+              return arg0.subscription_plans[0].price;
+            }
+          }
+          cResult[9] = T;
+          tmp14 = T;
+        } else {
+          class T {
+            constructor(arg0) {
+              return arg0.subscription_plans[0].price;
+            }
+          }
+        }
+        const mapped = found.map(tmp14);
+        cResult[6] = stateFromStores;
+        cResult[7] = mapped;
+      } else {
+        class T {
+          constructor(arg0) {
+            return arg0.subscription_plans[0].price;
+          }
+        }
+      }
+      if (cResult[10] === tmp8Result) {
+        class T {
+          constructor(arg0) {
+            return arg0.subscription_plans[0].price;
+          }
+        }
+        if (cResult[13] === obj3) {
+          class T {
+            constructor(arg0) {
+              return arg0.subscription_plans[0].price;
+            }
+          }
+          if (obj4.has(arg2)) {
+            class T {
+              constructor(arg0) {
+                return arg0.subscription_plans[0].price;
+              }
+            }
+            if (-1 === tmp19) {
+              class T {
+                constructor(arg0) {
+                  return arg0.subscription_plans[0].price;
+                }
+              }
+              return null;
+            } else {
+              class T {
+                constructor(arg0) {
+                  return arg0.subscription_plans[0].price;
+                }
+              }
+              const _Symbol3 = Symbol;
+              const forResult = Symbol.for("react.early_return_sentinel");
+              const items1 = [];
+              const sum = tmp19 + 1;
+              let tmp24 = forResult;
+              if (sum < arg1.length) {
+                class T {
+                  constructor(arg0) {
+                    return arg0.subscription_plans[0].price;
+                  }
+                }
+                while (true) {
+                  class T {
+                    constructor(arg0) {
+                      return arg0.subscription_plans[0].price;
+                    }
+                  }
+                  if (!obj4.has(arg1[sum])) {
+                    class T {
+                      constructor(arg0) {
+                        return arg0.subscription_plans[0].price;
+                      }
+                    }
+                  }
+                  tmp24 = items1;
+                  if (3 === items1.length) {
+                    class T {
+                      constructor(arg0) {
+                        return arg0.subscription_plans[0].price;
+                      }
+                    }
+                  } else {
+                    class T {
+                      constructor(arg0) {
+                        return arg0.subscription_plans[0].price;
+                      }
+                    }
+                    tmp24 = forResult;
+                    if (sum >= arg1.length) {
+                      class T {
+                        constructor(arg0) {
+                          return arg0.subscription_plans[0].price;
+                        }
+                      }
+                    } else {
+                      class T {
+                        constructor(arg0) {
+                          return arg0.subscription_plans[0].price;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              cResult[16] = tmp19;
+              cResult[17] = arg1;
+              cResult[18] = obj4;
+              cResult[19] = items1;
+              cResult[20] = tmp24;
+            }
+          } else {
+            class T {
+              constructor(arg0) {
+                return arg0.subscription_plans[0].price;
+              }
+            }
+            return null;
+          }
+        }
+        const _Set = Set;
+        const self = this;
+        const self2 = this;
+        cResult[13] = obj3;
+        cResult[14] = tmp12;
+        cResult[15] = new Set(obj3.concat(tmp12));
+        set = new Set(obj3.concat(tmp12));
+      }
+      const items2 = [];
+      if (undefined !== tmp9) {
+        class T {
+          constructor(arg0) {
+            return arg0.subscription_plans[0].price;
+          }
+        }
+      }
+      cResult[10] = tmp8Result;
+      cResult[11] = tmp9;
+      cResult[12] = items2;
+    }
+  }
+  return null;
+}) : (function(arg0, arr, arg2) {
+  let closure_0;
+  _require = arg0;
   const items = [GuildRoleSubscriptionsStore];
   obj = require("useStateFromStores");
-  const stateFromStores = obj.useStateFromStores(items, () => GuildRoleSubscriptionsStore.getSubscriptionListingsForGuild(guildId));
-  const arr3 = useEditStateStore((arg0) => arg0.editStateIdsForGroup[guildId]);
+  const stateFromStores = obj.useStateFromStores(items, () => GuildRoleSubscriptionsStore.getSubscriptionListingsForGuild(closure_0));
+  const arr3 = useEditStateStore((arg0) => arg0.editStateIdsForGroup[closure_0]);
   let closure_1 = useEditStateStore((listings) => listings.listings);
-  if (undefined !== price_tier) {
-    if (undefined !== priceTiers) {
+  if (undefined !== arg2) {
+    if (undefined !== arr) {
       const found = stateFromStores.filter((soft_deleted) => !soft_deleted.soft_deleted && !soft_deleted.archived);
       const items1 = [];
       const mapped = found.map((item) => item.subscription_plans[0].price);
@@ -233,17 +562,17 @@ export const useSuggestedUnusedPrices = function useSuggestedUnusedPrices(guildI
       const self = this;
       const self2 = this;
       set = new Set(items1.concat(mapped));
-      if (set.has(price_tier)) {
-        const index = priceTiers.indexOf(price_tier);
+      if (set.has(arg2)) {
+        const index = arr.indexOf(arg2);
         if (-1 === index) {
           return null;
         } else {
           const items2 = [];
           let sum = index + 1;
-          if (sum < priceTiers.length) {
+          if (sum < arr.length) {
             while (true) {
-              if (!set.has(priceTiers[sum])) {
-                let arr = items2.push(priceTiers[sum]);
+              if (!set.has(arr[sum])) {
+                arr = items2.push(arr[sum]);
               }
               if (3 === items2.length) {
                 break;
@@ -261,7 +590,11 @@ export const useSuggestedUnusedPrices = function useSuggestedUnusedPrices(guildI
     }
   }
   return null;
-};
+});
+let result = size.fileFinishedImporting("modules/guild_role_subscriptions/tier_templates/GuildRoleSubscriptionTierTemplatesUtils.tsx");
+
+export const useChannelWithTemplateFallback = tmp3;
+export const useSuggestedUnusedPrices = tmp4;
 export const announceCreateTemplateChannels = function announceCreateTemplateChannels(arg0) {
   const arr = getUsedTemplateChannelsForGuild(arg0);
   closure_12[arg0] = arr;

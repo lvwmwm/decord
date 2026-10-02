@@ -1,12 +1,12 @@
-// Module ID: 7799
-// Function ID: 7800
+// Module ID: 7803
+// Function ID: 7804
 // Name: ICYMIActionCreators
-// Dependencies: [5, 1074, 1271, 573, 1231, 7798, 2021, 2]
+// Dependencies: [5, 1086, 1283, 585, 1243, 7802, 2027, 2]
 
-// Module 7799 (ICYMIActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import ICYMIUtils from "ICYMIUtils" /* 7798 */;
+// Module 7803 (ICYMIActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import ICYMIUtils from "ICYMIUtils" /* 7802 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -116,7 +116,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -189,7 +189,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp20) {
           refresh = tmp20;
           if (0 === c3) {
@@ -217,7 +217,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -250,7 +250,7 @@ let obj = {
                 }
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === constants) {
             c3 = 0;
@@ -300,7 +300,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -350,7 +350,7 @@ let obj = {
             if (0 === channel_id.body.message_items.length) {
               c3 = 0;
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else {
               const obj9 = { type: "LOAD_ICYMI_FROM_NOTIFICATION", messageItem: channel_id.body.message_items[0] };
               const obj = message_id(closure_2[3]);
@@ -359,7 +359,7 @@ let obj = {
             }
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp23) {
           closure_2 = tmp23;
           if (0 === c3) {
@@ -396,7 +396,7 @@ let obj = {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp30;
@@ -470,7 +470,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp30) {
           if (0 === c3) {
             c5 = 3;
@@ -494,7 +494,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -546,7 +546,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp21) {
           closure_2 = tmp21;
           if (0 === c3) {
@@ -571,7 +571,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -623,7 +623,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp21) {
           closure_2 = tmp21;
           if (0 === c3) {
@@ -648,7 +648,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -707,7 +707,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp24) {
           closure_2 = tmp24;
           if (0 === c3) {
@@ -798,9 +798,9 @@ let obj = {
     const obj = DispatcherDefault;
     obj.dispatch({ type: "ICYMI_TAKE_SURVEY", takenAt: timestamp });
   },
-  itemInteracted(id, hotwheels_gaming_activity, open_profile) {
+  itemInteracted(id, type, open_profile) {
     const obj = DispatcherDefault;
-    const obj2 = { type: "ICYMI_ITEM_INTERACTED", itemId: id, itemType: hotwheels_gaming_activity, actionType: open_profile };
+    const obj2 = { type: "ICYMI_ITEM_INTERACTED", itemId: id, itemType: type, actionType: open_profile };
     obj.dispatch(obj2);
   },
   feedItemActioned(arg0) {

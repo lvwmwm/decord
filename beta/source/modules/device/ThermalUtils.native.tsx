@@ -1,19 +1,19 @@
-// Module ID: 8758
-// Function ID: 8759
+// Module ID: 8753
+// Function ID: 8754
 // Name: ThermalUtils
-// Dependencies: [17, 8759, 1364, 4812, 560, 1248, 2]
+// Dependencies: [17, 8754, 1370, 4813, 570, 1260, 2]
 
-// Module 8758 (ThermalUtils)
+// Module 8753 (ThermalUtils)
 import react_native from "react-native" /* 17 */;
-import react_nativeDefault from "react-native" /* 8759 */;
-import module_560 from "module_560" /* 560 */;
+import react_nativeDefault from "react-native" /* 8754 */;
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, state;
 
 const nativeEventEmitter = new react_native.NativeEventEmitter(react_nativeDefault);
-let closure_4 = module_560.create((arg0) => {
+let closure_4 = module_570.create((arg0) => {
   let closure_0;
   let rawThermalState;
   _require = arg0;
@@ -36,7 +36,7 @@ let closure_4 = module_560.create((arg0) => {
     const thermalState = obj3.getThermalState();
     rawThermalState = thermalState;
   } else {
-    tmp2(4812);
+    tmp2(4813);
   }
   return { rawThermalState };
 });

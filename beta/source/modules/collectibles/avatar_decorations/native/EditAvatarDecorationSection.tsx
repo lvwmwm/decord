@@ -1,20 +1,21 @@
-// Module ID: 12742
-// Function ID: 12743
+// Module ID: 12744
+// Function ID: 12745
 // Name: EditAvatarDecorationSection
-// Dependencies: [19, 17, 6967, 1398, 21, 4836, 12743, 12741, 12744, 6603, 8275, 2]
+// Dependencies: [19, 17, 6971, 1404, 21, 4837, 12745, 558, 576, 12743, 12746, 6604, 8272, 2]
 
-// Module 12742 (EditAvatarDecorationSection)
+// Module 12744 (EditAvatarDecorationSection)
 import react_native from "react-native" /* 17 */;
-import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1398 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 6967 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 8275 */;
-import useAvatarDecorationSections from "useAvatarDecorationSections" /* 12741 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 12743 */;
-import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 12744 */;
+import react2 from "react" /* 576 */;
+import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1404 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 6971 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 8272 */;
+import useAvatarDecorationSections from "useAvatarDecorationSections" /* 12743 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 12745 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let avatarDecoration;
@@ -24,6 +25,8 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let obj3;
+let tmp;
+const CollectiblesEditUserProfileListItems = tmp(12746);
 const View = react_native.View;
 const isAvatarDecorationRecord = AvatarDecorationRecord.isAvatarDecorationRecord;
 const AVATAR_DECORATION_SIZE = AvatarDecorationConstants.AVATAR_DECORATION_SIZE;
@@ -34,7 +37,121 @@ obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "space-betw
 createStyles = createStyles.createStyles;
 obj3 = { height: useCollectibleListLayout.GUTTER_SIZE };
 let closure_10 = createStyles(obj);
-const memoResult = react.memo((size) => {
+const memo = react.memo;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((setSelectedAvatarDecoration) => {
+  let guildId;
+  let isTryItOut;
+  let items;
+  let items1;
+  let selectedSkuId;
+  let tmp6;
+  const tmp = selectedSkuId;
+  let obj = selectedSkuId(guildId[8]);
+  const cResult = obj.c(19);
+  ({ items, selectedSkuId } = setSelectedAvatarDecoration);
+  setSelectedAvatarDecoration = setSelectedAvatarDecoration.setSelectedAvatarDecoration;
+  const tmp2 = guildId;
+  guildId = setSelectedAvatarDecoration.guildId;
+  ({ isTryItOut, size } = setSelectedAvatarDecoration);
+  isTryItOut = tmp4;
+  const tmp5 = closure_10();
+  if (cResult[0] !== setSelectedAvatarDecoration) {
+    const fn = function o() {
+      setSelectedAvatarDecoration(null);
+    };
+    cResult[0] = setSelectedAvatarDecoration;
+    cResult[1] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[1];
+  }
+  const onPress = tmp6;
+  const isSelected = tmp7;
+  if (cResult[2] === guildId) {
+    if (cResult[3] === null == selectedSkuId) {
+      if (cResult[4] === (undefined !== isTryItOut && isTryItOut)) {
+        if (cResult[5] === items) {
+          if (cResult[6] === tmp6) {
+            if (cResult[7] === selectedSkuId) {
+              if (cResult[8] === setSelectedAvatarDecoration) {
+                let tmp9;
+                if (cResult[9] === size) {
+                  tmp9 = cResult[10];
+                }
+                if (cResult[11] === tmp5.row) {
+                  let tmp11;
+                  let tmp15;
+                  if (cResult[12] === tmp9) {
+                    tmp11 = cResult[13];
+                  }
+                  if (cResult[14] !== tmp5.rowSpacer) {
+                    let obj2 = { style: tmp5.rowSpacer };
+                    const tmp18 = closure_7(isTryItOut, obj2);
+                    cResult[14] = tmp5.rowSpacer;
+                    cResult[15] = tmp18;
+                    tmp15 = tmp18;
+                  } else {
+                    tmp15 = cResult[15];
+                  }
+                  if (cResult[16] === tmp11) {
+                    let tmp19;
+                    if (cResult[17] === tmp15) {
+                      tmp19 = cResult[18];
+                    }
+                    return tmp19;
+                  }
+                  let obj3 = { children: items1 };
+                  items1 = [tmp11, tmp15];
+                  const tmp22 = closure_9(closure_8, obj3);
+                  cResult[16] = tmp11;
+                  cResult[17] = tmp15;
+                  cResult[18] = tmp22;
+                  tmp19 = tmp22;
+                }
+                let obj4 = { style: tmp8, children: tmp9 };
+                const tmp14 = closure_7(isTryItOut, obj4);
+                cResult[11] = tmp5.row;
+                cResult[12] = tmp9;
+                cResult[13] = tmp14;
+                tmp11 = tmp14;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  const items2 = [...items, null, null];
+  const substr = items2.slice(0, tmp(tmp2[6]).ROW_SIZE);
+  const mapped = substr.map((avatarDecoration, index) => {
+    if (avatarDecoration === useAvatarDecorationSections.NONE_ITEM) {
+      const obj2 = { size, onPress, isSelected, asDefault: null != guildId };
+      return metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
+    } else if (avatarDecoration === useAvatarDecorationSections.SHOP_ITEM) {
+      const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_AVATAR_DECORATION_SHEET };
+      const EditCollectiblesListItemShop = tmp(12746).EditCollectiblesListItemShop;
+      return metroImportDefault(EditCollectiblesListItemShop, obj3, "shop");
+    } else if (isAvatarDecorationRecord(avatarDecoration)) {
+      const obj4 = { avatarDecoration, isSelected: selectedSkuId === avatarDecoration.skuId, setSelectedAvatarDecoration, isTryItOut, size };
+      return metroImportDefault(unpackModuleId, obj4, avatarDecoration.skuId);
+    } else {
+      const obj = { style: size };
+      size = { height: size, width: size };
+      return metroImportDefault(View, obj, index);
+    }
+  });
+  cResult[2] = guildId;
+  cResult[3] = null == selectedSkuId;
+  cResult[4] = undefined !== isTryItOut && isTryItOut;
+  cResult[5] = items;
+  cResult[6] = tmp6;
+  cResult[7] = selectedSkuId;
+  cResult[8] = setSelectedAvatarDecoration;
+  cResult[9] = size;
+  cResult[10] = mapped;
+  tmp9 = mapped;
+}) : ((size) => {
   let isTryItOut;
   let items;
   let items3;
@@ -60,11 +177,11 @@ const memoResult = react.memo((size) => {
         return metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (avatarDecoration === useAvatarDecorationSections.SHOP_ITEM) {
         const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_AVATAR_DECORATION_SHEET };
-        const EditCollectiblesListItemShop = tmp(12744).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(12746).EditCollectiblesListItemShop;
         return metroImportDefault(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isAvatarDecorationRecord(avatarDecoration)) {
         const obj4 = { avatarDecoration, isSelected: require === avatarDecoration.skuId, setSelectedAvatarDecoration, isTryItOut, size };
-        return metroImportDefault(memoResult1, obj4, avatarDecoration.skuId);
+        return metroImportDefault(unpackModuleId, obj4, avatarDecoration.skuId);
       } else {
         const obj = { style: size };
         size = { height: size, width: size };
@@ -78,9 +195,73 @@ const memoResult = react.memo((size) => {
   let obj3 = { style: tmp.rowSpacer };
   items3[1] = closure_7(size, obj3);
   return closure_9(closure_8, obj);
-});
+}));
 memoResult.displayName = "EditAvatarDecorationRow";
-const memoResult1 = react.memo((avatarDecoration) => {
+const memo2 = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((avatarDecoration) => {
+  let isSelected;
+  let isTryItOut;
+  let setSelectedAvatarDecoration;
+  const obj = react2;
+  const cResult = obj.c(14);
+  avatarDecoration = avatarDecoration.avatarDecoration;
+  ({ isSelected, setSelectedAvatarDecoration } = avatarDecoration);
+  ({ isTryItOut, size } = avatarDecoration);
+  if (cResult[0] === avatarDecoration) {
+    let tmp5;
+    if (cResult[1] === setSelectedAvatarDecoration) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] === avatarDecoration) {
+      let tmp6;
+      if (cResult[4] === isSelected) {
+        tmp6 = cResult[5];
+      }
+      if (cResult[6] === avatarDecoration.label) {
+        if (cResult[7] === avatarDecoration.skuId) {
+          if (cResult[8] === isSelected) {
+            if (cResult[9] === (undefined !== isTryItOut && isTryItOut)) {
+              if (cResult[10] === tmp5) {
+                if (cResult[11] === size) {
+                  let tmp11;
+                  if (cResult[12] === tmp6) {
+                    tmp11 = cResult[13];
+                  }
+                  return tmp11;
+                }
+              }
+            }
+          }
+        }
+      }
+      const obj2 = { skuId: avatarDecoration.skuId, isSelected, onPress: tmp5, size, isTryItOut: undefined !== isTryItOut && isTryItOut, accessibilityLabel: avatarDecoration.label, children: tmp6 };
+      const tmp13 = metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemProduct, obj2);
+      cResult[6] = avatarDecoration.label;
+      cResult[7] = avatarDecoration.skuId;
+      cResult[8] = isSelected;
+      cResult[9] = undefined !== isTryItOut && isTryItOut;
+      cResult[10] = tmp5;
+      cResult[11] = size;
+      cResult[12] = tmp6;
+      cResult[13] = tmp13;
+      tmp11 = tmp13;
+    }
+    const obj3 = { avatarDecoration, size: AVATAR_DECORATION_SIZE, animate: isSelected };
+    const tmp10 = metroImportDefault(CutoutableAvatarDecorationDefault, obj3);
+    cResult[3] = avatarDecoration;
+    cResult[4] = isSelected;
+    cResult[5] = tmp10;
+    tmp6 = tmp10;
+  }
+  const fn = function s() {
+    setSelectedAvatarDecoration(avatarDecoration);
+  };
+  cResult[0] = avatarDecoration;
+  cResult[1] = setSelectedAvatarDecoration;
+  cResult[2] = fn;
+  tmp5 = fn;
+}) : ((avatarDecoration) => {
   let isSelected;
   let obj2;
   let setSelectedAvatarDecoration;
@@ -99,8 +280,9 @@ const memoResult1 = react.memo((avatarDecoration) => {
   const EditCollectiblesListItemProduct = CollectiblesEditUserProfileListItems.EditCollectiblesListItemProduct;
   obj2 = { avatarDecoration, size: AVATAR_DECORATION_SIZE, animate: isSelected };
   return metroImportDefault(EditCollectiblesListItemProduct, obj);
-});
-memoResult1.displayName = "EditAvatarDecorationItem";
+}));
+const unpackModuleId = memo2Result;
+memo2Result.displayName = "EditAvatarDecorationItem";
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/collectibles/avatar_decorations/native/EditAvatarDecorationSection.tsx");
 

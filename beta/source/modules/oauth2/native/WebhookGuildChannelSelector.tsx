@@ -1,23 +1,23 @@
-// Module ID: 8730
-// Function ID: 8731
+// Module ID: 8725
+// Function ID: 8726
 // Name: WebhookGuildChannelSelector
-// Dependencies: [5, 32, 19, 17, 2049, 4479, 1372, 21, 4836, 576, 4800, 8729, 1981, 1115, 4989, 8523, 4832, 1177, 8053, 2]
+// Dependencies: [5, 32, 19, 17, 2055, 4482, 1378, 21, 4837, 588, 4801, 8724, 1987, 1127, 4990, 8520, 4833, 1189, 8057, 2]
 // Exports: default
 
-// Module 8730 (WebhookGuildChannelSelector)
+// Module 8725 (WebhookGuildChannelSelector)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl4 from "intl" /* 1115 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, v3;
@@ -85,7 +85,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
         hasIcons: false
       };
       ActionSheetActionCreatorsDefault;
-      const tmp8 = asyncRequire(8729, dependencyMap.paths);
+      const tmp8 = asyncRequire(8724, dependencyMap.paths);
       intl = intl4.intl;
       channels = tmp.channels;
       openLazy(tmp8, WebhookGuildChannelSelector_str, obj);
@@ -111,7 +111,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -150,7 +150,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
                   closure_1_5.current = true;
                 }
                 v3 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp19) {
               v3 = 3;

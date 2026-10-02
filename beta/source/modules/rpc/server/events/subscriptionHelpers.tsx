@@ -1,21 +1,21 @@
-// Module ID: 14065
-// Function ID: 14066
+// Module ID: 14067
+// Function ID: 14068
 // Name: subscriptionHelpers
-// Dependencies: [2044, 8499, 7116, 4739, 1074, 2005, 8500, 8781, 5438, 14025, 7137, 2]
+// Dependencies: [2050, 8496, 7120, 4741, 1086, 2011, 8497, 8776, 5439, 14027, 7141, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 14065 (subscriptionHelpers)
-import Constants2 from "Constants" /* 1074 */;
-import Constants3 from "Constants" /* 4739 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5438 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7137 */;
-import FramesConstants from "FramesConstants" /* 8500 */;
-import useThermalState from "useThermalState" /* 8781 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14025 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import FramesStore from "FramesStore" /* 8499 */;
-import QuestStore from "QuestStore" /* 7116 */;
-import Constants from "Constants" /* 2005 */;
+// Module 14067 (subscriptionHelpers)
+import Constants2 from "Constants" /* 1086 */;
+import Constants3 from "Constants" /* 4741 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5439 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7141 */;
+import FramesConstants from "FramesConstants" /* 8497 */;
+import useThermalState from "useThermalState" /* 8776 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14027 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import FramesStore from "FramesStore" /* 8496 */;
+import QuestStore from "QuestStore" /* 7120 */;
+import Constants from "Constants" /* 2011 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;

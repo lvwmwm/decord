@@ -1,19 +1,141 @@
-// Module ID: 11942
-// Function ID: 11943
+// Module ID: 11836
+// Function ID: 11837
 // Name: ChatInputGuardSpamMessageRequest
-// Dependencies: [19, 1372, 21, 1485, 504, 11943, 11935, 4528, 1115, 5909, 11941, 4847, 2]
+// Dependencies: [19, 1378, 21, 558, 576, 1491, 504, 11837, 4531, 1127, 5906, 11829, 4848, 11835, 2]
 
-// Module 11942 (ChatInputGuardSpamMessageRequest)
+// Module 11836 (ChatInputGuardSpamMessageRequest)
 import Fragment from "Fragment" /* 21 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, navigation;
 
 let react = react_mod;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(function ChatInputGuardSpamMessageRequest(channel) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let first;
+  let isOptimisticRejected;
+  let isRejectLoading;
+  let isUserProfileLoading;
+  let longestChannelMessageBeforeReply;
+  let markAsNotSpam;
+  let obj3;
+  let tmp12;
+  let tmp7;
+  let tmp9;
+  const tmp = channel;
+  let obj = channel(longestChannelMessageBeforeReply[4]);
+  const cResult = obj.c(28);
+  channel = channel.channel;
+  const obj2 = channel(longestChannelMessageBeforeReply[5]);
+  navigation = obj2.useNavigation();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [markAsNotSpam];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channel) {
+    const fn = function s() {
+      return UserStore.getUser(channel.getRecipientId());
+    };
+    cResult[1] = channel;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(longestChannelMessageBeforeReply[6]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  const id = channel.id;
+  if (cResult[3] !== channel) {
+    const recipientId = channel.getRecipientId();
+    cResult[3] = channel;
+    cResult[4] = recipientId;
+    tmp9 = recipientId;
+  } else {
+    tmp9 = cResult[4];
+  }
+  const tmpResult3 = tmp(longestChannelMessageBeforeReply[7]);
+  longestChannelMessageBeforeReply = tmpResult3.useLongestChannelMessageBeforeReply(id, tmp9);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor() {
+        let intl;
+        const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(channel(longestChannelMessageBeforeReply[9]).t["EDYbS+"]), icon: navigation(longestChannelMessageBeforeReply[10]) };
+        const open = navigation(longestChannelMessageBeforeReply[8]).open;
+        navigation(longestChannelMessageBeforeReply[8]);
+        intl = channel(longestChannelMessageBeforeReply[9]).intl;
+        open(obj);
+      }
+    }
+    cResult[5] = R;
+    tmp12 = R;
+  } else {
+    class R {
+      constructor() {
+        let intl;
+        const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(channel(longestChannelMessageBeforeReply[9]).t["EDYbS+"]), icon: navigation(longestChannelMessageBeforeReply[10]) };
+        const open = navigation(longestChannelMessageBeforeReply[8]).open;
+        navigation(longestChannelMessageBeforeReply[8]);
+        intl = channel(longestChannelMessageBeforeReply[9]).intl;
+        open(obj);
+      }
+    }
+  }
+  if (cResult[6] !== navigation) {
+    class E {
+      constructor() {
+        navigation.pop();
+      }
+    }
+    cResult[6] = navigation;
+    cResult[7] = E;
+  } else {
+    class E {
+      constructor() {
+        navigation.pop();
+      }
+    }
+  }
+  if (cResult[8] === tmp13) {
+    class E {
+      constructor() {
+        navigation.pop();
+      }
+    }
+    const tmpResult4 = tmp(longestChannelMessageBeforeReply[11]);
+    const messageRequestActions = tmpResult4.useMessageRequestActions(obj3);
+    const rejectMessageRequest = messageRequestActions.rejectMessageRequest;
+    ({ isRejectLoading, isUserProfileLoading, isOptimisticRejected, markAsNotSpam } = messageRequestActions);
+    if (cResult[11] === channel) {
+      class E {
+        constructor() {
+          navigation.pop();
+        }
+      }
+    }
+    const fn2 = function v(stopPropagation) {
+      let id;
+      stopPropagation.stopPropagation();
+      markAsNotSpam(channel, longestChannelMessageBeforeReply, () => {
+        const obj = channel(longestChannelMessageBeforeReply[12]);
+        return obj.transitionToChannel(id.id, { navigationReplace: true });
+      });
+    };
+    cResult[11] = channel;
+    cResult[12] = markAsNotSpam;
+    cResult[13] = longestChannelMessageBeforeReply;
+    cResult[14] = fn2;
+  }
+  obj3 = { user: stateFromStores, onError: tmp12, onRejectSuccess: tmp13 };
+  cResult[8] = tmp13;
+  cResult[9] = stateFromStores;
+  cResult[10] = obj3;
+}) : ((channel) => {
   let _undefined;
   let _undefined2;
   let c3;
@@ -30,26 +152,26 @@ const memoResult = react.memo(function ChatInputGuardSpamMessageRequest(channel)
   react = undefined;
   c4 = undefined;
   const tmp = channel;
-  let obj = channel(1485);
+  let obj = channel(1491);
   navigation = obj.useNavigation();
   const items = [c4];
   const obj2 = channel(504);
   const stateFromStores = obj2.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  const obj3 = channel(11943);
+  const obj3 = channel(11837);
   dependencyMap = obj3.useLongestChannelMessageBeforeReply(channel.id, channel.getRecipientId());
   const items1 = [navigation];
   const callback = react.useCallback(() => {
     navigation.pop();
   }, items1);
-  const obj4 = channel(11935);
+  const obj4 = channel(11829);
   const obj5 = {
     user: stateFromStores,
     onError() {
       let intl;
-      const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(channel(closure_2[8]).t["EDYbS+"]), icon: navigation(closure_2[9]) };
-      const open = navigation(closure_2[7]).open;
-      navigation(closure_2[7]);
-      intl = channel(closure_2[8]).intl;
+      const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(channel(closure_2[9]).t["EDYbS+"]), icon: navigation(closure_2[10]) };
+      const open = navigation(closure_2[8]).open;
+      navigation(closure_2[8]);
+      intl = channel(closure_2[9]).intl;
       open(obj);
     },
     onRejectSuccess: callback
@@ -58,9 +180,9 @@ const memoResult = react.memo(function ChatInputGuardSpamMessageRequest(channel)
   ({ rejectMessageRequest: c3, isRejectLoading, isUserProfileLoading, isOptimisticRejected, markAsNotSpam: c4 } = messageRequestActions);
   const obj6 = {
     type: "button-action",
-    message: intl.string(tmp(1115).t.fS08qB),
-    subtext: intl2.string(tmp(1115).t["8U5OXE"]),
-    buttonPrimaryText: intl3.string(tmp(1115).t.cpT0Cq),
+    message: intl.string(tmp(1127).t.fS08qB),
+    subtext: intl2.string(tmp(1127).t["8U5OXE"]),
+    buttonPrimaryText: intl3.string(tmp(1127).t.cpT0Cq),
     buttonPrimaryOnPress(stopPropagation) {
       stopPropagation.stopPropagation();
       _undefined(channel.id);
@@ -68,29 +190,29 @@ const memoResult = react.memo(function ChatInputGuardSpamMessageRequest(channel)
     buttonPrimaryDisabled: isRejectLoading || isUserProfileLoading || isOptimisticRejected,
     buttonPrimaryLoading: isRejectLoading,
     buttonPrimaryVariant: "destructive",
-    buttonSecondaryText: intl4.string(tmp(1115).t.olZgw5),
+    buttonSecondaryText: intl4.string(tmp(1127).t.olZgw5),
     buttonSecondaryOnPress(stopPropagation) {
       let id;
       stopPropagation.stopPropagation();
       _undefined2(channel, closure_2, () => {
-        const obj = channel(closure_2[11]);
+        const obj = channel(closure_2[12]);
         return obj.transitionToChannel(id.id, { navigationReplace: true });
       });
     },
     buttonSecondaryDisabled: isRejectLoading || isUserProfileLoading || isOptimisticRejected,
     buttonSecondaryLoading: isUserProfileLoading
   };
-  const tmp9 = navigation(11941);
-  intl = tmp(1115).intl;
-  intl2 = tmp(1115).intl;
-  intl3 = tmp(1115).intl;
+  const tmp9 = navigation(11835);
+  intl = tmp(1127).intl;
+  intl2 = tmp(1127).intl;
+  intl3 = tmp(1127).intl;
   const tmp8 = jsx;
   if (!isRejectLoading) {
     isRejectLoading = isOptimisticRejected;
   }
-  intl4 = tmp(1115).intl;
+  intl4 = tmp(1127).intl;
   return tmp8(tmp9, obj6);
-});
+}));
 const result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardSpamMessageRequest.tsx");
 
 export default memoResult;

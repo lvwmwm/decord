@@ -1,21 +1,47 @@
-// Module ID: 15499
-// Function ID: 15500
+// Module ID: 15487
+// Function ID: 15488
 // Name: GuildSettingActivityStatus
-// Dependencies: [15486, 7417, 2021, 6416, 11006, 1115, 2]
+// Dependencies: [15474, 7421, 558, 576, 2027, 6416, 10874, 1127, 2]
 
-// Module 15499 (GuildSettingActivityStatus)
-import intl2 from "intl" /* 1115 */;
-import UserSettings from "UserSettings" /* 2021 */;
+// Module 15487 (GuildSettingActivityStatus)
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import UserSettings from "UserSettings" /* 2027 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15486 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15474 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 let c3;
 ({ getSelectedGuildId: c2, useUserSafetySettingsSelectedGuildStore: c3 } = UserSettingsSafetySelectedGuildStore);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = react;
+  const cResult = obj.c(3);
+  const selectedGuildId = _false().selectedGuildId;
+  const ActivityRestrictedGuilds = UserSettings.ActivityRestrictedGuilds;
+  const setting = ActivityRestrictedGuilds.useSetting();
+  if (cResult[0] === selectedGuildId) {
+    let tmp2;
+    if (cResult[1] === setting) {
+      tmp2 = cResult[2];
+    }
+    return !tmp2;
+  }
+  const hasItem = setting.includes(selectedGuildId);
+  cResult[0] = selectedGuildId;
+  cResult[1] = setting;
+  cResult[2] = hasItem;
+  tmp2 = hasItem;
+}) : (() => {
+  const selectedGuildId = _false().selectedGuildId;
+  const ActivityRestrictedGuilds = UserSettings.ActivityRestrictedGuilds;
+  const setting = ActivityRestrictedGuilds.useSetting();
+  return !setting.includes(selectedGuildId);
+});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -26,12 +52,7 @@ let obj = {
     return intl.string(intl2.t.TUKMak);
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue() {
-    const selectedGuildId = _false().selectedGuildId;
-    const ActivityRestrictedGuilds = UserSettings.ActivityRestrictedGuilds;
-    const setting = ActivityRestrictedGuilds.useSetting();
-    return !setting.includes(selectedGuildId);
-  },
+  useValue: tmp3,
   onValueChange(arg0) {
     const tmp = React2();
     const obj = UserSettingsUtils;

@@ -1,17 +1,17 @@
-// Module ID: 6577
-// Function ID: 6578
+// Module ID: 6578
+// Function ID: 6579
 // Name: LayerScope
-// Dependencies: [32, 19, 17, 1074, 21, 5910, 6578, 2]
-// Exports: LayerScope
+// Dependencies: [32, 19, 17, 1086, 21, 558, 576, 6579, 5907, 2]
 
-// Module 6577 (LayerScope)
-import Constants from "Constants" /* 1074 */;
-import reactDefault from "react" /* 5910 */;
-import LayerContext from "LayerContext" /* 6578 */;
+// Module 6578 (LayerScope)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import useInitialValueDefault from "useInitialValue" /* 5907 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -20,12 +20,14 @@ let c9;
 let hasOwnProperty;
 let metroImportAll;
 let metroRequire;
+let tmp;
+const LayerContext = tmp(6579);
 function Layer(zIndex) {
   let closure_2;
   let closure_3;
   zIndex = zIndex.zIndex;
   _slicedToArray = undefined;
-  const context = react.useContext(zIndex(6578).LayerContext);
+  const context = react.useContext(zIndex(6579).LayerContext);
   dependencyMap = _slicedToArray(react.useState({}), 2)[1];
   _slicedToArray = react.useRef(null);
   const items = [context];
@@ -60,15 +62,59 @@ let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 const NOOP = Constants.NOOP;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-const result = size.fileFinishedImporting("design/components/Layers/native/LayerScope.native.tsx");
-
-export const LayerScope = function LayerScope(arg0) {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let first;
+  let items;
+  let tmp6;
+  let zIndex;
+  const obj = react2;
+  const cResult = obj.c(7);
+  ({ children, zIndex } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
+      const layerContextManager = new LayerContext.LayerContextManager();
+      return layerContextManager;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const tmp5 = useInitialValueDefault(first);
+  if (cResult[1] !== zIndex) {
+    const obj2 = { zIndex };
+    const tmp9 = metroImportAll(Layer, obj2);
+    cResult[1] = zIndex;
+    cResult[2] = tmp9;
+    tmp6 = tmp9;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] === children) {
+    if (cResult[4] === tmp5) {
+      let tmp10;
+      if (cResult[5] === tmp6) {
+        tmp10 = cResult[6];
+      }
+      return tmp10;
+    }
+  }
+  const obj3 = { value: tmp5, children: items };
+  items = [children, tmp6];
+  const tmp11 = React4(LayerContext.LayerContext.Provider, obj3);
+  cResult[3] = children;
+  cResult[4] = tmp5;
+  cResult[5] = tmp6;
+  cResult[6] = tmp11;
+  tmp10 = tmp11;
+}) : ((arg0) => {
   let children;
   let items;
   let zIndex;
   ({ children, zIndex } = arg0);
   const obj = {
-    value: reactDefault(() => {
+    value: useInitialValueDefault(() => {
       const layerContextManager = new LayerContext.LayerContextManager();
       return layerContextManager;
     }),
@@ -78,4 +124,7 @@ export const LayerScope = function LayerScope(arg0) {
   const Provider = LayerContext.LayerContext.Provider;
   items[1] = metroImportAll(Layer, { zIndex });
   return React4(Provider, obj);
-};
+});
+const result = size.fileFinishedImporting("design/components/Layers/native/LayerScope.native.tsx");
+
+export const LayerScope = tmp4;

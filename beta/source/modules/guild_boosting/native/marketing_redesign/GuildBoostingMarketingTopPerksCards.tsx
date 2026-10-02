@@ -1,22 +1,22 @@
-// Module ID: 13142
-// Function ID: 13143
+// Module ID: 13144
+// Function ID: 13145
 // Name: GuildBoostingMarketingTopPerksCards
-// Dependencies: [19, 17, 4825, 21, 4836, 576, 1115, 13143, 5841, 13144, 13145, 4832, 12060, 2]
-// Exports: default
+// Dependencies: [19, 17, 4826, 21, 4837, 588, 1127, 13145, 5843, 13146, 13147, 558, 576, 4833, 11974, 2]
 
-// Module 13142 (GuildBoostingMarketingTopPerksCards)
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5841 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13143 */;
-import _mod13144 from "module_13144" /* 13144 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13145 */;
+// Module 13144 (GuildBoostingMarketingTopPerksCards)
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 5843 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13145 */;
+import _mod13146 from "module_13146" /* 13146 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13147 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ let items = [
       return intl.string(intl2.t.wOYbTv);
     },
     getGraphic(style) {
-      const obj = { source: _mod13144, autoPlay: !AccessibilityStore.useReducedMotion, style };
+      const obj = { source: _mod13146, autoPlay: !AccessibilityStore.useReducedMotion, style };
       const tmp = LottieAnimationViewDefault;
       return metroRequire(tmp, obj);
     }
@@ -82,10 +82,105 @@ let items = [
     }
   }
 ];
-size = size_mod;
-const result = size.fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTopPerksCards.tsx");
-
-export default function GuildBoostingMarketingTopPerksCards() {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let card;
+  let first;
+  let heading;
+  let tmp7;
+  let wrapper;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(16);
+  const tmp4 = closure_8();
+  _require = tmp4;
+  ({ wrapper, heading } = tmp4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(tmp(1127).t.aGdB3E);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.heading) {
+    let obj2 = { style: heading, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: first };
+    const tmp9 = closure_6(tmp(4833).Heading, obj2);
+    cResult[1] = tmp4.heading;
+    cResult[2] = tmp9;
+    tmp7 = tmp9;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] === tmp4.card) {
+    if (cResult[4] === tmp4.cardBody) {
+      if (cResult[5] === tmp4.cardGraphic) {
+        if (cResult[6] === tmp4.cardHeading) {
+          let tmp11;
+          if (cResult[7] === tmp4.cardLast) {
+            tmp11 = cResult[8];
+          }
+          if (cResult[9] === tmp4.scrollerContent) {
+            let tmp13;
+            if (cResult[10] === tmp11) {
+              tmp13 = cResult[11];
+            }
+            if (cResult[12] === tmp4.wrapper) {
+              if (cResult[13] === tmp7) {
+                let tmp17;
+                if (cResult[14] === tmp13) {
+                  tmp17 = cResult[15];
+                }
+                return tmp17;
+              }
+            }
+            let obj3 = { style: wrapper, children: items };
+            items = [tmp7, tmp13];
+            const tmp20 = closure_7(closure_4, obj3);
+            cResult[12] = tmp4.wrapper;
+            cResult[13] = tmp7;
+            cResult[14] = tmp13;
+            cResult[15] = tmp20;
+            tmp17 = tmp20;
+          }
+          const obj4 = { itemCount: items.length, cardWidth: 324, cardMarginRight: 16, contentContainerStyle: tmp10, children: tmp11 };
+          const tmp16 = closure_6(tmp(11974).MarketingCardsScroller, obj4);
+          cResult[9] = tmp4.scrollerContent;
+          cResult[10] = tmp11;
+          cResult[11] = tmp16;
+          tmp13 = tmp16;
+        }
+      }
+    }
+  }
+  const mapped = items.map((getGraphic, index) => {
+    let items1;
+    items = [card.card, ];
+    let cardLast = index === items.length - 1;
+    const tmp = metroImportDefault;
+    const tmp2 = React3;
+    if (cardLast) {
+      cardLast = tmp3.cardLast;
+    }
+    const obj = { style: items, children: items1 };
+    items[1] = cardLast;
+    items1 = [getGraphic.getGraphic(card.cardGraphic), , ];
+    const obj2 = { style: card.cardHeading, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: getGraphic.getHeadingCopy() };
+    const Heading = Text_Text.Heading;
+    items1[1] = metroRequire(Heading, obj2);
+    const obj3 = { style: card.cardBody, variant: "text-sm/normal", color: "text-default", children: getGraphic.getBodyCopy() };
+    const Text = Text_Text.Text;
+    items1[2] = metroRequire(Text, obj3);
+    return tmp(tmp2, obj, index);
+  });
+  cResult[3] = tmp4.card;
+  cResult[4] = tmp4.cardBody;
+  cResult[5] = tmp4.cardGraphic;
+  cResult[6] = tmp4.cardHeading;
+  cResult[7] = tmp4.cardLast;
+  cResult[8] = mapped;
+  tmp11 = mapped;
+}) : (() => {
   let card;
   let intl;
   let tmp = closure_8();
@@ -124,4 +219,8 @@ export default function GuildBoostingMarketingTopPerksCards() {
   const MarketingCardsScroller = require("MarketingCardsScroller").MarketingCardsScroller;
   items[1] = closure_6(MarketingCardsScroller, obj3);
   return closure_7(closure_4, obj);
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTopPerksCards.tsx");
+
+export default tmp6;

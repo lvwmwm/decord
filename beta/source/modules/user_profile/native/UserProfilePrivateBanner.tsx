@@ -1,21 +1,24 @@
-// Module ID: 12687
-// Function ID: 12688
+// Module ID: 12701
+// Function ID: 12702
 // Name: UserProfilePrivateBanner
-// Dependencies: [19, 17, 6629, 21, 4836, 576, 1092, 5409, 4832, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 6630, 21, 4837, 588, 558, 576, 1104, 5410, 4833, 1127, 2]
 
-// Module 12687 (UserProfilePrivateBanner)
+// Module 12701 (UserProfilePrivateBanner)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import intl2 from "intl" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import LockIcon2 from "LockIcon" /* 5409 */;
-import Constants from "Constants" /* 6629 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
+import intl2 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import LockIcon2 from "LockIcon" /* 5410 */;
+import Constants from "Constants" /* 6630 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let primaryColor;
 
 let closure_4;
 let hasOwnProperty;
@@ -26,9 +29,75 @@ const PROFILE_TOP_LAYER_Z_INDEX = Constants.PROFILE_TOP_LAYER_Z_INDEX;
 let obj = { banner: obj2 };
 obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, paddingTop: 18, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, position: "relative", zIndex: PROFILE_TOP_LAYER_Z_INDEX };
 let closure_6 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfilePrivateBanner.tsx");
-
-export default function UserProfilePrivateBanner(primaryColor) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((primaryColor) => {
+  let intl;
+  let items;
+  let tmp5;
+  let tmpResult;
+  const obj = react2;
+  const cResult = obj.c(9);
+  primaryColor = primaryColor.primaryColor;
+  const tmp4 = closure_6();
+  if (cResult[0] !== primaryColor) {
+    let tmp7 = null != primaryColor;
+    if (tmp7) {
+      const obj2 = { backgroundColor: tmpResult.int2hex(primaryColor) };
+      tmp7 = obj2;
+      tmpResult = utils_ColorUtils;
+    }
+    cResult[0] = primaryColor;
+    cResult[1] = tmp7;
+    tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === tmp4.banner) {
+    let tmp8;
+    let tmp10;
+    let tmp14;
+    let tmp17;
+    if (cResult[3] === tmp5) {
+      tmp8 = cResult[4];
+    }
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = { size: "xs", color: nativeDefault.colors.TEXT_DEFAULT };
+      const LockIcon = tmp(5410).LockIcon;
+      const tmp13 = React3(LockIcon, obj3);
+      cResult[5] = tmp13;
+      tmp10 = tmp13;
+    } else {
+      tmp10 = cResult[5];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj4 = { variant: "text-sm/medium", color: "text-default", children: intl.string(intl2.t.KPnd2O) };
+      const Text = tmp(4833).Text;
+      intl = tmp(1127).intl;
+      const tmp16 = React3(Text, obj4);
+      cResult[6] = tmp16;
+      tmp14 = tmp16;
+    } else {
+      tmp14 = cResult[6];
+    }
+    if (cResult[7] !== tmp8) {
+      const obj5 = { style: tmp8, children: items };
+      items = [tmp10, tmp14];
+      const tmp20 = hasOwnProperty(View, obj5);
+      cResult[7] = tmp8;
+      cResult[8] = tmp20;
+      tmp17 = tmp20;
+    } else {
+      tmp17 = cResult[8];
+    }
+    return tmp17;
+  }
+  const items1 = [tmp4.banner, tmp5];
+  cResult[2] = tmp4.banner;
+  cResult[3] = tmp5;
+  cResult[4] = items1;
+  tmp8 = items1;
+}) : ((primaryColor) => {
   let intl;
   let items1;
   let obj2;
@@ -52,4 +121,7 @@ export default function UserProfilePrivateBanner(primaryColor) {
   intl = intl2.intl;
   items1[1] = React3(Text, obj5);
   return tmp(tmp2, obj3);
-};
+});
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfilePrivateBanner.tsx");
+
+export default tmp4;

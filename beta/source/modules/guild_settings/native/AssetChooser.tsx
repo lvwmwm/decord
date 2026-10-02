@@ -1,21 +1,21 @@
-// Module ID: 17301
-// Function ID: 17302
+// Module ID: 17303
+// Function ID: 17304
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1074, 21, 4836, 576, 4540, 5450, 5435, 1115, 17302, 17303, 1177, 2]
+// Dependencies: [5, 19, 17, 1086, 21, 4837, 588, 4544, 5451, 5436, 1127, 17304, 17305, 1189, 2]
 
-// Module 17301 (AssetChooser)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import intl3 from "intl" /* 1115 */;
-import native from "native" /* 4540 */;
-import Pressables from "Pressables" /* 5435 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17302 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17303 */;
+// Module 17303 (AssetChooser)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl3 from "intl" /* 1127 */;
+import native from "native" /* 4544 */;
+import Pressables from "Pressables" /* 5436 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17304 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17305 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3;
@@ -57,7 +57,7 @@ class AssetChooser extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -108,7 +108,7 @@ class AssetChooser extends PureComponent {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp15) {
           c3 = 3;
@@ -175,8 +175,8 @@ class AssetChooser extends PureComponent {
       if (!disabled) {
         const obj5 = { accessibilityRole: "button", onPress: this.handleRemoveAsset, children: React4(LegacyText, obj6) };
         obj6 = { style: tmp.remove, children: intl2.string(intl3.t.N86XcP) };
-        LegacyText = tmp6(1177).LegacyText;
-        intl2 = tmp6(1115).intl;
+        LegacyText = tmp6(1189).LegacyText;
+        intl2 = tmp6(1127).intl;
         tmp5Result2 = tmp5(metroImportDefault, obj5);
       }
     }

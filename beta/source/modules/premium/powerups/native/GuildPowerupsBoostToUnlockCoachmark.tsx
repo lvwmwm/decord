@@ -1,17 +1,37 @@
-// Module ID: 15803
-// Function ID: 15804
+// Module ID: 15802
+// Function ID: 15803
 // Name: GuildPowerupsBoostToUnlockCoachmark
-// Dependencies: [19, 11991, 15804, 2]
-// Exports: default
+// Dependencies: [19, 558, 576, 11899, 15803, 2]
 
-// Module 15803 (GuildPowerupsBoostToUnlockCoachmark)
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 11991 */;
+// Module 15802 (GuildPowerupsBoostToUnlockCoachmark)
+import react2 from "react" /* 576 */;
+import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 15803 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostToUnlockCoachmark.tsx");
-
-export default function GuildPowerupsBoostToUnlockCoachmark(powerup) {
+let tmp;
+const GuildPowerupsNotification = tmp(11899);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let markAsDismissed;
+  let powerup;
+  const obj = react2;
+  const cResult = obj.c(3);
+  ({ powerup, markAsDismissed } = arg0);
+  if (cResult[0] === markAsDismissed) {
+    let tmp6;
+    if (cResult[1] === powerup) {
+      tmp6 = cResult[2];
+    }
+    useGuildPowerupsCoachmarkDefault(tmp5, tmp4, tmp6);
+    return null;
+  }
+  const obj2 = { type: GuildPowerupsNotification.GuildPowerupNotificationPopoutType.BOOST_TO_UNLOCK, powerup, markAsDismissed };
+  cResult[0] = markAsDismissed;
+  cResult[1] = powerup;
+  cResult[2] = obj2;
+  tmp6 = obj2;
+}) : ((powerup) => {
   let guildId;
   let targetRef;
   powerup = powerup.powerup;
@@ -22,6 +42,9 @@ export default function GuildPowerupsBoostToUnlockCoachmark(powerup) {
     const obj = { type: GuildPowerupsNotification.GuildPowerupNotificationPopoutType.BOOST_TO_UNLOCK, powerup, markAsDismissed };
     return obj;
   }, items);
-  markAsDismissed(15804)(targetRef, guildId, memo);
+  markAsDismissed(15803)(targetRef, guildId, memo);
   return null;
-};
+});
+const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostToUnlockCoachmark.tsx");
+
+export default tmp2;

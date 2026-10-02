@@ -1,29 +1,29 @@
-// Module ID: 9413
-// Function ID: 9414
+// Module ID: 9409
+// Function ID: 9410
 // Name: canUseStreamSetting
-// Dependencies: [1374, 4488, 4728, 2]
+// Dependencies: [1380, 4491, 4730, 2]
 // Exports: default
 
-// Module 9413 (canUseStreamSetting)
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4728 */;
+// Module 9409 (canUseStreamSetting)
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 4730 */;
 import size from "module_2" /* 2 */;
 
 const StreamQualities = PremiumConstants.StreamQualities;
 let result = size.fileFinishedImporting("modules/go_live/utils/canUseStreamSetting.tsx");
 
-export default function canUseStreamSetting(quality, currentUser, arg2) {
+export default function canUseStreamSetting(quality, user, arg2) {
   if (null != quality) {
     let flag = false;
     if (null != quality.quality) {
       quality = quality.quality;
       if (StreamQualities.HIGH_STREAMING_QUALITY === quality) {
         const obj2 = PremiumUtilsDefault;
-        flag = obj2.canStreamQuality(PremiumUtilsDefault.StreamQuality.HIGH, currentUser);
+        flag = obj2.canStreamQuality(PremiumUtilsDefault.StreamQuality.HIGH, user);
       } else if (tmp2.MID_STREAMING_QUALITY === quality) {
         const obj = PremiumUtilsDefault;
-        flag = obj.canStreamQuality(PremiumUtilsDefault.StreamQuality.MID, currentUser);
+        flag = obj.canStreamQuality(PremiumUtilsDefault.StreamQuality.MID, user);
       } else {
         const quality2 = quality.quality;
         flag = false;

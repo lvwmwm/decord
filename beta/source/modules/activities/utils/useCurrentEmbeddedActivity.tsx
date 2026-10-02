@@ -1,19 +1,42 @@
-// Module ID: 8913
-// Function ID: 8914
+// Module ID: 8907
+// Function ID: 8908
 // Name: useCurrentEmbeddedActivity
-// Dependencies: [2044, 504, 2]
-// Exports: default
+// Dependencies: [2050, 558, 576, 504, 2]
 
-// Module 8913 (useCurrentEmbeddedActivity)
-import get_initialized from "get initialized" /* 504 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+// Module 8907 (useCurrentEmbeddedActivity)
+import react from "react" /* 576 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/activities/utils/useCurrentEmbeddedActivity.tsx");
-
-export default function useCurrentEmbeddedActivity() {
+let tmp;
+const get_initialized = tmp(504);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let currentEmbeddedActivity;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [EmbeddedActivitiesStore];
+    const fn = function u() {
+      return currentEmbeddedActivity.getCurrentEmbeddedActivity();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
   let currentEmbeddedActivity;
   const items = [EmbeddedActivitiesStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => currentEmbeddedActivity.getCurrentEmbeddedActivity());
-};
+});
+const result = size.fileFinishedImporting("modules/activities/utils/useCurrentEmbeddedActivity.tsx");
+
+export default tmp2;

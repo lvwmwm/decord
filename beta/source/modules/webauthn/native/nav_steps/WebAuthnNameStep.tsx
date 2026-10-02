@@ -1,18 +1,18 @@
-// Module ID: 14238
-// Function ID: 14239
+// Module ID: 14226
+// Function ID: 14227
 // Name: WebAuthnNameStep
-// Dependencies: [5, 32, 19, 17, 14215, 21, 4836, 1485, 6014, 4528, 1115, 10115, 4792, 8053, 1177, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 14203, 21, 4837, 1491, 6009, 4531, 1127, 10154, 4793, 8057, 1189, 5282, 2]
 // Exports: default
 
-// Module 14238 (WebAuthnNameStep)
+// Module 14226 (WebAuthnNameStep)
 import react_native from "react-native" /* 17 */;
-import useNavigation from "useNavigation" /* 1485 */;
-import WebAuthnConstants from "WebAuthnConstants" /* 14215 */;
+import useNavigation from "useNavigation" /* 1491 */;
+import WebAuthnConstants from "WebAuthnConstants" /* 14203 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let c1, dependencyMap;
@@ -61,7 +61,7 @@ export default function WebAuthnNameStep(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -114,7 +114,7 @@ export default function WebAuthnNameStep(arg0) {
             open(obj7);
             closure_128_2.push(constants.SUCCESS, {});
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           body = tmp28;
@@ -147,23 +147,23 @@ export default function WebAuthnNameStep(arg0) {
   first1 = tmp5Result[0];
   let obj2 = { children: items };
   const tmp12 = tmp5Result[1];
-  const Form = tmp2(8053).Form;
-  let obj3 = { showTopContainer: false, value: first1, onChange: tmp12, style: tmp.margin, error: tmp9, title: intl.string(tmp2(1115).t["Jzd+z/"]), placeholder: intl2.string(tmp2(1115).t["I/sJtJ"]), disabled: first, clearButtonVisibility: tmp2(1177).ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
-  const FormInput = tmp2(8053).FormInput;
-  intl = tmp2(1115).intl;
-  intl2 = tmp2(1115).intl;
-  items = [closure_8(FormInput, obj3), closure_8(tmp2(8053).FormDivider, {}), ];
+  const Form = tmp2(8057).Form;
+  let obj3 = { showTopContainer: false, value: first1, onChange: tmp12, style: tmp.margin, error: tmp9, title: intl.string(tmp2(1127).t["Jzd+z/"]), placeholder: intl2.string(tmp2(1127).t["I/sJtJ"]), disabled: first, clearButtonVisibility: tmp2(1189).ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
+  const FormInput = tmp2(8057).FormInput;
+  intl = tmp2(1127).intl;
+  intl2 = tmp2(1127).intl;
+  items = [closure_8(FormInput, obj3), closure_8(tmp2(8057).FormDivider, {}), ];
   let obj4 = { style: tmp.margin, children: closure_8(Button, obj5) };
   obj5 = {
     onPress() {
       return obj(...arguments);
     },
-    text: intl3.string(tmp2(1115).t["5dyZ1S"]),
+    text: intl3.string(tmp2(1127).t["5dyZ1S"]),
     disabled: "" === first1,
     size: "lg"
   };
-  Button = tmp2(5281).Button;
-  intl3 = tmp2(1115).intl;
+  Button = tmp2(5282).Button;
+  intl3 = tmp2(1127).intl;
   items[2] = closure_8(obj, obj4);
   return closure_9(Form, obj2);
 };

@@ -1,30 +1,142 @@
-// Module ID: 14254
-// Function ID: 14255
+// Module ID: 14242
+// Function ID: 14243
 // Name: SettingListItemHighlight
-// Dependencies: [19, 17, 14249, 21, 4836, 576, 4566, 4837, 2]
+// Dependencies: [19, 17, 14237, 21, 4837, 588, 558, 576, 4570, 4838, 2]
 
-// Module 14254 (SettingListItemHighlight)
+// Module 14242 (SettingListItemHighlight)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import timing from "timing" /* 4837 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4570 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14249 */;
-import createStyles from "createStyles" /* 4836 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14237 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let start;
+let obj1, obj7, obj8, tmp5;
 
 let obj2;
+let tmp;
+const ReanimatedRexport = tmp(4570);
+const timing = tmp(4838);
 const StyleSheet = react_native.StyleSheet;
 const jsx = Fragment.jsx;
 let obj = { background: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_HOVER };
 let closure_7 = createStyles.createStyles(obj);
-const __initData = { code: "function SettingListItemHighlightTsx1(){const{withSequence,withDelay,withTiming,Easing,runOnJS,clearSelectedSearchResult}=this.__closure;return{opacity:withSequence(withDelay(500,withTiming(0,{duration:0})),withTiming(0.2,{duration:300,easing:Easing.ease}),withTiming(0,{duration:300,easing:Easing.ease},'respect-motion-settings',function(finished){if(finished){runOnJS(clearSelectedSearchResult);}}))};}" };
-let closure_9 = { code: "function SettingListItemHighlightTsx2(finished){const{runOnJS,clearSelectedSearchResult}=this.__closure;if(finished){runOnJS(clearSelectedSearchResult);}}" };
-const memoResult = react.memo((start) => {
+const __initData = { code: "function SettingListItemHighlightTsx1(){const{withSequence,withDelay,withTiming,Easing,runOnJS,clearSelectedSearchResult}=this.__closure;return{opacity:withSequence(withDelay(500,withTiming(0,{duration:0})),withTiming(0.2,{duration:300,easing:Easing.ease}),withTiming(0,{duration:300,easing:Easing.ease},\"respect-motion-settings\",function(finished){if(finished){runOnJS(clearSelectedSearchResult);}}))};}" };
+const __initData2 = { code: "function SettingListItemHighlightTsx2(finished){const{runOnJS,clearSelectedSearchResult}=this.__closure;if(finished){runOnJS(clearSelectedSearchResult);}}" };
+const __initData3 = { code: "function SettingListItemHighlightTsx3(){const{withSequence,withDelay,withTiming,Easing,runOnJS,clearSelectedSearchResult}=this.__closure;return{opacity:withSequence(withDelay(500,withTiming(0,{duration:0})),withTiming(0.2,{duration:300,easing:Easing.ease}),withTiming(0,{duration:300,easing:Easing.ease},'respect-motion-settings',function(finished){if(finished){runOnJS(clearSelectedSearchResult);}}))};}" };
+let closure_11 = { code: "function SettingListItemHighlightTsx4(finished){const{runOnJS,clearSelectedSearchResult}=this.__closure;if(finished){runOnJS(clearSelectedSearchResult);}}" };
+let memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let end;
+  let require;
+  let start;
+  let state;
+  let style;
+  let tmp = require;
+  let tmp2 = dependencyMap;
+  let obj = react2;
+  const cResult = obj.c(10);
+  ({ start, end, style } = arg0);
+  const tmp4 = closure_7();
+  let lg;
+  if (start) {
+    lg = nativeDefault.radii.lg;
+  }
+  let lg1;
+  if (start) {
+    lg1 = nativeDefault.radii.lg;
+  }
+  let lg2;
+  if (end) {
+    lg2 = nativeDefault.radii.lg;
+  }
+  let lg3;
+  if (end) {
+    lg3 = nativeDefault.radii.lg;
+  }
+  if (cResult[0] === lg) {
+    if (cResult[1] === lg1) {
+      if (cResult[2] === lg2) {
+        let tmp13;
+        if (cResult[3] === lg3) {
+          tmp13 = cResult[4];
+        }
+        function clearSelectedSearchResult() {
+          state.setState({ selected: null });
+        }
+        require = clearSelectedSearchResult;
+        const tmpResult = ReanimatedRexport;
+        class O {
+          constructor() {
+            obj = { opacity: null };
+            tmp = closure_0(closure_2[8]);
+            withSequence = tmp.withSequence;
+            tmp2 = closure_0(closure_2[8]);
+            withDelay = tmp2.withDelay;
+            obj2 = closure_0(closure_2[9]);
+            withDelayResult = withDelay(500, obj2.withTiming(0, { duration: 0 }));
+            obj3 = closure_0(closure_2[9]);
+            obj1 = { duration: 300, easing: closure_0(closure_2[8]).Easing.ease };
+            withTimingResult = obj3.withTiming(0.2, obj1);
+            tmp5 = closure_0(closure_2[9]);
+            obj7 = { duration: 300, easing: closure_0(closure_2[8]).Easing.ease };
+            withTiming = tmp5.withTiming;
+            fn = function t(arg0) {
+              const tmp = arg0;
+              if (tmp) {
+                const obj = ReanimatedRexport;
+                obj.runOnJS(closure_1_0);
+              }
+            };
+            obj8 = { runOnJS: closure_0(closure_2[8]).runOnJS, clearSelectedSearchResult };
+            fn.__closure = obj8;
+            fn.__workletHash = 13391094209244;
+            fn.__initData = closure_9;
+            obj.opacity = withSequence(withDelayResult, withTimingResult, withTiming(0, obj7, "respect-motion-settings", fn));
+            return obj;
+          }
+        }
+        let obj2 = { withSequence: ReanimatedRexport.withSequence, withDelay: ReanimatedRexport.withDelay, withTiming: timing.withTiming, Easing: ReanimatedRexport.Easing, runOnJS: ReanimatedRexport.runOnJS, clearSelectedSearchResult };
+        const useAnimatedStyle = tmpResult.useAnimatedStyle;
+        O.__closure = obj2;
+        O.__workletHash = 11780002409998;
+        O.__initData = __initData;
+        const animatedStyle = useAnimatedStyle(O);
+        if (cResult[5] === animatedStyle) {
+          if (cResult[6] === tmp13) {
+            if (cResult[7] === style) {
+              let tmp17;
+              if (cResult[8] === tmp4.background) {
+                tmp17 = cResult[9];
+              }
+              return tmp17;
+            }
+          }
+        }
+        const items = [StyleSheet.absoluteFill, tmp4.background, tmp13, animatedStyle, style];
+        const tmp21 = jsx(ReanimatedRexportDefault.View, { pointerEvents: "none", style: items });
+        cResult[5] = animatedStyle;
+        cResult[6] = tmp13;
+        cResult[7] = style;
+        cResult[8] = tmp4.background;
+        cResult[9] = tmp21;
+        tmp17 = tmp21;
+      }
+    }
+  }
+  let obj4 = { borderTopStartRadius: lg, borderTopEndRadius: lg1, borderBottomStartRadius: lg2, borderBottomEndRadius: lg3 };
+  cResult[0] = lg;
+  cResult[1] = lg1;
+  cResult[2] = lg2;
+  cResult[3] = lg3;
+  cResult[4] = obj4;
+  tmp13 = obj4;
+}) : ((start) => {
   let state;
   start = start.start;
   const end = start.end;
@@ -57,7 +169,7 @@ const memoResult = react.memo((start) => {
   const clearSelectedSearchResult = react.useCallback(() => {
     state.setState({ selected: null });
   }, []);
-  let obj = start(clearSelectedSearchResult[6]);
+  let obj = start(clearSelectedSearchResult[8]);
   let fn = function _() {
     let fn;
     let obj5;
@@ -78,25 +190,25 @@ const memoResult = react.memo((start) => {
     fn = function t(arg0) {
       const tmp = arg0;
       if (tmp) {
-        const obj = start(callback[6]);
+        const obj = start(callback[8]);
         obj.runOnJS(closure_1_2);
       }
     };
     obj5 = { duration: 300, easing: ReanimatedRexport.Easing.ease };
     fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, clearSelectedSearchResult };
-    fn.__workletHash = 13391094209244;
+    fn.__workletHash = 10128329378010;
     fn.__initData = __initData;
     ({ runOnJS: ReanimatedRexport.runOnJS, clearSelectedSearchResult });
     return obj;
   };
-  let obj2 = { withSequence: start(clearSelectedSearchResult[6]).withSequence, withDelay: start(clearSelectedSearchResult[6]).withDelay, withTiming: start(clearSelectedSearchResult[7]).withTiming, Easing: start(clearSelectedSearchResult[6]).Easing, runOnJS: start(clearSelectedSearchResult[6]).runOnJS, clearSelectedSearchResult };
+  let obj2 = { withSequence: start(clearSelectedSearchResult[8]).withSequence, withDelay: start(clearSelectedSearchResult[8]).withDelay, withTiming: start(clearSelectedSearchResult[9]).withTiming, Easing: start(clearSelectedSearchResult[8]).Easing, runOnJS: start(clearSelectedSearchResult[8]).runOnJS, clearSelectedSearchResult };
   fn.__closure = obj2;
-  fn.__workletHash = 13630242918990;
-  fn.__initData = __initData;
+  fn.__workletHash = 8516165731404;
+  fn.__initData = __initData3;
   const animatedStyle = obj.useAnimatedStyle(fn);
   const items1 = [StyleSheet.absoluteFill, tmp.background, memo, animatedStyle, style];
-  return jsx(end(clearSelectedSearchResult[6]).View, { pointerEvents: "none", style: items1 });
-});
+  return jsx(end(clearSelectedSearchResult[8]).View, { pointerEvents: "none", style: items1 });
+}));
 const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingListItemHighlight.tsx");
 
 export default memoResult;

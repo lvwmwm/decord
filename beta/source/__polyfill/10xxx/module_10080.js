@@ -1,11 +1,12 @@
 // Module ID: 10080
 // Function ID: 10081
-// Dependencies: [41, 42, 93, 95, 98, 10064, 9897, 9898, 9914]
+// Dependencies: [41, 42, 93, 95, 98, 9932, 10076, 9933, 9939]
 
 // Module 10080
-import ReferenceWithTimezone2 from "ReferenceWithTimezone" /* 9898 */;
-import _mod9914 from "module_9914" /* 9914 */;
-import _mod10064 from "module_10064" /* 10064 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9932 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 9933 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9939 */;
+import _mod10076 from "module_10076" /* 10076 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,12 +28,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ENMergeRelativeDateRefiner {
+const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod10076.MONTH_DICTIONARY);
+const regExp = new RegExp("([0-9]{1,2})(?:\u00BA|\u00AA|\u00B0)?(?:\\s*(?:desde|de|\\-|\\\u2013|ao?|\\s)\\s*([0-9]{1,2})(?:\u00BA|\u00AA|\u00B0)?)?\\s*(?:de)?\\s*(?:-|/|\\s*(?:de|,)?\\s*)(" + matchAnyPatternResult + ")(?:\\s*(?:de|,)?\\s*(" + _mod10076.YEAR_PATTERN + "))?(?=\\W|$)", "i");
+class ESMonthNameLittleEndianParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENMergeRelativeDateRefiner);
-    const obj = _getPrototypeOf(ENMergeRelativeDateRefiner);
+    _classCallCheck(this, ESMonthNameLittleEndianParser);
+    const obj = _getPrototypeOf(ESMonthNameLittleEndianParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -44,65 +47,48 @@ class ENMergeRelativeDateRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENMergeRelativeDateRefiner, _mod9914.MergingRefiner);
+_inherits(ESMonthNameLittleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    return /^\s*$/i;
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
 const items = [
   entry,
   {
-    key: "shouldMergeResults",
-    value: function shouldMergeResults(str, text, start) {
-      let match = str.match(this.patternBetween());
-      if (match) {
-        let tmp5 = null == str.match(/\s+(prima|dal)$/i);
-        null != text.text.match(/\s+(prima|dal)$/i);
-        if (tmp5) {
-          const str2 = text.text;
-          tmp5 = null == str2.match(/\s+(dopo|dal|fino)$/i);
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const tmp4 = _mod10076.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const parsed = parseInt(index[1]);
+      if (parsed > 31) {
+        index.index = index.index + index[1].length;
+        return null;
+      } else {
+        const start4 = parsingResult.start;
+        start4.assign("month", tmp4);
+        const start5 = parsingResult.start;
+        start5.assign("day", parsed);
+        if (index[4]) {
+          const start2 = parsingResult.start;
+          start2.assign("year", _mod10076.parseYear(index[4]));
+        } else {
+          const start = parsingResult.start;
+          start.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, parsed, tmp4));
         }
-        let tmp6 = !tmp5;
-        if (tmp6) {
-          start = start.start;
-          let value = start.get("day");
-          if (value) {
-            const start2 = start.start;
-            value = start2.get("month");
-          }
-          if (value) {
-            const start3 = start.start;
-            value = start3.get("year");
-          }
-          tmp6 = value;
+        if (index[2]) {
+          const _parseInt = parseInt;
+          const start3 = parsingResult.start;
+          const parsed1 = parseInt(index[2]);
+          parsingResult.end = start3.clone();
+          const end = parsingResult.end;
+          end.assign("day", parsed1);
         }
-        match = tmp6;
+        return parsingResult;
       }
-      return match;
-    }
-  },
-  {
-    key: "mergeResults",
-    value: function mergeResults(arg0, text, start) {
-      const parseDurationResult = _mod10064.parseDuration(text.text);
-      let reverseDurationResult = parseDurationResult;
-      const str = text.text;
-      if (null != str.match(/\s+(prima|dal)$/i)) {
-        reverseDurationResult = tmp(9897).reverseDuration(parseDurationResult);
-      }
-      const ParsingComponents = tmp(9898).ParsingComponents;
-      const createRelativeFromReference = ParsingComponents.createRelativeFromReference;
-      const ReferenceWithTimezone = tmp(9898).ReferenceWithTimezone;
-      start = start.start;
-      const relativeFromReference = createRelativeFromReference(ReferenceWithTimezone.fromDate(start.date()), reverseDurationResult);
-      const reference = start.reference;
-      const index = text.index;
-      const parsingResult = new ReferenceWithTimezone2.ParsingResult(reference, index, "" + text.text + arg0 + start.text, relativeFromReference);
-      return parsingResult;
     }
   }
 ];
 
-export default _createClass(ENMergeRelativeDateRefiner, items);
+export default _createClass(ESMonthNameLittleEndianParser, items);

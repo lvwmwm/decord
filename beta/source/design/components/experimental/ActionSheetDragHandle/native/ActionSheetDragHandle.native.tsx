@@ -1,20 +1,20 @@
-// Module ID: 8379
-// Function ID: 8380
+// Module ID: 8376
+// Function ID: 8377
 // Name: ActionSheetDragHandle
-// Dependencies: [19, 17, 8371, 21, 4836, 576, 1115, 4566, 2]
+// Dependencies: [19, 17, 8368, 21, 4837, 588, 558, 576, 1127, 4570, 2]
 
-// Module 8379 (ActionSheetDragHandle)
+// Module 8376 (ActionSheetDragHandle)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4570 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetDragHandleConstants from "ActionSheetDragHandleConstants" /* 8371 */;
-import createStyles from "createStyles" /* 4836 */;
+import ActionSheetDragHandleConstants from "ActionSheetDragHandleConstants" /* 8368 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let accessibilityLabel;
 
 let DRAG_HANDLE_BAR_HEIGHT;
 let DRAG_HANDLE_HEIGHT;
@@ -25,10 +25,98 @@ let size;
 ({ TouchableWithoutFeedback: c3, View: closure_4 } = react_native);
 ({ DRAG_HANDLE_BAR_HEIGHT, DRAG_HANDLE_PADDING, DRAG_HANDLE_HEIGHT } = ActionSheetDragHandleConstants);
 const jsx = Fragment.jsx;
-const obj = { container: { height: DRAG_HANDLE_HEIGHT }, containerOverlay: { position: "absolute", top: 0, left: 0, right: 0 }, handle: { alignItems: "center", paddingVertical: DRAG_HANDLE_PADDING }, bar: size };
+let obj = { container: { height: DRAG_HANDLE_HEIGHT }, containerOverlay: { position: "absolute", top: 0, left: 0, right: 0 }, handle: { alignItems: "center", paddingVertical: DRAG_HANDLE_PADDING }, bar: size };
 size = { backgroundColor: nativeDefault.colors.ICON_MUTED, borderRadius: nativeDefault.radii.xs, height: DRAG_HANDLE_BAR_HEIGHT, width: 31 };
 let closure_6 = createStyles.createStyles(obj);
-const memoResult = react.memo((accessibilityLabel) => {
+const memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let accessibilityLabel;
+  let animatedBarStyles;
+  let onPress;
+  let overlay;
+  let tmp4;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(17);
+  ({ onPress, accessibilityLabel, animatedBarStyles, "aria-hidden": tmp4, overlay } = arg0);
+  if (cResult[0] !== accessibilityLabel) {
+    let stringResult = accessibilityLabel;
+    if (undefined === accessibilityLabel) {
+      const intl = tmp(1127).intl;
+      stringResult = intl.string(tmp(1127).t.WAI6xu);
+    }
+    cResult[0] = accessibilityLabel;
+    cResult[1] = stringResult;
+    tmp5 = stringResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const tmp7 = closure_6();
+  let containerOverlay = null;
+  if (null != overlay) {
+    containerOverlay = tmp7.containerOverlay;
+  }
+  if (cResult[2] === tmp7.container) {
+    let tmp9;
+    let tmp13;
+    if (cResult[3] === containerOverlay) {
+      tmp9 = cResult[4];
+    }
+    if (cResult[5] === animatedBarStyles) {
+      let tmp10;
+      if (cResult[6] === tmp7.bar) {
+        tmp10 = cResult[7];
+      }
+      if (cResult[8] === tmp7.handle) {
+        let tmp16;
+        if (cResult[9] === tmp10) {
+          tmp16 = cResult[10];
+        }
+        if (cResult[11] === tmp5) {
+          if (cResult[12] === tmp4) {
+            if (cResult[13] === onPress) {
+              if (cResult[14] === tmp9) {
+                let tmp20;
+                if (cResult[15] === tmp16) {
+                  tmp20 = cResult[16];
+                }
+                return tmp20;
+              }
+            }
+          }
+        }
+        const tmp23 = <_false style={tmp9} accessibilityLabel={tmp5} accessibilityRole="button" aria-hidden={tmp4} onPress={onPress}>{tmp16}</_false>;
+        cResult[11] = tmp5;
+        cResult[12] = tmp4;
+        cResult[13] = onPress;
+        cResult[14] = tmp9;
+        cResult[15] = tmp16;
+        cResult[16] = tmp23;
+        tmp20 = tmp23;
+      }
+      const tmp19 = <React3 style={tmp7.handle}>{tmp10}</React3>;
+      cResult[8] = tmp7.handle;
+      cResult[9] = tmp10;
+      cResult[10] = tmp19;
+      tmp16 = tmp19;
+    }
+    if (null != animatedBarStyles) {
+      const items = [tmp7.bar, animatedBarStyles];
+      tmp13 = jsx(ReanimatedRexportDefault.View, { style: items });
+    } else {
+      tmp13 = <React3 style={tmp7.bar} />;
+    }
+    cResult[5] = animatedBarStyles;
+    cResult[6] = tmp7.bar;
+    cResult[7] = tmp13;
+    tmp10 = tmp13;
+  }
+  const items1 = [tmp7.container, containerOverlay];
+  cResult[2] = tmp7.container;
+  cResult[3] = containerOverlay;
+  cResult[4] = items1;
+  tmp9 = items1;
+}) : ((accessibilityLabel) => {
   let items1;
   let onPress;
   let overlay;
@@ -56,7 +144,7 @@ const memoResult = react.memo((accessibilityLabel) => {
     tmp5Result = tmp5(tmp8, obj4);
   }
   return <tmp6 style={items} accessibilityLabel={accessibilityLabel} accessibilityRole="button" aria-hidden={prop} onPress={onPress}>{null}</tmp6>;
-});
+}));
 size = size_mod;
 const result = size.fileFinishedImporting("design/components/experimental/ActionSheetDragHandle/native/ActionSheetDragHandle.native.tsx");
 

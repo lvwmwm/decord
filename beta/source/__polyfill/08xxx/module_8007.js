@@ -1,94 +1,16 @@
 // Module ID: 8007
 // Function ID: 8008
-// Dependencies: [41, 42, 93, 95, 98, 19, 8008, 21, 7917, 7924, 7925, 7931, 8010, 7933]
+// Dependencies: [26, 106, 65]
 
 // Module 8007
-import Fragment from "Fragment" /* 21 */;
-import extractProps from "extractProps" /* 7924 */;
-import extractTextDefault from "extractText" /* 7931 */;
-import multiplyMatricesDefault from "multiplyMatrices" /* 7933 */;
-import _modDef8010 from "module_8010" /* 8010 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react from "react" /* 19 */;
-import TSpan from "TSpan" /* 8008 */;
+import _mod26 from "module_26" /* 26 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
-const extractPropsDefault = extractProps;
+let size;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGRect", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } }, validAttributes: size };
+size = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, x: true, y: true, height: true, width: true, rx: true, ry: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const jsx = Fragment.jsx;
-class Text {
-  constructor() {
-    let constructResult;
-    const self = this;
-    const items = [...arguments];
-    let closure_0;
-    let tmp = _classCallCheck(this, Text);
-    const items1 = [...items];
-    let obj = _getPrototypeOf(Text);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = _possibleConstructorReturn;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.setNativeProps = (matrix) => {
-      const tmp = matrix && !matrix.matrix && closure_2_1(closure_2_2[8])(matrix);
-      if (tmp) {
-        matrix.matrix = tmp;
-      }
-      const obj = Text(closure_2_2[9]);
-      const propsAndStylesResult = obj.propsAndStyles(matrix);
-      const obj2 = Text(closure_2_2[10]);
-      assign(propsAndStylesResult, obj2.pickNotNil(closure_2_1(closure_2_2[11])(propsAndStylesResult, true)));
-      if (closure_0.root) {
-        const root = closure_0.root;
-        root.setNativeProps(propsAndStylesResult);
-      }
-    };
-    return tmp3Result;
-  }
-}
-_inherits(Text, multiplyMatricesDefault);
-const entry = {
-  key: "render",
-  value: function render() {
-    const obj = extractProps;
-    const propsAndStylesResult = obj.propsAndStyles(this.props);
-    const obj2 = { x: null, y: null };
-    const tmp2 = extractPropsDefault;
-    const merged = Object.assign(propsAndStylesResult);
-    const tmp2Result = tmp2(obj2, this);
-    const merged1 = Object.assign(tmp2Result, extractTextDefault(propsAndStylesResult, true));
-    tmp2Result.ref = this.refMethod;
-    _modDef8010;
-    const merged2 = Object.assign(tmp2Result);
-    return <tmp6 />;
-  }
-};
-let items = [entry];
-const importDefaultResultResult = _createClass(Text, items);
-importDefaultResultResult.displayName = "Text";
-
-export default importDefaultResultResult;
+export default module_65.get("RNSVGRect", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

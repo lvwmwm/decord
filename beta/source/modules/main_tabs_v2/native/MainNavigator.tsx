@@ -1,52 +1,55 @@
-// Module ID: 15564
-// Function ID: 15565
+// Module ID: 15566
+// Function ID: 15567
 // Name: MainNavigator
-// Dependencies: [32, 19, 17, 502, 15565, 1074, 21, 4836, 1364, 4812, 13991, 15566, 15567, 15627, 16563, 16570, 16573, 16601, 16629, 7338, 16687, 16690, 16694, 16696, 16725, 16730, 4701, 1483, 1611, 5016, 7288, 16731, 16787, 563, 8841, 4695, 6421, 5838, 11027, 16617, 16790, 16821, 8965, 16823, 10386, 2]
+// Dependencies: [32, 19, 17, 502, 15567, 1086, 21, 4837, 1370, 4813, 13993, 15568, 15569, 15629, 558, 576, 16565, 16572, 16575, 16603, 16631, 7342, 16689, 16692, 16696, 16698, 16727, 16732, 4703, 1489, 1617, 5017, 7292, 16733, 16789, 573, 8836, 4697, 6421, 5839, 16792, 10428, 11315, 17022, 17053, 9383, 16619, 2]
 // Exports: getChannelScreen
 
-// Module 15564 (MainNavigator)
+// Module 15566 (MainNavigator)
 import react_native from "react-native" /* 17 */;
-import DeviceUtils from "DeviceUtils" /* 4812 */;
-import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 8965 */;
-import StartupProfiler from "StartupProfiler" /* 11027 */;
-import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 13991 */;
-import NavigationConstants from "NavigationConstants" /* 15565 */;
-import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 15566 */;
-import AutoAnalytics from "AutoAnalytics" /* 16563 */;
-import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 16617 */;
-import LaunchPadContainerDefault from "LaunchPadContainer" /* 16790 */;
-import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 16821 */;
-import AppComponents from "AppComponents" /* 16823 */;
+import react2 from "react" /* 576 */;
+import DeviceUtils from "DeviceUtils" /* 4813 */;
+import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 9383 */;
+import StartupProfiler from "StartupProfiler" /* 11315 */;
+import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 13993 */;
+import NavigationConstants from "NavigationConstants" /* 15567 */;
+import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 15568 */;
+import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 16619 */;
+import AppComponents from "AppComponents" /* 16792 */;
+import LaunchPadContainerDefault from "LaunchPadContainer" /* 17022 */;
+import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 17053 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+import createStyles from "createStyles" /* 4837 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const StartupProfilerDefault = StartupProfiler;
-let _require;
+let _require, importDefault;
 
 let c10;
 let c9;
 let closure_12;
 let metroImportAll;
+let tmp;
 let tmp2;
 let unpackModuleId;
-const getNavigationModalPresentationDefault = tmp2(10386);
+const getNavigationModalPresentationDefault = tmp2(10428);
+const AutoAnalytics = tmp(16565);
 function getId(params) {
   return params.params.screenKey;
 }
 function beforeRemove(data) {
   let SWIPE;
-  const obj = closure_1_0(closure_1_2[26]);
+  const obj = closure_1_0(closure_1_2[28]);
   if (null != obj.getBestActiveInput()) {
-    const obj2 = { type: closure_1_0(closure_1_2[28]).KeyboardTypes.SYSTEM };
-    const setKeyboardType = closure_1_0(closure_1_2[27]).setKeyboardType;
-    closure_1_0(closure_1_2[27]);
+    const obj2 = { type: closure_1_0(closure_1_2[30]).KeyboardTypes.SYSTEM };
+    const setKeyboardType = closure_1_0(closure_1_2[29]).setKeyboardType;
+    closure_1_0(closure_1_2[29]);
     setKeyboardType(obj2);
   }
   data = data.data;
@@ -57,9 +60,9 @@ function beforeRemove(data) {
       type = action.type;
     }
   }
-  const trackWithMetadata = closure_1_1(closure_1_2[29]).trackWithMetadata;
+  const trackWithMetadata = closure_1_1(closure_1_2[31]).trackWithMetadata;
   const CHANNEL_BACK_NAVIGATED = constants.CHANNEL_BACK_NAVIGATED;
-  closure_1_1(closure_1_2[29]);
+  closure_1_1(closure_1_2[31]);
   if ("GO_BACK" === type) {
     SWIPE = constants2.BACK_BUTTON;
   } else {
@@ -75,9 +78,6 @@ function getTabsComponent() {
 }
 function getChannelComponent() {
   return View;
-}
-function WrappedAutoAnalytics() {
-  return authStore(AutoAnalytics.default, {});
 }
 function getMemberVerificationComponent() {
   return require("MemberVerificationScreen").default;
@@ -113,7 +113,7 @@ function getAccountStanding() {
   return require("SuspendedUserPage").default;
 }
 const View = react_native.View;
-let animation = NavigationConstants.StackNavigationAnimationSettings;
+let closure_7 = NavigationConstants.StackNavigationAnimationSettings;
 ({ AnalyticEvents: metroImportAll, DrawerSourceTypes: c9 } = Constants);
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
 const mainNavigator = "mainNavigator";
@@ -124,10 +124,37 @@ if (PlatformUtils) {
   const _module4 = DeviceUtils;
   PlatformUtils = _module4.getSystemVersionMajor() <= 15;
 }
+let Screen = createAccessibleNativeStackNavigatorDefault();
+let Screen2 = createChatPanelNativeStackNavigatorDefault();
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = AutoAnalytics;
+    cResult[0] = tmpResult;
+    first = tmpResult;
+  } else {
+    first = cResult[0];
+  }
+  const _default = first.default;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp8 = authStore(_default, {});
+    cResult[1] = tmp8;
+    tmp6 = tmp8;
+  } else {
+    tmp6 = cResult[1];
+  }
+  return tmp6;
+}) : (() => authStore(AutoAnalytics.default, {}));
+const options = Object.freeze({ animation: "none" });
+ReactCompilerGating = ReactCompilerGating_mod;
 function getChannelScreen() {
-  animation = arg0;
+  let animation = arg0;
   if (arg0 === undefined) {
-    animation = animation.animation;
+    animation = closure_7.animation;
   }
   const obj = {
     name: "channel",
@@ -136,20 +163,191 @@ function getChannelScreen() {
     options(arg0) {
       let route;
       ({ navigation, route } = arg0);
-      const obj = { headerShown: true, header: closure_2_0(closure_2_2[30]).renderHeader, animation };
-      const obj2 = closure_2_0(closure_2_2[30]);
+      const obj = { headerShown: true, header: closure_2_0(closure_2_2[32]).renderHeader, animation };
+      const obj2 = closure_2_0(closure_2_2[32]);
       const merged = Object.assign(obj2.getDefaultChannelStackHeaderProps(navigation, route));
       const merged1 = Object.assign(animation2);
       return obj;
     },
     getComponent: getChannelComponent
   };
-  return closure_10(Screen.Screen, obj);
+  return closure_10(Screen2.Screen, obj);
 }
-let closure_16 = createAccessibleNativeStackNavigatorDefault();
-let Screen = createChatPanelNativeStackNavigatorDefault();
-let closure_30 = Object.freeze({ animation: "none" });
-const memoResult = react.memo(function StackNavigator() {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let accessibilityNativeStackOptions;
+  let closure_1;
+  let first;
+  let homeIndicatorStore;
+  let isChatBesideChannelList;
+  let sessionId;
+  let tmp10;
+  let tmp15;
+  let tmp9;
+  let tmp = first;
+  let tmp2 = homeIndicatorStore;
+  let obj = first(homeIndicatorStore[15]);
+  const cResult = obj.c(33);
+  const tmp4 = closure_14();
+  let obj2 = first(homeIndicatorStore[33]);
+  const screenReaderEnabled = obj2.useScreenReaderEnabled();
+  let obj3 = first(homeIndicatorStore[33]);
+  const appKeyCommands = obj3.useAppKeyCommands();
+  require("useNativeThemeUpdater")();
+  const tmp7 = importDefault;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [AuthenticationStore];
+    const fn = function l() {
+      return null != sessionId.getSessionId();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp10 = fn;
+    tmp9 = items;
+  } else {
+    [tmp9, tmp10] = cResult;
+  }
+  const tmpResult = tmp(tmp2[35]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp10);
+  const tmp13 = isChatBesideChannelList(accessibilityNativeStackOptions.useState(closure_7.animation), 2);
+  first = tmp13[0];
+  importDefault = tmp13[1];
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function u(autoHideHomeIndicator) {
+      return autoHideHomeIndicator.autoHideHomeIndicator;
+    };
+    cResult[2] = fn2;
+    tmp15 = fn2;
+  } else {
+    tmp15 = cResult[2];
+  }
+  const tmpResult4 = tmp(tmp2[36]);
+  homeIndicatorStore = tmpResult4.useHomeIndicatorStore(tmp15);
+  isChatBesideChannelList = tmp7(tmp2[37])().isChatBesideChannelList;
+  const tmpResult5 = tmp(tmp2[38]);
+  accessibilityNativeStackOptions = tmpResult5.useAccessibilityNativeStackOptions();
+  const tmpResult6 = tmp(tmp2[39]);
+  const isMemberVerificationRouteDeprecated = tmpResult6.useIsMemberVerificationRouteDeprecated("MainNavigator");
+  if (cResult[3] !== stateFromStores) {
+    let tmp20 = null;
+    if (stateFromStores) {
+      tmp20 = closure_10(closure_21, {});
+    }
+    cResult[3] = stateFromStores;
+    cResult[4] = tmp20;
+  }
+  if (cResult[5] !== homeIndicatorStore) {
+    class R {
+      constructor() {
+        return { headerShown: false, autoHideHomeIndicator: homeIndicatorStore };
+      }
+    }
+    cResult[5] = homeIndicatorStore;
+    cResult[6] = R;
+  } else {
+    class R {
+      constructor() {
+        return { headerShown: false, autoHideHomeIndicator: homeIndicatorStore };
+      }
+    }
+  }
+  const tmp24 = cResult[7];
+  if (accessibilityNativeStackOptions != null) {
+    class R {
+      constructor() {
+        return { headerShown: false, autoHideHomeIndicator: homeIndicatorStore };
+      }
+    }
+  }
+  if (tmp24 === undefined) {
+    class R {
+      constructor() {
+        return { headerShown: false, autoHideHomeIndicator: homeIndicatorStore };
+      }
+    }
+  }
+  let obj4 = {
+    name: "main",
+    options,
+    children() {
+      let items;
+      let items1;
+      let obj = {
+        id: "tabs",
+        screenOptions(navigation) {
+          let str;
+          navigation = navigation.navigation;
+          if (closure_1_15) {
+            str = "default";
+          }
+          const obj = { orientation: str, headerShown: false };
+          const obj2 = first(homeIndicatorStore[32]);
+          const merged = Object.assign(obj2.getDefaultStackHeaderProps(navigation));
+          const merged1 = Object.assign(closure_1_7);
+          return obj;
+        },
+        children: items
+      };
+      let obj2 = { name: "tabs", getComponent: getTabsComponent, options };
+      const Navigator = Screen2.Navigator;
+      items = [authStore(Screen2.Screen, obj2), , ];
+      let tmp4Result = null;
+      const tmp2 = closure_12;
+      if (!isMemberVerificationRouteDeprecated) {
+        const obj3 = {
+          name: "member-verification",
+          getId(params) {
+              return params.params.guildId;
+            },
+          getComponent: getMemberVerificationComponent,
+          options: { presentation: "transparentModal", animation: "slide_from_bottom" }
+        };
+        tmp4Result = tmp4(tmp3.Screen, obj3);
+      }
+      items[1] = tmp4Result;
+      let animation;
+      if (accessibilityNativeStackOptions != null) {
+        animation = accessibilityNativeStackOptions.animation;
+      }
+      if (animation == null) {
+        animation = first;
+      }
+      if (animation === undefined) {
+        animation = closure_7.animation;
+      }
+      const obj4 = { children: items1 };
+      const obj5 = {
+        name: "channel",
+        getId,
+        listeners: { beforeRemove },
+        options(arg0) {
+          let route;
+          ({ navigation, route } = arg0);
+          const obj = { headerShown: true, header: closure_2_0(closure_2_2[32]).renderHeader, animation };
+          const obj2 = closure_2_0(closure_2_2[32]);
+          const merged = Object.assign(obj2.getDefaultChannelStackHeaderProps(navigation, route));
+          const merged1 = Object.assign(animation2);
+          return obj;
+        },
+        getComponent: getChannelComponent
+      };
+      items[2] = authStore(Screen2.Screen, obj5);
+      items1 = [unpackModuleId(Navigator, obj), AppComponents.APP_EXTRA_COMPONENTS_VOICE_AND_VIDEO];
+      return unpackModuleId(tmp2, obj4);
+    }
+  };
+  const tmp25 = closure_10(Screen.Screen, obj4);
+  if (accessibilityNativeStackOptions != null) {
+    class R {
+      constructor() {
+        return { headerShown: false, autoHideHomeIndicator: homeIndicatorStore };
+      }
+    }
+  }
+  cResult[7] = undefined;
+  cResult[8] = first;
+  cResult[9] = isMemberVerificationRouteDeprecated;
+  cResult[10] = tmp25;
+}) : (() => {
   let accessibilityNativeStackOptions;
   let closure_3;
   let first;
@@ -158,7 +356,6 @@ const memoResult = react.memo(function StackNavigator() {
   let getComponent3;
   let homeIndicatorStore;
   let isMemberVerificationRouteDeprecated;
-  let options;
   let stateFromStores;
   let styles;
   let tmp = closure_14();
@@ -167,14 +364,14 @@ const memoResult = react.memo(function StackNavigator() {
   const screenReaderEnabled = obj.useScreenReaderEnabled();
   let obj2 = require("MainShared");
   const appKeyCommands = obj2.useAppKeyCommands();
-  let tmp4 = stateFromStores(first[32])();
+  let tmp4 = stateFromStores(first[34])();
   let obj3 = require("useStateFromStores");
   let items = [accessibilityNativeStackOptions];
   stateFromStores = obj3.useStateFromStores(items, () => null != accessibilityNativeStackOptions.getSessionId());
   [first, _slicedToArray] = homeIndicatorStore.useState(isMemberVerificationRouteDeprecated.animation);
   let obj4 = require("HomeIndicator");
   homeIndicatorStore = obj4.useHomeIndicatorStore((autoHideHomeIndicator) => autoHideHomeIndicator.autoHideHomeIndicator);
-  const isChatBesideChannelList = stateFromStores(first[35])().isChatBesideChannelList;
+  const isChatBesideChannelList = stateFromStores(first[37])().isChatBesideChannelList;
   let obj5 = require("Navigator");
   accessibilityNativeStackOptions = obj5.useAccessibilityNativeStackOptions();
   let obj6 = require("MemberVerificationRouteExperiment");
@@ -207,7 +404,7 @@ const memoResult = react.memo(function StackNavigator() {
     const tmp9 = ParentalConsentWarningBannerDefault;
     const tmp10 = GlobalStatusIndicatorDefault;
     if (stateFromStores) {
-      tmpResult = tmp(WrappedAutoAnalytics, {});
+      tmpResult = tmp(closure_21, {});
     }
     let items = [tmpResult, ];
     let obj3 = { profile: StartupProfiler.Profiles.StackNavigator, children: tmp6(Navigator, obj4) };
@@ -234,7 +431,7 @@ const memoResult = react.memo(function StackNavigator() {
               str = "default";
             }
             const obj = { orientation: str, headerShown: false };
-            const obj2 = closure_1_0(closure_1_2[30]);
+            const obj2 = closure_1_0(closure_1_2[32]);
             const merged = Object.assign(obj2.getDefaultStackHeaderProps(navigation));
             const merged1 = Object.assign(animation2);
             return obj;
@@ -242,8 +439,8 @@ const memoResult = react.memo(function StackNavigator() {
           children: items
         };
         let obj2 = { name: "tabs", getComponent, options };
-        const Navigator = Screen.Navigator;
-        items = [closure_2_10(Screen.Screen, obj2), , ];
+        const Navigator = Screen2.Navigator;
+        items = [closure_2_10(Screen2.Screen, obj2), , ];
         let tmp4Result = null;
         const tmp2 = closure_2_12;
         if (!animation2) {
@@ -276,16 +473,16 @@ const memoResult = react.memo(function StackNavigator() {
           options(arg0) {
             let route;
             ({ navigation, route } = arg0);
-            const obj = { headerShown: true, header: closure_2_0(closure_2_2[30]).renderHeader, animation };
-            const obj2 = closure_2_0(closure_2_2[30]);
+            const obj = { headerShown: true, header: closure_2_0(closure_2_2[32]).renderHeader, animation };
+            const obj2 = closure_2_0(closure_2_2[32]);
             const merged = Object.assign(obj2.getDefaultChannelStackHeaderProps(navigation, route));
             const merged1 = Object.assign(animation2);
             return obj;
           },
           getComponent: getComponent2
         };
-        items[2] = closure_2_10(Screen.Screen, obj5);
-        items1 = [tmp(Navigator, obj), styles(first[43]).APP_EXTRA_COMPONENTS_VOICE_AND_VIDEO];
+        items[2] = closure_2_10(Screen2.Screen, obj5);
+        items1 = [tmp(Navigator, obj), styles(first[40]).APP_EXTRA_COMPONENTS_VOICE_AND_VIDEO];
         return closure_2_11(tmp2, obj4);
       }
     };
@@ -298,7 +495,7 @@ const memoResult = react.memo(function StackNavigator() {
       name: "conversations",
       getComponent: getConversationsComponent,
       options() {
-        return stateFromStores(first[44])();
+        return stateFromStores(first[41])();
       }
     };
     items1[2] = tmp(closure_16.Screen, obj7);
@@ -314,7 +511,7 @@ const memoResult = react.memo(function StackNavigator() {
       options() {
         let obj2;
         let obj4;
-        const tmp2 = stateFromStores(first[44]);
+        const tmp2 = stateFromStores(first[41]);
         const obj = styles(first[9]);
         if (obj.isIpadOS()) {
           obj2 = { presentation: "modal" };
@@ -340,7 +537,7 @@ const memoResult = react.memo(function StackNavigator() {
       getComponent: getYouComponent
     };
     items1[5] = tmp(closure_16.Screen, obj11);
-    const Screen2 = closure_16.Screen;
+    Screen2 = closure_16.Screen;
     const obj12 = {
       name: "friends",
       options(route) {
@@ -348,7 +545,7 @@ const memoResult = react.memo(function StackNavigator() {
         route = route.route;
         const params = route.params;
         let str;
-        const tmp = stateFromStores(first[44]);
+        const tmp = stateFromStores(first[41]);
         if (params != null) {
           const params2 = params.params;
           if (params2 != null) {
@@ -389,7 +586,7 @@ const memoResult = react.memo(function StackNavigator() {
       name: "settings",
       options() {
         let obj2;
-        const tmp = stateFromStores(first[44]);
+        const tmp = stateFromStores(first[41]);
         const obj = styles(first[9]);
         if (obj.isIpadOS()) {
           obj2 = { presentation: "modal" };
@@ -405,7 +602,7 @@ const memoResult = react.memo(function StackNavigator() {
       name: "sidebar",
       getComponent: getChannelDetailsComponent,
       options() {
-        return stateFromStores(first[44])({ lockOrientation: false });
+        return stateFromStores(first[41])({ lockOrientation: false });
       }
     };
     items1[8] = tmp(closure_16.Screen, obj17);
@@ -427,7 +624,7 @@ const memoResult = react.memo(function StackNavigator() {
           str = "slide_from_bottom";
         }
         let str2 = "transparentModal";
-        const tmp = stateFromStores(first[44]);
+        const tmp = stateFromStores(first[41]);
         if ("card" !== route.params.presentation) {
           let str3 = route.params.presentation;
           if (str3 == null) {
@@ -445,7 +642,7 @@ const memoResult = react.memo(function StackNavigator() {
     items2 = [tmp(tmp8, obj13), AppComponents.APP_EXTRA_COMPONENTS, AppComponents.APP_EXTRA_COMPONENTS_NEVER_FREEZE, AppComponents.APP_EXTRA_COMPONENTS_EXTERNAL_PIP];
     return tmp(tmp4, obj);
   }, items1);
-});
+}));
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/MainNavigator.tsx");
 
 export default memoResult;

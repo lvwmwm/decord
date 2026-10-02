@@ -1,21 +1,49 @@
-// Module ID: 9260
-// Function ID: 9261
+// Module ID: 9238
+// Function ID: 9239
 // Name: useIsVideoMode
-// Dependencies: [4858, 2045, 1993, 2099, 4855, 504, 2]
-// Exports: default, isVideoMode
+// Dependencies: [4859, 2051, 1999, 2102, 4856, 558, 576, 504, 2]
+// Exports: isVideoMode
 
-// Module 9260 (useIsVideoMode)
-import get_initialized from "get initialized" /* 504 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+// Module 9238 (useIsVideoMode)
+import react from "react" /* 576 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/video_calls/native/useIsVideoMode.tsx");
-
-export default function useIsVideoMode() {
+let tmp;
+const get_initialized = tmp(504);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  let voiceChannelId;
+  let tmp2 = dependencyMap;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore, SelectedChannelStore, MediaEngineStore, VoiceStateStore, ApplicationStreamingStore];
+    const fn = function c() {
+      channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
+      let tmp2 = null != channel;
+      if (tmp2) {
+        tmp2 = obj.getAllActiveStreams().length > 0 || obj2.hasVideo(channel.id) || obj3.isVideoEnabled();
+        ApplicationStreamingStore.getAllActiveStreams().length > 0 || VoiceStateStore.hasVideo(channel.id) || MediaEngineStore.isVideoEnabled();
+      }
+      return tmp2;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
   let voiceChannelId;
   const obj = get_initialized;
   const items = [ChannelStore, SelectedChannelStore, MediaEngineStore, VoiceStateStore, ApplicationStreamingStore];
@@ -28,8 +56,8 @@ export default function useIsVideoMode() {
     }
     return tmp2;
   });
-};
-export const isVideoMode = function isVideoMode(arg0, arg1, arg2, arg3, arg4) {
+});
+function isVideoMode(arg0, arg1, arg2, arg3, arg4) {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = ChannelStore;
@@ -57,4 +85,8 @@ export const isVideoMode = function isVideoMode(arg0, arg1, arg2, arg3, arg4) {
     obj3.getAllActiveStreams().length > 0 || obj4.hasVideo(channel.id) || obj5.isVideoEnabled();
   }
   return tmp2;
-};
+}
+const result = size.fileFinishedImporting("modules/video_calls/native/useIsVideoMode.tsx");
+
+export default tmp2;
+export { isVideoMode };

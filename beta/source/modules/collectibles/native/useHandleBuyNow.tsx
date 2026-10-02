@@ -1,12 +1,12 @@
-// Module ID: 12739
-// Function ID: 12740
+// Module ID: 12741
+// Function ID: 12742
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 1074, 3, 10480, 6961, 4800, 10542, 1610, 6735, 4503, 4528, 1115, 2]
+// Dependencies: [5, 32, 19, 1086, 3, 10512, 6965, 4801, 10574, 1616, 6736, 4506, 4531, 1127, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 12739 (useHandleBuyNow)
+// Module 12741 (useHandleBuyNow)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -42,7 +42,7 @@ function useHandleBuyNow(product) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -77,7 +77,7 @@ function useHandleBuyNow(product) {
             const obj2 = c1(c2[8]);
             obj2.open(obj8);
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           c2 = 3;
@@ -106,7 +106,7 @@ function useHandleBuyNow(product) {
     },
     orderId
   };
-  const tmp3 = onBuySettled(10480)(obj);
+  const tmp3 = onBuySettled(10512)(obj);
   react = tmp3;
   let obj2 = {
     handleBuyNow: react.useCallback(isBuying(function*(arg0, value) {
@@ -127,7 +127,7 @@ function useHandleBuyNow(product) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -226,7 +226,7 @@ function useHandleBuyNow(product) {
             return obj;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp56) {
           closure_2 = tmp56;
           if (0 === c3) {

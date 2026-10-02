@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 79 (insetsDiffer)
-let closure_0 = { top: "Array", left: "PX_8", right: "y", bottom: "HermesInternal" };
+let closure_0 = { top: "status", left: "unicodeVersion", right: "marginTop", bottom: "unicodeVersion" };
 
 export default function insetsDiffer(arg0, arg1) {
   const rect = arg0 || closure_0;

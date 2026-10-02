@@ -1,23 +1,24 @@
-// Module ID: 15240
-// Function ID: 15241
+// Module ID: 15228
+// Function ID: 15229
 // Name: OverridePremiumTypeActions
-// Dependencies: [1372, 573, 7171, 2]
+// Dependencies: [1378, 585, 7175, 2]
 // Exports: updateClientCreatedAtOverride, updateClientPremiumTypeOverride
 
-// Module 15240 (OverridePremiumTypeActions)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import createMessage from "createMessage" /* 7171 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 15228 (OverridePremiumTypeActions)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import createMessage from "createMessage" /* 7175 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/OverridePremiumTypeActions.tsx");
 
-export const updateClientPremiumTypeOverride = function updateClientPremiumTypeOverride(premiumType, currentUser) {
+export const updateClientPremiumTypeOverride = function updateClientPremiumTypeOverride(premiumType, stateFromStores) {
   let obj6;
+  let currentUser = stateFromStores;
   const obj = DispatcherDefault;
   const obj2 = { type: "SET_PREMIUM_TYPE_OVERRIDE", premiumType };
   obj.dispatch(obj2);
-  if (currentUser == null) {
+  if (stateFromStores == null) {
     currentUser = UserStore.getCurrentUser();
   }
   if (null != currentUser) {

@@ -1,22 +1,23 @@
-// Module ID: 8869
-// Function ID: 8870
+// Module ID: 8863
+// Function ID: 8864
 // Name: ScreenshareTile
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 8870, 6073, 1177, 8871, 4832, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 8864, 1189, 8865, 1127, 4833, 6066, 2]
 
-// Module 8869 (ScreenshareTile)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 8870 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8871 */;
+// Module 8863 (ScreenshareTile)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 8864 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8865 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -30,9 +31,117 @@ const NOOP = Constants.NOOP;
 let obj = { container: obj2, image: { marginBottom: 8, width: 60, height: 40 }, label: { lineHeight: 18, textAlign: "center" }, liveContainer: { position: "absolute", top: 8, right: 8, zIndex: 2 } };
 obj2 = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BLACK, overflow: "hidden", flex: 1 };
 let closure_8 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/video_calls/native/components/ScreenshareTile.tsx");
-
-export default function ScreenShareTile(onSingleTap) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let items;
+  let onDoubleTap;
+  let onSingleTap;
+  const obj = react2;
+  const cResult = obj.c(19);
+  ({ onSingleTap, onDoubleTap } = arg0);
+  if (undefined === onSingleTap) {
+    onSingleTap = NOOP;
+  }
+  if (undefined === onDoubleTap) {
+    onDoubleTap = NOOP;
+  }
+  const tmp4 = closure_8();
+  if (cResult[0] === onDoubleTap) {
+    let tmp5;
+    let tmp9;
+    let tmp12;
+    let tmp16;
+    let tmp20;
+    let tmp22;
+    if (cResult[1] === onSingleTap) {
+      tmp5 = cResult[2];
+    }
+    const tmp7 = useParticipantTileTapGestureDefault(tmp5);
+    const _Symbol = Symbol;
+    const container = tmp4.container;
+    const tmp6 = importDefault;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp11 = metroRequire(native.LiveTag, {});
+      cResult[3] = tmp11;
+      tmp9 = tmp11;
+    } else {
+      tmp9 = cResult[3];
+    }
+    if (cResult[4] !== tmp4.liveContainer) {
+      const obj2 = { style: tmp4.liveContainer, children: tmp9 };
+      const tmp15 = metroRequire(_false, obj2);
+      cResult[4] = tmp4.liveContainer;
+      cResult[5] = tmp15;
+      tmp12 = tmp15;
+    } else {
+      tmp12 = cResult[5];
+    }
+    if (cResult[6] !== tmp4.image) {
+      const obj3 = { source: tmp6(8865), style: tmp4.image, resizeMode: "contain" };
+      const tmp19 = metroRequire(React3, obj3);
+      cResult[6] = tmp4.image;
+      cResult[7] = tmp19;
+      tmp16 = tmp19;
+    } else {
+      tmp16 = cResult[7];
+    }
+    const _Symbol2 = Symbol;
+    const label = tmp4.label;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(intl2.t.G84gtR);
+      cResult[8] = stringResult;
+      tmp20 = stringResult;
+    } else {
+      tmp20 = cResult[8];
+    }
+    if (cResult[9] !== tmp4.label) {
+      const obj4 = { style: label, variant: "text-xs/bold", color: "text-overlay-light", children: tmp20 };
+      const tmp24 = metroRequire(Text_Text.Text, obj4);
+      cResult[9] = tmp4.label;
+      cResult[10] = tmp24;
+      tmp22 = tmp24;
+    } else {
+      tmp22 = cResult[10];
+    }
+    if (cResult[11] === tmp4.container) {
+      if (cResult[12] === tmp22) {
+        if (cResult[13] === tmp12) {
+          let tmp25;
+          if (cResult[14] === tmp16) {
+            tmp25 = cResult[15];
+          }
+          if (cResult[16] === tmp7) {
+            let tmp29;
+            if (cResult[17] === tmp25) {
+              tmp29 = cResult[18];
+            }
+            return tmp29;
+          }
+          const obj5 = { gesture: tmp7, children: tmp25 };
+          const tmp31 = metroRequire(LegacyBaseButton.GestureDetector, obj5);
+          cResult[16] = tmp7;
+          cResult[17] = tmp25;
+          cResult[18] = tmp31;
+          tmp29 = tmp31;
+        }
+      }
+    }
+    const obj6 = { style: container, children: items };
+    items = [tmp12, tmp16, tmp22];
+    const tmp28 = metroImportDefault(_false, obj6);
+    cResult[11] = tmp4.container;
+    cResult[12] = tmp22;
+    cResult[13] = tmp12;
+    cResult[14] = tmp16;
+    cResult[15] = tmp28;
+    tmp25 = tmp28;
+  }
+  const obj7 = { onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap };
+  cResult[0] = onDoubleTap;
+  cResult[1] = onSingleTap;
+  cResult[2] = obj7;
+  tmp5 = obj7;
+}) : ((onSingleTap) => {
   let intl;
   let items;
   let obj2;
@@ -57,4 +166,7 @@ export default function ScreenShareTile(onSingleTap) {
   intl = intl2.intl;
   items[2] = metroRequire(Text, obj5);
   return metroRequire(GestureDetector, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/video_calls/native/components/ScreenshareTile.tsx");
+
+export default tmp5;

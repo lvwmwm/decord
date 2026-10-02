@@ -1,13 +1,13 @@
-// Module ID: 11204
-// Function ID: 11205
+// Module ID: 11076
+// Function ID: 11077
 // Name: SavedMessageHelpers
-// Dependencies: [5, 11155, 1074, 7275, 7270, 7273, 6603, 11205, 11206, 5203, 1115, 7284, 7285, 4528, 6028, 4795, 11207, 2]
+// Dependencies: [5, 11025, 1086, 7279, 7274, 7277, 6604, 11077, 11078, 5204, 1127, 7288, 7289, 4531, 6351, 4796, 11079, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 11204 (SavedMessageHelpers)
-import Constants from "Constants" /* 1074 */;
+// Module 11076 (SavedMessageHelpers)
+import Constants from "Constants" /* 1086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11155 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11025 */;
 import size from "module_2" /* 2 */;
 
 let content;
@@ -153,10 +153,10 @@ let obj = function _addOrUpdateSavedMessage() {
           obj.open(obj9);
         }
       }
-      await "HermesInternal";
+      await "IconComponent";
       displayToast = displayToast.displayToast;
       tmp = Object.assign(displayToast, Object.assign({ displayToast: 0 }));
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -179,7 +179,7 @@ obj = function _removeSavedMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -203,7 +203,7 @@ obj = function _removeSavedMessage() {
             ClockIcon = undefined;
             content = 1;
             c4 = 1;
-            return { value: "flex", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === content) {
           if (arg0 === 1) {
@@ -277,7 +277,7 @@ obj = function _removeSavedMessage() {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp44) {
         c4 = 3;

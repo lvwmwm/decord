@@ -1,12 +1,12 @@
-// Module ID: 8323
-// Function ID: 8324
+// Module ID: 8320
+// Function ID: 8321
 // Name: useRedeemVirtualCurrency
-// Dependencies: [5, 32, 19, 8324, 8325, 6664, 8318, 1115, 2]
+// Dependencies: [5, 32, 19, 8321, 8322, 6665, 8315, 1127, 2]
 // Exports: useRedeemVirtualCurrency
 
-// Module 8323 (useRedeemVirtualCurrency)
-import intl3 from "intl" /* 1115 */;
-import useOrderSigning from "useOrderSigning" /* 8325 */;
+// Module 8320 (useRedeemVirtualCurrency)
+import intl3 from "intl" /* 1127 */;
+import useOrderSigning from "useOrderSigning" /* 8322 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -33,7 +33,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   [error, _asyncToGenerator] = _slicedToArray(enabled(null), 2);
   const tmp5 = _slicedToArray(enabled(null), 2);
   [isSubmitting, _slicedToArray] = enabled(false);
-  let obj = entitlements(8324);
+  let obj = entitlements(8321);
   enabled = obj.useConfig({ location: "orb_checkout_modal" }).enabled;
   order = undefined;
   if (order != null) {
@@ -70,7 +70,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -151,7 +151,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
               tmp(false);
             }
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp47) {
           closure_5 = tmp47;

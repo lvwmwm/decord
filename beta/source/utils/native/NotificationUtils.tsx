@@ -1,15 +1,15 @@
-// Module ID: 11911
-// Function ID: 11912
+// Module ID: 11805
+// Function ID: 11806
 // Name: NotificationUtils
-// Dependencies: [5, 17, 11902, 1074, 11905, 1241, 8746, 9357, 2]
+// Dependencies: [5, 17, 11796, 1086, 11799, 1253, 8741, 9335, 2]
 
-// Module 11911 (NotificationUtils)
+// Module 11805 (NotificationUtils)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PushNotificationDefault from "PushNotification" /* 8746 */;
-import SoundUtils from "SoundUtils" /* 9357 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 11902 */;
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PushNotificationDefault from "PushNotification" /* 8741 */;
+import SoundUtils from "SoundUtils" /* 9335 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 11796 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -102,7 +102,7 @@ let obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp3) {
           c0 = 3;

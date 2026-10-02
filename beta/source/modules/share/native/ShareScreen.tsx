@@ -1,28 +1,28 @@
-// Module ID: 13444
-// Function ID: 13445
+// Module ID: 13446
+// Function ID: 13447
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 2049, 2045, 4469, 1074, 11179, 10320, 21, 4836, 576, 1364, 1115, 13445, 10444, 13446, 13447, 1241, 9398, 4847, 7810, 8610, 11203, 1981, 5205, 13448, 13449, 5943, 7288, 1610, 5936, 10447, 13450, 2]
+// Dependencies: [5, 32, 19, 17, 2055, 2051, 4472, 1086, 11051, 10361, 21, 4837, 588, 1370, 1127, 13447, 10477, 13448, 13449, 1253, 9394, 4848, 7814, 8607, 11075, 1987, 5206, 13450, 13451, 5942, 7292, 1616, 5933, 10480, 13452, 2]
 // Exports: default
 
-// Module 13444 (ShareScreen)
+// Module 13446 (ShareScreen)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import intl4 from "intl" /* 1115 */;
-import HeaderShared from "HeaderShared" /* 7288 */;
-import UserRowConstants from "UserRowConstants" /* 10320 */;
-import ForwardConstants from "ForwardConstants" /* 11179 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 13448 */;
-import ShareEmbedDefault from "ShareEmbed" /* 13449 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import HeaderShared from "HeaderShared" /* 7292 */;
+import UserRowConstants from "UserRowConstants" /* 10361 */;
+import ForwardConstants from "ForwardConstants" /* 11051 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 13450 */;
+import ShareEmbedDefault from "ShareEmbed" /* 13451 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
 import size from "module_2" /* 2 */;
 
 let attachment_mimetypes, c4, channelId, closure_0, closure_1, closure_4, destination;
@@ -176,7 +176,7 @@ export default function ShareScreen(appEntryKey) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -283,7 +283,7 @@ export default function ShareScreen(appEntryKey) {
                                   } else if (arg0 === 2) {
                                     return { value, done: true };
                                   } else {
-                                    return { value: "HermesInternal", done: null };
+                                    return { value: "IconComponent", done: null };
                                   }
                                 } else {
                                   try {
@@ -304,7 +304,7 @@ export default function ShareScreen(appEntryKey) {
                                         tmp = undefined;
                                         c5 = 1;
                                         c6 = 1;
-                                        return { value: "flex", done: true };
+                                        return { value: "Reflect", done: true };
                                       }
                                     } else if (1 === c5) {
                                       if (arg0 === 1) {
@@ -417,7 +417,7 @@ export default function ShareScreen(appEntryKey) {
                 closure_129_8(false);
                 closure_129_9.current = false;
                 length = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               }
             }
             closure_10 = length.lazy(() => closure_1_0(paths[25])(paths[24], paths.paths));
@@ -459,7 +459,7 @@ export default function ShareScreen(appEntryKey) {
           return obj20;
         }
         length = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp102) {
         paths = tmp102;
         if (0 === c3) {

@@ -1,12 +1,14 @@
-// Module ID: 9654
-// Function ID: 9655
+// Module ID: 12280
+// Function ID: 12281
 // Name: ComponentProfiler
-// Dependencies: [19, 21, 2]
-// Exports: clearComponentRenderStats, default, dumpStats, getComponentRenderStats, pauseComponentProfiler, resetComponentProfiler, resumeComponentProfiler, serializeComponentRenderAverages
+// Dependencies: [19, 21, 558, 576, 2]
+// Exports: clearComponentRenderStats, dumpStats, getComponentRenderStats, pauseComponentProfiler, resetComponentProfiler, resumeComponentProfiler, serializeComponentRenderAverages
 
-// Module 9654 (ComponentProfiler)
+// Module 12280 (ComponentProfiler)
 import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -41,18 +43,77 @@ Object.defineProperty(StatCollector.prototype, "mean", {
   },
   set: undefined
 });
-let closure_3 = {};
-let c4 = true;
-const result = size.fileFinishedImporting("modules/profiling/ComponentProfiler.tsx");
-
-export default function ComponentProfiler(arg0) {
+let closure_5 = {};
+let c6 = true;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let first;
+  let id;
+  let obj = react2;
+  const cResult = obj.c(4);
+  ({ id, children } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function u(arg0, arg1, arg2) {
+      const tmp = closure_1_6;
+      if (tmp) {
+        if (!(arg0 in closure_1_5)) {
+          const self = this;
+          if (typeof StatCollector === "function") {
+            const obj = { mount: Object.assign({ totalMicroseconds: 0, count: 0, minMicroseconds: null, maxMicroseconds: null }), update: null, nestedUpdate: null };
+            const self2 = this;
+            if (typeof StatCollector === "function") {
+              obj.update = Object.assign({ totalMicroseconds: 0, count: 0, minMicroseconds: null, maxMicroseconds: null });
+              const self3 = this;
+              if (typeof StatCollector === "function") {
+                obj.nestedUpdate = Object.assign({ totalMicroseconds: 0, count: 0, minMicroseconds: null, maxMicroseconds: null });
+                tmp4[arg0] = obj;
+              } else {
+                throw new TypeError("Trying to call a non-function");
+              }
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+        }
+        if ("mount" === arg1) {
+          const mount = closure_1_5[arg0].mount;
+          mount.addValue(arg2);
+        } else if ("update" === arg1) {
+          const update = closure_1_5[arg0].update;
+          update.addValue(arg2);
+        } else if ("nested-update" === arg1) {
+          const nestedUpdate = closure_1_5[arg0].nestedUpdate;
+          nestedUpdate.addValue(arg2);
+        }
+      }
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === children) {
+    let tmp3;
+    if (cResult[2] === id) {
+      tmp3 = cResult[3];
+    }
+    return tmp3;
+  }
+  const tmp4 = <react.Profiler id={id} onRender={first}>{children}</react.Profiler>;
+  cResult[1] = children;
+  cResult[2] = id;
+  cResult[3] = tmp4;
+  tmp3 = tmp4;
+}) : ((arg0) => {
   let children;
   let id;
   ({ id, children } = arg0);
   return <react.Profiler id={id} onRender={react.useCallback(function(arg0, arg1, arg2) {
-    const tmp = closure_1_4;
+    const tmp = closure_1_6;
     if (tmp) {
-      if (!(arg0 in closure_1_3)) {
+      if (!(arg0 in closure_1_5)) {
         const self = this;
         if (typeof StatCollector === "function") {
           const obj = { mount: Object.assign({ totalMicroseconds: 0, count: 0, minMicroseconds: null, maxMicroseconds: null }), update: null, nestedUpdate: null };
@@ -74,28 +135,31 @@ export default function ComponentProfiler(arg0) {
         }
       }
       if ("mount" === arg1) {
-        const mount = closure_1_3[arg0].mount;
+        const mount = closure_1_5[arg0].mount;
         mount.addValue(arg2);
       } else if ("update" === arg1) {
-        const update = closure_1_3[arg0].update;
+        const update = closure_1_5[arg0].update;
         update.addValue(arg2);
       } else if ("nested-update" === arg1) {
-        const nestedUpdate = closure_1_3[arg0].nestedUpdate;
+        const nestedUpdate = closure_1_5[arg0].nestedUpdate;
         nestedUpdate.addValue(arg2);
       }
     }
   }, [])}>{children}</react.Profiler>;
-};
+});
+const result = size.fileFinishedImporting("modules/profiling/ComponentProfiler.tsx");
+
+export default tmp2;
 export { StatCollector };
 export function clearComponentRenderStats() {
-  closure_3 = {};
+  closure_5 = {};
 }
 export function getComponentRenderStats() {
-  return closure_3;
+  return closure_5;
 }
 export const serializeComponentRenderAverages = function serializeComponentRenderAverages() {
   let str = "";
-  if (0 !== Object.keys(closure_3).length) {
+  if (0 !== Object.keys(closure_5).length) {
     let num = 20;
     if ("id".length <= 20) {
       num = "id".length;
@@ -159,7 +223,7 @@ export const serializeComponentRenderAverages = function serializeComponentRende
     const _Object = Object;
     const text = `Component Render Stats (microseconds):
   ${"|" + tmp + "|" + tmp2 + "|" + tmp3 + "|" + tmp4 + "|" + tmp5 + "|" + tmp6 + "|" + obj7.padEnd(20, " ") + "|\n"}`;
-    const entries = Object.entries(closure_3);
+    const entries = Object.entries(closure_5);
     str = `Component Render Stats (microseconds):
   ${"|" + tmp + "|" + tmp2 + "|" + tmp3 + "|" + tmp4 + "|" + tmp5 + "|" + tmp6 + "|" + obj7.padEnd(20, " ") + "|\n"}${arr.map((item) => {
       let arr;
@@ -224,14 +288,14 @@ export const serializeComponentRenderAverages = function serializeComponentRende
   return str;
 };
 export function resetComponentProfiler() {
-  closure_3 = {};
+  closure_5 = {};
 }
 export function pauseComponentProfiler() {
-  c4 = false;
+  c6 = false;
 }
 export function resumeComponentProfiler() {
-  c4 = true;
+  c6 = true;
 }
 export function dumpStats() {
-  return closure_3;
+  return closure_5;
 }

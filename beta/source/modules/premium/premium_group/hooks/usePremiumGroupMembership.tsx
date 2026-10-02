@@ -1,19 +1,101 @@
-// Module ID: 13027
-// Function ID: 13028
+// Module ID: 13029
+// Function ID: 13030
 // Name: usePremiumGroupMembership
-// Dependencies: [19, 13028, 504, 573, 2]
-// Exports: default
+// Dependencies: [19, 13030, 558, 576, 504, 585, 2]
 
-// Module 13027 (usePremiumGroupMembership)
+// Module 13029 (usePremiumGroupMembership)
 import react from "react" /* 19 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import PremiumGroupStore from "PremiumGroupStore" /* 13028 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import PremiumGroupStore from "PremiumGroupStore" /* 13030 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const useEffect = react.useEffect;
-const result = size.fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupMembership.tsx");
+const require = globalThis.__r;
+let _require;
 
-export default function usePremiumGroupMembership() {
+const useEffect = react.useEffect;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let _fetch;
+  let closure_0;
+  let isFetchingMembership;
+  let premiumGroupMembership;
+  let tmp4;
+  let tmp7;
+  let tmp8;
+  let useCachedData;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(11);
+  if (cResult[0] !== arg0) {
+    let obj2 = arg0;
+    if (undefined === arg0) {
+      obj2 = {};
+    }
+    cResult[0] = arg0;
+    cResult[1] = obj2;
+    tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  ({ useCachedData, fetch: _fetch } = tmp4);
+  _require = tmp5;
+  let closure_1 = tmp6;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PremiumGroupStore];
+    const fn = function c() {
+      const obj = { premiumGroupMembership: PremiumGroupStore.getMembership(), isFetchingMembership: PremiumGroupStore.isFetchingMembership() };
+      return obj;
+    };
+    cResult[2] = items;
+    cResult[3] = fn;
+    tmp8 = fn;
+    tmp7 = items;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp7, tmp8);
+  ({ premiumGroupMembership, isFetchingMembership } = stateFromStoresObject);
+  if (cResult[4] === (undefined === _fetch || _fetch)) {
+    let tmp11;
+    let tmp12;
+    if (cResult[5] === (undefined !== useCachedData && useCachedData)) {
+      tmp11 = cResult[6];
+      tmp12 = cResult[7];
+    }
+    useEffect(tmp11, tmp12);
+    if (cResult[8] === isFetchingMembership) {
+      let tmp15;
+      if (cResult[9] === premiumGroupMembership) {
+        tmp15 = cResult[10];
+      }
+      return tmp15;
+    }
+    const obj3 = { premiumGroupMembership, isLoading: isFetchingMembership };
+    cResult[8] = isFetchingMembership;
+    cResult[9] = premiumGroupMembership;
+    cResult[10] = obj3;
+    tmp15 = obj3;
+  }
+  const fn2 = function f() {
+    const tmp = closure_1;
+    if (tmp) {
+      const hasFetchedMembershipResult = closure_0 && PremiumGroupStore.hasFetchedMembership();
+      if (!hasFetchedMembershipResult) {
+        const obj = DispatcherDefault;
+        obj.dispatch({ type: "PREMIUM_GROUP_MEMBERSHIP_REQUEST" });
+      }
+    }
+  };
+  const items1 = [undefined === _fetch || _fetch, tmp5];
+  cResult[4] = undefined === _fetch || _fetch;
+  cResult[5] = undefined !== useCachedData && useCachedData;
+  cResult[6] = fn2;
+  cResult[7] = items1;
+  tmp12 = items1;
+  tmp11 = fn2;
+}) : (() => {
   let isFetchingMembership;
   let premiumGroupMembership;
   let obj = arg0;
@@ -47,4 +129,7 @@ export default function usePremiumGroupMembership() {
     }
   }, items1);
   return { premiumGroupMembership, isLoading };
-};
+});
+const result = size.fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupMembership.tsx");
+
+export default tmp2;

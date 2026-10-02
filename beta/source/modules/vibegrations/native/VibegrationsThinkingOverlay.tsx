@@ -1,17 +1,19 @@
-// Module ID: 16397
-// Function ID: 16398
+// Module ID: 16399
+// Function ID: 16400
 // Name: VibegrationsThinkingOverlay
-// Dependencies: [19, 17, 12643, 21, 4836, 576, 504, 16346, 5919, 16057, 4832, 1115, 3715, 16344, 2]
-// Exports: default
+// Dependencies: [19, 17, 12645, 21, 4837, 588, 558, 576, 504, 16348, 16059, 4833, 1127, 3718, 16346, 5918, 2]
 
-// Module 16397 (VibegrationsThinkingOverlay)
-import nativeDefault from "native" /* 576 */;
+// Module 16399 (VibegrationsThinkingOverlay)
+import nativeDefault from "native" /* 588 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VibegrationsChatStore from "VibegrationsChatStore" /* 12643 */;
+import VibegrationsChatStore from "VibegrationsChatStore" /* 12645 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let projectId;
 
 let closure_4;
 let hasOwnProperty;
@@ -31,9 +33,173 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRa
 obj3 = { gap: nativeDefault.space.PX_8 };
 obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_9 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsThinkingOverlay.tsx");
-
-export default function VibegrationsThinkingOverlay(projectId) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+  let first;
+  let intl;
+  let intl2;
+  let items2;
+  let items3;
+  let obj11;
+  let obj9;
+  let tmp12;
+  let tmp14;
+  let tmp18;
+  let tmp22;
+  let tmp29;
+  let tmp8;
+  let tmp9;
+  const obj = projectId(576);
+  const cResult = obj.c(23);
+  projectId = projectId.projectId;
+  const tmp4 = closure_9();
+  const ref = react.useRef(null);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [VibegrationsChatStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== projectId) {
+    const fn = function x() {
+      return VibegrationsChatStore.getThinkingActivity(projectId);
+    };
+    const items1 = [projectId];
+    cResult[1] = projectId;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp9 = items1;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult = projectId(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
+  if (cResult[4] !== (null != stateFromStores && "end" !== stateFromStores.phase)) {
+    const obj2 = { streaming: null != stateFromStores && "end" !== stateFromStores.phase };
+    cResult[4] = null != stateFromStores && "end" !== stateFromStores.phase;
+    cResult[5] = obj2;
+    tmp12 = obj2;
+  } else {
+    tmp12 = cResult[5];
+  }
+  let str2;
+  const useVibegrationsRevealedText = projectId(16348).useVibegrationsRevealedText;
+  projectId(16348);
+  if (stateFromStores != null) {
+    str2 = stateFromStores.text;
+  }
+  if (str2 == null) {
+    str2 = "";
+  }
+  const text = useVibegrationsRevealedText(str2, tmp12).text;
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { size: "xs", color: ref(588).colors.TEXT_BRAND };
+    const LightbulbIcon = tmp(16059).LightbulbIcon;
+    const tmp17 = closure_7(LightbulbIcon, obj3);
+    cResult[6] = tmp17;
+    tmp14 = tmp17;
+  } else {
+    tmp14 = cResult[6];
+  }
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj4 = { variant: "text-sm/semibold", color: "text-strong", children: intl.string(ref(3718).ltkR4n) };
+    const Text = tmp(4833).Text;
+    intl = tmp(1127).intl;
+    const tmp21 = closure_7(Text, obj4);
+    cResult[7] = tmp21;
+    tmp18 = tmp21;
+  } else {
+    tmp18 = cResult[7];
+  }
+  if (cResult[8] !== tmp4.header) {
+    const obj5 = { style: tmp4.header, children: items2 };
+    items2 = [tmp14, tmp18];
+    const tmp25 = closure_8(closure_5, obj5);
+    cResult[8] = tmp4.header;
+    cResult[9] = tmp25;
+    tmp22 = tmp25;
+  } else {
+    tmp22 = cResult[9];
+  }
+  if (cResult[10] === tmp4.panel) {
+    let tmp26;
+    if (cResult[11] === text) {
+      tmp26 = cResult[12];
+    }
+    if (cResult[13] === tmp4.body) {
+      if (cResult[14] === tmp22) {
+        let tmp33;
+        if (cResult[15] === tmp26) {
+          tmp33 = cResult[16];
+        }
+        if (cResult[17] === tmp4.opaque) {
+          let tmp38;
+          if (cResult[18] === tmp33) {
+            tmp38 = cResult[19];
+          }
+          if (cResult[20] === tmp4.root) {
+            let tmp42;
+            if (cResult[21] === tmp38) {
+              tmp42 = cResult[22];
+            }
+            return tmp42;
+          }
+          const obj6 = { style: tmp4.root, children: tmp38 };
+          const tmp45 = closure_7(closure_5, obj6);
+          cResult[20] = tmp4.root;
+          cResult[21] = tmp38;
+          cResult[22] = tmp45;
+          tmp42 = tmp45;
+        }
+        const obj7 = { style: tmp4.opaque, children: tmp33 };
+        const tmp41 = closure_7(closure_5, obj7);
+        cResult[17] = tmp4.opaque;
+        cResult[18] = tmp33;
+        cResult[19] = tmp41;
+        tmp38 = tmp41;
+      }
+    }
+    const obj8 = { variant: "primary", shadow: "high", children: closure_8(closure_5, obj9) };
+    obj9 = { style: tmp4.body, children: items3 };
+    items3 = [tmp22, tmp26];
+    const Card = tmp(5918).Card;
+    const tmp37 = closure_7(Card, obj8);
+    cResult[13] = tmp4.body;
+    cResult[14] = tmp22;
+    cResult[15] = tmp26;
+    cResult[16] = tmp37;
+    tmp33 = tmp37;
+  }
+  if ("" !== text) {
+    const obj10 = {
+      ref,
+      style: tmp4.panel,
+      nestedScrollEnabled: true,
+      onContentSizeChange() {
+          const current = ref.current;
+          let scrollToEndResult;
+          if (current != null) {
+            scrollToEndResult = current.scrollToEnd({ animated: false });
+          }
+          return scrollToEndResult;
+        },
+      children: closure_7(ref(16346), obj11)
+    };
+    obj11 = { source: text };
+    tmp29 = closure_7(closure_4, obj10);
+  } else {
+    const obj12 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(ref(3718).rXPcUx) };
+    const Text2 = tmp(4833).Text;
+    intl2 = tmp(1127).intl;
+    tmp29 = closure_7(Text2, obj12);
+  }
+  cResult[10] = tmp4.panel;
+  cResult[11] = text;
+  cResult[12] = tmp29;
+  tmp26 = tmp29;
+}) : ((projectId) => {
   let Card;
   let intl;
   let intl2;
@@ -51,8 +217,8 @@ export default function VibegrationsThinkingOverlay(projectId) {
   const obj = projectId(504);
   const stateFromStores = obj.useStateFromStores(items, () => VibegrationsChatStore.getThinkingActivity(projectId), items1);
   let str;
-  const useVibegrationsRevealedText = projectId(16346).useVibegrationsRevealedText;
-  projectId(16346);
+  const useVibegrationsRevealedText = projectId(16348).useVibegrationsRevealedText;
+  projectId(16348);
   if (stateFromStores != null) {
     str = stateFromStores.text;
   }
@@ -65,13 +231,13 @@ export default function VibegrationsThinkingOverlay(projectId) {
   obj3 = { style: tmp.opaque, children: closure_7(Card, obj11) };
   const obj4 = { style: tmp.body, children: items3 };
   const obj5 = { style: tmp.header, children: items2 };
-  Card = tmp3(5919).Card;
-  const obj6 = { size: "xs", color: ref(576).colors.TEXT_BRAND };
-  const LightbulbIcon = tmp3(16057).LightbulbIcon;
+  Card = tmp3(5918).Card;
+  const obj6 = { size: "xs", color: ref(588).colors.TEXT_BRAND };
+  const LightbulbIcon = tmp3(16059).LightbulbIcon;
   items2 = [closure_7(LightbulbIcon, obj6), ];
-  const obj7 = { variant: "text-sm/semibold", color: "text-strong", children: intl.string(ref(3715).ltkR4n) };
-  const Text = tmp3(4832).Text;
-  intl = tmp3(1115).intl;
+  const obj7 = { variant: "text-sm/semibold", color: "text-strong", children: intl.string(ref(3718).ltkR4n) };
+  const Text = tmp3(4833).Text;
+  intl = tmp3(1127).intl;
   items2[1] = closure_7(Text, obj7);
   items3 = [closure_8(closure_5, obj5), ];
   const tmp10 = closure_8;
@@ -88,17 +254,20 @@ export default function VibegrationsThinkingOverlay(projectId) {
           }
           return scrollToEndResult;
         },
-      children: closure_7(ref(16344), obj9)
+      children: closure_7(ref(16346), obj9)
     };
     obj9 = { source: text };
     tmp8Result = tmp8(closure_4, obj8);
   } else {
-    const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(ref(3715).rXPcUx) };
-    const Text2 = tmp3(4832).Text;
-    intl2 = tmp3(1115).intl;
+    const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(ref(3718).rXPcUx) };
+    const Text2 = tmp3(4833).Text;
+    intl2 = tmp3(1127).intl;
     tmp8Result = tmp8(Text2, obj10);
   }
   items3[1] = tmp8Result;
   obj11 = { variant: "primary", shadow: "high", children: tmp10(closure_5, obj4) };
   return closure_7(closure_5, obj2);
-};
+});
+const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsThinkingOverlay.tsx");
+
+export default tmp5;

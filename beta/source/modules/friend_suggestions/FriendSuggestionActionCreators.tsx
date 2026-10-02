@@ -1,11 +1,11 @@
-// Module ID: 7076
-// Function ID: 7077
+// Module ID: 7080
+// Function ID: 7081
 // Name: FriendSuggestionActionCreators
-// Dependencies: [5, 1074, 1271, 573, 2]
+// Dependencies: [5, 1086, 1283, 585, 2]
 
-// Module 7076 (FriendSuggestionActionCreators)
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 7080 (FriendSuggestionActionCreators)
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -72,7 +72,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           let closure_2 = tmp19;

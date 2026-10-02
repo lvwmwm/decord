@@ -1,28 +1,29 @@
-// Module ID: 15454
-// Function ID: 15455
+// Module ID: 15442
+// Function ID: 15443
 // Name: useCollectiblesShopHeader
-// Dependencies: [19, 17, 1372, 1076, 1074, 5756, 7628, 21, 4836, 576, 11620, 4832, 1115, 504, 8316, 10682, 6961, 6603, 6554, 4800, 10564, 1981, 1241, 10678, 5759, 5039, 7624, 10553, 7363, 8236, 7358, 15455, 1485, 2]
-// Exports: default
+// Dependencies: [19, 17, 1378, 1088, 1086, 5757, 7632, 21, 4837, 588, 558, 576, 11506, 1127, 4833, 504, 8313, 10671, 6965, 6604, 6555, 4801, 10766, 1987, 1253, 10667, 5760, 5040, 7628, 10755, 7362, 8233, 7366, 15443, 1491, 2]
 
-// Module 15454 (useCollectiblesShopHeader)
+// Module 15442 (useCollectiblesShopHeader)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1076 */;
-import intl4 from "intl" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
-import QuestConstants from "QuestConstants" /* 5756 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import Constants2 from "Constants" /* 7628 */;
-import ShopIcon from "ShopIcon" /* 11620 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1088 */;
+import intl4 from "intl" /* 1127 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import QuestConstants from "QuestConstants" /* 5757 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
+import Constants2 from "Constants" /* 7632 */;
+import ShopIcon from "ShopIcon" /* 11506 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -32,29 +33,7 @@ let obj2;
 let obj3;
 let tmp;
 let unpackModuleId;
-const CheckmarkSmallIcon3 = tmp(6554);
-function CollectiblesShopHeaderTitle(currentScreen) {
-  let items;
-  let stringResult;
-  currentScreen = currentScreen.currentScreen;
-  const tmp = closure_12();
-  const obj = { style: tmp.headerTitleContainer, children: items };
-  items = [authStore(ShopIcon.ShopIcon, { size: "md", color: "icon-strong" }), ];
-  const obj2 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: stringResult };
-  const Heading = Text_Text.Heading;
-  const tmp2 = unpackModuleId;
-  const tmp3 = View;
-  const tmp4 = authStore;
-  if (currentScreen === constants.ORBS) {
-    const intl2 = tmp5(1115).intl;
-    stringResult = intl2.string(tmp5(1115).t.ElYQFS);
-  } else {
-    const intl = tmp5(1115).intl;
-    stringResult = intl.string(tmp5(1115).t.pWG4ze);
-  }
-  items[1] = tmp4(Heading, obj2);
-  return tmp2(tmp3, obj);
-}
+const CheckmarkSmallIcon3 = tmp(6555);
 function CollectiblesShopHeaderRight(currentScreen) {
   let constants2;
   let constants3;
@@ -67,12 +46,12 @@ function CollectiblesShopHeaderRight(currentScreen) {
   currentScreen = currentScreen.currentScreen;
   let balance;
   let tmp = closure_12();
-  let obj = currentScreen(balance[13]);
+  let obj = currentScreen(balance[15]);
   let items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser(), []);
-  let obj2 = currentScreen(balance[14]);
+  let obj2 = currentScreen(balance[16]);
   balance = obj2.useFetchVirtualCurrencyBalance().balance;
-  let obj3 = currentScreen(balance[15]);
+  let obj3 = currentScreen(balance[17]);
   const items1 = [currentScreen];
   const isEligibleForQuests = obj3.getIsEligibleForQuests();
   const items2 = [balance];
@@ -87,11 +66,11 @@ function CollectiblesShopHeaderRight(currentScreen) {
       label: intl.string(intl4.t["xNiB/O"]),
       action() {
         let items;
-        const obj = { analyticsLocations: items, analyticsSource: stateFromStores(balance[17]).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM, screen: constants.FEATURED_PAGE };
-        const openCollectiblesShopMobile = currentScreen(balance[16]).openCollectiblesShopMobile;
+        const obj = { analyticsLocations: items, analyticsSource: stateFromStores(balance[19]).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM, screen: constants.FEATURED_PAGE };
+        const openCollectiblesShopMobile = currentScreen(balance[18]).openCollectiblesShopMobile;
         items = [];
-        currentScreen(balance[16]);
-        items[0] = stateFromStores(balance[17]).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM;
+        currentScreen(balance[18]);
+        items[0] = stateFromStores(balance[19]).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM;
         const result = openCollectiblesShopMobile(obj);
       },
       trailingIndicator: CheckmarkSmallIcon
@@ -106,11 +85,11 @@ function CollectiblesShopHeaderRight(currentScreen) {
       label: intl2.string(intl4.t.RSyoZu),
       action() {
         let items;
-        const obj = { analyticsLocations: items, analyticsSource: stateFromStores(balance[17]).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM, screen: constants.SHOP_ALL };
-        const openCollectiblesShopMobile = currentScreen(balance[16]).openCollectiblesShopMobile;
+        const obj = { analyticsLocations: items, analyticsSource: stateFromStores(balance[19]).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM, screen: constants.SHOP_ALL };
+        const openCollectiblesShopMobile = currentScreen(balance[18]).openCollectiblesShopMobile;
         items = [];
-        currentScreen(balance[16]);
-        items[0] = stateFromStores(balance[17]).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM;
+        currentScreen(balance[18]);
+        items[0] = stateFromStores(balance[19]).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM;
         const result = openCollectiblesShopMobile(obj);
       },
       trailingIndicator: CheckmarkSmallIcon1
@@ -125,11 +104,11 @@ function CollectiblesShopHeaderRight(currentScreen) {
       label: intl3.string(intl4.t.EBYkzk),
       action() {
         let items;
-        const obj = { analyticsLocations: items, analyticsSource: stateFromStores(balance[17]).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM, screen: constants.ORBS };
-        const openCollectiblesShopMobile = currentScreen(balance[16]).openCollectiblesShopMobile;
+        const obj = { analyticsLocations: items, analyticsSource: stateFromStores(balance[19]).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM, screen: constants.ORBS };
+        const openCollectiblesShopMobile = currentScreen(balance[18]).openCollectiblesShopMobile;
         items = [];
-        currentScreen(balance[16]);
-        items[0] = stateFromStores(balance[17]).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM;
+        currentScreen(balance[18]);
+        items[0] = stateFromStores(balance[19]).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM;
         const result = openCollectiblesShopMobile(obj);
       },
       trailingIndicator: CheckmarkSmallIcon2
@@ -153,13 +132,13 @@ function CollectiblesShopHeaderRight(currentScreen) {
     obj2 = {
       buttonText: intl.string(intl4.t.SymzJC),
       onButtonPress() {
-        const obj = stateFromStores(balance[22]);
-        const obj2 = { type: "GO_TO_QUEST_HOME", source: stateFromStores(balance[17]).COLLECTIBLES_SHOP, balance };
+        const obj = stateFromStores(balance[24]);
+        const obj2 = { type: "GO_TO_QUEST_HOME", source: stateFromStores(balance[19]).COLLECTIBLES_SHOP, balance };
         obj.track(constants2.ORB_BALANCE_ACTION_SHEET_ACTION, obj2);
-        const obj3 = stateFromStores(balance[19]);
+        const obj3 = stateFromStores(balance[21]);
         obj3.hideActionSheet();
-        const obj4 = currentScreen(balance[23]);
-        const obj5 = { mergeExistingRoutes: true, filter: constants3.VIRTUAL_CURRENCY, fromContent: currentScreen(balance[24]).QuestContent.ORBS_BALANCE_MENU };
+        const obj4 = currentScreen(balance[25]);
+        const obj5 = { mergeExistingRoutes: true, filter: constants3.VIRTUAL_CURRENCY, fromContent: currentScreen(balance[26]).QuestContent.ORBS_BALANCE_MENU };
         obj4.openQuestHome(obj5);
       }
     };
@@ -169,16 +148,16 @@ function CollectiblesShopHeaderRight(currentScreen) {
     obj3 = {
       buttonText: intl2.string(intl4.t["/g10LC"]),
       onButtonPress() {
-        const obj = stateFromStores(balance[22]);
-        const obj2 = { type: "GO_BACK", source: stateFromStores(balance[17]).COLLECTIBLES_SHOP, balance };
+        const obj = stateFromStores(balance[24]);
+        const obj2 = { type: "GO_BACK", source: stateFromStores(balance[19]).COLLECTIBLES_SHOP, balance };
         obj.track(constants2.ORB_BALANCE_ACTION_SHEET_ACTION, obj2);
-        const obj3 = stateFromStores(balance[19]);
+        const obj3 = stateFromStores(balance[21]);
         obj3.hideActionSheet();
       }
     };
     intl2 = intl4.intl;
     openLazy(() => {
-      const promise = currentScreen(balance[21])(balance[20], balance.paths);
+      const promise = currentScreen(balance[23])(balance[22], balance.paths);
       return promise.then((result) => result.default);
     }, "BalanceWidgetActionSheet", obj);
   }, items2);
@@ -207,7 +186,7 @@ function CollectiblesShopHeaderRight(currentScreen) {
       tmp9(obj4);
     }
   }, items3);
-  const tmp2Result = currentScreen(balance[27]);
+  const tmp2Result = currentScreen(balance[29]);
   const tmp11 = closure_11;
   const tmp12 = View;
   if (isEligibleForQuests) {
@@ -222,30 +201,30 @@ function CollectiblesShopHeaderRight(currentScreen) {
   items4 = [tmp13Result, , ];
   let tmp16Result = null != stateFromStores;
   if (tmp16Result) {
-    const obj7 = { accessibilityLabel: intl.string(currentScreen(balance[12]).t["7lZ31J"]), variant: "tertiary", size: "sm", icon: tmp16(currentScreen(balance[29]).HeartIcon, { size: "sm", color: "redesign-button-tertiary-text" }), onPress: callback1 };
-    let IconButton = tmp2(tmp3[28]).IconButton;
-    intl = tmp2(tmp3[12]).intl;
+    const obj7 = { accessibilityLabel: intl.string(currentScreen(balance[13]).t["7lZ31J"]), variant: "tertiary", size: "sm", icon: tmp16(currentScreen(balance[31]).HeartIcon, { size: "sm", color: "redesign-button-tertiary-text" }), onPress: callback1 };
+    let IconButton = tmp2(tmp3[30]).IconButton;
+    intl = tmp2(tmp3[13]).intl;
     tmp16Result = tmp16(IconButton, obj7);
   }
   items4[1] = tmp16Result;
   const obj8 = {
     items: memo,
     align: "below",
-    title: intl2.string(currentScreen(balance[12]).t.nSFuC0),
+    title: intl2.string(currentScreen(balance[13]).t.nSFuC0),
     keyboardShouldPersistTaps: "handled",
     children(ref) {
       let intl;
       ref = ref.ref;
       const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-      const obj = { ref, variant: "tertiary", accessibilityLabel: intl.string(currentScreen(balance[12]).t.nSFuC0), size: "sm", icon: closure_1_10(currentScreen(balance[31]).MenuIcon, { size: "sm", color: "redesign-button-tertiary-text" }) };
-      const IconButton = currentScreen(balance[28]).IconButton;
+      const obj = { ref, variant: "tertiary", accessibilityLabel: intl.string(currentScreen(balance[13]).t.nSFuC0), size: "sm", icon: closure_1_10(currentScreen(balance[33]).MenuIcon, { size: "sm", color: "redesign-button-tertiary-text" }) };
+      const IconButton = currentScreen(balance[30]).IconButton;
       const merged1 = Object.assign(merged);
-      intl = currentScreen(balance[12]).intl;
+      intl = currentScreen(balance[13]).intl;
       return closure_1_10(IconButton, obj);
     }
   };
-  const ContextMenu = tmp2(tmp3[30]).ContextMenu;
-  intl2 = tmp2(tmp3[12]).intl;
+  const ContextMenu = tmp2(tmp3[32]).ContextMenu;
+  intl2 = tmp2(tmp3[13]).intl;
   items4[2] = tmp16(ContextMenu, obj8, currentScreen);
   return tmp11(tmp12, obj4);
 }
@@ -261,22 +240,149 @@ obj2 = { width: "100%", flexDirection: "row", alignItems: "center", marginTop: n
 createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_8 };
 let closure_12 = createStyles(obj);
-let result = size.fileFinishedImporting("modules/collectibles/native/useCollectiblesShopHeader.tsx");
-
-export default function useCollectiblesShopHeader() {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentScreen) => {
+  let first;
+  let items;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(9);
+  currentScreen = currentScreen.currentScreen;
+  const tmp4 = closure_12();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp7 = authStore(ShopIcon.ShopIcon, { size: "md", color: "icon-strong" });
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== currentScreen) {
+    let stringResult;
+    if (currentScreen === constants.ORBS) {
+      const intl2 = tmp(1127).intl;
+      stringResult = intl2.string(tmp(1127).t.ElYQFS);
+    } else {
+      const intl = tmp(1127).intl;
+      stringResult = intl.string(tmp(1127).t.pWG4ze);
+    }
+    cResult[1] = currentScreen;
+    cResult[2] = stringResult;
+    tmp8 = stringResult;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === tmp4.headerTitle) {
+    let tmp11;
+    if (cResult[4] === tmp8) {
+      tmp11 = cResult[5];
+    }
+    if (cResult[6] === tmp4.headerTitleContainer) {
+      let tmp13;
+      if (cResult[7] === tmp11) {
+        tmp13 = cResult[8];
+      }
+      return tmp13;
+    }
+    const obj2 = { style: tmp4.headerTitleContainer, children: items };
+    items = [first, tmp11];
+    const tmp16 = unpackModuleId(View, obj2);
+    cResult[6] = tmp4.headerTitleContainer;
+    cResult[7] = tmp11;
+    cResult[8] = tmp16;
+    tmp13 = tmp16;
+  }
+  const obj3 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp4.headerTitle, children: tmp8 };
+  const tmp12 = authStore(Text_Text.Heading, obj3);
+  cResult[3] = tmp4.headerTitle;
+  cResult[4] = tmp8;
+  cResult[5] = tmp12;
+  tmp11 = tmp12;
+}) : ((currentScreen) => {
+  let items;
+  let stringResult;
+  currentScreen = currentScreen.currentScreen;
+  const tmp = closure_12();
+  const obj = { style: tmp.headerTitleContainer, children: items };
+  items = [authStore(ShopIcon.ShopIcon, { size: "md", color: "icon-strong" }), ];
+  const obj2 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: stringResult };
+  const Heading = Text_Text.Heading;
+  const tmp2 = unpackModuleId;
+  const tmp3 = View;
+  const tmp4 = authStore;
+  if (currentScreen === constants.ORBS) {
+    const intl2 = tmp5(1127).intl;
+    stringResult = intl2.string(tmp5(1127).t.ElYQFS);
+  } else {
+    const intl = tmp5(1127).intl;
+    stringResult = intl.string(tmp5(1127).t.pWG4ze);
+  }
+  items[1] = tmp4(Heading, obj2);
+  return tmp2(tmp3, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let currentScreen;
+  let tmp4;
+  let obj = currentScreen(576);
+  const cResult = obj.c(6);
+  const tmp = currentScreen;
+  if (cResult[0] !== arg0) {
+    let obj2 = arg0;
+    if (undefined === arg0) {
+      obj2 = {};
+    }
+    cResult[0] = arg0;
+    cResult[1] = obj2;
+    tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  currentScreen = tmp4.currentScreen;
+  const tmpResult = tmp(1491);
+  navigation = tmpResult.useNavigation();
+  if (cResult[2] === currentScreen) {
+    let tmp6;
+    let tmp7;
+    if (cResult[3] === navigation) {
+      tmp6 = cResult[4];
+      tmp7 = cResult[5];
+    }
+    const layoutEffect = react.useLayoutEffect(tmp6, tmp7);
+  }
+  const fn = function c() {
+    let obj = {
+      headerTitle() {
+        const obj = { currentScreen };
+        return closure_2_10(closure_2_13, obj);
+      },
+      headerRight() {
+        const obj = { currentScreen };
+        return closure_2_10(CollectiblesShopHeaderRight, obj);
+      }
+    };
+    navigation.setOptions(obj);
+  };
+  const items = [navigation, currentScreen];
+  cResult[2] = currentScreen;
+  cResult[3] = navigation;
+  cResult[4] = fn;
+  cResult[5] = items;
+  tmp7 = items;
+  tmp6 = fn;
+}) : (() => {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
   const currentScreen = obj.currentScreen;
-  const obj2 = currentScreen(1485);
+  const obj2 = currentScreen(1491);
   navigation = obj2.useNavigation();
   const items = [navigation, currentScreen];
   const layoutEffect = react.useLayoutEffect(() => {
     let obj = {
       headerTitle() {
         const obj = { currentScreen };
-        return closure_2_10(CollectiblesShopHeaderTitle, obj);
+        return closure_2_10(closure_2_13, obj);
       },
       headerRight() {
         const obj = { currentScreen };
@@ -285,4 +391,7 @@ export default function useCollectiblesShopHeader() {
     };
     navigation.setOptions(obj);
   }, items);
-};
+});
+let result = size.fileFinishedImporting("modules/collectibles/native/useCollectiblesShopHeader.tsx");
+
+export default tmp4;

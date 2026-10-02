@@ -1,17 +1,17 @@
-// Module ID: 6946
-// Function ID: 6947
+// Module ID: 6950
+// Function ID: 6951
 // Name: GuildScheduledEventStore
-// Dependencies: [502, 2108, 2051, 4464, 12, 11, 504, 573, 2]
+// Dependencies: [502, 2111, 2057, 4467, 12, 11, 504, 585, 2]
 // Exports: eventScheduledToStartWithin, isEventUpcoming, isGuildEventEnded, isGuildScheduledEventActive, scheduledEventSort
 
-// Module 6946 (GuildScheduledEventStore)
+// Module 6950 (GuildScheduledEventStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4464 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4467 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
 import size from "module_2" /* 2 */;
 
 let closure_13;
@@ -195,8 +195,8 @@ const StaticGuildEventIndexes = {
   GUILD_EVENT_ACTIVE(guild_id) {
     return "" + guild_id + "-" + obj.EVENT_ACTIVE;
   },
-  GUILD_EVENT_UPCOMING(guild_id) {
-    return "" + guild_id + "-" + obj.EVENT_UPCOMING;
+  GUILD_EVENT_UPCOMING(id) {
+    return "" + id + "-" + obj.EVENT_UPCOMING;
   },
   CHANNEL_EVENT(channel_id) {
     return "" + channel_id + "-" + obj.EVENT;
@@ -285,12 +285,12 @@ class GuildScheduledEventStore extends Store {
   getRsvpVersion() {
     return closure_9;
   }
-  getRsvp(id, c1, id2) {
+  getRsvp(id, nextRecurrenceIdInEvent, id2) {
     if (null == id) {
       return null;
     } else {
-      let tmp = c1;
-      if (c1 == null) {
+      let tmp = nextRecurrenceIdInEvent;
+      if (nextRecurrenceIdInEvent == null) {
         tmp = SERIES;
       }
       let tmp4;
@@ -302,10 +302,10 @@ class GuildScheduledEventStore extends Store {
       return tmp4;
     }
   }
-  isInterestedInEventRecurrence(id, c1) {
+  isInterestedInEventRecurrence(id, nextRecurrenceIdInEvent) {
     id = AuthenticationStore.getId();
     const rsvp = this.getRsvp(id, null, id);
-    const rsvp1 = this.getRsvp(id, c1, id);
+    const rsvp1 = this.getRsvp(id, nextRecurrenceIdInEvent, id);
     let response;
     if (rsvp != null) {
       response = rsvp.response;

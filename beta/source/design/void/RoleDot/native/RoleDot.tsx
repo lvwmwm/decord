@@ -1,19 +1,20 @@
-// Module ID: 13665
-// Function ID: 13666
+// Module ID: 13667
+// Function ID: 13668
 // Name: RoleDot
-// Dependencies: [19, 17, 21, 4836, 576, 1364, 5288, 5310, 5293, 1370, 2]
-// Exports: RoleDot
+// Dependencies: [19, 17, 21, 4837, 588, 1370, 558, 576, 5289, 5311, 5292, 1376, 2]
 
-// Module 13665 (RoleDot)
+// Module 13667 (RoleDot)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import useFontScale from "useFontScale" /* 5288 */;
-import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 5310 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import useFontScale from "useFontScale" /* 5289 */;
+import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 5311 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -21,8 +22,8 @@ let hasOwnProperty;
 let obj2;
 let obj3;
 let obj4;
-let tmp5;
-const LinearGradientDefault = tmp5(5293);
+let tmp7;
+const LinearGradientDefault = tmp7(5292);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -32,10 +33,208 @@ createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.TEXT_DEFAULT, borderRadius: nativeDefault.radii.md };
 obj4 = { borderRadius: nativeDefault.radii.md, opacity: 0.4 };
 let closure_6 = createStyles(obj);
-let size = size_mod;
-let result = size.fileFinishedImporting("design/void/RoleDot/native/RoleDot.tsx");
-
-export const RoleDot = function RoleDot(background) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let background;
+  let color;
+  let colors;
+  let containerStyles;
+  let items1;
+  let items2;
+  let items3;
+  let items5;
+  let result1;
+  let result2;
+  let size1;
+  const obj = react2;
+  const cResult = obj.c(35);
+  ({ color, colors, size, background, containerStyles } = guildId);
+  let str = "normal";
+  guildId = guildId.guildId;
+  if (undefined !== size) {
+    str = size;
+  }
+  const tmp4 = undefined === background || background;
+  const tmp5 = closure_6();
+  const tmpResult = useFontScale;
+  const fontScale = tmpResult.useFontScale();
+  const tmp8 = useHasEnhancedRoleColorsDefault(guildId, null);
+  if (null == color) {
+    if (null == colors) {
+      return null;
+    }
+  }
+  if (cResult[0] === fontScale) {
+    let tmp9;
+    if (cResult[1] === str) {
+      tmp9 = cResult[2];
+    }
+    if (cResult[3] === containerStyles) {
+      if (cResult[4] === tmp9.container) {
+        let tmp15;
+        if (cResult[5] === tmp5.container) {
+          tmp15 = cResult[6];
+        }
+        let backgroundColor = null;
+        if (tmp4) {
+          backgroundColor = tmp5.backgroundColor;
+        }
+        if (cResult[7] === tmp9.background) {
+          if (cResult[8] === tmp5.background) {
+            let tmp17;
+            let tmp18;
+            let tmp20;
+            if (cResult[9] === backgroundColor) {
+              tmp17 = cResult[10];
+            }
+            if (cResult[11] !== tmp5.borderBase) {
+              const items = [tmp5.borderBase];
+              cResult[11] = tmp5.borderBase;
+              cResult[12] = items;
+              tmp18 = items;
+            } else {
+              tmp18 = cResult[12];
+            }
+            if (cResult[13] !== color) {
+              const obj2 = { backgroundColor: color };
+              cResult[13] = color;
+              cResult[14] = obj2;
+              tmp20 = obj2;
+            } else {
+              tmp20 = cResult[14];
+            }
+            if (cResult[15] === tmp9.border) {
+              if (cResult[16] === tmp5.borderColor) {
+                let tmp21;
+                if (cResult[17] === tmp20) {
+                  tmp21 = cResult[18];
+                }
+                if (cResult[19] === tmp21) {
+                  let tmp25;
+                  let tmp29;
+                  if (cResult[20] === tmp18) {
+                    tmp25 = cResult[21];
+                  }
+                  if (cResult[22] === color) {
+                    if (cResult[23] === colors) {
+                      if (cResult[24] === tmp9.dot) {
+                        if (cResult[25] === tmp8) {
+                          if (cResult[26] === tmp5.dot) {
+                            tmp29 = cResult[27];
+                          }
+                          if (cResult[28] === tmp25) {
+                            if (cResult[29] === tmp29) {
+                              let tmp36;
+                              if (cResult[30] === tmp17) {
+                                tmp36 = cResult[31];
+                              }
+                              if (cResult[32] === tmp36) {
+                                let tmp40;
+                                if (cResult[33] === tmp15) {
+                                  tmp40 = cResult[34];
+                                }
+                                return tmp40;
+                              }
+                              const obj3 = { style: tmp15, children: tmp36 };
+                              const tmp43 = React3(View, obj3);
+                              cResult[32] = tmp36;
+                              cResult[33] = tmp15;
+                              cResult[34] = tmp43;
+                              tmp40 = tmp43;
+                            }
+                          }
+                          const obj4 = { style: tmp17, children: items1 };
+                          items1 = [tmp25, tmp29];
+                          const tmp39 = hasOwnProperty(View, obj4);
+                          cResult[28] = tmp25;
+                          cResult[29] = tmp29;
+                          cResult[30] = tmp17;
+                          cResult[31] = tmp39;
+                          tmp36 = tmp39;
+                        }
+                      }
+                    }
+                  }
+                  if (tmp8) {
+                    if (null != colors) {
+                      let tmp30Result;
+                      if (null != colors.secondaryColor) {
+                        const obj5 = { colors: items2.filter(GlobalUtils.isNotNullish), start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, style: items3 };
+                        items2 = [, , ];
+                        ({ primaryColor: arr6[0], secondaryColor: arr6[1], tertiaryColor: arr6[2] } = colors);
+                        items3 = [tmp5.dot, tmp9.dot];
+                        const tmp7Result = LinearGradientDefault;
+                        tmp30Result = React3(tmp7Result, obj5);
+                      }
+                      cResult[22] = color;
+                      cResult[23] = colors;
+                      cResult[24] = tmp9.dot;
+                      cResult[25] = tmp8;
+                      cResult[26] = tmp5.dot;
+                      cResult[27] = tmp30Result;
+                      tmp29 = tmp30Result;
+                    }
+                  }
+                  const items4 = [tmp5.dot, tmp9.dot, ];
+                  const obj6 = { style: items4 };
+                  const obj7 = { backgroundColor: color };
+                  items4[2] = obj7;
+                  tmp30Result = React3(View, obj6);
+                }
+                const obj8 = { style: tmp18, children: tmp21 };
+                const tmp28 = React3(View, obj8);
+                cResult[19] = tmp21;
+                cResult[20] = tmp18;
+                cResult[21] = tmp28;
+                tmp25 = tmp28;
+              }
+            }
+            const obj9 = { style: items5 };
+            items5 = [tmp5.borderColor, tmp9.border, tmp20];
+            const tmp24 = React3(View, obj9);
+            cResult[15] = tmp9.border;
+            cResult[16] = tmp5.borderColor;
+            cResult[17] = tmp20;
+            cResult[18] = tmp24;
+            tmp21 = tmp24;
+          }
+        }
+        const items6 = [tmp5.background, backgroundColor, tmp9.background];
+        cResult[7] = tmp9.background;
+        cResult[8] = tmp5.background;
+        cResult[9] = backgroundColor;
+        cResult[10] = items6;
+        tmp17 = items6;
+      }
+    }
+    const items7 = [tmp5.container, tmp9.container, containerStyles];
+    cResult[3] = containerStyles;
+    cResult[4] = tmp9.container;
+    cResult[5] = tmp5.container;
+    cResult[6] = items7;
+    tmp15 = items7;
+  }
+  let num = 16;
+  if ("normal" === str) {
+    num = 20;
+  }
+  const result = num * fontScale;
+  const obj10 = { paddingRight: 2 * fontScale, paddingTop: result1, height: result };
+  const tmpResult2 = PlatformUtils;
+  if (tmpResult2.isAndroid()) {
+    result1 = 3 * fontScale;
+  } else {
+    result1 = 2 * fontScale;
+  }
+  const sum = result / 2 + 2;
+  const diff = sum - 2;
+  const obj11 = { container: obj10, background: { height: result, width: result, padding: (result - sum) / 2 }, border: { height: sum, width: sum }, dot: size1 };
+  size1 = { height: diff, width: diff, top: result2, left: result2 };
+  result2 = diff / 2;
+  cResult[0] = fontScale;
+  cResult[1] = str;
+  cResult[2] = obj11;
+  tmp9 = obj11;
+}) : ((background) => {
   let color;
   let colors;
   let containerStyles;
@@ -117,4 +316,8 @@ export const RoleDot = function RoleDot(background) {
   }
   const items7 = [tmp.dot, size2, { backgroundColor: color }];
   tmp12Result = tmp12(tmp13, { style: items7 });
-};
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("design/void/RoleDot/native/RoleDot.tsx");
+
+export const RoleDot = tmp5;

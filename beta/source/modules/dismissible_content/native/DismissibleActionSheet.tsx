@@ -1,27 +1,81 @@
-// Module ID: 10089
-// Function ID: 10090
+// Module ID: 10126
+// Function ID: 10127
 // Name: DismissibleActionSheet
-// Dependencies: [19, 5298, 4800, 2]
-// Exports: DismissibleActionSheet
+// Dependencies: [19, 558, 576, 4801, 5297, 2]
 
-// Module 10089 (DismissibleActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import useMountEffectDefault from "useMountEffect" /* 5298 */;
+// Module 10126 (DismissibleActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import useMountEffectDefault from "useMountEffect" /* 5297 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let importDefault;
+const require = globalThis.__r;
+let _require;
 
-const result = size.fileFinishedImporting("modules/dismissible_content/native/DismissibleActionSheet.tsx");
-
-export const DismissibleActionSheet = function DismissibleActionSheet(arg0) {
-  let closure_0;
-  importDefault = arg0;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((actionSheetKey) => {
+  let tmp3;
+  _require = actionSheetKey;
+  let obj = require("react");
+  const cResult = obj.c(6);
+  if (cResult[0] !== actionSheetKey) {
+    const fn = function o() {
+      const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+      let obj = {
+        markAsDismissed(arg0) {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet(actionSheetKey.actionSheetKey);
+          actionSheetKey.markAsDismissed(arg0);
+        }
+      };
+      ActionSheetActionCreatorsDefault;
+      const importerResult = actionSheetKey.importer();
+      actionSheetKey = actionSheetKey.actionSheetKey;
+      const merged = Object.assign(actionSheetKey);
+      openLazy(importerResult, actionSheetKey, obj);
+    };
+    cResult[0] = actionSheetKey;
+    cResult[1] = fn;
+    tmp3 = fn;
+  } else {
+    tmp3 = cResult[1];
+  }
+  useMountEffectDefault(tmp3);
+  if (cResult[2] === actionSheetKey.actionSheetKey) {
+    let tmp5;
+    let tmp6;
+    if (cResult[3] === actionSheetKey.hideSheetOnUnmount) {
+      tmp5 = cResult[4];
+      tmp6 = cResult[5];
+    }
+    const effect = react.useEffect(tmp5, tmp6);
+    return null;
+  }
+  const fn2 = function h() {
+    let hideSheetOnUnmount;
+    return () => {
+      const tmp2 = null != hideSheetOnUnmount.hideSheetOnUnmount && hideSheetOnUnmount.hideSheetOnUnmount;
+      if (tmp2) {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet(hideSheetOnUnmount.actionSheetKey);
+      }
+    };
+  };
+  const items = [, ];
+  ({ actionSheetKey: arr[0], hideSheetOnUnmount: arr[1] } = actionSheetKey);
+  cResult[2] = actionSheetKey.actionSheetKey;
+  cResult[3] = actionSheetKey.hideSheetOnUnmount;
+  cResult[4] = fn2;
+  cResult[5] = items;
+  tmp6 = items;
+  tmp5 = fn2;
+}) : ((arg0) => {
+  let closure_0 = arg0;
   const tmp = useMountEffectDefault(() => {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     let obj = {
       markAsDismissed(arg0) {
-        const obj = closure_0(dependencyMap[2]);
+        const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet(closure_1_0.actionSheetKey);
         closure_1_0.markAsDismissed(arg0);
       }
@@ -34,12 +88,18 @@ export const DismissibleActionSheet = function DismissibleActionSheet(arg0) {
   });
   const items = [, ];
   ({ actionSheetKey: arr[0], hideSheetOnUnmount: arr[1] } = arg0);
-  const effect = react.useEffect(() => () => {
-    const tmp2 = null != closure_1_0.hideSheetOnUnmount && closure_1_0.hideSheetOnUnmount;
-    if (tmp2) {
-      const obj = closure_0(dependencyMap[2]);
-      obj.hideActionSheet(closure_1_0.actionSheetKey);
-    }
+  const effect = react.useEffect(() => {
+    let hideSheetOnUnmount;
+    return () => {
+      const tmp2 = null != hideSheetOnUnmount.hideSheetOnUnmount && hideSheetOnUnmount.hideSheetOnUnmount;
+      if (tmp2) {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet(hideSheetOnUnmount.actionSheetKey);
+      }
+    };
   }, items);
   return null;
-};
+});
+const result = size.fileFinishedImporting("modules/dismissible_content/native/DismissibleActionSheet.tsx");
+
+export const DismissibleActionSheet = tmp2;

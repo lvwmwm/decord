@@ -1,26 +1,28 @@
-// Module ID: 9205
-// Function ID: 9206
+// Module ID: 9171
+// Function ID: 9172
 // Name: GuildTag
-// Dependencies: [19, 17, 1372, 7386, 21, 4836, 576, 1364, 1115, 4832, 5435, 504, 7610, 4800, 9206, 1981, 2]
+// Dependencies: [19, 17, 1378, 7390, 21, 4837, 588, 1370, 558, 576, 1127, 4833, 5436, 504, 7614, 4801, 9172, 1987, 2]
 
-// Module 9205 (GuildTag)
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import GuildTagConstants from "GuildTagConstants" /* 7386 */;
-import GuildTagUtils from "GuildTagUtils" /* 7610 */;
+// Module 9171 (GuildTag)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import GuildTagConstants from "GuildTagConstants" /* 7390 */;
+import GuildTagUtils from "GuildTagUtils" /* 7614 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let primaryGuild;
+let guildBadge, primaryGuild;
 
 let c10;
 let c9;
@@ -49,7 +51,53 @@ if (PlatformUtils.isAndroid()) {
   str = "center";
 }
 let closure_11 = createStyles(obj);
-const memoResult = react.memo((arg0) => {
+const memo = react.memo;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let source;
+  const obj = react2;
+  const cResult = obj.c(6);
+  ({ source, size } = arg0);
+  if (undefined === size) {
+    size = GuildTagBadgeSize.SIZE_12;
+  }
+  let tmp5 = null;
+  if (null != source) {
+    let first;
+    let tmp9;
+    const _Symbol = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(intl2.t.HHYPgJ);
+      cResult[0] = stringResult;
+      first = stringResult;
+    } else {
+      first = cResult[0];
+    }
+    if (cResult[1] !== size) {
+      const size1 = { width: size, height: size };
+      cResult[1] = size;
+      cResult[2] = size1;
+      tmp9 = size1;
+    } else {
+      tmp9 = cResult[2];
+    }
+    if (cResult[3] === source) {
+      let tmp10;
+      if (cResult[4] === tmp9) {
+        tmp10 = cResult[5];
+      }
+      tmp5 = tmp10;
+    }
+    const obj2 = { source, alt: first, style: tmp9 };
+    const tmp13 = metroImportAll(React3, obj2);
+    cResult[3] = source;
+    cResult[4] = tmp9;
+    cResult[5] = tmp13;
+    tmp10 = tmp13;
+  }
+  return tmp5;
+}) : ((arg0) => {
   let intl;
   let size1;
   let source;
@@ -65,8 +113,122 @@ const memoResult = react.memo((arg0) => {
     tmp2 = metroImportAll(React3, obj);
   }
   return tmp2;
-});
-const memoResult1 = react.memo((textVariant) => {
+}));
+const memo2 = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((guildBadge) => {
+  let containerStyles;
+  let disabled;
+  let guildTag;
+  let items;
+  let items1;
+  let obj3;
+  let onPress;
+  let textColor;
+  let textStyle;
+  let textVariant;
+  let tmp = guildTag;
+  let tmp2 = textStyle;
+  let obj = guildTag(textStyle[9]);
+  const cResult = obj.c(14);
+  ({ containerStyles, guildTag } = guildBadge);
+  guildBadge = guildBadge.guildBadge;
+  ({ onPress, disabled, textVariant, textColor, textStyle } = guildBadge);
+  let SIZE_12 = guildBadge.badgeSize;
+  let tmp4 = undefined !== disabled && disabled;
+  let str = "text-xs/semibold";
+  if (undefined !== textVariant) {
+    str = textVariant;
+  }
+  let str2 = "text-default";
+  if (undefined !== textColor) {
+    str2 = textColor;
+  }
+  if (undefined === SIZE_12) {
+    SIZE_12 = GuildTagBadgeSize.SIZE_12;
+  }
+  const tmp6 = closure_11();
+  const tag = tmp6;
+  if (cResult[0] === SIZE_12) {
+    if (cResult[1] === guildBadge) {
+      if (cResult[2] === guildTag) {
+        if (cResult[3] === tmp6.tag) {
+          if (cResult[4] === str2) {
+            if (cResult[5] === textStyle) {
+              let tmp7;
+              let tmp12;
+              if (cResult[6] === str) {
+                tmp7 = cResult[7];
+              }
+              if (cResult[8] === containerStyles) {
+                if (cResult[9] === tmp4) {
+                  if (cResult[10] === onPress) {
+                    if (cResult[11] === tmp7) {
+                      let tmp8;
+                      if (cResult[12] === tmp6.container) {
+                        tmp8 = cResult[13];
+                      }
+                      return tmp8;
+                    }
+                  }
+                }
+              }
+              if (null != onPress) {
+                let obj2 = { onPress, style: items, disabled: tmp4, accessibilityRole: "button", accessibilityState: obj3, children: tmp7() };
+                items = [tmp6.container, containerStyles];
+                obj3 = { disabled: tmp4 };
+                const PressableHighlight = tmp(tmp2[12]).PressableHighlight;
+                tmp12 = closure_8(PressableHighlight, obj2);
+              } else {
+                let obj4 = { style: items1, children: tmp7() };
+                items1 = [tmp6.container, containerStyles];
+                tmp12 = closure_8(SIZE_12, obj4);
+              }
+              cResult[8] = containerStyles;
+              cResult[9] = tmp4;
+              cResult[10] = onPress;
+              cResult[11] = tmp7;
+              cResult[12] = tmp6.container;
+              cResult[13] = tmp12;
+              tmp8 = tmp12;
+            }
+          }
+        }
+      }
+    }
+  }
+  const fn = function l() {
+    let items;
+    let items1;
+    let obj3;
+    let tmp4 = guildBadge;
+    const tmp = authStore;
+    const tmp2 = React4;
+    if (null != guildBadge) {
+      tmp4 = tmp3;
+      if (typeof guildBadge === "string") {
+        const obj2 = { source: obj3, size: SIZE_12 };
+        obj3 = { uri: guildBadge };
+        tmp4 = metroImportAll(memoResult, obj2);
+      }
+    }
+    const obj = { children: items };
+    items = [tmp4, ];
+    const obj4 = { variant: str, color: str2, lineClamp: 1, ellipsizeMode: "tail", style: items1, children: guildTag };
+    items1 = [tag.tag, textStyle];
+    items[1] = metroImportAll(Text_Text.Text, obj4);
+    return tmp(tmp2, obj);
+  };
+  cResult[0] = SIZE_12;
+  cResult[1] = guildBadge;
+  cResult[2] = guildTag;
+  cResult[3] = tmp6.tag;
+  cResult[4] = str2;
+  cResult[5] = textStyle;
+  cResult[6] = str;
+  cResult[7] = fn;
+  tmp7 = fn;
+}) : ((textVariant) => {
   let badgeSize;
   let children;
   let closure_4;
@@ -132,8 +294,8 @@ const memoResult1 = react.memo((textVariant) => {
     tmp5 = closure_8(badgeSize, obj);
   }
   return tmp5;
-});
-const memoResult2 = react.memo((primaryGuild) => {
+}));
+const memoResult1 = react.memo((primaryGuild) => {
   let guildId;
   let tag;
   let tmp13;
@@ -152,7 +314,7 @@ const memoResult2 = react.memo((primaryGuild) => {
   const merged = Object.assign(primaryGuild, Object.assign({ primaryGuild: 0, userId: 0, disabledTooltip: 0, badgeSize: 0 }));
   guildId = undefined;
   const tmp4 = guildId;
-  let obj = primaryGuild(guildId[11]);
+  let obj = primaryGuild(guildId[13]);
   const items = [UserStore];
   const items1 = [userId, primaryGuild];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
@@ -174,11 +336,11 @@ const memoResult2 = react.memo((primaryGuild) => {
     tmp8Result = null;
     if (null != tag) {
       const obj2 = { guildTag: tag, guildBadge: tmp3Result.getGuildTagBadgeUrl(guildId, badge, SIZE_12), badgeSize: SIZE_12, onPress: tmp13 };
-      tmp3Result = tmp3(tmp4[12]);
+      tmp3Result = tmp3(tmp4[14]);
       const merged1 = Object.assign(merged);
       tmp13 = undefined;
       const tmp8 = closure_8;
-      const tmp9 = memoResult1;
+      const tmp9 = closure_13;
       if (!flag) {
         tmp13 = tmp6;
       }
@@ -190,6 +352,6 @@ const memoResult2 = react.memo((primaryGuild) => {
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_tag/native/GuildTag.tsx");
 
-export default memoResult2;
+export default memoResult1;
 export const GuildTagBadge = memoResult;
-export const BaseGuildTagChiplet = memoResult1;
+export const BaseGuildTagChiplet = memo2Result;

@@ -1,55 +1,64 @@
-// Module ID: 11565
-// Function ID: 11566
+// Module ID: 11438
+// Function ID: 11439
 // Name: AppLauncherHomeScreen
-// Dependencies: [32, 19, 17, 2044, 8591, 4835, 11555, 4469, 11526, 1484, 1074, 2042, 21, 576, 11559, 4836, 4832, 1115, 11538, 8590, 9575, 7304, 5917, 11533, 1397, 10456, 11566, 8933, 504, 6943, 11567, 5899, 8370, 11568, 11542, 6364, 1613, 11569, 7715, 6470, 10785, 1479, 8712, 8782, 11571, 11570, 11572, 11573, 11575, 11576, 11534, 6941, 11577, 12, 5016, 6459, 11579, 11580, 8230, 1249, 4654, 2029, 11581, 11582, 11584, 6471, 11586, 1370, 11592, 11593, 11595, 11598, 11599, 11560, 11600, 11521, 11601, 11604, 8789, 11553, 8720, 11605, 11590, 11606, 1385, 11607, 11608, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 2050, 8588, 4836, 11431, 4472, 11402, 1490, 1086, 2048, 21, 588, 11435, 4837, 558, 576, 4833, 1127, 11414, 8587, 11439, 7308, 5916, 11409, 1403, 10491, 11452, 8927, 504, 6947, 11453, 5896, 11454, 11418, 8367, 6361, 1619, 11455, 7719, 6471, 10749, 1485, 8707, 8777, 11410, 1376, 11456, 6945, 11457, 11458, 11459, 11461, 11462, 11463, 12, 5017, 6459, 11465, 11466, 1261, 8227, 4656, 2035, 11467, 11468, 11470, 6472, 11472, 11478, 11479, 11481, 11484, 11485, 11436, 11486, 11397, 11487, 11490, 8784, 11429, 8715, 11491, 11476, 11492, 1391, 11493, 11494, 2]
 
-// Module 11565 (AppLauncherHomeScreen)
+// Module 11438 (AppLauncherHomeScreen)
 import _modDef12 from "module_12" /* 12 */;
-import nativeDefault from "native" /* 576 */;
-import intl4 from "intl" /* 1115 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import dismissible_content from "dismissible_content" /* 2029 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4654 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6364 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6943 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7304 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 8590 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8712 */;
-import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 8782 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 8933 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 9575 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10456 */;
-import AppLauncherContext from "AppLauncherContext" /* 10785 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11533 */;
-import FrecencySection from "FrecencySection" /* 11534 */;
-import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 11538 */;
-import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 11559 */;
-import HeroMedia from "HeroMedia" /* 11566 */;
-import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 11568 */;
-import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 11570 */;
-import AppLauncherOnboardingActionCreators from "AppLauncherOnboardingActionCreators" /* 11581 */;
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import dismissible_content from "dismissible_content" /* 2035 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4656 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+import TableRow2 from "TableRow" /* 5916 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6361 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6947 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7308 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 8587 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8707 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8777 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 8927 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10491 */;
+import AppLauncherContext from "AppLauncherContext" /* 10749 */;
+import FrecencySection from "FrecencySection" /* 11410 */;
+import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 11414 */;
+import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 11435 */;
+import ApplicationCollectionActiveState2 from "ApplicationCollectionActiveState" /* 11436 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11439 */;
+import HeroMedia from "HeroMedia" /* 11452 */;
+import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 11454 */;
+import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 11456 */;
+import AppLauncherOnboardingActionCreators from "AppLauncherOnboardingActionCreators" /* 11467 */;
+import InThisServerSection from "InThisServerSection" /* 11478 */;
+import AllowNonStaffToPreviewAppCollectionsExperimentDefault from "AllowNonStaffToPreviewAppCollectionsExperiment" /* 11485 */;
+import ApplicationDirectoryCollectionType from "ApplicationDirectoryCollectionType" /* 11491 */;
+import ApplicationCollectionFlags from "ApplicationCollectionFlags" /* 11494 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8591 */;
-import DevSettingsStore from "DevSettingsStore" /* 4835 */;
-import ApplicationDirectoryCollectionsStore from "ApplicationDirectoryCollectionsStore" /* 11555 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 11526 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1484 */;
-import Constants from "Constants" /* 1074 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8588 */;
+import DevSettingsStore from "DevSettingsStore" /* 4836 */;
+import ApplicationDirectoryCollectionsStore from "ApplicationDirectoryCollectionsStore" /* 11431 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 11402 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1490 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, nativeEvent, navigation, set;
+const EmbeddedActivitiesActionCreatorsAll = EmbeddedActivitiesActionCreators;
+let _require, closure_12, current, dependencyMap, height, isLandscape, navigation, num2, obj1, obj18, obj19, obj20, obj21, obj22, obj23, obj24, obj25, obj26, renderedName, set, tmp33, tmp43, v17777777777777777;
 
 let StyleSheet;
 let c9;
@@ -68,7 +77,164 @@ let obj6;
 let obj7;
 let obj8;
 let rect;
-function AppRowLabel(renderedName) {
+let tmp;
+const AppLauncherNativeUtils = tmp(11409);
+const ApplicationDirectoryActionCreators = tmp(11429);
+function getRecommendationItemsWithViewAll(found1, in_this_server, stringResult, IN_THIS_SERVER_ITEM_MAX) {
+  let closure_3;
+  let reduce;
+  let sectionName;
+  _require = in_this_server;
+  let COLLAPSED_LIST_ITEM_MAX = IN_THIS_SERVER_ITEM_MAX;
+  if (IN_THIS_SERVER_ITEM_MAX === undefined) {
+    let tmp2 = dependencyMap;
+    COLLAPSED_LIST_ITEM_MAX = require("ExpandableList").COLLAPSED_LIST_ITEM_MAX;
+  }
+  const sectionOverallPosition = tmp3;
+  let bound;
+  dependencyMap = undefined;
+  let items;
+  if (0 === found1.length) {
+    return [];
+  } else {
+    const _Math = Math;
+    bound = Math.min(length, COLLAPSED_LIST_ITEM_MAX);
+    dependencyMap = tmp10;
+    items = [];
+    const obj2 = { type: require("AppLauncherHomeTypes").AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER, section: stringResult, sectionName: in_this_server, numItems: found1.length, numVisibleItems: bound };
+    items.push(obj2);
+    const substr = found1.slice(0, bound);
+    const item = substr.forEach((application, sectionPosition) => {
+      let tmp2;
+      const push = items.push;
+      const obj = { type: AppLauncherHomeTypes.AppLauncherHomeListItemType.RECOMMENDATION_APP, application: application.application, showsPromoted: application.showsPromoted, isFirstRow: 0 === sectionPosition, isLastRow: tmp2, sectionName, sectionPosition, sectionOverallPosition };
+      tmp2 = sectionPosition === bound - 1 && !closure_3;
+      push(obj);
+    });
+    const tmp11 = _require;
+    if (bound < found1.length) {
+      let obj = {
+        type: tmp11(11456).AppLauncherHomeListItemType.VIEW_ALL,
+        applications: found1.map((application) => application.application),
+        promotedApplicationIds: reduce((add, showsPromoted) => {
+              if (showsPromoted.showsPromoted) {
+                add.add(showsPromoted.application.id);
+              }
+              return add;
+            }, set),
+        sectionName: in_this_server,
+        sectionOverallPosition: tmp3,
+        title: stringResult
+      };
+      let push = items.push;
+      const _Set = Set;
+      const self = this;
+      const self2 = this;
+      reduce = found1.reduce;
+      set = new Set();
+      push(obj);
+    }
+    return items;
+  }
+}
+let _slicedToArray = _slicedToArray_mod;
+({ View: metroRequire, StyleSheet } = react_native);
+({ useContextIndexState: metroImportAll, useUserIndexState: c9 } = ApplicationCommandIndexStore);
+const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
+const FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG = AppLauncherNativeConstants.FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG;
+({ AnalyticEvents: closure_16, Permissions: closure_17 } = Constants);
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+({ jsx: closure_19, jsxs: closure_20, Fragment: closure_21 } = Fragment);
+let c22 = 12;
+let c23 = 1.7777777777777777;
+let ref = [];
+const PX_4 = nativeDefault.space.PX_4;
+const APP_LAUNCHER_IN_TEXT = ApplicationCollectionSurface.ApplicationCollectionSurface.APP_LAUNCHER_IN_TEXT;
+let createStyles = createStyles_mod;
+let obj = { container: obj2, topBackgroundFill: rect, sectionHeader: { marginBottom: 8, marginTop: 8 }, list: obj3, searchBarContainer: { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: DEFAULT_CONTENT_PADDING }, divider: obj4, appRowLabelWithPromotedContainer: { overflow: "hidden", flexDirection: "row", alignItems: "center", gap: PX_4 }, appRowLabelWithPromotedTextContainer: { flexShrink: 1 }, promotedLabel: obj5, activityItemContainer: obj6, activityImageContainer: obj7, activityDetailsContainer: obj8, activityItemTupleContainer: { flexDirection: "row", gap: 12 }, activityItemTupleShelfItemContainer: { width: "50%", flexShrink: 1 }, activityItemImage: { height: "100%", width: "100%" }, submittingOverlay: { position: "absolute", top: 0, left: 0, height: "100%", width: "100%" } };
+obj2 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, flex: 1 };
+createStyles = createStyles.createStyles;
+rect = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, position: "absolute", top: -16, left: 0, right: 0, height: 16 };
+obj3 = { paddingHorizontal: DEFAULT_CONTENT_PADDING, backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+obj4 = { borderColor: nativeDefault.colors.BORDER_STRONG, borderTopWidth: 1, marginTop: nativeDefault.space.PX_24 };
+obj5 = { alignSelf: "center", justifyContent: "center", paddingVertical: 2, paddingHorizontal: nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: nativeDefault.radii.lg };
+obj6 = { borderRadius: nativeDefault.radii.md, overflow: "hidden", height: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_CARD_DEFAULT, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE };
+obj7 = { justifyContent: "center", alignItems: "center", height: 120, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
+obj8 = { padding: nativeDefault.space.PX_12, flexGrow: 1, flexShrink: 1 };
+let closure_26 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderedName) => {
+  let intl;
+  let items;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(12);
+  renderedName = renderedName.renderedName;
+  const showsPromoted = renderedName.showsPromoted;
+  const tmp4 = closure_26();
+  if (showsPromoted) {
+    if (cResult[2] === renderedName) {
+      let tmp8;
+      let tmp12;
+      let tmp15;
+      if (cResult[3] === tmp4.appRowLabelWithPromotedTextContainer) {
+        tmp8 = cResult[4];
+      }
+      const _Symbol = Symbol;
+      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj2 = { variant: "text-xxs/semibold", color: "text-muted", children: intl.string(intl4.t["/eVltv"]) };
+        const Text = tmp(4833).Text;
+        intl = tmp(1127).intl;
+        const tmp14 = closure_19(Text, obj2);
+        cResult[5] = tmp14;
+        tmp12 = tmp14;
+      } else {
+        tmp12 = cResult[5];
+      }
+      if (cResult[6] !== tmp4.promotedLabel) {
+        const obj3 = { style: tmp4.promotedLabel, children: tmp12 };
+        const tmp18 = closure_19(metroRequire, obj3);
+        cResult[6] = tmp4.promotedLabel;
+        cResult[7] = tmp18;
+        tmp15 = tmp18;
+      } else {
+        tmp15 = cResult[7];
+      }
+      if (cResult[8] === tmp4.appRowLabelWithPromotedContainer) {
+        if (cResult[9] === tmp8) {
+          let tmp19;
+          if (cResult[10] === tmp15) {
+            tmp19 = cResult[11];
+          }
+          tmp5 = tmp19;
+        }
+      }
+      const obj4 = { style: tmp4.appRowLabelWithPromotedContainer, children: items };
+      items = [tmp8, tmp15];
+      const tmp22 = closure_20(metroRequire, obj4);
+      cResult[8] = tmp4.appRowLabelWithPromotedContainer;
+      cResult[9] = tmp8;
+      cResult[10] = tmp15;
+      cResult[11] = tmp22;
+      tmp19 = tmp22;
+    }
+    const obj5 = { style: tmp4.appRowLabelWithPromotedTextContainer, variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: renderedName };
+    const tmp10 = closure_19(Text_Text.Text, obj5);
+    cResult[2] = renderedName;
+    cResult[3] = tmp4.appRowLabelWithPromotedTextContainer;
+    cResult[4] = tmp10;
+    tmp8 = tmp10;
+  } else if (cResult[0] !== renderedName) {
+    const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: renderedName };
+    const tmp7 = closure_19(Text_Text.Text, obj6);
+    cResult[0] = renderedName;
+    cResult[1] = tmp7;
+    tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5;
+}) : ((renderedName) => {
   let Text;
   let intl;
   let items;
@@ -76,7 +242,7 @@ function AppRowLabel(renderedName) {
   let tmp5;
   renderedName = renderedName.renderedName;
   const showsPromoted = renderedName.showsPromoted;
-  const tmp = closure_25();
+  const tmp = closure_26();
   if (showsPromoted) {
     const obj2 = { style: tmp.appRowLabelWithPromotedContainer, children: items };
     const obj3 = { style: tmp.appRowLabelWithPromotedTextContainer, variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: renderedName };
@@ -92,73 +258,233 @@ function AppRowLabel(renderedName) {
     tmp5 = closure_19(Text_Text.Text, obj);
   }
   return tmp5;
-}
-class BaseAppRow {
-  constructor(application) {
-    let iconSource;
-    let isFirstRow;
-    application = application.application;
-    ({ iconSource, isFirstRow } = application);
-    const onPress = application.onPress;
-    if (isFirstRow === undefined) {
-      isFirstRow = false;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let application;
+  let iconSource;
+  let isFirstRow;
+  let isLastRow;
+  let onPress;
+  let showsPromoted;
+  let tmp12;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(19);
+  ({ application, iconSource, onPress, isFirstRow, isLastRow, showsPromoted } = arg0);
+  if (cResult[0] !== iconSource) {
+    let tmp9 = null != iconSource;
+    if (tmp9) {
+      const obj2 = { iconSource };
+      tmp9 = closure_19(EntityBorderAppIconDefault, obj2);
     }
-    let flag = application.isLastRow;
-    if (flag === undefined) {
-      flag = false;
+    cResult[0] = iconSource;
+    cResult[1] = tmp9;
+    tmp7 = tmp9;
+  } else {
+    tmp7 = cResult[1];
+  }
+  let FAKE_BUILT_IN_APP = application;
+  if (application == null) {
+    FAKE_BUILT_IN_APP = tmp(8587).FAKE_BUILT_IN_APP;
+  }
+  if (cResult[2] !== FAKE_BUILT_IN_APP) {
+    const tmpResult = AppLauncherUtils;
+    const sectionName = tmpResult.getSectionName(FAKE_BUILT_IN_APP);
+    cResult[2] = FAKE_BUILT_IN_APP;
+    cResult[3] = sectionName;
+    tmp12 = sectionName;
+  } else {
+    tmp12 = cResult[3];
+  }
+  if (cResult[4] === application) {
+    let tmp14;
+    let tmp17;
+    if (cResult[5] === (undefined !== showsPromoted && showsPromoted)) {
+      tmp14 = cResult[6];
     }
-    let flag2 = application.showsPromoted;
-    if (flag2 === undefined) {
-      flag2 = false;
-    }
-    let tmp = null != iconSource;
-    if (tmp) {
-      let obj = { iconSource };
-      tmp = closure_19(EntityBorderAppIconDefault, obj);
-    }
-    let FAKE_BUILT_IN_APP = application;
-    const getSectionName = application(8590).getSectionName;
-    application(8590);
-    if (application == null) {
-      FAKE_BUILT_IN_APP = tmp5(8590).FAKE_BUILT_IN_APP;
-    }
-    const sectionName = getSectionName(FAKE_BUILT_IN_APP);
-    if (!flag2) {
-      let FAKE_BUILT_IN_APP2 = application;
-      const isPromotedApplication = application(8590).isPromotedApplication;
-      application(8590);
-      if (application == null) {
-        FAKE_BUILT_IN_APP2 = tmp5(8590).FAKE_BUILT_IN_APP;
-      }
-      flag2 = isPromotedApplication(FAKE_BUILT_IN_APP2);
-    }
-    const items = [application];
-    const memo = react.useMemo(() => {
-      let FAKE_BUILT_IN_APP = application;
+    if (cResult[7] !== application) {
+      let FAKE_BUILT_IN_APP3 = application;
       const getSectionDescription = AppLauncherUtils.getSectionDescription;
       AppLauncherUtils;
       if (application == null) {
-        FAKE_BUILT_IN_APP = tmp(8590).FAKE_BUILT_IN_APP;
+        FAKE_BUILT_IN_APP3 = tmp(8587).FAKE_BUILT_IN_APP;
       }
-      const sectionDescription = getSectionDescription(FAKE_BUILT_IN_APP);
+      const sectionDescription = getSectionDescription(FAKE_BUILT_IN_APP3);
       let result = null;
       if (null != sectionDescription) {
         result = null;
         if ("" !== sectionDescription) {
-          const obj = { content: sectionDescription, muted: false, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT, color: "text-muted" };
+          const obj3 = { content: sectionDescription, muted: false, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT, color: "text-muted" };
           const renderMessagePreviewMarkup = MessagePreviewMarkup.renderMessagePreviewMarkup;
           MessagePreviewMarkup;
-          result = renderMessagePreviewMarkup(obj);
+          result = renderMessagePreviewMarkup(obj3);
         }
       }
-      return result;
-    }, items);
-    const obj2 = { icon: tmp, label: closure_19(AppRowLabel, { renderedName: sectionName, showsPromoted: flag2 }), labelLineClamp: 1, subLabel: memo, subLabelLineClamp: 1, start: isFirstRow, end: flag, arrow: true, onPress };
-    const TableRow = tmp5(5917).TableRow;
-    return closure_19(TableRow, obj2);
+      cResult[7] = application;
+      cResult[8] = result;
+      tmp17 = result;
+    } else {
+      tmp17 = cResult[8];
+    }
+    if (cResult[9] === tmp12) {
+      let tmp22;
+      if (cResult[10] === tmp14) {
+        tmp22 = cResult[11];
+      }
+      if (cResult[12] === tmp7) {
+        if (cResult[13] === (undefined !== isFirstRow && isFirstRow)) {
+          if (cResult[14] === (undefined !== isLastRow && isLastRow)) {
+            if (cResult[15] === onPress) {
+              if (cResult[16] === tmp17) {
+                let tmp26;
+                if (cResult[17] === tmp22) {
+                  tmp26 = cResult[18];
+                }
+                return tmp26;
+              }
+            }
+          }
+        }
+      }
+      const obj4 = { icon: tmp7, label: tmp22, labelLineClamp: 1, subLabel: tmp17, subLabelLineClamp: 1, start: undefined !== isFirstRow && isFirstRow, end: undefined !== isLastRow && isLastRow, arrow: true, onPress };
+      const tmp28 = closure_19(TableRow2.TableRow, obj4);
+      cResult[12] = tmp7;
+      cResult[13] = undefined !== isFirstRow && isFirstRow;
+      cResult[14] = undefined !== isLastRow && isLastRow;
+      cResult[15] = onPress;
+      cResult[16] = tmp17;
+      cResult[17] = tmp22;
+      cResult[18] = tmp28;
+      tmp26 = tmp28;
+    }
+    const obj5 = { renderedName: tmp12, showsPromoted: tmp14 };
+    const tmp25 = closure_19(closure_27, obj5);
+    cResult[9] = tmp12;
+    cResult[10] = tmp14;
+    cResult[11] = tmp25;
+    tmp22 = tmp25;
   }
-}
-function AppRow(onPress) {
+  let result1 = tmp6;
+  if (!result1) {
+    let FAKE_BUILT_IN_APP2 = application;
+    const isPromotedApplication = AppLauncherUtils.isPromotedApplication;
+    AppLauncherUtils;
+    if (application == null) {
+      FAKE_BUILT_IN_APP2 = tmp(8587).FAKE_BUILT_IN_APP;
+    }
+    result1 = isPromotedApplication(FAKE_BUILT_IN_APP2);
+  }
+  cResult[4] = application;
+  cResult[5] = undefined !== showsPromoted && showsPromoted;
+  cResult[6] = result1;
+  tmp14 = result1;
+}) : ((application) => {
+  let iconSource;
+  let isFirstRow;
+  application = application.application;
+  ({ iconSource, isFirstRow } = application);
+  const onPress = application.onPress;
+  if (isFirstRow === undefined) {
+    isFirstRow = false;
+  }
+  let flag = application.isLastRow;
+  if (flag === undefined) {
+    flag = false;
+  }
+  let flag2 = application.showsPromoted;
+  if (flag2 === undefined) {
+    flag2 = false;
+  }
+  let tmp = null != iconSource;
+  if (tmp) {
+    let obj = { iconSource };
+    tmp = closure_19(EntityBorderAppIconDefault, obj);
+  }
+  let FAKE_BUILT_IN_APP = application;
+  const getSectionName = application(8587).getSectionName;
+  application(8587);
+  if (application == null) {
+    FAKE_BUILT_IN_APP = tmp5(8587).FAKE_BUILT_IN_APP;
+  }
+  const sectionName = getSectionName(FAKE_BUILT_IN_APP);
+  if (!flag2) {
+    let FAKE_BUILT_IN_APP2 = application;
+    const isPromotedApplication = application(8587).isPromotedApplication;
+    application(8587);
+    if (application == null) {
+      FAKE_BUILT_IN_APP2 = tmp5(8587).FAKE_BUILT_IN_APP;
+    }
+    flag2 = isPromotedApplication(FAKE_BUILT_IN_APP2);
+  }
+  const items = [application];
+  const memo = react.useMemo(() => {
+    let FAKE_BUILT_IN_APP = application;
+    const getSectionDescription = AppLauncherUtils.getSectionDescription;
+    AppLauncherUtils;
+    if (application == null) {
+      FAKE_BUILT_IN_APP = tmp(8587).FAKE_BUILT_IN_APP;
+    }
+    const sectionDescription = getSectionDescription(FAKE_BUILT_IN_APP);
+    let result = null;
+    if (null != sectionDescription) {
+      result = null;
+      if ("" !== sectionDescription) {
+        const obj = { content: sectionDescription, muted: false, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT, color: "text-muted" };
+        const renderMessagePreviewMarkup = MessagePreviewMarkup.renderMessagePreviewMarkup;
+        MessagePreviewMarkup;
+        result = renderMessagePreviewMarkup(obj);
+      }
+    }
+    return result;
+  }, items);
+  const obj2 = { icon: tmp, label: closure_19(closure_27, { renderedName: sectionName, showsPromoted: flag2 }), labelLineClamp: 1, subLabel: memo, subLabelLineClamp: 1, start: isFirstRow, end: flag, arrow: true, onPress };
+  const TableRow = tmp5(5916).TableRow;
+  return closure_19(TableRow, obj2);
+});
+let closure_28 = tmp8;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let isFirstRow;
+  let isLastRow;
+  let onPress;
+  let section;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(8);
+  ({ section, onPress, isFirstRow, isLastRow } = arg0);
+  if (cResult[0] !== section.application) {
+    const tmpResult = AppLauncherNativeUtils;
+    const appLauncherIconSource = tmpResult.getAppLauncherIconSource(section.application);
+    cResult[0] = section.application;
+    cResult[1] = appLauncherIconSource;
+    tmp6 = appLauncherIconSource;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === tmp6) {
+    if (cResult[3] === (undefined !== isFirstRow && isFirstRow)) {
+      if (cResult[4] === (undefined !== isLastRow && isLastRow)) {
+        if (cResult[5] === onPress) {
+          let tmp8;
+          if (cResult[6] === section.application) {
+            tmp8 = cResult[7];
+          }
+          return tmp8;
+        }
+      }
+    }
+  }
+  const obj2 = { application: section.application, iconSource: tmp6, onPress, isFirstRow: undefined !== isFirstRow && isFirstRow, isLastRow: undefined !== isLastRow && isLastRow };
+  const tmp9 = closure_19(closure_28, obj2);
+  cResult[2] = tmp6;
+  cResult[3] = undefined !== isFirstRow && isFirstRow;
+  cResult[4] = undefined !== isLastRow && isLastRow;
+  cResult[5] = onPress;
+  cResult[6] = section.application;
+  cResult[7] = tmp9;
+  tmp8 = tmp9;
+}) : ((onPress) => {
   let isFirstRow;
   let section;
   ({ section, isFirstRow } = onPress);
@@ -172,9 +498,137 @@ function AppRow(onPress) {
   }
   const obj = AppLauncherNativeUtils;
   const obj2 = { application: section.application, iconSource: obj.getAppLauncherIconSource(section.application), onPress, isFirstRow, isLastRow: flag };
-  return closure_19(BaseAppRow, obj2);
-}
-function ActivityRow(section) {
+  return closure_19(closure_28, obj2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
+  let bot;
+  let isFirstRow;
+  let isLastRow;
+  const obj = react2;
+  const cResult = obj.c(18);
+  section = section.section;
+  const onPress = section.onPress;
+  ({ isFirstRow, isLastRow } = section);
+  if (cResult[0] === section.application.bot) {
+    if (cResult[1] === section.application.icon) {
+      let tmp6;
+      let tmp10;
+      let tmp15;
+      if (cResult[2] === section.application.id) {
+        tmp6 = cResult[3];
+      }
+      if (cResult[4] !== tmp6) {
+        let tmp12 = null != tmp6;
+        if (tmp12) {
+          const obj2 = { iconSource: tmp6 };
+          tmp12 = closure_19(EntityBorderAppIconDefault, obj2);
+        }
+        cResult[4] = tmp6;
+        class C {
+          constructor() {
+            tmp = onPress(section);
+            return;
+          }
+        }
+        cResult[5] = tmp12;
+        tmp10 = tmp12;
+      } else {
+        tmp10 = cResult[5];
+      }
+      const description = section.application.description;
+      if (cResult[6] !== description) {
+        let tmp17 = null;
+        if (null != description) {
+          tmp17 = null;
+          if ("" !== description) {
+            ({ content: description, muted: false, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT, color: "text-muted" });
+            const renderMessagePreviewMarkup = tmp(11439).renderMessagePreviewMarkup;
+            MessagePreviewMarkup;
+            class C {
+              constructor() {
+                tmp = onPress(section);
+                return;
+              }
+            }
+          }
+        }
+        cResult[6] = description;
+        class C {
+          constructor() {
+            tmp = onPress(section);
+            return;
+          }
+        }
+        cResult[7] = tmp17;
+        tmp15 = tmp17;
+      } else {
+        tmp15 = cResult[7];
+      }
+      if (cResult[8] === onPress) {
+        let tmp19;
+        if (cResult[9] === section) {
+          tmp19 = cResult[10];
+        }
+        if (cResult[11] === tmp10) {
+          if (cResult[12] === (undefined !== isFirstRow && isFirstRow)) {
+            if (cResult[13] === (undefined !== isLastRow && isLastRow)) {
+              if (cResult[14] === tmp19) {
+                if (cResult[15] === tmp15) {
+                  let tmp20;
+                  if (cResult[16] === section.application.name) {
+                    tmp20 = cResult[17];
+                  }
+                  return tmp20;
+                }
+              }
+            }
+          }
+        }
+        const obj4 = { icon: tmp10, label: null, subLabel: tmp15, subLabelLineClamp: 1, start: undefined !== isFirstRow && isFirstRow, end: undefined !== isLastRow && isLastRow, arrow: true, onPress: tmp19 };
+        class C {
+          constructor() {
+            tmp = onPress(section);
+            return;
+          }
+        }
+        const tmp22 = closure_19(TableRow2.TableRow, obj4);
+        cResult[11] = tmp10;
+        cResult[12] = undefined !== isFirstRow && isFirstRow;
+        cResult[13] = undefined !== isLastRow && isLastRow;
+        cResult[14] = tmp19;
+        cResult[15] = tmp15;
+        cResult[16] = section.application.name;
+        cResult[17] = tmp22;
+        tmp20 = tmp22;
+      }
+      class C {
+        constructor() {
+          tmp = onPress(section);
+          return;
+        }
+      }
+      cResult[8] = onPress;
+      cResult[9] = section;
+      cResult[10] = C;
+      tmp19 = C;
+    }
+  }
+  const application = section.application;
+  const obj5 = { id: section.application.id, icon: section.application.icon, bot, botIconFirst: true };
+  bot = undefined;
+  const getApplicationIconSource = AvatarUtilsDefault.getApplicationIconSource;
+  AvatarUtilsDefault;
+  if (application != null) {
+    bot = application.bot;
+  }
+  const applicationIconSource = getApplicationIconSource(obj5);
+  cResult[0] = section.application.bot;
+  cResult[1] = section.application.icon;
+  cResult[2] = section.application.id;
+  cResult[3] = applicationIconSource;
+  tmp6 = applicationIconSource;
+}) : ((section) => {
   let bot;
   section = section.section;
   const onPress = section.onPress;
@@ -189,9 +643,9 @@ function ActivityRow(section) {
   let obj = { id: section.application.id, icon: section.application.icon, bot, botIconFirst: true };
   const application = section.application;
   bot = undefined;
-  const getApplicationIconSource = onPress(1397).getApplicationIconSource;
+  const getApplicationIconSource = onPress(1403).getApplicationIconSource;
   const tmp = onPress;
-  const tmp3 = onPress(1397);
+  const tmp3 = onPress(1403);
   if (application != null) {
     bot = application.bot;
   }
@@ -199,7 +653,7 @@ function ActivityRow(section) {
   let tmp6 = null != applicationIconSource;
   if (tmp6) {
     const obj2 = { iconSource: applicationIconSource };
-    tmp6 = closure_19(tmp(11538), obj2);
+    tmp6 = closure_19(tmp(11414), obj2);
   }
   const items = [section];
   const items1 = [section, onPress];
@@ -221,9 +675,190 @@ function ActivityRow(section) {
     onPress(section);
   }, items1);
   const obj3 = { icon: tmp6, label: section.application.name, subLabel: memo, subLabelLineClamp: 1, start: flag, end: flag2, arrow: true, onPress: callback };
-  return closure_19(section(5917).TableRow, obj3);
-}
-function ActivityItemTuple(arg0) {
+  return closure_19(section(5916).TableRow, obj3);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLastTuple) => {
+  let containerWidth;
+  let context;
+  let entrypoint;
+  let items;
+  let obj6;
+  let onActivityItemSelected;
+  let onPress;
+  let sectionName;
+  let shelfItem1;
+  let shelfItem2;
+  let tmp14;
+  let usesHandleActivityItemSelected;
+  const obj = react2;
+  const cResult = obj.c(39);
+  ({ context, sectionName, onPress, usesHandleActivityItemSelected, onActivityItemSelected, shelfItem1, shelfItem2, entrypoint, containerWidth } = isLastTuple);
+  isLastTuple = isLastTuple.isLastTuple;
+  const tmp3 = closure_26();
+  if (null != containerWidth) {
+    let tmp10;
+    const tmp7 = roundToNearestPixelDefault(containerWidth / 2 - DEFAULT_CONTENT_PADDING - 6);
+    const result = tmp7 / c23;
+    const tmp5 = importDefault;
+    if (cResult[1] !== result) {
+      const tmp11 = tmp5(10491)(result);
+      cResult[1] = result;
+      cResult[2] = tmp11;
+      tmp10 = tmp11;
+    } else {
+      tmp10 = cResult[2];
+    }
+    if (cResult[3] === tmp10) {
+      let tmp12;
+      if (cResult[4] === tmp7) {
+        tmp12 = cResult[5];
+      }
+      size = tmp12;
+    }
+    const size1 = { width: tmp7, height: tmp10 };
+    cResult[3] = tmp10;
+    cResult[4] = tmp7;
+    cResult[5] = size1;
+    tmp12 = size1;
+  } else {
+    const _Symbol = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const size2 = { width: "diversity", height: "a" };
+      cResult[0] = size2;
+      size = size2;
+    } else {
+      size = cResult[0];
+    }
+  }
+  let tmp13;
+  if (!isLastTuple) {
+    tmp13 = c22;
+  }
+  if (cResult[6] !== tmp13) {
+    const obj2 = { marginBottom: tmp13 };
+    cResult[6] = tmp13;
+    cResult[7] = obj2;
+    tmp14 = obj2;
+  } else {
+    tmp14 = cResult[7];
+  }
+  if (cResult[8] === tmp3.activityItemTupleContainer) {
+    let tmp15;
+    if (cResult[9] === tmp14) {
+      tmp15 = cResult[10];
+    }
+    if (cResult[11] === context) {
+      if (cResult[12] === entrypoint) {
+        if (cResult[13] === size.height) {
+          if (cResult[14] === size.width) {
+            if (cResult[15] === onActivityItemSelected) {
+              if (cResult[16] === onPress) {
+                if (cResult[17] === sectionName) {
+                  if (cResult[18] === shelfItem1) {
+                    let tmp16;
+                    if (cResult[19] === usesHandleActivityItemSelected) {
+                      tmp16 = cResult[20];
+                    }
+                    if (cResult[21] === tmp3.activityItemTupleShelfItemContainer) {
+                      let tmp20;
+                      if (cResult[22] === tmp16) {
+                        tmp20 = cResult[23];
+                      }
+                      if (cResult[24] === context) {
+                        if (cResult[25] === entrypoint) {
+                          if (cResult[26] === size.height) {
+                            if (cResult[27] === size.width) {
+                              if (cResult[28] === onActivityItemSelected) {
+                                if (cResult[29] === onPress) {
+                                  if (cResult[30] === sectionName) {
+                                    if (cResult[31] === shelfItem2) {
+                                      if (cResult[32] === tmp3.activityItemTupleShelfItemContainer) {
+                                        let tmp24;
+                                        if (cResult[33] === usesHandleActivityItemSelected) {
+                                          tmp24 = cResult[34];
+                                        }
+                                        if (cResult[35] === tmp15) {
+                                          if (cResult[36] === tmp20) {
+                                            let tmp29;
+                                            if (cResult[37] === tmp24) {
+                                              tmp29 = cResult[38];
+                                            }
+                                            return tmp29;
+                                          }
+                                        }
+                                        const obj3 = { style: tmp15, children: items };
+                                        items = [tmp20, tmp24];
+                                        const tmp32 = closure_20(metroRequire, obj3);
+                                        cResult[35] = tmp15;
+                                        cResult[36] = tmp20;
+                                        cResult[37] = tmp24;
+                                        cResult[38] = tmp32;
+                                        tmp29 = tmp32;
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      let tmp25 = null != shelfItem2;
+                      if (tmp25) {
+                        const obj4 = { style: tmp3.activityItemTupleShelfItemContainer, children: closure_19(closure_32, obj6) };
+                        obj6 = { context, sectionName, onPress, usesHandleActivityItemSelected, onActivityItemSelected, shelfItem: shelfItem2, entrypoint, imageWidth: null, imageHeight: null };
+                        ({ width: obj8.imageWidth, height: obj8.imageHeight } = size);
+                        tmp25 = closure_19(metroRequire, obj4);
+                      }
+                      cResult[24] = context;
+                      cResult[25] = entrypoint;
+                      cResult[26] = size.height;
+                      cResult[27] = size.width;
+                      cResult[28] = onActivityItemSelected;
+                      cResult[29] = onPress;
+                      cResult[30] = sectionName;
+                      cResult[31] = shelfItem2;
+                      cResult[32] = tmp3.activityItemTupleShelfItemContainer;
+                      cResult[33] = usesHandleActivityItemSelected;
+                      cResult[34] = tmp25;
+                      tmp24 = tmp25;
+                    }
+                    const obj7 = { style: tmp3.activityItemTupleShelfItemContainer, children: tmp16 };
+                    const tmp23 = closure_19(metroRequire, obj7);
+                    cResult[21] = tmp3.activityItemTupleShelfItemContainer;
+                    cResult[22] = tmp16;
+                    cResult[23] = tmp23;
+                    tmp20 = tmp23;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    const obj9 = { context, sectionName, onPress, usesHandleActivityItemSelected, onActivityItemSelected, shelfItem: shelfItem1, entrypoint, imageWidth: null, imageHeight: null };
+    ({ width: obj5.imageWidth, height: obj5.imageHeight } = size);
+    const tmp19 = closure_19(closure_32, obj9);
+    cResult[11] = context;
+    cResult[12] = entrypoint;
+    cResult[13] = size.height;
+    cResult[14] = size.width;
+    cResult[15] = onActivityItemSelected;
+    cResult[16] = onPress;
+    cResult[17] = sectionName;
+    cResult[18] = shelfItem1;
+    cResult[19] = usesHandleActivityItemSelected;
+    cResult[20] = tmp19;
+    tmp16 = tmp19;
+  }
+  const items1 = [tmp3.activityItemTupleContainer, tmp14];
+  cResult[8] = tmp3.activityItemTupleContainer;
+  cResult[9] = tmp14;
+  cResult[10] = items1;
+  tmp15 = items1;
+}) : ((arg0) => {
   let containerWidth;
   let context;
   let entrypoint;
@@ -239,36 +874,542 @@ function ActivityItemTuple(arg0) {
   let usesHandleActivityItemSelected;
   ({ context, sectionName, onPress, usesHandleActivityItemSelected, onActivityItemSelected, shelfItem2, entrypoint, containerWidth } = arg0);
   ({ shelfItem1, isLastTuple } = arg0);
-  const tmp = closure_25();
+  const tmp = closure_26();
   const items = [containerWidth];
   size = react.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "Array", height: "channel" };
+      return { width: "diversity", height: "a" };
     } else {
       const tmp5 = roundToNearestPixelDefault(tmp / 2 - DEFAULT_CONTENT_PADDING - 6);
-      size = { width: tmp5, height: roundToNearestPixelDefault(tmp5 / c22) };
+      size = { width: tmp5, height: roundToNearestPixelDefault(tmp5 / c23) };
       return size;
     }
   }, items);
   const items1 = [tmp.activityItemTupleContainer, ];
+  let tmp4;
+  const tmp2 = closure_20;
+  if (!isLastTuple) {
+    tmp4 = c22;
+  }
   const obj = { style: items1, children: items2 };
-  items1[1] = { marginBottom: 12 };
-  let tmp5 = ActivityItem;
-  const obj2 = { style: tmp.activityItemTupleShelfItemContainer, children: closure_19(ActivityItem, obj3) };
+  items1[1] = { marginBottom: tmp4 };
+  let tmp5 = closure_19;
+  const obj2 = { style: tmp.activityItemTupleShelfItemContainer, children: closure_19(closure_32, obj3) };
   obj3 = { context, sectionName, onPress, usesHandleActivityItemSelected, onActivityItemSelected, shelfItem: shelfItem1, entrypoint, imageWidth: size.width, imageHeight: size.height };
   items2 = [closure_19(tmp3, obj2), ];
-  let tmp4Result = null != shelfItem2;
-  const tmp2 = closure_20;
-  if (tmp4Result) {
-    const obj4 = { style: tmp.activityItemTupleShelfItemContainer, children: closure_19(tmp5, obj9) };
+  let tmp5Result = null != shelfItem2;
+  const tmp6 = closure_32;
+  if (tmp5Result) {
+    const obj4 = { style: tmp.activityItemTupleShelfItemContainer, children: tmp5(tmp6, obj9) };
     obj9 = { context, sectionName, onPress, usesHandleActivityItemSelected, onActivityItemSelected, shelfItem: shelfItem2, entrypoint, imageWidth: null, imageHeight: null };
     ({ width: obj5.imageWidth, height: obj5.imageHeight } = size);
-    tmp4Result = tmp4(tmp3, obj4);
+    tmp5Result = tmp5(tmp3, obj4);
   }
-  items2[1] = tmp4Result;
+  items2[1] = tmp5Result;
   return tmp2(closure_6, obj);
-}
-function ActivityItem(context) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
+  let closure_3;
+  let closure_4;
+  let entrypoint;
+  let first1;
+  let handleActivityItemSelected;
+  let imageHeight;
+  let imageWidth;
+  let items2;
+  let items3;
+  let onActivityItemSelected;
+  let onPress;
+  let sectionName;
+  let tmp19;
+  let tmp20;
+  let usesHandleActivityItemSelected;
+  let tmp = context;
+  const obj = context(576);
+  const cResult = obj.c(57);
+  context = context.context;
+  const shelfItem = context.shelfItem;
+  ({ sectionName, onPress } = context);
+  ({ usesHandleActivityItemSelected, onActivityItemSelected, entrypoint, imageWidth, imageHeight } = context);
+  dependencyMap = tmp4;
+  const tmp5 = closure_26();
+  const tmpResult = tmp(11452);
+  const heroMediaDimensions = tmpResult.useHeroMediaDimensions();
+  const tmp8 = _slicedToArray(handleActivityItemSelected.useState(false), 2);
+  _slicedToArray = tmp8[1];
+  let width = imageWidth;
+  const first = tmp8[0];
+  const obj3 = handleActivityItemSelected;
+  if (imageWidth == null) {
+    width = heroMediaDimensions.width;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = ["embedded_cover"];
+    cResult[0] = items;
+    first1 = items;
+  } else {
+    first1 = cResult[0];
+  }
+  if (cResult[1] === shelfItem.application.id) {
+    let tmp11;
+    let tmp15;
+    if (cResult[2] === width) {
+      tmp11 = cResult[3];
+    }
+    shelfItem(8927)(tmp11);
+    let id = obj3.useId();
+    const _Symbol = Symbol;
+    const tmp12 = shelfItem;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const items1 = [EmbeddedActivitiesStore];
+      cResult[4] = items1;
+      tmp15 = items1;
+    } else {
+      tmp15 = cResult[4];
+    }
+    if (cResult[5] === context.channel) {
+      if (cResult[6] === context.type) {
+        let tmp17;
+        let tmp22;
+        if (cResult[7] === shelfItem.application.id) {
+          tmp17 = cResult[8];
+        }
+        const tmpResult4 = tmp(504);
+        [tmp19, tmp20] = _slicedToArray(tmpResult4.useStateFromStoresArray(tmp15, tmp17), 2);
+        _slicedToArray(tmpResult4.useStateFromStoresArray(tmp15, tmp17), 2);
+        if (cResult[9] !== shelfItem.application) {
+          const tmpResult5 = tmp(8587);
+          const shelfBadgeTypeIfActive = tmpResult5.getShelfBadgeTypeIfActive(shelfItem.application);
+          cResult[9] = shelfItem.application;
+          cResult[10] = shelfBadgeTypeIfActive;
+          tmp22 = shelfBadgeTypeIfActive;
+        } else {
+          tmp22 = cResult[10];
+        }
+        if (cResult[11] === context) {
+          if (cResult[12] === entrypoint) {
+            if (cResult[13] === id) {
+              if (cResult[14] === onActivityItemSelected) {
+                if (cResult[15] === sectionName) {
+                  let tmp24;
+                  if (cResult[16] === shelfItem.application.id) {
+                    tmp24 = cResult[17];
+                  }
+                  const tmpResult6 = tmp(11409);
+                  handleActivityItemSelected = tmpResult6.useHandleActivityItemSelected(tmp24).handleActivityItemSelected;
+                  if (cResult[18] === handleActivityItemSelected) {
+                    if (cResult[19] === onPress) {
+                      if (cResult[20] === shelfItem) {
+                        let tmp26;
+                        if (cResult[21] === (undefined !== usesHandleActivityItemSelected && usesHandleActivityItemSelected)) {
+                          tmp26 = cResult[22];
+                        }
+                        class X {
+                          constructor() {
+                            tmp = closure_3;
+                            if (tmp) {
+                              tmp2 = closure_5;
+                              tmp3 = closure_5();
+                            }
+                            tmp4 = onPress(shelfItem);
+                            return;
+                          }
+                        }
+                        if (cResult[30] === imageHeight) {
+                          let tmp30;
+                          if (cResult[31] === imageWidth) {
+                            tmp30 = cResult[32];
+                          }
+                          if (cResult[33] === tmp5.activityImageContainer) {
+                            let tmp32;
+                            if (cResult[34] === tmp30) {
+                              tmp32 = cResult[35];
+                            }
+                            if (cResult[36] !== tmp22) {
+                              const obj2 = { labelType: tmp22 };
+                              const tmp35 = closure_19(tmp12(11454), obj2);
+                              class X {
+                                constructor() {
+                                  tmp = closure_3;
+                                  if (tmp) {
+                                    tmp2 = closure_5;
+                                    tmp3 = closure_5();
+                                  }
+                                  tmp4 = onPress(shelfItem);
+                                  return;
+                                }
+                              }
+                              cResult[37] = tmp35;
+                              class M {
+                                constructor() {
+                                  tmp = closure_7;
+                                  items = [, ];
+                                  items[0] = closure_7.isLaunchingActivity();
+                                  id1 = undefined;
+                                  getLaunchState = closure_7.getLaunchState;
+                                  id = shelfItem.application.id;
+                                  if ("channel" === context.type) {
+                                    id1 = context.channel.id;
+                                  }
+                                  items[1] = getLaunchState(id, id1);
+                                  return items;
+                                }
+                              }
+                            }
+                            if (cResult[38] === tmp5.submittingOverlay) {
+                              let tmp36;
+                              if (cResult[39] === (null != tmp20 && tmp20.isLaunching && tmp20.componentId === id)) {
+                                tmp36 = cResult[40];
+                              }
+                              if (cResult[41] === tmp29) {
+                                if (cResult[42] === tmp32) {
+                                  if (cResult[43] === tmp33) {
+                                    let tmp39;
+                                    if (cResult[44] === tmp36) {
+                                      tmp39 = cResult[45];
+                                    }
+                                    if (cResult[46] !== shelfItem.application.name) {
+                                      const obj4 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", children: shelfItem.application.name };
+                                      const tmp45 = closure_19(tmp(4833).Text, obj4);
+                                      class X {
+                                        constructor() {
+                                          tmp = closure_3;
+                                          if (tmp) {
+                                            tmp2 = closure_5;
+                                            tmp3 = closure_5();
+                                          }
+                                          tmp4 = onPress(shelfItem);
+                                          return;
+                                        }
+                                      }
+                                      cResult[47] = tmp45;
+                                      class M {
+                                        constructor() {
+                                          tmp = closure_7;
+                                          items = [, ];
+                                          items[0] = closure_7.isLaunchingActivity();
+                                          id1 = undefined;
+                                          getLaunchState = closure_7.getLaunchState;
+                                          id = shelfItem.application.id;
+                                          if ("channel" === context.type) {
+                                            id1 = context.channel.id;
+                                          }
+                                          items[1] = getLaunchState(id, id1);
+                                          return items;
+                                        }
+                                      }
+                                    }
+                                    if (cResult[48] === tmp5.activityDetailsContainer) {
+                                      let tmp46;
+                                      if (cResult[49] === tmp43) {
+                                        tmp46 = cResult[50];
+                                      }
+                                      if (cResult[51] === tmp26) {
+                                        if (cResult[52] === tmp19) {
+                                          if (cResult[53] === tmp5.activityItemContainer) {
+                                            if (cResult[54] === tmp39) {
+                                              let tmp51;
+                                              if (cResult[55] === tmp46) {
+                                                tmp51 = cResult[56];
+                                              }
+                                              return tmp51;
+                                            }
+                                          }
+                                        }
+                                      }
+                                      const obj5 = { style: tmp5.activityItemContainer, disabled: null, onPress: tmp26, children: items2 };
+                                      class X {
+                                        constructor() {
+                                          tmp = closure_3;
+                                          if (tmp) {
+                                            tmp2 = closure_5;
+                                            tmp3 = closure_5();
+                                          }
+                                          tmp4 = onPress(shelfItem);
+                                          return;
+                                        }
+                                      }
+                                      items2 = [, ];
+                                      class M {
+                                        constructor() {
+                                          tmp = closure_7;
+                                          items = [, ];
+                                          items[0] = closure_7.isLaunchingActivity();
+                                          id1 = undefined;
+                                          getLaunchState = closure_7.getLaunchState;
+                                          id = shelfItem.application.id;
+                                          if ("channel" === context.type) {
+                                            id1 = context.channel.id;
+                                          }
+                                          items[1] = getLaunchState(id, id1);
+                                          return items;
+                                        }
+                                      }
+                                      items2[1] = tmp46;
+                                      const tmp53 = closure_20(tmp(8367).PressableScale, obj5);
+                                      cResult[51] = tmp26;
+                                      cResult[52] = tmp19;
+                                      cResult[53] = tmp5.activityItemContainer;
+                                      cResult[54] = tmp39;
+                                      cResult[55] = tmp46;
+                                      cResult[56] = tmp53;
+                                      tmp51 = tmp53;
+                                    }
+                                    class X {
+                                      constructor() {
+                                        tmp = closure_3;
+                                        if (tmp) {
+                                          tmp2 = closure_5;
+                                          tmp3 = closure_5();
+                                        }
+                                        tmp4 = onPress(shelfItem);
+                                        return;
+                                      }
+                                    }
+                                    tmp49[0] = tmp5.activityDetailsContainer;
+                                    tmp49[1] = tmp43;
+                                    class M {
+                                      constructor() {
+                                        tmp = closure_7;
+                                        items = [, ];
+                                        items[0] = closure_7.isLaunchingActivity();
+                                        id1 = undefined;
+                                        getLaunchState = closure_7.getLaunchState;
+                                        id = shelfItem.application.id;
+                                        if ("channel" === context.type) {
+                                          id1 = context.channel.id;
+                                        }
+                                        items[1] = getLaunchState(id, id1);
+                                        return items;
+                                      }
+                                    }
+                                    cResult[48] = tmp5.activityDetailsContainer;
+                                    cResult[49] = tmp43;
+                                    cResult[50] = tmp50;
+                                    tmp46 = tmp50;
+                                  }
+                                }
+                              }
+                              const obj6 = { style: null, children: items3 };
+                              class X {
+                                constructor() {
+                                  tmp = closure_3;
+                                  if (tmp) {
+                                    tmp2 = closure_5;
+                                    tmp3 = closure_5();
+                                  }
+                                  tmp4 = onPress(shelfItem);
+                                  return;
+                                }
+                              }
+                              items3 = [tmp29, , ];
+                              class M {
+                                constructor() {
+                                  tmp = closure_7;
+                                  items = [, ];
+                                  items[0] = closure_7.isLaunchingActivity();
+                                  id1 = undefined;
+                                  getLaunchState = closure_7.getLaunchState;
+                                  id = shelfItem.application.id;
+                                  if ("channel" === context.type) {
+                                    id1 = context.channel.id;
+                                  }
+                                  items[1] = getLaunchState(id, id1);
+                                  return items;
+                                }
+                              }
+                              items3[2] = tmp36;
+                              const tmp42 = closure_20(closure_6, obj6);
+                              cResult[41] = tmp29;
+                              cResult[42] = tmp32;
+                              cResult[43] = tmp33;
+                              cResult[44] = tmp36;
+                              cResult[45] = tmp42;
+                              tmp39 = tmp42;
+                            }
+                            const obj7 = { submitting: null, style: tmp5.submittingOverlay };
+                            class X {
+                              constructor() {
+                                tmp = closure_3;
+                                if (tmp) {
+                                  tmp2 = closure_5;
+                                  tmp3 = closure_5();
+                                }
+                                tmp4 = onPress(shelfItem);
+                                return;
+                              }
+                            }
+                            const tmp38 = closure_19(tmp(11418).SubmittingOverlay, obj7);
+                            class M {
+                              constructor() {
+                                tmp = closure_7;
+                                items = [, ];
+                                items[0] = closure_7.isLaunchingActivity();
+                                id1 = undefined;
+                                getLaunchState = closure_7.getLaunchState;
+                                id = shelfItem.application.id;
+                                if ("channel" === context.type) {
+                                  id1 = context.channel.id;
+                                }
+                                items[1] = getLaunchState(id, id1);
+                                return items;
+                              }
+                            }
+                            cResult[38] = tmp5.submittingOverlay;
+                            cResult[39] = null != tmp20 && tmp20.isLaunching && tmp20.componentId === id;
+                            cResult[40] = tmp38;
+                            tmp36 = tmp38;
+                          }
+                          const items4 = [tmp5.activityImageContainer, tmp30];
+                          class X {
+                            constructor() {
+                              tmp = closure_3;
+                              if (tmp) {
+                                tmp2 = closure_5;
+                                tmp3 = closure_5();
+                              }
+                              tmp4 = onPress(shelfItem);
+                              return;
+                            }
+                          }
+                          cResult[33] = tmp5.activityImageContainer;
+                          class M {
+                            constructor() {
+                              tmp = closure_7;
+                              items = [, ];
+                              items[0] = closure_7.isLaunchingActivity();
+                              id1 = undefined;
+                              getLaunchState = closure_7.getLaunchState;
+                              id = shelfItem.application.id;
+                              if ("channel" === context.type) {
+                                id1 = context.channel.id;
+                              }
+                              items[1] = getLaunchState(id, id1);
+                              return items;
+                            }
+                          }
+                          cResult[35] = items4;
+                          tmp32 = items4;
+                        }
+                        class M {
+                          constructor() {
+                            tmp = closure_7;
+                            items = [, ];
+                            items[0] = closure_7.isLaunchingActivity();
+                            id1 = undefined;
+                            getLaunchState = closure_7.getLaunchState;
+                            id = shelfItem.application.id;
+                            if ("channel" === context.type) {
+                              id1 = context.channel.id;
+                            }
+                            items[1] = getLaunchState(id, id1);
+                            return items;
+                          }
+                        }
+                        cResult[30] = imageHeight;
+                        cResult[31] = imageWidth;
+                        cResult[32] = null != imageWidth && null != imageHeight;
+                        tmp30 = tmp31;
+                      }
+                    }
+                  }
+                  class X {
+                    constructor() {
+                      tmp = closure_3;
+                      if (tmp) {
+                        tmp2 = closure_5;
+                        tmp3 = closure_5();
+                      }
+                      tmp4 = onPress(shelfItem);
+                      return;
+                    }
+                  }
+                  cResult[18] = handleActivityItemSelected;
+                  class M {
+                    constructor() {
+                      tmp = closure_7;
+                      items = [, ];
+                      items[0] = closure_7.isLaunchingActivity();
+                      id1 = undefined;
+                      getLaunchState = closure_7.getLaunchState;
+                      id = shelfItem.application.id;
+                      if ("channel" === context.type) {
+                        id1 = context.channel.id;
+                      }
+                      items[1] = getLaunchState(id, id1);
+                      return items;
+                    }
+                  }
+                  cResult[19] = onPress;
+                  cResult[20] = shelfItem;
+                  cResult[21] = undefined !== usesHandleActivityItemSelected && usesHandleActivityItemSelected;
+                  cResult[22] = X;
+                  tmp26 = X;
+                }
+              }
+            }
+          }
+        }
+        class M {
+          constructor() {
+            tmp = closure_7;
+            items = [, ];
+            items[0] = closure_7.isLaunchingActivity();
+            id1 = undefined;
+            getLaunchState = closure_7.getLaunchState;
+            id = shelfItem.application.id;
+            if ("channel" === context.type) {
+              id1 = context.channel.id;
+            }
+            items[1] = getLaunchState(id, id1);
+            return items;
+          }
+        }
+        tmp25[0] = shelfItem.application.id;
+        tmp25[1] = context;
+        tmp25[2] = sectionName;
+        tmp25[3] = onActivityItemSelected;
+        tmp25[4] = tmp(6947).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME;
+        tmp25[5] = entrypoint;
+        tmp25[6] = id;
+        cResult[11] = context;
+        cResult[12] = entrypoint;
+        cResult[13] = id;
+        cResult[14] = onActivityItemSelected;
+        cResult[15] = sectionName;
+        cResult[16] = shelfItem.application.id;
+        cResult[17] = tmp25;
+        tmp24 = tmp25;
+      }
+    }
+    class M {
+      constructor() {
+        tmp = closure_7;
+        items = [, ];
+        items[0] = closure_7.isLaunchingActivity();
+        id1 = undefined;
+        getLaunchState = closure_7.getLaunchState;
+        id = shelfItem.application.id;
+        if ("channel" === context.type) {
+          id1 = context.channel.id;
+        }
+        items[1] = getLaunchState(id, id1);
+        return items;
+      }
+    }
+    cResult[5] = context.channel;
+    cResult[6] = context.type;
+    cResult[7] = shelfItem.application.id;
+    cResult[8] = M;
+    tmp17 = M;
+  }
+  const obj8 = { applicationId: shelfItem.application.id, size: width, names: first1 };
+  cResult[1] = shelfItem.application.id;
+  cResult[2] = width;
+  cResult[3] = obj8;
+  tmp11 = obj8;
+}) : ((context) => {
   let closure_4;
   let entrypoint;
   let imageHeight;
@@ -280,7 +1421,7 @@ function ActivityItem(context) {
   let onActivityItemSelected;
   let tmp19;
   let width;
-  const f93940 = () => {
+  const f107465 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id1;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -303,8 +1444,8 @@ function ActivityItem(context) {
   _slicedToArray = undefined;
   let handleActivityItemSelected;
   ({ onActivityItemSelected, entrypoint } = context);
-  let tmp = closure_25();
-  const obj = context(flag[26]);
+  let tmp = closure_26();
+  const obj = context(flag[28]);
   const heroMediaDimensions = obj.useHeroMediaDimensions();
   const tmp6 = _slicedToArray(handleActivityItemSelected.useState(false), 2);
   const tmp5 = _slicedToArray;
@@ -312,27 +1453,27 @@ function ActivityItem(context) {
   const first = tmp6[0];
   const obj3 = { applicationId: shelfItem.application.id, size: width, names: ["embedded_cover"] };
   width = imageWidth;
-  const tmp9 = shelfItem(flag[27]);
+  const tmp9 = shelfItem(flag[29]);
   if (imageWidth == null) {
     width = heroMediaDimensions.width;
   }
   const tmp9Result = tmp9(obj3);
   let id = obj2.useId();
   let items = [EmbeddedActivitiesStore];
-  const tmp2Result = context(flag[28]);
+  const tmp2Result = context(flag[30]);
   let isLaunching = null != tmp14;
-  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f93940), 2)[0];
-  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f93940), 2);
+  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f107465), 2)[0];
+  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f107465), 2);
   if (isLaunching) {
     isLaunching = tmp14.isLaunching;
   }
   if (isLaunching) {
     isLaunching = tmp14.componentId === id;
   }
-  const tmp2Result3 = context(flag[19]);
+  const tmp2Result3 = context(flag[21]);
   const shelfBadgeTypeIfActive = tmp2Result3.getShelfBadgeTypeIfActive(shelfItem.application);
-  const tmp2Result4 = context(flag[23]);
-  const obj4 = { applicationId: shelfItem.application.id, context, sectionName, onActivityItemSelected, location: context(flag[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, entrypoint, launchingComponentId: id, fetchesApplication: false };
+  const tmp2Result4 = context(flag[25]);
+  const obj4 = { applicationId: shelfItem.application.id, context, sectionName, onActivityItemSelected, location: context(flag[31]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, entrypoint, launchingComponentId: id, fetchesApplication: false };
   handleActivityItemSelected = tmp2Result4.useHandleActivityItemSelected(obj4).handleActivityItemSelected;
   const items1 = [handleActivityItemSelected, onPress, shelfItem, flag];
   let tmp17 = "not-found" === tmp9Result.state;
@@ -348,7 +1489,7 @@ function ActivityItem(context) {
   }
   const tmp18 = "loading" === tmp9Result.state || null == tmp9Result.url;
   if (tmp17) {
-    tmp19 = closure_19(tmp8(tmp3[30]), {});
+    tmp19 = closure_19(tmp8(tmp3[32]), {});
   } else {
     tmp19 = null;
     if (!tmp18) {
@@ -361,13 +1502,13 @@ function ActivityItem(context) {
         resizeMode: "cover"
       };
       obj6 = { uri: tmp9Result.url };
-      tmp19 = closure_19(tmp8(tmp3[31]), obj5);
+      tmp19 = closure_19(tmp8(tmp3[33]), obj5);
     }
   }
   const items2 = [tmp.activityImageContainer, ];
   let tmp24 = null != imageWidth;
   const obj7 = { style: tmp.activityItemContainer, disabled: first1, onPress: callback, children: items4 };
-  const PressableScale = tmp2(tmp3[32]).PressableScale;
+  const PressableScale = tmp2(tmp3[36]).PressableScale;
   if (tmp24) {
     tmp24 = null != imageHeight;
   }
@@ -377,16 +1518,193 @@ function ActivityItem(context) {
   }
   const obj8 = { style: items2, children: items3 };
   items2[1] = tmp24;
-  items3 = [tmp19, closure_19(shelfItem(tmp3[33]), { labelType: shelfBadgeTypeIfActive }), ];
+  items3 = [tmp19, closure_19(shelfItem(tmp3[34]), { labelType: shelfBadgeTypeIfActive }), ];
   const obj9 = { submitting: isLaunching, style: tmp.submittingOverlay };
-  items3[2] = closure_19(context(flag[34]).SubmittingOverlay, obj9);
+  items3[2] = closure_19(context(flag[35]).SubmittingOverlay, obj9);
   items4 = [closure_20(closure_6, obj8), ];
-  const obj10 = { style: tmp.activityDetailsContainer, children: closure_19(context(flag[16]).Text, obj11) };
+  const obj10 = { style: tmp.activityDetailsContainer, children: closure_19(context(flag[18]).Text, obj11) };
   obj11 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", children: shelfItem.application.name };
   items4[1] = closure_19(closure_6, obj10);
   return closure_20(PressableScale, obj7);
-}
-function RecommendationItemTuple(isLastTuple) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
+  let closure_4;
+  let entrypoint;
+  let first;
+  let items;
+  let tmp16;
+  let obj = context(entrypoint[17]);
+  const cResult = obj.c(29);
+  context = context.context;
+  const sectionName = context.sectionName;
+  const onPress = context.onPress;
+  ({ items, entrypoint } = context);
+  const containerWidth = context.containerWidth;
+  const isLastTuple = context.isLastTuple;
+  const tmp3 = closure_26();
+  _slicedToArray = tmp3;
+  let num = 2;
+  if (sectionName(entrypoint[37])()) {
+    num = 4;
+  }
+  if (null != containerWidth) {
+    let tmp12;
+    const tmp9 = sectionName(entrypoint[27])((containerWidth - 2 * DEFAULT_CONTENT_PADDING - c22 * (num - 1)) / num);
+    const result = tmp9 / c23;
+    if (cResult[1] !== result) {
+      const tmp13 = sectionName(entrypoint[27])(result);
+      cResult[1] = result;
+      cResult[2] = tmp13;
+      tmp12 = tmp13;
+    } else {
+      tmp12 = cResult[2];
+    }
+    if (cResult[3] === tmp12) {
+      let tmp14;
+      if (cResult[4] === tmp9) {
+        tmp14 = cResult[5];
+      }
+      first = tmp14;
+    }
+    size = { width: tmp9, height: tmp12 };
+    cResult[3] = tmp12;
+    cResult[4] = tmp9;
+    cResult[5] = size;
+    tmp14 = size;
+  } else {
+    const _Symbol = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const size1 = { width: "diversity", height: "a" };
+      cResult[0] = size1;
+      first = size1;
+    } else {
+      first = cResult[0];
+    }
+  }
+  let tmp15;
+  if (!isLastTuple) {
+    tmp15 = c22;
+  }
+  if (cResult[6] !== tmp15) {
+    let obj2 = { marginBottom: tmp15 };
+    cResult[6] = tmp15;
+    cResult[7] = obj2;
+    tmp16 = obj2;
+  } else {
+    tmp16 = cResult[7];
+  }
+  if (cResult[8] === tmp3.activityItemTupleContainer) {
+    let tmp17;
+    let tmp18;
+    if (cResult[9] === tmp16) {
+      tmp17 = cResult[10];
+    }
+    if (cResult[11] === context) {
+      if (cResult[12] === entrypoint) {
+        if (cResult[13] === first) {
+          if (cResult[14] === items) {
+            if (cResult[15] === onPress) {
+              if (cResult[16] === sectionName) {
+                if (cResult[17] === tmp3.activityItemTupleShelfItemContainer) {
+                  tmp18 = cResult[18];
+                }
+                if (cResult[26] === tmp17) {
+                  let tmp21;
+                  if (cResult[27] === tmp18) {
+                    tmp21 = cResult[28];
+                  }
+                  return tmp21;
+                }
+                class R {
+                  constructor(arg0, arg1) {
+                    obj = { style: null, children: null };
+                    items = [, ];
+                    items[0] = closure_4.activityItemTupleShelfItemContainer;
+                    obj1 = { width: closure_5.width };
+                    items[1] = obj1;
+                    obj.style = items;
+                    obj4 = { context, sectionName, onPress, item: context, entrypoint, imageWidth: closure_5.width, imageHeight: closure_5.height };
+                    obj.children = jsx(f58166, obj4);
+                    return jsx(View, obj, "" + context.application.id + "-" + arg1);
+                  }
+                }
+                let obj3 = { style: tmp17, children: tmp18 };
+                const tmp23 = closure_19(closure_6, obj3);
+                cResult[26] = tmp17;
+                cResult[27] = tmp18;
+                cResult[28] = tmp23;
+                tmp21 = tmp23;
+              }
+            }
+          }
+        }
+      }
+    }
+    if (cResult[19] === context) {
+      if (cResult[20] === entrypoint) {
+        if (cResult[21] === first) {
+          if (cResult[22] === onPress) {
+            if (cResult[23] === sectionName) {
+              let tmp19;
+              if (cResult[24] === tmp3.activityItemTupleShelfItemContainer) {
+                tmp19 = cResult[25];
+              }
+              const mapped = items.map(tmp19);
+              class R {
+                constructor(arg0, arg1) {
+                  obj = { style: null, children: null };
+                  items = [, ];
+                  items[0] = closure_4.activityItemTupleShelfItemContainer;
+                  obj1 = { width: closure_5.width };
+                  items[1] = obj1;
+                  obj.style = items;
+                  obj4 = { context, sectionName, onPress, item: context, entrypoint, imageWidth: closure_5.width, imageHeight: closure_5.height };
+                  obj.children = jsx(f58166, obj4);
+                  return jsx(View, obj, "" + context.application.id + "-" + arg1);
+                }
+              }
+              cResult[12] = entrypoint;
+              cResult[13] = first;
+              cResult[14] = items;
+              cResult[15] = onPress;
+              cResult[16] = sectionName;
+              cResult[17] = tmp3.activityItemTupleShelfItemContainer;
+              cResult[18] = mapped;
+              tmp18 = mapped;
+            }
+          }
+        }
+      }
+    }
+    class R {
+      constructor(arg0, arg1) {
+        obj = { style: null, children: null };
+        items = [, ];
+        items[0] = closure_4.activityItemTupleShelfItemContainer;
+        obj1 = { width: closure_5.width };
+        items[1] = obj1;
+        obj.style = items;
+        obj4 = { context, sectionName, onPress, item: context, entrypoint, imageWidth: closure_5.width, imageHeight: closure_5.height };
+        obj.children = jsx(f58166, obj4);
+        return jsx(View, obj, "" + context.application.id + "-" + arg1);
+      }
+    }
+    cResult[19] = context;
+    cResult[20] = entrypoint;
+    cResult[21] = first;
+    cResult[22] = onPress;
+    cResult[23] = sectionName;
+    cResult[24] = tmp3.activityItemTupleShelfItemContainer;
+    cResult[25] = R;
+    tmp19 = R;
+  }
+  const items1 = [tmp3.activityItemTupleContainer, tmp16];
+  cResult[8] = tmp3.activityItemTupleContainer;
+  cResult[9] = tmp16;
+  cResult[10] = items1;
+  tmp17 = items1;
+}) : ((isLastTuple) => {
   let closure_5;
   let containerWidth;
   let context;
@@ -398,31 +1716,35 @@ function RecommendationItemTuple(isLastTuple) {
   ({ context: require, sectionName: importDefault, onPress: importAll, items, entrypoint: dependencyMap, containerWidth } = isLastTuple);
   let styles;
   isLastTuple = isLastTuple.isLastTuple;
-  const tmp = closure_25();
-  react = tmp;
+  const tmp = closure_26();
+  height = tmp;
   let num = 2;
   if (useIsWindowLargeDefault()) {
     num = 4;
   }
   const items1 = [containerWidth, num];
-  styles = react.useMemo(() => {
+  styles = height.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "Array", height: "channel" };
+      return { width: "diversity", height: "a" };
     } else {
-      const tmp6 = roundToNearestPixelDefault((tmp - 2 * DEFAULT_CONTENT_PADDING - 12 * (2 - 1)) / 2);
-      size = { width: tmp6, height: roundToNearestPixelDefault(tmp6 / c22) };
+      const tmp7 = roundToNearestPixelDefault((tmp - 2 * DEFAULT_CONTENT_PADDING - c22 * (2 - 1)) / 2);
+      size = { width: tmp7, height: roundToNearestPixelDefault(tmp7 / c23) };
       return size;
     }
   }, items1);
   const items2 = [tmp.activityItemTupleContainer, ];
+  let tmp4;
   const tmp2 = closure_19;
   const tmp3 = num;
+  if (!isLastTuple) {
+    tmp4 = c22;
+  }
   let obj = {
     style: items2,
     children: items.map((item, index) => {
       let items;
       let obj3;
-      const obj = { style: items, children: closure_19(RecommendationItem, obj3) };
+      const obj = { style: items, children: closure_19(closure_34, obj3) };
       items = [closure_5.activityItemTupleShelfItemContainer, ];
       const obj2 = { width: styles.width };
       items[1] = obj2;
@@ -430,10 +1752,264 @@ function RecommendationItemTuple(isLastTuple) {
       return closure_19(metroRequire, obj, "" + item.application.id + "-" + index);
     })
   };
-  items2[1] = { marginBottom: 12 };
+  items2[1] = { marginBottom: tmp4 };
   return tmp2(tmp3, obj);
-}
-function RecommendationItem(onPress) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+  let imageHeight;
+  let imageWidth;
+  let item;
+  let items1;
+  let sectionName;
+  let tmp32;
+  let tmp7;
+  let tmp9;
+  let tmpResult2;
+  const obj = react2;
+  const cResult = obj.c(43);
+  ({ item, sectionName } = onPress);
+  onPress = onPress.onPress;
+  ({ imageWidth, imageHeight } = onPress);
+  const tmp4 = closure_26();
+  const obj2 = HeroMedia;
+  const heroMediaDimensions = obj2.useHeroMediaDimensions();
+  let closure_2 = _slicedToArray(react.useState(false), 2)[1];
+  const application = item.application;
+  _slicedToArray(react.useState(false), 2);
+  if (cResult[0] !== application) {
+    const tmpResult = AppLauncherUtils;
+    const isEmbeddedAppResult = tmpResult.isEmbeddedApp(application);
+    cResult[0] = application;
+    cResult[1] = isEmbeddedAppResult;
+    tmp7 = isEmbeddedAppResult;
+  } else {
+    tmp7 = cResult[1];
+  }
+  let width = imageWidth;
+  if (imageWidth == null) {
+    width = heroMediaDimensions.width;
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = ["embedded_cover"];
+    cResult[2] = items;
+    tmp9 = items;
+  } else {
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] === application.id) {
+    let tmp10;
+    if (cResult[4] === width) {
+      tmp10 = cResult[5];
+    }
+    const tmp12 = useEmbeddedActivityBackgroundDefault(tmp10);
+    const tmp11 = importDefault;
+    if (cResult[6] === tmp12) {
+      let tmp13;
+      if (cResult[7] === item.overrideImageUrl) {
+        tmp13 = cResult[8];
+      }
+      if (cResult[9] === application) {
+        if (cResult[10] === onPress) {
+          let tmp18;
+          class O {
+            constructor() {
+              tmp = onPress(application, sectionName);
+              return;
+            }
+          }
+          const tmp17 = "loading" === tmp13.state || null == tmp13.url;
+          if (tmp16) {
+            const _Symbol2 = Symbol;
+            class O {
+              constructor() {
+                tmp = onPress(application, sectionName);
+                return;
+              }
+            }
+            tmp18 = tmp26;
+          } else {
+            tmp18 = null;
+            if (!tmp17) {
+              let tmp21;
+              const _Symbol = Symbol;
+              class O {
+                constructor() {
+                  tmp = onPress(application, sectionName);
+                  return;
+                }
+              }
+              if (cResult[15] !== tmp13.url) {
+                const obj3 = { uri: tmp13.url };
+                class O {
+                  constructor() {
+                    tmp = onPress(application, sectionName);
+                    return;
+                  }
+                }
+                cResult[15] = tmp13.url;
+                cResult[16] = obj3;
+                tmp21 = obj3;
+              } else {
+                tmp21 = cResult[16];
+              }
+              if (cResult[17] === tmp4.activityItemImage) {
+                let tmp22;
+                if (cResult[18] === tmp21) {
+                  tmp22 = cResult[19];
+                }
+                tmp18 = tmp22;
+              }
+              const obj4 = { onError: tmp20, style: tmp4.activityItemImage, source: tmp21, resizeMode: "cover" };
+              const tmp24 = closure_19(tmp11(5896), obj4);
+              cResult[17] = tmp4.activityItemImage;
+              cResult[18] = tmp21;
+              cResult[19] = tmp24;
+              tmp22 = tmp24;
+            }
+          }
+          if (cResult[20] === imageHeight) {
+            let tmp27;
+            if (cResult[21] === imageWidth) {
+              tmp27 = cResult[22];
+            }
+            if (cResult[23] === tmp4.activityImageContainer) {
+              let tmp29;
+              if (cResult[24] === tmp27) {
+                tmp29 = cResult[25];
+              }
+              if (cResult[26] === application) {
+                let tmp31;
+                if (cResult[27] === tmp7) {
+                  tmp31 = cResult[28];
+                }
+                if (cResult[29] === tmp18) {
+                  if (cResult[30] === tmp29) {
+                    let tmp38;
+                    if (cResult[33] !== application.name) {
+                      const obj5 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", children: null };
+                      class O {
+                        constructor() {
+                          tmp = onPress(application, sectionName);
+                          return;
+                        }
+                      }
+                      const tmp40 = closure_19(Text_Text.Text, obj5);
+                      cResult[33] = application.name;
+                      cResult[34] = tmp40;
+                      tmp38 = tmp40;
+                    } else {
+                      tmp38 = cResult[34];
+                    }
+                    class O {
+                      constructor() {
+                        tmp = onPress(application, sectionName);
+                        return;
+                      }
+                    }
+                    const obj6 = { style: tmp4.activityDetailsContainer, children: tmp38 };
+                    cResult[35] = tmp4.activityDetailsContainer;
+                    cResult[36] = tmp38;
+                    cResult[37] = closure_19(metroRequire, obj6);
+                    const tmp44 = closure_19(metroRequire, obj6);
+                  }
+                }
+                class O {
+                  constructor() {
+                    tmp = onPress(application, sectionName);
+                    return;
+                  }
+                }
+                const obj7 = { style: tmp29, children: items1 };
+                items1 = [tmp18, tmp31];
+                cResult[29] = tmp18;
+                cResult[30] = tmp29;
+                cResult[31] = tmp31;
+                cResult[32] = closure_20(metroRequire, obj7);
+                const tmp37 = closure_20(metroRequire, obj7);
+              }
+              class O {
+                constructor() {
+                  tmp = onPress(application, sectionName);
+                  return;
+                }
+              }
+              if (tmp32) {
+                const obj8 = { labelType: tmpResult2.getShelfBadgeTypeIfActive(application) };
+                class O {
+                  constructor() {
+                    tmp = onPress(application, sectionName);
+                    return;
+                  }
+                }
+                tmpResult2 = AppLauncherUtils;
+                tmp32 = closure_19(tmp34, obj8);
+              }
+              cResult[26] = application;
+              cResult[27] = tmp7;
+              cResult[28] = tmp32;
+              tmp31 = tmp32;
+            }
+            class O {
+              constructor() {
+                tmp = onPress(application, sectionName);
+                return;
+              }
+            }
+            tmp30[0] = tmp4.activityImageContainer;
+            tmp30[1] = tmp27;
+            cResult[23] = tmp4.activityImageContainer;
+            cResult[24] = tmp27;
+            cResult[25] = tmp30;
+            tmp29 = tmp30;
+          }
+          let tmp28 = null != imageWidth && null != imageHeight;
+          if (tmp28) {
+            size = { width: imageWidth, height: null };
+            class O {
+              constructor() {
+                tmp = onPress(application, sectionName);
+                return;
+              }
+            }
+            tmp28 = size;
+          }
+          cResult[20] = imageHeight;
+          cResult[21] = imageWidth;
+          cResult[22] = tmp28;
+          tmp27 = tmp28;
+        }
+      }
+      class O {
+        constructor() {
+          tmp = onPress(application, sectionName);
+          return;
+        }
+      }
+      cResult[9] = application;
+      cResult[10] = onPress;
+      cResult[11] = sectionName;
+      cResult[12] = O;
+    }
+    if (null != item.overrideImageUrl) {
+      class O {
+        constructor() {
+          tmp = onPress(application, sectionName);
+          return;
+        }
+      }
+    }
+    cResult[6] = tmp12;
+    cResult[7] = item.overrideImageUrl;
+    cResult[8] = tmp12;
+    tmp13 = tmp14;
+  }
+  const obj10 = { applicationId: application.id, size: width, names: tmp9 };
+  cResult[3] = application.id;
+  cResult[4] = width;
+  cResult[5] = obj10;
+  tmp10 = obj10;
+}) : ((onPress) => {
   let closure_2;
   let context;
   let entrypoint;
@@ -453,7 +2029,7 @@ function RecommendationItem(onPress) {
   onPress = onPress.onPress;
   ({ imageWidth, imageHeight, context, entrypoint } = onPress);
   closure_2 = undefined;
-  const tmp = closure_25();
+  const tmp = closure_26();
   const obj = HeroMedia;
   const heroMediaDimensions = obj.useHeroMediaDimensions();
   [first, closure_2] = react.useState(false);
@@ -482,7 +2058,7 @@ function RecommendationItem(onPress) {
   }
   const tmp13 = "loading" === tmp9Result.state || null == tmp9Result.url;
   if (tmp12) {
-    tmp14 = closure_19(tmp8(11567), {});
+    tmp14 = closure_19(tmp8(11453), {});
   } else {
     tmp14 = null;
     if (!tmp13) {
@@ -495,13 +2071,13 @@ function RecommendationItem(onPress) {
         resizeMode: "cover"
       };
       obj7 = { uri: tmp9Result.url };
-      tmp14 = closure_19(tmp8(5899), obj6);
+      tmp14 = closure_19(tmp8(5896), obj6);
     }
   }
   const items1 = [tmp.activityImageContainer, ];
   let tmp19 = null != imageWidth;
   const obj8 = { style: tmp.activityItemContainer, onPress: callback, children: items3 };
-  const PressableScale = tmp2(8370).PressableScale;
+  const PressableScale = tmp2(8367).PressableScale;
   if (tmp19) {
     tmp19 = null != imageHeight;
   }
@@ -524,24 +2100,102 @@ function RecommendationItem(onPress) {
   obj12 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", children: application.name };
   items3[1] = closure_19(metroRequire, obj11);
   return closure_20(PressableScale, obj8);
-}
-function Divider() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let items;
-  const tmp = closure_25();
+  const obj = react2;
+  const cResult = obj.c(6);
+  const tmp2 = closure_26();
+  const rect = useSafeAreaInsetsDefault();
+  const diff = -DEFAULT_CONTENT_PADDING - rect.left;
+  const diff1 = -DEFAULT_CONTENT_PADDING - rect.right;
+  if (cResult[0] === diff) {
+    let tmp5;
+    if (cResult[1] === diff1) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] === tmp2.divider) {
+      let tmp6;
+      if (cResult[4] === tmp5) {
+        tmp6 = cResult[5];
+      }
+      return tmp6;
+    }
+    const obj2 = { style: items };
+    items = [tmp2.divider, tmp5];
+    const tmp9 = closure_19(metroRequire, obj2);
+    cResult[3] = tmp2.divider;
+    cResult[4] = tmp5;
+    cResult[5] = tmp9;
+    tmp6 = tmp9;
+  }
+  const obj3 = { marginLeft: diff, marginRight: diff1 };
+  cResult[0] = diff;
+  cResult[1] = diff1;
+  cResult[2] = obj3;
+  tmp5 = obj3;
+}) : (() => {
+  let items;
+  const tmp = closure_26();
   const rect = useSafeAreaInsetsDefault();
   const obj = { style: items };
   items = [tmp.divider, ];
   const obj2 = { marginLeft: -DEFAULT_CONTENT_PADDING - rect.left, marginRight: -DEFAULT_CONTENT_PADDING - rect.right };
   items[1] = obj2;
   return closure_19(metroRequire, obj);
-}
-function RecommendationSectionHeader(arg0) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let index;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(8);
+  ({ index, children } = arg0);
+  const tmp4 = closure_26();
+  if (cResult[0] !== index) {
+    let obj2 = null;
+    if (0 !== index) {
+      obj2 = { marginTop: 24 };
+    }
+    cResult[0] = index;
+    cResult[1] = obj2;
+    tmp5 = obj2;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === tmp4.sectionHeader) {
+    let tmp6;
+    if (cResult[3] === tmp5) {
+      tmp6 = cResult[4];
+    }
+    if (cResult[5] === children) {
+      let tmp7;
+      if (cResult[6] === tmp6) {
+        tmp7 = cResult[7];
+      }
+      return tmp7;
+    }
+    const obj3 = { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp6, children };
+    const tmp9 = closure_19(Text_Text.Text, obj3);
+    cResult[5] = children;
+    cResult[6] = tmp6;
+    cResult[7] = tmp9;
+    tmp7 = tmp9;
+  }
+  const items = [tmp4.sectionHeader, tmp5];
+  cResult[2] = tmp4.sectionHeader;
+  cResult[3] = tmp5;
+  cResult[4] = items;
+  tmp6 = items;
+}) : ((arg0) => {
   let children;
   let index;
   ({ index, children } = arg0);
-  const style = [closure_25().sectionHeader, ];
+  const style = [closure_26().sectionHeader, ];
   let obj = null;
-  closure_25();
+  closure_26();
   const Text = Text_Text.Text;
   const tmp2 = closure_19;
   if (0 !== index) {
@@ -549,92 +2203,5645 @@ function RecommendationSectionHeader(arg0) {
   }
   style[1] = obj;
   return tmp2(Text, { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", style, children });
-}
-function getRecommendationItemsWithViewAll(arr, sectionName, section, arg3) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
+  let bottomVisibilityInsetRef;
+  let c22;
+  let closure_23;
   let closure_3;
-  let reduce;
-  _require = sectionName;
-  let COLLAPSED_LIST_ITEM_MAX = arg3;
-  if (arg3 === undefined) {
-    let tmp2 = dependencyMap;
-    COLLAPSED_LIST_ITEM_MAX = require("ExpandableList").COLLAPSED_LIST_ITEM_MAX;
-  }
-  const sectionOverallPosition = tmp3;
-  let bound;
-  dependencyMap = undefined;
-  let items;
-  if (0 === arr.length) {
-    return [];
+  let flashListRef;
+  let hasViewedActivityItem;
+  let hasViewedLearnMoreItem;
+  let inThisServerItems;
+  let loading;
+  let ref2;
+  let sectionHeader;
+  let showNoPermsState;
+  let showsEmptyState;
+  let tmp12;
+  let tmp13;
+  let tmp31;
+  let tmp38;
+  let tmp = navigation;
+  let tmp2 = dependencyMap;
+  let obj = navigation(576);
+  const cResult = obj.c(154);
+  navigation = navigation.navigation;
+  const params = navigation.route.params;
+  const context = params.context;
+  const initialSearchQuery = params.initialSearchQuery;
+  let obj2 = navigation(11455);
+  const viewableAppLauncherHomeItems = obj2.useViewableAppLauncherHomeItems();
+  const handleViewableItemsChanged = viewableAppLauncherHomeItems.handleViewableItemsChanged;
+  const tmp5 = context;
+  ({ hasViewedActivityItem, hasViewedLearnMoreItem } = viewableAppLauncherHomeItems);
+  let tmp6 = context(7719)(hasViewedActivityItem);
+  const tmp7 = context(7719)(hasViewedLearnMoreItem);
+  dependencyMap = tmp7;
+  const tmp8 = ref2();
+  _slicedToArray = tmp8;
+  const tmp9 = context(6471)();
+  height = tmp9;
+  const bottom = context(1619)().bottom;
+  let obj3 = navigation(10749);
+  const requiredAppLauncherContext = obj3.useRequiredAppLauncherContext();
+  const chatInputRef = requiredAppLauncherContext.chatInputRef;
+  const keyboardCloseReasonRef = requiredAppLauncherContext.keyboardCloseReasonRef;
+  const width = requiredAppLauncherContext.width;
+  const entrypoint = requiredAppLauncherContext.entrypoint;
+  const onActivityItemSelected = requiredAppLauncherContext.onActivityItemSelected;
+  size = context(1485)();
+  isLandscape = tmp11;
+  if (cResult[0] !== entrypoint) {
+    const fn = function o() {
+      if (entrypoint === AppLauncherTypes.AppLauncherEntrypoint.VOICE) {
+        const obj = EmbeddedActivitiesActionCreatorsAll;
+        const result = obj.dismissNewActivityIndicator();
+      }
+    };
+    let items = [entrypoint];
+    cResult[0] = entrypoint;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp13 = items;
+    tmp12 = fn;
   } else {
-    const _Math = Math;
-    bound = Math.min(length, COLLAPSED_LIST_ITEM_MAX);
-    dependencyMap = tmp10;
-    items = [];
-    const obj2 = { type: require("AppLauncherHomeTypes").AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER, section, sectionName, numItems: arr.length, numVisibleItems: bound };
-    items.push(obj2);
-    const substr = arr.slice(0, bound);
-    const item = substr.forEach((application, sectionPosition) => {
-      let tmp2;
-      const push = items.push;
-      const obj = { type: AppLauncherHomeTypes.AppLauncherHomeListItemType.RECOMMENDATION_APP, application: application.application, showsPromoted: application.showsPromoted, isFirstRow: 0 === sectionPosition, isLastRow: tmp2, sectionName, sectionPosition, sectionOverallPosition };
-      tmp2 = sectionPosition === bound - 1 && !closure_3;
-      push(obj);
-    });
-    const tmp11 = _require;
-    if (bound < arr.length) {
-      let obj = {
-        type: tmp11(11570).AppLauncherHomeListItemType.VIEW_ALL,
-        applications: arr.map((application) => application.application),
-        promotedApplicationIds: reduce((add, showsPromoted) => {
-              if (showsPromoted.showsPromoted) {
-                add.add(showsPromoted.application.id);
-              }
-              return add;
-            }, set),
-        sectionName,
-        sectionOverallPosition: tmp3,
-        title: section
-      };
-      let push = items.push;
-      const _Set = Set;
-      const self = this;
-      const self2 = this;
-      reduce = arr.reduce;
-      set = new Set();
-      push(obj);
-    }
-    return items;
+    tmp12 = cResult[1];
+    tmp13 = cResult[2];
   }
-}
-let _slicedToArray = _slicedToArray_mod;
-let react = react_mod;
-({ View: metroRequire, StyleSheet } = react_native);
-({ useContextIndexState: metroImportAll, useUserIndexState: c9 } = ApplicationCommandIndexStore);
-const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
-const FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG = AppLauncherNativeConstants.FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG;
-({ AnalyticEvents: closure_16, Permissions: closure_17 } = Constants);
-const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-({ jsx: closure_19, jsxs: closure_20, Fragment: closure_21 } = Fragment);
-let c22 = 1.7777777777777777;
-let closure_23 = [];
-const PX_4 = nativeDefault.space.PX_4;
-const APP_LAUNCHER_IN_TEXT = ApplicationCollectionSurface.ApplicationCollectionSurface.APP_LAUNCHER_IN_TEXT;
-let createStyles = createStyles_mod;
-let obj = { container: obj2, topBackgroundFill: rect, sectionHeader: { marginBottom: 8, marginTop: 8 }, list: obj3, searchBarContainer: { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: DEFAULT_CONTENT_PADDING }, divider: obj4, appRowLabelWithPromotedContainer: { overflow: "hidden", flexDirection: "row", alignItems: "center", gap: PX_4 }, appRowLabelWithPromotedTextContainer: { flexShrink: 1 }, promotedLabel: obj5, activityItemContainer: obj6, activityImageContainer: obj7, activityDetailsContainer: obj8, activityItemTupleContainer: { flexDirection: "row", gap: 12 }, activityItemTupleShelfItemContainer: { width: "50%", flexShrink: 1 }, activityItemImage: { height: "100%", width: "100%" }, submittingOverlay: { position: "absolute", top: 0, left: 0, height: "100%", width: "100%" } };
-obj2 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, flex: 1 };
-createStyles = createStyles.createStyles;
-rect = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, position: "absolute", top: -16, left: 0, right: 0, height: 16 };
-obj3 = { paddingHorizontal: DEFAULT_CONTENT_PADDING, backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-obj4 = { borderColor: nativeDefault.colors.BORDER_STRONG, borderTopWidth: 1, marginTop: nativeDefault.space.PX_24 };
-obj5 = { alignSelf: "center", justifyContent: "center", paddingVertical: 2, paddingHorizontal: nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: nativeDefault.radii.lg };
-obj6 = { borderRadius: nativeDefault.radii.md, overflow: "hidden", height: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_CARD_DEFAULT, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE };
-obj7 = { justifyContent: "center", alignItems: "center", height: 120, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
-obj8 = { padding: nativeDefault.space.PX_12, flexGrow: 1, flexShrink: 1 };
-let closure_25 = createStyles(obj);
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/AppLauncherHomeScreen.tsx");
-
-export default function AppLauncherHomeScreen(route) {
+  const obj4 = height;
+  const effect = height.useEffect(tmp12, tmp13);
+  if (cResult[3] === chatInputRef) {
+    if (cResult[6] === context) {
+      if (cResult[7] === entrypoint) {
+        let tmp16;
+        if (cResult[8] === navigation) {
+          tmp16 = cResult[9];
+        }
+        closure_12 = tmp16;
+        if (cResult[10] === context) {
+          if (cResult[11] === entrypoint) {
+            let tmp17;
+            if (cResult[12] === navigation) {
+              tmp17 = cResult[13];
+            }
+            const triggeredOnboardingContentMetadata = tmp17;
+            if (cResult[14] === context) {
+              let tmp18;
+              if (cResult[15] === entrypoint) {
+                tmp18 = cResult[16];
+              }
+              const tmp20 = closure_38(tmp18);
+              const list = tmp20.list;
+              const frecencyCommands = tmp20.frecencyCommands;
+              const frecencyUsedAppList = tmp20.frecencyUsedAppList;
+              const sectionDescriptors = tmp20.sectionDescriptors;
+              ({ loading, showsEmptyState, showNoPermsState, inThisServerItems } = tmp20);
+              if (cResult[17] === context) {
+                if (cResult[18] === entrypoint) {
+                  if (cResult[19] === navigation) {
+                    let tmp21;
+                    if (cResult[20] === sectionDescriptors) {
+                      tmp21 = cResult[21];
+                    }
+                    let closure_19 = tmp21;
+                    if (cResult[22] === context) {
+                      if (cResult[23] === entrypoint) {
+                        if (cResult[24] === frecencyCommands) {
+                          if (cResult[25] === frecencyUsedAppList) {
+                            if (cResult[26] === navigation) {
+                              if (cResult[29] === context) {
+                                if (cResult[30] === inThisServerItems) {
+                                  if (cResult[33] === context) {
+                                    if (cResult[34] === entrypoint) {
+                                      if (cResult[35] === navigation) {
+                                        let tmpResult = tmp(11457);
+                                        const clickOnHomeActivityOpensAppDetails = tmpResult.useClickOnHomeActivityOpensAppDetails();
+                                        if (cResult[38] === clickOnHomeActivityOpensAppDetails) {
+                                          if (cResult[39] === context) {
+                                            if (cResult[40] === entrypoint) {
+                                              if (cResult[41] === tmp7) {
+                                                if (cResult[42] === size.width > size.height) {
+                                                  if (cResult[43] === list.length) {
+                                                    if (cResult[44] === navigation) {
+                                                      if (cResult[45] === onActivityItemSelected) {
+                                                        if (cResult[46] === tmp17) {
+                                                          if (cResult[47] === tmp16) {
+                                                            if (cResult[48] === tmp21) {
+                                                              if (cResult[49] === tmp9) {
+                                                                if (cResult[50] === tmp8.sectionHeader) {
+                                                                  let tmp32;
+                                                                  let tmp36;
+                                                                  let tmp35;
+                                                                  let tmp41;
+                                                                  let tmp40;
+                                                                  let tmp44;
+                                                                  let tmp49;
+                                                                  let tmp48;
+                                                                  let tmp58;
+                                                                  let tmp60;
+                                                                  let tmp65;
+                                                                  let tmp64;
+                                                                  let tmp69;
+                                                                  let tmp68;
+                                                                  let tmp27 = null;
+                                                                  ref = obj4.useRef(null);
+                                                                  class Ce {
+                                                                    constructor(arg0) {
+                                                                      item = navigation.item;
+                                                                      index = navigation.index;
+                                                                      type = item.type;
+                                                                      tmp = navigation;
+                                                                      tmp2 = closure_3;
+                                                                      if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                        tmp40 = closure_19;
+                                                                        tmp41 = context;
+                                                                        obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                        num2 = 0;
+                                                                        obj1.isFirstRow = 0 === index;
+                                                                        tmp42 = list;
+                                                                        num3 = 1;
+                                                                        obj1.isLastRow = index === list.length - 1;
+                                                                        obj15 = { height: null };
+                                                                        tmp43 = closure_5;
+                                                                        obj15.height = closure_5;
+                                                                        obj1.style = obj15;
+                                                                        return closure_19(context(tmp2[51]), obj1);
+                                                                      } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                        tmp38 = closure_19;
+                                                                        tmp39 = closure_4;
+                                                                        items = [, ];
+                                                                        items[0] = closure_4.sectionHeader;
+                                                                        num = 0;
+                                                                        obj16 = null;
+                                                                        Text = tmp(tmp2[18]).Text;
+                                                                        if (0 !== index) {
+                                                                          obj16 = { marginTop: 24 };
+                                                                        }
+                                                                        obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                        items[1] = obj16;
+                                                                        obj17.style = items;
+                                                                        obj17.children = item.section;
+                                                                        return tmp38(Text, obj17);
+                                                                      } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                        tmp36 = closure_19;
+                                                                        tmp37 = closure_30;
+                                                                        obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                        obj18.section = item.section;
+                                                                        obj18.onPress = function onPress(shelfData) {
+                                                                          const obj = { shelfData, sectionName: item.sectionName };
+                                                                          triggeredOnboardingContentMetadata(obj);
+                                                                        };
+                                                                        ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                        return closure_19(closure_30, obj18, item.section.application.id);
+                                                                      } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                        obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                        tmp29 = context;
+                                                                        obj19.context = context;
+                                                                        tmp27 = closure_19;
+                                                                        tmp28 = closure_31;
+                                                                        obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                        obj19.onPress = function onPress(shelfData) {
+                                                                          let tmp2;
+                                                                          const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                          tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                          const tmp = triggeredOnboardingContentMetadata;
+                                                                          if (!tmp2) {
+                                                                            tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                          }
+                                                                          tmp(obj);
+                                                                        };
+                                                                        tmp30 = closure_20;
+                                                                        tmp31 = !closure_20;
+                                                                        if (tmp31) {
+                                                                          tmp32 = entrypoint;
+                                                                          tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                        }
+                                                                        obj19.usesHandleActivityItemSelected = tmp31;
+                                                                        tmp33 = onActivityItemSelected;
+                                                                        obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                        ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                        tmp34 = entrypoint;
+                                                                        obj19.entrypoint = entrypoint;
+                                                                        tmp35 = width;
+                                                                        obj19.containerWidth = width;
+                                                                        return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                      } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                        tmp22 = closure_19;
+                                                                        tmp23 = closure_33;
+                                                                        obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                        tmp24 = context;
+                                                                        obj20.context = context;
+                                                                        obj20.sectionName = item.sectionName;
+                                                                        obj20.onPress = function onPress(application, sectionName) {
+                                                                          const obj = { application, sectionName };
+                                                                          return closure_1_19(obj);
+                                                                        };
+                                                                        ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                        tmp25 = entrypoint;
+                                                                        obj20.entrypoint = entrypoint;
+                                                                        tmp26 = width;
+                                                                        obj20.containerWidth = width;
+                                                                        return closure_19(closure_33, obj20);
+                                                                      } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                        tmp19 = closure_19;
+                                                                        tmp20 = closure_29;
+                                                                        obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                        obj21.section = item.section;
+                                                                        obj21.onPress = function onPress() {
+                                                                          closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                        };
+                                                                        ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                        obj22 = { height: null };
+                                                                        tmp21 = closure_5;
+                                                                        obj22.height = closure_5;
+                                                                        obj21.style = obj22;
+                                                                        return closure_19(closure_29, obj21, item.section.id);
+                                                                      } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                        tmp17 = closure_19;
+                                                                        tmp18 = closure_1_36;
+                                                                        obj23 = { index: null, children: null };
+                                                                        obj23.index = index;
+                                                                        obj23.children = item.section;
+                                                                        return closure_19(closure_1_36, obj23);
+                                                                      } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                        tmp14 = closure_19;
+                                                                        tmp15 = context;
+                                                                        obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                        obj24.application = item.item.application;
+                                                                        ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                        obj24.onPress = function onPress() {
+                                                                          const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                          return closure_19(obj);
+                                                                        };
+                                                                        tmp16 = closure_11;
+                                                                        obj24.isLandscape = closure_11;
+                                                                        ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                        return closure_19(context(tmp2[52]), obj24);
+                                                                      } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                        tmp12 = closure_19;
+                                                                        tmp13 = context;
+                                                                        obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                        ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                        obj25.onPress = function onPress() {
+                                                                          const obj = { application: item.application, sectionName: item.sectionName };
+                                                                          return closure_19(obj);
+                                                                        };
+                                                                        obj25.showsPromoted = item.showsPromoted;
+                                                                        return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                      } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                        tmp10 = closure_19;
+                                                                        tmp11 = context;
+                                                                        obj26 = { title: null, onPress: null };
+                                                                        obj26.title = item.title;
+                                                                        obj26.onPress = function onPress() {
+                                                                          const applications = item.applications;
+                                                                          const mapped = applications.map((item) => item);
+                                                                          let obj = AppLauncherNativeUtils;
+                                                                          const obj2 = {
+                                                                            location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                            navigation,
+                                                                            context,
+                                                                            sectionName: item.sectionName,
+                                                                            sectionOverallPosition: item.sectionOverallPosition,
+                                                                            applications: mapped,
+                                                                            sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                            commands: [],
+                                                                            sectionDescriptors: mapped.map((item) => {
+                                                                              const obj = item(closure_1_3[49]);
+                                                                              return obj.getApplicationCommandSection(item);
+                                                                            }),
+                                                                            title: item.title,
+                                                                            promotedApplicationIds: item.promotedApplicationIds
+                                                                          };
+                                                                          const result = obj.handleViewAllSelected(obj2);
+                                                                        };
+                                                                        return closure_19(context(tmp2[54]), obj26);
+                                                                      } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                        tmp8 = closure_19;
+                                                                        tmp9 = closure_1_35;
+                                                                        return closure_19(closure_1_35, {});
+                                                                      } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                        tmp4 = closure_19;
+                                                                        tmp5 = context;
+                                                                        obj = { visible: null };
+                                                                        tmp7 = closure_3;
+                                                                        tmp6 = context(tmp2[55]);
+                                                                        obj.visible = closure_3.valueOf();
+                                                                        return closure_19(tmp6, obj);
+                                                                      } else {
+                                                                        tmp3 = null;
+                                                                        return null;
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                  [tmp31, c22] = _slicedToArray(obj4.useState(false), 2);
+                                                                  const tmp30 = _slicedToArray(obj4.useState(false), 2);
+                                                                  if (cResult[53] !== entrypoint) {
+                                                                    const tmp5Result = tmp5(12);
+                                                                    const debounceResult = tmp5Result.debounce((query) => {
+                                                                      const obj = AppAnalyticsUtils;
+                                                                      const obj2 = { query, source: entrypoint };
+                                                                      obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_QUERY_TYPED, obj2);
+                                                                    }, 400, { leading: false, trailing: true });
+                                                                    cResult[53] = entrypoint;
+                                                                    class Ce {
+                                                                      constructor(arg0) {
+                                                                        item = navigation.item;
+                                                                        index = navigation.index;
+                                                                        type = item.type;
+                                                                        tmp = navigation;
+                                                                        tmp2 = closure_3;
+                                                                        if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                          tmp40 = closure_19;
+                                                                          tmp41 = context;
+                                                                          obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                          num2 = 0;
+                                                                          obj1.isFirstRow = 0 === index;
+                                                                          tmp42 = list;
+                                                                          num3 = 1;
+                                                                          obj1.isLastRow = index === list.length - 1;
+                                                                          obj15 = { height: null };
+                                                                          tmp43 = closure_5;
+                                                                          obj15.height = closure_5;
+                                                                          obj1.style = obj15;
+                                                                          return closure_19(context(tmp2[51]), obj1);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                          tmp38 = closure_19;
+                                                                          tmp39 = closure_4;
+                                                                          items = [, ];
+                                                                          items[0] = closure_4.sectionHeader;
+                                                                          num = 0;
+                                                                          obj16 = null;
+                                                                          Text = tmp(tmp2[18]).Text;
+                                                                          if (0 !== index) {
+                                                                            obj16 = { marginTop: 24 };
+                                                                          }
+                                                                          obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                          items[1] = obj16;
+                                                                          obj17.style = items;
+                                                                          obj17.children = item.section;
+                                                                          return tmp38(Text, obj17);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                          tmp36 = closure_19;
+                                                                          tmp37 = closure_30;
+                                                                          obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                          obj18.section = item.section;
+                                                                          obj18.onPress = function onPress(shelfData) {
+                                                                            const obj = { shelfData, sectionName: item.sectionName };
+                                                                            triggeredOnboardingContentMetadata(obj);
+                                                                          };
+                                                                          ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                          return closure_19(closure_30, obj18, item.section.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                          obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp29 = context;
+                                                                          obj19.context = context;
+                                                                          tmp27 = closure_19;
+                                                                          tmp28 = closure_31;
+                                                                          obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                          obj19.onPress = function onPress(shelfData) {
+                                                                            let tmp2;
+                                                                            const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                            tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                            const tmp = triggeredOnboardingContentMetadata;
+                                                                            if (!tmp2) {
+                                                                              tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            tmp(obj);
+                                                                          };
+                                                                          tmp30 = closure_20;
+                                                                          tmp31 = !closure_20;
+                                                                          if (tmp31) {
+                                                                            tmp32 = entrypoint;
+                                                                            tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                          }
+                                                                          obj19.usesHandleActivityItemSelected = tmp31;
+                                                                          tmp33 = onActivityItemSelected;
+                                                                          obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                          ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                          tmp34 = entrypoint;
+                                                                          obj19.entrypoint = entrypoint;
+                                                                          tmp35 = width;
+                                                                          obj19.containerWidth = width;
+                                                                          return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                          tmp22 = closure_19;
+                                                                          tmp23 = closure_33;
+                                                                          obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp24 = context;
+                                                                          obj20.context = context;
+                                                                          obj20.sectionName = item.sectionName;
+                                                                          obj20.onPress = function onPress(application, sectionName) {
+                                                                            const obj = { application, sectionName };
+                                                                            return closure_1_19(obj);
+                                                                          };
+                                                                          ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                          tmp25 = entrypoint;
+                                                                          obj20.entrypoint = entrypoint;
+                                                                          tmp26 = width;
+                                                                          obj20.containerWidth = width;
+                                                                          return closure_19(closure_33, obj20);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                          tmp19 = closure_19;
+                                                                          tmp20 = closure_29;
+                                                                          obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                          obj21.section = item.section;
+                                                                          obj21.onPress = function onPress() {
+                                                                            closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                          };
+                                                                          ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                          obj22 = { height: null };
+                                                                          tmp21 = closure_5;
+                                                                          obj22.height = closure_5;
+                                                                          obj21.style = obj22;
+                                                                          return closure_19(closure_29, obj21, item.section.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                          tmp17 = closure_19;
+                                                                          tmp18 = closure_1_36;
+                                                                          obj23 = { index: null, children: null };
+                                                                          obj23.index = index;
+                                                                          obj23.children = item.section;
+                                                                          return closure_19(closure_1_36, obj23);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                          tmp14 = closure_19;
+                                                                          tmp15 = context;
+                                                                          obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                          obj24.application = item.item.application;
+                                                                          ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                          obj24.onPress = function onPress() {
+                                                                            const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          tmp16 = closure_11;
+                                                                          obj24.isLandscape = closure_11;
+                                                                          ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                          return closure_19(context(tmp2[52]), obj24);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                          tmp12 = closure_19;
+                                                                          tmp13 = context;
+                                                                          obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                          ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                          obj25.onPress = function onPress() {
+                                                                            const obj = { application: item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          obj25.showsPromoted = item.showsPromoted;
+                                                                          return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                          tmp10 = closure_19;
+                                                                          tmp11 = context;
+                                                                          obj26 = { title: null, onPress: null };
+                                                                          obj26.title = item.title;
+                                                                          obj26.onPress = function onPress() {
+                                                                            const applications = item.applications;
+                                                                            const mapped = applications.map((item) => item);
+                                                                            let obj = AppLauncherNativeUtils;
+                                                                            const obj2 = {
+                                                                              location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                              navigation,
+                                                                              context,
+                                                                              sectionName: item.sectionName,
+                                                                              sectionOverallPosition: item.sectionOverallPosition,
+                                                                              applications: mapped,
+                                                                              sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                              commands: [],
+                                                                              sectionDescriptors: mapped.map((item) => {
+                                                                                const obj = item(closure_1_3[49]);
+                                                                                return obj.getApplicationCommandSection(item);
+                                                                              }),
+                                                                              title: item.title,
+                                                                              promotedApplicationIds: item.promotedApplicationIds
+                                                                            };
+                                                                            const result = obj.handleViewAllSelected(obj2);
+                                                                          };
+                                                                          return closure_19(context(tmp2[54]), obj26);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                          tmp8 = closure_19;
+                                                                          tmp9 = closure_1_35;
+                                                                          return closure_19(closure_1_35, {});
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                          tmp4 = closure_19;
+                                                                          tmp5 = context;
+                                                                          obj = { visible: null };
+                                                                          tmp7 = closure_3;
+                                                                          tmp6 = context(tmp2[55]);
+                                                                          obj.visible = closure_3.valueOf();
+                                                                          return closure_19(tmp6, obj);
+                                                                        } else {
+                                                                          tmp3 = null;
+                                                                          return null;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    cResult[54] = debounceResult;
+                                                                    tmp32 = debounceResult;
+                                                                  } else {
+                                                                    tmp32 = cResult[54];
+                                                                  }
+                                                                  v17777777777777777 = tmp32;
+                                                                  ref = obj4.useRef(null);
+                                                                  const _Symbol = Symbol;
+                                                                  let str = "react.memo_cache_sentinel";
+                                                                  if (cResult[55] === Symbol.for("react.memo_cache_sentinel")) {
+                                                                    class Re {
+                                                                      constructor() {
+                                                                        return () => {
+                                                                          current = ref.current;
+                                                                          if (current != null) {
+                                                                            current.cancel();
+                                                                          }
+                                                                        };
+                                                                      }
+                                                                    }
+                                                                    const items1 = [];
+                                                                    cResult[55] = Re;
+                                                                    class Ce {
+                                                                      constructor(arg0) {
+                                                                        item = navigation.item;
+                                                                        index = navigation.index;
+                                                                        type = item.type;
+                                                                        tmp = navigation;
+                                                                        tmp2 = closure_3;
+                                                                        if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                          tmp40 = closure_19;
+                                                                          tmp41 = context;
+                                                                          obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                          num2 = 0;
+                                                                          obj1.isFirstRow = 0 === index;
+                                                                          tmp42 = list;
+                                                                          num3 = 1;
+                                                                          obj1.isLastRow = index === list.length - 1;
+                                                                          obj15 = { height: null };
+                                                                          tmp43 = closure_5;
+                                                                          obj15.height = closure_5;
+                                                                          obj1.style = obj15;
+                                                                          return closure_19(context(tmp2[51]), obj1);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                          tmp38 = closure_19;
+                                                                          tmp39 = closure_4;
+                                                                          items = [, ];
+                                                                          items[0] = closure_4.sectionHeader;
+                                                                          num = 0;
+                                                                          obj16 = null;
+                                                                          Text = tmp(tmp2[18]).Text;
+                                                                          if (0 !== index) {
+                                                                            obj16 = { marginTop: 24 };
+                                                                          }
+                                                                          obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                          items[1] = obj16;
+                                                                          obj17.style = items;
+                                                                          obj17.children = item.section;
+                                                                          return tmp38(Text, obj17);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                          tmp36 = closure_19;
+                                                                          tmp37 = closure_30;
+                                                                          obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                          obj18.section = item.section;
+                                                                          obj18.onPress = function onPress(shelfData) {
+                                                                            const obj = { shelfData, sectionName: item.sectionName };
+                                                                            triggeredOnboardingContentMetadata(obj);
+                                                                          };
+                                                                          ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                          return closure_19(closure_30, obj18, item.section.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                          obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp29 = context;
+                                                                          obj19.context = context;
+                                                                          tmp27 = closure_19;
+                                                                          tmp28 = closure_31;
+                                                                          obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                          obj19.onPress = function onPress(shelfData) {
+                                                                            let tmp2;
+                                                                            const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                            tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                            const tmp = triggeredOnboardingContentMetadata;
+                                                                            if (!tmp2) {
+                                                                              tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            tmp(obj);
+                                                                          };
+                                                                          tmp30 = closure_20;
+                                                                          tmp31 = !closure_20;
+                                                                          if (tmp31) {
+                                                                            tmp32 = entrypoint;
+                                                                            tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                          }
+                                                                          obj19.usesHandleActivityItemSelected = tmp31;
+                                                                          tmp33 = onActivityItemSelected;
+                                                                          obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                          ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                          tmp34 = entrypoint;
+                                                                          obj19.entrypoint = entrypoint;
+                                                                          tmp35 = width;
+                                                                          obj19.containerWidth = width;
+                                                                          return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                          tmp22 = closure_19;
+                                                                          tmp23 = closure_33;
+                                                                          obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp24 = context;
+                                                                          obj20.context = context;
+                                                                          obj20.sectionName = item.sectionName;
+                                                                          obj20.onPress = function onPress(application, sectionName) {
+                                                                            const obj = { application, sectionName };
+                                                                            return closure_1_19(obj);
+                                                                          };
+                                                                          ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                          tmp25 = entrypoint;
+                                                                          obj20.entrypoint = entrypoint;
+                                                                          tmp26 = width;
+                                                                          obj20.containerWidth = width;
+                                                                          return closure_19(closure_33, obj20);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                          tmp19 = closure_19;
+                                                                          tmp20 = closure_29;
+                                                                          obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                          obj21.section = item.section;
+                                                                          obj21.onPress = function onPress() {
+                                                                            closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                          };
+                                                                          ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                          obj22 = { height: null };
+                                                                          tmp21 = closure_5;
+                                                                          obj22.height = closure_5;
+                                                                          obj21.style = obj22;
+                                                                          return closure_19(closure_29, obj21, item.section.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                          tmp17 = closure_19;
+                                                                          tmp18 = closure_1_36;
+                                                                          obj23 = { index: null, children: null };
+                                                                          obj23.index = index;
+                                                                          obj23.children = item.section;
+                                                                          return closure_19(closure_1_36, obj23);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                          tmp14 = closure_19;
+                                                                          tmp15 = context;
+                                                                          obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                          obj24.application = item.item.application;
+                                                                          ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                          obj24.onPress = function onPress() {
+                                                                            const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          tmp16 = closure_11;
+                                                                          obj24.isLandscape = closure_11;
+                                                                          ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                          return closure_19(context(tmp2[52]), obj24);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                          tmp12 = closure_19;
+                                                                          tmp13 = context;
+                                                                          obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                          ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                          obj25.onPress = function onPress() {
+                                                                            const obj = { application: item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          obj25.showsPromoted = item.showsPromoted;
+                                                                          return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                          tmp10 = closure_19;
+                                                                          tmp11 = context;
+                                                                          obj26 = { title: null, onPress: null };
+                                                                          obj26.title = item.title;
+                                                                          obj26.onPress = function onPress() {
+                                                                            const applications = item.applications;
+                                                                            const mapped = applications.map((item) => item);
+                                                                            let obj = AppLauncherNativeUtils;
+                                                                            const obj2 = {
+                                                                              location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                              navigation,
+                                                                              context,
+                                                                              sectionName: item.sectionName,
+                                                                              sectionOverallPosition: item.sectionOverallPosition,
+                                                                              applications: mapped,
+                                                                              sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                              commands: [],
+                                                                              sectionDescriptors: mapped.map((item) => {
+                                                                                const obj = item(closure_1_3[49]);
+                                                                                return obj.getApplicationCommandSection(item);
+                                                                              }),
+                                                                              title: item.title,
+                                                                              promotedApplicationIds: item.promotedApplicationIds
+                                                                            };
+                                                                            const result = obj.handleViewAllSelected(obj2);
+                                                                          };
+                                                                          return closure_19(context(tmp2[54]), obj26);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                          tmp8 = closure_19;
+                                                                          tmp9 = closure_1_35;
+                                                                          return closure_19(closure_1_35, {});
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                          tmp4 = closure_19;
+                                                                          tmp5 = context;
+                                                                          obj = { visible: null };
+                                                                          tmp7 = closure_3;
+                                                                          tmp6 = context(tmp2[55]);
+                                                                          obj.visible = closure_3.valueOf();
+                                                                          return closure_19(tmp6, obj);
+                                                                        } else {
+                                                                          tmp3 = null;
+                                                                          return null;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    tmp36 = items1;
+                                                                    tmp35 = Re;
+                                                                  } else {
+                                                                    class Re {
+                                                                      constructor() {
+                                                                        return () => {
+                                                                          current = ref.current;
+                                                                          if (current != null) {
+                                                                            current.cancel();
+                                                                          }
+                                                                        };
+                                                                      }
+                                                                    }
+                                                                    tmp36 = cResult[56];
+                                                                  }
+                                                                  const effect1 = obj4.useEffect(tmp35, tmp36);
+                                                                  if (cResult[57] !== tmp32) {
+                                                                    class Oe {
+                                                                      constructor(arg0) {
+                                                                        let closure_0 = arg0;
+                                                                        closure_22(0 !== arg0.length);
+                                                                        current = ref.current;
+                                                                        const tmp2 = ref;
+                                                                        if (current != null) {
+                                                                          current.cancel();
+                                                                        }
+                                                                        const obj = navigation(closure_3[58]);
+                                                                        tmp2.current = obj.runAfterInteractions(() => {
+                                                                          current = ref.current;
+                                                                          if (current != null) {
+                                                                            current.setQuery(closure_0);
+                                                                          }
+                                                                        }, 100);
+                                                                        closure_23(arg0);
+                                                                      }
+                                                                    }
+                                                                    cResult[57] = tmp32;
+                                                                    cResult[58] = Oe;
+                                                                    class Ce {
+                                                                      constructor(arg0) {
+                                                                        item = navigation.item;
+                                                                        index = navigation.index;
+                                                                        type = item.type;
+                                                                        tmp = navigation;
+                                                                        tmp2 = closure_3;
+                                                                        if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                          tmp40 = closure_19;
+                                                                          tmp41 = context;
+                                                                          obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                          num2 = 0;
+                                                                          obj1.isFirstRow = 0 === index;
+                                                                          tmp42 = list;
+                                                                          num3 = 1;
+                                                                          obj1.isLastRow = index === list.length - 1;
+                                                                          obj15 = { height: null };
+                                                                          tmp43 = closure_5;
+                                                                          obj15.height = closure_5;
+                                                                          obj1.style = obj15;
+                                                                          return closure_19(context(tmp2[51]), obj1);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                          tmp38 = closure_19;
+                                                                          tmp39 = closure_4;
+                                                                          items = [, ];
+                                                                          items[0] = closure_4.sectionHeader;
+                                                                          num = 0;
+                                                                          obj16 = null;
+                                                                          Text = tmp(tmp2[18]).Text;
+                                                                          if (0 !== index) {
+                                                                            obj16 = { marginTop: 24 };
+                                                                          }
+                                                                          obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                          items[1] = obj16;
+                                                                          obj17.style = items;
+                                                                          obj17.children = item.section;
+                                                                          return tmp38(Text, obj17);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                          tmp36 = closure_19;
+                                                                          tmp37 = closure_30;
+                                                                          obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                          obj18.section = item.section;
+                                                                          obj18.onPress = function onPress(shelfData) {
+                                                                            const obj = { shelfData, sectionName: item.sectionName };
+                                                                            triggeredOnboardingContentMetadata(obj);
+                                                                          };
+                                                                          ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                          return closure_19(closure_30, obj18, item.section.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                          obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp29 = context;
+                                                                          obj19.context = context;
+                                                                          tmp27 = closure_19;
+                                                                          tmp28 = closure_31;
+                                                                          obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                          obj19.onPress = function onPress(shelfData) {
+                                                                            let tmp2;
+                                                                            const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                            tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                            const tmp = triggeredOnboardingContentMetadata;
+                                                                            if (!tmp2) {
+                                                                              tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            tmp(obj);
+                                                                          };
+                                                                          tmp30 = closure_20;
+                                                                          tmp31 = !closure_20;
+                                                                          if (tmp31) {
+                                                                            tmp32 = entrypoint;
+                                                                            tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                          }
+                                                                          obj19.usesHandleActivityItemSelected = tmp31;
+                                                                          tmp33 = onActivityItemSelected;
+                                                                          obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                          ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                          tmp34 = entrypoint;
+                                                                          obj19.entrypoint = entrypoint;
+                                                                          tmp35 = width;
+                                                                          obj19.containerWidth = width;
+                                                                          return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                          tmp22 = closure_19;
+                                                                          tmp23 = closure_33;
+                                                                          obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp24 = context;
+                                                                          obj20.context = context;
+                                                                          obj20.sectionName = item.sectionName;
+                                                                          obj20.onPress = function onPress(application, sectionName) {
+                                                                            const obj = { application, sectionName };
+                                                                            return closure_1_19(obj);
+                                                                          };
+                                                                          ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                          tmp25 = entrypoint;
+                                                                          obj20.entrypoint = entrypoint;
+                                                                          tmp26 = width;
+                                                                          obj20.containerWidth = width;
+                                                                          return closure_19(closure_33, obj20);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                          tmp19 = closure_19;
+                                                                          tmp20 = closure_29;
+                                                                          obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                          obj21.section = item.section;
+                                                                          obj21.onPress = function onPress() {
+                                                                            closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                          };
+                                                                          ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                          obj22 = { height: null };
+                                                                          tmp21 = closure_5;
+                                                                          obj22.height = closure_5;
+                                                                          obj21.style = obj22;
+                                                                          return closure_19(closure_29, obj21, item.section.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                          tmp17 = closure_19;
+                                                                          tmp18 = closure_1_36;
+                                                                          obj23 = { index: null, children: null };
+                                                                          obj23.index = index;
+                                                                          obj23.children = item.section;
+                                                                          return closure_19(closure_1_36, obj23);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                          tmp14 = closure_19;
+                                                                          tmp15 = context;
+                                                                          obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                          obj24.application = item.item.application;
+                                                                          ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                          obj24.onPress = function onPress() {
+                                                                            const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          tmp16 = closure_11;
+                                                                          obj24.isLandscape = closure_11;
+                                                                          ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                          return closure_19(context(tmp2[52]), obj24);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                          tmp12 = closure_19;
+                                                                          tmp13 = context;
+                                                                          obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                          ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                          obj25.onPress = function onPress() {
+                                                                            const obj = { application: item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          obj25.showsPromoted = item.showsPromoted;
+                                                                          return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                          tmp10 = closure_19;
+                                                                          tmp11 = context;
+                                                                          obj26 = { title: null, onPress: null };
+                                                                          obj26.title = item.title;
+                                                                          obj26.onPress = function onPress() {
+                                                                            const applications = item.applications;
+                                                                            const mapped = applications.map((item) => item);
+                                                                            let obj = AppLauncherNativeUtils;
+                                                                            const obj2 = {
+                                                                              location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                              navigation,
+                                                                              context,
+                                                                              sectionName: item.sectionName,
+                                                                              sectionOverallPosition: item.sectionOverallPosition,
+                                                                              applications: mapped,
+                                                                              sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                              commands: [],
+                                                                              sectionDescriptors: mapped.map((item) => {
+                                                                                const obj = item(closure_1_3[49]);
+                                                                                return obj.getApplicationCommandSection(item);
+                                                                              }),
+                                                                              title: item.title,
+                                                                              promotedApplicationIds: item.promotedApplicationIds
+                                                                            };
+                                                                            const result = obj.handleViewAllSelected(obj2);
+                                                                          };
+                                                                          return closure_19(context(tmp2[54]), obj26);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                          tmp8 = closure_19;
+                                                                          tmp9 = closure_1_35;
+                                                                          return closure_19(closure_1_35, {});
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                          tmp4 = closure_19;
+                                                                          tmp5 = context;
+                                                                          obj = { visible: null };
+                                                                          tmp7 = closure_3;
+                                                                          tmp6 = context(tmp2[55]);
+                                                                          obj.visible = closure_3.valueOf();
+                                                                          return closure_19(tmp6, obj);
+                                                                        } else {
+                                                                          tmp3 = null;
+                                                                          return null;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  } else {
+                                                                    class Oe {
+                                                                      constructor(arg0) {
+                                                                        let closure_0 = arg0;
+                                                                        closure_22(0 !== arg0.length);
+                                                                        current = ref.current;
+                                                                        const tmp2 = ref;
+                                                                        if (current != null) {
+                                                                          current.cancel();
+                                                                        }
+                                                                        const obj = navigation(closure_3[58]);
+                                                                        tmp2.current = obj.runAfterInteractions(() => {
+                                                                          current = ref.current;
+                                                                          if (current != null) {
+                                                                            current.setQuery(closure_0);
+                                                                          }
+                                                                        }, 100);
+                                                                        closure_23(arg0);
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                  current = tmp38;
+                                                                  ref2 = obj4.useRef(tmp38);
+                                                                  if (cResult[59] !== tmp38) {
+                                                                    class De {
+                                                                      constructor() {
+                                                                        ref2.current = current;
+                                                                      }
+                                                                    }
+                                                                    const items2 = [tmp38];
+                                                                    cResult[59] = tmp38;
+                                                                    class Ce {
+                                                                      constructor(arg0) {
+                                                                        item = navigation.item;
+                                                                        index = navigation.index;
+                                                                        type = item.type;
+                                                                        tmp = navigation;
+                                                                        tmp2 = closure_3;
+                                                                        if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                          tmp40 = closure_19;
+                                                                          tmp41 = context;
+                                                                          obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                          num2 = 0;
+                                                                          obj1.isFirstRow = 0 === index;
+                                                                          tmp42 = list;
+                                                                          num3 = 1;
+                                                                          obj1.isLastRow = index === list.length - 1;
+                                                                          obj15 = { height: null };
+                                                                          tmp43 = closure_5;
+                                                                          obj15.height = closure_5;
+                                                                          obj1.style = obj15;
+                                                                          return closure_19(context(tmp2[51]), obj1);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                          tmp38 = closure_19;
+                                                                          tmp39 = closure_4;
+                                                                          items = [, ];
+                                                                          items[0] = closure_4.sectionHeader;
+                                                                          num = 0;
+                                                                          obj16 = null;
+                                                                          Text = tmp(tmp2[18]).Text;
+                                                                          if (0 !== index) {
+                                                                            obj16 = { marginTop: 24 };
+                                                                          }
+                                                                          obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                          items[1] = obj16;
+                                                                          obj17.style = items;
+                                                                          obj17.children = item.section;
+                                                                          return tmp38(Text, obj17);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                          tmp36 = closure_19;
+                                                                          tmp37 = closure_30;
+                                                                          obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                          obj18.section = item.section;
+                                                                          obj18.onPress = function onPress(shelfData) {
+                                                                            const obj = { shelfData, sectionName: item.sectionName };
+                                                                            triggeredOnboardingContentMetadata(obj);
+                                                                          };
+                                                                          ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                          return closure_19(closure_30, obj18, item.section.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                          obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp29 = context;
+                                                                          obj19.context = context;
+                                                                          tmp27 = closure_19;
+                                                                          tmp28 = closure_31;
+                                                                          obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                          obj19.onPress = function onPress(shelfData) {
+                                                                            let tmp2;
+                                                                            const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                            tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                            const tmp = triggeredOnboardingContentMetadata;
+                                                                            if (!tmp2) {
+                                                                              tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            tmp(obj);
+                                                                          };
+                                                                          tmp30 = closure_20;
+                                                                          tmp31 = !closure_20;
+                                                                          if (tmp31) {
+                                                                            tmp32 = entrypoint;
+                                                                            tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                          }
+                                                                          obj19.usesHandleActivityItemSelected = tmp31;
+                                                                          tmp33 = onActivityItemSelected;
+                                                                          obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                          ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                          tmp34 = entrypoint;
+                                                                          obj19.entrypoint = entrypoint;
+                                                                          tmp35 = width;
+                                                                          obj19.containerWidth = width;
+                                                                          return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                          tmp22 = closure_19;
+                                                                          tmp23 = closure_33;
+                                                                          obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp24 = context;
+                                                                          obj20.context = context;
+                                                                          obj20.sectionName = item.sectionName;
+                                                                          obj20.onPress = function onPress(application, sectionName) {
+                                                                            const obj = { application, sectionName };
+                                                                            return closure_1_19(obj);
+                                                                          };
+                                                                          ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                          tmp25 = entrypoint;
+                                                                          obj20.entrypoint = entrypoint;
+                                                                          tmp26 = width;
+                                                                          obj20.containerWidth = width;
+                                                                          return closure_19(closure_33, obj20);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                          tmp19 = closure_19;
+                                                                          tmp20 = closure_29;
+                                                                          obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                          obj21.section = item.section;
+                                                                          obj21.onPress = function onPress() {
+                                                                            closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                          };
+                                                                          ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                          obj22 = { height: null };
+                                                                          tmp21 = closure_5;
+                                                                          obj22.height = closure_5;
+                                                                          obj21.style = obj22;
+                                                                          return closure_19(closure_29, obj21, item.section.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                          tmp17 = closure_19;
+                                                                          tmp18 = closure_1_36;
+                                                                          obj23 = { index: null, children: null };
+                                                                          obj23.index = index;
+                                                                          obj23.children = item.section;
+                                                                          return closure_19(closure_1_36, obj23);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                          tmp14 = closure_19;
+                                                                          tmp15 = context;
+                                                                          obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                          obj24.application = item.item.application;
+                                                                          ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                          obj24.onPress = function onPress() {
+                                                                            const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          tmp16 = closure_11;
+                                                                          obj24.isLandscape = closure_11;
+                                                                          ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                          return closure_19(context(tmp2[52]), obj24);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                          tmp12 = closure_19;
+                                                                          tmp13 = context;
+                                                                          obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                          ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                          obj25.onPress = function onPress() {
+                                                                            const obj = { application: item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          obj25.showsPromoted = item.showsPromoted;
+                                                                          return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                          tmp10 = closure_19;
+                                                                          tmp11 = context;
+                                                                          obj26 = { title: null, onPress: null };
+                                                                          obj26.title = item.title;
+                                                                          obj26.onPress = function onPress() {
+                                                                            const applications = item.applications;
+                                                                            const mapped = applications.map((item) => item);
+                                                                            let obj = AppLauncherNativeUtils;
+                                                                            const obj2 = {
+                                                                              location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                              navigation,
+                                                                              context,
+                                                                              sectionName: item.sectionName,
+                                                                              sectionOverallPosition: item.sectionOverallPosition,
+                                                                              applications: mapped,
+                                                                              sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                              commands: [],
+                                                                              sectionDescriptors: mapped.map((item) => {
+                                                                                const obj = item(closure_1_3[49]);
+                                                                                return obj.getApplicationCommandSection(item);
+                                                                              }),
+                                                                              title: item.title,
+                                                                              promotedApplicationIds: item.promotedApplicationIds
+                                                                            };
+                                                                            const result = obj.handleViewAllSelected(obj2);
+                                                                          };
+                                                                          return closure_19(context(tmp2[54]), obj26);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                          tmp8 = closure_19;
+                                                                          tmp9 = closure_1_35;
+                                                                          return closure_19(closure_1_35, {});
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                          tmp4 = closure_19;
+                                                                          tmp5 = context;
+                                                                          obj = { visible: null };
+                                                                          tmp7 = closure_3;
+                                                                          tmp6 = context(tmp2[55]);
+                                                                          obj.visible = closure_3.valueOf();
+                                                                          return closure_19(tmp6, obj);
+                                                                        } else {
+                                                                          tmp3 = null;
+                                                                          return null;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    cResult[60] = De;
+                                                                    cResult[61] = items2;
+                                                                    tmp41 = items2;
+                                                                    tmp40 = De;
+                                                                  } else {
+                                                                    class De {
+                                                                      constructor() {
+                                                                        ref2.current = current;
+                                                                      }
+                                                                    }
+                                                                    tmp41 = cResult[61];
+                                                                  }
+                                                                  const effect2 = obj4.useEffect(tmp40, tmp41);
+                                                                  if (cResult[62] !== entrypoint) {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                    cResult[62] = entrypoint;
+                                                                    cResult[63] = Fe;
+                                                                    class Ce {
+                                                                      constructor(arg0) {
+                                                                        item = navigation.item;
+                                                                        index = navigation.index;
+                                                                        type = item.type;
+                                                                        tmp = navigation;
+                                                                        tmp2 = closure_3;
+                                                                        if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                          tmp40 = closure_19;
+                                                                          tmp41 = context;
+                                                                          obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                          num2 = 0;
+                                                                          obj1.isFirstRow = 0 === index;
+                                                                          tmp42 = list;
+                                                                          num3 = 1;
+                                                                          obj1.isLastRow = index === list.length - 1;
+                                                                          obj15 = { height: null };
+                                                                          tmp43 = closure_5;
+                                                                          obj15.height = closure_5;
+                                                                          obj1.style = obj15;
+                                                                          return closure_19(context(tmp2[51]), obj1);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                          tmp38 = closure_19;
+                                                                          tmp39 = closure_4;
+                                                                          items = [, ];
+                                                                          items[0] = closure_4.sectionHeader;
+                                                                          num = 0;
+                                                                          obj16 = null;
+                                                                          Text = tmp(tmp2[18]).Text;
+                                                                          if (0 !== index) {
+                                                                            obj16 = { marginTop: 24 };
+                                                                          }
+                                                                          obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                          items[1] = obj16;
+                                                                          obj17.style = items;
+                                                                          obj17.children = item.section;
+                                                                          return tmp38(Text, obj17);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                          tmp36 = closure_19;
+                                                                          tmp37 = closure_30;
+                                                                          obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                          obj18.section = item.section;
+                                                                          obj18.onPress = function onPress(shelfData) {
+                                                                            const obj = { shelfData, sectionName: item.sectionName };
+                                                                            triggeredOnboardingContentMetadata(obj);
+                                                                          };
+                                                                          ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                          return closure_19(closure_30, obj18, item.section.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                          obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp29 = context;
+                                                                          obj19.context = context;
+                                                                          tmp27 = closure_19;
+                                                                          tmp28 = closure_31;
+                                                                          obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                          obj19.onPress = function onPress(shelfData) {
+                                                                            let tmp2;
+                                                                            const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                            tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                            const tmp = triggeredOnboardingContentMetadata;
+                                                                            if (!tmp2) {
+                                                                              tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            tmp(obj);
+                                                                          };
+                                                                          tmp30 = closure_20;
+                                                                          tmp31 = !closure_20;
+                                                                          if (tmp31) {
+                                                                            tmp32 = entrypoint;
+                                                                            tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                          }
+                                                                          obj19.usesHandleActivityItemSelected = tmp31;
+                                                                          tmp33 = onActivityItemSelected;
+                                                                          obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                          ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                          tmp34 = entrypoint;
+                                                                          obj19.entrypoint = entrypoint;
+                                                                          tmp35 = width;
+                                                                          obj19.containerWidth = width;
+                                                                          return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                          tmp22 = closure_19;
+                                                                          tmp23 = closure_33;
+                                                                          obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp24 = context;
+                                                                          obj20.context = context;
+                                                                          obj20.sectionName = item.sectionName;
+                                                                          obj20.onPress = function onPress(application, sectionName) {
+                                                                            const obj = { application, sectionName };
+                                                                            return closure_1_19(obj);
+                                                                          };
+                                                                          ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                          tmp25 = entrypoint;
+                                                                          obj20.entrypoint = entrypoint;
+                                                                          tmp26 = width;
+                                                                          obj20.containerWidth = width;
+                                                                          return closure_19(closure_33, obj20);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                          tmp19 = closure_19;
+                                                                          tmp20 = closure_29;
+                                                                          obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                          obj21.section = item.section;
+                                                                          obj21.onPress = function onPress() {
+                                                                            closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                          };
+                                                                          ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                          obj22 = { height: null };
+                                                                          tmp21 = closure_5;
+                                                                          obj22.height = closure_5;
+                                                                          obj21.style = obj22;
+                                                                          return closure_19(closure_29, obj21, item.section.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                          tmp17 = closure_19;
+                                                                          tmp18 = closure_1_36;
+                                                                          obj23 = { index: null, children: null };
+                                                                          obj23.index = index;
+                                                                          obj23.children = item.section;
+                                                                          return closure_19(closure_1_36, obj23);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                          tmp14 = closure_19;
+                                                                          tmp15 = context;
+                                                                          obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                          obj24.application = item.item.application;
+                                                                          ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                          obj24.onPress = function onPress() {
+                                                                            const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          tmp16 = closure_11;
+                                                                          obj24.isLandscape = closure_11;
+                                                                          ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                          return closure_19(context(tmp2[52]), obj24);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                          tmp12 = closure_19;
+                                                                          tmp13 = context;
+                                                                          obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                          ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                          obj25.onPress = function onPress() {
+                                                                            const obj = { application: item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          obj25.showsPromoted = item.showsPromoted;
+                                                                          return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                          tmp10 = closure_19;
+                                                                          tmp11 = context;
+                                                                          obj26 = { title: null, onPress: null };
+                                                                          obj26.title = item.title;
+                                                                          obj26.onPress = function onPress() {
+                                                                            const applications = item.applications;
+                                                                            const mapped = applications.map((item) => item);
+                                                                            let obj = AppLauncherNativeUtils;
+                                                                            const obj2 = {
+                                                                              location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                              navigation,
+                                                                              context,
+                                                                              sectionName: item.sectionName,
+                                                                              sectionOverallPosition: item.sectionOverallPosition,
+                                                                              applications: mapped,
+                                                                              sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                              commands: [],
+                                                                              sectionDescriptors: mapped.map((item) => {
+                                                                                const obj = item(closure_1_3[49]);
+                                                                                return obj.getApplicationCommandSection(item);
+                                                                              }),
+                                                                              title: item.title,
+                                                                              promotedApplicationIds: item.promotedApplicationIds
+                                                                            };
+                                                                            const result = obj.handleViewAllSelected(obj2);
+                                                                          };
+                                                                          return closure_19(context(tmp2[54]), obj26);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                          tmp8 = closure_19;
+                                                                          tmp9 = closure_1_35;
+                                                                          return closure_19(closure_1_35, {});
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                          tmp4 = closure_19;
+                                                                          tmp5 = context;
+                                                                          obj = { visible: null };
+                                                                          tmp7 = closure_3;
+                                                                          tmp6 = context(tmp2[55]);
+                                                                          obj.visible = closure_3.valueOf();
+                                                                          return closure_19(tmp6, obj);
+                                                                        } else {
+                                                                          tmp3 = null;
+                                                                          return null;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  } else {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                  closure_27 = tmp43;
+                                                                  if (tmp31) {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                  if (cResult[64] !== "home-scroller") {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                    tmp45[0] = "home-scroller";
+                                                                    cResult[64] = "home-scroller";
+                                                                    class Ce {
+                                                                      constructor(arg0) {
+                                                                        item = navigation.item;
+                                                                        index = navigation.index;
+                                                                        type = item.type;
+                                                                        tmp = navigation;
+                                                                        tmp2 = closure_3;
+                                                                        if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                          tmp40 = closure_19;
+                                                                          tmp41 = context;
+                                                                          obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                          num2 = 0;
+                                                                          obj1.isFirstRow = 0 === index;
+                                                                          tmp42 = list;
+                                                                          num3 = 1;
+                                                                          obj1.isLastRow = index === list.length - 1;
+                                                                          obj15 = { height: null };
+                                                                          tmp43 = closure_5;
+                                                                          obj15.height = closure_5;
+                                                                          obj1.style = obj15;
+                                                                          return closure_19(context(tmp2[51]), obj1);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                          tmp38 = closure_19;
+                                                                          tmp39 = closure_4;
+                                                                          items = [, ];
+                                                                          items[0] = closure_4.sectionHeader;
+                                                                          num = 0;
+                                                                          obj16 = null;
+                                                                          Text = tmp(tmp2[18]).Text;
+                                                                          if (0 !== index) {
+                                                                            obj16 = { marginTop: 24 };
+                                                                          }
+                                                                          obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                          items[1] = obj16;
+                                                                          obj17.style = items;
+                                                                          obj17.children = item.section;
+                                                                          return tmp38(Text, obj17);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                          tmp36 = closure_19;
+                                                                          tmp37 = closure_30;
+                                                                          obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                          obj18.section = item.section;
+                                                                          obj18.onPress = function onPress(shelfData) {
+                                                                            const obj = { shelfData, sectionName: item.sectionName };
+                                                                            triggeredOnboardingContentMetadata(obj);
+                                                                          };
+                                                                          ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                          return closure_19(closure_30, obj18, item.section.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                          obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp29 = context;
+                                                                          obj19.context = context;
+                                                                          tmp27 = closure_19;
+                                                                          tmp28 = closure_31;
+                                                                          obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                          obj19.onPress = function onPress(shelfData) {
+                                                                            let tmp2;
+                                                                            const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                            tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                            const tmp = triggeredOnboardingContentMetadata;
+                                                                            if (!tmp2) {
+                                                                              tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            tmp(obj);
+                                                                          };
+                                                                          tmp30 = closure_20;
+                                                                          tmp31 = !closure_20;
+                                                                          if (tmp31) {
+                                                                            tmp32 = entrypoint;
+                                                                            tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                          }
+                                                                          obj19.usesHandleActivityItemSelected = tmp31;
+                                                                          tmp33 = onActivityItemSelected;
+                                                                          obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                          ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                          tmp34 = entrypoint;
+                                                                          obj19.entrypoint = entrypoint;
+                                                                          tmp35 = width;
+                                                                          obj19.containerWidth = width;
+                                                                          return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                          tmp22 = closure_19;
+                                                                          tmp23 = closure_33;
+                                                                          obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp24 = context;
+                                                                          obj20.context = context;
+                                                                          obj20.sectionName = item.sectionName;
+                                                                          obj20.onPress = function onPress(application, sectionName) {
+                                                                            const obj = { application, sectionName };
+                                                                            return closure_1_19(obj);
+                                                                          };
+                                                                          ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                          tmp25 = entrypoint;
+                                                                          obj20.entrypoint = entrypoint;
+                                                                          tmp26 = width;
+                                                                          obj20.containerWidth = width;
+                                                                          return closure_19(closure_33, obj20);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                          tmp19 = closure_19;
+                                                                          tmp20 = closure_29;
+                                                                          obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                          obj21.section = item.section;
+                                                                          obj21.onPress = function onPress() {
+                                                                            closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                          };
+                                                                          ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                          obj22 = { height: null };
+                                                                          tmp21 = closure_5;
+                                                                          obj22.height = closure_5;
+                                                                          obj21.style = obj22;
+                                                                          return closure_19(closure_29, obj21, item.section.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                          tmp17 = closure_19;
+                                                                          tmp18 = closure_1_36;
+                                                                          obj23 = { index: null, children: null };
+                                                                          obj23.index = index;
+                                                                          obj23.children = item.section;
+                                                                          return closure_19(closure_1_36, obj23);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                          tmp14 = closure_19;
+                                                                          tmp15 = context;
+                                                                          obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                          obj24.application = item.item.application;
+                                                                          ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                          obj24.onPress = function onPress() {
+                                                                            const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          tmp16 = closure_11;
+                                                                          obj24.isLandscape = closure_11;
+                                                                          ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                          return closure_19(context(tmp2[52]), obj24);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                          tmp12 = closure_19;
+                                                                          tmp13 = context;
+                                                                          obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                          ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                          obj25.onPress = function onPress() {
+                                                                            const obj = { application: item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          obj25.showsPromoted = item.showsPromoted;
+                                                                          return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                          tmp10 = closure_19;
+                                                                          tmp11 = context;
+                                                                          obj26 = { title: null, onPress: null };
+                                                                          obj26.title = item.title;
+                                                                          obj26.onPress = function onPress() {
+                                                                            const applications = item.applications;
+                                                                            const mapped = applications.map((item) => item);
+                                                                            let obj = AppLauncherNativeUtils;
+                                                                            const obj2 = {
+                                                                              location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                              navigation,
+                                                                              context,
+                                                                              sectionName: item.sectionName,
+                                                                              sectionOverallPosition: item.sectionOverallPosition,
+                                                                              applications: mapped,
+                                                                              sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                              commands: [],
+                                                                              sectionDescriptors: mapped.map((item) => {
+                                                                                const obj = item(closure_1_3[49]);
+                                                                                return obj.getApplicationCommandSection(item);
+                                                                              }),
+                                                                              title: item.title,
+                                                                              promotedApplicationIds: item.promotedApplicationIds
+                                                                            };
+                                                                            const result = obj.handleViewAllSelected(obj2);
+                                                                          };
+                                                                          return closure_19(context(tmp2[54]), obj26);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                          tmp8 = closure_19;
+                                                                          tmp9 = closure_1_35;
+                                                                          return closure_19(closure_1_35, {});
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                          tmp4 = closure_19;
+                                                                          tmp5 = context;
+                                                                          obj = { visible: null };
+                                                                          tmp7 = closure_3;
+                                                                          tmp6 = context(tmp2[55]);
+                                                                          obj.visible = closure_3.valueOf();
+                                                                          return closure_19(tmp6, obj);
+                                                                        } else {
+                                                                          tmp3 = null;
+                                                                          return null;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    tmp44 = tmp45;
+                                                                  } else {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                  const tmpResult6 = tmp(11465);
+                                                                  const pinnedSearchBarBottomBorder = tmpResult6.usePinnedSearchBarBottomBorder(tmp44);
+                                                                  const ref1 = obj4.useRef(null);
+                                                                  if (cResult[66] !== initialSearchQuery) {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                    const items3 = [initialSearchQuery];
+                                                                    cResult[66] = initialSearchQuery;
+                                                                    class Ce {
+                                                                      constructor(arg0) {
+                                                                        item = navigation.item;
+                                                                        index = navigation.index;
+                                                                        type = item.type;
+                                                                        tmp = navigation;
+                                                                        tmp2 = closure_3;
+                                                                        if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                          tmp40 = closure_19;
+                                                                          tmp41 = context;
+                                                                          obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                          num2 = 0;
+                                                                          obj1.isFirstRow = 0 === index;
+                                                                          tmp42 = list;
+                                                                          num3 = 1;
+                                                                          obj1.isLastRow = index === list.length - 1;
+                                                                          obj15 = { height: null };
+                                                                          tmp43 = closure_5;
+                                                                          obj15.height = closure_5;
+                                                                          obj1.style = obj15;
+                                                                          return closure_19(context(tmp2[51]), obj1);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                          tmp38 = closure_19;
+                                                                          tmp39 = closure_4;
+                                                                          items = [, ];
+                                                                          items[0] = closure_4.sectionHeader;
+                                                                          num = 0;
+                                                                          obj16 = null;
+                                                                          Text = tmp(tmp2[18]).Text;
+                                                                          if (0 !== index) {
+                                                                            obj16 = { marginTop: 24 };
+                                                                          }
+                                                                          obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                          items[1] = obj16;
+                                                                          obj17.style = items;
+                                                                          obj17.children = item.section;
+                                                                          return tmp38(Text, obj17);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                          tmp36 = closure_19;
+                                                                          tmp37 = closure_30;
+                                                                          obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                          obj18.section = item.section;
+                                                                          obj18.onPress = function onPress(shelfData) {
+                                                                            const obj = { shelfData, sectionName: item.sectionName };
+                                                                            triggeredOnboardingContentMetadata(obj);
+                                                                          };
+                                                                          ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                          return closure_19(closure_30, obj18, item.section.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                          obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp29 = context;
+                                                                          obj19.context = context;
+                                                                          tmp27 = closure_19;
+                                                                          tmp28 = closure_31;
+                                                                          obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                          obj19.onPress = function onPress(shelfData) {
+                                                                            let tmp2;
+                                                                            const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                            tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                            const tmp = triggeredOnboardingContentMetadata;
+                                                                            if (!tmp2) {
+                                                                              tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            tmp(obj);
+                                                                          };
+                                                                          tmp30 = closure_20;
+                                                                          tmp31 = !closure_20;
+                                                                          if (tmp31) {
+                                                                            tmp32 = entrypoint;
+                                                                            tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                          }
+                                                                          obj19.usesHandleActivityItemSelected = tmp31;
+                                                                          tmp33 = onActivityItemSelected;
+                                                                          obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                          ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                          tmp34 = entrypoint;
+                                                                          obj19.entrypoint = entrypoint;
+                                                                          tmp35 = width;
+                                                                          obj19.containerWidth = width;
+                                                                          return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                          tmp22 = closure_19;
+                                                                          tmp23 = closure_33;
+                                                                          obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp24 = context;
+                                                                          obj20.context = context;
+                                                                          obj20.sectionName = item.sectionName;
+                                                                          obj20.onPress = function onPress(application, sectionName) {
+                                                                            const obj = { application, sectionName };
+                                                                            return closure_1_19(obj);
+                                                                          };
+                                                                          ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                          tmp25 = entrypoint;
+                                                                          obj20.entrypoint = entrypoint;
+                                                                          tmp26 = width;
+                                                                          obj20.containerWidth = width;
+                                                                          return closure_19(closure_33, obj20);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                          tmp19 = closure_19;
+                                                                          tmp20 = closure_29;
+                                                                          obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                          obj21.section = item.section;
+                                                                          obj21.onPress = function onPress() {
+                                                                            closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                          };
+                                                                          ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                          obj22 = { height: null };
+                                                                          tmp21 = closure_5;
+                                                                          obj22.height = closure_5;
+                                                                          obj21.style = obj22;
+                                                                          return closure_19(closure_29, obj21, item.section.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                          tmp17 = closure_19;
+                                                                          tmp18 = closure_1_36;
+                                                                          obj23 = { index: null, children: null };
+                                                                          obj23.index = index;
+                                                                          obj23.children = item.section;
+                                                                          return closure_19(closure_1_36, obj23);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                          tmp14 = closure_19;
+                                                                          tmp15 = context;
+                                                                          obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                          obj24.application = item.item.application;
+                                                                          ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                          obj24.onPress = function onPress() {
+                                                                            const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          tmp16 = closure_11;
+                                                                          obj24.isLandscape = closure_11;
+                                                                          ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                          return closure_19(context(tmp2[52]), obj24);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                          tmp12 = closure_19;
+                                                                          tmp13 = context;
+                                                                          obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                          ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                          obj25.onPress = function onPress() {
+                                                                            const obj = { application: item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          obj25.showsPromoted = item.showsPromoted;
+                                                                          return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                          tmp10 = closure_19;
+                                                                          tmp11 = context;
+                                                                          obj26 = { title: null, onPress: null };
+                                                                          obj26.title = item.title;
+                                                                          obj26.onPress = function onPress() {
+                                                                            const applications = item.applications;
+                                                                            const mapped = applications.map((item) => item);
+                                                                            let obj = AppLauncherNativeUtils;
+                                                                            const obj2 = {
+                                                                              location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                              navigation,
+                                                                              context,
+                                                                              sectionName: item.sectionName,
+                                                                              sectionOverallPosition: item.sectionOverallPosition,
+                                                                              applications: mapped,
+                                                                              sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                              commands: [],
+                                                                              sectionDescriptors: mapped.map((item) => {
+                                                                                const obj = item(closure_1_3[49]);
+                                                                                return obj.getApplicationCommandSection(item);
+                                                                              }),
+                                                                              title: item.title,
+                                                                              promotedApplicationIds: item.promotedApplicationIds
+                                                                            };
+                                                                            const result = obj.handleViewAllSelected(obj2);
+                                                                          };
+                                                                          return closure_19(context(tmp2[54]), obj26);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                          tmp8 = closure_19;
+                                                                          tmp9 = closure_1_35;
+                                                                          return closure_19(closure_1_35, {});
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                          tmp4 = closure_19;
+                                                                          tmp5 = context;
+                                                                          obj = { visible: null };
+                                                                          tmp7 = closure_3;
+                                                                          tmp6 = context(tmp2[55]);
+                                                                          obj.visible = closure_3.valueOf();
+                                                                          return closure_19(tmp6, obj);
+                                                                        } else {
+                                                                          tmp3 = null;
+                                                                          return null;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    cResult[67] = tmp50;
+                                                                    cResult[68] = items3;
+                                                                    tmp49 = items3;
+                                                                    tmp48 = tmp50;
+                                                                  } else {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                    tmp49 = cResult[68];
+                                                                  }
+                                                                  const layoutEffect = obj4.useLayoutEffect(tmp48, tmp49);
+                                                                  const sum = bottom + list;
+                                                                  const tmpResult7 = tmp(11466);
+                                                                  const bottomSheetFlashListBottomViewabilityInset = tmpResult7.useBottomSheetFlashListBottomViewabilityInset();
+                                                                  ({ flashListRef, bottomVisibilityInsetRef } = bottomSheetFlashListBottomViewabilityInset);
+                                                                  const _Symbol2 = Symbol;
+                                                                  if (cResult[69] === Symbol.for("react.memo_cache_sentinel")) {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                    tmp56[0] = tmp(1261).ImpressionTypes.VIEW;
+                                                                    tmp56[1] = tmp(1261).ImpressionNames.APP_LAUNCHER_HOME_ACTIVITY_ITEM;
+                                                                    cResult[69] = tmp56;
+                                                                    class Ce {
+                                                                      constructor(arg0) {
+                                                                        item = navigation.item;
+                                                                        index = navigation.index;
+                                                                        type = item.type;
+                                                                        tmp = navigation;
+                                                                        tmp2 = closure_3;
+                                                                        if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                          tmp40 = closure_19;
+                                                                          tmp41 = context;
+                                                                          obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                          num2 = 0;
+                                                                          obj1.isFirstRow = 0 === index;
+                                                                          tmp42 = list;
+                                                                          num3 = 1;
+                                                                          obj1.isLastRow = index === list.length - 1;
+                                                                          obj15 = { height: null };
+                                                                          tmp43 = closure_5;
+                                                                          obj15.height = closure_5;
+                                                                          obj1.style = obj15;
+                                                                          return closure_19(context(tmp2[51]), obj1);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                          tmp38 = closure_19;
+                                                                          tmp39 = closure_4;
+                                                                          items = [, ];
+                                                                          items[0] = closure_4.sectionHeader;
+                                                                          num = 0;
+                                                                          obj16 = null;
+                                                                          Text = tmp(tmp2[18]).Text;
+                                                                          if (0 !== index) {
+                                                                            obj16 = { marginTop: 24 };
+                                                                          }
+                                                                          obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                          items[1] = obj16;
+                                                                          obj17.style = items;
+                                                                          obj17.children = item.section;
+                                                                          return tmp38(Text, obj17);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                          tmp36 = closure_19;
+                                                                          tmp37 = closure_30;
+                                                                          obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                          obj18.section = item.section;
+                                                                          obj18.onPress = function onPress(shelfData) {
+                                                                            const obj = { shelfData, sectionName: item.sectionName };
+                                                                            triggeredOnboardingContentMetadata(obj);
+                                                                          };
+                                                                          ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                          return closure_19(closure_30, obj18, item.section.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                          obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp29 = context;
+                                                                          obj19.context = context;
+                                                                          tmp27 = closure_19;
+                                                                          tmp28 = closure_31;
+                                                                          obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                          obj19.onPress = function onPress(shelfData) {
+                                                                            let tmp2;
+                                                                            const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                            tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                            const tmp = triggeredOnboardingContentMetadata;
+                                                                            if (!tmp2) {
+                                                                              tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            tmp(obj);
+                                                                          };
+                                                                          tmp30 = closure_20;
+                                                                          tmp31 = !closure_20;
+                                                                          if (tmp31) {
+                                                                            tmp32 = entrypoint;
+                                                                            tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                          }
+                                                                          obj19.usesHandleActivityItemSelected = tmp31;
+                                                                          tmp33 = onActivityItemSelected;
+                                                                          obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                          ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                          tmp34 = entrypoint;
+                                                                          obj19.entrypoint = entrypoint;
+                                                                          tmp35 = width;
+                                                                          obj19.containerWidth = width;
+                                                                          return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                          tmp22 = closure_19;
+                                                                          tmp23 = closure_33;
+                                                                          obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp24 = context;
+                                                                          obj20.context = context;
+                                                                          obj20.sectionName = item.sectionName;
+                                                                          obj20.onPress = function onPress(application, sectionName) {
+                                                                            const obj = { application, sectionName };
+                                                                            return closure_1_19(obj);
+                                                                          };
+                                                                          ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                          tmp25 = entrypoint;
+                                                                          obj20.entrypoint = entrypoint;
+                                                                          tmp26 = width;
+                                                                          obj20.containerWidth = width;
+                                                                          return closure_19(closure_33, obj20);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                          tmp19 = closure_19;
+                                                                          tmp20 = closure_29;
+                                                                          obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                          obj21.section = item.section;
+                                                                          obj21.onPress = function onPress() {
+                                                                            closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                          };
+                                                                          ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                          obj22 = { height: null };
+                                                                          tmp21 = closure_5;
+                                                                          obj22.height = closure_5;
+                                                                          obj21.style = obj22;
+                                                                          return closure_19(closure_29, obj21, item.section.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                          tmp17 = closure_19;
+                                                                          tmp18 = closure_1_36;
+                                                                          obj23 = { index: null, children: null };
+                                                                          obj23.index = index;
+                                                                          obj23.children = item.section;
+                                                                          return closure_19(closure_1_36, obj23);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                          tmp14 = closure_19;
+                                                                          tmp15 = context;
+                                                                          obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                          obj24.application = item.item.application;
+                                                                          ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                          obj24.onPress = function onPress() {
+                                                                            const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          tmp16 = closure_11;
+                                                                          obj24.isLandscape = closure_11;
+                                                                          ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                          return closure_19(context(tmp2[52]), obj24);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                          tmp12 = closure_19;
+                                                                          tmp13 = context;
+                                                                          obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                          ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                          obj25.onPress = function onPress() {
+                                                                            const obj = { application: item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          obj25.showsPromoted = item.showsPromoted;
+                                                                          return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                          tmp10 = closure_19;
+                                                                          tmp11 = context;
+                                                                          obj26 = { title: null, onPress: null };
+                                                                          obj26.title = item.title;
+                                                                          obj26.onPress = function onPress() {
+                                                                            const applications = item.applications;
+                                                                            const mapped = applications.map((item) => item);
+                                                                            let obj = AppLauncherNativeUtils;
+                                                                            const obj2 = {
+                                                                              location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                              navigation,
+                                                                              context,
+                                                                              sectionName: item.sectionName,
+                                                                              sectionOverallPosition: item.sectionOverallPosition,
+                                                                              applications: mapped,
+                                                                              sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                              commands: [],
+                                                                              sectionDescriptors: mapped.map((item) => {
+                                                                                const obj = item(closure_1_3[49]);
+                                                                                return obj.getApplicationCommandSection(item);
+                                                                              }),
+                                                                              title: item.title,
+                                                                              promotedApplicationIds: item.promotedApplicationIds
+                                                                            };
+                                                                            const result = obj.handleViewAllSelected(obj2);
+                                                                          };
+                                                                          return closure_19(context(tmp2[54]), obj26);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                          tmp8 = closure_19;
+                                                                          tmp9 = closure_1_35;
+                                                                          return closure_19(closure_1_35, {});
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                          tmp4 = closure_19;
+                                                                          tmp5 = context;
+                                                                          obj = { visible: null };
+                                                                          tmp7 = closure_3;
+                                                                          tmp6 = context(tmp2[55]);
+                                                                          obj.visible = closure_3.valueOf();
+                                                                          return closure_19(tmp6, obj);
+                                                                        } else {
+                                                                          tmp3 = null;
+                                                                          return null;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  } else {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                  if (cResult[70] !== !tmp6) {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                    tmp59[0] = !tmp6;
+                                                                    cResult[70] = !tmp6;
+                                                                    class Ce {
+                                                                      constructor(arg0) {
+                                                                        item = navigation.item;
+                                                                        index = navigation.index;
+                                                                        type = item.type;
+                                                                        tmp = navigation;
+                                                                        tmp2 = closure_3;
+                                                                        if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                          tmp40 = closure_19;
+                                                                          tmp41 = context;
+                                                                          obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                          num2 = 0;
+                                                                          obj1.isFirstRow = 0 === index;
+                                                                          tmp42 = list;
+                                                                          num3 = 1;
+                                                                          obj1.isLastRow = index === list.length - 1;
+                                                                          obj15 = { height: null };
+                                                                          tmp43 = closure_5;
+                                                                          obj15.height = closure_5;
+                                                                          obj1.style = obj15;
+                                                                          return closure_19(context(tmp2[51]), obj1);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                          tmp38 = closure_19;
+                                                                          tmp39 = closure_4;
+                                                                          items = [, ];
+                                                                          items[0] = closure_4.sectionHeader;
+                                                                          num = 0;
+                                                                          obj16 = null;
+                                                                          Text = tmp(tmp2[18]).Text;
+                                                                          if (0 !== index) {
+                                                                            obj16 = { marginTop: 24 };
+                                                                          }
+                                                                          obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                          items[1] = obj16;
+                                                                          obj17.style = items;
+                                                                          obj17.children = item.section;
+                                                                          return tmp38(Text, obj17);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                          tmp36 = closure_19;
+                                                                          tmp37 = closure_30;
+                                                                          obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                          obj18.section = item.section;
+                                                                          obj18.onPress = function onPress(shelfData) {
+                                                                            const obj = { shelfData, sectionName: item.sectionName };
+                                                                            triggeredOnboardingContentMetadata(obj);
+                                                                          };
+                                                                          ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                          return closure_19(closure_30, obj18, item.section.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                          obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp29 = context;
+                                                                          obj19.context = context;
+                                                                          tmp27 = closure_19;
+                                                                          tmp28 = closure_31;
+                                                                          obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                          obj19.onPress = function onPress(shelfData) {
+                                                                            let tmp2;
+                                                                            const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                            tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                            const tmp = triggeredOnboardingContentMetadata;
+                                                                            if (!tmp2) {
+                                                                              tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            tmp(obj);
+                                                                          };
+                                                                          tmp30 = closure_20;
+                                                                          tmp31 = !closure_20;
+                                                                          if (tmp31) {
+                                                                            tmp32 = entrypoint;
+                                                                            tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                          }
+                                                                          obj19.usesHandleActivityItemSelected = tmp31;
+                                                                          tmp33 = onActivityItemSelected;
+                                                                          obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                          ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                          tmp34 = entrypoint;
+                                                                          obj19.entrypoint = entrypoint;
+                                                                          tmp35 = width;
+                                                                          obj19.containerWidth = width;
+                                                                          return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                          tmp22 = closure_19;
+                                                                          tmp23 = closure_33;
+                                                                          obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp24 = context;
+                                                                          obj20.context = context;
+                                                                          obj20.sectionName = item.sectionName;
+                                                                          obj20.onPress = function onPress(application, sectionName) {
+                                                                            const obj = { application, sectionName };
+                                                                            return closure_1_19(obj);
+                                                                          };
+                                                                          ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                          tmp25 = entrypoint;
+                                                                          obj20.entrypoint = entrypoint;
+                                                                          tmp26 = width;
+                                                                          obj20.containerWidth = width;
+                                                                          return closure_19(closure_33, obj20);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                          tmp19 = closure_19;
+                                                                          tmp20 = closure_29;
+                                                                          obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                          obj21.section = item.section;
+                                                                          obj21.onPress = function onPress() {
+                                                                            closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                          };
+                                                                          ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                          obj22 = { height: null };
+                                                                          tmp21 = closure_5;
+                                                                          obj22.height = closure_5;
+                                                                          obj21.style = obj22;
+                                                                          return closure_19(closure_29, obj21, item.section.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                          tmp17 = closure_19;
+                                                                          tmp18 = closure_1_36;
+                                                                          obj23 = { index: null, children: null };
+                                                                          obj23.index = index;
+                                                                          obj23.children = item.section;
+                                                                          return closure_19(closure_1_36, obj23);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                          tmp14 = closure_19;
+                                                                          tmp15 = context;
+                                                                          obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                          obj24.application = item.item.application;
+                                                                          ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                          obj24.onPress = function onPress() {
+                                                                            const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          tmp16 = closure_11;
+                                                                          obj24.isLandscape = closure_11;
+                                                                          ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                          return closure_19(context(tmp2[52]), obj24);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                          tmp12 = closure_19;
+                                                                          tmp13 = context;
+                                                                          obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                          ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                          obj25.onPress = function onPress() {
+                                                                            const obj = { application: item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          obj25.showsPromoted = item.showsPromoted;
+                                                                          return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                          tmp10 = closure_19;
+                                                                          tmp11 = context;
+                                                                          obj26 = { title: null, onPress: null };
+                                                                          obj26.title = item.title;
+                                                                          obj26.onPress = function onPress() {
+                                                                            const applications = item.applications;
+                                                                            const mapped = applications.map((item) => item);
+                                                                            let obj = AppLauncherNativeUtils;
+                                                                            const obj2 = {
+                                                                              location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                              navigation,
+                                                                              context,
+                                                                              sectionName: item.sectionName,
+                                                                              sectionOverallPosition: item.sectionOverallPosition,
+                                                                              applications: mapped,
+                                                                              sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                              commands: [],
+                                                                              sectionDescriptors: mapped.map((item) => {
+                                                                                const obj = item(closure_1_3[49]);
+                                                                                return obj.getApplicationCommandSection(item);
+                                                                              }),
+                                                                              title: item.title,
+                                                                              promotedApplicationIds: item.promotedApplicationIds
+                                                                            };
+                                                                            const result = obj.handleViewAllSelected(obj2);
+                                                                          };
+                                                                          return closure_19(context(tmp2[54]), obj26);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                          tmp8 = closure_19;
+                                                                          tmp9 = closure_1_35;
+                                                                          return closure_19(closure_1_35, {});
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                          tmp4 = closure_19;
+                                                                          tmp5 = context;
+                                                                          obj = { visible: null };
+                                                                          tmp7 = closure_3;
+                                                                          tmp6 = context(tmp2[55]);
+                                                                          obj.visible = closure_3.valueOf();
+                                                                          return closure_19(tmp6, obj);
+                                                                        } else {
+                                                                          tmp3 = null;
+                                                                          return null;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    tmp58 = tmp59;
+                                                                  } else {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                  if (cResult[72] !== tmp6) {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                    tmp61[0] = tmp6;
+                                                                    cResult[72] = tmp6;
+                                                                    class Ce {
+                                                                      constructor(arg0) {
+                                                                        item = navigation.item;
+                                                                        index = navigation.index;
+                                                                        type = item.type;
+                                                                        tmp = navigation;
+                                                                        tmp2 = closure_3;
+                                                                        if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                          tmp40 = closure_19;
+                                                                          tmp41 = context;
+                                                                          obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                          num2 = 0;
+                                                                          obj1.isFirstRow = 0 === index;
+                                                                          tmp42 = list;
+                                                                          num3 = 1;
+                                                                          obj1.isLastRow = index === list.length - 1;
+                                                                          obj15 = { height: null };
+                                                                          tmp43 = closure_5;
+                                                                          obj15.height = closure_5;
+                                                                          obj1.style = obj15;
+                                                                          return closure_19(context(tmp2[51]), obj1);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                          tmp38 = closure_19;
+                                                                          tmp39 = closure_4;
+                                                                          items = [, ];
+                                                                          items[0] = closure_4.sectionHeader;
+                                                                          num = 0;
+                                                                          obj16 = null;
+                                                                          Text = tmp(tmp2[18]).Text;
+                                                                          if (0 !== index) {
+                                                                            obj16 = { marginTop: 24 };
+                                                                          }
+                                                                          obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                          items[1] = obj16;
+                                                                          obj17.style = items;
+                                                                          obj17.children = item.section;
+                                                                          return tmp38(Text, obj17);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                          tmp36 = closure_19;
+                                                                          tmp37 = closure_30;
+                                                                          obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                          obj18.section = item.section;
+                                                                          obj18.onPress = function onPress(shelfData) {
+                                                                            const obj = { shelfData, sectionName: item.sectionName };
+                                                                            triggeredOnboardingContentMetadata(obj);
+                                                                          };
+                                                                          ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                          return closure_19(closure_30, obj18, item.section.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                          obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp29 = context;
+                                                                          obj19.context = context;
+                                                                          tmp27 = closure_19;
+                                                                          tmp28 = closure_31;
+                                                                          obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                          obj19.onPress = function onPress(shelfData) {
+                                                                            let tmp2;
+                                                                            const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                            tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                            const tmp = triggeredOnboardingContentMetadata;
+                                                                            if (!tmp2) {
+                                                                              tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            tmp(obj);
+                                                                          };
+                                                                          tmp30 = closure_20;
+                                                                          tmp31 = !closure_20;
+                                                                          if (tmp31) {
+                                                                            tmp32 = entrypoint;
+                                                                            tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                          }
+                                                                          obj19.usesHandleActivityItemSelected = tmp31;
+                                                                          tmp33 = onActivityItemSelected;
+                                                                          obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                          ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                          tmp34 = entrypoint;
+                                                                          obj19.entrypoint = entrypoint;
+                                                                          tmp35 = width;
+                                                                          obj19.containerWidth = width;
+                                                                          return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                          tmp22 = closure_19;
+                                                                          tmp23 = closure_33;
+                                                                          obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp24 = context;
+                                                                          obj20.context = context;
+                                                                          obj20.sectionName = item.sectionName;
+                                                                          obj20.onPress = function onPress(application, sectionName) {
+                                                                            const obj = { application, sectionName };
+                                                                            return closure_1_19(obj);
+                                                                          };
+                                                                          ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                          tmp25 = entrypoint;
+                                                                          obj20.entrypoint = entrypoint;
+                                                                          tmp26 = width;
+                                                                          obj20.containerWidth = width;
+                                                                          return closure_19(closure_33, obj20);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                          tmp19 = closure_19;
+                                                                          tmp20 = closure_29;
+                                                                          obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                          obj21.section = item.section;
+                                                                          obj21.onPress = function onPress() {
+                                                                            closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                          };
+                                                                          ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                          obj22 = { height: null };
+                                                                          tmp21 = closure_5;
+                                                                          obj22.height = closure_5;
+                                                                          obj21.style = obj22;
+                                                                          return closure_19(closure_29, obj21, item.section.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                          tmp17 = closure_19;
+                                                                          tmp18 = closure_1_36;
+                                                                          obj23 = { index: null, children: null };
+                                                                          obj23.index = index;
+                                                                          obj23.children = item.section;
+                                                                          return closure_19(closure_1_36, obj23);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                          tmp14 = closure_19;
+                                                                          tmp15 = context;
+                                                                          obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                          obj24.application = item.item.application;
+                                                                          ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                          obj24.onPress = function onPress() {
+                                                                            const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          tmp16 = closure_11;
+                                                                          obj24.isLandscape = closure_11;
+                                                                          ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                          return closure_19(context(tmp2[52]), obj24);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                          tmp12 = closure_19;
+                                                                          tmp13 = context;
+                                                                          obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                          ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                          obj25.onPress = function onPress() {
+                                                                            const obj = { application: item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          obj25.showsPromoted = item.showsPromoted;
+                                                                          return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                          tmp10 = closure_19;
+                                                                          tmp11 = context;
+                                                                          obj26 = { title: null, onPress: null };
+                                                                          obj26.title = item.title;
+                                                                          obj26.onPress = function onPress() {
+                                                                            const applications = item.applications;
+                                                                            const mapped = applications.map((item) => item);
+                                                                            let obj = AppLauncherNativeUtils;
+                                                                            const obj2 = {
+                                                                              location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                              navigation,
+                                                                              context,
+                                                                              sectionName: item.sectionName,
+                                                                              sectionOverallPosition: item.sectionOverallPosition,
+                                                                              applications: mapped,
+                                                                              sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                              commands: [],
+                                                                              sectionDescriptors: mapped.map((item) => {
+                                                                                const obj = item(closure_1_3[49]);
+                                                                                return obj.getApplicationCommandSection(item);
+                                                                              }),
+                                                                              title: item.title,
+                                                                              promotedApplicationIds: item.promotedApplicationIds
+                                                                            };
+                                                                            const result = obj.handleViewAllSelected(obj2);
+                                                                          };
+                                                                          return closure_19(context(tmp2[54]), obj26);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                          tmp8 = closure_19;
+                                                                          tmp9 = closure_1_35;
+                                                                          return closure_19(closure_1_35, {});
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                          tmp4 = closure_19;
+                                                                          tmp5 = context;
+                                                                          obj = { visible: null };
+                                                                          tmp7 = closure_3;
+                                                                          tmp6 = context(tmp2[55]);
+                                                                          obj.visible = closure_3.valueOf();
+                                                                          return closure_19(tmp6, obj);
+                                                                        } else {
+                                                                          tmp3 = null;
+                                                                          return null;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    tmp60 = tmp61;
+                                                                  } else {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                  tmp5(8227)(tmp55, tmp58, tmp60);
+                                                                  [r10312, closure_30] = _slicedToArray(obj4.useState(false), 2);
+                                                                  const _Symbol3 = Symbol;
+                                                                  _slicedToArray(obj4.useState(false), 2);
+                                                                  if (cResult[74] === Symbol.for("react.memo_cache_sentinel")) {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                    const items4 = [];
+                                                                    cResult[74] = tmp66;
+                                                                    class Ce {
+                                                                      constructor(arg0) {
+                                                                        item = navigation.item;
+                                                                        index = navigation.index;
+                                                                        type = item.type;
+                                                                        tmp = navigation;
+                                                                        tmp2 = closure_3;
+                                                                        if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                          tmp40 = closure_19;
+                                                                          tmp41 = context;
+                                                                          obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                          num2 = 0;
+                                                                          obj1.isFirstRow = 0 === index;
+                                                                          tmp42 = list;
+                                                                          num3 = 1;
+                                                                          obj1.isLastRow = index === list.length - 1;
+                                                                          obj15 = { height: null };
+                                                                          tmp43 = closure_5;
+                                                                          obj15.height = closure_5;
+                                                                          obj1.style = obj15;
+                                                                          return closure_19(context(tmp2[51]), obj1);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                          tmp38 = closure_19;
+                                                                          tmp39 = closure_4;
+                                                                          items = [, ];
+                                                                          items[0] = closure_4.sectionHeader;
+                                                                          num = 0;
+                                                                          obj16 = null;
+                                                                          Text = tmp(tmp2[18]).Text;
+                                                                          if (0 !== index) {
+                                                                            obj16 = { marginTop: 24 };
+                                                                          }
+                                                                          obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                          items[1] = obj16;
+                                                                          obj17.style = items;
+                                                                          obj17.children = item.section;
+                                                                          return tmp38(Text, obj17);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                          tmp36 = closure_19;
+                                                                          tmp37 = closure_30;
+                                                                          obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                          obj18.section = item.section;
+                                                                          obj18.onPress = function onPress(shelfData) {
+                                                                            const obj = { shelfData, sectionName: item.sectionName };
+                                                                            triggeredOnboardingContentMetadata(obj);
+                                                                          };
+                                                                          ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                          return closure_19(closure_30, obj18, item.section.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                          obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp29 = context;
+                                                                          obj19.context = context;
+                                                                          tmp27 = closure_19;
+                                                                          tmp28 = closure_31;
+                                                                          obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                          obj19.onPress = function onPress(shelfData) {
+                                                                            let tmp2;
+                                                                            const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                            tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                            const tmp = triggeredOnboardingContentMetadata;
+                                                                            if (!tmp2) {
+                                                                              tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            tmp(obj);
+                                                                          };
+                                                                          tmp30 = closure_20;
+                                                                          tmp31 = !closure_20;
+                                                                          if (tmp31) {
+                                                                            tmp32 = entrypoint;
+                                                                            tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                          }
+                                                                          obj19.usesHandleActivityItemSelected = tmp31;
+                                                                          tmp33 = onActivityItemSelected;
+                                                                          obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                          ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                          tmp34 = entrypoint;
+                                                                          obj19.entrypoint = entrypoint;
+                                                                          tmp35 = width;
+                                                                          obj19.containerWidth = width;
+                                                                          return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                          tmp22 = closure_19;
+                                                                          tmp23 = closure_33;
+                                                                          obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp24 = context;
+                                                                          obj20.context = context;
+                                                                          obj20.sectionName = item.sectionName;
+                                                                          obj20.onPress = function onPress(application, sectionName) {
+                                                                            const obj = { application, sectionName };
+                                                                            return closure_1_19(obj);
+                                                                          };
+                                                                          ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                          tmp25 = entrypoint;
+                                                                          obj20.entrypoint = entrypoint;
+                                                                          tmp26 = width;
+                                                                          obj20.containerWidth = width;
+                                                                          return closure_19(closure_33, obj20);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                          tmp19 = closure_19;
+                                                                          tmp20 = closure_29;
+                                                                          obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                          obj21.section = item.section;
+                                                                          obj21.onPress = function onPress() {
+                                                                            closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                          };
+                                                                          ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                          obj22 = { height: null };
+                                                                          tmp21 = closure_5;
+                                                                          obj22.height = closure_5;
+                                                                          obj21.style = obj22;
+                                                                          return closure_19(closure_29, obj21, item.section.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                          tmp17 = closure_19;
+                                                                          tmp18 = closure_1_36;
+                                                                          obj23 = { index: null, children: null };
+                                                                          obj23.index = index;
+                                                                          obj23.children = item.section;
+                                                                          return closure_19(closure_1_36, obj23);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                          tmp14 = closure_19;
+                                                                          tmp15 = context;
+                                                                          obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                          obj24.application = item.item.application;
+                                                                          ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                          obj24.onPress = function onPress() {
+                                                                            const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          tmp16 = closure_11;
+                                                                          obj24.isLandscape = closure_11;
+                                                                          ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                          return closure_19(context(tmp2[52]), obj24);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                          tmp12 = closure_19;
+                                                                          tmp13 = context;
+                                                                          obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                          ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                          obj25.onPress = function onPress() {
+                                                                            const obj = { application: item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          obj25.showsPromoted = item.showsPromoted;
+                                                                          return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                          tmp10 = closure_19;
+                                                                          tmp11 = context;
+                                                                          obj26 = { title: null, onPress: null };
+                                                                          obj26.title = item.title;
+                                                                          obj26.onPress = function onPress() {
+                                                                            const applications = item.applications;
+                                                                            const mapped = applications.map((item) => item);
+                                                                            let obj = AppLauncherNativeUtils;
+                                                                            const obj2 = {
+                                                                              location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                              navigation,
+                                                                              context,
+                                                                              sectionName: item.sectionName,
+                                                                              sectionOverallPosition: item.sectionOverallPosition,
+                                                                              applications: mapped,
+                                                                              sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                              commands: [],
+                                                                              sectionDescriptors: mapped.map((item) => {
+                                                                                const obj = item(closure_1_3[49]);
+                                                                                return obj.getApplicationCommandSection(item);
+                                                                              }),
+                                                                              title: item.title,
+                                                                              promotedApplicationIds: item.promotedApplicationIds
+                                                                            };
+                                                                            const result = obj.handleViewAllSelected(obj2);
+                                                                          };
+                                                                          return closure_19(context(tmp2[54]), obj26);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                          tmp8 = closure_19;
+                                                                          tmp9 = closure_1_35;
+                                                                          return closure_19(closure_1_35, {});
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                          tmp4 = closure_19;
+                                                                          tmp5 = context;
+                                                                          obj = { visible: null };
+                                                                          tmp7 = closure_3;
+                                                                          tmp6 = context(tmp2[55]);
+                                                                          obj.visible = closure_3.valueOf();
+                                                                          return closure_19(tmp6, obj);
+                                                                        } else {
+                                                                          tmp3 = null;
+                                                                          return null;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    tmp65 = items4;
+                                                                    tmp64 = tmp66;
+                                                                  } else {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                    tmp65 = cResult[75];
+                                                                  }
+                                                                  const effect3 = obj4.useEffect(tmp64, tmp65);
+                                                                  const _Symbol4 = Symbol;
+                                                                  if (cResult[76] === Symbol.for("react.memo_cache_sentinel")) {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                    const items5 = [triggeredOnboardingContentMetadata];
+                                                                    function ot() {
+                                                                      return triggeredOnboardingContentMetadata.getTriggeredOnboardingContentMetadata().willShowGlobalSearchOnboarding;
+                                                                    }
+                                                                    class Ce {
+                                                                      constructor(arg0) {
+                                                                        item = navigation.item;
+                                                                        index = navigation.index;
+                                                                        type = item.type;
+                                                                        tmp = navigation;
+                                                                        tmp2 = closure_3;
+                                                                        if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                          tmp40 = closure_19;
+                                                                          tmp41 = context;
+                                                                          obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                          num2 = 0;
+                                                                          obj1.isFirstRow = 0 === index;
+                                                                          tmp42 = list;
+                                                                          num3 = 1;
+                                                                          obj1.isLastRow = index === list.length - 1;
+                                                                          obj15 = { height: null };
+                                                                          tmp43 = closure_5;
+                                                                          obj15.height = closure_5;
+                                                                          obj1.style = obj15;
+                                                                          return closure_19(context(tmp2[51]), obj1);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                          tmp38 = closure_19;
+                                                                          tmp39 = closure_4;
+                                                                          items = [, ];
+                                                                          items[0] = closure_4.sectionHeader;
+                                                                          num = 0;
+                                                                          obj16 = null;
+                                                                          Text = tmp(tmp2[18]).Text;
+                                                                          if (0 !== index) {
+                                                                            obj16 = { marginTop: 24 };
+                                                                          }
+                                                                          obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                          items[1] = obj16;
+                                                                          obj17.style = items;
+                                                                          obj17.children = item.section;
+                                                                          return tmp38(Text, obj17);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                          tmp36 = closure_19;
+                                                                          tmp37 = closure_30;
+                                                                          obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                          obj18.section = item.section;
+                                                                          obj18.onPress = function onPress(shelfData) {
+                                                                            const obj = { shelfData, sectionName: item.sectionName };
+                                                                            triggeredOnboardingContentMetadata(obj);
+                                                                          };
+                                                                          ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                          return closure_19(closure_30, obj18, item.section.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                          obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp29 = context;
+                                                                          obj19.context = context;
+                                                                          tmp27 = closure_19;
+                                                                          tmp28 = closure_31;
+                                                                          obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                          obj19.onPress = function onPress(shelfData) {
+                                                                            let tmp2;
+                                                                            const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                            tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                            const tmp = triggeredOnboardingContentMetadata;
+                                                                            if (!tmp2) {
+                                                                              tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            tmp(obj);
+                                                                          };
+                                                                          tmp30 = closure_20;
+                                                                          tmp31 = !closure_20;
+                                                                          if (tmp31) {
+                                                                            tmp32 = entrypoint;
+                                                                            tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                          }
+                                                                          obj19.usesHandleActivityItemSelected = tmp31;
+                                                                          tmp33 = onActivityItemSelected;
+                                                                          obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                          ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                          tmp34 = entrypoint;
+                                                                          obj19.entrypoint = entrypoint;
+                                                                          tmp35 = width;
+                                                                          obj19.containerWidth = width;
+                                                                          return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                          tmp22 = closure_19;
+                                                                          tmp23 = closure_33;
+                                                                          obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp24 = context;
+                                                                          obj20.context = context;
+                                                                          obj20.sectionName = item.sectionName;
+                                                                          obj20.onPress = function onPress(application, sectionName) {
+                                                                            const obj = { application, sectionName };
+                                                                            return closure_1_19(obj);
+                                                                          };
+                                                                          ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                          tmp25 = entrypoint;
+                                                                          obj20.entrypoint = entrypoint;
+                                                                          tmp26 = width;
+                                                                          obj20.containerWidth = width;
+                                                                          return closure_19(closure_33, obj20);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                          tmp19 = closure_19;
+                                                                          tmp20 = closure_29;
+                                                                          obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                          obj21.section = item.section;
+                                                                          obj21.onPress = function onPress() {
+                                                                            closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                          };
+                                                                          ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                          obj22 = { height: null };
+                                                                          tmp21 = closure_5;
+                                                                          obj22.height = closure_5;
+                                                                          obj21.style = obj22;
+                                                                          return closure_19(closure_29, obj21, item.section.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                          tmp17 = closure_19;
+                                                                          tmp18 = closure_1_36;
+                                                                          obj23 = { index: null, children: null };
+                                                                          obj23.index = index;
+                                                                          obj23.children = item.section;
+                                                                          return closure_19(closure_1_36, obj23);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                          tmp14 = closure_19;
+                                                                          tmp15 = context;
+                                                                          obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                          obj24.application = item.item.application;
+                                                                          ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                          obj24.onPress = function onPress() {
+                                                                            const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          tmp16 = closure_11;
+                                                                          obj24.isLandscape = closure_11;
+                                                                          ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                          return closure_19(context(tmp2[52]), obj24);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                          tmp12 = closure_19;
+                                                                          tmp13 = context;
+                                                                          obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                          ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                          obj25.onPress = function onPress() {
+                                                                            const obj = { application: item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          obj25.showsPromoted = item.showsPromoted;
+                                                                          return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                          tmp10 = closure_19;
+                                                                          tmp11 = context;
+                                                                          obj26 = { title: null, onPress: null };
+                                                                          obj26.title = item.title;
+                                                                          obj26.onPress = function onPress() {
+                                                                            const applications = item.applications;
+                                                                            const mapped = applications.map((item) => item);
+                                                                            let obj = AppLauncherNativeUtils;
+                                                                            const obj2 = {
+                                                                              location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                              navigation,
+                                                                              context,
+                                                                              sectionName: item.sectionName,
+                                                                              sectionOverallPosition: item.sectionOverallPosition,
+                                                                              applications: mapped,
+                                                                              sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                              commands: [],
+                                                                              sectionDescriptors: mapped.map((item) => {
+                                                                                const obj = item(closure_1_3[49]);
+                                                                                return obj.getApplicationCommandSection(item);
+                                                                              }),
+                                                                              title: item.title,
+                                                                              promotedApplicationIds: item.promotedApplicationIds
+                                                                            };
+                                                                            const result = obj.handleViewAllSelected(obj2);
+                                                                          };
+                                                                          return closure_19(context(tmp2[54]), obj26);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                          tmp8 = closure_19;
+                                                                          tmp9 = closure_1_35;
+                                                                          return closure_19(closure_1_35, {});
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                          tmp4 = closure_19;
+                                                                          tmp5 = context;
+                                                                          obj = { visible: null };
+                                                                          tmp7 = closure_3;
+                                                                          tmp6 = context(tmp2[55]);
+                                                                          obj.visible = closure_3.valueOf();
+                                                                          return closure_19(tmp6, obj);
+                                                                        } else {
+                                                                          tmp3 = null;
+                                                                          return null;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    cResult[77] = ot;
+                                                                    tmp69 = ot;
+                                                                    tmp68 = items5;
+                                                                  } else {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                    tmp69 = cResult[77];
+                                                                  }
+                                                                  const tmpResult8 = tmp(504);
+                                                                  const stateFromStores = tmpResult8.useStateFromStores(tmp68, tmp69);
+                                                                  if (cResult[78] !== stateFromStores) {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                    cResult[78] = stateFromStores;
+                                                                    cResult[79] = tmp72;
+                                                                    class Ce {
+                                                                      constructor(arg0) {
+                                                                        item = navigation.item;
+                                                                        index = navigation.index;
+                                                                        type = item.type;
+                                                                        tmp = navigation;
+                                                                        tmp2 = closure_3;
+                                                                        if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                          tmp40 = closure_19;
+                                                                          tmp41 = context;
+                                                                          obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                          num2 = 0;
+                                                                          obj1.isFirstRow = 0 === index;
+                                                                          tmp42 = list;
+                                                                          num3 = 1;
+                                                                          obj1.isLastRow = index === list.length - 1;
+                                                                          obj15 = { height: null };
+                                                                          tmp43 = closure_5;
+                                                                          obj15.height = closure_5;
+                                                                          obj1.style = obj15;
+                                                                          return closure_19(context(tmp2[51]), obj1);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                          tmp38 = closure_19;
+                                                                          tmp39 = closure_4;
+                                                                          items = [, ];
+                                                                          items[0] = closure_4.sectionHeader;
+                                                                          num = 0;
+                                                                          obj16 = null;
+                                                                          Text = tmp(tmp2[18]).Text;
+                                                                          if (0 !== index) {
+                                                                            obj16 = { marginTop: 24 };
+                                                                          }
+                                                                          obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                          items[1] = obj16;
+                                                                          obj17.style = items;
+                                                                          obj17.children = item.section;
+                                                                          return tmp38(Text, obj17);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                          tmp36 = closure_19;
+                                                                          tmp37 = closure_30;
+                                                                          obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                          obj18.section = item.section;
+                                                                          obj18.onPress = function onPress(shelfData) {
+                                                                            const obj = { shelfData, sectionName: item.sectionName };
+                                                                            triggeredOnboardingContentMetadata(obj);
+                                                                          };
+                                                                          ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                          return closure_19(closure_30, obj18, item.section.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                          obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp29 = context;
+                                                                          obj19.context = context;
+                                                                          tmp27 = closure_19;
+                                                                          tmp28 = closure_31;
+                                                                          obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                          obj19.onPress = function onPress(shelfData) {
+                                                                            let tmp2;
+                                                                            const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                            tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                            const tmp = triggeredOnboardingContentMetadata;
+                                                                            if (!tmp2) {
+                                                                              tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            tmp(obj);
+                                                                          };
+                                                                          tmp30 = closure_20;
+                                                                          tmp31 = !closure_20;
+                                                                          if (tmp31) {
+                                                                            tmp32 = entrypoint;
+                                                                            tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                          }
+                                                                          obj19.usesHandleActivityItemSelected = tmp31;
+                                                                          tmp33 = onActivityItemSelected;
+                                                                          obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                          ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                          tmp34 = entrypoint;
+                                                                          obj19.entrypoint = entrypoint;
+                                                                          tmp35 = width;
+                                                                          obj19.containerWidth = width;
+                                                                          return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                          tmp22 = closure_19;
+                                                                          tmp23 = closure_33;
+                                                                          obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp24 = context;
+                                                                          obj20.context = context;
+                                                                          obj20.sectionName = item.sectionName;
+                                                                          obj20.onPress = function onPress(application, sectionName) {
+                                                                            const obj = { application, sectionName };
+                                                                            return closure_1_19(obj);
+                                                                          };
+                                                                          ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                          tmp25 = entrypoint;
+                                                                          obj20.entrypoint = entrypoint;
+                                                                          tmp26 = width;
+                                                                          obj20.containerWidth = width;
+                                                                          return closure_19(closure_33, obj20);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                          tmp19 = closure_19;
+                                                                          tmp20 = closure_29;
+                                                                          obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                          obj21.section = item.section;
+                                                                          obj21.onPress = function onPress() {
+                                                                            closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                          };
+                                                                          ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                          obj22 = { height: null };
+                                                                          tmp21 = closure_5;
+                                                                          obj22.height = closure_5;
+                                                                          obj21.style = obj22;
+                                                                          return closure_19(closure_29, obj21, item.section.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                          tmp17 = closure_19;
+                                                                          tmp18 = closure_1_36;
+                                                                          obj23 = { index: null, children: null };
+                                                                          obj23.index = index;
+                                                                          obj23.children = item.section;
+                                                                          return closure_19(closure_1_36, obj23);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                          tmp14 = closure_19;
+                                                                          tmp15 = context;
+                                                                          obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                          obj24.application = item.item.application;
+                                                                          ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                          obj24.onPress = function onPress() {
+                                                                            const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          tmp16 = closure_11;
+                                                                          obj24.isLandscape = closure_11;
+                                                                          ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                          return closure_19(context(tmp2[52]), obj24);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                          tmp12 = closure_19;
+                                                                          tmp13 = context;
+                                                                          obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                          ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                          obj25.onPress = function onPress() {
+                                                                            const obj = { application: item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          obj25.showsPromoted = item.showsPromoted;
+                                                                          return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                          tmp10 = closure_19;
+                                                                          tmp11 = context;
+                                                                          obj26 = { title: null, onPress: null };
+                                                                          obj26.title = item.title;
+                                                                          obj26.onPress = function onPress() {
+                                                                            const applications = item.applications;
+                                                                            const mapped = applications.map((item) => item);
+                                                                            let obj = AppLauncherNativeUtils;
+                                                                            const obj2 = {
+                                                                              location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                              navigation,
+                                                                              context,
+                                                                              sectionName: item.sectionName,
+                                                                              sectionOverallPosition: item.sectionOverallPosition,
+                                                                              applications: mapped,
+                                                                              sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                              commands: [],
+                                                                              sectionDescriptors: mapped.map((item) => {
+                                                                                const obj = item(closure_1_3[49]);
+                                                                                return obj.getApplicationCommandSection(item);
+                                                                              }),
+                                                                              title: item.title,
+                                                                              promotedApplicationIds: item.promotedApplicationIds
+                                                                            };
+                                                                            const result = obj.handleViewAllSelected(obj2);
+                                                                          };
+                                                                          return closure_19(context(tmp2[54]), obj26);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                          tmp8 = closure_19;
+                                                                          tmp9 = closure_1_35;
+                                                                          return closure_19(closure_1_35, {});
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                          tmp4 = closure_19;
+                                                                          tmp5 = context;
+                                                                          obj = { visible: null };
+                                                                          tmp7 = closure_3;
+                                                                          tmp6 = context(tmp2[55]);
+                                                                          obj.visible = closure_3.valueOf();
+                                                                          return closure_19(tmp6, obj);
+                                                                        } else {
+                                                                          tmp3 = null;
+                                                                          return null;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  } else {
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                  const tmpResult9 = tmp(11468);
+                                                                  const trackAppLauncherHomeItemImpression = tmpResult9.useTrackAppLauncherHomeItemImpression().trackAppLauncherHomeItemImpression;
+                                                                  if (cResult[80] === sum) {
+                                                                    let tmp81;
+                                                                    let tmp84;
+                                                                    class Fe {
+                                                                      constructor() {
+                                                                        const obj = AppAnalyticsUtils;
+                                                                        const obj2 = { source: entrypoint };
+                                                                        obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                      }
+                                                                    }
+                                                                    if (cResult[83] !== sum) {
+                                                                      class Fe {
+                                                                        constructor() {
+                                                                          const obj = AppAnalyticsUtils;
+                                                                          const obj2 = { source: entrypoint };
+                                                                          obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                        }
+                                                                      }
+                                                                      tmp77[0] = sum;
+                                                                      cResult[83] = sum;
+                                                                      class Ce {
+                                                                        constructor(arg0) {
+                                                                          item = navigation.item;
+                                                                          index = navigation.index;
+                                                                          type = item.type;
+                                                                          tmp = navigation;
+                                                                          tmp2 = closure_3;
+                                                                          if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                            tmp40 = closure_19;
+                                                                            tmp41 = context;
+                                                                            obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                            num2 = 0;
+                                                                            obj1.isFirstRow = 0 === index;
+                                                                            tmp42 = list;
+                                                                            num3 = 1;
+                                                                            obj1.isLastRow = index === list.length - 1;
+                                                                            obj15 = { height: null };
+                                                                            tmp43 = closure_5;
+                                                                            obj15.height = closure_5;
+                                                                            obj1.style = obj15;
+                                                                            return closure_19(context(tmp2[51]), obj1);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                            tmp38 = closure_19;
+                                                                            tmp39 = closure_4;
+                                                                            items = [, ];
+                                                                            items[0] = closure_4.sectionHeader;
+                                                                            num = 0;
+                                                                            obj16 = null;
+                                                                            Text = tmp(tmp2[18]).Text;
+                                                                            if (0 !== index) {
+                                                                              obj16 = { marginTop: 24 };
+                                                                            }
+                                                                            obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                            items[1] = obj16;
+                                                                            obj17.style = items;
+                                                                            obj17.children = item.section;
+                                                                            return tmp38(Text, obj17);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                            tmp36 = closure_19;
+                                                                            tmp37 = closure_30;
+                                                                            obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                            obj18.section = item.section;
+                                                                            obj18.onPress = function onPress(shelfData) {
+                                                                              const obj = { shelfData, sectionName: item.sectionName };
+                                                                              triggeredOnboardingContentMetadata(obj);
+                                                                            };
+                                                                            ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                            return closure_19(closure_30, obj18, item.section.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                            obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                            tmp29 = context;
+                                                                            obj19.context = context;
+                                                                            tmp27 = closure_19;
+                                                                            tmp28 = closure_31;
+                                                                            obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                            obj19.onPress = function onPress(shelfData) {
+                                                                              let tmp2;
+                                                                              const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                              tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                              const tmp = triggeredOnboardingContentMetadata;
+                                                                              if (!tmp2) {
+                                                                                tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                              }
+                                                                              tmp(obj);
+                                                                            };
+                                                                            tmp30 = closure_20;
+                                                                            tmp31 = !closure_20;
+                                                                            if (tmp31) {
+                                                                              tmp32 = entrypoint;
+                                                                              tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            obj19.usesHandleActivityItemSelected = tmp31;
+                                                                            tmp33 = onActivityItemSelected;
+                                                                            obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                            ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                            tmp34 = entrypoint;
+                                                                            obj19.entrypoint = entrypoint;
+                                                                            tmp35 = width;
+                                                                            obj19.containerWidth = width;
+                                                                            return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                            tmp22 = closure_19;
+                                                                            tmp23 = closure_33;
+                                                                            obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                            tmp24 = context;
+                                                                            obj20.context = context;
+                                                                            obj20.sectionName = item.sectionName;
+                                                                            obj20.onPress = function onPress(application, sectionName) {
+                                                                              const obj = { application, sectionName };
+                                                                              return closure_1_19(obj);
+                                                                            };
+                                                                            ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                            tmp25 = entrypoint;
+                                                                            obj20.entrypoint = entrypoint;
+                                                                            tmp26 = width;
+                                                                            obj20.containerWidth = width;
+                                                                            return closure_19(closure_33, obj20);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                            tmp19 = closure_19;
+                                                                            tmp20 = closure_29;
+                                                                            obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                            obj21.section = item.section;
+                                                                            obj21.onPress = function onPress() {
+                                                                              closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                            };
+                                                                            ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                            obj22 = { height: null };
+                                                                            tmp21 = closure_5;
+                                                                            obj22.height = closure_5;
+                                                                            obj21.style = obj22;
+                                                                            return closure_19(closure_29, obj21, item.section.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                            tmp17 = closure_19;
+                                                                            tmp18 = closure_1_36;
+                                                                            obj23 = { index: null, children: null };
+                                                                            obj23.index = index;
+                                                                            obj23.children = item.section;
+                                                                            return closure_19(closure_1_36, obj23);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                            tmp14 = closure_19;
+                                                                            tmp15 = context;
+                                                                            obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                            obj24.application = item.item.application;
+                                                                            ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                            obj24.onPress = function onPress() {
+                                                                              const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                              return closure_19(obj);
+                                                                            };
+                                                                            tmp16 = closure_11;
+                                                                            obj24.isLandscape = closure_11;
+                                                                            ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                            return closure_19(context(tmp2[52]), obj24);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                            tmp12 = closure_19;
+                                                                            tmp13 = context;
+                                                                            obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                            ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                            obj25.onPress = function onPress() {
+                                                                              const obj = { application: item.application, sectionName: item.sectionName };
+                                                                              return closure_19(obj);
+                                                                            };
+                                                                            obj25.showsPromoted = item.showsPromoted;
+                                                                            return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                            tmp10 = closure_19;
+                                                                            tmp11 = context;
+                                                                            obj26 = { title: null, onPress: null };
+                                                                            obj26.title = item.title;
+                                                                            obj26.onPress = function onPress() {
+                                                                              const applications = item.applications;
+                                                                              const mapped = applications.map((item) => item);
+                                                                              let obj = AppLauncherNativeUtils;
+                                                                              const obj2 = {
+                                                                                location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                                navigation,
+                                                                                context,
+                                                                                sectionName: item.sectionName,
+                                                                                sectionOverallPosition: item.sectionOverallPosition,
+                                                                                applications: mapped,
+                                                                                sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                                commands: [],
+                                                                                sectionDescriptors: mapped.map((item) => {
+                                                                                  const obj = item(closure_1_3[49]);
+                                                                                  return obj.getApplicationCommandSection(item);
+                                                                                }),
+                                                                                title: item.title,
+                                                                                promotedApplicationIds: item.promotedApplicationIds
+                                                                              };
+                                                                              const result = obj.handleViewAllSelected(obj2);
+                                                                            };
+                                                                            return closure_19(context(tmp2[54]), obj26);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                            tmp8 = closure_19;
+                                                                            tmp9 = closure_1_35;
+                                                                            return closure_19(closure_1_35, {});
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                            tmp4 = closure_19;
+                                                                            tmp5 = context;
+                                                                            obj = { visible: null };
+                                                                            tmp7 = closure_3;
+                                                                            tmp6 = context(tmp2[55]);
+                                                                            obj.visible = closure_3.valueOf();
+                                                                            return closure_19(tmp6, obj);
+                                                                          } else {
+                                                                            tmp3 = null;
+                                                                            return null;
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    } else {
+                                                                      class Fe {
+                                                                        constructor() {
+                                                                          const obj = AppAnalyticsUtils;
+                                                                          const obj2 = { source: entrypoint };
+                                                                          obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    const _Symbol5 = Symbol;
+                                                                    if (cResult[85] === Symbol.for("react.memo_cache_sentinel")) {
+                                                                      class Fe {
+                                                                        constructor() {
+                                                                          const obj = AppAnalyticsUtils;
+                                                                          const obj2 = { source: entrypoint };
+                                                                          obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                        }
+                                                                      }
+                                                                      cResult[85] = tmp79;
+                                                                    } else {
+                                                                      class Fe {
+                                                                        constructor() {
+                                                                          const obj = AppAnalyticsUtils;
+                                                                          const obj2 = { source: entrypoint };
+                                                                          obj.trackWithMetadata(frecencyUsedAppList.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    class Ce {
+                                                                      constructor(arg0) {
+                                                                        item = navigation.item;
+                                                                        index = navigation.index;
+                                                                        type = item.type;
+                                                                        tmp = navigation;
+                                                                        tmp2 = closure_3;
+                                                                        if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                          tmp40 = closure_19;
+                                                                          tmp41 = context;
+                                                                          obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                          num2 = 0;
+                                                                          obj1.isFirstRow = 0 === index;
+                                                                          tmp42 = list;
+                                                                          num3 = 1;
+                                                                          obj1.isLastRow = index === list.length - 1;
+                                                                          obj15 = { height: null };
+                                                                          tmp43 = closure_5;
+                                                                          obj15.height = closure_5;
+                                                                          obj1.style = obj15;
+                                                                          return closure_19(context(tmp2[51]), obj1);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                          tmp38 = closure_19;
+                                                                          tmp39 = closure_4;
+                                                                          items = [, ];
+                                                                          items[0] = closure_4.sectionHeader;
+                                                                          num = 0;
+                                                                          obj16 = null;
+                                                                          Text = tmp(tmp2[18]).Text;
+                                                                          if (0 !== index) {
+                                                                            obj16 = { marginTop: 24 };
+                                                                          }
+                                                                          obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                          items[1] = obj16;
+                                                                          obj17.style = items;
+                                                                          obj17.children = item.section;
+                                                                          return tmp38(Text, obj17);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                          tmp36 = closure_19;
+                                                                          tmp37 = closure_30;
+                                                                          obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                          obj18.section = item.section;
+                                                                          obj18.onPress = function onPress(shelfData) {
+                                                                            const obj = { shelfData, sectionName: item.sectionName };
+                                                                            triggeredOnboardingContentMetadata(obj);
+                                                                          };
+                                                                          ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                          return closure_19(closure_30, obj18, item.section.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                          obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp29 = context;
+                                                                          obj19.context = context;
+                                                                          tmp27 = closure_19;
+                                                                          tmp28 = closure_31;
+                                                                          obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                          obj19.onPress = function onPress(shelfData) {
+                                                                            let tmp2;
+                                                                            const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                            tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                            const tmp = triggeredOnboardingContentMetadata;
+                                                                            if (!tmp2) {
+                                                                              tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            tmp(obj);
+                                                                          };
+                                                                          tmp30 = closure_20;
+                                                                          tmp31 = !closure_20;
+                                                                          if (tmp31) {
+                                                                            tmp32 = entrypoint;
+                                                                            tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                          }
+                                                                          obj19.usesHandleActivityItemSelected = tmp31;
+                                                                          tmp33 = onActivityItemSelected;
+                                                                          obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                          ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                          tmp34 = entrypoint;
+                                                                          obj19.entrypoint = entrypoint;
+                                                                          tmp35 = width;
+                                                                          obj19.containerWidth = width;
+                                                                          return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                          tmp22 = closure_19;
+                                                                          tmp23 = closure_33;
+                                                                          obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                          tmp24 = context;
+                                                                          obj20.context = context;
+                                                                          obj20.sectionName = item.sectionName;
+                                                                          obj20.onPress = function onPress(application, sectionName) {
+                                                                            const obj = { application, sectionName };
+                                                                            return closure_1_19(obj);
+                                                                          };
+                                                                          ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                          tmp25 = entrypoint;
+                                                                          obj20.entrypoint = entrypoint;
+                                                                          tmp26 = width;
+                                                                          obj20.containerWidth = width;
+                                                                          return closure_19(closure_33, obj20);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                          tmp19 = closure_19;
+                                                                          tmp20 = closure_29;
+                                                                          obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                          obj21.section = item.section;
+                                                                          obj21.onPress = function onPress() {
+                                                                            closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                          };
+                                                                          ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                          obj22 = { height: null };
+                                                                          tmp21 = closure_5;
+                                                                          obj22.height = closure_5;
+                                                                          obj21.style = obj22;
+                                                                          return closure_19(closure_29, obj21, item.section.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                          tmp17 = closure_19;
+                                                                          tmp18 = closure_1_36;
+                                                                          obj23 = { index: null, children: null };
+                                                                          obj23.index = index;
+                                                                          obj23.children = item.section;
+                                                                          return closure_19(closure_1_36, obj23);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                          tmp14 = closure_19;
+                                                                          tmp15 = context;
+                                                                          obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                          obj24.application = item.item.application;
+                                                                          ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                          obj24.onPress = function onPress() {
+                                                                            const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          tmp16 = closure_11;
+                                                                          obj24.isLandscape = closure_11;
+                                                                          ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                          return closure_19(context(tmp2[52]), obj24);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                          tmp12 = closure_19;
+                                                                          tmp13 = context;
+                                                                          obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                          ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                          obj25.onPress = function onPress() {
+                                                                            const obj = { application: item.application, sectionName: item.sectionName };
+                                                                            return closure_19(obj);
+                                                                          };
+                                                                          obj25.showsPromoted = item.showsPromoted;
+                                                                          return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                          tmp10 = closure_19;
+                                                                          tmp11 = context;
+                                                                          obj26 = { title: null, onPress: null };
+                                                                          obj26.title = item.title;
+                                                                          obj26.onPress = function onPress() {
+                                                                            const applications = item.applications;
+                                                                            const mapped = applications.map((item) => item);
+                                                                            let obj = AppLauncherNativeUtils;
+                                                                            const obj2 = {
+                                                                              location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                              navigation,
+                                                                              context,
+                                                                              sectionName: item.sectionName,
+                                                                              sectionOverallPosition: item.sectionOverallPosition,
+                                                                              applications: mapped,
+                                                                              sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                              commands: [],
+                                                                              sectionDescriptors: mapped.map((item) => {
+                                                                                const obj = item(closure_1_3[49]);
+                                                                                return obj.getApplicationCommandSection(item);
+                                                                              }),
+                                                                              title: item.title,
+                                                                              promotedApplicationIds: item.promotedApplicationIds
+                                                                            };
+                                                                            const result = obj.handleViewAllSelected(obj2);
+                                                                          };
+                                                                          return closure_19(context(tmp2[54]), obj26);
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                          tmp8 = closure_19;
+                                                                          tmp9 = closure_1_35;
+                                                                          return closure_19(closure_1_35, {});
+                                                                        } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                          tmp4 = closure_19;
+                                                                          tmp5 = context;
+                                                                          obj = { visible: null };
+                                                                          tmp7 = closure_3;
+                                                                          tmp6 = context(tmp2[55]);
+                                                                          obj.visible = closure_3.valueOf();
+                                                                          return closure_19(tmp6, obj);
+                                                                        } else {
+                                                                          tmp3 = null;
+                                                                          return null;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    if (cResult[88] !== tmp80) {
+                                                                      class Ct {
+                                                                        constructor(nativeEvent) {
+                                                                          nativeEvent = nativeEvent.nativeEvent;
+                                                                          size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                          tmp80(size);
+                                                                        }
+                                                                      }
+                                                                      cResult[88] = tmp80;
+                                                                      cResult[89] = Ct;
+                                                                      class Ce {
+                                                                        constructor(arg0) {
+                                                                          item = navigation.item;
+                                                                          index = navigation.index;
+                                                                          type = item.type;
+                                                                          tmp = navigation;
+                                                                          tmp2 = closure_3;
+                                                                          if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                            tmp40 = closure_19;
+                                                                            tmp41 = context;
+                                                                            obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                            num2 = 0;
+                                                                            obj1.isFirstRow = 0 === index;
+                                                                            tmp42 = list;
+                                                                            num3 = 1;
+                                                                            obj1.isLastRow = index === list.length - 1;
+                                                                            obj15 = { height: null };
+                                                                            tmp43 = closure_5;
+                                                                            obj15.height = closure_5;
+                                                                            obj1.style = obj15;
+                                                                            return closure_19(context(tmp2[51]), obj1);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                            tmp38 = closure_19;
+                                                                            tmp39 = closure_4;
+                                                                            items = [, ];
+                                                                            items[0] = closure_4.sectionHeader;
+                                                                            num = 0;
+                                                                            obj16 = null;
+                                                                            Text = tmp(tmp2[18]).Text;
+                                                                            if (0 !== index) {
+                                                                              obj16 = { marginTop: 24 };
+                                                                            }
+                                                                            obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                            items[1] = obj16;
+                                                                            obj17.style = items;
+                                                                            obj17.children = item.section;
+                                                                            return tmp38(Text, obj17);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                            tmp36 = closure_19;
+                                                                            tmp37 = closure_30;
+                                                                            obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                            obj18.section = item.section;
+                                                                            obj18.onPress = function onPress(shelfData) {
+                                                                              const obj = { shelfData, sectionName: item.sectionName };
+                                                                              triggeredOnboardingContentMetadata(obj);
+                                                                            };
+                                                                            ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                            return closure_19(closure_30, obj18, item.section.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                            obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                            tmp29 = context;
+                                                                            obj19.context = context;
+                                                                            tmp27 = closure_19;
+                                                                            tmp28 = closure_31;
+                                                                            obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                            obj19.onPress = function onPress(shelfData) {
+                                                                              let tmp2;
+                                                                              const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                              tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                              const tmp = triggeredOnboardingContentMetadata;
+                                                                              if (!tmp2) {
+                                                                                tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                              }
+                                                                              tmp(obj);
+                                                                            };
+                                                                            tmp30 = closure_20;
+                                                                            tmp31 = !closure_20;
+                                                                            if (tmp31) {
+                                                                              tmp32 = entrypoint;
+                                                                              tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            obj19.usesHandleActivityItemSelected = tmp31;
+                                                                            tmp33 = onActivityItemSelected;
+                                                                            obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                            ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                            tmp34 = entrypoint;
+                                                                            obj19.entrypoint = entrypoint;
+                                                                            tmp35 = width;
+                                                                            obj19.containerWidth = width;
+                                                                            return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                            tmp22 = closure_19;
+                                                                            tmp23 = closure_33;
+                                                                            obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                            tmp24 = context;
+                                                                            obj20.context = context;
+                                                                            obj20.sectionName = item.sectionName;
+                                                                            obj20.onPress = function onPress(application, sectionName) {
+                                                                              const obj = { application, sectionName };
+                                                                              return closure_1_19(obj);
+                                                                            };
+                                                                            ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                            tmp25 = entrypoint;
+                                                                            obj20.entrypoint = entrypoint;
+                                                                            tmp26 = width;
+                                                                            obj20.containerWidth = width;
+                                                                            return closure_19(closure_33, obj20);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                            tmp19 = closure_19;
+                                                                            tmp20 = closure_29;
+                                                                            obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                            obj21.section = item.section;
+                                                                            obj21.onPress = function onPress() {
+                                                                              closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                            };
+                                                                            ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                            obj22 = { height: null };
+                                                                            tmp21 = closure_5;
+                                                                            obj22.height = closure_5;
+                                                                            obj21.style = obj22;
+                                                                            return closure_19(closure_29, obj21, item.section.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                            tmp17 = closure_19;
+                                                                            tmp18 = closure_1_36;
+                                                                            obj23 = { index: null, children: null };
+                                                                            obj23.index = index;
+                                                                            obj23.children = item.section;
+                                                                            return closure_19(closure_1_36, obj23);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                            tmp14 = closure_19;
+                                                                            tmp15 = context;
+                                                                            obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                            obj24.application = item.item.application;
+                                                                            ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                            obj24.onPress = function onPress() {
+                                                                              const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                              return closure_19(obj);
+                                                                            };
+                                                                            tmp16 = closure_11;
+                                                                            obj24.isLandscape = closure_11;
+                                                                            ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                            return closure_19(context(tmp2[52]), obj24);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                            tmp12 = closure_19;
+                                                                            tmp13 = context;
+                                                                            obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                            ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                            obj25.onPress = function onPress() {
+                                                                              const obj = { application: item.application, sectionName: item.sectionName };
+                                                                              return closure_19(obj);
+                                                                            };
+                                                                            obj25.showsPromoted = item.showsPromoted;
+                                                                            return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                            tmp10 = closure_19;
+                                                                            tmp11 = context;
+                                                                            obj26 = { title: null, onPress: null };
+                                                                            obj26.title = item.title;
+                                                                            obj26.onPress = function onPress() {
+                                                                              const applications = item.applications;
+                                                                              const mapped = applications.map((item) => item);
+                                                                              let obj = AppLauncherNativeUtils;
+                                                                              const obj2 = {
+                                                                                location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                                navigation,
+                                                                                context,
+                                                                                sectionName: item.sectionName,
+                                                                                sectionOverallPosition: item.sectionOverallPosition,
+                                                                                applications: mapped,
+                                                                                sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                                commands: [],
+                                                                                sectionDescriptors: mapped.map((item) => {
+                                                                                  const obj = item(closure_1_3[49]);
+                                                                                  return obj.getApplicationCommandSection(item);
+                                                                                }),
+                                                                                title: item.title,
+                                                                                promotedApplicationIds: item.promotedApplicationIds
+                                                                              };
+                                                                              const result = obj.handleViewAllSelected(obj2);
+                                                                            };
+                                                                            return closure_19(context(tmp2[54]), obj26);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                            tmp8 = closure_19;
+                                                                            tmp9 = closure_1_35;
+                                                                            return closure_19(closure_1_35, {});
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                            tmp4 = closure_19;
+                                                                            tmp5 = context;
+                                                                            obj = { visible: null };
+                                                                            tmp7 = closure_3;
+                                                                            tmp6 = context(tmp2[55]);
+                                                                            obj.visible = closure_3.valueOf();
+                                                                            return closure_19(tmp6, obj);
+                                                                          } else {
+                                                                            tmp3 = null;
+                                                                            return null;
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    } else {
+                                                                      class Ct {
+                                                                        constructor(nativeEvent) {
+                                                                          nativeEvent = nativeEvent.nativeEvent;
+                                                                          size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                          tmp80(size);
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    if (cResult[90] !== tmp80) {
+                                                                      class Ct {
+                                                                        constructor(nativeEvent) {
+                                                                          nativeEvent = nativeEvent.nativeEvent;
+                                                                          size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                          tmp80(size);
+                                                                        }
+                                                                      }
+                                                                      tmp82[0] = tmp80;
+                                                                      cResult[90] = tmp80;
+                                                                      class Ce {
+                                                                        constructor(arg0) {
+                                                                          item = navigation.item;
+                                                                          index = navigation.index;
+                                                                          type = item.type;
+                                                                          tmp = navigation;
+                                                                          tmp2 = closure_3;
+                                                                          if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                            tmp40 = closure_19;
+                                                                            tmp41 = context;
+                                                                            obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                            num2 = 0;
+                                                                            obj1.isFirstRow = 0 === index;
+                                                                            tmp42 = list;
+                                                                            num3 = 1;
+                                                                            obj1.isLastRow = index === list.length - 1;
+                                                                            obj15 = { height: null };
+                                                                            tmp43 = closure_5;
+                                                                            obj15.height = closure_5;
+                                                                            obj1.style = obj15;
+                                                                            return closure_19(context(tmp2[51]), obj1);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                            tmp38 = closure_19;
+                                                                            tmp39 = closure_4;
+                                                                            items = [, ];
+                                                                            items[0] = closure_4.sectionHeader;
+                                                                            num = 0;
+                                                                            obj16 = null;
+                                                                            Text = tmp(tmp2[18]).Text;
+                                                                            if (0 !== index) {
+                                                                              obj16 = { marginTop: 24 };
+                                                                            }
+                                                                            obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                            items[1] = obj16;
+                                                                            obj17.style = items;
+                                                                            obj17.children = item.section;
+                                                                            return tmp38(Text, obj17);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                            tmp36 = closure_19;
+                                                                            tmp37 = closure_30;
+                                                                            obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                            obj18.section = item.section;
+                                                                            obj18.onPress = function onPress(shelfData) {
+                                                                              const obj = { shelfData, sectionName: item.sectionName };
+                                                                              triggeredOnboardingContentMetadata(obj);
+                                                                            };
+                                                                            ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                            return closure_19(closure_30, obj18, item.section.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                            obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                            tmp29 = context;
+                                                                            obj19.context = context;
+                                                                            tmp27 = closure_19;
+                                                                            tmp28 = closure_31;
+                                                                            obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                            obj19.onPress = function onPress(shelfData) {
+                                                                              let tmp2;
+                                                                              const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                              tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                              const tmp = triggeredOnboardingContentMetadata;
+                                                                              if (!tmp2) {
+                                                                                tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                              }
+                                                                              tmp(obj);
+                                                                            };
+                                                                            tmp30 = closure_20;
+                                                                            tmp31 = !closure_20;
+                                                                            if (tmp31) {
+                                                                              tmp32 = entrypoint;
+                                                                              tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            obj19.usesHandleActivityItemSelected = tmp31;
+                                                                            tmp33 = onActivityItemSelected;
+                                                                            obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                            ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                            tmp34 = entrypoint;
+                                                                            obj19.entrypoint = entrypoint;
+                                                                            tmp35 = width;
+                                                                            obj19.containerWidth = width;
+                                                                            return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                            tmp22 = closure_19;
+                                                                            tmp23 = closure_33;
+                                                                            obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                            tmp24 = context;
+                                                                            obj20.context = context;
+                                                                            obj20.sectionName = item.sectionName;
+                                                                            obj20.onPress = function onPress(application, sectionName) {
+                                                                              const obj = { application, sectionName };
+                                                                              return closure_1_19(obj);
+                                                                            };
+                                                                            ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                            tmp25 = entrypoint;
+                                                                            obj20.entrypoint = entrypoint;
+                                                                            tmp26 = width;
+                                                                            obj20.containerWidth = width;
+                                                                            return closure_19(closure_33, obj20);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                            tmp19 = closure_19;
+                                                                            tmp20 = closure_29;
+                                                                            obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                            obj21.section = item.section;
+                                                                            obj21.onPress = function onPress() {
+                                                                              closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                            };
+                                                                            ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                            obj22 = { height: null };
+                                                                            tmp21 = closure_5;
+                                                                            obj22.height = closure_5;
+                                                                            obj21.style = obj22;
+                                                                            return closure_19(closure_29, obj21, item.section.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                            tmp17 = closure_19;
+                                                                            tmp18 = closure_1_36;
+                                                                            obj23 = { index: null, children: null };
+                                                                            obj23.index = index;
+                                                                            obj23.children = item.section;
+                                                                            return closure_19(closure_1_36, obj23);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                            tmp14 = closure_19;
+                                                                            tmp15 = context;
+                                                                            obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                            obj24.application = item.item.application;
+                                                                            ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                            obj24.onPress = function onPress() {
+                                                                              const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                              return closure_19(obj);
+                                                                            };
+                                                                            tmp16 = closure_11;
+                                                                            obj24.isLandscape = closure_11;
+                                                                            ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                            return closure_19(context(tmp2[52]), obj24);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                            tmp12 = closure_19;
+                                                                            tmp13 = context;
+                                                                            obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                            ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                            obj25.onPress = function onPress() {
+                                                                              const obj = { application: item.application, sectionName: item.sectionName };
+                                                                              return closure_19(obj);
+                                                                            };
+                                                                            obj25.showsPromoted = item.showsPromoted;
+                                                                            return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                            tmp10 = closure_19;
+                                                                            tmp11 = context;
+                                                                            obj26 = { title: null, onPress: null };
+                                                                            obj26.title = item.title;
+                                                                            obj26.onPress = function onPress() {
+                                                                              const applications = item.applications;
+                                                                              const mapped = applications.map((item) => item);
+                                                                              let obj = AppLauncherNativeUtils;
+                                                                              const obj2 = {
+                                                                                location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                                navigation,
+                                                                                context,
+                                                                                sectionName: item.sectionName,
+                                                                                sectionOverallPosition: item.sectionOverallPosition,
+                                                                                applications: mapped,
+                                                                                sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                                commands: [],
+                                                                                sectionDescriptors: mapped.map((item) => {
+                                                                                  const obj = item(closure_1_3[49]);
+                                                                                  return obj.getApplicationCommandSection(item);
+                                                                                }),
+                                                                                title: item.title,
+                                                                                promotedApplicationIds: item.promotedApplicationIds
+                                                                              };
+                                                                              const result = obj.handleViewAllSelected(obj2);
+                                                                            };
+                                                                            return closure_19(context(tmp2[54]), obj26);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                            tmp8 = closure_19;
+                                                                            tmp9 = closure_1_35;
+                                                                            return closure_19(closure_1_35, {});
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                            tmp4 = closure_19;
+                                                                            tmp5 = context;
+                                                                            obj = { visible: null };
+                                                                            tmp7 = closure_3;
+                                                                            tmp6 = context(tmp2[55]);
+                                                                            obj.visible = closure_3.valueOf();
+                                                                            return closure_19(tmp6, obj);
+                                                                          } else {
+                                                                            tmp3 = null;
+                                                                            return null;
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                      tmp81 = tmp82;
+                                                                    } else {
+                                                                      class Ct {
+                                                                        constructor(nativeEvent) {
+                                                                          nativeEvent = nativeEvent.nativeEvent;
+                                                                          size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                          tmp80(size);
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    const tmpResult10 = tmp(11470);
+                                                                    const appLauncherFlashListProps = tmpResult10.useAppLauncherFlashListProps(tmp81);
+                                                                    const _Symbol6 = Symbol;
+                                                                    if (cResult[92] === Symbol.for("react.memo_cache_sentinel")) {
+                                                                      class Ct {
+                                                                        constructor(nativeEvent) {
+                                                                          nativeEvent = nativeEvent.nativeEvent;
+                                                                          size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                          tmp80(size);
+                                                                        }
+                                                                      }
+                                                                      cResult[92] = tmp85;
+                                                                      tmp84 = tmp85;
+                                                                    } else {
+                                                                      class Ct {
+                                                                        constructor(nativeEvent) {
+                                                                          nativeEvent = nativeEvent.nativeEvent;
+                                                                          size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                          tmp80(size);
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    if (cResult[93] !== handleViewableItemsChanged) {
+                                                                      class Ct {
+                                                                        constructor(nativeEvent) {
+                                                                          nativeEvent = nativeEvent.nativeEvent;
+                                                                          size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                          tmp80(size);
+                                                                        }
+                                                                      }
+                                                                      tmp87[0] = tmp84;
+                                                                      tmp87[1] = handleViewableItemsChanged;
+                                                                      cResult[93] = handleViewableItemsChanged;
+                                                                      class Ce {
+                                                                        constructor(arg0) {
+                                                                          item = navigation.item;
+                                                                          index = navigation.index;
+                                                                          type = item.type;
+                                                                          tmp = navigation;
+                                                                          tmp2 = closure_3;
+                                                                          if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                            tmp40 = closure_19;
+                                                                            tmp41 = context;
+                                                                            obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                            num2 = 0;
+                                                                            obj1.isFirstRow = 0 === index;
+                                                                            tmp42 = list;
+                                                                            num3 = 1;
+                                                                            obj1.isLastRow = index === list.length - 1;
+                                                                            obj15 = { height: null };
+                                                                            tmp43 = closure_5;
+                                                                            obj15.height = closure_5;
+                                                                            obj1.style = obj15;
+                                                                            return closure_19(context(tmp2[51]), obj1);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                            tmp38 = closure_19;
+                                                                            tmp39 = closure_4;
+                                                                            items = [, ];
+                                                                            items[0] = closure_4.sectionHeader;
+                                                                            num = 0;
+                                                                            obj16 = null;
+                                                                            Text = tmp(tmp2[18]).Text;
+                                                                            if (0 !== index) {
+                                                                              obj16 = { marginTop: 24 };
+                                                                            }
+                                                                            obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                            items[1] = obj16;
+                                                                            obj17.style = items;
+                                                                            obj17.children = item.section;
+                                                                            return tmp38(Text, obj17);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                            tmp36 = closure_19;
+                                                                            tmp37 = closure_30;
+                                                                            obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                            obj18.section = item.section;
+                                                                            obj18.onPress = function onPress(shelfData) {
+                                                                              const obj = { shelfData, sectionName: item.sectionName };
+                                                                              triggeredOnboardingContentMetadata(obj);
+                                                                            };
+                                                                            ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                            return closure_19(closure_30, obj18, item.section.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                            obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                            tmp29 = context;
+                                                                            obj19.context = context;
+                                                                            tmp27 = closure_19;
+                                                                            tmp28 = closure_31;
+                                                                            obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                            obj19.onPress = function onPress(shelfData) {
+                                                                              let tmp2;
+                                                                              const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                              tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                              const tmp = triggeredOnboardingContentMetadata;
+                                                                              if (!tmp2) {
+                                                                                tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                              }
+                                                                              tmp(obj);
+                                                                            };
+                                                                            tmp30 = closure_20;
+                                                                            tmp31 = !closure_20;
+                                                                            if (tmp31) {
+                                                                              tmp32 = entrypoint;
+                                                                              tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            obj19.usesHandleActivityItemSelected = tmp31;
+                                                                            tmp33 = onActivityItemSelected;
+                                                                            obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                            ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                            tmp34 = entrypoint;
+                                                                            obj19.entrypoint = entrypoint;
+                                                                            tmp35 = width;
+                                                                            obj19.containerWidth = width;
+                                                                            return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                            tmp22 = closure_19;
+                                                                            tmp23 = closure_33;
+                                                                            obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                            tmp24 = context;
+                                                                            obj20.context = context;
+                                                                            obj20.sectionName = item.sectionName;
+                                                                            obj20.onPress = function onPress(application, sectionName) {
+                                                                              const obj = { application, sectionName };
+                                                                              return closure_1_19(obj);
+                                                                            };
+                                                                            ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                            tmp25 = entrypoint;
+                                                                            obj20.entrypoint = entrypoint;
+                                                                            tmp26 = width;
+                                                                            obj20.containerWidth = width;
+                                                                            return closure_19(closure_33, obj20);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                            tmp19 = closure_19;
+                                                                            tmp20 = closure_29;
+                                                                            obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                            obj21.section = item.section;
+                                                                            obj21.onPress = function onPress() {
+                                                                              closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                            };
+                                                                            ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                            obj22 = { height: null };
+                                                                            tmp21 = closure_5;
+                                                                            obj22.height = closure_5;
+                                                                            obj21.style = obj22;
+                                                                            return closure_19(closure_29, obj21, item.section.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                            tmp17 = closure_19;
+                                                                            tmp18 = closure_1_36;
+                                                                            obj23 = { index: null, children: null };
+                                                                            obj23.index = index;
+                                                                            obj23.children = item.section;
+                                                                            return closure_19(closure_1_36, obj23);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                            tmp14 = closure_19;
+                                                                            tmp15 = context;
+                                                                            obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                            obj24.application = item.item.application;
+                                                                            ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                            obj24.onPress = function onPress() {
+                                                                              const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                              return closure_19(obj);
+                                                                            };
+                                                                            tmp16 = closure_11;
+                                                                            obj24.isLandscape = closure_11;
+                                                                            ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                            return closure_19(context(tmp2[52]), obj24);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                            tmp12 = closure_19;
+                                                                            tmp13 = context;
+                                                                            obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                            ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                            obj25.onPress = function onPress() {
+                                                                              const obj = { application: item.application, sectionName: item.sectionName };
+                                                                              return closure_19(obj);
+                                                                            };
+                                                                            obj25.showsPromoted = item.showsPromoted;
+                                                                            return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                            tmp10 = closure_19;
+                                                                            tmp11 = context;
+                                                                            obj26 = { title: null, onPress: null };
+                                                                            obj26.title = item.title;
+                                                                            obj26.onPress = function onPress() {
+                                                                              const applications = item.applications;
+                                                                              const mapped = applications.map((item) => item);
+                                                                              let obj = AppLauncherNativeUtils;
+                                                                              const obj2 = {
+                                                                                location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                                navigation,
+                                                                                context,
+                                                                                sectionName: item.sectionName,
+                                                                                sectionOverallPosition: item.sectionOverallPosition,
+                                                                                applications: mapped,
+                                                                                sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                                commands: [],
+                                                                                sectionDescriptors: mapped.map((item) => {
+                                                                                  const obj = item(closure_1_3[49]);
+                                                                                  return obj.getApplicationCommandSection(item);
+                                                                                }),
+                                                                                title: item.title,
+                                                                                promotedApplicationIds: item.promotedApplicationIds
+                                                                              };
+                                                                              const result = obj.handleViewAllSelected(obj2);
+                                                                            };
+                                                                            return closure_19(context(tmp2[54]), obj26);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                            tmp8 = closure_19;
+                                                                            tmp9 = closure_1_35;
+                                                                            return closure_19(closure_1_35, {});
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                            tmp4 = closure_19;
+                                                                            tmp5 = context;
+                                                                            obj = { visible: null };
+                                                                            tmp7 = closure_3;
+                                                                            tmp6 = context(tmp2[55]);
+                                                                            obj.visible = closure_3.valueOf();
+                                                                            return closure_19(tmp6, obj);
+                                                                          } else {
+                                                                            tmp3 = null;
+                                                                            return null;
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                      cResult[94] = tmp87;
+                                                                    } else {
+                                                                      class Ct {
+                                                                        constructor(nativeEvent) {
+                                                                          nativeEvent = nativeEvent.nativeEvent;
+                                                                          size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                          tmp80(size);
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    if (cResult[95] !== trackAppLauncherHomeItemImpression) {
+                                                                      class Ct {
+                                                                        constructor(nativeEvent) {
+                                                                          nativeEvent = nativeEvent.nativeEvent;
+                                                                          size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                          tmp80(size);
+                                                                        }
+                                                                      }
+                                                                      tmp89[0] = frecencyCommands;
+                                                                      tmp89[1] = trackAppLauncherHomeItemImpression;
+                                                                      class Ce {
+                                                                        constructor(arg0) {
+                                                                          item = navigation.item;
+                                                                          index = navigation.index;
+                                                                          type = item.type;
+                                                                          tmp = navigation;
+                                                                          tmp2 = closure_3;
+                                                                          if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                            tmp40 = closure_19;
+                                                                            tmp41 = context;
+                                                                            obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                            num2 = 0;
+                                                                            obj1.isFirstRow = 0 === index;
+                                                                            tmp42 = list;
+                                                                            num3 = 1;
+                                                                            obj1.isLastRow = index === list.length - 1;
+                                                                            obj15 = { height: null };
+                                                                            tmp43 = closure_5;
+                                                                            obj15.height = closure_5;
+                                                                            obj1.style = obj15;
+                                                                            return closure_19(context(tmp2[51]), obj1);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                            tmp38 = closure_19;
+                                                                            tmp39 = closure_4;
+                                                                            items = [, ];
+                                                                            items[0] = closure_4.sectionHeader;
+                                                                            num = 0;
+                                                                            obj16 = null;
+                                                                            Text = tmp(tmp2[18]).Text;
+                                                                            if (0 !== index) {
+                                                                              obj16 = { marginTop: 24 };
+                                                                            }
+                                                                            obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                            items[1] = obj16;
+                                                                            obj17.style = items;
+                                                                            obj17.children = item.section;
+                                                                            return tmp38(Text, obj17);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                            tmp36 = closure_19;
+                                                                            tmp37 = closure_30;
+                                                                            obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                            obj18.section = item.section;
+                                                                            obj18.onPress = function onPress(shelfData) {
+                                                                              const obj = { shelfData, sectionName: item.sectionName };
+                                                                              triggeredOnboardingContentMetadata(obj);
+                                                                            };
+                                                                            ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                            return closure_19(closure_30, obj18, item.section.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                            obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                            tmp29 = context;
+                                                                            obj19.context = context;
+                                                                            tmp27 = closure_19;
+                                                                            tmp28 = closure_31;
+                                                                            obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                            obj19.onPress = function onPress(shelfData) {
+                                                                              let tmp2;
+                                                                              const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                              tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                              const tmp = triggeredOnboardingContentMetadata;
+                                                                              if (!tmp2) {
+                                                                                tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                              }
+                                                                              tmp(obj);
+                                                                            };
+                                                                            tmp30 = closure_20;
+                                                                            tmp31 = !closure_20;
+                                                                            if (tmp31) {
+                                                                              tmp32 = entrypoint;
+                                                                              tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            obj19.usesHandleActivityItemSelected = tmp31;
+                                                                            tmp33 = onActivityItemSelected;
+                                                                            obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                            ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                            tmp34 = entrypoint;
+                                                                            obj19.entrypoint = entrypoint;
+                                                                            tmp35 = width;
+                                                                            obj19.containerWidth = width;
+                                                                            return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                            tmp22 = closure_19;
+                                                                            tmp23 = closure_33;
+                                                                            obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                            tmp24 = context;
+                                                                            obj20.context = context;
+                                                                            obj20.sectionName = item.sectionName;
+                                                                            obj20.onPress = function onPress(application, sectionName) {
+                                                                              const obj = { application, sectionName };
+                                                                              return closure_1_19(obj);
+                                                                            };
+                                                                            ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                            tmp25 = entrypoint;
+                                                                            obj20.entrypoint = entrypoint;
+                                                                            tmp26 = width;
+                                                                            obj20.containerWidth = width;
+                                                                            return closure_19(closure_33, obj20);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                            tmp19 = closure_19;
+                                                                            tmp20 = closure_29;
+                                                                            obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                            obj21.section = item.section;
+                                                                            obj21.onPress = function onPress() {
+                                                                              closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                            };
+                                                                            ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                            obj22 = { height: null };
+                                                                            tmp21 = closure_5;
+                                                                            obj22.height = closure_5;
+                                                                            obj21.style = obj22;
+                                                                            return closure_19(closure_29, obj21, item.section.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                            tmp17 = closure_19;
+                                                                            tmp18 = closure_1_36;
+                                                                            obj23 = { index: null, children: null };
+                                                                            obj23.index = index;
+                                                                            obj23.children = item.section;
+                                                                            return closure_19(closure_1_36, obj23);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                            tmp14 = closure_19;
+                                                                            tmp15 = context;
+                                                                            obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                            obj24.application = item.item.application;
+                                                                            ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                            obj24.onPress = function onPress() {
+                                                                              const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                              return closure_19(obj);
+                                                                            };
+                                                                            tmp16 = closure_11;
+                                                                            obj24.isLandscape = closure_11;
+                                                                            ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                            return closure_19(context(tmp2[52]), obj24);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                            tmp12 = closure_19;
+                                                                            tmp13 = context;
+                                                                            obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                            ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                            obj25.onPress = function onPress() {
+                                                                              const obj = { application: item.application, sectionName: item.sectionName };
+                                                                              return closure_19(obj);
+                                                                            };
+                                                                            obj25.showsPromoted = item.showsPromoted;
+                                                                            return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                            tmp10 = closure_19;
+                                                                            tmp11 = context;
+                                                                            obj26 = { title: null, onPress: null };
+                                                                            obj26.title = item.title;
+                                                                            obj26.onPress = function onPress() {
+                                                                              const applications = item.applications;
+                                                                              const mapped = applications.map((item) => item);
+                                                                              let obj = AppLauncherNativeUtils;
+                                                                              const obj2 = {
+                                                                                location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                                navigation,
+                                                                                context,
+                                                                                sectionName: item.sectionName,
+                                                                                sectionOverallPosition: item.sectionOverallPosition,
+                                                                                applications: mapped,
+                                                                                sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                                commands: [],
+                                                                                sectionDescriptors: mapped.map((item) => {
+                                                                                  const obj = item(closure_1_3[49]);
+                                                                                  return obj.getApplicationCommandSection(item);
+                                                                                }),
+                                                                                title: item.title,
+                                                                                promotedApplicationIds: item.promotedApplicationIds
+                                                                              };
+                                                                              const result = obj.handleViewAllSelected(obj2);
+                                                                            };
+                                                                            return closure_19(context(tmp2[54]), obj26);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                            tmp8 = closure_19;
+                                                                            tmp9 = closure_1_35;
+                                                                            return closure_19(closure_1_35, {});
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                            tmp4 = closure_19;
+                                                                            tmp5 = context;
+                                                                            obj = { visible: null };
+                                                                            tmp7 = closure_3;
+                                                                            tmp6 = context(tmp2[55]);
+                                                                            obj.visible = closure_3.valueOf();
+                                                                            return closure_19(tmp6, obj);
+                                                                          } else {
+                                                                            tmp3 = null;
+                                                                            return null;
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                      cResult[96] = tmp89;
+                                                                    } else {
+                                                                      class Ct {
+                                                                        constructor(nativeEvent) {
+                                                                          nativeEvent = nativeEvent.nativeEvent;
+                                                                          size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                          tmp80(size);
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    if (cResult[97] === tmp86) {
+                                                                      class Ct {
+                                                                        constructor(nativeEvent) {
+                                                                          nativeEvent = nativeEvent.nativeEvent;
+                                                                          size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                          tmp80(size);
+                                                                        }
+                                                                      }
+                                                                      if (cResult[100] !== tmp8.topBackgroundFill) {
+                                                                        class Ct {
+                                                                          constructor(nativeEvent) {
+                                                                            nativeEvent = nativeEvent.nativeEvent;
+                                                                            size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                            tmp80(size);
+                                                                          }
+                                                                        }
+                                                                        let obj5 = { style: tmp8.topBackgroundFill };
+                                                                        const tmp94 = closure_19(chatInputRef, obj5);
+                                                                        class Ce {
+                                                                          constructor(arg0) {
+                                                                            item = navigation.item;
+                                                                            index = navigation.index;
+                                                                            type = item.type;
+                                                                            tmp = navigation;
+                                                                            tmp2 = closure_3;
+                                                                            if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                              tmp40 = closure_19;
+                                                                              tmp41 = context;
+                                                                              obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                              num2 = 0;
+                                                                              obj1.isFirstRow = 0 === index;
+                                                                              tmp42 = list;
+                                                                              num3 = 1;
+                                                                              obj1.isLastRow = index === list.length - 1;
+                                                                              obj15 = { height: null };
+                                                                              tmp43 = closure_5;
+                                                                              obj15.height = closure_5;
+                                                                              obj1.style = obj15;
+                                                                              return closure_19(context(tmp2[51]), obj1);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                              tmp38 = closure_19;
+                                                                              tmp39 = closure_4;
+                                                                              items = [, ];
+                                                                              items[0] = closure_4.sectionHeader;
+                                                                              num = 0;
+                                                                              obj16 = null;
+                                                                              Text = tmp(tmp2[18]).Text;
+                                                                              if (0 !== index) {
+                                                                                obj16 = { marginTop: 24 };
+                                                                              }
+                                                                              obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                              items[1] = obj16;
+                                                                              obj17.style = items;
+                                                                              obj17.children = item.section;
+                                                                              return tmp38(Text, obj17);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                              tmp36 = closure_19;
+                                                                              tmp37 = closure_30;
+                                                                              obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                              obj18.section = item.section;
+                                                                              obj18.onPress = function onPress(shelfData) {
+                                                                                const obj = { shelfData, sectionName: item.sectionName };
+                                                                                triggeredOnboardingContentMetadata(obj);
+                                                                              };
+                                                                              ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                              return closure_19(closure_30, obj18, item.section.application.id);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                              obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                              tmp29 = context;
+                                                                              obj19.context = context;
+                                                                              tmp27 = closure_19;
+                                                                              tmp28 = closure_31;
+                                                                              obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                              obj19.onPress = function onPress(shelfData) {
+                                                                                let tmp2;
+                                                                                const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                                tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                                const tmp = triggeredOnboardingContentMetadata;
+                                                                                if (!tmp2) {
+                                                                                  tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                                }
+                                                                                tmp(obj);
+                                                                              };
+                                                                              tmp30 = closure_20;
+                                                                              tmp31 = !closure_20;
+                                                                              if (tmp31) {
+                                                                                tmp32 = entrypoint;
+                                                                                tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                              }
+                                                                              obj19.usesHandleActivityItemSelected = tmp31;
+                                                                              tmp33 = onActivityItemSelected;
+                                                                              obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                              ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                              tmp34 = entrypoint;
+                                                                              obj19.entrypoint = entrypoint;
+                                                                              tmp35 = width;
+                                                                              obj19.containerWidth = width;
+                                                                              return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                              tmp22 = closure_19;
+                                                                              tmp23 = closure_33;
+                                                                              obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                              tmp24 = context;
+                                                                              obj20.context = context;
+                                                                              obj20.sectionName = item.sectionName;
+                                                                              obj20.onPress = function onPress(application, sectionName) {
+                                                                                const obj = { application, sectionName };
+                                                                                return closure_1_19(obj);
+                                                                              };
+                                                                              ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                              tmp25 = entrypoint;
+                                                                              obj20.entrypoint = entrypoint;
+                                                                              tmp26 = width;
+                                                                              obj20.containerWidth = width;
+                                                                              return closure_19(closure_33, obj20);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                              tmp19 = closure_19;
+                                                                              tmp20 = closure_29;
+                                                                              obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                              obj21.section = item.section;
+                                                                              obj21.onPress = function onPress() {
+                                                                                closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                              };
+                                                                              ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                              obj22 = { height: null };
+                                                                              tmp21 = closure_5;
+                                                                              obj22.height = closure_5;
+                                                                              obj21.style = obj22;
+                                                                              return closure_19(closure_29, obj21, item.section.id);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                              tmp17 = closure_19;
+                                                                              tmp18 = closure_1_36;
+                                                                              obj23 = { index: null, children: null };
+                                                                              obj23.index = index;
+                                                                              obj23.children = item.section;
+                                                                              return closure_19(closure_1_36, obj23);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                              tmp14 = closure_19;
+                                                                              tmp15 = context;
+                                                                              obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                              obj24.application = item.item.application;
+                                                                              ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                              obj24.onPress = function onPress() {
+                                                                                const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                                return closure_19(obj);
+                                                                              };
+                                                                              tmp16 = closure_11;
+                                                                              obj24.isLandscape = closure_11;
+                                                                              ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                              return closure_19(context(tmp2[52]), obj24);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                              tmp12 = closure_19;
+                                                                              tmp13 = context;
+                                                                              obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                              ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                              obj25.onPress = function onPress() {
+                                                                                const obj = { application: item.application, sectionName: item.sectionName };
+                                                                                return closure_19(obj);
+                                                                              };
+                                                                              obj25.showsPromoted = item.showsPromoted;
+                                                                              return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                              tmp10 = closure_19;
+                                                                              tmp11 = context;
+                                                                              obj26 = { title: null, onPress: null };
+                                                                              obj26.title = item.title;
+                                                                              obj26.onPress = function onPress() {
+                                                                                const applications = item.applications;
+                                                                                const mapped = applications.map((item) => item);
+                                                                                let obj = AppLauncherNativeUtils;
+                                                                                const obj2 = {
+                                                                                  location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                                  navigation,
+                                                                                  context,
+                                                                                  sectionName: item.sectionName,
+                                                                                  sectionOverallPosition: item.sectionOverallPosition,
+                                                                                  applications: mapped,
+                                                                                  sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                                  commands: [],
+                                                                                  sectionDescriptors: mapped.map((item) => {
+                                                                                    const obj = item(closure_1_3[49]);
+                                                                                    return obj.getApplicationCommandSection(item);
+                                                                                  }),
+                                                                                  title: item.title,
+                                                                                  promotedApplicationIds: item.promotedApplicationIds
+                                                                                };
+                                                                                const result = obj.handleViewAllSelected(obj2);
+                                                                              };
+                                                                              return closure_19(context(tmp2[54]), obj26);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                              tmp8 = closure_19;
+                                                                              tmp9 = closure_1_35;
+                                                                              return closure_19(closure_1_35, {});
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                              tmp4 = closure_19;
+                                                                              tmp5 = context;
+                                                                              obj = { visible: null };
+                                                                              tmp7 = closure_3;
+                                                                              tmp6 = context(tmp2[55]);
+                                                                              obj.visible = closure_3.valueOf();
+                                                                              return closure_19(tmp6, obj);
+                                                                            } else {
+                                                                              tmp3 = null;
+                                                                              return null;
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                        cResult[100] = tmp8.topBackgroundFill;
+                                                                        cResult[101] = tmp94;
+                                                                      } else {
+                                                                        class Ct {
+                                                                          constructor(nativeEvent) {
+                                                                            nativeEvent = nativeEvent.nativeEvent;
+                                                                            size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                            tmp80(size);
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                      if (cResult[102] !== entrypoint) {
+                                                                        class Ct {
+                                                                          constructor(nativeEvent) {
+                                                                            nativeEvent = nativeEvent.nativeEvent;
+                                                                            size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                            tmp80(size);
+                                                                          }
+                                                                        }
+                                                                        cResult[102] = entrypoint;
+                                                                        cResult[103] = tmp96;
+                                                                        class Ce {
+                                                                          constructor(arg0) {
+                                                                            item = navigation.item;
+                                                                            index = navigation.index;
+                                                                            type = item.type;
+                                                                            tmp = navigation;
+                                                                            tmp2 = closure_3;
+                                                                            if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                              tmp40 = closure_19;
+                                                                              tmp41 = context;
+                                                                              obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                              num2 = 0;
+                                                                              obj1.isFirstRow = 0 === index;
+                                                                              tmp42 = list;
+                                                                              num3 = 1;
+                                                                              obj1.isLastRow = index === list.length - 1;
+                                                                              obj15 = { height: null };
+                                                                              tmp43 = closure_5;
+                                                                              obj15.height = closure_5;
+                                                                              obj1.style = obj15;
+                                                                              return closure_19(context(tmp2[51]), obj1);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                              tmp38 = closure_19;
+                                                                              tmp39 = closure_4;
+                                                                              items = [, ];
+                                                                              items[0] = closure_4.sectionHeader;
+                                                                              num = 0;
+                                                                              obj16 = null;
+                                                                              Text = tmp(tmp2[18]).Text;
+                                                                              if (0 !== index) {
+                                                                                obj16 = { marginTop: 24 };
+                                                                              }
+                                                                              obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                              items[1] = obj16;
+                                                                              obj17.style = items;
+                                                                              obj17.children = item.section;
+                                                                              return tmp38(Text, obj17);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                              tmp36 = closure_19;
+                                                                              tmp37 = closure_30;
+                                                                              obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                              obj18.section = item.section;
+                                                                              obj18.onPress = function onPress(shelfData) {
+                                                                                const obj = { shelfData, sectionName: item.sectionName };
+                                                                                triggeredOnboardingContentMetadata(obj);
+                                                                              };
+                                                                              ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                              return closure_19(closure_30, obj18, item.section.application.id);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                              obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                              tmp29 = context;
+                                                                              obj19.context = context;
+                                                                              tmp27 = closure_19;
+                                                                              tmp28 = closure_31;
+                                                                              obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                              obj19.onPress = function onPress(shelfData) {
+                                                                                let tmp2;
+                                                                                const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                                tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                                const tmp = triggeredOnboardingContentMetadata;
+                                                                                if (!tmp2) {
+                                                                                  tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                                }
+                                                                                tmp(obj);
+                                                                              };
+                                                                              tmp30 = closure_20;
+                                                                              tmp31 = !closure_20;
+                                                                              if (tmp31) {
+                                                                                tmp32 = entrypoint;
+                                                                                tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                              }
+                                                                              obj19.usesHandleActivityItemSelected = tmp31;
+                                                                              tmp33 = onActivityItemSelected;
+                                                                              obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                              ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                              tmp34 = entrypoint;
+                                                                              obj19.entrypoint = entrypoint;
+                                                                              tmp35 = width;
+                                                                              obj19.containerWidth = width;
+                                                                              return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                              tmp22 = closure_19;
+                                                                              tmp23 = closure_33;
+                                                                              obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                              tmp24 = context;
+                                                                              obj20.context = context;
+                                                                              obj20.sectionName = item.sectionName;
+                                                                              obj20.onPress = function onPress(application, sectionName) {
+                                                                                const obj = { application, sectionName };
+                                                                                return closure_1_19(obj);
+                                                                              };
+                                                                              ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                              tmp25 = entrypoint;
+                                                                              obj20.entrypoint = entrypoint;
+                                                                              tmp26 = width;
+                                                                              obj20.containerWidth = width;
+                                                                              return closure_19(closure_33, obj20);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                              tmp19 = closure_19;
+                                                                              tmp20 = closure_29;
+                                                                              obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                              obj21.section = item.section;
+                                                                              obj21.onPress = function onPress() {
+                                                                                closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                              };
+                                                                              ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                              obj22 = { height: null };
+                                                                              tmp21 = closure_5;
+                                                                              obj22.height = closure_5;
+                                                                              obj21.style = obj22;
+                                                                              return closure_19(closure_29, obj21, item.section.id);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                              tmp17 = closure_19;
+                                                                              tmp18 = closure_1_36;
+                                                                              obj23 = { index: null, children: null };
+                                                                              obj23.index = index;
+                                                                              obj23.children = item.section;
+                                                                              return closure_19(closure_1_36, obj23);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                              tmp14 = closure_19;
+                                                                              tmp15 = context;
+                                                                              obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                              obj24.application = item.item.application;
+                                                                              ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                              obj24.onPress = function onPress() {
+                                                                                const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                                return closure_19(obj);
+                                                                              };
+                                                                              tmp16 = closure_11;
+                                                                              obj24.isLandscape = closure_11;
+                                                                              ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                              return closure_19(context(tmp2[52]), obj24);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                              tmp12 = closure_19;
+                                                                              tmp13 = context;
+                                                                              obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                              ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                              obj25.onPress = function onPress() {
+                                                                                const obj = { application: item.application, sectionName: item.sectionName };
+                                                                                return closure_19(obj);
+                                                                              };
+                                                                              obj25.showsPromoted = item.showsPromoted;
+                                                                              return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                              tmp10 = closure_19;
+                                                                              tmp11 = context;
+                                                                              obj26 = { title: null, onPress: null };
+                                                                              obj26.title = item.title;
+                                                                              obj26.onPress = function onPress() {
+                                                                                const applications = item.applications;
+                                                                                const mapped = applications.map((item) => item);
+                                                                                let obj = AppLauncherNativeUtils;
+                                                                                const obj2 = {
+                                                                                  location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                                  navigation,
+                                                                                  context,
+                                                                                  sectionName: item.sectionName,
+                                                                                  sectionOverallPosition: item.sectionOverallPosition,
+                                                                                  applications: mapped,
+                                                                                  sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                                  commands: [],
+                                                                                  sectionDescriptors: mapped.map((item) => {
+                                                                                    const obj = item(closure_1_3[49]);
+                                                                                    return obj.getApplicationCommandSection(item);
+                                                                                  }),
+                                                                                  title: item.title,
+                                                                                  promotedApplicationIds: item.promotedApplicationIds
+                                                                                };
+                                                                                const result = obj.handleViewAllSelected(obj2);
+                                                                              };
+                                                                              return closure_19(context(tmp2[54]), obj26);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                              tmp8 = closure_19;
+                                                                              tmp9 = closure_1_35;
+                                                                              return closure_19(closure_1_35, {});
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                              tmp4 = closure_19;
+                                                                              tmp5 = context;
+                                                                              obj = { visible: null };
+                                                                              tmp7 = closure_3;
+                                                                              tmp6 = context(tmp2[55]);
+                                                                              obj.visible = closure_3.valueOf();
+                                                                              return closure_19(tmp6, obj);
+                                                                            } else {
+                                                                              tmp3 = null;
+                                                                              return null;
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      } else {
+                                                                        class Ct {
+                                                                          constructor(nativeEvent) {
+                                                                            nativeEvent = nativeEvent.nativeEvent;
+                                                                            size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                            tmp80(size);
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                      if (cResult[104] === tmp43) {
+                                                                        class Ct {
+                                                                          constructor(nativeEvent) {
+                                                                            nativeEvent = nativeEvent.nativeEvent;
+                                                                            size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                            tmp80(size);
+                                                                          }
+                                                                        }
+                                                                        if (cResult[107] === tmp38) {
+                                                                          class Ct {
+                                                                            constructor(nativeEvent) {
+                                                                              nativeEvent = nativeEvent.nativeEvent;
+                                                                              size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
+                                                                              tmp80(size);
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                        const obj6 = { ref: ref1, placeholder: null, round: true, size: "md", onChange: tmp38, onFocus: tmp97 };
+                                                                        class Ce {
+                                                                          constructor(arg0) {
+                                                                            item = navigation.item;
+                                                                            index = navigation.index;
+                                                                            type = item.type;
+                                                                            tmp = navigation;
+                                                                            tmp2 = closure_3;
+                                                                            if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                              tmp40 = closure_19;
+                                                                              tmp41 = context;
+                                                                              obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                              num2 = 0;
+                                                                              obj1.isFirstRow = 0 === index;
+                                                                              tmp42 = list;
+                                                                              num3 = 1;
+                                                                              obj1.isLastRow = index === list.length - 1;
+                                                                              obj15 = { height: null };
+                                                                              tmp43 = closure_5;
+                                                                              obj15.height = closure_5;
+                                                                              obj1.style = obj15;
+                                                                              return closure_19(context(tmp2[51]), obj1);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                              tmp38 = closure_19;
+                                                                              tmp39 = closure_4;
+                                                                              items = [, ];
+                                                                              items[0] = closure_4.sectionHeader;
+                                                                              num = 0;
+                                                                              obj16 = null;
+                                                                              Text = tmp(tmp2[18]).Text;
+                                                                              if (0 !== index) {
+                                                                                obj16 = { marginTop: 24 };
+                                                                              }
+                                                                              obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                              items[1] = obj16;
+                                                                              obj17.style = items;
+                                                                              obj17.children = item.section;
+                                                                              return tmp38(Text, obj17);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                              tmp36 = closure_19;
+                                                                              tmp37 = closure_30;
+                                                                              obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                              obj18.section = item.section;
+                                                                              obj18.onPress = function onPress(shelfData) {
+                                                                                const obj = { shelfData, sectionName: item.sectionName };
+                                                                                triggeredOnboardingContentMetadata(obj);
+                                                                              };
+                                                                              ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                              return closure_19(closure_30, obj18, item.section.application.id);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                              obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                              tmp29 = context;
+                                                                              obj19.context = context;
+                                                                              tmp27 = closure_19;
+                                                                              tmp28 = closure_31;
+                                                                              obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                              obj19.onPress = function onPress(shelfData) {
+                                                                                let tmp2;
+                                                                                const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                                tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                                const tmp = triggeredOnboardingContentMetadata;
+                                                                                if (!tmp2) {
+                                                                                  tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                                }
+                                                                                tmp(obj);
+                                                                              };
+                                                                              tmp30 = closure_20;
+                                                                              tmp31 = !closure_20;
+                                                                              if (tmp31) {
+                                                                                tmp32 = entrypoint;
+                                                                                tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                              }
+                                                                              obj19.usesHandleActivityItemSelected = tmp31;
+                                                                              tmp33 = onActivityItemSelected;
+                                                                              obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                              ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                              tmp34 = entrypoint;
+                                                                              obj19.entrypoint = entrypoint;
+                                                                              tmp35 = width;
+                                                                              obj19.containerWidth = width;
+                                                                              return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                              tmp22 = closure_19;
+                                                                              tmp23 = closure_33;
+                                                                              obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                              tmp24 = context;
+                                                                              obj20.context = context;
+                                                                              obj20.sectionName = item.sectionName;
+                                                                              obj20.onPress = function onPress(application, sectionName) {
+                                                                                const obj = { application, sectionName };
+                                                                                return closure_1_19(obj);
+                                                                              };
+                                                                              ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                              tmp25 = entrypoint;
+                                                                              obj20.entrypoint = entrypoint;
+                                                                              tmp26 = width;
+                                                                              obj20.containerWidth = width;
+                                                                              return closure_19(closure_33, obj20);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                              tmp19 = closure_19;
+                                                                              tmp20 = closure_29;
+                                                                              obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                              obj21.section = item.section;
+                                                                              obj21.onPress = function onPress() {
+                                                                                closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                              };
+                                                                              ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                              obj22 = { height: null };
+                                                                              tmp21 = closure_5;
+                                                                              obj22.height = closure_5;
+                                                                              obj21.style = obj22;
+                                                                              return closure_19(closure_29, obj21, item.section.id);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                              tmp17 = closure_19;
+                                                                              tmp18 = closure_1_36;
+                                                                              obj23 = { index: null, children: null };
+                                                                              obj23.index = index;
+                                                                              obj23.children = item.section;
+                                                                              return closure_19(closure_1_36, obj23);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                              tmp14 = closure_19;
+                                                                              tmp15 = context;
+                                                                              obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                              obj24.application = item.item.application;
+                                                                              ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                              obj24.onPress = function onPress() {
+                                                                                const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                                return closure_19(obj);
+                                                                              };
+                                                                              tmp16 = closure_11;
+                                                                              obj24.isLandscape = closure_11;
+                                                                              ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                              return closure_19(context(tmp2[52]), obj24);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                              tmp12 = closure_19;
+                                                                              tmp13 = context;
+                                                                              obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                              ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                              obj25.onPress = function onPress() {
+                                                                                const obj = { application: item.application, sectionName: item.sectionName };
+                                                                                return closure_19(obj);
+                                                                              };
+                                                                              obj25.showsPromoted = item.showsPromoted;
+                                                                              return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                              tmp10 = closure_19;
+                                                                              tmp11 = context;
+                                                                              obj26 = { title: null, onPress: null };
+                                                                              obj26.title = item.title;
+                                                                              obj26.onPress = function onPress() {
+                                                                                const applications = item.applications;
+                                                                                const mapped = applications.map((item) => item);
+                                                                                let obj = AppLauncherNativeUtils;
+                                                                                const obj2 = {
+                                                                                  location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                                  navigation,
+                                                                                  context,
+                                                                                  sectionName: item.sectionName,
+                                                                                  sectionOverallPosition: item.sectionOverallPosition,
+                                                                                  applications: mapped,
+                                                                                  sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                                  commands: [],
+                                                                                  sectionDescriptors: mapped.map((item) => {
+                                                                                    const obj = item(closure_1_3[49]);
+                                                                                    return obj.getApplicationCommandSection(item);
+                                                                                  }),
+                                                                                  title: item.title,
+                                                                                  promotedApplicationIds: item.promotedApplicationIds
+                                                                                };
+                                                                                const result = obj.handleViewAllSelected(obj2);
+                                                                              };
+                                                                              return closure_19(context(tmp2[54]), obj26);
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                              tmp8 = closure_19;
+                                                                              tmp9 = closure_1_35;
+                                                                              return closure_19(closure_1_35, {});
+                                                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                              tmp4 = closure_19;
+                                                                              tmp5 = context;
+                                                                              obj = { visible: null };
+                                                                              tmp7 = closure_3;
+                                                                              tmp6 = context(tmp2[55]);
+                                                                              obj.visible = closure_3.valueOf();
+                                                                              return closure_19(tmp6, obj);
+                                                                            } else {
+                                                                              tmp3 = null;
+                                                                              return null;
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                        cResult[107] = tmp38;
+                                                                        cResult[108] = tmp95;
+                                                                        cResult[109] = tmp97;
+                                                                        cResult[110] = closure_19(tmp(6472).SearchField, obj6);
+                                                                        const tmp100 = closure_19(tmp(6472).SearchField, obj6);
+                                                                      }
+                                                                      function wt() {
+                                                                        closure_27();
+                                                                        const obj = { actionType: ContentDismissActionType.TAKE_ACTION };
+                                                                        tmp71(obj);
+                                                                      }
+                                                                      class Ce {
+                                                                        constructor(arg0) {
+                                                                          item = navigation.item;
+                                                                          index = navigation.index;
+                                                                          type = item.type;
+                                                                          tmp = navigation;
+                                                                          tmp2 = closure_3;
+                                                                          if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                                                            tmp40 = closure_19;
+                                                                            tmp41 = context;
+                                                                            obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                                                            num2 = 0;
+                                                                            obj1.isFirstRow = 0 === index;
+                                                                            tmp42 = list;
+                                                                            num3 = 1;
+                                                                            obj1.isLastRow = index === list.length - 1;
+                                                                            obj15 = { height: null };
+                                                                            tmp43 = closure_5;
+                                                                            obj15.height = closure_5;
+                                                                            obj1.style = obj15;
+                                                                            return closure_19(context(tmp2[51]), obj1);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                                                            tmp38 = closure_19;
+                                                                            tmp39 = closure_4;
+                                                                            items = [, ];
+                                                                            items[0] = closure_4.sectionHeader;
+                                                                            num = 0;
+                                                                            obj16 = null;
+                                                                            Text = tmp(tmp2[18]).Text;
+                                                                            if (0 !== index) {
+                                                                              obj16 = { marginTop: 24 };
+                                                                            }
+                                                                            obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                                                            items[1] = obj16;
+                                                                            obj17.style = items;
+                                                                            obj17.children = item.section;
+                                                                            return tmp38(Text, obj17);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                                                            tmp36 = closure_19;
+                                                                            tmp37 = closure_30;
+                                                                            obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                                                            obj18.section = item.section;
+                                                                            obj18.onPress = function onPress(shelfData) {
+                                                                              const obj = { shelfData, sectionName: item.sectionName };
+                                                                              triggeredOnboardingContentMetadata(obj);
+                                                                            };
+                                                                            ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                                                            return closure_19(closure_30, obj18, item.section.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                                                            obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                            tmp29 = context;
+                                                                            obj19.context = context;
+                                                                            tmp27 = closure_19;
+                                                                            tmp28 = closure_31;
+                                                                            obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                                                            obj19.onPress = function onPress(shelfData) {
+                                                                              let tmp2;
+                                                                              const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                                              tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                                              const tmp = triggeredOnboardingContentMetadata;
+                                                                              if (!tmp2) {
+                                                                                tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                                              }
+                                                                              tmp(obj);
+                                                                            };
+                                                                            tmp30 = closure_20;
+                                                                            tmp31 = !closure_20;
+                                                                            if (tmp31) {
+                                                                              tmp32 = entrypoint;
+                                                                              tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                                                            }
+                                                                            obj19.usesHandleActivityItemSelected = tmp31;
+                                                                            tmp33 = onActivityItemSelected;
+                                                                            obj19.onActivityItemSelected = onActivityItemSelected;
+                                                                            ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                                                            tmp34 = entrypoint;
+                                                                            obj19.entrypoint = entrypoint;
+                                                                            tmp35 = width;
+                                                                            obj19.containerWidth = width;
+                                                                            return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                                                            tmp22 = closure_19;
+                                                                            tmp23 = closure_33;
+                                                                            obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                                                            tmp24 = context;
+                                                                            obj20.context = context;
+                                                                            obj20.sectionName = item.sectionName;
+                                                                            obj20.onPress = function onPress(application, sectionName) {
+                                                                              const obj = { application, sectionName };
+                                                                              return closure_1_19(obj);
+                                                                            };
+                                                                            ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                                                            tmp25 = entrypoint;
+                                                                            obj20.entrypoint = entrypoint;
+                                                                            tmp26 = width;
+                                                                            obj20.containerWidth = width;
+                                                                            return closure_19(closure_33, obj20);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                                                            tmp19 = closure_19;
+                                                                            tmp20 = closure_29;
+                                                                            obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                                                            obj21.section = item.section;
+                                                                            obj21.onPress = function onPress() {
+                                                                              closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                                                            };
+                                                                            ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                                                            obj22 = { height: null };
+                                                                            tmp21 = closure_5;
+                                                                            obj22.height = closure_5;
+                                                                            obj21.style = obj22;
+                                                                            return closure_19(closure_29, obj21, item.section.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                                                            tmp17 = closure_19;
+                                                                            tmp18 = closure_1_36;
+                                                                            obj23 = { index: null, children: null };
+                                                                            obj23.index = index;
+                                                                            obj23.children = item.section;
+                                                                            return closure_19(closure_1_36, obj23);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                                                            tmp14 = closure_19;
+                                                                            tmp15 = context;
+                                                                            obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                                                            obj24.application = item.item.application;
+                                                                            ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                                                            obj24.onPress = function onPress() {
+                                                                              const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                                              return closure_19(obj);
+                                                                            };
+                                                                            tmp16 = closure_11;
+                                                                            obj24.isLandscape = closure_11;
+                                                                            ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                                                            return closure_19(context(tmp2[52]), obj24);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                                                            tmp12 = closure_19;
+                                                                            tmp13 = context;
+                                                                            obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                                                            ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                                                            obj25.onPress = function onPress() {
+                                                                              const obj = { application: item.application, sectionName: item.sectionName };
+                                                                              return closure_19(obj);
+                                                                            };
+                                                                            obj25.showsPromoted = item.showsPromoted;
+                                                                            return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                                                            tmp10 = closure_19;
+                                                                            tmp11 = context;
+                                                                            obj26 = { title: null, onPress: null };
+                                                                            obj26.title = item.title;
+                                                                            obj26.onPress = function onPress() {
+                                                                              const applications = item.applications;
+                                                                              const mapped = applications.map((item) => item);
+                                                                              let obj = AppLauncherNativeUtils;
+                                                                              const obj2 = {
+                                                                                location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                                                navigation,
+                                                                                context,
+                                                                                sectionName: item.sectionName,
+                                                                                sectionOverallPosition: item.sectionOverallPosition,
+                                                                                applications: mapped,
+                                                                                sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                                                commands: [],
+                                                                                sectionDescriptors: mapped.map((item) => {
+                                                                                  const obj = item(closure_1_3[49]);
+                                                                                  return obj.getApplicationCommandSection(item);
+                                                                                }),
+                                                                                title: item.title,
+                                                                                promotedApplicationIds: item.promotedApplicationIds
+                                                                              };
+                                                                              const result = obj.handleViewAllSelected(obj2);
+                                                                            };
+                                                                            return closure_19(context(tmp2[54]), obj26);
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                                                            tmp8 = closure_19;
+                                                                            tmp9 = closure_1_35;
+                                                                            return closure_19(closure_1_35, {});
+                                                                          } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                                                            tmp4 = closure_19;
+                                                                            tmp5 = context;
+                                                                            obj = { visible: null };
+                                                                            tmp7 = closure_3;
+                                                                            tmp6 = context(tmp2[55]);
+                                                                            obj.visible = closure_3.valueOf();
+                                                                            return closure_19(tmp6, obj);
+                                                                          } else {
+                                                                            tmp3 = null;
+                                                                            return null;
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                      cResult[104] = tmp43;
+                                                                      cResult[105] = tmp71;
+                                                                      cResult[106] = wt;
+                                                                    }
+                                                                    const items6 = [tmp86, tmp88];
+                                                                    cResult[97] = tmp86;
+                                                                    cResult[98] = tmp88;
+                                                                    cResult[99] = items6;
+                                                                  }
+                                                                  let obj7 = { paddingBottom: sum };
+                                                                  let merged = Object.assign(tmp8.list);
+                                                                  cResult[80] = sum;
+                                                                  cResult[81] = tmp8.list;
+                                                                  cResult[82] = obj7;
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                        class Ce {
+                                          constructor(arg0) {
+                                            item = navigation.item;
+                                            index = navigation.index;
+                                            type = item.type;
+                                            tmp = navigation;
+                                            tmp2 = closure_3;
+                                            if (navigation(closure_3[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+                                              tmp40 = closure_19;
+                                              tmp41 = context;
+                                              obj1 = { isFirstRow: null, isLastRow: null, style: null };
+                                              num2 = 0;
+                                              obj1.isFirstRow = 0 === index;
+                                              tmp42 = list;
+                                              num3 = 1;
+                                              obj1.isLastRow = index === list.length - 1;
+                                              obj15 = { height: null };
+                                              tmp43 = closure_5;
+                                              obj15.height = closure_5;
+                                              obj1.style = obj15;
+                                              return closure_19(context(tmp2[51]), obj1);
+                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+                                              tmp38 = closure_19;
+                                              tmp39 = closure_4;
+                                              items = [, ];
+                                              items[0] = closure_4.sectionHeader;
+                                              num = 0;
+                                              obj16 = null;
+                                              Text = tmp(tmp2[18]).Text;
+                                              if (0 !== index) {
+                                                obj16 = { marginTop: 24 };
+                                              }
+                                              obj17 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+                                              items[1] = obj16;
+                                              obj17.style = items;
+                                              obj17.children = item.section;
+                                              return tmp38(Text, obj17);
+                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+                                              tmp36 = closure_19;
+                                              tmp37 = closure_30;
+                                              obj18 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+                                              obj18.section = item.section;
+                                              obj18.onPress = function onPress(shelfData) {
+                                                const obj = { shelfData, sectionName: item.sectionName };
+                                                triggeredOnboardingContentMetadata(obj);
+                                              };
+                                              ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
+                                              return closure_19(closure_30, obj18, item.section.application.id);
+                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+                                              obj19 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                              tmp29 = context;
+                                              obj19.context = context;
+                                              tmp27 = closure_19;
+                                              tmp28 = closure_31;
+                                              obj19.sectionName = tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES;
+                                              obj19.onPress = function onPress(shelfData) {
+                                                let tmp2;
+                                                const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
+                                                tmp2 = clickOnHomeActivityOpensAppDetails;
+                                                const tmp = triggeredOnboardingContentMetadata;
+                                                if (!tmp2) {
+                                                  tmp2 = entrypoint !== AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+                                                }
+                                                tmp(obj);
+                                              };
+                                              tmp30 = closure_20;
+                                              tmp31 = !closure_20;
+                                              if (tmp31) {
+                                                tmp32 = entrypoint;
+                                                tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+                                              }
+                                              obj19.usesHandleActivityItemSelected = tmp31;
+                                              tmp33 = onActivityItemSelected;
+                                              obj19.onActivityItemSelected = onActivityItemSelected;
+                                              ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
+                                              tmp34 = entrypoint;
+                                              obj19.entrypoint = entrypoint;
+                                              tmp35 = width;
+                                              obj19.containerWidth = width;
+                                              return tmp27(tmp28, obj19, item.shelfItem1.application.id);
+                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+                                              tmp22 = closure_19;
+                                              tmp23 = closure_33;
+                                              obj20 = { context: null, sectionName: null, onPress: null, items: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+                                              tmp24 = context;
+                                              obj20.context = context;
+                                              obj20.sectionName = item.sectionName;
+                                              obj20.onPress = function onPress(application, sectionName) {
+                                                const obj = { application, sectionName };
+                                                return closure_1_19(obj);
+                                              };
+                                              ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
+                                              tmp25 = entrypoint;
+                                              obj20.entrypoint = entrypoint;
+                                              tmp26 = width;
+                                              obj20.containerWidth = width;
+                                              return closure_19(closure_33, obj20);
+                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
+                                              tmp19 = closure_19;
+                                              tmp20 = closure_29;
+                                              obj21 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+                                              obj21.section = item.section;
+                                              obj21.onPress = function onPress() {
+                                                closure_12(item.section, AppLauncherTypes.AppLauncherSectionName.INSTALLED);
+                                              };
+                                              ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
+                                              obj22 = { height: null };
+                                              tmp21 = closure_5;
+                                              obj22.height = closure_5;
+                                              obj21.style = obj22;
+                                              return closure_19(closure_29, obj21, item.section.id);
+                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+                                              tmp17 = closure_19;
+                                              tmp18 = closure_1_36;
+                                              obj23 = { index: null, children: null };
+                                              obj23.index = index;
+                                              obj23.children = item.section;
+                                              return closure_19(closure_1_36, obj23);
+                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+                                              tmp14 = closure_19;
+                                              tmp15 = context;
+                                              obj24 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+                                              obj24.application = item.item.application;
+                                              ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
+                                              obj24.onPress = function onPress() {
+                                                const obj = { application: item.item.application, sectionName: item.sectionName };
+                                                return closure_19(obj);
+                                              };
+                                              tmp16 = closure_11;
+                                              obj24.isLandscape = closure_11;
+                                              ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
+                                              return closure_19(context(tmp2[52]), obj24);
+                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+                                              tmp12 = closure_19;
+                                              tmp13 = context;
+                                              obj25 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+                                              ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
+                                              obj25.onPress = function onPress() {
+                                                const obj = { application: item.application, sectionName: item.sectionName };
+                                                return closure_19(obj);
+                                              };
+                                              obj25.showsPromoted = item.showsPromoted;
+                                              return closure_19(context(tmp2[53]), obj25, item.application.id);
+                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+                                              tmp10 = closure_19;
+                                              tmp11 = context;
+                                              obj26 = { title: null, onPress: null };
+                                              obj26.title = item.title;
+                                              obj26.onPress = function onPress() {
+                                                const applications = item.applications;
+                                                const mapped = applications.map((item) => item);
+                                                let obj = AppLauncherNativeUtils;
+                                                const obj2 = {
+                                                  location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                                  navigation,
+                                                  context,
+                                                  sectionName: item.sectionName,
+                                                  sectionOverallPosition: item.sectionOverallPosition,
+                                                  applications: mapped,
+                                                  sectionItemType: FrecencySection.SectionItemType.APPS,
+                                                  commands: [],
+                                                  sectionDescriptors: mapped.map((item) => {
+                                                    const obj = item(closure_1_3[49]);
+                                                    return obj.getApplicationCommandSection(item);
+                                                  }),
+                                                  title: item.title,
+                                                  promotedApplicationIds: item.promotedApplicationIds
+                                                };
+                                                const result = obj.handleViewAllSelected(obj2);
+                                              };
+                                              return closure_19(context(tmp2[54]), obj26);
+                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+                                              tmp8 = closure_19;
+                                              tmp9 = closure_1_35;
+                                              return closure_19(closure_1_35, {});
+                                            } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+                                              tmp4 = closure_19;
+                                              tmp5 = context;
+                                              obj = { visible: null };
+                                              tmp7 = closure_3;
+                                              tmp6 = context(tmp2[55]);
+                                              obj.visible = closure_3.valueOf();
+                                              return closure_19(tmp6, obj);
+                                            } else {
+                                              tmp3 = null;
+                                              return null;
+                                            }
+                                          }
+                                        }
+                                        cResult[38] = clickOnHomeActivityOpensAppDetails;
+                                        cResult[39] = context;
+                                        cResult[40] = entrypoint;
+                                        cResult[41] = tmp7;
+                                        cResult[42] = size.width > size.height;
+                                        cResult[43] = list.length;
+                                        cResult[44] = navigation;
+                                        cResult[45] = onActivityItemSelected;
+                                        cResult[46] = tmp17;
+                                        cResult[47] = tmp16;
+                                        cResult[48] = tmp21;
+                                        cResult[49] = tmp9;
+                                        cResult[50] = tmp8.sectionHeader;
+                                        cResult[51] = width;
+                                        cResult[52] = Ce;
+                                      }
+                                    }
+                                  }
+                                  function ve(command, section) {
+                                    const obj = AppLauncherNativeUtils;
+                                    const obj2 = { location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, context, command, section, sectionDescriptors, query: "", navigation, sectionName: AppLauncherTypes.AppLauncherSectionName.RECENT_COMMANDS, entrypoint };
+                                    const result = obj.handleApplicationCommandSelected(obj2);
+                                  }
+                                  cResult[33] = context;
+                                  cResult[34] = entrypoint;
+                                  cResult[35] = navigation;
+                                  cResult[36] = sectionDescriptors;
+                                  cResult[37] = ve;
+                                }
+                              }
+                              function ye() {
+                                let intl;
+                                const found = inThisServerItems.find((type) => type.type === navigation(closure_1_3[48]).AppLauncherHomeListItemType.VIEW_ALL);
+                                let mapped;
+                                if (found != null) {
+                                  const applications = found.applications;
+                                  if (applications != null) {
+                                    mapped = applications.map((item) => item);
+                                  }
+                                }
+                                if (null != mapped) {
+                                  let obj = {
+                                    location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME,
+                                    navigation,
+                                    context,
+                                    sectionName: AppLauncherTypes.AppLauncherSectionName.APPS_IN_THIS_SERVER,
+                                    applications: mapped,
+                                    sectionItemType: FrecencySection.SectionItemType.APPS,
+                                    commands: [],
+                                    sectionDescriptors: mapped.map((item) => {
+                                        const obj = navigation(closure_1_3[49]);
+                                        return obj.getApplicationCommandSection(item);
+                                      }),
+                                    title: intl.string(intl4.t.oJyzCu)
+                                  };
+                                  const handleViewAllSelected = AppLauncherNativeUtils.handleViewAllSelected;
+                                  AppLauncherNativeUtils;
+                                  intl = intl4.intl;
+                                  const result = handleViewAllSelected(obj);
+                                }
+                              }
+                              cResult[29] = context;
+                              cResult[30] = inThisServerItems;
+                              cResult[31] = navigation;
+                              cResult[32] = ye;
+                            }
+                          }
+                        }
+                      }
+                    }
+                    function ue(sectionItemType) {
+                      let mapped;
+                      let str;
+                      let stringResult;
+                      const tmp3 = AppLauncherNativeUtils;
+                      const handleViewAllSelected = tmp3.handleViewAllSelected;
+                      const obj = { location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW_FRECENCT, navigation, context, sectionName: str, applications: mapped.filter(GlobalUtils.isNotNullish), sectionItemType, commands: frecencyCommands, sectionDescriptors, title: stringResult };
+                      str = "recent_apps_view_more";
+                      if (sectionItemType === FrecencySection.SectionItemType.COMMANDS) {
+                        str = "recent_commands_view_more";
+                      }
+                      mapped = frecencyUsedAppList.map((section) => {
+                        section = section.section;
+                        let application;
+                        if (section != null) {
+                          application = section.application;
+                        }
+                        return application;
+                      });
+                      if (entrypoint === AppLauncherTypes.AppLauncherEntrypoint.VOICE) {
+                        const intl3 = tmp(1127).intl;
+                        stringResult = intl3.string(tmp(1127).t["2pFD8L"]);
+                      } else if (sectionItemType === FrecencySection.SectionItemType.COMMANDS) {
+                        const intl2 = tmp(1127).intl;
+                        stringResult = intl2.string(tmp(1127).t.V3Sq95);
+                      } else {
+                        const intl = tmp(1127).intl;
+                        stringResult = intl.string(tmp(1127).t.SCViVk);
+                      }
+                      const result = handleViewAllSelected(obj);
+                    }
+                    cResult[23] = entrypoint;
+                    cResult[24] = frecencyCommands;
+                    cResult[25] = frecencyUsedAppList;
+                    cResult[26] = navigation;
+                    cResult[27] = sectionDescriptors;
+                    cResult[28] = ue;
+                  }
+                }
+              }
+              function oe(application) {
+                application = application.application;
+                const sectionName = application.sectionName;
+                const obj = AppLauncherUtils;
+                let tmp4 = !obj.isEmbeddedApp(application);
+                obj.isEmbeddedApp(application);
+                if (tmp4) {
+                  tmp4 = null != sectionDescriptors.find((id) => id.id === application.id);
+                }
+                const tmpResult = AppLauncherNativeUtils;
+                const obj2 = { location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, application, navigation, context, installOnDemand: !tmp4, sectionName, entrypoint };
+                const result = tmpResult.handleApplicationSelected(obj2);
+              }
+              cResult[17] = context;
+              cResult[18] = entrypoint;
+              cResult[19] = navigation;
+              cResult[20] = sectionDescriptors;
+              cResult[21] = oe;
+              tmp21 = oe;
+            }
+            const obj8 = { context, entrypoint: null };
+            cResult[14] = context;
+            cResult[15] = entrypoint;
+            cResult[16] = obj8;
+            tmp18 = obj8;
+          }
+        }
+        function ee(navigates) {
+          let sectionName;
+          let shelfData;
+          navigates = navigates.navigates;
+          let tmp = undefined === navigates;
+          ({ shelfData, sectionName } = navigates);
+          if (!tmp) {
+            tmp = navigates;
+          }
+          const obj = AppLauncherNativeUtils;
+          const obj2 = { location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, application: shelfData.application, navigation, context, sectionName, navigates: tmp, entrypoint };
+          const result = obj.handleApplicationSelected(obj2);
+        }
+        cResult[11] = entrypoint;
+        cResult[12] = navigation;
+        cResult[13] = ee;
+        tmp17 = ee;
+      }
+    }
+    const fn3 = function $(application, sectionName) {
+      let FAKE_BUILT_IN_APP;
+      const tmp3 = AppLauncherNativeUtils;
+      const handleApplicationSelected = tmp3.handleApplicationSelected;
+      const obj = { location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, application: FAKE_BUILT_IN_APP, navigation, context, sectionName, entrypoint };
+      FAKE_BUILT_IN_APP = application.application;
+      if (FAKE_BUILT_IN_APP == null) {
+        FAKE_BUILT_IN_APP = AppLauncherUtils.FAKE_BUILT_IN_APP;
+      }
+      const result = handleApplicationSelected(obj);
+    };
+    cResult[6] = context;
+    cResult[7] = entrypoint;
+    cResult[8] = navigation;
+    cResult[9] = fn3;
+    tmp16 = fn3;
+  }
+  const fn2 = function c() {
+    keyboardCloseReasonRef.current = AppLauncherContext.AppLauncherKeyboardCloseReason.COMMAND;
+    current = chatInputRef.current;
+    if (current != null) {
+      current.closeCustomKeyboard();
+    }
+  };
+  cResult[3] = chatInputRef;
+  cResult[4] = keyboardCloseReasonRef;
+  cResult[5] = fn2;
+}) : ((route) => {
   let SearchField;
   let _undefined;
   let _undefined2;
@@ -645,87 +7852,75 @@ export default function AppLauncherHomeScreen(route) {
   let closure_4;
   let closure_5;
   let flashListRef;
-  let frecencyCommands;
-  let frecentApps;
   let hasViewedActivityItem;
   let hasViewedLearnMoreItem;
-  let items33;
-  let items34;
+  let items19;
+  let items20;
   let loading;
   let obj10;
   let obj16;
-  let sectionDescriptors;
+  let showNoPermsState;
+  let showsEmptyState;
   let stringResult;
-  let tmp52;
-  let tmp66;
-  let tmp79Result;
+  let tmp22;
+  let tmp36;
+  let tmp49Result;
   const params = route.route.params;
   const context = params.context;
   const initialSearchQuery = params.initialSearchQuery;
   navigation = route.navigation;
   let handleViewableItemsChanged;
-  let memo8;
-  frecencyCommands = undefined;
-  let memo1;
-  sectionDescriptors = undefined;
-  let memo;
-  let callback3;
-  let clickOnHomeActivityOpensAppDetails;
   c23 = undefined;
-  let memo9;
-  let ref;
   let callback5;
-  let ref2;
-  let closure_28;
   let pinnedSearchBarBottomBorder;
   let ref1;
   let c31;
   c32 = undefined;
-  let stateFromStores3;
+  let stateFromStores;
   let callback6;
   let trackAppLauncherHomeItemImpression;
   let callback8;
   let tmp = context;
   let tmp2 = handleViewableItemsChanged;
-  let obj = context(handleViewableItemsChanged[37]);
+  let obj = context(handleViewableItemsChanged[39]);
   const viewableAppLauncherHomeItems = obj.useViewableAppLauncherHomeItems();
   handleViewableItemsChanged = viewableAppLauncherHomeItems.handleViewableItemsChanged;
   let tmp4 = initialSearchQuery;
   ({ hasViewedActivityItem, hasViewedLearnMoreItem } = viewableAppLauncherHomeItems);
-  let tmp5 = initialSearchQuery(handleViewableItemsChanged[38])(hasViewedActivityItem);
-  let tmp6 = initialSearchQuery(handleViewableItemsChanged[38])(hasViewedLearnMoreItem);
-  let tmp7 = ref();
-  react = tmp7;
-  const tmp8 = initialSearchQuery(handleViewableItemsChanged[39])();
-  const bottom = initialSearchQuery(handleViewableItemsChanged[36])().bottom;
-  let obj2 = context(handleViewableItemsChanged[40]);
+  const tmp5 = initialSearchQuery(handleViewableItemsChanged[40])(hasViewedActivityItem);
+  let tmp6 = initialSearchQuery(handleViewableItemsChanged[40])(hasViewedLearnMoreItem);
+  _slicedToArray = tmp6;
+  const tmp7 = callback5();
+  const tmp8 = initialSearchQuery(handleViewableItemsChanged[41])();
+  height = tmp8;
+  const bottom = initialSearchQuery(handleViewableItemsChanged[38])().bottom;
+  let obj2 = context(handleViewableItemsChanged[42]);
   const requiredAppLauncherContext = obj2.useRequiredAppLauncherContext();
   const chatInputRef = requiredAppLauncherContext.chatInputRef;
   const keyboardCloseReasonRef = requiredAppLauncherContext.keyboardCloseReasonRef;
   const width = requiredAppLauncherContext.width;
   const entrypoint = requiredAppLauncherContext.entrypoint;
   const onActivityItemSelected = requiredAppLauncherContext.onActivityItemSelected;
-  size = initialSearchQuery(handleViewableItemsChanged[41])();
-  let tmp10 = size.width > size.height;
-  const isLandscape = tmp10;
-  let obj3 = react;
+  size = initialSearchQuery(handleViewableItemsChanged[43])();
+  isLandscape = tmp10;
+  let obj3 = height;
   let items = [entrypoint];
-  const effect = react.useEffect(() => {
+  const effect = height.useEffect(() => {
     if (entrypoint === AppLauncherTypes.AppLauncherEntrypoint.VOICE) {
       const obj = EmbeddedActivitiesActionCreatorsAll;
       const result = obj.dismissNewActivityIndicator();
     }
   }, items);
-  let items1 = [chatInputRef, keyboardCloseReasonRef];
+  const items1 = [chatInputRef, keyboardCloseReasonRef];
   const items2 = [context, entrypoint, navigation];
-  const callback = react.useCallback(() => {
+  const callback = height.useCallback(() => {
     keyboardCloseReasonRef.current = AppLauncherContext.AppLauncherKeyboardCloseReason.COMMAND;
-    const current = chatInputRef.current;
+    current = chatInputRef.current;
     if (current != null) {
       current.closeCustomKeyboard();
     }
   }, items1);
-  const callback1 = react.useCallback((application, sectionName) => {
+  const callback1 = height.useCallback((application, sectionName) => {
     let FAKE_BUILT_IN_APP;
     const tmp3 = AppLauncherNativeUtils;
     const handleApplicationSelected = tmp3.handleApplicationSelected;
@@ -737,7 +7932,7 @@ export default function AppLauncherHomeScreen(route) {
     const result = handleApplicationSelected(obj);
   }, items2);
   const items3 = [context, entrypoint, navigation];
-  const callback2 = react.useCallback((navigates) => {
+  const callback2 = height.useCallback((navigates) => {
     let sectionName;
     let shelfData;
     let flag = navigates.navigates;
@@ -749,389 +7944,15 @@ export default function AppLauncherHomeScreen(route) {
     const obj2 = { location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, application: shelfData.application, navigation, context, sectionName, navigates: flag, entrypoint };
     const result = obj.handleApplicationSelected(obj2);
   }, items3);
-  let closure_3;
-  _slicedToArray = undefined;
-  frecentApps = undefined;
-  let height;
-  let appsInThisServer;
-  let isActivitiesInTextEnabled;
-  let PREVIEW;
-  let stateFromStores1;
-  let memo3;
-  let memo4;
-  let closure_13;
-  let closure_14;
-  let memo2;
-  let memo6;
-  let memo7;
-  const obj4 = context(handleViewableItemsChanged[74]);
-  const fetchDeveloperActivityShelfItems = obj4.useFetchDeveloperActivityShelfItems();
-  let num = 2;
-  if (initialSearchQuery(handleViewableItemsChanged[35])()) {
-    num = 4;
-  }
-  let guild_id;
-  const tmp4Result = tmp4(tmp2[75]);
-  if ("channel" === context.type) {
-    guild_id = context.channel.guild_id;
-  }
-  const tmp4ResultResult = tmp4Result({ guildId: guild_id });
-  closure_3 = tmp4ResultResult;
-  let tmp19 = entrypoint === tmp(tmp2[42]).AppLauncherEntrypoint.VOICE;
-  _slicedToArray = tmp19;
-  let tmp20 = tmp4(tmp2[76])({ context, onlyActivityApps: tmp19 });
-  ({ frecencyCommands, frecentApps } = tmp20);
-  ({ sectionDescriptors, loading } = tmp20);
-  let tmp21 = entrypoint === tmp(tmp2[42]).AppLauncherEntrypoint.TEXT;
-  height = tmp21;
-  appsInThisServer = tmp4(tmp2[77])({ context }).appsInThisServer;
-  const items4 = [appsInThisServer, tmp21];
-  memo = obj3.useMemo(() => {
-    const arr = closure_6 ? appsInThisServer : c23;
-    const intl = context(handleViewableItemsChanged[17]).intl;
-    const stringResult = intl.string(context(handleViewableItemsChanged[17]).t.oJyzCu);
-    const mapped = arr.map((application) => ({ application: application.application }));
-    return callback8(mapped, "in_this_server", stringResult, context(handleViewableItemsChanged[68]).IN_THIS_SERVER_ITEM_MAX);
-  }, items4);
-  const items5 = [frecentApps];
-  memo1 = obj3.useMemo(() => {
-    let length;
-    return frecentApps.map((applicationId, index) => {
-      const obj = { type: context(closure_3[45]).AppLauncherHomeListItemType.APP, applicationId: applicationId.id, section: applicationId, isFirstRow: 0 === index, isLastRow: index === length.length - 1, sectionName: "recents" };
-      return obj;
-    });
-  }, items5);
-  const items6 = [tmp21, frecentApps];
-  memo2 = obj3.useMemo(() => {
-    let tmp = !closure_6;
-    if (closure_6) {
-      tmp = !frecentApps.some((application) => null != application.application);
-    }
-    return tmp;
-  }, items6);
-  let tmpResult = tmp(tmp2[78]);
-  let id;
-  const useIsActivitiesInTextEnabled = tmpResult.useIsActivitiesInTextEnabled;
-  if ("channel" === context.type) {
-    id = context.channel.id;
-  }
-  isActivitiesInTextEnabled = useIsActivitiesInTextEnabled(id);
-  const items7 = [isActivitiesInTextEnabled, context, entrypoint];
-  const effect1 = obj3.useEffect(() => {
-    const tmp = isActivitiesInTextEnabled || entrypoint === context(handleViewableItemsChanged[42]).AppLauncherEntrypoint.VOICE;
-    if (tmp) {
-      let guild_id;
-      const fetchShelf = context(handleViewableItemsChanged[43]).fetchShelf;
-      context(handleViewableItemsChanged[43]);
-      if ("channel" === context.type) {
-        guild_id = context.channel.guild_id;
-      }
-      const obj = { guildId: guild_id, force: true };
-      const shelf = fetchShelf(obj);
-    }
-  }, items7);
-  const items8 = [entrypoint];
-  const tmpResult10 = tmp(tmp2[28]);
-  const stateFromStores = tmpResult10.useStateFromStores(items8, () => entrypoint.get("only_show_preview_app_collections"));
-  const tmp4Result4 = tmp4(tmp2[72]);
-  const enabled = tmp4Result4.getConfig({ location: "App Launcher Home (Mobile)" }).enabled;
-  const ApplicationCollectionActiveState = tmp(tmp2[73]).ApplicationCollectionActiveState;
-  if (stateFromStores) {
-    PREVIEW = ApplicationCollectionActiveState.PREVIEW;
-  } else {
-    PREVIEW = enabled ? ApplicationCollectionActiveState.NON_STAFF_PREVIEW : ApplicationCollectionActiveState.ACTIVE;
-  }
-  const items9 = [onActivityItemSelected];
-  const tmpResult11 = tmp(tmp2[28]);
-  stateFromStores1 = tmpResult11.useStateFromStores(items9, () => {
-    const obj = { surface: memo9, activeState: PREVIEW };
-    return onActivityItemSelected.getCollections(obj);
-  });
-  const items10 = [stateFromStores1, tmp19];
-  memo3 = obj3.useMemo(() => {
-    const tmp = closure_4;
-    if (tmp) {
-      const obj = context(handleViewableItemsChanged[19]);
-      result = obj.ensureRecommendationSectionsOnlyContainActivities(stateFromStores1);
-    } else {
-      result = stateFromStores1;
-    }
-    return result;
-  }, items10);
-  const items11 = [PREVIEW, entrypoint];
-  const effect2 = obj3.useEffect(() => {
-    const obj = context(handleViewableItemsChanged[19]);
-    const tmp = context;
-    const tmp2 = handleViewableItemsChanged;
-    if (obj.appLauncherShowsRecommendations(entrypoint)) {
-      const obj2 = { surface: memo9, activeState: PREVIEW };
-      const tmpResult = tmp(tmp2[79]);
-      const collections = tmpResult.fetchCollections(obj2);
-    }
-  }, items11);
-  const items12 = [entrypoint, tmp4ResultResult];
-  memo4 = obj3.useMemo(() => {
-    let diff;
-    let diff1;
-    let intl;
-    let tmp12;
-    let tmp4;
-    let tmp5;
-    let arr = closure_3;
-    if (0 !== closure_3.length) {
-      let tmp10 = handleViewableItemsChanged;
-      const tmp19 = context;
-      if (entrypoint === context(handleViewableItemsChanged[42]).AppLauncherEntrypoint.VOICE) {
-        const items = [];
-        let tmp11 = tmp19;
-        num = 0;
-        if (0 < arr.length - 1) {
-          do {
-            let sum = num + 1;
-            let obj = { type: context(handleViewableItemsChanged[45]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE, shelfItem1: tmp4, shelfItem2: tmp5, sectionName: "activities", shelfItem1SectionPosition: num, shelfItem2SectionPosition: sum, sectionOverallPosition: 0, isLastTuple: false };
-            tmp4 = closure_3[num];
-            tmp5 = closure_3[sum];
-            let arr2 = items.push(obj);
-            num = num + 2;
-            tmp10 = handleViewableItemsChanged;
-            tmp11 = context;
-            arr = closure_3;
-            diff = closure_3.length - 1;
-          } while (num < diff);
-        }
-        if (arr.length % 2 === 1) {
-          const obj2 = { type: tmp11(tmp10[45]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE, shelfItem1: tmp12, shelfItem2: undefined, sectionName: "activities", shelfItem1SectionPosition: diff1, shelfItem2SectionPosition: undefined, sectionOverallPosition: 0, isLastTuple: false };
-          diff1 = arr.length - 1;
-          tmp12 = arr[arr.length - 1];
-          items.push(obj2);
-        }
-        items[items.length - 1].isLastTuple = true;
-        const obj5 = { type: tmp11(tmp10[45]).AppLauncherHomeListItemType.SECTION_HEADER, section: intl.string(tmp11(tmp10[17]).t.aeuOoh), sectionName: "activities", numItems: null, numVisibleItems: null };
-        intl = tmp11(tmp10[17]).intl;
-        ({ length: obj3.numItems, length: obj3.numVisibleItems } = arr);
-        const items1 = [obj5];
-        HermesBuiltin.arraySpread(items1, items, 1);
-        return items1;
-      }
-    }
-    return [];
-  }, items12);
-  const tmp34 = keyboardCloseReasonRef(context, true, false);
-  closure_13 = tmp34;
-  const tmp35 = width(true, false);
-  closure_14 = tmp35;
-  let result = tmp34.result;
-  let sections;
-  const useMemo = obj3.useMemo;
-  if (result != null) {
-    sections = result.sections;
-  }
-  const items13 = [sections, ];
-  let result2 = tmp35.result;
-  let sections1;
-  if (result2 != null) {
-    sections1 = result2.sections;
-  }
-  items13[1] = sections1;
-  let memo5 = useMemo(() => {
-    const f127659 = (commands) => Object.keys(commands.commands).length > 0;
-    result = result.result;
-    let sections;
-    if (result != null) {
-      sections = result.sections;
-    }
-    if (sections == null) {
-      sections = {};
-    }
-    result2 = result2.result;
-    let sections1;
-    if (result2 != null) {
-      sections1 = result2.sections;
-    }
-    if (sections1 == null) {
-      sections1 = {};
-    }
-    const values = Object.values(sections);
-    let someResult = values.some(f127659);
-    if (!someResult) {
-      const _Object = Object;
-      const values2 = Object.values(sections1);
-      someResult = values2.some(f127659);
-    }
-    return someResult;
-  }, items13);
-  const items14 = [isLandscape];
-  let channel = null;
-  const tmpResult12 = tmp(tmp2[28]);
-  const stateFromStores2 = tmpResult12.useStateFromStores(items14, () => {
-    let tmp2 = "channel" === context.type;
-    if (tmp2) {
-      const channel = tmp.channel;
-      let isDMResult = channel.isDM();
-      if (!isDMResult) {
-        const channel2 = tmp.channel;
-        isDMResult = channel2.isMultiUserDM();
-      }
-      if (!isDMResult) {
-        isDMResult = memo4.can(memo1.USE_APPLICATION_COMMANDS, tmp.channel);
-      }
-      tmp2 = isDMResult;
-    }
-    return tmp2;
-  });
-  if ("channel" === context.type) {
-    channel = context.channel;
-  }
-  if (memo5) {
-    memo5 = memo2;
-  }
-  if (!memo5) {
-    memo5 = !stateFromStores2;
-  }
-  let tmp41 = memo2 && !memo5;
-  if (tmp41) {
-    let isPrivateResult;
-    if (channel != null) {
-      isPrivateResult = channel.isPrivate();
-    }
-    tmp41 = !isPrivateResult;
-  }
-  if (tmp41) {
-    tmp41 = !tmp19;
-  }
-  if (memo2) {
-    memo2 = memo5;
-  }
-  if (memo2) {
-    let isPrivateResult1;
-    if (channel != null) {
-      isPrivateResult1 = channel.isPrivate();
-    }
-    memo2 = !isPrivateResult1;
-  }
-  if (memo2) {
-    memo2 = !tmp19;
-  }
-  const items15 = [memo3, tmp4ResultResult, memo2];
-  memo6 = obj3.useMemo(function() {
-    const items = [];
-    if (memo2) {
-      return items;
-    } else {
-      const _Set = Set;
-      const self = this;
-      const self2 = this;
-      set = new Set();
-      let item = memo3.forEach((application_directory_collection_items) => {
-        const prop = application_directory_collection_items.application_directory_collection_items;
-        const item = prop.forEach((type) => {
-          if (type.type === items(closure_2_3[80]).ApplicationDirectoryCollectionItemType.APPLICATION) {
-            set.add(type.application.id);
-          }
-        });
-      });
-      const item1 = closure_3.forEach((application) => {
-        if (!set.has(application.application.id)) {
-          items.push(application);
-        }
-      });
-      return items;
-    }
-  }, items15);
-  const items16 = [num, memo6, memo3, memo2];
-  memo7 = obj3.useMemo(() => {
-    let items = [];
-    const tmp = memo2;
-    if (tmp) {
-      items = [];
-    } else {
-      const tmp2 = memo3;
-      let item = memo3.forEach((title, sectionOverallPosition) => {
-        let application_directory_collection_items;
-        let bound;
-        let length2;
-        let sum;
-        let type;
-        ({ type, application_directory_collection_items } = title);
-        if (type === context(handleViewableItemsChanged[81]).ApplicationDirectoryCollectionType.BANNER_CARDS) {
-          const _Math = Math;
-          let obj = { type: tmp(tmp2[45]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER, section: null, sectionName: null, numItems: application_directory_collection_items.length, numVisibleItems: bound };
-          bound = Math.min(length, tmp(tmp2[82]).COLLAPSED_LIST_ITEM_MAX);
-          ({ title: obj.section, title: obj.sectionName } = title);
-          items.push(obj);
-          const mapped = application_directory_collection_items.map((type, sectionPosition) => {
-            let tmpResult2;
-            if (type.type === items(closure_1_3[80]).ApplicationDirectoryCollectionItemType.APPLICATION) {
-              let collectionItemAssetUrl;
-              const tmp4 = null != type.id && null != type.image_hash;
-              if (tmp4) {
-                const obj = { itemId: null, hash: null };
-                ({ id: obj2.itemId, image_hash: obj2.hash } = type);
-                const tmpResult = items(closure_1_3[83]);
-                collectionItemAssetUrl = tmpResult.getCollectionItemAssetUrl(obj);
-              }
-              const obj3 = { application: type.application, showsPromoted: tmpResult2.hasFlag(type.flags, items(closure_1_3[85]).ApplicationCollectionItemFlags.PROMOTED), overrideImageUrl: collectionItemAssetUrl, sectionPosition };
-              tmpResult2 = items(closure_1_3[84]);
-              return obj3;
-            }
-          });
-          const found = mapped.filter(tmp(tmp2[67]).isNotNullish);
-          let num3 = 0;
-          if (0 < found.length) {
-            do {
-              let obj2 = { type: context(handleViewableItemsChanged[45]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE, sectionName: title.title, sectionOverallPosition, items: found.slice(num3, sum), isLastTuple: sum >= found.length };
-              let push2 = items.push;
-              sum = num3 + num;
-              let push2Result = push2(obj2);
-              num3 = sum;
-              length2 = found.length;
-            } while (sum < length2);
-          }
-        } else if (type === context(handleViewableItemsChanged[81]).ApplicationDirectoryCollectionType.EXPANDABLE_LIST) {
-          const prop = title.application_directory_collection_items;
-          const mapped1 = prop.map((type) => {
-            let tmpResult;
-            if (type.type === items(closure_1_3[80]).ApplicationDirectoryCollectionItemType.APPLICATION) {
-              const obj = { application: type.application, showsPromoted: tmpResult.hasFlag(type.flags, items(closure_1_3[85]).ApplicationCollectionItemFlags.PROMOTED) };
-              tmpResult = items(closure_1_3[84]);
-              return obj;
-            }
-          });
-          const found1 = mapped1.filter(tmp(tmp2[67]).isNotNullish);
-          let tmpResult = tmp(tmp2[84]);
-          if (tmpResult.hasFlag(title.flags, context(handleViewableItemsChanged[86]).ApplicationCollectionFlags.APPENDS_REMAINING_ACTIVITIES)) {
-            const item = memo6.forEach((application) => {
-              const obj = { application: application.application, showsPromoted: false };
-              found1.push(obj);
-            });
-          }
-          const push = items.push;
-          items = [];
-          HermesBuiltin.arraySpread(items, callback8(found1, title.title, title.title, undefined, sectionOverallPosition), 0);
-          HermesBuiltin.apply(push, items, items);
-        }
-      });
-    }
-    return items;
-  }, items16);
-  const items17 = [entrypoint, memo7, memo4];
-  memo8 = obj3.useMemo(() => {
-    const obj = context(handleViewableItemsChanged[19]);
-    const tmp2 = context;
-    const tmp3 = handleViewableItemsChanged;
-    if (obj.appLauncherShowsRecommendations(entrypoint)) {
-      const items = [];
-      items[HermesBuiltin.arraySpread(items, memo7, 0)] = { type: tmp2(tmp3[45]).AppLauncherHomeListItemType.LEARN_MORE };
-      const obj2 = { type: tmp2(tmp3[45]).AppLauncherHomeListItemType.LEARN_MORE };
-      return items;
-    } else {
-      const items1 = [];
-      HermesBuiltin.arraySpread(items1, memo4, 0);
-      return items1;
-    }
-  }, items17);
-  const items18 = [context, entrypoint, navigation, sectionDescriptors];
-  callback3 = obj3.useCallback((application) => {
+  const tmp15 = closure_38({ context, entrypoint });
+  const list = tmp15.list;
+  const frecencyCommands = tmp15.frecencyCommands;
+  const frecencyUsedAppList = tmp15.frecencyUsedAppList;
+  const sectionDescriptors = tmp15.sectionDescriptors;
+  const inThisServerItems = tmp15.inThisServerItems;
+  const items4 = [context, entrypoint, navigation, sectionDescriptors];
+  ({ loading, showsEmptyState, showNoPermsState } = tmp15);
+  const callback3 = height.useCallback((application) => {
     application = application.application;
     const sectionName = application.sectionName;
     const obj = AppLauncherUtils;
@@ -1143,11 +7964,11 @@ export default function AppLauncherHomeScreen(route) {
     const tmpResult = AppLauncherNativeUtils;
     const obj2 = { location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, application, navigation, context, installOnDemand: !tmp4, sectionName, entrypoint };
     const result = tmpResult.handleApplicationSelected(obj2);
-  }, items18);
-  const tmpResult13 = tmp(tmp2[44]);
-  clickOnHomeActivityOpensAppDetails = tmpResult13.useClickOnHomeActivityOpensAppDetails();
-  const items19 = [clickOnHomeActivityOpensAppDetails, context, entrypoint, tmp6, tmp10, memo8.length, navigation, onActivityItemSelected, callback2, callback1, callback3, tmp8, tmp7.sectionHeader, width];
-  const callback4 = obj3.useCallback((item) => {
+  }, items4);
+  const obj4 = context(handleViewableItemsChanged[50]);
+  const clickOnHomeActivityOpensAppDetails = obj4.useClickOnHomeActivityOpensAppDetails();
+  const items5 = [clickOnHomeActivityOpensAppDetails, context, entrypoint, tmp6, tmp10, list.length, navigation, onActivityItemSelected, callback2, callback1, callback3, tmp8, tmp7.sectionHeader, width];
+  const callback4 = height.useCallback((item) => {
     let obj28;
     let obj5;
     let tmp31;
@@ -1156,22 +7977,22 @@ export default function AppLauncherHomeScreen(route) {
     const type = item.type;
     let tmp = context;
     let tmp2 = handleViewableItemsChanged;
-    if (context(handleViewableItemsChanged[45]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
-      let obj2 = { isFirstRow: 0 === index, isLastRow: index === memo8.length - 1, style: obj5 };
+    if (context(handleViewableItemsChanged[48]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+      let obj2 = { isFirstRow: 0 === index, isLastRow: index === list.length - 1, style: obj5 };
       obj5 = { height };
-      return memo(initialSearchQuery(tmp2[46]), obj2);
-    } else if (tmp(tmp2[45]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+      return inThisServerItems(initialSearchQuery(tmp2[51]), obj2);
+    } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
       const items = [closure_5.sectionHeader, ];
       let obj7 = null;
-      const Text = tmp(tmp2[16]).Text;
-      const tmp38 = memo;
+      const Text = tmp(tmp2[18]).Text;
+      const tmp38 = inThisServerItems;
       if (0 !== index) {
         obj7 = { marginTop: 24 };
       }
       const obj11 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: items, children: item.section };
       items[1] = obj7;
       return tmp38(Text, obj11);
-    } else if (tmp(tmp2[45]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+    } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
       const obj12 = {
         section: item.section,
         onPress(shelfData) {
@@ -1182,11 +8003,11 @@ export default function AppLauncherHomeScreen(route) {
         isLastRow: null
       };
       ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
-      return memo(pinnedSearchBarBottomBorder, obj12, item.section.application.id);
-    } else if (tmp(tmp2[45]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+      return inThisServerItems(ref1, obj12, item.section.application.id);
+    } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
       const obj13 = {
         context: item,
-        sectionName: tmp(tmp2[42]).AppLauncherSectionName.ACTIVITIES,
+        sectionName: tmp(tmp2[44]).AppLauncherSectionName.ACTIVITIES,
         onPress(shelfData) {
             let tmp2;
             const obj = { shelfData, sectionName: item.sectionName, navigates: tmp2 };
@@ -1206,14 +8027,14 @@ export default function AppLauncherHomeScreen(route) {
         containerWidth: width
       };
       tmp31 = !clickOnHomeActivityOpensAppDetails;
-      const tmp27 = memo;
-      const tmp28 = ref1;
+      const tmp27 = inThisServerItems;
+      const tmp28 = c31;
       if (tmp31) {
-        tmp31 = entrypoint === tmp(tmp2[42]).AppLauncherEntrypoint.VOICE;
+        tmp31 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
       }
       ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
       return tmp27(tmp28, obj13, item.shelfItem1.application.id);
-    } else if (tmp(tmp2[45]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+    } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
       const obj14 = {
         context: item,
         sectionName: item.sectionName,
@@ -1227,8 +8048,8 @@ export default function AppLauncherHomeScreen(route) {
         containerWidth: width
       };
       ({ items: obj8.items, isLastTuple: obj8.isLastTuple } = item);
-      return memo(c32, obj14);
-    } else if (tmp(tmp2[45]).AppLauncherHomeListItemType.APP === type) {
+      return inThisServerItems(stateFromStores, obj14);
+    } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.APP === type) {
       const obj27 = {
         section: item.section,
         onPress() {
@@ -1240,11 +8061,11 @@ export default function AppLauncherHomeScreen(route) {
       };
       ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
       obj28 = { height };
-      return memo(closure_28, obj27, item.section.id);
-    } else if (tmp(tmp2[45]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+      return inThisServerItems(pinnedSearchBarBottomBorder, obj27, item.section.id);
+    } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
       const obj29 = { index, children: item.section };
-      return memo(trackAppLauncherHomeItemImpression, obj29);
-    } else if (tmp(tmp2[45]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+      return inThisServerItems(callback8, obj29);
+    } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
       const obj30 = {
         application: item.item.application,
         isFirst: null,
@@ -1259,8 +8080,8 @@ export default function AppLauncherHomeScreen(route) {
       };
       ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
       ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
-      return memo(initialSearchQuery(tmp2[47]), obj30);
-    } else if (tmp(tmp2[45]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+      return inThisServerItems(initialSearchQuery(tmp2[52]), obj30);
+    } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
       const obj31 = {
         application: null,
         isFirstRow: null,
@@ -1272,8 +8093,8 @@ export default function AppLauncherHomeScreen(route) {
         showsPromoted: item.showsPromoted
       };
       ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
-      return memo(initialSearchQuery(tmp2[48]), obj31, item.application.id);
-    } else if (tmp(tmp2[45]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+      return inThisServerItems(initialSearchQuery(tmp2[53]), obj31, item.application.id);
+    } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.VIEW_ALL === type) {
       const obj32 = {
         title: item.title,
         onPress() {
@@ -1290,7 +8111,7 @@ export default function AppLauncherHomeScreen(route) {
               sectionItemType: FrecencySection.SectionItemType.APPS,
               commands: [],
               sectionDescriptors: mapped.map((item) => {
-                const obj = item(closure_1_3[51]);
+                const obj = item(closure_1_3[49]);
                 return obj.getApplicationCommandSection(item);
               }),
               title: item.title,
@@ -1299,78 +8120,78 @@ export default function AppLauncherHomeScreen(route) {
             const result = obj.handleViewAllSelected(obj2);
           }
       };
-      return memo(initialSearchQuery(tmp2[49]), obj32);
-    } else if (tmp(tmp2[45]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
-      return memo(callback6, {});
-    } else if (tmp(tmp2[45]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+      return inThisServerItems(initialSearchQuery(tmp2[54]), obj32);
+    } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+      return inThisServerItems(trackAppLauncherHomeItemImpression, {});
+    } else if (tmp(tmp2[48]).AppLauncherHomeListItemType.LEARN_MORE === type) {
       let obj = { visible: closure_4.valueOf() };
-      const tmp6 = initialSearchQuery(tmp2[52]);
-      return memo(tmp6, obj);
+      const tmp6 = initialSearchQuery(tmp2[55]);
+      return inThisServerItems(tmp6, obj);
     } else {
       return null;
     }
-  }, items19);
-  obj3.useRef(null);
-  [tmp52, c23] = obj3.useState(false);
-  const items20 = [entrypoint];
-  _slicedToArray(obj3.useState(false), 2);
-  memo9 = obj3.useMemo(() => {
+  }, items5);
+  height.useRef(null);
+  [tmp22, c23] = _slicedToArray(height.useState(false), 2);
+  const items6 = [entrypoint];
+  const tmp21 = _slicedToArray(height.useState(false), 2);
+  const memo = height.useMemo(() => {
     let source;
     let obj = _modDef12;
     return obj.debounce((query) => {
-      const obj = context(handleViewableItemsChanged[54]);
+      const obj = context(handleViewableItemsChanged[57]);
       const obj2 = { query, source };
       obj.trackWithMetadata(frecencyCommands.APP_LAUNCHER_SEARCH_QUERY_TYPED, obj2);
     }, 400, { leading: false, trailing: true });
-  }, items20);
-  ref = obj3.useRef(null);
-  const effect3 = obj3.useEffect(() => () => {
-    const current = ref.current;
+  }, items6);
+  ref = height.useRef(null);
+  const effect1 = height.useEffect(() => () => {
+    current = ref.current;
     if (current != null) {
       current.cancel();
     }
   }, []);
-  const items21 = [memo9];
-  callback5 = obj3.useCallback((arg0) => {
+  const items7 = [memo];
+  callback5 = height.useCallback((arg0) => {
     let closure_0 = arg0;
     _undefined(0 !== arg0.length);
-    let current = ref.current;
+    current = ref.current;
     const tmp2 = ref;
     if (current != null) {
       current.cancel();
     }
-    const obj = context(handleViewableItemsChanged[55]);
+    const obj = context(handleViewableItemsChanged[58]);
     tmp2.current = obj.runAfterInteractions(() => {
-      const current = ref.current;
+      current = ref.current;
       if (current != null) {
         current.setQuery(closure_0);
       }
     }, 100);
-    memo9(arg0);
-  }, items21);
-  ref2 = obj3.useRef(callback5);
-  const items22 = [callback5];
-  const effect4 = obj3.useEffect(() => {
+    memo(arg0);
+  }, items7);
+  const ref2 = height.useRef(callback5);
+  const items8 = [callback5];
+  const effect2 = height.useEffect(() => {
     ref2.current = callback5;
-  }, items22);
-  const items23 = [entrypoint];
-  closure_28 = obj3.useCallback(() => {
+  }, items8);
+  const items9 = [entrypoint];
+  closure_28 = height.useCallback(() => {
     const obj = AppAnalyticsUtils;
     const obj2 = { source: entrypoint };
     obj.trackWithMetadata(frecencyCommands.APP_LAUNCHER_SEARCH_FOCUSED, obj2);
-  }, items23);
+  }, items9);
+  let tmp27 = context(handleViewableItemsChanged[59]);
   let str = "home-scroller";
-  const usePinnedSearchBarBottomBorder = tmp(tmp2[56]).usePinnedSearchBarBottomBorder;
-  tmp(tmp2[56]);
-  if (tmp52) {
+  const usePinnedSearchBarBottomBorder = tmp27.usePinnedSearchBarBottomBorder;
+  if (tmp22) {
     str = "search-scroller";
   }
   pinnedSearchBarBottomBorder = usePinnedSearchBarBottomBorder({ key: str, triggerScrollHeight: 5 });
   ref1 = obj3.useRef(null);
-  const items24 = [initialSearchQuery];
+  const items10 = [initialSearchQuery];
   const layoutEffect = obj3.useLayoutEffect(() => {
     if (null != initialSearchQuery) {
-      const current = ref1.current;
+      current = ref1.current;
       const tmp2 = ref1;
       if (current != null) {
         current.setText(initialSearchQuery);
@@ -1381,28 +8202,28 @@ export default function AppLauncherHomeScreen(route) {
       }
       ref2.current(initialSearchQuery);
     }
-  }, items24);
-  let sum = bottom + callback2;
+  }, items10);
+  const sum = bottom + callback2;
   c31 = sum;
-  const tmpResult15 = tmp(tmp2[57]);
-  const bottomSheetFlashListBottomViewabilityInset = tmpResult15.useBottomSheetFlashListBottomViewabilityInset();
+  let tmpResult = tmp(tmp2[60]);
+  const bottomSheetFlashListBottomViewabilityInset = tmpResult.useBottomSheetFlashListBottomViewabilityInset();
   ({ flashListRef, bottomVisibilityInsetRef } = bottomSheetFlashListBottomViewabilityInset);
-  let obj5 = { type: tmp(tmp2[59]).ImpressionTypes.VIEW, name: tmp(tmp2[59]).ImpressionNames.APP_LAUNCHER_HOME_ACTIVITY_ITEM };
+  let obj5 = { type: tmp(tmp2[61]).ImpressionTypes.VIEW, name: tmp(tmp2[61]).ImpressionNames.APP_LAUNCHER_HOME_ACTIVITY_ITEM };
   const obj6 = { disableTrack: !tmp5 };
-  const items25 = [tmp5];
-  const tmp4Result5 = tmp4(tmp2[58]);
-  tmp4Result5(obj5, obj6, items25);
-  [tmp66, c32] = _slicedToArray(obj3.useState(false), 2);
+  const items11 = [tmp5];
+  const tmp4Result = tmp4(tmp2[62]);
+  tmp4Result(obj5, obj6, items11);
+  [tmp36, c32] = _slicedToArray(obj3.useState(false), 2);
   _slicedToArray(obj3.useState(false), 2);
-  const effect5 = obj3.useEffect(() => {
+  const effect3 = obj3.useEffect(() => {
     _undefined3(true);
   }, []);
-  const items26 = [callback1];
-  const tmpResult16 = tmp(tmp2[28]);
-  stateFromStores3 = tmpResult16.useStateFromStores(items26, () => callback1.getTriggeredOnboardingContentMetadata().willShowGlobalSearchOnboarding);
-  const items27 = [stateFromStores3];
+  const items12 = [callback1];
+  const tmpResult4 = tmp(tmp2[30]);
+  stateFromStores = tmpResult4.useStateFromStores(items12, () => callback1.getTriggeredOnboardingContentMetadata().willShowGlobalSearchOnboarding);
+  const items13 = [stateFromStores];
   callback6 = obj3.useCallback((arg0) => {
-    const tmp2 = stateFromStores3;
+    const tmp2 = stateFromStores;
     if (tmp2) {
       const obj2 = { dismissAction: tmp };
       const obj = DismissibleContentUnsafeUtils;
@@ -1413,43 +8234,43 @@ export default function AppLauncherHomeScreen(route) {
       const merged = Object.assign(AppLauncherOnboardingPersistedStore.getTriggeredOnboardingContentMetadata());
       const result1 = setTriggeredOnboardingContentMetadata(obj3);
     }
-  }, items27);
-  const tmpResult17 = tmp(tmp2[63]);
-  trackAppLauncherHomeItemImpression = tmpResult17.useTrackAppLauncherHomeItemImpression().trackAppLauncherHomeItemImpression;
-  const items28 = [sum, tmp7.list];
-  const items29 = [sum];
-  const memo10 = obj3.useMemo(() => {
+  }, items13);
+  const tmpResult5 = tmp(tmp2[66]);
+  trackAppLauncherHomeItemImpression = tmpResult5.useTrackAppLauncherHomeItemImpression().trackAppLauncherHomeItemImpression;
+  const items14 = [sum, tmp7.list];
+  const items15 = [sum];
+  const memo1 = obj3.useMemo(() => {
     const obj = { paddingBottom: _undefined2 };
     const merged = Object.assign(closure_5.list);
     return obj;
-  }, items28);
-  const memo11 = obj3.useMemo(() => ({ bottom: _undefined2 }), items29);
-  const items30 = [pinnedSearchBarBottomBorder];
+  }, items14);
+  const memo2 = obj3.useMemo(() => ({ bottom: _undefined2 }), items15);
+  const items16 = [pinnedSearchBarBottomBorder];
   const callback7 = obj3.useCallback((type) => type.type, []);
   callback8 = obj3.useCallback((arg0) => {
     pinnedSearchBarBottomBorder.scrollHandler(arg0);
-  }, items30);
-  const items31 = [callback8];
+  }, items16);
+  const items17 = [callback8];
   const callback9 = obj3.useCallback((nativeEvent) => {
     nativeEvent = nativeEvent.nativeEvent;
     size = { width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height };
     callback8(size);
-  }, items31);
-  const tmpResult18 = tmp(tmp2[64]);
-  const appLauncherFlashListProps = tmpResult18.useAppLauncherFlashListProps({ onScrollHandler: callback8 });
-  const items32 = [handleViewableItemsChanged, trackAppLauncherHomeItemImpression];
-  let obj7 = { style: tmp7.container, children: items33 };
+  }, items17);
+  const tmpResult6 = tmp(tmp2[67]);
+  const appLauncherFlashListProps = tmpResult6.useAppLauncherFlashListProps({ onScrollHandler: callback8 });
+  const items18 = [handleViewableItemsChanged, trackAppLauncherHomeItemImpression];
+  let obj7 = { style: tmp7.container, children: items19 };
   const obj8 = { style: tmp7.topBackgroundFill };
-  const memo12 = obj3.useMemo(() => {
+  const memo3 = obj3.useMemo(() => {
     const items = [, ];
     const obj = { viewabilityConfig: {}, onViewableItemsChanged: handleViewableItemsChanged };
     items[0] = obj;
     const obj2 = { viewabilityConfig: FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG, onViewableItemsChanged: trackAppLauncherHomeItemImpression };
     items[1] = obj2;
     return items;
-  }, items32);
-  items33 = [memo(height, obj8), , , ];
-  const obj9 = { style: tmp7.searchBarContainer, children: memo(SearchField, obj10) };
+  }, items18);
+  items19 = [inThisServerItems(height, obj8), , , ];
+  const obj9 = { style: tmp7.searchBarContainer, children: inThisServerItems(SearchField, obj10) };
   obj10 = {
     ref: ref1,
     placeholder: stringResult,
@@ -1462,31 +8283,31 @@ export default function AppLauncherHomeScreen(route) {
       callback6(obj);
     }
   };
-  SearchField = tmp(tmp2[65]).SearchField;
-  if (entrypoint === tmp(tmp2[42]).AppLauncherEntrypoint.VOICE) {
-    let intl2 = tmp(tmp2[17]).intl;
-    stringResult = intl2.string(tmp(tmp2[17]).t["pw+r5b"]);
+  SearchField = tmp(tmp2[68]).SearchField;
+  if (entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE) {
+    let intl2 = tmp(tmp2[19]).intl;
+    stringResult = intl2.string(tmp(tmp2[19]).t["pw+r5b"]);
   } else {
-    let intl = tmp(tmp2[17]).intl;
-    stringResult = intl.string(tmp(tmp2[17]).t.ziyFv2);
+    let intl = tmp(tmp2[19]).intl;
+    stringResult = intl.string(tmp(tmp2[19]).t.ziyFv2);
   }
-  let obj11 = { children: items34 };
-  items34 = [memo(height, obj9), pinnedSearchBarBottomBorder.bottomBorderComponent];
-  items33[1] = callback3(clickOnHomeActivityOpensAppDetails, obj11);
-  if (tmp52) {
+  let obj11 = { children: items20 };
+  items20 = [inThisServerItems(height, obj9), pinnedSearchBarBottomBorder.bottomBorderComponent];
+  items19[1] = callback3(clickOnHomeActivityOpensAppDetails, obj11);
+  if (tmp22) {
     let obj12 = { ref, context, onScroll: callback9, onSend: callback, entrypoint };
-    tmp79Result = tmp79(tmp(tmp2[66]).SearchLocalAndGlobalContentView, obj12);
+    tmp49Result = tmp49(tmp(tmp2[69]).SearchLocalAndGlobalContentView, obj12);
   } else {
     let obj13 = {
       context,
       sectionDescriptors,
       commands: frecencyCommands,
       loading,
-      apps: memo1,
+      apps: frecencyUsedAppList,
       onAppSelected: callback3,
-      onCommandSelected(command, section) {
+      onCommandSelected(command, found) {
           const obj = AppLauncherNativeUtils;
-          const obj2 = { location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, context, command, section, sectionDescriptors, query: "", navigation, sectionName: AppLauncherTypes.AppLauncherSectionName.RECENT_COMMANDS, entrypoint };
+          const obj2 = { location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, context, command, section: found, sectionDescriptors, query: "", navigation, sectionName: AppLauncherTypes.AppLauncherSectionName.RECENT_COMMANDS, entrypoint };
           const result = obj.handleApplicationCommandSelected(obj2);
         },
       onViewAllSelected(sectionItemType) {
@@ -1500,7 +8321,7 @@ export default function AppLauncherHomeScreen(route) {
           if (sectionItemType === FrecencySection.SectionItemType.COMMANDS) {
             str = "recent_commands_view_more";
           }
-          mapped = memo1.map((section) => {
+          mapped = frecencyUsedAppList.map((section) => {
             section = section.section;
             let application;
             if (section != null) {
@@ -1509,27 +8330,27 @@ export default function AppLauncherHomeScreen(route) {
             return application;
           });
           if (entrypoint === AppLauncherTypes.AppLauncherEntrypoint.VOICE) {
-            const intl3 = tmp(1115).intl;
-            stringResult = intl3.string(tmp(1115).t["2pFD8L"]);
+            const intl3 = tmp(1127).intl;
+            stringResult = intl3.string(tmp(1127).t["2pFD8L"]);
           } else if (sectionItemType === FrecencySection.SectionItemType.COMMANDS) {
-            const intl2 = tmp(1115).intl;
-            stringResult = intl2.string(tmp(1115).t.V3Sq95);
+            const intl2 = tmp(1127).intl;
+            stringResult = intl2.string(tmp(1127).t.V3Sq95);
           } else {
-            const intl = tmp(1115).intl;
-            stringResult = intl.string(tmp(1115).t.SCViVk);
+            const intl = tmp(1127).intl;
+            stringResult = intl.string(tmp(1127).t.SCViVk);
           }
           const result = handleViewAllSelected(obj);
         }
     };
-    const items35 = [, , , ];
-    const tmp4Result6 = tmp4(tmp2[64]);
-    items35[0] = memo(tmp4(tmp2[50]), obj13);
+    const items21 = [, , , ];
+    const tmp4Result2 = tmp4(tmp2[67]);
+    items21[0] = inThisServerItems(tmp4(tmp2[46]), obj13);
     let obj14 = {
-      items: memo,
+      items: inThisServerItems,
       onAppSelected: callback3,
       onViewAllSelected() {
           let intl;
-          const found = memo.find((type) => type.type === context(handleViewableItemsChanged[45]).AppLauncherHomeListItemType.VIEW_ALL);
+          const found = inThisServerItems.find((type) => type.type === context(handleViewableItemsChanged[48]).AppLauncherHomeListItemType.VIEW_ALL);
           let mapped;
           if (found != null) {
             const applications = found.applications;
@@ -1547,7 +8368,7 @@ export default function AppLauncherHomeScreen(route) {
               sectionItemType: FrecencySection.SectionItemType.APPS,
               commands: [],
               sectionDescriptors: mapped.map((item) => {
-                  const obj = context(handleViewableItemsChanged[51]);
+                  const obj = context(handleViewableItemsChanged[49]);
                   return obj.getApplicationCommandSection(item);
                 }),
               title: intl.string(intl4.t.oJyzCu)
@@ -1559,35 +8380,632 @@ export default function AppLauncherHomeScreen(route) {
           }
         }
     };
-    items35[1] = memo(tmp4(tmp2[68]), obj14);
-    let tmp79Result4 = null;
-    if (tmp41) {
-      tmp79Result4 = null;
-      if (tmp66) {
-        tmp79Result4 = tmp79(tmp4(tmp2[69]), {});
+    items21[1] = inThisServerItems(tmp4(tmp2[70]), obj14);
+    let tmp49Result4 = null;
+    if (showsEmptyState) {
+      tmp49Result4 = null;
+      if (tmp36) {
+        tmp49Result4 = tmp49(tmp4(tmp2[71]), {});
       }
     }
-    items35[2] = tmp79Result4;
-    let tmp79Result5 = null;
-    if (memo2) {
-      tmp79Result5 = tmp79(tmp4(tmp2[70]), {});
+    items21[2] = tmp49Result4;
+    let tmp49Result5 = null;
+    if (showNoPermsState) {
+      tmp49Result5 = tmp49(tmp4(tmp2[72]), {});
     }
-    const obj15 = { ListHeaderComponent: callback3(clickOnHomeActivityOpensAppDetails, obj16), contentContainerStyle: memo10, scrollIndicatorInsets: memo11, renderItem: callback4, getItemType: callback7, data: memo8, preserveScrollMomentum: true, automaticallyAdjustsScrollIndicatorInsets: false, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "always", showsVerticalScrollIndicator: false, viewabilityConfigCallbackPairs: memo12, bottomViewabilityInsetRef: bottomVisibilityInsetRef, ref: flashListRef, onScroll: callback9, animatedOnScroll: null, simultaneousHandlers: null, animatedProps: null };
-    obj16 = { children: items35 };
-    items35[3] = tmp79Result5;
-    if (entrypoint === tmp(tmp2[42]).AppLauncherEntrypoint.VOICE) {
+    const obj15 = { ListHeaderComponent: callback3(clickOnHomeActivityOpensAppDetails, obj16), contentContainerStyle: memo1, scrollIndicatorInsets: memo2, renderItem: callback4, getItemType: callback7, data: list, preserveScrollMomentum: true, automaticallyAdjustsScrollIndicatorInsets: false, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "always", showsVerticalScrollIndicator: false, viewabilityConfigCallbackPairs: memo3, bottomViewabilityInsetRef: bottomVisibilityInsetRef, ref: flashListRef, onScroll: callback9, animatedOnScroll: null, simultaneousHandlers: null, animatedProps: null };
+    obj16 = { children: items21 };
+    items21[3] = tmp49Result5;
+    if (entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE) {
       flashListRef = appLauncherFlashListProps.scrollerRef;
     }
-    ({ onScroll: obj23.animatedOnScroll, gestureRef: obj23.simultaneousHandlers, animatedProps: obj23.animatedProps } = appLauncherFlashListProps);
-    tmp79Result = tmp79(tmp4Result6, obj15);
+    ({ onScroll: obj18.animatedOnScroll, gestureRef: obj18.simultaneousHandlers, animatedProps: obj18.animatedProps } = appLauncherFlashListProps);
+    tmp49Result = tmp49(tmp4Result2, obj15);
   }
-  items33[2] = tmp79Result;
-  let tmp79Result6 = entrypoint === tmp(tmp2[42]).AppLauncherEntrypoint.TEXT;
-  if (tmp79Result6) {
-    const obj17 = { windowDimensions: size, visible: stateFromStores3, markAsDismissed: callback6 };
-    tmp79Result6 = tmp79(tmp4(tmp2[71]), obj17);
+  items19[2] = tmp49Result;
+  let tmp49Result6 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.TEXT;
+  if (tmp49Result6) {
+    const obj17 = { windowDimensions: size, visible: stateFromStores, markAsDismissed: callback6 };
+    tmp49Result6 = tmp49(tmp4(tmp2[73]), obj17);
   }
-  items33[3] = tmp79Result6;
+  items19[3] = tmp49Result6;
   return callback3(height, obj7);
-};
-export { BaseAppRow };
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let PREVIEW;
+  let tmp4;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [DevSettingsStore];
+    const fn = function i() {
+      return DevSettingsStore.get("only_show_preview_app_collections");
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  const obj3 = AllowNonStaffToPreviewAppCollectionsExperimentDefault;
+  const enabled = obj3.getConfig({ location: "App Launcher Home (Mobile)" }).enabled;
+  const ApplicationCollectionActiveState = tmp(11436).ApplicationCollectionActiveState;
+  if (stateFromStores) {
+    PREVIEW = ApplicationCollectionActiveState.PREVIEW;
+  } else {
+    PREVIEW = enabled ? ApplicationCollectionActiveState.NON_STAFF_PREVIEW : ApplicationCollectionActiveState.ACTIVE;
+  }
+  return PREVIEW;
+}) : (() => {
+  let PREVIEW;
+  const items = [DevSettingsStore];
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => DevSettingsStore.get("only_show_preview_app_collections"));
+  const obj2 = AllowNonStaffToPreviewAppCollectionsExperimentDefault;
+  const enabled = obj2.getConfig({ location: "App Launcher Home (Mobile)" }).enabled;
+  const ApplicationCollectionActiveState = ApplicationCollectionActiveState2.ApplicationCollectionActiveState;
+  if (stateFromStores) {
+    PREVIEW = ApplicationCollectionActiveState.PREVIEW;
+  } else {
+    PREVIEW = enabled ? ApplicationCollectionActiveState.NON_STAFF_PREVIEW : ApplicationCollectionActiveState.ACTIVE;
+  }
+  return PREVIEW;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
+  let activeState;
+  let frecencyCommands;
+  let frecentApps;
+  let loading;
+  let sectionDescriptors;
+  let tmp7;
+  let tmp = context;
+  let tmp2 = frecentApps;
+  let obj = context(frecentApps[17]);
+  const cResult = obj.c(91);
+  context = context.context;
+  const entrypoint = context.entrypoint;
+  let obj2 = context(frecentApps[76]);
+  const fetchDeveloperActivityShelfItems = obj2.useFetchDeveloperActivityShelfItems();
+  let num = 2;
+  if (entrypoint(frecentApps[37])()) {
+    num = 4;
+  }
+  let guild_id;
+  if ("channel" === context.type) {
+    guild_id = context.channel.guild_id;
+  }
+  if (cResult[0] !== guild_id) {
+    let obj3 = { guildId: guild_id };
+    cResult[0] = guild_id;
+    let num3 = 1;
+    cResult[1] = obj3;
+    tmp7 = obj3;
+  } else {
+    tmp7 = cResult[1];
+  }
+  entrypoint(tmp2[77])(tmp7);
+  const tmp9 = entrypoint === tmp(tmp2[44]).AppLauncherEntrypoint.VOICE;
+  if (cResult[2] === context) {
+    let tmp10;
+    let tmp12;
+    if (cResult[3] === tmp9) {
+      tmp10 = cResult[4];
+    }
+    const tmp11 = entrypoint(tmp2[78])(tmp10);
+    ({ frecencyCommands, frecentApps } = tmp11);
+    ({ sectionDescriptors, loading } = tmp11);
+    const TEXT = tmp(tmp2[44]).AppLauncherEntrypoint.TEXT;
+    if (cResult[5] !== context) {
+      const obj4 = { context };
+      cResult[5] = context;
+      cResult[6] = obj4;
+      tmp12 = obj4;
+    } else {
+      tmp12 = cResult[6];
+    }
+    let appsInThisServer = tmp5(tmp2[79])(tmp12).appsInThisServer;
+    if (entrypoint !== TEXT) {
+      appsInThisServer = closure_24;
+    }
+    if (cResult[7] !== appsInThisServer) {
+      let tmp17;
+      const intl = tmp(tmp2[19]).intl;
+      const stringResult = intl.string(tmp(tmp2[19]).t.oJyzCu);
+      const _Symbol = Symbol;
+      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+        class O {
+          constructor(application) {
+            return { application: application.application };
+          }
+        }
+        cResult[9] = O;
+        tmp17 = O;
+      } else {
+        class O {
+          constructor(application) {
+            return { application: application.application };
+          }
+        }
+      }
+      let mapped = appsInThisServer.map(tmp17);
+      let tmp20 = mapped;
+      let tmp21 = stringResult;
+      let tmp22 = getRecommendationItemsWithViewAll(mapped, "in_this_server", stringResult, tmp(tmp2[70]).IN_THIS_SERVER_ITEM_MAX);
+      cResult[7] = appsInThisServer;
+      cResult[8] = tmp22;
+    } else {
+      class O {
+        constructor(application) {
+          return { application: application.application };
+        }
+      }
+    }
+    if (cResult[10] !== frecentApps) {
+      class O {
+        constructor(application) {
+          return { application: application.application };
+        }
+      }
+      let mapped1 = frecentApps.map(tmp24);
+      cResult[10] = frecentApps;
+      cResult[11] = mapped1;
+    } else {
+      class O {
+        constructor(application) {
+          return { application: application.application };
+        }
+      }
+    }
+    if (cResult[14] === entrypoint === TEXT) {
+      class O {
+        constructor(application) {
+          return { application: application.application };
+        }
+      }
+      let tmpResult = tmp(tmp2[80]);
+      const useIsActivitiesInTextEnabled = tmpResult.useIsActivitiesInTextEnabled;
+      if ("channel" === context.type) {
+        class O {
+          constructor(application) {
+            return { application: application.application };
+          }
+        }
+      }
+      const isActivitiesInTextEnabled = useIsActivitiesInTextEnabled(tmp29);
+      if (cResult[17] === context.channel) {
+        class O {
+          constructor(application) {
+            return { application: application.application };
+          }
+        }
+      }
+      const fn = function k() {
+        const tmp = isActivitiesInTextEnabled || entrypoint === AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+        if (tmp) {
+          let guild_id;
+          const fetchShelf = EmbeddedActivitiesActionCreators.fetchShelf;
+          EmbeddedActivitiesActionCreators;
+          if ("channel" === context.type) {
+            guild_id = context.channel.guild_id;
+          }
+          const obj = { guildId: guild_id, force: true };
+          const shelf = fetchShelf(obj);
+        }
+      };
+      cResult[17] = context.channel;
+      cResult[18] = context.type;
+      cResult[19] = entrypoint;
+      cResult[20] = isActivitiesInTextEnabled;
+      cResult[21] = fn;
+    }
+    if (entrypoint === TEXT) {
+      class O {
+        constructor(application) {
+          return { application: application.application };
+        }
+      }
+    }
+    cResult[14] = entrypoint === TEXT;
+    cResult[15] = frecentApps;
+    cResult[16] = entrypoint !== TEXT;
+  }
+  const obj5 = { context, onlyActivityApps: tmp9 };
+  cResult[2] = context;
+  cResult[3] = tmp9;
+  cResult[4] = obj5;
+  tmp10 = obj5;
+}) : ((context) => {
+  let closure_3;
+  let frecencyCommands;
+  let items12;
+  let loading;
+  let sectionDescriptors;
+  context = context.context;
+  const entrypoint = context.entrypoint;
+  dependencyMap = undefined;
+  let closure_4;
+  let frecentApps;
+  let closure_6;
+  let appsInThisServer;
+  let isActivitiesInTextEnabled;
+  let activeState;
+  let stateFromStores;
+  let memo3;
+  let memo4;
+  let result;
+  let result2;
+  let closure_15;
+  let memo6;
+  let memo7;
+  let tmp = context;
+  let tmp2 = dependencyMap;
+  let obj = context(11486);
+  const fetchDeveloperActivityShelfItems = obj.useFetchDeveloperActivityShelfItems();
+  let tmp4 = entrypoint;
+  let num = 2;
+  if (entrypoint(6361)()) {
+    num = 4;
+  }
+  let guild_id;
+  const tmp4Result = tmp4(11397);
+  if ("channel" === context.type) {
+    guild_id = context.channel.guild_id;
+  }
+  const tmp4ResultResult = tmp4Result({ guildId: guild_id });
+  dependencyMap = tmp4ResultResult;
+  let tmp7 = entrypoint === tmp(8707).AppLauncherEntrypoint.VOICE;
+  closure_4 = tmp7;
+  const tmp8 = tmp4(11487)({ context, onlyActivityApps: tmp7 });
+  frecentApps = tmp8.frecentApps;
+  ({ frecencyCommands, sectionDescriptors, loading } = tmp8);
+  const tmp9 = entrypoint === tmp(8707).AppLauncherEntrypoint.TEXT;
+  closure_6 = tmp9;
+  appsInThisServer = tmp4(11490)({ context }).appsInThisServer;
+  let obj2 = frecentApps;
+  let items = [appsInThisServer, tmp9];
+  let items1 = [frecentApps];
+  const memo = frecentApps.useMemo(() => {
+    const arr = closure_6 ? appsInThisServer : ref;
+    const intl = intl4.intl;
+    const stringResult = intl.string(intl4.t.oJyzCu);
+    const mapped = arr.map((application) => ({ application: application.application }));
+    return getRecommendationItemsWithViewAll(mapped, "in_this_server", stringResult, InThisServerSection.IN_THIS_SERVER_ITEM_MAX);
+  }, items);
+  const items2 = [tmp9, frecentApps];
+  const memo1 = frecentApps.useMemo(() => {
+    let length;
+    return frecentApps.map((applicationId, index) => {
+      const obj = { type: context(closure_3[48]).AppLauncherHomeListItemType.APP, applicationId: applicationId.id, section: applicationId, isFirstRow: 0 === index, isLastRow: index === length.length - 1, sectionName: "recents" };
+      return obj;
+    });
+  }, items1);
+  const memo2 = frecentApps.useMemo(() => {
+    let tmp = !closure_6;
+    if (closure_6) {
+      tmp = !frecentApps.some((application) => null != application.application);
+    }
+    return tmp;
+  }, items2);
+  let tmpResult = tmp(8784);
+  let id;
+  const useIsActivitiesInTextEnabled = tmpResult.useIsActivitiesInTextEnabled;
+  if ("channel" === context.type) {
+    id = context.channel.id;
+  }
+  isActivitiesInTextEnabled = useIsActivitiesInTextEnabled(id);
+  const items3 = [isActivitiesInTextEnabled, context, entrypoint];
+  const effect = obj2.useEffect(() => {
+    const tmp = isActivitiesInTextEnabled || entrypoint === AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+    if (tmp) {
+      let guild_id;
+      const fetchShelf = EmbeddedActivitiesActionCreators.fetchShelf;
+      EmbeddedActivitiesActionCreators;
+      if ("channel" === context.type) {
+        guild_id = context.channel.guild_id;
+      }
+      const obj = { guildId: guild_id, force: true };
+      const shelf = fetchShelf(obj);
+    }
+  }, items3);
+  const tmp17 = closure_37();
+  activeState = tmp17;
+  const items4 = [memo3];
+  const tmpResult3 = tmp(504);
+  stateFromStores = tmpResult3.useStateFromStores(items4, () => {
+    const obj = { surface: APP_LAUNCHER_IN_TEXT, activeState };
+    return ApplicationDirectoryCollectionsStore.getCollections(obj);
+  });
+  const items5 = [stateFromStores, tmp7];
+  memo3 = obj2.useMemo(() => {
+    const tmp = closure_4;
+    if (tmp) {
+      const obj = AppLauncherUtils;
+      result = obj.ensureRecommendationSectionsOnlyContainActivities(stateFromStores);
+    } else {
+      result = stateFromStores;
+    }
+    return result;
+  }, items5);
+  const items6 = [tmp17, entrypoint];
+  const effect1 = obj2.useEffect(() => {
+    const obj = AppLauncherUtils;
+    if (obj.appLauncherShowsRecommendations(entrypoint)) {
+      const obj2 = { surface: APP_LAUNCHER_IN_TEXT, activeState };
+      const tmpResult = ApplicationDirectoryActionCreators;
+      const collections = tmpResult.fetchCollections(obj2);
+    }
+  }, items6);
+  const items7 = [entrypoint, tmp4ResultResult];
+  const length = tmp4ResultResult.length;
+  memo4 = obj2.useMemo(() => {
+    let diff;
+    let diff1;
+    let intl;
+    let tmp12;
+    let tmp4;
+    let tmp5;
+    let arr = closure_3;
+    if (0 !== closure_3.length) {
+      const tmp19 = require;
+      if (entrypoint === AppLauncherTypes.AppLauncherEntrypoint.VOICE) {
+        const items = [];
+        let tmp11 = tmp19;
+        num = 0;
+        if (0 < arr.length - 1) {
+          do {
+            let sum = num + 1;
+            let obj = { type: AppLauncherHomeTypes.AppLauncherHomeListItemType.SHELF_ITEM_TUPLE, shelfItem1: tmp4, shelfItem2: tmp5, sectionName: "activities", shelfItem1SectionPosition: num, shelfItem2SectionPosition: sum, sectionOverallPosition: 0, isLastTuple: false };
+            tmp4 = closure_3[num];
+            tmp5 = closure_3[sum];
+            let arr2 = items.push(obj);
+            num = num + 2;
+            tmp11 = require;
+            arr = closure_3;
+            diff = closure_3.length - 1;
+          } while (num < diff);
+        }
+        if (arr.length % 2 === 1) {
+          const obj2 = { type: tmp11(11456).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE, shelfItem1: tmp12, shelfItem2: undefined, sectionName: "activities", shelfItem1SectionPosition: diff1, shelfItem2SectionPosition: undefined, sectionOverallPosition: 0, isLastTuple: false };
+          diff1 = arr.length - 1;
+          tmp12 = arr[arr.length - 1];
+          items.push(obj2);
+        }
+        items[items.length - 1].isLastTuple = true;
+        const obj5 = { type: tmp11(11456).AppLauncherHomeListItemType.SECTION_HEADER, section: intl.string(tmp11(1127).t.aeuOoh), sectionName: "activities", numItems: null, numVisibleItems: null };
+        intl = tmp11(1127).intl;
+        ({ length: obj3.numItems, length: obj3.numVisibleItems } = arr);
+        const items1 = [obj5];
+        HermesBuiltin.arraySpread(items1, items, 1);
+        return items1;
+      }
+    }
+    return [];
+  }, items7);
+  let tmp22 = isActivitiesInTextEnabled(context, true, false);
+  const tmp23 = activeState(true, false);
+  result2 = tmp23;
+  result = tmp22.result;
+  let sections;
+  const useMemo = obj2.useMemo;
+  if (result != null) {
+    sections = result.sections;
+  }
+  const items8 = [sections, ];
+  result2 = tmp23.result;
+  let sections1;
+  if (result2 != null) {
+    sections1 = result2.sections;
+  }
+  items8[1] = sections1;
+  const memo5 = useMemo(() => {
+    const f150714 = (commands) => Object.keys(commands.commands).length > 0;
+    result = result.result;
+    let sections;
+    if (result != null) {
+      sections = result.sections;
+    }
+    if (sections == null) {
+      sections = {};
+    }
+    result2 = result2.result;
+    let sections1;
+    if (result2 != null) {
+      sections1 = result2.sections;
+    }
+    if (sections1 == null) {
+      sections1 = {};
+    }
+    const values = Object.values(sections);
+    let someResult = values.some(f150714);
+    if (!someResult) {
+      const _Object = Object;
+      const values2 = Object.values(sections1);
+      someResult = values2.some(f150714);
+    }
+    return someResult;
+  }, items8);
+  const items9 = [memo4];
+  let channel = null;
+  const tmpResult4 = tmp(504);
+  const stateFromStores1 = tmpResult4.useStateFromStores(items9, () => {
+    let tmp2 = "channel" === context.type;
+    if (tmp2) {
+      const channel = tmp.channel;
+      let isDMResult = channel.isDM();
+      if (!isDMResult) {
+        const channel2 = tmp.channel;
+        isDMResult = channel2.isMultiUserDM();
+      }
+      if (!isDMResult) {
+        isDMResult = PermissionStore.can(memo7.USE_APPLICATION_COMMANDS, tmp.channel);
+      }
+      tmp2 = isDMResult;
+    }
+    return tmp2;
+  });
+  if ("channel" === context.type) {
+    channel = context.channel;
+  }
+  let tmp30 = memo2 && !tmp29;
+  if (tmp30) {
+    let isPrivateResult;
+    if (channel != null) {
+      isPrivateResult = channel.isPrivate();
+    }
+    tmp30 = !isPrivateResult;
+  }
+  if (tmp30) {
+    tmp30 = !tmp7;
+  }
+  let tmp32 = memo2 && tmp29;
+  if (tmp32) {
+    let isPrivateResult1;
+    if (channel != null) {
+      isPrivateResult1 = channel.isPrivate();
+    }
+    tmp32 = !isPrivateResult1;
+  }
+  if (tmp32) {
+    tmp32 = !tmp7;
+  }
+  closure_15 = tmp32;
+  const items10 = [memo3, tmp4ResultResult, tmp32];
+  const tmp34 = 0 === length;
+  memo6 = obj2.useMemo(function() {
+    const items = [];
+    if (closure_15) {
+      return items;
+    } else {
+      const _Set = Set;
+      const self = this;
+      const self2 = this;
+      set = new Set();
+      let item = memo3.forEach((application_directory_collection_items) => {
+        const prop = application_directory_collection_items.application_directory_collection_items;
+        const item = prop.forEach((type) => {
+          if (type.type === items(closure_2_3[82]).ApplicationDirectoryCollectionItemType.APPLICATION) {
+            set.add(type.application.id);
+          }
+        });
+      });
+      const item1 = closure_3.forEach((application) => {
+        if (!set.has(application.application.id)) {
+          items.push(application);
+        }
+      });
+      return items;
+    }
+  }, items10);
+  const items11 = [num, memo6, memo3, tmp32];
+  memo7 = obj2.useMemo(() => {
+    let items = [];
+    const tmp = closure_15;
+    if (tmp) {
+      items = [];
+    } else {
+      let item = memo3.forEach((title, sectionOverallPosition) => {
+        let application_directory_collection_items;
+        let bound;
+        let length2;
+        let sum;
+        let type;
+        ({ type, application_directory_collection_items } = title);
+        if (type === ApplicationDirectoryCollectionType.ApplicationDirectoryCollectionType.BANNER_CARDS) {
+          const _Math = Math;
+          let obj = { type: tmp(11456).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER, section: null, sectionName: null, numItems: application_directory_collection_items.length, numVisibleItems: bound };
+          bound = Math.min(length, tmp(11476).COLLAPSED_LIST_ITEM_MAX);
+          ({ title: obj.section, title: obj.sectionName } = title);
+          items.push(obj);
+          const mapped = application_directory_collection_items.map((type, sectionPosition) => {
+            let tmpResult2;
+            if (type.type === items(closure_1_3[82]).ApplicationDirectoryCollectionItemType.APPLICATION) {
+              let collectionItemAssetUrl;
+              const tmp4 = null != type.id && null != type.image_hash;
+              if (tmp4) {
+                const obj = { itemId: null, hash: null };
+                ({ id: obj2.itemId, image_hash: obj2.hash } = type);
+                const tmpResult = items(closure_1_3[85]);
+                collectionItemAssetUrl = tmpResult.getCollectionItemAssetUrl(obj);
+              }
+              const obj3 = { application: type.application, showsPromoted: tmpResult2.hasFlag(type.flags, items(closure_1_3[87]).ApplicationCollectionItemFlags.PROMOTED), overrideImageUrl: collectionItemAssetUrl, sectionPosition };
+              tmpResult2 = items(closure_1_3[86]);
+              return obj3;
+            }
+          });
+          const found = mapped.filter(tmp(1376).isNotNullish);
+          let num3 = 0;
+          if (0 < found.length) {
+            do {
+              let obj2 = { type: AppLauncherHomeTypes.AppLauncherHomeListItemType.RECOMMENDATION_TUPLE, sectionName: title.title, sectionOverallPosition, items: found.slice(num3, sum), isLastTuple: sum >= found.length };
+              let push2 = items.push;
+              sum = num3 + num;
+              let push2Result = push2(obj2);
+              num3 = sum;
+              length2 = found.length;
+            } while (sum < length2);
+          }
+        } else if (type === ApplicationDirectoryCollectionType.ApplicationDirectoryCollectionType.EXPANDABLE_LIST) {
+          const prop = title.application_directory_collection_items;
+          const mapped1 = prop.map((type) => {
+            let tmpResult;
+            if (type.type === items(closure_1_3[82]).ApplicationDirectoryCollectionItemType.APPLICATION) {
+              const obj = { application: type.application, showsPromoted: tmpResult.hasFlag(type.flags, items(closure_1_3[87]).ApplicationCollectionItemFlags.PROMOTED) };
+              tmpResult = items(closure_1_3[86]);
+              return obj;
+            }
+          });
+          const found1 = mapped1.filter(tmp(1376).isNotNullish);
+          let tmpResult = tmp(1391);
+          if (tmpResult.hasFlag(title.flags, ApplicationCollectionFlags.ApplicationCollectionFlags.APPENDS_REMAINING_ACTIVITIES)) {
+            const item = memo6.forEach((application) => {
+              const obj = { application: application.application, showsPromoted: false };
+              found1.push(obj);
+            });
+          }
+          const push = items.push;
+          items = [];
+          HermesBuiltin.arraySpread(items, getRecommendationItemsWithViewAll(found1, title.title, title.title, undefined, sectionOverallPosition), 0);
+          HermesBuiltin.apply(push, items, items);
+        }
+      });
+    }
+    return items;
+  }, items11);
+  let obj3 = {
+    list: obj2.useMemo(() => {
+      const obj = AppLauncherUtils;
+      if (obj.appLauncherShowsRecommendations(entrypoint)) {
+        const items = [];
+        items[HermesBuiltin.arraySpread(items, memo7, 0)] = { type: AppLauncherHomeTypes.AppLauncherHomeListItemType.LEARN_MORE };
+        const obj2 = { type: AppLauncherHomeTypes.AppLauncherHomeListItemType.LEARN_MORE };
+        return items;
+      } else {
+        const items1 = [];
+        HermesBuiltin.arraySpread(items1, memo4, 0);
+        return items1;
+      }
+    }, items12),
+    frecencyCommands,
+    frecencyUsedAppList: memo1,
+    sectionDescriptors,
+    loading,
+    hasNoCommands: memo2,
+    hasNoShelfItems: tmp34,
+    showsEmptyState: tmp30,
+    showNoPermsState: tmp32,
+    inThisServerItems: memo
+  };
+  items12 = [entrypoint, memo7, memo4];
+  return obj3;
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/AppLauncherHomeScreen.tsx");
+
+export default tmp9;
+export const BaseAppRow = tmp8;

@@ -1,20 +1,20 @@
-// Module ID: 5821
-// Function ID: 5822
+// Module ID: 5822
+// Function ID: 5823
 // Name: FrecencyStore
-// Dependencies: [1220, 2045, 2067, 2099, 4655, 1074, 1084, 4873, 12, 504, 573, 2]
+// Dependencies: [1232, 2051, 2073, 2102, 4657, 1086, 1096, 4874, 12, 504, 585, 2]
 
-// Module 5821 (FrecencyStore)
+// Module 5822 (FrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
-import FrecencyDefault from "Frecency" /* 4873 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
+import FrecencyDefault from "Frecency" /* 4874 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
 import size from "module_2" /* 2 */;
 
 let closure_13, recentUses;

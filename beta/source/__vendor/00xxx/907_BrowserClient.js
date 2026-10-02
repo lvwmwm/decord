@@ -1,0 +1,191 @@
+// Module ID: 907
+// Function ID: 908
+// Name: BrowserClient
+// Dependencies: [41, 42, 93, 95, 96, 98, 905, 694, 908]
+// Exports: applyDefaultOptions
+
+// Module 907 (BrowserClient)
+import _mod694 from "module_694" /* 694 */;
+import _mod905 from "module_905" /* 905 */;
+import eventFromException2 from "eventFromException" /* 908 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _get from "_get" /* 96 */;
+import _inherits from "_inherits" /* 98 */;
+
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+class BrowserClient {
+  constructor(arg0) {
+    let _experiments;
+    let constructResult;
+    let enableMetrics;
+    let id;
+    let sendDefaultPii;
+    const self = this;
+    _classCallCheck(this, BrowserClient);
+    const tmp = BrowserClient;
+    if (typeof globalThis.__SENTRY_RELEASE__ === "string") {
+      id = globalThis.__SENTRY_RELEASE__;
+    } else {
+      const SENTRY_RELEASE = _mod905.WINDOW.SENTRY_RELEASE;
+      if (SENTRY_RELEASE != null) {
+        id = SENTRY_RELEASE.id;
+      }
+    }
+    const obj = { release: id, sendClientReports: true, parentSpanIsAlwaysRootSpan: true };
+    const merged = Object.assign(arg0);
+    let SENTRY_SDK_SOURCE = _mod905.WINDOW.SENTRY_SDK_SOURCE;
+    if (!SENTRY_SDK_SOURCE) {
+      const tmp4Result = _mod694;
+      SENTRY_SDK_SOURCE = tmp4Result.getSDKSource();
+    }
+    const tmp4Result2 = _mod694;
+    tmp4Result2.applySdkMetadata(obj, "browser", ["browser"], SENTRY_SDK_SOURCE);
+    const _metadata = obj._metadata;
+    let sdk1;
+    if (_metadata != null) {
+      sdk1 = _metadata.sdk;
+    }
+    if (sdk1) {
+      let str = "never";
+      const sdk = obj._metadata.sdk;
+      if (obj.sendDefaultPii) {
+        str = "auto";
+      }
+      const obj2 = { infer_ip: str };
+      const merged1 = Object.assign(obj._metadata.sdk.settings);
+      sdk.settings = obj2;
+    }
+    const items = [obj];
+    const obj5 = _getPrototypeOf(tmp);
+    const tmp10 = _getPrototypeOf;
+    const tmp11 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj5, items, tmp10(self).constructor);
+    } else {
+      constructResult = obj5.apply(self, items);
+    }
+    const tmp11Result = tmp11(self, constructResult);
+    let closure_0 = tmp11Result;
+    const _options = tmp11Result._options;
+    let sendClientReports = _options.sendClientReports;
+    const enableLogs = _options.enableLogs;
+    ({ _experiments, enableMetrics, sendDefaultPii } = _options);
+    if (enableMetrics == null) {
+      let enableMetrics1;
+      if (_experiments != null) {
+        enableMetrics1 = _experiments.enableMetrics;
+      }
+      enableMetrics = enableMetrics1;
+    }
+    if (enableMetrics == null) {
+      enableMetrics = true;
+    }
+    let _document = tmp4(905).WINDOW.document;
+    if (_document) {
+      if (!sendClientReports) {
+        sendClientReports = enableLogs;
+      }
+      if (!sendClientReports) {
+        sendClientReports = enableMetrics;
+      }
+      _document = sendClientReports;
+    }
+    if (_document) {
+      const _document2 = tmp4(905).WINDOW.document;
+      const listener = _document2.addEventListener("visibilitychange", () => {
+        if ("hidden" === BrowserClient(closure_2_1[6]).WINDOW.document.visibilityState) {
+          const tmp3 = sendClientReports;
+          if (tmp3) {
+            closure_0._flushOutcomes();
+          }
+          const tmp6 = enableLogs;
+          if (tmp6) {
+            const tmpResult = BrowserClient(closure_2_1[7]);
+            const result = tmpResult._INTERNAL_flushLogsBuffer(closure_0);
+          }
+          const tmp9 = enableMetrics;
+          if (tmp9) {
+            const tmpResult2 = BrowserClient(closure_2_1[7]);
+            const result1 = tmpResult2._INTERNAL_flushMetricsBuffer(closure_0);
+          }
+        }
+      });
+    }
+    if (sendDefaultPii) {
+      tmp11Result.on("beforeSendSession", _mod694.addAutoIpAddressToSession);
+    }
+    return tmp11Result;
+  }
+}
+_inherits(BrowserClient, _mod694.Client);
+const entry = {
+  key: "eventFromException",
+  value: function eventFromException(arg0, arg1) {
+    const obj = eventFromException2;
+    return obj.eventFromException(this._options.stackParser, arg0, arg1, this._options.attachStacktrace);
+  }
+};
+let items = [
+  entry,
+  {
+    key: "eventFromMessage",
+    value: function eventFromMessage(arg0) {
+      let str = arg1;
+      if (arg1 === undefined) {
+        str = "info";
+      }
+      const obj = eventFromException2;
+      return obj.eventFromMessage(this._options.stackParser, arg0, str, arg2, this._options.attachStacktrace);
+    }
+  },
+  {
+    key: "_prepareEvent",
+    value: function _prepareEvent(platform, arg1, arg2, arg3) {
+      const tmp = platform.platform || "javascript";
+      platform.platform = tmp;
+      const self = this;
+      let fn = _get(_getPrototypeOf(BrowserClient.prototype), "_prepareEvent", this);
+      if (typeof fn === "function") {
+        fn = (items) => fn.apply(self, items);
+      }
+      const items = [platform, arg1, arg2, arg3];
+      return fn(items);
+    }
+  }
+];
+const BrowserClient_export = _createClass(BrowserClient, items);
+
+export { BrowserClient_export as BrowserClient };
+export const applyDefaultOptions = function applyDefaultOptions(arg0) {
+  let id;
+  if (typeof globalThis.__SENTRY_RELEASE__ === "string") {
+    id = globalThis.__SENTRY_RELEASE__;
+  } else {
+    const SENTRY_RELEASE = _mod905.WINDOW.SENTRY_RELEASE;
+    if (SENTRY_RELEASE != null) {
+      id = SENTRY_RELEASE.id;
+    }
+  }
+  const obj = { release: id, sendClientReports: true, parentSpanIsAlwaysRootSpan: true };
+  const merged = Object.assign(arg0);
+  return obj;
+};

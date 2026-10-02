@@ -1,21 +1,21 @@
-// Module ID: 7069
-// Function ID: 7070
+// Module ID: 7073
+// Function ID: 7074
 // Name: NonGuildVersions
-// Dependencies: [5, 4655, 3, 7062, 12, 2074, 1091, 2]
+// Dependencies: [5, 4657, 3, 7066, 12, 2077, 1103, 2]
 
-// Module 7069 (NonGuildVersions)
+// Module 7073 (NonGuildVersions)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2077 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
-import isCacheEnabled from "isCacheEnabled" /* 7062 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import isCacheEnabled from "isCacheEnabled" /* 7066 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3, guildId;
 
-const f83931 = () => {
+const f93569 = () => {
   let obj = DatabaseDaosDefault;
   const databaseResult = obj.database();
   if (databaseResult != null) {
@@ -54,7 +54,7 @@ class NonGuildVersions {
     if (obj.isCacheEnabled()) {
       const addChangeListener = SelectedGuildStore.addChangeListener;
       let obj2 = _modDef12;
-      addChangeListener(obj2.throttle(f83931, 10 * DurationsDefault.Millis.SECOND));
+      addChangeListener(obj2.throttle(f93569, 10 * DurationsDefault.Millis.SECOND));
     }
     return obj3;
   }
@@ -70,7 +70,7 @@ class NonGuildVersions {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -171,7 +171,7 @@ obj.actions = {
 if (isCacheEnabled.isCacheEnabled()) {
   let addChangeListener = SelectedGuildStore.addChangeListener;
   const importDefaultResult1 = _modDef12;
-  addChangeListener(importDefaultResult1.throttle(f83931, 10 * DurationsDefault.Millis.SECOND));
+  addChangeListener(importDefaultResult1.throttle(f93569, 10 * DurationsDefault.Millis.SECOND));
 }
 let result = size.fileFinishedImporting("modules/app_database/modules/NonGuildVersions.tsx");
 

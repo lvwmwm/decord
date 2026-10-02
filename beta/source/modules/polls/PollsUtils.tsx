@@ -1,24 +1,25 @@
-// Module ID: 7180
-// Function ID: 7181
+// Module ID: 7184
+// Function ID: 7185
 // Name: PollsUtils
-// Dependencies: [2045, 7181, 5056, 4469, 4479, 7248, 1074, 1255, 504, 6642, 1091, 2012, 5083, 1115, 7182, 12, 4988, 2]
-// Exports: createPollExpiryTimestamp, createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, generateLocalCreationAnswerId, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isAnswerFilled, isIncompleteAnswer, isPollCreationEmpty, useCanPostPollsInChannel
+// Dependencies: [2051, 7185, 5057, 4472, 4482, 7252, 1086, 1267, 558, 576, 6643, 504, 1103, 2018, 5084, 1127, 7186, 12, 4989, 2]
+// Exports: createPollExpiryTimestamp, createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, generateLocalCreationAnswerId, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isAnswerFilled, isIncompleteAnswer, isPollCreationEmpty
 
-// Module 7180 (PollsUtils)
-import DurationsDefault from "Durations" /* 1091 */;
-import intl7 from "intl" /* 1115 */;
-import v1 from "v1" /* 1255 */;
-import utils_StringUtils from "utils/StringUtils" /* 2012 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
-import useMessageAuthor from "useMessageAuthor" /* 5083 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6642 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageReactionsStore from "MessageReactionsStore" /* 7181 */;
-import MessageStore from "MessageStore" /* 5056 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import PollsConstants from "PollsConstants" /* 7248 */;
-import Constants from "Constants" /* 1074 */;
+// Module 7184 (PollsUtils)
+import DurationsDefault from "Durations" /* 1103 */;
+import intl7 from "intl" /* 1127 */;
+import v1 from "v1" /* 1267 */;
+import utils_StringUtils from "utils/StringUtils" /* 2018 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
+import useMessageAuthor from "useMessageAuthor" /* 5084 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6643 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import MessageReactionsStore from "MessageReactionsStore" /* 7185 */;
+import MessageStore from "MessageStore" /* 5057 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import PollsConstants from "PollsConstants" /* 7252 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,14 +29,14 @@ let c10;
 let c9;
 let metroImportAll;
 let unpackModuleId;
-const f84075 = (rawName) => "poll_question_text" === rawName.rawName;
+const f93721 = (rawName) => "poll_question_text" === rawName.rawName;
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   let blockedOrIgnored;
   let channel;
   const channelId = message.getChannelId();
   let tmp2 = closure_9;
   const obj = { id, name: "", animated: false };
-  const reactions = MessageReactionsStore.getReactions(channelId, message.id, obj, closure_9, channel(7182).ReactionTypes.VOTE);
+  const reactions = MessageReactionsStore.getReactions(channelId, message.id, obj, closure_9, channel(7186).ReactionTypes.VOTE);
   channel = ChannelStore.getChannel(channelId);
   let guildId = null;
   if (null != channel) {
@@ -118,18 +119,95 @@ function formatVoterTooltipText(arr, arg1) {
 }
 ({ POLL_RESULT_MESSAGE_POLL_TITLE_MAX_VISIBLE_CHARS: metroImportAll, VOTES_TOOLTIP_MAX_USERS: c9 } = PollsConstants);
 ({ ChannelTypesSets: c10, Permissions: unpackModuleId } = Constants);
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  _require = arg0;
+  let tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function l() {
+      let tmp = null != closure_0 && obj.id !== FakePlaceholderPrivateChannel.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+      if (tmp) {
+        const POLLS = constants.POLLS;
+        let hasItem = POLLS.has(obj.type);
+        if (hasItem) {
+          let isPrivateResult = obj.isPrivate();
+          if (!isPrivateResult) {
+            isPrivateResult = PermissionStore.can(unpackModuleId.SEND_MESSAGES, closure_0) && PermissionStore.can(unpackModuleId.SEND_POLLS, closure_0);
+            PermissionStore.can(unpackModuleId.SEND_MESSAGES, closure_0) && PermissionStore.can(unpackModuleId.SEND_POLLS, closure_0);
+          }
+          hasItem = isPrivateResult;
+        }
+        tmp = hasItem;
+      }
+      return tmp;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  const obj = require("get initialized");
+  const items = [PermissionStore];
+  return obj.useStateFromStores(items, () => {
+    let tmp = null != closure_0 && obj.id !== FakePlaceholderPrivateChannel.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+    if (tmp) {
+      const POLLS = constants.POLLS;
+      let hasItem = POLLS.has(obj.type);
+      if (hasItem) {
+        let isPrivateResult = obj.isPrivate();
+        if (!isPrivateResult) {
+          isPrivateResult = PermissionStore.can(unpackModuleId.SEND_MESSAGES, closure_0) && PermissionStore.can(unpackModuleId.SEND_POLLS, closure_0);
+          PermissionStore.can(unpackModuleId.SEND_MESSAGES, closure_0) && PermissionStore.can(unpackModuleId.SEND_POLLS, closure_0);
+        }
+        hasItem = isPrivateResult;
+      }
+      tmp = hasItem;
+    }
+    return tmp;
+  });
+});
+function generateLocalCreationAnswerId() {
+  const obj = v1;
+  return obj.v4();
+}
+function isAnswerFilled(text) {
+  let trimmed;
+  if (text.text != null) {
+    trimmed = str.trim();
+  }
+  return null != trimmed && trimmed.length > 0;
+}
+function createPollExpiryTimestamp(arg0) {
+  const timestamp = Date.now();
+  const date = new Date(timestamp + arg0 * DurationsDefault.Millis.HOUR);
+  return date.toISOString();
+}
 const result = size.fileFinishedImporting("modules/polls/PollsUtils.tsx");
 
 export const generateEmptyPollAnswer = function generateEmptyPollAnswer() {
   let obj2;
-  const obj = { text: "Array", image: "channel", localCreationAnswerId: obj2.v4() };
+  const obj = { text: "Array", image: "Reflect", localCreationAnswerId: obj2.v4() };
   obj2 = v1;
   return obj;
 };
-export const generateLocalCreationAnswerId = function generateLocalCreationAnswerId() {
-  const obj = v1;
-  return obj.v4();
-};
+export { generateLocalCreationAnswerId };
 export const filterOutUUID = function filterOutUUID(str) {
   return str.replace(/\b[a-f\d]{8}-(?:[a-f\d]{4}-){3}[a-f\d]{12}-\b/i, "");
 };
@@ -144,28 +222,7 @@ export const hasNonVoteReactions = function hasNonVoteReactions(message) {
   }
   return false;
 };
-export const useCanPostPollsInChannel = function useCanPostPollsInChannel(channel) {
-  _require = channel;
-  const obj = require("get initialized");
-  const items = [PermissionStore];
-  return obj.useStateFromStores(items, () => {
-    let tmp = null != channel && obj.id !== FakePlaceholderPrivateChannel.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
-    if (tmp) {
-      const POLLS = constants.POLLS;
-      let hasItem = POLLS.has(obj.type);
-      if (hasItem) {
-        let isPrivateResult = obj.isPrivate();
-        if (!isPrivateResult) {
-          isPrivateResult = PermissionStore.can(unpackModuleId.SEND_MESSAGES, channel) && PermissionStore.can(unpackModuleId.SEND_POLLS, channel);
-          PermissionStore.can(unpackModuleId.SEND_MESSAGES, channel) && PermissionStore.can(unpackModuleId.SEND_POLLS, channel);
-        }
-        hasItem = isPrivateResult;
-      }
-      tmp = hasItem;
-    }
-    return tmp;
-  });
-};
+export const useCanPostPollsInChannel = tmp4;
 export const isPollCreationEmpty = function isPollCreationEmpty(c4, answers) {
   let tmp = 0 === c4.length;
   if (tmp) {
@@ -179,13 +236,7 @@ export const isPollCreationEmpty = function isPollCreationEmpty(c4, answers) {
   }
   return tmp;
 };
-export const isAnswerFilled = function isAnswerFilled(text) {
-  let trimmed;
-  if (text.text != null) {
-    trimmed = str.trim();
-  }
-  return null != trimmed && trimmed.length > 0;
-};
+export { isAnswerFilled };
 export const isIncompleteAnswer = function isIncompleteAnswer(text) {
   let trimmed;
   if (text.text != null) {
@@ -198,11 +249,7 @@ export const isIncompleteAnswer = function isIncompleteAnswer(text) {
   }
   return tmp;
 };
-export const createPollExpiryTimestamp = function createPollExpiryTimestamp(arg0) {
-  const timestamp = Date.now();
-  const date = new Date(timestamp + arg0 * DurationsDefault.Millis.HOUR);
-  return date.toISOString();
-};
+export { createPollExpiryTimestamp };
 export const createPollServerDataFromCreateRequest = function createPollServerDataFromCreateRequest(poll) {
   if (null != poll) {
     let mapped;
@@ -277,7 +324,7 @@ export const getPollResultsReplyPreview = function getPollResultsReplyPreview(me
   if (first != null) {
     const fields = first.fields;
     if (fields != null) {
-      const found = fields.find(f84075);
+      const found = fields.find(f93721);
       if (found != null) {
         str = found.rawValue;
       }
@@ -291,7 +338,7 @@ export const getPollResultsReplyPreview = function getPollResultsReplyPreview(me
     const tmpResult = utils_StringUtils;
     truncateTextResult = tmpResult.truncateText(str, tmp4);
   }
-  const intl = tmp(1115).intl;
+  const intl = tmp(1127).intl;
   const obj2 = { username: messageAuthor.nick, title: truncateTextResult };
   return intl.format(intl7.t.Vn97Ka, obj2);
 };
@@ -304,7 +351,7 @@ export const getPollResultsReplyPreviewMobile = function getPollResultsReplyPrev
     if (first != null) {
       const fields = first.fields;
       if (fields != null) {
-        const found = fields.find(f84075);
+        const found = fields.find(f93721);
         if (found != null) {
           str = found.rawValue;
         }
@@ -318,7 +365,7 @@ export const getPollResultsReplyPreviewMobile = function getPollResultsReplyPrev
       const tmp2Result = utils_StringUtils;
       truncateTextResult = tmp2Result.truncateText(str, tmp5);
     }
-    const intl = tmp2(1115).intl;
+    const intl = tmp2(1127).intl;
     const obj2 = { username: messageAuthor.nick, title: truncateTextResult };
     return intl.formatToParts(intl7.t.Vn97Ka, obj2);
   } else {

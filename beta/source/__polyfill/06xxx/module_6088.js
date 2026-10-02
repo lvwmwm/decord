@@ -1,9 +1,12 @@
 // Module ID: 6088
 // Function ID: 6089
-// Dependencies: [6089]
+// Dependencies: []
+// Exports: getNextHandlerTag
 
 // Module 6088
-import _modDef6089 from "module_6089" /* 6089 */;
+let closure_0 = 1;
 
-
-export default _modDef6089;
+export const getNextHandlerTag = function getNextHandlerTag() {
+  closure_0 = tmp + 1;
+  return +closure_0;
+};

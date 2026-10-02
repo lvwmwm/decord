@@ -1,75 +1,56 @@
 // Module ID: 5576
 // Function ID: 5577
-// Dependencies: [5526]
+// Dependencies: [5544]
 
 // Module 5576
-import _mod5526 from "module_5526" /* 5526 */;
+import _modDef5544 from "module_5544" /* 5544 */;
 
-
-export default {
-  read(byteLength) {
-    let str5;
-    let str6;
-    let str9;
-    let tmp11;
-    let tmp13;
-    let tmp16;
-    let tmp5;
-    let tmp8;
-    let tmp;
-    if (6 <= byteLength.byteLength) {
-      const obj = _mod5526;
-      const stringFromDataView = obj.getStringFromDataView(byteLength, 3, 3);
-      tmp = { value: stringFromDataView, description: stringFromDataView };
-      const obj2 = { value: stringFromDataView, description: stringFromDataView };
+let obj = {
+  read(getUint8, sum) {
+    let obj4;
+    let obj5;
+    let str2;
+    let sum5;
+    const obj = _modDef5544;
+    const byteAt = obj.getByteAt(getUint8, sum);
+    let num = 0;
+    if (16 & byteAt) {
+      num = 1;
     }
-    const obj3 = { "GIF Version": tmp, "Image Width": tmp5, "Image Height": tmp8, "Global Color Map": tmp11, "Bits Per Pixel": tmp13, "Color Resolution Depth": tmp16 };
-    tmp5 = undefined;
-    if (8 <= byteLength.byteLength) {
-      const uint16 = byteLength.getUint16(6, true);
-      const _HermesInternal = HermesInternal;
-      tmp5 = { value: uint16, description: "" + uint16 + "px" };
-      const obj4 = { value: uint16, description: "" + uint16 + "px" };
+    let str = "No";
+    const obj2 = { value: num, description: str2 };
+    str2 = "No";
+    if (16 & byteAt) {
+      str2 = "Yes";
     }
-    tmp8 = undefined;
-    if (10 <= byteLength.byteLength) {
-      const uint161 = byteLength.getUint16(8, true);
-      const _HermesInternal2 = HermesInternal;
-      tmp8 = { value: uint161, description: "" + uint161 + "px" };
-      const obj5 = { value: uint161, description: "" + uint161 + "px" };
+    let num2 = 0;
+    const obj3 = { Alpha: obj2, Animation: obj4, ImageWidth: obj5, ImageHeight: { value: sum5, description: `${tmp13}px` } };
+    if (2 & byteAt) {
+      num2 = 1;
     }
-    tmp11 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const tmp12 = (128 & byteLength.getUint8(10)) >>> 7;
-      const obj6 = { value: tmp12, description: str5 };
-      str5 = "No";
-      if (1 === tmp12) {
-        str5 = "Yes";
-      }
-      tmp11 = obj6;
+    obj4 = { value: num2, description: str };
+    if (2 & byteAt) {
+      str = "Yes";
     }
-    tmp13 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const sum = 1 + (7 & byteLength.getUint8(10));
-      const obj7 = { value: sum, description: "" + sum + " " + str6 };
-      str6 = "bits";
-      if (1 === sum) {
-        str6 = "bit";
-      }
-      const _HermesInternal3 = HermesInternal;
-      tmp13 = obj7;
-    }
-    tmp16 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const sum1 = 1 + ((112 & byteLength.getUint8(10)) >>> 4);
-      const obj8 = { value: sum1, description: "" + sum1 + " " + str9 };
-      str9 = "bits";
-      if (1 === sum1) {
-        str9 = "bit";
-      }
-      const _HermesInternal4 = HermesInternal;
-      tmp16 = obj8;
-    }
+    sum = sum + c2;
+    const tmpResult = _modDef5544;
+    const byteAt1 = tmpResult.getByteAt(getUint8, sum);
+    const tmpResult6 = _modDef5544;
+    const sum1 = byteAt1 + 256 * tmpResult6.getByteAt(getUint8, sum + 1);
+    const tmpResult7 = _modDef5544;
+    const sum2 = sum1 + 65536 * tmpResult7.getByteAt(getUint8, sum + 2) + 1;
+    const sum3 = sum + c3;
+    obj5 = { value: sum2, description: `${tmp9}px` };
+    const tmpResult8 = _modDef5544;
+    const byteAt2 = tmpResult8.getByteAt(getUint8, sum3);
+    const tmpResult9 = _modDef5544;
+    const sum4 = byteAt2 + 256 * tmpResult9.getByteAt(getUint8, sum3 + 1);
+    const tmpResult10 = _modDef5544;
+    sum5 = sum4 + 65536 * tmpResult10.getByteAt(getUint8, sum3 + 2) + 1;
     return obj3;
   }
 };
+let c2 = 4;
+let c3 = 7;
+
+export default obj;

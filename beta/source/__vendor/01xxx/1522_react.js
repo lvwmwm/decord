@@ -6,7 +6,5 @@
 // Module 1522 (react)
 import react from "react" /* 19 */;
 
-const context = react.createContext(undefined);
-context.displayName = "ThemeContext";
 
-export const ThemeContext = context;
+export const NavigationContainerRefContext = react.createContext(undefined);

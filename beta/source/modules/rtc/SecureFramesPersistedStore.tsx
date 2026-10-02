@@ -1,11 +1,11 @@
-// Module ID: 9164
-// Function ID: 9165
+// Module ID: 9141
+// Function ID: 9142
 // Name: SecureFramesPersistedStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 9164 (SecureFramesPersistedStore)
+// Module 9141 (SecureFramesPersistedStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let items = [];

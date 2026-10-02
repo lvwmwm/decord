@@ -1,21 +1,58 @@
-// Module ID: 11375
-// Function ID: 11376
+// Module ID: 11249
+// Function ID: 11250
 // Name: TTIFirstContentfulPaint
-// Dependencies: [19, 21, 4693, 9, 7080, 11376, 2]
-// Exports: TTIFirstContentfulPaint
+// Dependencies: [19, 21, 558, 576, 4695, 9, 7084, 11250, 2]
 
-// Module 11375 (TTIFirstContentfulPaint)
+// Module 11249 (TTIFirstContentfulPaint)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Fragment from "Fragment" /* 21 */;
-import RootNavigationRef from "RootNavigationRef" /* 4693 */;
-import PostTTIScheduler from "PostTTIScheduler" /* 7080 */;
+import RootNavigationRef from "RootNavigationRef" /* 4695 */;
+import PostTTIScheduler from "PostTTIScheduler" /* 7084 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/tti_analytics/native/TTIFirstContentfulPaint.tsx");
+let checkFocusedScreen;
 
-export const TTIFirstContentfulPaint = function TTIFirstContentfulPaint(checkFocusedScreen) {
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkFocusedScreen) => {
+  let tmp4;
+  let tmp5;
+  let obj = checkFocusedScreen(576);
+  const cResult = obj.c(4);
+  const tmp = checkFocusedScreen;
+  checkFocusedScreen = checkFocusedScreen.checkFocusedScreen;
+  if (cResult[0] !== checkFocusedScreen) {
+    const fn = function u(nativeEvent) {
+      if (null != checkFocusedScreen) {
+        const obj = RootNavigationRef;
+        const rootNavigationRef = obj.getRootNavigationRef();
+        let currentRoute;
+        if (rootNavigationRef != null) {
+          currentRoute = rootNavigationRef.getCurrentRoute();
+        }
+      }
+      const firstContentfulPaint = TTITrackerDefault.firstContentfulPaint;
+      firstContentfulPaint.record(nativeEvent.nativeEvent.timestamp);
+      const obj3 = PostTTIScheduler;
+      obj3.notifyAboutTTI();
+    };
+    cResult[0] = checkFocusedScreen;
+    cResult[1] = fn;
+    tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] !== tmp4) {
+    const tmp7 = jsx(tmp(11250).TTIMeasurementView, { onMeasurement: tmp4 });
+    cResult[2] = tmp4;
+    cResult[3] = tmp7;
+    tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[3];
+  }
+  return tmp5;
+}) : ((checkFocusedScreen) => {
   checkFocusedScreen = checkFocusedScreen.checkFocusedScreen;
   const items = [checkFocusedScreen];
   const onMeasurement = react.useCallback((nativeEvent) => {
@@ -32,5 +69,8 @@ export const TTIFirstContentfulPaint = function TTIFirstContentfulPaint(checkFoc
     const obj3 = PostTTIScheduler;
     obj3.notifyAboutTTI();
   }, items);
-  return jsx(checkFocusedScreen(11376).TTIMeasurementView, { onMeasurement });
-};
+  return jsx(checkFocusedScreen(11250).TTIMeasurementView, { onMeasurement });
+});
+const result = size.fileFinishedImporting("modules/tti_analytics/native/TTIFirstContentfulPaint.tsx");
+
+export const TTIFirstContentfulPaint = tmp2;

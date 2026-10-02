@@ -1,19 +1,19 @@
-// Module ID: 11253
-// Function ID: 11254
+// Module ID: 11127
+// Function ID: 11128
 // Name: getCanJoin
-// Dependencies: [1074, 11254, 11255, 11256, 11257, 11258, 11259, 11260, 6731, 1364, 2]
+// Dependencies: [1086, 11128, 11129, 11130, 11131, 11132, 11133, 11134, 6732, 1370, 2]
 // Exports: getCanJoin, getCanSync
 
-// Module 11253 (getCanJoin)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import isInviteActiveDefault from "isInviteActive" /* 11254 */;
-import _slicedToArray from "_slicedToArray" /* 11255 */;
-import hasPartySize from "hasPartySize" /* 11256 */;
-import isPartyFull from "isPartyFull" /* 11257 */;
-import getIsInParty from "getIsInParty" /* 11258 */;
-import getIsAskToJoin from "getIsAskToJoin" /* 11259 */;
-import getRemoteJoinableActivityPlatform from "getRemoteJoinableActivityPlatform" /* 11260 */;
-import Constants from "Constants" /* 1074 */;
+// Module 11127 (getCanJoin)
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import isInviteActiveDefault from "isInviteActive" /* 11128 */;
+import _slicedToArray from "_slicedToArray" /* 11129 */;
+import hasPartySize from "hasPartySize" /* 11130 */;
+import isPartyFull from "isPartyFull" /* 11131 */;
+import getIsInParty from "getIsInParty" /* 11132 */;
+import getIsAskToJoin from "getIsAskToJoin" /* 11133 */;
+import getRemoteJoinableActivityPlatform from "getRemoteJoinableActivityPlatform" /* 11134 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -60,7 +60,7 @@ export const getCanJoin = function getCanJoin(currentUserId) {
                   const remoteJoinableActivityPlatform = tmp6Result7.getRemoteJoinableActivityPlatform(presenceActivity);
                   if (null != remoteJoinableActivityPlatform) {
                     return { canJoin: true, remoteJoinPlatform: remoteJoinableActivityPlatform };
-                  } else if (tmp13(6731)(presenceActivity, constants2.SUPPORTS_JOIN_URL)) {
+                  } else if (tmp13(6732)(presenceActivity, constants2.SUPPORTS_JOIN_URL)) {
                     return { canJoin: true, remoteJoinPlatform: null };
                   }
                 }
@@ -90,12 +90,12 @@ export const getCanSync = function getCanSync(activity, tmp8Result, arg2, id) {
     let tmp6 = isInviteActiveDefault(activity, arg2, id.id);
     const tmp4 = importDefault;
     if (tmp6) {
-      let tmp8 = tmp4(6731)(activity, constants2.SYNC);
+      let tmp8 = tmp4(6732)(activity, constants2.SYNC);
       if (tmp8) {
         let isPlatformEmbedded = PlatformUtils.isPlatformEmbedded;
         const tmp9 = require;
         if (isPlatformEmbedded) {
-          const tmp9Result = tmp9(11258);
+          const tmp9Result = tmp9(11132);
           isPlatformEmbedded = !tmp9Result.getIsInParty(tmp8Result, activity);
         }
         tmp8 = isPlatformEmbedded;

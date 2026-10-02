@@ -1,10 +1,10 @@
 // Module ID: 10999
 // Function ID: 11000
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 10999 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 200, height: 104, scales: [1, 2, 3], hash: "2cffa7810dfc86e71c6793911cc4d14b", name: "img_invalid_link_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 48, height: 48, scales: [2, 3], hash: "8011f85c511bc539d06f3c7f5cbb3598", name: "feedback-modal-sad-desaturated_darker", type: "png" });

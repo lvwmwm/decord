@@ -1,8 +1,8 @@
-// Module ID: 581
-// Function ID: 582
+// Module ID: 593
+// Function ID: 594
 // Dependencies: [2]
 
-// Module 581
+// Module 593
 import size from "module_2" /* 2 */;
 
 let obj10;

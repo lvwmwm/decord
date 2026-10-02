@@ -1,14 +1,14 @@
-// Module ID: 9551
-// Function ID: 9552
+// Module ID: 12218
+// Function ID: 12219
 // Name: setUserStatus
-// Dependencies: [5, 6536, 5591, 1074, 4678, 1115, 9552, 2026, 1217, 4686, 1241, 2]
+// Dependencies: [5, 6537, 5592, 1086, 4680, 1127, 12219, 2032, 1229, 4688, 1253, 2]
 // Exports: default
 
-// Module 9551 (setUserStatus)
-import Constants from "Constants" /* 1074 */;
+// Module 12218 (setUserStatus)
+import Constants from "Constants" /* 1086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 6536 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 6537 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5592 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, prev_status, statusCreatedAtMs;
@@ -102,14 +102,14 @@ let obj = function _setUserStatus() {
         let obj4 = closure_130_1(closure_130_2[10]);
         obj4.track(closure_130_6.USER_STATUS_UPDATED, obj9);
       }
-      await "HermesInternal";
+      await "IconComponent";
       closure_2 = tmp4;
       prev_status = tmp;
       ({ nextStatus: c0, prevStatus: closure_1, analyticsContext: c2, durationMillis: c3, disableTracking } = value);
       if (disableTracking === undefined) {
         disableTracking = false;
       }
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;

@@ -1,13 +1,13 @@
-// Module ID: 9017
-// Function ID: 9018
+// Module ID: 8994
+// Function ID: 8995
 // Name: ChannelSettingsPermissionsActionCreators
-// Dependencies: [5, 9018, 573, 4849, 2]
+// Dependencies: [5, 8995, 585, 4850, 2]
 // Exports: init, saveAndClearPermissionUpdates, savePermissionUpdates, selectPermission, setAdvancedMode, updatePermission
 
-// Module 9017 (ChannelSettingsPermissionsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
-import DefaultChannelThresholdUtils from "DefaultChannelThresholdUtils" /* 9018 */;
+// Module 8994 (ChannelSettingsPermissionsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4850 */;
+import DefaultChannelThresholdUtils from "DefaultChannelThresholdUtils" /* 8995 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _updatePermission() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ let obj = function _updatePermission() {
           const obj2 = closure_133_1(closure_133_2[2]);
           obj2.dispatch(obj7);
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp15) {
           c7 = 3;
           throw tmp15;

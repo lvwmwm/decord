@@ -1,256 +1,469 @@
 // Module ID: 1026
 // Function ID: 1027
-// Dependencies: [17, 987, 682]
-// Exports: adjustTransactionDuration, cancelInBackground, ignoreEmptyBackNavigation, ignoreEmptyRouteChangeTransactions, onThisSpanEnd, onlySampleIfChildSpans
+// Dependencies: [32, 1019, 694]
+// Exports: clearNavigationContext, getActiveRootSpan, getNavigationContext, initializeRouterUtils, resolveRouteNameAndSource, setNavigationContext, transactionNameHasWildcard
 
 // Module 1026
-import react_native from "react-native" /* 17 */;
-import _mod682 from "module_682" /* 682 */;
+import _mod694 from "module_694" /* 694 */;
+import _mod1019 from "module_1019" /* 1019 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
-
-const AppState = react_native.AppState;
-
-export const onThisSpanEnd = function onThisSpanEnd(on, arg1, arg2) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
-  on.on("spanEnd", (arg0) => {
-    if (closure_0 === arg0) {
-      closure_1(arg0);
+function pickSplat(params) {
+  return params.params["*"] || "";
+}
+function trimSlash(pathname) {
+  let substr = pathname;
+  if ("/" === pathname[pathname.length - 1]) {
+    substr = pathname.slice(0, -1);
+  }
+  return substr;
+}
+function pathEndsWithWildcard(str) {
+  return str.endsWith("*");
+}
+function pathIsWildcardAndHasChildren(str, route) {
+  flag = str.endsWith("*");
+  if (flag) {
+    const children = route.route.children;
+    let length;
+    if (children != null) {
+      length = children.length;
     }
-  });
-};
-export const adjustTransactionDuration = (on, activeSpan, arg2) => {
-  let closure_1;
-  _require = activeSpan;
-  dependencyMap = arg2;
-  const obj = require("module_987");
-  const tmp = _require;
-  if (obj.isRootSpan(activeSpan)) {
-    on.on("spanEnd", (arg0) => {
-      if (arg0 === activeSpan) {
-        const obj3 = _mod682;
-        let timestamp = obj3.spanToJSON(obj).timestamp;
-        const obj4 = _mod682;
-        const start_timestamp = obj4.spanToJSON(obj).start_timestamp;
-        const tmp6 = require;
-        if (timestamp) {
-          if (start_timestamp) {
-            const diff = timestamp - start_timestamp;
-            if (timestamp) {
-              timestamp = diff > closure_1 || diff < 0;
-              const tmp3 = diff > closure_1 || diff < 0;
+    flag = length;
+  }
+  if (!flag) {
+    flag = false;
+  }
+  return flag;
+}
+function routeIsDescendant(route) {
+  let tmp = route.children || !route.element;
+  if (!tmp) {
+    const path = route.path;
+    let endsWithResult;
+    if (path != null) {
+      endsWithResult = path.endsWith("/*");
+    }
+    tmp = !endsWithResult;
+  }
+  return !tmp;
+}
+function sendIndexPath(arg0, pathname, basename) {
+  let arr = arg0;
+  if (!arr) {
+    let tmp3 = pathname;
+    if (flag) {
+      let tmp5 = pathname;
+      if (basename) {
+        tmp5 = pathname;
+        if ("/" !== basename) {
+          const formatted = pathname.toLowerCase();
+          tmp5 = pathname;
+          if (formatted.startsWith(basename.toLowerCase())) {
+            let diff;
+            let tmp9;
+            if (basename.endsWith("/")) {
+              diff = length - 1;
+            } else {
+              diff = length;
             }
-            if (timestamp) {
-              const setStatus = obj.setStatus;
-              const obj2 = { code: tmp6(682).SPAN_STATUS_ERROR, message: "deadline_exceeded" };
-              setStatus(obj2);
-              const attr = obj.setAttribute("maxTransactionDurationExceeded", "true");
+            const charAtResult = pathname.charAt(diff);
+            if (!charAtResult) {
+              tmp9 = pathname.slice(diff) || "/";
+              pathname.slice(diff) || "/";
+            } else {
+              tmp9 = pathname;
             }
+            tmp5 = tmp9;
           }
         }
       }
-    });
-  } else {
-    const debug = tmp(682).debug;
-    debug.warn("Not sampling empty back spans only works for Sentry Transactions (Root Spans).");
+      tmp3 = tmp5;
+    }
+    arr = tmp3;
   }
-};
-export const ignoreEmptyBackNavigation = (on, c4) => {
-  const f72957 = (arg0) => {
-    const obj = c4(f72957[2]);
-    const data = obj.spanToJSON(arg0).data;
-    let prop;
-    if (null !== data) {
-      if (undefined !== data) {
-        prop = data["route.has_been_seen"];
+  let substr = arr;
+  if ("/*" === arr.slice(-2)) {
+    substr = arr.slice(0, -2);
+  }
+  let substr1 = substr;
+  const tmp11 = substr.length > 1 && "/" === substr[substr.length - 1];
+  if (tmp11) {
+    substr1 = substr.slice(0, -1);
+  }
+  const items = [substr1, "route"];
+  return items;
+}
+function getNumberOfUrlSegments(str) {
+  const parts = str.split(/\\?\//);
+  return parts.filter((item) => item.length > 0 && "," !== item).length;
+}
+function stripBasenameFromPathname(pathname, basename) {
+  const tmp = basename;
+  if (tmp) {
+    if ("/" !== basename) {
+      const formatted = pathname.toLowerCase();
+      if (formatted.startsWith(basename.toLowerCase())) {
+        let diff;
+        let tmp5;
+        if (basename.endsWith("/")) {
+          diff = length - 1;
+        } else {
+          diff = length;
+        }
+        const charAtResult = pathname.charAt(diff);
+        if (!charAtResult) {
+          tmp5 = pathname.slice(diff) || "/";
+          pathname.slice(diff) || "/";
+        } else {
+          tmp5 = pathname;
+        }
+        return tmp5;
+      } else {
+        return pathname;
       }
     }
-    return true === prop;
-  };
-  const f72958 = () => {
-    const debug = c4(f72957[2]).debug;
-    debug.log("Not sampling transaction as route has been seen before. Pass ignoreEmptyBackNavigationTransactions = false to disable this feature.");
-  };
-  if (on) {
-    if (c4) {
-      const tmpResult = c4(f72957[1]);
-      if (tmpResult.isRootSpan(c4)) {
-        const tmpResult2 = c4(f72957[1]);
-        if (tmpResult2.isSentrySpan(c4)) {
-          on.on("spanEnd", (arg0) => {
-            let tmp = closure_0;
-            if (arg0 === closure_0) {
-              if (f72959(tmp)) {
-                closure_0 = tmp;
-                let obj = closure_0(closure_1[2]);
-                const spanDescendants = obj.getSpanDescendants(tmp);
-                if (spanDescendants.filter((spanContext) => {
-                  let tmp = spanContext.spanContext().spanId !== closure_0.spanContext().spanId;
-                  if (tmp) {
-                    const obj = closure_2_0(closure_2_1[2]);
-                    tmp = "ui.load.initial_display" !== obj.spanToJSON(spanContext).op;
-                  }
-                  if (tmp) {
-                    const obj2 = closure_2_0(closure_2_1[2]);
-                    tmp = "navigation.processing" !== obj2.spanToJSON(spanContext).op;
-                  }
-                  return tmp;
-                }).length <= 0) {
-                  f72960(tmp);
-                  tmp._sampled = false;
-                }
+  }
+  return pathname;
+}
+function prefixWithSlash(combined) {
+  if ("/" !== combined[0]) {
+    const _HermesInternal = HermesInternal;
+    combined = "/" + combined;
+  }
+  return combined;
+}
+function rebuildRoutePathFromAllRoutes(routes, _location) {
+  function _loop(item10012) {
+    routes = item10012;
+    if (item10012.route.path) {
+      if ("*" !== item10012.route.path) {
+        let obj3;
+        let str2 = arr;
+        if ("*" === (item10012.route.path || "")[(item10012.route.path || "").length - 1]) {
+          str2 = arr.slice(0, -1);
+        }
+        const pathnameBase = item10012.pathnameBase;
+        let str5 = pathnameBase;
+        const tmp = pathname;
+        if ("/" !== pathnameBase[0]) {
+          const _HermesInternal = HermesInternal;
+          str5 = "/" + pathnameBase;
+        }
+        let arr2 = str3;
+        if (str5) {
+          arr2 = str3;
+          if ("/" !== str5) {
+            const formatted = str3.toLowerCase();
+            arr2 = str3;
+            if (formatted.startsWith(str5.toLowerCase())) {
+              let tmp6;
+              const tmp3 = str5.endsWith("/") ? str5.length - 1 : str5.length;
+              const charAtResult = pathname.pathname.charAt(tmp3);
+              if (!charAtResult) {
+                tmp6 = pathname.pathname.slice(tmp3) || "/";
+                pathname.pathname.slice(tmp3) || "/";
+              } else {
+                tmp6 = str3;
               }
+              arr2 = tmp6;
             }
-          });
-        }
-      }
-      const debug3 = tmp(tmp2[2]).debug;
-      debug3.warn("Not sampling empty navigation spans only works for Sentry Transactions (Root Spans).");
-    } else {
-      const debug2 = tmp(tmp2[2]).debug;
-      debug2.warn("Could not hook on spanEnd event because span is not defined.");
-    }
-  } else {
-    let debug = tmp(tmp2[2]).debug;
-    debug.warn("Could not hook on spanEnd event because client is not defined.");
-  }
-};
-export const ignoreEmptyRouteChangeTransactions = (on, c4, arg2, arg3) => {
-  let closure_1 = arg2;
-  let closure_2 = arg3;
-  let closure_0 = c4;
-  const f72959 = (arg0) => {
-    const obj = on(closure_1[2]);
-    const spanToJSONResult = obj.spanToJSON(arg0);
-    let tmp2 = spanToJSONResult.description === f72959;
-    if (tmp2) {
-      const data = spanToJSONResult.data;
-      let prop;
-      if (null !== data) {
-        if (undefined !== data) {
-          prop = data["route.name"];
-        }
-      }
-      tmp2 = !prop;
-    }
-    if (tmp2) {
-      tmp2 = f72960();
-    }
-    return tmp2;
-  };
-  const f72960 = (arg0) => {
-    const debug = on(closure_1[2]).debug;
-    debug.log("Discarding empty \"" + f72959 + "\" transaction that never received route information.");
-    const obj = on;
-    if (null != on) {
-      obj.recordDroppedEvent("sample_rate", "transaction");
-    }
-  };
-  let tmp = closure_0;
-  let tmp2 = closure_1;
-  if (on) {
-    if (c4) {
-      const tmpResult = tmp(tmp2[1]);
-      if (tmpResult.isRootSpan(c4)) {
-        const tmpResult2 = tmp(tmp2[1]);
-        if (tmpResult2.isSentrySpan(c4)) {
-          on.on("spanEnd", (arg0) => {
-            let tmp = closure_0;
-            if (arg0 === closure_0) {
-              if (f72959(tmp)) {
-                closure_0 = tmp;
-                let obj = closure_0(closure_1[2]);
-                const spanDescendants = obj.getSpanDescendants(tmp);
-                if (spanDescendants.filter((spanContext) => {
-                  let tmp = spanContext.spanContext().spanId !== closure_0.spanContext().spanId;
-                  if (tmp) {
-                    const obj = closure_2_0(closure_2_1[2]);
-                    tmp = "ui.load.initial_display" !== obj.spanToJSON(spanContext).op;
-                  }
-                  if (tmp) {
-                    const obj2 = closure_2_0(closure_2_1[2]);
-                    tmp = "navigation.processing" !== obj2.spanToJSON(spanContext).op;
-                  }
-                  return tmp;
-                }).length <= 0) {
-                  f72960(tmp);
-                  tmp._sampled = false;
-                }
-              }
-            }
-          });
-        }
-      }
-      const debug3 = tmp(tmp2[2]).debug;
-      debug3.warn("Not sampling empty navigation spans only works for Sentry Transactions (Root Spans).");
-    } else {
-      const debug2 = tmp(tmp2[2]).debug;
-      debug2.warn("Could not hook on spanEnd event because span is not defined.");
-    }
-  } else {
-    let debug = tmp(tmp2[2]).debug;
-    debug.warn("Could not hook on spanEnd event because client is not defined.");
-  }
-};
-export const onlySampleIfChildSpans = (on, c4) => {
-  _require = c4;
-  const obj = require("module_987");
-  if (obj.isRootSpan(c4)) {
-    const tmpResult = require("module_987");
-    if (tmpResult.isSentrySpan(c4)) {
-      const tmp4 = on;
-      on.on("spanEnd", (arg0) => {
-        if (arg0 === closure_0) {
-          const obj2 = _mod682;
-          if (obj2.getSpanDescendants(closure_0).length <= 1) {
-            const debug = tmp4(682).debug;
-            const log = debug.log;
-            const _HermesInternal = HermesInternal;
-            const tmp4Result = _mod682;
-            log("Not sampling as " + tmp4Result.spanToJSON(closure_0).op + " transaction has no child spans.");
-            closure_0._sampled = false;
           }
         }
-      });
+        if (tmp.pathname === arr2) {
+          let substr = arr2;
+          if ("/" === arr2[arr2.length - 1]) {
+            substr = arr2.slice(0, -1);
+          }
+          obj3 = { v: substr };
+          const obj = { v: substr };
+        } else {
+          if (!str2) {
+            str2 = "";
+          }
+          let substr1 = str2;
+          if ("/" === str2[str2.length - 1]) {
+            substr1 = str2.slice(0, -1);
+          }
+          const obj2 = { pathname: arr2 };
+          const tmp11 = rebuildRoutePathFromAllRoutes(routes.filter((item) => item !== navigation.route), obj2);
+          let combined = tmp11;
+          if ("/" !== tmp11[0]) {
+            const _HermesInternal2 = HermesInternal;
+            combined = "/" + tmp11;
+          }
+          const sum = substr1 + combined;
+          let substr2 = sum;
+          if ("/" === sum[sum.length - 1]) {
+            substr2 = sum.slice(0, -1);
+          }
+          obj3 = { v: substr2 };
+        }
+        return obj3;
+      }
     }
   }
-  let debug = tmp(682).debug;
-  debug.warn("Not sampling childless spans only works for Sentry Transactions (Root Spans).");
+  const pathname = _location;
+  const arr = closure_2(routes, _location);
+  if (arr) {
+    if (0 !== arr.length) {
+      let tmp = arr;
+      for (const item10012 of arr) {
+        let tmp3 = _loop(item10012);
+        let tmp4 = tmp3;
+        if (tmp4) {
+          let v = tmp3.v;
+          obj.return();
+          return v;
+        }
+      }
+      return "";
+    }
+  }
+  return "";
+}
+function locationIsInsideDescendantRoute(_location, routes) {
+  const tmp = React2(routes, _location);
+  if (tmp) {
+    for (const item10009 of tmp) {
+      let tmp4 = item10009;
+      if (routeIsDescendant(item10009.route)) {
+        if (pickSplat(tmp4)) {
+          obj.return();
+          flag = true;
+          return true;
+        }
+      }
+      continue;
+    }
+  }
+  return false;
+}
+function getFallbackTransactionName(pathname, basename) {
+  let tmp;
+  if (flag) {
+    let tmp3 = str;
+    if (basename) {
+      tmp3 = str;
+      if ("/" !== basename) {
+        const formatted = str.toLowerCase();
+        tmp3 = str;
+        if (formatted.startsWith(basename.toLowerCase())) {
+          let diff;
+          let tmp7;
+          if (basename.endsWith("/")) {
+            diff = length - 1;
+          } else {
+            diff = length;
+          }
+          const charAtResult = pathname.pathname.charAt(diff);
+          if (!charAtResult) {
+            tmp7 = pathname.pathname.slice(diff) || "/";
+            pathname.pathname.slice(diff) || "/";
+          } else {
+            tmp7 = str;
+          }
+          tmp3 = tmp7;
+        }
+      }
+    }
+    tmp = tmp3;
+  } else {
+    tmp = str || "";
+  }
+  return tmp;
+}
+function getNormalizedName(routes, pathname, items, basename) {
+  let str = basename;
+  if (basename === undefined) {
+    str = "";
+  }
+  if (routes) {
+    if (0 !== routes.length) {
+      const tmp42 = items;
+      if (tmp42) {
+        let str4 = "";
+        const iter = items[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp7 = nextResult;
+          let route = nextResult.route;
+          let tmp8 = route;
+          if (tmp8) {
+            if (tmp8.index) {
+              let tmp37 = sendIndexPath(``, nextResult.pathname, str);
+              iter.return();
+              return tmp37;
+            } else {
+              let path = tmp8.path;
+              let tmp11 = path;
+              if (tmp11) {
+                let tmp12 = pathIsWildcardAndHasChildren;
+                if (!pathIsWildcardAndHasChildren(tmp11, tmp7)) {
+                  if ("/" !== tmp11[0]) {
+                    let combined;
+                    if ("/" !== ``[``.length - 1]) {
+                      let _HermesInternal = HermesInternal;
+                      combined = "/" + tmp11;
+                    }
+                    let tmp19 = combined;
+                    let tmp22 = trimSlash(str4);
+                    str4 = tmp22 + prefixWithSlash(combined);
+                    let tmp24 = trimSlash(pathname.pathname);
+                    if (tmp24 === trimSlash(str + tmp7.pathname)) {
+                      let tmp45 = getNumberOfUrlSegments(str4);
+                      if (tmp45 !== getNumberOfUrlSegments(tmp7.pathname)) {
+                        if (!pathEndsWithWildcard(str4)) {
+                          let str6 = "";
+                          if (!flag) {
+                            str6 = str;
+                          }
+                          items = [str6 + tmp19, ];
+                          let str7 = "route";
+                          items[1] = "route";
+                        }
+                        iter.return();
+                        return items;
+                      }
+                      if (tmp12(str4, tmp7)) {
+                        str4 = str4.slice(0, -1);
+                      }
+                      let str8 = "";
+                      if (!flag) {
+                        str8 = str;
+                      }
+                      let items1 = [str8 + str4, ];
+                      let str9 = "route";
+                      items1[1] = "route";
+                      items = items1;
+                    }
+                  }
+                  combined = path;
+                }
+              }
+            }
+          }
+          continue;
+        }
+        const items2 = [getFallbackTransactionName(pathname, str), "url"];
+        return items2;
+      } else {
+        const items3 = [getFallbackTransactionName(pathname, str), "url"];
+        return items3;
+      }
+    }
+  }
+  const tmp40 = flag;
+  if (tmp40) {
+    pathname = stripBasenameFromPathname(pathname.pathname, str);
+  } else {
+    pathname = pathname.pathname;
+  }
+  const items4 = [pathname, "url"];
+  return items4;
+}
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+let flag = false;
+let closure_5 = [];
+
+export const clearNavigationContext = function clearNavigationContext(arg0) {
+  let token;
+  const arr = closure_5;
+  if (closure_5[closure_5.length - 1] != null) {
+    token = tmp.token;
+  }
+  if (token === arg0) {
+    arr.pop();
+  }
 };
-export const cancelInBackground = (on, arg1) => {
-  let closure_0 = arg1;
-  const listener = AppState.addEventListener("change", (event) => {
-    if ("background" === event) {
-      const debug = _mod682.debug;
-      const log = debug.log;
+export const getActiveRootSpan = function getActiveRootSpan() {
+  const obj = _mod694;
+  const activeSpan = obj.getActiveSpan();
+  let rootSpan;
+  if (activeSpan) {
+    const tmpResult = _mod694;
+    rootSpan = tmpResult.getRootSpan(activeSpan);
+  }
+  if (rootSpan) {
+    let tmp5;
+    const tmpResult2 = _mod694;
+    const op = tmpResult2.spanToJSON(rootSpan).op;
+    if ("navigation" === op) {
+      tmp5 = rootSpan;
+    }
+    return tmp5;
+  }
+};
+export const getNavigationContext = function getNavigationContext() {
+  let tmp2 = null;
+  if (closure_5.length > 0) {
+    let tmp3 = tmp[length - 1];
+    if (tmp3 == null) {
+      tmp3 = null;
+    }
+    tmp2 = tmp3;
+  }
+  return tmp2;
+};
+export { getNormalizedName };
+export { getNumberOfUrlSegments };
+export function initializeRouterUtils(arg0, flag) {
+  if (flag === undefined) {
+    flag = false;
+  }
+  let closure_1_2 = arg0;
+}
+export { locationIsInsideDescendantRoute };
+export { pathEndsWithWildcard };
+export { pathIsWildcardAndHasChildren };
+export { prefixWithSlash };
+export { rebuildRoutePathFromAllRoutes };
+export const resolveRouteNameAndSource = function resolveRouteNameAndSource(_location, routes, routes2, items, basename) {
+  let str2;
+  let tmp2;
+  let str = basename;
+  if (basename === undefined) {
+    str = "";
+  }
+  const tmp = locationIsInsideDescendantRoute(_location, routes);
+  str2 = "url";
+  let pathname;
+  if (tmp) {
+    const tmp4 = rebuildRoutePathFromAllRoutes(routes, _location);
+    let combined = tmp4;
+    if ("/" !== tmp4[0]) {
       const _HermesInternal = HermesInternal;
-      const obj = _mod682;
-      log("Setting " + obj.spanToJSON(closure_0).op + " transaction to cancelled because the app is in the background.");
-      const setStatus = closure_0.setStatus;
-      const obj2 = { code: _mod682.SPAN_STATUS_ERROR, message: "cancelled" };
-      setStatus(obj2);
-      closure_0.end();
+      combined = "/" + tmp4;
     }
-  });
-  if (listener) {
-    on.on("spanEnd", (arg0) => {
-      if (arg0 === closure_0) {
-        const debug = _mod682.debug;
-        const log = debug.log;
-        const _HermesInternal = HermesInternal;
-        const obj = _mod682;
-        log("Removing AppState listener for " + obj.spanToJSON(tmp).op + " transaction.");
-        let remove;
-        if (null != listener) {
-          remove = tmp8.remove;
-        }
-        const tmp3 = null === remove || undefined === remove;
-        if (!tmp3) {
-          remove.call(listener);
-        }
-      }
-    });
+    str2 = "route";
+    pathname = combined;
   }
+  if (!tmp) {
+    [tmp2, str2] = getNormalizedName(routes, _location, items, str);
+    _slicedToArray(getNormalizedName(routes, _location, items, str), 2);
+  }
+  if (!pathname) {
+    pathname = _location.pathname;
+  }
+  items = [pathname, str2];
+  return items;
+};
+export { routeIsDescendant };
+export const setNavigationContext = function setNavigationContext(path, activeRootSpan) {
+  if (closure_5.length >= 10) {
+    const tmp = require;
+    if (_mod1019.DEBUG_BUILD) {
+      const debug = tmp(694).debug;
+      debug.warn("[React Router] Navigation context stack overflow - removing oldest context");
+    }
+    closure_5.shift();
+  }
+  const obj = {};
+  const obj2 = { token: obj, targetPath: path, span: activeRootSpan };
+  closure_5.push(obj2);
+  return obj;
+};
+export const transactionNameHasWildcard = function transactionNameHasWildcard(description) {
+  const hasItem = description.includes("/*") || description.endsWith("*");
+  return hasItem;
 };

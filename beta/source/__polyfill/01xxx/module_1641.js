@@ -1,49 +1,11 @@
 // Module ID: 1641
 // Function ID: 1642
-// Dependencies: [19, 17]
-// Exports: isAndroid, isChromeDebugger, isFabric, isIOS, isJest, isMacOS, isReact19, isWeb, isWindowAvailable, shouldBeUseWeb
+// Dependencies: [65]
 
 // Module 1641
-import react_native from "react-native" /* 17 */;
-import react from "react" /* 19 */;
+import module_65 from "module_65" /* 65 */;
 
-const version = react.version;
-const Platform = react_native.Platform;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "KeyboardToolbarGroupView", validAttributes: {} };
 
-export const isJest = function isJest() {
-  return process.env.JEST_WORKER_ID;
-};
-export const isChromeDebugger = function isChromeDebugger() {
-  return !(global.nativeCallSyncHook && !global.__REMOTEDEV__ || global.RN$Bridgeless);
-};
-export function isWeb() {
-  return false;
-}
-export function isAndroid() {
-  return true;
-}
-export function isIOS() {
-  return false;
-}
-export function isMacOS() {
-  return false;
-}
-export const shouldBeUseWeb = function shouldBeUseWeb() {
-  let flag = process.env.JEST_WORKER_ID;
-  if (!flag) {
-    flag = !(global.nativeCallSyncHook && !global.__REMOTEDEV__ || global.RN$Bridgeless);
-  }
-  if (!flag) {
-    flag = false;
-  }
-  return flag;
-};
-export const isFabric = function isFabric() {
-  return global._IS_FABRIC;
-};
-export const isReact19 = function isReact19() {
-  return version.startsWith("19.");
-};
-export const isWindowAvailable = function isWindowAvailable() {
-  return typeof window !== "undefined";
-};
+export default module_65.get("KeyboardToolbarGroupView", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

@@ -1,87 +1,148 @@
 // Module ID: 6122
 // Function ID: 6123
-// Dependencies: [6097, 6105, 6102, 6104, 6077]
-// Exports: updateHandlers
+// Dependencies: [32, 19, 6123, 6134, 6125, 6138, 6109]
+// Exports: useJSResponderHandler
 
 // Module 6122
-import handlerIDToTag from "handlerIDToTag" /* 6077 */;
-import ALLOWED_PROPS from "ALLOWED_PROPS" /* 6097 */;
-import react_nativeDefault from "react-native" /* 6102 */;
-import selectProperties from "selectProperties" /* 6104 */;
+import SHARED_VALUE_OFFSET from "SHARED_VALUE_OFFSET" /* 6123 */;
+import ComposedGestureName from "ComposedGestureName" /* 6125 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6134 */;
+import _mod6138 from "module_6138" /* 6138 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, closure_3, dependencyMap;
 
-
-export const updateHandlers = function updateHandlers(attachedGestures, prepare, arg2) {
-  let num;
-  _require = attachedGestures;
-  let closure_1 = arg2;
-  prepare.prepare();
-  for (let num = 0; num < arg2.length; num = num + 1) {
-    let tmp2 = attachedGestures.attachedGestures[num];
-    let tmp3 = _require;
-    let tmp4 = attachedGestures;
-    let obj = require("ALLOWED_PROPS");
-    let result = obj.checkGestureCallbacksForWorklets(tmp2);
-    let tmp6 = num;
-    if (arg2[num].handlerTag !== tmp2.handlerTag) {
-      ({ handlerTag: arg2[num].handlerTag, handlerTag: arg2[num].handlers.handlerTag } = tmp2);
-    }
-  }
-  attachedGestures = attachedGestures.attachedGestures;
-  let obj2 = require("ghQueueMicrotask");
-  obj2.ghQueueMicrotask(() => {
-    let arr2;
-    if (attachedGestures.isMounted) {
-      let arr = attachedGestures;
-      if (attachedGestures === tmp.attachedGestures) {
-        let tmp23 = arr.length !== closure_1.length;
-        let num = 0;
-        let tmp24 = tmp23;
-        if (0 < closure_1.length) {
-          do {
-            let tmp3 = attachedGestures[num];
-            arr2 = closure_1;
-            let tmp4 = tmp3.handlers.gestureId !== closure_1[num].handlers.gestureId;
-            let flag = tmp23;
-            let tmp2 = attachedGestures;
-            if (tmp4) {
-              let tmp6 = arr2[num].shouldUseReanimated || tmp3.shouldUseReanimated;
-              tmp4 = tmp6;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+function isSupportedGesture(gestures) {
+  const obj = maybeExtractNativeEvent;
+  if (obj.isComposedGesture(gestures)) {
+    gestures = gestures.gestures;
+    return gestures.some(isSupportedGesture);
+  } else {
+    const type = gestures.type;
+    if (ComposedGestureName.SingleGestureName.Tap !== type) {
+      if (ComposedGestureName.SingleGestureName.LongPress !== type) {
+        if (ComposedGestureName.SingleGestureName.Fling !== type) {
+          if (ComposedGestureName.SingleGestureName.Native !== type) {
+            if (ComposedGestureName.SingleGestureName.Hover !== type) {
+              return false;
             }
-            if (tmp4) {
-              flag = true;
-            }
-            tmp3.config = arr2[num].config;
-            tmp3.handlers = arr2[num].handlers;
-            let tmp9 = react_nativeDefault;
-            let setGestureHandlerConfig = tmp9.setGestureHandlerConfig;
-            let handlerTag = tmp3.handlerTag;
-            let obj = selectProperties;
-            let result = setGestureHandlerConfig(handlerTag, obj.filterConfig(tmp3.config, ALLOWED_PROPS.ALLOWED_PROPS));
-            let tmp16 = react_nativeDefault;
-            let configureRelations = tmp16.configureRelations;
-            let handlerTag2 = tmp3.handlerTag;
-            let obj2 = ALLOWED_PROPS;
-            let configureRelationsResult = configureRelations(handlerTag2, obj2.extractGestureRelations(tmp3));
-            let obj3 = handlerIDToTag;
-            let registerHandlerResult = obj3.registerHandler(tmp3.handlerTag, tmp3, tmp3.config.testId);
-            num = num + 1;
-            tmp23 = flag;
-            tmp24 = flag;
-            arr = tmp2;
-          } while (num < arr2.length);
-        }
-        if (attachedGestures.animatedHandlers) {
-          if (tmp24) {
-            const found = arr.filter((shouldUseReanimated) => shouldUseReanimated.shouldUseReanimated);
-            tmp25.animatedHandlers.value = found.map((handlers) => handlers.handlers);
           }
         }
-        const obj4 = selectProperties;
-        const result1 = obj4.scheduleFlushOperations();
       }
     }
-  });
+    return true;
+  }
+}
+({ use: c3, useCallback: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useState: metroImportDefault } = react);
+let closure_8 = SHARED_VALUE_OFFSET.SHARED_VALUE_OFFSET + 0.5;
+let closure_10 = { code: "function pnpm_useJSResponderHandlerTs1(sharedValues,id,notify){const{runOnJS}=this.__closure;const listener=runOnJS(notify);for(const sharedValue of sharedValues){sharedValue.addListener(id,listener);}}" };
+let closure_11 = { code: "function pnpm_useJSResponderHandlerTs2(sharedValues,id){for(const sharedValue of sharedValues){sharedValue.removeListener(id);}}" };
+
+export const useJSResponderHandler = function useJSResponderHandler(gesture) {
+  let closure_1;
+  let closure_2;
+  let first;
+  _require = gesture;
+  let tmp = closure_3(require("module_6138").JSResponderContext);
+  dependencyMap = tmp;
+  [first, _slicedToArray] = closure_7(0);
+  const tmp4 = closure_6(null);
+  closure_3 = tmp4;
+  if (null === tmp4.current) {
+    closure_8 = tmp6 + 1;
+    tmp4.current = +closure_8;
+  }
+  const items = [gesture];
+  closure_5(() => {
+    let runOnJS;
+    const Reanimated = gesture(closure_1[6]).Reanimated;
+    const obj = gesture(closure_1[2]);
+    const enabledSharedValues = obj.getEnabledSharedValues(Reanimated);
+    if (undefined !== Reanimated) {
+      if (0 !== enabledSharedValues.length) {
+        let tmp = runOnJS;
+        const current = runOnJS.current;
+        if (null !== current) {
+          runOnJS = Reanimated.runOnJS;
+          const fn = function o(arg0, arg1, arg2) {
+            const tmp = runOnJS(arg2);
+            const iter = arg0[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              let addListenerResult = nextResult.addListener(arg1, tmp);
+              continue;
+            }
+          };
+          const obj2 = { runOnJS };
+          fn.__closure = obj2;
+          fn.__workletHash = 3030529712101;
+          fn.__initData = __initData;
+          const fn2 = function l(arg0, arg1) {
+            const iter = arg0[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              let removeListenerResult = nextResult.removeListener(arg1);
+              continue;
+            }
+          };
+          fn2.__closure = {};
+          fn2.__workletHash = 3663767498079;
+          fn2.__initData = __initData2;
+          Reanimated.runOnUI(fn)(enabledSharedValues, current, () => {
+            current((arg0) => arg0 + 1);
+          });
+          return () => {
+            Reanimated.runOnUI(fn2)(enabledSharedValues, current);
+          };
+        }
+      }
+    }
+  }, items);
+  const items1 = [first, gesture];
+  const tmp8 = closure_4(() => {
+    const obj = maybeExtractNativeEvent;
+    let isGestureEnabledResult = obj.isGestureEnabled(gesture);
+    if (isGestureEnabledResult) {
+      let flag;
+      const tmpResult = maybeExtractNativeEvent;
+      if (tmpResult.isComposedGesture(gesture)) {
+        const gestures = tmp3.gestures;
+        flag = gestures.some(isSupportedGesture);
+      } else {
+        const type = tmp3.type;
+        if (ComposedGestureName.SingleGestureName.Tap !== type) {
+          if (ComposedGestureName.SingleGestureName.LongPress !== type) {
+            if (ComposedGestureName.SingleGestureName.Fling !== type) {
+              if (ComposedGestureName.SingleGestureName.Native !== type) {
+                flag = false;
+              }
+            }
+          }
+        }
+        flag = true;
+      }
+      isGestureEnabledResult = flag;
+    }
+    return isGestureEnabledResult;
+  }, items1);
+  closure_4 = tmp8;
+  const items2 = [tmp, tmp8];
+  let handleStartShouldSetResponder = closure_4(() => {
+    if (closure_4()) {
+      const obj = _mod6138;
+      const result = obj.updateResponderEventValue(closure_1, true);
+    }
+    return false;
+  }, items2);
+  if (null == tmp) {
+    handleStartShouldSetResponder = () => false;
+  }
+  return { handleStartShouldSetResponder };
 };

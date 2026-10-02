@@ -1,25 +1,25 @@
-// Module ID: 9291
-// Function ID: 9292
+// Module ID: 9269
+// Function ID: 9270
 // Name: Autocompleter
-// Dependencies: [9292, 9293, 4467, 4479, 1372, 5827, 5754, 9294, 2026, 5831, 9296, 2011, 4816, 4821, 1930, 1366, 12, 5830, 2]
+// Dependencies: [9270, 9271, 4470, 4482, 1378, 5828, 5755, 9272, 2032, 5832, 9274, 2017, 4817, 4822, 1936, 1372, 12, 5831, 2]
 
-// Module 9291 (Autocompleter)
+// Module 9269 (Autocompleter)
 import _modDef12 from "module_12" /* 12 */;
-import URLUtilsDefault from "URLUtils" /* 1366 */;
-import _modDef1930 from "module_1930" /* 1930 */;
-import StringUtils from "StringUtils" /* 2011 */;
-import GuildChannelStore from "GuildChannelStore" /* 4467 */;
-import findCodedLinks from "findCodedLinks" /* 4816 */;
-import CodedLink from "CodedLink" /* 4821 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 5754 */;
-import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5827 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 5830 */;
-import GuildUtilsDefault from "GuildUtils" /* 5831 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9294 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 9292 */;
-import LinkRecord from "LinkRecord" /* 9293 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
+import URLUtilsDefault from "URLUtils" /* 1372 */;
+import _modDef1936 from "module_1936" /* 1936 */;
+import StringUtils from "StringUtils" /* 2017 */;
+import GuildChannelStore from "GuildChannelStore" /* 4470 */;
+import findCodedLinks from "findCodedLinks" /* 4817 */;
+import CodedLink from "CodedLink" /* 4822 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 5755 */;
+import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5828 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 5831 */;
+import GuildUtilsDefault from "GuildUtils" /* 5832 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 9272 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 9270 */;
+import LinkRecord from "LinkRecord" /* 9271 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +41,7 @@ const AutocompleterResultTypes = autocompleter_AutocompleterConstants.Autocomple
 const React4 = Object.freeze({});
 let result = size.fileFinishedImporting("modules/autocompleter/Autocompleter.tsx");
 class Autocompleter {
-  constructor(onResultsChange, items1) {
+  constructor(onResultsChange, resultTypes) {
     let num = arg2;
     if (arg2 === undefined) {
       num = 100;
@@ -120,7 +120,7 @@ class Autocompleter {
     obj._limit = num;
     obj._refetchForSingleCategoryLimit = num2;
     const searchContext = obj.createSearchContext();
-    obj.setResultTypes(items1);
+    obj.setResultTypes(resultTypes);
     return obj;
   }
   createSearchContext() {
@@ -168,13 +168,13 @@ class Autocompleter {
   setRefetchForSingleCategoryLimit(_refetchForSingleCategoryLimit) {
     this._refetchForSingleCategoryLimit = _refetchForSingleCategoryLimit;
   }
-  setResultTypes(items1) {
+  setResultTypes(resultTypes) {
     set = null;
-    if (null != items1) {
+    if (null != resultTypes) {
       const _Set = Set;
       const self = this;
       const self2 = this;
-      set = new Set(items1);
+      set = new Set(resultTypes);
     }
     const self3 = this;
     this.resultTypes = set;
@@ -589,7 +589,7 @@ class Autocompleter {
         tmp3Result = AutocompleteUtils;
         return items;
       } else {
-        const obj8 = _modDef1930;
+        const obj8 = _modDef1936;
         const sanitizeUrlResult = obj8.sanitizeUrl(query);
         try {
           const _URL = URL;

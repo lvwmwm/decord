@@ -1,15 +1,17 @@
-// Module ID: 7875
-// Function ID: 7876
+// Module ID: 7879
+// Function ID: 7880
 // Name: AgeVerificationCustomTab
-// Dependencies: [5, 3, 560, 4798, 1364, 2]
-// Exports: getIsAgeVerificationCustomTabAwaitingResult, openAgeVerificationCustomTab, resumeAgeVerificationCustomTab, setAgeVerificationCustomTabCopy, useAgeVerificationCustomTabCopy, useIsAgeVerificationCustomTabOpen
+// Dependencies: [5, 3, 570, 4799, 1370, 558, 576, 2]
+// Exports: getIsAgeVerificationCustomTabAwaitingResult, openAgeVerificationCustomTab, resumeAgeVerificationCustomTab, setAgeVerificationCustomTabCopy
 
-// Module 7875 (AgeVerificationCustomTab)
+// Module 7879 (AgeVerificationCustomTab)
 import LoggerDefault from "Logger" /* 3 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import react_nativeDefault from "react-native" /* 4798 */;
+import react from "react" /* 576 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import react_nativeDefault from "react-native" /* 4799 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_560 from "module_560" /* 560 */;
+import module_570 from "module_570" /* 570 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,7 +67,7 @@ let obj = function _openAgeVerificationCustomTab() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -151,7 +153,7 @@ obj = function _resumeAgeVerificationCustomTab() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -203,10 +205,10 @@ obj = function _resumeAgeVerificationCustomTab() {
         } else {
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp20) {
         closure_2 = tmp20;
         if (0 === c3) {
@@ -234,9 +236,41 @@ function getIsAgeVerificationCustomTabOpen() {
 }
 let closure_4 = new LoggerDefault("AgeVerificationCustomTab");
 const tmp2 = new LoggerDefault("AgeVerificationCustomTab");
-let closure_6 = module_560.create(() => ({ isOpen: false, copy: null }));
+let closure_6 = module_570.create(() => ({ isOpen: false, copy: null }));
 let c7 = false;
 let c8 = null;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(isOpen) {
+      return isOpen.isOpen;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_6(first);
+}) : (() => closure_6((isOpen) => isOpen.isOpen));
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(copy) {
+      return copy.copy;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_6(first);
+}) : (() => closure_6((copy) => copy.copy));
 const result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationCustomTab.tsx");
 
 export const openAgeVerificationCustomTab = function openAgeVerificationCustomTab() {
@@ -256,10 +290,6 @@ export { releaseAgeVerificationCustomTab };
 export function getIsAgeVerificationCustomTabAwaitingResult() {
   return c7;
 }
-export const useIsAgeVerificationCustomTabOpen = function useIsAgeVerificationCustomTabOpen() {
-  return closure_6((isOpen) => isOpen.isOpen);
-};
-export const useAgeVerificationCustomTabCopy = function useAgeVerificationCustomTabCopy() {
-  return closure_6((copy) => copy.copy);
-};
+export const useIsAgeVerificationCustomTabOpen = tmp3;
+export const useAgeVerificationCustomTabCopy = tmp4;
 export { getIsAgeVerificationCustomTabOpen };

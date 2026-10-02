@@ -1,13 +1,13 @@
-// Module ID: 6927
-// Function ID: 6928
+// Module ID: 6931
+// Function ID: 6932
 // Name: isSpam
-// Dependencies: [1372, 1074, 6928, 2]
+// Dependencies: [1378, 1086, 6932, 2]
 // Exports: isSpam, isSpamSupported, isSpammer
 
-// Module 6927 (isSpam)
-import AutomodMessageUtils from "AutomodMessageUtils" /* 6928 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+// Module 6931 (isSpam)
+import AutomodMessageUtils from "AutomodMessageUtils" /* 6932 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c3;

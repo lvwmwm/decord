@@ -1,19 +1,19 @@
-// Module ID: 6521
-// Function ID: 6522
+// Module ID: 6522
+// Function ID: 6523
 // Name: GuildOnboardingPromptsStore
-// Dependencies: [2101, 2045, 6517, 6522, 6523, 12, 504, 1091, 11, 573, 2]
+// Dependencies: [2104, 2051, 6518, 6523, 6524, 12, 504, 1103, 11, 585, 2]
 
-// Module 6521 (GuildOnboardingPromptsStore)
+// Module 6522 (GuildOnboardingPromptsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import GuildOnboardingStore2 from "GuildOnboardingStore" /* 6517 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6522 */;
-import DefaultChannelUtils from "DefaultChannelUtils" /* 6523 */;
-import ImpersonateStore from "ImpersonateStore" /* 2101 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import GuildOnboardingStore2 from "GuildOnboardingStore" /* 6518 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6523 */;
+import DefaultChannelUtils from "DefaultChannelUtils" /* 6524 */;
+import ImpersonateStore from "ImpersonateStore" /* 2104 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
 import size from "module_2" /* 2 */;
 
 const GuildOnboardingStore = GuildOnboardingStore2;
@@ -199,9 +199,9 @@ class GuildOnboardingPromptsStore extends Store {
     }
     return tmp2;
   }
-  getDefaultChannelIds(id) {
+  getDefaultChannelIds(guildId) {
     let defaultChannelIds;
-    if (closure_8[id] != null) {
+    if (closure_8[guildId] != null) {
       defaultChannelIds = tmp.defaultChannelIds;
     }
     if (defaultChannelIds == null) {
@@ -224,8 +224,8 @@ class GuildOnboardingPromptsStore extends Store {
     }
     return flag;
   }
-  getOnboardingPrompt(targetId13) {
-    let closure_0 = targetId13;
+  getOnboardingPrompt(promptId) {
+    let closure_0 = promptId;
     const values = Object.values(closure_8);
     const mapped = values.map((prompts) => prompts.prompts);
     const flatResult = mapped.flat();

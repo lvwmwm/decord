@@ -1,24 +1,24 @@
-// Module ID: 13931
-// Function ID: 13932
+// Module ID: 13933
+// Function ID: 13934
 // Name: Menu
-// Dependencies: [32, 19, 17, 1074, 21, 13662, 4836, 576, 4566, 4550, 1613, 1479, 1364, 4541, 1115, 5275, 4837, 13666, 13660, 5280, 2]
+// Dependencies: [32, 19, 17, 1086, 21, 13664, 4837, 588, 4570, 4554, 1619, 1485, 1370, 4545, 1127, 5276, 4838, 13668, 13662, 5281, 2]
 // Exports: Menu
 
-// Module 13931 (Menu)
+// Module 13933 (Menu)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import timing from "timing" /* 4837 */;
-import react_native from "react-native" /* 5275 */;
-import spring from "spring" /* 5280 */;
-import Easing from "Easing" /* 13662 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import timing from "timing" /* 4838 */;
+import react_native from "react-native" /* 5276 */;
+import spring from "spring" /* 5281 */;
+import Easing from "Easing" /* 13664 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -112,9 +112,9 @@ export const Menu = function Menu(toggleButtonRef) {
   function openMenuCallback() {
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
-      const AccessibilityAnnouncer = tmp(4541).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp(4545).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = tmp(1115).intl;
+      const intl = tmp(1127).intl;
       announce(intl.string(intl2.t.ZqK0uI));
     }
     const obj2 = { ref };
@@ -297,7 +297,7 @@ export const Menu = function Menu(toggleButtonRef) {
         items1[1] = num4;
         items = [{ translateX: interpolate(value, [0, 1], items1) }, , ];
         const obj5 = { translateX: interpolate(value, [0, 1], items1) };
-        const interpolate2 = tmp2(4566).interpolate;
+        const interpolate2 = tmp2(4570).interpolate;
         ReanimatedRexport;
         const value8 = obj2.get();
         if ("top" === closure_11) {
@@ -360,14 +360,14 @@ export const Menu = function Menu(toggleButtonRef) {
   obj7 = { children: sharedValue1(Provider, obj8) };
   obj8 = {
     value: { menuClose: handleClose, menuDismiss: handleDismiss },
-    children: Children.map(children, (icon, arg1) => {
-      let cloneElementResult = icon;
+    children: Children.map(children, (label, arg1) => {
+      let cloneElementResult = label;
       if (0 === arg1) {
-        cloneElementResult = icon;
+        cloneElementResult = label;
         const obj = react;
-        if (react.isValidElement(icon)) {
+        if (react.isValidElement(label)) {
           const obj2 = { ref };
-          cloneElementResult = obj.cloneElement(icon, obj2);
+          cloneElementResult = obj.cloneElement(label, obj2);
         }
       }
       return cloneElementResult;

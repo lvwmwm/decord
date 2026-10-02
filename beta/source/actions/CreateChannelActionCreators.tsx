@@ -1,19 +1,19 @@
-// Module ID: 9014
-// Function ID: 9015
+// Module ID: 8991
+// Function ID: 8992
 // Name: CreateChannelActionCreators
-// Dependencies: [5017, 1074, 1084, 573, 5029, 1249, 2057, 1271, 6540, 6535, 6741, 2]
+// Dependencies: [5018, 1086, 1096, 585, 5030, 1261, 2063, 1283, 6541, 6536, 6742, 2]
 
-// Module 9014 (CreateChannelActionCreators)
-import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import TypeUtils from "TypeUtils" /* 2057 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5029 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 6741 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
-import Constants from "Constants" /* 1074 */;
+// Module 8991 (CreateChannelActionCreators)
+import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import TypeUtils from "TypeUtils" /* 2063 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5030 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6536 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6541 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 6742 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5018 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -44,7 +44,7 @@ let obj = {
     ({ bitrate, userLimit, parentId, skuId, applicationId, flags, availableTags, gameId } = guildId);
     const branchId = guildId.branchId;
     const tmp = permissionOverwrites;
-    let obj = permissionOverwrites(573);
+    let obj = permissionOverwrites(585);
     obj.dispatch({ type: "CREATE_CHANNEL_MODAL_SUBMIT", guildId, channelType: type });
     let obj2 = { type, name, permission_overwrites: permissionOverwrites };
     let tmp4 = null != bitrate;
@@ -95,11 +95,11 @@ let obj = {
         obj2.application_id = applicationId;
       }
     }
-    const tmpResult = tmp(5029);
+    const tmpResult = tmp(5030);
     const request = { url: closure_6.GUILD_CHANNELS(guildId), body: obj2, oldFormErrors: true, trackedActionData: obj3, rejectWithError: obj5.rejectWithMigratedError() };
     const post = tmpResult.post;
     obj3 = {
-      event: guildId(1249).NetworkActionNames.CHANNEL_CREATE,
+      event: guildId(1261).NetworkActionNames.CHANNEL_CREATE,
       properties(body) {
         let id;
         let type;
@@ -123,7 +123,7 @@ let obj = {
         return exact(obj);
       }
     };
-    obj5 = guildId(1271);
+    obj5 = guildId(1283);
     const postResult = post(request);
     return postResult.then((body) => {
       let obj2;

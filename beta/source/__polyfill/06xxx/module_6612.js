@@ -1,35 +1,12 @@
 // Module ID: 6612
 // Function ID: 6613
-// Dependencies: [19, 6613]
-// Exports: useClipboard
+// Dependencies: [6613, 6614]
 
 // Module 6612
-import _mod6613 from "module_6613" /* 6613 */;
-import react from "react" /* 19 */;
+import _mod6614 from "module_6614" /* 6614 */;
 
-function setString(arg0) {
-  let closure_0 = arg0;
-  const Clipboard = _mod6613.Clipboard;
-  Clipboard.setString(arg0);
-  const item = set.forEach((fn) => fn(closure_0));
-}
-const set = new Set();
+const require = globalThis.__r;
 
-export const useClipboard = () => {
-  let tmp2;
-  const state = react.useState("");
-  [tmp2, require] = state;
-  const effect = react.useEffect(() => {
-    const Clipboard = _mod6613.Clipboard;
-    const string = Clipboard.getString();
-    string.then(require);
-  }, []);
-  const effect1 = react.useEffect(() => {
-    set.add(require);
-    return () => {
-      set.delete(closure_1_0);
-    };
-  }, []);
-  const items = [tmp2, setString];
-  return items;
-};
+
+export const useClipboard = require("module_6613").useClipboard;
+export default _mod6614.Clipboard;

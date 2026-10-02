@@ -1,133 +1,177 @@
 // Module ID: 9950
 // Function ID: 9951
-// Dependencies: [9891, 9898, 9900, 9951, 9952, 9924, 9953, 9954, 9955, 9956, 9958, 9959, 9960, 9961, 9962, 9931]
-// Exports: createCasualConfiguration, parse, parseDate
+// Dependencies: [41, 42, 93, 95, 98, 9934, 9951]
 
 // Module 9950
-import _mod9924 from "module_9924" /* 9924 */;
-import includeCommonConfiguration2 from "includeCommonConfiguration" /* 9931 */;
+import EmptyDuration from "EmptyDuration" /* 9934 */;
 import _mod9951 from "module_9951" /* 9951 */;
-import _mod9952 from "module_9952" /* 9952 */;
-import _mod9953 from "module_9953" /* 9953 */;
-import _mod9954 from "module_9954" /* 9954 */;
-import _mod9955 from "module_9955" /* 9955 */;
-import _mod9956 from "module_9956" /* 9956 */;
-import _mod9958 from "module_9958" /* 9958 */;
-import _mod9959 from "module_9959" /* 9959 */;
-import _mod9960 from "module_9960" /* 9960 */;
-import _mod9961 from "module_9961" /* 9961 */;
-import _mod9962 from "module_9962" /* 9962 */;
-import { Chrono } from "module_9891" /* 9891 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const require = globalThis.__r;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-function createConfiguration(flag, arg1) {
-  let items;
-  let items1;
-  if (flag === undefined) {
-    flag = true;
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  let flag2 = arg1;
-  if (arg1 === undefined) {
-    flag2 = true;
-  }
-  const obj = { parsers: items, refiners: items1 };
-  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
-  items = [new module_9924.default(flag2), , , , , , ];
-  new module_9924.default(flag2);
-  items[1] = new module_9959.default();
-  new module_9959.default();
-  items[2] = new module_9953.default();
-  new module_9953.default();
-  items[3] = new module_9958.default();
-  new module_9958.default();
-  items[4] = new module_9960.default();
-  new module_9960.default();
-  items[5] = new module_9961.default();
-  new module_9961.default();
-  items[6] = new module_9956.default();
-  new module_9956.default();
-  items1 = [new module_9954.default(), ];
-  new module_9954.default();
-  items1[1] = new module_9955.default();
-  new module_9955.default();
-  return includeCommonConfiguration(obj, flag);
 }
-const fn = this && this.__importDefault || ((__esModule) => {
-  let tmp2;
-  const tmp = __esModule;
-  if (!tmp) {
-    tmp2 = { default: __esModule };
-    const obj = { default: __esModule };
-  } else {
-    tmp2 = __esModule;
+class AbstractMergeDateRangeRefiner {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, AbstractMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(AbstractMergeDateRangeRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
   }
-  return tmp2;
-});
-function createCasualConfiguration() {
-  let flag = arg0;
-  if (arg0 === undefined) {
-    flag = true;
-  }
-  const tmp = createConfiguration(false, flag);
-  const parsers = tmp.parsers;
-  const unshift = parsers.unshift;
-  const _default = new module_9951.default();
-  unshift(_default);
-  const parsers1 = tmp.parsers;
-  const unshift2 = parsers1.unshift;
-  const _default1 = new module_9952.default();
-  unshift2(_default1);
-  const parsers2 = tmp.parsers;
-  const unshift3 = parsers2.unshift;
-  const _default2 = new module_9962.default();
-  unshift3(_default2);
-  return tmp;
 }
-const module_9951 = fn(_mod9951);
-const module_9952 = fn(_mod9952);
-const module_9924 = fn(_mod9924);
-const module_9953 = fn(_mod9953);
-const module_9954 = fn(_mod9954);
-const module_9955 = fn(_mod9955);
-const module_9956 = fn(_mod9956);
-const module_9958 = fn(_mod9958);
-const module_9959 = fn(_mod9959);
-const module_9960 = fn(_mod9960);
-const module_9961 = fn(_mod9961);
-const module_9962 = fn(_mod9962);
-const configuration = createConfiguration(false, true);
-let parsers = configuration.parsers;
-let unshift = parsers.unshift;
-let _default = new module_9951.default();
-unshift(_default);
-let parsers1 = configuration.parsers;
-let unshift2 = parsers1.unshift;
-let _default1 = new module_9952.default();
-unshift2(_default1);
-let parsers2 = configuration.parsers;
-let unshift3 = parsers2.unshift;
-let _default2 = new module_9962.default();
-unshift3(_default2);
-const chrono = new Chrono(configuration);
-const chrono1 = new require("module_9891").Chrono(createConfiguration(true));
-const Chrono_export = require("module_9891").Chrono;
+_inherits(AbstractMergeDateRangeRefiner, _mod9951.MergingRefiner);
+const entry = {
+  key: "shouldMergeResults",
+  value: function shouldMergeResults(str, end, end2) {
+    let tmp = !end.end && !end2.end;
+    if (tmp) {
+      const self = this;
+      tmp = null != str.match(this.patternBetween());
+    }
+    return tmp;
+  }
+};
+let items = [
+  entry,
+  {
+    key: "mergeResults",
+    value: function mergeResults(arg0, start, start2) {
+      let closure_0 = start;
+      let first = start2;
+      start = start.start;
+      let result = start.isOnlyWeekdayComponent();
+      if (!result) {
+        start2 = start2.start;
+        result = start2.isOnlyWeekdayComponent();
+      }
+      if (!result) {
+        let start3 = start2.start;
+        const certainComponents = start3.getCertainComponents();
+        const item = certainComponents.forEach((item) => {
+          const start = closure_0.start;
+          const tmp = closure_0;
+          if (!start.isCertain(item)) {
+            const start2 = tmp.start;
+            const start3 = first.start;
+            start2.imply(item, start3.get(item));
+          }
+        });
+        const start4 = start.start;
+        const certainComponents1 = start4.getCertainComponents();
+        const item1 = certainComponents1.forEach((item) => {
+          const start = first.start;
+          const tmp = first;
+          if (!start.isCertain(item)) {
+            const start2 = tmp.start;
+            const start3 = closure_0.start;
+            start2.imply(item, start3.get(item));
+          }
+        });
+      }
+      const start5 = start.start;
+      const start6 = start2.start;
+      let tmp5 = start2;
+      let obj = start;
+      const dateResult = start5.date();
+      if (dateResult > start6.date()) {
+        const start18 = start.start;
+        const dateResult1 = start18.date();
+        const start19 = start2.start;
+        const dateResult2 = start19.date();
+        const start20 = start2.start;
+        if (start20.isOnlyWeekdayComponent()) {
+          const tmp6 = require;
+          if (EmptyDuration.addDuration(dateResult2, { day: 7 }) > dateResult1) {
+            const addDurationResult = tmp6(9934).addDuration(dateResult2, { day: 7 });
+            const start15 = start2.start;
+            start15.imply("day", addDurationResult.getDate());
+            const start16 = start2.start;
+            start16.imply("month", addDurationResult.getMonth() + 1);
+            const start17 = start2.start;
+            start17.imply("year", addDurationResult.getFullYear());
+            tmp5 = start2;
+            obj = start;
+          }
+        }
+        const start7 = start.start;
+        if (start7.isOnlyWeekdayComponent()) {
+          const tmp8 = require;
+          if (EmptyDuration.addDuration(dateResult1, { day: -7 }) < dateResult2) {
+            const addDurationResult1 = tmp8(9934).addDuration(dateResult1, { day: -7 });
+            const start12 = start.start;
+            start12.imply("day", addDurationResult1.getDate());
+            const start13 = start.start;
+            start13.imply("month", addDurationResult1.getMonth() + 1);
+            const start14 = start.start;
+            start14.imply("year", addDurationResult1.getFullYear());
+            tmp5 = start2;
+            obj = start;
+          }
+        }
+        const start8 = start2.start;
+        if (start8.isDateWithUnknownYear()) {
+          const tmp10 = require;
+          if (EmptyDuration.addDuration(dateResult2, { year: 1 }) > dateResult1) {
+            const start11 = start2.start;
+            const addDurationResult2 = tmp10(9934).addDuration(dateResult2, { year: 1 });
+            start11.imply("year", addDurationResult2.getFullYear());
+            tmp5 = start2;
+            obj = start;
+          }
+        }
+        const start9 = start.start;
+        if (start9.isDateWithUnknownYear()) {
+          const tmp12 = require;
+          if (EmptyDuration.addDuration(dateResult1, { year: -1 }) < dateResult2) {
+            const start10 = start.start;
+            const addDurationResult3 = tmp12(9934).addDuration(dateResult1, { year: -1 });
+            start10.imply("year", addDurationResult3.getFullYear());
+            tmp5 = start2;
+            obj = start;
+          }
+        }
+        const items = [start, start2];
+        first = items[0];
+        closure_0 = tmp15;
+        tmp5 = first;
+        obj = tmp15;
+      }
+      const cloneResult = obj.clone();
+      cloneResult.start = obj.start;
+      cloneResult.end = tmp5.start;
+      cloneResult.index = Math.min(obj.index, tmp5.index);
+      if (obj.index < tmp5.index) {
+        cloneResult.text = obj.text + arg0 + tmp5.text;
+      } else {
+        cloneResult.text = tmp5.text + arg0 + obj.text;
+      }
+      return cloneResult;
+    }
+  }
+];
 
-export const parse = function parse(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parse(arg0, arg1, arg2);
-};
-export const parseDate = function parseDate(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parseDate(arg0, arg1, arg2);
-};
-export { createCasualConfiguration };
-export { createConfiguration };
-export { Chrono_export as Chrono };
-export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
-export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
-export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
-export const Meridiem = require("Meridiem").Meridiem;
-export const Weekday = require("Meridiem").Weekday;
-export const casual = chrono;
-export const strict = chrono1;
+export default _createClass(AbstractMergeDateRangeRefiner, items);

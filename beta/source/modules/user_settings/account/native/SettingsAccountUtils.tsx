@@ -1,20 +1,48 @@
-// Module ID: 14242
-// Function ID: 14243
+// Module ID: 14230
+// Function ID: 14231
 // Name: SettingsAccountUtils
-// Dependencies: [502, 1372, 563, 2]
-// Exports: useIs2FAEnabled, useIsTOTPEnabled, useIsUserVerified
+// Dependencies: [502, 1378, 558, 576, 573, 2]
 
-// Module 14242 (SettingsAccountUtils)
-import useStateFromStores from "useStateFromStores" /* 563 */;
+// Module 14230 (SettingsAccountUtils)
+import react from "react" /* 576 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
 
-const result = size.fileFinishedImporting("modules/user_settings/account/native/SettingsAccountUtils.tsx");
-
-export const useIs2FAEnabled = function useIs2FAEnabled() {
+let tmp;
+const useStateFromStores = tmp(573);
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function s() {
+      currentUser = currentUser.getCurrentUser();
+      let flag;
+      if (currentUser != null) {
+        flag = currentUser.mfaEnabled;
+      }
+      if (flag == null) {
+        flag = false;
+      }
+      return flag;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = useStateFromStores;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
   const items = [UserStore];
   const obj = useStateFromStores;
   return obj.useStateFromStores(items, () => {
@@ -28,13 +56,61 @@ export const useIs2FAEnabled = function useIs2FAEnabled() {
     }
     return flag;
   });
-};
-export const useIsTOTPEnabled = function useIsTOTPEnabled() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthenticationStore];
+    const fn = function s() {
+      return AuthenticationStore.hasTOTPEnabled();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = useStateFromStores;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
   const items = [AuthenticationStore];
   const obj = useStateFromStores;
   return obj.useStateFromStores(items, () => AuthenticationStore.hasTOTPEnabled());
-};
-export const useIsUserVerified = function useIsUserVerified() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function s() {
+      currentUser = currentUser.getCurrentUser();
+      let flag;
+      if (currentUser != null) {
+        flag = currentUser.verified;
+      }
+      if (flag == null) {
+        flag = false;
+      }
+      return flag;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = useStateFromStores;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
   const items = [UserStore];
   const obj = useStateFromStores;
   return obj.useStateFromStores(items, () => {
@@ -48,4 +124,9 @@ export const useIsUserVerified = function useIsUserVerified() {
     }
     return flag;
   });
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/account/native/SettingsAccountUtils.tsx");
+
+export const useIs2FAEnabled = tmp2;
+export const useIsTOTPEnabled = tmp3;
+export const useIsUserVerified = tmp4;

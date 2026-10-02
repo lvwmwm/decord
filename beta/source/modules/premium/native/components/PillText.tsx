@@ -1,27 +1,75 @@
-// Module ID: 12957
-// Function ID: 12958
+// Module ID: 12959
+// Function ID: 12960
 // Name: PillText
-// Dependencies: [1074, 21, 4836, 576, 12958, 5293, 4832, 2]
-// Exports: default
+// Dependencies: [1086, 21, 4837, 588, 558, 576, 12960, 4833, 5292, 2]
 
-// Module 12957 (PillText)
+// Module 12959 (PillText)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 12958 */;
-import createStyles from "createStyles" /* 4836 */;
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 12960 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
+let tmp;
+let tmp5;
+const Text_Text = tmp(4833);
+const LinearGradientDefault = tmp5(5292);
 const HorizontalGradient = Constants.HorizontalGradient;
 const jsx = Fragment.jsx;
-const obj = { pillTextContainer: obj2, pillText: { textTransform: "uppercase" } };
+let obj = { pillTextContainer: obj2, pillText: { textTransform: "uppercase" } };
 obj2 = { paddingHorizontal: 8, borderRadius: nativeDefault.radii.lg, justifyContent: "center" };
 let closure_5 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/premium/native/components/PillText.tsx");
-
-export default function PillText(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let pillText;
+  let style;
+  const obj = react;
+  const cResult = obj.c(10);
+  ({ pillText, style } = arg0);
+  const tmp4 = closure_5();
+  const tmp6 = usePremiumPrimaryGradientColorsDefault();
+  if (cResult[0] === style) {
+    let tmp7;
+    if (cResult[1] === tmp4.pillTextContainer) {
+      tmp7 = cResult[2];
+    }
+    if (cResult[3] === pillText) {
+      let tmp8;
+      if (cResult[4] === tmp4.pillText) {
+        tmp8 = cResult[5];
+      }
+      if (cResult[6] === tmp6) {
+        if (cResult[7] === tmp7) {
+          let tmp11;
+          if (cResult[8] === tmp8) {
+            tmp11 = cResult[9];
+          }
+          return tmp11;
+        }
+      }
+      ({ START: obj3.start, END: obj3.end } = HorizontalGradient);
+      const tmp14 = jsx(LinearGradientDefault, { style: tmp7, start: null, end: null, colors: tmp6, children: tmp8 });
+      cResult[6] = tmp6;
+      cResult[7] = tmp7;
+      cResult[8] = tmp8;
+      cResult[9] = tmp14;
+      tmp11 = tmp14;
+    }
+    const tmp10 = jsx(Text_Text.Text, { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp4.pillText, children: pillText });
+    cResult[3] = pillText;
+    cResult[4] = tmp4.pillText;
+    cResult[5] = tmp10;
+    tmp8 = tmp10;
+  }
+  const items = [tmp4.pillTextContainer, style];
+  cResult[0] = style;
+  cResult[1] = tmp4.pillTextContainer;
+  cResult[2] = items;
+  tmp7 = items;
+}) : ((arg0) => {
   let pillText;
   let style;
   ({ pillText, style } = arg0);
@@ -29,4 +77,7 @@ export default function PillText(arg0) {
   const items = [tmp.pillTextContainer, style];
   LinearGradientDefault;
   return <tmp3 style={items} start={HorizontalGradient.START} end={HorizontalGradient.END} colors={usePremiumPrimaryGradientColorsDefault()}>{null}</tmp3>;
-};
+});
+const result = size.fileFinishedImporting("modules/premium/native/components/PillText.tsx");
+
+export default tmp2;

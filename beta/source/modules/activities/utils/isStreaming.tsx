@@ -1,12 +1,12 @@
-// Module ID: 7705
-// Function ID: 7706
+// Module ID: 7709
+// Function ID: 7710
 // Name: isStreaming
-// Dependencies: [2005, 1074, 2]
+// Dependencies: [2011, 1086, 2]
 // Exports: default
 
-// Module 7705 (isStreaming)
-import Constants from "Constants" /* 1074 */;
-import Constants2 from "Constants" /* 2005 */;
+// Module 7709 (isStreaming)
+import Constants from "Constants" /* 1086 */;
+import Constants2 from "Constants" /* 2011 */;
 import size from "module_2" /* 2 */;
 
 function _isStreaming(type) {
@@ -21,17 +21,17 @@ const validStreamURL = Constants2.validStreamURL;
 const ActivityTypes = Constants.ActivityTypes;
 const result = size.fileFinishedImporting("modules/activities/utils/isStreaming.tsx");
 
-export default function isStreaming(type) {
-  let tmp = null != type;
+export default function isStreaming(react) {
+  let tmp = null != react;
   if (tmp) {
     let someResult;
     const _Array = Array;
-    if (Array.isArray(type)) {
-      someResult = type.some(_isStreaming);
+    if (Array.isArray(react)) {
+      someResult = react.some(_isStreaming);
     } else {
-      someResult = type.type === ActivityTypes.STREAMING;
+      someResult = react.type === ActivityTypes.STREAMING;
       if (someResult) {
-        const isMatch = null != type.url && validStreamURL.test(type.url);
+        const isMatch = null != react.url && validStreamURL.test(react.url);
         someResult = isMatch;
       }
     }

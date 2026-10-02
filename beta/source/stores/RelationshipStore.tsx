@@ -1,15 +1,15 @@
-// Module ID: 4479
-// Function ID: 4480
+// Module ID: 4482
+// Function ID: 4483
 // Name: RelationshipStore
-// Dependencies: [32, 4480, 1372, 1074, 573, 504, 2]
+// Dependencies: [32, 4483, 1378, 1086, 585, 504, 2]
 
-// Module 4479 (RelationshipStore)
+// Module 4482 (RelationshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4480 */;
-import UserStore from "UserStore" /* 1372 */;
+import MessageRecord from "MessageRecord" /* 4483 */;
+import UserStore from "UserStore" /* 1378 */;
 import size_mod from "module_2" /* 2 */;
 
 function markAllUserIdListsStale() {
@@ -110,7 +110,7 @@ let closure_14 = 0;
 let closure_15 = {};
 let closure_16 = 0;
 let size = 0;
-let closure_19 = { friends: "Array", blocked: "PX_8", ignored: "y", blockedOrIgnored: "HermesInternal" };
+let closure_19 = { friends: "status", blocked: "unicodeVersion", ignored: "marginTop", blockedOrIgnored: "unicodeVersion" };
 const set3 = new Set();
 const map1 = new Map();
 const Store = get_initializedDefault.Store;

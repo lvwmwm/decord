@@ -4,71 +4,28 @@
 
 // Module 1903
 const obj = {
-  locale: "fr",
+  locale: "da",
   pluralRuleFunction(arg0, arg1) {
-    let str2;
-    const tmp = arg1;
-    if (tmp) {
-      let str3 = "other";
-      if (1 == arg0) {
-        str3 = "one";
-      }
-      str2 = str3;
+    let str3;
+    const str = String(arg0);
+    const parts = str.split(".");
+    const first = parts[0];
+    const tmp4 = arg1;
+    if (tmp4) {
+      str3 = "other";
     } else {
-      str2 = "other";
-      if (arg0 >= 0) {
-        str2 = "other";
-        if (arg0 < 2) {
-          str2 = "one";
+      str3 = "one";
+      if (1 != arg0) {
+        if (!tmp3) {
+          str3 = "one";
+          if (0 != first) {
+            str3 = "one";
+          }
         }
       }
     }
-    return str2;
+    return str3;
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-BE", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-BF", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-BI", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-BJ", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-BL", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-CA", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-CD", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-CF", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-CG", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-CH", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-CI", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-CM", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-DJ", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-DZ", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-GA", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-GF", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-GN", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-GP", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-GQ", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-HT", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-KM", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-LU", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-MA", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-MC", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-MF", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-MG", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-ML", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-MQ", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-MR", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-MU", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-NC", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-NE", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-PF", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-PM", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-RE", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-RW", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-SC", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-SN", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-SY", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-TD", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-TG", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-TN", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-VU", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-WF", parentLocale: "fr" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "fr-YT", parentLocale: "fr" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "da-GL", parentLocale: "da" });

@@ -1,15 +1,16 @@
-// Module ID: 10889
-// Function ID: 10890
+// Module ID: 9540
+// Function ID: 9541
 // Name: ChannelSummariesExperiment
-// Dependencies: [2063, 2067, 1074, 2052, 2070, 563, 2]
-// Exports: canGuildUseConversationSummaries, channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries
+// Dependencies: [2069, 2073, 1086, 2058, 2076, 558, 576, 573, 2]
+// Exports: canGuildUseConversationSummaries, channelEligibleForSummaries, useChannelSummariesExperiment
 
-// Module 10889 (ChannelSummariesExperiment)
-import ChannelConstants from "ChannelConstants" /* 2052 */;
-import GuildRecord from "GuildRecord" /* 2063 */;
-import FavoritesUtils from "FavoritesUtils" /* 2070 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import Constants from "Constants" /* 1074 */;
+// Module 9540 (ChannelSummariesExperiment)
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import GuildRecord from "GuildRecord" /* 2069 */;
+import FavoritesUtils from "FavoritesUtils" /* 2076 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -93,13 +94,7 @@ function canSeeChannelSummaries(channel, flag, arg2) {
 const isGuildNSFW = GuildRecord.isGuildNSFW;
 ({ ME: closure_4, ChannelTypesSets: hasOwnProperty, GuildFeatures: metroRequire, EMPTY_STRING_SNOWFLAKE_ID: metroImportDefault } = Constants);
 const ChannelFlags = ChannelConstants.ChannelFlags;
-const result = size.fileFinishedImporting("experiments/ChannelSummariesExperiment.tsx");
-
-export const channelEligibleForSummaries = function channelEligibleForSummaries(channel) {
-  return canSeeChannelSummaries(channel, true, false);
-};
-export { canSeeChannelSummaries };
-export const canGuildUseConversationSummaries = function canGuildUseConversationSummaries(guild, arg1) {
+function canGuildUseConversationSummaries(guild, arg1) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
@@ -134,15 +129,86 @@ export const canGuildUseConversationSummaries = function canGuildUseConversation
     tmp = tmp7;
   }
   return tmp;
-};
-export const useChannelSummariesExperiment = function useChannelSummariesExperiment(channel) {
-  let flag;
-  if (flag === undefined) {
-    flag = false;
+}
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
+  let first;
+  let tmp10;
+  let tmp8;
+  _require = id;
+  let obj = require("react");
+  const cResult = obj.c(5);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp5 = GuildStore;
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
   }
-  return canSeeChannelSummaries(channel, flag);
-};
-export const useGuildEligibleForSummaries = function useGuildEligibleForSummaries(arg0) {
+  id = undefined;
+  const tmp6 = cResult[1];
+  if (id != null) {
+    id = id.id;
+  }
+  if (tmp6 !== id) {
+    let id1;
+    if (id != null) {
+      id1 = id.id;
+    }
+    const fn = function t() {
+      let id1;
+      const getGuild = GuildStore.getGuild;
+      if (id != null) {
+        id1 = id.id;
+      }
+      if (id1 == null) {
+        id1 = metroImportDefault;
+      }
+      const guild = getGuild(id1);
+      let tmp4 = null != guild;
+      if (tmp4) {
+        id = guild.id;
+        let tmp5 = null != id;
+        if (tmp5) {
+          let isFavoritesGuildIdResult = id === React3;
+          if (!isFavoritesGuildIdResult) {
+            const obj = FavoritesUtils;
+            isFavoritesGuildIdResult = obj.isFavoritesGuildId(id);
+          }
+          tmp5 = isFavoritesGuildIdResult;
+        }
+        let tmp10 = !tmp5;
+        if (tmp10) {
+          const features = guild.features;
+          let hasItem = features.has(metroRequire.SUMMARIES_ENABLED_GA);
+          if (hasItem) {
+            // // eliminated: always false
+            hasItem = flag2;
+          }
+          tmp10 = hasItem;
+        }
+        tmp4 = tmp10;
+      }
+      return tmp4;
+    };
+    cResult[1] = id1;
+    cResult[2] = fn;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] !== id) {
+    const items1 = [id];
+    cResult[3] = id;
+    cResult[4] = items1;
+    tmp10 = items1;
+  } else {
+    tmp10 = cResult[4];
+  }
+  const tmpResult = tmp(573);
+  return tmpResult.useStateFromStores(first, tmp8, tmp10);
+}) : ((arg0) => {
   _require = arg0;
   let obj = require("useStateFromStores");
   const items = [GuildStore];
@@ -183,4 +249,19 @@ export const useGuildEligibleForSummaries = function useGuildEligibleForSummarie
     }
     return tmp4;
   }, items1);
+});
+const result = size.fileFinishedImporting("experiments/ChannelSummariesExperiment.tsx");
+
+export const channelEligibleForSummaries = function channelEligibleForSummaries(channel) {
+  return canSeeChannelSummaries(channel, true, false);
 };
+export { canSeeChannelSummaries };
+export { canGuildUseConversationSummaries };
+export const useChannelSummariesExperiment = function useChannelSummariesExperiment(channel) {
+  let flag;
+  if (flag === undefined) {
+    flag = false;
+  }
+  return canSeeChannelSummaries(channel, flag);
+};
+export const useGuildEligibleForSummaries = tmp3;

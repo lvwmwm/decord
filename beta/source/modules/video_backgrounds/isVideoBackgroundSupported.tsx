@@ -1,14 +1,14 @@
-// Module ID: 9122
-// Function ID: 9123
+// Module ID: 9099
+// Function ID: 9100
 // Name: isVideoBackgroundSupported
-// Dependencies: [1993, 4861, 1364, 9123, 2]
+// Dependencies: [1999, 4862, 1370, 9100, 2]
 // Exports: default
 
-// Module 9122 (isVideoBackgroundSupported)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import Constants from "Constants" /* 4861 */;
-import VirtualBackgroundsIosExperimentDefault from "VirtualBackgroundsIosExperiment" /* 9123 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+// Module 9099 (isVideoBackgroundSupported)
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import Constants from "Constants" /* 4862 */;
+import VirtualBackgroundsIosExperimentDefault from "VirtualBackgroundsIosExperiment" /* 9100 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
 import size from "module_2" /* 2 */;
 
 const Features = Constants.Features;

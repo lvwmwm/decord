@@ -1,10 +1,10 @@
-// Module ID: 4733
-// Function ID: 4734
+// Module ID: 4735
+// Function ID: 4736
 // Name: AppliedGuildBoostRecord
-// Dependencies: [1387, 2]
+// Dependencies: [1393, 2]
 
-// Module 4733 (AppliedGuildBoostRecord)
-import Record from "Record" /* 1387 */;
+// Module 4735 (AppliedGuildBoostRecord)
+import Record from "Record" /* 1393 */;
 import size from "module_2" /* 2 */;
 
 let user;

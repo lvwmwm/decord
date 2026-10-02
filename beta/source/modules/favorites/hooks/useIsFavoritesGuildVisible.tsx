@@ -1,16 +1,20 @@
-// Module ID: 14872
-// Function ID: 14873
+// Module ID: 14860
+// Function ID: 14861
 // Name: useIsFavoritesGuildVisible
-// Dependencies: [4655, 2048, 2070, 9701, 9685, 504, 2]
-// Exports: default, isFavoritesGuildVisible
+// Dependencies: [4657, 2054, 2076, 9819, 9807, 558, 576, 504, 2]
+// Exports: isFavoritesGuildVisible
 
-// Module 14872 (useIsFavoritesGuildVisible)
-import FavoritesUtils from "FavoritesUtils" /* 2070 */;
-import FavoritesHooks from "FavoritesHooks" /* 9685 */;
-import FavoritesGuildIntroPopover from "FavoritesGuildIntroPopover" /* 9701 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
-import FavoriteStore from "FavoriteStore" /* 2048 */;
+// Module 14860 (useIsFavoritesGuildVisible)
+import FavoritesUtils from "FavoritesUtils" /* 2076 */;
+import FavoritesHooks from "FavoritesHooks" /* 9807 */;
+import FavoritesGuildIntroPopover from "FavoritesGuildIntroPopover" /* 9819 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import FavoriteStore from "FavoriteStore" /* 2054 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+let _require;
 
 function computeIsFavoritesGuildVisible(FavoriteStore, SelectedGuildStore, isExperimentEnabled) {
   let hasAccess;
@@ -52,9 +56,58 @@ function computeIsFavoritesGuildVisible(FavoriteStore, SelectedGuildStore, isExp
   }
   return isExperimentEnabled;
 }
-const result = size.fileFinishedImporting("modules/favorites/hooks/useIsFavoritesGuildVisible.tsx");
-
-export default function useIsFavoritesGuildVisible() {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let first;
+  let isExperimentEnabled;
+  let keepWhileViewing;
+  let obj = require("react");
+  const cResult = obj.c(8);
+  _require = tmp4;
+  const tmpResult = require("FavoritesHooks");
+  const favoritesAccess = tmpResult.useFavoritesAccess();
+  isExperimentEnabled = favoritesAccess.isExperimentEnabled;
+  const isFreemium = favoritesAccess.isFreemium;
+  const hasAccess = favoritesAccess.hasAccess;
+  const tmpResult3 = require("FavoritesGuildIntroPopover");
+  const isFavoritesIntroPopoverShown = tmpResult3.useIsFavoritesIntroPopoverShown();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [hasAccess, isFreemium];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === hasAccess) {
+    if (cResult[2] === isExperimentEnabled) {
+      if (cResult[3] === isFreemium) {
+        if (cResult[4] === isFavoritesIntroPopoverShown) {
+          let tmp10;
+          let tmp11;
+          if (cResult[5] === (undefined === arg0 || arg0)) {
+            tmp10 = cResult[6];
+            tmp11 = cResult[7];
+          }
+          const tmpResult4 = require("get initialized");
+          return tmpResult4.useStateFromStores(first, tmp10, tmp11);
+        }
+      }
+    }
+  }
+  const fn = function u() {
+    const obj = { isExperimentEnabled, isFreemium, hasAccess, isIntroPopoverShown: isFavoritesIntroPopoverShown, keepWhileViewing };
+    return computeIsFavoritesGuildVisible(FavoriteStore, SelectedGuildStore, obj);
+  };
+  const items1 = [isExperimentEnabled, isFreemium, hasAccess, isFavoritesIntroPopoverShown, undefined === arg0 || arg0];
+  cResult[1] = hasAccess;
+  cResult[2] = isExperimentEnabled;
+  cResult[3] = isFreemium;
+  cResult[4] = isFavoritesIntroPopoverShown;
+  cResult[5] = undefined === arg0 || arg0;
+  cResult[6] = fn;
+  cResult[7] = items1;
+  tmp11 = items1;
+  tmp10 = fn;
+}) : (() => {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = true;
@@ -69,12 +122,15 @@ export default function useIsFavoritesGuildVisible() {
   const isFavoritesIntroPopoverShown = obj2.useIsFavoritesIntroPopoverShown();
   const items = [hasAccess, isFreemium];
   const items1 = [isExperimentEnabled, isFreemium, hasAccess, isFavoritesIntroPopoverShown, flag];
-  const obj3 = flag(isExperimentEnabled[5]);
+  const obj3 = flag(isExperimentEnabled[7]);
   return obj3.useStateFromStores(items, () => {
     const obj = { isExperimentEnabled, isFreemium, hasAccess, isIntroPopoverShown: isFavoritesIntroPopoverShown, keepWhileViewing: flag };
     return computeIsFavoritesGuildVisible(FavoriteStore, SelectedGuildStore, obj);
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/favorites/hooks/useIsFavoritesGuildVisible.tsx");
+
+export default tmp2;
 export const isFavoritesGuildVisible = function isFavoritesGuildVisible() {
   let obj3;
   const obj = FavoritesHooks;

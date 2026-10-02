@@ -1,13 +1,13 @@
 // Module ID: 6409
 // Function ID: 6410
 // Name: trackUserAvatarUpdated
-// Dependencies: [1074, 6410, 1241, 1397, 2]
+// Dependencies: [1086, 6410, 1253, 1403, 2]
 // Exports: trackUserAvatarUpdated
 
 // Module 6409 (trackUserAvatarUpdated)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import AvatarUtils from "AvatarUtils" /* 1403 */;
 import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6410 */;
 import size from "module_2" /* 2 */;
 

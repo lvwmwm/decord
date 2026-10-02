@@ -1,19 +1,19 @@
-// Module ID: 7506
-// Function ID: 7507
+// Module ID: 7510
+// Function ID: 7511
 // Name: UserOfferActionCreators
-// Dependencies: [5, 7507, 6874, 6870, 1374, 1074, 1364, 573, 1241, 1271, 7508, 1231, 4654, 2029, 2026, 2]
+// Dependencies: [5, 7511, 6878, 6874, 1380, 1086, 1370, 585, 1253, 1283, 7512, 1243, 4656, 2035, 2032, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 7506 (UserOfferActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+// Module 7510 (UserOfferActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 7507 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 6874 */;
-import UserOfferStore from "UserOfferStore" /* 6870 */;
-import Constants from "Constants" /* 1074 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 7511 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 6878 */;
+import UserOfferStore from "UserOfferStore" /* 6874 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -58,7 +58,7 @@ let obj = function _fetchUserOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c11;
@@ -89,7 +89,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "Array", paymentGatewayOverride: "channel" };
+                obj6 = { offerId: "diversity", paymentGatewayOverride: "a" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;
@@ -102,7 +102,7 @@ let obj = function _fetchUserOffer() {
               error = undefined;
               c12 = 1;
               c13 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c12) {
             if (arg0 === 1) {
@@ -272,7 +272,7 @@ obj = function _fetchExistingChurnDiscountOffer() {
     await HTTP.get(obj4);
     const obj6 = closure_130_1(closure_130_2[7]);
     obj6.dispatch({ type: "BILLING_USER_OFFER_FETCH_FAIL" });
-    await "HermesInternal";
+    await "IconComponent";
     const offer = arg1.body.offer;
     let c0 = offer;
     if (offer == null) {
@@ -421,7 +421,7 @@ export const triggerUserOffer = function triggerUserOffer(triggerType, trigger_l
     }
     const _JSON = JSON;
     const obj5 = { payment_gateway: GOOGLE, trigger_type: triggerType, trigger_location_stack, trigger_metadata: JSON.stringify(tmp6), trigger_uptime_app: obj.getUptimeForTrigger() };
-    const HTTP = tmp7(1271).HTTP;
+    const HTTP = tmp7(1283).HTTP;
     const request = { url: constants.USER_OFFER_TRIGGER, body: obj5, rejectWithError: true };
     const postResult = HTTP.post(request);
     postResult.then((body) => {

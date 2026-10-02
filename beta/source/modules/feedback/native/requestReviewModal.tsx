@@ -1,14 +1,14 @@
-// Module ID: 13241
-// Function ID: 13242
+// Module ID: 13243
+// Function ID: 13244
 // Name: requestReviewModal
-// Dependencies: [5, 17, 3, 13242, 1364, 2]
+// Dependencies: [5, 17, 3, 13244, 1370, 2]
 // Exports: default
 
-// Module 13241 (requestReviewModal)
+// Module 13243 (requestReviewModal)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import react_nativeDefault from "react-native" /* 13242 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import react_nativeDefault from "react-native" /* 13244 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _showAndroidRatingRequest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;

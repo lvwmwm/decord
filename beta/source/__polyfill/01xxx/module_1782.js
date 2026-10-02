@@ -1,67 +1,130 @@
 // Module ID: 1782
 // Function ID: 1783
-// Dependencies: [1783, 1785]
-// Exports: useAnimatedGestureHandler
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 1647, 1752, 1688]
 
 // Module 1782
-const require = globalThis.__r;
-let _require;
+import Fragment from "Fragment" /* 21 */;
+import react_native from "react-native" /* 1752 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react_mod from "react" /* 19 */;
+import module_1647 from "module_1647" /* 1647 */;
 
-let closure_2 = { UNDETERMINED: 0, FAILED: 1, BEGAN: 2, CANCELLED: 3, ACTIVE: 4, END: 5 };
-const __initData = { code: "function pnpm_useAnimatedGestureHandlerTs1(e){const{useWeb,EVENT_TYPE,handlers,context}=this.__closure;const event=useWeb?e.nativeEvent:e;if(event.state===EVENT_TYPE.BEGAN&&handlers.onStart){handlers.onStart(event,context);}if(event.state===EVENT_TYPE.ACTIVE&&handlers.onActive){handlers.onActive(event,context);}if(event.oldState===EVENT_TYPE.ACTIVE&&event.state===EVENT_TYPE.END&&handlers.onEnd){handlers.onEnd(event,context);}if(event.oldState===EVENT_TYPE.BEGAN&&event.state===EVENT_TYPE.FAILED&&handlers.onFail){handlers.onFail(event,context);}if(event.oldState===EVENT_TYPE.ACTIVE&&event.state===EVENT_TYPE.CANCELLED&&handlers.onCancel){handlers.onCancel(event,context);}if((event.oldState===EVENT_TYPE.BEGAN||event.oldState===EVENT_TYPE.ACTIVE)&&event.state!==EVENT_TYPE.BEGAN&&event.state!==EVENT_TYPE.ACTIVE&&handlers.onFinish){handlers.onFinish(event,context,event.state===EVENT_TYPE.CANCELLED||event.state===EVENT_TYPE.FAILED);}}" };
+let Component;
+let createContext;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export const useAnimatedGestureHandler = function useAnimatedGestureHandler(handlers, items10) {
-  let context;
-  _require = handlers;
-  const tmp = _require;
-  const obj = require("module_1783");
-  const handler = obj.useHandler(handlers, items10);
-  const tmp2 = context;
-  context = handler.context;
-  const useWeb = handler.useWeb;
-  const fn = function s(nativeEvent) {
-    if (useWeb) {
-      nativeEvent = nativeEvent.nativeEvent;
-    }
-    const onStart = nativeEvent.state === useWeb.BEGAN && handlers.onStart;
-    if (onStart) {
-      handlers.onStart(nativeEvent, context);
-    }
-    const onActive = nativeEvent.state === tmp.ACTIVE && handlers.onActive;
-    if (onActive) {
-      handlers.onActive(nativeEvent, context);
-    }
-    const onEnd = nativeEvent.oldState === tmp.ACTIVE && nativeEvent.state === tmp.END && handlers.onEnd;
-    if (onEnd) {
-      handlers.onEnd(nativeEvent, context);
-    }
-    const onFail = nativeEvent.oldState === tmp.BEGAN && nativeEvent.state === tmp.FAILED && handlers.onFail;
-    if (onFail) {
-      handlers.onFail(nativeEvent, context);
-    }
-    const onCancel = nativeEvent.oldState === tmp.ACTIVE && nativeEvent.state === tmp.CANCELLED && handlers.onCancel;
-    if (onCancel) {
-      handlers.onCancel(nativeEvent, context);
-    }
-    const tmp22 = nativeEvent.oldState !== tmp.BEGAN && nativeEvent.oldState !== tmp.ACTIVE || nativeEvent.state === tmp.BEGAN || nativeEvent.state === tmp.ACTIVE || !handlers.onFinish;
-    if (!tmp22) {
-      let tmp26 = nativeEvent.state === tmp.CANCELLED;
-      const onFinish = handlers.onFinish;
-      const tmp25 = context;
-      if (!tmp26) {
-        tmp26 = nativeEvent.state === tmp.FAILED;
-      }
-      onFinish(nativeEvent, tmp25, tmp26);
-    }
-  };
-  const obj2 = { useWeb, EVENT_TYPE: useWeb, handlers, context };
-  fn.__closure = obj2;
-  fn.__workletHash = 2401621621985;
-  fn.__initData = __initData;
-  let event = fn;
-  if (!useWeb) {
-    const tmpResult = tmp(tmp2[1]);
-    event = tmpResult.useEvent(fn, ["onGestureHandlerStateChange", "onGestureHandlerEvent"], tmp4);
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  return event;
+}
+function SkipEntering(children) {
+  const tmp = metroImportDefault(children.shouldSkip);
+  let closure_0 = tmp;
+  const tmp2 = metroImportDefault(children.itemKey);
+  if (children.itemKey !== tmp2.current) {
+    ({ shouldSkip: tmp.current, itemKey: tmp2.current } = children);
+  }
+  const items = [tmp, children.itemKey];
+  metroRequire(() => {
+    closure_0.current = false;
+  }, items);
+  return jsx(closure_10 ? context : context.Provider, { value: tmp, children: children.children });
+}
+let react = react_mod;
+({ Children: hasOwnProperty, useEffect: metroRequire, useRef: metroImportDefault, Component, createContext } = react);
+react = react_mod;
+const jsx = Fragment.jsx;
+let closure_10 = module_1647.isReact19();
+const context = createContext(null);
+class LayoutAnimationConfig {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, LayoutAnimationConfig);
+    const obj = _getPrototypeOf(LayoutAnimationConfig);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(LayoutAnimationConfig, Component);
+const entry = {
+  key: "getMaybeWrappedChildren",
+  value: function getMaybeWrappedChildren() {
+    const self = this;
+    const arr = closure_1_5;
+    if (closure_1_5.count(this.props.children) > 1) {
+      let children;
+      if (self.props.skipExiting) {
+        children = arr.map(self.props.children, (children) => <LayoutAnimationConfig itemKey={self.props.itemKey} skipExiting>{arg0}</LayoutAnimationConfig>);
+      }
+      return children;
+    }
+    children = self.props.children;
+  }
 };
+let items = [
+  entry,
+  {
+    key: "setShouldAnimateExiting",
+    value: function setShouldAnimateExiting() {
+      const self = this;
+      if (1 === hasOwnProperty.count(this.props.children)) {
+        const obj = react_native;
+        const findNodeHandleResult = obj.findNodeHandle(self);
+        const tmp = require;
+        if (findNodeHandleResult) {
+          const tmpResult = tmp(1688);
+          const result = tmpResult.setShouldAnimateExitingForTag(findNodeHandleResult, !self.props.skipExiting);
+        }
+      }
+    }
+  },
+  {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      const self = this;
+      if (undefined !== this.props.skipExiting) {
+        const result = self.setShouldAnimateExiting();
+      }
+    }
+  },
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      const maybeWrappedChildren = this.getMaybeWrappedChildren();
+      let tmp2 = maybeWrappedChildren;
+      if (undefined !== this.props.skipEntering) {
+        tmp2 = <SkipEntering itemKey={self.props.itemKey} shouldSkip={self.props.skipEntering}>{maybeWrappedChildren}</SkipEntering>;
+      }
+      return tmp2;
+    }
+  }
+];
+const LayoutAnimationConfig_export = _createClass(LayoutAnimationConfig, items);
+
+export const SkipEnteringContext = context;
+export { LayoutAnimationConfig_export as LayoutAnimationConfig };

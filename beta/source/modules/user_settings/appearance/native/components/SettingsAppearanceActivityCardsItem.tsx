@@ -1,24 +1,73 @@
-// Module ID: 14839
-// Function ID: 14840
+// Module ID: 14827
+// Function ID: 14828
 // Name: SettingsAppearanceActivityCardsItem
-// Dependencies: [19, 21, 8179, 576, 14840, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 588, 14828, 8176, 2]
 
-// Module 14839 (SettingsAppearanceActivityCardsItem)
+// Module 14827 (SettingsAppearanceActivityCardsItem)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import SettingsAppearanceActivityCardItemDefault from "SettingsAppearanceActivityCardItem" /* 14840 */;
+import nativeDefault from "native" /* 588 */;
+import SettingsAppearanceActivityCardItemDefault from "SettingsAppearanceActivityCardItem" /* 14828 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceActivityCardsItem.tsx");
-
-export default function ActivityCardsItem(animatedStyles) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let animatedStyles;
+  let cards;
+  let first;
+  let tmp6;
+  let tmp7;
+  const tmp = animatedStyles;
+  const obj = animatedStyles(576);
+  const cResult = obj.c(7);
+  ({ cards, animatedStyles } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== animatedStyles) {
+    const fn = function s(item) {
+      item = item.item;
+      SettingsAppearanceActivityCardItemDefault;
+      const merged = Object.assign(item);
+      return <tmp animatedStyles={animatedStyles} />;
+    };
+    cResult[1] = animatedStyles;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function c(title) {
+      return title.title;
+    };
+    cResult[3] = fn2;
+    tmp7 = fn2;
+  } else {
+    tmp7 = cResult[3];
+  }
+  if (cResult[4] === cards) {
+    let tmp8;
+    if (cResult[5] === tmp6) {
+      tmp8 = cResult[6];
+    }
+    return tmp8;
+  }
+  const tmp9 = jsx(tmp(8176).FlashList, { contentContainerStyle: first, data: cards, renderItem: tmp6, keyExtractor: tmp7, showsHorizontalScrollIndicator: false, horizontal: true });
+  cResult[4] = cards;
+  cResult[5] = tmp6;
+  cResult[6] = tmp9;
+  tmp8 = tmp9;
+}) : ((animatedStyles) => {
   animatedStyles = animatedStyles.animatedStyles;
   const cards = animatedStyles.cards;
   const obj2 = { paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
-  const FlashList = animatedStyles(8179).FlashList;
+  const FlashList = animatedStyles(8176).FlashList;
   return <FlashList contentContainerStyle={obj2} data={cards} renderItem={function renderItem(item) {
     item = item.item;
     SettingsAppearanceActivityCardItemDefault;
@@ -27,4 +76,7 @@ export default function ActivityCardsItem(animatedStyles) {
   }} keyExtractor={function keyExtractor(title) {
     return title.title;
   }} showsHorizontalScrollIndicator={false} horizontal />;
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceActivityCardsItem.tsx");
+
+export default tmp3;

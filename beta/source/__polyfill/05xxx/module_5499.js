@@ -1,71 +1,126 @@
 // Module ID: 5499
 // Function ID: 5500
-// Dependencies: [5500, 5512, 5520]
+// Dependencies: []
+// Exports: findMatroskaDocTypeElements, getFileChunk, isAvifStringIncluded, isFileContaineJfiforExifHeader, isFlvStringIncluded, isHeicSignatureIncluded, isftypStringIncluded
 
 // Module 5499
-import FILE_TYPES_REQUIRED_ADDITIONAL_CHECK from "FILE_TYPES_REQUIRED_ADDITIONAL_CHECK" /* 5500 */;
-import _mod5512 from "module_5512" /* 5512 */;
-import _mod5520 from "module_5520" /* 5520 */;
-
-let hasOwnProperty;
-
-const self = this;
-let tmp = this && self.__createBinding;
-if (!tmp) {
-  let tmp2 = globalThis;
-  let _Object = Object;
-  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let closure_0 = tmp;
-let tmp3 = self && self.__exportStar || ((obj, arg1) => {
-  for (const key10007 in obj) {
-    let callResult = "default" === key10007;
-    if (!callResult) {
-      let _Object = Object;
-      hasOwnProperty = Object.prototype.hasOwnProperty;
-      callResult = hasOwnProperty.call(arg1, key10007);
-    }
-    if (callResult) {
-      continue;
-    } else {
-      let tmp3 = closure_0(arg1, obj, key10007);
-      continue;
-    }
-    continue;
+function fetchFromObject(FileTypes, arr) {
+  let tmp2;
+  const index = arr.indexOf(".");
+  if (index > -1) {
+    tmp2 = fetchFromObject(FileTypes[arr.slice(arr, 0, index)], arr.slice(index + 1));
+  } else {
+    tmp2 = FileTypes[arr];
   }
-});
-tmp3(FILE_TYPES_REQUIRED_ADDITIONAL_CHECK, exports);
-tmp3(_mod5512, exports);
-tmp3(_mod5520, exports);
+  return tmp2;
+}
+
+export const getFileChunk = function getFileChunk(fileChunk, chunkSize) {
+  let num = chunkSize;
+  if (chunkSize === undefined) {
+    num = 32;
+  }
+  let uint8Array = fileChunk;
+  if (fileChunk instanceof ArrayBuffer) {
+    const _Uint8Array = Uint8Array;
+    const self = this;
+    const self2 = this;
+    let tmp = fileChunk;
+    uint8Array = new Uint8Array(fileChunk);
+  }
+  if (!Array.isArray(fileChunk)) {
+    const _ArrayBuffer = ArrayBuffer;
+    if (!(fileChunk instanceof ArrayBuffer)) {
+      const _Uint8Array2 = Uint8Array;
+      if (!(fileChunk instanceof Uint8Array)) {
+        const _TypeError = TypeError;
+        const _HermesInternal = HermesInternal;
+        const self3 = this;
+        const self4 = this;
+        const typeError = new TypeError("Expected the `file` argument to be of type `Array<number>`, `Uint8Array`, or `ArrayBuffer`, got `" + typeof fileChunk + "`");
+        throw typeError;
+      }
+    }
+  }
+  const arr = Array.from(uint8Array.slice(0, num));
+  if (arr.every((item) => {
+    let tmp = typeof item === "number";
+    if (typeof item === "number") {
+      const _isNaN = isNaN;
+      tmp = !isNaN(item);
+    }
+    return tmp;
+  })) {
+    return arr;
+  } else {
+    const _TypeError2 = TypeError;
+    const self5 = this;
+    const self6 = this;
+    const typeError1 = new TypeError("File content contains illegal values");
+    throw typeError1;
+  }
+};
+export { fetchFromObject };
+export const findMatroskaDocTypeElements = function findMatroskaDocTypeElements(fileChunk) {
+  const mapped = fileChunk.map((item) => String.fromCharCode(item));
+  const joined = mapped.join("");
+  let str = "webm";
+  if (!joined.includes("webm")) {
+    let str3;
+    if (joined.includes("matroska")) {
+      str3 = "mkv";
+    }
+    str = str3;
+  }
+  return str;
+};
+export const isftypStringIncluded = function isftypStringIncluded(fileChunk) {
+  const items = [102, 116, 121, 112];
+  let num = 0;
+  if (0 < fileChunk.length - items.length) {
+    while (true) {
+      let num2 = 0;
+      let flag = true;
+      if (0 < items.length) {
+        flag = false;
+        while (fileChunk[num + num2] === items[num2]) {
+          let sum = num2 + 1;
+          num2 = sum;
+          flag = true;
+          if (sum >= items.length) {
+            break;
+          }
+        }
+      }
+      if (flag) {
+        break;
+      } else {
+        num = num + 1;
+      }
+    }
+    return true;
+  }
+  return false;
+};
+export const isFlvStringIncluded = function isFlvStringIncluded(fileChunk) {
+  const substr = fileChunk.slice(0, 3);
+  const textDecoder = new TextDecoder();
+  const decode = textDecoder.decode;
+  const uint8Array = new Uint8Array(substr);
+  const decodeResult = decode(uint8Array);
+  return decodeResult.includes("FLV");
+};
+export const isFileContaineJfiforExifHeader = function isFileContaineJfiforExifHeader(arg0) {
+  return 224 === tmp || 225 === tmp;
+};
+export const isAvifStringIncluded = function isAvifStringIncluded(fileChunk) {
+  const substr = fileChunk.slice(4, 12);
+  const mapped = substr.map((item) => String.fromCharCode(item));
+  return "ftypavif" === mapped.join("");
+};
+export const isHeicSignatureIncluded = function isHeicSignatureIncluded(fileChunk) {
+  const mapped = fileChunk.map((item) => String.fromCharCode(item));
+  let closure_0 = mapped.join("");
+  const items = ["ftypheic", "ftyphevc", "ftypmif1", "ftypmsf1"];
+  return items.some((item) => closure_0.includes(item));
+};

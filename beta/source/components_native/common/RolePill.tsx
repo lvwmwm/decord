@@ -1,19 +1,23 @@
-// Module ID: 10409
-// Function ID: 10410
+// Module ID: 10451
+// Function ID: 10452
 // Name: RolePill
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 2021, 6607, 6610, 4527, 5435, 6624, 6626, 4832, 2]
-// Exports: default
+// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 2027, 6608, 6611, 4530, 6625, 6627, 4833, 5436, 2]
 
-// Module 10409 (RolePill)
+// Module 10451 (RolePill)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import ToastUtils from "ToastUtils" /* 4527 */;
-import ClipboardUtils from "ClipboardUtils" /* 6610 */;
+import nativeDefault from "native" /* 588 */;
+import ToastUtils from "ToastUtils" /* 4530 */;
+import ClipboardUtils from "ClipboardUtils" /* 6611 */;
+import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 6625 */;
+import RoleIconDefault from "RoleIcon" /* 6627 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
+
+let importDefault, role;
 
 let closure_4;
 let hasOwnProperty;
@@ -34,10 +38,192 @@ obj3 = { flexDirection: "row", alignItems: "center", paddingHorizontal: 8, paddi
 size = { marginRight: 8, borderRadius: nativeDefault.radii.sm, height: 12, width: 12, backgroundColor: nativeDefault.colors.ICON_MUTED };
 size1 = { marginRight: 8, borderRadius: nativeDefault.radii.sm, height: 12, width: 12 };
 let closure_8 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("components_native/common/RolePill.tsx");
-
-export default function RolePill(role) {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
+  let closure_1;
+  let color;
+  let disableInteraction;
+  let guildId;
+  let items;
+  let obj6;
+  let tmp23;
+  let tmp24;
+  let tmp30;
+  let obj = role(576);
+  const cResult = obj.c(30);
+  role = role.role;
+  ({ guildId, color, disableInteraction } = role);
+  const DeveloperMode = role(2027).DeveloperMode;
+  const setting = DeveloperMode.useSetting();
+  if (cResult[0] === guildId) {
+    let tmp5;
+    let guild_connections;
+    if (cResult[1] === role.id) {
+      tmp5 = cResult[2];
+    }
+    const tmpResult = role(6608);
+    const roleIconProps = tmpResult.useRoleIconProps(tmp5);
+    if (cResult[3] !== role.name) {
+      let name = role.name;
+      importDefault = name;
+      if (role.name.length > closure_5) {
+        const name1 = role.name;
+        const _HermesInternal = HermesInternal;
+        const combined = "" + name1.slice(0, tmp8) + "...";
+        importDefault = combined;
+        name = combined;
+      }
+      cResult[3] = role.name;
+      cResult[4] = name;
+    } else {
+      importDefault = cResult[4];
+    }
+    if (color == null) {
+      color = role.colorString;
+    }
+    const tags = role.tags;
+    if (tags != null) {
+      guild_connections = tags.guild_connections;
+    }
+    if (cResult[5] === tmp7) {
+      let tmp12;
+      let tmp18Result;
+      if (cResult[6] === role.id) {
+        tmp12 = cResult[7];
+      }
+      const tmp14 = closure_8();
+      let tmp15 = !setting;
+      if (setting) {
+        tmp15 = disableInteraction;
+      }
+      if (cResult[8] === color) {
+        if (cResult[9] === guildId) {
+          if (cResult[10] === role.id) {
+            if (cResult[11] === tmp14.bubble) {
+              if (cResult[12] === tmp14.verifiedContainer) {
+                let tmp17;
+                if (cResult[13] === undefined !== guild_connections) {
+                  tmp17 = cResult[14];
+                }
+                if (cResult[15] === roleIconProps) {
+                  let tmp25;
+                  let tmp34;
+                  if (cResult[16] === tmp14.roleIcon) {
+                    tmp25 = cResult[17];
+                  }
+                  if (cResult[18] !== tmp7) {
+                    let obj2 = { variant: "text-xs/semibold", color: "interactive-text-active", children: tmp7 };
+                    const tmp36 = closure_6(role(4833).Text, obj2);
+                    cResult[18] = tmp7;
+                    cResult[19] = tmp36;
+                    tmp34 = tmp36;
+                  } else {
+                    tmp34 = cResult[19];
+                  }
+                  if (cResult[20] === tmp14.pill) {
+                    if (cResult[21] === tmp17) {
+                      if (cResult[22] === tmp25) {
+                        let tmp37;
+                        if (cResult[23] === tmp34) {
+                          tmp37 = cResult[24];
+                        }
+                        if (cResult[25] === tmp12) {
+                          if (cResult[26] === tmp14.container) {
+                            if (cResult[27] === tmp15) {
+                              let tmp41;
+                              if (cResult[28] === tmp37) {
+                                tmp41 = cResult[29];
+                              }
+                              return tmp41;
+                            }
+                          }
+                        }
+                        const obj3 = { disabled: tmp15, style: tmp14.container, onPress: tmp12, accessible: false, children: tmp37 };
+                        const tmp43 = closure_6(role(5436).PressableHighlight, obj3);
+                        cResult[25] = tmp12;
+                        cResult[26] = tmp14.container;
+                        cResult[27] = tmp15;
+                        cResult[28] = tmp37;
+                        cResult[29] = tmp43;
+                        tmp41 = tmp43;
+                      }
+                    }
+                  }
+                  const obj4 = { style: tmp14.pill, children: items };
+                  items = [tmp17, tmp25, tmp34];
+                  const tmp40 = closure_7(View, obj4);
+                  cResult[20] = tmp14.pill;
+                  cResult[21] = tmp17;
+                  cResult[22] = tmp25;
+                  cResult[23] = tmp34;
+                  cResult[24] = tmp40;
+                  tmp37 = tmp40;
+                }
+                let tmp26 = null;
+                if (null != roleIconProps) {
+                  const obj5 = { style: tmp14.roleIcon, children: closure_6(tmp30, obj6) };
+                  obj6 = {};
+                  tmp30 = RoleIconDefault;
+                  const merged = Object.assign(roleIconProps);
+                  tmp26 = closure_6(View, obj5);
+                }
+                cResult[15] = roleIconProps;
+                cResult[16] = tmp14.roleIcon;
+                cResult[17] = tmp26;
+                tmp25 = tmp26;
+              }
+            }
+          }
+        }
+      }
+      if (undefined !== guild_connections) {
+        const obj7 = { style: tmp14.verifiedContainer, roleId: role.id, guildId: tmp23, roleColor: tmp24, size: 14, displayRoleIcon: false };
+        tmp23 = guildId;
+        const tmp22 = VerifiedRoleIconDefault;
+        if (guildId == null) {
+          tmp23 = closure_4;
+        }
+        tmp18Result = tmp18(tmp22, obj7);
+        tmp24 = color;
+      } else {
+        let obj9;
+        const items1 = [tmp14.bubble, ];
+        const tmp19 = View;
+        if (null != color) {
+          obj9 = { backgroundColor: color };
+          const obj8 = { backgroundColor: color };
+        } else {
+          obj9 = {};
+        }
+        const obj10 = { style: items1 };
+        items1[1] = obj9;
+        tmp18Result = tmp18(tmp19, obj10);
+      }
+      cResult[8] = color;
+      cResult[9] = guildId;
+      cResult[10] = role.id;
+      cResult[11] = tmp14.bubble;
+      cResult[12] = tmp14.verifiedContainer;
+      cResult[13] = undefined !== guild_connections;
+      cResult[14] = tmp18Result;
+      tmp17 = tmp18Result;
+    }
+    const fn = function f() {
+      const obj = ClipboardUtils;
+      obj.copy(role.id);
+      const obj2 = ToastUtils;
+      obj2.roleIdCopied(closure_1);
+    };
+    cResult[5] = tmp7;
+    cResult[6] = role.id;
+    cResult[7] = fn;
+    tmp12 = fn;
+  }
+  const obj11 = { guildId, roleId: role.id, size: 12 };
+  cResult[0] = guildId;
+  cResult[1] = role.id;
+  cResult[2] = obj11;
+  tmp5 = obj11;
+}) : ((role) => {
   let color;
   let guildId;
   let items1;
@@ -49,9 +235,9 @@ export default function RolePill(role) {
   role = role.role;
   ({ guildId, color } = role);
   const disableInteraction = role.disableInteraction;
-  const DeveloperMode = role(2021).DeveloperMode;
+  const DeveloperMode = role(2027).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = role(6607);
+  let obj = role(6608);
   let obj2 = { guildId, roleId: role.id, size: 12 };
   const roleIconProps = obj.useRoleIconProps(obj2);
   let name = role.name;
@@ -72,7 +258,7 @@ export default function RolePill(role) {
   }
   const tmp9 = closure_8();
   let tmp11 = !setting;
-  const PressableHighlight = tmp(5435).PressableHighlight;
+  const PressableHighlight = tmp(5436).PressableHighlight;
   if (setting) {
     tmp11 = disableInteraction;
   }
@@ -92,7 +278,7 @@ export default function RolePill(role) {
   tmp12 = closure_7;
   if (undefined !== guild_connections) {
     const obj5 = { style: tmp9.verifiedContainer, roleId: role.id, guildId, roleColor: color, size: 14, displayRoleIcon: false };
-    const tmp16 = combined(6624);
+    const tmp16 = combined(6625);
     if (guildId == null) {
       guildId = closure_4;
     }
@@ -115,11 +301,15 @@ export default function RolePill(role) {
   if (null != roleIconProps) {
     const obj9 = { style: tmp9.roleIcon, children: closure_6(tmp19, obj10) };
     obj10 = {};
-    tmp19 = combined(6626);
+    tmp19 = combined(6627);
     const merged = Object.assign(roleIconProps);
     tmp10Result2 = tmp10(tmp13, obj9);
   }
   items1[1] = tmp10Result2;
-  items1[2] = closure_6(role(4832).Text, { variant: "text-xs/semibold", color: "interactive-text-active", children: name });
+  items1[2] = closure_6(role(4833).Text, { variant: "text-xs/semibold", color: "interactive-text-active", children: name });
   return closure_6(PressableHighlight, obj3);
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("components_native/common/RolePill.tsx");
+
+export default tmp6;

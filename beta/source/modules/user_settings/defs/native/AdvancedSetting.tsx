@@ -1,13 +1,13 @@
-// Module ID: 15080
-// Function ID: 15081
+// Module ID: 15068
+// Function ID: 15069
 // Name: AdvancedSetting
-// Dependencies: [1074, 11006, 1115, 6798, 15081, 2]
+// Dependencies: [1086, 10874, 1127, 6799, 15069, 2]
 
-// Module 15080 (AdvancedSetting)
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import SettingsIcon from "SettingsIcon" /* 6798 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 15068 (AdvancedSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsIcon from "SettingsIcon" /* 6799 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

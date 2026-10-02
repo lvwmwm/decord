@@ -1,28 +1,144 @@
-// Module ID: 14266
-// Function ID: 14267
+// Module ID: 14254
+// Function ID: 14255
 // Name: useUsernameLiveCheck
-// Dependencies: [19, 14267, 563, 12, 14268, 14269, 2]
-// Exports: useUsernameLiveCheck
+// Dependencies: [19, 14255, 558, 576, 573, 12, 14256, 14257, 2]
 
-// Module 14266 (useUsernameLiveCheck)
+// Module 14254 (useUsernameLiveCheck)
 import _mod12 from "module_12" /* 12 */;
-import UniqueUsernamesUtils from "UniqueUsernamesUtils" /* 14269 */;
-import react from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14267 */;
+import UniqueUsernamesActionCreatorsDefault from "UniqueUsernamesActionCreators" /* 14256 */;
+import UniqueUsernamesUtils from "UniqueUsernamesUtils" /* 14257 */;
+import react_mod from "react" /* 19 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14255 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, dependencyMap;
 
-let result = size.fileFinishedImporting("modules/unique_usernames/useUsernameLiveCheck.tsx");
-
-export const useUsernameLiveCheck = function useUsernameLiveCheck(arg0, flag, flag2) {
+let react = react_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+  let closure_0;
+  let closure_2;
+  let closure_3;
+  let first;
+  let stateFromStores;
+  let tmp10;
+  let tmp12;
+  let tmp13;
+  let tmp9;
+  _require = arg0;
+  let tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(18);
+  let closure_1 = tmp4;
+  dependencyMap = tmp5;
+  react = tmp6;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [stateFromStores];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function v() {
+      return UniqueUsernamesStore.validate(closure_0);
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp10 = items1;
+    tmp9 = fn;
+  } else {
+    tmp9 = cResult[2];
+    tmp10 = cResult[3];
+  }
+  const tmpResult = tmp(573);
+  stateFromStores = tmpResult.useStateFromStores(first, tmp9, tmp10);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [stateFromStores];
+    class U {
+      constructor() {
+        return stateFromStores.isRateLimited();
+      }
+    }
+    cResult[4] = items2;
+    cResult[5] = U;
+    tmp13 = U;
+    tmp12 = items2;
+  } else {
+    tmp12 = cResult[4];
+    tmp13 = cResult[5];
+  }
+  const tmpResult3 = tmp(573);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp12, tmp13);
+  if (cResult[6] === (undefined !== arg2 && arg2)) {
+    let tmp16;
+    if (cResult[7] === (undefined !== arg3 && arg3)) {
+      tmp16 = cResult[8];
+    }
+    let closure_6 = tmp16;
+    if (cResult[9] === (undefined === arg1 || arg1)) {
+      if (cResult[10] === tmp16) {
+        if (cResult[11] === stateFromStores1) {
+          if (cResult[12] === arg0) {
+            let tmp18;
+            let tmp19;
+            if (cResult[13] === stateFromStores) {
+              tmp18 = cResult[14];
+              tmp19 = cResult[15];
+            }
+            const effect = react.useEffect(tmp19, tmp18);
+            class U {
+              constructor() {
+                return stateFromStores.isRateLimited();
+              }
+            }
+            return tmp23;
+          }
+        }
+      }
+    }
+    class U {
+      constructor() {
+        return stateFromStores.isRateLimited();
+      }
+    }
+    const items3 = [tmp4, stateFromStores1, stateFromStores, arg0, tmp16];
+    cResult[9] = undefined === arg1 || arg1;
+    cResult[10] = tmp16;
+    cResult[11] = stateFromStores1;
+    cResult[12] = arg0;
+    cResult[13] = stateFromStores;
+    cResult[14] = items3;
+    cResult[15] = tmp20;
+    tmp19 = tmp20;
+    tmp18 = items3;
+  }
+  const tmpResult4 = tmp(12);
+  const debounceResult = tmpResult4.debounce((arg0) => {
+    let str = "modal";
+    const attemptUsername = UniqueUsernamesActionCreatorsDefault.attemptUsername;
+    UniqueUsernamesActionCreatorsDefault;
+    if (closure_2) {
+      str = "registration";
+    }
+    return attemptUsername(arg0, str, closure_2, closure_3);
+  }, 800);
+  cResult[6] = undefined !== arg2 && arg2;
+  cResult[7] = undefined !== arg3 && arg3;
+  cResult[8] = debounceResult;
+  tmp16 = debounceResult;
+}) : ((arg0) => {
   let closure_0;
   _require = arg0;
-  if (flag === undefined) {
+  let flag = arg1;
+  if (arg1 === undefined) {
     flag = true;
   }
-  if (flag2 === undefined) {
+  let flag2 = arg2;
+  if (arg2 === undefined) {
     flag2 = false;
   }
   let flag3 = arg3;
@@ -42,8 +158,8 @@ export const useUsernameLiveCheck = function useUsernameLiveCheck(arg0, flag, fl
     const obj = _mod12;
     return obj.debounce((arg0) => {
       let str = "modal";
-      const attemptUsername = flag(flag2[4]).attemptUsername;
-      flag(flag2[4]);
+      const attemptUsername = flag(flag2[6]).attemptUsername;
+      flag(flag2[6]);
       if (closure_1_2) {
         str = "registration";
       }
@@ -66,4 +182,7 @@ export const useUsernameLiveCheck = function useUsernameLiveCheck(arg0, flag, fl
     }
     return result;
   }, items5);
-};
+});
+let result = size.fileFinishedImporting("modules/unique_usernames/useUsernameLiveCheck.tsx");
+
+export const useUsernameLiveCheck = tmp2;

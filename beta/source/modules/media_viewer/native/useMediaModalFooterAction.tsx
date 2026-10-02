@@ -1,18 +1,18 @@
-// Module ID: 10732
-// Function ID: 10733
+// Module ID: 10696
+// Function ID: 10697
 // Name: useMediaModalFooterAction
-// Dependencies: [560, 1248, 2]
+// Dependencies: [570, 1260, 2]
 // Exports: clearMediaModalFooterAction, setMediaModalFooterAction
 
-// Module 10732 (useMediaModalFooterAction)
-import react_native from "react-native" /* 1248 */;
-import module_560 from "module_560" /* 560 */;
+// Module 10696 (useMediaModalFooterAction)
+import react_native from "react-native" /* 1260 */;
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const useMediaModalFooterActionStore = module_560.create(() => ({}));
+const useMediaModalFooterActionStore = module_570.create(() => ({}));
 const result = size.fileFinishedImporting("modules/media_viewer/native/useMediaModalFooterAction.tsx");
 
 export { useMediaModalFooterActionStore };
@@ -27,5 +27,5 @@ export const setMediaModalFooterAction = function setMediaModalFooterAction(foot
 export const clearMediaModalFooterAction = function clearMediaModalFooterAction() {
   let state;
   const obj = react_native;
-  obj.batchUpdates(() => state.setState({ footerAction: "Path" }));
+  obj.batchUpdates(() => state.setState({ footerAction: "call" }));
 };

@@ -1,28 +1,340 @@
-// Module ID: 16515
-// Function ID: 16516
+// Module ID: 16517
+// Function ID: 16518
 // Name: PeopleScreen
-// Dependencies: [5, 19, 11852, 11822, 7303, 7302, 21, 11823, 504, 16462, 16458, 4849, 11841, 16516, 16454, 16466, 2]
+// Dependencies: [5, 19, 11745, 11715, 7307, 7306, 21, 558, 576, 11716, 504, 16464, 16460, 4850, 11734, 16518, 16456, 16468, 2]
 
-// Module 16515 (PeopleScreen)
+// Module 16517 (PeopleScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 7302 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11841 */;
+import TrackingConstants from "TrackingConstants" /* 7306 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11734 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import react from "react" /* 19 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 11852 */;
-import SearchQueryStore from "SearchQueryStore" /* 11822 */;
-import SearchConstants from "SearchConstants" /* 7303 */;
+import react_mod from "react" /* 19 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 11745 */;
+import SearchQueryStore_mod from "SearchQueryStore" /* 11715 */;
+import SearchConstants from "SearchConstants" /* 7307 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let channelId, closure_3, importDefault, title;
+let importDefault, searchContext, title;
 
 let metroImportAll;
 let metroImportDefault;
+let react = react_mod;
+let SearchQueryStore = SearchQueryStore_mod;
 ({ SearchListItemTypes: metroImportDefault, USER_ESTIMATED_ITEM_SIZE: metroImportAll } = SearchConstants);
-let closure_9 = TrackingConstants.SearchResultContentEntityTypes;
+const constants2 = TrackingConstants.SearchResultContentEntityTypes;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(function PeopleScreen(searchContext) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+  let closure_1;
+  let closure_4;
+  let closure_6;
+  let onPressGroupDMItem;
+  let tmp11;
+  let tmp13;
+  let tmp17;
+  let tmp20;
+  let tmp4;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  const tmp = searchContext;
+  const tmp2 = onPressGroupDMItem;
+  let obj = searchContext(onPressGroupDMItem[8]);
+  const cResult = obj.c(31);
+  searchContext = searchContext.searchContext;
+  if (cResult[0] !== searchContext) {
+    const tmpResult = tmp(tmp2[9]);
+    const searchContextId = tmpResult.getSearchContextId(searchContext);
+    cResult[0] = searchContext;
+    cResult[1] = searchContextId;
+    tmp4 = searchContextId;
+  } else {
+    tmp4 = cResult[1];
+  }
+  importDefault = tmp4;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [arr4];
+    cResult[2] = items;
+    tmp6 = items;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] !== tmp4) {
+    const fn = function v() {
+      return SearchPeopleTabStore.getResults(closure_1);
+    };
+    cResult[3] = tmp4;
+    cResult[4] = fn;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[4];
+  }
+  const tmpResult6 = tmp(tmp2[10]);
+  const stateFromStores = tmpResult6.useStateFromStores(tmp6, tmp8);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [SearchQueryStore];
+    cResult[5] = items1;
+    tmp9 = items1;
+  } else {
+    tmp9 = cResult[5];
+  }
+  if (cResult[6] !== searchContext) {
+    class E {
+      constructor() {
+        return SearchQueryStore.isInitialSearchQuery(searchContext);
+      }
+    }
+    cResult[6] = searchContext;
+    cResult[7] = E;
+    tmp11 = E;
+  } else {
+    class E {
+      constructor() {
+        return SearchQueryStore.isInitialSearchQuery(searchContext);
+      }
+    }
+  }
+  const tmpResult7 = tmp(tmp2[10]);
+  const stateFromStores1 = tmpResult7.useStateFromStores(tmp9, tmp11);
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        return SearchQueryStore.isInitialSearchQuery(searchContext);
+      }
+    }
+    tmp14[0] = closure_8;
+    cResult[8] = tmp14;
+    tmp13 = tmp14;
+  } else {
+    class E {
+      constructor() {
+        return SearchQueryStore.isInitialSearchQuery(searchContext);
+      }
+    }
+  }
+  const tmpResult8 = tmp(tmp2[11]);
+  const fullscreenPlaceholderCount = tmpResult8.useFullscreenPlaceholderCount(tmp13);
+  if (cResult[9] !== searchContext) {
+    class E {
+      constructor() {
+        return SearchQueryStore.isInitialSearchQuery(searchContext);
+      }
+    }
+    tmp18[0] = searchContext;
+    cResult[9] = searchContext;
+    cResult[10] = tmp18;
+    tmp17 = tmp18;
+  } else {
+    class E {
+      constructor() {
+        return SearchQueryStore.isInitialSearchQuery(searchContext);
+      }
+    }
+  }
+  const tmpResult9 = tmp(tmp2[12]);
+  onPressGroupDMItem = tmpResult9.useOnPressGroupDMItem(tmp17);
+  if (cResult[11] !== searchContext) {
+    class E {
+      constructor() {
+        return SearchQueryStore.isInitialSearchQuery(searchContext);
+      }
+    }
+    tmp21[0] = searchContext;
+    cResult[11] = searchContext;
+    cResult[12] = tmp21;
+    tmp20 = tmp21;
+  } else {
+    class E {
+      constructor() {
+        return SearchQueryStore.isInitialSearchQuery(searchContext);
+      }
+    }
+  }
+  const tmpResult10 = tmp(tmp2[12]);
+  const onPressDMItem = tmpResult10.useOnPressDMItem(tmp20);
+  if (cResult[13] === onPressDMItem) {
+    class E {
+      constructor() {
+        return SearchQueryStore.isInitialSearchQuery(searchContext);
+      }
+    }
+    react = tmp23;
+    if (cResult[16] === onPressGroupDMItem) {
+      class E {
+        constructor() {
+          return SearchQueryStore.isInitialSearchQuery(searchContext);
+        }
+      }
+      SearchQueryStore = tmp24;
+      if (cResult[19] === tmp23) {
+        class E {
+          constructor() {
+            return SearchQueryStore.isInitialSearchQuery(searchContext);
+          }
+        }
+      }
+      class D {
+        constructor(channelId, index) {
+          const obj = search_tracking_TrackingDefault;
+          const obj2 = { searchContext, channelId, index, entityType: constants2.CHANNEL };
+          const result = obj.trackSearchResultClicked(obj2);
+          onPressGroupDMItem(channelId);
+        }
+      }
+      let item = stateFromStores.forEach((title) => {
+        let obj;
+        title = title.title;
+        const items = title.items;
+        if (null != title) {
+          if (items.length > 0) {
+            let element = { type: constants.SECTION, props: obj };
+            obj = { title };
+            arr4.push(element);
+          }
+        }
+        const item = items.forEach((type, index) => {
+          let firstMatch;
+          let obj;
+          let obj2;
+          let tmp8;
+          let user;
+          let closure_0 = index;
+          if ("user" in type) {
+            ({ user, firstMatch } = type);
+            const element = { type: metroImportDefault.DM, section: title, props: obj };
+            obj = {
+              type: type.type,
+              user,
+              nickname: tmp8,
+              onPress(arg0) {
+                  return closure_2_4(arg0, closure_0);
+                }
+            };
+            tmp8 = undefined;
+            const push = arr4.push;
+            if (user.username !== firstMatch) {
+              tmp8 = firstMatch;
+            }
+            push(element);
+          } else {
+            const element1 = { type: metroImportDefault.GROUP_DM, section: title, props: obj2 };
+            obj2 = {
+              channel: type,
+              onPress(arg0) {
+                  return closure_2_6(arg0, closure_0);
+                }
+            };
+            arr4.push(element1);
+          }
+        });
+      });
+      if (!stateFromStores1) {
+        class E {
+          constructor() {
+            return SearchQueryStore.isInitialSearchQuery(searchContext);
+          }
+        }
+        if (0 === arr4.length) {
+          class E {
+            constructor() {
+              return SearchQueryStore.isInitialSearchQuery(searchContext);
+            }
+          }
+          class D {
+            constructor(channelId, index) {
+              const obj = search_tracking_TrackingDefault;
+              const obj2 = { searchContext, channelId, index, entityType: constants2.CHANNEL };
+              const result = obj.trackSearchResultClicked(obj2);
+              onPressGroupDMItem(channelId);
+            }
+          }
+        }
+      }
+      cResult[19] = tmp23;
+      cResult[20] = tmp24;
+      cResult[21] = stateFromStores1;
+      cResult[22] = fullscreenPlaceholderCount;
+      cResult[23] = stateFromStores;
+      cResult[24] = arr4;
+    }
+    class D {
+      constructor(channelId, index) {
+        const obj = search_tracking_TrackingDefault;
+        const obj2 = { searchContext, channelId, index, entityType: constants2.CHANNEL };
+        const result = obj.trackSearchResultClicked(obj2);
+        onPressGroupDMItem(channelId);
+      }
+    }
+    cResult[16] = onPressGroupDMItem;
+    cResult[17] = searchContext;
+    cResult[18] = D;
+  }
+  let closure_0 = onPressDMItem((arg0, index) => {
+    let closure_3;
+    closure_0 = arg0;
+    let c4 = 0;
+    let c5 = 0;
+    return (function*(arg0, value) {
+      let obj2;
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              channelId = undefined;
+              c4 = 1;
+              c5 = 1;
+              const obj5 = { value: obj2.getOrEnsurePrivateChannel(userId), done: false };
+              obj2 = closure_2_1(onPressGroupDMItem[13]);
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            return { value, done: true };
+          } else {
+            channelId = value;
+            const obj7 = { searchContext: userId, userId, channelId, index, entityType: constants.CHANNEL };
+            const obj6 = closure_2_1(onPressGroupDMItem[14]);
+            const result = obj6.trackSearchResultClicked(obj7);
+            tmp4(userId, channelId);
+            c5 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp9) {
+          c5 = 3;
+          throw tmp9;
+        }
+      }
+    })();
+  });
+  const fn2 = function() {
+    return closure_0(...arguments);
+  };
+  cResult[13] = onPressDMItem;
+  cResult[14] = searchContext;
+  cResult[15] = fn2;
+}) : ((searchContext) => {
   let closure_1;
   let tmp13;
   searchContext = searchContext.searchContext;
@@ -31,20 +343,20 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
   let onPressDMItem;
   let callback1;
   const tmp = stateFromStores;
-  let obj = searchContext(stateFromStores[7]);
+  let obj = searchContext(stateFromStores[9]);
   importDefault = obj.getSearchContextId(searchContext);
-  let obj2 = searchContext(stateFromStores[8]);
+  let obj2 = searchContext(stateFromStores[10]);
   let items = [onPressGroupDMItem];
   stateFromStores = obj2.useStateFromStores(items, () => SearchPeopleTabStore.getResults(closure_1));
-  const obj3 = searchContext(stateFromStores[8]);
+  const obj3 = searchContext(stateFromStores[10]);
   const items1 = [onPressDMItem];
   const stateFromStores1 = obj3.useStateFromStores(items1, () => SearchQueryStore.isInitialSearchQuery(searchContext));
-  const obj4 = searchContext(stateFromStores[9]);
+  const obj4 = searchContext(stateFromStores[11]);
   let obj5 = { placeholderHeight: callback1, numColumns: 1 };
   const fullscreenPlaceholderCount = obj4.useFullscreenPlaceholderCount(obj5);
-  let obj6 = searchContext(stateFromStores[10]);
+  let obj6 = searchContext(stateFromStores[12]);
   onPressGroupDMItem = obj6.useOnPressGroupDMItem({ searchContext });
-  let obj7 = searchContext(stateFromStores[10]);
+  let obj7 = searchContext(stateFromStores[12]);
   onPressDMItem = obj7.useOnPressDMItem({ searchContext });
   const useCallback = fullscreenPlaceholderCount.useCallback;
   let closure_0 = stateFromStores1((arg0, index) => {
@@ -62,7 +374,7 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -80,7 +392,7 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
               c4 = 1;
               c5 = 1;
               const obj5 = { value: obj2.getOrEnsurePrivateChannel(userId), done: false };
-              obj2 = closure_2_1(stateFromStores[11]);
+              obj2 = closure_2_1(stateFromStores[13]);
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -92,11 +404,11 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
           } else {
             channelId = value;
             const obj7 = { searchContext: userId, userId, channelId, index, entityType: constants.CHANNEL };
-            const obj6 = closure_2_1(stateFromStores[12]);
+            const obj6 = closure_2_1(stateFromStores[14]);
             const result = obj6.trackSearchResultClicked(obj7);
             closure_1_6(userId, channelId);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp9) {
           c5 = 3;
@@ -183,7 +495,7 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
     }
     return items;
   }, items4);
-  const obj8 = searchContext(stateFromStores[13]);
+  const obj8 = searchContext(stateFromStores[15]);
   const messageTabCountsErrorText = obj8.useMessageTabCountsErrorText({ searchContext });
   if (null != messageTabCountsErrorText) {
     tmp13 = jsx(require("ErrorScreen"), { text: messageTabCountsErrorText });
@@ -191,7 +503,7 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
     tmp13 = jsx(require("SearchList"), { data: memo });
   }
   return tmp13;
-});
+}));
 let result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/PeopleScreen.tsx");
 
 export default memoResult;

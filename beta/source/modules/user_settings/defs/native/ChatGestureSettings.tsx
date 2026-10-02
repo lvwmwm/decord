@@ -1,31 +1,39 @@
-// Module ID: 11005
-// Function ID: 11006
+// Module ID: 10873
+// Function ID: 10874
 // Name: ChatGestureSettings
-// Dependencies: [7417, 1074, 1186, 1115, 1241, 2021, 11006, 2]
-// Exports: getSwipeToReplySettingValue, useSwipeToReplySettingValue
+// Dependencies: [7421, 1086, 1198, 1127, 1253, 2027, 558, 10874, 2]
+// Exports: getSwipeToReplySettingValue
 
-// Module 11005 (ChatGestureSettings)
-import intl4 from "intl" /* 1115 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import Constants from "Constants" /* 1074 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 10873 (ChatGestureSettings)
+import intl4 from "intl" /* 1127 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
-function useSwipeToReplySettingValue() {
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+({ AnalyticEvents: c3, AnalyticsSections: closure_4 } = Constants);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const SwipeRightToLeftModeSetting = UserSettings.SwipeRightToLeftModeSetting;
   let SWIPE_RIGHT_TO_LEFT_REPLY = SwipeRightToLeftModeSetting.useSetting();
   if (SWIPE_RIGHT_TO_LEFT_REPLY === preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET) {
     SWIPE_RIGHT_TO_LEFT_REPLY = preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY;
   }
   return SWIPE_RIGHT_TO_LEFT_REPLY;
-}
-const MobileUserSettings = SettingsConstants.MobileUserSettings;
-({ AnalyticEvents: c3, AnalyticsSections: closure_4 } = Constants);
+}) : (() => {
+  const SwipeRightToLeftModeSetting = UserSettings.SwipeRightToLeftModeSetting;
+  let SWIPE_RIGHT_TO_LEFT_REPLY = SwipeRightToLeftModeSetting.useSetting();
+  if (SWIPE_RIGHT_TO_LEFT_REPLY === preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET) {
+    SWIPE_RIGHT_TO_LEFT_REPLY = preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY;
+  }
+  return SWIPE_RIGHT_TO_LEFT_REPLY;
+});
 let obj = {
   useTitle() {
     const intl = intl4.intl;
@@ -37,7 +45,7 @@ let obj = {
     return items;
   },
   parent: MobileUserSettings.SWIPE_RIGHT_TO_LEFT,
-  useValue: useSwipeToReplySettingValue,
+  useValue: tmp3,
   onValueChange: function onSwipeToReplyValueChange(arg0) {
     let obj3;
     const NumberResult = Number(arg0);
@@ -67,7 +75,7 @@ const radio = SettingBuilders.createRadio(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ChatGestureSettings.tsx");
 
 export default radio;
-export { useSwipeToReplySettingValue };
+export const useSwipeToReplySettingValue = tmp3;
 export const getSwipeToReplySettingValue = function getSwipeToReplySettingValue() {
   const SwipeRightToLeftModeSetting = UserSettings.SwipeRightToLeftModeSetting;
   let SWIPE_RIGHT_TO_LEFT_REPLY = SwipeRightToLeftModeSetting.getSetting();

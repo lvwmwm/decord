@@ -1,13 +1,13 @@
-// Module ID: 4460
-// Function ID: 4461
+// Module ID: 4463
+// Function ID: 4464
 // Name: RolePermissionUtils
-// Dependencies: [2103, 1074, 1086, 2]
+// Dependencies: [2106, 1086, 1098, 2]
 // Exports: hasViewChannelPermission, isChannelAccessDeniedBy, isChannelAccessGrantedBy
 
-// Module 4460 (RolePermissionUtils)
-import Constants from "Constants" /* 1074 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2103 */;
+// Module 4463 (RolePermissionUtils)
+import Constants from "Constants" /* 1086 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2106 */;
 import size from "module_2" /* 2 */;
 
 const hasPermission = GuildRoleRecord.hasPermission;
@@ -27,7 +27,7 @@ export const isChannelAccessDeniedBy = function isChannelAccessDeniedBy(isGuildV
     if (!hasItem) {
       let isGuildVocalResult = isGuildVocal.isGuildVocal();
       if (isGuildVocalResult) {
-        const tmp2Result = tmp2(1086);
+        const tmp2Result = tmp2(1098);
         isGuildVocalResult = tmp2Result.has(deny.deny, tmp4.CONNECT);
       }
       hasItem = isGuildVocalResult;
@@ -48,7 +48,7 @@ export const isChannelAccessGrantedBy = function isChannelAccessGrantedBy(isGuil
       if (!hasItem1) {
         let isGuildVocalResult = isGuildVocal.isGuildVocal();
         if (isGuildVocalResult) {
-          const tmp4Result = tmp4(1086);
+          const tmp4Result = tmp4(1098);
           isGuildVocalResult = tmp4Result.has(deny.deny, tmp6.CONNECT);
         }
         hasItem1 = isGuildVocalResult;
@@ -65,7 +65,7 @@ export const isChannelAccessGrantedBy = function isChannelAccessGrantedBy(isGuil
         const isGuildVocalResult1 = isGuildVocal.isGuildVocal();
         let hasItem = !isGuildVocalResult1;
         if (isGuildVocalResult1) {
-          const tmp10Result = tmp10(1086);
+          const tmp10Result = tmp10(1098);
           hasItem = tmp10Result.has(deny.allow, tmp12.CONNECT);
         }
         hasItem2 = hasItem;

@@ -1,24 +1,24 @@
-// Module ID: 14263
-// Function ID: 14264
+// Module ID: 14251
+// Function ID: 14252
 // Name: UserSettingsChangeUsername
-// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4836, 576, 5021, 14264, 4832, 1115, 1485, 504, 4488, 14265, 6411, 6405, 1271, 1486, 7288, 6024, 6419, 6357, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17, 1378, 1086, 21, 4837, 588, 5022, 14252, 4833, 1127, 558, 576, 1491, 504, 4491, 14253, 6411, 6405, 1283, 1492, 7292, 6021, 6419, 6354, 2]
 
-// Module 14263 (UserSettingsChangeUsername)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import intl3 from "intl" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
+// Module 14251 (UserSettingsChangeUsername)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl3 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_1, closure_2, importAll, navigation;
+let closure_1, importAll, navigation;
 
 let closure_12;
 let metroImportAll;
@@ -32,18 +32,18 @@ function UsernameStatusMessage(showHint) {
   let P2;
   showHint = showHint.showHint;
   const usernameStatus = showHint.usernameStatus;
-  const str = showHint(5021);
+  const str = showHint(5022);
   const match = str.match(usernameStatus);
-  let obj = { type: showHint(14264).NameValidationState.ERROR, message: P.select() };
+  let obj = { type: showHint(14252).NameValidationState.ERROR, message: P.select() };
   const _with = match.with;
-  P = showHint(5021).P;
+  P = showHint(5022).P;
   const _withResult = _with(obj, (children) => {
     const obj = { variant: "text-xs/medium", color: "text-feedback-critical", children };
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);
   });
   const _with2 = _withResult.with;
-  const obj2 = { type: showHint(14264).NameValidationState.AVAILABLE, message: P2.select() };
-  P2 = showHint(5021).P;
+  const obj2 = { type: showHint(14252).NameValidationState.AVAILABLE, message: P2.select() };
+  P2 = showHint(5022).P;
   const _with2Result = _with2(obj2, (children) => {
     const obj = { variant: "text-xs/medium", color: "text-feedback-positive", children };
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);
@@ -70,9 +70,156 @@ createStyles = createStyles.createStyles;
 obj3 = { width: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginBottom: 8 };
 obj4 = { flex: 1, marginVertical: 12, backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED };
 let closure_13 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/user_settings/account/native/UserSettingsChangeUsername.tsx");
-
-export default function UserSettingsChangeUsername() {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let currentUser;
+  let first;
+  let first1;
+  let tmp18;
+  let tmp6;
+  let tmp7;
+  let tmp9;
+  let tmp = navigation;
+  const tmp2 = first;
+  let obj = navigation(first[14]);
+  const cResult = obj.c(74);
+  let tmp4 = closure_13();
+  let obj2 = navigation(first[15]);
+  navigation = obj2.useNavigation();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    class S {
+      constructor() {
+        return closure_9.getCurrentUser();
+      }
+    }
+    cResult[0] = items;
+    cResult[1] = S;
+    tmp7 = S;
+    tmp6 = items;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const tmpResult = tmp(tmp2[16]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
+  if (cResult[2] !== stateFromStores) {
+    let obj5 = stateFromStores(tmp2[17]);
+    const canEditDiscriminatorResult = obj5.canEditDiscriminator(stateFromStores);
+    class S {
+      constructor() {
+        return closure_9.getCurrentUser();
+      }
+    }
+    cResult[2] = stateFromStores;
+    cResult[3] = canEditDiscriminatorResult;
+    tmp9 = canEditDiscriminatorResult;
+  } else {
+    tmp9 = cResult[3];
+  }
+  let closure_2 = tmp9;
+  const obj6 = react;
+  let str;
+  const useState = react.useState;
+  if (stateFromStores != null) {
+    str = stateFromStores.username;
+  }
+  if (str == null) {
+    str = "";
+  }
+  const tmp13 = first1(useState(str), 2);
+  first = tmp13[0];
+  let closure_4 = tmp13[1];
+  let str2;
+  const useState2 = obj6.useState;
+  if (stateFromStores != null) {
+    str2 = stateFromStores.discriminator;
+  }
+  if (str2 == null) {
+    str2 = "";
+  }
+  first1 = tmp12(useState2(str2), 2)[0];
+  first1(useState2(str2), 2);
+  [r10065, react] = first1(obj6.useState(null), 2);
+  first1(obj6.useState(null), 2);
+  if (cResult[4] !== stateFromStores) {
+    let hasUniqueUsernameResult;
+    if (stateFromStores != null) {
+      hasUniqueUsernameResult = stateFromStores.hasUniqueUsername();
+    }
+    class S {
+      constructor() {
+        return closure_9.getCurrentUser();
+      }
+    }
+    cResult[5] = hasUniqueUsernameResult;
+    tmp18 = hasUniqueUsernameResult;
+  } else {
+    tmp18 = cResult[5];
+  }
+  let username;
+  const useUsernameStatus = tmp(tmp2[18]).useUsernameStatus;
+  const tmp21 = !tmp18;
+  tmp(tmp2[18]);
+  if (stateFromStores != null) {
+    username = stateFromStores.username;
+  }
+  const usernameStatus = useUsernameStatus(first, !tmp21, false, username);
+  const ref = obj6.useRef(null);
+  if (cResult[6] === tmp9) {
+    if (cResult[7] === first1) {
+      if (stateFromStores != null) {
+        const discriminator = stateFromStores.discriminator;
+      }
+      class S {
+        constructor() {
+          return closure_9.getCurrentUser();
+        }
+      }
+    }
+  }
+  let username1;
+  if (stateFromStores != null) {
+    username1 = stateFromStores.username;
+  }
+  let tmp27 = first !== username1;
+  if (!tmp27) {
+    let discriminator1;
+    if (stateFromStores != null) {
+      discriminator1 = stateFromStores.discriminator;
+    }
+    tmp27 = first1 !== discriminator1;
+  }
+  if (tmp27) {
+    const tmp29 = !tmp9;
+    if (tmp9) {
+      const obj7 = /^\d+$/;
+      let isMatch = obj7.test(first1);
+      if (isMatch) {
+        const _parseInt = parseInt;
+        isMatch = parseInt(first1) > 0;
+      }
+      class S {
+        constructor() {
+          return closure_9.getCurrentUser();
+        }
+      }
+    }
+    tmp27 = tmp29;
+  }
+  cResult[6] = tmp9;
+  cResult[7] = first1;
+  let discriminator2;
+  if (stateFromStores != null) {
+    discriminator2 = stateFromStores.discriminator;
+  }
+  cResult[8] = discriminator2;
+  let username2;
+  if (stateFromStores != null) {
+    username2 = stateFromStores.username;
+  }
+  cResult[9] = username2;
+  cResult[10] = first;
+  cResult[11] = tmp27;
+}) : (() => {
   let first1;
   let intl;
   let intl2;
@@ -88,12 +235,12 @@ export default function UserSettingsChangeUsername() {
   let tmp = closure_13();
   const tmp2 = navigation;
   let tmp3 = value;
-  let obj = navigation(value[13]);
+  let obj = navigation(value[15]);
   navigation = obj.useNavigation();
-  let obj2 = navigation(value[14]);
+  let obj2 = navigation(value[16]);
   const items = [onSubmitEditing];
   const stateFromStores = obj2.useStateFromStores(items, () => callback.getCurrentUser());
-  let obj4 = stateFromStores(value[15]);
+  let obj4 = stateFromStores(value[17]);
   let canEditDiscriminatorResult = obj4.canEditDiscriminator(stateFromStores);
   if (canEditDiscriminatorResult) {
     let hasUniqueUsernameResult;
@@ -129,8 +276,8 @@ export default function UserSettingsChangeUsername() {
   [obj6, react] = first1(obj5.useState(null), 2);
   first1(obj5.useState(null), 2);
   let hasUniqueUsernameResult1;
-  const useUsernameStatus = tmp2(tmp3[16]).useUsernameStatus;
-  tmp2(tmp3[16]);
+  const useUsernameStatus = tmp2(tmp3[18]).useUsernameStatus;
+  tmp2(tmp3[18]);
   if (stateFromStores != null) {
     hasUniqueUsernameResult1 = stateFromStores.hasUniqueUsername();
   }
@@ -173,7 +320,7 @@ export default function UserSettingsChangeUsername() {
     const tmp = isMatch;
     if (tmp) {
       const tmp3 = first;
-      const obj = stateFromStores(first[17]);
+      const obj = stateFromStores(first[19]);
       const tmp4 = constants;
       obj.setSection(constants.ACCOUNT_CONFIRM_PASSWORD);
       const obj2 = {
@@ -182,7 +329,7 @@ export default function UserSettingsChangeUsername() {
           },
         onSuccess() {
             const dispatch = closure_0.dispatch;
-            const CommonActions = navigation(first[20]).CommonActions;
+            const CommonActions = navigation(first[22]).CommonActions;
             dispatch(CommonActions.navigate(constants.ACCOUNT));
           }
       };
@@ -203,7 +350,7 @@ export default function UserSettingsChangeUsername() {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -234,7 +381,7 @@ export default function UserSettingsChangeUsername() {
                     username = 1;
                     c4 = 1;
                     const obj5 = { value: obj4.saveAccountChanges(user, { close: false }), done: false };
-                    obj4 = closure_2_2(closure_2_3[18]);
+                    obj4 = closure_2_2(closure_2_3[20]);
                     return obj5;
                   }
                 }
@@ -248,9 +395,9 @@ export default function UserSettingsChangeUsername() {
                 if (!value.ok) {
                   const self = this;
                   const self2 = this;
-                  v6OrEarlierAPIError = new value(closure_2_3[19]).V6OrEarlierAPIError(value);
+                  v6OrEarlierAPIError = new value(closure_2_3[21]).V6OrEarlierAPIError(value);
                   const dispatch = value.dispatch;
-                  const CommonActions = value(closure_2_3[20]).CommonActions;
+                  const CommonActions = value(closure_2_3[22]).CommonActions;
                   dispatch(CommonActions.navigate(constants.ACCOUNT_CHANGE_USERNAME));
                   closure_1_6(v6OrEarlierAPIError);
                   c4 = 3;
@@ -290,7 +437,7 @@ export default function UserSettingsChangeUsername() {
         let tmp = null;
         if (isMatch) {
           const obj = { onPress, label: intl.string(navigation(first[12]).t["R3BPH+"]) };
-          const HeaderTextButton = navigation(first[21]).HeaderTextButton;
+          const HeaderTextButton = navigation(first[23]).HeaderTextButton;
           const merged = Object.assign(arg0);
           intl = navigation(first[12]).intl;
           tmp = closure_2_11(HeaderTextButton, obj);
@@ -321,7 +468,7 @@ export default function UserSettingsChangeUsername() {
       tmp33 = obj3;
     }
     const tmp34 = closure_11;
-    const TextInput = tmp2(tmp3[22]).TextInput;
+    const TextInput = tmp2(tmp3[24]).TextInput;
     if (canEditDiscriminatorResult) {
       obj9 = { ref, containerStyle: tmp.discriminator, keyboardType: "numeric", value: first1, onChange: tmp14, onSubmitEditing, placeholder: "1337", returnKeyType: "done", autoCapitalize: "none", clearable: true, leadingText: "#", maxLength: 4 };
       const obj8 = { ref, containerStyle: tmp.discriminator, keyboardType: "numeric", value: first1, onChange: tmp14, onSubmitEditing, placeholder: "1337", returnKeyType: "done", autoCapitalize: "none", clearable: true, leadingText: "#", maxLength: 4 };
@@ -331,10 +478,10 @@ export default function UserSettingsChangeUsername() {
     const obj10 = { style: tmp.background, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: items4 };
     items4 = [, ];
     const tmp34Result = tmp34(TextInput, obj9);
-    items4[0] = tmp34(stateFromStores(tmp3[23]), {});
+    items4[0] = tmp34(stateFromStores(tmp3[25]), {});
     const obj11 = { style: tmp.container, children: items5 };
     const obj12 = { children: intl.string(tmp2(tmp3[12]).t.IEpCBQ) };
-    const tmp5Result = stateFromStores(tmp3[24]);
+    const tmp5Result = stateFromStores(tmp3[26]);
     intl = tmp2(tmp3[12]).intl;
     items5 = [tmp34(tmp5Result, obj12), , ];
     const obj13 = { style: tmp.inputs, children: items6 };
@@ -362,7 +509,7 @@ export default function UserSettingsChangeUsername() {
       autoCapitalize: "none",
       autoFocus: true
     };
-    const TextInput2 = tmp2(tmp3[22]).TextInput;
+    const TextInput2 = tmp2(tmp3[24]).TextInput;
     intl2 = tmp2(tmp3[12]).intl;
     str6 = "done";
     const tmp37 = isMatch;
@@ -386,4 +533,7 @@ export default function UserSettingsChangeUsername() {
     items4[1] = closure_12(ref, obj11);
     return closure_12(tmp37, obj10);
   }
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/account/native/UserSettingsChangeUsername.tsx");
+
+export default tmp5;

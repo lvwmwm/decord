@@ -1,18 +1,18 @@
-// Module ID: 8491
-// Function ID: 8492
+// Module ID: 8488
+// Function ID: 8489
 // Name: ApplicationWidgetConfigActions
-// Dependencies: [5, 8490, 1074, 8492, 559, 1091, 573, 1271, 1231, 2]
+// Dependencies: [5, 8487, 1086, 8489, 569, 1103, 585, 1283, 1243, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 8491 (ApplicationWidgetConfigActions)
-import Constants from "Constants" /* 1074 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 8490 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 8492 */;
+// Module 8488 (ApplicationWidgetConfigActions)
+import Constants from "Constants" /* 1086 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 8487 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 8489 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Backoff from "Backoff" /* 559 */;
-import Dispatcher from "Dispatcher" /* 573 */;
+import Backoff from "Backoff" /* 569 */;
+import Dispatcher from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationWidgetConfigStore = ApplicationWidgetConfigStore2;
@@ -46,7 +46,7 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -107,7 +107,7 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
           closure_129_9.succeed();
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp24) {
         closure_2 = tmp24;
@@ -137,7 +137,7 @@ obj = function _fetchDeveloperWidgetConfigsFromApi() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -189,7 +189,7 @@ obj = function _fetchDeveloperWidgetConfigsFromApi() {
           obj.dispatch(obj10);
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp24) {
         closure_2 = tmp24;
@@ -219,7 +219,7 @@ obj = function _fetchWidgetConfigsFromApi() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -272,7 +272,7 @@ obj = function _fetchWidgetConfigsFromApi() {
             dispatch(obj);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           closure_3 = tmp28;
@@ -331,8 +331,8 @@ export const fetchDeveloperWidgetConfigs = function fetchDeveloperWidgetConfigs(
   }
   resolved = promiseDeduper3.one(undefined, fetchDeveloperWidgetConfigsFromApi, { force: flag });
 };
-export const fetchWidgetConfigs = function fetchWidgetConfigs(application_id, arg1) {
-  let closure_0 = application_id;
+export const fetchWidgetConfigs = function fetchWidgetConfigs(item10012, arg1) {
+  let closure_0 = item10012;
   obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -348,10 +348,10 @@ export const fetchWidgetConfigs = function fetchWidgetConfigs(application_id, ar
     }
     return resolved;
   }
-  resolved = promiseDeduper4.one(application_id, () => {
+  resolved = promiseDeduper4.one(item10012, () => {
     function fetchWidgetConfigsFromApi() {
       return closure_1_15(...arguments);
     }
-    return fetchWidgetConfigsFromApi(application_id);
+    return fetchWidgetConfigsFromApi(item10012);
   }, { force: flag });
 };

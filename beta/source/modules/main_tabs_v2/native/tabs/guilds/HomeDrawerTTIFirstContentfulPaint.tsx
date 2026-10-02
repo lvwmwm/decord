@@ -1,23 +1,54 @@
-// Module ID: 15998
-// Function ID: 15999
+// Module ID: 15999
+// Function ID: 16000
 // Name: HomeDrawerTTIFirstContentfulPaint
-// Dependencies: [19, 21, 6895, 11375, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 6899, 11249, 2]
 
-// Module 15998 (HomeDrawerTTIFirstContentfulPaint)
+// Module 15999 (HomeDrawerTTIFirstContentfulPaint)
 import Fragment from "Fragment" /* 21 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 6895 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11375 */;
+import react2 from "react" /* 576 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 6899 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const TTIFirstContentfulPaint = tmp(11249);
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/HomeDrawerTTIFirstContentfulPaint.tsx");
-
-export default function HomeDrawerTTIFirstContentfulPaint() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  let tmp7;
+  let obj = react2;
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function c() {
+      const obj = TTIAnalyticsUtils;
+      obj.trackAppUIViewed();
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp4 = fn;
+    tmp5 = items;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const layoutEffect = react.useLayoutEffect(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp9 = jsx(TTIFirstContentfulPaint.TTIFirstContentfulPaint, { label: "home_drawer", checkFocusedScreen: "guilds" });
+    cResult[2] = tmp9;
+    tmp7 = tmp9;
+  } else {
+    tmp7 = cResult[2];
+  }
+  return tmp7;
+}) : (() => {
   const layoutEffect = react.useLayoutEffect(() => {
     const obj = TTIAnalyticsUtils;
     obj.trackAppUIViewed();
   }, []);
   return jsx(TTIFirstContentfulPaint.TTIFirstContentfulPaint, { label: "home_drawer", checkFocusedScreen: "guilds" });
-};
+});
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/HomeDrawerTTIFirstContentfulPaint.tsx");
+
+export default tmp2;

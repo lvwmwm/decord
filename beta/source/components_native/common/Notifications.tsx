@@ -1,21 +1,55 @@
-// Module ID: 9538
-// Function ID: 9539
-// Name: Notifications
-// Dependencies: [19, 9539, 21, 504, 9564, 2]
-// Exports: default
+// Module ID: 12208
+// Function ID: 12209
+// Name: common/Notifications
+// Dependencies: [19, 12209, 21, 558, 576, 504, 12230, 2]
 
-// Module 9538 (Notifications)
+// Module 12208 (common/Notifications)
 import Fragment from "Fragment" /* 21 */;
-import get_initialized from "get initialized" /* 504 */;
-import InAppNotificationContainerDefault from "InAppNotificationContainer" /* 9564 */;
+import react2 from "react" /* 576 */;
+import InAppNotificationContainerDefault from "InAppNotificationContainer" /* 12230 */;
 import react from "react" /* 19 */;
-import InAppNotificationStore from "InAppNotificationStore" /* 9539 */;
+import InAppNotificationStore from "InAppNotificationStore" /* 12209 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const get_initialized = tmp(504);
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("components_native/common/Notifications.tsx");
-
-export default function Notifications() {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let currentNotification;
+  let tmp4;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [InAppNotificationStore];
+    const fn = function c() {
+      return currentNotification.getCurrentNotification();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  let tmp8 = null;
+  if (null != stateFromStores) {
+    let tmp9;
+    if (cResult[2] !== stateFromStores) {
+      const tmp12 = jsx(InAppNotificationContainerDefault, { notification: stateFromStores }, stateFromStores.key);
+      cResult[2] = stateFromStores;
+      cResult[3] = tmp12;
+      tmp9 = tmp12;
+    } else {
+      tmp9 = cResult[3];
+    }
+    tmp8 = tmp9;
+  }
+  return tmp8;
+}) : (() => {
   let currentNotification;
   const items = [InAppNotificationStore];
   const obj = get_initialized;
@@ -25,4 +59,7 @@ export default function Notifications() {
     tmp3 = jsx(InAppNotificationContainerDefault, { notification: stateFromStores }, stateFromStores.key);
   }
   return tmp3;
-};
+});
+const result = size.fileFinishedImporting("components_native/common/Notifications.tsx");
+
+export default tmp3;

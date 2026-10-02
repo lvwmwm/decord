@@ -1,10 +1,10 @@
 // Module ID: 5629
 // Function ID: 5630
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 5629 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "1008174ea69b007726dfb135130564cc", name: "img_account_sync_steam_white", type: "svg" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "98be8451aca35f74c79e6384bee97580", name: "img_account_sync_steam_light", type: "svg" });

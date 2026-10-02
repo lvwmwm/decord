@@ -1,18 +1,49 @@
-// Module ID: 6672
-// Function ID: 6673
+// Module ID: 6673
+// Function ID: 6674
 // Name: useUnmountAbortSignal
-// Dependencies: [5910, 5298, 2]
-// Exports: default, useUnmountAbortSignalWithDelay
+// Dependencies: [558, 576, 5907, 5297, 2]
 
-// Module 6672 (useUnmountAbortSignal)
-import useMountEffect from "useMountEffect" /* 5298 */;
-import reactDefault from "react" /* 5910 */;
+// Module 6673 (useUnmountAbortSignal)
+import react from "react" /* 576 */;
+import useInitialValueDefault from "useInitialValue" /* 5907 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("hooks/useUnmountAbortSignal.tsx");
-
-export default function useUnmountAbortSignal() {
-  const tmp = reactDefault(() => {
+let tmp;
+const useMountEffect = tmp(5297);
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let tmp6;
+  const obj = react;
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
+      const abortController = new AbortController();
+      return abortController;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const tmp5 = useInitialValueDefault(first);
+  let closure_0 = tmp5;
+  if (cResult[1] !== tmp5) {
+    const fn2 = function o() {
+      closure_0.abort();
+    };
+    cResult[1] = tmp5;
+    cResult[2] = fn2;
+    tmp6 = fn2;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = useMountEffect;
+  const unmountEffect = tmpResult.useUnmountEffect(tmp6);
+  return tmp5.signal;
+}) : (() => {
+  const tmp = useInitialValueDefault(() => {
     const abortController = new AbortController();
     return abortController;
   });
@@ -22,10 +53,46 @@ export default function useUnmountAbortSignal() {
     closure_0.abort();
   });
   return tmp.signal;
-};
-export const useUnmountAbortSignalWithDelay = function useUnmountAbortSignalWithDelay(arg0) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let first;
   let closure_0 = arg0;
-  const tmp = reactDefault(() => {
+  const obj = react;
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n() {
+      const abortController = new AbortController();
+      return abortController;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const tmp5 = useInitialValueDefault(first);
+  let closure_1 = tmp5;
+  if (cResult[1] === tmp5) {
+    let tmp6;
+    if (cResult[2] === arg0) {
+      tmp6 = cResult[3];
+    }
+    const tmpResult = useMountEffect;
+    const unmountEffect = tmpResult.useUnmountEffect(tmp6);
+    return tmp5.signal;
+  }
+  const fn2 = function l() {
+    const timerId = setTimeout(() => {
+      closure_1_1.abort();
+    }, closure_0);
+  };
+  cResult[1] = tmp5;
+  cResult[2] = arg0;
+  cResult[3] = fn2;
+  tmp6 = fn2;
+}) : ((arg0) => {
+  let closure_0 = arg0;
+  const tmp = useInitialValueDefault(() => {
     const abortController = new AbortController();
     return abortController;
   });
@@ -37,4 +104,8 @@ export const useUnmountAbortSignalWithDelay = function useUnmountAbortSignalWith
     }, closure_0);
   });
   return tmp.signal;
-};
+});
+const result = size.fileFinishedImporting("hooks/useUnmountAbortSignal.tsx");
+
+export default tmp2;
+export const useUnmountAbortSignalWithDelay = tmp3;

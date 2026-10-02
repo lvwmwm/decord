@@ -1,24 +1,47 @@
-// Module ID: 6568
-// Function ID: 6569
+// Module ID: 6569
+// Function ID: 6570
 // Name: FormCheckmark
-// Dependencies: [19, 21, 6554, 576, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 6555, 588, 2]
 
-// Module 6568 (FormCheckmark)
+// Module 6569 (FormCheckmark)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 6554 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("design/void/Form/native/FormCheckmark.tsx");
+let selected;
 
-export default function RowCheckmark(selected) {
+let tmp;
+const CheckmarkSmallIcon2 = tmp(6555);
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(2);
+  selected = selected.selected;
+  if (cResult[0] !== selected) {
+    let tmp5 = null;
+    if (selected) {
+      const CheckmarkSmallIcon = CheckmarkSmallIcon2.CheckmarkSmallIcon;
+      tmp5 = <CheckmarkSmallIcon color={nativeDefault.unsafe_rawColors.BRAND_500} />;
+    }
+    cResult[0] = selected;
+    cResult[1] = tmp5;
+    tmp4 = tmp5;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : ((selected) => {
   let tmp = null;
   if (selected.selected) {
     const CheckmarkSmallIcon = CheckmarkSmallIcon2.CheckmarkSmallIcon;
     tmp = <CheckmarkSmallIcon color={nativeDefault.unsafe_rawColors.BRAND_500} />;
   }
   return tmp;
-};
+});
+const result = size.fileFinishedImporting("design/void/Form/native/FormCheckmark.tsx");
+
+export default tmp3;

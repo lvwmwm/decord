@@ -1,15 +1,15 @@
-// Module ID: 7642
-// Function ID: 7643
+// Module ID: 7646
+// Function ID: 7647
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1372, 1074, 573, 1271, 5179, 5184, 1231, 559, 1091, 2]
+// Dependencies: [5, 1378, 1086, 585, 1283, 5180, 5185, 1243, 569, 1103, 2]
 // Exports: fetchBadge, fetchBadgeDirectory, fetchBadgeSummary, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 7642 (BadgeDirectoryActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 7646 (BadgeDirectoryActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
-import Dispatcher from "Dispatcher" /* 573 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import Dispatcher from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let backoff, set;
@@ -132,13 +132,13 @@ let obj = function _fetchBadgeDirectory() {
       obj2.dispatch(obj16);
       c6 = 0;
     }
-    await "HermesInternal";
+    await "IconComponent";
     closure_4 = tmp;
     obj5 = closure_1;
     if (closure_1 === undefined) {
       obj5 = {};
     }
-    return "flex";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -158,7 +158,7 @@ obj = function _fetchBadge() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -216,7 +216,7 @@ obj = function _fetchBadge() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp28) {
           closure_5 = tmp28;
           if (0 === c6) {
@@ -249,7 +249,7 @@ obj = function _requestBadgeSummary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -316,7 +316,7 @@ obj = function _requestBadgeSummary() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp47) {
           closure_6 = tmp47;

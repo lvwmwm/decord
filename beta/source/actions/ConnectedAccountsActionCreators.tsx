@@ -1,17 +1,17 @@
-// Module ID: 5718
-// Function ID: 5719
+// Module ID: 5719
+// Function ID: 5720
 // Name: ConnectedAccountsActionCreators
-// Dependencies: [5, 5593, 1074, 3, 1271, 573, 1241, 5719, 5029, 1249, 2]
+// Dependencies: [5, 5594, 1086, 3, 1283, 585, 1253, 5720, 5030, 1261, 2]
 
-// Module 5718 (ConnectedAccountsActionCreators)
+// Module 5719 (ConnectedAccountsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5029 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5030 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
-import Constants from "Constants" /* 1074 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -204,7 +204,7 @@ let obj = {
       if (!ok.ok) {
         const obj3 = { type: "USER_CONNECTIONS_INTEGRATION_JOINING_ERROR", integrationId: tmp3, error: message };
         message = undefined;
-        const dispatch = tmp(573).dispatch;
+        const dispatch = tmp(585).dispatch;
         DispatcherDefault;
         if (!ok.hasErr) {
           message = ok.body.message;
@@ -233,7 +233,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -336,7 +336,7 @@ let obj = {
       } else {
         logger.error("Two-way link: missing authorize location");
       }
-      await "HermesInternal";
+      await "IconComponent";
       return arg1;
     })();
   },

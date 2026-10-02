@@ -1,15 +1,15 @@
-// Module ID: 8368
-// Function ID: 8369
+// Module ID: 8365
+// Function ID: 8366
 // Name: GameAutocompleteActionCreators
-// Dependencies: [5, 5420, 1074, 5421, 573, 1271, 2]
+// Dependencies: [5, 5421, 1086, 5422, 585, 1283, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 8368 (GameAutocompleteActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5421 */;
+// Module 8365 (GameAutocompleteActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5422 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5420 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 5421 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3, closure_4, query, results;
@@ -30,7 +30,7 @@ let obj = function _fetchGameAutocomplete() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -101,7 +101,7 @@ let obj = function _fetchGameAutocomplete() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp26) {
           closure_4 = tmp26;
           if (0 === c5) {

@@ -1,24 +1,25 @@
-// Module ID: 9875
-// Function ID: 9876
+// Module ID: 9912
+// Function ID: 9913
 // Name: StickerPickerEmptyState
-// Dependencies: [32, 19, 17, 5814, 2024, 1074, 1374, 21, 4836, 9848, 9636, 6583, 6603, 504, 1241, 4832, 1115, 5435, 4801, 4802, 5281, 5899, 8661, 9869, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 5815, 2030, 1086, 1380, 21, 4837, 558, 576, 9882, 9898, 6584, 6604, 504, 1253, 1127, 4833, 5436, 4802, 4803, 5896, 8658, 9906, 5282, 2]
 
-// Module 9875 (StickerPickerEmptyState)
+// Module 9912 (StickerPickerEmptyState)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import StickersConstants from "StickersConstants" /* 2024 */;
-import HapticUtils from "HapticUtils" /* 4801 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
-import StickerDefault from "Sticker" /* 9636 */;
-import StickersHooks from "StickersHooks" /* 9848 */;
+import react2 from "react" /* 576 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import StickersConstants from "StickersConstants" /* 2030 */;
+import HapticUtils from "HapticUtils" /* 4802 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4803 */;
+import StickersHooks from "StickersHooks" /* 9882 */;
+import StickerDefault from "Sticker" /* 9898 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 5814 */;
-import Constants from "Constants" /* 1074 */;
+import StickersStore from "StickersStore" /* 5815 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +29,41 @@ let c9;
 let closure_12;
 let metroImportAll;
 let unpackModuleId;
-function EmptyStateSticker(sticker) {
+const View = react_native.View;
+const EMPTY_STATE_STICKERS = StickersConstants.EMPTY_STATE_STICKERS;
+({ AnalyticEvents: metroImportAll, AnalyticsSections: c9 } = Constants);
+const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
+let closure_13 = createStyles.createStyles({ header: { marginBottom: 8, textAlign: "center" }, blurb: { lineHeight: 18, textAlign: "center", marginBottom: 12 }, premiumButton: { marginTop: 20, alignSelf: "center", paddingLeft: 5, paddingRight: 10, flexGrow: 0 }, nitroWheel: { width: 32 }, stickersRow: { flexDirection: "row", alignSelf: "center" }, sticker: { paddingHorizontal: 2 } });
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let isFocused;
+  let sticker;
+  const obj = react2;
+  const cResult = obj.c(4);
+  ({ sticker, isFocused } = arg0);
+  const obj2 = StickersHooks;
+  const shouldAnimateSticker = obj2.useShouldAnimateSticker(isFocused);
+  let id;
+  if (sticker != null) {
+    id = sticker.id;
+  }
+  if (cResult[0] === shouldAnimateSticker) {
+    if (cResult[1] === sticker) {
+      let tmp5;
+      if (cResult[2] === id) {
+        tmp5 = cResult[3];
+      }
+      return tmp5;
+    }
+  }
+  const tmp6 = unpackModuleId(StickerDefault, { sticker, size: 60, animated: shouldAnimateSticker }, id);
+  cResult[0] = shouldAnimateSticker;
+  cResult[1] = sticker;
+  cResult[2] = id;
+  cResult[3] = tmp6;
+  tmp5 = tmp6;
+}) : ((sticker) => {
   sticker = sticker.sticker;
   const isFocused = sticker.isFocused;
   const obj = StickersHooks;
@@ -40,16 +75,229 @@ function EmptyStateSticker(sticker) {
     id = sticker.id;
   }
   return tmp2(tmp3, { sticker, size: 60, animated }, id);
-}
-const View = react_native.View;
-const EMPTY_STATE_STICKERS = StickersConstants.EMPTY_STATE_STICKERS;
-({ AnalyticEvents: metroImportAll, AnalyticsSections: c9 } = Constants);
-const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
-({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
-let closure_13 = createStyles.createStyles({ header: { marginBottom: 8, textAlign: "center" }, blurb: { lineHeight: 18, textAlign: "center", marginBottom: 12 }, premiumButton: { marginTop: 20, alignSelf: "center", paddingLeft: 5, paddingRight: 10, flexGrow: 0 }, nitroWheel: { width: 32 }, stickersRow: { flexDirection: "row", alignSelf: "center" }, sticker: { paddingHorizontal: 2 } });
-let result = size.fileFinishedImporting("modules/stickers/native/StickerPickerEmptyState.tsx");
-
-export default function _default() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let analyticsLocations;
+  let closure_0;
+  let closure_3;
+  let first;
+  let tmp12;
+  let tmp13;
+  let tmp15;
+  let tmp19;
+  let tmp7;
+  let tmp8;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(35);
+  const tmp4 = closure_13();
+  _require = tmp4;
+  let obj2 = require("StickersHooks");
+  const fetchStickerPacks = obj2.useFetchStickerPacks();
+  const tmp6 = analyticsLocations(first[13]);
+  analyticsLocations = tmp6(analyticsLocations(first[14]).EMPTY_STATE).analyticsLocations;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [StickersStore];
+    const fn = function p() {
+      let stickerById;
+      const mapped = EMPTY_STATE_STICKERS.map((item) => stickerById.getStickerById(item));
+      return mapped.filter((item) => null != item);
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp7 = items;
+    tmp8 = fn;
+  } else {
+    [tmp7, tmp8] = cResult;
+  }
+  const tmpResult = tmp(first[15]);
+  const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp7, tmp8);
+  [first, _slicedToArray] = react.useState(null);
+  const obj4 = react;
+  if (cResult[2] !== analyticsLocations) {
+    class R {
+      constructor() {
+        let obj3;
+        const obj2 = { type: PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL, source: obj3, location_stack: analyticsLocations };
+        obj3 = { section: constants.EMPTY_STICKER_PICKER_UPSELL };
+        const obj = AnalyticsUtilsDefault;
+        obj.track(metroImportAll.PREMIUM_UPSELL_VIEWED, obj2);
+      }
+    }
+    const items1 = [analyticsLocations];
+    cResult[2] = analyticsLocations;
+    cResult[3] = R;
+    cResult[4] = items1;
+    tmp13 = items1;
+    tmp12 = R;
+  } else {
+    class R {
+      constructor() {
+        let obj3;
+        const obj2 = { type: PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL, source: obj3, location_stack: analyticsLocations };
+        obj3 = { section: constants.EMPTY_STICKER_PICKER_UPSELL };
+        const obj = AnalyticsUtilsDefault;
+        obj.track(metroImportAll.PREMIUM_UPSELL_VIEWED, obj2);
+      }
+    }
+    tmp13 = cResult[4];
+  }
+  const effect = obj4.useEffect(tmp12, tmp13);
+  const header = tmp4.header;
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor() {
+        let obj3;
+        const obj2 = { type: PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL, source: obj3, location_stack: analyticsLocations };
+        obj3 = { section: constants.EMPTY_STICKER_PICKER_UPSELL };
+        const obj = AnalyticsUtilsDefault;
+        obj.track(metroImportAll.PREMIUM_UPSELL_VIEWED, obj2);
+      }
+    }
+    const stringResult = obj5.string(tmp(first[17]).t.HEm04J);
+    cResult[5] = stringResult;
+    tmp15 = stringResult;
+  } else {
+    class R {
+      constructor() {
+        let obj3;
+        const obj2 = { type: PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL, source: obj3, location_stack: analyticsLocations };
+        obj3 = { section: constants.EMPTY_STICKER_PICKER_UPSELL };
+        const obj = AnalyticsUtilsDefault;
+        obj.track(metroImportAll.PREMIUM_UPSELL_VIEWED, obj2);
+      }
+    }
+  }
+  if (cResult[6] !== tmp4.header) {
+    class R {
+      constructor() {
+        let obj3;
+        const obj2 = { type: PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL, source: obj3, location_stack: analyticsLocations };
+        obj3 = { section: constants.EMPTY_STICKER_PICKER_UPSELL };
+        const obj = AnalyticsUtilsDefault;
+        obj.track(metroImportAll.PREMIUM_UPSELL_VIEWED, obj2);
+      }
+    }
+    let obj3 = { style: header, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
+    cResult[6] = tmp4.header;
+    cResult[7] = closure_11(tmp(first[18]).Text, obj3);
+    const tmp18 = closure_11(tmp(first[18]).Text, obj3);
+  } else {
+    class R {
+      constructor() {
+        let obj3;
+        const obj2 = { type: PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL, source: obj3, location_stack: analyticsLocations };
+        obj3 = { section: constants.EMPTY_STICKER_PICKER_UPSELL };
+        const obj = AnalyticsUtilsDefault;
+        obj.track(metroImportAll.PREMIUM_UPSELL_VIEWED, obj2);
+      }
+    }
+  }
+  const blurb = tmp4.blurb;
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor() {
+        let obj3;
+        const obj2 = { type: PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL, source: obj3, location_stack: analyticsLocations };
+        obj3 = { section: constants.EMPTY_STICKER_PICKER_UPSELL };
+        const obj = AnalyticsUtilsDefault;
+        obj.track(metroImportAll.PREMIUM_UPSELL_VIEWED, obj2);
+      }
+    }
+    const stringResult1 = obj7.string(tmp(first[17]).t.FnNud4);
+    cResult[8] = stringResult1;
+    tmp19 = stringResult1;
+  } else {
+    class R {
+      constructor() {
+        let obj3;
+        const obj2 = { type: PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL, source: obj3, location_stack: analyticsLocations };
+        obj3 = { section: constants.EMPTY_STICKER_PICKER_UPSELL };
+        const obj = AnalyticsUtilsDefault;
+        obj.track(metroImportAll.PREMIUM_UPSELL_VIEWED, obj2);
+      }
+    }
+  }
+  if (cResult[9] !== tmp4.blurb) {
+    class R {
+      constructor() {
+        let obj3;
+        const obj2 = { type: PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL, source: obj3, location_stack: analyticsLocations };
+        obj3 = { section: constants.EMPTY_STICKER_PICKER_UPSELL };
+        const obj = AnalyticsUtilsDefault;
+        obj.track(metroImportAll.PREMIUM_UPSELL_VIEWED, obj2);
+      }
+    }
+    const obj6 = { style: blurb, variant: "text-sm/medium", color: "text-default", children: tmp19 };
+    cResult[9] = tmp4.blurb;
+    cResult[10] = closure_11(tmp(first[18]).Text, obj6);
+    const tmp22 = closure_11(tmp(first[18]).Text, obj6);
+  } else {
+    class R {
+      constructor() {
+        let obj3;
+        const obj2 = { type: PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL, source: obj3, location_stack: analyticsLocations };
+        obj3 = { section: constants.EMPTY_STICKER_PICKER_UPSELL };
+        const obj = AnalyticsUtilsDefault;
+        obj.track(metroImportAll.PREMIUM_UPSELL_VIEWED, obj2);
+      }
+    }
+  }
+  if (cResult[11] === first) {
+    class R {
+      constructor() {
+        let obj3;
+        const obj2 = { type: PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL, source: obj3, location_stack: analyticsLocations };
+        obj3 = { section: constants.EMPTY_STICKER_PICKER_UPSELL };
+        const obj = AnalyticsUtilsDefault;
+        obj.track(metroImportAll.PREMIUM_UPSELL_VIEWED, obj2);
+      }
+    }
+  }
+  if (cResult[15] === first) {
+    class R {
+      constructor() {
+        let obj3;
+        const obj2 = { type: PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL, source: obj3, location_stack: analyticsLocations };
+        obj3 = { section: constants.EMPTY_STICKER_PICKER_UPSELL };
+        const obj = AnalyticsUtilsDefault;
+        obj.track(metroImportAll.PREMIUM_UPSELL_VIEWED, obj2);
+      }
+    }
+    let mapped = stateFromStoresArray.map(H);
+    cResult[11] = first;
+    cResult[12] = stateFromStoresArray;
+    cResult[13] = tmp4.sticker;
+    cResult[14] = mapped;
+  }
+  class H {
+    constructor(sticker) {
+      let obj2;
+      let obj = {
+        accessible: false,
+        onLongPress() {
+          const obj = HapticUtils;
+          const result = obj.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
+          closure_3(sticker.id);
+        },
+        style: sticker.sticker,
+        children: closure_1_11(closure_1_14, obj2)
+      };
+      obj2 = { sticker, isFocused: first === sticker.id };
+      const PressableOpacity = sticker(first[19]).PressableOpacity;
+      let id;
+      const tmp = closure_1_11;
+      if (sticker != null) {
+        id = sticker.id;
+      }
+      return tmp(PressableOpacity, obj, id);
+    }
+  }
+  cResult[15] = first;
+  cResult[16] = tmp4.sticker;
+  cResult[17] = H;
+}) : (() => {
   let Button;
   let analyticsLocations;
   let closure_0;
@@ -64,8 +312,8 @@ export default function _default() {
   _require = tmp;
   let obj = require("StickersHooks");
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  const tmp3 = analyticsLocations(6583);
-  analyticsLocations = tmp3(analyticsLocations(6603).EMPTY_STATE).analyticsLocations;
+  const tmp3 = analyticsLocations(6584);
+  analyticsLocations = tmp3(analyticsLocations(6604).EMPTY_STATE).analyticsLocations;
   let obj2 = require("get initialized");
   const items = [StickersStore];
   const stateFromStoresArray = obj2.useStateFromStoresArray(items, () => {
@@ -104,10 +352,10 @@ export default function _default() {
           _slicedToArray(sticker.id);
         },
         style: sticker.sticker,
-        children: closure_1_11(EmptyStateSticker, obj2)
+        children: closure_1_11(closure_1_14, obj2)
       };
       obj2 = { sticker, isFocused: dependencyMap === sticker.id };
-      const PressableOpacity = sticker(dependencyMap[17]).PressableOpacity;
+      const PressableOpacity = sticker(dependencyMap[19]).PressableOpacity;
       let id;
       const tmp = closure_1_11;
       if (sticker != null) {
@@ -125,13 +373,16 @@ export default function _default() {
     size: "sm",
     onPress() {
       const obj = { section: constants.EXPRESSION_PICKER };
-      return analyticsLocations(dependencyMap[23])(obj);
+      return analyticsLocations(dependencyMap[24])(obj);
     }
   };
   Button = require("components/Button/Button").Button;
-  obj9 = { source: analyticsLocations(8661), style: tmp.nitroWheel, resizeMode: "contain" };
-  tmp6 = analyticsLocations(5899);
+  obj9 = { source: analyticsLocations(8658), style: tmp.nitroWheel, resizeMode: "contain" };
+  tmp6 = analyticsLocations(5896);
   intl3 = require("intl").intl;
   items2[3] = closure_11(View, obj7);
   return closure_12(View, obj3);
-};
+});
+let result = size.fileFinishedImporting("modules/stickers/native/StickerPickerEmptyState.tsx");
+
+export default tmp4;

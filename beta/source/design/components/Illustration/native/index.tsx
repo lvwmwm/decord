@@ -1,14 +1,37 @@
-// Module ID: 7679
-// Function ID: 7680
-// Dependencies: [1074, 4540, 2]
-// Exports: getIllustrationSource, useIllustrationSource
+// Module ID: 7683
+// Function ID: 7684
+// Dependencies: [1086, 558, 576, 4544, 2]
+// Exports: getIllustrationSource
 
-// Module 7679
-import Constants from "Constants" /* 1074 */;
-import native from "native" /* 4540 */;
+// Module 7683
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import native from "native" /* 4544 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((fn) => {
+  const obj = react;
+  const cResult = obj.c(3);
+  const obj2 = native;
+  const theme = obj2.useThemeContext().theme;
+  if (cResult[0] === fn) {
+    let tmp2;
+    if (cResult[1] === theme) {
+      tmp2 = cResult[2];
+    }
+    return tmp2;
+  }
+  const tmp3 = fn(theme);
+  cResult[0] = fn;
+  cResult[1] = theme;
+  cResult[2] = tmp3;
+  tmp2 = tmp3;
+}) : ((fn) => {
+  const obj = native;
+  return fn(obj.useThemeContext().theme);
+});
 const result = size.fileFinishedImporting("design/components/Illustration/native/index.tsx");
 
 export const getIllustrationSource = function getIllustrationSource(theme, light) {
@@ -35,7 +58,4 @@ export const getIllustrationSource = function getIllustrationSource(theme, light
   }
   return lightResult;
 };
-export const useIllustrationSource = function useIllustrationSource(fn) {
-  const obj = native;
-  return fn(obj.useThemeContext().theme);
-};
+export const useIllustrationSource = tmp2;

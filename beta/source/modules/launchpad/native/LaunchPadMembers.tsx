@@ -1,17 +1,23 @@
-// Module ID: 16819
-// Function ID: 16820
+// Module ID: 17051
+// Function ID: 17052
 // Name: LaunchPadMembers
-// Dependencies: [19, 17, 2045, 2099, 21, 4836, 563, 11668, 16519, 11083, 4832, 1115, 2]
+// Dependencies: [19, 17, 2051, 2102, 21, 4837, 558, 576, 573, 11556, 16521, 10951, 1127, 4833, 2]
 
-// Module 16819 (LaunchPadMembers)
+// Module 17051 (LaunchPadMembers)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useStateFromStores from "useStateFromStores" /* 563 */;
-import intl2 from "intl" /* 1115 */;
+import useStateFromStores from "useStateFromStores" /* 573 */;
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import GuildChannelUserListDefault from "GuildChannelUserList" /* 10951 */;
+import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 11556 */;
+import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 16521 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import createStyles from "createStyles" /* 4836 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let channel, currentlySelectedChannelId;
@@ -19,7 +25,162 @@ let channel, currentlySelectedChannelId;
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ wrapper: { minHeight: 16 }, listStyle: { flex: 0 }, emptyWrapper: { padding: 20 }, emptyText: { textAlign: "center" } });
-const memoResult = react.memo(function LaunchPadMembers() {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let emptyText;
+  let emptyWrapper;
+  let tmp5;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(28);
+  const tmp4 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SelectedChannelStore, ChannelStore];
+    const fn = function y() {
+      currentlySelectedChannelId = currentlySelectedChannelId.getCurrentlySelectedChannelId();
+      channel = channel.getChannel(currentlySelectedChannelId);
+      if (null != currentlySelectedChannelId) {
+        if (null != channel) {
+          if (channel.isPrivate()) {
+            return { channelId: currentlySelectedChannelId, type: "private" };
+          } else {
+            let obj3;
+            const guild_id = channel.guild_id;
+            if (channel.isThread()) {
+              obj3 = { channelId: currentlySelectedChannelId, guildId: guild_id, type: "thread" };
+              const obj2 = { channelId: currentlySelectedChannelId, guildId: guild_id, type: "thread" };
+            } else {
+              obj3 = { channelId: currentlySelectedChannelId, guildId: guild_id, type: "guild" };
+            }
+            return obj3;
+          }
+        }
+      }
+      return { channelId: "unicodeVersion", type: 19359041 };
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = useStateFromStores;
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp5, tmp6);
+  if ("private" === stateFromStoresObject.type) {
+    if (cResult[2] === stateFromStoresObject.channelId) {
+      let tmp35;
+      if (cResult[3] === tmp4.listStyle) {
+        tmp35 = cResult[4];
+      }
+      if (cResult[5] === tmp4.wrapper) {
+        let tmp39;
+        if (cResult[6] === tmp35) {
+          tmp39 = cResult[7];
+        }
+        return tmp39;
+      }
+      const tmp42 = <View style={tmp4.wrapper}>{tmp35}</View>;
+      cResult[5] = tmp4.wrapper;
+      cResult[6] = tmp35;
+      cResult[7] = tmp42;
+      tmp39 = tmp42;
+    }
+    const tmp38 = jsx(PrivateChannelUserListDefault, { channelId: stateFromStoresObject.channelId, listStyleOverride: tmp4.listStyle, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
+    cResult[2] = stateFromStoresObject.channelId;
+    cResult[3] = tmp4.listStyle;
+    cResult[4] = tmp38;
+    tmp35 = tmp38;
+  } else if ("thread" === stateFromStoresObject.type) {
+    if (cResult[8] === stateFromStoresObject.channelId) {
+      if (cResult[9] === stateFromStoresObject.guildId) {
+        let tmp27;
+        if (cResult[10] === tmp4.listStyle) {
+          tmp27 = cResult[11];
+        }
+        if (cResult[12] === tmp4.wrapper) {
+          let tmp31;
+          if (cResult[13] === tmp27) {
+            tmp31 = cResult[14];
+          }
+          return tmp31;
+        }
+        const tmp34 = <View style={tmp4.wrapper}>{tmp27}</View>;
+        cResult[12] = tmp4.wrapper;
+        cResult[13] = tmp27;
+        cResult[14] = tmp34;
+        tmp31 = tmp34;
+      }
+    }
+    ({ channelId: obj7.channelId, guildId: obj7.guildId } = stateFromStoresObject);
+    const tmp30 = jsx(ThreadChannelUserListDefault, { channelId: null, guildId: null, listStyleOverride: tmp4.listStyle, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
+    cResult[8] = stateFromStoresObject.channelId;
+    cResult[9] = stateFromStoresObject.guildId;
+    cResult[10] = tmp4.listStyle;
+    cResult[11] = tmp30;
+    tmp27 = tmp30;
+  } else if ("guild" === stateFromStoresObject.type) {
+    if (cResult[15] === stateFromStoresObject.channelId) {
+      if (cResult[16] === stateFromStoresObject.guildId) {
+        let tmp19;
+        if (cResult[17] === tmp4.listStyle) {
+          tmp19 = cResult[18];
+        }
+        if (cResult[19] === tmp4.wrapper) {
+          let tmp23;
+          if (cResult[20] === tmp19) {
+            tmp23 = cResult[21];
+          }
+          return tmp23;
+        }
+        const tmp26 = <View style={tmp4.wrapper}>{tmp19}</View>;
+        cResult[19] = tmp4.wrapper;
+        cResult[20] = tmp19;
+        cResult[21] = tmp26;
+        tmp23 = tmp26;
+      }
+    }
+    ({ channelId: obj5.channelId, guildId: obj5.guildId } = stateFromStoresObject);
+    const tmp22 = jsx(GuildChannelUserListDefault, { channelId: null, guildId: null, listStyleOverride: tmp4.listStyle, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
+    cResult[15] = stateFromStoresObject.channelId;
+    cResult[16] = stateFromStoresObject.guildId;
+    cResult[17] = tmp4.listStyle;
+    cResult[18] = tmp22;
+    tmp19 = tmp22;
+  } else {
+    let tmp10;
+    let tmp12;
+    const _Symbol = Symbol;
+    ({ emptyWrapper, emptyText } = tmp4);
+    if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(intl2.t["+7wtJq"]);
+      cResult[22] = stringResult;
+      tmp10 = stringResult;
+    } else {
+      tmp10 = cResult[22];
+    }
+    if (cResult[23] !== tmp4.emptyText) {
+      const tmp14 = jsx(Text_Text.Text, { style: emptyText, variant: "text-md/semibold", children: tmp10 });
+      cResult[23] = tmp4.emptyText;
+      cResult[24] = tmp14;
+      tmp12 = tmp14;
+    } else {
+      tmp12 = cResult[24];
+    }
+    if (cResult[25] === tmp4.emptyWrapper) {
+      let tmp15;
+      if (cResult[26] === tmp12) {
+        tmp15 = cResult[27];
+      }
+      return tmp15;
+    }
+    const tmp18 = <View style={emptyWrapper}>{tmp12}</View>;
+    cResult[25] = tmp4.emptyWrapper;
+    cResult[26] = tmp12;
+    cResult[27] = tmp18;
+    tmp15 = tmp18;
+  }
+}) : (() => {
   let intl;
   let tmp8;
   const tmp = closure_7();
@@ -45,7 +206,7 @@ const memoResult = react.memo(function LaunchPadMembers() {
         }
       }
     }
-    return { channelId: "channel", type: 40651345 };
+    return { channelId: "unicodeVersion", type: 19359041 };
   });
   if ("private" === stateFromStoresObject.type) {
     tmp8 = <View style={tmp.wrapper}>{null}</View>;
@@ -57,12 +218,12 @@ const memoResult = react.memo(function LaunchPadMembers() {
     tmp8 = <View style={tmp.wrapper}>{null}</View>;
   } else {
     ({ style: tmp.emptyText, variant: "text-md/semibold", children: intl.string(intl2.t["+7wtJq"]) });
-    const Text = tmp2(4832).Text;
-    intl = tmp2(1115).intl;
+    const Text = tmp2(4833).Text;
+    intl = tmp2(1127).intl;
     tmp8 = <View style={tmp.emptyWrapper}>{null}</View>;
   }
   return tmp8;
-});
+}));
 const result = size.fileFinishedImporting("modules/launchpad/native/LaunchPadMembers.tsx");
 
 export default memoResult;

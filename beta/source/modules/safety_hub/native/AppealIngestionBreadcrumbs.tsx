@@ -1,20 +1,20 @@
-// Module ID: 11383
-// Function ID: 11384
+// Module ID: 11258
+// Function ID: 11259
 // Name: AppealIngestionBreadcrumbs
-// Dependencies: [19, 17, 21, 4836, 576, 4832, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1127, 4833, 2]
 
-// Module 11383 (AppealIngestionBreadcrumbs)
+// Module 11258 (AppealIngestionBreadcrumbs)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import nativeDefault from "native" /* 588 */;
+import Text_Text from "Text/Text" /* 4833 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, reasons;
 
 let c3;
 let closure_4;
@@ -28,10 +28,107 @@ size = { marginStart: 2, marginTop: 8, width: 4, height: 4, borderRadius: 2, bac
 createStyles = createStyles.createStyles;
 rect = { position: "absolute", width: 2, top: 10, bottom: -12, left: 3, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_5 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/safety_hub/native/AppealIngestionBreadcrumbs.tsx");
-
-export default function AppealIngestionBreadcrumbs(reasons) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((reasons) => {
+  let closure_0;
+  let container;
+  let items;
+  let title;
+  let obj = require("react");
+  const cResult = obj.c(18);
+  reasons = reasons.reasons;
+  const tmp4 = closure_5();
+  _require = tmp4;
+  if (0 === reasons.length) {
+    return null;
+  } else {
+    let first;
+    let tmp7;
+    let tmp10;
+    const _Symbol = Symbol;
+    ({ container, title } = tmp4);
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(require("intl").t.eQg0Ck);
+      cResult[0] = stringResult;
+      first = stringResult;
+    } else {
+      first = cResult[0];
+    }
+    if (cResult[1] !== tmp4.title) {
+      let obj2 = { style: title, accessibilityRole: "header", variant: "text-xs/bold", children: first };
+      const tmp9 = closure_3(require("Text/Text").Text, obj2);
+      cResult[1] = tmp4.title;
+      cResult[2] = tmp9;
+      tmp7 = tmp9;
+    } else {
+      tmp7 = cResult[2];
+    }
+    if (cResult[3] === reasons) {
+      if (cResult[4] === tmp4.breadCrumbBar) {
+        if (cResult[5] === tmp4.breadCrumbDot) {
+          if (cResult[6] === tmp4.breadCrumbItemContainer) {
+            if (cResult[7] === tmp4.breadCrumbText) {
+              tmp10 = cResult[8];
+            }
+            if (cResult[14] === tmp4.container) {
+              if (cResult[15] === tmp7) {
+                let tmp13;
+                if (cResult[16] === tmp10) {
+                  tmp13 = cResult[17];
+                }
+                return tmp13;
+              }
+            }
+            let obj3 = { style: container, children: items };
+            items = [tmp7, tmp10];
+            const tmp16 = closure_4(View, obj3);
+            cResult[14] = tmp4.container;
+            cResult[15] = tmp7;
+            cResult[16] = tmp10;
+            cResult[17] = tmp16;
+            tmp13 = tmp16;
+          }
+        }
+      }
+    }
+    if (cResult[9] === tmp4.breadCrumbBar) {
+      if (cResult[10] === tmp4.breadCrumbDot) {
+        if (cResult[11] === tmp4.breadCrumbItemContainer) {
+          let tmp11;
+          if (cResult[12] === tmp4.breadCrumbText) {
+            tmp11 = cResult[13];
+          }
+          const mapped = reasons.map(tmp11);
+          cResult[3] = reasons;
+          cResult[4] = tmp4.breadCrumbBar;
+          cResult[5] = tmp4.breadCrumbDot;
+          cResult[6] = tmp4.breadCrumbItemContainer;
+          cResult[7] = tmp4.breadCrumbText;
+          cResult[8] = mapped;
+          tmp10 = mapped;
+        }
+      }
+    }
+    const fn = function y(children, arg1) {
+      let items;
+      const obj = { style: closure_0.breadCrumbItemContainer, children: items };
+      items = [, , ];
+      const obj2 = { style: closure_0.breadCrumbBar };
+      items[0] = _false(View, obj2);
+      const obj3 = { style: closure_0.breadCrumbDot };
+      items[1] = _false(View, obj3);
+      const obj4 = { lineClamp: 2, ellipsizeMode: "tail", style: closure_0.breadCrumbText, variant: "text-md/medium", children };
+      items[2] = _false(Text_Text.Text, obj4);
+      return React3(View, obj, "" + children + "+" + arg1);
+    };
+    cResult[9] = tmp4.breadCrumbBar;
+    cResult[10] = tmp4.breadCrumbDot;
+    cResult[11] = tmp4.breadCrumbItemContainer;
+    cResult[12] = tmp4.breadCrumbText;
+    cResult[13] = fn;
+    tmp11 = fn;
+  }
+}) : ((reasons) => {
   let closure_0;
   let intl;
   let items;
@@ -62,4 +159,8 @@ export default function AppealIngestionBreadcrumbs(reasons) {
     tmp2 = closure_4(View, obj);
   }
   return tmp2;
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/safety_hub/native/AppealIngestionBreadcrumbs.tsx");
+
+export default tmp5;

@@ -1,18 +1,18 @@
-// Module ID: 17636
-// Function ID: 17637
+// Module ID: 17638
+// Function ID: 17639
 // Name: FriendOnlineTimer
-// Dependencies: [5, 5591, 17637, 1074, 1085, 1091, 1271, 1231, 573, 6539, 2021, 2]
+// Dependencies: [5, 5592, 17639, 1086, 1097, 1103, 1283, 1243, 585, 6540, 2027, 2]
 
-// Module 17636 (FriendOnlineTimer)
-import Constants from "Constants" /* 1074 */;
-import Constants2 from "Constants" /* 1085 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import UserSettings from "UserSettings" /* 2021 */;
+// Module 17638 (FriendOnlineTimer)
+import Constants from "Constants" /* 1086 */;
+import Constants2 from "Constants" /* 1097 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import UserSettings from "UserSettings" /* 2027 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
-import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 17637 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5592 */;
+import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 17639 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;
@@ -29,7 +29,7 @@ let obj = function _reportSessionMeaningfullyOnline() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -82,7 +82,7 @@ let obj = function _reportSessionMeaningfullyOnline() {
           const tmp17 = closure_129_1(closure_129_2[8]);
           dispatch(obj9);
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp28) {
         closure_2 = tmp28;

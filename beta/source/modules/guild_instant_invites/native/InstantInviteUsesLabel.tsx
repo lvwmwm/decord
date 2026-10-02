@@ -1,19 +1,44 @@
-// Module ID: 10410
-// Function ID: 10411
+// Module ID: 10452
+// Function ID: 10453
 // Name: InstantInviteUsesLabel
-// Dependencies: [19, 21, 4832, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 4833, 2]
 
-// Module 10410 (InstantInviteUsesLabel)
+// Module 10452 (InstantInviteUsesLabel)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const Text_Text = tmp(4833);
 const jsxs = Fragment.jsxs;
-const result = size.fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteUsesLabel.tsx");
-
-export default function InstantInviteUsesLabel(style) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let maxUses;
+  let style;
+  let uses;
+  const obj = react2;
+  const cResult = obj.c(3);
+  ({ uses, maxUses, style } = arg0);
+  let combined = uses;
+  if (0 !== maxUses) {
+    const _HermesInternal = HermesInternal;
+    combined = "" + uses + "/" + maxUses;
+  }
+  if (cResult[0] === combined) {
+    let tmp6;
+    if (cResult[1] === style) {
+      tmp6 = cResult[2];
+    }
+    return tmp6;
+  }
+  const items = ["Uses: ", combined];
+  const tmp7 = jsxs(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", style, children: items });
+  cResult[0] = combined;
+  cResult[1] = style;
+  cResult[2] = tmp7;
+  tmp6 = tmp7;
+}) : ((style) => {
   let maxUses;
   let uses;
   ({ uses, maxUses } = style);
@@ -25,4 +50,7 @@ export default function InstantInviteUsesLabel(style) {
   }
   const items = ["Uses: ", combined];
   return jsxs(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", style, children: items });
-};
+});
+const result = size.fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteUsesLabel.tsx");
+
+export default tmp3;

@@ -1,27 +1,30 @@
-// Module ID: 15520
-// Function ID: 15521
+// Module ID: 15508
+// Function ID: 15509
 // Name: ParentalControlsUseDataToImproveDiscordSetting
-// Dependencies: [6957, 7417, 1074, 6959, 14353, 11006, 1115, 2]
+// Dependencies: [6961, 7421, 1086, 6963, 558, 14341, 10874, 1127, 2]
 
-// Module 15520 (ParentalControlsUseDataToImproveDiscordSetting)
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 6959 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14353 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 15508 (ParentalControlsUseDataToImproveDiscordSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 6963 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14341 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const Consents = Constants.Consents;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.XuADY2);
   },
   parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
-  useValue: function useDataToImproveDiscordSettingValue() {
+  useValue: () => {
     const obj = useParentalControlSettings;
     return obj.useParentalControlledConsent(Consents.USAGE_STATISTICS).hasConsented;
   },
@@ -49,6 +52,6 @@ let obj = {
   unsearchable: true
 };
 const toggle = SettingBuilders.createToggle(obj);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataToImproveDiscordSetting.tsx");
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataToImproveDiscordSetting.tsx");
 
 export default toggle;

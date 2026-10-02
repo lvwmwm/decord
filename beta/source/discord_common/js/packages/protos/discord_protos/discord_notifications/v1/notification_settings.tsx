@@ -1,13 +1,13 @@
-// Module ID: 13225
-// Function ID: 13226
+// Module ID: 13227
+// Function ID: 13228
 // Name: notification_settings
-// Dependencies: [32, 1187, 1217, 1215, 13226, 2]
+// Dependencies: [32, 1199, 1229, 1227, 13228, 2]
 
-// Module 13225 (notification_settings)
-import _mod1187 from "module_1187" /* 1187 */;
-import user_settings_shared from "user_settings_shared" /* 1215 */;
-import wrappers from "wrappers" /* 1217 */;
-import mute2 from "mute" /* 13226 */;
+// Module 13227 (notification_settings)
+import _mod1199 from "module_1199" /* 1199 */;
+import user_settings_shared from "user_settings_shared" /* 1227 */;
+import wrappers from "wrappers" /* 1229 */;
+import mute2 from "mute" /* 13228 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ const T6 = function T() {
 const T7 = function T() {
   return require("mute").MuteNotificationSettings;
 };
-const MessageType = _mod1187.MessageType;
+const MessageType = _mod1199.MessageType;
 class UserNotificationSettings$Type extends MessageType {
   constructor() {
     let obj2;
@@ -66,9 +66,9 @@ class UserNotificationSettings$Type extends MessageType {
     const obj = { userId: "0", guilds: {}, version: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -117,7 +117,7 @@ class UserNotificationSettings$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -170,13 +170,13 @@ class UserNotificationSettings$Type extends MessageType {
   }
   internalBinaryWrite(userId, tag, writeUnknownFields) {
     if ("0" !== userId.userId) {
-      const tagResult = tag.tag(1, _mod1187.WireType.Bit64);
+      const tagResult = tag.tag(1, _mod1199.WireType.Bit64);
       tagResult.fixed64(userId.userId);
     }
     if (userId.emailSettings) {
       internalBinaryWrite = closure_3.internalBinaryWrite;
       const emailSettings = userId.emailSettings;
-      const tagResult1 = tag.tag(2, _mod1187.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1199.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(emailSettings, tagResult1.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -184,7 +184,7 @@ class UserNotificationSettings$Type extends MessageType {
       const UInt64Value = wrappers.UInt64Value;
       internalBinaryWrite2 = UInt64Value.internalBinaryWrite;
       const flags = userId.flags;
-      const tagResult2 = tag.tag(6, _mod1187.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(6, _mod1199.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(flags, tagResult2.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
@@ -192,11 +192,11 @@ class UserNotificationSettings$Type extends MessageType {
     const iter = keys[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      let tagResult3 = tag.tag(4, _mod1187.WireType.LengthDelimited);
+      let tagResult3 = tag.tag(4, _mod1199.WireType.LengthDelimited);
       let forkResult = tagResult3.fork();
-      let tagResult4 = forkResult.tag(1, _mod1187.WireType.Bit64);
+      let tagResult4 = forkResult.tag(1, _mod1199.WireType.Bit64);
       let fixed64Result1 = tagResult4.fixed64(nextResult);
-      let tagResult5 = tag.tag(2, _mod1187.WireType.LengthDelimited);
+      let tagResult5 = tag.tag(2, _mod1199.WireType.LengthDelimited);
       let forkResult1 = tagResult5.fork();
       let internalBinaryWriteResult1 = declarativeNotifSettingType.internalBinaryWrite(userId.guilds[nextResult], tag, writeUnknownFields);
       let joined2 = tag.join();
@@ -204,20 +204,20 @@ class UserNotificationSettings$Type extends MessageType {
       continue;
     }
     if (0 !== userId.version) {
-      const tagResult6 = tag.tag(5, _mod1187.WireType.Varint);
+      const tagResult6 = tag.tag(5, _mod1199.WireType.Varint);
       tagResult6.uint32(userId.version);
     }
     if (userId.data) {
       internalBinaryWrite3 = items11.internalBinaryWrite;
       const data = userId.data;
-      const tagResult7 = tag.tag(7, _mod1187.WireType.LengthDelimited);
+      const tagResult7 = tag.tag(7, _mod1199.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(data, tagResult7.fork(), writeUnknownFields);
       const joined4 = internalBinaryWrite3Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, userId, tag);
@@ -249,7 +249,7 @@ class T {
 }
 items[5] = obj2;
 let tmp6 = new "binaryReadMap4"("discord_protos.discord_notifications.v1.UserNotificationSettings", items, tmp4, tmp3);
-const MessageType2 = _mod1187.MessageType;
+const MessageType2 = _mod1199.MessageType;
 class EmailNotificationSettings$Type extends MessageType2 {
   constructor() {
     const items = [{ no: 1, name: "categories", kind: "map", K: 9, V: { kind: "scalar", T: 8 } }];
@@ -260,9 +260,9 @@ class EmailNotificationSettings$Type extends MessageType2 {
     const obj = { categories: {} };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -299,7 +299,7 @@ class EmailNotificationSettings$Type extends MessageType2 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -354,11 +354,11 @@ class EmailNotificationSettings$Type extends MessageType2 {
     const iter = keys[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      let tagResult = tag.tag(1, _mod1187.WireType.LengthDelimited);
+      let tagResult = tag.tag(1, _mod1199.WireType.LengthDelimited);
       let forkResult = tagResult.fork();
-      let tagResult1 = forkResult.tag(1, _mod1187.WireType.LengthDelimited);
+      let tagResult1 = forkResult.tag(1, _mod1199.WireType.LengthDelimited);
       let stringResult = tagResult1.string(nextResult);
-      let tagResult2 = stringResult.tag(2, _mod1187.WireType.Varint);
+      let tagResult2 = stringResult.tag(2, _mod1199.WireType.Varint);
       let boolResult = tagResult2.bool(categories.categories[nextResult]);
       let joined = boolResult.join();
       continue;
@@ -366,7 +366,7 @@ class EmailNotificationSettings$Type extends MessageType2 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, categories, tag);
@@ -378,7 +378,7 @@ const prototype2 = EmailNotificationSettings$Type.prototype;
 const items1 = [{ no: 1, name: "categories", kind: "map", K: 9, V: { kind: "scalar", T: 8 } }];
 const t = new T("discord_protos.discord_notifications.v1.EmailNotificationSettings", items1, tmp4, tmp3, "create", tmp2);
 const _false = t;
-const MessageType3 = _mod1187.MessageType;
+const MessageType3 = _mod1199.MessageType;
 class UserNotificationSettingsData$Type extends MessageType3 {
   constructor() {
     const items = [{ no: 1, name: "muted_games", kind: "map", K: 6, V: { kind: "scalar", T: 8 } }, { no: 2, name: "declarative_settings", kind: "message", T: T4 }];
@@ -389,9 +389,9 @@ class UserNotificationSettingsData$Type extends MessageType3 {
     const obj = { mutedGames: {} };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -430,7 +430,7 @@ class UserNotificationSettingsData$Type extends MessageType3 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -486,11 +486,11 @@ class UserNotificationSettingsData$Type extends MessageType3 {
     const iter = keys[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      let tagResult = tag.tag(1, _mod1187.WireType.LengthDelimited);
+      let tagResult = tag.tag(1, _mod1199.WireType.LengthDelimited);
       let forkResult = tagResult.fork();
-      let tagResult1 = forkResult.tag(1, _mod1187.WireType.Bit64);
+      let tagResult1 = forkResult.tag(1, _mod1199.WireType.Bit64);
       let fixed64Result = tagResult1.fixed64(nextResult);
-      let tagResult2 = fixed64Result.tag(2, _mod1187.WireType.Varint);
+      let tagResult2 = fixed64Result.tag(2, _mod1199.WireType.Varint);
       let boolResult = tagResult2.bool(mutedGames.mutedGames[nextResult]);
       let joined = boolResult.join();
       continue;
@@ -498,14 +498,14 @@ class UserNotificationSettingsData$Type extends MessageType3 {
     if (mutedGames.declarativeSettings) {
       internalBinaryWrite = items12.internalBinaryWrite;
       const declarativeSettings = mutedGames.declarativeSettings;
-      const tagResult3 = tag.tag(2, _mod1187.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(2, _mod1199.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(declarativeSettings, tagResult3.fork(), writeUnknownFields);
       const joined1 = internalBinaryWriteResult.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, mutedGames, tag);
@@ -516,7 +516,7 @@ class UserNotificationSettingsData$Type extends MessageType3 {
 const prototype3 = UserNotificationSettingsData$Type.prototype;
 const items2 = [{ no: 1, name: "muted_games", kind: "map", K: 6, V: { kind: "scalar", T: 8 } }, { no: 2, name: "declarative_settings", kind: "message", T: T4 }];
 const items11 = new items1("discord_protos.discord_notifications.v1.UserNotificationSettingsData", items2, tmp4, tmp3, "create");
-const MessageType4 = _mod1187.MessageType;
+const MessageType4 = _mod1199.MessageType;
 class DeclarativeSettings$Type extends MessageType4 {
   constructor() {
     let obj3;
@@ -538,9 +538,9 @@ class DeclarativeSettings$Type extends MessageType4 {
     const obj = { values: {} };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -580,7 +580,7 @@ class DeclarativeSettings$Type extends MessageType4 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -635,7 +635,7 @@ class DeclarativeSettings$Type extends MessageType4 {
       const Versions = user_settings_shared.Versions;
       internalBinaryWrite = Versions.internalBinaryWrite;
       versions = versions.versions;
-      const tagResult = tag.tag(1, _mod1187.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1199.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(versions, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -643,12 +643,12 @@ class DeclarativeSettings$Type extends MessageType4 {
     const iter = keys[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      let tagResult1 = tag.tag(2, _mod1187.WireType.LengthDelimited);
+      let tagResult1 = tag.tag(2, _mod1199.WireType.LengthDelimited);
       let forkResult = tagResult1.fork();
-      let tagResult2 = forkResult.tag(1, _mod1187.WireType.Varint);
+      let tagResult2 = forkResult.tag(1, _mod1199.WireType.Varint);
       let _parseInt = parseInt;
       let uint32Result = tagResult2.uint32(parseInt(nextResult));
-      let tagResult3 = tag.tag(2, _mod1187.WireType.LengthDelimited);
+      let tagResult3 = tag.tag(2, _mod1199.WireType.LengthDelimited);
       let forkResult1 = tagResult3.fork();
       let internalBinaryWriteResult1 = declarativeSettingsType.internalBinaryWrite(versions.values[nextResult], tag, writeUnknownFields);
       let joined1 = tag.join();
@@ -658,7 +658,7 @@ class DeclarativeSettings$Type extends MessageType4 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, versions, tag);
@@ -672,7 +672,7 @@ const items3 = [obj3, ];
 const obj4 = { no: 2, name: "values", kind: "map", K: 13, V: { kind: "message", T: tmp9 } };
 items3[1] = obj4;
 const items12 = new items1("discord_protos.discord_notifications.v1.DeclarativeSettings", items3, tmp4, tmp3, "create", tmp9, "internalBinaryRead", "internalBinaryWrite", DeclarativeSettings$Type, undefined, tmp, require, dependencyMap);
-const MessageType5 = _mod1187.MessageType;
+const MessageType5 = _mod1199.MessageType;
 class DeclarativeNotifSetting$Type extends MessageType5 {
   constructor() {
     const items = [{ no: 1, name: "toggle", kind: "scalar", T: 8 }, { no: 2, name: "radio", kind: "scalar", T: 13 }];
@@ -683,9 +683,9 @@ class DeclarativeNotifSetting$Type extends MessageType5 {
     const obj = { toggle: false, radio: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -724,7 +724,7 @@ class DeclarativeNotifSetting$Type extends MessageType5 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -736,17 +736,17 @@ class DeclarativeNotifSetting$Type extends MessageType5 {
   }
   internalBinaryWrite(toggle, tag, writeUnknownFields) {
     if (false !== toggle.toggle) {
-      const tagResult = tag.tag(1, _mod1187.WireType.Varint);
+      const tagResult = tag.tag(1, _mod1199.WireType.Varint);
       tagResult.bool(toggle.toggle);
     }
     if (0 !== toggle.radio) {
-      const tagResult1 = tag.tag(2, _mod1187.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1199.WireType.Varint);
       tagResult1.uint32(toggle.radio);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, toggle, tag);
@@ -757,7 +757,7 @@ class DeclarativeNotifSetting$Type extends MessageType5 {
 const prototype5 = DeclarativeNotifSetting$Type.prototype;
 const items4 = [{ no: 1, name: "toggle", kind: "scalar", T: 8 }, { no: 2, name: "radio", kind: "scalar", T: 13 }];
 const declarativeSettingsType = new DeclarativeSettings$Type("discord_protos.discord_notifications.v1.DeclarativeNotifSetting", items4, tmp4, tmp3, "create", DeclarativeNotifSetting$Type, "internalBinaryRead", "internalBinaryWrite", DeclarativeSettings$Type, undefined, tmp, require, dependencyMap, this, tmp6, t);
-const MessageType6 = _mod1187.MessageType;
+const MessageType6 = _mod1199.MessageType;
 class GuildNotificationSettings$Type extends MessageType6 {
   constructor() {
     const items = [{ no: 1, name: "suppress_everyone", kind: "scalar", T: 8 }, { no: 2, name: "message_notifications", kind: "scalar", T: 13 }, { no: 3, name: "mobile_push", kind: "scalar", T: 8 }, , , , , , , ];
@@ -781,9 +781,9 @@ class GuildNotificationSettings$Type extends MessageType6 {
     const obj = { suppressEveryone: false, messageNotifications: 0, mobilePush: false, channelOverrides: [], suppressRoles: false, version: 0, hideMutedChannels: false, muteScheduledEvents: false, notifyHighlights: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -803,22 +803,22 @@ class GuildNotificationSettings$Type extends MessageType6 {
   internalBinaryWrite(suppressEveryone, tag, writeUnknownFields) {
     let length;
     if (false !== suppressEveryone.suppressEveryone) {
-      const tagResult = tag.tag(1, _mod1187.WireType.Varint);
+      const tagResult = tag.tag(1, _mod1199.WireType.Varint);
       tagResult.bool(suppressEveryone.suppressEveryone);
     }
     if (0 !== suppressEveryone.messageNotifications) {
-      const tagResult1 = tag.tag(2, _mod1187.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1199.WireType.Varint);
       tagResult1.uint32(suppressEveryone.messageNotifications);
     }
     if (false !== suppressEveryone.mobilePush) {
-      const tagResult2 = tag.tag(3, _mod1187.WireType.Varint);
+      const tagResult2 = tag.tag(3, _mod1199.WireType.Varint);
       tagResult2.bool(suppressEveryone.mobilePush);
     }
     if (suppressEveryone.mute) {
       const MuteNotificationSettings = mute2.MuteNotificationSettings;
       internalBinaryWrite = MuteNotificationSettings.internalBinaryWrite;
       const mute = suppressEveryone.mute;
-      const tagResult3 = tag.tag(4, _mod1187.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1199.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(mute, tagResult3.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -827,7 +827,7 @@ class GuildNotificationSettings$Type extends MessageType6 {
       do {
         internalBinaryWrite2 = internalBinaryWrite.internalBinaryWrite;
         let tmp14 = suppressEveryone.channelOverrides[num5];
-        let tagResult4 = tag.tag(5, _mod1187.WireType.LengthDelimited);
+        let tagResult4 = tag.tag(5, _mod1199.WireType.LengthDelimited);
         let internalBinaryWrite2Result = internalBinaryWrite2(tmp14, tagResult4.fork(), writeUnknownFields);
         let joined1 = internalBinaryWrite2Result.join();
         num5 = num5 + 1;
@@ -835,29 +835,29 @@ class GuildNotificationSettings$Type extends MessageType6 {
       } while (num5 < length);
     }
     if (false !== suppressEveryone.suppressRoles) {
-      const tagResult5 = tag.tag(6, _mod1187.WireType.Varint);
+      const tagResult5 = tag.tag(6, _mod1199.WireType.Varint);
       tagResult5.bool(suppressEveryone.suppressRoles);
     }
     if (0 !== suppressEveryone.version) {
-      const tagResult6 = tag.tag(7, _mod1187.WireType.Varint);
+      const tagResult6 = tag.tag(7, _mod1199.WireType.Varint);
       tagResult6.uint32(suppressEveryone.version);
     }
     if (false !== suppressEveryone.hideMutedChannels) {
-      const tagResult7 = tag.tag(8, _mod1187.WireType.Varint);
+      const tagResult7 = tag.tag(8, _mod1199.WireType.Varint);
       tagResult7.bool(suppressEveryone.hideMutedChannels);
     }
     if (false !== suppressEveryone.muteScheduledEvents) {
-      const tagResult8 = tag.tag(9, _mod1187.WireType.Varint);
+      const tagResult8 = tag.tag(9, _mod1199.WireType.Varint);
       tagResult8.bool(suppressEveryone.muteScheduledEvents);
     }
     if (0 !== suppressEveryone.notifyHighlights) {
-      const tagResult9 = tag.tag(10, _mod1187.WireType.Varint);
+      const tagResult9 = tag.tag(10, _mod1199.WireType.Varint);
       tagResult9.uint32(suppressEveryone.notifyHighlights);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, suppressEveryone, tag);
@@ -886,7 +886,7 @@ const items5 = [
   { no: 10, name: "notify_highlights", kind: "scalar", T: 13 }
 ];
 const declarativeNotifSettingType = new DeclarativeNotifSetting$Type("discord_protos.discord_notifications.v1.GuildNotificationSettings", items5, tmp4, GuildNotificationSettings$Type, "create", DeclarativeNotifSetting$Type, "internalBinaryRead", "internalBinaryWrite", items5, undefined, tmp, require, dependencyMap, this, tmp6, t, items11, items12);
-const MessageType7 = _mod1187.MessageType;
+const MessageType7 = _mod1199.MessageType;
 class ChannelNotificationSettings$Type extends MessageType7 {
   constructor() {
     const items = [{ no: 1, name: "channel_id", kind: "scalar", T: 6 }, { no: 7, name: "message_notifications", kind: "scalar", T: 13 }, { no: 3, name: "mute", kind: "message", T: T7 }, { no: 4, name: "collapsed", kind: "scalar", T: 8 }];
@@ -897,9 +897,9 @@ class ChannelNotificationSettings$Type extends MessageType7 {
     const obj = { channelId: "0", messageNotifications: 0, collapsed: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1187;
+      const tmpResult = _mod1199;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -944,7 +944,7 @@ class ChannelNotificationSettings$Type extends MessageType7 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1187.UnknownFieldHandler.onRead;
+                onRead = _mod1199.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -956,29 +956,29 @@ class ChannelNotificationSettings$Type extends MessageType7 {
   }
   internalBinaryWrite(channelId, tag, writeUnknownFields) {
     if ("0" !== channelId.channelId) {
-      const tagResult = tag.tag(1, _mod1187.WireType.Bit64);
+      const tagResult = tag.tag(1, _mod1199.WireType.Bit64);
       tagResult.fixed64(channelId.channelId);
     }
     if (0 !== channelId.messageNotifications) {
-      const tagResult1 = tag.tag(7, _mod1187.WireType.Varint);
+      const tagResult1 = tag.tag(7, _mod1199.WireType.Varint);
       tagResult1.uint32(channelId.messageNotifications);
     }
     if (channelId.mute) {
       const MuteNotificationSettings = mute2.MuteNotificationSettings;
       internalBinaryWrite = MuteNotificationSettings.internalBinaryWrite;
       const mute = channelId.mute;
-      const tagResult2 = tag.tag(3, _mod1187.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1199.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(mute, tagResult2.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (false !== channelId.collapsed) {
-      const tagResult3 = tag.tag(4, _mod1187.WireType.Varint);
+      const tagResult3 = tag.tag(4, _mod1199.WireType.Varint);
       tagResult3.bool(channelId.collapsed);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1187.UnknownFieldHandler.onWrite;
+        onWrite = _mod1199.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, channelId, tag);

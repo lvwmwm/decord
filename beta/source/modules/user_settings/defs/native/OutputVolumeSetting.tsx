@@ -1,19 +1,48 @@
-// Module ID: 14796
-// Function ID: 14797
+// Module ID: 14784
+// Function ID: 14785
 // Name: OutputVolumeSetting
-// Dependencies: [1993, 7417, 504, 11006, 1115, 9104, 9437, 2]
+// Dependencies: [1999, 7421, 558, 576, 504, 10874, 1127, 9081, 9433, 2]
 
-// Module 14796 (OutputVolumeSetting)
-import get_initialized from "get initialized" /* 504 */;
-import intl3 from "intl" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 9437 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 14784 (OutputVolumeSetting)
+import react from "react" /* 576 */;
+import intl3 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9081 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 9433 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let outputVolume;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MediaEngineStore];
+    const fn = function n() {
+      return outputVolume.getOutputVolume();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let outputVolume;
+  const items = [MediaEngineStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => outputVolume.getOutputVolume());
+});
 let obj = {
   useTitle() {
     const intl = intl3.intl;
@@ -21,12 +50,7 @@ let obj = {
   },
   parent: MobileUserSettings.VOICE,
   maximum: 200,
-  useValue: function useOutputVolumeSettingValue() {
-    let outputVolume;
-    const items = [MediaEngineStore];
-    const obj = get_initialized;
-    return obj.useStateFromStores(items, () => outputVolume.getOutputVolume());
-  },
+  useValue: tmp2,
   onValueChange: AudioActionCreatorsDefault.setOutputVolume,
   useSearchTerms() {
     const intl = intl3.intl;

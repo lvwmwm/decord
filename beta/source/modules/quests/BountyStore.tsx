@@ -1,12 +1,12 @@
-// Module ID: 7115
-// Function ID: 7116
+// Module ID: 7119
+// Function ID: 7120
 // Name: BountyStore
-// Dependencies: [5763, 504, 573, 2]
+// Dependencies: [5764, 504, 585, 2]
 
-// Module 7115 (BountyStore)
+// Module 7119 (BountyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AdCreativeType from "AdCreativeType" /* 5763 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import AdCreativeType from "AdCreativeType" /* 5764 */;
 import size from "module_2" /* 2 */;
 
 function resetStateForDeliveredBounties(items) {
@@ -35,9 +35,9 @@ class BountyStore extends Store {
   isBountyCompleted(id) {
     return set.has(id);
   }
-  getCompletedBountyCount(arg0) {
+  getCompletedBountyCount(first1) {
     let num = 0;
-    const tmp = arg0[Symbol.iterator]();
+    const tmp = first1[Symbol.iterator]();
     while (tmp !== undefined) {
       if (set.has(tmp2.id)) {
         num = num + 1;

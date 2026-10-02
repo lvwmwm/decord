@@ -1,24 +1,97 @@
-// Module ID: 9394
-// Function ID: 9395
+// Module ID: 9372
+// Function ID: 9373
 // Name: useIsVoiceChannelFull
-// Dependencies: [2067, 4469, 4855, 1085, 504, 4981, 2]
-// Exports: default, useIsVoiceChannelLocked
+// Dependencies: [2073, 4472, 4856, 1097, 558, 576, 504, 4982, 2]
 
-// Module 9394 (useIsVoiceChannelFull)
-import Constants from "Constants" /* 1085 */;
-import ChannelUtils from "ChannelUtils" /* 4981 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+// Module 9372 (useIsVoiceChannelFull)
+import Constants from "Constants" /* 1097 */;
+import ChannelUtils from "ChannelUtils" /* 4982 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const Permissions = Constants.Permissions;
-const result = size.fileFinishedImporting("modules/voice_calls/useIsVoiceChannelFull.tsx");
-
-export default function useIsVoiceChannelFull(arg0) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function s() {
+      const tmp2 = null == closure_0 || !PermissionStore.can(Permissions.CONNECT, tmp);
+      return tmp2;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6, tmp7);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  const items = [PermissionStore];
+  const items1 = [arg0];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    const tmp2 = null == closure_0 || !PermissionStore.can(Permissions.CONNECT, tmp);
+    return tmp2;
+  }, items1);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp7;
+  _require = arg0;
+  let obj = require("react");
+  const cResult = obj.c(3);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [VoiceStateStore, GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function s() {
+      const obj = ChannelUtils;
+      return obj.isChannelFull(closure_0, VoiceStateStore, GuildStore);
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp7);
+}) : ((arg0) => {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -27,14 +100,8 @@ export default function useIsVoiceChannelFull(arg0) {
     const obj = ChannelUtils;
     return obj.isChannelFull(closure_0, VoiceStateStore, GuildStore);
   });
-};
-export const useIsVoiceChannelLocked = function useIsVoiceChannelLocked(channel) {
-  _require = channel;
-  const items = [PermissionStore];
-  const items1 = [channel];
-  const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => {
-    const tmp2 = null == channel || !PermissionStore.can(Permissions.CONNECT, tmp);
-    return tmp2;
-  }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/voice_calls/useIsVoiceChannelFull.tsx");
+
+export default tmp3;
+export const useIsVoiceChannelLocked = tmp2;

@@ -1,12 +1,12 @@
-// Module ID: 7463
-// Function ID: 7464
+// Module ID: 7467
+// Function ID: 7468
 // Name: getRoleIcon
-// Dependencies: [6607, 1115, 2]
+// Dependencies: [6608, 1127, 2]
 // Exports: getRoleIcon
 
-// Module 7463 (getRoleIcon)
-import intl2 from "intl" /* 1115 */;
-import useRoleIconProps from "useRoleIconProps" /* 6607 */;
+// Module 7467 (getRoleIcon)
+import intl2 from "intl" /* 1127 */;
+import useRoleIconProps from "useRoleIconProps" /* 6608 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;
@@ -31,7 +31,7 @@ export const getRoleIcon = function getRoleIcon(size) {
     if (unicodeEmoji != null) {
       surrogates = unicodeEmoji.surrogates;
     }
-    intl = tmp(1115).intl;
+    intl = tmp(1127).intl;
     return obj3;
   }
 };

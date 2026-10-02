@@ -1,19 +1,66 @@
-// Module ID: 9702
-// Function ID: 9703
+// Module ID: 9820
+// Function ID: 9821
 // Name: useCanShowFavoritesGuildOnboarding
-// Dependencies: [4521, 2099, 504, 4692, 2]
-// Exports: default
+// Dependencies: [4524, 2102, 558, 576, 504, 4694, 2]
 
-// Module 9702 (useCanShowFavoritesGuildOnboarding)
+// Module 9820 (useCanShowFavoritesGuildOnboarding)
 import get_initialized from "get initialized" /* 504 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
-import ActionSheetStore from "ActionSheetStore" /* 4521 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import react from "react" /* 576 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4694 */;
+import ActionSheetStore from "ActionSheetStore" /* 4524 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/favorites/hooks/useCanShowFavoritesGuildOnboarding.native.tsx");
-
-export default function useCanShowFavoritesGuildOnboarding() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let open;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  let voiceChannelId;
+  const obj = react;
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SelectedChannelStore];
+    const fn = function s() {
+      return null != voiceChannelId.getVoiceChannelId();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [ActionSheetStore];
+    const fn2 = function c() {
+      return open.isOpen();
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    tmp9 = fn2;
+    tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult3 = get_initialized;
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp9);
+  let tmp13 = !stateFromStores;
+  const tmpResult4 = NavigationRouteUtils;
+  const isModalOpen = tmpResult4.useIsModalOpen();
+  if (!stateFromStores) {
+    tmp13 = !stateFromStores1;
+  }
+  if (tmp13) {
+    tmp13 = !isModalOpen;
+  }
+  return tmp13;
+}) : (() => {
   let open;
   let voiceChannelId;
   const items = [SelectedChannelStore];
@@ -32,4 +79,7 @@ export default function useCanShowFavoritesGuildOnboarding() {
     tmp4 = !isModalOpen;
   }
   return tmp4;
-};
+});
+const result = size.fileFinishedImporting("modules/favorites/hooks/useCanShowFavoritesGuildOnboarding.native.tsx");
+
+export default tmp2;

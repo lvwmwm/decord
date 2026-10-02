@@ -1,21 +1,95 @@
-// Module ID: 11683
-// Function ID: 11684
+// Module ID: 11575
+// Function ID: 11576
 // Name: PollDurationActionSheet
-// Dependencies: [19, 21, 11682, 4541, 4800, 5997, 1115, 6000, 6618, 2]
-// Exports: default
+// Dependencies: [32, 19, 21, 558, 576, 11574, 4545, 4801, 1127, 5994, 5995, 6624, 2]
 
-// Module 11683 (PollDurationActionSheet)
+// Module 11575 (PollDurationActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import ActionSheet2 from "ActionSheet" /* 6618 */;
-import usePollDurationOptionsDefault from "usePollDurationOptions" /* 11682 */;
+import react2 from "react" /* 576 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4545 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import usePollDurationOptionsDefault from "usePollDurationOptions" /* 11574 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
-function PollDurationRadioGroup(onChange) {
+let tmp;
+const ActionSheet2 = tmp(6624);
+const jsx = Fragment.jsx;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_1;
+  let onChange;
+  let selectedDuration;
+  const tmp = onChange;
+  let obj = onChange(576);
+  const cResult = obj.c(10);
+  ({ selectedDuration, onChange } = arg0);
+  const tmp4 = usePollDurationOptionsDefault();
+  importDefault = tmp4;
+  if (cResult[0] === onChange) {
+    let tmp5;
+    let tmp7;
+    let tmp9;
+    if (cResult[1] === tmp4) {
+      tmp5 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(tmp(1127).t["0ZStp9"]);
+      cResult[3] = stringResult;
+      tmp7 = stringResult;
+    } else {
+      tmp7 = cResult[3];
+    }
+    if (cResult[4] !== tmp4) {
+      const _Object = Object;
+      const entries = Object.entries(tmp4);
+      const mapped = entries.map((item) => {
+        let first;
+        let tmp3;
+        [first, tmp3] = item;
+        const TableRadioRow = onChange(dependencyMap[9]).TableRadioRow;
+        return <TableRadioRow key={first} value={parseInt(first)} label={tmp3} />;
+      });
+      cResult[4] = tmp4;
+      cResult[5] = mapped;
+      tmp9 = mapped;
+    } else {
+      tmp9 = cResult[5];
+    }
+    if (cResult[6] === tmp5) {
+      if (cResult[7] === selectedDuration) {
+        let tmp11;
+        if (cResult[8] === tmp9) {
+          tmp11 = cResult[9];
+        }
+        return tmp11;
+      }
+    }
+    const tmp13 = jsx(tmp(5995).TableRadioGroup, { title: tmp7, hasIcons: false, onChange: tmp5, defaultValue: selectedDuration, children: tmp9 });
+    cResult[6] = tmp5;
+    cResult[7] = selectedDuration;
+    cResult[8] = tmp9;
+    cResult[9] = tmp13;
+    tmp11 = tmp13;
+  }
+  const fn = function l(arg0) {
+    onChange(arg0);
+    const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+    AccessibilityAnnouncer.announce(closure_1[arg0]);
+    const obj = ActionSheetActionCreatorsDefault;
+    obj.hideActionSheet();
+  };
+  cResult[0] = onChange;
+  cResult[1] = tmp4;
+  cResult[2] = fn;
+  tmp5 = fn;
+}) : ((onChange) => {
   let closure_1;
   onChange = onChange.onChange;
   const selectedDuration = onChange.selectedDuration;
@@ -29,24 +103,44 @@ function PollDurationRadioGroup(onChange) {
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet();
   }, items);
-  const TableRadioGroup = onChange(5997).TableRadioGroup;
-  const intl = onChange(1115).intl;
+  const TableRadioGroup = onChange(5995).TableRadioGroup;
+  const intl = onChange(1127).intl;
   const entries = Object.entries(tmp);
-  return <TableRadioGroup title={intl.string(onChange(1115).t["0ZStp9"])} hasIcons={false} onChange={callback} defaultValue={selectedDuration}>{entries.map((item) => {
+  return <TableRadioGroup title={intl.string(onChange(1127).t["0ZStp9"])} hasIcons={false} onChange={callback} defaultValue={selectedDuration}>{entries.map((item) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = item;
-    const TableRadioRow = onChange(dependencyMap[7]).TableRadioRow;
+    const TableRadioRow = onChange(dependencyMap[9]).TableRadioRow;
     return <TableRadioRow key={tmp} value={parseInt(tmp)} label={tmp2} />;
   })}</TableRadioGroup>;
-}
-const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/polls/native/PollDurationActionSheet.tsx");
-
-export default function PollDurationActionSheet(arg0) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let onChange;
+  let selectedDuration;
+  const obj = react2;
+  const cResult = obj.c(3);
+  ({ selectedDuration, onChange } = arg0);
+  if (cResult[0] === onChange) {
+    let tmp4;
+    if (cResult[1] === selectedDuration) {
+      tmp4 = cResult[2];
+    }
+    return tmp4;
+  }
+  const ActionSheet = ActionSheet2.ActionSheet;
+  const tmp5 = <ActionSheet>{null}</ActionSheet>;
+  cResult[0] = onChange;
+  cResult[1] = selectedDuration;
+  cResult[2] = tmp5;
+  tmp4 = tmp5;
+}) : ((arg0) => {
   let onChange;
   let selectedDuration;
   ({ selectedDuration, onChange } = arg0);
   const ActionSheet = ActionSheet2.ActionSheet;
   return <ActionSheet>{null}</ActionSheet>;
-};
+});
+const result = size.fileFinishedImporting("modules/polls/native/PollDurationActionSheet.tsx");
+
+export default tmp2;

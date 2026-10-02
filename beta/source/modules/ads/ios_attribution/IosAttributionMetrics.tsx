@@ -1,14 +1,14 @@
-// Module ID: 10715
-// Function ID: 10716
+// Module ID: 10679
+// Function ID: 10680
 // Name: IosAttributionMetrics
-// Dependencies: [1074, 5179, 5184, 1241, 2]
+// Dependencies: [1086, 5180, 5185, 1253, 2]
 // Exports: trackIosAttributionClick, trackIosAttributionImpression
 
-// Module 10715 (IosAttributionMetrics)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5179 */;
-import MetricEvents from "MetricEvents" /* 5184 */;
+// Module 10679 (IosAttributionMetrics)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5180 */;
+import MetricEvents from "MetricEvents" /* 5185 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -30,7 +30,7 @@ export const trackIosAttributionImpression = function trackIosAttributionImpress
   items[1] = "framework:" + str2;
   increment(obj);
   const obj2 = { impression_id: c0, attribution_framework: str, attribution_result: NO_FRAMEWORK };
-  const track = tmp(1241).track;
+  const track = tmp(1253).track;
   const IOS_ATTRIBUTION_VIEW_RESOLVED = AnalyticEvents.IOS_ATTRIBUTION_VIEW_RESOLVED;
   AnalyticsUtilsDefault;
   if (str == null) {
@@ -52,7 +52,7 @@ export const trackIosAttributionClick = function trackIosAttributionClick(ATTRIB
   items[1] = "framework:" + str2;
   increment(obj);
   const obj2 = { impression_id, attribution_framework: str, attribution_result: ATTRIBUTED };
-  const track = tmp(1241).track;
+  const track = tmp(1253).track;
   const IOS_ATTRIBUTION_CLICK_RESOLVED = AnalyticEvents.IOS_ATTRIBUTION_CLICK_RESOLVED;
   AnalyticsUtilsDefault;
   if (str == null) {

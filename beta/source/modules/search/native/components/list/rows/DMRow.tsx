@@ -1,27 +1,29 @@
-// Module ID: 16467
-// Function ID: 16468
+// Module ID: 16469
+// Function ID: 16470
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 4825, 4876, 4479, 1074, 21, 4836, 576, 4832, 4678, 10335, 504, 8741, 1177, 9034, 13041, 16468, 2]
+// Dependencies: [5, 32, 19, 17, 4826, 4877, 4482, 1086, 21, 4837, 588, 558, 576, 4680, 4833, 10378, 504, 8736, 1189, 9011, 13043, 16470, 2]
 
-// Module 16467 (DMRow)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import UserUtils from "UserUtils" /* 4678 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import BotTagDefault from "BotTag" /* 8741 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9034 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10335 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13041 */;
+// Module 16469 (DMRow)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import UserUtils from "UserUtils" /* 4680 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import BotTagDefault from "BotTag" /* 8736 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9011 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10378 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13043 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import PresenceStore from "PresenceStore" /* 4876 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import Constants from "Constants" /* 1074 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import PresenceStore from "PresenceStore" /* 4877 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const UserUtilsDefault = UserUtils;
@@ -34,7 +36,69 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let unpackModuleId;
-function FriendPresence(user) {
+({ View: metroRequire, ActivityIndicator: metroImportDefault } = react_native);
+({ StatusTypes: unpackModuleId, RelationshipTypes: closure_12 } = Constants);
+({ jsx: map1, jsxs: closure_14 } = Fragment);
+let obj = { activityStatusIcon: { width: 14, height: 14 }, activityStatusText: obj2, tag: { marginLeft: 4 }, title: { flexDirection: "row" } };
+obj2 = { color: nativeDefault.colors.TEXT_SUBTLE, fontSize: 14, lineHeight: 18, fontWeight: "400" };
+let closure_15 = createStyles.createStyles(obj);
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+  let animate;
+  let guildId;
+  let tmp5;
+  let user;
+  const obj = react2;
+  const cResult = obj.c(10);
+  ({ user, animate, guildId } = type);
+  type = type.type;
+  const tmp4 = closure_15();
+  if (type === constants2.PENDING_INCOMING) {
+    let tmp9;
+    let tmp11;
+    if (cResult[0] !== user) {
+      const tmpResult = UserUtils;
+      const userTag = tmpResult.getUserTag(user);
+      cResult[0] = user;
+      cResult[1] = userTag;
+      tmp9 = userTag;
+    } else {
+      tmp9 = cResult[1];
+    }
+    if (cResult[2] !== tmp9) {
+      const obj3 = { lineClamp: 1, variant: "text-sm/medium", color: "text-default", children: tmp9 };
+      const tmp13 = map1(Text_Text.Text, obj3);
+      cResult[2] = tmp9;
+      cResult[3] = tmp13;
+      tmp11 = tmp13;
+    } else {
+      tmp11 = cResult[3];
+    }
+    tmp5 = tmp11;
+  } else {
+    if (cResult[4] === animate) {
+      if (cResult[5] === guildId) {
+        if (cResult[6] === tmp4.activityStatusIcon) {
+          if (cResult[7] === tmp4.activityStatusText) {
+            if (cResult[8] === user.id) {
+              tmp5 = cResult[9];
+            }
+          }
+        }
+      }
+    }
+    const obj4 = { userId: user.id, guildId, iconStyle: null, textStyle: null, emojiSize: 16, animate };
+    ({ activityStatusIcon: obj2.iconStyle, activityStatusText: obj2.textStyle } = tmp4);
+    const tmp8 = map1(ActivityStatusDefault, obj4);
+    cResult[4] = animate;
+    cResult[5] = guildId;
+    cResult[6] = tmp4.activityStatusIcon;
+    cResult[7] = tmp4.activityStatusText;
+    cResult[8] = user.id;
+    cResult[9] = tmp8;
+    tmp5 = tmp8;
+  }
+  return tmp5;
+}) : ((user) => {
   let animate;
   let guildId;
   let obj3;
@@ -54,13 +118,7 @@ function FriendPresence(user) {
     tmp5 = map1(ActivityStatusDefault, obj);
   }
   return tmp5;
-}
-({ View: metroRequire, ActivityIndicator: metroImportDefault } = react_native);
-({ StatusTypes: unpackModuleId, RelationshipTypes: closure_12 } = Constants);
-({ jsx: map1, jsxs: closure_14 } = Fragment);
-let obj = { activityStatusIcon: { width: 14, height: 14 }, activityStatusText: obj2, tag: { marginLeft: 4 }, title: { flexDirection: "row" } };
-obj2 = { color: nativeDefault.colors.TEXT_SUBTLE, fontSize: 14, lineHeight: 18, fontWeight: "400" };
-let closure_15 = createStyles.createStyles(obj);
+});
 const memoResult = react.memo(function DMRow(user) {
   let accessibilityActions;
   let onAccessibilityAction;
@@ -83,7 +141,7 @@ const memoResult = react.memo(function DMRow(user) {
   let tmp5 = premiumSince;
   const first = tmp2[0];
   let tmp4 = user;
-  let obj2 = user(premiumSince[14]);
+  let obj2 = user(premiumSince[16]);
   let items = [isMobileOnline];
   const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
     const obj = { isMobileOnline: PresenceStore.isMobileOnline(user.id), isVROnline: PresenceStore.isVROnline(user.id), status: PresenceStore.getStatus(user.id) };
@@ -92,10 +150,10 @@ const memoResult = react.memo(function DMRow(user) {
   isMobileOnline = stateFromStoresObject.isMobileOnline;
   const isVROnline = stateFromStoresObject.isVROnline;
   const status = stateFromStoresObject.status;
-  let obj3 = user(premiumSince[14]);
+  let obj3 = user(premiumSince[16]);
   const items1 = [useReducedMotion];
   const stateFromStores = obj3.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
-  let obj4 = user(premiumSince[14]);
+  let obj4 = user(premiumSince[16]);
   const items2 = [isVROnline];
   stateFromStores1 = obj4.useStateFromStores(items2, () => {
     let nickname = stateFromStores1;
@@ -117,7 +175,7 @@ const memoResult = react.memo(function DMRow(user) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -157,7 +215,7 @@ const memoResult = react.memo(function DMRow(user) {
           c3 = 0;
           closure_128_8(false);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp20) {
         closure_2 = tmp20;
@@ -171,7 +229,7 @@ const memoResult = react.memo(function DMRow(user) {
     }
   }), items3);
   if (stateFromStores1 == null) {
-    let obj5 = stateFromStores1(tmp5[12]);
+    let obj5 = stateFromStores1(tmp5[13]);
     name = obj5.getName(user);
   }
   const items4 = [, , , , , ];
@@ -207,7 +265,7 @@ const memoResult = react.memo(function DMRow(user) {
     if (tmp4Result) {
       const obj5 = { style: title.tag, children: map1(Icon, obj6) };
       obj6 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, disableColor: true };
-      Icon = tmp5(1177).Icon;
+      Icon = tmp5(1189).Icon;
       tmp4Result = tmp4(tmp2, obj5);
     }
     items[2] = tmp4Result;
@@ -215,7 +273,7 @@ const memoResult = react.memo(function DMRow(user) {
     if (tmp4Result2) {
       const obj7 = { style: title.tag, children: map1(Icon2, obj8) };
       obj8 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, disableColor: true };
-      Icon2 = tmp5(1177).Icon;
+      Icon2 = tmp5(1189).Icon;
       tmp4Result2 = tmp4(tmp2, obj7);
     }
     items[3] = tmp4Result2;
@@ -249,12 +307,12 @@ const memoResult = react.memo(function DMRow(user) {
     let tmp8 = null;
     if (null != type) {
       const obj3 = { user, guildId, type: tmp7, animate: !stateFromStores };
-      tmp8 = map1(FriendPresence, obj3);
+      tmp8 = map1(closure_16, obj3);
     }
     tmp6 = tmp8;
   }, items6);
   let obj6 = { label: memo, subLabel: memo2, icon: memo1, onPress: callback, trailing, accessibilityActions, onAccessibilityAction };
-  const SearchListRow = tmp4(tmp5[19]).SearchListRow;
+  const SearchListRow = tmp4(tmp5[21]).SearchListRow;
   if (first) {
     trailing = tmp15(title, {});
   }

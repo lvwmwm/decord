@@ -1,21 +1,21 @@
-// Module ID: 6520
-// Function ID: 6521
+// Module ID: 6521
+// Function ID: 6522
 // Name: GuildOnboardingPromptsActionCreators
-// Dependencies: [5, 502, 2108, 2067, 6521, 6522, 1074, 4455, 1241, 5016, 573, 1271, 1385, 2]
+// Dependencies: [5, 502, 2111, 2073, 6522, 6523, 1086, 4458, 1253, 5017, 585, 1283, 1391, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
-// Module 6520 (GuildOnboardingPromptsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4455 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6522 */;
+// Module 6521 (GuildOnboardingPromptsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4458 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6523 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6521 */;
-import Constants from "Constants" /* 1074 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6522 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ let obj = function _maybeFetchOnboardingPrompts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

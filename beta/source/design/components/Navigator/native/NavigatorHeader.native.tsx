@@ -1,46 +1,280 @@
-// Module ID: 5936
-// Function ID: 5937
+// Module ID: 5933
+// Function ID: 5934
 // Name: NavigatorHeader
-// Dependencies: [5, 19, 17, 1074, 21, 4836, 576, 4832, 5937, 5940, 1486, 5942, 1115, 5943, 5992, 1364, 1613, 5994, 2]
-// Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
+// Dependencies: [5, 109, 19, 17, 1086, 21, 4837, 588, 4833, 558, 576, 5934, 5937, 1492, 5939, 1127, 5940, 5942, 1370, 1619, 5991, 2]
+// Exports: getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 5936 (NavigatorHeader)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 5937 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5940 */;
-import _mod5943 from "module_5943" /* 5943 */;
-import XSmallIcon from "XSmallIcon" /* 5992 */;
-import NavigatorConstants from "NavigatorConstants" /* 5994 */;
+// Module 5933 (NavigatorHeader)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 5934 */;
+import XSmallIcon from "XSmallIcon" /* 5940 */;
+import _mod5942 from "module_5942" /* 5942 */;
+import NavigatorConstants from "NavigatorConstants" /* 5991 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c1, c2;
+let _require, c1, c2, dependencyMap, navigation;
 
-let closure_4;
-let hasOwnProperty;
-let metroImportDefault;
-let metroRequire;
+let c10;
+let c9;
+let metroImportAll;
 let obj2;
 let obj3;
 let obj4;
 let size;
 let size1;
-class HeaderBackImage {
-  constructor() {
-    const obj = { size: "md", style: styles().headerButtonIcon };
-    return metroRequire(ArrowLargeLeftIcon.ArrowLargeLeftIcon, obj);
+let tmp;
+let unpackModuleId;
+const ArrowLargeLeftIcon = tmp(5937);
+let closure_3 = ["onPress"];
+let closure_4 = ["onPress"];
+let closure_5 = ["text", "labelStyle"];
+({ View: metroImportAll, ActivityIndicator: c9 } = react_native);
+const Fonts = Constants.Fonts;
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { fauxHeaderWrapper: obj2, headerTitle: obj3, headerBackTitleStyle: obj4, navigatorHeaderTitleContainer: { flexDirection: "row", justifyContent: "center", alignItems: "center" }, navigatorHeaderContainer: { flexDirection: "column", justifyContent: "center", alignItems: "center" }, navigatorHeaderSubtitle: { marginTop: -2 }, headerButtonIcon: size, submittingIndicator: size1 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
+createStyles = createStyles.createStyles;
+obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
+let merged = Object.assign(Text_Text.TextStyleSheet["redesign/heading-18/bold"]);
+obj4 = { fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 16, letterSpacing: 0, lineHeight: 20, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
+size = { width: 24, height: 24, tintColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
+size1 = { width: 22, height: 22, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+const styles = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let icon;
+  let items;
+  let items1;
+  let subtitle;
+  let title;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(14);
+  ({ title, subtitle, icon } = arg0);
+  const tmp4 = styles();
+  const tmp5 = HeaderDebugOverlayDefault("js-stack");
+  if (cResult[0] !== title) {
+    const obj2 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: title };
+    const tmp8 = authStore(Text_Text.Text, obj2);
+    cResult[0] = title;
+    cResult[1] = tmp8;
+    tmp6 = tmp8;
+  } else {
+    tmp6 = cResult[1];
   }
-}
-function CloseButton(onPress) {
+  if (cResult[2] === icon) {
+    if (cResult[3] === tmp4.navigatorHeaderTitleContainer) {
+      let tmp9;
+      if (cResult[4] === tmp6) {
+        tmp9 = cResult[5];
+      }
+      if (cResult[6] === tmp4.navigatorHeaderSubtitle) {
+        let tmp11;
+        if (cResult[7] === subtitle) {
+          tmp11 = cResult[8];
+        }
+        if (cResult[9] === tmp5) {
+          if (cResult[10] === tmp4.navigatorHeaderContainer) {
+            if (cResult[11] === tmp9) {
+              let tmp15;
+              if (cResult[12] === tmp11) {
+                tmp15 = cResult[13];
+              }
+              return tmp15;
+            }
+          }
+        }
+        const obj3 = { style: tmp4.navigatorHeaderContainer, children: items };
+        items = [tmp9, tmp11, tmp5];
+        const tmp18 = unpackModuleId(metroImportAll, obj3);
+        cResult[9] = tmp5;
+        cResult[10] = tmp4.navigatorHeaderContainer;
+        cResult[11] = tmp9;
+        cResult[12] = tmp11;
+        cResult[13] = tmp18;
+        tmp15 = tmp18;
+      }
+      let tmp13 = null != subtitle && "" !== subtitle;
+      if (tmp13) {
+        const obj4 = { lineClamp: 1, style: tmp4.navigatorHeaderSubtitle, variant: "text-xs/medium", color: "text-muted", children: subtitle };
+        tmp13 = authStore(tmp(4833).Text, obj4);
+      }
+      cResult[6] = tmp4.navigatorHeaderSubtitle;
+      cResult[7] = subtitle;
+      cResult[8] = tmp13;
+      tmp11 = tmp13;
+    }
+  }
+  const obj5 = { style: tmp4.navigatorHeaderTitleContainer, children: items1 };
+  items1 = [icon, tmp6];
+  const tmp10 = unpackModuleId(metroImportAll, obj5);
+  cResult[2] = icon;
+  cResult[3] = tmp4.navigatorHeaderTitleContainer;
+  cResult[4] = tmp6;
+  cResult[5] = tmp10;
+  tmp9 = tmp10;
+}) : ((subtitle) => {
+  let icon;
+  let items;
+  let items1;
+  let title;
+  subtitle = subtitle.subtitle;
+  ({ title, icon } = subtitle);
+  const tmp = styles();
+  const obj2 = { style: tmp.navigatorHeaderTitleContainer, children: items };
+  items = [icon, ];
+  const obj = { style: tmp.navigatorHeaderContainer, children: items1 };
+  const tmp3 = HeaderDebugOverlayDefault("js-stack");
+  items[1] = authStore(Text_Text.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: title });
+  items1 = [unpackModuleId(metroImportAll, obj2), , ];
+  let tmp6Result = null != subtitle;
+  const tmp4 = unpackModuleId;
+  const tmp5 = metroImportAll;
+  const tmp6 = authStore;
+  if (tmp6Result) {
+    tmp6Result = "" !== subtitle;
+  }
+  if (tmp6Result) {
+    const obj3 = { lineClamp: 1, style: tmp.navigatorHeaderSubtitle, variant: "text-xs/medium", color: "text-muted", children: subtitle };
+    tmp6Result = tmp6(Text_Text.Text, obj3);
+  }
+  items1[1] = tmp6Result;
+  items1[2] = tmp3;
+  return tmp4(tmp5, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const tmp4 = styles();
+  if (cResult[0] !== tmp4.headerButtonIcon) {
+    const obj2 = { size: "md", style: tmp4.headerButtonIcon };
+    const tmp7 = authStore(ArrowLargeLeftIcon.ArrowLargeLeftIcon, obj2);
+    cResult[0] = tmp4.headerButtonIcon;
+    cResult[1] = tmp7;
+    tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5;
+}) : (() => {
+  const obj = { size: "md", style: styles().headerButtonIcon };
+  return authStore(ArrowLargeLeftIcon.ArrowLargeLeftIcon, obj);
+});
+let closure_13 = tmp9;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+  let closure_2;
+  let headerButtonIcon;
+  let tmp4;
+  let tmp5;
+  let obj = require("react");
+  const cResult = obj.c(15);
+  if (cResult[0] !== onPress) {
+    onPress = onPress.onPress;
+    const tmp8 = _objectWithoutProperties(onPress, closure_3);
+    cResult[0] = onPress;
+    cResult[1] = onPress;
+    cResult[2] = tmp8;
+    tmp5 = tmp8;
+    tmp4 = onPress;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+  }
+  const tmp9 = styles();
+  _require = tmp9;
+  const tmpResult = require("Link");
+  navigation = tmpResult.useNavigation();
+  if (cResult[3] === navigation) {
+    let tmp11;
+    let tmp12;
+    let tmp15;
+    let tmp17;
+    if (cResult[4] === tmp4) {
+      tmp11 = cResult[5];
+    }
+    dependencyMap = tmp11;
+    if (cResult[6] !== tmp11) {
+      const fn2 = function b() {
+        closure_2();
+        return true;
+      };
+      cResult[6] = tmp11;
+      cResult[7] = fn2;
+      tmp12 = fn2;
+    } else {
+      tmp12 = cResult[7];
+    }
+    const tmpResult2 = require("useNavigatorBackPressHandler");
+    tmpResult2.useNavigatorBackPressHandler(tmp12);
+    const _Symbol = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(require("intl").t.cpT0Cq);
+      cResult[8] = stringResult;
+      tmp15 = stringResult;
+    } else {
+      tmp15 = cResult[8];
+    }
+    if (cResult[9] !== tmp9.headerButtonIcon) {
+      const fn3 = function p(tintColor) {
+        let items;
+        const obj = { size: "md", style: items };
+        items = [headerButtonIcon.headerButtonIcon, { tintColor: tintColor.tintColor }];
+        return authStore(XSmallIcon.XSmallIcon, obj);
+      };
+      cResult[9] = tmp9.headerButtonIcon;
+      cResult[10] = fn3;
+      tmp17 = fn3;
+    } else {
+      tmp17 = cResult[10];
+    }
+    if (cResult[11] === tmp11) {
+      if (cResult[12] === tmp5) {
+        let tmp18;
+        if (cResult[13] === tmp17) {
+          tmp18 = cResult[14];
+        }
+        return tmp18;
+      }
+    }
+    const obj2 = { onPress: tmp11, label: tmp15, displayMode: "minimal", backImage: tmp17, accessibilityLabel: tmp15 };
+    const HeaderBackButton = tmp(5942).HeaderBackButton;
+    const merged = Object.assign(tmp5);
+    const tmp23 = closure_10(HeaderBackButton, obj2);
+    cResult[11] = tmp11;
+    cResult[12] = tmp5;
+    cResult[13] = tmp17;
+    cResult[14] = tmp23;
+    tmp18 = tmp23;
+  }
+  let fn = tmp4;
+  if (tmp4 == null) {
+    fn = () => {
+      navigation.pop();
+    };
+  }
+  cResult[3] = navigation;
+  cResult[4] = tmp4;
+  cResult[5] = fn;
+  tmp11 = fn;
+}) : ((onPress) => {
   let headerButtonIcon;
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
@@ -58,7 +292,7 @@ function CloseButton(onPress) {
     fn();
     return true;
   });
-  const intl = tmp2(tmp3[12]).intl;
+  const intl = tmp2(tmp3[15]).intl;
   const stringResult = intl.string(require("intl").t.cpT0Cq);
   const obj2 = {
     onPress,
@@ -68,18 +302,78 @@ function CloseButton(onPress) {
       let items;
       const obj = { size: "md", style: items };
       items = [headerButtonIcon.headerButtonIcon, { tintColor: tintColor.tintColor }];
-      return metroRequire(XSmallIcon.XSmallIcon, obj);
+      return authStore(XSmallIcon.XSmallIcon, obj);
     },
     accessibilityLabel: stringResult
   };
-  const HeaderBackButton = tmp2(tmp3[13]).HeaderBackButton;
+  const HeaderBackButton = tmp2(tmp3[17]).HeaderBackButton;
   const merged1 = Object.assign(merged);
-  return closure_6(HeaderBackButton, obj2);
-}
-function CustomHeaderBackButton(onPress) {
+  return closure_10(HeaderBackButton, obj2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+  let closure_0;
+  let tmp11;
+  let tmp5;
+  let tmp9;
+  const tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(9);
+  if (cResult[0] !== onPress) {
+    onPress = onPress.onPress;
+    _require = onPress;
+    const tmp8 = _objectWithoutProperties(onPress, closure_4);
+    cResult[0] = onPress;
+    cResult[1] = onPress;
+    cResult[2] = tmp8;
+    tmp5 = tmp8;
+  } else {
+    _require = cResult[1];
+    tmp5 = cResult[2];
+  }
+  if (cResult[3] !== tmp4) {
+    const fn = function s() {
+      if (null != closure_0) {
+        tmp();
+      }
+      return null != closure_0;
+    };
+    cResult[3] = tmp4;
+    cResult[4] = fn;
+    tmp9 = fn;
+  } else {
+    tmp9 = cResult[4];
+  }
+  const tmpResult = tmp(5939);
+  tmpResult.useNavigatorBackPressHandler(tmp9);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function u() {
+      return closure_1_10(closure_1_13, {});
+    };
+    cResult[5] = fn2;
+    tmp11 = fn2;
+  } else {
+    tmp11 = cResult[5];
+  }
+  if (cResult[6] === tmp4) {
+    let tmp12;
+    if (cResult[7] === tmp5) {
+      tmp12 = cResult[8];
+    }
+    return tmp12;
+  }
+  const obj2 = { onPress: tmp4, displayMode: "minimal", backImage: tmp11 };
+  const HeaderBackButton = tmp(5942).HeaderBackButton;
+  const merged = Object.assign(tmp5);
+  const tmp14 = closure_10(HeaderBackButton, obj2);
+  cResult[6] = tmp4;
+  cResult[7] = tmp5;
+  cResult[8] = tmp14;
+  tmp12 = tmp14;
+}) : ((onPress) => {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
-  const obj = onPress(5942);
+  const obj = onPress(5939);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
@@ -90,14 +384,101 @@ function CustomHeaderBackButton(onPress) {
     onPress,
     displayMode: "minimal",
     backImage() {
-      return closure_1_6(HeaderBackImage, {});
+      return closure_1_10(closure_1_13, {});
     }
   };
-  const HeaderBackButton = onPress(5943).HeaderBackButton;
+  const HeaderBackButton = onPress(5942).HeaderBackButton;
   const merged1 = Object.assign(merged);
-  return closure_6(HeaderBackButton, obj2);
-}
-function HeaderTextButton(text) {
+  return closure_10(HeaderBackButton, obj2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderTextButton(arg0) {
+  let labelStyle;
+  let text;
+  let tmp11;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(15);
+  if (cResult[0] !== arg0) {
+    ({ text, labelStyle } = arg0);
+    const tmp9 = _objectWithoutProperties(arg0, closure_5);
+    cResult[0] = arg0;
+    cResult[1] = tmp9;
+    cResult[2] = labelStyle;
+    cResult[3] = text;
+    tmp6 = text;
+    tmp5 = labelStyle;
+    tmp4 = tmp9;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    tmp6 = cResult[3];
+  }
+  const tmp10 = styles();
+  if (cResult[4] !== tmp10.headerBackTitleStyle) {
+    const obj2 = { marginHorizontal: 16 };
+    const merged = Object.assign(tmp10.headerBackTitleStyle);
+    cResult[4] = tmp10.headerBackTitleStyle;
+    cResult[5] = obj2;
+    tmp11 = obj2;
+  } else {
+    tmp11 = cResult[5];
+  }
+  if (cResult[6] === tmp5) {
+    let tmp14;
+    let tmp16;
+    if (cResult[7] === tmp11) {
+      tmp14 = cResult[8];
+    }
+    const _Symbol = Symbol;
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      class B {
+        constructor() {
+          return null;
+        }
+      }
+      cResult[9] = B;
+      tmp16 = B;
+    } else {
+      class B {
+        constructor() {
+          return null;
+        }
+      }
+    }
+    const tmpResult = PlatformUtils;
+    if (tmpResult.isAndroid()) {
+      class B {
+        constructor() {
+          return null;
+        }
+      }
+    }
+    if (cResult[10] === tmp14) {
+      class B {
+        constructor() {
+          return null;
+        }
+      }
+    }
+    const obj3 = { label: tmp6, displayMode: "default", labelStyle: tmp14, backImage: tmp16, accessibilityLabel: undefined };
+    const HeaderBackButton = tmp(5942).HeaderBackButton;
+    const merged1 = Object.assign(tmp4);
+    cResult[10] = tmp14;
+    cResult[11] = tmp4;
+    cResult[12] = undefined;
+    cResult[13] = tmp6;
+    cResult[14] = authStore(HeaderBackButton, obj3);
+    const tmp23 = authStore(HeaderBackButton, obj3);
+  }
+  const items = [tmp11, tmp5];
+  cResult[6] = tmp5;
+  cResult[7] = tmp11;
+  cResult[8] = items;
+  tmp14 = items;
+}) : (function HeaderTextButton(text) {
   let tmp5;
   text = text.text;
   const labelStyle = text.labelStyle;
@@ -114,72 +495,112 @@ function HeaderTextButton(text) {
     },
     accessibilityLabel: tmp5
   };
-  const HeaderBackButton = _mod5943.HeaderBackButton;
+  const HeaderBackButton = _mod5942.HeaderBackButton;
   const merged2 = Object.assign(merged);
   tmp5 = undefined;
   const obj3 = PlatformUtils;
-  const tmp3 = metroRequire;
+  const tmp3 = authStore;
   if (obj3.isAndroid()) {
     tmp5 = text;
   }
   return tmp3(HeaderBackButton, obj2);
-}
-({ View: closure_4, ActivityIndicator: hasOwnProperty } = react_native);
-const Fonts = Constants.Fonts;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { fauxHeaderWrapper: obj2, headerTitle: obj3, headerBackTitleStyle: obj4, navigatorHeaderTitleContainer: { flexDirection: "row", justifyContent: "center", alignItems: "center" }, navigatorHeaderContainer: { flexDirection: "column", justifyContent: "center", alignItems: "center" }, navigatorHeaderSubtitle: { marginTop: -2 }, headerButtonIcon: size, submittingIndicator: size1 };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
-createStyles = createStyles.createStyles;
-obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
-let merged = Object.assign(Text_Text.TextStyleSheet["redesign/heading-18/bold"]);
-obj4 = { fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 16, letterSpacing: 0, lineHeight: 20, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
-size = { width: 24, height: 24, tintColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
-size1 = { width: 22, height: 22, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
-const styles = createStyles(obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function FauxHeader(arg0) {
+  let children;
+  let style;
+  const obj = react2;
+  const cResult = obj.c(10);
+  ({ children, style } = arg0);
+  const tmp2 = styles();
+  const top = useSafeAreaInsetsDefault().top;
+  const sum = top + NavigatorConstants.NAV_BAR_HEIGHT;
+  if (cResult[0] === top) {
+    let tmp4;
+    if (cResult[1] === sum) {
+      tmp4 = cResult[2];
+    }
+    if (cResult[3] === style) {
+      if (cResult[4] === tmp2.fauxHeaderWrapper) {
+        let tmp5;
+        if (cResult[5] === tmp4) {
+          tmp5 = cResult[6];
+        }
+        if (cResult[7] === children) {
+          let tmp6;
+          if (cResult[8] === tmp5) {
+            tmp6 = cResult[9];
+          }
+          return tmp6;
+        }
+        const obj2 = { style: tmp5, children };
+        const tmp9 = authStore(metroImportAll, obj2);
+        cResult[7] = children;
+        cResult[8] = tmp5;
+        cResult[9] = tmp9;
+        tmp6 = tmp9;
+      }
+    }
+    const items = [tmp2.fauxHeaderWrapper, tmp4, style];
+    cResult[3] = style;
+    cResult[4] = tmp2.fauxHeaderWrapper;
+    cResult[5] = tmp4;
+    cResult[6] = items;
+    tmp5 = items;
+  }
+  const obj3 = { paddingTop: top, height: sum };
+  cResult[0] = top;
+  cResult[1] = sum;
+  cResult[2] = obj3;
+  tmp4 = obj3;
+}) : (function FauxHeader(arg0) {
+  let children;
+  let items;
+  let style;
+  ({ children, style } = arg0);
+  const tmp = styles();
+  const top = useSafeAreaInsetsDefault().top;
+  const obj = { style: items, children };
+  items = [tmp.fauxHeaderWrapper, { paddingTop: top, height: top + NavigatorConstants.NAV_BAR_HEIGHT }, style];
+  ({ paddingTop: top, height: top + NavigatorConstants.NAV_BAR_HEIGHT });
+  return authStore(metroImportAll, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderSubmittingIndicator() {
+  let tmp3;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const tmp2 = styles();
+  if (cResult[0] !== tmp2.submittingIndicator) {
+    const obj2 = { animating: true, style: tmp2.submittingIndicator, color: tmp2.submittingIndicator.color };
+    const tmp6 = authStore(React4, obj2);
+    cResult[0] = tmp2.submittingIndicator;
+    cResult[1] = tmp6;
+    tmp3 = tmp6;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return tmp3;
+}) : (function HeaderSubmittingIndicator() {
+  const tmp = styles();
+  const obj = { animating: true, style: tmp.submittingIndicator, color: tmp.submittingIndicator.color };
+  return authStore(React4, obj);
+});
 size = size_mod;
 const result = size.fileFinishedImporting("design/components/Navigator/native/NavigatorHeader.native.tsx");
 
 export const useStyles = styles;
-export const NavigatorHeader = function NavigatorHeader(subtitle) {
-  let icon;
-  let items;
-  let items1;
-  let title;
-  subtitle = subtitle.subtitle;
-  ({ title, icon } = subtitle);
-  const tmp = styles();
-  const obj2 = { style: tmp.navigatorHeaderTitleContainer, children: items };
-  items = [icon, ];
-  const obj = { style: tmp.navigatorHeaderContainer, children: items1 };
-  const tmp3 = HeaderDebugOverlayDefault("js-stack");
-  items[1] = metroRequire(Text_Text.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: title });
-  items1 = [metroImportDefault(React3, obj2), , ];
-  let tmp6Result = null != subtitle;
-  const tmp4 = metroImportDefault;
-  const tmp5 = React3;
-  const tmp6 = metroRequire;
-  if (tmp6Result) {
-    tmp6Result = "" !== subtitle;
-  }
-  if (tmp6Result) {
-    const obj3 = { lineClamp: 1, style: tmp.navigatorHeaderSubtitle, variant: "text-xs/medium", color: "text-muted", children: subtitle };
-    tmp6Result = tmp6(Text_Text.Text, obj3);
-  }
-  items1[1] = tmp6Result;
-  items1[2] = tmp3;
-  return tmp4(tmp5, obj);
-};
-export { HeaderBackImage };
+export const NavigatorHeader = tmp8;
+export const HeaderBackImage = tmp9;
 export const renderBackImage = function renderBackImage() {
-  return metroRequire(HeaderBackImage, {});
+  return authStore(closure_13, {});
 };
 export function getHeaderCloseButton(pop) {
   const onPress = pop;
   return (arg0) => {
     const obj = { onPress };
     const merged = Object.assign(arg0);
-    return metroRequire(CloseButton, obj);
+    return authStore(closure_14, obj);
   };
 }
 export function getHeaderConditionalBackButton(callback1) {
@@ -199,7 +620,7 @@ export function getHeaderConditionalBackButton(callback1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -232,7 +653,7 @@ export function getHeaderConditionalBackButton(callback1) {
                 }
               }
               c2 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp9) {
             c2 = 3;
@@ -248,7 +669,7 @@ export function getHeaderConditionalBackButton(callback1) {
       }
     };
     const merged = Object.assign(Object.assign(onPress, Object.assign({ onPress: 0 })));
-    return closure_1_6(CustomHeaderBackButton, obj);
+    return closure_1_10(closure_1_15, obj);
   };
 }
 export function getHeaderBackButton(onClose, arg1) {
@@ -273,7 +694,7 @@ export function getHeaderBackButton(onClose, arg1) {
       }
     };
     const merged = Object.assign(Object.assign(onPress, Object.assign({ onPress: 0 })));
-    return closure_1_6(CustomHeaderBackButton, obj);
+    return closure_1_10(closure_1_15, obj);
   };
 }
 export function getHeaderTextButton(intl, callback) {
@@ -282,26 +703,11 @@ export function getHeaderTextButton(intl, callback) {
   return (arg0) => {
     const obj = { text, onPress };
     const merged = Object.assign(arg0);
-    return metroRequire(HeaderTextButton, obj);
+    return authStore(closure_16, obj);
   };
 }
 export function getHeaderNoTitle() {
   return () => null;
 }
-export const FauxHeader = function FauxHeader(arg0) {
-  let children;
-  let items;
-  let style;
-  ({ children, style } = arg0);
-  const tmp = styles();
-  const top = useSafeAreaInsetsDefault().top;
-  const obj = { style: items, children };
-  items = [tmp.fauxHeaderWrapper, { paddingTop: top, height: top + NavigatorConstants.NAV_BAR_HEIGHT }, style];
-  ({ paddingTop: top, height: top + NavigatorConstants.NAV_BAR_HEIGHT });
-  return metroRequire(React3, obj);
-};
-export const HeaderSubmittingIndicator = function HeaderSubmittingIndicator() {
-  const tmp = styles();
-  const obj = { animating: true, style: tmp.submittingIndicator, color: tmp.submittingIndicator.color };
-  return metroRequire(hasOwnProperty, obj);
-};
+export const FauxHeader = tmp10;
+export const HeaderSubmittingIndicator = tmp11;

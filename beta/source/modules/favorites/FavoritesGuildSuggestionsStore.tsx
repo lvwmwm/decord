@@ -1,42 +1,201 @@
-// Module ID: 15834
-// Function ID: 15835
+// Module ID: 15833
+// Function ID: 15834
 // Name: FavoritesGuildSuggestionsStore
-// Dependencies: [32, 19, 2035, 1074, 2042, 560, 9685, 6806, 2029, 2]
-// Exports: setFavoritesGuildSuggestions, useFavoritesGuildSuggestionCount, useFavoritesGuildSuggestions, useFavoritesGuildSuggestionsDismissal, useFavoritesGuildSuggestionsVisibility, useHasFavoritesGuildSuggestions
+// Dependencies: [32, 19, 2041, 1086, 2048, 570, 558, 576, 9807, 2035, 6807, 2]
+// Exports: setFavoritesGuildSuggestions
 
-// Module 15834 (FavoritesGuildSuggestionsStore)
-import Constants from "Constants" /* 1074 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
+// Module 15833 (FavoritesGuildSuggestionsStore)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2035 */;
-import module_560 from "module_560" /* 560 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2041 */;
+import module_570 from "module_570" /* 570 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, setStateResult;
 
 const NOOP = Constants.NOOP;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let items = [];
-const state = module_560.create(() => ({ suggestions: items, dismiss: NOOP }));
-const result = size.fileFinishedImporting("modules/favorites/FavoritesGuildSuggestionsStore.tsx");
-
-export const NO_SUGGESTIONS = items;
-export const useFavoritesGuildSuggestions = function useFavoritesGuildSuggestions() {
-  return state((suggestions) => suggestions.suggestions);
-};
-export const useFavoritesGuildSuggestionCount = function useFavoritesGuildSuggestionCount() {
-  return state((suggestions) => suggestions.suggestions.length);
-};
-export const useHasFavoritesGuildSuggestions = function useHasFavoritesGuildSuggestions() {
-  return state((suggestions) => suggestions.suggestions.length > 0);
-};
-export const setFavoritesGuildSuggestions = function setFavoritesGuildSuggestions(suggestions) {
-  const obj = { suggestions };
-  state.setState(obj);
-};
-export const useFavoritesGuildSuggestionsVisibility = function useFavoritesGuildSuggestionsVisibility() {
+let closure_8 = module_570.create(() => ({ suggestions: items, dismiss: NOOP }));
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s(suggestions) {
+      return suggestions.suggestions;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_8(first);
+}) : (() => closure_8((suggestions) => suggestions.suggestions));
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s(suggestions) {
+      return suggestions.suggestions.length;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_8(first);
+}) : (() => closure_8((suggestions) => suggestions.suggestions.length));
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s(suggestions) {
+      return suggestions.suggestions.length > 0;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_8(first);
+}) : (() => closure_8((suggestions) => suggestions.suggestions.length > 0));
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_0;
+  let obj3;
+  let suggestions;
+  let tmp12;
+  let tmp13;
+  let tmp15;
+  let tmp16;
+  let tmp5;
+  let tmp7;
+  let obj = require("react");
+  const cResult = obj.c(11);
+  const obj2 = require("FavoritesHooks");
+  const favoritesAccess = obj2.useFavoritesAccess();
+  const hasAccess = favoritesAccess.hasAccess;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor(arg0) {
+        return arg0.postConnectionOpen;
+      }
+    }
+    cResult[0] = S;
+    tmp5 = S;
+  } else {
+    class S {
+      constructor(arg0) {
+        return arg0.postConnectionOpen;
+      }
+    }
+  }
+  DismissibleContentShownStateStore(tmp5);
+  if (hasAccess) {
+    class S {
+      constructor(arg0) {
+        return arg0.postConnectionOpen;
+      }
+    }
+  }
+  if (hasAccess) {
+    class S {
+      constructor(arg0) {
+        return arg0.postConnectionOpen;
+      }
+    }
+  }
+  if (cResult[1] !== hasAccess) {
+    class S {
+      constructor(arg0) {
+        return arg0.postConnectionOpen;
+      }
+    }
+    cResult[1] = hasAccess;
+    cResult[2] = tmp8;
+    tmp7 = tmp8;
+  } else {
+    class S {
+      constructor(arg0) {
+        return arg0.postConnectionOpen;
+      }
+    }
+  }
+  const tmpResult = require("useSelectedDismissibleContent");
+  const tmp9 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp7), 2);
+  _require = tmp11;
+  const first = tmp9[0];
+  const FAVORITES_GUILD_SUGGESTIONS = tmp(2035).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
+  if (cResult[3] !== tmp9[1]) {
+    class I {
+      constructor() {
+        obj = { dismiss() { /* body not rendered: F143898 */ } };
+        setStateResult = closure_8.setState(obj);
+        return;
+      }
+    }
+    items = [tmp9[1]];
+    cResult[3] = tmp9[1];
+    cResult[4] = I;
+    cResult[5] = items;
+    tmp13 = items;
+    tmp12 = I;
+  } else {
+    class I {
+      constructor() {
+        obj = { dismiss() { /* body not rendered: F143898 */ } };
+        setStateResult = closure_8.setState(obj);
+        return;
+      }
+    }
+    tmp13 = cResult[5];
+  }
+  const layoutEffect = react.useLayoutEffect(tmp12, tmp13);
+  const obj4 = react;
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class O {
+      constructor() {
+        return () => { /* body not rendered: F143899 */ };
+      }
+    }
+    const items1 = [];
+    cResult[6] = O;
+    cResult[7] = items1;
+    tmp16 = items1;
+    tmp15 = O;
+  } else {
+    class O {
+      constructor() {
+        return () => { /* body not rendered: F143899 */ };
+      }
+    }
+    tmp16 = cResult[7];
+  }
+  const layoutEffect1 = obj4.useLayoutEffect(tmp15, tmp16);
+  if (cResult[8] === hasAccess) {
+    class O {
+      constructor() {
+        return () => { /* body not rendered: F143899 */ };
+      }
+    }
+    return obj3;
+  }
+  obj3 = { isEligible: hasAccess, isSelected: first === FAVORITES_GUILD_SUGGESTIONS };
+  cResult[8] = hasAccess;
+  cResult[9] = first === FAVORITES_GUILD_SUGGESTIONS;
+  cResult[10] = obj3;
+}) : (() => {
   let closure_0;
   let items1;
   let suggestions;
@@ -51,10 +210,10 @@ export const useFavoritesGuildSuggestionsVisibility = function useFavoritesGuild
   if (hasAccess) {
     hasAccess = tmp4;
   }
-  const useSelectedDismissibleContent = tmp(6806).useSelectedDismissibleContent;
+  const useSelectedDismissibleContent = tmp(6807).useSelectedDismissibleContent;
   require("useSelectedDismissibleContent");
   if (hasAccess) {
-    items = [tmp(2029).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
+    items = [tmp(2035).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
     items1 = items;
   } else {
     items1 = [];
@@ -63,26 +222,53 @@ export const useFavoritesGuildSuggestionsVisibility = function useFavoritesGuild
   _require = tmp8;
   const first = tmp6[0];
   const items2 = [tmp6[1]];
-  const FAVORITES_GUILD_SUGGESTIONS = tmp(2029).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
+  const FAVORITES_GUILD_SUGGESTIONS = tmp(2035).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
   const layoutEffect = react.useLayoutEffect(() => {
     let obj = {
       dismiss() {
         closure_1_0(constants.USER_DISMISS);
         const obj = { suggestions };
-        state.setState(obj);
+        closure_2_8.setState(obj);
       }
     };
-    state.setState(obj);
+    closure_8.setState(obj);
   }, items2);
   const layoutEffect1 = react.useLayoutEffect(() => {
     let dismiss;
+    let state;
     return () => {
       const obj = { dismiss };
       return state.setState(obj);
     };
   }, []);
   return { isEligible: hasAccess, isSelected: first === FAVORITES_GUILD_SUGGESTIONS };
-};
-export const useFavoritesGuildSuggestionsDismissal = function useFavoritesGuildSuggestionsDismissal() {
-  return state((dismiss) => dismiss.dismiss);
-};
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s(dismiss) {
+      return dismiss.dismiss;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_8(first);
+}) : (() => closure_8((dismiss) => dismiss.dismiss));
+function setFavoritesGuildSuggestions(suggestions) {
+  const obj = { suggestions };
+  closure_8.setState(obj);
+}
+const result = size.fileFinishedImporting("modules/favorites/FavoritesGuildSuggestionsStore.tsx");
+
+export const NO_SUGGESTIONS = items;
+export const useFavoritesGuildSuggestions = tmp2;
+export const useFavoritesGuildSuggestionCount = tmp3;
+export const useHasFavoritesGuildSuggestions = tmp4;
+export { setFavoritesGuildSuggestions };
+export const useFavoritesGuildSuggestionsVisibility = tmp5;
+export const useFavoritesGuildSuggestionsDismissal = tmp6;

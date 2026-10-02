@@ -1,10 +1,10 @@
 // Module ID: 3520
 // Function ID: 3521
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 3520 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/partner_perks/xbox/partner_pass", scales: [1], hash: "af399233cf0437cbc649d89eb97e72fd", name: "XboxPartnerPass.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wYXJ0bmVyX3BlcmtzL3hib3gvcGFydG5lcl9wYXNz", scales: [1], hash: "a1998166e571a6678bbdb61af955f559", name: "vi.messages.a1998166e571a6678bbdb61af955f559.compiled.messages", type: "jsona" });

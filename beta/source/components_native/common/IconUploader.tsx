@@ -1,21 +1,21 @@
-// Module ID: 10389
-// Function ID: 10390
+// Module ID: 10431
+// Function ID: 10432
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 1074, 21, 4836, 5450, 5896, 1397, 10390, 5435, 1115, 2]
-// Exports: default
+// Dependencies: [5, 19, 17, 1086, 21, 4837, 558, 576, 5451, 5893, 1403, 10432, 1127, 5436, 2]
 
-// Module 10389 (IconUploader)
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import Pressables from "Pressables" /* 5435 */;
-import GuildIcon from "GuildIcon" /* 5896 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10390 */;
+// Module 10431 (IconUploader)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import AvatarUtils from "AvatarUtils" /* 1403 */;
+import Pressables from "Pressables" /* 5436 */;
+import GuildIcon from "GuildIcon" /* 5893 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10432 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -30,9 +30,265 @@ let metroRequire;
 const UPLOAD_MEDIUM_SIZE = Constants.UPLOAD_MEDIUM_SIZE;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
 let closure_11 = createStyles.createStyles({ uploadIcon: { position: "absolute", right: -7, top: -7 }, avatar: { height: 64, width: 64, borderRadius: 32 } });
-const result = size.fileFinishedImporting("components_native/common/IconUploader.tsx");
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_2;
+  let disabled;
+  let icon;
+  let iconStyle;
+  let items1;
+  let makeURL;
+  let name;
+  let onChangeIconPress;
+  let onUpload;
+  let style;
+  let tmp5;
+  let tmp7;
+  let type;
+  const tmp = onUpload;
+  let obj = onUpload(576);
+  const cResult = obj.c(33);
+  ({ disabled, makeURL, type, name, icon, onUpload } = arg0);
+  ({ style, iconStyle, onChangeIconPress } = arg0);
+  const tmp4 = undefined !== disabled && disabled;
+  if (cResult[0] !== makeURL) {
+    let fn = makeURL;
+    if (undefined === makeURL) {
+      fn = () => {
 
-export default function IconUploader(disabled) {
+      };
+    }
+    cResult[0] = makeURL;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  let str = "avatar";
+  if (undefined !== type) {
+    str = type;
+  }
+  const tmp6 = closure_11();
+  dependencyMap = react.useRef(false);
+  if (null == icon) {
+    if (cResult[2] === icon) {
+      let tmp8;
+      if (cResult[3] === tmp5) {
+        tmp8 = cResult[4];
+      }
+      tmp7 = tmp8;
+    }
+    const tmp5Result = tmp5(icon);
+    cResult[2] = icon;
+    cResult[3] = tmp5;
+    cResult[4] = tmp5Result;
+    tmp8 = tmp5Result;
+  } else {
+    let obj2 = /^data:/;
+    tmp7 = icon;
+  }
+  if (cResult[5] === onChangeIconPress) {
+    let tmp10;
+    let tmp14;
+    if (cResult[6] === onUpload) {
+      tmp10 = cResult[7];
+    }
+    if ("guild" === str) {
+      if (null != icon) {
+        if (cResult[8] === tmp7) {
+          if (cResult[9] === iconStyle) {
+            let tmp18;
+            if (cResult[10] === name) {
+              tmp18 = cResult[11];
+            }
+            tmp14 = tmp18;
+          }
+        }
+        let obj3 = { style: iconStyle, icon: tmp7, value: name, size: tmp(5893).GuildIconSizes.XLARGE, animate: true };
+        const tmp21 = onChangeIconPress(5893);
+        const tmp22 = closure_8(tmp21, obj3);
+        cResult[8] = tmp7;
+        cResult[9] = iconStyle;
+        cResult[10] = name;
+        cResult[11] = tmp22;
+        tmp18 = tmp22;
+      }
+    } else {
+      let tmp11;
+      if (cResult[12] !== tmp7) {
+        const tmpResult = tmp(1403);
+        const source = tmpResult.makeSource(tmp7);
+        cResult[12] = tmp7;
+        cResult[13] = source;
+        tmp11 = source;
+      } else {
+        tmp11 = cResult[13];
+      }
+      if (cResult[14] === iconStyle) {
+        let tmp13;
+        if (cResult[15] === tmp6.avatar) {
+          tmp13 = cResult[16];
+        }
+        if (cResult[17] === tmp11) {
+          if (cResult[18] === tmp13) {
+            tmp14 = cResult[19];
+          }
+        }
+        let obj4 = { style: tmp13, source: tmp11 };
+        const tmp17 = closure_8(closure_6, obj4);
+        cResult[17] = tmp11;
+        cResult[18] = tmp13;
+        cResult[19] = tmp17;
+        tmp14 = tmp17;
+      }
+      const items = [tmp6.avatar, iconStyle];
+      cResult[14] = iconStyle;
+      cResult[15] = tmp6.avatar;
+      cResult[16] = items;
+      tmp13 = items;
+    }
+    if (cResult[20] === tmp4) {
+      let tmp23;
+      if (cResult[21] === tmp6) {
+        tmp23 = cResult[22];
+      }
+      if (cResult[23] === tmp14) {
+        let tmp28;
+        if (cResult[24] === tmp23) {
+          tmp28 = cResult[25];
+        }
+        let tmp32 = tmp28;
+        if (!tmp4) {
+          let tmp34;
+          const _Symbol = Symbol;
+          if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
+            const intl = tmp(1127).intl;
+            const stringResult = intl.string(tmp(1127).t["MsUY/S"]);
+            cResult[26] = stringResult;
+            tmp34 = stringResult;
+          } else {
+            tmp34 = cResult[26];
+          }
+          if (cResult[27] === tmp10) {
+            let tmp36;
+            if (cResult[28] === tmp28) {
+              tmp36 = cResult[29];
+            }
+            if (cResult[30] === style) {
+              let tmp39;
+              if (cResult[31] === tmp36) {
+                tmp39 = cResult[32];
+              }
+              tmp32 = tmp39;
+            }
+            let obj5 = { style, children: tmp36 };
+            const tmp42 = closure_8(closure_5, obj5);
+            cResult[30] = style;
+            cResult[31] = tmp36;
+            cResult[32] = tmp42;
+            tmp39 = tmp42;
+          }
+          let obj6 = { accessibilityRole: "button", accessibilityLabel: tmp34, onPress: tmp10, children: tmp28 };
+          const tmp38 = closure_8(tmp(5436).PressableOpacity, obj6);
+          cResult[27] = tmp10;
+          cResult[28] = tmp28;
+          cResult[29] = tmp38;
+          tmp36 = tmp38;
+        }
+        return tmp32;
+      }
+      const obj7 = { children: items1 };
+      items1 = [tmp14, tmp23];
+      const tmp31 = closure_10(closure_9, obj7);
+      cResult[23] = tmp14;
+      cResult[24] = tmp23;
+      cResult[25] = tmp31;
+      tmp28 = tmp31;
+    }
+    let tmp24 = null;
+    if (!tmp4) {
+      const obj8 = { style: tmp6.uploadIcon, source: onChangeIconPress(10432) };
+      tmp24 = closure_8(closure_6, obj8);
+    }
+    cResult[20] = tmp4;
+    cResult[21] = tmp6;
+    cResult[22] = tmp24;
+    tmp23 = tmp24;
+  }
+  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+    let closure_1;
+    let obj2;
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        let base64;
+        c3 = 2;
+        if (0 === ref) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            closure_0 = tmp;
+            base64 = undefined;
+            if (tmp4 != null) {
+              tmp4();
+            }
+            if (!ref.current) {
+              ref.current = true;
+              const obj5 = { size };
+              ref = 1;
+              c3 = 1;
+              const obj6 = { value: obj2.openImagePicker(obj5), done: false };
+              obj2 = onChangeIconPress(closure_2_2[8]);
+              return obj6;
+            }
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          const obj = { value, done: true };
+          return obj;
+        } else {
+          base64 = value.base64;
+          if (null != base64) {
+            if (closure_0 != null) {
+              tmp9(base64);
+            }
+          }
+          ref.current = false;
+        }
+        c3 = 3;
+        return { value: "IconComponent", done: null };
+      } catch (tmp21) {
+        c3 = 3;
+        throw tmp21;
+      }
+    }
+  });
+  function handleChangeIcon() {
+    return closure_0(...arguments);
+  }
+  cResult[5] = onChangeIconPress;
+  cResult[6] = onUpload;
+  cResult[7] = handleChangeIcon;
+  tmp10 = handleChangeIcon;
+}) : ((disabled) => {
   let PressableOpacity;
   let closure_2;
   let fnResult;
@@ -58,7 +314,7 @@ export default function IconUploader(disabled) {
     str = "avatar";
   }
   ({ name, icon, onUpload: require, iconStyle, onChangeIconPress: importDefault } = disabled);
-  let obj = function _handleChangeIcon() {
+  let obj = function _handleChangeIcon2() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let c2;
       let closure_1;
@@ -72,7 +328,7 @@ export default function IconUploader(disabled) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -95,7 +351,7 @@ export default function IconUploader(disabled) {
               if (!ref.current) {
                 ref.current = true;
                 const obj5 = { size };
-                const obj2 = tmp4(ref[6]);
+                const obj2 = tmp4(ref[8]);
                 ref = 1;
                 c3 = 1;
                 const obj6 = { value: obj2.openImagePicker(obj5), done: false };
@@ -119,7 +375,7 @@ export default function IconUploader(disabled) {
             closure_129_2.current = false;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp21) {
           c3 = 3;
           throw tmp21;
@@ -179,4 +435,7 @@ export default function IconUploader(disabled) {
     tmp22 = closure_8(closure_5, obj6);
   }
   return tmp22;
-};
+});
+const result = size.fileFinishedImporting("components_native/common/IconUploader.tsx");
+
+export default tmp4;

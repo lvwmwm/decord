@@ -1,11 +1,11 @@
-// Module ID: 8585
-// Function ID: 8586
+// Module ID: 8582
+// Function ID: 8583
 // Name: FederatedSocialUtils
-// Dependencies: [1074, 2]
+// Dependencies: [1086, 2]
 // Exports: getExampleHandle, validateHandle
 
-// Module 8585 (FederatedSocialUtils)
-import Constants from "Constants" /* 1074 */;
+// Module 8582 (FederatedSocialUtils)
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;

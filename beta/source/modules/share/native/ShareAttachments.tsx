@@ -1,22 +1,22 @@
-// Module ID: 13448
-// Function ID: 13449
+// Module ID: 13450
+// Function ID: 13451
 // Name: ShareAttachments
-// Dependencies: [19, 17, 21, 4566, 5293, 1177, 4836, 576, 4837, 4683, 1115, 9657, 5450, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4570, 5292, 1189, 4837, 588, 558, 576, 4838, 4685, 1127, 10797, 5451, 2]
 
-// Module 13448 (ShareAttachments)
+// Module 13450 (ShareAttachments)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import ColorUtils from "ColorUtils" /* 4683 */;
-import timing from "timing" /* 4837 */;
-import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 5450 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 9657 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import ColorUtils from "ColorUtils" /* 4685 */;
+import timing from "timing" /* 4838 */;
+import LinearGradientDefault from "LinearGradient" /* 5292 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 5451 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 10797 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -45,12 +45,347 @@ let closure_9 = createStyles(obj2);
 const __initData = { code: "function ShareAttachmentsTsx1(){const{withTiming,contentOffset,GRADIENT_EASING_CONFIG}=this.__closure;return{opacity:withTiming(contentOffset.get()<=0?0:1,GRADIENT_EASING_CONFIG)};}" };
 const __initData2 = { code: "function ShareAttachmentsTsx2(){const{withTiming,contentOffset,layoutWidth,contentWidth,GRADIENT_EASING_CONFIG}=this.__closure;return{opacity:withTiming(contentOffset.get()+layoutWidth.get()>=contentWidth.get()?0:1,GRADIENT_EASING_CONFIG)};}" };
 const __initData3 = { code: "function ShareAttachmentsTsx3(event){const{contentOffset,contentWidth,layoutWidth}=this.__closure;contentOffset.set(event.contentOffset.x);contentWidth.set(event.contentSize.width);layoutWidth.set(event.layoutMeasurement.width);}" };
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/share/native/ShareAttachments.tsx");
-
-export default function ShareAttachments(arg0) {
+const __initData4 = { code: "function ShareAttachmentsTsx4(){const{withTiming,contentOffset,GRADIENT_EASING_CONFIG}=this.__closure;return{opacity:withTiming(contentOffset.get()<=0?0:1,GRADIENT_EASING_CONFIG)};}" };
+const __initData5 = { code: "function ShareAttachmentsTsx5(){const{withTiming,contentOffset,layoutWidth,contentWidth,GRADIENT_EASING_CONFIG}=this.__closure;return{opacity:withTiming(contentOffset.get()+layoutWidth.get()>=contentWidth.get()?0:1,GRADIENT_EASING_CONFIG)};}" };
+const __initData6 = { code: "function ShareAttachmentsTsx6(event){const{contentOffset,contentWidth,layoutWidth}=this.__closure;contentOffset.set(event.contentOffset.x);contentWidth.set(event.contentSize.width);layoutWidth.set(event.layoutMeasurement.width);}" };
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let attachmentPreview;
+  let attachments;
+  let isRevamp;
+  let sharedValue1;
+  let tmp12;
+  let tmp = _require;
+  GRADIENT_EASING_CONFIG = require("react");
+  const cResult = GRADIENT_EASING_CONFIG.c(48);
+  ({ attachments, isRevamp } = arg0);
+  const tmp5 = closure_9();
+  _require = tmp5;
+  const tmpResult = tmp(sharedValue1[3]);
+  const sharedValue = tmpResult.useSharedValue(0);
+  const tmpResult6 = tmp(sharedValue1[3]);
+  sharedValue1 = tmpResult6.useSharedValue(0);
+  const tmpResult7 = tmp(sharedValue1[3]);
+  const sharedValue2 = tmpResult7.useSharedValue(0);
+  const fn = function n() {
+    let obj;
+    const withTiming = timing.withTiming;
+    let num = 1;
+    timing;
+    if (sharedValue.get() <= 0) {
+      num = 0;
+    }
+    obj = { opacity: withTiming(num, obj) };
+    return obj;
+  };
+  const tmpResult8 = tmp(sharedValue1[3]);
+  fn.__closure = { withTiming: tmp(sharedValue1[10]).withTiming, contentOffset: sharedValue, GRADIENT_EASING_CONFIG };
+  fn.__workletHash = 3302668154466;
+  fn.__initData = __initData;
+  ({ withTiming: tmp(sharedValue1[10]).withTiming, contentOffset: sharedValue, GRADIENT_EASING_CONFIG });
+  const animatedStyle = tmpResult8.useAnimatedStyle(fn);
+  const fn2 = function y() {
+    let obj;
+    const withTiming = timing.withTiming;
+    timing;
+    const value = sharedValue.get();
+    const sum = value + sharedValue2.get();
+    let num = 1;
+    if (sum >= sharedValue1.get()) {
+      num = 0;
+    }
+    obj = { opacity: withTiming(num, obj) };
+    return obj;
+  };
+  const tmpResult9 = tmp(sharedValue1[3]);
+  let obj3 = { withTiming: tmp(tmp2[10]).withTiming, contentOffset: sharedValue, layoutWidth: sharedValue2, contentWidth: sharedValue1, GRADIENT_EASING_CONFIG };
+  fn2.__closure = obj3;
+  fn2.__workletHash = 13996707009656;
+  fn2.__initData = __initData2;
+  const animatedStyle1 = tmpResult9.useAnimatedStyle(fn2);
+  const fn3 = function w(contentOffset) {
+    const result = sharedValue.set(contentOffset.contentOffset.x);
+    const result1 = sharedValue1.set(contentOffset.contentSize.width);
+    const result2 = sharedValue2.set(contentOffset.layoutMeasurement.width);
+  };
+  fn3.__closure = { contentOffset: sharedValue, contentWidth: sharedValue1, layoutWidth: sharedValue2 };
+  fn3.__workletHash = 12660577105859;
+  fn3.__initData = __initData3;
+  const tmpResult10 = tmp(sharedValue1[3]);
+  const animatedScrollHandler = tmpResult10.useAnimatedScrollHandler(fn3);
+  if (cResult[0] !== sharedValue2) {
+    const fn4 = function v(nativeEvent) {
+      const result = sharedValue2.set(nativeEvent.nativeEvent.layout.width);
+    };
+    cResult[0] = sharedValue2;
+    let num = 1;
+    cResult[1] = fn4;
+    tmp12 = fn4;
+  } else {
+    tmp12 = cResult[1];
+  }
+  if (cResult[2] !== sharedValue1) {
+    class R {
+      constructor(arg0) {
+        const result = sharedValue1.set(arg0);
+      }
+    }
+    cResult[2] = sharedValue1;
+    cResult[3] = R;
+  } else {
+    class R {
+      constructor(arg0) {
+        const result = sharedValue1.set(arg0);
+      }
+    }
+  }
+  if (cResult[4] !== tmp5.gradient.color) {
+    class R {
+      constructor(arg0) {
+        const result = sharedValue1.set(arg0);
+      }
+    }
+    cResult[4] = tmp5.gradient.color;
+    cResult[5] = obj10.hexWithOpacity(tmp5.gradient.color, 0);
+    const hexWithOpacityResult = obj10.hexWithOpacity(tmp5.gradient.color, 0);
+  } else {
+    class R {
+      constructor(arg0) {
+        const result = sharedValue1.set(arg0);
+      }
+    }
+  }
+  if (0 === attachments.length) {
+    class R {
+      constructor(arg0) {
+        const result = sharedValue1.set(arg0);
+      }
+    }
+    return null;
+  } else {
+    let tmp18;
+    let tmp17;
+    class R {
+      constructor(arg0) {
+        const result = sharedValue1.set(arg0);
+      }
+    }
+    if (undefined !== isRevamp && isRevamp) {
+      class R {
+        constructor(arg0) {
+          const result = sharedValue1.set(arg0);
+        }
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      class R {
+        constructor(arg0) {
+          const result = sharedValue1.set(arg0);
+        }
+      }
+      const point = { x: 1, y: 0 };
+      cResult[6] = tmp19;
+      cResult[7] = point;
+      tmp18 = point;
+      tmp17 = tmp19;
+    } else {
+      class R {
+        constructor(arg0) {
+          const result = sharedValue1.set(arg0);
+        }
+      }
+      tmp18 = cResult[7];
+    }
+    if (cResult[8] === tmp5.gradient.color) {
+      class R {
+        constructor(arg0) {
+          const result = sharedValue1.set(arg0);
+        }
+      }
+      if (cResult[11] === animatedStyle) {
+        class R {
+          constructor(arg0) {
+            const result = sharedValue1.set(arg0);
+          }
+        }
+        if (cResult[14] === tmp20) {
+          let tmp27;
+          let tmp26;
+          class R {
+            constructor(arg0) {
+              const result = sharedValue1.set(arg0);
+            }
+          }
+          const _Symbol2 = Symbol;
+          if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+            class R {
+              constructor(arg0) {
+                const result = sharedValue1.set(arg0);
+              }
+            }
+            const point1 = { x: 1, y: 0 };
+            cResult[17] = tmp28;
+            cResult[18] = point1;
+            tmp27 = point1;
+            tmp26 = tmp28;
+          } else {
+            class R {
+              constructor(arg0) {
+                const result = sharedValue1.set(arg0);
+              }
+            }
+            tmp27 = cResult[18];
+          }
+          if (cResult[19] === tmp5.gradient.color) {
+            class R {
+              constructor(arg0) {
+                const result = sharedValue1.set(arg0);
+              }
+            }
+            if (cResult[22] === animatedStyle1) {
+              class R {
+                constructor(arg0) {
+                  const result = sharedValue1.set(arg0);
+                }
+              }
+              if (cResult[25] === tmp29) {
+                class R {
+                  constructor(arg0) {
+                    const result = sharedValue1.set(arg0);
+                  }
+                }
+                if (undefined !== isRevamp && isRevamp) {
+                  class R {
+                    constructor(arg0) {
+                      const result = sharedValue1.set(arg0);
+                    }
+                  }
+                }
+                if (cResult[28] === tmp5.attachmentPreviewContentContainer) {
+                  let tmp37;
+                  let tmp40;
+                  class R {
+                    constructor(arg0) {
+                      const result = sharedValue1.set(arg0);
+                    }
+                  }
+                  const _Symbol3 = Symbol;
+                  if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
+                    class R {
+                      constructor(arg0) {
+                        const result = sharedValue1.set(arg0);
+                      }
+                    }
+                    const stringResult = obj15.string(tmp(sharedValue1[12]).t.RhtzFe);
+                    cResult[31] = stringResult;
+                    tmp37 = stringResult;
+                  } else {
+                    class R {
+                      constructor(arg0) {
+                        const result = sharedValue1.set(arg0);
+                      }
+                    }
+                  }
+                  if (cResult[32] === attachments) {
+                    class R {
+                      constructor(arg0) {
+                        const result = sharedValue1.set(arg0);
+                      }
+                    }
+                    if (cResult[37] === tmp13) {
+                      class R {
+                        constructor(arg0) {
+                          const result = sharedValue1.set(arg0);
+                        }
+                      }
+                    }
+                    let obj4 = { contentContainerStyle: tmp36, horizontal: true, onScroll: animatedScrollHandler, onLayout: tmp12, onContentSizeChange: tmp13, scrollEventThrottle: 16, showsHorizontalScrollIndicator: false, accessibilityRole: "list", accessibilityLabel: tmp37, children: tmp39 };
+                    cResult[37] = tmp13;
+                    cResult[38] = tmp12;
+                    cResult[39] = animatedScrollHandler;
+                    cResult[40] = tmp36;
+                    cResult[41] = tmp39;
+                    cResult[42] = closure_5(sharedValue(sharedValue1[3]).ScrollView, obj4);
+                    const tmp45 = closure_5(sharedValue(sharedValue1[3]).ScrollView, obj4);
+                  }
+                  if (cResult[35] !== tmp5.attachmentPreview) {
+                    class Q {
+                      constructor(uri, arg1) {
+                        let obj3;
+                        let obj4;
+                        let tmp;
+                        const obj = { style: attachmentPreview.attachmentPreview, children: hasOwnProperty(tmp, size) };
+                        size = { uri: uri.uri, width: 60, height: 60, isImage: obj3.isImage(uri.uri, uri.mimeType), isVideo: obj4.isVideo(uri.uri, uri.mimeType), fileName: uri.name, showPlayOnVideoPreview: true };
+                        tmp = AttachmentPreviewDefault;
+                        obj3 = utils_UploadUtils;
+                        obj4 = utils_UploadUtils;
+                        return hasOwnProperty(View, obj, arg1);
+                      }
+                    }
+                    cResult[35] = tmp5.attachmentPreview;
+                    cResult[36] = Q;
+                    tmp40 = Q;
+                  } else {
+                    class Q {
+                      constructor(uri, arg1) {
+                        let obj3;
+                        let obj4;
+                        let tmp;
+                        const obj = { style: attachmentPreview.attachmentPreview, children: hasOwnProperty(tmp, size) };
+                        size = { uri: uri.uri, width: 60, height: 60, isImage: obj3.isImage(uri.uri, uri.mimeType), isVideo: obj4.isVideo(uri.uri, uri.mimeType), fileName: uri.name, showPlayOnVideoPreview: true };
+                        tmp = AttachmentPreviewDefault;
+                        obj3 = utils_UploadUtils;
+                        obj4 = utils_UploadUtils;
+                        return hasOwnProperty(View, obj, arg1);
+                      }
+                    }
+                  }
+                  const mapped = attachments.map(tmp40);
+                  cResult[32] = attachments;
+                  cResult[33] = tmp5.attachmentPreview;
+                  cResult[34] = mapped;
+                }
+                const items = [tmp5.attachmentPreviewContentContainer, undefined];
+                cResult[28] = tmp5.attachmentPreviewContentContainer;
+                cResult[29] = undefined;
+                cResult[30] = items;
+              }
+              const obj5 = { start: tmp26, end: tmp27, colors: tmp29, style: tmp30, pointerEvents: "box-none" };
+              cResult[25] = tmp29;
+              cResult[26] = tmp30;
+              cResult[27] = closure_5(LinearGradient, obj5);
+              const tmp34 = closure_5(LinearGradient, obj5);
+            }
+            const items1 = [tmp5.rightGradient, animatedStyle1];
+            cResult[22] = animatedStyle1;
+            cResult[23] = tmp5.rightGradient;
+            cResult[24] = items1;
+          }
+          const items2 = [tmp14, tmp5.gradient.color];
+          cResult[19] = tmp5.gradient.color;
+          cResult[20] = tmp14;
+          cResult[21] = items2;
+        }
+        const obj6 = { start: tmp17, end: tmp18, colors: tmp20, style: tmp21, pointerEvents: "box-none" };
+        cResult[14] = tmp20;
+        cResult[15] = tmp21;
+        cResult[16] = closure_5(LinearGradient, obj6);
+        const tmp25 = closure_5(LinearGradient, obj6);
+      }
+      const items3 = [tmp5.leftGradient, animatedStyle];
+      cResult[11] = animatedStyle;
+      cResult[12] = tmp5.leftGradient;
+      cResult[13] = items3;
+    }
+    const items4 = [tmp5.gradient.color, tmp14];
+    cResult[8] = tmp5.gradient.color;
+    cResult[9] = tmp14;
+    cResult[10] = items4;
+  }
+}) : ((arg0) => {
   let attachments;
   let closure_0;
+  let intl;
   let isRevamp;
   let items3;
   let items4;
@@ -71,7 +406,7 @@ export default function ShareAttachments(arg0) {
   let obj3 = require("ReanimatedRexport");
   const sharedValue2 = obj3.useSharedValue(0);
   let obj4 = require("ReanimatedRexport");
-  const fn = function y() {
+  const fn = function _() {
     let obj;
     const withTiming = timing.withTiming;
     let num = 1;
@@ -83,43 +418,43 @@ export default function ShareAttachments(arg0) {
     return obj;
   };
   fn.__closure = { withTiming: require("timing").withTiming, contentOffset: sharedValue, GRADIENT_EASING_CONFIG };
-  fn.__workletHash = 3302668154466;
-  fn.__initData = __initData;
+  fn.__workletHash = 3355545292519;
+  fn.__initData = __initData4;
   ({ withTiming: require("timing").withTiming, contentOffset: sharedValue, GRADIENT_EASING_CONFIG });
   const animatedStyle = obj4.useAnimatedStyle(fn);
+  const fn2 = function f() {
+    let obj;
+    const withTiming = timing.withTiming;
+    timing;
+    const value = sharedValue.get();
+    const sum = value + sharedValue2.get();
+    let num = 1;
+    if (sum >= sharedValue1.get()) {
+      num = 0;
+    }
+    obj = { opacity: withTiming(num, obj) };
+    return obj;
+  };
   const obj6 = require("ReanimatedRexport");
+  fn2.__closure = { withTiming: require("timing").withTiming, contentOffset: sharedValue, layoutWidth: sharedValue2, contentWidth: sharedValue1, GRADIENT_EASING_CONFIG };
+  fn2.__workletHash = 15314989935487;
+  fn2.__initData = __initData5;
+  ({ withTiming: require("timing").withTiming, contentOffset: sharedValue, layoutWidth: sharedValue2, contentWidth: sharedValue1, GRADIENT_EASING_CONFIG });
+  const animatedStyle1 = obj6.useAnimatedStyle(fn2);
+  const obj8 = require("ReanimatedRexport");
   class S {
-    constructor() {
-      let obj;
-      const withTiming = timing.withTiming;
-      timing;
-      const value = sharedValue.get();
-      const sum = value + sharedValue2.get();
-      let num = 1;
-      if (sum >= sharedValue1.get()) {
-        num = 0;
-      }
-      obj = { opacity: withTiming(num, obj) };
-      return obj;
+    constructor(contentOffset) {
+      const result = sharedValue.set(contentOffset.contentOffset.x);
+      const result1 = sharedValue1.set(contentOffset.contentSize.width);
+      const result2 = sharedValue2.set(contentOffset.layoutMeasurement.width);
     }
   }
-  S.__closure = { withTiming: require("timing").withTiming, contentOffset: sharedValue, layoutWidth: sharedValue2, contentWidth: sharedValue1, GRADIENT_EASING_CONFIG };
-  S.__workletHash = 13996707009656;
-  S.__initData = __initData2;
-  ({ withTiming: require("timing").withTiming, contentOffset: sharedValue, layoutWidth: sharedValue2, contentWidth: sharedValue1, GRADIENT_EASING_CONFIG });
-  const animatedStyle1 = obj6.useAnimatedStyle(S);
-  const fn2 = function v(contentOffset) {
-    const result = sharedValue.set(contentOffset.contentOffset.x);
-    const result1 = sharedValue1.set(contentOffset.contentSize.width);
-    const result2 = sharedValue2.set(contentOffset.layoutMeasurement.width);
-  };
-  fn2.__closure = { contentOffset: sharedValue, contentWidth: sharedValue1, layoutWidth: sharedValue2 };
-  fn2.__workletHash = 12660577105859;
-  fn2.__initData = __initData3;
+  S.__closure = { contentOffset: sharedValue, contentWidth: sharedValue1, layoutWidth: sharedValue2 };
+  S.__workletHash = 1501520307014;
+  S.__initData = __initData6;
   const items = [sharedValue2];
   const items1 = [sharedValue1];
-  const obj8 = require("ReanimatedRexport");
-  const animatedScrollHandler = obj8.useAnimatedScrollHandler(fn2);
+  const animatedScrollHandler = obj8.useAnimatedScrollHandler(S);
   const callback = sharedValue2.useCallback((nativeEvent) => {
     const result = sharedValue2.set(nativeEvent.nativeEvent.layout.width);
   }, items);
@@ -131,11 +466,11 @@ export default function ShareAttachments(arg0) {
     const obj = ColorUtils;
     return obj.hexWithOpacity(closure_0.gradient.color, 0);
   }, items2);
-  let tmp20Result = null;
+  let tmp19Result = null;
   if (0 !== attachments.length) {
     let containerRevamp;
-    const tmp20 = closure_6;
-    const tmp21 = View;
+    const tmp19 = closure_6;
+    const tmp20 = View;
     if (isRevamp) {
       containerRevamp = tmp.containerRevamp;
     }
@@ -155,41 +490,36 @@ export default function ShareAttachments(arg0) {
     if (isRevamp) {
       prop = tmp.attachmentPreviewContentContainerRevamp;
     }
-    class S {
-      constructor() {
-        let obj;
-        const withTiming = timing.withTiming;
-        timing;
-        const value = sharedValue.get();
-        const sum = value + sharedValue2.get();
-        let num = 1;
-        if (sum >= sharedValue1.get()) {
-          num = 0;
-        }
-        obj = { opacity: withTiming(num, obj) };
-        return obj;
-      }
-    }
     items8[1] = prop;
-    tmp19[0] = items8;
-    tmp19[2] = animatedScrollHandler;
-    tmp19[3] = callback;
-    tmp19[4] = callback1;
-    const intl = tmp2(tmp3[10]).intl;
-    tmp19[8] = intl.string(require("intl").t.RhtzFe);
-    tmp19[9] = attachments.map((uri, index) => {
-      let obj3;
-      let obj4;
-      let tmp;
-      const obj = { style: closure_0.attachmentPreview, children: hasOwnProperty(tmp, size) };
-      size = { uri: uri.uri, width: 60, height: 60, isImage: obj3.isImage(uri.uri, uri.mimeType), isVideo: obj4.isVideo(uri.uri, uri.mimeType), fileName: uri.name, showPlayOnVideoPreview: true };
-      tmp = AttachmentPreviewDefault;
-      obj3 = utils_UploadUtils;
-      obj4 = utils_UploadUtils;
-      return hasOwnProperty(View, obj, index);
-    });
-    items5[2] = tmp15(ScrollView, tmp19);
-    tmp20Result = tmp20(tmp21, obj9);
+    const obj12 = {
+      contentContainerStyle: items8,
+      horizontal: true,
+      onScroll: animatedScrollHandler,
+      onLayout: callback,
+      onContentSizeChange: callback1,
+      scrollEventThrottle: 16,
+      showsHorizontalScrollIndicator: false,
+      accessibilityRole: "list",
+      accessibilityLabel: intl.string(require("intl").t.RhtzFe),
+      children: attachments.map((uri, index) => {
+          let obj3;
+          let obj4;
+          let tmp;
+          const obj = { style: closure_0.attachmentPreview, children: hasOwnProperty(tmp, size) };
+          size = { uri: uri.uri, width: 60, height: 60, isImage: obj3.isImage(uri.uri, uri.mimeType), isVideo: obj4.isVideo(uri.uri, uri.mimeType), fileName: uri.name, showPlayOnVideoPreview: true };
+          tmp = AttachmentPreviewDefault;
+          obj3 = utils_UploadUtils;
+          obj4 = utils_UploadUtils;
+          return hasOwnProperty(View, obj, index);
+        })
+    };
+    intl = tmp2(tmp3[12]).intl;
+    items5[2] = tmp15(ScrollView, obj12);
+    tmp19Result = tmp19(tmp20, obj9);
   }
-  return tmp20Result;
-};
+  return tmp19Result;
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/share/native/ShareAttachments.tsx");
+
+export default tmp4;

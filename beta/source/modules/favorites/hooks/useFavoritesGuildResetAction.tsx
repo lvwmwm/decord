@@ -1,25 +1,76 @@
-// Module ID: 15771
-// Function ID: 15772
+// Module ID: 15770
+// Function ID: 15771
 // Name: useFavoritesGuildResetAction
-// Dependencies: [19, 4655, 1074, 2021, 9685, 2070, 1101, 9684, 1115, 3361, 2]
-// Exports: default
+// Dependencies: [19, 4657, 1086, 558, 576, 2027, 9807, 2076, 1113, 9806, 1127, 3364, 2]
 
-// Module 15771 (useFavoritesGuildResetAction)
-import Constants from "Constants" /* 1074 */;
-import router_utils from "router_utils" /* 1101 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import FavoritesUtils from "FavoritesUtils" /* 2070 */;
-import _modDef3361 from "module_3361" /* 3361 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 9684 */;
-import FavoritesHooks from "FavoritesHooks" /* 9685 */;
+// Module 15770 (useFavoritesGuildResetAction)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import router_utils from "router_utils" /* 1113 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import FavoritesUtils from "FavoritesUtils" /* 2076 */;
+import _modDef3364 from "module_3364" /* 3364 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 9806 */;
+import FavoritesHooks from "FavoritesHooks" /* 9807 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
-const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildResetAction.tsx");
-
-export default function useFavoritesGuildResetAction() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let guildId;
+  let tmp11;
+  let tmp6;
+  let tmp7;
+  let obj = react2;
+  const cResult = obj.c(5);
+  const DeveloperMode = UserSettings.DeveloperMode;
+  let setting = DeveloperMode.useSetting();
+  const obj2 = FavoritesHooks;
+  const hasAccess = obj2.useFavoritesAccess().hasAccess;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s() {
+      const obj = FavoritesUtils;
+      if (obj.isFavoritesGuildId(guildId.getGuildId())) {
+        const tmpResult = router_utils;
+        tmpResult.transitionTo(constants.ME);
+      }
+      const tmpResult2 = FavoritesActionCreators;
+      tmpResult2.resetFavoritesGuild();
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (setting) {
+    setting = hasAccess;
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(_modDef3364.YkET6R);
+    const intl2 = tmp(1127).intl;
+    const stringResult1 = intl2.string(_modDef3364.ZzcwNk);
+    cResult[1] = stringResult;
+    cResult[2] = stringResult1;
+    tmp7 = stringResult1;
+    tmp6 = stringResult;
+  } else {
+    tmp6 = cResult[1];
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] !== setting) {
+    const obj3 = { isAvailable: setting, label: tmp6, subLabel: tmp7, perform: first };
+    cResult[3] = setting;
+    cResult[4] = obj3;
+    tmp11 = obj3;
+  } else {
+    tmp11 = cResult[4];
+  }
+  return tmp11;
+}) : (() => {
   let guildId;
   let intl;
   let intl2;
@@ -39,8 +90,11 @@ export default function useFavoritesGuildResetAction() {
   if (setting) {
     setting = hasAccess;
   }
-  const obj2 = { isAvailable: setting, label: intl.string(_modDef3361.YkET6R), subLabel: intl2.string(_modDef3361.ZzcwNk), perform: callback };
-  intl = tmp(1115).intl;
-  intl2 = tmp(1115).intl;
+  const obj2 = { isAvailable: setting, label: intl.string(_modDef3364.YkET6R), subLabel: intl2.string(_modDef3364.ZzcwNk), perform: callback };
+  intl = tmp(1127).intl;
+  intl2 = tmp(1127).intl;
   return obj2;
-};
+});
+const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildResetAction.tsx");
+
+export default tmp2;

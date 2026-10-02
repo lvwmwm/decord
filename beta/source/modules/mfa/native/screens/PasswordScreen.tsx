@@ -1,27 +1,253 @@
-// Module ID: 15238
-// Function ID: 15239
+// Module ID: 15226
+// Function ID: 15227
 // Name: PasswordScreen
-// Dependencies: [5, 32, 19, 17, 21, 6363, 15230, 15229, 1115, 6024, 6387, 6389, 15232, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17, 21, 558, 576, 6360, 15219, 1127, 6384, 6386, 6021, 15217, 15218, 2]
 
-// Module 15238 (PasswordScreen)
+// Module 15226 (PasswordScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6360 */;
+import MfaScreenUtilsDefault from "MfaScreenUtils" /* 15219 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c6, closure_1, closure_3, importDefault;
+let c6, importDefault;
 
+let tmp;
+const intl5 = tmp(1127);
+const TextInput_TextInput = tmp(6021);
+const EyeSlashIcon = tmp(6384);
+const EyeIcon2 = tmp(6386);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/mfa/native/screens/PasswordScreen.tsx");
-
-export default function PasswordScreen(finish) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_129_1;
+  let closure_129_3;
+  let closure_129_4;
+  let closure_129_5;
+  let finish;
+  let first;
+  let mfaChallenge;
+  let tmp10;
+  let tmp12;
+  let tmp14;
+  let tmp16;
+  let tmp7;
+  const tmp = require;
+  let obj = react2;
+  const cResult = obj.c(33);
+  ({ mfaChallenge, finish } = arg0);
+  const tmp4 = useWideAuthViewDefault();
+  let obj2 = MfaScreenUtilsDefault;
+  const screenStyles = obj2.useScreenStyles(tmp4);
+  [tmp7, closure_129_1] = _slicedToArray(react.useState(null), 2);
+  const tmp6 = _slicedToArray(react.useState(null), 2);
+  [first, tmp10] = react.useState("");
+  [tmp12, closure_129_3] = _slicedToArray(react.useState(false), 2);
+  const tmp11 = _slicedToArray(react.useState(false), 2);
+  [tmp14, closure_129_4] = _slicedToArray(react.useState(false), 2);
+  const tmp13 = _slicedToArray(react.useState(false), 2);
+  [tmp16, closure_129_5] = _slicedToArray(react.useState(false), 2);
+  const tmp15 = _slicedToArray(react.useState(false), 2);
+  if (cResult[0] === finish) {
+    let tmp17;
+    let tmp21;
+    let EyeIcon;
+    let tmp25;
+    let tmp28;
+    let tmp27;
+    if (cResult[1] === first) {
+      tmp17 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = intl5.intl;
+      const stringResult = intl.string(intl5.t.Rw1XuM);
+      cResult[3] = stringResult;
+    }
+    const _Symbol2 = Symbol;
+    const inputContainer = screenStyles.inputContainer;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl2 = intl5.intl;
+      const stringResult1 = intl2.string(intl5.t["CIGa+7"]);
+      cResult[4] = stringResult1;
+      tmp21 = stringResult1;
+    } else {
+      tmp21 = cResult[4];
+    }
+    if (tmp16) {
+      EyeIcon = EyeSlashIcon.EyeSlashIcon;
+    } else {
+      EyeIcon = EyeIcon2.EyeIcon;
+    }
+    if (cResult[5] !== tmp16) {
+      let stringResult2;
+      const intl3 = intl5.intl;
+      const string = intl3.string;
+      const t = intl5.t;
+      if (tmp16) {
+        stringResult2 = string(t.Nusip4);
+      } else {
+        stringResult2 = string(t.nFzpM5);
+      }
+      cResult[5] = tmp16;
+      cResult[6] = stringResult2;
+      tmp25 = stringResult2;
+    } else {
+      tmp25 = cResult[6];
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      class D {
+        constructor() {
+          return closure_5((arg0) => !arg0);
+        }
+      }
+      const rect = { top: 8, bottom: 8 };
+      cResult[7] = rect;
+      cResult[8] = D;
+      tmp28 = D;
+      tmp27 = rect;
+    } else {
+      class D {
+        constructor() {
+          return closure_5((arg0) => !arg0);
+        }
+      }
+      tmp28 = cResult[8];
+    }
+    if (cResult[9] !== tmp25) {
+      class D {
+        constructor() {
+          return closure_5((arg0) => !arg0);
+        }
+      }
+      tmp30[0] = tmp25;
+      tmp30[1] = tmp28;
+      tmp30[2] = tmp27;
+      cResult[9] = tmp25;
+      cResult[10] = tmp30;
+    } else {
+      class D {
+        constructor() {
+          return closure_5((arg0) => !arg0);
+        }
+      }
+    }
+    if (cResult[11] === tmp7) {
+      class D {
+        constructor() {
+          return closure_5((arg0) => !arg0);
+        }
+      }
+    }
+    const tmp33 = jsx(TextInput_TextInput.TextInput, { autoFocus: true, required: true, textContentType: "password", label: tmp21, autoComplete: "current-password", autoCapitalize: "none", errorMessage: tmp7, returnKeyType: "done", onChange: tmp10, onSubmitEditing: tmp17, disabled: tmp12 || tmp14, secureTextEntry: !tmp16, trailingIcon: EyeIcon, trailingPressableProps: tmp29 });
+    cResult[11] = tmp7;
+    cResult[12] = tmp17;
+    cResult[13] = tmp29;
+    cResult[14] = tmp12 || tmp14;
+    cResult[15] = !tmp16;
+    cResult[16] = EyeIcon;
+    cResult[17] = tmp33;
+  }
+  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+    let closure_3;
+    let v0;
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c4;
+      try {
+        let closure_1;
+        let message2;
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            const data = tmp;
+            closure_1 = tmp4;
+            message2 = undefined;
+            closure_1(null);
+            tmp28(true);
+            c4 = 1;
+            const obj4 = { mfaType: "password", data };
+            c5 = 2;
+            c6 = 1;
+            const obj5 = { value: message2(obj4), done: false };
+            return obj5;
+          }
+        } else {
+          if (1 === c5) {
+            c4 = 0;
+            message2 = tmp28;
+            const body = message2.body;
+            let message;
+            const tmp12 = closure_1;
+            if (body != null) {
+              message = body.message;
+            }
+            message2 = message;
+            if (message == null) {
+              message2 = message2.message;
+            }
+            tmp12(message2);
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            c4(true);
+            c4 = 0;
+          }
+          tmp28(false);
+          c6 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp28) {
+        if (0 === c4) {
+          c6 = 3;
+          throw tmp28;
+        } else {
+          c5 = 1;
+        }
+      }
+    }
+  });
+  function sendPassword() {
+    return closure_0(...arguments);
+  }
+  cResult[0] = finish;
+  cResult[1] = first;
+  cResult[2] = sendPassword;
+  tmp17 = sendPassword;
+}) : ((finish) => {
   let EyeIcon;
   let TextInput;
   let _undefined;
@@ -54,7 +280,7 @@ export default function PasswordScreen(finish) {
   function sendPassword() {
     return obj(...arguments);
   }
-  let obj = function _sendPassword() {
+  let obj = function _sendPassword2() {
     let data;
     obj = _asyncToGenerator(async (arg0, value) => {
       if (c6 === 2) {
@@ -67,7 +293,7 @@ export default function PasswordScreen(finish) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -121,7 +347,7 @@ export default function PasswordScreen(finish) {
             }
             closure_130_3(false);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           closure_3 = tmp28;
@@ -149,15 +375,15 @@ export default function PasswordScreen(finish) {
   const tmp11 = _slicedToArray(react.useState(false), 2);
   [tmp14, c5] = _slicedToArray(react.useState(false), 2);
   const tmp13 = _slicedToArray(react.useState(false), 2);
-  let obj2 = { headerText: intl.string(finish(first1[8]).t.Rw1XuM), input: tmp15(tmp18, obj3), submit: tmp15(tmpResult, obj5), screenProps: { mfaChallenge, finish }, mfaMethod: "password" };
+  let obj2 = { headerText: intl.string(finish(first1[9]).t.Rw1XuM), input: tmp15(tmp18, obj3), submit: tmp15(tmpResult, obj5), screenProps: { mfaChallenge, finish }, mfaMethod: "password" };
   const tmp16 = require("MfaOptionScreen");
-  intl = finish(first1[8]).intl;
+  intl = finish(first1[9]).intl;
   obj3 = { style: screenStyles.inputContainer, children: tmp15(TextInput, obj4) };
   obj4 = {
     autoFocus: true,
     required: true,
     textContentType: "password",
-    label: intl2.string(finish(first1[8]).t["CIGa+7"]),
+    label: intl2.string(finish(first1[9]).t["CIGa+7"]),
     autoComplete: "current-password",
     autoCapitalize: "none",
     errorMessage: first,
@@ -175,28 +401,31 @@ export default function PasswordScreen(finish) {
       hitSlop: { top: 8, bottom: 8 }
     }
   };
-  TextInput = finish(first1[9]).TextInput;
-  intl2 = finish(first1[8]).intl;
+  TextInput = finish(first1[12]).TextInput;
+  intl2 = finish(first1[9]).intl;
   tmp18 = obj;
   if (tmp14) {
     EyeIcon = tmp17(tmp2[10]).EyeSlashIcon;
   } else {
     EyeIcon = tmp17(tmp2[11]).EyeIcon;
   }
-  const intl3 = tmp17(tmp2[8]).intl;
+  const intl3 = tmp17(tmp2[9]).intl;
   const string = intl3.string;
-  const t = tmp17(tmp2[8]).t;
+  const t = tmp17(tmp2[9]).t;
   if (tmp14) {
     stringResult = string(t.Nusip4);
   } else {
     stringResult = string(t.nFzpM5);
   }
-  obj5 = { text: intl4.string(tmp17(tmp2[8]).t.geKm7t), disabled: tmp21, loading: tmp10, onPress: sendPassword };
-  tmpResult = tmp(first1[12]);
-  intl4 = tmp17(tmp2[8]).intl;
+  obj5 = { text: intl4.string(tmp17(tmp2[9]).t.geKm7t), disabled: tmp21, loading: tmp10, onPress: sendPassword };
+  tmpResult = tmp(first1[13]);
+  intl4 = tmp17(tmp2[9]).intl;
   tmp21 = tmp10 || tmp12;
   if (!tmp21) {
     tmp21 = 0 === first1.length;
   }
   return jsx(tmp16, obj2);
-};
+});
+const result = size.fileFinishedImporting("modules/mfa/native/screens/PasswordScreen.tsx");
+
+export default tmp2;

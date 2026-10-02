@@ -1,12 +1,12 @@
-// Module ID: 16349
-// Function ID: 16350
+// Module ID: 16351
+// Function ID: 16352
 // Name: VibegrationsTimelineTree
-// Dependencies: [32, 3715, 1115, 2]
+// Dependencies: [32, 3718, 1127, 2]
 // Exports: currentStep, describeNode, describeTaskStatus, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 16349 (VibegrationsTimelineTree)
-import intl6 from "intl" /* 1115 */;
-import _modDef3715 from "module_3715" /* 3715 */;
+// Module 16351 (VibegrationsTimelineTree)
+import intl6 from "intl" /* 1127 */;
+import _modDef3718 from "module_3718" /* 3718 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -453,7 +453,7 @@ function isTurnWorkFrame(task_id) {
   }
   return tmp;
 }
-let obj = { healthcheck_failed: _modDef3715.FUWbq1, preview_ready: _modDef3715["78YNh7"], working: _modDef3715.nv6pUM, error: _modDef3715.j3hBoA };
+let obj = { healthcheck_failed: _modDef3718.FUWbq1, preview_ready: _modDef3718["78YNh7"], working: _modDef3718.nv6pUM, error: _modDef3718.j3hBoA };
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTimelineTree.tsx");
 
 export const describeNode = function describeNode(currentStepResult) {
@@ -469,32 +469,32 @@ export const describeNode = function describeNode(currentStepResult) {
   const intl = intl6.intl;
   const string = intl.string;
   if (nv6pUM == null) {
-    nv6pUM = _modDef3715.nv6pUM;
+    nv6pUM = _modDef3718.nv6pUM;
   }
   return string(nv6pUM);
 };
 export const describeTaskStatus = function describeTaskStatus(arg0) {
   if ("running" === arg0) {
     const intl5 = intl6.intl;
-    return intl5.string(_modDef3715["fW7T+d"]);
+    return intl5.string(_modDef3718["fW7T+d"]);
   } else if ("done" === arg0) {
     const intl4 = intl6.intl;
-    return intl4.string(_modDef3715.X3c4hc);
+    return intl4.string(_modDef3718.X3c4hc);
   } else if ("failed" === arg0) {
     const intl3 = intl6.intl;
-    return intl3.string(_modDef3715.LK4Wsd);
+    return intl3.string(_modDef3718.LK4Wsd);
   } else if ("cancelled" === arg0) {
     const intl2 = intl6.intl;
-    return intl2.string(_modDef3715.msWvKA);
+    return intl2.string(_modDef3718.msWvKA);
   } else if ("incomplete" === arg0) {
     const intl = intl6.intl;
-    return intl.string(_modDef3715.esfcU6);
+    return intl.string(_modDef3718.esfcU6);
   }
 };
 export { buildTimelineTree };
-export const currentStep = function currentStep(steps) {
+export const currentStep = function currentStep(productId) {
   let tmp;
-  const iter = steps[Symbol.iterator]();
+  const iter = productId[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp5 = null == tmp;

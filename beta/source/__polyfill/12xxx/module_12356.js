@@ -1,158 +1,236 @@
 // Module ID: 12356
 // Function ID: 12357
-// Dependencies: [12312, 12313, 12357, 12360, 12349, 12318]
-// Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope
+// Dependencies: [32, 12357, 12317, 12318, 12314]
+// Exports: normalizeUrlToBase
 
 // Module 12356
+import _mod12314 from "module_12314" /* 12314 */;
+import _mod12317 from "module_12317" /* 12317 */;
 import _mod12318 from "module_12318" /* 12318 */;
-import _mod12357 from "module_12357" /* 12357 */;
-import _mod12360 from "module_12360" /* 12360 */;
-import DEBUG_BUILD from "module_12312" /* 12312 */;
-import CONSOLE_LEVELS from "module_12313" /* 12313 */;
+import memoBuilder from "memoBuilder" /* 12357 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-const require = globalThis.__r;
-let _require, integrations;
+let hasOwnProperty;
 
+function normalize(arg0) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 100;
+  }
+  let num2 = arg2;
+  if (arg2 === undefined) {
+    num2 = Infinity;
+  }
+  try {
+    return visit("", arg0, num, num2);
+  } catch (tmp5) {
+    const _HermesInternal = HermesInternal;
+    const obj = { ERROR: "**non-serializable** (" + tmp5 + ")" };
+    return obj;
+  }
+}
+function visit(arg0, __sentry_skip_normalization__) {
+  function stringifyValue(arg0, _events) {
+    function getConstructorName(_events) {
+      const prototypeOf = Object.getPrototypeOf(_events);
+      let str = "null prototype";
+      if (prototypeOf) {
+        str = prototypeOf.constructor.name;
+      }
+      return str;
+    }
+    try {
+      let str = "domain";
+      if ("domain" === arg0) {
+        if (_events) {
+          if (typeof _events === "object") {
+            if (_events._events) {
+              return "[Domain]";
+            }
+          }
+        }
+      }
+      if ("domainEmitter" === arg0) {
+        return "[DomainEmitter]";
+      } else {
+        if (undefined !== global) {
+          if (_events === global) {
+            return "[Global]";
+          }
+        }
+        const _window = window;
+        if (typeof window !== "undefined") {
+          const _window2 = window;
+          if (_events === window) {
+            return "[Window]";
+          }
+        }
+        const _document = document;
+        if (typeof document !== "undefined") {
+          const _document2 = document;
+          if (_events === document) {
+            return "[Document]";
+          }
+        }
+        const obj = _mod12318;
+        if (obj.isVueViewModel(_events)) {
+          return "[VueViewModel]";
+        } else {
+          const tmp4Result = _mod12318;
+          if (tmp4Result.isSyntheticEvent(_events)) {
+            return "[SyntheticEvent]";
+          } else {
+            if (typeof _events === "number") {
+              const _Number = Number;
+              if (!Number.isFinite(_events)) {
+                const _HermesInternal = HermesInternal;
+                return "[" + _events + "]";
+              }
+            }
+            if (typeof _events === "function") {
+              const _HermesInternal4 = HermesInternal;
+              const tmp4Result2 = _mod12314;
+              return "[Function: " + tmp4Result2.getFunctionName(_events) + "]";
+            } else if (typeof _events === "symbol") {
+              const _String2 = String;
+              const _HermesInternal3 = HermesInternal;
+              return "[" + String(_events) + "]";
+            } else if (typeof _events === "bigint") {
+              const _String = String;
+              const _HermesInternal2 = HermesInternal;
+              return "[BigInt: " + String(_events) + "]";
+            } else {
+              let combined;
+              const _HermesInternal6 = HermesInternal;
+              const obj4 = /^HTML(\w*)Element$/;
+              const tmp9 = getConstructorName(_events);
+              if (obj4.test(tmp9)) {
+                combined = concat(tmp10, "]");
+              } else {
+                combined = concat(tmp10, "]");
+              }
+              return combined;
+            }
+          }
+        }
+      }
+    } catch (tmp7) {
+      const _HermesInternal5 = HermesInternal;
+      return "**non-serializable** (" + tmp7 + ")";
+    }
+  }
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = Infinity;
+  }
+  let num2 = arg3;
+  if (arg3 === undefined) {
+    num2 = Infinity;
+  }
+  let memoBuilderResult = arg4;
+  if (arg4 === undefined) {
+    let obj = memoBuilder;
+    memoBuilderResult = obj.memoBuilder();
+  }
+  _slicedToArray(memoBuilderResult, 2);
+  if (null != __sentry_skip_normalization__) {
+    const items = ["boolean", "string"];
+    if (!items.includes(typeof __sentry_skip_normalization__)) {
+      if (typeof __sentry_skip_normalization__ === "number") {
+        let _Number = Number;
+      }
+      let tmp9 = arg0;
+      let str = stringifyValue(arg0, __sentry_skip_normalization__);
+      if (str.startsWith("[object ")) {
+        if (__sentry_skip_normalization__.__sentry_skip_normalization__) {
+          return __sentry_skip_normalization__;
+        } else {
+          if (typeof __sentry_skip_normalization__.__sentry_override_normalization_depth__ === "number") {
+            num = __sentry_skip_normalization__.__sentry_override_normalization_depth__;
+          }
+          if (0 === num) {
+            return str.replace("object ", "");
+          } else if (tmp6(__sentry_skip_normalization__)) {
+            return "[Circular ~]";
+          } else {
+            if (__sentry_skip_normalization__) {
+              if (typeof __sentry_skip_normalization__.toJSON === "function") {
+                try {
+                  const tmp10 = visit;
+                  return visit("", __sentry_skip_normalization__.toJSON(), num - 1, num2, memoBuilderResult);
+                } catch (err) {
+                }
+              }
+            }
+            const _Array = Array;
+            const tmp14 = Array.isArray(__sentry_skip_normalization__) ? [] : {};
+            const obj2 = _mod12317;
+            const convertToPlainObjectResult = obj2.convertToPlainObject(__sentry_skip_normalization__);
+            const keys = Object.keys();
+            if (keys !== undefined) {
+              while (keys[tmp] !== undefined) {
+                let _Object = Object;
+                hasOwnProperty = Object.prototype.hasOwnProperty;
+                let tmp28 = tmp21;
+                if (!hasOwnProperty.call(convertToPlainObjectResult, tmp21)) {
+                  continue;
+                } else {
+                  if (tmp20 >= num2) {
+                    let str4 = "[MaxProperties ~]";
+                    tmp14[tmp21] = "[MaxProperties ~]";
+                    break;
+                  } else {
+                    tmp14[tmp21] = visit(tmp28, convertToPlainObjectResult[tmp21], num - 1, num2, tmp8);
+                    let num6 = tmp20 + 1;
+                    continue;
+                  }
+                  break;
+                }
+                break;
+              }
+            }
+            tmp7(__sentry_skip_normalization__);
+            return tmp14;
+          }
+        }
+      } else {
+        return str;
+      }
+    }
+  }
+  return __sentry_skip_normalization__;
+}
+function normalizeToSize(arg0) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 3;
+  }
+  let num2 = arg2;
+  if (arg2 === undefined) {
+    num2 = 102400;
+  }
+  let tmp = normalize(arg0, num);
+  const str = encodeURI(JSON.stringify(tmp));
+  if (~(-str.split(/%..|./).length) > num2) {
+    tmp = normalizeToSize(arg0, num - 1, num2);
+  }
+  return tmp;
+}
 
-export const createEventEnvelope = function createEventEnvelope(type, arg1, sdk, arg3) {
-  const obj = _mod12357;
-  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(sdk);
-  let str = "event";
-  const tmp2 = type;
-  if (type.type) {
-    str = "event";
-    if ("replay_event" !== type.type) {
-      str = type.type;
-    }
+export { normalize };
+export { normalizeToSize };
+export const normalizeUrlToBase = function normalizeUrlToBase(arg0, str) {
+  let str2 = arg0;
+  str = str.replace(/\\/g, "/");
+  const replaced = str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
+  try {
+    const _decodeURI = decodeURI;
+    str2 = decodeURI(arg0);
+  } catch (err) {
   }
-  if (sdk && sdk.sdk) {
-    type.sdk = type.sdk || {};
-    let name = type.sdk.name;
-    sdk = type.sdk;
-    if (!name) {
-      name = tmp6.name;
-    }
-    sdk.name = name;
-    let version = type.sdk.version;
-    const sdk2 = type.sdk;
-    if (!version) {
-      version = tmp6.version;
-    }
-    sdk2.version = version;
-    integrations = type.sdk.integrations;
-    const sdk3 = type.sdk;
-    if (!integrations) {
-      integrations = [];
-    }
-    const items = [];
-    const arraySpreadResult = HermesBuiltin.arraySpread(items, integrations, 0);
-    const tmp10 = (sdk && sdk.sdk).integrations || [];
-    HermesBuiltin.arraySpread(items, tmp10, arraySpreadResult);
-    sdk3.integrations = items;
-    let packages = type.sdk.packages;
-    const sdk4 = type.sdk;
-    if (!packages) {
-      packages = [];
-    }
-    const items1 = [];
-    const arraySpreadResult5 = HermesBuiltin.arraySpread(items1, packages, 0);
-    const tmp18 = (sdk && sdk.sdk).packages || [];
-    HermesBuiltin.arraySpread(items1, tmp18, arraySpreadResult5);
-    sdk4.packages = items1;
-  }
-  const tmp3Result = _mod12357;
-  const eventEnvelopeHeaders = tmp3Result.createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
-  delete tmp2["sdkProcessingMetadata"];
-  const items2 = [{ type: str }, type];
-  const items3 = [items2];
-  const tmp3Result2 = _mod12357;
-  return tmp3Result2.createEnvelope(eventEnvelopeHeaders, items3);
-};
-export const createSessionEnvelope = function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
-  let date;
-  let items1;
-  let tmpResult;
-  const obj = _mod12357;
-  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(arg2);
-  const obj2 = { sent_at: date.toISOString() };
-  let tmp4 = sdkMetadataForEnvelopeHeader;
-  date = new Date();
-  if (tmp4) {
-    tmp4 = { sdk: sdkMetadataForEnvelopeHeader };
-    const obj3 = { sdk: sdkMetadataForEnvelopeHeader };
-  }
-  const merged = Object.assign(tmp4);
-  let tmp6 = arg3 && arg1;
-  if (tmp6) {
-    const obj4 = { dsn: tmpResult.dsnToString(arg1) };
-    tmp6 = obj4;
-    tmpResult = _mod12360;
-  }
-  const merged1 = Object.assign(tmp6);
-  if ("aggregates" in toJSON) {
-    const items = [{ type: "sessions" }, toJSON];
-    items1 = items;
-  } else {
-    items1 = [{ type: "session" }, toJSON.toJSON()];
-  }
-  const items2 = [items1];
-  const tmpResult2 = _mod12357;
-  return tmpResult2.createEnvelope(obj2, items2);
-};
-export const createSpanEnvelope = function createSpanEnvelope(arg0, getDsn) {
-  let closure_0;
-  let date;
-  let tmp2Result;
-  function dscHasRequiredProps(dynamicSamplingContextFromSpan) {
-    return dynamicSamplingContextFromSpan.trace_id && dynamicSamplingContextFromSpan.public_key;
-  }
-  let tmp = _require;
-  let tmp3 = dependencyMap;
-  let obj = require("module_12349");
-  const dynamicSamplingContextFromSpan = obj.getDynamicSamplingContextFromSpan(arg0[0]);
-  const tmp6 = getDsn && getDsn.getDsn();
-  const obj2 = { sent_at: date.toISOString() };
-  const tmp7 = getDsn && getDsn.getOptions().tunnel;
-  date = new Date();
-  let tmp8 = dscHasRequiredProps(dynamicSamplingContextFromSpan);
-  const tmp2 = _require;
-  if (tmp8) {
-    tmp8 = { trace: dynamicSamplingContextFromSpan };
-    const obj3 = { trace: dynamicSamplingContextFromSpan };
-  }
-  const merged = Object.assign(tmp8);
-  let tmp10 = tmp7 && tmp6;
-  if (tmp10) {
-    const obj4 = { dsn: tmp2Result.dsnToString(tmp6) };
-    tmp10 = obj4;
-    tmp2Result = tmp2(12360);
-  }
-  const merged1 = Object.assign(tmp10);
-  const tmp14 = getDsn && getDsn.getOptions().beforeSendSpan;
-  _require = tmp14;
-  const items = [];
-  const tmp15 = tmp14 ? ((arg0) => {
-    const obj = _mod12318;
-    const tmp3 = closure_0(obj.spanToJSON(arg0));
-    if (!tmp3) {
-      const tmpResult = _mod12318;
-      tmpResult.showSpanDropWarning();
-    }
-    return tmp3;
-  }) : ((arg0) => {
-    const obj = closure_0(dependencyMap[5]);
-    return obj.spanToJSON(arg0);
-  });
-  const iter = arg0[Symbol.iterator]();
-  while (iter !== undefined) {
-    let tmp15Result = tmp15(iter.next());
-    if (tmp15Result) {
-      let push = items.push;
-      let obj7 = require("module_12357");
-      let arr = push(obj7.createSpanEnvelopeItem(tmp17));
-    }
-    continue;
-  }
-  const obj8 = require("module_12357");
-  return obj8.createEnvelope(obj2, items);
+  const str3 = str2.replace(/\\/g, "/");
+  const replace = str3.replace(/webpack:\/?/g, "").replace;
+  str3.replace(/webpack:\/?/g, "");
+  const regExp = new RegExp("(file://)?/*" + replaced + "/*", "ig");
+  return replace(regExp, "app:///");
 };

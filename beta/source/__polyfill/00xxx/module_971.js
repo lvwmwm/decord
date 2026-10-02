@@ -1,15 +1,118 @@
 // Module ID: 971
 // Function ID: 972
-// Dependencies: [682]
-// Exports: growthbookIntegration
+// Dependencies: [949, 694, 910]
+// Exports: isSpotlightInteraction
 
 // Module 971
-import _mod682 from "module_682" /* 682 */;
+import _addMeasureSpans from "_addMeasureSpans" /* 910 */;
+import _mod949 from "module_949" /* 949 */;
+import registerSpanErrorInstrumentation from "module_694" /* 694 */;
 
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+let closure_2;
 
-export const growthbookIntegration = (growthbookClass) => {
-  growthbookClass = growthbookClass.growthbookClass;
-  const obj = _mod682;
-  return obj.growthbookIntegration({ growthbookClass });
+const f81627 = (description) => {
+  description = description.description;
+  let hasItem;
+  if (description != null) {
+    hasItem = description.includes("#sentry-spotlight");
+  }
+  return hasItem;
 };
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+const SpotlightBrowser = "SpotlightBrowser";
+
+export const INTEGRATION_NAME = "SpotlightBrowser";
+export const isSpotlightInteraction = function isSpotlightInteraction(type) {
+  let spans = "transaction" === type.type;
+  const _Boolean = Boolean;
+  if (spans) {
+    spans = type.spans;
+  }
+  if (spans) {
+    const contexts = type.contexts;
+    let trace;
+    if (contexts != null) {
+      trace = contexts.trace;
+    }
+    spans = trace;
+  }
+  if (spans) {
+    spans = "ui.action.click" === type.contexts.trace.op;
+  }
+  if (spans) {
+    const spans2 = type.spans;
+    spans = spans2.some(f81627);
+  }
+  return _Boolean(spans);
+};
+export const spotlightBrowserIntegration = registerSpanErrorInstrumentation.defineIntegration(() => {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  let closure_0 = obj.sidecarUrl || "http://localhost:8969/stream";
+  let obj2 = {
+    name: SpotlightBrowser,
+    setup() {
+      if (_mod949.DEBUG_BUILD) {
+        const debug = registerSpanErrorInstrumentation.debug;
+        debug.log("Using Sidecar URL", closure_0);
+      }
+    },
+    processEvent(type) {
+      let spans = "transaction" === type.type;
+      const _Boolean = Boolean;
+      if (spans) {
+        spans = type.spans;
+      }
+      if (spans) {
+        const contexts = type.contexts;
+        let trace;
+        if (contexts != null) {
+          trace = contexts.trace;
+        }
+        spans = trace;
+      }
+      if (spans) {
+        spans = "ui.action.click" === type.contexts.trace.op;
+      }
+      if (spans) {
+        const spans2 = type.spans;
+        spans = spans2.some(f81627);
+      }
+      let tmp3 = null;
+      if (!_Boolean(spans)) {
+        tmp3 = type;
+      }
+      return tmp3;
+    },
+    afterAllSetup(on) {
+      const obj = _addMeasureSpans;
+      const nativeImplementation = obj.getNativeImplementation("fetch");
+      let c2 = 0;
+      on.on("beforeEnvelope", (arg0) => {
+        let obj2;
+        if (c2 > 3) {
+          let debug = closure_2_0(closure_2_1[1]).debug;
+          debug.warn("[Spotlight] Disabled Sentry -> Spotlight integration due to too many failed requests:", c2);
+        } else {
+          let tmp = arg0;
+          const request = { method: "POST", body: obj2.serializeEnvelope(arg0), headers: { "Content-Type": "application/x-sentry-envelope" }, mode: "cors" };
+          obj2 = closure_2_0(closure_2_1[1]);
+          const promise = closure_1(closure_0, request);
+          promise.then((status) => {
+            const tmp = status.status >= 200 && status.status < 400;
+            if (tmp) {
+              closure_2 = 0;
+            }
+          }, (arg0) => {
+            closure_2 = closure_2 + 1;
+            const debug = closure_0(closure_1[1]).debug;
+            debug.error("Sentry SDK can't connect to Sidecar is it running? See: https://spotlightjs.com/sidecar/npx/", arg0);
+          });
+        }
+      });
+    }
+  };
+  return obj2;
+});

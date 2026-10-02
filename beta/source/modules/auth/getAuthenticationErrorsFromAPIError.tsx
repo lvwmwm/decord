@@ -1,10 +1,10 @@
-// Module ID: 6367
-// Function ID: 6368
+// Module ID: 6364
+// Function ID: 6365
 // Name: getAuthenticationErrorsFromAPIError
 // Dependencies: [2]
 // Exports: getAuthenticationErrorsFromAPIError, getAuthenticationErrorsFromV6OrEarlierAPIError
 
-// Module 6367 (getAuthenticationErrorsFromAPIError)
+// Module 6364 (getAuthenticationErrorsFromAPIError)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/auth/getAuthenticationErrorsFromAPIError.tsx");

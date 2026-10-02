@@ -1,13 +1,13 @@
-// Module ID: 17513
-// Function ID: 17514
+// Module ID: 17515
+// Function ID: 17516
 // Name: CreatorMonetizationEligibilityActionCreators
-// Dependencies: [5, 1074, 1349, 1271, 573, 6584, 2]
+// Dependencies: [5, 1086, 1361, 1283, 585, 6585, 2]
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 17513 (CreatorMonetizationEligibilityActionCreators)
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ApplicationConstants from "ApplicationConstants" /* 1349 */;
+// Module 17515 (CreatorMonetizationEligibilityActionCreators)
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import ApplicationConstants from "ApplicationConstants" /* 1361 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _createCreatorMonetizationEnableRequest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -59,7 +59,7 @@ let obj = function _createCreatorMonetizationEnableRequest() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -73,13 +73,13 @@ obj = function _getCreatorMonetizationEligibility() {
   obj = _asyncToGenerator(async (arg0) => {
     let c1;
     let c2;
-    let obj4;
+    let obj7;
     let closure_0 = arg0;
     const HTTP = HTTPUtils.HTTP;
-    const obj5 = { url: Endpoints.CREATOR_MONETIZATION_ELIGIBILITY(closure_0), rejectWithError: obj4.rejectWithMigratedError() };
+    const obj4 = { url: Endpoints.CREATOR_MONETIZATION_ELIGIBILITY(closure_0), rejectWithError: obj7.rejectWithMigratedError() };
     const get = HTTP.get;
-    obj4 = HTTPUtils;
-    await get(obj5);
+    obj7 = HTTPUtils;
+    await get(obj4);
     return arg1.body;
   });
   return obj(...arguments);
@@ -99,7 +99,7 @@ obj = function _acceptCreatorMonetizationTerms() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -131,7 +131,7 @@ obj = function _acceptCreatorMonetizationTerms() {
           return obj;
         } else {
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp4) {
         c2 = 3;
@@ -155,7 +155,7 @@ obj = function _acceptCreatorMonetizationTermsV() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -187,7 +187,7 @@ obj = function _acceptCreatorMonetizationTermsV() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -201,13 +201,13 @@ obj = function _getCreatorMonetizationOnboardingMarketing() {
   obj = _asyncToGenerator(async (arg0) => {
     let c1;
     let c2;
-    let obj4;
+    let obj7;
     let closure_0 = arg0;
     const HTTP = HTTPUtils.HTTP;
-    const obj5 = { url: Endpoints.CREATOR_MONETIZATION_MARKETING_ONBOARDING(closure_0), rejectWithError: obj4.rejectWithMigratedError() };
+    const obj4 = { url: Endpoints.CREATOR_MONETIZATION_MARKETING_ONBOARDING(closure_0), rejectWithError: obj7.rejectWithMigratedError() };
     const get = HTTP.get;
-    obj4 = HTTPUtils;
-    await get(obj5);
+    obj7 = HTTPUtils;
+    await get(obj4);
     return arg1.body;
   });
   return obj(...arguments);
@@ -253,7 +253,7 @@ obj = function _requestRemoveMonetization() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -285,7 +285,7 @@ obj = function _requestRemoveMonetization() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -312,7 +312,7 @@ obj = function _removeMonetization() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

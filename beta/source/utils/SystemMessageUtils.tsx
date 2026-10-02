@@ -1,31 +1,31 @@
-// Module ID: 7428
-// Function ID: 7429
+// Module ID: 7432
+// Function ID: 7433
 // Name: SystemMessageUtils
-// Dependencies: [32, 4480, 502, 2045, 2067, 4479, 1372, 1074, 1115, 11, 7429, 7433, 4988, 4989, 7434, 7436, 5083, 5058, 7437, 7438, 6936, 4457, 7439, 2]
+// Dependencies: [32, 4483, 502, 2051, 2073, 4482, 1378, 1086, 1127, 11, 7433, 7437, 4989, 4990, 7438, 7440, 5084, 5059, 7441, 7442, 6940, 4460, 7443, 2]
 
-// Module 7428 (SystemMessageUtils)
+// Module 7432 (SystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import intl20 from "intl" /* 1115 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4457 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
-import useChannelName from "useChannelName" /* 4989 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
-import useMessageAuthor from "useMessageAuthor" /* 5083 */;
-import MarkupParser from "MarkupParser" /* 7429 */;
-import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 7433 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 7434 */;
-import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 7436 */;
-import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 7437 */;
-import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 7438 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 7439 */;
+import intl20 from "intl" /* 1127 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4460 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
+import useChannelName from "useChannelName" /* 4990 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5059 */;
+import useMessageAuthor from "useMessageAuthor" /* 5084 */;
+import MarkupParser from "MarkupParser" /* 7433 */;
+import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 7437 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 7438 */;
+import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 7440 */;
+import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 7441 */;
+import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 7442 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 7443 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4480 */;
+import MessageRecord from "MessageRecord" /* 4483 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -285,21 +285,21 @@ let obj = {
                     if (AutomodNotificationEmbedTypeKeys.AutomodNotificationEmbedTypeKeys.ACTIVITY_ALERTS_ENABLED === value) {
                       const astToString5 = MarkupParser.astToString;
                       MarkupParser;
-                      const intl6 = tmp49(1115).intl;
+                      const intl6 = tmp49(1127).intl;
                       const obj23 = { guildName: guild.name };
-                      astToString5Result = astToString5(intl6.formatToParts(tmp49(1115).t.wt3ZUM, obj23));
+                      astToString5Result = astToString5(intl6.formatToParts(tmp49(1127).t.wt3ZUM, obj23));
                     } else if (AutomodNotificationEmbedTypeKeys.AutomodNotificationEmbedTypeKeys.INTERACTION_BLOCKED === value) {
                       const astToString4 = MarkupParser.astToString;
                       MarkupParser;
-                      const intl5 = tmp49(1115).intl;
+                      const intl5 = tmp49(1127).intl;
                       const obj24 = { guildName: guild.name };
-                      astToString5Result = astToString4(intl5.formatToParts(tmp49(1115).t.AkqI0g, obj24));
+                      astToString5Result = astToString4(intl5.formatToParts(tmp49(1127).t.AkqI0g, obj24));
                     } else {
                       const astToString3 = MarkupParser.astToString;
                       MarkupParser;
-                      const intl4 = tmp49(1115).intl;
+                      const intl4 = tmp49(1127).intl;
                       const obj26 = { guildName: guild.name };
-                      astToString5Result = astToString3(intl4.formatToParts(tmp49(1115).t["a+lJKl"], obj26));
+                      astToString5Result = astToString3(intl4.formatToParts(tmp49(1127).t["a+lJKl"], obj26));
                     }
                   }
                 }
@@ -328,7 +328,7 @@ let obj = {
                     const self = this;
                     const self2 = this;
                     const date = new Date(content2);
-                    str2 = date.toLocaleString(tmp37(1115).intl.currentLocale, { hour: "numeric", minute: "2-digit" });
+                    str2 = date.toLocaleString(tmp37(1127).intl.currentLocale, { hour: "numeric", minute: "2-digit" });
                   }
                   astToString2Result = astToString2(formatToParts(iOuWPk, obj27));
                 }
@@ -403,7 +403,7 @@ let obj = {
                 if (null == leaderboardSystemMessage) {
                   content = mentions.content;
                 } else {
-                  const intl = tmp11(1115).intl;
+                  const intl = tmp11(1127).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   const message = leaderboardSystemMessage.message;
                   const obj30 = {

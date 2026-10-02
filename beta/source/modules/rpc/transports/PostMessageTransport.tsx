@@ -1,18 +1,18 @@
-// Module ID: 8768
-// Function ID: 8769
+// Module ID: 8763
+// Function ID: 8764
 // Name: PostMessageTransport
-// Dependencies: [5, 32, 2044, 4739, 1074, 1091, 8769, 568, 1110, 1241, 4458, 8770, 8772, 1981, 8773, 2]
+// Dependencies: [5, 32, 2050, 4741, 1086, 1103, 8764, 580, 1122, 1253, 4461, 8765, 8767, 1987, 8768, 2]
 
-// Module 8768 (PostMessageTransport)
-import _mod568 from "module_568" /* 568 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import Constants2 from "Constants" /* 4739 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 8769 */;
-import RPCErrorDefault from "RPCError" /* 8770 */;
+// Module 8763 (PostMessageTransport)
+import _mod580 from "module_580" /* 580 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import Constants2 from "Constants" /* 4741 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 8764 */;
+import RPCErrorDefault from "RPCError" /* 8765 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import Constants from "Constants" /* 1074 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ function postClose(source, arg1, postMessageToRPCClient) {
   const items = [RPCOpcodesDefault.CLOSE, arg1];
   postMessageToRPCClient(items, source.origin);
 }
-const EventEmitter = _mod568.EventEmitter;
+const EventEmitter = _mod580.EventEmitter;
 class PostMessageTransport extends EventEmitter {
   constructor(validateSocketClient, logger, createPostMessageProxySocket, onFrameHandled) {
     let tmp;
@@ -188,7 +188,7 @@ class PostMessageTransport extends EventEmitter {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -320,7 +320,7 @@ class PostMessageTransport extends EventEmitter {
               logger2.info("Socket Validated: " + user.id);
               c7 = 0;
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else {
               const logger = closure_133_1.logger;
               const _HermesInternal = HermesInternal;
@@ -368,7 +368,7 @@ class PostMessageTransport extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -415,7 +415,7 @@ class PostMessageTransport extends EventEmitter {
               c5 = 0;
               closure_131_1.disconnectSocket(closure_0, closure_1);
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             c5 = 0;

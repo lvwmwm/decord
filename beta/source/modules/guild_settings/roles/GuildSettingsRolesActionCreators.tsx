@@ -1,13 +1,13 @@
-// Module ID: 17424
-// Function ID: 17425
+// Module ID: 17426
+// Function ID: 17427
 // Name: GuildSettingsRolesActionCreators
-// Dependencies: [5, 1074, 573, 5832, 11068, 1110, 2]
+// Dependencies: [5, 1086, 585, 5833, 10936, 1122, 2]
 // Exports: clearRolePermissions, commitSectionChanges, discardConnectionsChanges, discardSectionChanges, init, saveRoleSettings, toggleRoleSettings, updateRoleColor, updateRoleColors, updateRoleConnectionConfigurations, updateRoleDescription, updateRoleIcon, updateRoleName, updateRolePermissionSet, updateRolePermissions, updateRoleSort, updateRoleStyles
 
-// Module 17424 (GuildSettingsRolesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 17426 (GuildSettingsRolesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let closure_15, closure_16, closure_17, closure_19, closure_7, closure_8, first1, value2, value3, value4;
@@ -160,7 +160,7 @@ let obj = function _saveRoleSettings() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -198,7 +198,7 @@ let obj = function _saveRoleSettings() {
                 closure_14 = undefined;
                 c20 = 1;
                 c21 = 1;
-                return { value: "flex", done: true };
+                return { value: "Reflect", done: true };
               }
               break;
             }
@@ -253,7 +253,7 @@ let obj = function _saveRoleSettings() {
                     obj19.dispatch({ type: "GUILD_SETTINGS_ROLES_SAVE_SUCCESS" });
                     c18 = 0;
                     c21 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   } else {
                     c18 = 2;
                     c7 = tmp137;

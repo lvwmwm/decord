@@ -1,24 +1,24 @@
-// Module ID: 9601
-// Function ID: 9602
+// Module ID: 9573
+// Function ID: 9574
 // Name: MuteSettingsUtils
-// Dependencies: [4471, 2045, 2067, 4479, 5017, 1372, 1074, 1084, 1115, 4989, 7184, 6540, 6535, 9602, 2]
+// Dependencies: [4474, 2051, 2073, 4482, 5018, 1378, 1086, 1096, 1127, 4990, 7188, 6541, 6536, 9574, 2]
 // Exports: getMessageNotificationsText, getMuteOptions, getMuteSettingLabel, getMuteSettingSublabel, getMuteSettings, handleMuteSettingPress, handleUnmutePress
 
-// Module 9601 (MuteSettingsUtils)
-import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
-import intl7 from "intl" /* 1115 */;
-import useChannelName from "useChannelName" /* 4989 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7184 */;
-import ChannelMuteUtilsAll from "ChannelMuteUtils" /* 9602 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+// Module 9573 (MuteSettingsUtils)
+import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
+import intl7 from "intl" /* 1127 */;
+import useChannelName from "useChannelName" /* 4990 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6536 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6541 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7188 */;
+import ChannelMuteUtilsAll from "ChannelMuteUtils" /* 9574 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4474 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5018 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -27,21 +27,21 @@ let unpackModuleId;
 const MuteUntilSeconds = UserSettingsConstants.MuteUntilSeconds;
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/MuteSettingsUtils.tsx");
 
-export const getMuteSettingLabel = function getMuteSettingLabel(channel, guild) {
+export const getMuteSettingLabel = function getMuteSettingLabel(stateFromStores, stateFromStores1) {
   let stringResult1;
-  if (null != channel) {
+  if (null != stateFromStores) {
     let stringResult;
-    if (channel.isPrivate()) {
+    if (stateFromStores.isPrivate()) {
       const intl5 = intl7.intl;
       stringResult = intl5.string(intl7.t["Z/uD9+"]);
-    } else if (channel.type === constants.GUILD_CATEGORY) {
+    } else if (stateFromStores.type === constants.GUILD_CATEGORY) {
       const intl4 = intl7.intl;
       stringResult = intl4.string(intl7.t.Z33kYz);
-    } else if (channel.isForumPost()) {
+    } else if (stateFromStores.isForumPost()) {
       const intl3 = intl7.intl;
       stringResult = intl3.string(intl7.t.lbN8mz);
     } else {
-      const isThreadResult = channel.isThread();
+      const isThreadResult = stateFromStores.isThread();
       const intl2 = intl7.intl;
       const string = intl2.string;
       const t = intl7.t;
@@ -52,19 +52,19 @@ export const getMuteSettingLabel = function getMuteSettingLabel(channel, guild) 
       }
     }
     stringResult1 = stringResult;
-  } else if (null != guild) {
+  } else if (null != stateFromStores1) {
     const intl = intl7.intl;
     stringResult1 = intl.string(intl7.t.mvxGko);
   }
   return stringResult1;
 };
-export const getMuteSettingSublabel = function getMuteSettingSublabel(channel, guild) {
+export const getMuteSettingSublabel = function getMuteSettingSublabel(stateFromStores, stateFromStores1) {
   let name;
-  if (null != channel) {
+  if (null != stateFromStores) {
     const obj = useChannelName;
-    name = obj.computeChannelName(channel, UserStore, RelationshipStore, true);
-  } else if (null != guild) {
-    name = guild.name;
+    name = obj.computeChannelName(stateFromStores, UserStore, RelationshipStore, true);
+  } else if (null != stateFromStores1) {
+    name = stateFromStores1.name;
   }
   return name;
 };

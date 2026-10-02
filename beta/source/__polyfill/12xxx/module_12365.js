@@ -1,84 +1,132 @@
 // Module ID: 12365
 // Function ID: 12366
-// Dependencies: [12314]
-// Exports: getDebugImagesForResources
+// Dependencies: [12358]
+// Exports: getEnvelopeEndpointWithUrlEncodedAuth, getReportDialogEndpoint
 
 // Module 12365
-const require = globalThis.__r;
-let _require, obj;
+import _mod12358 from "module_12358" /* 12358 */;
 
-function getFilenameToDebugIdMap(arg0) {
-  let _sentryDebugIds;
-  let closure_0;
-  let length;
-  let reduced;
-  _require = arg0;
-  _sentryDebugIds = require("module_12314").GLOBAL_OBJ._sentryDebugIds;
-  if (_sentryDebugIds) {
-    let tmp = globalThis;
-    const _Object = Object;
-    const keys = Object.keys(_sentryDebugIds);
-    const tmp2 = reduced;
-    if (tmp2) {
-      return reduced;
+
+export const getEnvelopeEndpointWithUrlEncodedAuth = function getEnvelopeEndpointWithUrlEncodedAuth(protocol, arg1, name) {
+  let combined1 = arg1;
+  if (!combined1) {
+    let str2 = "";
+    if (protocol.protocol) {
+      const _HermesInternal = HermesInternal;
+      str2 = "" + protocol.protocol + ":";
     }
-    reduced = keys.reduce((acc, item) => {
-      let tmp7;
-      let tmp9;
-      let tmp = obj;
-      if (!tmp) {
-        obj = {};
-        tmp = obj;
-      }
-      if (tmp[item]) {
-        acc[tmp[item][0]] = tmp[item][1];
-      } else {
-        const arr = closure_0(item);
-        let diff = arr.length - 1;
-        if (0 <= diff) {
-          while (true) {
-            let tmp5 = arr[diff];
-            tmp7 = tmp5 && tmp5.filename;
-            tmp9 = _sentryDebugIds[item];
-            if (tmp7) {
-              if (tmp9) {
-                break;
-              }
-            }
-            diff = diff - 1;
-          }
-          acc[tmp7] = tmp9;
-          const items = [tmp7, tmp9];
-          obj[item] = items;
-        }
-      }
-      return acc;
-    }, {});
-  } else {
-    return {};
+    let str4 = "";
+    if (protocol.port) {
+      const _HermesInternal2 = HermesInternal;
+      str4 = ":" + protocol.port;
+    }
+    const host = protocol.host;
+    let str6 = "";
+    if (protocol.path) {
+      const _HermesInternal3 = HermesInternal;
+      str6 = "/" + protocol.path;
+    }
+    const _HermesInternal4 = HermesInternal;
+    const _HermesInternal5 = HermesInternal;
+    const obj = { sentry_version: "7" };
+    const combined = "" + "" + str2 + "//" + host + str4 + str6 + "/api/" + protocol.projectId + "/envelope/";
+    if (protocol.publicKey) {
+      obj.sentry_key = protocol.publicKey;
+    }
+    const tmp12 = name;
+    if (tmp12) {
+      const _HermesInternal6 = HermesInternal;
+      obj.sentry_client = "" + name.name + "/" + name.version;
+    }
+    const _URLSearchParams = URLSearchParams;
+    const self = this;
+    const self2 = this;
+    const _HermesInternal7 = HermesInternal;
+    const str13 = new URLSearchParams(obj);
+    combined1 = "" + combined + "?" + str13.toString();
   }
-}
-
-export const getDebugImagesForResources = function getDebugImagesForResources(arg0, arg1) {
-  const tmp = getFilenameToDebugIdMap(arg0);
-  const items = [];
-  if (tmp) {
-    const iter = arg1[Symbol.iterator]();
-    let nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp7 = nextResult;
-      if (tmp7) {
-        nextResult = tmp[tmp7];
-      }
-      if (nextResult) {
-        obj = { type: "sourcemap", code_file: tmp7, debug_id: tmp[tmp7] };
-        let arr = items.push(obj);
-      }
-      continue;
+  return combined1;
+};
+export const getReportDialogEndpoint = function getReportDialogEndpoint(arg0, user) {
+  const obj = _mod12358;
+  const url = obj.makeDsn(arg0);
+  if (url) {
+    let str = "";
+    if (url.protocol) {
+      const _HermesInternal = HermesInternal;
+      str = "" + url.protocol + ":";
     }
-    return items;
+    let str3 = "";
+    if (url.port) {
+      const _HermesInternal2 = HermesInternal;
+      str3 = ":" + url.port;
+    }
+    const host = url.host;
+    let str5 = "";
+    if (url.path) {
+      const _HermesInternal3 = HermesInternal;
+      str5 = "/" + url.path;
+    }
+    const _HermesInternal4 = HermesInternal;
+    const _HermesInternal5 = HermesInternal;
+    const combined = "" + "" + str + "//" + host + str3 + str5 + "/api/" + "embed/error-page/";
+    const _HermesInternal6 = HermesInternal;
+    const tmp2Result = _mod12358;
+    let combined1 = "dsn=" + tmp2Result.dsnToString(url);
+    let tmp16 = combined1;
+    const keys = Object.keys();
+    if (keys !== undefined) {
+      tmp16 = combined1;
+      while (keys[tmp] !== undefined) {
+        if ("dsn" === tmp19) {
+          continue;
+        } else {
+          combined1 = tmp18;
+          if ("onClose" === tmp19) {
+            continue;
+          } else {
+            if ("user" === tmp19) {
+              user = user.user;
+              combined1 = tmp18;
+              if (!user) {
+                continue;
+              } else {
+                let sum = tmp18;
+                if (user.name) {
+                  let _encodeURIComponent3 = encodeURIComponent;
+                  let _HermesInternal8 = HermesInternal;
+                  sum = tmp18 + "&name=" + encodeURIComponent(user.name);
+                }
+                combined1 = sum;
+                if (!user.email) {
+                  continue;
+                } else {
+                  let _encodeURIComponent4 = encodeURIComponent;
+                  let _HermesInternal9 = HermesInternal;
+                  combined1 = sum + "&email=" + encodeURIComponent(user.email);
+                  continue;
+                }
+                continue;
+              }
+              continue;
+            } else {
+              let _encodeURIComponent = encodeURIComponent;
+              let _encodeURIComponent2 = encodeURIComponent;
+              let encodeURIComponentResult = encodeURIComponent(tmp19);
+              let _HermesInternal7 = HermesInternal;
+              combined1 = tmp18 + "&" + encodeURIComponentResult + "=" + encodeURIComponent(user[tmp19]);
+              continue;
+            }
+            continue;
+          }
+          continue;
+        }
+        continue;
+      }
+    }
+    const _HermesInternal10 = HermesInternal;
+    return "" + combined + "?" + tmp16;
   } else {
-    return items;
+    return "";
   }
 };
-export { getFilenameToDebugIdMap };

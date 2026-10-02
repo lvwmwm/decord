@@ -1,10 +1,10 @@
-// Module ID: 2040
-// Function ID: 2041
+// Module ID: 2046
+// Function ID: 2047
 // Name: Timers
 // Dependencies: [5, 2]
 // Exports: timeoutPromise
 
-// Module 2040 (Timers)
+// Module 2046 (Timers)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -237,7 +237,7 @@ class BatchInvocationManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -317,7 +317,7 @@ class BatchInvocationManager {
             closure_132_0._flush();
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp34) {
           closure_5 = tmp34;
           if (0 === c6) {

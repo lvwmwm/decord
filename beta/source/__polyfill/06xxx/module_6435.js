@@ -1,10 +1,10 @@
 // Module ID: 6435
 // Function ID: 6436
-// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 6436, 6438, 5943, 6440, 6442, 6443, 6452, 6453]
+// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 6436, 6438, 5942, 6440, 6442, 6443, 6452, 6453]
 // Exports: getAnimationEnabled
 
 // Module 6435
-import _mod5943 from "module_5943" /* 5943 */;
+import _mod5942 from "module_5942" /* 5942 */;
 import SlideFromRightIOS from "SlideFromRightIOS" /* 6436 */;
 import forHorizontalIOS from "forHorizontalIOS" /* 6438 */;
 import _mod6440 from "module_6440" /* 6440 */;
@@ -248,7 +248,7 @@ class CardStack {
         return scenes.find((descriptor) => descriptor.descriptor.route.key === previousRoute.key);
       }
     };
-    let obj2 = { routes: [], scenes: [], gestures: {}, layout: _mod5943.SafeAreaProviderCompat.initialMetrics.frame, descriptors: tmp3Result.props.descriptors, activeStates: [], headerHeights: {} };
+    let obj2 = { routes: [], scenes: [], gestures: {}, layout: _mod5942.SafeAreaProviderCompat.initialMetrics.frame, descriptors: tmp3Result.props.descriptors, activeStates: [], headerHeights: {} };
     tmp3Result.state = obj2;
     return tmp3Result;
   }

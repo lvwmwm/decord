@@ -1,10 +1,10 @@
 // Module ID: 5604
 // Function ID: 5605
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 5604 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "72952773756d8776abb1f02e0c8ab235", name: "img_account_sync_battlenet_light_and_dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "8ba3e8ee2991f198308400197cdb28bc", name: "img_account_sync_youtube_white", type: "svg" });

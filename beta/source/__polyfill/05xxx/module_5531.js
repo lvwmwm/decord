@@ -1,25 +1,26 @@
 // Module ID: 5531
 // Function ID: 5532
-// Dependencies: []
+// Dependencies: [5532, 5530]
 
 // Module 5531
-let c0 = 18761;
-let c1 = 19789;
+import _modDef5530 from "module_5530" /* 5530 */;
+import _modDef5532 from "module_5532" /* 5532 */;
+
 
 export default {
-  BIG_ENDIAN: 19789,
-  LITTLE_ENDIAN: 18761,
-  getByteOrder(getUint16, c5) {
-    if (getUint16.getUint16(c5) === c0) {
-      return c0;
-    } else if (getUint16.getUint16(c5) === c1) {
-      return c1;
+  isTiffFile(byteLength) {
+    let tmp = byteLength && byteLength.byteLength >= 4;
+    if (tmp) {
+      const uint16 = byteLength.getUint16(0);
+      tmp = byteLength.getUint16(2, uint16 === _modDef5532.LITTLE_ENDIAN) === 42;
+    }
+    return tmp;
+  },
+  findTiffOffsets() {
+    if (_modDef5530.USE_EXIF) {
+      return { hasAppMarkers: true, tiffHeaderOffset: 0 };
     } else {
-      const _Error = Error;
-      const self = this;
-      const self2 = this;
-      const error = new Error("Illegal byte order value. Faulty image.");
-      throw error;
+      return {};
     }
   }
 };

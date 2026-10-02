@@ -1,10 +1,10 @@
-// Module ID: 1248
-// Function ID: 1249
+// Module ID: 1260
+// Function ID: 1261
 // Name: react-native
 // Dependencies: [17, 2]
 // Exports: batchUpdates
 
-// Module 1248 (react-native)
+// Module 1260 (react-native)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

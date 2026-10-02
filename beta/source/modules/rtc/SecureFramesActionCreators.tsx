@@ -1,19 +1,19 @@
-// Module ID: 9166
-// Function ID: 9167
+// Module ID: 9143
+// Function ID: 9144
 // Name: SecureFramesActionCreators
-// Dependencies: [5, 502, 2045, 4855, 9165, 1074, 573, 9163, 4735, 5203, 1115, 9167, 5723, 2]
+// Dependencies: [5, 502, 2051, 4856, 9142, 1086, 585, 9140, 4737, 5204, 1127, 9144, 5724, 2]
 
-// Module 9166 (SecureFramesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import intl4 from "intl" /* 1115 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9163 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9165 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9167 */;
+// Module 9143 (SecureFramesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import intl4 from "intl" /* 1127 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9140 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9142 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9144 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
 import size from "module_2" /* 2 */;
 
 let body, c0, c1, c2, closure_4, closure_5, dispatchResult, getChannel, id, persistentCodesEnabled, voiceStateForUser;
@@ -38,7 +38,7 @@ let obj = function _savePersistentCodesEnabled() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -102,7 +102,7 @@ let obj = function _savePersistentCodesEnabled() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp38) {
           closure_5 = tmp38;
           if (0 === c6) {
@@ -159,7 +159,7 @@ obj = function _updatePersistentCodesEnabled() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -220,7 +220,7 @@ obj = function _updatePersistentCodesEnabled() {
                     let obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -256,7 +256,7 @@ obj = function _updatePersistentCodesEnabled() {
                       return obj;
                     } else {
                       c0 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp6) {
                     c0 = 3;
@@ -281,7 +281,7 @@ obj = function _updatePersistentCodesEnabled() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp14) {
         c1 = 3;
         throw tmp14;

@@ -1,17 +1,214 @@
-// Module ID: 17166
-// Function ID: 17167
+// Module ID: 17168
+// Function ID: 17169
 // Name: CheckboxGroupActionComponent
-// Dependencies: [19, 21, 7569, 5999, 5916, 2]
+// Dependencies: [19, 21, 558, 576, 7573, 5913, 5997, 2]
 
-// Module 17166 (CheckboxGroupActionComponent)
+// Module 17168 (CheckboxGroupActionComponent)
 import Fragment from "Fragment" /* 21 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 5913 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let type;
+let closure_0, type;
 
-const jsx = Fragment.jsx;
-const memoResult = react.memo((type) => {
+let jsx = Fragment.jsx;
+let memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+  let arr;
+  let closure_3;
+  let executeStateUpdate;
+  let maxValues;
+  let options;
+  let state;
+  let tmp2 = maxValues;
+  let obj = type(maxValues[3]);
+  const cResult = obj.c(25);
+  const tmp = type;
+  type = type.type;
+  ({ options, maxValues } = type);
+  if (cResult[0] !== options) {
+    let tmp5;
+    let tmp6;
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn = function n(arg0) {
+        return arg0.default;
+      };
+      cResult[2] = fn;
+      tmp5 = fn;
+    } else {
+      tmp5 = cResult[2];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn2 = function u(value) {
+        return value.value;
+      };
+      cResult[3] = fn2;
+      tmp6 = fn2;
+    } else {
+      tmp6 = cResult[3];
+    }
+    let found = options.filter(tmp5);
+    const mapped = found.map(tmp6);
+    cResult[0] = options;
+    cResult[1] = mapped;
+    arr = mapped;
+  } else {
+    arr = cResult[1];
+  }
+  if (cResult[4] === arr) {
+    let tmp8;
+    if (cResult[5] === type) {
+      tmp8 = cResult[6];
+    }
+    const tmpResult = tmp(tmp2[4]);
+    const componentState = tmpResult.useComponentState(type, tmp8);
+    ({ state, executeStateUpdate } = componentState);
+    if (cResult[7] === state) {
+      let tmp11;
+      if (cResult[8] === type) {
+        tmp11 = cResult[9];
+      }
+      jsx = tmp11;
+      if (cResult[10] === executeStateUpdate) {
+        if (cResult[11] === type) {
+          let tmp15;
+          if (cResult[12] === tmp11) {
+            tmp15 = cResult[13];
+          }
+          let closure_4 = tmp15;
+          if (cResult[14] === tmp15) {
+            if (cResult[15] === maxValues) {
+              if (cResult[16] === options) {
+                let tmp18;
+                if (cResult[23] !== tmp16) {
+                  class C {
+                    constructor(arg0) {
+                      closure_0 = type;
+                      return (arg0) => {
+                        let found;
+                        const tmp2 = arg0;
+                        if (tmp2) {
+                          const items = [];
+                          items[HermesBuiltin.arraySpread(items, closure_3, 0)] = closure_0;
+                          found = items;
+                        } else {
+                          found = arr.filter(function() { /* body not rendered: F151932 */ });
+                        }
+                        const obj = { type, values: found };
+                        executeStateUpdate(obj);
+                      };
+                    }
+                  }
+                  class R {
+                    constructor(label) {
+                      const hasItem = closure_3.includes(label.value);
+                      const TableCheckboxRow = TableCheckboxRow2.TableCheckboxRow;
+                      return <TableCheckboxRow key={arg0.value} label={arg0.label} subLabel={arg0.description} checked={hasItem} onPress={closure_4(arg0.value)} disabled={closure_3.length >= maxValues && !hasItem} />;
+                    }
+                  }
+                  cResult[23] = tmp16;
+                  cResult[24] = tmp20;
+                  tmp18 = tmp20;
+                } else {
+                  tmp18 = cResult[24];
+                }
+                return tmp18;
+              }
+            }
+          }
+          class C {
+            constructor(arg0) {
+              closure_0 = type;
+              return (arg0) => {
+                let found;
+                const tmp2 = arg0;
+                if (tmp2) {
+                  const items = [];
+                  items[HermesBuiltin.arraySpread(items, closure_3, 0)] = closure_0;
+                  found = items;
+                } else {
+                  found = arr.filter(function() { /* body not rendered: F151932 */ });
+                }
+                const obj = { type, values: found };
+                executeStateUpdate(obj);
+              };
+            }
+          }
+          class R {
+            constructor(label) {
+              const hasItem = closure_3.includes(label.value);
+              const TableCheckboxRow = TableCheckboxRow2.TableCheckboxRow;
+              return <TableCheckboxRow key={arg0.value} label={arg0.label} subLabel={arg0.description} checked={hasItem} onPress={closure_4(arg0.value)} disabled={closure_3.length >= maxValues && !hasItem} />;
+            }
+          }
+          cResult[19] = tmp15;
+          cResult[20] = maxValues;
+          cResult[21] = tmp11;
+          cResult[22] = R;
+        }
+      }
+      class C {
+        constructor(arg0) {
+          closure_0 = type;
+          return (arg0) => {
+            let found;
+            const tmp2 = arg0;
+            if (tmp2) {
+              const items = [];
+              items[HermesBuiltin.arraySpread(items, closure_3, 0)] = closure_0;
+              found = items;
+            } else {
+              found = arr.filter(function() { /* body not rendered: F151932 */ });
+            }
+            const obj = { type, values: found };
+            executeStateUpdate(obj);
+          };
+        }
+      }
+      cResult[10] = executeStateUpdate;
+      cResult[11] = type;
+      cResult[12] = tmp11;
+      cResult[13] = C;
+      tmp15 = C;
+    }
+    let type1;
+    if (state != null) {
+      type1 = state.type;
+    }
+    const tmp14 = type1 === type ? state.values : [];
+    cResult[7] = state;
+    cResult[8] = type;
+    cResult[9] = tmp14;
+    tmp11 = tmp14;
+  }
+  if (arr.length > 0) {
+    class C {
+      constructor(arg0) {
+        closure_0 = type;
+        return (arg0) => {
+          let found;
+          const tmp2 = arg0;
+          if (tmp2) {
+            const items = [];
+            items[HermesBuiltin.arraySpread(items, closure_3, 0)] = closure_0;
+            found = items;
+          } else {
+            found = arr.filter(function() { /* body not rendered: F151932 */ });
+          }
+          const obj = { type, values: found };
+          executeStateUpdate(obj);
+        };
+      }
+    }
+  }
+  cResult[4] = arr;
+  cResult[5] = type;
+  cResult[6] = undefined;
+  tmp8 = tmp9;
+}) : ((type) => {
   type = type.type;
   const options = type.options;
   const maxValues = type.maxValues;
@@ -23,7 +220,7 @@ const memoResult = react.memo((type) => {
   }, items);
   const tmp = type;
   let tmp2 = options;
-  let tmp3 = type(options[2]);
+  let tmp3 = type(options[4]);
   let tmp4;
   const useComponentState = tmp3.useComponentState;
   if (memo.length > 0) {
@@ -69,16 +266,16 @@ const memoResult = react.memo((type) => {
       };
       type = label.value;
       tmp3 = closure_5.length >= maxValues;
-      const TableCheckboxRow = type(options[4]).TableCheckboxRow;
+      const TableCheckboxRow = type(options[5]).TableCheckboxRow;
       if (tmp3) {
         tmp3 = !hasItem;
       }
       return tmp2(TableCheckboxRow, obj, label.value);
     })
   };
-  const TableRowGroup = tmp(tmp2[3]).TableRowGroup;
+  const TableRowGroup = tmp(tmp2[6]).TableRowGroup;
   return state(TableRowGroup, obj3);
-});
+}));
 const result = size.fileFinishedImporting("modules/interaction_components/native/actions/CheckboxGroupActionComponent.tsx");
 
 export default memoResult;

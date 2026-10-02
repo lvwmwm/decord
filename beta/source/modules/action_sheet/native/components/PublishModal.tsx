@@ -1,32 +1,131 @@
-// Module ID: 11165
-// Function ID: 11166
+// Module ID: 11035
+// Function ID: 11036
 // Name: PublishModal
-// Dependencies: [32, 19, 17, 21, 4836, 5753, 11166, 1177, 1115, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 21, 4837, 5754, 558, 576, 11036, 1189, 1127, 2]
 
-// Module 11165 (PublishModal)
+// Module 11035 (PublishModal)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1115 */;
-import native from "native" /* 1177 */;
-import LegacyTokens from "LegacyTokens" /* 5753 */;
-import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 11166 */;
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import LegacyTokens from "LegacyTokens" /* 5754 */;
+import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 11036 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let channelId;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
 ({ View: closure_4, ActivityIndicator: hasOwnProperty } = react_native);
 const jsx = Fragment.jsx;
-const obj = { alertContainer: { paddingTop: 16 }, alertLoading: { paddingTop: 62, paddingBottom: 46 }, alertBodyText: obj2 };
+let obj = { alertContainer: { paddingTop: 16 }, alertLoading: { paddingTop: 62, paddingBottom: 46 }, alertBodyText: obj2 };
 obj2 = { marginBottom: 16, fontSize: 16, lineHeight: 24, color: LegacyTokens.DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
 let closure_7 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/action_sheet/native/components/PublishModal.tsx");
-
-export default function PublishModal(channelId) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  const obj = react2;
+  const cResult = obj.c(10);
+  channelId = channelId.channelId;
+  const tmp4 = closure_7();
+  const tmp5 = _slicedToArray(useChannelFollowerStatsDefault(channelId), 2);
+  const first = tmp5[0];
+  if (tmp5[1]) {
+    let first1;
+    let tmp27;
+    const _Symbol = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp26 = <hasOwnProperty animating />;
+      cResult[0] = tmp26;
+      first1 = tmp26;
+    } else {
+      first1 = cResult[0];
+    }
+    if (cResult[1] !== tmp4.alertLoading) {
+      const tmp30 = <React3 style={tmp4.alertLoading}>{first1}</React3>;
+      cResult[1] = tmp4.alertLoading;
+      cResult[2] = tmp30;
+      tmp27 = tmp30;
+    } else {
+      tmp27 = cResult[2];
+    }
+    return tmp27;
+  } else {
+    let tmp15;
+    let guildsFollowing;
+    if (first != null) {
+      guildsFollowing = first.guildsFollowing;
+    }
+    let tmp9 = null != guildsFollowing;
+    if (tmp9) {
+      let guildsFollowing1;
+      if (first != null) {
+        guildsFollowing1 = first.guildsFollowing;
+      }
+      tmp9 = guildsFollowing1 > 0;
+    }
+    let guildsFollowing2;
+    const tmp11 = cResult[3];
+    if (first != null) {
+      guildsFollowing2 = first.guildsFollowing;
+    }
+    if (tmp11 === guildsFollowing2) {
+      if (cResult[4] === tmp9) {
+        let tmp13;
+        if (cResult[5] === tmp4.alertBodyText) {
+          tmp13 = cResult[6];
+        }
+        if (cResult[7] === tmp4.alertContainer) {
+          let tmp18;
+          if (cResult[8] === tmp13) {
+            tmp18 = cResult[9];
+          }
+          return tmp18;
+        }
+        const tmp21 = <React3 style={tmp4.alertContainer}>{tmp13}</React3>;
+        cResult[7] = tmp4.alertContainer;
+        cResult[8] = tmp13;
+        cResult[9] = tmp21;
+        tmp18 = tmp21;
+      }
+    }
+    const obj4 = { style: tmp4.alertBodyText, children: null };
+    const LegacyText = tmp(1189).LegacyText;
+    const intl = tmp(1127).intl;
+    const tmp14 = jsx;
+    if (tmp9) {
+      const format = intl.format;
+      let num2;
+      const GCGrNP = tmp(1127).t.GCGrNP;
+      if (first != null) {
+        num2 = first.guildsFollowing;
+      }
+      if (num2 == null) {
+        num2 = 0;
+      }
+      const obj5 = { numGuildsFollowing: num2 };
+      obj4.children = format(GCGrNP, obj5);
+      tmp15 = obj4;
+    } else {
+      obj4.children = intl.string(intl2.t["8FpqOs"]);
+      tmp15 = obj4;
+    }
+    const tmp14Result = tmp14(LegacyText, tmp15);
+    let guildsFollowing3;
+    if (first != null) {
+      guildsFollowing3 = first.guildsFollowing;
+    }
+    cResult[3] = guildsFollowing3;
+    cResult[4] = tmp9;
+    cResult[5] = tmp4.alertBodyText;
+    cResult[6] = tmp14Result;
+    tmp13 = tmp14Result;
+  }
+}) : ((channelId) => {
   channelId = channelId.channelId;
   const tmp = closure_7();
   const tmp3 = _slicedToArray(useChannelFollowerStatsDefault(channelId), 2);
@@ -52,7 +151,7 @@ export default function PublishModal(channelId) {
     if (tmp7) {
       const format = intl.format;
       let num2;
-      const GCGrNP = tmp11(1115).t.GCGrNP;
+      const GCGrNP = tmp11(1127).t.GCGrNP;
       if (first != null) {
         num2 = first.guildsFollowing;
       }
@@ -66,4 +165,7 @@ export default function PublishModal(channelId) {
     }
     return <tmp10 style={tmp.alertContainer}>{null}</tmp10>;
   }
-};
+});
+const result = size.fileFinishedImporting("modules/action_sheet/native/components/PublishModal.tsx");
+
+export default tmp4;

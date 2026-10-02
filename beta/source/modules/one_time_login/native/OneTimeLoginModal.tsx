@@ -1,32 +1,32 @@
-// Module ID: 13406
-// Function ID: 13407
+// Module ID: 13408
+// Function ID: 13409
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 502, 1372, 1074, 1229, 21, 4836, 576, 1613, 1479, 1365, 1241, 5039, 4692, 1101, 5205, 5209, 6028, 1115, 5209, 6010, 5437, 4652, 13407, 4832, 6361, 2]
-// Exports: default
+// Dependencies: [5, 19, 17, 502, 1378, 1086, 1241, 21, 4837, 588, 558, 576, 1619, 1485, 1371, 1253, 5040, 4694, 1113, 5206, 5210, 6351, 1127, 5210, 6005, 5438, 4654, 13409, 4833, 6358, 2]
 
-// Module 13406 (OneTimeLoginModal)
-import nativeDefault from "native" /* 576 */;
-import intl4 from "intl" /* 1115 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1229 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import useAlertStore from "useAlertStore" /* 5205 */;
-import AlertModal2 from "AlertModal" /* 5209 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5437 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6028 */;
+// Module 13408 (OneTimeLoginModal)
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1241 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1485 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import useAlertStore from "useAlertStore" /* 5206 */;
+import AlertModal2 from "AlertModal" /* 5210 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5438 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6351 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let bottom, c4, c5, dependencyMap, importDefault;
+let _require, bottom, c4, c5, dependencyMap, importDefault, onPress, token;
 
 let c10;
 let closure_14;
@@ -53,12 +53,445 @@ obj4 = { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_8, a
 obj5 = { textDecorationLine: "underline", textDecorationColor: nativeDefault.colors.TEXT_DEFAULT, flexShrink: 1 };
 size = { width: 64, height: 64, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, alignSelf: "center" };
 let closure_15 = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/one_time_login/native/OneTimeLoginModal.tsx");
-
-export default function OneTimeLoginModal(token) {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((token) => {
   let closure_1;
-  let constants2;
+  const tmp = token;
+  let obj = token(576);
+  const cResult = obj.c(46);
+  token = token.token;
+  const tmp4 = closure_15();
+  importDefault = tmp4;
+  const tmp5 = useSafeAreaInsetsDefault();
+  const height = useWindowDimensionsDefault().height;
+  if (cResult[0] === tmp5.bottom) {
+    let tmp6;
+    let tmp9;
+    let tmp8;
+    let tmp13;
+    let tmp15;
+    if (cResult[1] === height) {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] !== tmp6) {
+      let obj2 = { height: tmp6 };
+      cResult[3] = tmp6;
+      cResult[4] = obj2;
+    }
+    if (cResult[5] !== token) {
+      class T {
+        constructor() {
+          const obj = AnalyticsUtilsDefault;
+          const obj2 = { has_token: null != token };
+          obj.track(unpackModuleId.ONE_TIME_LOGIN_MODAL_OPENED, obj2);
+          const obj3 = AnalyticsUtilsDefault;
+          obj3.track(unpackModuleId.DEEP_LINK_CLICKED, { source: "native_modal", destination: "one_time_login_native_modal", deep_link_provider: "native_app" });
+        }
+      }
+      const items = [token];
+      cResult[5] = token;
+      cResult[6] = T;
+      cResult[7] = items;
+      tmp9 = items;
+      tmp8 = T;
+    } else {
+      class T {
+        constructor() {
+          const obj = AnalyticsUtilsDefault;
+          const obj2 = { has_token: null != token };
+          obj.track(unpackModuleId.ONE_TIME_LOGIN_MODAL_OPENED, obj2);
+          const obj3 = AnalyticsUtilsDefault;
+          obj3.track(unpackModuleId.DEEP_LINK_CLICKED, { source: "native_modal", destination: "one_time_login_native_modal", deep_link_provider: "native_app" });
+        }
+      }
+      tmp9 = cResult[7];
+    }
+    const effect = S.useEffect(tmp8, tmp9);
+    const _Symbol = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      class T {
+        constructor() {
+          const obj = AnalyticsUtilsDefault;
+          const obj2 = { has_token: null != token };
+          obj.track(unpackModuleId.ONE_TIME_LOGIN_MODAL_OPENED, obj2);
+          const obj3 = AnalyticsUtilsDefault;
+          obj3.track(unpackModuleId.DEEP_LINK_CLICKED, { source: "native_modal", destination: "one_time_login_native_modal", deep_link_provider: "native_app" });
+        }
+      }
+      cResult[8] = tmp14;
+      tmp13 = tmp14;
+    } else {
+      class T {
+        constructor() {
+          const obj = AnalyticsUtilsDefault;
+          const obj2 = { has_token: null != token };
+          obj.track(unpackModuleId.ONE_TIME_LOGIN_MODAL_OPENED, obj2);
+          const obj3 = AnalyticsUtilsDefault;
+          obj3.track(unpackModuleId.DEEP_LINK_CLICKED, { source: "native_modal", destination: "one_time_login_native_modal", deep_link_provider: "native_app" });
+        }
+      }
+    }
+    dependencyMap = tmp13;
+    const _Symbol2 = Symbol;
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      class D {
+        constructor() {
+          const obj = closure_1(dependencyMap[15]);
+          obj.track(constants2.ONE_TIME_LOGIN_MODAL_CANCEL_CLICKED, { current_state: "already_logged_in" });
+          const obj2 = closure_1(dependencyMap[16]);
+          obj2.popWithKey("ONE_TIME_LOGIN_MODAL");
+          const obj3 = token(dependencyMap[18]);
+          obj3.transitionTo(constants.ME);
+        }
+      }
+      cResult[9] = D;
+      tmp15 = D;
+    } else {
+      class D {
+        constructor() {
+          const obj = closure_1(dependencyMap[15]);
+          obj.track(constants2.ONE_TIME_LOGIN_MODAL_CANCEL_CLICKED, { current_state: "already_logged_in" });
+          const obj2 = closure_1(dependencyMap[16]);
+          obj2.popWithKey("ONE_TIME_LOGIN_MODAL");
+          const obj3 = token(dependencyMap[18]);
+          obj3.transitionTo(constants.ME);
+        }
+      }
+    }
+    D = tmp15;
+    if (cResult[10] !== tmp4.raisedIcon) {
+      class S {
+        constructor() {
+          let AlertActionButton;
+          let AlertActions;
+          let intl;
+          let intl2;
+          let intl3;
+          let obj2;
+          let obj3;
+          let obj4;
+          const openAlert = useAlertStore.openAlert;
+          const obj = { header: map1(hasOwnProperty, obj2), title: intl.string(intl4.t.L6htwI), content: intl2.string(intl4.t["4fnE/J"]), actions: map1(AlertActions, obj3) };
+          obj2 = { style: closure_1.raisedIcon, children: map1(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+          useAlertStore;
+          const AlertModal = AlertModal2.AlertModal;
+          intl = intl4.intl;
+          intl2 = intl4.intl;
+          obj3 = { children: map1(AlertActionButton, obj4, "confirm") };
+          AlertActions = AlertModal2.AlertActions;
+          obj4 = { onPress: dependencyMap, text: intl3.string(intl4.t["9vN0pz"]) };
+          AlertActionButton = AlertModal2.AlertActionButton;
+          intl3 = intl4.intl;
+          openAlert("invalid-login-alert", map1(AlertModal, obj));
+        }
+      }
+      cResult[10] = tmp4.raisedIcon;
+      cResult[11] = S;
+    } else {
+      class S {
+        constructor() {
+          let AlertActionButton;
+          let AlertActions;
+          let intl;
+          let intl2;
+          let intl3;
+          let obj2;
+          let obj3;
+          let obj4;
+          const openAlert = useAlertStore.openAlert;
+          const obj = { header: map1(hasOwnProperty, obj2), title: intl.string(intl4.t.L6htwI), content: intl2.string(intl4.t["4fnE/J"]), actions: map1(AlertActions, obj3) };
+          obj2 = { style: closure_1.raisedIcon, children: map1(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+          useAlertStore;
+          const AlertModal = AlertModal2.AlertModal;
+          intl = intl4.intl;
+          intl2 = intl4.intl;
+          obj3 = { children: map1(AlertActionButton, obj4, "confirm") };
+          AlertActions = AlertModal2.AlertActions;
+          obj4 = { onPress: dependencyMap, text: intl3.string(intl4.t["9vN0pz"]) };
+          AlertActionButton = AlertModal2.AlertActionButton;
+          intl3 = intl4.intl;
+          openAlert("invalid-login-alert", map1(AlertModal, obj));
+        }
+      }
+    }
+    S = tmp16;
+    if (cResult[12] !== tmp4.raisedIcon) {
+      class P {
+        constructor() {
+          let AlertActionButton;
+          let AlertActions;
+          let YOeM7B;
+          let formatToPlainString;
+          let intl;
+          let intl3;
+          let obj2;
+          let obj3;
+          let obj4;
+          let str;
+          const openAlert = useAlertStore.openAlert;
+          const obj = { header: map1(hasOwnProperty, obj2), title: intl.string(intl4.t.MKW8z2), content: formatToPlainString(YOeM7B, { username: str }), actions: map1(AlertActions, obj3) };
+          obj2 = { style: closure_1.raisedIcon, children: map1(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+          useAlertStore;
+          const AlertModal = AlertModal2.AlertModal;
+          intl = intl4.intl;
+          const intl2 = intl4.intl;
+          formatToPlainString = intl2.formatToPlainString;
+          YOeM7B = intl4.t.YOeM7B;
+          const currentUser = UserStore.getCurrentUser();
+          str = undefined;
+          if (currentUser != null) {
+            str = currentUser.username;
+          }
+          if (str == null) {
+            str = "current user";
+          }
+          obj3 = { children: map1(AlertActionButton, obj4, "confirm") };
+          AlertActions = tmp(5210).AlertActions;
+          obj4 = { onPress: D, text: intl3.string(intl4.t["3PatSz"]) };
+          AlertActionButton = tmp(5210).AlertActionButton;
+          intl3 = tmp(1127).intl;
+          openAlert("already-logged-in-alert", map1(AlertModal, obj));
+        }
+      }
+      cResult[12] = tmp4.raisedIcon;
+      cResult[13] = P;
+    } else {
+      class P {
+        constructor() {
+          let AlertActionButton;
+          let AlertActions;
+          let YOeM7B;
+          let formatToPlainString;
+          let intl;
+          let intl3;
+          let obj2;
+          let obj3;
+          let obj4;
+          let str;
+          const openAlert = useAlertStore.openAlert;
+          const obj = { header: map1(hasOwnProperty, obj2), title: intl.string(intl4.t.MKW8z2), content: formatToPlainString(YOeM7B, { username: str }), actions: map1(AlertActions, obj3) };
+          obj2 = { style: closure_1.raisedIcon, children: map1(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+          useAlertStore;
+          const AlertModal = AlertModal2.AlertModal;
+          intl = intl4.intl;
+          const intl2 = intl4.intl;
+          formatToPlainString = intl2.formatToPlainString;
+          YOeM7B = intl4.t.YOeM7B;
+          const currentUser = UserStore.getCurrentUser();
+          str = undefined;
+          if (currentUser != null) {
+            str = currentUser.username;
+          }
+          if (str == null) {
+            str = "current user";
+          }
+          obj3 = { children: map1(AlertActionButton, obj4, "confirm") };
+          AlertActions = tmp(5210).AlertActions;
+          obj4 = { onPress: D, text: intl3.string(intl4.t["3PatSz"]) };
+          AlertActionButton = tmp(5210).AlertActionButton;
+          intl3 = tmp(1127).intl;
+          openAlert("already-logged-in-alert", map1(AlertModal, obj));
+        }
+      }
+    }
+    P = tmp17;
+    if (cResult[14] === tmp17) {
+      class P {
+        constructor() {
+          let AlertActionButton;
+          let AlertActions;
+          let YOeM7B;
+          let formatToPlainString;
+          let intl;
+          let intl3;
+          let obj2;
+          let obj3;
+          let obj4;
+          let str;
+          const openAlert = useAlertStore.openAlert;
+          const obj = { header: map1(hasOwnProperty, obj2), title: intl.string(intl4.t.MKW8z2), content: formatToPlainString(YOeM7B, { username: str }), actions: map1(AlertActions, obj3) };
+          obj2 = { style: closure_1.raisedIcon, children: map1(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+          useAlertStore;
+          const AlertModal = AlertModal2.AlertModal;
+          intl = intl4.intl;
+          const intl2 = intl4.intl;
+          formatToPlainString = intl2.formatToPlainString;
+          YOeM7B = intl4.t.YOeM7B;
+          const currentUser = UserStore.getCurrentUser();
+          str = undefined;
+          if (currentUser != null) {
+            str = currentUser.username;
+          }
+          if (str == null) {
+            str = "current user";
+          }
+          obj3 = { children: map1(AlertActionButton, obj4, "confirm") };
+          AlertActions = tmp(5210).AlertActions;
+          obj4 = { onPress: D, text: intl3.string(intl4.t["3PatSz"]) };
+          AlertActionButton = tmp(5210).AlertActionButton;
+          intl3 = tmp(1127).intl;
+          openAlert("already-logged-in-alert", map1(AlertModal, obj));
+        }
+      }
+    }
+    _require = D(function*(arg0, value) {
+      let obj6;
+      let v1;
+      let v3;
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        let c3;
+        try {
+          let message;
+          let str;
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              message = tmp;
+              closure_0 = tmp4;
+              str = undefined;
+              c3 = 1;
+              if (null == closure_0) {
+                const obj9 = closure_2_1(onPress[15]);
+                obj9.track(constants.ONE_TIME_LOGIN_ERROR, { source: "native_modal", error_reason: "missing_token", error_message: "No token provided" });
+                c4();
+                c3 = 0;
+                c5 = 3;
+                const obj7 = { value: undefined, done: true };
+                return obj7;
+              } else if (authenticated.isAuthenticated()) {
+                c5();
+                c3 = 0;
+                c5 = 3;
+                const obj8 = { value: undefined, done: true };
+                return obj8;
+              } else {
+                const obj5 = closure_2_1(onPress[15]);
+                obj5.track(constants.ONE_TIME_LOGIN_ATTEMPTED, { source: "native_modal" });
+                c4 = 2;
+                c5 = 1;
+                const obj10 = { value: obj6.oneTimeLogin(tmp49), done: false };
+                obj6 = closure_2_1(onPress[24]);
+                return obj10;
+              }
+            }
+          } else {
+            if (1 === c4) {
+              c3 = 0;
+              message = closure_2;
+              const _Error = Error;
+              str = "Login failed";
+              if (message instanceof Error) {
+                str = message.message;
+              }
+              const obj11 = { source: "native_modal", error_reason: "api_error", error_message: str };
+              const obj3 = closure_2_1(onPress[15]);
+              obj3.track(constants.ONE_TIME_LOGIN_ERROR, obj11);
+              c4();
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c5 = 3;
+              const obj12 = { value, done: true };
+              return obj12;
+            } else {
+              let obj = closure_2_1(onPress[15]);
+              obj.track(constants.LOGIN_SUCCESSFUL, { source: "native_modal", login_method: "one_time_login" });
+              const _setTimeout = setTimeout;
+              const timerId = setTimeout(() => {
+                const obj = message(closure_1_2[16]);
+                obj.popWithKey("ONE_TIME_LOGIN_MODAL");
+              }, 1500);
+              c3 = 0;
+            }
+            c5 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp41) {
+          closure_2 = tmp41;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp41;
+          } else {
+            c4 = 1;
+          }
+        }
+      }
+    });
+    const fn = function() {
+      return closure_0(...arguments);
+    };
+    cResult[14] = tmp17;
+    cResult[15] = tmp16;
+    cResult[16] = token;
+    cResult[17] = fn;
+  }
+  let str = "100%";
+  const tmpResult = tmp(1371);
+  if (tmpResult.isAndroid()) {
+    class P {
+      constructor() {
+        let AlertActionButton;
+        let AlertActions;
+        let YOeM7B;
+        let formatToPlainString;
+        let intl;
+        let intl3;
+        let obj2;
+        let obj3;
+        let obj4;
+        let str;
+        const openAlert = useAlertStore.openAlert;
+        const obj = { header: map1(hasOwnProperty, obj2), title: intl.string(intl4.t.MKW8z2), content: formatToPlainString(YOeM7B, { username: str }), actions: map1(AlertActions, obj3) };
+        obj2 = { style: closure_1.raisedIcon, children: map1(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+        useAlertStore;
+        const AlertModal = AlertModal2.AlertModal;
+        intl = intl4.intl;
+        const intl2 = intl4.intl;
+        formatToPlainString = intl2.formatToPlainString;
+        YOeM7B = intl4.t.YOeM7B;
+        const currentUser = UserStore.getCurrentUser();
+        str = undefined;
+        if (currentUser != null) {
+          str = currentUser.username;
+        }
+        if (str == null) {
+          str = "current user";
+        }
+        obj3 = { children: map1(AlertActionButton, obj4, "confirm") };
+        AlertActions = tmp(5210).AlertActions;
+        obj4 = { onPress: D, text: intl3.string(intl4.t["3PatSz"]) };
+        AlertActionButton = tmp(5210).AlertActionButton;
+        intl3 = tmp(1127).intl;
+        openAlert("already-logged-in-alert", map1(AlertModal, obj));
+      }
+    }
+  }
+  cResult[0] = tmp5.bottom;
+  cResult[1] = height;
+  cResult[2] = str;
+  tmp6 = str;
+}) : ((token) => {
+  let closure_1;
   let intl;
   let intl2;
   let intl3;
@@ -69,7 +502,7 @@ export default function OneTimeLoginModal(token) {
   let items9;
   let obj3;
   token = token.token;
-  let onPress;
+  onPress = undefined;
   let tmp = closure_15();
   importDefault = tmp;
   const tmp2 = useSafeAreaInsetsDefault();
@@ -93,19 +526,19 @@ export default function OneTimeLoginModal(token) {
     obj3.track(unpackModuleId.DEEP_LINK_CLICKED, { source: "native_modal", destination: "one_time_login_native_modal", deep_link_provider: "native_app" });
   }, items1);
   onPress = onPress.useCallback(() => {
-    const obj = closure_1(bottom[13]);
+    const obj = closure_1(bottom[15]);
     obj.track(constants2.ONE_TIME_LOGIN_MODAL_CANCEL_CLICKED, { current_state: "loading" });
-    const obj2 = closure_1(bottom[14]);
+    const obj2 = closure_1(bottom[16]);
     obj2.popWithKey("ONE_TIME_LOGIN_MODAL");
-    const obj3 = token(bottom[15]);
+    const obj3 = token(bottom[17]);
     obj3.resetToAuthRoute();
   }, []);
   const callback1 = onPress.useCallback(() => {
-    const obj = closure_1(bottom[13]);
+    const obj = closure_1(bottom[15]);
     obj.track(constants2.ONE_TIME_LOGIN_MODAL_CANCEL_CLICKED, { current_state: "already_logged_in" });
-    const obj2 = closure_1(bottom[14]);
+    const obj2 = closure_1(bottom[16]);
     obj2.popWithKey("ONE_TIME_LOGIN_MODAL");
-    const obj3 = token(bottom[16]);
+    const obj3 = token(bottom[18]);
     obj3.transitionTo(constants.ME);
   }, []);
   const items2 = [onPress, tmp.raisedIcon];
@@ -162,10 +595,10 @@ export default function OneTimeLoginModal(token) {
       str = "current user";
     }
     obj3 = { children: map1(AlertActionButton, obj4, "confirm") };
-    AlertActions = tmp(5209).AlertActions;
+    AlertActions = tmp(5210).AlertActions;
     obj4 = { onPress: callback1, text: intl3.string(intl4.t["3PatSz"]) };
-    AlertActionButton = tmp(5209).AlertActionButton;
-    intl3 = tmp(1115).intl;
+    AlertActionButton = tmp(5210).AlertActionButton;
+    intl3 = tmp(1127).intl;
     openAlert("already-logged-in-alert", map1(AlertModal, obj));
   }, items3);
   const items4 = [token, callback2, callback3];
@@ -183,7 +616,7 @@ export default function OneTimeLoginModal(token) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -203,7 +636,7 @@ export default function OneTimeLoginModal(token) {
             str = undefined;
             c3 = 1;
             if (null == token) {
-              const obj9 = tmp(bottom[13]);
+              const obj9 = tmp(bottom[15]);
               obj9.track(constants.ONE_TIME_LOGIN_ERROR, { source: "native_modal", error_reason: "missing_token", error_message: "No token provided" });
               callback2();
               c3 = 0;
@@ -217,12 +650,12 @@ export default function OneTimeLoginModal(token) {
               const obj8 = { value: undefined, done: true };
               return obj8;
             } else {
-              const obj5 = tmp(bottom[13]);
+              const obj5 = tmp(bottom[15]);
               obj5.track(constants.ONE_TIME_LOGIN_ATTEMPTED, { source: "native_modal" });
               c4 = 2;
               c5 = 1;
               const obj10 = { value: obj6.oneTimeLogin(tmp49), done: false };
-              obj6 = tmp(bottom[22]);
+              obj6 = tmp(bottom[24]);
               return obj10;
             }
           }
@@ -236,7 +669,7 @@ export default function OneTimeLoginModal(token) {
               str = tmp.message;
             }
             const obj11 = { source: "native_modal", error_reason: "api_error", error_message: str };
-            const obj3 = tmp(bottom[13]);
+            const obj3 = tmp(bottom[15]);
             obj3.track(constants.ONE_TIME_LOGIN_ERROR, obj11);
             closure_129_6();
           } else if (arg0 === 1) {
@@ -248,17 +681,17 @@ export default function OneTimeLoginModal(token) {
             const obj12 = { value, done: true };
             return obj12;
           } else {
-            let obj = tmp(bottom[13]);
+            let obj = tmp(bottom[15]);
             obj.track(constants.LOGIN_SUCCESSFUL, { source: "native_modal", login_method: "one_time_login" });
             const _setTimeout = setTimeout;
             const timerId = setTimeout(() => {
-              const obj = closure_1_1(closure_1_2[14]);
+              const obj = closure_1_1(closure_1_2[16]);
               obj.popWithKey("ONE_TIME_LOGIN_MODAL");
             }, 1500);
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp41) {
         bottom = tmp41;
@@ -277,31 +710,35 @@ export default function OneTimeLoginModal(token) {
   }, items5);
   let obj = { style: memo, children: items6 };
   let obj2 = { absolute: true, wide: true, tall: true, gradientOverride: closure_12[5], mix: true, angleOverride: 0, mixAmount: obj3 };
-  obj3 = { dark: token(4652).OverlayOpacity.LEVEL_1 };
+  obj3 = { dark: token(4654).OverlayOpacity.LEVEL_1 };
   const tmp11 = ThemedGradientDefault;
   items6 = [closure_13(tmp11, obj2), ];
   let obj4 = { style: tmp.container, children: items9 };
   let obj5 = { style: tmp.centerContent, children: items7 };
-  let obj6 = { source: token(13407), style: tmp.logo };
+  let obj6 = { source: token(13409), style: tmp.logo };
   items7 = [closure_13(callback3, obj6), ];
   let obj7 = { style: tmp.loadingContainer, children: items8 };
   items8 = [closure_13(callback2, {}), ];
-  let obj8 = { variant: "text-lg/semibold", children: intl.string(token(1115).t.W9uNdG) };
-  const Text = token(4832).Text;
-  intl = token(1115).intl;
+  let obj8 = { variant: "text-lg/semibold", children: intl.string(token(1127).t.W9uNdG) };
+  const Text = token(4833).Text;
+  intl = token(1127).intl;
   items8[1] = closure_13(Text, obj8);
   items7[1] = closure_14(callback1, obj7);
   items9 = [closure_14(callback1, obj5), ];
   let obj9 = { style: tmp.bottomContent, children: items10 };
-  let obj10 = { variant: "text-sm/normal", children: intl2.string(token(1115).t["ZXe5/Y"]) };
-  const Text2 = token(4832).Text;
-  intl2 = token(1115).intl;
+  let obj10 = { variant: "text-sm/normal", children: intl2.string(token(1127).t["ZXe5/Y"]) };
+  const Text2 = token(4833).Text;
+  intl2 = token(1127).intl;
   items10 = [closure_13(Text2, obj10), ];
-  let obj11 = { textColor: "text-default", text: intl3.string(token(1115).t.FIEwfG), variant: "text-sm/medium", onPress, textStyle: tmp.link };
-  const LinkButton = token(6361).LinkButton;
-  intl3 = token(1115).intl;
+  let obj11 = { textColor: "text-default", text: intl3.string(token(1127).t.FIEwfG), variant: "text-sm/medium", onPress, textStyle: tmp.link };
+  const LinkButton = token(6358).LinkButton;
+  intl3 = token(1127).intl;
   items10[1] = closure_13(LinkButton, obj11);
   items9[1] = closure_14(callback1, obj9);
   items6[1] = closure_14(callback1, obj4);
   return closure_14(callback1, obj);
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/one_time_login/native/OneTimeLoginModal.tsx");
+
+export default tmp6;

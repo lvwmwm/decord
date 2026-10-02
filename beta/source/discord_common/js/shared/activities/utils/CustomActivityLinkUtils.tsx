@@ -1,10 +1,10 @@
-// Module ID: 12499
-// Function ID: 12500
+// Module ID: 12501
+// Function ID: 12502
 // Name: utils/CustomActivityLinkUtils
 // Dependencies: [32, 2]
 // Exports: decodeCustomActivityLink
 
-// Module 12499 (utils/CustomActivityLinkUtils)
+// Module 12501 (utils/CustomActivityLinkUtils)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

@@ -1,27 +1,141 @@
-// Module ID: 15587
-// Function ID: 15588
+// Module ID: 15589
+// Function ID: 15590
 // Name: RegisterPhoneOrEmailInput
-// Dependencies: [19, 6362, 15570, 21, 1485, 13992, 504, 6382, 1094, 1115, 6381, 2]
-// Exports: RegisterPhoneOrEmailInput
+// Dependencies: [19, 6359, 15572, 21, 558, 576, 1491, 13994, 504, 6379, 1106, 1127, 6378, 2]
 
-// Module 15587 (RegisterPhoneOrEmailInput)
+// Module 15589 (RegisterPhoneOrEmailInput)
 import Fragment from "Fragment" /* 21 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6382 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6379 */;
 import react from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 6362 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15570 */;
+import PhoneStore from "PhoneStore" /* 6359 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15572 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation;
+let loginPhone, navigation;
 
 let hasOwnProperty;
 let metroRequire;
 ({ setRegistrationErrors: hasOwnProperty, useRegistrationUIStore: metroRequire } = RegistrationUIStore);
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/auth/native/components/RegisterPhoneOrEmailInput.tsx");
-
-export const RegisterPhoneOrEmailInput = function RegisterPhoneOrEmailInput(loginPhone) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((loginPhone) => {
+  let autoFocus;
+  let closure_8;
+  let inputError;
+  let onSubmit;
+  let setLoginPhone;
+  let submitBehavior;
+  let tmp15;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  const tmp = loginPhone;
+  const tmp2 = setLoginPhone;
+  let obj = loginPhone(setLoginPhone[5]);
+  const cResult = obj.c(37);
+  loginPhone = loginPhone.loginPhone;
+  const loginEmail = loginPhone.loginEmail;
+  setLoginPhone = loginPhone.setLoginPhone;
+  const setLoginEmail = loginPhone.setLoginEmail;
+  const inputMode = loginPhone.inputMode;
+  ({ onSubmit, inputError, submitBehavior, autoFocus } = loginPhone);
+  const obj2 = loginPhone(setLoginPhone[6]);
+  navigation = obj2.useNavigation();
+  const ref = setLoginEmail.useRef(null);
+  if (autoFocus == null) {
+    autoFocus = false;
+  }
+  if (cResult[0] !== autoFocus) {
+    const obj3 = { inputRef: ref, enabled: autoFocus };
+    cResult[0] = autoFocus;
+    cResult[1] = obj3;
+    tmp6 = obj3;
+  } else {
+    tmp6 = cResult[1];
+  }
+  loginEmail(tmp2[7])(tmp6);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [inputMode];
+    class E {
+      constructor() {
+        return inputMode.getCountryCode();
+      }
+    }
+    cResult[2] = items;
+    cResult[3] = E;
+    tmp9 = E;
+    tmp8 = items;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult = tmp(tmp2[8]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
+      constructor(errors) {
+        return errors.errors;
+      }
+    }
+    cResult[4] = T;
+    class E {
+      constructor() {
+        return inputMode.getCountryCode();
+      }
+    }
+  } else {
+    class T {
+      constructor(errors) {
+        return errors.errors;
+      }
+    }
+  }
+  const tmp13 = ref(tmp12);
+  let closure_7 = tmp13;
+  if (cResult[5] !== tmp13) {
+    class T {
+      constructor(errors) {
+        return errors.errors;
+      }
+    }
+    cResult[5] = tmp13;
+    class E {
+      constructor() {
+        return inputMode.getCountryCode();
+      }
+    }
+    cResult[6] = tmp15;
+  } else {
+    class T {
+      constructor(errors) {
+        return errors.errors;
+      }
+    }
+  }
+  tmp15 = tmp14;
+  if (cResult[7] === tmp14) {
+    class T {
+      constructor(errors) {
+        return errors.errors;
+      }
+    }
+  }
+  const fn = function k(arg0, arg1) {
+    if (inputMode === PhoneOrEmailUtils.PhoneOrEmailSelectorForceMode.PHONE) {
+      tmp15("phone");
+      setLoginPhone(arg0, arg1);
+    } else {
+      tmp15("email");
+      setLoginEmail(arg0);
+    }
+  };
+  cResult[7] = tmp14;
+  cResult[8] = inputMode;
+  cResult[9] = setLoginEmail;
+  cResult[10] = setLoginPhone;
+  cResult[11] = fn;
+}) : ((loginPhone) => {
   let autoFocus;
   let inputError;
   let onSubmit;
@@ -42,18 +156,18 @@ export const RegisterPhoneOrEmailInput = function RegisterPhoneOrEmailInput(logi
   const tmp = loginPhone;
   const tmp2 = setLoginPhone;
   ({ onSubmit, submitBehavior } = loginPhone);
-  let obj = loginPhone(setLoginPhone[4]);
+  let obj = loginPhone(setLoginPhone[6]);
   navigation = obj.useNavigation();
   let ref = setLoginEmail.useRef(null);
   const obj3 = { inputRef: ref, enabled: autoFocus };
   const tmp5 = loginEmail;
-  const tmp6 = loginEmail(setLoginPhone[5]);
+  const tmp6 = loginEmail(setLoginPhone[7]);
   if (autoFocus == null) {
     autoFocus = false;
   }
   tmp6(obj3);
   const items = [inputMode];
-  const tmpResult = tmp(tmp2[6]);
+  const tmpResult = tmp(tmp2[8]);
   const stateFromStores = tmpResult.useStateFromStores(items, () => inputMode.getCountryCode());
   const code = stateFromStores.code;
   const tmp9 = ref((errors) => errors.errors);
@@ -99,29 +213,29 @@ export const RegisterPhoneOrEmailInput = function RegisterPhoneOrEmailInput(logi
       }
     }
   }, items4);
-  if (inputMode === tmp(tmp2[7]).PhoneOrEmailSelectorForceMode.PHONE) {
-    const intl2 = tmp(tmp2[9]).intl;
-    stringResult = intl2.string(tmp(tmp2[9]).t["eJnn0+"]);
+  if (inputMode === tmp(tmp2[9]).PhoneOrEmailSelectorForceMode.PHONE) {
+    const intl2 = tmp(tmp2[11]).intl;
+    stringResult = intl2.string(tmp(tmp2[11]).t["eJnn0+"]);
   } else {
-    const intl = tmp(tmp2[9]).intl;
-    stringResult = intl.string(tmp(tmp2[9]).t.dI4d4S);
+    const intl = tmp(tmp2[11]).intl;
+    stringResult = intl.string(tmp(tmp2[11]).t.dI4d4S);
   }
-  if (inputMode === tmp(tmp2[7]).PhoneOrEmailSelectorForceMode.PHONE) {
-    const intl4 = tmp(tmp2[9]).intl;
-    stringResult1 = intl4.string(tmp(tmp2[9]).t.wpJ1dT);
+  if (inputMode === tmp(tmp2[9]).PhoneOrEmailSelectorForceMode.PHONE) {
+    const intl4 = tmp(tmp2[11]).intl;
+    stringResult1 = intl4.string(tmp(tmp2[11]).t.wpJ1dT);
   } else {
-    const intl3 = tmp(tmp2[9]).intl;
-    stringResult1 = intl3.string(tmp(tmp2[9]).t.a17rBk);
+    const intl3 = tmp(tmp2[11]).intl;
+    stringResult1 = intl3.string(tmp(tmp2[11]).t.a17rBk);
   }
   const obj4 = { ref, alpha2: stateFromStores.alpha2, countryCode: code, onChange: callback1, onSubmitEditing: onSubmit, placeholder: stringResult, returnKeyType: "next", autoCapitalize: "none", accessibilityHint: stringResult1, label: stringResult, errorMessage: inputError, onPressCountrySelector: callback2, forceMode: inputMode, submitBehavior, autoComplete: str, keyboardType: str2, clearable: true, status: str3 };
   str = "email";
   const tmp16 = closure_7;
-  const tmp5Result = tmp5(tmp2[10]);
-  if (inputMode === tmp(tmp2[7]).PhoneOrEmailSelectorForceMode.PHONE) {
+  const tmp5Result = tmp5(tmp2[12]);
+  if (inputMode === tmp(tmp2[9]).PhoneOrEmailSelectorForceMode.PHONE) {
     str = "tel";
   }
   str2 = "email-address";
-  if (inputMode === tmp(tmp2[7]).PhoneOrEmailSelectorForceMode.PHONE) {
+  if (inputMode === tmp(tmp2[9]).PhoneOrEmailSelectorForceMode.PHONE) {
     str2 = "number-pad";
   }
   str3 = undefined;
@@ -129,4 +243,7 @@ export const RegisterPhoneOrEmailInput = function RegisterPhoneOrEmailInput(logi
     str3 = "error";
   }
   return tmp16(tmp5Result, obj4);
-};
+});
+const result = size.fileFinishedImporting("modules/auth/native/components/RegisterPhoneOrEmailInput.tsx");
+
+export const RegisterPhoneOrEmailInput = tmp3;

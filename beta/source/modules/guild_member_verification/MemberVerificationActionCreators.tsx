@@ -1,20 +1,20 @@
-// Module ID: 5859
-// Function ID: 5860
+// Module ID: 5860
+// Function ID: 5861
 // Name: MemberVerificationActionCreators
-// Dependencies: [5, 2101, 2108, 4817, 1372, 1074, 1271, 4818, 573, 5860, 5864, 4658, 5865, 5203, 1115, 4735, 1241, 2]
+// Dependencies: [5, 2104, 2111, 4818, 1378, 1086, 1283, 4819, 585, 5861, 5865, 4660, 5866, 5204, 1127, 4737, 1253, 2]
 // Exports: showCoachmark
 
-// Module 5859 (MemberVerificationActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 4818 */;
+// Module 5860 (MemberVerificationActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 4819 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 2101 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import InviteStore from "InviteStore" /* 4817 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import ImpersonateStore from "ImpersonateStore" /* 2104 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import InviteStore from "InviteStore" /* 4818 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_6, currentUser, isMember, message, status;
@@ -63,7 +63,7 @@ let obj = function _fetchVerificationForm() {
       const obj7 = { type: "MEMBER_VERIFICATION_FORM_FETCH_FAIL", guildId };
       const obj5 = closure_132_1(closure_132_2[8]);
       obj5.dispatch(obj7);
-      closure_1 = await "HermesInternal";
+      closure_1 = await "IconComponent";
       if (null == closure_1.body) {
         throw closure_1;
       }
@@ -101,7 +101,7 @@ obj = function _updateVerificationForm() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -141,7 +141,7 @@ obj = function _updateVerificationForm() {
             const obj5 = closure_133_1(closure_133_2[8]);
             obj5.dispatch(obj7);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp5) {
           c7 = 3;
@@ -169,7 +169,7 @@ obj = function _updateVerificationFormDescription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -209,7 +209,7 @@ obj = function _updateVerificationFormDescription() {
             const obj5 = closure_131_1(closure_131_2[8]);
             obj5.dispatch(obj7);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp5) {
           c5 = 3;
@@ -237,7 +237,7 @@ obj = function _enableVerificationForm() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -268,7 +268,7 @@ obj = function _enableVerificationForm() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp4) {
           c2 = 3;
@@ -304,7 +304,7 @@ obj = function _submitVerificationForm() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -328,7 +328,7 @@ obj = function _submitVerificationForm() {
               body = undefined;
               c8 = 1;
               c9 = 1;
-              return { value: "flex", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {
@@ -342,7 +342,7 @@ obj = function _submitVerificationForm() {
               const obj11 = closure_133_0(closure_133_2[10]);
               const result = obj11.updateImpersonatedData(guildId, obj6);
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else {
               c7 = 1;
               const HTTP = closure_133_0(closure_133_2[6]).HTTP;

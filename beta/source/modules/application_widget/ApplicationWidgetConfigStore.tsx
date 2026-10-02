@@ -1,11 +1,11 @@
-// Module ID: 8490
-// Function ID: 8491
+// Module ID: 8487
+// Function ID: 8488
 // Name: ApplicationWidgetConfigStore
-// Dependencies: [32, 504, 573, 2]
+// Dependencies: [32, 504, 585, 2]
 
-// Module 8490 (ApplicationWidgetConfigStore)
+// Module 8487 (ApplicationWidgetConfigStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

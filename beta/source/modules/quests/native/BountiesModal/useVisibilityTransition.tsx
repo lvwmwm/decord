@@ -1,25 +1,82 @@
-// Module ID: 14546
-// Function ID: 14547
+// Module ID: 14534
+// Function ID: 14535
 // Name: useVisibilityTransition
-// Dependencies: [32, 19, 4566, 4837, 2]
-// Exports: useVisibilityTransition
+// Dependencies: [32, 19, 558, 576, 4570, 4838, 2]
 
-// Module 14546 (useVisibilityTransition)
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import timing from "timing" /* 4837 */;
+// Module 14534 (useVisibilityTransition)
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import timing from "timing" /* 4838 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let __initData;
-
 let react = react_mod;
-let closure_4 = { code: "function useVisibilityTransitionTsx1(){const{withTiming,visibility,visible,entranceTiming,exitTiming,runOnJS,animationCallbackJSThread}=this.__closure;return{opacity:withTiming(visibility,visible?entranceTiming:exitTiming,'respect-motion-settings',function(){'worklet';runOnJS(animationCallbackJSThread)();})};}" };
+let closure_4 = { code: "function useVisibilityTransitionTsx1(){const{withTiming,visibility,visible,entranceTiming,exitTiming,runOnJS,animationCallbackJSThread}=this.__closure;return{opacity:withTiming(visibility,visible?entranceTiming:exitTiming,\"respect-motion-settings\",function(){\"worklet\";runOnJS(animationCallbackJSThread)();})};}" };
 let closure_5 = { code: "function useVisibilityTransitionTsx2(){const{runOnJS,animationCallbackJSThread}=this.__closure;runOnJS(animationCallbackJSThread)();}" };
-const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useVisibilityTransition.tsx");
-
-export const useVisibilityTransition = function useVisibilityTransition(visible) {
-  let callback;
+const __initData = { code: "function useVisibilityTransitionTsx3(){const{withTiming,visibility,visible,entranceTiming,exitTiming,runOnJS,animationCallbackJSThread}=this.__closure;return{opacity:withTiming(visibility,visible?entranceTiming:exitTiming,'respect-motion-settings',function(){'worklet';runOnJS(animationCallbackJSThread)();})};}" };
+let closure_7 = { code: "function useVisibilityTransitionTsx4(){const{runOnJS,animationCallbackJSThread}=this.__closure;runOnJS(animationCallbackJSThread)();}" };
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+  let closure_3;
+  let entranceTiming;
+  const tmp = visible;
+  let obj = visible(entranceTiming[3]);
+  const cResult = obj.c(3);
+  visible = visible.visible;
+  entranceTiming = visible.entranceTiming;
+  const exitTiming = visible.exitTiming;
+  let tmp4 = exitTiming(react.useState(false), 2);
+  react = tmp6;
+  const first = tmp4[0];
+  const tmp7 = exitTiming(react.useState(visible), 2);
+  if (tmp7[0] !== visible) {
+    tmp7[1](visible);
+    if (!visible) {
+      tmp4[1](true);
+    }
+  }
+  function animationCallbackJSThread() {
+    closure_3(false);
+  }
+  let num = 0;
+  if (visible) {
+    num = 1;
+  }
+  let fn = function w() {
+    let fn;
+    let tmp4;
+    let obj = timing;
+    const obj2 = { opacity: obj.withTiming(num, tmp4, "respect-motion-settings", fn) };
+    fn = function n() {
+      const obj = visible(entranceTiming[4]);
+      obj.runOnJS(animationCallbackJSThread)();
+    };
+    tmp4 = visible ? entranceTiming : exitTiming;
+    fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, animationCallbackJSThread };
+    fn.__workletHash = 11904317879470;
+    fn.__initData = __initData;
+    ({ runOnJS: ReanimatedRexport.runOnJS, animationCallbackJSThread });
+    return obj2;
+  };
+  const tmpResult = tmp(entranceTiming[4]);
+  let obj2 = { withTiming: tmp(tmp2[5]).withTiming, visibility: num, visible, entranceTiming, exitTiming, runOnJS: tmp(tmp2[4]).runOnJS, animationCallbackJSThread };
+  fn.__closure = obj2;
+  fn.__workletHash = 15161321814882;
+  fn.__initData = animationCallbackJSThread;
+  const animatedStyle = tmpResult.useAnimatedStyle(fn);
+  if (cResult[0] === animatedStyle) {
+    let tmp12;
+    if (cResult[1] === (visible || first)) {
+      tmp12 = cResult[2];
+    }
+    return tmp12;
+  }
+  const obj3 = { opacityStyle: animatedStyle, shouldRender: tmp11 };
+  cResult[0] = animatedStyle;
+  cResult[1] = visible || first;
+  cResult[2] = obj3;
+  tmp12 = obj3;
+}) : ((visible) => {
   let closure_3;
   let fn;
   let obj3;
@@ -27,7 +84,7 @@ export const useVisibilityTransition = function useVisibilityTransition(visible)
   const entranceTiming = visible.entranceTiming;
   const exitTiming = visible.exitTiming;
   react = undefined;
-  __initData = undefined;
+  let animationCallbackJSThread;
   let num;
   let obj = react;
   const tmp = exitTiming(react.useState(false), 2);
@@ -40,7 +97,7 @@ export const useVisibilityTransition = function useVisibilityTransition(visible)
       tmp[1](true);
     }
   }
-  __initData = obj.useCallback(() => {
+  animationCallbackJSThread = obj.useCallback(() => {
     closure_3(false);
   }, []);
   num = 0;
@@ -48,29 +105,32 @@ export const useVisibilityTransition = function useVisibilityTransition(visible)
     num = 1;
   }
   let obj2 = { opacityStyle: obj3.useAnimatedStyle(fn), shouldRender: visible };
-  obj3 = visible(entranceTiming[2]);
+  obj3 = visible(entranceTiming[4]);
   fn = function k() {
     let fn;
     let tmp4;
     let obj = timing;
     const obj2 = { opacity: obj.withTiming(num, tmp4, "respect-motion-settings", fn) };
     fn = function n() {
-      const obj = visible(entranceTiming[2]);
-      obj.runOnJS(callback)();
+      const obj = visible(entranceTiming[4]);
+      obj.runOnJS(animationCallbackJSThread)();
     };
     tmp4 = visible ? entranceTiming : exitTiming;
     fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, animationCallbackJSThread };
-    fn.__workletHash = 11904317879470;
+    fn.__workletHash = 1398088040;
     fn.__initData = __initData;
     ({ runOnJS: ReanimatedRexport.runOnJS, animationCallbackJSThread });
     return obj2;
   };
-  fn.__closure = { withTiming: visible(entranceTiming[3]).withTiming, visibility: num, visible, entranceTiming, exitTiming, runOnJS: visible(entranceTiming[2]).runOnJS, animationCallbackJSThread: __initData };
-  fn.__workletHash = 12648900540770;
+  fn.__closure = { withTiming: visible(entranceTiming[5]).withTiming, visibility: num, visible, entranceTiming, exitTiming, runOnJS: visible(entranceTiming[4]).runOnJS, animationCallbackJSThread };
+  fn.__workletHash = 2811685925792;
   fn.__initData = __initData;
-  ({ withTiming: visible(entranceTiming[3]).withTiming, visibility: num, visible, entranceTiming, exitTiming, runOnJS: visible(entranceTiming[2]).runOnJS, animationCallbackJSThread: __initData });
+  ({ withTiming: visible(entranceTiming[5]).withTiming, visibility: num, visible, entranceTiming, exitTiming, runOnJS: visible(entranceTiming[4]).runOnJS, animationCallbackJSThread });
   if (!visible) {
     visible = first;
   }
   return obj2;
-};
+});
+const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useVisibilityTransition.tsx");
+
+export const useVisibilityTransition = tmp2;

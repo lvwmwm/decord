@@ -1,18 +1,18 @@
-// Module ID: 14088
-// Function ID: 14089
+// Module ID: 14090
+// Function ID: 14091
 // Name: RPCServer
-// Dependencies: [5, 4739, 1074, 12, 8776, 8770, 14064, 1241, 38, 12448, 1091, 2]
+// Dependencies: [5, 4741, 1086, 12, 8771, 8765, 14066, 1253, 38, 12446, 1103, 2]
 
-// Module 14088 (RPCServer)
+// Module 14090 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import Constants2 from "Constants" /* 4739 */;
-import RPCErrorDefault from "RPCError" /* 8770 */;
-import transformUserDefault from "transformUser" /* 8776 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 12448 */;
-import validateScopeDefault from "validateScope" /* 14064 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import Constants2 from "Constants" /* 4741 */;
+import RPCErrorDefault from "RPCError" /* 8765 */;
+import transformUserDefault from "transformUser" /* 8771 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 12446 */;
+import validateScopeDefault from "validateScope" /* 14066 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, dependencyMap, handler, importDefault;
@@ -139,7 +139,7 @@ class RPCServer {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -189,7 +189,7 @@ class RPCServer {
               });
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } catch (tmp8) {
             c5 = 3;
             throw tmp8;

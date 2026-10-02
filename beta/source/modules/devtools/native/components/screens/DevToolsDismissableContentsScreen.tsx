@@ -1,34 +1,35 @@
-// Module ID: 15171
-// Function ID: 15172
+// Module ID: 15159
+// Function ID: 15160
 // Name: DevToolsDismissableContentsScreen
-// Dependencies: [32, 19, 17, 2033, 21, 4836, 576, 2029, 15172, 6621, 5999, 9700, 5917, 2026, 4790, 5924, 15173, 6471, 4832, 9778, 5829, 1613, 9388, 504, 8179, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 2039, 21, 4837, 588, 558, 576, 2035, 15160, 6621, 9818, 5997, 5916, 2032, 4791, 5923, 15161, 6472, 4833, 9694, 5830, 1619, 9366, 504, 8176, 2]
 
-// Module 15171 (DevToolsDismissableContentsScreen)
+// Module 15159 (DevToolsDismissableContentsScreen)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2026 */;
-import dismissible_content from "dismissible_content" /* 2029 */;
-import TrashIcon from "TrashIcon" /* 4790 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5829 */;
-import TableRow4 from "TableRow" /* 5917 */;
-import TableRowArrow from "TableRowArrow" /* 5924 */;
-import TableRowGroup3 from "TableRowGroup" /* 5999 */;
-import SearchField from "SearchField" /* 6471 */;
-import TableSwitchRow3 from "TableSwitchRow" /* 6621 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 9700 */;
-import SearchEmpty from "SearchEmpty" /* 9778 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15172 */;
-import DoubleCheckmarkIcon from "DoubleCheckmarkIcon" /* 15173 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2032 */;
+import dismissible_content from "dismissible_content" /* 2035 */;
+import TrashIcon from "TrashIcon" /* 4791 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5830 */;
+import TableRow4 from "TableRow" /* 5916 */;
+import TableRowArrow from "TableRowArrow" /* 5923 */;
+import TableRowGroup3 from "TableRowGroup" /* 5997 */;
+import SearchField from "SearchField" /* 6472 */;
+import SearchEmpty from "SearchEmpty" /* 9694 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 9818 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15160 */;
+import DoubleCheckmarkIcon from "DoubleCheckmarkIcon" /* 15161 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2033 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2039 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
 let importDefault;
 
 let c9;
@@ -40,16 +41,9 @@ let obj4;
 let obj5;
 let obj6;
 let obj7;
-function DismissableContentsEmpty() {
-  let items;
-  let obj3;
-  const obj = { style: closure_10().emptyState, children: items };
-  const obj2 = { style: obj3, variant: "heading-lg/semibold", children: "No results found" };
-  obj3 = { marginBottom: nativeDefault.space.PX_16 };
-  const Text = Text_Text.Text;
-  items = [metroImportDefault(Text, obj2), metroImportDefault(SearchEmpty.SearchEmpty, {})];
-  return metroImportAll(View, obj);
-}
+let tmp;
+const TableSwitchRow3 = tmp(6621);
+const f119027 = (localeCompare, arg1) => localeCompare.localeCompare(arg1);
 let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
@@ -63,7 +57,50 @@ obj5 = { paddingBottom: nativeDefault.space.PX_8 };
 obj6 = { paddingBottom: nativeDefault.space.PX_8 };
 obj7 = { marginVertical: nativeDefault.space.PX_32, justifyContent: "center", alignItems: "center" };
 let closure_10 = createStyles(obj);
-let closure_11 = react.memo((content) => {
+let memo = react.memo;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let content;
+  let end;
+  let handleToggleDismissState;
+  let isDismissed;
+  let start;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(8);
+  ({ content, start, end } = arg0);
+  const tmp4 = dismissible_content.DismissibleContent[content];
+  if (cResult[0] !== tmp4) {
+    const tmp7 = toggleDismissibleContentDismissStateDefault(tmp4);
+    cResult[0] = tmp4;
+    cResult[1] = tmp7;
+    tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[1];
+  }
+  ({ isDismissed, handleToggleDismissState } = tmp5);
+  if (cResult[2] === content) {
+    if (cResult[3] === end) {
+      if (cResult[4] === handleToggleDismissState) {
+        if (cResult[5] === isDismissed) {
+          let tmp8;
+          if (cResult[6] === start) {
+            tmp8 = cResult[7];
+          }
+          return tmp8;
+        }
+      }
+    }
+  }
+  const tmp9 = metroImportDefault(TableSwitchRow3.TableSwitchRow, { start, end, onValueChange: handleToggleDismissState, value: isDismissed, label: content });
+  cResult[2] = content;
+  cResult[3] = end;
+  cResult[4] = handleToggleDismissState;
+  cResult[5] = isDismissed;
+  cResult[6] = start;
+  cResult[7] = tmp9;
+  tmp8 = tmp9;
+}) : ((content) => {
   let end;
   let handleToggleDismissState;
   let isDismissed;
@@ -73,8 +110,170 @@ let closure_11 = react.memo((content) => {
   ({ isDismissed, handleToggleDismissState } = toggleDismissibleContentDismissStateDefault(dismissible_content.DismissibleContent[label]));
   toggleDismissibleContentDismissStateDefault(dismissible_content.DismissibleContent[label]);
   return metroImportDefault(TableSwitchRow3.TableSwitchRow, { start, end, onValueChange, value, label });
-});
-let closure_12 = react.memo((arg0) => {
+}));
+const memo2 = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let dailyCapOverridden;
+  let initialSearchQuery;
+  let items;
+  let items1;
+  let items2;
+  let newUserMinAgeRequiredOverridden;
+  let onSearchChange;
+  let tmp5;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(28);
+  ({ dailyCapOverridden, newUserMinAgeRequiredOverridden, initialSearchQuery, onSearchChange } = arg0);
+  const tmp4 = closure_10();
+  if (cResult[0] !== dailyCapOverridden) {
+    const obj2 = { onValueChange: DismissibleContentFrameworkActionCreators.overrideDismissibleContentFramework, value: dailyCapOverridden, label: "Daily limit", subLabel: "When enabled, bypass the daily limit of dismissible content shown" };
+    const TableSwitchRow = tmp(6621).TableSwitchRow;
+    const tmp7 = metroImportDefault(TableSwitchRow, obj2);
+    cResult[0] = dailyCapOverridden;
+    cResult[1] = tmp7;
+    tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] !== newUserMinAgeRequiredOverridden) {
+    const obj3 = { onValueChange: DismissibleContentFrameworkActionCreators.overrideNewUserMinAgeRequired, value: newUserMinAgeRequiredOverridden, label: "New user account minimum age", subLabel: "When enabled, bypass the minimum age requirement for new user accounts" };
+    const TableSwitchRow2 = tmp(6621).TableSwitchRow;
+    const tmp10 = metroImportDefault(TableSwitchRow2, obj3);
+    cResult[2] = newUserMinAgeRequiredOverridden;
+    cResult[3] = tmp10;
+    tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] === tmp5) {
+    let tmp11;
+    if (cResult[5] === tmp8) {
+      tmp11 = cResult[6];
+    }
+    if (cResult[7] === tmp4.headerSection) {
+      let tmp13;
+      let tmp18;
+      let tmp21;
+      let tmp24;
+      let tmp28;
+      if (cResult[8] === tmp11) {
+        tmp13 = cResult[9];
+      }
+      const _Symbol = Symbol;
+      if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj4 = { label: "Clear all dismissed dismissible contents", onPress: UserSettingsProtoActionCreators.clearDismissedContents, icon: metroImportDefault(TrashIcon.TrashIcon, {}), trailing: metroImportDefault(TableRowArrow.TableRowArrow, {}) };
+        const TableRow = tmp(5916).TableRow;
+        const tmp20 = metroImportDefault(TableRow, obj4);
+        cResult[10] = tmp20;
+        tmp18 = tmp20;
+      } else {
+        tmp18 = cResult[10];
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj5 = { label: "Clear all guild dismissed dismissible contents", onPress: UserSettingsProtoActionCreators.clearGuildDismissedContents, icon: metroImportDefault(TrashIcon.TrashIcon, {}), trailing: metroImportDefault(TableRowArrow.TableRowArrow, {}) };
+        const TableRow2 = tmp(5916).TableRow;
+        const tmp23 = metroImportDefault(TableRow2, obj5);
+        cResult[11] = tmp23;
+        tmp21 = tmp23;
+      } else {
+        tmp21 = cResult[11];
+      }
+      const _Symbol3 = Symbol;
+      if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj6 = { title: "Bulk actions", hasIcons: true, children: items };
+        items = [tmp18, tmp21, ];
+        const TableRowGroup = tmp(5997).TableRowGroup;
+        const obj7 = { label: "Dismiss all dismissible contents", onPress: UserSettingsProtoActionCreators.checkAllDismissedContents, icon: metroImportDefault(DoubleCheckmarkIcon.DoubleCheckmarkIcon, {}), trailing: metroImportDefault(TableRowArrow.TableRowArrow, {}) };
+        const TableRow3 = tmp(5916).TableRow;
+        items[2] = metroImportDefault(TableRow3, obj7);
+        const tmp27 = metroImportAll(TableRowGroup, obj6);
+        cResult[12] = tmp27;
+        tmp24 = tmp27;
+      } else {
+        tmp24 = cResult[12];
+      }
+      if (cResult[13] !== tmp4.headerSection) {
+        const obj8 = { style: tmp4.headerSection, children: tmp24 };
+        const tmp31 = metroImportDefault(View, obj8);
+        cResult[13] = tmp4.headerSection;
+        cResult[14] = tmp31;
+        tmp28 = tmp31;
+      } else {
+        tmp28 = cResult[14];
+      }
+      if (cResult[15] === initialSearchQuery) {
+        let tmp32;
+        if (cResult[16] === onSearchChange) {
+          tmp32 = cResult[17];
+        }
+        if (cResult[18] === tmp4.search) {
+          let tmp35;
+          let tmp39;
+          if (cResult[19] === tmp32) {
+            tmp35 = cResult[20];
+          }
+          if (cResult[21] !== tmp4.sectionHeader) {
+            const obj9 = { style: tmp4.sectionHeader, variant: "text-sm/semibold", color: "text-default", children: "Dismissible Contents" };
+            const tmp41 = metroImportDefault(Text_Text.Text, obj9);
+            cResult[21] = tmp4.sectionHeader;
+            cResult[22] = tmp41;
+            tmp39 = tmp41;
+          } else {
+            tmp39 = cResult[22];
+          }
+          if (cResult[23] === tmp35) {
+            if (cResult[24] === tmp39) {
+              if (cResult[25] === tmp13) {
+                let tmp42;
+                if (cResult[26] === tmp28) {
+                  tmp42 = cResult[27];
+                }
+                return tmp42;
+              }
+            }
+          }
+          const obj10 = { children: items1 };
+          items1 = [tmp13, tmp28, tmp35, tmp39];
+          const tmp45 = metroImportAll(React4, obj10);
+          cResult[23] = tmp35;
+          cResult[24] = tmp39;
+          cResult[25] = tmp13;
+          cResult[26] = tmp28;
+          cResult[27] = tmp45;
+          tmp42 = tmp45;
+        }
+        const obj11 = { style: tmp4.search, children: tmp32 };
+        const tmp38 = metroImportDefault(View, obj11);
+        cResult[18] = tmp4.search;
+        cResult[19] = tmp32;
+        cResult[20] = tmp38;
+        tmp35 = tmp38;
+      }
+      const obj12 = { size: "md", defaultValue: initialSearchQuery, onChange: onSearchChange };
+      const tmp34 = metroImportDefault(SearchField.SearchField, obj12);
+      cResult[15] = initialSearchQuery;
+      cResult[16] = onSearchChange;
+      cResult[17] = tmp34;
+      tmp32 = tmp34;
+    }
+    const obj13 = { style: tmp4.headerSection, children: tmp11 };
+    const tmp16 = metroImportDefault(View, obj13);
+    cResult[7] = tmp4.headerSection;
+    cResult[8] = tmp11;
+    cResult[9] = tmp16;
+    tmp13 = tmp16;
+  }
+  const obj14 = { title: "Global Overrides", hasIcons: false, children: items2 };
+  items2 = [tmp5, tmp8];
+  const tmp12 = metroImportAll(TableRowGroup3.TableRowGroup, obj14);
+  cResult[4] = tmp5;
+  cResult[5] = tmp8;
+  cResult[6] = tmp12;
+  tmp11 = tmp12;
+}) : ((arg0) => {
   let TableRowGroup;
   let TableRowGroup2;
   let dailyCapOverridden;
@@ -117,10 +316,369 @@ let closure_12 = react.memo((arg0) => {
   const obj12 = { style: tmp.sectionHeader, variant: "text-sm/semibold", color: "text-default", children: "Dismissible Contents" };
   items1[3] = metroImportDefault(Text_Text.Text, obj12);
   return metroImportAll(React4, obj);
+}));
+ReactCompilerGating = ReactCompilerGating_mod;
+const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let items;
+  let obj3;
+  let tmp11;
+  let tmp5;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(4);
+  const tmp4 = closure_10();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { style: obj3, variant: "heading-lg/semibold", children: "No results found" };
+    obj3 = { marginBottom: nativeDefault.space.PX_16 };
+    const Text = tmp(4833).Text;
+    const tmp9 = metroImportDefault(Text, obj2);
+    const tmp10 = metroImportDefault(SearchEmpty.SearchEmpty, {});
+    cResult[0] = tmp9;
+    cResult[1] = tmp10;
+    tmp5 = tmp9;
+    tmp6 = tmp10;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  if (cResult[2] !== tmp4.emptyState) {
+    const obj4 = { style: tmp4.emptyState, children: items };
+    items = [tmp5, tmp6];
+    const tmp14 = metroImportAll(View, obj4);
+    cResult[2] = tmp4.emptyState;
+    cResult[3] = tmp14;
+    tmp11 = tmp14;
+  } else {
+    tmp11 = cResult[3];
+  }
+  return tmp11;
+}) : (() => {
+  let items;
+  let obj3;
+  const obj = { style: closure_10().emptyState, children: items };
+  const obj2 = { style: obj3, variant: "heading-lg/semibold", children: "No results found" };
+  obj3 = { marginBottom: nativeDefault.space.PX_16 };
+  const Text = Text_Text.Text;
+  items = [metroImportDefault(Text, obj2), metroImportDefault(SearchEmpty.SearchEmpty, {})];
+  return metroImportAll(View, obj);
 });
-const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsDismissableContentsScreen.tsx");
-
-export default function DevToolsDismissableContentsScreen() {
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_3;
+  let closure_5;
+  let dailyCapOverridden;
+  let first;
+  let length;
+  let newUserMinAgeRequiredOverridden;
+  let ref;
+  let tmp11;
+  let tmp13;
+  let tmp15;
+  let tmp16;
+  let tmp18;
+  let tmp = ref;
+  let tmp2 = first;
+  let obj = ref(first[8]);
+  const cResult = obj.c(31);
+  let tmp4 = closure_10();
+  let tmp5 = require("useSafeAreaInsets")();
+  ref = react.useRef(null);
+  importDefault = react.useRef(0);
+  const obj3 = ref(first[24]);
+  const tmp8 = _slicedToArray(obj3.useLocalStorageState("devtools-dc-search", ""), 2);
+  first = tmp8[0];
+  _slicedToArray = tmp10;
+  if (cResult[0] !== first) {
+    const fn = function o() {
+      let str = first;
+      if (first == null) {
+        str = "";
+      }
+      return str;
+    };
+    cResult[0] = first;
+    cResult[1] = fn;
+    tmp11 = fn;
+  } else {
+    tmp11 = cResult[1];
+  }
+  const first1 = tmp7(obj2.useState(tmp11), 1)[0];
+  if (cResult[2] !== first) {
+    class D {
+      constructor() {
+        let str = first;
+        if (first == null) {
+          str = "";
+        }
+        const items = [];
+        const tmp = "" === str;
+        for (const key10013 in dismissible_content.DismissibleContent) {
+          let isNaNResult = tmp;
+          if (!isNaNResult) {
+            let tmp4 = fuzzysearchDefault;
+            let formatted = str.toLowerCase();
+            isNaNResult = tmp4(formatted, key10013.toLowerCase());
+          }
+          if (isNaNResult) {
+            let _isNaN = isNaN;
+            let _Number = Number;
+            isNaNResult = isNaN(Number(key10013));
+          }
+          if (!isNaNResult) {
+            continue;
+          } else {
+            let arr = items.push(key10013);
+            continue;
+          }
+          continue;
+        }
+        const sorted = items.sort(f119027);
+        return items;
+      }
+    }
+    cResult[2] = first;
+    cResult[3] = D;
+    tmp13 = D;
+  } else {
+    class D {
+      constructor() {
+        let str = first;
+        if (first == null) {
+          str = "";
+        }
+        const items = [];
+        const tmp = "" === str;
+        for (const key10013 in dismissible_content.DismissibleContent) {
+          let isNaNResult = tmp;
+          if (!isNaNResult) {
+            let tmp4 = fuzzysearchDefault;
+            let formatted = str.toLowerCase();
+            isNaNResult = tmp4(formatted, key10013.toLowerCase());
+          }
+          if (isNaNResult) {
+            let _isNaN = isNaN;
+            let _Number = Number;
+            isNaNResult = isNaN(Number(key10013));
+          }
+          if (!isNaNResult) {
+            continue;
+          } else {
+            let arr = items.push(key10013);
+            continue;
+          }
+          continue;
+        }
+        const sorted = items.sort(f119027);
+        return items;
+      }
+    }
+  }
+  [react, closure_5] = react.useState(tmp13);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor() {
+        let str = first;
+        if (first == null) {
+          str = "";
+        }
+        const items = [];
+        const tmp = "" === str;
+        for (const key10013 in dismissible_content.DismissibleContent) {
+          let isNaNResult = tmp;
+          if (!isNaNResult) {
+            let tmp4 = fuzzysearchDefault;
+            let formatted = str.toLowerCase();
+            isNaNResult = tmp4(formatted, key10013.toLowerCase());
+          }
+          if (isNaNResult) {
+            let _isNaN = isNaN;
+            let _Number = Number;
+            isNaNResult = isNaN(Number(key10013));
+          }
+          if (!isNaNResult) {
+            continue;
+          } else {
+            let arr = items.push(key10013);
+            continue;
+          }
+          continue;
+        }
+        const sorted = items.sort(f119027);
+        return items;
+      }
+    }
+    let items = [M];
+    const fn2 = function k() {
+      return { dailyCapOverridden: M.dailyCapOverridden, newUserMinAgeRequiredOverridden: M.newUserMinAgeRequiredOverridden };
+    };
+    cResult[4] = items;
+    cResult[5] = fn2;
+    tmp16 = fn2;
+    tmp15 = items;
+  } else {
+    class D {
+      constructor() {
+        let str = first;
+        if (first == null) {
+          str = "";
+        }
+        const items = [];
+        const tmp = "" === str;
+        for (const key10013 in dismissible_content.DismissibleContent) {
+          let isNaNResult = tmp;
+          if (!isNaNResult) {
+            let tmp4 = fuzzysearchDefault;
+            let formatted = str.toLowerCase();
+            isNaNResult = tmp4(formatted, key10013.toLowerCase());
+          }
+          if (isNaNResult) {
+            let _isNaN = isNaN;
+            let _Number = Number;
+            isNaNResult = isNaN(Number(key10013));
+          }
+          if (!isNaNResult) {
+            continue;
+          } else {
+            let arr = items.push(key10013);
+            continue;
+          }
+          continue;
+        }
+        const sorted = items.sort(f119027);
+        return items;
+      }
+    }
+    tmp16 = cResult[5];
+  }
+  const tmpResult = tmp(tmp2[25]);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp15, tmp16);
+  ({ dailyCapOverridden, newUserMinAgeRequiredOverridden } = stateFromStoresObject);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class M {
+      constructor() {
+        current = closure_1.current;
+        animationFrame = requestAnimationFrame(() => {
+          current = ref.current;
+          if (current != null) {
+            const obj = { offset: current, animated: false };
+            current.scrollToOffset(obj);
+          }
+        });
+        return;
+      }
+    }
+    cResult[6] = M;
+    tmp18 = M;
+  } else {
+    class M {
+      constructor() {
+        current = closure_1.current;
+        animationFrame = requestAnimationFrame(() => {
+          current = ref.current;
+          if (current != null) {
+            const obj = { offset: current, animated: false };
+            current.scrollToOffset(obj);
+          }
+        });
+        return;
+      }
+    }
+  }
+  M = tmp18;
+  if (cResult[7] !== tmp8[1]) {
+    class F {
+      constructor(str) {
+        closure_3(str);
+        const items = [];
+        const tmp2 = closure_5;
+        const tmp3 = "" === str;
+        for (const key10015 in dismissible_content.DismissibleContent) {
+          let isNaNResult = tmp3;
+          if (!isNaNResult) {
+            let tmp6 = fuzzysearchDefault;
+            let formatted = str.toLowerCase();
+            isNaNResult = tmp6(formatted, key10015.toLowerCase());
+          }
+          if (isNaNResult) {
+            let _isNaN = isNaN;
+            let _Number = Number;
+            isNaNResult = isNaN(Number(key10015));
+          }
+          if (!isNaNResult) {
+            continue;
+          } else {
+            let arr = items.push(key10015);
+            continue;
+          }
+          continue;
+        }
+        const sorted = items.sort(f119027);
+        tmp2(items);
+        M();
+      }
+    }
+    cResult[7] = tmp8[1];
+    cResult[8] = F;
+  } else {
+    class F {
+      constructor(str) {
+        closure_3(str);
+        const items = [];
+        const tmp2 = closure_5;
+        const tmp3 = "" === str;
+        for (const key10015 in dismissible_content.DismissibleContent) {
+          let isNaNResult = tmp3;
+          if (!isNaNResult) {
+            let tmp6 = fuzzysearchDefault;
+            let formatted = str.toLowerCase();
+            isNaNResult = tmp6(formatted, key10015.toLowerCase());
+          }
+          if (isNaNResult) {
+            let _isNaN = isNaN;
+            let _Number = Number;
+            isNaNResult = isNaN(Number(key10015));
+          }
+          if (!isNaNResult) {
+            continue;
+          } else {
+            let arr = items.push(key10015);
+            continue;
+          }
+          continue;
+        }
+        const sorted = items.sort(f119027);
+        tmp2(items);
+        M();
+      }
+    }
+  }
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class N {
+      constructor(nativeEvent) {
+        ref.current = nativeEvent.nativeEvent.contentOffset.y;
+      }
+    }
+    cResult[9] = N;
+  } else {
+    class N {
+      constructor(nativeEvent) {
+        ref.current = nativeEvent.nativeEvent.contentOffset.y;
+      }
+    }
+  }
+  if (cResult[10] === dailyCapOverridden) {
+    class N {
+      constructor(nativeEvent) {
+        ref.current = nativeEvent.nativeEvent.contentOffset.y;
+      }
+    }
+  }
+  cResult[10] = dailyCapOverridden;
+  cResult[11] = tmp19;
+  cResult[12] = first1;
+  cResult[13] = newUserMinAgeRequiredOverridden;
+  cResult[14] = closure_7(closure_12, { dailyCapOverridden, newUserMinAgeRequiredOverridden, initialSearchQuery: first1, onSearchChange: tmp19 });
+  closure_7(closure_12, { dailyCapOverridden, newUserMinAgeRequiredOverridden, initialSearchQuery: first1, onSearchChange: tmp19 });
+}) : (() => {
   let FlashList;
   let callback1;
   let closure_3;
@@ -130,12 +688,11 @@ export default function DevToolsDismissableContentsScreen() {
   let items4;
   let obj4;
   let tmp5;
-  const f101304 = (localeCompare, arg1) => localeCompare.localeCompare(arg1);
   let tmp = callback1();
   let tmp2 = useSafeAreaInsetsDefault();
   const ref = initialSearchQuery.useRef(null);
   importDefault = initialSearchQuery.useRef(0);
-  let obj = ref(9388);
+  let obj = ref(9366);
   let tmp4 = _slicedToArray(obj.useLocalStorageState("devtools-dc-search", ""), 2);
   [dependencyMap, tmp5] = tmp4;
   _slicedToArray = tmp5;
@@ -173,7 +730,7 @@ export default function DevToolsDismissableContentsScreen() {
       }
       continue;
     }
-    const sorted = items.sort(f101304);
+    const sorted = items.sort(f119027);
     return items;
   });
   let items = [closure_6];
@@ -219,7 +776,7 @@ export default function DevToolsDismissableContentsScreen() {
       }
       continue;
     }
-    const sorted = items.sort(f101304);
+    const sorted = items.sort(f119027);
     tmp2(items);
     callback();
   }, items1);
@@ -246,7 +803,7 @@ export default function DevToolsDismissableContentsScreen() {
     keyboardDismissMode: "on-drag",
     automaticallyAdjustKeyboardInsets: true,
     ListHeaderComponent: memo,
-    ListEmptyComponent: DismissableContentsEmpty,
+    ListEmptyComponent,
     keyExtractor(arg0) {
       return arg0;
     },
@@ -256,7 +813,10 @@ export default function DevToolsDismissableContentsScreen() {
   };
   items4 = [tmp.contentContainer, ];
   const obj5 = { paddingBottom: tmp2.bottom + nativeDefault.space.PX_16 };
-  FlashList = ref(8179).FlashList;
+  FlashList = ref(8176).FlashList;
   items4[1] = obj5;
   return dailyCapOverridden(first1, obj3);
-};
+});
+const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsDismissableContentsScreen.tsx");
+
+export default tmp5;

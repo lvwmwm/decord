@@ -1,14 +1,14 @@
-// Module ID: 12757
-// Function ID: 12758
+// Module ID: 12759
+// Function ID: 12760
 // Name: ConnectionsRoleTag
-// Dependencies: [17, 1074, 576, 1092, 2]
+// Dependencies: [17, 1086, 588, 1104, 2]
 // Exports: createConnectionsRoleTag
 
-// Module 12757 (ConnectionsRoleTag)
+// Module 12759 (ConnectionsRoleTag)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
 import size from "module_2" /* 2 */;
 
 const processColor = react_native.processColor;

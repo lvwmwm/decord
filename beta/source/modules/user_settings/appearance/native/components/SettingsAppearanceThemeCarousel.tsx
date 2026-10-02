@@ -1,25 +1,27 @@
-// Module ID: 14818
-// Function ID: 14819
+// Module ID: 14806
+// Function ID: 14807
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 14819, 1074, 21, 4566, 1177, 4836, 576, 5266, 12, 14820, 4837, 4840, 1230, 8661, 4832, 1610, 10222, 4801, 1115, 14823, 2]
-// Exports: default
+// Dependencies: [19, 17, 14807, 1086, 21, 4570, 1189, 4837, 588, 558, 576, 5267, 12, 4802, 1242, 1127, 14808, 4838, 4841, 8658, 4833, 1616, 10260, 14811, 2]
 
-// Module 14818 (SettingsAppearanceThemeCarousel)
+// Module 14806 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import native from "native" /* 1177 */;
-import HapticUtils from "HapticUtils" /* 4801 */;
-import timing from "timing" /* 4837 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl4 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1242 */;
+import HapticUtils from "HapticUtils" /* 4802 */;
+import timing from "timing" /* 4838 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 14819 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 14807 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let set;
+let flag, ref, set, themes, tmp10, tmp11, tmp15, tmp16, tmp4, tmp6, tmp9;
 
 let c10;
 let c9;
@@ -35,7 +37,7 @@ let obj6;
 let obj7;
 let size;
 let tmp;
-const timingPresets = tmp(4840);
+const timingPresets = tmp(4841);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
@@ -53,14 +55,190 @@ obj7 = { transform: items };
 items = [{ rotate: "90deg" }];
 size = { position: "absolute", alignSelf: "center", width: SettingsAppearanceConstants.THEME_ITEM_WIDTH, height: SettingsAppearanceConstants.THEME_ITEM_HEIGHT, borderRadius: nativeDefault.radii.md, borderColor: nativeDefault.colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT, borderWidth: 2 };
 let closure_12 = createStyles(obj);
-const __initData = { code: "function SettingsAppearanceThemeCarouselTsx1(){const{withTiming,isOnyxNuxVisible,timingStandard}=this.__closure;return{opacity:withTiming(isOnyxNuxVisible.get()?1:0,timingStandard),pointerEvents:isOnyxNuxVisible.get()?'auto':'none'};}" };
-size = size_mod;
-let result = size.fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceThemeCarousel.tsx");
-
-export default function SettingsAppearanceThemeCarousel(themes) {
+let closure_13 = { code: "function SettingsAppearanceThemeCarouselTsx1(){const{withTiming,isOnyxNuxVisible,timingStandard}=this.__closure;return{opacity:withTiming(isOnyxNuxVisible.get()?1:0,timingStandard),pointerEvents:isOnyxNuxVisible.get()?\"auto\":\"none\"};}" };
+const __initData = { code: "function SettingsAppearanceThemeCarouselTsx2(){const{withTiming,isOnyxNuxVisible,timingStandard}=this.__closure;return{opacity:withTiming(isOnyxNuxVisible.get()?1:0,timingStandard),pointerEvents:isOnyxNuxVisible.get()?'auto':'none'};}" };
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
+  let animatedStyles;
+  let debounceResult;
+  let defaultIndex;
+  let deviceWidth;
+  let hasOnyxNux;
+  let isPreview;
+  let items;
+  let tmp7;
+  let tmp = themes;
+  const tmp2 = isPreview;
+  let obj = themes(isPreview[10]);
+  const cResult = obj.c(92);
+  themes = themes.themes;
+  const currentThemeIndex = themes.currentThemeIndex;
+  isPreview = themes.isPreview;
+  ({ defaultIndex, deviceWidth } = themes);
+  const isSynced = themes.isSynced;
+  ({ animatedStyles, hasOnyxNux } = themes);
+  const onThemeSelected = themes.onThemeSelected;
+  debounceResult();
+  let obj2 = themes(isPreview[11]);
+  const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
+  let obj3 = deviceWidth;
+  deviceWidth.useRef(null);
+  ref = deviceWidth.useRef(defaultIndex);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor(arg0) {
+        return themes.theme === closure_7.ONYX;
+      }
+    }
+    let num = 0;
+    cResult[0] = S;
+    tmp7 = S;
+  } else {
+    class S {
+      constructor(arg0) {
+        return themes.theme === closure_7.ONYX;
+      }
+    }
+  }
+  const num2 = 0;
+  const findIndexResult = themes.findIndex(tmp7);
+  if (findIndexResult >= 0) {
+    class S {
+      constructor(arg0) {
+        return themes.theme === closure_7.ONYX;
+      }
+    }
+  }
+  const tmpResult = tmp(tmp2[5]);
+  const sharedValue = tmpResult.useSharedValue(false);
+  const tmpResult2 = tmp(tmp2[5]);
+  const sharedValue1 = tmpResult2.useSharedValue(false);
+  if (cResult[1] === sharedValue1) {
+    let tmp12;
+    class S {
+      constructor(arg0) {
+        return themes.theme === closure_7.ONYX;
+      }
+    }
+    const effect = obj3.useEffect(P, items);
+    if (cResult[5] !== onThemeSelected) {
+      class S {
+        constructor(arg0) {
+          return themes.theme === closure_7.ONYX;
+        }
+      }
+      const obj6 = currentThemeIndex(tmp2[12]);
+      debounceResult = obj6.debounce(onThemeSelected, 180);
+      class W {
+        constructor(arg0, arg1) {
+          rounded = Math.round(arg1);
+          if (rounded !== closure_8.current) {
+            tmp3 = closure_0;
+            tmp4 = closure_2;
+            obj = closure_0(closure_2[13]);
+            result = obj.triggerHapticFeedback(closure_0(closure_2[13]).HapticFeedbackTypes.IMPACT_LIGHT);
+            tmp2.current = rounded;
+            tmp6 = closure_12;
+            tmp7 = closure_12(rounded);
+          }
+          tmp8 = hasOnyxNux;
+          if (tmp8) {
+            tmp9 = closure_6;
+            _Math = Math;
+            tmp10 = deviceWidth;
+            tmp11 = closure_9;
+            num = 2;
+            tmp12 = arg1 < closure_9 + Math.ceil(deviceWidth / (closure_6.THEME_ITEM_WIDTH + closure_6.THEME_ITEM_HORIZONTAL_MARGIN)) / 2;
+            if (tmp12) {
+              tmp13 = closure_11;
+              flag = true;
+              result1 = closure_11.set(true);
+            }
+            tmp16 = closure_11;
+            tmp15 = closure_10;
+            set = closure_10.set;
+            value = closure_11.get();
+            tmp18 = !value && !tmp12;
+            result2 = set(tmp18);
+          }
+          return;
+        }
+      }
+      cResult[6] = debounceResult;
+      tmp12 = debounceResult;
+    } else {
+      class S {
+        constructor(arg0) {
+          return themes.theme === closure_7.ONYX;
+        }
+      }
+    }
+    debounceResult = tmp12;
+    if (cResult[7] === deviceWidth) {
+      class S {
+        constructor(arg0) {
+          return themes.theme === closure_7.ONYX;
+        }
+      }
+    }
+    class W {
+      constructor(arg0, arg1) {
+        rounded = Math.round(arg1);
+        if (rounded !== closure_8.current) {
+          tmp3 = closure_0;
+          tmp4 = closure_2;
+          obj = closure_0(closure_2[13]);
+          result = obj.triggerHapticFeedback(closure_0(closure_2[13]).HapticFeedbackTypes.IMPACT_LIGHT);
+          tmp2.current = rounded;
+          tmp6 = closure_12;
+          tmp7 = closure_12(rounded);
+        }
+        tmp8 = hasOnyxNux;
+        if (tmp8) {
+          tmp9 = closure_6;
+          _Math = Math;
+          tmp10 = deviceWidth;
+          tmp11 = closure_9;
+          num = 2;
+          tmp12 = arg1 < closure_9 + Math.ceil(deviceWidth / (closure_6.THEME_ITEM_WIDTH + closure_6.THEME_ITEM_HORIZONTAL_MARGIN)) / 2;
+          if (tmp12) {
+            tmp13 = closure_11;
+            flag = true;
+            result1 = closure_11.set(true);
+          }
+          tmp16 = closure_11;
+          tmp15 = closure_10;
+          set = closure_10.set;
+          value = closure_11.get();
+          tmp18 = !value && !tmp12;
+          result2 = set(tmp18);
+        }
+        return;
+      }
+    }
+    cResult[7] = deviceWidth;
+    cResult[8] = sharedValue1;
+    cResult[9] = hasOnyxNux;
+    cResult[10] = sharedValue;
+    cResult[11] = tmp12;
+    cResult[12] = num2;
+    cResult[13] = W;
+  }
+  class P {
+    constructor() {
+      closure_0 = setTimeout(() => { /* body not rendered: F142903 */ }, 5500);
+      return () => { /* body not rendered: F142904 */ };
+    }
+  }
+  items = [sharedValue, sharedValue1];
+  cResult[1] = sharedValue1;
+  cResult[2] = sharedValue;
+  cResult[3] = P;
+  cResult[4] = items;
+}) : ((themes) => {
   let View;
   let animatedStyles;
   let closure_4;
+  let closure_8;
   let defaultIndex;
   let deviceWidth;
   let intl3;
@@ -87,12 +265,12 @@ export default function SettingsAppearanceThemeCarousel(themes) {
   let tmp = closure_12();
   const tmp2 = themes;
   const tmp3 = isPreview;
-  let obj = themes(isPreview[9]);
+  let obj = themes(isPreview[11]);
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   deviceWidth.useRef(null);
-  const ref = deviceWidth.useRef(defaultIndex);
+  deviceWidth.useRef(defaultIndex);
   const items = [themes];
-  let closure_8 = deviceWidth.useMemo(() => {
+  ref = deviceWidth.useMemo(() => {
     const findIndexResult = themes.findIndex((theme) => theme.theme === constants.ONYX);
     let num = 0;
     if (findIndexResult >= 0) {
@@ -153,10 +331,10 @@ export default function SettingsAppearanceThemeCarousel(themes) {
       },
       isNew: false
     };
-    return closure_8(currentThemeIndex(isPreview[11]), obj);
+    return closure_8(currentThemeIndex(isPreview[16]), obj);
   }, items3);
   const obj4 = themes(isPreview[5]);
-  class L {
+  class D {
     constructor() {
       let str;
       const withTiming = timing.withTiming;
@@ -174,29 +352,29 @@ export default function SettingsAppearanceThemeCarousel(themes) {
       return obj2;
     }
   }
-  L.__closure = { withTiming: themes(isPreview[12]).withTiming, isOnyxNuxVisible: sharedValue, timingStandard: themes(isPreview[13]).timingStandard };
-  L.__workletHash = 6079461696466;
-  L.__initData = __initData;
+  D.__closure = { withTiming: themes(isPreview[17]).withTiming, isOnyxNuxVisible: sharedValue, timingStandard: themes(isPreview[18]).timingStandard };
+  D.__workletHash = 16840053984177;
+  D.__initData = __initData;
   let tmp12 = closure_4;
-  ({ withTiming: themes(isPreview[12]).withTiming, isOnyxNuxVisible: sharedValue, timingStandard: themes(isPreview[13]).timingStandard });
-  const animatedStyle = obj4.useAnimatedStyle(L);
+  ({ withTiming: themes(isPreview[17]).withTiming, isOnyxNuxVisible: sharedValue, timingStandard: themes(isPreview[18]).timingStandard });
+  const animatedStyle = obj4.useAnimatedStyle(D);
   let tmp13 = null;
   if (themes[currentThemeIndex].type !== themes(isPreview[14]).ClientThemeType.STANDARD_BACKGROUND_THEME) {
-    const obj7 = { source: currentThemeIndex(tmp3[15]), style: animatedStyles.iconHeaderSecondary, size: tmp2(tmp3[6]).IconSizes.SMALL_20 };
-    tmp13 = closure_8(closure_11, obj7);
+    const obj7 = { source: currentThemeIndex(tmp3[19]), style: animatedStyles.iconHeaderSecondary, size: tmp2(tmp3[6]).IconSizes.SMALL_20 };
+    tmp13 = ref(closure_11, obj7);
   }
   const items4 = [tmp13, ];
   const obj8 = { animated: true, style: animatedStyles.headerPrimary, variant: "heading-sm/semibold", children: obj9.getName() };
   obj9 = themes[currentThemeIndex];
-  const Text = tmp2(tmp3[16]).Text;
-  items4[1] = closure_8(Text, obj8);
+  const Text = tmp2(tmp3[20]).Text;
+  items4[1] = ref(Text, obj8);
   if (!isScreenReaderEnabled) {
     let tmp17Result1;
     let stringResult;
-    if (!tmp2(tmp3[17]).isThumbstickScrollDevice) {
+    if (!tmp2(tmp3[21]).isThumbstickScrollDevice) {
       const obj10 = { children: items5 };
       const obj11 = { pointerEvents: "none", style: tmp.selectionBorder };
-      items5 = [closure_8(tmp12, obj11), ];
+      items5 = [ref(tmp12, obj11), ];
       size = {
         ref,
         data: themes,
@@ -232,45 +410,45 @@ export default function SettingsAppearanceThemeCarousel(themes) {
             }
       };
       obj12 = { width: deviceWidth, justifyContent: "center", alignItems: "center", marginLeft: ref.THEME_ITEM_HORIZONTAL_MARGIN };
-      items5[1] = closure_8(currentThemeIndex(tmp3[18]), size);
+      items5[1] = ref(currentThemeIndex(tmp3[22]), size);
       tmp17Result1 = tmp11(sharedValue1, obj10);
     }
     const obj14 = { animated: true, style: items6, variant: "text-sm/medium", children: null };
     items6 = [animatedStyles.headerSecondary, tmp.textCentered];
     const obj13 = { children: tmp17Result1 };
-    const tmp17Result = closure_8(tmp12, obj13);
+    const tmp17Result = ref(tmp12, obj13);
     if (isPreview) {
       if (themes[currentThemeIndex].type !== tmp2(tmp3[14]).ClientThemeType.STANDARD_BACKGROUND_THEME) {
-        const intl2 = tmp2(tmp3[20]).intl;
-        stringResult = intl2.string(tmp2(tmp3[20]).t.VqGKm0);
+        const intl2 = tmp2(tmp3[15]).intl;
+        stringResult = intl2.string(tmp2(tmp3[15]).t.VqGKm0);
       }
       obj14.children = stringResult;
       const obj15 = { children: items7 };
       items7 = [tmp17Result, ];
       const obj16 = { style: tmp.labelGroup, children: items8 };
-      items8 = [tmp18, closure_8(tmp24, obj14)];
+      items8 = [tmp18, ref(tmp24, obj14)];
       items7[1] = sharedValue(tmp12, obj16);
       const obj17 = { style: tmp.container, children: items13 };
       const obj18 = { style: tmp.floatingNuxContainer, children: sharedValue(View, obj19) };
       obj19 = { style: items9, children: items11 };
       items9 = [tmp.floatingNux, animatedStyle, , ];
       ({ bgSurfaceOverlay: arr11[2], borderFaint: arr11[3] } = animatedStyles);
-      const obj20 = { style: items10, source: currentThemeIndex(tmp3[21]), size: tmp2(tmp3[6]).IconSizes.REFRESH_SMALL_16 };
+      const obj20 = { style: items10, source: currentThemeIndex(tmp3[23]), size: tmp2(tmp3[6]).IconSizes.REFRESH_SMALL_16 };
       items10 = [tmp.arrowLeft, animatedStyles.iconInteractive];
       const tmp11Result2 = sharedValue(sharedValue1, obj15);
       View = currentThemeIndex(tmp3[5]).View;
-      items11 = [closure_8(closure_11, obj20), ];
-      const obj21 = { animated: true, style: items12, variant: "eyebrow", maxFontSizeMultiplier: 1.5, children: intl3.string(tmp2(tmp3[20]).t.y2b7CA) };
+      items11 = [ref(closure_11, obj20), ];
+      const obj21 = { animated: true, style: items12, variant: "eyebrow", maxFontSizeMultiplier: 1.5, children: intl3.string(tmp2(tmp3[15]).t.y2b7CA) };
       items12 = [animatedStyles.textNormal, tmp.uppercase];
-      const Text2 = tmp2(tmp3[16]).Text;
-      intl3 = tmp2(tmp3[20]).intl;
-      items11[1] = closure_8(Text2, obj21);
-      items13 = [closure_8(tmp12, obj18), tmp11Result2];
+      const Text2 = tmp2(tmp3[20]).Text;
+      intl3 = tmp2(tmp3[15]).intl;
+      items11[1] = ref(Text2, obj21);
+      items13 = [ref(tmp12, obj18), tmp11Result2];
       return sharedValue(tmp12, obj17);
     }
-    const intl = tmp2(tmp3[20]).intl;
+    const intl = tmp2(tmp3[15]).intl;
     const string = intl.string;
-    const t = tmp2(tmp3[20]).t;
+    const t = tmp2(tmp3[15]).t;
     if (isSynced) {
       stringResult = string(t.lhV0Y2);
     } else {
@@ -284,7 +462,7 @@ export default function SettingsAppearanceThemeCarousel(themes) {
     children: themes.map((themePreset, index) => {
       let obj2;
       let closure_0 = index;
-      const obj = { children: closure_8(currentThemeIndex(isPreview[11]), obj2) };
+      const obj = { children: closure_8(currentThemeIndex(isPreview[16]), obj2) };
       obj2 = {
         themePreset,
         isPreview,
@@ -297,4 +475,8 @@ export default function SettingsAppearanceThemeCarousel(themes) {
     })
   };
   tmp17Result1 = tmp17(onThemeSelected, obj22);
-};
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceThemeCarousel.tsx");
+
+export default tmp7;

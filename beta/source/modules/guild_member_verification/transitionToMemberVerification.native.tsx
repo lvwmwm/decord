@@ -1,18 +1,18 @@
-// Module ID: 5837
-// Function ID: 5838
+// Module ID: 5838
+// Function ID: 5839
 // Name: transitionToMemberVerification
-// Dependencies: [2067, 4656, 1074, 5838, 1101, 4658, 5839, 5881, 2]
+// Dependencies: [2073, 4658, 1086, 5839, 1113, 4660, 5840, 5882, 2]
 // Exports: transitionToMemberVerification
 
-// Module 5837 (transitionToMemberVerification)
-import Constants from "Constants" /* 1074 */;
-import router_utils from "router_utils" /* 1101 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
-import MemberVerificationRouteExperiment from "MemberVerificationRouteExperiment" /* 5838 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5839 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5881 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4656 */;
+// Module 5838 (transitionToMemberVerification)
+import Constants from "Constants" /* 1086 */;
+import router_utils from "router_utils" /* 1113 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4660 */;
+import MemberVerificationRouteExperiment from "MemberVerificationRouteExperiment" /* 5839 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5840 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5882 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4658 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

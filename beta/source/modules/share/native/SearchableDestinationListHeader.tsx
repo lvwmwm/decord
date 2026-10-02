@@ -1,25 +1,25 @@
-// Module ID: 10446
-// Function ID: 10447
+// Module ID: 10479
+// Function ID: 10480
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 21, 4836, 576, 1613, 5943, 7288, 5936, 1364, 6364, 2]
-// Exports: default
+// Dependencies: [19, 21, 4837, 588, 558, 576, 1619, 7292, 5933, 1370, 6361, 5942, 2]
 
-// Module 10446 (SearchableDestinationListHeader)
+// Module 10479 (SearchableDestinationListHeader)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import NavigatorHeader from "NavigatorHeader" /* 5936 */;
-import _mod5943 from "module_5943" /* 5943 */;
-import HeaderShared from "HeaderShared" /* 7288 */;
+import nativeDefault from "native" /* 588 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import NavigatorHeader from "NavigatorHeader" /* 5933 */;
+import _mod5942 from "module_5942" /* 5942 */;
+import HeaderShared from "HeaderShared" /* 7292 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let tmp5;
-const useIsWindowLarge = tmp5(6364);
+const useIsWindowLarge = tmp5(6361);
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 let obj = { headerLeftContainer: obj2, headerRightContainer: obj3, header: { borderBottomWidth: 0, shadowColor: "transparent", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND } };
@@ -28,9 +28,91 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingRight: nativeDefault.space.PX_16 };
 ({ borderBottomWidth: 0, shadowColor: "transparent", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND });
 let closure_4 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/share/native/SearchableDestinationListHeader.tsx");
-
-export default function SearchableDestinationListHeader(arg0) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((subtitleColor) => {
+  let headerRight;
+  let onClose;
+  let subtitle;
+  let title;
+  const obj = subtitle(576);
+  const cResult = obj.c(16);
+  ({ title, subtitle } = subtitleColor);
+  subtitleColor = subtitleColor.subtitleColor;
+  ({ headerRight, onClose } = subtitleColor);
+  const tmp4 = closure_4();
+  const top = subtitleColor(1619)().top;
+  const tmp5 = subtitleColor;
+  if (cResult[0] === subtitle) {
+    let tmp7;
+    let tmp8;
+    let tmp10;
+    if (cResult[1] === subtitleColor) {
+      tmp7 = cResult[2];
+    }
+    if (cResult[3] !== onClose) {
+      const tmpResult = subtitle(5933);
+      const headerCloseButton = tmpResult.getHeaderCloseButton(onClose);
+      cResult[3] = onClose;
+      cResult[4] = headerCloseButton;
+      tmp8 = headerCloseButton;
+    } else {
+      tmp8 = cResult[4];
+    }
+    if (cResult[5] !== top) {
+      let num3;
+      const tmpResult3 = subtitle(1370);
+      if (!tmpResult3.isIOS()) {
+        num3 = top;
+      } else {
+        num3 = 0;
+        subtitle(6361);
+      }
+      cResult[5] = top;
+      cResult[6] = num3;
+      tmp10 = num3;
+    } else {
+      tmp10 = cResult[6];
+    }
+    const sum = tmp10 + tmp5(588).space.PX_8;
+    if (cResult[7] === headerRight) {
+      if (cResult[8] === tmp4.header) {
+        if (cResult[9] === tmp4.headerLeftContainer) {
+          if (cResult[10] === tmp4.headerRightContainer) {
+            if (cResult[11] === tmp7) {
+              if (cResult[12] === tmp8) {
+                if (cResult[13] === sum) {
+                  let tmp12;
+                  if (cResult[14] === title) {
+                    tmp12 = cResult[15];
+                  }
+                  return tmp12;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    ({ headerLeftContainer: obj5.headerLeftContainerStyle, headerRightContainer: obj5.headerRightContainerStyle } = tmp4);
+    const tmp14 = jsx(subtitle(5942).Header, { headerStyle: tmp6, title, headerTitle: tmp7, headerTitleAlign: "center", headerLeft: tmp8, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight: sum });
+    cResult[7] = headerRight;
+    cResult[8] = tmp4.header;
+    cResult[9] = tmp4.headerLeftContainer;
+    cResult[10] = tmp4.headerRightContainer;
+    cResult[11] = tmp7;
+    cResult[12] = tmp8;
+    cResult[13] = sum;
+    cResult[14] = title;
+    cResult[15] = tmp14;
+    tmp12 = tmp14;
+  }
+  const fn = function o(children) {
+    return jsx(HeaderShared.GenericHeaderTitle, { title: children.children, subtitle, subtitleColor, variant: "redesign/heading-18/bold" });
+  };
+  cResult[0] = subtitle;
+  cResult[1] = subtitleColor;
+  cResult[2] = fn;
+  tmp7 = fn;
+}) : ((arg0) => {
   let headerRight;
   let num;
   let obj2;
@@ -55,7 +137,7 @@ export default function SearchableDestinationListHeader(arg0) {
     headerRightContainerStyle: null,
     headerStatusBarHeight: num + nativeDefault.space.PX_8
   };
-  const Header = _mod5943.Header;
+  const Header = _mod5942.Header;
   ({ headerLeftContainer: obj.headerLeftContainerStyle, headerRightContainer: obj.headerRightContainerStyle } = tmp);
   obj2 = NavigatorHeader;
   const obj3 = PlatformUtils;
@@ -67,4 +149,7 @@ export default function SearchableDestinationListHeader(arg0) {
     useIsWindowLarge;
   }
   return tmp4(Header, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/share/native/SearchableDestinationListHeader.tsx");
+
+export default tmp4;

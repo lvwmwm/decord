@@ -1,11 +1,11 @@
 // Module ID: 6443
 // Function ID: 6444
 // Name: CardContainer
-// Dependencies: [19, 17, 21, 1486, 5943, 6444, 6445, 6446, 6433]
+// Dependencies: [19, 17, 21, 1492, 5942, 6444, 6445, 6446, 6433]
 
 // Module 6443 (CardContainer)
-import Link from "Link" /* 1486 */;
-import _mod5943 from "module_5943" /* 5943 */;
+import Link from "Link" /* 1492 */;
+import _mod5942 from "module_5942" /* 5942 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -104,7 +104,7 @@ const memoResult = react.memo(function CardContainerInner(active) {
   const tmp2 = require;
   let obj2 = Link;
   const direction = obj2.useLocale().direction;
-  let num = react.useContext(_mod5943.HeaderHeightContext);
+  let num = react.useContext(_mod5942.HeaderHeightContext);
   const tmp4 = focused && false !== scene.descriptor.options.keyboardHandlingEnabled;
   const tmp2Result = react3;
   const keyboardManager = tmp2Result.useKeyboardManager({ enabled: tmp4, focused });
@@ -148,7 +148,7 @@ const memoResult = react.memo(function CardContainerInner(active) {
   let tmp9;
   if (previousScene) {
     ({ route, options } = previousScene.descriptor);
-    const tmp2Result6 = _mod5943;
+    const tmp2Result6 = _mod5942;
     headerTitle = tmp2Result6.getHeaderTitle(options, route.name);
     href = buildHref(route.name, route.params);
     tmp8 = href;
@@ -188,10 +188,10 @@ const memoResult = react.memo(function CardContainerInner(active) {
     overlay: cardOverlay,
     overlayEnabled: cardOverlayEnabled,
     shadowEnabled: cardShadowEnabled,
-    onTransition(closing) {
-      closing = closing.closing;
+    onTransition(dependencyMap) {
+      const closing = dependencyMap.closing;
       const current = ref.current;
-      const gesture = closing.gesture;
+      const gesture = dependencyMap.gesture;
       if (current != null) {
         current.setInert(closing);
       }
@@ -263,13 +263,13 @@ const memoResult = react.memo(function CardContainerInner(active) {
   items4 = [renderHeaderResult, ];
   const obj10 = { style: container.scene, children: React3(Provider2, obj11) };
   obj11 = { value: memo, children: React3(Provider3, obj12) };
-  Provider2 = _mod5943.HeaderBackContext.Provider;
-  Provider3 = _mod5943.HeaderShownContext.Provider;
+  Provider2 = _mod5942.HeaderBackContext.Provider;
+  Provider3 = _mod5942.HeaderShownContext.Provider;
   if (!isParentHeaderShown) {
     isParentHeaderShown = false !== headerShown;
   }
   obj12 = { value: isParentHeaderShown, children: React3(Provider4, obj13) };
-  Provider4 = _mod5943.HeaderHeightContext.Provider;
+  Provider4 = _mod5942.HeaderHeightContext.Provider;
   if (false === headerShown) {
     if (num == null) {
       num = 0;

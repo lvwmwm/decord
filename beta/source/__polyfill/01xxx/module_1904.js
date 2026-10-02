@@ -4,51 +4,27 @@
 
 // Module 1904
 const obj = {
-  locale: "hr",
+  locale: "de",
   pluralRuleFunction(arg0, arg1) {
-    let str4;
-    const str = String(arg0);
-    const parts = str.split(".");
-    const first = parts[0];
-    const substr = first.slice(-1);
-    const substr1 = first.slice(-2);
-    const substr2 = arr2.slice(-1);
-    const substr3 = arr2.slice(-2);
     let str2 = "other";
+    const str = String(arg0);
+    const tmp = str.split(".")[1];
     if (!arg1) {
-      let str3;
-      if (!parts[1]) {
-        if (1 == substr) {
+      let str3 = "other";
+      if (1 == arg0) {
+        str3 = "other";
+        if (!tmp) {
           str3 = "one";
         }
-        str2 = str3;
       }
-      if (1 != substr2) {
-        if (!parts[1]) {
-          if (substr >= 2) {
-            if (substr <= 4) {
-              if (substr1 >= 12) {
-                str3 = str4;
-              }
-            }
-            str4 = "few";
-          }
-        }
-        str4 = "other";
-        if (substr2 >= 2) {
-          str4 = "other";
-          if (substr2 <= 4) {
-            if (substr3 >= 12) {
-              str4 = "other";
-            }
-          }
-        }
-      } else {
-        str3 = "one";
-      }
+      str2 = str3;
     }
     return str2;
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "hr-BA", parentLocale: "hr" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-AT", parentLocale: "de" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-BE", parentLocale: "de" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-CH", parentLocale: "de" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-LI", parentLocale: "de" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-LU", parentLocale: "de" });

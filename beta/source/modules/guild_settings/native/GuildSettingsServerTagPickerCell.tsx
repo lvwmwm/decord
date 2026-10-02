@@ -1,20 +1,22 @@
-// Module ID: 17392
-// Function ID: 17393
+// Module ID: 17394
+// Function ID: 17395
 // Name: GuildSettingsServerTagPickerCell
-// Dependencies: [19, 17, 21, 4836, 576, 4548, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4552, 2]
 
-// Module 17392 (GuildSettingsServerTagPickerCell)
+// Module 17394 (GuildSettingsServerTagPickerCell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import react_native2 from "react-native" /* 4548 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
+let tmp;
+const react_native2 = tmp(4552);
 const Pressable = react_native.Pressable;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -23,9 +25,103 @@ obj2 = { alignItems: "center", justifyContent: "center", borderRadius: nativeDef
 createStyles = createStyles.createStyles;
 obj3 = { borderColor: nativeDefault.unsafe_rawColors.BRAND_500 };
 let closure_4 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagPickerCell.tsx");
-
-export default function GuildSettingsServerTagPickerCell(accessibilityLabel) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let accessibilityLabel;
+  let accessibilityRole;
+  let children;
+  let obj5;
+  let onPress;
+  let selected;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(19);
+  ({ size, selected, accessibilityLabel, accessibilityRole, onPress, children } = arg0);
+  let str = "radio";
+  if (undefined !== accessibilityRole) {
+    str = accessibilityRole;
+  }
+  const tmp4 = closure_4();
+  if (cResult[0] !== selected) {
+    const obj2 = { selected };
+    cResult[0] = selected;
+    cResult[1] = obj2;
+    tmp5 = obj2;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const tmpResult = react_native2;
+  const radioA11yNative = tmpResult.useRadioA11yNative(tmp5);
+  if (cResult[2] === str) {
+    if (cResult[3] === radioA11yNative) {
+      let tmp7;
+      let tmp9;
+      if (cResult[4] === selected) {
+        tmp7 = cResult[5];
+      }
+      if (selected) {
+        selected = tmp4.cellSelected;
+      }
+      if (cResult[6] !== size) {
+        const size1 = { width: size, height: size };
+        cResult[6] = size;
+        cResult[7] = size1;
+        tmp9 = size1;
+      } else {
+        tmp9 = cResult[7];
+      }
+      if (cResult[8] === tmp4.cell) {
+        if (cResult[9] === selected) {
+          let tmp10;
+          if (cResult[10] === tmp9) {
+            tmp10 = cResult[11];
+          }
+          if (cResult[12] === tmp7.accessibilityRole) {
+            if (cResult[13] === tmp7.accessibilityState) {
+              if (cResult[14] === accessibilityLabel) {
+                if (cResult[15] === children) {
+                  if (cResult[16] === onPress) {
+                    let tmp11;
+                    if (cResult[17] === tmp10) {
+                      tmp11 = cResult[18];
+                    }
+                    return tmp11;
+                  }
+                }
+              }
+            }
+          }
+          ({ accessibilityRole: obj7.accessibilityRole, accessibilityState: obj7.accessibilityState } = tmp7);
+          const tmp14 = <Pressable accessibilityRole={null} accessibilityState={null} accessibilityLabel={accessibilityLabel} onPress={onPress} style={tmp10}>{children}</Pressable>;
+          cResult[12] = tmp7.accessibilityRole;
+          cResult[13] = tmp7.accessibilityState;
+          cResult[14] = accessibilityLabel;
+          cResult[15] = children;
+          cResult[16] = onPress;
+          cResult[17] = tmp10;
+          cResult[18] = tmp14;
+          tmp11 = tmp14;
+        }
+      }
+      const items = [tmp4.cell, selected, tmp9];
+      cResult[8] = tmp4.cell;
+      cResult[9] = selected;
+      cResult[10] = tmp9;
+      cResult[11] = items;
+      tmp10 = items;
+    }
+  }
+  let tmp8 = radioA11yNative;
+  if ("button" === str) {
+    const obj4 = { accessibilityRole: "button", accessibilityState: obj5 };
+    tmp8 = obj4;
+    obj5 = { selected };
+  }
+  cResult[2] = str;
+  cResult[3] = radioA11yNative;
+  cResult[4] = selected;
+  cResult[5] = tmp8;
+  tmp7 = tmp8;
+}) : ((accessibilityLabel) => {
   let accessibilityRole;
   let children;
   let items;
@@ -56,4 +152,7 @@ export default function GuildSettingsServerTagPickerCell(accessibilityLabel) {
   items[1] = selected;
   items[2] = { width: size, height: size };
   return tmp3(tmp4, obj4);
-};
+});
+const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagPickerCell.tsx");
+
+export default tmp4;

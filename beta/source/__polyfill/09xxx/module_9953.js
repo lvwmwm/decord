@@ -1,14 +1,14 @@
 // Module ID: 9953
 // Function ID: 9954
-// Dependencies: [41, 42, 93, 95, 96, 98, 9909]
+// Dependencies: [41, 42, 93, 95, 98, 9954, 9951]
 
 // Module 9953
-import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 9909 */;
+import _mod9951 from "module_9951" /* 9951 */;
+import mergeDateTimeComponent from "mergeDateTimeComponent" /* 9954 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _get from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
 function _isNativeReflectConstruct() {
@@ -26,14 +26,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FRTimeExpressionParser {
+class AbstractMergeDateTimeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, FRTimeExpressionParser);
-    const obj = _getPrototypeOf(FRTimeExpressionParser);
+    _classCallCheck(this, AbstractMergeDateTimeRefiner);
+    const obj = _getPrototypeOf(AbstractMergeDateTimeRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -43,38 +43,46 @@ class FRTimeExpressionParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FRTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
+_inherits(AbstractMergeDateTimeRefiner, _mod9951.MergingRefiner);
 const entry = {
-  key: "primaryPrefix",
-  value: function primaryPrefix() {
-    return "(?:(?:[\u00E0a])\\s*)?";
+  key: "shouldMergeResults",
+  value: function shouldMergeResults(str, start, start2) {
+    start = start.start;
+    let isOnlyDateResult = start.isOnlyDate();
+    if (isOnlyDateResult) {
+      start2 = start2.start;
+      isOnlyDateResult = start2.isOnlyTime();
+    }
+    if (!isOnlyDateResult) {
+      const start3 = start2.start;
+      let isOnlyDateResult1 = start3.isOnlyDate();
+      if (isOnlyDateResult1) {
+        const start4 = start.start;
+        isOnlyDateResult1 = start4.isOnlyTime();
+      }
+      isOnlyDateResult = isOnlyDateResult1;
+    }
+    if (isOnlyDateResult) {
+      const self = this;
+      isOnlyDateResult = null != str.match(this.patternBetween());
+    }
+    return isOnlyDateResult;
   }
 };
-let items = [
+const items = [
   entry,
   {
-    key: "followingPhase",
-    value: function followingPhase() {
-      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|[\u00E0a]|\\?)\\s*";
-    }
-  },
-  {
-    key: "extractPrimaryTimeComponents",
-    value: function extractPrimaryTimeComponents(arg0, arg1) {
-      let fnResult = null;
-      const str = arg1[0];
-      if (!str.match(/^\s*\d{4}\s*$/)) {
-        const self = this;
-        let fn = _get(_getPrototypeOf(FRTimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
-        if (typeof fn === "function") {
-          fn = (items) => fn.apply(self, items);
-        }
-        const items = [arg0, arg1];
-        fnResult = fn(items);
-      }
-      return fnResult;
+    key: "mergeResults",
+    value: function mergeResults(arg0, start, text) {
+      start = start.start;
+      const isOnlyDateResult = start.isOnlyDate();
+      const mergeDateTimeResult = mergeDateTimeComponent.mergeDateTimeResult;
+      const tmp2 = isOnlyDateResult ? mergeDateTimeResult(start, text) : mergeDateTimeResult(text, start);
+      tmp2.index = start.index;
+      tmp2.text = start.text + arg0 + text.text;
+      return tmp2;
     }
   }
 ];
 
-export default _createClass(FRTimeExpressionParser, items);
+export default _createClass(AbstractMergeDateTimeRefiner, items);

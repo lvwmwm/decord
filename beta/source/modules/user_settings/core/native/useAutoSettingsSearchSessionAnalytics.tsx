@@ -1,35 +1,240 @@
-// Module ID: 16728
-// Function ID: 16729
+// Module ID: 16730
+// Function ID: 16731
 // Name: useAutoSettingsSearchSessionAnalytics
-// Dependencies: [19, 1980, 14249, 504, 1094, 7720, 5298, 6417, 2]
-// Exports: useAutoSettingsSearchSessionAnalytics
+// Dependencies: [19, 1986, 14237, 558, 576, 1106, 504, 7724, 6417, 5297, 2]
 
-// Module 16728 (useAutoSettingsSearchSessionAnalytics)
-import useMountEffectDefault from "useMountEffect" /* 5298 */;
+// Module 16730 (useAutoSettingsSearchSessionAnalytics)
 import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 6417 */;
-import usePreviousDefault from "usePrevious" /* 7720 */;
+import usePreviousDefault from "usePrevious" /* 7724 */;
 import react from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 1980 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14249 */;
+import AppStateStore from "AppStateStore" /* 1986 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14237 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, isFocused, state;
 
-let result = size.fileFinishedImporting("modules/user_settings/core/native/useAutoSettingsSearchSessionAnalytics.tsx");
-
-export const useAutoSettingsSearchSessionAnalytics = function useAutoSettingsSearchSessionAnalytics() {
+let tmp8;
+const useMountEffectDefault = tmp8(5297);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_1;
+  let stateFromStores;
+  let tmp10;
+  let tmp4;
+  let tmp5;
+  let tmp2 = dependencyMap;
+  let tmp = stateFromStores;
+  let obj = stateFromStores(576);
+  const cResult = obj.c(13);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AppStateStore];
+    const fn = function u() {
+      state = state.getState();
+      return state === stateFromStores(dependencyMap[5]).AppStates.ACTIVE;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = tmp(504);
+  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  let tmp8 = importDefault;
+  const tmp9 = usePreviousDefault(stateFromStores);
+  importDefault = tmp9;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function o() {
+      return () => {
+        const obj = closure_1_1(closure_1_2[8]);
+        obj.terminate();
+      };
+    };
+    cResult[2] = fn2;
+    tmp10 = fn2;
+  } else {
+    tmp10 = cResult[2];
+  }
+  useMountEffectDefault(tmp10);
+  if (cResult[3] === stateFromStores) {
+    let tmp12;
+    let tmp13;
+    let tmp15;
+    let tmp16;
+    let tmp18;
+    let tmp19;
+    if (cResult[4] === tmp9) {
+      tmp12 = cResult[5];
+      tmp13 = cResult[6];
+    }
+    const effect = react.useEffect(tmp12, tmp13);
+    const _Symbol = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn4 = function y() {
+        let obj = {
+          equalityFn(arg0, arg1) {
+            return arg0 === arg1;
+          }
+        };
+        return UserSettingSearchStore.subscribe((isFocused) => {
+          isFocused = isFocused.isFocused || isFocused.query.length > 0;
+          return isFocused;
+        }, (arg0) => {
+          const obj = closure_1_1(closure_1_2[8]);
+          const tmp = arg0;
+          if (tmp) {
+            obj.initialize();
+          } else {
+            obj.terminate();
+          }
+        }, obj);
+      };
+      cResult[7] = fn4;
+      tmp15 = fn4;
+    } else {
+      tmp15 = cResult[7];
+    }
+    if (cResult[8] !== stateFromStores) {
+      const items1 = [stateFromStores];
+      cResult[8] = stateFromStores;
+      cResult[9] = items1;
+      tmp16 = items1;
+    } else {
+      tmp16 = cResult[9];
+    }
+    const effect1 = obj3.useEffect(tmp15, tmp16);
+    const _Symbol2 = Symbol;
+    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+      class F {
+        constructor() {
+          let obj = {
+            equalityFn(arg0, arg1) {
+              return arg0 === arg1;
+            }
+          };
+          return UserSettingSearchStore.subscribe((isFocused) => {
+            isFocused = isFocused.isFocused && isFocused.query.length > 0;
+            return isFocused;
+          }, (arg0) => {
+            const tmp = arg0;
+            if (tmp) {
+              const obj = closure_1_1(closure_1_2[8]);
+              const result = obj.maybeTrackQueryEntered();
+            }
+          }, obj);
+        }
+      }
+      cResult[10] = F;
+      tmp18 = F;
+    } else {
+      class F {
+        constructor() {
+          let obj = {
+            equalityFn(arg0, arg1) {
+              return arg0 === arg1;
+            }
+          };
+          return UserSettingSearchStore.subscribe((isFocused) => {
+            isFocused = isFocused.isFocused && isFocused.query.length > 0;
+            return isFocused;
+          }, (arg0) => {
+            const tmp = arg0;
+            if (tmp) {
+              const obj = closure_1_1(closure_1_2[8]);
+              const result = obj.maybeTrackQueryEntered();
+            }
+          }, obj);
+        }
+      }
+    }
+    if (cResult[11] !== stateFromStores) {
+      class F {
+        constructor() {
+          let obj = {
+            equalityFn(arg0, arg1) {
+              return arg0 === arg1;
+            }
+          };
+          return UserSettingSearchStore.subscribe((isFocused) => {
+            isFocused = isFocused.isFocused && isFocused.query.length > 0;
+            return isFocused;
+          }, (arg0) => {
+            const tmp = arg0;
+            if (tmp) {
+              const obj = closure_1_1(closure_1_2[8]);
+              const result = obj.maybeTrackQueryEntered();
+            }
+          }, obj);
+        }
+      }
+      tmp20[0] = stateFromStores;
+      cResult[11] = stateFromStores;
+      cResult[12] = tmp20;
+      tmp19 = tmp20;
+    } else {
+      class F {
+        constructor() {
+          let obj = {
+            equalityFn(arg0, arg1) {
+              return arg0 === arg1;
+            }
+          };
+          return UserSettingSearchStore.subscribe((isFocused) => {
+            isFocused = isFocused.isFocused && isFocused.query.length > 0;
+            return isFocused;
+          }, (arg0) => {
+            const tmp = arg0;
+            if (tmp) {
+              const obj = closure_1_1(closure_1_2[8]);
+              const result = obj.maybeTrackQueryEntered();
+            }
+          }, obj);
+        }
+      }
+    }
+    const effect2 = obj3.useEffect(tmp18, tmp19);
+  }
+  const fn3 = function l() {
+    const field = UserSettingSearchStore.getField("isFocused") || UserSettingSearchStore.getField("query").length > 0;
+    let tmp3 = stateFromStores;
+    const tmp2 = stateFromStores;
+    if (tmp3) {
+      tmp3 = !closure_1;
+    }
+    if (tmp3) {
+      tmp3 = field;
+    }
+    if (tmp3) {
+      const obj = SettingSearchSessionAnalyticsManagerDefault;
+      obj.initialize();
+    }
+    const tmp8 = !tmp2 && closure_1 && field;
+    if (tmp8) {
+      const obj2 = SettingSearchSessionAnalyticsManagerDefault;
+      obj2.terminate();
+    }
+  };
+  const items2 = [stateFromStores, tmp9];
+  cResult[3] = stateFromStores;
+  cResult[4] = tmp9;
+  cResult[5] = fn3;
+  cResult[6] = items2;
+  tmp13 = items2;
+  tmp12 = fn3;
+}) : (() => {
   let closure_1;
   let stateFromStores;
   let obj = stateFromStores(504);
   const items = [AppStateStore];
   stateFromStores = obj.useStateFromStores(items, () => {
     state = state.getState();
-    return state === stateFromStores(dependencyMap[4]).AppStates.ACTIVE;
+    return state === stateFromStores(dependencyMap[5]).AppStates.ACTIVE;
   });
   let tmp2 = usePreviousDefault(stateFromStores);
   importDefault = tmp2;
   let tmp3 = useMountEffectDefault(() => () => {
-    const obj = closure_1_1(closure_1_2[7]);
+    const obj = closure_1_1(closure_1_2[8]);
     obj.terminate();
   });
   const items1 = [stateFromStores, tmp2];
@@ -64,7 +269,7 @@ export const useAutoSettingsSearchSessionAnalytics = function useAutoSettingsSea
       isFocused = isFocused.isFocused || isFocused.query.length > 0;
       return isFocused;
     }, (arg0) => {
-      const obj = closure_1_1(closure_1_2[7]);
+      const obj = closure_1_1(closure_1_2[8]);
       const tmp = arg0;
       if (tmp) {
         obj.initialize();
@@ -86,9 +291,12 @@ export const useAutoSettingsSearchSessionAnalytics = function useAutoSettingsSea
     }, (arg0) => {
       const tmp = arg0;
       if (tmp) {
-        const obj = closure_1_1(closure_1_2[7]);
+        const obj = closure_1_1(closure_1_2[8]);
         const result = obj.maybeTrackQueryEntered();
       }
     }, obj);
   }, items3);
-};
+});
+let result = size.fileFinishedImporting("modules/user_settings/core/native/useAutoSettingsSearchSessionAnalytics.tsx");
+
+export const useAutoSettingsSearchSessionAnalytics = tmp2;

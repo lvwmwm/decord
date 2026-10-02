@@ -1,13 +1,14 @@
-// Module ID: 6682
-// Function ID: 6683
+// Module ID: 6683
+// Function ID: 6684
 // Name: canReviewGuildMemberApplications
-// Dependencies: [2067, 4469, 1074, 504, 5365, 2]
-// Exports: canReviewGuildMemberApplications, useCanReviewGuildMemberApplications
+// Dependencies: [2073, 4472, 1086, 558, 576, 504, 5366, 2]
+// Exports: canReviewGuildMemberApplications
 
-// Module 6682 (canReviewGuildMemberApplications)
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import Constants from "Constants" /* 1074 */;
+// Module 6683 (canReviewGuildMemberApplications)
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,6 +17,74 @@ let _require;
 let closure_4;
 let hasOwnProperty;
 ({ GuildFeatures: closure_4, Permissions: hasOwnProperty } = Constants);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp8;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function o() {
+      return GuildStore.getGuild(closure_0);
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = require("get initialized");
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] !== stateFromStores) {
+    let hasItem = null != stateFromStores;
+    if (hasItem) {
+      const features = stateFromStores.features;
+      hasItem = features.has(constants.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+    }
+    if (hasItem) {
+      hasItem = PermissionStore.can(constants2.KICK_MEMBERS, stateFromStores);
+    }
+    if (hasItem) {
+      const tmpResult2 = require("MemberVerificationUtils");
+      hasItem = tmpResult2.guildHasVerificationGate(stateFromStores);
+    }
+    cResult[3] = stateFromStores;
+    cResult[4] = hasItem;
+    tmp8 = hasItem;
+  } else {
+    tmp8 = cResult[4];
+  }
+  return tmp8;
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  const items = [GuildStore];
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(closure_0));
+  let hasItem = null != stateFromStores;
+  const tmp = _require;
+  if (hasItem) {
+    const features = stateFromStores.features;
+    hasItem = features.has(constants.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+  }
+  if (hasItem) {
+    hasItem = PermissionStore.can(constants2.KICK_MEMBERS, stateFromStores);
+  }
+  if (hasItem) {
+    const tmpResult = tmp(5366);
+    hasItem = tmpResult.guildHasVerificationGate(stateFromStores);
+  }
+  return hasItem;
+});
 const result = size.fileFinishedImporting("modules/guild_member_verification/canReviewGuildMemberApplications.tsx");
 
 export const canReviewGuildMemberApplications = function canReviewGuildMemberApplications(c0) {
@@ -28,23 +97,4 @@ export const canReviewGuildMemberApplications = function canReviewGuildMemberApp
   }
   return tmp2;
 };
-export const useCanReviewGuildMemberApplications = function useCanReviewGuildMemberApplications(guildId) {
-  _require = guildId;
-  const items = [GuildStore];
-  const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
-  let hasItem = null != stateFromStores;
-  const tmp = _require;
-  if (hasItem) {
-    const features = stateFromStores.features;
-    hasItem = features.has(constants.MEMBER_VERIFICATION_MANUAL_APPROVAL);
-  }
-  if (hasItem) {
-    hasItem = PermissionStore.can(constants2.KICK_MEMBERS, stateFromStores);
-  }
-  if (hasItem) {
-    const tmpResult = tmp(5365);
-    hasItem = tmpResult.guildHasVerificationGate(stateFromStores);
-  }
-  return hasItem;
-};
+export const useCanReviewGuildMemberApplications = tmp3;

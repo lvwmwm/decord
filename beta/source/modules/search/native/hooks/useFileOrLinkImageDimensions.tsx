@@ -1,28 +1,47 @@
-// Module ID: 16533
-// Function ID: 16534
+// Module ID: 16535
+// Function ID: 16536
 // Name: useFileOrLinkImageDimensions
-// Dependencies: [19, 7303, 2]
-// Exports: useFileOrLinkImageDimensions
+// Dependencies: [19, 7307, 558, 576, 2]
 
-// Module 16533 (useFileOrLinkImageDimensions)
+// Module 16535 (useFileOrLinkImageDimensions)
+import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import SearchConstants from "SearchConstants" /* 7303 */;
+import SearchConstants from "SearchConstants" /* 7307 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c2;
 let c3;
 let closure_4;
-let map;
-({ FILES_OR_LINKS_GAP_WIDTH: map, FILES_OR_LINKS_NUM_COLUMNS: c2, FILE_OR_LINK_IMAGE_RATIO: c3, SEARCH_LIST_HORIZONTAL_PADDING: closure_4 } = SearchConstants);
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/search/native/hooks/useFileOrLinkImageDimensions.tsx");
-
-export const useFileOrLinkImageDimensions = function useFileOrLinkImageDimensions(width) {
-  const diff = (width - 2 * React3 - (React2 - 1) * map) / React2 - 2;
-  const result = diff * _false;
+let hasOwnProperty;
+let metroRequire;
+({ FILES_OR_LINKS_GAP_WIDTH: c3, FILES_OR_LINKS_NUM_COLUMNS: closure_4, FILE_OR_LINK_IMAGE_RATIO: hasOwnProperty, SEARCH_LIST_HORIZONTAL_PADDING: metroRequire } = SearchConstants);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const obj = react2;
+  const cResult = obj.c(3);
+  const diff = (arg0 - 2 * metroRequire - (React3 - 1) * _false) / React3 - 2;
+  const result = diff * hasOwnProperty;
+  if (cResult[0] === result) {
+    let tmp4;
+    if (cResult[1] === diff) {
+      tmp4 = cResult[2];
+    }
+    return tmp4;
+  }
+  size = { width: diff, height: result };
+  cResult[0] = result;
+  cResult[1] = diff;
+  cResult[2] = size;
+  tmp4 = size;
+}) : ((arg0) => {
+  const diff = (arg0 - 2 * metroRequire - (React3 - 1) * _false) / React3 - 2;
+  const result = diff * hasOwnProperty;
   const items = [result, diff];
   return react.useMemo(() => {
     size = { width: diff, height: result };
     return size;
   }, items);
-};
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/search/native/hooks/useFileOrLinkImageDimensions.tsx");
+
+export const useFileOrLinkImageDimensions = tmp3;

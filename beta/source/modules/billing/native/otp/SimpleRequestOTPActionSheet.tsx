@@ -1,32 +1,36 @@
-// Module ID: 15295
-// Function ID: 15296
+// Module ID: 15283
+// Function ID: 15284
 // Name: SimpleRequestOTPActionSheet
-// Dependencies: [5, 32, 19, 17, 1372, 5822, 1074, 1374, 21, 3, 1613, 10162, 504, 10508, 6961, 1970, 8668, 10480, 4800, 5204, 6974, 5279, 4832, 5919, 5281, 10289, 1255, 10126, 6571, 10282, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17, 1378, 5823, 1086, 1380, 21, 3, 1619, 10201, 504, 10540, 6965, 1976, 8665, 10512, 4801, 5205, 6978, 5280, 4833, 5918, 5282, 10330, 558, 576, 1267, 10165, 6572, 10320, 2]
 
-// Module 15295 (SimpleRequestOTPActionSheet)
+// Module 15283 (SimpleRequestOTPActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1074 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1970 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6961 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 6974 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10126 */;
-import NativePaymentContext from "NativePaymentContext" /* 10282 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import v1 from "v1" /* 1267 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6965 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 6978 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10165 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
-import SKUStore from "SKUStore" /* 5822 */;
+import UserStore from "UserStore" /* 1378 */;
+import SKUStore from "SKUStore" /* 5823 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c4, dependencyMap, ref;
 
 let closure_12;
+let tmp;
 let unpackModuleId;
+const NativePaymentContext = tmp(10320);
 function GiftPurchaseSKUView(selectedSkuId) {
   let _undefined;
   let closure_2;
@@ -42,7 +46,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj7;
   let tmp16;
   let tmp17;
-  const f101556 = () => {
+  const f119389 = () => {
     let items;
     if (null == c5) {
       items = ["Loading...", "Loading..."];
@@ -95,7 +99,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
       } else {
         c3 = 0;
       }
-      await "HermesInternal";
+      await "IconComponent";
       message = tmp4;
       if (null == _undefined) {
         logger.error("Cannot proceed with purchase: collectibleProduct is undefined");
@@ -119,18 +123,18 @@ function GiftPurchaseSKUView(selectedSkuId) {
   };
   let tmp = first;
   let tmp2 = dependencyMap;
-  const rect = first(1613)();
+  const rect = first(1619)();
   obj = react;
   const tmp3 = _slicedToArray;
   [first, dependencyMap] = react.useState(false);
   const currentUser = memo1.getCurrentUser();
   _slicedToArray = react.useRef({});
-  let obj2 = selectedSkuId(10162);
+  let obj2 = selectedSkuId(10201);
   const giftStyle = obj2.useNativeGiftContext().giftStyle;
   let obj3 = selectedSkuId(504);
   let items = [closure_8];
   const stateFromStores = obj3.useStateFromStores(items, () => SKUStore.get(selectedSkuId));
-  let obj4 = selectedSkuId(10508);
+  let obj4 = selectedSkuId(10540);
   const fetchCollectiblesProduct = obj4.useFetchCollectiblesProduct(selectedSkuId);
   const product = fetchCollectiblesProduct.product;
   react = product;
@@ -191,7 +195,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -245,7 +249,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } catch (tmp30) {
             if (0 === c3) {
               c5 = 3;
@@ -280,10 +284,10 @@ function GiftPurchaseSKUView(selectedSkuId) {
     giftParams: obj7
   };
   obj7 = { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } };
-  closure_8 = tmp(10480)(obj6);
+  closure_8 = tmp(10512)(obj6);
   const items5 = [product];
-  [tmp16, tmp17] = tmp3(obj.useMemo(f101556, items5), 2);
-  tmp3(obj.useMemo(f101556, items5), 2);
+  [tmp16, tmp17] = tmp3(obj.useMemo(f119389, items5), 2);
+  tmp3(obj.useMemo(f119389, items5), 2);
   if (!isFetching) {
     isFetching = first;
   }
@@ -291,9 +295,9 @@ function GiftPurchaseSKUView(selectedSkuId) {
     isFetching = null == product;
   }
   const obj8 = { spacing: 24, style: { paddingTop: rect.top, paddingBottom: rect.bottom, paddingHorizontal: 12 }, children: items7 };
-  const Stack = tmp7(5279).Stack;
+  const Stack = tmp7(5280).Stack;
   let name;
-  const Text = tmp7(4832).Text;
+  const Text = tmp7(4833).Text;
   if (stateFromStores != null) {
     name = stateFromStores.name;
   }
@@ -308,9 +312,9 @@ function GiftPurchaseSKUView(selectedSkuId) {
   }
   items6[14] = str;
   items7 = [tmp18(Text, { variant: "text-md/medium", color: "text-overlay-light", children: items6 }), , ];
-  const Card = tmp7(5919).Card;
+  const Card = tmp7(5918).Card;
   let str4 = "Send Gift";
-  const Button = tmp7(5281).Button;
+  const Button = tmp7(5282).Button;
   if (isFetching) {
     str4 = "Loading...";
   }
@@ -325,14 +329,132 @@ function GiftPurchaseSKUView(selectedSkuId) {
   };
   items7[1] = closure_12(Card, obj9);
   const obj11 = { children: items9 };
-  const Card2 = tmp7(5919).Card;
+  const Card2 = tmp7(5918).Card;
   const obj12 = { variant: "text-md/medium", color: "text-overlay-light", children: items8 };
   items8 = ["Select style: ", giftStyle];
-  items9 = [tmp18(tmp7(4832).Text, obj12), tmp21(tmp(10289), {})];
+  items9 = [tmp18(tmp7(4833).Text, obj12), tmp21(tmp(10330), {})];
   items7[2] = closure_11(Card2, obj11);
   return closure_11(Stack, obj8);
 }
-function SimpleRequestOTPActionSheet(giftMessage) {
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+const View = react_native.View;
+let closure_9 = Constants.PriceSetAssignmentPurchaseTypes;
+const PremiumTypes = PremiumConstants.PremiumTypes;
+({ jsxs: unpackModuleId, jsx: closure_12 } = Fragment);
+let tmp3 = new LoggerDefault("PaymentFlowTest.android");
+let closure_13 = tmp3;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleRequestOTPActionSheet(arg0) {
+  let first;
+  let giftMessage;
+  let giftRecipientId;
+  let items;
+  let items1;
+  let obj4;
+  let requestType;
+  let selectedSkuId;
+  let tmp6;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(13);
+  ({ selectedSkuId, requestType, giftRecipientId, giftMessage } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = v1;
+    const v4Result = tmpResult.v4();
+    cResult[0] = v4Result;
+    first = v4Result;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { isGift: true, analyticsLoadId: first, analyticsLocations: [] };
+    const tmpResult2 = PremiumAnalyticsUtils;
+    const basePurchaseFlowAnalyticsFields = tmpResult2.getBasePurchaseFlowAnalyticsFields(obj2);
+    cResult[1] = basePurchaseFlowAnalyticsFields;
+    tmp6 = basePurchaseFlowAnalyticsFields;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if ("giftSku" === requestType) {
+    if (null != selectedSkuId) {
+      if (null != giftRecipientId) {
+        let tmp15;
+        let tmp16;
+        const _Symbol = Symbol;
+        if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+          const fn = function b() {
+
+          };
+          class I {
+            constructor() {
+
+            }
+          }
+          cResult[2] = fn;
+          cResult[3] = I;
+          tmp15 = fn;
+          tmp16 = I;
+        } else {
+          tmp15 = cResult[2];
+          class I {
+            constructor() {
+
+            }
+          }
+        }
+        if (cResult[4] === giftMessage) {
+          if (cResult[5] === giftRecipientId) {
+            class I {
+              constructor() {
+
+              }
+            }
+          }
+        }
+        const obj3 = { basePurchaseAnalytics: tmp6, onClose: tmp15, setCurrentAnalyticsStep: tmp16, children: closure_12(GiftPurchaseSKUView, obj4) };
+        obj4 = { selectedSkuId, giftRecipientId, giftMessage };
+        const NativeGiftContextProvider = tmp(10201).NativeGiftContextProvider;
+        cResult[4] = giftMessage;
+        cResult[5] = giftRecipientId;
+        cResult[6] = selectedSkuId;
+        cResult[7] = closure_12(NativeGiftContextProvider, obj3);
+        const tmp20 = closure_12(NativeGiftContextProvider, obj3);
+      }
+      return tmp21;
+    }
+  }
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class I {
+      constructor() {
+
+      }
+    }
+    cResult[8] = tmp11;
+    tmp9 = tmp11;
+  } else {
+    tmp9 = cResult[8];
+  }
+  let str = "none";
+  if (null != requestType) {
+    str = requestType;
+  }
+  if (cResult[9] !== str) {
+    class I {
+      constructor() {
+
+      }
+    }
+    const obj5 = { children: items };
+    items = [tmp9, ];
+    const obj6 = { variant: "text-md/normal", color: "text-feedback-warning", children: items1 };
+    items1 = ["Request type: ", str];
+    items[1] = unpackModuleId(Text_Text.Text, obj6);
+    cResult[9] = str;
+    cResult[10] = unpackModuleId(View, obj5);
+    const tmp14 = unpackModuleId(View, obj5);
+  }
+}) : (function SimpleRequestOTPActionSheet(giftMessage) {
   let analyticsLoadId;
   let giftRecipientId;
   let items1;
@@ -362,7 +484,7 @@ function SimpleRequestOTPActionSheet(giftMessage) {
           children: closure_12(GiftPurchaseSKUView, obj3)
         };
         obj3 = { selectedSkuId, giftRecipientId, giftMessage };
-        const NativeGiftContextProvider = tmp(10162).NativeGiftContextProvider;
+        const NativeGiftContextProvider = tmp(10201).NativeGiftContextProvider;
         tmp6Result = closure_12(NativeGiftContextProvider, obj2);
         tmp8 = closure_12;
       }
@@ -373,7 +495,7 @@ function SimpleRequestOTPActionSheet(giftMessage) {
   tmp8 = closure_12;
   const items = [closure_12(require("Text/Text").Text, { variant: "text-lg/bold", color: "text-feedback-warning", children: "Gift purchasing is the only supported feature on Android in this version." }), ];
   let str = "none";
-  const Text = tmp(4832).Text;
+  const Text = tmp(4833).Text;
   const tmp7 = View;
   if (null != requestType) {
     str = requestType;
@@ -383,22 +505,42 @@ function SimpleRequestOTPActionSheet(giftMessage) {
   const obj5 = { children: items };
   items[1] = closure_11(Text, obj6);
   tmp6Result = tmp6(tmp7, obj5);
-}
-let _slicedToArray = _slicedToArray_mod;
-let react = react_mod;
-const View = react_native.View;
-let closure_9 = Constants.PriceSetAssignmentPurchaseTypes;
-const PremiumTypes = PremiumConstants.PremiumTypes;
-({ jsxs: unpackModuleId, jsx: closure_12 } = Fragment);
-let tmp3 = new LoggerDefault("PaymentFlowTest.android");
-let closure_13 = tmp3;
-const result = size.fileFinishedImporting("modules/billing/native/otp/SimpleRequestOTPActionSheet.tsx");
-
-export default function SimpleCreateOTPActionSheetWrapper(arg0) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleCreateOTPActionSheetWrapper(arg0) {
+  let first;
+  let obj3;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const obj2 = { skuIDs: first, activeSubscription: null, children: closure_12(closure_15, obj3) };
+    obj3 = {};
+    const NativePaymentContextProvider = NativePaymentContext.NativePaymentContextProvider;
+    const merged = Object.assign(arg0);
+    const tmp11 = closure_12(NativePaymentContextProvider, obj2);
+    cResult[1] = arg0;
+    cResult[2] = tmp11;
+    tmp5 = tmp11;
+  } else {
+    tmp5 = cResult[2];
+  }
+  return tmp5;
+}) : (function SimpleCreateOTPActionSheetWrapper(arg0) {
   let obj2;
-  const obj = { skuIDs: [], activeSubscription: null, children: closure_12(SimpleRequestOTPActionSheet, obj2) };
+  const obj = { skuIDs: [], activeSubscription: null, children: closure_12(closure_15, obj2) };
   obj2 = {};
   const NativePaymentContextProvider = NativePaymentContext.NativePaymentContextProvider;
   const merged = Object.assign(arg0);
   return closure_12(NativePaymentContextProvider, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/billing/native/otp/SimpleRequestOTPActionSheet.tsx");
+
+export default tmp4;

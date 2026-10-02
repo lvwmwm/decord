@@ -1,21 +1,21 @@
-// Module ID: 14176
-// Function ID: 14177
+// Module ID: 14164
+// Function ID: 14165
 // Name: UserProfileBadgesEditButton
-// Dependencies: [32, 19, 17, 2042, 21, 4836, 576, 10653, 6583, 6806, 2029, 4800, 14177, 1981, 14175, 1115, 4832, 10659, 10652, 2]
+// Dependencies: [32, 19, 17, 2048, 21, 4837, 588, 10642, 6584, 6807, 2035, 4801, 14165, 1987, 14163, 1127, 4833, 10648, 10641, 2]
 // Exports: default
 
-// Module 14176 (UserProfileBadgesEditButton)
-import nativeDefault from "native" /* 576 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10652 */;
-import BadgeUtils from "BadgeUtils" /* 10659 */;
+// Module 14164 (UserProfileBadgesEditButton)
+import nativeDefault from "native" /* 588 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10641 */;
+import BadgeUtils from "BadgeUtils" /* 10648 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -98,7 +98,7 @@ export default function UserProfileBadgesEditButton(arg0) {
   onPress = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { analyticsLocations };
-    obj.openLazy(asyncRequire(14177, dependencyMap.paths), "Customize Badges", obj2);
+    obj.openLazy(asyncRequire(14165, dependencyMap.paths), "Customize Badges", obj2);
     const tmp2 = closure_5;
     if (tmp2) {
       closure_4(ContentDismissActionType.TAKE_ACTION);

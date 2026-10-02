@@ -287,12 +287,12 @@ const entry1 = {
 const items1 = [entry1];
 
 export default _createClass(AnimatedObject, items, items1);
-export const isPlainObject = function isPlainObject(icon) {
+export const isPlainObject = function isPlainObject(label) {
   let prototypeOf;
-  if (null !== icon) {
-    if (typeof icon === "object") {
+  if (null !== label) {
+    if (typeof label === "object") {
       const _Object2 = Object;
-      prototypeOf = Object.getPrototypeOf(icon);
+      prototypeOf = Object.getPrototypeOf(label);
     }
   }
   let tmp2 = undefined !== prototypeOf;
@@ -303,7 +303,7 @@ export const isPlainObject = function isPlainObject(icon) {
       isPrototypeOfResult = prototypeOf.isPrototypeOf(Object);
     }
     if (isPrototypeOfResult) {
-      isPrototypeOfResult = !isValidElement(icon);
+      isPrototypeOfResult = !isValidElement(label);
     }
     tmp2 = isPrototypeOfResult;
   }

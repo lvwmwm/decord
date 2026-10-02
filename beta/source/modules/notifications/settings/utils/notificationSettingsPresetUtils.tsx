@@ -1,18 +1,18 @@
-// Module ID: 5020
-// Function ID: 5021
+// Module ID: 5021
+// Function ID: 5022
 // Name: notificationSettingsPresetUtils
-// Dependencies: [1074, 5018, 5021, 1115, 2]
+// Dependencies: [1086, 5019, 5022, 1127, 2]
 // Exports: arePresetSettingsUnset, presetName, webPresetFromSettings
 
-// Module 5020 (notificationSettingsPresetUtils)
-import Constants from "Constants" /* 1074 */;
-import intl2 from "intl" /* 1115 */;
-import ReadStateConstants from "ReadStateConstants" /* 5018 */;
-import merged5 from "merged5" /* 5021 */;
+// Module 5021 (notificationSettingsPresetUtils)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import ReadStateConstants from "ReadStateConstants" /* 5019 */;
+import merged5 from "merged5" /* 5022 */;
 import size from "module_2" /* 2 */;
 
-function presetFromSettings(stateFromStores, UserGuildSettingsStore) {
-  const items = [UserGuildSettingsStore, stateFromStores];
+function presetFromSettings(stateFromStores, stateFromStores1) {
+  const items = [stateFromStores1, stateFromStores];
   const str = merged5;
   const match = str.match(items);
   const items1 = [UserNotificationSettings.ALL_MESSAGES, UnreadSetting.ALL_MESSAGES];

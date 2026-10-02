@@ -1,10 +1,10 @@
 // Module ID: 12912
 // Function ID: 12913
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 12912 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 605.5, height: 244.5, scales: [2, 3], hash: "fdaf8ab7fb8f1ab3047aef93e706bcc1", name: "img_discord_nitro_logo_left_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 155.5, height: 16, scales: [2, 3], hash: "cda787d6a3bd0c9bbee693bc4f7f0975", name: "img_logo_nitro_classic_horizontal", type: "png" });

@@ -1,13 +1,13 @@
-// Module ID: 2092
-// Function ID: 2093
+// Module ID: 2095
+// Function ID: 2096
 // Name: StartupData
-// Dependencies: [17, 1364, 2093, 2]
+// Dependencies: [17, 1370, 2096, 2]
 // Exports: getUserId, setUserId
 
-// Module 2092 (StartupData)
+// Module 2095 (StartupData)
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import react_nativeDefault from "react-native" /* 2093 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import react_nativeDefault from "react-native" /* 2096 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = react_native.NativeModules;

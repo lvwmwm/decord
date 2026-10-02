@@ -1,16 +1,16 @@
-// Module ID: 15677
-// Function ID: 15678
+// Module ID: 15676
+// Function ID: 15677
 // Name: AddFriendsScreenUtils
-// Dependencies: [5, 2045, 1074, 4829, 10330, 4849, 4527, 1115, 11747, 6876, 9195, 2]
+// Dependencies: [5, 2051, 1086, 4830, 10373, 4850, 4530, 1127, 11640, 6880, 9207, 2]
 // Exports: acceptIncomingRequest, addContactSuggestion, dismissIncomingRequest, sendWave
 
-// Module 15677 (AddFriendsScreenUtils)
-import Constants from "Constants" /* 1074 */;
-import MessageConstants from "MessageConstants" /* 4829 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9195 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10330 */;
+// Module 15676 (AddFriendsScreenUtils)
+import Constants from "Constants" /* 1086 */;
+import MessageConstants from "MessageConstants" /* 4830 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9207 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10373 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
 import size from "module_2" /* 2 */;
 
 let channelId;
@@ -100,13 +100,13 @@ let obj = function _sendWave() {
           obj.openPrivateChannel(obj15);
         }
       }
-      await "HermesInternal";
+      await "IconComponent";
       channelId = tmp4;
       flag = closure_1;
       if (closure_1 === undefined) {
         flag = true;
       }
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -138,7 +138,7 @@ export const sendWave = function sendWave() {
 };
 export const addContactSuggestion = function addContactSuggestion(user) {
   let obj3;
-  const obj2 = { userId: user.id, context: obj3, type: "HermesInternal", fromFriendSuggestion: null };
+  const obj2 = { userId: user.id, context: obj3, type: "IconComponent", fromFriendSuggestion: null };
   obj3 = { location: AnalyticsSections.FRIENDS_ADD_FRIENDS_MODAL };
   obj = RelationshipActionCreatorsDefault;
   obj.addRelationship(obj2);

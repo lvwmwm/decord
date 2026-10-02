@@ -1,19 +1,19 @@
-// Module ID: 1478
-// Function ID: 1479
+// Module ID: 1484
+// Function ID: 1485
 // Name: utils/ImageUtils
-// Dependencies: [32, 17, 1074, 1433, 1479, 1473, 1434, 1880, 12, 1400, 1397, 2]
+// Dependencies: [32, 17, 1086, 1439, 1485, 1479, 1440, 1886, 12, 1406, 1403, 2]
 // Exports: getMobileOptimizedSrc, getPaletteForAvatarMobile
 
-// Module 1478 (utils/ImageUtils)
+// Module 1484 (utils/ImageUtils)
 import _modDef12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1074 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
-import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1433 */;
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1434 */;
-import _modDef1473 from "module_1473" /* 1473 */;
-import useWindowDimensions from "useWindowDimensions" /* 1479 */;
-import react_nativeDefault from "react-native" /* 1880 */;
+import Constants from "Constants" /* 1086 */;
+import AvatarUtils from "AvatarUtils" /* 1403 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1406 */;
+import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1439 */;
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1440 */;
+import _modDef1479 from "module_1479" /* 1479 */;
+import useWindowDimensions from "useWindowDimensions" /* 1485 */;
+import react_nativeDefault from "react-native" /* 1886 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_native from "react-native" /* 17 */;
 import size_mod from "module_2" /* 2 */;
@@ -56,7 +56,7 @@ function getSrcWithWidthAndHeight(animated) {
   const tmp = _slicedToArray(src.split("?"), 2);
   const items = [tmp[0], ];
   const tmp2 = tmp[1];
-  let obj = _modDef1473;
+  let obj = _modDef1479;
   items[1] = obj.parse(tmp2);
   let tmp5 = _slicedToArray(items, 2);
   [tmp6, tmp7] = tmp5;
@@ -93,12 +93,12 @@ function getSrcWithWidthAndHeight(animated) {
   let text = tmp6;
   const tmp3Result = _modDef12;
   if (!tmp3Result.isEmpty(tmp7)) {
-    _modDef1473;
+    _modDef1479;
     text = `${tmp6}?${obj5.stringify(tmp7)}`;
   }
   return text;
 }
-function getMobileOptimizedSrc(proxy_url, width, height, png) {
+function getMobileOptimizedSrc(proxy_url, c7, c72, png) {
   let tmp = png;
   if (png === undefined) {
     tmp = null;
@@ -110,24 +110,24 @@ function getMobileOptimizedSrc(proxy_url, width, height, png) {
   const obj = useWindowDimensions;
   size = obj.getWindowDimensions();
   const result = hasOwnProperty.getPixelSizeForLayoutSize(size.width) * num;
-  const bound = Math.min(width > height ? result / width : hasOwnProperty.getPixelSizeForLayoutSize(size.height / 2) * num / height, 1);
-  let rounded1 = height;
-  let rounded = width;
+  const bound = Math.min(c7 > c72 ? result / c7 : hasOwnProperty.getPixelSizeForLayoutSize(size.height / 2) * num / c72, 1);
+  let rounded1 = c72;
+  let rounded = c7;
   if (bound < 1) {
     const _Math = Math;
-    rounded = Math.ceil(width * bound);
+    rounded = Math.ceil(c7 * bound);
     const _Math2 = Math;
-    rounded1 = Math.ceil(height * bound);
+    rounded1 = Math.ceil(c72 * bound);
   }
-  const obj2 = { src: proxy_url, sourceWidth: width, sourceHeight: height, targetWidth: rounded, targetHeight: rounded1, format: tmp };
+  const obj2 = { src: proxy_url, sourceWidth: c7, sourceHeight: c72, targetWidth: rounded, targetHeight: rounded1, format: tmp };
   return getSrcWithWidthAndHeight(obj2);
 }
-function getPaletteForAvatarMobile(automodAvatarURL) {
+function getPaletteForAvatarMobile(src) {
   const ensureAvatarSource = utils_AvatarUtils.ensureAvatarSource;
   utils_AvatarUtils;
   ImageManager = ImageManager.ImageManager;
   const obj = AvatarUtils;
-  return ImageManager.getDominantColors(ensureAvatarSource(obj.makeSource(automodAvatarURL)));
+  return ImageManager.getDominantColors(ensureAvatarSource(obj.makeSource(src)));
 }
 ({ NativeModules: closure_4, PixelRatio: hasOwnProperty } = react_native);
 let closure_6 = Constants.MEDIA_PROXY_MAX_TARGET_RESOLUTION;

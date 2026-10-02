@@ -1,12 +1,13 @@
 // Module ID: 9930
 // Function ID: 9931
-// Dependencies: [41, 42, 93, 95, 98, 9914]
+// Dependencies: [41, 42, 93, 95, 98, 9931, 9935, 9939]
 
 // Module 9930
-import _mod9914 from "module_9914" /* 9914 */;
+import _mod9931 from "module_9931" /* 9931 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9939 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,63 +26,61 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ENUnlikelyFormatFilter {
-  constructor() {
+const regExp = new RegExp("(?:(?:within|in|for)\\s*)?(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(" + _mod9931.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+const regExp1 = new RegExp("(?:within|in|for)\\s*(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(" + _mod9931.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+const regExp2 = new RegExp("(?:within|in|for)\\s*(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(" + _mod9931.TIME_UNITS_NO_ABBR_PATTERN + ")(?=\\W|$)", "i");
+class ENTimeUnitWithinFormatParser {
+  constructor(strictMode) {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENUnlikelyFormatFilter);
-    const obj = _getPrototypeOf(ENUnlikelyFormatFilter);
+    _classCallCheck(this, ENTimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(ENTimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
       constructResult = obj.apply(self, undefined);
     }
-    return tmp3(self, constructResult);
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = strictMode;
+    return tmp3Result;
   }
 }
-_inherits(ENUnlikelyFormatFilter, _mod9914.Filter);
+_inherits(ENTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "isValid",
-  value: function isValid(text, text2) {
-    let closure_0 = text2;
-    const str = text2.text;
-    const str2 = str.trim();
-    const str3 = text.text;
-    if (str2 === str3.trim()) {
-      return true;
+  key: "innerPattern",
+  value: function innerPattern(option) {
+    let tmp2;
+    if (this.strictMode) {
+      tmp2 = regExp2;
     } else {
-      if ("may" === str2.toLowerCase()) {
-        const str4 = text.text;
-        const str5 = str4.substring(0, text2.index);
-        const str6 = str5.trim();
-        if (!str6.match(/\b(in)$/i)) {
-          text.debug(() => {
-            console.log("Removing unlikely result: " + text2);
-          });
-          return false;
-        }
-      }
-      const formatted = str2.toLowerCase();
-      const endsWithResult = formatted.endsWith("the second");
-      let flag2 = !endsWithResult;
-      if (endsWithResult) {
-        flag2 = false;
-        const str8 = text.text;
-        const str9 = str8.substring(text2.index + text2.text.length);
-        if (str9.trim().length > 0) {
-          text.debug(() => {
-            console.log("Removing unlikely result: " + text2);
-          });
-          flag2 = false;
-        }
-      }
-      return flag2;
+      tmp2 = option.option.forwardDate ? regExp : regExp1;
     }
+    return tmp2;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const str = arg1[0];
+      if (str.match(/^for\s*the\s*\w+/)) {
+        return null;
+      } else {
+        const parseDurationResult = _mod9931.parseDuration(arg1[1]);
+        let relativeFromReference = null;
+        const tmp = require;
+        if (parseDurationResult) {
+          const ParsingComponents = tmp(9935).ParsingComponents;
+          relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+        }
+        return relativeFromReference;
+      }
+    }
+  }
+];
 
-export default _createClass(ENUnlikelyFormatFilter, items);
+export default _createClass(ENTimeUnitWithinFormatParser, items);

@@ -1,21 +1,21 @@
-// Module ID: 12641
-// Function ID: 12642
+// Module ID: 12643
+// Function ID: 12644
 // Name: VibegrationsCustomWidgetSheet
-// Dependencies: [5, 32, 19, 17, 12642, 1074, 2052, 21, 4836, 576, 5370, 1115, 3715, 1101, 4800, 8496, 12640, 12451, 6618, 6570, 6506, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 12644, 1086, 2058, 21, 4837, 588, 5371, 1127, 3718, 1113, 4801, 8493, 12642, 12449, 6624, 6571, 6507, 5282, 2]
 // Exports: default
 
-// Module 12641 (VibegrationsCustomWidgetSheet)
+// Module 12643 (VibegrationsCustomWidgetSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import ChannelConstants from "ChannelConstants" /* 2052 */;
-import _modDef3715 from "module_3715" /* 3715 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import _modDef3718 from "module_3718" /* 3718 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12642 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12644 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, dependencyMap;
@@ -86,7 +86,7 @@ export default function VibegrationsCustomWidgetSheet() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -151,7 +151,7 @@ export default function VibegrationsCustomWidgetSheet() {
               closure_129_4.current = false;
               closure_129_3(false);
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else {
               let obj3 = value(dependencyMap[17]);
               closure_129_2(obj3.getVibegrationsCreateErrorMessage(_asyncToGenerator));
@@ -179,7 +179,7 @@ export default function VibegrationsCustomWidgetSheet() {
           closure_129_3(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp66) {
         dependencyMap = tmp66;
         if (0 === c3) {
@@ -194,22 +194,22 @@ export default function VibegrationsCustomWidgetSheet() {
     }
   }), items);
   let obj = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: closure_11(BottomSheetTitleHeader, obj2), children: tmp15(tmp16, obj3) };
-  const ActionSheet = value(6618).ActionSheet;
-  obj2 = { title: intl.string(_modDef3715["27bu14"]) };
-  BottomSheetTitleHeader = value(6570).BottomSheetTitleHeader;
-  intl = value(1115).intl;
+  const ActionSheet = value(6624).ActionSheet;
+  obj2 = { title: intl.string(_modDef3718["27bu14"]) };
+  BottomSheetTitleHeader = value(6571).BottomSheetTitleHeader;
+  intl = value(1127).intl;
   obj3 = { style: tmp.body, children: items1 };
-  let obj4 = { label: intl2.string(_modDef3715.DAm99t), placeholder: intl3.string(_modDef3715.FYN9Rl), description: intl4.string(_modDef3715.blSmfQ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(12640).VIBEGRATIONS_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
-  const TextArea = value(6506).TextArea;
-  intl2 = value(1115).intl;
-  intl3 = value(1115).intl;
-  intl4 = value(1115).intl;
+  let obj4 = { label: intl2.string(_modDef3718.DAm99t), placeholder: intl3.string(_modDef3718.FYN9Rl), description: intl4.string(_modDef3718.blSmfQ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(12642).VIBEGRATIONS_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
+  const TextArea = value(6507).TextArea;
+  intl2 = value(1127).intl;
+  intl3 = value(1127).intl;
+  intl4 = value(1127).intl;
   tmp15 = closure_12;
   tmp16 = View;
   items1 = [tmp11(TextArea, obj4), ];
-  let obj5 = { variant: "primary", text: intl5.string(_modDef3715["f/Jz/R"]), onPress: callback1, loading: tmp7, disabled: null == memo };
-  const Button = tmp12(5281).Button;
-  intl5 = tmp12(1115).intl;
+  let obj5 = { variant: "primary", text: intl5.string(_modDef3718["f/Jz/R"]), onPress: callback1, loading: tmp7, disabled: null == memo };
+  const Button = tmp12(5282).Button;
+  intl5 = tmp12(1127).intl;
   items1[1] = closure_11(Button, obj5);
   return closure_11(ActionSheet, obj);
 };

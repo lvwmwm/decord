@@ -1,28 +1,256 @@
-// Module ID: 17334
-// Function ID: 17335
+// Module ID: 17336
+// Function ID: 17337
 // Name: RuleActionRows
-// Dependencies: [19, 2045, 4467, 11341, 21, 4836, 576, 17311, 10871, 1115, 4800, 17335, 1981, 17336, 17314, 5917, 5279, 4832, 5929, 17310, 5999, 2]
-// Exports: default
+// Dependencies: [19, 2051, 4470, 11216, 21, 4837, 588, 17313, 11847, 1127, 4801, 17337, 1987, 17338, 558, 576, 17316, 5916, 4833, 5280, 5914, 17312, 5997, 2]
 
-// Module 17334 (RuleActionRows)
-import nativeDefault from "native" /* 576 */;
-import GuildChannelStore from "GuildChannelStore" /* 4467 */;
-import TableRow2 from "TableRow" /* 5917 */;
-import FormCheckbox from "FormCheckbox" /* 5929 */;
-import Constants from "Constants" /* 11341 */;
-import getActionInfo from "getActionInfo" /* 17314 */;
+// Module 17336 (RuleActionRows)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import GuildChannelStore from "GuildChannelStore" /* 4470 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import FormCheckbox from "FormCheckbox" /* 5914 */;
+import TableRow2 from "TableRow" /* 5916 */;
+import Constants from "Constants" /* 11216 */;
+import AutomodActionUtils from "AutomodActionUtils" /* 17313 */;
+import getActionInfo from "getActionInfo" /* 17316 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let set;
+let onPress, set;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
-function RuleActionRow(onPress) {
+function openAlertChannelPicker(rule) {
+  let channel;
+  let intl;
+  rule = rule.rule;
+  const onChangeRule = rule.onChangeRule;
+  const actions = rule.actions;
+  let tmp2 = dependencyMap;
+  const found = actions.find(rule(17313).isActionFlagToChannel);
+  let channelId;
+  if (found != null) {
+    channelId = found.metadata.channelId;
+  }
+  let obj = {
+    guildId: rule.guildId,
+    channelType,
+    selectedChannel: channel,
+    filterFn(channel) {
+      channel = channel.channel;
+      const isGuildVocalResult = channel.isGuildVocal();
+      const tmp2 = !isGuildVocalResult && !channel.isThread() && !channel.isForumLikeChannel();
+      return tmp2;
+    },
+    noChannelOptionLabel: intl.string(tmp(1127).t.PoWNfe),
+    onSelect(id) {
+      let obj5;
+      if (null != id) {
+        const _Set = Set;
+        const self = this;
+        const self2 = this;
+        set = new Set(rule.exemptChannels);
+        set.add(id.id);
+        const obj3 = { type: AutomodActionType.FLAG_TO_CHANNEL, metadata: obj5 };
+        const obj2 = { exemptChannels: set };
+        obj5 = { channelId: id.id };
+        const obj4 = AutomodActionUtils;
+        const merged = Object.assign(obj4.setRuleAction(rule, AutomodActionType.FLAG_TO_CHANNEL, obj3));
+        onChangeRule(obj2);
+      } else {
+        const obj = AutomodActionUtils;
+        onChangeRule(obj.setRuleAction(rule, AutomodActionType.FLAG_TO_CHANNEL, null));
+      }
+    }
+  };
+  channel = null;
+  const tmp5 = onChangeRule(11847);
+  if (null != channelId) {
+    channel = ChannelStore.getChannel(channelId);
+  }
+  if (channel == null) {
+    channel = null;
+  }
+  intl = tmp(1127).intl;
+  tmp5(obj);
+}
+const channelType = GuildChannelStore.GUILD_SELECTABLE_CHANNELS_KEY;
+const AutomodActionType = Constants.AutomodActionType;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let obj = { subLabel: obj2 };
+obj2 = { marginTop: nativeDefault.space.PX_4 };
+let closure_8 = createStyles.createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+  let actionType;
+  let items;
+  let items1;
+  let rule;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(31);
+  ({ rule, actionType } = onPress);
+  onPress = onPress.onPress;
+  const tmp4 = closure_8();
+  if (cResult[0] === actionType) {
+    if (cResult[1] === rule.actions) {
+      let tmp5;
+      let tmp6;
+      if (cResult[2] === rule.triggerType) {
+        tmp5 = cResult[3];
+        tmp6 = cResult[4];
+      }
+      if (null == tmp6) {
+        return null;
+      } else {
+        let tmp11;
+        let tmp14;
+        const icon = tmp6.icon;
+        if (cResult[7] !== icon) {
+          const obj2 = { IconComponent: icon };
+          const tmp13 = metroRequire(TableRow2.TableRow.Icon, obj2);
+          cResult[7] = icon;
+          cResult[8] = tmp13;
+          tmp11 = tmp13;
+        } else {
+          tmp11 = cResult[8];
+        }
+        const headerText = tmp6.headerText;
+        if (cResult[9] !== tmp6.helperText) {
+          let tmp15 = null != tmp6.helperText;
+          if (tmp15) {
+            const obj3 = { variant: "text-xs/medium", color: "text-subtle", children: items };
+            items = [" ", tmp6.helperText];
+            tmp15 = metroImportDefault(tmp(4833).Text, obj3);
+          }
+          cResult[9] = tmp6.helperText;
+          cResult[10] = tmp15;
+          tmp14 = tmp15;
+        } else {
+          tmp14 = cResult[10];
+        }
+        if (cResult[11] === tmp6.descriptionText) {
+          let tmp17;
+          if (cResult[12] === tmp14) {
+            tmp17 = cResult[13];
+          }
+          if (cResult[14] === tmp4.subLabel) {
+            let tmp20;
+            let tmp25;
+            let tmp28;
+            let tmp30;
+            if (cResult[15] === tmp17) {
+              tmp20 = cResult[16];
+            }
+            if (cResult[17] !== (null != tmp5)) {
+              const obj4 = { checked: null != tmp5 };
+              const tmp27 = metroRequire(FormCheckbox.FormCheckbox, obj4);
+              cResult[17] = null != tmp5;
+              cResult[18] = tmp27;
+              tmp25 = tmp27;
+            } else {
+              tmp25 = cResult[18];
+            }
+            if (cResult[19] !== tmp5) {
+              let Yl1D84;
+              const intl = tmp(1127).intl;
+              const string = intl.string;
+              if (null != tmp5) {
+                Yl1D84 = tmp(1127).t.G00RI5;
+              } else {
+                Yl1D84 = tmp(1127).t.Yl1D84;
+              }
+              const stringResult = string(Yl1D84);
+              cResult[19] = tmp5;
+              cResult[20] = stringResult;
+              tmp28 = stringResult;
+            } else {
+              tmp28 = cResult[20];
+            }
+            if (cResult[21] !== tmp28) {
+              const obj5 = { text: tmp28 };
+              cResult[21] = tmp28;
+              cResult[22] = obj5;
+              tmp30 = obj5;
+            } else {
+              tmp30 = cResult[22];
+            }
+            if (cResult[23] === tmp6.headerText) {
+              if (cResult[24] === onPress) {
+                if (cResult[25] === tmp30) {
+                  if (cResult[26] === !tmp6.isEditable) {
+                    if (cResult[27] === tmp11) {
+                      if (cResult[28] === tmp20) {
+                        let tmp32;
+                        if (cResult[29] === tmp25) {
+                          tmp32 = cResult[30];
+                        }
+                        return tmp32;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            const obj6 = { icon: tmp11, label: headerText, subLabel: tmp20, trailing: tmp25, accessibilityValue: tmp30, disabled: !tmp6.isEditable, onPress, arrow: true };
+            const tmp34 = metroRequire(TableRow2.TableRow, obj6);
+            cResult[23] = tmp6.headerText;
+            cResult[24] = onPress;
+            cResult[25] = tmp30;
+            cResult[26] = !tmp6.isEditable;
+            cResult[27] = tmp11;
+            cResult[28] = tmp20;
+            cResult[29] = tmp25;
+            cResult[30] = tmp34;
+            tmp32 = tmp34;
+          }
+          const obj7 = { spacing: nativeDefault.space.PX_4, style: tmp4.subLabel, children: tmp17 };
+          const Stack = tmp(5280).Stack;
+          const tmp23 = metroRequire(Stack, obj7);
+          cResult[14] = tmp4.subLabel;
+          cResult[15] = tmp17;
+          cResult[16] = tmp23;
+          tmp20 = tmp23;
+        }
+        const obj8 = { variant: "text-xs/medium", color: "text-subtle", children: items1 };
+        items1 = [tmp6.descriptionText, tmp14];
+        const tmp19 = metroImportDefault(Text_Text.Text, obj8);
+        cResult[11] = tmp6.descriptionText;
+        cResult[12] = tmp14;
+        cResult[13] = tmp19;
+        tmp17 = tmp19;
+      }
+    }
+  }
+  if (cResult[5] !== actionType) {
+    const fn = function o(type) {
+      return type.type === actionType;
+    };
+    cResult[5] = actionType;
+    cResult[6] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[6];
+  }
+  const actions = rule.actions;
+  const found = actions.find(tmp7);
+  const tmpResult = getActionInfo;
+  const actionInfo = tmpResult.getActionInfo(actionType, found, rule.triggerType);
+  cResult[0] = actionType;
+  cResult[1] = rule.actions;
+  cResult[2] = rule.triggerType;
+  cResult[3] = found;
+  cResult[4] = actionInfo;
+  tmp6 = actionInfo;
+  tmp5 = found;
+}) : ((onPress) => {
   let Stack;
   let Text;
   let actionType;
@@ -46,56 +274,219 @@ function RuleActionRow(onPress) {
     let Yl1D84;
     const icon = actionInfo.icon;
     const obj2 = { icon: metroRequire(TableRow2.TableRow.Icon, obj3), label: actionInfo.headerText, subLabel: metroRequire(Stack, obj4), trailing: metroRequire(FormCheckbox.FormCheckbox, obj7), accessibilityValue: obj8, disabled: !actionInfo.isEditable, onPress, arrow: true };
-    const TableRow = tmp3(5917).TableRow;
+    const TableRow = tmp3(5916).TableRow;
     obj3 = { IconComponent: icon };
     obj4 = { spacing: nativeDefault.space.PX_4, style: tmp.subLabel, children: metroImportDefault(Text, obj6) };
-    Stack = tmp3(5279).Stack;
+    Stack = tmp3(5280).Stack;
     const items = [actionInfo.descriptionText, ];
     let tmp9Result = null != actionInfo.helperText;
-    Text = tmp3(4832).Text;
+    Text = tmp3(4833).Text;
     if (tmp9Result) {
       const obj5 = { variant: "text-xs/medium", color: "text-subtle", children: items1 };
       items1 = [" ", actionInfo.helperText];
-      tmp9Result = tmp9(tmp3(4832).Text, obj5);
+      tmp9Result = tmp9(tmp3(4833).Text, obj5);
     }
     obj6 = { variant: "text-xs/medium", color: "text-subtle", children: items };
     items[1] = tmp9Result;
     obj7 = { checked: null != found };
-    const intl = tmp3(1115).intl;
+    const intl = tmp3(1127).intl;
     const string = intl.string;
     if (null != found) {
-      Yl1D84 = tmp3(1115).t.G00RI5;
+      Yl1D84 = tmp3(1127).t.G00RI5;
     } else {
-      Yl1D84 = tmp3(1115).t.Yl1D84;
+      Yl1D84 = tmp3(1127).t.Yl1D84;
     }
     obj8 = { text: string(Yl1D84) };
     return metroRequire(TableRow, obj2);
   }
-}
-let closure_4 = GuildChannelStore.GUILD_SELECTABLE_CHANNELS_KEY;
-const AutomodActionType = Constants.AutomodActionType;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let obj = { subLabel: obj2 };
-obj2 = { marginTop: nativeDefault.space.PX_4 };
-let closure_8 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/guild_automod/native/components/RuleActionRows.tsx");
-
-export default function RuleActionRows(rule) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
+  let closure_2;
+  const tmp = rule;
+  let obj = rule(576);
+  const cResult = obj.c(17);
+  rule = rule.rule;
+  const onChangeRule = rule.onChangeRule;
+  if (cResult[0] === onChangeRule) {
+    let tmp4;
+    if (cResult[1] === rule) {
+      tmp4 = cResult[2];
+    }
+    dependencyMap = tmp4;
+    if (cResult[3] === tmp4) {
+      if (cResult[4] === onChangeRule) {
+        let tmp5;
+        let tmp6;
+        let tmp7;
+        let tmp8;
+        let tmp9;
+        if (cResult[5] === rule) {
+          tmp5 = cResult[6];
+          tmp6 = cResult[7];
+          tmp7 = cResult[8];
+          tmp8 = cResult[9];
+          tmp9 = cResult[10];
+        }
+        const _Symbol2 = Symbol;
+        if (tmp9 === Symbol.for("react.early_return_sentinel")) {
+          if (cResult[12] === tmp5) {
+            if (cResult[13] === tmp6) {
+              if (cResult[14] === tmp7) {
+                let tmp19;
+                if (cResult[15] === tmp8) {
+                  tmp19 = cResult[16];
+                }
+                tmp9 = tmp19;
+              }
+            }
+          }
+          const obj2 = { title: tmp6, hasIcons: tmp7, children: tmp8 };
+          const tmp21 = closure_6(tmp5, obj2);
+          cResult[12] = tmp5;
+          cResult[13] = tmp6;
+          cResult[14] = tmp7;
+          cResult[15] = tmp8;
+          cResult[16] = tmp21;
+          tmp19 = tmp21;
+        }
+        return tmp9;
+      }
+    }
+    const _Symbol = Symbol;
+    const forResult = Symbol.for("react.early_return_sentinel");
+    const tmpResult = tmp(17312);
+    const availableActionTypes = tmpResult.getAvailableActionTypes(rule.triggerType);
+    let tmp12 = null;
+    let mapped;
+    let flag;
+    let tmp14;
+    let tmp15;
+    if (0 !== availableActionTypes.length) {
+      let tmp16;
+      const _Symbol3 = Symbol;
+      const TableRowGroup = tmp(5997).TableRowGroup;
+      if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl = tmp(1127).intl;
+        const stringResult = intl.string(tmp(1127).t["18TOiQ"]);
+        cResult[11] = stringResult;
+        tmp16 = stringResult;
+      } else {
+        tmp16 = cResult[11];
+      }
+      mapped = availableActionTypes.map((actionType) => {
+        rule = actionType;
+        const obj = {
+          rule,
+          actionType,
+          onChangeRule,
+          onPress() {
+            return closure_2(actionType);
+          }
+        };
+        return closure_1_6(closure_1_10, obj, actionType);
+      });
+      flag = true;
+      tmp14 = tmp16;
+      tmp12 = forResult;
+      tmp15 = TableRowGroup;
+    }
+    cResult[3] = tmp4;
+    cResult[4] = onChangeRule;
+    cResult[5] = rule;
+    cResult[6] = tmp15;
+    cResult[7] = tmp14;
+    cResult[8] = flag;
+    cResult[9] = mapped;
+    cResult[10] = tmp12;
+    tmp9 = tmp12;
+    tmp8 = mapped;
+    tmp7 = flag;
+    tmp6 = tmp14;
+    tmp5 = tmp15;
+  }
+  const fn = function t(arg0) {
+    let actions;
+    let actions2;
+    if (AutomodActionType.FLAG_TO_CHANNEL === arg0) {
+      const obj3 = { rule, onChangeRule };
+      openAlertChannelPicker(obj3);
+    } else if (AutomodActionType.BLOCK_MESSAGE === arg0) {
+      let closure_0 = rule;
+      let closure_1 = onChangeRule;
+      const openLazy2 = ActionSheetActionCreatorsDefault.openLazy;
+      const obj5 = {
+        triggerType: null,
+        action: actions2.find(AutomodActionUtils.isActionBlockMessage),
+        onConfirm(arg0) {
+            let tmp4;
+            const obj = { type: constants.BLOCK_MESSAGE, metadata: { customMessage: tmp4 } };
+            tmp4 = undefined;
+            const setRuleAction = actionType(closure_2_2[7]).setRuleAction;
+            const BLOCK_MESSAGE = constants.BLOCK_MESSAGE;
+            actionType(closure_2_2[7]);
+            const tmp = closure_1;
+            const tmp3 = closure_0;
+            if ("" !== arg0) {
+              tmp4 = arg0;
+            }
+            return tmp(setRuleAction(tmp3, BLOCK_MESSAGE, obj));
+          },
+        onRemove() {
+            const obj = actionType(closure_2_2[7]);
+            return closure_1(obj.setRuleAction(closure_0, constants.BLOCK_MESSAGE, null));
+          }
+      };
+      ({ triggerType: obj2.triggerType, actions: actions2 } = rule);
+      ActionSheetActionCreatorsDefault;
+      const tmp16 = asyncRequire(17338, dependencyMap.paths);
+      openLazy2(tmp16, "AutomodBlockMessage", obj5);
+    } else if (AutomodActionType.USER_COMMUNICATION_DISABLED === arg0) {
+      closure_0 = rule;
+      closure_1 = onChangeRule;
+      const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+      const obj = {
+        triggerType: null,
+        action: actions.find(AutomodActionUtils.isActionUserCommunicationDisabled),
+        onSelectDuration(dependencyMap) {
+            let obj3;
+            const obj2 = { type: constants.USER_COMMUNICATION_DISABLED, metadata: obj3 };
+            obj3 = { durationSeconds: dependencyMap };
+            const obj = actionType(closure_2_2[7]);
+            return closure_1(obj.setRuleAction(closure_0, constants.USER_COMMUNICATION_DISABLED, obj2));
+          },
+        onRemove() {
+            const obj = actionType(closure_2_2[7]);
+            return closure_1(obj.setRuleAction(closure_0, constants.USER_COMMUNICATION_DISABLED, null));
+          }
+      };
+      ({ triggerType: obj.triggerType, actions } = rule);
+      ActionSheetActionCreatorsDefault;
+      const tmp8 = asyncRequire(17337, dependencyMap.paths);
+      openLazy(tmp8, "AutomodTimeoutDuration", obj);
+    } else {
+      const QUARANTINE_USER = tmp.QUARANTINE_USER;
+    }
+  };
+  cResult[0] = onChangeRule;
+  cResult[1] = rule;
+  cResult[2] = fn;
+  tmp4 = fn;
+}) : ((rule) => {
   let intl;
   rule = rule.rule;
   const onChangeRule = rule.onChangeRule;
   let tmp = rule;
   let tmp2 = dependencyMap;
-  let obj = rule(17310);
+  let obj = rule(17312);
   const availableActionTypes = obj.getAvailableActionTypes(rule.triggerType);
   let tmp3 = null;
   if (0 !== availableActionTypes.length) {
     let tmp4 = closure_6;
     let obj2 = {
-      title: intl.string(tmp(1115).t["18TOiQ"]),
+      title: intl.string(tmp(1127).t["18TOiQ"]),
       hasIcons: true,
       children: availableActionTypes.map((actionType) => {
-          let channelType;
           rule = actionType;
           let obj = {
             rule,
@@ -104,68 +495,18 @@ export default function RuleActionRows(rule) {
             onPress() {
               let actions;
               let actions2;
-              let intl;
-              let tmp = actionType;
-              let tmp2 = constants;
-              if (constants.FLAG_TO_CHANNEL === actionType) {
-                actionType = rule;
-                let closure_1 = onChangeRule;
-                const actions1 = rule.actions;
-                const found = actions1.find(actionType(closure_1_2[7]).isActionFlagToChannel);
-                let channelId;
-                const tmp19 = rule;
-                if (found != null) {
-                  channelId = found.metadata.channelId;
-                }
-                let obj3 = {
-                  guildId: tmp19.guildId,
-                  channelType,
-                  selectedChannel: channel,
-                  filterFn(channel) {
-                      channel = channel.channel;
-                      const isGuildVocalResult = channel.isGuildVocal();
-                      const tmp2 = !isGuildVocalResult && !channel.isThread() && !channel.isForumLikeChannel();
-                      return tmp2;
-                    },
-                  noChannelOptionLabel: intl.string(actionType(closure_1_2[9]).t.PoWNfe),
-                  onSelect(id) {
-                      let obj5;
-                      if (null != id) {
-                        const _Set = Set;
-                        const self = this;
-                        const self2 = this;
-                        set = new Set(exemptChannels.exemptChannels);
-                        set.add(id.id);
-                        const obj3 = { type: constants.FLAG_TO_CHANNEL, metadata: obj5 };
-                        const obj2 = { exemptChannels: set };
-                        obj5 = { channelId: id.id };
-                        const obj4 = actionType(closure_2_2[7]);
-                        const merged = Object.assign(obj4.setRuleAction(exemptChannels, constants.FLAG_TO_CHANNEL, obj3));
-                        closure_1(obj2);
-                      } else {
-                        const obj = actionType(closure_2_2[7]);
-                        closure_1(obj.setRuleAction(exemptChannels, constants.FLAG_TO_CHANNEL, null));
-                      }
-                    }
-                };
-                channel = null;
-                const tmp27 = closure_1_1(closure_1_2[8]);
-                if (null != channelId) {
-                  channel = channel.getChannel(channelId);
-                }
-                if (channel == null) {
-                  channel = null;
-                }
-                intl = tmp21(tmp22[9]).intl;
-                tmp27(obj3);
+              let tmp = closure_0;
+              const tmp2 = AutomodActionType;
+              if (AutomodActionType.FLAG_TO_CHANNEL === closure_0) {
+                let obj3 = { rule, onChangeRule };
+                openAlertChannelPicker(obj3);
               } else if (tmp2.BLOCK_MESSAGE === tmp) {
-                actionType = rule;
-                closure_1 = onChangeRule;
-                const openLazy2 = closure_1_1(closure_1_2[10]).openLazy;
-                const tmp15 = closure_1_1(closure_1_2[10]);
-                let obj5 = {
+                closure_0 = rule;
+                let closure_1 = onChangeRule;
+                const openLazy2 = ActionSheetActionCreatorsDefault.openLazy;
+                const obj5 = {
                   triggerType: null,
-                  action: actions2.find(actionType(closure_1_2[7]).isActionBlockMessage),
+                  action: actions2.find(AutomodActionUtils.isActionBlockMessage),
                   onConfirm(arg0) {
                       let tmp4;
                       const obj = { type: constants.BLOCK_MESSAGE, metadata: { customMessage: tmp4 } };
@@ -186,22 +527,22 @@ export default function RuleActionRows(rule) {
                     }
                 };
                 ({ triggerType: obj2.triggerType, actions: actions2 } = rule);
-                const tmp17 = actionType(closure_1_2[12])(closure_1_2[13], closure_1_2.paths);
+                ActionSheetActionCreatorsDefault;
+                const tmp17 = asyncRequire(17338, dependencyMap.paths);
                 openLazy2(tmp17, "AutomodBlockMessage", obj5);
               } else if (tmp2.USER_COMMUNICATION_DISABLED === tmp) {
                 let tmp3 = rule;
                 let tmp4 = onChangeRule;
-                actionType = rule;
+                closure_0 = rule;
                 closure_1 = onChangeRule;
-                const openLazy = closure_1_1(closure_1_2[10]).openLazy;
-                const tmp7 = closure_1_1(closure_1_2[10]);
+                const openLazy = ActionSheetActionCreatorsDefault.openLazy;
                 let obj = {
                   triggerType: null,
-                  action: actions.find(actionType(closure_1_2[7]).isActionUserCommunicationDisabled),
-                  onSelectDuration(durationSeconds) {
+                  action: actions.find(AutomodActionUtils.isActionUserCommunicationDisabled),
+                  onSelectDuration(dependencyMap) {
                       let obj3;
                       const obj2 = { type: constants.USER_COMMUNICATION_DISABLED, metadata: obj3 };
-                      obj3 = { durationSeconds };
+                      obj3 = { durationSeconds: dependencyMap };
                       const obj = actionType(closure_2_2[7]);
                       return closure_1(obj.setRuleAction(closure_0, constants.USER_COMMUNICATION_DISABLED, obj2));
                     },
@@ -211,19 +552,23 @@ export default function RuleActionRows(rule) {
                     }
                 };
                 ({ triggerType: obj.triggerType, actions } = rule);
-                const tmp9 = actionType(closure_1_2[12])(closure_1_2[11], closure_1_2.paths);
+                ActionSheetActionCreatorsDefault;
+                const tmp9 = asyncRequire(17337, dependencyMap.paths);
                 openLazy(tmp9, "AutomodTimeoutDuration", obj);
               } else {
                 const QUARANTINE_USER = tmp2.QUARANTINE_USER;
               }
             }
           };
-          return closure_1_6(RuleActionRow, obj, actionType);
+          return closure_1_6(closure_1_10, obj, actionType);
         })
     };
-    const TableRowGroup = tmp(5999).TableRowGroup;
-    intl = tmp(1115).intl;
+    const TableRowGroup = tmp(5997).TableRowGroup;
+    intl = tmp(1127).intl;
     tmp3 = closure_6(TableRowGroup, obj2);
   }
   return tmp3;
-};
+});
+const result = size.fileFinishedImporting("modules/guild_automod/native/components/RuleActionRows.tsx");
+
+export default tmp4;

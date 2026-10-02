@@ -1,10 +1,10 @@
 // Module ID: 5906
 // Function ID: 5907
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 5906 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "0e971a927dbdc3183654a0324b5f2831", name: "ic_partnered_guild_icon_black_24px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "f6824e7bd3f8a83813ab333cc29423f8", name: "yellow-alert", type: "png" });

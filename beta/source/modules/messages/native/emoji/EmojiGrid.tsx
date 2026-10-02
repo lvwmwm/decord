@@ -1,23 +1,79 @@
-// Module ID: 9804
-// Function ID: 9805
+// Module ID: 9723
+// Function ID: 9724
 // Name: EmojiGrid
-// Dependencies: [19, 17, 21, 4836, 576, 4487, 1397, 6551, 9792, 9805, 9807, 2]
-// Exports: EmojiGrid
+// Dependencies: [19, 17, 21, 4837, 588, 4490, 1403, 558, 576, 6552, 9708, 9724, 9726, 2]
 
-// Module 9804 (EmojiGrid)
+// Module 9723 (EmojiGrid)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4487 */;
-import EmojiDefault from "Emoji" /* 6551 */;
-import LayoutUtils from "LayoutUtils" /* 9807 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4490 */;
+import EmojiDefault from "Emoji" /* 6552 */;
+import chunkDefault from "chunk" /* 9724 */;
+import LayoutUtils from "LayoutUtils" /* 9726 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
+const require = globalThis.__r;
+let _require, guildEmoji, importDefault, obj1;
+
 let size;
-function Emoji(guildEmoji) {
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let obj = { gridEmojiFastImage: size, gridEmojiText: { fontSize: 18, lineHeight: 44 }, emojiGridRowContainer: { marginTop: 16, flexDirection: "row" }, emojiGridContainer: { marginTop: 8, alignItems: "center" } };
+size = { height: 40, width: 40, borderRadius: nativeDefault.radii.sm };
+let closure_5 = createStyles.createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEmoji) => {
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(8);
+  guildEmoji = guildEmoji.guildEmoji;
+  const tmp3 = closure_5();
+  const id = guildEmoji.id;
+  if (cResult[0] !== guildEmoji) {
+    let uRL;
+    if (null == guildEmoji.id) {
+      const obj4 = EmojiUtilsDefault;
+      uRL = obj4.getURL(guildEmoji.name);
+    } else {
+      const obj5 = { id: null, animated: null, size: 48 };
+      ({ id: obj3.id, animated: obj3.animated } = guildEmoji);
+      const obj2 = AvatarUtilsDefault;
+      uRL = obj2.getEmojiURL(obj5);
+    }
+    cResult[0] = guildEmoji;
+    cResult[1] = uRL;
+    tmp4 = uRL;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] === guildEmoji.id) {
+    if (cResult[3] === guildEmoji.name) {
+      if (cResult[4] === tmp3.gridEmojiFastImage) {
+        if (cResult[5] === tmp3.gridEmojiText) {
+          let tmp9;
+          if (cResult[6] === tmp4) {
+            tmp9 = cResult[7];
+          }
+          return tmp9;
+        }
+      }
+    }
+  }
+  const tmp10 = jsx(EmojiDefault, { src: tmp4, fastImageStyle: tmp3.gridEmojiFastImage, textEmojiStyle: tmp3.gridEmojiText, name: guildEmoji.name }, id);
+  cResult[2] = guildEmoji.id;
+  cResult[3] = guildEmoji.name;
+  cResult[4] = tmp3.gridEmojiFastImage;
+  cResult[5] = tmp3.gridEmojiText;
+  cResult[6] = tmp4;
+  cResult[7] = tmp10;
+  tmp9 = tmp10;
+}) : ((guildEmoji) => {
   let uRL;
   guildEmoji = guildEmoji.guildEmoji;
   const tmp = closure_5();
@@ -34,16 +90,205 @@ function Emoji(guildEmoji) {
   }
   const obj3 = { src: uRL, fastImageStyle: tmp.gridEmojiFastImage, textEmojiStyle: tmp.gridEmojiText, name: guildEmoji.name };
   return tmp2(tmp5, obj3, guildEmoji.id);
-}
-const View = react_native.View;
-const jsx = Fragment.jsx;
-let obj = { gridEmojiFastImage: size, gridEmojiText: { fontSize: 18, lineHeight: 44 }, emojiGridRowContainer: { marginTop: 16, flexDirection: "row" }, emojiGridContainer: { marginTop: 8, alignItems: "center" } };
-size = { height: 40, width: 40, borderRadius: nativeDefault.radii.sm };
-let closure_5 = createStyles.createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/messages/native/emoji/EmojiGrid.tsx");
-
-export const EmojiGrid = function EmojiGrid(numberToShow) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let closure_1;
+  let doNotDisplayEmojiIds;
+  let expressionSourceGuild;
+  let maxPerRow;
+  let numberToShow;
+  let tmp4;
+  let obj = require("react");
+  const cResult = obj.c(28);
+  ({ expressionSourceGuild, doNotDisplayEmojiIds, numberToShow, maxPerRow } = arg0);
+  if (cResult[0] !== doNotDisplayEmojiIds) {
+    let items = doNotDisplayEmojiIds;
+    if (undefined === doNotDisplayEmojiIds) {
+      items = [];
+    }
+    cResult[0] = doNotDisplayEmojiIds;
+    cResult[1] = items;
+    tmp4 = items;
+  } else {
+    tmp4 = cResult[1];
+  }
+  _require = tmp4;
+  let num3 = 10;
+  if (undefined !== numberToShow) {
+    num3 = numberToShow;
+  }
+  let num4 = 5;
+  if (undefined !== maxPerRow) {
+    num4 = maxPerRow;
+  }
+  const tmpResult = require("useSharedMessageEmojiStyles");
+  const sharedMessageEmojiStyles = tmpResult.useSharedMessageEmojiStyles();
+  const tmp6 = closure_5();
+  if (cResult[2] === sharedMessageEmojiStyles) {
+    let tmp7;
+    let tmp17;
+    let tmp23;
+    if (cResult[3] === tmp6) {
+      tmp7 = cResult[4];
+    }
+    importDefault = tmp7;
+    if (cResult[5] === tmp4) {
+      let emojis;
+      const tmp10 = cResult[6];
+      if (expressionSourceGuild != null) {
+        emojis = expressionSourceGuild.emojis;
+      }
+      if (tmp10 === emojis) {
+        if (cResult[7] === num4) {
+          if (cResult[8] === num3) {
+            if (cResult[9] === tmp7.emojiGridContainer) {
+              let tmp13;
+              let tmp14;
+              let tmp15;
+              let num5;
+              let tmp16;
+              if (cResult[10] === tmp7.emojiGridRowContainer) {
+                tmp13 = cResult[11];
+                tmp14 = cResult[12];
+                tmp15 = cResult[13];
+                num5 = cResult[14];
+                tmp16 = cResult[15];
+              }
+              if (cResult[20] === tmp13) {
+                if (cResult[21] === num5) {
+                  let tmp26;
+                  if (cResult[22] === tmp16) {
+                    tmp26 = cResult[23];
+                  }
+                  if (cResult[24] === tmp14) {
+                    if (cResult[25] === tmp15) {
+                      let tmp29;
+                      if (cResult[26] === tmp26) {
+                        tmp29 = cResult[27];
+                      }
+                      return tmp29;
+                    }
+                  }
+                  const tmp31 = <tmp14 style={tmp15}>{tmp26}</tmp14>;
+                  cResult[24] = tmp14;
+                  cResult[25] = tmp15;
+                  cResult[26] = tmp26;
+                  cResult[27] = tmp31;
+                  tmp29 = tmp31;
+                }
+              }
+              const tmp28 = <tmp13 gap={num5}>{tmp16}</tmp13>;
+              cResult[20] = tmp13;
+              cResult[21] = num5;
+              cResult[22] = tmp16;
+              cResult[23] = tmp28;
+              tmp26 = tmp28;
+            }
+          }
+        }
+      }
+    }
+    if (cResult[16] !== tmp4) {
+      class F {
+        constructor(arg0) {
+          return !closure_0.includes(arg0.id);
+        }
+      }
+      cResult[16] = tmp4;
+      cResult[17] = F;
+      tmp17 = F;
+    } else {
+      class F {
+        constructor(arg0) {
+          return !closure_0.includes(arg0.id);
+        }
+      }
+    }
+    if (expressionSourceGuild != null) {
+      class F {
+        constructor(arg0) {
+          return !closure_0.includes(arg0.id);
+        }
+      }
+    }
+    if (undefined == null) {
+      class F {
+        constructor(arg0) {
+          return !closure_0.includes(arg0.id);
+        }
+      }
+    }
+    const substr = tmp19.slice(0, num3 + 1);
+    const found = substr.filter(tmp17);
+    const substr1 = found.slice(0, num3);
+    const emojiGridContainer = tmp7.emojiGridContainer;
+    const arr4 = chunkDefault(substr1, num4);
+    let GappedList = tmp(9726).GappedList;
+    if (cResult[18] !== tmp7.emojiGridRowContainer) {
+      class U {
+        constructor(arg0, arg1) {
+          obj = { style: closure_1.emojiGridRowContainer, children: null };
+          obj1 = { gap: 32, children: null };
+          GappedList = closure_0(closure_2[12]).GappedList;
+          obj1.children = arg0.map(() => { /* body not rendered: F138495 */ });
+          obj.children = jsx(GappedList, obj1);
+          return jsx(View, obj, arg1);
+        }
+      }
+      cResult[18] = tmp7.emojiGridRowContainer;
+      cResult[19] = U;
+      tmp23 = U;
+    } else {
+      class U {
+        constructor(arg0, arg1) {
+          obj = { style: closure_1.emojiGridRowContainer, children: null };
+          obj1 = { gap: 32, children: null };
+          GappedList = closure_0(closure_2[12]).GappedList;
+          obj1.children = arg0.map(() => { /* body not rendered: F138495 */ });
+          obj.children = jsx(GappedList, obj1);
+          return jsx(View, obj, arg1);
+        }
+      }
+    }
+    const mapped = arr4.map(tmp23);
+    cResult[5] = tmp4;
+    if (expressionSourceGuild != null) {
+      class U {
+        constructor(arg0, arg1) {
+          obj = { style: closure_1.emojiGridRowContainer, children: null };
+          obj1 = { gap: 32, children: null };
+          GappedList = closure_0(closure_2[12]).GappedList;
+          obj1.children = arg0.map(() => { /* body not rendered: F138495 */ });
+          obj.children = jsx(GappedList, obj1);
+          return jsx(View, obj, arg1);
+        }
+      }
+    }
+    cResult[6] = undefined;
+    cResult[7] = num4;
+    cResult[8] = num3;
+    ({ emojiGridContainer: tmp3[9], emojiGridRowContainer: tmp3[10] } = tmp7);
+    cResult[11] = GappedList;
+    cResult[12] = View;
+    cResult[13] = emojiGridContainer;
+    cResult[14] = 8;
+    cResult[15] = mapped;
+    tmp16 = mapped;
+    num5 = 8;
+    tmp15 = emojiGridContainer;
+    tmp14 = tmp22;
+    tmp13 = GappedList;
+  }
+  const obj4 = {};
+  const merged = Object.assign(sharedMessageEmojiStyles);
+  const merged1 = Object.assign(tmp6);
+  cResult[2] = sharedMessageEmojiStyles;
+  cResult[3] = tmp6;
+  cResult[4] = obj4;
+  tmp7 = obj4;
+}) : ((numberToShow) => {
   let arr4;
   let doNotDisplayEmojiIds;
   let expressionSourceGuild;
@@ -60,7 +305,7 @@ export const EmojiGrid = function EmojiGrid(numberToShow) {
     num2 = 5;
   }
   let obj = {};
-  const obj2 = doNotDisplayEmojiIds(9792);
+  const obj2 = doNotDisplayEmojiIds(9708);
   const merged = Object.assign(obj2.useSharedMessageEmojiStyles());
   const merged1 = Object.assign(closure_5());
   let emojis;
@@ -89,7 +334,11 @@ export const EmojiGrid = function EmojiGrid(numberToShow) {
       return <View key={arg1} style={obj.emojiGridRowContainer}>{null}</View>;
     })
   });
-  arr4 = obj(9805)(substr1, num2);
-  let GappedList = tmp(9807).GappedList;
+  arr4 = obj(9724)(substr1, num2);
+  let GappedList = tmp(9726).GappedList;
   return <View style={obj.emojiGridContainer}>{null}</View>;
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/messages/native/emoji/EmojiGrid.tsx");
+
+export const EmojiGrid = tmp3;

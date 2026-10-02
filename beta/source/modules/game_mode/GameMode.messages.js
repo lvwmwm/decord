@@ -1,11 +1,11 @@
-// Module ID: 3909
-// Function ID: 3910
-// Dependencies: [1119, 3910, 1154, 2]
+// Module ID: 3912
+// Function ID: 3913
+// Dependencies: [1131, 3913, 1166, 2]
 
-// Module 3909
-import AssetJsonUtils from "AssetJsonUtils" /* 1119 */;
-import AssetRegistry from "AssetRegistry" /* 3910 */;
-import module_1154_mod from "module_1154" /* 1154 */;
+// Module 3912
+import AssetJsonUtils from "AssetJsonUtils" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 3913 */;
+import module_1166_mod from "module_1166" /* 1166 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -15,10 +15,10 @@ let obj = {
     return jsonAsset.then((result) => ({ default: result }));
   }
 };
-let module_1154 = module_1154_mod;
-const loader = module_1154.createLoader(obj, "en-US");
-module_1154 = module_1154_mod;
-const messagesProxy = module_1154.makeMessagesProxy(loader);
+let module_1166 = module_1166_mod;
+const loader = module_1166.createLoader(obj, "en-US");
+module_1166 = module_1166_mod;
+const messagesProxy = module_1166.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/game_mode/GameMode.messages.js");
 
 export default messagesProxy;

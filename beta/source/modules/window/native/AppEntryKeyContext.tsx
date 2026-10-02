@@ -1,31 +1,58 @@
-// Module ID: 1482
-// Function ID: 1483
+// Module ID: 1488
+// Function ID: 1489
 // Name: AppEntryKeyContext
-// Dependencies: [19, 3, 2]
-// Exports: useAppEntryKey
+// Dependencies: [19, 3, 558, 576, 2]
 
-// Module 1482 (AppEntryKeyContext)
+// Module 1488 (AppEntryKeyContext)
 import LoggerDefault from "Logger" /* 3 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_1 = new LoggerDefault("AppEntryKeyContext");
+let closure_3 = new LoggerDefault("AppEntryKeyContext");
 const main = "main";
 const tmp2 = new LoggerDefault("AppEntryKeyContext");
 let context = react.createContext(undefined);
-let c4 = false;
-const result = size.fileFinishedImporting("modules/window/native/AppEntryKeyContext.tsx");
-
-export const DEFAULT_APP_ENTRY_KEY = "main";
-export const AppEntryKeyContext = context;
-export const useAppEntryKey = function useAppEntryKey() {
+let c6 = false;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let logger;
-  context = context.useContext(context);
+  let tmp3;
+  let tmp4;
+  const obj = context(576);
+  const cResult = obj.c(3);
+  context = react.useContext(context);
+  const obj2 = react;
+  if (cResult[0] !== context) {
+    const fn = function u() {
+      const tmp = undefined !== context || c6;
+      if (!tmp) {
+        c6 = true;
+        logger.warn("AppEntryKey context was not provided; falling back to default entry key \"main\".");
+      }
+    };
+    const items = [context];
+    cResult[0] = context;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp4 = items;
+    tmp3 = fn;
+  } else {
+    tmp3 = cResult[1];
+    tmp4 = cResult[2];
+  }
+  const effect = obj2.useEffect(tmp3, tmp4);
+  if (context == null) {
+    context = main;
+  }
+  return context;
+}) : (() => {
+  let logger;
+  context = react.useContext(context);
   const items = [context];
-  const effect = context.useEffect(() => {
-    const tmp = undefined !== context || c4;
+  const effect = react.useEffect(() => {
+    const tmp = undefined !== context || c6;
     if (!tmp) {
-      c4 = true;
+      c6 = true;
       logger.warn("AppEntryKey context was not provided; falling back to default entry key \"main\".");
     }
   }, items);
@@ -33,4 +60,9 @@ export const useAppEntryKey = function useAppEntryKey() {
     context = main;
   }
   return context;
-};
+});
+const result = size.fileFinishedImporting("modules/window/native/AppEntryKeyContext.tsx");
+
+export const DEFAULT_APP_ENTRY_KEY = "main";
+export const AppEntryKeyContext = context;
+export const useAppEntryKey = tmp4;

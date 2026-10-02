@@ -1,12 +1,12 @@
-// Module ID: 10533
-// Function ID: 10534
+// Module ID: 10565
+// Function ID: 10566
 // Name: StorekitIAPQueue
-// Dependencies: [5, 17, 5051, 6656, 10514, 2]
+// Dependencies: [5, 17, 5052, 6657, 10546, 2]
 
-// Module 10533 (StorekitIAPQueue)
+// Module 10565 (StorekitIAPQueue)
 import react_native from "react-native" /* 17 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5051 */;
-import utils_PriceUtils from "utils/PriceUtils" /* 6656 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5052 */;
+import utils_PriceUtils from "utils/PriceUtils" /* 6657 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -91,7 +91,7 @@ class StorekitIAPQueueClass {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -133,7 +133,7 @@ class StorekitIAPQueueClass {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp18) {
             closure_2 = tmp18;
@@ -169,7 +169,7 @@ class StorekitIAPQueueClass {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -248,7 +248,7 @@ class StorekitIAPQueueClass {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp18) {
             closure_2 = tmp18;
@@ -279,7 +279,7 @@ class StorekitIAPQueueClass {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -305,7 +305,7 @@ class StorekitIAPQueueClass {
                 }
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === c4) {
             c3 = 0;

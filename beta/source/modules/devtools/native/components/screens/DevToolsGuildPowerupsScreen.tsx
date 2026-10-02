@@ -1,33 +1,33 @@
-// Module ID: 15303
-// Function ID: 15304
+// Module ID: 15291
+// Function ID: 15292
 // Name: DevToolsGuildPowerupsScreen
-// Dependencies: [5, 19, 17, 1220, 12058, 2067, 4655, 15304, 1074, 21, 4836, 576, 1271, 4421, 4732, 11984, 15172, 6621, 11990, 2026, 2029, 1613, 504, 4832, 5999, 5917, 2]
-// Exports: default
+// Dependencies: [5, 19, 17, 1232, 11968, 2073, 4657, 15292, 1086, 21, 4837, 588, 1283, 4424, 4734, 11892, 558, 576, 15160, 6621, 11898, 2032, 2035, 1619, 504, 4833, 5916, 5997, 2]
 
-// Module 15303 (DevToolsGuildPowerupsScreen)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2026 */;
-import dismissible_content from "dismissible_content" /* 2029 */;
-import _modDef4421 from "module_4421" /* 4421 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 6621 */;
-import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 11990 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15172 */;
+// Module 15291 (DevToolsGuildPowerupsScreen)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2032 */;
+import dismissible_content from "dismissible_content" /* 2035 */;
+import _modDef4424 from "module_4424" /* 4424 */;
+import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 11898 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15160 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12058 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
-import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 15304 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 11968 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 15292 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c1, c2, c5, c6, dependencyMap, importDefault;
+let c1, c2, c5, c6, dc, dependencyMap, importDefault;
 
 let closure_12;
 let closure_14;
@@ -41,7 +41,9 @@ let metroRequire;
 let obj2;
 let obj3;
 let obj4;
+let tmp;
 let unpackModuleId;
+const TableSwitchRow2 = tmp(6621);
 function setWarningBoosts() {
   return obj(...arguments);
 }
@@ -62,7 +64,7 @@ let obj = function _setWarningBoosts() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -84,7 +86,7 @@ let obj = function _setWarningBoosts() {
             const patch = HTTP.patch;
             addResult = null;
             if (!closure_2) {
-              const obj4 = _modDef4421();
+              const obj4 = _modDef4424();
               addResult = obj4.add(1, "day");
             }
             c5 = 1;
@@ -105,7 +107,7 @@ let obj = function _setWarningBoosts() {
           const obj2 = closure_132_0(closure_132_2[15]);
           const guildBoostEntitlements = obj2.fetchGuildBoostEntitlements(closure_0, true);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp19) {
         c6 = 3;
@@ -115,6 +117,9 @@ let obj = function _setWarningBoosts() {
   });
   return obj(...arguments);
 };
+function sendPowerupsSystemMessage() {
+  return obj(...arguments);
+}
 obj = function _sendPowerupsSystemMessage() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let closure_0 = arg0;
@@ -128,7 +133,7 @@ obj = function _sendPowerupsSystemMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -159,7 +164,7 @@ obj = function _sendPowerupsSystemMessage() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -169,7 +174,59 @@ obj = function _sendPowerupsSystemMessage() {
   });
   return obj(...arguments);
 };
-function UserDCSwitchRow(dc) {
+({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
+({ GUILD_DCS: unpackModuleId, SERVER_TAG_GUILD_DCS: closure_12, USER_DCS: map1, VANITY_URL_POWERUP_EDUCATIONAL_DCS: closure_14, getGuildDCString: closure_15, getUserDCString: closure_16 } = DevToolsGuildPowerupsConstants);
+const Endpoints = Constants.Endpoints;
+({ jsx: closure_18, jsxs: closure_19 } = Fragment);
+let createStyles = createStyles_mod;
+obj = { container: obj2, scrollContainer: obj3, noGuildContainer: obj4 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
+obj4 = { flex: 1, justifyContent: "center", alignItems: "center", padding: nativeDefault.space.PX_32 };
+let closure_20 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((dc) => {
+  let handleToggleDismissState;
+  let isDismissed;
+  let tmp4;
+  let tmp7;
+  obj = react2;
+  const cResult = obj.c(8);
+  dc = dc.dc;
+  if (cResult[0] !== dc) {
+    const tmp6 = toggleDismissibleContentDismissStateDefault(dc);
+    cResult[0] = dc;
+    cResult[1] = tmp6;
+    tmp4 = tmp6;
+  } else {
+    tmp4 = cResult[1];
+  }
+  ({ isDismissed, handleToggleDismissState } = tmp4);
+  if (cResult[2] !== dc) {
+    const tmp9 = authStore3(dc);
+    cResult[2] = dc;
+    cResult[3] = tmp9;
+    tmp7 = tmp9;
+  } else {
+    tmp7 = cResult[3];
+  }
+  if (cResult[4] === handleToggleDismissState) {
+    if (cResult[5] === isDismissed) {
+      let tmp10;
+      if (cResult[6] === tmp7) {
+        tmp10 = cResult[7];
+      }
+      return tmp10;
+    }
+  }
+  const tmp11 = authStore4(TableSwitchRow2.TableSwitchRow, { label: tmp7, value: isDismissed, onValueChange: handleToggleDismissState });
+  cResult[4] = handleToggleDismissState;
+  cResult[5] = isDismissed;
+  cResult[6] = tmp7;
+  cResult[7] = tmp11;
+  tmp10 = tmp11;
+}) : ((dc) => {
   let handleToggleDismissState;
   let isDismissed;
   dc = dc.dc;
@@ -178,8 +235,63 @@ function UserDCSwitchRow(dc) {
   toggleDismissibleContentDismissStateDefault(dc);
   const TableSwitchRow = TableSwitchRow2.TableSwitchRow;
   return authStore4(TableSwitchRow, obj);
-}
-function GuildDCSwitchRow(dc) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((dc) => {
+  obj = dc(576);
+  const cResult = obj.c(9);
+  const tmp = dc;
+  dc = dc.dc;
+  const guildId = dc.guildId;
+  const isDismissed = dc.isDismissed;
+  if (cResult[0] === dc) {
+    let tmp4;
+    let tmp5;
+    if (cResult[1] === guildId) {
+      tmp4 = cResult[2];
+    }
+    if (cResult[3] !== dc) {
+      const tmp7 = closure_15(dc);
+      cResult[3] = dc;
+      cResult[4] = tmp7;
+      tmp5 = tmp7;
+    } else {
+      tmp5 = cResult[4];
+    }
+    if (cResult[5] === tmp4) {
+      if (cResult[6] === isDismissed) {
+        let tmp8;
+        if (cResult[7] === tmp5) {
+          tmp8 = cResult[8];
+        }
+        return tmp8;
+      }
+    }
+    let obj2 = { label: tmp5, value: isDismissed, onValueChange: tmp4 };
+    const tmp10 = closure_18(tmp(6621).TableSwitchRow, obj2);
+    cResult[5] = tmp4;
+    cResult[6] = isDismissed;
+    cResult[7] = tmp5;
+    cResult[8] = tmp10;
+    tmp8 = tmp10;
+  }
+  const fn = function t(arg0) {
+    const tmp3 = arg0;
+    if (tmp3) {
+      const tmpResult = GuildDismissibleContentUtils;
+      const result = tmpResult.markContentAsDismissed(dc, guildId, false);
+    } else {
+      const tmpResult2 = UserSettingsProtoActionCreators;
+      const result1 = tmpResult2.removeDismissedRecurringContent(dismissible_content.DismissibleContent.GUILD_POWERUP_NOTIFICATION);
+      const obj2 = GuildDismissibleContentUtils;
+      const result2 = obj2.unmarkContentAsDismissed(dc, guildId);
+    }
+  };
+  cResult[0] = dc;
+  cResult[1] = guildId;
+  cResult[2] = fn;
+  tmp4 = fn;
+}) : ((dc) => {
   dc = dc.dc;
   const guildId = dc.guildId;
   const items = [dc, guildId];
@@ -199,21 +311,790 @@ function GuildDCSwitchRow(dc) {
   obj = { label: closure_15(dc), value: isDismissed, onValueChange: callback };
   const TableSwitchRow = dc(6621).TableSwitchRow;
   return closure_18(TableSwitchRow, obj);
-}
-({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
-({ GUILD_DCS: unpackModuleId, SERVER_TAG_GUILD_DCS: closure_12, USER_DCS: map1, VANITY_URL_POWERUP_EDUCATIONAL_DCS: closure_14, getGuildDCString: closure_15, getUserDCString: closure_16 } = DevToolsGuildPowerupsConstants);
-const Endpoints = Constants.Endpoints;
-({ jsx: closure_18, jsxs: closure_19 } = Fragment);
-let createStyles = createStyles_mod;
-obj = { container: obj2, scrollContainer: obj3, noGuildContainer: obj4 };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
-createStyles = createStyles.createStyles;
-obj3 = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
-obj4 = { flex: 1, justifyContent: "center", alignItems: "center", padding: nativeDefault.space.PX_32 };
-let closure_20 = createStyles(obj);
-let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildPowerupsScreen.tsx");
-
-export default function DevToolsGuildPowerupsScreen() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let guildId;
+  let items5;
+  let items6;
+  let obj9;
+  let stateFromStores;
+  let stateFromStoresArray;
+  let stateFromStoresArray1;
+  let tmp11;
+  let tmp13;
+  let tmp15;
+  let tmp16;
+  let tmp18;
+  let tmp19;
+  let tmp7;
+  let tmp8;
+  const tmp = stateFromStores;
+  let tmp2 = stateFromStoresArray1;
+  obj = stateFromStores(stateFromStoresArray1[17]);
+  const cResult = obj.c(56);
+  const tmp4 = closure_20();
+  const tmp5 = stateFromStoresArray;
+  const tmp6 = stateFromStoresArray(stateFromStoresArray1[23])();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [SelectedGuildStore];
+    const fn = function t() {
+      return guildId.getGuildId();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp7 = items;
+    tmp8 = fn;
+  } else {
+    [tmp7, tmp8] = cResult;
+  }
+  const tmpResult = tmp(tmp2[24]);
+  stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [GuildStore];
+    cResult[2] = items1;
+    tmp11 = items1;
+  } else {
+    tmp11 = cResult[2];
+  }
+  if (cResult[3] !== stateFromStores) {
+    class T {
+      constructor() {
+        let tmp2 = null;
+        if (null != stateFromStores) {
+          const guild = GuildStore.getGuild(tmp);
+          let name;
+          if (guild != null) {
+            name = guild.name;
+          }
+          tmp2 = name;
+        }
+        return tmp2;
+      }
+    }
+    cResult[3] = stateFromStores;
+    cResult[4] = T;
+    tmp13 = T;
+  } else {
+    class T {
+      constructor() {
+        let tmp2 = null;
+        if (null != stateFromStores) {
+          const guild = GuildStore.getGuild(tmp);
+          let name;
+          if (guild != null) {
+            name = guild.name;
+          }
+          tmp2 = name;
+        }
+        return tmp2;
+      }
+    }
+  }
+  const tmpResult4 = tmp(tmp2[24]);
+  const stateFromStores1 = tmpResult4.useStateFromStores(tmp11, tmp13);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
+      constructor() {
+        let tmp2 = null;
+        if (null != stateFromStores) {
+          const guild = GuildStore.getGuild(tmp);
+          let name;
+          if (guild != null) {
+            name = guild.name;
+          }
+          tmp2 = name;
+        }
+        return tmp2;
+      }
+    }
+    const items2 = [UserSettingsProtoStore];
+    cResult[5] = items2;
+    tmp15 = items2;
+  } else {
+    class T {
+      constructor() {
+        let tmp2 = null;
+        if (null != stateFromStores) {
+          const guild = GuildStore.getGuild(tmp);
+          let name;
+          if (guild != null) {
+            name = guild.name;
+          }
+          tmp2 = name;
+        }
+        return tmp2;
+      }
+    }
+  }
+  if (cResult[6] !== stateFromStores) {
+    class A {
+      constructor() {
+        items = [...SERVER_TAG_GUILD_DCS];
+        return items.filter((item) => {
+          let isContentDismissedResult = null != closure_1_0;
+          if (isContentDismissedResult) {
+            obj = stateFromStores(stateFromStoresArray1[20]);
+            isContentDismissedResult = obj.isContentDismissed(item, tmp);
+          }
+          return isContentDismissedResult;
+        });
+      }
+    }
+    cResult[6] = stateFromStores;
+    cResult[7] = A;
+    tmp16 = A;
+  } else {
+    class A {
+      constructor() {
+        items = [...SERVER_TAG_GUILD_DCS];
+        return items.filter((item) => {
+          let isContentDismissedResult = null != closure_1_0;
+          if (isContentDismissedResult) {
+            obj = stateFromStores(stateFromStoresArray1[20]);
+            isContentDismissedResult = obj.isContentDismissed(item, tmp);
+          }
+          return isContentDismissedResult;
+        });
+      }
+    }
+  }
+  const tmpResult5 = tmp(tmp2[24]);
+  stateFromStoresArray = tmpResult5.useStateFromStoresArray(tmp15, tmp16);
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class A {
+      constructor() {
+        items = [...SERVER_TAG_GUILD_DCS];
+        return items.filter((item) => {
+          let isContentDismissedResult = null != closure_1_0;
+          if (isContentDismissedResult) {
+            obj = stateFromStores(stateFromStoresArray1[20]);
+            isContentDismissedResult = obj.isContentDismissed(item, tmp);
+          }
+          return isContentDismissedResult;
+        });
+      }
+    }
+    const items3 = [AppliedGuildBoostStore];
+    cResult[8] = items3;
+    tmp18 = items3;
+  } else {
+    class A {
+      constructor() {
+        items = [...SERVER_TAG_GUILD_DCS];
+        return items.filter((item) => {
+          let isContentDismissedResult = null != closure_1_0;
+          if (isContentDismissedResult) {
+            obj = stateFromStores(stateFromStoresArray1[20]);
+            isContentDismissedResult = obj.isContentDismissed(item, tmp);
+          }
+          return isContentDismissedResult;
+        });
+      }
+    }
+  }
+  if (cResult[9] !== stateFromStores) {
+    class W {
+      constructor() {
+        let items;
+        if (null != stateFromStores) {
+          let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+          if (appliedGuildBoostsForGuild == null) {
+            appliedGuildBoostsForGuild = [];
+          }
+          items = appliedGuildBoostsForGuild;
+        } else {
+          items = [];
+        }
+        return items;
+      }
+    }
+    cResult[9] = stateFromStores;
+    cResult[10] = W;
+    tmp19 = W;
+  } else {
+    class W {
+      constructor() {
+        let items;
+        if (null != stateFromStores) {
+          let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+          if (appliedGuildBoostsForGuild == null) {
+            appliedGuildBoostsForGuild = [];
+          }
+          items = appliedGuildBoostsForGuild;
+        } else {
+          items = [];
+        }
+        return items;
+      }
+    }
+  }
+  const tmpResult6 = tmp(tmp2[24]);
+  stateFromStoresArray1 = tmpResult6.useStateFromStoresArray(tmp18, tmp19);
+  if (null == stateFromStores) {
+    class W {
+      constructor() {
+        let items;
+        if (null != stateFromStores) {
+          let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+          if (appliedGuildBoostsForGuild == null) {
+            appliedGuildBoostsForGuild = [];
+          }
+          items = appliedGuildBoostsForGuild;
+        } else {
+          items = [];
+        }
+        return items;
+      }
+    }
+    const items4 = [, ];
+    ({ container: arr8[0], noGuildContainer: arr8[1] } = tmp4);
+    cResult[11] = tmp4.container;
+    cResult[12] = tmp4.noGuildContainer;
+    cResult[13] = items4;
+  } else {
+    class W {
+      constructor() {
+        let items;
+        if (null != stateFromStores) {
+          let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+          if (appliedGuildBoostsForGuild == null) {
+            appliedGuildBoostsForGuild = [];
+          }
+          items = appliedGuildBoostsForGuild;
+        } else {
+          items = [];
+        }
+        return items;
+      }
+    }
+    const sum = tmp6.bottom + tmp5(tmp2[11]).space.PX_16;
+    if (cResult[17] !== sum) {
+      class W {
+        constructor() {
+          let items;
+          if (null != stateFromStores) {
+            let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+            if (appliedGuildBoostsForGuild == null) {
+              appliedGuildBoostsForGuild = [];
+            }
+            items = appliedGuildBoostsForGuild;
+          } else {
+            items = [];
+          }
+          return items;
+        }
+      }
+      tmp22[0] = sum;
+      cResult[17] = sum;
+      cResult[18] = tmp22;
+    } else {
+      class W {
+        constructor() {
+          let items;
+          if (null != stateFromStores) {
+            let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+            if (appliedGuildBoostsForGuild == null) {
+              appliedGuildBoostsForGuild = [];
+            }
+            items = appliedGuildBoostsForGuild;
+          } else {
+            items = [];
+          }
+          return items;
+        }
+      }
+    }
+    if (cResult[19] === tmp4.scrollContainer) {
+      let tmp26;
+      class W {
+        constructor() {
+          let items;
+          if (null != stateFromStores) {
+            let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+            if (appliedGuildBoostsForGuild == null) {
+              appliedGuildBoostsForGuild = [];
+            }
+            items = appliedGuildBoostsForGuild;
+          } else {
+            items = [];
+          }
+          return items;
+        }
+      }
+      const tmp24 = stateFromStores1;
+      if (stateFromStores1 == null) {
+        class W {
+          constructor() {
+            let items;
+            if (null != stateFromStores) {
+              let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+              if (appliedGuildBoostsForGuild == null) {
+                appliedGuildBoostsForGuild = [];
+              }
+              items = appliedGuildBoostsForGuild;
+            } else {
+              items = [];
+            }
+            return items;
+          }
+        }
+      }
+      const _HermesInternal = HermesInternal;
+      const combined = "Current Guild: " + tmp24;
+      const _Symbol = Symbol;
+      if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
+        class W {
+          constructor() {
+            let items;
+            if (null != stateFromStores) {
+              let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+              if (appliedGuildBoostsForGuild == null) {
+                appliedGuildBoostsForGuild = [];
+              }
+              items = appliedGuildBoostsForGuild;
+            } else {
+              items = [];
+            }
+            return items;
+          }
+        }
+        const obj2 = {
+          label: "Reset Notification Indicators",
+          onPress() {
+                  obj = stateFromStores(stateFromStoresArray1[15]);
+                  return obj.guildPowerupsResetNotifications();
+                }
+        };
+        const tmp27 = closure_18(tmp(tmp2[26]).TableRow, obj2);
+        cResult[22] = tmp27;
+        tmp26 = tmp27;
+      } else {
+        class W {
+          constructor() {
+            let items;
+            if (null != stateFromStores) {
+              let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+              if (appliedGuildBoostsForGuild == null) {
+                appliedGuildBoostsForGuild = [];
+              }
+              items = appliedGuildBoostsForGuild;
+            } else {
+              items = [];
+            }
+            return items;
+          }
+        }
+      }
+      if (cResult[23] !== combined) {
+        class W {
+          constructor() {
+            let items;
+            if (null != stateFromStores) {
+              let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+              if (appliedGuildBoostsForGuild == null) {
+                appliedGuildBoostsForGuild = [];
+              }
+              items = appliedGuildBoostsForGuild;
+            } else {
+              items = [];
+            }
+            return items;
+          }
+        }
+        const obj3 = { title: combined, hasIcons: false, children: tmp26 };
+        cResult[23] = combined;
+        cResult[24] = closure_18(tmp(tmp2[27]).TableRowGroup, obj3);
+        const tmp29 = closure_18(tmp(tmp2[27]).TableRowGroup, obj3);
+      } else {
+        class W {
+          constructor() {
+            let items;
+            if (null != stateFromStores) {
+              let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+              if (appliedGuildBoostsForGuild == null) {
+                appliedGuildBoostsForGuild = [];
+              }
+              items = appliedGuildBoostsForGuild;
+            } else {
+              items = [];
+            }
+            return items;
+          }
+        }
+      }
+      if (cResult[25] === stateFromStoresArray1) {
+        class W {
+          constructor() {
+            let items;
+            if (null != stateFromStores) {
+              let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+              if (appliedGuildBoostsForGuild == null) {
+                appliedGuildBoostsForGuild = [];
+              }
+              items = appliedGuildBoostsForGuild;
+            } else {
+              items = [];
+            }
+            return items;
+          }
+        }
+        if (cResult[28] === stateFromStoresArray1) {
+          class W {
+            constructor() {
+              let items;
+              if (null != stateFromStores) {
+                let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+                if (appliedGuildBoostsForGuild == null) {
+                  appliedGuildBoostsForGuild = [];
+                }
+                items = appliedGuildBoostsForGuild;
+              } else {
+                items = [];
+              }
+              return items;
+            }
+          }
+          if (cResult[31] === tmp30) {
+            let tmp39;
+            class W {
+              constructor() {
+                let items;
+                if (null != stateFromStores) {
+                  let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+                  if (appliedGuildBoostsForGuild == null) {
+                    appliedGuildBoostsForGuild = [];
+                  }
+                  items = appliedGuildBoostsForGuild;
+                } else {
+                  items = [];
+                }
+                return items;
+              }
+            }
+            const _Symbol2 = Symbol;
+            if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
+              class W {
+                constructor() {
+                  let items;
+                  if (null != stateFromStores) {
+                    let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+                    if (appliedGuildBoostsForGuild == null) {
+                      appliedGuildBoostsForGuild = [];
+                    }
+                    items = appliedGuildBoostsForGuild;
+                  } else {
+                    items = [];
+                  }
+                  return items;
+                }
+              }
+              const obj4 = {
+                title: "User Level DCs",
+                hasIcons: false,
+                children: closure_13.map((dc) => {
+                              obj = { dc };
+                              return closure_1_18(closure_1_25, obj, dc);
+                            })
+              };
+              const TableRowGroup = tmp(tmp2[27]).TableRowGroup;
+              const tmp41 = closure_18(TableRowGroup, obj4);
+              cResult[34] = tmp41;
+              tmp39 = tmp41;
+            } else {
+              class W {
+                constructor() {
+                  let items;
+                  if (null != stateFromStores) {
+                    let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+                    if (appliedGuildBoostsForGuild == null) {
+                      appliedGuildBoostsForGuild = [];
+                    }
+                    items = appliedGuildBoostsForGuild;
+                  } else {
+                    items = [];
+                  }
+                  return items;
+                }
+              }
+            }
+            if (cResult[35] === stateFromStores) {
+              class W {
+                constructor() {
+                  let items;
+                  if (null != stateFromStores) {
+                    let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+                    if (appliedGuildBoostsForGuild == null) {
+                      appliedGuildBoostsForGuild = [];
+                    }
+                    items = appliedGuildBoostsForGuild;
+                  } else {
+                    items = [];
+                  }
+                  return items;
+                }
+              }
+              if (cResult[38] !== tmp42) {
+                class W {
+                  constructor() {
+                    let items;
+                    if (null != stateFromStores) {
+                      let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+                      if (appliedGuildBoostsForGuild == null) {
+                        appliedGuildBoostsForGuild = [];
+                      }
+                      items = appliedGuildBoostsForGuild;
+                    } else {
+                      items = [];
+                    }
+                    return items;
+                  }
+                }
+                const obj5 = { title: "Guild Level DCs", hasIcons: false, children: tmp42 };
+                cResult[38] = tmp42;
+                cResult[39] = closure_18(tmp(tmp2[27]).TableRowGroup, obj5);
+                const tmp46 = closure_18(tmp(tmp2[27]).TableRowGroup, obj5);
+              } else {
+                class W {
+                  constructor() {
+                    let items;
+                    if (null != stateFromStores) {
+                      let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+                      if (appliedGuildBoostsForGuild == null) {
+                        appliedGuildBoostsForGuild = [];
+                      }
+                      items = appliedGuildBoostsForGuild;
+                    } else {
+                      items = [];
+                    }
+                    return items;
+                  }
+                }
+              }
+              if (cResult[40] === stateFromStores) {
+                let tmp52;
+                class W {
+                  constructor() {
+                    let items;
+                    if (null != stateFromStores) {
+                      let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+                      if (appliedGuildBoostsForGuild == null) {
+                        appliedGuildBoostsForGuild = [];
+                      }
+                      items = appliedGuildBoostsForGuild;
+                    } else {
+                      items = [];
+                    }
+                    return items;
+                  }
+                }
+                if (cResult[43] !== tmp47) {
+                  class W {
+                    constructor() {
+                      let items;
+                      if (null != stateFromStores) {
+                        let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+                        if (appliedGuildBoostsForGuild == null) {
+                          appliedGuildBoostsForGuild = [];
+                        }
+                        items = appliedGuildBoostsForGuild;
+                      } else {
+                        items = [];
+                      }
+                      return items;
+                    }
+                  }
+                  const obj6 = { title: "Server Tag Guild Level DCs", hasIcons: false, children: tmp47 };
+                  cResult[43] = tmp47;
+                  cResult[44] = closure_18(tmp(tmp2[27]).TableRowGroup, obj6);
+                  const tmp51 = closure_18(tmp(tmp2[27]).TableRowGroup, obj6);
+                } else {
+                  class W {
+                    constructor() {
+                      let items;
+                      if (null != stateFromStores) {
+                        let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+                        if (appliedGuildBoostsForGuild == null) {
+                          appliedGuildBoostsForGuild = [];
+                        }
+                        items = appliedGuildBoostsForGuild;
+                      } else {
+                        items = [];
+                      }
+                      return items;
+                    }
+                  }
+                }
+                const _Symbol3 = Symbol;
+                if (cResult[45] === Symbol.for("react.memo_cache_sentinel")) {
+                  class W {
+                    constructor() {
+                      let items;
+                      if (null != stateFromStores) {
+                        let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+                        if (appliedGuildBoostsForGuild == null) {
+                          appliedGuildBoostsForGuild = [];
+                        }
+                        items = appliedGuildBoostsForGuild;
+                      } else {
+                        items = [];
+                      }
+                      return items;
+                    }
+                  }
+                  const obj7 = {
+                    title: "Vanity URL Powerup DCs",
+                    hasIcons: false,
+                    children: closure_14.map((dc) => {
+                                      obj = { dc };
+                                      return closure_1_18(closure_1_25, obj, dc);
+                                    })
+                  };
+                  const TableRowGroup2 = tmp(tmp2[27]).TableRowGroup;
+                  const tmp54 = closure_18(TableRowGroup2, obj7);
+                  cResult[45] = tmp54;
+                  tmp52 = tmp54;
+                } else {
+                  class W {
+                    constructor() {
+                      let items;
+                      if (null != stateFromStores) {
+                        let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+                        if (appliedGuildBoostsForGuild == null) {
+                          appliedGuildBoostsForGuild = [];
+                        }
+                        items = appliedGuildBoostsForGuild;
+                      } else {
+                        items = [];
+                      }
+                      return items;
+                    }
+                  }
+                }
+                if (cResult[46] !== stateFromStores) {
+                  class W {
+                    constructor() {
+                      let items;
+                      if (null != stateFromStores) {
+                        let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+                        if (appliedGuildBoostsForGuild == null) {
+                          appliedGuildBoostsForGuild = [];
+                        }
+                        items = appliedGuildBoostsForGuild;
+                      } else {
+                        items = [];
+                      }
+                      return items;
+                    }
+                  }
+                  const obj8 = { title: "System Messages", hasIcons: false, children: closure_18(tmp(tmp2[26]).TableRow, obj9) };
+                  const TableRowGroup3 = tmp(tmp2[27]).TableRowGroup;
+                  obj9 = {
+                    label: "Send Powerups System Message",
+                    onPress() {
+                                      return sendPowerupsSystemMessage(stateFromStores);
+                                    }
+                  };
+                  cResult[46] = stateFromStores;
+                  cResult[47] = closure_18(TableRowGroup3, obj8);
+                  const tmp56 = closure_18(TableRowGroup3, obj8);
+                } else {
+                  class W {
+                    constructor() {
+                      let items;
+                      if (null != stateFromStores) {
+                        let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+                        if (appliedGuildBoostsForGuild == null) {
+                          appliedGuildBoostsForGuild = [];
+                        }
+                        items = appliedGuildBoostsForGuild;
+                      } else {
+                        items = [];
+                      }
+                      return items;
+                    }
+                  }
+                }
+                if (cResult[48] === tmp4.container) {
+                  class W {
+                    constructor() {
+                      let items;
+                      if (null != stateFromStores) {
+                        let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
+                        if (appliedGuildBoostsForGuild == null) {
+                          appliedGuildBoostsForGuild = [];
+                        }
+                        items = appliedGuildBoostsForGuild;
+                      } else {
+                        items = [];
+                      }
+                      return items;
+                    }
+                  }
+                }
+                const obj10 = { style: tmp62, contentContainerStyle: tmp23, children: items5 };
+                items5 = [tmp28, tmp36, tmp39, tmp45, tmp50, tmp52, tmp55];
+                cResult[48] = tmp4.container;
+                cResult[49] = tmp23;
+                cResult[50] = tmp28;
+                cResult[51] = tmp36;
+                cResult[52] = tmp45;
+                cResult[53] = tmp50;
+                cResult[54] = tmp55;
+                cResult[55] = closure_19(closure_5, obj10);
+                const tmp60 = closure_19(closure_5, obj10);
+              }
+              const mapped = closure_12.map((dc) => {
+                obj = { dc, guildId: stateFromStores, isDismissed: stateFromStoresArray.includes(dc) };
+                return authStore4(closure_26, obj, dc);
+              });
+              cResult[40] = stateFromStores;
+              cResult[41] = stateFromStoresArray;
+              cResult[42] = mapped;
+            }
+            const mapped1 = closure_11.map((dc) => {
+              obj = { dc, guildId: stateFromStores, isDismissed: stateFromStoresArray.includes(dc) };
+              return authStore4(closure_26, obj, dc);
+            });
+            cResult[35] = stateFromStores;
+            cResult[36] = stateFromStoresArray;
+            cResult[37] = mapped1;
+          }
+          const obj11 = { title: "Warning State", hasIcons: false, children: items6 };
+          items6 = [tmp30, tmp33];
+          cResult[31] = tmp30;
+          cResult[32] = tmp33;
+          cResult[33] = closure_19(tmp(tmp2[27]).TableRowGroup, obj11);
+          const tmp38 = closure_19(tmp(tmp2[27]).TableRowGroup, obj11);
+        }
+        const obj12 = {
+          label: "Reset End Date",
+          onPress() {
+                  return setWarningBoosts(stateFromStores, stateFromStoresArray1, true);
+                }
+        };
+        cResult[28] = stateFromStoresArray1;
+        cResult[29] = stateFromStores;
+        cResult[30] = closure_18(tmp(tmp2[26]).TableRow, obj12);
+        const tmp35 = closure_18(tmp(tmp2[26]).TableRow, obj12);
+      }
+      const obj13 = {
+        label: "Set Half Boosts expiring in 1 day",
+        onPress() {
+              return setWarningBoosts(stateFromStores, stateFromStoresArray1.slice(Math.floor(stateFromStoresArray1.length / 2)), false);
+            }
+      };
+      cResult[25] = stateFromStoresArray1;
+      cResult[26] = stateFromStores;
+      cResult[27] = closure_18(tmp(tmp2[26]).TableRow, obj13);
+      const tmp32 = closure_18(tmp(tmp2[26]).TableRow, obj13);
+    }
+    const items7 = [tmp4.scrollContainer, tmp21];
+    cResult[19] = tmp4.scrollContainer;
+    cResult[20] = tmp21;
+    cResult[21] = items7;
+  }
+}) : (() => {
   let closure_1;
   let closure_2;
   let guildId;
@@ -252,7 +1133,7 @@ export default function DevToolsGuildPowerupsScreen() {
     return items.filter((item) => {
       let isContentDismissedResult = null != closure_1_0;
       if (isContentDismissedResult) {
-        obj = stateFromStores(closure_2[18]);
+        obj = stateFromStores(closure_2[20]);
         isContentDismissedResult = obj.isContentDismissed(item, tmp);
       }
       return isContentDismissedResult;
@@ -274,7 +1155,7 @@ export default function DevToolsGuildPowerupsScreen() {
     return items;
   });
   if (null == stateFromStores) {
-    const obj5 = { style: items4, children: closure_18(stateFromStores(4832).Text, { variant: "heading-md/semibold", color: "text-muted", children: "No guild selected" }) };
+    const obj5 = { style: items4, children: closure_18(stateFromStores(4833).Text, { variant: "heading-md/semibold", color: "text-muted", children: "No guild selected" }) };
     items4 = [, ];
     ({ container: arr7[0], noGuildContainer: arr7[1] } = tmp);
     tmp16Result = closure_18(closure_6, obj5);
@@ -284,13 +1165,13 @@ export default function DevToolsGuildPowerupsScreen() {
     items5[1] = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
     let str = stateFromStores1;
     const obj7 = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
-    const TableRowGroup7 = tmp5(5999).TableRowGroup;
+    const TableRowGroup7 = tmp5(5997).TableRowGroup;
     const tmp17 = closure_5;
     if (stateFromStores1 == null) {
       str = "Unknown";
     }
     const _HermesInternal = HermesInternal;
-    const obj8 = { title: "Current Guild: " + str, hasIcons: false, children: closure_18(stateFromStores(5917).TableRow, obj9) };
+    const obj8 = { title: "Current Guild: " + str, hasIcons: false, children: closure_18(stateFromStores(5916).TableRow, obj9) };
     obj9 = {
       label: "Reset Notification Indicators",
       onPress() {
@@ -300,70 +1181,67 @@ export default function DevToolsGuildPowerupsScreen() {
     };
     items6 = [closure_18(TableRowGroup7, obj8), , , , , , ];
     const obj10 = { title: "Warning State", hasIcons: false, children: items7 };
-    const TableRowGroup = tmp5(5999).TableRowGroup;
+    const TableRowGroup = tmp5(5997).TableRowGroup;
     const obj11 = {
       label: "Set Half Boosts expiring in 1 day",
       onPress() {
           return setWarningBoosts(stateFromStores, closure_2.slice(Math.floor(closure_2.length / 2)), false);
         }
     };
-    items7 = [closure_18(tmp5(5917).TableRow, obj11), ];
+    items7 = [closure_18(tmp5(5916).TableRow, obj11), ];
     const obj12 = {
       label: "Reset End Date",
       onPress() {
           return setWarningBoosts(stateFromStores, closure_2, true);
         }
     };
-    items7[1] = closure_18(stateFromStores(5917).TableRow, obj12);
+    items7[1] = closure_18(stateFromStores(5916).TableRow, obj12);
     items6[1] = closure_19(TableRowGroup, obj10);
     const obj13 = {
       title: "User Level DCs",
       hasIcons: false,
       children: closure_13.map((dc) => {
           obj = { dc };
-          return closure_1_18(UserDCSwitchRow, obj, dc);
+          return closure_1_18(closure_1_25, obj, dc);
         })
     };
-    const TableRowGroup2 = tmp5(5999).TableRowGroup;
+    const TableRowGroup2 = tmp5(5997).TableRowGroup;
     items6[2] = closure_18(TableRowGroup2, obj13);
     const obj14 = {
       title: "Guild Level DCs",
       hasIcons: false,
       children: closure_11.map((dc) => {
           obj = { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) };
-          return authStore4(GuildDCSwitchRow, obj, dc);
+          return authStore4(closure_26, obj, dc);
         })
     };
-    const TableRowGroup3 = tmp5(5999).TableRowGroup;
+    const TableRowGroup3 = tmp5(5997).TableRowGroup;
     items6[3] = closure_18(TableRowGroup3, obj14);
     const obj15 = {
       title: "Server Tag Guild Level DCs",
       hasIcons: false,
       children: closure_12.map((dc) => {
           obj = { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) };
-          return authStore4(GuildDCSwitchRow, obj, dc);
+          return authStore4(closure_26, obj, dc);
         })
     };
-    const TableRowGroup4 = tmp5(5999).TableRowGroup;
+    const TableRowGroup4 = tmp5(5997).TableRowGroup;
     items6[4] = closure_18(TableRowGroup4, obj15);
     const obj16 = {
       title: "Vanity URL Powerup DCs",
       hasIcons: false,
       children: closure_14.map((dc) => {
           obj = { dc };
-          return closure_1_18(UserDCSwitchRow, obj, dc);
+          return closure_1_18(closure_1_25, obj, dc);
         })
     };
-    const TableRowGroup5 = tmp5(5999).TableRowGroup;
+    const TableRowGroup5 = tmp5(5997).TableRowGroup;
     items6[5] = closure_18(TableRowGroup5, obj16);
-    const obj17 = { title: "System Messages", hasIcons: false, children: closure_18(stateFromStores(5917).TableRow, obj18) };
-    const TableRowGroup6 = tmp5(5999).TableRowGroup;
+    const obj17 = { title: "System Messages", hasIcons: false, children: closure_18(stateFromStores(5916).TableRow, obj18) };
+    const TableRowGroup6 = tmp5(5997).TableRowGroup;
     obj18 = {
       label: "Send Powerups System Message",
       onPress() {
-          function sendPowerupsSystemMessage() {
-            return closure_1_23(...arguments);
-          }
           return sendPowerupsSystemMessage(stateFromStores);
         }
     };
@@ -371,4 +1249,7 @@ export default function DevToolsGuildPowerupsScreen() {
     tmp16Result = tmp16(tmp17, obj6);
   }
   return tmp16Result;
-};
+});
+let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildPowerupsScreen.tsx");
+
+export default tmp6;

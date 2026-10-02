@@ -1,26 +1,26 @@
-// Module ID: 6896
-// Function ID: 6897
+// Module ID: 6900
+// Function ID: 6901
 // Name: CacheStore
-// Dependencies: [32, 5, 5589, 502, 2099, 4655, 1074, 3, 510, 2096, 6897, 6908, 9, 10, 2095, 6909, 6910, 6911, 6912, 6913, 7057, 7078, 504, 573, 2094, 7063, 7069, 7067, 7061, 2071, 7079, 1364, 7081, 7083, 2091, 2]
+// Dependencies: [32, 5, 5590, 502, 2102, 4657, 1086, 3, 510, 2099, 6901, 6912, 9, 10, 2098, 6913, 6914, 6915, 6916, 6917, 7061, 7082, 504, 585, 2097, 7067, 7073, 7071, 7065, 559, 7083, 1370, 7085, 7087, 2094, 2]
 
-// Module 6896 (CacheStore)
+// Module 6900 (CacheStore)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import TryLoad from "TryLoad" /* 2094 */;
-import modules_MessagesDefault from "modules/Messages" /* 6897 */;
-import timeRequireDefault from "timeRequire" /* 6912 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 7069 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 7081 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import TryLoad from "TryLoad" /* 2097 */;
+import modules_MessagesDefault from "modules/Messages" /* 6901 */;
+import timeRequireDefault from "timeRequire" /* 6916 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 7073 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 7085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
-import Constants from "Constants" /* 1074 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c4, closure_13, dependencyMap, importDefault, length2, length3, set;
@@ -62,7 +62,7 @@ let obj = function _loadChannelHistory() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -360,7 +360,7 @@ obj = function _loadInitialGuilds() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -508,7 +508,7 @@ obj = function _loadInitialGuildChannels() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -615,7 +615,7 @@ obj = function _loadLateLazyCache() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -898,7 +898,7 @@ obj = function _loadLateLazyCache() {
             }
           });
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp20) {
         c7 = 3;
@@ -919,7 +919,7 @@ function resumeFluxAndSocket(arg0) {
     let dispatcher;
     let obj3;
     try {
-      f127309();
+      f152655();
       dispatcher = dispatcher.dispatcher;
       if (dispatcher.hasStuffToDispatchNow()) {
         let c2 = true;
@@ -1012,7 +1012,7 @@ class CacheStoreClass extends Store {
       }
       function dontLoadLateLazyCache() {
         let _true;
-        const f127309 = () => {
+        const f152655 = () => {
           obj = closure_1(c2[23]);
           return obj.dispatch({ type: "CACHE_LOADED_LAZY_NO_CACHE" });
         };
@@ -1023,7 +1023,7 @@ class CacheStoreClass extends Store {
           let dispatcher;
           let obj3;
           try {
-            f127309();
+            f152655();
             dispatcher = dispatcher.dispatcher;
             if (dispatcher.hasStuffToDispatchNow()) {
               let c2 = true;
@@ -1079,7 +1079,7 @@ class CacheStoreClass extends Store {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -1229,7 +1229,7 @@ class CacheStoreClass extends Store {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp34) {
             closure_2 = tmp34;

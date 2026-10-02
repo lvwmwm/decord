@@ -1,20 +1,20 @@
-// Module ID: 12169
-// Function ID: 12170
+// Module ID: 12064
+// Function ID: 12065
 // Name: HubProgressHeader
-// Dependencies: [19, 17, 9286, 11793, 21, 4836, 576, 12166, 1186, 1115, 8053, 4800, 12170, 1981, 12268, 2]
+// Dependencies: [19, 17, 9264, 11686, 21, 4837, 588, 12061, 1198, 1127, 8057, 4801, 12065, 1987, 12165, 2]
 // Exports: default
 
-// Module 12169 (HubProgressHeader)
+// Module 12064 (HubProgressHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 11793 */;
+import nativeDefault from "native" /* 588 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 11686 */;
 import react from "react" /* 19 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 9286 */;
-import createStyles from "createStyles" /* 4836 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 9264 */;
+import createStyles from "createStyles" /* 4837 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -76,7 +76,7 @@ export default function HubProgressHeader(guild) {
           if (!tmp) {
             const obj2 = { guild, analyticsSource: "Directory Channel Header" };
             const obj = ActionSheetActionCreatorsDefault;
-            obj.openLazy(asyncRequire(12170, dependencyMap.paths), React3, obj2);
+            obj.openLazy(asyncRequire(12065, dependencyMap.paths), React3, obj2);
           }
         },
       iconSource: flag(nextHubProgressStep[14]),

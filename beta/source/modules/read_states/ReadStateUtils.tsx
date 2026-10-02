@@ -1,26 +1,53 @@
-// Module ID: 9300
-// Function ID: 9301
+// Module ID: 9278
+// Function ID: 9279
 // Name: ReadStateUtils
-// Dependencies: [4851, 5017, 5018, 504, 2]
-// Exports: getHasImportantUnread, useHasImportantUnread
+// Dependencies: [4852, 5018, 5019, 558, 576, 504, 2]
+// Exports: getHasImportantUnread
 
-// Module 9300 (ReadStateUtils)
-import ReadStateConstants from "ReadStateConstants" /* 5018 */;
-import ReadStateStore from "ReadStateStore" /* 4851 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
+// Module 9278 (ReadStateUtils)
+import ReadStateConstants from "ReadStateConstants" /* 5019 */;
+import ReadStateStore from "ReadStateStore" /* 4852 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5018 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const UnreadSetting = ReadStateConstants.UnreadSetting;
-const result = size.fileFinishedImporting("modules/read_states/ReadStateUtils.tsx");
-
-export const getHasImportantUnread = function getHasImportantUnread(channel) {
-  const hasUnreadResult = ReadStateStore.hasUnread(channel.id) && UserGuildSettingsStore.resolveUnreadSetting(channel) === UnreadSetting.ALL_MESSAGES;
-  return hasUnreadResult;
-};
-export const useHasImportantUnread = function useHasImportantUnread(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let first;
+  let id;
+  let tmp7;
+  _require = arg0;
+  let tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ReadStateStore, UserGuildSettingsStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      let hasUnreadResult = ReadStateStore.hasUnread(id.id);
+      const tmp = id;
+      if (hasUnreadResult) {
+        hasUnreadResult = UserGuildSettingsStore.resolveUnreadSetting(tmp) === UnreadSetting.ALL_MESSAGES;
+      }
+      return hasUnreadResult;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp7);
+}) : ((arg0) => {
   let id;
   _require = arg0;
   const items = [ReadStateStore, UserGuildSettingsStore];
@@ -33,4 +60,11 @@ export const useHasImportantUnread = function useHasImportantUnread(arg0) {
     }
     return hasUnreadResult;
   });
+});
+const result = size.fileFinishedImporting("modules/read_states/ReadStateUtils.tsx");
+
+export const getHasImportantUnread = function getHasImportantUnread(channel) {
+  const hasUnreadResult = ReadStateStore.hasUnread(channel.id) && UserGuildSettingsStore.resolveUnreadSetting(channel) === UnreadSetting.ALL_MESSAGES;
+  return hasUnreadResult;
 };
+export const useHasImportantUnread = tmp2;

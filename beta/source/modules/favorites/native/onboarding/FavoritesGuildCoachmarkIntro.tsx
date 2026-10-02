@@ -1,22 +1,24 @@
-// Module ID: 15950
-// Function ID: 15951
+// Module ID: 15951
+// Function ID: 15952
 // Name: FavoritesGuildCoachmarkIntro
-// Dependencies: [32, 19, 15921, 1074, 2042, 21, 4566, 9696, 15945, 1115, 3361, 15951, 10589, 2]
-// Exports: default
+// Dependencies: [32, 19, 15922, 1086, 2048, 21, 558, 576, 4570, 9815, 15946, 1127, 3364, 15952, 9656, 2]
 
-// Module 15950 (FavoritesGuildCoachmarkIntro)
+// Module 15951 (FavoritesGuildCoachmarkIntro)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1074 */;
-import intl4 from "intl" /* 1115 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import _modDef3361 from "module_3361" /* 3361 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 9696 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 15945 */;
+import Constants from "Constants" /* 1086 */;
+import intl4 from "intl" /* 1127 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import _modDef3364 from "module_3364" /* 3364 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 9815 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 15946 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 15921 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 15922 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let dependencyMap, markAsDismissed;
 
 let _slicedToArray = _slicedToArray_mod;
 const FAVORITES = Constants.FAVORITES;
@@ -24,9 +26,157 @@ const ContentDismissActionType = DismissibleContentConstants.ContentDismissActio
 const jsx = Fragment.jsx;
 const __initData = { code: "function FavoritesGuildCoachmarkIntroTsx1(){const{scrollPosition}=this.__closure;return scrollPosition.get()<=0;}" };
 const __initData2 = { code: "function FavoritesGuildCoachmarkIntroTsx2(atTop,wasAtTop){const{runOnJS,setScrolledToTop}=this.__closure;if(atTop===wasAtTop){return;}runOnJS(setScrolledToTop)(atTop);}" };
-let result = size.fileFinishedImporting("modules/favorites/native/onboarding/FavoritesGuildCoachmarkIntro.tsx");
-
-export default function FavoritesGuildCoachmarkIntro(markAsDismissed) {
+const __initData3 = { code: "function FavoritesGuildCoachmarkIntroTsx3(){const{scrollPosition}=this.__closure;return scrollPosition.get()<=0;}" };
+const __initData4 = { code: "function FavoritesGuildCoachmarkIntroTsx4(atTop,wasAtTop){const{runOnJS,setScrolledToTop}=this.__closure;if(atTop===wasAtTop){return;}runOnJS(setScrolledToTop)(atTop);}" };
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+  let closure_2;
+  let first;
+  let tmp10;
+  let tmp14;
+  let tmp15;
+  let tmp19;
+  let tmp20;
+  let tmp7;
+  let tmp9;
+  let obj = markAsDismissed(576);
+  const cResult = obj.c(14);
+  markAsDismissed = markAsDismissed.markAsDismissed;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const state = GuildsBarDnDStore.getState();
+    cResult[0] = state;
+    first = state;
+  } else {
+    first = cResult[0];
+  }
+  const scrollPosition = first.scrollPosition;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function f() {
+      return scrollPosition.get() <= 0;
+    };
+    cResult[1] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[1];
+  }
+  [tmp9, tmp10] = react.useState(tmp7);
+  dependencyMap = tmp10;
+  _slicedToArray(react.useState(tmp7), 2);
+  const tmpResult = markAsDismissed(4570);
+  class C {
+    constructor() {
+      return scrollPosition.get() <= 0;
+    }
+  }
+  C.__closure = { scrollPosition };
+  C.__workletHash = 6053526688640;
+  C.__initData = __initData;
+  const fn2 = function k(arg0, arg1) {
+    if (arg0 !== arg1) {
+      const obj = ReanimatedRexport;
+      obj.runOnJS(dependencyMap)(arg0);
+    }
+  };
+  fn2.__closure = { runOnJS: markAsDismissed(4570).runOnJS, setScrolledToTop: tmp10 };
+  fn2.__workletHash = 13648062364539;
+  fn2.__initData = __initData2;
+  ({ runOnJS: markAsDismissed(4570).runOnJS, setScrolledToTop: tmp10 });
+  const animatedReaction = tmpResult.useAnimatedReaction(C, fn2);
+  if (cResult[2] !== markAsDismissed) {
+    class I {
+      constructor() {
+        markAsDismissed(ContentDismissActionType.USER_DISMISS);
+      }
+    }
+    cResult[2] = markAsDismissed;
+    cResult[3] = I;
+  } else {
+    class I {
+      constructor() {
+        markAsDismissed(ContentDismissActionType.USER_DISMISS);
+      }
+    }
+  }
+  if (cResult[4] !== markAsDismissed) {
+    class D {
+      constructor() {
+        const obj = FavoritesGuildAnalytics;
+        const result = obj.setNextFavoritesGuildViewSource("intro_dc");
+        transitionGuildsBarToGuildOrOpenSelectedChannelDefault(FAVORITES);
+        markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+      }
+    }
+    cResult[4] = markAsDismissed;
+    cResult[5] = D;
+  } else {
+    class D {
+      constructor() {
+        const obj = FavoritesGuildAnalytics;
+        const result = obj.setNextFavoritesGuildViewSource("intro_dc");
+        transitionGuildsBarToGuildOrOpenSelectedChannelDefault(FAVORITES);
+        markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+      }
+    }
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor() {
+        const obj = FavoritesGuildAnalytics;
+        const result = obj.setNextFavoritesGuildViewSource("intro_dc");
+        transitionGuildsBarToGuildOrOpenSelectedChannelDefault(FAVORITES);
+        markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+      }
+    }
+    const stringResult = obj4.string(scrollPosition(3364)["bu/mLv"]);
+    const intl = tmp(1127).intl;
+    const stringResult1 = intl.string(scrollPosition(3364).kxQJ7q);
+    cResult[6] = stringResult;
+    cResult[7] = stringResult1;
+    tmp15 = stringResult1;
+    tmp14 = stringResult;
+  } else {
+    class D {
+      constructor() {
+        const obj = FavoritesGuildAnalytics;
+        const result = obj.setNextFavoritesGuildViewSource("intro_dc");
+        transitionGuildsBarToGuildOrOpenSelectedChannelDefault(FAVORITES);
+        markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+      }
+    }
+    tmp15 = cResult[7];
+  }
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor() {
+        return jsx(scrollPosition(dependencyMap[13]), {});
+      }
+    }
+    const intl2 = tmp(1127).intl;
+    const stringResult2 = intl2.string(scrollPosition(3364)["vN/KQ9"]);
+    cResult[8] = R;
+    cResult[9] = stringResult2;
+    tmp20 = stringResult2;
+    tmp19 = R;
+  } else {
+    class R {
+      constructor() {
+        return jsx(scrollPosition(dependencyMap[13]), {});
+      }
+    }
+    tmp20 = cResult[9];
+  }
+  if (cResult[10] === tmp13) {
+    class R {
+      constructor() {
+        return jsx(scrollPosition(dependencyMap[13]), {});
+      }
+    }
+  }
+  const obj3 = { visible: tmp9, position: "bottom", title: tmp14, description: tmp15, onDismiss: tmp12, renderImgComponent: tmp19, buttonLabel: tmp20, onButtonPress: tmp13 };
+  cResult[10] = tmp13;
+  cResult[11] = tmp12;
+  cResult[12] = tmp9;
+  cResult[13] = obj3;
+}) : ((markAsDismissed) => {
   let closure_3;
   let tmp3;
   let visible;
@@ -38,23 +188,23 @@ export default function FavoritesGuildCoachmarkIntro(markAsDismissed) {
   const scrollPosition = callback1.getState().scrollPosition;
   [visible, tmp3] = onDismiss.useState(() => scrollPosition.get() <= 0);
   _slicedToArray = tmp3;
-  let obj = markAsDismissed(visible[6]);
+  let obj = markAsDismissed(visible[8]);
   const fn = function v() {
     return scrollPosition.get() <= 0;
   };
   fn.__closure = { scrollPosition };
-  fn.__workletHash = 6053526688640;
-  fn.__initData = __initData;
+  fn.__workletHash = 16210171023746;
+  fn.__initData = __initData3;
   const fn2 = function p(arg0, arg1) {
     if (arg0 !== arg1) {
       const obj = ReanimatedRexport;
       obj.runOnJS(closure_3)(arg0);
     }
   };
-  fn2.__closure = { runOnJS: markAsDismissed(visible[6]).runOnJS, setScrolledToTop: tmp3 };
-  fn2.__workletHash = 13648062364539;
-  fn2.__initData = __initData2;
-  ({ runOnJS: markAsDismissed(visible[6]).runOnJS, setScrolledToTop: tmp3 });
+  fn2.__closure = { runOnJS: markAsDismissed(visible[8]).runOnJS, setScrolledToTop: tmp3 };
+  fn2.__workletHash = 4195860117373;
+  fn2.__initData = __initData4;
+  ({ runOnJS: markAsDismissed(visible[8]).runOnJS, setScrolledToTop: tmp3 });
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
   const items = [markAsDismissed];
   onDismiss = onDismiss.useCallback(() => {
@@ -75,13 +225,13 @@ export default function FavoritesGuildCoachmarkIntro(markAsDismissed) {
     const obj = {
       visible,
       position: "bottom",
-      title: intl.string(_modDef3361["bu/mLv"]),
-      description: intl2.string(_modDef3361.kxQJ7q),
+      title: intl.string(_modDef3364["bu/mLv"]),
+      description: intl2.string(_modDef3364.kxQJ7q),
       onDismiss,
       renderImgComponent() {
-        return closure_1_8(scrollPosition(visible[11]), {});
+        return closure_1_8(scrollPosition(visible[13]), {});
       },
-      buttonLabel: intl3.string(_modDef3361["vN/KQ9"]),
+      buttonLabel: intl3.string(_modDef3364["vN/KQ9"]),
       onButtonPress: callback1
     };
     intl = intl4.intl;
@@ -89,7 +239,10 @@ export default function FavoritesGuildCoachmarkIntro(markAsDismissed) {
     intl3 = intl4.intl;
     return obj;
   }, items2);
-  const obj3 = markAsDismissed(visible[12]);
+  const obj3 = markAsDismissed(visible[14]);
   const coachmark = obj3.useCoachmark(targetRef, memo);
   return null;
-};
+});
+let result = size.fileFinishedImporting("modules/favorites/native/onboarding/FavoritesGuildCoachmarkIntro.tsx");
+
+export default tmp2;

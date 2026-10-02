@@ -1,19 +1,19 @@
-// Module ID: 8981
-// Function ID: 8982
+// Module ID: 8956
+// Function ID: 8957
 // Name: GuildScheduledEventsActionCreators
-// Dependencies: [5, 502, 6946, 2051, 1074, 1271, 5723, 1101, 8982, 5092, 573, 8984, 11, 2]
+// Dependencies: [5, 502, 6950, 2057, 1086, 1283, 5724, 1113, 8957, 5093, 585, 8959, 11, 2]
 
-// Module 8981 (GuildScheduledEventsActionCreators)
+// Module 8956 (GuildScheduledEventsActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import router_utils from "router_utils" /* 1101 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8982 */;
+import router_utils from "router_utils" /* 1113 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5724 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8957 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6946 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;
-import Constants from "Constants" /* 1074 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6950 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, rsvp, userId;
@@ -157,11 +157,11 @@ let obj = {
     obj3 = HTTPUtils;
     return patch(request);
   },
-  deleteGuildEvent(arg0, arg1) {
+  deleteGuildEvent(arg0, c1) {
     let obj2;
     const HTTP = HTTPUtils.HTTP;
     const del = HTTP.del;
-    const obj = { url: authStore.GUILD_EVENT(arg1, arg0), rejectWithError: obj2.rejectWithMigratedError() };
+    const obj = { url: authStore.GUILD_EVENT(c1, arg0), rejectWithError: obj2.rejectWithMigratedError() };
     obj2 = HTTPUtils;
     return del(obj);
   },
@@ -182,7 +182,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -222,7 +222,7 @@ let obj = {
             const obj = tmp(c2[10]);
             obj.dispatch(obj7);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp12) {
           c3 = 3;
@@ -252,7 +252,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -337,7 +337,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -374,7 +374,7 @@ let obj = {
                 return obj9;
               } else {
                 rsvp = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               }
             }
           } else if (1 === userId) {
@@ -428,7 +428,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -503,7 +503,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp33) {
           closure_2 = tmp33;
@@ -543,7 +543,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -612,14 +612,14 @@ let obj = {
     obj2 = HTTPUtils;
     return post(request);
   },
-  updateGuildEventException(arg0, guild_id, id, event_exception_id) {
+  updateGuildEventException(arg0, guild_id, id, c2) {
     let is_canceled;
     let obj2;
     let scheduled_end_time;
     let scheduled_start_time;
     ({ scheduled_start_time, scheduled_end_time, is_canceled } = arg0);
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore.GUILD_EVENT_EXCEPTION(guild_id, id, event_exception_id), body: { scheduled_start_time, scheduled_end_time, is_canceled }, rejectWithError: obj2.rejectWithMigratedError() };
+    const request = { url: authStore.GUILD_EVENT_EXCEPTION(guild_id, id, c2), body: { scheduled_start_time, scheduled_end_time, is_canceled }, rejectWithError: obj2.rejectWithMigratedError() };
     const patch = HTTP.patch;
     obj2 = HTTPUtils;
     return patch(request);
@@ -632,13 +632,13 @@ let obj = {
     obj2 = HTTPUtils;
     return del(obj);
   },
-  deleteRecurrence(guild_id, id, event_exception_id, arg3) {
+  deleteRecurrence(c1, id, c2, arg3) {
     let date;
     const self = this;
     if (null != arg3) {
       const obj2 = { scheduled_start_time: null, scheduled_end_time: null, is_canceled: true };
       ({ scheduled_start_time: obj4.scheduled_start_time, scheduled_end_time: obj4.scheduled_end_time } = arg3);
-      return self.updateGuildEventException(obj2, guild_id, id, event_exception_id);
+      return self.updateGuildEventException(obj2, c1, id, c2);
     } else {
       const _Date = Date;
       const self2 = this;
@@ -646,8 +646,8 @@ let obj = {
       const createGuildEventException = self.createGuildEventException;
       const obj3 = { original_scheduled_start_time: date.toISOString(), is_canceled: true };
       const obj = SnowflakeUtilsDefault;
-      date = new Date(obj.extractTimestamp(event_exception_id));
-      return createGuildEventException(obj3, guild_id, id);
+      date = new Date(obj.extractTimestamp(c2));
+      return createGuildEventException(obj3, c1, id);
     }
   }
 };

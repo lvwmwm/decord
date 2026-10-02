@@ -1,16 +1,16 @@
-// Module ID: 8036
-// Function ID: 8037
+// Module ID: 8040
+// Function ID: 8041
 // Name: SafetyTipsRow
-// Dependencies: [19, 17, 21, 4836, 576, 5917, 4832, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4833, 5916, 2]
 
-// Module 8036 (SafetyTipsRow)
+// Module 8040 (SafetyTipsRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4832 */;
+import nativeDefault from "native" /* 588 */;
+import Text_Text from "Text/Text" /* 4833 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,13 +19,62 @@ let _require;
 let size;
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const obj = { indexContainer: size };
+let obj = { indexContainer: size };
 size = { width: 32, height: 32, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center", marginRight: nativeDefault.space.PX_4 };
 let closure_4 = createStyles.createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/self_mod/shared/native/SafetyTipsRow.tsx");
-
-export default function SafetyTipsRow(arg0) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let description;
+  let end;
+  let index;
+  let indexContainer;
+  let tip;
+  let tmp5;
+  const obj = require("react");
+  const cResult = obj.c(10);
+  ({ index, tip, description, end } = arg0);
+  const tmp4 = closure_4();
+  const tmp = _require;
+  _require = tmp4;
+  if (cResult[0] !== tmp4) {
+    const fn = function c(children) {
+      return <View style={indexContainer.indexContainer}>{jsx(Text_Text.Text, { variant: "heading-md/semibold", color: "text-brand", children: arg0.index })}</View>;
+    };
+    cResult[0] = tmp4;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === tmp5) {
+    let tmp6;
+    if (cResult[3] === index) {
+      tmp6 = cResult[4];
+    }
+    if (cResult[5] === description) {
+      if (cResult[6] === end) {
+        if (cResult[7] === tmp6) {
+          let tmp8;
+          if (cResult[8] === tip) {
+            tmp8 = cResult[9];
+          }
+          return tmp8;
+        }
+      }
+    }
+    const tmp10 = jsx(tmp(5916).TableRow, { icon: tmp6, label: tip, subLabel: description, end });
+    cResult[5] = description;
+    cResult[6] = end;
+    cResult[7] = tmp6;
+    cResult[8] = tip;
+    cResult[9] = tmp10;
+    tmp8 = tmp10;
+  }
+  const tmp7 = <tmp5 index={index} />;
+  cResult[2] = tmp5;
+  cResult[3] = index;
+  cResult[4] = tmp7;
+  tmp6 = tmp7;
+}) : ((arg0) => {
   let description;
   let end;
   let index;
@@ -35,4 +84,8 @@ export default function SafetyTipsRow(arg0) {
   _require = closure_4();
   const TableRow = require("TableRow").TableRow;
   return <TableRow icon={null} label={tip} subLabel={description} end={end} />;
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/self_mod/shared/native/SafetyTipsRow.tsx");
+
+export default tmp3;

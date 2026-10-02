@@ -1,18 +1,18 @@
-// Module ID: 16384
-// Function ID: 16385
+// Module ID: 16386
+// Function ID: 16387
 // Name: VibegrationsSecretsSheet
-// Dependencies: [5, 32, 19, 17, 12642, 21, 4836, 576, 6402, 6610, 1115, 3715, 4800, 6618, 6570, 4832, 5281, 6024, 2]
+// Dependencies: [5, 32, 19, 17, 12644, 21, 4837, 588, 6399, 6611, 1127, 3718, 4801, 6624, 6571, 4833, 5282, 6021, 2]
 // Exports: default
 
-// Module 16384 (VibegrationsSecretsSheet)
+// Module 16386 (VibegrationsSecretsSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
+import nativeDefault from "native" /* 588 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12642 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12644 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -121,7 +121,7 @@ export default function VibegrationsSecretsSheet(projectId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -197,7 +197,7 @@ export default function VibegrationsSecretsSheet(projectId) {
           closure_128_5(false);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp33) {
         first = tmp33;
         if (0 === c3) {
@@ -213,7 +213,7 @@ export default function VibegrationsSecretsSheet(projectId) {
   }), items);
   let obj = { startExpanded: true, header: closure_9(BottomSheetTitleHeader, obj2), children: tmp16(tmp17, obj3) };
   const ActionSheet = projectId(first[13]).ActionSheet;
-  obj2 = { title: intl.string(require("module_3715").ACvhVC) };
+  obj2 = { title: intl.string(require("module_3718").ACvhVC) };
   BottomSheetTitleHeader = projectId(first[14]).BottomSheetTitleHeader;
   intl = projectId(first[10]).intl;
   obj3 = { style: tmp3.container, children: items1 };

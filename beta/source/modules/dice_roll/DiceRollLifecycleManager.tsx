@@ -1,18 +1,18 @@
-// Module ID: 17123
-// Function ID: 17124
+// Module ID: 17125
+// Function ID: 17126
 // Name: DiceRollLifecycleManager
-// Dependencies: [2045, 2099, 11441, 8602, 4829, 6539, 1115, 6876, 7095, 2]
+// Dependencies: [2051, 2102, 11317, 8599, 4830, 6540, 1127, 6880, 7099, 2]
 
-// Module 17123 (DiceRollLifecycleManager)
-import intl3 from "intl" /* 1115 */;
-import MessageConstants from "MessageConstants" /* 4829 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
-import MessageParserDefault from "MessageParser" /* 7095 */;
-import DiceRollStore2 from "DiceRollStore" /* 11441 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import DiceRollConstants from "DiceRollConstants" /* 8602 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
+// Module 17125 (DiceRollLifecycleManager)
+import intl3 from "intl" /* 1127 */;
+import MessageConstants from "MessageConstants" /* 4830 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6880 */;
+import MessageParserDefault from "MessageParser" /* 7099 */;
+import DiceRollStore2 from "DiceRollStore" /* 11317 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import DiceRollConstants from "DiceRollConstants" /* 8599 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 const DiceRollStore = DiceRollStore2;

@@ -1,17 +1,17 @@
-// Module ID: 12184
-// Function ID: 12185
+// Module ID: 12077
+// Function ID: 12078
 // Name: ContactSyncSettingsActionSheet
-// Dependencies: [19, 17, 12174, 1074, 21, 4836, 576, 8053, 1115, 4832, 12177, 6618, 2]
-// Exports: default
+// Dependencies: [19, 17, 12067, 1086, 21, 4837, 588, 558, 576, 1127, 8057, 4833, 12070, 6624, 2]
 
-// Module 12184 (ContactSyncSettingsActionSheet)
+// Module 12077 (ContactSyncSettingsActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
 import react from "react" /* 19 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12174 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12067 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -36,9 +36,137 @@ obj3 = { marginTop: 8, paddingVertical: 16, backgroundColor: nativeDefault.color
 obj4 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 obj5 = { marginTop: 8, fontSize: 14, lineHeight: 18, paddingHorizontal: 16, color: nativeDefault.colors.TEXT_SUBTLE };
 let closure_9 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncSettingsActionSheet.tsx");
-
-export default function ContactSyncSettingsActionSheet() {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let allowEmail;
+  let allowPhone;
+  let tmp8;
+  let tmp9;
+  let obj = allowPhone(allowEmail[8]);
+  const cResult = obj.c(59);
+  const tmp4 = closure_9();
+  const tmp5 = closure_6();
+  allowPhone = tmp5.allowPhone;
+  allowEmail = tmp5.allowEmail;
+  let closure_2 = tmp6;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function o(arg0) {
+      S(arg0);
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function u(arg0) {
+      closure_4(arg0);
+    };
+    cResult[1] = fn2;
+    tmp8 = fn2;
+  } else {
+    tmp8 = cResult[1];
+  }
+  let closure_4 = tmp8;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor(dependencyMap) {
+        first(dependencyMap);
+      }
+    }
+    cResult[2] = S;
+    tmp9 = S;
+  } else {
+    class S {
+      constructor(dependencyMap) {
+        first(dependencyMap);
+      }
+    }
+  }
+  S = tmp9;
+  if (cResult[3] === tmp4.formRow) {
+    let tmp11;
+    let tmp16;
+    class S {
+      constructor(dependencyMap) {
+        first(dependencyMap);
+      }
+    }
+    const _Symbol = Symbol;
+    const formText = tmp4.formText;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      class S {
+        constructor(dependencyMap) {
+          first(dependencyMap);
+        }
+      }
+      const stringResult = obj2.string(allowPhone(allowEmail[9]).t.a5QL24);
+      cResult[6] = stringResult;
+      tmp11 = stringResult;
+    } else {
+      class S {
+        constructor(dependencyMap) {
+          first(dependencyMap);
+        }
+      }
+    }
+    if (cResult[7] !== tmp4.formText) {
+      class S {
+        constructor(dependencyMap) {
+          first(dependencyMap);
+        }
+      }
+      const obj3 = { style: formText, text: tmp11 };
+      cResult[7] = tmp4.formText;
+      cResult[8] = closure_7(allowPhone(allowEmail[10]).FormRow.Label, obj3);
+      const tmp14 = closure_7(allowPhone(allowEmail[10]).FormRow.Label, obj3);
+    } else {
+      class S {
+        constructor(dependencyMap) {
+          first(dependencyMap);
+        }
+      }
+    }
+    if (cResult[9] !== (allowPhone || allowEmail)) {
+      class S {
+        constructor(dependencyMap) {
+          first(dependencyMap);
+        }
+      }
+      const obj4 = { selected: allowPhone || allowEmail };
+      const tmp19 = closure_7(allowPhone(allowEmail[10]).FormRow.Checkbox, obj4);
+      cResult[9] = allowPhone || allowEmail;
+      cResult[10] = tmp17;
+      cResult[11] = tmp19;
+      tmp16 = tmp19;
+    } else {
+      class S {
+        constructor(dependencyMap) {
+          first(dependencyMap);
+        }
+      }
+      tmp16 = cResult[11];
+    }
+    if (cResult[12] === tmp10) {
+      class S {
+        constructor(dependencyMap) {
+          first(dependencyMap);
+        }
+      }
+    }
+    const obj5 = { DEPRECATED_style: tmp10, label: tmp13, onPress: tmp15, trailing: tmp16 };
+    cResult[12] = tmp10;
+    cResult[13] = tmp13;
+    cResult[14] = tmp15;
+    cResult[15] = tmp16;
+    cResult[16] = closure_7(allowPhone(allowEmail[10]).FormRow, obj5);
+    const tmp22 = closure_7(allowPhone(allowEmail[10]).FormRow, obj5);
+  }
+  const items = [, ];
+  ({ formRow: arr[0], syncRow: arr[1] } = tmp4);
+  cResult[3] = tmp4.formRow;
+  cResult[4] = tmp4.syncRow;
+  cResult[5] = items;
+}) : (() => {
   let Label;
   let Label2;
   let Label3;
@@ -73,37 +201,37 @@ export default function ContactSyncSettingsActionSheet() {
     onPress() {
       hasOwnProperty(!closure_2);
     },
-    trailing: closure_7(allowPhone(allowEmail[7]).FormRow.Checkbox, { selected: allowPhone || allowEmail })
+    trailing: closure_7(allowPhone(allowEmail[10]).FormRow.Checkbox, { selected: allowPhone || allowEmail })
   };
   items = [, ];
   ({ formRow: arr[0], syncRow: arr[1] } = tmp);
-  const FormRow = allowPhone(allowEmail[7]).FormRow;
-  obj3 = { style: tmp.formText, text: intl.string(allowPhone(allowEmail[8]).t.a5QL24) };
-  Label = allowPhone(allowEmail[7]).FormRow.Label;
-  intl = allowPhone(allowEmail[8]).intl;
+  const FormRow = allowPhone(allowEmail[10]).FormRow;
+  obj3 = { style: tmp.formText, text: intl.string(allowPhone(allowEmail[9]).t.a5QL24) };
+  Label = allowPhone(allowEmail[10]).FormRow.Label;
+  intl = allowPhone(allowEmail[9]).intl;
   items1 = [closure_7(FormRow, obj2), , , , , , ];
-  const obj4 = { style: tmp.info, children: intl2.string(allowPhone(allowEmail[8]).t.pfjsB5) };
-  const FormText = allowPhone(allowEmail[7]).FormText;
-  intl2 = allowPhone(allowEmail[8]).intl;
+  const obj4 = { style: tmp.info, children: intl2.string(allowPhone(allowEmail[9]).t.pfjsB5) };
+  const FormText = allowPhone(allowEmail[10]).FormText;
+  intl2 = allowPhone(allowEmail[9]).intl;
   items1[1] = closure_7(FormText, obj4);
-  const obj5 = { style: tmp.info, children: intl3.string(allowPhone(allowEmail[8]).t.cW1nr9) };
-  const FormText2 = allowPhone(allowEmail[7]).FormText;
-  intl3 = allowPhone(allowEmail[8]).intl;
+  const obj5 = { style: tmp.info, children: intl3.string(allowPhone(allowEmail[9]).t.cW1nr9) };
+  const FormText2 = allowPhone(allowEmail[10]).FormText;
+  intl3 = allowPhone(allowEmail[9]).intl;
   items1[2] = closure_7(FormText2, obj5);
-  const obj6 = { style: tmp.info, children: intl4.format(allowPhone(allowEmail[8]).t.eswIfi, obj7) };
-  const FormText3 = allowPhone(allowEmail[7]).FormText;
-  intl4 = allowPhone(allowEmail[8]).intl;
+  const obj6 = { style: tmp.info, children: intl4.format(allowPhone(allowEmail[9]).t.eswIfi, obj7) };
+  const FormText3 = allowPhone(allowEmail[10]).FormText;
+  intl4 = allowPhone(allowEmail[9]).intl;
   obj7 = {
     learnMoreHook(children, arg1) {
-      const obj = { onPress: allowPhone(allowEmail[10]).handleOpenLearnMoreLink, variant: "text-sm/medium", color: "text-link", children };
-      const Text = allowPhone(allowEmail[9]).Text;
+      const obj = { onPress: allowPhone(allowEmail[12]).handleOpenLearnMoreLink, variant: "text-sm/medium", color: "text-link", children };
+      const Text = allowPhone(allowEmail[11]).Text;
       return closure_1_7(Text, obj, arg1);
     }
   };
   items1[3] = closure_7(FormText3, obj6);
-  const obj8 = { title: intl5.string(allowPhone(allowEmail[8]).t["0t2wRW"]), thinTitle: true };
-  const FormTitle = allowPhone(allowEmail[7]).FormTitle;
-  intl5 = allowPhone(allowEmail[8]).intl;
+  const obj8 = { title: intl5.string(allowPhone(allowEmail[9]).t["0t2wRW"]), thinTitle: true };
+  const FormTitle = allowPhone(allowEmail[10]).FormTitle;
+  intl5 = allowPhone(allowEmail[9]).intl;
   items1[4] = closure_7(FormTitle, obj8);
   const obj9 = {
     DEPRECATED_style: tmp.formRow,
@@ -112,15 +240,15 @@ export default function ContactSyncSettingsActionSheet() {
     onPress() {
       React3(!allowPhone);
     },
-    trailing: closure_7(allowPhone(allowEmail[7]).FormRow.Checkbox, { selected: allowPhone })
+    trailing: closure_7(allowPhone(allowEmail[10]).FormRow.Checkbox, { selected: allowPhone })
   };
-  const FormRow2 = allowPhone(allowEmail[7]).FormRow;
-  obj10 = { style: tmp.formText, text: intl6.string(allowPhone(allowEmail[8]).t["eJnn0+"]) };
-  Label2 = allowPhone(allowEmail[7]).FormRow.Label;
-  intl6 = allowPhone(allowEmail[8]).intl;
-  obj11 = { variant: "text-sm/medium", color: "text-default", children: intl7.string(allowPhone(allowEmail[8]).t.X7pIKN) };
-  Text = allowPhone(allowEmail[9]).Text;
-  intl7 = allowPhone(allowEmail[8]).intl;
+  const FormRow2 = allowPhone(allowEmail[10]).FormRow;
+  obj10 = { style: tmp.formText, text: intl6.string(allowPhone(allowEmail[9]).t["eJnn0+"]) };
+  Label2 = allowPhone(allowEmail[10]).FormRow.Label;
+  intl6 = allowPhone(allowEmail[9]).intl;
+  obj11 = { variant: "text-sm/medium", color: "text-default", children: intl7.string(allowPhone(allowEmail[9]).t.X7pIKN) };
+  Text = allowPhone(allowEmail[11]).Text;
+  intl7 = allowPhone(allowEmail[9]).intl;
   items1[5] = closure_7(FormRow2, obj9);
   const obj12 = {
     DEPRECATED_style: tmp.formRow,
@@ -129,16 +257,19 @@ export default function ContactSyncSettingsActionSheet() {
     onPress() {
       _false(!allowEmail);
     },
-    trailing: closure_7(allowPhone(allowEmail[7]).FormRow.Checkbox, { selected: allowEmail })
+    trailing: closure_7(allowPhone(allowEmail[10]).FormRow.Checkbox, { selected: allowEmail })
   };
-  const FormRow3 = allowPhone(allowEmail[7]).FormRow;
-  obj13 = { style: tmp.formText, text: intl8.string(allowPhone(allowEmail[8]).t.dI4d4S) };
-  Label3 = allowPhone(allowEmail[7]).FormRow.Label;
-  intl8 = allowPhone(allowEmail[8]).intl;
-  obj14 = { variant: "text-sm/medium", color: "text-default", children: intl9.string(allowPhone(allowEmail[8]).t.ilGsHE) };
-  Text2 = allowPhone(allowEmail[9]).Text;
-  intl9 = allowPhone(allowEmail[8]).intl;
+  const FormRow3 = allowPhone(allowEmail[10]).FormRow;
+  obj13 = { style: tmp.formText, text: intl8.string(allowPhone(allowEmail[9]).t.dI4d4S) };
+  Label3 = allowPhone(allowEmail[10]).FormRow.Label;
+  intl8 = allowPhone(allowEmail[9]).intl;
+  obj14 = { variant: "text-sm/medium", color: "text-default", children: intl9.string(allowPhone(allowEmail[9]).t.ilGsHE) };
+  Text2 = allowPhone(allowEmail[11]).Text;
+  intl9 = allowPhone(allowEmail[9]).intl;
   items1[6] = closure_7(FormRow3, obj12);
   const children = closure_8(closure_2, obj);
-  return closure_7(allowPhone(allowEmail[11]).ActionSheet, { startExpanded: true, children });
-};
+  return closure_7(allowPhone(allowEmail[13]).ActionSheet, { startExpanded: true, children });
+});
+const result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncSettingsActionSheet.tsx");
+
+export default tmp6;

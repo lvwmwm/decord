@@ -1,27 +1,128 @@
-// Module ID: 11468
-// Function ID: 11469
+// Module ID: 11344
+// Function ID: 11345
 // Name: ScheduledMessageDraftCoachmarkHooks
-// Dependencies: [32, 19, 5589, 5200, 2042, 2029, 4654, 504, 2031, 2]
-// Exports: useScheduledMessageDraftCoachmarkState
+// Dependencies: [32, 19, 5590, 5201, 2048, 2035, 558, 576, 4656, 504, 2037, 2]
 
-// Module 11468 (ScheduledMessageDraftCoachmarkHooks)
-import dismissible_content from "dismissible_content" /* 2029 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2031 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4654 */;
+// Module 11344 (ScheduledMessageDraftCoachmarkHooks)
+import dismissible_content from "dismissible_content" /* 2035 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2037 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4656 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
-import DraftStore from "DraftStore" /* 5200 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import DraftStore from "DraftStore" /* 5201 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
+let channel, dependencyMap;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let closure_7 = dismissible_content.DismissibleContent.SCHEDULED_MESSAGES_DRAFT_COACHMARK;
-let result = size.fileFinishedImporting("modules/scheduled_messages/ScheduledMessageDraftCoachmarkHooks.tsx");
-
-export const useScheduledMessageDraftCoachmarkState = function useScheduledMessageDraftCoachmarkState(channel) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let connected;
+  let draftText;
+  let first;
+  let isEligible;
+  let tmp10;
+  let tmp7;
+  let tmp9;
+  let tmp = channel;
+  let tmp2 = dependencyMap;
+  let obj = channel(576);
+  const cResult = obj.c(25);
+  channel = channel.channel;
+  ({ draftText, isEligible } = channel);
+  let obj2 = channel(4656);
+  let result = obj2.useIsDismissibleContentDismissed_UNSAFE(closure_7);
+  dependencyMap = result;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [DraftStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channel.id) {
+    class C {
+      constructor() {
+        return null != closure_5.getScheduledMessage(channel.id);
+      }
+    }
+    cResult[1] = channel.id;
+    cResult[2] = C;
+    tmp7 = C;
+  } else {
+    class C {
+      constructor() {
+        return null != closure_5.getScheduledMessage(channel.id);
+      }
+    }
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor() {
+        return null != closure_5.getScheduledMessage(channel.id);
+      }
+    }
+    const items1 = [GatewayConnectionStore];
+    class E {
+      constructor() {
+        return closure_4.isConnected();
+      }
+    }
+    cResult[3] = items1;
+    cResult[4] = E;
+    tmp10 = E;
+    tmp9 = items1;
+  } else {
+    class C {
+      constructor() {
+        return null != closure_5.getScheduledMessage(channel.id);
+      }
+    }
+    tmp10 = cResult[4];
+  }
+  const tmpResult2 = tmp(504);
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp10);
+  if (cResult[5] === draftText) {
+    class C {
+      constructor() {
+        return null != closure_5.getScheduledMessage(channel.id);
+      }
+    }
+  }
+  let tmp12 = isEligible;
+  if (tmp12) {
+    class C {
+      constructor() {
+        return null != closure_5.getScheduledMessage(channel.id);
+      }
+    }
+    tmp12 = draftText.trim().length > 10;
+  }
+  if (tmp12) {
+    class C {
+      constructor() {
+        return null != closure_5.getScheduledMessage(channel.id);
+      }
+    }
+  }
+  if (tmp12) {
+    class C {
+      constructor() {
+        return null != closure_5.getScheduledMessage(channel.id);
+      }
+    }
+  }
+  cResult[5] = draftText;
+  cResult[6] = stateFromStores;
+  cResult[7] = stateFromStores1;
+  cResult[8] = isEligible;
+  cResult[9] = tmp12;
+}) : ((channel) => {
   let c1;
   let draftText;
   let isEligible;
@@ -31,7 +132,7 @@ export const useScheduledMessageDraftCoachmarkState = function useScheduledMessa
   let first;
   let connected;
   let isCoachmarkVisible;
-  let obj = channel(4654);
+  let obj = channel(4656);
   let result = obj.useIsDismissibleContentDismissed_UNSAFE(closure_7);
   dependencyMap = result;
   let obj2 = channel(504);
@@ -97,4 +198,7 @@ export const useScheduledMessageDraftCoachmarkState = function useScheduledMessa
     }
   }, items3);
   return { isCoachmarkVisible, dismissCoachmark };
-};
+});
+let result = size.fileFinishedImporting("modules/scheduled_messages/ScheduledMessageDraftCoachmarkHooks.tsx");
+
+export const useScheduledMessageDraftCoachmarkState = tmp2;

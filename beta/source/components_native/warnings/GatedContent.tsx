@@ -1,15 +1,15 @@
-// Module ID: 12163
-// Function ID: 12164
+// Module ID: 12058
+// Function ID: 12059
 // Name: GatedContent
-// Dependencies: [19, 21, 4836, 576, 7861, 5281, 5279, 4832, 5745, 2]
-// Exports: default
+// Dependencies: [19, 21, 4837, 588, 558, 576, 7865, 5282, 4833, 5280, 5746, 2]
 
-// Module 12163 (GatedContent)
-import nativeDefault from "native" /* 576 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7861 */;
+// Module 12058 (GatedContent)
+import nativeDefault from "native" /* 588 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7865 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -19,9 +19,173 @@ let obj2;
 let obj = { container: obj2, title: { textAlign: "center" }, description: { textAlign: "center" }, buttonGroup: { width: "100%", maxWidth: 400 } };
 obj2 = { flex: 1, padding: 20, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, textAlign: "center" };
 let closure_5 = createStyles.createStyles(obj);
-let result = size.fileFinishedImporting("components_native/warnings/GatedContent.tsx");
-
-export default function GatedContent(onAgree) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDisagree) => {
+  let agreement;
+  let agreementButtonVariant;
+  let description;
+  let disagreement;
+  let disagreementButtonVariant;
+  let onAgree;
+  let subtitle;
+  let title;
+  let obj = onAgree(onDisagree[5]);
+  const cResult = obj.c(45);
+  ({ title, subtitle, description, agreement, agreementButtonVariant, disagreement, disagreementButtonVariant, onAgree } = onDisagree);
+  onDisagree = onDisagree.onDisagree;
+  const modalType = onDisagree.modalType;
+  const channelId = onDisagree.channelId;
+  const guildId = onDisagree.guildId;
+  let str = "primary";
+  if (undefined !== agreementButtonVariant) {
+    str = agreementButtonVariant;
+  }
+  let str2 = "secondary";
+  if (undefined !== disagreementButtonVariant) {
+    str2 = disagreementButtonVariant;
+  }
+  const tmp4 = closure_5();
+  if (cResult[0] === channelId) {
+    if (cResult[1] === guildId) {
+      let tmp5;
+      let tmp6;
+      if (cResult[2] === modalType) {
+        tmp5 = cResult[3];
+        tmp6 = cResult[4];
+      }
+      const effect = modalType.useEffect(tmp5, tmp6);
+      if (cResult[5] === channelId) {
+        if (cResult[6] === guildId) {
+          if (cResult[7] === modalType) {
+            let tmp9;
+            if (cResult[8] === onDisagree) {
+              tmp9 = cResult[9];
+            }
+            if (cResult[10] === channelId) {
+              if (cResult[11] === guildId) {
+                if (cResult[12] === modalType) {
+                  let tmp10;
+                  if (cResult[13] === onAgree) {
+                    tmp10 = cResult[14];
+                  }
+                  if (cResult[15] === agreement) {
+                    if (cResult[16] === str) {
+                      if (cResult[17] === tmp10) {
+                        if (cResult[20] === disagreement) {
+                          if (cResult[21] === str2) {
+                            class G {
+                              constructor() {
+                                const obj = AgeVerificationAnalyticsUtils;
+                                const result = obj.trackNsfwSpaceWarningModalClicked(AgeVerificationAnalyticsUtils.NsfwSpaceWarningModalCta.NSFW_CHANNEL_AGREE_CTA, modalType, channelId, guildId);
+                                if (onAgree != null) {
+                                  onAgree();
+                                }
+                              }
+                            }
+                            const obj2 = { variant: "heading-xxl/bold", maxFontSizeMultiplier: 2, style: tmp4.title, children: title };
+                            cResult[24] = tmp4.title;
+                            cResult[25] = title;
+                            cResult[26] = channelId(onAgree(onDisagree[8]).Text, obj2);
+                            const tmp19 = channelId(onAgree(onDisagree[8]).Text, obj2);
+                          }
+                        }
+                        class G {
+                          constructor() {
+                            const obj = AgeVerificationAnalyticsUtils;
+                            const result = obj.trackNsfwSpaceWarningModalClicked(AgeVerificationAnalyticsUtils.NsfwSpaceWarningModalCta.NSFW_CHANNEL_AGREE_CTA, modalType, channelId, guildId);
+                            if (onAgree != null) {
+                              onAgree();
+                            }
+                          }
+                        }
+                        const obj3 = { variant: str2, text: disagreement, onPress: tmp9 };
+                        cResult[20] = disagreement;
+                        cResult[21] = str2;
+                        cResult[22] = tmp9;
+                        cResult[23] = channelId(onAgree(onDisagree[7]).Button, obj3, "disagree");
+                        const tmp15 = channelId(onAgree(onDisagree[7]).Button, obj3, "disagree");
+                      }
+                    }
+                  }
+                  class G {
+                    constructor() {
+                      const obj = AgeVerificationAnalyticsUtils;
+                      const result = obj.trackNsfwSpaceWarningModalClicked(AgeVerificationAnalyticsUtils.NsfwSpaceWarningModalCta.NSFW_CHANNEL_AGREE_CTA, modalType, channelId, guildId);
+                      if (onAgree != null) {
+                        onAgree();
+                      }
+                    }
+                  }
+                  let tmp12 = null;
+                  if (null != agreement) {
+                    tmp12 = null;
+                    if (null != onAgree) {
+                      const obj4 = { variant: null, onPress: tmp10, text: agreement };
+                      class G {
+                        constructor() {
+                          const obj = AgeVerificationAnalyticsUtils;
+                          const result = obj.trackNsfwSpaceWarningModalClicked(AgeVerificationAnalyticsUtils.NsfwSpaceWarningModalCta.NSFW_CHANNEL_AGREE_CTA, modalType, channelId, guildId);
+                          if (onAgree != null) {
+                            onAgree();
+                          }
+                        }
+                      }
+                      tmp12 = channelId(tmp(tmp2[7]).Button, obj4, "agree");
+                    }
+                  }
+                  cResult[15] = agreement;
+                  cResult[16] = str;
+                  cResult[17] = tmp10;
+                  cResult[18] = onAgree;
+                  cResult[19] = tmp12;
+                }
+              }
+            }
+            class G {
+              constructor() {
+                const obj = AgeVerificationAnalyticsUtils;
+                const result = obj.trackNsfwSpaceWarningModalClicked(AgeVerificationAnalyticsUtils.NsfwSpaceWarningModalCta.NSFW_CHANNEL_AGREE_CTA, modalType, channelId, guildId);
+                if (onAgree != null) {
+                  onAgree();
+                }
+              }
+            }
+            cResult[10] = channelId;
+            cResult[11] = guildId;
+            cResult[12] = modalType;
+            cResult[13] = onAgree;
+            cResult[14] = G;
+            tmp10 = G;
+          }
+        }
+      }
+      const fn2 = function p() {
+        const obj = AgeVerificationAnalyticsUtils;
+        const result = obj.trackNsfwSpaceWarningModalClicked(AgeVerificationAnalyticsUtils.NsfwSpaceWarningModalCta.NSFW_CHANNEL_DISAGREE_CTA, modalType, channelId, guildId);
+        if (onDisagree != null) {
+          onDisagree();
+        }
+      };
+      cResult[5] = channelId;
+      cResult[6] = guildId;
+      cResult[7] = modalType;
+      cResult[8] = onDisagree;
+      cResult[9] = fn2;
+      tmp9 = fn2;
+    }
+  }
+  const fn = function s() {
+    const obj = AgeVerificationAnalyticsUtils;
+    const result = obj.trackNsfwSpaceWarningModalViewed(modalType, channelId, guildId);
+  };
+  const items = [modalType, channelId, guildId];
+  cResult[0] = channelId;
+  cResult[1] = guildId;
+  cResult[2] = modalType;
+  cResult[3] = fn;
+  cResult[4] = items;
+  tmp6 = items;
+  tmp5 = fn;
+}) : ((onAgree) => {
   let agreement;
   let agreementButtonVariant;
   let description;
@@ -64,20 +228,20 @@ export default function GatedContent(onAgree) {
     tmp5 = null;
     if (null != onAgree) {
       let obj = { variant: agreementButtonVariant, onPress: tmp4, text: agreement };
-      tmp5 = channelId(onAgree(onDisagree[5]).Button, obj, "agree");
+      tmp5 = channelId(onAgree(onDisagree[7]).Button, obj, "agree");
     }
   }
-  const tmp10 = channelId(onAgree(onDisagree[5]).Button, { variant: disagreementButtonVariant, text: disagreement, onPress: callback }, "disagree");
+  const tmp10 = channelId(onAgree(onDisagree[7]).Button, { variant: disagreementButtonVariant, text: disagreement, onPress: callback }, "disagree");
   const obj2 = { spacing: 16, style: tmp.container, children: null };
-  const Stack = onAgree(onDisagree[6]).Stack;
+  const Stack = onAgree(onDisagree[9]).Stack;
   const obj3 = { align: "center", children: items3 };
-  const Stack2 = onAgree(onDisagree[6]).Stack;
+  const Stack2 = onAgree(onDisagree[9]).Stack;
   items3 = [, , ];
   const obj4 = { variant: "heading-xxl/bold", maxFontSizeMultiplier: 2, style: tmp.title, children: title };
-  items3[0] = channelId(onAgree(onDisagree[7]).Text, obj4);
+  items3[0] = channelId(onAgree(onDisagree[8]).Text, obj4);
   items3[1] = subtitle;
   const obj5 = { color: "text-muted", variant: "text-md/medium", style: tmp.description, maxFontSizeMultiplier: 2, children: description };
-  items3[2] = channelId(onAgree(onDisagree[7]).Text, obj5);
+  items3[2] = channelId(onAgree(onDisagree[8]).Text, obj5);
   const items4 = [guildId(Stack2, obj3), ];
   const obj6 = { style: tmp.buttonGroup, children: null };
   const tmp11 = guildId;
@@ -94,4 +258,7 @@ export default function GatedContent(onAgree) {
     return tmp11(Stack, obj2);
   }
   items6 = [tmp5, tmp10];
-};
+});
+let result = size.fileFinishedImporting("components_native/warnings/GatedContent.tsx");
+
+export default tmp3;

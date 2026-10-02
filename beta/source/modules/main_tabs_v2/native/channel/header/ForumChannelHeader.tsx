@@ -1,24 +1,95 @@
-// Module ID: 12851
-// Function ID: 12852
+// Module ID: 12853
+// Function ID: 12854
 // Name: ForumChannelHeader
-// Dependencies: [19, 17, 7289, 21, 4836, 12852, 12834, 12853, 2]
+// Dependencies: [19, 17, 7293, 21, 4837, 558, 576, 12854, 12836, 12855, 2]
 
-// Module 12851 (ForumChannelHeader)
+// Module 12853 (ForumChannelHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react_native2 from "react-native" /* 7289 */;
-import useIsForumChannelSearchActive from "useIsForumChannelSearchActive" /* 12852 */;
-import GuildChannelHeaderDefault from "GuildChannelHeader" /* 12853 */;
+import react2 from "react" /* 576 */;
+import react_native2 from "react-native" /* 7293 */;
+import useIsForumChannelSearchActive from "useIsForumChannelSearchActive" /* 12854 */;
+import GuildChannelHeaderDefault from "GuildChannelHeader" /* 12855 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const ForumChannelSearch = tmp(12836);
 const View = react_native.View;
 const MIN_HEADER_HEIGHT = react_native2.MIN_HEADER_HEIGHT;
 const jsx = Fragment.jsx;
 let obj = { search: { flex: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", paddingStart: 4, height: MIN_HEADER_HEIGHT } };
 let closure_5 = createStyles.createStyles(obj);
-const memoResult = react.memo((arg0) => {
+const memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let channelId;
+  let guildId;
+  let isGuildMemberCountVisible;
+  let isNavigationScreen;
+  let pressable;
+  let screenIndex;
+  let searchPlaceholder;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(14);
+  ({ channelId, screenIndex, guildId, pressable, isGuildMemberCountVisible, isNavigationScreen, searchPlaceholder } = arg0);
+  const tmp4 = closure_5();
+  const obj2 = useIsForumChannelSearchActive;
+  if (obj2.useIsForumChannelSearchActive(channelId)) {
+    if (cResult[0] === channelId) {
+      if (cResult[1] === guildId) {
+        let tmp9;
+        if (cResult[2] === searchPlaceholder) {
+          tmp9 = cResult[3];
+        }
+        if (cResult[4] === tmp4.search) {
+          let tmp12;
+          if (cResult[5] === tmp9) {
+            tmp12 = cResult[6];
+          }
+          tmp5 = tmp12;
+        }
+        const tmp15 = <View style={tmp4.search}>{tmp9}</View>;
+        cResult[4] = tmp4.search;
+        cResult[5] = tmp9;
+        cResult[6] = tmp15;
+        tmp12 = tmp15;
+      }
+    }
+    const tmp11 = jsx(ForumChannelSearch.ForumChannelSearchInput, { channelId, guildId, placeholder: searchPlaceholder });
+    cResult[0] = channelId;
+    cResult[1] = guildId;
+    cResult[2] = searchPlaceholder;
+    cResult[3] = tmp11;
+    tmp9 = tmp11;
+  } else {
+    if (cResult[7] === channelId) {
+      if (cResult[8] === guildId) {
+        if (cResult[9] === isGuildMemberCountVisible) {
+          if (cResult[10] === isNavigationScreen) {
+            if (cResult[11] === pressable) {
+              if (cResult[12] === screenIndex) {
+                tmp5 = cResult[13];
+              }
+            }
+          }
+        }
+      }
+    }
+    const tmp8 = jsx(GuildChannelHeaderDefault, { channelId, guildId, pressable, isGuildMemberCountVisible, isNavigationScreen, screenIndex });
+    cResult[7] = channelId;
+    cResult[8] = guildId;
+    cResult[9] = isGuildMemberCountVisible;
+    cResult[10] = isNavigationScreen;
+    cResult[11] = pressable;
+    cResult[12] = screenIndex;
+    cResult[13] = tmp8;
+    tmp5 = tmp8;
+  }
+  return tmp5;
+}) : ((arg0) => {
   let channelId;
   let guildId;
   let isGuildMemberCountVisible;
@@ -39,7 +110,7 @@ const memoResult = react.memo((arg0) => {
     tmp4Result = tmp4(GuildChannelHeaderDefault, obj4);
   }
   return tmp4Result;
-});
+}));
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/channel/header/ForumChannelHeader.tsx");
 
 export default memoResult;

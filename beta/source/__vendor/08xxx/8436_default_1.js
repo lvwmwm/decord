@@ -1,11 +1,11 @@
 // Module ID: 8436
 // Function ID: 8437
 // Name: default_1
-// Dependencies: [8403]
+// Dependencies: [8400]
 // Exports: default
 
 // Module 8436 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 8403 */;
+import captureStackTrace2 from "captureStackTrace" /* 8400 */;
 
 let hasOwnProperty;
 
@@ -89,25 +89,14 @@ let tmp5 = self && self.__importStar || ((__esModule) => {
   return obj;
 });
 const captureStackTrace = tmp5(captureStackTrace2);
-function capitalizeFirstCharacter(arg0) {
-
-}
 function error() {
 
 }
 
 export default function default_1() {
-  let obj3;
-  let obj5;
-  let obj7;
-  let obj9;
   if (typeof error === "function") {
     let obj = {
       localeError: (code) => {
-          let bigger;
-          let smaller;
-          let str27;
-          let str48;
           switch (code.code) {
             case "invalid_type":
             {
@@ -117,13 +106,13 @@ export default function default_1() {
                 expected = code.expected;
               }
               const parsedTypeResult = captureStackTrace.parsedType(code.input);
-              const obj3 = /^[A-Z]/;
-              if (obj3.test(code.expected)) {
-                const _HermesInternal16 = HermesInternal;
-                combined = "Gautas tipas " + tmp82 + ", o tik\u0117tasi - instanceof " + code.expected;
+              const obj = /^[A-Z]/;
+              if (obj.test(code.expected)) {
+                const _HermesInternal17 = HermesInternal;
+                combined = "Ongeldige invoer: verwacht instanceof " + code.expected + ", ontving " + tmp52;
               } else {
-                const _HermesInternal15 = HermesInternal;
-                combined = "Gautas tipas " + tmp82 + ", o tik\u0117tasi - " + expected;
+                const _HermesInternal16 = HermesInternal;
+                combined = "Ongeldige invoer: verwacht " + expected + ", ontving " + tmp52;
               }
               return combined;
             }
@@ -131,277 +120,140 @@ export default function default_1() {
             {
               let combined1;
               if (1 === code.values.length) {
-                const _HermesInternal14 = HermesInternal;
-                combined1 = "Privalo b\u016Bti " + captureStackTrace.stringifyPrimitive(code.values[0]);
+                const _HermesInternal15 = HermesInternal;
+                combined1 = "Ongeldige invoer: verwacht " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
-                const _HermesInternal13 = HermesInternal;
-                combined1 = "Privalo b\u016Bti vienas i\u0161 " + captureStackTrace.joinValues(code.values, "|") + " pasirinkim\u0173";
+                const _HermesInternal14 = HermesInternal;
+                combined1 = "Ongeldige optie: verwacht \u00E9\u00E9n van " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
             case "too_big":
             {
-              let str46;
-              let str45 = closure_2[code.origin] ?? code.origin;
-              const _Number2 = Number;
-              const origin2 = code.origin;
-              const _Math2 = Math;
-              const absolute = Math.abs(Number(code.maximum));
-              const result = absolute % 10;
-              const result1 = absolute % 100;
-              if (11 > result1) {
-                str46 = "many";
-                if (0 !== result) {
-                  let str47 = "few";
-                  if (1 === result) {
-                    str47 = "one";
-                  }
-                  str46 = str47;
-                }
-              } else {
-                str46 = "many";
-              }
-              let tmp54 = tmp53;
-              const flag2 = code.inclusive ?? false;
-              if (null !== (obj2[origin2] ?? null)) {
-                obj2 = { unit: (obj2[origin2] ?? null).unit[str46], verb: smaller[str48] };
-                str48 = "notInclusive";
-                smaller = tmp53.verb.smaller;
-                if (flag2) {
-                  str48 = "inclusive";
-                }
-                tmp54 = obj2;
-              }
-              let verb1;
-              if (tmp54 != null) {
-                verb1 = tmp54.verb;
-              }
-              if (verb1) {
-                const tmp65 = capitalizeFirstCharacter;
-                if (str45 == null) {
-                  str45 = code.origin;
-                }
-                if (str45 == null) {
-                  str45 = "reik\u0161m\u0117";
-                }
-                if (typeof tmp65 === "function") {
-                  const str58 = str45.charAt(0);
-                  const formatted = str58.toUpperCase();
-                  const sum = formatted + str45.slice(1);
-                  const verb2 = tmp54.verb;
-                  const str59 = code.maximum;
-                  const _HermesInternal12 = HermesInternal;
-                  const str1 = str59.toString();
-                  const str60 = tmp54.unit ?? "element\u0173";
-                  return "" + sum + " " + verb2 + " " + str1 + " " + str60;
-                } else {
-                  throw new TypeError("Trying to call a non-function");
-                }
-              } else {
-                let str49 = "ma\u017Eesnis kaip";
-                if (code.inclusive) {
-                  str49 = "ne didesnis kaip";
-                }
-                let str50 = str45;
-                const tmp56 = capitalizeFirstCharacter;
-                if (str45 == null) {
-                  str50 = code.origin;
-                }
-                if (str50 == null) {
-                  str50 = "reik\u0161m\u0117";
-                }
-                if (typeof tmp56 === "function") {
-                  const str51 = str50.charAt(0);
-                  const formatted1 = str51.toUpperCase();
-                  const sum1 = formatted1 + str50.slice(1);
-                  const str52 = code.maximum;
-                  let unit;
-                  const str82 = str52.toString();
-                  if (tmp54 != null) {
-                    unit = tmp54.unit;
-                  }
-                  const _HermesInternal11 = HermesInternal;
-                  return "" + sum1 + " turi b\u016Bti " + str49 + " " + str82 + " " + unit;
-                } else {
-                  throw new TypeError("Trying to call a non-function");
-                }
-              }
-              break;
-            }
-            case "too_small":
-            {
-              let str25;
-              let str24 = closure_2[code.origin] ?? code.origin;
-              const _Number = Number;
-              const origin = code.origin;
-              const _Math = Math;
-              const absolute1 = Math.abs(Number(code.minimum));
-              const result2 = absolute1 % 10;
-              const result3 = absolute1 % 100;
-              if (11 > result3) {
-                str25 = "many";
-                if (0 !== result2) {
-                  let str26 = "few";
-                  if (1 === result2) {
-                    str26 = "one";
-                  }
-                  str25 = str26;
-                }
-              } else {
-                str25 = "many";
-              }
-              let tmp27 = tmp26;
-              const flag = code.inclusive ?? false;
-              if (null !== (obj2[origin] ?? null)) {
-                const obj = { unit: (obj2[origin] ?? null).unit[str25], verb: bigger[str27] };
-                str27 = "notInclusive";
-                bigger = tmp26.verb.bigger;
-                if (flag) {
-                  str27 = "inclusive";
-                }
-                tmp27 = obj;
-              }
-              let verb3;
-              if (tmp27 != null) {
-                verb3 = tmp27.verb;
-              }
-              if (verb3) {
-                const tmp38 = capitalizeFirstCharacter;
-                if (str24 == null) {
-                  str24 = code.origin;
-                }
-                if (str24 == null) {
-                  str24 = "reik\u0161m\u0117";
-                }
-                if (typeof tmp38 === "function") {
-                  const str37 = str24.charAt(0);
-                  const formatted2 = str37.toUpperCase();
-                  const sum2 = formatted2 + str24.slice(1);
-                  const verb = tmp27.verb;
-                  const str38 = code.minimum;
-                  const _HermesInternal10 = HermesInternal;
-                  const str39 = tmp27.unit ?? "element\u0173";
-                  const str83 = str38.toString();
-                  return "" + sum2 + " " + verb + " " + str83 + " " + str39;
-                } else {
-                  throw new TypeError("Trying to call a non-function");
-                }
-              } else {
-                let str28 = "didesnis kaip";
-                if (code.inclusive) {
-                  str28 = "ne ma\u017Eesnis kaip";
-                }
-                let str29 = str24;
-                const tmp29 = capitalizeFirstCharacter;
-                if (str24 == null) {
-                  str29 = code.origin;
-                }
-                if (str29 == null) {
-                  str29 = "reik\u0161m\u0117";
-                }
-                if (typeof tmp29 === "function") {
-                  const str30 = str29.charAt(0);
-                  const formatted3 = str30.toUpperCase();
-                  const sum3 = formatted3 + str29.slice(1);
-                  const str31 = code.minimum;
-                  let unit1;
-                  const str84 = str31.toString();
-                  if (tmp27 != null) {
-                    unit1 = tmp27.unit;
-                  }
-                  const _HermesInternal9 = HermesInternal;
-                  return "" + sum3 + " turi b\u016Bti " + str28 + " " + str84 + " " + unit1;
-                } else {
-                  throw new TypeError("Trying to call a non-function");
-                }
-              }
-              break;
-            }
-            case "invalid_format":
-            {
               let combined2;
-              if ("starts_with" === code.format) {
-                const _HermesInternal8 = HermesInternal;
-                combined2 = "Eilut\u0117 privalo prasid\u0117ti \"" + code.prefix + "\"";
-              } else if ("ends_with" === code.format) {
-                const _HermesInternal7 = HermesInternal;
-                combined2 = "Eilut\u0117 privalo pasibaigti \"" + code.suffix + "\"";
-              } else if ("includes" === code.format) {
-                const _HermesInternal6 = HermesInternal;
-                combined2 = "Eilut\u0117 privalo \u012Ftraukti \"" + code.includes + "\"";
-              } else if ("regex" === code.format) {
-                const _HermesInternal5 = HermesInternal;
-                combined2 = "Eilut\u0117 privalo atitikti " + code.pattern;
+              let str34 = "<";
+              if (code.inclusive) {
+                str34 = "<=";
+              }
+              let str35 = "laat";
+              if ("date" !== code.origin) {
+                let str37 = "groot";
+                if ("string" === code.origin) {
+                  str37 = "lang";
+                }
+                str35 = str37;
+              }
+              let str39 = code.origin;
+              if (obj2[code.origin] ?? null) {
+                if (str39 == null) {
+                  str39 = "waarde";
+                }
+                const str46 = code.maximum;
+                const _HermesInternal13 = HermesInternal;
+                const str1 = str46.toString();
+                const str47 = (obj2[code.origin] ?? null).unit ?? "elementen";
+                combined2 = "Te " + str35 + ": verwacht dat " + str39 + " " + str34 + str1 + " " + str47 + " " + tmp29.verb;
               } else {
-                const format = closure_1[code.format] ?? code.format;
-                const _HermesInternal4 = HermesInternal;
-                combined2 = "Neteisingas " + format;
+                let str40 = str39;
+                if (str39 == null) {
+                  str40 = "waarde";
+                }
+                const _HermesInternal12 = HermesInternal;
+                const str41 = code.maximum;
+                combined2 = "Te " + str35 + ": verwacht dat " + str40 + " " + str34 + str41.toString() + " is";
               }
               return combined2;
             }
+            case "too_small":
+            {
+              let combined3;
+              let minimum;
+              let origin;
+              let str19 = ">";
+              if (code.inclusive) {
+                str19 = ">=";
+              }
+              let str20 = "vroeg";
+              if ("date" !== code.origin) {
+                let str22 = "klein";
+                if ("string" === code.origin) {
+                  str22 = "kort";
+                }
+                str20 = str22;
+              }
+              ({ origin, minimum } = code);
+              const str64 = minimum.toString();
+              if (obj2[code.origin] ?? null) {
+                const _HermesInternal11 = HermesInternal;
+                combined3 = "Te " + str20 + ": verwacht dat " + origin + " " + str19 + str64 + " " + tmp15.unit + " " + tmp15.verb;
+              } else {
+                const _HermesInternal10 = HermesInternal;
+                combined3 = "Te " + str20 + ": verwacht dat " + origin + " " + str19 + str64 + " is";
+              }
+              return combined3;
+            }
+            case "invalid_format":
+            {
+              let combined4;
+              if ("starts_with" === code.format) {
+                const _HermesInternal9 = HermesInternal;
+                combined4 = "Ongeldige tekst: moet met \"" + code.prefix + "\" beginnen";
+              } else if ("ends_with" === code.format) {
+                const _HermesInternal8 = HermesInternal;
+                combined4 = "Ongeldige tekst: moet op \"" + code.suffix + "\" eindigen";
+              } else if ("includes" === code.format) {
+                const _HermesInternal7 = HermesInternal;
+                combined4 = "Ongeldige tekst: moet \"" + code.includes + "\" bevatten";
+              } else if ("regex" === code.format) {
+                const _HermesInternal6 = HermesInternal;
+                combined4 = "Ongeldige tekst: moet overeenkomen met patroon " + code.pattern;
+              } else {
+                const format = closure_1[code.format] ?? code.format;
+                const _HermesInternal5 = HermesInternal;
+                combined4 = "Ongeldig: " + format;
+              }
+              return combined4;
+            }
             case "not_multiple_of":
             {
-              const _HermesInternal3 = HermesInternal;
-              return "Skai\u010Dius privalo b\u016Bti " + code.divisor + " kartotinis.";
+              const _HermesInternal4 = HermesInternal;
+              return "Ongeldig getal: moet een veelvoud van " + code.divisor + " zijn";
             }
             case "unrecognized_keys":
             {
-              let str6 = "as";
-              let str7 = "as";
+              let str3 = "";
               if (code.keys.length > 1) {
-                str7 = "i";
+                str3 = "s";
               }
-              if (code.keys.length > 1) {
-                str6 = "ai";
-              }
-              const _HermesInternal2 = HermesInternal;
-              return "Neatpa\u017Eint" + str7 + " rakt" + str6 + ": " + captureStackTrace.joinValues(code.keys, ", ");
+              const _HermesInternal3 = HermesInternal;
+              return "Onbekende key" + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
-              return "Rastas klaidingas raktas";
+              const _HermesInternal2 = HermesInternal;
+              return "Ongeldige key in " + code.origin;
             }
             case "invalid_union":
             {
-              return "Klaidinga \u012Fvestis";
+              return "Ongeldige invoer";
             }
             case "invalid_element":
             {
-              let str = closure_2[code.origin] ?? code.origin;
-              const tmp3 = capitalizeFirstCharacter;
-              if (str == null) {
-                str = code.origin;
-              }
-              if (str == null) {
-                str = "reik\u0161m\u0117";
-              }
-              if (typeof tmp3 === "function") {
-                const str2 = str.charAt(0);
-                const formatted4 = str2.toUpperCase();
-                const _HermesInternal = HermesInternal;
-                return "" + formatted4 + str.slice(1) + " turi klaiding\u0105 \u012Fvest\u012F";
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-              break;
+              const _HermesInternal = HermesInternal;
+              return "Ongeldige waarde in " + code.origin;
             }
             default:
             {
-              return "Klaidinga \u012Fvestis";
+              return "Ongeldige invoer";
             }
           }
         }
     };
-    let obj2 = { string: obj3, file: obj5, array: obj7, set: obj9 };
-    obj3 = { unit: { one: "simbolis", few: "simboliai", many: "simboli\u0173" }, verb: obj4 };
-    obj5 = { unit: { one: "baitas", few: "baitai", many: "bait\u0173" }, verb: obj6 };
-    obj7 = { unit: { one: "element\u0105", few: "elementus", many: "element\u0173" }, verb: obj8 };
-    obj9 = { unit: { one: "element\u0105", few: "elementus", many: "element\u0173" }, verb: obj10 };
-    closure_1 = { regex: "\u012Fvestis", email: "el. pa\u0161to adresas", url: "URL", emoji: "jaustukas", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO data ir laikas", date: "ISO data", time: "ISO laikas", duration: "ISO trukm\u0117", ipv4: "IPv4 adresas", ipv6: "IPv6 adresas", cidrv4: "IPv4 tinklo prefiksas (CIDR)", cidrv6: "IPv6 tinklo prefiksas (CIDR)", base64: "base64 u\u017Ekoduota eilut\u0117", base64url: "base64url u\u017Ekoduota eilut\u0117", json_string: "JSON eilut\u0117", e164: "E.164 numeris", jwt: "JWT", template_literal: "\u012Fvestis" };
-    let closure_2 = { nan: "NaN", number: "skai\u010Dius", bigint: "sveikasis skai\u010Dius", string: "eilut\u0117", boolean: "login\u0117 reik\u0161m\u0117", undefined: "neapibr\u0117\u017Eta reik\u0161m\u0117", function: "funkcija", symbol: "simbolis", array: "masyvas", object: "objektas", null: "nulin\u0117 reik\u0161m\u0117" };
+    const obj2 = { string: { unit: "tekens", verb: "heeft" }, file: { unit: "bytes", verb: "heeft" }, array: { unit: "elementen", verb: "heeft" }, set: { unit: "elementen", verb: "heeft" } };
+    closure_1 = { regex: "invoer", email: "emailadres", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO datum en tijd", date: "ISO datum", time: "ISO tijd", duration: "ISO duur", ipv4: "IPv4-adres", ipv6: "IPv6-adres", cidrv4: "IPv4-bereik", cidrv6: "IPv6-bereik", base64: "base64-gecodeerde tekst", base64url: "base64 URL-gecodeerde tekst", json_string: "JSON string", e164: "E.164-nummer", jwt: "JWT", template_literal: "invoer" };
+    let closure_2 = { nan: "NaN", number: "getal" };
     return obj;
   } else {
-    let str = "Trying to call a non-function";
     throw new TypeError("Trying to call a non-function");
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 17312
-// Function ID: 17313
+// Module ID: 17314
+// Function ID: 17315
 // Name: KeywordTextUtils
 // Dependencies: [2]
 // Exports: dedupeKeywords, getKeywordStringFromKeywordFilter, getKeywordsFromString, getRegexPatternsFromString, getStringFromRegexPatterns, isKeywordParseableString, sortKeywords
 
-// Module 17312 (KeywordTextUtils)
+// Module 17314 (KeywordTextUtils)
 import size from "module_2" /* 2 */;
 
 let set;
@@ -33,8 +33,8 @@ export const sortKeywords = function sortKeywords(arr) {
     return replaced.localeCompare(str2.replaceAll(closure_1_2, ""));
   });
 };
-export const getKeywordStringFromKeywordFilter = function getKeywordStringFromKeywordFilter(join) {
-  return join.join(", ");
+export const getKeywordStringFromKeywordFilter = function getKeywordStringFromKeywordFilter(keywords) {
+  return keywords.join(", ");
 };
 export const isKeywordParseableString = function isKeywordParseableString(arr) {
   const hasItem = arr.includes("\n") || arr.includes(",");
@@ -45,6 +45,6 @@ export const getRegexPatternsFromString = function getRegexPatternsFromString(st
   const mapped = parts.map((item) => item.trim());
   return mapped.filter(Boolean);
 };
-export const getStringFromRegexPatterns = function getStringFromRegexPatterns(join) {
-  return join.join("\n");
+export const getStringFromRegexPatterns = function getStringFromRegexPatterns(keywords) {
+  return keywords.join("\n");
 };

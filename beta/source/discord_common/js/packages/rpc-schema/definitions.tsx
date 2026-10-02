@@ -1,12 +1,12 @@
-// Module ID: 14039
-// Function ID: 14040
+// Module ID: 14041
+// Function ID: 14042
 // Name: definitions
-// Dependencies: [14040, 7787, 14041, 2]
+// Dependencies: [14042, 7791, 14043, 2]
 
-// Module 14039 (definitions)
-import OAuth2Scopes from "OAuth2Scopes" /* 7787 */;
-import helpers from "helpers" /* 14040 */;
-import contextMenuIcons from "contextMenuIcons" /* 14041 */;
+// Module 14041 (definitions)
+import OAuth2Scopes from "OAuth2Scopes" /* 7791 */;
+import helpers from "helpers" /* 14042 */;
+import contextMenuIcons from "contextMenuIcons" /* 14043 */;
 import size_mod from "module_2" /* 2 */;
 
 function VoiceCapabilities(object) {
@@ -927,7 +927,7 @@ const obj25 = {
     minResult = stringResult1.min(0);
     return obj;
   },
-  response: "a"
+  response: "r"
 };
 const obj26 = {
   request(string) {
@@ -937,8 +937,8 @@ const obj26 = {
     maxResult = stringResult.max(64);
     return obj;
   },
-  response(arg0) {
-    const obj = User(arg0);
+  response(object) {
+    const obj = User(object);
     return obj.allow(null);
   }
 };

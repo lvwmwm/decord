@@ -1,15 +1,16 @@
-// Module ID: 12810
-// Function ID: 12811
+// Module ID: 12812
+// Function ID: 12813
 // Name: usePresenceActivityInviteCoverImageURL
-// Dependencies: [19, 12811, 1880, 7595, 504, 12812, 2]
-// Exports: getPresenceActivityInviteCoverImageURL, usePresenceActivityInviteCoverImageURL
+// Dependencies: [19, 12813, 1886, 7599, 558, 576, 504, 12814, 2]
+// Exports: getPresenceActivityInviteCoverImageURL
 
-// Module 12810 (usePresenceActivityInviteCoverImageURL)
-import react_nativeDefault from "react-native" /* 1880 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7595 */;
-import MessageActivityInviteCoverImageActionCreatorsAll from "MessageActivityInviteCoverImageActionCreators" /* 12812 */;
+// Module 12812 (usePresenceActivityInviteCoverImageURL)
+import react_nativeDefault from "react-native" /* 1886 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7599 */;
+import MessageActivityInviteCoverImageActionCreatorsAll from "MessageActivityInviteCoverImageActionCreators" /* 12814 */;
 import react from "react" /* 19 */;
-import MessageActivityInviteCoverImageStore from "MessageActivityInviteCoverImageStore" /* 12811 */;
+import MessageActivityInviteCoverImageStore from "MessageActivityInviteCoverImageStore" /* 12813 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 function _getPresenceActivityInviteCoverImageURL(messageId) {
@@ -48,14 +49,84 @@ function _getPresenceActivityInviteCoverImageURL(messageId) {
     return obj3;
   }
 }
-let result = size.fileFinishedImporting("modules/activities/utils/usePresenceActivityInviteCoverImageURL.tsx");
-
-export const usePresenceActivityInviteCoverImageURL = (messageId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((messageId) => {
+  let cachedImageURL;
+  let first;
+  const tmp = messageId;
+  let obj = messageId(cachedImageURL[5]);
+  const cResult = obj.c(11);
+  messageId = messageId.messageId;
+  const presenceActivity = messageId.presenceActivity;
+  const application = messageId.application;
+  const tmp2 = cachedImageURL;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MessageActivityInviteCoverImageStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === application) {
+    if (cResult[2] === messageId) {
+      let tmp6;
+      let tmp7;
+      if (cResult[3] === presenceActivity) {
+        tmp6 = cResult[4];
+        tmp7 = cResult[5];
+      }
+      const tmpResult = tmp(tmp2[6]);
+      const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
+      cachedImageURL = stateFromStoresObject.cachedImageURL;
+      const imageURL = stateFromStoresObject.imageURL;
+      if (cResult[6] === cachedImageURL) {
+        if (cResult[7] === imageURL) {
+          let tmp9;
+          let tmp10;
+          if (cResult[8] === messageId) {
+            tmp9 = cResult[9];
+            tmp10 = cResult[10];
+          }
+          const effect = imageURL.useEffect(tmp9, tmp10);
+          return imageURL;
+        }
+      }
+      class L {
+        constructor() {
+          if (cachedImageURL !== imageURL) {
+            const obj2 = { messageId, coverImageURL: tmp };
+            const obj = MessageActivityInviteCoverImageActionCreatorsAll;
+            obj.setCoverImageURL(obj2);
+          }
+        }
+      }
+      const items1 = [cachedImageURL, imageURL, messageId];
+      cResult[6] = cachedImageURL;
+      cResult[7] = imageURL;
+      cResult[8] = messageId;
+      cResult[9] = L;
+      cResult[10] = items1;
+      tmp10 = items1;
+      tmp9 = L;
+    }
+  }
+  const fn = function v() {
+    const obj = { messageId, presenceActivity, application };
+    return _getPresenceActivityInviteCoverImageURL(obj);
+  };
+  const items2 = [messageId, presenceActivity, application];
+  cResult[1] = application;
+  cResult[2] = messageId;
+  cResult[3] = presenceActivity;
+  cResult[4] = fn;
+  cResult[5] = items2;
+  tmp7 = items2;
+  tmp6 = fn;
+}) : ((messageId) => {
   messageId = messageId.messageId;
   const presenceActivity = messageId.presenceActivity;
   const application = messageId.application;
   let cachedImageURL;
-  let obj = messageId(cachedImageURL[4]);
+  let obj = messageId(cachedImageURL[6]);
   const items = [MessageActivityInviteCoverImageStore];
   const items1 = [messageId, presenceActivity, application];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
@@ -73,7 +144,10 @@ export const usePresenceActivityInviteCoverImageURL = (messageId) => {
     }
   }, items2);
   return imageURL;
-};
+});
+let result = size.fileFinishedImporting("modules/activities/utils/usePresenceActivityInviteCoverImageURL.tsx");
+
+export const usePresenceActivityInviteCoverImageURL = tmp2;
 export const getPresenceActivityInviteCoverImageURL = function getPresenceActivityInviteCoverImageURL(messageId) {
   messageId = messageId.messageId;
   const obj = { messageId, presenceActivity: messageId.presenceActivity, application: messageId.application };

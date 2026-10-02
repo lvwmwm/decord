@@ -1,19 +1,22 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 16703
+// Function ID: 16704
 // Name: MessageRequestPreview
-// Dependencies: [19, 17, 4479, 1074, 21, 4836, 5836, 576, 12091, 504, 1241, 1115, 7313, 5198, 1177, 2]
+// Dependencies: [19, 17, 4482, 1086, 21, 4837, 5837, 588, 558, 576, 12001, 504, 1253, 1127, 7317, 5199, 1189, 2]
 
-// Module 16701 (MessageRequestPreview)
+// Module 16703 (MessageRequestPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import nativeDefault from "native" /* 588 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4479 */;
-import Constants from "Constants" /* 1074 */;
-import createStyles_mod from "createStyles" /* 4836 */;
-import TextStyles_mod from "TextStyles" /* 5836 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import Constants from "Constants" /* 1086 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import TextStyles_mod from "TextStyles" /* 5837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let channel, isBlockedForMessageResult, obj1, tmp2, tmp3, tmp5, trackResult;
 
 let Fonts;
 let metroImportDefault;
@@ -33,7 +36,617 @@ obj3 = { lineHeight: 16 };
 TextStyles = TextStyles_mod;
 const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_DEFAULT, 12));
 let closure_9 = createStyles(obj);
-const memoResult = react.memo(function MessageRequestPreview(channel) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let error;
+  let first;
+  let items2;
+  let loaded;
+  let tmp28;
+  let tmp8;
+  let tmp9;
+  const tmp = channel;
+  let obj = channel(576);
+  const cResult = obj.c(26);
+  channel = channel.channel;
+  const style = channel.style;
+  const tmp4 = closure_9();
+  const obj2 = channel(12001);
+  const messageRequestPreview = obj2.useMessageRequestPreview(channel);
+  const message = messageRequestPreview.message;
+  ({ loaded, error } = messageRequestPreview);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [RelationshipStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== message) {
+    class S {
+      constructor() {
+        tmp = message;
+        isBlockedForMessageResult = null != message;
+        if (isBlockedForMessageResult) {
+          tmp3 = closure_5;
+          isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+        }
+        obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+        isIgnoredForMessageResult = null != tmp;
+        if (isIgnoredForMessageResult) {
+          tmp5 = closure_5;
+          isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+        }
+        obj.isIgnored = isIgnoredForMessageResult;
+        return obj;
+      }
+    }
+    const items1 = [message];
+    cResult[1] = message;
+    cResult[2] = S;
+    cResult[3] = items1;
+    tmp9 = items1;
+    tmp8 = S;
+  } else {
+    class S {
+      constructor() {
+        tmp = message;
+        isBlockedForMessageResult = null != message;
+        if (isBlockedForMessageResult) {
+          tmp3 = closure_5;
+          isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+        }
+        obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+        isIgnoredForMessageResult = null != tmp;
+        if (isIgnoredForMessageResult) {
+          tmp5 = closure_5;
+          isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+        }
+        obj.isIgnored = isIgnoredForMessageResult;
+        return obj;
+      }
+    }
+    tmp9 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp8, tmp9);
+  if (cResult[4] === channel) {
+    let flag;
+    let tmp13;
+    class S {
+      constructor() {
+        tmp = message;
+        isBlockedForMessageResult = null != message;
+        if (isBlockedForMessageResult) {
+          tmp3 = closure_5;
+          isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+        }
+        obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+        isIgnoredForMessageResult = null != tmp;
+        if (isIgnoredForMessageResult) {
+          tmp5 = closure_5;
+          isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+        }
+        obj.isIgnored = isIgnoredForMessageResult;
+        return obj;
+      }
+    }
+    const effect = react.useEffect(P, items2);
+    if (error) {
+      let tmp22;
+      class S {
+        constructor() {
+          tmp = message;
+          isBlockedForMessageResult = null != message;
+          if (isBlockedForMessageResult) {
+            tmp3 = closure_5;
+            isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+          }
+          obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+          isIgnoredForMessageResult = null != tmp;
+          if (isIgnoredForMessageResult) {
+            tmp5 = closure_5;
+            isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+          }
+          obj.isIgnored = isIgnoredForMessageResult;
+          return obj;
+        }
+      }
+      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+        class S {
+          constructor() {
+            tmp = message;
+            isBlockedForMessageResult = null != message;
+            if (isBlockedForMessageResult) {
+              tmp3 = closure_5;
+              isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+            }
+            obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+            isIgnoredForMessageResult = null != tmp;
+            if (isIgnoredForMessageResult) {
+              tmp5 = closure_5;
+              isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+            }
+            obj.isIgnored = isIgnoredForMessageResult;
+            return obj;
+          }
+        }
+        const stringResult = obj8.string(tmp(1127).t.BZHld2);
+        cResult[8] = stringResult;
+        tmp22 = stringResult;
+      } else {
+        class S {
+          constructor() {
+            tmp = message;
+            isBlockedForMessageResult = null != message;
+            if (isBlockedForMessageResult) {
+              tmp3 = closure_5;
+              isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+            }
+            obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+            isIgnoredForMessageResult = null != tmp;
+            if (isIgnoredForMessageResult) {
+              tmp5 = closure_5;
+              isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+            }
+            obj.isIgnored = isIgnoredForMessageResult;
+            return obj;
+          }
+        }
+      }
+      flag = false;
+      tmp13 = tmp22;
+    } else {
+      class S {
+        constructor() {
+          tmp = message;
+          isBlockedForMessageResult = null != message;
+          if (isBlockedForMessageResult) {
+            tmp3 = closure_5;
+            isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+          }
+          obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+          isIgnoredForMessageResult = null != tmp;
+          if (isIgnoredForMessageResult) {
+            tmp5 = closure_5;
+            isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+          }
+          obj.isIgnored = isIgnoredForMessageResult;
+          return obj;
+        }
+      }
+      flag = false;
+      tmp13 = null;
+      if (loaded) {
+        class S {
+          constructor() {
+            tmp = message;
+            isBlockedForMessageResult = null != message;
+            if (isBlockedForMessageResult) {
+              tmp3 = closure_5;
+              isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+            }
+            obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+            isIgnoredForMessageResult = null != tmp;
+            if (isIgnoredForMessageResult) {
+              tmp5 = closure_5;
+              isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+            }
+            obj.isIgnored = isIgnoredForMessageResult;
+            return obj;
+          }
+        }
+        if (null != message) {
+          class S {
+            constructor() {
+              tmp = message;
+              isBlockedForMessageResult = null != message;
+              if (isBlockedForMessageResult) {
+                tmp3 = closure_5;
+                isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+              }
+              obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+              isIgnoredForMessageResult = null != tmp;
+              if (isIgnoredForMessageResult) {
+                tmp5 = closure_5;
+                isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+              }
+              obj.isIgnored = isIgnoredForMessageResult;
+              return obj;
+            }
+          }
+        }
+        if (message != null) {
+          class S {
+            constructor() {
+              tmp = message;
+              isBlockedForMessageResult = null != message;
+              if (isBlockedForMessageResult) {
+                tmp3 = closure_5;
+                isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+              }
+              obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+              isIgnoredForMessageResult = null != tmp;
+              if (isIgnoredForMessageResult) {
+                tmp5 = closure_5;
+                isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+              }
+              obj.isIgnored = isIgnoredForMessageResult;
+              return obj;
+            }
+          }
+        }
+        if (null != undefined) {
+          class S {
+            constructor() {
+              tmp = message;
+              isBlockedForMessageResult = null != message;
+              if (isBlockedForMessageResult) {
+                tmp3 = closure_5;
+                isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+              }
+              obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+              isIgnoredForMessageResult = null != tmp;
+              if (isIgnoredForMessageResult) {
+                tmp5 = closure_5;
+                isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+              }
+              obj.isIgnored = isIgnoredForMessageResult;
+              return obj;
+            }
+          }
+          if ("" !== message.content) {
+            let tmp20;
+            class S {
+              constructor() {
+                tmp = message;
+                isBlockedForMessageResult = null != message;
+                if (isBlockedForMessageResult) {
+                  tmp3 = closure_5;
+                  isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+                }
+                obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+                isIgnoredForMessageResult = null != tmp;
+                if (isIgnoredForMessageResult) {
+                  tmp5 = closure_5;
+                  isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+                }
+                obj.isIgnored = isIgnoredForMessageResult;
+                return obj;
+              }
+            }
+            const content = tmp19.content;
+            const _Array = Array;
+            if (!Array.isArray(content)) {
+              class S {
+                constructor() {
+                  tmp = message;
+                  isBlockedForMessageResult = null != message;
+                  if (isBlockedForMessageResult) {
+                    tmp3 = closure_5;
+                    isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+                  }
+                  obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+                  isIgnoredForMessageResult = null != tmp;
+                  if (isIgnoredForMessageResult) {
+                    tmp5 = closure_5;
+                    isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+                  }
+                  obj.isIgnored = isIgnoredForMessageResult;
+                  return obj;
+                }
+              }
+              tmp13 = content;
+            } else {
+              class S {
+                constructor() {
+                  tmp = message;
+                  isBlockedForMessageResult = null != message;
+                  if (isBlockedForMessageResult) {
+                    tmp3 = closure_5;
+                    isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+                  }
+                  obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+                  isIgnoredForMessageResult = null != tmp;
+                  if (isIgnoredForMessageResult) {
+                    tmp5 = closure_5;
+                    isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+                  }
+                  obj.isIgnored = isIgnoredForMessageResult;
+                  return obj;
+                }
+              }
+            }
+            const _Symbol = Symbol;
+            if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+              class S {
+                constructor() {
+                  tmp = message;
+                  isBlockedForMessageResult = null != message;
+                  if (isBlockedForMessageResult) {
+                    tmp3 = closure_5;
+                    isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+                  }
+                  obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+                  isIgnoredForMessageResult = null != tmp;
+                  if (isIgnoredForMessageResult) {
+                    tmp5 = closure_5;
+                    isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+                  }
+                  obj.isIgnored = isIgnoredForMessageResult;
+                  return obj;
+                }
+              }
+              const stringResult1 = obj7.string(tmp(1127).t["262oPB"]);
+              cResult[13] = stringResult1;
+              tmp20 = stringResult1;
+            } else {
+              class S {
+                constructor() {
+                  tmp = message;
+                  isBlockedForMessageResult = null != message;
+                  if (isBlockedForMessageResult) {
+                    tmp3 = closure_5;
+                    isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+                  }
+                  obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+                  isIgnoredForMessageResult = null != tmp;
+                  if (isIgnoredForMessageResult) {
+                    tmp5 = closure_5;
+                    isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+                  }
+                  obj.isIgnored = isIgnoredForMessageResult;
+                  return obj;
+                }
+              }
+            }
+            tmp13 = tmp20;
+            flag = false;
+          }
+        }
+        if (null != message) {
+          class S {
+            constructor() {
+              tmp = message;
+              isBlockedForMessageResult = null != message;
+              if (isBlockedForMessageResult) {
+                tmp3 = closure_5;
+                isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+              }
+              obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+              isIgnoredForMessageResult = null != tmp;
+              if (isIgnoredForMessageResult) {
+                tmp5 = closure_5;
+                isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+              }
+              obj.isIgnored = isIgnoredForMessageResult;
+              return obj;
+            }
+          }
+          if (obj5.getMessageStickers(message).length > 0) {
+            let tmp17;
+            class S {
+              constructor() {
+                tmp = message;
+                isBlockedForMessageResult = null != message;
+                if (isBlockedForMessageResult) {
+                  tmp3 = closure_5;
+                  isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+                }
+                obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+                isIgnoredForMessageResult = null != tmp;
+                if (isIgnoredForMessageResult) {
+                  tmp5 = closure_5;
+                  isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+                }
+                obj.isIgnored = isIgnoredForMessageResult;
+                return obj;
+              }
+            }
+            if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+              class S {
+                constructor() {
+                  tmp = message;
+                  isBlockedForMessageResult = null != message;
+                  if (isBlockedForMessageResult) {
+                    tmp3 = closure_5;
+                    isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+                  }
+                  obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+                  isIgnoredForMessageResult = null != tmp;
+                  if (isIgnoredForMessageResult) {
+                    tmp5 = closure_5;
+                    isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+                  }
+                  obj.isIgnored = isIgnoredForMessageResult;
+                  return obj;
+                }
+              }
+              const stringResult2 = obj6.string(tmp(1127).t["zuI+by"]);
+              cResult[14] = stringResult2;
+              tmp17 = stringResult2;
+            } else {
+              class S {
+                constructor() {
+                  tmp = message;
+                  isBlockedForMessageResult = null != message;
+                  if (isBlockedForMessageResult) {
+                    tmp3 = closure_5;
+                    isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+                  }
+                  obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+                  isIgnoredForMessageResult = null != tmp;
+                  if (isIgnoredForMessageResult) {
+                    tmp5 = closure_5;
+                    isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+                  }
+                  obj.isIgnored = isIgnoredForMessageResult;
+                  return obj;
+                }
+              }
+            }
+            tmp13 = tmp17;
+            flag = false;
+          } else {
+            class S {
+              constructor() {
+                tmp = message;
+                isBlockedForMessageResult = null != message;
+                if (isBlockedForMessageResult) {
+                  tmp3 = closure_5;
+                  isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+                }
+                obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+                isIgnoredForMessageResult = null != tmp;
+                if (isIgnoredForMessageResult) {
+                  tmp5 = closure_5;
+                  isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+                }
+                obj.isIgnored = isIgnoredForMessageResult;
+                return obj;
+              }
+            }
+          }
+        } else {
+          let tmp15;
+          class S {
+            constructor() {
+              tmp = message;
+              isBlockedForMessageResult = null != message;
+              if (isBlockedForMessageResult) {
+                tmp3 = closure_5;
+                isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+              }
+              obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+              isIgnoredForMessageResult = null != tmp;
+              if (isIgnoredForMessageResult) {
+                tmp5 = closure_5;
+                isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+              }
+              obj.isIgnored = isIgnoredForMessageResult;
+              return obj;
+            }
+          }
+          if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
+            class S {
+              constructor() {
+                tmp = message;
+                isBlockedForMessageResult = null != message;
+                if (isBlockedForMessageResult) {
+                  tmp3 = closure_5;
+                  isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+                }
+                obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+                isIgnoredForMessageResult = null != tmp;
+                if (isIgnoredForMessageResult) {
+                  tmp5 = closure_5;
+                  isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+                }
+                obj.isIgnored = isIgnoredForMessageResult;
+                return obj;
+              }
+            }
+            const stringResult3 = obj4.string(tmp(1127).t["0KfDxM"]);
+            cResult[19] = stringResult3;
+            tmp15 = stringResult3;
+          } else {
+            class S {
+              constructor() {
+                tmp = message;
+                isBlockedForMessageResult = null != message;
+                if (isBlockedForMessageResult) {
+                  tmp3 = closure_5;
+                  isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+                }
+                obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+                isIgnoredForMessageResult = null != tmp;
+                if (isIgnoredForMessageResult) {
+                  tmp5 = closure_5;
+                  isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+                }
+                obj.isIgnored = isIgnoredForMessageResult;
+                return obj;
+              }
+            }
+          }
+          tmp13 = tmp15;
+          flag = false;
+        }
+      }
+    }
+    const tmp24 = flag ? tmp4.messageContent : tmp4.systemContent;
+    if (cResult[20] === tmp24) {
+      class S {
+        constructor() {
+          tmp = message;
+          isBlockedForMessageResult = null != message;
+          if (isBlockedForMessageResult) {
+            tmp3 = closure_5;
+            isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+          }
+          obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+          isIgnoredForMessageResult = null != tmp;
+          if (isIgnoredForMessageResult) {
+            tmp5 = closure_5;
+            isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+          }
+          obj.isIgnored = isIgnoredForMessageResult;
+          return obj;
+        }
+      }
+      if (cResult[23] === style) {
+        class S {
+          constructor() {
+            tmp = message;
+            isBlockedForMessageResult = null != message;
+            if (isBlockedForMessageResult) {
+              tmp3 = closure_5;
+              isBlockedForMessageResult = closure_5.isBlockedForMessage(tmp);
+            }
+            obj = { isBlocked: isBlockedForMessageResult, isIgnored: null };
+            isIgnoredForMessageResult = null != tmp;
+            if (isIgnoredForMessageResult) {
+              tmp5 = closure_5;
+              isIgnoredForMessageResult = closure_5.isIgnoredForMessage(tmp);
+            }
+            obj.isIgnored = isIgnoredForMessageResult;
+            return obj;
+          }
+        }
+        return tmp28;
+      }
+      const tmp31 = <View style={style}>{tmp25}</View>;
+      cResult[23] = style;
+      cResult[24] = tmp25;
+      cResult[25] = tmp31;
+      tmp28 = tmp31;
+    }
+    cResult[20] = tmp24;
+    cResult[21] = tmp13;
+    cResult[22] = jsx(tmp(1189).LegacyText, { style: tmp24, numberOfLines: 3, ellipsizeMode: "tail", children: tmp13 });
+    const tmp27 = jsx(tmp(1189).LegacyText, { style: tmp24, numberOfLines: 3, ellipsizeMode: "tail", children: tmp13 });
+  }
+  class P {
+    constructor() {
+      if (null != message) {
+        tmp2 = closure_1;
+        tmp3 = closure_2;
+        obj = closure_1(closure_2[12]);
+        tmp4 = AnalyticEvents;
+        obj1 = { is_spam: null, channel_id: null, other_user_id: null };
+        tmp5 = channel;
+        ({ isSpam: obj2.is_spam, id: obj2.channel_id } = channel);
+        obj1.other_user_id = tmp.author.id;
+        trackResult = obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj1);
+      }
+      return;
+    }
+  }
+  items2 = [channel, message];
+  cResult[4] = channel;
+  cResult[5] = message;
+  cResult[6] = P;
+  cResult[7] = items2;
+}) : ((channel) => {
   let error;
   let isBlocked;
   let isIgnored;
@@ -41,7 +654,7 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(12091);
+  let obj = channel(12001);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -65,23 +678,23 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
     }
   }, items2);
   if (error) {
-    const intl9 = tmp2(1115).intl;
-    intl9.string(channel(1115).t.BZHld2);
+    const intl9 = tmp2(1127).intl;
+    intl9.string(channel(1127).t.BZHld2);
     let flag = false;
   } else {
     flag = false;
     if (loaded) {
       if (null != message) {
         if (isBlocked) {
-          const intl8 = tmp2(1115).intl;
-          intl8.string(channel(1115).t["WPe+xL"]);
+          const intl8 = tmp2(1127).intl;
+          intl8.string(channel(1127).t["WPe+xL"]);
           flag = false;
         }
       }
       if (null != message) {
         if (isIgnored) {
-          const intl7 = tmp2(1115).intl;
-          intl7.string(channel(1115).t.uxrh1O);
+          const intl7 = tmp2(1127).intl;
+          intl7.string(channel(1127).t.uxrh1O);
           flag = false;
         }
       }
@@ -91,34 +704,34 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(7313)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(7317)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
           }
-          const intl6 = tmp2(1115).intl;
-          intl6.string(channel(1115).t["262oPB"]);
+          const intl6 = tmp2(1127).intl;
+          intl6.string(channel(1127).t["262oPB"]);
           flag = false;
         }
       }
       if (null != message) {
-        const tmp2Result = channel(5198);
+        const tmp2Result = channel(5199);
         if (tmp2Result.getMessageStickers(message).length > 0) {
-          const intl5 = tmp2(1115).intl;
-          let stringResult1 = intl5.string(tmp2(1115).t["zuI+by"]);
+          const intl5 = tmp2(1127).intl;
+          let stringResult1 = intl5.string(tmp2(1127).t["zuI+by"]);
         } else if (null != message.interaction) {
-          const intl4 = tmp2(1115).intl;
-          stringResult1 = intl4.string(tmp2(1115).t["2v7kfl"]);
+          const intl4 = tmp2(1127).intl;
+          stringResult1 = intl4.string(tmp2(1127).t["2v7kfl"]);
         } else {
           const tmp15 = constants2;
           if (message.hasFlag(constants2.IS_VOICE_MESSAGE)) {
-            const intl3 = tmp2(1115).intl;
-            stringResult1 = intl3.string(tmp2(1115).t["6bhHrc"]);
+            const intl3 = tmp2(1127).intl;
+            stringResult1 = intl3.string(tmp2(1127).t["6bhHrc"]);
           } else {
             const hasFlagResult = message.hasFlag(tmp15.IS_COMPONENTS_V2);
-            const intl2 = tmp2(1115).intl;
+            const intl2 = tmp2(1127).intl;
             const string = intl2.string;
-            const t = tmp2(1115).t;
+            const t = tmp2(1127).t;
             if (hasFlagResult) {
               stringResult1 = string(t.Xxm5i3);
             } else {
@@ -128,14 +741,14 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
         }
         flag = false;
       } else {
-        const intl = tmp2(1115).intl;
-        intl.string(channel(1115).t["0KfDxM"]);
+        const intl = tmp2(1127).intl;
+        intl.string(channel(1127).t["0KfDxM"]);
         flag = false;
       }
     }
   }
   return <View style={style}>{null}</View>;
-});
+}));
 const result = size.fileFinishedImporting("modules/message_request/native/MessageRequestPreview.tsx");
 
 export default memoResult;

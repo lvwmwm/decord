@@ -1,21 +1,23 @@
-// Module ID: 9549
-// Function ID: 9550
+// Module ID: 11569
+// Function ID: 11570
 // Name: isChannelFocused
-// Dependencies: [32, 19, 4852, 6746, 5044, 4694, 4692, 4693, 4695, 2]
-// Exports: isChannelFocused, isChannelFocusedForReadStateAck, useIsChannelFocused
+// Dependencies: [32, 19, 4853, 6747, 5045, 4696, 4694, 4695, 4697, 558, 576, 2]
+// Exports: isChannelFocused, isChannelFocusedForReadStateAck
 
-// Module 9549 (isChannelFocused)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
-import RootNavigationRef from "RootNavigationRef" /* 4693 */;
-import getInitialNavigationStateDefault from "getInitialNavigationState" /* 4694 */;
-import useChatLayout from "useChatLayout" /* 4695 */;
-import NavigationHistoryStore2 from "NavigationHistoryStore" /* 6746 */;
+// Module 11569 (isChannelFocused)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4694 */;
+import RootNavigationRef from "RootNavigationRef" /* 4695 */;
+import getInitialNavigationStateDefault from "getInitialNavigationState" /* 4696 */;
+import useChatLayout from "useChatLayout" /* 4697 */;
+import NavigationHistoryStore2 from "NavigationHistoryStore" /* 6747 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
-import VoicePanelStore from "VoicePanelStore" /* 5044 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4853 */;
+import VoicePanelStore from "VoicePanelStore" /* 5045 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
 const useChatLayoutDefault = useChatLayout;
 const NavigationHistoryStore = NavigationHistoryStore2;
 
@@ -154,13 +156,74 @@ function getFocusedChannelId() {
 }
 const CHANNEL_PREFIX = NavigationHistoryStore2.CHANNEL_PREFIX;
 let channelId2 = null;
-const result = size.fileFinishedImporting("modules/panels/isChannelFocused.native.tsx");
-
-export { getFocusedChannelId };
-export const isChannelFocused = function isChannelFocused() {
+function isChannelFocused() {
   return null != getFocusedChannelId();
-};
-export const useIsChannelFocused = function useIsChannelFocused() {
+}
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_0;
+  let first;
+  let first1;
+  let tmp10;
+  let tmp11;
+  let tmp7;
+  let tmp8;
+  let obj = require("react");
+  const cResult = obj.c(6);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function u() {
+      return null != getFocusedChannelId();
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  [first1, _require] = react.useState(first);
+  const tmp6 = useChatLayoutDefault();
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function o() {
+      closure_0(null != getFocusedChannelId());
+    };
+    cResult[1] = fn2;
+    tmp7 = fn2;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (cResult[2] !== tmp6) {
+    const items = [tmp6];
+    cResult[2] = tmp6;
+    cResult[3] = items;
+    tmp8 = items;
+  } else {
+    tmp8 = cResult[3];
+  }
+  const effect = obj2.useEffect(tmp7, tmp8);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn3 = function c() {
+      const obj = closure_0(dependencyMap[7]);
+      const rootNavigationRef = obj.getRootNavigationRef();
+      if (null != rootNavigationRef) {
+        function handleStateChange() {
+          rootNavigationRef(null != getFocusedChannelId());
+        }
+        rootNavigationRef.addListener("state", handleStateChange);
+        return () => {
+          rootNavigationRef.removeListener("state", handleStateChange);
+        };
+      }
+    };
+    const items1 = [];
+    cResult[4] = fn3;
+    cResult[5] = items1;
+    tmp11 = items1;
+    tmp10 = fn3;
+  } else {
+    tmp10 = cResult[4];
+    tmp11 = cResult[5];
+  }
+  const effect1 = obj2.useEffect(tmp10, tmp11);
+  return first1;
+}) : (() => {
   let closure_0;
   let first;
   [first, closure_0] = react.useState(() => null != getFocusedChannelId());
@@ -182,7 +245,12 @@ export const useIsChannelFocused = function useIsChannelFocused() {
     }
   }, []);
   return first;
-};
+});
+const result = size.fileFinishedImporting("modules/panels/isChannelFocused.native.tsx");
+
+export { getFocusedChannelId };
+export { isChannelFocused };
+export const useIsChannelFocused = tmp2;
 export const isChannelFocusedForReadStateAck = function isChannelFocusedForReadStateAck(channelId, arg1) {
   if (ChannelRTCStore.getChatOpen(channelId)) {
     return true;

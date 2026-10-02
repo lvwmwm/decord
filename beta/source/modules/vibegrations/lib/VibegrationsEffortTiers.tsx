@@ -1,20 +1,20 @@
-// Module ID: 16245
-// Function ID: 16246
+// Module ID: 16247
+// Function ID: 16248
 // Name: VibegrationsEffortTiers
-// Dependencies: [109, 16246, 1115, 3715, 2]
+// Dependencies: [109, 16248, 1127, 3718, 2]
 // Exports: vibegrationsCeilingSupportsFast, vibegrationsNormalizeFast, vibegrationsPickTierModel, vibegrationsTierDescription, vibegrationsTierLabel, vibegrationsTierModel, vibegrationsWithTier
 
-// Module 16245 (VibegrationsEffortTiers)
-import _modDef3715 from "module_3715" /* 3715 */;
-import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16246 */;
+// Module 16247 (VibegrationsEffortTiers)
+import _modDef3718 from "module_3718" /* 3718 */;
+import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16248 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const intl2 = tmp2(1115);
+const intl2 = tmp2(1127);
 let closure_2 = ["thinking"];
 let closure_3 = ["fast"];
-let obj = { simple: _modDef3715.Mo0a1m, balanced: _modDef3715.dkt78K, complex: _modDef3715.Ly6zYL };
+let obj = { simple: _modDef3718.Mo0a1m, balanced: _modDef3718.dkt78K, complex: _modDef3718.Ly6zYL };
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsEffortTiers.tsx");
 
 export const vibegrationsTierLabel = function vibegrationsTierLabel(value) {
@@ -129,6 +129,7 @@ export const vibegrationsNormalizeFast = function vibegrationsNormalizeFast(vibe
     let c0 = tmp3;
     let tmp7 = null != tmp3;
     if (tmp7) {
+      const tmp8 = main;
       const found = main.find((id) => id.id === c0);
       let supports_fast;
       if (found != null) {

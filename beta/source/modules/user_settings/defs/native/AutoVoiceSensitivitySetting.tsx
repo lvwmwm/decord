@@ -1,30 +1,54 @@
-// Module ID: 14794
-// Function ID: 14795
+// Module ID: 14782
+// Function ID: 14783
 // Name: AutoVoiceSensitivitySetting
-// Dependencies: [1993, 7417, 504, 9104, 11006, 1115, 2]
+// Dependencies: [1999, 7421, 558, 576, 504, 9081, 10874, 1127, 2]
 
-// Module 14794 (AutoVoiceSensitivitySetting)
-import get_initialized from "get initialized" /* 504 */;
-import intl2 from "intl" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 7417 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+// Module 14782 (AutoVoiceSensitivitySetting)
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9081 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let modeOptions;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MediaEngineStore];
+    const fn = function n() {
+      return modeOptions.getModeOptions().autoThreshold;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let modeOptions;
+  const items = [MediaEngineStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => modeOptions.getModeOptions().autoThreshold);
+});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.Z4oaN0);
   },
   parent: MobileUserSettings.VOICE,
-  useValue: function useAutoVoiceSensitivitySettingValue() {
-    let modeOptions;
-    const items = [MediaEngineStore];
-    const obj = get_initialized;
-    return obj.useStateFromStores(items, () => modeOptions.getModeOptions().autoThreshold);
-  },
+  useValue: tmp2,
   onValueChange: function onAutoVoiceSensitivitySettingValueChange(autoThreshold) {
     const mode = MediaEngineStore.getMode();
     const obj = AudioActionCreatorsDefault;

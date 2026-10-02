@@ -1,15 +1,17 @@
 // Module ID: 5555
 // Function ID: 5556
-// Dependencies: []
+// Dependencies: [5552]
 
 // Module 5555
-const obj = { 4: null };
-const obj2 = {
-  name: "ShotInfo",
-  description(arg0) {
-    return arg0;
+import _mod5552 from "module_5552" /* 5552 */;
+
+let obj = { 45056: null, 45057: "NumberOfImages", 45058: "MPEntry", 45059: "ImageUIDList", 45060: "TotalFrames" };
+obj[45056] = {
+  name: "MPFVersion",
+  description(value) {
+    const obj = _mod5552;
+    return obj.getStringValue(value);
   }
 };
-obj[4] = obj2;
 
 export default obj;

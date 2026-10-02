@@ -1,332 +1,380 @@
 // Module ID: 4608
 // Function ID: 4609
-// Dependencies: [5, 32, 19, 17, 4591, 4588]
-// Exports: useRiveFile
+// Dependencies: [32, 19, 576, 4602]
+// Exports: useRiveList
 
 // Module 4608
-import react_native from "react-native" /* 17 */;
-import callDispose from "callDispose" /* 4588 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 
-let c4, c5;
+const require = globalThis.__r;
+let _require, closure_0, dependencyMap;
 
+let c3;
 let closure_4;
-let hasOwnProperty;
-let metroImportDefault;
-let metroRequire;
-let _slicedToArray = _slicedToArray_mod;
-({ useState: closure_4, useEffect: hasOwnProperty, useMemo: metroRequire, useRef: metroImportDefault } = react);
-const Image = react_native.Image;
-
-export const useRiveFile = function useRiveFile(src, arg1) {
-  let _undefined;
-  let c1;
-  let ref;
-  let tmp2;
-  let obj = arg1;
-  if (arg1 === undefined) {
-    obj = {};
+let useCallback;
+let useMemo;
+function _temp2(arg0) {
+  return arg0 + 1;
+}
+function _temp(dispose) {
+  let disposeResult;
+  if (dispose != null) {
+    disposeResult = dispose.dispose();
   }
-  c1 = undefined;
-  _slicedToArray = undefined;
-  let str2;
-  let uri;
-  let riveFile;
-  let tmp = _slicedToArray(str2({ riveFile: "HermesInternal", isLoading: null, error: "r" }), 2);
-  [tmp2, c1] = tmp;
-  const items = [obj.referencedAssets];
-  let tmp3 = riveFile(() => {
-    const referencedAssets = obj.referencedAssets;
-    obj = {};
-    let tmp;
-    if (undefined !== referencedAssets) {
-      const tmp2 = globalThis;
-      const _Object = Object;
-      const entries = Object.entries(referencedAssets);
-      const item = entries.forEach(function(item) {
-        let fileName;
-        let path;
-        let tmp;
-        let tmp2;
-        let tmp8;
-        [tmp, tmp2] = item;
-        let tmp4 = null !== tmp2;
-        const tmp3 = obj;
-        if (tmp4) {
-          tmp4 = typeof tmp2 === "object";
+  return disposeResult;
+}
+({ useCallback, useEffect: c3, useState: closure_4, useMemo } = react);
+
+export const useRiveList = function useRiveList(arg0, arg1) {
+  let closure_1;
+  let closure_3;
+  let disposableMemo;
+  let first;
+  let tmp5;
+  _require = arg0;
+  dependencyMap = arg1;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(39);
+  const tmp4 = _slicedToArray(disposableMemo(null), 2);
+  [tmp5, _slicedToArray] = tmp4;
+  [r10021, closure_3] = disposableMemo(0);
+  _slicedToArray(disposableMemo(0), 2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function o() {
+      _slicedToArray(null);
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    let tmp8;
+    if (cResult[2] === arg1) {
+      tmp8 = cResult[3];
+    }
+    closure_3(first, tmp8);
+    if (cResult[4] === arg0) {
+      let tmp11;
+      if (cResult[5] === arg1) {
+        tmp11 = cResult[6];
+      }
+      if (cResult[7] === arg0) {
+        let tmp12;
+        if (cResult[8] === arg1) {
+          tmp12 = cResult[9];
         }
-        if (tmp4) {
-          tmp4 = "__type" in tmp2;
-        }
-        if (tmp4) {
-          tmp4 = "HybridObject<RiveImage>" === tmp2.__type;
-        }
-        if (tmp4) {
-          tmp8 = { image: tmp2 };
-          const obj2 = { image: tmp2 };
-        } else {
-          const source = tmp2.source;
-          if (typeof source === "number") {
-            const assetSource = closure_2_8.resolveAssetSource(source);
-            if (assetSource) {
-              if (assetSource.uri) {
-                tmp8 = { sourceAssetId: assetSource.uri };
-                const obj3 = { sourceAssetId: assetSource.uri };
-              }
+        const tmpResult = tmp(4602);
+        disposableMemo = tmpResult.useDisposableMemo(tmp11, _temp, tmp12);
+        if (cResult[10] === arg0) {
+          if (cResult[11] === disposableMemo) {
+            let tmp15;
+            let tmp16;
+            let tmp19;
+            let tmp18;
+            if (cResult[12] === arg1) {
+              tmp15 = cResult[13];
+              tmp16 = cResult[14];
             }
-            const _Error2 = Error;
-            const self3 = this;
-            const self4 = this;
-            const error = new Error("Invalid asset source provided.");
-            throw error;
-          } else {
-            uri = source.uri;
-            if (typeof source === "object") {
-              if (uri) {
-                tmp8 = { sourceUrl: uri };
-                const obj4 = { sourceUrl: uri };
+            closure_3(tmp15, tmp16);
+            if (cResult[15] !== disposableMemo) {
+              class M {
+                constructor() {
+                  obj = closure_4;
+                  if (obj) {
+                    closure_0 = obj.addListener(() => {
+                      closure_1_3(_temp2);
+                    });
+                    return () => {
+                      try {
+                        closure_0();
+                        disposableMemo.removeListeners();
+                      } catch (err) {
+                      }
+                    };
+                  } else {
+                    return;
+                  }
+                }
               }
+              const items = [disposableMemo];
+              cResult[15] = disposableMemo;
+              cResult[16] = M;
+              cResult[17] = items;
+              tmp19 = items;
+              tmp18 = M;
+            } else {
+              class M {
+                constructor() {
+                  obj = closure_4;
+                  if (obj) {
+                    closure_0 = obj.addListener(() => {
+                      closure_1_3(_temp2);
+                    });
+                    return () => {
+                      try {
+                        closure_0();
+                        disposableMemo.removeListeners();
+                      } catch (err) {
+                      }
+                    };
+                  } else {
+                    return;
+                  }
+                }
+              }
+              tmp19 = cResult[17];
             }
-            ({ fileName, path } = source);
-            if (typeof source === "object") {
-              if (fileName) {
-                obj = { sourceAsset: fileName };
-                tmp8 = obj;
-                if (path) {
-                  obj.path = path;
-                  tmp8 = obj;
+            closure_3(tmp18, tmp19);
+            if (disposableMemo != null) {
+              class M {
+                constructor() {
+                  obj = closure_4;
+                  if (obj) {
+                    closure_0 = obj.addListener(() => {
+                      closure_1_3(_temp2);
+                    });
+                    return () => {
+                      try {
+                        closure_0();
+                        disposableMemo.removeListeners();
+                      } catch (err) {
+                      }
+                    };
+                  } else {
+                    return;
+                  }
                 }
               }
             }
+            if (undefined == null) {
+              class M {
+                constructor() {
+                  obj = closure_4;
+                  if (obj) {
+                    closure_0 = obj.addListener(() => {
+                      closure_1_3(_temp2);
+                    });
+                    return () => {
+                      try {
+                        closure_0();
+                        disposableMemo.removeListeners();
+                      } catch (err) {
+                      }
+                    };
+                  } else {
+                    return;
+                  }
+                }
+              }
+            }
+            if (cResult[18] !== disposableMemo) {
+              class R {
+                constructor(arg0) {
+                  let instanceAt;
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    instanceAt = obj.getInstanceAt(arg0);
+                  }
+                  return instanceAt;
+                }
+              }
+              cResult[18] = disposableMemo;
+              cResult[19] = R;
+            } else {
+              class R {
+                constructor(arg0) {
+                  let instanceAt;
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    instanceAt = obj.getInstanceAt(arg0);
+                  }
+                  return instanceAt;
+                }
+              }
+            }
+            if (cResult[20] !== disposableMemo) {
+              class R {
+                constructor(arg0) {
+                  let instanceAt;
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    instanceAt = obj.getInstanceAt(arg0);
+                  }
+                  return instanceAt;
+                }
+              }
+              cResult[20] = disposableMemo;
+              cResult[21] = tmp24;
+            } else {
+              class R {
+                constructor(arg0) {
+                  let instanceAt;
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    instanceAt = obj.getInstanceAt(arg0);
+                  }
+                  return instanceAt;
+                }
+              }
+            }
+            if (cResult[22] !== disposableMemo) {
+              class C {
+                constructor(arg0, arg1) {
+                  let flag;
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    flag = obj.addInstanceAt(arg0, arg1);
+                  }
+                  if (flag == null) {
+                    flag = false;
+                  }
+                  return flag;
+                }
+              }
+              cResult[22] = disposableMemo;
+              cResult[23] = C;
+            } else {
+              class C {
+                constructor(arg0, arg1) {
+                  let flag;
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    flag = obj.addInstanceAt(arg0, arg1);
+                  }
+                  if (flag == null) {
+                    flag = false;
+                  }
+                  return flag;
+                }
+              }
+            }
+            if (cResult[24] !== disposableMemo) {
+              class O {
+                constructor(arg0) {
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    obj.removeInstance(arg0);
+                  }
+                }
+              }
+              cResult[24] = disposableMemo;
+              cResult[25] = O;
+            } else {
+              class O {
+                constructor(arg0) {
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    obj.removeInstance(arg0);
+                  }
+                }
+              }
+            }
+            if (cResult[26] !== disposableMemo) {
+              class O {
+                constructor(arg0) {
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    obj.removeInstance(arg0);
+                  }
+                }
+              }
+              cResult[26] = disposableMemo;
+              cResult[27] = tmp28;
+            } else {
+              class O {
+                constructor(arg0) {
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    obj.removeInstance(arg0);
+                  }
+                }
+              }
+            }
+            if (cResult[28] !== disposableMemo) {
+              class O {
+                constructor(arg0) {
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    obj.removeInstance(arg0);
+                  }
+                }
+              }
+              cResult[28] = disposableMemo;
+              cResult[29] = tmp30;
+            } else {
+              class O {
+                constructor(arg0) {
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    obj.removeInstance(arg0);
+                  }
+                }
+              }
+            }
+            if (cResult[30] === tmp23) {
+              class O {
+                constructor(arg0) {
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    obj.removeInstance(arg0);
+                  }
+                }
+              }
+            }
+            const obj2 = { length: undefined, getInstanceAt: tmp22, addInstance: tmp23, addInstanceAt: tmp25, removeInstance: tmp26, removeInstanceAt: tmp27, swap: tmp29, error: tmp5 };
+            cResult[30] = tmp23;
+            cResult[31] = tmp25;
+            cResult[32] = tmp5;
+            cResult[33] = tmp22;
+            cResult[34] = undefined;
+            cResult[35] = tmp26;
+            cResult[36] = tmp27;
+            cResult[37] = tmp29;
+            cResult[38] = obj2;
+          }
+        }
+        const fn3 = function b() {
+          const tmp = closure_1 && !disposableMemo;
+          if (tmp) {
             const _Error = Error;
+            const _HermesInternal = HermesInternal;
             const self = this;
             const self2 = this;
-            const error1 = new Error("Invalid source provided.");
-            throw error1;
+            const error = new Error("List property \"" + closure_0 + "\" not found in the ViewModel instance");
+            _slicedToArray(error);
           }
-        }
-        tmp3[tmp] = tmp8;
-      });
-      tmp = obj;
-    }
-    return tmp;
-  }, items);
-  let closure_2 = tmp3;
-  _slicedToArray = closure_7(tmp3);
-  let tmp4 = null != src && typeof src === "object";
-  if (tmp4) {
-    tmp4 = "uri" in src;
-  }
-  str2 = "primitive";
-  if (tmp4) {
-    str2 = "uri";
-  }
-  let tmp5 = null != src && typeof src === "object";
-  if (tmp5) {
-    tmp5 = "uri" in src;
-  }
-  uri = src;
-  if (tmp5) {
-    uri = src.uri;
-  }
-  const items1 = [str2, uri];
-  uri(() => {
-    function loadRiveFile() {
-      return closure_0(...arguments);
-    }
-    let c0 = null;
-    let closure_0 = closure_2(function*(arg0, value) {
-      let error;
-      if (c5 === 2) {
-        c5 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        let c3;
-        try {
-          c5 = 2;
-          if (0 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              let obj6;
-              let closure_1 = tmp;
-              riveFile = tmp4;
-              c3 = 1;
-              if ("uri" === str2) {
-                const obj4 = { uri };
-                obj6 = obj4;
-              } else {
-                obj6 = uri;
-              }
-              if (null == obj6) {
-                const obj5 = { riveFile: null, isLoading: false, error };
-                const _Error3 = Error;
-                const self3 = this;
-                const self4 = this;
-                error = new Error("No Rive file input provided.");
-                closure_2_1(obj5);
-                c3 = 0;
-                c5 = 3;
-                const obj7 = { value: undefined, done: true };
-                return obj7;
-              } else if (typeof obj6 === "string") {
-                if (!obj6.startsWith("http://")) {
-                  if (!obj6.startsWith("https://")) {
-                    const RiveFileFactory3 = riveFile(_undefined[4]).RiveFileFactory;
-                    c4 = 2;
-                    c5 = 1;
-                    const obj8 = { value: RiveFileFactory3.fromResource(obj6, ref.current), done: false };
-                    return obj8;
-                  }
-                }
-                const RiveFileFactory4 = riveFile(_undefined[4]).RiveFileFactory;
-                c4 = 3;
-                c5 = 1;
-                const obj9 = { value: RiveFileFactory4.fromURL(obj6, ref.current), done: false };
-                return obj9;
-              } else {
-                if (typeof obj6 !== "number") {
-                  if (!("uri" in obj6)) {
-                    const _ArrayBuffer = ArrayBuffer;
-                    if (obj6 instanceof ArrayBuffer) {
-                      const RiveFileFactory = riveFile(_undefined[4]).RiveFileFactory;
-                      c4 = 5;
-                      c5 = 1;
-                      const obj10 = { value: RiveFileFactory.fromBytes(obj6, ref.current), done: false };
-                      return obj10;
-                    } else {
-                      const obj11 = { riveFile, isLoading: false, error: null };
-                      closure_2_1(obj11);
-                      c3 = 0;
-                    }
-                  }
-                }
-                const RiveFileFactory2 = riveFile(_undefined[4]).RiveFileFactory;
-                c4 = 4;
-                c5 = 1;
-                const obj12 = { value: RiveFileFactory2.fromSource(obj6, ref.current), done: false };
-                return obj12;
-              }
-            }
-          } else if (1 === c4) {
-            let error1;
-            c3 = 0;
-            riveFile = closure_2;
-            const _console = console;
-            console.error(riveFile);
-            const _Error = Error;
-            const tmp14 = closure_2_1;
-            if (riveFile instanceof Error) {
-              error1 = riveFile;
-            } else {
-              const _Error2 = Error;
-              const self = this;
-              const self2 = this;
-              error1 = new Error("Failed to load Rive file");
-            }
-            const obj13 = { riveFile: null, isLoading: false, error: error1 };
-            tmp14(obj13);
-          } else {
-            if (2 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 0;
-                c5 = 3;
-                const obj14 = { value, done: true };
-                return obj14;
-              }
-            } else if (3 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 0;
-                c5 = 3;
-                const obj15 = { value, done: true };
-                return obj15;
-              }
-            } else if (4 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 0;
-                c5 = 3;
-                const obj16 = { value, done: true };
-                return obj16;
-              } else {
-                riveFile = value;
-              }
-            } else if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 0;
-              c5 = 3;
-              obj = { value, done: true };
-              return obj;
-            } else {
-              riveFile = value;
-            }
-            riveFile = value;
-          }
-          c5 = 3;
-          return { value: "HermesInternal", done: null };
-        } catch (tmp40) {
-          closure_2 = tmp40;
-          if (0 === c3) {
-            c5 = 3;
-            throw tmp40;
-          } else {
-            c4 = 1;
-          }
-        }
+        };
+        const items1 = [arg1, disposableMemo, arg0];
+        cResult[10] = arg0;
+        cResult[11] = disposableMemo;
+        cResult[12] = arg1;
+        cResult[13] = fn3;
+        cResult[14] = items1;
+        tmp16 = items1;
+        tmp15 = fn3;
       }
-    });
-    let tmp = loadRiveFile();
-    return () => {
-      const tmp = c0;
-      if (tmp) {
-        obj = callDispose;
-        obj.callDispose(c0);
+      const items2 = [arg1, arg0];
+      cResult[7] = arg0;
+      cResult[8] = arg1;
+      cResult[9] = items2;
+      tmp12 = items2;
+    }
+    const fn2 = function v() {
+      if (closure_1) {
+        return closure_1.listProperty(closure_0);
       }
     };
-  }, items1);
-  riveFile = tmp2.riveFile;
-  const items2 = [tmp3, riveFile];
-  uri(() => {
-    let tmp3 = ref.current !== current;
-    const tmp = ref;
-    if (tmp3) {
-      tmp3 = riveFile;
-    }
-    if (tmp3) {
-      tmp3 = tmp2;
-    }
-    if (tmp3) {
-      obj = { data: current };
-      const result = riveFile.updateReferencedAssets(obj);
-      tmp.current = current;
-    }
-  }, items2);
-  let obj2 = { riveFile: tmp2.riveFile, isLoading: tmp2.isLoading, error: tmp2.error };
-  return obj2;
+    cResult[4] = arg0;
+    cResult[5] = arg1;
+    cResult[6] = fn2;
+    tmp11 = fn2;
+  }
+  const items3 = [arg0, arg1];
+  cResult[1] = arg0;
+  cResult[2] = arg1;
+  cResult[3] = items3;
+  tmp8 = items3;
 };

@@ -1,18 +1,10 @@
 // Module ID: 5133
 // Function ID: 5134
 // Name: mod
-// Dependencies: [1307]
+// Dependencies: [5134]
 
 // Module 5133 (mod)
-import _mod1307 from "module_1307" /* 1307 */;
+import mod from "mod" /* 5134 */;
 
 
-export default function mod(arg0, arg1) {
-  const result = arg0 % arg1;
-  let sum = result;
-  const tmp2 = _mod1307;
-  if (result < 0) {
-    sum = result + arg1;
-  }
-  return tmp2(sum);
-};
+export default mod;

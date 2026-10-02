@@ -1,10 +1,10 @@
-// Module ID: 7196
-// Function ID: 7197
+// Module ID: 7200
+// Function ID: 7201
 // Name: DraftActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 
-// Module 7196 (DraftActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 7200 (DraftActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

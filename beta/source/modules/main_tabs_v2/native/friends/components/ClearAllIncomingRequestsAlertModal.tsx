@@ -1,19 +1,20 @@
-// Module ID: 16597
-// Function ID: 16598
+// Module ID: 16599
+// Function ID: 16600
 // Name: ClearAllIncomingRequestsAlertModal
-// Dependencies: [5, 19, 21, 9195, 5209, 1115, 5209, 2]
-// Exports: default
+// Dependencies: [5, 19, 21, 9207, 558, 576, 1127, 5210, 5210, 2]
 
-// Module 16597 (ClearAllIncomingRequestsAlertModal)
-import intl5 from "intl" /* 1115 */;
-import AlertModal2 from "AlertModal" /* 5209 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9195 */;
+// Module 16599 (ClearAllIncomingRequestsAlertModal)
+import react2 from "react" /* 576 */;
+import intl5 from "intl" /* 1127 */;
+import AlertModal2 from "AlertModal" /* 5210 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9207 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c0, c1;
+let c0, c1, incomingRequestCount;
 
 let closure_4;
 let hasOwnProperty;
@@ -33,7 +34,7 @@ let obj = function _handleConfirm() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -62,7 +63,7 @@ let obj = function _handleConfirm() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp6) {
         c0 = 3;
@@ -73,9 +74,71 @@ let obj = function _handleConfirm() {
   return obj(...arguments);
 };
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/components/ClearAllIncomingRequestsAlertModal.tsx");
-
-export default function ClearAllIncomingRequestsAlertModal(incomingRequestCount) {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((incomingRequestCount) => {
+  let first;
+  let intl3;
+  let intl4;
+  let items;
+  let tmp12;
+  let tmp16;
+  let tmp6;
+  let tmp8;
+  obj = react2;
+  const cResult = obj.c(7);
+  incomingRequestCount = incomingRequestCount.incomingRequestCount;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl5.t.z2pFjo);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== incomingRequestCount) {
+    const intl2 = tmp(1127).intl;
+    const obj2 = { incomingRequestCount };
+    const formatToPlainStringResult = intl2.formatToPlainString(intl5.t["0nTvEw"], obj2);
+    cResult[1] = incomingRequestCount;
+    cResult[2] = formatToPlainStringResult;
+    tmp6 = formatToPlainStringResult;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { variant: "destructive", onPress: handleConfirm, text: intl3.string(intl5.t["cY+Oob"]) };
+    const AlertActionButton = tmp(5210).AlertActionButton;
+    intl3 = tmp(1127).intl;
+    const tmp11 = React3(AlertActionButton, obj3, "confirm");
+    cResult[3] = tmp11;
+    tmp8 = tmp11;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj4 = { children: items };
+    items = [tmp8, ];
+    const AlertActions = tmp(5210).AlertActions;
+    const obj5 = { variant: "secondary", text: intl4.string(intl5.t["ETE/oC"]) };
+    const AlertActionButton2 = tmp(5210).AlertActionButton;
+    intl4 = tmp(1127).intl;
+    items[1] = React3(AlertActionButton2, obj5, "cancel");
+    const tmp15 = hasOwnProperty(AlertActions, obj4);
+    cResult[4] = tmp15;
+    tmp12 = tmp15;
+  } else {
+    tmp12 = cResult[4];
+  }
+  if (cResult[5] !== tmp6) {
+    const obj6 = { title: first, content: tmp6, actions: tmp12 };
+    const tmp18 = React3(AlertModal2.AlertModal, obj6);
+    cResult[5] = tmp6;
+    cResult[6] = tmp18;
+    tmp16 = tmp18;
+  } else {
+    tmp16 = cResult[6];
+  }
+  return tmp16;
+}) : ((incomingRequestCount) => {
   let AlertActions;
   let intl;
   let intl2;
@@ -99,4 +162,7 @@ export default function ClearAllIncomingRequestsAlertModal(incomingRequestCount)
   intl4 = intl5.intl;
   items[1] = React3(AlertActionButton2, obj4, "cancel");
   return React3(AlertModal, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/components/ClearAllIncomingRequestsAlertModal.tsx");
+
+export default tmp4;

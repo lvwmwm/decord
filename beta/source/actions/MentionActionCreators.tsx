@@ -1,12 +1,12 @@
-// Module ID: 16045
-// Function ID: 16046
+// Module ID: 16047
+// Function ID: 16048
 // Name: MentionActionCreators
-// Dependencies: [1074, 573, 1271, 2]
+// Dependencies: [1086, 585, 1283, 2]
 
-// Module 16045 (MentionActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import Constants from "Constants" /* 1074 */;
+// Module 16047 (MentionActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 let body;
@@ -53,7 +53,7 @@ let obj = {
     const feature = before.feature;
     let obj = DispatcherDefault;
     obj.dispatch({ type: "LOAD_RECENT_MENTIONS", guildId });
-    const HTTP = before(1271).HTTP;
+    const HTTP = before(1283).HTTP;
     const request = { url: constants.MENTIONS, query: { before, limit, guild_id: guildId, roles: flag, everyone: flag2, feature }, retries: 2, oldFormErrors: true, rejectWithError: true };
     const value = HTTP.get(request);
     return value.then((body) => {

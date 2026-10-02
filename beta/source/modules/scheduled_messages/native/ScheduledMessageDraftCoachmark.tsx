@@ -1,38 +1,110 @@
-// Module ID: 11925
-// Function ID: 11926
+// Module ID: 11819
+// Function ID: 11820
 // Name: ScheduledMessageDraftCoachmark
-// Dependencies: [19, 17, 2042, 21, 4836, 1115, 11702, 10589, 2]
-// Exports: default
+// Dependencies: [109, 19, 17, 2048, 21, 4837, 558, 576, 1127, 11594, 9656, 2]
 
-// Module 11925 (ScheduledMessageDraftCoachmark)
+// Module 11819 (ScheduledMessageDraftCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1115 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2042 */;
-import useCoachmark from "useCoachmark" /* 10589 */;
+import react2 from "react" /* 576 */;
+import intl3 from "intl" /* 1127 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11594 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-function AttachedCoachmark(buttonRef) {
-  buttonRef = buttonRef.buttonRef;
-  const merged = Object.assign(buttonRef, Object.assign({ buttonRef: 0 }));
-  const obj = useCoachmark;
-  const coachmark = obj.useCoachmark(buttonRef, merged);
-  return null;
-}
+let tmp;
+const useCoachmark = tmp(9656);
+let closure_3 = ["buttonRef"];
 const Image = react_native.Image;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
-let closure_7 = createStyles.createStyles({ image: { width: 100, height: 80 } });
-const result = size.fileFinishedImporting("modules/scheduled_messages/native/ScheduledMessageDraftCoachmark.tsx");
-
-export default function ScheduledMessageDraftCoachmark(onDismiss) {
+let closure_9 = createStyles.createStyles({ image: { width: 100, height: 80 } });
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let buttonRef;
+  let isVisible;
+  let onDismiss;
+  let tmp10;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  const obj = onDismiss(576);
+  const cResult = obj.c(13);
+  ({ buttonRef, isVisible, onDismiss } = arg0);
+  const tmp4 = closure_9();
+  const image = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(onDismiss(1127).t.Pu7sCU);
+    const intl2 = tmp(1127).intl;
+    const formatResult = intl2.format(onDismiss(1127).t.Juk17F, {});
+    cResult[0] = stringResult;
+    cResult[1] = formatResult;
+    tmp5 = stringResult;
+    tmp6 = formatResult;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  if (cResult[2] !== onDismiss) {
+    const fn = function f() {
+      return onDismiss(ContentDismissActionType.USER_DISMISS);
+    };
+    cResult[2] = onDismiss;
+    cResult[3] = fn;
+    tmp9 = fn;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] !== tmp4.image) {
+    const fn2 = function p() {
+      return <Image source={AssetRegistryDefault} style={image.image} />;
+    };
+    cResult[4] = tmp4.image;
+    cResult[5] = fn2;
+    tmp10 = fn2;
+  } else {
+    tmp10 = cResult[5];
+  }
+  if (cResult[6] === tmp9) {
+    let tmp11;
+    if (cResult[7] === tmp10) {
+      tmp11 = cResult[8];
+    }
+    if (cResult[9] === buttonRef) {
+      if (cResult[10] === isVisible) {
+        let tmp12;
+        if (cResult[11] === tmp11) {
+          tmp12 = cResult[12];
+        }
+        return tmp12;
+      }
+    }
+    let tmp13 = null;
+    if (isVisible) {
+      const merged = Object.assign(tmp11);
+      tmp13 = <closure_10 buttonRef={buttonRef} />;
+    }
+    cResult[9] = buttonRef;
+    cResult[10] = isVisible;
+    cResult[11] = tmp11;
+    cResult[12] = tmp13;
+    tmp12 = tmp13;
+  }
+  const obj3 = { title: tmp5, description: tmp6, position: "top", offsetY: 4, visible: true, onDismiss: tmp9, renderImgComponent: tmp10 };
+  cResult[6] = tmp9;
+  cResult[7] = tmp10;
+  cResult[8] = obj3;
+  tmp11 = obj3;
+}) : ((onDismiss) => {
   let buttonRef;
   let isVisible;
   onDismiss = onDismiss.onDismiss;
   ({ buttonRef, isVisible } = onDismiss);
-  const tmp = closure_7();
+  const tmp = closure_9();
   let closure_1 = tmp;
   const items = [onDismiss, tmp.image];
   const memo = react.useMemo(() => {
@@ -48,7 +120,7 @@ export default function ScheduledMessageDraftCoachmark(onDismiss) {
         return onDismiss(constants.USER_DISMISS);
       },
       renderImgComponent() {
-        return <Image source={closure_1(dependencyMap[6])} style={closure_1_1.image} />;
+        return <Image source={closure_1(dependencyMap[9])} style={closure_1_1.image} />;
       }
     };
     intl = intl3.intl;
@@ -58,7 +130,38 @@ export default function ScheduledMessageDraftCoachmark(onDismiss) {
   let tmp3 = null;
   if (isVisible) {
     const merged = Object.assign(memo);
-    tmp3 = <AttachedCoachmark buttonRef={buttonRef} />;
+    tmp3 = <closure_10 buttonRef={buttonRef} />;
   }
   return tmp3;
-};
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((buttonRef) => {
+  let tmp4;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(3);
+  if (cResult[0] !== buttonRef) {
+    buttonRef = buttonRef.buttonRef;
+    const tmp8 = _objectWithoutProperties(buttonRef, closure_3);
+    cResult[0] = buttonRef;
+    cResult[1] = buttonRef;
+    cResult[2] = tmp8;
+    tmp5 = tmp8;
+    tmp4 = buttonRef;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+  }
+  const tmpResult = useCoachmark;
+  const coachmark = tmpResult.useCoachmark(tmp4, tmp5);
+  return null;
+}) : ((buttonRef) => {
+  buttonRef = buttonRef.buttonRef;
+  const merged = Object.assign(buttonRef, Object.assign({ buttonRef: 0 }));
+  const obj = useCoachmark;
+  const coachmark = obj.useCoachmark(buttonRef, merged);
+  return null;
+});
+const result = size.fileFinishedImporting("modules/scheduled_messages/native/ScheduledMessageDraftCoachmark.tsx");
+
+export default tmp2;

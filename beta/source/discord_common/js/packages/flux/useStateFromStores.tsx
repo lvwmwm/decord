@@ -1,13 +1,14 @@
-// Module ID: 563
-// Function ID: 564
+// Module ID: 573
+// Function ID: 574
 // Name: useStateFromStores
-// Dependencies: [32, 19, 558, 564, 2]
+// Dependencies: [32, 19, 568, 574, 558, 2]
 // Exports: statesWillNeverBeEqual, useStateFromStoresArray, useStateFromStoresObject
 
-// Module 563 (useStateFromStores)
-import shallowEqual from "shallowEqual" /* 558 */;
+// Module 573 (useStateFromStores)
+import shallowEqual from "shallowEqual" /* 568 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,12 +21,12 @@ let metroRequire;
 function defaultAreStatesEqual(arg0, arg1) {
   return arg0 === arg1;
 }
-function useStateFromStores(items, getCurrentRestrictedHoursState, items1, isVersionEqual) {
+function useStateFromStores(items, cResult, items1, isVersionEqual) {
   let closure_3;
   let prevDeps;
   let tmp5;
   _require = items;
-  const getStateFromStores = getCurrentRestrictedHoursState;
+  const getStateFromStores = cResult;
   dependencyMap = items1;
   let tmp = isVersionEqual;
   if (isVersionEqual === undefined) {
@@ -37,13 +38,13 @@ function useStateFromStores(items, getCurrentRestrictedHoursState, items1, isVer
   let closure_6;
   const tmp2 = state(null);
   if (null == tmp2.current) {
-    const obj = { stores: items, areStatesEqual: tmp, getStateFromStores: getCurrentRestrictedHoursState, prevDeps: "Boolean", state: "paddingHorizontal" };
+    const obj = { stores: items, areStatesEqual: tmp, getStateFromStores: cResult, prevDeps: "Boolean", state: "unicodeVersion" };
     tmp2.current = obj;
   }
   current = tmp2.current;
   state = current.state;
   if (null == items1) {
-    const tmp6 = getCurrentRestrictedHoursState();
+    const tmp6 = cResult();
     tmp5 = state;
     const tmp7 = null != state && tmp(state, tmp6);
     if (!tmp7) {
@@ -77,15 +78,15 @@ function useStateFromStores(items, getCurrentRestrictedHoursState, items1, isVer
 }
 let _slicedToArray = _slicedToArray_mod;
 ({ useState: closure_4, useRef: hasOwnProperty, useInsertionEffect: metroRequire } = react);
-const result = size.fileFinishedImporting("../discord_common/js/packages/flux/useStateFromStores.tsx");
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result2 = size.fileFinishedImporting("../discord_common/js/packages/flux/useStateFromStores.tsx");
 
 export function statesWillNeverBeEqual() {
   return false;
 }
 export { useStateFromStores };
-export const useStateFromStoresObject = function useStateFromStoresObject(items, getCurrentRestrictedHoursState, items1) {
-  return useStateFromStores(items, getCurrentRestrictedHoursState, items1, shallowEqualDefault);
-};
-export const useStateFromStoresArray = function useStateFromStoresArray(items, getCurrentRestrictedHoursState, items1) {
-  return useStateFromStores(items, getCurrentRestrictedHoursState, items1, shallowEqual.areArraysShallowEqual);
-};
+export const useStateFromStoresObject = (items, cResult, items1) => useStateFromStores(items, cResult, items1, shallowEqualDefault);
+export const useStateFromStoresArray = (items, cResult, items1) => useStateFromStores(items, cResult, items1, shallowEqual.areArraysShallowEqual);

@@ -1,33 +1,122 @@
-// Module ID: 16211
-// Function ID: 16212
+// Module ID: 16212
+// Function ID: 16213
 // Name: OnboardingHomeResourcesSheet
-// Dependencies: [19, 16209, 21, 4531, 576, 16210, 11767, 4800, 6618, 6620, 1397, 5899, 2]
-// Exports: default
+// Dependencies: [19, 16210, 21, 558, 576, 4535, 588, 16211, 11660, 4801, 1403, 6620, 5896, 6624, 2]
 
-// Module 16211 (OnboardingHomeResourcesSheet)
+// Module 16212 (OnboardingHomeResourcesSheet)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 11767 */;
-import OnboardingHomeConstants from "OnboardingHomeConstants" /* 16209 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 16210 */;
+import nativeDefault from "native" /* 588 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 11660 */;
+import OnboardingHomeConstants from "OnboardingHomeConstants" /* 16210 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 16211 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let importDefault;
+let closure_0, dependencyMap, guildId, importDefault, obj1, obj6, obj7, tmp4;
 
 let closure_3 = OnboardingHomeConstants.ONBOARDING_HOME_RESOURCES_SHEET_KEY;
 const jsx = Fragment.jsx;
-let size = size_mod;
-const result = size.fileFinishedImporting("modules/guild_onboarding_home/native/OnboardingHomeResourcesSheet.tsx");
-
-export default function OnboardingHomeResourcesSheet(guildId) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let closure_2;
+  let tmp5;
+  let tmp6;
+  let token;
+  let tmp = guildId;
+  const tmp2 = dependencyMap;
+  let obj = guildId(576);
+  const cResult = obj.c(11);
+  guildId = guildId.guildId;
+  let obj2 = guildId(4535);
+  token = obj2.useToken(token(588).modules.mobile.TABLE_ROW_ICON_SIZE);
+  const arr = token(16211)(guildId);
+  if (cResult[0] !== guildId) {
+    const fn = function l(channelId) {
+      const obj = GuildOnboardingHomeActionCreators;
+      const homeResourceChannel = obj.selectHomeResourceChannel(guildId, channelId);
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet(closure_3);
+    };
+    cResult[0] = guildId;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  dependencyMap = tmp5;
+  if (cResult[2] === tmp5) {
+    if (cResult[3] === arr) {
+      let tmp9;
+      if (cResult[4] === token) {
+        tmp6 = cResult[5];
+      }
+      if (cResult[9] !== tmp6) {
+        const ActionSheet = tmp(6624).ActionSheet;
+        let obj4 = { hasIcons: true, children: tmp6 };
+        const tmp11 = <ActionSheet>{null}</ActionSheet>;
+        cResult[9] = tmp6;
+        cResult[10] = tmp11;
+        tmp9 = tmp11;
+      } else {
+        tmp9 = cResult[10];
+      }
+      return tmp9;
+    }
+  }
+  if (cResult[6] === tmp5) {
+    let tmp7;
+    if (cResult[7] === token) {
+      tmp7 = cResult[8];
+    }
+    const mapped = arr.map(tmp7);
+    cResult[2] = tmp5;
+    cResult[3] = arr;
+    cResult[4] = token;
+    cResult[5] = mapped;
+    tmp6 = mapped;
+  }
+  class I {
+    constructor(arg0) {
+      closure_0 = guildId;
+      tmp2 = closure_2;
+      tmp = closure_1;
+      obj = closure_1(closure_2[10]);
+      resourceChannelIconURL = obj.getResourceChannelIconURL(guildId);
+      tmp4 = closure_1_4;
+      obj1 = { label: guildId.title, icon: null, onPress: null, arrow: true };
+      tmp4Result = undefined;
+      ActionSheetRow = guildId(tmp2[11]).ActionSheetRow;
+      if (null != resourceChannelIconURL) {
+        obj6 = { style: null, source: null };
+        size = { width: null, height: null };
+        tmp6 = closure_1;
+        size.width = closure_1;
+        size.height = closure_1;
+        obj6.style = size;
+        obj7 = { uri: null };
+        obj7.uri = resourceChannelIconURL;
+        obj6.source = obj7;
+        tmp4Result = tmp4(tmp(tmp2[12]), obj6);
+      }
+      obj1.icon = tmp4Result;
+      obj1.onPress = function onPress() {
+        return closure_2(label.channelId);
+      };
+      return tmp4(ActionSheetRow, obj1, guildId.channelId);
+    }
+  }
+  cResult[6] = tmp5;
+  cResult[7] = token;
+  cResult[8] = I;
+  tmp7 = I;
+}) : ((guildId) => {
   let closure_1;
   guildId = guildId.guildId;
-  let obj = guildId(4531);
+  let obj = guildId(4535);
   importDefault = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE);
   const arr = useResourceChannelsDefault(guildId);
-  const ActionSheet = guildId(6618).ActionSheet;
+  const ActionSheet = guildId(6624).ActionSheet;
   let obj3 = {
     hasIcons: true,
     children: arr.map((label) => {
@@ -35,13 +124,13 @@ export default function OnboardingHomeResourcesSheet(guildId) {
       let obj = height(dependencyMap[10]);
       const resourceChannelIconURL = obj.getResourceChannelIconURL(label);
       let tmp4Result;
-      const ActionSheetRow = guildId(tmp2[9]).ActionSheetRow;
+      const ActionSheetRow = guildId(tmp2[11]).ActionSheetRow;
       const tmp = height;
       if (null != resourceChannelIconURL) {
         const obj3 = { style: size, source: obj4 };
         size = { width: height, height };
         obj4 = { uri: resourceChannelIconURL };
-        tmp4Result = tmp4(tmp(tmp2[11]), obj3);
+        tmp4Result = tmp4(tmp(tmp2[12]), obj3);
       }
       return <ActionSheetRow key={arg0.channelId} label={arg0.title} icon={tmp4Result} onPress={function onPress() {
         const channelId = label.channelId;
@@ -54,4 +143,8 @@ export default function OnboardingHomeResourcesSheet(guildId) {
   };
   const Group = guildId(6620).ActionSheetRow.Group;
   return <ActionSheet>{null}</ActionSheet>;
-};
+});
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/guild_onboarding_home/native/OnboardingHomeResourcesSheet.tsx");
+
+export default tmp3;

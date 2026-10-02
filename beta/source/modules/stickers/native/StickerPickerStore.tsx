@@ -1,13 +1,13 @@
-// Module ID: 9851
-// Function ID: 9852
+// Module ID: 9885
+// Function ID: 9886
 // Name: StickerPickerStore
-// Dependencies: [560, 1248, 2]
+// Dependencies: [570, 1260, 2]
 
-// Module 9851 (StickerPickerStore)
-import module_560 from "module_560" /* 560 */;
+// Module 9885 (StickerPickerStore)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
-let obj = module_560.create((arg0) => {
+let obj = module_570.create((arg0) => {
   let closure_0 = arg0;
   let obj = {
     packToScrollTo: null,

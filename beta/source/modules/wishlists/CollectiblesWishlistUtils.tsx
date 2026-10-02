@@ -1,12 +1,12 @@
-// Module ID: 8231
-// Function ID: 8232
+// Module ID: 8228
+// Function ID: 8229
 // Name: CollectiblesWishlistUtils
-// Dependencies: [1974, 1115, 6974, 2]
+// Dependencies: [1980, 1127, 6978, 2]
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct
 
-// Module 8231 (CollectiblesWishlistUtils)
-import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 6974 */;
+// Module 8228 (CollectiblesWishlistUtils)
+import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 6978 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/wishlists/CollectiblesWishlistUtils.tsx");
@@ -24,19 +24,19 @@ export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSk
     }
   }
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
-    const intl2 = tmp2(1115).intl;
+    const intl2 = tmp2(1127).intl;
     const obj2 = { product: name };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1115).t.lvBzLi, obj2);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1127).t.lvBzLi, obj2);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === type) {
-    const intl = tmp2(1115).intl;
+    const intl = tmp2(1127).intl;
     const obj = { product: name };
-    formatToPlainStringResult = intl.formatToPlainString(tmp2(1115).t.eR7moP, obj);
+    formatToPlainStringResult = intl.formatToPlainString(tmp2(1127).t.eR7moP, obj);
   } else {
     formatToPlainStringResult = name;
     if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
-      const intl3 = tmp2(1115).intl;
+      const intl3 = tmp2(1127).intl;
       const obj3 = { product: name };
-      formatToPlainStringResult = intl3.formatToPlainString(tmp2(1115).t.YFOwHj, obj3);
+      formatToPlainStringResult = intl3.formatToPlainString(tmp2(1127).t.YFOwHj, obj3);
     }
   }
   return formatToPlainStringResult;

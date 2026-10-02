@@ -1,11 +1,11 @@
-// Module ID: 16378
-// Function ID: 16379
+// Module ID: 16380
+// Function ID: 16381
 // Name: VibegrationsTurnPresentation
-// Dependencies: [16349, 2]
+// Dependencies: [16351, 2]
 // Exports: resolveAttachmentHost, resolveTurnPresentation, turnLeadsWithStretch
 
-// Module 16378 (VibegrationsTurnPresentation)
-import VibegrationsTimelineTree from "VibegrationsTimelineTree" /* 16349 */;
+// Module 16380 (VibegrationsTurnPresentation)
+import VibegrationsTimelineTree from "VibegrationsTimelineTree" /* 16351 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTurnPresentation.tsx");

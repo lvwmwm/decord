@@ -1,13 +1,13 @@
-// Module ID: 4986
-// Function ID: 4987
+// Module ID: 4987
+// Function ID: 4988
 // Name: MediaFormatTesters
-// Dependencies: [32, 1364, 4987, 2]
+// Dependencies: [32, 1370, 4988, 2]
 // Exports: isAnimatedImageUrl, isAudioFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl, isWebPlayerVideoFile, isWebPlayerVideoUrl, urlMatchesFileExtension
 
-// Module 4986 (MediaFormatTesters)
-import WebViewWebmSupportTest from "WebViewWebmSupportTest" /* 4987 */;
+// Module 4987 (MediaFormatTesters)
+import WebViewWebmSupportTest from "WebViewWebmSupportTest" /* 4988 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
@@ -104,11 +104,11 @@ export const isAudioFile = function isAudioFile(filename) {
   return isMatch;
 };
 export { isWebPlayerVideoUrl };
-export const isVideoUrl = function isVideoUrl(url) {
+export const isVideoUrl = function isVideoUrl(proxyURL) {
   let flag = false;
   const obj = re8;
-  if (null != url) {
-    const tmp2 = _slicedToArray(url.split(/\?/, 1), 2);
+  if (null != proxyURL) {
+    const tmp2 = _slicedToArray(proxyURL.split(/\?/, 1), 2);
     flag = obj.test(tmp2[0]);
   }
   if (!flag) {
@@ -117,8 +117,8 @@ export const isVideoUrl = function isVideoUrl(url) {
     if (isIOSWithWebMResult) {
       let flag2 = false;
       const obj3 = re6;
-      if (null != url) {
-        const tmp8 = _slicedToArray(url.split(/\?/, 1), 2);
+      if (null != proxyURL) {
+        const tmp8 = _slicedToArray(proxyURL.split(/\?/, 1), 2);
         flag2 = obj3.test(tmp8[0]);
       }
       isIOSWithWebMResult = flag2;

@@ -1,16 +1,16 @@
-// Module ID: 4990
-// Function ID: 4991
+// Module ID: 4991
+// Function ID: 4992
 // Name: LinkUtils
-// Dependencies: [2045, 2067, 4469, 1074, 2052, 4820, 2]
+// Dependencies: [2051, 2073, 4472, 1086, 2058, 4821, 2]
 // Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath, tryParseUserProfilePath
 
-// Module 4990 (LinkUtils)
-import ChannelConstants from "ChannelConstants" /* 2052 */;
-import RegexUtilsDefault from "RegexUtils" /* 4820 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import Constants from "Constants" /* 1074 */;
+// Module 4991 (LinkUtils)
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import RegexUtilsDefault from "RegexUtils" /* 4821 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const ME = Constants.ME;

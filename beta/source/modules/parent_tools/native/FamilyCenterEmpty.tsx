@@ -1,28 +1,73 @@
-// Module ID: 14452
-// Function ID: 14453
+// Module ID: 14440
+// Function ID: 14441
 // Name: FamilyCenterEmpty
-// Dependencies: [19, 17, 21, 4836, 14453, 4832, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 558, 576, 14441, 4833, 2]
 
-// Module 14452 (FamilyCenterEmpty)
-import Text_Text from "Text/Text" /* 4832 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14453 */;
+// Module 14440 (FamilyCenterEmpty)
+import react2 from "react" /* 576 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14441 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let text;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
+let tmp;
+const Text_Text = tmp(4833);
 ({ View: c3, Image: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ art: { marginBottom: 10, width: 243 }, empty: { display: "flex", alignItems: "center" } });
-const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterEmpty.tsx");
-
-export default function FamilyCenterEmpty(text) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
+  let items;
+  let tmp10;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(8);
+  text = text.text;
+  const tmp4 = closure_7();
+  if (cResult[0] !== tmp4.art) {
+    const obj2 = { source: AssetRegistryDefault, style: tmp4.art, resizeMethod: "scale" };
+    const tmp9 = hasOwnProperty(React3, obj2);
+    cResult[0] = tmp4.art;
+    cResult[1] = tmp9;
+    tmp5 = tmp9;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] !== text) {
+    const obj3 = { variant: "text-sm/medium", color: "text-muted", children: text };
+    const tmp12 = hasOwnProperty(Text_Text.Text, obj3);
+    cResult[2] = text;
+    cResult[3] = tmp12;
+    tmp10 = tmp12;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] === tmp4.empty) {
+    if (cResult[5] === tmp5) {
+      let tmp13;
+      if (cResult[6] === tmp10) {
+        tmp13 = cResult[7];
+      }
+      return tmp13;
+    }
+  }
+  const obj4 = { style: tmp4.empty, children: items };
+  items = [tmp5, tmp10];
+  const tmp14 = metroRequire(_false, obj4);
+  cResult[4] = tmp4.empty;
+  cResult[5] = tmp5;
+  cResult[6] = tmp10;
+  cResult[7] = tmp14;
+  tmp13 = tmp14;
+}) : ((text) => {
   let items;
   text = text.text;
   const tmp = closure_7();
@@ -32,4 +77,7 @@ export default function FamilyCenterEmpty(text) {
   items[0] = hasOwnProperty(React3, obj2);
   items[1] = hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", children: text });
   return metroRequire(_false, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterEmpty.tsx");
+
+export default tmp5;

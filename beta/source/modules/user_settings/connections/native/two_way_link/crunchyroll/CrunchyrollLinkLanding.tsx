@@ -1,32 +1,111 @@
-// Module ID: 8574
-// Function ID: 8575
+// Module ID: 8571
+// Function ID: 8572
 // Name: CrunchyrollLinkLanding
-// Dependencies: [19, 8573, 1074, 21, 4836, 1115, 7722, 1485, 8537, 8575, 2111, 2]
-// Exports: default
+// Dependencies: [19, 8570, 1086, 21, 4837, 1127, 7726, 558, 576, 1491, 2114, 8534, 8572, 2]
 
-// Module 8574 (CrunchyrollLinkLanding)
+// Module 8571 (CrunchyrollLinkLanding)
 import Fragment from "Fragment" /* 21 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 8573 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8575 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 8570 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8572 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1074 */;
-import createStyles from "createStyles" /* 4836 */;
+import Constants from "Constants" /* 1086 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation;
+let arr, navigation;
 
 let hasOwnProperty;
 let metroRequire;
-let closure_4 = CrunchyrollLinkConstants.CrunchyrollLinkModalScenes;
+const constants = CrunchyrollLinkConstants.CrunchyrollLinkModalScenes;
 ({ HelpdeskArticles: hasOwnProperty, PlatformTypes: metroRequire } = Constants);
 const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ image: { width: 234, height: 147 } });
-const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkLanding.tsx");
-
-export default function CrunchyrollLinkLanding() {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  let tmp10;
+  let tmp16;
+  let tmp8;
+  let tmp9;
+  const obj = navigation(576);
+  const cResult = obj.c(9);
+  const tmp4 = closure_8();
+  const obj2 = navigation(1491);
+  navigation = obj2.useNavigation();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { label: intl.string(navigation(1127).t["2TXHQd"]), icon: navigation(7726).PlayIcon };
+    intl = tmp(1127).intl;
+    const items = [obj3];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== navigation) {
+    class L {
+      constructor() {
+        arr = closure_0.push(closure_4.PRE_CONNECT);
+        return;
+      }
+    }
+    cResult[1] = navigation;
+    cResult[2] = L;
+  } else {
+    class L {
+      constructor() {
+        arr = closure_0.push(closure_4.PRE_CONNECT);
+        return;
+      }
+    }
+  }
+  const image = tmp4.image;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class L {
+      constructor() {
+        arr = closure_0.push(closure_4.PRE_CONNECT);
+        return;
+      }
+    }
+    const stringResult = obj4.string(navigation(1127).t["Da+3NJ"]);
+    const intl2 = tmp(1127).intl;
+    const stringResult1 = intl2.string(navigation(1127).t.MaPpPL);
+    const obj5 = HelpdeskUtilsDefault;
+    const articleURL = obj5.getArticleURL(constants2.CRUNCHYROLL_CONNECTION);
+    cResult[3] = stringResult;
+    cResult[4] = stringResult1;
+    cResult[5] = articleURL;
+    tmp10 = articleURL;
+    tmp9 = stringResult1;
+    tmp8 = stringResult;
+  } else {
+    class L {
+      constructor() {
+        arr = closure_0.push(closure_4.PRE_CONNECT);
+        return;
+      }
+    }
+    tmp9 = cResult[4];
+    tmp10 = cResult[5];
+  }
+  if (cResult[6] === tmp7) {
+    class L {
+      constructor() {
+        arr = closure_0.push(closure_4.PRE_CONNECT);
+        return;
+      }
+    }
+    return tmp16;
+  }
+  const TwoWayLinkLanding = tmp(8534).TwoWayLinkLanding;
+  tmp16 = <TwoWayLinkLanding platformType={constants3.CRUNCHYROLL} img={AssetRegistryDefault} imgStyle={image} headerConnect={tmp8} body={tmp9} learnMoreLink={tmp10} onNext={tmp7} valueProps={first} />;
+  cResult[6] = tmp7;
+  cResult[7] = tmp4.image;
+  cResult[8] = tmp16;
+}) : (() => {
   const tmp = closure_8();
-  let obj = navigation(1485);
+  let obj = navigation(1491);
   navigation = obj.useNavigation();
   let items = [navigation];
   const memo = react.useMemo(() => {
@@ -39,9 +118,12 @@ export default function CrunchyrollLinkLanding() {
   const callback = react.useCallback(() => {
     navigation.push(constants.PRE_CONNECT);
   }, items);
-  const TwoWayLinkLanding = navigation(8537).TwoWayLinkLanding;
-  let intl = navigation(1115).intl;
-  const intl2 = navigation(1115).intl;
+  const TwoWayLinkLanding = navigation(8534).TwoWayLinkLanding;
+  let intl = navigation(1127).intl;
+  const intl2 = navigation(1127).intl;
   const obj3 = HelpdeskUtilsDefault;
-  return <TwoWayLinkLanding platformType={constants2.CRUNCHYROLL} img={AssetRegistryDefault} imgStyle={tmp.image} headerConnect={intl.string(navigation(1115).t["Da+3NJ"])} body={intl2.string(navigation(1115).t.MaPpPL)} learnMoreLink={obj3.getArticleURL(constants.CRUNCHYROLL_CONNECTION)} onNext={callback} valueProps={memo} />;
-};
+  return <TwoWayLinkLanding platformType={constants3.CRUNCHYROLL} img={AssetRegistryDefault} imgStyle={tmp.image} headerConnect={intl.string(navigation(1127).t["Da+3NJ"])} body={intl2.string(navigation(1127).t.MaPpPL)} learnMoreLink={obj3.getArticleURL(constants2.CRUNCHYROLL_CONNECTION)} onNext={callback} valueProps={memo} />;
+});
+const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkLanding.tsx");
+
+export default tmp3;

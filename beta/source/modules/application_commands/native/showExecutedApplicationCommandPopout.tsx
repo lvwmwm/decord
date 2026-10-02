@@ -1,12 +1,12 @@
-// Module ID: 11115
-// Function ID: 11116
+// Module ID: 10985
+// Function ID: 10986
 // Name: showExecutedApplicationCommandPopout
-// Dependencies: [4800, 11116, 1981, 2]
+// Dependencies: [4801, 10986, 1987, 2]
 // Exports: default
 
-// Module 11115 (showExecutedApplicationCommandPopout)
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+// Module 10985 (showExecutedApplicationCommandPopout)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_commands/native/showExecutedApplicationCommandPopout.tsx");
@@ -14,6 +14,6 @@ const result = size.fileFinishedImporting("modules/application_commands/native/s
 export default function showExecutedApplicationCommandPopout(messageId) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(11116, dependencyMap.paths);
+  const tmp2 = asyncRequire(10986, dependencyMap.paths);
   openLazy(tmp2, "ExecutedCommandPopout:" + messageId.messageId, messageId);
 };

@@ -1,10 +1,10 @@
 // Module ID: 12517
 // Function ID: 12518
 // Name: AssetRegistry
-// Dependencies: [1121]
+// Dependencies: [1133]
 
 // Module 12517 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1121 */;
+import AssetRegistry from "AssetRegistry" /* 1133 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/media_viewer/native/images", width: 24, height: 24, scales: [2, 3], hash: "05e33949de588de2bb105d38c549ac02", name: "ic_eye_hidden", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "6745fd4fca483fd68a467a63f7379a27", name: "ic_volume_mute", type: "png" });

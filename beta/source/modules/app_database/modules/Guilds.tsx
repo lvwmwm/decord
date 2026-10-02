@@ -1,20 +1,20 @@
-// Module ID: 7063
-// Function ID: 7064
+// Module ID: 7067
+// Function ID: 7068
 // Name: Guilds
-// Dependencies: [5, 2063, 502, 2108, 2102, 2067, 3, 2074, 2106, 2104, 2059, 2]
+// Dependencies: [5, 2069, 502, 2111, 2105, 2073, 3, 2077, 2109, 2107, 2065, 2]
 
-// Module 7063 (Guilds)
+// Module 7067 (Guilds)
 import LoggerDefault from "Logger" /* 3 */;
-import GuildRecordUtilsAll from "GuildRecordUtils" /* 2059 */;
-import GuildRecord from "GuildRecord" /* 2063 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
-import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 2104 */;
-import GuildRoleUtilsAll from "GuildRoleUtils" /* 2106 */;
+import GuildRecordUtilsAll from "GuildRecordUtils" /* 2065 */;
+import GuildRecord from "GuildRecord" /* 2069 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2077 */;
+import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 2107 */;
+import GuildRoleUtilsAll from "GuildRoleUtils" /* 2109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildRoleStore from "GuildRoleStore" /* 2102 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildRoleStore from "GuildRoleStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2073 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c2, c3;
@@ -73,7 +73,7 @@ class Guilds {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -139,7 +139,7 @@ class Guilds {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -201,11 +201,11 @@ class Guilds {
             tmp7 = importAll;
           }
           let put = self.put;
-          let tmp7Result = tmp7(2059);
+          let tmp7Result = tmp7(2065);
           let attachSerializedData = tmp7Result.attachSerializedData;
-          let tmp7Result3 = tmp7(2059);
+          let tmp7Result3 = tmp7(2065);
           let fromBackgroundSyncResult = tmp7Result3.fromBackgroundSync(tmp2, tmp23);
-          let tmp7Result4 = tmp7(2104);
+          let tmp7Result4 = tmp7(2107);
           let result = tmp7Result4.toSerializedPartition(filterRoleDeletesResult);
           let putResult = put(attachSerializedData(fromBackgroundSyncResult, result, GuildMemberStore.getSelfMember(tmp2.id)), arg1);
         }

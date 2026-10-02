@@ -1,12 +1,13 @@
-// Module ID: 16939
-// Function ID: 16940
+// Module ID: 16894
+// Function ID: 16895
 // Name: useCanSetVoiceChannelStatus
-// Dependencies: [4469, 1085, 4474, 504, 2]
-// Exports: _canSetVoiceChannelStatus, canSetVoiceChannelStatus, default
+// Dependencies: [4472, 1097, 4477, 558, 576, 504, 2]
+// Exports: _canSetVoiceChannelStatus, canSetVoiceChannelStatus
 
-// Module 16939 (useCanSetVoiceChannelStatus)
-import Constants from "Constants" /* 1085 */;
-import PermissionStore_mod from "PermissionStore" /* 4469 */;
+// Module 16894 (useCanSetVoiceChannelStatus)
+import Constants from "Constants" /* 1097 */;
+import PermissionStore_mod from "PermissionStore" /* 4472 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,9 +18,68 @@ const Permissions = Constants.Permissions;
 let items = [, , ];
 ({ SET_VOICE_CHANNEL_STATUS: arr[0], CONNECT: arr[1], VIEW_CHANNEL: arr[2] } = Permissions);
 let items1 = [Permissions.SET_VOICE_CHANNEL_STATUS];
-const result = size.fileFinishedImporting("modules/calls/useCanSetVoiceChannelStatus.tsx");
-
-export default function useCanSetVoiceChannelStatus(arg0) {
+function _canSetVoiceChannelStatus(arg0, arg1, arg2, arg3) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg3;
+  const obj = arg2 ? items1 : items;
+  return obj.every((permission) => {
+    let canResult;
+    if (null == closure_2) {
+      canResult = closure_1.can(permission, context);
+    } else {
+      const obj2 = { permission, user: tmp, context };
+      const obj = PermissionStore(closure_2_2[2]);
+      canResult = obj.can(obj2);
+    }
+    return canResult;
+  });
+}
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+  let closure_0;
+  let first;
+  _require = arg0;
+  let closure_1 = arg2;
+  let obj = require("react");
+  const cResult = obj.c(6);
+  dependencyMap = tmp4;
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    items = [PermissionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    if (cResult[2] === (undefined !== arg1 && arg1)) {
+      let tmp7;
+      let tmp8;
+      if (cResult[3] === arg2) {
+        tmp7 = cResult[4];
+        tmp8 = cResult[5];
+      }
+      const tmpResult = tmp(504);
+      return tmpResult.useStateFromStores(first, tmp7, tmp8);
+    }
+  }
+  class S {
+    constructor() {
+      closure_1 = closure_3;
+      closure_2 = closure_1;
+      obj = closure_2 ? closure_5 : closure_4;
+      return obj.every(() => { /* body not rendered: F127804 */ });
+    }
+  }
+  items1 = [arg0, undefined !== arg1 && arg1, arg2];
+  cResult[1] = arg0;
+  cResult[2] = undefined !== arg1 && arg1;
+  cResult[3] = arg2;
+  cResult[4] = S;
+  cResult[5] = items1;
+  tmp8 = items1;
+  tmp7 = S;
+}) : ((arg0) => {
   _require = arg0;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -43,24 +103,11 @@ export default function useCanSetVoiceChannelStatus(arg0) {
       return canResult;
     });
   }, items1);
-};
-export const _canSetVoiceChannelStatus = function _canSetVoiceChannelStatus(arg0, arg1, arg2, arg3) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  let closure_2 = arg3;
-  const obj = arg2 ? items1 : items;
-  return obj.every((permission) => {
-    let canResult;
-    if (null == closure_2) {
-      canResult = closure_1.can(permission, context);
-    } else {
-      const obj2 = { permission, user: tmp, context };
-      const obj = PermissionStore(closure_2_2[2]);
-      canResult = obj.can(obj2);
-    }
-    return canResult;
-  });
-};
+});
+const result = size.fileFinishedImporting("modules/calls/useCanSetVoiceChannelStatus.tsx");
+
+export default tmp2;
+export { _canSetVoiceChannelStatus };
 export const canSetVoiceChannelStatus = function canSetVoiceChannelStatus(arg0) {
   let flag = arg1;
   if (arg1 === undefined) {

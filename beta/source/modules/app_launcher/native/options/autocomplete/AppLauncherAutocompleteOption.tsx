@@ -1,27 +1,27 @@
-// Module ID: 11652
-// Function ID: 11653
+// Module ID: 11538
+// Function ID: 11539
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [32, 19, 1074, 21, 4836, 576, 1876, 4800, 11653, 1981, 11651, 5435, 4832, 2]
+// Dependencies: [32, 19, 1086, 21, 4837, 588, 1882, 4801, 11539, 1987, 11536, 5436, 4833, 2]
 // Exports: default
 
-// Module 11652 (AppLauncherAutocompleteOption)
+// Module 11538 (AppLauncherAutocompleteOption)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Pressables from "Pressables" /* 5435 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11651 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1882 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Pressables from "Pressables" /* 5436 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11536 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let tmp4;
-const Text_Text = tmp4(4832);
+const Text_Text = tmp4(4833);
 const Fonts = Constants.Fonts;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -67,7 +67,7 @@ export default function AppLauncherAutocompleteOption(arg0) {
       onDismissAutocompleteSheet: _slicedToArray,
       optionValues: ref.current
     };
-    obj2.openLazy(asyncRequire(11653, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
+    obj2.openLazy(asyncRequire(11539, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
   }
   ({ style, autoFocus } = arg0);
   [initChoice, closure_9] = react.useState(() => {

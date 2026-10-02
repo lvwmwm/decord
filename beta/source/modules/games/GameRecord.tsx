@@ -1,15 +1,15 @@
-// Module ID: 2002
-// Function ID: 2003
+// Module ID: 2008
+// Function ID: 2009
 // Name: GameRecord
-// Dependencies: [1387, 2003, 1979, 2010, 1397, 1370, 2]
+// Dependencies: [1393, 2009, 1985, 2016, 1403, 1376, 2]
 
-// Module 2002 (GameRecord)
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import Server from "Server" /* 1979 */;
-import ApplicationRecord2 from "ApplicationRecord" /* 2003 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2010 */;
-import Record from "Record" /* 1387 */;
+// Module 2008 (GameRecord)
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import AvatarUtils from "AvatarUtils" /* 1403 */;
+import Server from "Server" /* 1985 */;
+import ApplicationRecord2 from "ApplicationRecord" /* 2009 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2016 */;
+import Record from "Record" /* 1393 */;
 import size_mod from "module_2" /* 2 */;
 
 const ApplicationRecord = ApplicationRecord2;
@@ -19,7 +19,7 @@ const createExecutable = ApplicationRecord2.createExecutable;
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/games/GameRecord.tsx");
 class GameRecord extends Record {
-  constructor(executables) {
+  constructor(item10012) {
     let aliases;
     let game_flags;
     let genres;
@@ -27,68 +27,68 @@ class GameRecord extends Record {
     let tmp10;
     let tmp8;
     const tmp5 = new GameRecord(tmp4, tmp3, tmp2, tmp, new.target, this);
-    ({ id: tmp5.id, name: tmp5.name, description: tmp5.description, aliases } = executables);
+    ({ id: tmp5.id, name: tmp5.name, description: tmp5.description, aliases } = item10012);
     if (aliases == null) {
       aliases = [];
     }
     tmp5.aliases = aliases;
-    executables = executables.executables;
+    let executables = item10012.executables;
     if (executables == null) {
       executables = [];
     }
     tmp5.executables = executables.map(createExecutable);
-    let flag = executables.overlay;
+    let flag = item10012.overlay;
     if (flag == null) {
       flag = false;
     }
     tmp5.overlay = flag;
-    let flag2 = executables.overlay_warn;
+    let flag2 = item10012.overlay_warn;
     if (flag2 == null) {
       flag2 = false;
     }
     tmp5.overlayWarn = flag2;
-    let flag3 = executables.overlay_compatibility_hook;
+    let flag3 = item10012.overlay_compatibility_hook;
     if (flag3 == null) {
       flag3 = false;
     }
     tmp5.overlayCompatibilityHook = flag3;
-    let flag4 = executables.hook;
+    let flag4 = item10012.hook;
     if (flag4 == null) {
       flag4 = true;
     }
     tmp5.hook = flag4;
-    tmp5.supportsOutOfProcessOverlay = ApplicationRecord.supportsOutOfProcessOverlay(executables.overlay_methods);
-    let third_party_skus = executables.third_party_skus;
+    tmp5.supportsOutOfProcessOverlay = ApplicationRecord.supportsOutOfProcessOverlay(item10012.overlay_methods);
+    let third_party_skus = item10012.third_party_skus;
     if (third_party_skus == null) {
       third_party_skus = [];
     }
     tmp5.thirdPartySkus = third_party_skus;
-    let themes = executables.themes;
+    let themes = item10012.themes;
     if (themes == null) {
       themes = [];
     }
     tmp5.themes = themes;
-    ({ linked_applications: tmp5.linkedApplications, genres } = executables);
+    ({ linked_applications: tmp5.linkedApplications, genres } = item10012);
     if (genres == null) {
       genres = [];
     }
     tmp5.genres = genres;
-    let platforms = executables.platforms;
+    let platforms = item10012.platforms;
     if (platforms == null) {
       platforms = [];
     }
     tmp5.platforms = platforms;
-    let prop = executables.platform_availability;
+    let prop = item10012.platform_availability;
     if (prop == null) {
       prop = [];
     }
     tmp5.platformAvailability = prop;
-    let websites = executables.websites;
+    let websites = item10012.websites;
     if (websites == null) {
       websites = [];
     }
     tmp5.websites = websites;
-    ({ companies: tmp5.companies, screenshot_hashes: tmp5.screenshotHashes, screenshot_urls: tmp5.screenshotUrls, trailers: tmp5.trailers, l30_rank: tmp5.l30Rank, summary_localized: tmp5.summaryLocalized, media: tmp5.media, first_release_date: tmp5.firstReleaseDate, shop_collection_ids: tmp5.shopCollectionIds, steam_release_status: tmp5.steamReleaseStatus, reviews } = executables);
+    ({ companies: tmp5.companies, screenshot_hashes: tmp5.screenshotHashes, screenshot_urls: tmp5.screenshotUrls, trailers: tmp5.trailers, l30_rank: tmp5.l30Rank, summary_localized: tmp5.summaryLocalized, media: tmp5.media, first_release_date: tmp5.firstReleaseDate, shop_collection_ids: tmp5.shopCollectionIds, steam_release_status: tmp5.steamReleaseStatus, reviews } = item10012);
     let steam;
     if (reviews != null) {
       steam = reviews.steam;
@@ -113,12 +113,12 @@ class GameRecord extends Record {
       }
     }
     tmp5.reviews = tmp8;
-    ({ opencritic_url: tmp5.opencriticUrl, game_flags } = executables);
+    ({ opencritic_url: tmp5.opencriticUrl, game_flags } = item10012);
     if (game_flags == null) {
       game_flags = 0;
     }
     tmp5.gameFlags = game_flags;
-    tmp5.contentClassification = executables.content_classification;
+    tmp5.contentClassification = item10012.content_classification;
     return tmp5;
   }
   getOfficialApplicationId() {
@@ -154,7 +154,7 @@ class GameRecord extends Record {
     const obj = { keepAspectRatio: true, size };
     return tmp(id, banner, obj);
   }
-  getCoverURL(size) {
+  getCoverURL(c8) {
     const media = this.media;
     let cover;
     const id = this.id;
@@ -166,7 +166,7 @@ class GameRecord extends Record {
     if (AvatarUtils.SUPPORTS_WEBP) {
       str = "webp";
     }
-    const obj = { keepAspectRatio: true, format: str, size };
+    const obj = { keepAspectRatio: true, format: str, size: c8 };
     return tmp2(id, cover, obj);
   }
   getArtworkURLs(size) {

@@ -1,10 +1,10 @@
-// Module ID: 13357
-// Function ID: 13358
+// Module ID: 13359
+// Function ID: 13360
 // Name: ServerLadderExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1441, 2]
 
-// Module 13357 (ServerLadderExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 13359 (ServerLadderExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

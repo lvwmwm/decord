@@ -1,21 +1,66 @@
-// Module ID: 15959
-// Function ID: 15960
+// Module ID: 15960
+// Function ID: 15961
 // Name: VoiceSubtitle
-// Dependencies: [19, 21, 4832, 1115, 4988, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 4989, 1127, 4833, 2]
 
-// Module 15959 (VoiceSubtitle)
+// Module 15960 (VoiceSubtitle)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1115 */;
-import Text_Text from "Text/Text" /* 4832 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
+import intl2 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/home_drawer/native/subtitles/VoiceSubtitle.tsx");
+let guildId;
 
-export default function VoiceSubtitle(arg0) {
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let mapped;
+  let tmp5;
+  let obj = guildId(576);
+  const cResult = obj.c(7);
+  guildId = guildId.guildId;
+  const voiceUsers = guildId.voiceUsers;
+  if (cResult[0] === guildId) {
+    let tmp4;
+    let tmp7;
+    if (cResult[1] === voiceUsers) {
+      tmp4 = cResult[2];
+    }
+    if (cResult[5] !== tmp4) {
+      const tmp9 = jsx(guildId(4833).Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 });
+      cResult[5] = tmp4;
+      cResult[6] = tmp9;
+      tmp7 = tmp9;
+    } else {
+      tmp7 = cResult[6];
+    }
+    return tmp7;
+  }
+  if (cResult[3] !== guildId) {
+    const fn = function l(arg0) {
+      const obj = NicknameUtilsDefault;
+      return obj.getName(guildId, null, arg0);
+    };
+    cResult[3] = guildId;
+    cResult[4] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[4];
+  }
+  const intl = tmp(1127).intl;
+  const format = intl.format;
+  const obj3 = { users: mapped.join(", "), overflowCount: Math.max(voiceUsers.length - 2, 0) };
+  const r1Vkoc = tmp(1127).t.r1Vkoc;
+  const substr = voiceUsers.slice(0, 2);
+  mapped = substr.map(tmp5);
+  const formatResult = format(r1Vkoc, obj3);
+  cResult[0] = guildId;
+  cResult[1] = voiceUsers;
+  cResult[2] = formatResult;
+  tmp4 = formatResult;
+}) : ((arg0) => {
   let mapped;
   let voiceUsers;
   ({ guildId: require, voiceUsers } = arg0);
@@ -30,4 +75,7 @@ export default function VoiceSubtitle(arg0) {
     return obj.getName(require, null, item);
   });
   return <Text variant="text-xs/medium" color="text-voice-connected" lineClamp={1}>{format(r1Vkoc, obj2)}</Text>;
-};
+});
+const result = size.fileFinishedImporting("modules/home_drawer/native/subtitles/VoiceSubtitle.tsx");
+
+export default tmp3;

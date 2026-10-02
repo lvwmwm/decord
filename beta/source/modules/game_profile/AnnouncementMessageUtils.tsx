@@ -1,13 +1,13 @@
-// Module ID: 8214
-// Function ID: 8215
+// Module ID: 8211
+// Function ID: 8212
 // Name: AnnouncementMessageUtils
-// Dependencies: [4480, 1979, 5066, 4986, 8215, 5058, 8216, 1115, 1366, 2]
+// Dependencies: [4483, 1985, 5067, 4987, 8212, 5059, 8213, 1127, 1372, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 8214 (AnnouncementMessageUtils)
-import URLUtilsDefault from "URLUtils" /* 1366 */;
-import MessageRecord from "MessageRecord" /* 4480 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 8216 */;
+// Module 8211 (AnnouncementMessageUtils)
+import URLUtilsDefault from "URLUtils" /* 1372 */;
+import MessageRecord from "MessageRecord" /* 4483 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 8213 */;
 import size from "module_2" /* 2 */;
 
 let reactions;
@@ -255,25 +255,25 @@ export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
   const obj = useFormattedExpirationLabel;
   let result = obj.formatExpirationLabel(poll.expiry);
   if (result == null) {
-    const intl = tmp(1115).intl;
-    result = intl.string(tmp(1115).t["e+J3JZ"]);
+    const intl = tmp(1127).intl;
+    result = intl.string(tmp(1127).t["e+J3JZ"]);
   }
   return result;
 };
-export const getPosterUrl = function getPosterUrl(proxyUrl, arg1, arg2) {
+export const getPosterUrl = function getPosterUrl(proxyUrl, c12, c11) {
   const obj = URLUtilsDefault;
   const str = obj.toURLSafe(proxyUrl);
   let str1 = null;
   if (null != str) {
     const searchParams = str.searchParams;
     searchParams.append("format", "webp");
-    if (null != arg1) {
+    if (null != c12) {
       const searchParams2 = str.searchParams;
-      searchParams2.append("width", arg1.toString());
+      searchParams2.append("width", c12.toString());
     }
-    if (null != arg2) {
+    if (null != c11) {
       const searchParams3 = str.searchParams;
-      searchParams3.append("height", arg2.toString());
+      searchParams3.append("height", c11.toString());
     }
     str1 = str.toString();
   }

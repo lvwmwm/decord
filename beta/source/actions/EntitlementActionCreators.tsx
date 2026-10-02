@@ -1,12 +1,12 @@
-// Module ID: 6820
-// Function ID: 6821
+// Module ID: 6821
+// Function ID: 6822
 // Name: EntitlementActionCreators
-// Dependencies: [5, 1074, 573, 1271, 5092, 2]
+// Dependencies: [5, 1086, 585, 1283, 5093, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 6820 (EntitlementActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
+// Module 6821 (EntitlementActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,9 +49,9 @@ let obj = function _fetchUserEntitlements() {
         obj.dispatch(obj10);
         c4 = 0;
       }
-      await "HermesInternal";
+      await "IconComponent";
       entitlementType = tmp36.entitlementType;
-      return "flex";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -71,7 +71,7 @@ obj = function _fetchGiftableEntitlements() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -120,7 +120,7 @@ obj = function _fetchGiftableEntitlements() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp16) {
         let closure_2 = tmp16;

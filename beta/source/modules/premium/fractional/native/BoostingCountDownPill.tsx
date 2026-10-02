@@ -1,18 +1,19 @@
-// Module ID: 13056
-// Function ID: 13057
+// Module ID: 13058
+// Function ID: 13059
 // Name: BoostingCountDownPill
-// Dependencies: [17, 21, 4836, 576, 4800, 13057, 1981, 1115, 4832, 2]
-// Exports: default
+// Dependencies: [17, 21, 4837, 588, 4801, 13059, 1987, 1127, 558, 576, 4833, 2]
 
-// Module 13056 (BoostingCountDownPill)
-import nativeDefault from "native" /* 576 */;
-import intl2 from "intl" /* 1115 */;
-import asyncRequire from "asyncRequire" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import Text_Text from "Text/Text" /* 4832 */;
+// Module 13058 (BoostingCountDownPill)
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Text_Text from "Text/Text" /* 4833 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -26,7 +27,7 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: intl.string(intl2.t["07lzz7"]) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(13057, dependencyMap.paths);
+  const tmp2 = asyncRequire(13059, dependencyMap.paths);
   intl = intl2.intl;
   openLazy(tmp2, "NitroCreditEducationActionSheet", obj);
 }
@@ -38,9 +39,118 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, flexDire
 createStyles = createStyles.createStyles;
 obj3 = { flex: 1, paddingVertical: 12, paddingHorizontal: 27, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: nativeDefault.radii.xxl, justifyContent: "center" };
 let closure_7 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/premium/fractional/native/BoostingCountDownPill.tsx");
-
-export default function BoostingCountDownPill(style) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let Text;
+  let fpDurationText;
+  let isInReverseTrial;
+  let items;
+  let obj7;
+  let style;
+  const obj = react;
+  const cResult = obj.c(21);
+  ({ fpDurationText, isInReverseTrial, style } = arg0);
+  const tmp4 = closure_7();
+  if (cResult[0] === style) {
+    let tmp6;
+    if (cResult[1] === tmp4.fractionalPremiumBanner) {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] === fpDurationText) {
+      if (cResult[4] === isInReverseTrial) {
+        if (cResult[5] === tmp4.fpDurationPill) {
+          let tmp7;
+          let tmp13;
+          let tmp15;
+          if (cResult[6] === tmp4.fpDurationText) {
+            tmp7 = cResult[7];
+          }
+          let prop;
+          const fpUnavailable = tmp4.fpUnavailable;
+          if (isInReverseTrial) {
+            prop = tmp4.fpUnavailableTextNoCountdown;
+          }
+          const _Symbol = Symbol;
+          if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+            const intl = tmp(1127).intl;
+            const stringResult = intl.string(intl2.t["5nrJDO"]);
+            cResult[8] = stringResult;
+            tmp13 = stringResult;
+          } else {
+            tmp13 = cResult[8];
+          }
+          if (cResult[9] !== prop) {
+            const obj2 = { variant: "text-md/normal", color: "interactive-text-active", style: prop, children: tmp13 };
+            const tmp17 = hasOwnProperty(Text_Text.Text, obj2);
+            cResult[9] = prop;
+            cResult[10] = tmp17;
+            tmp15 = tmp17;
+          } else {
+            tmp15 = cResult[10];
+          }
+          if (cResult[11] === tmp4.fpUnavailable) {
+            let tmp18;
+            if (cResult[12] === tmp15) {
+              tmp18 = cResult[13];
+            }
+            if (cResult[14] === tmp6) {
+              if (cResult[15] === tmp7) {
+                let tmp22;
+                if (cResult[16] === tmp18) {
+                  tmp22 = cResult[17];
+                }
+                if (cResult[18] === tmp5) {
+                  let tmp26;
+                  if (cResult[19] === tmp22) {
+                    tmp26 = cResult[20];
+                  }
+                  return tmp26;
+                }
+                const obj3 = { activeOpacity: 0.7, onPress: tmp5, children: tmp22 };
+                const tmp29 = hasOwnProperty(_false, obj3);
+                cResult[18] = tmp5;
+                cResult[19] = tmp22;
+                cResult[20] = tmp29;
+                tmp26 = tmp29;
+              }
+            }
+            const obj4 = { style: tmp6, children: items };
+            items = [tmp7, tmp18];
+            const tmp25 = metroRequire(React3, obj4);
+            cResult[14] = tmp6;
+            cResult[15] = tmp7;
+            cResult[16] = tmp18;
+            cResult[17] = tmp25;
+            tmp22 = tmp25;
+          }
+          const obj5 = { style: fpUnavailable, children: tmp15 };
+          const tmp21 = hasOwnProperty(React3, obj5);
+          cResult[11] = tmp4.fpUnavailable;
+          cResult[12] = tmp15;
+          cResult[13] = tmp21;
+          tmp18 = tmp21;
+        }
+      }
+    }
+    let tmp8 = !isInReverseTrial;
+    if (tmp8) {
+      const obj6 = { style: tmp4.fpDurationPill, children: hasOwnProperty(Text, obj7) };
+      obj7 = { variant: "text-sm/bold", style: tmp4.fpDurationText, children: fpDurationText.toUpperCase() };
+      Text = tmp(4833).Text;
+      tmp8 = hasOwnProperty(React3, obj6);
+    }
+    cResult[3] = fpDurationText;
+    cResult[4] = isInReverseTrial;
+    cResult[5] = tmp4.fpDurationPill;
+    cResult[6] = tmp4.fpDurationText;
+    cResult[7] = tmp8;
+    tmp7 = tmp8;
+  }
+  const items1 = [tmp4.fractionalPremiumBanner, style];
+  cResult[0] = style;
+  cResult[1] = tmp4.fractionalPremiumBanner;
+  cResult[2] = items1;
+  tmp6 = items1;
+}) : ((style) => {
   let Text;
   let Text2;
   let fpDurationText;
@@ -79,7 +189,10 @@ export default function BoostingCountDownPill(style) {
     prop = tmp.fpUnavailableTextNoCountdown;
   }
   obj6 = { variant: "text-md/normal", color: "interactive-text-active", style: prop, children: intl.string(intl2.t["5nrJDO"]) };
-  intl = tmp10(1115).intl;
+  intl = tmp10(1127).intl;
   items1[1] = hasOwnProperty(React3, obj5);
   return hasOwnProperty(tmp3, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/premium/fractional/native/BoostingCountDownPill.tsx");
+
+export default tmp5;

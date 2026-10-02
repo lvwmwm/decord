@@ -1,0 +1,91 @@
+// Module ID: 6114
+// Function ID: 6115
+// Name: attachHandlers
+// Dependencies: [17, 6098, 6090, 6095, 6097, 6070, 6099, 6100]
+// Exports: attachHandlers
+
+// Module 6114 (attachHandlers)
+import react_native from "react-native" /* 17 */;
+import ALLOWED_PROPS from "ALLOWED_PROPS" /* 6090 */;
+import react_nativeDefault from "react-native" /* 6095 */;
+import selectProperties from "selectProperties" /* 6097 */;
+
+const Platform = react_native.Platform;
+
+export const attachHandlers = function attachHandlers(preparedGesture) {
+  let handlerName;
+  let handlerTag;
+  preparedGesture = preparedGesture.preparedGesture;
+  const gestureConfig = preparedGesture.gestureConfig;
+  const gesturesToAttach = preparedGesture.gesturesToAttach;
+  const viewTag = preparedGesture.viewTag;
+  gestureConfig.initialize();
+  let obj = preparedGesture(gesturesToAttach[1]);
+  obj.ghQueueMicrotask(() => {
+    if (preparedGesture.isMounted) {
+      gestureConfig.prepare();
+    }
+  });
+  for (const item10022 of gesturesToAttach) {
+    let tmp3 = preparedGesture;
+    let tmp4 = preparedGesture;
+    let tmp5 = gesturesToAttach;
+    let tmp6 = gesturesToAttach;
+    let obj2 = preparedGesture(gesturesToAttach[2]);
+    let result = obj2.checkGestureCallbacksForWorklets(item10022);
+    let tmp8 = gestureConfig;
+    let tmp9 = gestureConfig(gesturesToAttach[3]);
+    let createGestureHandler = tmp9.createGestureHandler;
+    ({ handlerName, handlerTag } = item10022);
+    let obj3 = preparedGesture(gesturesToAttach[4]);
+    let gestureHandler = createGestureHandler(handlerName, handlerTag, obj3.filterConfig(item10022.config, preparedGesture(gesturesToAttach[2]).ALLOWED_PROPS));
+    let obj4 = preparedGesture(gesturesToAttach[5]);
+    let registerHandlerResult = obj4.registerHandler(item10022.handlerTag, item10022, item10022.config.testId);
+    continue;
+  }
+  const obj5 = preparedGesture(gesturesToAttach[1]);
+  obj5.ghQueueMicrotask(() => {
+    if (preparedGesture.isMounted) {
+      for (const item10007 of gesturesToAttach) {
+        let tmp5 = react_nativeDefault;
+        let setGestureHandlerConfig = tmp5.setGestureHandlerConfig;
+        let handlerTag = item10007.handlerTag;
+        let obj = selectProperties;
+        let result = setGestureHandlerConfig(handlerTag, obj.filterConfig(item10007.config, ALLOWED_PROPS.ALLOWED_PROPS));
+        let tmp12 = react_nativeDefault;
+        let configureRelations = tmp12.configureRelations;
+        let handlerTag2 = item10007.handlerTag;
+        let obj2 = ALLOWED_PROPS;
+        let configureRelationsResult = configureRelations(handlerTag2, obj2.extractGestureRelations(item10007));
+        continue;
+      }
+      const obj3 = selectProperties;
+      const result1 = obj3.scheduleFlushOperations();
+    }
+  });
+  for (const item10067 of gesturesToAttach) {
+    let JS_FUNCTION_NEW_API;
+    let tmp13 = item10067;
+    let tmp17 = gesturesToAttach;
+    let shouldUseReanimated = item10067.shouldUseReanimated;
+    let tmp14 = preparedGesture;
+    let tmp15 = preparedGesture;
+    let ActionType = preparedGesture(gesturesToAttach[6]).ActionType;
+    if (shouldUseReanimated) {
+      JS_FUNCTION_NEW_API = ActionType.REANIMATED_WORKLET;
+    } else {
+      JS_FUNCTION_NEW_API = ActionType.JS_FUNCTION_NEW_API;
+    }
+    let obj6 = gestureConfig(tmp17[3]);
+    let attachGestureHandlerResult = obj6.attachGestureHandler(tmp13.handlerTag, viewTag, JS_FUNCTION_NEW_API);
+    let MountRegistry = tmp15(tmp17[7]).MountRegistry;
+    let gestureWillMountResult = MountRegistry.gestureWillMount(tmp13);
+    continue;
+  }
+  preparedGesture.attachedGestures = gesturesToAttach;
+  if (preparedGesture.animatedHandlers) {
+    const animatedHandlers = preparedGesture.animatedHandlers;
+    const found = gesturesToAttach.filter((shouldUseReanimated) => shouldUseReanimated.shouldUseReanimated);
+    animatedHandlers.value = found.map((handlers) => handlers.handlers);
+  }
+};

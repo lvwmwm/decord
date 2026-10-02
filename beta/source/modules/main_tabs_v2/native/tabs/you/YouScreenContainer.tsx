@@ -1,20 +1,25 @@
-// Module ID: 16601
-// Function ID: 16602
+// Module ID: 16603
+// Function ID: 16604
 // Name: YouScreenContainer
-// Dependencies: [19, 17, 10549, 21, 4836, 576, 1613, 15647, 1479, 4695, 16602, 1365, 2]
+// Dependencies: [19, 17, 10581, 21, 4837, 588, 558, 576, 1619, 15647, 1485, 4697, 16604, 1371, 2]
 
-// Module 16601 (YouScreenContainer)
+// Module 16603 (YouScreenContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import useChatLayoutDefault from "useChatLayout" /* 4695 */;
-import MainTabsConstants from "MainTabsConstants" /* 10549 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import useChatLayoutDefault from "useChatLayout" /* 4697 */;
+import MainTabsConstants from "MainTabsConstants" /* 10581 */;
 import TabsPerformanceTracker from "TabsPerformanceTracker" /* 15647 */;
+import YouScreenDefault from "YouScreen" /* 16604 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let route;
 
 let obj2;
 let obj3;
@@ -29,7 +34,100 @@ createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, borderRadius: nativeDefault.radii.none };
 obj4 = { flex: 1, borderRadius: nativeDefault.radii.xl, overflow: "hidden" };
 let closure_6 = createStyles(obj);
-const memoResult = react.memo(function YouScreenContainer(route) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
+  let initialTab;
+  let items;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(15);
+  route = route.route;
+  const tmp4 = closure_6();
+  const top = useSafeAreaInsetsDefault().top;
+  const obj2 = TabsPerformanceTracker;
+  const trackTabPerformance = obj2.useTrackTabPerformance(RootNavigatorScreen.YOU);
+  if (route != null) {
+    const params = route.params;
+    if (params != null) {
+      initialTab = params.initialTab;
+    }
+  }
+  const width = tmp5(1485)().width;
+  if (useChatLayoutDefault().isChatBesideChannelList) {
+    if (cResult[2] === top) {
+      let tmp10;
+      if (cResult[3] === tmp4.androidContainer) {
+        tmp10 = cResult[4];
+      }
+      if (cResult[5] === tmp4.container) {
+        let tmp14;
+        let tmp16Result;
+        if (cResult[6] === tmp10) {
+          tmp14 = cResult[7];
+        }
+        if (cResult[8] === initialTab) {
+          if (cResult[9] === tmp4.wrapper) {
+            let tmp15;
+            if (cResult[10] === width) {
+              tmp15 = cResult[11];
+            }
+            if (cResult[12] === tmp14) {
+              let tmp19;
+              if (cResult[13] === tmp15) {
+                tmp19 = cResult[14];
+              }
+              tmp7 = tmp19;
+            }
+            const tmp22 = <View style={tmp14}>{tmp15}</View>;
+            cResult[12] = tmp14;
+            cResult[13] = tmp15;
+            cResult[14] = tmp22;
+            tmp19 = tmp22;
+          }
+        }
+        const tmpResult = utils_PlatformUtils;
+        if (tmpResult.isAndroid()) {
+          const obj4 = { style: items, children: null };
+          items = [tmp4.wrapper, ];
+          const obj5 = { maxWidth: 0.6 * width };
+          items[1] = obj5;
+          tmp16Result = tmp16(View, obj4);
+        } else {
+          const obj7 = { initialTab };
+          tmp16Result = tmp16(tmp5(16604), obj7);
+        }
+        cResult[8] = initialTab;
+        cResult[9] = tmp4.wrapper;
+        cResult[10] = width;
+        cResult[11] = tmp16Result;
+        tmp15 = tmp16Result;
+      }
+      const items1 = [tmp4.container, tmp10];
+      cResult[5] = tmp4.container;
+      cResult[6] = tmp10;
+      cResult[7] = items1;
+      tmp14 = items1;
+    }
+    let tmp11;
+    const tmpResult2 = utils_PlatformUtils;
+    if (tmpResult2.isAndroid()) {
+      const obj8 = { paddingTop: top };
+      const merged = Object.assign(tmp4.androidContainer);
+      tmp11 = obj8;
+    }
+    cResult[2] = top;
+    cResult[3] = tmp4.androidContainer;
+    cResult[4] = tmp11;
+    tmp10 = tmp11;
+  } else if (cResult[0] !== initialTab) {
+    const tmp9 = jsx(YouScreenDefault, { initialTab });
+    cResult[0] = initialTab;
+    cResult[1] = tmp9;
+    tmp7 = tmp9;
+  } else {
+    tmp7 = cResult[1];
+  }
+  return tmp7;
+}) : ((route) => {
   let initialTab;
   let items1;
   let tmp6Result;
@@ -45,7 +143,7 @@ const memoResult = react.memo(function YouScreenContainer(route) {
       initialTab = params.initialTab;
     }
   }
-  const width = tmp2(1479)().width;
+  const width = tmp2(1485)().width;
   if (useChatLayoutDefault().isChatBesideChannelList) {
     const items = [tmp.container, ];
     let tmp9;
@@ -66,15 +164,15 @@ const memoResult = react.memo(function YouScreenContainer(route) {
       tmp6Result = tmp6(tmp8, obj4);
     } else {
       const obj7 = { initialTab };
-      tmp6Result = tmp6(tmp2(16602), obj7);
+      tmp6Result = tmp6(tmp2(16604), obj7);
     }
     tmp6Result2 = tmp6(tmp8, obj3);
   } else {
     const obj8 = { initialTab };
-    tmp6Result2 = tmp6(tmp2(16602), obj8);
+    tmp6Result2 = tmp6(tmp2(16604), obj8);
   }
   return tmp6Result2;
-});
+}));
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenContainer.tsx");
 
 export default memoResult;

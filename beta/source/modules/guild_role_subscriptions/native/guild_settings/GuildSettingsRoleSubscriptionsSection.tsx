@@ -1,31 +1,235 @@
-// Module ID: 17295
-// Function ID: 17296
+// Module ID: 17297
+// Function ID: 17298
 // Name: GuildSettingsRoleSubscriptionsSection
-// Dependencies: [19, 2063, 1372, 1074, 21, 504, 5999, 1115, 5917, 17296, 17297, 17298, 17299, 6678, 2]
-// Exports: default
+// Dependencies: [19, 2069, 1378, 1086, 21, 558, 576, 504, 1127, 5916, 17298, 17299, 17300, 17301, 5997, 6679, 2]
 
-// Module 17295 (GuildSettingsRoleSubscriptionsSection)
+// Module 17297 (GuildSettingsRoleSubscriptionsSection)
 import get_initialized from "get initialized" /* 504 */;
-import intl6 from "intl" /* 1115 */;
-import GuildRecord from "GuildRecord" /* 2063 */;
-import TableRow5 from "TableRow" /* 5917 */;
-import TableRowGroup2 from "TableRowGroup" /* 5999 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6678 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17296 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17297 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 17298 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 17299 */;
+import react2 from "react" /* 576 */;
+import intl6 from "intl" /* 1127 */;
+import GuildRecord from "GuildRecord" /* 2069 */;
+import TableRow5 from "TableRow" /* 5916 */;
+import TableRowGroup2 from "TableRowGroup" /* 5997 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6679 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17298 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17299 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 17300 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 17301 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-function HasCreatedListingsSection(arg0) {
+const isGuildOwner = GuildRecord.isGuildOwner;
+({ GuildFeatures: hasOwnProperty, GuildSettingsSections: metroRequire } = Constants);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+  let Icon3;
+  let first;
+  let intl4;
+  let items1;
+  let obj10;
+  let tmp10;
+  let tmp12;
+  let tmp16;
+  let tmp19;
+  let tmp21;
+  let tmp25;
+  let tmp6;
+  let tmp8;
+  let obj = guild(576);
+  const cResult = obj.c(25);
+  guild = guild.guild;
+  const pushScreen = guild.pushScreen;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guild) {
+    const fn = function c() {
+      return isGuildOwner(guild, UserStore.getCurrentUser());
+    };
+    cResult[1] = guild;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = guild(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(guild(1127).t["KzCF/6"]);
+    cResult[3] = stringResult;
+    tmp8 = stringResult;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl2 = tmp(1127).intl;
+    const stringResult1 = intl2.string(guild(1127).t["/CfKoD"]);
+    cResult[4] = stringResult1;
+    tmp10 = stringResult1;
+  } else {
+    tmp10 = cResult[4];
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { source: pushScreen(17298) };
+    const Icon = tmp(5916).TableRow.Icon;
+    const tmp15 = closure_7(Icon, obj2);
+    cResult[5] = tmp15;
+    tmp12 = tmp15;
+  } else {
+    tmp12 = cResult[5];
+  }
+  if (cResult[6] !== pushScreen) {
+    const obj3 = {
+      label: tmp10,
+      arrow: true,
+      icon: tmp12,
+      onPress() {
+          return pushScreen(metroRequire.ROLE_SUBSCRIPTIONS_BASIC);
+        }
+    };
+    const tmp18 = closure_7(guild(5916).TableRow, obj3, "guild-role-subscriptions-basic");
+    cResult[6] = pushScreen;
+    cResult[7] = tmp18;
+    tmp16 = tmp18;
+  } else {
+    tmp16 = cResult[7];
+  }
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl3 = tmp(1127).intl;
+    const stringResult2 = intl3.string(guild(1127).t.pXbGYc);
+    cResult[8] = stringResult2;
+    tmp19 = stringResult2;
+  } else {
+    tmp19 = cResult[8];
+  }
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj4 = { source: pushScreen(17299) };
+    const Icon2 = tmp(5916).TableRow.Icon;
+    const tmp24 = closure_7(Icon2, obj4);
+    cResult[9] = tmp24;
+    tmp21 = tmp24;
+  } else {
+    tmp21 = cResult[9];
+  }
+  if (cResult[10] !== pushScreen) {
+    const obj5 = {
+      label: tmp19,
+      arrow: true,
+      icon: tmp21,
+      onPress() {
+          return pushScreen(metroRequire.ROLE_SUBSCRIPTIONS_TIERS);
+        }
+    };
+    const tmp27 = closure_7(guild(5916).TableRow, obj5, "guild-role-subscriptions-tiers");
+    cResult[10] = pushScreen;
+    cResult[11] = tmp27;
+    tmp25 = tmp27;
+  } else {
+    tmp25 = cResult[11];
+  }
+  if (cResult[12] === guild) {
+    if (cResult[13] === pushScreen) {
+      let tmp28;
+      let tmp32;
+      let tmp34;
+      let tmp38;
+      if (cResult[14] === stateFromStores) {
+        tmp28 = cResult[15];
+      }
+      const _Symbol = Symbol;
+      if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl5 = tmp(1127).intl;
+        const stringResult3 = intl5.string(guild(1127).t.C5Dbwn);
+        cResult[16] = stringResult3;
+        tmp32 = stringResult3;
+      } else {
+        tmp32 = cResult[16];
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj6 = { source: pushScreen(17301) };
+        const Icon4 = tmp(5916).TableRow.Icon;
+        const tmp37 = closure_7(Icon4, obj6);
+        cResult[17] = tmp37;
+        tmp34 = tmp37;
+      } else {
+        tmp34 = cResult[17];
+      }
+      if (cResult[18] !== pushScreen) {
+        const obj7 = {
+          label: tmp32,
+          arrow: true,
+          icon: tmp34,
+          onPress() {
+                  return pushScreen(metroRequire.ROLE_SUBSCRIPTIONS_EMOJIS);
+                }
+        };
+        const tmp40 = closure_7(guild(5916).TableRow, obj7, "guild-role-subscriptions-emojis");
+        cResult[18] = pushScreen;
+        cResult[19] = tmp40;
+        tmp38 = tmp40;
+      } else {
+        tmp38 = cResult[19];
+      }
+      if (cResult[20] === tmp28) {
+        if (cResult[21] === tmp38) {
+          if (cResult[22] === tmp16) {
+            let tmp41;
+            if (cResult[23] === tmp25) {
+              tmp41 = cResult[24];
+            }
+            return tmp41;
+          }
+        }
+      }
+      const obj8 = { title: tmp8, hasIcons: true, children: items1 };
+      items1 = [tmp16, tmp25, tmp28, tmp38];
+      const tmp43 = closure_8(guild(5997).TableRowGroup, obj8);
+      cResult[20] = tmp28;
+      cResult[21] = tmp38;
+      cResult[22] = tmp16;
+      cResult[23] = tmp25;
+      cResult[24] = tmp43;
+      tmp41 = tmp43;
+    }
+  }
+  let tmp29 = stateFromStores;
+  if (tmp29) {
+    const obj9 = {
+      label: intl4.string(guild(1127).t.p2Rsdl),
+      arrow: true,
+      icon: closure_7(Icon3, obj10),
+      onPress() {
+          const obj = { guildId: guild.id };
+          return pushScreen(metroRequire.ROLE_SUBSCRIPTIONS_PAYMENTS, obj);
+        }
+    };
+    const TableRow = tmp(5916).TableRow;
+    intl4 = tmp(1127).intl;
+    obj10 = { source: pushScreen(17300) };
+    Icon3 = tmp(5916).TableRow.Icon;
+    tmp29 = closure_7(TableRow, obj9, "guild-role-subscriptions-payments");
+  }
+  cResult[12] = guild;
+  cResult[13] = pushScreen;
+  cResult[14] = stateFromStores;
+  cResult[15] = tmp29;
+  tmp28 = tmp29;
+}) : ((arg0) => {
   let Icon;
   let Icon2;
   let Icon3;
@@ -85,10 +289,10 @@ function HasCreatedListingsSection(arg0) {
           return importDefault(metroRequire.ROLE_SUBSCRIPTIONS_PAYMENTS, obj);
         }
     };
-    const TableRow3 = tmp(5917).TableRow;
-    intl4 = tmp(1115).intl;
+    const TableRow3 = tmp(5916).TableRow;
+    intl4 = tmp(1127).intl;
     obj8 = { source: AssetRegistryDefault3 };
-    Icon3 = tmp(5917).TableRow.Icon;
+    Icon3 = tmp(5916).TableRow.Icon;
     stateFromStores = tmp5(TableRow3, obj7, "guild-role-subscriptions-payments");
   }
   items1[2] = stateFromStores;
@@ -100,19 +304,43 @@ function HasCreatedListingsSection(arg0) {
       return importDefault(metroRequire.ROLE_SUBSCRIPTIONS_EMOJIS);
     }
   };
-  const TableRow4 = tmp(5917).TableRow;
-  intl5 = tmp(1115).intl;
+  const TableRow4 = tmp(5916).TableRow;
+  intl5 = tmp(1127).intl;
   obj10 = { source: AssetRegistryDefault4 };
-  Icon4 = tmp(5917).TableRow.Icon;
+  Icon4 = tmp(5916).TableRow.Icon;
   items1[3] = closure_7(TableRow4, obj9, "guild-role-subscriptions-emojis");
   return tmp4(TableRowGroup, obj2);
-}
-const isGuildOwner = GuildRecord.isGuildOwner;
-({ GuildFeatures: hasOwnProperty, GuildSettingsSections: metroRequire } = Constants);
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsSection.tsx");
-
-export default function GuildSettingsRoleSubscriptionsSection(guild) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let guild;
+  let pushScreen;
+  const obj = react2;
+  const cResult = obj.c(3);
+  ({ guild, pushScreen } = arg0);
+  let tmp2 = null;
+  const obj2 = GuildRoleSubscriptionSettingUtils;
+  if (obj2.useCanSeeGuildRoleSubscriptionSettings(guild)) {
+    const features = guild.features;
+    tmp2 = null;
+    if (features.has(hasOwnProperty.ROLE_SUBSCRIPTIONS_ENABLED)) {
+      if (cResult[0] === guild) {
+        let tmp4;
+        if (cResult[1] === pushScreen) {
+          tmp4 = cResult[2];
+        }
+        tmp2 = tmp4;
+      }
+      const obj3 = { pushScreen, guild };
+      const tmp7 = metroImportDefault(closure_9, obj3);
+      cResult[0] = guild;
+      cResult[1] = pushScreen;
+      cResult[2] = tmp7;
+      tmp4 = tmp7;
+    }
+  }
+  return tmp2;
+}) : ((guild) => {
   guild = guild.guild;
   const pushScreen = guild.pushScreen;
   let tmp = null;
@@ -122,8 +350,11 @@ export default function GuildSettingsRoleSubscriptionsSection(guild) {
     tmp = null;
     if (features.has(hasOwnProperty.ROLE_SUBSCRIPTIONS_ENABLED)) {
       const obj2 = { pushScreen, guild };
-      tmp = metroImportDefault(HasCreatedListingsSection, obj2);
+      tmp = metroImportDefault(closure_9, obj2);
     }
   }
   return tmp;
-};
+});
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsSection.tsx");
+
+export default tmp5;

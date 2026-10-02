@@ -1,14 +1,14 @@
-// Module ID: 7891
-// Function ID: 7892
+// Module ID: 7895
+// Function ID: 7896
 // Name: GoogleWalletActionCreators
-// Dependencies: [5, 502, 1074, 7867, 1271, 7892, 2]
+// Dependencies: [5, 502, 1086, 7871, 1283, 7896, 2]
 // Exports: checkGoogleWalletAvailable, getGoogleWalletCredential, requestGoogleWalletVerification, verifyGoogleWalletCredential
 
-// Module 7891 (GoogleWalletActionCreators)
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7867 */;
-import react_nativeDefault from "react-native" /* 7892 */;
+// Module 7895 (GoogleWalletActionCreators)
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7871 */;
+import react_nativeDefault from "react-native" /* 7896 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let obj = function _requestGoogleWalletVerification() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -114,7 +114,7 @@ obj = function _verifyGoogleWalletCredential() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -170,7 +170,7 @@ obj = function _verifyGoogleWalletCredential() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp5) {
         c1 = 3;
@@ -193,7 +193,7 @@ obj = function _checkGoogleWalletAvailable() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;
@@ -267,7 +267,7 @@ obj = function _getGoogleWalletCredential() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

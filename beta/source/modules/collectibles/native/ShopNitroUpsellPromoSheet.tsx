@@ -1,33 +1,145 @@
-// Module ID: 12719
-// Function ID: 12720
+// Module ID: 12721
+// Function ID: 12722
 // Name: ShopNitroUpsellPromoSheet
-// Dependencies: [19, 1074, 21, 6583, 8614, 9421, 7273, 9422, 9691, 12720, 5745, 9425, 1115, 5281, 2]
-// Exports: default
+// Dependencies: [19, 1086, 21, 558, 576, 6584, 9417, 7277, 8611, 9418, 12722, 1127, 9421, 5282, 5746, 9816, 2]
 
-// Module 12719 (ShopNitroUpsellPromoSheet)
-import Constants from "Constants" /* 1074 */;
-import intl3 from "intl" /* 1115 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import ButtonGroup2 from "ButtonGroup" /* 5745 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7273 */;
-import PremiumUpsellUtils from "PremiumUpsellUtils" /* 8614 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9421 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9422 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9425 */;
-import PromoSheet2 from "PromoSheet" /* 9691 */;
-import DiscountsMegaphoneSpotIllustration from "DiscountsMegaphoneSpotIllustration" /* 12720 */;
+// Module 12721 (ShopNitroUpsellPromoSheet)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl3 from "intl" /* 1127 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import ButtonGroup2 from "ButtonGroup" /* 5746 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6584 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7277 */;
+import PremiumUpsellUtils from "PremiumUpsellUtils" /* 8611 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9417 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9418 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9421 */;
+import PromoSheet2 from "PromoSheet" /* 9816 */;
+import DiscountsMegaphoneSpotIllustration from "DiscountsMegaphoneSpotIllustration" /* 12722 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 const AnalyticsPages = Constants.AnalyticsPages;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-const result = size.fileFinishedImporting("modules/collectibles/native/ShopNitroUpsellPromoSheet.tsx");
-
-export default function ShopNitroUpsellPromoSheet(analyticsLocations) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let analyticsLocations;
+  let description;
+  let items1;
+  let loading;
+  let onPress;
+  let title;
+  let tmp10;
+  let tmp13;
+  let tmp4;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(18);
+  ({ analyticsLocations, title, description } = arg0);
+  if (cResult[0] !== analyticsLocations) {
+    let items = analyticsLocations;
+    if (undefined === analyticsLocations) {
+      items = [];
+    }
+    cResult[0] = analyticsLocations;
+    cResult[1] = items;
+    tmp4 = items;
+  } else {
+    tmp4 = cResult[1];
+  }
+  const analyticsLocations2 = useAnalyticsLocationsDefault(tmp4).analyticsLocations;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = PremiumFeatureUpsellUtils;
+    const upsellType = tmpResult.getUpsellType(tmp(7277).EntitlementFeatureNames.SHOP_MEMBER_PRICING);
+    cResult[2] = upsellType;
+    tmp7 = upsellType;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult2 = PremiumUpsellUtils;
+  const onViewAllPerks = tmpResult2.usePremiumUpsellConfig(tmp7, analyticsLocations2).onViewAllPerks;
+  ({ loading, onPress } = usePremiumFeatureUpsellGetNitroDefault(false, onViewAllPerks, AnalyticsPages.PREMIUM_UPSELL_SHOP_MEMBER_PRICING, undefined, tmp4));
+  usePremiumFeatureUpsellGetNitroDefault(false, onViewAllPerks, AnalyticsPages.PREMIUM_UPSELL_SHOP_MEMBER_PRICING, undefined, tmp4);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp12 = React3(DiscountsMegaphoneSpotIllustration.DiscountsMegaphoneSpotIllustration, {});
+    cResult[3] = tmp12;
+    tmp10 = tmp12;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl3.t["8x0jKT"]);
+    cResult[4] = stringResult;
+    tmp13 = stringResult;
+  } else {
+    tmp13 = cResult[4];
+  }
+  if (cResult[5] === loading) {
+    let tmp15;
+    let tmp17;
+    let tmp19;
+    if (cResult[6] === onPress) {
+      tmp15 = cResult[7];
+    }
+    const _Symbol = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl2 = tmp(1127).intl;
+      const stringResult1 = intl2.string(intl3.t.PcTCB7);
+      cResult[8] = stringResult1;
+      tmp17 = stringResult1;
+    } else {
+      tmp17 = cResult[8];
+    }
+    if (cResult[9] !== onViewAllPerks) {
+      const obj2 = { size: "lg", variant: "secondary", text: tmp17, onPress: onViewAllPerks };
+      const tmp21 = React3(components_Button_Button.Button, obj2);
+      cResult[9] = onViewAllPerks;
+      cResult[10] = tmp21;
+      tmp19 = tmp21;
+    } else {
+      tmp19 = cResult[10];
+    }
+    if (cResult[11] === tmp15) {
+      let tmp22;
+      if (cResult[12] === tmp19) {
+        tmp22 = cResult[13];
+      }
+      if (cResult[14] === description) {
+        if (cResult[15] === tmp22) {
+          let tmp25;
+          if (cResult[16] === title) {
+            tmp25 = cResult[17];
+          }
+          return tmp25;
+        }
+      }
+      const obj3 = { illustration: tmp10, title, description, actions: tmp22 };
+      const tmp27 = React3(PromoSheet2.PromoSheet, obj3);
+      cResult[14] = description;
+      cResult[15] = tmp22;
+      cResult[16] = title;
+      cResult[17] = tmp27;
+      tmp25 = tmp27;
+    }
+    const obj4 = { children: items1 };
+    items1 = [tmp15, tmp19];
+    const tmp24 = hasOwnProperty(ButtonGroup2.ButtonGroup, obj4);
+    cResult[11] = tmp15;
+    cResult[12] = tmp19;
+    cResult[13] = tmp24;
+    tmp22 = tmp24;
+  }
+  const tmp16 = React3(NitroUpsellButtonDefault, { text: tmp13, loading, onPress, shiny: false });
+  cResult[5] = loading;
+  cResult[6] = onPress;
+  cResult[7] = tmp16;
+  tmp15 = tmp16;
+}) : ((analyticsLocations) => {
   let ButtonGroup;
   let description;
   let intl;
@@ -62,4 +174,7 @@ export default function ShopNitroUpsellPromoSheet(analyticsLocations) {
   intl2 = intl3.intl;
   items[1] = React3(Button, obj5);
   return React3(PromoSheet, obj2);
-};
+});
+const result = size.fileFinishedImporting("modules/collectibles/native/ShopNitroUpsellPromoSheet.tsx");
+
+export default tmp4;

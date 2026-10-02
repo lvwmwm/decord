@@ -1,13 +1,12 @@
 // Module ID: 10079
 // Function ID: 10080
-// Dependencies: [41, 42, 93, 95, 98, 10064, 9897, 9898, 9902]
+// Dependencies: [41, 42, 93, 95, 98, 9950]
 
 // Module 10079
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
-import _mod10064 from "module_10064" /* 10064 */;
+import _mod9950 from "module_9950" /* 9950 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -26,15 +25,31 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(questo|ultimo|passato|prossimo|dopo|questa|ultima|passata|prossima|\\+|-)\\s*(" + _mod10064.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-class ENTimeUnitCasualRelativeFormatParser {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class ESMergeDateRangeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENTimeUnitCasualRelativeFormatParser);
-    const obj = _getPrototypeOf(ENTimeUnitCasualRelativeFormatParser);
+    _classCallCheck(this, ESMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(ESMergeDateRangeRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -44,32 +59,13 @@ class ENTimeUnitCasualRelativeFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ESMergeDateRangeRefiner, fn(_mod9950).default);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*(?:-)\s*$/i;
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      const parseDurationResult = _mod10064.parseDuration(arg1[2]);
-      if ("last" !== formatted) {
-        let reverseDurationResult;
-        if ("past" !== formatted) {
-          reverseDurationResult = parseDurationResult;
-        }
-        const ParsingComponents = tmp2(9898).ParsingComponents;
-        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
-      }
-      reverseDurationResult = tmp2(9897).reverseDuration(parseDurationResult);
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(ENTimeUnitCasualRelativeFormatParser, items);
+export default _createClass(ESMergeDateRangeRefiner, items);

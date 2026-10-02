@@ -1,34 +1,403 @@
-// Module ID: 11036
-// Function ID: 11037
+// Module ID: 10903
+// Function ID: 10904
 // Name: useScrollHandlers
-// Dependencies: [19, 8843, 3, 5910, 11037, 5266, 10450, 1248, 10841, 10843, 5759, 7333, 2]
-// Exports: default
+// Dependencies: [19, 8838, 3, 558, 576, 10904, 5907, 9760, 5267, 10483, 1260, 9762, 5760, 7337, 2]
 
-// Module 11036 (useScrollHandlers)
+// Module 10903 (useScrollHandlers)
 import LoggerDefault from "Logger" /* 3 */;
-import react_native from "react-native" /* 1248 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5266 */;
-import QuestTypes from "QuestTypes" /* 5759 */;
-import reactDefault from "react" /* 5910 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 7333 */;
-import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 10450 */;
-import NativeChatUtilsDefault from "NativeChatUtils" /* 10841 */;
-import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 10843 */;
-import ConversationHeaderDismissTrackerDefault from "ConversationHeaderDismissTracker" /* 11037 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5267 */;
+import QuestTypes from "QuestTypes" /* 5760 */;
+import useInitialValueDefault from "useInitialValue" /* 5907 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 7337 */;
+import NativeChatUtilsDefault from "NativeChatUtils" /* 9760 */;
+import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 9762 */;
+import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 10483 */;
+import ConversationHeaderDismissTrackerDefault from "ConversationHeaderDismissTracker" /* 10904 */;
 import react from "react" /* 19 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 8843 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 8838 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let hasMoreAfter, importDefault;
+const require = globalThis.__r;
+let chatRef, hasMoreAfter, importDefault, ref, ref2, ref3, ref4;
 
 let closure_4;
 let hasOwnProperty;
 ({ updateIsAtBottom: closure_4, updateShouldShowJumpToPresentButton: hasOwnProperty } = useChatBottomManagerUIStore);
-const tmp3 = new LoggerDefault("useScrollHandlers");
+let tmp3 = new LoggerDefault("useScrollHandlers");
 let closure_6 = tmp3;
-let result = size.fileFinishedImporting("modules/messages/native/hooks/useScrollHandlers.tsx");
-
-export default function useScrollHandlers(arg0) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatRef) => {
+  let chatUpdatesQueue;
+  let first;
+  let tmp17;
+  let tmp22;
+  let tmp = chatUpdatesQueue;
+  let obj = chatRef(chatUpdatesQueue[4]);
+  const cResult = obj.c(53);
+  chatRef = chatRef.chatRef;
+  const chatManager = chatRef.chatManager;
+  chatUpdatesQueue = chatRef.chatUpdatesQueue;
+  const pendingUpdatesQueueRef = chatRef.pendingUpdatesQueueRef;
+  const animatedRef = chatRef.animatedRef;
+  const fetchMoreBefore = chatRef.fetchMoreBefore;
+  const fetchMoreAfter = chatRef.fetchMoreAfter;
+  let closure_7 = chatRef.handleVisibleMessagesChange;
+  const applyNativeRowsUpdate = chatRef.applyNativeRowsUpdate;
+  const messages = chatRef.messages;
+  const channel = chatRef.channel;
+  const channelId = chatRef.channelId;
+  const screenIndex = chatRef.screenIndex;
+  const onScroll = chatRef.onScroll;
+  const useReducedMotion = chatRef.useReducedMotion;
+  const isStaff = chatRef.isStaff;
+  let closure_16 = chatRef.visibleMessagesWindowHandler;
+  const selectedConversation = chatRef.selectedConversation;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function c() {
+      const tmp = new chatManager(chatUpdatesQueue[5])();
+      return tmp;
+    };
+    let num = 0;
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  let tmp4 = chatManager(tmp[6])(first);
+  let handleScrollPosition = tmp4;
+  ref = pendingUpdatesQueueRef.useRef(undefined);
+  const ref1 = pendingUpdatesQueueRef.useRef(false);
+  ref2 = pendingUpdatesQueueRef.useRef(false);
+  ref3 = pendingUpdatesQueueRef.useRef(false);
+  ref4 = pendingUpdatesQueueRef.useRef(false);
+  const ref5 = pendingUpdatesQueueRef.useRef(false);
+  const ref6 = pendingUpdatesQueueRef.useRef(false);
+  if (cResult[1] === animatedRef) {
+    let tmp12;
+    if (cResult[2] === fetchMoreBefore) {
+      tmp12 = cResult[3];
+    }
+    let closure_26 = tmp12;
+    if (cResult[4] === animatedRef) {
+      let tmp13;
+      if (cResult[5] === fetchMoreAfter) {
+        tmp13 = cResult[6];
+      }
+      let closure_27 = tmp13;
+      if (cResult[7] === chatRef) {
+        if (cResult[10] === chatRef) {
+          if (cResult[13] === chatManager) {
+            if (cResult[16] === applyNativeRowsUpdate) {
+              if (cResult[19] === channel) {
+                if (cResult[20] === chatUpdatesQueue) {
+                  if (cResult[21] === tmp13) {
+                    if (cResult[22] === tmp12) {
+                      if (cResult[23] === messages) {
+                        if (cResult[24] === onScroll) {
+                          let tmp20;
+                          if (cResult[25] === pendingUpdatesQueueRef) {
+                            tmp20 = cResult[26];
+                          }
+                          let closure_28 = tmp20;
+                          class Y {
+                            constructor(arg0) {
+                              let decelerating;
+                              let dragging;
+                              let eventTimestamp;
+                              let isAtBottom;
+                              let isFirstMessageVisible;
+                              let isNearBottom;
+                              let isNearTop;
+                              ({ eventTimestamp, isAtBottom, isNearBottom, isNearTop, dragging, decelerating, isFirstMessageVisible } = arg0);
+                              let tmp3 = undefined !== dragging && dragging;
+                              const tmp = undefined !== isNearBottom && isNearBottom;
+                              const tmp2 = undefined !== isNearTop && isNearTop;
+                              const tmp4 = undefined !== decelerating && decelerating;
+                              const tmp5 = undefined !== isFirstMessageVisible && isFirstMessageVisible;
+                              if (null != channel) {
+                                useIsScreenReaderEnabled;
+                                let tmp11 = !tmp33.loadingMore;
+                                if (tmp11) {
+                                  if (!tmp3) {
+                                    tmp3 = tmp4;
+                                  }
+                                  if (!tmp3) {
+                                    tmp3 = tmp10;
+                                  }
+                                  tmp11 = tmp3;
+                                }
+                                if (tmp11) {
+                                  tmp11 = 0 === pendingUpdatesQueueRef.current.length;
+                                }
+                                if (!ref4.current) {
+                                  if (tmp2) {
+                                    if (messages.hasMoreBefore) {
+                                      if (tmp11) {
+                                        closure_26();
+                                      }
+                                      const obj = { isFirstMessageVisible: tmp5 };
+                                      onScroll(obj);
+                                      chatUpdatesQueue.tryFlush();
+                                      return true;
+                                    }
+                                  }
+                                }
+                                if (!ref3.current) {
+                                  if (tmp) {
+                                    if (messages.hasMoreAfter) {
+                                      if (tmp11) {
+                                        closure_27();
+                                      }
+                                    }
+                                  }
+                                }
+                                const current = ref2.current === isAtBottom && ref1.current;
+                                if (!current) {
+                                  const id = tmp6.id;
+                                  let num = 0;
+                                  const updateChannelDimensions = DimensionActionCreatorsDefault.updateChannelDimensions;
+                                  if (isAtBottom) {
+                                    num = 1;
+                                  }
+                                  const result = updateChannelDimensions(id, eventTimestamp, num, 1, 0);
+                                  ref1.current = true;
+                                }
+                              }
+                              return false;
+                            }
+                          }
+                          class D {
+                            constructor(arg0) {
+                              let tmp = undefined === arg0 || arg0;
+                              const scrollToTop = NativeChatUtilsDefault.scrollToTop;
+                              const current = chatRef.current;
+                              NativeChatUtilsDefault;
+                              if (tmp) {
+                                tmp = !useReducedMotion;
+                              }
+                              scrollToTop(current, tmp);
+                            }
+                          }
+                          cResult[27] = channelId;
+                          cResult[28] = tmp20;
+                          cResult[29] = messages;
+                          cResult[30] = screenIndex;
+                          cResult[31] = tmp22;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              class Y {
+                constructor(arg0) {
+                  let decelerating;
+                  let dragging;
+                  let eventTimestamp;
+                  let isAtBottom;
+                  let isFirstMessageVisible;
+                  let isNearBottom;
+                  let isNearTop;
+                  ({ eventTimestamp, isAtBottom, isNearBottom, isNearTop, dragging, decelerating, isFirstMessageVisible } = arg0);
+                  let tmp3 = undefined !== dragging && dragging;
+                  const tmp = undefined !== isNearBottom && isNearBottom;
+                  const tmp2 = undefined !== isNearTop && isNearTop;
+                  const tmp4 = undefined !== decelerating && decelerating;
+                  const tmp5 = undefined !== isFirstMessageVisible && isFirstMessageVisible;
+                  if (null != channel) {
+                    useIsScreenReaderEnabled;
+                    let tmp11 = !tmp33.loadingMore;
+                    if (tmp11) {
+                      if (!tmp3) {
+                        tmp3 = tmp4;
+                      }
+                      if (!tmp3) {
+                        tmp3 = tmp10;
+                      }
+                      tmp11 = tmp3;
+                    }
+                    if (tmp11) {
+                      tmp11 = 0 === pendingUpdatesQueueRef.current.length;
+                    }
+                    if (!ref4.current) {
+                      if (tmp2) {
+                        if (messages.hasMoreBefore) {
+                          if (tmp11) {
+                            closure_26();
+                          }
+                          const obj = { isFirstMessageVisible: tmp5 };
+                          onScroll(obj);
+                          chatUpdatesQueue.tryFlush();
+                          return true;
+                        }
+                      }
+                    }
+                    if (!ref3.current) {
+                      if (tmp) {
+                        if (messages.hasMoreAfter) {
+                          if (tmp11) {
+                            closure_27();
+                          }
+                        }
+                      }
+                    }
+                    const current = ref2.current === isAtBottom && ref1.current;
+                    if (!current) {
+                      const id = tmp6.id;
+                      let num = 0;
+                      const updateChannelDimensions = DimensionActionCreatorsDefault.updateChannelDimensions;
+                      if (isAtBottom) {
+                        num = 1;
+                      }
+                      const result = updateChannelDimensions(id, eventTimestamp, num, 1, 0);
+                      ref1.current = true;
+                    }
+                  }
+                  return false;
+                }
+              }
+              class D {
+                constructor(arg0) {
+                  let tmp = undefined === arg0 || arg0;
+                  const scrollToTop = NativeChatUtilsDefault.scrollToTop;
+                  const current = chatRef.current;
+                  NativeChatUtilsDefault;
+                  if (tmp) {
+                    tmp = !useReducedMotion;
+                  }
+                  scrollToTop(current, tmp);
+                }
+              }
+              cResult[19] = channel;
+              cResult[20] = chatUpdatesQueue;
+              cResult[21] = tmp13;
+              cResult[22] = tmp12;
+              cResult[23] = messages;
+              cResult[24] = onScroll;
+              cResult[25] = pendingUpdatesQueueRef;
+              cResult[26] = Y;
+              tmp20 = Y;
+            }
+            class K {
+              constructor(arg0, arg1) {
+                let tmp = undefined === arg1 || arg1;
+                const scrollToRelativeOffset = NativeChatUtilsDefault.scrollToRelativeOffset;
+                const current = chatRef.current;
+                NativeChatUtilsDefault;
+                if (tmp) {
+                  tmp = !useReducedMotion;
+                }
+                const result = scrollToRelativeOffset(current, arg0, tmp);
+              }
+            }
+            class D {
+              constructor(arg0) {
+                let tmp = undefined === arg0 || arg0;
+                const scrollToTop = NativeChatUtilsDefault.scrollToTop;
+                const current = chatRef.current;
+                NativeChatUtilsDefault;
+                if (tmp) {
+                  tmp = !useReducedMotion;
+                }
+                scrollToTop(current, tmp);
+              }
+            }
+            cResult[16] = applyNativeRowsUpdate;
+            cResult[17] = chatUpdatesQueue;
+            cResult[18] = tmp19;
+          }
+          class K {
+            constructor(arg0, arg1) {
+              let tmp = undefined === arg1 || arg1;
+              const scrollToRelativeOffset = NativeChatUtilsDefault.scrollToRelativeOffset;
+              const current = chatRef.current;
+              NativeChatUtilsDefault;
+              if (tmp) {
+                tmp = !useReducedMotion;
+              }
+              const result = scrollToRelativeOffset(current, arg0, tmp);
+            }
+          }
+          class D {
+            constructor(arg0) {
+              let tmp = undefined === arg0 || arg0;
+              const scrollToTop = NativeChatUtilsDefault.scrollToTop;
+              const current = chatRef.current;
+              NativeChatUtilsDefault;
+              if (tmp) {
+                tmp = !useReducedMotion;
+              }
+              scrollToTop(current, tmp);
+            }
+          }
+          cResult[13] = chatManager;
+          cResult[14] = chatRef;
+          cResult[15] = tmp17;
+        }
+        class K {
+          constructor(arg0, arg1) {
+            let tmp = undefined === arg1 || arg1;
+            const scrollToRelativeOffset = NativeChatUtilsDefault.scrollToRelativeOffset;
+            const current = chatRef.current;
+            NativeChatUtilsDefault;
+            if (tmp) {
+              tmp = !useReducedMotion;
+            }
+            const result = scrollToRelativeOffset(current, arg0, tmp);
+          }
+        }
+        class D {
+          constructor(arg0) {
+            let tmp = undefined === arg0 || arg0;
+            const scrollToTop = NativeChatUtilsDefault.scrollToTop;
+            const current = chatRef.current;
+            NativeChatUtilsDefault;
+            if (tmp) {
+              tmp = !useReducedMotion;
+            }
+            scrollToTop(current, tmp);
+          }
+        }
+        cResult[10] = chatRef;
+        cResult[11] = useReducedMotion;
+        cResult[12] = K;
+      }
+      class D {
+        constructor(arg0) {
+          let tmp = undefined === arg0 || arg0;
+          const scrollToTop = NativeChatUtilsDefault.scrollToTop;
+          const current = chatRef.current;
+          NativeChatUtilsDefault;
+          if (tmp) {
+            tmp = !useReducedMotion;
+          }
+          scrollToTop(current, tmp);
+        }
+      }
+      cResult[7] = chatRef;
+      cResult[8] = useReducedMotion;
+      cResult[9] = D;
+    }
+    class H {
+      constructor() {
+        animatedRef.current = true;
+        fetchMoreAfter();
+      }
+    }
+    cResult[4] = animatedRef;
+    cResult[5] = fetchMoreAfter;
+    cResult[6] = H;
+    tmp13 = H;
+  }
+  const fn2 = function x() {
+    animatedRef.current = true;
+    fetchMoreBefore();
+  };
+  cResult[1] = animatedRef;
+  cResult[2] = fetchMoreBefore;
+  cResult[3] = fn2;
+  tmp12 = fn2;
+}) : ((arg0) => {
   let closure_10;
   let closure_11;
   let closure_13;
@@ -43,6 +412,7 @@ export default function useScrollHandlers(arg0) {
   let closure_9;
   let logger;
   let previousRows;
+  let require;
   ({ chatRef: require, chatManager: importDefault, chatUpdatesQueue: dependencyMap, pendingUpdatesQueueRef: react, animatedRef: closure_4, fetchMoreBefore: closure_5, fetchMoreAfter: closure_6, handleVisibleMessagesChange: closure_7, applyNativeRowsUpdate: closure_8, messages: closure_9, channel: closure_10, channelId: closure_11, screenIndex: closure_12, onScroll: closure_13, useReducedMotion: closure_14, isStaff: closure_15, visibleMessagesWindowHandler: closure_16, selectedConversation: closure_17 } = arg0);
   function handleScrollCallbacks(isNearTop) {
     let eventTimestamp;
@@ -156,7 +526,7 @@ export default function useScrollHandlers(arg0) {
       ref4.current = isNearTop;
       ref6.current = dragging;
       ref5.current = decelerating;
-      const obj = react_native;
+      const obj = require("react-native");
       obj.batchUpdates(() => {
         hasMoreAfter = shouldShowJumpToPresent;
         const tmp = hasOwnProperty;
@@ -169,15 +539,15 @@ export default function useScrollHandlers(arg0) {
       });
     }
   }
-  let handleScrollPosition = reactDefault(() => {
+  let handleScrollPosition = useInitialValueDefault(() => {
     const tmp = new ConversationHeaderDismissTrackerDefault();
     return tmp;
   });
-  const ref = react.useRef(undefined);
+  ref = react.useRef(undefined);
   const ref1 = react.useRef(false);
-  const ref2 = react.useRef(false);
-  const ref3 = react.useRef(false);
-  const ref4 = react.useRef(false);
+  ref2 = react.useRef(false);
+  ref3 = react.useRef(false);
+  ref4 = react.useRef(false);
   const ref5 = react.useRef(false);
   const ref6 = react.useRef(false);
   let obj = {
@@ -202,7 +572,7 @@ export default function useScrollHandlers(arg0) {
         flag = true;
       }
       const scrollToTop = NativeChatUtilsDefault.scrollToTop;
-      const current = require.current;
+      const current = _require.current;
       NativeChatUtilsDefault;
       if (flag) {
         flag = !closure_14;
@@ -215,7 +585,7 @@ export default function useScrollHandlers(arg0) {
         flag = true;
       }
       const scrollToRelativeOffset = NativeChatUtilsDefault.scrollToRelativeOffset;
-      const current = require.current;
+      const current = _require.current;
       NativeChatUtilsDefault;
       if (flag) {
         flag = !closure_14;
@@ -226,7 +596,7 @@ export default function useScrollHandlers(arg0) {
       importDefault = importDefault.getPreviousRows();
       if (importDefault.length > 0) {
         const obj = NativeChatUtilsDefault;
-        obj.scrollTo(require.current, importDefault.length - 1);
+        obj.scrollTo(_require.current, importDefault.length - 1);
       }
     },
     updateNativeRows(isLoadingAtTop) {
@@ -261,7 +631,7 @@ export default function useScrollHandlers(arg0) {
       ({ firstVisibleMessageIndex, lastVisibleMessageIndex, changesetUpdateId } = nativeEvent);
       ({ isAtBottom, isNearBottom, isNearTop, dragging, decelerating, shouldShowJumpToPresent, isFirstMessageVisible, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible } = nativeEvent);
       const obj = ChatChangesetUpdateTracker;
-      const changesetIdForChat = obj.getChangesetIdForChat(require.current);
+      const changesetIdForChat = obj.getChangesetIdForChat(_require.current);
       if (changesetUpdateId !== changesetIdForChat) {
         if (null == ref.current) {
           ref.current = timeStamp;
@@ -308,4 +678,7 @@ export default function useScrollHandlers(arg0) {
     }
   };
   return obj;
-};
+});
+let result = size.fileFinishedImporting("modules/messages/native/hooks/useScrollHandlers.tsx");
+
+export default tmp4;

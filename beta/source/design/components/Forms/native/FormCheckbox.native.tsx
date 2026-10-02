@@ -1,50 +1,106 @@
-// Module ID: 5929
-// Function ID: 5930
+// Module ID: 5914
+// Function ID: 5915
 // Name: FormCheckbox
-// Dependencies: [19, 21, 4836, 576, 4566, 5283, 4550, 5930, 5280, 5284, 2]
-// Exports: FormCheckbox
+// Dependencies: [19, 21, 4837, 588, 4570, 5284, 558, 576, 4554, 5915, 5281, 5285, 2]
 
-// Module 5929 (FormCheckbox)
+// Module 5914 (FormCheckbox)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5280 */;
-import IconDefault from "Icon" /* 5283 */;
-import springPresets from "springPresets" /* 5284 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import react3 from "react" /* 4554 */;
+import spring from "spring" /* 5281 */;
+import IconDefault from "Icon" /* 5284 */;
+import springPresets from "springPresets" /* 5285 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5915 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4836 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+let _require;
 
 let obj2;
 let obj3;
-let obj4;
 let size;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
-let obj = { checkbox: size, unselected: obj2, selected: obj3, checkmark: obj4 };
+let obj = { checkbox: size, unselected: obj2, selected: obj3, checkmark: { tintColor: nativeDefault.colors.CHECKBOX_ICON_ACTIVE } };
 size = { width: nativeDefault.modules.mobile.CONTROL_CHECKBOX_SIZE_DEFAULT, height: nativeDefault.modules.mobile.CONTROL_CHECKBOX_SIZE_DEFAULT, flexGrow: 0, flexShrink: 0, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.modules.mobile.CONTROL_CHECKBOX_BORDER_RADIUS, borderWidth: nativeDefault.modules.mobile.CONTROL_CHECKBOX_BORDER_WIDTH, borderColor: nativeDefault.colors.CHECKBOX_BORDER_DEFAULT };
 createStyles = createStyles.createStyles;
 obj2 = { backgroundColor: nativeDefault.colors.CHECKBOX_BACKGROUND_DEFAULT, borderColor: nativeDefault.colors.CHECKBOX_BORDER_DEFAULT };
 obj3 = { borderColor: nativeDefault.colors.CHECKBOX_BORDER_SELECTED_DEFAULT, backgroundColor: nativeDefault.colors.CHECKBOX_BACKGROUND_SELECTED_DEFAULT };
-obj4 = { tintColor: nativeDefault.colors.CHECKBOX_ICON_ACTIVE };
+({ tintColor: nativeDefault.colors.CHECKBOX_ICON_ACTIVE });
 let closure_5 = createStyles(obj);
 const Icon = ReanimatedRexport.createAnimatedComponent(IconDefault);
-const __initData = { code: "function FormCheckboxNativeTsx1(){const{withSpring,checked,selected,unselected,SUBTLE_SPRING}=this.__closure;const defaultAnimation={borderColor:withSpring(checked?selected.borderColor:unselected.borderColor,SUBTLE_SPRING,'animate-always'),backgroundColor:withSpring(checked?selected.backgroundColor:unselected.backgroundColor,SUBTLE_SPRING,'animate-always')};return defaultAnimation;}" };
-const __initData2 = { code: "function FormCheckboxNativeTsx2(){const{useReducedMotion,withSpring,checked,SUBTLE_SPRING}=this.__closure;const uncheckedScale=useReducedMotion?1:0.5;return{opacity:withSpring(checked?1:0,SUBTLE_SPRING,'animate-always'),transform:[{scale:withSpring(checked?1:uncheckedScale,SUBTLE_SPRING)}]};}" };
-size = size_mod;
-const result = size.fileFinishedImporting("design/components/Forms/native/FormCheckbox.native.tsx");
-
-export const FormCheckbox = function FormCheckbox(checked) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+const __initData = { code: "function FormCheckboxNativeTsx1(){const{withSpring,checked,selected,unselected,SUBTLE_SPRING}=this.__closure;const defaultAnimation={borderColor:withSpring(checked?selected.borderColor:unselected.borderColor,SUBTLE_SPRING,\"animate-always\"),backgroundColor:withSpring(checked?selected.backgroundColor:unselected.backgroundColor,SUBTLE_SPRING,\"animate-always\")};return defaultAnimation;}" };
+const __initData2 = { code: "function FormCheckboxNativeTsx2(){const{withSpring,checked,selected,unselected,SUBTLE_SPRING}=this.__closure;const defaultAnimation={borderColor:withSpring(checked?selected.borderColor:unselected.borderColor,SUBTLE_SPRING,'animate-always'),backgroundColor:withSpring(checked?selected.backgroundColor:unselected.backgroundColor,SUBTLE_SPRING,'animate-always')};return defaultAnimation;}" };
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((checked) => {
+  const obj = react2;
+  const cResult = obj.c(9);
+  checked = checked.checked;
+  const tmp3 = closure_5();
+  const enabled = react.useContext(react3.AccessibilityPreferencesContext).reducedMotion.enabled;
+  const tmp4 = closure_9(checked);
+  const tmp5 = closure_12(enabled, checked);
+  if (cResult[0] === tmp4) {
+    let tmp6;
+    if (cResult[1] === tmp3.checkbox) {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] === tmp5) {
+      let tmp7;
+      if (cResult[4] === tmp3.checkmark) {
+        tmp7 = cResult[5];
+      }
+      if (cResult[6] === tmp6) {
+        let tmp12;
+        if (cResult[7] === tmp7) {
+          tmp12 = cResult[8];
+        }
+        return tmp12;
+      }
+      const tmp15 = jsx(ReanimatedRexport.View, { style: tmp6, children: tmp7 });
+      cResult[6] = tmp6;
+      cResult[7] = tmp7;
+      cResult[8] = tmp15;
+      tmp12 = tmp15;
+    }
+    const items = [tmp3.checkmark, tmp5];
+    const tmp11 = <Icon source={AssetRegistryDefault} size={IconDefault.Sizes.SMALL_20} style={items} />;
+    cResult[3] = tmp5;
+    cResult[4] = tmp3.checkmark;
+    cResult[5] = tmp11;
+    tmp7 = tmp11;
+  }
+  const items1 = [tmp3.checkbox, tmp4];
+  cResult[0] = tmp4;
+  cResult[1] = tmp3.checkbox;
+  cResult[2] = items1;
+  tmp6 = items1;
+}) : ((checked) => {
   let items1;
-  let unselected;
   checked = checked.checked;
   const tmp = closure_5();
-  const enabled = react.useContext(checked(unselected[6]).AccessibilityPreferencesContext).reducedMotion.enabled;
-  const tmp2 = closure_5();
-  const selected = tmp2.selected;
-  unselected = tmp2.unselected;
-  let obj = checked(unselected[4]);
-  const fn = function _() {
+  const enabled = react.useContext(react3.AccessibilityPreferencesContext).reducedMotion.enabled;
+  const items = [tmp.checkbox, closure_9(checked)];
+  const tmp2 = closure_9(checked);
+  ({ source: AssetRegistryDefault, size: IconDefault.Sizes.SMALL_20, style: items1 });
+  const tmp3 = closure_12(enabled, checked);
+  const View = ReanimatedRexport.View;
+  items1 = [tmp.checkmark, tmp3];
+  return <View style={items}>{null}</View>;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((checked) => {
+  _require = checked;
+  const tmp = closure_5();
+  const selected = tmp.selected;
+  const unselected = tmp.unselected;
+  let obj = require("ReanimatedRexport");
+  const fn = function t() {
     let backgroundColor;
     let borderColor;
     let withSpring2;
@@ -65,43 +121,113 @@ export const FormCheckbox = function FormCheckbox(checked) {
     }
     return obj;
   };
-  const obj2 = { withSpring: checked(unselected[8]).withSpring, checked, selected, unselected, SUBTLE_SPRING: checked(unselected[9]).SUBTLE_SPRING };
-  fn.__closure = obj2;
-  fn.__workletHash = 11278373524374;
+  fn.__closure = { withSpring: require("spring").withSpring, checked, selected, unselected, SUBTLE_SPRING: require("springPresets").SUBTLE_SPRING };
+  fn.__workletHash = 4459088483670;
   fn.__initData = __initData;
-  const animatedStyle = obj.useAnimatedStyle(fn);
-  const fn2 = function c() {
+  ({ withSpring: require("spring").withSpring, checked, selected, unselected, SUBTLE_SPRING: require("springPresets").SUBTLE_SPRING });
+  return obj.useAnimatedStyle(fn);
+}) : ((checked) => {
+  _require = checked;
+  const tmp = closure_5();
+  const selected = tmp.selected;
+  const unselected = tmp.unselected;
+  let obj = require("ReanimatedRexport");
+  const fn = function t() {
+    let backgroundColor;
+    let borderColor;
+    let withSpring2;
+    const withSpring = spring.withSpring;
+    spring;
+    if (checked) {
+      borderColor = selected.borderColor;
+    } else {
+      borderColor = unselected.borderColor;
+    }
+    const obj = { borderColor: withSpring(borderColor, springPresets.SUBTLE_SPRING, "animate-always"), backgroundColor: withSpring2(backgroundColor, springPresets.SUBTLE_SPRING, "animate-always") };
+    withSpring2 = spring.withSpring;
+    spring;
+    if (checked) {
+      backgroundColor = selected.backgroundColor;
+    } else {
+      backgroundColor = unselected.backgroundColor;
+    }
+    return obj;
+  };
+  fn.__closure = { withSpring: require("spring").withSpring, checked, selected, unselected, SUBTLE_SPRING: require("springPresets").SUBTLE_SPRING };
+  fn.__workletHash = 9962611822165;
+  fn.__initData = __initData2;
+  ({ withSpring: require("spring").withSpring, checked, selected, unselected, SUBTLE_SPRING: require("springPresets").SUBTLE_SPRING });
+  return obj.useAnimatedStyle(fn);
+});
+const __initData3 = { code: "function FormCheckboxNativeTsx3(){const{useReducedMotion,withSpring,checked,SUBTLE_SPRING}=this.__closure;const uncheckedScale=useReducedMotion?1:0.5;return{opacity:withSpring(checked?1:0,SUBTLE_SPRING,\"animate-always\"),transform:[{scale:withSpring(checked?1:uncheckedScale,SUBTLE_SPRING)}]};}" };
+const __initData4 = { code: "function FormCheckboxNativeTsx4(){const{useReducedMotion,withSpring,checked,SUBTLE_SPRING}=this.__closure;const uncheckedScale=useReducedMotion?1:0.5;return{opacity:withSpring(checked?1:0,SUBTLE_SPRING,'animate-always'),transform:[{scale:withSpring(checked?1:uncheckedScale,SUBTLE_SPRING)}]};}" };
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((useReducedMotion, checked) => {
+  _require = useReducedMotion;
+  let closure_1 = checked;
+  let obj = require("ReanimatedRexport");
+  const fn = function c() {
     let items;
     let num = 0.5;
-    if (enabled) {
+    if (useReducedMotion) {
       num = 1;
     }
     let num2 = 0;
-    const withSpring = checked(unselected[8]).withSpring;
-    checked(unselected[8]);
+    const withSpring = spring.withSpring;
+    spring;
     if (checked) {
       num2 = 1;
     }
     let num3 = 1;
-    const obj = { opacity: withSpring(num2, checked(unselected[9]).SUBTLE_SPRING, "animate-always"), transform: items };
-    const withSpring2 = checked(unselected[8]).withSpring;
-    checked(unselected[8]);
+    const obj = { opacity: withSpring(num2, springPresets.SUBTLE_SPRING, "animate-always"), transform: items };
+    const withSpring2 = spring.withSpring;
+    spring;
     if (!checked) {
       num3 = num;
     }
-    items = [{ scale: withSpring2(num3, checked(unselected[9]).SUBTLE_SPRING) }];
-    ({ scale: withSpring2(num3, checked(unselected[9]).SUBTLE_SPRING) });
+    items = [{ scale: withSpring2(num3, springPresets.SUBTLE_SPRING) }];
+    ({ scale: withSpring2(num3, springPresets.SUBTLE_SPRING) });
     return obj;
   };
-  const obj3 = checked(unselected[4]);
-  fn2.__closure = { useReducedMotion: enabled, withSpring: checked(unselected[8]).withSpring, checked, SUBTLE_SPRING: checked(unselected[9]).SUBTLE_SPRING };
-  fn2.__workletHash = 13939484082835;
-  fn2.__initData = __initData2;
-  ({ useReducedMotion: enabled, withSpring: checked(unselected[8]).withSpring, checked, SUBTLE_SPRING: checked(unselected[9]).SUBTLE_SPRING });
-  const animatedStyle1 = obj3.useAnimatedStyle(fn2);
-  let items = [tmp.checkbox, animatedStyle];
-  ({ source: selected(unselected[7]), size: selected(unselected[5]).Sizes.SMALL_20, style: items1 });
-  const View = selected(unselected[4]).View;
-  items1 = [tmp.checkmark, animatedStyle1];
-  return <View style={items}>{null}</View>;
-};
+  const obj2 = { useReducedMotion, withSpring: require("spring").withSpring, checked, SUBTLE_SPRING: require("springPresets").SUBTLE_SPRING };
+  fn.__closure = obj2;
+  fn.__workletHash = 12934307330610;
+  fn.__initData = __initData3;
+  return obj.useAnimatedStyle(fn);
+}) : ((useReducedMotion, checked) => {
+  _require = useReducedMotion;
+  let closure_1 = checked;
+  let obj = require("ReanimatedRexport");
+  const fn = function c() {
+    let items;
+    let num = 0.5;
+    if (useReducedMotion) {
+      num = 1;
+    }
+    let num2 = 0;
+    const withSpring = spring.withSpring;
+    spring;
+    if (checked) {
+      num2 = 1;
+    }
+    let num3 = 1;
+    const obj = { opacity: withSpring(num2, springPresets.SUBTLE_SPRING, "animate-always"), transform: items };
+    const withSpring2 = spring.withSpring;
+    spring;
+    if (!checked) {
+      num3 = num;
+    }
+    items = [{ scale: withSpring2(num3, springPresets.SUBTLE_SPRING) }];
+    ({ scale: withSpring2(num3, springPresets.SUBTLE_SPRING) });
+    return obj;
+  };
+  const obj2 = { useReducedMotion, withSpring: require("spring").withSpring, checked, SUBTLE_SPRING: require("springPresets").SUBTLE_SPRING };
+  fn.__closure = obj2;
+  fn.__workletHash = 16476605648149;
+  fn.__initData = __initData4;
+  return obj.useAnimatedStyle(fn);
+});
+size = size_mod;
+const result = size.fileFinishedImporting("design/components/Forms/native/FormCheckbox.native.tsx");
+
+export const FormCheckbox = tmp3;

@@ -1,35 +1,83 @@
-// Module ID: 10589
-// Function ID: 10590
+// Module ID: 9656
+// Function ID: 9657
 // Name: useCoachmark
-// Dependencies: [19, 21, 1255, 10590, 6578, 10596, 2]
-// Exports: useCoachmark
+// Dependencies: [19, 21, 558, 576, 1267, 9657, 6579, 9663, 2]
 
-// Module 10589 (useCoachmark)
+// Module 9656 (useCoachmark)
 import Fragment from "Fragment" /* 21 */;
-import AnimatedCoachmark2 from "AnimatedCoachmark" /* 10596 */;
+import react2 from "react" /* 576 */;
+import v1 from "v1" /* 1267 */;
+import useTooltip from "useTooltip" /* 9657 */;
+import AnimatedCoachmark2 from "AnimatedCoachmark" /* 9663 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("design/components/Coachmark/native/useCoachmark.native.tsx");
-
-export const useCoachmark = function useCoachmark(targetRef, memo) {
-  let context;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = v1;
+    const v4Result = tmpResult.v4();
+    cResult[0] = v4Result;
+    first = v4Result;
+  } else {
+    first = cResult[0];
+  }
+  const ref = react.useRef(first);
+  const tmp7 = closure_4(arg1);
+  const tmpResult2 = useTooltip;
+  return tmpResult2.useTooltipHelper(ref, arg0, tmp7);
+}) : ((arg0, arg1) => {
   const useRef = react.useRef;
-  const obj = require("v1");
-  _require = memo;
-  context = undefined;
+  const obj = v1;
   const ref = useRef(obj.v4());
+  const tmp2 = closure_4(arg1);
+  const obj2 = useTooltip;
+  return obj2.useTooltipHelper(ref, arg0, tmp2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let context;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(3);
   context = react.useContext(require("LayerContext").LayerContext);
-  const items = [context, memo];
-  const callback = react.useCallback((arg0, targetMeasurements, surfaceMeasurements) => {
+  if (cResult[0] === arg0) {
+    let tmp3;
+    if (cResult[1] === context) {
+      tmp3 = cResult[2];
+    }
+    return tmp3;
+  }
+  const fn = function o(arg0, targetMeasurements, surfaceMeasurements) {
     const AnimatedCoachmark = AnimatedCoachmark2.AnimatedCoachmark;
-    const merged = Object.assign(memo);
+    const merged = Object.assign(closure_0);
+    context.add(arg0, <AnimatedCoachmark targetMeasurements={arg1} surfaceMeasurements={arg2} />);
+  };
+  cResult[0] = arg0;
+  cResult[1] = context;
+  cResult[2] = fn;
+  tmp3 = fn;
+}) : ((arg0) => {
+  let closure_0;
+  let context;
+  _require = arg0;
+  context = react.useContext(require("LayerContext").LayerContext);
+  const items = [context, arg0];
+  return react.useCallback((arg0, targetMeasurements, surfaceMeasurements) => {
+    const AnimatedCoachmark = AnimatedCoachmark2.AnimatedCoachmark;
+    const merged = Object.assign(closure_0);
     context.add(arg0, <AnimatedCoachmark targetMeasurements={arg1} surfaceMeasurements={arg2} />);
   }, items);
-  const obj2 = require("useTooltip");
-  return obj2.useTooltipHelper(ref, targetRef, callback);
-};
+});
+const result = size.fileFinishedImporting("design/components/Coachmark/native/useCoachmark.native.tsx");
+
+export const useCoachmark = tmp2;

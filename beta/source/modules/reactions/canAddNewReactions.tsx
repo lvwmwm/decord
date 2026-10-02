@@ -1,13 +1,13 @@
-// Module ID: 7413
-// Function ID: 7414
+// Module ID: 7417
+// Function ID: 7418
 // Name: canAddNewReactions
-// Dependencies: [5725, 4469, 1074, 2]
+// Dependencies: [5726, 4472, 1086, 2]
 // Exports: default
 
-// Module 7413 (canAddNewReactions)
-import Constants from "Constants" /* 1074 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5725 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
+// Module 7417 (canAddNewReactions)
+import Constants from "Constants" /* 1086 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5726 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;

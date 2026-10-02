@@ -1,20 +1,20 @@
-// Module ID: 7424
-// Function ID: 7425
+// Module ID: 7428
+// Function ID: 7429
 // Name: ChangeChannelNameSystemMessage
-// Dependencies: [2045, 7395, 7402, 7404, 1115, 7406, 7409, 2]
+// Dependencies: [2051, 7399, 7406, 7408, 1127, 7410, 7413, 2]
 // Exports: createChangeChannelNameSystemMessage
 
-// Module 7424 (ChangeChannelNameSystemMessage)
-import intl3 from "intl" /* 1115 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7395 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7402 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7404 */;
-import MessageAccessibilityActions from "MessageAccessibilityActions" /* 7409 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+// Module 7428 (ChangeChannelNameSystemMessage)
+import intl3 from "intl" /* 1127 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7399 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7406 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7408 */;
+import MessageAccessibilityActions from "MessageAccessibilityActions" /* 7413 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const createCommonMessageDefault = tmp2(7406);
+const createCommonMessageDefault = tmp2(7410);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/ChangeChannelNameSystemMessage.tsx");
 
 export const createChangeChannelNameSystemMessage = function createChangeChannelNameSystemMessage(message) {
@@ -43,12 +43,12 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
     flag = false;
   }
   if ("" === message.content) {
-    rk0be9 = tmp5(1115).t.hToFyf;
+    rk0be9 = tmp5(1127).t.hToFyf;
   } else {
-    rk0be9 = tmp5(1115).t.rk0be9;
+    rk0be9 = tmp5(1127).t.rk0be9;
   }
   const tmp9 = createCommonMessageDefault(message);
-  const intl = tmp5(1115).intl;
+  const intl = tmp5(1127).intl;
   const formatToParts = intl.formatToParts;
   if (flag) {
     let linkColor;
@@ -60,7 +60,7 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
     formatToPartsResult = formatToParts(rk0be9, obj2);
   } else {
     const isForumPost = message.isForumPost;
-    const t = tmp5(1115).t;
+    const t = tmp5(1127).t;
     const obj4 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp7, channelName: message.content };
     formatToPartsResult = formatToParts(isForumPost ? t["qa0e/n"] : t.XCPMEG, obj4);
   }
@@ -76,7 +76,7 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
     items = [];
     const obj7 = { label: intl2.string(intl3.t["5Q9+/L"]), name: MessageAccessibilityActions.MessageAccessibilityAction.EDIT_GDM };
     const arraySpreadResult = HermesBuiltin.arraySpread(items, accessibilityActions, 0);
-    intl2 = tmp5(1115).intl;
+    intl2 = tmp5(1127).intl;
     items[arraySpreadResult] = obj7;
     tmp13 = obj6;
   }

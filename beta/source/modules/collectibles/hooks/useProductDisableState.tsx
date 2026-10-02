@@ -1,20 +1,82 @@
-// Module ID: 8334
-// Function ID: 8335
+// Module ID: 8331
+// Function ID: 8332
 // Name: useProductDisableState
-// Dependencies: [4494, 504, 1077, 1115, 2]
-// Exports: useProductDisableState
+// Dependencies: [4497, 558, 576, 504, 1089, 1127, 2]
 
-// Module 8334 (useProductDisableState)
+// Module 8331 (useProductDisableState)
 import get_initialized from "get initialized" /* 504 */;
-import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1077 */;
-import SubscriptionStore from "SubscriptionStore" /* 4494 */;
+import react from "react" /* 576 */;
+import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1089 */;
+import SubscriptionStore from "SubscriptionStore" /* 4497 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let premiumSubscription;
 
-const result = size.fileFinishedImporting("modules/collectibles/hooks/useProductDisableState.tsx");
-
-export const useProductDisableState = function useProductDisableState(skuId) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  const obj = react;
+  const cResult = obj.c(8);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SubscriptionStore];
+    const fn = function n() {
+      premiumSubscription = premiumSubscription.getPremiumSubscription();
+      let prop;
+      if (premiumSubscription != null) {
+        prop = premiumSubscription.isPurchasedExternally;
+      }
+      return true === prop;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  const ALL = tmp(1089).FractionalPremiumSKUsSets.ALL;
+  if (ALL.has(arg0)) {
+    let tmp9;
+    if (cResult[2] !== stateFromStores) {
+      let stringResult = null;
+      if (stateFromStores) {
+        const intl = tmp(1127).intl;
+        stringResult = intl.string(tmp(1127).t.NbveHD);
+      }
+      cResult[2] = stateFromStores;
+      cResult[3] = stringResult;
+      tmp9 = stringResult;
+    } else {
+      tmp9 = cResult[3];
+    }
+    if (cResult[4] === stateFromStores) {
+      let tmp11;
+      if (cResult[5] === tmp9) {
+        tmp11 = cResult[6];
+      }
+      tmp8 = tmp11;
+    }
+    const obj2 = { isDisabled: stateFromStores, disabledReason: tmp9 };
+    cResult[4] = stateFromStores;
+    cResult[5] = tmp9;
+    cResult[6] = obj2;
+    tmp11 = obj2;
+  } else {
+    const _Symbol = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = { isDisabled: false, disabledReason: null };
+      cResult[7] = obj3;
+      tmp8 = obj3;
+    } else {
+      tmp8 = cResult[7];
+    }
+  }
+  return tmp8;
+}) : ((arg0) => {
   let obj3;
   let stringResult;
   const items = [SubscriptionStore];
@@ -28,16 +90,19 @@ export const useProductDisableState = function useProductDisableState(skuId) {
     return true === prop;
   });
   const ALL = FractionalPremiumSKUs.FractionalPremiumSKUsSets.ALL;
-  if (ALL.has(skuId)) {
+  if (ALL.has(arg0)) {
     const obj2 = { isDisabled: stateFromStores, disabledReason: stringResult };
     stringResult = null;
     if (stateFromStores) {
-      const intl = tmp(1115).intl;
-      stringResult = intl.string(tmp(1115).t.NbveHD);
+      const intl = tmp(1127).intl;
+      stringResult = intl.string(tmp(1127).t.NbveHD);
     }
     obj3 = obj2;
   } else {
     obj3 = { isDisabled: false, disabledReason: null };
   }
   return obj3;
-};
+});
+const result = size.fileFinishedImporting("modules/collectibles/hooks/useProductDisableState.tsx");
+
+export const useProductDisableState = tmp2;

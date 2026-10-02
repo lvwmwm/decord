@@ -1,39 +1,858 @@
-// Module ID: 15965
-// Function ID: 15966
+// Module ID: 15966
+// Function ID: 15967
 // Name: useGuildsBarBadges
-// Dependencies: [109, 19, 9540, 4656, 2108, 2067, 4469, 1372, 1074, 21, 4836, 504, 4657, 15966, 4531, 576, 1177, 15970, 15934, 15933, 2]
-// Exports: default
+// Dependencies: [109, 19, 10906, 4658, 2111, 2073, 4472, 1378, 1086, 21, 4837, 558, 576, 504, 4659, 15967, 4535, 588, 1189, 15971, 15935, 15934, 2]
 
-// Module 15965 (useGuildsBarBadges)
+// Module 15966 (useGuildsBarBadges)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 1177 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4657 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 15934 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 15970 */;
+import native from "native" /* 1189 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4659 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 15935 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 15971 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 9540 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4656 */;
-import GuildMemberStore from "GuildMemberStore" /* 2108 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4469 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
-import createStyles from "createStyles" /* 4836 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10906 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4658 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault;
+let _require, importDefault, tmp11, tmp15, tmp2;
 
-let closure_12;
+let closure_14;
 let map1;
 let closure_3 = ["guildActivityIndicatorSource"];
-({ GuildFeatures: closure_12, Permissions: map1 } = Constants);
+let closure_4 = ["guildActivityIndicatorSource"];
+({ GuildFeatures: map1, Permissions: closure_14 } = Constants);
 const jsx = Fragment.jsx;
-let closure_15 = createStyles.createStyles({ topRightBadge: { position: "absolute", right: 9, backgroundColor: "transparent", borderColor: "transparent" } });
-const result = size.fileFinishedImporting("modules/guilds_bar/native/hooks/useGuildsBarBadges.tsx");
-
-export default function useGuildsBarBadges(arg0, mentionCount, isMentionLowImportance) {
+let closure_16 = createStyles.createStyles({ topRightBadge: { position: "absolute", right: 9, backgroundColor: "transparent", borderColor: "transparent" } });
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+  let closure_0;
+  let first;
+  let items5;
+  let tmp7;
+  let tmp9;
+  _require = arg0;
+  let tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(47);
+  const tmp4 = closure_16();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    class D {
+      constructor() {
+        guild = closure_10.getGuild(closure_0);
+        flag = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp2 = GuildFeatures;
+          flag = features.has(GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        return flag;
+      }
+    }
+    cResult[1] = arg0;
+    cResult[2] = D;
+    tmp7 = D;
+  } else {
+    class D {
+      constructor() {
+        guild = closure_10.getGuild(closure_0);
+        flag = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp2 = GuildFeatures;
+          flag = features.has(GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        return flag;
+      }
+    }
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor() {
+        guild = closure_10.getGuild(closure_0);
+        flag = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp2 = GuildFeatures;
+          flag = features.has(GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        return flag;
+      }
+    }
+    const items1 = [UserGuildJoinRequestStore, , ];
+    let tmp10 = UserStore;
+    items1[1] = UserStore;
+    items1[2] = GuildMemberStore;
+    cResult[3] = items1;
+    tmp9 = items1;
+  } else {
+    class D {
+      constructor() {
+        guild = closure_10.getGuild(closure_0);
+        flag = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp2 = GuildFeatures;
+          flag = features.has(GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        return flag;
+      }
+    }
+  }
+  if (cResult[4] === arg0) {
+    let tmp13;
+    let tmp17;
+    let tmp16;
+    class D {
+      constructor() {
+        guild = closure_10.getGuild(closure_0);
+        flag = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp2 = GuildFeatures;
+          flag = features.has(GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        return flag;
+      }
+    }
+    const tmpResult5 = tmp(504);
+    const stateFromStores1 = tmpResult5.useStateFromStores(tmp9, C, items5);
+    const _Symbol = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      class D {
+        constructor() {
+          guild = closure_10.getGuild(closure_0);
+          flag = undefined;
+          if (guild != null) {
+            features = guild.features;
+            tmp2 = GuildFeatures;
+            flag = features.has(GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+          }
+          if (flag == null) {
+            flag = false;
+          }
+          return flag;
+        }
+      }
+      const items2 = [PermissionStore, , ];
+      items2[1] = GuildStore;
+      items2[2] = GuildIncidentsStore;
+      cResult[8] = items2;
+      tmp13 = items2;
+    } else {
+      class D {
+        constructor() {
+          guild = closure_10.getGuild(closure_0);
+          flag = undefined;
+          if (guild != null) {
+            features = guild.features;
+            tmp2 = GuildFeatures;
+            flag = features.has(GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+          }
+          if (flag == null) {
+            flag = false;
+          }
+          return flag;
+        }
+      }
+    }
+    if (cResult[9] !== arg0) {
+      class U {
+        constructor() {
+          tmp = closure_0;
+          guild = closure_10.getGuild(closure_0);
+          if (null != guild) {
+            tmp3 = closure_11;
+            tmp4 = Permissions;
+            if (closure_11.can(Permissions.MANAGE_GUILD, guild)) {
+              tmp5 = closure_7;
+              guildIncident = closure_7.getGuildIncident(tmp);
+              hasItem = undefined;
+              if (guild != null) {
+                features = guild.features;
+                has = features.has;
+                if (has != null) {
+                  tmp8 = GuildFeatures;
+                  hasItem = has(GuildFeatures.INVITES_DISABLED);
+                }
+              }
+              if (!hasItem) {
+                invitesDisabledUntil = undefined;
+                if (guildIncident != null) {
+                  invitesDisabledUntil = guildIncident.invitesDisabledUntil;
+                }
+                tmp10 = null != invitesDisabledUntil;
+                if (tmp10) {
+                  tmp11 = globalThis;
+                  _Date = Date;
+                  self = this;
+                  self2 = this;
+                  date = new Date(guildIncident.invitesDisabledUntil);
+                  _Date2 = Date;
+                  self3 = this;
+                  self4 = this;
+                  date1 = new Date();
+                  tmp14 = date1;
+                  tmp15 = date;
+                  tmp10 = date > date1;
+                }
+                hasItem = tmp10;
+              }
+              return hasItem;
+            }
+          }
+          return false;
+        }
+      }
+      const items3 = [arg0];
+      cResult[9] = arg0;
+      cResult[10] = U;
+      cResult[11] = items3;
+      tmp17 = items3;
+      tmp16 = U;
+    } else {
+      class U {
+        constructor() {
+          tmp = closure_0;
+          guild = closure_10.getGuild(closure_0);
+          if (null != guild) {
+            tmp3 = closure_11;
+            tmp4 = Permissions;
+            if (closure_11.can(Permissions.MANAGE_GUILD, guild)) {
+              tmp5 = closure_7;
+              guildIncident = closure_7.getGuildIncident(tmp);
+              hasItem = undefined;
+              if (guild != null) {
+                features = guild.features;
+                has = features.has;
+                if (has != null) {
+                  tmp8 = GuildFeatures;
+                  hasItem = has(GuildFeatures.INVITES_DISABLED);
+                }
+              }
+              if (!hasItem) {
+                invitesDisabledUntil = undefined;
+                if (guildIncident != null) {
+                  invitesDisabledUntil = guildIncident.invitesDisabledUntil;
+                }
+                tmp10 = null != invitesDisabledUntil;
+                if (tmp10) {
+                  tmp11 = globalThis;
+                  _Date = Date;
+                  self = this;
+                  self2 = this;
+                  date = new Date(guildIncident.invitesDisabledUntil);
+                  _Date2 = Date;
+                  self3 = this;
+                  self4 = this;
+                  date1 = new Date();
+                  tmp14 = date1;
+                  tmp15 = date;
+                  tmp10 = date > date1;
+                }
+                hasItem = tmp10;
+              }
+              return hasItem;
+            }
+          }
+          return false;
+        }
+      }
+      tmp17 = cResult[11];
+    }
+    const tmpResult6 = tmp(504);
+    const stateFromStores2 = tmpResult6.useStateFromStores(tmp13, tmp16, tmp17);
+    const tmp20 = stateFromStores(15967)(arg0);
+    const tmpResult7 = tmp(4535);
+    const token = tmpResult7.useToken(stateFromStores(588).modules.mobile.GUILD_BAR_ITEM_SIZE);
+    const tmpResult8 = tmp(4535);
+    const token1 = tmpResult8.useToken(stateFromStores(588).modules.mobile.GUILD_BAR_ITEM_MARGIN);
+    const diff = token1 - tmp(1189).BADGE_PADDING;
+    if (cResult[12] !== diff) {
+      class U {
+        constructor() {
+          tmp = closure_0;
+          guild = closure_10.getGuild(closure_0);
+          if (null != guild) {
+            tmp3 = closure_11;
+            tmp4 = Permissions;
+            if (closure_11.can(Permissions.MANAGE_GUILD, guild)) {
+              tmp5 = closure_7;
+              guildIncident = closure_7.getGuildIncident(tmp);
+              hasItem = undefined;
+              if (guild != null) {
+                features = guild.features;
+                has = features.has;
+                if (has != null) {
+                  tmp8 = GuildFeatures;
+                  hasItem = has(GuildFeatures.INVITES_DISABLED);
+                }
+              }
+              if (!hasItem) {
+                invitesDisabledUntil = undefined;
+                if (guildIncident != null) {
+                  invitesDisabledUntil = guildIncident.invitesDisabledUntil;
+                }
+                tmp10 = null != invitesDisabledUntil;
+                if (tmp10) {
+                  tmp11 = globalThis;
+                  _Date = Date;
+                  self = this;
+                  self2 = this;
+                  date = new Date(guildIncident.invitesDisabledUntil);
+                  _Date2 = Date;
+                  self3 = this;
+                  self4 = this;
+                  date1 = new Date();
+                  tmp14 = date1;
+                  tmp15 = date;
+                  tmp10 = date > date1;
+                }
+                hasItem = tmp10;
+              }
+              return hasItem;
+            }
+          }
+          return false;
+        }
+      }
+      tmp25[0] = diff;
+      cResult[12] = diff;
+      cResult[13] = tmp25;
+    } else {
+      class U {
+        constructor() {
+          tmp = closure_0;
+          guild = closure_10.getGuild(closure_0);
+          if (null != guild) {
+            tmp3 = closure_11;
+            tmp4 = Permissions;
+            if (closure_11.can(Permissions.MANAGE_GUILD, guild)) {
+              tmp5 = closure_7;
+              guildIncident = closure_7.getGuildIncident(tmp);
+              hasItem = undefined;
+              if (guild != null) {
+                features = guild.features;
+                has = features.has;
+                if (has != null) {
+                  tmp8 = GuildFeatures;
+                  hasItem = has(GuildFeatures.INVITES_DISABLED);
+                }
+              }
+              if (!hasItem) {
+                invitesDisabledUntil = undefined;
+                if (guildIncident != null) {
+                  invitesDisabledUntil = guildIncident.invitesDisabledUntil;
+                }
+                tmp10 = null != invitesDisabledUntil;
+                if (tmp10) {
+                  tmp11 = globalThis;
+                  _Date = Date;
+                  self = this;
+                  self2 = this;
+                  date = new Date(guildIncident.invitesDisabledUntil);
+                  _Date2 = Date;
+                  self3 = this;
+                  self4 = this;
+                  date1 = new Date();
+                  tmp14 = date1;
+                  tmp15 = date;
+                  tmp10 = date > date1;
+                }
+                hasItem = tmp10;
+              }
+              return hasItem;
+            }
+          }
+          return false;
+        }
+      }
+    }
+    if (cResult[14] === tmp4.topRightBadge) {
+      class U {
+        constructor() {
+          tmp = closure_0;
+          guild = closure_10.getGuild(closure_0);
+          if (null != guild) {
+            tmp3 = closure_11;
+            tmp4 = Permissions;
+            if (closure_11.can(Permissions.MANAGE_GUILD, guild)) {
+              tmp5 = closure_7;
+              guildIncident = closure_7.getGuildIncident(tmp);
+              hasItem = undefined;
+              if (guild != null) {
+                features = guild.features;
+                has = features.has;
+                if (has != null) {
+                  tmp8 = GuildFeatures;
+                  hasItem = has(GuildFeatures.INVITES_DISABLED);
+                }
+              }
+              if (!hasItem) {
+                invitesDisabledUntil = undefined;
+                if (guildIncident != null) {
+                  invitesDisabledUntil = guildIncident.invitesDisabledUntil;
+                }
+                tmp10 = null != invitesDisabledUntil;
+                if (tmp10) {
+                  tmp11 = globalThis;
+                  _Date = Date;
+                  self = this;
+                  self2 = this;
+                  date = new Date(guildIncident.invitesDisabledUntil);
+                  _Date2 = Date;
+                  self3 = this;
+                  self4 = this;
+                  date1 = new Date();
+                  tmp14 = date1;
+                  tmp15 = date;
+                  tmp10 = date > date1;
+                }
+                hasItem = tmp10;
+              }
+              return hasItem;
+            }
+          }
+          return false;
+        }
+      }
+      if (cResult[17] !== tmp20) {
+        class U {
+          constructor() {
+            tmp = closure_0;
+            guild = closure_10.getGuild(closure_0);
+            if (null != guild) {
+              tmp3 = closure_11;
+              tmp4 = Permissions;
+              if (closure_11.can(Permissions.MANAGE_GUILD, guild)) {
+                tmp5 = closure_7;
+                guildIncident = closure_7.getGuildIncident(tmp);
+                hasItem = undefined;
+                if (guild != null) {
+                  features = guild.features;
+                  has = features.has;
+                  if (has != null) {
+                    tmp8 = GuildFeatures;
+                    hasItem = has(GuildFeatures.INVITES_DISABLED);
+                  }
+                }
+                if (!hasItem) {
+                  invitesDisabledUntil = undefined;
+                  if (guildIncident != null) {
+                    invitesDisabledUntil = guildIncident.invitesDisabledUntil;
+                  }
+                  tmp10 = null != invitesDisabledUntil;
+                  if (tmp10) {
+                    tmp11 = globalThis;
+                    _Date = Date;
+                    self = this;
+                    self2 = this;
+                    date = new Date(guildIncident.invitesDisabledUntil);
+                    _Date2 = Date;
+                    self3 = this;
+                    self4 = this;
+                    date1 = new Date();
+                    tmp14 = date1;
+                    tmp15 = date;
+                    tmp10 = date > date1;
+                  }
+                  hasItem = tmp10;
+                }
+                return hasItem;
+              }
+            }
+            return false;
+          }
+        }
+        const mediaIcon = obj7.getMediaIcon(tmp20);
+        cResult[17] = tmp20;
+        cResult[18] = mediaIcon;
+      } else {
+        class U {
+          constructor() {
+            tmp = closure_0;
+            guild = closure_10.getGuild(closure_0);
+            if (null != guild) {
+              tmp3 = closure_11;
+              tmp4 = Permissions;
+              if (closure_11.can(Permissions.MANAGE_GUILD, guild)) {
+                tmp5 = closure_7;
+                guildIncident = closure_7.getGuildIncident(tmp);
+                hasItem = undefined;
+                if (guild != null) {
+                  features = guild.features;
+                  has = features.has;
+                  if (has != null) {
+                    tmp8 = GuildFeatures;
+                    hasItem = has(GuildFeatures.INVITES_DISABLED);
+                  }
+                }
+                if (!hasItem) {
+                  invitesDisabledUntil = undefined;
+                  if (guildIncident != null) {
+                    invitesDisabledUntil = guildIncident.invitesDisabledUntil;
+                  }
+                  tmp10 = null != invitesDisabledUntil;
+                  if (tmp10) {
+                    tmp11 = globalThis;
+                    _Date = Date;
+                    self = this;
+                    self2 = this;
+                    date = new Date(guildIncident.invitesDisabledUntil);
+                    _Date2 = Date;
+                    self3 = this;
+                    self4 = this;
+                    date1 = new Date();
+                    tmp14 = date1;
+                    tmp15 = date;
+                    tmp10 = date > date1;
+                  }
+                  hasItem = tmp10;
+                }
+                return hasItem;
+              }
+            }
+            return false;
+          }
+        }
+      }
+      if (tmp27 != null) {
+        class U {
+          constructor() {
+            tmp = closure_0;
+            guild = closure_10.getGuild(closure_0);
+            if (null != guild) {
+              tmp3 = closure_11;
+              tmp4 = Permissions;
+              if (closure_11.can(Permissions.MANAGE_GUILD, guild)) {
+                tmp5 = closure_7;
+                guildIncident = closure_7.getGuildIncident(tmp);
+                hasItem = undefined;
+                if (guild != null) {
+                  features = guild.features;
+                  has = features.has;
+                  if (has != null) {
+                    tmp8 = GuildFeatures;
+                    hasItem = has(GuildFeatures.INVITES_DISABLED);
+                  }
+                }
+                if (!hasItem) {
+                  invitesDisabledUntil = undefined;
+                  if (guildIncident != null) {
+                    invitesDisabledUntil = guildIncident.invitesDisabledUntil;
+                  }
+                  tmp10 = null != invitesDisabledUntil;
+                  if (tmp10) {
+                    tmp11 = globalThis;
+                    _Date = Date;
+                    self = this;
+                    self2 = this;
+                    date = new Date(guildIncident.invitesDisabledUntil);
+                    _Date2 = Date;
+                    self3 = this;
+                    self4 = this;
+                    date1 = new Date();
+                    tmp14 = date1;
+                    tmp15 = date;
+                    tmp10 = date > date1;
+                  }
+                  hasItem = tmp10;
+                }
+                return hasItem;
+              }
+            }
+            return false;
+          }
+        }
+      }
+      if (undefined == null) {
+        class U {
+          constructor() {
+            tmp = closure_0;
+            guild = closure_10.getGuild(closure_0);
+            if (null != guild) {
+              tmp3 = closure_11;
+              tmp4 = Permissions;
+              if (closure_11.can(Permissions.MANAGE_GUILD, guild)) {
+                tmp5 = closure_7;
+                guildIncident = closure_7.getGuildIncident(tmp);
+                hasItem = undefined;
+                if (guild != null) {
+                  features = guild.features;
+                  has = features.has;
+                  if (has != null) {
+                    tmp8 = GuildFeatures;
+                    hasItem = has(GuildFeatures.INVITES_DISABLED);
+                  }
+                }
+                if (!hasItem) {
+                  invitesDisabledUntil = undefined;
+                  if (guildIncident != null) {
+                    invitesDisabledUntil = guildIncident.invitesDisabledUntil;
+                  }
+                  tmp10 = null != invitesDisabledUntil;
+                  if (tmp10) {
+                    tmp11 = globalThis;
+                    _Date = Date;
+                    self = this;
+                    self2 = this;
+                    date = new Date(guildIncident.invitesDisabledUntil);
+                    _Date2 = Date;
+                    self3 = this;
+                    self4 = this;
+                    date1 = new Date();
+                    tmp14 = date1;
+                    tmp15 = date;
+                    tmp10 = date > date1;
+                  }
+                  hasItem = tmp10;
+                }
+                return hasItem;
+              }
+            }
+            return false;
+          }
+        }
+      }
+      if (tmp27 != null) {
+        class U {
+          constructor() {
+            tmp = closure_0;
+            guild = closure_10.getGuild(closure_0);
+            if (null != guild) {
+              tmp3 = closure_11;
+              tmp4 = Permissions;
+              if (closure_11.can(Permissions.MANAGE_GUILD, guild)) {
+                tmp5 = closure_7;
+                guildIncident = closure_7.getGuildIncident(tmp);
+                hasItem = undefined;
+                if (guild != null) {
+                  features = guild.features;
+                  has = features.has;
+                  if (has != null) {
+                    tmp8 = GuildFeatures;
+                    hasItem = has(GuildFeatures.INVITES_DISABLED);
+                  }
+                }
+                if (!hasItem) {
+                  invitesDisabledUntil = undefined;
+                  if (guildIncident != null) {
+                    invitesDisabledUntil = guildIncident.invitesDisabledUntil;
+                  }
+                  tmp10 = null != invitesDisabledUntil;
+                  if (tmp10) {
+                    tmp11 = globalThis;
+                    _Date = Date;
+                    self = this;
+                    self2 = this;
+                    date = new Date(guildIncident.invitesDisabledUntil);
+                    _Date2 = Date;
+                    self3 = this;
+                    self4 = this;
+                    date1 = new Date();
+                    tmp14 = date1;
+                    tmp15 = date;
+                    tmp10 = date > date1;
+                  }
+                  hasItem = tmp10;
+                }
+                return hasItem;
+              }
+            }
+            return false;
+          }
+        }
+      }
+      if (cResult[19] === tmp20.isCurrentUserConnected) {
+        class U {
+          constructor() {
+            tmp = closure_0;
+            guild = closure_10.getGuild(closure_0);
+            if (null != guild) {
+              tmp3 = closure_11;
+              tmp4 = Permissions;
+              if (closure_11.can(Permissions.MANAGE_GUILD, guild)) {
+                tmp5 = closure_7;
+                guildIncident = closure_7.getGuildIncident(tmp);
+                hasItem = undefined;
+                if (guild != null) {
+                  features = guild.features;
+                  has = features.has;
+                  if (has != null) {
+                    tmp8 = GuildFeatures;
+                    hasItem = has(GuildFeatures.INVITES_DISABLED);
+                  }
+                }
+                if (!hasItem) {
+                  invitesDisabledUntil = undefined;
+                  if (guildIncident != null) {
+                    invitesDisabledUntil = guildIncident.invitesDisabledUntil;
+                  }
+                  tmp10 = null != invitesDisabledUntil;
+                  if (tmp10) {
+                    tmp11 = globalThis;
+                    _Date = Date;
+                    self = this;
+                    self2 = this;
+                    date = new Date(guildIncident.invitesDisabledUntil);
+                    _Date2 = Date;
+                    self3 = this;
+                    self4 = this;
+                    date1 = new Date();
+                    tmp14 = date1;
+                    tmp15 = date;
+                    tmp10 = date > date1;
+                  }
+                  hasItem = tmp10;
+                }
+                return hasItem;
+              }
+            }
+            return false;
+          }
+        }
+      }
+      const obj2 = { guildActivityIndicatorSource: undefined, IconComponent: undefined, isCurrentUserConnected: tmp20.isCurrentUserConnected };
+      const guildActivityIndicatorSource = obj2.guildActivityIndicatorSource;
+      cResult[19] = tmp20.isCurrentUserConnected;
+      cResult[20] = undefined;
+      cResult[21] = undefined;
+      const tmp36 = _objectWithoutProperties(obj2, closure_3);
+      class C {
+        constructor() {
+          tmp = closure_1;
+          if (tmp) {
+            tmp2 = closure_8;
+            tmp3 = closure_0;
+            request = closure_8.getRequest(closure_0);
+            tmp5 = closure_12;
+            currentUser = closure_12.getCurrentUser();
+            tmp7 = null;
+            if (null != currentUser) {
+              if (null != request) {
+                if (request.userId === currentUser.id) {
+                  tmp8 = closure_9;
+                  member = closure_9.getMember(tmp3, request.userId);
+                  if (null != member) {
+                    if (!member.isPending) {
+                      tmp10 = closure_0;
+                      tmp11 = closure_2;
+                      obj = closure_0(closure_2[14]);
+                    }
+                  }
+                  return request.applicationStatus;
+                }
+              }
+            }
+          }
+          return;
+        }
+      }
+      cResult[22] = tmp36;
+      cResult[23] = guildActivityIndicatorSource;
+    }
+    const items4 = [tmp4.topRightBadge, tmp24];
+    class C {
+      constructor() {
+        tmp = closure_1;
+        if (tmp) {
+          tmp2 = closure_8;
+          tmp3 = closure_0;
+          request = closure_8.getRequest(closure_0);
+          tmp5 = closure_12;
+          currentUser = closure_12.getCurrentUser();
+          tmp7 = null;
+          if (null != currentUser) {
+            if (null != request) {
+              if (request.userId === currentUser.id) {
+                tmp8 = closure_9;
+                member = closure_9.getMember(tmp3, request.userId);
+                if (null != member) {
+                  if (!member.isPending) {
+                    tmp10 = closure_0;
+                    tmp11 = closure_2;
+                    obj = closure_0(closure_2[14]);
+                  }
+                }
+                return request.applicationStatus;
+              }
+            }
+          }
+        }
+        return;
+      }
+    }
+    cResult[14] = tmp4.topRightBadge;
+    cResult[15] = tmp24;
+    cResult[16] = items4;
+  }
+  class C {
+    constructor() {
+      tmp = closure_1;
+      if (tmp) {
+        tmp2 = closure_8;
+        tmp3 = closure_0;
+        request = closure_8.getRequest(closure_0);
+        tmp5 = closure_12;
+        currentUser = closure_12.getCurrentUser();
+        tmp7 = null;
+        if (null != currentUser) {
+          if (null != request) {
+            if (request.userId === currentUser.id) {
+              tmp8 = closure_9;
+              member = closure_9.getMember(tmp3, request.userId);
+              if (null != member) {
+                if (!member.isPending) {
+                  tmp10 = closure_0;
+                  tmp11 = closure_2;
+                  obj = closure_0(closure_2[14]);
+                }
+              }
+              return request.applicationStatus;
+            }
+          }
+        }
+      }
+      return;
+    }
+  }
+  items5 = [arg0, stateFromStores];
+  cResult[4] = arg0;
+  cResult[5] = stateFromStores;
+  cResult[6] = C;
+  cResult[7] = items5;
+}) : ((arg0, mentionCount, isMentionLowImportance) => {
   let closure_0;
   let cutout;
   let cutoutTopRight;
@@ -42,7 +861,7 @@ export default function useGuildsBarBadges(arg0, mentionCount, isMentionLowImpor
   let stateFromStores;
   let topRightBadge;
   _require = arg0;
-  let tmp = closure_15();
+  let tmp = closure_16();
   importDefault = tmp;
   let obj = require("get initialized");
   let items = [GuildStore];
@@ -51,7 +870,7 @@ export default function useGuildsBarBadges(arg0, mentionCount, isMentionLowImpor
     let flag;
     if (guild != null) {
       const features = guild.features;
-      flag = features.has(constants.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+      flag = features.has(map1.MEMBER_VERIFICATION_MANUAL_APPROVAL);
     }
     if (flag == null) {
       flag = false;
@@ -59,7 +878,7 @@ export default function useGuildsBarBadges(arg0, mentionCount, isMentionLowImpor
     return flag;
   });
   let obj2 = require("get initialized");
-  const items1 = [cutoutTopRight, UserStore, cutout];
+  const items1 = [cutout, UserStore, GuildMemberStore];
   const items2 = [arg0, stateFromStores];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => {
     const tmp = stateFromStores;
@@ -82,21 +901,21 @@ export default function useGuildsBarBadges(arg0, mentionCount, isMentionLowImpor
       }
     }
   }, items2);
-  const items3 = [PermissionStore, GuildStore, memo];
+  const items3 = [PermissionStore, GuildStore, cutoutTopRight];
   const items4 = [arg0];
   const obj3 = require("get initialized");
   const stateFromStores2 = obj3.useStateFromStores(items3, function() {
     const guild = GuildStore.getGuild(closure_0);
     const tmp = closure_0;
     if (null != guild) {
-      if (PermissionStore.can(map1.MANAGE_GUILD, guild)) {
+      if (PermissionStore.can(constants.MANAGE_GUILD, guild)) {
         const guildIncident = GuildIncidentsStore.getGuildIncident(tmp);
         let hasItem;
         if (guild != null) {
           const features = guild.features;
           const has = features.has;
           if (has != null) {
-            hasItem = has(constants.INVITES_DISABLED);
+            hasItem = has(map1.INVITES_DISABLED);
           }
         }
         if (!hasItem) {
@@ -130,13 +949,13 @@ export default function useGuildsBarBadges(arg0, mentionCount, isMentionLowImpor
   let obj5 = require("useToken");
   const token1 = obj5.useToken(require("native").modules.mobile.GUILD_BAR_ITEM_MARGIN);
   const items5 = [tmp.topRightBadge, token1];
-  memo = token1.useMemo(() => {
+  memo = memo.useMemo(() => {
     const items = [topRightBadge.topRightBadge, { top: token1 - native.BADGE_PADDING }];
     ({ top: token1 - native.BADGE_PADDING });
     return items;
   }, items5);
   const items6 = [tmp5, memo, token];
-  const memo1 = token1.useMemo(() => {
+  const memo1 = memo.useMemo(() => {
     let icon;
     let tmp14;
     const obj = GuildsBarActivityIndicator;
@@ -156,7 +975,7 @@ export default function useGuildsBarBadges(arg0, mentionCount, isMentionLowImpor
     }
     const guildActivityIndicatorSource = obj2.guildActivityIndicatorSource;
     let tmp8 = null;
-    const tmp7 = _objectWithoutProperties(obj2, closure_3);
+    const tmp7 = _objectWithoutProperties(obj2, closure_4);
     if (null != guildActivityIndicatorSource) {
       const GuildsBarActivityIndicatorBase = GuildsBarActivityIndicator.GuildsBarActivityIndicatorBase;
       const merged = Object.assign(tmp7);
@@ -178,7 +997,7 @@ export default function useGuildsBarBadges(arg0, mentionCount, isMentionLowImpor
   const obj7 = {
     badgeTopRight,
     badgeBottomRight: tmp10.badge,
-    cutouts: token1.useMemo(() => {
+    cutouts: memo.useMemo(() => {
       const items = [];
       if (null != cutoutTopRight) {
         items.push(tmp);
@@ -192,4 +1011,7 @@ export default function useGuildsBarBadges(arg0, mentionCount, isMentionLowImpor
   };
   items7 = [cutoutTopRight, cutout];
   return obj7;
-};
+});
+const result = size.fileFinishedImporting("modules/guilds_bar/native/hooks/useGuildsBarBadges.tsx");
+
+export default tmp3;

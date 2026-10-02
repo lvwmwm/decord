@@ -1,11 +1,11 @@
-// Module ID: 9560
-// Function ID: 9561
+// Module ID: 12227
+// Function ID: 12228
 // Name: AutomodExperiment
-// Dependencies: [4748, 1435, 2]
+// Dependencies: [4750, 1441, 2]
 
-// Module 9560 (AutomodExperiment)
-import createExperiment from "module_4748" /* 4748 */;
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 12227 (AutomodExperiment)
+import createExperiment from "module_4750" /* 4750 */;
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
 let items;

@@ -1,10 +1,12 @@
 // Module ID: 10036
 // Function ID: 10037
-// Dependencies: [41, 42, 93, 95, 98, 10024, 9897, 9898, 10026]
+// Dependencies: [41, 42, 93, 95, 98, 10026, 9934, 9935, 9939]
 
 // Module 10036
-import REGEX_PARTS from "REGEX_PARTS" /* 10024 */;
-import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 10026 */;
+import EmptyDuration from "EmptyDuration" /* 9934 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9935 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9939 */;
+import _mod10026 from "module_10026" /* 10026 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -26,28 +28,32 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class RUTimeUnitCasualRelativeFormatParser {
-  constructor() {
+const regExp = new RegExp("(" + _mod10026.TIME_UNITS_PATTERN + ")(?:geleden|voor|eerder)(?=(?:\\W|$))", "i");
+const regExp1 = new RegExp("(" + _mod10026.TIME_UNITS_PATTERN + ")geleden(?=(?:\\W|$))", "i");
+class NLTimeUnitAgoFormatParser {
+  constructor(strictMode) {
     let constructResult;
     const self = this;
-    _classCallCheck(this, RUTimeUnitCasualRelativeFormatParser);
-    const obj = _getPrototypeOf(RUTimeUnitCasualRelativeFormatParser);
+    _classCallCheck(this, NLTimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(NLTimeUnitAgoFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, undefined);
     }
-    return tmp3(self, constructResult);
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = strictMode;
+    return tmp3Result;
   }
 }
-_inherits(RUTimeUnitCasualRelativeFormatParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftRightBoundaryChecking);
+_inherits(NLTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(\u044D\u0442\u0438|\u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0435|\u043F\u0440\u043E\u0448\u043B\u044B\u0435|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435|\u043F\u043E\u0441\u043B\u0435|\u0441\u043F\u0443\u0441\u0442\u044F|\u0447\u0435\u0440\u0435\u0437|\\+|-)\\s*(" + REGEX_PARTS.TIME_UNITS_PATTERN + ")";
+  key: "innerPattern",
+  value: function innerPattern() {
+    return this.strictMode ? regExp1 : regExp;
   }
 };
 const items = [
@@ -55,20 +61,12 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      const parseDurationResult = REGEX_PARTS.parseDuration(arg1[2]);
-      if ("\u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0435" !== formatted) {
-        let reverseDurationResult;
-        if ("\u043F\u0440\u043E\u0448\u043B\u044B\u0435" !== formatted) {
-          reverseDurationResult = parseDurationResult;
-        }
-        const ParsingComponents = tmp2(9898).ParsingComponents;
-        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
-      }
-      reverseDurationResult = tmp2(9897).reverseDuration(parseDurationResult);
+      const parseDurationResult = _mod10026.parseDuration(arg1[1]);
+      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
     }
   }
 ];
 
-export default _createClass(RUTimeUnitCasualRelativeFormatParser, items);
+export default _createClass(NLTimeUnitAgoFormatParser, items);
